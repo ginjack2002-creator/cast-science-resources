@@ -21,6 +21,9 @@ from lesson_data_G08 import ALL_LESSONS as G08_LESSONS
 from lesson_data_G09_L1 import ALL_LESSONS as G09L1_LESSONS
 from lesson_data_G09_L2 import ALL_LESSONS as G09L2_LESSONS
 from lesson_data_G09_L3 import ALL_LESSONS as G09L3_LESSONS
+from lesson_data_G10_L1 import ALL_LESSONS as G10L1_LESSONS
+from lesson_data_G10_L2 import ALL_LESSONS as G10L2_LESSONS
+from lesson_data_G10_L3 import ALL_LESSONS as G10L3_LESSONS
 
 
 def slugify(title):
@@ -34,7 +37,13 @@ def slugify(title):
 
 def get_grade_info(lesson_id):
     """Return grade label, full label, age range, and session time."""
-    if lesson_id.startswith("G09L1"):
+    if lesson_id.startswith("G10L1"):
+        return "10th", "10th Grade — Level 1: How the World Works", "15-16 years old", "50-70 minutes"
+    elif lesson_id.startswith("G10L2"):
+        return "10th", "10th Grade — Level 2: Systems Under Pressure", "15-16 years old", "50-70 minutes"
+    elif lesson_id.startswith("G10L3"):
+        return "10th", "10th Grade — Level 3: Advanced Engineering & Design", "15-16 years old", "50-70 minutes"
+    elif lesson_id.startswith("G09L1"):
         return "9th", "9th Grade — Level 1: Foundations", "14-15 years old", "50-70 minutes"
     elif lesson_id.startswith("G09L2"):
         return "9th", "9th Grade — Level 2: Advanced", "14-15 years old", "50-70 minutes"
@@ -911,7 +920,7 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     # Determine which grades to generate
-    grades_to_gen = sys.argv[1:] if len(sys.argv) > 1 else ["G06", "G07", "G08", "G09L1", "G09L2", "G09L3"]
+    grades_to_gen = sys.argv[1:] if len(sys.argv) > 1 else ["G06", "G07", "G08", "G09L1", "G09L2", "G09L3", "G10L1", "G10L2", "G10L3"]
 
     all_lessons = []
     if "G06" in grades_to_gen:
@@ -926,9 +935,15 @@ def main():
         all_lessons.extend(G09L2_LESSONS)
     if "G09L3" in grades_to_gen:
         all_lessons.extend(G09L3_LESSONS)
+    if "G10L1" in grades_to_gen:
+        all_lessons.extend(G10L1_LESSONS)
+    if "G10L2" in grades_to_gen:
+        all_lessons.extend(G10L2_LESSONS)
+    if "G10L3" in grades_to_gen:
+        all_lessons.extend(G10L3_LESSONS)
 
     if not all_lessons:
-        print("No lessons to generate. Use: python generate_lesson_markdown.py [G06] [G07] [G08] [G09L1] [G09L2] [G09L3]")
+        print("No lessons to generate. Use: python generate_lesson_markdown.py [G06] [G07] [G08] [G09L1] [G09L2] [G09L3] [G10L1] [G10L2] [G10L3]")
         return
 
     print(f"Generating {len(all_lessons)} lesson markdown files...\n")
@@ -937,7 +952,10 @@ def main():
         slug = slugify(lesson["title"])
         filename = f'{lesson["id"]}-{slug}.md'
         lid = lesson["id"]
-        if lid.startswith("G09L"):
+        if lid.startswith("G10L"):
+            level_num = lid[4]  # "1", "2", or "3"
+            grade_folder = os.path.join('grade-10', f'level-{level_num}')
+        elif lid.startswith("G09L"):
             level_num = lid[4]  # "1", "2", or "3"
             grade_folder = os.path.join('grade-09', f'level-{level_num}')
         else:
