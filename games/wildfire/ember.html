@@ -36,7 +36,7 @@ let W = 0, H = 0;
 const GRID_W = 40, GRID_H = 30;
 const T_VEG = 0, T_WATER = 1, T_ROCK = 2;
 const S_WET = 0, S_DRYING = 1, S_DRY = 2, S_BURNING = 3, S_BURNED = 4;
-const GS_TITLE = 0, GS_SELECT = 1, GS_INTRO = 2, GS_PLAYING = 3, GS_COMPLETE = 4, GS_OVER = 5;
+const GS_TITLE = 0, GS_SELECT = 1, GS_INTRO = 2, GS_PLAYING = 3, GS_COMPLETE = 4, GS_OVER = 5, GS_HOWTO = 6;
 
 // Player tuning
 const P_MIN = 0, P_MAX = 40, P_START = 10;
@@ -920,7 +920,8 @@ function spawnFireTrail(dt){
 function setupInput(){
   window.addEventListener('keydown',e=>{
     keys[e.code]=true;
-    if(gameState===GS_TITLE){initAudio();startLevelSelect();e.preventDefault();return}
+    if(gameState===GS_TITLE){initAudio();startHowTo();e.preventDefault();return}
+    if(gameState===GS_HOWTO){startLevelSelect();e.preventDefault();return}
     if(gameState===GS_OVER&&e.code==='Space'){initAudio();startLevelSelect();e.preventDefault();return}
     e.preventDefault();
   });
@@ -1001,6 +1002,12 @@ function processInput(){
 // ===================================================================
 // GAME STATE MACHINE
 // ===================================================================
+function startHowTo(){
+  gameState=GS_HOWTO;
+  pCount=0;
+  clickTargets=[];
+}
+
 function startLevelSelect(){
   gameState=GS_SELECT;
   pCount=0;
@@ -1330,6 +1337,164 @@ function renderTitle(t){
 }
 
 // ===================================================================
+// RENDERING — HOW TO PLAY
+// ===================================================================
+function renderHowTo(t){
+  renderBg();
+
+  // Card background
+  const cardW=Math.min(W*0.85,520);
+  const cardH=Math.min(H*0.82,440);
+  const cx=(W-cardW)/2,cy=(H-cardH)/2;
+  ctx.fillStyle='rgba(15,12,25,0.88)';
+  ctx.fillRect(cx,cy,cardW,cardH);
+  ctx.strokeStyle='rgba(255,209,102,0.15)';
+  ctx.lineWidth=1;
+  ctx.strokeRect(cx,cy,cardW,cardH);
+
+  // Title
+  ctx.font='bold '+Math.min(cardW*0.07,28)+'px system-ui,sans-serif';
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillStyle='#FFD166';
+  ctx.fillText('HOW TO PLAY',W/2,cy+32);
+
+  // Subtitle
+  ctx.font=Math.min(cardW*0.035,14)+'px system-ui,sans-serif';
+  ctx.fillStyle='rgba(232,228,220,0.5)';
+  ctx.fillText('You are a wildfire. Eat dry fuel. Avoid rain. Grow huge.',W/2,cy+58);
+
+  // Icon rows
+  const items=[
+    {icon:'move',color:'#E8E4DC',label:'MOVE',desc:'Arrow Keys / WASD / Touch Joystick'},
+    {icon:'dry',color:'#D4A055',label:'DRY TERRAIN',desc:'Eat brown cells to GROW bigger'},
+    {icon:'wet',color:'#5B8C5A',label:'WET TERRAIN',desc:'Green cells SHRINK you \u2014 avoid!'},
+    {icon:'cloud',color:'#AAB4C8',label:'RAIN CLOUDS',desc:'Gray puffs with falling rain \u2014 dodge!'},
+    {icon:'wind',color:'#C8C8E0',label:'WIND GUSTS',desc:'Light streaky zones \u2014 ride the boost!'},
+    {icon:'power',color:'#FFD166',label:'POWER-UPS',desc:'Glowing circles with letters \u2014 grab them!'},
+    {icon:'size',color:'#E84040',label:'SIZE = 0?',desc:'Your flame dies. Game over!'},
+  ];
+
+  const rowH=Math.min((cardH-120)/items.length,44);
+  const startY=cy+80;
+  const iconX=cx+40;
+  const labelX=cx+80;
+  const descX=cx+cardW*0.42;
+
+  for(let i=0;i<items.length;i++){
+    const it=items[i];
+    const ry=startY+i*rowH;
+    const iconSz=Math.min(rowH*0.6,24);
+
+    // Draw icon
+    switch(it.icon){
+      case 'move':{
+        // Arrow cross
+        const s=iconSz*0.35;
+        ctx.fillStyle=it.color;
+        ctx.fillRect(iconX-s,ry-s*3,s*2,s*2); // up
+        ctx.fillRect(iconX-s,ry+s,s*2,s*2); // down
+        ctx.fillRect(iconX-s*3,ry-s,s*2,s*2); // left
+        ctx.fillRect(iconX+s,ry-s,s*2,s*2); // right
+        ctx.fillRect(iconX-s,ry-s,s*2,s*2); // center
+        break;
+      }
+      case 'dry':{
+        ctx.fillStyle=it.color;
+        ctx.fillRect(iconX-iconSz/2,ry-iconSz/2,iconSz,iconSz);
+        break;
+      }
+      case 'wet':{
+        ctx.fillStyle=it.color;
+        ctx.fillRect(iconX-iconSz/2,ry-iconSz/2,iconSz,iconSz);
+        break;
+      }
+      case 'cloud':{
+        ctx.fillStyle='rgba(170,180,200,0.7)';
+        ctx.beginPath();ctx.arc(iconX,ry-3,iconSz*0.35,0,Math.PI*2);ctx.fill();
+        ctx.beginPath();ctx.arc(iconX-iconSz*0.25,ry+2,iconSz*0.25,0,Math.PI*2);ctx.fill();
+        ctx.beginPath();ctx.arc(iconX+iconSz*0.25,ry+2,iconSz*0.28,0,Math.PI*2);ctx.fill();
+        // Rain drops
+        ctx.fillStyle='rgba(100,150,220,0.6)';
+        ctx.fillRect(iconX-5,ry+iconSz*0.35,1.5,5);
+        ctx.fillRect(iconX+3,ry+iconSz*0.4,1.5,4);
+        ctx.fillRect(iconX-1,ry+iconSz*0.5,1.5,4);
+        break;
+      }
+      case 'wind':{
+        ctx.strokeStyle='rgba(200,200,230,0.6)';
+        ctx.lineWidth=2;
+        for(let j=0;j<3;j++){
+          const ly=ry-6+j*6;
+          ctx.beginPath();
+          ctx.moveTo(iconX-iconSz*0.4,ly);
+          ctx.lineTo(iconX+iconSz*0.4,ly-2);
+          ctx.stroke();
+        }
+        // Arrow tip
+        ctx.fillStyle='rgba(200,200,230,0.5)';
+        ctx.beginPath();
+        ctx.moveTo(iconX+iconSz*0.45,ry-2);
+        ctx.lineTo(iconX+iconSz*0.3,ry-7);
+        ctx.lineTo(iconX+iconSz*0.3,ry+3);
+        ctx.closePath();ctx.fill();
+        break;
+      }
+      case 'power':{
+        const pulse=1+Math.sin(t*5)*0.15;
+        ctx.fillStyle=it.color;
+        ctx.beginPath();ctx.arc(iconX,ry,iconSz*0.35*pulse,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='#0F0C19';
+        ctx.font=`bold ${iconSz*0.4|0}px system-ui,sans-serif`;
+        ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText('D',iconX,ry);
+        break;
+      }
+      case 'size':{
+        // Tiny flame dying
+        ctx.fillStyle='#E84040';
+        ctx.beginPath();ctx.arc(iconX,ry,iconSz*0.2,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='#FF8C42';
+        ctx.beginPath();ctx.arc(iconX,ry,iconSz*0.1,0,Math.PI*2);ctx.fill();
+        // X mark
+        ctx.strokeStyle='#E84040';ctx.lineWidth=2;
+        ctx.beginPath();
+        ctx.moveTo(iconX-iconSz*0.35,ry-iconSz*0.35);
+        ctx.lineTo(iconX+iconSz*0.35,ry+iconSz*0.35);
+        ctx.moveTo(iconX+iconSz*0.35,ry-iconSz*0.35);
+        ctx.lineTo(iconX-iconSz*0.35,ry+iconSz*0.35);
+        ctx.stroke();
+        break;
+      }
+    }
+
+    // Label
+    ctx.font='bold '+Math.min(cardW*0.035,15)+'px system-ui,sans-serif';
+    ctx.textAlign='left';ctx.textBaseline='middle';
+    ctx.fillStyle=it.color;
+    ctx.fillText(it.label,labelX,ry);
+
+    // Description
+    ctx.font=Math.min(cardW*0.03,13)+'px system-ui,sans-serif';
+    ctx.fillStyle='rgba(232,228,220,0.6)';
+    ctx.fillText(it.desc,descX,ry);
+  }
+
+  // "GOT IT" button
+  clickTargets=[];
+  const btnW=180,btnH=44;
+  const btnX=(W-btnW)/2;
+  const btnY=cy+cardH-55;
+  const hoverPulse=0.85+Math.sin(t*3)*0.15;
+  ctx.fillStyle=`rgba(255,140,66,${hoverPulse})`;
+  ctx.fillRect(btnX,btnY,btnW,btnH);
+  ctx.font='bold 16px system-ui,sans-serif';
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillStyle='#0F0C19';
+  ctx.fillText('GOT IT \u2014 LET\'S GO!',btnX+btnW/2,btnY+btnH/2);
+  clickTargets.push({x:btnX,y:btnY,w:btnW,h:btnH,action:()=>startLevelSelect()});
+}
+
+// ===================================================================
 // RENDERING — LEVEL SELECT
 // ===================================================================
 function renderLevelSelect(t){
@@ -1625,7 +1790,10 @@ function update(dt){
   switch(gameState){
     case GS_TITLE:
       updateTitle(dt);
-      if(mouseClicked){mouseClicked=false;initAudio();startLevelSelect()}
+      if(mouseClicked){mouseClicked=false;initAudio();startHowTo()}
+      break;
+    case GS_HOWTO:
+      if(mouseClicked){mouseClicked=false;handleClick(mouseX,mouseY)}
       break;
     case GS_SELECT:
       if(mouseClicked){mouseClicked=false;handleClick(mouseX,mouseY)}
@@ -1700,6 +1868,7 @@ function render(t){
   ctx.clearRect(0,0,W,H);
   switch(gameState){
     case GS_TITLE:renderTitle(t);break;
+    case GS_HOWTO:renderHowTo(t);break;
     case GS_SELECT:renderLevelSelect(t);break;
     case GS_INTRO:renderLevelIntro(t);break;
     case GS_PLAYING:renderPlaying(t);break;
