@@ -427,6 +427,18 @@ let plants = []; // visual plants that grow
 let fallingLeaves = []; // title screen decoration
 let raindrops = [];
 
+// ── Tutorial System ──
+let tutorialActive = false;
+let tutorialStep = 0; // 0=pick decomposer, 1=matter falling, 2=first placed, 3=earned nutrients, 4=done
+let tutorialTimer = 0; // time since current hint appeared
+let tutorialIdleTimer = 0; // time since last player interaction
+let tutorialFirstPlaced = false;
+let tutorialEarnedNutrients = false;
+let tutorialStartNutrients = 50;
+let tutorialDismissed = [false, false, false, false]; // track which hints dismissed
+const TUTORIAL_HINT_DURATION = 4.0; // seconds before auto-dismiss
+const TUTORIAL_IDLE_THRESHOLD = 5.0; // seconds before showing tap-here arrow
+
 // Floor boundary
 const FLOOR_Y_RATIO = 0.75; // floor starts at 75% of screen height
 const SUNLIGHT_Y_RATIO = 0.20; // sunlight line at 20%
@@ -818,6 +830,10 @@ function updateDeadMatter(dt) {
       spawnDecomposeEffect(m.x, m.y, m.type === 'animal' ? 20 : m.type === 'branch' ? 12 : 8);
       spawnNutrientBurst(m.x, m.y);
       nutrients += m.nutrients;
+      // Tutorial: track nutrient gain
+      if (tutorialActive && !tutorialEarnedNutrients) {
+        tutorialEarnedNutrients = true;
+      }
       // Combo
       comboCount++;
       comboTimer = 2.0;
@@ -885,6 +901,11 @@ function placeDecomposer(type, x, y) {
     aoeRadius: def.aoeRadius
   });
   playPlace();
+  // Tutorial: track first placement
+  if (tutorialActive && !tutorialFirstPlaced) {
+    tutorialFirstPlaced = true;
+    tutorialIdleTimer = 0;
+  }
   return true;
 }
 
@@ -1164,18 +1185,206 @@ function drawHUD() {
   drawPalette();
 }
 
+// ── Tutorial Update ──
+function updateTutorial(dt) {
+  if (!tutorialActive) return;
+  tutorialTimer += dt;
+  tutorialIdleTimer += dt;
+
+  // Advance steps based on game state
+  if (tutorialStep === 0) {
+    // Step 0: "Worm is selected! Click the forest floor to place it!"
+    // If player placed during this step, skip to step 2 (positive feedback)
+    if (tutorialFirstPlaced) {
+      tutorialStep = 2;
+      tutorialTimer = 0;
+      tutorialDismissed[0] = true;
+      tutorialDismissed[1] = true;
+    }
+    // If matter has started falling AND we haven't placed yet, move to step 1
+    else if (deadMatter.length > 0 && tutorialTimer > TUTORIAL_HINT_DURATION) {
+      tutorialStep = 1;
+      tutorialTimer = 0;
+      tutorialDismissed[0] = true;
+    }
+  }
+  if (tutorialStep === 1) {
+    // Step 1: "Dead leaves are falling! Place decomposers to break them down!"
+    if (tutorialFirstPlaced) {
+      tutorialStep = 2;
+      tutorialTimer = 0;
+      tutorialDismissed[1] = true;
+    } else if (tutorialTimer > TUTORIAL_HINT_DURATION + 2) {
+      // Linger a bit longer on this hint since it's important
+    }
+  }
+  if (tutorialStep === 2) {
+    // Step 2: "Nice! Decomposers break down dead matter into nutrients."
+    if (tutorialTimer > TUTORIAL_HINT_DURATION) {
+      tutorialStep = 3;
+      tutorialTimer = 0;
+      tutorialDismissed[2] = true;
+    }
+  }
+  if (tutorialStep === 3) {
+    // Step 3: "You earned nutrients! Use them to place more decomposers."
+    if (nutrients > tutorialStartNutrients || tutorialEarnedNutrients) {
+      tutorialEarnedNutrients = true;
+    }
+    if (tutorialTimer > TUTORIAL_HINT_DURATION) {
+      tutorialStep = 4; // done
+      tutorialActive = false;
+      tutorialDismissed[3] = true;
+    }
+  }
+}
+
+function drawTutorialOverlay() {
+  if (!tutorialActive) return;
+
+  const palW = 340 * cScale;
+  const palH = 70 * cScale;
+  const palX = W / 2 - palW / 2;
+  const palY = H - palH - 10;
+
+  // ── Hint text bubble ──
+  let hintText = '';
+  let hintSubText = '';
+
+  if (tutorialStep === 0) {
+    hintText = 'Worm is selected! Click the brown forest floor to place it!';
+    hintSubText = 'Decomposers eat dead matter and turn it into nutrients.';
+  } else if (tutorialStep === 1) {
+    hintText = 'Dead leaves are falling! Place decomposers to break them down!';
+    hintSubText = 'Click the forest floor (brown area at the bottom).';
+  } else if (tutorialStep === 2) {
+    hintText = 'Nice! Decomposers break down dead matter into nutrients.';
+    hintSubText = 'Watch your worm crawl over and eat the leaves!';
+  } else if (tutorialStep === 3) {
+    if (tutorialEarnedNutrients) {
+      hintText = 'You earned nutrients! Use them to place more decomposers.';
+      hintSubText = 'Select a decomposer below, then click the forest floor.';
+    } else {
+      hintText = 'Your decomposer is working! Nutrients come from eating matter.';
+      hintSubText = 'Wait for it to break down some leaves...';
+    }
+  }
+
+  if (!hintText) return;
+
+  // Draw hint bubble at top-center of play area (below HUD)
+  const bubbleW = Math.min(520, W - 40) * cScale;
+  const bubbleH = 62 * cScale;
+  const bubbleX = W / 2 - bubbleW / 2;
+  const bubbleY = 65 * cScale;
+
+  // Animated entrance
+  const fadeIn = clamp(tutorialTimer * 3, 0, 1);
+  X.globalAlpha = fadeIn * 0.95;
+
+  // Bubble background
+  X.fillStyle = 'rgba(20,14,10,0.92)';
+  X.beginPath();
+  X.roundRect(bubbleX, bubbleY, bubbleW, bubbleH, 14);
+  X.fill();
+  X.strokeStyle = '#69F0AE';
+  X.lineWidth = 2;
+  X.stroke();
+
+  // Main text
+  X.textAlign = 'center';
+  X.font = `bold ${14.5 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#69F0AE';
+  X.fillText(hintText, W / 2, bubbleY + 24 * cScale);
+
+  // Sub text
+  X.font = `400 ${11.5 * cScale}px 'Inter', sans-serif`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText(hintSubText, W / 2, bubbleY + 46 * cScale);
+
+  X.globalAlpha = 1;
+
+  // ── Pulsing arrow pointing down to palette (step 0 and 3) ──
+  if ((tutorialStep === 0 || tutorialStep === 3) || (tutorialIdleTimer > TUTORIAL_IDLE_THRESHOLD && !tutorialFirstPlaced)) {
+    drawTapHereArrow(palX, palY, palW);
+  }
+
+  // ── Pulsing arrow pointing to forest floor (step 1) ──
+  if (tutorialStep === 1) {
+    const arrowX = W / 2;
+    const arrowY = floorY + 30;
+    const bob = Math.sin(stateTime * 4) * 6;
+    X.globalAlpha = 0.7 + Math.sin(stateTime * 3) * 0.3;
+    X.fillStyle = '#69F0AE';
+    X.beginPath();
+    X.moveTo(arrowX, arrowY + bob);
+    X.lineTo(arrowX - 12, arrowY - 16 + bob);
+    X.lineTo(arrowX + 12, arrowY - 16 + bob);
+    X.closePath();
+    X.fill();
+    X.font = `bold ${12 * cScale}px 'Fredoka', sans-serif`;
+    X.textAlign = 'center';
+    X.fillText('CLICK HERE', arrowX, arrowY - 22 + bob);
+    X.globalAlpha = 1;
+  }
+}
+
+function drawTapHereArrow(palX, palY, palW) {
+  const arrowX = W / 2;
+  const arrowY = palY - 8;
+  const bob = Math.sin(stateTime * 4) * 5;
+
+  X.globalAlpha = 0.8 + Math.sin(stateTime * 3) * 0.2;
+  X.fillStyle = '#69F0AE';
+  // Down-pointing triangle arrow
+  X.beginPath();
+  X.moveTo(arrowX, arrowY + bob);
+  X.lineTo(arrowX - 10, arrowY - 14 + bob);
+  X.lineTo(arrowX + 10, arrowY - 14 + bob);
+  X.closePath();
+  X.fill();
+
+  X.font = `bold ${12 * cScale}px 'Fredoka', sans-serif`;
+  X.textAlign = 'center';
+  X.fillStyle = '#69F0AE';
+  X.fillText('YOUR DECOMPOSERS', arrowX, arrowY - 20 + bob);
+  X.globalAlpha = 1;
+}
+
 function drawPalette() {
   const palW = 340 * cScale;
   const palH = 70 * cScale;
   const palX = W / 2 - palW / 2;
   const palY = H - palH - 10;
 
+  // ── Pulsing glow border on Level 1 tutorial ──
+  if (tutorialActive && (tutorialStep === 0 || tutorialStep === 3)) {
+    const glowAlpha = 0.25 + Math.sin(stateTime * 3.5) * 0.2;
+    X.save();
+    X.shadowColor = '#69F0AE';
+    X.shadowBlur = 18 + Math.sin(stateTime * 3.5) * 8;
+    X.globalAlpha = glowAlpha;
+    X.strokeStyle = '#69F0AE';
+    X.lineWidth = 3;
+    X.beginPath();
+    X.roundRect(palX - 2, palY - 2, palW + 4, palH + 4, 14);
+    X.stroke();
+    X.restore();
+  }
+
   X.fillStyle = 'rgba(30,20,15,0.9)';
   X.beginPath();
   X.roundRect(palX, palY, palW, palH, 12);
   X.fill();
-  X.strokeStyle = 'rgba(232,213,183,0.2)';
-  X.lineWidth = 1;
+  // Always show a subtle border, but make it brighter on Level 1
+  if (tutorialActive) {
+    const pulseAlpha = 0.3 + Math.sin(stateTime * 3) * 0.15;
+    X.strokeStyle = `rgba(105,240,174,${pulseAlpha})`;
+    X.lineWidth = 2;
+  } else {
+    X.strokeStyle = 'rgba(232,213,183,0.2)';
+    X.lineWidth = 1;
+  }
   X.stroke();
 
   const btnW = 100 * cScale;
@@ -1804,7 +2013,19 @@ function setState(newState) {
   stateTime = 0;
 
   if (newState === STATES.PLAYING) {
-    // Only reset game if coming from intro
+    // Tutorial: activate on Level 1, Wave 1 only
+    if (currentLevel === 0 && waveIndex === 0) {
+      tutorialActive = true;
+      tutorialStep = 0;
+      tutorialTimer = 0;
+      tutorialIdleTimer = 0;
+      tutorialFirstPlaced = false;
+      tutorialEarnedNutrients = false;
+      tutorialStartNutrients = nutrients;
+      tutorialDismissed = [false, false, false, false];
+      // Auto-select worm (cheapest, index 1) so player just needs to click to place
+      selectedDecomposer = 1;
+    }
   } else if (newState === STATES.LEVEL_INTRO) {
     // Reset game variables for new level
     nutrients = 50;
@@ -1829,12 +2050,15 @@ function setState(newState) {
     stopRainAmbient();
   } else if (newState === STATES.WAVE_COMPLETE) {
     playWaveComplete();
+    // End tutorial when first wave completes
+    tutorialActive = false;
   } else if (newState === STATES.LEVEL_COMPLETE) {
     playWaveComplete();
     stopRainAmbient();
   } else if (newState === STATES.GAME_OVER) {
     playGameOver();
     stopRainAmbient();
+    tutorialActive = false;
   } else if (newState === STATES.TITLE) {
     fallingLeaves = [];
     stopRainAmbient();
@@ -1857,6 +2081,8 @@ function getCanvasPos(e) {
 
 function handleClick(cx, cy) {
   initAudio();
+  // Reset tutorial idle timer on any click
+  if (tutorialActive) tutorialIdleTimer = 0;
   const hit = hitTest(cx, cy);
 
   if (hit) {
@@ -1948,6 +2174,7 @@ C.addEventListener('touchend', (e) => {
 // Keyboard
 document.addEventListener('keydown', (e) => {
   initAudio();
+  if (tutorialActive) tutorialIdleTimer = 0;
   if (state === STATES.PLAYING) {
     if (e.key === '1') selectedDecomposer = (selectedDecomposer === 0) ? -1 : 0;
     else if (e.key === '2') selectedDecomposer = (selectedDecomposer === 1) ? -1 : 1;
@@ -2053,6 +2280,10 @@ function gameLoop(now) {
 
     // HUD
     drawHUD();
+
+    // Tutorial overlay (drawn on top of everything)
+    updateTutorial(dt);
+    drawTutorialOverlay();
 
   } else if (state === STATES.WAVE_COMPLETE) {
     // Keep drawing the game behind

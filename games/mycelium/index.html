@@ -144,6 +144,44 @@ function playDiseasePulse() {
     playTone(155, 0.5, 'sawtooth', 0.08, 0.01);
 }
 
+function playSeverSnap() {
+    // A sharp breaking/snapping sound
+    playTone(400, 0.06, 'square', 0.25, 0.001);
+    setTimeout(() => playTone(120, 0.15, 'sawtooth', 0.18, 0.001), 30);
+    setTimeout(() => playTone(80, 0.25, 'triangle', 0.1, 0.01), 80);
+}
+
+function spawnSeverParticles(conn) {
+    // Spawn particles along the connection to create a snapping/breaking effect
+    for (let t = 0; t <= 1; t += 0.1) {
+        const p = conn.getPointOnCurve(t);
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 30 + Math.random() * 60;
+        spawnParticle(p.x, p.y, 'death', {
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed - 20,
+            life: 0.4 + Math.random() * 0.4,
+            size: 2 + Math.random() * 3,
+            color: conn.treeA.diseased || conn.treeB.diseased ? '#E53935' : '#CE93D8',
+            alpha: 0.9
+        });
+    }
+    // Extra burst at midpoint
+    const mid = conn.getPointOnCurve(0.5);
+    for (let i = 0; i < 8; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 40 + Math.random() * 80;
+        spawnParticle(mid.x, mid.y, 'glow', {
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            life: 0.3 + Math.random() * 0.3,
+            size: 3 + Math.random() * 4,
+            color: '#FFAB91',
+            alpha: 0.8
+        });
+    }
+}
+
 function playButtonClick() {
     playTone(440, 0.06, 'sine', 0.15, 0.005);
 }
@@ -796,33 +834,16 @@ function handleGameplayInput() {
             dragSourceTree = tree;
             dragStart = { x: mouse.x, y: mouse.y };
         } else {
-            // Check if clicking on connection to upgrade
-            const conn = findConnection(mouse.x, mouse.y, 20);
-            if (conn && conn.level < 3) {
-                const cost = 15 * conn.level;
-                if (fungalEnergy >= cost) {
-                    fungalEnergy -= cost;
-                    conn.level++;
-                    playConnectionGrow();
-                    score += 20;
-                }
-            }
-            // Check if clicking on diseased connection to remove it
-            if (conn) {
-                const hasDisease = conn.treeA.diseased || conn.treeB.diseased;
-                if (hasDisease) {
-                    conn.treeA.connections--;
-                    conn.treeB.connections--;
-                    const idx = connections.indexOf(conn);
-                    if (idx >= 0) connections.splice(idx, 1);
-                    playButtonClick();
-                }
-            }
+            // Not near a root — record drag start for connection click detection
+            dragStart = { x: mouse.x, y: mouse.y };
         }
     }
 
-    if (mouse.justUp && dragSourceTree) {
-        if (mouse.y > splitY) {
+    if (mouse.justUp && mouse.y > splitY) {
+        const wasDrag = dragStart && Math.hypot(mouse.x - dragStart.x, mouse.y - dragStart.y) > 20;
+
+        if (wasDrag && dragSourceTree) {
+            // Dragged from a tree root — try to create a connection
             const target = findTreeNearRoot(mouse.x, mouse.y, 50);
             if (target && target !== dragSourceTree && !connectionExists(dragSourceTree, target)) {
                 if (dragSourceTree.connections < 4 && target.connections < 4) {
@@ -838,7 +859,45 @@ function handleGameplayInput() {
                     }
                 }
             }
+        } else if (!wasDrag) {
+            // It was a click (not a drag) — check connection interaction
+            // This works even if the click was near a tree root, so connections
+            // near root endpoints can be clicked for upgrade/sever
+            const conn = findConnection(mouse.x, mouse.y, 18);
+            if (conn) {
+                const hasDisease = conn.treeA.diseased || conn.treeB.diseased;
+                if (hasDisease) {
+                    // Diseased connections: sever immediately (free, to encourage disease control)
+                    spawnSeverParticles(conn);
+                    conn.treeA.connections--;
+                    conn.treeB.connections--;
+                    const idx = connections.indexOf(conn);
+                    if (idx >= 0) connections.splice(idx, 1);
+                    playSeverSnap();
+                } else if (conn.level < 3) {
+                    // Healthy connection: upgrade it
+                    const cost = 15 * conn.level;
+                    if (fungalEnergy >= cost) {
+                        fungalEnergy -= cost;
+                        conn.level++;
+                        playConnectionGrow();
+                        score += 20;
+                    }
+                } else {
+                    // Fully upgraded healthy connection: sever it (strategic choice)
+                    spawnSeverParticles(conn);
+                    conn.treeA.connections--;
+                    conn.treeB.connections--;
+                    const idx = connections.indexOf(conn);
+                    if (idx >= 0) connections.splice(idx, 1);
+                    playSeverSnap();
+                }
+            }
         }
+
+        dragSourceTree = null;
+        dragStart = null;
+    } else if (mouse.justUp) {
         dragSourceTree = null;
         dragStart = null;
     }
@@ -1539,7 +1598,7 @@ function drawHUD() {
         ctx.fillText(`Connections: ${t.connections}/4${t.diseased ? '  DISEASED!' : ''}`, tipX + 8, tipY + 42);
         if (t.diseased) {
             ctx.fillStyle = '#E53935';
-            ctx.fillText('Click connection to disconnect!', tipX + 8, tipY + 54);
+            ctx.fillText('Click a connection to sever it!', tipX + 8, tipY + 54);
         }
     }
 
@@ -1548,7 +1607,7 @@ function drawHUD() {
     ctx.fillStyle = '#CE93D8';
     ctx.font = '11px Inter';
     ctx.textAlign = 'center';
-    ctx.fillText('Drag between tree roots to connect  |  Click connections to upgrade  |  Click diseased connections to remove', W/2, H - 12);
+    ctx.fillText('Drag between roots to connect  |  Click connection to upgrade  |  Click diseased connection to sever it', W/2, H - 12);
     ctx.globalAlpha = 1;
 }
 
@@ -1709,7 +1768,8 @@ function drawHowTo(dt) {
                 'a mycelium connection (costs Fungal Energy).',
                 '',
                 'Each tree can have up to 4 connections.',
-                'Click an existing connection to upgrade it (faster flow).'
+                'Click an existing connection to upgrade it (faster flow).',
+                'Click a DISEASED connection to sever it and stop spread!'
             ]
         },
         {

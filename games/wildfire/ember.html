@@ -369,24 +369,30 @@ const LEVELS = [
     sub:'Wet California Winter',
     flavor:'Everything is drenched... but pockets of dry remain.',
     duration:90,
-    baseMoisture:0.72,
-    moistureNoise:0.2,
+    baseMoisture:0.55,
+    moistureNoise:0.28,
     startX:20,startY:15,
     clouds:[
-      {x:8,y:7,vx:0.6,vy:0.2,r:4},
-      {x:25,y:20,vx:-0.7,vy:0.15,r:3.5},
-      {x:35,y:5,vx:-0.5,vy:0.3,r:3},
-      {x:15,y:25,vx:0.8,vy:-0.2,r:4},
+      {x:8,y:4,vx:0.5,vy:0.15,r:2.5},
+      {x:33,y:24,vx:-0.5,vy:0.12,r:2.5},
     ],
-    winds:[],
+    winds:[
+      {x:16,y:10,w:8,h:10,fx:1.5,fy:0},
+    ],
     features:[
-      {type:'dry',x:5,y:5,r:3,m:0.1},
-      {type:'dry',x:35,y:25,r:3,m:0.1},
-      {type:'dry',x:20,y:2,r:2.5,m:0.12},
-      {type:'dry',x:10,y:22,r:2,m:0.08},
-      {type:'dry',x:30,y:12,r:2.5,m:0.1},
+      {type:'dry',x:20,y:15,r:4,m:0.08},
+      {type:'dry',x:5,y:5,r:4,m:0.1},
+      {type:'dry',x:35,y:25,r:4,m:0.1},
+      {type:'dry',x:20,y:2,r:3.5,m:0.1},
+      {type:'dry',x:10,y:22,r:3.5,m:0.08},
+      {type:'dry',x:30,y:12,r:3.5,m:0.1},
+      {type:'dry',x:5,y:15,r:3,m:0.12},
+      {type:'dry',x:35,y:8,r:3,m:0.12},
+      {type:'dry',x:20,y:27,r:3,m:0.1},
     ],
-    puInterval:8,
+    puInterval:6,
+    dryRegenRate:0.03,
+    decayMult:0.6,
     bronze:1500,silver:3500,gold:6000,
   },
   {
@@ -509,12 +515,24 @@ function applyMoistureCircle(cx,cy,r,m){
 }
 
 function updateGrid(dt){
+  const cfg=LEVELS[currentLevel];
+  const dryRate=cfg.dryRegenRate||0;
   for(let i=0;i<GRID_W*GRID_H;i++){
     if(cellState[i]===S_BURNING){
       burnTime[i]+=dt;
       if(burnTime[i]>=BURN_DUR){
         cellState[i]=S_BURNED;
         gridDirty=true;
+      }
+    }
+    // Natural drying: slowly reduce moisture on veg cells not burning/burned
+    if(dryRate>0&&terrain[i]===T_VEG&&cellState[i]!==S_BURNING&&cellState[i]!==S_BURNED){
+      const oldM=moisture[i];
+      moisture[i]=Math.max(0,moisture[i]-dryRate*dt);
+      if(moisture[i]!==oldM){
+        const oldSt=cellState[i];
+        updateCellFromMoisture(i);
+        if(cellState[i]!==oldSt)gridDirty=true;
       }
     }
   }
@@ -586,8 +604,9 @@ function updatePlayer(dt){
   // Clamp to grid
   player.x=clamp(player.x,0.5,GRID_W-0.5);
   player.y=clamp(player.y,0.5,GRID_H-0.5);
-  // Natural decay
-  player.size-=P_DECAY*dt;
+  // Natural decay (reduced on some levels via decayMult)
+  const dm=LEVELS[currentLevel].decayMult||1;
+  player.size-=P_DECAY*dm*dt;
 }
 
 function handleGridCollision(dt){
