@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When Trees Become Matches | G05-L01 California Wildfire Model</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #0d0a14;
+    color: #e0e0e5;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+  }
+
+  #app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  /* ---- LESSON GUIDE (Left Panel) ---- */
+  #guide-panel {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 340px;
+    background: rgba(14, 14, 24, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px 20px;
+    z-index: 20;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+  }
+
+  #guide-panel.hidden {
+    transform: translateY(-50%) translateX(-380px);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #guide-toggle {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 25;
+    background: rgba(40, 90, 180, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background 0.2s;
+    font-family: inherit;
+  }
+  #guide-toggle:hover { background: rgba(50, 110, 210, 0.95); }
+
+  .guide-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffd94a;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .guide-instructions {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: #c8c8d0;
+    min-height: 280px;
+    max-height: 340px;
+    overflow-y: auto;
+    margin: 12px 0;
+    white-space: pre-line;
+  }
+
+  .guide-counter {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    margin: 8px 0 12px;
+  }
+
+  .guide-nav {
+    display: flex;
+    gap: 12px;
+  }
+  .guide-nav button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  #prev-btn {
+    background: rgba(50, 50, 70, 0.8);
+    color: #a0a0b0;
+  }
+  #prev-btn:hover:not(:disabled) { background: rgba(60, 60, 85, 0.9); }
+  #next-btn {
+    background: rgba(40, 100, 200, 0.85);
+    color: #fff;
+  }
+  #next-btn:hover:not(:disabled) { background: rgba(50, 120, 230, 0.95); }
+  .guide-nav button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  /* ---- SIMULATION CANVAS ---- */
+  #canvas-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  canvas {
+    display: block;
+    image-rendering: pixelated;
+    border-radius: 4px;
+  }
+
+  /* ---- CONTROL PANEL (Right) ---- */
+  #control-panel {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 290px;
+    background: rgba(16, 16, 26, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 24px 20px;
+    z-index: 20;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+
+  .panel-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffa627;
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  .panel-subtitle {
+    font-size: 11px;
+    font-style: italic;
+    color: rgba(180, 180, 195, 0.7);
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 14px 0;
+  }
+
+  /* Slider groups */
+  .slider-group { margin-bottom: 16px; }
+  .slider-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .slider-label .name { color: inherit; }
+  .slider-label .value { font-weight: 700; }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border: none;
+  }
+
+  #rainfall-slider {
+    background: linear-gradient(90deg, #1a3a5c, #4d99e6);
+  }
+  #wind-slider {
+    background: linear-gradient(90deg, #2a2a35, #b0b0c0);
+  }
+
+  .rainfall-color { color: #66bbff; }
+  .wind-color { color: #d0d0e0; }
+
+  /* Status display */
+  .status-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .status-row .label { color: rgba(200, 200, 215, 0.7); }
+  .status-row .val { font-weight: 600; }
+
+  #dryness-val { color: #c78d26; }
+  #fire-val { color: #ff6622; }
+
+  #risk-badge {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px 0 4px;
+    transition: all 0.3s;
+  }
+  .risk-low { background: rgba(50, 180, 80, 0.15); color: #4dd964; }
+  .risk-high { background: rgba(220, 160, 30, 0.15); color: #e6a820; }
+  .risk-extreme { background: rgba(220, 60, 20, 0.15); color: #ff4422; }
+  .risk-active { background: rgba(255, 50, 20, 0.25); color: #ff3318; animation: pulse-risk 0.8s infinite alternate; }
+  @keyframes pulse-risk {
+    from { opacity: 0.8; }
+    to { opacity: 1; }
+  }
+
+  /* Buttons */
+  .btn-row { display: flex; gap: 8px; margin-bottom: 8px; }
+  .btn {
+    flex: 1;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    transition: all 0.15s;
+  }
+  .btn:hover { filter: brightness(1.15); transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); filter: brightness(0.9); }
+
+  .btn-fire { background: #d63010; color: #fff; }
+  .btn-drought { background: #a67010; color: #fff; }
+  .btn-santa { background: #c44a10; color: #fff; }
+  .btn-reset { background: #2e7a3e; color: #fff; }
+
+  /* Legend */
+  .legend-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgba(160, 160, 175, 0.6);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .legend-row {
+    font-size: 11px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* Touch hint */
+  .touch-hint {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+    pointer-events: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    #guide-panel { width: 280px; left: 10px; }
+    #control-panel { width: 250px; right: 10px; }
+  }
+  @media (max-width: 800px) {
+    #guide-panel {
+      width: calc(100vw - 20px);
+      left: 10px;
+      top: auto;
+      bottom: 10px;
+      transform: none;
+      max-height: 45vh;
+    }
+    #guide-panel.hidden { transform: translateY(110%); }
+    #control-panel {
+      width: calc(100vw - 20px);
+      right: 10px;
+      top: 10px;
+      transform: none;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <!-- Guide Toggle Button -->
+  <button id="guide-toggle">Lesson Guide</button>
+
+  <!-- Lesson Guide Panel -->
+  <div id="guide-panel">
+    <div class="guide-title" id="step-title">Welcome, Scientists!</div>
+    <div class="guide-instructions" id="step-instructions"></div>
+    <div class="guide-counter" id="step-counter">1 / 9</div>
+    <div class="guide-nav">
+      <button id="prev-btn" disabled>Back</button>
+      <button id="next-btn">Next</button>
+    </div>
+  </div>
+
+  <!-- Canvas -->
+  <div id="canvas-container">
+    <canvas id="sim-canvas"></canvas>
+    <div class="touch-hint">Scroll to zoom &middot; Right-click drag to pan</div>
+  </div>
+
+  <!-- Control Panel -->
+  <div id="control-panel">
+    <div class="panel-title">When Trees<br>Become Matches</div>
+    <div class="panel-subtitle">G05-L01 | California Wildfire Model</div>
+
+    <div class="divider"></div>
+
+    <!-- Rainfall -->
+    <div class="slider-group">
+      <div class="slider-label rainfall-color">
+        <span class="name">Rainfall</span>
+        <span class="value" id="rainfall-val">60%</span>
+      </div>
+      <input type="range" id="rainfall-slider" min="0" max="100" value="60">
+    </div>
+
+    <!-- Wind -->
+    <div class="slider-group">
+      <div class="slider-label wind-color">
+        <span class="name">Wind</span>
+        <span class="value" id="wind-val">20%</span>
+      </div>
+      <input type="range" id="wind-slider" min="0" max="100" value="20">
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Status -->
+    <div class="status-row">
+      <span class="label">Avg Dryness</span>
+      <span class="val" id="dryness-val">0%</span>
+    </div>
+    <div class="status-row">
+      <span class="label">Fire</span>
+      <span class="val" id="fire-val">0 burning | 0 burned</span>
+    </div>
+    <div id="risk-badge" class="risk-low">LOW FIRE RISK</div>
+
+    <div class="divider"></div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+      <button class="btn btn-fire" id="btn-fire">Start Fire</button>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-drought" id="btn-drought">Drought</button>
+      <button class="btn btn-santa" id="btn-santa">Santa Ana</button>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-reset" id="btn-reset">Reset Forest</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Legend -->
+    <div class="legend-title">MODEL RELATIONSHIPS</div>
+    <div class="legend-row">
+      <span class="legend-dot" style="background:#66bbff"></span>
+      <span style="color:#66bbff">Rainfall &minus;(neg)&rarr; Dry Vegetation</span>
+    </div>
+    <div class="legend-row">
+      <span class="legend-dot" style="background:#c78d26"></span>
+      <span style="color:#c78d26">Dry Vegetation +(pos)&rarr; Fire Spread</span>
+    </div>
+    <div class="legend-row">
+      <span class="legend-dot" style="background:#d0d0e0"></span>
+      <span style="color:#d0d0e0">Wind +(pos)&rarr; Fire Spread</span>
+    </div>
+
+    <div style="margin-top:12px">
+      <div class="legend-title">CELL COLORS</div>
+      <div class="legend-row"><span class="legend-dot" style="background:#2ea640"></span> Wet (healthy)</div>
+      <div class="legend-row"><span class="legend-dot" style="background:#b8ad26"></span> Drying</div>
+      <div class="legend-row"><span class="legend-dot" style="background:#c78d26"></span> Dry (fuel)</div>
+      <div class="legend-row"><span class="legend-dot" style="background:#ff5900"></span> Burning</div>
+      <div class="legend-row"><span class="legend-dot" style="background:#261e1a"></span> Burned</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// =====================================================================
+// WHEN TREES BECOME MATCHES — G05-L01 California Wildfire Simulation
+// Web port of the Unity version, CAST Science Resources
+// =====================================================================
+
+// --- CONSTANTS ---
+const GRID_W = 30, GRID_H = 30;
+const CELL_GAP = 0.08; // fraction of cell size for gap
+
+const STATE = { WET: 0, DRYING: 1, DRY: 2, BURNING: 3, BURNED: 4 };
+
+// Colors (r, g, b) 0-255
+const C_WET       = [46, 166, 64];
+const C_DRYING    = [184, 173, 38];
+const C_DRY       = [199, 141, 38];
+const C_BURN1     = [255, 89, 0];
+const C_BURN2     = [255, 26, 0];
+const C_EMBER     = [255, 217, 0];
+const C_BURNED    = [38, 30, 26];
+const C_BG        = [13, 10, 20];
+
+// --- STATE ---
+let grid, moisture, burnTimer;
+let rainfall = 60, wind = 20;
+let totalBurning = 0, totalBurned = 0, avgDryness = 0;
+let tickAccum = 0;
+const TICK_INTERVAL = 150; // ms
+
+// Camera
+let camX = 0, camY = 0, camZoom = 1;
+let isPanning = false, panStartX = 0, panStartY = 0, camStartX = 0, camStartY = 0;
+
+// Canvas
+const canvas = document.getElementById('sim-canvas');
+const ctx = canvas.getContext('2d');
+
+// --- INIT ---
+function initGrid() {
+  grid = [];
+  moisture = [];
+  burnTimer = [];
+  for (let x = 0; x < GRID_W; x++) {
+    grid[x] = []; moisture[x] = []; burnTimer[x] = [];
+    for (let y = 0; y < GRID_H; y++) {
+      grid[x][y] = STATE.WET;
+      moisture[x][y] = 1.0;
+      burnTimer[x][y] = 0;
+    }
+  }
+  // Natural variation patches
+  for (let i = 0; i < 15; i++) {
+    const cx = 3 + Math.floor(Math.random() * (GRID_W - 6));
+    const cy = 3 + Math.floor(Math.random() * (GRID_H - 6));
+    const r = 2 + Math.floor(Math.random() * 3);
+    const mv = (Math.random() - 0.5) * 0.3;
+    for (let x = cx - r; x <= cx + r; x++) {
+      for (let y = cy - r; y <= cy + r; y++) {
+        if (x >= 0 && x < GRID_W && y >= 0 && y < GRID_H) {
+          const d = Math.hypot(x - cx, y - cy);
+          if (d <= r) moisture[x][y] = Math.max(0, Math.min(1, moisture[x][y] + mv));
+        }
+      }
+    }
+  }
+}
+
+// --- SIMULATION TICK ---
+function simulationTick() {
+  const rf = rainfall / 100;
+  const wf = wind / 100;
+  let tBurning = 0, tBurned = 0, tDryness = 0;
+
+  const newGrid = grid.map(col => [...col]);
+
+  for (let x = 0; x < GRID_W; x++) {
+    for (let y = 0; y < GRID_H; y++) {
+      const s = grid[x][y];
+      if (s === STATE.WET || s === STATE.DRYING || s === STATE.DRY) {
+        const dryRate = (1 - rf) * 0.02;
+        const wetRate = rf * 0.03;
+        moisture[x][y] += (wetRate - dryRate) + (Math.random() - 0.5) * 0.01;
+        moisture[x][y] = Math.max(0, Math.min(1, moisture[x][y]));
+
+        if (moisture[x][y] > 0.6) newGrid[x][y] = STATE.WET;
+        else if (moisture[x][y] > 0.3) newGrid[x][y] = STATE.DRYING;
+        else newGrid[x][y] = STATE.DRY;
+
+        tDryness += (1 - moisture[x][y]);
+      } else if (s === STATE.BURNING) {
+        tBurning++;
+        burnTimer[x][y] += TICK_INTERVAL / 1000;
+        if (burnTimer[x][y] > 2) {
+          newGrid[x][y] = STATE.BURNED;
+        } else {
+          trySpreadFire(x, y, newGrid, wf);
+        }
+      } else if (s === STATE.BURNED) {
+        tBurned++;
+      }
+    }
+  }
+
+  grid = newGrid;
+  totalBurning = tBurning;
+  totalBurned = tBurned;
+  const live = GRID_W * GRID_H - tBurned - tBurning;
+  avgDryness = live > 0 ? (tDryness / live) * 100 : 0;
+}
+
+function trySpreadFire(x, y, newGrid, wf) {
+  for (let dx = -1; dx <= 1; dx++) {
+    for (let dy = -1; dy <= 1; dy++) {
+      if (dx === 0 && dy === 0) continue;
+      const nx = x + dx, ny = y + dy;
+      if (nx < 0 || nx >= GRID_W || ny < 0 || ny >= GRID_H) continue;
+      if (grid[nx][ny] === STATE.BURNING || grid[nx][ny] === STATE.BURNED) continue;
+
+      const dryness = 1 - moisture[nx][ny];
+      let baseChance = dryness * 0.3;
+      let windBoost = wf * 0.25;
+      if (dx > 0) windBoost *= 1.5; // wind blows west to east
+      let spread = baseChance + windBoost;
+      if (dx !== 0 && dy !== 0) spread *= 0.6; // diagonal penalty
+
+      if (Math.random() < spread) {
+        newGrid[nx][ny] = STATE.BURNING;
+        burnTimer[nx][ny] = 0;
+      }
+    }
+  }
+
+  // Ember spotting at high wind
+  if (wf > 0.5 && Math.random() < wf * 0.08) {
+    const sx = x + 2 + Math.floor(Math.random() * 3);
+    const sy = y + Math.floor(Math.random() * 5) - 2;
+    if (sx >= 0 && sx < GRID_W && sy >= 0 && sy < GRID_H) {
+      if (grid[sx][sy] !== STATE.BURNING && grid[sx][sy] !== STATE.BURNED) {
+        if (moisture[sx][sy] < 0.4) {
+          newGrid[sx][sy] = STATE.BURNING;
+          burnTimer[sx][sy] = 0;
+        }
+      }
+    }
+  }
+}
+
+// --- RENDERING ---
+function resizeCanvas() {
+  const container = document.getElementById('canvas-container');
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = w * dpr;
+  canvas.height = h * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function lerpColor(a, b, t) {
+  return [
+    a[0] + (b[0] - a[0]) * t,
+    a[1] + (b[1] - a[1]) * t,
+    a[2] + (b[2] - a[2]) * t
+  ];
+}
+
+function colorStr(c) {
+  return `rgb(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])})`;
+}
+
+// Simple noise for fire flicker
+function pseudoNoise(x, y, t) {
+  const v = Math.sin(x * 12.9898 + y * 78.233 + t * 43.6821) * 43758.5453;
+  return v - Math.floor(v);
+}
+
+function render(now) {
+  const cw = canvas.clientWidth;
+  const ch = canvas.clientHeight;
+
+  // Clear
+  ctx.fillStyle = colorStr(C_BG);
+  ctx.fillRect(0, 0, cw, ch);
+
+  // Calculate cell size to fit
+  const maxGridPx = Math.min(cw * 0.55, ch * 0.9);
+  const baseCellSize = maxGridPx / GRID_W;
+  const cellSize = baseCellSize * camZoom;
+  const gap = cellSize * CELL_GAP;
+  const drawSize = cellSize - gap;
+
+  const gridPxW = GRID_W * cellSize;
+  const gridPxH = GRID_H * cellSize;
+  const offsetX = (cw - gridPxW) / 2 + camX;
+  const offsetY = (ch - gridPxH) / 2 + camY;
+
+  const nowSec = now / 1000;
+
+  for (let x = 0; x < GRID_W; x++) {
+    for (let y = 0; y < GRID_H; y++) {
+      const px = offsetX + x * cellSize;
+      const py = offsetY + (GRID_H - 1 - y) * cellSize; // flip Y
+      const s = grid[x][y];
+      let color;
+
+      switch (s) {
+        case STATE.WET:
+          color = lerpColor(C_DRYING, C_WET, moisture[x][y]);
+          break;
+        case STATE.DRYING: {
+          const t = (moisture[x][y] - 0.3) / 0.3;
+          color = lerpColor(C_DRY, C_DRYING, Math.max(0, Math.min(1, t)));
+          break;
+        }
+        case STATE.DRY:
+          color = lerpColor(C_DRY, C_DRYING, moisture[x][y] / 0.3);
+          break;
+        case STATE.BURNING: {
+          const flicker = pseudoNoise(x * 0.5, y * 0.5, nowSec * 8);
+          color = lerpColor(C_BURN1, C_BURN2, flicker);
+          if (flicker > 0.85) {
+            const et = (flicker - 0.85) * 6;
+            color = lerpColor(color, C_EMBER, Math.min(1, et));
+          }
+          // Pulse
+          const pulse = 1 + Math.sin(nowSec * 12 + x + y) * 0.06;
+          const pxSize = drawSize * pulse;
+          const offset = (drawSize - pxSize) / 2;
+          ctx.fillStyle = colorStr(color);
+          ctx.fillRect(px + offset, py + offset, pxSize, pxSize);
+          // Glow
+          ctx.fillStyle = `rgba(255, 100, 0, ${0.08 + flicker * 0.06})`;
+          ctx.fillRect(px - gap, py - gap, cellSize, cellSize);
+          continue; // skip normal draw
+        }
+        case STATE.BURNED:
+          color = C_BURNED;
+          break;
+      }
+
+      ctx.fillStyle = colorStr(color);
+      ctx.fillRect(px, py, drawSize, drawSize);
+    }
+  }
+}
+
+// --- UI ---
+function updateUI() {
+  document.getElementById('rainfall-val').textContent = Math.round(rainfall) + '%';
+  document.getElementById('wind-val').textContent = Math.round(wind) + '%';
+  document.getElementById('dryness-val').textContent = Math.round(avgDryness) + '%';
+
+  const firePercent = ((totalBurning + totalBurned) / (GRID_W * GRID_H) * 100).toFixed(1);
+  document.getElementById('fire-val').textContent = `${totalBurning} burning | ${totalBurned} burned (${firePercent}%)`;
+
+  const badge = document.getElementById('risk-badge');
+  if (totalBurning > 0) {
+    badge.textContent = 'ACTIVE WILDFIRE';
+    badge.className = 'risk-active';
+  } else if (avgDryness > 70) {
+    badge.textContent = 'EXTREME FIRE DANGER';
+    badge.className = 'risk-extreme';
+  } else if (avgDryness > 40) {
+    badge.textContent = 'HIGH FIRE RISK';
+    badge.className = 'risk-high';
+  } else {
+    badge.textContent = 'LOW FIRE RISK';
+    badge.className = 'risk-low';
+  }
+}
+
+// --- ACTIONS ---
+function startFire() {
+  for (let attempt = 0; attempt < 50; attempt++) {
+    const x = Math.floor(Math.random() * 3);
+    const y = 5 + Math.floor(Math.random() * (GRID_H - 10));
+    if (grid[x][y] !== STATE.BURNED && grid[x][y] !== STATE.BURNING) {
+      for (let dx = 0; dx <= 1; dx++) {
+        for (let dy = -1; dy <= 1; dy++) {
+          const nx = x + dx, ny = y + dy;
+          if (nx >= 0 && nx < GRID_W && ny >= 0 && ny < GRID_H) {
+            grid[nx][ny] = STATE.BURNING;
+            burnTimer[nx][ny] = 0;
+          }
+        }
+      }
+      return;
+    }
+  }
+}
+
+function resetForest() {
+  rainfall = 60; wind = 20;
+  document.getElementById('rainfall-slider').value = 60;
+  document.getElementById('wind-slider').value = 20;
+  for (let x = 0; x < GRID_W; x++) {
+    for (let y = 0; y < GRID_H; y++) {
+      moisture[x][y] = 0.8 + (Math.random() - 0.5) * 0.2;
+      grid[x][y] = STATE.WET;
+      burnTimer[x][y] = 0;
+    }
+  }
+}
+
+function simulateDrought() {
+  rainfall = 0; wind = 20;
+  document.getElementById('rainfall-slider').value = 0;
+  document.getElementById('wind-slider').value = 20;
+}
+
+function simulateSantaAna() {
+  rainfall = 0; wind = 95;
+  document.getElementById('rainfall-slider').value = 0;
+  document.getElementById('wind-slider').value = 95;
+}
+
+// --- LESSON GUIDE ---
+const titles = [
+  "Welcome, Scientists!",
+  "Step 1: Observe the Forest",
+  "Step 2: Create a Drought",
+  "Step 3: Watch Vegetation Dry Out",
+  "Step 4: Start a Fire!",
+  "Step 5: Add Santa Ana Winds",
+  "Step 6: The Key Discovery",
+  "Step 7: Recovery \u2014 Bring Back Rain",
+  "Challenge: Can You Save the Forest?"
+];
+
+const instructions = [
+  "California burns every single year \u2014 not from bad luck, but because of connected Earth systems.\n\nIn this simulation, you\u2019ll discover WHY by building a model of:\n\u2022 Rainfall (atmosphere)\n\u2022 Dry Vegetation (biosphere)\n\u2022 Wind (atmosphere)\n\u2022 Fire Spread\n\nClick NEXT to begin!",
+
+  "Look at the green grid \u2014 this is a healthy California forest with good rainfall.\n\nNotice the controls on the right:\n\u2022 Rainfall slider: How much rain falls\n\u2022 Wind slider: How strong the wind blows\n\nRight now rainfall is at 60% and wind at 20%. The forest is healthy and WET.\n\nQUESTION: What do you think will happen if rain stops?",
+
+  "Click the \u2018DROUGHT\u2019 button or drag the Rainfall slider all the way to 0%.\n\nThis simulates months without rain \u2014 a California drought.\n\nWatch what happens to the forest colors...\n\nRELATIONSHIP: Rainfall \u2190(negative)\u2192 Dry Vegetation\nLess rain = MORE dry vegetation",
+
+  "Watch the \u2018Avg Dryness\u2019 number climb!\n\n\u2022 Green cells \u2192 Yellow cells \u2192 Brown cells\n\u2022 The forest is becoming FUEL for fire\n\nWait until dryness reaches 60% or higher before continuing.\n\nQUESTION: Is the forest dangerous yet? What\u2019s missing?",
+
+  "Now click \u2018START FIRE\u2019 to simulate an ignition on the left edge.\n\nWatch how fire spreads through the dry vegetation!\n\nRELATIONSHIP: Dry Vegetation \u2192(positive)\u2192 Fire Spread\nMore dry fuel = MORE fire spread\n\nNotice: fire spreads FASTER through drier areas and SLOWER through wetter patches.",
+
+  "Click \u2018SANTA ANA\u2019 or crank the Wind slider to 95%.\n\nSanta Ana winds are hot, dry winds that blow through California every fall.\n\nRELATIONSHIP: Wind \u2192(positive)\u2192 Fire Spread\nMore wind = MORE fire spread\n\nWatch for EMBER SPOTTING \u2014 wind carries burning embers ahead of the fire line!\n\nThis is why California fires can jump highways and rivers.",
+
+  "You just discovered the WILDFIRE CASCADE:\n\n1. Rain stops (drought begins)\n2. Vegetation dries out (fuel builds up)\n3. Any spark starts a fire\n4. Wind supercharges the spread\n\nThis is how Earth\u2019s ATMOSPHERE, BIOSPHERE, and HYDROSPHERE interact!\n\nRainfall is the FIRST DOMINO \u2014 everything else follows.",
+
+  "Click \u2018RESET\u2019 to restore the forest, then set:\n\u2022 Rainfall: 80%\n\u2022 Wind: 10%\n\nWatch how the burned areas (if any remain) get surrounded by recovering green.\n\nQUESTION: How long does recovery take compared to destruction?\nWhat does this tell us about protecting forests?",
+
+  "FREE EXPLORATION! Try these scenarios:\n\n1. Can you keep wind at 100% but prevent fire with enough rain?\n2. What\u2019s the MINIMUM rainfall needed to stop fire from spreading?\n3. Start a fire, then crank up rainfall \u2014 can you put it out?\n4. What happens with moderate drought (Rain=30) vs extreme (Rain=0)?\n\nRecord your observations in your Student Activity Pack!"
+];
+
+let currentStep = 0;
+
+function updateGuide() {
+  document.getElementById('step-title').textContent = titles[currentStep];
+  document.getElementById('step-instructions').textContent = instructions[currentStep];
+  document.getElementById('step-counter').textContent = `${currentStep + 1} / ${titles.length}`;
+  document.getElementById('prev-btn').disabled = currentStep === 0;
+  document.getElementById('next-btn').disabled = currentStep === titles.length - 1;
+}
+
+// --- EVENT LISTENERS ---
+document.getElementById('rainfall-slider').addEventListener('input', e => { rainfall = +e.target.value; });
+document.getElementById('wind-slider').addEventListener('input', e => { wind = +e.target.value; });
+document.getElementById('btn-fire').addEventListener('click', startFire);
+document.getElementById('btn-reset').addEventListener('click', resetForest);
+document.getElementById('btn-drought').addEventListener('click', simulateDrought);
+document.getElementById('btn-santa').addEventListener('click', simulateSantaAna);
+document.getElementById('next-btn').addEventListener('click', () => { if (currentStep < titles.length - 1) { currentStep++; updateGuide(); } });
+document.getElementById('prev-btn').addEventListener('click', () => { if (currentStep > 0) { currentStep--; updateGuide(); } });
+
+const guidePanel = document.getElementById('guide-panel');
+document.getElementById('guide-toggle').addEventListener('click', () => {
+  guidePanel.classList.toggle('hidden');
+});
+
+// Zoom
+canvas.addEventListener('wheel', e => {
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  camZoom = Math.max(0.5, Math.min(3, camZoom + delta));
+}, { passive: false });
+
+// Pan (right click drag)
+canvas.addEventListener('mousedown', e => {
+  if (e.button === 2) {
+    isPanning = true;
+    panStartX = e.clientX;
+    panStartY = e.clientY;
+    camStartX = camX;
+    camStartY = camY;
+    e.preventDefault();
+  }
+});
+window.addEventListener('mousemove', e => {
+  if (isPanning) {
+    camX = camStartX + (e.clientX - panStartX);
+    camY = camStartY + (e.clientY - panStartY);
+  }
+});
+window.addEventListener('mouseup', e => {
+  if (e.button === 2) isPanning = false;
+});
+canvas.addEventListener('contextmenu', e => e.preventDefault());
+
+// Touch support
+let touchStartDist = 0, touchStartZoom = 1;
+canvas.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) {
+    isPanning = true;
+    panStartX = e.touches[0].clientX;
+    panStartY = e.touches[0].clientY;
+    camStartX = camX;
+    camStartY = camY;
+  } else if (e.touches.length === 2) {
+    isPanning = false;
+    touchStartDist = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+    touchStartZoom = camZoom;
+  }
+  e.preventDefault();
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+  if (e.touches.length === 1 && isPanning) {
+    camX = camStartX + (e.touches[0].clientX - panStartX);
+    camY = camStartY + (e.touches[0].clientY - panStartY);
+  } else if (e.touches.length === 2) {
+    const dist = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+    camZoom = Math.max(0.5, Math.min(3, touchStartZoom * (dist / touchStartDist)));
+  }
+  e.preventDefault();
+}, { passive: false });
+
+canvas.addEventListener('touchend', () => { isPanning = false; });
+
+// Resize
+window.addEventListener('resize', resizeCanvas);
+
+// --- GAME LOOP ---
+let lastTime = 0;
+
+function gameLoop(now) {
+  const dt = now - lastTime;
+  lastTime = now;
+
+  tickAccum += dt;
+  while (tickAccum >= TICK_INTERVAL) {
+    tickAccum -= TICK_INTERVAL;
+    simulationTick();
+  }
+
+  render(now);
+  updateUI();
+  requestAnimationFrame(gameLoop);
+}
+
+// --- START ---
+initGrid();
+resizeCanvas();
+updateGuide();
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>
