@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>CARBON - Where Do Trees Get Their Mass?</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#000;font-family:'Georgia','Times New Roman',serif;touch-action:none;user-select:none;-webkit-user-select:none}
+canvas{display:block;width:100%;height:100%}
+#orient{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#1A237E;color:#FFF8E1;z-index:9999;justify-content:center;align-items:center;flex-direction:column;font-size:1.4em;text-align:center;padding:2em}
+#orient svg{width:60px;height:60px;margin-bottom:1em;animation:rot 2s ease-in-out infinite}
+@keyframes rot{0%,100%{transform:rotate(0deg)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}}
+</style>
+</head>
+<body>
+<div id="orient"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>Please rotate your device to landscape mode</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+// ============================================================
+// CARBON - An Idle Growth Simulation Game
+// NGSS 5-LS1-1: Where do trees get their mass?
+// ============================================================
+
+const C = document.getElementById('gc');
+const X = C.getContext('2d');
+const W = ()=> C.width;
+const H = ()=> C.height;
+
+// ---------- DPR + Resize ----------
+let dpr = Math.min(window.devicePixelRatio||1, 2);
+function resize(){
+  const w = window.innerWidth, h = window.innerHeight;
+  dpr = Math.min(window.devicePixelRatio||1, 2);
+  C.width = w * dpr; C.height = h * dpr;
+  C.style.width = w+'px'; C.style.height = h+'px';
+  X.setTransform(dpr,0,0,dpr,0,0);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ---------- Constants ----------
+const DAY_LEN = 30; // seconds per full day
+const SEASON_DAYS = 4;
+const MAX_PARTICLES = 600;
+const GOAL_MASS = 1000000;
+const TREE_SPECIES = ['Redwood','Oak','Maple','Baobab','Banyan'];
+const STAGE_NAMES = ['Seedling','Sprout','Sapling','Young Tree','Mature Tree','Ancient Giant'];
+const STAGE_THRESHOLDS = [0, 100, 1000, 10000, 100000, GOAL_MASS];
+const SEASONS = ['Spring','Summer','Fall','Winter'];
+const SCIENCE_FACTS = [
+  'Trees absorb CO\u2082 through tiny pores called stomata on their leaves.',
+  'About 95% of a tree\'s dry mass comes from carbon dioxide in the air!',
+  'Photosynthesis: 6CO\u2082 + 6H\u2082O + sunlight \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082',
+  'A mature tree can absorb ~22 kg of CO\u2082 per year.',
+  'Trees use carbon from CO\u2082 to build cellulose, lignin, and other molecules.',
+  'Water from the soil makes up less than 5% of a tree\'s dry mass.',
+  'Jan Baptist van Helmont discovered in 1648 that trees don\'t eat soil!',
+  'Trees release oxygen as a byproduct of photosynthesis.',
+  'At night, trees do cellular respiration and release a tiny bit of CO\u2082.',
+  'A single large tree can provide a day\'s oxygen for up to 4 people.',
+  'Redwood trees can live for over 2,000 years and weigh over 500 tons!',
+  'Leaves appear green because chlorophyll reflects green light.',
+];
+
+// ---------- Game State ----------
+let state = {
+  phase: 'TITLE', // TITLE, HOW_TO, PLAYING, MILESTONE, PRESTIGE
+  mass: 1,
+  massFromAir: 0.95,
+  massFromSoil: 0.05,
+  dayTime: 0.25, // 0-1 within a day cycle, start at dawn
+  dayCount: 0,
+  season: 0,
+  seasonProgress: 0,
+  upgrades: { leaves:0, roots:0, trunk:0, stomata:0 },
+  prestigeCount: 0,
+  treeSpecies: 0,
+  totalPrestigeBonus: 1,
+  lastSave: Date.now(),
+  lastTimestamp: Date.now(),
+  highestMass: 0,
+  milestonesSeen: [false,false,false,false,false,false],
+  pendingMilestone: -1,
+  eventTimer: 0,
+  currentEvent: null,
+  eventDuration: 0,
+  stormDamage: false,
+  totalCO2Caught: 0,
+  totalDaysPlayed: 0,
+  factsShown: 0,
+};
+
+// ---------- Derived values ----------
+function getStage(){
+  for(let i=STAGE_THRESHOLDS.length-1;i>=0;i--){
+    if(state.mass >= STAGE_THRESHOLDS[i]) return i;
+  }
+  return 0;
+}
+
+function getLeafLevel(){ return state.upgrades.leaves; }
+function getRootLevel(){ return state.upgrades.roots; }
+function getTrunkLevel(){ return state.upgrades.trunk; }
+function getStomataLevel(){ return state.upgrades.stomata; }
+
+function getCanopyRadius(){
+  const stage = getStage();
+  const base = [8, 18, 35, 60, 100, 160][stage];
+  return base + getLeafLevel() * 15;
+}
+
+function getTreeHeight(){
+  const stage = getStage();
+  return [30, 55, 90, 150, 230, 340][stage] + getTrunkLevel() * 10;
+}
+
+function getTrunkWidth(){
+  const stage = getStage();
+  return [3, 5, 8, 14, 22, 35][stage] + getTrunkLevel() * 4;
+}
+
+function getPassiveRate(){
+  const base = 0.2 + getLeafLevel() * 0.5 + getStomataLevel() * 0.8;
+  const stageMult = 1 + getStage() * 0.5;
+  return base * stageMult * state.totalPrestigeBonus;
+}
+
+function getSoilRate(){
+  return 0.01 + getRootLevel() * 0.03;
+}
+
+function getCatchAmount(){
+  return 1 + getStage() * 0.5 + getStomataLevel() * 0.3;
+}
+
+// Upgrade costs
+const UPGRADE_COSTS = {
+  leaves:  [100, 500, 2000],
+  roots:   [80, 400, 1500],
+  trunk:   [150, 600, 2500],
+  stomata: [200, 800, 3000],
+};
+
+function getUpgradeCost(type){
+  const lvl = state.upgrades[type];
+  if(lvl >= 3) return Infinity;
+  return UPGRADE_COSTS[type][lvl];
+}
+
+// ---------- Audio System ----------
+let audioCtx = null;
+let masterGain = null;
+
+function ensureAudio(){
+  if(!audioCtx){
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.6;
+    masterGain.connect(audioCtx.destination);
+  }
+  if(audioCtx.state === 'suspended') audioCtx.resume();
+}
+
+function playTone(freq, dur, vol, type, decay){
+  if(!audioCtx || !masterGain) return;
+  try {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = type || 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(vol||0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + (decay||dur));
+    osc.connect(gain);
+    gain.connect(masterGain);
+    osc.start();
+    osc.stop(audioCtx.currentTime + dur);
+  } catch(e){}
+}
+
+function sfxCatch(){
+  ensureAudio();
+  playTone(880 + Math.random()*200, 0.15, 0.12, 'sine', 0.12);
+  playTone(1200 + Math.random()*100, 0.1, 0.06, 'sine', 0.08);
+}
+
+function sfxUpgrade(){
+  ensureAudio();
+  playTone(220, 0.3, 0.15, 'triangle', 0.25);
+  setTimeout(()=> playTone(330, 0.2, 0.12, 'triangle', 0.18), 80);
+  setTimeout(()=> playTone(440, 0.25, 0.1, 'triangle', 0.2), 160);
+}
+
+function sfxMilestone(){
+  ensureAudio();
+  const notes = [523, 659, 784, 1047, 1319];
+  notes.forEach((n,i)=> setTimeout(()=> playTone(n, 0.35, 0.14, 'sine', 0.3), i*120));
+}
+
+function sfxWind(){
+  if(!audioCtx || !masterGain) return;
+  try {
+    const bufSize = audioCtx.sampleRate * 0.8;
+    const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    for(let i=0;i<bufSize;i++) data[i] = (Math.random()*2-1)*0.3;
+    const src = audioCtx.createBufferSource();
+    src.buffer = buf;
+    const filter = audioCtx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.value = 400;
+    filter.Q.value = 1.5;
+    const gain = audioCtx.createGain();
+    gain.gain.setValueAtTime(0, audioCtx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.1, audioCtx.currentTime + 0.3);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 2);
+    src.connect(filter);
+    filter.connect(gain);
+    gain.connect(masterGain);
+    src.start();
+  } catch(e){}
+}
+
+function sfxRain(){
+  if(!audioCtx || !masterGain) return;
+  try {
+    const bufSize = audioCtx.sampleRate * 0.5;
+    const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    for(let i=0;i<bufSize;i++) data[i] = (Math.random()*2-1)*0.15;
+    const src = audioCtx.createBufferSource();
+    src.buffer = buf;
+    const filter = audioCtx.createBiquadFilter();
+    filter.type = 'highpass';
+    filter.frequency.value = 2000;
+    const gain = audioCtx.createGain();
+    gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1);
+    src.connect(filter);
+    filter.connect(gain);
+    gain.connect(masterGain);
+    src.start();
+  } catch(e){}
+}
+
+function sfxChirp(){
+  ensureAudio();
+  const f = 2000 + Math.random()*1000;
+  playTone(f, 0.08, 0.06, 'sine', 0.06);
+  setTimeout(()=> playTone(f*1.2, 0.06, 0.05, 'sine', 0.05), 100);
+  setTimeout(()=> playTone(f*0.9, 0.07, 0.04, 'sine', 0.06), 200);
+}
+
+function sfxCricket(){
+  ensureAudio();
+  const f = 4000 + Math.random()*500;
+  playTone(f, 0.04, 0.02, 'sine', 0.03);
+  setTimeout(()=> playTone(f, 0.04, 0.015, 'sine', 0.03), 60);
+}
+
+function sfxClick(){
+  ensureAudio();
+  playTone(600, 0.06, 0.08, 'sine', 0.05);
+}
+
+function sfxGrow(){
+  ensureAudio();
+  playTone(180, 0.4, 0.08, 'triangle', 0.35);
+  setTimeout(()=> playTone(240, 0.3, 0.06, 'sine', 0.25), 100);
+}
+
+// ---------- Particle System ----------
+let particles = [];
+
+function addParticle(p){
+  if(particles.length < MAX_PARTICLES) particles.push(p);
+}
+
+function updateParticles(dt){
+  for(let i=particles.length-1;i>=0;i--){
+    const p = particles[i];
+    p.life -= dt;
+    if(p.life <= 0){ particles.splice(i,1); continue; }
+    if(p.update) p.update(p, dt);
+    else {
+      p.x += (p.vx||0) * dt;
+      p.y += (p.vy||0) * dt;
+    }
+  }
+}
+
+function drawParticles(){
+  for(const p of particles){
+    if(p.draw) p.draw(p);
+  }
+}
+
+// ---------- Cloud System ----------
+let clouds = [];
+function initClouds(){
+  const sw = window.innerWidth;
+  for(let i=0;i<6;i++){
+    clouds.push({
+      x: Math.random()*sw,
+      y: 20 + Math.random()*60,
+      w: 60 + Math.random()*80,
+      h: 18 + Math.random()*14,
+      speed: 3 + Math.random()*5,
+      puffs: [],
+    });
+    const c = clouds[clouds.length-1];
+    const numPuffs = 3 + Math.floor(Math.random()*3);
+    for(let j=0;j<numPuffs;j++){
+      c.puffs.push({
+        ox: (j/(numPuffs-1) - 0.5) * c.w,
+        oy: (Math.random()-0.5) * c.h * 0.4,
+        r: c.h * (0.4 + Math.random()*0.35),
+      });
+    }
+  }
+}
+initClouds();
+
+function updateClouds(dt){
+  const sw = window.innerWidth;
+  for(const c of clouds){
+    c.x += c.speed * dt;
+    if(state.currentEvent === 'storm') c.x += 20 * dt;
+    if(c.x - c.w > sw) c.x = -c.w;
+  }
+}
+
+function drawClouds(){
+  const isNight = state.dayTime > 0.85 || state.dayTime < 0.15;
+  const alpha = isNight ? 0.15 : 0.55;
+  X.save();
+  X.globalAlpha = alpha;
+  for(const c of clouds){
+    const stormDark = state.currentEvent === 'storm' ? 0.4 : 1;
+    X.fillStyle = `rgba(${(255*stormDark)|0},${(255*stormDark)|0},${(255*stormDark)|0},0.7)`;
+    for(const p of c.puffs){
+      X.beginPath();
+      X.arc(c.x + p.ox, c.y + p.oy, p.r, 0, Math.PI*2);
+      X.fill();
+    }
+  }
+  X.restore();
+}
+
+// ---------- CO2 Molecules ----------
+let co2Molecules = [];
+const MAX_CO2 = 30;
+
+function spawnCO2(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const fromLeft = Math.random() > 0.5;
+  const mol = {
+    x: fromLeft ? -20 : sw + 20,
+    y: 40 + Math.random() * (sh * 0.55),
+    vx: (fromLeft ? 1 : -1) * (15 + Math.random()*20),
+    vy: Math.sin(Math.random()*Math.PI*2) * 5,
+    bobPhase: Math.random() * Math.PI * 2,
+    bobSpeed: 1 + Math.random() * 2,
+    radius: 12 + Math.random()*4,
+    alive: true,
+    catching: false,
+    catchTarget: null,
+    catchSpeed: 0,
+  };
+  co2Molecules.push(mol);
+}
+
+function updateCO2(dt){
+  const sw = window.innerWidth;
+  for(let i=co2Molecules.length-1;i>=0;i--){
+    const m = co2Molecules[i];
+    if(m.catching){
+      const dx = m.catchTarget.x - m.x;
+      const dy = m.catchTarget.y - m.y;
+      const dist = Math.sqrt(dx*dx+dy*dy);
+      if(dist < 5){
+        absorbCO2(m);
+        co2Molecules.splice(i,1);
+        continue;
+      }
+      m.catchSpeed += dt * 400;
+      const spd = Math.min(m.catchSpeed, 500);
+      m.x += (dx/dist)*spd*dt;
+      m.y += (dy/dist)*spd*dt;
+      m.radius *= (1 - dt*2);
+      if(m.radius < 1){ absorbCO2(m); co2Molecules.splice(i,1); }
+      continue;
+    }
+    m.bobPhase += m.bobSpeed * dt;
+    m.x += m.vx * dt;
+    m.y += Math.sin(m.bobPhase) * 15 * dt;
+    // Wind during storm
+    if(state.currentEvent === 'storm'){
+      m.vx += (Math.random()-0.5)*50*dt;
+    }
+    if(m.x < -40 || m.x > sw+40){
+      co2Molecules.splice(i,1);
+    }
+  }
+  // Auto-absorption for nearby molecules (passive catch)
+  if(state.phase === 'PLAYING'){
+    const isDay = state.dayTime > 0.2 && state.dayTime < 0.8;
+    if(isDay){
+      const sw2 = window.innerWidth, sh2 = window.innerHeight;
+      const baseX = sw2 * 0.48;
+      const groundY = sh2 * 0.72;
+      const treeTop = groundY - getTreeHeight();
+      const canR = getCanopyRadius();
+      const autoRange = canR * 0.6;
+      for(const m of co2Molecules){
+        if(m.catching) continue;
+        const dx = m.x - baseX;
+        const dy = m.y - (treeTop + canR*0.3);
+        const d = Math.sqrt(dx*dx+dy*dy);
+        if(d < autoRange && Math.random() < dt * (0.1 + getLeafLevel()*0.15)){
+          m.catching = true;
+          m.catchTarget = { x: baseX + (Math.random()-0.5)*canR*0.3, y: treeTop + canR*0.3 };
+          m.catchSpeed = 30;
+        }
+      }
+    }
+  }
+  // Spawn new ones
+  const isDay = state.dayTime > 0.2 && state.dayTime < 0.8;
+  const spawnRate = isDay ? 0.8 : 0.1;
+  const seasonMult = [1.3, 1.0, 0.7, 0.3][state.season];
+  const eventMult = state.currentEvent === 'sunny' ? 2 : state.currentEvent === 'fire' ? 0.3 : 1;
+  if(co2Molecules.length < MAX_CO2 && Math.random() < spawnRate * seasonMult * eventMult * dt * 3){
+    spawnCO2();
+  }
+}
+
+function absorbCO2(mol){
+  const amt = getCatchAmount();
+  addMassFromAir(amt);
+  state.totalCO2Caught++;
+  // Floating text
+  addParticle({
+    x: mol.x, y: mol.y, life: 1.2, text: '+'+amt.toFixed(1)+'g AIR',
+    vy: -30, alpha: 1,
+    update(p,dt){ p.y += p.vy*dt; p.alpha = p.life/1.2; },
+    draw(p){
+      X.save();
+      X.globalAlpha = p.alpha;
+      X.fillStyle = '#69F0AE';
+      X.font = 'bold 14px Georgia';
+      X.textAlign = 'center';
+      X.fillText(p.text, p.x, p.y);
+      X.restore();
+    }
+  });
+  // Green carbon sparkle trail
+  for(let i=0;i<6;i++){
+    const angle = Math.random()*Math.PI*2;
+    const speed = 40 + Math.random()*60;
+    addParticle({
+      x: mol.x, y: mol.y, life: 0.5 + Math.random()*0.3,
+      vx: Math.cos(angle)*speed, vy: Math.sin(angle)*speed,
+      size: 1.5 + Math.random()*2,
+      update(p,dt){ p.x+=p.vx*dt; p.y+=p.vy*dt; p.vx*=0.97; p.vy*=0.97; },
+      draw(p){
+        X.save();
+        X.globalAlpha = p.life / 0.7;
+        X.fillStyle = '#69F0AE';
+        X.beginPath();
+        X.arc(p.x, p.y, p.size, 0, Math.PI*2);
+        X.fill();
+        X.restore();
+      }
+    });
+  }
+}
+
+function addMassFromAir(amt){
+  state.mass += amt;
+  state.massFromAir += amt;
+  checkMilestones();
+}
+
+function addMassFromSoil(amt){
+  state.mass += amt;
+  state.massFromSoil += amt;
+}
+
+function drawCO2(){
+  for(const m of co2Molecules){
+    X.save();
+    X.globalAlpha = m.catching ? 0.6 : 0.75;
+    // Outer glow
+    if(!m.catching){
+      const glow = X.createRadialGradient(m.x, m.y, m.radius*0.5, m.x, m.y, m.radius*1.3);
+      glow.addColorStop(0, 'rgba(144,164,174,0.4)');
+      glow.addColorStop(1, 'rgba(144,164,174,0)');
+      X.fillStyle = glow;
+      X.beginPath();
+      X.arc(m.x, m.y, m.radius*1.3, 0, Math.PI*2);
+      X.fill();
+    }
+    X.fillStyle = '#90A4AE';
+    X.beginPath();
+    X.arc(m.x, m.y, m.radius, 0, Math.PI*2);
+    X.fill();
+    // Inner highlight
+    X.fillStyle = 'rgba(255,255,255,0.2)';
+    X.beginPath();
+    X.arc(m.x - m.radius*0.2, m.y - m.radius*0.2, m.radius*0.4, 0, Math.PI*2);
+    X.fill();
+    // Label
+    X.fillStyle = '#37474F';
+    X.font = `bold ${Math.max(7, m.radius*0.7)|0}px Georgia`;
+    X.textAlign = 'center';
+    X.textBaseline = 'middle';
+    X.fillText('CO\u2082', m.x, m.y);
+    X.restore();
+  }
+}
+
+// ---------- Tree Rendering ----------
+let branchCache = [];
+let leafPositions = [];
+
+function buildTree(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const groundY = sh * 0.72;
+  const stage = getStage();
+  const tH = getTreeHeight();
+  const tW = getTrunkWidth();
+  const canR = getCanopyRadius();
+  const baseX = sw * 0.48;
+  const baseY = groundY;
+
+  branchCache = [];
+  leafPositions = [];
+
+  // Trunk
+  branchCache.push({
+    x1: baseX, y1: baseY,
+    x2: baseX, y2: baseY - tH,
+    w1: tW, w2: tW * 0.5,
+    depth: 0
+  });
+
+  // Branches via recursive L-system-like approach
+  const maxDepth = Math.min(2 + stage + getLeafLevel(), 7);
+  const branchCount = 2 + Math.floor(stage * 0.8) + getLeafLevel();
+  // Use a seeded random to keep tree stable between rebuilds
+  let seed = 12345 + state.prestigeCount * 7919;
+  function seededRandom(){
+    seed = (seed * 16807 + 0) % 2147483647;
+    return (seed - 1) / 2147483646;
+  }
+
+  function addBranches(x, y, angle, length, width, depth){
+    if(depth >= maxDepth || length < 4) return;
+    const spread = 0.5 + seededRandom()*0.4;
+    const numBr = Math.max(2, branchCount - depth);
+    for(let i=0;i<numBr;i++){
+      const a = angle + (i/(numBr-1||1) - 0.5) * spread * 2 - 0.1 + seededRandom()*0.2;
+      const len = length * (0.55 + seededRandom()*0.2);
+      const nx = x + Math.sin(a) * len;
+      const ny = y - Math.cos(a) * len;
+      const nw = width * 0.6;
+      branchCache.push({ x1:x, y1:y, x2:nx, y2:ny, w1:width, w2:nw, depth });
+      if(depth >= maxDepth - 2){
+        // Leaf cluster at branch tips
+        const leafCount = 3 + getLeafLevel() * 2;
+        for(let j=0;j<leafCount;j++){
+          leafPositions.push({
+            x: nx + (seededRandom()-0.5)*canR*0.3,
+            y: ny + (seededRandom()-0.5)*canR*0.2,
+            size: 3 + seededRandom()*4 + stage*0.5,
+            phase: seededRandom()*Math.PI*2,
+          });
+        }
+      }
+      addBranches(nx, ny, a, len, nw, depth+1);
+    }
+  }
+
+  if(stage >= 1){
+    const topX = baseX;
+    const topY = baseY - tH;
+    addBranches(topX, topY, 0, tH * 0.45, tW*0.4, 1);
+  } else {
+    // Seedling leaves
+    for(let i=0;i<4;i++){
+      leafPositions.push({
+        x: baseX + (seededRandom()-0.5)*12,
+        y: baseY - tH - 5 + seededRandom()*8,
+        size: 4 + seededRandom()*3,
+        phase: seededRandom()*Math.PI*2,
+      });
+    }
+  }
+
+  // Roots (mirrored below soil)
+  const rootDepth = 1 + getRootLevel();
+  function addRoots(x, y, angle, length, width, d){
+    if(d >= rootDepth + 2 || length < 5) return;
+    const numR = 2 + getRootLevel();
+    for(let i=0;i<numR;i++){
+      const a = angle + (i/(numR-1||1)-0.5)*1.5 + (seededRandom()-0.5)*0.3;
+      const len = length * (0.5 + seededRandom()*0.25);
+      const nx = x + Math.sin(a) * len;
+      const ny = y + Math.cos(a) * len;
+      branchCache.push({ x1:x, y1:y, x2:nx, y2:ny, w1:width, w2:width*0.5, depth:0, isRoot:true });
+      addRoots(nx, ny, a, len, width*0.5, d+1);
+    }
+  }
+  addRoots(baseX, baseY + 5, 0, tH*0.3, tW*0.3, 0);
+}
+
+function getLeafColor(){
+  const s = state.season;
+  const t = state.seasonProgress;
+  const colors = [
+    [76, 175, 80],    // Spring green
+    [46, 125, 50],    // Summer deep green
+    [255, 143, 0],    // Fall amber
+    [120, 100, 80],   // Winter bare
+  ];
+  const next = (s+1)%4;
+  const r = colors[s][0] + (colors[next][0]-colors[s][0])*t;
+  const g = colors[s][1] + (colors[next][1]-colors[s][1])*t;
+  const b = colors[s][2] + (colors[next][2]-colors[s][2])*t;
+  return `rgb(${r|0},${g|0},${b|0})`;
+}
+
+function getLeafColorArray(){
+  const s = state.season;
+  const t = state.seasonProgress;
+  const colors = [
+    [76, 175, 80],
+    [46, 125, 50],
+    [255, 143, 0],
+    [120, 100, 80],
+  ];
+  const next = (s+1)%4;
+  return [
+    colors[s][0] + (colors[next][0]-colors[s][0])*t,
+    colors[s][1] + (colors[next][1]-colors[s][1])*t,
+    colors[s][2] + (colors[next][2]-colors[s][2])*t,
+  ];
+}
+
+function drawTree(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const groundY = sh * 0.72;
+  const stage = getStage();
+  const windOffset = state.currentEvent === 'storm'
+    ? Math.sin(Date.now()*0.003)*8 + Math.sin(Date.now()*0.007)*3
+    : Math.sin(Date.now()*0.0008)*1.5;
+
+  // Draw roots first (below soil, cross-section view)
+  X.save();
+  for(const b of branchCache){
+    if(!b.isRoot) continue;
+    X.strokeStyle = '#8D6E63';
+    X.lineWidth = Math.max(1, b.w1);
+    X.lineCap = 'round';
+    X.beginPath();
+    X.moveTo(b.x1, b.y1);
+    X.lineTo(b.x2, b.y2);
+    X.stroke();
+    // Root hairs at tips
+    if(b.w2 < 3){
+      X.strokeStyle = 'rgba(161,136,127,0.4)';
+      X.lineWidth = 0.5;
+      for(let h=0;h<3;h++){
+        X.beginPath();
+        X.moveTo(b.x2, b.y2);
+        X.lineTo(b.x2 + (Math.random()-0.5)*8, b.y2 + Math.random()*6);
+        X.stroke();
+      }
+    }
+  }
+  X.restore();
+
+  // Draw trunk and branches
+  X.save();
+  for(const b of branchCache){
+    if(b.isRoot) continue;
+    const windAmt = b.depth * windOffset * 0.15;
+    // Bark color varies with species
+    const barkColors = ['#5D4037','#6D4C41','#795548','#4E342E','#3E2723'];
+    X.strokeStyle = b.depth === 0 ? barkColors[state.treeSpecies] : '#6D4C41';
+    X.lineWidth = Math.max(1, b.w1);
+    X.lineCap = 'round';
+    X.beginPath();
+    X.moveTo(b.x1 + windAmt*0.3, b.y1);
+    X.lineTo(b.x2 + windAmt, b.y2);
+    X.stroke();
+    // Bark texture lines on main trunk
+    if(b.depth === 0 && stage >= 2){
+      X.strokeStyle = 'rgba(0,0,0,0.08)';
+      X.lineWidth = 1;
+      const numLines = 3 + stage;
+      for(let i=0;i<numLines;i++){
+        const t = (i+0.5)/numLines;
+        const lx = b.x1 + (b.x2-b.x1)*t + ((i*7.3)%1 - 0.5)*b.w1*0.4;
+        const ly = b.y1 + (b.y2-b.y1)*t;
+        X.beginPath();
+        X.moveTo(lx, ly);
+        X.lineTo(lx + ((i*3.7)%1-0.5)*4, ly + 4+((i*5.1)%1)*8);
+        X.stroke();
+      }
+      // Highlight on trunk left side
+      X.strokeStyle = 'rgba(255,255,255,0.06)';
+      X.lineWidth = b.w1 * 0.2;
+      X.beginPath();
+      X.moveTo(b.x1 - b.w1*0.3, b.y1);
+      X.lineTo(b.x2 - b.w2*0.3, b.y2);
+      X.stroke();
+    }
+  }
+  X.restore();
+
+  // Draw leaves (skip in deep winter for young trees)
+  const showLeaves = state.season !== 3 || stage >= 4;
+  if(showLeaves && leafPositions.length > 0){
+    const leafAlpha = state.season === 3 ? 0.3 : 1;
+    const lc = getLeafColorArray();
+    X.save();
+    X.globalAlpha = leafAlpha;
+    const now = Date.now();
+    for(const lf of leafPositions){
+      const wx = lf.x + windOffset * 1.5 + Math.sin(now*0.002 + lf.phase)*1.5;
+      const wy = lf.y + Math.sin(now*0.0015 + lf.phase+1)*0.8;
+      // Slight color variation per leaf
+      const rv = ((lf.phase*100)%30)-15;
+      X.fillStyle = `rgb(${Math.max(0,Math.min(255,lc[0]+rv))|0},${Math.max(0,Math.min(255,lc[1]+rv*0.5))|0},${Math.max(0,Math.min(255,lc[2]-rv*0.3))|0})`;
+      X.beginPath();
+      X.ellipse(wx, wy, lf.size, lf.size*0.65, lf.phase*0.3, 0, Math.PI*2);
+      X.fill();
+    }
+    X.restore();
+  }
+
+  // Snow caps on branches in winter
+  if(state.season === 3){
+    X.save();
+    X.fillStyle = 'rgba(255,255,255,0.65)';
+    for(const b of branchCache){
+      if(b.isRoot) continue;
+      if(b.depth < 3){
+        X.beginPath();
+        X.ellipse(b.x2, b.y2-2, Math.max(2, b.w2+3), 2.5, 0, 0, Math.PI*2);
+        X.fill();
+      }
+    }
+    X.restore();
+  }
+
+  // Flowers in spring on mature trees
+  if(state.season === 0 && stage >= 3){
+    X.save();
+    const now2 = Date.now();
+    for(let i=0;i<leafPositions.length;i+=4){
+      const lf = leafPositions[i];
+      const pulse = Math.sin(now2*0.003 + i)*0.2 + 0.8;
+      X.fillStyle = `rgba(255,182,193,${pulse*0.8})`;
+      X.beginPath();
+      X.arc(lf.x + windOffset, lf.y - 3, 3.5, 0, Math.PI*2);
+      X.fill();
+      // White center
+      X.fillStyle = `rgba(255,255,255,${pulse*0.5})`;
+      X.beginPath();
+      X.arc(lf.x + windOffset, lf.y - 3, 1.2, 0, Math.PI*2);
+      X.fill();
+    }
+    X.restore();
+  }
+
+  // Canopy shadow on ground
+  if(stage >= 2){
+    X.save();
+    const shadowAlpha = (state.dayTime > 0.2 && state.dayTime < 0.8) ? 0.12 : 0.04;
+    X.globalAlpha = shadowAlpha;
+    X.fillStyle = '#000';
+    const baseX = sw * 0.48;
+    const canR = getCanopyRadius();
+    const sunOffset = (state.dayTime - 0.5) * canR * 0.8;
+    X.beginPath();
+    X.ellipse(baseX + sunOffset, groundY + 2, canR*0.8, canR*0.15, 0, 0, Math.PI*2);
+    X.fill();
+    X.restore();
+  }
+}
+
+// ---------- Sky System ----------
+function getSkyColors(){
+  const t = state.dayTime;
+  const dawn  = [255,224,178]; // #FFE0B2
+  const day   = [129,212,250]; // #81D4FA
+  const dusk  = [255,138,101]; // #FF8A65
+  const night = [26,35,126];   // #1A237E
+
+  let top, bot;
+  if(t < 0.15){
+    const f = t / 0.15;
+    top = lerpColor(night, dawn, f);
+    bot = lerpColor([15,20,80], [255,200,150], f);
+  } else if(t < 0.3){
+    const f = (t-0.15)/0.15;
+    top = lerpColor(dawn, day, f);
+    bot = lerpColor([255,200,150], [200,230,255], f);
+  } else if(t < 0.7){
+    top = day;
+    bot = [200,230,255];
+  } else if(t < 0.85){
+    const f = (t-0.7)/0.15;
+    top = lerpColor(day, dusk, f);
+    bot = lerpColor([200,230,255], [255,180,120], f);
+  } else {
+    const f = (t-0.85)/0.15;
+    top = lerpColor(dusk, night, f);
+    bot = lerpColor([255,180,120], [15,20,80], f);
+  }
+  return {top, bot};
+}
+
+function lerpColor(a,b,t){
+  return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t, a[2]+(b[2]-a[2])*t];
+}
+
+function drawSky(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const {top, bot} = getSkyColors();
+  const grad = X.createLinearGradient(0,0,0,sh*0.75);
+  grad.addColorStop(0, `rgb(${top[0]|0},${top[1]|0},${top[2]|0})`);
+  grad.addColorStop(1, `rgb(${bot[0]|0},${bot[1]|0},${bot[2]|0})`);
+  X.fillStyle = grad;
+  X.fillRect(0,0,sw,sh);
+}
+
+function drawSunMoon(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const t = state.dayTime;
+  // Sun arc during day
+  if(t > 0.15 && t < 0.85){
+    const f = (t - 0.15) / 0.7;
+    const sx = sw * 0.15 + f * sw * 0.7;
+    const sy = sh * 0.6 - Math.sin(f * Math.PI) * sh * 0.45;
+    X.save();
+    // Outer glow
+    const glow2 = X.createRadialGradient(sx,sy,15,sx,sy,90);
+    glow2.addColorStop(0, 'rgba(255,235,59,0.2)');
+    glow2.addColorStop(1, 'rgba(255,235,59,0)');
+    X.fillStyle = glow2;
+    X.beginPath();
+    X.arc(sx, sy, 90, 0, Math.PI*2);
+    X.fill();
+    // Inner glow
+    const glow = X.createRadialGradient(sx,sy,8,sx,sy,40);
+    glow.addColorStop(0, 'rgba(255,235,59,0.5)');
+    glow.addColorStop(1, 'rgba(255,235,59,0)');
+    X.fillStyle = glow;
+    X.beginPath();
+    X.arc(sx, sy, 40, 0, Math.PI*2);
+    X.fill();
+    // Sun disc
+    X.fillStyle = '#FDD835';
+    X.beginPath();
+    X.arc(sx, sy, 18, 0, Math.PI*2);
+    X.fill();
+    // Sun highlight
+    X.fillStyle = 'rgba(255,255,255,0.4)';
+    X.beginPath();
+    X.arc(sx-4, sy-4, 7, 0, Math.PI*2);
+    X.fill();
+    X.restore();
+    // Light shafts/god rays through canopy during golden hours
+    if((t > 0.15 && t < 0.3) || (t > 0.7 && t < 0.85)){
+      X.save();
+      X.globalAlpha = 0.04;
+      X.fillStyle = '#FDD835';
+      for(let r=0;r<5;r++){
+        const angle = (r/5)*0.6 - 0.3 + Math.sin(Date.now()*0.0005+r)*0.05;
+        X.beginPath();
+        X.moveTo(sx, sy);
+        X.lineTo(sx + Math.cos(angle+1.2)*sh, sy + Math.sin(angle+1.2)*sh);
+        X.lineTo(sx + Math.cos(angle+1.25)*sh, sy + Math.sin(angle+1.25)*sh);
+        X.fill();
+      }
+      X.restore();
+    }
+  }
+  // Crescent moon at night
+  if(t > 0.8 || t < 0.2){
+    let f;
+    if(t > 0.8) f = (t-0.8)/0.4;
+    else f = (t+0.2)/0.4;
+    const mx = sw * 0.2 + f * sw * 0.6;
+    const my = sh * 0.5 - Math.sin(f * Math.PI) * sh * 0.35;
+    X.save();
+    // Moon glow
+    const moonGlow = X.createRadialGradient(mx,my,10,mx,my,50);
+    moonGlow.addColorStop(0, 'rgba(232,234,246,0.2)');
+    moonGlow.addColorStop(1, 'rgba(232,234,246,0)');
+    X.fillStyle = moonGlow;
+    X.beginPath();
+    X.arc(mx, my, 50, 0, Math.PI*2);
+    X.fill();
+    // Moon disc
+    X.fillStyle = '#E8EAF6';
+    X.beginPath();
+    X.arc(mx, my, 14, 0, Math.PI*2);
+    X.fill();
+    // Crescent shadow
+    const skyC = getSkyColors().top;
+    X.fillStyle = `rgb(${skyC[0]|0},${skyC[1]|0},${skyC[2]|0})`;
+    X.beginPath();
+    X.arc(mx+5, my-3, 12, 0, Math.PI*2);
+    X.fill();
+    X.restore();
+  }
+  // Stars at night
+  if(t > 0.85 || t < 0.15){
+    const alpha = t > 0.85 ? (t-0.85)/0.15 : 1 - t/0.15;
+    X.save();
+    X.fillStyle = '#FFF';
+    const now = Date.now();
+    for(let i=0;i<50;i++){
+      const sx = ((42*i*137.508)%sw);
+      const sy = ((42*i*97.331)%(sh*0.5));
+      const twinkle = Math.sin(now*0.002 + i*1.7)*0.5+0.5;
+      X.globalAlpha = alpha * twinkle * 0.8;
+      const starSize = 0.8 + ((i*3.7)%1)*1.2;
+      X.beginPath();
+      X.arc(sx, sy, starSize, 0, Math.PI*2);
+      X.fill();
+    }
+    X.restore();
+  }
+}
+
+// ---------- Background ----------
+function drawBackground(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const groundY = sh * 0.72;
+
+  // Far distant hills (deepest parallax layer)
+  X.save();
+  const hillColor = getSkyColors();
+  const hc2 = lerpColor(hillColor.bot, [80,100,80], 0.3);
+  X.fillStyle = `rgba(${hc2[0]|0},${hc2[1]|0},${hc2[2]|0},0.3)`;
+  X.beginPath();
+  X.moveTo(0, groundY);
+  for(let x=0;x<=sw;x+=15){
+    const h = Math.sin(x*0.003)*25 + Math.sin(x*0.009)*15 + 45;
+    X.lineTo(x, groundY - h);
+  }
+  X.lineTo(sw, groundY);
+  X.fill();
+  X.restore();
+
+  // Closer hills
+  X.save();
+  const hc = lerpColor(hillColor.bot, [60,80,60], 0.4);
+  X.fillStyle = `rgba(${hc[0]|0},${hc[1]|0},${hc[2]|0},0.5)`;
+  X.beginPath();
+  X.moveTo(0, groundY);
+  for(let x=0;x<=sw;x+=20){
+    const h = Math.sin(x*0.005)*20 + Math.sin(x*0.013)*10 + 30;
+    X.lineTo(x, groundY - h);
+  }
+  X.lineTo(sw, groundY);
+  X.fill();
+
+  // Distant trees silhouettes on hills
+  X.fillStyle = `rgba(${Math.max(0,hc[0]-20)|0},${Math.max(0,hc[1]-10)|0},${Math.max(0,hc[2]-20)|0},0.4)`;
+  for(let i=0;i<18;i++){
+    const tx = i * sw/18 + 20;
+    const hillH = Math.sin(tx*0.005)*20 + Math.sin(tx*0.013)*10 + 30;
+    const ty = groundY - hillH;
+    const treeH = 15 + ((i*7.3)%1)*15;
+    X.beginPath();
+    X.moveTo(tx, ty);
+    X.lineTo(tx-6-((i*3.1)%1)*4, ty);
+    X.lineTo(tx, ty-treeH);
+    X.lineTo(tx+6+((i*5.7)%1)*4, ty);
+    X.fill();
+  }
+  X.restore();
+
+  // Ground soil layers
+  const soilGrad = X.createLinearGradient(0, groundY, 0, sh);
+  soilGrad.addColorStop(0, '#5D4037');
+  soilGrad.addColorStop(0.08, '#4E342E');
+  soilGrad.addColorStop(0.4, '#3E2723');
+  soilGrad.addColorStop(1, '#2E1B14');
+  X.fillStyle = soilGrad;
+  X.fillRect(0, groundY, sw, sh - groundY);
+
+  // Rock layer hint
+  X.save();
+  X.fillStyle = 'rgba(50,30,20,0.4)';
+  for(let i=0;i<8;i++){
+    const rx = (i*sw/8) + 30;
+    const ry = sh - 15 - ((i*17)%20);
+    X.beginPath();
+    X.ellipse(rx, ry, 15+((i*7)%10), 5+((i*3)%4), ((i*0.3)%1), 0, Math.PI*2);
+    X.fill();
+  }
+  X.restore();
+
+  // Grass blades along soil line
+  X.save();
+  const grassGreen = state.season === 3 ? '#8D6E63' : state.season === 2 ? '#A1887F' : '#66BB6A';
+  X.strokeStyle = grassGreen;
+  X.lineWidth = 1;
+  for(let x=0;x<sw;x+=3){
+    const h = 3 + ((x*7.3)%6);
+    const wind = state.currentEvent === 'storm'
+      ? Math.sin(Date.now()*0.005+x*0.1)*4
+      : Math.sin(Date.now()*0.001+x*0.05)*1;
+    X.beginPath();
+    X.moveTo(x, groundY);
+    X.quadraticCurveTo(x + wind*0.5, groundY - h*0.6, x + wind, groundY - h);
+    X.stroke();
+  }
+  X.restore();
+
+  // Soil texture pebbles (deterministic positions)
+  X.save();
+  X.fillStyle = 'rgba(80,50,30,0.25)';
+  for(let i=0;i<40;i++){
+    const dx = (i*137.508 + 50) % sw;
+    const dy = groundY + 10 + (i*97.331)%(sh-groundY-20);
+    const sz = 1 + (i*3.7)%2.5;
+    X.beginPath();
+    X.arc(dx, dy, sz, 0, Math.PI*2);
+    X.fill();
+  }
+  X.restore();
+}
+
+// ---------- Worm (soil critter) ----------
+let worm = { x:0, y:0, visible:false, timer:0, segments:[] };
+function updateWorm(dt){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const groundY = sh * 0.72;
+  worm.timer -= dt;
+  if(!worm.visible && worm.timer <= 0){
+    worm.visible = true;
+    worm.timer = 3 + Math.random()*4;
+    worm.x = Math.random()*sw;
+    worm.y = groundY + 20 + Math.random()*(sh-groundY-40);
+    worm.segments = [];
+    for(let i=0;i<8;i++){
+      worm.segments.push({ x: worm.x - i*4, y: worm.y });
+    }
+  }
+  if(worm.visible){
+    worm.timer -= dt;
+    worm.segments[0].x += 15*dt;
+    worm.segments[0].y += Math.sin(Date.now()*0.005)*10*dt;
+    for(let i=1;i<worm.segments.length;i++){
+      const prev = worm.segments[i-1];
+      const dx = prev.x - worm.segments[i].x;
+      const dy = prev.y - worm.segments[i].y;
+      const d = Math.sqrt(dx*dx+dy*dy);
+      if(d > 4){
+        worm.segments[i].x += dx*0.3*dt*10;
+        worm.segments[i].y += dy*0.3*dt*10;
+      }
+    }
+    if(worm.timer <= 0){
+      worm.visible = false;
+      worm.timer = 8 + Math.random()*15;
+    }
+  }
+}
+function drawWorm(){
+  if(!worm.visible) return;
+  X.save();
+  X.strokeStyle = '#A1887F';
+  X.lineWidth = 3;
+  X.lineCap = 'round';
+  X.lineJoin = 'round';
+  X.beginPath();
+  X.moveTo(worm.segments[0].x, worm.segments[0].y);
+  for(let i=1;i<worm.segments.length;i++){
+    X.lineTo(worm.segments[i].x, worm.segments[i].y);
+  }
+  X.stroke();
+  // Worm head
+  X.fillStyle = '#8D6E63';
+  X.beginPath();
+  X.arc(worm.segments[0].x, worm.segments[0].y, 2.5, 0, Math.PI*2);
+  X.fill();
+  X.restore();
+}
+
+// ---------- Birds ----------
+let birds = [];
+let birdTimer = 5;
+
+function updateBirds(dt){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  birdTimer -= dt;
+  if(birdTimer <= 0 && birds.length < 5){
+    birdTimer = 8 + Math.random()*15;
+    const fromLeft = Math.random() > 0.5;
+    birds.push({
+      x: fromLeft ? -20 : sw+20,
+      y: 30 + Math.random()*sh*0.3,
+      vx: (fromLeft ? 1 : -1) * (30+Math.random()*40),
+      vy: Math.random()*5-2.5,
+      flapPhase: Math.random()*Math.PI*2,
+      landing: false,
+      landTimer: 0,
+      chirpTimer: 2+Math.random()*5,
+    });
+  }
+  // Bird visit event: spawn a landing bird
+  if(state.currentEvent === 'bird' && birds.length === 0){
+    const groundY = sh * 0.72;
+    const tH = getTreeHeight();
+    birds.push({
+      x: -20, y: groundY - tH - 20,
+      vx: 50, vy: 0,
+      flapPhase: 0, landing: true, landTimer: 5,
+      chirpTimer: 1,
+    });
+  }
+
+  for(let i=birds.length-1;i>=0;i--){
+    const b = birds[i];
+    b.flapPhase += 8 * dt;
+    b.chirpTimer -= dt;
+    if(b.chirpTimer <= 0){
+      b.chirpTimer = 2 + Math.random()*4;
+      sfxChirp();
+    }
+    if(b.landing){
+      const targetX = sw * 0.48;
+      const groundY = sh * 0.72;
+      const targetY = groundY - getTreeHeight() - 10;
+      const dx = targetX - b.x;
+      const dy = targetY - b.y;
+      b.x += dx * 2 * dt;
+      b.y += dy * 2 * dt;
+      b.landTimer -= dt;
+      if(b.landTimer <= 0){
+        b.landing = false;
+        b.vx = 60;
+        b.vy = -20;
+        // Bird bonus mass
+        const bonus = getCatchAmount()*3;
+        addMassFromAir(bonus);
+        addParticle({
+          x: b.x, y: b.y, life: 1.5, text: 'Bird bonus! +' + bonus.toFixed(1) + 'g',
+          vy: -25, alpha: 1,
+          update(p,dt){ p.y+=p.vy*dt; p.alpha=p.life/1.5; },
+          draw(p){
+            X.save(); X.globalAlpha=p.alpha; X.fillStyle='#FFD54F';
+            X.font='bold 16px Georgia'; X.textAlign='center';
+            X.fillText(p.text,p.x,p.y); X.restore();
+          }
+        });
+      }
+    } else {
+      b.x += b.vx * dt;
+      b.y += b.vy * dt + Math.sin(b.flapPhase)*3*dt;
+    }
+    if(b.x < -50 || b.x > sw+50 || b.y < -50){
+      birds.splice(i,1);
+    }
+  }
+}
+
+function drawBirds(){
+  X.save();
+  for(const b of birds){
+    const flap = Math.sin(b.flapPhase) * (b.landing ? 3 : 8);
+    // Wing span
+    X.strokeStyle = '#4E342E';
+    X.lineWidth = 2;
+    X.beginPath();
+    X.moveTo(b.x-10, b.y + flap);
+    X.quadraticCurveTo(b.x-5, b.y - Math.abs(flap)*1.2, b.x, b.y);
+    X.quadraticCurveTo(b.x+5, b.y - Math.abs(flap)*1.2, b.x+10, b.y + flap);
+    X.stroke();
+    // Body
+    X.fillStyle = '#5D4037';
+    X.beginPath();
+    X.ellipse(b.x, b.y+1, 4, 3, 0, 0, Math.PI*2);
+    X.fill();
+    // Beak
+    X.fillStyle = '#FF8F00';
+    X.beginPath();
+    X.moveTo(b.x + (b.vx > 0 ? 4 : -4), b.y);
+    X.lineTo(b.x + (b.vx > 0 ? 7 : -7), b.y+1);
+    X.lineTo(b.x + (b.vx > 0 ? 4 : -4), b.y+2);
+    X.fill();
+  }
+  X.restore();
+}
+
+// ---------- Falling Leaves (autumn) ----------
+let fallingLeaves = [];
+function updateFallingLeaves(dt){
+  if(state.season !== 2 || state.phase !== 'PLAYING') return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const groundY = sh * 0.72;
+  // Spawn falling leaves
+  if(fallingLeaves.length < 15 && Math.random() < dt * 2){
+    const baseX = sw * 0.48;
+    const tH = getTreeHeight();
+    const canR = getCanopyRadius();
+    fallingLeaves.push({
+      x: baseX + (Math.random()-0.5)*canR,
+      y: groundY - tH + Math.random()*canR*0.5,
+      vx: (Math.random()-0.5)*15,
+      vy: 10 + Math.random()*20,
+      rot: Math.random()*Math.PI*2,
+      rotSpeed: (Math.random()-0.5)*4,
+      size: 3 + Math.random()*3,
+      life: 4,
+    });
+  }
+  for(let i=fallingLeaves.length-1;i>=0;i--){
+    const l = fallingLeaves[i];
+    l.x += l.vx * dt + Math.sin(Date.now()*0.002+i)*8*dt;
+    l.y += l.vy * dt;
+    l.rot += l.rotSpeed * dt;
+    l.life -= dt;
+    if(l.y > groundY || l.life <= 0){
+      fallingLeaves.splice(i,1);
+    }
+  }
+}
+function drawFallingLeaves(){
+  if(state.season !== 2) return;
+  const lc = getLeafColorArray();
+  X.save();
+  for(const l of fallingLeaves){
+    X.globalAlpha = Math.min(1, l.life);
+    X.fillStyle = `rgb(${lc[0]|0},${lc[1]|0},${lc[2]|0})`;
+    X.save();
+    X.translate(l.x, l.y);
+    X.rotate(l.rot);
+    X.beginPath();
+    X.ellipse(0, 0, l.size, l.size*0.5, 0, 0, Math.PI*2);
+    X.fill();
+    X.restore();
+  }
+  X.restore();
+}
+
+// ---------- Weather Effects ----------
+function drawRain(){
+  if(state.currentEvent !== 'rain' && state.currentEvent !== 'storm') return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  X.save();
+  const count = state.currentEvent === 'storm' ? 100 : 50;
+  const windX = state.currentEvent === 'storm' ? 10 : 2;
+  const now = Date.now();
+  for(let i=0;i<count;i++){
+    const rx = (now*0.3 + i*sw/count) % sw;
+    const ry = (now*0.8 + i*137.5) % sh;
+    X.strokeStyle = `rgba(120,180,255,${0.2 + (i%3)*0.1})`;
+    X.lineWidth = 1;
+    X.beginPath();
+    X.moveTo(rx, ry);
+    X.lineTo(rx + windX, ry + 10 + (i%3)*3);
+    X.stroke();
+  }
+  // Splash effects at ground
+  const groundY = sh * 0.72;
+  X.fillStyle = 'rgba(120,180,255,0.2)';
+  for(let i=0;i<8;i++){
+    const sx = (now*0.1 + i*sw/8) % sw;
+    X.beginPath();
+    X.arc(sx, groundY, 2, 0, Math.PI, true);
+    X.fill();
+  }
+  X.restore();
+}
+
+function drawSnow(){
+  if(state.season !== 3) return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const now = Date.now();
+  X.save();
+  for(let i=0;i<40;i++){
+    const sx = (now*0.015 + i*sw/40 + Math.sin(now*0.0008+i*0.7)*25) % sw;
+    const sy = (now*0.025 + i*137.5) % (sh*0.75);
+    const sz = 1.5 + (i%3);
+    X.globalAlpha = 0.5 + (i%3)*0.15;
+    X.fillStyle = '#FFF';
+    X.beginPath();
+    X.arc(sx, sy, sz, 0, Math.PI*2);
+    X.fill();
+  }
+  X.restore();
+}
+
+function drawSmoke(){
+  if(state.currentEvent !== 'fire') return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  X.save();
+  // Smoke overlay
+  X.globalAlpha = 0.12;
+  X.fillStyle = '#78909C';
+  X.fillRect(0,0,sw,sh);
+  // Drifting smoke wisps
+  X.globalAlpha = 0.08;
+  const now = Date.now();
+  for(let i=0;i<5;i++){
+    const sx = (now*0.01 + i*sw/5) % (sw+100) - 50;
+    const sy = sh*0.3 + Math.sin(now*0.0005+i)*40;
+    X.fillStyle = '#90A4AE';
+    X.beginPath();
+    X.ellipse(sx, sy, 50+i*10, 15, 0, 0, Math.PI*2);
+    X.fill();
+  }
+  X.restore();
+}
+
+// ---------- Soil Nutrient Particles ----------
+let soilParticleTimer = 0;
+function updateSoilParticles(dt){
+  soilParticleTimer -= dt;
+  if(soilParticleTimer <= 0){
+    soilParticleTimer = 1.5 - getRootLevel()*0.3;
+    const sw = window.innerWidth, sh = window.innerHeight;
+    const groundY = sh * 0.72;
+    const baseX = sw * 0.48;
+    addParticle({
+      x: baseX + (Math.random()-0.5)*40,
+      y: groundY + 10 + Math.random()*30,
+      startY: groundY + 10 + Math.random()*30,
+      targetY: groundY - 5,
+      life: 2.5, alpha:1,
+      update(p,dt){
+        p.y += (p.targetY - p.y)*dt*1.2;
+        p.alpha = Math.min(1, p.life/2.5);
+      },
+      draw(p){
+        X.save();
+        X.globalAlpha = p.alpha * 0.7;
+        X.fillStyle = '#FFB74D';
+        X.beginPath();
+        X.arc(p.x, p.y, 2.5, 0, Math.PI*2);
+        X.fill();
+        // Trail
+        X.globalAlpha = p.alpha * 0.2;
+        X.beginPath();
+        X.moveTo(p.x, p.y);
+        X.lineTo(p.x, p.startY);
+        X.strokeStyle = '#FFB74D';
+        X.lineWidth = 0.5;
+        X.stroke();
+        X.restore();
+      }
+    });
+  }
+}
+
+// ---------- Events System ----------
+function updateEvents(dt){
+  if(state.currentEvent){
+    state.eventDuration -= dt;
+    if(state.eventDuration <= 0){
+      state.currentEvent = null;
+    }
+    return;
+  }
+  state.eventTimer -= dt;
+  if(state.eventTimer <= 0){
+    state.eventTimer = 15 + Math.random() * 25;
+    const roll = Math.random();
+    if(roll < 0.2){
+      state.currentEvent = 'storm';
+      state.eventDuration = 8;
+      sfxWind();
+      // Storm damage check: weak trunk + big tree = risk
+      if(getTrunkLevel() < 1 && getStage() >= 2 && Math.random() < 0.3){
+        state.stormDamage = true;
+        const loss = state.mass * 0.05;
+        state.mass = Math.max(1, state.mass - loss);
+        state.massFromAir = Math.max(0, state.massFromAir - loss * 0.95);
+        state.massFromSoil = Math.max(0, state.massFromSoil - loss * 0.05);
+        addParticle({
+          x: window.innerWidth*0.48, y: window.innerHeight*0.4,
+          life: 2.5, alpha:1, text: 'Branch broke! -'+loss.toFixed(0)+'g',
+          vy: -15,
+          update(p,dt){ p.y+=p.vy*dt; p.alpha=p.life/2.5; },
+          draw(p){
+            X.save(); X.globalAlpha=p.alpha; X.fillStyle='#FF5252';
+            X.font='bold 18px Georgia'; X.textAlign='center';
+            X.fillText(p.text,p.x,p.y); X.restore();
+          }
+        });
+        buildTree();
+      }
+    } else if(roll < 0.4){
+      state.currentEvent = 'sunny';
+      state.eventDuration = DAY_LEN;
+    } else if(roll < 0.55){
+      state.currentEvent = 'bird';
+      state.eventDuration = 6;
+    } else if(roll < 0.7){
+      state.currentEvent = 'fire';
+      state.eventDuration = 10;
+    } else if(roll < 0.85){
+      state.currentEvent = 'rain';
+      state.eventDuration = 8;
+      sfxRain();
+    } else {
+      // Quiet cycle, nothing happens
+    }
+  }
+}
+
+// ---------- Day/Night/Season ----------
+function updateTime(dt){
+  if(state.phase !== 'PLAYING') return;
+  const prevDay = state.dayTime;
+  state.dayTime += dt / DAY_LEN;
+  if(state.dayTime >= 1){
+    state.dayTime -= 1;
+    state.dayCount++;
+    state.totalDaysPlayed++;
+    state.seasonProgress += 1/SEASON_DAYS;
+    if(state.seasonProgress >= 1){
+      state.seasonProgress = 0;
+      state.season = (state.season + 1) % 4;
+    }
+  }
+
+  // Passive CO2 absorption during daylight (photosynthesis)
+  const isDay = state.dayTime > 0.2 && state.dayTime < 0.8;
+  if(isDay){
+    const rate = getPassiveRate();
+    const seasonMult = [1.3, 1.0, 0.7, 0.2][state.season];
+    const eventMult = state.currentEvent === 'sunny' ? 2 : state.currentEvent === 'fire' ? 0.3 : 1;
+    addMassFromAir(rate * seasonMult * eventMult * dt);
+  } else {
+    // Night: cellular respiration loses a tiny amount of carbon
+    const resp = 0.02 + getStage() * 0.01;
+    state.mass = Math.max(1, state.mass - resp * dt);
+    state.massFromAir = Math.max(0, state.massFromAir - resp * dt);
+    // Ambient cricket sounds at night
+    if(Math.random() < dt * 0.5) sfxCricket();
+  }
+
+  // Soil nutrients absorbed passively through roots
+  const soilRate = getSoilRate();
+  const rainBoost = state.currentEvent === 'rain' ? 2 : 1;
+  addMassFromSoil(soilRate * rainBoost * dt);
+}
+
+// ---------- Milestones ----------
+function checkMilestones(){
+  for(let i=1;i<STAGE_THRESHOLDS.length;i++){
+    if(state.mass >= STAGE_THRESHOLDS[i] && !state.milestonesSeen[i]){
+      state.milestonesSeen[i] = true;
+      state.pendingMilestone = i;
+      sfxMilestone();
+      sfxGrow();
+      buildTree();
+    }
+  }
+  if(state.mass > state.highestMass) state.highestMass = state.mass;
+}
+
+// ---------- Upgrade System ----------
+const upgradeInfo = {
+  leaves:  { name:'More Leaves',        desc:'Bigger canopy, more passive CO\u2082 absorption' },
+  roots:   { name:'Deeper Roots',       desc:'More soil nutrients, storm resistance' },
+  trunk:   { name:'Thicker Trunk',      desc:'Survives storms without breaking' },
+  stomata: { name:'Stomata Efficiency', desc:'Faster CO\u2082 processing speed' },
+};
+
+function tryUpgrade(type){
+  const cost = getUpgradeCost(type);
+  if(state.mass >= cost && state.upgrades[type] < 3){
+    state.mass -= cost;
+    // Proportionally reduce air/soil mass tracking
+    const total = state.massFromAir + state.massFromSoil;
+    const airRatio = total > 0 ? state.massFromAir / total : 0.95;
+    state.massFromAir = Math.max(0, state.massFromAir - cost * airRatio);
+    state.massFromSoil = Math.max(0, state.massFromSoil - cost * (1-airRatio));
+    state.upgrades[type]++;
+    sfxUpgrade();
+    buildTree();
+  }
+}
+
+// ---------- Prestige ----------
+function doPrestige(){
+  state.prestigeCount++;
+  state.treeSpecies = Math.min(state.prestigeCount, TREE_SPECIES.length-1);
+  state.totalPrestigeBonus = 1 + state.prestigeCount * 0.5;
+  state.mass = 1;
+  state.massFromAir = 0.95;
+  state.massFromSoil = 0.05;
+  state.dayTime = 0.25;
+  state.dayCount = 0;
+  state.season = 0;
+  state.seasonProgress = 0;
+  state.upgrades = {leaves:0, roots:0, trunk:0, stomata:0};
+  state.milestonesSeen = [false,false,false,false,false,false];
+  state.pendingMilestone = -1;
+  state.currentEvent = null;
+  state.stormDamage = false;
+  co2Molecules = [];
+  particles = [];
+  birds = [];
+  fallingLeaves = [];
+  buildTree();
+  state.phase = 'PLAYING';
+  saveGame();
+}
+
+// ---------- Save/Load ----------
+function saveGame(){
+  state.lastSave = Date.now();
+  state.lastTimestamp = Date.now();
+  try {
+    localStorage.setItem('carbon_save', JSON.stringify(state));
+  } catch(e){}
+}
+
+function loadGame(){
+  try {
+    const s = localStorage.getItem('carbon_save');
+    if(s){
+      const loaded = JSON.parse(s);
+      // Merge with defaults to handle new fields
+      const defaults = Object.assign({}, state);
+      Object.assign(state, defaults, loaded);
+      // Calculate offline progress
+      const now = Date.now();
+      const elapsed = (now - (state.lastTimestamp||now)) / 1000;
+      if(elapsed > 5 && state.phase === 'PLAYING'){
+        const offlineRate = getPassiveRate() * 0.5; // Half efficiency offline
+        const offlineGain = offlineRate * Math.min(elapsed, 3600*4); // Cap at 4 hours
+        addMassFromAir(offlineGain);
+        const soilGain = getSoilRate() * Math.min(elapsed, 3600*4) * 0.5;
+        addMassFromSoil(soilGain);
+        // Show offline earnings
+        if(offlineGain > 1){
+          offlineReport = { air: offlineGain, soil: soilGain, seconds: Math.min(elapsed, 3600*4) };
+        }
+      }
+      state.lastTimestamp = now;
+      return true;
+    }
+  } catch(e){}
+  return false;
+}
+
+let offlineReport = null;
+
+// ---------- Science Fact System ----------
+let currentFact = '';
+let factTimer = 0;
+let factAlpha = 0;
+function updateFacts(dt){
+  if(state.phase !== 'PLAYING') return;
+  factTimer -= dt;
+  if(factTimer <= 0){
+    factTimer = 25 + Math.random()*20;
+    currentFact = SCIENCE_FACTS[state.factsShown % SCIENCE_FACTS.length];
+    state.factsShown++;
+    factAlpha = 1;
+  }
+  if(factAlpha > 0){
+    factAlpha -= dt * 0.15; // Fade over ~6.5 seconds
+  }
+}
+function drawFact(){
+  if(factAlpha <= 0 || !currentFact) return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  X.save();
+  X.globalAlpha = Math.min(1, factAlpha);
+  // Background pill
+  X.font = '12px Georgia';
+  const tw = Math.min(sw * 0.6, X.measureText(currentFact).width + 30);
+  X.fillStyle = 'rgba(26,35,126,0.75)';
+  roundRect(sw/2 - tw/2 - 5, sh*0.72 + 40, tw + 10, 28, 6);
+  X.fill();
+  X.fillStyle = '#B3E5FC';
+  X.textAlign = 'center';
+  X.fillText(currentFact, sw/2, sh*0.72 + 58);
+  X.restore();
+}
+
+// ---------- Input ----------
+let mouseX = 0, mouseY = 0;
+let clicking = false;
+let clickHandled = false;
+
+function handleClick(px, py){
+  ensureAudio();
+  const sw = window.innerWidth, sh = window.innerHeight;
+
+  if(state.phase === 'TITLE'){
+    sfxClick();
+    state.phase = 'HOW_TO';
+    return;
+  }
+  if(state.phase === 'HOW_TO'){
+    sfxClick();
+    state.phase = 'PLAYING';
+    buildTree();
+    return;
+  }
+  // Dismiss offline report
+  if(offlineReport){
+    offlineReport = null;
+    return;
+  }
+  if(state.pendingMilestone >= 0){
+    sfxClick();
+    if(state.pendingMilestone === 5){
+      state.phase = 'PRESTIGE';
+    }
+    state.pendingMilestone = -1;
+    return;
+  }
+  if(state.phase === 'PRESTIGE'){
+    const bw = 180, bh = 44;
+    const cx = sw/2, cy = sh/2;
+    if(px > cx-bw/2 && px < cx+bw/2 && py > cy+20 && py < cy+20+bh){
+      sfxClick();
+      doPrestige();
+      return;
+    }
+    if(px > cx-bw/2 && px < cx+bw/2 && py > cy+75 && py < cy+75+bh){
+      sfxClick();
+      state.phase = 'PLAYING';
+      return;
+    }
+    return;
+  }
+  if(state.phase === 'PLAYING'){
+    // Check upgrade button clicks
+    const panelX = 10;
+    const panelY = 80;
+    const btnH = 58;
+    const btnW = 155;
+    const types = ['leaves','roots','trunk','stomata'];
+    for(let i=0;i<types.length;i++){
+      const by = panelY + 28 + i * (btnH + 6);
+      if(px >= panelX && px <= panelX+btnW && py >= by && py <= by+btnH){
+        tryUpgrade(types[i]);
+        return;
+      }
+    }
+
+    // CO2 catch — find nearest molecule to click point
+    const baseX = sw * 0.48;
+    const groundY = sh * 0.72;
+    const treeTop = groundY - getTreeHeight();
+    const canR = getCanopyRadius();
+
+    let bestDist = canR * 1.5;
+    let bestMol = null;
+    for(const m of co2Molecules){
+      if(m.catching) continue;
+      const dx = m.x - px;
+      const dy = m.y - py;
+      const d = Math.sqrt(dx*dx+dy*dy);
+      if(d < bestDist){
+        bestDist = d;
+        bestMol = m;
+      }
+    }
+    if(bestMol){
+      bestMol.catching = true;
+      bestMol.catchTarget = { x: baseX + (Math.random()-0.5)*canR*0.5, y: treeTop + canR*0.3 };
+      bestMol.catchSpeed = 50;
+      sfxCatch();
+    } else {
+      // Clicking near canopy still gives small reward
+      const dx = px - baseX;
+      const dy = py - (treeTop + canR*0.4);
+      if(Math.sqrt(dx*dx+dy*dy) < canR * 1.2){
+        const amt = getCatchAmount() * 0.3;
+        addMassFromAir(amt);
+        addParticle({
+          x: px, y: py, life:0.8, text:'+'+amt.toFixed(1)+'g', vy:-25, alpha:1,
+          update(p,dt){ p.y+=p.vy*dt; p.alpha=p.life/0.8; },
+          draw(p){
+            X.save(); X.globalAlpha=p.alpha; X.fillStyle='#A5D6A7';
+            X.font='bold 12px Georgia'; X.textAlign='center';
+            X.fillText(p.text,p.x,p.y); X.restore();
+          }
+        });
+      }
+    }
+  }
+}
+
+C.addEventListener('mousedown', e=>{
+  const r = C.getBoundingClientRect();
+  mouseX = e.clientX - r.left;
+  mouseY = e.clientY - r.top;
+  clicking = true;
+  clickHandled = false;
+});
+C.addEventListener('mouseup', e=>{
+  if(!clickHandled){
+    const r = C.getBoundingClientRect();
+    handleClick(e.clientX-r.left, e.clientY-r.top);
+  }
+  clicking = false;
+});
+C.addEventListener('touchstart', e=>{
+  e.preventDefault();
+  const t = e.touches[0];
+  const r = C.getBoundingClientRect();
+  mouseX = t.clientX - r.left;
+  mouseY = t.clientY - r.top;
+  clicking = true;
+  clickHandled = false;
+}, {passive:false});
+C.addEventListener('touchend', e=>{
+  e.preventDefault();
+  if(!clickHandled && e.changedTouches[0]){
+    const t = e.changedTouches[0];
+    const r = C.getBoundingClientRect();
+    handleClick(t.clientX-r.left, t.clientY-r.top);
+  }
+  clicking = false;
+}, {passive:false});
+
+// ---------- UI Drawing ----------
+function drawMassCounter(){
+  const sw = window.innerWidth;
+  const totalAir = Math.max(0, state.massFromAir);
+  const totalSoil = Math.max(0, state.massFromSoil);
+  const total = totalAir + totalSoil;
+  const airPct = total > 0 ? (totalAir/total*100) : 95;
+  const soilPct = total > 0 ? (totalSoil/total*100) : 5;
+
+  const px = sw/2;
+  const py = 12;
+  const pw = 270;
+  const ph = 74;
+
+  X.save();
+  // Panel background
+  X.fillStyle = 'rgba(62,39,35,0.88)';
+  roundRect(px-pw/2, py, pw, ph, 10);
+  X.fill();
+  X.strokeStyle = 'rgba(141,110,99,0.5)';
+  X.lineWidth = 1.5;
+  roundRect(px-pw/2, py, pw, ph, 10);
+  X.stroke();
+
+  // Title
+  X.textAlign = 'center';
+  X.fillStyle = '#FFF8E1';
+  X.font = 'bold 15px Georgia';
+  X.fillText('TOTAL MASS: ' + formatMass(state.mass), px, py+20);
+
+  // Breakdown
+  X.font = '11px Georgia';
+  X.textAlign = 'left';
+  const lx = px - pw/2 + 18;
+  X.fillStyle = '#69F0AE';
+  X.fillText('\u251C\u2500 From AIR (CO\u2082): ' + formatMass(totalAir) + ' (' + airPct.toFixed(1) + '%)', lx, py+38);
+  X.fillStyle = '#FFB74D';
+  X.fillText('\u2514\u2500 From SOIL: ' + formatMass(totalSoil) + ' (' + soilPct.toFixed(1) + '%)', lx, py+53);
+
+  // Progress bar toward 1M grams
+  X.fillStyle = 'rgba(255,255,255,0.12)';
+  roundRect(px-pw/2+14, py+61, pw-28, 6, 3);
+  X.fill();
+  const prog = Math.min(1, Math.log10(Math.max(1,state.mass)) / Math.log10(GOAL_MASS));
+  X.fillStyle = '#69F0AE';
+  roundRect(px-pw/2+14, py+61, (pw-28)*prog, 6, 3);
+  X.fill();
+
+  X.restore();
+}
+
+function drawUpgradePanel(){
+  const panelX = 10;
+  const panelY = 80;
+  const panelW = 155;
+  const btnH = 58;
+  const types = ['leaves','roots','trunk','stomata'];
+
+  X.save();
+  // Panel background
+  X.fillStyle = 'rgba(62,39,35,0.82)';
+  roundRect(panelX, panelY, panelW, 32 + types.length*(btnH+6), 10);
+  X.fill();
+  X.strokeStyle = 'rgba(141,110,99,0.4)';
+  X.lineWidth = 1;
+  roundRect(panelX, panelY, panelW, 32 + types.length*(btnH+6), 10);
+  X.stroke();
+
+  X.fillStyle = '#FFF8E1';
+  X.font = 'bold 13px Georgia';
+  X.textAlign = 'center';
+  X.fillText('UPGRADES', panelX+panelW/2, panelY+20);
+
+  for(let i=0;i<types.length;i++){
+    const type = types[i];
+    const info = upgradeInfo[type];
+    const cost = getUpgradeCost(type);
+    const lvl = state.upgrades[type];
+    const by = panelY + 30 + i*(btnH+6);
+    const canBuy = state.mass >= cost && lvl < 3;
+    const maxed = lvl >= 3;
+
+    // Button background
+    X.fillStyle = maxed ? 'rgba(100,100,100,0.45)' : canBuy ? 'rgba(76,175,80,0.35)' : 'rgba(60,60,60,0.45)';
+    roundRect(panelX+5, by, panelW-10, btnH, 6);
+    X.fill();
+    if(canBuy){
+      X.strokeStyle = 'rgba(76,175,80,0.6)';
+      X.lineWidth = 1;
+      roundRect(panelX+5, by, panelW-10, btnH, 6);
+      X.stroke();
+      // Pulse glow when affordable
+      const pulse = Math.sin(Date.now()*0.004)*0.1;
+      X.fillStyle = `rgba(76,175,80,${pulse})`;
+      roundRect(panelX+5, by, panelW-10, btnH, 6);
+      X.fill();
+    }
+
+    X.fillStyle = canBuy ? '#E8F5E9' : '#9E9E9E';
+    X.font = 'bold 11px Georgia';
+    X.textAlign = 'left';
+    X.fillText(info.name, panelX+12, by+16);
+
+    // Level pips
+    for(let j=0;j<3;j++){
+      X.fillStyle = j < lvl ? '#69F0AE' : 'rgba(255,255,255,0.2)';
+      X.beginPath();
+      X.arc(panelX+12+j*10, by+28, 3.5, 0, Math.PI*2);
+      X.fill();
+    }
+
+    X.fillStyle = maxed ? '#9E9E9E' : '#FFF8E1';
+    X.font = '10px Georgia';
+    X.fillText(maxed ? 'MAX' : formatMass(cost), panelX+48, by+30);
+
+    // Short description
+    X.fillStyle = 'rgba(255,248,225,0.45)';
+    X.font = '9px Georgia';
+    const descText = info.desc.length > 28 ? info.desc.substring(0,27)+'..' : info.desc;
+    X.fillText(descText, panelX+12, by+46);
+  }
+  X.restore();
+}
+
+function drawTimeInfo(){
+  const sw = window.innerWidth;
+  const px = sw - 145;
+  const py = 12;
+
+  X.save();
+  X.fillStyle = 'rgba(62,39,35,0.78)';
+  roundRect(px, py, 135, 55, 10);
+  X.fill();
+
+  X.fillStyle = '#FFF8E1';
+  X.font = '12px Georgia';
+  X.textAlign = 'left';
+  const isDay = state.dayTime > 0.2 && state.dayTime < 0.8;
+  const dayNightText = isDay ? 'Day' : 'Night';
+  X.fillText(dayNightText + ' ' + state.dayCount, px+12, py+18);
+  X.fillText(SEASONS[state.season], px+12, py+34);
+
+  X.font = '10px Georgia';
+  X.fillStyle = '#A5D6A7';
+  X.fillText(TREE_SPECIES[state.treeSpecies], px+12, py+48);
+
+  // Season progress mini bar
+  X.fillStyle = 'rgba(255,255,255,0.1)';
+  X.fillRect(px+80, py+22, 42, 4);
+  X.fillStyle = '#A5D6A7';
+  X.fillRect(px+80, py+22, 42*state.seasonProgress, 4);
+
+  X.restore();
+}
+
+function drawEventBanner(){
+  if(!state.currentEvent) return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const labels = {
+    storm: 'STORM!',
+    sunny: 'Sunny Day! 2x CO\u2082',
+    bird: 'Bird Visit!',
+    fire: 'Nearby Fire - Smoke!',
+    rain: 'Rain - Soil Boost!',
+  };
+  const txt = labels[state.currentEvent] || '';
+  X.save();
+  X.font = 'bold 14px Georgia';
+  const tw = X.measureText(txt).width;
+  X.fillStyle = 'rgba(62,39,35,0.8)';
+  roundRect(sw/2 - tw/2 - 20, sh - 48, tw+40, 34, 8);
+  X.fill();
+  X.strokeStyle = 'rgba(141,110,99,0.4)';
+  X.lineWidth = 1;
+  roundRect(sw/2 - tw/2 - 20, sh - 48, tw+40, 34, 8);
+  X.stroke();
+  X.fillStyle = '#FFF8E1';
+  X.textAlign = 'center';
+  X.fillText(txt, sw/2, sh-25);
+  X.restore();
+}
+
+function drawStageLabel(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const stage = getStage();
+  X.save();
+  X.fillStyle = 'rgba(255,248,225,0.55)';
+  X.font = '11px Georgia';
+  X.textAlign = 'center';
+  X.fillText(STAGE_NAMES[stage] + ' \u2022 ' + TREE_SPECIES[state.treeSpecies], sw*0.48, sh*0.72 + 18);
+  if(state.prestigeCount > 0){
+    X.fillText('Prestige ' + state.prestigeCount + ' \u2022 ' + state.totalPrestigeBonus.toFixed(1) + 'x bonus', sw*0.48, sh*0.72+32);
+  }
+  X.restore();
+}
+
+function drawPhotosynthesisIndicator(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const isDay = state.dayTime > 0.2 && state.dayTime < 0.8;
+  const px = sw - 145;
+  const py = 72;
+  X.save();
+  X.fillStyle = 'rgba(62,39,35,0.6)';
+  roundRect(px, py, 135, 20, 5);
+  X.fill();
+  X.fillStyle = isDay ? '#69F0AE' : '#FF8A65';
+  X.font = '9px Georgia';
+  X.textAlign = 'center';
+  X.fillText(isDay ? 'Photosynthesis Active' : 'Respiration (losing CO\u2082)', px+67, py+14);
+  X.restore();
+}
+
+// ---------- Offline Report ----------
+function drawOfflineReport(){
+  if(!offlineReport) return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  X.save();
+  X.fillStyle = 'rgba(0,0,0,0.5)';
+  X.fillRect(0,0,sw,sh);
+  const pw = 300, ph = 140;
+  const px = sw/2-pw/2, py = sh/2-ph/2;
+  X.fillStyle = 'rgba(62,39,35,0.95)';
+  roundRect(px,py,pw,ph,12);
+  X.fill();
+  X.strokeStyle = '#69F0AE';
+  X.lineWidth = 1.5;
+  roundRect(px,py,pw,ph,12);
+  X.stroke();
+  X.textAlign = 'center';
+  X.fillStyle = '#FFF8E1';
+  X.font = 'bold 18px Georgia';
+  X.fillText('Welcome Back!', sw/2, py+30);
+  X.font = '13px Georgia';
+  const hrs = (offlineReport.seconds/3600).toFixed(1);
+  X.fillText('While you were away (' + hrs + ' hrs):', sw/2, py+55);
+  X.fillStyle = '#69F0AE';
+  X.fillText('+ ' + formatMass(offlineReport.air) + ' from AIR', sw/2, py+80);
+  X.fillStyle = '#FFB74D';
+  X.fillText('+ ' + formatMass(offlineReport.soil) + ' from SOIL', sw/2, py+100);
+  X.fillStyle = 'rgba(255,248,225,0.5)';
+  X.font = '11px Georgia';
+  X.fillText('Tap to continue', sw/2, py+ph-10);
+  X.restore();
+}
+
+// ---------- Screens ----------
+let titleAnim = 0;
+
+function drawTitle(dt){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  titleAnim += dt;
+
+  // Animated sky that cycles
+  const skyTop = lerpColor([26,35,126], [129,212,250], Math.sin(titleAnim*0.3)*0.5+0.5);
+  const grad = X.createLinearGradient(0,0,0,sh);
+  grad.addColorStop(0, `rgb(${skyTop[0]|0},${skyTop[1]|0},${skyTop[2]|0})`);
+  grad.addColorStop(0.65, '#5D4037');
+  grad.addColorStop(1, '#3E2723');
+  X.fillStyle = grad;
+  X.fillRect(0,0,sw,sh);
+
+  // Floating CO2 molecules across background
+  const now = Date.now();
+  for(let i=0;i<12;i++){
+    const mx = (now*0.02 + i*sw/12) % sw;
+    const my = sh*0.18 + Math.sin(now*0.001+i*0.9)*25;
+    X.fillStyle = 'rgba(144,164,174,0.35)';
+    X.beginPath();
+    X.arc(mx, my, 10, 0, Math.PI*2);
+    X.fill();
+    X.fillStyle = 'rgba(84,110,122,0.5)';
+    X.font = '8px Georgia';
+    X.textAlign = 'center';
+    X.textBaseline = 'middle';
+    X.fillText('CO\u2082', mx, my);
+  }
+
+  // Ground with grass
+  const groundY = sh * 0.62;
+  X.fillStyle = '#5D4037';
+  X.fillRect(0, groundY, sw, sh-groundY);
+  X.strokeStyle = '#66BB6A';
+  X.lineWidth = 1;
+  for(let x=0;x<sw;x+=4){
+    const h = 2 + ((x*3.7)%5);
+    X.beginPath();
+    X.moveTo(x, groundY);
+    X.lineTo(x + Math.sin(now*0.001+x*0.05)*1, groundY - h);
+    X.stroke();
+  }
+
+  // Seed sprouting animation
+  const cx = sw/2;
+  const seedY = groundY + 15;
+  const sproutH = Math.min(45, titleAnim * 6);
+
+  // Seed underground
+  X.fillStyle = '#6D4C41';
+  X.beginPath();
+  X.ellipse(cx, seedY, 7, 5, 0, 0, Math.PI*2);
+  X.fill();
+  X.fillStyle = '#4E342E';
+  X.beginPath();
+  X.ellipse(cx+1, seedY-1, 3, 2, 0.3, 0, Math.PI*2);
+  X.fill();
+
+  // Sprout growing from seed
+  if(sproutH > 0){
+    X.strokeStyle = '#66BB6A';
+    X.lineWidth = 2.5;
+    X.beginPath();
+    X.moveTo(cx, seedY-3);
+    const topY = seedY - 3 - sproutH;
+    X.quadraticCurveTo(cx + Math.sin(titleAnim*1.5)*2, seedY - 3 - sproutH*0.5, cx, topY);
+    X.stroke();
+    // Cotyledon leaves
+    if(sproutH > 15){
+      const openAmt = Math.min(1, (sproutH-15)/15);
+      X.fillStyle = '#4CAF50';
+      X.beginPath();
+      X.ellipse(cx - 7*openAmt, topY + 5, 6, 3.5, -0.4*openAmt, 0, Math.PI*2);
+      X.fill();
+      X.beginPath();
+      X.ellipse(cx + 7*openAmt, topY + 8, 6, 3.5, 0.4*openAmt, 0, Math.PI*2);
+      X.fill();
+    }
+    // Tiny root going down
+    if(sproutH > 5){
+      X.strokeStyle = '#8D6E63';
+      X.lineWidth = 1;
+      X.beginPath();
+      X.moveTo(cx, seedY+3);
+      X.lineTo(cx-3, seedY+3+sproutH*0.3);
+      X.lineTo(cx+2, seedY+3+sproutH*0.4);
+      X.stroke();
+    }
+  }
+
+  // Title text with subtle shadow
+  X.save();
+  X.textAlign = 'center';
+  X.textBaseline = 'middle';
+  // Shadow
+  X.fillStyle = 'rgba(0,0,0,0.3)';
+  X.font = 'bold 60px Georgia';
+  X.fillText('CARBON', cx+2, sh*0.26+2);
+  // Main
+  X.fillStyle = '#FFF8E1';
+  X.font = 'bold 60px Georgia';
+  X.fillText('CARBON', cx, sh*0.26);
+  X.font = '17px Georgia';
+  X.fillStyle = 'rgba(255,248,225,0.85)';
+  X.fillText('Where Do Trees Get Their Mass?', cx, sh*0.26 + 40);
+  X.font = '13px Georgia';
+  X.fillStyle = 'rgba(255,248,225,0.45)';
+  X.fillText('NGSS 5-LS1-1', cx, sh*0.26 + 62);
+
+  // Pulsing tap prompt
+  const alpha = Math.sin(now*0.003)*0.3+0.7;
+  X.globalAlpha = alpha;
+  X.font = '18px Georgia';
+  X.fillStyle = '#FFF8E1';
+  X.fillText('Tap to Begin', cx, sh*0.87);
+  X.restore();
+}
+
+function drawHowTo(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+
+  // Gradient background
+  const grad = X.createLinearGradient(0,0,0,sh);
+  grad.addColorStop(0, '#1A237E');
+  grad.addColorStop(1, '#0D47A1');
+  X.fillStyle = grad;
+  X.fillRect(0,0,sw,sh);
+
+  X.save();
+  X.textAlign = 'center';
+  X.fillStyle = '#FFF8E1';
+
+  X.font = 'bold 30px Georgia';
+  X.fillText('How to Play', sw/2, 48);
+
+  const items = [
+    ['Tap leaves to catch floating CO\u2082 molecules from the air'],
+    ['CO\u2082 from AIR makes up ~95% of a tree\'s dry mass!'],
+    ['Upgrade leaves, roots, trunk & stomata to grow faster'],
+    ['Survive storms and enjoy changing seasons & day/night'],
+    ['Grow from 1 gram seed to 1,000,000 gram ancient giant!'],
+    ['Reach Ancient Giant to unlock prestige & new tree species'],
+  ];
+
+  for(let i=0;i<items.length;i++){
+    const y = 85 + i * 38;
+    // Bullet
+    X.fillStyle = i === 1 ? '#69F0AE' : '#B3E5FC';
+    X.beginPath();
+    X.arc(sw/2 - 210, y, 4, 0, Math.PI*2);
+    X.fill();
+    // Text
+    X.font = '14px Georgia';
+    X.fillStyle = i === 1 ? '#69F0AE' : '#FFF8E1';
+    X.textAlign = 'left';
+    X.fillText(items[i][0], sw/2 - 195, y+4);
+    X.textAlign = 'center';
+  }
+
+  // Key insight highlight box
+  X.fillStyle = 'rgba(105,240,174,0.12)';
+  roundRect(sw/2-230, 105, 460, 42, 8);
+  X.fill();
+  X.strokeStyle = 'rgba(105,240,174,0.3)';
+  X.lineWidth = 1;
+  roundRect(sw/2-230, 105, 460, 42, 8);
+  X.stroke();
+
+  // Photosynthesis equation at bottom
+  X.fillStyle = 'rgba(255,248,225,0.4)';
+  X.font = '12px Georgia';
+  X.textAlign = 'center';
+  X.fillText('Photosynthesis: 6CO\u2082 + 6H\u2082O + sunlight \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082', sw/2, sh-65);
+
+  const alpha = Math.sin(Date.now()*0.003)*0.3+0.7;
+  X.globalAlpha = alpha;
+  X.font = '18px Georgia';
+  X.fillStyle = '#69F0AE';
+  X.fillText('Tap to Start Growing!', sw/2, sh - 35);
+
+  X.restore();
+}
+
+function drawMilestonePopup(){
+  if(state.pendingMilestone < 0) return;
+  const sw = window.innerWidth, sh = window.innerHeight;
+  const idx = state.pendingMilestone;
+
+  X.save();
+  X.fillStyle = 'rgba(0,0,0,0.6)';
+  X.fillRect(0,0,sw,sh);
+
+  const pw = 340, ph = 200;
+  const px = sw/2-pw/2, py = sh/2-ph/2;
+  X.fillStyle = 'rgba(62,39,35,0.95)';
+  roundRect(px,py,pw,ph,14);
+  X.fill();
+  X.strokeStyle = '#69F0AE';
+  X.lineWidth = 2;
+  roundRect(px,py,pw,ph,14);
+  X.stroke();
+
+  // Celebration sparkles
+  const now = Date.now();
+  for(let i=0;i<12;i++){
+    const angle = (i/12)*Math.PI*2 + now*0.002;
+    const dist = 100 + Math.sin(now*0.003+i)*20;
+    const sx = sw/2 + Math.cos(angle)*dist;
+    const sy = sh/2 + Math.sin(angle)*dist*0.5;
+    X.globalAlpha = Math.sin(now*0.005+i)*0.3+0.4;
+    X.fillStyle = i%2===0 ? '#69F0AE' : '#FFD54F';
+    X.beginPath();
+    X.arc(sx, sy, 3, 0, Math.PI*2);
+    X.fill();
+  }
+  X.globalAlpha = 1;
+
+  X.textAlign = 'center';
+  X.fillStyle = '#69F0AE';
+  X.font = 'bold 26px Georgia';
+  X.fillText(STAGE_NAMES[idx] + '!', sw/2, py+45);
+
+  X.fillStyle = '#FFF8E1';
+  X.font = '16px Georgia';
+  X.fillText('Your tree reached ' + formatMass(STAGE_THRESHOLDS[idx]) + '!', sw/2, py+80);
+
+  const airPct = (state.massFromAir / (state.massFromAir+state.massFromSoil||1) * 100);
+  X.font = '14px Georgia';
+  X.fillStyle = '#A5D6A7';
+  X.fillText(airPct.toFixed(1) + '% of your tree\'s mass came from AIR!', sw/2, py+108);
+
+  // Random science fact for this milestone
+  const fact = SCIENCE_FACTS[idx % SCIENCE_FACTS.length];
+  X.font = '11px Georgia';
+  X.fillStyle = '#B3E5FC';
+  X.fillText(fact, sw/2, py+132);
+
+  if(idx === 5){
+    X.fillStyle = '#FFD54F';
+    X.font = 'bold 15px Georgia';
+    X.fillText('You grew an ANCIENT GIANT!', sw/2, py+158);
+  }
+
+  X.fillStyle = 'rgba(255,248,225,0.5)';
+  X.font = '12px Georgia';
+  X.fillText('Tap to continue', sw/2, py+ph-12);
+
+  X.restore();
+}
+
+function drawPrestigeScreen(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+
+  X.save();
+  X.fillStyle = 'rgba(0,0,0,0.75)';
+  X.fillRect(0,0,sw,sh);
+
+  // Celebration particles
+  const now = Date.now();
+  for(let i=0;i<20;i++){
+    const angle = (i/20)*Math.PI*2 + now*0.001;
+    const dist = 120 + Math.sin(now*0.002+i*0.5)*30;
+    X.globalAlpha = Math.sin(now*0.003+i)*0.3+0.3;
+    X.fillStyle = ['#69F0AE','#FFD54F','#FF8A65','#B3E5FC'][i%4];
+    X.beginPath();
+    X.arc(sw/2+Math.cos(angle)*dist, sh/2+Math.sin(angle)*dist*0.6-20, 3, 0, Math.PI*2);
+    X.fill();
+  }
+  X.globalAlpha = 1;
+
+  X.textAlign = 'center';
+  X.fillStyle = '#FFD54F';
+  X.font = 'bold 34px Georgia';
+  X.fillText('ANCIENT GIANT!', sw/2, sh/2-90);
+
+  X.fillStyle = '#FFF8E1';
+  X.font = '16px Georgia';
+  X.fillText('Your ' + TREE_SPECIES[state.treeSpecies] + ' reached 1,000,000 grams!', sw/2, sh/2-55);
+
+  const airPct = (state.massFromAir / (state.massFromAir+state.massFromSoil||1)*100);
+  X.fillStyle = '#69F0AE';
+  X.font = 'bold 14px Georgia';
+  X.fillText(airPct.toFixed(1) + '% came from CO\u2082 in the AIR', sw/2, sh/2-28);
+
+  // Stats line
+  X.fillStyle = '#B3E5FC';
+  X.font = '11px Georgia';
+  X.fillText('Days: '+state.totalDaysPlayed+' | CO\u2082 caught: '+state.totalCO2Caught+' | Prestige: '+state.prestigeCount, sw/2, sh/2-8);
+
+  const nextSpecies = TREE_SPECIES[Math.min(state.prestigeCount+1, TREE_SPECIES.length-1)];
+  // New Seed button
+  X.fillStyle = 'rgba(76,175,80,0.65)';
+  roundRect(sw/2-95, sh/2+16, 190, 48, 10);
+  X.fill();
+  X.strokeStyle = '#69F0AE';
+  X.lineWidth = 1;
+  roundRect(sw/2-95, sh/2+16, 190, 48, 10);
+  X.stroke();
+  X.fillStyle = '#FFF8E1';
+  X.font = 'bold 15px Georgia';
+  X.fillText('Plant a New Seed', sw/2, sh/2+44);
+  X.font = '10px Georgia';
+  X.fillStyle = '#A5D6A7';
+  X.fillText('Grow a ' + nextSpecies + ' ('+((state.prestigeCount+1)*50+100)+'% speed)', sw/2, sh/2+60);
+
+  // Keep Growing button
+  X.fillStyle = 'rgba(100,100,100,0.55)';
+  roundRect(sw/2-95, sh/2+75, 190, 44, 10);
+  X.fill();
+  X.fillStyle = '#FFF8E1';
+  X.font = '14px Georgia';
+  X.fillText('Keep Growing', sw/2, sh/2+102);
+
+  X.restore();
+}
+
+// ---------- Utility ----------
+function roundRect(x,y,w,h,r){
+  X.beginPath();
+  X.moveTo(x+r,y);
+  X.lineTo(x+w-r,y);
+  X.quadraticCurveTo(x+w,y,x+w,y+r);
+  X.lineTo(x+w,y+h-r);
+  X.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  X.lineTo(x+r,y+h);
+  X.quadraticCurveTo(x,y+h,x,y+h-r);
+  X.lineTo(x,y+r);
+  X.quadraticCurveTo(x,y,x+r,y);
+  X.closePath();
+}
+
+function formatMass(g){
+  if(g >= 1000000) return (g/1000000).toFixed(2) + ' t';
+  if(g >= 1000) return (g/1000).toFixed(1) + ' kg';
+  return g.toFixed(0) + ' g';
+}
+
+// ---------- Main Game Loop ----------
+let lastTime = performance.now();
+let saveTimer = 0;
+let treeRebuildTimer = 0;
+
+function update(dt){
+  if(state.phase === 'TITLE'){
+    titleAnim += dt;
+    return;
+  }
+  if(state.phase !== 'PLAYING') return;
+
+  updateTime(dt);
+  updateCO2(dt);
+  updateClouds(dt);
+  updateEvents(dt);
+  updateParticles(dt);
+  updateBirds(dt);
+  updateWorm(dt);
+  updateSoilParticles(dt);
+  updateFallingLeaves(dt);
+  updateFacts(dt);
+
+  // Periodically rebuild tree geometry for smooth growth
+  treeRebuildTimer -= dt;
+  if(treeRebuildTimer <= 0){
+    treeRebuildTimer = 2;
+    buildTree();
+  }
+
+  // Autosave every 5 seconds
+  saveTimer += dt;
+  if(saveTimer > 5){
+    saveTimer = 0;
+    saveGame();
+  }
+}
+
+function render(){
+  const sw = window.innerWidth, sh = window.innerHeight;
+  X.clearRect(0,0,sw,sh);
+
+  if(state.phase === 'TITLE'){
+    drawTitle(0.016);
+    return;
+  }
+  if(state.phase === 'HOW_TO'){
+    drawHowTo();
+    return;
+  }
+
+  // Main game rendering layers
+  drawSky();
+  drawSunMoon();
+  drawClouds();
+  drawSnow();
+  drawBackground();
+  drawWorm();
+  drawTree();
+  drawFallingLeaves();
+  drawCO2();
+  drawRain();
+  drawSmoke();
+  drawBirds();
+  drawParticles();
+
+  // HUD / UI overlay
+  drawMassCounter();
+  drawUpgradePanel();
+  drawTimeInfo();
+  drawPhotosynthesisIndicator();
+  drawEventBanner();
+  drawStageLabel();
+  drawFact();
+
+  // Modal overlays
+  if(offlineReport){
+    drawOfflineReport();
+  } else if(state.pendingMilestone >= 0){
+    drawMilestonePopup();
+  }
+  if(state.phase === 'PRESTIGE'){
+    drawPrestigeScreen();
+  }
+}
+
+function gameLoop(now){
+  const dt = Math.min((now - lastTime) / 1000, 0.1);
+  lastTime = now;
+
+  resize();
+  update(dt);
+  render();
+  requestAnimationFrame(gameLoop);
+}
+
+// ---------- Init ----------
+function init(){
+  const loaded = loadGame();
+  if(loaded && state.phase === 'PLAYING'){
+    buildTree();
+  }
+  requestAnimationFrame(gameLoop);
+}
+
+init();
+</script>
+</body>
+</html>

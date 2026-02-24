@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>PHASE SHIFT - Conservation of Mass</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#000;font-family:'Segoe UI',system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none}
+canvas{display:block;width:100%;height:100%}
+#orient{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#000;color:#fff;z-index:999;flex-direction:column;align-items:center;justify-content:center;font-size:1.4em;text-align:center;padding:2em}
+#orient span{font-size:3em;display:block;margin-bottom:0.3em}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}}
+</style>
+</head>
+<body>
+<div id="orient"><span>&#128257;</span>Please rotate your device to landscape mode</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+(function(){
+
+const C=document.getElementById('gc');
+const X=C.getContext('2d');
+let W=0,H=0,DPR=1;
+const TILE=32;
+const GRAV=980;
+const MAX_PARTICLES=400;
+const MASS_STR="18.015 g";
+const SCIENCE_FACTS=[
+  "Water molecules (H\u2082O) have the same mass whether frozen, liquid, or gas!",
+  "18.015 grams is the molar mass of one molecule of water.",
+  "When ice melts, its mass stays the same - only the arrangement of molecules changes!",
+  "Steam takes up more space than water, but weighs the same amount!",
+  "Conservation of mass: matter cannot be created or destroyed, only changed.",
+  "Antoine Lavoisier discovered conservation of mass in the 1700s.",
+  "Phase changes are physical changes - the substance stays the same!",
+  "Molecules move faster in gas, slower in liquid, slowest in solid.",
+  "Ice floats because water molecules spread apart when they freeze.",
+  "The same H\u2082O molecules cycle through all three states in nature!",
+  "Boiling point of water: 100\u00B0C. Freezing point: 0\u00B0C. Mass: always the same!",
+  "Even though steam is invisible, it has the same mass as the water it came from.",
+  "In nature, the water cycle shows conservation of mass on a planetary scale!",
+  "A snowflake and a raindrop made from the same water have identical mass.",
+  "Scientists measure mass in grams - and it never changes during phase shifts!",
+  "Every glass of water you drink contains molecules billions of years old!",
+  "Sublimation: ice can become gas directly, but the mass is still conserved!",
+  "Condensation on a cold glass proves gas has mass - it collects as liquid!",
+  "The total mass of Earth's water has stayed the same for billions of years.",
+  "Mass is different from weight - mass never changes, even in space!",
+  "When you boil a sealed pot of water, the total mass inside never changes.",
+  "Dry ice (solid CO\u2082) sublimates - same conservation principle as H\u2082O!",
+  "The molecules in your body were once part of clouds, rivers, and glaciers.",
+  "Even at absolute zero (-273\u00B0C), atoms still have mass!",
+  "Phase changes happen because energy is added or removed - not mass."
+];
+
+// Audio
+let audioCtx=null;
+function initAudio(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)()}
+function playSound(type){
+  if(!audioCtx)return;
+  try{
+    const now=audioCtx.currentTime;
+    if(type==='ice'){
+      const n=audioCtx.createBufferSource();const b=audioCtx.createBuffer(1,2048,audioCtx.sampleRate);
+      const d=b.getChannelData(0);for(let i=0;i<2048;i++)d[i]=(Math.random()*2-1)*Math.exp(-i/400);
+      n.buffer=b;const f=audioCtx.createBiquadFilter();f.type='highpass';f.frequency.value=3000;
+      n.connect(f);f.connect(audioCtx.destination);n.start(now);
+    }else if(type==='water'){
+      const o=audioCtx.createOscillator();o.type='sine';o.frequency.setValueAtTime(200,now);
+      o.frequency.exponentialRampToValueAtTime(80,now+0.15);
+      const g=audioCtx.createGain();g.gain.setValueAtTime(0.3,now);g.gain.exponentialRampToValueAtTime(0.01,now+0.2);
+      o.connect(g);g.connect(audioCtx.destination);o.start(now);o.stop(now+0.2);
+      const n2=audioCtx.createBufferSource();const b2=audioCtx.createBuffer(1,4096,audioCtx.sampleRate);
+      const d2=b2.getChannelData(0);for(let i=0;i<4096;i++)d2[i]=(Math.random()*2-1)*Math.exp(-i/1000)*0.15;
+      n2.buffer=b2;n2.connect(audioCtx.destination);n2.start(now);
+    }else if(type==='steam'){
+      const n=audioCtx.createBufferSource();const b=audioCtx.createBuffer(1,audioCtx.sampleRate*0.4|0,audioCtx.sampleRate);
+      const d=b.getChannelData(0);for(let i=0;i<b.length;i++){const t=i/b.length;d[i]=(Math.random()*2-1)*Math.sin(t*Math.PI)*0.2}
+      n.buffer=b;const f=audioCtx.createBiquadFilter();f.type='bandpass';f.frequency.value=2000;f.Q.value=0.5;
+      n.connect(f);f.connect(audioCtx.destination);n.start(now);
+    }else if(type==='jump'){
+      const o=audioCtx.createOscillator();o.type='sine';o.frequency.setValueAtTime(250,now);
+      o.frequency.exponentialRampToValueAtTime(500,now+0.1);
+      const g=audioCtx.createGain();g.gain.setValueAtTime(0.2,now);g.gain.exponentialRampToValueAtTime(0.01,now+0.12);
+      o.connect(g);g.connect(audioCtx.destination);o.start(now);o.stop(now+0.12);
+    }else if(type==='pickup'){
+      [523,659,784].forEach((fr,i)=>{
+        const o=audioCtx.createOscillator();o.type='sine';o.frequency.value=fr;
+        const g=audioCtx.createGain();g.gain.setValueAtTime(0.15,now+i*0.08);g.gain.exponentialRampToValueAtTime(0.01,now+i*0.08+0.15);
+        o.connect(g);g.connect(audioCtx.destination);o.start(now+i*0.08);o.stop(now+i*0.08+0.2);
+      });
+    }else if(type==='complete'){
+      [523,587,659,784,1047].forEach((fr,i)=>{
+        const o=audioCtx.createOscillator();o.type='triangle';o.frequency.value=fr;
+        const g=audioCtx.createGain();g.gain.setValueAtTime(0.2,now+i*0.12);g.gain.exponentialRampToValueAtTime(0.01,now+i*0.12+0.3);
+        o.connect(g);g.connect(audioCtx.destination);o.start(now+i*0.12);o.stop(now+i*0.12+0.35);
+      });
+    }else if(type==='plate'){
+      const o=audioCtx.createOscillator();o.type='square';o.frequency.value=80;
+      const g=audioCtx.createGain();g.gain.setValueAtTime(0.25,now);g.gain.exponentialRampToValueAtTime(0.01,now+0.15);
+      o.connect(g);g.connect(audioCtx.destination);o.start(now);o.stop(now+0.15);
+    }else if(type==='break'){
+      const n=audioCtx.createBufferSource();const b=audioCtx.createBuffer(1,6000,audioCtx.sampleRate);
+      const d=b.getChannelData(0);for(let i=0;i<6000;i++)d[i]=(Math.random()*2-1)*Math.exp(-i/1500)*0.4;
+      n.buffer=b;n.connect(audioCtx.destination);n.start(now);
+    }
+  }catch(e){}
+}
+
+// Input
+const keys={};
+let touchState=null;
+let touchJump=false;
+let touchStateBtn=0;
+document.addEventListener('keydown',e=>{initAudio();keys[e.code]=true;if(['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code))e.preventDefault()});
+document.addEventListener('keyup',e=>{keys[e.code]=false});
+
+// Touch
+let touches=[];
+C.addEventListener('touchstart',e=>{e.preventDefault();initAudio();for(const t of e.changedTouches)touches.push({id:t.identifier,sx:t.clientX,sy:t.clientY,cx:t.clientX,cy:t.clientY})},{ passive:false});
+C.addEventListener('touchmove',e=>{e.preventDefault();for(const t of e.changedTouches){const f=touches.find(tt=>tt.id===t.identifier);if(f){f.cx=t.clientX;f.cy=t.clientY}}},{passive:false});
+C.addEventListener('touchend',e=>{e.preventDefault();for(const t of e.changedTouches)touches=touches.filter(tt=>tt.id!==t.identifier)},{passive:false});
+C.addEventListener('mousedown',e=>{initAudio();handleClick(e.clientX,e.clientY)});
+C.addEventListener('touchstart',e=>{for(const t of e.changedTouches)handleClick(t.clientX,t.clientY)},{passive:true});
+
+function handleClick(cx,cy){
+  const rx=cx/C.clientWidth*W;
+  const ry=cy/C.clientHeight*H;
+  if(gameState==='TITLE'){gameState='HOW_TO';return}
+  if(gameState==='HOW_TO'){gameState='WORLD_SELECT';return}
+  if(gameState==='WORLD_SELECT'){clickWorldSelect(rx,ry);return}
+  if(gameState==='LEVEL_SELECT'){clickLevelSelect(rx,ry);return}
+  if(gameState==='LEVEL_COMPLETE'){clickLevelComplete(rx,ry);return}
+  if(gameState==='WORLD_COMPLETE'){gameState='WORLD_SELECT';return}
+  if(gameState==='PLAYING'){clickPlaying(rx,ry)}
+}
+
+// Game state
+let gameState='TITLE';
+let currentWorld=0;
+let currentLevel=0;
+let levelTimer=0;
+let massFlashTimer=0;
+let stateTransTimer=0;
+let prevState=1;
+let massFlashMsg='';
+const MASS_MSGS=[
+  `Still ${MASS_STR}!`,
+  `Mass unchanged: ${MASS_STR}`,
+  `${MASS_STR} - always!`,
+  `Same mass: ${MASS_STR}`,
+  `Phase changed, mass didn't!`,
+  `${MASS_STR} no matter what!`,
+  `Conserved: ${MASS_STR}`,
+  `New state, same ${MASS_STR}!`
+];
+
+// Save
+let saveData={stars:{},unlocked:[true,false,false,false,false]};
+function loadSave(){try{const d=localStorage.getItem('phaseshift_save');if(d)saveData=JSON.parse(d)}catch(e){}}
+function writeSave(){try{localStorage.setItem('phaseshift_save',JSON.stringify(saveData))}catch(e){}}
+loadSave();
+
+function totalStars(){let s=0;for(const k in saveData.stars)s+=saveData.stars[k];return s}
+function worldStars(w){let s=0;for(let l=0;l<5;l++){const k=w+'_'+l;if(saveData.stars[k])s+=saveData.stars[k]}return s}
+
+// Player
+const player={x:0,y:0,vx:0,vy:0,w:24,h:24,state:1,onGround:false,inContainer:false,containerY:0,squished:false,squishAmt:0};
+
+// Particles
+let particles=[];
+function addParticle(x,y,vx,vy,life,color,size){
+  if(particles.length>=MAX_PARTICLES)particles.shift();
+  particles.push({x,y,vx,vy,life,maxLife:life,color,size});
+}
+function updateParticles(dt){
+  for(let i=particles.length-1;i>=0;i--){
+    const p=particles[i];
+    p.x+=p.vx*dt;p.y+=p.vy*dt;p.life-=dt;
+    if(p.life<=0)particles.splice(i,1);
+  }
+}
+function drawParticles(){
+  for(const p of particles){
+    const a=Math.max(0,p.life/p.maxLife);
+    X.globalAlpha=a;
+    X.fillStyle=p.color;
+    X.beginPath();
+    X.arc(p.x-camX,p.y-camY,p.size*a,0,Math.PI*2);
+    X.fill();
+  }
+  X.globalAlpha=1;
+}
+
+// Ambient particles per state
+function emitStateParticles(dt){
+  const rate=player.state===0?8:player.state===1?5:10;
+  if(Math.random()<rate*dt){
+    const px=player.x+player.w/2+(Math.random()-0.5)*player.w;
+    const py=player.y+player.h/2+(Math.random()-0.5)*player.h;
+    if(player.state===0){
+      addParticle(px,py,(Math.random()-0.5)*20,-Math.random()*30,0.6,'#E1F5FE',2);
+    }else if(player.state===1){
+      addParticle(px,py,(Math.random()-0.5)*15,Math.random()*20,0.5,'#90CAF9',2.5);
+    }else{
+      addParticle(px,py,(Math.random()-0.5)*25,-Math.random()*40-10,0.8,'rgba(255,255,255,0.6)',3);
+    }
+  }
+}
+
+// Level data structures
+// Tile types: 0=air, 1=solid, 2=fragile, 3=grate, 4=slope-right, 5=slope-left
+// Entities stored separately
+let levelTiles=[];
+let levelW=0,levelH=0;
+let entities=[];
+let collectedMolecules=0;
+let totalMolecules=0;
+let doors=[];
+let camX=0,camY=0;
+
+// LEVEL DEFINITIONS
+// Each level: {w,h,tiles:[rows of strings],entities:[{type,x,y,...}],spawn:{x,y},bg:world}
+// Tile chars: .=air #=solid !=fragile %=grate /=slope-r \=slope-l ~=container-left ]=container-right
+const WORLDS=[
+  {name:'Kitchen',bg:'kitchen',unlock:0,
+   desc:'Learn the basics of phase shifting'},
+  {name:'Arctic',bg:'arctic',unlock:8,
+   desc:'Ice-heavy challenges await'},
+  {name:'Volcano',bg:'volcano',unlock:20,
+   desc:'Steam and lava puzzles'},
+  {name:'Laboratory',bg:'lab',unlock:32,
+   desc:'Complex multi-state challenges'},
+  {name:'Cloud City',bg:'cloud',unlock:45,
+   desc:'The ultimate test'}
+];
+
+// Level generator: creates tile array and entity list
+function buildLevel(w,lv){
+  const L={w:30,h:20,tiles:[],ents:[],spawn:{x:2,y:17},bg:WORLDS[w].bg};
+  // Initialize empty
+  for(let r=0;r<L.h;r++){
+    L.tiles[r]=[];
+    for(let c=0;c<L.w;c++)L.tiles[r][c]=0;
+  }
+  // Floor
+  for(let c=0;c<L.w;c++)L.tiles[L.h-1][c]=1;
+  // Walls
+  for(let r=0;r<L.h;r++){L.tiles[r][0]=1;L.tiles[r][L.w-1]=1}
+
+  // World 1: Kitchen
+  if(w===0){
+    if(lv===0){
+      // Simple platforms, water only, collect molecules
+      L.spawn={x:2,y:16};
+      // Platforms
+      for(let c=5;c<10;c++)L.tiles[14][c]=1;
+      for(let c=12;c<18;c++)L.tiles[12][c]=1;
+      for(let c=20;c<26;c++)L.tiles[10][c]=1;
+      for(let c=8;c<14;c++)L.tiles[8][c]=1;
+      // Molecules
+      L.ents.push({type:'molecule',x:7*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:23*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:11*TILE,y:6.5*TILE});
+      // Exit
+      L.ents.push({type:'exit',x:11*TILE,y:6*TILE});
+    }else if(lv===1){
+      // Ice bridge - freeze to cross slippery surface and break fragile shelf
+      L.spawn={x:2,y:16};
+      // Gap with fragile floor below
+      for(let c=4;c<12;c++)L.tiles[14][c]=1;
+      // Fragile platform
+      for(let c=14;c<20;c++)L.tiles[14][c]=2;
+      // Below fragile - reward area
+      for(let c=14;c<20;c++)L.tiles[17][c]=1;
+      // Upper platforms
+      for(let c=22;c<28;c++)L.tiles[12][c]=1;
+      for(let c=10;c<16;c++)L.tiles[9][c]=1;
+      L.ents.push({type:'molecule',x:17*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:13*TILE,y:7.5*TILE});
+      L.ents.push({type:'hint',x:3*TILE,y:13*TILE,text:'Press 1 for ICE!'});
+      L.ents.push({type:'exit',x:13*TILE,y:7*TILE});
+    }else if(lv===2){
+      // Steam vent - float up through grate
+      L.spawn={x:2,y:16};
+      // Lower area
+      for(let c=4;c<15;c++)L.tiles[14][c]=1;
+      // Grate ceiling above
+      for(let c=8;c<13;c++)L.tiles[10][c]=3;
+      // Upper area
+      for(let c=6;c<15;c++)L.tiles[7][c]=1;
+      for(let c=18;c<27;c++)L.tiles[12][c]=1;
+      L.ents.push({type:'fan',x:10*TILE,y:15*TILE,dir:'up'});
+      L.ents.push({type:'molecule',x:10*TILE,y:12*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:5.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:10.5*TILE});
+      L.ents.push({type:'hint',x:3*TILE,y:13*TILE,text:'Press 3 for STEAM!'});
+      L.ents.push({type:'exit',x:10*TILE,y:5*TILE});
+    }else if(lv===3){
+      // Combo - all 3 states
+      L.spawn={x:2,y:16};
+      // Fragile floor (need ice)
+      for(let c=5;c<9;c++)L.tiles[14][c]=2;
+      for(let c=5;c<9;c++)L.tiles[17][c]=1;
+      // Below: narrow gap (need water)
+      for(let c=9;c<15;c++)L.tiles[16][c]=1;
+      L.tiles[15][9]=1;L.tiles[15][10]=1;L.tiles[15][14]=1;
+      // Gap at y=15, c=11-13 is passage (2 tile high, need to be water-flat)
+      for(let c=11;c<14;c++){L.tiles[14][c]=1;}
+      L.tiles[15][11]=0;L.tiles[15][12]=0;L.tiles[15][13]=0;
+      // After gap: grate (need steam)
+      for(let c=16;c<22;c++)L.tiles[14][c]=1;
+      for(let c=18;c<21;c++)L.tiles[10][c]=3;
+      for(let c=16;c<24;c++)L.tiles[7][c]=1;
+      L.ents.push({type:'molecule',x:7*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:12*TILE,y:14.5*TILE});
+      L.ents.push({type:'molecule',x:19*TILE,y:5.5*TILE});
+      L.ents.push({type:'exit',x:20*TILE,y:5*TILE});
+    }else{
+      // Temperature zones
+      L.spawn={x:2,y:16};
+      for(let c=3;c<12;c++)L.tiles[14][c]=1;
+      for(let c=14;c<22;c++)L.tiles[14][c]=1;
+      for(let c=24;c<29;c++)L.tiles[14][c]=1;
+      // Upper platforms
+      for(let c=10;c<16;c++)L.tiles[10][c]=1;
+      for(let c=18;c<25;c++)L.tiles[7][c]=1;
+      // Hot zone (forces steam)
+      L.ents.push({type:'hotzone',x:14*TILE,y:11*TILE,w:8*TILE,h:3*TILE});
+      // Cold zone (forces ice)
+      L.ents.push({type:'coldzone',x:3*TILE,y:11*TILE,w:6*TILE,h:3*TILE});
+      // Grate in hot zone area
+      for(let c=16;c<20;c++)L.tiles[10][c]=3;
+      L.ents.push({type:'molecule',x:5*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:18*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:26*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:21*TILE,y:5.5*TILE});
+      L.ents.push({type:'exit',x:22*TILE,y:5*TILE});
+    }
+  }
+  // World 2: Arctic
+  else if(w===1){
+    if(lv===0){
+      L.spawn={x:2,y:16};
+      // Ice sliding level - long platforms
+      for(let c=3;c<15;c++)L.tiles[14][c]=1;
+      for(let c=17;c<28;c++)L.tiles[12][c]=1;
+      for(let c=5;c<18;c++)L.tiles[9][c]=1;
+      for(let c=20;c<28;c++)L.tiles[6][c]=1;
+      L.ents.push({type:'coldzone',x:3*TILE,y:10*TILE,w:25*TILE,h:8*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:12*TILE,y:7.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:4.5*TILE});
+      L.ents.push({type:'exit',x:25*TILE,y:4*TILE});
+    }else if(lv===1){
+      L.spawn={x:2,y:16};
+      // Narrow ice caves - melt to water to fit
+      for(let c=3;c<10;c++)L.tiles[14][c]=1;
+      // Narrow passage (1 tile high)
+      for(let c=10;c<16;c++){L.tiles[13][c]=1;L.tiles[15][c]=1;}
+      // Open area
+      for(let c=16;c<25;c++)L.tiles[14][c]=1;
+      for(let c=18;c<23;c++)L.tiles[10][c]=1;
+      // Another narrow passage up high
+      for(let c=10;c<18;c++){L.tiles[8][c]=1;L.tiles[6][c]=1;}
+      for(let c=5;c<10;c++)L.tiles[7][c]=1;
+      L.ents.push({type:'molecule',x:13*TILE,y:13.5*TILE});
+      L.ents.push({type:'molecule',x:20*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:14*TILE,y:5.5*TILE});
+      L.ents.push({type:'hint',x:9*TILE,y:13*TILE,text:'Press 2 to squeeze through!'});
+      L.ents.push({type:'exit',x:7*TILE,y:5*TILE});
+    }else if(lv===2){
+      L.spawn={x:2,y:16};
+      // Pressure plate puzzle
+      for(let c=3;c<14;c++)L.tiles[14][c]=1;
+      for(let c=18;c<28;c++)L.tiles[14][c]=1;
+      // Gap with door
+      L.ents.push({type:'pressureplate',x:8*TILE,y:13*TILE,doorId:0});
+      L.ents.push({type:'door',x:15*TILE,y:11*TILE,id:0,h:3});
+      for(let c=15;c<18;c++)L.tiles[14][c]=1;
+      // Upper section
+      for(let c=8;c<20;c++)L.tiles[9][c]=1;
+      L.ents.push({type:'molecule',x:6*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:14*TILE,y:7.5*TILE});
+      L.ents.push({type:'exit',x:14*TILE,y:7*TILE});
+    }else if(lv===3){
+      L.spawn={x:2,y:16};
+      // Multi-phase arctic
+      for(let c=3;c<10;c++)L.tiles[14][c]=1;
+      for(let c=10;c<15;c++)L.tiles[14][c]=2; // fragile
+      for(let c=10;c<15;c++)L.tiles[17][c]=1;
+      for(let c=16;c<24;c++)L.tiles[14][c]=1;
+      // Grate above
+      for(let c=18;c<22;c++)L.tiles[10][c]=3;
+      for(let c=16;c<24;c++)L.tiles[7][c]=1;
+      // Cold zone most of level
+      L.ents.push({type:'coldzone',x:1*TILE,y:1*TILE,w:14*TILE,h:18*TILE});
+      L.ents.push({type:'molecule',x:12*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:20*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:20*TILE,y:5.5*TILE});
+      L.ents.push({type:'exit',x:20*TILE,y:5*TILE});
+    }else{
+      L.spawn={x:2,y:16};
+      // Arctic finale
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      for(let c=8;c<12;c++)L.tiles[14][c]=2;
+      for(let c=8;c<12;c++)L.tiles[17][c]=1;
+      for(let c=13;c<18;c++)L.tiles[12][c]=1;
+      // Narrow gap
+      for(let c=18;c<24;c++){L.tiles[11][c]=1;L.tiles[13][c]=1;}
+      for(let c=24;c<29;c++)L.tiles[12][c]=1;
+      // Grate
+      for(let c=25;c<28;c++)L.tiles[8][c]=3;
+      for(let c=22;c<29;c++)L.tiles[5][c]=1;
+      L.ents.push({type:'coldzone',x:1*TILE,y:8*TILE,w:12*TILE,h:10*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:21*TILE,y:11.5*TILE});
+      L.ents.push({type:'molecule',x:26*TILE,y:3.5*TILE});
+      L.ents.push({type:'exit',x:26*TILE,y:3*TILE});
+    }
+  }
+  // World 3: Volcano
+  else if(w===2){
+    if(lv===0){
+      L.spawn={x:2,y:16};
+      for(let c=3;c<15;c++)L.tiles[14][c]=1;
+      for(let c=17;c<28;c++)L.tiles[12][c]=1;
+      for(let c=5;c<15;c++)L.tiles[9][c]=1;
+      for(let c=17;c<27;c++)L.tiles[6][c]=1;
+      L.ents.push({type:'hotzone',x:15*TILE,y:8*TILE,w:14*TILE,h:10*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:7.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:4.5*TILE});
+      L.ents.push({type:'exit',x:22*TILE,y:4*TILE});
+    }else if(lv===1){
+      L.spawn={x:2,y:16};
+      // Rising lava concept (hot zone at bottom)
+      for(let c=3;c<10;c++)L.tiles[14][c]=1;
+      for(let c=12;c<20;c++)L.tiles[12][c]=1;
+      for(let c=5;c<15;c++)L.tiles[9][c]=1;
+      for(let c=17;c<27;c++)L.tiles[7][c]=1;
+      for(let c=8;c<18;c++)L.tiles[4][c]=1;
+      L.ents.push({type:'hotzone',x:1*TILE,y:15*TILE,w:28*TILE,h:4*TILE});
+      // Grates for steam navigation
+      for(let c=14;c<17;c++)L.tiles[9][c]=3;
+      L.ents.push({type:'molecule',x:7*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:16*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:7.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:5.5*TILE});
+      L.ents.push({type:'exit',x:13*TILE,y:2*TILE});
+    }else if(lv===2){
+      L.spawn={x:2,y:16};
+      // Pressure plate with lava
+      for(let c=3;c<12;c++)L.tiles[14][c]=1;
+      L.ents.push({type:'pressureplate',x:6*TILE,y:13*TILE,doorId:0});
+      L.ents.push({type:'door',x:13*TILE,y:11*TILE,id:0,h:3});
+      for(let c=13;c<16;c++)L.tiles[14][c]=1;
+      for(let c=16;c<28;c++)L.tiles[14][c]=1;
+      for(let c=18;c<26;c++)L.tiles[10][c]=1;
+      for(let c=10;c<18;c++)L.tiles[7][c]=1;
+      L.ents.push({type:'hotzone',x:16*TILE,y:11*TILE,w:12*TILE,h:3*TILE});
+      L.ents.push({type:'molecule',x:8*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:14*TILE,y:5.5*TILE});
+      L.ents.push({type:'exit',x:14*TILE,y:5*TILE});
+    }else if(lv===3){
+      L.spawn={x:2,y:16};
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      for(let c=8;c<13;c++)L.tiles[14][c]=2;
+      for(let c=8;c<13;c++)L.tiles[17][c]=1;
+      for(let c=14;c<22;c++)L.tiles[12][c]=1;
+      for(let c=22;c<28;c++){L.tiles[11][c]=1;L.tiles[13][c]=1;}
+      for(let c=22;c<28;c++)L.tiles[8][c]=1;
+      for(let c=8;c<20;c++)L.tiles[5][c]=1;
+      L.ents.push({type:'hotzone',x:14*TILE,y:6*TILE,w:14*TILE,h:6*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:18*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:11.5*TILE});
+      L.ents.push({type:'molecule',x:14*TILE,y:3.5*TILE});
+      L.ents.push({type:'exit',x:14*TILE,y:3*TILE});
+    }else{
+      L.spawn={x:2,y:16};
+      // Volcano finale - all mechanics
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      for(let c=9;c<14;c++)L.tiles[14][c]=2;
+      for(let c=9;c<14;c++)L.tiles[17][c]=1;
+      for(let c=15;c<22;c++)L.tiles[13][c]=1;
+      L.ents.push({type:'pressureplate',x:18*TILE,y:12*TILE,doorId:0});
+      L.ents.push({type:'door',x:23*TILE,y:10*TILE,id:0,h:3});
+      for(let c=23;c<28;c++)L.tiles[13][c]=1;
+      for(let c=23;c<28;c++)L.tiles[7][c]=1;
+      for(let c=25;c<28;c++)L.tiles[7][c]=3;
+      for(let c=15;c<23;c++)L.tiles[4][c]=1;
+      L.ents.push({type:'hotzone',x:23*TILE,y:7*TILE,w:6*TILE,h:6*TILE});
+      L.ents.push({type:'molecule',x:11*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:18*TILE,y:11.5*TILE});
+      L.ents.push({type:'molecule',x:26*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:19*TILE,y:2.5*TILE});
+      L.ents.push({type:'exit',x:19*TILE,y:2*TILE});
+    }
+  }
+  // World 4: Laboratory
+  else if(w===3){
+    if(lv===0){
+      L.spawn={x:2,y:16};
+      for(let c=3;c<12;c++)L.tiles[14][c]=1;
+      for(let c=14;c<20;c++)L.tiles[14][c]=1;
+      for(let c=14;c<20;c++){L.tiles[12][c]=1;}
+      // Narrow gap between platforms
+      for(let c=12;c<14;c++){L.tiles[13][c]=1;L.tiles[15][c]=1;}
+      for(let c=22;c<28;c++)L.tiles[10][c]=1;
+      // Container to reach upper platform
+      L.ents.push({type:'container',x:23*TILE,y:10*TILE,w:3*TILE,h:4*TILE});
+      for(let c=10;c<18;c++)L.tiles[7][c]=1;
+      L.ents.push({type:'fan',x:24*TILE,y:15*TILE,dir:'up'});
+      L.ents.push({type:'molecule',x:13*TILE,y:13.5*TILE});
+      L.ents.push({type:'molecule',x:17*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:14*TILE,y:5.5*TILE});
+      L.ents.push({type:'hint',x:22*TILE,y:13*TILE,text:'Fill container as WATER!'});
+      L.ents.push({type:'exit',x:14*TILE,y:5*TILE});
+    }else if(lv===1){
+      L.spawn={x:2,y:16};
+      // Fan maze
+      for(let c=3;c<10;c++)L.tiles[14][c]=1;
+      for(let c=10;c<28;c++)L.tiles[16][c]=1;
+      for(let c=10;c<28;c++)L.tiles[11][c]=1;
+      for(let c=10;c<28;c++)L.tiles[6][c]=1;
+      // Grates between levels
+      for(let c=14;c<18;c++)L.tiles[11][c]=3;
+      for(let c=22;c<26;c++)L.tiles[6][c]=3;
+      L.ents.push({type:'fan',x:11*TILE,y:14*TILE,dir:'right'});
+      L.ents.push({type:'fan',x:26*TILE,y:9*TILE,dir:'left'});
+      L.ents.push({type:'molecule',x:20*TILE,y:14.5*TILE});
+      L.ents.push({type:'molecule',x:16*TILE,y:9.5*TILE});
+      L.ents.push({type:'molecule',x:24*TILE,y:4.5*TILE});
+      L.ents.push({type:'exit',x:24*TILE,y:4*TILE});
+    }else if(lv===2){
+      L.spawn={x:2,y:16};
+      // Complex pressure + phase
+      for(let c=3;c<10;c++)L.tiles[14][c]=1;
+      L.ents.push({type:'pressureplate',x:6*TILE,y:13*TILE,doorId:0});
+      L.ents.push({type:'door',x:11*TILE,y:12*TILE,id:0,h:2});
+      for(let c=11;c<18;c++)L.tiles[14][c]=1;
+      for(let c=18;c<22;c++)L.tiles[14][c]=2;
+      for(let c=18;c<22;c++)L.tiles[17][c]=1;
+      for(let c=23;c<28;c++)L.tiles[12][c]=1;
+      for(let c=14;c<22;c++)L.tiles[8][c]=1;
+      for(let c=17;c<20;c++)L.tiles[8][c]=3;
+      L.ents.push({type:'molecule',x:8*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:20*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:18*TILE,y:6.5*TILE});
+      L.ents.push({type:'exit',x:18*TILE,y:6*TILE});
+    }else if(lv===3){
+      L.spawn={x:2,y:16};
+      for(let c=3;c<10;c++)L.tiles[14][c]=1;
+      for(let c=12;c<18;c++)L.tiles[14][c]=1;
+      for(let c=12;c<18;c++){L.tiles[12][c]=1;}
+      for(let c=10;c<12;c++){L.tiles[13][c]=1;L.tiles[15][c]=1;}
+      for(let c=20;c<28;c++)L.tiles[11][c]=1;
+      for(let c=22;c<26;c++)L.tiles[11][c]=3;
+      L.ents.push({type:'pressureplate',x:15*TILE,y:11*TILE,doorId:0});
+      L.ents.push({type:'door',x:19*TILE,y:9*TILE,id:0,h:2});
+      for(let c=19;c<28;c++)L.tiles[11][c]=1;
+      for(let c=10;c<20;c++)L.tiles[6][c]=1;
+      L.ents.push({type:'fan',x:24*TILE,y:12*TILE,dir:'up'});
+      L.ents.push({type:'hotzone',x:20*TILE,y:7*TILE,w:8*TILE,h:4*TILE});
+      L.ents.push({type:'molecule',x:11*TILE,y:13.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:24*TILE,y:9.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:4.5*TILE});
+      L.ents.push({type:'exit',x:15*TILE,y:4*TILE});
+    }else{
+      L.spawn={x:2,y:16};
+      // Lab finale
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      for(let c=8;c<12;c++)L.tiles[14][c]=2;
+      for(let c=8;c<12;c++)L.tiles[17][c]=1;
+      L.ents.push({type:'pressureplate',x:10*TILE,y:16*TILE,doorId:0});
+      L.ents.push({type:'door',x:13*TILE,y:14*TILE,id:0,h:3});
+      for(let c=13;c<20;c++)L.tiles[17][c]=1;
+      for(let c=13;c<20;c++){L.tiles[15][c]=1;L.tiles[17][c]=1;}
+      // Narrow passage
+      for(let c=20;c<25;c++){L.tiles[14][c]=1;L.tiles[16][c]=1;}
+      for(let c=25;c<28;c++)L.tiles[15][c]=1;
+      for(let c=25;c<28;c++)L.tiles[10][c]=3;
+      for(let c=22;c<28;c++)L.tiles[7][c]=1;
+      for(let c=10;c<20;c++)L.tiles[4][c]=1;
+      L.ents.push({type:'fan',x:26*TILE,y:13*TILE,dir:'up'});
+      L.ents.push({type:'hotzone',x:25*TILE,y:10*TILE,w:4*TILE,h:5*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:17*TILE,y:14.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:14.5*TILE});
+      L.ents.push({type:'molecule',x:26*TILE,y:5.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:2.5*TILE});
+      L.ents.push({type:'exit',x:15*TILE,y:2*TILE});
+    }
+  }
+  // World 5: Cloud City
+  else if(w===4){
+    if(lv===0){
+      L.spawn={x:2,y:16};
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      for(let c=10;c<16;c++)L.tiles[12][c]=1;
+      for(let c=18;c<24;c++)L.tiles[10][c]=1;
+      for(let c=10;c<16;c++)L.tiles[7][c]=1;
+      for(let c=20;c<27;c++)L.tiles[4][c]=1;
+      L.ents.push({type:'fan',x:21*TILE,y:11*TILE,dir:'up'});
+      L.ents.push({type:'fan',x:13*TILE,y:8*TILE,dir:'right'});
+      L.ents.push({type:'molecule',x:13*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:21*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:13*TILE,y:5.5*TILE});
+      L.ents.push({type:'molecule',x:24*TILE,y:2.5*TILE});
+      L.ents.push({type:'exit',x:24*TILE,y:2*TILE});
+    }else if(lv===1){
+      L.spawn={x:2,y:16};
+      // Wind challenge
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      for(let c=8;c<12;c++)L.tiles[14][c]=2;
+      for(let c=8;c<12;c++)L.tiles[17][c]=1;
+      for(let c=14;c<20;c++)L.tiles[12][c]=1;
+      for(let c=14;c<20;c++){L.tiles[10][c]=1;}
+      for(let c=12;c<14;c++){L.tiles[11][c]=1;L.tiles[13][c]=1;}
+      for(let c=22;c<28;c++)L.tiles[9][c]=1;
+      for(let c=24;c<27;c++)L.tiles[9][c]=3;
+      for(let c=22;c<28;c++)L.tiles[5][c]=1;
+      for(let c=10;c<18;c++)L.tiles[3][c]=1;
+      L.ents.push({type:'fan',x:15*TILE,y:13*TILE,dir:'right'});
+      L.ents.push({type:'hotzone',x:22*TILE,y:5*TILE,w:6*TILE,h:4*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:13*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:7.5*TILE});
+      L.ents.push({type:'molecule',x:14*TILE,y:1.5*TILE});
+      L.ents.push({type:'exit',x:14*TILE,y:1*TILE});
+    }else if(lv===2){
+      L.spawn={x:2,y:16};
+      for(let c=3;c<8;c++)L.tiles[14][c]=1;
+      L.ents.push({type:'pressureplate',x:5*TILE,y:13*TILE,doorId:0});
+      L.ents.push({type:'door',x:9*TILE,y:12*TILE,id:0,h:2});
+      for(let c=9;c<16;c++)L.tiles[14][c]=1;
+      for(let c=16;c<20;c++)L.tiles[14][c]=3;
+      for(let c=20;c<28;c++)L.tiles[14][c]=1;
+      for(let c=20;c<28;c++)L.tiles[10][c]=1;
+      for(let c=22;c<26;c++)L.tiles[10][c]=3;
+      for(let c=12;c<20;c++)L.tiles[7][c]=1;
+      for(let c=15;c<18;c++)L.tiles[7][c]=3;
+      for(let c=20;c<28;c++)L.tiles[4][c]=1;
+      L.ents.push({type:'coldzone',x:9*TILE,y:11*TILE,w:8*TILE,h:3*TILE});
+      L.ents.push({type:'hotzone',x:20*TILE,y:10*TILE,w:8*TILE,h:4*TILE});
+      L.ents.push({type:'molecule',x:7*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:24*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:24*TILE,y:8.5*TILE});
+      L.ents.push({type:'molecule',x:16*TILE,y:5.5*TILE});
+      L.ents.push({type:'molecule',x:24*TILE,y:2.5*TILE});
+      L.ents.push({type:'exit',x:24*TILE,y:2*TILE});
+    }else if(lv===3){
+      L.spawn={x:2,y:16};
+      // Complex all-mechanics
+      for(let c=3;c<7;c++)L.tiles[14][c]=1;
+      for(let c=7;c<11;c++)L.tiles[14][c]=2;
+      for(let c=7;c<11;c++)L.tiles[17][c]=1;
+      for(let c=12;c<18;c++)L.tiles[15][c]=1;
+      for(let c=12;c<18;c++){L.tiles[13][c]=1;L.tiles[15][c]=1;}
+      for(let c=10;c<12;c++){L.tiles[14][c]=1;L.tiles[16][c]=1;}
+      L.ents.push({type:'pressureplate',x:14*TILE,y:12*TILE,doorId:0});
+      for(let c=19;c<26;c++)L.tiles[13][c]=1;
+      L.ents.push({type:'door',x:18*TILE,y:11*TILE,id:0,h:2});
+      for(let c=22;c<28;c++)L.tiles[9][c]=1;
+      for(let c=24;c<27;c++)L.tiles[9][c]=3;
+      for(let c=22;c<28;c++)L.tiles[5][c]=1;
+      for(let c=10;c<20;c++)L.tiles[3][c]=1;
+      L.ents.push({type:'fan',x:24*TILE,y:10*TILE,dir:'up'});
+      L.ents.push({type:'hotzone',x:22*TILE,y:5*TILE,w:7*TILE,h:4*TILE});
+      L.ents.push({type:'coldzone',x:1*TILE,y:12*TILE,w:6*TILE,h:6*TILE});
+      L.ents.push({type:'molecule',x:9*TILE,y:15.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:12.5*TILE});
+      L.ents.push({type:'molecule',x:22*TILE,y:11.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:3.5*TILE});
+      L.ents.push({type:'molecule',x:15*TILE,y:1.5*TILE});
+      L.ents.push({type:'exit',x:15*TILE,y:1*TILE});
+    }else{
+      L.spawn={x:2,y:16};
+      // FINAL LEVEL - everything
+      L.w=40;L.h=22;
+      // Re-init for larger level
+      L.tiles=[];
+      for(let r=0;r<L.h;r++){L.tiles[r]=[];for(let c=0;c<L.w;c++)L.tiles[r][c]=0}
+      for(let c=0;c<L.w;c++)L.tiles[L.h-1][c]=1;
+      for(let r=0;r<L.h;r++){L.tiles[r][0]=1;L.tiles[r][L.w-1]=1}
+      // Complex layout
+      for(let c=3;c<8;c++)L.tiles[18][c]=1;
+      for(let c=8;c<13;c++)L.tiles[18][c]=2;
+      for(let c=8;c<13;c++)L.tiles[L.h-1][c]=1;
+      for(let c=14;c<20;c++)L.tiles[16][c]=1;
+      for(let c=14;c<20;c++){L.tiles[14][c]=1;L.tiles[16][c]=1;}
+      for(let c=12;c<14;c++){L.tiles[15][c]=1;L.tiles[17][c]=1;}
+      L.ents.push({type:'pressureplate',x:16*TILE,y:13*TILE,doorId:0});
+      L.ents.push({type:'door',x:21*TILE,y:14*TILE,id:0,h:2});
+      for(let c=21;c<30;c++)L.tiles[16][c]=1;
+      for(let c=30;c<35;c++)L.tiles[16][c]=3;
+      for(let c=35;c<39;c++)L.tiles[16][c]=1;
+      for(let c=30;c<39;c++)L.tiles[12][c]=1;
+      for(let c=32;c<36;c++)L.tiles[12][c]=3;
+      for(let c=25;c<35;c++)L.tiles[8][c]=1;
+      for(let c=15;c<25;c++)L.tiles[6][c]=1;
+      for(let c=28;c<38;c++)L.tiles[4][c]=1;
+      L.ents.push({type:'fan',x:36*TILE,y:14*TILE,dir:'up'});
+      L.ents.push({type:'fan',x:30*TILE,y:10*TILE,dir:'right'});
+      L.ents.push({type:'hotzone',x:30*TILE,y:12*TILE,w:9*TILE,h:4*TILE});
+      L.ents.push({type:'coldzone',x:1*TILE,y:14*TILE,w:8*TILE,h:6*TILE});
+      L.ents.push({type:'molecule',x:10*TILE,y:19.5*TILE});
+      L.ents.push({type:'molecule',x:17*TILE,y:14.5*TILE});
+      L.ents.push({type:'molecule',x:25*TILE,y:14.5*TILE});
+      L.ents.push({type:'molecule',x:36*TILE,y:10.5*TILE});
+      L.ents.push({type:'molecule',x:34*TILE,y:6.5*TILE});
+      L.ents.push({type:'molecule',x:20*TILE,y:4.5*TILE});
+      L.ents.push({type:'molecule',x:33*TILE,y:2.5*TILE});
+      L.ents.push({type:'exit',x:33*TILE,y:2*TILE});
+    }
+  }
+  return L;
+}
+
+let currentLevelData=null;
+let levelComplete=false;
+let levelCompleteTimer=0;
+let activePlates={};
+let brokenTiles={};
+
+function loadLevel(w,lv){
+  currentWorld=w;currentLevel=lv;
+  const L=buildLevel(w,lv);
+  currentLevelData=L;
+  levelTiles=L.tiles;
+  levelW=L.w;levelH=L.h;
+  entities=L.ents.slice();
+  player.x=L.spawn.x*TILE;player.y=L.spawn.y*TILE;
+  player.vx=0;player.vy=0;player.state=1;player.onGround=false;
+  player.w=24;player.h=24;
+  collectedMolecules=0;
+  totalMolecules=entities.filter(e=>e.type==='molecule').length;
+  levelTimer=0;levelComplete=false;levelCompleteTimer=0;
+  massFlashTimer=0;stateTransTimer=0;
+  particles=[];
+  activePlates={};brokenTiles={};
+  doors=entities.filter(e=>e.type==='door').map(e=>({...e,open:false}));
+  gameState='PLAYING';
+}
+
+// Collision
+function getTile(r,c){
+  if(r<0||r>=levelH||c<0||c>=levelW)return 1;
+  const k=r+'_'+c;
+  if(brokenTiles[k])return 0;
+  return levelTiles[r][c];
+}
+
+function tileIsSolid(r,c,pstate){
+  const t=getTile(r,c);
+  if(t===1)return true;
+  if(t===2)return true; // fragile is solid until broken
+  if(t===3)return pstate!==2; // grate: solid unless steam
+  return false;
+}
+
+function checkCollision(x,y,w,h,pstate){
+  const l=Math.floor(x/TILE);
+  const r=Math.floor((x+w-1)/TILE);
+  const t=Math.floor(y/TILE);
+  const b=Math.floor((y+h-1)/TILE);
+  for(let row=t;row<=b;row++){
+    for(let col=l;col<=r;col++){
+      if(tileIsSolid(row,col,pstate))return true;
+    }
+  }
+  return false;
+}
+
+function checkDoorCollision(x,y,w,h){
+  for(const d of doors){
+    if(!d.open){
+      const dx=d.x,dy=d.y,dw=TILE,dh=d.h*TILE;
+      if(x<dx+dw&&x+w>dx&&y<dy+dh&&y+h>dy)return true;
+    }
+  }
+  return false;
+}
+
+// Get zone at position
+function getZone(x,y){
+  for(const e of entities){
+    if(e.type==='hotzone'&&x>=e.x&&x<e.x+e.w&&y>=e.y&&y<e.y+e.h)return 'hot';
+    if(e.type==='coldzone'&&x>=e.x&&x<e.x+e.w&&y>=e.y&&y<e.y+e.h)return 'cold';
+  }
+  return 'normal';
+}
+
+function switchState(newState){
+  if(newState===player.state)return;
+  const zone=getZone(player.x+player.w/2,player.y+player.h/2);
+  if(zone==='hot'&&newState===0)return;
+  if(zone==='cold'&&newState===2)return;
+  prevState=player.state;
+  player.state=newState;
+  stateTransTimer=0.3;
+  massFlashTimer=1.5;
+  massFlashMsg=MASS_MSGS[Math.floor(Math.random()*MASS_MSGS.length)];
+  if(newState===0){playSound('ice');player.w=26;player.h=26}
+  else if(newState===1){playSound('water');player.w=24;player.h=24}
+  else{playSound('steam');player.w=28;player.h=20}
+  // Burst particles
+  for(let i=0;i<15;i++){
+    const a=Math.random()*Math.PI*2;const sp=Math.random()*80+20;
+    const col=newState===0?'#B3E5FC':newState===1?'#2196F3':'#EEEEEE';
+    addParticle(player.x+player.w/2,player.y+player.h/2,Math.cos(a)*sp,Math.sin(a)*sp,0.5,col,3);
+  }
+}
+
+// Update
+function updatePlaying(dt){
+  if(levelComplete){
+    levelCompleteTimer+=dt;
+    if(levelCompleteTimer>3){
+      // Calculate stars
+      let stars=1;
+      if(collectedMolecules>=totalMolecules)stars=3;
+      else if(levelTimer<60)stars=2;
+      const key=currentWorld+'_'+currentLevel;
+      if(!saveData.stars[key]||saveData.stars[key]<stars)saveData.stars[key]=stars;
+      // Unlock next world
+      if(currentWorld<4){
+        const needed=WORLDS[currentWorld+1].unlock;
+        if(totalStars()>=needed)saveData.unlocked[currentWorld+1]=true;
+      }
+      writeSave();
+      gameState='LEVEL_COMPLETE';
+    }
+    return;
+  }
+  levelTimer+=dt;
+  if(massFlashTimer>0)massFlashTimer-=dt;
+  if(stateTransTimer>0)stateTransTimer-=dt;
+
+  // Zone forcing
+  const zone=getZone(player.x+player.w/2,player.y+player.h/2);
+  if(zone==='hot'&&player.state===0)switchState(2);
+  if(zone==='cold'&&player.state===2)switchState(0);
+
+  // Input
+  const left=keys['ArrowLeft']||keys['KeyA'];
+  const right=keys['ArrowRight']||keys['KeyD'];
+  const jump=keys['Space']||keys['ArrowUp']||keys['KeyW'];
+
+  // Touch input
+  let touchDx=0;let touchJumpNow=false;
+  for(const t of touches){
+    const dx=t.cx-t.sx;const dy=t.cy-t.sy;
+    if(t.sx<C.clientWidth*0.4){
+      if(Math.abs(dx)>15)touchDx=dx>0?1:-1;
+      if(dy<-25)touchJumpNow=true;
+    }
+  }
+
+  // State keys
+  if(keys['Digit1'])switchState(0);
+  if(keys['Digit2'])switchState(1);
+  if(keys['Digit3'])switchState(2);
+
+  // Movement params per state
+  let moveSpeed,jumpForce,grav,friction;
+  if(player.state===0){moveSpeed=150;jumpForce=-420;grav=GRAV*1.3;friction=0.96}
+  else if(player.state===1){moveSpeed=220;jumpForce=-460;grav=GRAV;friction=0.85}
+  else{moveSpeed=130;jumpForce=-350;grav=-200;friction=0.9} // steam floats up
+
+  // Water squish mechanic: detect narrow gaps and flatten
+  if(player.state===1){
+    // Check if player is trying to enter a 1-tile-high gap
+    const checkR=Math.floor((player.y+player.h/2)/TILE);
+    const ahead=right?Math.floor((player.x+player.w+4)/TILE):left?Math.floor((player.x-4)/TILE):-1;
+    let shouldSquish=false;
+    if(ahead>=0&&ahead<levelW){
+      // Is there a 1-tile gap? (solid above and below, air in middle)
+      const above=tileIsSolid(checkR-1,ahead,1);
+      const at=tileIsSolid(checkR,ahead,1);
+      const below=tileIsSolid(checkR+1,ahead,1);
+      if(!at&&above&&below)shouldSquish=true;
+      // Also check: solid above at current level, open at foot level
+      const above2=tileIsSolid(checkR,ahead,1);
+      const below2=tileIsSolid(checkR+1,ahead,1);
+      if(above2&&!below2)shouldSquish=true;
+    }
+    if(shouldSquish&&(left||right||touchDx!==0)){
+      player.squished=true;
+      player.squishAmt=Math.min(player.squishAmt+dt*6,1);
+    }else{
+      player.squishAmt=Math.max(player.squishAmt-dt*8,0);
+      if(player.squishAmt<0.05)player.squished=false;
+    }
+    // When squished, adjust hitbox: wider and shorter
+    if(player.squishAmt>0.1){
+      player.w=24+8*player.squishAmt;
+      player.h=24-10*player.squishAmt;
+    }else{
+      player.w=24;player.h=24;
+    }
+  }else{
+    player.squished=false;player.squishAmt=Math.max(player.squishAmt-dt*8,0);
+  }
+
+  // Horizontal
+  let ax=0;
+  if(left||touchDx<0)ax=-moveSpeed;
+  if(right||touchDx>0)ax=moveSpeed;
+
+  // Fan effects
+  for(const e of entities){
+    if(e.type==='fan'&&player.state===2){
+      const fx=player.x+player.w/2;const fy=player.y+player.h/2;
+      const dist=Math.sqrt((fx-e.x-16)**2+(fy-e.y-16)**2);
+      if(dist<200){
+        const strength=300*(1-dist/200);
+        if(e.dir==='up')player.vy-=strength*dt;
+        if(e.dir==='right')player.vx+=strength*dt;
+        if(e.dir==='left')player.vx-=strength*dt;
+      }
+    }
+  }
+
+  if(ax!==0)player.vx+=(ax-player.vx)*dt*8;
+  else player.vx*=friction;
+
+  // Gravity
+  player.vy+=grav*dt;
+
+  // Steam max rise speed
+  if(player.state===2){
+    if(player.vy<-150)player.vy=-150;
+    if(player.vy>100)player.vy=100;
+  }else{
+    if(player.vy>600)player.vy=600;
+  }
+
+  // Jump
+  if((jump||touchJumpNow)&&player.onGround){
+    player.vy=jumpForce;
+    player.onGround=false;
+    playSound('jump');
+    // Landing particle effect based on state
+    const cx=player.x+player.w/2;const cy=player.y+player.h;
+    for(let i=0;i<8;i++){
+      const col=player.state===0?'#B3E5FC':player.state===1?'#64B5F6':'#E0E0E0';
+      addParticle(cx+(Math.random()-0.5)*player.w,cy,(Math.random()-0.5)*60,-Math.random()*40,0.3,col,2);
+    }
+  }
+
+  // Move X
+  const newX=player.x+player.vx*dt;
+  if(!checkCollision(newX,player.y,player.w,player.h,player.state)&&!checkDoorCollision(newX,player.y,player.w,player.h)){
+    player.x=newX;
+  }else{player.vx=0}
+
+  // Move Y
+  const newY=player.y+player.vy*dt;
+  if(!checkCollision(player.x,newY,player.w,player.h,player.state)&&!checkDoorCollision(player.x,newY,player.w,player.h)){
+    player.y=newY;player.onGround=false;
+  }else{
+    // Landing
+    if(player.vy>0){
+      player.onGround=true;
+      // Check for fragile tile breaking (ICE state, falling)
+      if(player.state===0&&player.vy>200){
+        const footR=Math.floor((player.y+player.h+2)/TILE);
+        const lc=Math.floor(player.x/TILE);
+        const rc=Math.floor((player.x+player.w-1)/TILE);
+        for(let c=lc;c<=rc;c++){
+          if(getTile(footR,c)===2){
+            brokenTiles[footR+'_'+c]=true;
+            playSound('break');
+            for(let i=0;i<12;i++){
+              addParticle(c*TILE+16,footR*TILE+16,(Math.random()-0.5)*100,(Math.random()-0.5)*80,0.6,'#90A4AE',3);
+            }
+          }
+        }
+      }
+      // Landing effects
+      if(player.vy>100){
+        const cx=player.x+player.w/2;const cy=player.y+player.h;
+        for(let i=0;i<6;i++){
+          const col=player.state===0?'#B3E5FC':player.state===1?'#64B5F6':'#E0E0E0';
+          addParticle(cx+(Math.random()-0.5)*player.w,cy,(Math.random()-0.5)*50,-Math.random()*30,0.4,col,2);
+        }
+      }
+    }
+    player.vy=0;
+  }
+
+  // Steam ceiling check
+  if(player.state===2&&player.vy<0){
+    const headR=Math.floor(player.y/TILE);
+    if(headR<=0)player.vy=0;
+  }
+
+  // Clamp position
+  if(player.x<TILE)player.x=TILE;
+  if(player.x>levelW*TILE-TILE-player.w)player.x=levelW*TILE-TILE-player.w;
+  if(player.y<0){player.y=0;player.vy=0}
+  if(player.y>levelH*TILE){
+    // Respawn
+    player.x=currentLevelData.spawn.x*TILE;
+    player.y=currentLevelData.spawn.y*TILE;
+    player.vx=0;player.vy=0;
+  }
+
+  // Containers: water fills them and rises
+  for(const e of entities){
+    if(e.type==='container'){
+      const px=player.x+player.w/2;const py=player.y+player.h;
+      const inContainer=px>e.x&&px<e.x+e.w&&py>e.y&&py<e.y+e.h;
+      if(inContainer&&player.state===1){
+        // Water rises inside container
+        if(!e.fillLevel)e.fillLevel=0;
+        e.fillLevel=Math.min(e.fillLevel+dt*40,e.h-TILE);
+        // Push player up as water rises
+        const waterTop=e.y+e.h-e.fillLevel;
+        if(player.y+player.h>waterTop){
+          player.y=waterTop-player.h;
+          player.vy=Math.min(player.vy,0);
+          player.onGround=true;
+        }
+        // Water ripple particles
+        if(Math.random()<0.3){
+          addParticle(e.x+Math.random()*e.w,waterTop,(Math.random()-0.5)*20,-5,0.4,'#64B5F6',2);
+        }
+      }
+    }
+  }
+
+  // Pressure plates
+  for(const e of entities){
+    if(e.type==='pressureplate'){
+      const px=player.x+player.w/2;const py=player.y+player.h;
+      const onPlate=px>e.x&&px<e.x+TILE&&py>e.y&&py<e.y+TILE&&player.onGround&&player.state===0;
+      if(onPlate&&!activePlates[e.doorId]){
+        activePlates[e.doorId]=true;
+        playSound('plate');
+        const door=doors.find(d=>d.id===e.doorId);
+        if(door)door.open=true;
+      }
+    }
+  }
+
+  // Molecule collection
+  for(let i=entities.length-1;i>=0;i--){
+    const e=entities[i];
+    if(e.type==='molecule'){
+      const dx=player.x+player.w/2-(e.x+12);
+      const dy=player.y+player.h/2-(e.y+12);
+      if(Math.sqrt(dx*dx+dy*dy)<28){
+        entities.splice(i,1);
+        collectedMolecules++;
+        playSound('pickup');
+        for(let j=0;j<10;j++){
+          const a=Math.random()*Math.PI*2;
+          addParticle(e.x+12,e.y+12,Math.cos(a)*60,Math.sin(a)*60,0.5,'#FFD54F',3);
+        }
+      }
+    }
+  }
+
+  // Exit check
+  for(const e of entities){
+    if(e.type==='exit'){
+      const dx=player.x+player.w/2-(e.x+16);
+      const dy=player.y+player.h/2-(e.y+16);
+      if(Math.sqrt(dx*dx+dy*dy)<30&&collectedMolecules>=totalMolecules){
+        levelComplete=true;
+        playSound('complete');
+      }
+    }
+  }
+
+  // Camera
+  const targetCX=player.x+player.w/2-W/2;
+  const targetCY=player.y+player.h/2-H/2;
+  camX+=(targetCX-camX)*5*dt;
+  camY+=(targetCY-camY)*5*dt;
+  camX=Math.max(0,Math.min(camX,levelW*TILE-W));
+  camY=Math.max(0,Math.min(camY,levelH*TILE-H));
+
+  // Ambient particles
+  emitStateParticles(dt);
+  updateParticles(dt);
+}
+
+// DRAWING
+function drawBG(){
+  const bg=currentLevelData?currentLevelData.bg:'kitchen';
+  const time=performance.now()/1000;
+  if(bg==='kitchen'){
+    X.fillStyle='#FFF8E1';X.fillRect(0,0,W,H);
+    // Tile floor pattern
+    X.fillStyle='#FFE0B2';
+    for(let tx=0;tx<W;tx+=48){
+      for(let ty=Math.floor(H*0.7);ty<H;ty+=48){
+        if((Math.floor(tx/48)+Math.floor(ty/48))%2===0)
+          X.fillRect(tx,ty,48,48);
+      }
+    }
+    // Wood counter
+    X.fillStyle='#8D6E63';X.fillRect(0,H*0.65,W,8);
+    X.fillStyle='#D7CCC8';X.fillRect(0,H*0.55,W,H*0.1);
+    X.fillStyle='#BCAAA4';
+    for(let i=0;i<W;i+=80){X.fillRect(i,H*0.55,2,H*0.1)}
+    // Cabinet hint bg
+    X.fillStyle='#EFEBE9';X.fillRect(0,0,W,H*0.2);
+    X.strokeStyle='#D7CCC8';X.lineWidth=1;
+    for(let i=80;i<W;i+=160){X.strokeRect(i,10,120,H*0.18-15)}
+  }else if(bg==='arctic'){
+    const g=X.createLinearGradient(0,0,0,H);
+    g.addColorStop(0,'#BBDEFB');g.addColorStop(0.6,'#E1F5FE');g.addColorStop(1,'#E3F2FD');
+    X.fillStyle=g;X.fillRect(0,0,W,H);
+    // Distant mountains
+    X.fillStyle='#B3E5FC';
+    X.beginPath();X.moveTo(0,H*0.4);
+    for(let i=0;i<W;i+=60){X.lineTo(i,H*0.3+Math.sin(i*0.01)*40+Math.cos(i*0.007)*25)}
+    X.lineTo(W,H*0.5);X.lineTo(0,H*0.5);X.fill();
+    // Snow particles
+    X.fillStyle='rgba(255,255,255,0.6)';
+    for(let i=0;i<25;i++){
+      const sx=(i*73+time*15)%W;
+      const sy=(i*47+time*20+Math.sin(time+i*0.7)*15)%H;
+      X.beginPath();X.arc(sx,sy,1.5+Math.sin(time+i)*0.5,0,Math.PI*2);X.fill();
+    }
+  }else if(bg==='volcano'){
+    const g=X.createLinearGradient(0,0,0,H);
+    g.addColorStop(0,'#3E2723');g.addColorStop(0.7,'#4E342E');g.addColorStop(1,'#BF360C');
+    X.fillStyle=g;X.fillRect(0,0,W,H);
+    // Lava glow at bottom with animation
+    const lavaGlow=0.1+Math.sin(time*1.5)*0.05;
+    X.fillStyle=`rgba(255,110,64,${lavaGlow})`;X.fillRect(0,H*0.75,W,H*0.25);
+    // Lava bubbles
+    X.fillStyle='rgba(255,152,0,0.3)';
+    for(let i=0;i<8;i++){
+      const bx=(i*131+time*10)%W;
+      const by=H*0.88+Math.sin(time*2+i)*8;
+      const br=4+Math.sin(time*3+i*2)*2;
+      X.beginPath();X.arc(bx,by,br,0,Math.PI*2);X.fill();
+    }
+    // Ember particles
+    X.fillStyle='rgba(255,183,77,0.4)';
+    for(let i=0;i<6;i++){
+      const ex=(i*97+time*8)%W;
+      const ey=H-(time*25+i*50)%H;
+      X.beginPath();X.arc(ex,ey,1.5,0,Math.PI*2);X.fill();
+    }
+  }else if(bg==='lab'){
+    X.fillStyle='#ECEFF1';X.fillRect(0,0,W,H);
+    // Grid
+    X.strokeStyle='#E0E0E0';X.lineWidth=0.5;
+    for(let i=0;i<W;i+=32){X.beginPath();X.moveTo(i,0);X.lineTo(i,H);X.stroke()}
+    for(let i=0;i<H;i+=32){X.beginPath();X.moveTo(0,i);X.lineTo(W,i);X.stroke()}
+    // Lab equipment silhouettes in bg
+    X.fillStyle='rgba(176,190,197,0.15)';
+    // Beakers
+    X.fillRect(W*0.1,H*0.1,30,50);
+    X.beginPath();X.moveTo(W*0.1,H*0.1);X.lineTo(W*0.1+15,H*0.05);X.lineTo(W*0.1+30,H*0.1);X.fill();
+    X.fillRect(W*0.8,H*0.15,25,40);
+    // Test tubes
+    for(let i=0;i<4;i++){X.fillRect(W*0.6+i*12,H*0.08,6,35)}
+  }else if(bg==='cloud'){
+    const g=X.createLinearGradient(0,0,0,H);
+    g.addColorStop(0,'#64B5F6');g.addColorStop(0.4,'#81D4FA');g.addColorStop(1,'#E3F2FD');
+    X.fillStyle=g;X.fillRect(0,0,W,H);
+    // Layered clouds
+    X.fillStyle='rgba(255,255,255,0.25)';
+    for(let i=0;i<6;i++){
+      const cx=(i*200+time*8*(i%2===0?1:-0.5))%((W+300))-150;
+      const cy=30+i*55;const s=0.7+i*0.1;
+      X.beginPath();
+      X.arc(cx,cy,25*s,0,Math.PI*2);
+      X.arc(cx+22*s,cy-8*s,20*s,0,Math.PI*2);
+      X.arc(cx+44*s,cy,22*s,0,Math.PI*2);
+      X.arc(cx+18*s,cy+5*s,18*s,0,Math.PI*2);
+      X.fill();
+    }
+    // Sun glow
+    X.fillStyle='rgba(255,236,179,0.15)';
+    X.beginPath();X.arc(W*0.85,40,60+Math.sin(time)*5,0,Math.PI*2);X.fill();
+    X.fillStyle='rgba(255,241,118,0.1)';
+    X.beginPath();X.arc(W*0.85,40,35,0,Math.PI*2);X.fill();
+  }
+}
+
+function drawTiles(){
+  const startC=Math.max(0,Math.floor(camX/TILE));
+  const endC=Math.min(levelW,Math.ceil((camX+W)/TILE)+1);
+  const startR=Math.max(0,Math.floor(camY/TILE));
+  const endR=Math.min(levelH,Math.ceil((camY+H)/TILE)+1);
+  const bg=currentLevelData?currentLevelData.bg:'kitchen';
+
+  for(let r=startR;r<endR;r++){
+    for(let c=startC;c<endC;c++){
+      const t=getTile(r,c);
+      if(t===0)continue;
+      const tx=c*TILE-camX;const ty=r*TILE-camY;
+      if(t===1){
+        if(bg==='kitchen'){X.fillStyle='#8D6E63';X.fillRect(tx,ty,TILE,TILE);X.fillStyle='#795548';X.fillRect(tx+2,ty+2,TILE-4,TILE-4)}
+        else if(bg==='arctic'){X.fillStyle='#B3E5FC';X.fillRect(tx,ty,TILE,TILE);X.fillStyle='#81D4FA';X.fillRect(tx+1,ty+1,TILE-2,TILE-2)}
+        else if(bg==='volcano'){X.fillStyle='#5D4037';X.fillRect(tx,ty,TILE,TILE);X.fillStyle='#4E342E';X.fillRect(tx+1,ty+1,TILE-2,TILE-2)}
+        else if(bg==='lab'){X.fillStyle='#CFD8DC';X.fillRect(tx,ty,TILE,TILE);X.fillStyle='#B0BEC5';X.fillRect(tx+1,ty+1,TILE-2,TILE-2)}
+        else if(bg==='cloud'){X.fillStyle='#E0E0E0';X.fillRect(tx,ty,TILE,TILE);X.fillStyle='#F5F5F5';X.fillRect(tx+2,ty+2,TILE-4,TILE-4)}
+      }else if(t===2){
+        X.fillStyle='#FFAB91';X.fillRect(tx,ty,TILE,TILE);
+        X.strokeStyle='#FF8A65';X.lineWidth=1;
+        X.strokeRect(tx+2,ty+2,TILE-4,TILE-4);
+        // Crack lines
+        X.beginPath();X.moveTo(tx+4,ty+4);X.lineTo(tx+TILE-4,ty+TILE-4);X.stroke();
+        X.beginPath();X.moveTo(tx+TILE-4,ty+4);X.lineTo(tx+4,ty+TILE-4);X.stroke();
+      }else if(t===3){
+        // Grate
+        X.strokeStyle='#78909C';X.lineWidth=2;
+        for(let i=4;i<TILE;i+=8){
+          X.beginPath();X.moveTo(tx+i,ty);X.lineTo(tx+i,ty+TILE);X.stroke();
+        }
+        for(let i=4;i<TILE;i+=8){
+          X.beginPath();X.moveTo(tx,ty+i);X.lineTo(tx+TILE,ty+i);X.stroke();
+        }
+      }
+    }
+  }
+}
+
+function drawEntities(){
+  const time=performance.now()/1000;
+  for(const e of entities){
+    const ex=e.x-camX;const ey=e.y-camY;
+    if(ex<-50||ex>W+50||ey<-50||ey>H+50)continue;
+
+    if(e.type==='molecule'){
+      // Rotating H2O
+      X.save();
+      X.translate(ex+12,ey+12);
+      X.rotate(time*2);
+      // Oxygen
+      X.fillStyle='#F44336';X.beginPath();X.arc(0,0,8,0,Math.PI*2);X.fill();
+      // Hydrogens
+      X.fillStyle='#E0E0E0';
+      X.beginPath();X.arc(-10,-6,5,0,Math.PI*2);X.fill();
+      X.beginPath();X.arc(10,-6,5,0,Math.PI*2);X.fill();
+      // Glow
+      X.globalAlpha=0.3+Math.sin(time*3)*0.2;
+      X.fillStyle='#FFD54F';X.beginPath();X.arc(0,0,14,0,Math.PI*2);X.fill();
+      X.globalAlpha=1;
+      X.restore();
+    }
+    else if(e.type==='exit'){
+      const allCollected=collectedMolecules>=totalMolecules;
+      const pulse=Math.sin(time*3)*0.2+0.8;
+      X.save();X.translate(ex+16,ey+16);
+      if(allCollected){
+        // Active portal - bright swirling gold
+        for(let i=0;i<4;i++){
+          X.globalAlpha=0.4*pulse;
+          X.strokeStyle=['#FFD54F','#FFC107','#FF9800','#FFE082'][i];
+          X.lineWidth=2.5;
+          X.beginPath();
+          const startA=time*2+i*Math.PI/2;
+          X.arc(0,0,10+i*5+Math.sin(time*4+i)*3,startA,startA+Math.PI*1.5);
+          X.stroke();
+        }
+        // Glow
+        X.globalAlpha=0.15+Math.sin(time*4)*0.08;
+        X.fillStyle='#FFD54F';
+        X.beginPath();X.arc(0,0,22,0,Math.PI*2);X.fill();
+        // Arrow indicator
+        const bounce=Math.sin(time*5)*4;
+        X.globalAlpha=0.8;
+        X.fillStyle='#FFD54F';
+        X.beginPath();X.moveTo(0,-24+bounce);X.lineTo(7,-17+bounce);X.lineTo(-7,-17+bounce);X.closePath();X.fill();
+        // "EXIT" text
+        X.globalAlpha=0.7+Math.sin(time*4)*0.2;
+        X.fillStyle='#FFD54F';X.font='bold 9px sans-serif';X.textAlign='center';
+        X.fillText('EXIT',0,28);
+      }else{
+        // Inactive portal - dim gray
+        for(let i=0;i<3;i++){
+          X.globalAlpha=0.15;
+          X.strokeStyle='#9E9E9E';
+          X.lineWidth=1.5;
+          X.beginPath();X.arc(0,0,10+i*4,0,Math.PI*2);X.stroke();
+        }
+        // Lock hint
+        X.globalAlpha=0.5;X.fillStyle='#9E9E9E';X.font='8px sans-serif';X.textAlign='center';
+        X.fillText('Collect all H\u2082O',0,26);
+      }
+      X.globalAlpha=1;X.restore();
+    }
+    else if(e.type==='hotzone'){
+      X.fillStyle='rgba(255,87,34,0.12)';
+      X.fillRect(e.x-camX,e.y-camY,e.w,e.h);
+      // Heat shimmer
+      X.strokeStyle='rgba(255,87,34,0.25)';X.lineWidth=2;
+      X.setLineDash([4,4]);
+      X.strokeRect(e.x-camX,e.y-camY,e.w,e.h);
+      X.setLineDash([]);
+      // Shimmer particles
+      if(Math.random()<0.3){
+        addParticle(e.x+Math.random()*e.w,e.y+e.h,0,-30+Math.random()*-20,0.8,'rgba(255,87,34,0.3)',2);
+      }
+    }
+    else if(e.type==='coldzone'){
+      X.fillStyle='rgba(0,188,212,0.1)';
+      X.fillRect(e.x-camX,e.y-camY,e.w,e.h);
+      X.strokeStyle='rgba(0,188,212,0.3)';X.lineWidth=2;
+      X.setLineDash([6,3]);
+      X.strokeRect(e.x-camX,e.y-camY,e.w,e.h);
+      X.setLineDash([]);
+      // Frost particles
+      if(Math.random()<0.2){
+        addParticle(e.x+Math.random()*e.w,e.y+Math.random()*e.h,(Math.random()-0.5)*10,(Math.random()-0.5)*10,1,'rgba(179,229,252,0.5)',2);
+      }
+    }
+    else if(e.type==='fan'){
+      // Fan housing
+      X.fillStyle='#78909C';
+      X.fillRect(ex,ey,TILE,TILE);
+      X.fillStyle='#546E7A';
+      X.beginPath();X.arc(ex+16,ey+16,10,0,Math.PI*2);X.fill();
+      // Spinning blades
+      X.save();X.translate(ex+16,ey+16);X.rotate(time*8);
+      X.fillStyle='#B0BEC5';
+      for(let i=0;i<4;i++){
+        X.save();X.rotate(i*Math.PI/2);
+        X.fillRect(-2,-10,4,10);
+        X.restore();
+      }
+      X.restore();
+      // Wind lines
+      X.strokeStyle='rgba(144,164,174,0.4)';X.lineWidth=1;
+      for(let i=0;i<3;i++){
+        const offset=((time*50+i*20)%60);
+        X.beginPath();
+        if(e.dir==='up'){X.moveTo(ex+8+i*8,ey-offset);X.lineTo(ex+8+i*8,ey-offset-10)}
+        else if(e.dir==='right'){X.moveTo(ex+TILE+offset,ey+8+i*8);X.lineTo(ex+TILE+offset+10,ey+8+i*8)}
+        else if(e.dir==='left'){X.moveTo(ex-offset,ey+8+i*8);X.lineTo(ex-offset-10,ey+8+i*8)}
+        X.stroke();
+      }
+    }
+    else if(e.type==='pressureplate'){
+      const active=activePlates[e.doorId];
+      X.fillStyle=active?'#66BB6A':'#FFA726';
+      X.fillRect(ex,ey+TILE-8,TILE,8);
+      X.fillStyle=active?'#43A047':'#FB8C00';
+      X.fillRect(ex+2,ey+TILE-6,TILE-4,4);
+      if(!active){
+        // Ice icon hint
+        X.fillStyle='rgba(179,229,252,0.6)';
+        X.font='10px sans-serif';X.textAlign='center';
+        X.fillText('ICE',ex+TILE/2,ey+TILE-12);
+      }
+    }
+    else if(e.type==='container'){
+      // Glass container
+      const cx=e.x-camX;const cy=e.y-camY;
+      X.strokeStyle='rgba(176,190,197,0.8)';X.lineWidth=3;
+      // Left wall
+      X.beginPath();X.moveTo(cx,cy);X.lineTo(cx,cy+e.h);X.stroke();
+      // Right wall
+      X.beginPath();X.moveTo(cx+e.w,cy);X.lineTo(cx+e.w,cy+e.h);X.stroke();
+      // Bottom
+      X.beginPath();X.moveTo(cx,cy+e.h);X.lineTo(cx+e.w,cy+e.h);X.stroke();
+      // Water fill
+      if(e.fillLevel&&e.fillLevel>0){
+        const waterH=e.fillLevel;
+        const waterY=cy+e.h-waterH;
+        X.fillStyle='rgba(33,150,243,0.35)';
+        X.fillRect(cx+2,waterY,e.w-4,waterH-1);
+        // Ripple at top
+        X.strokeStyle='rgba(100,181,246,0.5)';X.lineWidth=1;
+        X.beginPath();
+        for(let px=cx+2;px<cx+e.w-2;px+=4){
+          const ry=waterY+Math.sin(px*0.1+time*4)*2;
+          if(px===cx+2)X.moveTo(px,ry);else X.lineTo(px,ry);
+        }
+        X.stroke();
+      }
+      // Glass highlight
+      X.fillStyle='rgba(255,255,255,0.15)';
+      X.fillRect(cx+2,cy,4,e.h);
+    }
+    else if(e.type==='hint'){
+      X.fillStyle='rgba(255,255,255,0.85)';
+      X.font='bold 11px sans-serif';X.textAlign='center';
+      const tw=X.measureText(e.text).width;
+      X.fillStyle='rgba(0,0,0,0.6)';
+      X.fillRect(ex-tw/2-6,ey-8,tw+12,20);
+      X.fillStyle='#fff';
+      X.fillText(e.text,ex,ey+6);
+    }
+  }
+
+  // Doors
+  for(const d of doors){
+    if(!d.open){
+      const dx=d.x-camX;const dy=d.y-camY;
+      X.fillStyle='#FF7043';
+      X.fillRect(dx,dy,TILE,d.h*TILE);
+      X.fillStyle='#E64A19';
+      X.fillRect(dx+4,dy+4,TILE-8,d.h*TILE-8);
+      // Lock icon
+      X.fillStyle='#FFF';X.font='bold 14px sans-serif';X.textAlign='center';
+      X.fillText('\u2716',dx+TILE/2,dy+d.h*TILE/2+5);
+    }
+  }
+}
+
+function drawPlayer(){
+  const px=player.x-camX;const py=player.y-camY;
+  const t=performance.now()/1000;
+  const transAlpha=stateTransTimer>0?0.5+stateTransTimer:1;
+
+  X.save();
+  X.globalAlpha=transAlpha;
+
+  if(player.state===0){
+    // ICE - angular crystal
+    X.fillStyle='#B3E5FC';
+    X.beginPath();
+    X.moveTo(px+player.w/2,py);
+    X.lineTo(px+player.w,py+player.h*0.3);
+    X.lineTo(px+player.w*0.85,py+player.h);
+    X.lineTo(px+player.w*0.15,py+player.h);
+    X.lineTo(px,py+player.h*0.3);
+    X.closePath();X.fill();
+    X.strokeStyle='#81D4FA';X.lineWidth=2;X.stroke();
+    // Inner crystal lines
+    X.strokeStyle='rgba(255,255,255,0.5)';X.lineWidth=1;
+    X.beginPath();X.moveTo(px+player.w/2,py+3);X.lineTo(px+player.w*0.3,py+player.h*0.6);X.stroke();
+    X.beginPath();X.moveTo(px+player.w/2,py+3);X.lineTo(px+player.w*0.7,py+player.h*0.6);X.stroke();
+    // Sparkles
+    X.fillStyle='#fff';
+    for(let i=0;i<3;i++){
+      const sx=px+5+Math.sin(t*3+i*2)*8;
+      const sy=py+5+Math.cos(t*2+i*3)*6;
+      X.beginPath();X.arc(sx+player.w/2-5,sy,1.5,0,Math.PI*2);X.fill();
+    }
+  }else if(player.state===1){
+    // WATER - blobby circle (squishes flat when in narrow gaps)
+    X.fillStyle='#2196F3';
+    X.beginPath();
+    const cx=px+player.w/2;const cy=py+player.h/2;
+    const sq=player.squishAmt||0;
+    const rx=player.w/2+sq*4; // wider when squished
+    const ry=player.h/2; // shorter when squished
+    for(let a=0;a<Math.PI*2;a+=0.15){
+      const wobble=Math.sin(a*3+t*5)*(2-sq*1.5);
+      const bx=cx+Math.cos(a)*(rx+wobble);
+      const by=cy+Math.sin(a)*(ry+wobble*0.5);
+      if(a===0)X.moveTo(bx,by);else X.lineTo(bx,by);
+    }
+    X.closePath();X.fill();
+    // Highlight
+    X.fillStyle='rgba(100,181,246,0.6)';
+    X.beginPath();X.ellipse(cx-2,cy-ry*0.3,4,3-sq*1.5,0,0,Math.PI*2);X.fill();
+    // Ripple
+    X.strokeStyle='rgba(255,255,255,0.3)';X.lineWidth=1;
+    X.beginPath();X.ellipse(cx,cy,rx+3+Math.sin(t*6)*2,ry+2+Math.sin(t*6),0,0,Math.PI*2);X.stroke();
+    // Squish indicator
+    if(sq>0.3){
+      X.fillStyle='rgba(255,255,255,0.2)';
+      X.fillRect(px,py+player.h-2,player.w,2);
+    }
+  }else{
+    // STEAM - wispy cloud
+    X.fillStyle='rgba(245,245,245,0.7)';
+    const cx=px+player.w/2;const cy=py+player.h/2;
+    for(let i=0;i<4;i++){
+      const ox=Math.sin(t*2+i*1.5)*5;
+      const oy=Math.cos(t*1.5+i*2)*3;
+      X.beginPath();X.arc(cx+ox-6+i*5,cy+oy,7+Math.sin(t*3+i)*2,0,Math.PI*2);X.fill();
+    }
+    X.fillStyle='rgba(255,255,255,0.5)';
+    X.beginPath();X.arc(cx,cy-3,5,0,Math.PI*2);X.fill();
+  }
+
+  // Eyes (all states)
+  const cx=px+player.w/2;const cy=py+player.h/2-2;
+  X.fillStyle=player.state===2?'rgba(66,66,66,0.7)':'#333';
+  X.beginPath();X.arc(cx-4,cy,2,0,Math.PI*2);X.fill();
+  X.beginPath();X.arc(cx+4,cy,2,0,Math.PI*2);X.fill();
+
+  X.restore();
+}
+
+function drawHUD(){
+  // Mass counter - the core science lesson
+  const massText=`MASS: ${MASS_STR}`;
+  const flashText=massFlashTimer>0?massFlashMsg:massText;
+  X.font='bold 18px "Segoe UI",sans-serif';X.textAlign='center';
+  const mw=X.measureText(flashText).width;
+  // Background pill
+  const pulse=massFlashTimer>0?Math.sin(massFlashTimer*8)*0.1:0;
+  X.fillStyle=`rgba(0,0,0,${0.45+pulse})`;
+  const pillX=W/2-mw/2-16;const pillW=mw+32;
+  X.beginPath();X.moveTo(pillX+14,6);X.lineTo(pillX+pillW-14,6);
+  X.quadraticCurveTo(pillX+pillW,6,pillX+pillW,20);
+  X.quadraticCurveTo(pillX+pillW,34,pillX+pillW-14,34);
+  X.lineTo(pillX+14,34);X.quadraticCurveTo(pillX,34,pillX,20);
+  X.quadraticCurveTo(pillX,6,pillX+14,6);X.fill();
+  // Text with glow on flash
+  if(massFlashTimer>0){
+    X.shadowColor='#FFEB3B';X.shadowBlur=12;
+    X.fillStyle='#FFEB3B';
+  }else{
+    X.fillStyle='#fff';
+  }
+  X.fillText(flashText,W/2,28);
+  X.shadowBlur=0;
+
+  // State indicator with icon
+  const stateNames=['ICE','WATER','STEAM'];
+  const stateColors=['#B3E5FC','#2196F3','#F5F5F5'];
+  const stateEmoji=['\u2744','\u{1F4A7}','\u2601'];
+  X.fillStyle='rgba(0,0,0,0.4)';X.fillRect(8,6,100,32);
+  X.fillStyle=stateColors[player.state];
+  X.font='bold 15px sans-serif';X.textAlign='left';
+  X.fillText(`${stateEmoji[player.state]} ${stateNames[player.state]}`,16,27);
+  // Level info
+  X.fillStyle='rgba(0,0,0,0.3)';X.fillRect(8,42,100,20);
+  X.fillStyle='rgba(255,255,255,0.6)';X.font='11px sans-serif';X.textAlign='left';
+  X.fillText(`W${currentWorld+1}-L${currentLevel+1}: ${WORLDS[currentWorld].name}`,14,56);
+
+  // State buttons (mobile-friendly)
+  const btnY=H-50;const btnW=60;const btnH=36;
+  for(let i=0;i<3;i++){
+    const bx=W/2-95+i*70;
+    X.fillStyle=player.state===i?'rgba(255,255,255,0.4)':'rgba(0,0,0,0.3)';
+    X.fillRect(bx,btnY,btnW,btnH);
+    X.strokeStyle=stateColors[i];X.lineWidth=2;X.strokeRect(bx,btnY,btnW,btnH);
+    X.fillStyle=stateColors[i];X.font='bold 12px sans-serif';X.textAlign='center';
+    X.fillText(`${i+1}:${stateNames[i]}`,bx+btnW/2,btnY+22);
+  }
+
+  // Molecules counter with mini molecule icons
+  X.fillStyle='rgba(0,0,0,0.4)';X.fillRect(W-130,6,122,32);
+  X.fillStyle='#FFD54F';X.font='bold 15px sans-serif';X.textAlign='right';
+  X.fillText(`H\u2082O: ${collectedMolecules} / ${totalMolecules}`,W-16,27);
+  // Mini molecule dots
+  for(let i=0;i<totalMolecules;i++){
+    const mx=W-125+i*14;const my=34;
+    X.fillStyle=i<collectedMolecules?'#FFD54F':'rgba(255,255,255,0.2)';
+    X.beginPath();X.arc(mx,my+6,4,0,Math.PI*2);X.fill();
+  }
+
+  // Timer
+  const mins=Math.floor(levelTimer/60);
+  const secs=Math.floor(levelTimer%60);
+  X.fillStyle='rgba(0,0,0,0.3)';X.fillRect(W/2-40,H-28,80,22);
+  X.fillStyle='rgba(255,255,255,0.7)';X.font='12px sans-serif';X.textAlign='center';
+  X.fillText(`${mins}:${secs.toString().padStart(2,'0')}`,W/2,H-12);
+
+  // Level complete overlay with animation
+  if(levelComplete){
+    const ct=levelCompleteTimer;
+    // Fade in background
+    const fadeAlpha=Math.min(ct*2,0.7);
+    X.fillStyle=`rgba(0,0,0,${fadeAlpha})`;X.fillRect(0,0,W,H);
+
+    if(ct>0.3){
+      // Title slides in
+      const titleY=H/2-50+Math.max(0,(0.8-ct)*120);
+      X.fillStyle='#FFD54F';X.font='bold 36px sans-serif';X.textAlign='center';
+      X.fillText('LEVEL COMPLETE!',W/2,titleY);
+
+      // Mass conservation message
+      if(ct>0.6){
+        const msgAlpha=Math.min(1,(ct-0.6)*3);
+        X.globalAlpha=msgAlpha;
+        X.fillStyle='#fff';X.font='18px sans-serif';
+        X.fillText(`Mass conserved: ${MASS_STR} - Always!`,W/2,titleY+42);
+        X.globalAlpha=1;
+      }
+
+      // Stars animate in one by one
+      let stars=1;
+      if(collectedMolecules>=totalMolecules)stars=3;
+      else if(levelTimer<60)stars=2;
+      if(ct>1.0){
+        X.font='42px sans-serif';
+        for(let i=0;i<3;i++){
+          const starTime=ct-1.0-i*0.3;
+          if(starTime>0){
+            const bounce=starTime<0.2?1+Math.sin(starTime*15)*0.3*(0.2-starTime)/0.2:1;
+            X.save();
+            X.translate(W/2-50+i*50,titleY+90);
+            X.scale(bounce,bounce);
+            X.fillStyle=i<stars?'#FFD54F':'#555';
+            X.fillText('\u2605',0,0);
+            X.restore();
+          }
+        }
+      }
+
+      // Celebration particles
+      if(ct>1.0&&Math.random()<0.25){
+        const px=W*0.2+Math.random()*W*0.6;
+        const celebColors=['#FFD54F','#FF9800','#4CAF50','#2196F3','#E91E63','#9C27B0'];
+        addParticle(px,H*0.3,(Math.random()-0.5)*60,-Math.random()*80-20,1.2,
+          celebColors[Math.floor(Math.random()*celebColors.length)],3+Math.random()*2);
+      }
+    }
+  }
+}
+
+// UI Screens
+function drawTitle(){
+  const t=performance.now()/1000;
+  // BG
+  const g=X.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#0D47A1');g.addColorStop(0.5,'#1565C0');g.addColorStop(1,'#0D47A1');
+  X.fillStyle=g;X.fillRect(0,0,W,H);
+
+  // Floating particles
+  X.fillStyle='rgba(255,255,255,0.15)';
+  for(let i=0;i<30;i++){
+    const px=(i*53+t*20)%W;
+    const py=(i*37+Math.sin(t+i)*30)%H;
+    X.beginPath();X.arc(px,py,2+Math.sin(t+i)*1,0,Math.PI*2);X.fill();
+  }
+
+  // Title
+  X.fillStyle='#fff';X.font='bold 56px "Segoe UI",sans-serif';X.textAlign='center';
+  X.fillText('PHASE SHIFT',W/2,H*0.3);
+
+  // Animated H2O cycling through states
+  const statePhase=Math.floor(t)%3;
+  const cx=W/2;const cy=H*0.48;
+  if(statePhase===0){
+    // Ice
+    X.fillStyle='#B3E5FC';
+    X.beginPath();X.moveTo(cx,cy-20);X.lineTo(cx+20,cy-5);X.lineTo(cx+15,cy+20);X.lineTo(cx-15,cy+20);X.lineTo(cx-20,cy-5);X.closePath();X.fill();
+    X.fillStyle='#81D4FA';X.font='14px sans-serif';X.fillText('ICE',cx,cy+40);
+  }else if(statePhase===1){
+    X.fillStyle='#2196F3';
+    X.beginPath();X.arc(cx,cy,18+Math.sin(t*5)*3,0,Math.PI*2);X.fill();
+    X.fillStyle='#64B5F6';X.font='14px sans-serif';X.fillText('WATER',cx,cy+40);
+  }else{
+    X.fillStyle='rgba(245,245,245,0.7)';
+    for(let i=0;i<3;i++){X.beginPath();X.arc(cx-12+i*12+Math.sin(t*2+i)*3,cy+Math.cos(t*1.5+i)*3,10,0,Math.PI*2);X.fill()}
+    X.fillStyle='#E0E0E0';X.font='14px sans-serif';X.fillText('STEAM',cx,cy+40);
+  }
+
+  // Mass always shown
+  X.fillStyle='#FFD54F';X.font='bold 20px sans-serif';
+  X.fillText(`MASS: ${MASS_STR}`,W/2,H*0.58);
+  X.fillStyle='rgba(255,215,79,0.5)';X.font='12px sans-serif';
+  X.fillText('(it never changes)',W/2,H*0.62);
+
+  // Subtitle
+  X.fillStyle='rgba(255,255,255,0.7)';X.font='16px sans-serif';
+  X.fillText('Conservation of Mass Puzzle Platformer',W/2,H*0.69);
+  X.fillStyle='rgba(255,255,255,0.4)';X.font='13px sans-serif';
+  X.fillText('NGSS 5-PS1-2: Conservation of Matter',W/2,H*0.73);
+
+  // Prompt
+  X.fillStyle='rgba(255,255,255,'+(.5+Math.sin(t*3)*.3)+')';
+  X.font='18px sans-serif';
+  X.fillText('Click or Tap to Start',W/2,H*0.85);
+}
+
+function drawHowTo(){
+  X.fillStyle='#1A237E';X.fillRect(0,0,W,H);
+  X.fillStyle='#fff';X.font='bold 30px sans-serif';X.textAlign='center';
+  X.fillText('HOW TO PLAY',W/2,50);
+
+  const states=[
+    {name:'ICE (Press 1)',color:'#B3E5FC',desc:'Heavy - breaks fragile floors\nActivates pressure plates\nSlides on surfaces'},
+    {name:'WATER (Press 2)',color:'#2196F3',desc:'Default state - balanced\nSqueezes through narrow gaps\nMedium speed & jump'},
+    {name:'STEAM (Press 3)',color:'#F5F5F5',desc:'Floats upward\nPasses through grates\nPushed by fans'}
+  ];
+
+  const colW=W/3.5;
+  states.forEach((s,i)=>{
+    const sx=W/2-colW*1.5+i*colW+colW*0.25;
+    const sy=90;
+    X.fillStyle='rgba(255,255,255,0.1)';
+    X.fillRect(sx,sy,colW*0.9,H-140);
+    X.fillStyle=s.color;X.font='bold 16px sans-serif';
+    X.fillText(s.name,sx+colW*0.45,sy+25);
+    // Draw mini character
+    const mx=sx+colW*0.45;const my=sy+60;
+    if(i===0){X.fillStyle='#B3E5FC';X.beginPath();X.moveTo(mx,my-12);X.lineTo(mx+12,my);X.lineTo(mx+8,my+12);X.lineTo(mx-8,my+12);X.lineTo(mx-12,my);X.closePath();X.fill()}
+    if(i===1){X.fillStyle='#2196F3';X.beginPath();X.arc(mx,my,12,0,Math.PI*2);X.fill()}
+    if(i===2){X.fillStyle='rgba(245,245,245,0.7)';X.beginPath();X.arc(mx-8,my,8,0,Math.PI*2);X.fill();X.beginPath();X.arc(mx+8,my,8,0,Math.PI*2);X.fill()}
+
+    X.fillStyle='rgba(255,255,255,0.8)';X.font='12px sans-serif';
+    s.desc.split('\n').forEach((line,li)=>{
+      X.fillText(line,sx+colW*0.45,sy+95+li*18);
+    });
+  });
+
+  // Controls section
+  X.fillStyle='rgba(255,255,255,0.08)';
+  X.fillRect(W*0.1,H-100,W*0.8,55);
+  X.fillStyle='rgba(255,255,255,0.7)';X.font='13px sans-serif';
+  X.fillText('Move: Arrow Keys / WASD  |  Jump: Space / W / Up  |  Phase Shift: 1, 2, 3',W/2,H-75);
+  X.fillStyle='rgba(255,255,255,0.5)';X.font='12px sans-serif';
+  X.fillText('Touch: Left side to move, swipe up to jump | Tap state buttons at bottom',W/2,H-58);
+  X.fillStyle='#FFD54F';X.font='bold 16px sans-serif';
+  X.fillText(`The key lesson: Mass is ALWAYS ${MASS_STR} - no matter the state!`,W/2,H-35);
+
+  X.fillStyle='rgba(255,255,255,'+(0.5+Math.sin(performance.now()/300)*0.3)+')';
+  X.font='16px sans-serif';
+  X.fillText('Click to Continue',W/2,H-12);
+}
+
+function drawWorldSelect(){
+  X.fillStyle='#0D47A1';X.fillRect(0,0,W,H);
+  X.fillStyle='#fff';X.font='bold 28px sans-serif';X.textAlign='center';
+  X.fillText('SELECT WORLD',W/2,40);
+
+  const worldColors=['#FFF8E1','#E1F5FE','#3E2723','#FAFAFA','#81D4FA'];
+  const worldIcons=['Kitchen','Arctic','Volcano','Lab','Cloud City'];
+
+  for(let i=0;i<5;i++){
+    const bx=W/2-280+i*120;const by=H/2-50;
+    const unlocked=saveData.unlocked[i];
+    X.fillStyle=unlocked?worldColors[i]:'#333';
+    X.fillRect(bx,by,100,100);
+    X.strokeStyle=unlocked?'#FFD54F':'#555';X.lineWidth=2;
+    X.strokeRect(bx,by,100,100);
+    X.fillStyle=unlocked?(i===2||i===3?'#fff':'#333'):'#666';
+    X.font='bold 13px sans-serif';
+    X.fillText(worldIcons[i],bx+50,by+55);
+    X.font='11px sans-serif';
+    X.fillText(`W${i+1}`,bx+50,by+75);
+    // Stars
+    const ws=worldStars(i);
+    X.fillStyle=unlocked?'#FFD54F':'#555';X.font='11px sans-serif';
+    X.fillText(`\u2605 ${ws}/15`,bx+50,by+92);
+    if(!unlocked){
+      X.fillStyle='rgba(0,0,0,0.6)';X.fillRect(bx,by,100,100);
+      X.fillStyle='#aaa';X.font='11px sans-serif';
+      X.fillText(`Need ${WORLDS[i].unlock}\u2605`,bx+50,by+55);
+    }
+  }
+
+  X.fillStyle='rgba(255,255,255,0.6)';X.font='14px sans-serif';
+  X.fillText(`Total Stars: ${totalStars()}`,W/2,H-20);
+}
+
+function clickWorldSelect(rx,ry){
+  for(let i=0;i<5;i++){
+    const bx=W/2-280+i*120;const by=H/2-50;
+    if(rx>bx&&rx<bx+100&&ry>by&&ry<by+100&&saveData.unlocked[i]){
+      currentWorld=i;
+      gameState='LEVEL_SELECT';
+      return;
+    }
+  }
+}
+
+function drawLevelSelect(){
+  const bg=WORLDS[currentWorld].bg;
+  if(bg==='kitchen'){X.fillStyle='#FFF8E1'}
+  else if(bg==='arctic'){X.fillStyle='#E1F5FE'}
+  else if(bg==='volcano'){X.fillStyle='#3E2723'}
+  else if(bg==='lab'){X.fillStyle='#FAFAFA'}
+  else{X.fillStyle='#81D4FA'}
+  X.fillRect(0,0,W,H);
+
+  const dark=bg==='volcano';
+  X.fillStyle=dark?'#fff':'#333';X.font='bold 28px sans-serif';X.textAlign='center';
+  X.fillText(`World ${currentWorld+1}: ${WORLDS[currentWorld].name}`,W/2,45);
+  X.fillStyle=dark?'rgba(255,255,255,0.6)':'rgba(0,0,0,0.5)';X.font='14px sans-serif';
+  X.fillText(WORLDS[currentWorld].desc,W/2,70);
+
+  for(let i=0;i<5;i++){
+    const bx=W/2-250+i*110;const by=H/2-40;
+    const key=currentWorld+'_'+i;
+    const stars=saveData.stars[key]||0;
+    const playable=i===0||saveData.stars[currentWorld+'_'+(i-1)]>0;
+
+    X.fillStyle=playable?(dark?'rgba(255,255,255,0.15)':'rgba(0,0,0,0.08)'):'rgba(0,0,0,0.3)';
+    X.fillRect(bx,by,90,90);
+    X.strokeStyle=stars>0?'#FFD54F':(playable?(dark?'#aaa':'#666'):'#444');
+    X.lineWidth=2;X.strokeRect(bx,by,90,90);
+
+    X.fillStyle=playable?(dark?'#fff':'#333'):'#666';
+    X.font='bold 24px sans-serif';
+    X.fillText(`${i+1}`,bx+45,by+40);
+
+    // Stars
+    X.font='18px sans-serif';
+    for(let s=0;s<3;s++){
+      X.fillStyle=s<stars?'#FFD54F':'rgba(128,128,128,0.4)';
+      X.fillText('\u2605',bx+20+s*20,by+70);
+    }
+    if(!playable){
+      X.fillStyle='rgba(0,0,0,0.5)';X.fillRect(bx,by,90,90);
+      X.fillStyle='#888';X.font='20px sans-serif';X.fillText('\u{1F512}',bx+45,by+50);
+    }
+  }
+
+  // Back button
+  X.fillStyle=dark?'rgba(255,255,255,0.2)':'rgba(0,0,0,0.1)';
+  X.fillRect(20,H-50,80,36);
+  X.fillStyle=dark?'#fff':'#333';X.font='14px sans-serif';X.textAlign='center';
+  X.fillText('\u2190 Back',60,H-28);
+}
+
+function clickLevelSelect(rx,ry){
+  // Back
+  if(rx>20&&rx<100&&ry>H-50&&ry<H-14){gameState='WORLD_SELECT';return}
+  for(let i=0;i<5;i++){
+    const bx=W/2-250+i*110;const by=H/2-40;
+    const playable=i===0||saveData.stars[currentWorld+'_'+(i-1)]>0;
+    if(rx>bx&&rx<bx+90&&ry>by&&ry<by+90&&playable){
+      loadLevel(currentWorld,i);
+      return;
+    }
+  }
+}
+
+function drawLevelComplete(){
+  const bg=WORLDS[currentWorld].bg;
+  X.fillStyle=bg==='volcano'?'#3E2723':'#1A237E';X.fillRect(0,0,W,H);
+
+  X.fillStyle='#FFD54F';X.font='bold 36px sans-serif';X.textAlign='center';
+  X.fillText('LEVEL COMPLETE!',W/2,H*0.2);
+
+  const key=currentWorld+'_'+currentLevel;
+  const stars=saveData.stars[key]||0;
+  X.font='48px sans-serif';
+  for(let i=0;i<3;i++){
+    X.fillStyle=i<stars?'#FFD54F':'#555';
+    X.fillText('\u2605',W/2-60+i*60,H*0.38);
+  }
+
+  X.fillStyle='#fff';X.font='18px sans-serif';
+  X.fillText(`Mass conserved throughout: ${MASS_STR}`,W/2,H*0.5);
+  X.fillText(`Molecules: ${collectedMolecules}/${totalMolecules}`,W/2,H*0.56);
+  const mins=Math.floor(levelTimer/60);const secs=Math.floor(levelTimer%60);
+  X.fillText(`Time: ${mins}:${secs.toString().padStart(2,'0')}`,W/2,H*0.62);
+  // Science fact
+  const factIdx=(currentWorld*5+currentLevel)%SCIENCE_FACTS.length;
+  X.fillStyle='#B3E5FC';X.font='italic 13px sans-serif';
+  X.fillText(SCIENCE_FACTS[factIdx],W/2,H*0.68);
+
+  // Buttons
+  const btnW=140;const btnH=44;
+  // Next Level
+  const hasNext=currentLevel<4||(currentLevel===4&&currentWorld<4);
+  if(hasNext){
+    X.fillStyle='#4CAF50';X.fillRect(W/2+10,H*0.72,btnW,btnH);
+    X.fillStyle='#fff';X.font='bold 16px sans-serif';
+    X.fillText('Next Level \u2192',W/2+10+btnW/2,H*0.72+28);
+  }
+  // Replay
+  X.fillStyle='#2196F3';X.fillRect(W/2-btnW-10,H*0.72,btnW,btnH);
+  X.fillStyle='#fff';X.font='bold 16px sans-serif';
+  X.fillText('\u21BA Replay',W/2-btnW/2-10,H*0.72+28);
+  // World Select
+  X.fillStyle='#78909C';X.fillRect(W/2-btnW/2,H*0.84,btnW,btnH);
+  X.fillStyle='#fff';X.font='bold 14px sans-serif';
+  X.fillText('World Select',W/2,H*0.84+28);
+}
+
+function clickLevelComplete(rx,ry){
+  const btnW=140;const btnH=44;
+  // Replay
+  if(rx>W/2-btnW-10&&rx<W/2-10&&ry>H*0.72&&ry<H*0.72+btnH){
+    loadLevel(currentWorld,currentLevel);return;
+  }
+  // Next
+  const hasNext=currentLevel<4||(currentLevel===4&&currentWorld<4);
+  if(hasNext&&rx>W/2+10&&rx<W/2+10+btnW&&ry>H*0.72&&ry<H*0.72+btnH){
+    if(currentLevel<4){
+      loadLevel(currentWorld,currentLevel+1);
+    }else{
+      // Completed last level of world
+      gameState='WORLD_COMPLETE';
+    }
+    return;
+  }
+  // World select
+  if(rx>W/2-btnW/2&&rx<W/2+btnW/2&&ry>H*0.84&&ry<H*0.84+btnH){
+    gameState='WORLD_SELECT';return;
+  }
+}
+
+function clickPlaying(rx,ry){
+  if(levelComplete)return;
+  // State buttons
+  const btnY=H-50;const btnW=60;const btnH=36;
+  for(let i=0;i<3;i++){
+    const bx=W/2-95+i*70;
+    if(rx>bx&&rx<bx+btnW&&ry>btnY&&ry<btnY+btnH){
+      switchState(i);return;
+    }
+  }
+  // Menu button during play (top-right)
+  if(rx>W-60&&rx<W-10&&ry>42&&ry<68){
+    gameState='LEVEL_SELECT';return;
+  }
+  // Restart button
+  if(rx>W-60&&rx<W-10&&ry>72&&ry<96){
+    loadLevel(currentWorld,currentLevel);return;
+  }
+}
+
+function drawWorldComplete(){
+  const t=performance.now()/1000;
+  const g=X.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#1A237E');g.addColorStop(1,'#283593');
+  X.fillStyle=g;X.fillRect(0,0,W,H);
+  // Celebration particles
+  X.fillStyle='rgba(255,215,79,0.3)';
+  for(let i=0;i<20;i++){
+    const px=(i*71+t*30)%W;
+    const py=(i*43+Math.sin(t*2+i)*40)%H;
+    X.beginPath();X.arc(px,py,3+Math.sin(t+i)*2,0,Math.PI*2);X.fill();
+  }
+  X.fillStyle='#FFD54F';X.font='bold 34px sans-serif';X.textAlign='center';
+  X.fillText(`World ${currentWorld+1} Complete!`,W/2,H*0.25);
+  X.fillStyle='#fff';X.font='22px sans-serif';
+  X.fillText(WORLDS[currentWorld].name,W/2,H*0.33);
+  // Stars earned
+  const ws=worldStars(currentWorld);
+  X.font='44px sans-serif';
+  for(let i=0;i<15;i++){
+    X.fillStyle=i<ws?'#FFD54F':'#444';
+    const sx=W/2-7*18+i*18;
+    X.fillText('\u2605',sx,H*0.48);
+  }
+  X.fillStyle='#fff';X.font='18px sans-serif';
+  X.fillText(`${ws}/15 Stars`,W/2,H*0.56);
+  // Mass reminder
+  X.fillStyle='#B3E5FC';X.font='italic 16px sans-serif';
+  X.fillText(`Through every phase change: mass was always ${MASS_STR}`,W/2,H*0.64);
+  // Next world hint
+  if(currentWorld<4){
+    const nextNeeded=WORLDS[currentWorld+1].unlock;
+    const have=totalStars();
+    if(have>=nextNeeded){
+      X.fillStyle='#66BB6A';X.font='bold 16px sans-serif';
+      X.fillText(`World ${currentWorld+2}: ${WORLDS[currentWorld+1].name} is now unlocked!`,W/2,H*0.74);
+    }else{
+      X.fillStyle='#FFA726';X.font='15px sans-serif';
+      X.fillText(`Need ${nextNeeded} total stars to unlock ${WORLDS[currentWorld+1].name} (you have ${have})`,W/2,H*0.74);
+    }
+  }else{
+    X.fillStyle='#FFD54F';X.font='bold 18px sans-serif';
+    X.fillText('Congratulations! You completed all worlds!',W/2,H*0.74);
+  }
+  X.fillStyle='rgba(255,255,255,'+(0.5+Math.sin(t*3)*0.3)+')';
+  X.font='16px sans-serif';
+  X.fillText('Click to continue',W/2,H*0.88);
+}
+
+// Resize
+function resize(){
+  DPR=Math.min(window.devicePixelRatio||1,2);
+  W=window.innerWidth;H=window.innerHeight;
+  C.width=W*DPR;C.height=H*DPR;
+  X.setTransform(DPR,0,0,DPR,0,0);
+}
+window.addEventListener('resize',resize);
+resize();
+
+// Main loop
+let lastTime=0;
+function loop(ts){
+  const dt=Math.min((ts-lastTime)/1000,0.05);
+  lastTime=ts;
+
+  X.clearRect(0,0,W,H);
+
+  if(gameState==='TITLE')drawTitle();
+  else if(gameState==='HOW_TO')drawHowTo();
+  else if(gameState==='WORLD_SELECT')drawWorldSelect();
+  else if(gameState==='LEVEL_SELECT')drawLevelSelect();
+  else if(gameState==='LEVEL_COMPLETE')drawLevelComplete();
+  else if(gameState==='WORLD_COMPLETE'){drawWorldComplete()}
+  else if(gameState==='PLAYING'){
+    updatePlaying(dt);
+    drawBG();
+    drawTiles();
+    drawEntities();
+    drawParticles();
+    drawPlayer();
+    drawHUD();
+    // Pause/back button
+    X.fillStyle='rgba(0,0,0,0.3)';X.fillRect(W-60,42,50,22);
+    X.fillStyle='#fff';X.font='11px sans-serif';X.textAlign='center';
+    X.fillText('Menu',W-35,57);
+    // Restart button
+    X.fillStyle='rgba(0,0,0,0.3)';X.fillRect(W-60,68,50,22);
+    X.fillStyle='#fff';X.font='11px sans-serif';
+    X.fillText('\u21BA Retry',W-35,83);
+  }
+
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+})();
+</script>
+</body>
+</html>

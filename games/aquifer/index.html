@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>AQUIFER — Water Distribution Puzzle</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a1628;overflow:hidden;font-family:'Segoe UI',system-ui,sans-serif;color:#e0e8f0;user-select:none;width:100vw;height:100vh}
+canvas{display:block;position:absolute;top:0;left:0;touch-action:none}
+#orient{display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;color:#4FC3F7;font-size:20px;text-align:center;padding:20px}
+#orient svg{width:60px;height:60px;margin-bottom:16px;animation:rot 2s ease-in-out infinite}
+@keyframes rot{0%,100%{transform:rotate(0deg)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}}
+</style>
+</head>
+<body>
+<canvas id="gc"></canvas>
+<div id="orient"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>Please rotate your device to landscape</div>
+<script>
+// ===================================================================
+// AQUIFER — Water Distribution Puzzle / Strategy Game
+// NGSS 5-ESS2-2: Freshwater Distribution & Scarcity
+// ===================================================================
+
+(function(){
+"use strict";
+
+// --- CANVAS SETUP ---
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+let W, H, DPR, TILE;
+
+function resize(){
+  DPR = window.devicePixelRatio || 1;
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * DPR;
+  canvas.height = H * DPR;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  TILE = Math.floor(Math.min((W * 0.65) / 20, (H * 0.85) / 15));
+}
+resize();
+window.addEventListener('resize', resize);
+
+// --- COLORS ---
+const COL = {
+  ocean: '#1B3A5C', oceanDeep: '#122940', oceanWave: '#245078',
+  land: '#D7CCC8', landGreen: '#A5D6A7', landDark: '#B8AFA8',
+  ice: '#E3F2FD', iceShine: '#FFFFFF', iceShadow: '#B3D9F2',
+  mountain: '#78909C', mountainDark: '#546E7A', mountainSnow: '#CFD8DC',
+  fresh: '#4FC3F7', freshDark: '#0288D1', freshLight: '#81D4FA',
+  city: '#546E7A', cityWindow: '#FFF9C4', cityRoof: '#37474F',
+  cloud: '#ECEFF1', cloudShadow: '#B0BEC5',
+  rain: '#42A5F5',
+  desert: '#FFB74D', desertDark: '#F09020',
+  channel: '#29B6F6',
+  uiNavy: '#0D47A1', uiPanel: 'rgba(10,22,40,0.92)', uiText: '#E0E8F0',
+  uiCyan: '#00E5FF', uiWhite: '#FFFFFF',
+  tempCool: '#42A5F5', tempHot: '#EF5350',
+  happy: '#66BB6A', warn: '#FFA726', danger: '#EF5350',
+  bg: '#0a1628'
+};
+
+// --- AUDIO ENGINE ---
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+let masterGain = null;
+let audioReady = false;
+
+function initAudio(){
+  if(audioReady) return;
+  try{
+    audioCtx = new AudioCtx();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.3;
+    masterGain.connect(audioCtx.destination);
+    audioReady = true;
+  }catch(e){}
+}
+
+function playNoise(dur, freq, vol){
+  if(!audioReady) return;
+  const bufSize = audioCtx.sampleRate * dur;
+  const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+  const data = buf.getChannelData(0);
+  for(let i=0;i<bufSize;i++) data[i] = (Math.random()*2-1);
+  const src = audioCtx.createBufferSource();
+  src.buffer = buf;
+  const filt = audioCtx.createBiquadFilter();
+  filt.type = 'bandpass';
+  filt.frequency.value = freq;
+  filt.Q.value = 1.5;
+  const g = audioCtx.createGain();
+  g.gain.setValueAtTime(vol, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+  src.connect(filt);
+  filt.connect(g);
+  g.connect(masterGain);
+  src.start();
+  src.stop(audioCtx.currentTime + dur);
+}
+
+function playTone(freq, dur, vol, type){
+  if(!audioReady) return;
+  const osc = audioCtx.createOscillator();
+  osc.type = type || 'sine';
+  osc.frequency.value = freq;
+  const g = audioCtx.createGain();
+  g.gain.setValueAtTime(vol, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+  osc.connect(g);
+  g.connect(masterGain);
+  osc.start();
+  osc.stop(audioCtx.currentTime + dur);
+}
+
+function sndRain(){ playNoise(0.15, 4000, 0.08); }
+function sndFlow(){ playTone(120, 0.5, 0.04, 'sine'); }
+function sndCityHappy(){ playTone(660, 0.12, 0.1, 'sine'); setTimeout(()=>playTone(880, 0.15, 0.08, 'sine'), 80); }
+function sndWarning(){ playTone(220, 0.3, 0.12, 'square'); }
+function sndIceCrack(){ playNoise(0.4, 800, 0.15); playTone(100, 0.3, 0.1, 'sawtooth'); }
+function sndCloudDrag(){ playNoise(0.2, 1200, 0.06); }
+function sndLevelComplete(){
+  const notes = [523, 659, 784, 1047];
+  notes.forEach((n,i) => setTimeout(()=> playTone(n, 0.25, 0.1, 'sine'), i*120));
+}
+function sndClick(){ playTone(440, 0.06, 0.08, 'sine'); }
+function sndBuild(){ playTone(330, 0.1, 0.08, 'triangle'); setTimeout(()=>playTone(440, 0.12, 0.06, 'triangle'), 60); }
+
+// --- PARTICLE SYSTEM ---
+const MAX_PARTICLES = 400;
+let particles = [];
+
+function addParticle(x, y, vx, vy, life, color, size, type){
+  if(particles.length >= MAX_PARTICLES) return;
+  particles.push({x, y, vx, vy, life, maxLife: life, color, size, type: type||'dot'});
+}
+
+function updateParticles(dt){
+  for(let i = particles.length - 1; i >= 0; i--){
+    const p = particles[i];
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.life -= dt;
+    if(p.type === 'rain') p.vy += 300 * dt;
+    if(p.life <= 0) particles.splice(i, 1);
+  }
+}
+
+function drawParticles(){
+  for(const p of particles){
+    const alpha = Math.max(0, p.life / p.maxLife);
+    ctx.globalAlpha = alpha;
+    if(p.type === 'rain'){
+      ctx.strokeStyle = p.color;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(p.x, p.y);
+      ctx.lineTo(p.x + p.vx * 0.02, p.y + p.vy * 0.02);
+      ctx.stroke();
+    } else if(p.type === 'evap'){
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size * alpha, 0, Math.PI * 2);
+      ctx.fill();
+    } else if(p.type === 'sparkle'){
+      ctx.fillStyle = p.color;
+      const s = p.size * (0.5 + Math.sin(p.life * 15) * 0.5);
+      ctx.fillRect(p.x - s/2, p.y - s/2, s, s);
+    } else if(p.type === 'splash'){
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size * (1 - alpha) * 2, 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+
+// --- GAME STATE ---
+const STATES = {
+  TITLE: 'TITLE', HOWTO: 'HOWTO', LEVEL_SELECT: 'LEVEL_SELECT',
+  LEVEL_INTRO: 'LEVEL_INTRO', PLAYING: 'PLAYING',
+  LEVEL_COMPLETE: 'LEVEL_COMPLETE', GAME_OVER: 'GAME_OVER'
+};
+
+let state = STATES.TITLE;
+let stateTime = 0;
+let currentLevel = 0;
+let animTime = 0;
+
+// Tile types
+const T = { OCEAN: 0, LAND: 1, ICE: 2, MOUNTAIN: 3, CITY: 4, RIVER: 5, RESERVOIR: 6, DESERT: 7 };
+
+// --- MAP DATA ---
+let mapW = 20, mapH = 15;
+let map = [];
+let mapOffX = 0, mapOffY = 0;
+
+// --- ENTITIES ---
+let clouds = [];
+let cities = [];
+let reservoirs = [];
+let channels = [];
+let iceChunks = [];
+
+// --- GAME VARS ---
+let freshWater = 50; // the usable freshwater amount (out of 100 representing 1%)
+let totalRainOnLand = 0;
+let totalRainTotal = 0;
+let temperature = 0.3; // 0=cold, 1=hot
+let score = 0;
+let levelTime = 0;
+let usedIce = false;
+let cloudSpawnTimer = 0;
+let gameSpeed = 1;
+let warningTimer = 0;
+
+// --- DRAG STATE ---
+let dragging = null; // {type: 'cloud'|'channel', cloudIdx, path: [{x,y}]}
+let mouseX = 0, mouseY = 0;
+let mouseDown = false;
+let hoverTile = null;
+
+// --- LEVEL DEFS ---
+const LEVELS = [
+  {
+    name: "Coastal Paradise",
+    desc: "Two small cities near the coast. Gentle rains, easy water access.\nLearn to direct clouds and build channels.",
+    tempStart: 0.2, tempRate: 0.002, cloudRate: 3.5,
+    cities: [{tx:5, ty:7, name:"Bayview", demand:0.8},{tx:8, ty:4, name:"Shorecrest", demand:0.7}],
+    reservoirs: [{tx:4, ty:5},{tx:7, ty:6}],
+    iceChunks: [{tx:3, ty:0},{tx:5, ty:0},{tx:7, ty:0}],
+    winTime: 180, targetSatisfaction: 60,
+    generate: function(m){
+      for(let y=0;y<mapH;y++) for(let x=0;x<mapW;x++){
+        if(x < 3 || (x < 5 && y > 10) || (x >= 17)) m[y][x] = T.OCEAN;
+        else if(y <= 1) m[y][x] = T.ICE;
+        else if(y >= 13) m[y][x] = T.ICE;
+        else if(x >= 13 && x <= 15 && y >= 5 && y <= 9) m[y][x] = T.MOUNTAIN;
+        else m[y][x] = T.LAND;
+      }
+      m[5][6] = T.RIVER; m[6][6] = T.RIVER; m[7][6] = T.RIVER; m[8][6] = T.RIVER;
+    }
+  },
+  {
+    name: "Inland Valley",
+    desc: "Three cities far from the ocean. Rivers help, but you need\nlonger channels. Plan your water routes carefully!",
+    tempStart: 0.3, tempRate: 0.003, cloudRate: 3.0,
+    cities: [{tx:8, ty:7, name:"Milltown", demand:1.0},{tx:12, ty:4, name:"Dusty Creek", demand:0.9},{tx:10, ty:11, name:"Greendale", demand:0.85}],
+    reservoirs: [{tx:6, ty:6},{tx:9, ty:9},{tx:14, ty:5}],
+    iceChunks: [{tx:4, ty:0},{tx:6, ty:0},{tx:8, ty:0},{tx:10, ty:0}],
+    winTime: 210, targetSatisfaction: 55,
+    generate: function(m){
+      for(let y=0;y<mapH;y++) for(let x=0;x<mapW;x++){
+        if(x < 2 || x >= 18) m[y][x] = T.OCEAN;
+        else if(y <= 1) m[y][x] = T.ICE;
+        else if(y >= 13) m[y][x] = T.ICE;
+        else if((x >= 15 && x <= 17 && y >= 3 && y <= 6)||(x >= 3 && x <= 4 && y >= 8 && y <= 11)) m[y][x] = T.MOUNTAIN;
+        else m[y][x] = T.LAND;
+      }
+      for(let y=3;y<=11;y++) m[y][7] = T.RIVER;
+      m[8][8] = T.RIVER; m[9][9] = T.RIVER;
+    }
+  },
+  {
+    name: "Arctic Challenge",
+    desc: "Cities near the ice caps. Melting ice gives quick water,\nbut at what cost? Think long-term!",
+    tempStart: 0.25, tempRate: 0.004, cloudRate: 2.5,
+    cities: [{tx:7, ty:3, name:"Frostburg", demand:1.1},{tx:12, ty:3, name:"Glacierton", demand:1.0},{tx:10, ty:10, name:"Tundra City", demand:0.9}],
+    reservoirs: [{tx:6, ty:5},{tx:13, ty:5},{tx:9, ty:8}],
+    iceChunks: [{tx:3, ty:0},{tx:5, ty:0},{tx:7, ty:0},{tx:9, ty:0},{tx:11, ty:0},{tx:13, ty:0},{tx:15, ty:0},{tx:5, ty:14},{tx:7, ty:14},{tx:9, ty:14},{tx:11, ty:14},{tx:13, ty:14}],
+    winTime: 200, targetSatisfaction: 50,
+    generate: function(m){
+      for(let y=0;y<mapH;y++) for(let x=0;x<mapW;x++){
+        if(x < 2 || x >= 18) m[y][x] = T.OCEAN;
+        else if(y <= 2) m[y][x] = T.ICE;
+        else if(y >= 12) m[y][x] = T.ICE;
+        else if(x >= 15 && y >= 5 && y <= 8) m[y][x] = T.MOUNTAIN;
+        else m[y][x] = T.LAND;
+      }
+      for(let y=3;y<=9;y++) m[y][10] = T.RIVER;
+    }
+  },
+  {
+    name: "Desert Drought",
+    desc: "Four cities in scorching desert. Extreme evaporation,\nminimal rain. Every drop counts!",
+    tempStart: 0.5, tempRate: 0.005, cloudRate: 2.0,
+    cities: [{tx:5, ty:5, name:"Oasis Town", demand:1.2},{tx:13, ty:5, name:"Mirage City", demand:1.1},{tx:8, ty:10, name:"Dustwell", demand:1.0},{tx:15, ty:10, name:"Sunstone", demand:1.0}],
+    reservoirs: [{tx:4, ty:7},{tx:10, ty:7},{tx:14, ty:8},{tx:7, ty:3}],
+    iceChunks: [{tx:4, ty:0},{tx:8, ty:0},{tx:12, ty:0}],
+    winTime: 180, targetSatisfaction: 45,
+    generate: function(m){
+      for(let y=0;y<mapH;y++) for(let x=0;x<mapW;x++){
+        if(x < 2 || x >= 18) m[y][x] = T.OCEAN;
+        else if(y <= 0) m[y][x] = T.ICE;
+        else if(y >= 14) m[y][x] = T.ICE;
+        else if((x>=9&&x<=11&&y>=2&&y<=4)) m[y][x] = T.MOUNTAIN;
+        else m[y][x] = T.DESERT;
+      }
+      m[6][6] = T.RIVER; m[7][6] = T.RIVER; m[8][7] = T.RIVER;
+      m[6][12] = T.RIVER; m[7][12] = T.RIVER;
+      // A few oasis land tiles
+      for(let dy=-1;dy<=1;dy++) for(let dx=-1;dx<=1;dx++){
+        const ty=7+dy, tx=6+dx;
+        if(ty>=0&&ty<mapH&&tx>=0&&tx<mapW&&m[ty][tx]===T.DESERT) m[ty][tx]=T.LAND;
+      }
+    }
+  },
+  {
+    name: "Mega-City",
+    desc: "Five cities, all biomes, rising temperatures.\nThe ultimate water management challenge!",
+    tempStart: 0.3, tempRate: 0.006, cloudRate: 2.8,
+    cities: [{tx:4, ty:4, name:"Harbor City", demand:1.3},{tx:9, ty:3, name:"Mountain View", demand:1.1},{tx:14, ty:4, name:"Eastport", demand:1.0},{tx:7, ty:10, name:"Central", demand:1.4},{tx:13, ty:11, name:"Drylands", demand:1.2}],
+    reservoirs: [{tx:5, ty:6},{tx:10, ty:6},{tx:15, ty:6},{tx:8, ty:8},{tx:12, ty:9}],
+    iceChunks: [{tx:3, ty:0},{tx:6, ty:0},{tx:9, ty:0},{tx:12, ty:0},{tx:15, ty:0},{tx:5, ty:14},{tx:8, ty:14},{tx:11, ty:14},{tx:14, ty:14}],
+    winTime: 240, targetSatisfaction: 50,
+    generate: function(m){
+      for(let y=0;y<mapH;y++) for(let x=0;x<mapW;x++){
+        if(x < 2 || x >= 18) m[y][x] = T.OCEAN;
+        else if(y <= 1) m[y][x] = T.ICE;
+        else if(y >= 13) m[y][x] = T.ICE;
+        else if(x>=10&&x<=12&&y>=2&&y<=5) m[y][x] = T.MOUNTAIN;
+        else if(x>=12&&y>=9&&y<=12) m[y][x] = T.DESERT;
+        else m[y][x] = T.LAND;
+      }
+      for(let y=3;y<=11;y++) m[y][8] = T.RIVER;
+      m[6][9]=T.RIVER; m[7][9]=T.RIVER;
+      for(let y=5;y<=8;y++) m[y][14] = T.RIVER;
+    }
+  }
+];
+
+// --- SAVE/LOAD ---
+let saveData = {unlocked: 1, scores: [0,0,0,0,0], stars: [0,0,0,0,0]};
+
+function loadSave(){
+  try{
+    const d = JSON.parse(localStorage.getItem('aquifer_save'));
+    if(d && d.unlocked) saveData = d;
+  }catch(e){}
+}
+
+function saveSave(){
+  try{ localStorage.setItem('aquifer_save', JSON.stringify(saveData)); }catch(e){}
+}
+
+loadSave();
+
+// --- LEVEL SETUP ---
+function setupLevel(idx){
+  currentLevel = idx;
+  const lv = LEVELS[idx];
+  map = [];
+  for(let y=0;y<mapH;y++){
+    map[y] = [];
+    for(let x=0;x<mapW;x++) map[y][x] = T.OCEAN;
+  }
+  lv.generate(map);
+
+  // Place reservoirs on map
+  lv.reservoirs.forEach(r => {
+    if(r.ty>=0&&r.ty<mapH&&r.tx>=0&&r.tx<mapW) map[r.ty][r.tx] = T.RESERVOIR;
+  });
+
+  // Place cities on map
+  lv.cities.forEach(c => {
+    if(c.ty>=0&&c.ty<mapH&&c.tx>=0&&c.tx<mapW) map[c.ty][c.tx] = T.CITY;
+  });
+
+  // Init entities
+  clouds = [];
+  cities = lv.cities.map(c => ({
+    tx: c.tx, ty: c.ty, name: c.name, demand: c.demand,
+    satisfaction: 80, supply: 0, popGrowth: 1, warnPlayed: false
+  }));
+  reservoirs = lv.reservoirs.map(r => ({
+    tx: r.tx, ty: r.ty, water: 40, maxWater: 100
+  }));
+  channels = [];
+  iceChunks = lv.iceChunks.map(ic => ({tx: ic.tx, ty: ic.ty, intact: true, meltTimer: 0}));
+
+  temperature = lv.tempStart;
+  freshWater = 50;
+  totalRainOnLand = 0;
+  totalRainTotal = 0;
+  score = 0;
+  levelTime = 0;
+  usedIce = false;
+  cloudSpawnTimer = 0;
+  warningTimer = 0;
+  gameSpeed = 1;
+  dragging = null;
+  particles = [];
+
+  // Calc map offset for centering
+  mapOffX = Math.floor((W - mapW * TILE) / 2);
+  mapOffY = Math.floor((H - mapH * TILE) / 2);
+}
+
+// --- HELPER: tile to pixel ---
+function tileToPixel(tx, ty){
+  return { x: mapOffX + tx * TILE, y: mapOffY + ty * TILE };
+}
+
+function pixelToTile(px, py){
+  return { tx: Math.floor((px - mapOffX) / TILE), ty: Math.floor((py - mapOffY) / TILE) };
+}
+
+function inMap(tx, ty){ return tx >= 0 && tx < mapW && ty >= 0 && ty < mapH; }
+
+function tileIsLand(tx, ty){
+  if(!inMap(tx,ty)) return false;
+  const t = map[ty][tx];
+  return t === T.LAND || t === T.DESERT || t === T.RIVER || t === T.RESERVOIR || t === T.CITY;
+}
+
+// --- CLOUD ENTITY ---
+function spawnCloud(){
+  const side = Math.random();
+  let cx, cy;
+  if(side < 0.5){
+    // from left ocean
+    cx = -1;
+    cy = 2 + Math.floor(Math.random() * (mapH - 4));
+  } else {
+    // from right ocean
+    cx = mapW;
+    cy = 2 + Math.floor(Math.random() * (mapH - 4));
+  }
+  clouds.push({
+    x: cx, y: cy, capacity: 30 + Math.random() * 20,
+    maxCapacity: 50, path: null, pathIdx: 0,
+    vx: (side < 0.5 ? 0.3 : -0.3) + (Math.random() - 0.5) * 0.1,
+    vy: (Math.random() - 0.5) * 0.15,
+    raining: false, selected: false, size: 1.5 + Math.random() * 0.5
+  });
+}
+
+// --- UPDATE FUNCTIONS ---
+function updateClouds(dt){
+  const lv = LEVELS[currentLevel];
+  cloudSpawnTimer += dt;
+  if(cloudSpawnTimer > lv.cloudRate && clouds.length < 8){
+    spawnCloud();
+    cloudSpawnTimer = 0;
+  }
+
+  for(let i = clouds.length - 1; i >= 0; i--){
+    const c = clouds[i];
+
+    if(c.path && c.path.length > 0){
+      // Follow path
+      const target = c.path[c.pathIdx];
+      const dx = target.tx + 0.5 - c.x;
+      const dy = target.ty + 0.5 - c.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      const speed = 2.5;
+      if(dist < 0.3){
+        c.pathIdx++;
+        if(c.pathIdx >= c.path.length){
+          c.path = null;
+          c.pathIdx = 0;
+          c.raining = false;
+        }
+      } else {
+        c.x += (dx / dist) * speed * dt;
+        c.y += (dy / dist) * speed * dt;
+      }
+      // Rain while following path
+      c.raining = true;
+      const rainRate = 8 * dt;
+      c.capacity -= rainRate;
+
+      // Check if raining over land
+      const rtx = Math.floor(c.x);
+      const rty = Math.floor(c.y);
+      totalRainTotal += rainRate;
+
+      if(tileIsLand(rtx, rty)){
+        totalRainOnLand += rainRate;
+        // Fill nearby reservoirs
+        for(const res of reservoirs){
+          const d = Math.abs(res.tx - rtx) + Math.abs(res.ty - rty);
+          if(d <= 3){
+            res.water = Math.min(res.maxWater, res.water + rainRate * (1 - d * 0.25));
+          }
+        }
+        // Rain particles on land
+        if(Math.random() < 0.4){
+          const pp = tileToPixel(rtx, rty);
+          addParticle(
+            pp.x + Math.random() * TILE, pp.y,
+            (Math.random()-0.5)*10, 80 + Math.random()*40,
+            0.6, COL.rain, 2, 'rain'
+          );
+          if(Math.random() < 0.05) sndRain();
+        }
+      } else {
+        // Rain on ocean - splash (wasted)
+        if(Math.random() < 0.3){
+          const pp = tileToPixel(rtx, rty);
+          addParticle(
+            pp.x + Math.random() * TILE, pp.y + Math.random() * TILE,
+            (Math.random()-0.5)*20, -20-Math.random()*20,
+            0.4, '#ffffff', 3, 'splash'
+          );
+        }
+      }
+
+      if(c.capacity <= 0){
+        clouds.splice(i, 1);
+        continue;
+      }
+    } else {
+      // Drift randomly
+      c.x += c.vx * dt;
+      c.y += c.vy * dt;
+      c.vy += (Math.random() - 0.5) * 0.1 * dt;
+      // Random rain if not directed
+      if(Math.random() < 0.01 * dt){
+        c.capacity -= 1;
+        totalRainTotal += 1;
+        // Mostly wasted on ocean since drifting
+        const rtx = Math.floor(c.x);
+        const rty = Math.floor(c.y);
+        if(tileIsLand(rtx, rty)){
+          totalRainOnLand += 1;
+          for(const res of reservoirs){
+            const d = Math.abs(res.tx - rtx) + Math.abs(res.ty - rty);
+            if(d <= 2) res.water = Math.min(res.maxWater, res.water + 0.5);
+          }
+        }
+      }
+    }
+
+    // Remove if off map
+    if(c.x < -3 || c.x > mapW + 3 || c.y < -3 || c.y > mapH + 3){
+      clouds.splice(i, 1);
+    }
+  }
+}
+
+function updateReservoirs(dt){
+  // Evaporation based on temperature
+  const evapRate = temperature * 3.0 * dt;
+  let totalResWater = 0;
+  let totalResMax = 0;
+  for(const res of reservoirs){
+    res.water = Math.max(0, res.water - evapRate);
+    totalResWater += res.water;
+    totalResMax += res.maxWater;
+    // Evaporation particles
+    if(temperature > 0.4 && res.water > 5 && Math.random() < temperature * 0.3){
+      const pp = tileToPixel(res.tx, res.ty);
+      addParticle(
+        pp.x + TILE/2 + (Math.random()-0.5)*TILE*0.6,
+        pp.y + TILE*0.3,
+        (Math.random()-0.5)*8, -15 - Math.random()*10,
+        0.8, 'rgba(200,230,255,0.5)', 2, 'evap'
+      );
+    }
+  }
+  // Update freshWater display based on total reservoir levels
+  freshWater = totalResMax > 0 ? (totalResWater / totalResMax) * 100 : 0;
+}
+
+function updateChannels(dt){
+  // Water flows from reservoir to city through channels
+  for(const ch of channels){
+    const res = reservoirs.find(r => r.tx === ch.fromTx && r.ty === ch.fromTy);
+    const city = cities.find(c => c.tx === ch.toTx && c.ty === ch.toTy);
+    if(res && city && res.water > 0){
+      const flowRate = 4.0 * dt;
+      const flow = Math.min(flowRate, res.water);
+      res.water -= flow;
+      city.supply += flow;
+      ch.flowing = true;
+      ch.flowAnim = (ch.flowAnim || 0) + dt * 3;
+
+      // Flow sound occasionally
+      if(Math.random() < 0.02) sndFlow();
+    } else {
+      ch.flowing = false;
+    }
+  }
+}
+
+function updateCities(dt){
+  let anyFailed = false;
+  let failedCount = 0;
+
+  for(const city of cities){
+    // Demand increases over time
+    city.popGrowth = 1 + levelTime * 0.002;
+    const demand = city.demand * city.popGrowth * 2.0 * dt;
+
+    if(city.supply >= demand){
+      city.supply -= demand;
+      city.satisfaction = Math.min(100, city.satisfaction + 5 * dt);
+      if(city.satisfaction > 90 && !city.happyPlayed){
+        city.happyPlayed = true;
+        sndCityHappy();
+      }
+    } else {
+      // Use whatever supply is available
+      const deficit = demand - city.supply;
+      city.supply = 0;
+      city.satisfaction = Math.max(0, city.satisfaction - deficit * 8);
+      city.happyPlayed = false;
+
+      if(city.satisfaction < 30 && !city.warnPlayed){
+        city.warnPlayed = true;
+        sndWarning();
+        warningTimer = 2;
+      }
+      if(city.satisfaction > 35) city.warnPlayed = false;
+    }
+
+    if(city.satisfaction <= 0) failedCount++;
+  }
+
+  if(failedCount >= 2){
+    state = STATES.GAME_OVER;
+    stateTime = 0;
+  }
+}
+
+function updateTemperature(dt){
+  const lv = LEVELS[currentLevel];
+  temperature = Math.min(1, temperature + lv.tempRate * dt);
+
+  // Auto ice melt at high temps
+  if(temperature > 0.7){
+    for(const ic of iceChunks){
+      if(ic.intact){
+        ic.meltTimer += dt * (temperature - 0.6);
+        if(ic.meltTimer > 15){
+          meltIce(ic);
+        }
+      }
+    }
+  }
+}
+
+function meltIce(ic){
+  if(!ic.intact) return;
+  ic.intact = false;
+  usedIce = true;
+  sndIceCrack();
+
+  // Release water to nearby reservoirs
+  for(const res of reservoirs){
+    const d = Math.abs(res.tx - ic.tx) + Math.abs(res.ty - ic.ty);
+    if(d <= 6){
+      res.water = Math.min(res.maxWater, res.water + 30 * (1 - d/7));
+    }
+  }
+
+  // Flood particles
+  const pp = tileToPixel(ic.tx, ic.ty);
+  for(let j = 0; j < 15; j++){
+    addParticle(
+      pp.x + TILE/2, pp.y + TILE/2,
+      (Math.random()-0.5)*60, 20+Math.random()*40,
+      1.0, COL.freshLight, 3, 'splash'
+    );
+  }
+  // Sparkle particles for ice breaking
+  for(let j = 0; j < 10; j++){
+    addParticle(
+      pp.x + Math.random()*TILE, pp.y + Math.random()*TILE,
+      (Math.random()-0.5)*30, (Math.random()-0.5)*30,
+      0.8, COL.iceShine, 2, 'sparkle'
+    );
+  }
+}
+
+function updateScore(dt){
+  const lv = LEVELS[currentLevel];
+  levelTime += dt;
+
+  // Check win condition
+  if(levelTime >= lv.winTime){
+    const avgSat = cities.reduce((s,c) => s + c.satisfaction, 0) / cities.length;
+    if(avgSat >= lv.targetSatisfaction){
+      // Calculate score
+      const efficiency = totalRainTotal > 0 ? (totalRainOnLand / totalRainTotal) * 100 : 0;
+      const iceBonus = usedIce ? 0 : 20;
+      score = Math.floor(avgSat + efficiency * 0.5 + iceBonus);
+
+      let stars = 1;
+      if(score >= 80) stars = 2;
+      if(score >= 100) stars = 3;
+
+      if(score > saveData.scores[currentLevel]) saveData.scores[currentLevel] = score;
+      if(stars > saveData.stars[currentLevel]) saveData.stars[currentLevel] = stars;
+      if(currentLevel + 1 < LEVELS.length && saveData.unlocked <= currentLevel + 1){
+        saveData.unlocked = currentLevel + 2;
+      }
+      saveSave();
+
+      state = STATES.LEVEL_COMPLETE;
+      stateTime = 0;
+      sndLevelComplete();
+    }
+  }
+}
+
+// --- GAME UPDATE ---
+function updateGame(dt){
+  if(state !== STATES.PLAYING) return;
+  const gdt = dt * gameSpeed;
+  updateClouds(gdt);
+  updateReservoirs(gdt);
+  updateChannels(gdt);
+  updateCities(gdt);
+  updateTemperature(gdt);
+  updateScore(gdt);
+  updateParticles(dt);
+  if(warningTimer > 0) warningTimer -= dt;
+}
+
+// --- DRAWING HELPERS ---
+function drawRoundRect(x, y, w, h, r){
+  ctx.beginPath();
+  ctx.moveTo(x+r, y);
+  ctx.lineTo(x+w-r, y);
+  ctx.quadraticCurveTo(x+w, y, x+w, y+r);
+  ctx.lineTo(x+w, y+h-r);
+  ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
+  ctx.lineTo(x+r, y+h);
+  ctx.quadraticCurveTo(x, y+h, x, y+h-r);
+  ctx.lineTo(x, y+r);
+  ctx.quadraticCurveTo(x, y, x+r, y);
+  ctx.closePath();
+}
+
+function drawText(text, x, y, size, color, align, bold){
+  ctx.fillStyle = color || COL.uiText;
+  ctx.font = (bold ? 'bold ' : '') + size + 'px "Segoe UI", system-ui, sans-serif';
+  ctx.textAlign = align || 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y);
+}
+
+function drawButton(text, x, y, w, h, hover, color){
+  const isHover = hover && mouseX >= x && mouseX <= x+w && mouseY >= y && mouseY <= y+h;
+  const baseColor = color || COL.uiNavy;
+
+  ctx.save();
+  drawRoundRect(x, y, w, h, 8);
+  ctx.fillStyle = isHover ? '#1565C0' : baseColor;
+  ctx.fill();
+  if(isHover){
+    ctx.strokeStyle = COL.uiCyan;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+  drawText(text, x + w/2, y + h/2, Math.min(16, h*0.45), COL.uiWhite, 'center', true);
+  ctx.restore();
+
+  return isHover;
+}
+
+// --- DRAW MAP ---
+function drawMap(){
+  const t = animTime;
+
+  for(let y = 0; y < mapH; y++){
+    for(let x = 0; x < mapW; x++){
+      const px = mapOffX + x * TILE;
+      const py = mapOffY + y * TILE;
+      const tile = map[y][x];
+      const noise = Math.sin(x*3.7+y*2.3+t*0.5)*0.03;
+
+      ctx.save();
+      drawRoundRect(px+1, py+1, TILE-2, TILE-2, 3);
+      ctx.clip();
+
+      switch(tile){
+        case T.OCEAN: {
+          const wave = Math.sin(x*0.8 + t*1.5)*0.15 + Math.sin(y*0.6+t*1.2)*0.1;
+          const r = 0x1B + Math.floor(wave*20);
+          const g = 0x3A + Math.floor(wave*30);
+          const b = 0x5C + Math.floor(wave*20);
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+          ctx.fillRect(px, py, TILE, TILE);
+          // Wave highlight
+          ctx.fillStyle = `rgba(36,80,120,${0.2+wave*0.3})`;
+          ctx.fillRect(px, py + TILE*0.6+wave*4, TILE, 2);
+          break;
+        }
+        case T.LAND: {
+          const green = 0.5 + noise;
+          const r = Math.floor(0xD7*(1-green*0.3));
+          const g = Math.floor(0xCC*(1-green*0.1) + green*30);
+          const b = Math.floor(0xC8*(1-green*0.2));
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+          ctx.fillRect(px, py, TILE, TILE);
+          break;
+        }
+        case T.DESERT: {
+          const shimmer = Math.sin(x*2+y*3+t*2)*0.1;
+          ctx.fillStyle = `rgb(${0xFF},${0xB7+Math.floor(shimmer*20)},${0x4D+Math.floor(shimmer*15)})`;
+          ctx.fillRect(px, py, TILE, TILE);
+          break;
+        }
+        case T.ICE: {
+          ctx.fillStyle = COL.ice;
+          ctx.fillRect(px, py, TILE, TILE);
+          // Crystal sparkle
+          if(Math.sin(x*5+y*7+t*3) > 0.7){
+            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+            ctx.fillRect(px+TILE*0.3, py+TILE*0.3, 3, 3);
+          }
+          break;
+        }
+        case T.MOUNTAIN: {
+          ctx.fillStyle = COL.mountain;
+          ctx.fillRect(px, py, TILE, TILE);
+          // Peak
+          ctx.fillStyle = COL.mountainDark;
+          ctx.beginPath();
+          ctx.moveTo(px+TILE*0.5, py+2);
+          ctx.lineTo(px+TILE-4, py+TILE-2);
+          ctx.lineTo(px+4, py+TILE-2);
+          ctx.closePath();
+          ctx.fill();
+          // Snow cap
+          ctx.fillStyle = COL.mountainSnow;
+          ctx.beginPath();
+          ctx.moveTo(px+TILE*0.5, py+2);
+          ctx.lineTo(px+TILE*0.65, py+TILE*0.35);
+          ctx.lineTo(px+TILE*0.35, py+TILE*0.35);
+          ctx.closePath();
+          ctx.fill();
+          break;
+        }
+        case T.RIVER: {
+          ctx.fillStyle = COL.land;
+          ctx.fillRect(px, py, TILE, TILE);
+          const rwave = Math.sin(y*1.5+t*2)*2;
+          ctx.fillStyle = COL.fresh;
+          ctx.fillRect(px+TILE*0.3+rwave, py, TILE*0.4, TILE);
+          // Flow dots
+          const dotY = ((t*30 + y*10) % TILE);
+          ctx.fillStyle = COL.freshLight;
+          ctx.beginPath();
+          ctx.arc(px+TILE*0.5+rwave, py+dotY, 2, 0, Math.PI*2);
+          ctx.fill();
+          break;
+        }
+        case T.RESERVOIR: {
+          ctx.fillStyle = COL.land;
+          ctx.fillRect(px, py, TILE, TILE);
+          // Find reservoir data
+          const res = reservoirs.find(r => r.tx === x && r.ty === y);
+          const fillPct = res ? res.water / res.maxWater : 0;
+          // Basin
+          ctx.fillStyle = '#1a3050';
+          ctx.beginPath();
+          ctx.arc(px+TILE/2, py+TILE/2, TILE*0.4, 0, Math.PI*2);
+          ctx.fill();
+          // Water level
+          if(fillPct > 0){
+            ctx.fillStyle = COL.fresh;
+            ctx.beginPath();
+            ctx.arc(px+TILE/2, py+TILE/2, TILE*0.38*fillPct, 0, Math.PI*2);
+            ctx.fill();
+            // Shimmer
+            ctx.fillStyle = `rgba(129,212,250,${0.3+Math.sin(t*3)*0.2})`;
+            ctx.beginPath();
+            ctx.arc(px+TILE/2-TILE*0.1, py+TILE/2-TILE*0.1, TILE*0.12*fillPct, 0, Math.PI*2);
+            ctx.fill();
+          }
+          break;
+        }
+        case T.CITY: {
+          ctx.fillStyle = COL.land;
+          ctx.fillRect(px, py, TILE, TILE);
+          // Building
+          ctx.fillStyle = COL.city;
+          ctx.fillRect(px+3, py+TILE*0.2, TILE*0.35, TILE*0.7);
+          ctx.fillRect(px+TILE*0.45, py+TILE*0.35, TILE*0.45, TILE*0.55);
+          // Roof
+          ctx.fillStyle = COL.cityRoof;
+          ctx.fillRect(px+2, py+TILE*0.17, TILE*0.38, 3);
+          ctx.fillRect(px+TILE*0.43, py+TILE*0.32, TILE*0.48, 3);
+          // Windows
+          const windowBlink = Math.sin(t*2 + x*3 + y*5) > 0 ? 0.9 : 0.5;
+          ctx.fillStyle = `rgba(255,249,196,${windowBlink})`;
+          ctx.fillRect(px+6, py+TILE*0.35, 3, 3);
+          ctx.fillRect(px+6, py+TILE*0.55, 3, 3);
+          ctx.fillRect(px+TILE*0.55, py+TILE*0.5, 3, 3);
+          ctx.fillRect(px+TILE*0.72, py+TILE*0.5, 3, 3);
+          break;
+        }
+      }
+      ctx.restore();
+    }
+  }
+}
+
+function drawIceChunks(){
+  for(const ic of iceChunks){
+    if(!ic.intact) continue;
+    const pp = tileToPixel(ic.tx, ic.ty);
+    // Highlight clickable ice
+    ctx.save();
+    ctx.fillStyle = `rgba(227,242,253,${0.3+Math.sin(animTime*2)*0.15})`;
+    drawRoundRect(pp.x-2, pp.y-2, TILE+4, TILE+4, 5);
+    ctx.fill();
+    // Sparkle
+    if(Math.sin(animTime*4+ic.tx*7) > 0.5){
+      addParticle(
+        pp.x + Math.random()*TILE, pp.y + Math.random()*TILE,
+        0, -5, 0.5, COL.iceShine, 2, 'sparkle'
+      );
+    }
+    ctx.restore();
+  }
+}
+
+function drawClouds(){
+  for(let i=0; i<clouds.length; i++){
+    const c = clouds[i];
+    const px = mapOffX + c.x * TILE;
+    const py = mapOffY + c.y * TILE;
+    const sz = TILE * c.size;
+    const capPct = c.capacity / c.maxCapacity;
+
+    // Shadow
+    ctx.fillStyle = 'rgba(0,0,0,0.1)';
+    ctx.beginPath();
+    ctx.ellipse(px+sz*0.4, py+sz*0.9, sz*0.5, sz*0.15, 0, 0, Math.PI*2);
+    ctx.fill();
+
+    // Cloud body
+    const gray = Math.floor(200 + capPct * 55);
+    ctx.fillStyle = `rgb(${gray},${gray+5},${gray+10})`;
+    ctx.beginPath();
+    ctx.arc(px, py, sz*0.3, 0, Math.PI*2);
+    ctx.arc(px+sz*0.25, py-sz*0.12, sz*0.35, 0, Math.PI*2);
+    ctx.arc(px+sz*0.55, py-sz*0.05, sz*0.28, 0, Math.PI*2);
+    ctx.arc(px+sz*0.7, py+sz*0.08, sz*0.22, 0, Math.PI*2);
+    ctx.fill();
+
+    // Capacity indicator
+    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.fillRect(px-sz*0.1, py+sz*0.35, sz*0.8, 4);
+    ctx.fillStyle = capPct > 0.3 ? COL.fresh : COL.danger;
+    ctx.fillRect(px-sz*0.1, py+sz*0.35, sz*0.8*capPct, 4);
+
+    // Selected highlight
+    if(c.selected || (dragging && dragging.type==='cloud' && dragging.cloudIdx===i)){
+      ctx.strokeStyle = COL.uiCyan;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(px+sz*0.3, py, sz*0.55, 0, Math.PI*2);
+      ctx.stroke();
+    }
+  }
+}
+
+function drawChannels(){
+  for(const ch of channels){
+    const from = tileToPixel(ch.fromTx, ch.fromTy);
+    const to = tileToPixel(ch.toTx, ch.toTy);
+    const fx = from.x + TILE/2;
+    const fy = from.y + TILE/2;
+    const tx = to.x + TILE/2;
+    const ty = to.y + TILE/2;
+
+    // Channel line
+    ctx.strokeStyle = ch.flowing ? COL.channel : 'rgba(41,182,246,0.4)';
+    ctx.lineWidth = 3;
+    ctx.setLineDash([]);
+    ctx.beginPath();
+    ctx.moveTo(fx, fy);
+    ctx.lineTo(tx, ty);
+    ctx.stroke();
+
+    // Flow animation dots
+    if(ch.flowing){
+      const anim = ch.flowAnim || 0;
+      const dx = tx - fx;
+      const dy = ty - fy;
+      const len = Math.sqrt(dx*dx+dy*dy);
+      const dots = 5;
+      for(let d=0; d<dots; d++){
+        const prog = ((anim * 0.3 + d/dots) % 1);
+        const dotX = fx + dx * prog;
+        const dotY = fy + dy * prog;
+        ctx.fillStyle = COL.freshLight;
+        ctx.beginPath();
+        ctx.arc(dotX, dotY, 2.5, 0, Math.PI*2);
+        ctx.fill();
+      }
+    }
+  }
+}
+
+function drawDragPath(){
+  if(!dragging) return;
+
+  if(dragging.type === 'cloud' && dragging.path.length > 0){
+    ctx.strokeStyle = 'rgba(0,229,255,0.5)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([6, 4]);
+    ctx.beginPath();
+    const c = clouds[dragging.cloudIdx];
+    ctx.moveTo(mapOffX + c.x * TILE, mapOffY + c.y * TILE);
+    for(const p of dragging.path){
+      ctx.lineTo(mapOffX + (p.tx+0.5) * TILE, mapOffY + (p.ty+0.5) * TILE);
+    }
+    ctx.lineTo(mouseX, mouseY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  if(dragging.type === 'channel'){
+    ctx.strokeStyle = 'rgba(41,182,246,0.6)';
+    ctx.lineWidth = 3;
+    ctx.setLineDash([8, 4]);
+    ctx.beginPath();
+    const from = tileToPixel(dragging.fromTx, dragging.fromTy);
+    ctx.moveTo(from.x + TILE/2, from.y + TILE/2);
+    ctx.lineTo(mouseX, mouseY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+}
+
+function drawCityMeters(){
+  for(const city of cities){
+    const pp = tileToPixel(city.tx, city.ty);
+    const bx = pp.x - 4;
+    const by = pp.y - 22;
+    const bw = TILE + 8;
+    const bh = 18;
+
+    // Background
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    drawRoundRect(bx, by, bw, bh, 4);
+    ctx.fill();
+
+    // Name
+    drawText(city.name, bx + bw/2, by-8, 9, COL.uiWhite, 'center', true);
+
+    // Satisfaction bar
+    const barX = bx + 2;
+    const barY = by + 3;
+    const barW = bw - 4;
+    const barH = bh - 6;
+
+    ctx.fillStyle = '#1a1a2e';
+    drawRoundRect(barX, barY, barW, barH, 3);
+    ctx.fill();
+
+    const sat = city.satisfaction / 100;
+    let barColor;
+    if(sat > 0.6) barColor = COL.happy;
+    else if(sat > 0.3) barColor = COL.warn;
+    else barColor = COL.danger;
+
+    if(sat > 0){
+      drawRoundRect(barX, barY, barW * sat, barH, 3);
+      ctx.fillStyle = barColor;
+      ctx.fill();
+    }
+
+    // Percentage
+    drawText(Math.round(city.satisfaction) + '%', barX + barW/2, barY + barH/2, 9, '#fff', 'center', true);
+
+    // Face emoji based on satisfaction
+    const faceX = pp.x + TILE/2;
+    const faceY = pp.y + TILE + 10;
+    const faceSize = 7;
+    if(city.satisfaction > 70){
+      // Happy
+      ctx.fillStyle = COL.happy;
+      ctx.beginPath(); ctx.arc(faceX, faceY, faceSize, 0, Math.PI*2); ctx.fill();
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(faceX-3, faceY-2, 2, 2);
+      ctx.fillRect(faceX+1, faceY-2, 2, 2);
+      ctx.strokeStyle = '#fff'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(faceX, faceY+1, 3, 0, Math.PI); ctx.stroke();
+    } else if(city.satisfaction > 30){
+      // Worried
+      ctx.fillStyle = COL.warn;
+      ctx.beginPath(); ctx.arc(faceX, faceY, faceSize, 0, Math.PI*2); ctx.fill();
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(faceX-3, faceY-2, 2, 2);
+      ctx.fillRect(faceX+1, faceY-2, 2, 2);
+      ctx.strokeStyle = '#fff'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(faceX-3, faceY+3); ctx.lineTo(faceX+3, faceY+3); ctx.stroke();
+    } else {
+      // Panicked
+      ctx.fillStyle = COL.danger;
+      ctx.beginPath(); ctx.arc(faceX, faceY, faceSize, 0, Math.PI*2); ctx.fill();
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(faceX-3, faceY-3, 2, 2);
+      ctx.fillRect(faceX+1, faceY-3, 2, 2);
+      ctx.strokeStyle = '#fff'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(faceX, faceY+4, 3, Math.PI, 0); ctx.stroke();
+      // Pulse warning
+      if(Math.sin(animTime*8)>0){
+        ctx.strokeStyle = 'rgba(239,83,80,0.5)';
+        ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.arc(faceX, faceY, faceSize+4, 0, Math.PI*2); ctx.stroke();
+      }
+    }
+  }
+}
+
+// --- HUD ---
+function drawHUD(){
+  // Water distribution bar (top-left)
+  const bx = 15, by = 15, bw = 220, bh = 70;
+  ctx.fillStyle = COL.uiPanel;
+  drawRoundRect(bx, by, bw, bh, 10);
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(0,229,255,0.2)';
+  ctx.lineWidth = 1;
+  drawRoundRect(bx, by, bw, bh, 10);
+  ctx.stroke();
+
+  drawText("Earth's Water", bx+10, by+15, 11, 'rgba(224,232,240,0.6)', 'left', true);
+
+  // Bar segments
+  const barX = bx+10, barY = by+28, barW = bw-20, barH = 14;
+  // Ocean 97%
+  ctx.fillStyle = COL.ocean;
+  drawRoundRect(barX, barY, barW*0.97, barH, 4);
+  ctx.fill();
+  drawText('OCEAN 97%', barX+barW*0.97/2, barY+barH/2, 8, '#aac8e0', 'center', true);
+
+  // Ice 2%
+  ctx.fillStyle = COL.ice;
+  ctx.fillRect(barX+barW*0.97, barY, barW*0.02, barH);
+
+  // Fresh 1% — highlighted and pulsing
+  const freshPulse = 0.7 + Math.sin(animTime*3)*0.3;
+  ctx.fillStyle = `rgba(79,195,247,${freshPulse})`;
+  ctx.fillRect(barX+barW*0.99, barY, barW*0.01+2, barH);
+
+  // Labels below
+  drawText('ICE 2%', barX+barW*0.98, barY+barH+10, 8, COL.iceShadow, 'center', false);
+  drawText('FRESH 1%', barX+barW+5, barY+barH+10, 8, COL.fresh, 'right', true);
+
+  // Freshwater usable bar
+  const fBarY = barY+barH+18;
+  drawText('Usable Freshwater:', bx+10, fBarY, 10, COL.uiCyan, 'left', false);
+  ctx.fillStyle = '#0a2040';
+  drawRoundRect(barX, fBarY+8, barW, 6, 3);
+  ctx.fill();
+  const fPct = Math.max(0, freshWater / 100);
+  ctx.fillStyle = COL.fresh;
+  drawRoundRect(barX, fBarY+8, barW*fPct, 6, 3);
+  ctx.fill();
+
+  // Temperature gauge (top-center)
+  const tx = W/2 - 60, ty = 15, tw = 120, th = 45;
+  ctx.fillStyle = COL.uiPanel;
+  drawRoundRect(tx, ty, tw, th, 10);
+  ctx.fill();
+  drawText('TEMP', tx+tw/2, ty+13, 10, 'rgba(224,232,240,0.6)', 'center', true);
+
+  // Temperature bar
+  const tBarX = tx+10, tBarY = ty+22, tBarW = tw-20, tBarH = 8;
+  // Gradient background
+  const grad = ctx.createLinearGradient(tBarX, 0, tBarX+tBarW, 0);
+  grad.addColorStop(0, COL.tempCool);
+  grad.addColorStop(1, COL.tempHot);
+  ctx.fillStyle = '#0a1a30';
+  drawRoundRect(tBarX, tBarY, tBarW, tBarH, 4);
+  ctx.fill();
+  ctx.fillStyle = grad;
+  drawRoundRect(tBarX, tBarY, tBarW * temperature, tBarH, 4);
+  ctx.fill();
+
+  // Indicator
+  const indX = tBarX + tBarW * temperature;
+  ctx.fillStyle = '#fff';
+  ctx.beginPath();
+  ctx.arc(indX, tBarY + tBarH/2, 5, 0, Math.PI*2);
+  ctx.fill();
+
+  drawText(Math.round(temperature*100)+'°', tx+tw/2, tBarY+tBarH+10, 11,
+    temperature > 0.6 ? COL.tempHot : COL.uiText, 'center', true);
+
+  // Score (top-right)
+  const sx = W - 170, sy = 15, sw = 155, sh = 45;
+  ctx.fillStyle = COL.uiPanel;
+  drawRoundRect(sx, sy, sw, sh, 10);
+  ctx.fill();
+
+  drawText('LEVEL ' + (currentLevel+1), sx+10, sy+15, 10, 'rgba(224,232,240,0.6)', 'left', true);
+  drawText(LEVELS[currentLevel].name, sx+10, sy+30, 11, COL.uiCyan, 'left', false);
+
+  // Timer
+  const remaining = Math.max(0, LEVELS[currentLevel].winTime - levelTime);
+  const min = Math.floor(remaining/60);
+  const sec = Math.floor(remaining%60);
+  drawText(`${min}:${sec.toString().padStart(2,'0')}`, sx+sw-10, sy+22, 16,
+    remaining < 30 ? COL.danger : COL.uiWhite, 'right', true);
+
+  // Efficiency
+  const eff = totalRainTotal > 0 ? Math.round((totalRainOnLand/totalRainTotal)*100) : 0;
+  drawText(eff+'% eff.', sx+sw-10, sy+38, 9, 'rgba(224,232,240,0.5)', 'right', false);
+
+  // Action hints (bottom)
+  const hintY = H - 30;
+  ctx.fillStyle = 'rgba(10,22,40,0.7)';
+  ctx.fillRect(0, hintY - 12, W, 40);
+  drawText('Click cloud + drag path = rain  |  Click reservoir + drag to city = channel  |  Click ice = emergency melt',
+    W/2, hintY, 11, 'rgba(224,232,240,0.4)', 'center', false);
+
+  // Warning flash
+  if(warningTimer > 0 && Math.sin(animTime*10) > 0){
+    ctx.fillStyle = 'rgba(239,83,80,0.15)';
+    ctx.fillRect(0, 0, W, H);
+    drawText('CITY NEEDS WATER!', W/2, H/2 - 50, 28, COL.danger, 'center', true);
+  }
+}
+
+// --- TITLE SCREEN ---
+function drawTitle(){
+  // Background ocean
+  for(let y=0; y<H; y+=30){
+    for(let x=0; x<W; x+=30){
+      const wave = Math.sin(x*0.02+animTime*1.2)*8 + Math.sin(y*0.015+animTime*0.8)*6;
+      const b = 0x1B + Math.floor(wave);
+      ctx.fillStyle = `rgb(${0x0a+Math.floor(wave*0.3)},${0x16+Math.floor(wave*0.5)},${0x28+Math.floor(wave)})`;
+      ctx.fillRect(x, y, 30, 30);
+    }
+  }
+
+  // Water cycle animation
+  const cx = W/2;
+  const cy = H/2 - 20;
+
+  // Animated cloud
+  const cloudX = cx - 80 + Math.sin(animTime*0.5)*20;
+  const cloudY = cy - 100 + Math.sin(animTime*0.7)*8;
+  ctx.fillStyle = COL.cloud;
+  ctx.beginPath();
+  ctx.arc(cloudX, cloudY, 25, 0, Math.PI*2);
+  ctx.arc(cloudX+20, cloudY-10, 30, 0, Math.PI*2);
+  ctx.arc(cloudX+45, cloudY-5, 22, 0, Math.PI*2);
+  ctx.fill();
+
+  // Rain drops from cloud
+  for(let i=0;i<5;i++){
+    const rx = cloudX + 10 + i*10;
+    const ry = cloudY + 25 + ((animTime*80+i*30)%80);
+    ctx.strokeStyle = `rgba(66,165,245,${1 - (ry-cloudY-25)/80})`;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(rx, ry);
+    ctx.lineTo(rx, ry+8);
+    ctx.stroke();
+  }
+
+  // River flowing down
+  ctx.strokeStyle = COL.fresh;
+  ctx.lineWidth = 4;
+  ctx.beginPath();
+  ctx.moveTo(cx+30, cy+10);
+  ctx.quadraticCurveTo(cx+50, cy+40, cx+30, cy+70);
+  ctx.quadraticCurveTo(cx+10, cy+100, cx+40, cy+120);
+  ctx.stroke();
+
+  // Ocean at bottom
+  ctx.fillStyle = `rgba(27,58,92,0.6)`;
+  drawRoundRect(cx-120, cy+110, 240, 40, 10);
+  ctx.fill();
+  drawText('OCEAN', cx, cy+130, 12, 'rgba(200,220,240,0.5)', 'center', false);
+
+  // Evaporation wisps
+  for(let i=0;i<3;i++){
+    const ex = cx - 40 + i*40;
+    const ey = cy+105 - ((animTime*20+i*20)%60);
+    ctx.fillStyle = `rgba(200,230,255,${0.5 - ((animTime*20+i*20)%60)/120})`;
+    ctx.beginPath();
+    ctx.arc(ex, ey, 4, 0, Math.PI*2);
+    ctx.fill();
+  }
+
+  // Title
+  ctx.save();
+  const titleScale = 1 + Math.sin(animTime*0.8)*0.02;
+  ctx.translate(cx, cy - 170);
+  ctx.scale(titleScale, titleScale);
+
+  // Title glow
+  ctx.shadowColor = COL.uiCyan;
+  ctx.shadowBlur = 30;
+  drawText('AQUIFER', 0, 0, 64, COL.uiWhite, 'center', true);
+  ctx.shadowBlur = 0;
+
+  drawText('Water Distribution Puzzle', 0, 45, 18, COL.uiCyan, 'center', false);
+  drawText('NGSS 5-ESS2-2', 0, 68, 12, 'rgba(200,220,240,0.4)', 'center', false);
+  ctx.restore();
+
+  // Science fact
+  drawText('"Only 1% of Earth\'s water is available as freshwater"', cx, cy+170, 14, 'rgba(200,220,240,0.6)', 'center', false);
+
+  // Buttons
+  const btnW = 200, btnH = 48;
+  const playHover = drawButton('PLAY', cx-btnW/2, cy+200, btnW, btnH, true);
+  const howtoHover = drawButton('HOW TO PLAY', cx-btnW/2, cy+260, btnW, btnH, true, '#1a4070');
+
+  return {play: playHover, howto: howtoHover, playRect:{x:cx-btnW/2,y:cy+200,w:btnW,h:btnH}, howtoRect:{x:cx-btnW/2,y:cy+260,w:btnW,h:btnH}};
+}
+
+// --- HOW TO PLAY ---
+function drawHowTo(){
+  ctx.fillStyle = COL.bg;
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W/2;
+  drawText('HOW TO PLAY', cx, 50, 32, COL.uiWhite, 'center', true);
+
+  const cards = [
+    {icon:'cloud', title:'Drag Clouds', desc:'Click a cloud and drag a path\nover LAND to make it rain.\nRain on ocean is WASTED!'},
+    {icon:'channel', title:'Build Channels', desc:'Click a reservoir, then drag\nto a city to build a water\nchannel. Water flows automatically.'},
+    {icon:'city', title:'Keep Cities Hydrated', desc:'Each city needs water.\nIf satisfaction hits 0%, it fails.\n2 failures = game over!'},
+    {icon:'temp', title:'Watch Temperature!', desc:'Rising temp = faster evaporation.\nReservoirs drain quicker.\nManage water wisely!'},
+    {icon:'fact', title:'The Big Idea', desc:'97% of water is ocean (unusable)\n2% is ice (locked away)\nOnly 1% is freshwater — use it wisely!'}
+  ];
+
+  const cardW = 180, cardH = 160, gap = 20;
+  const totalW = cards.length * cardW + (cards.length-1)*gap;
+  const startX = cx - totalW/2;
+
+  for(let i=0; i<cards.length; i++){
+    const c = cards[i];
+    const x = startX + i*(cardW+gap);
+    const y = 100;
+
+    ctx.fillStyle = COL.uiPanel;
+    drawRoundRect(x, y, cardW, cardH, 10);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(0,229,255,0.15)';
+    ctx.lineWidth = 1;
+    drawRoundRect(x, y, cardW, cardH, 10);
+    ctx.stroke();
+
+    // Icon area
+    const icx = x + cardW/2;
+    const icy = y + 30;
+    ctx.fillStyle = COL.uiCyan;
+    if(c.icon==='cloud'){
+      ctx.beginPath(); ctx.arc(icx-8,icy,10,0,Math.PI*2); ctx.arc(icx+8,icy-5,12,0,Math.PI*2); ctx.arc(icx+20,icy,8,0,Math.PI*2); ctx.fill();
+    } else if(c.icon==='channel'){
+      ctx.strokeStyle = COL.channel; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(icx-15,icy); ctx.lineTo(icx+15,icy); ctx.stroke();
+      ctx.fillStyle = COL.fresh; ctx.beginPath(); ctx.arc(icx-15,icy,6,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle = COL.city; ctx.fillRect(icx+10,icy-6,12,12);
+    } else if(c.icon==='city'){
+      ctx.fillStyle = COL.city; ctx.fillRect(icx-10,icy-8,8,16); ctx.fillRect(icx+2,icy-4,10,12);
+      ctx.fillStyle = COL.cityWindow; ctx.fillRect(icx-8,icy-4,3,3); ctx.fillRect(icx+4,icy,3,3);
+    } else if(c.icon==='temp'){
+      ctx.strokeStyle = COL.tempHot; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(icx,icy+10); ctx.lineTo(icx,icy-10); ctx.stroke();
+      ctx.fillStyle = COL.tempHot; ctx.beginPath(); ctx.arc(icx,icy+10,5,0,Math.PI*2); ctx.fill();
+    } else {
+      ctx.fillStyle = COL.ocean; drawRoundRect(icx-18,icy-8,36,16,4); ctx.fill();
+      ctx.fillStyle = COL.fresh; ctx.fillRect(icx+15,icy-8,3,16);
+      drawText('1%', icx+16, icy, 7, '#fff', 'center', true);
+    }
+
+    drawText(c.title, x+cardW/2, y+55, 13, COL.uiWhite, 'center', true);
+
+    // Multi-line desc
+    const lines = c.desc.split('\n');
+    lines.forEach((line, li) => {
+      drawText(line, x+cardW/2, y+75+li*16, 10, 'rgba(224,232,240,0.7)', 'center', false);
+    });
+  }
+
+  const btnW = 180, btnH = 44;
+  const backHover = drawButton('BACK', cx-btnW/2, H-80, btnW, btnH, true);
+  return {back: backHover, backRect:{x:cx-btnW/2, y:H-80, w:btnW, h:btnH}};
+}
+
+// --- LEVEL SELECT ---
+function drawLevelSelect(){
+  ctx.fillStyle = COL.bg;
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W/2;
+  drawText('SELECT LEVEL', cx, 45, 30, COL.uiWhite, 'center', true);
+
+  const cardW = 200, cardH = 180, gap = 20;
+  const totalW = LEVELS.length * cardW + (LEVELS.length-1)*gap;
+  const startX = cx - totalW/2;
+  const rects = [];
+
+  for(let i=0; i<LEVELS.length; i++){
+    const lv = LEVELS[i];
+    const x = startX + i*(cardW+gap);
+    const y = 80;
+    const unlocked = i < saveData.unlocked;
+    const isHover = unlocked && mouseX>=x && mouseX<=x+cardW && mouseY>=y && mouseY<=y+cardH;
+
+    ctx.fillStyle = unlocked ? (isHover ? 'rgba(20,40,70,0.95)' : COL.uiPanel) : 'rgba(10,15,25,0.8)';
+    drawRoundRect(x, y, cardW, cardH, 12);
+    ctx.fill();
+
+    if(isHover){
+      ctx.strokeStyle = COL.uiCyan;
+      ctx.lineWidth = 2;
+      drawRoundRect(x, y, cardW, cardH, 12);
+      ctx.stroke();
+    }
+
+    // Level number
+    drawText('LEVEL ' + (i+1), x+cardW/2, y+20, 12, unlocked ? COL.uiCyan : 'rgba(100,100,120,0.5)', 'center', true);
+
+    // Name
+    drawText(lv.name, x+cardW/2, y+42, 15, unlocked ? COL.uiWhite : 'rgba(100,100,120,0.4)', 'center', true);
+
+    if(!unlocked){
+      drawText('LOCKED', x+cardW/2, y+90, 18, 'rgba(100,100,120,0.3)', 'center', true);
+    } else {
+      // Stars
+      const starY = y + 65;
+      for(let s=0; s<3; s++){
+        const sx = x + cardW/2 - 25 + s*25;
+        ctx.fillStyle = s < saveData.stars[i] ? '#FFD700' : 'rgba(100,100,120,0.3)';
+        drawStar(sx, starY, 8, 5);
+      }
+
+      // Best score
+      if(saveData.scores[i] > 0){
+        drawText('Best: ' + saveData.scores[i], x+cardW/2, y+90, 11, 'rgba(224,232,240,0.5)', 'center', false);
+      }
+
+      // Desc
+      const lines = lv.desc.split('\n');
+      lines.forEach((line, li) => {
+        drawText(line.trim(), x+cardW/2, y+110+li*14, 9, 'rgba(224,232,240,0.5)', 'center', false);
+      });
+
+      // Cities/time
+      drawText(lv.cities.length + ' cities | ' + Math.floor(lv.winTime/60) + ':' + (lv.winTime%60).toString().padStart(2,'0'), x+cardW/2, y+cardH-15, 9, 'rgba(224,232,240,0.35)', 'center', false);
+    }
+
+    rects.push({x, y, w: cardW, h: cardH, idx: i, unlocked});
+  }
+
+  const btnW = 180, btnH = 44;
+  const backHover = drawButton('BACK', cx-btnW/2, H-70, btnW, btnH, true);
+
+  return {rects, back: backHover, backRect:{x:cx-btnW/2, y:H-70, w:btnW, h:btnH}};
+}
+
+function drawStar(cx, cy, outerR, innerR){
+  ctx.beginPath();
+  for(let i=0; i<10; i++){
+    const r = i%2===0 ? outerR : innerR;
+    const angle = Math.PI/2 + i * Math.PI/5;
+    const x = cx + Math.cos(angle) * r;
+    const y = cy - Math.sin(angle) * r;
+    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  }
+  ctx.closePath();
+  ctx.fill();
+}
+
+// --- LEVEL INTRO ---
+function drawLevelIntro(){
+  ctx.fillStyle = COL.bg;
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W/2;
+  const lv = LEVELS[currentLevel];
+
+  drawText('LEVEL ' + (currentLevel+1), cx, H*0.25, 16, COL.uiCyan, 'center', true);
+  drawText(lv.name, cx, H*0.35, 36, COL.uiWhite, 'center', true);
+
+  const lines = lv.desc.split('\n');
+  lines.forEach((line, i) => {
+    drawText(line.trim(), cx, H*0.45 + i*22, 14, 'rgba(224,232,240,0.7)', 'center', false);
+  });
+
+  drawText(lv.cities.length + ' cities  |  Target: ' + lv.targetSatisfaction + '% avg satisfaction  |  Time: ' + Math.floor(lv.winTime/60) + ':' + (lv.winTime%60).toString().padStart(2,'0'), cx, H*0.58, 13, 'rgba(224,232,240,0.5)', 'center', false);
+
+  const fade = Math.min(1, stateTime / 0.5);
+  ctx.globalAlpha = fade;
+
+  const btnW = 200, btnH = 50;
+  const startHover = drawButton('START', cx-btnW/2, H*0.68, btnW, btnH, true);
+
+  ctx.globalAlpha = 1;
+
+  return {start: startHover, startRect:{x:cx-btnW/2, y:H*0.68, w:btnW, h:btnH}};
+}
+
+// --- LEVEL COMPLETE ---
+function drawLevelComplete(){
+  ctx.fillStyle = 'rgba(10,22,40,0.85)';
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W/2;
+
+  drawText('LEVEL COMPLETE!', cx, H*0.2, 36, COL.happy, 'center', true);
+  drawText(LEVELS[currentLevel].name, cx, H*0.28, 18, COL.uiCyan, 'center', false);
+
+  const eff = totalRainTotal > 0 ? Math.round((totalRainOnLand/totalRainTotal)*100) : 0;
+  const avgSat = Math.round(cities.reduce((s,c) => s+c.satisfaction, 0) / cities.length);
+
+  drawText('Water Efficiency: ' + eff + '%', cx, H*0.38, 16, COL.uiWhite, 'center', false);
+  drawText('Avg City Satisfaction: ' + avgSat + '%', cx, H*0.43, 16, COL.uiWhite, 'center', false);
+  drawText('Ice Preserved: ' + (usedIce ? 'No' : 'Yes (+20 bonus!)'), cx, H*0.48, 16, usedIce ? COL.warn : COL.happy, 'center', false);
+  drawText('SCORE: ' + score, cx, H*0.55, 28, COL.uiCyan, 'center', true);
+
+  // Stars
+  const stars = saveData.stars[currentLevel];
+  for(let s=0; s<3; s++){
+    ctx.fillStyle = s < stars ? '#FFD700' : 'rgba(100,100,120,0.3)';
+    drawStar(cx - 40 + s*40, H*0.63, 15, 8);
+  }
+
+  // Sparkle particles for celebration
+  if(Math.random() < 0.3){
+    addParticle(
+      cx + (Math.random()-0.5)*300, H*0.15 + Math.random()*50,
+      (Math.random()-0.5)*40, 20+Math.random()*20,
+      1.0, '#FFD700', 3, 'sparkle'
+    );
+  }
+  drawParticles();
+
+  const btnW = 180, btnH = 44;
+  const nextHover = currentLevel < LEVELS.length - 1 ?
+    drawButton('NEXT LEVEL', cx-btnW/2, H*0.72, btnW, btnH, true) : false;
+  const menuHover = drawButton('MENU', cx-btnW/2, H*0.8, btnW, btnH, true, '#1a4070');
+
+  return {
+    next: nextHover, nextRect:{x:cx-btnW/2, y:H*0.72, w:btnW, h:btnH},
+    menu: menuHover, menuRect:{x:cx-btnW/2, y:H*0.8, w:btnW, h:btnH}
+  };
+}
+
+// --- GAME OVER ---
+function drawGameOver(){
+  ctx.fillStyle = 'rgba(10,10,20,0.88)';
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W/2;
+
+  drawText('WATER CRISIS!', cx, H*0.25, 40, COL.danger, 'center', true);
+  drawText('Two or more cities ran out of water.', cx, H*0.35, 16, 'rgba(224,232,240,0.7)', 'center', false);
+  drawText('Remember: Only 1% of Earth\'s water is accessible freshwater.', cx, H*0.42, 14, COL.uiCyan, 'center', false);
+  drawText('Every drop counts!', cx, H*0.48, 14, COL.uiCyan, 'center', false);
+
+  const eff = totalRainTotal > 0 ? Math.round((totalRainOnLand/totalRainTotal)*100) : 0;
+  drawText('Rain Efficiency: ' + eff + '%  |  Time Survived: ' + Math.floor(levelTime) + 's', cx, H*0.55, 13, 'rgba(224,232,240,0.5)', 'center', false);
+
+  const btnW = 180, btnH = 44;
+  const retryHover = drawButton('RETRY', cx-btnW/2, H*0.65, btnW, btnH, true);
+  const menuHover = drawButton('MENU', cx-btnW/2, H*0.73, btnW, btnH, true, '#1a4070');
+
+  return {
+    retry: retryHover, retryRect:{x:cx-btnW/2, y:H*0.65, w:btnW, h:btnH},
+    menu: menuHover, menuRect:{x:cx-btnW/2, y:H*0.73, w:btnW, h:btnH}
+  };
+}
+
+// --- DRAW PLAYING STATE ---
+function drawPlaying(){
+  ctx.fillStyle = COL.bg;
+  ctx.fillRect(0, 0, W, H);
+
+  drawMap();
+  drawIceChunks();
+  drawChannels();
+  drawDragPath();
+  drawClouds();
+  drawCityMeters();
+  drawParticles();
+  drawHUD();
+
+  // Pause button
+  const pbx = W-50, pby = H-40;
+  const pauseHover = mouseX>=pbx && mouseX<=pbx+35 && mouseY>=pby && mouseY<=pby+28;
+  ctx.fillStyle = pauseHover ? 'rgba(20,40,70,0.9)' : 'rgba(10,22,40,0.7)';
+  drawRoundRect(pbx, pby, 35, 28, 6);
+  ctx.fill();
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(pbx+10, pby+6, 4, 16);
+  ctx.fillRect(pbx+20, pby+6, 4, 16);
+
+  return {pauseRect:{x:pbx,y:pby,w:35,h:28}, pauseHover};
+}
+
+// --- MAIN RENDER ---
+let uiHitData = {};
+
+function draw(){
+  ctx.clearRect(0, 0, W, H);
+
+  switch(state){
+    case STATES.TITLE:
+      uiHitData = drawTitle();
+      break;
+    case STATES.HOWTO:
+      uiHitData = drawHowTo();
+      break;
+    case STATES.LEVEL_SELECT:
+      uiHitData = drawLevelSelect();
+      break;
+    case STATES.LEVEL_INTRO:
+      uiHitData = drawLevelIntro();
+      break;
+    case STATES.PLAYING:
+      uiHitData = drawPlaying();
+      break;
+    case STATES.LEVEL_COMPLETE:
+      uiHitData = drawLevelComplete();
+      updateParticles(0.016);
+      break;
+    case STATES.GAME_OVER:
+      uiHitData = drawGameOver();
+      break;
+  }
+}
+
+// --- GAME LOOP ---
+let lastTime = 0;
+
+function loop(now){
+  const dt = Math.min((now - lastTime) / 1000, 0.05);
+  lastTime = now;
+  animTime += dt;
+  stateTime += dt;
+
+  resize();
+  updateGame(dt);
+  draw();
+  requestAnimationFrame(loop);
+}
+
+// --- INPUT HANDLING ---
+function hitRect(r){
+  return mouseX >= r.x && mouseX <= r.x+r.w && mouseY >= r.y && mouseY <= r.y+r.h;
+}
+
+function findCloudAt(px, py){
+  for(let i=0; i<clouds.length; i++){
+    const c = clouds[i];
+    const cpx = mapOffX + c.x * TILE;
+    const cpy = mapOffY + c.y * TILE;
+    const dist = Math.sqrt((px-cpx)**2 + (py-cpy)**2);
+    if(dist < TILE * c.size) return i;
+  }
+  return -1;
+}
+
+function findReservoirAt(tx, ty){
+  return reservoirs.findIndex(r => r.tx === tx && r.ty === ty);
+}
+
+function findIceAt(tx, ty){
+  return iceChunks.findIndex(ic => ic.tx === tx && ic.ty === ty && ic.intact);
+}
+
+function findCityAt(tx, ty){
+  return cities.findIndex(c => c.tx === tx && c.ty === ty);
+}
+
+function channelExists(ftx, fty, ttx, tty){
+  return channels.some(ch => ch.fromTx===ftx && ch.fromTy===fty && ch.toTx===ttx && ch.toTy===tty);
+}
+
+function onPointerDown(px, py){
+  initAudio();
+  mouseX = px; mouseY = py;
+  mouseDown = true;
+
+  switch(state){
+    case STATES.TITLE:
+      if(uiHitData.playRect && hitRect(uiHitData.playRect)){
+        sndClick();
+        state = STATES.LEVEL_SELECT;
+        stateTime = 0;
+      } else if(uiHitData.howtoRect && hitRect(uiHitData.howtoRect)){
+        sndClick();
+        state = STATES.HOWTO;
+        stateTime = 0;
+      }
+      break;
+
+    case STATES.HOWTO:
+      if(uiHitData.backRect && hitRect(uiHitData.backRect)){
+        sndClick();
+        state = STATES.TITLE;
+        stateTime = 0;
+      }
+      break;
+
+    case STATES.LEVEL_SELECT:
+      if(uiHitData.backRect && hitRect(uiHitData.backRect)){
+        sndClick();
+        state = STATES.TITLE;
+        stateTime = 0;
+        break;
+      }
+      if(uiHitData.rects){
+        for(const r of uiHitData.rects){
+          if(r.unlocked && hitRect(r)){
+            sndClick();
+            setupLevel(r.idx);
+            state = STATES.LEVEL_INTRO;
+            stateTime = 0;
+            break;
+          }
+        }
+      }
+      break;
+
+    case STATES.LEVEL_INTRO:
+      if(uiHitData.startRect && hitRect(uiHitData.startRect)){
+        sndClick();
+        state = STATES.PLAYING;
+        stateTime = 0;
+      }
+      break;
+
+    case STATES.PLAYING: {
+      // Pause button
+      if(uiHitData.pauseRect && hitRect(uiHitData.pauseRect)){
+        sndClick();
+        state = STATES.LEVEL_SELECT;
+        stateTime = 0;
+        break;
+      }
+
+      const tile = pixelToTile(px, py);
+
+      // Check ice click
+      const iceIdx = findIceAt(tile.tx, tile.ty);
+      if(iceIdx >= 0){
+        meltIce(iceChunks[iceIdx]);
+        break;
+      }
+
+      // Check cloud click for drag
+      const cloudIdx = findCloudAt(px, py);
+      if(cloudIdx >= 0){
+        sndCloudDrag();
+        dragging = {type:'cloud', cloudIdx, path:[]};
+        break;
+      }
+
+      // Check reservoir click for channel building
+      const resIdx = findReservoirAt(tile.tx, tile.ty);
+      if(resIdx >= 0){
+        sndClick();
+        dragging = {type:'channel', fromTx: tile.tx, fromTy: tile.ty};
+        break;
+      }
+      break;
+    }
+
+    case STATES.LEVEL_COMPLETE:
+      if(uiHitData.nextRect && hitRect(uiHitData.nextRect) && currentLevel < LEVELS.length-1){
+        sndClick();
+        setupLevel(currentLevel + 1);
+        state = STATES.LEVEL_INTRO;
+        stateTime = 0;
+      } else if(uiHitData.menuRect && hitRect(uiHitData.menuRect)){
+        sndClick();
+        state = STATES.LEVEL_SELECT;
+        stateTime = 0;
+      }
+      break;
+
+    case STATES.GAME_OVER:
+      if(uiHitData.retryRect && hitRect(uiHitData.retryRect)){
+        sndClick();
+        setupLevel(currentLevel);
+        state = STATES.LEVEL_INTRO;
+        stateTime = 0;
+      } else if(uiHitData.menuRect && hitRect(uiHitData.menuRect)){
+        sndClick();
+        state = STATES.LEVEL_SELECT;
+        stateTime = 0;
+      }
+      break;
+  }
+}
+
+function onPointerMove(px, py){
+  mouseX = px; mouseY = py;
+
+  if(dragging && state === STATES.PLAYING){
+    const tile = pixelToTile(px, py);
+    if(dragging.type === 'cloud'){
+      // Add tile to path if it's different from last
+      const path = dragging.path;
+      if(inMap(tile.tx, tile.ty)){
+        if(path.length === 0 || path[path.length-1].tx !== tile.tx || path[path.length-1].ty !== tile.ty){
+          path.push({tx: tile.tx, ty: tile.ty});
+        }
+      }
+    }
+  }
+}
+
+function onPointerUp(px, py){
+  mouseDown = false;
+
+  if(dragging && state === STATES.PLAYING){
+    if(dragging.type === 'cloud'){
+      const c = clouds[dragging.cloudIdx];
+      if(c && dragging.path.length > 0){
+        c.path = dragging.path;
+        c.pathIdx = 0;
+        sndCloudDrag();
+      }
+    } else if(dragging.type === 'channel'){
+      const tile = pixelToTile(px, py);
+      const cityIdx = findCityAt(tile.tx, tile.ty);
+      if(cityIdx >= 0 && !channelExists(dragging.fromTx, dragging.fromTy, tile.tx, tile.ty)){
+        // Check if reservoir has enough water to build
+        const res = reservoirs.find(r => r.tx === dragging.fromTx && r.ty === dragging.fromTy);
+        if(res && res.water >= 5){
+          res.water -= 5; // Channel building costs water
+          channels.push({
+            fromTx: dragging.fromTx, fromTy: dragging.fromTy,
+            toTx: tile.tx, toTy: tile.ty,
+            flowing: false, flowAnim: 0
+          });
+          sndBuild();
+        }
+      }
+    }
+    dragging = null;
+  }
+}
+
+// Mouse events
+canvas.addEventListener('mousedown', e => { e.preventDefault(); onPointerDown(e.clientX, e.clientY); });
+canvas.addEventListener('mousemove', e => { onPointerMove(e.clientX, e.clientY); });
+canvas.addEventListener('mouseup', e => { onPointerUp(e.clientX, e.clientY); });
+canvas.addEventListener('contextmenu', e => e.preventDefault());
+
+// Touch events
+canvas.addEventListener('touchstart', e => {
+  e.preventDefault();
+  const t = e.touches[0];
+  onPointerDown(t.clientX, t.clientY);
+}, {passive: false});
+
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  const t = e.touches[0];
+  onPointerMove(t.clientX, t.clientY);
+}, {passive: false});
+
+canvas.addEventListener('touchend', e => {
+  e.preventDefault();
+  const t = e.changedTouches[0];
+  onPointerUp(t.clientX, t.clientY);
+}, {passive: false});
+
+// --- START ---
+requestAnimationFrame(loop);
+
+})();
+</script>
+</body>
+</html>

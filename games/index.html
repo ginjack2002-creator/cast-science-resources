@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAST Science Games — Grade 5</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a1a;color:#e8e4dc;min-height:100vh}
+.header{text-align:center;padding:48px 24px 32px;background:linear-gradient(180deg,#1a1040 0%,#0a0a1a 100%)}
+.header h1{font-size:clamp(28px,5vw,48px);font-weight:800;background:linear-gradient(135deg,#FFD166,#FF8C42,#E84040);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+.header p{font-size:clamp(14px,2vw,18px);color:rgba(232,228,220,0.6);max-width:600px;margin:0 auto}
+.header .badge{display:inline-block;margin-top:12px;padding:4px 14px;border-radius:20px;background:rgba(255,209,102,0.12);color:#FFD166;font-size:13px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;padding:24px;max-width:1200px;margin:0 auto}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden;transition:transform 0.2s,border-color 0.2s;cursor:pointer;text-decoration:none;color:inherit;display:block}
+.card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.15)}
+.card-top{height:140px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card-top .icon{font-size:56px;z-index:1}
+.card-body{padding:20px}
+.card-body h2{font-size:20px;font-weight:700;margin-bottom:4px}
+.card-body .genre{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;opacity:0.5}
+.card-body p{font-size:14px;line-height:1.5;color:rgba(232,228,220,0.65);margin-bottom:12px}
+.card-body .lesson{font-size:12px;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,0.06);display:inline-block;color:rgba(232,228,220,0.5)}
+.card-body .science{font-size:12px;color:rgba(255,209,102,0.6);margin-top:8px;font-style:italic}
+.footer{text-align:center;padding:40px 24px;color:rgba(232,228,220,0.3);font-size:13px}
+.footer a{color:rgba(255,209,102,0.5);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>CAST Science Games</h1>
+  <p>8 fun-first arcade games for Grade 5 science. No quizzes. No lessons. Just play.</p>
+  <span class="badge">Grade 5 &middot; NGSS Aligned &middot; 8 Games</span>
+</div>
+<div class="grid">
+  <a class="card" href="wildfire/ember.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#1B1145,#E8845C)">
+      <span class="icon">&#128293;</span>
+    </div>
+    <div class="card-body">
+      <h2>EMBER</h2>
+      <div class="genre">Growth Arcade</div>
+      <p>You ARE a wildfire. Eat dry fuel to grow massive. Dodge rain clouds. Ride wind gusts. Don't burn out.</p>
+      <span class="lesson">L01: When Trees Become Matches</span>
+      <div class="science">Drought, wind, vegetation &amp; fire spread</div>
+    </div>
+  </a>
+  <a class="card" href="decompose/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#3E2723,#5B8C5A)">
+      <span class="icon">&#127812;</span>
+    </div>
+    <div class="card-body">
+      <h2>DECOMPOSE</h2>
+      <div class="genre">Tower Defense</div>
+      <p>Place mushrooms, worms, and bacteria to break down falling dead matter before it buries the forest floor.</p>
+      <span class="lesson">L02: Nature's Recycling System</span>
+      <div class="science">Decomposers, moisture, nutrient cycling</div>
+    </div>
+  </a>
+  <a class="card" href="photon/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#1A0A3E,#FFD700)">
+      <span class="icon">&#9728;&#65039;</span>
+    </div>
+    <div class="card-body">
+      <h2>PHOTON</h2>
+      <div class="genre">Endless Runner</div>
+      <p>Race from the sun through the food chain. Each energy transfer drops you to 10%. How far can you go?</p>
+      <span class="lesson">L03: Powered by the Sun</span>
+      <div class="science">Energy transfer, food chains, 10% rule</div>
+    </div>
+  </a>
+  <a class="card" href="aquifer/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#1B3A5C,#4FC3F7)">
+      <span class="icon">&#128167;</span>
+    </div>
+    <div class="card-body">
+      <h2>AQUIFER</h2>
+      <div class="genre">Puzzle Strategy</div>
+      <p>Control the water cycle. Route rain to cities. Only 1% of Earth's water is usable — make it count.</p>
+      <span class="lesson">L04: Earth's Hidden Water</span>
+      <div class="science">Water distribution, evaporation, scarcity</div>
+    </div>
+  </a>
+  <a class="card" href="phase-shift/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#00BCD4,#FF5722)">
+      <span class="icon">&#10052;&#65039;</span>
+    </div>
+    <div class="card-body">
+      <h2>PHASE SHIFT</h2>
+      <div class="genre">Puzzle Platformer</div>
+      <p>Shift between ice, water, and steam to solve puzzles. Your mass never changes. 25 levels across 5 worlds.</p>
+      <span class="lesson">L05: The Disappearing Act</span>
+      <div class="science">Conservation of mass, states of matter</div>
+    </div>
+  </a>
+  <a class="card" href="carbon/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#3E2723,#4CAF50)">
+      <span class="icon">&#127794;</span>
+    </div>
+    <div class="card-body">
+      <h2>CARBON</h2>
+      <div class="genre">Idle Growth Sim</div>
+      <p>Grow a seedling into an ancient giant by catching CO&#8322; from the air. 95% of a tree's mass comes from air!</p>
+      <span class="lesson">L06: Where Does a Tree's Mass Come From?</span>
+      <div class="science">Photosynthesis, CO&#8322; absorption, carbon storage</div>
+    </div>
+  </a>
+  <a class="card" href="mycelium/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#1A0A2E,#CE93D8)">
+      <span class="icon">&#127812;</span>
+    </div>
+    <div class="card-body">
+      <h2>MYCELIUM</h2>
+      <div class="genre">Network Strategy</div>
+      <p>Build the Wood Wide Web. Connect trees through underground fungal networks to share nutrients and survive.</p>
+      <span class="lesson">L07: The Mushroom Network</span>
+      <div class="science">Mycorrhizal networks, mutualism, ecosystem resilience</div>
+    </div>
+  </a>
+  <a class="card" href="soap-strike/index.html">
+    <div class="card-top" style="background:linear-gradient(135deg,#1A237E,#FFD54F)">
+      <span class="icon">&#129532;</span>
+    </div>
+    <div class="card-body">
+      <h2>SOAP STRIKE</h2>
+      <div class="genre">Arena Action</div>
+      <p>You're a soap molecule. Ram into viruses tail-first to rip their membranes apart. Build your squad. Survive.</p>
+      <span class="lesson">L08: How Soap Destroys Viruses</span>
+      <div class="science">Amphiphilic molecules, lipid membranes, handwashing</div>
+    </div>
+  </a>
+</div>
+<div class="footer">
+  <p>CAST Science Games &middot; Grade 5 &middot; NGSS Aligned</p>
+  <p style="margin-top:8px">Built for <a href="https://alexandriasworld1234-source.github.io/cast-science-resources/">CAST Science Resources</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SOAP STRIKE — Virus Arena</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0A1628}
+canvas{display:block;width:100%;height:100%;touch-action:none;cursor:default}
+#rp{display:none;position:fixed;inset:0;background:#0A1628;color:#E3F2FD;z-index:100;
+flex-direction:column;align-items:center;justify-content:center;font-family:system-ui,sans-serif;
+text-align:center;padding:20px}
+#rp .ic{font-size:60px;margin-bottom:20px}
+#rp .mg{font-size:18px;opacity:0.8}
+@media(orientation:portrait)and(max-width:768px){#rp{display:flex}canvas{display:none}}
+</style>
+</head>
+<body>
+<div id="rp"><div class="ic">&#x1F4F1;&#x21BB;</div><div class="mg">Rotate to landscape</div></div>
+<canvas id="game"></canvas>
+<script>
+'use strict';
+
+// ===================================================================
+// SOAP STRIKE — Virus Arena Game
+// G05 | CAST Science Resources | NGSS 5-PS1-4
+// You ARE a soap molecule. Ram viruses tail-first to rip their
+// lipid membranes apart. Grow your squad. Save the surface.
+// ===================================================================
+
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+let W = 0, H = 0;
+
+// --- GAME STATES ---
+const GS_TITLE = 0, GS_HOWTO = 1, GS_SELECT = 2, GS_INTRO = 3;
+const GS_PLAYING = 4, GS_COMPLETE = 5, GS_OVER = 6;
+
+// --- VIRUS TYPES ---
+const V_SMALL = 0, V_MEDIUM = 1, V_LARGE = 2, V_BOSS = 3;
+
+// --- POWER-UP TYPES ---
+const PU_LATHER = 0, PU_HOTWATER = 1, PU_ANTIBAC = 2, PU_TIMER = 3;
+
+// --- COLORS ---
+const COL_ARENA_BG = '#E3F2FD';
+const COL_ARENA_BORDER = '#64B5F6';
+const COL_HEAD = '#42A5F5';
+const COL_TAIL = '#FFD54F';
+const COL_VSMALL = '#66BB6A';
+const COL_VMED = '#FFA726';
+const COL_VLARGE = '#EF5350';
+const COL_VBOSS = '#AB47BC';
+const COL_PROJ = '#CE93D8';
+const COL_WATER = '#4DD0E1';
+const COL_POWERUP = '#FFD700';
+const COL_UI_BG = '#1A237E';
+const COL_UI_TEXT = '#E3F2FD';
+
+// --- CONSTANTS ---
+const PLAYER_SPEED = 220;
+const PLAYER_RADIUS = 14;
+const SQUAD_RADIUS = 9;
+const SQUAD_ORBIT_DIST = 40;
+const SQUAD_SPAWN_INTERVAL = 15;
+const MAX_SQUAD = 8;
+const GRAB_DIST = 8;
+const GRAB_STRETCH_MAX = 55;
+const GRAB_STRETCH_SPEED = 130;
+const MEMBRANE_POP_DIST = 50;
+
+// Particle pool
+const MAX_PARTICLES = 800;
+let particles = [];
+let particleCount = 0;
+
+// --- AUDIO SYSTEM ---
+let audioCtx = null;
+function initAudio() {
+    if (audioCtx) return;
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+}
+
+function playSound(type) {
+    if (!audioCtx) return;
+    const t = audioCtx.currentTime;
+    switch (type) {
+        case 'grab': {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(120, t);
+            osc.frequency.exponentialRampToValueAtTime(60, t + 0.15);
+            gain.gain.setValueAtTime(0.3, t);
+            gain.gain.exponentialRampToValueAtTime(0.01, t + 0.2);
+            osc.connect(gain).connect(audioCtx.destination);
+            osc.start(t);
+            osc.stop(t + 0.2);
+            // noise layer
+            const buf = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.1, audioCtx.sampleRate);
+            const d = buf.getChannelData(0);
+            for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * 0.15;
+            const ns = audioCtx.createBufferSource();
+            const ng = audioCtx.createGain();
+            ns.buffer = buf;
+            ng.gain.setValueAtTime(0.2, t);
+            ng.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+            ns.connect(ng).connect(audioCtx.destination);
+            ns.start(t);
+            break;
+        }
+        case 'pop': {
+            const buf = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.15, audioCtx.sampleRate);
+            const d = buf.getChannelData(0);
+            for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * 0.4;
+            const ns = audioCtx.createBufferSource();
+            const ng = audioCtx.createGain();
+            ns.buffer = buf;
+            ng.gain.setValueAtTime(0.5, t);
+            ng.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+            ns.connect(ng).connect(audioCtx.destination);
+            ns.start(t);
+            const osc = audioCtx.createOscillator();
+            const og = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(800, t);
+            osc.frequency.exponentialRampToValueAtTime(200, t + 0.12);
+            og.gain.setValueAtTime(0.3, t);
+            og.gain.exponentialRampToValueAtTime(0.01, t + 0.12);
+            osc.connect(og).connect(audioCtx.destination);
+            osc.start(t);
+            osc.stop(t + 0.15);
+            break;
+        }
+        case 'bounce': {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(150, t);
+            osc.frequency.linearRampToValueAtTime(80, t + 0.15);
+            gain.gain.setValueAtTime(0.2, t);
+            gain.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+            osc.connect(gain).connect(audioCtx.destination);
+            osc.start(t);
+            osc.stop(t + 0.15);
+            break;
+        }
+        case 'splash': {
+            const buf = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.25, audioCtx.sampleRate);
+            const d = buf.getChannelData(0);
+            for (let i = 0; i < d.length; i++) {
+                const env = 1 - i / d.length;
+                d[i] = (Math.random() * 2 - 1) * env * 0.3;
+            }
+            const ns = audioCtx.createBufferSource();
+            const flt = audioCtx.createBiquadFilter();
+            flt.type = 'bandpass';
+            flt.frequency.setValueAtTime(2000, t);
+            flt.frequency.exponentialRampToValueAtTime(500, t + 0.25);
+            const ng = audioCtx.createGain();
+            ng.gain.setValueAtTime(0.35, t);
+            ng.gain.exponentialRampToValueAtTime(0.01, t + 0.25);
+            ns.buffer = buf;
+            ns.connect(flt).connect(ng).connect(audioCtx.destination);
+            ns.start(t);
+            break;
+        }
+        case 'powerup': {
+            const notes = [523, 659, 784, 1047];
+            notes.forEach((freq, i) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, t + i * 0.08);
+                gain.gain.setValueAtTime(0, t);
+                gain.gain.linearRampToValueAtTime(0.2, t + i * 0.08);
+                gain.gain.exponentialRampToValueAtTime(0.01, t + i * 0.08 + 0.2);
+                osc.connect(gain).connect(audioCtx.destination);
+                osc.start(t + i * 0.08);
+                osc.stop(t + i * 0.08 + 0.25);
+            });
+            break;
+        }
+        case 'boss': {
+            for (let i = 0; i < 3; i++) {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'square';
+                osc.frequency.setValueAtTime(80 + i * 30, t);
+                osc.frequency.linearRampToValueAtTime(40 + i * 15, t + 0.6);
+                gain.gain.setValueAtTime(0.12, t);
+                gain.gain.exponentialRampToValueAtTime(0.01, t + 0.6);
+                osc.connect(gain).connect(audioCtx.destination);
+                osc.start(t);
+                osc.stop(t + 0.65);
+            }
+            break;
+        }
+        case 'victory': {
+            const notes = [523, 659, 784, 880, 1047, 1319, 1568];
+            notes.forEach((freq, i) => {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, t + i * 0.1);
+                gain.gain.setValueAtTime(0, t);
+                gain.gain.linearRampToValueAtTime(0.2, t + i * 0.1);
+                gain.gain.exponentialRampToValueAtTime(0.01, t + i * 0.1 + 0.3);
+                osc.connect(gain).connect(audioCtx.destination);
+                osc.start(t + i * 0.1);
+                osc.stop(t + i * 0.1 + 0.35);
+            });
+            break;
+        }
+        case 'hit': {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'square';
+            osc.frequency.setValueAtTime(200, t);
+            osc.frequency.exponentialRampToValueAtTime(50, t + 0.2);
+            gain.gain.setValueAtTime(0.25, t);
+            gain.gain.exponentialRampToValueAtTime(0.01, t + 0.2);
+            osc.connect(gain).connect(audioCtx.destination);
+            osc.start(t);
+            osc.stop(t + 0.25);
+            break;
+        }
+        case 'antibac': {
+            const buf = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.5, audioCtx.sampleRate);
+            const d = buf.getChannelData(0);
+            for (let i = 0; i < d.length; i++) {
+                const env = Math.sin(Math.PI * i / d.length);
+                d[i] = (Math.random() * 2 - 1) * env * 0.3;
+            }
+            const ns = audioCtx.createBufferSource();
+            const flt = audioCtx.createBiquadFilter();
+            flt.type = 'highpass';
+            flt.frequency.setValueAtTime(500, t);
+            flt.frequency.exponentialRampToValueAtTime(4000, t + 0.5);
+            const ng = audioCtx.createGain();
+            ng.gain.setValueAtTime(0.4, t);
+            ng.gain.exponentialRampToValueAtTime(0.01, t + 0.5);
+            ns.buffer = buf;
+            ns.connect(flt).connect(ng).connect(audioCtx.destination);
+            ns.start(t);
+            break;
+        }
+    }
+}
+
+// --- INPUT ---
+const keys = {};
+let touchJoystick = null;
+let touchJoystickId = null;
+let touchActive = false;
+
+window.addEventListener('keydown', e => {
+    keys[e.code] = true;
+    if (['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code)) e.preventDefault();
+    handleUIKey(e.code);
+});
+window.addEventListener('keyup', e => { keys[e.code] = false; });
+
+canvas.addEventListener('touchstart', e => {
+    e.preventDefault();
+    initAudio();
+    for (const touch of e.changedTouches) {
+        const rect = canvas.getBoundingClientRect();
+        const tx = (touch.clientX - rect.left) / rect.width * W;
+        const ty = (touch.clientY - rect.top) / rect.height * H;
+        if (gameState === GS_PLAYING) {
+            if (tx < W * 0.4 && touchJoystickId === null) {
+                touchJoystickId = touch.identifier;
+                touchJoystick = { sx: tx, sy: ty, cx: tx, cy: ty };
+                touchActive = true;
+            }
+        } else {
+            handleClick(tx, ty);
+        }
+    }
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    for (const touch of e.changedTouches) {
+        if (touch.identifier === touchJoystickId && touchJoystick) {
+            const rect = canvas.getBoundingClientRect();
+            touchJoystick.cx = (touch.clientX - rect.left) / rect.width * W;
+            touchJoystick.cy = (touch.clientY - rect.top) / rect.height * H;
+        }
+    }
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+    for (const touch of e.changedTouches) {
+        if (touch.identifier === touchJoystickId) {
+            touchJoystickId = null;
+            touchJoystick = null;
+            touchActive = false;
+        }
+    }
+});
+
+canvas.addEventListener('click', e => {
+    initAudio();
+    const rect = canvas.getBoundingClientRect();
+    const cx = (e.clientX - rect.left) / rect.width * W;
+    const cy = (e.clientY - rect.top) / rect.height * H;
+    handleClick(cx, cy);
+});
+
+// --- GAME STATE ---
+let gameState = GS_TITLE;
+let currentLevel = 0;
+let levelTimer = 0;
+let levelDuration = 75;
+let score = 0;
+let combo = 0;
+let comboMultiplier = 1;
+let totalScore = 0;
+let screenShake = 0;
+let damageFlash = 0;
+let introTimer = 0;
+
+// Player
+let player = {
+    x: 0, y: 0, vx: 0, vy: 0,
+    angle: 0, radius: PLAYER_RADIUS,
+    hp: 1, stunTimer: 0,
+    grabTarget: null, grabDist: 0, grabAngle: 0,
+    speedBoost: 0
+};
+
+// Squad
+let squad = [];
+let squadSpawnTimer = 0;
+
+// Arena
+let arenaX = 0, arenaY = 0, arenaRadius = 250;
+let arenaMaxRadius = 250;
+let waterLevel = 1.0;
+let waterDrainRate = 0.008;
+
+// Entities
+let viruses = [];
+let projectiles = [];
+let powerups = [];
+let waterDrops = [];
+let ripples = [];
+
+// Spawn timers
+let virusSpawnTimer = 0;
+let virusSpawnRate = 3.0;
+let powerupSpawnTimer = 0;
+let waterSpawnTimer = 0;
+let bossSpawned = false;
+let bossDefeated = false;
+
+// Level data
+const LEVELS = [
+    { name: 'Hand Washing', desc: '"You have 20 seconds!"', duration: 70, drain: 0.005, spawnRate: 3.5,
+      small: 1.0, medium: 0, large: 0, boss: false, surface: 'A warm soapy hand' },
+    { name: 'Kitchen Counter', desc: 'Grease and germs everywhere!', duration: 80, drain: 0.008, spawnRate: 2.8,
+      small: 0.7, medium: 0.3, large: 0, boss: false, surface: 'A dirty kitchen counter' },
+    { name: 'Hospital Ward', desc: 'Fast viruses, tight space', duration: 85, drain: 0.012, spawnRate: 2.2,
+      small: 0.5, medium: 0.35, large: 0.15, boss: false, surface: 'A hospital bed rail' },
+    { name: 'School Desk', desc: 'Dense virus territory', duration: 90, drain: 0.01, spawnRate: 1.8,
+      small: 0.4, medium: 0.35, large: 0.25, boss: false, surface: 'A shared school desk' },
+    { name: 'Phone Screen', desc: 'The ultimate challenge!', duration: 100, drain: 0.015, spawnRate: 1.5,
+      small: 0.3, medium: 0.3, large: 0.25, boss: true, surface: 'A filthy phone screen' }
+];
+
+// High scores
+let highScores = {};
+let levelUnlocks = [true, false, false, false, false];
+
+// UI buttons
+let buttons = [];
+
+// Title animation
+let titleTime = 0;
+let titleVirusX = 0, titleVirusY = 0;
+let titleSoapX = 0, titleSoapY = 0, titleSoapAngle = 0;
+let titleBurst = false, titleBurstTime = 0;
+
+// --- SAVE / LOAD ---
+function saveData() {
+    try {
+        localStorage.setItem('soapstrike_scores', JSON.stringify(highScores));
+        localStorage.setItem('soapstrike_unlocks', JSON.stringify(levelUnlocks));
+    } catch(e) {}
+}
+
+function loadData() {
+    try {
+        const s = localStorage.getItem('soapstrike_scores');
+        if (s) highScores = JSON.parse(s);
+        const u = localStorage.getItem('soapstrike_unlocks');
+        if (u) levelUnlocks = JSON.parse(u);
+    } catch(e) {}
+}
+
+// --- RESIZE ---
+function resize() {
+    const dpr = window.devicePixelRatio || 1;
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    arenaX = W * 0.48;
+    arenaY = H * 0.5;
+    arenaMaxRadius = Math.min(W * 0.38, H * 0.44);
+}
+window.addEventListener('resize', resize);
+resize();
+loadData();
+
+// --- PARTICLE SYSTEM ---
+function createParticle(x, y, vx, vy, life, color, size, type) {
+    if (particleCount >= MAX_PARTICLES) return;
+    particles[particleCount] = {
+        x, y, vx, vy, life, maxLife: life,
+        color, size, type: type || 'circle',
+        active: true
+    };
+    particleCount++;
+}
+
+function updateParticles(dt) {
+    let writeIdx = 0;
+    for (let i = 0; i < particleCount; i++) {
+        const p = particles[i];
+        if (!p.active) continue;
+        p.life -= dt;
+        if (p.life <= 0) { p.active = false; continue; }
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        p.vx *= 0.98;
+        p.vy *= 0.98;
+        if (writeIdx !== i) particles[writeIdx] = p;
+        writeIdx++;
+    }
+    particleCount = writeIdx;
+}
+
+function drawParticles() {
+    for (let i = 0; i < particleCount; i++) {
+        const p = particles[i];
+        const alpha = Math.max(0, p.life / p.maxLife);
+        const sz = p.size * (0.5 + 0.5 * alpha);
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = p.color;
+        if (p.type === 'circle') {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, sz, 0, Math.PI * 2);
+            ctx.fill();
+        } else if (p.type === 'ring') {
+            ctx.strokeStyle = p.color;
+            ctx.lineWidth = 2 * alpha;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, sz + (1 - alpha) * 20, 0, Math.PI * 2);
+            ctx.stroke();
+        } else if (p.type === 'membrane') {
+            ctx.beginPath();
+            ctx.moveTo(p.x - sz, p.y);
+            ctx.quadraticCurveTo(p.x, p.y - sz * 2, p.x + sz, p.y);
+            ctx.strokeStyle = p.color;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        }
+    }
+    ctx.globalAlpha = 1;
+}
+
+// --- RIPPLE SYSTEM ---
+function spawnRipple(x, y) {
+    ripples.push({ x, y, radius: 5, maxRadius: 40 + Math.random() * 30, life: 1.0 });
+}
+
+function updateRipples(dt) {
+    for (let i = ripples.length - 1; i >= 0; i--) {
+        const r = ripples[i];
+        r.life -= dt * 0.8;
+        r.radius += dt * 60;
+        if (r.life <= 0) ripples.splice(i, 1);
+    }
+}
+
+function drawRipples() {
+    for (const r of ripples) {
+        ctx.globalAlpha = r.life * 0.3;
+        ctx.strokeStyle = '#90CAF9';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
+        ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+}
+
+// --- BURST EFFECTS ---
+function spawnMembraneBurst(x, y, color, count) {
+    for (let i = 0; i < count; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 80 + Math.random() * 180;
+        createParticle(x, y,
+            Math.cos(angle) * speed, Math.sin(angle) * speed,
+            0.5 + Math.random() * 0.6, color, 3 + Math.random() * 4, 'membrane');
+    }
+    for (let i = 0; i < count * 0.6; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 50 + Math.random() * 120;
+        createParticle(x, y,
+            Math.cos(angle) * speed, Math.sin(angle) * speed,
+            0.3 + Math.random() * 0.4, '#FFFFFF', 2 + Math.random() * 3, 'circle');
+    }
+    spawnRipple(x, y);
+    screenShake = 0.2;
+}
+
+function spawnVirusDeathEffect(x, y, color) {
+    // Spiral unravel
+    for (let i = 0; i < 20; i++) {
+        const angle = (i / 20) * Math.PI * 4;
+        const dist = i * 3;
+        const px = x + Math.cos(angle) * dist;
+        const py = y + Math.sin(angle) * dist;
+        createParticle(px, py,
+            Math.cos(angle) * 60, Math.sin(angle) * 60,
+            0.4 + Math.random() * 0.5, color, 3, 'membrane');
+    }
+    // Protein scatter
+    for (let i = 0; i < 8; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 100 + Math.random() * 80;
+        createParticle(x, y,
+            Math.cos(angle) * speed, Math.sin(angle) * speed,
+            0.6 + Math.random() * 0.4, '#4E342E', 2 + Math.random() * 2, 'circle');
+    }
+}
+
+// --- ENTITY: VIRUS ---
+function createVirus(type, x, y) {
+    const defs = [
+        { radius: 15, hp: 1, speed: 40, color: COL_VSMALL, points: 10, shootRate: 0 },
+        { radius: 22, hp: 3, speed: 60, color: COL_VMED, points: 30, shootRate: 3.0 },
+        { radius: 30, hp: 5, speed: 30, color: COL_VLARGE, points: 50, shootRate: 2.0 },
+        { radius: 40, hp: 10, speed: 50, color: COL_VBOSS, points: 200, shootRate: 1.2 }
+    ];
+    const d = defs[type];
+    return {
+        type, x, y, vx: 0, vy: 0,
+        radius: d.radius, hp: d.hp, maxHp: d.hp,
+        speed: d.speed, color: d.color, points: d.points,
+        shootTimer: d.shootRate > 0 ? Math.random() * d.shootRate : 999,
+        shootRate: d.shootRate,
+        pulsePhase: Math.random() * Math.PI * 2,
+        spikes: type >= V_MEDIUM ? 5 + type * 3 : 0,
+        active: true, hitFlash: 0,
+        bossPhase: 0, bossAttackTimer: 3,
+        membraneHP: d.hp
+    };
+}
+
+function spawnVirusAtEdge(type) {
+    const angle = Math.random() * Math.PI * 2;
+    const dist = arenaRadius * waterLevel * 0.85;
+    const x = arenaX + Math.cos(angle) * dist;
+    const y = arenaY + Math.sin(angle) * dist;
+    viruses.push(createVirus(type, x, y));
+}
+
+function updateViruses(dt) {
+    for (let i = viruses.length - 1; i >= 0; i--) {
+        const v = viruses[i];
+        if (!v.active) { viruses.splice(i, 1); continue; }
+
+        v.pulsePhase += dt * 2;
+        v.hitFlash = Math.max(0, v.hitFlash - dt * 5);
+
+        // Move toward player
+        const dx = player.x - v.x;
+        const dy = player.y - v.y;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        let moveSpeed = v.speed;
+        if (v.type === V_BOSS) {
+            v.bossPhase += dt;
+            // Boss circles and charges
+            if (v.bossAttackTimer > 0) {
+                v.bossAttackTimer -= dt;
+                const circleAngle = Math.atan2(dy, dx) + Math.PI * 0.5;
+                v.vx += Math.cos(circleAngle) * moveSpeed * dt * 3;
+                v.vy += Math.sin(circleAngle) * moveSpeed * dt * 3;
+            } else {
+                // Charge at player
+                v.vx += (dx / dist) * moveSpeed * dt * 6;
+                v.vy += (dy / dist) * moveSpeed * dt * 6;
+                if (dist < 60 || v.bossPhase > 2) {
+                    v.bossAttackTimer = 2 + Math.random() * 2;
+                    v.bossPhase = 0;
+                }
+            }
+        } else {
+            v.vx += (dx / dist) * moveSpeed * dt * 2;
+            v.vy += (dy / dist) * moveSpeed * dt * 2;
+        }
+
+        v.vx *= 0.95;
+        v.vy *= 0.95;
+        v.x += v.vx * dt;
+        v.y += v.vy * dt;
+
+        // Keep inside arena
+        const adx = v.x - arenaX;
+        const ady = v.y - arenaY;
+        const adist = Math.sqrt(adx * adx + ady * ady);
+        const boundary = arenaRadius * waterLevel - v.radius;
+        if (adist > boundary && boundary > 0) {
+            v.x = arenaX + (adx / adist) * boundary;
+            v.y = arenaY + (ady / adist) * boundary;
+            v.vx *= -0.5;
+            v.vy *= -0.5;
+        }
+
+        // Shoot projectiles
+        if (v.shootRate > 0) {
+            v.shootTimer -= dt;
+            if (v.shootTimer <= 0) {
+                v.shootTimer = v.shootRate + Math.random() * 0.5;
+                const pdx = player.x - v.x;
+                const pdy = player.y - v.y;
+                const pd = Math.sqrt(pdx * pdx + pdy * pdy) || 1;
+                const pspeed = 120 + v.type * 20;
+                projectiles.push({
+                    x: v.x, y: v.y,
+                    vx: (pdx / pd) * pspeed, vy: (pdy / pd) * pspeed,
+                    radius: 4, life: 3.0
+                });
+                if (v.type === V_BOSS) {
+                    // Boss fires spread
+                    for (let j = -1; j <= 1; j += 2) {
+                        const spreadAngle = Math.atan2(pdy, pdx) + j * 0.4;
+                        projectiles.push({
+                            x: v.x, y: v.y,
+                            vx: Math.cos(spreadAngle) * pspeed * 0.8,
+                            vy: Math.sin(spreadAngle) * pspeed * 0.8,
+                            radius: 4, life: 3.0
+                        });
+                    }
+                }
+            }
+        }
+
+        // Check HP
+        if (v.hp <= 0) {
+            v.active = false;
+            const virusColor = v.color;
+            spawnMembraneBurst(v.x, v.y, virusColor, 15 + v.type * 5);
+            spawnVirusDeathEffect(v.x, v.y, virusColor);
+            playSound('pop');
+
+            score += v.points * comboMultiplier;
+            combo++;
+            if (combo >= 10) comboMultiplier = 5;
+            else if (combo >= 5) comboMultiplier = 3;
+            else if (combo >= 3) comboMultiplier = 2;
+            else comboMultiplier = 1;
+
+            // Large virus spawns 2 small
+            if (v.type === V_LARGE) {
+                for (let s = 0; s < 2; s++) {
+                    const sv = createVirus(V_SMALL,
+                        v.x + (Math.random() - 0.5) * 30,
+                        v.y + (Math.random() - 0.5) * 30);
+                    viruses.push(sv);
+                }
+            }
+
+            if (v.type === V_BOSS) {
+                bossDefeated = true;
+                score += 200;
+                screenShake = 0.5;
+            }
+        }
+    }
+}
+
+function drawVirus(v) {
+    const pulse = 1 + Math.sin(v.pulsePhase) * 0.05;
+    const r = v.radius * pulse;
+
+    ctx.save();
+    ctx.translate(v.x, v.y);
+
+    // Membrane glow
+    ctx.globalAlpha = 0.3;
+    ctx.fillStyle = v.color;
+    ctx.beginPath();
+    ctx.arc(0, 0, r + 6, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Hit flash
+    if (v.hitFlash > 0) {
+        ctx.fillStyle = '#FFFFFF';
+        ctx.globalAlpha = v.hitFlash;
+        ctx.beginPath();
+        ctx.arc(0, 0, r + 3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+
+    // Membrane circle
+    ctx.fillStyle = v.color;
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Darker interior
+    const darker = v.type === V_SMALL ? '#388E3C' :
+                   v.type === V_MEDIUM ? '#E65100' :
+                   v.type === V_LARGE ? '#C62828' : '#7B1FA2';
+    ctx.fillStyle = darker;
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 0.65, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Spikes / proteins
+    if (v.spikes > 0) {
+        ctx.strokeStyle = darker;
+        ctx.lineWidth = 2.5;
+        for (let s = 0; s < v.spikes; s++) {
+            const sa = (s / v.spikes) * Math.PI * 2 + v.pulsePhase * 0.3;
+            const sx1 = Math.cos(sa) * r;
+            const sy1 = Math.sin(sa) * r;
+            const sx2 = Math.cos(sa) * (r + 8 + v.type * 2);
+            const sy2 = Math.sin(sa) * (r + 8 + v.type * 2);
+            ctx.beginPath();
+            ctx.moveTo(sx1, sy1);
+            ctx.lineTo(sx2, sy2);
+            ctx.stroke();
+            // Protein tip
+            ctx.fillStyle = v.color;
+            ctx.beginPath();
+            ctx.arc(sx2, sy2, 3, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    // Boss aura
+    if (v.type === V_BOSS) {
+        ctx.globalAlpha = 0.15 + Math.sin(v.pulsePhase * 2) * 0.1;
+        ctx.strokeStyle = COL_VBOSS;
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(0, 0, r + 15 + Math.sin(v.pulsePhase) * 5, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+    }
+
+    // HP bar for multi-HP viruses
+    if (v.maxHp > 1) {
+        const barW = r * 2;
+        const barH = 4;
+        const barY = -r - 10;
+        ctx.fillStyle = '#333';
+        ctx.fillRect(-barW / 2, barY, barW, barH);
+        ctx.fillStyle = v.hp > v.maxHp * 0.3 ? '#4CAF50' : '#F44336';
+        ctx.fillRect(-barW / 2, barY, barW * (v.hp / v.maxHp), barH);
+    }
+
+    ctx.restore();
+}
+
+// --- ENTITY: PROJECTILES ---
+function updateProjectiles(dt) {
+    for (let i = projectiles.length - 1; i >= 0; i--) {
+        const p = projectiles[i];
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        p.life -= dt;
+
+        // Out of arena?
+        const dx = p.x - arenaX;
+        const dy = p.y - arenaY;
+        if (Math.sqrt(dx * dx + dy * dy) > arenaRadius * waterLevel + 20) {
+            projectiles.splice(i, 1);
+            continue;
+        }
+        if (p.life <= 0) {
+            projectiles.splice(i, 1);
+            continue;
+        }
+
+        // Hit player or squad?
+        const pdx = p.x - player.x;
+        const pdy = p.y - player.y;
+        if (Math.sqrt(pdx * pdx + pdy * pdy) < player.radius + p.radius) {
+            projectiles.splice(i, 1);
+            hitPlayer();
+            continue;
+        }
+    }
+}
+
+function drawProjectiles() {
+    for (const p of projectiles) {
+        ctx.globalAlpha = Math.min(1, p.life * 2);
+        ctx.fillStyle = COL_PROJ;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        // Trail
+        ctx.globalAlpha = 0.3;
+        ctx.beginPath();
+        ctx.arc(p.x - p.vx * 0.02, p.y - p.vy * 0.02, p.radius * 0.7, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+}
+
+// --- PLAYER ---
+function hitPlayer() {
+    if (player.stunTimer > 0) return;
+    playSound('hit');
+    damageFlash = 0.3;
+    combo = 0;
+    comboMultiplier = 1;
+
+    if (squad.length > 0) {
+        // Lose a squad member
+        const lost = squad.pop();
+        spawnMembraneBurst(lost.x, lost.y, COL_TAIL, 6);
+    } else {
+        // Game over
+        player.hp = 0;
+    }
+    player.stunTimer = 0.5;
+    screenShake = 0.15;
+}
+
+function getInputDir() {
+    let ix = 0, iy = 0;
+    if (keys['ArrowLeft'] || keys['KeyA']) ix -= 1;
+    if (keys['ArrowRight'] || keys['KeyD']) ix += 1;
+    if (keys['ArrowUp'] || keys['KeyW']) iy -= 1;
+    if (keys['ArrowDown'] || keys['KeyS']) iy += 1;
+
+    if (touchJoystick) {
+        const tdx = touchJoystick.cx - touchJoystick.sx;
+        const tdy = touchJoystick.cy - touchJoystick.sy;
+        const tdist = Math.sqrt(tdx * tdx + tdy * tdy);
+        if (tdist > 10) {
+            ix = tdx / tdist;
+            iy = tdy / tdist;
+        }
+    }
+
+    const len = Math.sqrt(ix * ix + iy * iy);
+    if (len > 0) { ix /= len; iy /= len; }
+    return { x: ix, y: iy };
+}
+
+function updatePlayer(dt) {
+    if (player.hp <= 0) return;
+    player.stunTimer = Math.max(0, player.stunTimer - dt);
+    player.speedBoost = Math.max(0, player.speedBoost - dt);
+
+    const input = getInputDir();
+    let speed = PLAYER_SPEED * waterLevel;
+    if (waterLevel < 0.4) speed *= 0.5;
+    if (player.speedBoost > 0) speed *= 1.6;
+    if (player.stunTimer > 0) speed *= 0.3;
+
+    player.vx += input.x * speed * dt * 8;
+    player.vy += input.y * speed * dt * 8;
+    player.vx *= 0.88;
+    player.vy *= 0.88;
+    player.x += player.vx * dt;
+    player.y += player.vy * dt;
+
+    // Rotate toward movement direction
+    const moveSpeed = Math.sqrt(player.vx * player.vx + player.vy * player.vy);
+    if (moveSpeed > 10) {
+        const targetAngle = Math.atan2(player.vy, player.vx);
+        let diff = targetAngle - player.angle;
+        while (diff > Math.PI) diff -= Math.PI * 2;
+        while (diff < -Math.PI) diff += Math.PI * 2;
+        player.angle += diff * Math.min(1, dt * 10);
+    }
+
+    // Keep in arena
+    const dx = player.x - arenaX;
+    const dy = player.y - arenaY;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    const boundary = arenaRadius * waterLevel - player.radius;
+    if (dist > boundary && boundary > 0) {
+        player.x = arenaX + (dx / dist) * boundary;
+        player.y = arenaY + (dy / dist) * boundary;
+        player.vx *= -0.3;
+        player.vy *= -0.3;
+    }
+
+    // --- GRAB / ATTACK MECHANIC ---
+    if (player.grabTarget) {
+        const gt = player.grabTarget;
+        if (!gt.active || gt.hp <= 0) {
+            player.grabTarget = null;
+        } else {
+            // Stretch membrane
+            const gdx = player.x - gt.x;
+            const gdy = player.y - gt.y;
+            player.grabDist = Math.sqrt(gdx * gdx + gdy * gdy);
+
+            if (player.grabDist > MEMBRANE_POP_DIST + gt.radius) {
+                // Pop the membrane - do damage!
+                const dmg = 1 + Math.floor(moveSpeed / 100);
+                gt.hp -= dmg;
+                gt.hitFlash = 1;
+                spawnMembraneBurst(
+                    (player.x + gt.x) / 2, (player.y + gt.y) / 2,
+                    gt.color, 12);
+                playSound('pop');
+                screenShake = 0.15;
+                player.grabTarget = null;
+            }
+
+            // Elastic visual line is drawn in render
+        }
+    } else if (player.stunTimer <= 0) {
+        // Check for virus contact
+        for (const v of viruses) {
+            if (!v.active) continue;
+            const vdx = v.x - player.x;
+            const vdy = v.y - player.y;
+            const vdist = Math.sqrt(vdx * vdx + vdy * vdy);
+            const contactDist = player.radius + v.radius + GRAB_DIST;
+
+            if (vdist < contactDist) {
+                // Check approach angle - tail should face virus
+                // Tail is at angle + PI (opposite of facing direction)
+                const tailAngle = player.angle + Math.PI;
+                const toVirusAngle = Math.atan2(vdy, vdx);
+                let angleDiff = toVirusAngle - tailAngle;
+                while (angleDiff > Math.PI) angleDiff -= Math.PI * 2;
+                while (angleDiff < -Math.PI) angleDiff += Math.PI * 2;
+
+                if (Math.abs(angleDiff) < Math.PI * 0.55) {
+                    // Tail-first approach - grab!
+                    player.grabTarget = v;
+                    player.grabDist = vdist;
+                    playSound('grab');
+                } else {
+                    // Head-first bounce
+                    player.vx = -vdx / vdist * 150;
+                    player.vy = -vdy / vdist * 150;
+                    player.stunTimer = 0.4;
+                    hitPlayer();
+                    playSound('bounce');
+                }
+                break;
+            }
+        }
+    }
+}
+
+function drawPlayer() {
+    if (player.hp <= 0) return;
+    const px = player.x;
+    const py = player.y;
+    const a = player.angle;
+
+    ctx.save();
+    ctx.translate(px, py);
+    ctx.rotate(a);
+
+    // Glow
+    ctx.globalAlpha = 0.2;
+    ctx.fillStyle = COL_HEAD;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, player.radius + 8, player.radius * 0.7 + 5, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Capsule body
+    const bodyLen = player.radius * 1.8;
+    const bodyWid = player.radius * 0.6;
+
+    // Tail (back/left in local coords - weapon)
+    const tailX = -bodyLen * 0.5;
+    const tailWiggle = Math.sin(Date.now() * 0.01) * 3 *
+        (Math.sqrt(player.vx * player.vx + player.vy * player.vy) / 100);
+    ctx.fillStyle = COL_TAIL;
+    ctx.shadowColor = COL_TAIL;
+    ctx.shadowBlur = 10;
+    ctx.beginPath();
+    ctx.moveTo(tailX - 8, tailWiggle);
+    ctx.lineTo(tailX + 5, -bodyWid);
+    ctx.lineTo(tailX + 5, bodyWid);
+    ctx.closePath();
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    // Body gradient
+    const grad = ctx.createLinearGradient(-bodyLen * 0.3, 0, bodyLen * 0.4, 0);
+    grad.addColorStop(0, COL_TAIL);
+    grad.addColorStop(0.5, '#81D4FA');
+    grad.addColorStop(1, COL_HEAD);
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, bodyLen * 0.5, bodyWid, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Head (front/right - hydrophilic)
+    const headX = bodyLen * 0.35;
+    const headPulse = 1 + Math.sin(Date.now() * 0.005) * 0.08;
+    ctx.fillStyle = COL_HEAD;
+    ctx.shadowColor = COL_HEAD;
+    ctx.shadowBlur = 12;
+    ctx.beginPath();
+    ctx.arc(headX, 0, bodyWid * 1.1 * headPulse, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    // Highlight on head
+    ctx.fillStyle = 'rgba(255,255,255,0.4)';
+    ctx.beginPath();
+    ctx.arc(headX + 2, -3, bodyWid * 0.4, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Stun indicator
+    if (player.stunTimer > 0) {
+        ctx.globalAlpha = 0.5;
+        ctx.strokeStyle = '#FF5252';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(0, 0, player.radius + 5, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+    }
+
+    ctx.restore();
+
+    // Draw grab line
+    if (player.grabTarget && player.grabTarget.active) {
+        const gt = player.grabTarget;
+        const tailWorldX = px + Math.cos(a + Math.PI) * player.radius;
+        const tailWorldY = py + Math.sin(a + Math.PI) * player.radius;
+
+        const stretch = player.grabDist / (MEMBRANE_POP_DIST + gt.radius);
+        const midX = (tailWorldX + gt.x) / 2;
+        const midY = (tailWorldY + gt.y) / 2 - 10 * stretch;
+
+        ctx.strokeStyle = gt.color;
+        ctx.lineWidth = 3 - stretch * 1.5;
+        ctx.globalAlpha = 1;
+        ctx.setLineDash([4, 3]);
+        ctx.beginPath();
+        ctx.moveTo(tailWorldX, tailWorldY);
+        ctx.quadraticCurveTo(midX, midY, gt.x, gt.y);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Stretch indicator particles
+        if (Math.random() < stretch * 0.3) {
+            createParticle(midX + (Math.random() - 0.5) * 10,
+                midY + (Math.random() - 0.5) * 10,
+                (Math.random() - 0.5) * 30, (Math.random() - 0.5) * 30,
+                0.3, gt.color, 2, 'circle');
+        }
+    }
+}
+
+// --- SQUAD SYSTEM ---
+function updateSquad(dt) {
+    squadSpawnTimer += dt;
+    if (squadSpawnTimer >= SQUAD_SPAWN_INTERVAL && squad.length < MAX_SQUAD) {
+        squadSpawnTimer = 0;
+        const angle = Math.random() * Math.PI * 2;
+        squad.push({
+            x: player.x + Math.cos(angle) * SQUAD_ORBIT_DIST,
+            y: player.y + Math.sin(angle) * SQUAD_ORBIT_DIST,
+            orbitAngle: angle,
+            orbitSpeed: 1.5 + Math.random() * 0.5,
+            attackTarget: null, attackTimer: 0,
+            grabTarget: null, grabDist: 0
+        });
+        playSound('splash');
+    }
+
+    for (const s of squad) {
+        s.orbitAngle += s.orbitSpeed * dt;
+
+        // Find attack target
+        if (!s.grabTarget) {
+            let closest = null, closestDist = 150;
+            for (const v of viruses) {
+                if (!v.active) continue;
+                const dx = v.x - s.x;
+                const dy = v.y - s.y;
+                const d = Math.sqrt(dx * dx + dy * dy);
+                if (d < closestDist) {
+                    closestDist = d;
+                    closest = v;
+                }
+            }
+            if (closest) {
+                s.attackTarget = closest;
+                s.attackTimer += dt;
+                // Move toward target
+                const dx = closest.x - s.x;
+                const dy = closest.y - s.y;
+                const d = Math.sqrt(dx * dx + dy * dy) || 1;
+                s.x += (dx / d) * 100 * dt;
+                s.y += (dy / d) * 100 * dt;
+
+                // Contact?
+                if (d < closest.radius + SQUAD_RADIUS + 5) {
+                    s.grabTarget = closest;
+                    s.grabDist = d;
+                    playSound('grab');
+                }
+            } else {
+                s.attackTarget = null;
+                // Orbit player
+                const tx = player.x + Math.cos(s.orbitAngle) * SQUAD_ORBIT_DIST;
+                const ty = player.y + Math.sin(s.orbitAngle) * SQUAD_ORBIT_DIST;
+                s.x += (tx - s.x) * 3 * dt;
+                s.y += (ty - s.y) * 3 * dt;
+            }
+        } else {
+            // Pulling membrane
+            const gt = s.grabTarget;
+            if (!gt.active || gt.hp <= 0) {
+                s.grabTarget = null;
+                continue;
+            }
+            // Move away from virus
+            const dx = s.x - gt.x;
+            const dy = s.y - gt.y;
+            const d = Math.sqrt(dx * dx + dy * dy) || 1;
+            s.x += (dx / d) * 80 * dt;
+            s.y += (dy / d) * 80 * dt;
+            s.grabDist = d;
+
+            if (d > gt.radius + 35) {
+                // Pop!
+                gt.hp -= 1;
+                gt.hitFlash = 1;
+                spawnMembraneBurst((s.x + gt.x) / 2, (s.y + gt.y) / 2, gt.color, 8);
+                playSound('pop');
+                s.grabTarget = null;
+            }
+        }
+
+        // Keep in arena
+        const adx = s.x - arenaX;
+        const ady = s.y - arenaY;
+        const adist = Math.sqrt(adx * adx + ady * ady);
+        const bnd = arenaRadius * waterLevel - SQUAD_RADIUS;
+        if (adist > bnd && bnd > 0) {
+            s.x = arenaX + (adx / adist) * bnd;
+            s.y = arenaY + (ady / adist) * bnd;
+        }
+
+        // Trail particles
+        if (Math.random() < 0.15) {
+            createParticle(s.x, s.y, (Math.random() - 0.5) * 10, (Math.random() - 0.5) * 10,
+                0.4, 'rgba(66,165,245,0.5)', 2, 'circle');
+        }
+    }
+}
+
+function drawSquad() {
+    for (const s of squad) {
+        ctx.save();
+        ctx.translate(s.x, s.y);
+
+        let facing = s.orbitAngle;
+        if (s.attackTarget) {
+            facing = Math.atan2(s.attackTarget.y - s.y, s.attackTarget.x - s.x) + Math.PI;
+        }
+        ctx.rotate(facing);
+
+        // Mini soap molecule
+        const r = SQUAD_RADIUS;
+        // Tail
+        ctx.fillStyle = COL_TAIL;
+        ctx.beginPath();
+        ctx.moveTo(-r * 1.2, 0);
+        ctx.lineTo(-r * 0.3, -r * 0.5);
+        ctx.lineTo(-r * 0.3, r * 0.5);
+        ctx.closePath();
+        ctx.fill();
+
+        // Body
+        const grad = ctx.createLinearGradient(-r * 0.3, 0, r * 0.6, 0);
+        grad.addColorStop(0, COL_TAIL);
+        grad.addColorStop(1, COL_HEAD);
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, r * 0.7, r * 0.45, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Head
+        ctx.fillStyle = COL_HEAD;
+        ctx.beginPath();
+        ctx.arc(r * 0.5, 0, r * 0.4, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+
+        // Draw grab line
+        if (s.grabTarget && s.grabTarget.active) {
+            ctx.strokeStyle = s.grabTarget.color;
+            ctx.lineWidth = 1.5;
+            ctx.globalAlpha = 0.7;
+            ctx.setLineDash([3, 2]);
+            ctx.beginPath();
+            ctx.moveTo(s.x, s.y);
+            ctx.lineTo(s.grabTarget.x, s.grabTarget.y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.globalAlpha = 1;
+        }
+    }
+}
+
+// --- POWER-UPS & WATER ---
+function spawnPowerup() {
+    const angle = Math.random() * Math.PI * 2;
+    const dist = Math.random() * arenaRadius * waterLevel * 0.6;
+    const type = Math.floor(Math.random() * 4);
+    powerups.push({
+        x: arenaX + Math.cos(angle) * dist,
+        y: arenaY + Math.sin(angle) * dist,
+        type, radius: 12, life: 15, phase: Math.random() * Math.PI * 2
+    });
+}
+
+function spawnWaterDrop() {
+    const angle = Math.random() * Math.PI * 2;
+    const dist = Math.random() * arenaRadius * waterLevel * 0.7;
+    waterDrops.push({
+        x: arenaX + Math.cos(angle) * dist,
+        y: arenaY + Math.sin(angle) * dist,
+        radius: 10, life: 12, phase: Math.random() * Math.PI * 2
+    });
+}
+
+function updatePowerups(dt) {
+    powerupSpawnTimer += dt;
+    if (powerupSpawnTimer > 12) {
+        powerupSpawnTimer = 0;
+        spawnPowerup();
+    }
+
+    waterSpawnTimer += dt;
+    if (waterSpawnTimer > 8) {
+        waterSpawnTimer = 0;
+        spawnWaterDrop();
+    }
+
+    for (let i = powerups.length - 1; i >= 0; i--) {
+        const p = powerups[i];
+        p.life -= dt;
+        p.phase += dt * 3;
+        if (p.life <= 0) { powerups.splice(i, 1); continue; }
+
+        const dx = player.x - p.x;
+        const dy = player.y - p.y;
+        if (Math.sqrt(dx * dx + dy * dy) < player.radius + p.radius) {
+            playSound('powerup');
+            applyPowerup(p.type);
+            powerups.splice(i, 1);
+        }
+    }
+
+    for (let i = waterDrops.length - 1; i >= 0; i--) {
+        const w = waterDrops[i];
+        w.life -= dt;
+        w.phase += dt * 2;
+        if (w.life <= 0) { waterDrops.splice(i, 1); continue; }
+
+        const dx = player.x - w.x;
+        const dy = player.y - w.y;
+        if (Math.sqrt(dx * dx + dy * dy) < player.radius + w.radius) {
+            playSound('splash');
+            waterLevel = Math.min(1.0, waterLevel + 0.12);
+            spawnRipple(w.x, w.y);
+            waterDrops.splice(i, 1);
+        }
+    }
+}
+
+function applyPowerup(type) {
+    switch (type) {
+        case PU_LATHER:
+            // +2 squad
+            for (let i = 0; i < 2 && squad.length < MAX_SQUAD; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                squad.push({
+                    x: player.x + Math.cos(angle) * SQUAD_ORBIT_DIST,
+                    y: player.y + Math.sin(angle) * SQUAD_ORBIT_DIST,
+                    orbitAngle: angle,
+                    orbitSpeed: 1.5 + Math.random() * 0.5,
+                    attackTarget: null, attackTimer: 0,
+                    grabTarget: null, grabDist: 0
+                });
+            }
+            showMessage('Extra Lather! +2 Squad', COL_POWERUP);
+            break;
+        case PU_HOTWATER:
+            player.speedBoost = 5;
+            showMessage('Hot Water! Speed Boost!', '#FF7043');
+            break;
+        case PU_ANTIBAC:
+            playSound('antibac');
+            // Kill all small viruses
+            for (const v of viruses) {
+                if (v.type === V_SMALL && v.active) {
+                    v.hp = 0;
+                }
+            }
+            showMessage('Antibacterial Wave!', '#4FC3F7');
+            // Screen flash
+            damageFlash = 0.2;
+            break;
+        case PU_TIMER:
+            score += 100 * comboMultiplier;
+            showMessage('20-Second Rule! +100 pts!', COL_POWERUP);
+            break;
+    }
+}
+
+function drawPowerups() {
+    for (const p of powerups) {
+        const bob = Math.sin(p.phase) * 4;
+        const alpha = p.life < 3 ? (p.life / 3) * (0.5 + Math.sin(p.phase * 3) * 0.5) : 1;
+        ctx.globalAlpha = alpha;
+
+        // Glow
+        ctx.fillStyle = COL_POWERUP;
+        ctx.globalAlpha = alpha * 0.3;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y + bob, p.radius + 6 + Math.sin(p.phase) * 3, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.globalAlpha = alpha;
+        // Icon
+        const colors = [COL_TAIL, '#FF7043', '#4FC3F7', COL_POWERUP];
+        const labels = ['L', 'H', 'A', '20'];
+        ctx.fillStyle = colors[p.type];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y + bob, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#1A237E';
+        ctx.font = 'bold 10px system-ui';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(labels[p.type], p.x, p.y + bob);
+    }
+    ctx.globalAlpha = 1;
+
+    for (const w of waterDrops) {
+        const bob = Math.sin(w.phase) * 3;
+        const alpha = w.life < 3 ? w.life / 3 : 1;
+        ctx.globalAlpha = alpha;
+
+        ctx.fillStyle = COL_WATER;
+        ctx.beginPath();
+        // Droplet shape
+        ctx.moveTo(w.x, w.y + bob - w.radius);
+        ctx.quadraticCurveTo(w.x + w.radius, w.y + bob, w.x, w.y + bob + w.radius);
+        ctx.quadraticCurveTo(w.x - w.radius, w.y + bob, w.x, w.y + bob - w.radius);
+        ctx.fill();
+
+        // Highlight
+        ctx.fillStyle = 'rgba(255,255,255,0.5)';
+        ctx.beginPath();
+        ctx.arc(w.x - 2, w.y + bob - 3, 3, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+}
+
+// --- MESSAGES ---
+let messages = [];
+function showMessage(text, color) {
+    messages.push({ text, color: color || '#FFF', life: 2.0, y: H * 0.3 });
+}
+
+function updateMessages(dt) {
+    for (let i = messages.length - 1; i >= 0; i--) {
+        messages[i].life -= dt;
+        messages[i].y -= dt * 30;
+        if (messages[i].life <= 0) messages.splice(i, 1);
+    }
+}
+
+function drawMessages() {
+    for (const m of messages) {
+        ctx.globalAlpha = Math.min(1, m.life);
+        ctx.fillStyle = m.color;
+        ctx.font = 'bold 20px system-ui';
+        ctx.textAlign = 'center';
+        ctx.fillText(m.text, W * 0.5, m.y);
+    }
+    ctx.globalAlpha = 1;
+}
+
+// --- ARENA ---
+function drawArena() {
+    const r = arenaRadius * waterLevel;
+
+    // Water background
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(arenaX, arenaY, r, 0, Math.PI * 2);
+    ctx.clip();
+
+    // Gradient fill
+    const grad = ctx.createRadialGradient(arenaX, arenaY, 0, arenaX, arenaY, r);
+    grad.addColorStop(0, '#E3F2FD');
+    grad.addColorStop(0.7, '#BBDEFB');
+    grad.addColorStop(1, '#90CAF9');
+    ctx.fillStyle = grad;
+    ctx.fillRect(arenaX - r, arenaY - r, r * 2, r * 2);
+
+    // Background ripples
+    const time = Date.now() * 0.001;
+    ctx.globalAlpha = 0.08;
+    ctx.strokeStyle = '#64B5F6';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < 5; i++) {
+        const rr = (r * 0.3) + (i / 5) * r * 0.6;
+        const offset = Math.sin(time + i * 1.2) * 8;
+        ctx.beginPath();
+        ctx.arc(arenaX + offset, arenaY + Math.cos(time + i) * 5, rr, 0, Math.PI * 2);
+        ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+
+    ctx.restore();
+
+    // Border glow
+    ctx.strokeStyle = COL_ARENA_BORDER;
+    ctx.lineWidth = 3;
+    ctx.shadowColor = COL_ARENA_BORDER;
+    ctx.shadowBlur = 15;
+    ctx.beginPath();
+    ctx.arc(arenaX, arenaY, r, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    // Surface tension shimmer
+    ctx.globalAlpha = 0.2 + Math.sin(time * 2) * 0.1;
+    ctx.strokeStyle = '#FFFFFF';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(arenaX, arenaY, r - 2, -0.3 + Math.sin(time) * 0.2, 0.5 + Math.sin(time) * 0.2);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(arenaX, arenaY, r - 2, Math.PI - 0.4 + Math.cos(time * 0.7) * 0.2, Math.PI + 0.3 + Math.cos(time * 0.7) * 0.2);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+}
+
+// --- HUD ---
+function drawHUD() {
+    // Top-left: Health / Squad
+    ctx.fillStyle = 'rgba(26,35,126,0.7)';
+    roundRect(10, 10, 180, 60, 8);
+    ctx.fill();
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 13px system-ui';
+    ctx.textAlign = 'left';
+    ctx.fillText('SQUAD: ' + (squad.length + 1) + ' / ' + (MAX_SQUAD + 1), 20, 32);
+
+    // Squad dots
+    for (let i = 0; i <= squad.length; i++) {
+        ctx.fillStyle = i === 0 ? COL_HEAD : COL_TAIL;
+        ctx.beginPath();
+        ctx.arc(20 + i * 16, 52, 5, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    // Top-right: Score + combo
+    ctx.fillStyle = 'rgba(26,35,126,0.7)';
+    roundRect(W - 200, 10, 190, 60, 8);
+    ctx.fill();
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 16px system-ui';
+    ctx.textAlign = 'right';
+    ctx.fillText('SCORE: ' + score, W - 20, 32);
+
+    if (comboMultiplier > 1) {
+        ctx.fillStyle = COL_POWERUP;
+        ctx.font = 'bold 14px system-ui';
+        ctx.fillText(comboMultiplier + 'x COMBO (' + combo + ')', W - 20, 55);
+    }
+
+    // Top-center: Timer + level
+    ctx.fillStyle = 'rgba(26,35,126,0.7)';
+    roundRect(W / 2 - 80, 10, 160, 45, 8);
+    ctx.fill();
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.textAlign = 'center';
+    ctx.font = 'bold 12px system-ui';
+    ctx.fillText(LEVELS[currentLevel].name, W / 2, 28);
+    const timeLeft = Math.max(0, levelDuration - levelTimer);
+    ctx.font = 'bold 18px system-ui';
+    ctx.fillText(Math.ceil(timeLeft) + 's', W / 2, 48);
+
+    // Bottom: Water level arc
+    const arcY = H - 15;
+    const arcR = 60;
+    ctx.strokeStyle = 'rgba(100,181,246,0.3)';
+    ctx.lineWidth = 8;
+    ctx.beginPath();
+    ctx.arc(W / 2, arcY + 20, arcR, Math.PI, 0);
+    ctx.stroke();
+
+    ctx.strokeStyle = waterLevel > 0.3 ? '#64B5F6' : '#F44336';
+    ctx.lineWidth = 8;
+    ctx.beginPath();
+    ctx.arc(W / 2, arcY + 20, arcR, Math.PI, Math.PI + Math.PI * waterLevel);
+    ctx.stroke();
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = '11px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('WATER', W / 2, arcY - 2);
+
+    // Speed boost indicator
+    if (player.speedBoost > 0) {
+        ctx.fillStyle = '#FF7043';
+        ctx.font = 'bold 14px system-ui';
+        ctx.textAlign = 'left';
+        ctx.fillText('HOT WATER! ' + Math.ceil(player.speedBoost) + 's', 15, H - 25);
+    }
+
+    // Touch joystick
+    if (touchActive && touchJoystick) {
+        ctx.globalAlpha = 0.3;
+        ctx.strokeStyle = '#FFF';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(touchJoystick.sx, touchJoystick.sy, 50, 0, Math.PI * 2);
+        ctx.stroke();
+
+        ctx.fillStyle = '#FFF';
+        ctx.globalAlpha = 0.5;
+        ctx.beginPath();
+        const jdx = touchJoystick.cx - touchJoystick.sx;
+        const jdy = touchJoystick.cy - touchJoystick.sy;
+        const jdist = Math.sqrt(jdx * jdx + jdy * jdy);
+        const maxDist = 50;
+        const cx = jdist > maxDist ? touchJoystick.sx + (jdx / jdist) * maxDist : touchJoystick.cx;
+        const cy = jdist > maxDist ? touchJoystick.sy + (jdy / jdist) * maxDist : touchJoystick.cy;
+        ctx.arc(cx, cy, 18, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+}
+
+function roundRect(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+}
+
+// --- VIRUS SPAWNING ---
+function spawnWave(dt) {
+    const lvl = LEVELS[currentLevel];
+    virusSpawnTimer += dt;
+    if (virusSpawnTimer < lvl.spawnRate) return;
+    virusSpawnTimer = 0;
+
+    // Gradually increase difficulty
+    const progress = levelTimer / lvl.duration;
+    const roll = Math.random();
+
+    if (roll < lvl.small) {
+        spawnVirusAtEdge(V_SMALL);
+    } else if (roll < lvl.small + lvl.medium) {
+        spawnVirusAtEdge(V_MEDIUM);
+    } else if (roll < lvl.small + lvl.medium + lvl.large) {
+        spawnVirusAtEdge(V_LARGE);
+    } else {
+        spawnVirusAtEdge(V_SMALL);
+    }
+
+    // Extra spawns as level progresses
+    if (progress > 0.5 && Math.random() < 0.3) {
+        spawnVirusAtEdge(V_SMALL);
+    }
+    if (progress > 0.75 && Math.random() < 0.2) {
+        spawnVirusAtEdge(V_MEDIUM);
+    }
+
+    // Boss spawn
+    if (lvl.boss && progress > 0.7 && !bossSpawned) {
+        bossSpawned = true;
+        const bv = createVirus(V_BOSS, arenaX, arenaY - arenaRadius * waterLevel * 0.7);
+        viruses.push(bv);
+        playSound('boss');
+        showMessage('BOSS VIRUS INCOMING!', COL_VBOSS);
+        screenShake = 0.3;
+    }
+}
+
+// --- LEVEL MANAGEMENT ---
+function startLevel(idx) {
+    currentLevel = idx;
+    const lvl = LEVELS[idx];
+    levelTimer = 0;
+    levelDuration = lvl.duration;
+    score = 0;
+    combo = 0;
+    comboMultiplier = 1;
+    waterLevel = 1.0;
+    waterDrainRate = lvl.drain;
+    virusSpawnTimer = 0;
+    powerupSpawnTimer = 0;
+    waterSpawnTimer = 0;
+    bossSpawned = false;
+    bossDefeated = false;
+
+    player.x = arenaX;
+    player.y = arenaY;
+    player.vx = 0;
+    player.vy = 0;
+    player.angle = 0;
+    player.hp = 1;
+    player.stunTimer = 0;
+    player.grabTarget = null;
+    player.speedBoost = 0;
+
+    squad = [];
+    squadSpawnTimer = 0;
+    viruses = [];
+    projectiles = [];
+    powerups = [];
+    waterDrops = [];
+    ripples = [];
+    particles = [];
+    particleCount = 0;
+    messages = [];
+    screenShake = 0;
+    damageFlash = 0;
+
+    gameState = GS_INTRO;
+    introTimer = 3.0;
+}
+
+function completeLevel() {
+    gameState = GS_COMPLETE;
+    playSound('victory');
+
+    // Calculate bonuses
+    const squadBonus = squad.length * 20;
+    const speedBonus = Math.max(0, Math.floor((levelDuration - levelTimer) * 5));
+    score += squadBonus + speedBonus;
+
+    // Medal
+    const thresholds = [200, 500, 1000];
+    let medal = 'none';
+    if (score >= thresholds[2]) medal = 'gold';
+    else if (score >= thresholds[1]) medal = 'silver';
+    else if (score >= thresholds[0]) medal = 'bronze';
+
+    // Save
+    const key = 'level_' + currentLevel;
+    if (!highScores[key] || score > highScores[key].score) {
+        highScores[key] = { score, medal };
+    }
+
+    // Unlock next
+    if (currentLevel < LEVELS.length - 1) {
+        levelUnlocks[currentLevel + 1] = true;
+    }
+    saveData();
+}
+
+// --- UI INTERACTION ---
+function handleClick(cx, cy) {
+    for (const btn of buttons) {
+        if (cx >= btn.x && cx <= btn.x + btn.w && cy >= btn.y && cy <= btn.y + btn.h) {
+            initAudio();
+            btn.action();
+            return;
+        }
+    }
+}
+
+function handleUIKey(code) {
+    initAudio();
+    if (gameState === GS_TITLE) {
+        if (code === 'Space' || code === 'Enter') {
+            gameState = GS_HOWTO;
+        }
+    } else if (gameState === GS_HOWTO) {
+        if (code === 'Space' || code === 'Enter') {
+            gameState = GS_SELECT;
+        }
+    } else if (gameState === GS_COMPLETE || gameState === GS_OVER) {
+        if (code === 'Space' || code === 'Enter') {
+            gameState = GS_SELECT;
+        }
+    }
+}
+
+// --- TITLE SCREEN ---
+function updateTitle(dt) {
+    titleTime += dt;
+
+    // Animate soap molecule ramming into virus
+    const cx = W * 0.5;
+    const cy = H * 0.55;
+    titleVirusX = cx + 40;
+    titleVirusY = cy;
+
+    if (!titleBurst) {
+        const cycle = titleTime % 3;
+        if (cycle < 1.5) {
+            titleSoapX = cx - 120 + (cycle / 1.5) * 160;
+            titleSoapY = cy;
+            titleSoapAngle = 0;
+        } else if (cycle < 1.6) {
+            titleBurst = true;
+            titleBurstTime = 0;
+            spawnMembraneBurst(titleVirusX, titleVirusY, COL_VSMALL, 15);
+            playSound('pop');
+        } else {
+            titleSoapX = cx - 120;
+            titleSoapY = cy;
+        }
+    } else {
+        titleBurstTime += dt;
+        titleSoapX = cx + 60;
+        if (titleBurstTime > 1.0) {
+            titleBurst = false;
+            titleSoapX = cx - 120;
+        }
+    }
+}
+
+function drawTitle() {
+    // Background
+    ctx.fillStyle = '#0A1628';
+    ctx.fillRect(0, 0, W, H);
+
+    // Decorative circles
+    const time = Date.now() * 0.001;
+    ctx.globalAlpha = 0.08;
+    for (let i = 0; i < 8; i++) {
+        ctx.strokeStyle = i % 2 === 0 ? COL_HEAD : COL_VSMALL;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(W * 0.5 + Math.sin(time + i) * 100,
+                H * 0.5 + Math.cos(time * 0.7 + i) * 80,
+                50 + i * 30, 0, Math.PI * 2);
+        ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+
+    // Title
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 52px system-ui';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // Glow text
+    ctx.shadowColor = COL_HEAD;
+    ctx.shadowBlur = 20;
+    ctx.fillText('SOAP STRIKE', W * 0.5, H * 0.22);
+    ctx.shadowBlur = 0;
+
+    // Subtitle
+    ctx.font = '18px system-ui';
+    ctx.fillStyle = '#90CAF9';
+    ctx.fillText('Virus Arena  |  NGSS 5-PS1-4', W * 0.5, H * 0.32);
+
+    // Animated scene
+    if (!titleBurst) {
+        // Virus
+        ctx.fillStyle = COL_VSMALL;
+        ctx.beginPath();
+        ctx.arc(titleVirusX, titleVirusY, 20, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#388E3C';
+        ctx.beginPath();
+        ctx.arc(titleVirusX, titleVirusY, 13, 0, Math.PI * 2);
+        ctx.fill();
+        // Spikes
+        for (let s = 0; s < 8; s++) {
+            const sa = (s / 8) * Math.PI * 2;
+            ctx.strokeStyle = '#388E3C';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(titleVirusX + Math.cos(sa) * 20, titleVirusY + Math.sin(sa) * 20);
+            ctx.lineTo(titleVirusX + Math.cos(sa) * 28, titleVirusY + Math.sin(sa) * 28);
+            ctx.stroke();
+        }
+    }
+
+    // Soap molecule
+    ctx.save();
+    ctx.translate(titleSoapX, titleSoapY);
+    ctx.rotate(titleSoapAngle);
+    // Tail
+    ctx.fillStyle = COL_TAIL;
+    ctx.beginPath();
+    ctx.moveTo(12, 0);
+    ctx.lineTo(-2, -7);
+    ctx.lineTo(-2, 7);
+    ctx.closePath();
+    ctx.fill();
+    // Body
+    const grad = ctx.createLinearGradient(-8, 0, 8, 0);
+    grad.addColorStop(0, COL_HEAD);
+    grad.addColorStop(1, COL_TAIL);
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, 10, 6, 0, 0, Math.PI * 2);
+    ctx.fill();
+    // Head
+    ctx.fillStyle = COL_HEAD;
+    ctx.beginPath();
+    ctx.arc(-8, 0, 6, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    // Buttons
+    buttons = [];
+    drawButton(W * 0.5 - 90, H * 0.72, 180, 45, 'PLAY', () => { gameState = GS_HOWTO; });
+    drawButton(W * 0.5 - 90, H * 0.85, 180, 35, 'LEVEL SELECT', () => { gameState = GS_SELECT; });
+
+    // Particles
+    drawParticles();
+}
+
+// --- HOW TO PLAY ---
+function drawHowTo() {
+    ctx.fillStyle = '#0A1628';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 32px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('HOW TO PLAY', W * 0.5, H * 0.1);
+
+    const cards = [
+        { icon: 'tail', title: 'TAIL = WEAPON', desc: 'Approach viruses TAIL-first\nYour yellow tail grabs membranes!', color: COL_TAIL },
+        { icon: 'head', title: 'HEAD = SHIELD', desc: 'Head-first contact bounces you\noff and costs a squad member!', color: COL_HEAD },
+        { icon: 'grab', title: 'GRAB & RIP', desc: 'Tail grabs membrane, then\nmove away to STRETCH & POP!', color: COL_VSMALL },
+        { icon: 'squad', title: 'GROW YOUR SQUAD', desc: 'New soap joins every 15 sec\nThey auto-attack nearby viruses', color: COL_POWERUP },
+    ];
+
+    const cardW = 160;
+    const cardH = 160;
+    const gap = 20;
+    const totalW = cards.length * cardW + (cards.length - 1) * gap;
+    const startX = (W - totalW) / 2;
+
+    for (let i = 0; i < cards.length; i++) {
+        const c = cards[i];
+        const cx = startX + i * (cardW + gap);
+        const cy = H * 0.25;
+
+        ctx.fillStyle = 'rgba(26,35,126,0.6)';
+        roundRect(cx, cy, cardW, cardH, 10);
+        ctx.fill();
+        ctx.strokeStyle = c.color;
+        ctx.lineWidth = 2;
+        roundRect(cx, cy, cardW, cardH, 10);
+        ctx.stroke();
+
+        // Icon
+        const iconX = cx + cardW / 2;
+        const iconY = cy + 35;
+        if (c.icon === 'tail') {
+            ctx.fillStyle = COL_TAIL;
+            ctx.beginPath();
+            ctx.moveTo(iconX + 15, iconY);
+            ctx.lineTo(iconX - 5, iconY - 10);
+            ctx.lineTo(iconX - 5, iconY + 10);
+            ctx.closePath();
+            ctx.fill();
+        } else if (c.icon === 'head') {
+            ctx.fillStyle = COL_HEAD;
+            ctx.beginPath();
+            ctx.arc(iconX, iconY, 12, 0, Math.PI * 2);
+            ctx.fill();
+        } else if (c.icon === 'grab') {
+            ctx.strokeStyle = COL_VSMALL;
+            ctx.lineWidth = 2;
+            ctx.setLineDash([4, 3]);
+            ctx.beginPath();
+            ctx.moveTo(iconX - 15, iconY);
+            ctx.lineTo(iconX + 15, iconY);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillStyle = COL_TAIL;
+            ctx.beginPath();
+            ctx.arc(iconX - 15, iconY, 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = COL_VSMALL;
+            ctx.beginPath();
+            ctx.arc(iconX + 15, iconY, 8, 0, Math.PI * 2);
+            ctx.fill();
+        } else {
+            for (let j = 0; j < 3; j++) {
+                const sa = (j / 3) * Math.PI * 2 - Math.PI / 2;
+                ctx.fillStyle = j === 0 ? COL_HEAD : COL_TAIL;
+                ctx.beginPath();
+                ctx.arc(iconX + Math.cos(sa) * 12, iconY + Math.sin(sa) * 12, 6, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        ctx.fillStyle = COL_UI_TEXT;
+        ctx.font = 'bold 13px system-ui';
+        ctx.textAlign = 'center';
+        ctx.fillText(c.title, cx + cardW / 2, cy + 70);
+
+        ctx.font = '11px system-ui';
+        ctx.fillStyle = '#90CAF9';
+        const lines = c.desc.split('\n');
+        lines.forEach((line, li) => {
+            ctx.fillText(line, cx + cardW / 2, cy + 90 + li * 16);
+        });
+    }
+
+    // Controls
+    ctx.fillStyle = '#90CAF9';
+    ctx.font = '14px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Move: WASD / Arrow Keys  |  Touch: Virtual Joystick (left side)', W * 0.5, H * 0.75);
+
+    // Science note
+    ctx.fillStyle = '#FFD54F';
+    ctx.font = 'italic 13px system-ui';
+    ctx.fillText('Real soap molecules have a hydrophilic head (loves water) and hydrophobic tail (hates water).', W * 0.5, H * 0.82);
+    ctx.fillText('The tail embeds in the virus lipid membrane and tears it apart!', W * 0.5, H * 0.86);
+
+    buttons = [];
+    drawButton(W * 0.5 - 80, H * 0.91, 160, 40, 'CONTINUE', () => { gameState = GS_SELECT; });
+}
+
+// --- LEVEL SELECT ---
+function drawLevelSelect() {
+    ctx.fillStyle = '#0A1628';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 30px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('SELECT SURFACE', W * 0.5, H * 0.1);
+
+    buttons = [];
+
+    const cardW = 130;
+    const cardH = 140;
+    const gap = 16;
+    const totalW = LEVELS.length * cardW + (LEVELS.length - 1) * gap;
+    const startX = (W - totalW) / 2;
+
+    const icons = ['H', 'K', '+', 'S', 'P']; // Hand, Kitchen, Hospital, School, Phone
+    const iconColors = ['#42A5F5', '#FFA726', '#EF5350', '#66BB6A', '#AB47BC'];
+
+    for (let i = 0; i < LEVELS.length; i++) {
+        const lvl = LEVELS[i];
+        const cx = startX + i * (cardW + gap);
+        const cy = H * 0.22;
+        const unlocked = levelUnlocks[i];
+        const hs = highScores['level_' + i];
+
+        ctx.fillStyle = unlocked ? 'rgba(26,35,126,0.7)' : 'rgba(50,50,50,0.5)';
+        roundRect(cx, cy, cardW, cardH, 10);
+        ctx.fill();
+
+        if (unlocked) {
+            ctx.strokeStyle = iconColors[i];
+            ctx.lineWidth = 2;
+            roundRect(cx, cy, cardW, cardH, 10);
+            ctx.stroke();
+        }
+
+        // Level number circle
+        ctx.fillStyle = unlocked ? iconColors[i] : '#555';
+        ctx.beginPath();
+        ctx.arc(cx + cardW / 2, cy + 30, 18, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#FFF';
+        ctx.font = 'bold 18px system-ui';
+        ctx.textAlign = 'center';
+        ctx.fillText(unlocked ? icons[i] : '?', cx + cardW / 2, cy + 36);
+
+        ctx.fillStyle = unlocked ? COL_UI_TEXT : '#777';
+        ctx.font = 'bold 12px system-ui';
+        ctx.fillText(unlocked ? lvl.name : 'LOCKED', cx + cardW / 2, cy + 65);
+
+        if (unlocked) {
+            ctx.font = '10px system-ui';
+            ctx.fillStyle = '#90CAF9';
+            ctx.fillText(lvl.desc, cx + cardW / 2, cy + 82);
+
+            // High score
+            if (hs) {
+                ctx.fillStyle = COL_POWERUP;
+                ctx.font = 'bold 11px system-ui';
+                ctx.fillText('Best: ' + hs.score, cx + cardW / 2, cy + 100);
+                // Medal
+                const medalColors = { bronze: '#CD7F32', silver: '#C0C0C0', gold: '#FFD700' };
+                if (hs.medal !== 'none') {
+                    ctx.fillStyle = medalColors[hs.medal];
+                    ctx.beginPath();
+                    ctx.arc(cx + cardW / 2, cy + 118, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillStyle = '#1A237E';
+                    ctx.font = 'bold 9px system-ui';
+                    ctx.fillText(hs.medal[0].toUpperCase(), cx + cardW / 2, cy + 121);
+                }
+            }
+
+            drawButton(cx + 10, cy + cardH - 5, cardW - 20, 30, 'PLAY', () => { startLevel(i); });
+        }
+    }
+
+    drawButton(W * 0.5 - 70, H * 0.88, 140, 35, 'BACK', () => { gameState = GS_TITLE; });
+}
+
+// --- LEVEL INTRO ---
+function drawLevelIntro() {
+    ctx.fillStyle = '#0A1628';
+    ctx.fillRect(0, 0, W, H);
+
+    const lvl = LEVELS[currentLevel];
+    const progress = 1 - (introTimer / 3.0);
+
+    // Zoom in effect
+    const scale = 0.5 + progress * 0.5;
+    ctx.globalAlpha = Math.min(1, progress * 2);
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 36px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Level ' + (currentLevel + 1), W * 0.5, H * 0.3);
+
+    ctx.font = 'bold 28px system-ui';
+    ctx.shadowColor = ['#42A5F5', '#FFA726', '#EF5350', '#66BB6A', '#AB47BC'][currentLevel];
+    ctx.shadowBlur = 15;
+    ctx.fillText(lvl.name, W * 0.5, H * 0.42);
+    ctx.shadowBlur = 0;
+
+    ctx.fillStyle = '#90CAF9';
+    ctx.font = '18px system-ui';
+    ctx.fillText(lvl.desc, W * 0.5, H * 0.55);
+
+    ctx.fillStyle = '#FFD54F';
+    ctx.font = 'italic 14px system-ui';
+    ctx.fillText(lvl.surface, W * 0.5, H * 0.65);
+
+    if (introTimer < 1.5) {
+        ctx.fillStyle = COL_UI_TEXT;
+        ctx.font = 'bold 48px system-ui';
+        ctx.globalAlpha = Math.min(1, (1.5 - introTimer) * 2);
+        ctx.fillText(Math.ceil(introTimer) || 'GO!', W * 0.5, H * 0.8);
+    }
+
+    ctx.globalAlpha = 1;
+}
+
+// --- LEVEL COMPLETE ---
+function drawLevelComplete() {
+    ctx.fillStyle = 'rgba(10,22,40,0.85)';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 36px system-ui';
+    ctx.textAlign = 'center';
+    ctx.shadowColor = '#4CAF50';
+    ctx.shadowBlur = 15;
+    ctx.fillText('SURFACE CLEAN!', W * 0.5, H * 0.18);
+    ctx.shadowBlur = 0;
+
+    ctx.font = '18px system-ui';
+    ctx.fillStyle = '#90CAF9';
+    ctx.fillText(LEVELS[currentLevel].name + ' Complete', W * 0.5, H * 0.27);
+
+    // Score breakdown
+    const squadBonus = squad.length * 20;
+    const speedBonus = Math.max(0, Math.floor((levelDuration - levelTimer) * 5));
+    const baseScore = score - squadBonus - speedBonus;
+
+    const items = [
+        ['Virus Score', baseScore],
+        ['Squad Survival (' + squad.length + ')', squadBonus],
+        ['Speed Bonus', speedBonus],
+        ['TOTAL', score]
+    ];
+
+    let yy = H * 0.35;
+    for (const [label, val] of items) {
+        ctx.fillStyle = label === 'TOTAL' ? COL_POWERUP : COL_UI_TEXT;
+        ctx.font = label === 'TOTAL' ? 'bold 20px system-ui' : '16px system-ui';
+        ctx.textAlign = 'left';
+        ctx.fillText(label, W * 0.35, yy);
+        ctx.textAlign = 'right';
+        ctx.fillText(val, W * 0.65, yy);
+        yy += 30;
+        if (label === 'Speed Bonus') {
+            ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(W * 0.35, yy - 15);
+            ctx.lineTo(W * 0.65, yy - 15);
+            ctx.stroke();
+        }
+    }
+
+    // Medal
+    const hs = highScores['level_' + currentLevel];
+    if (hs && hs.medal !== 'none') {
+        const medalColors = { bronze: '#CD7F32', silver: '#C0C0C0', gold: '#FFD700' };
+        const medalNames = { bronze: 'BRONZE', silver: 'SILVER', gold: 'GOLD' };
+        ctx.fillStyle = medalColors[hs.medal];
+        ctx.font = 'bold 24px system-ui';
+        ctx.textAlign = 'center';
+        ctx.fillText(medalNames[hs.medal] + ' MEDAL', W * 0.5, yy + 25);
+    }
+
+    // Science fact
+    const facts = [
+        'Soap molecules are amphipathic - they have both water-loving and water-hating parts!',
+        'The CDC recommends washing hands for at least 20 seconds to effectively remove germs.',
+        'Soap doesn\'t kill viruses - it rips apart their protective lipid membrane!',
+        'Hot water helps soap work faster by increasing molecular movement.',
+        'Your phone screen can harbor 10x more bacteria than a toilet seat!'
+    ];
+    ctx.fillStyle = '#FFD54F';
+    ctx.font = 'italic 12px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Science Fact: ' + facts[currentLevel], W * 0.5, H * 0.78);
+
+    buttons = [];
+    if (currentLevel < LEVELS.length - 1 && levelUnlocks[currentLevel + 1]) {
+        drawButton(W * 0.5 - 170, H * 0.86, 150, 40, 'NEXT LEVEL', () => { startLevel(currentLevel + 1); });
+        drawButton(W * 0.5 + 20, H * 0.86, 150, 40, 'LEVEL SELECT', () => { gameState = GS_SELECT; });
+    } else {
+        drawButton(W * 0.5 - 80, H * 0.86, 160, 40, 'LEVEL SELECT', () => { gameState = GS_SELECT; });
+    }
+}
+
+// --- GAME OVER ---
+function drawGameOver() {
+    ctx.fillStyle = 'rgba(10,22,40,0.9)';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.fillStyle = '#EF5350';
+    ctx.font = 'bold 40px system-ui';
+    ctx.textAlign = 'center';
+    ctx.shadowColor = '#EF5350';
+    ctx.shadowBlur = 15;
+    ctx.fillText('MEMBRANE BREACHED!', W * 0.5, H * 0.25);
+    ctx.shadowBlur = 0;
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = '18px system-ui';
+    ctx.fillText('The viruses overwhelmed your soap molecule.', W * 0.5, H * 0.37);
+
+    ctx.fillStyle = COL_POWERUP;
+    ctx.font = 'bold 24px system-ui';
+    ctx.fillText('Score: ' + score, W * 0.5, H * 0.5);
+
+    ctx.fillStyle = '#90CAF9';
+    ctx.font = '14px system-ui';
+    ctx.fillText('Viruses are tough, but soap is tougher. Try again!', W * 0.5, H * 0.6);
+
+    ctx.fillStyle = '#FFD54F';
+    ctx.font = 'italic 12px system-ui';
+    ctx.fillText('Remember: 20 seconds of handwashing with soap can prevent illness!', W * 0.5, H * 0.68);
+
+    buttons = [];
+    drawButton(W * 0.5 - 170, H * 0.78, 150, 40, 'RETRY', () => { startLevel(currentLevel); });
+    drawButton(W * 0.5 + 20, H * 0.78, 150, 40, 'LEVEL SELECT', () => { gameState = GS_SELECT; });
+}
+
+// --- BUTTON HELPER ---
+function drawButton(x, y, w, h, text, action) {
+    buttons.push({ x, y, w, h, action });
+
+    const hover = false; // No mouse hover tracking needed
+    ctx.fillStyle = hover ? 'rgba(66,165,245,0.5)' : 'rgba(66,165,245,0.25)';
+    roundRect(x, y, w, h, 8);
+    ctx.fill();
+    ctx.strokeStyle = COL_HEAD;
+    ctx.lineWidth = 1.5;
+    roundRect(x, y, w, h, 8);
+    ctx.stroke();
+
+    ctx.fillStyle = COL_UI_TEXT;
+    ctx.font = 'bold 14px system-ui';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, x + w / 2, y + h / 2);
+    ctx.textBaseline = 'alphabetic';
+}
+
+// --- MAIN UPDATE ---
+function update(dt) {
+    switch (gameState) {
+        case GS_TITLE:
+            updateTitle(dt);
+            updateParticles(dt);
+            break;
+
+        case GS_HOWTO:
+        case GS_SELECT:
+        case GS_COMPLETE:
+        case GS_OVER:
+            break;
+
+        case GS_INTRO:
+            introTimer -= dt;
+            if (introTimer <= 0) {
+                gameState = GS_PLAYING;
+            }
+            break;
+
+        case GS_PLAYING:
+            levelTimer += dt;
+
+            // Water drain
+            waterLevel = Math.max(0.2, waterLevel - waterDrainRate * dt);
+
+            // Player
+            updatePlayer(dt);
+
+            // Squad
+            updateSquad(dt);
+
+            // Viruses
+            spawnWave(dt);
+            updateViruses(dt);
+
+            // Projectiles
+            updateProjectiles(dt);
+
+            // Powerups & water
+            updatePowerups(dt);
+
+            // Particles & effects
+            updateParticles(dt);
+            updateRipples(dt);
+            updateMessages(dt);
+
+            // Screen shake decay
+            screenShake = Math.max(0, screenShake - dt * 3);
+            damageFlash = Math.max(0, damageFlash - dt * 3);
+
+            // Ambient ripples
+            if (Math.random() < 0.03) {
+                const rx = arenaX + (Math.random() - 0.5) * arenaRadius * waterLevel * 1.5;
+                const ry = arenaY + (Math.random() - 0.5) * arenaRadius * waterLevel * 1.5;
+                const dx = rx - arenaX;
+                const dy = ry - arenaY;
+                if (Math.sqrt(dx * dx + dy * dy) < arenaRadius * waterLevel) {
+                    spawnRipple(rx, ry);
+                }
+            }
+
+            // Check level complete
+            if (levelTimer >= levelDuration) {
+                const lvl = LEVELS[currentLevel];
+                if (lvl.boss && !bossDefeated) {
+                    // Keep going until boss is dead or player dies
+                } else {
+                    completeLevel();
+                }
+            }
+
+            // Check game over
+            if (player.hp <= 0) {
+                gameState = GS_OVER;
+                playSound('hit');
+                screenShake = 0.4;
+                // Death burst
+                spawnMembraneBurst(player.x, player.y, COL_HEAD, 20);
+            }
+            break;
+    }
+}
+
+// --- MAIN RENDER ---
+function render() {
+    ctx.clearRect(0, 0, W, H);
+
+    switch (gameState) {
+        case GS_TITLE:
+            drawTitle();
+            break;
+
+        case GS_HOWTO:
+            drawHowTo();
+            break;
+
+        case GS_SELECT:
+            drawLevelSelect();
+            break;
+
+        case GS_INTRO:
+            drawLevelIntro();
+            break;
+
+        case GS_PLAYING: {
+            // Background
+            ctx.fillStyle = '#0A1628';
+            ctx.fillRect(0, 0, W, H);
+
+            // Screen shake
+            ctx.save();
+            if (screenShake > 0) {
+                const sx = (Math.random() - 0.5) * screenShake * 15;
+                const sy = (Math.random() - 0.5) * screenShake * 15;
+                ctx.translate(sx, sy);
+            }
+
+            // Arena
+            drawArena();
+            drawRipples();
+
+            // Water drops
+            drawPowerups();
+
+            // Viruses
+            for (const v of viruses) {
+                if (v.active) drawVirus(v);
+            }
+
+            // Projectiles
+            drawProjectiles();
+
+            // Squad
+            drawSquad();
+
+            // Player
+            drawPlayer();
+
+            // Particles
+            drawParticles();
+
+            ctx.restore();
+
+            // Damage flash overlay
+            if (damageFlash > 0) {
+                ctx.globalAlpha = damageFlash * 0.3;
+                ctx.fillStyle = '#FF0000';
+                ctx.fillRect(0, 0, W, H);
+                ctx.globalAlpha = 1;
+            }
+
+            // HUD
+            drawHUD();
+            drawMessages();
+            break;
+        }
+
+        case GS_COMPLETE:
+            // Draw game state behind
+            ctx.fillStyle = '#0A1628';
+            ctx.fillRect(0, 0, W, H);
+            drawArena();
+            drawParticles();
+            drawLevelComplete();
+            break;
+
+        case GS_OVER:
+            ctx.fillStyle = '#0A1628';
+            ctx.fillRect(0, 0, W, H);
+            drawParticles();
+            drawGameOver();
+            break;
+    }
+}
+
+// --- GAME LOOP ---
+let lastTime = 0;
+function gameLoop(timestamp) {
+    const dt = Math.min(0.05, (timestamp - lastTime) / 1000);
+    lastTime = timestamp;
+    update(dt);
+    render();
+    requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(ts => {
+    lastTime = ts;
+    requestAnimationFrame(gameLoop);
+});
+
+</script>
+</body>
+</html>

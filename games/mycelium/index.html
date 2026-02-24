@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>MYCELIUM — The Wood Wide Web</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#0d0814;color:#e8e0f0;overflow:hidden;height:100vh;width:100vw;user-select:none;-webkit-user-select:none;touch-action:none}
+canvas{display:block;position:absolute;top:0;left:0;width:100%;height:100%}
+#orientationWarning{display:none;position:fixed;inset:0;background:#0d0814;z-index:9999;align-items:center;justify-content:center;flex-direction:column;gap:16px;color:#CE93D8;font-size:18px;text-align:center;padding:40px}
+#orientationWarning .icon{font-size:48px}
+@media(max-width:600px) and (orientation:portrait){#orientationWarning{display:flex}canvas{display:none}}
+</style>
+</head>
+<body>
+<canvas id="gc"></canvas>
+<div id="orientationWarning"><div class="icon">&#x1F504;</div><div>Please rotate your device to<br><strong>landscape orientation</strong></div></div>
+<script>
+'use strict';
+// ============================================================
+// MYCELIUM — The Wood Wide Web
+// A network-builder / strategy game about mycorrhizal networks
+// NGSS 5-LS2-1 | Grade 5
+// ============================================================
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+let W, H, DPR;
+let splitY; // y-coordinate of the soil line
+
+// ============ AUDIO ENGINE ============
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+let masterGain = null;
+
+function ensureAudio() {
+    if (!audioCtx) {
+        audioCtx = new AudioCtx();
+        masterGain = audioCtx.createGain();
+        masterGain.gain.value = 0.3;
+        masterGain.connect(audioCtx.destination);
+    }
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+}
+
+function playTone(freq, dur, type='sine', vol=0.3, attack=0.01, decay=0.1) {
+    if (!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    osc.type = type;
+    osc.frequency.setValueAtTime(freq, now);
+    g.gain.setValueAtTime(0, now);
+    g.gain.linearRampToValueAtTime(vol, now + attack);
+    g.gain.linearRampToValueAtTime(vol * 0.6, now + attack + dur * 0.3);
+    g.gain.linearRampToValueAtTime(0, now + dur);
+    osc.connect(g);
+    g.connect(masterGain);
+    osc.start(now);
+    osc.stop(now + dur + 0.05);
+}
+
+function playNutrientBloop() {
+    playTone(520, 0.15, 'sine', 0.2, 0.005, 0.05);
+    setTimeout(() => playTone(680, 0.12, 'sine', 0.15, 0.005), 40);
+}
+
+function playConnectionGrow() {
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(220, now);
+    osc.frequency.exponentialRampToValueAtTime(660, now + 0.4);
+    g.gain.setValueAtTime(0, now);
+    g.gain.linearRampToValueAtTime(0.2, now + 0.05);
+    g.gain.linearRampToValueAtTime(0, now + 0.5);
+    osc.connect(g); g.connect(masterGain);
+    osc.start(now); osc.stop(now + 0.55);
+}
+
+function playWarningTone() {
+    playTone(300, 0.3, 'sawtooth', 0.12, 0.01);
+    setTimeout(() => playTone(260, 0.3, 'sawtooth', 0.12, 0.01), 350);
+}
+
+function playThunderRumble() {
+    if (!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const bufSize = audioCtx.sampleRate * 1.5;
+    const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < bufSize; i++) data[i] = (Math.random() * 2 - 1);
+    const src = audioCtx.createBufferSource();
+    src.buffer = buf;
+    const filter = audioCtx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.setValueAtTime(120, now);
+    filter.frequency.exponentialRampToValueAtTime(40, now + 1.5);
+    const g = audioCtx.createGain();
+    g.gain.setValueAtTime(0, now);
+    g.gain.linearRampToValueAtTime(0.25, now + 0.1);
+    g.gain.linearRampToValueAtTime(0, now + 1.5);
+    src.connect(filter); filter.connect(g); g.connect(masterGain);
+    src.start(now); src.stop(now + 1.6);
+}
+
+function playRainAmbient() {
+    if (!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const bufSize = audioCtx.sampleRate * 3;
+    const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < bufSize; i++) data[i] = (Math.random() * 2 - 1);
+    const src = audioCtx.createBufferSource();
+    src.buffer = buf;
+    const hp = audioCtx.createBiquadFilter();
+    hp.type = 'highpass'; hp.frequency.value = 800;
+    const lp = audioCtx.createBiquadFilter();
+    lp.type = 'lowpass'; lp.frequency.value = 6000;
+    const g = audioCtx.createGain();
+    g.gain.setValueAtTime(0, now);
+    g.gain.linearRampToValueAtTime(0.08, now + 0.5);
+    g.gain.linearRampToValueAtTime(0.08, now + 2.5);
+    g.gain.linearRampToValueAtTime(0, now + 3);
+    src.connect(hp); hp.connect(lp); lp.connect(g); g.connect(masterGain);
+    src.start(now); src.stop(now + 3.1);
+}
+
+function playTreeDeathSnap() {
+    playTone(180, 0.08, 'square', 0.3, 0.001);
+    setTimeout(() => playTone(80, 0.2, 'sawtooth', 0.2, 0.001), 50);
+}
+
+function playLevelComplete() {
+    const notes = [523, 659, 784, 1047];
+    notes.forEach((n, i) => setTimeout(() => playTone(n, 0.35, 'sine', 0.18, 0.01), i * 150));
+}
+
+function playDiseasePulse() {
+    playTone(150, 0.5, 'sawtooth', 0.1, 0.01);
+    playTone(155, 0.5, 'sawtooth', 0.08, 0.01);
+}
+
+function playButtonClick() {
+    playTone(440, 0.06, 'sine', 0.15, 0.005);
+}
+
+// ============ RESIZE ============
+function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width = W * DPR;
+    canvas.height = H * DPR;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    splitY = H * 0.45;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ============ INPUT ============
+let mouse = { x: 0, y: 0, down: false, justDown: false, justUp: false };
+let dragStart = null;
+let dragEnd = null;
+let dragSourceTree = null;
+let hoveredTree = null;
+let clickPos = null;
+
+function getPos(e) {
+    const t = e.touches ? e.touches[0] || e.changedTouches[0] : e;
+    const r = canvas.getBoundingClientRect();
+    return { x: t.clientX - r.left, y: t.clientY - r.top };
+}
+
+canvas.addEventListener('mousedown', e => { ensureAudio(); const p = getPos(e); mouse.x = p.x; mouse.y = p.y; mouse.down = true; mouse.justDown = true; clickPos = { x: p.x, y: p.y }; });
+canvas.addEventListener('mousemove', e => { const p = getPos(e); mouse.x = p.x; mouse.y = p.y; });
+canvas.addEventListener('mouseup', e => { const p = getPos(e); mouse.x = p.x; mouse.y = p.y; mouse.down = false; mouse.justUp = true; });
+canvas.addEventListener('touchstart', e => { e.preventDefault(); ensureAudio(); const p = getPos(e); mouse.x = p.x; mouse.y = p.y; mouse.down = true; mouse.justDown = true; clickPos = { x: p.x, y: p.y }; }, { passive: false });
+canvas.addEventListener('touchmove', e => { e.preventDefault(); const p = getPos(e); mouse.x = p.x; mouse.y = p.y; }, { passive: false });
+canvas.addEventListener('touchend', e => { e.preventDefault(); const p = getPos(e); mouse.down = false; mouse.justUp = true; }, { passive: false });
+
+// ============ GAME STATE ============
+const STATES = { TITLE: 0, HOW_TO: 1, LEVEL_SELECT: 2, LEVEL_INTRO: 3, PLAYING: 4, LEVEL_COMPLETE: 5, GAME_OVER: 6 };
+let gameState = STATES.TITLE;
+let prevState = STATES.TITLE;
+
+// ============ SAVE SYSTEM ============
+let saveData = { levels: [0, -1, -1, -1, -1], highScores: [0, 0, 0, 0, 0] }; // 0=unlocked, -1=locked, 1/2/3=stars
+function loadSave() {
+    try {
+        const d = JSON.parse(localStorage.getItem('mycelium_save'));
+        if (d && d.levels) saveData = d;
+    } catch(e) {}
+}
+function writeSave() {
+    try { localStorage.setItem('mycelium_save', JSON.stringify(saveData)); } catch(e) {}
+}
+loadSave();
+
+// ============ PARTICLE SYSTEM ============
+const MAX_PARTICLES = 600;
+let particles = [];
+
+function spawnParticle(x, y, type, props={}) {
+    if (particles.length >= MAX_PARTICLES) return;
+    particles.push({ x, y, type, vx: props.vx||0, vy: props.vy||0, life: props.life||1, maxLife: props.life||1,
+        size: props.size||3, color: props.color||'#69F0AE', alpha: props.alpha||1, ...props });
+}
+
+function updateParticles(dt) {
+    for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        p.life -= dt;
+        if (p.type === 'leaf') { p.vx += Math.sin(p.life * 5) * 10 * dt; p.vy += 15 * dt; }
+        if (p.type === 'rain') { p.vy += 200 * dt; }
+        if (p.type === 'glow') { p.alpha = (p.life / p.maxLife) * 0.6; }
+        if (p.type === 'nutrient_trail') { p.alpha = (p.life / p.maxLife) * 0.8; p.size *= 0.98; }
+        if (p.type === 'death') { p.alpha = (p.life / p.maxLife); p.vy -= 20 * dt; }
+        if (p.type === 'disease_pulse') { p.alpha = (p.life / p.maxLife) * 0.5; p.size += 30 * dt; }
+        if (p.life <= 0) { particles.splice(i, 1); }
+    }
+}
+
+function drawParticles() {
+    for (const p of particles) {
+        ctx.globalAlpha = p.alpha * (p.life / p.maxLife);
+        ctx.fillStyle = p.color;
+        if (p.type === 'rain') {
+            ctx.fillRect(p.x, p.y, 1.5, 6);
+        } else if (p.type === 'leaf') {
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.life * 3);
+            ctx.fillRect(-3, -1.5, 6, 3);
+            ctx.restore();
+        } else {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, Math.max(0.5, p.size), 0, Math.PI * 2);
+            ctx.fill();
+            if (p.type === 'nutrient_flow' || p.type === 'glow') {
+                ctx.globalAlpha *= 0.3;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size * 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    }
+    ctx.globalAlpha = 1;
+}
+
+// ============ LEVEL DATA ============
+const SEASON_NAMES = ['Spring', 'Summer', 'Fall', 'Winter'];
+const SEASON_COLORS = { Spring: '#81D4FA', Summer: '#64B5F6', Fall: '#FFCC80', Winter: '#B0BEC5' };
+
+const LEVEL_DATA = [
+    {
+        name: 'Young Plantation',
+        desc: 'A freshly planted grove of young trees.\nSimple connections, gentle weather.\nLearn the basics of the Wood Wide Web.',
+        treeCount: 6, motherTrees: 0,
+        eventFreq: 12, events: ['rain', 'drought_mild', 'seedling'],
+        seasonDur: 20, cycles: 1,
+        difficulty: 1
+    },
+    {
+        name: 'Old Growth',
+        desc: 'An ancient forest with towering Mother Trees.\nMore nutrients but a complex network.\nMother Trees share 3x the resources!',
+        treeCount: 8, motherTrees: 2,
+        eventFreq: 10, events: ['rain', 'drought', 'seedling', 'season_shift'],
+        seasonDur: 18, cycles: 1,
+        difficulty: 2
+    },
+    {
+        name: 'Mixed Forest',
+        desc: 'A diverse woodland with many species.\nEach tree type has different needs.\nBalance your network carefully!',
+        treeCount: 8, motherTrees: 1,
+        eventFreq: 9, events: ['rain', 'drought', 'seedling', 'disease', 'season_shift'],
+        seasonDur: 16, cycles: 1,
+        difficulty: 3
+    },
+    {
+        name: 'Drought Stress',
+        desc: 'A dry, struggling forest.\nWater is scarce and droughts are frequent.\nEvery connection counts!',
+        treeCount: 7, motherTrees: 1,
+        eventFreq: 7, events: ['drought', 'drought', 'rain', 'disease', 'season_shift'],
+        seasonDur: 16, cycles: 1,
+        difficulty: 4
+    },
+    {
+        name: 'Logged Forest',
+        desc: 'A threatened forest under logging pressure.\nTrees will be removed — adapt your strategy!\nProtect the network at all costs.',
+        treeCount: 10, motherTrees: 2,
+        eventFreq: 7, events: ['logging', 'drought', 'rain', 'disease', 'seedling', 'season_shift'],
+        seasonDur: 14, cycles: 1,
+        difficulty: 5
+    }
+];
+
+// ============ GAME OBJECTS ============
+let trees = [];
+let connections = [];
+let nutrientPackets = [];
+let events = [];
+let currentLevel = 0;
+let fungalEnergy = 100;
+let maxFungalEnergy = 100;
+let score = 0;
+let totalNutrientsTransferred = 0;
+let totalNutrientsProduced = 0;
+let treesDeadCount = 0;
+let season = 0; // 0=spring,1=summer,2=fall,3=winter
+let seasonTimer = 0;
+let levelTimer = 0;
+let eventTimer = 0;
+let levelWon = false;
+let levelDuration = 0;
+let activeEvent = null;
+let activeEventTimer = 0;
+let warningFlash = 0;
+let titleAnimTime = 0;
+let howToPage = 0;
+let transitionAlpha = 0;
+let transitionTarget = -1;
+let gameTime = 0;
+
+// tree species for mixed forest
+const SPECIES = [
+    { name: 'Douglas Fir', leafColor: '#2E7D32', trunkColor: '#5D4037', shape: 'triangle' },
+    { name: 'Oak', leafColor: '#388E3C', trunkColor: '#6D4C41', shape: 'round' },
+    { name: 'Birch', leafColor: '#66BB6A', trunkColor: '#BCAAA4', shape: 'oval' },
+    { name: 'Maple', leafColor: '#43A047', trunkColor: '#795548', shape: 'round' },
+    { name: 'Pine', leafColor: '#1B5E20', trunkColor: '#4E342E', shape: 'triangle' }
+];
+
+class Tree {
+    constructor(x, surfaceY, isMother=false, species=null) {
+        this.x = x;
+        this.surfaceY = surfaceY; // y position on surface (above ground)
+        this.rootY = splitY + 30 + Math.random() * 20; // root center underground
+        this.health = 100;
+        this.maxHealth = 100;
+        this.nutrients = isMother ? 80 : 50;
+        this.maxNutrients = 100;
+        this.isMother = isMother;
+        this.species = species || SPECIES[Math.floor(Math.random() * SPECIES.length)];
+        this.size = isMother ? 'large' : (Math.random() < 0.3 ? 'small' : 'medium');
+        this.alive = true;
+        this.connections = 0;
+        this.nutrientProduceTimer = 0;
+        this.nutrientProduceRate = isMother ? 2.0 : 4.0; // seconds between nutrient production
+        this.sickTimer = 0;
+        this.diseased = false;
+        this.diseaseTimer = 0;
+        this.deathAnim = 0;
+        this.swayPhase = Math.random() * Math.PI * 2;
+        this.swayAmp = 2 + Math.random() * 2;
+        this.trunkH = this.size === 'large' ? 65 : (this.size === 'medium' ? 50 : 35);
+        this.canopyR = this.size === 'large' ? 38 : (this.size === 'medium' ? 28 : 20);
+        this.rootBranches = this.generateRoots();
+        this.leafParticleTimer = 0;
+        this.id = Tree.nextId++;
+    }
+
+    generateRoots() {
+        const branches = [];
+        const count = this.isMother ? 6 : (this.size === 'large' ? 5 : (this.size === 'medium' ? 4 : 3));
+        for (let i = 0; i < count; i++) {
+            const angle = (Math.PI * 0.3) + (Math.PI * 0.4 / count) * i + Math.random() * 0.3;
+            const side = i < count / 2 ? -1 : 1;
+            const len = 25 + Math.random() * 30 + (this.isMother ? 15 : 0);
+            branches.push({
+                angle, side, len,
+                subBranches: Math.floor(1 + Math.random() * 2)
+            });
+        }
+        return branches;
+    }
+
+    getHealthColor() {
+        if (this.health > 70) return lerpColor('#2E7D32', '#FDD835', 1 - (this.health - 70) / 30);
+        if (this.health > 30) return lerpColor('#FDD835', '#E53935', 1 - (this.health - 30) / 40);
+        return '#E53935';
+    }
+
+    getRootPos() {
+        return { x: this.x, y: this.rootY };
+    }
+
+    update(dt) {
+        if (!this.alive) return;
+
+        this.swayPhase += dt * 1.5;
+
+        // Season modifiers
+        const seasonMod = [1.0, 1.2, 0.6, 0.2][season];
+        const droughtMod = (activeEvent === 'drought' || activeEvent === 'drought_mild') ? 0.3 : 1.0;
+
+        // Nutrient production (healthy trees produce)
+        if (this.health > 50 && this.nutrients > 30) {
+            this.nutrientProduceTimer += dt;
+            const rate = this.nutrientProduceRate / (seasonMod * droughtMod);
+            if (this.nutrientProduceTimer >= rate) {
+                this.nutrientProduceTimer = 0;
+                this.nutrients = Math.min(this.maxNutrients, this.nutrients + (this.isMother ? 15 : 8));
+                totalNutrientsProduced += (this.isMother ? 15 : 8);
+                // Visual: green dot at roots
+                spawnParticle(this.x + (Math.random()-0.5)*20, this.rootY, 'glow',
+                    { color: '#69F0AE', size: 4, life: 0.8, vx: 0, vy: -5 });
+            }
+        }
+
+        // Health decay when low on nutrients
+        if (this.nutrients < 20) {
+            this.health -= dt * (8 + (activeEvent === 'drought' ? 5 : 0));
+            this.sickTimer += dt;
+        } else {
+            // Recovery
+            if (this.health < 100 && this.nutrients > 50) {
+                this.health = Math.min(100, this.health + dt * 3 * seasonMod);
+            }
+            this.sickTimer = 0;
+        }
+
+        // Nutrient consumption
+        this.nutrients -= dt * (2.0 + (this.size === 'large' ? 1 : 0)) / (seasonMod * 0.5 + 0.5);
+        this.nutrients = Math.max(0, this.nutrients);
+
+        // Rain boost
+        if (activeEvent === 'rain') {
+            this.health = Math.min(100, this.health + dt * 2);
+            this.nutrients = Math.min(this.maxNutrients, this.nutrients + dt * 1.5);
+        }
+
+        // Disease
+        if (this.diseased) {
+            this.diseaseTimer += dt;
+            this.health -= dt * 6;
+            this.nutrients -= dt * 3;
+            // Spread check handled in main update
+            if (this.diseaseTimer > 0.5) {
+                this.diseaseTimer = 0;
+                spawnParticle(this.x + (Math.random()-0.5)*15, this.rootY + (Math.random()-0.5)*10,
+                    'disease_pulse', { color: '#E53935', size: 5, life: 0.6 });
+            }
+        }
+
+        // Death
+        if (this.health <= 0) {
+            this.alive = false;
+            this.deathAnim = 1;
+            treesDeadCount++;
+            playTreeDeathSnap();
+            // Remove connections
+            for (let i = connections.length - 1; i >= 0; i--) {
+                if (connections[i].treeA === this || connections[i].treeB === this) {
+                    connections[i].treeA.connections--;
+                    connections[i].treeB.connections--;
+                    connections.splice(i, 1);
+                }
+            }
+            // Death particles
+            for (let j = 0; j < 8; j++) {
+                spawnParticle(this.x + (Math.random()-0.5)*30, this.surfaceY - this.trunkH + (Math.random()-0.5)*20,
+                    'death', { color: '#795548', size: 3, life: 1.5, vx: (Math.random()-0.5)*30, vy: -20 - Math.random()*20 });
+            }
+        }
+
+        // Leaf particles (fall)
+        if (season === 2) {
+            this.leafParticleTimer += dt;
+            if (this.leafParticleTimer > 0.8 && Math.random() < 0.3) {
+                this.leafParticleTimer = 0;
+                spawnParticle(this.x + (Math.random()-0.5)*this.canopyR*2,
+                    this.surfaceY - this.trunkH - this.canopyR + Math.random()*this.canopyR,
+                    'leaf', { color: Math.random()<0.5 ? '#FF8F00' : '#E65100', size: 3, life: 2.5,
+                    vx: (Math.random()-0.5)*15, vy: 8 + Math.random()*5 });
+            }
+        }
+    }
+}
+Tree.nextId = 0;
+
+class Connection {
+    constructor(treeA, treeB) {
+        this.treeA = treeA;
+        this.treeB = treeB;
+        this.level = 1; // 1-3 thickness/speed
+        this.growAnim = 0; // 0 to 1
+        this.pulsePhase = Math.random() * Math.PI * 2;
+        this.flowParticleTimer = 0;
+    }
+
+    getControlPoints() {
+        const a = this.treeA.getRootPos();
+        const b = this.treeB.getRootPos();
+        const midX = (a.x + b.x) / 2;
+        const midY = Math.max(a.y, b.y) + 30 + Math.abs(a.x - b.x) * 0.15;
+        return { ax: a.x, ay: a.y, bx: b.x, by: b.y, cx: midX, cy: midY };
+    }
+
+    getPointOnCurve(t) {
+        const { ax, ay, bx, by, cx, cy } = this.getControlPoints();
+        const u = 1 - t;
+        return {
+            x: u*u*ax + 2*u*t*cx + t*t*bx,
+            y: u*u*ay + 2*u*t*cy + t*t*by
+        };
+    }
+
+    update(dt) {
+        if (this.growAnim < 1) {
+            this.growAnim = Math.min(1, this.growAnim + dt * 1.5);
+        }
+        this.pulsePhase += dt * 3;
+    }
+}
+
+class NutrientPacket {
+    constructor(conn, fromA) {
+        this.conn = conn;
+        this.fromA = fromA;
+        this.t = fromA ? 0 : 1;
+        this.speed = 0.15 + conn.level * 0.08;
+        this.alive = true;
+        this.amount = 5;
+    }
+
+    update(dt) {
+        const droughtMod = (activeEvent === 'drought' || activeEvent === 'drought_mild') ? 0.4 : 1.0;
+        const rainMod = activeEvent === 'rain' ? 1.5 : 1.0;
+        const speed = this.speed * droughtMod * rainMod * (0.6 + season * 0.1);
+
+        if (this.fromA) {
+            this.t += speed * dt;
+            if (this.t >= 1) {
+                this.arrive(this.conn.treeB);
+            }
+        } else {
+            this.t -= speed * dt;
+            if (this.t <= 0) {
+                this.arrive(this.conn.treeA);
+            }
+        }
+
+        // Trail particles
+        const pos = this.conn.getPointOnCurve(Math.max(0, Math.min(1, this.t)));
+        if (Math.random() < 0.3) {
+            spawnParticle(pos.x + (Math.random()-0.5)*4, pos.y + (Math.random()-0.5)*4,
+                'nutrient_trail', { color: '#69F0AE', size: 2.5, life: 0.4 });
+        }
+    }
+
+    arrive(tree) {
+        this.alive = false;
+        if (!tree.alive) return;
+        // Fungal network takes 12%
+        const cut = this.amount * 0.12;
+        const delivered = this.amount - cut;
+        tree.nutrients = Math.min(tree.maxNutrients, tree.nutrients + delivered);
+        fungalEnergy = Math.min(maxFungalEnergy, fungalEnergy + cut);
+        totalNutrientsTransferred += delivered;
+        score += Math.floor(delivered);
+        playNutrientBloop();
+    }
+}
+
+// ============ LEVEL SETUP ============
+function initLevel(idx) {
+    const ld = LEVEL_DATA[idx];
+    currentLevel = idx;
+    trees = [];
+    connections = [];
+    nutrientPackets = [];
+    particles = [];
+    events = [];
+    fungalEnergy = 80;
+    score = 0;
+    totalNutrientsTransferred = 0;
+    totalNutrientsProduced = 0;
+    treesDeadCount = 0;
+    season = 0;
+    seasonTimer = 0;
+    levelTimer = 0;
+    eventTimer = 0;
+    levelWon = false;
+    activeEvent = null;
+    activeEventTimer = 0;
+    warningFlash = 0;
+    dragSourceTree = null;
+    Tree.nextId = 0;
+
+    levelDuration = ld.seasonDur * 4 * ld.cycles;
+
+    // Place trees
+    const margin = 80;
+    const areaW = W - margin * 2;
+    const spacing = areaW / (ld.treeCount + 1);
+
+    for (let i = 0; i < ld.treeCount; i++) {
+        const x = margin + spacing * (i + 1) + (Math.random() - 0.5) * spacing * 0.3;
+        const surfY = splitY - 10 - Math.random() * 15;
+        const isMother = i < ld.motherTrees;
+        const sp = idx === 2 ? SPECIES[i % SPECIES.length] : null;
+        const tree = new Tree(x, surfY, isMother, sp);
+        trees.push(tree);
+    }
+
+    // Shuffle mother trees around
+    if (ld.motherTrees > 0) {
+        for (let i = 0; i < ld.motherTrees; i++) {
+            const swapIdx = Math.floor(Math.random() * ld.treeCount);
+            [trees[i], trees[swapIdx]] = [trees[swapIdx], trees[i]];
+        }
+    }
+}
+
+// ============ NUTRIENT FLOW ============
+function processNutrientFlow(dt) {
+    // For each connection, if one side has significantly more nutrients, send a packet
+    for (const conn of connections) {
+        if (!conn.treeA.alive || !conn.treeB.alive) continue;
+        if (conn.growAnim < 1) continue;
+
+        conn.flowParticleTimer += dt;
+        const interval = 2.5 / conn.level; // faster with higher level
+        if (conn.flowParticleTimer < interval) continue;
+        conn.flowParticleTimer = 0;
+
+        const diff = conn.treeA.nutrients - conn.treeB.nutrients;
+        if (Math.abs(diff) > 10) {
+            const fromA = diff > 0;
+            const source = fromA ? conn.treeA : conn.treeB;
+            const amount = Math.min(8 + conn.level * 2, source.nutrients * 0.15);
+            if (amount > 1 && source.nutrients > 15) {
+                source.nutrients -= amount;
+                const packet = new NutrientPacket(conn, fromA);
+                packet.amount = amount;
+                nutrientPackets.push(packet);
+            }
+        }
+    }
+}
+
+// ============ DISEASE SPREAD ============
+function processDisease(dt) {
+    for (const conn of connections) {
+        if (!conn.treeA.alive || !conn.treeB.alive) continue;
+        if (conn.treeA.diseased && !conn.treeB.diseased) {
+            if (Math.random() < dt * 0.08) {
+                conn.treeB.diseased = true;
+                playDiseasePulse();
+            }
+        }
+        if (conn.treeB.diseased && !conn.treeA.diseased) {
+            if (Math.random() < dt * 0.08) {
+                conn.treeA.diseased = true;
+                playDiseasePulse();
+            }
+        }
+    }
+}
+
+// ============ EVENTS ============
+function triggerEvent() {
+    const ld = LEVEL_DATA[currentLevel];
+    const pool = ld.events;
+    const evt = pool[Math.floor(Math.random() * pool.length)];
+
+    switch (evt) {
+        case 'rain':
+            activeEvent = 'rain';
+            activeEventTimer = 8;
+            playRainAmbient();
+            events.push({ type: 'rain', msg: 'Rain! Network speeds up.', timer: 3 });
+            break;
+        case 'drought':
+            activeEvent = 'drought';
+            activeEventTimer = 10;
+            playThunderRumble();
+            events.push({ type: 'drought', msg: 'Severe drought! Connections slow down.', timer: 3 });
+            break;
+        case 'drought_mild':
+            activeEvent = 'drought_mild';
+            activeEventTimer = 6;
+            events.push({ type: 'drought', msg: 'Dry spell approaching...', timer: 3 });
+            break;
+        case 'seedling': {
+            // Add a baby tree
+            const x = 80 + Math.random() * (W - 160);
+            const surfY = splitY - 8 - Math.random() * 10;
+            const baby = new Tree(x, surfY, false);
+            baby.size = 'small';
+            baby.health = 60;
+            baby.nutrients = 20;
+            baby.trunkH = 25;
+            baby.canopyR = 14;
+            trees.push(baby);
+            events.push({ type: 'seedling', msg: 'A new seedling has sprouted!', timer: 3 });
+            break;
+        }
+        case 'logging': {
+            // Remove a random non-mother tree
+            const alive = trees.filter(t => t.alive && !t.isMother);
+            if (alive.length > 0) {
+                const victim = alive[Math.floor(Math.random() * alive.length)];
+                victim.health = 0;
+                victim.alive = false;
+                treesDeadCount++;
+                // Remove connections
+                for (let i = connections.length - 1; i >= 0; i--) {
+                    if (connections[i].treeA === victim || connections[i].treeB === victim) {
+                        connections[i].treeA.connections--;
+                        connections[i].treeB.connections--;
+                        connections.splice(i, 1);
+                    }
+                }
+                events.push({ type: 'logging', msg: 'Logging! A tree was removed!', timer: 3 });
+                playTreeDeathSnap();
+                // Logging deaths do not count toward player's death limit
+                treesDeadCount--;
+                for (let j = 0; j < 10; j++) {
+                    spawnParticle(victim.x + (Math.random()-0.5)*30, victim.surfaceY - victim.trunkH + (Math.random()-0.5)*20,
+                        'death', { color: '#795548', size: 3, life: 1.5, vx: (Math.random()-0.5)*40, vy: -20 - Math.random()*30 });
+                }
+            }
+            break;
+        }
+        case 'disease': {
+            const healthy = trees.filter(t => t.alive && !t.diseased && t.health > 50);
+            if (healthy.length > 0) {
+                const victim = healthy[Math.floor(Math.random() * healthy.length)];
+                victim.diseased = true;
+                playDiseasePulse();
+                events.push({ type: 'disease', msg: 'Disease detected! Disconnect to contain it!', timer: 4 });
+            }
+            break;
+        }
+        case 'season_shift':
+            // Handled by main season timer - this just speeds it up
+            seasonTimer += LEVEL_DATA[currentLevel].seasonDur * 0.3;
+            events.push({ type: 'season', msg: 'Seasons shifting rapidly...', timer: 3 });
+            break;
+    }
+}
+
+// ============ INTERACTION ============
+function findTreeNearRoot(x, y, maxDist=40) {
+    let best = null, bestDist = maxDist;
+    for (const t of trees) {
+        if (!t.alive) continue;
+        const rp = t.getRootPos();
+        const d = Math.hypot(x - rp.x, y - rp.y);
+        if (d < bestDist) { bestDist = d; best = t; }
+    }
+    return best;
+}
+
+function findTreeNearTrunk(x, y, maxDist=35) {
+    let best = null, bestDist = maxDist;
+    for (const t of trees) {
+        if (!t.alive) continue;
+        const d = Math.hypot(x - t.x, y - (t.surfaceY - t.trunkH/2));
+        if (d < bestDist) { bestDist = d; best = t; }
+    }
+    return best;
+}
+
+function findConnection(x, y, maxDist=15) {
+    let best = null, bestDist = maxDist;
+    for (const c of connections) {
+        // Sample points along the curve
+        for (let t = 0; t <= 1; t += 0.05) {
+            const p = c.getPointOnCurve(t);
+            const d = Math.hypot(x - p.x, y - p.y);
+            if (d < bestDist) { bestDist = d; best = c; }
+        }
+    }
+    return best;
+}
+
+function connectionExists(a, b) {
+    return connections.some(c => (c.treeA === a && c.treeB === b) || (c.treeA === b && c.treeB === a));
+}
+
+function handleGameplayInput() {
+    // Underground interaction only
+    if (mouse.justDown && mouse.y > splitY) {
+        const tree = findTreeNearRoot(mouse.x, mouse.y, 50);
+        if (tree) {
+            dragSourceTree = tree;
+            dragStart = { x: mouse.x, y: mouse.y };
+        } else {
+            // Check if clicking on connection to upgrade
+            const conn = findConnection(mouse.x, mouse.y, 20);
+            if (conn && conn.level < 3) {
+                const cost = 15 * conn.level;
+                if (fungalEnergy >= cost) {
+                    fungalEnergy -= cost;
+                    conn.level++;
+                    playConnectionGrow();
+                    score += 20;
+                }
+            }
+            // Check if clicking on diseased connection to remove it
+            if (conn) {
+                const hasDisease = conn.treeA.diseased || conn.treeB.diseased;
+                if (hasDisease) {
+                    conn.treeA.connections--;
+                    conn.treeB.connections--;
+                    const idx = connections.indexOf(conn);
+                    if (idx >= 0) connections.splice(idx, 1);
+                    playButtonClick();
+                }
+            }
+        }
+    }
+
+    if (mouse.justUp && dragSourceTree) {
+        if (mouse.y > splitY) {
+            const target = findTreeNearRoot(mouse.x, mouse.y, 50);
+            if (target && target !== dragSourceTree && !connectionExists(dragSourceTree, target)) {
+                if (dragSourceTree.connections < 4 && target.connections < 4) {
+                    const cost = 10 + connections.length * 2;
+                    if (fungalEnergy >= cost) {
+                        fungalEnergy -= cost;
+                        const conn = new Connection(dragSourceTree, target);
+                        connections.push(conn);
+                        dragSourceTree.connections++;
+                        target.connections++;
+                        playConnectionGrow();
+                        score += 30;
+                    }
+                }
+            }
+        }
+        dragSourceTree = null;
+        dragStart = null;
+    }
+
+    hoveredTree = null;
+    if (mouse.y > splitY) {
+        hoveredTree = findTreeNearRoot(mouse.x, mouse.y, 50);
+    } else {
+        hoveredTree = findTreeNearTrunk(mouse.x, mouse.y, 40);
+    }
+}
+
+// ============ BUTTONS ============
+let buttons = [];
+
+function addButton(x, y, w, h, label, action, style={}) {
+    buttons.push({ x, y, w, h, label, action, style });
+}
+
+function drawButtons() {
+    for (const b of buttons) {
+        const hovered = mouse.x >= b.x && mouse.x <= b.x + b.w && mouse.y >= b.y && mouse.y <= b.y + b.h;
+        const baseColor = b.style.color || '#7B1FA2';
+        const hoverColor = b.style.hoverColor || '#9C27B0';
+        const textColor = b.style.textColor || '#fff';
+
+        ctx.fillStyle = hovered ? hoverColor : baseColor;
+        ctx.beginPath();
+        roundRect(ctx, b.x, b.y, b.w, b.h, 10);
+        ctx.fill();
+
+        if (hovered) {
+            ctx.strokeStyle = '#CE93D8';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            roundRect(ctx, b.x, b.y, b.w, b.h, 10);
+            ctx.stroke();
+        }
+
+        ctx.fillStyle = textColor;
+        ctx.font = `${b.style.fontSize || 16}px Inter, sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(b.label, b.x + b.w/2, b.y + b.h/2);
+    }
+}
+
+function checkButtons() {
+    if (!clickPos) return;
+    for (const b of buttons) {
+        if (clickPos.x >= b.x && clickPos.x <= b.x + b.w &&
+            clickPos.y >= b.y && clickPos.y <= b.y + b.h) {
+            playButtonClick();
+            b.action();
+            break;
+        }
+    }
+}
+
+function roundRect(ctx, x, y, w, h, r) {
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.arcTo(x + w, y, x + w, y + r, r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+    ctx.lineTo(x + r, y + h);
+    ctx.arcTo(x, y + h, x, y + h - r, r);
+    ctx.lineTo(x, y + r);
+    ctx.arcTo(x, y, x + r, y, r);
+}
+
+// ============ DRAWING HELPERS ============
+function lerpColor(a, b, t) {
+    t = Math.max(0, Math.min(1, t));
+    const ah = parseInt(a.slice(1), 16);
+    const bh = parseInt(b.slice(1), 16);
+    const ar = (ah >> 16) & 0xFF, ag = (ah >> 8) & 0xFF, ab = ah & 0xFF;
+    const br = (bh >> 16) & 0xFF, bg = (bh >> 8) & 0xFF, bb = bh & 0xFF;
+    const rr = Math.round(ar + (br - ar) * t);
+    const rg = Math.round(ag + (bg - ag) * t);
+    const rb = Math.round(ab + (bb - ab) * t);
+    return `rgb(${rr},${rg},${rb})`;
+}
+
+function drawStar(cx, cy, r, points, inner) {
+    ctx.beginPath();
+    for (let i = 0; i < points * 2; i++) {
+        const a = (i * Math.PI / points) - Math.PI / 2;
+        const rad = i % 2 === 0 ? r : inner;
+        const method = i === 0 ? 'moveTo' : 'lineTo';
+        ctx[method](cx + Math.cos(a) * rad, cy + Math.sin(a) * rad);
+    }
+    ctx.closePath();
+}
+
+// ============ DRAW ABOVE GROUND ============
+function drawSky() {
+    const skyColor = SEASON_COLORS[SEASON_NAMES[season]] || '#81D4FA';
+    const grad = ctx.createLinearGradient(0, 0, 0, splitY);
+    if (activeEvent === 'drought' || activeEvent === 'drought_mild') {
+        grad.addColorStop(0, '#FFE082');
+        grad.addColorStop(1, '#F9A825');
+    } else if (activeEvent === 'rain') {
+        grad.addColorStop(0, '#546E7A');
+        grad.addColorStop(1, '#78909C');
+    } else if (season === 3) {
+        grad.addColorStop(0, '#90A4AE');
+        grad.addColorStop(1, '#CFD8DC');
+    } else {
+        grad.addColorStop(0, skyColor);
+        grad.addColorStop(0.7, '#E1F5FE');
+        grad.addColorStop(1, '#C8E6C9');
+    }
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, splitY);
+
+    // Clouds
+    const cloudAlpha = activeEvent === 'rain' ? 0.6 : (activeEvent === 'drought' ? 0.1 : 0.3);
+    ctx.globalAlpha = cloudAlpha;
+    ctx.fillStyle = '#fff';
+    const t = gameTime * 8;
+    for (let i = 0; i < 5; i++) {
+        const cx = ((i * 250 + t) % (W + 200)) - 100;
+        const cy = 25 + i * 18 + Math.sin(i * 2.3) * 10;
+        drawCloud(cx, cy, 40 + i * 10);
+    }
+    ctx.globalAlpha = 1;
+
+    // Rain drops
+    if (activeEvent === 'rain') {
+        for (let i = 0; i < 3; i++) {
+            spawnParticle(Math.random() * W, -10, 'rain',
+                { color: '#42A5F5', size: 2, life: 1.5, vx: -20, vy: 200 + Math.random()*100 });
+        }
+    }
+}
+
+function drawCloud(cx, cy, size) {
+    ctx.beginPath();
+    ctx.arc(cx, cy, size * 0.5, 0, Math.PI * 2);
+    ctx.arc(cx + size * 0.35, cy - size * 0.15, size * 0.35, 0, Math.PI * 2);
+    ctx.arc(cx - size * 0.3, cy + size * 0.05, size * 0.3, 0, Math.PI * 2);
+    ctx.arc(cx + size * 0.1, cy + size * 0.1, size * 0.35, 0, Math.PI * 2);
+    ctx.fill();
+}
+
+function drawTree(tree) {
+    if (!tree.alive) {
+        if (tree.deathAnim > 0) {
+            tree.deathAnim -= 0.01;
+            ctx.globalAlpha = tree.deathAnim;
+            ctx.save();
+            ctx.translate(tree.x, tree.surfaceY);
+            ctx.rotate(tree.deathAnim * 0.3 - 0.3);
+            // Gray trunk
+            ctx.fillStyle = '#616161';
+            ctx.fillRect(-6, -tree.trunkH, 12, tree.trunkH);
+            // Gray canopy
+            ctx.fillStyle = '#9E9E9E';
+            ctx.beginPath();
+            ctx.arc(0, -tree.trunkH - tree.canopyR * 0.3, tree.canopyR * 0.7, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+            ctx.globalAlpha = 1;
+        }
+        return;
+    }
+
+    const sway = Math.sin(tree.swayPhase) * tree.swayAmp;
+    const healthPct = tree.health / 100;
+
+    ctx.save();
+    ctx.translate(tree.x, tree.surfaceY);
+
+    // Shadow
+    ctx.globalAlpha = 0.15;
+    ctx.fillStyle = '#000';
+    ctx.beginPath();
+    ctx.ellipse(0, 2, tree.canopyR * 0.8, 5, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Trunk
+    const trunkW = tree.isMother ? 14 : (tree.size === 'medium' ? 10 : 7);
+    ctx.fillStyle = tree.species.trunkColor;
+    ctx.fillRect(-trunkW/2, -tree.trunkH, trunkW, tree.trunkH);
+    // Trunk detail
+    ctx.strokeStyle = 'rgba(0,0,0,0.15)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-trunkW/4, -tree.trunkH * 0.2);
+    ctx.lineTo(-trunkW/4, -tree.trunkH * 0.8);
+    ctx.stroke();
+
+    // Canopy
+    const canopyColor = tree.getHealthColor();
+    const canopyY = -tree.trunkH;
+
+    ctx.save();
+    ctx.translate(sway * 0.3, 0);
+
+    if (tree.species.shape === 'triangle') {
+        // Pine/Fir triangle canopy
+        ctx.fillStyle = canopyColor;
+        ctx.beginPath();
+        ctx.moveTo(0, canopyY - tree.canopyR * 2);
+        ctx.lineTo(-tree.canopyR * 1.1, canopyY + tree.canopyR * 0.3);
+        ctx.lineTo(tree.canopyR * 1.1, canopyY + tree.canopyR * 0.3);
+        ctx.closePath();
+        ctx.fill();
+        // Second layer
+        ctx.globalAlpha = 0.7;
+        ctx.fillStyle = lerpColor(canopyColor, '#1B5E20', 0.2);
+        ctx.beginPath();
+        ctx.moveTo(0, canopyY - tree.canopyR * 1.3);
+        ctx.lineTo(-tree.canopyR * 0.85, canopyY + tree.canopyR * 0.1);
+        ctx.lineTo(tree.canopyR * 0.85, canopyY + tree.canopyR * 0.1);
+        ctx.closePath();
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    } else {
+        // Round/oval canopy
+        ctx.fillStyle = canopyColor;
+        ctx.beginPath();
+        const ry = tree.species.shape === 'oval' ? tree.canopyR * 1.2 : tree.canopyR;
+        ctx.ellipse(0, canopyY - tree.canopyR * 0.5, tree.canopyR, ry, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // Highlight
+        ctx.globalAlpha = 0.3;
+        ctx.fillStyle = '#fff';
+        ctx.beginPath();
+        ctx.ellipse(-tree.canopyR * 0.25, canopyY - tree.canopyR * 0.8, tree.canopyR * 0.4, tree.canopyR * 0.3, -0.3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+
+    // Mother tree golden aura
+    if (tree.isMother) {
+        ctx.globalAlpha = 0.15 + Math.sin(gameTime * 2) * 0.05;
+        ctx.fillStyle = '#FFD54F';
+        ctx.beginPath();
+        ctx.arc(0, canopyY - tree.canopyR * 0.5, tree.canopyR * 1.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+
+    // Disease indicator above ground
+    if (tree.diseased) {
+        ctx.globalAlpha = 0.3 + Math.sin(gameTime * 6) * 0.2;
+        ctx.fillStyle = '#E53935';
+        ctx.beginPath();
+        ctx.arc(0, canopyY - tree.canopyR * 0.5, tree.canopyR * 1.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+
+    ctx.restore();
+
+    // Health bar (only if not full health)
+    if (tree.health < 95) {
+        const barW = 30;
+        const barH = 4;
+        const barX = -barW / 2;
+        const barY = -tree.trunkH - tree.canopyR * 2 - 12;
+        ctx.fillStyle = 'rgba(0,0,0,0.5)';
+        ctx.fillRect(barX - 1, barY - 1, barW + 2, barH + 2);
+        ctx.fillStyle = tree.health > 50 ? '#4CAF50' : (tree.health > 25 ? '#FFC107' : '#E53935');
+        ctx.fillRect(barX, barY, barW * (tree.health / 100), barH);
+    }
+
+    // Nutrient indicator
+    if (tree.nutrients < 30 && tree.alive) {
+        ctx.globalAlpha = 0.5 + Math.sin(gameTime * 4) * 0.3;
+        ctx.fillStyle = '#E53935';
+        ctx.font = 'bold 14px Inter';
+        ctx.textAlign = 'center';
+        ctx.fillText('!', 0, -tree.trunkH - tree.canopyR * 2 - 20);
+        ctx.globalAlpha = 1;
+    }
+
+    ctx.restore();
+}
+
+// ============ DRAW SOIL LINE ============
+function drawSoilLine() {
+    // Grass on top
+    const grassGrad = ctx.createLinearGradient(0, splitY - 8, 0, splitY + 3);
+    grassGrad.addColorStop(0, '#4CAF50');
+    grassGrad.addColorStop(1, '#2E7D32');
+    ctx.fillStyle = grassGrad;
+    ctx.fillRect(0, splitY - 5, W, 8);
+
+    // Grass tufts
+    ctx.strokeStyle = '#66BB6A';
+    ctx.lineWidth = 1.5;
+    for (let x = 0; x < W; x += 12) {
+        const h = 4 + Math.sin(x * 0.1 + gameTime) * 2;
+        ctx.beginPath();
+        ctx.moveTo(x, splitY - 4);
+        ctx.quadraticCurveTo(x + 2, splitY - 4 - h, x + 4, splitY - 5);
+        ctx.stroke();
+    }
+
+    // Soil layer
+    const dirtGrad = ctx.createLinearGradient(0, splitY, 0, splitY + 25);
+    dirtGrad.addColorStop(0, '#5D4037');
+    dirtGrad.addColorStop(0.5, '#4E342E');
+    dirtGrad.addColorStop(1, '#3E2723');
+
+    if (activeEvent === 'drought' || activeEvent === 'drought_mild') {
+        const droughtGrad = ctx.createLinearGradient(0, splitY, 0, splitY + 25);
+        droughtGrad.addColorStop(0, '#8D6E63');
+        droughtGrad.addColorStop(1, '#6D4C41');
+        ctx.fillStyle = droughtGrad;
+    } else {
+        ctx.fillStyle = dirtGrad;
+    }
+    ctx.fillRect(0, splitY + 3, W, 22);
+
+    // Small rocks/pebbles
+    ctx.fillStyle = 'rgba(120,100,80,0.3)';
+    for (let i = 0; i < 15; i++) {
+        const px = (i * 97 + 30) % W;
+        ctx.beginPath();
+        ctx.ellipse(px, splitY + 10 + Math.sin(i) * 5, 3 + Math.sin(i*3)*2, 2, 0, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+// ============ DRAW UNDERGROUND ============
+function drawUnderground() {
+    // Dark background
+    const ugGrad = ctx.createLinearGradient(0, splitY + 25, 0, H);
+    if (activeEvent === 'rain') {
+        ugGrad.addColorStop(0, '#1A1030');
+        ugGrad.addColorStop(1, '#120825');
+    } else if (activeEvent === 'drought' || activeEvent === 'drought_mild') {
+        ugGrad.addColorStop(0, '#2A1A10');
+        ugGrad.addColorStop(1, '#1A0A05');
+    } else {
+        ugGrad.addColorStop(0, '#1A0A2E');
+        ugGrad.addColorStop(1, '#0D0518');
+    }
+    ctx.fillStyle = ugGrad;
+    ctx.fillRect(0, splitY + 25, W, H - splitY - 25);
+
+    // Subtle soil texture (deterministic)
+    ctx.globalAlpha = 0.03;
+    ctx.fillStyle = '#A1887F';
+    for (let i = 0; i < 60; i++) {
+        const px = (i * 73 + 10) % W;
+        const py = splitY + 40 + (i * 47) % (H - splitY - 60);
+        ctx.beginPath();
+        ctx.arc(px, py, 1 + (i % 3) * 0.3, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+}
+
+function drawRoots(tree) {
+    if (!tree.alive && tree.deathAnim <= 0) return;
+    const rootAlpha = tree.alive ? 1 : tree.deathAnim;
+    ctx.globalAlpha = rootAlpha;
+
+    const rootColor = tree.isMother ? '#C9A96E' : '#A1887F';
+    const rootWidth = tree.isMother ? 3 : 2;
+
+    // Main root going down
+    ctx.strokeStyle = rootColor;
+    ctx.lineWidth = rootWidth + 1;
+    ctx.beginPath();
+    ctx.moveTo(tree.x, splitY + 5);
+    ctx.lineTo(tree.x, tree.rootY);
+    ctx.stroke();
+
+    // Branch roots
+    for (let bi = 0; bi < tree.rootBranches.length; bi++) {
+        const branch = tree.rootBranches[bi];
+        const startX = tree.x;
+        const endX = startX + branch.side * branch.len * Math.cos(branch.angle);
+        const endY = tree.rootY + branch.len * Math.sin(branch.angle) * 0.5;
+
+        ctx.lineWidth = rootWidth;
+        ctx.beginPath();
+        ctx.moveTo(startX, tree.rootY - 5);
+        ctx.quadraticCurveTo(startX + branch.side * branch.len * 0.3, tree.rootY + 5, endX, endY);
+        ctx.stroke();
+
+        // Sub-branches (deterministic offsets using branch index)
+        for (let s = 0; s < branch.subBranches; s++) {
+            const t = 0.4 + s * 0.3;
+            const bx = startX + (endX - startX) * t;
+            const by = (tree.rootY - 5) + (endY - tree.rootY + 5) * t;
+            const seed = tree.id * 100 + bi * 10 + s;
+            const sebx = bx + branch.side * (8 + ((seed * 7 + 3) % 10));
+            const seby = by + 5 + ((seed * 13 + 7) % 10);
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(bx, by);
+            ctx.lineTo(sebx, seby);
+            ctx.stroke();
+        }
+    }
+
+    // Mother tree golden root glow
+    if (tree.isMother && tree.alive) {
+        ctx.globalAlpha = 0.08 + Math.sin(gameTime * 1.5) * 0.04;
+        ctx.fillStyle = '#FFD54F';
+        ctx.beginPath();
+        ctx.arc(tree.x, tree.rootY, 35, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    // Connection count indicator
+    if (tree.alive) {
+        ctx.globalAlpha = 0.6;
+        ctx.fillStyle = tree.connections >= 4 ? '#E53935' : '#CE93D8';
+        ctx.font = '10px Inter';
+        ctx.textAlign = 'center';
+        ctx.fillText(`${tree.connections}/4`, tree.x, tree.rootY + 20);
+    }
+
+    ctx.globalAlpha = 1;
+}
+
+function drawConnections() {
+    for (const conn of connections) {
+        if (!conn.treeA.alive || !conn.treeB.alive) continue;
+        const { ax, ay, bx, by, cx, cy } = conn.getControlPoints();
+        const progress = conn.growAnim;
+
+        // Glow layer
+        const glowAlpha = 0.15 + Math.sin(conn.pulsePhase) * 0.05;
+        const isDrought = activeEvent === 'drought' || activeEvent === 'drought_mild';
+        const glowColor = isDrought ? 'rgba(206,147,216,0.08)' : `rgba(206,147,216,${glowAlpha})`;
+        ctx.strokeStyle = glowColor;
+        ctx.lineWidth = 6 + conn.level * 3;
+        ctx.beginPath();
+        ctx.moveTo(ax, ay);
+        // Partial draw based on growth
+        const steps = Math.floor(20 * progress);
+        for (let i = 1; i <= steps; i++) {
+            const t = i / 20;
+            const u = 1 - t;
+            const px = u*u*ax + 2*u*t*cx + t*t*bx;
+            const py = u*u*ay + 2*u*t*cy + t*t*by;
+            ctx.lineTo(px, py);
+        }
+        ctx.stroke();
+
+        // Main line
+        const mainColor = isDrought ? '#8E6B9E' : (activeEvent === 'rain' ? '#D183E8' : '#AB47BC');
+        ctx.strokeStyle = mainColor;
+        ctx.lineWidth = 1.5 + conn.level * 0.8;
+        ctx.beginPath();
+        ctx.moveTo(ax, ay);
+        for (let i = 1; i <= steps; i++) {
+            const t = i / 20;
+            const u = 1 - t;
+            ctx.lineTo(u*u*ax + 2*u*t*cx + t*t*bx, u*u*ay + 2*u*t*cy + t*t*by);
+        }
+        ctx.stroke();
+
+        // Pulsing particles along connection (use pulsePhase for deterministic timing)
+        if (conn.growAnim >= 1 && Math.sin(conn.pulsePhase * 2) > 0.95) {
+            const rt = (conn.pulsePhase * 0.37) % 1;
+            const pp = conn.getPointOnCurve(rt);
+            spawnParticle(pp.x + Math.sin(conn.pulsePhase * 7) * 3, pp.y + Math.cos(conn.pulsePhase * 5) * 3,
+                'glow', { color: '#CE93D8', size: 1.5, life: 0.5 });
+        }
+
+        // Small mushroom nodes at connection points (where connections meet roots)
+        if (conn.growAnim >= 1) {
+            drawMushroom(ax, ay - 3, 4);
+            drawMushroom(bx, by - 3, 4);
+        }
+
+        // Connection level indicator
+        if (conn.level > 1) {
+            const mid = conn.getPointOnCurve(0.5);
+            ctx.fillStyle = '#CE93D8';
+            ctx.globalAlpha = 0.5;
+            ctx.font = '9px Inter';
+            ctx.textAlign = 'center';
+            ctx.fillText('x' + conn.level, mid.x, mid.y - 8);
+            ctx.globalAlpha = 1;
+        }
+
+        // Disease warning on connection
+        if (conn.treeA.diseased || conn.treeB.diseased) {
+            ctx.globalAlpha = 0.3 + Math.sin(gameTime * 6) * 0.2;
+            ctx.strokeStyle = '#E53935';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(ax, ay);
+            for (let i = 1; i <= 20; i++) {
+                const t = i / 20;
+                const u = 1 - t;
+                ctx.lineTo(u*u*ax + 2*u*t*cx + t*t*bx, u*u*ay + 2*u*t*cy + t*t*by);
+            }
+            ctx.stroke();
+            ctx.globalAlpha = 1;
+        }
+    }
+}
+
+function drawMushroom(x, y, size) {
+    // Tiny mushroom at connection nodes
+    ctx.fillStyle = '#CE93D8';
+    ctx.globalAlpha = 0.6;
+    // Stem
+    ctx.fillRect(x - 1, y, 2, size);
+    // Cap
+    ctx.beginPath();
+    ctx.arc(x, y, size * 0.7, Math.PI, 0);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+}
+
+function drawNutrientPackets() {
+    for (const np of nutrientPackets) {
+        if (!np.alive) continue;
+        const t = Math.max(0, Math.min(1, np.t));
+        const pos = np.conn.getPointOnCurve(t);
+
+        // Glow
+        ctx.globalAlpha = 0.3;
+        ctx.fillStyle = '#69F0AE';
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 8, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Core
+        ctx.globalAlpha = 0.9;
+        ctx.fillStyle = '#69F0AE';
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.globalAlpha = 1;
+    }
+}
+
+// ============ DRAW DRAG LINE ============
+function drawDragLine() {
+    if (!dragSourceTree || !mouse.down) return;
+    const rp = dragSourceTree.getRootPos();
+    ctx.strokeStyle = 'rgba(206,147,216,0.5)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(rp.x, rp.y);
+    ctx.lineTo(mouse.x, mouse.y);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Highlight target
+    const target = findTreeNearRoot(mouse.x, mouse.y, 50);
+    if (target && target !== dragSourceTree) {
+        const trp = target.getRootPos();
+        const canConnect = target.connections < 4 && dragSourceTree.connections < 4 && !connectionExists(dragSourceTree, target);
+        ctx.strokeStyle = canConnect ? '#69F0AE' : '#E53935';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(trp.x, trp.y, 15, 0, Math.PI * 2);
+        ctx.stroke();
+    }
+}
+
+// ============ HUD ============
+function drawHUD() {
+    const hudY = 8;
+    const panelH = 36;
+
+    // Fungal Energy (top-left)
+    ctx.fillStyle = 'rgba(26,10,46,0.85)';
+    ctx.beginPath();
+    roundRect(ctx, 10, hudY, 180, panelH, 8);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(206,147,216,0.3)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    roundRect(ctx, 10, hudY, 180, panelH, 8);
+    ctx.stroke();
+
+    ctx.fillStyle = '#F48FB1';
+    ctx.font = 'bold 12px Inter';
+    ctx.textAlign = 'left';
+    ctx.fillText('Fungal Energy', 20, hudY + 14);
+    // Energy bar
+    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.fillRect(20, hudY + 20, 160, 8);
+    const energyPct = fungalEnergy / maxFungalEnergy;
+    ctx.fillStyle = energyPct > 0.3 ? '#F48FB1' : '#E53935';
+    ctx.fillRect(20, hudY + 20, 160 * energyPct, 8);
+
+    // Trees alive (top-center)
+    const aliveCount = trees.filter(t => t.alive).length;
+    const totalCount = trees.length;
+    ctx.fillStyle = 'rgba(26,10,46,0.85)';
+    ctx.beginPath();
+    roundRect(ctx, W/2 - 80, hudY, 160, panelH, 8);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(206,147,216,0.3)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    roundRect(ctx, W/2 - 80, hudY, 160, panelH, 8);
+    ctx.stroke();
+
+    ctx.fillStyle = aliveCount <= 3 ? '#E53935' : '#69F0AE';
+    ctx.font = 'bold 13px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText(`Trees: ${aliveCount} / ${totalCount}`, W/2, hudY + 16);
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = '11px Inter';
+    ctx.fillText(`${SEASON_NAMES[season]} | Deaths: ${treesDeadCount}`, W/2, hudY + 30);
+
+    // Score (top-right)
+    ctx.fillStyle = 'rgba(26,10,46,0.85)';
+    ctx.beginPath();
+    roundRect(ctx, W - 160, hudY, 150, panelH, 8);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(206,147,216,0.3)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    roundRect(ctx, W - 160, hudY, 150, panelH, 8);
+    ctx.stroke();
+
+    ctx.fillStyle = '#FFD54F';
+    ctx.font = 'bold 13px Inter';
+    ctx.textAlign = 'right';
+    ctx.fillText(`Score: ${score}`, W - 20, hudY + 16);
+    // Level timer
+    const timeLeft = Math.max(0, levelDuration - levelTimer);
+    const mins = Math.floor(timeLeft / 60);
+    const secs = Math.floor(timeLeft % 60);
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = '11px Inter';
+    ctx.fillText(`${mins}:${secs.toString().padStart(2,'0')}`, W - 20, hudY + 30);
+
+    // Active event banner
+    if (activeEvent) {
+        const evtLabels = {
+            rain: 'RAIN — Network Boosted!',
+            drought: 'DROUGHT — Connections Slowed!',
+            drought_mild: 'Dry Spell...'
+        };
+        const label = evtLabels[activeEvent] || '';
+        if (label) {
+            ctx.fillStyle = activeEvent === 'rain' ? 'rgba(66,165,245,0.2)' : 'rgba(229,57,53,0.2)';
+            ctx.fillRect(W/2 - 150, hudY + panelH + 6, 300, 22);
+            ctx.fillStyle = activeEvent === 'rain' ? '#42A5F5' : '#FFE082';
+            ctx.font = 'bold 11px Inter';
+            ctx.textAlign = 'center';
+            ctx.fillText(label, W/2, hudY + panelH + 20);
+        }
+    }
+
+    // Event messages
+    for (let i = events.length - 1; i >= 0; i--) {
+        const evt = events[i];
+        evt.timer -= 0.016;
+        if (evt.timer <= 0) { events.splice(i, 1); continue; }
+        const alpha = Math.min(1, evt.timer);
+        ctx.globalAlpha = alpha;
+        const eColors = { rain: '#42A5F5', drought: '#FFE082', seedling: '#69F0AE', logging: '#E53935', disease: '#E53935', season: '#CE93D8' };
+        ctx.fillStyle = eColors[evt.type] || '#fff';
+        ctx.font = 'bold 14px Inter';
+        ctx.textAlign = 'center';
+        ctx.fillText(evt.msg, W/2, H/2 - 30 + i * 25);
+        ctx.globalAlpha = 1;
+    }
+
+    // Tree info tooltip
+    if (hoveredTree && hoveredTree.alive) {
+        const t = hoveredTree;
+        const tipX = Math.min(W - 170, Math.max(10, t.x - 75));
+        const tipY = mouse.y > splitY ? t.rootY + 30 : t.surfaceY - t.trunkH - t.canopyR * 2 - 65;
+
+        ctx.fillStyle = 'rgba(26,10,46,0.92)';
+        ctx.beginPath();
+        roundRect(ctx, tipX, tipY, 150, 58, 6);
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(206,147,216,0.4)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        roundRect(ctx, tipX, tipY, 150, 58, 6);
+        ctx.stroke();
+
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 11px Inter';
+        ctx.textAlign = 'left';
+        const nameStr = (t.isMother ? 'Mother ' : '') + t.species.name;
+        ctx.fillText(nameStr, tipX + 8, tipY + 14);
+        ctx.fillStyle = '#CE93D8';
+        ctx.font = '10px Inter';
+        ctx.fillText(`Health: ${Math.round(t.health)}%  Nutrients: ${Math.round(t.nutrients)}%`, tipX + 8, tipY + 28);
+        ctx.fillText(`Connections: ${t.connections}/4${t.diseased ? '  DISEASED!' : ''}`, tipX + 8, tipY + 42);
+        if (t.diseased) {
+            ctx.fillStyle = '#E53935';
+            ctx.fillText('Click connection to disconnect!', tipX + 8, tipY + 54);
+        }
+    }
+
+    // Instructions hint at bottom
+    ctx.globalAlpha = 0.4;
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = '11px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText('Drag between tree roots to connect  |  Click connections to upgrade  |  Click diseased connections to remove', W/2, H - 12);
+    ctx.globalAlpha = 1;
+}
+
+// ============ TITLE SCREEN ============
+function drawTitle(dt) {
+    titleAnimTime += dt;
+
+    // Dark background
+    ctx.fillStyle = '#0D0518';
+    ctx.fillRect(0, 0, W, H);
+
+    // Animated underground network
+    const nodeCount = 12;
+    const nodes = [];
+    for (let i = 0; i < nodeCount; i++) {
+        const angle = (i / nodeCount) * Math.PI * 2;
+        const r = 120 + Math.sin(i * 2.3 + titleAnimTime * 0.5) * 30;
+        nodes.push({
+            x: W/2 + Math.cos(angle) * r,
+            y: H/2 + 40 + Math.sin(angle) * r * 0.5
+        });
+    }
+
+    // Draw connections between nodes
+    ctx.strokeStyle = 'rgba(206,147,216,0.2)';
+    ctx.lineWidth = 2;
+    for (let i = 0; i < nodeCount; i++) {
+        for (let j = i + 1; j < nodeCount; j++) {
+            if (Math.abs(i - j) <= 2 || (i === 0 && j === nodeCount - 1)) {
+                const progress = Math.min(1, Math.max(0, (titleAnimTime - i * 0.2) * 0.8));
+                if (progress <= 0) continue;
+                ctx.globalAlpha = progress * 0.3;
+                ctx.strokeStyle = '#AB47BC';
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                const midY = Math.max(nodes[i].y, nodes[j].y) + 20;
+                ctx.moveTo(nodes[i].x, nodes[i].y);
+                ctx.quadraticCurveTo((nodes[i].x + nodes[j].x)/2, midY, nodes[j].x, nodes[j].y);
+                ctx.stroke();
+            }
+        }
+    }
+    ctx.globalAlpha = 1;
+
+    // Glowing nodes
+    for (let i = 0; i < nodeCount; i++) {
+        const pulse = Math.sin(titleAnimTime * 2 + i * 1.5) * 0.3 + 0.7;
+        ctx.globalAlpha = pulse * 0.5;
+        ctx.fillStyle = '#CE93D8';
+        ctx.beginPath();
+        ctx.arc(nodes[i].x, nodes[i].y, 12, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = pulse;
+        ctx.fillStyle = '#E1BEE7';
+        ctx.beginPath();
+        ctx.arc(nodes[i].x, nodes[i].y, 5, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    // Flowing nutrient dots
+    for (let i = 0; i < 5; i++) {
+        const t = ((titleAnimTime * 0.3 + i * 0.2) % 1);
+        const fromNode = i % nodeCount;
+        const toNode = (fromNode + 1) % nodeCount;
+        const x = nodes[fromNode].x + (nodes[toNode].x - nodes[fromNode].x) * t;
+        const y = nodes[fromNode].y + (nodes[toNode].y - nodes[fromNode].y) * t + Math.sin(t * Math.PI) * 15;
+        ctx.globalAlpha = 0.8;
+        ctx.fillStyle = '#69F0AE';
+        ctx.beginPath();
+        ctx.arc(x, y, 3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 0.3;
+        ctx.beginPath();
+        ctx.arc(x, y, 7, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    // Small tree silhouettes on top
+    for (let i = 0; i < nodeCount; i++) {
+        ctx.globalAlpha = 0.4;
+        ctx.fillStyle = '#2E7D32';
+        ctx.beginPath();
+        ctx.arc(nodes[i].x, nodes[i].y - 45, 15, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#5D4037';
+        ctx.fillRect(nodes[i].x - 3, nodes[i].y - 32, 6, 32);
+    }
+
+    ctx.globalAlpha = 1;
+
+    // Title
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = 'bold 56px Inter';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('MYCELIUM', W/2, H/2 - 90);
+
+    // Subtitle
+    ctx.fillStyle = '#E1BEE7';
+    ctx.font = '18px Inter';
+    ctx.fillText('The Wood Wide Web', W/2, H/2 - 55);
+
+    // Tagline
+    ctx.fillStyle = 'rgba(206,147,216,0.6)';
+    ctx.font = '13px Inter';
+    ctx.fillText('Build the underground fungal network. Keep the forest alive.', W/2, H/2 - 30);
+
+    ctx.textBaseline = 'alphabetic';
+
+    // Buttons
+    buttons = [];
+    addButton(W/2 - 90, H/2 + 100, 180, 48, 'PLAY', () => {
+        transitionTarget = STATES.LEVEL_SELECT;
+    }, { color: '#7B1FA2', hoverColor: '#9C27B0', fontSize: 18 });
+
+    addButton(W/2 - 90, H/2 + 160, 180, 40, 'How to Play', () => {
+        howToPage = 0;
+        transitionTarget = STATES.HOW_TO;
+    }, { color: '#4A148C', hoverColor: '#6A1B9A', fontSize: 14 });
+
+    drawButtons();
+
+    // NGSS tag
+    ctx.fillStyle = 'rgba(206,147,216,0.3)';
+    ctx.font = '11px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText('NGSS 5-LS2-1 | Ecosystems: Interactions, Energy, and Dynamics', W/2, H - 20);
+}
+
+// ============ HOW TO PLAY ============
+function drawHowTo(dt) {
+    ctx.fillStyle = '#0D0518';
+    ctx.fillRect(0, 0, W, H);
+
+    const pages = [
+        {
+            title: 'You Are the Wood Wide Web',
+            lines: [
+                'In real forests, trees are connected by underground',
+                'fungal networks called mycorrhizal networks.',
+                '',
+                'Trees share nutrients through these networks.',
+                'They cooperate to keep the whole forest healthy!',
+                '',
+                'You play as the fungal network.',
+                'Connect trees. Share nutrients. Survive.'
+            ]
+        },
+        {
+            title: 'How to Connect Trees',
+            lines: [
+                'The screen is split: forest above, underground below.',
+                '',
+                'Look at the UNDERGROUND section (bottom half).',
+                'Each tree has roots reaching down.',
+                '',
+                'DRAG from one tree\'s roots to another to grow',
+                'a mycelium connection (costs Fungal Energy).',
+                '',
+                'Each tree can have up to 4 connections.',
+                'Click an existing connection to upgrade it (faster flow).'
+            ]
+        },
+        {
+            title: 'Nutrient Flow & Mutualism',
+            lines: [
+                'Healthy trees PRODUCE nutrients (green dots).',
+                'Sick trees NEED nutrients (they pulse red).',
+                '',
+                'Nutrients flow automatically along your network',
+                'from trees with MORE to trees with LESS.',
+                '',
+                'You (the fungus) take a small 12% cut of each',
+                'transfer. This is mutualism - you both benefit!',
+                '',
+                'Your cut refills your Fungal Energy meter.'
+            ]
+        },
+        {
+            title: 'Events & Strategy',
+            lines: [
+                'RAIN: Connections speed up, trees get a health boost.',
+                'DROUGHT: Connections slow, trees get sick faster.',
+                'SEEDLING: New tree appears - connect it to survive!',
+                'DISEASE: Spreads through connections - disconnect to stop it!',
+                'LOGGING: A tree is removed - adapt your network!',
+                '',
+                'If 3+ trees die, the forest collapses. Game Over!',
+                'Survive all seasons to win. Get stars for efficiency!'
+            ]
+        }
+    ];
+
+    const page = pages[howToPage];
+
+    // Title
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = 'bold 28px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText(page.title, W/2, 60);
+
+    // Content
+    ctx.fillStyle = '#E1BEE7';
+    ctx.font = '15px Inter';
+    page.lines.forEach((line, i) => {
+        ctx.fillText(line, W/2, 110 + i * 28);
+    });
+
+    // Page indicator
+    ctx.fillStyle = 'rgba(206,147,216,0.5)';
+    ctx.font = '12px Inter';
+    ctx.fillText(`${howToPage + 1} / ${pages.length}`, W/2, H - 80);
+
+    // Navigation
+    buttons = [];
+    if (howToPage > 0) {
+        addButton(W/2 - 200, H - 60, 120, 40, 'Back', () => howToPage--,
+            { color: '#4A148C', hoverColor: '#6A1B9A', fontSize: 14 });
+    }
+    if (howToPage < pages.length - 1) {
+        addButton(W/2 + 80, H - 60, 120, 40, 'Next', () => howToPage++,
+            { color: '#7B1FA2', hoverColor: '#9C27B0', fontSize: 14 });
+    } else {
+        addButton(W/2 + 80, H - 60, 120, 40, 'Got it!', () => {
+            transitionTarget = STATES.LEVEL_SELECT;
+        }, { color: '#2E7D32', hoverColor: '#388E3C', fontSize: 14 });
+    }
+    addButton(10, 10, 80, 32, 'Menu', () => {
+        transitionTarget = STATES.TITLE;
+    }, { color: '#4A148C', hoverColor: '#6A1B9A', fontSize: 12 });
+
+    drawButtons();
+}
+
+// ============ LEVEL SELECT ============
+function drawLevelSelect(dt) {
+    ctx.fillStyle = '#0D0518';
+    ctx.fillRect(0, 0, W, H);
+
+    // Background network decoration
+    ctx.globalAlpha = 0.05;
+    ctx.strokeStyle = '#CE93D8';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < 20; i++) {
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * W, Math.random() * H);
+        ctx.quadraticCurveTo(Math.random() * W, Math.random() * H, Math.random() * W, Math.random() * H);
+        ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = 'bold 32px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText('Choose Your Forest', W/2, 55);
+
+    buttons = [];
+    const cardW = 160;
+    const cardH = 170;
+    const gap = 20;
+    const totalW = 5 * cardW + 4 * gap;
+    const startX = (W - totalW) / 2;
+
+    for (let i = 0; i < 5; i++) {
+        const ld = LEVEL_DATA[i];
+        const cx = startX + i * (cardW + gap);
+        const cy = 90;
+        const locked = saveData.levels[i] === -1;
+        const stars = Math.max(0, saveData.levels[i]);
+
+        // Card background
+        ctx.fillStyle = locked ? 'rgba(30,20,50,0.8)' : 'rgba(50,20,80,0.8)';
+        ctx.beginPath();
+        roundRect(ctx, cx, cy, cardW, cardH, 10);
+        ctx.fill();
+        ctx.strokeStyle = locked ? 'rgba(100,80,120,0.3)' : 'rgba(206,147,216,0.5)';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        roundRect(ctx, cx, cy, cardW, cardH, 10);
+        ctx.stroke();
+
+        // Level number
+        ctx.fillStyle = locked ? '#555' : '#CE93D8';
+        ctx.font = 'bold 14px Inter';
+        ctx.textAlign = 'center';
+        ctx.fillText(`Level ${i + 1}`, cx + cardW/2, cy + 22);
+
+        // Level name
+        ctx.fillStyle = locked ? '#666' : '#E1BEE7';
+        ctx.font = 'bold 13px Inter';
+        ctx.fillText(ld.name, cx + cardW/2, cy + 42);
+
+        // Difficulty dots
+        ctx.fillStyle = locked ? '#444' : '#AB47BC';
+        for (let d = 0; d < 5; d++) {
+            ctx.globalAlpha = d < ld.difficulty ? 1 : 0.2;
+            ctx.beginPath();
+            ctx.arc(cx + cardW/2 - 20 + d * 10, cy + 58, 3, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+
+        // Tree/mother count
+        ctx.fillStyle = locked ? '#555' : '#A5D6A7';
+        ctx.font = '11px Inter';
+        ctx.fillText(`${ld.treeCount} trees${ld.motherTrees > 0 ? ', ' + ld.motherTrees + ' mother' : ''}`, cx + cardW/2, cy + 78);
+
+        // Stars
+        if (!locked) {
+            for (let s = 0; s < 3; s++) {
+                ctx.fillStyle = s < stars ? '#FFD54F' : 'rgba(255,213,79,0.2)';
+                drawStar(cx + cardW/2 - 20 + s * 20, cy + 100, 10, 5, 5);
+                ctx.fill();
+            }
+        }
+
+        // Lock icon
+        if (locked) {
+            ctx.fillStyle = '#555';
+            ctx.font = '28px Inter';
+            ctx.fillText('🔒', cx + cardW/2, cy + 105);
+        }
+
+        // High score
+        if (saveData.highScores[i] > 0) {
+            ctx.fillStyle = '#FFD54F';
+            ctx.font = '10px Inter';
+            ctx.fillText(`Best: ${saveData.highScores[i]}`, cx + cardW/2, cy + 125);
+        }
+
+        // Button (use IIFE to capture loop variable)
+        if (!locked) {
+            (function(levelIdx) {
+                addButton(cx + 20, cy + cardH - 38, cardW - 40, 30, 'Play', () => {
+                    currentLevel = levelIdx;
+                    initLevel(levelIdx);
+                    transitionTarget = STATES.LEVEL_INTRO;
+                }, { color: '#7B1FA2', hoverColor: '#9C27B0', fontSize: 13 });
+            })(i);
+        }
+    }
+
+    // Description area
+    const descY = 90 + cardH + 30;
+    ctx.fillStyle = 'rgba(26,10,46,0.6)';
+    ctx.beginPath();
+    roundRect(ctx, W/2 - 300, descY, 600, 80, 10);
+    ctx.fill();
+
+    // Find hovered level
+    let hoveredLevel = -1;
+    for (let i = 0; i < 5; i++) {
+        const cx = startX + i * (cardW + gap);
+        if (mouse.x >= cx && mouse.x <= cx + cardW && mouse.y >= 90 && mouse.y <= 90 + cardH) {
+            hoveredLevel = i;
+        }
+    }
+
+    if (hoveredLevel >= 0) {
+        const ld = LEVEL_DATA[hoveredLevel];
+        ctx.fillStyle = '#E1BEE7';
+        ctx.font = '13px Inter';
+        ctx.textAlign = 'center';
+        const descLines = ld.desc.split('\n');
+        descLines.forEach((line, idx) => {
+            ctx.fillText(line, W/2, descY + 20 + idx * 20);
+        });
+    } else {
+        ctx.fillStyle = 'rgba(206,147,216,0.4)';
+        ctx.font = '13px Inter';
+        ctx.textAlign = 'center';
+        ctx.fillText('Hover over a level to see its description', W/2, descY + 40);
+    }
+
+    addButton(10, 10, 80, 32, 'Menu', () => {
+        transitionTarget = STATES.TITLE;
+    }, { color: '#4A148C', hoverColor: '#6A1B9A', fontSize: 12 });
+
+    drawButtons();
+}
+
+// ============ LEVEL INTRO ============
+let levelIntroTimer = 0;
+function drawLevelIntro(dt) {
+    levelIntroTimer += dt;
+    ctx.fillStyle = '#0D0518';
+    ctx.fillRect(0, 0, W, H);
+
+    const ld = LEVEL_DATA[currentLevel];
+
+    // Animated reveal
+    const alpha = Math.min(1, levelIntroTimer * 1.5);
+    ctx.globalAlpha = alpha;
+
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = 'bold 36px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText(`Level ${currentLevel + 1}`, W/2, H/2 - 80);
+
+    ctx.fillStyle = '#E1BEE7';
+    ctx.font = 'bold 24px Inter';
+    ctx.fillText(ld.name, W/2, H/2 - 40);
+
+    ctx.fillStyle = 'rgba(225,190,231,0.7)';
+    ctx.font = '15px Inter';
+    const descLines = ld.desc.split('\n');
+    descLines.forEach((line, i) => {
+        ctx.fillText(line, W/2, H/2 + 10 + i * 24);
+    });
+
+    ctx.globalAlpha = 1;
+
+    buttons = [];
+    if (levelIntroTimer > 1) {
+        addButton(W/2 - 80, H/2 + 100, 160, 44, 'Start', () => {
+            transitionTarget = STATES.PLAYING;
+        }, { color: '#2E7D32', hoverColor: '#388E3C', fontSize: 16 });
+    }
+
+    drawButtons();
+}
+
+// ============ LEVEL COMPLETE ============
+function drawLevelComplete(dt) {
+    ctx.fillStyle = 'rgba(13,5,24,0.85)';
+    ctx.fillRect(0, 0, W, H);
+
+    const aliveCount = trees.filter(t => t.alive).length;
+    const totalTrees = trees.length;
+    const efficiency = totalNutrientsProduced > 0 ? Math.round((totalNutrientsTransferred / totalNutrientsProduced) * 100) : 0;
+
+    // Calculate stars
+    let stars = 1;
+    if (treesDeadCount === 0 && efficiency > 40) stars = 3;
+    else if (treesDeadCount <= 1 && efficiency > 25) stars = 2;
+
+    ctx.fillStyle = '#69F0AE';
+    ctx.font = 'bold 36px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText('Forest Survived!', W/2, H/2 - 120);
+
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = 'bold 20px Inter';
+    ctx.fillText(LEVEL_DATA[currentLevel].name, W/2, H/2 - 85);
+
+    // Stars
+    for (let s = 0; s < 3; s++) {
+        ctx.fillStyle = s < stars ? '#FFD54F' : 'rgba(255,213,79,0.2)';
+        drawStar(W/2 - 40 + s * 40, H/2 - 50, 18, 5, 8);
+        ctx.fill();
+    }
+
+    // Stats
+    const stats = [
+        `Trees Alive: ${aliveCount} / ${totalTrees}`,
+        `Nutrients Transferred: ${Math.round(totalNutrientsTransferred)}`,
+        `Network Efficiency: ${efficiency}%`,
+        `Fungal Energy Surplus: ${Math.round(fungalEnergy)}`,
+        `Final Score: ${score}`
+    ];
+
+    ctx.fillStyle = '#E1BEE7';
+    ctx.font = '14px Inter';
+    stats.forEach((s, i) => {
+        ctx.fillText(s, W/2, H/2 - 10 + i * 24);
+    });
+
+    // Save progress
+    if (stars > saveData.levels[currentLevel]) saveData.levels[currentLevel] = stars;
+    if (score > saveData.highScores[currentLevel]) saveData.highScores[currentLevel] = score;
+    if (currentLevel < 4 && saveData.levels[currentLevel + 1] === -1) saveData.levels[currentLevel + 1] = 0;
+    writeSave();
+
+    buttons = [];
+    addButton(W/2 - 170, H/2 + 120, 150, 44, 'Level Select', () => {
+        transitionTarget = STATES.LEVEL_SELECT;
+    }, { color: '#4A148C', hoverColor: '#6A1B9A', fontSize: 14 });
+
+    if (currentLevel < 4 && saveData.levels[currentLevel + 1] >= 0) {
+        addButton(W/2 + 20, H/2 + 120, 150, 44, 'Next Level', () => {
+            currentLevel++;
+            initLevel(currentLevel);
+            levelIntroTimer = 0;
+            transitionTarget = STATES.LEVEL_INTRO;
+        }, { color: '#2E7D32', hoverColor: '#388E3C', fontSize: 14 });
+    }
+
+    drawButtons();
+}
+
+// ============ GAME OVER ============
+function drawGameOver(dt) {
+    ctx.fillStyle = 'rgba(13,5,24,0.9)';
+    ctx.fillRect(0, 0, W, H);
+
+    warningFlash += dt * 3;
+    const flash = Math.sin(warningFlash) * 0.15 + 0.15;
+    ctx.fillStyle = `rgba(229,57,53,${flash})`;
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.fillStyle = '#E53935';
+    ctx.font = 'bold 40px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText('Forest Collapsed', W/2, H/2 - 80);
+
+    ctx.fillStyle = '#FFCDD2';
+    ctx.font = '16px Inter';
+    ctx.fillText('Too many trees were lost. The ecosystem could not survive.', W/2, H/2 - 40);
+
+    ctx.fillStyle = '#CE93D8';
+    ctx.font = '14px Inter';
+    ctx.fillText(`Trees Dead: ${treesDeadCount}  |  Score: ${score}  |  Nutrients Shared: ${Math.round(totalNutrientsTransferred)}`, W/2, H/2);
+
+    ctx.fillStyle = 'rgba(225,190,231,0.5)';
+    ctx.font = '13px Inter';
+    ctx.fillText('Tip: Connect trees early and keep nutrients flowing from healthy to sick trees.', W/2, H/2 + 30);
+    ctx.fillText('Upgrade connections for faster flow. Disconnect diseased trees to stop spread.', W/2, H/2 + 50);
+
+    buttons = [];
+    addButton(W/2 - 170, H/2 + 90, 150, 44, 'Try Again', () => {
+        initLevel(currentLevel);
+        levelIntroTimer = 0;
+        transitionTarget = STATES.LEVEL_INTRO;
+    }, { color: '#7B1FA2', hoverColor: '#9C27B0', fontSize: 14 });
+
+    addButton(W/2 + 20, H/2 + 90, 150, 44, 'Level Select', () => {
+        transitionTarget = STATES.LEVEL_SELECT;
+    }, { color: '#4A148C', hoverColor: '#6A1B9A', fontSize: 14 });
+
+    drawButtons();
+}
+
+// ============ MAIN GAMEPLAY UPDATE ============
+function updateGameplay(dt) {
+    gameTime += dt;
+    levelTimer += dt;
+    const ld = LEVEL_DATA[currentLevel];
+
+    // Season cycle
+    seasonTimer += dt;
+    if (seasonTimer >= ld.seasonDur) {
+        seasonTimer = 0;
+        season = (season + 1) % 4;
+        if (season === 0) {
+            // Completed a full cycle
+        }
+    }
+
+    // Events
+    eventTimer += dt;
+    if (eventTimer >= ld.eventFreq) {
+        eventTimer = 0;
+        triggerEvent();
+    }
+
+    // Active event timer
+    if (activeEvent) {
+        activeEventTimer -= dt;
+        if (activeEventTimer <= 0) {
+            activeEvent = null;
+        }
+    }
+
+    // Energy regen
+    fungalEnergy = Math.min(maxFungalEnergy, fungalEnergy + dt * 1.5);
+
+    // Update trees
+    for (const tree of trees) {
+        tree.update(dt);
+    }
+
+    // Update connections
+    for (const conn of connections) {
+        conn.update(dt);
+    }
+
+    // Nutrient flow
+    processNutrientFlow(dt);
+
+    // Disease spread
+    processDisease(dt);
+
+    // Update nutrient packets
+    for (let i = nutrientPackets.length - 1; i >= 0; i--) {
+        nutrientPackets[i].update(dt);
+        if (!nutrientPackets[i].alive) {
+            nutrientPackets.splice(i, 1);
+        }
+    }
+
+    // Update particles
+    updateParticles(dt);
+
+    // Check win/lose
+    const aliveCount = trees.filter(t => t.alive).length;
+    if (treesDeadCount >= 3) {
+        transitionTarget = STATES.GAME_OVER;
+        return;
+    }
+
+    if (levelTimer >= levelDuration) {
+        levelWon = true;
+        playLevelComplete();
+        transitionTarget = STATES.LEVEL_COMPLETE;
+        return;
+    }
+
+    // Warning sound
+    const sickTrees = trees.filter(t => t.alive && t.health < 25);
+    if (sickTrees.length > 0 && Math.random() < dt * 0.3) {
+        playWarningTone();
+    }
+
+    // Handle input
+    handleGameplayInput();
+}
+
+function drawGameplay() {
+    // Above ground
+    drawSky();
+    for (const tree of trees) {
+        drawTree(tree);
+    }
+
+    // Soil line
+    drawSoilLine();
+
+    // Underground
+    drawUnderground();
+    for (const tree of trees) {
+        drawRoots(tree);
+    }
+    drawConnections();
+    drawNutrientPackets();
+    drawDragLine();
+
+    // Particles (both above and below)
+    drawParticles();
+
+    // HUD
+    drawHUD();
+}
+
+// ============ TRANSITION SYSTEM ============
+function updateTransition(dt) {
+    if (transitionTarget >= 0) {
+        transitionAlpha += dt * 3;
+        if (transitionAlpha >= 1) {
+            transitionAlpha = 1;
+            prevState = gameState;
+            gameState = transitionTarget;
+            transitionTarget = -1;
+            if (gameState === STATES.LEVEL_INTRO) levelIntroTimer = 0;
+        }
+    } else if (transitionAlpha > 0) {
+        transitionAlpha -= dt * 3;
+        if (transitionAlpha < 0) transitionAlpha = 0;
+    }
+}
+
+function drawTransition() {
+    if (transitionAlpha > 0) {
+        ctx.globalAlpha = transitionAlpha;
+        ctx.fillStyle = '#0D0518';
+        ctx.fillRect(0, 0, W, H);
+        ctx.globalAlpha = 1;
+    }
+}
+
+// ============ MAIN LOOP ============
+let lastTime = 0;
+
+function gameLoop(timestamp) {
+    requestAnimationFrame(gameLoop);
+
+    const dt = Math.min(0.05, (timestamp - lastTime) / 1000);
+    lastTime = timestamp;
+
+    // Clear
+    ctx.clearRect(0, 0, W, H);
+
+    buttons = [];
+
+    // Update + draw based on state
+    switch (gameState) {
+        case STATES.TITLE:
+            drawTitle(dt);
+            break;
+        case STATES.HOW_TO:
+            drawHowTo(dt);
+            break;
+        case STATES.LEVEL_SELECT:
+            drawLevelSelect(dt);
+            break;
+        case STATES.LEVEL_INTRO:
+            drawLevelIntro(dt);
+            break;
+        case STATES.PLAYING:
+            updateGameplay(dt);
+            drawGameplay();
+            break;
+        case STATES.LEVEL_COMPLETE:
+            drawGameplay();
+            drawLevelComplete(dt);
+            break;
+        case STATES.GAME_OVER:
+            drawGameplay();
+            drawGameOver(dt);
+            break;
+    }
+
+    // Handle button clicks (buttons were just created during draw)
+    if (clickPos) {
+        checkButtons();
+    }
+
+    // Transition overlay
+    updateTransition(dt);
+    drawTransition();
+
+    // Reset per-frame input
+    mouse.justDown = false;
+    mouse.justUp = false;
+    clickPos = null;
+}
+
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>

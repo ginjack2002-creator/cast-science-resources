@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>DECOMPOSE | Forest Floor Tower Defense — NGSS 5-LS2-1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:100%;height:100%;overflow:hidden;background:#1a120d;user-select:none;-webkit-user-select:none;touch-action:none;}
+  canvas{display:block;position:absolute;top:0;left:0;width:100%;height:100%;}
+  #orient{display:none;position:fixed;inset:0;z-index:9999;background:#1a120d;color:#E8D5B7;font-family:'Fredoka',sans-serif;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2em;}
+  #orient h2{font-size:1.6em;margin-bottom:.5em;}
+  #orient p{font-size:1.1em;opacity:.7;}
+  #orient .icon{font-size:3em;margin-bottom:.3em;animation:tilt 1.5s ease-in-out infinite alternate;}
+  @keyframes tilt{0%{transform:rotate(0deg)}100%{transform:rotate(90deg)}}
+  @media(max-width:600px)and(orientation:portrait){#orient{display:flex!important;}}
+</style>
+</head>
+<body>
+<div id="orient"><div class="icon">📱</div><h2>Rotate Your Device</h2><p>DECOMPOSE plays best in landscape mode.</p></div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+/* ============================================================
+   DECOMPOSE — Forest Floor Tower Defense
+   NGSS 5-LS2-1: Nutrient Cycling & Decomposition
+   A CAST Science / ModelIt Game
+   ============================================================ */
+
+// ── roundRect polyfill ──
+if (!CanvasRenderingContext2D.prototype.roundRect) {
+  CanvasRenderingContext2D.prototype.roundRect = function(x, y, w, h, radii) {
+    const r = typeof radii === 'number' ? radii : (Array.isArray(radii) ? radii[0] : 0);
+    this.moveTo(x + r, y);
+    this.lineTo(x + w - r, y);
+    this.arcTo(x + w, y, x + w, y + r, r);
+    this.lineTo(x + w, y + h - r);
+    this.arcTo(x + w, y + h, x + w - r, y + h, r);
+    this.lineTo(x + r, y + h);
+    this.arcTo(x, y + h, x, y + h - r, r);
+    this.lineTo(x, y + r);
+    this.arcTo(x, y, x + r, y, r);
+    this.closePath();
+  };
+}
+
+// ── Canvas & Context ──
+const C = document.getElementById('gc');
+const X = C.getContext('2d');
+let W = 0, H = 0, DPR = 1, cScale = 1;
+let mouseX = 0, mouseY = 0, mouseDown = false;
+
+function resize() {
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth;
+  H = window.innerHeight;
+  C.width = W * DPR;
+  C.height = H * DPR;
+  C.style.width = W + 'px';
+  C.style.height = H + 'px';
+  X.setTransform(DPR, 0, 0, DPR, 0, 0);
+  cScale = Math.min(W / 1280, H / 720);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ── Utility ──
+function lerp(a, b, t) { return a + (b - a) * t; }
+function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+function dist(x1, y1, x2, y2) { const dx = x2 - x1, dy = y2 - y1; return Math.sqrt(dx * dx + dy * dy); }
+function rng(lo, hi) { return lo + Math.random() * (hi - lo); }
+function rngInt(lo, hi) { return Math.floor(rng(lo, hi + 1)); }
+function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+function easeIn(t) { return t * t * t; }
+function hexToRgb(hex) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return { r, g, b };
+}
+
+// ── Web Audio ──
+let audioCtx = null;
+function initAudio() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+}
+
+function playDecompose() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const dur = 0.15;
+  const bufSize = audioCtx.sampleRate * dur;
+  const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+  const data = buf.getChannelData(0);
+  for (let i = 0; i < bufSize; i++) {
+    const t = i / bufSize;
+    data[i] = (Math.random() * 2 - 1) * (1 - t) * 0.3 * Math.sin(t * 80);
+  }
+  const src = audioCtx.createBufferSource();
+  src.buffer = buf;
+  const filt = audioCtx.createBiquadFilter();
+  filt.type = 'lowpass';
+  filt.frequency.setValueAtTime(800, now);
+  filt.frequency.exponentialRampToValueAtTime(100, now + dur);
+  const gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0.4, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + dur);
+  src.connect(filt).connect(gain).connect(audioCtx.destination);
+  src.start(now);
+  src.stop(now + dur);
+}
+
+function playPop() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(600, now);
+  osc.frequency.exponentialRampToValueAtTime(1200, now + 0.06);
+  const gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0.25, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(now);
+  osc.stop(now + 0.1);
+}
+
+function playPlace() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  osc.type = 'triangle';
+  osc.frequency.setValueAtTime(440, now);
+  osc.frequency.exponentialRampToValueAtTime(880, now + 0.08);
+  const gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0.2, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(now);
+  osc.stop(now + 0.15);
+}
+
+let rainNoiseNode = null, rainGainNode = null;
+function startRainAmbient() {
+  if (!audioCtx || rainNoiseNode) return;
+  const bufSize = audioCtx.sampleRate * 2;
+  const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+  const data = buf.getChannelData(0);
+  for (let i = 0; i < bufSize; i++) data[i] = Math.random() * 2 - 1;
+  rainNoiseNode = audioCtx.createBufferSource();
+  rainNoiseNode.buffer = buf;
+  rainNoiseNode.loop = true;
+  const filt = audioCtx.createBiquadFilter();
+  filt.type = 'bandpass';
+  filt.frequency.value = 2000;
+  filt.Q.value = 0.5;
+  rainGainNode = audioCtx.createGain();
+  rainGainNode.gain.value = 0;
+  rainNoiseNode.connect(filt).connect(rainGainNode).connect(audioCtx.destination);
+  rainNoiseNode.start();
+}
+function setRainVolume(v) {
+  if (rainGainNode) rainGainNode.gain.setTargetAtTime(v, audioCtx.currentTime, 0.3);
+}
+function stopRainAmbient() {
+  if (rainNoiseNode) { rainNoiseNode.stop(); rainNoiseNode = null; rainGainNode = null; }
+}
+
+function playWaveComplete() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const notes = [523.25, 659.25, 783.99, 1046.5];
+  notes.forEach((freq, i) => {
+    const t = now + i * 0.1;
+    const osc = audioCtx.createOscillator();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    const gain = audioCtx.createGain();
+    gain.gain.setValueAtTime(0, t);
+    gain.gain.linearRampToValueAtTime(0.15, t + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3);
+    osc.connect(gain).connect(audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + 0.3);
+  });
+}
+
+function playGameOver() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const notes = [392, 349.23, 293.66, 261.63];
+  notes.forEach((freq, i) => {
+    const t = now + i * 0.15;
+    const osc = audioCtx.createOscillator();
+    osc.type = 'sawtooth';
+    osc.frequency.value = freq;
+    const gain = audioCtx.createGain();
+    gain.gain.setValueAtTime(0.12, t);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 0.4);
+    osc.connect(gain).connect(audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + 0.4);
+  });
+}
+
+// ── Particle Pool ──
+const MAX_PARTICLES = 600;
+const particles = [];
+for (let i = 0; i < MAX_PARTICLES; i++) {
+  particles.push({ active: false, x: 0, y: 0, vx: 0, vy: 0, life: 0, maxLife: 1, r: 2, color: '#69F0AE', alpha: 1, type: 'sparkle', gravity: 0 });
+}
+
+function spawnParticle(x, y, vx, vy, life, r, color, type, gravity) {
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    const p = particles[i];
+    if (!p.active) {
+      p.active = true; p.x = x; p.y = y; p.vx = vx; p.vy = vy;
+      p.life = life; p.maxLife = life; p.r = r; p.color = color;
+      p.alpha = 1; p.type = type || 'sparkle'; p.gravity = gravity || 0;
+      return p;
+    }
+  }
+  return null;
+}
+
+function spawnDecomposeEffect(x, y, count) {
+  for (let i = 0; i < count; i++) {
+    const angle = rng(0, Math.PI * 2);
+    const speed = rng(30, 120);
+    spawnParticle(x, y, Math.cos(angle) * speed, Math.sin(angle) * speed - 40,
+      rng(0.4, 1.0), rng(2, 5), ['#69F0AE', '#A5D6A7', '#81C784', '#4CAF50'][rngInt(0, 3)], 'sparkle', 60);
+  }
+}
+
+function spawnNutrientBurst(x, y) {
+  for (let i = 0; i < 8; i++) {
+    const angle = rng(0, Math.PI * 2);
+    const speed = rng(20, 60);
+    spawnParticle(x, y, Math.cos(angle) * speed, Math.sin(angle) * speed - 30,
+      rng(0.5, 0.8), rng(1.5, 3), '#69F0AE', 'float', 20);
+  }
+}
+
+function spawnRainDrop(x) {
+  spawnParticle(x, -5, rng(-10, 10), rng(300, 500), rng(0.8, 1.5), 1.5, '#64B5F6', 'rain', 0);
+}
+
+function updateParticles(dt) {
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    const p = particles[i];
+    if (!p.active) continue;
+    p.life -= dt;
+    if (p.life <= 0) { p.active = false; continue; }
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.vy += p.gravity * dt;
+    p.alpha = clamp(p.life / p.maxLife, 0, 1);
+    if (p.type === 'sparkle') {
+      p.vx *= 0.97;
+      p.vy *= 0.97;
+    }
+    if (p.type === 'rain' && p.y > H) { p.active = false; }
+  }
+}
+
+function drawParticles() {
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    const p = particles[i];
+    if (!p.active) continue;
+    X.globalAlpha = p.alpha;
+    if (p.type === 'rain') {
+      X.strokeStyle = p.color;
+      X.lineWidth = 1.5;
+      X.beginPath();
+      X.moveTo(p.x, p.y);
+      X.lineTo(p.x + p.vx * 0.02, p.y + p.vy * 0.02);
+      X.stroke();
+    } else {
+      X.fillStyle = p.color;
+      X.beginPath();
+      X.arc(p.x, p.y, p.r * p.alpha, 0, Math.PI * 2);
+      X.fill();
+    }
+  }
+  X.globalAlpha = 1;
+}
+
+// ── Screen Shake ──
+let shakeAmount = 0, shakeDecay = 0.9;
+function triggerShake(amount) { shakeAmount = Math.max(shakeAmount, amount); }
+
+// ── Click Targets ──
+let clickTargets = [];
+function addClickTarget(x, y, w, h, id, data) {
+  clickTargets.push({ x, y, w, h, id, data });
+}
+function hitTest(mx, my) {
+  for (let i = clickTargets.length - 1; i >= 0; i--) {
+    const t = clickTargets[i];
+    if (mx >= t.x && mx <= t.x + t.w && my >= t.y && my <= t.y + t.h) return t;
+  }
+  return null;
+}
+
+// ── Save / Load ──
+const SAVE_KEY = 'decompose_save_v1';
+let saveData = { levels: [0, -1, -1, -1, -1], highScores: [0, 0, 0, 0, 0] };
+function loadSave() {
+  try {
+    const d = JSON.parse(localStorage.getItem(SAVE_KEY));
+    if (d && d.levels) saveData = d;
+  } catch (e) {}
+}
+function writeSave() {
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify(saveData)); } catch (e) {}
+}
+loadSave();
+
+// ── Game State ──
+const STATES = { TITLE: 0, HOW_TO_PLAY: 1, LEVEL_SELECT: 2, LEVEL_INTRO: 3, PLAYING: 4, WAVE_COMPLETE: 5, LEVEL_COMPLETE: 6, GAME_OVER: 7 };
+let state = STATES.TITLE;
+let stateTime = 0;
+let currentLevel = 0;
+
+// ── Level Definitions ──
+const LEVELS = [
+  {
+    name: 'Spring Thaw', desc: 'The snow has melted. Gentle waves of leaves drift down. Learn to place your decomposers!',
+    waves: [
+      { delay: 2, matter: [{ type: 'leaf', count: 8, interval: 1.2 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 12, interval: 0.8 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 10, interval: 0.7 }, { type: 'branch', count: 3, interval: 2.5 }] },
+    ],
+    moistureBase: 0.6, rainChance: 0.3, droughtChance: 0.0,
+    gold: 800, silver: 500, bronze: 300
+  },
+  {
+    name: 'Summer Growth', desc: 'Summer brings variety! Fruit bonuses appear among the debris. Watch for golden glow!',
+    waves: [
+      { delay: 2, matter: [{ type: 'leaf', count: 10, interval: 0.9 }, { type: 'fruit', count: 2, interval: 3 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 12, interval: 0.7 }, { type: 'branch', count: 5, interval: 1.8 }, { type: 'fruit', count: 3, interval: 2.5 }] },
+      { delay: 3, matter: [{ type: 'branch', count: 8, interval: 1.2 }, { type: 'animal', count: 2, interval: 4 }, { type: 'fruit', count: 4, interval: 2 }] },
+      { delay: 4, matter: [{ type: 'leaf', count: 15, interval: 0.5 }, { type: 'branch', count: 6, interval: 1.5 }, { type: 'animal', count: 2, interval: 3 }] },
+    ],
+    moistureBase: 0.65, rainChance: 0.25, droughtChance: 0.05,
+    gold: 1500, silver: 1000, bronze: 600
+  },
+  {
+    name: 'Autumn Avalanche', desc: 'Leaves EVERYWHERE! The trees are shedding at record pace. Speed is everything!',
+    waves: [
+      { delay: 1, matter: [{ type: 'leaf', count: 20, interval: 0.4 }] },
+      { delay: 2, matter: [{ type: 'leaf', count: 25, interval: 0.3 }, { type: 'branch', count: 4, interval: 2 }] },
+      { delay: 2, matter: [{ type: 'leaf', count: 30, interval: 0.25 }, { type: 'branch', count: 6, interval: 1.5 }, { type: 'fruit', count: 3, interval: 3 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 35, interval: 0.2 }, { type: 'branch', count: 8, interval: 1 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 40, interval: 0.18 }, { type: 'branch', count: 10, interval: 0.8 }, { type: 'animal', count: 3, interval: 3 }] },
+    ],
+    moistureBase: 0.5, rainChance: 0.15, droughtChance: 0.1,
+    gold: 2500, silver: 1800, bronze: 1000
+  },
+  {
+    name: 'Winter Frost', desc: 'The cold slows everything. Moisture is low. Every decomposer placement counts!',
+    waves: [
+      { delay: 3, matter: [{ type: 'branch', count: 6, interval: 2 }, { type: 'animal', count: 2, interval: 4 }] },
+      { delay: 4, matter: [{ type: 'leaf', count: 10, interval: 1 }, { type: 'branch', count: 8, interval: 1.5 }, { type: 'animal', count: 3, interval: 3 }] },
+      { delay: 4, matter: [{ type: 'branch', count: 10, interval: 1 }, { type: 'animal', count: 5, interval: 2.5 }] },
+      { delay: 5, matter: [{ type: 'leaf', count: 15, interval: 0.6 }, { type: 'branch', count: 10, interval: 1 }, { type: 'animal', count: 4, interval: 2 }] },
+    ],
+    moistureBase: 0.25, rainChance: 0.05, droughtChance: 0.4,
+    gold: 2000, silver: 1400, bronze: 800
+  },
+  {
+    name: 'Full Cycle', desc: 'All seasons collide! Rain and drought alternate. Master every decomposer to survive!',
+    waves: [
+      { delay: 2, matter: [{ type: 'leaf', count: 15, interval: 0.5 }, { type: 'branch', count: 5, interval: 1.5 }, { type: 'fruit', count: 3, interval: 2.5 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 20, interval: 0.35 }, { type: 'branch', count: 8, interval: 1 }, { type: 'animal', count: 3, interval: 3 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 25, interval: 0.3 }, { type: 'animal', count: 5, interval: 2 }, { type: 'fruit', count: 5, interval: 2 }] },
+      { delay: 4, matter: [{ type: 'branch', count: 15, interval: 0.7 }, { type: 'animal', count: 6, interval: 1.8 }] },
+      { delay: 3, matter: [{ type: 'leaf', count: 30, interval: 0.2 }, { type: 'branch', count: 12, interval: 0.6 }, { type: 'animal', count: 5, interval: 1.5 }, { type: 'fruit', count: 6, interval: 1.5 }] },
+      { delay: 4, matter: [{ type: 'leaf', count: 35, interval: 0.15 }, { type: 'branch', count: 15, interval: 0.5 }, { type: 'animal', count: 8, interval: 1.2 }] },
+    ],
+    moistureBase: 0.5, rainChance: 0.2, droughtChance: 0.2,
+    gold: 4000, silver: 2800, bronze: 1600
+  }
+];
+
+// ── Dead Matter Types ──
+const MATTER_DEFS = {
+  leaf:   { hp: 1, nutrients: 5,  speed: 80,  size: 14, score: 10,  colors: ['#FF8A65', '#FFB74D', '#FDD835', '#A1887F', '#E57373'] },
+  branch: { hp: 3, nutrients: 15, speed: 50,  size: 22, score: 25,  colors: ['#795548', '#6D4C41', '#8D6E63'] },
+  animal: { hp: 6, nutrients: 30, speed: 30,  size: 28, score: 60,  colors: ['#9E9E9E', '#78909C', '#8D6E63'] },
+  fruit:  { hp: 2, nutrients: 20, speed: 65,  size: 16, score: 40,  colors: ['#FFD54F', '#FFC107', '#FFAB00'] }
+};
+
+// ── Decomposer Definitions ──
+const DECOMP_DEFS = {
+  mushroom: { cost: 25, range: 100, attackRate: 1.2, damage: 1, aoe: true, aoeRadius: 60, label: 'Mushroom', key: '1', color: '#E8D5B7' },
+  worm:     { cost: 15, range: 150, attackRate: 0.4, damage: 1, aoe: false, aoeRadius: 0,  label: 'Worm', key: '2', color: '#D4848C' },
+  bacteria: { cost: 40, range: 130, attackRate: 2.5, damage: 2, aoe: true, aoeRadius: 100, label: 'Bacteria', key: '3', color: '#5BA89F' }
+};
+const DECOMP_TYPES = ['mushroom', 'worm', 'bacteria'];
+
+// ── Game Variables ──
+let nutrients = 50;
+let score = 0;
+let moisture = 0.6;
+let moistureTarget = 0.6;
+let moistureEvent = 'none'; // 'none', 'rain', 'drought'
+let moistureEventTimer = 0;
+let moistureEventDuration = 0;
+let moistureSpeedMult = 1.0;
+let comboCount = 0;
+let comboTimer = 0;
+let comboMultiplier = 1;
+let waveIndex = 0;
+let waveSpawns = [];
+let waveActive = false;
+let waveTimer = 0;
+let allWavesSpawned = false;
+let levelTimer = 0;
+let selectedDecomposer = -1; // -1 none, 0 mushroom, 1 worm, 2 bacteria
+
+let deadMatter = [];
+let decomposers = [];
+let plants = []; // visual plants that grow
+let fallingLeaves = []; // title screen decoration
+let raindrops = [];
+
+// Floor boundary
+const FLOOR_Y_RATIO = 0.75; // floor starts at 75% of screen height
+const SUNLIGHT_Y_RATIO = 0.20; // sunlight line at 20%
+let floorY = 0, sunlightY = 0;
+
+// ── Plants (visual growth indicators) ──
+function initPlants() {
+  plants = [];
+  const count = Math.floor(W / 60);
+  for (let i = 0; i < count; i++) {
+    plants.push({
+      x: rng(20, W - 20),
+      baseY: H,
+      height: rng(5, 15),
+      maxHeight: rng(30, 80),
+      swayPhase: rng(0, Math.PI * 2),
+      width: rng(2, 4),
+      color: ['#4CAF50', '#66BB6A', '#81C784', '#388E3C', '#2E7D32'][rngInt(0, 4)]
+    });
+  }
+}
+
+function updatePlants(dt) {
+  for (const p of plants) {
+    p.swayPhase += dt * 1.5;
+    // Grow based on total nutrients earned
+    const growTarget = Math.min(p.maxHeight, 5 + score * 0.02);
+    p.height = lerp(p.height, growTarget, dt * 0.5);
+  }
+}
+
+function drawPlants() {
+  for (const p of plants) {
+    const sway = Math.sin(p.swayPhase) * 3 * (p.height / p.maxHeight);
+    X.strokeStyle = p.color;
+    X.lineWidth = p.width;
+    X.lineCap = 'round';
+    X.beginPath();
+    X.moveTo(p.x, p.baseY);
+    X.quadraticCurveTo(p.x + sway, p.baseY - p.height * 0.6, p.x + sway * 1.5, p.baseY - p.height);
+    X.stroke();
+    // Small leaf at top
+    if (p.height > 15) {
+      X.fillStyle = p.color;
+      X.beginPath();
+      X.ellipse(p.x + sway * 1.5, p.baseY - p.height, 4, 2.5, sway * 0.1, 0, Math.PI * 2);
+      X.fill();
+    }
+  }
+}
+
+// ── Background Drawing ──
+function drawForestBackground() {
+  floorY = H * FLOOR_Y_RATIO;
+  sunlightY = H * SUNLIGHT_Y_RATIO;
+
+  // Sky / canopy gradient at top
+  const canopyGrad = X.createLinearGradient(0, 0, 0, sunlightY);
+  canopyGrad.addColorStop(0, '#33691E');
+  canopyGrad.addColorStop(0.5, '#558B2F');
+  canopyGrad.addColorStop(1, '#8BC34A');
+  X.fillStyle = canopyGrad;
+  X.fillRect(0, 0, W, sunlightY);
+
+  // Draw canopy leaf shapes
+  X.globalAlpha = 0.3;
+  for (let i = 0; i < 20; i++) {
+    const lx = (i * W / 20) + Math.sin(stateTime * 0.5 + i) * 10;
+    const ly = rng(0, sunlightY * 0.8);
+    X.fillStyle = ['#2E7D32', '#388E3C', '#43A047'][i % 3];
+    X.beginPath();
+    X.ellipse(lx, ly, rng(20, 50), rng(15, 30), rng(0, Math.PI), 0, Math.PI * 2);
+    X.fill();
+  }
+  X.globalAlpha = 1;
+
+  // Mid air zone
+  const airGrad = X.createLinearGradient(0, sunlightY, 0, floorY);
+  airGrad.addColorStop(0, '#8BC34A');
+  airGrad.addColorStop(0.3, '#AED581');
+  airGrad.addColorStop(0.7, '#A1887F');
+  airGrad.addColorStop(1, '#5D4037');
+  X.fillStyle = airGrad;
+  X.fillRect(0, sunlightY, W, floorY - sunlightY);
+
+  // Sunlight line (dashed)
+  X.setLineDash([8, 6]);
+  X.strokeStyle = 'rgba(255, 235, 59, 0.4)';
+  X.lineWidth = 2;
+  X.beginPath();
+  X.moveTo(0, sunlightY);
+  X.lineTo(W, sunlightY);
+  X.stroke();
+  X.setLineDash([]);
+
+  // Sunlight label
+  X.font = `${11 * cScale}px 'Inter', sans-serif`;
+  X.fillStyle = 'rgba(255, 235, 59, 0.6)';
+  X.textAlign = 'left';
+  X.fillText('SUNLIGHT LINE', 10, sunlightY - 5);
+
+  // Forest floor (soil)
+  const soilGrad = X.createLinearGradient(0, floorY, 0, H);
+  soilGrad.addColorStop(0, '#5D4037');
+  soilGrad.addColorStop(0.3, '#4E342E');
+  soilGrad.addColorStop(1, '#3E2723');
+  X.fillStyle = soilGrad;
+  X.fillRect(0, floorY, W, H - floorY);
+
+  // Soil texture dots
+  X.globalAlpha = 0.15;
+  for (let i = 0; i < 80; i++) {
+    const sx = (i * 17 + Math.sin(i * 3.7) * 30) % W;
+    const sy = floorY + 5 + (i * 7.3 + Math.cos(i * 2.1) * 20) % (H - floorY - 10);
+    X.fillStyle = i % 3 === 0 ? '#8D6E63' : '#3E2723';
+    X.beginPath();
+    X.arc(sx, sy, rng(1, 3), 0, Math.PI * 2);
+    X.fill();
+  }
+  X.globalAlpha = 1;
+
+  // Floor line
+  X.strokeStyle = '#6D4C41';
+  X.lineWidth = 2;
+  X.beginPath();
+  X.moveTo(0, floorY);
+  X.lineTo(W, floorY);
+  X.stroke();
+}
+
+// ── Draw Mushroom ──
+function drawMushroom(x, y, size, time) {
+  const bob = Math.sin(time * 3) * 2;
+  // Stem
+  X.fillStyle = '#A1887F';
+  X.beginPath();
+  X.moveTo(x - size * 0.15, y);
+  X.lineTo(x - size * 0.2, y - size * 0.5 + bob);
+  X.lineTo(x + size * 0.2, y - size * 0.5 + bob);
+  X.lineTo(x + size * 0.15, y);
+  X.closePath();
+  X.fill();
+  // Cap
+  X.fillStyle = '#E8D5B7';
+  X.beginPath();
+  X.ellipse(x, y - size * 0.5 + bob, size * 0.45, size * 0.3, 0, Math.PI, 0);
+  X.fill();
+  // Cap spots
+  X.fillStyle = '#D7CCC8';
+  X.beginPath();
+  X.arc(x - size * 0.15, y - size * 0.6 + bob, size * 0.06, 0, Math.PI * 2);
+  X.arc(x + size * 0.1, y - size * 0.65 + bob, size * 0.05, 0, Math.PI * 2);
+  X.arc(x + size * 0.25, y - size * 0.55 + bob, size * 0.04, 0, Math.PI * 2);
+  X.fill();
+  // Eyes
+  X.fillStyle = '#3E2723';
+  X.beginPath();
+  X.arc(x - size * 0.08, y - size * 0.35 + bob, 2, 0, Math.PI * 2);
+  X.arc(x + size * 0.08, y - size * 0.35 + bob, 2, 0, Math.PI * 2);
+  X.fill();
+  // Range indicator when selected
+  if (selectedDecomposer === 0) {
+    X.globalAlpha = 0.08;
+    X.fillStyle = '#E8D5B7';
+    X.beginPath();
+    X.arc(x, y, DECOMP_DEFS.mushroom.range, 0, Math.PI * 2);
+    X.fill();
+    X.globalAlpha = 1;
+  }
+}
+
+// ── Draw Worm ──
+function drawWorm(x, y, size, time, targetX, targetY) {
+  const wiggle = Math.sin(time * 8) * 3;
+  const segments = 6;
+  const segLen = size * 0.12;
+  // Calculate direction if has target
+  let dx = 0, dy = 0;
+  if (targetX !== undefined && targetY !== undefined) {
+    const d = dist(x, y, targetX, targetY);
+    if (d > 1) { dx = (targetX - x) / d; dy = (targetY - y) / d; }
+  }
+  X.lineCap = 'round';
+  X.lineWidth = size * 0.18;
+  for (let i = 0; i < segments; i++) {
+    const t = i / segments;
+    const sx = x - dx * segLen * i + Math.sin(time * 8 + i * 0.8) * (3 + i);
+    const sy = y - dy * segLen * i + Math.cos(time * 8 + i * 0.8) * 1.5;
+    const nextSx = x - dx * segLen * (i + 1) + Math.sin(time * 8 + (i + 1) * 0.8) * (3 + i + 1);
+    const nextSy = y - dy * segLen * (i + 1) + Math.cos(time * 8 + (i + 1) * 0.8) * 1.5;
+    X.strokeStyle = i === 0 ? '#D4848C' : lerp(0.83, 0.7, t) > 0.75 ? '#D4848C' : '#C07080';
+    X.beginPath();
+    X.moveTo(sx, sy);
+    X.lineTo(nextSx, nextSy);
+    X.stroke();
+  }
+  // Head
+  X.fillStyle = '#D4848C';
+  const hx = x + Math.sin(time * 8) * 2;
+  const hy = y + Math.cos(time * 8) * 1;
+  X.beginPath();
+  X.arc(hx, hy, size * 0.1, 0, Math.PI * 2);
+  X.fill();
+  // Eyes
+  X.fillStyle = '#3E2723';
+  X.beginPath();
+  X.arc(hx - 2, hy - 2, 1.5, 0, Math.PI * 2);
+  X.arc(hx + 2, hy - 2, 1.5, 0, Math.PI * 2);
+  X.fill();
+}
+
+// ── Draw Bacteria ──
+function drawBacteria(x, y, size, time) {
+  const pulse = 1 + Math.sin(time * 4) * 0.1;
+  const count = 7;
+  // Glow
+  X.globalAlpha = 0.15 + Math.sin(time * 3) * 0.05;
+  X.fillStyle = '#5BA89F';
+  X.beginPath();
+  X.arc(x, y, size * 0.6 * pulse, 0, Math.PI * 2);
+  X.fill();
+  X.globalAlpha = 1;
+  // Individual bacteria dots
+  for (let i = 0; i < count; i++) {
+    const angle = (i / count) * Math.PI * 2 + time * 0.5;
+    const r = size * 0.2 + Math.sin(time * 2 + i * 1.5) * size * 0.1;
+    const bx = x + Math.cos(angle) * r;
+    const by = y + Math.sin(angle) * r;
+    X.fillStyle = i % 2 === 0 ? '#5BA89F' : '#4DB6AC';
+    X.beginPath();
+    X.arc(bx, by, size * 0.07 * pulse, 0, Math.PI * 2);
+    X.fill();
+  }
+  // Center mass
+  X.fillStyle = '#80CBC4';
+  X.beginPath();
+  X.arc(x, y, size * 0.1 * pulse, 0, Math.PI * 2);
+  X.fill();
+}
+
+// ── Draw Dead Matter ──
+function drawDeadMatterItem(m) {
+  X.save();
+  X.translate(m.x, m.y);
+  X.rotate(m.rotation);
+  const s = m.size;
+  const alpha = m.hp > 0 ? 1 : 0.5;
+  X.globalAlpha = alpha;
+
+  if (m.type === 'leaf') {
+    X.fillStyle = m.color;
+    X.beginPath();
+    X.ellipse(0, 0, s, s * 0.5, 0, 0, Math.PI * 2);
+    X.fill();
+    // Vein
+    X.strokeStyle = 'rgba(0,0,0,0.2)';
+    X.lineWidth = 0.8;
+    X.beginPath();
+    X.moveTo(-s * 0.8, 0);
+    X.lineTo(s * 0.8, 0);
+    X.moveTo(0, 0);
+    X.lineTo(s * 0.3, -s * 0.3);
+    X.moveTo(0, 0);
+    X.lineTo(s * 0.3, s * 0.3);
+    X.stroke();
+  } else if (m.type === 'branch') {
+    X.fillStyle = m.color;
+    X.beginPath();
+    X.roundRect(-s, -s * 0.15, s * 2, s * 0.3, 3);
+    X.fill();
+    // Bark texture
+    X.strokeStyle = 'rgba(0,0,0,0.15)';
+    X.lineWidth = 0.5;
+    for (let i = 0; i < 4; i++) {
+      const bx = -s * 0.6 + i * s * 0.4;
+      X.beginPath();
+      X.moveTo(bx, -s * 0.1);
+      X.lineTo(bx + s * 0.1, s * 0.1);
+      X.stroke();
+    }
+    // Small twig
+    X.strokeStyle = m.color;
+    X.lineWidth = 2;
+    X.beginPath();
+    X.moveTo(s * 0.3, -s * 0.15);
+    X.lineTo(s * 0.5, -s * 0.4);
+    X.stroke();
+  } else if (m.type === 'animal') {
+    // Silhouette shape
+    X.fillStyle = m.color;
+    X.beginPath();
+    // Body
+    X.ellipse(0, 0, s * 0.6, s * 0.35, 0, 0, Math.PI * 2);
+    X.fill();
+    // Head
+    X.beginPath();
+    X.arc(s * 0.5, -s * 0.15, s * 0.2, 0, Math.PI * 2);
+    X.fill();
+    // Legs
+    X.strokeStyle = m.color;
+    X.lineWidth = 2;
+    X.beginPath();
+    X.moveTo(-s * 0.3, s * 0.3);
+    X.lineTo(-s * 0.35, s * 0.55);
+    X.moveTo(s * 0.1, s * 0.3);
+    X.lineTo(s * 0.05, s * 0.55);
+    X.stroke();
+    // X eyes (it's dead)
+    X.strokeStyle = 'rgba(0,0,0,0.4)';
+    X.lineWidth = 1;
+    const ex = s * 0.5, ey = -s * 0.2;
+    X.beginPath();
+    X.moveTo(ex - 2, ey - 2); X.lineTo(ex + 2, ey + 2);
+    X.moveTo(ex + 2, ey - 2); X.lineTo(ex - 2, ey + 2);
+    X.stroke();
+  } else if (m.type === 'fruit') {
+    // Golden glow
+    X.globalAlpha = 0.3 + Math.sin(stateTime * 5) * 0.15;
+    X.fillStyle = '#FFD54F';
+    X.beginPath();
+    X.arc(0, 0, s * 1.3, 0, Math.PI * 2);
+    X.fill();
+    X.globalAlpha = alpha;
+    // Fruit body
+    X.fillStyle = m.color;
+    X.beginPath();
+    X.arc(0, 0, s * 0.5, 0, Math.PI * 2);
+    X.fill();
+    // Highlight
+    X.fillStyle = 'rgba(255,255,255,0.3)';
+    X.beginPath();
+    X.arc(-s * 0.15, -s * 0.15, s * 0.15, 0, Math.PI * 2);
+    X.fill();
+    // Stem
+    X.strokeStyle = '#5D4037';
+    X.lineWidth = 1.5;
+    X.beginPath();
+    X.moveTo(0, -s * 0.5);
+    X.lineTo(s * 0.1, -s * 0.7);
+    X.stroke();
+  }
+
+  // HP bar for multi-hit targets
+  if (m.maxHp > 1) {
+    X.globalAlpha = 0.8;
+    const barW = s * 1.2;
+    const barH = 4;
+    const barY = -s * 0.8 - 8;
+    X.fillStyle = 'rgba(0,0,0,0.5)';
+    X.fillRect(-barW / 2, barY, barW, barH);
+    X.fillStyle = '#EF5350';
+    X.fillRect(-barW / 2, barY, barW * (m.hp / m.maxHp), barH);
+    X.globalAlpha = 1;
+  }
+
+  X.restore();
+}
+
+// ── Spawn Dead Matter ──
+function spawnMatter(type) {
+  const def = MATTER_DEFS[type];
+  const m = {
+    type: type,
+    x: rng(40, W - 40),
+    y: -def.size,
+    vx: rng(-15, 15),
+    vy: def.speed,
+    size: def.size * rng(0.85, 1.15),
+    rotation: rng(0, Math.PI * 2),
+    rotSpeed: rng(-2, 2),
+    hp: def.hp,
+    maxHp: def.hp,
+    nutrients: def.nutrients,
+    score: def.score,
+    color: def.colors[rngInt(0, def.colors.length - 1)],
+    grounded: false,
+    groundY: 0
+  };
+  deadMatter.push(m);
+}
+
+// ── Update Dead Matter ──
+function updateDeadMatter(dt) {
+  let highestPileY = H;
+  for (let i = deadMatter.length - 1; i >= 0; i--) {
+    const m = deadMatter[i];
+    if (m.hp <= 0) {
+      // Decomposed!
+      spawnDecomposeEffect(m.x, m.y, m.type === 'animal' ? 20 : m.type === 'branch' ? 12 : 8);
+      spawnNutrientBurst(m.x, m.y);
+      nutrients += m.nutrients;
+      // Combo
+      comboCount++;
+      comboTimer = 2.0;
+      if (comboCount >= 10) comboMultiplier = 3;
+      else if (comboCount >= 5) comboMultiplier = 2;
+      else comboMultiplier = 1;
+      score += m.score * comboMultiplier;
+      playDecompose();
+      playPop();
+      if (m.type === 'animal') triggerShake(4);
+      deadMatter.splice(i, 1);
+      continue;
+    }
+    if (!m.grounded) {
+      m.y += m.vy * moistureSpeedMult * 0.7 * dt;
+      m.x += m.vx * dt;
+      m.rotation += m.rotSpeed * dt;
+      // Check if it hits the floor or the pile
+      let landY = floorY - m.size * 0.5;
+      // Stack on top of other grounded matter
+      for (const other of deadMatter) {
+        if (other === m || !other.grounded) continue;
+        if (Math.abs(m.x - other.x) < (m.size + other.size) * 0.5) {
+          const topOfOther = other.y - other.size * 0.5;
+          if (topOfOther < landY) landY = topOfOther;
+        }
+      }
+      if (m.y >= landY) {
+        m.y = landY;
+        m.grounded = true;
+        m.groundY = landY;
+        m.vy = 0;
+        m.vx = 0;
+        m.rotSpeed = 0;
+      }
+      // Keep in bounds
+      m.x = clamp(m.x, m.size, W - m.size);
+    }
+    if (m.grounded && m.y < highestPileY) {
+      highestPileY = m.y;
+    }
+  }
+  return highestPileY;
+}
+
+// ── Place Decomposer ──
+function placeDecomposer(type, x, y) {
+  const def = DECOMP_DEFS[type];
+  if (nutrients < def.cost) return false;
+  if (y < floorY - 10) return false; // Must be on forest floor
+  nutrients -= def.cost;
+  decomposers.push({
+    type: type,
+    x: x,
+    y: y,
+    time: 0,
+    attackTimer: 0,
+    targetId: -1,
+    moveX: x,
+    moveY: y,
+    range: def.range,
+    attackRate: def.attackRate,
+    damage: def.damage,
+    aoe: def.aoe,
+    aoeRadius: def.aoeRadius
+  });
+  playPlace();
+  return true;
+}
+
+// ── Update Decomposers ──
+function updateDecomposers(dt) {
+  const speedMult = moistureSpeedMult;
+  for (const d of decomposers) {
+    d.time += dt;
+    d.attackTimer -= dt * speedMult;
+
+    if (d.type === 'worm') {
+      // Worm: find nearest matter and move toward it
+      let nearest = null, nearDist = d.range;
+      for (const m of deadMatter) {
+        if (m.hp <= 0) continue;
+        const dd = dist(d.moveX, d.moveY, m.x, m.y);
+        if (dd < nearDist) { nearDist = dd; nearest = m; }
+      }
+      if (nearest) {
+        const dd = dist(d.moveX, d.moveY, nearest.x, nearest.y);
+        if (dd > nearest.size) {
+          const speed = 120 * speedMult;
+          d.moveX += (nearest.x - d.moveX) / dd * speed * dt;
+          d.moveY += (nearest.y - d.moveY) / dd * speed * dt;
+          d.moveY = clamp(d.moveY, floorY - 50, H - 5);
+        }
+        if (dd < nearest.size + 10 && d.attackTimer <= 0) {
+          nearest.hp -= d.damage;
+          d.attackTimer = d.attackRate;
+          spawnParticle(nearest.x, nearest.y, rng(-20, 20), rng(-40, -10), 0.3, 3, '#69F0AE', 'sparkle', 0);
+        }
+      } else {
+        // Return home
+        d.moveX = lerp(d.moveX, d.x, dt * 2);
+        d.moveY = lerp(d.moveY, d.y, dt * 2);
+      }
+    } else if (d.type === 'mushroom') {
+      // Mushroom: area attack on nearby matter
+      if (d.attackTimer <= 0) {
+        let attacked = false;
+        for (const m of deadMatter) {
+          if (m.hp <= 0) continue;
+          if (dist(d.x, d.y, m.x, m.y) < d.aoeRadius) {
+            m.hp -= d.damage;
+            spawnParticle(m.x, m.y, rng(-20, 20), rng(-30, -10), 0.25, 2, '#A5D6A7', 'sparkle', 0);
+            attacked = true;
+          }
+        }
+        if (attacked) d.attackTimer = d.attackRate;
+      }
+    } else if (d.type === 'bacteria') {
+      // Bacteria: massive area, slow rate
+      if (d.attackTimer <= 0) {
+        let attacked = false;
+        for (const m of deadMatter) {
+          if (m.hp <= 0) continue;
+          if (dist(d.x, d.y, m.x, m.y) < d.aoeRadius) {
+            m.hp -= d.damage;
+            spawnParticle(m.x, m.y, rng(-15, 15), rng(-25, -5), 0.3, 2.5, '#80CBC4', 'sparkle', 0);
+            attacked = true;
+          }
+        }
+        if (attacked) {
+          d.attackTimer = d.attackRate;
+          triggerShake(1);
+        }
+      }
+    }
+  }
+}
+
+// ── Draw Decomposers ──
+function drawDecomposers() {
+  for (const d of decomposers) {
+    // Range circle
+    X.globalAlpha = 0.05;
+    X.fillStyle = DECOMP_DEFS[d.type].color;
+    X.beginPath();
+    const rx = d.type === 'worm' ? d.moveX : d.x;
+    const ry = d.type === 'worm' ? d.moveY : d.y;
+    X.arc(d.type === 'worm' ? d.x : d.x, d.type === 'worm' ? d.y : d.y,
+      d.aoe ? d.aoeRadius : d.range, 0, Math.PI * 2);
+    X.fill();
+    X.globalAlpha = 1;
+
+    if (d.type === 'mushroom') {
+      drawMushroom(d.x, d.y, 30, d.time);
+    } else if (d.type === 'worm') {
+      // Find target for direction
+      let tx, ty;
+      let nearest = null, nearDist = d.range;
+      for (const m of deadMatter) {
+        if (m.hp <= 0) continue;
+        const dd = dist(d.moveX, d.moveY, m.x, m.y);
+        if (dd < nearDist) { nearDist = dd; nearest = m; }
+      }
+      if (nearest) { tx = nearest.x; ty = nearest.y; }
+      drawWorm(d.moveX, d.moveY, 25, d.time, tx, ty);
+    } else if (d.type === 'bacteria') {
+      drawBacteria(d.x, d.y, 35, d.time);
+    }
+  }
+}
+
+// ── Wave System ──
+function initWave(levelIdx, waveIdx) {
+  const level = LEVELS[levelIdx];
+  if (waveIdx >= level.waves.length) return false;
+  const wave = level.waves[waveIdx];
+  waveSpawns = [];
+  for (const group of wave.matter) {
+    for (let i = 0; i < group.count; i++) {
+      waveSpawns.push({
+        type: group.type,
+        time: wave.delay + i * group.interval,
+        spawned: false
+      });
+    }
+  }
+  waveTimer = 0;
+  waveActive = true;
+  return true;
+}
+
+function updateWaveSpawns(dt) {
+  if (!waveActive) return;
+  waveTimer += dt;
+  let allSpawned = true;
+  for (const s of waveSpawns) {
+    if (!s.spawned && waveTimer >= s.time) {
+      spawnMatter(s.type);
+      s.spawned = true;
+    }
+    if (!s.spawned) allSpawned = false;
+  }
+  if (allSpawned && deadMatter.length === 0) {
+    // Wave complete
+    waveActive = false;
+    waveIndex++;
+    if (waveIndex >= LEVELS[currentLevel].waves.length) {
+      allWavesSpawned = true;
+      setState(STATES.LEVEL_COMPLETE);
+    } else {
+      setState(STATES.WAVE_COMPLETE);
+    }
+  }
+}
+
+// ── Moisture Events ──
+function updateMoisture(dt) {
+  const level = LEVELS[currentLevel];
+  moisture = lerp(moisture, moistureTarget, dt * 0.5);
+
+  if (moistureEvent !== 'none') {
+    moistureEventTimer -= dt;
+    if (moistureEventTimer <= 0) {
+      moistureEvent = 'none';
+      moistureTarget = level.moistureBase;
+      setRainVolume(0);
+    }
+  } else {
+    // Random events
+    moistureEventDuration -= dt;
+    if (moistureEventDuration <= 0) {
+      moistureEventDuration = rng(10, 20);
+      const roll = Math.random();
+      if (roll < level.rainChance) {
+        moistureEvent = 'rain';
+        moistureTarget = clamp(level.moistureBase + 0.35, 0, 1);
+        moistureEventTimer = rng(6, 12);
+        startRainAmbient();
+        setRainVolume(0.08);
+      } else if (roll < level.rainChance + level.droughtChance) {
+        moistureEvent = 'drought';
+        moistureTarget = clamp(level.moistureBase - 0.3, 0.05, 1);
+        moistureEventTimer = rng(8, 15);
+        setRainVolume(0);
+      }
+    }
+  }
+
+  // Calculate speed multiplier
+  if (moisture > 0.7) moistureSpeedMult = 2.0;
+  else if (moisture < 0.3) moistureSpeedMult = 0.5;
+  else moistureSpeedMult = 0.5 + (moisture - 0.3) / 0.4 * 1.5;
+
+  // Spawn rain particles
+  if (moistureEvent === 'rain') {
+    for (let i = 0; i < 3; i++) {
+      spawnRainDrop(rng(0, W));
+    }
+  }
+}
+
+// ── HUD Drawing ──
+function drawHUD() {
+  const pad = 12;
+  const barW = 180 * cScale;
+  const barH = 18 * cScale;
+
+  // Nutrient bar (top-left)
+  const nx = pad, ny = pad;
+  X.fillStyle = 'rgba(30,20,15,0.85)';
+  X.beginPath();
+  X.roundRect(nx, ny, barW + 90 * cScale, barH + 16 * cScale, 8);
+  X.fill();
+  X.fillStyle = 'rgba(0,0,0,0.4)';
+  X.fillRect(nx + 8, ny + 8, barW, barH);
+  const nutFill = clamp(nutrients / 200, 0, 1);
+  const nutGrad = X.createLinearGradient(nx + 8, 0, nx + 8 + barW, 0);
+  nutGrad.addColorStop(0, '#4CAF50');
+  nutGrad.addColorStop(1, '#69F0AE');
+  X.fillStyle = nutGrad;
+  X.fillRect(nx + 8, ny + 8, barW * nutFill, barH);
+  X.font = `bold ${13 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#E8D5B7';
+  X.textAlign = 'left';
+  X.fillText(`NUTRIENTS: ${Math.floor(nutrients)}`, nx + barW + 14, ny + 8 + barH * 0.75);
+
+  // Moisture bar (top-center)
+  const mx = W / 2 - barW / 2 - 20, my = pad;
+  X.fillStyle = 'rgba(30,20,15,0.85)';
+  X.beginPath();
+  X.roundRect(mx - 5, my, barW + 100 * cScale, barH + 16 * cScale, 8);
+  X.fill();
+  X.fillStyle = 'rgba(0,0,0,0.4)';
+  X.fillRect(mx + 8, my + 8, barW, barH);
+  const moistGrad = X.createLinearGradient(mx + 8, 0, mx + 8 + barW, 0);
+  moistGrad.addColorStop(0, '#1565C0');
+  moistGrad.addColorStop(1, '#64B5F6');
+  X.fillStyle = moistGrad;
+  X.fillRect(mx + 8, my + 8, barW * clamp(moisture, 0, 1), barH);
+  X.font = `bold ${13 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#E8D5B7';
+  X.textAlign = 'left';
+  let moistLabel = 'MOISTURE';
+  if (moistureEvent === 'rain') moistLabel = 'RAIN! 2x SPEED';
+  else if (moistureEvent === 'drought') moistLabel = 'DROUGHT! 0.5x';
+  X.fillText(moistLabel, mx + barW + 14, my + 8 + barH * 0.75);
+
+  // Event indicator
+  if (moistureEvent === 'rain') {
+    X.fillStyle = '#64B5F6';
+    X.font = `bold ${11 * cScale}px 'Inter', sans-serif`;
+    X.fillText(`(${Math.ceil(moistureEventTimer)}s)`, mx + barW + 14 + X.measureText(moistLabel).width + 6, my + 8 + barH * 0.75);
+  } else if (moistureEvent === 'drought') {
+    X.fillStyle = '#FF8A65';
+    X.font = `bold ${11 * cScale}px 'Inter', sans-serif`;
+    X.fillText(`(${Math.ceil(moistureEventTimer)}s)`, mx + barW + 14 + X.measureText(moistLabel).width + 6, my + 8 + barH * 0.75);
+  }
+
+  // Wave counter + Score (top-right)
+  const level = LEVELS[currentLevel];
+  const rightX = W - pad - 200 * cScale;
+  X.fillStyle = 'rgba(30,20,15,0.85)';
+  X.beginPath();
+  X.roundRect(rightX, my, 200 * cScale, barH + 16 * cScale + 22 * cScale, 8);
+  X.fill();
+  X.font = `bold ${13 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#FFD54F';
+  X.textAlign = 'left';
+  X.fillText(`WAVE ${Math.min(waveIndex + 1, level.waves.length)} / ${level.waves.length}`, rightX + 10, my + 18 * cScale);
+  X.fillStyle = '#E8D5B7';
+  X.fillText(`SCORE: ${score}`, rightX + 10, my + 36 * cScale);
+
+  // Combo display
+  if (comboCount >= 5 && comboTimer > 0) {
+    X.font = `bold ${18 * cScale}px 'Fredoka', sans-serif`;
+    X.fillStyle = comboMultiplier >= 3 ? '#FFD54F' : '#69F0AE';
+    X.textAlign = 'center';
+    X.globalAlpha = clamp(comboTimer, 0, 1);
+    X.fillText(`COMBO x${comboMultiplier}!  (${comboCount})`, W / 2, my + barH + 40 * cScale);
+    X.globalAlpha = 1;
+  }
+
+  // ── Bottom Palette ──
+  drawPalette();
+}
+
+function drawPalette() {
+  const palW = 340 * cScale;
+  const palH = 70 * cScale;
+  const palX = W / 2 - palW / 2;
+  const palY = H - palH - 10;
+
+  X.fillStyle = 'rgba(30,20,15,0.9)';
+  X.beginPath();
+  X.roundRect(palX, palY, palW, palH, 12);
+  X.fill();
+  X.strokeStyle = 'rgba(232,213,183,0.2)';
+  X.lineWidth = 1;
+  X.stroke();
+
+  const btnW = 100 * cScale;
+  const btnH = 52 * cScale;
+  const gap = 10 * cScale;
+  const startX = palX + (palW - (btnW * 3 + gap * 2)) / 2;
+
+  for (let i = 0; i < 3; i++) {
+    const type = DECOMP_TYPES[i];
+    const def = DECOMP_DEFS[type];
+    const bx = startX + i * (btnW + gap);
+    const by = palY + (palH - btnH) / 2;
+    const canAfford = nutrients >= def.cost;
+    const isSelected = selectedDecomposer === i;
+
+    // Button bg
+    X.fillStyle = isSelected ? 'rgba(105,240,174,0.2)' : 'rgba(60,40,30,0.8)';
+    X.beginPath();
+    X.roundRect(bx, by, btnW, btnH, 8);
+    X.fill();
+    if (isSelected) {
+      X.strokeStyle = '#69F0AE';
+      X.lineWidth = 2;
+      X.stroke();
+    }
+    if (!canAfford) {
+      X.fillStyle = 'rgba(0,0,0,0.5)';
+      X.beginPath();
+      X.roundRect(bx, by, btnW, btnH, 8);
+      X.fill();
+    }
+
+    // Icon
+    X.save();
+    if (type === 'mushroom') drawMushroom(bx + 22 * cScale, by + btnH * 0.6, 18 * cScale, stateTime);
+    else if (type === 'worm') drawWorm(bx + 22 * cScale, by + btnH * 0.5, 16 * cScale, stateTime);
+    else if (type === 'bacteria') drawBacteria(bx + 22 * cScale, by + btnH * 0.5, 18 * cScale, stateTime);
+    X.restore();
+
+    // Label + cost
+    X.font = `600 ${10 * cScale}px 'Fredoka', sans-serif`;
+    X.fillStyle = canAfford ? '#E8D5B7' : '#8D6E63';
+    X.textAlign = 'left';
+    X.fillText(def.label, bx + 42 * cScale, by + 18 * cScale);
+    X.font = `500 ${9 * cScale}px 'Inter', sans-serif`;
+    X.fillStyle = canAfford ? '#69F0AE' : '#795548';
+    X.fillText(`${def.cost} nutrients`, bx + 42 * cScale, by + 32 * cScale);
+    X.fillStyle = 'rgba(232,213,183,0.4)';
+    X.fillText(`[${def.key}]`, bx + 42 * cScale, by + 44 * cScale);
+
+    // Click target
+    addClickTarget(bx, by, btnW, btnH, 'palette', { index: i });
+  }
+}
+
+// ── Placement Preview ──
+function drawPlacementPreview() {
+  if (selectedDecomposer < 0) return;
+  if (mouseY < floorY - 10) return;
+  const type = DECOMP_TYPES[selectedDecomposer];
+  const def = DECOMP_DEFS[type];
+  const canAfford = nutrients >= def.cost;
+
+  X.globalAlpha = canAfford ? 0.5 : 0.2;
+  if (type === 'mushroom') drawMushroom(mouseX, mouseY, 30, stateTime);
+  else if (type === 'worm') drawWorm(mouseX, mouseY, 25, stateTime);
+  else if (type === 'bacteria') drawBacteria(mouseX, mouseY, 35, stateTime);
+
+  // Range circle
+  X.globalAlpha = 0.1;
+  X.strokeStyle = canAfford ? '#69F0AE' : '#EF5350';
+  X.lineWidth = 1;
+  X.setLineDash([4, 4]);
+  X.beginPath();
+  X.arc(mouseX, mouseY, def.aoe ? def.aoeRadius : def.range, 0, Math.PI * 2);
+  X.stroke();
+  X.setLineDash([]);
+  X.globalAlpha = 1;
+}
+
+// ── Title Screen ──
+function drawTitle() {
+  // Background
+  const grad = X.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#1B5E20');
+  grad.addColorStop(0.3, '#33691E');
+  grad.addColorStop(0.7, '#5D4037');
+  grad.addColorStop(1, '#3E2723');
+  X.fillStyle = grad;
+  X.fillRect(0, 0, W, H);
+
+  // Animated falling leaves
+  if (fallingLeaves.length < 30) {
+    fallingLeaves.push({
+      x: rng(0, W), y: rng(-50, -10),
+      vx: rng(-20, 20), vy: rng(30, 80),
+      rot: rng(0, Math.PI * 2), rotS: rng(-2, 2),
+      size: rng(8, 16),
+      color: ['#FF8A65', '#FFB74D', '#FDD835', '#A1887F', '#E57373'][rngInt(0, 4)]
+    });
+  }
+  for (let i = fallingLeaves.length - 1; i >= 0; i--) {
+    const l = fallingLeaves[i];
+    l.x += l.vx * 0.016;
+    l.y += l.vy * 0.016;
+    l.rot += l.rotS * 0.016;
+    l.vx += Math.sin(stateTime + i) * 0.5;
+    if (l.y > H + 20) { fallingLeaves.splice(i, 1); continue; }
+    X.save();
+    X.translate(l.x, l.y);
+    X.rotate(l.rot);
+    X.fillStyle = l.color;
+    X.globalAlpha = 0.6;
+    X.beginPath();
+    X.ellipse(0, 0, l.size, l.size * 0.5, 0, 0, Math.PI * 2);
+    X.fill();
+    X.restore();
+  }
+  X.globalAlpha = 1;
+
+  // Growing mushrooms at bottom
+  const mushroomCount = 8;
+  for (let i = 0; i < mushroomCount; i++) {
+    const mx = W * 0.1 + i * (W * 0.8 / mushroomCount);
+    const growT = clamp((stateTime - i * 0.3) * 0.5, 0, 1);
+    const mSize = 25 * easeOut(growT);
+    if (mSize > 2) drawMushroom(mx, H - 20, mSize, stateTime + i);
+  }
+
+  // Title text
+  const titleY = H * 0.3;
+  X.textAlign = 'center';
+
+  // Shadow
+  X.font = `bold ${Math.floor(72 * cScale)}px 'Fredoka', sans-serif`;
+  X.fillStyle = 'rgba(0,0,0,0.3)';
+  X.fillText('DECOMPOSE', W / 2 + 3, titleY + 3);
+
+  // Main title
+  const titleGrad = X.createLinearGradient(W / 2 - 200, titleY - 40, W / 2 + 200, titleY + 20);
+  titleGrad.addColorStop(0, '#A5D6A7');
+  titleGrad.addColorStop(0.5, '#69F0AE');
+  titleGrad.addColorStop(1, '#4CAF50');
+  X.fillStyle = titleGrad;
+  X.fillText('DECOMPOSE', W / 2, titleY);
+
+  // Subtitle
+  X.font = `500 ${Math.floor(18 * cScale)}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText('A Forest Floor Tower Defense', W / 2, titleY + 40 * cScale);
+
+  // NGSS tag
+  X.font = `400 ${Math.floor(12 * cScale)}px 'Inter', sans-serif`;
+  X.fillStyle = 'rgba(232,213,183,0.5)';
+  X.fillText('NGSS 5-LS2-1 — Decomposition & Nutrient Cycling', W / 2, titleY + 65 * cScale);
+
+  // Buttons
+  const btnW = 220 * cScale, btnH = 50 * cScale;
+  const playBtnY = H * 0.55;
+  const howBtnY = playBtnY + btnH + 15;
+
+  // Play button
+  X.fillStyle = 'rgba(76,175,80,0.9)';
+  X.beginPath();
+  X.roundRect(W / 2 - btnW / 2, playBtnY, btnW, btnH, 12);
+  X.fill();
+  X.font = `bold ${Math.floor(20 * cScale)}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#fff';
+  X.fillText('PLAY', W / 2, playBtnY + btnH * 0.65);
+  addClickTarget(W / 2 - btnW / 2, playBtnY, btnW, btnH, 'play', {});
+
+  // How to Play button
+  X.fillStyle = 'rgba(60,40,30,0.85)';
+  X.beginPath();
+  X.roundRect(W / 2 - btnW / 2, howBtnY, btnW, btnH, 12);
+  X.fill();
+  X.strokeStyle = 'rgba(232,213,183,0.3)';
+  X.lineWidth = 1;
+  X.stroke();
+  X.font = `600 ${Math.floor(16 * cScale)}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText('HOW TO PLAY', W / 2, howBtnY + btnH * 0.62);
+  addClickTarget(W / 2 - btnW / 2, howBtnY, btnW, btnH, 'howtoplay', {});
+
+  // CAST Science credit
+  X.font = `400 ${10 * cScale}px 'Inter', sans-serif`;
+  X.fillStyle = 'rgba(232,213,183,0.3)';
+  X.fillText('CAST Science / ModelIt', W / 2, H - 15);
+}
+
+// ── How to Play Screen ──
+function drawHowToPlay() {
+  // Dark overlay bg
+  X.fillStyle = 'rgba(30,20,15,0.95)';
+  X.fillRect(0, 0, W, H);
+
+  const cx = W / 2, cardW = Math.min(700, W - 40) * cScale;
+  const cardH = Math.min(500, H - 60) * cScale;
+  const cardX = cx - cardW / 2, cardY = (H - cardH) / 2;
+
+  // Card
+  X.fillStyle = 'rgba(50,35,25,0.95)';
+  X.beginPath();
+  X.roundRect(cardX, cardY, cardW, cardH, 16);
+  X.fill();
+  X.strokeStyle = 'rgba(232,213,183,0.15)';
+  X.lineWidth = 1;
+  X.stroke();
+
+  X.textAlign = 'center';
+  X.font = `bold ${28 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#69F0AE';
+  X.fillText('HOW TO PLAY', cx, cardY + 40 * cScale);
+
+  const items = [
+    { icon: 'goal', text: 'Dead organic matter falls from above. Decompose it before it piles up to the sunlight line!' },
+    { icon: 'mushroom', text: 'MUSHROOM (25 nutrients) — Medium area attack. Good all-around decomposer. Press [1] or tap.' },
+    { icon: 'worm', text: 'WORM (15 nutrients) — Cheap & fast! Crawls to nearest matter and eats it. Press [2] or tap.' },
+    { icon: 'bacteria', text: 'BACTERIA (40 nutrients) — Slow but massive area. Best for big piles. Press [3] or tap.' },
+    { icon: 'nutrient', text: 'Earn nutrients by decomposing matter. Spend them to place decomposers on the forest floor.' },
+    { icon: 'moisture', text: 'Rain = 2x speed! Drought = 0.5x speed. Watch the moisture bar and plan ahead.' },
+    { icon: 'combo', text: 'Decompose 5+ quickly for 2x combo, 10+ for 3x! Speed earns more points.' },
+  ];
+
+  const startY = cardY + 70 * cScale;
+  const lineH = 48 * cScale;
+  const iconSize = 14 * cScale;
+
+  for (let i = 0; i < items.length; i++) {
+    const iy = startY + i * lineH;
+    const item = items[i];
+
+    // Icon
+    X.save();
+    if (item.icon === 'mushroom') {
+      drawMushroom(cardX + 35 * cScale, iy + 5, iconSize, stateTime);
+    } else if (item.icon === 'worm') {
+      drawWorm(cardX + 35 * cScale, iy + 5, iconSize * 0.8, stateTime);
+    } else if (item.icon === 'bacteria') {
+      drawBacteria(cardX + 35 * cScale, iy + 5, iconSize, stateTime);
+    } else if (item.icon === 'goal') {
+      X.fillStyle = '#FF8A65';
+      X.beginPath();
+      X.ellipse(cardX + 35 * cScale, iy + 2, iconSize * 0.7, iconSize * 0.35, 0.3, 0, Math.PI * 2);
+      X.fill();
+    } else if (item.icon === 'nutrient') {
+      X.fillStyle = '#69F0AE';
+      X.beginPath();
+      X.arc(cardX + 35 * cScale, iy + 2, iconSize * 0.4, 0, Math.PI * 2);
+      X.fill();
+    } else if (item.icon === 'moisture') {
+      X.fillStyle = '#64B5F6';
+      X.beginPath();
+      X.moveTo(cardX + 35 * cScale, iy - iconSize * 0.4);
+      X.quadraticCurveTo(cardX + 35 * cScale + iconSize * 0.4, iy + iconSize * 0.2, cardX + 35 * cScale, iy + iconSize * 0.5);
+      X.quadraticCurveTo(cardX + 35 * cScale - iconSize * 0.4, iy + iconSize * 0.2, cardX + 35 * cScale, iy - iconSize * 0.4);
+      X.fill();
+    } else if (item.icon === 'combo') {
+      X.fillStyle = '#FFD54F';
+      X.font = `bold ${iconSize}px 'Fredoka', sans-serif`;
+      X.textAlign = 'center';
+      X.fillText('x2', cardX + 35 * cScale, iy + 6);
+    }
+    X.restore();
+
+    // Text
+    X.font = `400 ${12.5 * cScale}px 'Inter', sans-serif`;
+    X.fillStyle = '#E8D5B7';
+    X.textAlign = 'left';
+    X.fillText(item.text, cardX + 60 * cScale, iy + 5);
+  }
+
+  // Back button
+  const btnW = 180 * cScale, btnH = 42 * cScale;
+  const btnY = cardY + cardH - 55 * cScale;
+  X.fillStyle = 'rgba(76,175,80,0.85)';
+  X.beginPath();
+  X.roundRect(cx - btnW / 2, btnY, btnW, btnH, 10);
+  X.fill();
+  X.font = `bold ${16 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#fff';
+  X.textAlign = 'center';
+  X.fillText('GOT IT!', cx, btnY + btnH * 0.65);
+  addClickTarget(cx - btnW / 2, btnY, btnW, btnH, 'back_to_title', {});
+}
+
+// ── Level Select ──
+function drawLevelSelect() {
+  X.fillStyle = 'rgba(30,20,15,0.97)';
+  X.fillRect(0, 0, W, H);
+
+  // Forest path background
+  X.strokeStyle = 'rgba(93,64,55,0.4)';
+  X.lineWidth = 40 * cScale;
+  X.lineCap = 'round';
+  X.lineJoin = 'round';
+  X.beginPath();
+  const pathPoints = [];
+  for (let i = 0; i < 5; i++) {
+    const px = W * 0.15 + i * (W * 0.7 / 4);
+    const py = H * 0.5 + Math.sin(i * 1.2) * H * 0.1;
+    pathPoints.push({ x: px, y: py });
+    if (i === 0) X.moveTo(px, py);
+    else X.lineTo(px, py);
+  }
+  X.stroke();
+
+  X.textAlign = 'center';
+  X.font = `bold ${32 * cScale}px 'Fredoka', sans-serif`;
+  X.fillStyle = '#69F0AE';
+  X.fillText('SELECT LEVEL', W / 2, H * 0.12);
+
+  for (let i = 0; i < 5; i++) {
+    const p = pathPoints[i];
+    const level = LEVELS[i];
+    const unlocked = saveData.levels[i] >= 0;
+    const best = saveData.levels[i];
+    const nodeR = 35 * cScale;
+
+    // Node circle
+    X.fillStyle = unlocked ? 'rgba(76,175,80,0.85)' : 'rgba(60,40,30,0.8)';
+    X.beginPath();
+    X.arc(p.x, p.y, nodeR, 0, Math.PI * 2);
+    X.fill();
+    X.strokeStyle = unlocked ? '#69F0AE' : 'rgba(232,213,183,0.2)';
+    X.lineWidth = 2;
+    X.stroke();
+
+    if (unlocked) {
+      // Level number
+      X.font = `bold ${22 * cScale}px 'Fredoka', sans-serif`;
+      X.fillStyle = '#fff';
+      X.fillText(`${i + 1}`, p.x, p.y + 7 * cScale);
+
+      // Medal
+      if (best >= 3) {
+        X.fillStyle = '#FFD54F';
+        X.font = `bold ${14 * cScale}px 'Fredoka'`;
+        X.fillText('GOLD', p.x, p.y - nodeR - 25 * cScale);
+      } else if (best >= 2) {
+        X.fillStyle = '#B0BEC5';
+        X.font = `bold ${14 * cScale}px 'Fredoka'`;
+        X.fillText('SILVER', p.x, p.y - nodeR - 25 * cScale);
+      } else if (best >= 1) {
+        X.fillStyle = '#A1887F';
+        X.font = `bold ${14 * cScale}px 'Fredoka'`;
+        X.fillText('BRONZE', p.x, p.y - nodeR - 25 * cScale);
+      }
+
+      // High score
+      if (saveData.highScores[i] > 0) {
+        X.font = `400 ${10 * cScale}px 'Inter'`;
+        X.fillStyle = 'rgba(232,213,183,0.5)';
+        X.fillText(`Best: ${saveData.highScores[i]}`, p.x, p.y - nodeR - 10 * cScale);
+      }
+    } else {
+      // Lock icon
+      X.fillStyle = 'rgba(232,213,183,0.3)';
+      X.font = `bold ${18 * cScale}px 'Inter'`;
+      X.fillText('?', p.x, p.y + 7 * cScale);
+    }
+
+    // Name
+    X.font = `600 ${13 * cScale}px 'Fredoka', sans-serif`;
+    X.fillStyle = unlocked ? '#E8D5B7' : 'rgba(232,213,183,0.3)';
+    X.fillText(level.name, p.x, p.y + nodeR + 20 * cScale);
+
+    if (unlocked) {
+      addClickTarget(p.x - nodeR, p.y - nodeR, nodeR * 2, nodeR * 2, 'level', { index: i });
+    }
+  }
+
+  // Back button
+  const btnW = 140 * cScale, btnH = 40 * cScale;
+  X.fillStyle = 'rgba(60,40,30,0.85)';
+  X.beginPath();
+  X.roundRect(20, H - 55, btnW, btnH, 8);
+  X.fill();
+  X.font = `600 ${14 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText('BACK', 20 + btnW / 2, H - 55 + btnH * 0.62);
+  addClickTarget(20, H - 55, btnW, btnH, 'back_to_title', {});
+}
+
+// ── Level Intro ──
+function drawLevelIntro() {
+  X.fillStyle = 'rgba(30,20,15,0.95)';
+  X.fillRect(0, 0, W, H);
+
+  const level = LEVELS[currentLevel];
+  const cx = W / 2;
+  const cardW = Math.min(500, W - 60) * cScale;
+  const cardH = 280 * cScale;
+  const cardX = cx - cardW / 2, cardY = (H - cardH) / 2;
+
+  X.fillStyle = 'rgba(50,35,25,0.95)';
+  X.beginPath();
+  X.roundRect(cardX, cardY, cardW, cardH, 16);
+  X.fill();
+
+  X.textAlign = 'center';
+  X.font = `bold ${14 * cScale}px 'Inter'`;
+  X.fillStyle = 'rgba(232,213,183,0.5)';
+  X.fillText(`LEVEL ${currentLevel + 1}`, cx, cardY + 35 * cScale);
+
+  X.font = `bold ${28 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#69F0AE';
+  X.fillText(level.name, cx, cardY + 70 * cScale);
+
+  X.font = `400 ${14 * cScale}px 'Inter'`;
+  X.fillStyle = '#E8D5B7';
+  // Word wrap description
+  const words = level.desc.split(' ');
+  let line = '', lineY = cardY + 105 * cScale;
+  for (const word of words) {
+    const test = line + word + ' ';
+    if (X.measureText(test).width > cardW - 60) {
+      X.fillText(line.trim(), cx, lineY);
+      line = word + ' ';
+      lineY += 20 * cScale;
+    } else {
+      line = test;
+    }
+  }
+  if (line.trim()) X.fillText(line.trim(), cx, lineY);
+
+  X.font = `500 ${12 * cScale}px 'Inter'`;
+  X.fillStyle = 'rgba(232,213,183,0.5)';
+  X.fillText(`${level.waves.length} Waves | Moisture: ${Math.round(level.moistureBase * 100)}%`, cx, cardY + 180 * cScale);
+
+  // Medals info
+  X.font = `400 ${11 * cScale}px 'Inter'`;
+  X.fillStyle = '#A1887F';
+  X.fillText(`Bronze: ${level.bronze}`, cx - 90 * cScale, cardY + 205 * cScale);
+  X.fillStyle = '#B0BEC5';
+  X.fillText(`Silver: ${level.silver}`, cx, cardY + 205 * cScale);
+  X.fillStyle = '#FFD54F';
+  X.fillText(`Gold: ${level.gold}`, cx + 90 * cScale, cardY + 205 * cScale);
+
+  // Start button
+  const btnW = 200 * cScale, btnH = 45 * cScale;
+  const btnY = cardY + cardH - 65 * cScale;
+  X.fillStyle = 'rgba(76,175,80,0.9)';
+  X.beginPath();
+  X.roundRect(cx - btnW / 2, btnY, btnW, btnH, 10);
+  X.fill();
+  X.font = `bold ${18 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#fff';
+  X.fillText('START', cx, btnY + btnH * 0.63);
+  addClickTarget(cx - btnW / 2, btnY, btnW, btnH, 'start_level', {});
+}
+
+// ── Wave Complete ──
+function drawWaveComplete() {
+  // Semi-transparent overlay
+  X.fillStyle = 'rgba(30,20,15,0.7)';
+  X.fillRect(0, 0, W, H);
+
+  const cx = W / 2;
+  const t = clamp(stateTime * 2, 0, 1);
+  const scale = easeOut(t);
+
+  X.save();
+  X.translate(cx, H * 0.4);
+  X.scale(scale, scale);
+  X.textAlign = 'center';
+  X.font = `bold ${36 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#69F0AE';
+  X.fillText('WAVE COMPLETE!', 0, 0);
+  X.font = `500 ${16 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText(`Wave ${waveIndex} cleared — Next wave incoming...`, 0, 40 * cScale);
+  X.restore();
+
+  if (stateTime > 2.5) {
+    initWave(currentLevel, waveIndex);
+    setState(STATES.PLAYING);
+  }
+}
+
+// ── Level Complete ──
+function drawLevelComplete() {
+  X.fillStyle = 'rgba(30,20,15,0.92)';
+  X.fillRect(0, 0, W, H);
+
+  const level = LEVELS[currentLevel];
+  const cx = W / 2;
+  const cardW = Math.min(450, W - 60) * cScale;
+  const cardH = 340 * cScale;
+  const cardX = cx - cardW / 2, cardY = (H - cardH) / 2;
+
+  X.fillStyle = 'rgba(50,35,25,0.95)';
+  X.beginPath();
+  X.roundRect(cardX, cardY, cardW, cardH, 16);
+  X.fill();
+
+  X.textAlign = 'center';
+  X.font = `bold ${32 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#69F0AE';
+  X.fillText('LEVEL COMPLETE!', cx, cardY + 45 * cScale);
+
+  X.font = `600 ${20 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText(level.name, cx, cardY + 80 * cScale);
+
+  // Score
+  X.font = `bold ${24 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#FFD54F';
+  X.fillText(`Score: ${score}`, cx, cardY + 120 * cScale);
+
+  // Time bonus
+  const timeBonus = Math.max(0, Math.floor(500 - levelTimer * 5));
+  const totalScore = score + timeBonus;
+
+  X.font = `400 ${14 * cScale}px 'Inter'`;
+  X.fillStyle = 'rgba(232,213,183,0.6)';
+  X.fillText(`Time Bonus: +${timeBonus}`, cx, cardY + 148 * cScale);
+
+  X.font = `bold ${20 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#69F0AE';
+  X.fillText(`Total: ${totalScore}`, cx, cardY + 178 * cScale);
+
+  // Medal
+  let medal = 0, medalText = '', medalColor = '#E8D5B7';
+  if (totalScore >= level.gold) { medal = 3; medalText = 'GOLD'; medalColor = '#FFD54F'; }
+  else if (totalScore >= level.silver) { medal = 2; medalText = 'SILVER'; medalColor = '#B0BEC5'; }
+  else if (totalScore >= level.bronze) { medal = 1; medalText = 'BRONZE'; medalColor = '#A1887F'; }
+
+  if (medalText) {
+    X.font = `bold ${22 * cScale}px 'Fredoka'`;
+    X.fillStyle = medalColor;
+    X.fillText(medalText, cx, cardY + 215 * cScale);
+  }
+
+  // Save progress
+  if (medal > saveData.levels[currentLevel]) saveData.levels[currentLevel] = medal;
+  if (totalScore > saveData.highScores[currentLevel]) saveData.highScores[currentLevel] = totalScore;
+  if (currentLevel < 4 && saveData.levels[currentLevel + 1] < 0) saveData.levels[currentLevel + 1] = 0;
+  writeSave();
+
+  // Buttons
+  const btnW = 180 * cScale, btnH = 42 * cScale;
+  const btnY1 = cardY + cardH - 95 * cScale;
+  const btnY2 = cardY + cardH - 48 * cScale;
+
+  if (currentLevel < 4) {
+    X.fillStyle = 'rgba(76,175,80,0.9)';
+    X.beginPath();
+    X.roundRect(cx - btnW / 2, btnY1, btnW, btnH, 10);
+    X.fill();
+    X.font = `bold ${15 * cScale}px 'Fredoka'`;
+    X.fillStyle = '#fff';
+    X.fillText('NEXT LEVEL', cx, btnY1 + btnH * 0.63);
+    addClickTarget(cx - btnW / 2, btnY1, btnW, btnH, 'next_level', {});
+  }
+
+  X.fillStyle = 'rgba(60,40,30,0.85)';
+  X.beginPath();
+  X.roundRect(cx - btnW / 2, btnY2, btnW, btnH, 10);
+  X.fill();
+  X.font = `600 ${14 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText('LEVEL SELECT', cx, btnY2 + btnH * 0.63);
+  addClickTarget(cx - btnW / 2, btnY2, btnW, btnH, 'to_level_select', {});
+}
+
+// ── Game Over ──
+function drawGameOver() {
+  X.fillStyle = 'rgba(30,10,5,0.92)';
+  X.fillRect(0, 0, W, H);
+
+  const cx = W / 2;
+  const cardW = Math.min(420, W - 60) * cScale;
+  const cardH = 260 * cScale;
+  const cardX = cx - cardW / 2, cardY = (H - cardH) / 2;
+
+  X.fillStyle = 'rgba(50,25,20,0.95)';
+  X.beginPath();
+  X.roundRect(cardX, cardY, cardW, cardH, 16);
+  X.fill();
+
+  X.textAlign = 'center';
+  X.font = `bold ${32 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#EF5350';
+  X.fillText('GAME OVER', cx, cardY + 45 * cScale);
+
+  X.font = `500 ${15 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText('Dead matter blocked all the sunlight!', cx, cardY + 80 * cScale);
+
+  X.font = `bold ${20 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#FFD54F';
+  X.fillText(`Score: ${score}`, cx, cardY + 120 * cScale);
+
+  X.font = `400 ${13 * cScale}px 'Inter'`;
+  X.fillStyle = 'rgba(232,213,183,0.5)';
+  X.fillText('Decomposers need good placement to keep the forest healthy!', cx, cardY + 150 * cScale);
+
+  // Buttons
+  const btnW = 180 * cScale, btnH = 42 * cScale;
+  const btnY1 = cardY + cardH - 95 * cScale;
+  const btnY2 = cardY + cardH - 48 * cScale;
+
+  X.fillStyle = 'rgba(76,175,80,0.9)';
+  X.beginPath();
+  X.roundRect(cx - btnW / 2, btnY1, btnW, btnH, 10);
+  X.fill();
+  X.font = `bold ${15 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#fff';
+  X.fillText('TRY AGAIN', cx, btnY1 + btnH * 0.63);
+  addClickTarget(cx - btnW / 2, btnY1, btnW, btnH, 'retry', {});
+
+  X.fillStyle = 'rgba(60,40,30,0.85)';
+  X.beginPath();
+  X.roundRect(cx - btnW / 2, btnY2, btnW, btnH, 10);
+  X.fill();
+  X.font = `600 ${14 * cScale}px 'Fredoka'`;
+  X.fillStyle = '#E8D5B7';
+  X.fillText('LEVEL SELECT', cx, btnY2 + btnH * 0.63);
+  addClickTarget(cx - btnW / 2, btnY2, btnW, btnH, 'to_level_select', {});
+}
+
+// ── State Management ──
+function setState(newState) {
+  state = newState;
+  stateTime = 0;
+
+  if (newState === STATES.PLAYING) {
+    // Only reset game if coming from intro
+  } else if (newState === STATES.LEVEL_INTRO) {
+    // Reset game variables for new level
+    nutrients = 50;
+    score = 0;
+    deadMatter = [];
+    decomposers = [];
+    waveIndex = 0;
+    waveActive = false;
+    allWavesSpawned = false;
+    moisture = LEVELS[currentLevel].moistureBase;
+    moistureTarget = moisture;
+    moistureEvent = 'none';
+    moistureEventTimer = 0;
+    moistureEventDuration = rng(8, 15);
+    moistureSpeedMult = 1.0;
+    comboCount = 0;
+    comboTimer = 0;
+    comboMultiplier = 1;
+    levelTimer = 0;
+    selectedDecomposer = -1;
+    initPlants();
+    stopRainAmbient();
+  } else if (newState === STATES.WAVE_COMPLETE) {
+    playWaveComplete();
+  } else if (newState === STATES.LEVEL_COMPLETE) {
+    playWaveComplete();
+    stopRainAmbient();
+  } else if (newState === STATES.GAME_OVER) {
+    playGameOver();
+    stopRainAmbient();
+  } else if (newState === STATES.TITLE) {
+    fallingLeaves = [];
+    stopRainAmbient();
+  }
+}
+
+// ── Start Level ──
+function startLevel(idx) {
+  currentLevel = idx;
+  setState(STATES.LEVEL_INTRO);
+}
+
+// ── Input Handling ──
+function getCanvasPos(e) {
+  const rect = C.getBoundingClientRect();
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+  return { x: clientX - rect.left, y: clientY - rect.top };
+}
+
+function handleClick(cx, cy) {
+  initAudio();
+  const hit = hitTest(cx, cy);
+
+  if (hit) {
+    if (hit.id === 'play') {
+      setState(STATES.LEVEL_SELECT);
+      return;
+    }
+    if (hit.id === 'howtoplay') {
+      setState(STATES.HOW_TO_PLAY);
+      return;
+    }
+    if (hit.id === 'back_to_title') {
+      setState(STATES.TITLE);
+      return;
+    }
+    if (hit.id === 'level') {
+      startLevel(hit.data.index);
+      return;
+    }
+    if (hit.id === 'start_level') {
+      initWave(currentLevel, 0);
+      setState(STATES.PLAYING);
+      return;
+    }
+    if (hit.id === 'palette') {
+      if (selectedDecomposer === hit.data.index) {
+        selectedDecomposer = -1;
+      } else {
+        selectedDecomposer = hit.data.index;
+      }
+      return;
+    }
+    if (hit.id === 'next_level') {
+      startLevel(currentLevel + 1);
+      return;
+    }
+    if (hit.id === 'to_level_select') {
+      setState(STATES.LEVEL_SELECT);
+      return;
+    }
+    if (hit.id === 'retry') {
+      startLevel(currentLevel);
+      return;
+    }
+    return;
+  }
+
+  // If in playing state and decomposer selected, place it
+  if (state === STATES.PLAYING && selectedDecomposer >= 0) {
+    if (cy >= floorY - 10) {
+      const type = DECOMP_TYPES[selectedDecomposer];
+      placeDecomposer(type, cx, cy);
+    }
+  }
+}
+
+C.addEventListener('mousedown', (e) => {
+  e.preventDefault();
+  const pos = getCanvasPos(e);
+  mouseX = pos.x; mouseY = pos.y;
+  mouseDown = true;
+  handleClick(pos.x, pos.y);
+});
+C.addEventListener('mousemove', (e) => {
+  const pos = getCanvasPos(e);
+  mouseX = pos.x; mouseY = pos.y;
+});
+C.addEventListener('mouseup', () => { mouseDown = false; });
+
+C.addEventListener('touchstart', (e) => {
+  e.preventDefault();
+  const pos = getCanvasPos(e);
+  mouseX = pos.x; mouseY = pos.y;
+  mouseDown = true;
+  handleClick(pos.x, pos.y);
+}, { passive: false });
+C.addEventListener('touchmove', (e) => {
+  e.preventDefault();
+  if (e.touches.length > 0) {
+    const pos = getCanvasPos(e);
+    mouseX = pos.x; mouseY = pos.y;
+  }
+}, { passive: false });
+C.addEventListener('touchend', (e) => {
+  e.preventDefault();
+  mouseDown = false;
+}, { passive: false });
+
+// Keyboard
+document.addEventListener('keydown', (e) => {
+  initAudio();
+  if (state === STATES.PLAYING) {
+    if (e.key === '1') selectedDecomposer = (selectedDecomposer === 0) ? -1 : 0;
+    else if (e.key === '2') selectedDecomposer = (selectedDecomposer === 1) ? -1 : 1;
+    else if (e.key === '3') selectedDecomposer = (selectedDecomposer === 2) ? -1 : 2;
+    else if (e.key === 'Escape') selectedDecomposer = -1;
+  }
+  if (e.key === 'Enter' || e.key === ' ') {
+    if (state === STATES.TITLE) setState(STATES.LEVEL_SELECT);
+    else if (state === STATES.HOW_TO_PLAY) setState(STATES.TITLE);
+  }
+});
+
+// ── Main Game Loop ──
+let lastTime = performance.now();
+
+function gameLoop(now) {
+  requestAnimationFrame(gameLoop);
+
+  let dt = (now - lastTime) / 1000;
+  lastTime = now;
+  dt = Math.min(dt, 0.1); // Cap delta time
+
+  stateTime += dt;
+  resize();
+
+  floorY = H * FLOOR_Y_RATIO;
+  sunlightY = H * SUNLIGHT_Y_RATIO;
+
+  // Clear canvas
+  X.clearRect(0, 0, W, H);
+
+  // Clear click targets
+  clickTargets = [];
+
+  // Screen shake
+  if (shakeAmount > 0.5) {
+    X.save();
+    X.translate(rng(-shakeAmount, shakeAmount), rng(-shakeAmount, shakeAmount));
+    shakeAmount *= shakeDecay;
+  }
+
+  // ── State-specific update + draw ──
+  if (state === STATES.TITLE) {
+    drawTitle();
+  } else if (state === STATES.HOW_TO_PLAY) {
+    drawHowToPlay();
+  } else if (state === STATES.LEVEL_SELECT) {
+    drawLevelSelect();
+  } else if (state === STATES.LEVEL_INTRO) {
+    drawLevelIntro();
+  } else if (state === STATES.PLAYING) {
+    levelTimer += dt;
+
+    // Update combo
+    if (comboTimer > 0) {
+      comboTimer -= dt;
+      if (comboTimer <= 0) {
+        comboCount = 0;
+        comboMultiplier = 1;
+      }
+    }
+
+    // Update moisture
+    updateMoisture(dt);
+
+    // Update wave spawns
+    updateWaveSpawns(dt);
+
+    // Update dead matter
+    const highestPile = updateDeadMatter(dt);
+
+    // Check lose condition
+    if (highestPile <= sunlightY && deadMatter.length > 5) {
+      setState(STATES.GAME_OVER);
+    }
+
+    // Update decomposers
+    updateDecomposers(dt);
+
+    // Update plants
+    updatePlants(dt);
+
+    // Update particles
+    updateParticles(dt);
+
+    // ── Draw everything ──
+    drawForestBackground();
+    drawPlants();
+
+    // Draw dead matter
+    for (const m of deadMatter) {
+      drawDeadMatterItem(m);
+    }
+
+    // Draw decomposers
+    drawDecomposers();
+
+    // Draw particles
+    drawParticles();
+
+    // Placement preview
+    drawPlacementPreview();
+
+    // HUD
+    drawHUD();
+
+  } else if (state === STATES.WAVE_COMPLETE) {
+    // Keep drawing the game behind
+    updateParticles(dt);
+    updatePlants(dt);
+    drawForestBackground();
+    drawPlants();
+    for (const m of deadMatter) drawDeadMatterItem(m);
+    drawDecomposers();
+    drawParticles();
+    drawHUD();
+    drawWaveComplete();
+
+  } else if (state === STATES.LEVEL_COMPLETE) {
+    updateParticles(dt);
+    updatePlants(dt);
+    drawForestBackground();
+    drawPlants();
+    drawDecomposers();
+    drawParticles();
+    drawLevelComplete();
+
+  } else if (state === STATES.GAME_OVER) {
+    updateParticles(dt);
+    drawForestBackground();
+    drawPlants();
+    for (const m of deadMatter) drawDeadMatterItem(m);
+    drawDecomposers();
+    drawParticles();
+    drawGameOver();
+  }
+
+  if (shakeAmount > 0.5) {
+    X.restore();
+  } else {
+    shakeAmount = 0;
+  }
+}
+
+// ── Initialize and start ──
+setState(STATES.TITLE);
+requestAnimationFrame(gameLoop);
+
+</script>
+</body>
+</html>

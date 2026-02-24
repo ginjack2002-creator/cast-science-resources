@@ -1,0 +1,2541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>PHOTON | Energy Transfer Through Food Chains</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #0A0018; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Inter', sans-serif;
+    user-select: none; -webkit-user-select: none; touch-action: none;
+  }
+  canvas { display: block; image-rendering: auto; }
+  #orient-warn {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    background: #0A0018; color: #FFD700; font-family: 'Orbitron', sans-serif;
+    flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+  }
+  #orient-warn h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+  #orient-warn p { font-size: 0.9rem; color: #aaa; font-family: 'Inter', sans-serif; }
+  @media (orientation: portrait) and (max-width: 900px) {
+    #orient-warn { display: flex !important; }
+    canvas { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div id="orient-warn">
+  <h2>ROTATE YOUR DEVICE</h2>
+  <p>PHOTON plays best in landscape mode.<br>Please rotate your phone or tablet.</p>
+</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+// ============================================================
+// PHOTON - Energy Transfer Through Food Chains
+// NGSS 5-PS3-1: Endless Runner / Rhythm Game
+// ============================================================
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+
+// ---- Constants ----
+const DPR = Math.min(window.devicePixelRatio || 1, 2);
+const MAX_PARTICLES = 800;
+const PHASE_DURATION = 20;
+const ENERGY_TRANSFER_RATIO = 0.10;
+const GRAVITY = 1800;
+const JUMP_VEL = -600;
+const FAST_FALL_ACCEL = 900;
+const BASE_SPEED = 280;
+const GROUND_Y_RATIO = 0.78;
+
+// ---- Game States ----
+const STATE = {
+  TITLE: 0, HOW_TO: 1, LEVEL_SELECT: 2, PLAYING: 3,
+  PHASE_TRANS: 4, LEVEL_COMPLETE: 5, GAME_OVER: 6, PAUSED: 7
+};
+
+// ---- Phase IDs ----
+const PHASE = { SUNLIGHT: 0, PLANT: 1, HERBIVORE: 2, PREDATOR: 3 };
+
+// ---- Biome Definitions ----
+const BIOMES = [
+  {
+    name: "Grassland",
+    phases: ["Sunlight", "Grass", "Caterpillar", "Hawk"],
+    transfer: ["", "Photon hits a leaf", "Caterpillar eats the grass", "Hawk catches the caterpillar"],
+    colors: [["#1A0A3E","#2D1B69"],["#0B3D0B","#1B5E20"],["#5D4037","#8D6E63"],["#1565C0","#42A5F5"]],
+    ground: ["#222","#1B5E20","#795548","#90CAF9"]
+  },
+  {
+    name: "Ocean",
+    phases: ["Sunlight", "Phytoplankton", "Krill", "Shark"],
+    transfer: ["", "Photon feeds phytoplankton", "Krill eats phytoplankton", "Shark devours the fish"],
+    colors: [["#1A0A3E","#2D1B69"],["#004D40","#00695C"],["#01579B","#0277BD"],["#0D47A1","#1565C0"]],
+    ground: ["#222","#00897B","#0288D1","#1976D2"]
+  },
+  {
+    name: "Desert",
+    phases: ["Sunlight", "Cactus", "Lizard", "Roadrunner"],
+    transfer: ["", "Photon energizes cactus", "Lizard eats the cactus fruit", "Roadrunner catches the lizard"],
+    colors: [["#1A0A3E","#2D1B69"],["#E65100","#F57C00"],["#BF360C","#E64A19"],["#FF6F00","#FFA000"]],
+    ground: ["#222","#D4A056","#C8956C","#E0C090"]
+  },
+  {
+    name: "Rainforest",
+    phases: ["Sunlight", "Fern", "Toucan", "Jaguar"],
+    transfer: ["", "Photon fuels the fern", "Toucan eats the fruit", "Jaguar catches the toucan"],
+    colors: [["#1A0A3E","#2D1B69"],["#1B5E20","#2E7D32"],["#33691E","#558B2F"],["#004D40","#00695C"]],
+    ground: ["#222","#2E7D32","#689F38","#00796B"]
+  },
+  {
+    name: "Arctic",
+    phases: ["Sunlight", "Algae", "Penguin", "Orca"],
+    transfer: ["", "Photon grows algae", "Penguin eats the krill", "Orca hunts the penguin"],
+    colors: [["#1A0A3E","#2D1B69"],["#006064","#00838F"],["#263238","#37474F"],["#1A237E","#283593"]],
+    ground: ["#222","#4DD0E1","#B0BEC5","#5C6BC0"]
+  }
+];
+
+// ---- Phase Color Schemes ----
+const PHASE_COLORS = {
+  [PHASE.SUNLIGHT]:  { primary: "#FFD700", secondary: "#FFA000", glow: "#FFEB3B", bg: "#1A0A3E" },
+  [PHASE.PLANT]:     { primary: "#00E676", secondary: "#00C853", glow: "#69F0AE", bg: "#0B3D0B" },
+  [PHASE.HERBIVORE]: { primary: "#FFEB3B", secondary: "#FFC107", glow: "#FFF59D", bg: "#5D4037" },
+  [PHASE.PREDATOR]:  { primary: "#FF1744", secondary: "#D50000", glow: "#FF8A80", bg: "#1A237E" }
+};
+
+// ===========================================================
+// AUDIO SYSTEM (Web Audio API, Procedural)
+// ===========================================================
+let audioCtx = null;
+let masterGain = null;
+let ambientOsc = null;
+let ambientGain = null;
+
+function initAudio() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  masterGain = audioCtx.createGain();
+  masterGain.gain.value = 0.25;
+  masterGain.connect(audioCtx.destination);
+  startAmbient();
+}
+
+function startAmbient() {
+  if (!audioCtx) return;
+  ambientOsc = audioCtx.createOscillator();
+  ambientGain = audioCtx.createGain();
+  ambientOsc.type = 'sine';
+  ambientOsc.frequency.value = 110;
+  ambientGain.gain.value = 0.035;
+  ambientOsc.connect(ambientGain);
+  ambientGain.connect(masterGain);
+  ambientOsc.start();
+}
+
+function setAmbientPhase(phase) {
+  if (!ambientOsc) return;
+  const freqs = [110, 146.83, 174.61, 220];
+  ambientOsc.frequency.setTargetAtTime(freqs[phase], audioCtx.currentTime, 0.6);
+}
+
+function playJump() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = 'sine';
+  o.frequency.setValueAtTime(380, t);
+  o.frequency.exponentialRampToValueAtTime(760, t + 0.1);
+  g.gain.setValueAtTime(0.14, t);
+  g.gain.exponentialRampToValueAtTime(0.001, t + 0.14);
+  o.connect(g); g.connect(masterGain);
+  o.start(t); o.stop(t + 0.15);
+}
+
+function playCollect() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const notes = [523, 659, 784];
+  notes.forEach((f, i) => {
+    const o = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    o.type = 'sine';
+    o.frequency.value = f;
+    g.gain.setValueAtTime(0.1, t + i * 0.05);
+    g.gain.exponentialRampToValueAtTime(0.001, t + i * 0.05 + 0.12);
+    o.connect(g); g.connect(masterGain);
+    o.start(t + i * 0.05); o.stop(t + i * 0.05 + 0.13);
+  });
+}
+
+function playHit() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = 'sawtooth';
+  o.frequency.setValueAtTime(160, t);
+  o.frequency.exponentialRampToValueAtTime(35, t + 0.22);
+  g.gain.setValueAtTime(0.2, t);
+  g.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+  o.connect(g); g.connect(masterGain);
+  o.start(t); o.stop(t + 0.26);
+  // Noise-like burst
+  const o2 = audioCtx.createOscillator();
+  const g2 = audioCtx.createGain();
+  o2.type = 'square';
+  o2.frequency.value = 80;
+  g2.gain.setValueAtTime(0.08, t);
+  g2.gain.exponentialRampToValueAtTime(0.001, t + 0.1);
+  o2.connect(g2); g2.connect(masterGain);
+  o2.start(t); o2.stop(t + 0.11);
+}
+
+function playTransfer() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  // Dramatic descending arpeggio
+  const notes = [880, 660, 440, 330, 220, 165];
+  notes.forEach((f, i) => {
+    const o = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    o.type = 'triangle';
+    o.frequency.value = f;
+    const start = t + i * 0.12;
+    g.gain.setValueAtTime(0.16, start);
+    g.gain.exponentialRampToValueAtTime(0.001, start + 0.35);
+    o.connect(g); g.connect(masterGain);
+    o.start(start); o.stop(start + 0.36);
+  });
+  // Sub-bass thump
+  const ob = audioCtx.createOscillator();
+  const gb = audioCtx.createGain();
+  ob.type = 'sine';
+  ob.frequency.value = 55;
+  gb.gain.setValueAtTime(0.2, t + 0.3);
+  gb.gain.exponentialRampToValueAtTime(0.001, t + 0.8);
+  ob.connect(gb); gb.connect(masterGain);
+  ob.start(t + 0.3); ob.stop(t + 0.81);
+}
+
+function playLevelComplete() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const notes = [262, 330, 392, 523, 659, 784, 1047];
+  notes.forEach((f, i) => {
+    const o = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    o.type = 'sine';
+    o.frequency.value = f;
+    const start = t + i * 0.09;
+    g.gain.setValueAtTime(0.12, start);
+    g.gain.exponentialRampToValueAtTime(0.001, start + 0.45);
+    o.connect(g); g.connect(masterGain);
+    o.start(start); o.stop(start + 0.46);
+  });
+}
+
+function playGameOver() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const notes = [440, 370, 311, 220, 147, 110];
+  notes.forEach((f, i) => {
+    const o = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    o.type = 'sawtooth';
+    o.frequency.value = f;
+    const start = t + i * 0.14;
+    g.gain.setValueAtTime(0.08, start);
+    g.gain.exponentialRampToValueAtTime(0.001, start + 0.35);
+    o.connect(g); g.connect(masterGain);
+    o.start(start); o.stop(start + 0.36);
+  });
+}
+
+function playClick() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = 'sine'; o.frequency.value = 700;
+  g.gain.setValueAtTime(0.08, t);
+  g.gain.exponentialRampToValueAtTime(0.001, t + 0.04);
+  o.connect(g); g.connect(masterGain);
+  o.start(t); o.stop(t + 0.05);
+}
+
+// ===========================================================
+// CANVAS RESIZE (DPR-aware)
+// ===========================================================
+let W = 0, H = 0, GROUND_Y = 0;
+
+function resize() {
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * DPR;
+  canvas.height = H * DPR;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  GROUND_Y = H * GROUND_Y_RATIO;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ===========================================================
+// PARTICLE SYSTEM (Object Pool, 800 max)
+// ===========================================================
+const particles = [];
+let activeParticles = 0;
+
+function initParticlePool() {
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    particles.push({
+      active: false, x: 0, y: 0, vx: 0, vy: 0,
+      life: 0, maxLife: 1, size: 2, color: '#fff',
+      alpha: 1, type: 'circle', gravity: 0, shrink: true, drag: 0
+    });
+  }
+}
+
+function spawnParticle(x, y, vx, vy, life, size, color, type, grav, shrink, drag) {
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    const p = particles[i];
+    if (!p.active) {
+      p.active = true; p.x = x; p.y = y; p.vx = vx; p.vy = vy;
+      p.life = life; p.maxLife = life; p.size = size;
+      p.color = color; p.alpha = 1; p.type = type || 'circle';
+      p.gravity = grav || 0; p.shrink = shrink !== false; p.drag = drag || 0;
+      return;
+    }
+  }
+}
+
+function updateParticles(dt) {
+  activeParticles = 0;
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    const p = particles[i];
+    if (!p.active) continue;
+    p.life -= dt;
+    if (p.life <= 0) { p.active = false; continue; }
+    activeParticles++;
+    const damping = 1 - p.drag * dt;
+    p.vx *= damping;
+    p.vy += p.gravity * dt;
+    p.vy *= damping;
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.alpha = p.life / p.maxLife;
+  }
+}
+
+function drawParticles() {
+  for (let i = 0; i < MAX_PARTICLES; i++) {
+    const p = particles[i];
+    if (!p.active) continue;
+    const ratio = p.life / p.maxLife;
+    ctx.globalAlpha = p.alpha;
+    const r = p.shrink ? p.size * ratio : p.size;
+    ctx.fillStyle = p.color;
+    if (p.type === 'circle') {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, Math.max(0.5, r), 0, Math.PI * 2);
+      ctx.fill();
+    } else if (p.type === 'square') {
+      ctx.fillRect(p.x - r / 2, p.y - r / 2, r, r);
+    } else if (p.type === 'diamond') {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(Math.PI / 4);
+      ctx.fillRect(-r / 2, -r / 2, r, r);
+      ctx.restore();
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+
+function burstParticles(x, y, count, color, speed, life, size) {
+  for (let i = 0; i < count; i++) {
+    const a = Math.random() * Math.PI * 2;
+    const sp = speed * (0.3 + Math.random() * 0.7);
+    const types = ['circle', 'diamond', 'square'];
+    spawnParticle(
+      x, y, Math.cos(a) * sp, Math.sin(a) * sp,
+      life * (0.4 + Math.random() * 0.6),
+      size * (0.4 + Math.random() * 0.6),
+      color, types[Math.floor(Math.random() * 3)], 250, true, 1.5
+    );
+  }
+}
+
+function trailParticle(x, y, color) {
+  spawnParticle(
+    x + (Math.random() - 0.5) * 8, y + (Math.random() - 0.5) * 8,
+    -40 + Math.random() * 15, (Math.random() - 0.5) * 30,
+    0.3 + Math.random() * 0.25, 2 + Math.random() * 3,
+    color, 'circle', 0, true, 2.5
+  );
+}
+
+// ===========================================================
+// FLOATING TEXT SYSTEM (score popups)
+// ===========================================================
+const floatingTexts = [];
+
+function addFloatingText(x, y, text, color) {
+  floatingTexts.push({ x, y, text, color, life: 1.2, maxLife: 1.2 });
+}
+
+function updateFloatingTexts(dt) {
+  for (let i = floatingTexts.length - 1; i >= 0; i--) {
+    const ft = floatingTexts[i];
+    ft.life -= dt;
+    ft.y -= 40 * dt;
+    if (ft.life <= 0) floatingTexts.splice(i, 1);
+  }
+}
+
+function drawFloatingTexts() {
+  floatingTexts.forEach(ft => {
+    const ratio = ft.life / ft.maxLife;
+    ctx.globalAlpha = ratio;
+    ctx.font = '700 14px Orbitron';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = ft.color;
+    ctx.fillText(ft.text, ft.x, ft.y);
+  });
+  ctx.globalAlpha = 1;
+}
+
+// ===========================================================
+// DRAW HELPERS
+// ===========================================================
+function drawRoundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+}
+
+function lerpColor(a, b, t) {
+  const ar = parseInt(a.slice(1, 3), 16);
+  const ag = parseInt(a.slice(3, 5), 16);
+  const ab = parseInt(a.slice(5, 7), 16);
+  const br = parseInt(b.slice(1, 3), 16);
+  const bg = parseInt(b.slice(3, 5), 16);
+  const bb = parseInt(b.slice(5, 7), 16);
+  const rr = Math.round(ar + (br - ar) * t);
+  const rg = Math.round(ag + (bg - ag) * t);
+  const rb = Math.round(ab + (bb - ab) * t);
+  return '#' + rr.toString(16).padStart(2, '0') + rg.toString(16).padStart(2, '0') + rb.toString(16).padStart(2, '0');
+}
+
+// ===========================================================
+// SAVE SYSTEM (localStorage)
+// ===========================================================
+let saveData = { highScores: {}, unlocked: [true, false, false, false, false], medals: {} };
+
+function loadSave() {
+  try {
+    const d = localStorage.getItem('photon_save_v2');
+    if (d) saveData = JSON.parse(d);
+  } catch (e) { /* ignore */ }
+}
+
+function writeSave() {
+  try {
+    localStorage.setItem('photon_save_v2', JSON.stringify(saveData));
+  } catch (e) { /* ignore */ }
+}
+
+loadSave();
+
+// ===========================================================
+// GAME STATE VARIABLES
+// ===========================================================
+let gameState = STATE.TITLE;
+let currentBiome = 0;
+let currentPhase = PHASE.SUNLIGHT;
+let phaseTimer = 0;
+let totalTime = 0;
+let score = 0;
+let distance = 0;
+let combo = 0;
+let maxCombo = 0;
+let comboTimer = 0;
+let energy = 100;
+let maxEnergy = 100;
+let gameSpeed = 1;
+let scrollX = 0;
+let shakeTimer = 0;
+let shakeIntensity = 0;
+let transTimer = 0;
+let transPhaseFrom = 0;
+let transPhaseTo = 0;
+let transEnergyFrom = 0;
+let flashAlpha = 0;
+let flashColor = '#fff';
+let levelCompleteTimer = 0;
+let gameOverTimer = 0;
+let titlePulse = 0;
+let hoverBtn = -1;
+
+// ---- Player ----
+const player = {
+  x: 0, y: 0, vy: 0, w: 28, h: 28,
+  grounded: false, jumping: false, holding: false,
+  ducking: false, bob: 0, invincible: 0,
+  morphT: 0, morphFrom: 0
+};
+
+// ---- World Objects ----
+let obstacles = [];
+let collectibles = [];
+let spawnTimer = 0;
+let collectSpawnTimer = 0;
+let bgStars = [];
+
+// ---- Parallax Layers ----
+const parallaxLayers = [
+  { elements: [], speed: 0.12 },
+  { elements: [], speed: 0.4 },
+  { elements: [], speed: 0.75 }
+];
+
+function initBgStars() {
+  bgStars = [];
+  for (let i = 0; i < 150; i++) {
+    bgStars.push({
+      x: Math.random() * W,
+      y: Math.random() * H * 0.75,
+      size: 0.4 + Math.random() * 2,
+      twinkle: Math.random() * Math.PI * 2,
+      speed: 0.3 + Math.random() * 0.6
+    });
+  }
+}
+
+function initParallax() {
+  parallaxLayers.forEach(layer => { layer.elements = []; });
+  // Far: large mountain silhouettes
+  for (let i = 0; i < 10; i++) {
+    parallaxLayers[0].elements.push({
+      x: i * (W / 5) + Math.random() * 120,
+      w: 180 + Math.random() * 220,
+      h: 50 + Math.random() * 100,
+      type: 'mountain'
+    });
+  }
+  // Mid: trees, rocks, biome features
+  for (let i = 0; i < 16; i++) {
+    parallaxLayers[1].elements.push({
+      x: i * (W / 8) + Math.random() * 80,
+      w: 30 + Math.random() * 60,
+      h: 25 + Math.random() * 55,
+      type: Math.random() > 0.5 ? 'tree' : 'rock'
+    });
+  }
+  // Near: ground details
+  for (let i = 0; i < 25; i++) {
+    parallaxLayers[2].elements.push({
+      x: i * (W / 12) + Math.random() * 25,
+      w: 8 + Math.random() * 16,
+      h: 4 + Math.random() * 14,
+      type: 'grass'
+    });
+  }
+}
+
+// ===========================================================
+// RESET / INIT GAME
+// ===========================================================
+function resetGame() {
+  currentPhase = PHASE.SUNLIGHT;
+  phaseTimer = 0;
+  totalTime = 0;
+  score = 0;
+  distance = 0;
+  combo = 0;
+  maxCombo = 0;
+  comboTimer = 0;
+  energy = 100;
+  maxEnergy = 100;
+  gameSpeed = 1;
+  scrollX = 0;
+  shakeTimer = 0;
+  obstacles = [];
+  collectibles = [];
+  floatingTexts.length = 0;
+  spawnTimer = 0;
+  collectSpawnTimer = 0;
+  player.x = W * 0.15;
+  player.y = GROUND_Y - player.h;
+  player.vy = 0;
+  player.grounded = true;
+  player.jumping = false;
+  player.holding = false;
+  player.ducking = false;
+  player.bob = 0;
+  player.invincible = 0;
+  player.morphT = 0;
+  flashAlpha = 0;
+  setAmbientPhase(PHASE.SUNLIGHT);
+  initBgStars();
+  initParallax();
+}
+
+// ===========================================================
+// PHASE-BASED GAMEPLAY PARAMETERS
+// ===========================================================
+function getPhaseSpeed() {
+  return [1.0, 0.85, 1.15, 1.5][currentPhase];
+}
+
+function getPhaseGroundY() {
+  if (currentPhase === PHASE.PREDATOR) return H * 0.85;
+  return GROUND_Y;
+}
+
+// ===========================================================
+// OBSTACLE GENERATION
+// ===========================================================
+function generateObstacle() {
+  const gY = getPhaseGroundY();
+  const sp = BASE_SPEED * getPhaseSpeed() * gameSpeed;
+  let obs;
+
+  if (currentPhase === PHASE.SUNLIGHT) {
+    const isHigh = Math.random() > 0.45;
+    const sz = 22 + Math.random() * 24;
+    obs = {
+      x: W + 60, y: isHigh ? gY - 90 - Math.random() * 160 : gY - sz - Math.random() * 25,
+      w: sz, h: sz, type: 'asteroid', speed: sp, rot: Math.random() * Math.PI * 2
+    };
+  } else if (currentPhase === PHASE.PLANT) {
+    const type = Math.random() > 0.45 ? 'thorn' : 'toxin';
+    const sz = type === 'thorn' ? 14 + Math.random() * 16 : 18 + Math.random() * 14;
+    const yPos = type === 'thorn' ? gY - sz * 1.5 : gY - 35 - Math.random() * 130;
+    obs = {
+      x: W + 60, y: yPos, w: sz,
+      h: type === 'thorn' ? sz * 1.5 : sz,
+      type, speed: sp * 0.9
+    };
+  } else if (currentPhase === PHASE.HERBIVORE) {
+    const type = Math.random() > 0.5 ? 'rock' : 'fence';
+    const w = type === 'rock' ? 28 + Math.random() * 22 : 15;
+    const h = type === 'rock' ? 22 + Math.random() * 18 : 38 + Math.random() * 25;
+    obs = { x: W + 60, y: gY - h, w, h, type, speed: sp };
+  } else {
+    const type = Math.random() > 0.5 ? 'wind' : 'lightning';
+    const w = type === 'wind' ? 55 : 18;
+    const h = type === 'wind' ? 28 : 55 + Math.random() * 45;
+    obs = {
+      x: W + 60, y: gY - h - Math.random() * (H * 0.4),
+      w, h, type, speed: sp * 1.1, timer: 0
+    };
+  }
+  obstacles.push(obs);
+}
+
+// ===========================================================
+// COLLECTIBLE GENERATION
+// ===========================================================
+function generateCollectible() {
+  const gY = getPhaseGroundY();
+  const sp = BASE_SPEED * getPhaseSpeed() * gameSpeed;
+  let col;
+
+  if (currentPhase === PHASE.SUNLIGHT) {
+    col = {
+      x: W + 60, y: gY - 30 - Math.random() * 180,
+      size: 10 + Math.random() * 8, type: 'photon',
+      speed: sp, bob: Math.random() * Math.PI * 2, value: 6
+    };
+  } else if (currentPhase === PHASE.PLANT) {
+    col = {
+      x: W + 60, y: gY - 20 - Math.random() * 130,
+      size: 12, type: 'glucose',
+      speed: sp * 0.9, bob: Math.random() * Math.PI * 2, value: 8
+    };
+  } else if (currentPhase === PHASE.HERBIVORE) {
+    col = {
+      x: W + 60, y: gY - 15 - Math.random() * 90,
+      size: 10, type: 'berry',
+      speed: sp, bob: Math.random() * Math.PI * 2, value: 10
+    };
+  } else {
+    col = {
+      x: W + 60, y: gY - 30 - Math.random() * (H * 0.45),
+      size: 14, type: 'prey',
+      speed: sp * 1.1, bob: Math.random() * Math.PI * 2, value: 12
+    };
+  }
+  collectibles.push(col);
+}
+
+// ===========================================================
+// INPUT SYSTEM
+// ===========================================================
+let keys = {};
+let touchActive = false;
+let touchStartY = 0;
+
+document.addEventListener('keydown', e => {
+  if (e.repeat) return;
+  keys[e.code] = true;
+  if (['Space', 'ArrowUp', 'ArrowDown', 'KeyW', 'KeyS'].includes(e.code)) e.preventDefault();
+  handleInput(e.code, true);
+});
+
+document.addEventListener('keyup', e => {
+  keys[e.code] = false;
+  if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'KeyW') {
+    player.holding = false;
+  }
+  if (e.code === 'ArrowDown' || e.code === 'KeyS') {
+    player.ducking = false;
+  }
+});
+
+canvas.addEventListener('touchstart', e => {
+  e.preventDefault();
+  initAudio();
+  touchActive = true;
+  touchStartY = e.touches[0].clientY;
+  handleInput('Space', true);
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+  e.preventDefault();
+  touchActive = false;
+  player.holding = false;
+  player.ducking = false;
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (touchActive) {
+    const dy = e.touches[0].clientY - touchStartY;
+    if (dy > 35) {
+      player.ducking = true;
+    } else {
+      player.ducking = false;
+    }
+  }
+}, { passive: false });
+
+canvas.addEventListener('mousedown', e => {
+  initAudio();
+  handleInput('Space', true);
+});
+
+canvas.addEventListener('mouseup', () => {
+  player.holding = false;
+});
+
+function handleInput(code, down) {
+  if (!down) return;
+  initAudio();
+
+  if (gameState === STATE.TITLE) {
+    playClick();
+    gameState = STATE.HOW_TO;
+    return;
+  }
+  if (gameState === STATE.HOW_TO) {
+    playClick();
+    gameState = STATE.LEVEL_SELECT;
+    return;
+  }
+  if (gameState === STATE.LEVEL_SELECT) {
+    return; // click handler manages this
+  }
+  if (gameState === STATE.GAME_OVER) {
+    if (gameOverTimer > 1.5) { playClick(); gameState = STATE.LEVEL_SELECT; }
+    return;
+  }
+  if (gameState === STATE.LEVEL_COMPLETE) {
+    if (levelCompleteTimer > 1.5) { playClick(); gameState = STATE.LEVEL_SELECT; }
+    return;
+  }
+  if (gameState === STATE.PAUSED) {
+    if (code === 'Escape' || code === 'KeyP' || code === 'Space') {
+      gameState = STATE.PLAYING;
+    }
+    return;
+  }
+  if (gameState === STATE.PLAYING) {
+    if (code === 'Space' || code === 'ArrowUp' || code === 'KeyW') {
+      if (player.grounded) {
+        player.vy = JUMP_VEL;
+        player.grounded = false;
+        player.jumping = true;
+        player.holding = true;
+        playJump();
+      } else {
+        player.holding = true;
+      }
+    }
+    if (code === 'ArrowDown' || code === 'KeyS') {
+      player.ducking = true;
+    }
+    if (code === 'Escape' || code === 'KeyP') {
+      gameState = STATE.PAUSED;
+    }
+  }
+}
+
+// ---- Level Select Click ----
+canvas.addEventListener('click', e => {
+  if (gameState !== STATE.LEVEL_SELECT) return;
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+
+  const btnW = 130, btnH = 90, gap = 18;
+  const totalBtnW = BIOMES.length * btnW + (BIOMES.length - 1) * gap;
+  const startX = (W - totalBtnW) / 2;
+  const btnY = H * 0.4;
+
+  for (let i = 0; i < BIOMES.length; i++) {
+    const bx = startX + i * (btnW + gap);
+    if (mx >= bx && mx <= bx + btnW && my >= btnY && my <= btnY + btnH) {
+      if (saveData.unlocked[i]) {
+        playClick();
+        currentBiome = i;
+        resetGame();
+        gameState = STATE.PLAYING;
+      }
+      return;
+    }
+  }
+});
+
+canvas.addEventListener('mousemove', e => {
+  if (gameState !== STATE.LEVEL_SELECT) { hoverBtn = -1; return; }
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const btnW = 130, btnH = 90, gap = 18;
+  const totalBtnW = BIOMES.length * btnW + (BIOMES.length - 1) * gap;
+  const startX = (W - totalBtnW) / 2;
+  const btnY = H * 0.4;
+  hoverBtn = -1;
+  for (let i = 0; i < BIOMES.length; i++) {
+    const bx = startX + i * (btnW + gap);
+    if (mx >= bx && mx <= bx + btnW && my >= btnY && my <= btnY + btnH) {
+      hoverBtn = i; break;
+    }
+  }
+});
+
+// ===========================================================
+// UPDATE LOOP
+// ===========================================================
+function update(dt) {
+  titlePulse += dt;
+
+  if (gameState === STATE.TITLE) {
+    for (const s of bgStars) s.twinkle += dt * s.speed * 2.5;
+    return;
+  }
+  if (gameState === STATE.HOW_TO || gameState === STATE.LEVEL_SELECT) {
+    for (const s of bgStars) s.twinkle += dt * s.speed * 2;
+    return;
+  }
+  if (gameState === STATE.PHASE_TRANS) {
+    transTimer -= dt;
+    flashAlpha = Math.max(0, flashAlpha - dt * 0.7);
+    updateParticles(dt);
+    if (transTimer <= 0) {
+      gameState = STATE.PLAYING;
+      currentPhase = transPhaseTo;
+      setAmbientPhase(currentPhase);
+      player.morphT = 1.0;
+      player.morphFrom = transPhaseFrom;
+      // Reset player position for new ground height
+      player.y = getPhaseGroundY() - player.h;
+      player.grounded = true;
+      player.vy = 0;
+    }
+    return;
+  }
+  if (gameState === STATE.LEVEL_COMPLETE) {
+    levelCompleteTimer += dt;
+    flashAlpha = Math.max(0, flashAlpha - dt * 0.4);
+    updateParticles(dt);
+    return;
+  }
+  if (gameState === STATE.GAME_OVER) {
+    gameOverTimer += dt;
+    flashAlpha = Math.max(0, flashAlpha - dt * 0.4);
+    updateParticles(dt);
+    return;
+  }
+  if (gameState !== STATE.PLAYING) return;
+
+  // ---- Phase Timer ----
+  phaseTimer += dt;
+  totalTime += dt;
+
+  // Energy drain (increases with phase)
+  const drainRates = [2.2, 2.8, 3.5, 4.5];
+  energy -= drainRates[currentPhase] * dt;
+
+  // Combo decay
+  if (combo > 0) {
+    comboTimer -= dt;
+    if (comboTimer <= 0) combo = 0;
+  }
+
+  // Speed ramp
+  gameSpeed = 1 + totalTime * 0.007;
+
+  // ---- Phase Transition ----
+  if (phaseTimer >= PHASE_DURATION) {
+    if (currentPhase < PHASE.PREDATOR) {
+      transPhaseFrom = currentPhase;
+      transPhaseTo = currentPhase + 1;
+      transEnergyFrom = energy;
+      energy = Math.max(energy * ENERGY_TRANSFER_RATIO, 3);
+      transTimer = 2.5;
+      flashAlpha = 1.0;
+      flashColor = PHASE_COLORS[transPhaseTo].primary;
+      gameState = STATE.PHASE_TRANS;
+      phaseTimer = 0;
+      playTransfer();
+      burstParticles(player.x, player.y, 50, PHASE_COLORS[transPhaseFrom].primary, 300, 1.5, 6);
+      burstParticles(player.x, player.y, 50, PHASE_COLORS[transPhaseTo].primary, 220, 1.0, 4);
+      obstacles = [];
+      collectibles = [];
+      addFloatingText(W / 2, H * 0.4, 'ENERGY TRANSFER: 10%', '#FF5252');
+      return;
+    } else {
+      // Level complete!
+      gameState = STATE.LEVEL_COMPLETE;
+      levelCompleteTimer = 0;
+      flashAlpha = 0.7;
+      flashColor = '#FFD700';
+      playLevelComplete();
+      const effBonus = Math.floor(energy * 10);
+      const comboBonus = maxCombo * 50;
+      score += effBonus + comboBonus;
+      if (currentBiome < 4) saveData.unlocked[currentBiome + 1] = true;
+      const key = 'biome_' + currentBiome;
+      const medal = score >= 5000 ? 'gold' : score >= 3000 ? 'silver' : 'bronze';
+      if (!saveData.highScores[key] || score > saveData.highScores[key]) {
+        saveData.highScores[key] = score;
+      }
+      saveData.medals[key] = medal;
+      writeSave();
+      burstParticles(W / 2, H / 2, 60, '#FFD700', 350, 2.0, 5);
+      return;
+    }
+  }
+
+  // ---- Energy death check ----
+  if (energy <= 0) {
+    energy = 0;
+    gameState = STATE.GAME_OVER;
+    gameOverTimer = 0;
+    flashAlpha = 0.5;
+    flashColor = '#FF0000';
+    playGameOver();
+    burstParticles(player.x, player.y, 60, '#FF1744', 280, 1.2, 5);
+    return;
+  }
+
+  // ---- Player Physics ----
+  const gY = getPhaseGroundY();
+  player.bob += dt * 4.5;
+
+  if (!player.grounded) {
+    if (player.holding && player.vy < 0) {
+      // Glide: slow rise/fall
+      player.vy += GRAVITY * 0.3 * dt;
+    } else if (player.ducking) {
+      // Fast fall
+      player.vy += (FAST_FALL_ACCEL + GRAVITY) * dt;
+    } else {
+      player.vy += GRAVITY * dt;
+    }
+    player.y += player.vy * dt;
+
+    if (player.y >= gY - player.h) {
+      player.y = gY - player.h;
+      player.vy = 0;
+      player.grounded = true;
+      player.jumping = false;
+      player.ducking = false;
+    }
+  } else {
+    player.y = gY - player.h;
+  }
+
+  // Ceiling clamp
+  if (player.y < 8) { player.y = 8; if (player.vy < 0) player.vy = 0; }
+
+  // Morph animation
+  if (player.morphT > 0) {
+    player.morphT = Math.max(0, player.morphT - dt * 2.5);
+  }
+
+  // Invincibility
+  if (player.invincible > 0) player.invincible -= dt;
+
+  // Scroll
+  const scrollSpeed = BASE_SPEED * getPhaseSpeed() * gameSpeed;
+  scrollX += scrollSpeed * dt;
+  distance += scrollSpeed * dt * 0.01;
+
+  // Trail particles
+  if (Math.random() < 0.65) {
+    trailParticle(player.x - 12, player.y + player.h / 2, PHASE_COLORS[currentPhase].primary);
+  }
+
+  // ---- Spawn Obstacles ----
+  spawnTimer -= dt;
+  if (spawnTimer <= 0) {
+    generateObstacle();
+    const interval = Math.max(0.55, 1.7 - totalTime * 0.008);
+    spawnTimer = interval + Math.random() * 0.7;
+  }
+
+  // ---- Spawn Collectibles ----
+  collectSpawnTimer -= dt;
+  if (collectSpawnTimer <= 0) {
+    generateCollectible();
+    collectSpawnTimer = 0.7 + Math.random() * 1.0;
+  }
+
+  // ---- Update Obstacles ----
+  for (let i = obstacles.length - 1; i >= 0; i--) {
+    const o = obstacles[i];
+    o.x -= o.speed * dt;
+    if (o.timer !== undefined) o.timer += dt;
+    if (o.rot !== undefined) o.rot += dt * 1.5;
+    if (o.x < -120) { obstacles.splice(i, 1); continue; }
+
+    // AABB collision
+    if (player.invincible <= 0) {
+      const px = player.x - player.w / 2;
+      const py = player.y;
+      const pw = player.w;
+      const ph = player.ducking ? player.h * 0.55 : player.h;
+      if (px < o.x + o.w && px + pw > o.x && py < o.y + o.h && py + ph > o.y) {
+        energy -= 15;
+        combo = 0;
+        shakeTimer = 0.35;
+        shakeIntensity = 10;
+        player.invincible = 1.2;
+        playHit();
+        burstParticles(o.x + o.w / 2, o.y + o.h / 2, 18, '#FF5252', 200, 0.7, 4);
+        addFloatingText(o.x, o.y - 10, '-15', '#FF5252');
+        obstacles.splice(i, 1);
+      }
+    }
+  }
+
+  // ---- Update Collectibles ----
+  for (let i = collectibles.length - 1; i >= 0; i--) {
+    const c = collectibles[i];
+    c.x -= c.speed * dt;
+    c.bob += dt * 3.5;
+    if (c.x < -60) {
+      collectibles.splice(i, 1);
+      if (combo > 0) combo = Math.max(0, combo - 1);
+      continue;
+    }
+
+    // Proximity collection
+    const dx = player.x - c.x;
+    const dy = (player.y + player.h / 2) - (c.y + Math.sin(c.bob) * 8);
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < c.size + player.w * 0.65) {
+      energy = Math.min(maxEnergy, energy + c.value);
+      const comboMult = 1 + combo * 0.25;
+      const points = Math.floor(c.value * 10 * comboMult);
+      score += points;
+      combo++;
+      comboTimer = 3.5;
+      if (combo > maxCombo) maxCombo = combo;
+      playCollect();
+      burstParticles(c.x, c.y, 10, PHASE_COLORS[currentPhase].glow, 150, 0.5, 3);
+      addFloatingText(c.x, c.y - 15, '+' + points, PHASE_COLORS[currentPhase].glow);
+      collectibles.splice(i, 1);
+    }
+  }
+
+  // ---- Screen shake decay ----
+  if (shakeTimer > 0) shakeTimer -= dt;
+
+  // ---- Biome-specific ambient particles ----
+  const ambientRate = 0.12;
+  if (Math.random() < ambientRate) {
+    if (currentPhase === PHASE.SUNLIGHT) {
+      // Drifting star dust
+      spawnParticle(
+        Math.random() * W, Math.random() * H * 0.6,
+        -15, 8, 2.5, 1.5, '#FFD700', 'circle', 0, false, 0
+      );
+    } else if (currentPhase === PHASE.PLANT) {
+      // Floating spores
+      spawnParticle(
+        Math.random() * W, H * 0.25 + Math.random() * H * 0.4,
+        -8 + Math.random() * 5, -3, 3.5, 2, '#69F0AE', 'circle', 0, false, 0
+      );
+    } else if (currentPhase === PHASE.HERBIVORE) {
+      // Dust/leaves
+      spawnParticle(
+        W + 10, GROUND_Y - 5 - Math.random() * 25,
+        -120 - Math.random() * 60, -8 - Math.random() * 10,
+        1.5, 1.5, '#A5D6A7', 'square', 0, false, 0
+      );
+    } else {
+      // Cloud wisps
+      spawnParticle(
+        Math.random() * W, Math.random() * H * 0.5,
+        -50, 3, 2, 2, '#BBDEFB', 'circle', 0, false, 0
+      );
+    }
+  }
+
+  // Biome-specific effects
+  if (currentBiome === 1 && currentPhase !== PHASE.SUNLIGHT) {
+    // Ocean bubbles
+    if (Math.random() < 0.08) {
+      spawnParticle(
+        Math.random() * W, gY + 5,
+        (Math.random() - 0.5) * 15, -30 - Math.random() * 40,
+        2, 2 + Math.random() * 3, '#80DEEA', 'circle', 0, false, 0.5
+      );
+    }
+  }
+  if (currentBiome === 2 && currentPhase !== PHASE.SUNLIGHT) {
+    // Desert heat shimmer (subtle horizontal drifters)
+    if (Math.random() < 0.06) {
+      spawnParticle(
+        Math.random() * W, gY - 5 - Math.random() * 20,
+        -20, -3, 1.5, 1, '#FFCC80', 'diamond', 0, false, 0
+      );
+    }
+  }
+  if (currentBiome === 4 && currentPhase !== PHASE.SUNLIGHT) {
+    // Arctic snow
+    if (Math.random() < 0.15) {
+      spawnParticle(
+        Math.random() * W, -5,
+        -20 + Math.random() * 10, 40 + Math.random() * 30,
+        4, 1.5 + Math.random() * 2, '#E1F5FE', 'circle', 0, false, 0.3
+      );
+    }
+  }
+  if (currentBiome === 3 && currentPhase !== PHASE.SUNLIGHT) {
+    // Rainforest mist
+    if (Math.random() < 0.07) {
+      spawnParticle(
+        Math.random() * W, gY - 10 - Math.random() * 30,
+        -10, -2, 3, 3 + Math.random() * 3, '#A5D6A7', 'circle', 0, false, 0
+      );
+    }
+  }
+
+  // ---- Update stars ----
+  for (const s of bgStars) {
+    s.twinkle += dt * s.speed * 2.5;
+    s.x -= scrollSpeed * 0.02 * dt;
+    if (s.x < -5) s.x = W + 5;
+  }
+
+  // ---- Update systems ----
+  updateParticles(dt);
+  updateFloatingTexts(dt);
+}
+
+// ===========================================================
+// DRAW FUNCTIONS
+// ===========================================================
+function draw() {
+  ctx.save();
+
+  // Screen shake
+  if (shakeTimer > 0) {
+    const mag = shakeIntensity * (shakeTimer / 0.35);
+    ctx.translate(
+      (Math.random() - 0.5) * mag,
+      (Math.random() - 0.5) * mag
+    );
+  }
+
+  // Route to correct screen draw
+  if (gameState === STATE.TITLE) { drawTitle(); ctx.restore(); return; }
+  if (gameState === STATE.HOW_TO) { drawHowTo(); ctx.restore(); return; }
+  if (gameState === STATE.LEVEL_SELECT) { drawLevelSelect(); ctx.restore(); return; }
+
+  // ---- In-Game Rendering ----
+  drawBackground();
+  drawParallaxLayers();
+  drawGround();
+  drawCollectibles();
+  drawObstacles();
+  drawPlayer();
+  drawParticles();
+  drawFloatingTexts();
+  drawHUD();
+
+  // Overlays
+  if (gameState === STATE.PHASE_TRANS) drawPhaseTransition();
+  if (gameState === STATE.LEVEL_COMPLETE) drawLevelCompleteScreen();
+  if (gameState === STATE.GAME_OVER) drawGameOverScreen();
+  if (gameState === STATE.PAUSED) drawPauseScreen();
+
+  // Flash overlay
+  if (flashAlpha > 0) {
+    ctx.globalAlpha = flashAlpha * 0.35;
+    ctx.fillStyle = flashColor;
+    ctx.fillRect(0, 0, W, H);
+    ctx.globalAlpha = 1;
+  }
+
+  ctx.restore();
+}
+
+// ---- TITLE SCREEN ----
+function drawTitle() {
+  // Deep space gradient
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#050010');
+  grad.addColorStop(0.5, '#1A0A3E');
+  grad.addColorStop(1, '#0D0020');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Twinkling stars
+  for (const s of bgStars) {
+    const alpha = 0.2 + Math.sin(s.twinkle) * 0.5;
+    ctx.globalAlpha = Math.max(0, alpha);
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  const cx = W / 2;
+  const cy = H * 0.38;
+  const pulse = Math.sin(titlePulse * 2) * 0.25 + 0.75;
+
+  // Rotating light rays
+  const rayCount = 16;
+  for (let i = 0; i < rayCount; i++) {
+    const angle = (i / rayCount) * Math.PI * 2 + titlePulse * 0.25;
+    const len = 180 + Math.sin(titlePulse * 2.5 + i * 0.7) * 60;
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(angle);
+    const rayGrad = ctx.createLinearGradient(0, 0, len, 0);
+    rayGrad.addColorStop(0, `rgba(255, 215, 0, ${0.25 * pulse})`);
+    rayGrad.addColorStop(1, 'rgba(255, 215, 0, 0)');
+    ctx.fillStyle = rayGrad;
+    ctx.beginPath();
+    ctx.moveTo(0, -3);
+    ctx.lineTo(len, -0.5);
+    ctx.lineTo(len, 0.5);
+    ctx.lineTo(0, 3);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
+  }
+
+  // Glowing center orb
+  const orbR = 55;
+  const orbGrad = ctx.createRadialGradient(cx, cy, 0, cx, cy, orbR);
+  orbGrad.addColorStop(0, `rgba(255, 245, 157, ${0.9 * pulse})`);
+  orbGrad.addColorStop(0.4, `rgba(255, 215, 0, ${0.4 * pulse})`);
+  orbGrad.addColorStop(1, 'rgba(255, 215, 0, 0)');
+  ctx.fillStyle = orbGrad;
+  ctx.beginPath();
+  ctx.arc(cx, cy, orbR, 0, Math.PI * 2);
+  ctx.fill();
+
+  // "PHOTON" title
+  ctx.textAlign = 'center';
+  ctx.font = '900 68px Orbitron';
+  ctx.fillStyle = '#FFD700';
+  ctx.shadowColor = '#FFD700';
+  ctx.shadowBlur = 25 * pulse;
+  ctx.fillText('PHOTON', cx, cy + 12);
+  ctx.shadowBlur = 0;
+
+  // Subtitle
+  ctx.font = '500 15px Inter';
+  ctx.fillStyle = '#B0BEC5';
+  ctx.fillText('Energy Transfer Through Food Chains', cx, cy + 48);
+
+  // NGSS badge
+  ctx.font = '400 11px Inter';
+  ctx.fillStyle = '#78909C';
+  ctx.fillText('NGSS 5-PS3-1', cx, cy + 68);
+
+  // Pulsing prompt
+  ctx.globalAlpha = Math.sin(titlePulse * 3) * 0.3 + 0.7;
+  ctx.font = '600 20px Orbitron';
+  ctx.fillStyle = '#FFD700';
+  ctx.fillText('TAP TO START', cx, H * 0.78);
+  ctx.globalAlpha = 1;
+
+  // Footer
+  ctx.font = '400 10px Inter';
+  ctx.fillStyle = '#455A64';
+  ctx.fillText('CAST Science Resources', cx, H - 16);
+}
+
+// ---- HOW TO PLAY ----
+function drawHowTo() {
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#050010');
+  grad.addColorStop(1, '#1A0A3E');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.textAlign = 'center';
+  ctx.font = '700 32px Orbitron';
+  ctx.fillStyle = '#FFD700';
+  ctx.fillText('HOW TO PLAY', W / 2, H * 0.1);
+
+  // Control instructions
+  const items = [
+    { key: 'SPACE / TAP', desc: 'Jump (hold for glide)', icon: '\u2191' },
+    { key: 'DOWN / SWIPE', desc: 'Fast fall / Duck under obstacles', icon: '\u2193' },
+    { key: 'COLLECT ORBS', desc: 'Refill energy to keep going', icon: '\u2726' },
+    { key: 'DODGE HAZARDS', desc: 'Obstacles drain your energy', icon: '\u26A0' }
+  ];
+
+  const startY = H * 0.19;
+  const rowH = H * 0.1;
+
+  items.forEach((item, i) => {
+    const y = startY + i * rowH;
+    // Icon circle
+    ctx.fillStyle = 'rgba(255, 215, 0, 0.12)';
+    ctx.beginPath();
+    ctx.arc(W * 0.22, y + 8, 20, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = '#FFD700';
+    ctx.font = '700 16px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText(item.icon, W * 0.22, y + 14);
+
+    ctx.textAlign = 'left';
+    ctx.font = '600 14px Inter';
+    ctx.fillStyle = '#FFEB3B';
+    ctx.fillText(item.key, W * 0.3, y + 4);
+    ctx.font = '400 12px Inter';
+    ctx.fillStyle = '#B0BEC5';
+    ctx.fillText(item.desc, W * 0.3, y + 22);
+  });
+
+  // 10% Rule visual
+  const ruleY = startY + items.length * rowH + 15;
+  ctx.textAlign = 'center';
+  ctx.font = '600 13px Orbitron';
+  ctx.fillStyle = '#FF5252';
+  ctx.fillText('THE 10% ENERGY RULE', W / 2, ruleY);
+
+  ctx.font = '400 12px Inter';
+  ctx.fillStyle = '#90A4AE';
+  ctx.fillText('Only 10% of energy transfers between trophic levels!', W / 2, ruleY + 20);
+
+  // Phase chain
+  const phases = [
+    { name: 'SUN', color: '#FFD700' },
+    { name: 'PLANT', color: '#00E676' },
+    { name: 'HERBIVORE', color: '#FFEB3B' },
+    { name: 'PREDATOR', color: '#FF1744' }
+  ];
+
+  const chainY = ruleY + 52;
+  const chainW = Math.min(W * 0.55, 460);
+  const chainStart = (W - chainW) / 2;
+  const step = chainW / 3;
+
+  phases.forEach((p, i) => {
+    const fx = chainStart + i * step;
+    // Circle
+    ctx.beginPath();
+    ctx.arc(fx, chainY, 16, 0, Math.PI * 2);
+    ctx.fillStyle = p.color;
+    ctx.fill();
+    // Label
+    ctx.font = '700 8px Inter';
+    ctx.fillStyle = '#000';
+    ctx.fillText(p.name, fx, chainY + 3);
+    // Arrow + 10%
+    if (i < 3) {
+      ctx.fillStyle = '#78909C';
+      ctx.font = '700 15px Inter';
+      ctx.fillText('\u279C', fx + step / 2, chainY + 4);
+      ctx.font = '700 9px Inter';
+      ctx.fillStyle = '#FF5252';
+      ctx.fillText('10%', fx + step / 2, chainY + 18);
+    }
+  });
+
+  // Science note
+  const noteY = chainY + 40;
+  ctx.font = '400 11px Inter';
+  ctx.fillStyle = '#78909C';
+  ctx.fillText('Complete all 4 phases to finish a level. Collect energy to survive each transfer!', W / 2, noteY);
+
+  // Tap prompt
+  ctx.globalAlpha = Math.sin(titlePulse * 3) * 0.3 + 0.7;
+  ctx.font = '500 15px Inter';
+  ctx.fillStyle = '#FFD700';
+  ctx.fillText('TAP TO CONTINUE', W / 2, H * 0.92);
+  ctx.globalAlpha = 1;
+}
+
+// ---- LEVEL SELECT ----
+function drawLevelSelect() {
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#050010');
+  grad.addColorStop(1, '#1A0A3E');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Stars
+  for (const s of bgStars) {
+    ctx.globalAlpha = Math.max(0, 0.15 + Math.sin(s.twinkle + titlePulse) * 0.3);
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.size * 0.6, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  ctx.textAlign = 'center';
+  ctx.font = '700 30px Orbitron';
+  ctx.fillStyle = '#FFD700';
+  ctx.fillText('SELECT BIOME', W / 2, H * 0.12);
+
+  ctx.font = '400 13px Inter';
+  ctx.fillStyle = '#78909C';
+  ctx.fillText('Each biome has a unique food chain to explore', W / 2, H * 0.19);
+
+  const btnW = 130, btnH = 90, gap = 18;
+  const totalBtnW = BIOMES.length * btnW + (BIOMES.length - 1) * gap;
+  const startX = (W - totalBtnW) / 2;
+  const btnY = H * 0.4;
+
+  const icons = ['\u{1F33F}', '\u{1F30A}', '\u{1F3DC}', '\u{1F332}', '\u2744\uFE0F'];
+
+  BIOMES.forEach((b, i) => {
+    const bx = startX + i * (btnW + gap);
+    const unlocked = saveData.unlocked[i];
+    const isHover = hoverBtn === i && unlocked;
+
+    ctx.save();
+    if (isHover) {
+      const sc = 1.05;
+      ctx.translate(bx + btnW / 2, btnY + btnH / 2);
+      ctx.scale(sc, sc);
+      ctx.translate(-(bx + btnW / 2), -(btnY + btnH / 2));
+    }
+
+    // Background
+    drawRoundRect(bx, btnY, btnW, btnH, 12);
+    if (unlocked) {
+      const bg = ctx.createLinearGradient(bx, btnY, bx, btnY + btnH);
+      bg.addColorStop(0, 'rgba(255, 215, 0, 0.12)');
+      bg.addColorStop(1, 'rgba(255, 215, 0, 0.03)');
+      ctx.fillStyle = bg;
+      ctx.fill();
+      ctx.strokeStyle = isHover ? '#FFD700' : 'rgba(255, 215, 0, 0.25)';
+      ctx.lineWidth = isHover ? 2 : 1;
+      ctx.stroke();
+    } else {
+      ctx.fillStyle = 'rgba(80, 80, 80, 0.08)';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(80, 80, 80, 0.15)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+
+    // Icon
+    ctx.font = '26px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(unlocked ? icons[i] : '\u{1F512}', bx + btnW / 2, btnY + 32);
+
+    // Name
+    ctx.font = unlocked ? '600 12px Inter' : '400 12px Inter';
+    ctx.fillStyle = unlocked ? '#FFD700' : '#555';
+    ctx.fillText(b.name, bx + btnW / 2, btnY + 52);
+
+    // Food chain preview
+    if (unlocked) {
+      ctx.font = '400 9px Inter';
+      ctx.fillStyle = '#90A4AE';
+      ctx.fillText(b.phases[1] + ' \u2192 ' + b.phases[2] + ' \u2192 ' + b.phases[3], bx + btnW / 2, btnY + 66);
+    }
+
+    // Medal
+    const mKey = 'biome_' + i;
+    if (saveData.medals[mKey]) {
+      const medal = saveData.medals[mKey];
+      const mColors = { bronze: '#CD7F32', silver: '#C0C0C0', gold: '#FFD700' };
+      ctx.font = '700 9px Inter';
+      ctx.fillStyle = mColors[medal];
+      ctx.fillText(medal.toUpperCase(), bx + btnW / 2, btnY + 82);
+    }
+
+    // High score
+    if (saveData.highScores[mKey]) {
+      ctx.font = '400 8px Inter';
+      ctx.fillStyle = '#546E7A';
+      ctx.fillText('HI: ' + saveData.highScores[mKey].toLocaleString(), bx + btnW / 2, btnY + btnH - 2);
+    }
+
+    ctx.restore();
+  });
+
+  // Bottom instruction
+  ctx.font = '400 13px Inter';
+  ctx.fillStyle = '#546E7A';
+  ctx.textAlign = 'center';
+  ctx.fillText('Click a biome to begin', W / 2, H * 0.85);
+}
+
+// ---- BACKGROUND ----
+function drawBackground() {
+  const biome = BIOMES[currentBiome];
+  const colors = biome.colors[currentPhase];
+
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, colors[0]);
+  grad.addColorStop(1, colors[1]);
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Stars in sunlight phase
+  if (currentPhase === PHASE.SUNLIGHT) {
+    for (const s of bgStars) {
+      ctx.globalAlpha = Math.max(0.05, 0.3 + Math.sin(s.twinkle) * 0.4);
+      ctx.fillStyle = '#fff';
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+
+    // Sun glow (top-right)
+    const sunGrad = ctx.createRadialGradient(W * 0.85, H * 0.08, 0, W * 0.85, H * 0.08, 160);
+    sunGrad.addColorStop(0, 'rgba(255, 215, 0, 0.35)');
+    sunGrad.addColorStop(0.4, 'rgba(255, 165, 0, 0.12)');
+    sunGrad.addColorStop(1, 'rgba(255, 165, 0, 0)');
+    ctx.fillStyle = sunGrad;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  // Plant phase: chloroplast glows
+  if (currentPhase === PHASE.PLANT) {
+    for (let i = 0; i < 6; i++) {
+      const cx2 = ((scrollX * 0.08 + i * 220) % (W + 250)) - 125;
+      const cy2 = H * 0.28 + Math.sin(totalTime * 0.8 + i * 1.3) * 55;
+      const radius = 35 + Math.sin(totalTime + i) * 10;
+      const cg = ctx.createRadialGradient(cx2, cy2, 0, cx2, cy2, radius);
+      cg.addColorStop(0, 'rgba(105, 240, 174, 0.12)');
+      cg.addColorStop(1, 'rgba(105, 240, 174, 0)');
+      ctx.fillStyle = cg;
+      ctx.beginPath();
+      ctx.arc(cx2, cy2, radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  // Desert shimmer
+  if (currentBiome === 2 && currentPhase !== PHASE.SUNLIGHT) {
+    const gY = getPhaseGroundY();
+    ctx.globalAlpha = 0.06 + Math.sin(totalTime * 2) * 0.03;
+    const shimGrad = ctx.createLinearGradient(0, gY - 40, 0, gY);
+    shimGrad.addColorStop(0, 'rgba(255, 200, 100, 0)');
+    shimGrad.addColorStop(0.5, 'rgba(255, 200, 100, 0.3)');
+    shimGrad.addColorStop(1, 'rgba(255, 200, 100, 0)');
+    ctx.fillStyle = shimGrad;
+    ctx.fillRect(0, gY - 40, W, 40);
+    ctx.globalAlpha = 1;
+  }
+
+  // Ocean underwater glow
+  if (currentBiome === 1 && currentPhase !== PHASE.SUNLIGHT) {
+    const gY = getPhaseGroundY();
+    ctx.globalAlpha = 0.08;
+    const waterGrad = ctx.createRadialGradient(W / 2, H * 0.3, 0, W / 2, H * 0.3, H * 0.4);
+    waterGrad.addColorStop(0, 'rgba(0, 188, 212, 0.3)');
+    waterGrad.addColorStop(1, 'rgba(0, 188, 212, 0)');
+    ctx.fillStyle = waterGrad;
+    ctx.fillRect(0, 0, W, gY);
+    ctx.globalAlpha = 1;
+  }
+
+  // Arctic aurora shimmer
+  if (currentBiome === 4 && currentPhase !== PHASE.SUNLIGHT) {
+    const auroraY = H * 0.15;
+    for (let i = 0; i < 3; i++) {
+      const ax = ((scrollX * 0.03 + i * 300) % (W + 400)) - 200;
+      ctx.globalAlpha = 0.04 + Math.sin(totalTime * 0.5 + i) * 0.02;
+      const ag = ctx.createRadialGradient(ax, auroraY, 0, ax, auroraY, 100);
+      ag.addColorStop(0, 'rgba(100, 255, 218, 0.2)');
+      ag.addColorStop(1, 'rgba(100, 255, 218, 0)');
+      ctx.fillStyle = ag;
+      ctx.beginPath();
+      ctx.ellipse(ax, auroraY, 120, 40, 0, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+}
+
+// ---- PARALLAX LAYERS ----
+function drawParallaxLayers() {
+  const gY = getPhaseGroundY();
+  const biome = BIOMES[currentBiome];
+  const groundCol = biome.ground[currentPhase];
+
+  // Far layer: mountains
+  const farCol = lerpColor(groundCol, '#000000', 0.55);
+  ctx.fillStyle = farCol;
+  parallaxLayers[0].elements.forEach(el => {
+    const x = ((el.x - scrollX * parallaxLayers[0].speed) % (W + 500)) - 250;
+    ctx.beginPath();
+    ctx.moveTo(x - el.w / 2, gY);
+    ctx.quadraticCurveTo(x - el.w * 0.15, gY - el.h * 0.6, x, gY - el.h);
+    ctx.quadraticCurveTo(x + el.w * 0.15, gY - el.h * 0.7, x + el.w / 2, gY);
+    ctx.fill();
+  });
+
+  // Mid layer: trees/rocks
+  const midCol = lerpColor(groundCol, '#000000', 0.3);
+  ctx.fillStyle = midCol;
+  parallaxLayers[1].elements.forEach(el => {
+    const x = ((el.x - scrollX * parallaxLayers[1].speed) % (W + 350)) - 120;
+    if (el.type === 'tree') {
+      // Triangular tree
+      ctx.beginPath();
+      ctx.moveTo(x, gY - el.h);
+      ctx.lineTo(x - el.w / 2, gY);
+      ctx.lineTo(x + el.w / 2, gY);
+      ctx.closePath();
+      ctx.fill();
+      // Trunk
+      ctx.fillRect(x - 3, gY - 5, 6, 5);
+    } else {
+      // Rounded rock
+      ctx.beginPath();
+      ctx.ellipse(x, gY - el.h * 0.3, el.w / 2, el.h / 2, 0, Math.PI, 0);
+      ctx.fill();
+    }
+  });
+
+  // Near layer: small ground features
+  if (currentPhase !== PHASE.SUNLIGHT) {
+    const nearCol = lerpColor(groundCol, '#ffffff', 0.1);
+    ctx.fillStyle = nearCol;
+    parallaxLayers[2].elements.forEach(el => {
+      const x = ((el.x - scrollX * parallaxLayers[2].speed) % (W + 120));
+      ctx.fillRect(x, gY - el.h, 2, el.h);
+    });
+  }
+}
+
+// ---- GROUND ----
+function drawGround() {
+  const gY = getPhaseGroundY();
+  const biome = BIOMES[currentBiome];
+  const groundCol = biome.ground[currentPhase];
+
+  // Ground fill
+  ctx.fillStyle = groundCol;
+  ctx.fillRect(0, gY, W, H - gY);
+
+  // Top edge highlight
+  ctx.strokeStyle = lerpColor(groundCol, '#ffffff', 0.25);
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(0, gY);
+  ctx.lineTo(W, gY);
+  ctx.stroke();
+
+  // Ground texture dashes
+  ctx.strokeStyle = lerpColor(groundCol, '#ffffff', 0.08);
+  ctx.lineWidth = 1;
+  const spacing = 45;
+  for (let i = 0; i < W / spacing + 2; i++) {
+    const dx = ((i * spacing - scrollX * 0.75) % (W + spacing * 2)) - spacing;
+    ctx.beginPath();
+    ctx.moveTo(dx, gY + 10);
+    ctx.lineTo(dx + 18, gY + 10);
+    ctx.stroke();
+  }
+
+  // Second row of dashes
+  ctx.strokeStyle = lerpColor(groundCol, '#ffffff', 0.04);
+  for (let i = 0; i < W / spacing + 2; i++) {
+    const dx = ((i * spacing + 20 - scrollX * 0.6) % (W + spacing * 2)) - spacing;
+    ctx.beginPath();
+    ctx.moveTo(dx, gY + 22);
+    ctx.lineTo(dx + 12, gY + 22);
+    ctx.stroke();
+  }
+}
+
+// ---- PLAYER ----
+function drawPlayer() {
+  const px = player.x;
+  const bobOffset = Math.sin(player.bob) * (player.grounded ? 3 : 0);
+  const py = player.y + bobOffset;
+  const pc = PHASE_COLORS[currentPhase];
+
+  ctx.save();
+  ctx.translate(px, py + player.h / 2);
+
+  // Morph transition ring
+  if (player.morphT > 0) {
+    const mpc = PHASE_COLORS[player.morphFrom];
+    ctx.globalAlpha = player.morphT * 0.4;
+    ctx.beginPath();
+    ctx.arc(0, 0, player.w * (1 + player.morphT * 0.8), 0, Math.PI * 2);
+    ctx.fillStyle = mpc.glow;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
+  // Invincibility blink
+  if (player.invincible > 0 && Math.sin(player.invincible * 22) > 0) {
+    ctx.globalAlpha = 0.35;
+  }
+
+  // Outer glow
+  const glowGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, player.w * 1.6);
+  glowGrad.addColorStop(0, pc.glow + '33');
+  glowGrad.addColorStop(1, pc.glow + '00');
+  ctx.fillStyle = glowGrad;
+  ctx.beginPath();
+  ctx.arc(0, 0, player.w * 1.6, 0, Math.PI * 2);
+  ctx.fill();
+
+  // ---- Phase-specific character ----
+  if (currentPhase === PHASE.SUNLIGHT) {
+    // Photon orb with corona
+    const pGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, player.w * 0.55);
+    pGrad.addColorStop(0, '#FFFFFF');
+    pGrad.addColorStop(0.35, pc.primary);
+    pGrad.addColorStop(1, pc.secondary);
+    ctx.fillStyle = pGrad;
+    ctx.beginPath();
+    ctx.arc(0, 0, player.w * 0.55, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Radiating spikes
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2 + totalTime * 3;
+      const len = 7 + Math.sin(totalTime * 5 + i * 1.2) * 4;
+      ctx.strokeStyle = pc.primary;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(a) * player.w * 0.48, Math.sin(a) * player.w * 0.48);
+      ctx.lineTo(Math.cos(a) * (player.w * 0.48 + len), Math.sin(a) * (player.w * 0.48 + len));
+      ctx.stroke();
+    }
+  } else if (currentPhase === PHASE.PLANT) {
+    // Leaf shape
+    ctx.fillStyle = pc.primary;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, player.w * 0.6, player.h * 0.38, 0.18, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = '#004D40';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Midrib vein
+    ctx.strokeStyle = '#00C853';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-player.w * 0.45, 0);
+    ctx.lineTo(player.w * 0.45, 0);
+    ctx.stroke();
+
+    // Side veins
+    for (let i = -2; i <= 2; i++) {
+      if (i === 0) continue;
+      const vx = i * player.w * 0.15;
+      ctx.beginPath();
+      ctx.moveTo(vx, 0);
+      ctx.lineTo(vx + 6, i > 0 ? -8 : 8);
+      ctx.stroke();
+    }
+
+    // Center glow
+    const lgGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, player.w * 0.25);
+    lgGrad.addColorStop(0, 'rgba(255,255,255,0.35)');
+    lgGrad.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = lgGrad;
+    ctx.beginPath();
+    ctx.arc(0, 0, player.w * 0.25, 0, Math.PI * 2);
+    ctx.fill();
+  } else if (currentPhase === PHASE.HERBIVORE) {
+    // Caterpillar with animated body segments
+    const segments = 5;
+    for (let i = 0; i < segments; i++) {
+      const sx = -14 + i * 8;
+      const sy = Math.sin(totalTime * 7 + i * 0.9) * 2.5;
+      const sz = i === segments - 1 ? 9 : (i === 0 ? 7 : 8);
+      const segColor = lerpColor(pc.secondary, pc.primary, i / (segments - 1));
+      ctx.fillStyle = segColor;
+      ctx.beginPath();
+      ctx.arc(sx, sy, sz, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Head details
+    const hx = -14 + (segments - 1) * 8;
+    // Eyes
+    ctx.fillStyle = '#000';
+    ctx.beginPath();
+    ctx.arc(hx + 3, -4, 2.5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(hx + 3.5, -4.5, 1, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Antennae
+    ctx.strokeStyle = pc.secondary;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(hx + 2, -7);
+    ctx.quadraticCurveTo(hx + 8, -18, hx + 12, -14);
+    ctx.moveTo(hx - 3, -7);
+    ctx.quadraticCurveTo(hx - 6, -19, hx - 2, -16);
+    ctx.stroke();
+
+    // Tiny feet
+    ctx.fillStyle = pc.secondary;
+    for (let i = 1; i < segments - 1; i++) {
+      const fx = -14 + i * 8;
+      const fy = Math.sin(totalTime * 7 + i * 0.9) * 2.5;
+      ctx.beginPath();
+      ctx.arc(fx - 3, fy + 7, 1.5, 0, Math.PI * 2);
+      ctx.arc(fx + 3, fy + 7, 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  } else {
+    // Hawk / Bird of prey
+    ctx.fillStyle = pc.primary;
+    // Body
+    ctx.beginPath();
+    ctx.ellipse(0, 2, 16, 9, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Wings (flapping animation)
+    const wingFlap = Math.sin(totalTime * 9) * 0.45;
+    ctx.save();
+    // Upper wing
+    ctx.fillStyle = lerpColor(pc.primary, '#000000', 0.15);
+    ctx.beginPath();
+    ctx.moveTo(-4, 0);
+    ctx.quadraticCurveTo(-18, -12 - wingFlap * 20, -28, -6 - wingFlap * 25);
+    ctx.lineTo(-10, -1);
+    ctx.closePath();
+    ctx.fill();
+    // Lower wing
+    ctx.beginPath();
+    ctx.moveTo(-4, 4);
+    ctx.quadraticCurveTo(-18, 14 + wingFlap * 15, -28, 10 + wingFlap * 20);
+    ctx.lineTo(-10, 3);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
+
+    // Tail feathers
+    ctx.fillStyle = lerpColor(pc.primary, '#000000', 0.2);
+    ctx.beginPath();
+    ctx.moveTo(-14, 0);
+    ctx.lineTo(-22, -4);
+    ctx.lineTo(-20, 0);
+    ctx.lineTo(-22, 4);
+    ctx.closePath();
+    ctx.fill();
+
+    // Head
+    ctx.fillStyle = lerpColor(pc.primary, '#FFFFFF', 0.25);
+    ctx.beginPath();
+    ctx.arc(13, -1, 6.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Beak
+    ctx.fillStyle = '#FFA000';
+    ctx.beginPath();
+    ctx.moveTo(18, -1);
+    ctx.lineTo(26, 1);
+    ctx.lineTo(18, 3);
+    ctx.closePath();
+    ctx.fill();
+
+    // Eye
+    ctx.fillStyle = '#000';
+    ctx.beginPath();
+    ctx.arc(15, -2, 1.8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(15.3, -2.3, 0.6, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.globalAlpha = 1;
+  ctx.restore();
+}
+
+// ---- OBSTACLES ----
+function drawObstacles() {
+  obstacles.forEach(o => {
+    ctx.save();
+    ctx.translate(o.x + o.w / 2, o.y + o.h / 2);
+
+    if (o.type === 'asteroid') {
+      if (o.rot !== undefined) ctx.rotate(o.rot);
+      // Multi-tone asteroid
+      ctx.fillStyle = '#6D4C41';
+      ctx.beginPath();
+      ctx.arc(0, 0, o.w / 2, 0, Math.PI * 2);
+      ctx.fill();
+      // Craters
+      ctx.fillStyle = '#4E342E';
+      ctx.beginPath();
+      ctx.arc(-o.w * 0.18, -o.h * 0.12, o.w * 0.18, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(o.w * 0.12, o.h * 0.18, o.w * 0.12, 0, Math.PI * 2);
+      ctx.fill();
+      // Highlight
+      ctx.fillStyle = '#8D6E63';
+      ctx.beginPath();
+      ctx.arc(-o.w * 0.08, -o.h * 0.2, o.w * 0.08, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (o.type === 'thorn') {
+      // Sharp thorn
+      ctx.fillStyle = '#5D4037';
+      ctx.beginPath();
+      ctx.moveTo(0, -o.h / 2);
+      ctx.lineTo(o.w / 2 + 2, o.h / 2);
+      ctx.lineTo(-o.w / 2 - 2, o.h / 2);
+      ctx.closePath();
+      ctx.fill();
+      // Inner highlight
+      ctx.fillStyle = '#795548';
+      ctx.beginPath();
+      ctx.moveTo(0, -o.h / 2 + 5);
+      ctx.lineTo(o.w / 3, o.h / 2);
+      ctx.lineTo(-o.w / 3, o.h / 2);
+      ctx.closePath();
+      ctx.fill();
+      // Tip glow
+      ctx.fillStyle = '#D32F2F';
+      ctx.beginPath();
+      ctx.arc(0, -o.h / 2, 2, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (o.type === 'toxin') {
+      const pulseA = 0.6 + Math.sin(totalTime * 5) * 0.3;
+      ctx.globalAlpha = pulseA;
+      ctx.fillStyle = '#7B1FA2';
+      ctx.beginPath();
+      ctx.arc(0, 0, o.w / 2, 0, Math.PI * 2);
+      ctx.fill();
+      // Poison haze
+      const tGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, o.w * 0.8);
+      tGrad.addColorStop(0, 'rgba(206, 147, 216, 0.4)');
+      tGrad.addColorStop(1, 'rgba(123, 31, 162, 0)');
+      ctx.fillStyle = tGrad;
+      ctx.beginPath();
+      ctx.arc(0, 0, o.w * 0.8, 0, Math.PI * 2);
+      ctx.fill();
+      // Skull dot
+      ctx.globalAlpha = pulseA * 0.8;
+      ctx.fillStyle = '#E1BEE7';
+      ctx.beginPath();
+      ctx.arc(-2, -2, 2, 0, Math.PI * 2);
+      ctx.arc(2, -2, 2, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    } else if (o.type === 'rock') {
+      // Polygonal rock
+      ctx.fillStyle = '#757575';
+      ctx.beginPath();
+      ctx.moveTo(-o.w / 2, o.h / 2);
+      ctx.lineTo(-o.w / 2 + 4, -o.h / 2 + 3);
+      ctx.lineTo(o.w / 3, -o.h / 2);
+      ctx.lineTo(o.w / 2, o.h / 4);
+      ctx.lineTo(o.w / 2 - 2, o.h / 2);
+      ctx.closePath();
+      ctx.fill();
+      // Highlight face
+      ctx.fillStyle = '#9E9E9E';
+      ctx.beginPath();
+      ctx.moveTo(-o.w / 4, -o.h / 3);
+      ctx.lineTo(o.w / 3, -o.h / 2);
+      ctx.lineTo(o.w / 3, -o.h / 5);
+      ctx.lineTo(-o.w / 5, 0);
+      ctx.closePath();
+      ctx.fill();
+    } else if (o.type === 'fence') {
+      ctx.fillStyle = '#8D6E63';
+      ctx.fillRect(-o.w / 2, -o.h / 2, o.w, o.h);
+      // Rails
+      ctx.fillStyle = '#6D4C41';
+      ctx.fillRect(-o.w / 2 - 3, -o.h / 2, o.w + 6, 4);
+      ctx.fillRect(-o.w / 2 - 3, o.h / 6, o.w + 6, 4);
+      // Nails
+      ctx.fillStyle = '#455A64';
+      ctx.beginPath();
+      ctx.arc(0, -o.h / 2 + 2, 1.5, 0, Math.PI * 2);
+      ctx.arc(0, o.h / 6 + 2, 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (o.type === 'wind') {
+      const wAlpha = 0.25 + Math.sin(o.timer * 7) * 0.25;
+      ctx.strokeStyle = `rgba(200, 230, 255, ${wAlpha})`;
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      for (let j = 0; j < 4; j++) {
+        const wy = -12 + j * 8;
+        ctx.moveTo(-o.w / 2, wy);
+        ctx.quadraticCurveTo(0, wy + Math.sin(o.timer * 4 + j * 1.2) * 10, o.w / 2, wy);
+      }
+      ctx.stroke();
+    } else if (o.type === 'lightning') {
+      const lAlpha = 0.3 + Math.sin(o.timer * 14) * 0.7;
+      ctx.strokeStyle = '#FFF176';
+      ctx.lineWidth = 3;
+      ctx.globalAlpha = Math.max(0, lAlpha);
+      ctx.beginPath();
+      ctx.moveTo(0, -o.h / 2);
+      ctx.lineTo(6, -o.h / 5);
+      ctx.lineTo(-4, o.h / 10);
+      ctx.lineTo(4, o.h / 3);
+      ctx.lineTo(-2, o.h / 2);
+      ctx.stroke();
+      // Glow
+      ctx.globalAlpha = Math.max(0, lAlpha * 0.3);
+      ctx.lineWidth = 8;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    }
+
+    ctx.restore();
+  });
+}
+
+// ---- COLLECTIBLES ----
+function drawCollectibles() {
+  collectibles.forEach(c => {
+    const bobY = c.y + Math.sin(c.bob) * 8;
+    ctx.save();
+    ctx.translate(c.x, bobY);
+
+    const pc = PHASE_COLORS[currentPhase];
+
+    // Outer glow
+    const gGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, c.size * 2.2);
+    gGrad.addColorStop(0, pc.glow + '33');
+    gGrad.addColorStop(1, pc.glow + '00');
+    ctx.fillStyle = gGrad;
+    ctx.beginPath();
+    ctx.arc(0, 0, c.size * 2.2, 0, Math.PI * 2);
+    ctx.fill();
+
+    if (c.type === 'photon') {
+      // Photon orb
+      const pGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, c.size);
+      pGrad.addColorStop(0, '#FFFFFF');
+      pGrad.addColorStop(0.35, '#FFD700');
+      pGrad.addColorStop(1, '#FFA000');
+      ctx.fillStyle = pGrad;
+      ctx.beginPath();
+      ctx.arc(0, 0, c.size, 0, Math.PI * 2);
+      ctx.fill();
+      // Rotating sparkle rays
+      ctx.strokeStyle = '#FFEB3B';
+      ctx.lineWidth = 1.2;
+      for (let i = 0; i < 4; i++) {
+        const a = (i / 4) * Math.PI * 2 + totalTime * 4;
+        const sLen = c.size * 0.6;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * c.size * 0.7, Math.sin(a) * c.size * 0.7);
+        ctx.lineTo(Math.cos(a) * (c.size * 0.7 + sLen), Math.sin(a) * (c.size * 0.7 + sLen));
+        ctx.stroke();
+      }
+    } else if (c.type === 'glucose') {
+      // Hexagonal molecule
+      ctx.fillStyle = '#69F0AE';
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+        const a = (i / 6) * Math.PI * 2 - Math.PI / 6;
+        const method = i === 0 ? 'moveTo' : 'lineTo';
+        ctx[method](Math.cos(a) * c.size, Math.sin(a) * c.size);
+      }
+      ctx.closePath();
+      ctx.fill();
+      ctx.strokeStyle = '#00E676';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      // Label
+      ctx.fillStyle = '#004D40';
+      ctx.font = '700 8px Inter';
+      ctx.textAlign = 'center';
+      ctx.fillText('G', 0, 3);
+    } else if (c.type === 'berry') {
+      // Berry with highlight
+      ctx.fillStyle = '#E91E63';
+      ctx.beginPath();
+      ctx.arc(0, 0, c.size, 0, Math.PI * 2);
+      ctx.fill();
+      // Highlight
+      ctx.fillStyle = '#F48FB1';
+      ctx.beginPath();
+      ctx.arc(-c.size * 0.25, -c.size * 0.25, c.size * 0.3, 0, Math.PI * 2);
+      ctx.fill();
+      // Stem/leaf
+      ctx.fillStyle = '#4CAF50';
+      ctx.beginPath();
+      ctx.ellipse(0, -c.size * 0.9, 4, 2.5, 0.3, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = '#2E7D32';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, -c.size * 0.7);
+      ctx.lineTo(0, -c.size * 1.2);
+      ctx.stroke();
+    } else if (c.type === 'prey') {
+      // Pulsing red energy orb
+      const pSize = c.size + Math.sin(totalTime * 6) * 2;
+      const prGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, pSize);
+      prGrad.addColorStop(0, '#FFFFFF');
+      prGrad.addColorStop(0.25, '#FF8A80');
+      prGrad.addColorStop(1, '#FF1744');
+      ctx.fillStyle = prGrad;
+      ctx.beginPath();
+      ctx.arc(0, 0, pSize, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    ctx.restore();
+  });
+}
+
+// ---- HUD ----
+function drawHUD() {
+  const pc = PHASE_COLORS[currentPhase];
+  const biome = BIOMES[currentBiome];
+
+  // Top bar
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.45)';
+  drawRoundRect(10, 6, W - 20, 48, 10);
+  ctx.fill();
+
+  // Phase name
+  ctx.font = '600 12px Orbitron';
+  ctx.textAlign = 'left';
+  ctx.fillStyle = pc.primary;
+  const phaseName = biome.phases[currentPhase].toUpperCase();
+  ctx.fillText(phaseName, 22, 26);
+
+  // Phase progression dots
+  const dotsX = 22 + ctx.measureText(phaseName).width + 14;
+  for (let i = 0; i < 4; i++) {
+    ctx.fillStyle = i <= currentPhase ? PHASE_COLORS[i].primary : '#333';
+    ctx.beginPath();
+    ctx.arc(dotsX + i * 13, 23, 3.5, 0, Math.PI * 2);
+    ctx.fill();
+    if (i === currentPhase) {
+      // Active indicator ring
+      ctx.strokeStyle = PHASE_COLORS[i].glow;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(dotsX + i * 13, 23, 5.5, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+  }
+
+  // Energy bar
+  const barW = Math.min(240, W * 0.22);
+  const barH = 15;
+  const barX = W / 2 - barW / 2;
+  const barY = 17;
+
+  // Bar bg
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+  drawRoundRect(barX - 2, barY - 2, barW + 4, barH + 4, 6);
+  ctx.fill();
+
+  // Bar fill
+  const eRatio = Math.max(0, energy / maxEnergy);
+  const fillW = barW * eRatio;
+  if (fillW > 1) {
+    const barGrad = ctx.createLinearGradient(barX, 0, barX + fillW, 0);
+    barGrad.addColorStop(0, pc.primary);
+    barGrad.addColorStop(1, pc.glow);
+    ctx.fillStyle = barGrad;
+    drawRoundRect(barX, barY, fillW, barH, 4);
+    ctx.fill();
+  }
+
+  // Energy text
+  ctx.font = '700 9px Inter';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = eRatio > 0.25 ? '#000' : '#FF5252';
+  ctx.fillText('ENERGY ' + Math.ceil(energy) + '%', W / 2, barY + barH - 3);
+
+  // Low energy warning
+  if (eRatio < 0.2 && Math.sin(totalTime * 8) > 0) {
+    ctx.strokeStyle = '#FF1744';
+    ctx.lineWidth = 2;
+    drawRoundRect(barX - 4, barY - 4, barW + 8, barH + 8, 8);
+    ctx.stroke();
+  }
+
+  // Phase timer bar
+  const timerRatio = phaseTimer / PHASE_DURATION;
+  ctx.fillStyle = 'rgba(255,255,255,0.12)';
+  drawRoundRect(barX, barY + barH + 4, barW, 3, 1.5);
+  ctx.fill();
+  ctx.fillStyle = pc.primary + '66';
+  if (barW * timerRatio > 1) {
+    drawRoundRect(barX, barY + barH + 4, barW * timerRatio, 3, 1.5);
+    ctx.fill();
+  }
+
+  // Score
+  ctx.font = '700 17px Orbitron';
+  ctx.textAlign = 'right';
+  ctx.fillStyle = '#FFD700';
+  ctx.fillText(score.toLocaleString(), W - 22, 28);
+
+  // Combo
+  if (combo > 1) {
+    ctx.font = '700 11px Inter';
+    ctx.fillStyle = pc.glow;
+    ctx.fillText('x' + combo + ' COMBO', W - 22, 44);
+  }
+
+  // Distance
+  ctx.font = '500 12px Inter';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+  ctx.fillText(Math.floor(distance) + 'm', W / 2, H - 10);
+
+  // Biome label
+  ctx.textAlign = 'left';
+  ctx.font = '400 10px Inter';
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+  ctx.fillText(biome.name + ' Biome', 14, H - 10);
+
+  // Controls hint (first 5 seconds)
+  if (totalTime < 5) {
+    ctx.globalAlpha = Math.max(0, 1 - totalTime / 5);
+    ctx.textAlign = 'center';
+    ctx.font = '400 12px Inter';
+    ctx.fillStyle = '#90A4AE';
+    ctx.fillText('SPACE to jump  |  DOWN to duck  |  P to pause', W / 2, H - 28);
+    ctx.globalAlpha = 1;
+  }
+}
+
+// ---- PHASE TRANSITION ----
+function drawPhaseTransition() {
+  const progress = 1 - (transTimer / 2.5);
+  const toPC = PHASE_COLORS[transPhaseTo];
+  const biome = BIOMES[currentBiome];
+
+  // Dark overlay with sine fade
+  ctx.fillStyle = `rgba(0, 0, 0, ${0.75 * Math.sin(progress * Math.PI)})`;
+  ctx.fillRect(0, 0, W, H);
+
+  // Expanding ring from player position
+  const ringR = Math.max(W, H) * progress * 0.8;
+  const zGrad = ctx.createRadialGradient(player.x, player.y, 0, player.x, player.y, ringR);
+  zGrad.addColorStop(0, toPC.primary + '22');
+  zGrad.addColorStop(0.6, toPC.primary + '08');
+  zGrad.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = zGrad;
+  ctx.beginPath();
+  ctx.arc(player.x, player.y, ringR, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.textAlign = 'center';
+
+  if (progress < 0.45) {
+    // "ENERGY TRANSFER" announcement
+    const alpha = Math.sin(progress * Math.PI / 0.45);
+    ctx.globalAlpha = Math.max(0, alpha);
+
+    ctx.font = '800 32px Orbitron';
+    ctx.fillStyle = '#FF5252';
+    ctx.fillText('ENERGY TRANSFER', W / 2, H * 0.32);
+
+    // Big 10%
+    ctx.font = '900 70px Orbitron';
+    ctx.fillStyle = '#FFD700';
+    ctx.shadowColor = '#FFD700';
+    ctx.shadowBlur = 25;
+    ctx.fillText('10%', W / 2, H * 0.5);
+    ctx.shadowBlur = 0;
+
+    // Explanation
+    ctx.font = '400 15px Inter';
+    ctx.fillStyle = '#B0BEC5';
+    ctx.fillText('Only 10% of energy transfers to the next trophic level!', W / 2, H * 0.6);
+
+    // Energy bar visualization
+    const vizW = 300;
+    const vizX = W / 2 - vizW / 2;
+    const vizY = H * 0.66;
+    // Full bar (from)
+    ctx.fillStyle = 'rgba(255,255,255,0.1)';
+    drawRoundRect(vizX, vizY, vizW, 12, 4);
+    ctx.fill();
+    // 10% portion
+    ctx.fillStyle = toPC.primary;
+    drawRoundRect(vizX, vizY, vizW * 0.1, 12, 4);
+    ctx.fill();
+    // Label
+    ctx.font = '600 10px Inter';
+    ctx.fillStyle = '#fff';
+    ctx.fillText(Math.ceil(transEnergyFrom) + '% \u2192 ' + Math.ceil(transEnergyFrom * 0.1) + '%', W / 2, vizY + 28);
+
+    ctx.globalAlpha = 1;
+  } else {
+    // New phase announcement
+    const alpha = Math.sin((progress - 0.45) / 0.55 * Math.PI);
+    ctx.globalAlpha = Math.max(0, alpha);
+
+    ctx.font = '700 26px Orbitron';
+    ctx.fillStyle = toPC.primary;
+    ctx.shadowColor = toPC.primary;
+    ctx.shadowBlur = 15;
+    ctx.fillText(biome.phases[transPhaseTo].toUpperCase() + ' PHASE', W / 2, H * 0.38);
+    ctx.shadowBlur = 0;
+
+    // Transition description
+    ctx.font = '400 15px Inter';
+    ctx.fillStyle = '#E0E0E0';
+    ctx.fillText(biome.transfer[transPhaseTo], W / 2, H * 0.5);
+
+    // Trophic level label
+    const levels = ['Producer', 'Primary Consumer', 'Secondary Consumer'];
+    if (transPhaseTo > 0 && transPhaseTo <= 3) {
+      ctx.font = '500 12px Inter';
+      ctx.fillStyle = toPC.glow;
+      ctx.fillText('Trophic Level: ' + levels[transPhaseTo - 1], W / 2, H * 0.58);
+    }
+
+    ctx.globalAlpha = 1;
+  }
+}
+
+// ---- LEVEL COMPLETE ----
+function drawLevelCompleteScreen() {
+  const alpha = Math.min(1, levelCompleteTimer * 1.2);
+  ctx.fillStyle = `rgba(0, 0, 20, ${alpha * 0.82})`;
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.globalAlpha = alpha;
+  ctx.textAlign = 'center';
+
+  // Title
+  ctx.font = '800 44px Orbitron';
+  ctx.fillStyle = '#FFD700';
+  ctx.shadowColor = '#FFD700';
+  ctx.shadowBlur = 22;
+  ctx.fillText('LEVEL COMPLETE', W / 2, H * 0.18);
+  ctx.shadowBlur = 0;
+
+  // Biome completed
+  ctx.font = '400 14px Inter';
+  ctx.fillStyle = '#90CAF9';
+  ctx.fillText(BIOMES[currentBiome].name + ' Biome Cleared!', W / 2, H * 0.24);
+
+  // Stats panel
+  const panelW = Math.min(380, W * 0.45);
+  const panelH = 200;
+  const panelX = W / 2 - panelW / 2;
+  const panelY = H * 0.28;
+
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.55)';
+  drawRoundRect(panelX, panelY, panelW, panelH, 14);
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(255, 215, 0, 0.2)';
+  ctx.lineWidth = 1;
+  drawRoundRect(panelX, panelY, panelW, panelH, 14);
+  ctx.stroke();
+
+  const stats = [
+    ['Distance', Math.floor(distance) + 'm'],
+    ['Energy Remaining', Math.ceil(energy) + '%'],
+    ['Max Combo', 'x' + maxCombo],
+    ['Total Score', score.toLocaleString()]
+  ];
+
+  stats.forEach((s, i) => {
+    const sy = panelY + 32 + i * 40;
+    ctx.textAlign = 'left';
+    ctx.font = '400 13px Inter';
+    ctx.fillStyle = '#B0BEC5';
+    ctx.fillText(s[0], panelX + 20, sy);
+    ctx.textAlign = 'right';
+    ctx.font = '700 16px Orbitron';
+    ctx.fillStyle = '#FFD700';
+    ctx.fillText(s[1], panelX + panelW - 20, sy);
+  });
+
+  // Medal
+  const medal = score >= 5000 ? 'GOLD' : score >= 3000 ? 'SILVER' : 'BRONZE';
+  const medalCol = { BRONZE: '#CD7F32', SILVER: '#C0C0C0', GOLD: '#FFD700' };
+  ctx.textAlign = 'center';
+  ctx.font = '700 22px Orbitron';
+  ctx.fillStyle = medalCol[medal];
+  ctx.shadowColor = medalCol[medal];
+  ctx.shadowBlur = 12;
+  ctx.fillText(medal + ' MEDAL', W / 2, panelY + panelH + 35);
+  ctx.shadowBlur = 0;
+
+  // Science fact
+  ctx.font = '400 11px Inter';
+  ctx.fillStyle = '#78909C';
+  ctx.fillText('Fun fact: Only about 10% of energy passes up each level of a food chain!', W / 2, panelY + panelH + 60);
+
+  // Prompt
+  if (levelCompleteTimer > 1.5) {
+    ctx.globalAlpha = Math.sin(titlePulse * 3) * 0.3 + 0.7;
+    ctx.font = '500 15px Inter';
+    ctx.fillStyle = '#FFD700';
+    ctx.fillText('TAP TO CONTINUE', W / 2, H * 0.9);
+  }
+
+  ctx.globalAlpha = 1;
+}
+
+// ---- GAME OVER ----
+function drawGameOverScreen() {
+  const alpha = Math.min(1, gameOverTimer * 1.2);
+  ctx.fillStyle = `rgba(18, 0, 0, ${alpha * 0.82})`;
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.globalAlpha = alpha;
+  ctx.textAlign = 'center';
+
+  // Title
+  ctx.font = '800 44px Orbitron';
+  ctx.fillStyle = '#FF1744';
+  ctx.shadowColor = '#FF1744';
+  ctx.shadowBlur = 18;
+  ctx.fillText('GAME OVER', W / 2, H * 0.25);
+  ctx.shadowBlur = 0;
+
+  // Flavor text
+  ctx.font = '400 15px Inter';
+  ctx.fillStyle = '#EF9A9A';
+  ctx.fillText('Energy depleted! The food chain lost its flow.', W / 2, H * 0.34);
+
+  // Stats
+  ctx.font = '500 14px Inter';
+  ctx.fillStyle = '#B0BEC5';
+  ctx.fillText('Score: ' + score.toLocaleString(), W / 2, H * 0.46);
+  ctx.fillText('Distance: ' + Math.floor(distance) + 'm', W / 2, H * 0.52);
+  ctx.fillText('Reached: ' + BIOMES[currentBiome].phases[currentPhase] + ' Phase', W / 2, H * 0.58);
+
+  // Science encouragement
+  ctx.font = '400 12px Inter';
+  ctx.fillStyle = '#78909C';
+  ctx.fillText('Tip: Collect more energy orbs before each phase transition!', W / 2, H * 0.67);
+
+  // Prompt
+  if (gameOverTimer > 1.5) {
+    ctx.globalAlpha = Math.sin(titlePulse * 3) * 0.3 + 0.7;
+    ctx.font = '500 15px Inter';
+    ctx.fillStyle = '#FF5252';
+    ctx.fillText('TAP TO CONTINUE', W / 2, H * 0.8);
+  }
+
+  ctx.globalAlpha = 1;
+}
+
+// ---- PAUSE ----
+function drawPauseScreen() {
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.65)';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.textAlign = 'center';
+  ctx.font = '700 44px Orbitron';
+  ctx.fillStyle = '#FFD700';
+  ctx.fillText('PAUSED', W / 2, H / 2 - 15);
+
+  ctx.font = '400 16px Inter';
+  ctx.fillStyle = '#90A4AE';
+  ctx.fillText('Press SPACE or P to continue', W / 2, H / 2 + 20);
+
+  // Science tidbit
+  ctx.font = '400 12px Inter';
+  ctx.fillStyle = '#546E7A';
+  const tidbits = [
+    'The sun provides 99.97% of all energy on Earth\'s surface.',
+    'Plants convert only 1-2% of sunlight into chemical energy.',
+    'A hawk needs to eat many mice to get enough energy to survive.',
+    'Decomposers recycle energy back into the ecosystem.',
+    'The 10% rule explains why there are fewer predators than prey.'
+  ];
+  ctx.fillText(tidbits[Math.floor(totalTime) % tidbits.length], W / 2, H / 2 + 55);
+}
+
+// ===========================================================
+// MAIN GAME LOOP
+// ===========================================================
+let lastTime = 0;
+
+function loop(timestamp) {
+  const dt = Math.min((timestamp - lastTime) / 1000, 0.05);
+  lastTime = timestamp;
+
+  update(dt);
+  draw();
+
+  requestAnimationFrame(loop);
+}
+
+// ---- Bootstrap ----
+initParticlePool();
+initBgStars();
+initParallax();
+
+requestAnimationFrame(ts => {
+  lastTime = ts;
+  requestAnimationFrame(loop);
+});
+
+</script>
+</body>
+</html>
