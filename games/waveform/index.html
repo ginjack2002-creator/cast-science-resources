@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>WAVEFORM - Sound Wave Sandbox</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+html,body{width:100%;height:100%;overflow:hidden;background:#1A1A2E;font-family:'Rajdhani',sans-serif;color:#EEE;user-select:none;-webkit-user-select:none;touch-action:none;}
+canvas{display:block;position:absolute;top:0;left:0;width:100%;height:100%;}
+#overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:10;}
+#overlay *{pointer-events:auto;}
+.hidden{display:none!important;}
+#portrait-warning{position:fixed;top:0;left:0;width:100%;height:100%;background:#1A1A2E;z-index:9999;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:#00E5FF;font-family:'Orbitron',sans-serif;text-align:center;padding:20px;}
+#portrait-warning .icon{font-size:60px;margin-bottom:20px;animation:rotPhone 2s ease-in-out infinite;}
+#portrait-warning p{font-size:18px;max-width:280px;}
+@keyframes rotPhone{0%,100%{transform:rotate(0deg);}50%{transform:rotate(90deg);}}
+@media(orientation:landscape){#portrait-warning{display:none!important;}}
+@media(orientation:portrait) and (max-width:900px){#portrait-warning{display:flex!important;}}
+@media(orientation:portrait) and (min-width:901px){#portrait-warning{display:none!important;}}
+</style>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="overlay"></div>
+<div id="portrait-warning">
+  <div class="icon">&#128241;</div>
+  <p>Please rotate your device to landscape mode for the best experience</p>
+</div>
+<script>
+"use strict";
+(function() {
+
+/* ===================================================================
+   WAVEFORM  --  Music Creation / Wave Sandbox
+   NGSS MS-PS4-1, MS-PS4-2  |  Grade 8
+   Single-file HTML5 Canvas + Web Audio API
+   =================================================================== */
+
+// ========================= CONSTANTS =========================
+const BG        = '#1A1A2E';
+const BG_GRID   = 'rgba(255,255,255,0.03)';
+const SCOPE_BG  = '#0D1117';
+const CYAN      = '#00E5FF';
+const GREEN     = '#00E676';
+const RED       = '#FF5252';
+const ORANGE    = '#FF9800';
+const BLUE      = '#448AFF';
+const PURPLE    = '#7C4DFF';
+const GOLD      = '#FFD700';
+const WHITE     = '#EEEEEE';
+const GLASS     = 'rgba(255,255,255,0.05)';
+const GLASS_B   = 'rgba(255,255,255,0.1)';
+const TCOL      = [RED, GREEN, BLUE, PURPLE];
+const WTYPES    = ['sine', 'square', 'triangle', 'sawtooth'];
+const WLABELS   = ['Sine', 'Square', 'Triangle', 'Sawtooth'];
+const FMIN = 100, FMAX = 2000;
+const AMIN = 0.0, AMAX = 1.0;
+const DFREQ = 440, DAMP = 0.5;
+const CONSONANCE = [1, 2, 1.5, 4/3, 5/4, 5/3, 6/5, 8/5];
+
+// Challenge definitions
+const CHALLENGES = [
+  {
+    name: 'Match the Tone',
+    desc: 'Adjust your wave to match the target.\nMatch both amplitude AND frequency.',
+    tFreq: 523.25, tAmp: 0.6, tType: 'sine',
+    tol: { f: 20, a: 0.08 }, tracks: 1, time: 30
+  },
+  {
+    name: 'Build a Chord',
+    desc: 'Create a C major chord!\nC4=261.6 Hz  E4=329.6 Hz  G4=392.0 Hz',
+    targets: [{ f: 261.63, a: 0.4 }, { f: 329.63, a: 0.4 }, { f: 392.0, a: 0.4 }],
+    tol: { f: 15, a: 0.12 }, tracks: 3, time: 50
+  },
+  {
+    name: 'Beat Maker',
+    desc: 'Set two tracks to close frequencies\n(5-15 Hz apart). Listen for the beats!',
+    bMin: 5, bMax: 15, tracks: 2, time: 45
+  },
+  {
+    name: 'Noise Cancel',
+    desc: 'Cancel the given wave!\nMatch freq & amp on Track 2.\nPhase is auto-inverted. Silence = WIN!',
+    gFreq: 440, gAmp: 0.5, gType: 'sine', tol: 0.06, tracks: 2, time: 40
+  },
+  {
+    name: 'Compose',
+    desc: 'Freestyle 4-track composition!\nScored on harmony & use of all tracks.',
+    tracks: 4, time: 60
+  }
+];
+
+// Note name lookup for display
+const NOTE_NAMES = {
+  261: 'C4', 277: 'C#4', 293: 'D4', 311: 'D#4', 329: 'E4', 349: 'F4',
+  369: 'F#4', 392: 'G4', 415: 'G#4', 440: 'A4', 466: 'A#4', 493: 'B4',
+  523: 'C5', 554: 'C#5', 587: 'D5', 622: 'D#5', 659: 'E5', 698: 'F5'
+};
+
+function noteName(freq) {
+  let best = '', bestDist = Infinity;
+  for (let k in NOTE_NAMES) {
+    let d = Math.abs(freq - parseInt(k));
+    if (d < bestDist) { bestDist = d; best = NOTE_NAMES[k]; }
+  }
+  return bestDist < 15 ? best : '';
+}
+
+// ========================= GLOBALS =========================
+let cvs, c, W, H, dpr;
+let ac = null, master = null, anl = null, audioOn = false;
+let tgtOsc = null, tgtGain = null; // target tone for challenge 1
+let lastTs = 0, at = 0;
+
+// Tracks (4 audio tracks)
+let tracks = [], aTrk = 0;
+
+// UI rects recalculated every frame
+let ui = {};
+let drag = null;
+let mx = 0, my = 0, md = false;
+let showFFT = false;
+
+// State machine
+let st = 'TITLE';
+
+// Challenge runtime
+let chI = 0, chT = 0, chDone = false, chSc = 0, chSt = 0, chStreak = 0;
+let showRes = false, resT = 0;
+let noiseCancel = false;
+
+// Sandbox
+let isRec = false, recD = [], recS = 0;
+let isPlay = false, playD = null, playS = 0;
+
+// Particles
+let parts = [];
+
+// Title animation state
+let tPh = 0, tMI = 0, tMT = 0;
+
+// Scanline effect offset (oscilloscope aesthetic)
+let scanOffset = 0;
+
+// Progress persistence
+let prog = { stars: [0, 0, 0, 0, 0], best: [0, 0, 0, 0, 0], streak: 0 };
+
+// ========================= INITIALIZATION =========================
+function init() {
+  cvs = document.getElementById('gameCanvas');
+  c = cvs.getContext('2d');
+  doResize();
+  window.addEventListener('resize', doResize);
+  loadProg();
+  mkTracks();
+
+  cvs.addEventListener('mousedown', onMD);
+  cvs.addEventListener('mousemove', onMM);
+  cvs.addEventListener('mouseup', onMU);
+  cvs.addEventListener('touchstart', onTS, { passive: false });
+  cvs.addEventListener('touchmove', onTM, { passive: false });
+  cvs.addEventListener('touchend', onTE, { passive: false });
+
+  requestAnimationFrame(loop);
+}
+
+function doResize() {
+  dpr = window.devicePixelRatio || 1;
+  W = window.innerWidth;
+  H = window.innerHeight;
+  cvs.width = W * dpr;
+  cvs.height = H * dpr;
+  cvs.style.width = W + 'px';
+  cvs.style.height = H + 'px';
+  c.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function mkTracks() {
+  stopAll();
+  tracks = [];
+  for (let i = 0; i < 4; i++) {
+    tracks.push({
+      freq: DFREQ, amp: DAMP, type: 'sine', ti: 0,
+      on: true, osc: null, gain: null
+    });
+  }
+  noiseCancel = false;
+}
+
+// ========================= AUDIO ENGINE =========================
+function initAudio() {
+  if (audioOn) return;
+  ac = new (window.AudioContext || window.webkitAudioContext)();
+  master = ac.createGain();
+  master.gain.value = 0.3;
+  anl = ac.createAnalyser();
+  anl.fftSize = 2048;
+  anl.smoothingTimeConstant = 0.8;
+  master.connect(anl);
+  anl.connect(ac.destination);
+  audioOn = true;
+}
+
+function ensureAudio() {
+  if (!audioOn) initAudio();
+  if (ac && ac.state === 'suspended') ac.resume();
+}
+
+function startTrk(i) {
+  if (!audioOn) return;
+  let t = tracks[i];
+  if (t.osc) return;
+  t.osc = ac.createOscillator();
+  t.gain = ac.createGain();
+  t.osc.type = t.type;
+  t.osc.frequency.setValueAtTime(t.freq, ac.currentTime);
+  // In noise-cancel mode, track 1 plays with inverted phase (negative gain)
+  let vol = t.on ? t.amp * 0.25 : 0;
+  if (noiseCancel && i === 1) vol = -vol;
+  t.gain.gain.setValueAtTime(vol, ac.currentTime);
+  t.osc.connect(t.gain);
+  t.gain.connect(master);
+  t.osc.start();
+}
+
+function stopTrk(i) {
+  let t = tracks[i];
+  if (t.osc) {
+    try { t.osc.stop(); } catch (e) {}
+    t.osc.disconnect();
+    t.gain.disconnect();
+    t.osc = null;
+    t.gain = null;
+  }
+}
+
+function stopAll() {
+  for (let i = 0; i < 4; i++) stopTrk(i);
+  stopTarget();
+}
+
+function updTrk(i) {
+  let t = tracks[i];
+  if (!t.osc || !audioOn) return;
+  let now = ac.currentTime;
+  t.osc.frequency.linearRampToValueAtTime(t.freq, now + 0.02);
+  let vol = t.on ? t.amp * 0.25 : 0;
+  if (noiseCancel && i === 1) vol = -vol;
+  t.gain.gain.linearRampToValueAtTime(vol, now + 0.02);
+  if (t.osc.type !== t.type) t.osc.type = t.type;
+}
+
+function startActive(n) {
+  ensureAudio();
+  for (let i = 0; i < (n || 4); i++) {
+    startTrk(i);
+    updTrk(i);
+  }
+}
+
+// Target reference tone for Challenge 1
+function startTarget(freq, amp, type) {
+  if (!audioOn) return;
+  stopTarget();
+  tgtOsc = ac.createOscillator();
+  tgtGain = ac.createGain();
+  tgtOsc.type = type || 'sine';
+  tgtOsc.frequency.setValueAtTime(freq, ac.currentTime);
+  tgtGain.gain.setValueAtTime(amp * 0.12, ac.currentTime);
+  tgtOsc.connect(tgtGain);
+  // Send target to destination directly (not through analyser)
+  // so it doesn't interfere with the waveform display
+  tgtGain.connect(ac.destination);
+  tgtOsc.start();
+}
+
+function stopTarget() {
+  if (tgtOsc) {
+    try { tgtOsc.stop(); } catch (e) {}
+    tgtOsc.disconnect();
+    tgtGain.disconnect();
+    tgtOsc = null;
+    tgtGain = null;
+  }
+}
+
+// ========================= PERSISTENCE =========================
+function loadProg() {
+  try {
+    let d = JSON.parse(localStorage.getItem('waveform_prog'));
+    if (d && d.stars) prog = d;
+  } catch (e) {}
+}
+
+function saveProg() {
+  try {
+    localStorage.setItem('waveform_prog', JSON.stringify(prog));
+  } catch (e) {}
+}
+
+// ========================= PARTICLES =========================
+function spawnP(px, py, col, n) {
+  for (let i = 0; i < n; i++) {
+    let a = Math.random() * Math.PI * 2;
+    let sp = 60 + Math.random() * 200;
+    parts.push({
+      x: px, y: py,
+      vx: Math.cos(a) * sp,
+      vy: Math.sin(a) * sp,
+      life: 1,
+      dec: 0.5 + Math.random() * 1.5,
+      sz: 2 + Math.random() * 5,
+      col: col
+    });
+  }
+}
+
+function updParts(dt) {
+  for (let i = parts.length - 1; i >= 0; i--) {
+    let p = parts[i];
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.vy += 100 * dt; // gravity
+    p.life -= p.dec * dt;
+    if (p.life <= 0) parts.splice(i, 1);
+  }
+}
+
+function drawParts() {
+  for (let p of parts) {
+    c.globalAlpha = Math.max(0, p.life);
+    c.fillStyle = p.col;
+    c.beginPath();
+    c.arc(p.x, p.y, p.sz * p.life, 0, Math.PI * 2);
+    c.fill();
+  }
+  c.globalAlpha = 1;
+}
+
+// ========================= DRAW HELPERS =========================
+function rr(x, y, w, h, r) {
+  c.beginPath();
+  c.moveTo(x + r, y);
+  c.lineTo(x + w - r, y);
+  c.quadraticCurveTo(x + w, y, x + w, y + r);
+  c.lineTo(x + w, y + h - r);
+  c.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  c.lineTo(x + r, y + h);
+  c.quadraticCurveTo(x, y + h, x, y + h - r);
+  c.lineTo(x, y + r);
+  c.quadraticCurveTo(x, y, x + r, y);
+  c.closePath();
+}
+
+function glass(x, y, w, h, r) {
+  rr(x, y, w, h, r || 8);
+  c.fillStyle = GLASS;
+  c.fill();
+  c.strokeStyle = GLASS_B;
+  c.lineWidth = 1;
+  c.stroke();
+}
+
+function btn(x, y, w, h, label, col, hov, act, fs) {
+  let r = Math.min(h / 2, 20);
+  rr(x, y, w, h, r);
+  if (act) {
+    c.fillStyle = col;
+    c.fill();
+    c.fillStyle = '#111';
+  } else {
+    c.fillStyle = hov ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.3)';
+    c.fill();
+    c.strokeStyle = col;
+    c.lineWidth = hov ? 2.5 : 1.5;
+    c.stroke();
+    if (hov) {
+      c.shadowColor = col;
+      c.shadowBlur = 14;
+      c.stroke();
+      c.shadowBlur = 0;
+    }
+    c.fillStyle = col;
+  }
+  c.font = (fs || 14) + "px 'Rajdhani',sans-serif";
+  c.textAlign = 'center';
+  c.textBaseline = 'middle';
+  c.fillText(label, x + w / 2, y + h / 2 + 1);
+}
+
+function tx(t, x, y, sz, col, al, bl, fnt) {
+  c.fillStyle = col || WHITE;
+  c.font = (sz || 14) + "px '" + (fnt || 'Rajdhani') + "',sans-serif";
+  c.textAlign = al || 'left';
+  c.textBaseline = bl || 'middle';
+  c.fillText(t, x, y);
+}
+
+function inR(px, py, rx, ry, rw, rh) {
+  return px >= rx && px <= rx + rw && py >= ry && py <= ry + rh;
+}
+
+function cl(v, lo, hi) {
+  return Math.max(lo, Math.min(hi, v));
+}
+
+function fCol(f) {
+  let t = cl((f - FMIN) / (FMAX - FMIN), 0, 1);
+  if (t < 0.33) return lc(RED, ORANGE, t / 0.33);
+  if (t < 0.66) return lc(ORANGE, GREEN, (t - 0.33) / 0.33);
+  return lc(BLUE, PURPLE, (t - 0.66) / 0.34);
+}
+
+function lc(a, b, t) {
+  let ar = parseInt(a.slice(1, 3), 16), ag = parseInt(a.slice(3, 5), 16), ab = parseInt(a.slice(5, 7), 16);
+  let br = parseInt(b.slice(1, 3), 16), bg = parseInt(b.slice(3, 5), 16), bb = parseInt(b.slice(5, 7), 16);
+  let r = Math.round(ar + (br - ar) * t), g = Math.round(ag + (bg - ag) * t), bl = Math.round(ab + (bb - ab) * t);
+  return '#' + ((1 << 24) + (r << 16) + (g << 8) + bl).toString(16).slice(1);
+}
+
+function pitchLbl(f) {
+  return f < 300 ? 'Low' : f < 800 ? 'Mid' : 'High';
+}
+
+function wSmp(type, phase) {
+  let p = ((phase % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2);
+  let t = p / (Math.PI * 2);
+  switch (type) {
+    case 'sine': return Math.sin(p);
+    case 'square': return t < 0.5 ? 1 : -1;
+    case 'triangle': return t < 0.5 ? (4 * t - 1) : (3 - 4 * t);
+    case 'sawtooth': return 2 * t - 1;
+    default: return Math.sin(p);
+  }
+}
+
+// ========================= LAYOUT =========================
+function layout() {
+  let nt = (st === 'CHALLENGE') ? CHALLENGES[chI].tracks : 4;
+
+  let scopeX = 85, scopeY = (st === 'CHALLENGE') ? 48 : 45;
+  let scopeW = W - 185, scopeH = H * 0.38;
+
+  let ampX = 15, ampY = scopeY + 20, ampW = 44, ampH = scopeH - 40;
+  let fqX = scopeX + 30, fqY = scopeY + scopeH + 8;
+  let fqW = scopeW - 60, fqH = 30;
+
+  let wtX = scopeX, wtY = fqY + fqH + 8, wtBW = 78, wtBH = 28;
+
+  let mixY = wtY + wtBH + 12;
+  let mixH = H - mixY - 12;
+  let trkH = Math.min(52, (mixH - 10) / nt);
+  let mixX = scopeX, mixW = scopeW;
+
+  let sciX = W - 88, sciY = scopeY, sciW = 78, sciH = scopeH;
+  let fftBX = scopeX + scopeW - 60, fftBY = scopeY + 5;
+
+  ui = {
+    scopeX, scopeY, scopeW, scopeH,
+    ampX, ampY, ampW, ampH,
+    fqX, fqY, fqW, fqH,
+    wtX, wtY, wtBW, wtBH,
+    mixX, mixY, mixW, mixH, trkH,
+    sciX, sciY, sciW, sciH,
+    fftBX, fftBY, nt
+  };
+}
+
+// ========================= MAIN LOOP =========================
+function loop(ts) {
+  let dt = Math.min((ts - lastTs) / 1000, 0.05);
+  lastTs = ts;
+  at += dt;
+  scanOffset = (scanOffset + dt * 60) % 4;
+
+  layout();
+  update(dt);
+  draw(dt);
+
+  requestAnimationFrame(loop);
+}
+
+// ========================= UPDATE =========================
+function update(dt) {
+  updParts(dt);
+  tPh += dt * 2;
+  tMT += dt;
+  if (tMT > 2) { tMT = 0; tMI = (tMI + 1) % 4; }
+
+  // Challenge timer
+  if (st === 'CHALLENGE' && !chDone) {
+    chT += dt;
+    let ch = CHALLENGES[chI];
+    if (chI === 4 && chT >= ch.time) {
+      finishCh(true); // compose mode auto-scores at end
+    } else if (ch.time && chT >= ch.time) {
+      finishCh(false);
+    } else {
+      checkCh();
+    }
+  }
+
+  if (showRes) {
+    resT += dt;
+  }
+
+  // Recording
+  if (isRec && audioOn) {
+    let el = ac.currentTime - recS;
+    if (el >= 30) {
+      isRec = false;
+    } else {
+      recD.push({
+        t: el,
+        trk: tracks.map(t => ({ f: t.freq, a: t.amp, ty: t.type, on: t.on }))
+      });
+    }
+  }
+
+  // Playback
+  if (isPlay && playD && audioOn) {
+    let el = ac.currentTime - playS;
+    let fr = null;
+    for (let i = playD.length - 1; i >= 0; i--) {
+      if (el >= playD[i].t) { fr = playD[i]; break; }
+    }
+    if (fr) {
+      for (let i = 0; i < Math.min(4, fr.trk.length); i++) {
+        tracks[i].freq = fr.trk[i].f;
+        tracks[i].amp = fr.trk[i].a;
+        tracks[i].type = fr.trk[i].ty;
+        tracks[i].on = fr.trk[i].on;
+        updTrk(i);
+      }
+    }
+    if (el >= playD[playD.length - 1].t + 0.5) {
+      isPlay = false;
+    }
+  }
+}
+
+// ========================= CHALLENGE LOGIC =========================
+function startCh(idx) {
+  chI = idx;
+  chT = 0;
+  chDone = false;
+  chSc = 0;
+  chSt = 0;
+  showRes = false;
+  resT = 0;
+  mkTracks();
+  noiseCancel = false;
+
+  let ch = CHALLENGES[idx];
+
+  if (idx === 0) {
+    tracks[0].freq = DFREQ;
+    tracks[0].amp = 0.3;
+    aTrk = 0;
+  } else if (idx === 1) {
+    tracks[0].freq = 261;
+    tracks[0].amp = 0.3;
+    tracks[1].freq = 329;
+    tracks[1].amp = 0.3;
+    tracks[2].freq = 392;
+    tracks[2].amp = 0.3;
+    aTrk = 0;
+  } else if (idx === 2) {
+    tracks[0].freq = 440;
+    tracks[0].amp = 0.4;
+    tracks[1].freq = 440;
+    tracks[1].amp = 0.4;
+    aTrk = 0;
+  } else if (idx === 3) {
+    noiseCancel = true;
+    tracks[0].freq = ch.gFreq;
+    tracks[0].amp = ch.gAmp;
+    tracks[0].type = ch.gType;
+    tracks[0].on = true;
+    tracks[1].freq = DFREQ;
+    tracks[1].amp = 0;
+    tracks[1].type = ch.gType;
+    tracks[1].on = true;
+    aTrk = 1;
+  } else if (idx === 4) {
+    aTrk = 0;
+  }
+
+  st = 'CHALLENGE';
+  startActive(ch.tracks);
+
+  // Play reference tone for challenge 1
+  if (idx === 0) {
+    startTarget(ch.tFreq, ch.tAmp, ch.tType);
+  }
+}
+
+function checkCh() {
+  let ch = CHALLENGES[chI];
+  switch (chI) {
+    case 0: {
+      let t = tracks[0];
+      if (Math.abs(t.freq - ch.tFreq) < ch.tol.f &&
+          Math.abs(t.amp - ch.tAmp) < ch.tol.a) {
+        finishCh(true);
+      }
+      break;
+    }
+    case 1: {
+      let matched = 0;
+      for (let tgt of ch.targets) {
+        for (let i = 0; i < 3; i++) {
+          if (tracks[i].on &&
+              Math.abs(tracks[i].freq - tgt.f) < ch.tol.f &&
+              Math.abs(tracks[i].amp - tgt.a) < ch.tol.a) {
+            matched++;
+            break;
+          }
+        }
+      }
+      if (matched >= 3) finishCh(true);
+      break;
+    }
+    case 2: {
+      if (tracks[0].on && tracks[1].on &&
+          tracks[0].amp > 0.15 && tracks[1].amp > 0.15) {
+        let diff = Math.abs(tracks[0].freq - tracks[1].freq);
+        if (diff >= ch.bMin && diff <= ch.bMax) finishCh(true);
+      }
+      break;
+    }
+    case 3: {
+      let t0 = tracks[0], t1 = tracks[1];
+      if (t1.on && t1.amp > 0.1) {
+        if (Math.abs(t0.freq - t1.freq) < 5 &&
+            Math.abs(t0.amp - t1.amp) < ch.tol &&
+            t0.type === t1.type) {
+          finishCh(true);
+        }
+      }
+      break;
+    }
+    // case 4: compose mode scores at end of timer
+  }
+}
+
+function finishCh(ok) {
+  chDone = true;
+  showRes = true;
+  resT = 0;
+  stopTarget();
+
+  let ch = CHALLENGES[chI];
+
+  if (chI === 4) {
+    // Compose mode: auto-score
+    let sc = scoreFree();
+    chSc = sc;
+    chSt = sc >= 80 ? 3 : sc >= 50 ? 2 : sc >= 20 ? 1 : 0;
+    ok = sc >= 20;
+  } else if (ok) {
+    let tb = Math.max(0, 1 - chT / (ch.time || 60));
+    chSc = Math.round(50 + tb * 50);
+    chSt = chSc >= 90 ? 3 : chSc >= 70 ? 2 : 1;
+    chStreak++;
+    if (chStreak > 1) chSc += chStreak * 5;
+    spawnP(W / 2, H / 2, GOLD, 50);
+    spawnP(W / 2, H / 2, CYAN, 30);
+  } else {
+    chSc = 0;
+    chSt = 0;
+    chStreak = 0;
+  }
+
+  if (chSt > prog.stars[chI]) prog.stars[chI] = chSt;
+  if (chSc > prog.best[chI]) prog.best[chI] = chSc;
+  prog.streak = Math.max(prog.streak, chStreak);
+  saveProg();
+}
+
+function scoreFree() {
+  let act = tracks.filter(t => t.on && t.amp > 0.1);
+  if (act.length < 2) return 10;
+  let sc = act.length * 15; // up to 60 for using all 4
+  for (let i = 0; i < act.length; i++) {
+    for (let j = i + 1; j < act.length; j++) {
+      let r = act[i].freq / act[j].freq;
+      if (r < 1) r = 1 / r;
+      let md = Infinity;
+      for (let cr of CONSONANCE) md = Math.min(md, Math.abs(r - cr));
+      if (md < 0.05) sc += 10;
+      else if (md < 0.15) sc += 5;
+    }
+  }
+  // Bonus for using different wave types
+  let types = new Set(act.map(t => t.type));
+  if (types.size >= 2) sc += 10;
+  if (types.size >= 3) sc += 5;
+  return Math.min(100, sc);
+}
+
+// ========================= DRAWING =========================
+function draw(dt) {
+  c.fillStyle = BG;
+  c.fillRect(0, 0, W, H);
+  drawGrid();
+
+  if (audioOn && (st === 'SANDBOX' || st === 'CHALLENGE')) {
+    drawBgPulse();
+  }
+
+  switch (st) {
+    case 'TITLE': drawTitle(); break;
+    case 'MODE_SELECT': drawMode(); break;
+    case 'HOW_TO': drawHow(); break;
+    case 'CHALLENGE_SELECT': drawChSel(); break;
+    case 'CHALLENGE': drawPlay(true); break;
+    case 'SANDBOX': drawPlay(false); break;
+    case 'COMPLETE': drawDone(); break;
+  }
+
+  drawParts();
+}
+
+function drawGrid() {
+  c.strokeStyle = BG_GRID;
+  c.lineWidth = 1;
+  for (let x = 0; x < W; x += 40) {
+    c.beginPath(); c.moveTo(x, 0); c.lineTo(x, H); c.stroke();
+  }
+  for (let y = 0; y < H; y += 40) {
+    c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke();
+  }
+}
+
+function drawBgPulse() {
+  if (!anl) return;
+  let d = new Uint8Array(anl.frequencyBinCount);
+  anl.getByteFrequencyData(d);
+  let avg = 0;
+  for (let i = 0; i < 64; i++) avg += d[i];
+  avg /= 64;
+  let I = avg / 255;
+
+  // Pulsing circles in background
+  let pcx = W / 2, pcy = H * 0.35;
+  for (let i = 3; i >= 0; i--) {
+    let r = 100 + i * 60 + I * 40;
+    c.beginPath();
+    c.arc(pcx, pcy, r, 0, Math.PI * 2);
+    c.fillStyle = `rgba(0,229,255,${0.015 + I * 0.025})`;
+    c.fill();
+  }
+
+  // Frequency bars at bottom
+  let bc = 32, bw = W / bc, step = Math.floor(d.length / bc);
+  for (let i = 0; i < bc; i++) {
+    let v = d[i * step] / 255;
+    let bh = v * 30;
+    c.fillStyle = `rgba(0,229,255,${0.04 + v * 0.08})`;
+    c.fillRect(i * bw, H - bh, bw - 2, bh);
+  }
+}
+
+// ========================= TITLE SCREEN =========================
+function drawTitle() {
+  let cx2 = W / 2, cy2 = H / 2;
+
+  // Background animated waves
+  for (let w = 0; w < 3; w++) {
+    c.save();
+    c.globalAlpha = 0.15 + (2 - w) * 0.08;
+    let wType = WTYPES[(tMI + w) % 4];
+    let col = [RED, PURPLE, BLUE][w];
+    c.strokeStyle = col;
+    c.lineWidth = 3 - w;
+    c.beginPath();
+    for (let x = 0; x < W; x += 2) {
+      let ph = tPh * (1 + w * 0.3) + (x / W) * Math.PI * (4 + w * 2);
+      let y = cy2 + wSmp(wType, ph) * (60 + w * 20);
+      x === 0 ? c.moveTo(x, y) : c.lineTo(x, y);
+    }
+    c.stroke();
+    c.restore();
+  }
+
+  // Title with glow
+  c.save();
+  c.shadowColor = CYAN;
+  c.shadowBlur = 40;
+  tx('WAVEFORM', cx2, cy2 - 60, 72, CYAN, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 15;
+  tx('WAVEFORM', cx2, cy2 - 60, 72, CYAN, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+
+  tx('Sound Wave Sandbox', cx2, cy2 - 10, 24, 'rgba(255,255,255,0.6)', 'center', 'middle');
+  tx('NGSS MS-PS4-1 / MS-PS4-2', cx2, cy2 + 18, 14, 'rgba(255,255,255,0.3)', 'center', 'middle');
+
+  // Speaker icons vibrating
+  let vib = Math.sin(at * 8) * 3;
+  c.font = '30px sans-serif';
+  c.textAlign = 'center';
+  c.fillText('\u{1F50A}', cx2 - 200 + vib, cy2 - 55);
+  c.fillText('\u{1F50A}', cx2 + 200 - vib, cy2 - 55);
+
+  // Start button with pulsing glow
+  let bw = 220, bh = 52;
+  let bx = cx2 - bw / 2, by = cy2 + 55;
+  let pulse = 0.5 + 0.5 * Math.sin(at * 3);
+  c.shadowColor = CYAN;
+  c.shadowBlur = 10 + pulse * 10;
+  btn(bx, by, bw, bh, 'START', CYAN, inR(mx, my, bx, by, bw, bh), false, 22);
+  c.shadowBlur = 0;
+  ui.startBtn = { x: bx, y: by, w: bw, h: bh };
+
+  tx('Grade 8  |  Wave Properties', cx2, H - 30, 12, 'rgba(255,255,255,0.3)', 'center');
+}
+
+// ========================= MODE SELECT =========================
+function drawMode() {
+  let cx2 = W / 2;
+  c.save();
+  c.shadowColor = CYAN;
+  c.shadowBlur = 15;
+  tx('SELECT MODE', cx2, 50, 36, CYAN, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+
+  let cw = 260, ch = 210, gap = 40;
+  let c1x = cx2 - cw - gap / 2, cy2 = H / 2 - ch / 2 + 10;
+  let c2x = cx2 + gap / 2;
+
+  // Challenge card
+  let h1 = inR(mx, my, c1x, cy2, cw, ch);
+  glass(c1x, cy2, cw, ch, 12);
+  if (h1) {
+    c.strokeStyle = CYAN;
+    c.lineWidth = 2;
+    c.shadowColor = CYAN;
+    c.shadowBlur = 12;
+    rr(c1x, cy2, cw, ch, 12);
+    c.stroke();
+    c.shadowBlur = 0;
+  }
+  tx('\u{1F3AF}', c1x + cw / 2, cy2 + 45, 40, WHITE, 'center');
+  tx('CHALLENGE MODE', c1x + cw / 2, cy2 + 90, 20, CYAN, 'center', 'middle', 'Orbitron');
+  tx('5 levels of wave mastery', c1x + cw / 2, cy2 + 120, 16, 'rgba(255,255,255,0.6)', 'center');
+  tx('Match tones, build chords,', c1x + cw / 2, cy2 + 148, 14, 'rgba(255,255,255,0.4)', 'center');
+  tx('cancel noise, compose!', c1x + cw / 2, cy2 + 166, 14, 'rgba(255,255,255,0.4)', 'center');
+  // Show total stars earned
+  let ts = prog.stars.reduce((a, b) => a + b, 0);
+  if (ts > 0) {
+    tx('\u2605 ' + ts + '/15', c1x + cw / 2, cy2 + 190, 13, GOLD, 'center');
+  }
+  ui.chBtn = { x: c1x, y: cy2, w: cw, h: ch };
+
+  // Sandbox card
+  let h2 = inR(mx, my, c2x, cy2, cw, ch);
+  glass(c2x, cy2, cw, ch, 12);
+  if (h2) {
+    c.strokeStyle = PURPLE;
+    c.lineWidth = 2;
+    c.shadowColor = PURPLE;
+    c.shadowBlur = 12;
+    rr(c2x, cy2, cw, ch, 12);
+    c.stroke();
+    c.shadowBlur = 0;
+  }
+  tx('\u{1F3B5}', c2x + cw / 2, cy2 + 45, 40, WHITE, 'center');
+  tx('SANDBOX MODE', c2x + cw / 2, cy2 + 90, 20, PURPLE, 'center', 'middle', 'Orbitron');
+  tx('Free play with all controls', c2x + cw / 2, cy2 + 120, 16, 'rgba(255,255,255,0.6)', 'center');
+  tx('4 tracks, record & playback,', c2x + cw / 2, cy2 + 148, 14, 'rgba(255,255,255,0.4)', 'center');
+  tx('share codes!', c2x + cw / 2, cy2 + 166, 14, 'rgba(255,255,255,0.4)', 'center');
+  ui.sbBtn = { x: c2x, y: cy2, w: cw, h: ch };
+
+  // How to Play button
+  let hw = 160, hh = 36;
+  let hx = cx2 - hw / 2, hy = cy2 + ch + 25;
+  btn(hx, hy, hw, hh, 'HOW TO PLAY', GREEN, inR(mx, my, hx, hy, hw, hh), false, 14);
+  ui.htBtn = { x: hx, y: hy, w: hw, h: hh };
+}
+
+// ========================= HOW TO PLAY =========================
+function drawHow() {
+  let cx2 = W / 2;
+  c.save();
+  c.shadowColor = CYAN;
+  c.shadowBlur = 15;
+  tx('HOW TO PLAY', cx2, 40, 30, CYAN, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+
+  let pw = Math.min(720, W - 40), px = cx2 - pw / 2, py = 65, ph = H - 115;
+  glass(px, py, pw, ph, 12);
+
+  let y = py + 28, lh = 24, l = px + 30;
+
+  // Amplitude section
+  c.fillStyle = 'rgba(255,82,82,0.08)';
+  rr(px + 8, y - 12, pw - 16, lh * 3.5, 6);
+  c.fill();
+  tx('AMPLITUDE = LOUDNESS', l, y, 18, RED, 'left', 'middle', 'Orbitron');
+  y += lh;
+  tx('Drag the left slider UP to increase wave height.', l, y, 15, WHITE, 'left');
+  y += lh * 0.85;
+  tx('Bigger amplitude = MORE ENERGY = LOUDER sound', l, y, 14, 'rgba(255,255,255,0.55)', 'left');
+  y += lh * 0.85;
+  tx('Energy is proportional to amplitude squared: E ~ A\u00B2', l, y, 14, ORANGE, 'left');
+  y += lh * 1.3;
+
+  // Frequency section
+  c.fillStyle = 'rgba(68,138,255,0.08)';
+  rr(px + 8, y - 12, pw - 16, lh * 3.5, 6);
+  c.fill();
+  tx('FREQUENCY = PITCH', l, y, 18, BLUE, 'left', 'middle', 'Orbitron');
+  y += lh;
+  tx('Drag the bottom slider RIGHT to increase frequency.', l, y, 15, WHITE, 'left');
+  y += lh * 0.85;
+  tx('More cycles per second = HIGHER PITCH. Measured in Hertz (Hz).', l, y, 14, 'rgba(255,255,255,0.55)', 'left');
+  y += lh * 0.85;
+  tx('Human hearing: 20 Hz - 20,000 Hz. This game: 100 - 2000 Hz.', l, y, 13, GREEN, 'left');
+  y += lh * 1.3;
+
+  // Superposition section
+  c.fillStyle = 'rgba(124,77,255,0.08)';
+  rr(px + 8, y - 12, pw - 16, lh * 3.5, 6);
+  c.fill();
+  tx('WAVE SUPERPOSITION', l, y, 18, PURPLE, 'left', 'middle', 'Orbitron');
+  y += lh;
+  tx('Combine multiple waves using the 4-track mixer!', l, y, 15, WHITE, 'left');
+  y += lh * 0.85;
+  tx('Same direction = Constructive Interference (louder)', l, y, 14, GREEN, 'left');
+  y += lh * 0.85;
+  tx('Opposite direction = Destructive Interference (quieter/silence)', l, y, 14, RED, 'left');
+  y += lh * 1.3;
+
+  // Wave equation
+  c.fillStyle = 'rgba(255,215,0,0.06)';
+  rr(px + 8, y - 12, pw - 16, lh * 2.5, 6);
+  c.fill();
+  tx('WAVE EQUATION', l, y, 18, CYAN, 'left', 'middle', 'Orbitron');
+  y += lh * 1.1;
+  c.save();
+  c.shadowColor = GOLD;
+  c.shadowBlur = 8;
+  tx('y = A \u00D7 sin(2\u03C0ft)', l + 20, y, 24, GOLD, 'left', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+  tx('A = amplitude    f = frequency (Hz)    t = time (s)', l + 260, y, 13, 'rgba(255,255,255,0.45)', 'left');
+
+  // Animated demo waves on the right side
+  let dx = px + pw - 180, dy = py + 55, dw = 150;
+
+  // Small amplitude demo
+  c.strokeStyle = RED;
+  c.lineWidth = 2;
+  c.beginPath();
+  for (let i = 0; i < dw; i++) {
+    let ph = at * 3 + (i / dw) * Math.PI * 4;
+    let v = Math.sin(ph) * 15;
+    i === 0 ? c.moveTo(dx + i, dy + v) : c.lineTo(dx + i, dy + v);
+  }
+  c.stroke();
+  tx('Small Amp = Quiet', dx + dw / 2, dy + 32, 11, 'rgba(255,255,255,0.5)', 'center');
+
+  // Large amplitude demo
+  dy += 70;
+  c.strokeStyle = GREEN;
+  c.lineWidth = 2;
+  c.beginPath();
+  for (let i = 0; i < dw; i++) {
+    let ph = at * 3 + (i / dw) * Math.PI * 4;
+    let v = Math.sin(ph) * 30;
+    i === 0 ? c.moveTo(dx + i, dy + v) : c.lineTo(dx + i, dy + v);
+  }
+  c.stroke();
+  tx('Big Amp = LOUD', dx + dw / 2, dy + 42, 11, 'rgba(255,255,255,0.5)', 'center');
+
+  // Low frequency demo
+  dy += 75;
+  c.strokeStyle = ORANGE;
+  c.lineWidth = 2;
+  c.beginPath();
+  for (let i = 0; i < dw; i++) {
+    let ph = at * 2 + (i / dw) * Math.PI * 3;
+    let v = Math.sin(ph) * 18;
+    i === 0 ? c.moveTo(dx + i, dy + v) : c.lineTo(dx + i, dy + v);
+  }
+  c.stroke();
+  tx('Low Freq = Low Pitch', dx + dw / 2, dy + 30, 11, 'rgba(255,255,255,0.5)', 'center');
+
+  // High frequency demo
+  dy += 55;
+  c.strokeStyle = BLUE;
+  c.lineWidth = 2;
+  c.beginPath();
+  for (let i = 0; i < dw; i++) {
+    let ph = at * 2 + (i / dw) * Math.PI * 12;
+    let v = Math.sin(ph) * 18;
+    i === 0 ? c.moveTo(dx + i, dy + v) : c.lineTo(dx + i, dy + v);
+  }
+  c.stroke();
+  tx('High Freq = High Pitch', dx + dw / 2, dy + 30, 11, 'rgba(255,255,255,0.5)', 'center');
+
+  // Constructive/Destructive demo
+  dy += 65;
+  c.strokeStyle = GREEN + '80';
+  c.lineWidth = 1.5;
+  c.beginPath();
+  for (let i = 0; i < dw; i++) {
+    let ph = at * 3 + (i / dw) * Math.PI * 4;
+    let v = Math.sin(ph) * 12;
+    i === 0 ? c.moveTo(dx + i, dy + v) : c.lineTo(dx + i, dy + v);
+  }
+  c.stroke();
+  // Superposition result (constructive)
+  c.strokeStyle = CYAN;
+  c.lineWidth = 2;
+  c.beginPath();
+  for (let i = 0; i < dw; i++) {
+    let ph = at * 3 + (i / dw) * Math.PI * 4;
+    let v = Math.sin(ph) * 24; // doubled!
+    i === 0 ? c.moveTo(dx + i, dy + v) : c.lineTo(dx + i, dy + v);
+  }
+  c.stroke();
+  tx('Constructive = 2x', dx + dw / 2, dy + 35, 10, GREEN, 'center');
+
+  // Back button
+  let bw = 120, bh = 36;
+  let bx = cx2 - bw / 2, by = H - 48;
+  btn(bx, by, bw, bh, 'BACK', CYAN, inR(mx, my, bx, by, bw, bh), false, 16);
+  ui.backBtn = { x: bx, y: by, w: bw, h: bh };
+}
+
+// ========================= CHALLENGE SELECT =========================
+function drawChSel() {
+  let cx2 = W / 2;
+  c.save();
+  c.shadowColor = CYAN;
+  c.shadowBlur = 15;
+  tx('SELECT CHALLENGE', cx2, 40, 30, CYAN, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+
+  let cw = Math.min(135, (W - 80) / 5 - 10), ch = 180;
+  let tw = cw * 5 + 40, sx = cx2 - tw / 2, cy2 = H / 2 - ch / 2;
+
+  ui.chCards = [];
+  for (let i = 0; i < 5; i++) {
+    let x = sx + i * (cw + 10);
+    let hov = inR(mx, my, x, cy2, cw, ch);
+    glass(x, cy2, cw, ch, 10);
+
+    if (hov) {
+      c.strokeStyle = CYAN;
+      c.lineWidth = 2;
+      c.shadowColor = CYAN;
+      c.shadowBlur = 10;
+      rr(x, cy2, cw, ch, 10);
+      c.stroke();
+      c.shadowBlur = 0;
+    }
+
+    // Level number
+    tx((i + 1).toString(), x + cw / 2, cy2 + 28, 28, CYAN, 'center', 'middle', 'Orbitron');
+
+    // Name
+    tx(CHALLENGES[i].name, x + cw / 2, cy2 + 56, 12, WHITE, 'center');
+
+    // Stars
+    let sy = cy2 + 80;
+    for (let s = 0; s < 3; s++) {
+      let sx2 = x + cw / 2 - 20 + s * 20;
+      let filled = s < prog.stars[i];
+      tx(filled ? '\u2605' : '\u2606', sx2, sy, 18,
+         filled ? GOLD : 'rgba(255,255,255,0.3)', 'center');
+    }
+
+    // Best score
+    if (prog.best[i] > 0) {
+      tx('Best: ' + prog.best[i], x + cw / 2, cy2 + 108, 12, 'rgba(255,255,255,0.4)', 'center');
+    }
+
+    // Description lines
+    let lines = CHALLENGES[i].desc.split('\n');
+    let dy = cy2 + 128;
+    for (let line of lines.slice(0, 3)) {
+      tx(line.trim(), x + cw / 2, dy, 9, 'rgba(255,255,255,0.35)', 'center');
+      dy += 13;
+    }
+
+    ui.chCards.push({ x: x, y: cy2, w: cw, h: ch });
+  }
+
+  // Back button
+  let bw = 120, bh = 36;
+  let bx = cx2 - bw / 2, by = H - 48;
+  btn(bx, by, bw, bh, 'BACK', CYAN, inR(mx, my, bx, by, bw, bh), false, 16);
+  ui.backBtn = { x: bx, y: by, w: bw, h: bh };
+
+  // Streak display
+  if (prog.streak > 0) {
+    tx('\u{1F525} Best Streak: ' + prog.streak, cx2, cy2 + ch + 18, 14, GOLD, 'center');
+  }
+}
+
+// ========================= GAMEPLAY =========================
+function drawPlay(isCh) {
+  let u = ui, t = tracks[aTrk], nt = u.nt;
+
+  if (isCh) drawChHUD();
+
+  // Oscilloscope
+  drawScope(u.scopeX, u.scopeY, u.scopeW, u.scopeH);
+
+  // FFT toggle
+  let fh = inR(mx, my, u.fftBX, u.fftBY, 55, 22);
+  btn(u.fftBX, u.fftBY, 55, 22, showFFT ? 'WAVE' : 'FFT', CYAN, fh, showFFT, 11);
+  ui.fftBtn = { x: u.fftBX, y: u.fftBY, w: 55, h: 22 };
+
+  // Amplitude slider
+  drawAmp(u.ampX, u.ampY, u.ampW, u.ampH, t);
+
+  // Frequency slider
+  drawFreq(u.fqX, u.fqY, u.fqW, u.fqH, t);
+
+  // Wave type selector
+  drawWType(u.wtX, u.wtY, u.wtBW, u.wtBH, t);
+
+  // Science panel
+  drawSci(u.sciX, u.sciY, u.sciW, u.sciH, t);
+
+  // Track mixer
+  drawMixer(u.mixX, u.mixY, u.mixW, u.mixH, u.trkH, nt);
+
+  // Sandbox controls
+  if (!isCh) drawSandbox();
+
+  // Back button
+  let bbh = inR(mx, my, 10, 10, 55, 24);
+  btn(10, 10, 55, 24, '\u2190 BACK', 'rgba(255,255,255,0.4)', bbh, false, 11);
+  ui.backBtn = { x: 10, y: 10, w: 55, h: 24 };
+
+  // Mute button
+  let isMuted = master && master.gain.value < 0.01;
+  let mh = inR(mx, my, 10, 40, 55, 24);
+  btn(10, 40, 55, 24, isMuted ? 'UNMUTE' : 'MUTE', 'rgba(255,255,255,0.4)', mh, isMuted, 10);
+  ui.muteBtn = { x: 10, y: 40, w: 55, h: 24 };
+
+  // Note name display
+  let nn = noteName(t.freq);
+  if (nn) {
+    tx(nn, 10, 70, 14, fCol(t.freq), 'left', 'middle', 'Orbitron');
+  }
+
+  // Result overlay
+  if (showRes) drawResult();
+}
+
+// ---- OSCILLOSCOPE ----
+function drawScope(sx, sy, sw, sh) {
+  // Scope background
+  rr(sx, sy, sw, sh, 8);
+  c.fillStyle = SCOPE_BG;
+  c.fill();
+
+  // Outer bezel glow
+  c.strokeStyle = 'rgba(0,229,255,0.15)';
+  c.lineWidth = 2;
+  rr(sx, sy, sw, sh, 8);
+  c.stroke();
+
+  c.save();
+  c.beginPath();
+  rr(sx, sy, sw, sh, 8);
+  c.clip();
+
+  // Internal grid
+  c.strokeStyle = 'rgba(255,255,255,0.04)';
+  c.lineWidth = 1;
+  for (let x = sx; x < sx + sw; x += 40) {
+    c.beginPath(); c.moveTo(x, sy); c.lineTo(x, sy + sh); c.stroke();
+  }
+  for (let y = sy; y < sy + sh; y += 40) {
+    c.beginPath(); c.moveTo(sx, y); c.lineTo(sx + sw, y); c.stroke();
+  }
+
+  // Center line
+  c.strokeStyle = 'rgba(255,255,255,0.08)';
+  c.lineWidth = 1;
+  c.beginPath();
+  c.moveTo(sx, sy + sh / 2);
+  c.lineTo(sx + sw, sy + sh / 2);
+  c.stroke();
+
+  // Axis labels
+  tx('0', sx + 4, sy + sh / 2 + 12, 8, 'rgba(255,255,255,0.2)', 'left');
+  tx('+A', sx + 4, sy + 12, 8, 'rgba(255,255,255,0.15)', 'left');
+  tx('-A', sx + 4, sy + sh - 8, 8, 'rgba(255,255,255,0.15)', 'left');
+  tx('time \u2192', sx + sw - 40, sy + sh / 2 + 12, 8, 'rgba(255,255,255,0.15)', 'left');
+
+  if (showFFT && anl) {
+    drawFFT(sx, sy, sw, sh);
+  } else {
+    drawWave(sx, sy, sw, sh);
+
+    // Challenge 1: draw target wave as gold dashed line
+    if (st === 'CHALLENGE' && chI === 0 && !chDone) {
+      let ch = CHALLENGES[0], hH = sh / 2 - 10, cyc = sy + sh / 2;
+      c.save();
+      c.globalAlpha = 0.3;
+      c.strokeStyle = GOLD;
+      c.lineWidth = 2;
+      c.setLineDash([6, 4]);
+      c.beginPath();
+      let cv = cl(ch.tFreq / 50, 2, 20);
+      for (let i = 0; i < sw; i++) {
+        let ph = at * ch.tFreq * Math.PI * 2 + (i / sw) * Math.PI * 2 * cv;
+        let v = wSmp('sine', ph) * ch.tAmp;
+        let y = cyc + v * hH;
+        i === 0 ? c.moveTo(sx + i, y) : c.lineTo(sx + i, y);
+      }
+      c.stroke();
+      c.setLineDash([]);
+      c.restore();
+      tx('--- Target (gold dashed)', sx + 10, sy + 14, 10, GOLD, 'left');
+    }
+  }
+
+  // Scanline effect for CRT oscilloscope look
+  c.fillStyle = 'rgba(0,0,0,0.03)';
+  for (let y = sy + (scanOffset % 4); y < sy + sh; y += 4) {
+    c.fillRect(sx, y, sw, 1);
+  }
+
+  // Vignette corners
+  let vg = c.createRadialGradient(sx + sw / 2, sy + sh / 2, sw * 0.3, sx + sw / 2, sy + sh / 2, sw * 0.7);
+  vg.addColorStop(0, 'transparent');
+  vg.addColorStop(1, 'rgba(0,0,0,0.2)');
+  c.fillStyle = vg;
+  c.fillRect(sx, sy, sw, sh);
+
+  c.restore();
+
+  // Interference labels above scope
+  drawInterf(sx, sy, sw);
+}
+
+function drawWave(sx, sy, sw, sh) {
+  let cyc = sy + sh / 2, hH = sh / 2 - 10, nt = ui.nt;
+
+  if (anl && audioOn) {
+    let buf = anl.fftSize;
+    let data = new Float32Array(buf);
+    anl.getFloatTimeDomainData(data);
+
+    // Glow underneath the wave
+    c.save();
+    c.globalAlpha = 0.15;
+    c.strokeStyle = CYAN;
+    c.lineWidth = 8;
+    c.beginPath();
+    for (let i = 0; i < sw; i++) {
+      let idx = Math.min(Math.floor(i * buf / sw), buf - 1);
+      let y = cyc + data[idx] * hH * 2;
+      i === 0 ? c.moveTo(sx + i, y) : c.lineTo(sx + i, y);
+    }
+    c.stroke();
+    c.restore();
+
+    // Main waveform from analyser
+    c.strokeStyle = CYAN;
+    c.lineWidth = 2.5;
+    c.shadowColor = CYAN;
+    c.shadowBlur = 6;
+    c.beginPath();
+    for (let i = 0; i < sw; i++) {
+      let idx = Math.min(Math.floor(i * buf / sw), buf - 1);
+      let y = cyc + data[idx] * hH * 2;
+      i === 0 ? c.moveTo(sx + i, y) : c.lineTo(sx + i, y);
+    }
+    c.stroke();
+    c.shadowBlur = 0;
+
+    // Individual track ghost waves
+    for (let ti = 0; ti < nt; ti++) {
+      let t = tracks[ti];
+      if (!t.on || t.amp < 0.01) continue;
+      c.strokeStyle = TCOL[ti] + '40';
+      c.lineWidth = 1;
+      c.beginPath();
+      let cv = cl(t.freq / 50, 2, 20);
+      for (let i = 0; i < sw; i += 2) {
+        let ph = at * t.freq * Math.PI * 2 + (i / sw) * Math.PI * 2 * cv;
+        let sign = (noiseCancel && ti === 1) ? -1 : 1;
+        let v = wSmp(t.type, ph) * t.amp * sign;
+        let y = cyc + v * hH;
+        i === 0 ? c.moveTo(sx + i, y) : c.lineTo(sx + i, y);
+      }
+      c.stroke();
+    }
+  } else {
+    // Fallback: mathematical rendering
+    c.strokeStyle = CYAN;
+    c.lineWidth = 2.5;
+    c.shadowColor = CYAN;
+    c.shadowBlur = 6;
+    c.beginPath();
+    for (let i = 0; i < sw; i++) {
+      let comb = 0;
+      for (let ti = 0; ti < nt; ti++) {
+        let t = tracks[ti];
+        if (!t.on || t.amp < 0.01) continue;
+        let cv = cl(t.freq / 50, 2, 20);
+        let ph = at * t.freq * Math.PI * 2 + (i / sw) * Math.PI * 2 * cv;
+        let sign = (noiseCancel && ti === 1) ? -1 : 1;
+        comb += wSmp(t.type, ph) * t.amp * sign;
+      }
+      comb = cl(comb, -1.5, 1.5);
+      let y = cyc + comb * hH * 0.7;
+      i === 0 ? c.moveTo(sx + i, y) : c.lineTo(sx + i, y);
+    }
+    c.stroke();
+    c.shadowBlur = 0;
+  }
+}
+
+function drawFFT(sx, sy, sw, sh) {
+  if (!anl) return;
+  let d = new Uint8Array(anl.frequencyBinCount);
+  anl.getByteFrequencyData(d);
+  let bc = Math.min(128, sw / 3), bw = sw / bc;
+  let step = Math.floor(d.length / bc);
+
+  for (let i = 0; i < bc; i++) {
+    let v = d[i * step] / 255;
+    let bh = v * (sh - 20);
+    let hue = (i / bc) * 270;
+    // Bar with gradient
+    let grad = c.createLinearGradient(0, sy + sh - bh - 5, 0, sy + sh - 5);
+    grad.addColorStop(0, `hsla(${hue},100%,70%,0.9)`);
+    grad.addColorStop(1, `hsla(${hue},100%,40%,0.5)`);
+    c.fillStyle = grad;
+    c.fillRect(sx + i * bw + 1, sy + sh - bh - 5, bw - 2, bh);
+  }
+
+  tx('FREQUENCY DOMAIN', sx + sw / 2, sy + 15, 11, 'rgba(255,255,255,0.4)', 'center');
+  tx('Low', sx + 20, sy + sh - 10, 9, RED, 'left');
+  tx('High', sx + sw - 20, sy + sh - 10, 9, PURPLE, 'right');
+}
+
+function drawInterf(sx, sy, sw) {
+  let nt = ui.nt;
+  let en = [];
+  for (let i = 0; i < nt; i++) {
+    if (tracks[i].on && tracks[i].amp > 0.05) en.push(tracks[i]);
+  }
+  if (en.length < 2) return;
+
+  for (let i = 0; i < en.length; i++) {
+    for (let j = i + 1; j < en.length; j++) {
+      let fd = Math.abs(en[i].freq - en[j].freq);
+      let ad = Math.abs(en[i].amp - en[j].amp);
+      if (fd < 2 && ad < 0.1) {
+        tx('\u2191 Constructive Interference', sx + sw / 2, sy - 6, 12, GREEN, 'center');
+        return;
+      }
+      if (fd >= 2 && fd < 20) {
+        tx('\u266B Beat Frequency: ' + fd.toFixed(1) + ' Hz', sx + sw / 2, sy - 6, 12, GOLD, 'center');
+        return;
+      }
+    }
+  }
+
+  if (noiseCancel) {
+    let t0 = tracks[0], t1 = tracks[1];
+    if (t1.on && t1.amp > 0.1 &&
+        Math.abs(t0.freq - t1.freq) < 5 &&
+        Math.abs(t0.amp - t1.amp) < 0.1) {
+      tx('\u2193 Destructive Interference (Cancelling!)', sx + sw / 2, sy - 6, 12, RED, 'center');
+    }
+  }
+}
+
+// ---- AMPLITUDE SLIDER ----
+function drawAmp(sx, sy, sw, sh, trk) {
+  glass(sx, sy - 15, sw, sh + 58, 6);
+
+  let rX = sx + sw / 2;
+  let rY1 = sy + 10, rY2 = sy + sh - 10;
+
+  // Rail
+  c.strokeStyle = 'rgba(255,255,255,0.15)';
+  c.lineWidth = 3;
+  c.beginPath();
+  c.moveTo(rX, rY1);
+  c.lineTo(rX, rY2);
+  c.stroke();
+
+  // Filled portion
+  let an = (trk.amp - AMIN) / (AMAX - AMIN);
+  let kY = rY2 - an * (rY2 - rY1);
+  let col = fCol(trk.freq);
+
+  let grad = c.createLinearGradient(0, rY2, 0, kY);
+  grad.addColorStop(0, col + '40');
+  grad.addColorStop(1, col);
+  c.strokeStyle = grad;
+  c.lineWidth = 4;
+  c.beginPath();
+  c.moveTo(rX, rY2);
+  c.lineTo(rX, kY);
+  c.stroke();
+
+  // Tick marks
+  for (let i = 0; i <= 4; i++) {
+    let ty = rY2 - (i / 4) * (rY2 - rY1);
+    c.strokeStyle = 'rgba(255,255,255,0.12)';
+    c.lineWidth = 1;
+    c.beginPath();
+    c.moveTo(rX - 12, ty);
+    c.lineTo(rX - 6, ty);
+    c.stroke();
+    tx((i * 25) + '%', rX - 14, ty, 7, 'rgba(255,255,255,0.25)', 'right');
+  }
+
+  // Knob
+  let isD = drag && drag.type === 'amp';
+  c.beginPath();
+  c.arc(rX, kY, 10, 0, Math.PI * 2);
+  c.fillStyle = isD ? CYAN : '#333';
+  c.fill();
+  c.strokeStyle = CYAN;
+  c.lineWidth = 2;
+  c.stroke();
+  if (isD) {
+    c.shadowColor = CYAN;
+    c.shadowBlur = 18;
+    c.stroke();
+    c.shadowBlur = 0;
+  }
+
+  // Labels
+  tx('AMP', sx + sw / 2, sy - 8, 10, 'rgba(255,255,255,0.5)', 'center');
+  tx(trk.amp.toFixed(2), sx + sw / 2, sy + sh + 8, 13, CYAN, 'center', 'middle', 'Orbitron');
+  let nrg = (trk.amp * trk.amp * 100).toFixed(1);
+  tx(nrg + 'J', sx + sw / 2, sy + sh + 25, 10, ORANGE, 'center');
+  tx('Energy', sx + sw / 2, sy + sh + 38, 8, 'rgba(255,255,255,0.3)', 'center');
+
+  ui.ampSl = { x: sx, y: sy - 5, w: sw, h: sh + 10, rY1, rY2, rX };
+}
+
+// ---- FREQUENCY SLIDER ----
+function drawFreq(sx, sy, sw, sh, trk) {
+  glass(sx - 15, sy, sw + 30, sh, 6);
+
+  let rX1 = sx + 10, rX2 = sx + sw - 10, rY = sy + sh / 2;
+
+  // Rail
+  c.strokeStyle = 'rgba(255,255,255,0.15)';
+  c.lineWidth = 3;
+  c.beginPath();
+  c.moveTo(rX1, rY);
+  c.lineTo(rX2, rY);
+  c.stroke();
+
+  // Frequency position (logarithmic scale)
+  let fn = (Math.log(trk.freq) - Math.log(FMIN)) / (Math.log(FMAX) - Math.log(FMIN));
+  let kX = rX1 + fn * (rX2 - rX1);
+
+  // Filled gradient
+  let grad = c.createLinearGradient(rX1, 0, rX2, 0);
+  grad.addColorStop(0, RED);
+  grad.addColorStop(0.5, GREEN);
+  grad.addColorStop(1, PURPLE);
+  c.strokeStyle = grad;
+  c.lineWidth = 4;
+  c.beginPath();
+  c.moveTo(rX1, rY);
+  c.lineTo(kX, rY);
+  c.stroke();
+
+  // Notable frequency tick marks
+  let notable = [200, 261, 440, 523, 800, 1000, 1500];
+  for (let nf of notable) {
+    let nfn = (Math.log(nf) - Math.log(FMIN)) / (Math.log(FMAX) - Math.log(FMIN));
+    if (nfn < 0 || nfn > 1) continue;
+    let tx2 = rX1 + nfn * (rX2 - rX1);
+    c.strokeStyle = 'rgba(255,255,255,0.1)';
+    c.lineWidth = 1;
+    c.beginPath();
+    c.moveTo(tx2, rY + 6);
+    c.lineTo(tx2, rY + 12);
+    c.stroke();
+    let lbl = nf >= 1000 ? (nf / 1000) + 'k' : nf.toString();
+    tx(lbl, tx2, rY + 18, 7, 'rgba(255,255,255,0.2)', 'center');
+  }
+
+  // Knob
+  let isD = drag && drag.type === 'freq';
+  let col = fCol(trk.freq);
+  c.beginPath();
+  c.arc(kX, rY, 10, 0, Math.PI * 2);
+  c.fillStyle = isD ? col : '#333';
+  c.fill();
+  c.strokeStyle = col;
+  c.lineWidth = 2;
+  c.stroke();
+  if (isD) {
+    c.shadowColor = col;
+    c.shadowBlur = 18;
+    c.stroke();
+    c.shadowBlur = 0;
+  }
+
+  // Labels
+  tx(Math.round(trk.freq) + ' Hz', sx + sw + 18, rY - 2, 13, fCol(trk.freq), 'left', 'middle', 'Orbitron');
+  tx(pitchLbl(trk.freq), sx - 18, rY, 11, 'rgba(255,255,255,0.5)', 'right', 'middle');
+
+  // Note name if close to a musical note
+  let nn = noteName(trk.freq);
+  if (nn) {
+    tx(nn, sx + sw + 18, rY + 12, 10, 'rgba(255,255,255,0.4)', 'left');
+  }
+
+  ui.freqSl = { x: sx - 5, y: sy, w: sw + 10, h: sh, rX1, rX2, rY };
+}
+
+// ---- WAVE TYPE SELECTOR ----
+function drawWType(sx, sy, bw, bh, trk) {
+  ui.wtBtns = [];
+  for (let i = 0; i < 4; i++) {
+    let bx = sx + i * (bw + 6);
+    let act = trk.ti === i;
+    let hov = inR(mx, my, bx, sy, bw, bh);
+    btn(bx, sy, bw, bh, WLABELS[i], TCOL[i], hov, act, 12);
+
+    // Mini waveform icon on active button
+    if (act) {
+      c.save();
+      c.strokeStyle = '#111';
+      c.lineWidth = 1.5;
+      c.beginPath();
+      for (let x = 0; x < bw - 16; x += 2) {
+        let ph = at * 4 + (x / (bw - 16)) * Math.PI * 4;
+        let v = wSmp(WTYPES[i], ph) * 5;
+        let px = bx + 8 + x, py = sy + bh / 2 + v - 1;
+        x === 0 ? c.moveTo(px, py) : c.lineTo(px, py);
+      }
+      c.stroke();
+      c.restore();
+    }
+
+    ui.wtBtns.push({ x: bx, y: sy, w: bw, h: bh, i: i });
+  }
+}
+
+// ---- SCIENCE PANEL ----
+function drawSci(sx, sy, sw, sh, trk) {
+  glass(sx, sy, sw, sh, 8);
+
+  let y = sy + 18, cx2 = sx + sw / 2, lh = 17;
+
+  tx('SCIENCE', cx2, y, 10, CYAN, 'center', 'middle', 'Orbitron');
+  y += lh + 4;
+
+  // Amplitude = Energy block
+  c.fillStyle = 'rgba(255,82,82,0.1)';
+  rr(sx + 4, y - 8, sw - 8, 44, 4);
+  c.fill();
+  tx('Amplitude', cx2, y, 10, 'rgba(255,255,255,0.6)', 'center');
+  y += lh * 0.7;
+  tx('= Energy', cx2, y, 10, ORANGE, 'center');
+  y += lh * 0.7;
+  tx('E ~ A\u00B2', cx2, y, 12, RED, 'center', 'middle', 'Orbitron');
+  y += lh * 1.3;
+
+  // Frequency = Pitch block
+  c.fillStyle = 'rgba(68,138,255,0.1)';
+  rr(sx + 4, y - 8, sw - 8, 44, 4);
+  c.fill();
+  tx('Frequency', cx2, y, 10, 'rgba(255,255,255,0.6)', 'center');
+  y += lh * 0.7;
+  tx('= Pitch', cx2, y, 10, BLUE, 'center');
+  y += lh * 0.7;
+  tx(Math.round(trk.freq) + 'Hz', cx2, y, 12, fCol(trk.freq), 'center', 'middle', 'Orbitron');
+  y += lh * 1.3;
+
+  // Equation
+  tx('y = A\u00B7sin', cx2, y, 9, GOLD, 'center');
+  y += lh * 0.7;
+  tx('(2\u03C0ft)', cx2, y, 9, GOLD, 'center');
+  y += lh * 1.2;
+
+  // Energy readout
+  let nrg = (trk.amp * trk.amp * 100).toFixed(1);
+  c.save();
+  c.shadowColor = ORANGE;
+  c.shadowBlur = 6;
+  tx(nrg, cx2, y, 18, ORANGE, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+  y += lh * 0.8;
+  tx('joules', cx2, y, 9, 'rgba(255,255,255,0.4)', 'center');
+}
+
+// ---- TRACK MIXER ----
+function drawMixer(mx2, my2, mw, mh, th, nt) {
+  glass(mx2, my2, mw, mh, 8);
+  tx('TRACKS', mx2 + 8, my2 + 12, 10, 'rgba(255,255,255,0.4)', 'left', 'middle', 'Orbitron');
+
+  ui.trkBtns = [];
+  ui.trkMuteBtns = [];
+
+  for (let i = 0; i < nt; i++) {
+    let t = tracks[i];
+    let ty = my2 + 22 + i * (th + 4);
+    let act = aTrk === i;
+
+    // Track background
+    rr(mx2 + 5, ty, mw - 10, th, 4);
+    c.fillStyle = act ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.2)';
+    c.fill();
+    if (act) {
+      c.strokeStyle = TCOL[i];
+      c.lineWidth = 1.5;
+      c.stroke();
+    }
+
+    // Track number circle
+    c.beginPath();
+    c.arc(mx2 + 20, ty + th / 2, 10, 0, Math.PI * 2);
+    c.fillStyle = act ? TCOL[i] + '30' : 'rgba(0,0,0,0.3)';
+    c.fill();
+    c.strokeStyle = TCOL[i];
+    c.lineWidth = 1;
+    c.stroke();
+    tx((i + 1).toString(), mx2 + 20, ty + th / 2, 12, TCOL[i], 'center', 'middle', 'Orbitron');
+
+    // Mute/unmute button
+    let muX = mx2 + 38, muY = ty + 5, muW = 30, muH = th - 10;
+    let muHov = inR(mx, my, muX, muY, muW, muH);
+    btn(muX, muY, muW, muH, t.on ? 'ON' : 'OFF', t.on ? GREEN : RED, muHov, t.on, 9);
+    ui.trkMuteBtns.push({ x: muX, y: muY, w: muW, h: muH, i: i });
+
+    // Locked indicator for noise cancel track 0
+    if (noiseCancel && i === 0) {
+      tx('LOCKED', mx2 + 75, ty + th / 2, 10, RED, 'left', 'middle', 'Orbitron');
+    }
+
+    // Mini waveform preview
+    let pvX = mx2 + (noiseCancel && i === 0 ? 125 : 75);
+    let pvW = mw - (noiseCancel && i === 0 ? 240 : 200);
+    let pvH = th - 10, pvY = ty + 5;
+
+    c.save();
+    c.beginPath();
+    rr(pvX, pvY, pvW, pvH, 3);
+    c.clip();
+    c.fillStyle = 'rgba(0,0,0,0.3)';
+    c.fillRect(pvX, pvY, pvW, pvH);
+
+    // Center line in mini preview
+    c.strokeStyle = 'rgba(255,255,255,0.05)';
+    c.lineWidth = 1;
+    c.beginPath();
+    c.moveTo(pvX, pvY + pvH / 2);
+    c.lineTo(pvX + pvW, pvY + pvH / 2);
+    c.stroke();
+
+    if (t.on && t.amp > 0.01) {
+      c.strokeStyle = TCOL[i] + (act ? 'CC' : '60');
+      c.lineWidth = act ? 2 : 1.5;
+      c.beginPath();
+      let cv = cl(t.freq / 80, 2, 10);
+      for (let x = 0; x < pvW; x += 2) {
+        let ph = at * t.freq * Math.PI * 2 + (x / pvW) * Math.PI * 2 * cv;
+        let v = wSmp(t.type, ph) * t.amp;
+        let y = pvY + pvH / 2 + v * (pvH / 2 - 2);
+        x === 0 ? c.moveTo(pvX + x, y) : c.lineTo(pvX + x, y);
+      }
+      c.stroke();
+    }
+    c.restore();
+
+    // Track info
+    let inX = mx2 + mw - 118;
+    tx(Math.round(t.freq) + 'Hz', inX, ty + th / 2 - 7, 11, 'rgba(255,255,255,0.6)', 'left');
+    tx('A:' + t.amp.toFixed(2), inX, ty + th / 2 + 7, 10, 'rgba(255,255,255,0.4)', 'left');
+    tx(WLABELS[t.ti], inX + 60, ty + th / 2, 10, TCOL[i], 'left', 'middle');
+
+    ui.trkBtns.push({ x: mx2 + 5, y: ty, w: mw - 10, h: th, i: i });
+  }
+}
+
+// ---- SANDBOX CONTROLS ----
+function drawSandbox() {
+  let u = ui;
+  let rbx = u.mixX + u.mixW - 230, rby = u.wtY, rbw = 95, rbh = 28;
+
+  // Record button
+  let rh = inR(mx, my, rbx, rby, rbw, rbh);
+  btn(rbx, rby, rbw, rbh,
+    isRec ? '\u23F9 STOP REC' : '\u23FA RECORD',
+    isRec ? RED : GREEN, rh, isRec, 12);
+  ui.recBtn = { x: rbx, y: rby, w: rbw, h: rbh };
+
+  // Play button
+  let pbx = rbx + rbw + 10, pby = rby;
+  let canP = recD.length > 0;
+  let ph = canP && inR(mx, my, pbx, pby, rbw, rbh);
+  btn(pbx, pby, rbw, rbh,
+    isPlay ? '\u23F9 STOP' : '\u25B6 PLAY',
+    canP ? BLUE : 'rgba(255,255,255,0.2)', ph, isPlay, 12);
+  ui.playBtn = { x: pbx, y: pby, w: rbw, h: rbh };
+
+  // Share button
+  let sbx = pbx + rbw + 10;
+  let sh = inR(mx, my, sbx, pby, 70, rbh);
+  btn(sbx, pby, 70, rbh, 'SHARE', PURPLE, sh, false, 12);
+  ui.shareBtn = { x: sbx, y: pby, w: 70, h: rbh };
+
+  // Recording indicator
+  if (isRec) {
+    let el = audioOn ? (ac.currentTime - recS) : 0;
+    let pulse = 0.5 + 0.5 * Math.sin(at * 6);
+    c.fillStyle = `rgba(255,82,82,${pulse})`;
+    c.beginPath();
+    c.arc(rbx - 12, rby + rbh / 2, 5, 0, Math.PI * 2);
+    c.fill();
+    tx('REC ' + el.toFixed(1) + 's / 30s', rbx, rby - 12, 11, RED, 'left');
+
+    // Recording progress bar
+    let pct = el / 30;
+    c.fillStyle = 'rgba(255,255,255,0.1)';
+    c.fillRect(rbx, rby - 5, 200, 3);
+    c.fillStyle = RED;
+    c.fillRect(rbx, rby - 5, 200 * pct, 3);
+  }
+
+  if (isPlay && playD) {
+    let el = audioOn ? (ac.currentTime - playS) : 0;
+    tx('\u25B6 ' + el.toFixed(1) + 's', pbx, pby - 12, 11, BLUE, 'left');
+  }
+}
+
+// ---- CHALLENGE HUD ----
+function drawChHUD() {
+  let ch = CHALLENGES[chI];
+
+  // Top bar background
+  glass(0, 0, W, 42, 0);
+
+  // Challenge title
+  tx('CHALLENGE ' + (chI + 1) + ': ' + ch.name, 75, 14, 15, CYAN, 'left', 'middle', 'Orbitron');
+
+  // Timer
+  let tl = Math.max(0, (ch.time || 60) - chT);
+  let tc = tl < 10 ? RED : tl < 20 ? ORANGE : WHITE;
+  tx(tl.toFixed(1) + 's', W - 75, 14, 18, tc, 'center', 'middle', 'Orbitron');
+
+  // Progress bar
+  let pbx = W - 130, pby = 28, pbw = 110, pbh = 5;
+  c.fillStyle = 'rgba(255,255,255,0.08)';
+  c.fillRect(pbx, pby, pbw, pbh);
+  let pct = tl / (ch.time || 60);
+  c.fillStyle = pct < 0.2 ? RED : pct < 0.4 ? ORANGE : CYAN;
+  c.fillRect(pbx, pby, pbw * pct, pbh);
+
+  // Challenge-specific HUD info
+  if (chI === 0) {
+    // Match the Tone: show target vs current
+    tx('TARGET: ' + Math.round(ch.tFreq) + ' Hz, A=' + ch.tAmp.toFixed(2) +
+       '  |  Yours: ' + Math.round(tracks[0].freq) + ' Hz, A=' + tracks[0].amp.toFixed(2),
+       W / 2, 14, 12, GOLD, 'center', 'middle');
+
+    // Closeness meters
+    let fClose = 1 - cl(Math.abs(tracks[0].freq - ch.tFreq) / (ch.tol.f * 3), 0, 1);
+    let aClose = 1 - cl(Math.abs(tracks[0].amp - ch.tAmp) / (ch.tol.a * 3), 0, 1);
+    let avg = (fClose + aClose) / 2;
+    let indicator = avg > 0.9 ? '\u2705 Almost there!'
+                  : avg > 0.6 ? '\u{1F7E1} Getting closer...'
+                  : '\u{1F534} Keep adjusting';
+    tx(indicator, W / 2, 32, 10, avg > 0.9 ? GREEN : avg > 0.6 ? ORANGE : RED, 'center');
+  }
+
+  if (chI === 1) {
+    tx('TARGET: C4=261.6  E4=329.6  G4=392.0 Hz', W / 2, 14, 12, GOLD, 'center', 'middle');
+    let ch2 = CHALLENGES[1], matched = [];
+    for (let tgt of ch2.targets) {
+      let found = false;
+      for (let i = 0; i < 3; i++) {
+        if (tracks[i].on &&
+            Math.abs(tracks[i].freq - tgt.f) < ch2.tol.f &&
+            Math.abs(tracks[i].amp - tgt.a) < ch2.tol.a) {
+          found = true; break;
+        }
+      }
+      matched.push(found);
+    }
+    let lbl = ['C4', 'E4', 'G4'].map((n, i) => (matched[i] ? '\u2705' : '\u2B1C') + n).join('  ');
+    tx(lbl, W / 2, 32, 10, WHITE, 'center');
+  }
+
+  if (chI === 2) {
+    let diff = Math.abs(tracks[0].freq - tracks[1].freq);
+    let ok = diff >= ch.bMin && diff <= ch.bMax &&
+             tracks[0].on && tracks[1].on &&
+             tracks[0].amp > 0.15 && tracks[1].amp > 0.15;
+    tx('Freq diff: ' + diff.toFixed(1) + ' Hz' + (ok ? ' \u2713 BEATS!' : ' (need 5-15 Hz)'),
+       W / 2, 14, 12, ok ? GREEN : ORANGE, 'center', 'middle');
+    // Beat visualization: pulsing indicator
+    if (ok) {
+      let beatPulse = 0.5 + 0.5 * Math.sin(at * diff * Math.PI * 2);
+      c.beginPath();
+      c.arc(W / 2 + 120, 14, 6, 0, Math.PI * 2);
+      c.fillStyle = `rgba(255,215,0,${beatPulse})`;
+      c.fill();
+    }
+  }
+
+  if (chI === 3) {
+    tx('Match Track 2 freq & amp to Track 1. Phase auto-inverted!', W / 2, 14, 12, GOLD, 'center', 'middle');
+    let t0 = tracks[0], t1 = tracks[1];
+    let fM = Math.abs(t0.freq - t1.freq) < 5;
+    let aM = Math.abs(t0.amp - t1.amp) < 0.06;
+    tx('Freq: ' + (fM ? '\u2705' : '\u274C') + '  Amp: ' + (aM ? '\u2705' : '\u274C'),
+       W / 2, 32, 10, WHITE, 'center');
+  }
+
+  if (chI === 4) {
+    tx('Use all 4 tracks for harmonious music!', W / 2, 14, 12, PURPLE, 'center', 'middle');
+    let act = tracks.filter(t => t.on && t.amp > 0.1).length;
+    tx('Active tracks: ' + act + '/4', W / 2, 32, 10, act >= 4 ? GREEN : ORANGE, 'center');
+  }
+
+  // Streak indicator
+  if (chStreak > 1) {
+    tx('\u{1F525} Streak: ' + chStreak, W - 160, 14, 12, GOLD, 'right', 'middle');
+  }
+}
+
+// ---- RESULT OVERLAY ----
+function drawResult() {
+  c.fillStyle = 'rgba(0,0,0,0.75)';
+  c.fillRect(0, 0, W, H);
+
+  let cx2 = W / 2, cy2 = H / 2;
+  let pw = 380, ph = 280;
+  glass(cx2 - pw / 2, cy2 - ph / 2, pw, ph, 16);
+
+  if (chSt > 0) {
+    c.save();
+    c.shadowColor = GOLD;
+    c.shadowBlur = 25;
+    tx('CHALLENGE COMPLETE!', cx2, cy2 - 100, 26, GOLD, 'center', 'middle', 'Orbitron');
+    c.shadowBlur = 0;
+    c.restore();
+  } else {
+    tx("TIME'S UP!", cx2, cy2 - 100, 26, RED, 'center', 'middle', 'Orbitron');
+  }
+
+  // Animated stars
+  for (let s = 0; s < 3; s++) {
+    let sx = cx2 - 35 + s * 35;
+    let scale = s < chSt ? 1 + 0.1 * Math.sin(at * 4 + s) : 1;
+    c.save();
+    c.translate(sx, cy2 - 55);
+    c.scale(scale, scale);
+    tx(s < chSt ? '\u2605' : '\u2606', 0, 0, 32,
+       s < chSt ? GOLD : 'rgba(255,255,255,0.3)', 'center');
+    c.restore();
+  }
+
+  // Score
+  c.save();
+  c.shadowColor = WHITE;
+  c.shadowBlur = 8;
+  tx('Score: ' + chSc, cx2, cy2 - 10, 24, WHITE, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+
+  if (chStreak > 1) {
+    tx('Streak Bonus: +' + chStreak * 5, cx2, cy2 + 20, 14, GOLD, 'center');
+  }
+
+  // Helpful tip on failure
+  if (chSt === 0) {
+    let tips = [
+      'Try adjusting the sliders more carefully!',
+      'Watch the target wave shape on the oscilloscope.',
+      'Listen closely to the pitch difference!',
+      'Match frequency first, then amplitude.',
+      'Use all tracks and aim for consonant intervals!'
+    ];
+    tx(tips[chI], cx2, cy2 + 45, 12, 'rgba(255,255,255,0.5)', 'center');
+  }
+
+  // Buttons
+  let bw = 130, bh = 38, gap = 15;
+  let rx = cx2 - bw - gap / 2, ry = cy2 + 70;
+  let nx = cx2 + gap / 2, ny = cy2 + 70;
+
+  btn(rx, ry, bw, bh, 'RETRY', RED, inR(mx, my, rx, ry, bw, bh), false, 15);
+  ui.retryBtn = { x: rx, y: ry, w: bw, h: bh };
+
+  if (chI < 4 && chSt > 0) {
+    btn(nx, ny, bw, bh, 'NEXT \u2192', GREEN, inR(mx, my, nx, ny, bw, bh), false, 15);
+    ui.nextBtn = { x: nx, y: ny, w: bw, h: bh };
+    ui.menuBtn = null;
+  } else {
+    btn(nx, ny, bw, bh, 'MENU', CYAN, inR(mx, my, nx, ny, bw, bh), false, 15);
+    ui.menuBtn = { x: nx, y: ny, w: bw, h: bh };
+    ui.nextBtn = null;
+  }
+}
+
+// ---- COMPLETE SCREEN ----
+function drawDone() {
+  let cx2 = W / 2, cy2 = H / 2;
+
+  c.save();
+  c.shadowColor = GOLD;
+  c.shadowBlur = 30;
+  tx('ALL CHALLENGES COMPLETE!', cx2, cy2 - 90, 32, GOLD, 'center', 'middle', 'Orbitron');
+  c.shadowBlur = 0;
+  c.restore();
+
+  let ts = prog.stars.reduce((a, b) => a + b, 0);
+  tx(ts + ' / 15 Stars', cx2, cy2 - 40, 24, WHITE, 'center');
+  tx('Best Streak: ' + prog.streak, cx2, cy2 - 10, 18, CYAN, 'center');
+
+  // Star row
+  for (let i = 0; i < 15; i++) {
+    let sx = cx2 - 150 + i * 20;
+    let scale = i < ts ? 1 + 0.05 * Math.sin(at * 3 + i * 0.5) : 1;
+    c.save();
+    c.translate(sx, cy2 + 25);
+    c.scale(scale, scale);
+    tx(i < ts ? '\u2605' : '\u2606', 0, 0, 16,
+       i < ts ? GOLD : 'rgba(255,255,255,0.3)', 'center');
+    c.restore();
+  }
+
+  // Per-challenge breakdown
+  for (let i = 0; i < 5; i++) {
+    let bx = cx2 - 210 + i * 90, by = cy2 + 60;
+    glass(bx - 10, by - 10, 80, 55, 6);
+    tx('L' + (i + 1), bx + 30, by, 11, CYAN, 'center');
+    for (let s = 0; s < 3; s++) {
+      tx(s < prog.stars[i] ? '\u2605' : '\u2606',
+         bx + 15 + s * 15, by + 18, 12,
+         s < prog.stars[i] ? GOLD : 'rgba(255,255,255,0.3)', 'center');
+    }
+    tx(prog.best[i] + 'pts', bx + 30, by + 36, 10, 'rgba(255,255,255,0.4)', 'center');
+  }
+
+  // Back button
+  let bw = 180, bh = 44;
+  let bx = cx2 - bw / 2, by = cy2 + 130;
+  btn(bx, by, bw, bh, 'BACK TO MENU', CYAN, inR(mx, my, bx, by, bw, bh), false, 16);
+  ui.backBtn = { x: bx, y: by, w: bw, h: bh };
+}
+
+// ========================= INPUT =========================
+function gp(e) {
+  let r = cvs.getBoundingClientRect();
+  return { x: e.clientX - r.left, y: e.clientY - r.top };
+}
+
+function onMD(e) {
+  let p = gp(e);
+  mx = p.x; my = p.y; md = true;
+  handleDown(p.x, p.y);
+}
+
+function onMM(e) {
+  let p = gp(e);
+  mx = p.x; my = p.y;
+  if (md) handleDrag(p.x, p.y);
+}
+
+function onMU(e) {
+  let p = gp(e);
+  mx = p.x; my = p.y; md = false;
+  if (!drag) handleClick(p.x, p.y);
+  drag = null;
+}
+
+function onTS(e) {
+  e.preventDefault();
+  if (e.touches.length > 0) {
+    let p = gp(e.touches[0]);
+    mx = p.x; my = p.y; md = true;
+    handleDown(p.x, p.y);
+  }
+}
+
+function onTM(e) {
+  e.preventDefault();
+  if (e.touches.length > 0) {
+    let p = gp(e.touches[0]);
+    mx = p.x; my = p.y;
+    if (md) handleDrag(p.x, p.y);
+  }
+}
+
+function onTE(e) {
+  e.preventDefault();
+  md = false;
+  if (!drag) handleClick(mx, my);
+  drag = null;
+}
+
+function handleDown(x, y) {
+  if (st !== 'CHALLENGE' && st !== 'SANDBOX') return;
+  if (showRes) return;
+
+  // Check amplitude slider
+  if (ui.ampSl) {
+    let s = ui.ampSl;
+    if (inR(x, y, s.x - 15, s.y - 15, s.w + 30, s.h + 30)) {
+      drag = { type: 'amp' };
+      handleDrag(x, y);
+      return;
+    }
+  }
+
+  // Check frequency slider
+  if (ui.freqSl) {
+    let s = ui.freqSl;
+    if (inR(x, y, s.x - 15, s.y - 15, s.w + 30, s.h + 30)) {
+      drag = { type: 'freq' };
+      handleDrag(x, y);
+      return;
+    }
+  }
+}
+
+function handleDrag(x, y) {
+  if (!drag) return;
+  let t = tracks[aTrk];
+
+  if (drag.type === 'amp' && ui.ampSl) {
+    let s = ui.ampSl;
+    let n = 1 - (y - s.rY1) / (s.rY2 - s.rY1);
+    t.amp = AMIN + cl(n, 0, 1) * (AMAX - AMIN);
+    updTrk(aTrk);
+  }
+
+  if (drag.type === 'freq' && ui.freqSl) {
+    let s = ui.freqSl;
+    let n = (x - s.rX1) / (s.rX2 - s.rX1);
+    n = cl(n, 0, 1);
+    t.freq = Math.exp(Math.log(FMIN) + n * (Math.log(FMAX) - Math.log(FMIN)));
+    updTrk(aTrk);
+  }
+}
+
+function handleClick(x, y) {
+  ensureAudio();
+
+  switch (st) {
+    case 'TITLE':
+      if (ui.startBtn && inR(x, y, ui.startBtn.x, ui.startBtn.y, ui.startBtn.w, ui.startBtn.h)) {
+        st = 'MODE_SELECT';
+      }
+      break;
+
+    case 'MODE_SELECT':
+      if (ui.chBtn && inR(x, y, ui.chBtn.x, ui.chBtn.y, ui.chBtn.w, ui.chBtn.h)) {
+        st = 'CHALLENGE_SELECT';
+      }
+      if (ui.sbBtn && inR(x, y, ui.sbBtn.x, ui.sbBtn.y, ui.sbBtn.w, ui.sbBtn.h)) {
+        mkTracks();
+        st = 'SANDBOX';
+        startActive(4);
+      }
+      if (ui.htBtn && inR(x, y, ui.htBtn.x, ui.htBtn.y, ui.htBtn.w, ui.htBtn.h)) {
+        st = 'HOW_TO';
+      }
+      break;
+
+    case 'HOW_TO':
+      if (ui.backBtn && inR(x, y, ui.backBtn.x, ui.backBtn.y, ui.backBtn.w, ui.backBtn.h)) {
+        st = 'MODE_SELECT';
+      }
+      break;
+
+    case 'CHALLENGE_SELECT':
+      if (ui.chCards) {
+        for (let card of ui.chCards) {
+          if (inR(x, y, card.x, card.y, card.w, card.h)) {
+            startCh(ui.chCards.indexOf(card));
+            return;
+          }
+        }
+      }
+      if (ui.backBtn && inR(x, y, ui.backBtn.x, ui.backBtn.y, ui.backBtn.w, ui.backBtn.h)) {
+        st = 'MODE_SELECT';
+      }
+      break;
+
+    case 'CHALLENGE':
+    case 'SANDBOX':
+      // Result overlay buttons
+      if (showRes) {
+        if (ui.retryBtn && inR(x, y, ui.retryBtn.x, ui.retryBtn.y, ui.retryBtn.w, ui.retryBtn.h)) {
+          showRes = false;
+          startCh(chI);
+          return;
+        }
+        if (ui.nextBtn && inR(x, y, ui.nextBtn.x, ui.nextBtn.y, ui.nextBtn.w, ui.nextBtn.h)) {
+          showRes = false;
+          if (chI < 4) startCh(chI + 1);
+          else { st = 'COMPLETE'; stopAll(); }
+          return;
+        }
+        if (ui.menuBtn && inR(x, y, ui.menuBtn.x, ui.menuBtn.y, ui.menuBtn.w, ui.menuBtn.h)) {
+          showRes = false;
+          st = 'CHALLENGE_SELECT';
+          stopAll();
+          return;
+        }
+        return;
+      }
+
+      // Back button
+      if (ui.backBtn && inR(x, y, ui.backBtn.x, ui.backBtn.y, ui.backBtn.w, ui.backBtn.h)) {
+        stopAll();
+        isRec = false;
+        isPlay = false;
+        st = st === 'CHALLENGE' ? 'CHALLENGE_SELECT' : 'MODE_SELECT';
+        return;
+      }
+
+      // Mute button
+      if (ui.muteBtn && inR(x, y, ui.muteBtn.x, ui.muteBtn.y, ui.muteBtn.w, ui.muteBtn.h)) {
+        if (master) {
+          let m = master.gain.value < 0.01;
+          master.gain.linearRampToValueAtTime(m ? 0.3 : 0, ac.currentTime + 0.05);
+        }
+        return;
+      }
+
+      // FFT toggle
+      if (ui.fftBtn && inR(x, y, ui.fftBtn.x, ui.fftBtn.y, ui.fftBtn.w, ui.fftBtn.h)) {
+        showFFT = !showFFT;
+        return;
+      }
+
+      // Wave type buttons
+      if (ui.wtBtns) {
+        for (let b of ui.wtBtns) {
+          if (inR(x, y, b.x, b.y, b.w, b.h)) {
+            let t = tracks[aTrk];
+            t.ti = b.i;
+            t.type = WTYPES[b.i];
+            updTrk(aTrk);
+            return;
+          }
+        }
+      }
+
+      // Track buttons
+      if (ui.trkBtns) {
+        for (let b of ui.trkBtns) {
+          if (inR(x, y, b.x, b.y, b.w, b.h)) {
+            // Check if mute button was clicked
+            let mb = ui.trkMuteBtns[b.i];
+            if (mb && inR(x, y, mb.x, mb.y, mb.w, mb.h)) {
+              tracks[b.i].on = !tracks[b.i].on;
+              updTrk(b.i);
+              return;
+            }
+            // Don't allow switching to locked track in noise cancel
+            if (st === 'CHALLENGE' && chI === 3 && b.i === 0) return;
+            aTrk = b.i;
+            return;
+          }
+        }
+      }
+
+      // Sandbox controls
+      if (st === 'SANDBOX') {
+        if (ui.recBtn && inR(x, y, ui.recBtn.x, ui.recBtn.y, ui.recBtn.w, ui.recBtn.h)) {
+          if (isRec) {
+            isRec = false;
+          } else {
+            isRec = true;
+            recD = [];
+            recS = ac.currentTime;
+          }
+          return;
+        }
+        if (ui.playBtn && inR(x, y, ui.playBtn.x, ui.playBtn.y, ui.playBtn.w, ui.playBtn.h)) {
+          if (recD.length > 0) {
+            if (isPlay) {
+              isPlay = false;
+            } else {
+              isPlay = true;
+              playD = [...recD];
+              playS = ac.currentTime;
+            }
+          }
+          return;
+        }
+        if (ui.shareBtn && inR(x, y, ui.shareBtn.x, ui.shareBtn.y, ui.shareBtn.w, ui.shareBtn.h)) {
+          genShare();
+          return;
+        }
+      }
+      break;
+
+    case 'COMPLETE':
+      if (ui.backBtn && inR(x, y, ui.backBtn.x, ui.backBtn.y, ui.backBtn.w, ui.backBtn.h)) {
+        st = 'MODE_SELECT';
+      }
+      break;
+  }
+}
+
+// ========================= SHARE CODE =========================
+function genShare() {
+  let code = tracks.map(t =>
+    `${Math.round(t.freq)}.${Math.round(t.amp * 100)}.${t.ti}.${t.on ? 1 : 0}`
+  ).join('|');
+  let enc = btoa(code);
+  let shareStr = 'WF:' + enc;
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(shareStr).then(() => {
+      spawnP(W / 2, H / 2, CYAN, 25);
+    });
+  }
+  try {
+    prompt('Share this code with friends! Paste into the URL as ?code=...', shareStr);
+  } catch (e) {}
+}
+
+function loadShare(code) {
+  try {
+    if (code.startsWith('WF:')) code = code.slice(3);
+    let dec = atob(code).split('|');
+    for (let i = 0; i < Math.min(4, dec.length); i++) {
+      let v = dec[i].split('.');
+      tracks[i].freq = parseInt(v[0]);
+      tracks[i].amp = parseInt(v[1]) / 100;
+      tracks[i].ti = parseInt(v[2]);
+      tracks[i].type = WTYPES[tracks[i].ti];
+      tracks[i].on = parseInt(v[3]) === 1;
+      updTrk(i);
+    }
+  } catch (e) {}
+}
+
+// ========================= BOOT =========================
+init();
+
+// Check URL for share code on load
+(function () {
+  let p = new URLSearchParams(window.location.search);
+  let code = p.get('code');
+  if (code) {
+    loadShare(code);
+    st = 'SANDBOX';
+    ensureAudio();
+    startActive(4);
+  }
+})();
+
+})();
+</script>
+</body>
+</html>

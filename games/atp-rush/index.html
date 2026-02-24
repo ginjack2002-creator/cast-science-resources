@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>ATP RUSH - Cellular Respiration Sports Game</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#111;font-family:'Segoe UI',Arial,sans-serif}
+canvas{display:block;margin:0 auto;cursor:default;touch-action:none}
+#orient{display:none;position:fixed;inset:0;background:#111;color:#FFC107;z-index:9999;
+  flex-direction:column;align-items:center;justify-content:center;font-size:1.4rem;text-align:center;padding:2rem}
+#orient svg{width:60px;height:60px;margin-bottom:1rem;animation:rot 2s ease-in-out infinite}
+@keyframes rot{0%,100%{transform:rotate(0)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}canvas{display:none}}
+</style>
+</head>
+<body>
+<div id="orient">
+<svg viewBox="0 0 24 24" fill="none" stroke="#FFC107" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01" stroke-width="3" stroke-linecap="round"/></svg>
+<p>Please rotate your device to<br><strong>LANDSCAPE</strong> mode</p>
+</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+// ===== ATP RUSH - Complete Game =====
+const CVS = document.getElementById('gc');
+const CTX = CVS.getContext('2d');
+
+// ===== CONSTANTS =====
+const COLORS = {
+  court: '#D7A86E', courtLine: '#FFFFFF', courtDark: '#B8894A',
+  player: '#7B1FA2', playerGold: '#FFC107', playerSkin: '#8D5524',
+  opponent: '#D32F2F', opponentLight: '#EF5350',
+  atp: '#00E676', atpDark: '#00C853',
+  glucose: '#FFB300', glucoseDark: '#FF8F00',
+  oxygen: '#29B6F6', oxygenDark: '#0288D1',
+  co2: '#9E9E9E',
+  perfect: '#FFD700', good: '#4CAF50', miss: '#EF5350',
+  bg: '#1A1A2E', arena: '#0F0F23',
+  crowd1: '#2C2C4A', crowd2: '#1E1E3A',
+  hud: '#212121', hudBorder: '#424242',
+  text: '#FFFFFF', textDim: '#B0BEC5',
+  scoreboard: '#1B5E20', scoreboardLight: '#2E7D32'
+};
+
+const MOVES = {
+  dribble:   { key: 'a', cost: 5,  score: 100, name: 'DRIBBLE',   color: '#4FC3F7', icon: 'D' },
+  sprint:    { key: 's', cost: 15, score: 250, name: 'SPRINT',    color: '#81C784', icon: 'S' },
+  jumpshot:  { key: 'd', cost: 20, score: 400, name: 'JUMP SHOT', color: '#FFB74D', icon: 'J' },
+  crossover: { key: 'f', cost: 25, score: 550, name: 'CROSSOVER', color: '#CE93D8', icon: 'X' },
+  slamdunk:  { key: ' ', cost: 40, score: 800, name: 'SLAM DUNK', color: '#FF8A65', icon: '!' },
+  block:     { key: 'w', cost: 10, score: 200, name: 'BLOCK',     color: '#90CAF9', icon: 'B' }
+};
+const MOVE_KEYS = Object.keys(MOVES);
+const KEY_TO_MOVE = {};
+for (const k of MOVE_KEYS) KEY_TO_MOVE[MOVES[k].key] = k;
+
+const FOODS = [
+  { name: 'Banana', glucose: 30, desc: 'Quick energy, burns fast', color: '#FFE082', burnRate: 1.5, icon: 'BAN' },
+  { name: 'Pasta', glucose: 80, desc: 'Sustained energy, slow burn', color: '#FFCC80', burnRate: 0.7, icon: 'PAS' },
+  { name: 'Energy Bar', glucose: 50, desc: 'Balanced energy', color: '#A1887F', burnRate: 1.0, icon: 'BAR' },
+  { name: 'Sports Drink', glucose: 20, desc: 'Immediate but small', color: '#80DEEA', burnRate: 2.0, icon: 'DRK' }
+];
+
+const LEVELS = [
+  { name: 'WARM-UP',         bpm: 70,  promptInterval: 1800, costMult: 0.7, scoreMult: 0.8, aiSkill: 0.3, duration: 45 },
+  { name: 'FIRST QUARTER',   bpm: 90,  promptInterval: 1400, costMult: 1.0, scoreMult: 1.0, aiSkill: 0.45, duration: 55 },
+  { name: 'HALFTIME RUSH',   bpm: 110, promptInterval: 1100, costMult: 1.1, scoreMult: 1.3, aiSkill: 0.6, duration: 60 },
+  { name: 'FOURTH QUARTER',  bpm: 130, promptInterval: 900,  costMult: 1.3, scoreMult: 1.5, aiSkill: 0.75, duration: 65 },
+  { name: 'OVERTIME',         bpm: 150, promptInterval: 750,  costMult: 1.5, scoreMult: 2.0, aiSkill: 0.9, duration: 70 }
+];
+
+const TIMING = { perfect: 80, good: 180, miss: 300 };
+const MAX_PARTICLES = 400;
+
+// ===== AUDIO ENGINE =====
+let audioCtx = null;
+function initAudio() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+}
+
+function playTone(freq, dur, type='sine', vol=0.15, detune=0) {
+  if (!audioCtx) return;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = type;
+  o.frequency.value = freq;
+  o.detune.value = detune;
+  g.gain.setValueAtTime(vol, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+  o.connect(g);
+  g.connect(audioCtx.destination);
+  o.start();
+  o.stop(audioCtx.currentTime + dur);
+}
+
+function playNoise(dur, vol=0.08, hpFreq=1000) {
+  if (!audioCtx) return;
+  const bufSize = audioCtx.sampleRate * dur;
+  const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+  const data = buf.getChannelData(0);
+  for (let i = 0; i < bufSize; i++) data[i] = Math.random() * 2 - 1;
+  const src = audioCtx.createBufferSource();
+  src.buffer = buf;
+  const hp = audioCtx.createBiquadFilter();
+  hp.type = 'highpass';
+  hp.frequency.value = hpFreq;
+  const g = audioCtx.createGain();
+  g.gain.setValueAtTime(vol, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+  src.connect(hp);
+  hp.connect(g);
+  g.connect(audioCtx.destination);
+  src.start();
+}
+
+function sfxBounce() { playTone(180, 0.12, 'sine', 0.2); setTimeout(() => playTone(120, 0.08, 'sine', 0.12), 50); }
+function sfxSqueak() { playNoise(0.06, 0.05, 3000); }
+function sfxSwish() { playNoise(0.25, 0.12, 2000); playTone(800, 0.15, 'sine', 0.06); }
+function sfxBuzzer() { playTone(220, 0.6, 'sawtooth', 0.2); playTone(165, 0.6, 'sawtooth', 0.15); }
+function sfxWhoosh() { playNoise(0.15, 0.1, 800); }
+function sfxPerfect() { playTone(523, 0.1, 'sine', 0.15); setTimeout(() => playTone(659, 0.1, 'sine', 0.15), 80); setTimeout(() => playTone(784, 0.15, 'sine', 0.2), 160); }
+function sfxGood() { playTone(440, 0.12, 'sine', 0.12); setTimeout(() => playTone(523, 0.12, 'sine', 0.12), 100); }
+function sfxMiss() { playTone(200, 0.2, 'sawtooth', 0.1); playTone(150, 0.3, 'sawtooth', 0.08); }
+function sfxCrowd(vol=0.03) { playNoise(0.5, vol, 400); }
+function sfxSelect() { playTone(660, 0.08, 'sine', 0.12); }
+function sfxAtpProduce() { playTone(1200, 0.08, 'sine', 0.05); playTone(1500, 0.06, 'sine', 0.04); }
+
+// ===== GAME STATE =====
+let W = 1280, H = 720, DPR = 1;
+let state = 'TITLE'; // TITLE, HOW_TO, FOOD_SELECT, PLAYING, QUARTER_BREAK, RESULTS, GASSED_OUT
+let currentLevel = 0;
+let playerScore = 0, opponentScore = 0;
+let atp = 100, glucose = 60, oxygen = 100, co2 = 0;
+let maxGlucose = 60;
+let glucoseBurnRate = 1.0;
+let atpProductionRate = 0;
+let isAnaerobic = false;
+let lacticAcid = 0;
+let breathTimer = 0;
+let breathPhase = 0; // 0-1 for breathing animation
+let selectedFood = -1;
+let prompts = [];
+let combo = 0, maxCombo = 0;
+let perfects = 0, goods = 0, misses = 0;
+let totalAtpSpent = 0;
+let particles = [];
+let shakeX = 0, shakeY = 0, shakeDur = 0;
+let flashAlpha = 0, flashColor = '#FFF';
+let gasTimer = 0;
+let levelTimer = 0;
+let promptTimer = 0;
+let levelScores = [];
+let feedbackText = '', feedbackColor = '', feedbackTimer = 0;
+let playerAnim = 'idle'; // idle, dribble, sprint, jump, crossover, dunk, block, gassed
+let playerAnimTimer = 0;
+let opponentAnim = 'idle';
+let opponentAnimTimer = 0;
+let aiScoreTimer = 0;
+let crowdExcitement = 0;
+let atpMoleculeAnims = [];
+let titleBounce = 0;
+let dt = 0, lastTime = 0;
+let keysDown = {};
+let touchZones = [];
+let hoverFood = -1;
+let musicBeat = 0;
+let beatTimer = 0;
+let quarterResults = [];
+
+// ===== RESIZE =====
+function resize() {
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const aspect = 16 / 9;
+  let w = window.innerWidth, h = window.innerHeight;
+  if (w / h > aspect) { w = h * aspect; } else { h = w / aspect; }
+  W = Math.floor(w);
+  H = Math.floor(h);
+  CVS.width = W * DPR;
+  CVS.height = H * DPR;
+  CVS.style.width = W + 'px';
+  CVS.style.height = H + 'px';
+  CTX.setTransform(DPR, 0, 0, DPR, 0, 0);
+  buildTouchZones();
+}
+
+function buildTouchZones() {
+  const bw = W * 0.14, bh = H * 0.1;
+  const y1 = H - bh - 10, y2 = H - bh * 2 - 20;
+  touchZones = [
+    { move: 'dribble',   x: 10,          y: y1, w: bw, h: bh },
+    { move: 'sprint',    x: 10 + bw + 8, y: y1, w: bw, h: bh },
+    { move: 'jumpshot',  x: 10 + (bw+8)*2, y: y1, w: bw, h: bh },
+    { move: 'crossover', x: 10,          y: y2, w: bw, h: bh },
+    { move: 'slamdunk',  x: 10 + bw + 8, y: y2, w: bw, h: bh },
+    { move: 'block',     x: 10 + (bw+8)*2, y: y2, w: bw, h: bh }
+  ];
+}
+
+window.addEventListener('resize', resize);
+resize();
+
+// ===== INPUT =====
+window.addEventListener('keydown', e => {
+  if (keysDown[e.key.toLowerCase()]) return;
+  keysDown[e.key.toLowerCase()] = true;
+  initAudio();
+  handleInput(e.key.toLowerCase());
+});
+window.addEventListener('keyup', e => { keysDown[e.key.toLowerCase()] = false; });
+
+CVS.addEventListener('touchstart', e => {
+  e.preventDefault();
+  initAudio();
+  for (const t of e.changedTouches) {
+    const rect = CVS.getBoundingClientRect();
+    const tx = (t.clientX - rect.left), ty = (t.clientY - rect.top);
+    handleTouch(tx, ty);
+  }
+}, { passive: false });
+
+CVS.addEventListener('click', e => {
+  initAudio();
+  const rect = CVS.getBoundingClientRect();
+  handleTouch(e.clientX - rect.left, e.clientY - rect.top);
+});
+
+CVS.addEventListener('mousemove', e => {
+  const rect = CVS.getBoundingClientRect();
+  handleHover(e.clientX - rect.left, e.clientY - rect.top);
+});
+
+function handleHover(mx, my) {
+  if (state === 'FOOD_SELECT') {
+    hoverFood = -1;
+    const cardW = W * 0.18, cardH = H * 0.38;
+    const gap = W * 0.03;
+    const totalW = cardW * 4 + gap * 3;
+    const startX = (W - totalW) / 2;
+    const startY = H * 0.32;
+    for (let i = 0; i < 4; i++) {
+      const cx = startX + i * (cardW + gap);
+      if (mx >= cx && mx <= cx + cardW && my >= startY && my <= startY + cardH) {
+        hoverFood = i;
+      }
+    }
+  }
+}
+
+function handleInput(key) {
+  if (state === 'TITLE') {
+    if (key === 'enter' || key === ' ') { state = 'HOW_TO'; sfxSelect(); }
+    return;
+  }
+  if (state === 'HOW_TO') {
+    if (key === 'enter' || key === ' ') { startFoodSelect(); sfxSelect(); }
+    return;
+  }
+  if (state === 'FOOD_SELECT') {
+    if (key >= '1' && key <= '4') {
+      selectFood(parseInt(key) - 1);
+    }
+    return;
+  }
+  if (state === 'PLAYING') {
+    if (KEY_TO_MOVE[key]) {
+      tryMove(KEY_TO_MOVE[key]);
+    }
+    return;
+  }
+  if (state === 'QUARTER_BREAK') {
+    if (key === 'enter' || key === ' ') {
+      if (currentLevel >= LEVELS.length) { state = 'RESULTS'; sfxBuzzer(); }
+      else { startFoodSelect(); sfxSelect(); }
+    }
+    return;
+  }
+  if (state === 'RESULTS') {
+    if (key === 'enter' || key === ' ') { resetGame(); sfxSelect(); }
+    return;
+  }
+  if (state === 'GASSED_OUT') {
+    // auto-recover
+  }
+}
+
+function handleTouch(tx, ty) {
+  if (state === 'TITLE') { state = 'HOW_TO'; sfxSelect(); return; }
+  if (state === 'HOW_TO') { startFoodSelect(); sfxSelect(); return; }
+  if (state === 'FOOD_SELECT') {
+    const cardW = W * 0.18, cardH = H * 0.38;
+    const gap = W * 0.03;
+    const totalW = cardW * 4 + gap * 3;
+    const startX = (W - totalW) / 2;
+    const startY = H * 0.32;
+    for (let i = 0; i < 4; i++) {
+      const cx = startX + i * (cardW + gap);
+      if (tx >= cx && tx <= cx + cardW && ty >= startY && ty <= startY + cardH) {
+        selectFood(i);
+        return;
+      }
+    }
+    return;
+  }
+  if (state === 'PLAYING') {
+    for (const z of touchZones) {
+      if (tx >= z.x && tx <= z.x + z.w && ty >= z.y && ty <= z.y + z.h) {
+        tryMove(z.move);
+        return;
+      }
+    }
+    return;
+  }
+  if (state === 'QUARTER_BREAK') {
+    if (currentLevel >= LEVELS.length) { state = 'RESULTS'; sfxBuzzer(); }
+    else { startFoodSelect(); sfxSelect(); }
+    return;
+  }
+  if (state === 'RESULTS') { resetGame(); sfxSelect(); return; }
+}
+
+// ===== GAME LOGIC =====
+function startFoodSelect() {
+  state = 'FOOD_SELECT';
+  selectedFood = -1;
+  hoverFood = -1;
+}
+
+function selectFood(idx) {
+  if (idx < 0 || idx >= FOODS.length) return;
+  selectedFood = idx;
+  sfxSelect();
+  const food = FOODS[idx];
+  glucose = Math.min(glucose + food.glucose, 100);
+  maxGlucose = glucose;
+  glucoseBurnRate = food.burnRate;
+  startLevel();
+}
+
+function startLevel() {
+  state = 'PLAYING';
+  const lvl = LEVELS[currentLevel];
+  atp = Math.min(atp + 30, 100);
+  oxygen = 100;
+  co2 = 0;
+  lacticAcid = 0;
+  isAnaerobic = false;
+  prompts = [];
+  combo = 0;
+  perfects = 0; goods = 0; misses = 0;
+  totalAtpSpent = 0;
+  levelTimer = lvl.duration;
+  promptTimer = 0;
+  gasTimer = 0;
+  playerAnim = 'idle';
+  opponentAnim = 'idle';
+  aiScoreTimer = 0;
+  crowdExcitement = 0.3;
+  beatTimer = 0;
+}
+
+function generatePrompt() {
+  const lvl = LEVELS[currentLevel];
+  // Weight move selection by level
+  let weights;
+  if (currentLevel === 0) {
+    weights = { dribble: 5, sprint: 3, jumpshot: 2, crossover: 1, slamdunk: 0, block: 3 };
+  } else if (currentLevel <= 2) {
+    weights = { dribble: 3, sprint: 3, jumpshot: 3, crossover: 2, slamdunk: 1, block: 3 };
+  } else {
+    weights = { dribble: 2, sprint: 3, jumpshot: 3, crossover: 3, slamdunk: 2, block: 3 };
+  }
+  const entries = Object.entries(weights);
+  const total = entries.reduce((s, [, w]) => s + w, 0);
+  let r = Math.random() * total;
+  let chosen = 'dribble';
+  for (const [move, w] of entries) {
+    r -= w;
+    if (r <= 0) { chosen = move; break; }
+  }
+  const hitX = W * 0.42;
+  const startX = W * 0.95;
+  const speed = (startX - hitX) / (lvl.promptInterval / 1000);
+  prompts.push({
+    move: chosen,
+    x: startX,
+    hitX: hitX,
+    y: H * 0.42 + Math.sin(prompts.length * 0.7) * H * 0.06,
+    speed: speed,
+    alive: true,
+    hit: false,
+    result: null, // 'perfect','good','miss'
+    resultTimer: 0,
+    radius: 30
+  });
+}
+
+function tryMove(moveKey) {
+  if (state !== 'PLAYING') return;
+  const move = MOVES[moveKey];
+  if (!move) return;
+
+  // Find closest matching prompt within timing window
+  let bestPrompt = null, bestDist = Infinity;
+  for (const p of prompts) {
+    if (!p.alive || p.hit) continue;
+    if (p.move !== moveKey) continue;
+    const dist = Math.abs(p.x - p.hitX);
+    if (dist < bestDist) { bestDist = dist; bestPrompt = p; }
+  }
+
+  const lvl = LEVELS[currentLevel];
+  const costMult = lvl.costMult;
+  const scoreMult = lvl.scoreMult;
+  let atpCost = Math.ceil(move.cost * costMult);
+
+  // Anaerobic penalty
+  if (isAnaerobic) atpCost = Math.ceil(atpCost * 1.4);
+
+  if (atp < atpCost) {
+    // Not enough ATP
+    showFeedback('NO ATP!', COLORS.miss);
+    if (atp <= 5) triggerGassedOut();
+    return;
+  }
+
+  if (bestPrompt && bestDist <= TIMING.miss) {
+    bestPrompt.hit = true;
+    bestPrompt.alive = false;
+    atp = Math.max(0, atp - atpCost);
+    totalAtpSpent += atpCost;
+
+    if (bestDist <= TIMING.perfect) {
+      // Perfect
+      bestPrompt.result = 'perfect';
+      const pts = Math.ceil(move.score * scoreMult * 2);
+      playerScore += pts;
+      combo++;
+      perfects++;
+      showFeedback('PERFECT! +' + pts, COLORS.perfect);
+      sfxPerfect();
+      spawnParticles(bestPrompt.hitX, bestPrompt.y, 20, COLORS.perfect);
+      crowdExcitement = Math.min(1, crowdExcitement + 0.15);
+      // Refund some ATP for perfect timing
+      atp = Math.min(100, atp + Math.floor(atpCost * 0.2));
+    } else if (bestDist <= TIMING.good) {
+      // Good
+      bestPrompt.result = 'good';
+      const pts = Math.ceil(move.score * scoreMult);
+      playerScore += pts;
+      combo++;
+      goods++;
+      showFeedback('GOOD! +' + pts, COLORS.good);
+      sfxGood();
+      spawnParticles(bestPrompt.hitX, bestPrompt.y, 10, COLORS.good);
+      crowdExcitement = Math.min(1, crowdExcitement + 0.05);
+    } else {
+      // Miss timing but within window - treat as miss
+      bestPrompt.result = 'miss';
+      misses++;
+      combo = 0;
+      showFeedback('MISS', COLORS.miss);
+      sfxMiss();
+      crowdExcitement = Math.max(0, crowdExcitement - 0.1);
+    }
+    bestPrompt.resultTimer = 0.8;
+    triggerPlayerAnim(moveKey);
+    maxCombo = Math.max(maxCombo, combo);
+  } else {
+    // No matching prompt nearby - wrong move or bad timing
+    atp = Math.max(0, atp - Math.ceil(atpCost * 0.5));
+    totalAtpSpent += Math.ceil(atpCost * 0.5);
+    misses++;
+    combo = 0;
+    showFeedback('WRONG!', COLORS.miss);
+    sfxMiss();
+    crowdExcitement = Math.max(0, crowdExcitement - 0.08);
+  }
+
+  if (atp <= 0) triggerGassedOut();
+}
+
+function triggerPlayerAnim(moveKey) {
+  playerAnim = moveKey;
+  playerAnimTimer = 0.6;
+  if (moveKey === 'dribble') sfxBounce();
+  else if (moveKey === 'sprint') sfxSqueak();
+  else if (moveKey === 'jumpshot' || moveKey === 'slamdunk') { sfxSwish(); sfxWhoosh(); }
+  else if (moveKey === 'crossover') { sfxSqueak(); sfxBounce(); }
+  else if (moveKey === 'block') sfxWhoosh();
+}
+
+function triggerGassedOut() {
+  state = 'GASSED_OUT';
+  gasTimer = 3.0;
+  playerAnim = 'gassed';
+  playerAnimTimer = 3.0;
+  showFeedback('GASSED OUT!', '#FF5722');
+}
+
+function showFeedback(text, color) {
+  feedbackText = text;
+  feedbackColor = color;
+  feedbackTimer = 1.2;
+}
+
+function spawnParticles(x, y, count, color) {
+  for (let i = 0; i < count && particles.length < MAX_PARTICLES; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 50 + Math.random() * 200;
+    particles.push({
+      x, y,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed - 50,
+      life: 0.5 + Math.random() * 0.8,
+      maxLife: 0.5 + Math.random() * 0.8,
+      size: 2 + Math.random() * 4,
+      color: color
+    });
+  }
+}
+
+function spawnAtpMolecule() {
+  atpMoleculeAnims.push({
+    x: W * 0.08, y: H * 0.55,
+    targetX: W * 0.08, targetY: H * 0.32,
+    t: 0, dur: 0.8
+  });
+}
+
+function resetGame() {
+  state = 'TITLE';
+  currentLevel = 0;
+  playerScore = 0;
+  opponentScore = 0;
+  atp = 100;
+  glucose = 60;
+  oxygen = 100;
+  co2 = 0;
+  maxGlucose = 60;
+  prompts = [];
+  particles = [];
+  levelScores = [];
+  quarterResults = [];
+  combo = 0; maxCombo = 0;
+  perfects = 0; goods = 0; misses = 0;
+  totalAtpSpent = 0;
+}
+
+// ===== UPDATE =====
+function update(delta) {
+  dt = Math.min(delta, 0.05);
+  titleBounce += dt * 3;
+  shakeDur = Math.max(0, shakeDur - dt);
+  if (shakeDur > 0) {
+    shakeX = (Math.random() - 0.5) * shakeDur * 20;
+    shakeY = (Math.random() - 0.5) * shakeDur * 20;
+  } else { shakeX = 0; shakeY = 0; }
+  flashAlpha = Math.max(0, flashAlpha - dt * 3);
+  feedbackTimer = Math.max(0, feedbackTimer - dt);
+  playerAnimTimer = Math.max(0, playerAnimTimer - dt);
+  opponentAnimTimer = Math.max(0, opponentAnimTimer - dt);
+  if (playerAnimTimer <= 0 && state === 'PLAYING') playerAnim = 'idle';
+  if (opponentAnimTimer <= 0) opponentAnim = 'idle';
+
+  // Update particles
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.vy += 200 * dt;
+    p.life -= dt;
+    if (p.life <= 0) particles.splice(i, 1);
+  }
+
+  // Update ATP molecule anims
+  for (let i = atpMoleculeAnims.length - 1; i >= 0; i--) {
+    const a = atpMoleculeAnims[i];
+    a.t += dt / a.dur;
+    if (a.t >= 1) atpMoleculeAnims.splice(i, 1);
+  }
+
+  if (state === 'PLAYING') updatePlaying();
+  else if (state === 'GASSED_OUT') updateGassed();
+}
+
+function updatePlaying() {
+  const lvl = LEVELS[currentLevel];
+
+  // Beat tracking
+  const beatInterval = 60 / lvl.bpm;
+  beatTimer += dt;
+  if (beatTimer >= beatInterval) {
+    beatTimer -= beatInterval;
+    musicBeat++;
+    // Subtle beat sound
+    if (musicBeat % 4 === 0) playTone(80, 0.05, 'sine', 0.03);
+    else if (musicBeat % 2 === 0) playTone(60, 0.03, 'sine', 0.02);
+  }
+
+  // Level timer
+  levelTimer -= dt;
+  if (levelTimer <= 0) {
+    endQuarter();
+    return;
+  }
+
+  // Breathing cycle
+  breathTimer += dt;
+  breathPhase = (Math.sin(breathTimer * 2.5) + 1) / 2;
+
+  // Oxygen regeneration (breathing)
+  const oxygenRegen = 12 * dt; // base regen
+  oxygen = Math.min(100, oxygen + oxygenRegen);
+
+  // Exercise depletes oxygen faster
+  if (playerAnim !== 'idle' && playerAnim !== 'gassed') {
+    oxygen = Math.max(0, oxygen - 18 * dt);
+  }
+
+  // ATP production from cellular respiration
+  if (glucose > 0 && oxygen > 0) {
+    isAnaerobic = false;
+    const production = 25 * dt; // aerobic rate
+    const glucoseCost = production * 0.15 * glucoseBurnRate;
+    const oxygenCost = production * 0.2;
+
+    if (glucose >= glucoseCost && oxygen >= oxygenCost) {
+      glucose = Math.max(0, glucose - glucoseCost);
+      oxygen = Math.max(0, oxygen - oxygenCost);
+      atp = Math.min(100, atp + production);
+      co2 = Math.min(100, co2 + production * 0.3);
+      atpProductionRate = production / dt;
+
+      // Spawn ATP molecule animation occasionally
+      if (Math.random() < 0.05) spawnAtpMolecule();
+      if (Math.random() < 0.02) sfxAtpProduce();
+    }
+  } else if (glucose > 0 && oxygen <= 0) {
+    // Anaerobic respiration - less efficient
+    isAnaerobic = true;
+    const production = 8 * dt;
+    const glucoseCost = production * 0.3 * glucoseBurnRate;
+    glucose = Math.max(0, glucose - glucoseCost);
+    atp = Math.min(100, atp + production);
+    lacticAcid = Math.min(100, lacticAcid + production * 0.5);
+    co2 = Math.min(100, co2 + production * 0.15);
+    atpProductionRate = production / dt;
+  } else {
+    atpProductionRate = 0;
+  }
+
+  // CO2 exhaled (decreases over time)
+  co2 = Math.max(0, co2 - 8 * dt);
+
+  // Lactic acid recovery
+  if (!isAnaerobic) lacticAcid = Math.max(0, lacticAcid - 5 * dt);
+
+  // Generate prompts
+  promptTimer += dt * 1000;
+  if (promptTimer >= lvl.promptInterval) {
+    promptTimer -= lvl.promptInterval;
+    generatePrompt();
+  }
+
+  // Update prompts
+  for (let i = prompts.length - 1; i >= 0; i--) {
+    const p = prompts[i];
+    if (!p.alive) {
+      p.resultTimer -= dt;
+      if (p.resultTimer <= 0) prompts.splice(i, 1);
+      continue;
+    }
+    p.x -= p.speed * dt;
+    // Missed - went past hit zone
+    if (p.x < p.hitX - TIMING.miss * 1.5) {
+      p.alive = false;
+      p.result = 'miss';
+      p.resultTimer = 0.6;
+      misses++;
+      combo = 0;
+      crowdExcitement = Math.max(0, crowdExcitement - 0.05);
+      // Opponent scores on missed block
+      if (p.move === 'block') {
+        opponentScore += Math.ceil(150 * lvl.scoreMult);
+        opponentAnim = 'score';
+        opponentAnimTimer = 0.5;
+      }
+    }
+  }
+
+  // AI opponent scoring
+  aiScoreTimer += dt;
+  if (aiScoreTimer >= 3 + Math.random() * 4) {
+    aiScoreTimer = 0;
+    if (Math.random() < lvl.aiSkill) {
+      const pts = Math.ceil((100 + Math.random() * 300) * lvl.scoreMult);
+      opponentScore += pts;
+      opponentAnim = 'score';
+      opponentAnimTimer = 0.5;
+    }
+  }
+
+  // Crowd excitement decay
+  crowdExcitement = Math.max(0.1, crowdExcitement - 0.02 * dt);
+  if (Math.random() < crowdExcitement * 0.02) sfxCrowd(crowdExcitement * 0.02);
+}
+
+function updateGassed() {
+  gasTimer -= dt;
+  breathTimer += dt;
+  breathPhase = (Math.sin(breathTimer * 1.5) + 1) / 2;
+
+  // Slow recovery
+  oxygen = Math.min(100, oxygen + 20 * dt);
+  if (glucose > 0 && oxygen > 20) {
+    atp = Math.min(100, atp + 10 * dt);
+  }
+  lacticAcid = Math.max(0, lacticAcid - 8 * dt);
+
+  if (gasTimer <= 0 && atp >= 15) {
+    state = 'PLAYING';
+    playerAnim = 'idle';
+    showFeedback('RECOVERED!', COLORS.atp);
+  } else if (gasTimer <= 0 && atp < 15 && glucose <= 0) {
+    // Truly out - end quarter
+    endQuarter();
+  } else if (gasTimer <= 0) {
+    gasTimer = 1.5; // keep waiting
+  }
+
+  // Prompts still move but can't interact
+  for (let i = prompts.length - 1; i >= 0; i--) {
+    const p = prompts[i];
+    if (!p.alive) {
+      p.resultTimer -= dt;
+      if (p.resultTimer <= 0) prompts.splice(i, 1);
+      continue;
+    }
+    p.x -= p.speed * dt;
+    if (p.x < p.hitX - TIMING.miss * 1.5) {
+      p.alive = false;
+      p.result = 'miss';
+      p.resultTimer = 0.6;
+      misses++;
+      if (p.move === 'block') {
+        const lvl = LEVELS[currentLevel];
+        opponentScore += Math.ceil(150 * lvl.scoreMult);
+      }
+    }
+  }
+}
+
+function endQuarter() {
+  const totalMoves = perfects + goods + misses;
+  const accuracy = totalMoves > 0 ? ((perfects + goods) / totalMoves * 100) : 0;
+  const efficiency = totalAtpSpent > 0 ? (playerScore / totalAtpSpent) : 0;
+  let medal = 'none';
+  if (accuracy >= 90 && playerScore > opponentScore) medal = 'gold';
+  else if (accuracy >= 70 && playerScore >= opponentScore * 0.8) medal = 'silver';
+  else if (accuracy >= 50) medal = 'bronze';
+
+  quarterResults.push({
+    level: currentLevel,
+    name: LEVELS[currentLevel].name,
+    playerScore, opponentScore,
+    perfects, goods, misses,
+    accuracy: Math.round(accuracy),
+    efficiency: efficiency.toFixed(1),
+    maxCombo,
+    medal,
+    food: selectedFood >= 0 ? FOODS[selectedFood].name : 'None'
+  });
+
+  levelScores.push({ player: playerScore, opponent: opponentScore });
+  currentLevel++;
+  sfxBuzzer();
+
+  if (currentLevel >= LEVELS.length) {
+    saveScores();
+    state = 'RESULTS';
+  } else {
+    state = 'QUARTER_BREAK';
+  }
+
+  // Reset per-quarter stats
+  perfects = 0; goods = 0; misses = 0;
+  totalAtpSpent = 0;
+  maxCombo = 0;
+  combo = 0;
+  prompts = [];
+}
+
+function saveScores() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('atprush_scores') || '[]');
+    saved.push({
+      date: new Date().toISOString(),
+      playerScore,
+      opponentScore,
+      quarters: quarterResults
+    });
+    saved.sort((a, b) => b.playerScore - a.playerScore);
+    if (saved.length > 10) saved.length = 10;
+    localStorage.setItem('atprush_scores', JSON.stringify(saved));
+  } catch (e) { /* ignore */ }
+}
+
+function getHighScores() {
+  try { return JSON.parse(localStorage.getItem('atprush_scores') || '[]'); }
+  catch (e) { return []; }
+}
+
+// ===== DRAWING =====
+function draw() {
+  CTX.save();
+  CTX.translate(shakeX, shakeY);
+
+  if (state === 'TITLE') drawTitle();
+  else if (state === 'HOW_TO') drawHowTo();
+  else if (state === 'FOOD_SELECT') drawFoodSelect();
+  else if (state === 'PLAYING' || state === 'GASSED_OUT') drawGame();
+  else if (state === 'QUARTER_BREAK') drawQuarterBreak();
+  else if (state === 'RESULTS') drawResults();
+
+  // Flash overlay
+  if (flashAlpha > 0) {
+    CTX.globalAlpha = flashAlpha;
+    CTX.fillStyle = flashColor;
+    CTX.fillRect(0, 0, W, H);
+    CTX.globalAlpha = 1;
+  }
+
+  CTX.restore();
+}
+
+// ===== TITLE SCREEN =====
+function drawTitle() {
+  // Arena background
+  drawArenaBackground();
+
+  // Darkening overlay
+  CTX.fillStyle = 'rgba(10,10,30,0.7)';
+  CTX.fillRect(0, 0, W, H);
+
+  // Title
+  const bounce = Math.sin(titleBounce) * 8;
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+
+  // Glow
+  CTX.shadowColor = COLORS.atp;
+  CTX.shadowBlur = 30;
+  CTX.font = `bold ${W * 0.1}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.playerGold;
+  CTX.fillText('ATP', W / 2 - W * 0.12, H * 0.28 + bounce);
+  CTX.fillStyle = COLORS.atp;
+  CTX.fillText('RUSH', W / 2 + W * 0.1, H * 0.28 + bounce);
+  CTX.shadowBlur = 0;
+
+  // Subtitle
+  CTX.font = `bold ${W * 0.022}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.textDim;
+  CTX.fillText('CELLULAR RESPIRATION x BASKETBALL', W / 2, H * 0.40);
+
+  // Dunking player silhouette
+  drawPlayerSilhouette(W / 2, H * 0.58, 1.5, 'dunk');
+
+  // ATP molecule trail
+  for (let i = 0; i < 8; i++) {
+    const t = (titleBounce * 0.5 + i * 0.4) % 6;
+    const tx = W * 0.3 + t * W * 0.07;
+    const ty = H * 0.55 + Math.sin(t * 2) * 20;
+    const alpha = 1 - (t / 6);
+    drawAtpMolecule(tx, ty, 8 + i, alpha);
+  }
+
+  // Science equation
+  CTX.font = `${W * 0.016}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.glucose;
+  CTX.fillText('C\u2086H\u2081\u2082O\u2086 + 6O\u2082 \u2192 6CO\u2082 + 6H\u2082O + ATP', W / 2, H * 0.76);
+
+  // Prompt
+  CTX.font = `bold ${W * 0.024}px 'Segoe UI', Arial, sans-serif`;
+  const alpha = (Math.sin(titleBounce * 2) + 1) / 2;
+  CTX.fillStyle = `rgba(255,255,255,${0.5 + alpha * 0.5})`;
+  CTX.fillText('PRESS ENTER OR TAP TO START', W / 2, H * 0.88);
+
+  // High scores
+  const scores = getHighScores();
+  if (scores.length > 0) {
+    CTX.font = `${W * 0.014}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(`HIGH SCORE: ${scores[0].playerScore}`, W / 2, H * 0.94);
+  }
+
+  // NGSS badge
+  CTX.font = `${W * 0.011}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = '#78909C';
+  CTX.textAlign = 'right';
+  CTX.fillText('NGSS MS-LS1-5, MS-LS1-7', W - 15, H - 12);
+  CTX.textAlign = 'center';
+}
+
+// ===== HOW TO PLAY =====
+function drawHowTo() {
+  drawArenaBackground();
+  CTX.fillStyle = 'rgba(10,10,30,0.85)';
+  CTX.fillRect(0, 0, W, H);
+
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+
+  CTX.font = `bold ${W * 0.045}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.playerGold;
+  CTX.fillText('HOW TO PLAY', W / 2, H * 0.1);
+
+  const lines = [
+    { text: 'Every basketball move costs ATP (energy).', color: COLORS.atp },
+    { text: 'ATP is produced from FOOD (glucose) + OXYGEN through cellular respiration.', color: COLORS.glucose },
+    { text: 'Glucose + O\u2082 \u2192 ATP + CO\u2082 + H\u2082O', color: '#FFF' },
+    { text: '', color: '' },
+    { text: 'CONTROLS:', color: COLORS.playerGold },
+    { text: 'A = Dribble (5 ATP)    S = Sprint (15 ATP)    D = Jump Shot (20 ATP)', color: '#B0BEC5' },
+    { text: 'F = Crossover (25 ATP)    SPACE = Slam Dunk (40 ATP)    W = Block (10 ATP)', color: '#B0BEC5' },
+    { text: '', color: '' },
+    { text: 'Hit the right key when prompts reach the TARGET ZONE for points!', color: COLORS.perfect },
+    { text: 'Perfect timing = 2x score + ATP refund. Choose your pre-game food wisely!', color: COLORS.good },
+    { text: 'If ATP hits 0, you gas out! Manage your energy to outlast the opponent.', color: COLORS.miss },
+  ];
+
+  CTX.font = `${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+  for (let i = 0; i < lines.length; i++) {
+    CTX.fillStyle = lines[i].color || '#FFF';
+    CTX.fillText(lines[i].text, W / 2, H * 0.22 + i * H * 0.058);
+  }
+
+  // Visual key layout
+  const keyY = H * 0.82;
+  const keys = [
+    { label: 'A', sub: 'Dribble', color: MOVES.dribble.color },
+    { label: 'S', sub: 'Sprint', color: MOVES.sprint.color },
+    { label: 'D', sub: 'Shot', color: MOVES.jumpshot.color },
+    { label: 'F', sub: 'Cross', color: MOVES.crossover.color },
+    { label: 'W', sub: 'Block', color: MOVES.block.color },
+    { label: 'SPC', sub: 'Dunk!', color: MOVES.slamdunk.color },
+  ];
+  const keyW = W * 0.08, keyGap = W * 0.02;
+  const totalKW = keys.length * keyW + (keys.length - 1) * keyGap;
+  const keyStartX = (W - totalKW) / 2;
+  for (let i = 0; i < keys.length; i++) {
+    const kx = keyStartX + i * (keyW + keyGap);
+    CTX.fillStyle = 'rgba(50,50,70,0.9)';
+    roundRect(kx, keyY, keyW, H * 0.08, 8, true, false);
+    CTX.strokeStyle = keys[i].color;
+    CTX.lineWidth = 2;
+    roundRect(kx, keyY, keyW, H * 0.08, 8, false, true);
+    CTX.font = `bold ${W * 0.022}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = keys[i].color;
+    CTX.fillText(keys[i].label, kx + keyW / 2, keyY + H * 0.03);
+    CTX.font = `${W * 0.012}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(keys[i].sub, kx + keyW / 2, keyY + H * 0.06);
+  }
+
+  const alpha2 = (Math.sin(titleBounce * 2) + 1) / 2;
+  CTX.font = `bold ${W * 0.02}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = `rgba(255,255,255,${0.5 + alpha2 * 0.5})`;
+  CTX.fillText('PRESS ENTER OR TAP TO CONTINUE', W / 2, H * 0.96);
+}
+
+// ===== FOOD SELECT =====
+function drawFoodSelect() {
+  drawArenaBackground();
+  CTX.fillStyle = 'rgba(10,10,30,0.85)';
+  CTX.fillRect(0, 0, W, H);
+
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+
+  const lvlName = currentLevel < LEVELS.length ? LEVELS[currentLevel].name : 'GAME';
+  CTX.font = `bold ${W * 0.035}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.playerGold;
+  CTX.fillText(`PRE-GAME MEAL - ${lvlName}`, W / 2, H * 0.1);
+
+  CTX.font = `${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.textDim;
+  CTX.fillText('Choose food to fuel your cellular respiration. Food \u2192 Glucose \u2192 ATP!', W / 2, H * 0.19);
+
+  // Current stats
+  CTX.font = `${W * 0.015}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.atp;
+  CTX.fillText(`Current ATP: ${Math.round(atp)} | Glucose: ${Math.round(glucose)}`, W / 2, H * 0.25);
+
+  // Food cards
+  const cardW = W * 0.18, cardH = H * 0.38;
+  const gap = W * 0.03;
+  const totalCW = cardW * 4 + gap * 3;
+  const startX = (W - totalCW) / 2;
+  const startY = H * 0.32;
+
+  for (let i = 0; i < FOODS.length; i++) {
+    const food = FOODS[i];
+    const cx = startX + i * (cardW + gap);
+    const isHover = hoverFood === i;
+
+    // Card background
+    CTX.fillStyle = isHover ? 'rgba(60,60,80,0.95)' : 'rgba(40,40,60,0.9)';
+    roundRect(cx, startY, cardW, cardH, 12, true, false);
+    CTX.strokeStyle = isHover ? food.color : 'rgba(255,255,255,0.2)';
+    CTX.lineWidth = isHover ? 3 : 1;
+    roundRect(cx, startY, cardW, cardH, 12, false, true);
+
+    // Food icon circle
+    const iconY = startY + cardH * 0.2;
+    CTX.beginPath();
+    CTX.arc(cx + cardW / 2, iconY, cardW * 0.15, 0, Math.PI * 2);
+    CTX.fillStyle = food.color;
+    CTX.fill();
+    CTX.font = `bold ${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#333';
+    CTX.fillText(food.icon, cx + cardW / 2, iconY);
+
+    // Food name
+    CTX.font = `bold ${W * 0.02}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#FFF';
+    CTX.fillText(food.name, cx + cardW / 2, startY + cardH * 0.45);
+
+    // Glucose amount
+    CTX.font = `bold ${W * 0.022}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.glucose;
+    CTX.fillText(`+${food.glucose} Glucose`, cx + cardW / 2, startY + cardH * 0.58);
+
+    // Burn rate description
+    CTX.font = `${W * 0.013}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(food.desc, cx + cardW / 2, startY + cardH * 0.72);
+
+    // Burn rate visual
+    const barX = cx + cardW * 0.15, barW = cardW * 0.7, barY = startY + cardH * 0.82, barH = 6;
+    CTX.fillStyle = 'rgba(255,255,255,0.1)';
+    roundRect(barX, barY, barW, barH, 3, true, false);
+    const burnPct = food.burnRate / 2;
+    CTX.fillStyle = burnPct > 0.7 ? '#EF5350' : burnPct > 0.4 ? '#FFB300' : '#66BB6A';
+    roundRect(barX, barY, barW * burnPct, barH, 3, true, false);
+    CTX.font = `${W * 0.01}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText('Burn Rate', cx + cardW / 2, barY + barH + 12);
+
+    // Key number
+    CTX.font = `bold ${W * 0.016}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = isHover ? food.color : 'rgba(255,255,255,0.4)';
+    CTX.fillText(`Press ${i + 1}`, cx + cardW / 2, startY + cardH - 12);
+  }
+}
+
+// ===== MAIN GAME DRAW =====
+function drawGame() {
+  // Arena
+  drawArenaBackground();
+
+  // Court floor
+  drawCourt();
+
+  // Crowd
+  drawCrowd();
+
+  // Scoreboard
+  drawScoreboard();
+
+  // Rhythm lane
+  drawRhythmLane();
+
+  // Players
+  drawPlayer();
+  drawOpponent();
+
+  // HUD
+  drawHUD();
+
+  // Touch zones (mobile)
+  if ('ontouchstart' in window) drawTouchZones();
+
+  // Feedback
+  if (feedbackTimer > 0) {
+    const alpha = Math.min(1, feedbackTimer * 2);
+    const yOff = (1 - feedbackTimer / 1.2) * -30;
+    CTX.textAlign = 'center';
+    CTX.textBaseline = 'middle';
+    CTX.font = `bold ${W * 0.04}px 'Segoe UI', Arial, sans-serif`;
+    CTX.shadowColor = feedbackColor;
+    CTX.shadowBlur = 20;
+    CTX.fillStyle = feedbackColor;
+    CTX.globalAlpha = alpha;
+    CTX.fillText(feedbackText, W * 0.45, H * 0.3 + yOff);
+    CTX.globalAlpha = 1;
+    CTX.shadowBlur = 0;
+  }
+
+  // Gassed out overlay
+  if (state === 'GASSED_OUT') {
+    CTX.fillStyle = 'rgba(255,50,0,0.15)';
+    CTX.fillRect(0, 0, W, H);
+    CTX.textAlign = 'center';
+    CTX.font = `bold ${W * 0.05}px 'Segoe UI', Arial, sans-serif`;
+    const blink = Math.sin(titleBounce * 5) > 0 ? 1 : 0.3;
+    CTX.fillStyle = `rgba(255,87,34,${blink})`;
+    CTX.fillText('GASSED OUT!', W * 0.45, H * 0.18);
+    CTX.font = `${W * 0.02}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText('Recovering... Waiting for ATP', W * 0.45, H * 0.24);
+  }
+
+  // Draw particles on top
+  drawParticles();
+
+  // Respiration equation display
+  drawRespirationEquation();
+}
+
+function drawArenaBackground() {
+  // Dark arena gradient
+  const grad = CTX.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, COLORS.arena);
+  grad.addColorStop(1, '#0A0A1A');
+  CTX.fillStyle = grad;
+  CTX.fillRect(0, 0, W, H);
+
+  // Arena lights
+  for (let i = 0; i < 5; i++) {
+    const lx = W * 0.15 + i * W * 0.18;
+    const grad2 = CTX.createRadialGradient(lx, -10, 0, lx, -10, H * 0.6);
+    grad2.addColorStop(0, 'rgba(255,255,220,0.04)');
+    grad2.addColorStop(1, 'rgba(255,255,220,0)');
+    CTX.fillStyle = grad2;
+    CTX.fillRect(0, 0, W, H);
+  }
+}
+
+function drawCourt() {
+  // Court floor
+  const courtY = H * 0.6, courtH = H * 0.4;
+  const courtGrad = CTX.createLinearGradient(0, courtY, 0, H);
+  courtGrad.addColorStop(0, COLORS.court);
+  courtGrad.addColorStop(1, COLORS.courtDark);
+  CTX.fillStyle = courtGrad;
+  CTX.fillRect(0, courtY, W, courtH);
+
+  // Wood grain lines
+  CTX.strokeStyle = 'rgba(139,90,43,0.15)';
+  CTX.lineWidth = 1;
+  for (let i = 0; i < 30; i++) {
+    const y = courtY + i * (courtH / 30);
+    CTX.beginPath();
+    CTX.moveTo(0, y);
+    CTX.lineTo(W, y);
+    CTX.stroke();
+  }
+
+  // Court markings
+  CTX.strokeStyle = COLORS.courtLine;
+  CTX.lineWidth = 2;
+
+  // Center line
+  CTX.beginPath();
+  CTX.moveTo(W / 2, courtY);
+  CTX.lineTo(W / 2, H);
+  CTX.stroke();
+
+  // Center circle
+  CTX.beginPath();
+  CTX.ellipse(W / 2, courtY + courtH * 0.4, W * 0.08, courtH * 0.25, 0, 0, Math.PI * 2);
+  CTX.stroke();
+
+  // Three-point arcs (simplified)
+  CTX.beginPath();
+  CTX.ellipse(W * 0.12, courtY + courtH * 0.4, W * 0.15, courtH * 0.5, 0, -0.6, 0.6);
+  CTX.stroke();
+  CTX.beginPath();
+  CTX.ellipse(W * 0.88, courtY + courtH * 0.4, W * 0.15, courtH * 0.5, 0, Math.PI - 0.6, Math.PI + 0.6);
+  CTX.stroke();
+
+  // Boundary
+  CTX.strokeStyle = 'rgba(255,255,255,0.3)';
+  CTX.strokeRect(W * 0.02, courtY, W * 0.96, courtH - 2);
+}
+
+function drawCrowd() {
+  const crowdY = H * 0.08, crowdH = H * 0.52;
+  // Rows of crowd silhouettes
+  for (let row = 0; row < 3; row++) {
+    const rowY = crowdY + row * crowdH * 0.3;
+    const alpha = 0.15 + row * 0.05;
+    const color = row % 2 === 0 ? COLORS.crowd1 : COLORS.crowd2;
+    for (let i = 0; i < 40; i++) {
+      const cx = (i / 40) * W + Math.sin(i * 1.7) * 5;
+      const sway = crowdExcitement * Math.sin(titleBounce * 3 + i * 0.5) * 3;
+      const headR = 6 + row * 2;
+      CTX.fillStyle = color;
+      CTX.globalAlpha = alpha;
+      // Head
+      CTX.beginPath();
+      CTX.arc(cx, rowY - headR + sway, headR, 0, Math.PI * 2);
+      CTX.fill();
+      // Body
+      CTX.fillRect(cx - headR * 0.7, rowY + sway, headR * 1.4, headR * 1.5);
+    }
+  }
+  CTX.globalAlpha = 1;
+}
+
+function drawScoreboard() {
+  const sbW = W * 0.28, sbH = H * 0.09;
+  const sbX = (W - sbW) / 2, sbY = 8;
+
+  // Board background
+  CTX.fillStyle = COLORS.scoreboard;
+  roundRect(sbX, sbY, sbW, sbH, 6, true, false);
+  CTX.strokeStyle = COLORS.scoreboardLight;
+  CTX.lineWidth = 2;
+  roundRect(sbX, sbY, sbW, sbH, 6, false, true);
+
+  // LED dots effect
+  CTX.fillStyle = 'rgba(0,0,0,0.3)';
+  for (let dx = 0; dx < sbW; dx += 4) {
+    for (let dy = 0; dy < sbH; dy += 4) {
+      CTX.fillRect(sbX + dx, sbY + dy, 1, 1);
+    }
+  }
+
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+  const cy = sbY + sbH / 2;
+
+  // Player score
+  CTX.font = `bold ${W * 0.015}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.player;
+  CTX.fillText('YOU', sbX + sbW * 0.18, cy - sbH * 0.22);
+  CTX.font = `bold ${W * 0.028}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = '#FFF';
+  CTX.fillText(playerScore.toString(), sbX + sbW * 0.18, cy + sbH * 0.15);
+
+  // VS / timer
+  CTX.font = `bold ${W * 0.014}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.playerGold;
+  const timeLeft = Math.max(0, Math.ceil(levelTimer));
+  CTX.fillText(timeLeft + 's', sbX + sbW / 2, cy - sbH * 0.22);
+  if (currentLevel < LEVELS.length) {
+    CTX.font = `${W * 0.01}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(LEVELS[currentLevel].name, sbX + sbW / 2, cy + sbH * 0.2);
+  }
+
+  // Opponent score
+  CTX.font = `bold ${W * 0.015}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.opponent;
+  CTX.fillText('OPP', sbX + sbW * 0.82, cy - sbH * 0.22);
+  CTX.font = `bold ${W * 0.028}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = '#FFF';
+  CTX.fillText(opponentScore.toString(), sbX + sbW * 0.82, cy + sbH * 0.15);
+
+  // Divider lines
+  CTX.strokeStyle = 'rgba(255,255,255,0.3)';
+  CTX.lineWidth = 1;
+  CTX.beginPath();
+  CTX.moveTo(sbX + sbW * 0.36, sbY + 4);
+  CTX.lineTo(sbX + sbW * 0.36, sbY + sbH - 4);
+  CTX.moveTo(sbX + sbW * 0.64, sbY + 4);
+  CTX.lineTo(sbX + sbW * 0.64, sbY + sbH - 4);
+  CTX.stroke();
+
+  // Combo counter
+  if (combo > 1) {
+    CTX.font = `bold ${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.perfect;
+    CTX.fillText(`${combo}x COMBO`, sbX + sbW / 2, sbY + sbH + 16);
+  }
+}
+
+function drawRhythmLane() {
+  const laneY = H * 0.35, laneH = H * 0.2;
+  const hitX = W * 0.42;
+
+  // Lane background
+  CTX.fillStyle = 'rgba(20,20,40,0.5)';
+  CTX.fillRect(W * 0.2, laneY, W * 0.6, laneH);
+
+  // Hit zone
+  CTX.strokeStyle = 'rgba(255,255,255,0.5)';
+  CTX.lineWidth = 2;
+  CTX.setLineDash([5, 5]);
+  CTX.beginPath();
+  CTX.moveTo(hitX, laneY);
+  CTX.lineTo(hitX, laneY + laneH);
+  CTX.stroke();
+  CTX.setLineDash([]);
+
+  // Hit zone glow
+  const glow = CTX.createRadialGradient(hitX, laneY + laneH / 2, 0, hitX, laneY + laneH / 2, 50);
+  glow.addColorStop(0, 'rgba(255,255,255,0.15)');
+  glow.addColorStop(1, 'rgba(255,255,255,0)');
+  CTX.fillStyle = glow;
+  CTX.fillRect(hitX - 50, laneY, 100, laneH);
+
+  // Target zone label
+  CTX.textAlign = 'center';
+  CTX.font = `${W * 0.01}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = 'rgba(255,255,255,0.4)';
+  CTX.fillText('HIT ZONE', hitX, laneY - 5);
+
+  // Timing window indicators
+  CTX.strokeStyle = 'rgba(0,230,118,0.3)';
+  CTX.lineWidth = 1;
+  CTX.beginPath();
+  CTX.moveTo(hitX - TIMING.perfect, laneY);
+  CTX.lineTo(hitX - TIMING.perfect, laneY + laneH);
+  CTX.moveTo(hitX + TIMING.perfect, laneY);
+  CTX.lineTo(hitX + TIMING.perfect, laneY + laneH);
+  CTX.stroke();
+
+  CTX.strokeStyle = 'rgba(76,175,80,0.2)';
+  CTX.beginPath();
+  CTX.moveTo(hitX - TIMING.good, laneY);
+  CTX.lineTo(hitX - TIMING.good, laneY + laneH);
+  CTX.moveTo(hitX + TIMING.good, laneY);
+  CTX.lineTo(hitX + TIMING.good, laneY + laneH);
+  CTX.stroke();
+
+  // Draw prompts
+  for (const p of prompts) {
+    const move = MOVES[p.move];
+    if (p.alive) {
+      const dist = Math.abs(p.x - p.hitX);
+      let ringAlpha = 0.3;
+      if (dist < TIMING.perfect) ringAlpha = 1;
+      else if (dist < TIMING.good) ringAlpha = 0.7;
+      else if (dist < TIMING.miss) ringAlpha = 0.5;
+
+      // Prompt circle
+      CTX.beginPath();
+      CTX.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      CTX.fillStyle = move.color;
+      CTX.globalAlpha = 0.3;
+      CTX.fill();
+      CTX.globalAlpha = ringAlpha;
+      CTX.strokeStyle = move.color;
+      CTX.lineWidth = 3;
+      CTX.stroke();
+      CTX.globalAlpha = 1;
+
+      // Move label
+      CTX.textAlign = 'center';
+      CTX.textBaseline = 'middle';
+      CTX.font = `bold ${W * 0.016}px 'Segoe UI', Arial, sans-serif`;
+      CTX.fillStyle = '#FFF';
+      CTX.fillText(move.icon, p.x, p.y - 2);
+
+      // Key hint
+      CTX.font = `${W * 0.01}px 'Segoe UI', Arial, sans-serif`;
+      CTX.fillStyle = 'rgba(255,255,255,0.6)';
+      const keyLabel = move.key === ' ' ? 'SPC' : move.key.toUpperCase();
+      CTX.fillText(keyLabel, p.x, p.y + p.radius + 10);
+
+      // Approach line
+      CTX.strokeStyle = `rgba(255,255,255,0.1)`;
+      CTX.lineWidth = 1;
+      CTX.beginPath();
+      CTX.moveTo(p.x, p.y);
+      CTX.lineTo(p.hitX, p.y);
+      CTX.stroke();
+    } else if (p.resultTimer > 0) {
+      // Result display
+      const alpha = p.resultTimer / 0.8;
+      const scale = 1 + (1 - alpha) * 0.5;
+      CTX.globalAlpha = alpha;
+      CTX.textAlign = 'center';
+      CTX.textBaseline = 'middle';
+
+      if (p.result === 'perfect') {
+        CTX.font = `bold ${W * 0.025 * scale}px 'Segoe UI', Arial, sans-serif`;
+        CTX.fillStyle = COLORS.perfect;
+        CTX.fillText('PERFECT', p.hitX, p.y - 10 * (1 - alpha));
+      } else if (p.result === 'good') {
+        CTX.font = `bold ${W * 0.02 * scale}px 'Segoe UI', Arial, sans-serif`;
+        CTX.fillStyle = COLORS.good;
+        CTX.fillText('GOOD', p.hitX, p.y - 10 * (1 - alpha));
+      } else {
+        CTX.font = `bold ${W * 0.025 * scale}px 'Segoe UI', Arial, sans-serif`;
+        CTX.fillStyle = COLORS.miss;
+        CTX.fillText('MISS', p.hitX, p.y - 10 * (1 - alpha));
+      }
+      CTX.globalAlpha = 1;
+    }
+  }
+}
+
+function drawPlayer() {
+  const px = W * 0.28, py = H * 0.58;
+  drawBasketballPlayer(px, py, COLORS.player, COLORS.playerGold, playerAnim, playerAnimTimer, breathPhase, atp, true);
+}
+
+function drawOpponent() {
+  const ox = W * 0.72, oy = H * 0.6;
+  drawBasketballPlayer(ox, oy, COLORS.opponent, COLORS.opponentLight, opponentAnim, opponentAnimTimer, 0.5, 80, false);
+}
+
+function drawBasketballPlayer(x, y, jerseyColor, accentColor, anim, animTimer, breath, energy, isPlayer) {
+  const scale = isPlayer ? 1 : 0.85;
+  const s = scale;
+
+  // Fatigue effect
+  const fatigueSlump = isPlayer ? Math.max(0, 1 - energy / 30) * 8 : 0;
+
+  // Animation offsets
+  let jumpY = 0, armAngle = 0, legSpread = 0, bodyTilt = 0;
+  const animProgress = animTimer > 0 ? animTimer / 0.6 : 0;
+
+  switch (anim) {
+    case 'dribble':
+      bodyTilt = Math.sin(animProgress * 10) * 3;
+      armAngle = Math.sin(animProgress * 8) * 0.3;
+      break;
+    case 'sprint':
+      legSpread = Math.sin(animProgress * 12) * 15;
+      bodyTilt = 5;
+      break;
+    case 'jumpshot':
+    case 'jump':
+      jumpY = -Math.sin(animProgress * Math.PI) * 50 * s;
+      armAngle = -animProgress * 1.5;
+      break;
+    case 'slamdunk':
+    case 'dunk':
+      jumpY = -Math.sin(animProgress * Math.PI) * 80 * s;
+      armAngle = -animProgress * 2;
+      bodyTilt = -5;
+      break;
+    case 'crossover':
+      bodyTilt = Math.sin(animProgress * 8) * 10;
+      armAngle = Math.cos(animProgress * 6) * 0.5;
+      break;
+    case 'block':
+      jumpY = -Math.sin(animProgress * Math.PI) * 30 * s;
+      armAngle = -1.2;
+      break;
+    case 'gassed':
+      fatigueSlump > 0 || true;
+      bodyTilt = 10;
+      break;
+    case 'score':
+      jumpY = -Math.sin(animProgress * Math.PI) * 20 * s;
+      armAngle = -0.5;
+      break;
+  }
+
+  CTX.save();
+  CTX.translate(x, y + jumpY + fatigueSlump);
+
+  // Shadow
+  CTX.beginPath();
+  CTX.ellipse(0, 55 * s - jumpY * 0.3, 25 * s, 8 * s, 0, 0, Math.PI * 2);
+  CTX.fillStyle = 'rgba(0,0,0,0.3)';
+  CTX.fill();
+
+  // Breathing effect
+  const breathScale = 1 + (breath - 0.5) * 0.02;
+
+  CTX.save();
+  CTX.rotate(bodyTilt * Math.PI / 180);
+  CTX.scale(breathScale, breathScale);
+
+  // Legs
+  CTX.strokeStyle = COLORS.playerSkin;
+  CTX.lineWidth = 8 * s;
+  CTX.lineCap = 'round';
+  // Left leg
+  CTX.beginPath();
+  CTX.moveTo(-8 * s, 20 * s);
+  CTX.lineTo(-12 * s - legSpread * 0.3, 50 * s);
+  CTX.stroke();
+  // Right leg
+  CTX.beginPath();
+  CTX.moveTo(8 * s, 20 * s);
+  CTX.lineTo(12 * s + legSpread * 0.3, 50 * s);
+  CTX.stroke();
+
+  // Shoes
+  CTX.fillStyle = accentColor;
+  CTX.beginPath();
+  CTX.ellipse(-12 * s - legSpread * 0.3, 52 * s, 10 * s, 5 * s, 0, 0, Math.PI * 2);
+  CTX.fill();
+  CTX.beginPath();
+  CTX.ellipse(12 * s + legSpread * 0.3, 52 * s, 10 * s, 5 * s, 0, 0, Math.PI * 2);
+  CTX.fill();
+
+  // Jersey/body
+  CTX.fillStyle = jerseyColor;
+  CTX.beginPath();
+  CTX.moveTo(-15 * s, -20 * s);
+  CTX.lineTo(15 * s, -20 * s);
+  CTX.lineTo(12 * s, 22 * s);
+  CTX.lineTo(-12 * s, 22 * s);
+  CTX.closePath();
+  CTX.fill();
+
+  // Jersey number
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+  CTX.font = `bold ${14 * s}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = accentColor;
+  CTX.fillText(isPlayer ? '23' : '11', 0, 0);
+
+  // Jersey stripe
+  CTX.strokeStyle = accentColor;
+  CTX.lineWidth = 2 * s;
+  CTX.beginPath();
+  CTX.moveTo(-15 * s, -10 * s);
+  CTX.lineTo(15 * s, -10 * s);
+  CTX.stroke();
+
+  // Arms
+  CTX.strokeStyle = COLORS.playerSkin;
+  CTX.lineWidth = 7 * s;
+  CTX.lineCap = 'round';
+
+  // Left arm
+  CTX.save();
+  CTX.translate(-15 * s, -15 * s);
+  CTX.rotate(-0.3 + armAngle);
+  CTX.beginPath();
+  CTX.moveTo(0, 0);
+  CTX.lineTo(-15 * s, 20 * s);
+  CTX.stroke();
+  CTX.restore();
+
+  // Right arm (ball arm)
+  CTX.save();
+  CTX.translate(15 * s, -15 * s);
+  CTX.rotate(0.3 - armAngle);
+  CTX.beginPath();
+  CTX.moveTo(0, 0);
+  CTX.lineTo(15 * s, 18 * s);
+  CTX.stroke();
+
+  // Basketball
+  if (isPlayer && (anim === 'dribble' || anim === 'idle' || anim === 'crossover')) {
+    const ballY = 20 * s + Math.abs(Math.sin(titleBounce * 5)) * 10;
+    CTX.beginPath();
+    CTX.arc(16 * s, ballY, 8 * s, 0, Math.PI * 2);
+    CTX.fillStyle = '#FF6D00';
+    CTX.fill();
+    CTX.strokeStyle = '#BF360C';
+    CTX.lineWidth = 1;
+    CTX.stroke();
+    // Ball lines
+    CTX.beginPath();
+    CTX.moveTo(8 * s, ballY);
+    CTX.lineTo(24 * s, ballY);
+    CTX.moveTo(16 * s, ballY - 8 * s);
+    CTX.lineTo(16 * s, ballY + 8 * s);
+    CTX.strokeStyle = '#BF360C';
+    CTX.lineWidth = 0.5;
+    CTX.stroke();
+  }
+  CTX.restore();
+
+  // Head
+  const headY = -30 * s;
+  CTX.beginPath();
+  CTX.arc(0, headY, 12 * s, 0, Math.PI * 2);
+  CTX.fillStyle = COLORS.playerSkin;
+  CTX.fill();
+
+  // Hair
+  CTX.beginPath();
+  CTX.arc(0, headY - 4 * s, 13 * s, Math.PI, 0);
+  CTX.fillStyle = '#1A1A1A';
+  CTX.fill();
+
+  // Eyes
+  CTX.fillStyle = '#FFF';
+  CTX.beginPath();
+  CTX.ellipse(-4 * s, headY - 1 * s, 3 * s, 2.5 * s, 0, 0, Math.PI * 2);
+  CTX.fill();
+  CTX.beginPath();
+  CTX.ellipse(4 * s, headY - 1 * s, 3 * s, 2.5 * s, 0, 0, Math.PI * 2);
+  CTX.fill();
+  CTX.fillStyle = '#333';
+  CTX.beginPath();
+  CTX.arc(-4 * s, headY - 0.5 * s, 1.5 * s, 0, Math.PI * 2);
+  CTX.fill();
+  CTX.beginPath();
+  CTX.arc(4 * s, headY - 0.5 * s, 1.5 * s, 0, Math.PI * 2);
+  CTX.fill();
+
+  // Mouth (expression based on energy)
+  if (anim === 'gassed' || energy < 15) {
+    // Tired mouth
+    CTX.beginPath();
+    CTX.arc(0, headY + 5 * s, 4 * s, 0.1, Math.PI - 0.1);
+    CTX.strokeStyle = '#8B4513';
+    CTX.lineWidth = 1.5;
+    CTX.stroke();
+  } else if (anim === 'slamdunk' || anim === 'dunk') {
+    // Excited
+    CTX.beginPath();
+    CTX.arc(0, headY + 3 * s, 4 * s, 0, Math.PI);
+    CTX.fillStyle = '#8B4513';
+    CTX.fill();
+  } else {
+    // Determined
+    CTX.beginPath();
+    CTX.moveTo(-3 * s, headY + 5 * s);
+    CTX.lineTo(3 * s, headY + 5 * s);
+    CTX.strokeStyle = '#8B4513';
+    CTX.lineWidth = 1.5;
+    CTX.stroke();
+  }
+
+  // Headband
+  CTX.strokeStyle = accentColor;
+  CTX.lineWidth = 3 * s;
+  CTX.beginPath();
+  CTX.arc(0, headY, 12.5 * s, Math.PI * 0.85, Math.PI * 0.15);
+  CTX.stroke();
+
+  // Sweat drops when tired
+  if (isPlayer && energy < 40) {
+    const sweatAlpha = (40 - energy) / 40;
+    CTX.fillStyle = `rgba(100,180,255,${sweatAlpha * 0.7})`;
+    const sweatY = headY + Math.sin(titleBounce * 4) * 5;
+    CTX.beginPath();
+    CTX.ellipse(-14 * s, sweatY, 2, 3, 0, 0, Math.PI * 2);
+    CTX.fill();
+    if (energy < 25) {
+      CTX.beginPath();
+      CTX.ellipse(13 * s, sweatY + 3, 2, 3, 0, 0, Math.PI * 2);
+      CTX.fill();
+    }
+  }
+
+  // CO2 puffs when exercising hard
+  if (isPlayer && co2 > 30) {
+    const puffAlpha = Math.min(1, co2 / 60) * 0.4;
+    for (let i = 0; i < 3; i++) {
+      const px2 = 15 * s + i * 8;
+      const py2 = headY - 5 + Math.sin(titleBounce * 3 + i) * 5 - i * 8;
+      const pr = 3 + i * 2;
+      CTX.beginPath();
+      CTX.arc(px2, py2, pr, 0, Math.PI * 2);
+      CTX.fillStyle = `rgba(158,158,158,${puffAlpha * (1 - i * 0.3)})`;
+      CTX.fill();
+    }
+  }
+
+  CTX.restore();
+  CTX.restore();
+}
+
+function drawPlayerSilhouette(x, y, scale, pose) {
+  CTX.save();
+  CTX.translate(x, y);
+  CTX.scale(scale, scale);
+  CTX.fillStyle = 'rgba(123,31,162,0.6)';
+
+  if (pose === 'dunk') {
+    // Body
+    CTX.fillRect(-8, -15, 16, 30);
+    // Arms up
+    CTX.save();
+    CTX.translate(8, -15);
+    CTX.rotate(-1.2);
+    CTX.fillRect(0, -3, 25, 6);
+    CTX.restore();
+    CTX.save();
+    CTX.translate(-8, -15);
+    CTX.rotate(0.5);
+    CTX.fillRect(-20, -3, 20, 6);
+    CTX.restore();
+    // Head
+    CTX.beginPath();
+    CTX.arc(0, -22, 9, 0, Math.PI * 2);
+    CTX.fill();
+    // Legs
+    CTX.save();
+    CTX.translate(5, 15);
+    CTX.rotate(0.3);
+    CTX.fillRect(-3, 0, 6, 25);
+    CTX.restore();
+    CTX.save();
+    CTX.translate(-5, 15);
+    CTX.rotate(-0.4);
+    CTX.fillRect(-3, 0, 6, 25);
+    CTX.restore();
+    // Ball
+    CTX.beginPath();
+    CTX.arc(30, -30, 6, 0, Math.PI * 2);
+    CTX.fillStyle = '#FF6D00';
+    CTX.fill();
+  }
+  CTX.restore();
+}
+
+function drawAtpMolecule(x, y, size, alpha) {
+  CTX.globalAlpha = alpha;
+  // ATP hexagon-ish shape
+  CTX.beginPath();
+  for (let i = 0; i < 6; i++) {
+    const a = (Math.PI * 2 / 6) * i - Math.PI / 6;
+    const px2 = x + Math.cos(a) * size;
+    const py2 = y + Math.sin(a) * size;
+    if (i === 0) CTX.moveTo(px2, py2);
+    else CTX.lineTo(px2, py2);
+  }
+  CTX.closePath();
+  CTX.fillStyle = COLORS.atp;
+  CTX.fill();
+  CTX.strokeStyle = COLORS.atpDark;
+  CTX.lineWidth = 1;
+  CTX.stroke();
+
+  // "ATP" text
+  if (size > 8) {
+    CTX.textAlign = 'center';
+    CTX.textBaseline = 'middle';
+    CTX.font = `bold ${Math.max(6, size * 0.7)}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#004D40';
+    CTX.fillText('ATP', x, y);
+  }
+  CTX.globalAlpha = 1;
+}
+
+function drawHUD() {
+  const hudX = 10, hudY = H * 0.12;
+  const barW = W * 0.15, barH = 18;
+  const gap = 32;
+
+  // HUD panel background
+  CTX.fillStyle = 'rgba(33,33,33,0.85)';
+  roundRect(hudX - 5, hudY - 8, barW + 60, gap * 5 + 20, 10, true, false);
+  CTX.strokeStyle = 'rgba(255,255,255,0.1)';
+  CTX.lineWidth = 1;
+  roundRect(hudX - 5, hudY - 8, barW + 60, gap * 5 + 20, 10, false, true);
+
+  CTX.textAlign = 'left';
+  CTX.textBaseline = 'middle';
+
+  // ATP bar (most prominent)
+  drawBar(hudX + 5, hudY, barW, barH + 4, atp, 100, COLORS.atp, COLORS.atpDark, 'ATP');
+  // ATP amount text
+  CTX.font = `bold ${W * 0.014}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.atp;
+  CTX.fillText(Math.round(atp).toString(), hudX + barW + 10, hudY + (barH + 4) / 2);
+
+  // Glucose bar
+  drawBar(hudX + 5, hudY + gap, barW, barH, glucose, 100, COLORS.glucose, COLORS.glucoseDark, 'GLUCOSE');
+  CTX.font = `${W * 0.011}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.glucose;
+  CTX.fillText(Math.round(glucose).toString(), hudX + barW + 10, hudY + gap + barH / 2);
+
+  // Oxygen bar (with pulse)
+  const o2Pulse = breathPhase * 0.1;
+  drawBar(hudX + 5, hudY + gap * 2, barW, barH, oxygen, 100, COLORS.oxygen, COLORS.oxygenDark, 'O\u2082');
+  CTX.font = `${W * 0.011}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.oxygen;
+  CTX.fillText(Math.round(oxygen).toString(), hudX + barW + 10, hudY + gap * 2 + barH / 2);
+
+  // CO2 indicator
+  drawBar(hudX + 5, hudY + gap * 3, barW, barH, co2, 100, COLORS.co2, '#757575', 'CO\u2082');
+  CTX.font = `${W * 0.011}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.co2;
+  CTX.fillText(Math.round(co2).toString(), hudX + barW + 10, hudY + gap * 3 + barH / 2);
+
+  // Respiration mode indicator
+  const modeY = hudY + gap * 4;
+  if (isAnaerobic) {
+    CTX.fillStyle = '#FF5722';
+    CTX.font = `bold ${W * 0.012}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillText('ANAEROBIC!', hudX + 5, modeY + 8);
+    CTX.font = `${W * 0.009}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#FF8A65';
+    CTX.fillText('Lactic acid building...', hudX + 5, modeY + 22);
+  } else {
+    CTX.fillStyle = COLORS.atp;
+    CTX.font = `bold ${W * 0.012}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillText('AEROBIC', hudX + 5, modeY + 8);
+    CTX.font = `${W * 0.009}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText('Respiration active', hudX + 5, modeY + 22);
+  }
+
+  // Lactic acid warning
+  if (lacticAcid > 30) {
+    const warnAlpha = Math.sin(titleBounce * 4) > 0 ? 0.8 : 0.4;
+    CTX.fillStyle = `rgba(255,87,34,${warnAlpha})`;
+    CTX.font = `bold ${W * 0.011}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillText(`Lactic Acid: ${Math.round(lacticAcid)}%`, hudX + 5, modeY + 36);
+  }
+
+  // ATP production rate indicator
+  if (atpProductionRate > 0) {
+    const rateX = hudX + barW + 35;
+    CTX.fillStyle = COLORS.atp;
+    CTX.font = `${W * 0.009}px 'Segoe UI', Arial, sans-serif`;
+    CTX.textAlign = 'left';
+    CTX.fillText(`+${atpProductionRate.toFixed(0)}/s`, rateX, hudY + (barH + 4) / 2);
+  }
+
+  // ATP molecule animations
+  for (const a of atpMoleculeAnims) {
+    const t = a.t;
+    const easeT = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    const mx = a.x + (a.targetX - a.x) * easeT;
+    const my = a.y + (a.targetY - a.y) * easeT - Math.sin(easeT * Math.PI) * 30;
+    drawAtpMolecule(mx, my, 10, 1 - t);
+  }
+
+  // Move cost reference (right side)
+  const refX = W - W * 0.13, refY = H * 0.12;
+  CTX.fillStyle = 'rgba(33,33,33,0.7)';
+  roundRect(refX - 10, refY - 8, W * 0.13, H * 0.32, 8, true, false);
+  CTX.textAlign = 'center';
+  CTX.font = `bold ${W * 0.011}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.textDim;
+  CTX.fillText('MOVES', refX + W * 0.055, refY + 4);
+
+  let my2 = refY + 22;
+  for (const mk of MOVE_KEYS) {
+    const m = MOVES[mk];
+    const keyLabel = m.key === ' ' ? 'SPC' : m.key.toUpperCase();
+    CTX.font = `bold ${W * 0.01}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = m.color;
+    CTX.textAlign = 'left';
+    CTX.fillText(`[${keyLabel}]`, refX, my2);
+    CTX.textAlign = 'right';
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(`${m.cost} ATP`, refX + W * 0.115, my2);
+    my2 += 16;
+  }
+}
+
+function drawBar(x, y, w, h, val, max, color, darkColor, label) {
+  // Background
+  CTX.fillStyle = 'rgba(0,0,0,0.4)';
+  roundRect(x, y, w, h, h / 2, true, false);
+
+  // Fill
+  const pct = Math.max(0, Math.min(1, val / max));
+  if (pct > 0) {
+    const grad = CTX.createLinearGradient(x, y, x + w * pct, y);
+    grad.addColorStop(0, darkColor);
+    grad.addColorStop(1, color);
+    CTX.fillStyle = grad;
+    roundRect(x, y, w * pct, h, h / 2, true, false);
+  }
+
+  // Low warning glow
+  if (pct < 0.2 && pct > 0) {
+    CTX.strokeStyle = `rgba(239,83,80,${Math.sin(titleBounce * 5) * 0.3 + 0.3})`;
+    CTX.lineWidth = 2;
+    roundRect(x, y, w, h, h / 2, false, true);
+  }
+
+  // Label
+  CTX.textAlign = 'left';
+  CTX.textBaseline = 'middle';
+  CTX.font = `bold ${Math.max(9, W * 0.009)}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = 'rgba(255,255,255,0.9)';
+  CTX.fillText(label, x + 6, y + h / 2);
+}
+
+function drawRespirationEquation() {
+  const eqY = H - 28;
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+
+  // Background strip
+  CTX.fillStyle = 'rgba(0,0,0,0.5)';
+  CTX.fillRect(W * 0.2, eqY - 14, W * 0.6, 28);
+
+  CTX.font = `${W * 0.013}px 'Segoe UI', Arial, sans-serif`;
+
+  // Build colored equation
+  const parts = [
+    { text: 'C\u2086H\u2081\u2082O\u2086', color: COLORS.glucose },
+    { text: ' + ', color: '#FFF' },
+    { text: '6O\u2082', color: COLORS.oxygen },
+    { text: ' \u2192 ', color: '#FFF' },
+    { text: '6CO\u2082', color: COLORS.co2 },
+    { text: ' + ', color: '#FFF' },
+    { text: '6H\u2082O', color: '#64B5F6' },
+    { text: ' + ', color: '#FFF' },
+    { text: 'ATP', color: COLORS.atp }
+  ];
+
+  // Measure total width
+  let totalWidth = 0;
+  for (const p of parts) totalWidth += CTX.measureText(p.text).width;
+  let drawX = W / 2 - totalWidth / 2;
+
+  CTX.textAlign = 'left';
+  for (const p of parts) {
+    CTX.fillStyle = p.color;
+    CTX.fillText(p.text, drawX, eqY);
+    drawX += CTX.measureText(p.text).width;
+  }
+
+  // Label
+  CTX.textAlign = 'center';
+  CTX.font = `${W * 0.009}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = isAnaerobic ? '#FF5722' : 'rgba(255,255,255,0.4)';
+  CTX.fillText(isAnaerobic ? 'ANAEROBIC RESPIRATION (inefficient!)' : 'AEROBIC RESPIRATION', W / 2, eqY + 16);
+}
+
+function drawTouchZones() {
+  for (const z of touchZones) {
+    const m = MOVES[z.move];
+    CTX.fillStyle = 'rgba(30,30,50,0.7)';
+    roundRect(z.x, z.y, z.w, z.h, 8, true, false);
+    CTX.strokeStyle = m.color;
+    CTX.lineWidth = 2;
+    roundRect(z.x, z.y, z.w, z.h, 8, false, true);
+    CTX.textAlign = 'center';
+    CTX.textBaseline = 'middle';
+    CTX.font = `bold ${W * 0.016}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = m.color;
+    CTX.fillText(m.icon, z.x + z.w / 2, z.y + z.h * 0.35);
+    CTX.font = `${W * 0.009}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(`${m.cost} ATP`, z.x + z.w / 2, z.y + z.h * 0.7);
+  }
+}
+
+function drawParticles() {
+  for (const p of particles) {
+    const alpha = p.life / p.maxLife;
+    CTX.globalAlpha = alpha;
+    CTX.fillStyle = p.color;
+    CTX.beginPath();
+    CTX.arc(p.x, p.y, p.size * alpha, 0, Math.PI * 2);
+    CTX.fill();
+  }
+  CTX.globalAlpha = 1;
+}
+
+// ===== QUARTER BREAK =====
+function drawQuarterBreak() {
+  drawArenaBackground();
+  CTX.fillStyle = 'rgba(10,10,30,0.85)';
+  CTX.fillRect(0, 0, W, H);
+
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+
+  const qr = quarterResults[quarterResults.length - 1];
+  if (!qr) return;
+
+  CTX.font = `bold ${W * 0.04}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.playerGold;
+  CTX.fillText(`${qr.name} COMPLETE!`, W / 2, H * 0.1);
+
+  // Score comparison
+  CTX.font = `bold ${W * 0.06}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = qr.playerScore >= qr.opponentScore ? COLORS.atp : COLORS.miss;
+  CTX.fillText(`${qr.playerScore} - ${qr.opponentScore}`, W / 2, H * 0.22);
+  CTX.font = `${W * 0.02}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.textDim;
+  CTX.fillText(qr.playerScore >= qr.opponentScore ? 'YOU LEAD!' : 'OPPONENT LEADS!', W / 2, H * 0.3);
+
+  // Stats
+  const stats = [
+    ['Perfects', qr.perfects.toString(), COLORS.perfect],
+    ['Goods', qr.goods.toString(), COLORS.good],
+    ['Misses', qr.misses.toString(), COLORS.miss],
+    ['Accuracy', qr.accuracy + '%', '#FFF'],
+    ['Max Combo', qr.maxCombo.toString(), COLORS.playerGold],
+    ['Efficiency', qr.efficiency + ' pts/ATP', COLORS.atp],
+    ['Food', qr.food, COLORS.glucose]
+  ];
+
+  const statY = H * 0.38;
+  for (let i = 0; i < stats.length; i++) {
+    const sy = statY + i * H * 0.055;
+    CTX.font = `${W * 0.015}px 'Segoe UI', Arial, sans-serif`;
+    CTX.textAlign = 'right';
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(stats[i][0] + ':', W / 2 - 10, sy);
+    CTX.textAlign = 'left';
+    CTX.fillStyle = stats[i][2];
+    CTX.font = `bold ${W * 0.015}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillText(stats[i][1], W / 2 + 10, sy);
+  }
+
+  // Medal
+  if (qr.medal !== 'none') {
+    const medalColors = { gold: '#FFD700', silver: '#C0C0C0', bronze: '#CD7F32' };
+    CTX.beginPath();
+    CTX.arc(W / 2, H * 0.8, 30, 0, Math.PI * 2);
+    CTX.fillStyle = medalColors[qr.medal];
+    CTX.fill();
+    CTX.strokeStyle = '#FFF';
+    CTX.lineWidth = 2;
+    CTX.stroke();
+    CTX.textAlign = 'center';
+    CTX.font = `bold ${W * 0.02}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#333';
+    CTX.fillText(qr.medal[0].toUpperCase(), W / 2, H * 0.8);
+  }
+
+  // Science note
+  CTX.textAlign = 'center';
+  CTX.font = `${W * 0.013}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.glucose;
+  const note = glucose < 20
+    ? 'Your glucose is running low! Choose wisely next quarter.'
+    : 'Good energy reserves. Keep managing your ATP!';
+  CTX.fillText(note, W / 2, H * 0.88);
+
+  const alpha2 = (Math.sin(titleBounce * 2) + 1) / 2;
+  CTX.font = `bold ${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = `rgba(255,255,255,${0.5 + alpha2 * 0.5})`;
+  const nextText = currentLevel >= LEVELS.length ? 'PRESS ENTER FOR FINAL RESULTS' : 'PRESS ENTER TO CHOOSE NEXT MEAL';
+  CTX.fillText(nextText, W / 2, H * 0.95);
+}
+
+// ===== RESULTS =====
+function drawResults() {
+  drawArenaBackground();
+  CTX.fillStyle = 'rgba(10,10,30,0.9)';
+  CTX.fillRect(0, 0, W, H);
+
+  CTX.textAlign = 'center';
+  CTX.textBaseline = 'middle';
+
+  const won = playerScore >= opponentScore;
+
+  // Title
+  CTX.font = `bold ${W * 0.05}px 'Segoe UI', Arial, sans-serif`;
+  CTX.shadowColor = won ? COLORS.playerGold : COLORS.miss;
+  CTX.shadowBlur = 20;
+  CTX.fillStyle = won ? COLORS.playerGold : COLORS.miss;
+  CTX.fillText(won ? 'VICTORY!' : 'DEFEAT!', W / 2, H * 0.1);
+  CTX.shadowBlur = 0;
+
+  // Final score
+  CTX.font = `bold ${W * 0.07}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = '#FFF';
+  CTX.fillText(`${playerScore} - ${opponentScore}`, W / 2, H * 0.22);
+
+  // Quarter breakdown
+  CTX.font = `bold ${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.playerGold;
+  CTX.fillText('QUARTER BREAKDOWN', W / 2, H * 0.33);
+
+  for (let i = 0; i < quarterResults.length; i++) {
+    const qr = quarterResults[i];
+    const qy = H * 0.38 + i * H * 0.07;
+    const medalColors = { gold: '#FFD700', silver: '#C0C0C0', bronze: '#CD7F32', none: '#555' };
+
+    // Medal dot
+    CTX.beginPath();
+    CTX.arc(W * 0.3, qy, 6, 0, Math.PI * 2);
+    CTX.fillStyle = medalColors[qr.medal];
+    CTX.fill();
+
+    CTX.textAlign = 'left';
+    CTX.font = `${W * 0.014}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#FFF';
+    CTX.fillText(qr.name, W * 0.33, qy);
+
+    CTX.textAlign = 'center';
+    CTX.fillStyle = COLORS.textDim;
+    CTX.fillText(`${qr.accuracy}% acc`, W * 0.55, qy);
+    CTX.fillStyle = COLORS.glucose;
+    CTX.fillText(qr.food, W * 0.65, qy);
+    CTX.fillStyle = qr.playerScore >= qr.opponentScore ? COLORS.atp : COLORS.miss;
+    CTX.fillText(`${qr.playerScore}-${qr.opponentScore}`, W * 0.75, qy);
+  }
+
+  // Science summary
+  const summY = H * 0.76;
+  CTX.textAlign = 'center';
+  CTX.font = `bold ${W * 0.016}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.atp;
+  CTX.fillText('SCIENCE TAKEAWAY', W / 2, summY);
+  CTX.font = `${W * 0.013}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = COLORS.textDim;
+  CTX.fillText('Your body converts glucose from food + oxygen into ATP through cellular respiration.', W / 2, summY + H * 0.04);
+  CTX.fillText('C\u2086H\u2081\u2082O\u2086 + 6O\u2082 \u2192 6CO\u2082 + 6H\u2082O + ATP (NGSS MS-LS1-5, MS-LS1-7)', W / 2, summY + H * 0.07);
+  CTX.fillText('Without enough food or oxygen, your muscles produce less ATP and build up lactic acid!', W / 2, summY + H * 0.1);
+
+  // High scores
+  const scores = getHighScores();
+  if (scores.length > 0) {
+    CTX.font = `${W * 0.012}px 'Segoe UI', Arial, sans-serif`;
+    CTX.fillStyle = '#78909C';
+    CTX.fillText(`Best Score: ${scores[0].playerScore}`, W / 2, H * 0.92);
+  }
+
+  const alpha2 = (Math.sin(titleBounce * 2) + 1) / 2;
+  CTX.font = `bold ${W * 0.018}px 'Segoe UI', Arial, sans-serif`;
+  CTX.fillStyle = `rgba(255,255,255,${0.5 + alpha2 * 0.5})`;
+  CTX.fillText('PRESS ENTER TO PLAY AGAIN', W / 2, H * 0.97);
+}
+
+// ===== UTILITY =====
+function roundRect(x, y, w, h, r, fill, stroke) {
+  CTX.beginPath();
+  CTX.moveTo(x + r, y);
+  CTX.lineTo(x + w - r, y);
+  CTX.quadraticCurveTo(x + w, y, x + w, y + r);
+  CTX.lineTo(x + w, y + h - r);
+  CTX.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  CTX.lineTo(x + r, y + h);
+  CTX.quadraticCurveTo(x, y + h, x, y + h - r);
+  CTX.lineTo(x, y + r);
+  CTX.quadraticCurveTo(x, y, x + r, y);
+  CTX.closePath();
+  if (fill) CTX.fill();
+  if (stroke) CTX.stroke();
+}
+
+// ===== GAME LOOP =====
+function gameLoop(timestamp) {
+  if (!lastTime) lastTime = timestamp;
+  const delta = (timestamp - lastTime) / 1000;
+  lastTime = timestamp;
+
+  update(delta);
+  draw();
+  requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>

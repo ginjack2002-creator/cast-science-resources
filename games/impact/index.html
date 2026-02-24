@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>IMPACT - Helmet Physics Game</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;overflow:hidden;background:#263238;font-family:'Segoe UI',system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none;}
+canvas{display:block;width:100%;height:100%;}
+#orientation-prompt{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#263238;color:#fff;z-index:9999;justify-content:center;align-items:center;flex-direction:column;font-size:1.2em;text-align:center;padding:2em;}
+#orientation-prompt svg{width:60px;height:60px;margin-bottom:1em;animation:rotate90 1.5s ease-in-out infinite;}
+@keyframes rotate90{0%,100%{transform:rotate(0deg);}50%{transform:rotate(90deg);}}
+@media(max-width:600px) and (orientation:portrait){#orientation-prompt{display:flex;}canvas{display:none;}}
+</style>
+</head>
+<body>
+<div id="orientation-prompt">
+<svg viewBox="0 0 24 24" fill="white"><path d="M16.48 2.52c3.27 1.55 5.61 4.72 5.97 8.48h1.5C23.44 4.84 18.29 0 12 0l-.66.03 3.81 3.81 1.33-1.32zm-6.25-.77c-.59-.59-1.54-.59-2.12 0L1.75 8.11c-.59.59-.59 1.54 0 2.12l12.02 12.02c.59.59 1.54.59 2.12 0l6.36-6.36c.59-.59.59-1.54 0-2.12L10.23 1.75zm4.6 19.44L2.81 9.17l6.36-6.36 12.02 12.02-6.36 6.36zm-7.31.29l-1.33 1.33-.66-.03C4.84 23.44 0 18.29 0 12h1.5c.36 3.76 2.7 6.93 5.97 8.48z"/></svg>
+<p>Please rotate your device to landscape mode</p>
+</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+// ============================================================
+//  IMPACT — Helmet Physics Game for Grade 8 (NGSS MS-PS2-1/2)
+// ============================================================
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+
+// ---- Responsive Canvas ----
+let W, H, DPR, scale;
+function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width = W * DPR; canvas.height = H * DPR;
+    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    scale = Math.min(W / 1280, H / 720);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ---- Audio Engine (Procedural) ----
+let audioCtx = null;
+function ensureAudio() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+}
+function playSound(type) {
+    ensureAudio();
+    if (!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const g = audioCtx.createGain();
+    g.connect(audioCtx.destination);
+    if (type === 'click') {
+        const o = audioCtx.createOscillator();
+        o.type = 'sine'; o.frequency.value = 800;
+        g.gain.setValueAtTime(0.15, now);
+        g.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+        o.connect(g); o.start(now); o.stop(now + 0.08);
+    } else if (type === 'place') {
+        const o = audioCtx.createOscillator();
+        o.type = 'triangle'; o.frequency.value = 600;
+        o.frequency.exponentialRampToValueAtTime(900, now + 0.05);
+        g.gain.setValueAtTime(0.12, now);
+        g.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+        o.connect(g); o.start(now); o.stop(now + 0.1);
+    } else if (type === 'impact') {
+        const buf = audioCtx.createBufferSource();
+        const buffer = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.3, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < data.length; i++) {
+            const t = i / audioCtx.sampleRate;
+            data[i] = (Math.random() * 2 - 1) * Math.exp(-t * 15) * 0.6;
+            data[i] += Math.sin(2 * Math.PI * 80 * t) * Math.exp(-t * 10) * 0.4;
+        }
+        buf.buffer = buffer;
+        g.gain.setValueAtTime(0.35, now);
+        buf.connect(g); buf.start(now);
+    } else if (type === 'crunch') {
+        const buf = audioCtx.createBufferSource();
+        const buffer = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.2, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < data.length; i++) {
+            const t = i / audioCtx.sampleRate;
+            data[i] = (Math.random() * 2 - 1) * Math.exp(-t * 20) * 0.5;
+            data[i] *= Math.sin(2 * Math.PI * 300 * t);
+        }
+        buf.buffer = buffer;
+        g.gain.setValueAtTime(0.25, now);
+        buf.connect(g); buf.start(now);
+    } else if (type === 'success') {
+        [523.25, 659.25, 783.99].forEach((f, i) => {
+            const o = audioCtx.createOscillator();
+            const gi = audioCtx.createGain();
+            o.type = 'sine'; o.frequency.value = f;
+            gi.gain.setValueAtTime(0, now + i * 0.12);
+            gi.gain.linearRampToValueAtTime(0.12, now + i * 0.12 + 0.03);
+            gi.gain.exponentialRampToValueAtTime(0.001, now + i * 0.12 + 0.3);
+            o.connect(gi); gi.connect(audioCtx.destination);
+            o.start(now + i * 0.12); o.stop(now + i * 0.12 + 0.3);
+        });
+    } else if (type === 'fail') {
+        const o = audioCtx.createOscillator();
+        o.type = 'sawtooth'; o.frequency.value = 200;
+        o.frequency.linearRampToValueAtTime(80, now + 0.5);
+        g.gain.setValueAtTime(0.15, now);
+        g.gain.linearRampToValueAtTime(0, now + 0.5);
+        o.connect(g); o.start(now); o.stop(now + 0.5);
+    }
+}
+
+// ---- Particle System ----
+const MAX_PARTICLES = 300;
+let particles = [];
+function spawnParticles(x, y, count, color, velScale, life, sizeRange) {
+    for (let i = 0; i < count && particles.length < MAX_PARTICLES; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = (0.5 + Math.random()) * (velScale || 2);
+        particles.push({
+            x, y,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            life: life || (0.5 + Math.random() * 0.5),
+            maxLife: life || 1,
+            color: color || '#FFF',
+            size: sizeRange ? sizeRange[0] + Math.random() * (sizeRange[1] - sizeRange[0]) : 2 + Math.random() * 3,
+            gravity: 0.5
+        });
+    }
+}
+function updateParticles(dt) {
+    for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx * dt * 60;
+        p.y += p.vy * dt * 60;
+        p.vy += (p.gravity || 0) * dt * 60 * 0.03;
+        p.life -= dt;
+        if (p.life <= 0) particles.splice(i, 1);
+    }
+}
+function drawParticles() {
+    for (const p of particles) {
+        const alpha = Math.max(0, p.life / p.maxLife);
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size * alpha, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+}
+
+// ---- Input ----
+let mouse = { x: 0, y: 0, down: false, clicked: false, released: false };
+let prevMouse = { x: 0, y: 0, down: false };
+function getPos(e) {
+    const r = canvas.getBoundingClientRect();
+    const t = e.touches ? e.touches[0] || e.changedTouches[0] : e;
+    return { x: (t.clientX - r.left), y: (t.clientY - r.top) };
+}
+function onDown(e) { ensureAudio(); const p = getPos(e); mouse.x = p.x; mouse.y = p.y; mouse.down = true; mouse.clicked = true; }
+function onMove(e) { const p = getPos(e); mouse.x = p.x; mouse.y = p.y; e.preventDefault(); }
+function onUp(e) { const p = getPos(e); mouse.x = p.x; mouse.y = p.y; mouse.down = false; mouse.released = true; }
+canvas.addEventListener('mousedown', onDown);
+canvas.addEventListener('mousemove', onMove);
+canvas.addEventListener('mouseup', onUp);
+canvas.addEventListener('touchstart', onDown, { passive: false });
+canvas.addEventListener('touchmove', onMove, { passive: false });
+canvas.addEventListener('touchend', onUp, { passive: false });
+
+function resetInput() { mouse.clicked = false; mouse.released = false; }
+
+// ---- Utility ----
+function lerp(a, b, t) { return a + (b - a) * t; }
+function clamp(v, mn, mx) { return Math.max(mn, Math.min(mx, v)); }
+function inRect(mx, my, x, y, w, h) { return mx >= x && mx <= x + w && my >= y && my <= y + h; }
+function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+function easeInOutQuad(t) { return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
+
+function drawRoundRect(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+}
+
+// ---- Button Helper ----
+function drawButton(text, x, y, w, h, opts) {
+    opts = opts || {};
+    const hovered = inRect(mouse.x, mouse.y, x, y, w, h);
+    const baseColor = opts.color || '#1565C0';
+    const hoverColor = opts.hoverColor || '#1976D2';
+    const textColor = opts.textColor || '#FFF';
+    const fontSize = opts.fontSize || Math.round(16 * scale);
+    const radius = opts.radius || 8;
+
+    ctx.save();
+    drawRoundRect(x, y, w, h, radius);
+    ctx.fillStyle = hovered ? hoverColor : baseColor;
+    ctx.fill();
+    if (opts.border) {
+        ctx.strokeStyle = opts.border;
+        ctx.lineWidth = 2;
+        ctx.stroke();
+    }
+    ctx.fillStyle = textColor;
+    ctx.font = `bold ${fontSize}px 'Segoe UI', system-ui, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, x + w / 2, y + h / 2);
+    ctx.restore();
+
+    return hovered && mouse.clicked;
+}
+
+// ---- Game State ----
+const STATE = {
+    TITLE: 'TITLE',
+    HOWTO: 'HOWTO',
+    LEVEL_SELECT: 'LEVEL_SELECT',
+    DESIGN: 'DESIGN',
+    CRASH_TEST: 'CRASH_TEST',
+    RESULTS: 'RESULTS'
+};
+let state = STATE.TITLE;
+let prevState = null;
+let transitionAlpha = 0;
+let transitionTarget = null;
+let gameTime = 0;
+
+function transitionTo(newState) {
+    transitionTarget = newState;
+    transitionAlpha = 0;
+}
+
+// ---- Material Definitions ----
+const MATERIALS = {
+    shell: {
+        name: 'Hard Shell',
+        desc: 'Distributes force over area',
+        color: '#78909C',
+        highlightColor: '#90A4AE',
+        cost: 30,
+        weight: 3,
+        protection: 0.10,
+        timeExtension: 0.5,
+        minThickness: 8,
+        maxThickness: 20,
+        order: 0
+    },
+    foam: {
+        name: 'Foam Liner',
+        desc: 'Absorbs energy by compressing',
+        color: '#BDBDBD',
+        highlightColor: '#E0E0E0',
+        cost: 40,
+        weight: 2,
+        protection: 0.30,
+        timeExtension: 3.0,
+        minThickness: 10,
+        maxThickness: 45,
+        order: 1
+    },
+    air: {
+        name: 'Air Pockets',
+        desc: 'Extend collision time',
+        color: '#B3E5FC',
+        highlightColor: '#E1F5FE',
+        cost: 25,
+        weight: 0.5,
+        protection: 0.15,
+        timeExtension: 2.5,
+        minThickness: 8,
+        maxThickness: 35,
+        order: 2
+    },
+    padding: {
+        name: 'Soft Padding',
+        desc: 'Comfort + final cushion',
+        color: '#FFF8E1',
+        highlightColor: '#FFFDE7',
+        cost: 20,
+        weight: 1,
+        protection: 0.10,
+        timeExtension: 1.0,
+        minThickness: 5,
+        maxThickness: 25,
+        order: 3
+    }
+};
+
+// ---- Level Definitions ----
+const LEVELS = [
+    {
+        id: 1,
+        name: 'Football Tackle',
+        sport: 'Football',
+        description: 'Two players running, head-on collision',
+        helmetColor: '#1565C0',
+        helmetAccent: '#0D47A1',
+        impactSpeed: 6.0,
+        impactMass: 90,
+        angle: 0,
+        dangerThreshold: 80,
+        budget: 150,
+        bgColor: '#1B5E20',
+        fieldColor: '#2E7D32'
+    },
+    {
+        id: 2,
+        name: 'Cycling Crash',
+        sport: 'Cycling',
+        description: 'Cyclist hits pavement at high speed',
+        helmetColor: '#FDD835',
+        helmetAccent: '#F9A825',
+        impactSpeed: 8.5,
+        impactMass: 70,
+        angle: 30,
+        dangerThreshold: 90,
+        budget: 160,
+        bgColor: '#37474F',
+        fieldColor: '#546E7A'
+    },
+    {
+        id: 3,
+        name: 'Hockey Check',
+        sport: 'Hockey',
+        description: 'Fast lateral impact against boards',
+        helmetColor: '#D32F2F',
+        helmetAccent: '#B71C1C',
+        impactSpeed: 7.5,
+        impactMass: 85,
+        angle: -15,
+        dangerThreshold: 85,
+        budget: 140,
+        bgColor: '#E3F2FD',
+        fieldColor: '#BBDEFB'
+    },
+    {
+        id: 4,
+        name: 'Skateboard Fall',
+        sport: 'Skateboard',
+        description: 'Vertical drop impact from height',
+        helmetColor: '#7B1FA2',
+        helmetAccent: '#4A148C',
+        impactSpeed: 7.0,
+        impactMass: 55,
+        angle: 60,
+        dangerThreshold: 75,
+        budget: 130,
+        bgColor: '#ECEFF1',
+        fieldColor: '#CFD8DC'
+    },
+    {
+        id: 5,
+        name: 'Extreme Impact',
+        sport: 'Extreme',
+        description: 'High speed, heavy mass collision',
+        helmetColor: '#FF6F00',
+        helmetAccent: '#E65100',
+        impactSpeed: 10.0,
+        impactMass: 100,
+        angle: 0,
+        dangerThreshold: 95,
+        budget: 200,
+        bgColor: '#212121',
+        fieldColor: '#424242'
+    }
+];
+
+// ---- Save / Load ----
+let saveData = { levelStars: {}, levelScores: {}, highestUnlocked: 1 };
+function loadGame() {
+    try {
+        const d = JSON.parse(localStorage.getItem('impact_save'));
+        if (d) saveData = d;
+    } catch (e) {}
+}
+function saveGame() {
+    try { localStorage.setItem('impact_save', JSON.stringify(saveData)); } catch (e) {}
+}
+loadGame();
+
+// ---- Current Level State ----
+let currentLevel = 0;
+let helmetLayers = []; // { type: 'shell'|'foam'|'air'|'padding', thickness: number }
+let selectedMaterial = null;
+let dragIndex = -1;
+let dragStartY = 0;
+let dragStartThickness = 0;
+let budgetUsed = 0;
+let totalWeight = 0;
+let estimatedProtection = 0;
+
+// ---- Crash Test State ----
+let crashPhase = 'pre'; // 'pre', 'approach', 'impact', 'post'
+let crashTimer = 0;
+let crashDuration = 0;
+let slowMoFactor = 1;
+let impactForce = 0;
+let brainAccel = 0;
+let collisionTime = 0;
+let peakForce = 0;
+let peakBrainAccel = 0;
+let impulse = 0;
+let crashResult = null; // 'safe' | 'concussion'
+let crashScore = 0;
+let crashStars = 0;
+
+// Crash animation positions
+let player1X = 0, player1Y = 0;
+let player2X = 0, player2Y = 0;
+let impactProgress = 0;
+let helmetCompress = 0;
+let forceArrowSize = 0;
+let brainAccelDisplay = 0;
+let showReplay = false;
+let replayRequested = false;
+let resultTimer = 0;
+
+// ---- Helmet Cross-Section Drawing ----
+const HELMET_VIEW = { x: 0, y: 0, w: 0, h: 0 };
+const HEAD_RADIUS = 0;
+
+function calcHelmetView() {
+    HELMET_VIEW.x = W * 0.15;
+    HELMET_VIEW.y = H * 0.08;
+    HELMET_VIEW.w = W * 0.5;
+    HELMET_VIEW.h = H * 0.65;
+}
+
+function calcHelmetStats() {
+    budgetUsed = 0;
+    totalWeight = 0;
+    estimatedProtection = 0;
+    let totalTimeExt = 0;
+    for (const layer of helmetLayers) {
+        const mat = MATERIALS[layer.type];
+        const thickRatio = layer.thickness / mat.maxThickness;
+        budgetUsed += Math.round(mat.cost * thickRatio);
+        totalWeight += mat.weight * thickRatio;
+        estimatedProtection += mat.protection * thickRatio;
+        totalTimeExt += mat.timeExtension * thickRatio;
+    }
+    estimatedProtection = Math.min(estimatedProtection, 0.95);
+    return { totalTimeExt, estimatedProtection };
+}
+
+function drawHelmetCrossSection(cx, cy, baseRadius, levelData) {
+    // Draw head (circle)
+    const headR = baseRadius;
+    ctx.fillStyle = '#FFCCBC';
+    ctx.strokeStyle = '#D7CCC8';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(cx, cy, headR, -Math.PI * 0.8, Math.PI * 0.8);
+    ctx.fill();
+    ctx.stroke();
+
+    // Draw brain inside
+    ctx.fillStyle = '#FFAB91';
+    ctx.beginPath();
+    ctx.arc(cx - 2, cy - 5, headR * 0.6, 0, Math.PI * 2);
+    ctx.fill();
+    // Brain folds
+    ctx.strokeStyle = '#FF8A65';
+    ctx.lineWidth = 1.5;
+    for (let i = 0; i < 5; i++) {
+        const angle = -0.8 + i * 0.4;
+        ctx.beginPath();
+        ctx.arc(cx - 2, cy - 5, headR * 0.35 + i * 3, angle - 0.3, angle + 0.3);
+        ctx.stroke();
+    }
+
+    // Draw label "Brain"
+    ctx.fillStyle = '#BF360C';
+    ctx.font = `${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('BRAIN', cx, cy);
+
+    // Draw helmet layers from inside out
+    let currentR = headR + 3;
+    const sortedLayers = [...helmetLayers].sort((a, b) => MATERIALS[b.type].order - MATERIALS[a.type].order);
+
+    for (const layer of sortedLayers) {
+        const mat = MATERIALS[layer.type];
+        const thickness = layer.thickness * scale;
+        const outerR = currentR + thickness;
+
+        ctx.beginPath();
+        ctx.arc(cx, cy, outerR, -Math.PI * 0.85, Math.PI * 0.85);
+        ctx.arc(cx, cy, currentR, Math.PI * 0.85, -Math.PI * 0.85, true);
+        ctx.closePath();
+
+        ctx.fillStyle = mat.color;
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(0,0,0,0.2)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        // Draw pattern for air pockets
+        if (layer.type === 'air') {
+            const bubbleCount = Math.max(3, Math.floor(thickness / 4));
+            ctx.fillStyle = 'rgba(255,255,255,0.4)';
+            for (let i = 0; i < bubbleCount; i++) {
+                const angle = -Math.PI * 0.7 + (i / (bubbleCount - 1)) * Math.PI * 1.4;
+                const midR = (currentR + outerR) / 2;
+                const bx = cx + Math.cos(angle) * midR;
+                const by = cy + Math.sin(angle) * midR;
+                ctx.beginPath();
+                ctx.arc(bx, by, thickness * 0.25, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        // Foam compression lines
+        if (layer.type === 'foam') {
+            ctx.strokeStyle = 'rgba(0,0,0,0.1)';
+            ctx.lineWidth = 1;
+            const lineCount = Math.max(4, Math.floor(thickness / 3));
+            for (let i = 0; i < lineCount; i++) {
+                const angle = -Math.PI * 0.7 + (i / (lineCount - 1)) * Math.PI * 1.4;
+                ctx.beginPath();
+                ctx.moveTo(cx + Math.cos(angle) * currentR, cy + Math.sin(angle) * currentR);
+                ctx.lineTo(cx + Math.cos(angle) * outerR, cy + Math.sin(angle) * outerR);
+                ctx.stroke();
+            }
+        }
+
+        // Label
+        const labelAngle = -Math.PI * 0.3;
+        const labelR = (currentR + outerR) / 2;
+        const lx = cx + Math.cos(labelAngle) * labelR;
+        const ly = cy + Math.sin(labelAngle) * labelR;
+        if (thickness > 12 * scale) {
+            ctx.fillStyle = 'rgba(0,0,0,0.6)';
+            ctx.font = `${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(mat.name, lx, ly);
+        }
+
+        currentR = outerR + 1;
+    }
+
+    // Outer shell color
+    if (helmetLayers.some(l => l.type === 'shell')) {
+        // Already drawn
+    }
+
+    return currentR;
+}
+
+// ---- Draw Athlete Figure ----
+function drawAthlete(x, y, sport, facingRight, helmetScale, helmetCompressionAmt) {
+    helmetCompressionAmt = helmetCompressionAmt || 0;
+    const s = scale * 0.8;
+    const dir = facingRight ? 1 : -1;
+    const level = LEVELS[currentLevel];
+
+    // Body
+    ctx.fillStyle = '#455A64';
+    // Torso
+    drawRoundRect(x - 12 * s, y - 20 * s, 24 * s, 35 * s, 4 * s);
+    ctx.fill();
+    // Legs
+    ctx.fillStyle = '#37474F';
+    drawRoundRect(x - 10 * s, y + 15 * s, 8 * s, 30 * s, 3 * s);
+    ctx.fill();
+    drawRoundRect(x + 2 * s, y + 15 * s, 8 * s, 30 * s, 3 * s);
+    ctx.fill();
+    // Arms
+    ctx.fillStyle = '#FFCCBC';
+    drawRoundRect(x + dir * 12 * s, y - 15 * s, 8 * s * dir, 25 * s, 3 * s);
+    ctx.fill();
+    drawRoundRect(x - dir * 18 * s, y - 10 * s, 8 * s, 20 * s, 3 * s);
+    ctx.fill();
+
+    // Head
+    const headX = x + dir * 2 * s;
+    const headY = y - 35 * s;
+    const headR = 14 * s;
+
+    ctx.fillStyle = '#FFCCBC';
+    ctx.beginPath();
+    ctx.arc(headX, headY, headR, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Eyes
+    ctx.fillStyle = '#263238';
+    ctx.beginPath();
+    ctx.arc(headX + dir * 5 * s, headY - 2 * s, 2 * s, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Helmet on head
+    const hx = headX;
+    const hy = headY;
+    let layerR = headR + 2 * s;
+
+    const sortedLayers = [...helmetLayers].sort((a, b) => MATERIALS[b.type].order - MATERIALS[a.type].order);
+    for (const layer of sortedLayers) {
+        const mat = MATERIALS[layer.type];
+        const t = layer.thickness * s * 0.3 * (1 - helmetCompressionAmt * (layer.type === 'foam' ? 0.6 : layer.type === 'air' ? 0.5 : 0.1));
+        const outerR = layerR + t;
+        ctx.beginPath();
+        ctx.arc(hx, hy, outerR, -Math.PI * 0.9, Math.PI * 0.4);
+        ctx.arc(hx, hy, layerR, Math.PI * 0.4, -Math.PI * 0.9, true);
+        ctx.closePath();
+        ctx.fillStyle = layer.type === 'shell' ? level.helmetColor : mat.color;
+        ctx.fill();
+        layerR = outerR;
+    }
+    // Shell outline
+    if (helmetLayers.length > 0) {
+        ctx.strokeStyle = level.helmetAccent;
+        ctx.lineWidth = 2 * s;
+        ctx.beginPath();
+        ctx.arc(hx, hy, layerR, -Math.PI * 0.9, Math.PI * 0.4);
+        ctx.stroke();
+    }
+
+    return { headX: hx, headY: hy, helmetOuterR: layerR };
+}
+
+// ---- TITLE SCREEN ----
+let titleAnim = 0;
+function drawTitle(dt) {
+    titleAnim += dt;
+    // Background
+    ctx.fillStyle = '#263238';
+    ctx.fillRect(0, 0, W, H);
+
+    // Animated grid lines
+    ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < 20; i++) {
+        const x = (i / 20) * W + (titleAnim * 10) % (W / 20);
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let i = 0; i < 12; i++) {
+        const y = (i / 12) * H;
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+
+    // Slow motion collision freeze frame background
+    const centerX = W / 2;
+    const centerY = H * 0.38;
+
+    // Impact flash
+    const flashAlpha = 0.03 + Math.sin(titleAnim * 2) * 0.02;
+    const grad = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, 200 * scale);
+    grad.addColorStop(0, `rgba(239,83,80,${flashAlpha})`);
+    grad.addColorStop(1, 'rgba(239,83,80,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, H);
+
+    // Two helmet silhouettes approaching
+    const sep = 30 + Math.sin(titleAnim * 1.5) * 15;
+    // Left helmet
+    ctx.fillStyle = '#1565C0';
+    ctx.beginPath();
+    ctx.arc(centerX - sep * scale, centerY, 35 * scale, -Math.PI * 0.9, Math.PI * 0.4);
+    ctx.arc(centerX - sep * scale, centerY, 25 * scale, Math.PI * 0.4, -Math.PI * 0.9, true);
+    ctx.closePath();
+    ctx.fill();
+    // Right helmet
+    ctx.fillStyle = '#D32F2F';
+    ctx.beginPath();
+    ctx.arc(centerX + sep * scale, centerY, 35 * scale, Math.PI * 0.6, -Math.PI * 0.1 + Math.PI * 2);
+    ctx.arc(centerX + sep * scale, centerY, 25 * scale, -Math.PI * 0.1 + Math.PI * 2, Math.PI * 0.6, true);
+    ctx.closePath();
+    ctx.fill();
+
+    // Impact sparks when close
+    if (sep < 35) {
+        const sparkAlpha = 1 - sep / 35;
+        for (let i = 0; i < 8; i++) {
+            const angle = (i / 8) * Math.PI * 2 + titleAnim * 3;
+            const dist = (15 + Math.sin(titleAnim * 5 + i) * 8) * scale;
+            ctx.fillStyle = `rgba(255,235,59,${sparkAlpha * 0.6})`;
+            ctx.beginPath();
+            ctx.arc(centerX + Math.cos(angle) * dist, centerY + Math.sin(angle) * dist, 3 * scale, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    // Title text
+    const titleY = H * 0.65;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // Shadow
+    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.font = `bold ${Math.round(72 * scale)}px 'Segoe UI', system-ui, sans-serif`;
+    ctx.fillText('IMPACT', centerX + 3, titleY + 3);
+
+    // Main title
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillText('IMPACT', centerX, titleY);
+
+    // Subtitle with F=ma
+    ctx.font = `${Math.round(18 * scale)}px 'Segoe UI', system-ui, sans-serif`;
+    ctx.fillStyle = '#90A4AE';
+    ctx.fillText('Helmet Physics  |  Force  =  Mass  x  Acceleration', centerX, titleY + 45 * scale);
+
+    // Floating F=ma
+    const fmaY = H * 0.2 + Math.sin(titleAnim) * 10;
+    ctx.font = `bold ${Math.round(22 * scale)}px 'Segoe UI', system-ui, sans-serif`;
+    ctx.fillStyle = `rgba(66,165,245,${0.3 + Math.sin(titleAnim * 1.5) * 0.15})`;
+    ctx.fillText('F = ma', W * 0.15, fmaY);
+
+    ctx.fillStyle = `rgba(239,83,80,${0.3 + Math.cos(titleAnim * 1.3) * 0.15})`;
+    ctx.fillText('J = F \u00D7 t', W * 0.85, fmaY + 20);
+
+    // Play button
+    const bw = 220 * scale, bh = 50 * scale;
+    const bx = centerX - bw / 2, by = H * 0.82;
+    if (drawButton('START GAME', bx, by, bw, bh, { color: '#EF5350', hoverColor: '#F44336', fontSize: Math.round(20 * scale) })) {
+        playSound('click');
+        transitionTo(STATE.HOWTO);
+    }
+
+    // NGSS tag
+    ctx.font = `${Math.round(11 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillStyle = '#546E7A';
+    ctx.fillText('NGSS MS-PS2-1, MS-PS2-2 | Newton\'s Laws & Collisions', centerX, H * 0.95);
+}
+
+// ---- HOW TO PLAY ----
+let howtoPage = 0;
+const HOWTO_PAGES = [
+    {
+        title: 'THE SCIENCE OF HELMETS',
+        lines: [
+            'When your head hits something, your brain keeps moving inside your skull.',
+            'The force of that impact creates brain acceleration - the main cause of concussions.',
+            'Newton\'s Second Law: F = ma (Force = Mass x Acceleration)',
+            'If we can reduce the FORCE, we reduce brain ACCELERATION.'
+        ],
+        visual: 'formula'
+    },
+    {
+        title: 'HOW HELMETS SAVE BRAINS',
+        lines: [
+            'Helmets work by EXTENDING THE COLLISION TIME.',
+            'Impulse: J = F x t. The impulse (total momentum change) stays the same.',
+            'Longer collision time = LESS force at any instant.',
+            'Less force = Less brain acceleration = SAFETY!'
+        ],
+        visual: 'impulse'
+    },
+    {
+        title: 'YOUR MISSION',
+        lines: [
+            'Design helmets that keep brain acceleration BELOW the danger threshold.',
+            'Choose from 4 materials: Hard Shell, Foam Liner, Air Pockets, Soft Padding.',
+            'Each has different cost, weight, and protection properties.',
+            'Stay within budget, keep weight down, and protect the brain!'
+        ],
+        visual: 'materials'
+    }
+];
+
+function drawHowTo(dt) {
+    titleAnim += dt;
+    ctx.fillStyle = '#263238';
+    ctx.fillRect(0, 0, W, H);
+
+    const page = HOWTO_PAGES[howtoPage];
+    const cx = W / 2;
+
+    // Title
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(28 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText(page.title, cx, H * 0.1);
+
+    // Page indicator
+    ctx.fillStyle = '#546E7A';
+    ctx.font = `${Math.round(13 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText(`${howtoPage + 1} / ${HOWTO_PAGES.length}`, cx, H * 0.16);
+
+    // Visual area
+    const vizY = H * 0.22;
+    const vizH = H * 0.35;
+
+    if (page.visual === 'formula') {
+        // Show F = ma with animated values
+        const animF = 500 + Math.sin(titleAnim * 2) * 200;
+        const m = 5;
+        const a = animF / m;
+        ctx.font = `bold ${Math.round(40 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillStyle = '#EF5350';
+        ctx.fillText(`F = m \u00D7 a`, cx, vizY + vizH * 0.3);
+        ctx.font = `${Math.round(24 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillStyle = '#42A5F5';
+        ctx.fillText(`${animF.toFixed(0)} N = ${m} kg \u00D7 ${a.toFixed(0)} m/s\u00B2`, cx, vizY + vizH * 0.6);
+        // Arrow showing force
+        const arrowLen = (animF / 700) * 100 * scale;
+        ctx.strokeStyle = '#EF5350';
+        ctx.lineWidth = 4 * scale;
+        ctx.beginPath();
+        ctx.moveTo(cx - arrowLen, vizY + vizH * 0.85);
+        ctx.lineTo(cx + arrowLen, vizY + vizH * 0.85);
+        ctx.stroke();
+        // Arrowhead
+        ctx.fillStyle = '#EF5350';
+        ctx.beginPath();
+        ctx.moveTo(cx + arrowLen, vizY + vizH * 0.85);
+        ctx.lineTo(cx + arrowLen - 10 * scale, vizY + vizH * 0.85 - 6 * scale);
+        ctx.lineTo(cx + arrowLen - 10 * scale, vizY + vizH * 0.85 + 6 * scale);
+        ctx.fill();
+    } else if (page.visual === 'impulse') {
+        // Show two scenarios: short time (big force) vs long time (small force)
+        const barY = vizY + vizH * 0.2;
+        const barH = vizH * 0.25;
+        // No helmet: short time, big force
+        ctx.fillStyle = '#EF5350';
+        drawRoundRect(cx - 200 * scale, barY, 180 * scale, barH, 4);
+        ctx.fill();
+        ctx.fillStyle = '#FFF';
+        ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText('NO HELMET', cx - 110 * scale, barY - 10 * scale);
+        ctx.fillText('Short time \u2192 HIGH Force', cx - 110 * scale, barY + barH / 2);
+
+        // With helmet: long time, small force
+        const helmBarW = 180 * scale;
+        const helmBarH = barH * 0.45;
+        ctx.fillStyle = '#66BB6A';
+        drawRoundRect(cx + 20 * scale, barY + (barH - helmBarH) / 2, helmBarW, helmBarH, 4);
+        ctx.fill();
+        ctx.fillStyle = '#FFF';
+        ctx.fillText('WITH HELMET', cx + 110 * scale, barY - 10 * scale);
+        ctx.fillText('Long time \u2192 LOW Force', cx + 110 * scale, barY + barH / 2);
+
+        // Impulse equation
+        ctx.font = `bold ${Math.round(20 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillStyle = '#FDD835';
+        ctx.fillText('Same Impulse = Force \u00D7 Time', cx, vizY + vizH * 0.8);
+    } else if (page.visual === 'materials') {
+        const matKeys = ['shell', 'foam', 'air', 'padding'];
+        const startX = cx - 250 * scale;
+        matKeys.forEach((key, i) => {
+            const mat = MATERIALS[key];
+            const mx = startX + i * 130 * scale;
+            const my = vizY + 10 * scale;
+            // Color swatch
+            ctx.fillStyle = mat.color;
+            drawRoundRect(mx, my, 110 * scale, 50 * scale, 6);
+            ctx.fill();
+            ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            // Name
+            ctx.fillStyle = '#FFF';
+            ctx.font = `bold ${Math.round(11 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillText(mat.name, mx + 55 * scale, my + 70 * scale);
+            // Desc
+            ctx.fillStyle = '#90A4AE';
+            ctx.font = `${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillText(mat.desc, mx + 55 * scale, my + 85 * scale);
+            // Stats
+            ctx.fillStyle = '#B0BEC5';
+            ctx.fillText(`Cost: $${mat.cost} | Wt: ${mat.weight}kg`, mx + 55 * scale, my + 100 * scale);
+        });
+    }
+
+    // Text lines
+    const textY = H * 0.62;
+    ctx.textAlign = 'center';
+    for (let i = 0; i < page.lines.length; i++) {
+        ctx.fillStyle = i === 0 ? '#FFFFFF' : '#CFD8DC';
+        ctx.font = `${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(page.lines[i], cx, textY + i * 26 * scale);
+    }
+
+    // Navigation
+    const navY = H * 0.85;
+    const bw = 140 * scale, bh = 42 * scale;
+    if (howtoPage > 0) {
+        if (drawButton('\u25C0 BACK', cx - bw - 20 * scale, navY, bw, bh, { color: '#455A64', hoverColor: '#546E7A' })) {
+            playSound('click');
+            howtoPage--;
+        }
+    }
+    if (howtoPage < HOWTO_PAGES.length - 1) {
+        if (drawButton('NEXT \u25B6', cx + 20 * scale, navY, bw, bh, { color: '#1565C0', hoverColor: '#1976D2' })) {
+            playSound('click');
+            howtoPage++;
+        }
+    } else {
+        if (drawButton('LET\'S GO!', cx + 20 * scale, navY, bw, bh, { color: '#66BB6A', hoverColor: '#81C784' })) {
+            playSound('click');
+            transitionTo(STATE.LEVEL_SELECT);
+        }
+    }
+
+    // Skip
+    ctx.fillStyle = '#546E7A';
+    ctx.font = `${Math.round(12 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'right';
+    if (inRect(mouse.x, mouse.y, W - 100 * scale, 15 * scale, 80 * scale, 25 * scale)) {
+        ctx.fillStyle = '#90A4AE';
+        if (mouse.clicked) {
+            playSound('click');
+            transitionTo(STATE.LEVEL_SELECT);
+        }
+    }
+    ctx.fillText('SKIP \u00BB', W - 20 * scale, 30 * scale);
+}
+
+// ---- LEVEL SELECT ----
+function drawLevelSelect(dt) {
+    titleAnim += dt;
+    ctx.fillStyle = '#263238';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(32 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText('SELECT SCENARIO', W / 2, H * 0.1);
+
+    const cardW = 180 * scale, cardH = 200 * scale;
+    const gap = 20 * scale;
+    const totalW = LEVELS.length * cardW + (LEVELS.length - 1) * gap;
+    const startX = (W - totalW) / 2;
+    const cardY = H * 0.2;
+
+    for (let i = 0; i < LEVELS.length; i++) {
+        const level = LEVELS[i];
+        const cx = startX + i * (cardW + gap);
+        const unlocked = i + 1 <= saveData.highestUnlocked;
+        const hovered = inRect(mouse.x, mouse.y, cx, cardY, cardW, cardH);
+        const stars = saveData.levelStars[level.id] || 0;
+
+        // Card
+        drawRoundRect(cx, cardY, cardW, cardH, 10);
+        ctx.fillStyle = unlocked ? (hovered ? '#37474F' : '#2C3E50') : '#1a1a1a';
+        ctx.fill();
+        ctx.strokeStyle = unlocked ? level.helmetColor : '#455A64';
+        ctx.lineWidth = hovered && unlocked ? 3 : 1.5;
+        ctx.stroke();
+
+        if (!unlocked) {
+            // Lock icon
+            ctx.fillStyle = '#546E7A';
+            ctx.font = `${Math.round(36 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillText('\uD83D\uDD12', cx + cardW / 2, cardY + cardH * 0.4);
+            ctx.font = `${Math.round(12 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillText('LOCKED', cx + cardW / 2, cardY + cardH * 0.6);
+        } else {
+            // Level number
+            ctx.fillStyle = level.helmetColor;
+            ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillText(`LEVEL ${level.id}`, cx + cardW / 2, cardY + 25 * scale);
+
+            // Helmet icon (simple)
+            const iconY = cardY + cardH * 0.35;
+            ctx.fillStyle = level.helmetColor;
+            ctx.beginPath();
+            ctx.arc(cx + cardW / 2, iconY, 22 * scale, -Math.PI * 0.9, Math.PI * 0.3);
+            ctx.arc(cx + cardW / 2, iconY, 14 * scale, Math.PI * 0.3, -Math.PI * 0.9, true);
+            ctx.closePath();
+            ctx.fill();
+
+            // Name
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillText(level.name, cx + cardW / 2, cardY + cardH * 0.62);
+
+            // Description
+            ctx.fillStyle = '#90A4AE';
+            ctx.font = `${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillText(level.description, cx + cardW / 2, cardY + cardH * 0.72);
+
+            // Stats
+            ctx.fillStyle = '#78909C';
+            ctx.font = `${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillText(`Speed: ${level.impactSpeed} m/s | Mass: ${level.impactMass} kg`, cx + cardW / 2, cardY + cardH * 0.82);
+            ctx.fillText(`Budget: $${level.budget}`, cx + cardW / 2, cardY + cardH * 0.88);
+
+            // Stars
+            const starY = cardY + cardH * 0.94;
+            ctx.font = `${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+            for (let s = 0; s < 3; s++) {
+                ctx.fillStyle = s < stars ? '#FDD835' : '#455A64';
+                ctx.fillText('\u2605', cx + cardW / 2 - 20 * scale + s * 20 * scale, starY);
+            }
+
+            // Click handler
+            if (hovered && mouse.clicked) {
+                playSound('click');
+                currentLevel = i;
+                initDesignPhase();
+                transitionTo(STATE.DESIGN);
+            }
+        }
+    }
+
+    // Back button
+    if (drawButton('\u25C0 MENU', 20 * scale, H - 55 * scale, 100 * scale, 40 * scale, { color: '#455A64', hoverColor: '#546E7A', fontSize: Math.round(14 * scale) })) {
+        playSound('click');
+        transitionTo(STATE.TITLE);
+    }
+}
+
+// ---- DESIGN PHASE ----
+let designAnimTime = 0;
+let hoveredMaterial = null;
+let draggingLayer = -1;
+let dragOffsetY = 0;
+
+function initDesignPhase() {
+    helmetLayers = [];
+    selectedMaterial = null;
+    draggingLayer = -1;
+    designAnimTime = 0;
+    calcHelmetView();
+    calcHelmetStats();
+}
+
+function drawDesignPhase(dt) {
+    designAnimTime += dt;
+    const level = LEVELS[currentLevel];
+    calcHelmetStats();
+    calcHelmetView();
+
+    // Background
+    ctx.fillStyle = '#1E272C';
+    ctx.fillRect(0, 0, W, H);
+
+    // Grid
+    ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+    ctx.lineWidth = 1;
+    for (let x = 0; x < W; x += 40 * scale) {
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let y = 0; y < H; y += 40 * scale) {
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+
+    // Title bar
+    ctx.fillStyle = 'rgba(0,0,0,0.4)';
+    ctx.fillRect(0, 0, W, 50 * scale);
+    ctx.fillStyle = level.helmetColor;
+    ctx.font = `bold ${Math.round(18 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.fillText(`LEVEL ${level.id}: ${level.name.toUpperCase()}`, 15 * scale, 32 * scale);
+
+    // HUD: Budget
+    const budgetMax = level.budget;
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(13 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.fillText('BUDGET', W * 0.35, 20 * scale);
+    ctx.fillStyle = budgetUsed > budgetMax ? '#EF5350' : '#66BB6A';
+    ctx.fillText(`$${budgetUsed} / $${budgetMax}`, W * 0.35, 38 * scale);
+
+    // HUD: Weight
+    ctx.fillStyle = '#FFFFFF';
+    ctx.textAlign = 'center';
+    ctx.fillText('WEIGHT', W * 0.5, 20 * scale);
+    ctx.fillStyle = totalWeight > 8 ? '#FDD835' : '#66BB6A';
+    ctx.fillText(`${totalWeight.toFixed(1)} kg`, W * 0.5, 38 * scale);
+
+    // HUD: Protection Estimate
+    ctx.fillStyle = '#FFFFFF';
+    ctx.textAlign = 'right';
+    ctx.fillText('PROTECTION', W * 0.65, 20 * scale);
+    const protPct = Math.round(estimatedProtection * 100);
+    ctx.fillStyle = protPct > 50 ? '#66BB6A' : protPct > 25 ? '#FDD835' : '#EF5350';
+    ctx.fillText(`${protPct}%`, W * 0.65, 38 * scale);
+
+    // Helmet cross-section area
+    const helmetCX = W * 0.35;
+    const helmetCY = H * 0.45;
+    const baseR = 50 * scale;
+
+    // Helmet view background
+    drawRoundRect(W * 0.08, H * 0.08, W * 0.55, H * 0.72, 8);
+    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Label
+    ctx.fillStyle = '#78909C';
+    ctx.font = `${Math.round(11 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('HELMET CROSS-SECTION (Click material, then click helmet to add)', helmetCX, H * 0.12);
+
+    drawHelmetCrossSection(helmetCX, helmetCY, baseR, level);
+
+    // Click on helmet area to add selected material
+    const helmetAreaHovered = inRect(mouse.x, mouse.y, W * 0.08, H * 0.08, W * 0.55, H * 0.72);
+    if (helmetAreaHovered && mouse.clicked && selectedMaterial) {
+        const mat = MATERIALS[selectedMaterial];
+        const thickRatio = mat.minThickness + (mat.maxThickness - mat.minThickness) * 0.5;
+        // Check if layer type already exists
+        const existing = helmetLayers.find(l => l.type === selectedMaterial);
+        if (!existing) {
+            helmetLayers.push({ type: selectedMaterial, thickness: thickRatio });
+            playSound('place');
+        } else {
+            // Increase thickness
+            existing.thickness = Math.min(existing.thickness + 5, mat.maxThickness);
+            playSound('place');
+        }
+        calcHelmetStats();
+    }
+
+    // Layer list (right side of helmet view)
+    const listX = W * 0.08 + 10 * scale;
+    const listY = H * 0.82;
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(11 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.fillText('LAYERS (drag left/right to resize, right-click to remove):', listX, listY);
+
+    for (let i = 0; i < helmetLayers.length; i++) {
+        const layer = helmetLayers[i];
+        const mat = MATERIALS[layer.type];
+        const ly = listY + 18 * scale + i * 22 * scale;
+        const barX = listX;
+        const barMaxW = W * 0.45;
+        const barW = (layer.thickness / mat.maxThickness) * barMaxW;
+        const barH = 16 * scale;
+
+        // Background bar
+        ctx.fillStyle = 'rgba(255,255,255,0.1)';
+        drawRoundRect(barX, ly, barMaxW, barH, 3);
+        ctx.fill();
+        // Fill bar
+        ctx.fillStyle = mat.color;
+        drawRoundRect(barX, ly, barW, barH, 3);
+        ctx.fill();
+        // Label
+        ctx.fillStyle = '#263238';
+        ctx.font = `bold ${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.textAlign = 'left';
+        ctx.fillText(`${mat.name} (${layer.thickness.toFixed(0)}mm)`, barX + 5 * scale, ly + barH * 0.7);
+
+        // Remove button
+        const rbX = barX + barMaxW + 5 * scale;
+        drawRoundRect(rbX, ly, barH, barH, 3);
+        ctx.fillStyle = inRect(mouse.x, mouse.y, rbX, ly, barH, barH) ? '#EF5350' : '#455A64';
+        ctx.fill();
+        ctx.fillStyle = '#FFF';
+        ctx.font = `bold ${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText('\u00D7', rbX + barH / 2, ly + barH * 0.65);
+
+        if (inRect(mouse.x, mouse.y, rbX, ly, barH, barH) && mouse.clicked) {
+            helmetLayers.splice(i, 1);
+            playSound('click');
+            calcHelmetStats();
+        }
+
+        // Drag to resize
+        if (inRect(mouse.x, mouse.y, barX, ly, barMaxW, barH) && mouse.down) {
+            const relX = (mouse.x - barX) / barMaxW;
+            layer.thickness = Math.round(lerp(mat.minThickness, mat.maxThickness, clamp(relX, 0, 1)));
+            calcHelmetStats();
+        }
+    }
+
+    // Material palette (right side)
+    const palX = W * 0.67;
+    const palY = H * 0.1;
+    const palW = W * 0.3;
+
+    drawRoundRect(palX, palY, palW, H * 0.82, 8);
+    ctx.fillStyle = 'rgba(0,0,0,0.4)';
+    ctx.fill();
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('MATERIALS', palX + palW / 2, palY + 25 * scale);
+
+    const matKeys = ['shell', 'foam', 'air', 'padding'];
+    const matCardH = 90 * scale;
+    const matGap = 10 * scale;
+
+    for (let i = 0; i < matKeys.length; i++) {
+        const key = matKeys[i];
+        const mat = MATERIALS[key];
+        const my = palY + 45 * scale + i * (matCardH + matGap);
+        const mx = palX + 10 * scale;
+        const mw = palW - 20 * scale;
+        const isSelected = selectedMaterial === key;
+        const isHovered = inRect(mouse.x, mouse.y, mx, my, mw, matCardH);
+
+        // Card
+        drawRoundRect(mx, my, mw, matCardH, 6);
+        ctx.fillStyle = isSelected ? 'rgba(255,255,255,0.15)' : isHovered ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.03)';
+        ctx.fill();
+        ctx.strokeStyle = isSelected ? mat.color : 'rgba(255,255,255,0.1)';
+        ctx.lineWidth = isSelected ? 2.5 : 1;
+        ctx.stroke();
+
+        // Color swatch
+        ctx.fillStyle = mat.color;
+        drawRoundRect(mx + 8 * scale, my + 8 * scale, 30 * scale, 30 * scale, 4);
+        ctx.fill();
+
+        // Name and desc
+        ctx.fillStyle = '#FFFFFF';
+        ctx.font = `bold ${Math.round(13 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.textAlign = 'left';
+        ctx.fillText(mat.name, mx + 45 * scale, my + 22 * scale);
+        ctx.fillStyle = '#90A4AE';
+        ctx.font = `${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(mat.desc, mx + 45 * scale, my + 37 * scale);
+
+        // Stats
+        ctx.fillStyle = '#78909C';
+        ctx.font = `${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(`Cost: $${mat.cost}  |  Weight: ${mat.weight} kg`, mx + 10 * scale, my + 58 * scale);
+        ctx.fillText(`Protection: ${Math.round(mat.protection * 100)}%  |  Time Ext: +${mat.timeExtension} ms`, mx + 10 * scale, my + 72 * scale);
+
+        if (isSelected) {
+            ctx.fillStyle = mat.color;
+            ctx.font = `bold ${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'right';
+            ctx.fillText('SELECTED \u2713', mx + mw - 8 * scale, my + 82 * scale);
+        }
+
+        if (isHovered && mouse.clicked) {
+            selectedMaterial = isSelected ? null : key;
+            playSound('click');
+        }
+    }
+
+    // Budget warning
+    if (budgetUsed > budgetMax) {
+        ctx.fillStyle = `rgba(239,83,80,${0.5 + Math.sin(designAnimTime * 4) * 0.3})`;
+        ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText('\u26A0 OVER BUDGET! Remove materials to proceed.', W / 2, H * 0.97);
+    }
+
+    // Crash Test button
+    const testBtnW = 180 * scale, testBtnH = 45 * scale;
+    const testBtnX = W - testBtnW - 20 * scale;
+    const testBtnY = H - testBtnH - 12 * scale;
+    const canTest = helmetLayers.length > 0 && budgetUsed <= budgetMax;
+
+    if (canTest) {
+        if (drawButton('\u25B6 CRASH TEST', testBtnX, testBtnY, testBtnW, testBtnH, { color: '#EF5350', hoverColor: '#F44336', fontSize: Math.round(16 * scale) })) {
+            playSound('click');
+            initCrashTest();
+            transitionTo(STATE.CRASH_TEST);
+        }
+    } else {
+        drawButton('\u25B6 CRASH TEST', testBtnX, testBtnY, testBtnW, testBtnH, { color: '#455A64', hoverColor: '#455A64', fontSize: Math.round(16 * scale) });
+    }
+
+    // Back button
+    if (drawButton('\u25C0 BACK', 20 * scale, H - 50 * scale, 90 * scale, 38 * scale, { color: '#455A64', hoverColor: '#546E7A', fontSize: Math.round(13 * scale) })) {
+        playSound('click');
+        transitionTo(STATE.LEVEL_SELECT);
+    }
+}
+
+// ---- CRASH TEST ----
+let crashAnimTime = 0;
+let crashSlowMo = false;
+let crashPaused = false;
+let approachDuration = 2.0;
+let impactDuration = 0;
+let postDuration = 2.5;
+let playerStartX1, playerStartX2;
+let impactX, impactY;
+let brainAccelHistory = [];
+let forceHistory = [];
+let maxDisplayForce = 0;
+let maxDisplayAccel = 0;
+let baseCollisionTime = 2; // ms, no helmet
+let helmetCollisionTime = 0;
+let totalProtection = 0;
+let speedPenalty = 0;
+let effectiveSpeed = 0;
+let resultShown = false;
+
+function initCrashTest() {
+    const level = LEVELS[currentLevel];
+    crashPhase = 'approach';
+    crashTimer = 0;
+    crashAnimTime = 0;
+    crashSlowMo = false;
+    crashPaused = false;
+    impactProgress = 0;
+    helmetCompress = 0;
+    forceArrowSize = 0;
+    brainAccelDisplay = 0;
+    peakForce = 0;
+    peakBrainAccel = 0;
+    brainAccelHistory = [];
+    forceHistory = [];
+    maxDisplayForce = 0;
+    maxDisplayAccel = 0;
+    showReplay = false;
+    replayRequested = false;
+    resultShown = false;
+    resultTimer = 0;
+    particles = [];
+
+    // Calculate helmet stats
+    const stats = calcHelmetStats();
+    totalProtection = stats.estimatedProtection;
+    helmetCollisionTime = baseCollisionTime + stats.totalTimeExt;
+
+    // Speed penalty from weight
+    speedPenalty = totalWeight * 0.03; // 3% per kg
+    effectiveSpeed = level.impactSpeed * (1 - speedPenalty);
+
+    // Scene setup
+    impactX = W * 0.5;
+    impactY = H * 0.55;
+
+    if (level.angle > 30) {
+        // Vertical drop scenario (skateboard)
+        playerStartX1 = impactX;
+        player1X = impactX;
+        player1Y = impactY - 250 * scale;
+        player2X = impactX;
+        player2Y = impactY + 40 * scale;
+    } else {
+        // Horizontal collision
+        playerStartX1 = impactX - 300 * scale;
+        player1X = playerStartX1;
+        player1Y = impactY;
+        playerStartX2 = impactX + 300 * scale;
+        player2X = playerStartX2;
+        player2Y = impactY;
+    }
+
+    // Physics: Calculate impact result
+    const momentum = level.impactMass * effectiveSpeed;
+    const headMass = 5; // kg (typical head)
+    const rawForce = momentum / (baseCollisionTime / 1000);
+    const helmetForce = momentum / (helmetCollisionTime / 1000);
+    const reducedForce = helmetForce * (1 - totalProtection * 0.6);
+
+    impactForce = reducedForce;
+    brainAccel = reducedForce / headMass;
+    collisionTime = helmetCollisionTime;
+    impulse = momentum;
+    peakForce = reducedForce;
+    peakBrainAccel = brainAccel;
+
+    // Result
+    if (brainAccel < level.dangerThreshold) {
+        crashResult = 'safe';
+    } else {
+        crashResult = 'concussion';
+    }
+
+    // Calculate score
+    if (crashResult === 'safe') {
+        const margin = (level.dangerThreshold - brainAccel) / level.dangerThreshold;
+        const marginScore = Math.round(margin * 50);
+        const budgetScore = Math.round(((level.budget - budgetUsed) / level.budget) * 25);
+        const weightScore = Math.round(Math.max(0, (1 - totalWeight / 10)) * 25);
+        crashScore = marginScore + budgetScore + weightScore;
+        crashStars = crashScore >= 80 ? 3 : crashScore >= 50 ? 2 : 1;
+    } else {
+        crashScore = 0;
+        crashStars = 0;
+    }
+
+    // Impact and approach durations
+    approachDuration = 2.5;
+    impactDuration = helmetCollisionTime / 1000 * 15; // Slow motion stretch
+}
+
+function drawCrashTest(dt) {
+    crashAnimTime += dt;
+    const level = LEVELS[currentLevel];
+    const isVertical = level.angle > 30;
+
+    // Time step with slow-mo
+    const effectiveDt = crashPaused ? 0 : dt * (crashSlowMo ? 0.2 : 1);
+
+    // Background - sport appropriate
+    ctx.fillStyle = level.bgColor;
+    ctx.fillRect(0, 0, W, H);
+
+    // Ground / surface
+    if (level.sport === 'Hockey') {
+        // Ice
+        ctx.fillStyle = '#E3F2FD';
+        ctx.fillRect(0, H * 0.7, W, H * 0.3);
+        // Ice lines
+        ctx.strokeStyle = 'rgba(30,136,229,0.2)';
+        ctx.lineWidth = 2;
+        for (let i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.moveTo(i * W / 10, H * 0.7);
+            ctx.lineTo(i * W / 10 + 50 * scale, H);
+            ctx.stroke();
+        }
+    } else if (level.sport === 'Football') {
+        ctx.fillStyle = '#2E7D32';
+        ctx.fillRect(0, H * 0.7, W, H * 0.3);
+        // Yard lines
+        ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+        ctx.lineWidth = 2;
+        for (let i = 0; i < 12; i++) {
+            const x = i * W / 12;
+            ctx.beginPath(); ctx.moveTo(x, H * 0.7); ctx.lineTo(x, H); ctx.stroke();
+        }
+    } else if (level.sport === 'Cycling') {
+        ctx.fillStyle = '#546E7A';
+        ctx.fillRect(0, H * 0.7, W, H * 0.3);
+    } else if (level.sport === 'Skateboard') {
+        ctx.fillStyle = '#CFD8DC';
+        ctx.fillRect(0, H * 0.75, W, H * 0.25);
+    } else {
+        ctx.fillStyle = level.fieldColor;
+        ctx.fillRect(0, H * 0.7, W, H * 0.3);
+    }
+
+    // Phase logic
+    if (crashPhase === 'approach') {
+        crashTimer += effectiveDt;
+        const t = clamp(crashTimer / approachDuration, 0, 1);
+        const eased = easeInOutQuad(t);
+
+        if (isVertical) {
+            player1Y = (impactY - 250 * scale) + eased * 250 * scale;
+        } else {
+            player1X = (impactX - 300 * scale) + eased * 270 * scale;
+            player2X = (impactX + 300 * scale) - eased * 270 * scale;
+        }
+
+        if (t >= 1) {
+            crashPhase = 'impact';
+            crashTimer = 0;
+            crashSlowMo = true;
+            playSound('impact');
+            playSound('crunch');
+            spawnParticles(impactX, impactY - 30 * scale, 30, '#FDD835', 3, 0.8, [2, 5]);
+            spawnParticles(impactX, impactY - 30 * scale, 20, '#FF8A65', 2, 0.6, [1, 3]);
+        }
+    } else if (crashPhase === 'impact') {
+        crashTimer += effectiveDt;
+        const t = clamp(crashTimer / impactDuration, 0, 1);
+        impactProgress = t;
+        helmetCompress = Math.sin(t * Math.PI) * 0.7;
+        forceArrowSize = Math.sin(t * Math.PI);
+        brainAccelDisplay = easeOutCubic(t) * peakBrainAccel;
+
+        // Record history
+        if (brainAccelHistory.length < 100) {
+            brainAccelHistory.push(brainAccelDisplay);
+            forceHistory.push(forceArrowSize * peakForce);
+        }
+        maxDisplayForce = Math.max(maxDisplayForce, forceArrowSize * peakForce);
+        maxDisplayAccel = Math.max(maxDisplayAccel, brainAccelDisplay);
+
+        // Impact particles
+        if (Math.random() < 0.3) {
+            spawnParticles(impactX + (Math.random() - 0.5) * 20, impactY - 30 * scale, 2, '#FDD835', 1.5, 0.3, [1, 3]);
+        }
+
+        if (t >= 1) {
+            crashPhase = 'post';
+            crashTimer = 0;
+            crashSlowMo = false;
+            if (crashResult === 'safe') {
+                playSound('success');
+                spawnParticles(impactX, impactY - 50 * scale, 50, '#66BB6A', 4, 1.2, [2, 6]);
+                spawnParticles(impactX, impactY - 50 * scale, 30, '#FDD835', 3, 1, [2, 5]);
+            } else {
+                playSound('fail');
+                spawnParticles(impactX, impactY - 50 * scale, 40, '#EF5350', 3, 1, [2, 5]);
+            }
+        }
+    } else if (crashPhase === 'post') {
+        crashTimer += effectiveDt;
+        resultTimer += dt;
+
+        if (crashTimer >= postDuration && !resultShown) {
+            resultShown = true;
+        }
+    }
+
+    // Draw athletes
+    if (isVertical) {
+        // Falling player
+        drawAthlete(player1X, player1Y, level.sport, true, 1, crashPhase === 'impact' ? helmetCompress : 0);
+        // Ground marker
+        ctx.fillStyle = 'rgba(255,255,255,0.3)';
+        ctx.fillRect(impactX - 40 * scale, impactY + 50 * scale, 80 * scale, 4 * scale);
+    } else {
+        // Player 1 (left, with helmet)
+        const p1 = drawAthlete(player1X, player1Y, level.sport, true, 1, crashPhase === 'impact' ? helmetCompress : 0);
+        // Player 2 or obstacle
+        if (level.sport === 'Hockey') {
+            // Boards
+            ctx.fillStyle = '#5D4037';
+            ctx.fillRect(player2X - 10 * scale, impactY - 80 * scale, 20 * scale, 160 * scale);
+            ctx.fillStyle = '#795548';
+            ctx.fillRect(player2X - 8 * scale, impactY - 78 * scale, 16 * scale, 156 * scale);
+        } else if (level.sport === 'Extreme') {
+            // Heavy object
+            ctx.fillStyle = '#455A64';
+            drawRoundRect(player2X - 30 * scale, impactY - 40 * scale, 60 * scale, 80 * scale, 8);
+            ctx.fill();
+            ctx.fillStyle = '#FDD835';
+            ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillText(`${level.impactMass}kg`, player2X, impactY);
+        } else {
+            drawAthlete(player2X, player2Y, level.sport, false, 1, 0);
+        }
+    }
+
+    // Force arrows during impact
+    if (crashPhase === 'impact' || crashPhase === 'post') {
+        const arrowAlpha = crashPhase === 'impact' ? forceArrowSize : Math.max(0, 1 - crashTimer);
+
+        if (arrowAlpha > 0.01) {
+            ctx.globalAlpha = arrowAlpha;
+            const arrowLen = forceArrowSize * 120 * scale;
+
+            // Impact force arrow (red, pointing right at player)
+            ctx.strokeStyle = '#EF5350';
+            ctx.lineWidth = 4 * scale;
+            ctx.beginPath();
+            ctx.moveTo(impactX + 30 * scale, impactY - 30 * scale);
+            ctx.lineTo(impactX + 30 * scale + arrowLen, impactY - 30 * scale);
+            ctx.stroke();
+            ctx.fillStyle = '#EF5350';
+            ctx.beginPath();
+            ctx.moveTo(impactX + 30 * scale, impactY - 30 * scale);
+            ctx.lineTo(impactX + 42 * scale, impactY - 38 * scale);
+            ctx.lineTo(impactX + 42 * scale, impactY - 22 * scale);
+            ctx.fill();
+
+            // Reaction force arrow (blue, pointing left)
+            ctx.strokeStyle = '#42A5F5';
+            ctx.beginPath();
+            ctx.moveTo(impactX - 30 * scale, impactY - 30 * scale);
+            ctx.lineTo(impactX - 30 * scale - arrowLen * 0.7, impactY - 30 * scale);
+            ctx.stroke();
+            ctx.fillStyle = '#42A5F5';
+            ctx.beginPath();
+            ctx.moveTo(impactX - 30 * scale, impactY - 30 * scale);
+            ctx.lineTo(impactX - 42 * scale, impactY - 38 * scale);
+            ctx.lineTo(impactX - 42 * scale, impactY - 22 * scale);
+            ctx.fill();
+
+            // Labels
+            ctx.font = `bold ${Math.round(11 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#EF5350';
+            ctx.fillText('IMPACT FORCE', impactX + 30 * scale + arrowLen / 2, impactY - 42 * scale);
+            ctx.fillStyle = '#42A5F5';
+            ctx.fillText('REACTION', impactX - 30 * scale - arrowLen * 0.35, impactY - 42 * scale);
+            ctx.globalAlpha = 1;
+        }
+    }
+
+    // Particles
+    updateParticles(effectiveDt);
+    drawParticles();
+
+    // ---- HUD OVERLAY ----
+    // Top bar: F=ma readout
+    ctx.fillStyle = 'rgba(0,0,0,0.7)';
+    ctx.fillRect(0, 0, W, 80 * scale);
+
+    // F = ma equation with live values
+    ctx.textAlign = 'center';
+    ctx.font = `bold ${Math.round(22 * scale)}px 'Segoe UI', sans-serif`;
+    const currentForce = crashPhase === 'impact' ? (forceArrowSize * peakForce) : (crashPhase === 'post' ? peakForce : 0);
+    const currentAccel = crashPhase === 'impact' ? brainAccelDisplay : (crashPhase === 'post' ? peakBrainAccel : 0);
+    const headMass = 5;
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillText('F  =  m  \u00D7  a', W / 2, 25 * scale);
+
+    ctx.font = `bold ${Math.round(16 * scale)}px 'Segoe UI', sans-serif`;
+    const fStr = currentForce.toFixed(0) + ' N';
+    const mStr = headMass + ' kg';
+    const aStr = currentAccel.toFixed(1) + ' m/s\u00B2';
+    ctx.fillStyle = '#EF5350';
+    ctx.fillText(fStr, W / 2 - 130 * scale, 55 * scale);
+    ctx.fillStyle = '#FFF';
+    ctx.fillText('=', W / 2 - 60 * scale, 55 * scale);
+    ctx.fillStyle = '#FDD835';
+    ctx.fillText(mStr, W / 2, 55 * scale);
+    ctx.fillStyle = '#FFF';
+    ctx.fillText('\u00D7', W / 2 + 55 * scale, 55 * scale);
+    ctx.fillStyle = '#42A5F5';
+    ctx.fillText(aStr, W / 2 + 130 * scale, 55 * scale);
+
+    // Collision time
+    ctx.font = `${Math.round(12 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillStyle = '#66BB6A';
+    ctx.textAlign = 'left';
+    ctx.fillText(`COLLISION TIME: ${collisionTime.toFixed(1)} ms`, 15 * scale, 25 * scale);
+    ctx.fillStyle = '#78909C';
+    ctx.fillText(`(No helmet: ${baseCollisionTime} ms)`, 15 * scale, 42 * scale);
+
+    // Impulse
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#FDD835';
+    ctx.fillText(`IMPULSE: ${impulse.toFixed(0)} N\u00B7s`, W - 15 * scale, 25 * scale);
+    ctx.fillStyle = '#78909C';
+    ctx.fillText(`Speed: ${effectiveSpeed.toFixed(1)} m/s | Mass: ${level.impactMass} kg`, W - 15 * scale, 42 * scale);
+
+    // ---- BRAIN ACCELERATION METER ----
+    const meterX = W * 0.02;
+    const meterY = H * 0.15;
+    const meterW = 35 * scale;
+    const meterH = H * 0.5;
+
+    // Meter background
+    drawRoundRect(meterX, meterY, meterW, meterH, 6);
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Gradient fill
+    const meterGrad = ctx.createLinearGradient(0, meterY + meterH, 0, meterY);
+    meterGrad.addColorStop(0, '#66BB6A');
+    meterGrad.addColorStop(0.5, '#FDD835');
+    meterGrad.addColorStop(1, '#EF5350');
+
+    const fillRatio = clamp(currentAccel / (level.dangerThreshold * 1.5), 0, 1);
+    const fillH = fillRatio * (meterH - 8 * scale);
+    drawRoundRect(meterX + 4 * scale, meterY + meterH - 4 * scale - fillH, meterW - 8 * scale, fillH, 3);
+    ctx.fillStyle = meterGrad;
+    ctx.fill();
+
+    // Danger threshold line
+    const threshY = meterY + meterH - (level.dangerThreshold / (level.dangerThreshold * 1.5)) * (meterH - 8 * scale) - 4 * scale;
+    ctx.strokeStyle = '#EF5350';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([4, 4]);
+    ctx.beginPath();
+    ctx.moveTo(meterX, threshY);
+    ctx.lineTo(meterX + meterW, threshY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Labels
+    ctx.save();
+    ctx.translate(meterX - 3 * scale, meterY + meterH / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('BRAIN ACCELERATION (m/s\u00B2)', 0, 0);
+    ctx.restore();
+
+    // Current value on meter
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.fillText(currentAccel.toFixed(1), meterX + meterW + 5 * scale, meterY + meterH - fillH);
+
+    // Danger label
+    ctx.fillStyle = '#EF5350';
+    ctx.font = `bold ${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText('DANGER', meterX + meterW + 5 * scale, threshY);
+    ctx.fillText(`${level.dangerThreshold}`, meterX + meterW + 5 * scale, threshY + 12 * scale);
+
+    // Brain accel big number
+    const bigNumX = W * 0.85;
+    const bigNumY = H * 0.55;
+    const accelColor = currentAccel < level.dangerThreshold * 0.5 ? '#66BB6A' :
+                       currentAccel < level.dangerThreshold * 0.8 ? '#FDD835' :
+                       currentAccel < level.dangerThreshold ? '#FF9800' : '#EF5350';
+
+    ctx.fillStyle = accelColor;
+    ctx.font = `bold ${Math.round(48 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText(currentAccel.toFixed(0), bigNumX, bigNumY);
+    ctx.font = `${Math.round(13 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillStyle = '#90A4AE';
+    ctx.fillText('m/s\u00B2', bigNumX, bigNumY + 22 * scale);
+    ctx.fillText('BRAIN ACCEL', bigNumX, bigNumY - 35 * scale);
+
+    // Slow-mo indicator
+    if (crashSlowMo && crashPhase === 'impact') {
+        ctx.fillStyle = `rgba(255,235,59,${0.5 + Math.sin(crashAnimTime * 4) * 0.3})`;
+        ctx.font = `bold ${Math.round(16 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText('\u25CF SLOW MOTION', W / 2, H * 0.92);
+
+        // Desaturation overlay for slow-mo feel
+        ctx.fillStyle = 'rgba(38,50,56,0.15)';
+        ctx.fillRect(0, 80 * scale, W, H - 80 * scale);
+    }
+
+    // Result overlay
+    if (crashPhase === 'post' && crashTimer > 0.5) {
+        const overlayAlpha = clamp((crashTimer - 0.5) / 0.5, 0, 0.85);
+        ctx.fillStyle = `rgba(38,50,56,${overlayAlpha * 0.5})`;
+        ctx.fillRect(0, H * 0.3, W, H * 0.45);
+
+        if (crashResult === 'safe') {
+            ctx.fillStyle = '#66BB6A';
+            ctx.font = `bold ${Math.round(42 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.globalAlpha = overlayAlpha;
+            ctx.fillText('\u2713 SAFE!', W / 2, H * 0.45);
+            ctx.font = `${Math.round(16 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillText(`Brain acceleration ${peakBrainAccel.toFixed(1)} m/s\u00B2 < ${level.dangerThreshold} threshold`, W / 2, H * 0.53);
+            ctx.fillText('Helmet successfully protected the brain!', W / 2, H * 0.58);
+        } else {
+            ctx.fillStyle = '#EF5350';
+            ctx.font = `bold ${Math.round(42 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.globalAlpha = overlayAlpha;
+            ctx.fillText('\u2716 CONCUSSION!', W / 2, H * 0.45);
+            ctx.font = `${Math.round(16 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillText(`Brain acceleration ${peakBrainAccel.toFixed(1)} m/s\u00B2 > ${level.dangerThreshold} threshold`, W / 2, H * 0.53);
+            ctx.fillText('Helmet needs more protection. Try again!', W / 2, H * 0.58);
+        }
+        ctx.globalAlpha = 1;
+
+        // Buttons
+        if (crashTimer > 1.5) {
+            const bw = 150 * scale, bh = 42 * scale;
+            const spacing = 20 * scale;
+
+            if (drawButton('\u21BB REPLAY', W / 2 - bw - spacing / 2, H * 0.65, bw, bh, { color: '#455A64', hoverColor: '#546E7A', fontSize: Math.round(14 * scale) })) {
+                playSound('click');
+                initCrashTest();
+            }
+
+            if (drawButton(crashResult === 'safe' ? 'RESULTS \u25B6' : 'REDESIGN \u25B6', W / 2 + spacing / 2, H * 0.65, bw, bh, {
+                color: crashResult === 'safe' ? '#66BB6A' : '#EF5350',
+                hoverColor: crashResult === 'safe' ? '#81C784' : '#F44336',
+                fontSize: Math.round(14 * scale)
+            })) {
+                playSound('click');
+                if (crashResult === 'safe') {
+                    // Save and go to results
+                    const lid = level.id;
+                    if (!saveData.levelStars[lid] || crashStars > saveData.levelStars[lid]) {
+                        saveData.levelStars[lid] = crashStars;
+                    }
+                    if (!saveData.levelScores[lid] || crashScore > saveData.levelScores[lid]) {
+                        saveData.levelScores[lid] = crashScore;
+                    }
+                    if (lid >= saveData.highestUnlocked && lid < LEVELS.length) {
+                        saveData.highestUnlocked = lid + 1;
+                    }
+                    saveGame();
+                    transitionTo(STATE.RESULTS);
+                } else {
+                    transitionTo(STATE.DESIGN);
+                }
+            }
+        }
+    }
+
+    // Slow-mo toggle button (bottom right)
+    if (crashPhase === 'impact') {
+        const smBtnW = 120 * scale, smBtnH = 35 * scale;
+        if (drawButton(crashSlowMo ? 'NORMAL SPEED' : 'SLOW-MO', W - smBtnW - 10 * scale, H - smBtnH - 10 * scale, smBtnW, smBtnH, {
+            color: crashSlowMo ? '#FDD835' : '#455A64',
+            hoverColor: crashSlowMo ? '#FFEE58' : '#546E7A',
+            textColor: crashSlowMo ? '#263238' : '#FFF',
+            fontSize: Math.round(11 * scale)
+        })) {
+            crashSlowMo = !crashSlowMo;
+            playSound('click');
+        }
+    }
+}
+
+// ---- RESULTS SCREEN ----
+let resultsAnimTime = 0;
+function drawResults(dt) {
+    resultsAnimTime += dt;
+    const level = LEVELS[currentLevel];
+
+    ctx.fillStyle = '#263238';
+    ctx.fillRect(0, 0, W, H);
+
+    const cx = W / 2;
+
+    // Title
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(30 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText('CRASH TEST RESULTS', cx, H * 0.08);
+
+    ctx.fillStyle = level.helmetColor;
+    ctx.font = `bold ${Math.round(16 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText(`Level ${level.id}: ${level.name}`, cx, H * 0.14);
+
+    // Result card
+    const cardW = W * 0.7, cardH = H * 0.55;
+    const cardX = cx - cardW / 2, cardY = H * 0.18;
+    drawRoundRect(cardX, cardY, cardW, cardH, 12);
+    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.fill();
+    ctx.strokeStyle = crashResult === 'safe' ? '#66BB6A' : '#EF5350';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Stars
+    const starY = cardY + 40 * scale;
+    ctx.font = `${Math.round(36 * scale)}px 'Segoe UI', sans-serif`;
+    for (let i = 0; i < 3; i++) {
+        const animDelay = i * 0.3;
+        const starAlpha = clamp((resultsAnimTime - animDelay) / 0.5, 0, 1);
+        ctx.globalAlpha = starAlpha;
+        ctx.fillStyle = i < crashStars ? '#FDD835' : '#455A64';
+        ctx.fillText('\u2605', cx - 50 * scale + i * 50 * scale, starY);
+    }
+    ctx.globalAlpha = 1;
+
+    // Score
+    const scoreAnimated = Math.round(easeOutCubic(clamp(resultsAnimTime / 1.5, 0, 1)) * crashScore);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold ${Math.round(48 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillText(scoreAnimated, cx, cardY + 100 * scale);
+    ctx.font = `${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.fillStyle = '#90A4AE';
+    ctx.fillText('SCORE', cx, cardY + 120 * scale);
+
+    // Stats grid
+    const statsY = cardY + 150 * scale;
+    const colW = cardW / 3;
+    const stats = [
+        { label: 'Brain Acceleration', value: `${peakBrainAccel.toFixed(1)} m/s\u00B2`, sub: `Threshold: ${level.dangerThreshold}`, color: crashResult === 'safe' ? '#66BB6A' : '#EF5350' },
+        { label: 'Collision Time', value: `${collisionTime.toFixed(1)} ms`, sub: `Base: ${baseCollisionTime} ms`, color: '#42A5F5' },
+        { label: 'Peak Force', value: `${peakForce.toFixed(0)} N`, sub: `Impulse: ${impulse.toFixed(0)} N\u00B7s`, color: '#FDD835' }
+    ];
+    stats.forEach((s, i) => {
+        const sx = cardX + i * colW + colW / 2;
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#78909C';
+        ctx.font = `${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(s.label, sx, statsY);
+        ctx.fillStyle = s.color;
+        ctx.font = `bold ${Math.round(20 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(s.value, sx, statsY + 25 * scale);
+        ctx.fillStyle = '#546E7A';
+        ctx.font = `${Math.round(9 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(s.sub, sx, statsY + 42 * scale);
+    });
+
+    // Budget and weight stats
+    const row2Y = statsY + 70 * scale;
+    const stats2 = [
+        { label: 'Budget Used', value: `$${budgetUsed} / $${level.budget}`, color: '#81C784' },
+        { label: 'Helmet Weight', value: `${totalWeight.toFixed(1)} kg`, color: '#90CAF9' },
+        { label: 'Protection Rating', value: `${Math.round(estimatedProtection * 100)}%`, color: '#CE93D8' }
+    ];
+    stats2.forEach((s, i) => {
+        const sx = cardX + i * colW + colW / 2;
+        ctx.fillStyle = '#78909C';
+        ctx.font = `${Math.round(10 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(s.label, sx, row2Y);
+        ctx.fillStyle = s.color;
+        ctx.font = `bold ${Math.round(16 * scale)}px 'Segoe UI', sans-serif`;
+        ctx.fillText(s.value, sx, row2Y + 22 * scale);
+    });
+
+    // Science summary
+    const sciY = cardY + cardH - 55 * scale;
+    ctx.fillStyle = 'rgba(66,165,245,0.15)';
+    drawRoundRect(cardX + 15 * scale, sciY, cardW - 30 * scale, 45 * scale, 6);
+    ctx.fill();
+    ctx.fillStyle = '#90CAF9';
+    ctx.font = `${Math.round(11 * scale)}px 'Segoe UI', sans-serif`;
+    ctx.textAlign = 'center';
+    if (crashResult === 'safe') {
+        ctx.fillText(`Your helmet extended collision time from ${baseCollisionTime} ms to ${collisionTime.toFixed(1)} ms,`, cx, sciY + 16 * scale);
+        ctx.fillText(`reducing force by ${Math.round((1 - impactForce / (impulse / (baseCollisionTime / 1000))) * 100)}% and keeping brain acceleration in the safe zone!`, cx, sciY + 32 * scale);
+    } else {
+        ctx.fillText(`Collision time of ${collisionTime.toFixed(1)} ms wasn't enough. Try adding more foam or air pockets`, cx, sciY + 16 * scale);
+        ctx.fillText(`to extend the collision time further and reduce peak force on the brain.`, cx, sciY + 32 * scale);
+    }
+
+    // Buttons
+    const btnY = H * 0.82;
+    const bw = 160 * scale, bh = 44 * scale;
+    const btnGap = 20 * scale;
+
+    if (drawButton('\u21BB REDESIGN', cx - bw * 1.5 - btnGap, btnY, bw, bh, { color: '#455A64', hoverColor: '#546E7A', fontSize: Math.round(14 * scale) })) {
+        playSound('click');
+        initDesignPhase();
+        transitionTo(STATE.DESIGN);
+    }
+
+    if (drawButton('LEVELS', cx - bw / 2, btnY, bw, bh, { color: '#1565C0', hoverColor: '#1976D2', fontSize: Math.round(14 * scale) })) {
+        playSound('click');
+        transitionTo(STATE.LEVEL_SELECT);
+    }
+
+    if (currentLevel < LEVELS.length - 1 && crashResult === 'safe') {
+        if (drawButton('NEXT LEVEL \u25B6', cx + bw / 2 + btnGap, btnY, bw, bh, { color: '#66BB6A', hoverColor: '#81C784', fontSize: Math.round(14 * scale) })) {
+            playSound('click');
+            currentLevel++;
+            initDesignPhase();
+            transitionTo(STATE.DESIGN);
+        }
+    }
+
+    // All levels complete?
+    if (currentLevel === LEVELS.length - 1 && crashResult === 'safe') {
+        let totalStars = 0, totalScore = 0;
+        for (let i = 1; i <= LEVELS.length; i++) {
+            totalStars += saveData.levelStars[i] || 0;
+            totalScore += saveData.levelScores[i] || 0;
+        }
+        if (totalStars === LEVELS.length * 3) {
+            ctx.fillStyle = '#FDD835';
+            ctx.font = `bold ${Math.round(14 * scale)}px 'Segoe UI', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.fillText('\u2605 PERFECT SCORE! You\'re a helmet engineering master! \u2605', cx, H * 0.95);
+        }
+    }
+}
+
+// ---- MAIN LOOP ----
+let lastTime = 0;
+function gameLoop(timestamp) {
+    const dt = Math.min((timestamp - lastTime) / 1000, 0.05);
+    lastTime = timestamp;
+    gameTime += dt;
+
+    // Transition
+    if (transitionTarget !== null) {
+        transitionAlpha += dt * 3;
+        if (transitionAlpha >= 1) {
+            state = transitionTarget;
+            transitionTarget = null;
+            transitionAlpha = 1;
+            resultsAnimTime = 0;
+            howtoPage = state === STATE.HOWTO ? 0 : howtoPage;
+        }
+    } else if (transitionAlpha > 0) {
+        transitionAlpha -= dt * 3;
+        if (transitionAlpha < 0) transitionAlpha = 0;
+    }
+
+    // Clear
+    ctx.clearRect(0, 0, W, H);
+
+    // State rendering
+    switch (state) {
+        case STATE.TITLE: drawTitle(dt); break;
+        case STATE.HOWTO: drawHowTo(dt); break;
+        case STATE.LEVEL_SELECT: drawLevelSelect(dt); break;
+        case STATE.DESIGN: drawDesignPhase(dt); break;
+        case STATE.CRASH_TEST: drawCrashTest(dt); break;
+        case STATE.RESULTS: drawResults(dt); break;
+    }
+
+    // Transition overlay
+    if (transitionAlpha > 0) {
+        ctx.fillStyle = `rgba(38,50,56,${transitionAlpha})`;
+        ctx.fillRect(0, 0, W, H);
+    }
+
+    resetInput();
+    requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>

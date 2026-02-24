@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>EXOTHERM - Chemistry Lab Challenge</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;overflow:hidden;background:#1a1a2e;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none;}
+canvas{display:block;position:absolute;top:0;left:0;width:100%;height:100%;}
+#landscape-prompt{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#1a237e;color:#fff;z-index:9999;justify-content:center;align-items:center;flex-direction:column;font-size:1.4em;text-align:center;padding:2em;}
+#landscape-prompt .icon{font-size:3em;display:block;margin-bottom:0.3em;}
+@media(max-width:640px)and(orientation:portrait){#landscape-prompt{display:flex!important;}}
+</style>
+</head>
+<body>
+<div id="landscape-prompt">
+  <div class="icon">&#x1F52C;</div>
+  <div>Please rotate your device to<br><strong>landscape mode</strong></div>
+</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+(function(){
+// ═══════════════════════════════════════════════════════════
+//  EXOTHERM — Chemistry Lab Challenge
+//  NGSS MS-PS1-4, MS-PS1-5 | Grade 8
+//  Single-file HTML5 Canvas game
+// ═══════════════════════════════════════════════════════════
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+let W = 0, H = 0, DPR = 1;
+let lastTime = 0;
+let globalTime = 0;
+
+function resize() {
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * DPR;
+  canvas.height = H * DPR;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ═══════════════════════ AUDIO ENGINE ═══════════════════════
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+
+function ensureAudio() {
+  if (!audioCtx) {
+    audioCtx = new AudioCtx();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+  }
+}
+
+function playTone(freq, dur, type, vol) {
+  ensureAudio();
+  const t = audioCtx.currentTime;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = type || 'sine';
+  o.frequency.value = freq;
+  g.gain.setValueAtTime(Math.min(vol || 0.15, 0.3), t);
+  g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+  o.connect(g);
+  g.connect(audioCtx.destination);
+  o.start(t);
+  o.stop(t + dur);
+}
+
+function playNoise(dur, highpass, vol) {
+  ensureAudio();
+  const t = audioCtx.currentTime;
+  const bufSize = Math.floor(audioCtx.sampleRate * dur);
+  const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+  const data = buf.getChannelData(0);
+  for (let i = 0; i < bufSize; i++) data[i] = Math.random() * 2 - 1;
+  const src = audioCtx.createBufferSource();
+  src.buffer = buf;
+  const g = audioCtx.createGain();
+  g.gain.setValueAtTime(Math.min(vol || 0.1, 0.25), t);
+  g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+  if (highpass) {
+    const hp = audioCtx.createBiquadFilter();
+    hp.type = 'highpass';
+    hp.frequency.value = highpass;
+    src.connect(hp);
+    hp.connect(g);
+  } else {
+    src.connect(g);
+  }
+  g.connect(audioCtx.destination);
+  src.start(t);
+  src.stop(t + dur);
+}
+
+function sfxFizz()    { playNoise(0.8, 3000, 0.1); playTone(1200, 0.15, 'sine', 0.03); }
+function sfxSizzle()  { playNoise(1.2, 1500, 0.13); playTone(200, 0.4, 'sawtooth', 0.04); }
+function sfxSplash()  { playTone(80, 0.25, 'sine', 0.18); playTone(120, 0.12, 'sine', 0.08); }
+function sfxFrost()   { playNoise(0.6, 5000, 0.07); playTone(900, 0.25, 'sine', 0.04); playTone(1100, 0.15, 'sine', 0.03); }
+function sfxFoam()    { playNoise(1.8, 600, 0.15); playTone(140, 0.6, 'triangle', 0.07); }
+function sfxClick()   { playTone(660, 0.06, 'square', 0.06); }
+function sfxDrop()    { playTone(180, 0.12, 'sine', 0.1); playTone(130, 0.08, 'sine', 0.06); }
+function sfxSuccess() {
+  ensureAudio();
+  const notes = [523, 659, 784, 1047];
+  notes.forEach((f, i) => setTimeout(() => playTone(f, 0.35, 'sine', 0.12), i * 130));
+}
+function sfxFail() {
+  playTone(200, 0.3, 'sawtooth', 0.08);
+  setTimeout(() => playTone(160, 0.4, 'sawtooth', 0.06), 200);
+}
+
+// ═══════════════════════ SAVE / LOAD ═══════════════════════
+const SAVE_KEY = 'exotherm_save_v2';
+let saveData = { levelsCompleted: [], stars: {}, journal: [], bestScores: {} };
+
+function loadSave() {
+  try {
+    const d = JSON.parse(localStorage.getItem(SAVE_KEY));
+    if (d) saveData = { ...saveData, ...d };
+  } catch (e) { /* ignore */ }
+}
+
+function writeSave() {
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify(saveData)); } catch (e) { /* ignore */ }
+}
+
+loadSave();
+
+// ═══════════════════════ GAME STATES ═══════════════════════
+const ST = { TITLE: 0, HOWTO: 1, LEVELSEL: 2, LAB: 3, RESULTS: 4 };
+let state = ST.TITLE;
+let currentLevel = 0;
+let fade = { active: false, alpha: 0, dir: 1, nextState: -1, callback: null };
+
+function fadeToState(nextSt, cb) {
+  fade.active = true;
+  fade.alpha = 0;
+  fade.dir = 1;
+  fade.nextState = nextSt;
+  fade.callback = cb || null;
+}
+
+function updateFade(dt) {
+  if (!fade.active) return;
+  fade.alpha += fade.dir * dt * 3;
+  if (fade.dir === 1 && fade.alpha >= 1) {
+    fade.alpha = 1;
+    if (fade.callback) fade.callback();
+    fade.callback = null;
+    state = fade.nextState;
+    fade.dir = -1;
+  }
+  if (fade.dir === -1 && fade.alpha <= 0) {
+    fade.alpha = 0;
+    fade.active = false;
+  }
+}
+
+// ═══════════════════════ INGREDIENTS ═══════════════════════
+const INGREDIENTS = [
+  { id: 'iron',       name: 'Iron Powder',       color: '#78909C', accent: '#546E7A', icon: 'Fe',      mass: 10 },
+  { id: 'oxygen',     name: 'Oxygen Pack',        color: '#42A5F5', accent: '#1E88E5', icon: 'O\u2082', mass: 5  },
+  { id: 'water',      name: 'Water',              color: '#90CAF9', accent: '#64B5F6', icon: 'H\u2082O', mass: 15 },
+  { id: 'salt',       name: 'Salt',               color: '#ECEFF1', accent: '#CFD8DC', icon: 'NaCl',    mass: 8  },
+  { id: 'vinegar',    name: 'Vinegar',            color: '#FFB74D', accent: '#FFA726', icon: 'AcOH',    mass: 12 },
+  { id: 'bakingsoda', name: 'Baking Soda',        color: '#F5F5F5', accent: '#E0E0E0', icon: 'NaHCO\u2083', mass: 10 },
+  { id: 'citric',     name: 'Citric Acid',        color: '#FFF176', accent: '#FFEE58', icon: 'C\u2086H\u2088O\u2087', mass: 9  },
+  { id: 'peroxide',   name: 'H\u2082O\u2082',    color: '#E0E0E0', accent: '#BDBDBD', icon: 'H\u2082O\u2082', mass: 14 },
+  { id: 'yeast',      name: 'Yeast',              color: '#D7CCC8', accent: '#BCAAA4', icon: 'Yz',      mass: 6  },
+];
+
+function getIngredient(id) { return INGREDIENTS.find(x => x.id === id); }
+
+// ═══════════════════════ REACTIONS ═══════════════════════
+const REACTIONS = [
+  {
+    ids: ['iron', 'oxygen'],
+    name: 'Iron + Oxygen \u2192 Iron Oxide',
+    equation: '4Fe + 3O\u2082 \u2192 2Fe\u2082O\u2083 + Heat',
+    product: 'Iron Oxide (Rust)',
+    tempChange: 40, type: 'exothermic', gas: 0,
+    desc: 'Iron reacts with oxygen, releasing heat! This is how hand warmers work.',
+    visual: 'glow', sfx: 'sizzle'
+  },
+  {
+    ids: ['vinegar', 'bakingsoda'],
+    name: 'Vinegar + Baking Soda \u2192 CO\u2082 + Water',
+    equation: 'CH\u2083COOH + NaHCO\u2083 \u2192 CO\u2082 + H\u2082O + NaCH\u2083COO',
+    product: 'CO\u2082 + Water + Sodium Acetate',
+    tempChange: 5, type: 'exothermic', gas: 3,
+    desc: 'An acid-base reaction producing carbon dioxide gas and a little heat!',
+    visual: 'fizz', sfx: 'fizz'
+  },
+  {
+    ids: ['water', 'salt'],
+    name: 'Water + Salt \u2192 Saltwater',
+    equation: 'H\u2082O + NaCl \u2192 Na\u207A(aq) + Cl\u207B(aq)',
+    product: 'Saltwater',
+    tempChange: -10, type: 'endothermic', gas: 0,
+    desc: 'Dissolving salt absorbs energy from the water, cooling it down. Cold packs use this!',
+    visual: 'frost', sfx: 'frost'
+  },
+  {
+    ids: ['citric', 'bakingsoda'],
+    name: 'Citric Acid + Baking Soda \u2192 CO\u2082',
+    equation: 'C\u2086H\u2088O\u2087 + 3NaHCO\u2083 \u2192 3CO\u2082 + 3H\u2082O + Na\u2083C\u2086H\u2085O\u2087',
+    product: 'CO\u2082 + Water + Sodium Citrate',
+    tempChange: -15, type: 'endothermic', gas: 4,
+    desc: 'This endothermic reaction absorbs heat, making things cold and fizzy!',
+    visual: 'frost_fizz', sfx: 'frost'
+  },
+  {
+    ids: ['peroxide', 'yeast'],
+    name: 'H\u2082O\u2082 + Yeast \u2192 O\u2082 + Water',
+    equation: '2H\u2082O\u2082 \u2192(yeast catalyst)\u2192 2H\u2082O + O\u2082 + Heat',
+    product: 'Oxygen + Water + Foam',
+    tempChange: 25, type: 'exothermic', gas: 2,
+    desc: 'Yeast catalyzes peroxide decomposition -- Elephant Toothpaste! Releases heat and O\u2082.',
+    visual: 'foam', sfx: 'foam'
+  },
+];
+
+// ═══════════════════════ LEVELS ═══════════════════════
+const LEVELS = [
+  {
+    id: 1, name: 'Hand Warmer', target: 35, tolerance: 8,
+    desc: 'Make a hand warmer! Raise the temperature to +35\u00b0C.',
+    hint: 'Iron + Oxygen releases lots of heat.',
+    available: ['iron', 'oxygen', 'water', 'salt']
+  },
+  {
+    id: 2, name: 'Cold Pack', target: -20, tolerance: 8,
+    desc: 'Build a cold pack! Lower the temperature to -20\u00b0C.',
+    hint: 'Some reactions absorb heat. Combine endothermic reactions!',
+    available: ['water', 'salt', 'citric', 'bakingsoda', 'vinegar']
+  },
+  {
+    id: 3, name: 'Exact Temperature', target: 15, tolerance: 5,
+    desc: 'Hit exactly +15\u00b0C by combining exothermic AND endothermic reactions!',
+    hint: 'Balance hot and cold reactions to land in the zone.',
+    available: ['iron', 'oxygen', 'water', 'salt', 'citric', 'bakingsoda']
+  },
+  {
+    id: 4, name: 'Volcano Science Fair', target: 30, tolerance: 8,
+    desc: 'Create a foaming volcano at +30\u00b0C for the science fair!',
+    hint: 'You need foam AND heat. Multiple reactions!',
+    available: ['vinegar', 'bakingsoda', 'peroxide', 'yeast', 'iron', 'oxygen']
+  },
+  {
+    id: 5, name: 'Mystery Mix', target: 10, tolerance: 4,
+    desc: 'The ultimate challenge: hit +10\u00b0C precisely!',
+    hint: 'Plan carefully. Combine exo and endo reactions to nail the target.',
+    available: ['iron', 'oxygen', 'water', 'salt', 'vinegar', 'bakingsoda', 'citric', 'peroxide', 'yeast']
+  },
+];
+
+// ═══════════════════════ LAB STATE ═══════════════════════
+let lab = null;
+
+function initLab(levelIdx) {
+  const lv = LEVELS[levelIdx];
+  lab = {
+    level: lv,
+    temperature: 0,
+    targetTemp: lv.target,
+    tolerance: lv.tolerance,
+    beakerContents: [],
+    totalMassIn: 0,
+    gasReleased: 0,
+    reactionsTriggered: [],
+    ingredientSlots: [],
+    dragging: null,
+    dragX: 0, dragY: 0,
+    particles: [],
+    thermTarget: 0,
+    reactionQueue: [],
+    showingReaction: false,
+    reactionDisplay: null,
+    reactionDisplayTimer: 0,
+    massFlash: 0,
+    ingredientsUsed: 0,
+    newDiscoveries: 0,
+    complete: false,
+    journalOpen: false,
+    hintShown: false,
+    hintTimer: 0,
+    mercurySmooth: 0,
+    beakerLiquidColor: '#90CAF9',
+    beakerGlow: 0,
+    beakerGlowColor: '#FF5722',
+    foamLevel: 0,
+    foamTimer: 0,
+    sparkleTimer: 0,
+    // UI button rects (set during draw)
+    resetBtn: { x: 0, y: 0, w: 0, h: 0 },
+    checkBtn: { x: 0, y: 0, w: 0, h: 0 },
+    journalBtn: { x: 0, y: 0, w: 0, h: 0 },
+    backBtn: { x: 0, y: 0, w: 0, h: 0 },
+    hintBtn: { x: 0, y: 0, w: 0, h: 0 },
+    journalCloseBtn: { x: 0, y: 0, w: 0, h: 0 },
+  };
+  // Build available ingredient slots
+  lab.ingredientSlots = lv.available.map((id, i) => {
+    const ing = getIngredient(id);
+    return { ...ing, slotIndex: i, used: false, rect: null };
+  });
+}
+
+// ═══════════════════════ REACTION ENGINE ═══════════════════════
+function findReaction(pair) {
+  const sorted = [...pair].sort();
+  for (const r of REACTIONS) {
+    const rSorted = [...r.ids].sort();
+    if (rSorted.length === sorted.length && rSorted.every((v, i) => v === sorted[i])) return r;
+  }
+  return null;
+}
+
+function checkReactions() {
+  if (!lab) return;
+  const contents = lab.beakerContents.map(c => c.id);
+  if (contents.length < 2) return;
+  // Check all unique pairs
+  for (let i = 0; i < contents.length; i++) {
+    for (let j = i + 1; j < contents.length; j++) {
+      const pair = [contents[i], contents[j]];
+      const pairKey = [...pair].sort().join('+');
+      const alreadyDone = lab.reactionsTriggered.some(r =>
+        [...r.ids].sort().join('+') === pairKey
+      );
+      if (alreadyDone) continue;
+      const reaction = findReaction(pair);
+      if (reaction && !lab.reactionQueue.some(q => q.name === reaction.name)) {
+        lab.reactionQueue.push(reaction);
+      }
+    }
+  }
+  if (lab.reactionQueue.length > 0 && !lab.showingReaction) {
+    triggerNextReaction();
+  }
+}
+
+function triggerNextReaction() {
+  if (!lab || lab.reactionQueue.length === 0) {
+    if (lab) lab.showingReaction = false;
+    return;
+  }
+  const reaction = lab.reactionQueue.shift();
+  lab.showingReaction = true;
+  lab.reactionsTriggered.push(reaction);
+  lab.reactionDisplay = reaction;
+  lab.reactionDisplayTimer = 4.0;
+
+  // Temperature
+  lab.temperature += reaction.tempChange;
+  lab.thermTarget = lab.temperature;
+
+  // Gas tracking (mass still conserved)
+  lab.gasReleased += reaction.gas;
+
+  // Mass flash
+  lab.massFlash = 2.5;
+
+  // Glow
+  lab.beakerGlow = 2.5;
+  lab.beakerGlowColor = reaction.type === 'exothermic' ? '#FF5722' : '#29B6F6';
+
+  // Liquid color shift
+  if (reaction.type === 'exothermic') {
+    lab.beakerLiquidColor = blendColors(lab.beakerLiquidColor, '#FFAB91', 0.45);
+  } else {
+    lab.beakerLiquidColor = blendColors(lab.beakerLiquidColor, '#B3E5FC', 0.45);
+  }
+
+  // Foam
+  if (reaction.visual === 'foam') {
+    lab.foamLevel = 0.85;
+    lab.foamTimer = 5;
+  } else if (reaction.visual === 'fizz' || reaction.visual === 'frost_fizz') {
+    lab.foamLevel = Math.max(lab.foamLevel, 0.3);
+    lab.foamTimer = Math.max(lab.foamTimer, 2.5);
+  }
+
+  // Spawn visual particles
+  spawnReactionParticles(reaction);
+
+  // Sound
+  if (reaction.sfx === 'fizz') sfxFizz();
+  else if (reaction.sfx === 'sizzle') sfxSizzle();
+  else if (reaction.sfx === 'frost') sfxFrost();
+  else if (reaction.sfx === 'foam') sfxFoam();
+
+  // Journal discovery
+  if (!saveData.journal.includes(reaction.name)) {
+    saveData.journal.push(reaction.name);
+    lab.newDiscoveries++;
+    writeSave();
+  }
+}
+
+function blendColors(c1, c2, t) {
+  const h = (hex) => {
+    hex = hex.replace('#', '');
+    return [parseInt(hex.substring(0, 2), 16), parseInt(hex.substring(2, 4), 16), parseInt(hex.substring(4, 6), 16)];
+  };
+  const [r1, g1, b1] = h(c1);
+  const [r2, g2, b2] = h(c2);
+  const mix = (a, b) => Math.round(a + (b - a) * t);
+  return '#' + [mix(r1, r2), mix(g1, g2), mix(b1, b2)].map(v => Math.max(0, Math.min(255, v)).toString(16).padStart(2, '0')).join('');
+}
+
+// ═══════════════════════ PARTICLE SYSTEM ═══════════════════════
+const MAX_PARTICLES = 500;
+
+function spawnP(x, y, vx, vy, type, life) {
+  if (!lab || lab.particles.length >= MAX_PARTICLES) return;
+  lab.particles.push({
+    x, y, vx, vy, type, life, maxLife: life,
+    size: 3 + Math.random() * 6,
+    rot: Math.random() * Math.PI * 2
+  });
+}
+
+function spawnReactionParticles(reaction) {
+  const br = getBeakerRect();
+  const bx = br.x + br.w / 2;
+  const by = br.y + br.h * 0.45;
+  const n = 45;
+
+  if (reaction.visual === 'glow') {
+    // Orange heat waves rising
+    for (let i = 0; i < n; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 90, by - Math.random() * 50,
+        (Math.random() - 0.5) * 35, -Math.random() * 70 - 25,
+        'heat', 1.5 + Math.random() * 1.2);
+    }
+    // Rust glow at beaker base
+    for (let i = 0; i < 15; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 60, by + 20,
+        (Math.random() - 0.5) * 10, -Math.random() * 15,
+        'ember', 2 + Math.random());
+    }
+  }
+
+  if (reaction.visual === 'fizz') {
+    for (let i = 0; i < n; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 65, by + 10,
+        (Math.random() - 0.5) * 18, -Math.random() * 90 - 35,
+        'bubble', 1.2 + Math.random() * 0.8);
+    }
+    // CO2 puffs above
+    for (let i = 0; i < 12; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 40, by - 30,
+        (Math.random() - 0.5) * 25, -Math.random() * 40 - 10,
+        'co2', 1.5 + Math.random());
+    }
+  }
+
+  if (reaction.visual === 'frost') {
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const sp = Math.random() * 55 + 20;
+      spawnP(bx, by, Math.cos(a) * sp, Math.sin(a) * sp - 15,
+        'frost', 1.8 + Math.random() * 0.6);
+    }
+    // Cold mist
+    for (let i = 0; i < 20; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 80, by + 10,
+        (Math.random() - 0.5) * 30, -Math.random() * 10 - 3,
+        'mist', 2 + Math.random());
+    }
+  }
+
+  if (reaction.visual === 'frost_fizz') {
+    // Frost crystals
+    for (let i = 0; i < 30; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const sp = Math.random() * 50 + 15;
+      spawnP(bx, by, Math.cos(a) * sp, Math.sin(a) * sp - 10,
+        'frost', 1.5 + Math.random() * 0.5);
+    }
+    // Bubbles
+    for (let i = 0; i < 25; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 55, by,
+        (Math.random() - 0.5) * 12, -Math.random() * 70 - 25,
+        'bubble', 1 + Math.random() * 0.8);
+    }
+    // Cold mist
+    for (let i = 0; i < 15; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 70, by + 15,
+        (Math.random() - 0.5) * 20, -Math.random() * 8,
+        'mist', 2 + Math.random());
+    }
+  }
+
+  if (reaction.visual === 'foam') {
+    // Elephant toothpaste foam eruption
+    for (let i = 0; i < 70; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 60, by - Math.random() * 20,
+        (Math.random() - 0.5) * 50, -Math.random() * 140 - 50,
+        'foam', 2.5 + Math.random() * 1.5);
+    }
+    // Steam / heat
+    for (let i = 0; i < 30; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 80, by - Math.random() * 50,
+        (Math.random() - 0.5) * 20, -Math.random() * 50 - 20,
+        'heat', 1.2 + Math.random());
+    }
+    // Bubbles
+    for (let i = 0; i < 20; i++) {
+      spawnP(bx + (Math.random() - 0.5) * 50, by,
+        (Math.random() - 0.5) * 15, -Math.random() * 60 - 20,
+        'bubble', 1 + Math.random());
+    }
+  }
+}
+
+function spawnSparkles(cx, cy, count) {
+  for (let i = 0; i < count; i++) {
+    const a = Math.random() * Math.PI * 2;
+    const sp = Math.random() * 80 + 30;
+    spawnP(cx + (Math.random() - 0.5) * 60, cy + (Math.random() - 0.5) * 40,
+      Math.cos(a) * sp, Math.sin(a) * sp - 20,
+      'sparkle', 1.5 + Math.random());
+  }
+}
+
+function updateParticles(dt) {
+  for (let i = lab.particles.length - 1; i >= 0; i--) {
+    const p = lab.particles[i];
+    p.life -= dt;
+    if (p.life <= 0) { lab.particles.splice(i, 1); continue; }
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.rot += dt * 2;
+    switch (p.type) {
+      case 'bubble': p.vy -= 25 * dt; p.vx += (Math.random() - 0.5) * 10 * dt; break;
+      case 'heat': p.vy -= 45 * dt; p.vx *= 0.99; break;
+      case 'ember': p.vy -= 8 * dt; p.vx *= 0.97; break;
+      case 'frost': p.vx *= 0.96; p.vy *= 0.96; break;
+      case 'mist': p.vx *= 0.98; p.vy -= 2 * dt; break;
+      case 'foam': p.vy += 20 * dt; p.vx *= 0.97; break;
+      case 'co2': p.vy -= 15 * dt; p.vx *= 0.98; break;
+      case 'sparkle': p.vy += 30 * dt; p.vx *= 0.98; break;
+    }
+  }
+}
+
+function drawParticles() {
+  if (!lab) return;
+  for (const p of lab.particles) {
+    const alpha = Math.min(1, (p.life / p.maxLife) * 2.5) * 0.85;
+    const sz = p.size * Math.max(0.2, p.life / p.maxLife);
+    ctx.globalAlpha = alpha;
+
+    if (p.type === 'bubble') {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, sz, 0, Math.PI * 2);
+      ctx.fillStyle = '#fff';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(180,210,255,0.5)';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+      // Highlight
+      ctx.beginPath();
+      ctx.arc(p.x - sz * 0.25, p.y - sz * 0.25, sz * 0.3, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255,255,255,0.6)';
+      ctx.fill();
+    }
+    else if (p.type === 'heat') {
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, sz * 1.5);
+      g.addColorStop(0, 'rgba(255,87,34,0.7)');
+      g.addColorStop(0.5, 'rgba(255,152,0,0.3)');
+      g.addColorStop(1, 'rgba(255,152,0,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, sz * 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    else if (p.type === 'ember') {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, sz * 0.6, 0, Math.PI * 2);
+      ctx.fillStyle = '#FF6D00';
+      ctx.fill();
+      ctx.shadowColor = '#FF6D00';
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    else if (p.type === 'frost') {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillStyle = '#B3E5FC';
+      ctx.strokeStyle = '#81D4FA';
+      ctx.lineWidth = 1;
+      for (let a = 0; a < 6; a++) {
+        ctx.fillRect(-0.8, -sz, 1.6, sz * 2);
+        ctx.rotate(Math.PI / 3);
+      }
+      ctx.restore();
+    }
+    else if (p.type === 'mist') {
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, sz * 2);
+      g.addColorStop(0, 'rgba(179,229,252,0.35)');
+      g.addColorStop(1, 'rgba(179,229,252,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, sz * 2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    else if (p.type === 'foam') {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, sz * 1.8, 0, Math.PI * 2);
+      ctx.fillStyle = '#FFF8E1';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,224,130,0.4)';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+    }
+    else if (p.type === 'co2') {
+      ctx.globalAlpha = alpha * 0.5;
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, sz * 2);
+      g.addColorStop(0, 'rgba(200,200,200,0.3)');
+      g.addColorStop(1, 'rgba(200,200,200,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, sz * 2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    else if (p.type === 'sparkle') {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillStyle = '#FFD700';
+      for (let a = 0; a < 4; a++) {
+        ctx.fillRect(-1, -sz * 1.8, 2, sz * 3.6);
+        ctx.rotate(Math.PI / 4);
+      }
+      ctx.restore();
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+
+// ═══════════════════════ DRAWING HELPERS ═══════════════════════
+function roundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+}
+
+function drawBtn(x, y, w, h, text, bg, fg, fontSize) {
+  ctx.save();
+  roundRect(x, y, w, h, 7);
+  ctx.fillStyle = bg;
+  ctx.fill();
+  // Subtle top highlight
+  const lg = ctx.createLinearGradient(x, y, x, y + h);
+  lg.addColorStop(0, 'rgba(255,255,255,0.12)');
+  lg.addColorStop(0.5, 'rgba(255,255,255,0)');
+  lg.addColorStop(1, 'rgba(0,0,0,0.1)');
+  ctx.fillStyle = lg;
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(0,0,0,0.2)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  ctx.fillStyle = fg || '#fff';
+  ctx.font = `bold ${fontSize || Math.min(h * 0.42, 16)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x + w / 2, y + h / 2 + 1);
+  ctx.restore();
+  return { x, y, w, h };
+}
+
+function inRect(px, py, r) {
+  return r && px >= r.x && px <= r.x + r.w && py >= r.y && py <= r.y + r.h;
+}
+
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+// ═══════════════════════ TITLE SCREEN ═══════════════════════
+let titleBubbles = [];
+let titlePulse = 0;
+let titlePlayBtn = {}, titleHowBtn = {};
+
+function initTitleBubbles() {
+  titleBubbles = [];
+  for (let i = 0; i < 35; i++) {
+    titleBubbles.push({
+      x: Math.random() * 2000, y: Math.random() * 1200,
+      r: 3 + Math.random() * 18, speed: 12 + Math.random() * 35,
+      alpha: 0.08 + Math.random() * 0.25,
+      wobble: Math.random() * Math.PI * 2
+    });
+  }
+}
+initTitleBubbles();
+
+function updateTitle(dt) {
+  titlePulse += dt;
+  for (const b of titleBubbles) {
+    b.y -= b.speed * dt;
+    b.wobble += dt * 1.5;
+    b.x += Math.sin(b.wobble) * 0.5;
+    if (b.y < -30) { b.y = H + 30; b.x = Math.random() * W; }
+  }
+}
+
+function drawTitle() {
+  // Deep blue gradient background
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#0d1b4a');
+  grad.addColorStop(0.5, '#152054');
+  grad.addColorStop(1, '#0d1b4a');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // Floating bubbles
+  for (const b of titleBubbles) {
+    ctx.globalAlpha = b.alpha;
+    ctx.beginPath();
+    ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+    ctx.fillStyle = '#42A5F5';
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(b.x - b.r * 0.25, b.y - b.r * 0.25, b.r * 0.25, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,0.3)';
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  const cx = W / 2;
+
+  // Large beaker in center
+  const bkW = Math.min(100, W * 0.1);
+  const bkH = Math.min(130, H * 0.2);
+  const bkX = cx;
+  const bkY = H * 0.36;
+  const topW = bkW * 0.45;
+  const botW = bkW * 0.9;
+  const neckH = bkH * 0.22;
+
+  // Beaker glass outline
+  ctx.strokeStyle = 'rgba(207,216,220,0.7)';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(bkX - topW / 2 - 8, bkY - bkH / 2 - 12);
+  ctx.lineTo(bkX - topW / 2, bkY - bkH / 2);
+  ctx.lineTo(bkX - topW / 2, bkY - bkH / 2 + neckH);
+  ctx.lineTo(bkX - botW / 2, bkY + bkH / 2);
+  ctx.lineTo(bkX + botW / 2, bkY + bkH / 2);
+  ctx.lineTo(bkX + topW / 2, bkY - bkH / 2 + neckH);
+  ctx.lineTo(bkX + topW / 2, bkY - bkH / 2);
+  ctx.lineTo(bkX + topW / 2 + 8, bkY - bkH / 2 - 12);
+  ctx.stroke();
+
+  // Hot side (left) liquid
+  ctx.save();
+  ctx.beginPath();
+  ctx.moveTo(bkX - topW / 2, bkY - bkH / 2 + neckH);
+  ctx.lineTo(bkX - botW / 2, bkY + bkH / 2);
+  ctx.lineTo(bkX, bkY + bkH / 2);
+  ctx.lineTo(bkX, bkY - 10);
+  ctx.closePath();
+  const hotG = ctx.createLinearGradient(bkX - botW / 2, bkY, bkX, bkY);
+  hotG.addColorStop(0, 'rgba(255,87,34,0.65)');
+  hotG.addColorStop(1, 'rgba(255,152,0,0.35)');
+  ctx.fillStyle = hotG;
+  ctx.fill();
+  ctx.restore();
+
+  // Cold side (right) liquid
+  ctx.save();
+  ctx.beginPath();
+  ctx.moveTo(bkX, bkY - 10);
+  ctx.lineTo(bkX, bkY + bkH / 2);
+  ctx.lineTo(bkX + botW / 2, bkY + bkH / 2);
+  ctx.lineTo(bkX + topW / 2, bkY - bkH / 2 + neckH);
+  ctx.closePath();
+  const coldG = ctx.createLinearGradient(bkX, bkY, bkX + botW / 2, bkY);
+  coldG.addColorStop(0, 'rgba(41,182,246,0.35)');
+  coldG.addColorStop(1, 'rgba(41,182,246,0.65)');
+  ctx.fillStyle = coldG;
+  ctx.fill();
+  ctx.restore();
+
+  // Thermometer beside beaker
+  const thX = bkX + botW / 2 + 25;
+  const thY = bkY - bkH / 2 + 10;
+  const thH = bkH * 0.8;
+  ctx.fillStyle = '#D32F2F';
+  roundRect(thX - 3, thY, 6, thH, 3);
+  ctx.fill();
+  ctx.strokeStyle = '#CFD8DC';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(thX, thY + thH + 5, 7, 0, Math.PI * 2);
+  ctx.fillStyle = '#D32F2F';
+  ctx.fill();
+  ctx.stroke();
+
+  // Title text with glow
+  const pulse = Math.sin(titlePulse * 2) * 0.15 + 0.85;
+  ctx.save();
+  ctx.shadowColor = 'rgba(255,87,34,0.4)';
+  ctx.shadowBlur = 20 * pulse;
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(W * 0.09, 80)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('EXOTHERM', cx, H * 0.11);
+  ctx.restore();
+
+  // Subtitle
+  ctx.fillStyle = '#90CAF9';
+  ctx.font = `${Math.min(W * 0.028, 22)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('Chemistry Lab Challenge', cx, H * 0.20);
+
+  // NGSS standards badge
+  ctx.fillStyle = '#66BB6A';
+  ctx.font = `${Math.min(W * 0.016, 13)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('NGSS MS-PS1-4  |  MS-PS1-5  |  Grade 8', cx, H * 0.26);
+
+  // Buttons
+  const btnW = Math.min(240, W * 0.25);
+  const btnH = 52;
+  titlePlayBtn = drawBtn(cx - btnW / 2, H * 0.60, btnW, btnH, 'START LAB', '#FF5722', '#fff', 20);
+  titleHowBtn = drawBtn(cx - btnW / 2, H * 0.60 + btnH + 14, btnW, 44, 'How to Play', '#1565C0', '#fff', 16);
+
+  // Version / credits
+  ctx.fillStyle = '#455A64';
+  ctx.font = `11px 'Segoe UI',sans-serif`;
+  ctx.fillText('CAST Science Resources  |  v1.0', cx, H * 0.96);
+}
+
+// ═══════════════════════ HOW TO PLAY ═══════════════════════
+let howtoBackBtn = {};
+
+function drawHowTo() {
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#0d1b4a');
+  grad.addColorStop(1, '#152054');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W / 2;
+  const fs = Math.min(W * 0.024, 17);
+
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(W * 0.045, 34)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('How to Play', cx, H * 0.09);
+
+  const sections = [
+    { text: '1. Drag ingredients from the shelf into the beaker.', color: '#E0E0E0' },
+    { text: '2. Certain combinations trigger chemical reactions!', color: '#E0E0E0' },
+    { text: '', color: '' },
+    { text: 'EXOTHERMIC = Releases heat (temperature UP)', color: '#FFAB91' },
+    { text: 'ENDOTHERMIC = Absorbs heat (temperature DOWN)', color: '#81D4FA' },
+    { text: '', color: '' },
+    { text: '3. Hit the target temperature (green zone on thermometer).', color: '#E0E0E0' },
+    { text: '4. Mass is ALWAYS conserved -- even when gas escapes!', color: '#66BB6A' },
+    { text: '', color: '' },
+    { text: 'Discover all 5 reactions and earn 3 stars on each level!', color: '#FFD700' },
+  ];
+
+  ctx.font = `${fs}px 'Segoe UI',sans-serif`;
+  const lineH = Math.min(H * 0.058, 32);
+  const startY = H * 0.19;
+
+  sections.forEach((s, i) => {
+    if (!s.text) return;
+    ctx.fillStyle = s.color;
+    if (s.text.startsWith('EXOTHERMIC') || s.text.startsWith('ENDOTHERMIC')) {
+      ctx.font = `bold ${fs}px 'Segoe UI',sans-serif`;
+    } else {
+      ctx.font = `${fs}px 'Segoe UI',sans-serif`;
+    }
+    ctx.fillText(s.text, cx, startY + i * lineH);
+  });
+
+  // Exo / Endo visual icons
+  const iconY = H * 0.73;
+  const iconSp = Math.min(W * 0.2, 160);
+
+  // Exothermic icon
+  ctx.fillStyle = '#FF5722';
+  ctx.font = `bold ${Math.min(30, W * 0.04)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('\u2B06 EXO', cx - iconSp, iconY);
+  ctx.fillStyle = '#FFAB91';
+  ctx.font = `${Math.min(14, W * 0.02)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('Releases heat', cx - iconSp, iconY + 24);
+
+  // Endothermic icon
+  ctx.fillStyle = '#29B6F6';
+  ctx.font = `bold ${Math.min(30, W * 0.04)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('\u2B07 ENDO', cx + iconSp, iconY);
+  ctx.fillStyle = '#81D4FA';
+  ctx.font = `${Math.min(14, W * 0.02)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('Absorbs heat', cx + iconSp, iconY + 24);
+
+  // Conservation icon
+  ctx.fillStyle = '#66BB6A';
+  ctx.font = `bold ${Math.min(24, W * 0.03)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('Mass IN = Mass OUT (always!)', cx, iconY + 60);
+
+  howtoBackBtn = drawBtn(cx - 80, H * 0.89, 160, 42, 'Back', '#455A64', '#fff');
+}
+
+// ═══════════════════════ LEVEL SELECT ═══════════════════════
+let levelBtns = [];
+let lsBackBtn = {};
+
+function drawLevelSelect() {
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#0d1b4a');
+  grad.addColorStop(1, '#152054');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W / 2;
+
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(W * 0.04, 32)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('Select Lab Challenge', cx, H * 0.09);
+
+  levelBtns = [];
+  const cols = LEVELS.length;
+  const gap = 14;
+  const cardW = Math.min(175, (W - 60 - gap * (cols - 1)) / cols);
+  const cardH = Math.min(200, H * 0.6);
+  const totalW = cols * cardW + (cols - 1) * gap;
+  const startX = cx - totalW / 2;
+  const startY = H * 0.17;
+
+  for (let i = 0; i < LEVELS.length; i++) {
+    const lv = LEVELS[i];
+    const unlocked = i === 0 || saveData.levelsCompleted.includes(i - 1);
+    const x = startX + i * (cardW + gap);
+    const y = startY;
+
+    // Card background
+    roundRect(x, y, cardW, cardH, 10);
+    const cg = ctx.createLinearGradient(x, y, x, y + cardH);
+    cg.addColorStop(0, unlocked ? '#263238' : '#1a1a2e');
+    cg.addColorStop(1, unlocked ? '#1a2530' : '#111122');
+    ctx.fillStyle = cg;
+    ctx.fill();
+    ctx.strokeStyle = unlocked ? (saveData.stars[i] >= 3 ? '#FFD700' : '#66BB6A') : '#37474F';
+    ctx.lineWidth = unlocked ? 2 : 1;
+    ctx.stroke();
+
+    // Level number badge
+    ctx.beginPath();
+    ctx.arc(x + cardW / 2, y + 28, 18, 0, Math.PI * 2);
+    ctx.fillStyle = unlocked ? '#1565C0' : '#37474F';
+    ctx.fill();
+    ctx.fillStyle = unlocked ? '#fff' : '#546E7A';
+    ctx.font = `bold ${Math.min(16, cardW * 0.1)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(lv.id, x + cardW / 2, y + 28);
+
+    // Name
+    ctx.fillStyle = unlocked ? '#fff' : '#546E7A';
+    ctx.font = `bold ${Math.min(14, cardW * 0.09)}px 'Segoe UI',sans-serif`;
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText(lv.name, x + cardW / 2, y + 60);
+
+    // Target temperature (big)
+    const tempStr = (lv.target > 0 ? '+' : '') + lv.target + '\u00b0C';
+    ctx.fillStyle = unlocked ? (lv.target > 0 ? '#FF8A65' : '#4FC3F7') : '#455A64';
+    ctx.font = `bold ${Math.min(28, cardW * 0.17)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(tempStr, x + cardW / 2, y + cardH * 0.47);
+
+    // "Target" label
+    ctx.fillStyle = unlocked ? '#78909C' : '#37474F';
+    ctx.font = `${Math.min(11, cardW * 0.07)}px 'Segoe UI',sans-serif`;
+    ctx.fillText('Target Temp', x + cardW / 2, y + cardH * 0.47 + 18);
+
+    // Tolerance
+    ctx.fillStyle = unlocked ? '#546E7A' : '#2a2a3e';
+    ctx.font = `${Math.min(10, cardW * 0.065)}px 'Segoe UI',sans-serif`;
+    ctx.fillText('\u00b1' + lv.tolerance + '\u00b0C tolerance', x + cardW / 2, y + cardH * 0.47 + 33);
+
+    // Stars
+    const starY = y + cardH * 0.76;
+    const starCount = saveData.stars[i] || 0;
+    ctx.font = `${Math.min(24, cardW * 0.15)}px 'Segoe UI',sans-serif`;
+    ctx.textBaseline = 'middle';
+    for (let s = 0; s < 3; s++) {
+      ctx.fillStyle = s < starCount ? '#FFD700' : '#37474F';
+      ctx.fillText('\u2605', x + cardW / 2 - 28 + s * 28, starY);
+    }
+    ctx.textBaseline = 'alphabetic';
+
+    // Best score
+    if (saveData.bestScores[i]) {
+      ctx.fillStyle = '#78909C';
+      ctx.font = `${Math.min(10, cardW * 0.065)}px 'Segoe UI',sans-serif`;
+      ctx.fillText('Best: ' + saveData.bestScores[i], x + cardW / 2, y + cardH * 0.90);
+    }
+
+    // Lock overlay
+    if (!unlocked) {
+      ctx.globalAlpha = 0.6;
+      roundRect(x, y, cardW, cardH, 10);
+      ctx.fillStyle = '#000';
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = '#546E7A';
+      ctx.font = `32px 'Segoe UI',sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('\uD83D\uDD12', x + cardW / 2, y + cardH / 2);
+      ctx.textBaseline = 'alphabetic';
+    }
+
+    levelBtns.push({ x, y, w: cardW, h: cardH, idx: i, unlocked });
+  }
+
+  // Journal progress
+  ctx.fillStyle = '#78909C';
+  ctx.font = `${Math.min(13, W * 0.018)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText(`Reactions Discovered: ${saveData.journal.length} / ${REACTIONS.length}`, cx, H * 0.87);
+
+  lsBackBtn = drawBtn(cx - 70, H * 0.92, 140, 38, 'Back to Menu', '#455A64', '#fff');
+}
+
+// ═══════════════════════ LAB SCREEN ═══════════════════════
+
+function getBeakerRect() {
+  const bw = Math.min(150, W * 0.13);
+  const bh = Math.min(190, H * 0.37);
+  return { x: W * 0.48 - bw / 2, y: H * 0.35 - bh / 2, w: bw, h: bh };
+}
+
+function getShelfRect() {
+  return { x: 10, y: H * 0.06, w: Math.min(180, W * 0.18), h: H * 0.86 };
+}
+
+function getThermRect() {
+  return { x: W * 0.73, y: H * 0.06, w: Math.min(70, W * 0.07), h: H * 0.74 };
+}
+
+// --- Lab background ---
+function drawLabBg() {
+  // Walls
+  ctx.fillStyle = '#FAFAFA';
+  ctx.fillRect(0, 0, W, H);
+
+  // Subtle wall pattern
+  ctx.fillStyle = '#F5F5F5';
+  for (let ty = 0; ty < H * 0.85; ty += 60) {
+    ctx.fillRect(0, ty, W, 1);
+  }
+
+  // Tile floor
+  const floorY = H * 0.86;
+  ctx.fillStyle = '#ECEFF1';
+  ctx.fillRect(0, floorY, W, H - floorY);
+  ctx.strokeStyle = '#CFD8DC';
+  ctx.lineWidth = 1;
+  for (let tx = 0; tx < W; tx += 45) {
+    ctx.beginPath();
+    ctx.moveTo(tx, floorY);
+    ctx.lineTo(tx, H);
+    ctx.stroke();
+  }
+  for (let ty = floorY; ty < H; ty += 45) {
+    ctx.beginPath();
+    ctx.moveTo(0, ty);
+    ctx.lineTo(W, ty);
+    ctx.stroke();
+  }
+
+  // Lab bench
+  const benchY = H * 0.63;
+  // Bench surface (dark top)
+  const benchGrad = ctx.createLinearGradient(0, benchY, 0, benchY + H * 0.015);
+  benchGrad.addColorStop(0, '#37474F');
+  benchGrad.addColorStop(1, '#263238');
+  ctx.fillStyle = benchGrad;
+  ctx.fillRect(W * 0.2, benchY, W * 0.58, H * 0.015);
+  // Bench body (wood)
+  const woodGrad = ctx.createLinearGradient(0, benchY + H * 0.015, 0, benchY + H * 0.07);
+  woodGrad.addColorStop(0, '#6D4C41');
+  woodGrad.addColorStop(1, '#5D4037');
+  ctx.fillStyle = woodGrad;
+  ctx.fillRect(W * 0.2, benchY + H * 0.015, W * 0.58, H * 0.055);
+  // Legs
+  ctx.fillStyle = '#4E342E';
+  ctx.fillRect(W * 0.23, benchY + H * 0.07, W * 0.025, H * 0.19);
+  ctx.fillRect(W * 0.73, benchY + H * 0.07, W * 0.025, H * 0.19);
+}
+
+// --- Ingredient shelf ---
+function drawShelf() {
+  const sr = getShelfRect();
+
+  // Shelf panel with wood texture
+  roundRect(sr.x, sr.y, sr.w, sr.h, 10);
+  const sg = ctx.createLinearGradient(sr.x, sr.y, sr.x + sr.w, sr.y);
+  sg.addColorStop(0, '#D7CCC8');
+  sg.addColorStop(0.5, '#EFEBE9');
+  sg.addColorStop(1, '#D7CCC8');
+  ctx.fillStyle = sg;
+  ctx.fill();
+  ctx.strokeStyle = '#A1887F';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Title
+  ctx.fillStyle = '#4E342E';
+  ctx.font = `bold ${Math.min(13, sr.w * 0.08)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('INGREDIENTS', sr.x + sr.w / 2, sr.y + 18);
+
+  // Slots
+  const padY = 28;
+  const count = lab.ingredientSlots.length;
+  const slotH = Math.min(58, (sr.h - padY - 10) / count);
+  const slotW = sr.w - 14;
+
+  for (let i = 0; i < count; i++) {
+    const slot = lab.ingredientSlots[i];
+    const sx = sr.x + 7;
+    const sy = sr.y + padY + i * slotH;
+    slot.rect = { x: sx, y: sy, w: slotW, h: slotH - 3 };
+
+    ctx.save();
+    if (slot.used) ctx.globalAlpha = 0.25;
+
+    // Slot card
+    roundRect(sx, sy, slotW, slotH - 3, 6);
+    ctx.fillStyle = '#FAFAFA';
+    ctx.fill();
+    ctx.strokeStyle = slot.color === '#F5F5F5' || slot.color === '#ECEFF1' || slot.color === '#E0E0E0'
+      ? '#BDBDBD' : slot.color;
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Colored circle with chemical symbol
+    const iconR = Math.min(13, slotH * 0.22);
+    const iconX = sx + iconR + 6;
+    const iconY = sy + (slotH - 3) / 2;
+
+    ctx.beginPath();
+    ctx.arc(iconX, iconY, iconR, 0, Math.PI * 2);
+    ctx.fillStyle = slot.color;
+    ctx.fill();
+    ctx.strokeStyle = slot.accent || '#795548';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Chemical symbol inside circle
+    ctx.fillStyle = '#333';
+    ctx.font = `bold ${Math.min(9, iconR * 0.75)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(slot.icon, iconX, iconY);
+
+    // Ingredient name
+    const textX = iconX + iconR + 8;
+    ctx.fillStyle = '#3E2723';
+    ctx.font = `bold ${Math.min(11, slotW * 0.075)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.fillText(slot.name, textX, iconY - 6);
+
+    // Mass label
+    ctx.fillStyle = '#8D6E63';
+    ctx.font = `${Math.min(10, slotW * 0.065)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(slot.mass + 'g', textX, iconY + 8);
+
+    if (slot.used) {
+      // "Used" stamp
+      ctx.globalAlpha = 0.6;
+      ctx.fillStyle = '#B71C1C';
+      ctx.font = `bold ${Math.min(10, slotW * 0.065)}px 'Segoe UI',sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('ADDED', sx + slotW / 2, iconY);
+    }
+
+    ctx.restore();
+  }
+}
+
+// --- Beaker ---
+function drawBeaker() {
+  const br = getBeakerRect();
+  const cx = br.x + br.w / 2;
+  const cy = br.y + br.h / 2;
+  const topW = br.w * 0.42;
+  const botW = br.w * 0.88;
+  const neckH = br.h * 0.2;
+
+  // Glow aura
+  if (lab.beakerGlow > 0) {
+    const glowR = br.w;
+    const ga = Math.min(0.35, lab.beakerGlow * 0.15);
+    const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, glowR);
+    if (lab.beakerGlowColor === '#FF5722') {
+      g.addColorStop(0, `rgba(255,87,34,${ga})`);
+      g.addColorStop(1, 'rgba(255,87,34,0)');
+    } else {
+      g.addColorStop(0, `rgba(41,182,246,${ga})`);
+      g.addColorStop(1, 'rgba(41,182,246,0)');
+    }
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.arc(cx, cy, glowR, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Build beaker path
+  function beakerPath() {
+    ctx.beginPath();
+    ctx.moveTo(cx - topW / 2, br.y);
+    ctx.lineTo(cx + topW / 2, br.y);
+    ctx.lineTo(cx + topW / 2, br.y + neckH);
+    ctx.lineTo(cx + botW / 2, br.y + br.h);
+    ctx.lineTo(cx - botW / 2, br.y + br.h);
+    ctx.lineTo(cx - topW / 2, br.y + neckH);
+    ctx.closePath();
+  }
+
+  // Glass fill
+  beakerPath();
+  ctx.fillStyle = 'rgba(227,242,253,0.2)';
+  ctx.fill();
+
+  // Liquid inside
+  if (lab.beakerContents.length > 0) {
+    const fillPct = Math.min(0.75, lab.beakerContents.length * 0.17);
+    const liqTopY = br.y + br.h * (1 - fillPct);
+    ctx.save();
+    beakerPath();
+    ctx.clip();
+
+    // Liquid body
+    const liqGrad = ctx.createLinearGradient(0, liqTopY, 0, br.y + br.h);
+    liqGrad.addColorStop(0, lab.beakerLiquidColor + 'CC');
+    liqGrad.addColorStop(1, lab.beakerLiquidColor + 'FF');
+    ctx.fillStyle = liqGrad;
+    ctx.fillRect(br.x - 10, liqTopY, br.w + 20, br.y + br.h - liqTopY + 5);
+
+    // Surface wavelet
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    for (let wx = cx - botW / 2; wx < cx + botW / 2; wx += 3) {
+      const wy = liqTopY + Math.sin(wx * 0.1 + globalTime * 3) * 2;
+      if (wx === cx - botW / 2 + 3) ctx.moveTo(wx, wy);
+      else ctx.lineTo(wx, wy);
+    }
+    ctx.stroke();
+
+    ctx.restore();
+  }
+
+  // Foam blobs
+  if (lab.foamLevel > 0) {
+    const foamBase = br.y + br.h * 0.25;
+    const foamH = br.h * 0.35 * lab.foamLevel;
+    ctx.save();
+    beakerPath();
+    ctx.clip();
+    for (let i = 0; i < 18; i++) {
+      const fx = cx + (Math.sin(i * 1.3 + globalTime * 2) * 0.5 + (Math.random() - 0.5)) * botW * 0.6;
+      const fy = foamBase - Math.random() * foamH;
+      const fr = 4 + Math.random() * 12 * lab.foamLevel;
+      ctx.beginPath();
+      ctx.arc(fx, fy, fr, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,248,225,${0.5 + Math.random() * 0.3})`;
+      ctx.fill();
+    }
+    ctx.restore();
+  }
+
+  // Glass outline
+  beakerPath();
+  ctx.strokeStyle = '#90CAF9';
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+
+  // Lip / pour spout
+  ctx.beginPath();
+  ctx.moveTo(cx - topW / 2 - 8, br.y - 5);
+  ctx.lineTo(cx - topW / 2, br.y);
+  ctx.moveTo(cx + topW / 2, br.y);
+  ctx.lineTo(cx + topW / 2 + 8, br.y - 5);
+  ctx.strokeStyle = '#B0BEC5';
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+
+  // Glass highlight (left edge)
+  ctx.beginPath();
+  ctx.moveTo(cx - topW / 2 + 5, br.y + 6);
+  ctx.lineTo(cx - topW / 2 + 5, br.y + neckH - 2);
+  ctx.lineTo(cx - botW / 2 + 10, br.y + br.h - 8);
+  ctx.strokeStyle = 'rgba(255,255,255,0.25)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Measurement marks
+  for (let m = 1; m <= 4; m++) {
+    const my = br.y + br.h - br.h * 0.16 * m;
+    ctx.beginPath();
+    ctx.moveTo(cx - botW / 2 + 5, my);
+    ctx.lineTo(cx - botW / 2 + 14, my);
+    ctx.strokeStyle = 'rgba(144,202,249,0.35)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // "Drop here" prompt when empty
+  if (lab.beakerContents.length === 0 && !lab.dragging) {
+    ctx.fillStyle = 'rgba(144,202,249,0.4)';
+    ctx.font = `${Math.min(12, br.w * 0.09)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('Drop', cx, cy - 5);
+    ctx.fillText('ingredients', cx, cy + 10);
+    ctx.fillText('here', cx, cy + 25);
+  }
+
+  // Drop-zone highlight while dragging
+  if (lab.dragging) {
+    beakerPath();
+    ctx.strokeStyle = '#66BB6A';
+    ctx.lineWidth = 3;
+    ctx.setLineDash([6, 4]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+}
+
+// --- Beaker contents list ---
+function drawBeakerContents() {
+  if (lab.beakerContents.length === 0) return;
+  const br = getBeakerRect();
+  const listX = br.x + br.w + 12;
+  const listY = br.y + 5;
+  const lh = Math.min(18, H * 0.03);
+
+  ctx.fillStyle = '#455A64';
+  ctx.font = `bold ${Math.min(11, W * 0.014)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'left';
+  ctx.fillText('In Beaker:', listX, listY);
+
+  for (let i = 0; i < lab.beakerContents.length; i++) {
+    const c = lab.beakerContents[i];
+    const y = listY + (i + 1) * lh;
+    // Color dot
+    ctx.beginPath();
+    ctx.arc(listX + 5, y - 3, 4, 0, Math.PI * 2);
+    ctx.fillStyle = c.color;
+    ctx.fill();
+    // Name
+    ctx.fillStyle = '#546E7A';
+    ctx.font = `${Math.min(10, W * 0.013)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(`${c.name} (${c.mass}g)`, listX + 14, y);
+  }
+}
+
+// --- Thermometer ---
+function drawThermometer() {
+  const tr = getThermRect();
+  const cx = tr.x + tr.w / 2;
+  const topPad = 28;
+  const botPad = 28;
+  const topY = tr.y + topPad;
+  const botY = tr.y + tr.h - botPad;
+  const tubeW = 16;
+  const bulbR = 18;
+  const trackH = botY - topY - bulbR;
+
+  // Thermometer range: -50 to +50 to cover all levels
+  const minT = -50, maxT = 50;
+
+  // Background panel
+  roundRect(tr.x - 18, tr.y, tr.w + 36, tr.h, 10);
+  ctx.fillStyle = 'rgba(38,50,56,0.92)';
+  ctx.fill();
+  ctx.strokeStyle = '#455A64';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Title
+  ctx.fillStyle = '#B0BEC5';
+  ctx.font = `bold ${Math.min(12, tr.w * 0.2)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('TEMP', cx, tr.y + 16);
+
+  // Tube background
+  roundRect(cx - tubeW / 2, topY, tubeW, trackH, tubeW / 2);
+  ctx.fillStyle = '#CFD8DC';
+  ctx.fill();
+
+  // Inner tube
+  roundRect(cx - tubeW / 2 + 2.5, topY + 2.5, tubeW - 5, trackH - 5, (tubeW - 5) / 2);
+  ctx.fillStyle = '#ECEFF1';
+  ctx.fill();
+
+  // Target zone band
+  const targetPct = (lab.targetTemp - minT) / (maxT - minT);
+  const tolPct = lab.tolerance / (maxT - minT);
+  const targetLineY = topY + trackH * (1 - targetPct);
+  const bandHalf = tolPct * trackH;
+
+  ctx.fillStyle = 'rgba(102,187,106,0.25)';
+  ctx.fillRect(cx - tubeW / 2 - 12, targetLineY - bandHalf, tubeW + 24, bandHalf * 2);
+  ctx.strokeStyle = '#66BB6A';
+  ctx.lineWidth = 1.5;
+  ctx.setLineDash([4, 3]);
+  ctx.strokeRect(cx - tubeW / 2 - 12, targetLineY - bandHalf, tubeW + 24, bandHalf * 2);
+  ctx.setLineDash([]);
+
+  // "TARGET" label
+  ctx.fillStyle = '#66BB6A';
+  ctx.font = `bold ${Math.min(10, tr.w * 0.16)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'left';
+  ctx.fillText('TARGET', cx + tubeW / 2 + 15, targetLineY + 4);
+
+  // Mercury column
+  const clampedT = clamp(lab.mercurySmooth, minT, maxT);
+  const mercPct = (clampedT - minT) / (maxT - minT);
+  const mercH = Math.max(2, mercPct * (trackH - 6));
+  const mercColor = lab.mercurySmooth >= 0 ? '#D32F2F' : '#1E88E5';
+
+  roundRect(cx - tubeW / 2 + 3.5, topY + trackH - mercH - 2, tubeW - 7, mercH, (tubeW - 7) / 2);
+  ctx.fillStyle = mercColor;
+  ctx.fill();
+
+  // Bulb
+  ctx.beginPath();
+  ctx.arc(cx, botY + 2, bulbR, 0, Math.PI * 2);
+  ctx.fillStyle = mercColor;
+  ctx.fill();
+  ctx.strokeStyle = '#CFD8DC';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  // Bulb highlight
+  ctx.beginPath();
+  ctx.arc(cx - 4, botY - 2, bulbR * 0.3, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(255,255,255,0.2)';
+  ctx.fill();
+
+  // Scale ticks and labels
+  ctx.font = `${Math.min(10, tr.w * 0.16)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'right';
+  ctx.fillStyle = '#90A4AE';
+  for (let t = minT; t <= maxT; t += 10) {
+    const pct = (t - minT) / (maxT - minT);
+    const y = topY + trackH * (1 - pct);
+    const isMain = t % 20 === 0;
+    ctx.beginPath();
+    ctx.moveTo(cx - tubeW / 2 - 1, y);
+    ctx.lineTo(cx - tubeW / 2 + (isMain ? 4 : 2), y);
+    ctx.strokeStyle = '#78909C';
+    ctx.lineWidth = isMain ? 1.5 : 0.8;
+    ctx.stroke();
+    if (isMain) {
+      ctx.fillText((t > 0 ? '+' : '') + t + '\u00b0', cx - tubeW / 2 - 4, y + 4);
+    }
+  }
+
+  // Current temperature readout
+  const tempStr = (lab.temperature > 0 ? '+' : '') + lab.temperature.toFixed(0) + '\u00b0C';
+  ctx.fillStyle = lab.temperature >= 0 ? '#FF8A65' : '#4FC3F7';
+  ctx.font = `bold ${Math.min(22, tr.w * 0.35)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText(tempStr, cx, botY + bulbR + 24);
+
+  // In-zone indicator
+  const diff = Math.abs(lab.temperature - lab.targetTemp);
+  if (lab.temperature !== 0 || lab.reactionsTriggered.length > 0) {
+    const inZone = diff <= lab.tolerance;
+    ctx.fillStyle = inZone ? '#66BB6A' : '#EF5350';
+    ctx.font = `bold ${Math.min(10, tr.w * 0.15)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(inZone ? 'IN ZONE' : 'OFF TARGET', cx, botY + bulbR + 40);
+  }
+}
+
+// --- Mass Conservation Scale ---
+function drawMassScale() {
+  const sw = Math.min(300, W * 0.27);
+  const sh = 68;
+  const sx = W * 0.48 - sw / 2;
+  const sy = H * 0.80;
+
+  // Panel
+  roundRect(sx, sy, sw, sh, 8);
+  ctx.fillStyle = 'rgba(38,50,56,0.92)';
+  ctx.fill();
+  ctx.strokeStyle = '#455A64';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Scale icon (balance)
+  const icx = sx + 20;
+  const icy = sy + 14;
+  ctx.strokeStyle = '#78909C';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(icx, icy + 4);
+  ctx.lineTo(icx, icy - 4);
+  ctx.moveTo(icx - 8, icy - 4);
+  ctx.lineTo(icx + 8, icy - 4);
+  ctx.moveTo(icx - 8, icy - 4);
+  ctx.lineTo(icx - 10, icy + 2);
+  ctx.moveTo(icx + 8, icy - 4);
+  ctx.lineTo(icx + 10, icy + 2);
+  ctx.stroke();
+
+  // Title
+  ctx.fillStyle = '#B0BEC5';
+  ctx.font = `bold ${Math.min(11, sw * 0.04)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'left';
+  ctx.fillText('MASS CONSERVATION', sx + 35, sy + 16);
+
+  const centerX = sx + sw / 2;
+
+  if (lab.totalMassIn > 0) {
+    const flash = lab.massFlash > 0 ? 0.7 + Math.sin(lab.massFlash * 8) * 0.3 : 1;
+
+    // IN box
+    ctx.fillStyle = `rgba(255,255,255,${flash})`;
+    ctx.font = `bold ${Math.min(15, sw * 0.055)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText(`IN: ${lab.totalMassIn}g`, centerX - sw * 0.22, sy + 38);
+
+    // Equals sign
+    ctx.fillStyle = '#66BB6A';
+    ctx.font = `bold ${Math.min(20, sw * 0.07)}px 'Segoe UI',sans-serif`;
+    ctx.fillText('=', centerX, sy + 38);
+
+    // OUT box
+    ctx.fillStyle = `rgba(255,255,255,${flash})`;
+    ctx.font = `bold ${Math.min(15, sw * 0.055)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(`OUT: ${lab.totalMassIn}g`, centerX + sw * 0.22, sy + 38);
+
+    // Gas breakdown
+    if (lab.gasReleased > 0) {
+      ctx.fillStyle = '#78909C';
+      ctx.font = `${Math.min(10, sw * 0.037)}px 'Segoe UI',sans-serif`;
+      ctx.fillText(`(Solid/Liquid: ${lab.totalMassIn - lab.gasReleased}g + Gas: ${lab.gasReleased}g = ${lab.totalMassIn}g)`, centerX, sy + 56);
+    }
+  } else {
+    ctx.fillStyle = '#546E7A';
+    ctx.font = `${Math.min(13, sw * 0.045)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('Add ingredients to track mass', centerX, sy + 42);
+  }
+}
+
+// --- Lab HUD (top bar, buttons) ---
+function drawLabHUD() {
+  // Top bar
+  roundRect(W * 0.2, 3, W * 0.58, 34, 7);
+  ctx.fillStyle = 'rgba(38,50,56,0.88)';
+  ctx.fill();
+
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(14, W * 0.019)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText(`Lab ${lab.level.id}: ${lab.level.name}`, W * 0.49, 24);
+
+  // Description below bar
+  ctx.fillStyle = '#90A4AE';
+  ctx.font = `${Math.min(12, W * 0.016)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(lab.level.desc, W * 0.49, 52);
+
+  // Back button (top right)
+  lab.backBtn = drawBtn(W - 75, 6, 65, 28, 'Menu', '#455A64', '#fff', 12);
+
+  // Bottom buttons
+  const btnY = H * 0.935;
+  const btnH = 34;
+
+  lab.resetBtn = drawBtn(W * 0.28, btnY, Math.min(90, W * 0.09), btnH, 'Reset', '#F44336', '#fff', 13);
+  lab.checkBtn = drawBtn(W * 0.48 - Math.min(60, W * 0.06), btnY, Math.min(120, W * 0.13), btnH, 'Check Temp!', '#66BB6A', '#fff', 14);
+  lab.journalBtn = drawBtn(W * 0.65, btnY, Math.min(90, W * 0.09), btnH, 'Journal', '#1565C0', '#fff', 13);
+  lab.hintBtn = drawBtn(W * 0.78, btnY, Math.min(70, W * 0.07), btnH, 'Hint', '#FF9800', '#fff', 13);
+}
+
+// --- Hint overlay ---
+function drawHint() {
+  if (!lab.hintShown) return;
+  const hw = Math.min(400, W * 0.4);
+  const hh = 70;
+  const hx = W / 2 - hw / 2;
+  const hy = H * 0.55;
+
+  roundRect(hx, hy, hw, hh, 8);
+  ctx.fillStyle = 'rgba(255,152,0,0.92)';
+  ctx.fill();
+  ctx.strokeStyle = '#F57C00';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(13, hw * 0.035)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('HINT', W / 2, hy + 20);
+  ctx.font = `${Math.min(12, hw * 0.032)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(lab.level.hint, W / 2, hy + 42);
+  ctx.fillStyle = 'rgba(255,255,255,0.6)';
+  ctx.font = `${Math.min(10, hw * 0.026)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('(click anywhere to dismiss)', W / 2, hy + 58);
+}
+
+// --- Reaction banner ---
+function drawReactionBanner() {
+  if (!lab.reactionDisplay || lab.reactionDisplayTimer <= 0) return;
+  const r = lab.reactionDisplay;
+  const alpha = clamp(lab.reactionDisplayTimer * 0.8, 0, 1);
+  ctx.globalAlpha = alpha;
+
+  const bw = Math.min(520, W * 0.52);
+  const bh = 100;
+  const bx = W / 2 - bw / 2;
+  const by = H * 0.04;
+
+  roundRect(bx, by, bw, bh, 10);
+  ctx.fillStyle = r.type === 'exothermic' ? '#BF360C' : '#01579B';
+  ctx.fill();
+  ctx.strokeStyle = r.type === 'exothermic' ? '#FF5722' : '#29B6F6';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Reaction name
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(15, bw * 0.032)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText(r.name, W / 2, by + 20);
+
+  // Equation
+  ctx.fillStyle = r.type === 'exothermic' ? '#FFCCBC' : '#B3E5FC';
+  ctx.font = `${Math.min(11, bw * 0.023)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(r.equation, W / 2, by + 36);
+
+  // Type badge
+  const badge = r.type === 'exothermic'
+    ? 'EXOTHERMIC  \u2B06 +' + r.tempChange + '\u00b0C'
+    : 'ENDOTHERMIC  \u2B07 ' + r.tempChange + '\u00b0C';
+  ctx.fillStyle = r.type === 'exothermic' ? '#FFAB91' : '#81D4FA';
+  ctx.font = `bold ${Math.min(14, bw * 0.028)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(badge, W / 2, by + 56);
+
+  // Description
+  ctx.fillStyle = '#E0E0E0';
+  ctx.font = `${Math.min(11, bw * 0.023)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(r.desc, W / 2, by + 76);
+
+  // Product line
+  ctx.fillStyle = '#90A4AE';
+  ctx.font = `${Math.min(10, bw * 0.02)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('Products: ' + r.product, W / 2, by + 92);
+
+  ctx.globalAlpha = 1;
+}
+
+// --- Journal overlay ---
+function drawJournal() {
+  if (!lab || !lab.journalOpen) return;
+
+  ctx.fillStyle = 'rgba(0,0,0,0.7)';
+  ctx.fillRect(0, 0, W, H);
+
+  const pw = Math.min(520, W * 0.55);
+  const ph = Math.min(420, H * 0.8);
+  const px = W / 2 - pw / 2;
+  const py = H / 2 - ph / 2;
+
+  roundRect(px, py, pw, ph, 12);
+  ctx.fillStyle = '#1a2530';
+  ctx.fill();
+  ctx.strokeStyle = '#455A64';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Title
+  ctx.fillStyle = '#fff';
+  ctx.font = `bold ${Math.min(20, pw * 0.04)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('Reaction Journal', W / 2, py + 28);
+
+  ctx.fillStyle = '#78909C';
+  ctx.font = `${Math.min(12, pw * 0.025)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(`${saveData.journal.length} of ${REACTIONS.length} reactions discovered`, W / 2, py + 48);
+
+  // Reaction list
+  const listTop = py + 65;
+  const rowH = Math.min(55, (ph - 110) / REACTIONS.length);
+
+  for (let i = 0; i < REACTIONS.length; i++) {
+    const r = REACTIONS[i];
+    const found = saveData.journal.includes(r.name);
+    const ry = listTop + i * rowH;
+
+    roundRect(px + 12, ry, pw - 24, rowH - 4, 6);
+    ctx.fillStyle = found ? '#263238' : '#111820';
+    ctx.fill();
+
+    if (found) {
+      // Type indicator bar
+      ctx.fillStyle = r.type === 'exothermic' ? '#FF5722' : '#29B6F6';
+      roundRect(px + 12, ry, 4, rowH - 4, 2);
+      ctx.fill();
+
+      // Reaction name
+      ctx.fillStyle = r.type === 'exothermic' ? '#FFAB91' : '#81D4FA';
+      ctx.font = `bold ${Math.min(12, pw * 0.025)}px 'Segoe UI',sans-serif`;
+      ctx.textAlign = 'left';
+      ctx.fillText(r.name, px + 24, ry + rowH / 2 - 8);
+
+      // Details
+      ctx.fillStyle = '#78909C';
+      ctx.font = `${Math.min(10, pw * 0.02)}px 'Segoe UI',sans-serif`;
+      const details = `${r.type === 'exothermic' ? 'Exothermic' : 'Endothermic'} (${r.tempChange > 0 ? '+' : ''}${r.tempChange}\u00b0C)  |  ${r.product}`;
+      ctx.fillText(details, px + 24, ry + rowH / 2 + 8);
+    } else {
+      ctx.fillStyle = '#37474F';
+      ctx.font = `${Math.min(12, pw * 0.025)}px 'Segoe UI',sans-serif`;
+      ctx.textAlign = 'left';
+      ctx.fillText('??? Undiscovered Reaction ???', px + 24, ry + rowH / 2 + 3);
+    }
+  }
+
+  lab.journalCloseBtn = drawBtn(W / 2 - 55, py + ph - 42, 110, 32, 'Close', '#455A64', '#fff');
+}
+
+// --- Dragging ingredient visual ---
+function drawDrag() {
+  if (!lab || !lab.dragging) return;
+  const s = lab.dragging;
+  const sz = 52;
+
+  ctx.save();
+  ctx.globalAlpha = 0.9;
+  ctx.shadowColor = 'rgba(0,0,0,0.35)';
+  ctx.shadowBlur = 12;
+  ctx.shadowOffsetY = 5;
+
+  roundRect(lab.dragX - sz / 2, lab.dragY - sz / 2, sz, sz, 10);
+  ctx.fillStyle = s.color;
+  ctx.fill();
+  ctx.strokeStyle = s.accent || '#795548';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = '#333';
+  ctx.font = `bold 11px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(s.icon, lab.dragX, lab.dragY - 7);
+  ctx.font = `9px 'Segoe UI',sans-serif`;
+  ctx.fillText(s.name, lab.dragX, lab.dragY + 10);
+  ctx.fillStyle = '#795548';
+  ctx.font = `8px 'Segoe UI',sans-serif`;
+  ctx.fillText(s.mass + 'g', lab.dragX, lab.dragY + 21);
+  ctx.restore();
+}
+
+// --- Complete lab draw ---
+function drawLab() {
+  drawLabBg();
+  drawShelf();
+  drawBeaker();
+  drawBeakerContents();
+  drawThermometer();
+  drawMassScale();
+  drawParticles();
+  drawLabHUD();
+  drawReactionBanner();
+  drawHint();
+  drawDrag();
+  drawJournal();
+}
+
+// ═══════════════════════ RESULTS SCREEN ═══════════════════════
+let resultsNextBtn = {}, resultsRetryBtn = {}, resultsMenuBtn = {};
+let resultsSaved = false;
+
+function calcScore() {
+  const diff = Math.abs(lab.temperature - lab.targetTemp);
+  const inZone = diff <= lab.tolerance;
+  const tempPts = inZone ? Math.max(10, Math.round(50 - diff * 2.5)) : 0;
+  const effPts = Math.max(0, 20 - Math.max(0, lab.ingredientsUsed - 2) * 5);
+  const discPts = lab.newDiscoveries * 10;
+  const massPts = 10; // Always awarded -- mass is always conserved!
+  const total = tempPts + effPts + discPts + massPts;
+  let stars = 0;
+  if (inZone) stars = 1;
+  if (inZone && diff <= lab.tolerance * 0.5) stars = 2;
+  if (inZone && diff <= lab.tolerance * 0.25 && lab.ingredientsUsed <= 4) stars = 3;
+  return { tempPts, effPts, discPts, massPts, total, stars, diff, inZone };
+}
+
+function drawResults() {
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#0d1b4a');
+  grad.addColorStop(1, '#152054');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W / 2;
+  const res = calcScore();
+
+  // Title
+  ctx.fillStyle = res.inZone ? '#66BB6A' : '#EF5350';
+  ctx.font = `bold ${Math.min(W * 0.05, 38)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText(res.inZone ? 'Lab Challenge Complete!' : 'Not Quite Right...', cx, H * 0.09);
+
+  if (!res.inZone) {
+    ctx.fillStyle = '#FFAB91';
+    ctx.font = `${Math.min(14, W * 0.02)}px 'Segoe UI',sans-serif`;
+    ctx.fillText('Try adjusting your ingredient combinations!', cx, H * 0.15);
+  }
+
+  // Temperature comparison boxes
+  const boxW = Math.min(140, W * 0.14);
+  const boxH = 80;
+  const boxY = H * 0.20;
+
+  // Your temp box
+  roundRect(cx - boxW - 30, boxY, boxW, boxH, 8);
+  ctx.fillStyle = '#1a2530';
+  ctx.fill();
+  ctx.strokeStyle = lab.temperature >= 0 ? '#FF5722' : '#29B6F6';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#90A4AE';
+  ctx.font = `${Math.min(11, W * 0.015)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('Your Temp', cx - boxW / 2 - 30, boxY + 18);
+  ctx.fillStyle = lab.temperature >= 0 ? '#FF8A65' : '#4FC3F7';
+  ctx.font = `bold ${Math.min(28, W * 0.035)}px 'Segoe UI',sans-serif`;
+  ctx.fillText((lab.temperature > 0 ? '+' : '') + lab.temperature.toFixed(0) + '\u00b0C', cx - boxW / 2 - 30, boxY + 52);
+
+  // Vs
+  ctx.fillStyle = '#546E7A';
+  ctx.font = `bold ${Math.min(18, W * 0.025)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('vs', cx, boxY + boxH / 2);
+
+  // Target temp box
+  roundRect(cx + 30, boxY, boxW, boxH, 8);
+  ctx.fillStyle = '#1a2530';
+  ctx.fill();
+  ctx.strokeStyle = '#66BB6A';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#90A4AE';
+  ctx.font = `${Math.min(11, W * 0.015)}px 'Segoe UI',sans-serif`;
+  ctx.fillText('Target', cx + boxW / 2 + 30, boxY + 18);
+  ctx.fillStyle = '#66BB6A';
+  ctx.font = `bold ${Math.min(28, W * 0.035)}px 'Segoe UI',sans-serif`;
+  ctx.fillText((lab.targetTemp > 0 ? '+' : '') + lab.targetTemp + '\u00b0C', cx + boxW / 2 + 30, boxY + 52);
+
+  // Difference
+  ctx.fillStyle = res.inZone ? '#66BB6A' : '#EF5350';
+  ctx.font = `${Math.min(13, W * 0.018)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(`Difference: ${res.diff.toFixed(1)}\u00b0C ${res.inZone ? '(within target!)' : '(outside target zone)'}`, cx, boxY + boxH + 20);
+
+  // Mass conservation highlight
+  const massY = H * 0.46;
+  roundRect(cx - 160, massY - 14, 320, 34, 6);
+  ctx.fillStyle = 'rgba(102,187,106,0.15)';
+  ctx.fill();
+  ctx.strokeStyle = '#66BB6A';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  ctx.fillStyle = '#66BB6A';
+  ctx.font = `bold ${Math.min(15, W * 0.02)}px 'Segoe UI',sans-serif`;
+  ctx.fillText(`Mass Conserved: ${lab.totalMassIn}g IN = ${lab.totalMassIn}g OUT`, cx, massY + 5);
+  if (lab.gasReleased > 0) {
+    ctx.fillStyle = '#78909C';
+    ctx.font = `${Math.min(11, W * 0.015)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(`(Including ${lab.gasReleased}g of gas released)`, cx, massY + 22);
+  }
+
+  // Score breakdown
+  const scoreY = H * 0.55;
+  const scoreX = cx - 90;
+  ctx.textAlign = 'left';
+  ctx.font = `${Math.min(13, W * 0.018)}px 'Segoe UI',sans-serif`;
+
+  ctx.fillStyle = '#B0BEC5';
+  ctx.fillText(`Temperature Accuracy:`, scoreX, scoreY);
+  ctx.fillStyle = '#fff';
+  ctx.fillText(`+${res.tempPts}`, scoreX + 195, scoreY);
+
+  ctx.fillStyle = '#B0BEC5';
+  ctx.fillText(`Efficiency Bonus:`, scoreX, scoreY + 20);
+  ctx.fillStyle = '#fff';
+  ctx.fillText(`+${res.effPts}`, scoreX + 195, scoreY + 20);
+
+  ctx.fillStyle = '#B0BEC5';
+  ctx.fillText(`New Discoveries:`, scoreX, scoreY + 40);
+  ctx.fillStyle = lab.newDiscoveries > 0 ? '#FFD700' : '#fff';
+  ctx.fillText(`+${res.discPts}`, scoreX + 195, scoreY + 40);
+
+  ctx.fillStyle = '#B0BEC5';
+  ctx.fillText(`Mass Conservation:`, scoreX, scoreY + 60);
+  ctx.fillStyle = '#66BB6A';
+  ctx.fillText(`+${res.massPts}`, scoreX + 195, scoreY + 60);
+
+  // Total
+  ctx.fillStyle = '#FFD700';
+  ctx.font = `bold ${Math.min(20, W * 0.028)}px 'Segoe UI',sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText(`Total Score: ${res.total}`, cx, scoreY + 90);
+
+  // Stars
+  const starY = H * 0.79;
+  ctx.font = `${Math.min(42, W * 0.05)}px 'Segoe UI',sans-serif`;
+  ctx.textBaseline = 'middle';
+  for (let s = 0; s < 3; s++) {
+    ctx.fillStyle = s < res.stars ? '#FFD700' : '#37474F';
+    ctx.fillText('\u2605', cx - 55 + s * 55, starY);
+  }
+  ctx.textBaseline = 'alphabetic';
+
+  // Reactions used
+  ctx.fillStyle = '#546E7A';
+  ctx.font = `${Math.min(11, W * 0.015)}px 'Segoe UI',sans-serif`;
+  const rxList = lab.reactionsTriggered.map(r => r.name).join('  |  ');
+  ctx.fillText('Reactions used: ' + (rxList || 'None'), cx, H * 0.87);
+
+  // Buttons
+  const btnW = Math.min(130, W * 0.14);
+  const btnY = H * 0.92;
+  resultsMenuBtn = drawBtn(cx - btnW * 1.7, btnY, btnW, 38, 'Menu', '#455A64', '#fff');
+  resultsRetryBtn = drawBtn(cx - btnW * 0.55, btnY, btnW, 38, 'Retry', '#F44336', '#fff');
+  if (res.inZone && currentLevel < LEVELS.length - 1) {
+    resultsNextBtn = drawBtn(cx + btnW * 0.6, btnY, btnW, 38, 'Next Lab', '#66BB6A', '#fff');
+  } else {
+    resultsNextBtn = { x: 0, y: 0, w: 0, h: 0 };
+  }
+
+  // Save progress (once)
+  if (!resultsSaved) {
+    resultsSaved = true;
+    if (res.inZone) {
+      if (!saveData.levelsCompleted.includes(currentLevel)) {
+        saveData.levelsCompleted.push(currentLevel);
+      }
+      saveData.stars[currentLevel] = Math.max(saveData.stars[currentLevel] || 0, res.stars);
+      saveData.bestScores[currentLevel] = Math.max(saveData.bestScores[currentLevel] || 0, res.total);
+      writeSave();
+      sfxSuccess();
+      // Sparkles!
+      if (lab) {
+        spawnSparkles(cx, starY, 40);
+      }
+    } else {
+      sfxFail();
+    }
+  }
+}
+
+// ═══════════════════════ INPUT HANDLING ═══════════════════════
+let mouseX = 0, mouseY = 0, mouseDown = false;
+
+function getPos(e) {
+  if (e.touches && e.touches.length > 0) return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  return { x: e.clientX, y: e.clientY };
+}
+
+function onDown(e) {
+  ensureAudio();
+  const p = getPos(e);
+  mouseX = p.x;
+  mouseY = p.y;
+  mouseDown = true;
+
+  if (fade.active) return;
+
+  // === TITLE ===
+  if (state === ST.TITLE) {
+    if (inRect(mouseX, mouseY, titlePlayBtn)) {
+      sfxClick();
+      fadeToState(ST.LEVELSEL);
+      return;
+    }
+    if (inRect(mouseX, mouseY, titleHowBtn)) {
+      sfxClick();
+      fadeToState(ST.HOWTO);
+      return;
+    }
+    return;
+  }
+
+  // === HOW TO ===
+  if (state === ST.HOWTO) {
+    if (inRect(mouseX, mouseY, howtoBackBtn)) {
+      sfxClick();
+      fadeToState(ST.TITLE);
+    }
+    return;
+  }
+
+  // === LEVEL SELECT ===
+  if (state === ST.LEVELSEL) {
+    for (const btn of levelBtns) {
+      if (btn.unlocked && inRect(mouseX, mouseY, btn)) {
+        sfxClick();
+        currentLevel = btn.idx;
+        fadeToState(ST.LAB, () => {
+          initLab(currentLevel);
+          resultsSaved = false;
+        });
+        return;
+      }
+    }
+    if (inRect(mouseX, mouseY, lsBackBtn)) {
+      sfxClick();
+      fadeToState(ST.TITLE);
+    }
+    return;
+  }
+
+  // === LAB ===
+  if (state === ST.LAB && lab) {
+    // Journal overlay
+    if (lab.journalOpen) {
+      if (inRect(mouseX, mouseY, lab.journalCloseBtn)) {
+        sfxClick();
+        lab.journalOpen = false;
+      }
+      return;
+    }
+    // Hint dismiss
+    if (lab.hintShown) {
+      lab.hintShown = false;
+      return;
+    }
+    // Buttons
+    if (inRect(mouseX, mouseY, lab.backBtn)) {
+      sfxClick();
+      fadeToState(ST.LEVELSEL);
+      return;
+    }
+    if (inRect(mouseX, mouseY, lab.resetBtn)) {
+      sfxClick();
+      initLab(currentLevel);
+      resultsSaved = false;
+      return;
+    }
+    if (inRect(mouseX, mouseY, lab.checkBtn)) {
+      sfxClick();
+      resultsSaved = false;
+      fadeToState(ST.RESULTS);
+      return;
+    }
+    if (inRect(mouseX, mouseY, lab.journalBtn)) {
+      sfxClick();
+      lab.journalOpen = true;
+      return;
+    }
+    if (inRect(mouseX, mouseY, lab.hintBtn)) {
+      sfxClick();
+      lab.hintShown = !lab.hintShown;
+      return;
+    }
+    // Ingredient drag start
+    for (const slot of lab.ingredientSlots) {
+      if (!slot.used && slot.rect && inRect(mouseX, mouseY, slot.rect)) {
+        lab.dragging = slot;
+        lab.dragX = mouseX;
+        lab.dragY = mouseY;
+        return;
+      }
+    }
+    return;
+  }
+
+  // === RESULTS ===
+  if (state === ST.RESULTS) {
+    if (inRect(mouseX, mouseY, resultsMenuBtn)) {
+      sfxClick();
+      fadeToState(ST.LEVELSEL);
+      return;
+    }
+    if (inRect(mouseX, mouseY, resultsRetryBtn)) {
+      sfxClick();
+      fadeToState(ST.LAB, () => {
+        initLab(currentLevel);
+        resultsSaved = false;
+      });
+      return;
+    }
+    if (resultsNextBtn.w > 0 && inRect(mouseX, mouseY, resultsNextBtn)) {
+      sfxClick();
+      currentLevel++;
+      fadeToState(ST.LAB, () => {
+        initLab(currentLevel);
+        resultsSaved = false;
+      });
+      return;
+    }
+    return;
+  }
+}
+
+function onMove(e) {
+  const p = getPos(e);
+  mouseX = p.x;
+  mouseY = p.y;
+  if (state === ST.LAB && lab && lab.dragging) {
+    lab.dragX = mouseX;
+    lab.dragY = mouseY;
+  }
+}
+
+function onUp(e) {
+  mouseDown = false;
+  if (state === ST.LAB && lab && lab.dragging) {
+    const br = getBeakerRect();
+    // Generous drop zone
+    const dropZone = {
+      x: br.x - 15, y: br.y - 15,
+      w: br.w + 30, h: br.h + 30
+    };
+    if (inRect(mouseX, mouseY, dropZone)) {
+      sfxDrop();
+      const slot = lab.dragging;
+      slot.used = true;
+      lab.beakerContents.push({ id: slot.id, name: slot.name, mass: slot.mass, color: slot.color });
+      lab.totalMassIn += slot.mass;
+      lab.ingredientsUsed++;
+      lab.beakerLiquidColor = blendColors(lab.beakerLiquidColor, slot.color, 0.35);
+      // Splash particles
+      const bx = br.x + br.w / 2;
+      const by = br.y + br.h * 0.4;
+      for (let i = 0; i < 10; i++) {
+        spawnP(bx + (Math.random() - 0.5) * 35, by,
+          (Math.random() - 0.5) * 45, -Math.random() * 55 - 12,
+          'bubble', 0.4 + Math.random() * 0.3);
+      }
+      sfxSplash();
+      // Check reactions after short delay
+      setTimeout(() => checkReactions(), 350);
+    }
+    lab.dragging = null;
+  }
+}
+
+canvas.addEventListener('mousedown', onDown);
+canvas.addEventListener('mousemove', onMove);
+canvas.addEventListener('mouseup', onUp);
+canvas.addEventListener('touchstart', (e) => { e.preventDefault(); onDown(e); }, { passive: false });
+canvas.addEventListener('touchmove', (e) => { e.preventDefault(); onMove(e); }, { passive: false });
+canvas.addEventListener('touchend', (e) => { e.preventDefault(); onUp(e); }, { passive: false });
+
+// ═══════════════════════ UPDATE ═══════════════════════
+function update(dt) {
+  globalTime += dt;
+  updateFade(dt);
+
+  if (state === ST.TITLE) {
+    updateTitle(dt);
+  }
+
+  if (state === ST.LAB && lab) {
+    // Smooth mercury animation
+    lab.mercurySmooth = lerp(lab.mercurySmooth, lab.temperature, dt * 3.5);
+
+    // Update particles
+    updateParticles(dt);
+
+    // Decay timers
+    if (lab.beakerGlow > 0) lab.beakerGlow -= dt * 0.8;
+    if (lab.massFlash > 0) lab.massFlash -= dt;
+    if (lab.foamTimer > 0) {
+      lab.foamTimer -= dt;
+      if (lab.foamTimer <= 0) lab.foamLevel = 0;
+      else lab.foamLevel *= 0.998;
+    }
+
+    // Reaction display timer
+    if (lab.reactionDisplayTimer > 0) {
+      lab.reactionDisplayTimer -= dt;
+      if (lab.reactionDisplayTimer <= 0) {
+        lab.reactionDisplay = null;
+        if (lab.reactionQueue.length > 0) {
+          setTimeout(() => triggerNextReaction(), 250);
+        } else {
+          lab.showingReaction = false;
+        }
+      }
+    }
+
+    // Ambient bubbles
+    if (lab.beakerContents.length > 0 && Math.random() < 0.025) {
+      const br = getBeakerRect();
+      spawnP(
+        br.x + br.w / 2 + (Math.random() - 0.5) * 45,
+        br.y + br.h * 0.55,
+        (Math.random() - 0.5) * 5,
+        -Math.random() * 18 - 6,
+        'bubble', 0.7 + Math.random() * 0.4
+      );
+    }
+  }
+
+  // Results sparkles
+  if (state === ST.RESULTS && lab) {
+    updateParticles(dt);
+    lab.sparkleTimer += dt;
+    if (lab.sparkleTimer > 0.5 && calcScore().inZone) {
+      lab.sparkleTimer = 0;
+      spawnSparkles(W / 2, H * 0.79, 5);
+    }
+  }
+}
+
+// ═══════════════════════ RENDER ═══════════════════════
+function render() {
+  ctx.clearRect(0, 0, W, H);
+
+  if (state === ST.TITLE) drawTitle();
+  else if (state === ST.HOWTO) drawHowTo();
+  else if (state === ST.LEVELSEL) drawLevelSelect();
+  else if (state === ST.LAB) drawLab();
+  else if (state === ST.RESULTS) {
+    drawResults();
+    if (lab) drawParticles();
+  }
+
+  // Fade overlay
+  if (fade.active && fade.alpha > 0) {
+    ctx.globalAlpha = fade.alpha;
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, W, H);
+    ctx.globalAlpha = 1;
+  }
+}
+
+// ═══════════════════════ GAME LOOP ═══════════════════════
+function gameLoop(ts) {
+  const dt = Math.min(0.05, (ts - lastTime) / 1000);
+  lastTime = ts;
+  update(dt);
+  render();
+  requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame((ts) => {
+  lastTime = ts;
+  gameLoop(ts);
+});
+
+})();
+</script>
+</body>
+</html>

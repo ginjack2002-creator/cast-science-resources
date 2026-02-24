@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>COASTER - Roller Coaster Physics</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#1a252b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#fff;user-select:none;-webkit-user-select:none;touch-action:none}
+canvas{display:block;position:fixed;top:0;left:0;width:100%;height:100%}
+#orient{display:none;position:fixed;inset:0;background:#263238;z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:20px;font-size:1.3em;color:#81D4FA}
+#orient svg{width:80px;height:80px;animation:rot 2s infinite ease-in-out}
+@keyframes rot{0%,100%{transform:rotate(0deg)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}canvas{display:none}}
+</style>
+</head>
+<body>
+<canvas id="gc"></canvas>
+<div id="orient">
+<svg viewBox="0 0 24 24" fill="none" stroke="#81D4FA" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01" stroke-width="3"/></svg>
+<div>Please rotate to landscape</div>
+</div>
+<script>
+'use strict';
+(function(){
+/* ====================================================================
+   COASTER - Roller Coaster Builder & Physics Simulator
+   NGSS MS-PS3-1 (Energy Transformation), MS-PS3-2 (Energy Conservation)
+
+   Students build roller coasters and watch energy convert between
+   Potential Energy (PE = mgh) and Kinetic Energy (KE = 0.5mv^2).
+   Total mechanical energy is conserved (minus small friction losses).
+   ==================================================================== */
+
+const C = document.getElementById('gc');
+const ctx = C.getContext('2d');
+let W = 0, H = 0, DPR = 1;
+
+/* ==============================
+   PHYSICS CONSTANTS
+   ============================== */
+const GRAV = 9.81;
+const MASS = 50;
+const FRIC_ROLL = 0.004;
+const FRIC_BRAKE = 0.15;
+const PX_PER_M = 45;
+const MIN_LOOP_V = 3.2;
+const SIM_SPEED_MULT = 50;
+
+/* ==============================
+   CANVAS RESIZE + DPR
+   ============================== */
+function resize() {
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth; H = window.innerHeight;
+  C.width = W * DPR; C.height = H * DPR;
+  C.style.width = W + 'px'; C.style.height = H + 'px';
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+}
+window.addEventListener('resize', resize);
+resize();
+
+/* ==============================
+   WEB AUDIO ENGINE
+   ============================== */
+let actx = null, mGain = null;
+
+function initAudio() {
+  if (actx) return;
+  try {
+    actx = new (window.AudioContext || window.webkitAudioContext)();
+    mGain = actx.createGain();
+    mGain.gain.value = 0.22;
+    mGain.connect(actx.destination);
+  } catch(e) {}
+}
+
+function tone(freq, dur, type, vol) {
+  if (!actx) return;
+  const o = actx.createOscillator();
+  const g = actx.createGain();
+  o.type = type || 'sine';
+  o.frequency.value = freq;
+  const v = (vol || 0.15) * 0.3;
+  g.gain.setValueAtTime(v, actx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.0001, actx.currentTime + dur);
+  o.connect(g); g.connect(mGain);
+  o.start(); o.stop(actx.currentTime + dur + 0.01);
+}
+
+function sfxClick() { tone(900, 0.04, 'square', 0.2); }
+function sfxPlace() { tone(660, 0.06, 'triangle', 0.25); tone(880, 0.04, 'triangle', 0.18); }
+function sfxSwoosh() { tone(300, 0.4, 'sine', 0.12); setTimeout(() => tone(520, 0.3, 'sine', 0.1), 60); }
+function sfxCheer() {
+  [523, 659, 784, 1047, 1319].forEach((f, i) => setTimeout(() => tone(f, 0.3, 'sine', 0.18), i * 80));
+}
+function sfxFail() {
+  [311, 293, 277, 233].forEach((f, i) => setTimeout(() => tone(f, 0.5, 'sawtooth', 0.1), i * 320));
+}
+
+/* Continuous cart rumble + wind layer */
+let rumbleSrc = null, rumbleG = null, windG = null;
+
+function startRumble() {
+  if (!actx || rumbleSrc) return;
+  const len = actx.sampleRate * 2;
+  // Rumble buffer
+  const rb = actx.createBuffer(1, len, actx.sampleRate);
+  const rd = rb.getChannelData(0);
+  for (let i = 0; i < len; i++) rd[i] = Math.random() * 2 - 1;
+  rumbleSrc = actx.createBufferSource();
+  rumbleSrc.buffer = rb; rumbleSrc.loop = true;
+  rumbleG = actx.createGain(); rumbleG.gain.value = 0;
+  const lp = actx.createBiquadFilter();
+  lp.type = 'lowpass'; lp.frequency.value = 100;
+  rumbleSrc.connect(lp); lp.connect(rumbleG); rumbleG.connect(mGain);
+  // Wind buffer
+  const wb = actx.createBuffer(1, len, actx.sampleRate);
+  const wd = wb.getChannelData(0);
+  for (let i = 0; i < len; i++) wd[i] = Math.random() * 2 - 1;
+  const ws = actx.createBufferSource();
+  ws.buffer = wb; ws.loop = true;
+  windG = actx.createGain(); windG.gain.value = 0;
+  const hp = actx.createBiquadFilter();
+  hp.type = 'highpass'; hp.frequency.value = 900;
+  ws.connect(hp); hp.connect(windG); windG.connect(mGain);
+  rumbleSrc.start(); ws.start();
+  rumbleSrc._ws = ws;
+}
+
+function updateRumbleAudio(spd) {
+  const s = Math.abs(spd);
+  if (rumbleG) rumbleG.gain.value = Math.min(s / 22, 1) * 0.1;
+  if (windG) windG.gain.value = Math.min(Math.max(s - 4, 0) / 18, 1) * 0.07;
+}
+
+function stopRumble() {
+  try { if (rumbleSrc) { rumbleSrc.stop(); if (rumbleSrc._ws) rumbleSrc._ws.stop(); } } catch(e) {}
+  rumbleSrc = null; rumbleG = null; windG = null;
+}
+
+/* ==============================
+   PARTICLE SYSTEM (max 400)
+   ============================== */
+const parts = [];
+const MAX_PARTS = 400;
+
+function spawnP(x, y, vx, vy, life, col, sz, shape) {
+  if (parts.length >= MAX_PARTS) return;
+  parts.push({ x, y, vx, vy, life, ml: life, col, sz: sz || 2, rot: Math.random() * 6.28, shape: shape || 0 });
+}
+
+function updateParts(dt) {
+  for (let i = parts.length - 1; i >= 0; i--) {
+    const p = parts[i];
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.vy += 160 * dt;
+    p.rot += dt * 4;
+    p.life -= dt;
+    if (p.life <= 0) parts.splice(i, 1);
+  }
+}
+
+function drawParts() {
+  for (const p of parts) {
+    const a = Math.max(0, p.life / p.ml);
+    ctx.globalAlpha = a;
+    ctx.fillStyle = p.col;
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.rot);
+    if (p.shape === 1) {
+      // Circle
+      ctx.beginPath();
+      ctx.arc(0, 0, p.sz / 2, 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      // Square
+      ctx.fillRect(-p.sz / 2, -p.sz / 2, p.sz, p.sz);
+    }
+    ctx.restore();
+  }
+  ctx.globalAlpha = 1;
+}
+
+function emitConfetti(cx, cy, n) {
+  const cols = ['#FDD835', '#66BB6A', '#42A5F5', '#EF5350', '#AB47BC', '#FF7043', '#26C6DA', '#FFAB40'];
+  for (let i = 0; i < n; i++) {
+    const ang = Math.random() * Math.PI * 2;
+    const sp = 130 + Math.random() * 300;
+    spawnP(cx, cy, Math.cos(ang) * sp, Math.sin(ang) * sp - 180, 2.0 + Math.random(), cols[i % cols.length], 3 + Math.random() * 5, Math.random() > 0.5 ? 1 : 0);
+  }
+}
+
+function emitSpeedLines(x, y, spd, ang) {
+  if (Math.random() > 0.35) return;
+  const s = spd * 0.5;
+  spawnP(x + (Math.random() - 0.5) * 12, y + (Math.random() - 0.5) * 12,
+    -Math.cos(ang) * s + (Math.random() - 0.5) * 25,
+    -Math.sin(ang) * s + (Math.random() - 0.5) * 25,
+    0.2, 'rgba(255,255,220,0.6)', 1.5 + Math.random(), 0);
+}
+
+function emitSparks(x, y, n) {
+  for (let i = 0; i < (n || 3); i++) {
+    spawnP(x, y, Math.random() * 90 - 45, -Math.random() * 130 - 20, 0.3 + Math.random() * 0.15, '#FFB74D', 2, 1);
+  }
+}
+
+function emitWheelSpark(x, y) {
+  if (Math.random() > 0.65) return;
+  spawnP(x + (Math.random() - 0.5) * 8, y + 5, (Math.random() - 0.5) * 15, Math.random() * 8, 0.12, '#FFE082', 1.5, 1);
+}
+
+function emitSmoke(x, y) {
+  if (Math.random() > 0.5) return;
+  spawnP(x, y - 5, (Math.random() - 0.5) * 8, -Math.random() * 15 - 5, 0.6, 'rgba(180,180,180,0.3)', 4 + Math.random() * 3, 1);
+}
+
+/* ==============================
+   GAME STATE MACHINE
+   ============================== */
+const ST = { TITLE: 0, HOWTO: 1, LEVELS: 2, BUILD: 3, SIM: 4, DONE: 5, FAIL: 6 };
+let state = ST.TITLE;
+let curLvl = 0;
+let best = [0, 0, 0, 0, 0];
+let open = [true, false, false, false, false];
+
+function loadGame() {
+  try {
+    const d = JSON.parse(localStorage.getItem('coaster_v3'));
+    if (d) { best = d.b || best; open = d.o || open; }
+  } catch(e) {}
+}
+function saveGame() {
+  try { localStorage.setItem('coaster_v3', JSON.stringify({ b: best, o: open })); } catch(e) {}
+}
+loadGame();
+
+/* ==============================
+   LEVEL DEFINITIONS
+   ============================== */
+const LVLS = [
+  { name: 'First Hill', desc: 'Get the cart from start to finish.\nHeight = Energy!',
+    loops: 0, maxP: 10, gY: 0.78, sX: 0.06, eX: 0.92,
+    bz: 600, sv: 1400, gd: 2200,
+    hint: 'The starting hill sets your energy budget.\nNo later hill can be taller than the first!' },
+  { name: 'The Loop', desc: 'Build a track with at least 1 loop.\nLoops need speed!',
+    loops: 1, maxP: 15, gY: 0.78, sX: 0.06, eX: 0.92,
+    bz: 900, sv: 2000, gd: 3200,
+    hint: 'Build a valley BEFORE the loop to gain speed.\nThe loop top needs enough KE to survive!' },
+  { name: 'Double Drop', desc: 'Two big drops with a tight energy budget.',
+    loops: 0, maxP: 13, gY: 0.78, sX: 0.06, eX: 0.92,
+    bz: 1100, sv: 2400, gd: 3800,
+    hint: 'Drops convert PE to KE. Climbs convert KE to PE.\nFriction slowly reduces total energy.' },
+  { name: 'Triple Loop', desc: 'Three loops! Each needs enough energy.',
+    loops: 3, maxP: 24, gY: 0.78, sX: 0.06, eX: 0.92,
+    bz: 1800, sv: 3500, gd: 5500,
+    hint: 'Each loop must be progressively lower.\nFriction drains energy -- plan carefully!' },
+  { name: 'Freestyle', desc: 'Sandbox mode! Build anything.\nBonus objectives for extra points!',
+    loops: 0, maxP: 30, gY: 0.78, sX: 0.06, eX: 0.92,
+    bz: 1200, sv: 3200, gd: 6000,
+    hint: 'Go wild! Points for loops, speed,\nheight changes, and efficiency.' }
+];
+
+/* ==============================
+   TRACK SYSTEM
+   ============================== */
+let cpts = [];         // Control points (normalized 0-1 coords)
+let crv = [];          // Interpolated track curve (screen coords)
+let tool = 'hill';     // Active placement tool
+let ghost = null;      // Mouse preview position
+let dragIdx = -1;      // Dragging control point index
+let startH = 0.42;     // Starting hill height ratio
+
+const TOOLS = ['hill', 'loop', 'drop', 'valley', 'flat', 'brake'];
+const TCOL = { hill: '#42A5F5', loop: '#AB47BC', drop: '#EF5350', valley: '#66BB6A', flat: '#78909C', brake: '#FF7043' };
+const TNAME = { hill: 'Hill', loop: 'Loop', drop: 'Drop', valley: 'Valley', flat: 'Flat', brake: 'Brake' };
+const TICON = { hill: '\u2227', loop: 'O', drop: '\u2228', valley: 'U', flat: '\u2500', brake: '||' };
+
+/* Catmull-Rom spline: smooth curve through control points */
+function catmull(p0, p1, p2, p3, t) {
+  const t2 = t * t, t3 = t2 * t;
+  return {
+    x: 0.5 * (2*p1.x + (-p0.x+p2.x)*t + (2*p0.x-5*p1.x+4*p2.x-p3.x)*t2 + (-p0.x+3*p1.x-3*p2.x+p3.x)*t3),
+    y: 0.5 * (2*p1.y + (-p0.y+p2.y)*t + (2*p0.y-5*p1.y+4*p2.y-p3.y)*t2 + (-p0.y+3*p1.y-3*p2.y+p3.y)*t3)
+  };
+}
+
+function buildCurve() {
+  crv = [];
+  if (cpts.length < 2) return;
+  const pts = cpts.map(p => ({ x: p.x * W, y: p.y * H, tp: p.type }));
+  const SEGS = 48;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[Math.max(0, i - 1)];
+    const p1 = pts[i];
+    const p2 = pts[i + 1];
+    const p3 = pts[Math.min(pts.length - 1, i + 2)];
+    for (let s = 0; s <= SEGS; s++) {
+      const t = s / SEGS;
+      const pt = catmull(p0, p1, p2, p3, t);
+      const brk = (p1.tp === 'brake' || p2.tp === 'brake');
+      const lp = (p1.tp === 'loop' || p2.tp === 'loop');
+      // Only add if minimum distance from previous point
+      if (crv.length === 0 || Math.hypot(pt.x - crv[crv.length - 1].x, pt.y - crv[crv.length - 1].y) > 0.8) {
+        crv.push({ x: pt.x, y: pt.y, brk, lp });
+      }
+    }
+  }
+  // Compute arc-length distances and angles
+  if (crv.length > 0) {
+    crv[0].d = 0;
+    for (let i = 1; i < crv.length; i++) {
+      crv[i].d = crv[i - 1].d + Math.hypot(crv[i].x - crv[i - 1].x, crv[i].y - crv[i - 1].y);
+    }
+    for (let i = 0; i < crv.length; i++) {
+      const nxt = crv[Math.min(i + 1, crv.length - 1)];
+      const prv = crv[Math.max(0, i - 1)];
+      crv[i].a = Math.atan2(nxt.y - prv.y, nxt.x - prv.x);
+    }
+    // Compute curvature at each point (for centripetal force / loop detection)
+    for (let i = 1; i < crv.length - 1; i++) {
+      const prev = crv[i - 1], cur = crv[i], next = crv[i + 1];
+      const dax = next.x - 2 * cur.x + prev.x;
+      const day = next.y - 2 * cur.y + prev.y;
+      const ds = Math.max(1, (cur.d - prev.d));
+      crv[i].curv = Math.sqrt(dax * dax + day * day) / (ds * ds);
+    }
+    if (crv.length > 0) crv[0].curv = 0;
+    if (crv.length > 1) crv[crv.length - 1].curv = crv[crv.length - 2].curv || 0;
+  }
+}
+
+function trkLen() { return crv.length > 0 ? crv[crv.length - 1].d : 0; }
+
+function sample(dist) {
+  if (crv.length === 0) return { x: 0, y: 0, a: 0, brk: false, lp: false, curv: 0 };
+  if (dist <= 0) return { x: crv[0].x, y: crv[0].y, a: crv[0].a || 0, brk: crv[0].brk, lp: crv[0].lp, curv: 0 };
+  const tot = trkLen();
+  if (dist >= tot) { const L = crv[crv.length - 1]; return { x: L.x, y: L.y, a: L.a || 0, brk: L.brk, lp: L.lp, curv: L.curv || 0 }; }
+  // Binary search
+  let lo = 0, hi = crv.length - 1;
+  while (lo < hi - 1) { const mid = (lo + hi) >> 1; if (crv[mid].d < dist) lo = mid; else hi = mid; }
+  const A = crv[lo], B = crv[hi];
+  const seg = B.d - A.d;
+  const t = seg > 0.001 ? (dist - A.d) / seg : 0;
+  return {
+    x: A.x + (B.x - A.x) * t,
+    y: A.y + (B.y - A.y) * t,
+    a: A.a + (B.a - A.a) * t,
+    brk: B.brk, lp: B.lp,
+    curv: (A.curv || 0) + ((B.curv || 0) - (A.curv || 0)) * t
+  };
+}
+
+/* ── Track piece placement ── */
+function addPiece(wx, wy) {
+  const lv = LVLS[curLvl];
+  if (cpts.length - 2 >= lv.maxP) return false;
+  const gY = lv.gY;
+  const last = cpts[cpts.length - 1];
+  const dx = wx - last.x;
+  if (dx < 0.03) return false;
+  wy = Math.max(0.06, Math.min(gY - 0.01, wy));
+
+  switch (tool) {
+    case 'hill': {
+      const pk = Math.max(0.06, Math.min(wy, gY - 0.04));
+      cpts.push({ x: last.x + dx * 0.5, y: pk, type: 'hill' });
+      cpts.push({ x: last.x + dx, y: gY - 0.02, type: 'hill' });
+      break;
+    }
+    case 'loop': {
+      const r = Math.min(dx * 0.33, 0.09);
+      const cx = last.x + dx * 0.5;
+      const baseY = last.y;
+      const steps = 8;
+      for (let i = 1; i <= steps; i++) {
+        const ang = (Math.PI * 2 * i / steps) - Math.PI / 2;
+        const asp = (W / H) * 0.65;
+        const lx = cx + Math.cos(ang) * r * asp;
+        const ly = baseY - r + Math.sin(ang) * r;
+        cpts.push({ x: Math.max(last.x + 0.005, Math.min(0.97, lx)), y: Math.max(0.05, Math.min(gY, ly)), type: 'loop' });
+      }
+      break;
+    }
+    case 'drop': {
+      cpts.push({ x: last.x + dx * 0.08, y: last.y, type: 'drop' });
+      cpts.push({ x: last.x + dx, y: gY - 0.02, type: 'drop' });
+      break;
+    }
+    case 'valley': {
+      cpts.push({ x: last.x + dx * 0.5, y: gY - 0.02, type: 'valley' });
+      cpts.push({ x: last.x + dx, y: last.y, type: 'valley' });
+      break;
+    }
+    case 'flat': {
+      cpts.push({ x: last.x + dx, y: last.y, type: 'flat' });
+      break;
+    }
+    case 'brake': {
+      cpts.push({ x: last.x + dx * 0.25, y: last.y, type: 'brake' });
+      cpts.push({ x: last.x + dx * 0.75, y: last.y, type: 'brake' });
+      cpts.push({ x: last.x + dx, y: last.y, type: 'flat' });
+      break;
+    }
+  }
+  sfxPlace();
+  buildCurve();
+  return true;
+}
+
+function undoPiece() {
+  if (cpts.length <= 2) return;
+  const last = cpts[cpts.length - 1];
+  if (last.type === 'loop' || (cpts.length >= 3 && cpts[cpts.length - 2].type === 'loop')) {
+    let c = 0;
+    for (let i = cpts.length - 1; i >= 2; i--) {
+      if (cpts[i].type === 'loop') c++; else break;
+    }
+    cpts.splice(cpts.length - c, c);
+  } else if (last.type === 'flat' && cpts.length >= 4 && cpts[cpts.length - 2].type === 'brake') {
+    cpts.splice(cpts.length - 3, 3);
+  } else {
+    let c = 1;
+    if (cpts.length >= 3) {
+      const prev = cpts[cpts.length - 2];
+      if (!prev.isStart && !prev.fixed && prev.type === last.type) c = 2;
+    }
+    cpts.splice(cpts.length - c, c);
+  }
+  buildCurve();
+  sfxClick();
+}
+
+function initLvl(idx) {
+  curLvl = idx;
+  const lv = LVLS[idx];
+  cpts = [];
+  crv = [];
+  tool = 'hill';
+  ghost = null;
+  dragIdx = -1;
+  parts.length = 0;
+  resetSim();
+  const gY = lv.gY;
+  cpts.push({ x: lv.sX, y: gY - startH, type: 'hill', fixed: true, isStart: true });
+  cpts.push({ x: lv.sX + 0.05, y: gY - 0.02, type: 'hill' });
+  buildCurve();
+  state = ST.BUILD;
+}
+
+/* ==============================
+   PHYSICS SIMULATION ENGINE
+
+   Core principle: ENERGY CONSERVATION
+   PE + KE = Total Energy (constant, minus friction)
+
+   At any height h, the speed v is derived from:
+   0.5*m*v^2 = E_total - m*g*h
+   v = sqrt(2*(E_total - m*g*h)/m)
+
+   Friction slowly drains total energy over distance.
+   ============================== */
+let sDist = 0, sSpd = 0, sRun = false, sFail = false, sDone = false;
+let sScore = 0, sTime = 0, sLoops = 0, sMaxSpd = 0, sMaxH = 0;
+let sFailMsg = '';
+let sE0 = 0;        // Initial total mechanical energy
+let sETot = 0;      // Current total (decreasing due to friction)
+let sPE = 0, sKE = 0;
+let loopBuf = new Set();
+let prevInLoop = false;
+let airtimeAccum = 0;
+let checkpoints = [];  // distances where speed bonuses are tracked
+
+function resetSim() {
+  sDist = 0; sSpd = 0; sRun = false; sFail = false; sDone = false;
+  sScore = 0; sTime = 0; sLoops = 0; sMaxSpd = 0; sMaxH = 0;
+  sFailMsg = ''; sE0 = 0; sETot = 0; sPE = 0; sKE = 0;
+  loopBuf.clear(); prevInLoop = false; airtimeAccum = 0;
+  checkpoints = [];
+}
+
+function hAtPt(pt) {
+  const gpx = LVLS[curLvl].gY * H;
+  return Math.max(0, (gpx - pt.y)) / PX_PER_M;
+}
+
+function startSim() {
+  if (crv.length < 15) return;
+  initAudio();
+  resetSim();
+  const p0 = sample(0);
+  const h0 = hAtPt(p0);
+  sE0 = MASS * GRAV * h0;
+  sETot = sE0;
+  sSpd = 0.1;
+  sRun = true;
+  // Generate checkpoints at 25%, 50%, 75% of track
+  const total = trkLen();
+  checkpoints = [total * 0.25, total * 0.5, total * 0.75];
+  startRumble();
+  state = ST.SIM;
+}
+
+function simStep(dt) {
+  if (!sRun || sFail || sDone) return;
+  sTime += dt;
+
+  const total = trkLen();
+  if (total <= 0) { doFail('Track too short!'); return; }
+
+  const cur = sample(sDist);
+  const h = hAtPt(cur);
+  const slope = cur.a;
+
+  // Calculate PE at current height
+  sPE = MASS * GRAV * h;
+
+  // Friction: drain total energy proportional to distance traveled and speed
+  const fCoeff = cur.brk ? FRIC_BRAKE : FRIC_ROLL;
+  const dDist = Math.abs(sSpd) * dt * SIM_SPEED_MULT / PX_PER_M; // distance in meters this frame
+  const frictionLoss = fCoeff * MASS * GRAV * dDist;
+  sETot = Math.max(0, sETot - frictionLoss);
+
+  // KE = Total Energy - PE (energy conservation!)
+  sKE = Math.max(0, sETot - sPE);
+
+  // Speed derived FROM energy conservation (the key physics!)
+  // v = sqrt(2 * KE / m)
+  const energyV = Math.sqrt(2 * sKE / MASS);
+
+  // If PE > total energy, cart can't reach this height!
+  if (sPE > sETot + 5 && h > 0.3) {
+    // Cart can't climb this high - it should slow to 0 and fail
+    if (sSpd > 0 && slope < -0.05) {
+      // Going uphill and running out of energy
+      sSpd = Math.max(0, energyV * 0.5);
+      if (sSpd < 0.08 && sTime > 0.5) {
+        doFail('Cart stalled! Not enough energy to climb.\nThe hill is taller than the starting height allows.');
+        return;
+      }
+    }
+  }
+
+  // Determine direction: on downslopes cart should accelerate, on upslopes decelerate
+  // Use gravity component along slope for direction guidance
+  const gComp = GRAV * Math.sin(slope);
+
+  // Speed = energy-derived magnitude, direction from track progression
+  if (energyV > 0.01) {
+    // Smoothly blend: use energy speed for magnitude, track for direction
+    const targetSpd = energyV;
+    // Cart direction: positive = forward along track
+    // On downhill (slope > 0 in screen coords), go forward
+    // On uphill (slope < 0 in screen coords), continue forward but slower
+    if (sSpd >= 0) {
+      sSpd = targetSpd;
+    } else {
+      // Rollback scenario
+      sSpd = -targetSpd * 0.5;
+    }
+  } else {
+    sSpd *= 0.9;
+  }
+
+  // Minimum forward motion on steep downslopes
+  if (sSpd < 0.15 && slope > 0.15 && sETot > sPE) {
+    sSpd = Math.max(sSpd, 0.3);
+  }
+
+  // Loop survival: at the top of a loop, centripetal force must be maintained
+  if (cur.lp) {
+    const isTop = (slope > 2.3 || slope < -2.3);
+    if (isTop && sSpd < MIN_LOOP_V) {
+      doFail('Not enough speed for the loop!\nNeed more KE (kinetic energy) to survive.\nTry building a valley before the loop.');
+      return;
+    }
+    loopBuf.add(Math.floor(sDist / 20));
+    if (!prevInLoop) prevInLoop = true;
+  } else {
+    if (prevInLoop && loopBuf.size > 3) {
+      sLoops++;
+      sfxSwoosh();
+      sScore += 400;
+    }
+    loopBuf.clear();
+    prevInLoop = false;
+  }
+
+  // Rollback detection
+  if (sSpd < -1.5) {
+    doFail('Cart rolled backwards!\nThis hill needs more energy than available.\nRaise the starting hill or lower the obstacle.');
+    return;
+  }
+
+  // Advance position
+  sDist += sSpd * dt * SIM_SPEED_MULT;
+
+  // Track stats
+  sMaxSpd = Math.max(sMaxSpd, Math.abs(sSpd));
+  sMaxH = Math.max(sMaxH, h);
+
+  // Airtime tracking (barely clearing hills)
+  if (sKE < sETot * 0.15 && h > 1 && sSpd > 0.5) {
+    airtimeAccum += dt;
+  }
+
+  // Checkpoint speed bonuses
+  for (let i = checkpoints.length - 1; i >= 0; i--) {
+    if (sDist >= checkpoints[i]) {
+      sScore += Math.floor(sSpd * 20);
+      checkpoints.splice(i, 1);
+    }
+  }
+
+  // Audio
+  updateRumbleAudio(Math.abs(sSpd));
+
+  // Particles
+  if (Math.abs(sSpd) > 7) emitSpeedLines(cur.x, cur.y, Math.abs(sSpd), cur.a);
+  if (Math.abs(sSpd) > 2.5) emitWheelSpark(cur.x, cur.y);
+  if (cur.brk && Math.abs(sSpd) > 1) { emitSparks(cur.x, cur.y, 5); emitSmoke(cur.x, cur.y); }
+
+  // Completion!
+  if (sDist >= total - 2) {
+    sDone = true; sRun = false;
+    stopRumble();
+    calcScore();
+    sfxCheer();
+    const ep = sample(total);
+    emitConfetti(ep.x, ep.y, 120);
+    state = ST.DONE;
+    return;
+  }
+
+  if (sDist < -25) doFail('Cart left the track!');
+}
+
+function doFail(msg) {
+  sFail = true; sRun = false;
+  sFailMsg = msg;
+  stopRumble();
+  sfxFail();
+  state = ST.FAIL;
+}
+
+function calcScore() {
+  sScore += 1000;
+  sScore += Math.floor(sMaxSpd * 65);
+  sScore += sLoops * 500;
+  const lv = LVLS[curLvl];
+  const used = cpts.length - 2;
+  sScore += Math.max(0, lv.maxP - used) * 130;
+  if (sTime < 8) sScore += 700;
+  else if (sTime < 15) sScore += 400;
+  else if (sTime < 25) sScore += 150;
+  if (sMaxH > 5) sScore += 250;
+  if (sMaxH > 9) sScore += 350;
+  sScore += Math.floor(airtimeAccum * 200);
+  sScore += Math.floor(Math.max(0, sMaxSpd - 8) * 40);
+
+  if (sScore > best[curLvl]) best[curLvl] = sScore;
+  if (curLvl < 4 && !open[curLvl + 1]) open[curLvl + 1] = true;
+  saveGame();
+}
+
+function stars(sc, li) {
+  const lv = LVLS[li];
+  if (sc >= lv.gd) return 3;
+  if (sc >= lv.sv) return 2;
+  if (sc >= lv.bz) return 1;
+  return 0;
+}
+
+/* ==============================
+   INPUT HANDLING
+   ============================== */
+let mx = 0, my = 0, mdn = false;
+let btns = [];
+
+function addBtn(id, x, y, w, h, label, col, fn) {
+  btns.push({ id, x, y, w, h, label, col, fn });
+}
+
+function hitBtn(sx, sy) {
+  for (let i = btns.length - 1; i >= 0; i--) {
+    const b = btns[i];
+    if (sx >= b.x && sx <= b.x + b.w && sy >= b.y && sy <= b.y + b.h) return b;
+  }
+  return null;
+}
+
+function onDown(sx, sy) {
+  initAudio();
+  mdn = true; mx = sx; my = sy;
+  const b = hitBtn(sx, sy);
+  if (b) { sfxClick(); b.fn(); return; }
+
+  if (state === ST.BUILD) {
+    // Drag existing control points
+    for (let i = 0; i < cpts.length; i++) {
+      const p = cpts[i];
+      const dx2 = p.x * W - sx, dy2 = p.y * H - sy;
+      if (Math.sqrt(dx2 * dx2 + dy2 * dy2) < 20) {
+        dragIdx = i;
+        return;
+      }
+    }
+    // Place new piece
+    if (sy < H - 75 && sy > 52) {
+      addPiece(sx / W, sy / H);
+    }
+  }
+}
+
+function onMove(sx, sy) {
+  mx = sx; my = sy;
+  if (state === ST.BUILD) {
+    ghost = { x: sx / W, y: sy / H };
+    if (dragIdx >= 0 && mdn) {
+      const gY = LVLS[curLvl].gY;
+      if (cpts[dragIdx].isStart) {
+        // Only adjust height for start point
+        cpts[dragIdx].y = Math.max(0.06, Math.min(gY - 0.05, sy / H));
+      } else if (!cpts[dragIdx].fixed) {
+        cpts[dragIdx].x = Math.max(0.02, Math.min(0.98, sx / W));
+        cpts[dragIdx].y = Math.max(0.06, Math.min(gY, sy / H));
+      }
+      buildCurve();
+    }
+  }
+}
+
+function onUp() { mdn = false; dragIdx = -1; }
+
+C.addEventListener('pointerdown', e => { e.preventDefault(); onDown(e.clientX, e.clientY); });
+C.addEventListener('pointermove', e => { e.preventDefault(); onMove(e.clientX, e.clientY); });
+C.addEventListener('pointerup', e => { e.preventDefault(); onUp(); });
+C.addEventListener('pointercancel', e => { e.preventDefault(); onUp(); });
+
+document.addEventListener('keydown', e => {
+  if (state === ST.BUILD) {
+    if (e.key === 'z' || e.key === 'Z') undoPiece();
+    if (e.key === ' ') { e.preventDefault(); startSim(); }
+    const km = { '1': 'hill', '2': 'loop', '3': 'drop', '4': 'valley', '5': 'flat', '6': 'brake' };
+    if (km[e.key]) tool = km[e.key];
+  }
+  if (state === ST.SIM && e.key === 'Escape') {
+    sRun = false; stopRumble(); state = ST.BUILD; resetSim();
+  }
+});
+
+/* ==============================
+   DRAWING UTILITIES
+   ============================== */
+function rr(x, y, w, h, r, fill, strk) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y); ctx.arcTo(x + w, y, x + w, y + r, r);
+  ctx.lineTo(x + w, y + h - r); ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+  ctx.lineTo(x + r, y + h); ctx.arcTo(x, y + h, x, y + h - r, r);
+  ctx.lineTo(x, y + r); ctx.arcTo(x, y, x + r, y, r);
+  ctx.closePath();
+  if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+  if (strk) { ctx.strokeStyle = strk; ctx.lineWidth = 2; ctx.stroke(); }
+}
+
+function tx(text, x, y, sz, col, al, bold) {
+  ctx.fillStyle = col || '#fff';
+  ctx.font = (bold ? 'bold ' : '') + (sz || 14) + 'px "Segoe UI",system-ui,sans-serif';
+  ctx.textAlign = al || 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y);
+}
+
+function drawBV(b) {
+  const hov = mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h;
+  const bg = hov ? b.col : 'rgba(25,35,48,0.92)';
+  rr(b.x, b.y, b.w, b.h, 6, bg, b.col);
+  tx(b.label, b.x + b.w / 2, b.y + b.h / 2, 12, hov ? '#000' : '#fff', 'center', true);
+}
+
+function drawStar5(cx, cy, r, filled) {
+  ctx.beginPath();
+  for (let i = 0; i < 5; i++) {
+    const a1 = -Math.PI / 2 + i * Math.PI * 2 / 5;
+    const ox = cx + Math.cos(a1) * r;
+    const oy = cy + Math.sin(a1) * r;
+    if (i === 0) ctx.moveTo(ox, oy); else ctx.lineTo(ox, oy);
+    const a2 = a1 + Math.PI / 5;
+    ctx.lineTo(cx + Math.cos(a2) * r * 0.38, cy + Math.sin(a2) * r * 0.38);
+  }
+  ctx.closePath();
+  if (filled) { ctx.fillStyle = '#FDD835'; ctx.fill(); }
+  ctx.strokeStyle = filled ? '#F9A825' : '#546E7A';
+  ctx.lineWidth = 1.5; ctx.stroke();
+}
+
+/* ==============================
+   SCENE RENDERING
+   ============================== */
+function drawSky() {
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, '#4FC3F7');
+  g.addColorStop(0.32, '#B3E5FC');
+  g.addColorStop(0.48, '#E1F5FE');
+  g.addColorStop(0.54, '#455A64');
+  g.addColorStop(1, '#263238');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+  // Clouds
+  ctx.fillStyle = 'rgba(255,255,255,0.12)';
+  const t = Date.now() / 25000;
+  for (let i = 0; i < 6; i++) {
+    const cx = ((i * 0.21 + t) % 1.4 - 0.2) * W;
+    const cy = 22 + i * 22 + Math.sin(i * 2.1) * 8;
+    ctx.beginPath();
+    ctx.ellipse(cx, cy, 45 + i * 12, 12 + i * 3, 0, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function drawGrid() {
+  ctx.strokeStyle = 'rgba(69,90,100,0.18)';
+  ctx.lineWidth = 0.5;
+  const gs = 25;
+  for (let x = 0; x < W; x += gs) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+  for (let y = 0; y < H; y += gs) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+}
+
+function drawGnd() {
+  const gy = LVLS[curLvl].gY * H;
+  const g = ctx.createLinearGradient(0, gy, 0, H);
+  g.addColorStop(0, '#5D4037'); g.addColorStop(0.15, '#4E342E');
+  g.addColorStop(0.5, '#3E2723'); g.addColorStop(1, '#263238');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, gy, W, H - gy);
+  // Ground line with grass
+  ctx.strokeStyle = '#6D4C41'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(W, gy); ctx.stroke();
+  ctx.strokeStyle = '#558B2F'; ctx.lineWidth = 1.5;
+  for (let x = 8; x < W; x += 30 + Math.sin(x * 0.13) * 8) {
+    ctx.beginPath();
+    ctx.moveTo(x, gy); ctx.lineTo(x - 2, gy - 5);
+    ctx.moveTo(x, gy); ctx.lineTo(x + 3, gy - 6);
+    ctx.stroke();
+  }
+}
+
+/* ── Track Rendering ── */
+function drawTrack() {
+  if (crv.length < 2) return;
+  const gy = LVLS[curLvl].gY * H;
+
+  // Support pillars with cross-braces
+  ctx.lineWidth = 2.5;
+  for (let i = 0; i < crv.length; i += 14) {
+    const p = crv[i];
+    if (p.y < gy - 10) {
+      // Vertical pillar
+      ctx.strokeStyle = 'rgba(120,144,156,0.35)';
+      ctx.beginPath(); ctx.moveTo(p.x, p.y + 5); ctx.lineTo(p.x, gy); ctx.stroke();
+      // Cross-brace to next pillar
+      const ni = Math.min(i + 14, crv.length - 1);
+      if (crv[ni].y < gy - 20) {
+        ctx.strokeStyle = 'rgba(120,144,156,0.2)';
+        ctx.beginPath();
+        ctx.moveTo(p.x, (p.y + gy) / 2);
+        ctx.lineTo(crv[ni].x, (crv[ni].y + gy) / 2);
+        ctx.stroke();
+      }
+    }
+  }
+
+  // Track bed
+  ctx.lineWidth = 8; ctx.strokeStyle = '#546E7A';
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.beginPath();
+  ctx.moveTo(crv[0].x, crv[0].y);
+  for (let i = 1; i < crv.length; i++) ctx.lineTo(crv[i].x, crv[i].y);
+  ctx.stroke();
+
+  // Red rails (both sides)
+  for (const side of [-1, 1]) {
+    ctx.lineWidth = 2.5; ctx.strokeStyle = '#E53935';
+    ctx.beginPath();
+    for (let i = 0; i < crv.length; i++) {
+      const a = crv[i].a || 0;
+      const nx = -Math.sin(a) * 4 * side;
+      const ny = Math.cos(a) * 4 * side;
+      if (i === 0) ctx.moveTo(crv[i].x + nx, crv[i].y + ny);
+      else ctx.lineTo(crv[i].x + nx, crv[i].y + ny);
+    }
+    ctx.stroke();
+  }
+
+  // Cross ties
+  ctx.strokeStyle = '#90A4AE'; ctx.lineWidth = 2;
+  for (let i = 0; i < crv.length; i += 6) {
+    const p = crv[i];
+    const a = p.a || 0;
+    const nx = -Math.sin(a) * 6, ny = Math.cos(a) * 6;
+    ctx.beginPath(); ctx.moveTo(p.x - nx, p.y - ny); ctx.lineTo(p.x + nx, p.y + ny); ctx.stroke();
+  }
+
+  // Brake zone stripes
+  ctx.fillStyle = 'rgba(255,152,0,0.3)';
+  for (let i = 0; i < crv.length; i++) {
+    if (crv[i].brk) ctx.fillRect(crv[i].x - 4, crv[i].y - 10, 8, 20);
+  }
+}
+
+function drawCPts() {
+  for (let i = 0; i < cpts.length; i++) {
+    const p = cpts[i];
+    const sx = p.x * W, sy = p.y * H;
+    const r = p.isStart ? 12 : 7;
+    // Outer glow
+    ctx.beginPath(); ctx.arc(sx, sy, r + 5, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fill();
+    // Dot
+    ctx.beginPath(); ctx.arc(sx, sy, r, 0, Math.PI * 2);
+    ctx.fillStyle = p.isStart ? '#FDD835' : (TCOL[p.type] || '#B0BEC5');
+    ctx.fill();
+    ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
+    if (p.isStart) tx('S', sx, sy, 10, '#000', 'center', true);
+  }
+}
+
+function drawGhost() {
+  if (!ghost || state !== ST.BUILD || my > H - 75 || my < 52) return;
+  const last = cpts[cpts.length - 1];
+  if (!last) return;
+  ctx.setLineDash([5, 5]);
+  ctx.strokeStyle = 'rgba(255,255,255,0.22)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(last.x * W, last.y * H);
+  ctx.lineTo(ghost.x * W, ghost.y * H);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.beginPath(); ctx.arc(ghost.x * W, ghost.y * H, 5, 0, Math.PI * 2);
+  ctx.fillStyle = (TCOL[tool] || '#fff') + '55'; ctx.fill();
+  // Height label
+  const gy = LVLS[curLvl].gY * H;
+  const hm = Math.max(0, gy - ghost.y * H) / PX_PER_M;
+  if (hm > 0.3) tx(hm.toFixed(1) + 'm', ghost.x * W + 14, ghost.y * H - 12, 9, 'rgba(255,255,255,0.45)', 'left');
+}
+
+function drawFlags() {
+  if (!cpts.length) return;
+  const lv = LVLS[curLvl];
+  const gy = lv.gY * H;
+
+  // Start flag
+  const sp = cpts[0];
+  const sx = sp.x * W, sy = sp.y * H;
+  ctx.fillStyle = '#FDD835'; ctx.fillRect(sx - 1.5, sy - 38, 3, 38);
+  ctx.fillStyle = '#66BB6A';
+  ctx.beginPath();
+  ctx.moveTo(sx + 1.5, sy - 38); ctx.lineTo(sx + 25, sy - 30); ctx.lineTo(sx + 1.5, sy - 22);
+  ctx.closePath(); ctx.fill();
+  tx('START', sx + 13, sy - 44, 8, '#66BB6A', 'center', true);
+  // Height label on start
+  const hm = (gy - sy) / PX_PER_M;
+  tx(hm.toFixed(1) + 'm', sx + 30, sy - 32, 9, '#FDD835', 'left', true);
+
+  // Finish flag
+  const fx = lv.eX * W, fy = gy;
+  ctx.fillStyle = '#EF5350'; ctx.fillRect(fx - 1.5, fy - 48, 3, 48);
+  const cs = 6;
+  for (let r = 0; r < 3; r++) {
+    for (let c = 0; c < 4; c++) {
+      ctx.fillStyle = (r + c) % 2 === 0 ? '#fff' : '#212121';
+      ctx.fillRect(fx + 1.5 + c * cs, fy - 48 + r * cs, cs, cs);
+    }
+  }
+  tx('FINISH', fx + 13, fy - 54, 8, '#EF5350', 'center', true);
+}
+
+/* ── Cart Rendering ── */
+let whlRot = 0;
+
+function drawCart(x, y, angle, speed) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.rotate(angle);
+
+  // Cart shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.15)';
+  ctx.beginPath(); ctx.ellipse(0, 9, 22, 4, 0, 0, Math.PI * 2); ctx.fill();
+
+  // Cart body
+  rr(-22, -24, 44, 20, 5, '#FDD835', '#F9A825');
+  // Racing stripe
+  rr(-20, -18, 40, 5, 2, '#F57F17');
+  // Front bumper
+  ctx.fillStyle = '#E0E0E0';
+  ctx.fillRect(20, -22, 3, 16);
+
+  // Rider body
+  ctx.fillStyle = '#5D4037';
+  // Head
+  ctx.beginPath(); ctx.ellipse(0, -32, 5, 6.5, 0, 0, Math.PI * 2); ctx.fill();
+  // Neck + torso
+  ctx.fillRect(-3, -26, 6, 5);
+  // Arms reaction based on speed
+  ctx.strokeStyle = '#5D4037'; ctx.lineWidth = 2.5; ctx.lineCap = 'round';
+  if (Math.abs(speed) > 8) {
+    // Arms up! Excited!
+    ctx.beginPath(); ctx.moveTo(-4, -28); ctx.lineTo(-11, -40); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(4, -28); ctx.lineTo(11, -40); ctx.stroke();
+  } else if (Math.abs(speed) > 4) {
+    // Arms out
+    ctx.beginPath(); ctx.moveTo(-4, -26); ctx.lineTo(-12, -30); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(4, -26); ctx.lineTo(12, -30); ctx.stroke();
+  } else {
+    // Arms down / gripping
+    ctx.beginPath(); ctx.moveTo(-4, -24); ctx.lineTo(-8, -20); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(4, -24); ctx.lineTo(8, -20); ctx.stroke();
+  }
+
+  // Helmet
+  ctx.fillStyle = '#E53935';
+  ctx.beginPath(); ctx.arc(0, -34, 5.5, Math.PI, 0); ctx.fill();
+
+  // Wheels with spokes
+  whlRot += speed * 0.22;
+  for (const wx of [-14, 14]) {
+    // Tire
+    ctx.beginPath(); ctx.arc(wx, -1, 6, 0, Math.PI * 2);
+    ctx.fillStyle = '#37474F'; ctx.fill();
+    ctx.strokeStyle = '#607D8B'; ctx.lineWidth = 1.5; ctx.stroke();
+    // Spokes
+    ctx.strokeStyle = '#B0BEC5'; ctx.lineWidth = 0.8;
+    for (let s = 0; s < 4; s++) {
+      const sa = whlRot + s * Math.PI / 2;
+      ctx.beginPath(); ctx.moveTo(wx, -1); ctx.lineTo(wx + Math.cos(sa) * 4.5, -1 + Math.sin(sa) * 4.5); ctx.stroke();
+    }
+    // Hub cap
+    ctx.beginPath(); ctx.arc(wx, -1, 1.5, 0, Math.PI * 2);
+    ctx.fillStyle = '#CFD8DC'; ctx.fill();
+  }
+
+  // Speed wind effect on cart
+  if (Math.abs(speed) > 10) {
+    ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < 3; i++) {
+      const ly = -20 + i * 8;
+      const len = Math.min(Math.abs(speed) * 1.5, 30);
+      ctx.beginPath(); ctx.moveTo(-22, ly); ctx.lineTo(-22 - len, ly + (Math.random() - 0.5) * 4); ctx.stroke();
+    }
+  }
+
+  ctx.restore();
+}
+
+/* ── Energy Display (Central HUD during simulation) ── */
+function drawEnergyHUD() {
+  const cur = sample(sDist);
+  const h = hAtPt(cur);
+  const pe = MASS * GRAV * h;
+  const ke = Math.max(0, sETot - pe);
+  const totE = pe + ke;
+
+  const pw = Math.min(300, W * 0.38);
+  const bx = W / 2 - pw / 2, by = 6;
+
+  // Panel
+  rr(bx - 14, by - 3, pw + 28, 114, 8, 'rgba(15,22,32,0.9)', 'rgba(80,100,120,0.25)');
+
+  // Title
+  tx('ENERGY CONSERVED', W / 2, by + 10, 11, '#AB47BC', 'center', true);
+
+  // Main combined bar
+  const barY = by + 22, barH = 22;
+  const tot = Math.max(totE, 0.01);
+  const peR = Math.min(1, pe / tot);
+  const keR = Math.min(1, ke / tot);
+  const peW = pw * peR;
+  const keW = pw * keR;
+
+  rr(bx, barY, pw, barH, 5, '#1a2530');
+  if (peW > 1) { ctx.fillStyle = '#42A5F5'; ctx.fillRect(bx + 1, barY + 1, peW - 1, barH - 2); }
+  if (keW > 1) { ctx.fillStyle = '#EF5350'; ctx.fillRect(bx + peW, barY + 1, keW - 1, barH - 2); }
+  rr(bx, barY, pw, barH, 5, null, '#546E7A');
+  if (peW > 28) tx('PE', bx + peW / 2, barY + barH / 2, 10, '#fff', 'center', true);
+  if (keW > 28) tx('KE', bx + peW + keW / 2, barY + barH / 2, 10, '#fff', 'center', true);
+
+  // Separate bars row
+  const sbY = barY + barH + 5;
+  const sbH = 7;
+  const hw = pw / 2 - 3;
+  // PE mini bar
+  ctx.fillStyle = '#1a2530'; ctx.fillRect(bx, sbY, hw, sbH);
+  ctx.fillStyle = '#42A5F5'; ctx.fillRect(bx, sbY, hw * peR, sbH);
+  tx('PE = mgh', bx + hw / 2, sbY + sbH + 7, 8, '#90CAF9');
+  // KE mini bar
+  ctx.fillStyle = '#1a2530'; ctx.fillRect(bx + hw + 6, sbY, hw, sbH);
+  ctx.fillStyle = '#EF5350'; ctx.fillRect(bx + hw + 6, sbY, hw * keR, sbH);
+  tx('KE = \u00BDmv\u00B2', bx + hw + 6 + hw / 2, sbY + sbH + 7, 8, '#FFCDD2');
+
+  // Total energy bar (shows conservation / friction loss)
+  const tY = sbY + sbH + 16;
+  ctx.fillStyle = '#1a2530'; ctx.fillRect(bx, tY, pw, 5);
+  const tR = sE0 > 0 ? totE / sE0 : 1;
+  ctx.fillStyle = '#AB47BC'; ctx.fillRect(bx, tY, pw * Math.min(1, tR), 5);
+  tx('Total Energy (' + Math.floor(tR * 100) + '%)', bx + pw / 2, tY + 12, 8, '#CE93D8');
+
+  // Formula display
+  tx(Math.floor(pe) + 'J + ' + Math.floor(ke) + 'J = ' + Math.floor(totE) + 'J', W / 2, tY + 24, 9, 'rgba(255,255,255,0.5)');
+
+  // Speed gauge (top-right)
+  rr(W - 105, 8, 97, 44, 6, 'rgba(15,22,32,0.88)');
+  tx('SPEED', W - 56, 18, 8, '#FDD835');
+  tx(Math.abs(sSpd).toFixed(1), W - 63, 36, 18, '#FDD835', 'center', true);
+  tx('m/s', W - 30, 36, 9, 'rgba(255,255,255,0.5)', 'left');
+
+  // Height gauge (top-left)
+  rr(8, 8, 97, 44, 6, 'rgba(15,22,32,0.88)');
+  tx('HEIGHT', 56, 18, 8, '#81D4FA');
+  tx(h.toFixed(1), 50, 36, 18, '#81D4FA', 'center', true);
+  tx('m', 73, 36, 9, 'rgba(255,255,255,0.5)', 'left');
+}
+
+/* ==============================
+   BUILD MODE HUD
+   ============================== */
+function drawBuildHUD() {
+  const lv = LVLS[curLvl];
+  btns = [];
+
+  // Top bar
+  rr(10, 5, W - 20, 40, 6, 'rgba(15,22,32,0.9)');
+  tx('Level ' + (curLvl + 1) + ': ' + lv.name, W / 2, 25, 15, '#FDD835', 'center', true);
+  const used = Math.max(0, cpts.length - 2);
+  tx('Pieces: ' + used + '/' + lv.maxP, W - 130, 25, 11, used >= lv.maxP ? '#EF5350' : '#B0BEC5', 'right');
+
+  // Hints
+  if (lv.hint) {
+    const lines = lv.hint.split('\n');
+    lines.forEach((l, i) => tx(l, W / 2, 56 + i * 15, 10, 'rgba(255,255,255,0.4)'));
+  }
+
+  // Energy budget display
+  if (cpts.length > 0) {
+    const gy = lv.gY * H;
+    const sh = (gy - cpts[0].y * H) / PX_PER_M;
+    const se = MASS * GRAV * sh;
+    const bw = Math.min(160, W * 0.16);
+    rr(10, 50, bw + 10, 30, 4, 'rgba(15,22,32,0.75)');
+    tx('Energy Budget:', 16, 58, 8, '#AB47BC', 'left');
+    tx(Math.floor(se) + ' J', 16, 72, 10, '#CE93D8', 'left', true);
+    const maxE = MASS * GRAV * 14;
+    const ratio = Math.min(1, se / maxE);
+    ctx.fillStyle = '#AB47BC'; ctx.fillRect(85, 57, (bw - 70) * ratio, 5);
+    ctx.strokeStyle = '#546E7A'; ctx.lineWidth = 0.8; ctx.strokeRect(85, 57, bw - 70, 5);
+  }
+
+  // Height ruler (left edge)
+  const gy = lv.gY * H;
+  ctx.strokeStyle = 'rgba(255,255,255,0.12)'; ctx.lineWidth = 1;
+  for (let m = 0; m <= 14; m++) {
+    const yp = gy - m * PX_PER_M;
+    if (yp < 35) break;
+    ctx.beginPath(); ctx.moveTo(0, yp); ctx.lineTo(6, yp); ctx.stroke();
+    if (m % 2 === 0) tx(m + 'm', 18, yp, 7, 'rgba(255,255,255,0.18)', 'left');
+  }
+
+  // Bottom tool palette
+  const py = H - 65;
+  rr(0, py - 8, W, 73, 0, 'rgba(15,22,32,0.95)');
+
+  // Tool buttons
+  const tw = 70, tg = 6;
+  const tsx = W / 2 - (TOOLS.length * (tw + tg)) / 2;
+  TOOLS.forEach((t, i) => {
+    const bx = tsx + i * (tw + tg);
+    const sel = tool === t;
+    addBtn('t_' + t, bx, py, tw, 44, TICON[t] + ' ' + TNAME[t], sel ? TCOL[t] : '#455A64', () => { tool = t; });
+  });
+
+  // Undo
+  addBtn('undo', 14, py + 2, 52, 40, 'Undo', '#FF7043', undoPiece);
+  // Clear
+  addBtn('clr', 72, py + 2, 52, 40, 'Clear', '#78909C', () => initLvl(curLvl));
+  // PLAY
+  addBtn('play', W - 115, py - 3, 105, 50, 'PLAY  \u25B6', '#66BB6A', startSim);
+  // Back
+  addBtn('bk', W - 62, 10, 52, 30, 'Back', '#78909C', () => { state = ST.LEVELS; });
+
+  // Keyboard shortcuts hint
+  tx('Keys: 1-6 tools | Z undo | Space play', W / 2, H - 8, 8, 'rgba(255,255,255,0.25)');
+
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   SIM MODE HUD
+   ============================== */
+function drawSimHUD() {
+  if (crv.length === 0) return;
+
+  drawEnergyHUD();
+
+  // Score
+  rr(W - 110, 58, 102, 28, 5, 'rgba(15,22,32,0.85)');
+  tx('Score: ' + sScore, W - 59, 72, 11, '#FDD835', 'center', true);
+
+  // Time
+  rr(8, 58, 80, 24, 5, 'rgba(15,22,32,0.7)');
+  tx('Time: ' + sTime.toFixed(1) + 's', 48, 70, 9, '#B0BEC5');
+
+  // Loops
+  if (sLoops > 0 || LVLS[curLvl].loops > 0) {
+    rr(W - 110, 90, 102, 22, 5, 'rgba(15,22,32,0.7)');
+    tx('Loops: ' + sLoops, W - 59, 101, 9, '#AB47BC');
+  }
+
+  // Science annotations near cart
+  if (sTime > 0.3 && crv.length > 0) {
+    const cur = sample(sDist);
+    const h = hAtPt(cur);
+    const pe = MASS * GRAV * h;
+    const ke = Math.max(0, sETot - pe);
+    const totE = pe + ke;
+    const annotY = Math.max(cur.y - 55, 128);
+    ctx.globalAlpha = 0.55;
+    if (totE > 0) {
+      if (pe / totE > 0.7) tx('Mostly PE (high up)', cur.x, annotY, 9, '#42A5F5', 'center', true);
+      else if (ke / totE > 0.7) tx('Mostly KE (fast!)', cur.x, annotY, 9, '#EF5350', 'center', true);
+      else tx('PE \u2194 KE converting', cur.x, annotY, 9, '#CE93D8', 'center', true);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // Stop button
+  btns = [];
+  addBtn('stop', W / 2 - 42, H - 40, 84, 28, 'Stop (ESC)', '#EF5350', () => { sRun = false; stopRumble(); state = ST.BUILD; resetSim(); });
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   TITLE SCREEN
+   ============================== */
+let titleT = 0;
+
+function drawTitle(dt) {
+  titleT += dt;
+  drawSky();
+
+  // Animated track
+  ctx.strokeStyle = '#546E7A'; ctx.lineWidth = 6; ctx.lineCap = 'round';
+  ctx.beginPath();
+  for (let x = 0; x <= W; x += 2) {
+    const y = H * 0.52 + Math.sin(x * 0.008 + titleT * 1.5) * 65 + Math.sin(x * 0.022 + titleT * 0.6) * 30;
+    if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+  // Rails
+  ctx.strokeStyle = '#E53935'; ctx.lineWidth = 2;
+  for (const off of [-4, 4]) {
+    ctx.beginPath();
+    for (let x = 0; x <= W; x += 3) {
+      const y = H * 0.52 + Math.sin(x * 0.008 + titleT * 1.5) * 65 + Math.sin(x * 0.022 + titleT * 0.6) * 30 + off;
+      if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+  }
+
+  // Pillars
+  const gy = H * 0.83;
+  ctx.strokeStyle = 'rgba(120,144,156,0.25)'; ctx.lineWidth = 2;
+  for (let x = 25; x < W; x += 45) {
+    const y = H * 0.52 + Math.sin(x * 0.008 + titleT * 1.5) * 65 + Math.sin(x * 0.022 + titleT * 0.6) * 30;
+    if (y < gy - 10) { ctx.beginPath(); ctx.moveTo(x, y + 4); ctx.lineTo(x, gy); ctx.stroke(); }
+  }
+
+  // Cart animation
+  const cx = ((titleT * 85) % (W + 60)) - 30;
+  const cy = H * 0.52 + Math.sin(cx * 0.008 + titleT * 1.5) * 65 + Math.sin(cx * 0.022 + titleT * 0.6) * 30;
+  const da = Math.cos(cx * 0.008 + titleT * 1.5) * 65 * 0.008 + Math.cos(cx * 0.022 + titleT * 0.6) * 30 * 0.022;
+  drawCart(cx, cy - 14, Math.atan2(da, 1), 12);
+
+  // Ground
+  ctx.fillStyle = '#3E2723'; ctx.fillRect(0, gy, W, H - gy);
+
+  // Animated energy bar
+  const per = Math.sin(titleT * 1.3) * 0.35 + 0.5;
+  const ker = 1 - per;
+  const ebx = W / 2 - 100, eby = H * 0.34;
+  rr(ebx, eby, 200, 16, 5, '#1a2530');
+  ctx.fillStyle = '#42A5F5'; ctx.fillRect(ebx + 1, eby + 1, 198 * per, 14);
+  ctx.fillStyle = '#EF5350'; ctx.fillRect(ebx + 198 * per, eby + 1, 198 * ker, 14);
+  rr(ebx, eby, 200, 16, 5, null, '#607D8B');
+  tx('PE', ebx - 20, eby + 8, 10, '#42A5F5', 'right', true);
+  tx('KE', ebx + 220, eby + 8, 10, '#EF5350', 'left', true);
+  tx('\u2194', ebx + 100, eby + 8, 14, '#AB47BC', 'center', true);
+
+  // Title
+  ctx.shadowColor = 'rgba(0,0,0,0.7)'; ctx.shadowBlur = 30;
+  tx('COASTER', W / 2, H * 0.16, Math.min(70, W * 0.07), '#FDD835', 'center', true);
+  ctx.shadowBlur = 0;
+  tx('Roller Coaster Physics Simulator', W / 2, H * 0.16 + 38, Math.min(17, W * 0.022), '#B3E5FC');
+  tx('NGSS MS-PS3-1  |  MS-PS3-2  |  Energy Conservation', W / 2, H * 0.16 + 58, Math.min(11, W * 0.015), 'rgba(255,255,255,0.4)');
+  tx('PE + KE = Total Energy (constant)', W / 2, H * 0.34 + 28, 12, '#CE93D8', 'center', true);
+
+  btns = [];
+  addBtn('go', W / 2 - 90, H * 0.63, 180, 54, 'START BUILDING', '#66BB6A', () => { state = ST.HOWTO; });
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   HOW TO PLAY
+   ============================== */
+function drawHowTo() {
+  drawSky();
+  rr(W * 0.07, H * 0.03, W * 0.86, H * 0.94, 12, 'rgba(15,22,32,0.95)', 'rgba(80,100,120,0.25)');
+
+  const cx = W / 2, topY = H * 0.09;
+  tx('HOW TO PLAY', cx, topY, 24, '#FDD835', 'center', true);
+
+  const items = [
+    { n: '1', t: 'Select a track tool and click on the canvas to build', c: '#42A5F5' },
+    { n: '2', t: 'The FIRST HILL height = your total ENERGY BUDGET', c: '#FDD835' },
+    { n: '3', t: 'Height = Potential Energy: PE = mass x gravity x height', c: '#42A5F5' },
+    { n: '4', t: 'Speed = Kinetic Energy: KE = 0.5 x mass x velocity\u00B2', c: '#EF5350' },
+    { n: '5', t: 'PE + KE = TOTAL ENERGY stays CONSTANT (conservation!)', c: '#AB47BC' },
+    { n: '6', t: 'No hill can be taller than the first -- not enough energy!', c: '#FF7043' },
+    { n: '7', t: 'Loops need speed (KE). Build valleys before loops!', c: '#66BB6A' },
+    { n: '8', t: 'Drag control points to fine-tune your track design', c: '#81D4FA' },
+    { n: '9', t: 'Press PLAY and watch energy transform in real time!', c: '#FDD835' },
+  ];
+
+  const lh = Math.min(30, (H * 0.48) / items.length);
+  items.forEach((it, i) => {
+    const iy = topY + 40 + i * lh;
+    ctx.beginPath(); ctx.arc(cx - W * 0.3, iy, 12, 0, Math.PI * 2);
+    ctx.fillStyle = it.c; ctx.fill();
+    tx(it.n, cx - W * 0.3, iy, 10, '#000', 'center', true);
+    tx(it.t, cx - W * 0.3 + 20, iy, Math.min(13, W * 0.017), it.c, 'left');
+  });
+
+  // Energy diagram: high vs low position
+  const dy = topY + 40 + items.length * lh + 8;
+  const dw = Math.min(260, W * 0.32), dh = 35;
+  const dx = cx - dw / 2;
+  // High: mostly PE
+  tx('At the TOP:', dx + dw / 2, dy - 6, 9, '#B3E5FC', 'center', true);
+  ctx.fillStyle = '#42A5F5'; ctx.fillRect(dx, dy, dw * 0.75, dh);
+  ctx.fillStyle = '#EF5350'; ctx.fillRect(dx + dw * 0.75, dy, dw * 0.25, dh);
+  tx('PE (big)', dx + dw * 0.375, dy + dh / 2, 11, '#fff', 'center', true);
+  tx('KE', dx + dw * 0.875, dy + dh / 2, 10, '#fff', 'center', true);
+  // Low: mostly KE
+  const dy2 = dy + dh + 14;
+  tx('At the BOTTOM:', dx + dw / 2, dy2 - 6, 9, '#FFCDD2', 'center', true);
+  ctx.fillStyle = '#42A5F5'; ctx.fillRect(dx, dy2, dw * 0.15, dh);
+  ctx.fillStyle = '#EF5350'; ctx.fillRect(dx + dw * 0.15, dy2, dw * 0.85, dh);
+  tx('PE', dx + dw * 0.075, dy2 + dh / 2, 10, '#fff', 'center', true);
+  tx('KE (big!)', dx + dw * 0.575, dy2 + dh / 2, 11, '#fff', 'center', true);
+  // Arrow
+  tx('\u2193 Total stays the same! \u2193', dx + dw + 15, dy + dh + 7, 10, '#CE93D8', 'left', true);
+
+  btns = [];
+  addBtn('ok', cx - 65, H * 0.90, 130, 42, 'GOT IT!', '#66BB6A', () => { state = ST.LEVELS; });
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   LEVEL SELECT
+   ============================== */
+function drawLevelSel() {
+  drawSky();
+  rr(W * 0.04, H * 0.03, W * 0.92, H * 0.94, 12, 'rgba(15,22,32,0.95)', 'rgba(80,100,120,0.25)');
+  tx('SELECT LEVEL', W / 2, H * 0.10, 22, '#FDD835', 'center', true);
+
+  btns = [];
+  const cols = Math.min(5, Math.floor((W * 0.85) / 155));
+  const cw = 140, ch = 150, gap = 14;
+  const tw2 = cols * (cw + gap) - gap;
+  const sx = W / 2 - tw2 / 2;
+  const sy = H * 0.19;
+
+  LVLS.forEach((lv, i) => {
+    const col = i % cols, row = Math.floor(i / cols);
+    const lx = sx + col * (cw + gap);
+    const ly = sy + row * (ch + gap);
+    const ok = open[i];
+
+    rr(lx, ly, cw, ch, 8, ok ? 'rgba(30,45,60,0.95)' : 'rgba(20,25,30,0.8)', ok ? '#42A5F5' : '#37474F');
+
+    // Circle number
+    ctx.beginPath(); ctx.arc(lx + cw / 2, ly + 22, 15, 0, Math.PI * 2);
+    ctx.fillStyle = ok ? '#42A5F5' : '#455A64'; ctx.fill();
+    tx('' + (i + 1), lx + cw / 2, ly + 22, 13, ok ? '#fff' : '#78909C', 'center', true);
+
+    tx(lv.name, lx + cw / 2, ly + 46, 12, ok ? '#fff' : '#546E7A', 'center', true);
+
+    // Stars
+    const st = stars(best[i], i);
+    for (let s = 0; s < 3; s++) drawStar5(lx + cw / 2 - 20 + s * 20, ly + 68, 8, s < st);
+
+    if (best[i] > 0) tx('Best: ' + best[i], lx + cw / 2, ly + 90, 9, '#B0BEC5');
+    if (lv.loops > 0) tx(lv.loops + ' loop' + (lv.loops > 1 ? 's' : '') + ' req.', lx + cw / 2, ly + 108, 8, '#FF7043');
+    tx(lv.desc.split('\n')[0], lx + cw / 2, ly + 125, 7, 'rgba(255,255,255,0.35)');
+
+    // Lock overlay
+    if (!ok) {
+      rr(lx, ly, cw, ch, 8, 'rgba(0,0,0,0.55)');
+      tx('LOCKED', lx + cw / 2, ly + ch / 2, 13, '#546E7A', 'center', true);
+    }
+    if (ok) addBtn('l_' + i, lx, ly, cw, ch, '', 'transparent', () => initLvl(i));
+  });
+
+  addBtn('bk2', 28, H - 50, 75, 34, 'Back', '#78909C', () => { state = ST.TITLE; });
+  btns.forEach(b => { if (b.col !== 'transparent') drawBV(b); });
+}
+
+/* ==============================
+   LEVEL COMPLETE SCREEN
+   ============================== */
+function drawDone() {
+  drawSky(); drawGrid(); drawGnd(); drawTrack(); drawFlags();
+  if (crv.length > 0) { const ep = sample(trkLen()); drawCart(ep.x, ep.y - 14, 0, 0); }
+  drawParts();
+
+  ctx.fillStyle = 'rgba(0,0,0,0.5)'; ctx.fillRect(0, 0, W, H);
+
+  const pw = Math.min(440, W * 0.72), ph = 320;
+  const px = W / 2 - pw / 2, py = H / 2 - ph / 2;
+  rr(px, py, pw, ph, 14, 'rgba(15,30,48,0.96)', '#66BB6A');
+
+  // Checkmark
+  ctx.strokeStyle = '#66BB6A'; ctx.lineWidth = 4; ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.moveTo(W / 2 - 14, py + 28); ctx.lineTo(W / 2 - 2, py + 40); ctx.lineTo(W / 2 + 18, py + 16);
+  ctx.stroke();
+
+  tx('LEVEL COMPLETE!', W / 2, py + 55, 21, '#66BB6A', 'center', true);
+
+  const st = stars(sScore, curLvl);
+  for (let s = 0; s < 3; s++) drawStar5(W / 2 - 28 + s * 28, py + 82, 12, s < st);
+  const rating = ['', 'Bronze', 'Silver', 'GOLD!'][st] || '';
+  if (rating) tx(rating, W / 2, py + 102, 11, st === 3 ? '#FDD835' : '#B0BEC5', 'center', true);
+
+  tx('Score: ' + sScore, W / 2, py + 124, 19, '#FDD835', 'center', true);
+
+  // Stats table
+  const stats = [
+    ['Max Speed', sMaxSpd.toFixed(1) + ' m/s', '#81D4FA'],
+    ['Loops', '' + sLoops, '#AB47BC'],
+    ['Time', sTime.toFixed(1) + 's', '#B0BEC5'],
+    ['Pieces Used', '' + (cpts.length - 2), '#FF7043'],
+    ['Max Height', sMaxH.toFixed(1) + ' m', '#66BB6A'],
+  ];
+  stats.forEach((s, i) => {
+    const iy = py + 148 + i * 19;
+    tx(s[0] + ':', W / 2 - 55, iy, 10, 'rgba(255,255,255,0.55)', 'right');
+    tx(s[1], W / 2 - 45, iy, 11, s[2], 'left', true);
+  });
+
+  if (best[curLvl] === sScore) tx('NEW HIGH SCORE!', W / 2, py + 253, 12, '#FF7043', 'center', true);
+
+  // Science summary
+  const eUsed = sE0 > 0 ? (1 - sETot / sE0) * 100 : 0;
+  tx('Energy lost to friction: ' + eUsed.toFixed(0) + '%', W / 2, py + 272, 9, 'rgba(255,255,255,0.4)');
+
+  btns = [];
+  const bw = (pw - 30) / 3;
+  addBtn('r1', px + 8, py + ph - 52, bw, 38, 'Retry', '#42A5F5', () => initLvl(curLvl));
+  if (curLvl < 4) addBtn('nx', px + bw + 14, py + ph - 52, bw, 38, 'Next Level', '#66BB6A', () => initLvl(curLvl + 1));
+  addBtn('lv2', px + (curLvl < 4 ? bw * 2 + 20 : bw + 14), py + ph - 52, bw, 38, 'Levels', '#78909C', () => { state = ST.LEVELS; });
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   FAIL / RETRY SCREEN
+   ============================== */
+function drawFail2() {
+  drawSky(); drawGrid(); drawGnd(); drawTrack(); drawFlags();
+  if (crv.length > 0) {
+    const cp = sample(sDist);
+    drawCart(cp.x, cp.y - 14, cp.a, 0);
+    // Red X at failure
+    ctx.strokeStyle = '#EF5350'; ctx.lineWidth = 4; ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(cp.x - 16, cp.y - 32); ctx.lineTo(cp.x + 16, cp.y - 8); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cp.x + 16, cp.y - 32); ctx.lineTo(cp.x - 16, cp.y - 8); ctx.stroke();
+  }
+
+  ctx.fillStyle = 'rgba(0,0,0,0.55)'; ctx.fillRect(0, 0, W, H);
+
+  const pw = Math.min(440, W * 0.72), ph = 260;
+  const px = W / 2 - pw / 2, py = H / 2 - ph / 2;
+  rr(px, py, pw, ph, 14, 'rgba(40,15,15,0.96)', '#EF5350');
+
+  // Big X
+  ctx.strokeStyle = '#EF5350'; ctx.lineWidth = 5; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(W / 2 - 16, py + 14); ctx.lineTo(W / 2 + 16, py + 44); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(W / 2 + 16, py + 14); ctx.lineTo(W / 2 - 16, py + 44); ctx.stroke();
+
+  tx('TRACK FAILED', W / 2, py + 62, 19, '#EF5350', 'center', true);
+
+  // Fail reason (multi-line)
+  const lines = sFailMsg.split('\n');
+  lines.forEach((l, i) => tx(l, W / 2, py + 90 + i * 18, 13, '#FFCDD2'));
+
+  // Science hint
+  let hint = '';
+  if (sFailMsg.includes('stall') || sFailMsg.includes('Not enough energy')) {
+    hint = 'Science: PE at the top must equal the PE available.\nLower the hill or raise your starting height to add energy.';
+  } else if (sFailMsg.includes('loop')) {
+    hint = 'Science: Loops need high KE (speed). v = sqrt(2*KE/m).\nAdd a valley before the loop to convert PE into KE.';
+  } else if (sFailMsg.includes('backward')) {
+    hint = 'Science: The cart ran out of KE on a climb.\nTotal energy minus PE at the top must be > 0.';
+  }
+  if (hint) {
+    const hl = hint.split('\n');
+    hl.forEach((h, i) => tx(h, W / 2, py + 90 + lines.length * 18 + 8 + i * 15, 10, 'rgba(255,255,255,0.45)'));
+  }
+
+  btns = [];
+  addBtn('rtr', W / 2 - 75, py + ph - 52, 150, 42, 'ADJUST TRACK', '#42A5F5', () => { state = ST.BUILD; resetSim(); });
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   MAIN GAME LOOP (placeholder - replaced by loopV2 at bottom)
+   ============================== */
+let lastT = 0;
+
+/* ==============================
+   BACKGROUND SCENERY
+   Drawn behind the track for visual depth
+   ============================== */
+function drawMountains(gy) {
+  // Distant mountains
+  ctx.fillStyle = 'rgba(55,71,79,0.4)';
+  ctx.beginPath();
+  ctx.moveTo(0, gy);
+  for (let x = 0; x <= W; x += 3) {
+    const h1 = Math.sin(x * 0.003) * 60 + Math.sin(x * 0.007 + 1.2) * 35 + Math.sin(x * 0.0015) * 45;
+    ctx.lineTo(x, gy - 80 - Math.max(0, h1));
+  }
+  ctx.lineTo(W, gy);
+  ctx.closePath();
+  ctx.fill();
+
+  // Nearer hills
+  ctx.fillStyle = 'rgba(46,60,50,0.35)';
+  ctx.beginPath();
+  ctx.moveTo(0, gy);
+  for (let x = 0; x <= W; x += 3) {
+    const h2 = Math.sin(x * 0.005 + 2) * 40 + Math.sin(x * 0.012 + 0.5) * 20;
+    ctx.lineTo(x, gy - 30 - Math.max(0, h2));
+  }
+  ctx.lineTo(W, gy);
+  ctx.closePath();
+  ctx.fill();
+}
+
+function drawTrees(gy) {
+  // Scattered trees along ground line
+  ctx.fillStyle = 'rgba(56,88,42,0.5)';
+  for (let x = 20; x < W; x += 55 + Math.sin(x * 0.17) * 25) {
+    const h = 15 + Math.sin(x * 0.23) * 8;
+    const bx = x + Math.sin(x * 0.31) * 10;
+    // Trunk
+    ctx.fillStyle = 'rgba(90,65,45,0.4)';
+    ctx.fillRect(bx - 2, gy - h, 4, h);
+    // Canopy
+    ctx.fillStyle = 'rgba(56,88,42,0.45)';
+    ctx.beginPath();
+    ctx.moveTo(bx, gy - h - 12);
+    ctx.lineTo(bx - 10, gy - h + 2);
+    ctx.lineTo(bx + 10, gy - h + 2);
+    ctx.closePath();
+    ctx.fill();
+  }
+}
+
+/* ==============================
+   ENHANCED SCORE BREAKDOWN
+   Shows how each category contributed
+   ============================== */
+function drawScoreBreakdown(px, py, pw) {
+  const brkItems = [];
+  brkItems.push(['Completion', 1000, '#66BB6A']);
+  brkItems.push(['Speed Bonus', Math.floor(sMaxSpd * 65), '#FDD835']);
+  if (sLoops > 0) brkItems.push(['Loop Bonus (' + sLoops + ')', sLoops * 500, '#AB47BC']);
+  const used = cpts.length - 2;
+  const eff = Math.max(0, LVLS[curLvl].maxP - used);
+  if (eff > 0) brkItems.push(['Efficiency (' + eff + ' saved)', eff * 130, '#FF7043']);
+  let timeB = 0;
+  if (sTime < 8) timeB = 700; else if (sTime < 15) timeB = 400; else if (sTime < 25) timeB = 150;
+  if (timeB > 0) brkItems.push(['Time Bonus', timeB, '#81D4FA']);
+  if (airtimeAccum > 0.1) brkItems.push(['Airtime', Math.floor(airtimeAccum * 200), '#26C6DA']);
+
+  const startY = py + 148;
+  brkItems.forEach((item, i) => {
+    const iy = startY + i * 17;
+    tx(item[0], px + pw / 2 - 80, iy, 9, item[2], 'left');
+    tx('+' + item[1], px + pw / 2 + 80, iy, 9, item[2], 'right', true);
+  });
+  return startY + brkItems.length * 17;
+}
+
+/* ==============================
+   TRACK PREVIEW GHOST
+   Shows what the track piece will look like before placement
+   ============================== */
+function drawTrackPreview() {
+  if (!ghost || state !== ST.BUILD || my > H - 75 || my < 52) return;
+  if (cpts.length < 1) return;
+  const last = cpts[cpts.length - 1];
+  const lv = LVLS[curLvl];
+  const gY = lv.gY;
+  const wx = ghost.x, wy = Math.max(0.06, Math.min(gY - 0.01, ghost.y));
+  const dx = wx - last.x;
+  if (dx < 0.03) return;
+
+  // Generate preview points based on active tool
+  const preview = [];
+  preview.push({ x: last.x * W, y: last.y * H });
+
+  switch (tool) {
+    case 'hill': {
+      const pk = Math.max(0.06, Math.min(wy, gY - 0.04));
+      preview.push({ x: (last.x + dx * 0.5) * W, y: pk * H });
+      preview.push({ x: (last.x + dx) * W, y: (gY - 0.02) * H });
+      break;
+    }
+    case 'drop': {
+      preview.push({ x: (last.x + dx * 0.08) * W, y: last.y * H });
+      preview.push({ x: (last.x + dx) * W, y: (gY - 0.02) * H });
+      break;
+    }
+    case 'valley': {
+      preview.push({ x: (last.x + dx * 0.5) * W, y: (gY - 0.02) * H });
+      preview.push({ x: (last.x + dx) * W, y: last.y * H });
+      break;
+    }
+    case 'flat': {
+      preview.push({ x: (last.x + dx) * W, y: last.y * H });
+      break;
+    }
+    case 'loop': {
+      const r = Math.min(dx * 0.33, 0.09);
+      const cx = last.x + dx * 0.5;
+      const baseY = last.y;
+      for (let i = 1; i <= 8; i++) {
+        const ang = (Math.PI * 2 * i / 8) - Math.PI / 2;
+        const asp = (W / H) * 0.65;
+        preview.push({
+          x: Math.max(last.x * W + 5, Math.min(0.97 * W, (cx + Math.cos(ang) * r * asp) * W)),
+          y: Math.max(0.05 * H, Math.min(gY * H, (baseY - r + Math.sin(ang) * r) * H))
+        });
+      }
+      break;
+    }
+    case 'brake': {
+      preview.push({ x: (last.x + dx * 0.25) * W, y: last.y * H });
+      preview.push({ x: (last.x + dx * 0.75) * W, y: last.y * H });
+      preview.push({ x: (last.x + dx) * W, y: last.y * H });
+      break;
+    }
+  }
+
+  // Draw preview as dashed line
+  if (preview.length > 1) {
+    ctx.save();
+    ctx.setLineDash([4, 4]);
+    ctx.strokeStyle = (TCOL[tool] || '#fff') + '60';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(preview[0].x, preview[0].y);
+    for (let i = 1; i < preview.length; i++) {
+      ctx.lineTo(preview[i].x, preview[i].y);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.restore();
+
+    // End point marker
+    const ep = preview[preview.length - 1];
+    ctx.beginPath(); ctx.arc(ep.x, ep.y, 4, 0, Math.PI * 2);
+    ctx.fillStyle = (TCOL[tool] || '#fff') + '80'; ctx.fill();
+  }
+}
+
+/* ==============================
+   ENERGY EQUATION OVERLAY
+   Shows the math during simulation
+   ============================== */
+function drawEnergyEquation() {
+  if (sTime < 1) return;
+  const cur = sample(sDist);
+  const h = hAtPt(cur);
+  const pe = MASS * GRAV * h;
+  const ke = Math.max(0, sETot - pe);
+
+  // Bottom center equation panel
+  const eqW = Math.min(380, W * 0.45);
+  const eqH = 28;
+  const eqX = W / 2 - eqW / 2;
+  const eqY = H - 50;
+
+  rr(eqX, eqY, eqW, eqH, 5, 'rgba(15,22,32,0.75)');
+
+  const peStr = Math.floor(pe) + 'J';
+  const keStr = Math.floor(ke) + 'J';
+  const totStr = Math.floor(pe + ke) + 'J';
+
+  tx('PE', eqX + 20, eqY + eqH / 2, 9, '#42A5F5', 'center', true);
+  tx(peStr, eqX + 55, eqY + eqH / 2, 10, '#42A5F5', 'center');
+  tx('+', eqX + 90, eqY + eqH / 2, 12, '#fff', 'center');
+  tx('KE', eqX + 115, eqY + eqH / 2, 9, '#EF5350', 'center', true);
+  tx(keStr, eqX + 150, eqY + eqH / 2, 10, '#EF5350', 'center');
+  tx('=', eqX + 185, eqY + eqH / 2, 12, '#fff', 'center');
+  tx('Total', eqX + 220, eqY + eqH / 2, 9, '#AB47BC', 'center', true);
+  tx(totStr, eqX + 260, eqY + eqH / 2, 10, '#AB47BC', 'center');
+
+  // Conservation indicator
+  const pct = sE0 > 0 ? ((pe + ke) / sE0 * 100) : 100;
+  const col = pct > 90 ? '#66BB6A' : pct > 70 ? '#FDD835' : '#EF5350';
+  tx('(' + pct.toFixed(0) + '% conserved)', eqX + 325, eqY + eqH / 2, 8, col, 'center');
+}
+
+/* ==============================
+   ENHANCED SIM RENDERING
+   Additional visual effects during simulation
+   ============================== */
+function drawSpeedometer(speed) {
+  // Circular speedometer in bottom-right
+  const cx = W - 55, cy = H - 65;
+  const r = 30;
+
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(15,22,32,0.7)'; ctx.fill();
+  ctx.strokeStyle = 'rgba(80,100,120,0.3)'; ctx.lineWidth = 2; ctx.stroke();
+
+  // Speed arc
+  const maxSpd = 20;
+  const ratio = Math.min(1, Math.abs(speed) / maxSpd);
+  const startA = Math.PI * 0.75;
+  const endA = startA + ratio * Math.PI * 1.5;
+
+  ctx.beginPath(); ctx.arc(cx, cy, r - 4, startA, endA);
+  const arcCol = ratio > 0.7 ? '#EF5350' : ratio > 0.4 ? '#FDD835' : '#66BB6A';
+  ctx.strokeStyle = arcCol; ctx.lineWidth = 4; ctx.lineCap = 'round'; ctx.stroke();
+
+  // Needle
+  const needleA = startA + ratio * Math.PI * 1.5;
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.lineTo(cx + Math.cos(needleA) * (r - 8), cy + Math.sin(needleA) * (r - 8));
+  ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
+
+  tx(Math.abs(speed).toFixed(0), cx, cy + 5, 11, '#fff', 'center', true);
+  tx('m/s', cx, cy + 16, 7, 'rgba(255,255,255,0.5)');
+}
+
+/* ==============================
+   ENHANCED COMPLETE SCREEN
+   With score breakdown
+   ============================== */
+function drawDoneEnhanced() {
+  drawSky(); drawGrid();
+  if (LVLS[curLvl]) { drawMountains(LVLS[curLvl].gY * H); drawTrees(LVLS[curLvl].gY * H); }
+  drawGnd(); drawTrack(); drawFlags();
+  if (crv.length > 0) { const ep = sample(trkLen()); drawCart(ep.x, ep.y - 14, 0, 0); }
+  drawParts();
+
+  ctx.fillStyle = 'rgba(0,0,0,0.5)'; ctx.fillRect(0, 0, W, H);
+
+  const pw = Math.min(460, W * 0.75), ph = 380;
+  const px2 = W / 2 - pw / 2, py2 = H / 2 - ph / 2;
+  rr(px2, py2, pw, ph, 14, 'rgba(15,30,48,0.97)', '#66BB6A');
+
+  // Animated checkmark
+  ctx.strokeStyle = '#66BB6A'; ctx.lineWidth = 4; ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.moveTo(W / 2 - 14, py2 + 28); ctx.lineTo(W / 2 - 2, py2 + 40); ctx.lineTo(W / 2 + 18, py2 + 16);
+  ctx.stroke();
+
+  tx('LEVEL COMPLETE!', W / 2, py2 + 55, 21, '#66BB6A', 'center', true);
+
+  const st = stars(sScore, curLvl);
+  for (let s = 0; s < 3; s++) drawStar5(W / 2 - 28 + s * 28, py2 + 80, 12, s < st);
+  const rating = ['', 'Bronze', 'Silver', 'GOLD!'][st] || '';
+  if (rating) tx(rating, W / 2, py2 + 100, 11, st === 3 ? '#FDD835' : '#B0BEC5', 'center', true);
+
+  tx('TOTAL SCORE: ' + sScore, W / 2, py2 + 122, 18, '#FDD835', 'center', true);
+
+  // Score breakdown
+  const bottomY = drawScoreBreakdown(px2, py2, pw);
+
+  if (best[curLvl] === sScore && sScore > 0) tx('NEW HIGH SCORE!', W / 2, bottomY + 8, 11, '#FF7043', 'center', true);
+
+  // Science takeaway
+  const eUsed = sE0 > 0 ? (1 - sETot / sE0) * 100 : 0;
+  tx('Friction converted ' + eUsed.toFixed(0) + '% of mechanical energy to heat.', W / 2, bottomY + 26, 9, 'rgba(255,255,255,0.4)');
+  tx('The rest was perfectly conserved between PE and KE!', W / 2, bottomY + 40, 9, 'rgba(255,255,255,0.35)');
+
+  btns = [];
+  const bw = (pw - 30) / 3;
+  addBtn('r1', px2 + 8, py2 + ph - 52, bw, 38, 'Retry', '#42A5F5', () => initLvl(curLvl));
+  if (curLvl < 4) addBtn('nx', px2 + bw + 14, py2 + ph - 52, bw, 38, 'Next Level', '#66BB6A', () => initLvl(curLvl + 1));
+  addBtn('lv2', px2 + (curLvl < 4 ? bw * 2 + 20 : bw + 14), py2 + ph - 52, bw, 38, 'Levels', '#78909C', () => { state = ST.LEVELS; });
+  btns.forEach(drawBV);
+}
+
+/* ==============================
+   ENHANCED BUILD MODE with preview + scenery
+   ============================== */
+function drawBuildScene() {
+  drawSky(); drawGrid();
+  if (LVLS[curLvl]) { drawMountains(LVLS[curLvl].gY * H); drawTrees(LVLS[curLvl].gY * H); }
+  drawGnd(); drawTrack(); drawCPts();
+  drawTrackPreview();
+  drawGhost(); drawFlags(); drawBuildHUD();
+}
+
+/* ==============================
+   ENHANCED SIM MODE with equation + speedometer
+   ============================== */
+function drawSimScene(dt) {
+  simStep(dt);
+  updateParts(dt);
+  drawSky(); drawGrid();
+  if (LVLS[curLvl]) { drawMountains(LVLS[curLvl].gY * H); drawTrees(LVLS[curLvl].gY * H); }
+  drawGnd(); drawTrack(); drawFlags();
+
+  if (crv.length > 0) {
+    const cp = sample(sDist);
+    // Motion trail
+    if (Math.abs(sSpd) > 6) {
+      for (let i = 1; i <= 3; i++) {
+        const tp = sample(sDist - i * 7);
+        ctx.globalAlpha = 0.12 / i;
+        drawCart(tp.x, tp.y - 14, tp.a, sSpd);
+      }
+      ctx.globalAlpha = 1;
+    }
+    drawCart(cp.x, cp.y - 14, cp.a, sSpd);
+
+    // Height line indicator (dashed to ground)
+    const gy = LVLS[curLvl].gY * H;
+    if (cp.y < gy - 15) {
+      ctx.save();
+      ctx.setLineDash([3, 4]);
+      ctx.strokeStyle = 'rgba(66,165,245,0.25)';
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(cp.x, cp.y); ctx.lineTo(cp.x, gy); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.restore();
+      // Height label at midpoint
+      const midy = (cp.y + gy) / 2;
+      const hm = hAtPt(cp);
+      tx(hm.toFixed(1) + 'm', cp.x + 12, midy, 8, 'rgba(66,165,245,0.4)', 'left');
+    }
+  }
+
+  drawParts();
+  drawSimHUD();
+  drawEnergyEquation();
+  drawSpeedometer(sSpd);
+  if (sFail) { state = ST.FAIL; stopRumble(); }
+}
+
+/* ==============================
+   MAIN GAME LOOP
+   Uses enhanced scene functions with scenery, preview, speedometer
+   ============================== */
+function mainLoop(ts) {
+  const dt = Math.min((ts - lastT) / 1000, 0.05);
+  lastT = ts;
+  ctx.clearRect(0, 0, W, H);
+
+  switch (state) {
+    case ST.TITLE: drawTitle(dt); break;
+    case ST.HOWTO: drawHowTo(); break;
+    case ST.LEVELS: drawLevelSel(); break;
+    case ST.BUILD: drawBuildScene(); break;
+    case ST.SIM: drawSimScene(dt); break;
+    case ST.DONE: updateParts(dt); drawDoneEnhanced(); break;
+    case ST.FAIL: drawFail2(); break;
+  }
+
+  requestAnimationFrame(mainLoop);
+}
+
+requestAnimationFrame(mainLoop);
+
+/* ==============================
+   TOOL TOOLTIP SYSTEM
+   Shows description when hovering over tools in build mode
+   ============================== */
+const TOOL_TIPS = {
+  hill: 'Hill: Creates a parabolic curve up\nand back down. Height converts\nbetween PE and KE.',
+  loop: 'Loop: Circular loop-the-loop.\nNeeds high speed (KE) to complete!\nBuild a valley before loops.',
+  drop: 'Drop: Steep downward slope.\nConverts PE to KE rapidly.\nGreat for building speed.',
+  valley: 'Valley: Low point that converts\nPE to KE then back.\nUse before loops or hills.',
+  flat: 'Flat: Horizontal section.\nSpeed stays roughly constant\n(small friction loss).',
+  brake: 'Brake: High friction zone.\nSlows the cart significantly.\nConverts KE to heat energy.'
+};
+
+function drawToolTip() {
+  if (state !== ST.BUILD) return;
+  // Check if hovering over a tool button
+  const lv = LVLS[curLvl];
+  const py = H - 65;
+  const tw2 = 70, tg = 6;
+  const tsx = W / 2 - (TOOLS.length * (tw2 + tg)) / 2;
+
+  for (let i = 0; i < TOOLS.length; i++) {
+    const bx = tsx + i * (tw2 + tg);
+    if (mx >= bx && mx <= bx + tw2 && my >= py && my <= py + 44) {
+      const tip = TOOL_TIPS[TOOLS[i]];
+      if (!tip) return;
+      const lines = tip.split('\n');
+      const tipW = 180, tipH = lines.length * 16 + 10;
+      let tipX = bx + tw2 / 2 - tipW / 2;
+      tipX = Math.max(5, Math.min(W - tipW - 5, tipX));
+      const tipY = py - tipH - 8;
+      rr(tipX, tipY, tipW, tipH, 5, 'rgba(15,22,32,0.95)', TCOL[TOOLS[i]]);
+      lines.forEach((line, li) => {
+        tx(line, tipX + tipW / 2, tipY + 10 + li * 16, 9, '#E0E0E0');
+      });
+      return;
+    }
+  }
+}
+
+/* ==============================
+   ENHANCED BUILD SCENE (add tooltip)
+   ============================== */
+const _origDrawBuildScene = drawBuildScene;
+drawBuildScene = function() {
+  _origDrawBuildScene();
+  drawToolTip();
+};
+
+/* ==============================
+   LEVEL INTRO TOAST
+   Brief animated text when entering build mode
+   ============================== */
+let introToastTime = 0;
+let introToastLvl = -1;
+
+const _origInitLvl = initLvl;
+initLvl = function(idx) {
+  _origInitLvl(idx);
+  introToastTime = 3.0;
+  introToastLvl = idx;
+};
+
+function drawIntroToast(dt) {
+  if (introToastTime <= 0 || introToastLvl < 0) return;
+  introToastTime -= dt;
+  const alpha = Math.min(1, introToastTime / 0.5);
+  if (alpha <= 0) return;
+
+  ctx.globalAlpha = alpha;
+  const lv = LVLS[introToastLvl];
+  const tw3 = Math.min(350, W * 0.45);
+  const th = 70;
+  const tx2 = W / 2 - tw3 / 2;
+  const ty = H * 0.25;
+  rr(tx2, ty, tw3, th, 8, 'rgba(15,30,50,0.9)', '#42A5F5');
+  tx('Level ' + (introToastLvl + 1) + ': ' + lv.name, W / 2, ty + 18, 16, '#FDD835', 'center', true);
+  const dLines = lv.desc.split('\n');
+  dLines.forEach((l, i) => tx(l, W / 2, ty + 38 + i * 16, 11, '#B3E5FC'));
+  ctx.globalAlpha = 1;
+}
+
+/* Add intro toast to build scene */
+const _buildSceneWithToast = drawBuildScene;
+drawBuildScene = function() {
+  _buildSceneWithToast();
+  drawIntroToast(0.016);
+};
+
+/* ==============================
+   PROGRESS INDICATOR
+   Shows overall game completion on level select
+   ============================== */
+function drawProgress() {
+  if (state !== ST.LEVELS) return;
+  const totalStars = best.reduce((sum, sc, i) => sum + stars(sc, i), 0);
+  const maxStars = 15;
+  const pctComplete = Math.floor(totalStars / maxStars * 100);
+
+  const barW = Math.min(200, W * 0.25);
+  const barX = W / 2 - barW / 2;
+  const barY = H * 0.93;
+  const barH = 8;
+
+  tx('Progress: ' + totalStars + '/' + maxStars + ' stars (' + pctComplete + '%)', W / 2, barY - 8, 9, 'rgba(255,255,255,0.4)');
+  rr(barX, barY, barW, barH, 4, '#1a2530');
+  ctx.fillStyle = '#FDD835';
+  ctx.fillRect(barX + 1, barY + 1, (barW - 2) * (totalStars / maxStars), barH - 2);
+  rr(barX, barY, barW, barH, 4, null, '#546E7A');
+}
+
+/* Add progress to level select */
+const _origDrawLevelSel = drawLevelSel;
+drawLevelSel = function() {
+  _origDrawLevelSel();
+  drawProgress();
+};
+
+/* ==============================
+   SIMULATION PAUSE SUPPORT
+   Press P to pause/unpause during simulation
+   ============================== */
+let simPaused = false;
+
+document.addEventListener('keydown', function(e) {
+  if (state === ST.SIM && (e.key === 'p' || e.key === 'P')) {
+    simPaused = !simPaused;
+  }
+});
+
+const _origSimStep = simStep;
+simStep = function(dt) {
+  if (simPaused) return;
+  _origSimStep(dt);
+};
+
+/* Draw pause overlay */
+function drawPauseOverlay() {
+  if (!simPaused || state !== ST.SIM) return;
+  ctx.fillStyle = 'rgba(0,0,0,0.4)';
+  ctx.fillRect(0, 0, W, H);
+  // Pause icon (two bars)
+  ctx.fillStyle = 'rgba(255,255,255,0.8)';
+  ctx.fillRect(W / 2 - 18, H / 2 - 25, 12, 50);
+  ctx.fillRect(W / 2 + 6, H / 2 - 25, 12, 50);
+  tx('PAUSED', W / 2, H / 2 + 40, 16, '#fff', 'center', true);
+  tx('Press P to resume', W / 2, H / 2 + 58, 11, 'rgba(255,255,255,0.6)');
+}
+
+/* Inject pause overlay into sim scene */
+const _origDrawSimScene = drawSimScene;
+drawSimScene = function(dt) {
+  _origDrawSimScene(dt);
+  drawPauseOverlay();
+};
+
+/* ==============================
+   ENERGY CONSERVATION COUNTER
+   Tracks and displays cumulative stats across all plays
+   ============================== */
+let totalPlays = 0;
+let totalCompletions = 0;
+
+const _origStartSim = startSim;
+startSim = function() {
+  _origStartSim();
+  totalPlays++;
+  simPaused = false;
+};
+
+const _origCalcScore = calcScore;
+calcScore = function() {
+  _origCalcScore();
+  totalCompletions++;
+};
+
+/* ==============================
+   SCIENCE FACTS DISPLAY
+   Shows random energy facts on title screen
+   ============================== */
+const FACTS = [
+  'Energy cannot be created or destroyed -- only transformed!',
+  'A roller coaster gets ALL its energy from the initial hill height.',
+  'At the top: maximum PE, minimum KE. At the bottom: minimum PE, maximum KE.',
+  'Friction converts mechanical energy into thermal energy (heat).',
+  'The first hill must be the tallest -- that sets the energy budget!',
+  'Loop-the-loops need enough speed (KE) to maintain contact with the track.',
+  'PE = mass x gravity x height. Double the height = double the PE!',
+  'KE = 0.5 x mass x speed squared. Speed matters more than mass!',
+  'Real roller coasters use chain lifts only for the first hill.',
+  'Energy conservation is one of the most fundamental laws of physics!'
+];
+
+function drawScienceFact() {
+  if (state !== ST.TITLE) return;
+  const idx = Math.floor(titleT / 6) % FACTS.length;
+  const alpha = 1 - Math.abs((titleT % 6) / 6 - 0.5) * 4;
+  if (alpha <= 0) return;
+  ctx.globalAlpha = Math.max(0, Math.min(0.5, alpha));
+  tx(FACTS[idx], W / 2, H * 0.78, Math.min(11, W * 0.014), '#B3E5FC');
+  ctx.globalAlpha = 1;
+}
+
+/* Inject facts into title screen */
+const _origDrawTitle = drawTitle;
+drawTitle = function(dt) {
+  _origDrawTitle(dt);
+  drawScienceFact();
+};
+
+})();
+</script>
+</body>
+</html>

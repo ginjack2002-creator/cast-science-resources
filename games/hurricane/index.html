@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>HURRICANE - Storm Chaser Flight Game</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0a0a0a;font-family:'Segoe UI',system-ui,sans-serif}
+canvas{display:block;width:100%;height:100%;cursor:crosshair;touch-action:none}
+#orient{display:none;position:fixed;inset:0;z-index:9999;background:#0a0a0a;color:#fff;flex-direction:column;align-items:center;justify-content:center;font-size:1.4rem;text-align:center;padding:2rem}
+#orient svg{width:60px;height:60px;margin-bottom:1rem;animation:spin 2s ease-in-out infinite}
+@keyframes spin{0%,100%{transform:rotate(0deg)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}canvas{display:none}}
+</style>
+</head>
+<body>
+<div id="orient">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+<p>Please rotate your device to<br><strong>landscape orientation</strong></p>
+</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+// ============================================================
+// HURRICANE - Storm Chaser Flight Game
+// NGSS MS-ESS2-5, MS-ESS2-6
+// Complete single-file HTML5 Canvas game
+// ============================================================
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+
+// --- Constants ---
+const GRAVITY = 0;
+const MAX_PARTICLES = 800;
+const PROBE_TYPES = ['temp','pressure','wind','moisture'];
+const PROBE_COLORS = {temp:'#FF5252',pressure:'#448AFF',wind:'#ECEFF1',moisture:'#69F0AE'};
+const PROBE_LABELS = {temp:'SST',pressure:'Pressure',wind:'Wind Speed',moisture:'Humidity'};
+const PROBE_UNITS = {temp:'C',pressure:'hPa',wind:'km/h',moisture:'%'};
+const PROBE_VALUES = {temp:10,pressure:15,wind:12,moisture:8};
+const MEDAL_THRESHOLDS = {bronze:0.3,silver:0.6,gold:0.85};
+
+// --- Audio Context ---
+let audioCtx = null;
+let masterGain = null;
+let windNode = null;
+let windGain = null;
+let engineOsc = null;
+let engineGain = null;
+
+function initAudio(){
+    if(audioCtx) return;
+    audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.3;
+    masterGain.connect(audioCtx.destination);
+    // Wind howl (filtered noise)
+    const bufSize = audioCtx.sampleRate * 2;
+    const buf = audioCtx.createBuffer(1,bufSize,audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    for(let i=0;i<bufSize;i++) data[i] = Math.random()*2-1;
+    windNode = audioCtx.createBufferSource();
+    windNode.buffer = buf;
+    windNode.loop = true;
+    const windFilter = audioCtx.createBiquadFilter();
+    windFilter.type = 'bandpass';
+    windFilter.frequency.value = 400;
+    windFilter.Q.value = 1.5;
+    windGain = audioCtx.createGain();
+    windGain.gain.value = 0;
+    windNode.connect(windFilter);
+    windFilter.connect(windGain);
+    windGain.connect(masterGain);
+    windNode.start();
+    // Engine drone
+    engineOsc = audioCtx.createOscillator();
+    engineOsc.type = 'sawtooth';
+    engineOsc.frequency.value = 85;
+    engineGain = audioCtx.createGain();
+    engineGain.gain.value = 0;
+    engineOsc.connect(engineGain);
+    engineGain.connect(masterGain);
+    engineOsc.start();
+}
+
+function setWindIntensity(v){
+    if(!windGain) return;
+    windGain.gain.linearRampToValueAtTime(Math.min(v*0.6,0.5),audioCtx.currentTime+0.1);
+}
+
+function setEngineSound(on){
+    if(!engineGain) return;
+    engineGain.gain.linearRampToValueAtTime(on?0.08:0,audioCtx.currentTime+0.1);
+}
+
+function playThunder(){
+    if(!audioCtx) return;
+    const o = audioCtx.createOscillator();
+    o.type = 'sawtooth';
+    o.frequency.value = 50;
+    const g = audioCtx.createGain();
+    g.gain.setValueAtTime(0.4,audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+1.5);
+    const f = audioCtx.createBiquadFilter();
+    f.type='lowpass';f.frequency.value=200;
+    o.connect(f);f.connect(g);g.connect(masterGain);
+    o.start();o.stop(audioCtx.currentTime+1.5);
+}
+
+function playCollect(){
+    if(!audioCtx) return;
+    const o = audioCtx.createOscillator();
+    o.type='sine';o.frequency.value=880;
+    const g = audioCtx.createGain();
+    g.gain.setValueAtTime(0.2,audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.3);
+    o.connect(g);g.connect(masterGain);
+    o.frequency.linearRampToValueAtTime(1320,audioCtx.currentTime+0.15);
+    o.start();o.stop(audioCtx.currentTime+0.3);
+}
+
+function playImpact(){
+    if(!audioCtx) return;
+    const bufSize = audioCtx.sampleRate * 0.15;
+    const buf = audioCtx.createBuffer(1,bufSize,audioCtx.sampleRate);
+    const d = buf.getChannelData(0);
+    for(let i=0;i<bufSize;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/bufSize,3);
+    const s = audioCtx.createBufferSource();
+    s.buffer = buf;
+    const g = audioCtx.createGain();
+    g.gain.value = 0.35;
+    s.connect(g);g.connect(masterGain);
+    s.start();
+}
+
+function playRainPatter(intensity){
+    if(!audioCtx || Math.random()>intensity*0.3) return;
+    const bufSize = audioCtx.sampleRate * 0.05;
+    const buf = audioCtx.createBuffer(1,bufSize,audioCtx.sampleRate);
+    const d = buf.getChannelData(0);
+    for(let i=0;i<bufSize;i++) d[i]=(Math.random()*2-1)*0.1*Math.pow(1-i/bufSize,2);
+    const s = audioCtx.createBufferSource();
+    s.buffer = buf;
+    const g = audioCtx.createGain();
+    g.gain.value = 0.05;
+    s.connect(g);g.connect(masterGain);
+    s.start();
+}
+
+// --- Game State ---
+const STATES = {TITLE:0,HOWTO:1,SELECT:2,BRIEFING:3,PLAYING:4,DEBRIEF:5,GAMEOVER:6};
+let state = STATES.TITLE;
+let W = 960, H = 540;
+let dpr = 1;
+let dt = 0;
+let lastTime = 0;
+let frameCount = 0;
+
+// Input
+const keys = {};
+let touchY = null;
+let touchActive = false;
+let mouseX = 0, mouseY = 0;
+let clicked = false;
+
+// Storms
+const STORMS = [
+    {name:'Tropical Storm Alma',cat:'Tropical Storm',sst:26,sstEnd:26,catNum:1,
+     desc:'A newly formed tropical storm with moderate winds.\nSST: 26C. A gentle introduction to storm chasing.',
+     maxScore:500},
+    {name:'Hurricane Bravo',cat:'Category 2-3',sst:28,sstEnd:28,catNum:3,
+     desc:'A strengthening hurricane with significant wind shear.\nSST: 28C. Watch for debris in the eyewall.',
+     maxScore:800},
+    {name:'Major Hurricane Carlos',cat:'Category 4',sst:29,sstEnd:29,catNum:4,
+     desc:'A powerful major hurricane with extreme turbulence.\nSST: 29C. Only experienced crews fly into this.',
+     maxScore:1200},
+    {name:'Rapid Intensification',cat:'Cat 2 -> Cat 5',sst:27,sstEnd:31,catNum:5,
+     desc:'The ocean heats up mid-flight! Watch the SST rise\nfrom 27C to 31C as the storm rapidly intensifies.',
+     maxScore:1600},
+    {name:'Category 5 Monster',cat:'Category 5',sst:31,sstEnd:31,catNum:5,
+     desc:'Maximum intensity. SST: 31C. The strongest storm\non record. Pure survival and data collection.',
+     maxScore:2000}
+];
+
+let currentStorm = 0;
+let stormProgress = 0; // 0-1 through the storm cross-section
+let currentSST = 26;
+let scrollX = 0;
+let levelWidth = 8000;
+
+// Player
+let player = {x:0,y:0,vy:0,fuel:100,integrity:100,speed:200};
+let shakeX = 0, shakeY = 0;
+let shakeIntensity = 0;
+
+// Data collection
+let dataCollected = {temp:0,pressure:0,wind:0,moisture:0};
+let dataSets = 0;
+let score = 0;
+let dataReadout = null; // {text, timer, color}
+let probes = [];
+let debris = [];
+
+// Particles
+let particles = [];
+// Lightning
+let lightning = {active:false,timer:0,branches:[],flash:0,warning:0,warningPos:null};
+// Clouds (parallax layers)
+let cloudsBack = [];
+let cloudsMid = [];
+let cloudsFront = [];
+
+// HUD flash messages
+let hudMessages = [];
+
+// Saved scores
+let savedScores = {};
+try{ savedScores = JSON.parse(localStorage.getItem('hurricane_scores'))||{}; }catch(e){}
+
+// Title animation
+let titleAngle = 0;
+let titlePlaneAngle = 0;
+
+// Buttons for menus
+let buttons = [];
+
+// Hover state for storm select
+let hoveredStorm = -1;
+
+// Debrief data
+let debriefData = null;
+
+// --- Resize ---
+function resize(){
+    dpr = window.devicePixelRatio || 1;
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// --- Input ---
+window.addEventListener('keydown', e => {
+    keys[e.key.toLowerCase()] = true;
+    if(['arrowup','arrowdown','arrowleft','arrowright',' '].includes(e.key.toLowerCase())) e.preventDefault();
+    if(state === STATES.TITLE || state === STATES.HOWTO || state === STATES.SELECT || state === STATES.BRIEFING || state === STATES.DEBRIEF || state === STATES.GAMEOVER){
+        clicked = true;
+    }
+    initAudio();
+});
+window.addEventListener('keyup', e => { keys[e.key.toLowerCase()] = false; });
+canvas.addEventListener('mousedown', e => {
+    mouseX = e.clientX; mouseY = e.clientY; clicked = true;
+    initAudio();
+});
+canvas.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+canvas.addEventListener('touchstart', e => {
+    e.preventDefault();
+    const t = e.touches[0];
+    touchY = t.clientY;
+    touchActive = true;
+    mouseX = t.clientX; mouseY = t.clientY; clicked = true;
+    initAudio();
+}, {passive:false});
+canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    const t = e.touches[0];
+    touchY = t.clientY;
+    mouseX = t.clientX; mouseY = t.clientY;
+}, {passive:false});
+canvas.addEventListener('touchend', e => { touchActive = false; touchY = null; });
+
+// --- Utility ---
+function lerp(a,b,t){ return a+(b-a)*t; }
+function clamp(v,lo,hi){ return Math.max(lo,Math.min(hi,v)); }
+function rng(lo,hi){ return lo+Math.random()*(hi-lo); }
+function rngInt(lo,hi){ return Math.floor(rng(lo,hi+1)); }
+function dist(x1,y1,x2,y2){ return Math.hypot(x2-x1,y2-y1); }
+
+function sstColor(sst){
+    if(sst<=26) return '#1565C0';
+    if(sst<=27) return lerpc('#1565C0','#2E7D32',(sst-26));
+    if(sst<=29) return lerpc('#2E7D32','#E65100',(sst-27)/2);
+    return lerpc('#E65100','#B71C1C',Math.min((sst-29)/2,1));
+}
+
+function lerpc(c1,c2,t){
+    const r1=parseInt(c1.slice(1,3),16),g1=parseInt(c1.slice(3,5),16),b1=parseInt(c1.slice(5,7),16);
+    const r2=parseInt(c2.slice(1,3),16),g2=parseInt(c2.slice(3,5),16),b2=parseInt(c2.slice(5,7),16);
+    const r=Math.round(lerp(r1,r2,t)),g=Math.round(lerp(g1,g2,t)),b=Math.round(lerp(b1,b2,t));
+    return `rgb(${r},${g},${b})`;
+}
+
+function getStormIntensity(progress, storm){
+    // Returns 0-1 intensity based on position in storm cross section
+    // 0-0.15: outer bands approach
+    // 0.15-0.35: inner rain bands
+    // 0.35-0.45: eye wall (max intensity)
+    // 0.45-0.55: eye (calm)
+    // 0.55-0.65: eye wall (max intensity again)
+    // 0.65-0.85: inner rain bands
+    // 0.85-1.0: outer bands exit
+    const p = progress;
+    if(p<0.15) return lerp(0.1,0.3,p/0.15);
+    if(p<0.35) return lerp(0.3,0.7,(p-0.15)/0.2);
+    if(p<0.45) return lerp(0.7,1.0,(p-0.35)/0.1);
+    if(p<0.55) return lerp(1.0,0.05,(p-0.45)/0.1);
+    if(p<0.65) return lerp(0.05,1.0,(p-0.55)/0.1);
+    if(p<0.85) return lerp(1.0,0.3,(p-0.65)/0.2);
+    return lerp(0.3,0.1,(p-0.85)/0.15);
+}
+
+function isInEye(progress){
+    return progress>0.46 && progress<0.54;
+}
+
+function getCurrentSST(storm, progress){
+    return lerp(storm.sst, storm.sstEnd, progress);
+}
+
+// --- Level Generation ---
+function generateLevel(stormIdx){
+    const storm = STORMS[stormIdx];
+    scrollX = 0;
+    stormProgress = 0;
+    levelWidth = 8000 + stormIdx * 1500;
+    player.x = 120;
+    player.y = H * 0.4;
+    player.vy = 0;
+    player.fuel = 100;
+    player.integrity = 100;
+    player.speed = 180 + stormIdx * 10;
+    dataCollected = {temp:0,pressure:0,wind:0,moisture:0};
+    dataSets = 0;
+    score = 0;
+    dataReadout = null;
+    shakeIntensity = 0;
+    shakeX = 0; shakeY = 0;
+    hudMessages = [];
+    lightning = {active:false,timer:0,branches:[],flash:0,warning:0,warningPos:null};
+
+    // Generate probes
+    probes = [];
+    const probeCount = 40 + stormIdx * 15;
+    for(let i=0;i<probeCount;i++){
+        const px = rng(300, levelWidth - 300);
+        const progress = px / levelWidth;
+        const intensity = getStormIntensity(progress, storm);
+        // More probes in intense areas (risk/reward)
+        if(intensity < 0.4 && Math.random() > 0.5) continue;
+        const py = rng(60, H - 120);
+        const type = PROBE_TYPES[rngInt(0,3)];
+        probes.push({x:px, y:py, type:type, collected:false, radius:14, glow:0, glowDir:1});
+    }
+
+    // Generate debris spawn points (they'll spawn dynamically)
+    debris = [];
+
+    // Generate cloud layers
+    cloudsBack = [];
+    cloudsMid = [];
+    cloudsFront = [];
+    for(let i=0;i<30;i++){
+        cloudsBack.push({x:rng(0,levelWidth),y:rng(0,H*0.6),w:rng(200,500),h:rng(40,100),opacity:rng(0.1,0.25)});
+    }
+    for(let i=0;i<25;i++){
+        cloudsMid.push({x:rng(0,levelWidth),y:rng(0,H*0.7),w:rng(150,350),h:rng(30,80),opacity:rng(0.15,0.35)});
+    }
+    for(let i=0;i<15;i++){
+        cloudsFront.push({x:rng(0,levelWidth),y:rng(0,H*0.8),w:rng(100,250),h:rng(20,50),opacity:rng(0.05,0.2)});
+    }
+
+    // Reset particles
+    particles = [];
+
+    currentSST = storm.sst;
+}
+
+// --- Particle System ---
+function addParticle(type, x, y, vx, vy, life, color, size){
+    if(particles.length >= MAX_PARTICLES) return;
+    particles.push({type,x,y,vx,vy,life,maxLife:life,color,size,angle:Math.random()*Math.PI*2,spin:rng(-3,3)});
+}
+
+function updateParticles(dt){
+    for(let i=particles.length-1;i>=0;i--){
+        const p = particles[i];
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        p.life -= dt;
+        p.angle += p.spin * dt;
+        if(p.life<=0 || p.x < scrollX - 100 || p.x > scrollX + W + 100 || p.y > H + 50){
+            particles.splice(i,1);
+        }
+    }
+}
+
+function drawParticles(){
+    for(const p of particles){
+        const sx = p.x - scrollX;
+        const sy = p.y;
+        const alpha = clamp(p.life / p.maxLife, 0, 1);
+        ctx.globalAlpha = alpha;
+        if(p.type === 'rain'){
+            ctx.strokeStyle = p.color;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(sx,sy);
+            ctx.lineTo(sx + p.vx*0.02, sy + p.vy*0.02);
+            ctx.stroke();
+        } else if(p.type === 'wind'){
+            ctx.strokeStyle = p.color;
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(sx,sy);
+            ctx.lineTo(sx + p.vx*0.04, sy + p.vy*0.01);
+            ctx.stroke();
+        } else if(p.type === 'data'){
+            ctx.fillStyle = p.color;
+            ctx.beginPath();
+            ctx.arc(sx,sy,p.size*alpha,0,Math.PI*2);
+            ctx.fill();
+        } else if(p.type === 'debris'){
+            ctx.save();
+            ctx.translate(sx,sy);
+            ctx.rotate(p.angle);
+            ctx.fillStyle = p.color;
+            ctx.fillRect(-p.size/2,-p.size/2,p.size,p.size*0.6);
+            ctx.restore();
+        } else if(p.type === 'spark'){
+            ctx.fillStyle = p.color;
+            ctx.beginPath();
+            ctx.arc(sx,sy,p.size*alpha,0,Math.PI*2);
+            ctx.fill();
+        }
+    }
+    ctx.globalAlpha = 1;
+}
+
+// --- Spawn rain/wind particles ---
+function spawnWeatherParticles(intensity, stormCat){
+    const rainCount = Math.floor(intensity * 8 * stormCat * 0.5);
+    for(let i=0;i<rainCount;i++){
+        if(particles.length>=MAX_PARTICLES) break;
+        const rx = scrollX + rng(-50, W+50);
+        const ry = rng(-30, -5);
+        const windStr = intensity * stormCat * 40;
+        addParticle('rain', rx, ry, rng(-windStr, windStr*0.5), rng(300,600+intensity*300), rng(0.8,2), `rgba(179,229,252,${rng(0.3,0.7)})`, 1);
+    }
+    // Wind streaks
+    if(Math.random() < intensity * 0.4){
+        const wy = rng(30, H-80);
+        addParticle('wind', scrollX - 10, wy, rng(400,900)*intensity, rng(-20,20), rng(0.3,0.8), `rgba(200,220,240,${rng(0.1,0.3)})`, 1);
+    }
+}
+
+// --- Debris System ---
+let debrisTimer = 0;
+function spawnDebris(intensity, stormCat, dt2){
+    debrisTimer -= dt2;
+    if(debrisTimer > 0) return;
+    if(intensity < 0.5) { debrisTimer = 2; return; }
+    debrisTimer = rng(0.3, 1.5) / (intensity * stormCat * 0.3);
+    const dy = rng(40, H - 100);
+    const speed = rng(200, 500) * intensity;
+    const fromRight = Math.random() > 0.3;
+    const dx = fromRight ? scrollX + W + 40 : scrollX - 40;
+    const dvx = fromRight ? -speed : speed;
+    debris.push({
+        x:dx, y:dy, vx:dvx, vy:rng(-60,60),
+        size:rng(8,22), angle:0, spin:rng(-5,5),
+        type:rngInt(0,2) // 0=square, 1=triangle, 2=circle
+    });
+}
+
+function updateDebris(dt2){
+    for(let i=debris.length-1;i>=0;i--){
+        const d = debris[i];
+        d.x += d.vx * dt2;
+        d.y += d.vy * dt2;
+        d.angle += d.spin * dt2;
+        // Check collision with player
+        const px = player.x, py = player.y;
+        if(dist(d.x, d.y, px, py) < d.size + 18){
+            player.integrity -= rng(5,12);
+            shakeIntensity = Math.max(shakeIntensity, 8);
+            playImpact();
+            hudMessages.push({text:'DEBRIS HIT!', timer:1.5, color:'#FF5252'});
+            // Sparks
+            for(let j=0;j<6;j++){
+                addParticle('spark', px, py, rng(-150,150), rng(-150,150), rng(0.2,0.5), '#FFA726', rng(2,4));
+            }
+            debris.splice(i,1);
+            continue;
+        }
+        if(d.x < scrollX - 100 || d.x > scrollX + W + 100 || d.y < -50 || d.y > H + 50){
+            debris.splice(i,1);
+        }
+    }
+}
+
+function drawDebris(){
+    for(const d of debris){
+        const sx = d.x - scrollX;
+        ctx.save();
+        ctx.translate(sx, d.y);
+        ctx.rotate(d.angle);
+        ctx.fillStyle = '#424242';
+        ctx.strokeStyle = '#616161';
+        ctx.lineWidth = 1;
+        if(d.type === 0){
+            ctx.fillRect(-d.size/2,-d.size/3,d.size,d.size*0.6);
+            ctx.strokeRect(-d.size/2,-d.size/3,d.size,d.size*0.6);
+        } else if(d.type === 1){
+            ctx.beginPath();
+            ctx.moveTo(0,-d.size/2);
+            ctx.lineTo(d.size/2,d.size/2);
+            ctx.lineTo(-d.size/2,d.size/2);
+            ctx.closePath();
+            ctx.fill();ctx.stroke();
+        } else {
+            ctx.beginPath();
+            ctx.arc(0,0,d.size/2,0,Math.PI*2);
+            ctx.fill();ctx.stroke();
+        }
+        ctx.restore();
+    }
+}
+
+// --- Lightning ---
+function generateLightningBranch(x,y,angle,depth,maxDepth){
+    if(depth>maxDepth) return [];
+    const segs = [];
+    let cx=x,cy=y;
+    const len = rng(30,80) / (depth+1);
+    const steps = rngInt(3,6);
+    for(let i=0;i<steps;i++){
+        const nx = cx + Math.cos(angle)*len;
+        const ny = cy + Math.sin(angle)*len;
+        segs.push({x1:cx,y1:cy,x2:nx,y2:ny,width:Math.max(1,3-depth)});
+        cx=nx;cy=ny;
+        angle += rng(-0.5,0.5);
+    }
+    if(Math.random()>0.4 && depth<maxDepth){
+        segs.push(...generateLightningBranch(cx,cy,angle+rng(-0.8,0.8),depth+1,maxDepth));
+    }
+    return segs;
+}
+
+function triggerLightning(intensity){
+    if(lightning.active || intensity < 0.5) return;
+    if(Math.random() > intensity * 0.008) return;
+    // Warning phase
+    const lx = scrollX + rng(W*0.2, W*0.8);
+    lightning.warning = 0.6;
+    lightning.warningPos = {x: lx, y: 0};
+    setTimeout(()=>{
+        lightning.active = true;
+        lightning.timer = 0.3;
+        lightning.flash = 0.15;
+        lightning.branches = generateLightningBranch(lx, 0, Math.PI/2 + rng(-0.3,0.3), 0, 3);
+        playThunder();
+        // Check if player is near
+        if(Math.abs(player.x - lx) < 60){
+            player.integrity -= rng(8,15);
+            shakeIntensity = 12;
+            hudMessages.push({text:'LIGHTNING STRIKE!', timer:2, color:'#FFFF00'});
+        }
+    }, 500);
+}
+
+function updateLightning(dt2){
+    if(lightning.warning > 0) lightning.warning -= dt2;
+    if(!lightning.active) return;
+    lightning.timer -= dt2;
+    lightning.flash -= dt2;
+    if(lightning.timer <= 0){
+        lightning.active = false;
+        lightning.branches = [];
+    }
+}
+
+function drawLightning(){
+    // Warning flicker
+    if(lightning.warning > 0 && lightning.warningPos){
+        ctx.globalAlpha = Math.sin(lightning.warning*30)*0.3+0.3;
+        ctx.strokeStyle = '#FFFF00';
+        ctx.lineWidth = 2;
+        ctx.setLineDash([4,4]);
+        const wx = lightning.warningPos.x - scrollX;
+        ctx.beginPath();
+        ctx.moveTo(wx, 0);
+        ctx.lineTo(wx, H);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.globalAlpha = 1;
+    }
+    if(!lightning.active) return;
+    // Flash overlay
+    if(lightning.flash > 0){
+        ctx.globalAlpha = lightning.flash * 4;
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(0,0,W,H);
+        ctx.globalAlpha = 1;
+    }
+    // Draw branches
+    ctx.shadowColor = '#FFFFFF';
+    ctx.shadowBlur = 15;
+    for(const seg of lightning.branches){
+        ctx.strokeStyle = `rgba(255,255,200,${clamp(lightning.timer*3,0,1)})`;
+        ctx.lineWidth = seg.width;
+        ctx.beginPath();
+        ctx.moveTo(seg.x1 - scrollX, seg.y1);
+        ctx.lineTo(seg.x2 - scrollX, seg.y2);
+        ctx.stroke();
+    }
+    ctx.shadowBlur = 0;
+}
+
+// --- Downdraft zones ---
+let downdrafts = [];
+function generateDowndrafts(storm){
+    downdrafts = [];
+    const count = 3 + storm * 2;
+    for(let i=0;i<count;i++){
+        const dx = rng(levelWidth*0.2, levelWidth*0.8);
+        downdrafts.push({x:dx, width:rng(80,200), strength:rng(100,300)});
+    }
+}
+
+// --- Draw functions ---
+
+function drawOcean(sst){
+    const oceanY = H - 60;
+    const color = sstColor(sst);
+    // Ocean gradient
+    const grad = ctx.createLinearGradient(0,oceanY,0,H);
+    grad.addColorStop(0, color);
+    grad.addColorStop(1, lerpc(color,'#000000',0.5));
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,oceanY,W,60);
+    // Waves
+    ctx.strokeStyle = `rgba(255,255,255,0.15)`;
+    ctx.lineWidth = 2;
+    const intensity = getStormIntensity(stormProgress, STORMS[currentStorm]);
+    const waveAmp = 3 + intensity * 12;
+    for(let row=0;row<3;row++){
+        ctx.beginPath();
+        for(let x=0;x<=W;x+=4){
+            const wx = x + scrollX*0.1;
+            const wy = oceanY + 5 + row*15 + Math.sin(wx*0.02 + frameCount*0.03 + row)*waveAmp;
+            if(x===0) ctx.moveTo(x,wy); else ctx.lineTo(x,wy);
+        }
+        ctx.stroke();
+    }
+    // SST label on ocean
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 11px monospace';
+    ctx.textAlign = 'center';
+    ctx.globalAlpha = 0.6;
+    ctx.fillText(`SST: ${sst.toFixed(1)}°C`, W/2, oceanY + 35);
+    ctx.globalAlpha = 1;
+}
+
+function drawSky(intensity){
+    // Sky gradient based on storm intensity
+    const darkColor = lerpc('#37474F','#0D1117', intensity);
+    const lightColor = lerpc('#546E7A','#1B2631', intensity);
+    const grad = ctx.createLinearGradient(0,0,0,H-60);
+    grad.addColorStop(0, darkColor);
+    grad.addColorStop(1, lightColor);
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0,W,H-60);
+    // Eye of storm - clear patch
+    if(isInEye(stormProgress)){
+        const eyeAlpha = 1 - Math.abs(stormProgress - 0.5)*10;
+        ctx.globalAlpha = clamp(eyeAlpha, 0, 0.5);
+        const eyeGrad = ctx.createRadialGradient(W/2, H*0.3, 0, W/2, H*0.3, H*0.6);
+        eyeGrad.addColorStop(0, '#4FC3F7');
+        eyeGrad.addColorStop(0.5, '#29B6F6');
+        eyeGrad.addColorStop(1, 'transparent');
+        ctx.fillStyle = eyeGrad;
+        ctx.fillRect(0,0,W,H);
+        ctx.globalAlpha = 1;
+    }
+}
+
+function drawCloudLayer(clouds, speedFactor, opacity){
+    const intensity = getStormIntensity(stormProgress, STORMS[currentStorm]);
+    for(const c of clouds){
+        const sx = c.x - scrollX * speedFactor;
+        const wrappedX = ((sx % (W+600)) + (W+600)) % (W+600) - 300;
+        ctx.globalAlpha = c.opacity * opacity * (0.5 + intensity * 0.5);
+        ctx.fillStyle = `rgb(${30+intensity*20},${30+intensity*15},${35+intensity*15})`;
+        // Soft cloud shape
+        ctx.beginPath();
+        ctx.ellipse(wrappedX + c.w/2, c.y, c.w/2, c.h/2, 0, 0, Math.PI*2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+}
+
+function drawPlayer(){
+    const px = player.x - scrollX + shakeX;
+    const py = player.y + shakeY;
+    const bankAngle = clamp(player.vy * 0.003, -0.2, 0.2);
+    ctx.save();
+    ctx.translate(px, py);
+    ctx.rotate(bankAngle);
+    // Aircraft body
+    ctx.fillStyle = '#CFD8DC';
+    ctx.strokeStyle = '#90A4AE';
+    ctx.lineWidth = 1;
+    // Fuselage
+    ctx.beginPath();
+    ctx.ellipse(0, 0, 28, 8, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+    // Nose
+    ctx.beginPath();
+    ctx.moveTo(28, 0);
+    ctx.lineTo(36, -2);
+    ctx.lineTo(36, 2);
+    ctx.closePath();
+    ctx.fill();
+    // Wings
+    ctx.fillStyle = '#B0BEC5';
+    ctx.beginPath();
+    ctx.moveTo(-5, -2);
+    ctx.lineTo(5, -20);
+    ctx.lineTo(12, -20);
+    ctx.lineTo(8, -2);
+    ctx.closePath();
+    ctx.fill();ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(-5, 2);
+    ctx.lineTo(5, 20);
+    ctx.lineTo(12, 20);
+    ctx.lineTo(8, 2);
+    ctx.closePath();
+    ctx.fill();ctx.stroke();
+    // Tail
+    ctx.beginPath();
+    ctx.moveTo(-24, -1);
+    ctx.lineTo(-30, -12);
+    ctx.lineTo(-22, -12);
+    ctx.lineTo(-18, -1);
+    ctx.closePath();
+    ctx.fill();ctx.stroke();
+    // Tail horizontal
+    ctx.beginPath();
+    ctx.moveTo(-22, 0);
+    ctx.lineTo(-28, -6);
+    ctx.lineTo(-20, -6);
+    ctx.lineTo(-16, 0);
+    ctx.closePath();
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(-22, 0);
+    ctx.lineTo(-28, 6);
+    ctx.lineTo(-20, 6);
+    ctx.lineTo(-16, 0);
+    ctx.closePath();
+    ctx.fill();
+    // Wing lights
+    ctx.fillStyle = '#448AFF';
+    ctx.shadowColor = '#448AFF';
+    ctx.shadowBlur = 6;
+    ctx.beginPath();
+    ctx.arc(8, -18, 2, 0, Math.PI*2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(8, 18, 2, 0, Math.PI*2);
+    ctx.fill();
+    // Nose light
+    ctx.fillStyle = '#FF5252';
+    ctx.shadowColor = '#FF5252';
+    ctx.beginPath();
+    ctx.arc(34, 0, 1.5, 0, Math.PI*2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    // Cockpit
+    ctx.fillStyle = '#29B6F6';
+    ctx.globalAlpha = 0.6;
+    ctx.beginPath();
+    ctx.ellipse(18, -1, 7, 4, 0, -Math.PI*0.8, Math.PI*0.1);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    ctx.restore();
+    // Engine trail
+    for(let i=0;i<2;i++){
+        addParticle('spark', player.x - 30, player.y + (i===0?-3:3), rng(-100,-50), rng(-10,10), rng(0.1,0.25), '#FF8A65', rng(1,3));
+    }
+}
+
+function drawProbes(){
+    for(const p of probes){
+        if(p.collected) continue;
+        const sx = p.x - scrollX;
+        if(sx < -30 || sx > W + 30) continue;
+        // Glow animation
+        p.glow += p.glowDir * dt * 2;
+        if(p.glow > 1){ p.glow = 1; p.glowDir = -1; }
+        if(p.glow < 0.3){ p.glow = 0.3; p.glowDir = 1; }
+        const color = PROBE_COLORS[p.type];
+        // Outer glow
+        ctx.globalAlpha = 0.3 * p.glow;
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.arc(sx, p.y, p.radius * 2, 0, Math.PI*2);
+        ctx.fill();
+        // Inner orb
+        ctx.globalAlpha = 0.8;
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 10;
+        ctx.beginPath();
+        ctx.arc(sx, p.y, p.radius, 0, Math.PI*2);
+        ctx.fill();
+        // Core
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(sx, p.y, p.radius * 0.4, 0, Math.PI*2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.globalAlpha = 1;
+        // Label
+        ctx.font = '9px monospace';
+        ctx.fillStyle = color;
+        ctx.textAlign = 'center';
+        const labels = {temp:'T',pressure:'P',wind:'W',moisture:'M'};
+        ctx.fillText(labels[p.type], sx, p.y + p.radius + 12);
+    }
+}
+
+function drawRainOverlay(intensity){
+    if(intensity < 0.2) return;
+    // Fog/rain overlay
+    ctx.globalAlpha = intensity * 0.15;
+    ctx.fillStyle = '#37474F';
+    ctx.fillRect(0,0,W,H);
+    ctx.globalAlpha = 1;
+}
+
+function drawHUD(){
+    const storm = STORMS[currentStorm];
+    const padX = 15, padY = 12;
+    // --- Top-left: Fuel & Integrity ---
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    roundRect(padX, padY, 180, 70, 6);
+    ctx.fill();
+    // Fuel bar
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 11px monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('FUEL', padX+8, padY+18);
+    const fuelW = 120;
+    ctx.fillStyle = '#263238';
+    roundRect(padX+50, padY+8, fuelW, 14, 3);
+    ctx.fill();
+    const fuelColor = player.fuel > 30 ? '#66BB6A' : player.fuel > 15 ? '#FFA726' : '#FF5252';
+    ctx.fillStyle = fuelColor;
+    roundRect(padX+50, padY+8, fuelW * (player.fuel/100), 14, 3);
+    ctx.fill();
+    ctx.fillStyle = '#FFF';
+    ctx.font = '9px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(`${Math.ceil(player.fuel)}%`, padX+50+fuelW/2, padY+19);
+    // Integrity bar
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 11px monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('HULL', padX+8, padY+42);
+    ctx.fillStyle = '#263238';
+    roundRect(padX+50, padY+32, fuelW, 14, 3);
+    ctx.fill();
+    const hullColor = player.integrity > 50 ? '#29B6F6' : player.integrity > 25 ? '#FFA726' : '#FF5252';
+    ctx.fillStyle = hullColor;
+    roundRect(padX+50, padY+32, fuelW * (player.integrity/100), 14, 3);
+    ctx.fill();
+    ctx.fillStyle = '#FFF';
+    ctx.font = '9px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(`${Math.ceil(player.integrity)}%`, padX+50+fuelW/2, padY+43);
+    // Eye indicator
+    if(isInEye(stormProgress)){
+        ctx.fillStyle = '#4FC3F7';
+        ctx.font = 'bold 11px monospace';
+        ctx.textAlign = 'left';
+        ctx.fillText('IN THE EYE - REFUELING', padX+8, padY+62);
+    }
+
+    // --- Top-right: Data collected ---
+    const dataX = W - 195;
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    roundRect(dataX, padY, 180, 85, 6);
+    ctx.fill();
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 11px monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('DATA COLLECTED', dataX+8, padY+16);
+    const types = [{k:'temp',l:'TEMP',c:PROBE_COLORS.temp},{k:'pressure',l:'PRES',c:PROBE_COLORS.pressure},
+                   {k:'wind',l:'WIND',c:PROBE_COLORS.wind},{k:'moisture',l:'MOIS',c:PROBE_COLORS.moisture}];
+    types.forEach((t,i)=>{
+        ctx.fillStyle = t.c;
+        ctx.font = '10px monospace';
+        ctx.fillText(`${t.l}: ${dataCollected[t.k]}`, dataX+8, padY+32+i*14);
+    });
+
+    // --- Top-center: Score ---
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    const scoreW = 140;
+    roundRect(W/2-scoreW/2, padY, scoreW, 30, 6);
+    ctx.fill();
+    ctx.fillStyle = '#FFA726';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(`SCORE: ${score}`, W/2, padY+20);
+
+    // --- Bottom: SST Bar ---
+    const barH = 28;
+    const barY = H - barH;
+    const sstGrad = ctx.createLinearGradient(0,barY,W,barY);
+    for(let i=0;i<=10;i++){
+        const t = i/10;
+        const localSST = lerp(storm.sst, storm.sstEnd, t);
+        sstGrad.addColorStop(t, sstColor(localSST));
+    }
+    ctx.globalAlpha = 0.7;
+    ctx.fillStyle = sstGrad;
+    ctx.fillRect(0,barY,W,barH);
+    ctx.globalAlpha = 1;
+    // Progress marker
+    const markerX = stormProgress * W;
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.moveTo(markerX, barY);
+    ctx.lineTo(markerX-5, barY-8);
+    ctx.lineTo(markerX+5, barY-8);
+    ctx.closePath();
+    ctx.fill();
+    // SST text
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 11px monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText(`SST: ${currentSST.toFixed(1)}°C`, 10, barY+18);
+    // Storm progress labels
+    ctx.font = '9px monospace';
+    ctx.textAlign = 'center';
+    ctx.globalAlpha = 0.6;
+    const labels = [{p:0.07,t:'OUTER BANDS'},{p:0.25,t:'RAIN BANDS'},{p:0.4,t:'EYEWALL'},{p:0.5,t:'EYE'},{p:0.6,t:'EYEWALL'},{p:0.75,t:'RAIN BANDS'},{p:0.93,t:'OUTER BANDS'}];
+    labels.forEach(l=>{
+        ctx.fillText(l.t, l.p*W, barY+18);
+    });
+    ctx.globalAlpha = 1;
+
+    // Storm name
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 12px monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(`${storm.name} | ${storm.cat}`, W-10, barY+18);
+
+    // Data readout popup
+    if(dataReadout && dataReadout.timer > 0){
+        ctx.globalAlpha = clamp(dataReadout.timer * 2, 0, 1);
+        ctx.fillStyle = 'rgba(0,0,0,0.8)';
+        const tw = ctx.measureText(dataReadout.text).width + 20;
+        roundRect(W/2-tw/2, H*0.3 - 15, tw, 30, 6);
+        ctx.fill();
+        ctx.fillStyle = dataReadout.color;
+        ctx.font = 'bold 13px monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(dataReadout.text, W/2, H*0.3 + 5);
+        ctx.globalAlpha = 1;
+    }
+
+    // HUD messages
+    hudMessages.forEach((m,i)=>{
+        if(m.timer <= 0) return;
+        ctx.globalAlpha = clamp(m.timer, 0, 1);
+        ctx.fillStyle = m.color;
+        ctx.font = 'bold 16px monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(m.text, W/2, H*0.2 + i*24);
+        ctx.globalAlpha = 1;
+    });
+}
+
+function roundRect(x,y,w,h,r){
+    ctx.beginPath();
+    ctx.moveTo(x+r,y);
+    ctx.lineTo(x+w-r,y);
+    ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+    ctx.lineTo(x+w,y+h-r);
+    ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+    ctx.lineTo(x+r,y+h);
+    ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+    ctx.lineTo(x,y+r);
+    ctx.quadraticCurveTo(x,y,x+r,y);
+    ctx.closePath();
+}
+
+// --- Draw Eyewall Effect ---
+function drawEyewallEffect(intensity){
+    if(intensity < 0.7) return;
+    const alpha = (intensity - 0.7) * 2;
+    // Swirling dark bands
+    ctx.globalAlpha = alpha * 0.3;
+    for(let i=0;i<5;i++){
+        const bx = W * 0.5 + Math.sin(frameCount*0.01 + i*1.2) * W * 0.3;
+        const by = H * 0.5 + Math.cos(frameCount*0.015 + i*0.8) * H * 0.3;
+        const bw = rng(100,300);
+        const bh = rng(20,60);
+        ctx.fillStyle = '#212121';
+        ctx.beginPath();
+        ctx.ellipse(bx,by,bw,bh,frameCount*0.005+i,0,Math.PI*2);
+        ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+}
+
+// ============================================================
+// MENU SCREENS
+// ============================================================
+
+function drawButton(text, x, y, w, h, hover, accentColor){
+    const hovered = hover;
+    ctx.fillStyle = hovered ? (accentColor||'#FF6D00') : 'rgba(255,255,255,0.1)';
+    ctx.strokeStyle = accentColor||'#FF6D00';
+    ctx.lineWidth = 2;
+    roundRect(x-w/2, y-h/2, w, h, 8);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = hovered ? '#000' : '#FFF';
+    ctx.font = `bold ${Math.floor(h*0.4)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, x, y+1);
+}
+
+function isOver(x,y,w,h){
+    return mouseX >= x-w/2 && mouseX <= x+w/2 && mouseY >= y-h/2 && mouseY <= y+h/2;
+}
+
+// --- Title Screen ---
+function drawTitle(){
+    // Background - swirling hurricane from above
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(0,0,W,H);
+    // Spiral
+    titleAngle += dt * 0.3;
+    ctx.save();
+    ctx.translate(W/2, H/2);
+    ctx.rotate(titleAngle * 0.1);
+    for(let arm=0;arm<5;arm++){
+        const armAngle = (arm/5)*Math.PI*2;
+        ctx.strokeStyle = `rgba(55,71,79,0.4)`;
+        ctx.lineWidth = 15;
+        ctx.beginPath();
+        for(let t=0;t<6;t+=0.05){
+            const r = t * 40;
+            const a = armAngle + t * 1.2 + titleAngle*0.2;
+            const x = Math.cos(a)*r;
+            const y = Math.sin(a)*r;
+            if(t===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+        }
+        ctx.stroke();
+        // Inner brighter arms
+        ctx.strokeStyle = `rgba(79,195,247,0.15)`;
+        ctx.lineWidth = 6;
+        ctx.beginPath();
+        for(let t=0;t<5;t+=0.05){
+            const r = t * 35;
+            const a = armAngle + t * 1.3 + titleAngle*0.25;
+            const x = Math.cos(a)*r;
+            const y = Math.sin(a)*r;
+            if(t===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+        }
+        ctx.stroke();
+    }
+    // Eye
+    const eyeGrad = ctx.createRadialGradient(0,0,0,0,0,30);
+    eyeGrad.addColorStop(0,'rgba(79,195,247,0.3)');
+    eyeGrad.addColorStop(1,'transparent');
+    ctx.fillStyle = eyeGrad;
+    ctx.beginPath();
+    ctx.arc(0,0,30,0,Math.PI*2);
+    ctx.fill();
+    ctx.restore();
+    // Plane silhouette diving in
+    titlePlaneAngle += dt * 0.8;
+    const planeR = 120 + Math.sin(titlePlaneAngle)*30;
+    const planeA = titlePlaneAngle * 0.5;
+    const ppx = W/2 + Math.cos(planeA)*planeR;
+    const ppy = H/2 + Math.sin(planeA)*planeR*0.6;
+    ctx.save();
+    ctx.translate(ppx, ppy);
+    ctx.rotate(planeA + Math.PI/2 + 0.3);
+    ctx.fillStyle = '#CFD8DC';
+    ctx.beginPath();
+    ctx.ellipse(0,0,14,5,0,0,Math.PI*2);
+    ctx.fill();
+    // Wings
+    ctx.fillStyle = '#90A4AE';
+    ctx.beginPath();
+    ctx.moveTo(-3,-1);ctx.lineTo(3,-12);ctx.lineTo(6,-12);ctx.lineTo(4,-1);
+    ctx.closePath();ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(-3,1);ctx.lineTo(3,12);ctx.lineTo(6,12);ctx.lineTo(4,1);
+    ctx.closePath();ctx.fill();
+    ctx.restore();
+    // Title text
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = `bold ${Math.min(W*0.1, 80)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.shadowColor = '#FF6D00';
+    ctx.shadowBlur = 20;
+    ctx.fillText('HURRICANE', W/2, H*0.22);
+    ctx.shadowBlur = 0;
+    // Subtitle
+    ctx.fillStyle = '#90A4AE';
+    ctx.font = `${Math.min(W*0.025, 18)}px 'Segoe UI',sans-serif`;
+    ctx.fillText('STORM CHASER FLIGHT MISSION', W/2, H*0.32);
+    // NGSS badge
+    ctx.fillStyle = '#546E7A';
+    ctx.font = `${Math.min(W*0.017, 13)}px monospace`;
+    ctx.fillText('NGSS MS-ESS2-5 / MS-ESS2-6 | Grade 8 Science', W/2, H*0.38);
+    // Buttons
+    buttons = [];
+    const btnW = 220, btnH = 50;
+    const btn1 = {x:W/2, y:H*0.58, w:btnW, h:btnH, id:'start'};
+    const btn2 = {x:W/2, y:H*0.72, w:btnW, h:btnH, id:'howto'};
+    drawButton('FLY INTO THE STORM', btn1.x, btn1.y, btn1.w, btn1.h, isOver(btn1.x,btn1.y,btn1.w,btn1.h));
+    drawButton('HOW TO PLAY', btn2.x, btn2.y, btn2.w, btn2.h, isOver(btn2.x,btn2.y,btn2.w,btn2.h), '#29B6F6');
+    buttons.push(btn1, btn2);
+    // Version
+    ctx.fillStyle = '#37474F';
+    ctx.font = '10px monospace';
+    ctx.fillText('CAST Science Resources | v1.0', W/2, H-15);
+}
+
+function updateTitle(){
+    if(clicked){
+        for(const b of buttons){
+            if(isOver(b.x,b.y,b.w,b.h)){
+                if(b.id==='start') state = STATES.SELECT;
+                if(b.id==='howto') state = STATES.HOWTO;
+            }
+        }
+        clicked = false;
+    }
+}
+
+// --- How To Play ---
+function drawHowTo(){
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(0,0,W,H);
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = `bold ${Math.min(W*0.05, 36)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('HOW TO PLAY', W/2, 50);
+    // Hurricane cross-section diagram
+    const cx = W/2, cy = H*0.42;
+    const hw = W * 0.38, hh = H*0.22;
+    // Outer bands
+    ctx.fillStyle = 'rgba(55,71,79,0.4)';
+    ctx.beginPath();
+    ctx.ellipse(cx,cy,hw,hh,0,0,Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#546E7A';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.fillStyle = '#90A4AE';
+    ctx.font = '11px monospace';
+    ctx.fillText('OUTER RAIN BANDS', cx, cy - hh - 12);
+    // Inner rain bands
+    ctx.fillStyle = 'rgba(38,50,56,0.5)';
+    ctx.beginPath();
+    ctx.ellipse(cx,cy,hw*0.65,hh*0.7,0,0,Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#455A64';
+    ctx.stroke();
+    // Eye wall
+    ctx.fillStyle = 'rgba(33,33,33,0.7)';
+    ctx.beginPath();
+    ctx.ellipse(cx,cy,hw*0.35,hh*0.5,0,0,Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#FF6D00';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.fillStyle = '#FF6D00';
+    ctx.font = 'bold 10px monospace';
+    ctx.fillText('EYEWALL (DANGER!)', cx, cy - hh*0.5 - 10);
+    // Eye
+    ctx.fillStyle = 'rgba(79,195,247,0.3)';
+    ctx.beginPath();
+    ctx.ellipse(cx,cy,hw*0.12,hh*0.2,0,0,Math.PI*2);
+    ctx.fill();
+    ctx.fillStyle = '#4FC3F7';
+    ctx.font = 'bold 11px monospace';
+    ctx.fillText('EYE', cx, cy+4);
+    ctx.font = '9px monospace';
+    ctx.fillText('(CALM - REFUEL)', cx, cy+16);
+    // Plane icon
+    ctx.fillStyle = '#CFD8DC';
+    ctx.beginPath();
+    ctx.ellipse(cx - hw*0.8, cy, 10, 4, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.fillStyle = '#FFA726';
+    ctx.font = '10px monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('YOU', cx - hw*0.8 - 15, cy+4);
+    // Arrow path
+    ctx.strokeStyle = '#FFA726';
+    ctx.setLineDash([4,4]);
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(cx - hw*0.7, cy);
+    ctx.lineTo(cx + hw*0.7, cy);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    // Instructions
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = '13px monospace';
+    const instr = [
+        'Arrow Keys / WASD: Move your aircraft up and down',
+        'Fly THROUGH glowing probes to collect data (T P W M)',
+        'Reach the EYE to refuel. Survive both eyewalls!',
+        'Warmer ocean (SST) = stronger storm = more data (risk/reward)',
+        'Avoid debris, lightning, and downdrafts. Watch your hull!'
+    ];
+    instr.forEach((t,i)=>{
+        ctx.fillStyle = i===3 ? '#FFA726' : '#B0BEC5';
+        ctx.fillText(t, W/2, H*0.7 + i*22);
+    });
+    // Probe legend
+    ctx.font = '11px monospace';
+    const probeInfo = [
+        {c:PROBE_COLORS.temp, l:'Temperature (SST)'},
+        {c:PROBE_COLORS.pressure, l:'Pressure'},
+        {c:PROBE_COLORS.wind, l:'Wind Speed'},
+        {c:PROBE_COLORS.moisture, l:'Humidity'}
+    ];
+    probeInfo.forEach((p,i)=>{
+        const px = W*0.2 + i * (W*0.6/4);
+        ctx.fillStyle = p.c;
+        ctx.beginPath();
+        ctx.arc(px, H*0.64, 6, 0, Math.PI*2);
+        ctx.fill();
+        ctx.fillStyle = '#B0BEC5';
+        ctx.fillText(p.l, px, H*0.64 + 18);
+    });
+    // Back button
+    buttons = [];
+    const btn = {x:W/2, y:H*0.93, w:180, h:40, id:'back'};
+    drawButton('BACK', btn.x, btn.y, btn.w, btn.h, isOver(btn.x,btn.y,btn.w,btn.h), '#29B6F6');
+    buttons.push(btn);
+}
+
+function updateHowTo(){
+    if(clicked){
+        for(const b of buttons){
+            if(isOver(b.x,b.y,b.w,b.h) && b.id==='back') state = STATES.TITLE;
+        }
+        clicked = false;
+    }
+}
+
+// --- Storm Select ---
+function drawSelect(){
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(0,0,W,H);
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = `bold ${Math.min(W*0.04, 32)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('SELECT YOUR STORM', W/2, 45);
+    ctx.fillStyle = '#546E7A';
+    ctx.font = '12px monospace';
+    ctx.fillText('Higher SST = stronger storm = greater risk and reward', W/2, 68);
+    buttons = [];
+    const cardW = Math.min(W * 0.17, 165);
+    const cardH = H * 0.55;
+    const gap = 12;
+    const totalW = STORMS.length * cardW + (STORMS.length-1)*gap;
+    const startX = W/2 - totalW/2 + cardW/2;
+    hoveredStorm = -1;
+    STORMS.forEach((s,i)=>{
+        const cx = startX + i*(cardW+gap);
+        const cy = H*0.48;
+        const hover = isOver(cx, cy, cardW, cardH);
+        if(hover) hoveredStorm = i;
+        // Card background
+        const catIntensity = s.catNum / 5;
+        ctx.fillStyle = hover ? 'rgba(255,109,0,0.15)' : 'rgba(255,255,255,0.05)';
+        ctx.strokeStyle = hover ? '#FF6D00' : 'rgba(255,255,255,0.15)';
+        ctx.lineWidth = hover ? 2 : 1;
+        roundRect(cx-cardW/2, cy-cardH/2, cardW, cardH, 8);
+        ctx.fill(); ctx.stroke();
+        // Storm number
+        ctx.fillStyle = sstColor(s.sst);
+        ctx.font = `bold ${Math.min(cardW*0.25, 36)}px 'Segoe UI',sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText(`${i+1}`, cx, cy - cardH*0.3);
+        // Storm name
+        ctx.fillStyle = '#ECEFF1';
+        ctx.font = `bold ${Math.min(cardW*0.09, 13)}px 'Segoe UI',sans-serif`;
+        ctx.fillText(s.name.split(' ').slice(-1)[0], cx, cy - cardH*0.15);
+        // Category
+        ctx.fillStyle = '#90A4AE';
+        ctx.font = `${Math.min(cardW*0.08, 11)}px monospace`;
+        ctx.fillText(s.cat, cx, cy - cardH*0.05);
+        // SST
+        ctx.fillStyle = sstColor(s.sst);
+        ctx.font = `bold ${Math.min(cardW*0.1, 14)}px monospace`;
+        ctx.fillText(`SST: ${s.sst}°C`, cx, cy + cardH*0.08);
+        // SST indicator bar
+        const barW = cardW * 0.7;
+        const barH2 = 8;
+        const barX = cx - barW/2;
+        const barY2 = cy + cardH*0.15;
+        ctx.fillStyle = '#263238';
+        roundRect(barX, barY2, barW, barH2, 3);
+        ctx.fill();
+        ctx.fillStyle = sstColor(s.sst);
+        roundRect(barX, barY2, barW * ((s.sst-24)/8), barH2, 3);
+        ctx.fill();
+        // Medal/score
+        const key = `storm_${i}`;
+        if(savedScores[key]){
+            const sc = savedScores[key];
+            const medal = sc.medal;
+            const medalColors = {bronze:'#CD7F32',silver:'#C0C0C0',gold:'#FFD700'};
+            ctx.fillStyle = medalColors[medal] || '#546E7A';
+            ctx.font = 'bold 12px monospace';
+            ctx.fillText(`${medal.toUpperCase()}`, cx, cy + cardH*0.3);
+            ctx.fillStyle = '#90A4AE';
+            ctx.font = '10px monospace';
+            ctx.fillText(`${sc.score} pts`, cx, cy + cardH*0.38);
+        } else {
+            ctx.fillStyle = '#37474F';
+            ctx.font = '10px monospace';
+            ctx.fillText('Not attempted', cx, cy + cardH*0.32);
+        }
+        buttons.push({x:cx, y:cy, w:cardW, h:cardH, id:`storm_${i}`});
+    });
+    // Back button
+    const btn = {x:80, y:H-30, w:120, h:36, id:'back'};
+    drawButton('BACK', btn.x, btn.y, btn.w, btn.h, isOver(btn.x,btn.y,btn.w,btn.h), '#546E7A');
+    buttons.push(btn);
+}
+
+function updateSelect(){
+    if(clicked){
+        for(const b of buttons){
+            if(isOver(b.x,b.y,b.w,b.h)){
+                if(b.id==='back'){ state = STATES.TITLE; }
+                else if(b.id.startsWith('storm_')){
+                    currentStorm = parseInt(b.id.split('_')[1]);
+                    state = STATES.BRIEFING;
+                }
+            }
+        }
+        clicked = false;
+    }
+}
+
+// --- Briefing ---
+function drawBriefing(){
+    const storm = STORMS[currentStorm];
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(0,0,W,H);
+    // Alert banner
+    ctx.fillStyle = 'rgba(255,109,0,0.1)';
+    roundRect(W*0.15, 30, W*0.7, 50, 8);
+    ctx.fill();
+    ctx.strokeStyle = '#FF6D00';
+    ctx.lineWidth = 1;
+    roundRect(W*0.15, 30, W*0.7, 50, 8);
+    ctx.stroke();
+    ctx.fillStyle = '#FF6D00';
+    ctx.font = `bold ${Math.min(W*0.03, 22)}px monospace`;
+    ctx.textAlign = 'center';
+    ctx.fillText('STORM BRIEFING', W/2, 60);
+    // Storm info
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = `bold ${Math.min(W*0.05, 36)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(storm.name, W/2, 130);
+    ctx.fillStyle = sstColor(storm.sst);
+    ctx.font = `bold ${Math.min(W*0.025, 20)}px monospace`;
+    ctx.fillText(`${storm.cat} | Sea Surface Temperature: ${storm.sst}°C${storm.sstEnd !== storm.sst ? ` → ${storm.sstEnd}°C` : ''}`, W/2, 165);
+    // Description
+    ctx.fillStyle = '#B0BEC5';
+    ctx.font = '14px monospace';
+    storm.desc.split('\n').forEach((line,i)=>{
+        ctx.fillText(line, W/2, 210 + i*22);
+    });
+    // Mission objectives
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 14px monospace';
+    ctx.fillText('MISSION OBJECTIVES:', W/2, 280);
+    ctx.fillStyle = '#90A4AE';
+    ctx.font = '13px monospace';
+    const objectives = [
+        'Collect all 4 types of data probes (Temperature, Pressure, Wind, Moisture)',
+        'Reach the eye of the storm to refuel',
+        'Survive the return trip through the opposite eyewall',
+        'Maintain structural integrity above 0%'
+    ];
+    objectives.forEach((o,i)=>{
+        ctx.fillText(`${i+1}. ${o}`, W/2, 310 + i*22);
+    });
+    // Science note
+    ctx.fillStyle = 'rgba(79,195,247,0.1)';
+    roundRect(W*0.2, H*0.72, W*0.6, 50, 8);
+    ctx.fill();
+    ctx.fillStyle = '#4FC3F7';
+    ctx.font = 'bold 11px monospace';
+    ctx.fillText('THE SCIENCE: Warmer ocean water (higher SST) provides more energy to hurricanes.', W/2, H*0.72+20);
+    ctx.fillText('Water above 26°C fuels tropical cyclones. Above 30°C can cause rapid intensification.', W/2, H*0.72+38);
+    // Launch button
+    buttons = [];
+    const btn = {x:W/2, y:H*0.92, w:240, h:50, id:'launch'};
+    drawButton('LAUNCH MISSION', btn.x, btn.y, btn.w, btn.h, isOver(btn.x,btn.y,btn.w,btn.h));
+    buttons.push(btn);
+    const btn2 = {x:80, y:H*0.92, w:120, h:40, id:'back'};
+    drawButton('BACK', btn2.x, btn2.y, btn2.w, btn2.h, isOver(btn2.x,btn2.y,btn2.w,btn2.h), '#546E7A');
+    buttons.push(btn2);
+}
+
+function updateBriefing(){
+    if(clicked){
+        for(const b of buttons){
+            if(isOver(b.x,b.y,b.w,b.h)){
+                if(b.id==='launch'){
+                    generateLevel(currentStorm);
+                    generateDowndrafts(currentStorm);
+                    state = STATES.PLAYING;
+                    setEngineSound(true);
+                }
+                if(b.id==='back') state = STATES.SELECT;
+            }
+        }
+        clicked = false;
+    }
+}
+
+// --- Gameplay ---
+function updatePlaying(dt2){
+    const storm = STORMS[currentStorm];
+    // Scroll
+    scrollX += player.speed * dt2;
+    player.x = scrollX + 120; // Keep player at fixed screen-x offset
+    stormProgress = clamp(scrollX / levelWidth, 0, 1);
+    currentSST = getCurrentSST(storm, stormProgress);
+    const intensity = getStormIntensity(stormProgress, storm);
+    const catScale = storm.catNum / 5;
+    // Player movement
+    let moveUp = keys['arrowup'] || keys['w'];
+    let moveDown = keys['arrowdown'] || keys['s'];
+    // Touch
+    if(touchActive && touchY !== null){
+        if(touchY < player.y - 20) moveUp = true;
+        if(touchY > player.y + 20) moveDown = true;
+    }
+    const moveForce = 350;
+    if(moveUp) player.vy -= moveForce * dt2;
+    if(moveDown) player.vy += moveForce * dt2;
+    // Damping
+    player.vy *= 0.92;
+    player.y += player.vy * dt2;
+    // Wind shear (random gusts)
+    if(intensity > 0.3 && Math.random() < intensity * 0.05 * catScale){
+        player.vy += rng(-200,200) * intensity * catScale;
+    }
+    // Downdrafts
+    for(const dd of downdrafts){
+        const ddScreen = dd.x - scrollX;
+        if(Math.abs(120 - ddScreen) < dd.width/2 && ddScreen > -dd.width && ddScreen < W + dd.width){
+            player.vy += dd.strength * intensity * dt2;
+        }
+    }
+    // Bounds
+    player.y = clamp(player.y, 30, H - 90);
+    // Fuel depletion
+    const fuelRate = 3 + currentStorm * 0.8;
+    player.fuel -= fuelRate * dt2;
+    // Refuel in eye
+    if(isInEye(stormProgress)){
+        player.fuel = Math.min(100, player.fuel + 25 * dt2);
+    }
+    // Screen shake
+    shakeIntensity = lerp(shakeIntensity, intensity * 5 * catScale, dt2 * 3);
+    shakeX = (Math.random()-0.5) * shakeIntensity;
+    shakeY = (Math.random()-0.5) * shakeIntensity;
+    // Wind audio
+    setWindIntensity(intensity * catScale);
+    // Spawn weather
+    spawnWeatherParticles(intensity, storm.catNum);
+    playRainPatter(intensity);
+    // Spawn debris
+    spawnDebris(intensity, storm.catNum, dt2);
+    // Lightning
+    triggerLightning(intensity * catScale);
+    updateLightning(dt2);
+    // Probe collection
+    for(const p of probes){
+        if(p.collected) continue;
+        if(dist(player.x, player.y, p.x, p.y) < p.radius + 22){
+            p.collected = true;
+            dataCollected[p.type]++;
+            const val = PROBE_VALUES[p.type];
+            score += val;
+            playCollect();
+            // Data readout
+            let readoutText = '';
+            if(p.type==='temp') readoutText = `SST: ${currentSST.toFixed(1)}°C -- FUEL FOR THE STORM`;
+            else if(p.type==='pressure') readoutText = `Pressure: ${Math.round(1013 - intensity*80)}hPa -- ${intensity>0.7?'EXTREMELY LOW':'DROPPING'}`;
+            else if(p.type==='wind') readoutText = `Wind: ${Math.round(intensity*280)}km/h -- ${intensity>0.7?'CATASTROPHIC':'DANGEROUS'}`;
+            else readoutText = `Humidity: ${Math.round(60+intensity*35)}% -- ${intensity>0.5?'SATURATED AIR':'MOISTURE FEED'}`;
+            dataReadout = {text:readoutText, timer:2.5, color:PROBE_COLORS[p.type]};
+            // Data particle trail
+            for(let j=0;j<10;j++){
+                addParticle('data', p.x, p.y, rng(-100,100), rng(-100,-30), rng(0.3,0.8), PROBE_COLORS[p.type], rng(2,5));
+            }
+            // Check for complete set
+            const minSet = Math.min(dataCollected.temp, dataCollected.pressure, dataCollected.wind, dataCollected.moisture);
+            if(minSet > dataSets){
+                dataSets = minSet;
+                score += 50;
+                hudMessages.push({text:`COMPLETE DATA SET #${dataSets}! +50 BONUS`, timer:3, color:'#69F0AE'});
+            }
+        }
+    }
+    // Update data readout
+    if(dataReadout) dataReadout.timer -= dt2;
+    // Update HUD messages
+    hudMessages = hudMessages.filter(m=>{ m.timer -= dt2; return m.timer > 0; });
+    // Update debris
+    updateDebris(dt2);
+    // Update particles
+    updateParticles(dt2);
+    // Check end conditions
+    if(player.integrity <= 0){
+        player.integrity = 0;
+        setEngineSound(false);
+        setWindIntensity(0);
+        state = STATES.GAMEOVER;
+    }
+    if(player.fuel <= 0){
+        player.fuel = 0;
+        setEngineSound(false);
+        setWindIntensity(0);
+        state = STATES.GAMEOVER;
+    }
+    if(stormProgress >= 1){
+        // Successfully completed!
+        setEngineSound(false);
+        setWindIntensity(0);
+        calculateDebrief();
+        state = STATES.DEBRIEF;
+    }
+}
+
+function drawPlaying(){
+    const storm = STORMS[currentStorm];
+    const intensity = getStormIntensity(stormProgress, storm);
+    // Sky
+    drawSky(intensity);
+    // Cloud layers (back)
+    drawCloudLayer(cloudsBack, 0.2, 1);
+    // Cloud layers (mid)
+    drawCloudLayer(cloudsMid, 0.5, 0.8);
+    // Eyewall effect
+    drawEyewallEffect(intensity);
+    // Ocean
+    drawOcean(currentSST);
+    // Probes
+    drawProbes();
+    // Debris
+    drawDebris();
+    // Particles
+    drawParticles();
+    // Cloud layers (front)
+    drawCloudLayer(cloudsFront, 0.9, 0.5);
+    // Rain overlay
+    drawRainOverlay(intensity);
+    // Lightning
+    drawLightning();
+    // Player
+    drawPlayer();
+    // HUD
+    drawHUD();
+    // Downdraft warning
+    for(const dd of downdrafts){
+        const ddScreen = dd.x - scrollX;
+        if(ddScreen > -dd.width && ddScreen < W + dd.width){
+            const nearness = 1 - Math.abs(120 - ddScreen) / (dd.width*2);
+            if(nearness > 0){
+                ctx.globalAlpha = nearness * 0.2 * intensity;
+                ctx.fillStyle = '#1B5E20';
+                ctx.fillRect(ddScreen - dd.width/2, 0, dd.width, H);
+                // Arrows pointing down
+                ctx.globalAlpha = nearness * 0.5;
+                ctx.fillStyle = '#66BB6A';
+                ctx.font = '20px monospace';
+                ctx.textAlign = 'center';
+                for(let ay=50;ay<H-100;ay+=60){
+                    ctx.fillText('v', ddScreen, ay + (frameCount%60));
+                }
+                ctx.globalAlpha = 1;
+            }
+        }
+    }
+}
+
+// --- Debrief ---
+function calculateDebrief(){
+    const storm = STORMS[currentStorm];
+    const totalProbes = dataCollected.temp + dataCollected.pressure + dataCollected.wind + dataCollected.moisture;
+    const fuelBonus = Math.round(player.fuel * 2);
+    const integrityBonus = Math.round(player.integrity * 2);
+    const setBonus = dataSets * 50;
+    const finalScore = score + fuelBonus + integrityBonus;
+    const ratio = finalScore / storm.maxScore;
+    let medal = 'none';
+    if(ratio >= MEDAL_THRESHOLDS.gold) medal = 'gold';
+    else if(ratio >= MEDAL_THRESHOLDS.silver) medal = 'silver';
+    else if(ratio >= MEDAL_THRESHOLDS.bronze) medal = 'bronze';
+    debriefData = {
+        totalProbes, fuelBonus, integrityBonus, setBonus, finalScore, medal, ratio
+    };
+    // Save score
+    const key = `storm_${currentStorm}`;
+    if(!savedScores[key] || savedScores[key].score < finalScore){
+        savedScores[key] = {score:finalScore, medal};
+        try{ localStorage.setItem('hurricane_scores', JSON.stringify(savedScores)); }catch(e){}
+    }
+}
+
+function drawDebrief(){
+    if(!debriefData) return;
+    const storm = STORMS[currentStorm];
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(0,0,W,H);
+    // Header
+    ctx.fillStyle = '#69F0AE';
+    ctx.font = `bold ${Math.min(W*0.04, 32)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('MISSION COMPLETE', W/2, 50);
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = `bold ${Math.min(W*0.03, 24)}px 'Segoe UI',sans-serif`;
+    ctx.fillText(storm.name, W/2, 85);
+    // Data summary
+    const col1 = W*0.3, col2 = W*0.7;
+    ctx.fillStyle = 'rgba(255,255,255,0.05)';
+    roundRect(col1-120, 110, 240, 180, 8);
+    ctx.fill();
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('DATA COLLECTED', col1, 135);
+    const types = [{k:'temp',l:'Temperature',c:PROBE_COLORS.temp},{k:'pressure',l:'Pressure',c:PROBE_COLORS.pressure},
+                   {k:'wind',l:'Wind Speed',c:PROBE_COLORS.wind},{k:'moisture',l:'Humidity',c:PROBE_COLORS.moisture}];
+    types.forEach((t,i)=>{
+        ctx.fillStyle = t.c;
+        ctx.font = '13px monospace';
+        ctx.textAlign = 'left';
+        ctx.fillText(`${t.l}: ${dataCollected[t.k]}`, col1-100, 165+i*24);
+    });
+    ctx.fillStyle = '#69F0AE';
+    ctx.font = 'bold 12px monospace';
+    ctx.fillText(`Complete Sets: ${dataSets}`, col1-100, 165+4*24);
+    // Score breakdown
+    ctx.fillStyle = 'rgba(255,255,255,0.05)';
+    roundRect(col2-120, 110, 240, 180, 8);
+    ctx.fill();
+    ctx.fillStyle = '#ECEFF1';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('SCORE BREAKDOWN', col2, 135);
+    ctx.font = '13px monospace';
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#B0BEC5';
+    ctx.fillText(`Data Points: ${score - debriefData.setBonus}`, col2-100, 165);
+    ctx.fillText(`Set Bonuses: ${debriefData.setBonus}`, col2-100, 189);
+    ctx.fillText(`Fuel Bonus: +${debriefData.fuelBonus}`, col2-100, 213);
+    ctx.fillText(`Integrity Bonus: +${debriefData.integrityBonus}`, col2-100, 237);
+    ctx.fillStyle = '#FFA726';
+    ctx.font = 'bold 16px monospace';
+    ctx.fillText(`TOTAL: ${debriefData.finalScore}`, col2-100, 270);
+    // Medal
+    const medalColors = {bronze:'#CD7F32',silver:'#C0C0C0',gold:'#FFD700',none:'#37474F'};
+    const medalNames = {bronze:'BRONZE',silver:'SILVER',gold:'GOLD',none:'NO MEDAL'};
+    ctx.fillStyle = medalColors[debriefData.medal];
+    ctx.font = `bold ${Math.min(W*0.05, 40)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.shadowColor = medalColors[debriefData.medal];
+    ctx.shadowBlur = debriefData.medal==='gold'?20:10;
+    ctx.fillText(medalNames[debriefData.medal], W/2, H*0.65);
+    ctx.shadowBlur = 0;
+    // Science insight
+    ctx.fillStyle = 'rgba(79,195,247,0.1)';
+    roundRect(W*0.15, H*0.72, W*0.7, 50, 8);
+    ctx.fill();
+    ctx.fillStyle = '#4FC3F7';
+    ctx.font = '12px monospace';
+    ctx.textAlign = 'center';
+    const insights = [
+        `At SST ${storm.sst}°C, the ocean provided ${storm.catNum>3?'extreme':'moderate'} energy to this hurricane.`,
+        `Every 1°C increase in SST can increase wind speeds by 15-25 km/h through intensification.`
+    ];
+    insights.forEach((t,i)=> ctx.fillText(t, W/2, H*0.72+20+i*18));
+    // Buttons
+    buttons = [];
+    const btn1 = {x:W/2-100, y:H*0.92, w:160, h:44, id:'storms'};
+    const btn2 = {x:W/2+100, y:H*0.92, w:160, h:44, id:'retry'};
+    drawButton('STORM SELECT', btn1.x, btn1.y, btn1.w, btn1.h, isOver(btn1.x,btn1.y,btn1.w,btn1.h), '#29B6F6');
+    drawButton('FLY AGAIN', btn2.x, btn2.y, btn2.w, btn2.h, isOver(btn2.x,btn2.y,btn2.w,btn2.h));
+    buttons.push(btn1,btn2);
+}
+
+function updateDebrief(){
+    if(clicked){
+        for(const b of buttons){
+            if(isOver(b.x,b.y,b.w,b.h)){
+                if(b.id==='storms') state = STATES.SELECT;
+                if(b.id==='retry'){
+                    generateLevel(currentStorm);
+                    generateDowndrafts(currentStorm);
+                    state = STATES.PLAYING;
+                    setEngineSound(true);
+                }
+            }
+        }
+        clicked = false;
+    }
+}
+
+// --- Game Over ---
+function drawGameOver(){
+    ctx.fillStyle = '#0D1117';
+    ctx.fillRect(0,0,W,H);
+    // Red vignette
+    const vig = ctx.createRadialGradient(W/2,H/2,0,W/2,H/2,W*0.7);
+    vig.addColorStop(0,'transparent');
+    vig.addColorStop(1,'rgba(183,28,28,0.3)');
+    ctx.fillStyle = vig;
+    ctx.fillRect(0,0,W,H);
+
+    ctx.fillStyle = '#FF5252';
+    ctx.font = `bold ${Math.min(W*0.06, 48)}px 'Segoe UI',sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText('MISSION FAILED', W/2, H*0.3);
+    const reason = player.integrity <= 0 ? 'Aircraft structural failure — hull integrity at 0%' :
+                   player.fuel <= 0 ? 'Out of fuel — engines lost power' : 'Mission aborted';
+    ctx.fillStyle = '#B0BEC5';
+    ctx.font = '16px monospace';
+    ctx.fillText(reason, W/2, H*0.4);
+    // Partial score
+    ctx.fillStyle = '#FFA726';
+    ctx.font = 'bold 20px monospace';
+    ctx.fillText(`Data Collected: ${score} points`, W/2, H*0.52);
+    ctx.fillStyle = '#90A4AE';
+    ctx.font = '13px monospace';
+    ctx.fillText(`Progress: ${Math.round(stormProgress*100)}% through the storm`, W/2, H*0.58);
+    // Science note
+    ctx.fillStyle = 'rgba(255,82,82,0.1)';
+    roundRect(W*0.2, H*0.64, W*0.6, 40, 8);
+    ctx.fill();
+    ctx.fillStyle = '#FF8A80';
+    ctx.font = '12px monospace';
+    ctx.fillText('Real hurricane hunters face these exact dangers. SST data saves lives by predicting storm strength.', W/2, H*0.64+25);
+    // Buttons
+    buttons = [];
+    const btn1 = {x:W/2-100, y:H*0.82, w:160, h:44, id:'storms'};
+    const btn2 = {x:W/2+100, y:H*0.82, w:160, h:44, id:'retry'};
+    drawButton('STORM SELECT', btn1.x, btn1.y, btn1.w, btn1.h, isOver(btn1.x,btn1.y,btn1.w,btn1.h), '#546E7A');
+    drawButton('TRY AGAIN', btn2.x, btn2.y, btn2.w, btn2.h, isOver(btn2.x,btn2.y,btn2.w,btn2.h));
+    buttons.push(btn1,btn2);
+}
+
+function updateGameOver(){
+    if(clicked){
+        for(const b of buttons){
+            if(isOver(b.x,b.y,b.w,b.h)){
+                if(b.id==='storms') state = STATES.SELECT;
+                if(b.id==='retry'){
+                    generateLevel(currentStorm);
+                    generateDowndrafts(currentStorm);
+                    state = STATES.PLAYING;
+                    setEngineSound(true);
+                }
+            }
+        }
+        clicked = false;
+    }
+}
+
+// ============================================================
+// MAIN GAME LOOP
+// ============================================================
+
+function gameLoop(time){
+    requestAnimationFrame(gameLoop);
+    if(!lastTime) lastTime = time;
+    dt = Math.min((time - lastTime)/1000, 0.05);
+    lastTime = time;
+    frameCount++;
+    ctx.clearRect(0,0,W,H);
+    switch(state){
+        case STATES.TITLE:
+            drawTitle();
+            updateTitle();
+            break;
+        case STATES.HOWTO:
+            drawHowTo();
+            updateHowTo();
+            break;
+        case STATES.SELECT:
+            drawSelect();
+            updateSelect();
+            break;
+        case STATES.BRIEFING:
+            drawBriefing();
+            updateBriefing();
+            break;
+        case STATES.PLAYING:
+            updatePlaying(dt);
+            drawPlaying();
+            break;
+        case STATES.DEBRIEF:
+            drawDebrief();
+            updateDebrief();
+            break;
+        case STATES.GAMEOVER:
+            drawGameOver();
+            updateGameOver();
+            break;
+    }
+    clicked = false;
+}
+
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>

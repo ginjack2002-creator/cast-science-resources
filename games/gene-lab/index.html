@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>GENE LAB - Breeding & Genetics Puzzle</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;overflow:hidden;background:#1a1a2e;font-family:'Segoe UI',system-ui,sans-serif;}
+canvas{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);image-rendering:auto;}
+#landscape-prompt{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#1a1a2e;color:#fff;z-index:9999;justify-content:center;align-items:center;flex-direction:column;font-size:1.4em;text-align:center;padding:20px;}
+#landscape-prompt span{font-size:2em;display:block;margin-bottom:15px;}
+@media(max-width:600px) and (orientation:portrait){
+#landscape-prompt{display:flex!important;}
+canvas{display:none!important;}
+}
+</style>
+</head>
+<body>
+<div id="landscape-prompt"><span>&#128257;</span>Please rotate your device to landscape mode</div>
+<canvas id="gc"></canvas>
+<script>
+// ============================================================
+// GENE LAB - Complete Breeding & Genetics Puzzle Game
+// NGSS MS-LS3-1, MS-LS3-2 | Grade 8
+// ============================================================
+(function(){
+"use strict";
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+
+// ---- CONSTANTS ----
+const DESIGN_W = 1280, DESIGN_H = 720;
+let scale = 1, offsetX = 0, offsetY = 0, dpr = 1;
+const MAX_PARTICLES = 300;
+
+// ---- COLOR PALETTE ----
+const COL = {
+  bg: '#FAFAFA', bgDark: '#E8E8F0', grid: '#E0E0E0',
+  purple: '#9C27B0', yellow: '#FFC107', horn: '#FFD54F', hornDark: '#F9A825',
+  spotPurple: '#7B1FA2', spotYellow: '#FFA000',
+  eyeWhite: '#FFFFFF', eyePupil: '#212121', eyeShine: '#FFFFFF',
+  mouth: '#E91E63',
+  parent1Frame: '#2196F3', parent2Frame: '#E91E63',
+  offspring: '#FFD700', offspringGlow: 'rgba(255,215,0,0.3)',
+  punnettLine: '#424242', punnettBg: '#FFF9C4',
+  correct: '#66BB6A', wrong: '#EF5350',
+  uiPanel: 'rgba(255,255,255,0.95)', uiPanelBorder: '#B0BEC5',
+  btnPrimary: '#2196F3', btnSecondary: '#9C27B0', btnSuccess: '#4CAF50',
+  btnDanger: '#F44336', btnDisabled: '#BDBDBD',
+  text: '#212121', textLight: '#757575', textWhite: '#FFFFFF',
+  geniedex: '#795548', geniedexPage: '#FFF8E1',
+  dna: '#7C4DFF', dnaDark: '#4A148C',
+  star: '#FFD700', starEmpty: '#E0E0E0',
+  titleGrad1: '#9C27B0', titleGrad2: '#E91E63', titleGrad3: '#FF9800'
+};
+
+// ---- TRAIT DEFINITIONS ----
+const TRAITS = [
+  { name: 'color',   dom: 'P', rec: 'p', domLabel: 'Purple',  recLabel: 'Yellow'  },
+  { name: 'horn',    dom: 'H', rec: 'h', domLabel: 'Horned',  recLabel: 'Smooth'  },
+  { name: 'tail',    dom: 'C', rec: 'c', domLabel: 'Curly',   recLabel: 'Straight'},
+  { name: 'size',    dom: 'L', rec: 'l', domLabel: 'Large',   recLabel: 'Small'   },
+  { name: 'pattern', dom: 'S', rec: 's', domLabel: 'Spotted', recLabel: 'Solid'   },
+  { name: 'eyes',    dom: 'E', rec: 'e', domLabel: 'Big Eyes', recLabel: 'Small Eyes'}
+];
+
+// ---- GAME STATE ----
+let STATE = 'TITLE';
+let prevState = '';
+let collection = [];
+let geniedex = {};
+let levelProgress = [0,0,0,0,0];
+let totalScore = 0;
+let currentLevel = 0;
+let parent1 = null, parent2 = null;
+let offspring = null;
+let predictions = {};
+let predictionResults = null;
+let breedCount = 0;
+let levelBreedCount = 0;
+let levelTarget = null;
+let showPunnett = false;
+let punnettTrait = 0;
+let selectingFor = 0;
+let scrollOffset = 0;
+let geniedexPage = 0;
+let hoverBtn = -1;
+let animTime = 0;
+let eggTimer = 0;
+let eggPhase = 0; // 0=none,1=forming,2=shaking,3=cracking,4=reveal
+let revealTimer = 0;
+let punnettAnimProgress = 0;
+let traitRevealIndex = -1;
+let traitRevealTimer = 0;
+let achievementQueue = [];
+let achievementTimer = 0;
+let mouseX = 0, mouseY = 0, mouseDown = false, mouseClicked = false;
+let touchActive = false;
+let levelMysteryParents = null;
+let mysteryGuesses = {};
+let mysteryPhase = 0;
+let freeLabTraits = 6;
+
+// ---- PARTICLES ----
+let particles = [];
+function spawnParticle(x,y,type,vx,vy,life,color,size){
+  if(particles.length >= MAX_PARTICLES) return;
+  particles.push({x,y,vx:vx||0,vy:vy||0,life,maxLife:life,type,color,size:size||4,rot:Math.random()*6.28});
+}
+function spawnBurst(x,y,count,type,color,speed,life,size){
+  for(let i=0;i<count;i++){
+    const a=Math.random()*Math.PI*2;
+    const s=(Math.random()*0.5+0.5)*(speed||2);
+    spawnParticle(x,y,type,Math.cos(a)*s,Math.sin(a)*s,life||60,color,size||4);
+  }
+}
+
+// ---- AUDIO ENGINE ----
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+function ensureAudio(){ if(!audioCtx) audioCtx = new AudioCtx(); }
+function playTone(freq,dur,type,vol,ramp){
+  ensureAudio();
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = type||'sine';
+  o.frequency.setValueAtTime(freq, audioCtx.currentTime);
+  if(ramp) o.frequency.linearRampToValueAtTime(ramp, audioCtx.currentTime+dur);
+  g.gain.setValueAtTime(vol||0.15, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime+dur);
+  o.connect(g); g.connect(audioCtx.destination);
+  o.start(); o.stop(audioCtx.currentTime+dur);
+}
+function sfxPop(){ playTone(600,0.12,'sine',0.2,800); }
+function sfxChime(){ playTone(880,0.2,'sine',0.15); setTimeout(()=>playTone(1100,0.25,'sine',0.12),100); }
+function sfxBuzz(){ playTone(150,0.2,'sawtooth',0.1,120); }
+function sfxPageFlip(){ playTone(2000,0.05,'sine',0.08,500); }
+function sfxAchievement(){
+  playTone(523,0.15,'sine',0.15); setTimeout(()=>playTone(659,0.15,'sine',0.13),120);
+  setTimeout(()=>playTone(784,0.15,'sine',0.12),240); setTimeout(()=>playTone(1047,0.3,'sine',0.15),360);
+}
+function sfxBreed(){
+  playTone(440,0.3,'sine',0.12,660);
+  setTimeout(()=>playTone(550,0.3,'sine',0.1,880),200);
+}
+function sfxHatch(){
+  playTone(300,0.1,'square',0.08); setTimeout(()=>playTone(400,0.1,'square',0.08),80);
+  setTimeout(()=>playTone(600,0.15,'sine',0.15,900),200);
+}
+function sfxClick(){ playTone(800,0.06,'sine',0.1); }
+
+// ---- GENETICS ENGINE ----
+function randomAllele(a1,a2){ return Math.random()<0.5 ? a1 : a2; }
+function makeGenotype(traitIndex, a1, a2){
+  const t = TRAITS[traitIndex];
+  return { allele1: a1, allele2: a2, dominant: (a1===t.dom || a2===t.dom) };
+}
+function breedTrait(p1Geno, p2Geno, traitIndex){
+  const a1 = randomAllele(p1Geno.allele1, p1Geno.allele2);
+  const a2 = randomAllele(p2Geno.allele1, p2Geno.allele2);
+  return makeGenotype(traitIndex, a1, a2);
+}
+function randomGenotype(traitIndex){
+  const t = TRAITS[traitIndex];
+  const opts = [[t.dom,t.dom],[t.dom,t.rec],[t.rec,t.rec]];
+  const pick = opts[Math.floor(Math.random()*3)];
+  return makeGenotype(traitIndex, pick[0], pick[1]);
+}
+function createRandomGenie(traitCount){
+  const genes = [];
+  for(let i=0;i<6;i++){
+    if(i < traitCount) genes.push(randomGenotype(i));
+    else {
+      const t = TRAITS[i];
+      genes.push(makeGenotype(i, t.dom, t.dom));
+    }
+  }
+  return { id: Date.now()+Math.random(), genes, name: randomGenieName() };
+}
+function breedGenies(p1, p2){
+  const genes = [];
+  for(let i=0;i<6;i++) genes.push(breedTrait(p1.genes[i], p2.genes[i], i));
+  return { id: Date.now()+Math.random(), genes, name: randomGenieName() };
+}
+function genotypeStr(geno){
+  return geno.allele1 + geno.allele2;
+}
+function phenotypeKey(genie){
+  return genie.genes.map(g => g.dominant ? '1' : '0').join('');
+}
+function getPunnettOutcomes(p1Geno, p2Geno, traitIndex){
+  const t = TRAITS[traitIndex];
+  const a = [p1Geno.allele1, p1Geno.allele2];
+  const b = [p2Geno.allele1, p2Geno.allele2];
+  const grid = [];
+  for(let i=0;i<2;i++){
+    const row = [];
+    for(let j=0;j<2;j++){
+      const g = makeGenotype(traitIndex, a[i], b[j]);
+      row.push({ allele1: a[i], allele2: b[j], dominant: g.dominant, str: a[i]+b[j] });
+    }
+    grid.push(row);
+  }
+  return { parentA: a, parentB: b, grid };
+}
+
+const GENIE_NAMES = ['Bloop','Pip','Glim','Zephyr','Noodle','Fizz','Twinkle','Spark','Doodle','Wisp',
+  'Bumble','Flick','Squish','Nibble','Puff','Wobble','Snoot','Jinx','Mochi','Lumi',
+  'Boba','Pudge','Ziggy','Sprout','Dot','Rascal','Nugget','Pixel','Clover','Cosmo',
+  'Echo','Maple','Orbit','Peach','Ripple','Tango','Wren','Acorn','Breeze','Comet'];
+function randomGenieName(){ return GENIE_NAMES[Math.floor(Math.random()*GENIE_NAMES.length)]; }
+
+// ---- DRAWING HELPERS ----
+function drawRoundedRect(x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.lineTo(x+w-r,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r); ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r); ctx.quadraticCurveTo(x,y,x+r,y);
+  ctx.closePath();
+}
+function fillRoundedRect(x,y,w,h,r,color){
+  ctx.fillStyle = color;
+  drawRoundedRect(x,y,w,h,r);
+  ctx.fill();
+}
+function strokeRoundedRect(x,y,w,h,r,color,lw){
+  ctx.strokeStyle = color; ctx.lineWidth = lw||2;
+  drawRoundedRect(x,y,w,h,r);
+  ctx.stroke();
+}
+function drawBtn(x,y,w,h,text,color,hover,disabled){
+  const c = disabled ? COL.btnDisabled : (hover ? lightenColor(color,30) : color);
+  ctx.save();
+  ctx.shadowColor = 'rgba(0,0,0,0.15)'; ctx.shadowBlur = hover?8:4; ctx.shadowOffsetY = hover?3:2;
+  fillRoundedRect(x,y,w,h,10,c);
+  ctx.restore();
+  if(!disabled && hover){
+    strokeRoundedRect(x,y,w,h,10,'rgba(255,255,255,0.4)',2);
+  }
+  ctx.fillStyle = COL.textWhite;
+  ctx.font = `bold ${Math.min(h*0.45,18)}px 'Segoe UI',system-ui,sans-serif`;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillText(text, x+w/2, y+h/2+1);
+}
+function isInRect(mx,my,x,y,w,h){ return mx>=x&&mx<=x+w&&my>=y&&my<=y+h; }
+function lightenColor(hex, pct){
+  let r=parseInt(hex.slice(1,3),16), g=parseInt(hex.slice(3,5),16), b=parseInt(hex.slice(5,7),16);
+  r=Math.min(255,r+pct); g=Math.min(255,g+pct); b=Math.min(255,b+pct);
+  return `rgb(${r},${g},${b})`;
+}
+
+// ---- DRAW GENIE ----
+function drawGenie(x, y, genie, sz, bounce, showGeno, highlight, highlightColor){
+  const genes = genie.genes;
+  const isLarge = genes[3].dominant;
+  const baseSize = isLarge ? sz*1.0 : sz*0.72;
+  const bx = x, by = y + (bounce ? Math.sin(animTime*3+genie.id)*3 : 0);
+  const bodyW = baseSize*0.9, bodyH = baseSize*0.75;
+
+  // Shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.1)';
+  ctx.beginPath();
+  ctx.ellipse(bx, by+bodyH*0.5+4, bodyW*0.45, 6, 0, 0, Math.PI*2);
+  ctx.fill();
+
+  // Highlight frame
+  if(highlight){
+    ctx.save();
+    ctx.shadowColor = highlightColor||COL.offspring;
+    ctx.shadowBlur = 15;
+    ctx.strokeStyle = highlightColor||COL.offspring;
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.ellipse(bx, by, bodyW*0.55, bodyH*0.55, 0, 0, Math.PI*2);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  // Body
+  const bodyCol = genes[0].dominant ? COL.purple : COL.yellow;
+  ctx.fillStyle = bodyCol;
+  ctx.beginPath();
+  ctx.ellipse(bx, by, bodyW*0.48, bodyH*0.48, 0, 0, Math.PI*2);
+  ctx.fill();
+
+  // Body shine
+  const shineGrad = ctx.createRadialGradient(bx-bodyW*0.15, by-bodyH*0.15, 0, bx, by, bodyW*0.48);
+  shineGrad.addColorStop(0, 'rgba(255,255,255,0.3)');
+  shineGrad.addColorStop(1, 'rgba(255,255,255,0)');
+  ctx.fillStyle = shineGrad;
+  ctx.beginPath();
+  ctx.ellipse(bx, by, bodyW*0.48, bodyH*0.48, 0, 0, Math.PI*2);
+  ctx.fill();
+
+  // Spots
+  if(genes[4].dominant){
+    const spotCol = genes[0].dominant ? COL.spotPurple : COL.spotYellow;
+    ctx.fillStyle = spotCol;
+    const spots = [[0.12,-0.1,0.06],[-0.15,0.08,0.05],[0.05,0.15,0.04],[-0.08,-0.18,0.045],[0.2,0.05,0.04]];
+    for(const s of spots){
+      ctx.beginPath();
+      ctx.arc(bx+bodyW*s[0], by+bodyH*s[1], baseSize*s[2], 0, Math.PI*2);
+      ctx.fill();
+    }
+  }
+
+  // Horns
+  if(genes[1].dominant){
+    const hornCol = genes[0].dominant ? COL.horn : COL.hornDark;
+    ctx.fillStyle = hornCol;
+    // Left horn
+    ctx.beginPath();
+    ctx.moveTo(bx-bodyW*0.18, by-bodyH*0.38);
+    ctx.lineTo(bx-bodyW*0.28, by-bodyH*0.7);
+    ctx.lineTo(bx-bodyW*0.05, by-bodyH*0.38);
+    ctx.closePath(); ctx.fill();
+    // Right horn
+    ctx.beginPath();
+    ctx.moveTo(bx+bodyW*0.18, by-bodyH*0.38);
+    ctx.lineTo(bx+bodyW*0.28, by-bodyH*0.7);
+    ctx.lineTo(bx+bodyW*0.05, by-bodyH*0.38);
+    ctx.closePath(); ctx.fill();
+  }
+
+  // Eyes
+  const bigEyes = genes[5].dominant;
+  const eyeR = bigEyes ? baseSize*0.1 : baseSize*0.06;
+  const eyeSpacing = bodyW*0.16;
+  const eyeY = by - bodyH*0.08;
+  // Eye whites
+  ctx.fillStyle = COL.eyeWhite;
+  ctx.beginPath(); ctx.arc(bx-eyeSpacing, eyeY, eyeR, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(bx+eyeSpacing, eyeY, eyeR, 0, Math.PI*2); ctx.fill();
+  // Pupils
+  ctx.fillStyle = COL.eyePupil;
+  const pupilR = eyeR*0.55;
+  ctx.beginPath(); ctx.arc(bx-eyeSpacing+1, eyeY+1, pupilR, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(bx+eyeSpacing+1, eyeY+1, pupilR, 0, Math.PI*2); ctx.fill();
+  // Eye shine
+  ctx.fillStyle = COL.eyeShine;
+  const shR = eyeR*0.25;
+  ctx.beginPath(); ctx.arc(bx-eyeSpacing-pupilR*0.3, eyeY-pupilR*0.3, shR, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(bx+eyeSpacing-pupilR*0.3, eyeY-pupilR*0.3, shR, 0, Math.PI*2); ctx.fill();
+
+  // Mouth
+  ctx.strokeStyle = COL.mouth; ctx.lineWidth = 1.5; ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.arc(bx, eyeY+bodyH*0.22, baseSize*0.06, 0.1*Math.PI, 0.9*Math.PI);
+  ctx.stroke();
+
+  // Cheek blush
+  ctx.fillStyle = 'rgba(255,130,171,0.3)';
+  ctx.beginPath(); ctx.ellipse(bx-eyeSpacing-eyeR*0.5, eyeY+eyeR*1.1, eyeR*0.6, eyeR*0.35, 0, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(bx+eyeSpacing+eyeR*0.5, eyeY+eyeR*1.1, eyeR*0.6, eyeR*0.35, 0, 0, Math.PI*2); ctx.fill();
+
+  // Tail
+  const tailX = bx + bodyW*0.45;
+  const tailY = by + bodyH*0.1;
+  ctx.strokeStyle = bodyCol; ctx.lineWidth = baseSize*0.06; ctx.lineCap = 'round';
+  ctx.beginPath();
+  if(genes[2].dominant){
+    // Curly tail
+    ctx.moveTo(tailX, tailY);
+    ctx.quadraticCurveTo(tailX+baseSize*0.25, tailY-baseSize*0.15, tailX+baseSize*0.15, tailY-baseSize*0.3);
+    ctx.quadraticCurveTo(tailX+baseSize*0.05, tailY-baseSize*0.4, tailX+baseSize*0.2, tailY-baseSize*0.45);
+  } else {
+    // Straight tail
+    ctx.moveTo(tailX, tailY);
+    ctx.lineTo(tailX+baseSize*0.3, tailY-baseSize*0.15);
+  }
+  ctx.stroke();
+
+  // Feet
+  ctx.fillStyle = bodyCol;
+  ctx.beginPath(); ctx.ellipse(bx-bodyW*0.2, by+bodyH*0.42, bodyW*0.12, bodyH*0.08, 0, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(bx+bodyW*0.2, by+bodyH*0.42, bodyW*0.12, bodyH*0.08, 0, 0, Math.PI*2); ctx.fill();
+
+  // Genotype labels
+  if(showGeno){
+    ctx.font = `bold 10px monospace`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillStyle = COL.text;
+    const activeTraits = getActiveTraitCount();
+    for(let i=0;i<activeTraits;i++){
+      const tx = bx - (activeTraits-1)*15 + i*30;
+      const ty = by + bodyH*0.55;
+      ctx.fillStyle = 'rgba(0,0,0,0.6)';
+      fillRoundedRect(tx-13, ty-2, 26, 14, 3, 'rgba(255,255,255,0.85)');
+      ctx.fillStyle = genes[i].dominant ? '#7B1FA2' : '#F57F17';
+      ctx.fillText(genotypeStr(genes[i]), tx, ty);
+    }
+  }
+
+  // Name
+  ctx.font = `bold 11px 'Segoe UI',system-ui,sans-serif`;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+  ctx.fillStyle = COL.text;
+  ctx.fillText(genie.name, bx, by+bodyH*0.55+(showGeno?16:0));
+}
+
+function getActiveTraitCount(){
+  if(STATE==='FREE_LAB') return 6;
+  if(currentLevel===0) return 1;
+  if(currentLevel===1) return 2;
+  if(currentLevel===2) return 3;
+  if(currentLevel===3) return 4;
+  return 6;
+}
+
+// ---- SAVE/LOAD ----
+function saveGame(){
+  const data = { collection, geniedex, levelProgress, totalScore };
+  try { localStorage.setItem('genelab_save', JSON.stringify(data)); } catch(e){}
+}
+function loadGame(){
+  try {
+    const d = JSON.parse(localStorage.getItem('genelab_save'));
+    if(d){
+      collection = d.collection || [];
+      geniedex = d.geniedex || {};
+      levelProgress = d.levelProgress || [0,0,0,0,0];
+      totalScore = d.totalScore || 0;
+    }
+  } catch(e){}
+}
+
+// ---- LEVEL SETUP ----
+function startLevel(lvl){
+  currentLevel = lvl;
+  parent1 = null; parent2 = null;
+  offspring = null; predictions = {};
+  predictionResults = null; showPunnett = false;
+  punnettTrait = 0; selectingFor = 0;
+  breedCount = 0; levelBreedCount = 0;
+  eggPhase = 0; eggTimer = 0;
+  scrollOffset = 0; mysteryPhase = 0;
+  levelMysteryParents = null; mysteryGuesses = {};
+  levelTarget = null;
+
+  const tc = getActiveTraitCount();
+
+  if(lvl === 0){
+    // Level 1: One trait - color only
+    if(collection.length < 4){
+      collection = [];
+      // Provide 4 starter Genies with known genotypes for color
+      collection.push({ id: Date.now()+1, genes: makeFullGenes([makeGenotype(0,'P','P')], tc), name:'Grape' });
+      collection.push({ id: Date.now()+2, genes: makeFullGenes([makeGenotype(0,'P','p')], tc), name:'Plum' });
+      collection.push({ id: Date.now()+3, genes: makeFullGenes([makeGenotype(0,'P','p')], tc), name:'Berry' });
+      collection.push({ id: Date.now()+4, genes: makeFullGenes([makeGenotype(0,'p','p')], tc), name:'Sunny' });
+    }
+    STATE = 'BREEDING';
+  } else if(lvl === 1){
+    // Level 2: Two traits
+    collection = [];
+    collection.push({ id: Date.now()+1, genes: makeFullGenes([makeGenotype(0,'P','p'), makeGenotype(1,'H','h')], tc), name:'Rex' });
+    collection.push({ id: Date.now()+2, genes: makeFullGenes([makeGenotype(0,'P','p'), makeGenotype(1,'H','h')], tc), name:'Coral' });
+    collection.push({ id: Date.now()+3, genes: makeFullGenes([makeGenotype(0,'p','p'), makeGenotype(1,'H','H')], tc), name:'Spike' });
+    collection.push({ id: Date.now()+4, genes: makeFullGenes([makeGenotype(0,'P','P'), makeGenotype(1,'h','h')], tc), name:'Velvet' });
+    STATE = 'BREEDING';
+  } else if(lvl === 2){
+    // Level 3: Mystery parents
+    setupMysteryLevel();
+    STATE = 'MYSTERY';
+  } else if(lvl === 3){
+    // Level 4: Breeding challenge - create target
+    collection = [];
+    for(let i=0;i<4;i++) collection.push(createRandomGenie(tc));
+    // Target: all recessive for active traits
+    const targetGenes = [];
+    for(let i=0;i<6;i++){
+      const t = TRAITS[i];
+      if(i<tc) targetGenes.push(makeGenotype(i, t.rec, t.rec));
+      else targetGenes.push(makeGenotype(i, t.dom, t.dom));
+    }
+    levelTarget = { id: 0, genes: targetGenes, name: 'TARGET' };
+    STATE = 'BREEDING';
+  } else if(lvl === 4){
+    // Level 5: Free Lab
+    if(collection.length < 4){
+      collection = [];
+      for(let i=0;i<6;i++) collection.push(createRandomGenie(6));
+    }
+    STATE = 'FREE_LAB';
+  }
+  saveGame();
+}
+
+function makeFullGenes(partial, traitCount){
+  const genes = [];
+  for(let i=0;i<6;i++){
+    if(i<partial.length) genes.push(partial[i]);
+    else if(i<traitCount) genes.push(randomGenotype(i));
+    else genes.push(makeGenotype(i, TRAITS[i].dom, TRAITS[i].dom));
+  }
+  return genes;
+}
+
+function setupMysteryLevel(){
+  // Create hidden parents and show their offspring
+  const tc = 3;
+  const p1 = createRandomGenie(tc);
+  const p2 = createRandomGenie(tc);
+  const offsprings = [];
+  for(let i=0;i<4;i++) offsprings.push(breedGenies(p1, p2));
+  levelMysteryParents = { p1, p2, offsprings };
+  mysteryGuesses = {};
+  mysteryPhase = 0; // 0=analyzing, 1=guessing, 2=revealed
+}
+
+function matchesTarget(genie){
+  if(!levelTarget) return false;
+  const tc = getActiveTraitCount();
+  for(let i=0;i<tc;i++){
+    if(genie.genes[i].dominant !== levelTarget.genes[i].dominant) return false;
+  }
+  return true;
+}
+
+// ---- RESIZE ----
+function resize(){
+  dpr = window.devicePixelRatio || 1;
+  const w = window.innerWidth, h = window.innerHeight;
+  const aspect = DESIGN_W / DESIGN_H;
+  let cw, ch;
+  if(w/h > aspect){ ch = h; cw = ch * aspect; }
+  else { cw = w; ch = cw / aspect; }
+  canvas.style.width = cw + 'px';
+  canvas.style.height = ch + 'px';
+  canvas.width = cw * dpr;
+  canvas.height = ch * dpr;
+  scale = cw / DESIGN_W;
+  offsetX = 0; offsetY = 0;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ---- INPUT ----
+function getCanvasPos(e){
+  const rect = canvas.getBoundingClientRect();
+  const cx = (e.clientX !== undefined ? e.clientX : e.touches[0].clientX);
+  const cy = (e.clientY !== undefined ? e.clientY : e.touches[0].clientY);
+  return { x: (cx - rect.left) / scale, y: (cy - rect.top) / scale };
+}
+canvas.addEventListener('mousemove', e => { const p=getCanvasPos(e); mouseX=p.x; mouseY=p.y; });
+canvas.addEventListener('mousedown', e => { ensureAudio(); const p=getCanvasPos(e); mouseX=p.x; mouseY=p.y; mouseDown=true; mouseClicked=true; });
+canvas.addEventListener('mouseup', () => { mouseDown=false; });
+canvas.addEventListener('touchstart', e => { ensureAudio(); e.preventDefault(); touchActive=true; if(e.touches.length>0){const p=getCanvasPos(e);mouseX=p.x;mouseY=p.y;mouseDown=true;mouseClicked=true;} }, {passive:false});
+canvas.addEventListener('touchmove', e => { e.preventDefault(); if(e.touches.length>0){const p=getCanvasPos(e);mouseX=p.x;mouseY=p.y;} }, {passive:false});
+canvas.addEventListener('touchend', e => { e.preventDefault(); mouseDown=false; touchActive=false; }, {passive:false});
+
+// ---- BUTTONS (reusable) ----
+let buttons = [];
+function resetButtons(){ buttons = []; }
+function addButton(x,y,w,h,text,color,action,disabled){
+  buttons.push({x,y,w,h,text,color,action,disabled:!!disabled});
+}
+function drawButtons(){
+  for(let i=0;i<buttons.length;i++){
+    const b = buttons[i];
+    const hover = isInRect(mouseX, mouseY, b.x, b.y, b.w, b.h);
+    drawBtn(b.x, b.y, b.w, b.h, b.text, b.color, hover, b.disabled);
+  }
+}
+function checkButtons(){
+  if(!mouseClicked) return;
+  for(let i=0;i<buttons.length;i++){
+    const b = buttons[i];
+    if(!b.disabled && isInRect(mouseX, mouseY, b.x, b.y, b.w, b.h)){
+      sfxClick();
+      b.action();
+      mouseClicked = false;
+      return;
+    }
+  }
+}
+
+// ---- DRAW BACKGROUND ----
+function drawLabBg(){
+  // Background
+  ctx.fillStyle = COL.bg;
+  ctx.fillRect(0, 0, DESIGN_W, DESIGN_H);
+  // Grid
+  ctx.strokeStyle = COL.grid; ctx.lineWidth = 0.5;
+  for(let x=0;x<DESIGN_W;x+=30){ ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,DESIGN_H); ctx.stroke(); }
+  for(let y=0;y<DESIGN_H;y+=30){ ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(DESIGN_W,y); ctx.stroke(); }
+  // Lab bench at bottom
+  ctx.fillStyle = '#ECEFF1';
+  ctx.fillRect(0, DESIGN_H-50, DESIGN_W, 50);
+  ctx.strokeStyle = '#B0BEC5'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(0, DESIGN_H-50); ctx.lineTo(DESIGN_W, DESIGN_H-50); ctx.stroke();
+}
+
+// ---- DRAW DNA HELIX ----
+function drawDNAHelix(x, y, h, t){
+  const segments = 20;
+  const amplitude = 15;
+  ctx.lineWidth = 3;
+  for(let i=0;i<segments;i++){
+    const frac = i/segments;
+    const py = y + frac * h;
+    const s1 = Math.sin(frac*Math.PI*4 + t*2);
+    const s2 = Math.sin(frac*Math.PI*4 + t*2 + Math.PI);
+    const x1 = x + s1*amplitude;
+    const x2 = x + s2*amplitude;
+    // Strands
+    ctx.strokeStyle = frac < 0.5 ? COL.dna : COL.purple;
+    ctx.globalAlpha = 0.5 + Math.abs(s1)*0.5;
+    ctx.beginPath(); ctx.arc(x1, py, 2.5, 0, Math.PI*2); ctx.stroke();
+    ctx.strokeStyle = frac < 0.5 ? COL.purple : COL.dna;
+    ctx.globalAlpha = 0.5 + Math.abs(s2)*0.5;
+    ctx.beginPath(); ctx.arc(x2, py, 2.5, 0, Math.PI*2); ctx.stroke();
+    // Rungs
+    if(i%3===0){
+      ctx.globalAlpha = 0.3;
+      ctx.strokeStyle = COL.btnPrimary; ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.moveTo(x1,py); ctx.lineTo(x2,py); ctx.stroke();
+      ctx.lineWidth = 3;
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+
+// ---- STATE: TITLE ----
+function drawTitle(){
+  // Dark science bg
+  ctx.fillStyle = '#1a1a2e';
+  ctx.fillRect(0, 0, DESIGN_W, DESIGN_H);
+
+  // Stars background
+  for(let i=0;i<60;i++){
+    const sx = (i*97+i*i*13)%DESIGN_W;
+    const sy = (i*43+i*i*7)%DESIGN_H;
+    const brightness = 0.3+Math.sin(animTime*2+i)*0.2;
+    ctx.fillStyle = `rgba(255,255,255,${brightness})`;
+    ctx.beginPath(); ctx.arc(sx, sy, 1+Math.random()*0.5, 0, Math.PI*2); ctx.fill();
+  }
+
+  // DNA helixes
+  drawDNAHelix(180, 80, 560, animTime);
+  drawDNAHelix(1100, 80, 560, animTime+1);
+
+  // Title
+  ctx.save();
+  ctx.font = `bold 72px 'Segoe UI',system-ui,sans-serif`;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const grad = ctx.createLinearGradient(440, 120, 840, 120);
+  grad.addColorStop(0, COL.titleGrad1);
+  grad.addColorStop(0.5, COL.titleGrad2);
+  grad.addColorStop(1, COL.titleGrad3);
+  ctx.fillStyle = grad;
+  ctx.shadowColor = 'rgba(156,39,176,0.5)'; ctx.shadowBlur = 20;
+  ctx.fillText('GENE LAB', DESIGN_W/2, 140);
+  ctx.restore();
+
+  ctx.font = `20px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = '#B0BEC5'; ctx.textAlign = 'center';
+  ctx.fillText('Breed creatures. Predict traits. Discover genetics.', DESIGN_W/2, 195);
+
+  // Sample creatures
+  const demoGenies = [
+    { id:1, genes:[makeGenotype(0,'P','P'),makeGenotype(1,'H','H'),makeGenotype(2,'C','c'),makeGenotype(3,'L','L'),makeGenotype(4,'S','s'),makeGenotype(5,'E','E')], name:'Grape' },
+    { id:2, genes:[makeGenotype(0,'p','p'),makeGenotype(1,'h','h'),makeGenotype(2,'c','c'),makeGenotype(3,'l','l'),makeGenotype(4,'s','s'),makeGenotype(5,'e','e')], name:'Sunny' },
+    { id:3, genes:[makeGenotype(0,'P','p'),makeGenotype(1,'H','h'),makeGenotype(2,'C','C'),makeGenotype(3,'L','l'),makeGenotype(4,'S','S'),makeGenotype(5,'E','e')], name:'Fizz' },
+    { id:4, genes:[makeGenotype(0,'p','p'),makeGenotype(1,'H','H'),makeGenotype(2,'c','c'),makeGenotype(3,'L','L'),makeGenotype(4,'S','s'),makeGenotype(5,'e','e')], name:'Spike' },
+  ];
+  for(let i=0;i<4;i++){
+    const gx = 340 + i*160;
+    drawGenie(gx, 350, demoGenies[i], 80, true, false);
+  }
+
+  // NGSS badge
+  ctx.font = `12px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = '#78909C';
+  ctx.fillText('NGSS MS-LS3-1, MS-LS3-2 | Inheritance & Genetic Variation', DESIGN_W/2, 430);
+
+  resetButtons();
+  addButton(DESIGN_W/2-120, 470, 240, 50, 'START GAME', COL.btnPrimary, ()=>{ STATE='HOW_TO'; });
+  if(collection.length > 0){
+    addButton(DESIGN_W/2-120, 535, 240, 50, 'CONTINUE', COL.btnSuccess, ()=>{ STATE='LEVEL_SELECT'; });
+  }
+  addButton(DESIGN_W/2-120, collection.length>0?600:535, 240, 44, 'RESET PROGRESS', COL.btnDanger, ()=>{
+    localStorage.removeItem('genelab_save');
+    collection=[]; geniedex={}; levelProgress=[0,0,0,0,0]; totalScore=0;
+  });
+  drawButtons();
+  checkButtons();
+}
+
+// ---- STATE: HOW TO PLAY ----
+function drawHowTo(){
+  drawLabBg();
+
+  // Title
+  ctx.font = `bold 36px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('How to Play', DESIGN_W/2, 50);
+
+  // Panels
+  const panels = [
+    { title: '1. Select Parents', desc: 'Pick two Genies from your collection to breed together.', color: COL.parent1Frame },
+    { title: '2. Predict Traits', desc: 'Before breeding, predict what the offspring will look like!', color: COL.btnSecondary },
+    { title: '3. Breed & Reveal', desc: 'Watch the offspring appear and see if your predictions were right.', color: COL.offspring },
+    { title: '4. Discover Genetics', desc: 'View the Punnett square to learn HOW traits were inherited.', color: COL.correct },
+  ];
+
+  for(let i=0;i<4;i++){
+    const px = 60 + i*295, py = 85, pw = 275, ph = 140;
+    fillRoundedRect(px, py, pw, ph, 12, COL.uiPanel);
+    strokeRoundedRect(px, py, pw, ph, 12, panels[i].color, 2);
+    ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = panels[i].color; ctx.textAlign = 'center';
+    ctx.fillText(panels[i].title, px+pw/2, py+28);
+    ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight;
+    wrapText(panels[i].desc, px+pw/2, py+55, pw-30, 18);
+  }
+
+  // Genetics key
+  fillRoundedRect(60, 245, 540, 200, 12, COL.uiPanel);
+  strokeRoundedRect(60, 245, 540, 200, 12, COL.btnSecondary, 2);
+  ctx.font = `bold 18px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'left';
+  ctx.fillText('Genetics Key:', 85, 275);
+
+  const keyItems = [
+    'Dominant trait = shows if at least 1 dominant allele (PP or Pp)',
+    'Recessive trait = shows ONLY if both alleles recessive (pp)',
+    'Each parent gives 1 random allele to offspring',
+    'Purple (P) is dominant over Yellow (p)',
+    'Horned (H) is dominant over Smooth (h)',
+    'Phenotype = what you SEE | Genotype = the actual alleles (hidden!)'
+  ];
+  ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  for(let i=0;i<keyItems.length;i++){
+    ctx.fillText('  ' + keyItems[i], 90, 303+i*22);
+  }
+
+  // Punnett square example
+  fillRoundedRect(630, 245, 590, 200, 12, COL.uiPanel);
+  strokeRoundedRect(630, 245, 590, 200, 12, COL.correct, 2);
+  ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Punnett Square Example: Pp x Pp', 925, 275);
+  ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  ctx.fillText('(Both parents carry one purple and one yellow allele)', 925, 295);
+
+  // Draw example Punnett square
+  const gx = 830, gy = 315, cs = 55;
+  ctx.strokeStyle = COL.punnettLine; ctx.lineWidth = 2;
+  // Grid
+  for(let i=0;i<=2;i++){
+    ctx.beginPath(); ctx.moveTo(gx+cs, gy+i*cs); ctx.lineTo(gx+cs*3, gy+i*cs); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(gx+cs*i+cs, gy); ctx.lineTo(gx+cs*i+cs, gy+cs*2); ctx.stroke();
+  }
+  // Parent alleles
+  ctx.font = `bold 18px monospace`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillStyle = COL.purple; ctx.fillText('P', gx+cs*1.5, gy-15);
+  ctx.fillStyle = '#F57F17'; ctx.fillText('p', gx+cs*2.5, gy-15);
+  ctx.fillStyle = COL.purple; ctx.fillText('P', gx+cs*0.5, gy+cs*0.5);
+  ctx.fillStyle = '#F57F17'; ctx.fillText('p', gx+cs*0.5, gy+cs*1.5);
+  // Cells
+  const cells = [['P','P'],['P','p'],['P','p'],['p','p']];
+  const cellPos = [[1,0],[2,0],[1,1],[2,1]];
+  for(let i=0;i<4;i++){
+    const cx = gx+cs*cellPos[i][0]+cs*0.5;
+    const cy = gy+cs*cellPos[i][1]+cs*0.5;
+    const isDom = cells[i][0]==='P' || cells[i][1]==='P';
+    fillRoundedRect(gx+cs*cellPos[i][0]+3, gy+cs*cellPos[i][1]+3, cs-6, cs-6, 4, isDom?'rgba(156,39,176,0.15)':'rgba(255,193,7,0.25)');
+    ctx.fillStyle = isDom ? COL.purple : '#F57F17';
+    ctx.font = `bold 16px monospace`;
+    ctx.fillText(cells[i].join(''), cx, cy);
+  }
+  // Result text
+  ctx.font = `bold 13px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'left';
+  ctx.fillText('Result: 75% Purple, 25% Yellow', gx+cs*3+15, gy+cs*0.5);
+  ctx.font = `12px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  ctx.fillText('1 PP + 2 Pp + 1 pp', gx+cs*3+15, gy+cs*0.5+20);
+  ctx.textBaseline = 'alphabetic';
+
+  // Creature demo
+  fillRoundedRect(60, 465, 1160, 110, 12, 'rgba(156,39,176,0.05)');
+  ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Trait Examples:', DESIGN_W/2, 485);
+  const exLabels = ['Purple (PP)','Purple (Pp)','Yellow (pp)','Horned','Smooth','Big Eyes','Small Eyes'];
+  const exGenies = [
+    { id:10, genes:[makeGenotype(0,'P','P'),makeGenotype(1,'H','H'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'S','S'),makeGenotype(5,'E','E')], name:'' },
+    { id:11, genes:[makeGenotype(0,'P','p'),makeGenotype(1,'H','H'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'S','S'),makeGenotype(5,'E','E')], name:'' },
+    { id:12, genes:[makeGenotype(0,'p','p'),makeGenotype(1,'H','H'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'S','S'),makeGenotype(5,'E','E')], name:'' },
+    { id:13, genes:[makeGenotype(0,'P','P'),makeGenotype(1,'H','H'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'s','s'),makeGenotype(5,'E','E')], name:'' },
+    { id:14, genes:[makeGenotype(0,'P','P'),makeGenotype(1,'h','h'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'s','s'),makeGenotype(5,'E','E')], name:'' },
+    { id:15, genes:[makeGenotype(0,'P','P'),makeGenotype(1,'H','H'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'s','s'),makeGenotype(5,'E','E')], name:'' },
+    { id:16, genes:[makeGenotype(0,'P','P'),makeGenotype(1,'H','H'),makeGenotype(2,'C','C'),makeGenotype(3,'L','L'),makeGenotype(4,'s','s'),makeGenotype(5,'e','e')], name:'' },
+  ];
+  for(let i=0;i<7;i++){
+    const gx2 = 140 + i*155;
+    drawGenie(gx2, 535, exGenies[i], 40, false, false);
+    ctx.font = `11px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+    ctx.fillText(exLabels[i], gx2, 568);
+  }
+
+  resetButtons();
+  addButton(DESIGN_W/2-120, DESIGN_H-65, 240, 45, 'LET\'S GO!', COL.btnSuccess, ()=>{ STATE='LEVEL_SELECT'; });
+  drawButtons();
+  checkButtons();
+}
+
+function wrapText(text, x, y, maxWidth, lineHeight){
+  const words = text.split(' ');
+  let line = '';
+  for(let i=0;i<words.length;i++){
+    const test = line + words[i] + ' ';
+    const m = ctx.measureText(test);
+    if(m.width > maxWidth && i > 0){
+      ctx.fillText(line, x, y);
+      line = words[i] + ' ';
+      y += lineHeight;
+    } else {
+      line = test;
+    }
+  }
+  ctx.fillText(line, x, y);
+}
+
+// ---- STATE: LEVEL SELECT ----
+function drawLevelSelect(){
+  drawLabBg();
+
+  ctx.font = `bold 32px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Choose a Challenge', DESIGN_W/2, 55);
+
+  const levels = [
+    { title: 'One Trait', desc: 'Just body color.\nLearn dominant vs recessive.', traits: 1, color: '#4CAF50' },
+    { title: 'Two Traits', desc: 'Color + Horns.\nIndependent assortment.', traits: 2, color: '#2196F3' },
+    { title: 'Mystery Parents', desc: 'Given offspring,\nfigure out parent genotypes!', traits: 3, color: '#FF9800' },
+    { title: 'Breeding Challenge', desc: 'Create a target creature\nin fewest breeds.', traits: 4, color: '#E91E63' },
+    { title: 'Free Lab', desc: 'All 6 traits.\nComplete your Geniedex!', traits: 6, color: '#9C27B0' },
+  ];
+
+  resetButtons();
+  for(let i=0;i<5;i++){
+    const lx = 65 + i*240, ly = 95, lw = 220, lh = 260;
+    const hover = isInRect(mouseX, mouseY, lx, ly, lw, lh);
+
+    ctx.save();
+    if(hover){ ctx.shadowColor = levels[i].color; ctx.shadowBlur = 15; }
+    fillRoundedRect(lx, ly, lw, lh, 14, COL.uiPanel);
+    ctx.restore();
+    strokeRoundedRect(lx, ly, lw, lh, 14, hover ? levels[i].color : COL.uiPanelBorder, hover?3:2);
+
+    // Level number
+    ctx.beginPath();
+    ctx.arc(lx+lw/2, ly+35, 22, 0, Math.PI*2);
+    ctx.fillStyle = levels[i].color; ctx.fill();
+    ctx.font = `bold 20px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textWhite; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(i+1, lx+lw/2, ly+36);
+    ctx.textBaseline = 'alphabetic';
+
+    // Title
+    ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.text;
+    ctx.fillText(levels[i].title, lx+lw/2, ly+78);
+
+    // Description
+    ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight;
+    const lines = levels[i].desc.split('\n');
+    for(let j=0;j<lines.length;j++) ctx.fillText(lines[j], lx+lw/2, ly+100+j*18);
+
+    // Traits count
+    ctx.font = `12px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = levels[i].color;
+    ctx.fillText(levels[i].traits + ' trait' + (levels[i].traits>1?'s':''), lx+lw/2, ly+155);
+
+    // Stars
+    const stars = levelProgress[i];
+    for(let s=0;s<3;s++){
+      const sx = lx + lw/2 - 30 + s*30, sy = ly+175;
+      drawStar(sx, sy, 10, s<stars ? COL.star : COL.starEmpty);
+    }
+
+    // Play button
+    addButton(lx+30, ly+lh-55, lw-60, 38, stars>0?'REPLAY':'PLAY', levels[i].color, (function(idx){ return function(){ startLevel(idx); }; })(i));
+  }
+
+  // Geniedex button
+  addButton(DESIGN_W/2-100, 390, 200, 40, 'GENIEDEX', COL.geniedex, ()=>{ prevState='LEVEL_SELECT'; STATE='GENIEDEX'; });
+
+  // Score display
+  ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+  ctx.fillText('Total Score: ' + totalScore + ' | Collection: ' + collection.length + ' Genies', DESIGN_W/2, 450);
+
+  // Back button
+  addButton(20, DESIGN_H-55, 100, 38, 'BACK', COL.textLight, ()=>{ STATE='TITLE'; });
+
+  drawButtons();
+  checkButtons();
+}
+
+function drawStar(x, y, r, color){
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  for(let i=0;i<5;i++){
+    const a = -Math.PI/2 + i*Math.PI*2/5;
+    const ao = a + Math.PI/5;
+    ctx.lineTo(x+Math.cos(a)*r, y+Math.sin(a)*r);
+    ctx.lineTo(x+Math.cos(ao)*r*0.45, y+Math.sin(ao)*r*0.45);
+  }
+  ctx.closePath(); ctx.fill();
+}
+
+// ---- STATE: BREEDING ----
+function drawBreeding(){
+  drawLabBg();
+
+  const tc = getActiveTraitCount();
+  const isChallenge = currentLevel === 3;
+  const isFree = currentLevel === 4 || STATE === 'FREE_LAB';
+
+  // Header
+  ctx.font = `bold 22px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  const lvlNames = ['Level 1: One Trait','Level 2: Two Traits','Level 3: Mystery','Level 4: Breeding Challenge','Free Lab'];
+  ctx.fillText(lvlNames[currentLevel], DESIGN_W/2, 28);
+
+  if(isChallenge && levelTarget){
+    ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight;
+    ctx.fillText('Create this target creature! Breeds used: ' + levelBreedCount, DESIGN_W/2, 50);
+    // Draw target
+    fillRoundedRect(DESIGN_W/2-50, 56, 100, 90, 8, 'rgba(255,215,0,0.1)');
+    strokeRoundedRect(DESIGN_W/2-50, 56, 100, 90, 8, COL.offspring, 2);
+    drawGenie(DESIGN_W/2, 95, levelTarget, 40, true, false);
+    ctx.font = `10px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.offspring; ctx.textAlign = 'center';
+    ctx.fillText('TARGET', DESIGN_W/2, 140);
+  }
+
+  // Egg animation phase
+  if(eggPhase > 0){
+    drawEggAnimation();
+    resetButtons();
+    drawButtons();
+    checkButtons();
+    return;
+  }
+
+  // Prediction results phase
+  if(predictionResults && !showPunnett){
+    drawPredictionResults();
+    return;
+  }
+
+  // Punnett display phase
+  if(showPunnett){
+    drawPunnettDisplay();
+    return;
+  }
+
+  // Selection phase
+  if(!parent1 || !parent2){
+    drawSelectionPhase(tc);
+    return;
+  }
+
+  // Prediction phase - parents selected, predict before breeding
+  if(Object.keys(predictions).length < tc && !offspring){
+    drawPredictionPhase(tc);
+    return;
+  }
+
+  // Ready to breed
+  if(!offspring){
+    drawBreedReady(tc);
+    return;
+  }
+}
+
+function drawSelectionPhase(tc){
+  const selectLabel = selectingFor === 0 ? 'Select Parent 1' : 'Select Parent 2';
+  const selectColor = selectingFor === 0 ? COL.parent1Frame : COL.parent2Frame;
+
+  // Parent display area
+  fillRoundedRect(30, 55, 280, 160, 10, COL.uiPanel);
+  strokeRoundedRect(30, 55, 280, 160, 10, COL.parent1Frame, 2);
+  ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent1Frame; ctx.textAlign = 'center';
+  ctx.fillText('Parent 1', 170, 75);
+  if(parent1) drawGenie(170, 150, parent1, 55, true, false, true, COL.parent1Frame);
+  else { ctx.font=`13px 'Segoe UI',system-ui,sans-serif`; ctx.fillStyle=COL.textLight; ctx.fillText('Tap to select', 170, 145); }
+
+  fillRoundedRect(970, 55, 280, 160, 10, COL.uiPanel);
+  strokeRoundedRect(970, 55, 280, 160, 10, COL.parent2Frame, 2);
+  ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent2Frame; ctx.textAlign = 'center';
+  ctx.fillText('Parent 2', 1110, 75);
+  if(parent2) drawGenie(1110, 150, parent2, 55, true, false, true, COL.parent2Frame);
+  else { ctx.font=`13px 'Segoe UI',system-ui,sans-serif`; ctx.fillStyle=COL.textLight; ctx.fillText('Tap to select', 1110, 145); }
+
+  // Heart between parents
+  ctx.font = `28px serif`; ctx.textAlign = 'center';
+  ctx.fillStyle = '#E91E63';
+  ctx.fillText('\u2764', DESIGN_W/2, 130);
+
+  // Prompt
+  ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = selectColor; ctx.textAlign = 'center';
+  ctx.fillText(selectLabel, DESIGN_W/2, 235);
+
+  // Collection grid
+  drawCollectionGrid(260, tc);
+
+  resetButtons();
+  // Clear selection buttons
+  if(parent1){
+    addButton(95, 200, 90, 28, 'Clear P1', COL.textLight, ()=>{ parent1=null; selectingFor=0; predictions={}; });
+  }
+  if(parent2){
+    addButton(1035, 200, 90, 28, 'Clear P2', COL.textLight, ()=>{ parent2=null; selectingFor=1; predictions={}; });
+  }
+  addButton(20, DESIGN_H-55, 100, 38, 'BACK', COL.textLight, ()=>{ STATE='LEVEL_SELECT'; collection=[]; });
+  addButton(DESIGN_W-160, DESIGN_H-55, 140, 38, 'GENIEDEX', COL.geniedex, ()=>{ prevState=STATE; STATE='GENIEDEX'; });
+  drawButtons();
+  checkButtons();
+
+  // Handle collection click
+  if(mouseClicked){
+    handleCollectionClick(260);
+  }
+}
+
+function drawCollectionGrid(topY, tc){
+  const cols = Math.min(collection.length, 8);
+  const gridW = DESIGN_W - 60;
+  const cellW = Math.min(140, gridW/cols);
+  const cellH = 130;
+  const rows = Math.ceil(collection.length / cols);
+  const actualCols = Math.min(collection.length, 8);
+
+  fillRoundedRect(25, topY-10, DESIGN_W-50, Math.min(rows, 3)*cellH+30, 10, 'rgba(0,0,0,0.03)');
+
+  ctx.font = `bold 13px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight; ctx.textAlign = 'left';
+  ctx.fillText('Your Collection (' + collection.length + ')', 35, topY+5);
+
+  for(let i=0;i<collection.length;i++){
+    const col = i % actualCols;
+    const row = Math.floor(i / actualCols);
+    if(row >= 3) break; // Max 3 rows visible
+    const cx = 55 + col*(gridW/actualCols) + (gridW/actualCols)/2;
+    const cy = topY + 35 + row*cellH + cellH/2;
+
+    const g = collection[i];
+    const isP1 = parent1 && parent1.id === g.id;
+    const isP2 = parent2 && parent2.id === g.id;
+    const hover = isInRect(mouseX, mouseY, cx-cellW/2, cy-cellH/2, cellW, cellH);
+
+    if(isP1 || isP2){
+      fillRoundedRect(cx-cellW/2+5, cy-cellH/2+5, cellW-10, cellH-10, 8, isP1?'rgba(33,150,243,0.1)':'rgba(233,30,99,0.1)');
+      strokeRoundedRect(cx-cellW/2+5, cy-cellH/2+5, cellW-10, cellH-10, 8, isP1?COL.parent1Frame:COL.parent2Frame, 2);
+    } else if(hover){
+      fillRoundedRect(cx-cellW/2+5, cy-cellH/2+5, cellW-10, cellH-10, 8, 'rgba(0,0,0,0.04)');
+      strokeRoundedRect(cx-cellW/2+5, cy-cellH/2+5, cellW-10, cellH-10, 8, COL.textLight, 1);
+    }
+
+    drawGenie(cx, cy-5, g, 45, hover, false);
+  }
+}
+
+function handleCollectionClick(topY){
+  const cols = Math.min(collection.length, 8);
+  const gridW = DESIGN_W - 60;
+  const cellW = Math.min(140, gridW/cols);
+  const cellH = 130;
+  const actualCols = Math.min(collection.length, 8);
+
+  for(let i=0;i<collection.length;i++){
+    const col = i % actualCols;
+    const row = Math.floor(i / actualCols);
+    if(row >= 3) continue;
+    const cx = 55 + col*(gridW/actualCols) + (gridW/actualCols)/2;
+    const cy = topY + 35 + row*cellH + cellH/2;
+
+    if(isInRect(mouseX, mouseY, cx-cellW/2, cy-cellH/2, cellW, cellH)){
+      sfxPop();
+      const g = collection[i];
+      if(selectingFor === 0){
+        if(parent2 && parent2.id === g.id) continue;
+        parent1 = g;
+        selectingFor = 1;
+      } else {
+        if(parent1 && parent1.id === g.id) continue;
+        parent2 = g;
+      }
+      predictions = {};
+      mouseClicked = false;
+      return;
+    }
+  }
+}
+
+// ---- PREDICTION PHASE ----
+function drawPredictionPhase(tc){
+  // Show parents
+  fillRoundedRect(30, 55, 200, 130, 10, COL.uiPanel);
+  strokeRoundedRect(30, 55, 200, 130, 10, COL.parent1Frame, 2);
+  ctx.font = `bold 12px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent1Frame; ctx.textAlign = 'center';
+  ctx.fillText('Parent 1: ' + parent1.name, 130, 72);
+  drawGenie(130, 135, parent1, 45, true, false, true, COL.parent1Frame);
+
+  fillRoundedRect(1050, 55, 200, 130, 10, COL.uiPanel);
+  strokeRoundedRect(1050, 55, 200, 130, 10, COL.parent2Frame, 2);
+  ctx.font = `bold 12px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent2Frame; ctx.textAlign = 'center';
+  ctx.fillText('Parent 2: ' + parent2.name, 1150, 72);
+  drawGenie(1150, 135, parent2, 45, true, false, true, COL.parent2Frame);
+
+  // Prediction panel
+  fillRoundedRect(260, 55, 760, 400, 14, COL.uiPanel);
+  strokeRoundedRect(260, 55, 760, 400, 14, COL.btnSecondary, 2);
+  ctx.font = `bold 20px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.btnSecondary; ctx.textAlign = 'center';
+  ctx.fillText('Predict the Offspring!', DESIGN_W/2, 90);
+  ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  ctx.fillText('What traits will the offspring have? Make your predictions:', DESIGN_W/2, 112);
+
+  resetButtons();
+  for(let i=0;i<tc;i++){
+    const t = TRAITS[i];
+    const py = 130 + i*42;
+    const selected = predictions[i];
+
+    ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.text; ctx.textAlign = 'right';
+    ctx.fillText(t.name.charAt(0).toUpperCase()+t.name.slice(1)+':', 430, py+20);
+
+    // Dominant button
+    const domSel = selected === 'dom';
+    const recSel = selected === 'rec';
+    addButton(445, py+3, 140, 32, t.domLabel + ' ('+t.dom+'_)', domSel?COL.btnSecondary:COL.textLight,
+      (function(idx){ return function(){ predictions[idx]='dom'; sfxPop(); }; })(i));
+    addButton(600, py+3, 140, 32, t.recLabel + ' ('+t.rec+t.rec+')', recSel?COL.btnSecondary:COL.textLight,
+      (function(idx){ return function(){ predictions[idx]='rec'; sfxPop(); }; })(i));
+
+    if(domSel){
+      ctx.fillStyle = COL.correct; ctx.font = 'bold 16px serif';
+      ctx.textAlign = 'left'; ctx.fillText('\u2713', 590, py+24);
+    }
+    if(recSel){
+      ctx.fillStyle = COL.correct; ctx.font = 'bold 16px serif';
+      ctx.textAlign = 'left'; ctx.fillText('\u2713', 745, py+24);
+    }
+  }
+
+  // Confirm predictions
+  const allPredicted = Object.keys(predictions).length >= tc;
+  addButton(DESIGN_W/2-80, 420, 160, 40, 'CONFIRM', COL.btnSuccess, ()=>{
+    if(allPredicted){ /* move to breed ready */ }
+  }, !allPredicted);
+
+  addButton(300, 420, 120, 35, 'Change Parents', COL.textLight, ()=>{
+    parent1=null; parent2=null; selectingFor=0; predictions={};
+  });
+
+  drawButtons();
+  checkButtons();
+}
+
+// ---- BREED READY ----
+function drawBreedReady(tc){
+  // Show parents and prediction summary
+  fillRoundedRect(30, 55, 200, 130, 10, COL.uiPanel);
+  strokeRoundedRect(30, 55, 200, 130, 10, COL.parent1Frame, 2);
+  ctx.font = `bold 12px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent1Frame; ctx.textAlign = 'center';
+  ctx.fillText('Parent 1: ' + parent1.name, 130, 72);
+  drawGenie(130, 135, parent1, 45, true, false, true, COL.parent1Frame);
+
+  fillRoundedRect(1050, 55, 200, 130, 10, COL.uiPanel);
+  strokeRoundedRect(1050, 55, 200, 130, 10, COL.parent2Frame, 2);
+  ctx.font = `bold 12px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent2Frame; ctx.textAlign = 'center';
+  ctx.fillText('Parent 2: ' + parent2.name, 1150, 72);
+  drawGenie(1150, 135, parent2, 45, true, false, true, COL.parent2Frame);
+
+  // Prediction summary
+  fillRoundedRect(DESIGN_W/2-200, 200, 400, 180, 12, COL.uiPanel);
+  strokeRoundedRect(DESIGN_W/2-200, 200, 400, 180, 12, COL.btnSecondary, 2);
+  ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Your Predictions:', DESIGN_W/2, 228);
+
+  for(let i=0;i<tc;i++){
+    const t = TRAITS[i];
+    const pred = predictions[i];
+    ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+    const label = pred === 'dom' ? t.domLabel : t.recLabel;
+    ctx.fillText(t.name.charAt(0).toUpperCase()+t.name.slice(1) + ': ' + label, DESIGN_W/2, 255+i*22);
+  }
+
+  resetButtons();
+  addButton(DESIGN_W/2-80, 400, 160, 50, 'BREED!', COL.btnSuccess, ()=>{
+    sfxBreed();
+    offspring = breedGenies(parent1, parent2);
+    collection.push(offspring);
+    breedCount++;
+    levelBreedCount++;
+    // Register in geniedex
+    const pk = phenotypeKey(offspring);
+    if(!geniedex[pk]) geniedex[pk] = { count: 0, first: Date.now() };
+    geniedex[pk].count++;
+    // Start egg animation
+    eggPhase = 1; eggTimer = 0;
+    saveGame();
+  });
+  addButton(DESIGN_W/2-80, 460, 160, 35, 'Change Predictions', COL.textLight, ()=>{ predictions={}; });
+
+  drawButtons();
+  checkButtons();
+}
+
+// ---- EGG ANIMATION ----
+function drawEggAnimation(){
+  // Parents on sides
+  if(parent1) drawGenie(200, 300, parent1, 60, false, false, true, COL.parent1Frame);
+  if(parent2) drawGenie(1080, 300, parent2, 60, false, false, true, COL.parent2Frame);
+
+  eggTimer++;
+  const cx = DESIGN_W/2, cy = 320;
+
+  if(eggPhase === 1){
+    // Hearts flying from parents to center
+    if(eggTimer % 8 === 0){
+      spawnParticle(200+Math.random()*40, 280, 'heart', 4+Math.random()*2, -1+Math.random()*2, 60, '#E91E63', 8);
+      spawnParticle(1080-Math.random()*40, 280, 'heart', -4-Math.random()*2, -1+Math.random()*2, 60, '#E91E63', 8);
+    }
+    if(eggTimer > 50){ eggPhase = 2; eggTimer = 0; }
+    // Draw forming egg
+    const s = Math.min(1, eggTimer/50);
+    ctx.fillStyle = '#FFF9C4';
+    ctx.beginPath();
+    ctx.ellipse(cx, cy, 35*s, 45*s, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#FFD54F'; ctx.lineWidth = 3;
+    ctx.stroke();
+  } else if(eggPhase === 2){
+    // Shaking egg
+    const shake = Math.sin(eggTimer*0.5)*Math.min(eggTimer*0.3, 8);
+    ctx.fillStyle = '#FFF9C4';
+    ctx.beginPath();
+    ctx.ellipse(cx+shake, cy, 35, 45, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#FFD54F'; ctx.lineWidth = 3;
+    ctx.stroke();
+    // Crack lines
+    if(eggTimer > 30){
+      ctx.strokeStyle = '#795548'; ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(cx+shake-5, cy-20);
+      ctx.lineTo(cx+shake+3, cy-5);
+      ctx.lineTo(cx+shake-8, cy+10);
+      ctx.stroke();
+    }
+    if(eggTimer > 60){ eggPhase = 3; eggTimer = 0; sfxHatch(); }
+  } else if(eggPhase === 3){
+    // Crack open - fragments fly out
+    if(eggTimer === 1){
+      spawnBurst(cx, cy, 20, 'fragment', '#FFF9C4', 4, 40, 6);
+      spawnBurst(cx, cy, 15, 'sparkle', '#FFD700', 3, 50, 3);
+    }
+    // Reveal offspring growing
+    const s = Math.min(1, eggTimer/30);
+    if(offspring){
+      ctx.save();
+      ctx.globalAlpha = s;
+      // Golden glow
+      const grd = ctx.createRadialGradient(cx, cy, 0, cx, cy, 80*s);
+      grd.addColorStop(0, 'rgba(255,215,0,0.3)');
+      grd.addColorStop(1, 'rgba(255,215,0,0)');
+      ctx.fillStyle = grd;
+      ctx.beginPath(); ctx.arc(cx, cy, 80*s, 0, Math.PI*2); ctx.fill();
+      drawGenie(cx, cy, offspring, 65*s, false, false, true, COL.offspring);
+      ctx.restore();
+    }
+    if(eggTimer > 60){
+      eggPhase = 4; eggTimer = 0;
+      // Calculate prediction results
+      calculatePredictionResults();
+    }
+  } else if(eggPhase === 4){
+    // Full reveal, move to results
+    if(offspring){
+      drawGenie(cx, cy, offspring, 65, true, false, true, COL.offspring);
+      ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillStyle = COL.offspring; ctx.textAlign = 'center';
+      ctx.fillText('Meet ' + offspring.name + '!', cx, cy+65);
+    }
+
+    resetButtons();
+    addButton(cx-80, cy+80, 160, 40, 'See Results', COL.btnPrimary, ()=>{
+      eggPhase = 0;
+      traitRevealIndex = 0;
+      traitRevealTimer = 0;
+    });
+    drawButtons();
+    checkButtons();
+  }
+}
+
+function calculatePredictionResults(){
+  const tc = getActiveTraitCount();
+  predictionResults = { correct: 0, total: tc, traits: [] };
+  for(let i=0;i<tc;i++){
+    const predicted = predictions[i];
+    const actual = offspring.genes[i].dominant ? 'dom' : 'rec';
+    const isCorrect = predicted === actual;
+    if(isCorrect) predictionResults.correct++;
+    predictionResults.traits.push({
+      traitIndex: i,
+      predicted,
+      actual,
+      correct: isCorrect
+    });
+  }
+  const bonus = predictionResults.correct * 10;
+  totalScore += bonus;
+  // Check level completion
+  if(currentLevel === 0 && predictionResults.correct >= 1) levelProgress[0] = Math.max(levelProgress[0], predictionResults.correct >= tc ? 3 : predictionResults.correct >= tc-1 ? 2 : 1);
+  if(currentLevel === 1 && predictionResults.correct >= 1) levelProgress[1] = Math.max(levelProgress[1], predictionResults.correct >= tc ? 3 : predictionResults.correct >= tc-1 ? 2 : 1);
+  if(currentLevel === 3){
+    if(matchesTarget(offspring)){
+      const stars = levelBreedCount <= 3 ? 3 : levelBreedCount <= 5 ? 2 : 1;
+      levelProgress[3] = Math.max(levelProgress[3], stars);
+      achievementQueue.push('Target creature created in ' + levelBreedCount + ' breeds!');
+    }
+  }
+  // Geniedex achievements
+  const dexCount = Object.keys(geniedex).length;
+  if(dexCount >= 10 && !geniedex._ach10){ geniedex._ach10=true; achievementQueue.push('Geniedex: 10 unique phenotypes!'); }
+  if(dexCount >= 20 && !geniedex._ach20){ geniedex._ach20=true; achievementQueue.push('Geniedex: 20 unique phenotypes!'); }
+  // All recessive check
+  const allRec = offspring.genes.slice(0,tc).every(g=>!g.dominant);
+  if(allRec && tc>=4){ achievementQueue.push('All Recessive offspring born!'); }
+  const allDom = offspring.genes.slice(0,tc).every(g=>g.dominant);
+  if(allDom && tc>=4){ achievementQueue.push('All Dominant offspring born!'); }
+
+  saveGame();
+}
+
+// ---- PREDICTION RESULTS ----
+function drawPredictionResults(){
+  drawLabBg();
+  const tc = getActiveTraitCount();
+
+  ctx.font = `bold 24px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Breeding Results', DESIGN_W/2, 40);
+
+  // Parents and offspring display
+  if(parent1) drawGenie(200, 150, parent1, 50, true, false, true, COL.parent1Frame);
+  ctx.font = `20px serif`; ctx.fillStyle = '#E91E63'; ctx.textAlign = 'center';
+  ctx.fillText('+', DESIGN_W/2, 140);
+  if(parent2) drawGenie(1080, 150, parent2, 50, true, false, true, COL.parent2Frame);
+  ctx.font = `20px serif`; ctx.fillStyle = COL.text;
+  ctx.fillText('=', DESIGN_W/2, 175);
+  if(offspring) drawGenie(DESIGN_W/2, 160, offspring, 55, true, false, true, COL.offspring);
+
+  // Results panel
+  fillRoundedRect(200, 220, 880, tc*45+80, 12, COL.uiPanel);
+  strokeRoundedRect(200, 220, 880, tc*45+80, 12, COL.btnPrimary, 2);
+
+  ctx.font = `bold 18px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Prediction Score: ' + predictionResults.correct + '/' + predictionResults.total, DESIGN_W/2, 250);
+
+  // Animated trait reveal
+  traitRevealTimer++;
+  const revealCount = Math.min(tc, Math.floor(traitRevealTimer / 20));
+
+  for(let i=0;i<tc;i++){
+    const r = predictionResults.traits[i];
+    const t = TRAITS[r.traitIndex];
+    const py = 270 + i*45;
+
+    if(i < revealCount){
+      // Revealed
+      ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+      ctx.textAlign = 'left';
+      ctx.fillStyle = COL.text;
+      ctx.fillText(t.name.charAt(0).toUpperCase()+t.name.slice(1), 230, py+20);
+
+      ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillStyle = COL.textLight;
+      const predLabel = r.predicted === 'dom' ? t.domLabel : t.recLabel;
+      const actLabel = r.actual === 'dom' ? t.domLabel : t.recLabel;
+      ctx.fillText('Predicted: ' + predLabel, 380, py+20);
+      ctx.fillText('Actual: ' + actLabel, 570, py+20);
+
+      // Check or X
+      if(r.correct){
+        ctx.fillStyle = COL.correct;
+        ctx.font = `bold 22px serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText('\u2713', 750, py+22);
+        if(i === revealCount-1 && traitRevealTimer%20 === 1) sfxChime();
+      } else {
+        ctx.fillStyle = COL.wrong;
+        ctx.font = `bold 22px serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText('\u2717', 750, py+22);
+        if(i === revealCount-1 && traitRevealTimer%20 === 1) sfxBuzz();
+      }
+
+      // Genotype reveal
+      ctx.font = `bold 12px monospace`;
+      ctx.fillStyle = offspring.genes[r.traitIndex].dominant ? COL.purple : '#F57F17';
+      ctx.textAlign = 'center';
+      ctx.fillText(genotypeStr(offspring.genes[r.traitIndex]), 830, py+20);
+
+      // Explanation
+      ctx.font = `11px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillStyle = COL.textLight; ctx.textAlign = 'left';
+      const gStr = genotypeStr(offspring.genes[r.traitIndex]);
+      const expl = offspring.genes[r.traitIndex].dominant ?
+        gStr + ' = has dominant allele \u2192 ' + t.domLabel :
+        gStr + ' = both recessive \u2192 ' + t.recLabel;
+      ctx.fillText(expl, 870, py+20);
+    } else {
+      // Not yet revealed
+      ctx.fillStyle = '#E0E0E0'; ctx.font = `14px 'Segoe UI',system-ui,sans-serif`; ctx.textAlign = 'center';
+      ctx.fillText('...', DESIGN_W/2, py+20);
+    }
+  }
+
+  // Bonus display
+  if(revealCount >= tc){
+    const bonus = predictionResults.correct * 10;
+    ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.offspring; ctx.textAlign = 'center';
+    ctx.fillText('+' + bonus + ' points!', DESIGN_W/2, 280+tc*45);
+
+    if(currentLevel===3 && matchesTarget(offspring)){
+      ctx.fillStyle = COL.correct;
+      ctx.fillText('TARGET MATCH! Level Complete!', DESIGN_W/2, 300+tc*45);
+    }
+  }
+
+  resetButtons();
+  if(revealCount >= tc){
+    addButton(DESIGN_W/2-180, DESIGN_H-60, 160, 42, 'View Punnett', COL.btnPrimary, ()=>{
+      showPunnett = true;
+      punnettTrait = 0;
+      punnettAnimProgress = 0;
+    });
+    addButton(DESIGN_W/2+20, DESIGN_H-60, 160, 42, 'Breed Again', COL.btnSuccess, ()=>{
+      predictionResults = null;
+      offspring = null;
+      parent1 = null; parent2 = null;
+      selectingFor = 0;
+      predictions = {};
+      traitRevealIndex = -1;
+      traitRevealTimer = 0;
+    });
+  }
+  addButton(20, DESIGN_H-55, 120, 38, 'Level Select', COL.textLight, ()=>{ STATE='LEVEL_SELECT'; });
+  drawButtons();
+  checkButtons();
+}
+
+// ---- PUNNETT SQUARE DISPLAY ----
+function drawPunnettDisplay(){
+  drawLabBg();
+  const tc = getActiveTraitCount();
+  const t = TRAITS[punnettTrait];
+  const outcomes = getPunnettOutcomes(parent1.genes[punnettTrait], parent2.genes[punnettTrait], punnettTrait);
+
+  punnettAnimProgress = Math.min(1, punnettAnimProgress + 0.02);
+  const ap = punnettAnimProgress;
+
+  ctx.font = `bold 24px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Punnett Square: ' + t.name.charAt(0).toUpperCase()+t.name.slice(1), DESIGN_W/2, 45);
+
+  ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  ctx.fillText(t.domLabel + ' (' + t.dom + ') is dominant over ' + t.recLabel + ' (' + t.rec + ')', DESIGN_W/2, 70);
+
+  // Parent labels
+  ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.parent1Frame;
+  ctx.fillText('Parent 1: ' + genotypeStr(parent1.genes[punnettTrait]), 350, 110);
+  ctx.fillStyle = COL.parent2Frame;
+  ctx.fillText('Parent 2: ' + genotypeStr(parent2.genes[punnettTrait]), 350+380, 110);
+
+  // Draw the Punnett square
+  const gx = DESIGN_W/2 - 120, gy = 140, cs = 100;
+
+  // Background
+  fillRoundedRect(gx-10, gy-10, cs*3+20, cs*3+20, 10, COL.punnettBg);
+
+  // Grid lines (animated)
+  if(ap > 0.1){
+    ctx.strokeStyle = COL.punnettLine; ctx.lineWidth = 2;
+    const lineP = Math.min(1, (ap-0.1)/0.2);
+    // Horizontal
+    for(let i=0;i<=2;i++){
+      ctx.beginPath();
+      ctx.moveTo(gx+cs, gy+i*cs);
+      ctx.lineTo(gx+cs + cs*2*lineP, gy+i*cs);
+      ctx.stroke();
+    }
+    // Vertical
+    for(let i=1;i<=2;i++){
+      ctx.beginPath();
+      ctx.moveTo(gx+cs*i, gy);
+      ctx.lineTo(gx+cs*i, gy + cs*2*lineP);
+      ctx.stroke();
+    }
+  }
+
+  // Parent alleles (animated)
+  if(ap > 0.3){
+    const alleleP = Math.min(1, (ap-0.3)/0.15);
+    ctx.globalAlpha = alleleP;
+    ctx.font = `bold 28px monospace`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    // Top (parent 2 alleles)
+    ctx.fillStyle = outcomes.parentB[0] === t.dom ? COL.purple : '#F57F17';
+    ctx.fillText(outcomes.parentB[0], gx+cs*1.5, gy-25);
+    ctx.fillStyle = outcomes.parentB[1] === t.dom ? COL.purple : '#F57F17';
+    ctx.fillText(outcomes.parentB[1], gx+cs*2.5, gy-25);
+    // Left (parent 1 alleles)
+    ctx.fillStyle = outcomes.parentA[0] === t.dom ? COL.purple : '#F57F17';
+    ctx.fillText(outcomes.parentA[0], gx+cs*0.5, gy+cs*0.5);
+    ctx.fillStyle = outcomes.parentA[1] === t.dom ? COL.purple : '#F57F17';
+    ctx.fillText(outcomes.parentA[1], gx+cs*0.5, gy+cs*1.5);
+    ctx.globalAlpha = 1;
+  }
+
+  // Grid cells (animated one by one)
+  if(ap > 0.5){
+    const cellP = (ap - 0.5) / 0.5;
+    for(let r=0;r<2;r++){
+      for(let c=0;c<2;c++){
+        const cellIdx = r*2+c;
+        const thisCellP = Math.min(1, Math.max(0, cellP*4 - cellIdx));
+        if(thisCellP > 0){
+          ctx.globalAlpha = thisCellP;
+          const cell = outcomes.grid[r][c];
+          const cellX = gx+cs*(c+1), cellY = gy+cs*r;
+          const isDom = cell.dominant;
+
+          fillRoundedRect(cellX+4, cellY+4, cs-8, cs-8, 6, isDom?'rgba(156,39,176,0.15)':'rgba(255,193,7,0.25)');
+
+          ctx.font = `bold 24px monospace`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+          ctx.fillStyle = isDom ? COL.purple : '#F57F17';
+          ctx.fillText(cell.str, cellX+cs/2, cellY+cs/2-10);
+
+          ctx.font = `12px 'Segoe UI',system-ui,sans-serif`;
+          ctx.fillStyle = COL.textLight;
+          ctx.fillText(isDom ? t.domLabel : t.recLabel, cellX+cs/2, cellY+cs/2+15);
+          ctx.globalAlpha = 1;
+        }
+      }
+    }
+  }
+  ctx.textBaseline = 'alphabetic';
+
+  // Summary
+  if(ap >= 1){
+    const domCount = outcomes.grid.flat().filter(c=>c.dominant).length;
+    const recCount = 4 - domCount;
+    ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+    ctx.fillText('Probability: ' + (domCount*25) + '% ' + t.domLabel + ' / ' + (recCount*25) + '% ' + t.recLabel, DESIGN_W/2, gy+cs*2+35);
+
+    // Offspring result
+    ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = offspring.genes[punnettTrait].dominant ? COL.purple : '#F57F17';
+    ctx.fillText('Offspring got: ' + genotypeStr(offspring.genes[punnettTrait]) + ' \u2192 ' +
+      (offspring.genes[punnettTrait].dominant ? t.domLabel : t.recLabel), DESIGN_W/2, gy+cs*2+60);
+
+    // Carrier explanation
+    if(!offspring.genes[punnettTrait].dominant){
+      ctx.fillStyle = COL.textLight; ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillText('Both parents must carry the recessive allele (' + t.rec + ') for this to happen!', DESIGN_W/2, gy+cs*2+82);
+    } else {
+      const gStr = genotypeStr(offspring.genes[punnettTrait]);
+      if(gStr[0]!==gStr[1]){
+        ctx.fillStyle = COL.textLight; ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+        ctx.fillText('This offspring is a CARRIER - looks ' + t.domLabel + ' but carries a hidden ' + t.rec + ' allele!', DESIGN_W/2, gy+cs*2+82);
+      }
+    }
+  }
+
+  // Mini genies
+  if(parent1) drawGenie(100, 200, parent1, 40, true, false);
+  if(parent2) drawGenie(DESIGN_W-100, 200, parent2, 40, true, false);
+  if(offspring) drawGenie(DESIGN_W/2, DESIGN_H-130, offspring, 50, true, false, true, COL.offspring);
+
+  resetButtons();
+  // Trait navigation
+  if(punnettTrait > 0){
+    addButton(DESIGN_W/2-250, DESIGN_H-55, 120, 38, '\u25C0 Prev Trait', COL.textLight, ()=>{ punnettTrait--; punnettAnimProgress=0; sfxPageFlip(); });
+  }
+  if(punnettTrait < tc-1){
+    addButton(DESIGN_W/2+130, DESIGN_H-55, 120, 38, 'Next Trait \u25B6', COL.textLight, ()=>{ punnettTrait++; punnettAnimProgress=0; sfxPageFlip(); });
+  }
+  addButton(DESIGN_W/2-60, DESIGN_H-55, 120, 38, 'Breed Again', COL.btnSuccess, ()=>{
+    showPunnett = false;
+    predictionResults = null;
+    offspring = null;
+    parent1 = null; parent2 = null;
+    selectingFor = 0;
+    predictions = {};
+    punnettAnimProgress = 0;
+    traitRevealIndex = -1;
+    traitRevealTimer = 0;
+  });
+  addButton(20, DESIGN_H-55, 120, 38, 'Level Select', COL.textLight, ()=>{ STATE='LEVEL_SELECT'; showPunnett=false; predictionResults=null; });
+  drawButtons();
+  checkButtons();
+}
+
+// ---- STATE: MYSTERY LEVEL ----
+function drawMystery(){
+  drawLabBg();
+
+  ctx.font = `bold 22px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Level 3: Mystery Parents', DESIGN_W/2, 35);
+
+  if(!levelMysteryParents) return;
+  const { p1, p2, offsprings } = levelMysteryParents;
+  const tc = 3;
+
+  if(mysteryPhase === 0){
+    // Show offspring, ask to deduce parents
+    ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+    ctx.fillText('These offspring came from two mystery parents. Can you figure out the parents\' genotypes?', DESIGN_W/2, 60);
+
+    // Display offspring
+    ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.text;
+    ctx.fillText('Offspring:', DESIGN_W/2, 90);
+    for(let i=0;i<offsprings.length;i++){
+      drawGenie(300+i*180, 170, offsprings[i], 50, true, false);
+      // Show phenotype labels
+      ctx.font = `10px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+      for(let j=0;j<tc;j++){
+        const t = TRAITS[j];
+        ctx.fillText(offsprings[i].genes[j].dominant ? t.domLabel : t.recLabel, 300+i*180, 215+j*13);
+      }
+    }
+
+    // Guess panel
+    fillRoundedRect(100, 280, 1080, 200, 12, COL.uiPanel);
+    strokeRoundedRect(100, 280, 1080, 200, 12, '#FF9800', 2);
+    ctx.font = `bold 16px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = '#FF9800'; ctx.textAlign = 'center';
+    ctx.fillText('What are the parents\' genotypes?', DESIGN_W/2, 308);
+
+    resetButtons();
+    for(let p=0;p<2;p++){
+      const px = p===0 ? 150 : 650;
+      ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillStyle = p===0 ? COL.parent1Frame : COL.parent2Frame;
+      ctx.textAlign = 'center';
+      ctx.fillText('Parent ' + (p+1), px+200, 340);
+
+      for(let i=0;i<tc;i++){
+        const t = TRAITS[i];
+        const py = 355 + i*35;
+        ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+        ctx.fillStyle = COL.text; ctx.textAlign = 'right';
+        ctx.fillText(t.name.charAt(0).toUpperCase()+t.name.slice(1)+':', px+80, py+20);
+
+        const key = 'p'+p+'t'+i;
+        const opts = [t.dom+t.dom, t.dom+t.rec, t.rec+t.rec];
+        for(let o=0;o<3;o++){
+          const sel = mysteryGuesses[key] === opts[o];
+          addButton(px+90+o*105, py+3, 95, 28, opts[o], sel?'#FF9800':COL.textLight,
+            (function(k,v){ return function(){ mysteryGuesses[k]=v; sfxPop(); }; })(key, opts[o]));
+        }
+      }
+    }
+
+    const allGuessed = Object.keys(mysteryGuesses).length >= tc*2;
+    addButton(DESIGN_W/2-80, 495, 160, 40, 'CHECK', COL.btnSuccess, ()=>{
+      if(allGuessed){ mysteryPhase = 1; sfxPop(); }
+    }, !allGuessed);
+
+    addButton(20, DESIGN_H-55, 120, 38, 'Level Select', COL.textLight, ()=>{ STATE='LEVEL_SELECT'; });
+    drawButtons();
+    checkButtons();
+
+  } else if(mysteryPhase === 1){
+    // Show results
+    ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+    ctx.fillText('Let\'s see how you did!', DESIGN_W/2, 60);
+
+    // Show actual parents
+    drawGenie(250, 150, p1, 55, true, true, true, COL.parent1Frame);
+    ctx.font = `bold 13px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.parent1Frame; ctx.textAlign = 'center';
+    ctx.fillText('Parent 1 (actual)', 250, 200);
+
+    drawGenie(1030, 150, p2, 55, true, true, true, COL.parent2Frame);
+    ctx.fillStyle = COL.parent2Frame;
+    ctx.fillText('Parent 2 (actual)', 1030, 200);
+
+    // Comparison
+    fillRoundedRect(150, 240, 980, tc*50+60, 12, COL.uiPanel);
+    let correctCount = 0;
+    for(let p=0;p<2;p++){
+      const parent = p===0 ? p1 : p2;
+      const px = p===0 ? 200 : 700;
+      ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+      ctx.fillStyle = p===0 ? COL.parent1Frame : COL.parent2Frame;
+      ctx.textAlign = 'center';
+      ctx.fillText('Parent ' + (p+1), px+150, 268);
+
+      for(let i=0;i<tc;i++){
+        const t = TRAITS[i];
+        const py = 280 + i*50;
+        const key = 'p'+p+'t'+i;
+        const actual = genotypeStr(parent.genes[i]);
+        const guess = mysteryGuesses[key] || '??';
+        const isCorrect = guess === actual;
+        if(isCorrect) correctCount++;
+
+        ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+        ctx.fillStyle = COL.text; ctx.textAlign = 'left';
+        ctx.fillText(t.name.charAt(0).toUpperCase()+t.name.slice(1)+': ', px+20, py+20);
+        ctx.fillText('Your guess: ' + guess, px+100, py+20);
+        ctx.fillText('Actual: ' + actual, px+230, py+20);
+
+        ctx.fillStyle = isCorrect ? COL.correct : COL.wrong;
+        ctx.font = `bold 18px serif`; ctx.textAlign = 'center';
+        ctx.fillText(isCorrect ? '\u2713' : '\u2717', px+340, py+22);
+      }
+    }
+
+    const total = tc*2;
+    ctx.font = `bold 18px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+    ctx.fillText('Score: ' + correctCount + '/' + total + ' genotypes correct!', DESIGN_W/2, 290+tc*50+20);
+
+    const stars = correctCount >= total ? 3 : correctCount >= total-2 ? 2 : correctCount >= 1 ? 1 : 0;
+    levelProgress[2] = Math.max(levelProgress[2], stars);
+    totalScore += correctCount * 15;
+    saveGame();
+
+    resetButtons();
+    addButton(DESIGN_W/2-160, DESIGN_H-60, 140, 42, 'Try Again', COL.btnPrimary, ()=>{ setupMysteryLevel(); STATE='MYSTERY'; });
+    addButton(DESIGN_W/2+20, DESIGN_H-60, 140, 42, 'Level Select', COL.btnSuccess, ()=>{ STATE='LEVEL_SELECT'; });
+    drawButtons();
+    checkButtons();
+  }
+}
+
+// ---- STATE: FREE LAB ----
+function drawFreeLab(){
+  drawLabBg();
+
+  ctx.font = `bold 20px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.text; ctx.textAlign = 'center';
+  ctx.fillText('Free Lab - All 6 Traits', DESIGN_W/2, 28);
+
+  const dexCount = Object.keys(geniedex).filter(k=>!k.startsWith('_')).length;
+  const totalPheno = 64; // 2^6
+  ctx.font = `13px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  ctx.fillText('Geniedex: ' + dexCount + '/' + totalPheno + ' phenotypes discovered | Collection: ' + collection.length + ' Genies | Breeds: ' + breedCount, DESIGN_W/2, 48);
+
+  // Progress bar
+  const barW = 300, barH = 10, barX = DESIGN_W/2-barW/2, barY = 55;
+  fillRoundedRect(barX, barY, barW, barH, 5, COL.starEmpty);
+  fillRoundedRect(barX, barY, barW*(dexCount/totalPheno), barH, 5, COL.correct);
+
+  if(dexCount >= 32) levelProgress[4] = Math.max(levelProgress[4], 1);
+  if(dexCount >= 48) levelProgress[4] = Math.max(levelProgress[4], 2);
+  if(dexCount >= totalPheno) levelProgress[4] = Math.max(levelProgress[4], 3);
+
+  // Same breeding mechanic
+  if(eggPhase > 0){
+    drawEggAnimation();
+    resetButtons();
+    drawButtons();
+    checkButtons();
+    return;
+  }
+  if(predictionResults && !showPunnett){
+    drawPredictionResults();
+    return;
+  }
+  if(showPunnett){
+    drawPunnettDisplay();
+    return;
+  }
+
+  const tc = 6;
+  if(!parent1 || !parent2){
+    drawSelectionPhase(tc);
+    return;
+  }
+  if(Object.keys(predictions).length < tc && !offspring){
+    drawPredictionPhase(tc);
+    return;
+  }
+  if(!offspring){
+    drawBreedReady(tc);
+    return;
+  }
+}
+
+// ---- STATE: GENIEDEX ----
+function drawGeniedex(){
+  // Book background
+  ctx.fillStyle = '#3E2723';
+  ctx.fillRect(0, 0, DESIGN_W, DESIGN_H);
+
+  // Book
+  fillRoundedRect(40, 30, DESIGN_W-80, DESIGN_H-60, 16, COL.geniedex);
+  fillRoundedRect(55, 45, DESIGN_W-110, DESIGN_H-90, 12, COL.geniedexPage);
+
+  // Spine
+  ctx.fillStyle = '#5D4037';
+  ctx.fillRect(DESIGN_W/2-3, 45, 6, DESIGN_H-90);
+
+  ctx.font = `bold 28px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.geniedex; ctx.textAlign = 'center';
+  ctx.fillText('GENIEDEX', DESIGN_W/2, 80);
+
+  const entries = Object.keys(geniedex).filter(k=>!k.startsWith('_'));
+  const dexCount = entries.length;
+  const totalPheno = 64;
+  ctx.font = `14px 'Segoe UI',system-ui,sans-serif`;
+  ctx.fillStyle = COL.textLight;
+  ctx.fillText(dexCount + ' / ' + totalPheno + ' phenotypes discovered', DESIGN_W/2, 105);
+
+  // Display phenotypes as grid
+  const perPage = 16;
+  const pageEntries = entries.slice(geniedexPage*perPage, (geniedexPage+1)*perPage);
+  const maxPages = Math.ceil(entries.length / perPage);
+
+  for(let i=0;i<pageEntries.length;i++){
+    const pk = pageEntries[i];
+    const col = i % 4;
+    const row = Math.floor(i / 4);
+    const ex = 120 + col*280, ey = 130 + row*130;
+
+    // Create a display genie from phenotype key
+    const genes = [];
+    for(let j=0;j<6;j++){
+      const t = TRAITS[j];
+      const isDom = pk[j] === '1';
+      if(isDom) genes.push(makeGenotype(j, t.dom, t.dom)); // Show as homozygous for display
+      else genes.push(makeGenotype(j, t.rec, t.rec));
+    }
+    const displayGenie = { id: i+1000, genes, name: '' };
+
+    fillRoundedRect(ex-55, ey-45, 110, 110, 8, 'rgba(0,0,0,0.03)');
+    drawGenie(ex, ey+5, displayGenie, 38, false, false);
+
+    // Traits text
+    ctx.font = `9px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+    const traits = [];
+    for(let j=0;j<6;j++){
+      const t = TRAITS[j];
+      traits.push(pk[j]==='1' ? t.domLabel.charAt(0) : t.recLabel.charAt(0));
+    }
+    ctx.fillText(traits.join(' | '), ex, ey+50);
+    ctx.fillText('Seen: ' + geniedex[pk].count + 'x', ex, ey+62);
+  }
+
+  // Empty slots
+  if(pageEntries.length === 0){
+    ctx.font = `16px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.textLight; ctx.textAlign = 'center';
+    ctx.fillText('No discoveries yet! Start breeding in the lab.', DESIGN_W/2, 300);
+  }
+
+  resetButtons();
+  if(geniedexPage > 0){
+    addButton(100, DESIGN_H-70, 120, 35, '\u25C0 Prev Page', COL.geniedex, ()=>{ geniedexPage--; sfxPageFlip(); });
+  }
+  if(geniedexPage < maxPages-1){
+    addButton(DESIGN_W-220, DESIGN_H-70, 120, 35, 'Next Page \u25B6', COL.geniedex, ()=>{ geniedexPage++; sfxPageFlip(); });
+  }
+  addButton(DESIGN_W/2-60, DESIGN_H-70, 120, 35, 'BACK', COL.textLight, ()=>{ STATE=prevState||'LEVEL_SELECT'; });
+  drawButtons();
+  checkButtons();
+}
+
+// ---- ACHIEVEMENT BANNER ----
+function drawAchievements(dt){
+  if(achievementQueue.length > 0 && achievementTimer <= 0){
+    achievementTimer = 180; // 3 seconds
+    sfxAchievement();
+    const msg = achievementQueue.shift();
+    // Store message for display
+    achievementQueue._current = msg;
+    spawnBurst(DESIGN_W/2, 50, 20, 'sparkle', COL.star, 3, 40, 4);
+  }
+  if(achievementTimer > 0){
+    achievementTimer--;
+    const msg = achievementQueue._current || '';
+    const alpha = achievementTimer > 150 ? (180-achievementTimer)/30 : achievementTimer > 30 ? 1 : achievementTimer/30;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    fillRoundedRect(DESIGN_W/2-220, 10, 440, 45, 10, '#FFF8E1');
+    strokeRoundedRect(DESIGN_W/2-220, 10, 440, 45, 10, COL.star, 2);
+    ctx.font = `bold 14px 'Segoe UI',system-ui,sans-serif`;
+    ctx.fillStyle = COL.star; ctx.textAlign = 'center';
+    ctx.fillText('\u2605 ' + msg + ' \u2605', DESIGN_W/2, 38);
+    ctx.restore();
+  }
+}
+
+// ---- PARTICLES UPDATE & DRAW ----
+function updateParticles(dt){
+  for(let i=particles.length-1;i>=0;i--){
+    const p = particles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.05; // gravity
+    p.life--;
+    p.rot += 0.05;
+    if(p.life <= 0) particles.splice(i,1);
+  }
+}
+function drawParticles(){
+  for(const p of particles){
+    const alpha = p.life / p.maxLife;
+    ctx.globalAlpha = alpha;
+    if(p.type === 'heart'){
+      ctx.fillStyle = p.color;
+      ctx.font = `${p.size*2}px serif`;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('\u2764', p.x, p.y);
+    } else if(p.type === 'sparkle'){
+      ctx.fillStyle = p.color || COL.star;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      drawStar(0, 0, p.size, p.color||COL.star);
+      ctx.restore();
+    } else if(p.type === 'fragment'){
+      ctx.fillStyle = p.color;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.fillRect(-p.size/2, -p.size/2, p.size, p.size);
+      ctx.restore();
+    } else {
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size*alpha, 0, Math.PI*2);
+      ctx.fill();
+    }
+  }
+  ctx.globalAlpha = 1;
+  ctx.textBaseline = 'alphabetic';
+}
+
+// ---- MAIN GAME LOOP ----
+let lastTime = 0;
+function gameLoop(timestamp){
+  const dt = Math.min((timestamp - lastTime) / 16.67, 3);
+  lastTime = timestamp;
+  animTime += 0.016 * dt;
+
+  ctx.save();
+  ctx.scale(dpr, dpr);
+  // Clear
+  ctx.clearRect(0, 0, DESIGN_W, DESIGN_H);
+
+  // State machine
+  switch(STATE){
+    case 'TITLE': drawTitle(); break;
+    case 'HOW_TO': drawHowTo(); break;
+    case 'LEVEL_SELECT': drawLevelSelect(); break;
+    case 'BREEDING': drawBreeding(); break;
+    case 'MYSTERY': drawMystery(); break;
+    case 'FREE_LAB': drawFreeLab(); break;
+    case 'GENIEDEX': drawGeniedex(); break;
+  }
+
+  // Particles
+  updateParticles(dt);
+  drawParticles();
+
+  // Achievements
+  drawAchievements(dt);
+
+  ctx.restore();
+
+  mouseClicked = false;
+  requestAnimationFrame(gameLoop);
+}
+
+// ---- INIT ----
+loadGame();
+requestAnimationFrame(gameLoop);
+
+})();
+</script>
+</body>
+</html>

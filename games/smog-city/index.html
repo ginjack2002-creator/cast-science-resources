@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SMOG CITY - Air Pollution Defense Game</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;overflow:hidden;background:#1a1a2e;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+canvas{display:block;margin:0 auto;touch-action:none;cursor:pointer;}
+#orientation-prompt{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#1a1a2e;z-index:9999;color:#fff;justify-content:center;align-items:center;flex-direction:column;font-size:1.2em;text-align:center;padding:20px;}
+#orientation-prompt .icon{font-size:3em;margin-bottom:15px;}
+@media (orientation:portrait) and (max-width:768px){
+#orientation-prompt{display:flex !important;}
+canvas{display:none !important;}
+}
+</style>
+</head>
+<body>
+<div id="orientation-prompt">
+<div class="icon">&#x1F4F1; &#x27A1; &#x1F4F2;</div>
+<p>Please rotate your device to <strong>landscape</strong> mode for the best experience!</p>
+</div>
+<canvas id="gc"></canvas>
+<script>
+(function(){
+"use strict";
+
+// ============================================================
+// CONSTANTS & CONFIGURATION
+// ============================================================
+const COLS = 16, ROWS = 12;
+const TILE = 50;
+const HUD_TOP = 50, HUD_BOT = 70;
+const MAX_PARTICLES = 500;
+const LIVES_TOTAL = 3;
+const WIND_SHIFT_MIN = 30000, WIND_SHIFT_MAX = 45000;
+const COLORS = {
+  sky: '#81D4FA', smogLight: '#8D6E63', smogDark: '#616161',
+  house: '#FFF8E1', tree: '#66BB6A', treeDark: '#388E3C',
+  freeway: '#37474F', freewayLine: '#FFFFFF',
+  barrier: '#B0BEC5', barrierDark: '#78909C',
+  uiPanel: '#1565C0', uiPanelDark: '#0D47A1',
+  healthGreen: '#4CAF50', healthYellow: '#FFC107', healthRed: '#F44336',
+  textWhite: '#FFFFFF', textDark: '#263238',
+  garden: '#2E7D32', gardenLight: '#A5D6A7',
+  monitor: '#FF6F00', monitorLight: '#FFB74D',
+  diverter: '#5C6BC0',
+  gold: '#FFD700', silver: '#C0C0C0', bronze: '#CD7F32'
+};
+const CAR_COLORS = ['#E53935','#1E88E5','#FDD835','#43A047','#8E24AA','#FB8C00','#FFFFFF','#546E7A'];
+
+const TOOLS = [
+  { id: 'tree', name: 'Plant Tree', cost: 10, desc: 'Absorbs pollution nearby', key: '1' },
+  { id: 'barrier', name: 'Wind Barrier', cost: 20, desc: 'Redirects wind around area', key: '2' },
+  { id: 'diverter', name: 'Traffic Diverter', cost: 30, desc: 'Reduces nearby traffic', key: '3' },
+  { id: 'monitor', name: 'Air Monitor', cost: 15, desc: 'Early warning system', key: '4' },
+  { id: 'garden', name: 'Community Garden', cost: 25, desc: 'Large area filter + bonus pts', key: '5' }
+];
+
+const LEVELS = [
+  { name: 'Quiet Street', desc: 'Light traffic, steady wind', houses: 4, traffic: 0.4, windVar: 0.3, events: ['windShift'], gold: 800, silver: 500, bronze: 250, duration: 120 },
+  { name: 'School Zone', desc: 'Protect the kids near the school!', houses: 6, traffic: 0.6, windVar: 0.5, events: ['windShift','rushHour'], gold: 1200, silver: 800, bronze: 400, duration: 150 },
+  { name: 'Rush Hour', desc: 'Heavy traffic surges, shifting winds', houses: 6, traffic: 0.8, windVar: 0.7, events: ['windShift','rushHour','communityRally'], gold: 1600, silver: 1000, bronze: 500, duration: 180 },
+  { name: 'Inversion Day', desc: 'Pollution gets trapped in the heat', houses: 8, traffic: 0.7, windVar: 0.6, events: ['windShift','rushHour','heatwave','rain'], gold: 2000, silver: 1300, bronze: 700, duration: 210 },
+  { name: 'Environmental Justice', desc: 'Dense neighborhood, heavy freeway, tight budget', houses: 10, traffic: 1.0, windVar: 0.8, events: ['windShift','rushHour','heatwave','rain','communityRally'], gold: 2800, silver: 1800, bronze: 1000, duration: 240 }
+];
+
+// ============================================================
+// CANVAS SETUP
+// ============================================================
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+let W, H, dpr, mapOffX, mapOffY;
+let mapW = COLS * TILE, mapH = ROWS * TILE;
+
+function resize() {
+  dpr = window.devicePixelRatio || 1;
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  mapOffX = Math.floor((W - mapW) / 2);
+  mapOffY = HUD_TOP + Math.floor((H - HUD_TOP - HUD_BOT - mapH) / 2);
+  if (mapOffY < HUD_TOP) mapOffY = HUD_TOP;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ============================================================
+// AUDIO ENGINE (Web Audio API)
+// ============================================================
+let audioCtx = null;
+let masterGain = null;
+let windOsc = null, windGain = null;
+let trafficNoise = null, trafficGain = null;
+let audioStarted = false;
+
+function initAudio() {
+  if (audioStarted) return;
+  try {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.3;
+    masterGain.connect(audioCtx.destination);
+    audioStarted = true;
+  } catch(e) { /* silent fail */ }
+}
+
+function playTone(freq, dur, type, vol) {
+  if (!audioCtx) return;
+  const o = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  o.type = type || 'sine';
+  o.frequency.value = freq;
+  g.gain.value = vol || 0.15;
+  g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + dur);
+  o.connect(g);
+  g.connect(masterGain);
+  o.start();
+  o.stop(audioCtx.currentTime + dur);
+}
+
+function playPlace() { playTone(520, 0.12, 'sine', 0.2); setTimeout(() => playTone(780, 0.1, 'sine', 0.15), 60); }
+function playError() { playTone(200, 0.2, 'square', 0.1); }
+function playWarning() { playTone(440, 0.15, 'sawtooth', 0.08); setTimeout(() => playTone(440, 0.15, 'sawtooth', 0.08), 200); }
+function playRain() { playTone(1200, 0.05, 'sine', 0.03); }
+function playLevelComplete() { [0,100,200,300].forEach((d,i) => setTimeout(() => playTone(440+i*110, 0.3, 'sine', 0.15), d)); }
+function playGameOver() { [0,200,400].forEach((d,i) => setTimeout(() => playTone(330-i*60, 0.4, 'sawtooth', 0.12), d)); }
+function playClick() { playTone(600, 0.06, 'sine', 0.1); }
+function playEvent() { playTone(880, 0.1, 'triangle', 0.12); setTimeout(() => playTone(660, 0.1, 'triangle', 0.12), 100); }
+function playPoints() { playTone(1000, 0.08, 'sine', 0.06); }
+
+function startAmbient() {
+  if (!audioCtx) return;
+  // Wind ambient
+  if (!windOsc) {
+    windOsc = audioCtx.createOscillator();
+    windGain = audioCtx.createGain();
+    windOsc.type = 'sine';
+    windOsc.frequency.value = 120;
+    windGain.gain.value = 0;
+    windOsc.connect(windGain);
+    windGain.connect(masterGain);
+    windOsc.start();
+  }
+  // Traffic noise (brown noise approximation)
+  if (!trafficNoise) {
+    const bufSize = audioCtx.sampleRate * 2;
+    const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    let last = 0;
+    for (let i = 0; i < bufSize; i++) {
+      const white = Math.random() * 2 - 1;
+      data[i] = (last + 0.02 * white) / 1.02;
+      last = data[i];
+    }
+    trafficNoise = audioCtx.createBufferSource();
+    trafficNoise.buffer = buf;
+    trafficNoise.loop = true;
+    trafficGain = audioCtx.createGain();
+    trafficGain.gain.value = 0;
+    trafficNoise.connect(trafficGain);
+    trafficGain.connect(masterGain);
+    trafficNoise.start();
+  }
+}
+
+function updateAmbient(windSpeed, trafficLevel) {
+  if (!audioCtx) return;
+  if (windGain) {
+    windGain.gain.value = Math.min(0.04 * windSpeed, 0.08);
+    windOsc.frequency.value = 80 + windSpeed * 40;
+  }
+  if (trafficGain) {
+    trafficGain.gain.value = Math.min(0.03 * trafficLevel, 0.06);
+  }
+}
+
+// ============================================================
+// GAME STATE
+// ============================================================
+let state = 'TITLE'; // TITLE, HOW_TO, LEVEL_SELECT, PLAYING, LEVEL_COMPLETE, GAME_OVER
+let grid = []; // 2D array of cell objects
+let houses = [];
+let cars = [];
+let particles = [];
+let floatingTexts = [];
+let communityPoints = 0;
+let lives = LIVES_TOTAL;
+let score = 0;
+let selectedTool = null;
+let currentLevel = 0;
+let levelConfig = null;
+let gameTime = 0;
+let windDir = 0; // radians
+let windSpeed = 1;
+let windTargetDir = 0;
+let windTargetSpeed = 1;
+let nextWindShift = 0;
+let activeEvent = null;
+let eventTimer = 0;
+let eventText = '';
+let hoverTile = null;
+let titleAnim = 0;
+let levelStartTime = 0;
+let rushHourActive = false;
+let heatwaveActive = false;
+let rainActive = false;
+let savedData = loadSave();
+let buttons = [];
+let toolButtons = [];
+let transitionAlpha = 0;
+let transitionTarget = 0;
+let nextState = null;
+let rainDrops = [];
+let monitorTiles = [];
+let gardenTimer = 0;
+let pollutionGrid = []; // 2D pollution concentration
+let freewayRow = 0; // which row is the freeway
+let healthWarningTimer = 0;
+
+// ============================================================
+// SAVE / LOAD
+// ============================================================
+function loadSave() {
+  try {
+    const d = JSON.parse(localStorage.getItem('smogcity_save'));
+    return d || { unlocked: 1, scores: [0,0,0,0,0], medals: [0,0,0,0,0] };
+  } catch(e) {
+    return { unlocked: 1, scores: [0,0,0,0,0], medals: [0,0,0,0,0] };
+  }
+}
+
+function saveProg() {
+  try { localStorage.setItem('smogcity_save', JSON.stringify(savedData)); } catch(e) {}
+}
+
+// ============================================================
+// GRID & LEVEL SETUP
+// ============================================================
+function initGrid() {
+  grid = [];
+  pollutionGrid = [];
+  for (let r = 0; r < ROWS; r++) {
+    grid[r] = [];
+    pollutionGrid[r] = [];
+    for (let c = 0; c < COLS; c++) {
+      grid[r][c] = { type: 'empty', health: 0, building: null };
+      pollutionGrid[r][c] = 0;
+    }
+  }
+}
+
+function setupLevel(lvlIdx) {
+  currentLevel = lvlIdx;
+  levelConfig = LEVELS[lvlIdx];
+  initGrid();
+  houses = [];
+  cars = [];
+  particles = [];
+  floatingTexts = [];
+  monitorTiles = [];
+  rainDrops = [];
+  communityPoints = 40 + (4 - lvlIdx) * 5; // Start with fewer points at higher levels
+  lives = LIVES_TOTAL;
+  score = 0;
+  gameTime = 0;
+  selectedTool = null;
+  rushHourActive = false;
+  heatwaveActive = false;
+  rainActive = false;
+  activeEvent = null;
+  eventTimer = 0;
+  eventText = '';
+  gardenTimer = 0;
+  healthWarningTimer = 0;
+
+  // Freeway along top
+  freewayRow = 0;
+  for (let c = 0; c < COLS; c++) {
+    grid[0][c].type = 'freeway';
+    grid[1][c].type = 'freeway';
+  }
+
+  // Place houses based on level
+  const houseCount = levelConfig.houses;
+  const placements = generateHousePlacements(houseCount, lvlIdx);
+  placements.forEach(p => {
+    grid[p.r][p.c].type = 'house';
+    grid[p.r][p.c].health = 100;
+    grid[p.r][p.c].sickTimer = 0;
+    const roofColors = ['#E57373','#64B5F6','#FFB74D','#81C784','#BA68C8','#4DB6AC','#FF8A65','#A1887F','#90A4AE','#F06292'];
+    houses.push({
+      r: p.r, c: p.c,
+      health: 100,
+      sickTimer: 0,
+      roofColor: roofColors[houses.length % roofColors.length],
+      pulsePhase: Math.random() * Math.PI * 2
+    });
+  });
+
+  // Add some preset obstacles / scenery for variety
+  if (lvlIdx >= 1) {
+    // School zone - mark a house as school
+    if (lvlIdx === 1 && houses.length > 0) {
+      houses[0].isSchool = true;
+    }
+  }
+
+  // Wind
+  windDir = Math.PI * 0.5; // blowing downward initially
+  windSpeed = 1;
+  windTargetDir = windDir;
+  windTargetSpeed = windSpeed;
+  nextWindShift = WIND_SHIFT_MIN + Math.random() * (WIND_SHIFT_MAX - WIND_SHIFT_MIN);
+
+  // Spawn initial cars
+  for (let i = 0; i < 8; i++) {
+    spawnCar();
+  }
+
+  levelStartTime = Date.now();
+}
+
+function generateHousePlacements(count, lvlIdx) {
+  const placements = [];
+  const used = new Set();
+  // Predefined good positions per level
+  const presets = [
+    // Level 1: 4 houses, spread out lower half
+    [{r:4,c:3},{r:4,c:8},{r:7,c:5},{r:7,c:11}],
+    // Level 2: 6 houses, school zone cluster
+    [{r:3,c:2},{r:3,c:6},{r:5,c:4},{r:5,c:10},{r:8,c:3},{r:8,c:12}],
+    // Level 3: 6 houses, varied
+    [{r:3,c:1},{r:3,c:7},{r:5,c:4},{r:5,c:12},{r:8,c:2},{r:8,c:9}],
+    // Level 4: 8 houses
+    [{r:3,c:2},{r:3,c:6},{r:3,c:11},{r:5,c:4},{r:5,c:9},{r:7,c:2},{r:7,c:7},{r:9,c:5}],
+    // Level 5: 10 houses, dense
+    [{r:3,c:1},{r:3,c:4},{r:3,c:8},{r:3,c:12},{r:5,c:2},{r:5,c:6},{r:5,c:10},{r:7,c:3},{r:7,c:8},{r:9,c:5}]
+  ];
+
+  const preset = presets[lvlIdx] || presets[0];
+  for (let i = 0; i < Math.min(count, preset.length); i++) {
+    placements.push(preset[i]);
+    used.add(preset[i].r + ',' + preset[i].c);
+  }
+  return placements;
+}
+
+function spawnCar() {
+  const lane = Math.random() < 0.5 ? 0 : 1;
+  const dir = lane === 0 ? 1 : -1;
+  cars.push({
+    x: dir > 0 ? -TILE : COLS * TILE + TILE,
+    y: lane * TILE + TILE * 0.3 + Math.random() * TILE * 0.4,
+    speed: (60 + Math.random() * 40) * dir,
+    color: CAR_COLORS[Math.floor(Math.random() * CAR_COLORS.length)],
+    lane: lane,
+    width: 18 + Math.random() * 8,
+    height: 8 + Math.random() * 4,
+    emitTimer: 0
+  });
+}
+
+// ============================================================
+// PARTICLE SYSTEM
+// ============================================================
+function addParticle(type, x, y, vx, vy, life, size, color, alpha) {
+  if (particles.length >= MAX_PARTICLES) {
+    // Remove oldest non-critical particle
+    for (let i = 0; i < particles.length; i++) {
+      if (particles[i].type !== 'rain') { particles.splice(i, 1); break; }
+    }
+    if (particles.length >= MAX_PARTICLES) return;
+  }
+  particles.push({ type, x, y, vx, vy, life, maxLife: life, size, color, alpha: alpha || 1 });
+}
+
+function addPollutionPuff(x, y) {
+  const ang = windDir + (Math.random() - 0.5) * 0.5;
+  const spd = windSpeed * (15 + Math.random() * 10);
+  addParticle('pollution', x, y,
+    Math.cos(ang) * spd, Math.sin(ang) * spd,
+    3 + Math.random() * 3, 6 + Math.random() * 8,
+    Math.random() < 0.5 ? COLORS.smogLight : COLORS.smogDark,
+    0.3 + Math.random() * 0.2
+  );
+}
+
+function addWindStreak(x, y) {
+  addParticle('wind', x, y,
+    Math.cos(windDir) * windSpeed * 80, Math.sin(windDir) * windSpeed * 80,
+    0.6 + Math.random() * 0.4, 2, '#BBDEFB', 0.15 + Math.random() * 0.1
+  );
+}
+
+function addPlaceSparkle(x, y) {
+  for (let i = 0; i < 8; i++) {
+    const a = Math.random() * Math.PI * 2;
+    const s = 30 + Math.random() * 50;
+    addParticle('sparkle', x, y, Math.cos(a)*s, Math.sin(a)*s, 0.4+Math.random()*0.3, 3, '#FFD54F', 0.8);
+  }
+}
+
+function addRainDrop() {
+  const x = Math.random() * mapW;
+  const y = -10;
+  addParticle('rain', x, y, windSpeed * Math.cos(windDir) * 10 - 5, 200 + Math.random() * 100, 1.5, 2, '#64B5F6', 0.4);
+}
+
+function addFloatingText(x, y, text, color) {
+  floatingTexts.push({ x, y, text, color: color || '#FFD54F', life: 1.2, maxLife: 1.2 });
+}
+
+// ============================================================
+// POLLUTION GRID SYSTEM
+// ============================================================
+function updatePollutionGrid(dt) {
+  // Decay
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      let decay = heatwaveActive ? 0.005 : 0.04;
+      // Trees absorb
+      if (grid[r][c].building === 'tree') decay += 0.15;
+      // Gardens absorb more in radius
+      if (grid[r][c].building === 'garden') decay += 0.25;
+      // Nearby tree/garden effect
+      for (let dr = -2; dr <= 2; dr++) {
+        for (let dc = -2; dc <= 2; dc++) {
+          const nr = r + dr, nc = c + dc;
+          if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS) {
+            if (grid[nr][nc].building === 'tree') {
+              const dist = Math.sqrt(dr*dr + dc*dc);
+              if (dist <= 2) decay += 0.03 / (1 + dist);
+            }
+            if (grid[nr][nc].building === 'garden') {
+              const dist = Math.sqrt(dr*dr + dc*dc);
+              if (dist <= 3) decay += 0.05 / (1 + dist);
+            }
+          }
+        }
+      }
+      if (rainActive) decay += 0.2;
+      pollutionGrid[r][c] = Math.max(0, pollutionGrid[r][c] - decay * dt);
+    }
+  }
+
+  // Wind dispersal
+  const wx = Math.cos(windDir) * windSpeed;
+  const wy = Math.sin(windDir) * windSpeed;
+  const tempGrid = [];
+  for (let r = 0; r < ROWS; r++) {
+    tempGrid[r] = [];
+    for (let c = 0; c < COLS; c++) tempGrid[r][c] = pollutionGrid[r][c];
+  }
+
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      if (pollutionGrid[r][c] > 0.01) {
+        const spread = pollutionGrid[r][c] * 0.1 * dt * windSpeed;
+        // Check barriers blocking wind
+        let blocked = false;
+        const tr = r + Math.round(wy * 0.5);
+        const tc = c + Math.round(wx * 0.5);
+        if (tr >= 0 && tr < ROWS && tc >= 0 && tc < COLS) {
+          if (grid[tr][tc].building === 'barrier') blocked = true;
+        }
+        if (!blocked) {
+          // Spread downwind
+          const nr = Math.round(r + wy * dt * 2);
+          const nc = Math.round(c + wx * dt * 2);
+          if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS) {
+            tempGrid[nr][nc] += spread;
+            tempGrid[r][c] -= spread * 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      pollutionGrid[r][c] = Math.max(0, Math.min(1, tempGrid[r][c]));
+    }
+  }
+
+  // Traffic generates pollution on freeway tiles
+  const trafficMult = rushHourActive ? 2 : 1;
+  const baseTraffic = levelConfig.traffic * trafficMult;
+  for (let c = 0; c < COLS; c++) {
+    // Check for diverters reducing traffic
+    let diverterReduction = 0;
+    for (let dr = -2; dr <= 2; dr++) {
+      for (let drow = 0; drow < ROWS; drow++) {
+        const nc = c + dr;
+        if (nc >= 0 && nc < COLS && grid[drow][nc].building === 'diverter') {
+          diverterReduction += 0.3 / (1 + Math.abs(dr));
+        }
+      }
+    }
+    const effectiveTraffic = Math.max(0.05, baseTraffic - diverterReduction);
+    pollutionGrid[0][c] += effectiveTraffic * 0.08 * dt;
+    pollutionGrid[1][c] += effectiveTraffic * 0.06 * dt;
+  }
+}
+
+// ============================================================
+// HOUSE HEALTH
+// ============================================================
+function updateHouses(dt) {
+  let allGreen = true;
+  houses.forEach(h => {
+    const pollution = pollutionGrid[h.r][h.c];
+    // Health decreases with pollution
+    if (pollution > 0.3) {
+      h.health -= (pollution - 0.3) * 40 * dt;
+      allGreen = false;
+    } else {
+      // Recover slowly when air is clean
+      h.health = Math.min(100, h.health + 8 * dt);
+    }
+
+    // Monitor early warning
+    let hasMonitor = false;
+    for (let mt of monitorTiles) {
+      const dist = Math.sqrt((mt.r - h.r)**2 + (mt.c - h.c)**2);
+      if (dist <= 3) { hasMonitor = true; break; }
+    }
+    if (hasMonitor && pollution > 0.2 && h.health > 60) {
+      // Slight bonus from early warning awareness
+      h.health = Math.min(100, h.health + 2 * dt);
+    }
+
+    h.health = Math.max(0, Math.min(100, h.health));
+    grid[h.r][h.c].health = h.health;
+
+    if (h.health <= 0) {
+      h.sickTimer += dt;
+      if (h.sickTimer >= 3) {
+        // Family gets sick
+        h.sickTimer = 0;
+        h.health = 30; // partial recovery
+        lives--;
+        playWarning();
+        addFloatingText(
+          mapOffX + h.c * TILE + TILE/2,
+          mapOffY + h.r * TILE,
+          'Family Sick! -1 Life', COLORS.healthRed
+        );
+        if (lives <= 0) {
+          transitionTo('GAME_OVER');
+        }
+      }
+    } else {
+      h.sickTimer = 0;
+    }
+
+    if (h.health < 40) {
+      allGreen = false;
+      h.pulsePhase += dt * 6;
+      healthWarningTimer += dt;
+      if (healthWarningTimer > 2) {
+        healthWarningTimer = 0;
+        playWarning();
+      }
+    } else if (h.health < 70) {
+      allGreen = false;
+    }
+  });
+
+  // Score: points for healthy houses
+  let healthyCount = 0;
+  houses.forEach(h => {
+    if (h.health > 70) { healthyCount++; score += 1 * dt; }
+    if (h.health > 90) score += 0.5 * dt;
+  });
+  // Bonus for all green
+  if (allGreen && houses.length > 0) score += houses.length * 0.5 * dt;
+
+  // Community points from healthy houses
+  communityPoints += healthyCount * 0.5 * dt;
+  if (allGreen && houses.length > 0) communityPoints += 0.3 * dt;
+}
+
+// ============================================================
+// WIND SYSTEM
+// ============================================================
+function updateWind(dt) {
+  // Lerp toward target
+  let angleDiff = windTargetDir - windDir;
+  while (angleDiff > Math.PI) angleDiff -= Math.PI * 2;
+  while (angleDiff < -Math.PI) angleDiff += Math.PI * 2;
+  windDir += angleDiff * dt * 0.8;
+  windSpeed += (windTargetSpeed - windSpeed) * dt * 0.5;
+
+  // Wind shift timer
+  nextWindShift -= dt * 1000;
+  if (nextWindShift <= 0) {
+    shiftWind();
+  }
+
+  // Wind streaks
+  if (Math.random() < windSpeed * dt * 3) {
+    addWindStreak(
+      mapOffX + Math.random() * mapW,
+      mapOffY + Math.random() * mapH
+    );
+  }
+}
+
+function shiftWind() {
+  windTargetDir = Math.random() * Math.PI * 2;
+  windTargetSpeed = 0.5 + Math.random() * 2 * levelConfig.windVar;
+  nextWindShift = WIND_SHIFT_MIN + Math.random() * (WIND_SHIFT_MAX - WIND_SHIFT_MIN);
+}
+
+// ============================================================
+// CARS
+// ============================================================
+function updateCars(dt) {
+  const trafficMult = rushHourActive ? 2 : 1;
+  const effectiveTraffic = levelConfig.traffic * trafficMult;
+
+  cars.forEach(car => {
+    car.x += car.speed * dt;
+    car.emitTimer += dt;
+    // Emit pollution particles
+    if (car.emitTimer > 0.3 / effectiveTraffic) {
+      car.emitTimer = 0;
+      addPollutionPuff(mapOffX + car.x, mapOffY + car.y);
+    }
+  });
+
+  // Remove off-screen cars
+  cars = cars.filter(c => c.x > -TILE * 2 && c.x < (COLS + 2) * TILE);
+
+  // Spawn new cars
+  const spawnRate = 0.5 + effectiveTraffic * 2;
+  if (Math.random() < spawnRate * dt) {
+    spawnCar();
+  }
+}
+
+// ============================================================
+// EVENTS
+// ============================================================
+function updateEvents(dt) {
+  if (activeEvent) {
+    eventTimer -= dt;
+    if (eventTimer <= 0) {
+      endEvent();
+    }
+  } else {
+    // Random event check
+    if (gameTime > 15 && Math.random() < 0.003 * dt) {
+      triggerRandomEvent();
+    }
+  }
+}
+
+function triggerRandomEvent() {
+  const available = levelConfig.events;
+  if (!available || available.length === 0) return;
+  const chosen = available[Math.floor(Math.random() * available.length)];
+
+  switch(chosen) {
+    case 'rushHour':
+      activeEvent = 'rushHour';
+      eventTimer = 20;
+      rushHourActive = true;
+      eventText = 'RUSH HOUR! Traffic doubles!';
+      playEvent();
+      break;
+    case 'windShift':
+      activeEvent = 'windShift';
+      eventTimer = 3;
+      shiftWind();
+      windSpeed = windTargetSpeed; // Instant shift
+      windDir = windTargetDir;
+      eventText = 'WIND SHIFT! Direction changed!';
+      playEvent();
+      break;
+    case 'heatwave':
+      activeEvent = 'heatwave';
+      eventTimer = 25;
+      heatwaveActive = true;
+      eventText = 'HEATWAVE! Pollution trapped!';
+      playEvent();
+      break;
+    case 'rain':
+      activeEvent = 'rain';
+      eventTimer = 15;
+      rainActive = true;
+      eventText = 'RAIN! Pollution washing away!';
+      playEvent();
+      break;
+    case 'communityRally':
+      activeEvent = 'communityRally';
+      eventTimer = 5;
+      communityPoints += 30;
+      eventText = 'COMMUNITY RALLY! +30 Points!';
+      playEvent();
+      addFloatingText(W/2, H/2, '+30 Community Points!', '#FFD54F');
+      break;
+  }
+}
+
+function endEvent() {
+  if (activeEvent === 'rushHour') rushHourActive = false;
+  if (activeEvent === 'heatwave') heatwaveActive = false;
+  if (activeEvent === 'rain') rainActive = false;
+  activeEvent = null;
+  eventText = '';
+}
+
+// ============================================================
+// BUILDING PLACEMENT
+// ============================================================
+function canPlace(r, c) {
+  if (r < 0 || r >= ROWS || c < 0 || c >= COLS) return false;
+  if (grid[r][c].type !== 'empty') return false;
+  if (grid[r][c].building) return false;
+  return true;
+}
+
+function placeTool(r, c) {
+  if (!selectedTool) return;
+  const tool = TOOLS.find(t => t.id === selectedTool);
+  if (!tool) return;
+  if (!canPlace(r, c)) { playError(); return; }
+  if (communityPoints < tool.cost) { playError(); addFloatingText(W/2, mapOffY, 'Not enough points!', COLORS.healthRed); return; }
+
+  communityPoints -= tool.cost;
+  grid[r][c].building = tool.id;
+  playPlace();
+  addPlaceSparkle(mapOffX + c * TILE + TILE/2, mapOffY + r * TILE + TILE/2);
+  addFloatingText(mapOffX + c * TILE + TILE/2, mapOffY + r * TILE, '-' + tool.cost + ' pts', '#FF8A65');
+
+  if (tool.id === 'monitor') {
+    monitorTiles.push({ r, c });
+  }
+}
+
+// ============================================================
+// TRANSITIONS
+// ============================================================
+function transitionTo(newState) {
+  transitionTarget = 1;
+  nextState = newState;
+}
+
+function updateTransition(dt) {
+  if (transitionTarget > 0) {
+    transitionAlpha += dt * 3;
+    if (transitionAlpha >= 1) {
+      transitionAlpha = 1;
+      state = nextState;
+      transitionTarget = -1;
+      if (state === 'PLAYING') {
+        setupLevel(currentLevel);
+        startAmbient();
+      }
+    }
+  } else if (transitionTarget < 0) {
+    transitionAlpha -= dt * 3;
+    if (transitionAlpha <= 0) {
+      transitionAlpha = 0;
+      transitionTarget = 0;
+    }
+  }
+}
+
+// ============================================================
+// INPUT
+// ============================================================
+let mouseX = 0, mouseY = 0, mouseDown = false;
+
+function getInputPos(e) {
+  const rect = canvas.getBoundingClientRect();
+  if (e.touches) {
+    return { x: e.touches[0].clientX - rect.left, y: e.touches[0].clientY - rect.top };
+  }
+  return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+}
+
+function handleClick(px, py) {
+  initAudio();
+
+  if (transitionAlpha > 0.3) return;
+
+  switch(state) {
+    case 'TITLE': handleTitleClick(px, py); break;
+    case 'HOW_TO': handleHowToClick(px, py); break;
+    case 'LEVEL_SELECT': handleLevelSelectClick(px, py); break;
+    case 'PLAYING': handlePlayClick(px, py); break;
+    case 'LEVEL_COMPLETE': handleCompleteClick(px, py); break;
+    case 'GAME_OVER': handleGameOverClick(px, py); break;
+  }
+}
+
+canvas.addEventListener('mousedown', e => {
+  const p = getInputPos(e);
+  mouseX = p.x; mouseY = p.y;
+  mouseDown = true;
+  handleClick(p.x, p.y);
+});
+canvas.addEventListener('mousemove', e => {
+  const p = getInputPos(e);
+  mouseX = p.x; mouseY = p.y;
+  // Update hover tile
+  const gc = Math.floor((p.x - mapOffX) / TILE);
+  const gr = Math.floor((p.y - mapOffY) / TILE);
+  if (gc >= 0 && gc < COLS && gr >= 0 && gr < ROWS) {
+    hoverTile = { r: gr, c: gc };
+  } else {
+    hoverTile = null;
+  }
+});
+canvas.addEventListener('mouseup', () => { mouseDown = false; });
+
+canvas.addEventListener('touchstart', e => {
+  e.preventDefault();
+  const p = getInputPos(e);
+  mouseX = p.x; mouseY = p.y;
+  handleClick(p.x, p.y);
+}, { passive: false });
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  const p = getInputPos(e);
+  mouseX = p.x; mouseY = p.y;
+  const gc = Math.floor((p.x - mapOffX) / TILE);
+  const gr = Math.floor((p.y - mapOffY) / TILE);
+  if (gc >= 0 && gc < COLS && gr >= 0 && gr < ROWS) {
+    hoverTile = { r: gr, c: gc };
+  } else {
+    hoverTile = null;
+  }
+}, { passive: false });
+
+document.addEventListener('keydown', e => {
+  initAudio();
+  if (state === 'PLAYING') {
+    const num = parseInt(e.key);
+    if (num >= 1 && num <= 5) {
+      const tool = TOOLS[num - 1];
+      selectedTool = selectedTool === tool.id ? null : tool.id;
+      playClick();
+    }
+    if (e.key === 'Escape') {
+      selectedTool = null;
+    }
+  }
+});
+
+// ============================================================
+// CLICK HANDLERS
+// ============================================================
+function handleTitleClick(px, py) {
+  // Play button
+  const bx = W/2 - 100, by = H * 0.62, bw = 200, bh = 50;
+  if (px > bx && px < bx + bw && py > by && py < by + bh) {
+    playClick();
+    transitionTo('HOW_TO');
+    return;
+  }
+}
+
+function handleHowToClick(px, py) {
+  const bx = W/2 - 80, by = H - 80, bw = 160, bh = 45;
+  if (px > bx && px < bx + bw && py > by && py < by + bh) {
+    playClick();
+    transitionTo('LEVEL_SELECT');
+  }
+}
+
+function handleLevelSelectClick(px, py) {
+  const startY = 100;
+  const cardH = 70;
+  const cardW = Math.min(500, W - 80);
+  const cx = W/2 - cardW/2;
+
+  for (let i = 0; i < LEVELS.length; i++) {
+    const cy = startY + i * (cardH + 12);
+    if (px > cx && px < cx + cardW && py > cy && py < cy + cardH) {
+      if (i < savedData.unlocked) {
+        playClick();
+        currentLevel = i;
+        transitionTo('PLAYING');
+      } else {
+        playError();
+      }
+      return;
+    }
+  }
+}
+
+function handlePlayClick(px, py) {
+  // Check tool palette (bottom HUD)
+  const palY = H - HUD_BOT + 5;
+  const palW = 110;
+  const totalW = TOOLS.length * (palW + 8);
+  const palStartX = W/2 - totalW/2;
+
+  for (let i = 0; i < TOOLS.length; i++) {
+    const tx = palStartX + i * (palW + 8);
+    if (px > tx && px < tx + palW && py > palY && py < palY + HUD_BOT - 10) {
+      const tool = TOOLS[i];
+      if (selectedTool === tool.id) {
+        selectedTool = null;
+      } else {
+        selectedTool = tool.id;
+      }
+      playClick();
+      return;
+    }
+  }
+
+  // Check map click for placement
+  const gc = Math.floor((px - mapOffX) / TILE);
+  const gr = Math.floor((py - mapOffY) / TILE);
+  if (gc >= 0 && gc < COLS && gr >= 0 && gr < ROWS && selectedTool) {
+    placeTool(gr, gc);
+  }
+}
+
+function handleCompleteClick(px, py) {
+  // Next level button
+  const bx = W/2 - 80, by = H * 0.75, bw = 160, bh = 45;
+  if (px > bx && px < bx + bw && py > by && py < by + bh) {
+    playClick();
+    if (currentLevel < LEVELS.length - 1) {
+      currentLevel++;
+      transitionTo('PLAYING');
+    } else {
+      transitionTo('TITLE');
+    }
+    return;
+  }
+  // Level select button
+  const bx2 = W/2 - 80, by2 = H * 0.75 + 55;
+  if (px > bx2 && px < bx2 + 160 && py > by2 && py < by2 + 45) {
+    playClick();
+    transitionTo('LEVEL_SELECT');
+  }
+}
+
+function handleGameOverClick(px, py) {
+  // Retry
+  const bx = W/2 - 170, by = H * 0.7, bw = 150, bh = 45;
+  if (px > bx && px < bx + bw && py > by && py < by + bh) {
+    playClick();
+    transitionTo('PLAYING');
+    return;
+  }
+  // Level select
+  const bx2 = W/2 + 20, by2 = H * 0.7;
+  if (px > bx2 && px < bx2 + 150 && py > by2 && py < by2 + 45) {
+    playClick();
+    transitionTo('LEVEL_SELECT');
+  }
+}
+
+// ============================================================
+// UPDATE
+// ============================================================
+function update(dt) {
+  updateTransition(dt);
+  titleAnim += dt;
+
+  if (state === 'PLAYING' && transitionAlpha === 0) {
+    gameTime += dt;
+
+    updateWind(dt);
+    updateCars(dt);
+    updatePollutionGrid(dt);
+    updateHouses(dt);
+    updateEvents(dt);
+    updateAmbient(windSpeed, levelConfig.traffic * (rushHourActive ? 2 : 1));
+
+    // Garden bonus points
+    gardenTimer += dt;
+    if (gardenTimer > 5) {
+      gardenTimer = 0;
+      let gardenCount = 0;
+      for (let r = 0; r < ROWS; r++) {
+        for (let c = 0; c < COLS; c++) {
+          if (grid[r][c].building === 'garden') gardenCount++;
+        }
+      }
+      if (gardenCount > 0) {
+        communityPoints += gardenCount * 3;
+        playPoints();
+      }
+    }
+
+    // Rain particles
+    if (rainActive) {
+      for (let i = 0; i < 3; i++) addRainDrop();
+    }
+
+    // Update particles
+    particles.forEach(p => {
+      p.x += p.vx * dt;
+      p.y += p.vy * dt;
+      p.life -= dt;
+      if (p.type === 'pollution') {
+        // Drift with wind
+        p.vx += Math.cos(windDir) * windSpeed * 5 * dt;
+        p.vy += Math.sin(windDir) * windSpeed * 5 * dt;
+        p.size += dt * 2;
+        p.alpha = Math.max(0, p.alpha - dt * 0.1);
+      }
+    });
+    particles = particles.filter(p => p.life > 0);
+
+    // Floating texts
+    floatingTexts.forEach(ft => {
+      ft.y -= 30 * dt;
+      ft.life -= dt;
+    });
+    floatingTexts = floatingTexts.filter(ft => ft.life > 0);
+
+    // Check level completion (time-based)
+    if (gameTime >= levelConfig.duration && lives > 0) {
+      finishLevel();
+    }
+  }
+}
+
+function finishLevel() {
+  const finalScore = Math.floor(score);
+  const lvl = levelConfig;
+  let medal = 0;
+  if (finalScore >= lvl.gold) medal = 3;
+  else if (finalScore >= lvl.silver) medal = 2;
+  else if (finalScore >= lvl.bronze) medal = 1;
+
+  if (finalScore > savedData.scores[currentLevel]) {
+    savedData.scores[currentLevel] = finalScore;
+  }
+  if (medal > savedData.medals[currentLevel]) {
+    savedData.medals[currentLevel] = medal;
+  }
+  if (currentLevel + 1 < LEVELS.length && currentLevel + 1 >= savedData.unlocked) {
+    savedData.unlocked = currentLevel + 2;
+  }
+  saveProg();
+  playLevelComplete();
+  transitionTo('LEVEL_COMPLETE');
+}
+
+// ============================================================
+// DRAW HELPERS
+// ============================================================
+function drawRoundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+}
+
+function drawButton(x, y, w, h, text, color, textColor) {
+  ctx.save();
+  drawRoundRect(x, y, w, h, 8);
+  ctx.fillStyle = color || COLORS.uiPanel;
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = textColor || COLORS.textWhite;
+  ctx.font = 'bold 16px Segoe UI, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x + w/2, y + h/2);
+  ctx.restore();
+}
+
+function lerpColor(a, b, t) {
+  const ah = parseInt(a.slice(1), 16);
+  const bh = parseInt(b.slice(1), 16);
+  const ar = (ah >> 16) & 0xff, ag = (ah >> 8) & 0xff, ab2 = ah & 0xff;
+  const br = (bh >> 16) & 0xff, bg = (bh >> 8) & 0xff, bb = bh & 0xff;
+  const rr = Math.round(ar + (br - ar) * t);
+  const rg = Math.round(ag + (bg - ag) * t);
+  const rb = Math.round(ab2 + (bb - ab2) * t);
+  return '#' + ((1 << 24) + (rr << 16) + (rg << 8) + rb).toString(16).slice(1);
+}
+
+function healthToColor(h) {
+  if (h > 70) return lerpColor(COLORS.healthYellow, COLORS.healthGreen, (h - 70) / 30);
+  if (h > 30) return lerpColor(COLORS.healthRed, COLORS.healthYellow, (h - 30) / 40);
+  return COLORS.healthRed;
+}
+
+// ============================================================
+// DRAW: TITLE SCREEN
+// ============================================================
+function drawTitle() {
+  // Background gradient
+  const grd = ctx.createLinearGradient(0, 0, W, H);
+  grd.addColorStop(0, '#1a237e');
+  grd.addColorStop(0.5, '#283593');
+  grd.addColorStop(1, '#1565C0');
+  ctx.fillStyle = grd;
+  ctx.fillRect(0, 0, W, H);
+
+  // Split scene: left clean, right polluted
+  const halfW = W / 2;
+
+  // Clean side (left)
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(0, 0, halfW, H);
+  ctx.clip();
+  ctx.fillStyle = '#81D4FA';
+  ctx.fillRect(0, H * 0.3, halfW, H * 0.7);
+  // Green ground
+  ctx.fillStyle = '#81C784';
+  ctx.fillRect(0, H * 0.6, halfW, H * 0.4);
+  // Sun
+  ctx.fillStyle = '#FFF176';
+  ctx.beginPath();
+  ctx.arc(halfW * 0.3, H * 0.25, 30, 0, Math.PI * 2);
+  ctx.fill();
+  // Trees
+  for (let i = 0; i < 5; i++) {
+    const tx = 40 + i * (halfW / 5);
+    const ty = H * 0.55 + Math.sin(i * 1.5) * 20;
+    ctx.fillStyle = '#4CAF50';
+    ctx.beginPath();
+    ctx.arc(tx, ty - 15, 18, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#795548';
+    ctx.fillRect(tx - 3, ty, 6, 15);
+  }
+  // Clean houses
+  for (let i = 0; i < 3; i++) {
+    const hx = 30 + i * (halfW / 3);
+    const hy = H * 0.68;
+    ctx.fillStyle = COLORS.house;
+    ctx.fillRect(hx, hy, 35, 25);
+    ctx.fillStyle = '#64B5F6';
+    ctx.beginPath();
+    ctx.moveTo(hx - 5, hy);
+    ctx.lineTo(hx + 17, hy - 15);
+    ctx.lineTo(hx + 40, hy);
+    ctx.closePath();
+    ctx.fill();
+  }
+  // Birds
+  const birdT = titleAnim * 2;
+  for (let i = 0; i < 3; i++) {
+    const bx = (halfW * 0.2 + i * 50 + birdT * 10) % halfW;
+    const by = H * 0.35 + Math.sin(birdT + i) * 10;
+    ctx.strokeStyle = '#37474F';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(bx - 6, by);
+    ctx.quadraticCurveTo(bx - 3, by - 5, bx, by);
+    ctx.quadraticCurveTo(bx + 3, by - 5, bx + 6, by);
+    ctx.stroke();
+  }
+  ctx.restore();
+
+  // Polluted side (right)
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(halfW, 0, halfW, H);
+  ctx.clip();
+  ctx.fillStyle = '#8D6E63';
+  ctx.globalAlpha = 0.8;
+  ctx.fillRect(halfW, H * 0.3, halfW, H * 0.7);
+  ctx.globalAlpha = 1;
+  // Brown ground
+  ctx.fillStyle = '#6D4C41';
+  ctx.fillRect(halfW, H * 0.6, halfW, H * 0.4);
+  // Freeway at top
+  ctx.fillStyle = COLORS.freeway;
+  ctx.fillRect(halfW, H * 0.38, halfW, 30);
+  // Smog overlay
+  ctx.fillStyle = 'rgba(141,110,99,0.4)';
+  ctx.fillRect(halfW, H * 0.3, halfW, H * 0.4);
+  // Polluted houses
+  for (let i = 0; i < 3; i++) {
+    const hx = halfW + 30 + i * (halfW / 3);
+    const hy = H * 0.68;
+    ctx.fillStyle = '#D7CCC8';
+    ctx.fillRect(hx, hy, 35, 25);
+    ctx.fillStyle = '#A1887F';
+    ctx.beginPath();
+    ctx.moveTo(hx - 5, hy);
+    ctx.lineTo(hx + 17, hy - 15);
+    ctx.lineTo(hx + 40, hy);
+    ctx.closePath();
+    ctx.fill();
+  }
+  // Smog puffs
+  for (let i = 0; i < 8; i++) {
+    const sx = halfW + 20 + Math.sin(titleAnim * 0.5 + i * 1.3) * 30 + i * (halfW / 8);
+    const sy = H * 0.42 + Math.cos(titleAnim * 0.3 + i) * 15;
+    ctx.fillStyle = `rgba(97,97,97,${0.2 + Math.sin(titleAnim + i) * 0.1})`;
+    ctx.beginPath();
+    ctx.arc(sx, sy, 15 + Math.sin(titleAnim * 0.7 + i) * 5, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.restore();
+
+  // Divider
+  ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+  ctx.lineWidth = 2;
+  ctx.setLineDash([5, 5]);
+  ctx.beginPath();
+  ctx.moveTo(halfW, H * 0.3);
+  ctx.lineTo(halfW, H);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Labels
+  ctx.font = 'bold 14px Segoe UI, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = 'rgba(255,255,255,0.8)';
+  ctx.fillText('CLEAN AIR', halfW * 0.5, H * 0.33);
+  ctx.fillText('POLLUTED AIR', halfW * 1.5, H * 0.33);
+
+  // Title
+  ctx.save();
+  ctx.font = 'bold 64px Segoe UI, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  // Shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.4)';
+  ctx.fillText('SMOG CITY', W/2 + 3, H * 0.13 + 3);
+  // Main text with gradient
+  const titleGrd = ctx.createLinearGradient(W/2 - 200, 0, W/2 + 200, 0);
+  titleGrd.addColorStop(0, '#FFFFFF');
+  titleGrd.addColorStop(0.5, '#FFD54F');
+  titleGrd.addColorStop(1, '#FFFFFF');
+  ctx.fillStyle = titleGrd;
+  ctx.fillText('SMOG CITY', W/2, H * 0.13);
+  ctx.restore();
+
+  // Subtitle
+  ctx.font = '18px Segoe UI, sans-serif';
+  ctx.fillStyle = '#B3E5FC';
+  ctx.textAlign = 'center';
+  ctx.fillText('An Air Pollution Defense Game', W/2, H * 0.13 + 40);
+
+  // NGSS badge
+  ctx.font = '12px Segoe UI, sans-serif';
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.fillText('NGSS 5-ESS3-1 | Grade 5 Science', W/2, H * 0.13 + 60);
+
+  // Play button
+  const btnY = H * 0.62;
+  const pulse = Math.sin(titleAnim * 3) * 3;
+  drawButton(W/2 - 100, btnY - pulse, 200, 50 + pulse, 'PLAY', '#2E7D32', '#FFFFFF');
+
+  // Footer
+  ctx.font = '11px Segoe UI, sans-serif';
+  ctx.fillStyle = 'rgba(255,255,255,0.4)';
+  ctx.fillText('CAST Science Resources | Click or Tap to Start', W/2, H - 20);
+}
+
+// ============================================================
+// DRAW: HOW TO PLAY
+// ============================================================
+function drawHowTo() {
+  ctx.fillStyle = '#1a237e';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.font = 'bold 32px Segoe UI, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.textAlign = 'center';
+  ctx.fillText('HOW TO PLAY', W/2, 45);
+
+  // Tool cards
+  const cardW = Math.min(180, (W - 60) / TOOLS.length - 10);
+  const totalCW = TOOLS.length * (cardW + 10);
+  const startX = W/2 - totalCW/2;
+  const cardY = 75;
+  const cardH = 120;
+
+  const icons = ['tree','barrier','diverter','monitor','garden'];
+  const iconColors = [COLORS.tree, COLORS.barrier, COLORS.diverter, COLORS.monitor, COLORS.garden];
+
+  TOOLS.forEach((tool, i) => {
+    const cx = startX + i * (cardW + 10);
+    drawRoundRect(cx, cardY, cardW, cardH, 8);
+    ctx.fillStyle = 'rgba(255,255,255,0.1)';
+    ctx.fill();
+    ctx.strokeStyle = iconColors[i];
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Icon
+    drawBuildingIcon(cx + cardW/2, cardY + 30, tool.id, 1.2);
+
+    ctx.font = 'bold 13px Segoe UI, sans-serif';
+    ctx.fillStyle = '#FFFFFF';
+    ctx.textAlign = 'center';
+    ctx.fillText(tool.name, cx + cardW/2, cardY + 60);
+
+    ctx.font = '11px Segoe UI, sans-serif';
+    ctx.fillStyle = '#B3E5FC';
+    ctx.fillText(tool.cost + ' pts', cx + cardW/2, cardY + 76);
+
+    ctx.font = '10px Segoe UI, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.7)';
+    wrapText(tool.desc, cx + cardW/2, cardY + 92, cardW - 10, 12);
+
+    ctx.font = '10px Segoe UI, sans-serif';
+    ctx.fillStyle = '#FFD54F';
+    ctx.fillText('Key: ' + tool.key, cx + cardW/2, cardY + cardH - 8);
+  });
+
+  // Instructions
+  const instY = cardY + cardH + 25;
+  ctx.font = '14px Segoe UI, sans-serif';
+  ctx.fillStyle = '#E3F2FD';
+  ctx.textAlign = 'center';
+  const instructions = [
+    'Traffic on the freeway creates pollution that drifts with the wind.',
+    'Place trees, barriers, and gardens to protect neighborhood homes.',
+    'Keep house Air Quality meters GREEN to earn Community Points.',
+    'If a house stays in the RED too long, the family gets sick (you lose a life).',
+    'Wind direction changes every 30-45 seconds -- plan strategically!',
+    'Survive the timer to complete each level. Earn Bronze, Silver, or Gold!'
+  ];
+  instructions.forEach((txt, i) => {
+    ctx.fillText(txt, W/2, instY + i * 22);
+  });
+
+  // Continue button
+  drawButton(W/2 - 80, H - 80, 160, 45, 'CONTINUE', '#2E7D32');
+}
+
+function wrapText(text, x, y, maxW, lineH) {
+  const words = text.split(' ');
+  let line = '';
+  let cy = y;
+  words.forEach(word => {
+    const test = line + word + ' ';
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line.trim(), x, cy);
+      line = word + ' ';
+      cy += lineH;
+    } else {
+      line = test;
+    }
+  });
+  if (line.trim()) ctx.fillText(line.trim(), x, cy);
+}
+
+// ============================================================
+// DRAW: LEVEL SELECT
+// ============================================================
+function drawLevelSelect() {
+  ctx.fillStyle = '#1a237e';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.font = 'bold 30px Segoe UI, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.textAlign = 'center';
+  ctx.fillText('SELECT LEVEL', W/2, 55);
+
+  const startY = 100;
+  const cardH = 70;
+  const cardW = Math.min(500, W - 80);
+  const cx = W/2 - cardW/2;
+
+  LEVELS.forEach((lvl, i) => {
+    const cy = startY + i * (cardH + 12);
+    const unlocked = i < savedData.unlocked;
+
+    drawRoundRect(cx, cy, cardW, cardH, 10);
+    ctx.fillStyle = unlocked ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.3)';
+    ctx.fill();
+    ctx.strokeStyle = unlocked ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.05)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Level number
+    ctx.font = 'bold 28px Segoe UI, sans-serif';
+    ctx.fillStyle = unlocked ? '#FFD54F' : '#555';
+    ctx.textAlign = 'left';
+    ctx.fillText((i + 1) + '', cx + 20, cy + 35);
+
+    // Name and desc
+    ctx.font = 'bold 16px Segoe UI, sans-serif';
+    ctx.fillStyle = unlocked ? '#FFFFFF' : '#666';
+    ctx.fillText(lvl.name, cx + 55, cy + 25);
+
+    ctx.font = '12px Segoe UI, sans-serif';
+    ctx.fillStyle = unlocked ? '#B3E5FC' : '#555';
+    ctx.fillText(lvl.desc, cx + 55, cy + 45);
+
+    ctx.font = '11px Segoe UI, sans-serif';
+    ctx.fillStyle = unlocked ? 'rgba(255,255,255,0.5)' : '#444';
+    ctx.fillText(lvl.houses + ' houses | ' + lvl.duration + 's | Traffic: ' + Math.round(lvl.traffic * 100) + '%', cx + 55, cy + 60);
+
+    // Medal
+    if (savedData.medals[i] > 0) {
+      const medalColors = ['', COLORS.bronze, COLORS.silver, COLORS.gold];
+      const medalNames = ['', 'B', 'S', 'G'];
+      ctx.fillStyle = medalColors[savedData.medals[i]];
+      ctx.beginPath();
+      ctx.arc(cx + cardW - 55, cy + 35, 15, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.font = 'bold 14px Segoe UI, sans-serif';
+      ctx.fillStyle = '#263238';
+      ctx.textAlign = 'center';
+      ctx.fillText(medalNames[savedData.medals[i]], cx + cardW - 55, cy + 39);
+    }
+
+    // Score
+    if (savedData.scores[i] > 0) {
+      ctx.font = '12px Segoe UI, sans-serif';
+      ctx.fillStyle = '#FFD54F';
+      ctx.textAlign = 'right';
+      ctx.fillText('Best: ' + savedData.scores[i], cx + cardW - 15, cy + 40);
+    }
+
+    // Lock icon
+    if (!unlocked) {
+      ctx.font = '24px Segoe UI, sans-serif';
+      ctx.fillStyle = '#555';
+      ctx.textAlign = 'center';
+      ctx.fillText('LOCKED', cx + cardW / 2, cy + cardH / 2 + 5);
+    }
+  });
+}
+
+// ============================================================
+// DRAW: GAMEPLAY
+// ============================================================
+function drawGame() {
+  // Sky background
+  const skyColor = heatwaveActive ? '#FFCC80' : (rainActive ? '#607D8B' : COLORS.sky);
+  ctx.fillStyle = skyColor;
+  ctx.fillRect(0, 0, W, H);
+
+  // Map background
+  ctx.fillStyle = '#C8E6C9';
+  ctx.fillRect(mapOffX, mapOffY, mapW, mapH);
+
+  // Grid lines (subtle)
+  ctx.strokeStyle = 'rgba(0,0,0,0.05)';
+  ctx.lineWidth = 1;
+  for (let r = 0; r <= ROWS; r++) {
+    ctx.beginPath();
+    ctx.moveTo(mapOffX, mapOffY + r * TILE);
+    ctx.lineTo(mapOffX + mapW, mapOffY + r * TILE);
+    ctx.stroke();
+  }
+  for (let c = 0; c <= COLS; c++) {
+    ctx.beginPath();
+    ctx.moveTo(mapOffX + c * TILE, mapOffY);
+    ctx.lineTo(mapOffX + c * TILE, mapOffY + mapH);
+    ctx.stroke();
+  }
+
+  // Draw tiles
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      const tx = mapOffX + c * TILE;
+      const ty = mapOffY + r * TILE;
+      const cell = grid[r][c];
+
+      if (cell.type === 'freeway') {
+        drawFreewayTile(tx, ty, r);
+      } else if (cell.type === 'house') {
+        drawHouseTile(tx, ty, r, c);
+      }
+
+      // Buildings
+      if (cell.building) {
+        drawBuilding(tx, ty, cell.building);
+      }
+    }
+  }
+
+  // Cars
+  drawCars();
+
+  // Pollution haze overlay
+  drawPollutionOverlay();
+
+  // Particles
+  drawParticles();
+
+  // Hover highlight
+  if (hoverTile && selectedTool && state === 'PLAYING') {
+    const hx = mapOffX + hoverTile.c * TILE;
+    const hy = mapOffY + hoverTile.r * TILE;
+    const valid = canPlace(hoverTile.r, hoverTile.c);
+    ctx.strokeStyle = valid ? 'rgba(76,175,80,0.8)' : 'rgba(244,67,54,0.8)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([4, 4]);
+    ctx.strokeRect(hx + 1, hy + 1, TILE - 2, TILE - 2);
+    ctx.setLineDash([]);
+    if (valid) {
+      ctx.globalAlpha = 0.4;
+      drawBuilding(hx, hy, selectedTool);
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  // Health meters on houses
+  drawHealthMeters();
+
+  // Floating texts
+  drawFloatingTexts();
+
+  // HUD
+  drawHUD();
+}
+
+function drawFreewayTile(x, y, row) {
+  ctx.fillStyle = COLORS.freeway;
+  ctx.fillRect(x, y, TILE, TILE);
+
+  // Lane markings
+  if (row === 0) {
+    ctx.strokeStyle = '#FFD54F';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(x, y + TILE);
+    ctx.lineTo(x + TILE, y + TILE);
+    ctx.stroke();
+  }
+
+  // Dashed center line
+  ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+  ctx.lineWidth = 1.5;
+  ctx.setLineDash([8, 8]);
+  const dashOffset = (gameTime * 60) % 16;
+  ctx.lineDashOffset = -dashOffset;
+  ctx.beginPath();
+  ctx.moveTo(x, y + TILE/2);
+  ctx.lineTo(x + TILE, y + TILE/2);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.lineDashOffset = 0;
+}
+
+function drawHouseTile(tx, ty, r, c) {
+  const house = houses.find(h => h.r === r && h.c === c);
+  if (!house) return;
+
+  // House body
+  ctx.fillStyle = COLORS.house;
+  ctx.fillRect(tx + 8, ty + 18, TILE - 16, TILE - 22);
+
+  // Roof
+  ctx.fillStyle = house.roofColor;
+  ctx.beginPath();
+  ctx.moveTo(tx + 4, ty + 20);
+  ctx.lineTo(tx + TILE/2, ty + 5);
+  ctx.lineTo(tx + TILE - 4, ty + 20);
+  ctx.closePath();
+  ctx.fill();
+
+  // Door
+  ctx.fillStyle = '#5D4037';
+  ctx.fillRect(tx + TILE/2 - 4, ty + TILE - 14, 8, 10);
+
+  // Window
+  ctx.fillStyle = '#BBDEFB';
+  ctx.fillRect(tx + 12, ty + 24, 8, 8);
+  ctx.fillRect(tx + TILE - 20, ty + 24, 8, 8);
+
+  // School marker
+  if (house.isSchool) {
+    ctx.fillStyle = '#FF6F00';
+    ctx.font = 'bold 8px Segoe UI, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('SCHOOL', tx + TILE/2, ty + TILE - 2);
+  }
+
+  // Pulse when low health
+  if (house.health < 40) {
+    const pulse = Math.sin(house.pulsePhase) * 0.15 + 0.15;
+    ctx.fillStyle = `rgba(244,67,54,${pulse})`;
+    ctx.fillRect(tx, ty, TILE, TILE);
+  }
+}
+
+function drawBuilding(tx, ty, type) {
+  const cx = tx + TILE/2;
+  const cy = ty + TILE/2;
+
+  switch(type) {
+    case 'tree':
+      drawBuildingIcon(cx, cy, 'tree', 1);
+      break;
+    case 'barrier':
+      drawBuildingIcon(cx, cy, 'barrier', 1);
+      break;
+    case 'diverter':
+      drawBuildingIcon(cx, cy, 'diverter', 1);
+      break;
+    case 'monitor':
+      drawBuildingIcon(cx, cy, 'monitor', 1);
+      break;
+    case 'garden':
+      drawBuildingIcon(cx, cy, 'garden', 1);
+      break;
+  }
+}
+
+function drawBuildingIcon(cx, cy, type, scale) {
+  const s = scale || 1;
+  ctx.save();
+  switch(type) {
+    case 'tree':
+      // Trunk
+      ctx.fillStyle = '#795548';
+      ctx.fillRect(cx - 3*s, cy + 2*s, 6*s, 14*s);
+      // Canopy (swaying)
+      const sway = Math.sin(titleAnim * 2 + cx * 0.1) * 2 * s;
+      ctx.fillStyle = COLORS.tree;
+      ctx.beginPath();
+      ctx.arc(cx + sway, cy - 4*s, 14*s, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = COLORS.treeDark;
+      ctx.beginPath();
+      ctx.arc(cx + sway - 4*s, cy - 2*s, 8*s, 0, Math.PI * 2);
+      ctx.fill();
+      break;
+
+    case 'barrier':
+      ctx.fillStyle = COLORS.barrier;
+      ctx.fillRect(cx - 18*s, cy - 6*s, 36*s, 4*s);
+      ctx.fillRect(cx - 18*s, cy + 2*s, 36*s, 4*s);
+      // Posts
+      ctx.fillStyle = COLORS.barrierDark;
+      ctx.fillRect(cx - 16*s, cy - 10*s, 4*s, 20*s);
+      ctx.fillRect(cx + 12*s, cy - 10*s, 4*s, 20*s);
+      ctx.fillRect(cx - 2*s, cy - 8*s, 4*s, 16*s);
+      break;
+
+    case 'diverter':
+      // Road sign
+      ctx.fillStyle = COLORS.diverter;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - 14*s);
+      ctx.lineTo(cx + 14*s, cy + 2*s);
+      ctx.lineTo(cx - 14*s, cy + 2*s);
+      ctx.closePath();
+      ctx.fill();
+      // Arrow
+      ctx.fillStyle = '#FFFFFF';
+      ctx.font = `bold ${12*s}px Segoe UI, sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('<>', cx, cy - 4*s);
+      // Post
+      ctx.fillStyle = '#78909C';
+      ctx.fillRect(cx - 2*s, cy + 2*s, 4*s, 14*s);
+      break;
+
+    case 'monitor':
+      // Sensor body
+      ctx.fillStyle = COLORS.monitor;
+      ctx.fillRect(cx - 8*s, cy - 6*s, 16*s, 12*s);
+      // Screen
+      ctx.fillStyle = '#263238';
+      ctx.fillRect(cx - 6*s, cy - 4*s, 12*s, 6*s);
+      // Blinking light
+      const blink = Math.sin(titleAnim * 4) > 0;
+      ctx.fillStyle = blink ? '#76FF03' : '#33691E';
+      ctx.beginPath();
+      ctx.arc(cx, cy + 3*s, 2*s, 0, Math.PI * 2);
+      ctx.fill();
+      // Antenna
+      ctx.strokeStyle = '#78909C';
+      ctx.lineWidth = 1.5*s;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - 6*s);
+      ctx.lineTo(cx, cy - 14*s);
+      ctx.stroke();
+      ctx.fillStyle = '#EF5350';
+      ctx.beginPath();
+      ctx.arc(cx, cy - 14*s, 2*s, 0, Math.PI * 2);
+      ctx.fill();
+      // Post
+      ctx.fillStyle = '#78909C';
+      ctx.fillRect(cx - 2*s, cy + 6*s, 4*s, 10*s);
+      break;
+
+    case 'garden':
+      // Plot
+      ctx.fillStyle = '#4E342E';
+      ctx.fillRect(cx - 16*s, cy - 4*s, 32*s, 20*s);
+      // Plants
+      ctx.fillStyle = COLORS.gardenLight;
+      for (let i = 0; i < 4; i++) {
+        const px = cx - 12*s + i * 8*s;
+        const py = cy + 2*s;
+        ctx.beginPath();
+        ctx.arc(px, py - 6*s, 4*s, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.fillStyle = COLORS.garden;
+      for (let i = 0; i < 3; i++) {
+        const px = cx - 8*s + i * 8*s;
+        const py = cy - 2*s;
+        ctx.beginPath();
+        ctx.arc(px, py - 6*s, 3*s, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      // Flowers
+      ctx.fillStyle = '#FF8A65';
+      ctx.beginPath();
+      ctx.arc(cx - 6*s, cy - 10*s, 2.5*s, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = '#CE93D8';
+      ctx.beginPath();
+      ctx.arc(cx + 6*s, cy - 8*s, 2.5*s, 0, Math.PI * 2);
+      ctx.fill();
+      break;
+  }
+  ctx.restore();
+}
+
+function drawCars() {
+  cars.forEach(car => {
+    const cx = mapOffX + car.x;
+    const cy = mapOffY + car.y;
+    if (cx < mapOffX - 30 || cx > mapOffX + mapW + 30) return;
+    ctx.fillStyle = car.color;
+    ctx.fillRect(cx - car.width/2, cy - car.height/2, car.width, car.height);
+    // Windshield
+    const wDir = car.speed > 0 ? 1 : -1;
+    ctx.fillStyle = '#B3E5FC';
+    ctx.fillRect(cx + wDir * car.width * 0.2, cy - car.height/2 + 1, car.width * 0.15, car.height - 2);
+  });
+}
+
+function drawPollutionOverlay() {
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      const p = pollutionGrid[r][c];
+      if (p > 0.05) {
+        const alpha = Math.min(0.5, p * 0.5);
+        ctx.fillStyle = `rgba(141,110,99,${alpha})`;
+        ctx.fillRect(mapOffX + c * TILE, mapOffY + r * TILE, TILE, TILE);
+
+        // Dense pollution gets extra visual
+        if (p > 0.5) {
+          ctx.fillStyle = `rgba(97,97,97,${(p - 0.5) * 0.3})`;
+          ctx.beginPath();
+          ctx.arc(
+            mapOffX + c * TILE + TILE/2 + Math.sin(gameTime + c) * 5,
+            mapOffY + r * TILE + TILE/2 + Math.cos(gameTime + r) * 5,
+            TILE * 0.4, 0, Math.PI * 2
+          );
+          ctx.fill();
+        }
+      }
+
+      // Monitor overlay showing exact levels
+      if (grid[r][c].building === 'monitor') {
+        // Show pollution levels for nearby tiles
+        for (let dr = -3; dr <= 3; dr++) {
+          for (let dc = -3; dc <= 3; dc++) {
+            const nr = r + dr, nc = c + dc;
+            if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS) {
+              const dist = Math.sqrt(dr*dr + dc*dc);
+              if (dist <= 3) {
+                const pl = pollutionGrid[nr][nc];
+                if (pl > 0.1) {
+                  ctx.font = '8px Segoe UI, sans-serif';
+                  ctx.fillStyle = pl > 0.5 ? '#F44336' : (pl > 0.3 ? '#FFC107' : '#4CAF50');
+                  ctx.textAlign = 'center';
+                  ctx.fillText(Math.round(pl * 100) + '%', mapOffX + nc * TILE + TILE/2, mapOffY + nr * TILE + TILE - 3);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+function drawParticles() {
+  particles.forEach(p => {
+    const lifeRatio = p.life / p.maxLife;
+    ctx.globalAlpha = p.alpha * lifeRatio;
+
+    switch(p.type) {
+      case 'pollution':
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+        break;
+
+      case 'wind':
+        ctx.strokeStyle = p.color;
+        ctx.lineWidth = p.size;
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p.x - Math.cos(windDir) * 20, p.y - Math.sin(windDir) * 20);
+        ctx.stroke();
+        break;
+
+      case 'sparkle':
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size * lifeRatio, 0, Math.PI * 2);
+        ctx.fill();
+        break;
+
+      case 'rain':
+        ctx.strokeStyle = p.color;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(mapOffX + p.x, mapOffY + p.y);
+        ctx.lineTo(mapOffX + p.x - 2, mapOffY + p.y + 8);
+        ctx.stroke();
+        break;
+    }
+  });
+  ctx.globalAlpha = 1;
+}
+
+function drawHealthMeters() {
+  houses.forEach(h => {
+    const tx = mapOffX + h.c * TILE;
+    const ty = mapOffY + h.r * TILE;
+    const mw = TILE - 8;
+    const mh = 4;
+    const mx = tx + 4;
+    const my = ty - 2;
+
+    // Background
+    ctx.fillStyle = 'rgba(0,0,0,0.4)';
+    ctx.fillRect(mx, my, mw, mh);
+
+    // Health bar
+    const ratio = h.health / 100;
+    ctx.fillStyle = healthToColor(h.health);
+    ctx.fillRect(mx, my, mw * ratio, mh);
+
+    // Border
+    ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+    ctx.lineWidth = 0.5;
+    ctx.strokeRect(mx, my, mw, mh);
+  });
+}
+
+function drawFloatingTexts() {
+  floatingTexts.forEach(ft => {
+    const alpha = ft.life / ft.maxLife;
+    ctx.globalAlpha = alpha;
+    ctx.font = 'bold 13px Segoe UI, sans-serif';
+    ctx.fillStyle = ft.color;
+    ctx.textAlign = 'center';
+    ctx.fillText(ft.text, ft.x, ft.y);
+  });
+  ctx.globalAlpha = 1;
+}
+
+function drawHUD() {
+  // Top bar background
+  ctx.fillStyle = 'rgba(13,71,161,0.85)';
+  ctx.fillRect(0, 0, W, HUD_TOP);
+
+  // Community Points
+  ctx.font = 'bold 14px Segoe UI, sans-serif';
+  ctx.fillStyle = '#FFD54F';
+  ctx.textAlign = 'left';
+  ctx.fillText('Community Points: ' + Math.floor(communityPoints), 15, 20);
+
+  // Score
+  ctx.fillStyle = '#B3E5FC';
+  ctx.fillText('Score: ' + Math.floor(score), 15, 38);
+
+  // Lives
+  ctx.textAlign = 'center';
+  ctx.font = '18px Segoe UI, sans-serif';
+  let livesText = '';
+  for (let i = 0; i < LIVES_TOTAL; i++) {
+    livesText += i < lives ? '\u2764 ' : '\u2661 ';
+  }
+  ctx.fillStyle = lives <= 1 ? COLORS.healthRed : '#FFFFFF';
+  ctx.fillText(livesText, W/2, 22);
+
+  // Level name
+  ctx.font = '12px Segoe UI, sans-serif';
+  ctx.fillStyle = '#B3E5FC';
+  ctx.fillText('Level ' + (currentLevel + 1) + ': ' + levelConfig.name, W/2, 40);
+
+  // Timer
+  const remaining = Math.max(0, levelConfig.duration - gameTime);
+  const mins = Math.floor(remaining / 60);
+  const secs = Math.floor(remaining % 60);
+  ctx.textAlign = 'right';
+  ctx.font = 'bold 16px Segoe UI, sans-serif';
+  ctx.fillStyle = remaining < 30 ? COLORS.healthRed : '#FFFFFF';
+  ctx.fillText((mins < 10 ? '0' : '') + mins + ':' + (secs < 10 ? '0' : '') + secs, W - 15, 20);
+
+  // Wind indicator
+  ctx.fillStyle = '#B3E5FC';
+  ctx.font = '11px Segoe UI, sans-serif';
+  ctx.fillText('Wind', W - 60, 38);
+
+  // Wind arrow
+  const windArrowX = W - 25;
+  const windArrowY = 35;
+  const arrowLen = 12;
+  ctx.save();
+  ctx.translate(windArrowX, windArrowY);
+  ctx.rotate(windDir);
+  ctx.strokeStyle = '#FFFFFF';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(-arrowLen, 0);
+  ctx.lineTo(arrowLen, 0);
+  ctx.lineTo(arrowLen - 5, -4);
+  ctx.moveTo(arrowLen, 0);
+  ctx.lineTo(arrowLen - 5, 4);
+  ctx.stroke();
+  ctx.restore();
+
+  // Wind speed bars
+  const speedBars = Math.min(3, Math.ceil(windSpeed));
+  for (let i = 0; i < 3; i++) {
+    ctx.fillStyle = i < speedBars ? '#76FF03' : 'rgba(255,255,255,0.2)';
+    ctx.fillRect(W - 80 + i * 8, 42, 5, -8 - i * 3);
+  }
+
+  // Event banner
+  if (eventText) {
+    const bannerAlpha = Math.min(1, eventTimer * 2);
+    ctx.globalAlpha = bannerAlpha;
+    let bannerColor = '#FF6F00';
+    if (activeEvent === 'rain') bannerColor = '#1565C0';
+    if (activeEvent === 'communityRally') bannerColor = '#2E7D32';
+    ctx.fillStyle = bannerColor;
+    drawRoundRect(W/2 - 160, HUD_TOP + 5, 320, 30, 6);
+    ctx.fill();
+    ctx.font = 'bold 14px Segoe UI, sans-serif';
+    ctx.fillStyle = '#FFFFFF';
+    ctx.textAlign = 'center';
+    ctx.fillText(eventText, W/2, HUD_TOP + 24);
+    ctx.globalAlpha = 1;
+  }
+
+  // Bottom toolbar
+  ctx.fillStyle = 'rgba(13,71,161,0.9)';
+  ctx.fillRect(0, H - HUD_BOT, W, HUD_BOT);
+
+  const palW = 110;
+  const totalW = TOOLS.length * (palW + 8);
+  const palStartX = W/2 - totalW/2;
+  const palY = H - HUD_BOT + 5;
+
+  TOOLS.forEach((tool, i) => {
+    const tx = palStartX + i * (palW + 8);
+    const selected = selectedTool === tool.id;
+    const canAfford = communityPoints >= tool.cost;
+
+    drawRoundRect(tx, palY, palW, HUD_BOT - 12, 6);
+    if (selected) {
+      ctx.fillStyle = 'rgba(76,175,80,0.5)';
+    } else if (canAfford) {
+      ctx.fillStyle = 'rgba(255,255,255,0.1)';
+    } else {
+      ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    }
+    ctx.fill();
+
+    if (selected) {
+      ctx.strokeStyle = '#76FF03';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    // Icon mini
+    drawBuildingIcon(tx + 20, palY + (HUD_BOT - 12)/2, tool.id, 0.6);
+
+    // Text
+    ctx.font = 'bold 11px Segoe UI, sans-serif';
+    ctx.fillStyle = canAfford ? '#FFFFFF' : '#888';
+    ctx.textAlign = 'left';
+    ctx.fillText(tool.name, tx + 38, palY + 18);
+
+    ctx.font = '10px Segoe UI, sans-serif';
+    ctx.fillStyle = canAfford ? '#FFD54F' : '#666';
+    ctx.fillText(tool.cost + ' pts', tx + 38, palY + 32);
+
+    ctx.font = '9px Segoe UI, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.4)';
+    ctx.fillText('[' + tool.key + ']', tx + 38, palY + 44);
+  });
+}
+
+// ============================================================
+// DRAW: LEVEL COMPLETE
+// ============================================================
+function drawLevelComplete() {
+  ctx.fillStyle = 'rgba(26,35,126,0.95)';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.font = 'bold 36px Segoe UI, sans-serif';
+  ctx.fillStyle = '#76FF03';
+  ctx.textAlign = 'center';
+  ctx.fillText('LEVEL COMPLETE!', W/2, H * 0.18);
+
+  ctx.font = '20px Segoe UI, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fillText(LEVELS[currentLevel].name, W/2, H * 0.26);
+
+  // Score
+  const finalScore = Math.floor(score);
+  ctx.font = 'bold 28px Segoe UI, sans-serif';
+  ctx.fillStyle = '#FFD54F';
+  ctx.fillText('Score: ' + finalScore, W/2, H * 0.36);
+
+  // Medal
+  const lvl = LEVELS[currentLevel];
+  let medal = 0, medalText = 'No Medal';
+  if (finalScore >= lvl.gold) { medal = 3; medalText = 'GOLD'; }
+  else if (finalScore >= lvl.silver) { medal = 2; medalText = 'SILVER'; }
+  else if (finalScore >= lvl.bronze) { medal = 1; medalText = 'BRONZE'; }
+
+  if (medal > 0) {
+    const medalColors = ['', COLORS.bronze, COLORS.silver, COLORS.gold];
+    ctx.fillStyle = medalColors[medal];
+    ctx.beginPath();
+    ctx.arc(W/2, H * 0.48, 30, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.font = 'bold 20px Segoe UI, sans-serif';
+    ctx.fillStyle = '#263238';
+    ctx.fillText(medalText.charAt(0), W/2, H * 0.48 + 6);
+  }
+  ctx.font = 'bold 16px Segoe UI, sans-serif';
+  ctx.fillStyle = medal > 0 ? '#FFD54F' : '#999';
+  ctx.fillText(medalText, W/2, H * 0.56);
+
+  // Thresholds
+  ctx.font = '12px Segoe UI, sans-serif';
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.fillText('Bronze: ' + lvl.bronze + ' | Silver: ' + lvl.silver + ' | Gold: ' + lvl.gold, W/2, H * 0.62);
+
+  // Buttons
+  const nextText = currentLevel < LEVELS.length - 1 ? 'NEXT LEVEL' : 'BACK TO MENU';
+  drawButton(W/2 - 80, H * 0.75, 160, 45, nextText, '#2E7D32');
+  drawButton(W/2 - 80, H * 0.75 + 55, 160, 45, 'LEVEL SELECT', COLORS.uiPanel);
+}
+
+// ============================================================
+// DRAW: GAME OVER
+// ============================================================
+function drawGameOver() {
+  ctx.fillStyle = 'rgba(26,35,126,0.95)';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.font = 'bold 40px Segoe UI, sans-serif';
+  ctx.fillStyle = COLORS.healthRed;
+  ctx.textAlign = 'center';
+  ctx.fillText('GAME OVER', W/2, H * 0.22);
+
+  ctx.font = '18px Segoe UI, sans-serif';
+  ctx.fillStyle = '#B3E5FC';
+  ctx.fillText('Too many families got sick from the pollution.', W/2, H * 0.32);
+
+  ctx.font = '16px Segoe UI, sans-serif';
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fillText('Score: ' + Math.floor(score), W/2, H * 0.42);
+
+  ctx.font = '14px Segoe UI, sans-serif';
+  ctx.fillStyle = 'rgba(255,255,255,0.6)';
+  ctx.fillText('Try placing more trees and barriers between the freeway and homes!', W/2, H * 0.52);
+  ctx.fillText('Wind barriers can redirect pollution away from residential areas.', W/2, H * 0.58);
+
+  drawButton(W/2 - 170, H * 0.7, 150, 45, 'RETRY', '#E65100');
+  drawButton(W/2 + 20, H * 0.7, 150, 45, 'LEVEL SELECT', COLORS.uiPanel);
+}
+
+// ============================================================
+// MAIN DRAW
+// ============================================================
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+
+  switch(state) {
+    case 'TITLE': drawTitle(); break;
+    case 'HOW_TO': drawHowTo(); break;
+    case 'LEVEL_SELECT': drawLevelSelect(); break;
+    case 'PLAYING': drawGame(); break;
+    case 'LEVEL_COMPLETE': drawLevelComplete(); break;
+    case 'GAME_OVER': drawGameOver(); break;
+  }
+
+  // Transition overlay
+  if (transitionAlpha > 0) {
+    ctx.fillStyle = `rgba(0,0,0,${transitionAlpha})`;
+    ctx.fillRect(0, 0, W, H);
+  }
+}
+
+// ============================================================
+// GAME LOOP
+// ============================================================
+let lastTime = performance.now();
+
+function gameLoop(now) {
+  let dt = (now - lastTime) / 1000;
+  lastTime = now;
+  if (dt > 0.1) dt = 0.1; // Cap delta
+
+  update(dt);
+  draw();
+  requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
+
+})();
+</script>
+</body>
+</html>

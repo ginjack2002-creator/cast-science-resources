@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>E-WASTE | Supply Chain Game</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#1a1a2e;font-family:'Segoe UI',Arial,sans-serif}
+canvas{display:block;cursor:pointer;touch-action:none}
+#orient{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#1a1a2e;z-index:999;color:#fff;justify-content:center;align-items:center;flex-direction:column;font-size:1.4em;text-align:center;padding:20px}
+#orient span{font-size:2em;display:block;margin-bottom:20px}
+@media(max-width:600px) and (orientation:portrait){
+#orient{display:flex!important}
+}
+</style>
+</head>
+<body>
+<div id="orient"><span>&#128257;</span>Please rotate your device to landscape mode</div>
+<canvas id="gc"></canvas>
+<script>
+"use strict";
+// ==================== E-WASTE: Supply Chain Factory Game ====================
+// NGSS MS-ESS3-3, MS-ESS3-4 — Grade 8
+// Single-file HTML5 Canvas game
+
+const canvas = document.getElementById('gc');
+const ctx = canvas.getContext('2d');
+
+// ==================== AUDIO ENGINE ====================
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+function ensureAudio(){if(!audioCtx)audioCtx=new AudioCtx();}
+
+function playTone(freq,dur,type,vol,detune){
+  ensureAudio();
+  const o=audioCtx.createOscillator();
+  const g=audioCtx.createGain();
+  o.type=type||'square';
+  o.frequency.value=freq;
+  if(detune)o.detune.value=detune;
+  g.gain.setValueAtTime((vol||0.15),audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+(dur||0.1));
+  o.connect(g);g.connect(audioCtx.destination);
+  o.start();o.stop(audioCtx.currentTime+(dur||0.1));
+}
+
+function sndMine(){playTone(120,0.08,'square',0.12);setTimeout(()=>playTone(200,0.05,'sawtooth',0.08),40);}
+function sndPlace(){playTone(600,0.06,'sine',0.1);playTone(900,0.04,'sine',0.08);}
+function sndCash(){playTone(1200,0.05,'sine',0.1);setTimeout(()=>playTone(1500,0.05,'sine',0.08),60);setTimeout(()=>playTone(1800,0.06,'sine',0.1),120);}
+function sndRecycle(){playTone(300,0.15,'sawtooth',0.06);playTone(350,0.15,'sawtooth',0.05);}
+function sndWarn(){playTone(200,0.3,'square',0.15);setTimeout(()=>playTone(150,0.3,'square',0.12),350);}
+function sndClick(){playTone(800,0.03,'sine',0.08);}
+function sndComplete(){for(let i=0;i<5;i++)setTimeout(()=>playTone(400+i*150,0.12,'sine',0.1),i*80);}
+function sndFail(){playTone(300,0.2,'sawtooth',0.1);setTimeout(()=>playTone(200,0.3,'sawtooth',0.12),200);}
+
+// ==================== CONSTANTS ====================
+const MINERAL_TYPES = [
+  {name:'Lithium',color:'#CFD8DC',darkColor:'#90A4AE',symbol:'Li',component:'Battery'},
+  {name:'Coltan',color:'#616161',darkColor:'#424242',symbol:'Co',component:'Capacitors'},
+  {name:'Cobalt',color:'#42A5F5',darkColor:'#1565C0',symbol:'Cb',component:'Screen'},
+  {name:'Silicon',color:'#FFB300',darkColor:'#FF8F00',symbol:'Si',component:'Chip'}
+];
+
+const UPGRADE_DEFS = [
+  {name:'Green Mining',desc:'Less environmental damage per extraction',baseCost:200,maxLvl:5,icon:'M'},
+  {name:'Speed Line',desc:'Faster assembly conveyor belt',baseCost:150,maxLvl:5,icon:'S'},
+  {name:'Recycling Tech',desc:'Recover more minerals from e-waste',baseCost:250,maxLvl:5,icon:'R'},
+  {name:'Durability',desc:'Phones last longer before becoming waste',baseCost:300,maxLvl:5,icon:'D'},
+  {name:'Solar Factory',desc:'Reduces overall pollution generation',baseCost:350,maxLvl:5,icon:'F'}
+];
+
+const LEVEL_DEFS = [
+  {name:'Startup',desc:'Make your first 10 phones. Learn the cycle.',phonesNeeded:10,profitGoal:500,sustainGoal:30,timeLimit:180,demandRate:0.5},
+  {name:'Growth',desc:'Demand increases. Mine faster or recycle smarter?',phonesNeeded:25,profitGoal:1500,sustainGoal:45,timeLimit:240,demandRate:1.0},
+  {name:'Crisis',desc:'E-waste is piling up. Environmental damage mounting.',phonesNeeded:30,profitGoal:2000,sustainGoal:55,timeLimit:240,demandRate:1.5,startWaste:15},
+  {name:'Innovation',desc:'Unlock recycling tech. Can you go circular?',phonesNeeded:35,profitGoal:2500,sustainGoal:65,timeLimit:300,demandRate:1.2},
+  {name:'Sustainability',desc:'Balance profit AND environment. Both scores matter.',phonesNeeded:40,profitGoal:3500,sustainGoal:75,timeLimit:300,demandRate:1.8}
+];
+
+// ==================== GAME STATE ====================
+let W=1280,H=720;
+let dpr=1;
+let gameState='TITLE'; // TITLE, HOW_TO, LEVEL_SELECT, PLAYING, LEVEL_COMPLETE, GAME_OVER
+let currentPhase=0; // 0=mining, 1=manufacturing, 2=lifecycle
+let currentLevel=0;
+let money=0;
+let displayMoney=0; // for rolling counter animation
+let sustainScore=100;
+let envDamage=0;
+let minerals=[0,0,0,0]; // Li, Co, Cb, Si
+let phonesBuilt=0;
+let phonesTotal=0;
+let eWastePile=0;
+let recycledCount=0;
+let levelTimer=0;
+let phaseTimer=0;
+let upgrades=[0,0,0,0,0];
+let particles=[];
+let animFrame=0;
+let lastTime=0;
+let buttons=[];
+let dragMineral=-1;
+let dragX=0,dragY=0;
+let mouseX=0,mouseY=0;
+let mouseDown=false;
+let levelScores=null;
+let flashMsg='';
+let flashTimer=0;
+let flashColor='#4CAF50';
+let warnBuzzerCooldown=0;
+let titleParticles=[];
+let floatingTexts=[];
+
+// Mining state
+let mineDeposits=[];
+let mineDamageCircles=[];
+let mineTrees=[];
+let mineWater=[];
+let mineAnimTimer=0;
+
+// Manufacturing state
+let conveyorPhones=[];
+let conveyorSpeed=1;
+let workerStamina=100;
+let assemblySlots=[false,false,false,false];
+let currentConveyorPhone=null;
+
+// Lifecycle state
+let cityPhones=[];
+let eWasteItems=[];
+let consumers=[];
+let recycleStation={x:0,y:0,w:0,h:0,active:false};
+let eWastePileItems=[];
+
+// Transition
+let transAlpha=0;
+let transDir=0; // 0=none,1=fadein,2=fadeout
+let transCallback=null;
+
+// ==================== SAVE/LOAD ====================
+function saveGame(){
+  const d={scores:levelScores,ups:upgrades};
+  try{localStorage.setItem('ewaste_save',JSON.stringify(d));}catch(e){}
+}
+function loadGame(){
+  try{
+    const d=JSON.parse(localStorage.getItem('ewaste_save'));
+    if(d){levelScores=d.scores||[0,0,0,0,0];upgrades=d.ups||[0,0,0,0,0];}
+    else{levelScores=[0,0,0,0,0];upgrades=[0,0,0,0,0];}
+  }catch(e){levelScores=[0,0,0,0,0];upgrades=[0,0,0,0,0];}
+}
+
+// ==================== RESIZE ====================
+function resize(){
+  dpr=window.devicePixelRatio||1;
+  const aspect=16/9;
+  let w=window.innerWidth, h=window.innerHeight;
+  if(w/h > aspect){w=h*aspect;}else{h=w/aspect;}
+  canvas.style.width=w+'px';
+  canvas.style.height=h+'px';
+  canvas.width=w*dpr;
+  canvas.height=h*dpr;
+  W=1280;H=720;
+  ctx.setTransform(dpr*(w/W),0,0,dpr*(h/H),0,0);
+}
+window.addEventListener('resize',resize);
+resize();
+
+// ==================== PARTICLES ====================
+function addParticle(x,y,vx,vy,color,life,size,type){
+  if(particles.length>500)return;
+  particles.push({x,y,vx,vy,color,life,maxLife:life,size:size||3,type:type||'circle'});
+}
+
+function updateParticles(dt){
+  for(let i=particles.length-1;i>=0;i--){
+    const p=particles[i];
+    p.x+=p.vx*dt;
+    p.y+=p.vy*dt;
+    p.vy+=120*dt; // gravity
+    p.life-=dt;
+    if(p.life<=0)particles.splice(i,1);
+  }
+}
+
+function drawParticles(){
+  for(const p of particles){
+    const a=Math.max(0,p.life/p.maxLife);
+    ctx.globalAlpha=a;
+    ctx.fillStyle=p.color;
+    if(p.type==='square'){
+      ctx.fillRect(p.x-p.size/2,p.y-p.size/2,p.size,p.size);
+    }else{
+      ctx.beginPath();ctx.arc(p.x,p.y,p.size*a,0,Math.PI*2);ctx.fill();
+    }
+  }
+  ctx.globalAlpha=1;
+}
+
+// ==================== DRAWING HELPERS ====================
+function drawRoundRect(x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r);ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h);ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r);ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath();
+}
+
+function drawBtn(x,y,w,h,text,color,textColor,id,enabled){
+  const en=enabled!==false;
+  const hov=isHover(x,y,w,h)&&en;
+  ctx.save();
+  drawRoundRect(x,y,w,h,8);
+  ctx.fillStyle=en?(hov?lighten(color,20):color):'#555';
+  ctx.fill();
+  ctx.strokeStyle=en?(hov?'#fff':'rgba(255,255,255,0.3)'):'#444';
+  ctx.lineWidth=2;ctx.stroke();
+  ctx.fillStyle=en?(textColor||'#fff'):'#888';
+  ctx.font='bold 18px "Segoe UI",Arial';
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillText(text,x+w/2,y+h/2);
+  ctx.restore();
+  if(id)buttons.push({x,y,w,h,id,enabled:en});
+}
+
+function drawSmallBtn(x,y,w,h,text,color,id,enabled){
+  const en=enabled!==false;
+  const hov=isHover(x,y,w,h)&&en;
+  ctx.save();
+  drawRoundRect(x,y,w,h,5);
+  ctx.fillStyle=en?(hov?lighten(color,20):color):'#555';
+  ctx.fill();
+  ctx.fillStyle=en?'#fff':'#888';
+  ctx.font='bold 14px "Segoe UI",Arial';
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillText(text,x+w/2,y+h/2);
+  ctx.restore();
+  if(id)buttons.push({x,y,w,h,id,enabled:en});
+}
+
+function isHover(x,y,w,h){return mouseX>=x&&mouseX<=x+w&&mouseY>=y&&mouseY<=y+h;}
+
+function lighten(hex,amt){
+  let r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+  r=Math.min(255,r+amt);g=Math.min(255,g+amt);b=Math.min(255,b+amt);
+  return '#'+[r,g,b].map(v=>v.toString(16).padStart(2,'0')).join('');
+}
+
+function drawBar(x,y,w,h,val,max,color,bgColor){
+  ctx.fillStyle=bgColor||'rgba(0,0,0,0.4)';
+  drawRoundRect(x,y,w,h,h/2);ctx.fill();
+  const pct=Math.max(0,Math.min(1,val/max));
+  if(pct>0){
+    ctx.fillStyle=color;
+    drawRoundRect(x,y,w*pct,h,h/2);ctx.fill();
+  }
+}
+
+function drawPhone(x,y,w,h,components,quality){
+  ctx.save();
+  drawRoundRect(x,y,w,h,4);
+  ctx.fillStyle='#263238';ctx.fill();
+  ctx.strokeStyle='#546E7A';ctx.lineWidth=1.5;ctx.stroke();
+  // screen
+  const sx=x+3,sy=y+h*0.12,sw=w-6,sh=h*0.65;
+  ctx.fillStyle=components&&components[2]?'#0D47A1':'#1a1a1a';
+  ctx.fillRect(sx,sy,sw,sh);
+  // component indicators
+  const labels=['Li','Co','Cb','Si'];
+  const cols=['#CFD8DC','#616161','#42A5F5','#FFB300'];
+  for(let i=0;i<4;i++){
+    const cx=x+4+i*(w-8)/4;
+    const cy=y+h-8;
+    ctx.fillStyle=(components&&components[i])?cols[i]:'#333';
+    ctx.fillRect(cx,cy,((w-8)/4)-2,5);
+  }
+  if(quality!==undefined&&quality<4){
+    ctx.fillStyle='#EF5350';ctx.font='bold 10px Arial';
+    ctx.textAlign='center';ctx.fillText('!',x+w/2,y+h/2);
+  }
+  ctx.restore();
+}
+
+// ==================== PHASE INIT ====================
+function initMiningPhase(){
+  mineDeposits=[];
+  mineDamageCircles=[];
+  mineTrees=[];
+  mineWater=[];
+  // Generate deposits
+  const area={x:80,y:100,w:800,h:500};
+  for(let i=0;i<12+currentLevel*3;i++){
+    const type=Math.floor(Math.random()*4);
+    const dx=area.x+60+Math.random()*(area.w-120);
+    const dy=area.y+40+Math.random()*(area.h-80);
+    const yield_=3+Math.floor(Math.random()*4);
+    mineDeposits.push({x:dx,y:dy,type,yield:yield_,maxYield:yield_,mined:false,hitAnim:0});
+  }
+  // Generate trees
+  for(let i=0;i<40;i++){
+    const tx=area.x+Math.random()*area.w;
+    const ty=area.y+Math.random()*area.h;
+    let tooClose=false;
+    for(const d of mineDeposits){
+      if(Math.hypot(d.x-tx,d.y-ty)<40){tooClose=true;break;}
+    }
+    if(!tooClose)mineTrees.push({x:tx,y:ty,size:10+Math.random()*15,alive:true,alpha:1});
+  }
+  // Water bodies
+  mineWater.push({x:area.x+area.w*0.7,y:area.y+area.h*0.6,w:120,h:60,pollution:0});
+  mineWater.push({x:area.x+area.w*0.2,y:area.y+area.h*0.3,w:80,h:50,pollution:0});
+}
+
+function initManufacturingPhase(){
+  conveyorPhones=[];
+  workerStamina=100;
+  assemblySlots=[false,false,false,false];
+  currentConveyorPhone=null;
+  spawnConveyorPhone();
+}
+
+function spawnConveyorPhone(){
+  const speed=0.6+upgrades[1]*0.08+currentLevel*0.05;
+  conveyorPhones.push({
+    x:1300,y:340,
+    components:[false,false,false,false],
+    speed:speed,
+    w:50,h:80,
+    placed:0
+  });
+}
+
+function initLifecyclePhase(){
+  cityPhones=[];
+  eWasteItems=[];
+  consumers=[];
+  eWastePileItems=[];
+  const durBonus=upgrades[3]*15;
+  // Transfer built phones
+  const ct=Math.min(phonesBuilt,8);
+  for(let i=0;i<ct;i++){
+    cityPhones.push({
+      x:100+i*80+Math.random()*30,
+      y:200+Math.random()*100,
+      life:100+durBonus+Math.random()*50,
+      maxLife:150+durBonus,
+      value:50+Math.floor(Math.random()*30),
+      sold:false,
+      decay:0.3+currentLevel*0.08
+    });
+  }
+  // Consumers
+  for(let i=0;i<6;i++){
+    consumers.push({x:150+i*100,y:450+Math.random()*40,hasPhone:false,timer:0});
+  }
+  // Recycle station
+  recycleStation={x:950,y:350,w:120,h:100,active:true};
+  // Pre-existing waste for crisis level
+  if(LEVEL_DEFS[currentLevel].startWaste){
+    for(let i=0;i<LEVEL_DEFS[currentLevel].startWaste;i++){
+      eWastePile++;
+      eWastePileItems.push({
+        x:1050+Math.random()*150,
+        y:550-eWastePile*4+Math.random()*10,
+        rot:Math.random()*Math.PI*2,
+        w:20+Math.random()*15,
+        h:30+Math.random()*10
+      });
+    }
+  }
+}
+
+// ==================== LEVEL MANAGEMENT ====================
+function startLevel(lvl){
+  currentLevel=lvl;
+  money=50+lvl*30;
+  displayMoney=money;
+  sustainScore=100;
+  envDamage=0;
+  minerals=[5,5,5,5]; // start with some minerals
+  phonesBuilt=0;
+  phonesTotal=0;
+  eWastePile=LEVEL_DEFS[lvl].startWaste||0;
+  recycledCount=0;
+  levelTimer=LEVEL_DEFS[lvl].timeLimit;
+  particles=[];
+  currentPhase=0;
+  phaseTimer=0;
+  eWastePileItems=[];
+  initMiningPhase();
+  transTo('PLAYING');
+}
+
+function checkLevelEnd(){
+  const lvl=LEVEL_DEFS[currentLevel];
+  // Win condition
+  if(phonesTotal>=lvl.phonesNeeded){
+    const profitMet=money>=lvl.profitGoal;
+    const sustainMet=sustainScore>=lvl.sustainGoal;
+    let medal=0;
+    if(profitMet&&sustainMet)medal=3;
+    else if(profitMet||sustainMet)medal=2;
+    else medal=1;
+    if(!levelScores)levelScores=[0,0,0,0,0];
+    if(medal>levelScores[currentLevel])levelScores[currentLevel]=medal;
+    saveGame();
+    sndComplete();
+    transTo('LEVEL_COMPLETE');
+    return true;
+  }
+  // Time up
+  if(levelTimer<=0){
+    if(!levelScores)levelScores=[0,0,0,0,0];
+    sndFail();
+    transTo('GAME_OVER');
+    return true;
+  }
+  // Environmental crisis
+  if(envDamage>=100){
+    if(!levelScores)levelScores=[0,0,0,0,0];
+    sndFail();
+    flashMsg='ENVIRONMENTAL CRISIS!';flashTimer=2;flashColor='#EF5350';
+    transTo('GAME_OVER');
+    return true;
+  }
+  // E-waste overflow
+  if(eWastePile>=50){
+    sndFail();
+    flashMsg='E-WASTE OVERFLOW!';flashTimer=2;flashColor='#C6FF00';
+    transTo('GAME_OVER');
+    return true;
+  }
+  return false;
+}
+
+function transTo(state){
+  transDir=2;
+  transCallback=()=>{gameState=state;transDir=1;};
+}
+
+// ==================== FLOATING TEXT ====================
+function addFloatingText(x,y,text,color,size){
+  floatingTexts.push({x,y,text,color,size:size||18,life:1.2,maxLife:1.2});
+}
+function updateFloatingTexts(dt){
+  for(let i=floatingTexts.length-1;i>=0;i--){
+    const ft=floatingTexts[i];
+    ft.y-=40*dt;
+    ft.life-=dt;
+    if(ft.life<=0)floatingTexts.splice(i,1);
+  }
+}
+function drawFloatingTexts(){
+  for(const ft of floatingTexts){
+    const a=Math.max(0,ft.life/ft.maxLife);
+    ctx.globalAlpha=a;
+    ctx.fillStyle=ft.color;
+    ctx.font='bold '+ft.size+'px "Segoe UI",Arial';
+    ctx.textAlign='center';
+    ctx.fillText(ft.text,ft.x,ft.y);
+  }
+  ctx.globalAlpha=1;
+}
+
+// ==================== TITLE PARTICLES ====================
+function updateTitleParticles(dt){
+  // Spawn new ones
+  if(titleParticles.length<60&&Math.random()<dt*15){
+    const side=Math.random()>0.5;
+    titleParticles.push({
+      x:side?200+Math.random()*200:880+Math.random()*200,
+      y:600+Math.random()*50,
+      vx:(Math.random()-0.5)*20,
+      vy:-30-Math.random()*50,
+      color:side?'#42A5F5':'#C6FF00',
+      life:2+Math.random()*2,
+      maxLife:3,
+      size:2+Math.random()*3
+    });
+  }
+  for(let i=titleParticles.length-1;i>=0;i--){
+    const p=titleParticles[i];
+    p.x+=p.vx*dt;p.y+=p.vy*dt;
+    p.life-=dt;
+    if(p.life<=0)titleParticles.splice(i,1);
+  }
+}
+
+// ==================== UPDATE ====================
+function update(dt){
+  animFrame+=dt;
+  // Transition
+  if(transDir===2){
+    transAlpha+=dt*3;
+    if(transAlpha>=1){transAlpha=1;transDir=0;if(transCallback){transCallback();transCallback=null;}}
+  }else if(transDir===1){
+    transAlpha-=dt*3;
+    if(transAlpha<=0){transAlpha=0;transDir=0;}
+  }
+  // Flash messages
+  if(flashTimer>0)flashTimer-=dt;
+  // Floating texts
+  updateFloatingTexts(dt);
+  // Title particles
+  if(gameState==='TITLE')updateTitleParticles(dt);
+
+  if(gameState!=='PLAYING')return;
+
+  // Rolling money counter
+  if(displayMoney<money)displayMoney=Math.min(money,displayMoney+Math.ceil((money-displayMoney)*dt*8));
+  else if(displayMoney>money)displayMoney=Math.max(money,displayMoney-Math.ceil((displayMoney-money)*dt*8));
+
+  // Level timer
+  levelTimer-=dt;
+  phaseTimer+=dt;
+
+  // Warning buzzer
+  warnBuzzerCooldown-=dt;
+  if(envDamage>75&&warnBuzzerCooldown<=0){sndWarn();warnBuzzerCooldown=8;}
+  if(eWastePile>35&&warnBuzzerCooldown<=0){sndWarn();warnBuzzerCooldown=8;}
+  if(levelTimer<20&&levelTimer>0&&warnBuzzerCooldown<=0){sndWarn();warnBuzzerCooldown=10;}
+
+  // Sustainability score calculation
+  const dmgPenalty=envDamage*0.5;
+  const recyclBonus=recycledCount*2;
+  const wastePenalty=eWastePile*0.8;
+  sustainScore=Math.max(0,Math.min(100,100-dmgPenalty+recyclBonus-wastePenalty));
+
+  updateParticles(dt);
+
+  if(currentPhase===0)updateMining(dt);
+  else if(currentPhase===1)updateManufacturing(dt);
+  else if(currentPhase===2)updateLifecycle(dt);
+
+  checkLevelEnd();
+}
+
+function updateMining(dt){
+  mineAnimTimer+=dt;
+  // Animate damage circles
+  for(const dc of mineDamageCircles){
+    dc.radius+=dt*20;
+    dc.alpha-=dt*0.5;
+  }
+  mineDamageCircles=mineDamageCircles.filter(dc=>dc.alpha>0);
+  // Kill trees near damage
+  for(const t of mineTrees){
+    if(!t.alive)continue;
+    for(const dc of mineDamageCircles){
+      if(Math.hypot(t.x-dc.x,t.y-dc.y)<dc.radius){
+        t.alive=false;
+        t.alpha=1;
+      }
+    }
+  }
+  // Fade dead trees
+  for(const t of mineTrees){
+    if(!t.alive&&t.alpha>0)t.alpha-=dt*0.8;
+  }
+  // Pollute water
+  for(const w of mineWater){
+    for(const dc of mineDamageCircles){
+      if(dc.x>w.x-40&&dc.x<w.x+w.w+40&&dc.y>w.y-40&&dc.y<w.y+w.h+40){
+        w.pollution=Math.min(1,w.pollution+dt*0.3);
+      }
+    }
+  }
+  // Deposit hit animations
+  for(const d of mineDeposits){
+    if(d.hitAnim>0)d.hitAnim-=dt*5;
+  }
+}
+
+function updateManufacturing(dt){
+  // Worker stamina
+  if(workerStamina>0)workerStamina-=dt*3;
+  if(workerStamina<20){
+    conveyorSpeed=0.3;
+  }else{
+    conveyorSpeed=0.6+upgrades[1]*0.12;
+  }
+  // Stamina recovery when not placing
+  if(!mouseDown&&workerStamina<100)workerStamina+=dt*5;
+
+  // Move conveyor phones
+  for(let i=conveyorPhones.length-1;i>=0;i--){
+    const p=conveyorPhones[i];
+    p.x-=conveyorSpeed*100*dt;
+    // Check if phone passed the assembly zone
+    if(p.x<200){
+      // Count placed components
+      let placed=0;
+      for(const c of p.components)if(c)placed++;
+      if(placed>0){
+        const val=placed===4?80:placed*15;
+        money+=val;
+        phonesBuilt++;
+        phonesTotal++;
+        if(placed===4){
+          sndCash();
+          flashMsg='+$'+val+' Perfect Phone!';flashTimer=1.2;flashColor='#4CAF50';
+          addFloatingText(p.x+25,p.y,'+$'+val+' PERFECT!','#4CAF50',20);
+        }else{
+          flashMsg='+$'+val+' ('+placed+'/4 components)';flashTimer=1;flashColor='#FFB300';
+          addFloatingText(p.x+25,p.y,'+$'+val+' ('+placed+'/4)','#FFB300',16);
+        }
+        for(let j=0;j<12;j++){
+          addParticle(p.x+25,p.y+40,(Math.random()-0.5)*120,-Math.random()*100,placed===4?'#4CAF50':'#FFB300',1.0,4);
+        }
+      }
+      conveyorPhones.splice(i,1);
+    }
+  }
+  // Spawn new phone if needed
+  if(conveyorPhones.length===0||(conveyorPhones.length<3&&conveyorPhones[conveyorPhones.length-1].x<900)){
+    spawnConveyorPhone();
+  }
+}
+
+function updateLifecycle(dt){
+  const lvl=LEVEL_DEFS[currentLevel];
+  // Phones decay
+  for(let i=cityPhones.length-1;i>=0;i--){
+    const p=cityPhones[i];
+    if(!p.sold){
+      // Sell to consumer
+      for(const c of consumers){
+        if(!c.hasPhone&&Math.random()<dt*lvl.demandRate){
+          c.hasPhone=true;
+          p.sold=true;
+          money+=p.value;
+          sndCash();
+          for(let j=0;j<5;j++){
+            addParticle(p.x,p.y,(Math.random()-0.5)*60,-Math.random()*40,'#4CAF50',0.6,2);
+          }
+          break;
+        }
+      }
+    }
+    p.life-=p.decay*dt*20;
+    if(p.life<=0){
+      // Becomes e-waste
+      eWastePile++;
+      eWastePileItems.push({
+        x:1000+Math.random()*200,
+        y:Math.max(200,580-eWastePile*5)+Math.random()*10,
+        rot:Math.random()*Math.PI*2,
+        w:20+Math.random()*15,
+        h:30+Math.random()*10
+      });
+      // Tumble particles
+      for(let j=0;j<6;j++){
+        addParticle(p.x,p.y,40+Math.random()*60,-20-Math.random()*40,'#546E7A',0.8,3,'square');
+      }
+      addFloatingText(p.x,p.y-20,'E-WASTE!','#C6FF00',14);
+      cityPhones.splice(i,1);
+      const envCost=Math.max(0.1,0.5-upgrades[4]*0.05);
+      envDamage=Math.min(100,envDamage+envCost);
+    }
+  }
+  // Consumer phone timer
+  for(const c of consumers){
+    if(c.hasPhone){
+      c.timer+=dt;
+      if(c.timer>5){c.hasPhone=false;c.timer=0;}
+    }
+  }
+}
+
+// ==================== DRAW FUNCTIONS ====================
+function drawTitleScreen(){
+  // Background gradient
+  const grd=ctx.createLinearGradient(0,0,W,H);
+  grd.addColorStop(0,'#1a1a2e');grd.addColorStop(1,'#16213e');
+  ctx.fillStyle=grd;ctx.fillRect(0,0,W,H);
+
+  // Subtle grid pattern
+  ctx.strokeStyle='rgba(255,255,255,0.02)';ctx.lineWidth=1;
+  for(let gx=0;gx<W;gx+=40){ctx.beginPath();ctx.moveTo(gx,0);ctx.lineTo(gx,H);ctx.stroke();}
+  for(let gy=0;gy<H;gy+=40){ctx.beginPath();ctx.moveTo(0,gy);ctx.lineTo(W,gy);ctx.stroke();}
+
+  // Title particles
+  for(const tp of titleParticles){
+    const a=Math.max(0,tp.life/tp.maxLife);
+    ctx.globalAlpha=a*0.6;ctx.fillStyle=tp.color;
+    ctx.beginPath();ctx.arc(tp.x,tp.y,tp.size,0,Math.PI*2);ctx.fill();
+  }
+  ctx.globalAlpha=1;
+
+  // Left side: shiny phone with pulsing glow
+  ctx.save();
+  ctx.translate(300,380);
+  const pulse=Math.sin(animFrame*2)*0.3+0.7;
+  // Glow aura
+  ctx.shadowColor='#42A5F5';ctx.shadowBlur=40*pulse;
+  drawRoundRect(-45,-70,90,140,8);ctx.strokeStyle='rgba(66,165,245,'+pulse*0.5+')';ctx.lineWidth=3;ctx.stroke();
+  ctx.shadowBlur=0;
+  drawPhone(-40,-65,80,130,[true,true,true,true]);
+  // Label
+  ctx.fillStyle='#42A5F5';ctx.font='bold 16px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('NEW',0,90);
+  ctx.fillStyle='#78909C';ctx.font='13px "Segoe UI",Arial';
+  ctx.fillText('$999',0,108);
+  ctx.restore();
+
+  // Center divider - the arrow/lifecycle
+  ctx.save();
+  const arrowY=380;
+  ctx.strokeStyle='rgba(255,255,255,0.15)';ctx.lineWidth=2;ctx.setLineDash([6,4]);
+  ctx.beginPath();ctx.moveTo(400,arrowY);ctx.lineTo(880,arrowY);ctx.stroke();
+  ctx.setLineDash([]);
+  // Arrow head
+  const arrowProgress=(animFrame*0.3)%1;
+  const arrowX=400+arrowProgress*480;
+  ctx.fillStyle='#C6FF00';
+  ctx.beginPath();ctx.moveTo(arrowX+8,arrowY);ctx.lineTo(arrowX-4,arrowY-5);ctx.lineTo(arrowX-4,arrowY+5);ctx.closePath();ctx.fill();
+  // Labels along arrow
+  const labels=['Mine','Build','Sell','Trash','Recycle'];
+  const labelCols=['#795548','#607D8B','#4CAF50','#EF5350','#009688'];
+  for(let i=0;i<5;i++){
+    const lx=430+i*100;
+    ctx.fillStyle=labelCols[i];ctx.font='bold 11px "Segoe UI",Arial';ctx.textAlign='center';
+    ctx.fillText(labels[i],lx,arrowY-10);
+    ctx.fillStyle=labelCols[i];
+    ctx.beginPath();ctx.arc(lx,arrowY,3,0,Math.PI*2);ctx.fill();
+  }
+  ctx.restore();
+
+  // Right side: e-waste pile with toxic glow
+  ctx.save();
+  ctx.translate(930,400);
+  // Toxic glow underneath
+  const toxPulse=Math.sin(animFrame*1.5)*0.2+0.4;
+  ctx.fillStyle='rgba(198,255,0,'+toxPulse*0.15+')';
+  ctx.beginPath();ctx.ellipse(0,30,110,50,0,0,Math.PI*2);ctx.fill();
+  for(let i=0;i<25;i++){
+    const px=(Math.sin(i*7.3)*80);
+    const py=(-i*6+Math.cos(i*3.1)*15);
+    ctx.save();
+    ctx.translate(px,py);
+    ctx.rotate(i*0.7+Math.sin(animFrame+i)*0.03);
+    drawPhone(-10,-15,20,30,[i%4===0,i%3===0,i%2===0,false]);
+    ctx.restore();
+  }
+  ctx.fillStyle='#EF5350';ctx.font='bold 16px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('WASTE',0,90);
+  ctx.fillStyle='#78909C';ctx.font='13px "Segoe UI",Arial';
+  ctx.fillText('$0',0,108);
+  ctx.restore();
+
+  // Title with glow
+  ctx.save();
+  ctx.shadowColor='rgba(198,255,0,0.3)';ctx.shadowBlur=20;
+  ctx.fillStyle='#fff';
+  ctx.font='bold 84px "Segoe UI",Arial';
+  ctx.textAlign='center';
+  ctx.fillText('E-WASTE',W/2,180);
+  ctx.shadowBlur=0;
+  ctx.restore();
+
+  // Subtitle
+  ctx.fillStyle='#90A4AE';
+  ctx.font='22px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('The Supply Chain You Don\'t See',W/2,225);
+
+  // Dividing line with gradient
+  const lgrd=ctx.createLinearGradient(W/2-200,0,W/2+200,0);
+  lgrd.addColorStop(0,'#4CAF50');lgrd.addColorStop(0.5,'#C6FF00');lgrd.addColorStop(1,'#EF5350');
+  ctx.strokeStyle=lgrd;ctx.lineWidth=3;
+  ctx.beginPath();ctx.moveTo(W/2-200,248);ctx.lineTo(W/2+200,248);ctx.stroke();
+
+  // Fact ticker
+  const facts=[
+    'Over 50 million tons of e-waste are generated globally each year.',
+    'Only 20% of global e-waste is formally recycled.',
+    'A single smartphone contains over 30 different minerals.',
+    'Coltan mining has destroyed 80% of lowland gorilla habitat in the Congo.',
+    'E-waste contains toxic lead, mercury, and cadmium.',
+    'Recycling 1 million phones recovers 35,000 lbs of copper.',
+  ];
+  const factIdx=Math.floor(animFrame/5)%facts.length;
+  ctx.fillStyle='#546E7A';ctx.font='italic 14px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.globalAlpha=0.7+Math.sin(animFrame)*0.3;
+  ctx.fillText(facts[factIdx],W/2,280);
+  ctx.globalAlpha=1;
+
+  // NGSS badge
+  ctx.fillStyle='rgba(255,255,255,0.08)';
+  drawRoundRect(W/2-160,530,320,35,17);ctx.fill();
+  ctx.fillStyle='#78909C';ctx.font='14px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('NGSS MS-ESS3-3 | MS-ESS3-4 | Grade 8',W/2,552);
+
+  // Buttons
+  drawBtn(W/2-120,450,240,55,'PLAY','#4CAF50','#fff','play');
+  drawBtn(W/2-120,590,240,45,'How to Play','#37474F','#B0BEC5','howto');
+}
+
+function drawHowToScreen(){
+  ctx.fillStyle='#1a1a2e';ctx.fillRect(0,0,W,H);
+
+  ctx.fillStyle='#fff';ctx.font='bold 36px "Segoe UI",Arial';
+  ctx.textAlign='center';ctx.fillText('How E-Waste Works',W/2,55);
+
+  // Lifecycle diagram
+  const steps=[
+    {label:'MINE',desc:'Extract rare minerals',icon:'M',color:'#795548',x:160,y:180},
+    {label:'BUILD',desc:'Assemble smartphones',icon:'B',color:'#607D8B',x:420,y:180},
+    {label:'SELL',desc:'Consumers buy phones',icon:'S',color:'#FFE0B2',x:680,y:180},
+    {label:'WASTE',desc:'Phones become e-waste',icon:'W',color:'#C6FF00',x:940,y:180},
+    {label:'RECYCLE',desc:'Recover materials',icon:'R',color:'#009688',x:680,y:380},
+    {label:'REUSE',desc:'Minerals return to cycle',icon:'U',color:'#4CAF50',x:420,y:380}
+  ];
+
+  // Arrows
+  ctx.strokeStyle='rgba(255,255,255,0.3)';ctx.lineWidth=3;
+  ctx.setLineDash([8,4]);
+  const arrows=[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0]];
+  for(const[a,b]of arrows){
+    ctx.beginPath();ctx.moveTo(steps[a].x+50,steps[a].y+30);
+    ctx.lineTo(steps[b].x-10,steps[b].y+30);ctx.stroke();
+  }
+  ctx.setLineDash([]);
+
+  // Step boxes
+  for(const s of steps){
+    drawRoundRect(s.x-30,s.y-10,130,80,8);
+    ctx.fillStyle=s.color;ctx.globalAlpha=0.3;ctx.fill();ctx.globalAlpha=1;
+    ctx.strokeStyle=s.color;ctx.lineWidth=2;ctx.stroke();
+    ctx.fillStyle='#fff';ctx.font='bold 18px "Segoe UI",Arial';
+    ctx.textAlign='center';ctx.fillText(s.label,s.x+35,s.y+20);
+    ctx.fillStyle='#B0BEC5';ctx.font='13px "Segoe UI",Arial';
+    ctx.fillText(s.desc,s.x+35,s.y+45);
+  }
+
+  // Key info
+  const info=[
+    'Mine minerals (Lithium, Coltan, Cobalt, Silicon) to build phones',
+    'Each mining action damages the environment - trees die, water pollutes',
+    'Assemble phones on the conveyor belt by dragging minerals onto chassis',
+    'Phones sell automatically, then eventually become e-waste',
+    'Recycle e-waste to recover minerals and reduce environmental damage',
+    'Balance PROFIT and SUSTAINABILITY to earn Gold medals',
+    'Spend money on upgrades: cleaner mining, faster lines, better recycling'
+  ];
+  ctx.textAlign='left';
+  for(let i=0;i<info.length;i++){
+    ctx.fillStyle='#78909C';ctx.font='14px "Segoe UI",Arial';
+    ctx.fillText('  '+info[i],140,510+i*25);
+    ctx.fillStyle='#4CAF50';ctx.fillText('\u2022',125,510+i*25);
+  }
+
+  drawBtn(W/2-100,670,200,40,'Back','#37474F','#fff','back');
+}
+
+function drawLevelSelect(){
+  ctx.fillStyle='#1a1a2e';ctx.fillRect(0,0,W,H);
+
+  ctx.fillStyle='#fff';ctx.font='bold 36px "Segoe UI",Arial';
+  ctx.textAlign='center';ctx.fillText('Select Level',W/2,55);
+
+  for(let i=0;i<5;i++){
+    const lvl=LEVEL_DEFS[i];
+    const x=80+i*230;const y=100;const w=210;const h=250;
+    const unlocked=i===0||(levelScores&&levelScores[i-1]>0);
+
+    drawRoundRect(x,y,w,h,10);
+    ctx.fillStyle=unlocked?'rgba(255,255,255,0.06)':'rgba(0,0,0,0.3)';ctx.fill();
+    ctx.strokeStyle=unlocked?'rgba(255,255,255,0.15)':'rgba(255,255,255,0.05)';
+    ctx.lineWidth=1.5;ctx.stroke();
+
+    // Level number
+    ctx.fillStyle=unlocked?'#4CAF50':'#555';ctx.font='bold 42px "Segoe UI",Arial';
+    ctx.textAlign='center';ctx.fillText(''+(i+1),x+w/2,y+55);
+
+    // Name
+    ctx.fillStyle=unlocked?'#fff':'#666';ctx.font='bold 20px "Segoe UI",Arial';
+    ctx.fillText(lvl.name,x+w/2,y+90);
+
+    // Description
+    ctx.fillStyle=unlocked?'#90A4AE':'#555';ctx.font='13px "Segoe UI",Arial';
+    wrapText(lvl.desc,x+w/2,y+115,w-20,16);
+
+    // Goals
+    ctx.font='12px "Segoe UI",Arial';
+    ctx.fillStyle='#4CAF50';ctx.fillText('$'+lvl.profitGoal+' profit',x+w/2,y+170);
+    ctx.fillStyle='#009688';ctx.fillText(lvl.sustainGoal+'% sustain',x+w/2,y+188);
+    ctx.fillStyle='#FFB300';ctx.fillText(lvl.phonesNeeded+' phones',x+w/2,y+206);
+
+    // Medal
+    if(levelScores&&levelScores[i]>0){
+      const medals=['','#CD7F32','#C0C0C0','#FFD700'];
+      const mNames=['','Bronze','Silver','Gold'];
+      ctx.fillStyle=medals[levelScores[i]];
+      ctx.font='bold 28px Arial';
+      ctx.fillText('\u2605',x+w/2,y+240);
+      ctx.font='11px "Segoe UI",Arial';
+      ctx.fillText(mNames[levelScores[i]],x+w/2,y+260);
+    }
+
+    if(unlocked){
+      buttons.push({x,y,w,h,id:'level_'+i,enabled:true});
+    }
+  }
+
+  // Upgrades section
+  ctx.fillStyle='#fff';ctx.font='bold 22px "Segoe UI",Arial';
+  ctx.textAlign='center';ctx.fillText('Upgrades',W/2,390);
+
+  for(let i=0;i<5;i++){
+    const u=UPGRADE_DEFS[i];
+    const x=60+i*240;const y=410;const w=220;const h=110;
+    const cost=u.baseCost*(upgrades[i]+1);
+    const maxed=upgrades[i]>=u.maxLvl;
+    const canBuy=!maxed&&money>=cost;
+
+    drawRoundRect(x,y,w,h,8);
+    ctx.fillStyle='rgba(255,255,255,0.04)';ctx.fill();
+    ctx.strokeStyle='rgba(255,255,255,0.1)';ctx.lineWidth=1;ctx.stroke();
+
+    ctx.fillStyle='#fff';ctx.font='bold 15px "Segoe UI",Arial';
+    ctx.textAlign='center';ctx.fillText(u.name,x+w/2,y+25);
+
+    ctx.fillStyle='#78909C';ctx.font='12px "Segoe UI",Arial';
+    ctx.fillText(u.desc,x+w/2,y+45);
+
+    // Level dots
+    for(let j=0;j<u.maxLvl;j++){
+      ctx.fillStyle=j<upgrades[i]?'#4CAF50':'#333';
+      ctx.beginPath();ctx.arc(x+w/2-20+j*10,y+65,4,0,Math.PI*2);ctx.fill();
+    }
+
+    if(!maxed){
+      drawSmallBtn(x+w/2-45,y+78,90,25,'$'+cost,canBuy?'#4CAF50':'#555','upgrade_'+i,canBuy);
+    }else{
+      ctx.fillStyle='#4CAF50';ctx.font='bold 13px "Segoe UI",Arial';
+      ctx.fillText('MAXED',x+w/2,y+95);
+    }
+  }
+
+  // Money display
+  ctx.fillStyle='#4CAF50';ctx.font='bold 18px "Segoe UI",Arial';
+  ctx.textAlign='right';ctx.fillText('$'+money,W-40,385);
+  ctx.fillStyle='#78909C';ctx.font='14px "Segoe UI",Arial';
+  ctx.fillText('Available funds',W-40,405);
+
+  drawBtn(W/2-80,560,160,40,'Back','#37474F','#fff','back');
+}
+
+function drawPlaying(){
+  if(currentPhase===0)drawMiningPhase();
+  else if(currentPhase===1)drawManufacturingPhase();
+  else if(currentPhase===2)drawLifecyclePhase();
+  drawHUD();
+}
+
+function drawMiningPhase(){
+  // Background - earth
+  ctx.fillStyle='#3E2723';ctx.fillRect(0,60,W,H-60);
+  // Grass
+  const grassArea={x:80,y:100,w:800,h:500};
+  ctx.fillStyle='#2E7D32';
+  ctx.fillRect(grassArea.x,grassArea.y,grassArea.w,grassArea.h);
+  // Grass texture
+  ctx.fillStyle='#388E3C';
+  for(let i=0;i<200;i++){
+    const gx=grassArea.x+Math.random()*grassArea.w;
+    const gy=grassArea.y+Math.random()*grassArea.h;
+    ctx.fillRect(gx,gy,2,4);
+  }
+
+  // Water
+  for(const w of mineWater){
+    ctx.fillStyle=`rgba(${Math.floor(30+w.pollution*100)},${Math.floor(136-w.pollution*80)},${Math.floor(229-w.pollution*150)},0.8)`;
+    ctx.beginPath();ctx.ellipse(w.x+w.w/2,w.y+w.h/2,w.w/2,w.h/2,0,0,Math.PI*2);ctx.fill();
+    if(w.pollution>0.3){
+      ctx.fillStyle='rgba(139,69,19,'+w.pollution*0.5+')';
+      ctx.beginPath();ctx.ellipse(w.x+w.w/2,w.y+w.h/2,w.w/2*0.7,w.h/2*0.7,0,0,Math.PI*2);ctx.fill();
+    }
+  }
+
+  // Damage circles
+  for(const dc of mineDamageCircles){
+    ctx.strokeStyle=`rgba(239,83,80,${dc.alpha})`;
+    ctx.lineWidth=2;
+    ctx.beginPath();ctx.arc(dc.x,dc.y,dc.radius,0,Math.PI*2);ctx.stroke();
+    ctx.fillStyle=`rgba(239,83,80,${dc.alpha*0.1})`;ctx.fill();
+  }
+
+  // Trees
+  for(const t of mineTrees){
+    if(t.alpha<=0)continue;
+    ctx.globalAlpha=t.alpha;
+    // Trunk
+    ctx.fillStyle='#5D4037';
+    ctx.fillRect(t.x-2,t.y,4,t.size*0.6);
+    // Canopy
+    ctx.fillStyle=t.alive?'#4CAF50':'#795548';
+    ctx.beginPath();ctx.arc(t.x,t.y-t.size*0.1,t.size*0.5,0,Math.PI*2);ctx.fill();
+    ctx.globalAlpha=1;
+  }
+
+  // Deposits
+  for(const d of mineDeposits){
+    if(d.mined)continue;
+    const m=MINERAL_TYPES[d.type];
+    const shake=d.hitAnim>0?Math.sin(d.hitAnim*20)*3:0;
+    ctx.save();
+    ctx.translate(d.x+shake,d.y);
+    // Rock shape
+    ctx.fillStyle='#5D4037';
+    ctx.beginPath();
+    ctx.moveTo(-18,-12);ctx.lineTo(-10,-22);ctx.lineTo(8,-20);ctx.lineTo(18,-8);
+    ctx.lineTo(15,10);ctx.lineTo(-5,14);ctx.lineTo(-18,6);ctx.closePath();
+    ctx.fill();
+    // Mineral veins
+    ctx.fillStyle=m.color;
+    ctx.beginPath();ctx.arc(-3,-5,8,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.arc(6,2,5,0,Math.PI*2);ctx.fill();
+    // Yield indicator
+    ctx.fillStyle='#fff';ctx.font='bold 11px Arial';ctx.textAlign='center';
+    ctx.fillText(d.yield+'x',0,26);
+    ctx.fillStyle=m.color;ctx.font='bold 9px Arial';
+    ctx.fillText(m.symbol,0,-5);
+    ctx.restore();
+    // Clickable area
+    buttons.push({x:d.x-22,y:d.y-25,w:44,h:50,id:'deposit_'+mineDeposits.indexOf(d),enabled:true});
+  }
+
+  // Pickaxe cursor near deposits
+  let nearDeposit=false;
+  for(const d of mineDeposits){
+    if(!d.mined&&Math.hypot(mouseX-d.x,mouseY-d.y)<35){nearDeposit=true;break;}
+  }
+  if(nearDeposit&&mouseX<880){
+    ctx.save();
+    ctx.translate(mouseX+12,mouseY-12);
+    ctx.rotate(-0.5+Math.sin(animFrame*8)*0.2);
+    // Pickaxe handle
+    ctx.strokeStyle='#8D6E63';ctx.lineWidth=3;
+    ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(-14,14);ctx.stroke();
+    // Pickaxe head
+    ctx.fillStyle='#90A4AE';
+    ctx.beginPath();ctx.moveTo(-14,14);ctx.lineTo(-20,8);ctx.lineTo(-8,6);ctx.closePath();ctx.fill();
+    ctx.restore();
+  }
+
+  // Right panel - inventory & controls
+  drawMinePanel();
+  drawParticles();
+}
+
+function drawMinePanel(){
+  const px=900,py=100,pw=360,ph=500;
+  drawRoundRect(px,py,pw,ph,10);
+  ctx.fillStyle='rgba(38,50,56,0.95)';ctx.fill();
+  ctx.strokeStyle='rgba(255,255,255,0.1)';ctx.lineWidth=1;ctx.stroke();
+
+  ctx.fillStyle='#fff';ctx.font='bold 20px "Segoe UI",Arial';
+  ctx.textAlign='center';ctx.fillText('MINING OPERATION',px+pw/2,py+30);
+
+  // Mineral inventory
+  ctx.font='bold 16px "Segoe UI",Arial';ctx.textAlign='left';
+  ctx.fillText('Mineral Inventory:',px+20,py+65);
+  for(let i=0;i<4;i++){
+    const m=MINERAL_TYPES[i];
+    const iy=py+85+i*45;
+    ctx.fillStyle=m.color;
+    ctx.beginPath();ctx.arc(px+35,iy+5,12,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#263238';ctx.font='bold 10px Arial';ctx.textAlign='center';
+    ctx.fillText(m.symbol,px+35,iy+9);
+    ctx.textAlign='left';ctx.fillStyle='#fff';ctx.font='15px "Segoe UI",Arial';
+    ctx.fillText(m.name+': '+minerals[i],px+55,iy+10);
+    ctx.fillStyle='#78909C';ctx.font='12px "Segoe UI",Arial';
+    ctx.fillText('('+m.component+')',px+55,iy+26);
+  }
+
+  // Environmental damage
+  ctx.fillStyle='#EF5350';ctx.font='bold 14px "Segoe UI",Arial';ctx.textAlign='left';
+  ctx.fillText('Environmental Damage',px+20,py+290);
+  drawBar(px+20,py+300,pw-40,16,envDamage,100,'#EF5350','rgba(0,0,0,0.3)');
+  ctx.fillStyle='#fff';ctx.font='11px Arial';ctx.textAlign='center';
+  ctx.fillText(Math.floor(envDamage)+'%',px+pw/2,py+312);
+
+  // Green mining bonus
+  if(upgrades[0]>0){
+    ctx.fillStyle='#4CAF50';ctx.font='12px "Segoe UI",Arial';ctx.textAlign='left';
+    ctx.fillText('Green Mining Lvl '+upgrades[0]+': -'+upgrades[0]*15+'% damage',px+20,py+335);
+  }
+
+  // Phase switch button
+  drawBtn(px+30,py+360,pw-60,45,'Go to Assembly \u25B6','#607D8B','#fff','phase_1');
+
+  // Instructions
+  ctx.fillStyle='#546E7A';ctx.font='13px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('Click mineral deposits to extract',px+pw/2,py+440);
+  ctx.fillText('Watch the environmental damage!',px+pw/2,py+460);
+}
+
+function drawManufacturingPhase(){
+  // Factory background
+  ctx.fillStyle='#37474F';ctx.fillRect(0,60,W,H-60);
+
+  // Wall panels
+  ctx.fillStyle='#455A64';
+  for(let i=0;i<8;i++){
+    ctx.fillRect(i*170,60,165,200);
+    ctx.strokeStyle='#37474F';ctx.lineWidth=2;ctx.strokeRect(i*170,60,165,200);
+  }
+
+  // Conveyor belt
+  const belty=300,belth=180;
+  ctx.fillStyle='#263238';ctx.fillRect(0,belty,W,belth);
+  // Belt lines
+  ctx.strokeStyle='#1a1a1a';ctx.lineWidth=1;
+  const beltOffset=(animFrame*100*conveyorSpeed)%40;
+  for(let x=-40+beltOffset;x<W;x+=40){
+    ctx.beginPath();ctx.moveTo(x,belty);ctx.lineTo(x-20,belty+belth);ctx.stroke();
+  }
+  // Belt edges
+  ctx.fillStyle='#546E7A';ctx.fillRect(0,belty-5,W,8);ctx.fillRect(0,belty+belth-3,W,8);
+
+  // Assembly zone highlight
+  ctx.fillStyle='rgba(76,175,80,0.1)';
+  ctx.fillRect(350,belty,400,belth);
+  ctx.strokeStyle='#4CAF50';ctx.lineWidth=2;ctx.setLineDash([10,5]);
+  ctx.strokeRect(350,belty,400,belth);ctx.setLineDash([]);
+  ctx.fillStyle='#4CAF50';ctx.font='14px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('ASSEMBLY ZONE',550,belty-12);
+
+  // Conveyor phones
+  for(const p of conveyorPhones){
+    drawPhone(p.x,p.y,p.w,p.h,p.components);
+    // Component slots on phone
+    for(let i=0;i<4;i++){
+      if(!p.components[i]){
+        const sx=p.x+5+i*11;
+        const sy=p.y+p.h-12;
+        ctx.strokeStyle='rgba(255,255,255,0.3)';ctx.lineWidth=1;
+        ctx.strokeRect(sx,sy,9,6);
+      }
+    }
+  }
+
+  // Mineral bins (drag sources)
+  ctx.fillStyle='#fff';ctx.font='bold 16px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('Drag minerals onto phones:',640,530);
+
+  for(let i=0;i<4;i++){
+    const m=MINERAL_TYPES[i];
+    const bx=400+i*110;const by=545;const bw=90;const bh=80;
+    drawRoundRect(bx,by,bw,bh,8);
+    ctx.fillStyle='rgba(0,0,0,0.4)';ctx.fill();
+    ctx.strokeStyle=minerals[i]>0?m.color:'#333';ctx.lineWidth=2;ctx.stroke();
+
+    ctx.fillStyle=minerals[i]>0?m.color:'#555';
+    ctx.beginPath();ctx.arc(bx+bw/2,by+30,18,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#263238';ctx.font='bold 12px Arial';
+    ctx.fillText(m.symbol,bx+bw/2,by+34);
+
+    ctx.fillStyle=minerals[i]>0?'#fff':'#555';ctx.font='bold 14px "Segoe UI",Arial';
+    ctx.fillText('x'+minerals[i],bx+bw/2,by+65);
+
+    if(minerals[i]>0){
+      buttons.push({x:bx,y:by,w:bw,h:bh,id:'mineral_'+i,enabled:true});
+    }
+  }
+
+  // Worker area
+  ctx.save();
+  drawRoundRect(30,510,250,120,10);
+  ctx.fillStyle='rgba(38,50,56,0.9)';ctx.fill();
+  ctx.strokeStyle='rgba(255,255,255,0.1)';ctx.lineWidth=1;ctx.stroke();
+
+  // Worker figure
+  ctx.fillStyle=workerStamina>20?'#78909C':'#EF5350';
+  ctx.beginPath();ctx.arc(60,545,12,0,Math.PI*2);ctx.fill();
+  ctx.fillRect(54,557,12,20);
+  ctx.fillRect(48,577,8,12);ctx.fillRect(60,577,8,12);
+  // Hard hat
+  ctx.fillStyle='#FFB300';
+  ctx.fillRect(48,530,24,5);
+
+  ctx.fillStyle='#fff';ctx.font='bold 14px "Segoe UI",Arial';ctx.textAlign='left';
+  ctx.fillText('Worker Stamina',85,548);
+  drawBar(85,555,180,14,workerStamina,100,workerStamina>20?'#4CAF50':'#EF5350');
+  ctx.fillStyle='#fff';ctx.font='10px Arial';ctx.textAlign='center';
+  ctx.fillText(Math.floor(workerStamina)+'%',175,567);
+  if(workerStamina<20){
+    ctx.fillStyle='#EF5350';ctx.font='bold 12px "Segoe UI",Arial';ctx.textAlign='left';
+    ctx.fillText('Workers tired! Line slowed!',85,590);
+  }else{
+    ctx.fillStyle='#78909C';ctx.font='12px "Segoe UI",Arial';ctx.textAlign='left';
+    ctx.fillText('Rests when you stop dragging',85,590);
+  }
+  // Phones built counter
+  ctx.fillStyle='#FFB300';ctx.font='bold 14px "Segoe UI",Arial';
+  ctx.fillText('Built this session: '+phonesBuilt,85,615);
+  ctx.restore();
+
+  // Drag indicator
+  if(dragMineral>=0){
+    const m=MINERAL_TYPES[dragMineral];
+    ctx.fillStyle=m.color;
+    ctx.beginPath();ctx.arc(dragX,dragY,15,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#263238';ctx.font='bold 10px Arial';ctx.textAlign='center';
+    ctx.fillText(m.symbol,dragX,dragY+4);
+    ctx.globalAlpha=0.3;
+    ctx.strokeStyle='#fff';ctx.lineWidth=2;
+    ctx.beginPath();ctx.arc(dragX,dragY,20,0,Math.PI*2);ctx.stroke();
+    ctx.globalAlpha=1;
+  }
+
+  // Phase switch buttons
+  drawBtn(30,640,160,40,'\u25C0 Mining','#795548','#fff','phase_0');
+  drawBtn(W-190,640,160,40,'Lifecycle \u25B6','#FFE0B2','#37474F','phase_2');
+
+  drawParticles();
+}
+
+function drawLifecyclePhase(){
+  // Sky
+  ctx.fillStyle='#81D4FA';ctx.fillRect(0,60,W,350);
+  // Buildings
+  const buildings=[
+    {x:50,w:120,h:200,color:'#FFE0B2'},
+    {x:190,w:80,h:260,color:'#FFCC80'},
+    {x:290,w:100,h:180,color:'#FFE0B2'},
+    {x:410,w:90,h:230,color:'#FFCC80'},
+    {x:520,w:110,h:190,color:'#FFE0B2'},
+    {x:650,w:85,h:250,color:'#FFCC80'},
+    {x:755,w:95,h:170,color:'#FFE0B2'},
+  ];
+  for(const b of buildings){
+    ctx.fillStyle=b.color;
+    ctx.fillRect(b.x,410-b.h,b.w,b.h);
+    ctx.strokeStyle='rgba(0,0,0,0.1)';ctx.lineWidth=1;
+    ctx.strokeRect(b.x,410-b.h,b.w,b.h);
+    // Windows
+    ctx.fillStyle='rgba(33,150,243,0.3)';
+    for(let wy=410-b.h+20;wy<390;wy+=30){
+      for(let wx=b.x+10;wx<b.x+b.w-15;wx+=25){
+        ctx.fillRect(wx,wy,15,12);
+      }
+    }
+  }
+
+  // Ground
+  ctx.fillStyle='#795548';ctx.fillRect(0,410,W,H-410);
+  ctx.fillStyle='#6D4C41';ctx.fillRect(0,410,W,10);
+
+  // Consumers
+  for(const c of consumers){
+    ctx.fillStyle=c.hasPhone?'#4CAF50':'#78909C';
+    // Simple person shape
+    ctx.beginPath();ctx.arc(c.x,c.y-25,10,0,Math.PI*2);ctx.fill();
+    ctx.fillRect(c.x-6,c.y-15,12,25);
+    ctx.fillRect(c.x-10,c.y+10,8,15);
+    ctx.fillRect(c.x+2,c.y+10,8,15);
+    if(c.hasPhone){
+      ctx.fillStyle='#263238';ctx.fillRect(c.x+10,c.y-20,6,10);
+    }
+  }
+
+  // Active phones in city
+  for(const p of cityPhones){
+    if(p.sold)continue;
+    const alpha=p.life/p.maxLife;
+    ctx.globalAlpha=Math.max(0.3,alpha);
+    drawPhone(p.x-10,p.y-15,20,30,[true,true,true,true]);
+    // Life bar
+    drawBar(p.x-12,p.y+18,24,4,p.life,p.maxLife,alpha>0.3?'#4CAF50':'#EF5350');
+    ctx.globalAlpha=1;
+  }
+
+  // E-waste pile area
+  ctx.fillStyle='rgba(198,255,0,0.05)';
+  ctx.fillRect(950,150,W-950,H-210);
+  ctx.strokeStyle='#C6FF00';ctx.lineWidth=1;ctx.setLineDash([5,5]);
+  ctx.strokeRect(950,150,W-950,H-210);ctx.setLineDash([]);
+  ctx.fillStyle='#C6FF00';ctx.font='bold 14px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('E-WASTE ZONE',1090,145);
+  ctx.fillText(eWastePile+' items',1090,170);
+
+  // E-waste pile items
+  for(const ew of eWastePileItems){
+    ctx.save();
+    ctx.translate(ew.x,ew.y);
+    ctx.rotate(ew.rot);
+    ctx.fillStyle='#546E7A';
+    ctx.fillRect(-ew.w/2,-ew.h/2,ew.w,ew.h);
+    ctx.strokeStyle='#37474F';ctx.lineWidth=1;
+    ctx.strokeRect(-ew.w/2,-ew.h/2,ew.w,ew.h);
+    // Cracked screen
+    ctx.strokeStyle='rgba(255,255,255,0.2)';
+    ctx.beginPath();ctx.moveTo(-ew.w/4,-ew.h/4);ctx.lineTo(ew.w/4,ew.h/4);ctx.stroke();
+    ctx.restore();
+  }
+
+  // Recycling station - always visible
+  const rs=recycleStation;
+  const canRecycle=eWastePile>0;
+  drawRoundRect(rs.x,rs.y,rs.w,rs.h,10);
+  ctx.fillStyle=canRecycle?'#00796B':'#37474F';ctx.fill();
+  ctx.strokeStyle=canRecycle?'#009688':'#546E7A';ctx.lineWidth=3;ctx.stroke();
+
+  // Animated recycle symbol
+  ctx.save();
+  ctx.translate(rs.x+rs.w/2,rs.y+40);
+  if(canRecycle)ctx.rotate(Math.sin(animFrame*2)*0.1);
+  ctx.fillStyle=canRecycle?'#fff':'#546E7A';ctx.font='bold 32px Arial';ctx.textAlign='center';
+  ctx.fillText('\u267B',0,5);
+  ctx.restore();
+  ctx.fillStyle=canRecycle?'#fff':'#546E7A';
+  ctx.font='bold 14px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText(canRecycle?'CLICK TO RECYCLE':'NO WASTE',rs.x+rs.w/2,rs.y+75);
+
+  const effPct=Math.floor(30+upgrades[2]*12);
+  ctx.font='11px "Segoe UI",Arial';ctx.fillStyle=canRecycle?'#80CBC4':'#455A64';
+  ctx.fillText(effPct+'% recovery',rs.x+rs.w/2,rs.y+92);
+
+  if(canRecycle){
+    // Pulsing outline to draw attention
+    ctx.globalAlpha=0.3+Math.sin(animFrame*3)*0.3;
+    ctx.strokeStyle='#4CAF50';ctx.lineWidth=2;
+    drawRoundRect(rs.x-3,rs.y-3,rs.w+6,rs.h+6,12);ctx.stroke();
+    ctx.globalAlpha=1;
+    buttons.push({x:rs.x,y:rs.y,w:rs.w,h:rs.h,id:'recycle',enabled:true});
+  }
+
+  // Lifecycle info panel
+  drawRoundRect(860,430,180,110,8);
+  ctx.fillStyle='rgba(38,50,56,0.9)';ctx.fill();
+  ctx.fillStyle='#fff';ctx.font='bold 13px "Segoe UI",Arial';ctx.textAlign='left';
+  ctx.fillText('Lifecycle Stats:',875,452);
+  ctx.fillStyle='#4CAF50';ctx.font='12px "Segoe UI",Arial';
+  ctx.fillText('Active phones: '+cityPhones.length,875,472);
+  ctx.fillStyle='#FFB300';
+  ctx.fillText('Sold: '+consumers.filter(c=>c.hasPhone).length+'/'+consumers.length,875,490);
+  ctx.fillStyle='#009688';
+  ctx.fillText('Recycled total: '+recycledCount,875,508);
+  ctx.fillStyle='#C6FF00';
+  ctx.fillText('E-waste pile: '+eWastePile+'/50',875,526);
+
+  // Phase switch buttons
+  drawBtn(30,640,160,40,'\u25C0 Mining','#795548','#fff','phase_0');
+  drawBtn(210,640,180,40,'\u25C0 Assembly','#607D8B','#fff','phase_1');
+
+  drawParticles();
+}
+
+function drawHUD(){
+  // Top bar background
+  ctx.fillStyle='rgba(26,26,46,0.92)';ctx.fillRect(0,0,W,58);
+  ctx.fillStyle='rgba(255,255,255,0.05)';ctx.fillRect(0,56,W,2);
+
+  // Money (rolling counter)
+  const dMoney=Math.floor(displayMoney);
+  ctx.fillStyle='#4CAF50';ctx.font='bold 22px "Segoe UI",Arial';ctx.textAlign='left';
+  ctx.fillText('$'+dMoney,20,38);
+  ctx.fillStyle='#78909C';ctx.font='11px "Segoe UI",Arial';
+  ctx.fillText('PROFIT',20,16);
+  // Flash green when increasing
+  if(displayMoney<money){
+    ctx.globalAlpha=0.3+Math.sin(animFrame*10)*0.2;
+    ctx.fillStyle='#4CAF50';ctx.font='bold 12px "Segoe UI",Arial';
+    ctx.fillText('+$'+(money-dMoney),90,38);
+    ctx.globalAlpha=1;
+  }
+
+  // Sustainability with color coding
+  ctx.textAlign='right';
+  const susColor=sustainScore>60?'#009688':sustainScore>30?'#FFB300':'#EF5350';
+  ctx.fillStyle=susColor;ctx.font='bold 22px "Segoe UI",Arial';
+  ctx.fillText(Math.floor(sustainScore)+'%',W-20,38);
+  ctx.fillStyle='#78909C';ctx.font='11px "Segoe UI",Arial';
+  ctx.fillText('SUSTAINABILITY',W-20,16);
+
+  // Environment bar (center) with pulse when critical
+  ctx.fillStyle='#78909C';ctx.font='11px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('ENVIRONMENTAL DAMAGE',W/2,14);
+  const envColor=envDamage<40?'#4CAF50':envDamage<70?'#FFB300':'#EF5350';
+  drawBar(W/2-150,20,300,14,envDamage,100,envColor);
+  if(envDamage>75){
+    ctx.globalAlpha=0.3+Math.sin(animFrame*6)*0.3;
+    ctx.strokeStyle='#EF5350';ctx.lineWidth=2;
+    drawRoundRect(W/2-152,18,304,18,9);ctx.stroke();
+    ctx.globalAlpha=1;
+  }
+  ctx.fillStyle='#fff';ctx.font='bold 10px Arial';ctx.textAlign='center';
+  ctx.fillText(Math.floor(envDamage)+'%',W/2,31);
+
+  // Phase indicator
+  const phases=['MINING','ASSEMBLY','LIFECYCLE'];
+  const phaseColors=['#795548','#607D8B','#FFE0B2'];
+  for(let i=0;i<3;i++){
+    const px=W/2-130+i*95;
+    ctx.fillStyle=i===currentPhase?phaseColors[i]:'#333';
+    drawRoundRect(px,42,85,14,7);ctx.fill();
+    ctx.fillStyle=i===currentPhase?'#000':'#666';
+    ctx.font='bold 9px "Segoe UI",Arial';ctx.textAlign='center';
+    ctx.fillText(phases[i],px+42,52);
+  }
+
+  // Timer with pulse when low
+  const mins=Math.floor(Math.max(0,levelTimer)/60);
+  const secs=Math.floor(Math.max(0,levelTimer)%60);
+  if(levelTimer<20){
+    ctx.globalAlpha=0.5+Math.sin(animFrame*8)*0.5;
+    ctx.fillStyle='#EF5350';
+  }else{
+    ctx.fillStyle=levelTimer<30?'#EF5350':'#fff';
+  }
+  ctx.font='bold 18px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText(mins+':'+(secs<10?'0':'')+secs,W/2,38);
+  ctx.globalAlpha=1;
+
+  // Phones built
+  const lvl=LEVEL_DEFS[currentLevel];
+  ctx.fillStyle='#FFB300';ctx.font='bold 14px "Segoe UI",Arial';ctx.textAlign='left';
+  ctx.fillText('Phones: '+phonesTotal+'/'+lvl.phonesNeeded,200,38);
+
+  // Mineral mini-bar
+  ctx.textAlign='left';
+  for(let i=0;i<4;i++){
+    const m=MINERAL_TYPES[i];
+    ctx.fillStyle=m.color;
+    ctx.beginPath();ctx.arc(200+i*30,50,5,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#fff';ctx.font='9px Arial';ctx.textAlign='center';
+    ctx.fillText(minerals[i],200+i*30,53);
+  }
+
+  // E-waste counter with warning
+  const ewColor=eWastePile>35?'#EF5350':eWastePile>20?'#C6FF00':'#78909C';
+  ctx.fillStyle=ewColor;
+  ctx.font='bold 14px "Segoe UI",Arial';ctx.textAlign='right';
+  ctx.fillText('E-Waste: '+eWastePile+'/50',W-140,50);
+  if(eWastePile>35){
+    ctx.globalAlpha=0.5+Math.sin(animFrame*6)*0.5;
+    ctx.fillStyle='#EF5350';ctx.font='bold 10px Arial';
+    ctx.fillText('WARNING',W-140,38);
+    ctx.globalAlpha=1;
+  }
+
+  // Resource flow bar (bottom of HUD)
+  drawResourceFlow();
+
+  // Flash message
+  if(flashTimer>0){
+    ctx.globalAlpha=Math.min(1,flashTimer);
+    ctx.fillStyle=flashColor;ctx.font='bold 24px "Segoe UI",Arial';ctx.textAlign='center';
+    ctx.fillText(flashMsg,W/2,H/2-50);
+    ctx.globalAlpha=1;
+  }
+
+  // Floating texts (above HUD)
+  drawFloatingTexts();
+}
+
+function drawResourceFlow(){
+  // Small resource flow diagram at bottom of screen
+  const fy=H-28;const fw=600;const fx=(W-fw)/2;
+  ctx.fillStyle='rgba(26,26,46,0.8)';
+  drawRoundRect(fx,fy-2,fw,26,10);ctx.fill();
+
+  const items=[
+    {label:'Minerals',val:minerals.reduce((a,b)=>a+b,0),color:'#FFB300',icon:'Li'},
+    {label:'Phones',val:phonesBuilt,color:'#42A5F5',icon:'Ph'},
+    {label:'Money',val:'$'+money,color:'#4CAF50',icon:'$'},
+    {label:'E-Waste',val:eWastePile,color:'#C6FF00',icon:'W'},
+    {label:'Recycled',val:recycledCount,color:'#009688',icon:'R'}
+  ];
+  const spacing=fw/items.length;
+  for(let i=0;i<items.length;i++){
+    const ix=fx+i*spacing+spacing/2;
+    ctx.fillStyle=items[i].color;ctx.font='bold 10px "Segoe UI",Arial';ctx.textAlign='center';
+    ctx.fillText(items[i].label+': '+items[i].val,ix,fy+13);
+    // Arrow between items
+    if(i<items.length-1){
+      ctx.fillStyle='rgba(255,255,255,0.3)';ctx.font='10px Arial';
+      ctx.fillText('\u2192',ix+spacing/2,fy+13);
+    }
+  }
+}
+
+function drawLevelComplete(){
+  ctx.fillStyle='rgba(26,26,46,0.95)';ctx.fillRect(0,0,W,H);
+
+  const lvl=LEVEL_DEFS[currentLevel];
+  const profitMet=money>=lvl.profitGoal;
+  const sustainMet=sustainScore>=lvl.sustainGoal;
+  let medal=0;
+  if(profitMet&&sustainMet)medal=3;
+  else if(profitMet||sustainMet)medal=2;
+  else medal=1;
+
+  ctx.fillStyle='#fff';ctx.font='bold 42px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('LEVEL COMPLETE!',W/2,120);
+
+  const medals=['','#CD7F32','#C0C0C0','#FFD700'];
+  const mNames=['','Bronze','Silver','Gold'];
+  ctx.fillStyle=medals[medal];ctx.font='bold 72px Arial';
+  ctx.fillText('\u2605',W/2,210);
+  ctx.font='bold 28px "Segoe UI",Arial';
+  ctx.fillText(mNames[medal]+' Medal',W/2,260);
+
+  // Stats
+  const stats=[
+    ['Phones Built',phonesTotal+'/'+lvl.phonesNeeded,phonesTotal>=lvl.phonesNeeded?'#4CAF50':'#EF5350'],
+    ['Profit','$'+money+' / $'+lvl.profitGoal,profitMet?'#4CAF50':'#EF5350'],
+    ['Sustainability',Math.floor(sustainScore)+'% / '+lvl.sustainGoal+'%',sustainMet?'#4CAF50':'#EF5350'],
+    ['Environmental Damage',Math.floor(envDamage)+'%',envDamage<50?'#4CAF50':'#EF5350'],
+    ['Phones Recycled',''+recycledCount,'#009688'],
+    ['E-Waste Remaining',''+eWastePile,eWastePile<10?'#4CAF50':'#EF5350']
+  ];
+
+  for(let i=0;i<stats.length;i++){
+    const sy=310+i*35;
+    ctx.fillStyle='#78909C';ctx.font='16px "Segoe UI",Arial';ctx.textAlign='right';
+    ctx.fillText(stats[i][0]+':',W/2+10,sy);
+    ctx.fillStyle=stats[i][2];ctx.font='bold 16px "Segoe UI",Arial';ctx.textAlign='left';
+    ctx.fillText(stats[i][1],W/2+20,sy);
+  }
+
+  // Educational takeaway
+  const takeaways=[
+    'You just experienced how mining, manufacturing, and waste are connected!',
+    'Growth creates more waste. Can technology keep up with demand?',
+    'Without recycling, e-waste overwhelms communities and ecosystems.',
+    'Innovation in recycling can create a circular economy for electronics.',
+    'True sustainability means balancing economic AND environmental goals.'
+  ];
+  ctx.fillStyle='#546E7A';ctx.font='italic 15px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText(takeaways[currentLevel],W/2,520);
+
+  drawBtn(W/2-130,555,120,50,'Levels','#37474F','#fff','to_levels');
+  if(currentLevel<4){
+    drawBtn(W/2+10,555,120,50,'Next \u25B6','#4CAF50','#fff','next_level');
+  }
+}
+
+function drawGameOver(){
+  ctx.fillStyle='rgba(26,26,46,0.95)';ctx.fillRect(0,0,W,H);
+
+  ctx.fillStyle='#EF5350';ctx.font='bold 48px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('MISSION FAILED',W/2,180);
+
+  let reason='Time ran out!';
+  if(envDamage>=100)reason='Environmental damage reached critical levels!';
+  if(eWastePile>=50)reason='E-waste overflow! Too much electronic waste!';
+
+  ctx.fillStyle='#90A4AE';ctx.font='20px "Segoe UI",Arial';
+  ctx.fillText(reason,W/2,240);
+
+  ctx.fillStyle='#fff';ctx.font='18px "Segoe UI",Arial';
+  ctx.fillText('Phones Built: '+phonesTotal+' | Profit: $'+money+' | Sustainability: '+Math.floor(sustainScore)+'%',W/2,300);
+
+  // Educational message with emphasis
+  ctx.fillStyle='#90A4AE';ctx.font='bold 16px "Segoe UI",Arial';
+  ctx.fillText('DID YOU KNOW?',W/2,355);
+
+  ctx.fillStyle='#78909C';ctx.font='15px "Segoe UI",Arial';
+  const msgs=[
+    'Every smartphone requires mining rare earth minerals from the ground.',
+    'Environmental damage from mining affects ecosystems for decades.',
+    'Recycling e-waste can recover up to 80% of valuable materials.',
+    'The average American generates 44 lbs of e-waste per year.',
+    'E-waste is the fastest growing waste stream in the world.',
+    'Mining cobalt in the Congo often involves child labor.'
+  ];
+  for(let i=0;i<msgs.length;i++){
+    ctx.fillStyle='#4CAF50';ctx.fillText('\u2022',W/2-280,385+i*25);
+    ctx.fillStyle='#78909C';ctx.textAlign='left';
+    ctx.fillText(msgs[i],W/2-265,385+i*25);
+    ctx.textAlign='center';
+  }
+
+  // Reflection question
+  ctx.fillStyle='#FFB300';ctx.font='italic 15px "Segoe UI",Arial';ctx.textAlign='center';
+  ctx.fillText('Think: What could change this cycle? What choices would you make differently?',W/2,555);
+
+  drawBtn(W/2-130,580,120,50,'Levels','#37474F','#fff','to_levels');
+  drawBtn(W/2+10,580,120,50,'Retry','#EF5350','#fff','retry');
+}
+
+function wrapText(text,x,y,maxW,lineH){
+  const words=text.split(' ');
+  let line='';
+  let ly=y;
+  for(const word of words){
+    const test=line+word+' ';
+    if(ctx.measureText(test).width>maxW&&line!==''){
+      ctx.fillText(line.trim(),x,ly);
+      line=word+' ';ly+=lineH;
+    }else{line=test;}
+  }
+  ctx.fillText(line.trim(),x,ly);
+}
+
+// ==================== INPUT HANDLING ====================
+function getCanvasPos(e){
+  const rect=canvas.getBoundingClientRect();
+  const x=(e.clientX-rect.left)*(W/rect.width);
+  const y=(e.clientY-rect.top)*(H/rect.height);
+  return {x,y};
+}
+
+canvas.addEventListener('mousemove',e=>{
+  const p=getCanvasPos(e);
+  mouseX=p.x;mouseY=p.y;
+  if(dragMineral>=0){dragX=p.x;dragY=p.y;}
+});
+
+canvas.addEventListener('mousedown',e=>{
+  ensureAudio();
+  mouseDown=true;
+  const p=getCanvasPos(e);
+  mouseX=p.x;mouseY=p.y;
+  handleClick(p.x,p.y);
+});
+
+canvas.addEventListener('mouseup',e=>{
+  mouseDown=false;
+  if(dragMineral>=0){
+    handleDrop(dragMineral,dragX,dragY);
+    dragMineral=-1;
+  }
+});
+
+canvas.addEventListener('touchstart',e=>{
+  e.preventDefault();ensureAudio();
+  mouseDown=true;
+  const t=e.touches[0];
+  const p=getCanvasPos(t);
+  mouseX=p.x;mouseY=p.y;
+  handleClick(p.x,p.y);
+},{passive:false});
+
+canvas.addEventListener('touchmove',e=>{
+  e.preventDefault();
+  const t=e.touches[0];
+  const p=getCanvasPos(t);
+  mouseX=p.x;mouseY=p.y;
+  if(dragMineral>=0){dragX=p.x;dragY=p.y;}
+},{passive:false});
+
+canvas.addEventListener('touchend',e=>{
+  e.preventDefault();
+  mouseDown=false;
+  if(dragMineral>=0){
+    handleDrop(dragMineral,dragX,dragY);
+    dragMineral=-1;
+  }
+},{passive:false});
+
+function handleClick(x,y){
+  for(const b of buttons){
+    if(!b.enabled)continue;
+    if(x>=b.x&&x<=b.x+b.w&&y>=b.y&&y<=b.y+b.h){
+      handleButton(b.id);
+      return;
+    }
+  }
+}
+
+function handleButton(id){
+  sndClick();
+
+  // Title
+  if(id==='play'){loadGame();transTo('LEVEL_SELECT');return;}
+  if(id==='howto'){transTo('HOW_TO');return;}
+  if(id==='back'){
+    if(gameState==='HOW_TO')transTo('TITLE');
+    else if(gameState==='LEVEL_SELECT')transTo('TITLE');
+    return;
+  }
+
+  // Level select
+  if(id.startsWith('level_')){
+    const lvl=parseInt(id.split('_')[1]);
+    startLevel(lvl);return;
+  }
+  if(id.startsWith('upgrade_')){
+    const idx=parseInt(id.split('_')[1]);
+    const u=UPGRADE_DEFS[idx];
+    const cost=u.baseCost*(upgrades[idx]+1);
+    if(money>=cost&&upgrades[idx]<u.maxLvl){
+      money-=cost;upgrades[idx]++;
+      saveGame();
+      flashMsg=u.name+' upgraded!';flashTimer=1;flashColor='#4CAF50';
+    }
+    return;
+  }
+
+  // Phase switches
+  if(id==='phase_0'){currentPhase=0;initMiningPhase();return;}
+  if(id==='phase_1'){
+    // Check if have enough minerals for at least one phone
+    currentPhase=1;initManufacturingPhase();return;
+  }
+  if(id==='phase_2'){currentPhase=2;initLifecyclePhase();return;}
+
+  // Mining: click deposit
+  if(id.startsWith('deposit_')&&currentPhase===0){
+    const idx=parseInt(id.split('_')[1]);
+    const d=mineDeposits[idx];
+    if(d&&!d.mined&&d.yield>0){
+      d.yield--;
+      d.hitAnim=1;
+      minerals[d.type]++;
+      sndMine();
+
+      // Particles
+      const m=MINERAL_TYPES[d.type];
+      for(let i=0;i<6;i++){
+        addParticle(d.x,d.y,(Math.random()-0.5)*120,-40-Math.random()*80,m.color,0.7,4,'square');
+      }
+      for(let i=0;i<3;i++){
+        addParticle(d.x,d.y,(Math.random()-0.5)*60,-20-Math.random()*40,'#5D4037',0.5,3);
+      }
+
+      // Environmental damage
+      const dmgReduction=upgrades[0]*0.15;
+      const dmg=(2.5-dmgReduction)*(1+currentLevel*0.2);
+      envDamage=Math.min(100,envDamage+Math.max(0.3,dmg));
+
+      // Floating text feedback
+      addFloatingText(d.x,d.y-30,'+1 '+m.name,m.color,16);
+      if(dmg>1.5)addFloatingText(d.x+30,d.y-15,'-'+dmg.toFixed(1)+' env','#EF5350',12);
+
+      // Damage circle
+      mineDamageCircles.push({x:d.x,y:d.y,radius:5,alpha:0.8});
+
+      if(d.yield<=0){
+        d.mined=true;
+        addFloatingText(d.x,d.y-40,'DEPLETED','#78909C',14);
+      }
+    }
+    return;
+  }
+
+  // Manufacturing: start dragging mineral
+  if(id.startsWith('mineral_')&&currentPhase===1){
+    const idx=parseInt(id.split('_')[1]);
+    if(minerals[idx]>0){
+      dragMineral=idx;
+      dragX=mouseX;dragY=mouseY;
+    }
+    return;
+  }
+
+  // Lifecycle: recycle
+  if(id==='recycle'&&currentPhase===2){
+    if(eWastePile>0){
+      const efficiency=0.3+upgrades[2]*0.12;
+      const recovered=Math.ceil(efficiency*4);
+      for(let i=0;i<Math.min(recovered,4);i++){
+        minerals[i%4]+=1;
+      }
+      eWastePile=Math.max(0,eWastePile-1);
+      if(eWastePileItems.length>0)eWastePileItems.pop();
+      recycledCount++;
+      envDamage=Math.max(0,envDamage-0.5);
+      sustainScore=Math.min(100,sustainScore+0.5);
+      sndRecycle();
+      flashMsg='Recycled! +'+recovered+' minerals';flashTimer=0.8;flashColor='#009688';
+      addFloatingText(recycleStation.x+60,recycleStation.y-10,'+'+recovered+' minerals','#009688',16);
+      addFloatingText(recycleStation.x+60,recycleStation.y+10,'-1 e-waste','#C6FF00',12);
+      for(let i=0;i<12;i++){
+        addParticle(recycleStation.x+60,recycleStation.y+50,(Math.random()-0.5)*120,-Math.random()*100,MINERAL_TYPES[i%4].color,1.0,5,'square');
+      }
+    }
+    return;
+  }
+
+  // Level complete / game over
+  if(id==='to_levels'){transTo('LEVEL_SELECT');return;}
+  if(id==='next_level'){startLevel(currentLevel+1);return;}
+  if(id==='retry'){startLevel(currentLevel);return;}
+}
+
+function handleDrop(mineralIdx,x,y){
+  if(currentPhase!==1)return;
+  // Check if dropped on a conveyor phone in assembly zone
+  for(const p of conveyorPhones){
+    if(x>=p.x&&x<=p.x+p.w&&y>=p.y&&y<=p.y+p.h){
+      if(p.x>=300&&p.x<=800){ // in assembly zone
+        if(!p.components[mineralIdx]){
+          p.components[mineralIdx]=true;
+          minerals[mineralIdx]--;
+          p.placed++;
+          sndPlace();
+          // Spark particles
+          for(let i=0;i<8;i++){
+            addParticle(x,y,(Math.random()-0.5)*80,(Math.random()-0.5)*80,'#FFD54F',0.4,3);
+          }
+          workerStamina=Math.max(0,workerStamina-5);
+          return;
+        }
+      }
+    }
+  }
+}
+
+// ==================== MAIN DRAW ====================
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  buttons=[];
+
+  if(gameState==='TITLE')drawTitleScreen();
+  else if(gameState==='HOW_TO')drawHowToScreen();
+  else if(gameState==='LEVEL_SELECT')drawLevelSelect();
+  else if(gameState==='PLAYING')drawPlaying();
+  else if(gameState==='LEVEL_COMPLETE')drawLevelComplete();
+  else if(gameState==='GAME_OVER')drawGameOver();
+
+  // Transition overlay
+  if(transAlpha>0){
+    ctx.fillStyle='rgba(26,26,46,'+transAlpha+')';
+    ctx.fillRect(0,0,W,H);
+  }
+}
+
+// ==================== GAME LOOP ====================
+function gameLoop(time){
+  const dt=Math.min(0.05,(time-lastTime)/1000);
+  lastTime=time;
+  update(dt);
+  draw();
+  requestAnimationFrame(gameLoop);
+}
+
+// ==================== INIT ====================
+loadGame();
+lastTime=performance.now();
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>

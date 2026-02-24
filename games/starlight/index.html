@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>STARLIGHT - Space Exploration Game</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0A0A14;font-family:'Segoe UI',system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none}
+canvas{display:block;width:100%;height:100%}
+#orient{display:none;position:fixed;inset:0;z-index:9999;background:#0A0A14;color:#00BCD4;flex-direction:column;align-items:center;justify-content:center;font-size:1.4rem;text-align:center;padding:2rem}
+#orient svg{width:60px;height:60px;margin-bottom:1rem;animation:rot 2s ease-in-out infinite}
+@keyframes rot{0%,100%{transform:rotate(0deg)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="orient"><svg viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>Please rotate your device to landscape mode</div>
+<script>
+"use strict";
+(function(){
+/* ============================================================
+   STARLIGHT - A Space Exploration / Collection Game
+   NGSS 5-ESS1-1: Star Brightness, Distance, Light Travel Time
+   ============================================================ */
+
+// ---- CANVAS & CONTEXT ----
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H, dpr;
+function resize(){
+  dpr = Math.min(window.devicePixelRatio||1, 2);
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W*dpr; canvas.height = H*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// ---- CONSTANTS ----
+const TAU = Math.PI*2;
+const WORLD_SIZE = 12000;
+const HALF_WORLD = WORLD_SIZE/2;
+const MAX_PARTICLES = 800;
+const PHOTON_COLLECT_RANGE = 120;
+const STAR_INFO_RANGE = 180;
+const FUEL_MAX = 100;
+const SHIELD_MAX = 3;
+const WARP_DURATION = 1.2;
+const TELESCOPE_DURATION = 15;
+
+// ---- COLORS ----
+const C = {
+  bg:'#0A0A14', starRed:'#FF6B6B', starYellow:'#FFD54F', starBlue:'#64B5F6', starWhite:'#E0E0E0',
+  ship:'#CFD8DC', engine:'#42A5F5', photon:'#FFD700', asteroid:'#78909C',
+  nebPurple:'#7E57C2', nebTeal:'#26A69A', ui:'rgba(10,10,20,0.85)', accent:'#00BCD4',
+  fuel:'#FF9800', shield:'#00BCD4', text:'#FFFFFF', textDim:'#90A4AE',
+  blackHole:'#1A1A2E', warp:'#7C4DFF'
+};
+
+// ---- STAR TYPES ----
+const STAR_TYPES = [
+  {id:'red_dwarf',   name:'Red Dwarf',     color:C.starRed,    luminosity:0.3, baseRadius:3,  rarity:0.45, desc:'Small, cool, and incredibly common. The workhorses of the galaxy.'},
+  {id:'yellow',      name:'Yellow Star',    color:C.starYellow, luminosity:0.7, baseRadius:5,  rarity:0.30, desc:'Medium-sized stars like our Sun. Stable and life-friendly.'},
+  {id:'blue_giant',  name:'Blue Giant',     color:C.starBlue,   luminosity:1.5, baseRadius:8,  rarity:0.15, desc:'Massive, hot, and brilliant. They burn fast and die young.'},
+  {id:'white_dwarf', name:'White Dwarf',    color:C.starWhite,  luminosity:0.15,baseRadius:2,  rarity:0.10, desc:'Tiny remnants of dead stars. Ancient and incredibly dense.'}
+];
+
+// ---- LEVEL DATA ----
+const LEVELS = [
+  {id:1, name:'Solar Neighborhood', desc:'Nearby stars, gentle intro', maxDist:2000, starCount:30, asteroidCount:5, nebulaCount:1, blackHoleCount:0, stationCount:2, fuelMult:1.0, scoreBronze:500, scoreSilver:1200, scoreGold:2500, bgTint:'rgba(20,20,60,0.03)'},
+  {id:2, name:'Milky Way Arm', desc:'More stars, asteroid fields', maxDist:3500, starCount:50, asteroidCount:15, nebulaCount:2, blackHoleCount:0, stationCount:3, fuelMult:0.9, scoreBronze:1500, scoreSilver:3500, scoreGold:6000, bgTint:'rgba(30,20,50,0.04)'},
+  {id:3, name:'Galactic Core', desc:'Dense star field, nebulae', maxDist:5000, starCount:80, asteroidCount:20, nebulaCount:5, blackHoleCount:1, stationCount:3, fuelMult:0.8, scoreBronze:4000, scoreSilver:8000, scoreGold:15000, bgTint:'rgba(40,20,60,0.05)'},
+  {id:4, name:'Deep Space', desc:'Very far, dim stars, scarce fuel', maxDist:7000, starCount:60, asteroidCount:12, nebulaCount:3, blackHoleCount:2, stationCount:2, fuelMult:0.6, scoreBronze:8000, scoreSilver:16000, scoreGold:30000, bgTint:'rgba(15,10,40,0.04)'},
+  {id:5, name:'Edge of Observable', desc:'Ancient light, maximum danger', maxDist:9000, starCount:45, asteroidCount:25, nebulaCount:4, blackHoleCount:3, stationCount:2, fuelMult:0.5, scoreBronze:15000, scoreSilver:30000, scoreGold:60000, bgTint:'rgba(10,5,30,0.06)'}
+];
+
+// ---- STAR NAMES ----
+const STAR_NAMES = [
+  'Proxima','Sirius','Vega','Polaris','Rigel','Betelgeuse','Aldebaran','Antares','Deneb','Arcturus',
+  'Spica','Altair','Regulus','Canopus','Capella','Procyon','Achernar','Bellatrix','Alnilam','Mintaka',
+  'Fomalhaut','Albireo','Mira','Castor','Pollux','Rasalhague','Shaula','Kaus','Nunki','Sargas',
+  'Alkaid','Dubhe','Merak','Alioth','Thuban','Etamin','Alderamin','Schedar','Mirfak','Algol',
+  'Hamal','Diphda','Enif','Sadalmelik','Markab','Alpheratz','Caph','Saiph','Alnath','Tejat'
+];
+
+// ---- GAME STATE ----
+let state = 'TITLE'; // TITLE, HOW_TO, LEVEL_SELECT, PLAYING, LEVEL_COMPLETE, GAME_OVER, CATALOG
+let currentLevel = 0;
+let score = 0;
+let fuel = FUEL_MAX;
+let shield = SHIELD_MAX;
+let streak = 0;
+let lightAge = 0;
+let totalFuelUsed = 0;
+let collectedStarIds = new Set();
+let levelScore = 0;
+let warpTimer = 0;
+let warpStart = null;
+let warpEnd = null;
+let telescopeTimer = 0;
+let invincibleTimer = 0;
+let gameTime = 0;
+let shakeTimer = 0;
+let shakeIntensity = 0;
+let titleTime = 0;
+
+// ---- CAMERA ----
+let cam = {x:0, y:0};
+
+// ---- PLAYER SHIP ----
+let ship = {x:0, y:0, vx:0, vy:0, angle:0, speed:200, collecting:false, collectTarget:null};
+
+// ---- WORLD OBJECTS ----
+let stars = [];
+let asteroids = [];
+let nebulae = [];
+let blackHoles = [];
+let stations = [];
+let powerups = [];
+let particles = [];
+let floatTexts = [];
+let photonStreams = [];
+
+// ---- PARALLAX BACKGROUND STARS ----
+let bgStarsLayers = [];
+function generateBgStars(){
+  bgStarsLayers = [];
+  for(let l=0;l<3;l++){
+    const layer = [];
+    const count = 150 + l*100;
+    for(let i=0;i<count;i++){
+      layer.push({
+        x: Math.random()*WORLD_SIZE*1.5 - WORLD_SIZE*0.25,
+        y: Math.random()*WORLD_SIZE*1.5 - WORLD_SIZE*0.25,
+        r: 0.3 + Math.random()*(1.2 - l*0.3),
+        b: 0.3 + Math.random()*0.7,
+        tw: Math.random()*TAU
+      });
+    }
+    bgStarsLayers.push({stars:layer, parallax:0.1 + l*0.15});
+  }
+}
+generateBgStars();
+
+// ---- INPUT ----
+let keys = {};
+let mouse = {x:0, y:0, down:false, worldX:0, worldY:0};
+let touchJoystick = {active:false, startX:0, startY:0, dx:0, dy:0, id:null};
+let touchAction = {active:false, id:null};
+let isTouchDevice = false;
+
+window.addEventListener('keydown', e=>{keys[e.key.toLowerCase()]=true; e.preventDefault()});
+window.addEventListener('keyup', e=>{keys[e.key.toLowerCase()]=false});
+window.addEventListener('mousemove', e=>{mouse.x=e.clientX; mouse.y=e.clientY; updateMouseWorld()});
+window.addEventListener('mousedown', e=>{mouse.down=true; mouse.x=e.clientX; mouse.y=e.clientY; handleClick(e.clientX, e.clientY)});
+window.addEventListener('mouseup', ()=>{mouse.down=false});
+
+canvas.addEventListener('touchstart', e=>{
+  isTouchDevice = true;
+  e.preventDefault();
+  for(let t of e.changedTouches){
+    if(t.clientX < W*0.4 && !touchJoystick.active){
+      touchJoystick.active=true; touchJoystick.startX=t.clientX; touchJoystick.startY=t.clientY; touchJoystick.dx=0; touchJoystick.dy=0; touchJoystick.id=t.identifier;
+    } else if(!touchAction.active){
+      touchAction.active=true; touchAction.id=t.identifier;
+      handleClick(t.clientX, t.clientY);
+    }
+  }
+},{passive:false});
+canvas.addEventListener('touchmove', e=>{
+  e.preventDefault();
+  for(let t of e.changedTouches){
+    if(t.identifier===touchJoystick.id){
+      touchJoystick.dx = Math.max(-60, Math.min(60, t.clientX - touchJoystick.startX));
+      touchJoystick.dy = Math.max(-60, Math.min(60, t.clientY - touchJoystick.startY));
+    }
+  }
+},{passive:false});
+canvas.addEventListener('touchend', e=>{
+  for(let t of e.changedTouches){
+    if(t.identifier===touchJoystick.id){touchJoystick.active=false; touchJoystick.dx=0; touchJoystick.dy=0; touchJoystick.id=null;}
+    if(t.identifier===touchAction.id){touchAction.active=false; touchAction.id=null;}
+  }
+});
+
+function updateMouseWorld(){
+  mouse.worldX = mouse.x + cam.x;
+  mouse.worldY = mouse.y + cam.y;
+}
+
+// ---- UI BUTTONS ----
+let buttons = [];
+function addBtn(id,x,y,w,h,label,cb){buttons.push({id,x,y,w,h,label,cb,hover:false})}
+function clearButtons(){buttons=[]}
+function handleClick(cx,cy){
+  for(let b of buttons){
+    if(cx>=b.x && cx<=b.x+b.w && cy>=b.y && cy<=b.y+b.h){b.cb(); return true;}
+  }
+  return false;
+}
+
+// ---- AUDIO ENGINE ----
+let audioCtx = null;
+let masterGain = null;
+let ambientOsc = null;
+let ambientGain = null;
+function initAudio(){
+  if(audioCtx) return;
+  try{
+    audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.3;
+    masterGain.connect(audioCtx.destination);
+  }catch(e){}
+}
+function playTone(freq,dur,type,vol,detune){
+  if(!audioCtx) return;
+  try{
+    const o=audioCtx.createOscillator();
+    const g=audioCtx.createGain();
+    o.type=type||'sine';
+    o.frequency.value=freq;
+    if(detune) o.detune.value=detune;
+    g.gain.value=0;
+    g.gain.linearRampToValueAtTime((vol||0.1)*masterGain.gain.value, audioCtx.currentTime+0.02);
+    g.gain.linearRampToValueAtTime(0, audioCtx.currentTime+dur);
+    o.connect(g); g.connect(audioCtx.destination);
+    o.start(); o.stop(audioCtx.currentTime+dur+0.05);
+  }catch(e){}
+}
+function playPhotonChime(){
+  playTone(880+Math.random()*440, 0.3, 'sine', 0.08);
+  playTone(1320+Math.random()*200, 0.2, 'sine', 0.05);
+}
+function playImpact(){
+  if(!audioCtx) return;
+  try{
+    const buf=audioCtx.createBuffer(1,audioCtx.sampleRate*0.3,audioCtx.sampleRate);
+    const d=buf.getChannelData(0);
+    for(let i=0;i<d.length;i++) d[i]=(Math.random()*2-1)*Math.exp(-i/(audioCtx.sampleRate*0.05));
+    const s=audioCtx.createBufferSource(); s.buffer=buf;
+    const g=audioCtx.createGain(); g.gain.value=0.15;
+    s.connect(g); g.connect(audioCtx.destination); s.start();
+  }catch(e){}
+}
+function playWarp(){
+  playTone(200, 1.0, 'sawtooth', 0.06);
+  playTone(400, 0.8, 'sine', 0.05, 100);
+  playTone(800, 0.6, 'sine', 0.04, 200);
+}
+function playCollect(){
+  playTone(523, 0.15, 'sine', 0.08);
+  setTimeout(()=>playTone(659, 0.15, 'sine', 0.07), 80);
+  setTimeout(()=>playTone(784, 0.2, 'sine', 0.06), 160);
+}
+function playRefuel(){
+  playTone(330, 0.2, 'triangle', 0.08);
+  setTimeout(()=>playTone(440, 0.2, 'triangle', 0.07), 100);
+}
+function startAmbient(){
+  if(!audioCtx || ambientOsc) return;
+  try{
+    ambientOsc=audioCtx.createOscillator();
+    ambientGain=audioCtx.createGain();
+    ambientOsc.type='sine'; ambientOsc.frequency.value=55;
+    ambientGain.gain.value=0.02;
+    ambientOsc.connect(ambientGain); ambientGain.connect(audioCtx.destination);
+    ambientOsc.start();
+  }catch(e){}
+}
+function stopAmbient(){
+  if(ambientOsc){try{ambientOsc.stop();}catch(e){} ambientOsc=null;}
+}
+
+// ---- LOCAL STORAGE ----
+let saveData = {highScores:{}, unlockedLevels:[1], catalog:[], totalScore:0};
+function loadSave(){
+  try{
+    const d=JSON.parse(localStorage.getItem('starlight_save'));
+    if(d){saveData=d; if(!saveData.catalog) saveData.catalog=[]; if(!saveData.unlockedLevels) saveData.unlockedLevels=[1];}
+  }catch(e){}
+}
+function writeSave(){
+  try{localStorage.setItem('starlight_save', JSON.stringify(saveData));}catch(e){}
+}
+loadSave();
+
+// ---- UTILITY ----
+function dist(a,b){return Math.sqrt((a.x-b.x)**2+(a.y-b.y)**2)}
+function lerp(a,b,t){return a+(b-a)*t}
+function clamp(v,mn,mx){return Math.max(mn,Math.min(mx,v))}
+function rng(a,b){return a+Math.random()*(b-a)}
+function rngInt(a,b){return Math.floor(rng(a,b+1))}
+function angleToward(from,to){return Math.atan2(to.y-from.y, to.x-from.x)}
+function formatNumber(n){if(n>=1000000) return (n/1000000).toFixed(1)+'M'; if(n>=1000) return (n/1000).toFixed(1)+'K'; return Math.floor(n).toString()}
+function yearLabel(ly){
+  const yr = 2026 - ly;
+  if(yr < 0) return Math.abs(yr)+' BCE';
+  if(yr < 100) return 'Around '+yr+' CE';
+  return yr+' CE';
+}
+
+// ---- PARTICLE SYSTEM ----
+function spawnParticle(x,y,vx,vy,life,color,size,type){
+  if(particles.length>=MAX_PARTICLES) return;
+  particles.push({x,y,vx,vy,life,maxLife:life,color,size,type:type||'default',alpha:1});
+}
+function updateParticles(dt){
+  for(let i=particles.length-1;i>=0;i--){
+    const p=particles[i];
+    p.x+=p.vx*dt; p.y+=p.vy*dt;
+    p.life-=dt;
+    p.alpha=Math.max(0,p.life/p.maxLife);
+    if(p.life<=0) particles.splice(i,1);
+  }
+}
+
+// ---- FLOAT TEXT ----
+function spawnFloatText(x,y,text,color,dur){
+  floatTexts.push({x,y,text,color:color||C.photon,life:dur||1.5,maxLife:dur||1.5,vy:-40});
+}
+function updateFloatTexts(dt){
+  for(let i=floatTexts.length-1;i>=0;i--){
+    const f=floatTexts[i];
+    f.y+=f.vy*dt; f.life-=dt;
+    if(f.life<=0) floatTexts.splice(i,1);
+  }
+}
+
+// ---- WORLD GENERATION ----
+function generateLevel(lvlIdx){
+  const lvl = LEVELS[lvlIdx];
+  stars=[]; asteroids=[]; nebulae=[]; blackHoles=[]; stations=[]; powerups=[]; particles=[]; floatTexts=[]; photonStreams=[];
+  score=0; fuel=FUEL_MAX; shield=SHIELD_MAX; streak=0; lightAge=0; totalFuelUsed=0; levelScore=0;
+  warpTimer=0; telescopeTimer=0; invincibleTimer=0; gameTime=0;
+  collectedStarIds=new Set();
+
+  ship.x=HALF_WORLD; ship.y=HALF_WORLD; ship.vx=0; ship.vy=0; ship.angle=0;
+
+  // Stars
+  const usedNames = new Set();
+  for(let i=0;i<lvl.starCount;i++){
+    const angle=Math.random()*TAU;
+    const d = 200 + Math.random()*lvl.maxDist;
+    const x = HALF_WORLD + Math.cos(angle)*d;
+    const y = HALF_WORLD + Math.sin(angle)*d;
+    const typeRoll = Math.random();
+    let cumul=0, type=STAR_TYPES[0];
+    for(const st of STAR_TYPES){cumul+=st.rarity; if(typeRoll<cumul){type=st; break;}}
+    const distFromCenter = d;
+    const lightYears = Math.round(distFromCenter * 0.5 + rng(5,50));
+    const apparentBrightness = type.luminosity / (1 + distFromCenter*0.001);
+    let name;
+    do{ name = STAR_NAMES[rngInt(0, STAR_NAMES.length-1)]; } while(usedNames.has(name) && usedNames.size < STAR_NAMES.length);
+    if(usedNames.has(name)) name = name + '-' + rngInt(1,99);
+    usedNames.add(name);
+    const pointValue = Math.round(lightYears * type.luminosity * 2 + distFromCenter*0.05);
+    stars.push({
+      id:i, x, y, type, name, lightYears, distFromCenter,
+      apparentBrightness: clamp(apparentBrightness,0.05,2),
+      actualLuminosity: type.luminosity,
+      pointValue, collected:false, collectProgress:0,
+      twinklePhase: Math.random()*TAU,
+      radius: type.baseRadius * clamp(apparentBrightness*1.5, 0.4, 3)
+    });
+  }
+
+  // Asteroids
+  for(let i=0;i<lvl.asteroidCount;i++){
+    const angle=Math.random()*TAU;
+    const d = 300 + Math.random()*lvl.maxDist*0.8;
+    asteroids.push({
+      x: HALF_WORLD+Math.cos(angle)*d, y: HALF_WORLD+Math.sin(angle)*d,
+      vx: rng(-15,15), vy: rng(-15,15),
+      radius: rng(12,30), rotation:0, rotSpeed: rng(-1,1),
+      vertices: generateAsteroidVerts()
+    });
+  }
+
+  // Nebulae
+  for(let i=0;i<lvl.nebulaCount;i++){
+    const angle=Math.random()*TAU;
+    const d = 500 + Math.random()*lvl.maxDist*0.7;
+    nebulae.push({
+      x: HALF_WORLD+Math.cos(angle)*d, y: HALF_WORLD+Math.sin(angle)*d,
+      radius: rng(200,450),
+      color: Math.random()>0.5 ? C.nebPurple : C.nebTeal,
+      drift: {x:rng(-3,3), y:rng(-3,3)},
+      alpha: rng(0.06,0.15),
+      blobs: Array.from({length:rngInt(3,6)},()=>({ox:rng(-150,150),oy:rng(-150,150),r:rng(80,200)}))
+    });
+  }
+
+  // Black holes
+  for(let i=0;i<lvl.blackHoleCount;i++){
+    const angle=Math.random()*TAU;
+    const d = 800 + Math.random()*lvl.maxDist*0.6;
+    blackHoles.push({
+      x: HALF_WORLD+Math.cos(angle)*d, y: HALF_WORLD+Math.sin(angle)*d,
+      radius: 60, pullRadius: 350, strength: 120,
+      rotation: 0
+    });
+  }
+
+  // Stations
+  for(let i=0;i<lvl.stationCount;i++){
+    const angle = (i/lvl.stationCount)*TAU + rng(-0.3,0.3);
+    const d = 400 + Math.random()*lvl.maxDist*0.5;
+    stations.push({
+      x: HALF_WORLD+Math.cos(angle)*d, y: HALF_WORLD+Math.sin(angle)*d,
+      radius: 25, rotation:0
+    });
+  }
+
+  // Powerups
+  const puTypes = ['warp','telescope','fuel','shield'];
+  const puCount = 4 + lvlIdx*2;
+  for(let i=0;i<puCount;i++){
+    const angle=Math.random()*TAU;
+    const d = 300 + Math.random()*lvl.maxDist*0.9;
+    powerups.push({
+      x: HALF_WORLD+Math.cos(angle)*d, y: HALF_WORLD+Math.sin(angle)*d,
+      type: puTypes[i%puTypes.length], radius:14, bobPhase:Math.random()*TAU, active:true
+    });
+  }
+
+  cam.x = ship.x - W/2;
+  cam.y = ship.y - H/2;
+}
+
+function generateAsteroidVerts(){
+  const n=rngInt(6,10);
+  const v=[];
+  for(let i=0;i<n;i++){
+    const a=(i/n)*TAU;
+    const r=0.6+Math.random()*0.4;
+    v.push({a,r});
+  }
+  return v;
+}
+
+// ---- UPDATE FUNCTIONS ----
+function updateShip(dt){
+  if(warpTimer>0) return;
+
+  let dx=0, dy=0;
+  if(keys['w']||keys['arrowup']) dy=-1;
+  if(keys['s']||keys['arrowdown']) dy=1;
+  if(keys['a']||keys['arrowleft']) dx=-1;
+  if(keys['d']||keys['arrowright']) dx=1;
+
+  if(touchJoystick.active){
+    const jLen=Math.sqrt(touchJoystick.dx**2+touchJoystick.dy**2);
+    if(jLen>5){
+      dx=touchJoystick.dx/60;
+      dy=touchJoystick.dy/60;
+    }
+  }
+
+  const inputLen=Math.sqrt(dx*dx+dy*dy);
+  if(inputLen>0.01 && fuel>0){
+    dx/=inputLen; dy/=inputLen;
+    const spd = ship.speed * Math.min(inputLen,1);
+    ship.vx = lerp(ship.vx, dx*spd, 6*dt);
+    ship.vy = lerp(ship.vy, dy*spd, 6*dt);
+    ship.angle = Math.atan2(ship.vy, ship.vx);
+    const fuelCost = dt * 3 * (LEVELS[currentLevel]?LEVELS[currentLevel].fuelMult:1);
+    fuel = Math.max(0, fuel - fuelCost);
+    totalFuelUsed += fuelCost;
+
+    // Engine particles
+    if(Math.random()<0.6){
+      const ex=ship.x-Math.cos(ship.angle)*16;
+      const ey=ship.y-Math.sin(ship.angle)*16;
+      spawnParticle(ex,ey, -Math.cos(ship.angle)*rng(40,100)+rng(-20,20), -Math.sin(ship.angle)*rng(40,100)+rng(-20,20), rng(0.2,0.5), C.engine, rng(1.5,3), 'engine');
+    }
+  } else {
+    ship.vx *= (1 - 2*dt);
+    ship.vy *= (1 - 2*dt);
+  }
+
+  // Check nebula slowdown
+  for(const neb of nebulae){
+    if(dist(ship,neb)<neb.radius*0.7){
+      ship.vx*=(1-1.5*dt);
+      ship.vy*=(1-1.5*dt);
+    }
+  }
+
+  // Black hole gravity
+  for(const bh of blackHoles){
+    const d = dist(ship, bh);
+    if(d<bh.pullRadius && d>10){
+      const pull = bh.strength * dt / (d*0.5);
+      const a = angleToward(ship, bh);
+      ship.vx += Math.cos(a)*pull;
+      ship.vy += Math.sin(a)*pull;
+      if(d<bh.radius && invincibleTimer<=0){
+        shield--; invincibleTimer=1.5; shakeTimer=0.3; shakeIntensity=8;
+        playImpact(); streak=0;
+        if(shield<=0){state='GAME_OVER'; stopAmbient();}
+      }
+    }
+  }
+
+  ship.x += ship.vx*dt;
+  ship.y += ship.vy*dt;
+  ship.x = clamp(ship.x, 50, WORLD_SIZE-50);
+  ship.y = clamp(ship.y, 50, WORLD_SIZE-50);
+}
+
+function updateStarCollection(dt){
+  let nearestStar = null;
+  let nearestDist = Infinity;
+
+  for(const star of stars){
+    const d = dist(ship, star);
+    if(d < nearestDist){nearestDist=d; nearestStar=star;}
+
+    if(!star.collected && d < PHOTON_COLLECT_RANGE){
+      const rate = 1.0 / (0.5 + d*0.005);
+      star.collectProgress += rate*dt;
+
+      // Photon stream particles
+      if(Math.random()<0.4){
+        const a=angleToward(star,ship);
+        spawnParticle(star.x+rng(-10,10), star.y+rng(-10,10),
+          Math.cos(a)*rng(80,160), Math.sin(a)*rng(80,160),
+          rng(0.3,0.7), star.type.color, rng(1.5,3), 'photon');
+      }
+
+      if(star.collectProgress >= 1 && !star.collected){
+        star.collected = true;
+        collectedStarIds.add(star.id);
+        const pts = star.pointValue * (1 + streak*0.1);
+        score += Math.round(pts);
+        levelScore += Math.round(pts);
+        streak++;
+        lightAge = star.lightYears;
+
+        // Catalog
+        if(!saveData.catalog.includes(star.type.id)){
+          saveData.catalog.push(star.type.id);
+          spawnFloatText(ship.x, ship.y-40, 'NEW TYPE: '+star.type.name+'!', C.accent, 2.5);
+          writeSave();
+        }
+
+        spawnFloatText(star.x, star.y-20, '+'+Math.round(pts)+' pts', C.photon, 1.5);
+        spawnFloatText(star.x, star.y-40, 'Light from '+yearLabel(star.lightYears), C.textDim, 2.0);
+        playPhotonChime();
+
+        // Burst particles
+        for(let i=0;i<12;i++){
+          const a=Math.random()*TAU;
+          spawnParticle(star.x,star.y, Math.cos(a)*rng(30,80), Math.sin(a)*rng(30,80), rng(0.3,0.7), star.type.color, rng(2,4));
+        }
+      }
+    }
+  }
+
+  // Update light age display for nearest star
+  if(nearestStar && nearestDist < STAR_INFO_RANGE){
+    lightAge = nearestStar.lightYears;
+  }
+}
+
+function updateAsteroids(dt){
+  for(const ast of asteroids){
+    ast.x += ast.vx*dt;
+    ast.y += ast.vy*dt;
+    ast.rotation += ast.rotSpeed*dt;
+
+    // Bounce at world edges
+    if(ast.x<50||ast.x>WORLD_SIZE-50) ast.vx*=-1;
+    if(ast.y<50||ast.y>WORLD_SIZE-50) ast.vy*=-1;
+
+    // Ship collision
+    if(invincibleTimer<=0 && dist(ship,ast)<ast.radius+12){
+      shield--; invincibleTimer=1.5; streak=0;
+      shakeTimer=0.3; shakeIntensity=6;
+      playImpact();
+      // Bounce ship away
+      const a=angleToward(ast,ship);
+      ship.vx+=Math.cos(a)*100;
+      ship.vy+=Math.sin(a)*100;
+      if(shield<=0){state='GAME_OVER'; stopAmbient();}
+    }
+  }
+}
+
+function updateStations(dt){
+  for(const st of stations){
+    st.rotation += 0.3*dt;
+    if(dist(ship,st)<st.radius+20 && fuel<FUEL_MAX){
+      fuel = Math.min(FUEL_MAX, fuel + 20*dt);
+      if(Math.random()<0.3){
+        spawnParticle(st.x+rng(-15,15),st.y+rng(-15,15),rng(-10,10),rng(-20,-5),rng(0.3,0.6),C.fuel,2);
+      }
+      if(Math.floor(gameTime*4)%4===0 && Math.random()<0.1) playRefuel();
+    }
+  }
+}
+
+function updatePowerups(dt){
+  for(const pu of powerups){
+    if(!pu.active) continue;
+    pu.bobPhase += 2*dt;
+    if(dist(ship,pu)<pu.radius+15){
+      pu.active=false;
+      playCollect();
+      switch(pu.type){
+        case 'warp':
+          warpTimer=WARP_DURATION;
+          warpStart={x:ship.x,y:ship.y};
+          const wa=Math.random()*TAU;
+          const wd=rng(2000,LEVELS[currentLevel].maxDist*0.8);
+          warpEnd={x:clamp(HALF_WORLD+Math.cos(wa)*wd,200,WORLD_SIZE-200), y:clamp(HALF_WORLD+Math.sin(wa)*wd,200,WORLD_SIZE-200)};
+          playWarp();
+          spawnFloatText(ship.x,ship.y-30,'WARP DRIVE!',C.warp,1.5);
+          break;
+        case 'telescope':
+          telescopeTimer=TELESCOPE_DURATION;
+          spawnFloatText(ship.x,ship.y-30,'TELESCOPE ACTIVE!',C.accent,1.5);
+          break;
+        case 'fuel':
+          fuel=Math.min(FUEL_MAX, fuel+40);
+          spawnFloatText(ship.x,ship.y-30,'+40 FUEL',C.fuel,1.5);
+          break;
+        case 'shield':
+          shield=Math.min(SHIELD_MAX, shield+1);
+          spawnFloatText(ship.x,ship.y-30,'+1 SHIELD',C.shield,1.5);
+          break;
+      }
+    }
+  }
+}
+
+function updateWarp(dt){
+  if(warpTimer<=0) return;
+  warpTimer-=dt;
+  const t=1-(warpTimer/WARP_DURATION);
+  const ease = t<0.5 ? 2*t*t : 1-Math.pow(-2*t+2,2)/2;
+  ship.x=lerp(warpStart.x, warpEnd.x, ease);
+  ship.y=lerp(warpStart.y, warpEnd.y, ease);
+  ship.vx=0; ship.vy=0;
+  // Warp particles
+  for(let i=0;i<3;i++){
+    spawnParticle(ship.x+rng(-30,30),ship.y+rng(-30,30),rng(-100,100),rng(-100,100),rng(0.2,0.4),C.warp,rng(2,4));
+  }
+  if(warpTimer<=0){warpTimer=0;}
+}
+
+function updateBlackHoles(dt){
+  for(const bh of blackHoles){
+    bh.rotation+=0.5*dt;
+  }
+}
+
+function updateTimers(dt){
+  if(invincibleTimer>0) invincibleTimer-=dt;
+  if(telescopeTimer>0) telescopeTimer-=dt;
+  if(shakeTimer>0) shakeTimer-=dt;
+  gameTime+=dt;
+}
+
+function checkLevelComplete(){
+  const allCollected = stars.every(s=>s.collected);
+  if(allCollected || (fuel<=0 && Math.abs(ship.vx)<1 && Math.abs(ship.vy)<1)){
+    // Level done
+    const lvl=LEVELS[currentLevel];
+    let medal='none';
+    if(levelScore>=lvl.scoreGold) medal='gold';
+    else if(levelScore>=lvl.scoreSilver) medal='silver';
+    else if(levelScore>=lvl.scoreBronze) medal='bronze';
+
+    if(!saveData.highScores[currentLevel] || levelScore > saveData.highScores[currentLevel].score){
+      saveData.highScores[currentLevel]={score:levelScore, medal};
+    }
+    saveData.totalScore = Object.values(saveData.highScores).reduce((s,h)=>s+h.score,0);
+    if(currentLevel+1 < LEVELS.length && !saveData.unlockedLevels.includes(currentLevel+2)){
+      saveData.unlockedLevels.push(currentLevel+2);
+    }
+    writeSave();
+
+    if(fuel<=0 && !allCollected){
+      state='GAME_OVER';
+    } else {
+      state='LEVEL_COMPLETE';
+    }
+    stopAmbient();
+  }
+}
+
+// ---- RENDER FUNCTIONS ----
+function renderBackground(){
+  ctx.fillStyle=C.bg;
+  ctx.fillRect(0,0,W,H);
+
+  // Parallax star layers
+  for(const layer of bgStarsLayers){
+    const px=cam.x*layer.parallax;
+    const py=cam.y*layer.parallax;
+    for(const s of layer.stars){
+      const sx=s.x-px; const sy=s.y-py;
+      // Wrap
+      const wx=((sx%W)+W)%W;
+      const wy=((sy%H)+H)%H;
+      const twinkle = 0.6+0.4*Math.sin(s.tw+gameTime*2);
+      ctx.globalAlpha=s.b*twinkle;
+      ctx.fillStyle='#fff';
+      ctx.beginPath();
+      ctx.arc(wx,wy,s.r,0,TAU);
+      ctx.fill();
+    }
+  }
+  ctx.globalAlpha=1;
+}
+
+function renderNebulae(){
+  for(const neb of nebulae){
+    const nx=neb.x+Math.sin(gameTime*0.1)*neb.drift.x*10;
+    const ny=neb.y+Math.cos(gameTime*0.1)*neb.drift.y*10;
+    for(const blob of neb.blobs){
+      const bx=nx+blob.ox-cam.x;
+      const by=ny+blob.oy-cam.y;
+      if(bx<-300||bx>W+300||by<-300||by>H+300) continue;
+      const grad=ctx.createRadialGradient(bx,by,0,bx,by,blob.r);
+      grad.addColorStop(0, neb.color+'40');
+      grad.addColorStop(0.5, neb.color+'18');
+      grad.addColorStop(1, neb.color+'00');
+      ctx.fillStyle=grad;
+      ctx.beginPath();
+      ctx.arc(bx,by,blob.r,0,TAU);
+      ctx.fill();
+    }
+  }
+}
+
+function renderBlackHoles(){
+  for(const bh of blackHoles){
+    const bx=bh.x-cam.x, by=bh.y-cam.y;
+    if(bx<-400||bx>W+400||by<-400||by>H+400) continue;
+
+    // Accretion disk
+    ctx.save();
+    ctx.translate(bx,by);
+    ctx.rotate(bh.rotation);
+    for(let i=0;i<3;i++){
+      const r=bh.radius+20+i*15;
+      ctx.strokeStyle=`rgba(100,80,200,${0.15-i*0.04})`;
+      ctx.lineWidth=3-i*0.5;
+      ctx.beginPath();
+      ctx.ellipse(0,0,r,r*0.4,0,0,TAU);
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    // Dark center
+    const grad=ctx.createRadialGradient(bx,by,0,bx,by,bh.radius);
+    grad.addColorStop(0,'#000000');
+    grad.addColorStop(0.7,'#000000');
+    grad.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=grad;
+    ctx.beginPath();
+    ctx.arc(bx,by,bh.radius,0,TAU);
+    ctx.fill();
+
+    // Pull radius indicator
+    ctx.strokeStyle='rgba(100,80,200,0.08)';
+    ctx.lineWidth=1;
+    ctx.setLineDash([5,10]);
+    ctx.beginPath();
+    ctx.arc(bx,by,bh.pullRadius,0,TAU);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+}
+
+function renderStars(){
+  for(const star of stars){
+    const sx=star.x-cam.x, sy=star.y-cam.y;
+    if(sx<-50||sx>W+50||sy<-50||sy>H+50) continue;
+
+    const twinkle = 0.7+0.3*Math.sin(star.twinklePhase+gameTime*3);
+    let visRadius = star.radius * twinkle;
+    let visAlpha = clamp(star.apparentBrightness*twinkle, 0.08, 1);
+
+    // Telescope reveals dim stars
+    if(telescopeTimer>0) visAlpha = Math.max(visAlpha, 0.5);
+
+    if(star.collected){
+      visAlpha *= 0.2;
+      visRadius *= 0.5;
+    }
+
+    // Glow
+    const glowR = visRadius*4;
+    const grad=ctx.createRadialGradient(sx,sy,0,sx,sy,glowR);
+    grad.addColorStop(0, star.type.color+hexAlpha(visAlpha*0.8));
+    grad.addColorStop(0.3, star.type.color+hexAlpha(visAlpha*0.3));
+    grad.addColorStop(1, star.type.color+'00');
+    ctx.fillStyle=grad;
+    ctx.beginPath();
+    ctx.arc(sx,sy,glowR,0,TAU);
+    ctx.fill();
+
+    // Core
+    ctx.globalAlpha=visAlpha;
+    ctx.fillStyle=star.type.color;
+    ctx.beginPath();
+    ctx.arc(sx,sy,visRadius,0,TAU);
+    ctx.fill();
+    ctx.fillStyle='#fff';
+    ctx.beginPath();
+    ctx.arc(sx,sy,visRadius*0.4,0,TAU);
+    ctx.fill();
+    ctx.globalAlpha=1;
+
+    // Collection progress ring
+    if(!star.collected && star.collectProgress>0){
+      ctx.strokeStyle=C.photon;
+      ctx.lineWidth=2;
+      ctx.beginPath();
+      ctx.arc(sx,sy,visRadius+6,-(Math.PI/2),-(Math.PI/2)+star.collectProgress*TAU);
+      ctx.stroke();
+    }
+  }
+}
+
+function hexAlpha(a){
+  const v=Math.round(clamp(a,0,1)*255);
+  return v.toString(16).padStart(2,'0');
+}
+
+function renderAsteroids(){
+  for(const ast of asteroids){
+    const ax=ast.x-cam.x, ay=ast.y-cam.y;
+    if(ax<-50||ax>W+50||ay<-50||ay>H+50) continue;
+    ctx.save();
+    ctx.translate(ax,ay);
+    ctx.rotate(ast.rotation);
+    ctx.fillStyle=C.asteroid;
+    ctx.strokeStyle='#5D6D7E';
+    ctx.lineWidth=1;
+    ctx.beginPath();
+    const v=ast.vertices;
+    ctx.moveTo(Math.cos(v[0].a)*v[0].r*ast.radius, Math.sin(v[0].a)*v[0].r*ast.radius);
+    for(let i=1;i<v.length;i++){
+      ctx.lineTo(Math.cos(v[i].a)*v[i].r*ast.radius, Math.sin(v[i].a)*v[i].r*ast.radius);
+    }
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+function renderStations(){
+  for(const st of stations){
+    const sx=st.x-cam.x, sy=st.y-cam.y;
+    if(sx<-80||sx>W+80||sy<-80||sy>H+80) continue;
+
+    // Outer ring
+    ctx.save();
+    ctx.translate(sx,sy);
+    ctx.rotate(st.rotation);
+    ctx.strokeStyle=C.accent;
+    ctx.lineWidth=2;
+    ctx.beginPath();
+    ctx.arc(0,0,st.radius,0,TAU);
+    ctx.stroke();
+    // Spokes
+    for(let i=0;i<4;i++){
+      const a=(i/4)*TAU;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(a)*8, Math.sin(a)*8);
+      ctx.lineTo(Math.cos(a)*st.radius, Math.sin(a)*st.radius);
+      ctx.stroke();
+    }
+    // Center
+    ctx.fillStyle=C.accent;
+    ctx.beginPath();
+    ctx.arc(0,0,6,0,TAU);
+    ctx.fill();
+    ctx.restore();
+
+    // Fuel label
+    ctx.fillStyle=C.fuel;
+    ctx.font='10px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText('FUEL', sx, sy+st.radius+14);
+  }
+}
+
+function renderPowerups(){
+  for(const pu of powerups){
+    if(!pu.active) continue;
+    const px=pu.x-cam.x, py=pu.y-cam.y+Math.sin(pu.bobPhase)*5;
+    if(px<-30||px>W+30||py<-30||py>H+30) continue;
+
+    let col, label;
+    switch(pu.type){
+      case 'warp': col=C.warp; label='W'; break;
+      case 'telescope': col=C.accent; label='T'; break;
+      case 'fuel': col=C.fuel; label='F'; break;
+      case 'shield': col=C.shield; label='S'; break;
+    }
+    // Glow
+    const grad=ctx.createRadialGradient(px,py,0,px,py,pu.radius*2);
+    grad.addColorStop(0,col+'60');
+    grad.addColorStop(1,col+'00');
+    ctx.fillStyle=grad;
+    ctx.beginPath();
+    ctx.arc(px,py,pu.radius*2,0,TAU);
+    ctx.fill();
+
+    ctx.fillStyle=col;
+    ctx.beginPath();
+    ctx.arc(px,py,pu.radius,0,TAU);
+    ctx.fill();
+
+    ctx.fillStyle='#fff';
+    ctx.font='bold 11px sans-serif';
+    ctx.textAlign='center';
+    ctx.textBaseline='middle';
+    ctx.fillText(label,px,py);
+  }
+}
+
+function renderShip(){
+  if(warpTimer>0 && Math.floor(gameTime*20)%2===0) return; // Flicker during warp
+
+  const sx=ship.x-cam.x, sy=ship.y-cam.y;
+  const flash = invincibleTimer>0 && Math.floor(invincibleTimer*10)%2===0;
+
+  ctx.save();
+  ctx.translate(sx,sy);
+  ctx.rotate(ship.angle);
+
+  // Ship body
+  ctx.fillStyle = flash ? '#FF5252' : C.ship;
+  ctx.beginPath();
+  ctx.moveTo(18,0);
+  ctx.lineTo(-10,-9);
+  ctx.lineTo(-6,0);
+  ctx.lineTo(-10,9);
+  ctx.closePath();
+  ctx.fill();
+  ctx.strokeStyle='#90A4AE';
+  ctx.lineWidth=1;
+  ctx.stroke();
+
+  // Cockpit
+  ctx.fillStyle=C.engine;
+  ctx.beginPath();
+  ctx.arc(6,0,3.5,0,TAU);
+  ctx.fill();
+
+  // Engine glow
+  const engineGlow = (Math.abs(ship.vx)+Math.abs(ship.vy))>10 ? 0.8 : 0.2;
+  ctx.globalAlpha=engineGlow;
+  ctx.fillStyle=C.engine;
+  ctx.beginPath();
+  ctx.moveTo(-6,0);
+  ctx.lineTo(-14-Math.random()*6,-4);
+  ctx.lineTo(-14-Math.random()*6,4);
+  ctx.closePath();
+  ctx.fill();
+  ctx.globalAlpha=1;
+
+  ctx.restore();
+
+  // Light collector ring
+  ctx.strokeStyle=C.photon+'40';
+  ctx.lineWidth=1;
+  ctx.setLineDash([3,6]);
+  ctx.beginPath();
+  ctx.arc(sx,sy,PHOTON_COLLECT_RANGE,0,TAU);
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+function renderParticles(){
+  for(const p of particles){
+    const px=p.x-cam.x, py=p.y-cam.y;
+    if(px<-10||px>W+10||py<-10||py>H+10) continue;
+    ctx.globalAlpha=p.alpha;
+    ctx.fillStyle=p.color;
+    ctx.beginPath();
+    ctx.arc(px,py,p.size*p.alpha,0,TAU);
+    ctx.fill();
+  }
+  ctx.globalAlpha=1;
+}
+
+function renderFloatTexts(){
+  for(const f of floatTexts){
+    const fx=f.x-cam.x, fy=f.y-cam.y;
+    ctx.globalAlpha=f.life/f.maxLife;
+    ctx.fillStyle=f.color;
+    ctx.font='bold 13px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText(f.text,fx,fy);
+  }
+  ctx.globalAlpha=1;
+}
+
+function renderStarInfoCard(){
+  let nearest=null, nd=Infinity;
+  for(const s of stars){
+    const d=dist(ship,s);
+    if(d<STAR_INFO_RANGE && d<nd){nd=d; nearest=s;}
+  }
+  if(!nearest) return;
+
+  const cardW=260, cardH=120;
+  const cx=W/2-cardW/2, cy=H-160;
+
+  ctx.fillStyle=C.ui;
+  ctx.strokeStyle=nearest.type.color+'80';
+  ctx.lineWidth=2;
+  roundRect(ctx,cx,cy,cardW,cardH,8);
+  ctx.fill();
+  ctx.stroke();
+
+  // Star color dot
+  ctx.fillStyle=nearest.type.color;
+  ctx.beginPath();
+  ctx.arc(cx+20,cy+20,8,0,TAU);
+  ctx.fill();
+
+  ctx.fillStyle='#fff';
+  ctx.font='bold 14px sans-serif';
+  ctx.textAlign='left';
+  ctx.fillText(nearest.name, cx+35, cy+24);
+
+  ctx.fillStyle=nearest.type.color;
+  ctx.font='11px sans-serif';
+  ctx.fillText(nearest.type.name, cx+35, cy+40);
+
+  ctx.fillStyle=C.textDim;
+  ctx.font='11px sans-serif';
+  ctx.fillText(nearest.lightYears+' light-years away', cx+15, cy+60);
+  ctx.fillText('You\'re seeing light from '+yearLabel(nearest.lightYears)+'!', cx+15, cy+76);
+
+  ctx.fillStyle='#fff';
+  ctx.font='10px sans-serif';
+  ctx.fillText('Actual Luminosity: '+(nearest.actualLuminosity*100).toFixed(0)+'%', cx+15, cy+94);
+  ctx.fillText('Apparent Brightness: '+(nearest.apparentBrightness*100).toFixed(0)+'%', cx+15, cy+108);
+}
+
+function renderHUD(){
+  const pad=12;
+
+  // Fuel bar (top-left)
+  ctx.fillStyle=C.ui;
+  roundRect(ctx, pad, pad, 180, 20, 4);
+  ctx.fill();
+  ctx.fillStyle='rgba(255,152,0,0.2)';
+  roundRect(ctx, pad, pad, 180, 20, 4);
+  ctx.fill();
+  ctx.fillStyle=C.fuel;
+  const fw=Math.max(0, (fuel/FUEL_MAX)*176);
+  if(fw>0){roundRect(ctx, pad+2, pad+2, fw, 16, 3); ctx.fill();}
+  ctx.fillStyle='#fff';
+  ctx.font='bold 10px sans-serif';
+  ctx.textAlign='left';
+  ctx.fillText('FUEL', pad+6, pad+14);
+  ctx.textAlign='right';
+  ctx.fillText(Math.ceil(fuel)+'%', pad+174, pad+14);
+
+  // Shield (under fuel)
+  ctx.fillStyle=C.ui;
+  roundRect(ctx, pad, pad+26, 100, 18, 4);
+  ctx.fill();
+  ctx.fillStyle='#fff';
+  ctx.font='bold 10px sans-serif';
+  ctx.textAlign='left';
+  ctx.fillText('SHIELD', pad+6, pad+38);
+  for(let i=0;i<SHIELD_MAX;i++){
+    ctx.fillStyle = i<shield ? C.shield : '#333';
+    ctx.beginPath();
+    ctx.arc(pad+70+i*14, pad+35, 5, 0, TAU);
+    ctx.fill();
+  }
+
+  // Score (top-right)
+  ctx.fillStyle=C.ui;
+  roundRect(ctx, W-pad-150, pad, 150, 40, 4);
+  ctx.fill();
+  ctx.fillStyle=C.photon;
+  ctx.font='bold 10px sans-serif';
+  ctx.textAlign='right';
+  ctx.fillText('SCORE', W-pad-10, pad+14);
+  ctx.fillStyle='#fff';
+  ctx.font='bold 18px sans-serif';
+  ctx.fillText(formatNumber(levelScore), W-pad-10, pad+34);
+
+  // Streak
+  if(streak>1){
+    ctx.fillStyle=C.photon;
+    ctx.font='bold 11px sans-serif';
+    ctx.textAlign='right';
+    ctx.fillText('STREAK x'+streak, W-pad-10, pad+54);
+  }
+
+  // Light Age (top-center)
+  if(lightAge>0){
+    const laW=280;
+    const lax=W/2-laW/2;
+    ctx.fillStyle=C.ui;
+    roundRect(ctx, lax, pad, laW, 36, 4);
+    ctx.fill();
+    ctx.fillStyle=C.accent;
+    ctx.font='bold 10px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText('LIGHT AGE', W/2, pad+13);
+    ctx.fillStyle='#fff';
+    ctx.font='13px sans-serif';
+    ctx.fillText('Collecting light from '+lightAge+' years ago', W/2, pad+29);
+  }
+
+  // Telescope indicator
+  if(telescopeTimer>0){
+    ctx.fillStyle='rgba(0,188,212,0.2)';
+    roundRect(ctx, pad, pad+50, 120, 18, 4);
+    ctx.fill();
+    ctx.fillStyle=C.accent;
+    ctx.font='bold 10px sans-serif';
+    ctx.textAlign='left';
+    ctx.fillText('TELESCOPE '+Math.ceil(telescopeTimer)+'s', pad+6, pad+62);
+  }
+
+  // Distance from center
+  const distCenter = Math.round(dist(ship, {x:HALF_WORLD,y:HALF_WORLD}));
+  ctx.fillStyle=C.ui;
+  roundRect(ctx, pad, H-pad-22, 140, 22, 4);
+  ctx.fill();
+  ctx.fillStyle=C.textDim;
+  ctx.font='10px sans-serif';
+  ctx.textAlign='left';
+  ctx.fillText('DIST: '+Math.round(distCenter*0.5)+' ly from center', pad+6, H-pad-7);
+
+  // Science tip
+  if(gameTime<8){
+    const tipAlpha = clamp((8-gameTime)/2,0,1);
+    ctx.globalAlpha=tipAlpha;
+    ctx.fillStyle=C.ui;
+    const tipW=340;
+    roundRect(ctx, W/2-tipW/2, H-pad-55, tipW, 28, 4);
+    ctx.fill();
+    ctx.fillStyle=C.accent;
+    ctx.font='11px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText('The farther you travel, the older the light you find', W/2, H-pad-38);
+    ctx.globalAlpha=1;
+  }
+
+  // Stars collected count
+  const totalS=stars.length, collS=collectedStarIds.size;
+  ctx.fillStyle=C.ui;
+  roundRect(ctx, pad, H-pad-48, 100, 22, 4);
+  ctx.fill();
+  ctx.fillStyle=C.textDim;
+  ctx.font='10px sans-serif';
+  ctx.textAlign='left';
+  ctx.fillText('STARS: '+collS+'/'+totalS, pad+6, H-pad-33);
+
+  // Minimap (bottom-right)
+  renderMinimap();
+}
+
+function renderMinimap(){
+  const mmS=120;
+  const mmX=W-mmS-12, mmY=H-mmS-12;
+  ctx.fillStyle='rgba(10,10,20,0.7)';
+  ctx.strokeStyle='rgba(0,188,212,0.3)';
+  ctx.lineWidth=1;
+  ctx.fillRect(mmX,mmY,mmS,mmS);
+  ctx.strokeRect(mmX,mmY,mmS,mmS);
+
+  const scale = mmS/WORLD_SIZE;
+
+  // Stars on minimap
+  for(const s of stars){
+    if(s.collected) continue;
+    const mx=mmX+s.x*scale, my=mmY+s.y*scale;
+    const vis = telescopeTimer>0 ? 0.8 : clamp(s.apparentBrightness,0.15,1);
+    ctx.globalAlpha=vis;
+    ctx.fillStyle=s.type.color;
+    ctx.fillRect(mx-1,my-1,2,2);
+  }
+  ctx.globalAlpha=1;
+
+  // Stations
+  for(const st of stations){
+    const mx=mmX+st.x*scale, my=mmY+st.y*scale;
+    ctx.fillStyle=C.fuel;
+    ctx.fillRect(mx-1.5,my-1.5,3,3);
+  }
+
+  // Player
+  const px=mmX+ship.x*scale, py=mmY+ship.y*scale;
+  ctx.fillStyle='#fff';
+  ctx.beginPath();
+  ctx.arc(px,py,2.5,0,TAU);
+  ctx.fill();
+
+  // Viewport box
+  ctx.strokeStyle='rgba(255,255,255,0.3)';
+  ctx.lineWidth=0.5;
+  ctx.strokeRect(mmX+cam.x*scale, mmY+cam.y*scale, W*scale, H*scale);
+}
+
+function roundRect(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.lineTo(x+w-r,y);
+  ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r);
+  ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h);
+  ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r);
+  ctx.quadraticCurveTo(x,y,x+r,y);
+  ctx.closePath();
+}
+
+// ---- JOYSTICK RENDER ----
+function renderJoystick(){
+  if(!isTouchDevice) return;
+  if(state!=='PLAYING') return;
+  const cx=80, cy=H-90, r=50;
+  ctx.globalAlpha=0.25;
+  ctx.strokeStyle='#fff';
+  ctx.lineWidth=2;
+  ctx.beginPath();
+  ctx.arc(cx,cy,r,0,TAU);
+  ctx.stroke();
+
+  const kx=cx+touchJoystick.dx;
+  const ky=cy+touchJoystick.dy;
+  ctx.fillStyle='rgba(255,255,255,0.3)';
+  ctx.beginPath();
+  ctx.arc(kx,ky,20,0,TAU);
+  ctx.fill();
+  ctx.globalAlpha=1;
+}
+
+// ---- SCREEN RENDERERS ----
+function renderTitle(dt){
+  titleTime += dt;
+  renderBackground();
+
+  // Title text
+  ctx.save();
+  ctx.textAlign='center';
+  ctx.textBaseline='middle';
+
+  // Glow behind title
+  const glow = 0.3+0.15*Math.sin(titleTime*1.5);
+  ctx.shadowColor=C.accent;
+  ctx.shadowBlur=40*glow;
+  ctx.fillStyle='#fff';
+  ctx.font='bold 64px sans-serif';
+  ctx.fillText('STARLIGHT', W/2, H*0.28);
+  ctx.shadowBlur=0;
+
+  // Subtitle
+  ctx.fillStyle=C.accent;
+  ctx.font='16px sans-serif';
+  ctx.fillText('A Space Exploration Game', W/2, H*0.28+45);
+
+  // Tagline
+  ctx.fillStyle=C.textDim;
+  ctx.font='italic 14px sans-serif';
+  ctx.fillText('"The light you see is already old"', W/2, H*0.28+72);
+
+  // Ship silhouette
+  ctx.save();
+  ctx.translate(W/2, H*0.55);
+  ctx.rotate(-0.2+Math.sin(titleTime*0.8)*0.1);
+  ctx.fillStyle=C.ship;
+  ctx.beginPath();
+  ctx.moveTo(30,0); ctx.lineTo(-16,-14); ctx.lineTo(-10,0); ctx.lineTo(-16,14); ctx.closePath();
+  ctx.fill();
+  // Engine glow
+  ctx.fillStyle=C.engine;
+  ctx.globalAlpha=0.6+0.3*Math.sin(titleTime*4);
+  ctx.beginPath();
+  ctx.moveTo(-10,0); ctx.lineTo(-22,-5); ctx.lineTo(-22,5); ctx.closePath();
+  ctx.fill();
+  ctx.globalAlpha=1;
+  ctx.restore();
+
+  // Star particles around ship
+  for(let i=0;i<5;i++){
+    const sa=titleTime*0.5+i*TAU/5;
+    const sr=60+Math.sin(titleTime*2+i)*10;
+    const ssx=W/2+Math.cos(sa)*sr;
+    const ssy=H*0.55+Math.sin(sa)*sr*0.6;
+    const cols=[C.starRed,C.starYellow,C.starBlue,C.starWhite,C.photon];
+    ctx.fillStyle=cols[i];
+    ctx.globalAlpha=0.6+0.3*Math.sin(titleTime*3+i);
+    ctx.beginPath();
+    ctx.arc(ssx,ssy,2.5,0,TAU);
+    ctx.fill();
+  }
+  ctx.globalAlpha=1;
+
+  ctx.restore();
+
+  // Buttons
+  clearButtons();
+  const btnW=200, btnH=44, btnGap=14;
+  const baseY=H*0.68;
+
+  drawButton(W/2-btnW/2, baseY, btnW, btnH, 'PLAY', C.accent, ()=>{initAudio(); state='LEVEL_SELECT';});
+  drawButton(W/2-btnW/2, baseY+btnH+btnGap, btnW, btnH, 'HOW TO PLAY', '#5C6BC0', ()=>{initAudio(); state='HOW_TO';});
+  drawButton(W/2-btnW/2, baseY+(btnH+btnGap)*2, btnW, btnH, 'STAR CATALOG', C.photon, ()=>{initAudio(); state='CATALOG';});
+
+  // NGSS badge
+  ctx.fillStyle=C.textDim;
+  ctx.font='10px sans-serif';
+  ctx.textAlign='center';
+  ctx.fillText('NGSS 5-ESS1-1 | Star Brightness & Distance', W/2, H-20);
+}
+
+function drawButton(x,y,w,h,label,color,cb){
+  // Check hover
+  const hov = mouse.x>=x && mouse.x<=x+w && mouse.y>=y && mouse.y<=y+h;
+  ctx.fillStyle = hov ? color+'DD' : color+'99';
+  roundRect(ctx,x,y,w,h,6);
+  ctx.fill();
+  ctx.strokeStyle=color;
+  ctx.lineWidth=hov?2:1;
+  roundRect(ctx,x,y,w,h,6);
+  ctx.stroke();
+
+  ctx.fillStyle='#fff';
+  ctx.font='bold 15px sans-serif';
+  ctx.textAlign='center';
+  ctx.textBaseline='middle';
+  ctx.fillText(label, x+w/2, y+h/2);
+
+  addBtn(label,x,y,w,h,label,cb);
+}
+
+function renderHowTo(dt){
+  titleTime+=dt;
+  renderBackground();
+  clearButtons();
+
+  ctx.textAlign='center';
+  ctx.fillStyle='#fff';
+  ctx.font='bold 28px sans-serif';
+  ctx.fillText('HOW TO PLAY', W/2, 50);
+
+  const instructions = [
+    {icon:'arrow', text:'Use WASD or Arrow Keys to fly your spacecraft (touch: joystick)'},
+    {icon:'star', text:'Fly near stars to collect their ancient starlight photons'},
+    {icon:'dist', text:'Farther stars = older light = MORE POINTS (but harder to find!)'},
+    {icon:'fuel', text:'Watch your fuel! Dock at stations (cyan rings) to refuel'},
+    {icon:'shield', text:'Asteroids damage your shield - 3 hits and it\'s game over'},
+    {icon:'power', text:'Grab powerups: Warp (W), Telescope (T), Fuel (F), Shield (S)'},
+    {icon:'science', text:'Each star\'s apparent brightness depends on distance AND luminosity'},
+    {icon:'catalog', text:'Discover all 4 star types to complete your Star Catalog!'}
+  ];
+
+  const startY=90;
+  for(let i=0;i<instructions.length;i++){
+    const iy=startY+i*38;
+    ctx.fillStyle=C.accent;
+    ctx.font='bold 12px sans-serif';
+    ctx.textAlign='left';
+
+    // Icon
+    const iconX=W/2-260;
+    switch(instructions[i].icon){
+      case 'arrow': ctx.fillText('>>',iconX,iy+4); break;
+      case 'star': ctx.fillText('*',iconX+2,iy+4); break;
+      case 'dist': ctx.fillText('~',iconX+2,iy+4); break;
+      case 'fuel': ctx.fillStyle=C.fuel; ctx.fillText('F',iconX+2,iy+4); break;
+      case 'shield': ctx.fillStyle=C.shield; ctx.fillText('S',iconX+2,iy+4); break;
+      case 'power': ctx.fillStyle=C.warp; ctx.fillText('+',iconX+2,iy+4); break;
+      case 'science': ctx.fillStyle=C.photon; ctx.fillText('!',iconX+4,iy+4); break;
+      case 'catalog': ctx.fillStyle=C.starYellow; ctx.fillText('#',iconX+2,iy+4); break;
+    }
+
+    ctx.fillStyle=C.textDim;
+    ctx.font='13px sans-serif';
+    ctx.textAlign='left';
+    ctx.fillText(instructions[i].text, iconX+22, iy+4);
+  }
+
+  // Science box
+  const boxW=400, boxH=70;
+  const bx=W/2-boxW/2, by=startY+instructions.length*38+16;
+  ctx.fillStyle='rgba(0,188,212,0.08)';
+  ctx.strokeStyle=C.accent+'60';
+  ctx.lineWidth=1;
+  roundRect(ctx,bx,by,boxW,boxH,6);
+  ctx.fill();
+  roundRect(ctx,bx,by,boxW,boxH,6);
+  ctx.stroke();
+  ctx.fillStyle=C.accent;
+  ctx.font='bold 12px sans-serif';
+  ctx.textAlign='center';
+  ctx.fillText('THE SCIENCE', W/2, by+18);
+  ctx.fillStyle='#B0BEC5';
+  ctx.font='11px sans-serif';
+  ctx.fillText('Stars that are farther away appear dimmer (apparent brightness).', W/2, by+36);
+  ctx.fillText('Their light has traveled for years to reach us - you\'re seeing the past!', W/2, by+52);
+
+  drawButton(W/2-80, H-60, 160, 40, 'BACK', '#5C6BC0', ()=>{state='TITLE';});
+}
+
+function renderLevelSelect(dt){
+  titleTime+=dt;
+  renderBackground();
+  clearButtons();
+
+  ctx.textAlign='center';
+  ctx.fillStyle='#fff';
+  ctx.font='bold 28px sans-serif';
+  ctx.fillText('SELECT REGION', W/2, 46);
+
+  const cardW=Math.min(180, (W-80)/5-10);
+  const totalW=LEVELS.length*(cardW+10)-10;
+  const startX=W/2-totalW/2;
+
+  for(let i=0;i<LEVELS.length;i++){
+    const lvl=LEVELS[i];
+    const cx=startX+i*(cardW+10);
+    const cy=80;
+    const ch=H-150;
+    const unlocked=saveData.unlockedLevels.includes(lvl.id);
+    const hs=saveData.highScores[i];
+
+    ctx.fillStyle = unlocked ? C.ui : 'rgba(30,30,40,0.7)';
+    ctx.strokeStyle = unlocked ? C.accent+'60' : '#333';
+    ctx.lineWidth=1;
+    roundRect(ctx,cx,cy,cardW,ch,8);
+    ctx.fill();
+    roundRect(ctx,cx,cy,cardW,ch,8);
+    ctx.stroke();
+
+    // Level number
+    ctx.fillStyle = unlocked ? C.accent : '#555';
+    ctx.font='bold 32px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText(lvl.id, cx+cardW/2, cy+40);
+
+    // Name
+    ctx.fillStyle = unlocked ? '#fff' : '#666';
+    ctx.font='bold 12px sans-serif';
+    ctx.fillText(lvl.name, cx+cardW/2, cy+62, cardW-10);
+
+    // Desc
+    ctx.fillStyle=C.textDim;
+    ctx.font='10px sans-serif';
+    ctx.fillText(lvl.desc, cx+cardW/2, cy+80, cardW-10);
+
+    // Stars count
+    ctx.fillStyle=C.textDim;
+    ctx.font='10px sans-serif';
+    ctx.fillText(lvl.starCount+' stars', cx+cardW/2, cy+100);
+
+    // Medal thresholds
+    ctx.font='9px sans-serif';
+    ctx.fillStyle='#CD7F32'; ctx.fillText('B: '+formatNumber(lvl.scoreBronze), cx+cardW/2, cy+120);
+    ctx.fillStyle='#C0C0C0'; ctx.fillText('S: '+formatNumber(lvl.scoreSilver), cx+cardW/2, cy+136);
+    ctx.fillStyle='#FFD700'; ctx.fillText('G: '+formatNumber(lvl.scoreGold), cx+cardW/2, cy+152);
+
+    // High score
+    if(hs){
+      ctx.fillStyle=C.photon;
+      ctx.font='bold 11px sans-serif';
+      ctx.fillText('Best: '+formatNumber(hs.score), cx+cardW/2, cy+175);
+      // Medal
+      let medalCol='#aaa', medalText='-';
+      if(hs.medal==='gold'){medalCol='#FFD700'; medalText='GOLD';}
+      else if(hs.medal==='silver'){medalCol='#C0C0C0'; medalText='SILVER';}
+      else if(hs.medal==='bronze'){medalCol='#CD7F32'; medalText='BRONZE';}
+      ctx.fillStyle=medalCol;
+      ctx.font='bold 10px sans-serif';
+      ctx.fillText(medalText, cx+cardW/2, cy+192);
+    }
+
+    if(unlocked){
+      const btnY=cy+ch-46;
+      drawButton(cx+10, btnY, cardW-20, 34, 'LAUNCH', C.accent, (function(idx){return function(){
+        currentLevel=idx;
+        generateLevel(idx);
+        state='PLAYING';
+        startAmbient();
+      }})(i));
+    } else {
+      ctx.fillStyle='#555';
+      ctx.font='bold 12px sans-serif';
+      ctx.fillText('LOCKED', cx+cardW/2, cy+ch-28);
+    }
+  }
+
+  drawButton(W/2-80, H-52, 160, 38, 'BACK', '#5C6BC0', ()=>{state='TITLE';});
+}
+
+function renderCatalog(dt){
+  titleTime+=dt;
+  renderBackground();
+  clearButtons();
+
+  ctx.textAlign='center';
+  ctx.fillStyle='#fff';
+  ctx.font='bold 28px sans-serif';
+  ctx.fillText('STAR CATALOG', W/2, 46);
+
+  ctx.fillStyle=C.textDim;
+  ctx.font='13px sans-serif';
+  ctx.fillText('Discover all star types by collecting their light!', W/2, 72);
+
+  const cardW=220, cardH=160, gap=20;
+  const totalW=2*(cardW+gap)-gap;
+  const startX=W/2-totalW/2;
+  const startY=100;
+
+  for(let i=0;i<STAR_TYPES.length;i++){
+    const st=STAR_TYPES[i];
+    const col=Math.floor(i%2);
+    const row=Math.floor(i/2);
+    const cx=startX+col*(cardW+gap);
+    const cy=startY+row*(cardH+gap);
+    const discovered=saveData.catalog.includes(st.id);
+
+    ctx.fillStyle=C.ui;
+    ctx.strokeStyle = discovered ? st.color+'80' : '#333';
+    ctx.lineWidth = discovered ? 2 : 1;
+    roundRect(ctx,cx,cy,cardW,cardH,8);
+    ctx.fill();
+    roundRect(ctx,cx,cy,cardW,cardH,8);
+    ctx.stroke();
+
+    if(discovered){
+      // Star glow
+      const glowG=ctx.createRadialGradient(cx+35,cy+35,0,cx+35,cy+35,25);
+      glowG.addColorStop(0, st.color+'80');
+      glowG.addColorStop(1, st.color+'00');
+      ctx.fillStyle=glowG;
+      ctx.beginPath(); ctx.arc(cx+35,cy+35,25,0,TAU); ctx.fill();
+
+      ctx.fillStyle=st.color;
+      ctx.beginPath();
+      ctx.arc(cx+35,cy+35,st.baseRadius*1.5,0,TAU);
+      ctx.fill();
+      ctx.fillStyle='#fff';
+      ctx.beginPath();
+      ctx.arc(cx+35,cy+35,st.baseRadius*0.5,0,TAU);
+      ctx.fill();
+
+      ctx.fillStyle='#fff';
+      ctx.font='bold 14px sans-serif';
+      ctx.textAlign='left';
+      ctx.fillText(st.name, cx+65, cy+30);
+
+      ctx.fillStyle=st.color;
+      ctx.font='11px sans-serif';
+      ctx.fillText('Luminosity: '+(st.luminosity*100).toFixed(0)+'%', cx+65, cy+48);
+
+      ctx.fillStyle=C.textDim;
+      ctx.font='11px sans-serif';
+      // Word wrap desc
+      const words=st.desc.split(' ');
+      let line='', ly=cy+72;
+      for(const w of words){
+        if(ctx.measureText(line+w+' ').width > cardW-30){
+          ctx.fillText(line, cx+15, ly);
+          ly+=16; line=w+' ';
+        } else { line+=w+' '; }
+      }
+      if(line) ctx.fillText(line, cx+15, ly);
+
+      ctx.fillStyle='#4CAF50';
+      ctx.font='bold 10px sans-serif';
+      ctx.fillText('DISCOVERED', cx+65, cy+cardH-14);
+    } else {
+      ctx.fillStyle='#444';
+      ctx.font='40px sans-serif';
+      ctx.textAlign='center';
+      ctx.fillText('?', cx+cardW/2, cy+60);
+      ctx.fillStyle='#666';
+      ctx.font='12px sans-serif';
+      ctx.fillText('Undiscovered', cx+cardW/2, cy+90);
+      ctx.fillStyle='#555';
+      ctx.font='10px sans-serif';
+      ctx.fillText('Find and collect this star type', cx+cardW/2, cy+110);
+    }
+  }
+
+  ctx.fillStyle=C.textDim;
+  ctx.font='12px sans-serif';
+  ctx.textAlign='center';
+  ctx.fillText(saveData.catalog.length+' / '+STAR_TYPES.length+' types discovered', W/2, H-70);
+
+  drawButton(W/2-80, H-52, 160, 38, 'BACK', '#5C6BC0', ()=>{state='TITLE';});
+}
+
+function renderLevelComplete(dt){
+  titleTime+=dt;
+  renderBackground();
+  clearButtons();
+
+  const lvl=LEVELS[currentLevel];
+  const hs=saveData.highScores[currentLevel];
+  let medal='none';
+  if(hs) medal=hs.medal;
+
+  ctx.textAlign='center';
+  ctx.fillStyle='#fff';
+  ctx.font='bold 32px sans-serif';
+  ctx.fillText('REGION COMPLETE!', W/2, H*0.15);
+
+  ctx.fillStyle=C.accent;
+  ctx.font='18px sans-serif';
+  ctx.fillText(lvl.name, W/2, H*0.15+35);
+
+  // Score
+  ctx.fillStyle=C.photon;
+  ctx.font='bold 40px sans-serif';
+  ctx.fillText(formatNumber(levelScore), W/2, H*0.38);
+  ctx.fillStyle='#fff';
+  ctx.font='14px sans-serif';
+  ctx.fillText('POINTS', W/2, H*0.38+25);
+
+  // Medal
+  let medalCol='#777', medalName='No Medal';
+  if(medal==='gold'){medalCol='#FFD700'; medalName='GOLD MEDAL';}
+  else if(medal==='silver'){medalCol='#C0C0C0'; medalName='SILVER MEDAL';}
+  else if(medal==='bronze'){medalCol='#CD7F32'; medalName='BRONZE MEDAL';}
+  ctx.fillStyle=medalCol;
+  ctx.font='bold 22px sans-serif';
+  ctx.fillText(medalName, W/2, H*0.52);
+
+  // Stats
+  ctx.fillStyle=C.textDim;
+  ctx.font='12px sans-serif';
+  ctx.fillText('Stars collected: '+collectedStarIds.size+'/'+stars.length, W/2, H*0.62);
+  ctx.fillText('Fuel efficiency: '+((levelScore/(totalFuelUsed||1))*10).toFixed(1)+' pts/fuel', W/2, H*0.62+20);
+  ctx.fillText('Best streak: '+streak, W/2, H*0.62+40);
+
+  // Next thresholds
+  if(medal!=='gold'){
+    const nextThresh = medal==='silver' ? lvl.scoreGold : medal==='bronze' ? lvl.scoreSilver : lvl.scoreBronze;
+    const nextName = medal==='silver' ? 'Gold' : medal==='bronze' ? 'Silver' : 'Bronze';
+    ctx.fillStyle='#888';
+    ctx.font='11px sans-serif';
+    ctx.fillText('Need '+formatNumber(nextThresh)+' for '+nextName, W/2, H*0.62+65);
+  }
+
+  const btnY=H*0.78;
+  if(currentLevel+1<LEVELS.length){
+    drawButton(W/2-210, btnY, 200, 40, 'NEXT REGION', C.accent, ()=>{
+      currentLevel++;
+      generateLevel(currentLevel);
+      state='PLAYING';
+      startAmbient();
+    });
+  }
+  drawButton(W/2+10, btnY, 200, 40, 'LEVEL SELECT', '#5C6BC0', ()=>{state='LEVEL_SELECT';});
+}
+
+function renderGameOver(dt){
+  titleTime+=dt;
+  renderBackground();
+  clearButtons();
+
+  ctx.textAlign='center';
+  ctx.fillStyle='#FF5252';
+  ctx.font='bold 36px sans-serif';
+  ctx.fillText('MISSION FAILED', W/2, H*0.2);
+
+  if(fuel<=0){
+    ctx.fillStyle=C.fuel;
+    ctx.font='16px sans-serif';
+    ctx.fillText('Out of fuel!', W/2, H*0.2+35);
+  } else {
+    ctx.fillStyle=C.shield;
+    ctx.font='16px sans-serif';
+    ctx.fillText('Shields destroyed!', W/2, H*0.2+35);
+  }
+
+  ctx.fillStyle=C.photon;
+  ctx.font='bold 32px sans-serif';
+  ctx.fillText(formatNumber(levelScore)+' pts', W/2, H*0.4);
+
+  ctx.fillStyle=C.textDim;
+  ctx.font='12px sans-serif';
+  ctx.fillText('Stars collected: '+collectedStarIds.size+'/'+stars.length, W/2, H*0.52);
+
+  // Save if it's a high score anyway
+  const lvl=LEVELS[currentLevel];
+  if(levelScore > 0){
+    let medal='none';
+    if(levelScore>=lvl.scoreGold) medal='gold';
+    else if(levelScore>=lvl.scoreSilver) medal='silver';
+    else if(levelScore>=lvl.scoreBronze) medal='bronze';
+    if(!saveData.highScores[currentLevel] || levelScore > saveData.highScores[currentLevel].score){
+      saveData.highScores[currentLevel]={score:levelScore, medal};
+      saveData.totalScore = Object.values(saveData.highScores).reduce((s,h)=>s+h.score,0);
+      writeSave();
+    }
+  }
+
+  drawButton(W/2-210, H*0.65, 200, 40, 'RETRY', C.accent, ()=>{
+    generateLevel(currentLevel);
+    state='PLAYING';
+    startAmbient();
+  });
+  drawButton(W/2+10, H*0.65, 200, 40, 'LEVEL SELECT', '#5C6BC0', ()=>{state='LEVEL_SELECT';});
+}
+
+function renderPlaying(dt){
+  // Update
+  updateTimers(dt);
+  updateShip(dt);
+  updateWarp(dt);
+  updateStarCollection(dt);
+  updateAsteroids(dt);
+  updateStations(dt);
+  updatePowerups(dt);
+  updateBlackHoles(dt);
+  updateParticles(dt);
+  updateFloatTexts(dt);
+
+  // Camera follow
+  cam.x = lerp(cam.x, ship.x - W/2, 5*dt);
+  cam.y = lerp(cam.y, ship.y - H/2, 5*dt);
+
+  // Screen shake
+  let shakeX=0, shakeY=0;
+  if(shakeTimer>0){
+    shakeX=(Math.random()-0.5)*shakeIntensity*2;
+    shakeY=(Math.random()-0.5)*shakeIntensity*2;
+  }
+
+  ctx.save();
+  ctx.translate(shakeX, shakeY);
+
+  // Render world
+  renderBackground();
+  renderNebulae();
+  renderBlackHoles();
+  renderStars();
+  renderAsteroids();
+  renderStations();
+  renderPowerups();
+  renderParticles();
+  renderShip();
+  renderFloatTexts();
+
+  ctx.restore();
+
+  // UI overlay
+  renderHUD();
+  renderStarInfoCard();
+  renderJoystick();
+
+  // Warp overlay
+  if(warpTimer>0){
+    const wt=1-(warpTimer/WARP_DURATION);
+    ctx.fillStyle='rgba(124,77,255,'+(0.15*Math.sin(wt*Math.PI))+')';
+    ctx.fillRect(0,0,W,H);
+  }
+
+  // Telescope overlay
+  if(telescopeTimer>0){
+    ctx.strokeStyle='rgba(0,188,212,'+(0.1+0.05*Math.sin(gameTime*3))+')';
+    ctx.lineWidth=2;
+    ctx.beginPath();
+    ctx.arc(W/2,H/2,Math.min(W,H)*0.45,0,TAU);
+    ctx.stroke();
+  }
+
+  checkLevelComplete();
+}
+
+// ---- MAIN LOOP ----
+let lastTime = 0;
+function gameLoop(timestamp){
+  const dt = Math.min((timestamp-lastTime)/1000, 0.05);
+  lastTime = timestamp;
+
+  resize();
+  clearButtons();
+  updateMouseWorld();
+
+  switch(state){
+    case 'TITLE': renderTitle(dt); break;
+    case 'HOW_TO': renderHowTo(dt); break;
+    case 'LEVEL_SELECT': renderLevelSelect(dt); break;
+    case 'PLAYING': renderPlaying(dt); break;
+    case 'LEVEL_COMPLETE': renderLevelComplete(dt); break;
+    case 'GAME_OVER': renderGameOver(dt); break;
+    case 'CATALOG': renderCatalog(dt); break;
+  }
+
+  requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
+
+// ---- KEYBOARD SHORTCUTS ----
+window.addEventListener('keydown', e=>{
+  if(e.key==='Escape'){
+    if(state==='PLAYING'){state='LEVEL_SELECT'; stopAmbient();}
+    else if(state!=='TITLE') state='TITLE';
+  }
+});
+
+})();
+</script>
+</body>
+</html>

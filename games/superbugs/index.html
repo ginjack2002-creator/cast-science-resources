@@ -1,0 +1,2637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>SUPERBUGS - Antibiotic Resistance Survival</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0a0e14;font-family:'Segoe UI',system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none}
+canvas{display:block;width:100%;height:100%}
+#orient{display:none;position:fixed;inset:0;background:#0a0e14;color:#00E676;z-index:9999;flex-direction:column;align-items:center;justify-content:center;font-size:1.4rem;text-align:center;padding:2rem}
+#orient svg{width:60px;height:60px;margin-bottom:1rem;animation:rot 2s ease-in-out infinite}
+@keyframes rot{0%,100%{transform:rotate(0deg)}50%{transform:rotate(90deg)}}
+@media(max-width:600px) and (orientation:portrait){#orient{display:flex}}
+</style>
+</head>
+<body>
+<div id="orient"><svg viewBox="0 0 24 24" fill="none" stroke="#00E676" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>Rotate your device to<br><b>LANDSCAPE</b> to play</div>
+<canvas id="c"></canvas>
+<script>
+"use strict";
+// =====================================================================
+// SUPERBUGS - Antibiotic Resistance Roguelike
+// NGSS MS-LS4-4, MS-LS4-6 - Natural Selection & Evolution
+// A CAST Science Educational Game
+// =====================================================================
+
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+// --- Constants ---
+const PI = Math.PI, TAU = PI * 2;
+const MAX_PARTICLES = 600;
+const CLONE_MAX = 15;
+const NUTRIENT_COUNT = 6;
+const BIOFILM_TRAIL_MAX = 80;
+
+// Color palette - Microscopic neon biology
+const COL = {
+  bg: '#1B2631', grid: '#243342', player: '#00E676', clone: '#4CAF50',
+  penicillin: '#42A5F5', tetracycline: '#FFD54F', vancomycin: '#EF5350',
+  mutation: '#AB47BC', nutrient: '#FFF59D', biofilm: '#81C784',
+  cellwall: '#2E7D32', efflux: '#00BCD4', health: '#00E676',
+  healthBg: '#1a3a1a', ui: '#0D1117', uiBorder: '#1e3a2a', text: '#E0E0E0',
+  accent: '#00E676', danger: '#EF5350', boss: '#FF1744',
+  darkBg: '#0a0e14', panelBg: '#0d1117cc'
+};
+
+// All 9 mutation definitions with full data
+const MUTATIONS = [
+  { id: 'thick_wall', name: 'Thick Cell Wall', desc: 'Reduces antibiotic damage by 25% per level',
+    icon: 'wall', color: COL.cellwall, scienceTip: 'Gram-positive bacteria have thick peptidoglycan walls that block antibiotics.' },
+  { id: 'efflux_pump', name: 'Efflux Pump', desc: 'Pushes nearby antibiotics away from you',
+    icon: 'pump', color: COL.efflux, scienceTip: 'Real bacteria use protein pumps to expel antibiotics before they cause damage.' },
+  { id: 'biofilm', name: 'Biofilm Shield', desc: 'Become invincible when stationary for 1 second',
+    icon: 'film', color: COL.biofilm, scienceTip: 'Biofilms are slimy communities of bacteria that are 1000x more resistant to antibiotics.' },
+  { id: 'rapid_div', name: 'Rapid Division', desc: 'Clone yourself 50% faster per level',
+    icon: 'div', color: '#76FF03', scienceTip: 'Faster reproduction means more chances for beneficial mutations to appear.' },
+  { id: 'flagella', name: 'Flagella Boost', desc: 'Move 35% faster per level to dodge threats',
+    icon: 'flag', color: '#FFAB40', scienceTip: 'Flagella are whip-like tails that bacteria spin like propellers to swim.' },
+  { id: 'shape_shift', name: 'Shape Shift', desc: 'Reduces your hitbox by 20% per level',
+    icon: 'shape', color: '#CE93D8', scienceTip: 'Some bacteria change shape to avoid detection by immune cells.' },
+  { id: 'enzyme', name: 'Enzyme Production', desc: 'Destroys nearby antibiotics on contact',
+    icon: 'enz', color: '#FF8A65', scienceTip: 'Beta-lactamase enzymes break apart penicillin molecules, making them harmless.' },
+  { id: 'dormancy', name: 'Dormancy', desc: 'Press SPACE to sleep — immune but immobile for 3s',
+    icon: 'dorm', color: '#90A4AE', scienceTip: 'Persister cells enter a dormant state to survive antibiotic treatment.' },
+  { id: 'gene_transfer', name: 'Gene Transfer', desc: 'Your offspring inherit a bonus random mutation',
+    icon: 'gene', color: '#F48FB1', scienceTip: 'Horizontal gene transfer lets bacteria share resistance genes — even across species!' }
+];
+
+// --- Procedural Audio Engine (Web Audio API) ---
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+
+function ensureAudio() {
+  if (!audioCtx) audioCtx = new AudioCtx();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}
+
+function playTone(freq, dur, type, vol, detune) {
+  if (!audioCtx) return;
+  try {
+    const g = audioCtx.createGain();
+    const o = audioCtx.createOscillator();
+    o.type = type || 'sine';
+    o.frequency.value = freq;
+    if (detune) o.detune.value = detune;
+    g.gain.setValueAtTime(Math.min(vol || 0.15, 0.3), audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+    o.connect(g);
+    g.connect(audioCtx.destination);
+    o.start();
+    o.stop(audioCtx.currentTime + dur);
+  } catch (e) { /* audio error silenced */ }
+}
+
+function playNoise(dur, vol) {
+  if (!audioCtx) return;
+  try {
+    const bufSize = audioCtx.sampleRate * dur;
+    const buf = audioCtx.createBuffer(1, bufSize, audioCtx.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < bufSize; i++) data[i] = (Math.random() * 2 - 1) * 0.5;
+    const src = audioCtx.createBufferSource();
+    src.buffer = buf;
+    const g = audioCtx.createGain();
+    g.gain.setValueAtTime(vol || 0.1, audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+    const filt = audioCtx.createBiquadFilter();
+    filt.type = 'lowpass';
+    filt.frequency.value = 800;
+    src.connect(filt);
+    filt.connect(g);
+    g.connect(audioCtx.destination);
+    src.start();
+  } catch (e) { /* audio error silenced */ }
+}
+
+// Sound effects - squelchy, biological, microscopic feel
+function sfxDivide() {
+  playTone(180, 0.15, 'sine', 0.18);
+  setTimeout(() => playTone(240, 0.1, 'sine', 0.12), 80);
+  setTimeout(() => playTone(320, 0.15, 'sine', 0.15), 150);
+  playNoise(0.2, 0.05);
+}
+
+function sfxHit() {
+  playTone(80, 0.12, 'sawtooth', 0.18);
+  playTone(55, 0.18, 'square', 0.08);
+  playNoise(0.08, 0.08);
+}
+
+function sfxMutationChime() {
+  playTone(523, 0.12, 'sine', 0.14);
+  setTimeout(() => playTone(659, 0.12, 'sine', 0.14), 100);
+  setTimeout(() => playTone(784, 0.2, 'sine', 0.18), 200);
+  setTimeout(() => playTone(1047, 0.3, 'sine', 0.12), 320);
+}
+
+function sfxWaveAlarm() {
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      playTone(440 + i * 40, 0.1, 'square', 0.1);
+      playTone(220 + i * 20, 0.1, 'sawtooth', 0.06);
+    }, i * 160);
+  }
+}
+
+function sfxEnzyme() {
+  playTone(150, 0.08, 'sawtooth', 0.12);
+  playTone(250, 0.06, 'square', 0.08);
+  playNoise(0.06, 0.06);
+}
+
+function sfxDeath() {
+  playTone(100, 0.5, 'sawtooth', 0.2);
+  playTone(60, 0.6, 'sine', 0.12);
+  playNoise(0.4, 0.1);
+}
+
+function sfxSelect() {
+  playTone(600, 0.06, 'sine', 0.1);
+}
+
+function sfxBossHit() {
+  playTone(50, 0.25, 'sawtooth', 0.22);
+  playTone(35, 0.35, 'square', 0.12);
+  playNoise(0.15, 0.08);
+}
+
+function sfxCardReveal() {
+  playTone(400, 0.05, 'sine', 0.1);
+  setTimeout(() => playTone(500, 0.08, 'sine', 0.12), 50);
+}
+
+function sfxDormancy() {
+  playTone(300, 0.3, 'sine', 0.1);
+  playTone(200, 0.4, 'sine', 0.08);
+}
+
+function sfxWakeUp() {
+  playTone(200, 0.1, 'sine', 0.1);
+  setTimeout(() => playTone(400, 0.15, 'sine', 0.12), 80);
+}
+
+// --- Global State ---
+let W, H, CX, CY, dishR;
+let dpr = 1;
+let state = 'TITLE'; // TITLE, HOW_TO, PLAYING, MUTATION_SELECT, GAME_OVER, HIGH_SCORES
+let keys = {};
+let gameTime = 0;
+let dt = 0;
+let lastTime = 0;
+
+// Screen shake
+let shakeX = 0, shakeY = 0, shakeMag = 0, shakeDecay = 0.92;
+
+// Touch input
+let touchJoy = null; // {sx, sy, cx, cy}
+let touchTap = false;
+let touchActive = false;
+
+// Game objects
+let player = null;
+let clones = [];
+let antibiotics = [];
+let particles = [];
+let nutrients = [];
+let bosses = [];
+let biofilmTrails = []; // {x, y, r, alpha, age}
+let divisionAnimations = []; // {x, y, phase, r, color}
+
+// Wave management
+let wave = 0;
+let waveTimer = 0;
+let waveDuration = 12;
+let waveSpawnTimer = 0;
+let waveActive = false;
+let waveIntroTimer = 0;
+let betweenWaveTimer = 0;
+let waveKills = 0;
+
+// Mutation selection screen
+let mutationChoices = [];
+let mutationHover = -1;
+let selectedMutation = -1;
+let cardFlipTimers = [0, 0, 0];
+let cardRevealed = [false, false, false];
+
+// Scoring
+let score = 0;
+let totalMutations = 0;
+let resistanceLevel = 0;
+let peakPopulation = 0;
+
+// Title screen decoration
+let titleBacteria = [];
+let titleAntibiotics = [];
+let titleTime = 0;
+
+// High scores from localStorage
+let highScores = [];
+
+// Mutation catalog (persistent collection tracking)
+let mutationCatalog = {};
+
+// --- Canvas Resize with DPR Scaling ---
+function resize() {
+  dpr = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth;
+  H = window.innerHeight;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  CX = W / 2;
+  CY = H / 2;
+  dishR = Math.min(W, H) * 0.44;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// --- Input Handling ---
+window.addEventListener('keydown', e => {
+  keys[e.code] = true;
+  if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+    e.preventDefault();
+  }
+  ensureAudio();
+});
+
+window.addEventListener('keyup', e => {
+  keys[e.code] = false;
+});
+
+canvas.addEventListener('touchstart', e => {
+  e.preventDefault();
+  ensureAudio();
+  const t = e.touches[0];
+  const x = t.clientX, y = t.clientY;
+  if (state === 'PLAYING') {
+    if (x < W * 0.4) {
+      touchJoy = { sx: x, sy: y, cx: x, cy: y };
+      touchActive = true;
+    } else {
+      touchTap = true;
+    }
+  } else {
+    handleClick(x, y);
+  }
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (touchJoy) {
+    const t = e.touches[0];
+    touchJoy.cx = t.clientX;
+    touchJoy.cy = t.clientY;
+  }
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+  e.preventDefault();
+  touchJoy = null;
+  touchActive = false;
+  touchTap = false;
+}, { passive: false });
+
+canvas.addEventListener('mousedown', e => {
+  ensureAudio();
+  handleClick(e.clientX, e.clientY);
+});
+
+canvas.addEventListener('mousemove', e => {
+  handleHover(e.clientX, e.clientY);
+});
+
+// Click routing for each game state
+function handleClick(mx, my) {
+  if (state === 'TITLE') {
+    if (hitBtn(mx, my, CX, CY + 60, 220, 50)) {
+      state = 'HOW_TO';
+      sfxSelect();
+    } else if (hitBtn(mx, my, CX, CY + 130, 220, 50)) {
+      state = 'HIGH_SCORES';
+      sfxSelect();
+      loadScores();
+    }
+  } else if (state === 'HOW_TO') {
+    if (hitBtn(mx, my, CX, CY + 155, 220, 50)) {
+      startGame();
+      sfxSelect();
+    } else if (hitBtn(mx, my, CX, CY + 215, 220, 50)) {
+      state = 'TITLE';
+      sfxSelect();
+    }
+  } else if (state === 'MUTATION_SELECT') {
+    for (let i = 0; i < 3; i++) {
+      const cx = CX + (i - 1) * 200;
+      const cy = CY + 10;
+      if (mx > cx - 82 && mx < cx + 82 && my > cy - 125 && my < cy + 125) {
+        if (cardRevealed[i]) {
+          selectMutation(i);
+        } else {
+          cardRevealed[i] = true;
+          cardFlipTimers[i] = 0.3;
+          sfxCardReveal();
+        }
+      }
+    }
+  } else if (state === 'GAME_OVER') {
+    if (hitBtn(mx, my, CX, CY + 110, 220, 50)) {
+      startGame();
+      sfxSelect();
+    } else if (hitBtn(mx, my, CX, CY + 180, 220, 50)) {
+      state = 'TITLE';
+      sfxSelect();
+    }
+  } else if (state === 'HIGH_SCORES') {
+    if (hitBtn(mx, my, CX, CY + 190, 220, 50)) {
+      state = 'TITLE';
+      sfxSelect();
+    }
+  }
+}
+
+function handleHover(mx, my) {
+  if (state === 'MUTATION_SELECT') {
+    mutationHover = -1;
+    for (let i = 0; i < 3; i++) {
+      const cx = CX + (i - 1) * 200;
+      const cy = CY + 10;
+      if (mx > cx - 82 && mx < cx + 82 && my > cy - 125 && my < cy + 125) {
+        mutationHover = i;
+      }
+    }
+  }
+}
+
+function hitBtn(mx, my, bx, by, bw, bh) {
+  return mx > bx - bw / 2 && mx < bx + bw / 2 && my > by - bh / 2 && my < by + bh / 2;
+}
+
+// --- Particle System (600 max) ---
+function spawnParticle(x, y, vx, vy, color, life, size) {
+  if (particles.length >= MAX_PARTICLES) particles.shift();
+  particles.push({
+    x, y, vx, vy, color,
+    life, maxLife: life,
+    size: size || 3
+  });
+}
+
+function spawnBurst(x, y, color, count, speed, life, size) {
+  for (let i = 0; i < count; i++) {
+    const a = Math.random() * TAU;
+    const s = Math.random() * speed;
+    spawnParticle(
+      x + Math.random() * 4 - 2,
+      y + Math.random() * 4 - 2,
+      Math.cos(a) * s, Math.sin(a) * s,
+      color, life || 0.5, size || 3
+    );
+  }
+}
+
+function spawnRing(x, y, color, count, radius, life) {
+  for (let i = 0; i < count; i++) {
+    const a = (i / count) * TAU;
+    spawnParticle(
+      x + Math.cos(a) * radius,
+      y + Math.sin(a) * radius,
+      Math.cos(a) * 30, Math.sin(a) * 30,
+      color, life || 0.4, 2
+    );
+  }
+}
+
+function updateParticles() {
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
+    p.vx *= 0.98;
+    p.vy *= 0.98;
+    p.life -= dt;
+    if (p.life <= 0) particles.splice(i, 1);
+  }
+}
+
+function drawParticles() {
+  for (const p of particles) {
+    const alpha = Math.max(0, p.life / p.maxLife);
+    ctx.globalAlpha = alpha * 0.9;
+    ctx.fillStyle = p.color;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size * (0.3 + alpha * 0.7), 0, TAU);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+// --- Utility Functions ---
+function dist(a, b) { return Math.hypot(a.x - b.x, a.y - b.y); }
+function clamp(v, mn, mx) { return Math.max(mn, Math.min(mx, v)); }
+function lerp(a, b, t) { return a + (b - a) * t; }
+function rnd(a, b) { return a + Math.random() * (b - a); }
+function rndInt(a, b) { return Math.floor(rnd(a, b + 1)); }
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function distToCenter(obj) { return Math.hypot(obj.x - CX, obj.y - CY); }
+
+function constrainToDish(obj, r) {
+  const d = distToCenter(obj);
+  const maxD = dishR - r;
+  if (d > maxD && d > 0) {
+    const a = Math.atan2(obj.y - CY, obj.x - CX);
+    obj.x = CX + Math.cos(a) * maxD;
+    obj.y = CY + Math.sin(a) * maxD;
+  }
+}
+
+function addScreenShake(mag) {
+  shakeMag = Math.min(shakeMag + mag, 12);
+}
+
+function abColor(type) {
+  if (type === 'penicillin') return COL.penicillin;
+  if (type === 'tetracycline') return COL.tetracycline;
+  return COL.vancomycin;
+}
+
+// --- Bacteria Factory ---
+function createBacteria(x, y, isClone) {
+  return {
+    x, y, vx: 0, vy: 0,
+    r: isClone ? 12 : 16,
+    baseR: isClone ? 12 : 16,
+    health: isClone ? 60 : 100,
+    maxHealth: isClone ? 60 : 100,
+    speed: 160,
+    mutations: [],
+    mutationCounts: {},
+    isClone: !!isClone,
+    divideProgress: 0,
+    divideCooldown: 0,
+    divideRate: isClone ? 0 : 1,
+    flagellaPhase: Math.random() * TAU,
+    pulsePhase: Math.random() * TAU,
+    breathePhase: Math.random() * TAU,
+    dormant: false,
+    dormantTimer: 0,
+    dormantCooldown: 0,
+    biofilmTimer: 0,
+    biofilmActive: false,
+    stationaryTime: 0,
+    enzymeTimer: 0,
+    alive: true,
+    invulnTimer: 0,
+    hue: isClone ? rnd(-15, 15) : 0,
+    dividing: false,
+    divideAnimPhase: 0,
+    // Clone AI state
+    targetX: x,
+    targetY: y,
+    aiTimer: 0,
+    fleeDir: 0,
+    prevX: x,
+    prevY: y
+  };
+}
+
+function hasMutation(bact, id) {
+  return (bact.mutationCounts[id] || 0) > 0;
+}
+
+function mutLevel(bact, id) {
+  return bact.mutationCounts[id] || 0;
+}
+
+function applyMutationVisuals(bact) {
+  // Shape shift reduces size
+  let sizeMultiplier = 1;
+  if (hasMutation(bact, 'shape_shift')) {
+    sizeMultiplier -= 0.18 * Math.min(mutLevel(bact, 'shape_shift'), 4);
+  }
+  bact.r = bact.baseR * Math.max(0.45, sizeMultiplier);
+
+  // Flagella boost increases speed
+  let speedMultiplier = 1;
+  if (hasMutation(bact, 'flagella')) {
+    speedMultiplier += 0.3 * Math.min(mutLevel(bact, 'flagella'), 4);
+  }
+  bact.speed = 160 * speedMultiplier;
+}
+
+function addMutation(bact, mut) {
+  bact.mutations.push(mut.id);
+  bact.mutationCounts[mut.id] = (bact.mutationCounts[mut.id] || 0) + 1;
+  applyMutationVisuals(bact);
+}
+
+// --- Antibiotic Factory ---
+function createAntibiotic(type, x, y, vx, vy) {
+  let hp = 1, dmg = 15, r = 10, spd = 80;
+  if (type === 'penicillin') { r = 14; spd = 55; dmg = 12; }
+  else if (type === 'tetracycline') { r = 8; spd = 120; dmg = 18; }
+  else if (type === 'vancomycin') { r = 12; spd = 85; dmg = 28; hp = 2; }
+  return {
+    x, y, vx: vx || 0, vy: vy || 0,
+    r, type, speed: spd, damage: dmg, hp,
+    alive: true, phase: Math.random() * TAU,
+    age: 0, rotation: Math.random() * TAU
+  };
+}
+
+// --- Boss Factory ---
+function createBoss(x, y) {
+  const hp = 18 + wave * 6;
+  return {
+    x, y, vx: 0, vy: 0,
+    r: 38, hp, maxHp: hp,
+    speed: 35 + wave * 1.5,
+    damage: 30, alive: true,
+    phase: 0, age: 0, flashTimer: 0,
+    attackTimer: 0, rotation: 0
+  };
+}
+
+// --- Nutrient Spawner ---
+function spawnNutrients() {
+  nutrients = [];
+  for (let i = 0; i < NUTRIENT_COUNT; i++) {
+    const a = (i / NUTRIENT_COUNT) * TAU + rnd(-0.3, 0.3);
+    const d = rnd(dishR * 0.2, dishR * 0.75);
+    nutrients.push({
+      x: CX + Math.cos(a) * d,
+      y: CY + Math.sin(a) * d,
+      r: rnd(22, 30),
+      pulse: Math.random() * TAU,
+      intensity: rnd(0.6, 1.0)
+    });
+  }
+}
+
+// --- Division Animation ---
+function spawnDivisionAnim(x, y, r, color) {
+  divisionAnimations.push({
+    x, y, phase: 0, r, color,
+    duration: 0.5
+  });
+}
+
+function updateDivisionAnimations() {
+  for (let i = divisionAnimations.length - 1; i >= 0; i--) {
+    const d = divisionAnimations[i];
+    d.phase += dt / d.duration;
+    if (d.phase >= 1) {
+      divisionAnimations.splice(i, 1);
+    }
+  }
+}
+
+function drawDivisionAnimations() {
+  for (const d of divisionAnimations) {
+    const t = d.phase;
+    const squeeze = Math.sin(t * PI);
+    const separation = t * d.r * 1.5;
+
+    ctx.save();
+    ctx.translate(d.x, d.y);
+    ctx.globalAlpha = 1 - t * 0.5;
+
+    // Two cells separating from center
+    for (let side = -1; side <= 1; side += 2) {
+      ctx.fillStyle = d.color;
+      ctx.beginPath();
+      ctx.ellipse(
+        side * separation * 0.5,
+        0,
+        d.r * (0.8 + squeeze * 0.3),
+        d.r * (1.2 - squeeze * 0.4),
+        0, 0, TAU
+      );
+      ctx.fill();
+    }
+
+    // Pinch point in the middle
+    if (t < 0.6) {
+      ctx.strokeStyle = d.color;
+      ctx.lineWidth = 2;
+      ctx.globalAlpha = (1 - t / 0.6) * 0.5;
+      ctx.beginPath();
+      ctx.moveTo(0, -d.r * (1 - t));
+      ctx.lineTo(0, d.r * (1 - t));
+      ctx.stroke();
+    }
+
+    ctx.globalAlpha = 1;
+    ctx.restore();
+  }
+}
+
+// --- Biofilm Trails ---
+function addBiofilmTrail(x, y, r) {
+  if (biofilmTrails.length >= BIOFILM_TRAIL_MAX) biofilmTrails.shift();
+  biofilmTrails.push({ x, y, r: r * 1.8, alpha: 0.35, age: 0 });
+}
+
+function updateBiofilmTrails() {
+  for (let i = biofilmTrails.length - 1; i >= 0; i--) {
+    const t = biofilmTrails[i];
+    t.age += dt;
+    t.alpha -= dt * 0.06;
+    if (t.alpha <= 0) biofilmTrails.splice(i, 1);
+  }
+}
+
+function drawBiofilmTrails() {
+  for (const t of biofilmTrails) {
+    ctx.globalAlpha = t.alpha * 0.5;
+    const grad = ctx.createRadialGradient(t.x, t.y, 0, t.x, t.y, t.r);
+    grad.addColorStop(0, COL.biofilm);
+    grad.addColorStop(0.6, 'rgba(129, 199, 132, 0.3)');
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(t.x, t.y, t.r, 0, TAU);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+// --- Game Start ---
+function startGame() {
+  state = 'PLAYING';
+  wave = 0;
+  score = 0;
+  totalMutations = 0;
+  resistanceLevel = 0;
+  peakPopulation = 1;
+  gameTime = 0;
+  waveKills = 0;
+
+  player = createBacteria(CX, CY, false);
+  clones = [];
+  antibiotics = [];
+  particles = [];
+  bosses = [];
+  biofilmTrails = [];
+  divisionAnimations = [];
+  shakeMag = 0;
+
+  waveActive = false;
+  waveTimer = 0;
+  betweenWaveTimer = 1.5;
+  waveIntroTimer = 0;
+
+  spawnNutrients();
+  startNextWave();
+}
+
+function startNextWave() {
+  wave++;
+  waveActive = true;
+  waveTimer = 0;
+  waveSpawnTimer = 0;
+  waveIntroTimer = 2.5;
+  waveDuration = 10 + wave * 1.2;
+  waveKills = 0;
+  sfxWaveAlarm();
+
+  // Boss every 5 waves starting at wave 5
+  if (wave >= 5 && wave % 5 === 0) {
+    const a = Math.random() * TAU;
+    const bx = CX + Math.cos(a) * (dishR - 50);
+    const by = CY + Math.sin(a) * (dishR - 50);
+    bosses.push(createBoss(bx, by));
+  }
+}
+
+function endWave() {
+  waveActive = false;
+  antibiotics = [];
+  betweenWaveTimer = 0;
+
+  // Build mutation choice pool (3 random from the 9)
+  mutationChoices = [];
+  const pool = [...MUTATIONS];
+  for (let i = 0; i < 3 && pool.length > 0; i++) {
+    const idx = Math.floor(Math.random() * pool.length);
+    mutationChoices.push(pool.splice(idx, 1)[0]);
+  }
+  cardRevealed = [false, false, false];
+  cardFlipTimers = [0, 0, 0];
+  mutationHover = -1;
+  selectedMutation = -1;
+  state = 'MUTATION_SELECT';
+}
+
+function selectMutation(idx) {
+  if (selectedMutation >= 0) return;
+  selectedMutation = idx;
+  const mut = mutationChoices[idx];
+
+  // Apply to player
+  addMutation(player, mut);
+  totalMutations++;
+  resistanceLevel = Math.floor(totalMutations * 12 + wave * 8);
+
+  // Track in persistent catalog
+  mutationCatalog[mut.id] = (mutationCatalog[mut.id] || 0) + 1;
+  saveCatalog();
+
+  sfxMutationChime();
+  spawnBurst(CX + (idx - 1) * 200, CY + 10, mut.color, 35, 160, 0.9, 4);
+  spawnRing(CX + (idx - 1) * 200, CY + 10, mut.color, 16, 60, 0.6);
+
+  // Give clones the mutation too
+  for (const c of clones) {
+    addMutation(c, mut);
+    if (hasMutation(player, 'gene_transfer')) {
+      const extra = pick(MUTATIONS);
+      addMutation(c, extra);
+    }
+  }
+
+  // Delay then start next wave
+  setTimeout(() => {
+    if (state === 'MUTATION_SELECT') {
+      state = 'PLAYING';
+      startNextWave();
+    }
+  }, 900);
+}
+
+// --- Antibiotic Spawning Patterns ---
+function spawnWaveAntibiotics() {
+  const types = [];
+  if (wave >= 1) types.push('penicillin');
+  if (wave >= 4) types.push('tetracycline');
+  if (wave >= 7) types.push('vancomycin');
+  if (types.length === 0) types.push('penicillin');
+
+  const type = pick(types);
+  const pattern = pick(['sweep', 'spiral', 'scatter', 'converge']);
+  const count = Math.min(3 + Math.floor(wave * 0.8), 14);
+  const waveScale = 1 + wave * 0.1; // antibiotics get stronger each wave
+
+  if (pattern === 'sweep') {
+    // Line of antibiotics sweeping from one side
+    const side = rndInt(0, 3);
+    for (let i = 0; i < count; i++) {
+      let x, y, vx, vy;
+      const offset = (i - count / 2) * 28;
+      if (side === 0) { x = CX - dishR - 30; y = CY + offset; vx = 1; vy = rnd(-0.15, 0.15); }
+      else if (side === 1) { x = CX + dishR + 30; y = CY + offset; vx = -1; vy = rnd(-0.15, 0.15); }
+      else if (side === 2) { x = CX + offset; y = CY - dishR - 30; vx = rnd(-0.15, 0.15); vy = 1; }
+      else { x = CX + offset; y = CY + dishR + 30; vx = rnd(-0.15, 0.15); vy = -1; }
+      const ab = createAntibiotic(type, x, y, 0, 0);
+      const len = Math.hypot(vx, vy) || 1;
+      ab.vx = (vx / len) * ab.speed;
+      ab.vy = (vy / len) * ab.speed;
+      ab.damage = Math.floor(ab.damage * waveScale);
+      antibiotics.push(ab);
+    }
+  } else if (pattern === 'spiral') {
+    // Antibiotics spiral inward from the dish edge
+    for (let i = 0; i < count; i++) {
+      const a = (i / count) * TAU + gameTime;
+      const x = CX + Math.cos(a) * (dishR + 25);
+      const y = CY + Math.sin(a) * (dishR + 25);
+      const ab = createAntibiotic(type, x, y, 0, 0);
+      const toCenter = Math.atan2(CY - y, CX - x) + 0.35;
+      ab.vx = Math.cos(toCenter) * ab.speed;
+      ab.vy = Math.sin(toCenter) * ab.speed;
+      ab.damage = Math.floor(ab.damage * waveScale);
+      antibiotics.push(ab);
+    }
+  } else if (pattern === 'scatter') {
+    // Random positions around the edge, aiming roughly inward
+    for (let i = 0; i < count; i++) {
+      const a = Math.random() * TAU;
+      const x = CX + Math.cos(a) * (dishR + 25);
+      const y = CY + Math.sin(a) * (dishR + 25);
+      const ab = createAntibiotic(type, x, y, 0, 0);
+      const ta = Math.atan2(CY - y + rnd(-100, 100), CX - x + rnd(-100, 100));
+      ab.vx = Math.cos(ta) * ab.speed;
+      ab.vy = Math.sin(ta) * ab.speed;
+      ab.damage = Math.floor(ab.damage * waveScale);
+      antibiotics.push(ab);
+    }
+  } else {
+    // Converge: aim at player location
+    for (let i = 0; i < count; i++) {
+      const a = (i / count) * TAU + rnd(-0.4, 0.4);
+      const x = CX + Math.cos(a) * (dishR + 25);
+      const y = CY + Math.sin(a) * (dishR + 25);
+      const ab = createAntibiotic(type, x, y, 0, 0);
+      const tx = player ? player.x + rnd(-40, 40) : CX;
+      const ty = player ? player.y + rnd(-40, 40) : CY;
+      const ta = Math.atan2(ty - y, tx - x);
+      ab.vx = Math.cos(ta) * ab.speed;
+      ab.vy = Math.sin(ta) * ab.speed;
+      ab.damage = Math.floor(ab.damage * waveScale);
+      antibiotics.push(ab);
+    }
+  }
+}
+
+// --- Damage & Death ---
+function damageBacteria(bact, dmg) {
+  // Dormancy = total immunity
+  if (bact.dormant) return;
+  // Biofilm = invincibility for player
+  if (bact.biofilmActive) return;
+  // Brief post-hit immunity
+  if (bact.invulnTimer > 0) return;
+
+  // Thick cell wall reduces damage
+  let finalDmg = dmg;
+  const wallLvl = mutLevel(bact, 'thick_wall');
+  if (wallLvl > 0) {
+    finalDmg *= Math.max(0.15, 1 - 0.22 * wallLvl);
+  }
+
+  bact.health -= finalDmg;
+  bact.invulnTimer = 0.2;
+  sfxHit();
+  spawnBurst(bact.x, bact.y, COL.danger, 6, 90, 0.35, 2.5);
+  addScreenShake(2);
+
+  if (bact.health <= 0) {
+    killBacteria(bact);
+  }
+}
+
+function killBacteria(bact) {
+  bact.alive = false;
+  sfxDeath();
+  spawnBurst(bact.x, bact.y, bact.isClone ? COL.clone : COL.player, 25, 140, 0.7, 4);
+  spawnRing(bact.x, bact.y, '#fff', 12, bact.r * 2, 0.4);
+  addScreenShake(bact.isClone ? 3 : 6);
+
+  if (!bact.isClone) {
+    // Player died — transfer to a clone if any exist
+    if (clones.length > 0) {
+      const newPlayer = clones.shift();
+      newPlayer.isClone = false;
+      newPlayer.baseR = 16;
+      newPlayer.maxHealth = 100;
+      newPlayer.health = Math.min(newPlayer.health + 40, 100);
+      applyMutationVisuals(newPlayer);
+      player = newPlayer;
+      spawnRing(player.x, player.y, COL.accent, 20, 30, 0.5);
+    } else {
+      gameOver();
+    }
+  }
+}
+
+function gameOver() {
+  state = 'GAME_OVER';
+  score = wave * 100 + totalMutations * 50 + peakPopulation * 15 + resistanceLevel;
+  saveScore(score, wave, totalMutations);
+  addScreenShake(10);
+}
+
+// --- Clone AI ---
+function updateCloneAI(c) {
+  if (!player || !player.alive) return;
+
+  c.aiTimer -= dt;
+  if (c.aiTimer <= 0) {
+    c.aiTimer = rnd(0.25, 0.7);
+    // Default: orbit near player
+    const orbitAngle = Math.atan2(c.y - player.y, c.x - player.x) + rnd(-1, 1);
+    const orbitDist = rnd(30, 70);
+    c.targetX = player.x + Math.cos(orbitAngle) * orbitDist;
+    c.targetY = player.y + Math.sin(orbitAngle) * orbitDist;
+
+    // Flee from nearest antibiotic if close
+    let nearestDist = 100;
+    let nearestAb = null;
+    for (const ab of antibiotics) {
+      const d = dist(c, ab);
+      if (d < nearestDist) {
+        nearestDist = d;
+        nearestAb = ab;
+      }
+    }
+    if (nearestAb) {
+      const fleeAngle = Math.atan2(c.y - nearestAb.y, c.x - nearestAb.x);
+      c.targetX = c.x + Math.cos(fleeAngle) * 90;
+      c.targetY = c.y + Math.sin(fleeAngle) * 90;
+    }
+
+    // Also flee from bosses
+    for (const b of bosses) {
+      if (b.alive && dist(c, b) < 80) {
+        const fleeAngle = Math.atan2(c.y - b.y, c.x - b.x);
+        c.targetX = c.x + Math.cos(fleeAngle) * 120;
+        c.targetY = c.y + Math.sin(fleeAngle) * 120;
+      }
+    }
+  }
+
+  const a = Math.atan2(c.targetY - c.y, c.targetX - c.x);
+  const d = dist(c, { x: c.targetX, y: c.targetY });
+  const spd = c.speed * 0.55;
+  if (d > 8) {
+    c.vx = lerp(c.vx, Math.cos(a) * spd, 0.1);
+    c.vy = lerp(c.vy, Math.sin(a) * spd, 0.1);
+  } else {
+    c.vx *= 0.88;
+    c.vy *= 0.88;
+  }
+}
+
+// --- Cell Division ---
+function tryDivide(bact) {
+  if (bact.isClone) return;
+  if (clones.length >= CLONE_MAX) return;
+  if (bact.divideCooldown > 0) return;
+  if (bact.dormant) return;
+
+  let rate = 0.03;
+  if (hasMutation(bact, 'rapid_div')) {
+    rate *= 1 + 0.45 * mutLevel(bact, 'rapid_div');
+  }
+
+  // Nutrient zone doubles division speed
+  for (const n of nutrients) {
+    if (dist(bact, n) < n.r + bact.r + 5) {
+      rate *= 2.2;
+      break;
+    }
+  }
+
+  bact.divideProgress += rate * dt;
+  if (bact.divideProgress >= 1) {
+    bact.divideProgress = 0;
+    bact.divideCooldown = hasMutation(bact, 'rapid_div') ? 3.5 : 6;
+
+    // Create clone offset from parent
+    const offsetAngle = Math.random() * TAU;
+    const offsetDist = rnd(22, 38);
+    const cx = bact.x + Math.cos(offsetAngle) * offsetDist;
+    const cy = bact.y + Math.sin(offsetAngle) * offsetDist;
+    const clone = createBacteria(cx, cy, true);
+
+    // Inherit all parent mutations
+    for (const m of bact.mutations) {
+      const mDef = MUTATIONS.find(md => md.id === m);
+      if (mDef) addMutation(clone, mDef);
+    }
+
+    // Gene transfer bonus: extra random mutation
+    if (hasMutation(bact, 'gene_transfer')) {
+      addMutation(clone, pick(MUTATIONS));
+    }
+
+    // Visual variety
+    clone.hue = rnd(-20, 20);
+    clones.push(clone);
+
+    // Division animation and effects
+    spawnDivisionAnim(bact.x, bact.y, bact.r, COL.player);
+    sfxDivide();
+    spawnBurst(bact.x, bact.y, COL.player, 12, 70, 0.45, 3);
+
+    // Track peak population
+    const pop = 1 + clones.length;
+    if (pop > peakPopulation) peakPopulation = pop;
+  }
+}
+
+// --- Enzyme Ability ---
+function destroyNearbyAntibiotics(bact, range) {
+  let destroyed = 0;
+  for (let i = antibiotics.length - 1; i >= 0; i--) {
+    const ab = antibiotics[i];
+    if (dist(bact, ab) < range) {
+      ab.hp--;
+      if (ab.hp <= 0) {
+        ab.alive = false;
+        spawnBurst(ab.x, ab.y, abColor(ab.type), 10, 70, 0.35, 3);
+        sfxEnzyme();
+        destroyed++;
+        waveKills++;
+      }
+    }
+  }
+  return destroyed;
+}
+
+// --- Player Update ---
+function updatePlayer() {
+  if (!player || !player.alive) return;
+
+  // Movement input
+  let dx = 0, dy = 0;
+  if (keys['ArrowLeft'] || keys['KeyA']) dx -= 1;
+  if (keys['ArrowRight'] || keys['KeyD']) dx += 1;
+  if (keys['ArrowUp'] || keys['KeyW']) dy -= 1;
+  if (keys['ArrowDown'] || keys['KeyS']) dy += 1;
+
+  // Touch joystick
+  if (touchJoy) {
+    const jdx = touchJoy.cx - touchJoy.sx;
+    const jdy = touchJoy.cy - touchJoy.sy;
+    const jd = Math.hypot(jdx, jdy);
+    if (jd > 10) {
+      dx = jdx / jd;
+      dy = jdy / jd;
+    }
+  }
+
+  // Dormancy activation (SPACE or touch right side)
+  if ((keys['Space'] || touchTap) && hasMutation(player, 'dormancy')
+      && !player.dormant && player.dormantCooldown <= 0) {
+    player.dormant = true;
+    player.dormantTimer = 3;
+    sfxDormancy();
+    spawnRing(player.x, player.y, '#90A4AE', 12, player.r + 10, 0.5);
+  }
+
+  // Dormancy logic
+  if (player.dormant) {
+    player.dormantTimer -= dt;
+    if (player.dormantTimer <= 0) {
+      player.dormant = false;
+      player.dormantCooldown = 5;
+      sfxWakeUp();
+      spawnBurst(player.x, player.y, '#90A4AE', 8, 50, 0.3, 2);
+    }
+    dx = 0;
+    dy = 0;
+  } else if (player.dormantCooldown > 0) {
+    player.dormantCooldown -= dt;
+  }
+
+  // Apply movement
+  const len = Math.hypot(dx, dy);
+  if (len > 0) {
+    player.vx = (dx / len) * player.speed;
+    player.vy = (dy / len) * player.speed;
+    player.stationaryTime = 0;
+  } else {
+    player.vx *= 0.82;
+    player.vy *= 0.82;
+    player.stationaryTime += dt;
+  }
+
+  // Edge of dish = slower movement (agar resistance)
+  const edgeDist = dishR - distToCenter(player);
+  if (edgeDist < 45 && edgeDist > 0) {
+    const slowFactor = edgeDist / 45;
+    player.vx *= lerp(0.65, 1, slowFactor);
+    player.vy *= lerp(0.65, 1, slowFactor);
+  }
+
+  // Store previous position for trail
+  player.prevX = player.x;
+  player.prevY = player.y;
+
+  player.x += player.vx * dt;
+  player.y += player.vy * dt;
+  constrainToDish(player, player.r);
+
+  // Biofilm activation
+  if (hasMutation(player, 'biofilm')) {
+    if (player.stationaryTime > 1.0 && !player.dormant) {
+      if (!player.biofilmActive) {
+        player.biofilmActive = true;
+        spawnBurst(player.x, player.y, COL.biofilm, 10, 40, 0.5, 3);
+      }
+      // Leave biofilm trail while stationary
+      player.biofilmTimer += dt;
+      if (player.biofilmTimer > 0.3) {
+        player.biofilmTimer = 0;
+        addBiofilmTrail(player.x, player.y, player.r);
+      }
+    } else {
+      player.biofilmActive = false;
+      player.biofilmTimer = 0;
+    }
+  }
+
+  // Invulnerability timer
+  player.invulnTimer = Math.max(0, player.invulnTimer - dt);
+
+  // Division cooldown
+  player.divideCooldown = Math.max(0, player.divideCooldown - dt);
+
+  // Animation phases
+  player.flagellaPhase += dt * (8 + Math.hypot(player.vx, player.vy) * 0.02);
+  player.pulsePhase += dt * 3;
+  player.breathePhase += dt * 1.5;
+
+  // Enzyme production
+  if (hasMutation(player, 'enzyme')) {
+    player.enzymeTimer -= dt;
+    if (player.enzymeTimer <= 0) {
+      player.enzymeTimer = Math.max(0.25, 1.5 - 0.25 * mutLevel(player, 'enzyme'));
+      destroyNearbyAntibiotics(player, 45 + mutLevel(player, 'enzyme') * 12);
+    }
+  }
+
+  // Healing on nutrient zones
+  for (const n of nutrients) {
+    if (dist(player, n) < n.r + player.r + 5) {
+      player.health = Math.min(player.maxHealth, player.health + 18 * dt);
+      // Healing particles
+      if (Math.random() < 0.3) {
+        spawnParticle(
+          player.x + rnd(-10, 10), player.y + rnd(-10, 10),
+          0, -20, COL.nutrient, 0.4, 2
+        );
+      }
+    }
+  }
+
+  // Try to divide
+  tryDivide(player);
+}
+
+// --- Clone Update ---
+function updateClones() {
+  for (let i = clones.length - 1; i >= 0; i--) {
+    const c = clones[i];
+    if (!c.alive) { clones.splice(i, 1); continue; }
+
+    updateCloneAI(c);
+
+    c.prevX = c.x;
+    c.prevY = c.y;
+    c.x += c.vx * dt;
+    c.y += c.vy * dt;
+    constrainToDish(c, c.r);
+
+    // Animation
+    c.flagellaPhase += dt * (6 + Math.hypot(c.vx, c.vy) * 0.015);
+    c.pulsePhase += dt * 3;
+    c.breathePhase += dt * 1.5;
+    c.invulnTimer = Math.max(0, c.invulnTimer - dt);
+
+    // Clone enzyme
+    if (hasMutation(c, 'enzyme')) {
+      c.enzymeTimer -= dt;
+      if (c.enzymeTimer <= 0) {
+        c.enzymeTimer = 2;
+        destroyNearbyAntibiotics(c, 30);
+      }
+    }
+
+    // Clone biofilm (simplified: stationary clones get some resistance)
+    if (hasMutation(c, 'biofilm')) {
+      const speed = Math.hypot(c.vx, c.vy);
+      if (speed < 10) {
+        c.stationaryTime += dt;
+        if (c.stationaryTime > 1.5) c.biofilmActive = true;
+      } else {
+        c.stationaryTime = 0;
+        c.biofilmActive = false;
+      }
+    }
+
+    // Heal on nutrients
+    for (const n of nutrients) {
+      if (dist(c, n) < n.r + c.r + 5) {
+        c.health = Math.min(c.maxHealth, c.health + 10 * dt);
+      }
+    }
+  }
+}
+
+// --- Antibiotic Update ---
+function updateAntibiotics() {
+  for (let i = antibiotics.length - 1; i >= 0; i--) {
+    const ab = antibiotics[i];
+    if (!ab.alive) { antibiotics.splice(i, 1); continue; }
+
+    ab.x += ab.vx * dt;
+    ab.y += ab.vy * dt;
+    ab.phase += dt * 5;
+    ab.age += dt;
+    ab.rotation += dt * 2;
+
+    // Efflux pump pushes antibiotics away from player
+    if (player && player.alive && hasMutation(player, 'efflux_pump')) {
+      const d = dist(player, ab);
+      const range = 50 + mutLevel(player, 'efflux_pump') * 18;
+      if (d < range && d > 1) {
+        const pushStrength = ((range - d) / range) * 220;
+        const a = Math.atan2(ab.y - player.y, ab.x - player.x);
+        ab.vx += Math.cos(a) * pushStrength * dt;
+        ab.vy += Math.sin(a) * pushStrength * dt;
+        // Visual feedback
+        if (Math.random() < 0.15) {
+          spawnParticle(ab.x, ab.y, Math.cos(a) * 30, Math.sin(a) * 30, COL.efflux, 0.2, 1.5);
+        }
+      }
+    }
+
+    // Remove if exited dish area
+    if (distToCenter(ab) > dishR + 80) {
+      antibiotics.splice(i, 1);
+      continue;
+    }
+
+    // Too old (safety cleanup after 15s)
+    if (ab.age > 15) {
+      antibiotics.splice(i, 1);
+      continue;
+    }
+
+    // Collision with player
+    if (player && player.alive) {
+      if (dist(ab, player) < ab.r + player.r) {
+        damageBacteria(player, ab.damage);
+        ab.alive = false;
+        spawnBurst(ab.x, ab.y, abColor(ab.type), 8, 60, 0.35, 2.5);
+        continue;
+      }
+    }
+
+    // Collision with clones
+    for (const c of clones) {
+      if (c.alive && dist(ab, c) < ab.r + c.r) {
+        damageBacteria(c, ab.damage);
+        ab.alive = false;
+        spawnBurst(ab.x, ab.y, abColor(ab.type), 8, 60, 0.35, 2.5);
+        break;
+      }
+    }
+  }
+}
+
+// --- Boss Update ---
+function updateBosses() {
+  for (let i = bosses.length - 1; i >= 0; i--) {
+    const b = bosses[i];
+    if (!b.alive) { bosses.splice(i, 1); continue; }
+
+    b.phase += dt * 2;
+    b.age += dt;
+    b.flashTimer = Math.max(0, b.flashTimer - dt);
+    b.rotation += dt * 0.8;
+    b.attackTimer -= dt;
+
+    // Chase player
+    if (player && player.alive) {
+      const a = Math.atan2(player.y - b.y, player.x - b.x);
+      b.vx = lerp(b.vx, Math.cos(a) * b.speed, 0.05);
+      b.vy = lerp(b.vy, Math.sin(a) * b.speed, 0.05);
+    }
+    b.x += b.vx * dt;
+    b.y += b.vy * dt;
+    constrainToDish(b, b.r);
+
+    // Boss spawns mini antibiotics periodically
+    if (b.attackTimer <= 0) {
+      b.attackTimer = Math.max(1.5, 3 - wave * 0.1);
+      for (let j = 0; j < 3; j++) {
+        const sa = (j / 3) * TAU + b.phase;
+        const ab = createAntibiotic('vancomycin', b.x, b.y, 0, 0);
+        ab.vx = Math.cos(sa) * 70;
+        ab.vy = Math.sin(sa) * 70;
+        ab.r = 6;
+        ab.damage = 15 + wave;
+        antibiotics.push(ab);
+      }
+    }
+
+    // Enzyme damage to boss
+    if (player && player.alive && hasMutation(player, 'enzyme')) {
+      const enzRange = 50 + mutLevel(player, 'enzyme') * 12;
+      if (dist(player, b) < enzRange) {
+        if (player.enzymeTimer <= 0.05) {
+          b.hp -= 2;
+          b.flashTimer = 0.12;
+          sfxBossHit();
+          spawnBurst(b.x, b.y, COL.vancomycin, 6, 50, 0.25, 3);
+        }
+      }
+    }
+
+    // Boss contact damage to player
+    if (player && player.alive && dist(b, player) < b.r + player.r) {
+      damageBacteria(player, b.damage * dt * 2.5);
+    }
+
+    // Boss contact damage to clones
+    for (const c of clones) {
+      if (c.alive && dist(b, c) < b.r + c.r) {
+        damageBacteria(c, b.damage * dt * 2.5);
+      }
+    }
+
+    // Boss death
+    if (b.hp <= 0) {
+      b.alive = false;
+      spawnBurst(b.x, b.y, COL.boss, 50, 220, 1.2, 5);
+      spawnRing(b.x, b.y, '#fff', 24, b.r, 0.6);
+      score += 500;
+      sfxBossHit();
+      addScreenShake(8);
+    }
+  }
+}
+
+// --- Wave Management ---
+function updateWave() {
+  if (!waveActive) return;
+
+  if (waveIntroTimer > 0) {
+    waveIntroTimer -= dt;
+    return;
+  }
+
+  waveTimer += dt;
+  waveSpawnTimer -= dt;
+
+  // Spawn antibiotics at intervals
+  if (waveSpawnTimer <= 0) {
+    const interval = Math.max(0.4, 2.2 - wave * 0.1);
+    waveSpawnTimer = interval;
+    spawnWaveAntibiotics();
+  }
+
+  // Wave ends when timer expires AND all antibiotics/bosses are cleared
+  if (waveTimer >= waveDuration && antibiotics.length === 0 && bosses.every(b => !b.alive)) {
+    score += wave * 50 + clones.length * 10;
+    endWave();
+  }
+}
+
+// --- Screen Shake ---
+function updateShake() {
+  if (shakeMag > 0.1) {
+    shakeX = (Math.random() - 0.5) * shakeMag * 2;
+    shakeY = (Math.random() - 0.5) * shakeMag * 2;
+    shakeMag *= shakeDecay;
+  } else {
+    shakeX = 0;
+    shakeY = 0;
+    shakeMag = 0;
+  }
+}
+
+// ==================================================
+// DRAWING
+// ==================================================
+
+function drawDish() {
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(CX, CY, dishR, 0, TAU);
+  ctx.clip();
+
+  // Agar gradient background
+  const grad = ctx.createRadialGradient(CX, CY, 0, CX, CY, dishR);
+  grad.addColorStop(0, '#1f3040');
+  grad.addColorStop(0.6, COL.bg);
+  grad.addColorStop(1, '#0f1820');
+  ctx.fillStyle = grad;
+  ctx.fillRect(CX - dishR, CY - dishR, dishR * 2, dishR * 2);
+
+  // Microscope grid overlay
+  ctx.strokeStyle = COL.grid;
+  ctx.lineWidth = 0.5;
+  ctx.globalAlpha = 0.25;
+  const spacing = 28;
+  const startX = CX - dishR - (CX % spacing);
+  const startY = CY - dishR - (CY % spacing);
+  for (let x = startX; x < CX + dishR; x += spacing) {
+    ctx.beginPath();
+    ctx.moveTo(x, CY - dishR);
+    ctx.lineTo(x, CY + dishR);
+    ctx.stroke();
+  }
+  for (let y = startY; y < CY + dishR; y += spacing) {
+    ctx.beginPath();
+    ctx.moveTo(CX - dishR, y);
+    ctx.lineTo(CX + dishR, y);
+    ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+  ctx.restore();
+
+  // Dish rim (double ring for glass effect)
+  ctx.strokeStyle = '#2a4a5a';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.arc(CX, CY, dishR, 0, TAU);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#1a3040';
+  ctx.lineWidth = 6;
+  ctx.beginPath();
+  ctx.arc(CX, CY, dishR + 4, 0, TAU);
+  ctx.stroke();
+
+  // Subtle outer glow
+  ctx.globalAlpha = 0.08;
+  const outerGlow = ctx.createRadialGradient(CX, CY, dishR - 10, CX, CY, dishR + 20);
+  outerGlow.addColorStop(0, 'transparent');
+  outerGlow.addColorStop(0.5, '#00E676');
+  outerGlow.addColorStop(1, 'transparent');
+  ctx.fillStyle = outerGlow;
+  ctx.beginPath();
+  ctx.arc(CX, CY, dishR + 20, 0, TAU);
+  ctx.fill();
+  ctx.globalAlpha = 1;
+}
+
+function drawNutrients() {
+  for (const n of nutrients) {
+    n.pulse += dt * 2.5;
+    const s = 1 + Math.sin(n.pulse) * 0.12;
+    const r = n.r * s;
+
+    // Glow
+    ctx.globalAlpha = (0.2 + Math.sin(n.pulse) * 0.08) * n.intensity;
+    const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, r);
+    grad.addColorStop(0, COL.nutrient);
+    grad.addColorStop(0.4, 'rgba(255, 245, 157, 0.4)');
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, TAU);
+    ctx.fill();
+
+    // Core bright spot
+    ctx.globalAlpha = 0.3 * n.intensity;
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r * 0.15, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Occasional sparkle particles
+    if (Math.random() < 0.04) {
+      spawnParticle(
+        n.x + rnd(-r * 0.7, r * 0.7),
+        n.y + rnd(-r * 0.7, r * 0.7),
+        rnd(-8, 8), rnd(-15, -5),
+        COL.nutrient, rnd(0.3, 0.6), 1.5
+      );
+    }
+  }
+}
+
+function drawBacteria(bact) {
+  if (!bact.alive) return;
+  const { x, y, r } = bact;
+  const pulse = 1 + Math.sin(bact.pulsePhase) * 0.06;
+  const breathe = 1 + Math.sin(bact.breathePhase) * 0.03;
+  const drawR = r * pulse * breathe;
+
+  ctx.save();
+  ctx.translate(x, y);
+
+  // === BIOFILM SLIME AURA ===
+  if (bact.biofilmActive) {
+    ctx.globalAlpha = 0.35;
+    const slimeR = drawR * 2.8;
+    const grad = ctx.createRadialGradient(0, 0, drawR, 0, 0, slimeR);
+    grad.addColorStop(0, COL.biofilm);
+    grad.addColorStop(0.5, 'rgba(129, 199, 132, 0.3)');
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(0, 0, slimeR, 0, TAU);
+    ctx.fill();
+    // Biofilm pulsing ring
+    ctx.strokeStyle = COL.biofilm;
+    ctx.lineWidth = 1.5;
+    ctx.globalAlpha = 0.4 + Math.sin(gameTime * 4) * 0.2;
+    ctx.beginPath();
+    ctx.arc(0, 0, drawR + 8, 0, TAU);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+
+  // === EFFLUX PUMP AURA ===
+  if (hasMutation(bact, 'efflux_pump')) {
+    const lvl = mutLevel(bact, 'efflux_pump');
+    const range = 50 + lvl * 18;
+    ctx.globalAlpha = 0.1 + lvl * 0.04;
+    const grad = ctx.createRadialGradient(0, 0, drawR, 0, 0, range);
+    grad.addColorStop(0, COL.efflux);
+    grad.addColorStop(0.6, 'rgba(0, 188, 212, 0.15)');
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(0, 0, range, 0, TAU);
+    ctx.fill();
+    // Rotating indicator
+    ctx.strokeStyle = COL.efflux;
+    ctx.lineWidth = 1;
+    ctx.globalAlpha = 0.3;
+    for (let i = 0; i < 3; i++) {
+      const a = (i / 3) * TAU + gameTime * 2;
+      ctx.beginPath();
+      ctx.arc(0, 0, range * 0.7, a, a + 0.5);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // === DORMANCY SHELL ===
+  if (bact.dormant) {
+    ctx.globalAlpha = 0.5;
+    ctx.fillStyle = '#78909C';
+    ctx.beginPath();
+    ctx.arc(0, 0, drawR + 8, 0, TAU);
+    ctx.fill();
+    ctx.strokeStyle = '#546E7A';
+    ctx.lineWidth = 2;
+    ctx.globalAlpha = 0.7;
+    ctx.beginPath();
+    ctx.arc(0, 0, drawR + 8, 0, TAU);
+    ctx.stroke();
+    // Zzz effect
+    ctx.fillStyle = '#B0BEC5';
+    ctx.font = '10px "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+    const zy = -drawR - 15 + Math.sin(gameTime * 3) * 4;
+    ctx.globalAlpha = 0.6;
+    ctx.fillText('z', 5, zy);
+    ctx.font = '8px "Segoe UI", sans-serif';
+    ctx.fillText('z', 12, zy - 8);
+    ctx.globalAlpha = 1;
+  }
+
+  // === THICK CELL WALL RINGS ===
+  if (hasMutation(bact, 'thick_wall')) {
+    const lvl = Math.min(mutLevel(bact, 'thick_wall'), 4);
+    for (let i = 0; i < lvl; i++) {
+      ctx.strokeStyle = COL.cellwall;
+      ctx.lineWidth = 2;
+      ctx.globalAlpha = 0.4 + i * 0.1;
+      ctx.beginPath();
+      ctx.arc(0, 0, drawR + 3 + i * 3.5, 0, TAU);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // === FLAGELLA ===
+  const baseCount = 3;
+  const flagCount = baseCount + (hasMutation(bact, 'flagella') ? Math.min(mutLevel(bact, 'flagella'), 4) : 0);
+  const flagColor = bact.isClone ? COL.clone : COL.player;
+  ctx.strokeStyle = flagColor;
+  ctx.lineWidth = 1.5;
+  ctx.globalAlpha = 0.65;
+  for (let i = 0; i < flagCount; i++) {
+    const baseAngle = (i / flagCount) * TAU + PI;
+    const wiggle = Math.sin(bact.flagellaPhase + i * 1.3) * 0.45;
+    const flagLen = drawR + 10 + (hasMutation(bact, 'flagella') ? 5 : 0);
+    ctx.beginPath();
+    ctx.moveTo(Math.cos(baseAngle) * drawR * 0.9, Math.sin(baseAngle) * drawR * 0.9);
+    const cp1x = Math.cos(baseAngle + wiggle * 0.3) * (drawR + 5);
+    const cp1y = Math.sin(baseAngle + wiggle * 0.3) * (drawR + 5);
+    const ex = Math.cos(baseAngle + wiggle) * flagLen;
+    const ey = Math.sin(baseAngle + wiggle) * flagLen;
+    ctx.quadraticCurveTo(cp1x, cp1y, ex, ey);
+    ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+
+  // === MAIN CELL BODY ===
+  const baseColor = bact.isClone ? COL.clone : COL.player;
+  const bodyGrad = ctx.createRadialGradient(-drawR * 0.3, -drawR * 0.3, 0, 0, 0, drawR);
+  bodyGrad.addColorStop(0, '#88FFAA');
+  bodyGrad.addColorStop(0.4, baseColor);
+  bodyGrad.addColorStop(1, COL.cellwall);
+  ctx.fillStyle = bodyGrad;
+
+  if (hasMutation(bact, 'shape_shift')) {
+    // Elongated shape
+    ctx.beginPath();
+    ctx.ellipse(0, 0, drawR * 1.1, drawR * 0.75, gameTime * 0.2, 0, TAU);
+    ctx.fill();
+  } else {
+    ctx.beginPath();
+    ctx.arc(0, 0, drawR, 0, TAU);
+    ctx.fill();
+  }
+
+  // Cell membrane outline
+  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.lineWidth = 1;
+  if (hasMutation(bact, 'shape_shift')) {
+    ctx.beginPath();
+    ctx.ellipse(0, 0, drawR * 1.1, drawR * 0.75, gameTime * 0.2, 0, TAU);
+    ctx.stroke();
+  } else {
+    ctx.beginPath();
+    ctx.arc(0, 0, drawR, 0, TAU);
+    ctx.stroke();
+  }
+
+  // Inner nucleus detail
+  ctx.fillStyle = 'rgba(255,255,255,0.12)';
+  ctx.beginPath();
+  ctx.arc(-drawR * 0.2, -drawR * 0.15, drawR * 0.3, 0, TAU);
+  ctx.fill();
+
+  // Small organelle dots
+  ctx.fillStyle = 'rgba(255,255,255,0.08)';
+  ctx.beginPath();
+  ctx.arc(drawR * 0.25, drawR * 0.1, drawR * 0.12, 0, TAU);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(drawR * 0.05, drawR * 0.3, drawR * 0.08, 0, TAU);
+  ctx.fill();
+
+  // === ENZYME ATTACK RING ===
+  if (hasMutation(bact, 'enzyme') && bact.enzymeTimer < 0.3) {
+    const enzR = 45 + mutLevel(bact, 'enzyme') * 12;
+    const t = bact.enzymeTimer / 0.3;
+    ctx.globalAlpha = 0.5 * t;
+    ctx.strokeStyle = '#FF8A65';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.arc(0, 0, enzR * (1 + (1 - t) * 0.3), 0, TAU);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+
+  // === DAMAGE FLASH ===
+  if (bact.invulnTimer > 0) {
+    ctx.globalAlpha = 0.5 * (bact.invulnTimer / 0.2);
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(0, 0, drawR + 2, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
+  ctx.restore();
+}
+
+function drawAntibiotics() {
+  for (const ab of antibiotics) {
+    if (!ab.alive) continue;
+    const { x, y, r, type, phase } = ab;
+    const glow = 1 + Math.sin(phase) * 0.2;
+
+    ctx.save();
+    ctx.translate(x, y);
+
+    // Outer glow
+    ctx.globalAlpha = 0.25;
+    const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, r * 2.5);
+    grad.addColorStop(0, abColor(type));
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 2.5, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    if (type === 'penicillin') {
+      // Blue circle - classic penicillin ring structure
+      ctx.fillStyle = COL.penicillin;
+      ctx.beginPath();
+      ctx.arc(0, 0, r * glow, 0, TAU);
+      ctx.fill();
+      ctx.fillStyle = '#1565C0';
+      ctx.beginPath();
+      ctx.arc(0, 0, r * 0.45, 0, TAU);
+      ctx.fill();
+      // Beta-lactam ring suggestion
+      ctx.strokeStyle = '#90CAF9';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(0, 0, r * 0.7, 0, PI);
+      ctx.stroke();
+    } else if (type === 'tetracycline') {
+      // Yellow capsule - elongated shape
+      ctx.fillStyle = COL.tetracycline;
+      ctx.save();
+      ctx.rotate(ab.rotation);
+      ctx.beginPath();
+      ctx.ellipse(0, 0, r * 1.3 * glow, r * 0.65 * glow, 0, 0, TAU);
+      ctx.fill();
+      ctx.fillStyle = '#F9A825';
+      ctx.beginPath();
+      ctx.ellipse(0, 0, r * 0.5, r * 0.25, 0, 0, TAU);
+      ctx.fill();
+      ctx.restore();
+    } else {
+      // Red diamond - vancomycin (most dangerous)
+      ctx.fillStyle = COL.vancomycin;
+      ctx.save();
+      ctx.rotate(ab.rotation);
+      ctx.beginPath();
+      const dr = r * glow;
+      ctx.moveTo(0, -dr * 1.3);
+      ctx.lineTo(dr, 0);
+      ctx.lineTo(0, dr * 1.3);
+      ctx.lineTo(-dr, 0);
+      ctx.closePath();
+      ctx.fill();
+      ctx.fillStyle = '#C62828';
+      ctx.beginPath();
+      ctx.moveTo(0, -dr * 0.5);
+      ctx.lineTo(dr * 0.35, 0);
+      ctx.lineTo(0, dr * 0.5);
+      ctx.lineTo(-dr * 0.35, 0);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    ctx.restore();
+  }
+}
+
+function drawBosses() {
+  for (const b of bosses) {
+    if (!b.alive) continue;
+    const { x, y, r } = b;
+    const pulse = 1 + Math.sin(b.phase) * 0.08;
+
+    ctx.save();
+    ctx.translate(x, y);
+
+    // Danger aura
+    ctx.globalAlpha = 0.15;
+    const grad = ctx.createRadialGradient(0, 0, r, 0, 0, r * 2.5);
+    grad.addColorStop(0, COL.boss);
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 2.5, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Spiky rotating body
+    ctx.fillStyle = b.flashTimer > 0 ? '#fff' : COL.boss;
+    ctx.beginPath();
+    const spikes = 10;
+    for (let i = 0; i < spikes * 2; i++) {
+      const a = (i / (spikes * 2)) * TAU + b.rotation;
+      const rad = i % 2 === 0 ? r * pulse : r * 0.55;
+      if (i === 0) ctx.moveTo(Math.cos(a) * rad, Math.sin(a) * rad);
+      else ctx.lineTo(Math.cos(a) * rad, Math.sin(a) * rad);
+    }
+    ctx.closePath();
+    ctx.fill();
+
+    // Dark core
+    ctx.fillStyle = '#7f0000';
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 0.35, 0, TAU);
+    ctx.fill();
+
+    // Skull-like eyes
+    ctx.fillStyle = '#fff';
+    ctx.globalAlpha = 0.7;
+    ctx.beginPath();
+    ctx.arc(-r * 0.12, -r * 0.08, 3, 0, TAU);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(r * 0.12, -r * 0.08, 3, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // HP bar above boss
+    const barW = r * 2.2;
+    const hpFrac = Math.max(0, b.hp / b.maxHp);
+    ctx.fillStyle = '#222';
+    roundRect(-barW / 2, -r - 18, barW, 8, 3);
+    ctx.fill();
+    ctx.fillStyle = hpFrac > 0.3 ? COL.danger : '#B71C1C';
+    roundRect(-barW / 2, -r - 18, barW * hpFrac, 8, 3);
+    ctx.fill();
+    ctx.strokeStyle = '#555';
+    ctx.lineWidth = 1;
+    roundRect(-barW / 2, -r - 18, barW, 8, 3);
+    ctx.stroke();
+
+    // Boss label
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 9px "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('BOSS', 0, -r - 22);
+
+    ctx.restore();
+  }
+}
+
+// --- HUD (Heads-Up Display) ---
+function drawHUD() {
+  if (!player) return;
+  const p = player;
+
+  // === HEALTH BAR (top-left) ===
+  const hx = 20, hy = 18, hw = 180, hh = 18;
+  ctx.fillStyle = COL.healthBg;
+  roundRect(hx - 1, hy - 1, hw + 2, hh + 2, 5);
+  ctx.fill();
+  const hpFrac = Math.max(0, p.health / p.maxHealth);
+  const hpColor = hpFrac > 0.5 ? COL.health : (hpFrac > 0.25 ? '#FFA726' : COL.danger);
+  ctx.fillStyle = hpColor;
+  roundRect(hx, hy, hw * hpFrac, hh, 4);
+  ctx.fill();
+  ctx.strokeStyle = '#2a5a3a';
+  ctx.lineWidth = 1;
+  roundRect(hx - 1, hy - 1, hw + 2, hh + 2, 5);
+  ctx.stroke();
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 11px "Segoe UI", sans-serif';
+  ctx.textAlign = 'left';
+  ctx.fillText(`HP ${Math.ceil(p.health)}/${p.maxHealth}`, hx + 6, hy + 13);
+
+  // === DIVISION PROGRESS BAR ===
+  if (p.divideProgress > 0 && clones.length < CLONE_MAX && !p.dormant) {
+    const dy = hy + hh + 6;
+    ctx.fillStyle = '#1a2a1a';
+    roundRect(hx, dy, hw, 8, 3);
+    ctx.fill();
+    ctx.fillStyle = '#76FF03';
+    roundRect(hx, dy, hw * Math.min(1, p.divideProgress), 8, 3);
+    ctx.fill();
+    ctx.fillStyle = '#aaa';
+    ctx.font = '8px "Segoe UI", sans-serif';
+    ctx.fillText('DIVIDE', hx + 3, dy + 7);
+  }
+
+  // === WAVE INDICATOR (top-center) ===
+  ctx.textAlign = 'center';
+  const isSuperbug = wave >= 10;
+  ctx.fillStyle = isSuperbug ? COL.danger : COL.accent;
+  ctx.font = 'bold 18px "Segoe UI", sans-serif';
+  const waveLabel = isSuperbug ? `SUPERBUG WAVE ${wave}` : `WAVE ${wave}`;
+  ctx.fillText(waveLabel, CX, 32);
+  if (isSuperbug) {
+    ctx.fillStyle = COL.danger;
+    ctx.font = 'bold 10px "Segoe UI", sans-serif';
+    ctx.globalAlpha = 0.6 + Math.sin(gameTime * 4) * 0.3;
+    ctx.fillText('MULTI-DRUG RESISTANT', CX, 48);
+    ctx.globalAlpha = 1;
+  }
+
+  // === STATS (top-right) ===
+  ctx.textAlign = 'right';
+  ctx.fillStyle = COL.text;
+  ctx.font = '13px "Segoe UI", sans-serif';
+  const pop = 1 + clones.length;
+  ctx.fillText(`Population: ${pop}`, W - 20, 28);
+  ctx.fillText(`Score: ${score}`, W - 20, 48);
+  ctx.fillStyle = '#AB47BC';
+  ctx.fillText(`Resistance: ${resistanceLevel}`, W - 20, 68);
+
+  // === MUTATION ICONS (left sidebar) ===
+  const collected = {};
+  for (const m of p.mutations) {
+    collected[m] = (collected[m] || 0) + 1;
+  }
+  const unique = Object.keys(collected);
+  ctx.textAlign = 'left';
+  for (let i = 0; i < unique.length; i++) {
+    const mId = unique[i];
+    const mDef = MUTATIONS.find(m => m.id === mId);
+    if (!mDef) continue;
+    const my = 70 + i * 26;
+
+    // Icon circle
+    ctx.fillStyle = mDef.color;
+    ctx.globalAlpha = 0.3;
+    ctx.beginPath();
+    ctx.arc(28, my, 11, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = mDef.color;
+    ctx.beginPath();
+    ctx.arc(28, my, 9, 0, TAU);
+    ctx.fill();
+
+    // Level number
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 9px "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(collected[mId], 28, my + 3);
+
+    // Name
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#ccc';
+    ctx.font = '10px "Segoe UI", sans-serif';
+    ctx.fillText(mDef.name, 43, my + 4);
+  }
+
+  // === WAVE INTRO BANNER ===
+  if (waveIntroTimer > 0) {
+    const fadeIn = Math.min(1, (2.5 - waveIntroTimer) * 3);
+    const fadeOut = Math.min(1, waveIntroTimer * 2);
+    const alpha = Math.min(fadeIn, fadeOut);
+    ctx.globalAlpha = alpha;
+
+    // Dark backdrop
+    ctx.fillStyle = '#000a';
+    ctx.fillRect(CX - 220, CY - 45, 440, 90);
+    ctx.strokeStyle = isSuperbug ? COL.danger : COL.accent;
+    ctx.lineWidth = 2;
+    ctx.strokeRect(CX - 220, CY - 45, 440, 90);
+
+    // Wave text
+    ctx.fillStyle = isSuperbug ? COL.danger : COL.accent;
+    ctx.font = 'bold 30px "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(isSuperbug ? `SUPERBUG WAVE ${wave}` : `WAVE ${wave}`, CX, CY + 4);
+
+    // Antibiotic types
+    const types = [];
+    if (wave >= 1) types.push('Penicillin');
+    if (wave >= 4) types.push('Tetracycline');
+    if (wave >= 7) types.push('Vancomycin');
+    if (wave >= 5 && wave % 5 === 0) types.push('BOSS');
+    ctx.font = '12px "Segoe UI", sans-serif';
+    ctx.fillStyle = '#ccc';
+    ctx.fillText(types.join(' + '), CX, CY + 28);
+
+    ctx.globalAlpha = 1;
+  }
+
+  // === DORMANCY INDICATOR ===
+  if (hasMutation(p, 'dormancy')) {
+    const dx = W - 110, dcy = H - 35;
+    ctx.textAlign = 'center';
+    if (p.dormant) {
+      ctx.fillStyle = '#90A4AE';
+      ctx.font = 'bold 13px "Segoe UI", sans-serif';
+      ctx.fillText(`DORMANT ${p.dormantTimer.toFixed(1)}s`, dx, dcy);
+    } else if (p.dormantCooldown > 0) {
+      ctx.fillStyle = '#555';
+      ctx.font = '11px "Segoe UI", sans-serif';
+      ctx.fillText(`Cooldown ${p.dormantCooldown.toFixed(1)}s`, dx, dcy);
+    } else {
+      ctx.fillStyle = COL.accent;
+      ctx.font = '11px "Segoe UI", sans-serif';
+      ctx.fillText('[SPACE] Dormancy', dx, dcy);
+    }
+  }
+
+  // === TOUCH JOYSTICK ===
+  if (touchJoy) {
+    ctx.globalAlpha = 0.3;
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(touchJoy.sx, touchJoy.sy, 50, 0, TAU);
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    const jdx = clamp(touchJoy.cx - touchJoy.sx, -40, 40);
+    const jdy = clamp(touchJoy.cy - touchJoy.sy, -40, 40);
+    ctx.beginPath();
+    ctx.arc(touchJoy.sx + jdx, touchJoy.sy + jdy, 16, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+}
+
+// --- Mutation Selection Screen ---
+function drawMutationSelect() {
+  // Semi-transparent overlay
+  ctx.fillStyle = '#000b';
+  ctx.fillRect(0, 0, W, H);
+
+  // Title
+  ctx.fillStyle = COL.mutation;
+  ctx.font = 'bold 30px "Segoe UI", sans-serif';
+  ctx.textAlign = 'center';
+  ctx.shadowColor = COL.mutation;
+  ctx.shadowBlur = 15;
+  ctx.fillText('M U T A T I O N', CX, CY - 175);
+  ctx.shadowBlur = 0;
+
+  // Subtitle
+  ctx.fillStyle = '#bbb';
+  ctx.font = '13px "Segoe UI", sans-serif';
+  ctx.fillText('Click a card to reveal, then click again to select your evolution.', CX, CY - 148);
+
+  // Science context
+  ctx.fillStyle = '#777';
+  ctx.font = 'italic 11px "Segoe UI", sans-serif';
+  ctx.fillText('Mutations are random. Selection pressure determines which survive.', CX, CY - 130);
+
+  // Draw 3 mutation cards
+  for (let i = 0; i < mutationChoices.length; i++) {
+    const cx = CX + (i - 1) * 200;
+    const cy = CY + 10;
+    const mut = mutationChoices[i];
+    const revealed = cardRevealed[i];
+    const hover = mutationHover === i;
+    const selected = selectedMutation === i;
+
+    const cw = 155, ch = 235;
+    const sx = cx - cw / 2, sy = cy - ch / 2;
+
+    // Card flip animation
+    if (cardFlipTimers[i] > 0) {
+      cardFlipTimers[i] -= dt;
+    }
+    const flipScale = cardFlipTimers[i] > 0 ? Math.abs(Math.cos((cardFlipTimers[i] / 0.3) * PI)) : 1;
+
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.scale(flipScale, 1);
+    ctx.translate(-cx, -cy);
+
+    // Card shadow
+    if (hover || selected) {
+      ctx.shadowColor = selected ? mut.color : COL.mutation;
+      ctx.shadowBlur = selected ? 25 : 15;
+    }
+
+    // Card background
+    ctx.fillStyle = revealed ? '#141428' : '#2a1a3e';
+    roundRect(sx, sy, cw, ch, 12);
+    ctx.fill();
+
+    // Card border
+    ctx.strokeStyle = selected ? mut.color : (hover ? COL.mutation : '#3a2a4a');
+    ctx.lineWidth = selected ? 3 : 2;
+    roundRect(sx, sy, cw, ch, 12);
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    if (revealed && flipScale > 0.5) {
+      // Icon background circle
+      ctx.fillStyle = mut.color;
+      ctx.globalAlpha = 0.15;
+      ctx.beginPath();
+      ctx.arc(cx, cy - 55, 32, 0, TAU);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      // Icon circle
+      ctx.fillStyle = mut.color;
+      ctx.beginPath();
+      ctx.arc(cx, cy - 55, 26, 0, TAU);
+      ctx.fill();
+
+      // Icon emoji/symbol
+      ctx.fillStyle = '#fff';
+      ctx.font = '20px "Segoe UI", sans-serif';
+      ctx.textAlign = 'center';
+      const iconMap = {
+        wall: '\u{1F6E1}', pump: '\u27F3', film: '\u{1F9EB}', div: '\u2797',
+        flag: '\u26A1', shape: '\u25C6', enz: '\u2697', dorm: '\u{1F4A4}', gene: '\u{1F9EC}'
+      };
+      ctx.fillText(iconMap[mut.icon] || '?', cx, cy - 48);
+
+      // Mutation name
+      ctx.fillStyle = '#fff';
+      ctx.font = 'bold 13px "Segoe UI", sans-serif';
+      ctx.fillText(mut.name, cx, cy + 5);
+
+      // Description (wrapped)
+      ctx.fillStyle = '#bbb';
+      ctx.font = '11px "Segoe UI", sans-serif';
+      wrapText(mut.desc, cx, cy + 28, cw - 24, 15);
+
+      // Current level indicator
+      const currentLvl = player ? mutLevel(player, mut.id) : 0;
+      if (currentLvl > 0) {
+        ctx.fillStyle = mut.color;
+        ctx.font = 'bold 10px "Segoe UI", sans-serif';
+        ctx.fillText(`Lv.${currentLvl} \u2192 Lv.${currentLvl + 1}`, cx, cy + 72);
+      } else {
+        ctx.fillStyle = '#888';
+        ctx.font = '10px "Segoe UI", sans-serif';
+        ctx.fillText('NEW', cx, cy + 72);
+      }
+
+      // Science tip at bottom
+      ctx.fillStyle = '#666';
+      ctx.font = 'italic 9px "Segoe UI", sans-serif';
+      wrapText(mut.scienceTip, cx, cy + 90, cw - 20, 12);
+    } else if (flipScale > 0.5) {
+      // Face-down card
+      ctx.fillStyle = COL.mutation;
+      ctx.font = 'bold 44px "Segoe UI", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('?', cx, cy + 16);
+      ctx.font = '11px "Segoe UI", sans-serif';
+      ctx.fillStyle = '#888';
+      ctx.fillText('Click to reveal', cx, cy + 50);
+
+      // DNA helix decoration
+      ctx.strokeStyle = '#4a2a6a';
+      ctx.lineWidth = 1.5;
+      ctx.globalAlpha = 0.4;
+      for (let j = 0; j < 6; j++) {
+        const yy = cy - 80 + j * 30;
+        const xx = Math.sin(j * 0.8 + gameTime * 2) * 15;
+        ctx.beginPath();
+        ctx.arc(cx + xx, yy, 3, 0, TAU);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(cx - xx, yy, 3, 0, TAU);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(cx + xx, yy);
+        ctx.lineTo(cx - xx, yy);
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    ctx.restore();
+  }
+}
+
+function wrapText(text, x, y, maxW, lineH) {
+  const words = text.split(' ');
+  let line = '';
+  let ly = y;
+  for (const word of words) {
+    const test = line + word + ' ';
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line.trim(), x, ly);
+      line = word + ' ';
+      ly += lineH;
+    } else {
+      line = test;
+    }
+  }
+  ctx.fillText(line.trim(), x, ly);
+}
+
+function roundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.arcTo(x + w, y, x + w, y + r, r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+  ctx.lineTo(x + r, y + h);
+  ctx.arcTo(x, y + h, x, y + h - r, r);
+  ctx.lineTo(x, y + r);
+  ctx.arcTo(x, y, x + r, y, r);
+  ctx.closePath();
+}
+
+function drawButton(x, y, w, h, text, color) {
+  // Dark filled button with colored border
+  ctx.fillStyle = '#0d1117';
+  roundRect(x - w / 2, y - h / 2, w, h, 8);
+  ctx.fill();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2;
+  roundRect(x - w / 2, y - h / 2, w, h, 8);
+  ctx.stroke();
+  ctx.fillStyle = color;
+  ctx.font = 'bold 16px "Segoe UI", sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(text, x, y + 6);
+}
+
+// --- Title Screen ---
+function initTitle() {
+  titleBacteria = [];
+  titleAntibiotics = [];
+  for (let i = 0; i < 10; i++) {
+    titleBacteria.push({
+      x: rnd(CX - 280, CX + 280),
+      y: rnd(CY - 100, CY + 140),
+      r: rnd(7, 15),
+      vx: rnd(-25, 25),
+      vy: rnd(-25, 25),
+      phase: rnd(0, TAU),
+      flagPhase: rnd(0, TAU),
+      hue: rnd(-15, 15)
+    });
+  }
+  for (let i = 0; i < 6; i++) {
+    const a = rnd(0, TAU);
+    titleAntibiotics.push({
+      x: CX + Math.cos(a) * rnd(150, 300),
+      y: CY + Math.sin(a) * rnd(80, 180),
+      vx: rnd(-35, 35), vy: rnd(-35, 35),
+      type: pick(['penicillin', 'tetracycline', 'vancomycin']),
+      phase: rnd(0, TAU), r: rnd(5, 11)
+    });
+  }
+}
+initTitle();
+
+function drawTitle() {
+  titleTime += dt;
+
+  ctx.fillStyle = COL.darkBg;
+  ctx.fillRect(0, 0, W, H);
+
+  // Subtle petri dish outline
+  ctx.globalAlpha = 0.08;
+  ctx.strokeStyle = COL.accent;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(CX, CY, Math.min(W, H) * 0.35, 0, TAU);
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+
+  // Animated background bacteria
+  for (const b of titleBacteria) {
+    b.x += b.vx * dt;
+    b.y += b.vy * dt;
+    b.phase += dt * 3;
+    b.flagPhase += dt * 6;
+    if (b.x < CX - 320 || b.x > CX + 320) b.vx *= -1;
+    if (b.y < CY - 180 || b.y > CY + 220) b.vy *= -1;
+
+    ctx.save();
+    ctx.translate(b.x, b.y);
+    const pulse = 1 + Math.sin(b.phase) * 0.08;
+
+    // Flagella
+    ctx.strokeStyle = COL.player;
+    ctx.lineWidth = 1.2;
+    ctx.globalAlpha = 0.5;
+    for (let f = 0; f < 3; f++) {
+      const fa = (f / 3) * TAU + PI;
+      const w = Math.sin(b.flagPhase + f) * 0.4;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(fa) * b.r, Math.sin(fa) * b.r);
+      ctx.quadraticCurveTo(
+        Math.cos(fa - w * 0.5) * (b.r + 5),
+        Math.sin(fa - w * 0.5) * (b.r + 5),
+        Math.cos(fa + w) * (b.r + 11),
+        Math.sin(fa + w) * (b.r + 11)
+      );
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+
+    // Body
+    ctx.fillStyle = COL.player;
+    ctx.globalAlpha = 0.7;
+    ctx.beginPath();
+    ctx.arc(0, 0, b.r * pulse, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Nucleus
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    ctx.beginPath();
+    ctx.arc(-b.r * 0.2, -b.r * 0.2, b.r * 0.28, 0, TAU);
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  // Animated antibiotics bouncing off
+  for (const ab of titleAntibiotics) {
+    ab.x += ab.vx * dt;
+    ab.y += ab.vy * dt;
+    ab.phase += dt * 3;
+    if (ab.x < CX - 380 || ab.x > CX + 380) ab.vx *= -1;
+    if (ab.y < CY - 220 || ab.y > CY + 260) ab.vy *= -1;
+
+    ctx.globalAlpha = 0.45;
+    ctx.fillStyle = abColor(ab.type);
+    ctx.beginPath();
+    ctx.arc(ab.x, ab.y, ab.r + Math.sin(ab.phase) * 2, 0, TAU);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
+  // Game title
+  ctx.textAlign = 'center';
+  ctx.fillStyle = COL.accent;
+  ctx.font = 'bold 60px "Segoe UI", sans-serif';
+  ctx.shadowColor = COL.accent;
+  ctx.shadowBlur = 35;
+  ctx.fillText('SUPERBUGS', CX, CY - 55);
+  ctx.shadowBlur = 0;
+
+  // Subtitle
+  ctx.fillStyle = COL.text;
+  ctx.font = '17px "Segoe UI", sans-serif';
+  ctx.fillText('Antibiotic Resistance Survival', CX, CY - 18);
+
+  // NGSS tag
+  ctx.fillStyle = '#666';
+  ctx.font = '11px "Segoe UI", sans-serif';
+  ctx.fillText('NGSS MS-LS4-4 / MS-LS4-6 \u2014 Natural Selection & Evolution', CX, CY + 10);
+
+  // Buttons
+  drawButton(CX, CY + 60, 220, 50, 'PLAY', COL.accent);
+  drawButton(CX, CY + 130, 220, 50, 'HIGH SCORES', '#AB47BC');
+
+  // Credit
+  ctx.fillStyle = '#444';
+  ctx.font = '10px "Segoe UI", sans-serif';
+  ctx.fillText('A CAST Science Educational Game', CX, H - 20);
+}
+
+// --- How To Play Screen ---
+function drawHowTo() {
+  ctx.fillStyle = COL.darkBg;
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.textAlign = 'center';
+  ctx.fillStyle = COL.accent;
+  ctx.font = 'bold 30px "Segoe UI", sans-serif';
+  ctx.fillText('HOW TO PLAY', CX, CY - 180);
+
+  const lines = [
+    { t: 'You ARE a bacterium. Survive waves of antibiotics.', c: COL.text },
+    { t: 'WASD / Arrow Keys to move. Dodge everything!', c: '#aaa' },
+    { t: 'Between waves, choose mutations to evolve resistance.', c: COL.mutation },
+    { t: 'Mutations are random but stack. By Wave 10, you\'re a SUPERBUG.', c: COL.danger },
+    { t: 'Stand on bright nutrient zones to heal and divide faster.', c: COL.nutrient },
+    { t: 'Your clones follow you and share your mutations.', c: COL.clone },
+    { t: 'If you die, you become one of your clones. No clones = game over.', c: '#aaa' },
+    { t: 'Boss antibiotics appear every 5 waves. Enzyme mutations damage them.', c: COL.boss },
+    { t: '', c: 'transparent' },
+    { t: 'Touch: Left side = virtual joystick | Right side = abilities', c: '#555' },
+  ];
+
+  for (let i = 0; i < lines.length; i++) {
+    ctx.fillStyle = lines[i].c;
+    ctx.font = '13px "Segoe UI", sans-serif';
+    ctx.fillText(lines[i].t, CX, CY - 110 + i * 26);
+  }
+
+  // Science note
+  ctx.fillStyle = '#AB47BC';
+  ctx.font = 'italic 12px "Segoe UI", sans-serif';
+  ctx.fillText('The science: Natural selection in real-time. You experience evolution by BEING the organism.', CX, CY + 130);
+
+  drawButton(CX, CY + 155, 220, 50, 'START GAME', COL.accent);
+  drawButton(CX, CY + 215, 220, 50, 'BACK', '#666');
+}
+
+// --- Game Over Screen ---
+function drawGameOver() {
+  ctx.fillStyle = '#000d';
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.textAlign = 'center';
+  ctx.fillStyle = COL.danger;
+  ctx.font = 'bold 42px "Segoe UI", sans-serif';
+  ctx.shadowColor = COL.danger;
+  ctx.shadowBlur = 25;
+  ctx.fillText('EXTINCTION', CX, CY - 110);
+  ctx.shadowBlur = 0;
+
+  ctx.fillStyle = '#bbb';
+  ctx.font = '15px "Segoe UI", sans-serif';
+  ctx.fillText('Your colony has been eradicated by antibiotics.', CX, CY - 70);
+
+  // Stats
+  const stats = [
+    { label: 'Waves Survived', value: wave, color: '#aaa' },
+    { label: 'Mutations Collected', value: totalMutations, color: COL.mutation },
+    { label: 'Peak Population', value: peakPopulation, color: COL.clone },
+    { label: 'Resistance Level', value: resistanceLevel, color: '#AB47BC' },
+    { label: 'Final Score', value: score, color: COL.accent }
+  ];
+
+  for (let i = 0; i < stats.length; i++) {
+    const s = stats[i];
+    const sy = CY - 30 + i * 28;
+    ctx.fillStyle = '#888';
+    ctx.font = '13px "Segoe UI", sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText(s.label + ':', CX - 10, sy);
+    ctx.fillStyle = s.color;
+    ctx.font = i === 4 ? 'bold 18px "Segoe UI", sans-serif' : 'bold 14px "Segoe UI", sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText(s.value, CX + 10, sy);
+  }
+
+  ctx.textAlign = 'center';
+
+  // Science reflection
+  ctx.fillStyle = '#666';
+  ctx.font = 'italic 11px "Segoe UI", sans-serif';
+  if (wave >= 10) {
+    ctx.fillText('Your bacteria evolved multi-drug resistance through accumulated mutations \u2014 just like real superbugs.', CX, CY + 80);
+  } else if (wave >= 5) {
+    ctx.fillText('Stronger selection pressure requires more resistance adaptations to survive.', CX, CY + 80);
+  } else {
+    ctx.fillText('Without enough mutations, your bacteria could not survive the antibiotic selection pressure.', CX, CY + 80);
+  }
+
+  drawButton(CX, CY + 110, 220, 50, 'PLAY AGAIN', COL.accent);
+  drawButton(CX, CY + 180, 220, 50, 'MAIN MENU', '#666');
+}
+
+// --- High Scores & Persistence ---
+function loadScores() {
+  try {
+    highScores = JSON.parse(localStorage.getItem('superbugs_scores') || '[]');
+  } catch (e) {
+    highScores = [];
+  }
+}
+
+function saveScore(sc, wv, muts) {
+  loadScores();
+  highScores.push({
+    score: sc, wave: wv, mutations: muts,
+    population: peakPopulation,
+    date: new Date().toLocaleDateString()
+  });
+  highScores.sort((a, b) => b.score - a.score);
+  highScores = highScores.slice(0, 10);
+  try {
+    localStorage.setItem('superbugs_scores', JSON.stringify(highScores));
+  } catch (e) { /* storage full or unavailable */ }
+}
+
+function loadCatalog() {
+  try {
+    mutationCatalog = JSON.parse(localStorage.getItem('superbugs_catalog') || '{}');
+  } catch (e) {
+    mutationCatalog = {};
+  }
+}
+
+function saveCatalog() {
+  try {
+    localStorage.setItem('superbugs_catalog', JSON.stringify(mutationCatalog));
+  } catch (e) { /* storage full or unavailable */ }
+}
+
+loadCatalog();
+
+function drawHighScores() {
+  ctx.fillStyle = COL.darkBg;
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.textAlign = 'center';
+  ctx.fillStyle = COL.mutation;
+  ctx.font = 'bold 28px "Segoe UI", sans-serif';
+  ctx.fillText('HIGH SCORES', CX, CY - 185);
+
+  if (highScores.length === 0) {
+    ctx.fillStyle = '#666';
+    ctx.font = '14px "Segoe UI", sans-serif';
+    ctx.fillText('No scores yet. Play a game!', CX, CY - 120);
+  } else {
+    // Column headers
+    ctx.font = 'bold 10px "Segoe UI", sans-serif';
+    ctx.fillStyle = '#666';
+    const cols = [CX - 160, CX - 70, CX + 10, CX + 80, CX + 160];
+    const headers = ['RANK', 'SCORE', 'WAVE', 'MUTS', 'DATE'];
+    for (let c = 0; c < cols.length; c++) {
+      ctx.fillText(headers[c], cols[c], CY - 148);
+    }
+
+    // Score rows
+    for (let i = 0; i < highScores.length; i++) {
+      const s = highScores[i];
+      const rowY = CY - 120 + i * 26;
+      ctx.fillStyle = i === 0 ? COL.accent : (i < 3 ? '#ccc' : '#888');
+      ctx.font = '13px "Segoe UI", sans-serif';
+      ctx.fillText(`#${i + 1}`, cols[0], rowY);
+      ctx.fillText(s.score, cols[1], rowY);
+      ctx.fillText(s.wave, cols[2], rowY);
+      ctx.fillText(s.mutations, cols[3], rowY);
+      ctx.fillText(s.date || '-', cols[4], rowY);
+    }
+  }
+
+  // Mutation catalog section
+  ctx.fillStyle = '#555';
+  ctx.font = 'bold 12px "Segoe UI", sans-serif';
+  ctx.fillText('MUTATION CATALOG', CX, CY + 120);
+  ctx.font = '10px "Segoe UI", sans-serif';
+  ctx.fillStyle = '#444';
+  ctx.fillText('Total times each mutation has been selected across all runs:', CX, CY + 138);
+
+  const catKeys = Object.keys(mutationCatalog);
+  if (catKeys.length === 0) {
+    ctx.fillStyle = '#555';
+    ctx.fillText('No mutations collected yet.', CX, CY + 160);
+  } else {
+    let cx_offset = CX - (catKeys.length * 35) / 2;
+    for (const k of catKeys) {
+      const mDef = MUTATIONS.find(m => m.id === k);
+      if (!mDef) continue;
+      ctx.fillStyle = mDef.color;
+      ctx.beginPath();
+      ctx.arc(cx_offset + 15, CY + 162, 8, 0, TAU);
+      ctx.fill();
+      ctx.fillStyle = '#fff';
+      ctx.font = 'bold 8px "Segoe UI", sans-serif';
+      ctx.fillText(mutationCatalog[k], cx_offset + 15, CY + 165);
+      cx_offset += 35;
+    }
+  }
+
+  drawButton(CX, CY + 190, 220, 50, 'BACK', '#666');
+}
+
+// ==================================================
+// MAIN GAME LOOP
+// ==================================================
+function update(timestamp) {
+  if (!lastTime) lastTime = timestamp;
+  dt = Math.min((timestamp - lastTime) / 1000, 0.05); // cap delta-time
+  lastTime = timestamp;
+  gameTime += dt;
+
+  // Update screen shake
+  updateShake();
+
+  // Clear with dark background
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = COL.darkBg;
+  ctx.fillRect(0, 0, W, H);
+
+  // Apply screen shake transform
+  ctx.save();
+  ctx.translate(shakeX, shakeY);
+
+  // --- State machine ---
+  if (state === 'TITLE') {
+    drawTitle();
+  } else if (state === 'HOW_TO') {
+    drawHowTo();
+  } else if (state === 'PLAYING') {
+    // Update all gameplay systems
+    updatePlayer();
+    updateClones();
+    updateWave();
+    updateAntibiotics();
+    updateBosses();
+    updateParticles();
+    updateBiofilmTrails();
+    updateDivisionAnimations();
+
+    // Cleanup dead clones
+    for (let i = clones.length - 1; i >= 0; i--) {
+      if (!clones[i].alive) clones.splice(i, 1);
+    }
+
+    // Draw everything in correct z-order
+    drawDish();
+    drawNutrients();
+    drawBiofilmTrails();
+    drawParticles();
+    drawDivisionAnimations();
+    for (const c of clones) drawBacteria(c);
+    if (player && player.alive) drawBacteria(player);
+    drawAntibiotics();
+    drawBosses();
+    drawHUD();
+
+  } else if (state === 'MUTATION_SELECT') {
+    // Draw game in background (frozen)
+    drawDish();
+    drawNutrients();
+    drawBiofilmTrails();
+    drawParticles();
+    for (const c of clones) drawBacteria(c);
+    if (player && player.alive) drawBacteria(player);
+    drawHUD();
+    // Mutation overlay
+    drawMutationSelect();
+
+    // Animate card flip timers
+    for (let i = 0; i < 3; i++) {
+      if (cardFlipTimers[i] > 0) cardFlipTimers[i] -= dt;
+    }
+
+  } else if (state === 'GAME_OVER') {
+    drawDish();
+    drawNutrients();
+    updateParticles();
+    drawParticles();
+    drawGameOver();
+
+  } else if (state === 'HIGH_SCORES') {
+    drawHighScores();
+  }
+
+  ctx.restore(); // Undo shake transform
+
+  requestAnimationFrame(update);
+}
+
+// Kick off the game loop
+requestAnimationFrame(update);
+</script>
+</body>
+</html>

@@ -3,135 +3,308 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CAST Science Games — Grade 5</title>
+<title>CAST Science Games</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a1a;color:#e8e4dc;min-height:100vh}
 .header{text-align:center;padding:48px 24px 32px;background:linear-gradient(180deg,#1a1040 0%,#0a0a1a 100%)}
 .header h1{font-size:clamp(28px,5vw,48px);font-weight:800;background:linear-gradient(135deg,#FFD166,#FF8C42,#E84040);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
 .header p{font-size:clamp(14px,2vw,18px);color:rgba(232,228,220,0.6);max-width:600px;margin:0 auto}
-.header .badge{display:inline-block;margin-top:12px;padding:4px 14px;border-radius:20px;background:rgba(255,209,102,0.12);color:#FFD166;font-size:13px;font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;padding:24px;max-width:1200px;margin:0 auto}
+.header .stats{display:flex;gap:16px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.header .stat{padding:6px 16px;border-radius:20px;background:rgba(255,209,102,0.1);color:#FFD166;font-size:13px;font-weight:600}
+.grade-section{max-width:1200px;margin:0 auto;padding:0 24px}
+.grade-header{display:flex;align-items:center;gap:12px;margin:40px 0 20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.grade-header h2{font-size:clamp(20px,3vw,28px);font-weight:700}
+.grade-header .count{font-size:13px;color:rgba(232,228,220,0.4);margin-left:auto}
+.grade-5 h2{color:#66BB6A}
+.grade-8 h2{color:#42A5F5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding-bottom:24px}
 .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden;transition:transform 0.2s,border-color 0.2s;cursor:pointer;text-decoration:none;color:inherit;display:block}
 .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.15)}
-.card-top{height:140px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.card-top .icon{font-size:56px;z-index:1}
-.card-body{padding:20px}
-.card-body h2{font-size:20px;font-weight:700;margin-bottom:4px}
-.card-body .genre{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;opacity:0.5}
-.card-body p{font-size:14px;line-height:1.5;color:rgba(232,228,220,0.65);margin-bottom:12px}
-.card-body .lesson{font-size:12px;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,0.06);display:inline-block;color:rgba(232,228,220,0.5)}
-.card-body .science{font-size:12px;color:rgba(255,209,102,0.6);margin-top:8px;font-style:italic}
-.footer{text-align:center;padding:40px 24px;color:rgba(232,228,220,0.3);font-size:13px}
-.footer a{color:rgba(255,209,102,0.5);text-decoration:none}
+.card-top{height:120px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card-top .icon{font-size:48px;z-index:1}
+.card-body{padding:16px}
+.card-body h3{font-size:17px;font-weight:700;margin-bottom:2px}
+.card-body .genre{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;opacity:0.45}
+.card-body p{font-size:13px;line-height:1.45;color:rgba(232,228,220,0.6);margin-bottom:10px}
+.card-body .lesson{font-size:11px;padding:3px 8px;border-radius:6px;background:rgba(255,255,255,0.06);display:inline-block;color:rgba(232,228,220,0.45)}
+.card-body .science{font-size:11px;color:rgba(255,209,102,0.5);margin-top:6px;font-style:italic}
+.footer{text-align:center;padding:40px 24px;color:rgba(232,228,220,0.25);font-size:12px}
+.footer a{color:rgba(255,209,102,0.4);text-decoration:none}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>CAST Science Games</h1>
-  <p>8 fun-first arcade games for Grade 5 science. No quizzes. No lessons. Just play.</p>
-  <span class="badge">Grade 5 &middot; NGSS Aligned &middot; 8 Games</span>
+  <p>20 fun-first arcade games for Grades 5 and 8. No quizzes. No lessons. Just play.</p>
+  <div class="stats">
+    <span class="stat">20 Games</span>
+    <span class="stat">20 Unique Genres</span>
+    <span class="stat">NGSS Aligned</span>
+    <span class="stat">Works on Any Device</span>
+  </div>
 </div>
-<div class="grid">
-  <a class="card" href="wildfire/ember.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#1B1145,#E8845C)">
-      <span class="icon">&#128293;</span>
-    </div>
-    <div class="card-body">
-      <h2>EMBER</h2>
-      <div class="genre">Growth Arcade</div>
-      <p>You ARE a wildfire. Eat dry fuel to grow massive. Dodge rain clouds. Ride wind gusts. Don't burn out.</p>
-      <span class="lesson">L01: When Trees Become Matches</span>
-      <div class="science">Drought, wind, vegetation &amp; fire spread</div>
-    </div>
-  </a>
-  <a class="card" href="decompose/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#3E2723,#5B8C5A)">
-      <span class="icon">&#127812;</span>
-    </div>
-    <div class="card-body">
-      <h2>DECOMPOSE</h2>
-      <div class="genre">Tower Defense</div>
-      <p>Place mushrooms, worms, and bacteria to break down falling dead matter before it buries the forest floor.</p>
-      <span class="lesson">L02: Nature's Recycling System</span>
-      <div class="science">Decomposers, moisture, nutrient cycling</div>
-    </div>
-  </a>
-  <a class="card" href="photon/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#1A0A3E,#FFD700)">
-      <span class="icon">&#9728;&#65039;</span>
-    </div>
-    <div class="card-body">
-      <h2>PHOTON</h2>
-      <div class="genre">Endless Runner</div>
-      <p>Race from the sun through the food chain. Each energy transfer drops you to 10%. How far can you go?</p>
-      <span class="lesson">L03: Powered by the Sun</span>
-      <div class="science">Energy transfer, food chains, 10% rule</div>
-    </div>
-  </a>
-  <a class="card" href="aquifer/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#1B3A5C,#4FC3F7)">
-      <span class="icon">&#128167;</span>
-    </div>
-    <div class="card-body">
-      <h2>AQUIFER</h2>
-      <div class="genre">Puzzle Strategy</div>
-      <p>Control the water cycle. Route rain to cities. Only 1% of Earth's water is usable — make it count.</p>
-      <span class="lesson">L04: Earth's Hidden Water</span>
-      <div class="science">Water distribution, evaporation, scarcity</div>
-    </div>
-  </a>
-  <a class="card" href="phase-shift/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#00BCD4,#FF5722)">
-      <span class="icon">&#10052;&#65039;</span>
-    </div>
-    <div class="card-body">
-      <h2>PHASE SHIFT</h2>
-      <div class="genre">Puzzle Platformer</div>
-      <p>Shift between ice, water, and steam to solve puzzles. Your mass never changes. 25 levels across 5 worlds.</p>
-      <span class="lesson">L05: The Disappearing Act</span>
-      <div class="science">Conservation of mass, states of matter</div>
-    </div>
-  </a>
-  <a class="card" href="carbon/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#3E2723,#4CAF50)">
-      <span class="icon">&#127794;</span>
-    </div>
-    <div class="card-body">
-      <h2>CARBON</h2>
-      <div class="genre">Idle Growth Sim</div>
-      <p>Grow a seedling into an ancient giant by catching CO&#8322; from the air. 95% of a tree's mass comes from air!</p>
-      <span class="lesson">L06: Where Does a Tree's Mass Come From?</span>
-      <div class="science">Photosynthesis, CO&#8322; absorption, carbon storage</div>
-    </div>
-  </a>
-  <a class="card" href="mycelium/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#1A0A2E,#CE93D8)">
-      <span class="icon">&#127812;</span>
-    </div>
-    <div class="card-body">
-      <h2>MYCELIUM</h2>
-      <div class="genre">Network Strategy</div>
-      <p>Build the Wood Wide Web. Connect trees through underground fungal networks to share nutrients and survive.</p>
-      <span class="lesson">L07: The Mushroom Network</span>
-      <div class="science">Mycorrhizal networks, mutualism, ecosystem resilience</div>
-    </div>
-  </a>
-  <a class="card" href="soap-strike/index.html">
-    <div class="card-top" style="background:linear-gradient(135deg,#1A237E,#FFD54F)">
-      <span class="icon">&#129532;</span>
-    </div>
-    <div class="card-body">
-      <h2>SOAP STRIKE</h2>
-      <div class="genre">Arena Action</div>
-      <p>You're a soap molecule. Ram into viruses tail-first to rip their membranes apart. Build your squad. Survive.</p>
-      <span class="lesson">L08: How Soap Destroys Viruses</span>
-      <div class="science">Amphiphilic molecules, lipid membranes, handwashing</div>
-    </div>
-  </a>
+
+<div class="grade-section grade-5">
+  <div class="grade-header">
+    <h2>Grade 5</h2>
+    <span class="count">10 Games &middot; Earth &amp; Life Science</span>
+  </div>
+  <div class="grid">
+    <a class="card" href="wildfire/ember.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1B1145,#E8845C)">
+        <span class="icon">&#128293;</span>
+      </div>
+      <div class="card-body">
+        <h3>EMBER</h3>
+        <div class="genre">Growth Arcade</div>
+        <p>You ARE a wildfire. Eat dry fuel to grow massive. Dodge rain clouds. Ride wind gusts.</p>
+        <span class="lesson">L01: When Trees Become Matches</span>
+        <div class="science">Drought, wind, vegetation &amp; fire spread</div>
+      </div>
+    </a>
+    <a class="card" href="decompose/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#3E2723,#5B8C5A)">
+        <span class="icon">&#127812;</span>
+      </div>
+      <div class="card-body">
+        <h3>DECOMPOSE</h3>
+        <div class="genre">Tower Defense</div>
+        <p>Place mushrooms, worms, and bacteria to break down falling dead matter.</p>
+        <span class="lesson">L02: Nature's Recycling System</span>
+        <div class="science">Decomposers, moisture, nutrient cycling</div>
+      </div>
+    </a>
+    <a class="card" href="photon/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1A0A3E,#FFD700)">
+        <span class="icon">&#9728;&#65039;</span>
+      </div>
+      <div class="card-body">
+        <h3>PHOTON</h3>
+        <div class="genre">Endless Runner</div>
+        <p>Race from the sun through the food chain. Each transfer drops you to 10%.</p>
+        <span class="lesson">L03: Powered by the Sun</span>
+        <div class="science">Energy transfer, food chains, 10% rule</div>
+      </div>
+    </a>
+    <a class="card" href="aquifer/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1B3A5C,#4FC3F7)">
+        <span class="icon">&#128167;</span>
+      </div>
+      <div class="card-body">
+        <h3>AQUIFER</h3>
+        <div class="genre">Puzzle Strategy</div>
+        <p>Control the water cycle. Route rain to cities. Only 1% of water is usable.</p>
+        <span class="lesson">L04: Earth's Hidden Water</span>
+        <div class="science">Water distribution, evaporation, scarcity</div>
+      </div>
+    </a>
+    <a class="card" href="phase-shift/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#00BCD4,#FF5722)">
+        <span class="icon">&#10052;&#65039;</span>
+      </div>
+      <div class="card-body">
+        <h3>PHASE SHIFT</h3>
+        <div class="genre">Puzzle Platformer</div>
+        <p>Shift between ice, water, and steam. Your mass never changes. 25 levels.</p>
+        <span class="lesson">L05: The Disappearing Act</span>
+        <div class="science">Conservation of mass, states of matter</div>
+      </div>
+    </a>
+    <a class="card" href="carbon/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#3E2723,#4CAF50)">
+        <span class="icon">&#127794;</span>
+      </div>
+      <div class="card-body">
+        <h3>CARBON</h3>
+        <div class="genre">Idle Growth Sim</div>
+        <p>Grow a seedling into a giant by catching CO&#8322;. 95% of tree mass comes from air!</p>
+        <span class="lesson">L06: Where Does a Tree's Mass Come From?</span>
+        <div class="science">Photosynthesis, CO&#8322; absorption, carbon storage</div>
+      </div>
+    </a>
+    <a class="card" href="mycelium/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1A0A2E,#CE93D8)">
+        <span class="icon">&#127812;</span>
+      </div>
+      <div class="card-body">
+        <h3>MYCELIUM</h3>
+        <div class="genre">Network Strategy</div>
+        <p>Build the Wood Wide Web. Connect trees underground to share nutrients.</p>
+        <span class="lesson">L07: The Mushroom Network</span>
+        <div class="science">Mycorrhizal networks, mutualism</div>
+      </div>
+    </a>
+    <a class="card" href="soap-strike/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1A237E,#FFD54F)">
+        <span class="icon">&#129532;</span>
+      </div>
+      <div class="card-body">
+        <h3>SOAP STRIKE</h3>
+        <div class="genre">Arena Action</div>
+        <p>You're a soap molecule. Ram viruses tail-first to rip their membranes apart.</p>
+        <span class="lesson">L08: How Soap Destroys Viruses</span>
+        <div class="science">Amphiphilic molecules, lipid membranes</div>
+      </div>
+    </a>
+    <a class="card" href="smog-city/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#37474F,#81D4FA)">
+        <span class="icon">&#127961;</span>
+      </div>
+      <div class="card-body">
+        <h3>SMOG CITY</h3>
+        <div class="genre">City Builder / Defense</div>
+        <p>Protect your neighborhood from freeway pollution. Plant trees, build barriers, save lungs.</p>
+        <span class="lesson">L09: Whose Air Is This?</span>
+        <div class="science">Air pollution, wind, environmental justice</div>
+      </div>
+    </a>
+    <a class="card" href="starlight/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#0A0A14,#FFD54F)">
+        <span class="icon">&#11088;</span>
+      </div>
+      <div class="card-body">
+        <h3>STARLIGHT</h3>
+        <div class="genre">Space Explorer</div>
+        <p>Fly through space collecting ancient starlight. Farther stars = older light = more points.</p>
+        <span class="lesson">L10: The Light You're Seeing Is Already Old</span>
+        <div class="science">Apparent brightness, distance, light-years</div>
+      </div>
+    </a>
+  </div>
 </div>
+
+<div class="grade-section grade-8">
+  <div class="grade-header">
+    <h2>Grade 8</h2>
+    <span class="count">10 Games &middot; Physical &amp; Life Science</span>
+  </div>
+  <div class="grid">
+    <a class="card" href="superbugs/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1B2631,#00E676)">
+        <span class="icon">&#129440;</span>
+      </div>
+      <div class="card-body">
+        <h3>SUPERBUGS</h3>
+        <div class="genre">Roguelike / Evolution</div>
+        <p>You're a bacterium. Dodge antibiotics. Mutate to survive. Become unstoppable.</p>
+        <span class="lesson">L01: Superbugs: Evolution You Can See</span>
+        <div class="science">Natural selection, antibiotic resistance, mutations</div>
+      </div>
+    </a>
+    <a class="card" href="bleach-point/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#01579B,#E91E63)">
+        <span class="icon">&#129712;</span>
+      </div>
+      <div class="card-body">
+        <h3>BLEACH POINT</h3>
+        <div class="genre">Ecosystem Tycoon</div>
+        <p>Manage a coral reef. Keep zooxanthellae happy as oceans warm. Don't let it bleach.</p>
+        <span class="lesson">L02: The Reef Is Bleaching</span>
+        <div class="science">Coral symbiosis, ocean temperature, acidification</div>
+      </div>
+    </a>
+    <a class="card" href="e-waste/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#37474F,#C6FF00)">
+        <span class="icon">&#128241;</span>
+      </div>
+      <div class="card-body">
+        <h3>E-WASTE</h3>
+        <div class="genre">Supply Chain / Factory</div>
+        <p>Build phones from rare earth minerals. See the full lifecycle. Mine, build, sell, trash, recycle.</p>
+        <span class="lesson">L03: Your Phone's Dirty Secret</span>
+        <div class="science">Rare earth mining, e-waste, lifecycle analysis</div>
+      </div>
+    </a>
+    <a class="card" href="hurricane/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1B2631,#E65100)">
+        <span class="icon">&#127744;</span>
+      </div>
+      <div class="card-body">
+        <h3>HURRICANE</h3>
+        <div class="genre">Storm Chaser Flight</div>
+        <p>Fly a research plane INTO hurricanes. Warmer ocean = stronger storm. Collect data to survive.</p>
+        <span class="lesson">L04: Why Hurricanes Are Getting Angrier</span>
+        <div class="science">Sea surface temperature, rapid intensification</div>
+      </div>
+    </a>
+    <a class="card" href="coaster/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#263238,#FDD835)">
+        <span class="icon">&#127906;</span>
+      </div>
+      <div class="card-body">
+        <h3>COASTER</h3>
+        <div class="genre">Physics Builder</div>
+        <p>Design roller coasters with real physics. Height = potential energy. Speed = kinetic. PE + KE = constant.</p>
+        <span class="lesson">L05: The Roller Coaster Equation</span>
+        <div class="science">Energy conservation, PE &#8596; KE transformation</div>
+      </div>
+    </a>
+    <a class="card" href="impact/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#263238,#EF5350)">
+        <span class="icon">&#9889;</span>
+      </div>
+      <div class="card-body">
+        <h3>IMPACT</h3>
+        <div class="genre">Crash Test Action</div>
+        <p>Design helmets. Test them in slow-motion collisions. F=ma in real-time. Protect the brain.</p>
+        <span class="lesson">L06: The Concussion Problem</span>
+        <div class="science">Newton's Laws, force, impulse, collision physics</div>
+      </div>
+    </a>
+    <a class="card" href="atp-rush/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#4A148C,#FFC107)">
+        <span class="icon">&#127936;</span>
+      </div>
+      <div class="card-body">
+        <h3>ATP RUSH</h3>
+        <div class="genre">Sports Rhythm</div>
+        <p>Play as an athlete. Every move costs ATP. Food + oxygen = energy. Manage your cellular respiration.</p>
+        <span class="lesson">L07: How LeBron Turns Food Into Dunks</span>
+        <div class="science">Cellular respiration, ATP, glucose + O&#8322;</div>
+      </div>
+    </a>
+    <a class="card" href="gene-lab/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#4A148C,#FFC107)">
+        <span class="icon">&#129516;</span>
+      </div>
+      <div class="card-body">
+        <h3>GENE LAB</h3>
+        <div class="genre">Breeding Puzzle</div>
+        <p>Cross-breed cute creatures. Predict offspring traits. Discover genetics through Punnett squares.</p>
+        <span class="lesson">L08: Why Do You Look Like That?</span>
+        <div class="science">Dominant/recessive alleles, genotype, phenotype</div>
+      </div>
+    </a>
+    <a class="card" href="waveform/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#1A1A2E,#00E5FF)">
+        <span class="icon">&#127925;</span>
+      </div>
+      <div class="card-body">
+        <h3>WAVEFORM</h3>
+        <div class="genre">Music Synthesizer</div>
+        <p>Build music by manipulating waves. Amplitude = volume. Frequency = pitch. Create beats.</p>
+        <span class="lesson">L09: Your Music Is a Wave</span>
+        <div class="science">Wave amplitude, frequency, interference, energy</div>
+      </div>
+    </a>
+    <a class="card" href="exotherm/index.html">
+      <div class="card-top" style="background:linear-gradient(135deg,#BF360C,#29B6F6)">
+        <span class="icon">&#129514;</span>
+      </div>
+      <div class="card-body">
+        <h3>EXOTHERM</h3>
+        <div class="genre">Chemistry Cooking</div>
+        <p>Mix ingredients for chemical reactions. Hit target temperatures. Mass never changes.</p>
+        <span class="lesson">L10: Hand Warmers and Hidden Reactions</span>
+        <div class="science">Exothermic/endothermic, conservation of mass</div>
+      </div>
+    </a>
+  </div>
+</div>
+
 <div class="footer">
-  <p>CAST Science Games &middot; Grade 5 &middot; NGSS Aligned</p>
+  <p>CAST Science Games &middot; Grades 5 &amp; 8 &middot; 20 Games &middot; NGSS Aligned</p>
   <p style="margin-top:8px">Built for <a href="https://alexandriasworld1234-source.github.io/cast-science-resources/">CAST Science Resources</a></p>
 </div>
 </body>
