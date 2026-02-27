@@ -1166,4 +1166,1171 @@ L05 = {
     ]
 }
 
-ALL_LESSONS = [L01, L02, L03, L04, L05]
+L06 = {
+    "id": "G12L1-L06",
+    "title": "Why Is Antibiotic Resistance Getting Worse?",
+    "subtitle": "Modeling Natural Selection, Mutation, and the Evolution of Resistant Bacteria",
+    "ngss": "HS-LS4-2",
+    "ngss_desc": "Construct an explanation based on evidence that the process of evolution primarily results from four factors: (1) the potential for a species to increase in number, (2) the heritable genetic variation of individuals in a species due to mutation and sexual reproduction, (3) competition for limited resources, and (4) the proliferation of those organisms that are better able to survive and reproduce in the environment.",
+    "big_question": "Every year, 1.27 million people die worldwide from antibiotic-resistant infections — more than HIV/AIDS or malaria. If antibiotics are one of humanity\'s greatest inventions, how are microscopic bacteria outsmarting our best medicines, and are we heading toward a post-antibiotic apocalypse?",
+    "objectives": [
+        "Model how random mutations, selective pressure from antibiotics, bacterial reproduction rate, and gene transfer interact to drive the evolution of resistance",
+        "Explain why incomplete antibiotic courses and agricultural overuse accelerate resistance evolution",
+        "Predict how different antibiotic usage patterns affect the speed and extent of resistance development",
+        "Analyze why antibiotic resistance is an evolutionary arms race that humans are currently losing"
+    ],
+    "vocabulary": [
+        ("Antibiotic Resistance", "The ability of bacteria to survive and reproduce in the presence of an antibiotic that previously killed them — arising from random mutations that are naturally selected when antibiotics create selective pressure"),
+        ("Selective Pressure", "An environmental factor that favors individuals with certain heritable traits over others — antibiotics create intense selective pressure by killing susceptible bacteria and leaving resistant mutants to reproduce without competition"),
+        ("Horizontal Gene Transfer", "The process by which bacteria share genetic material, including resistance genes, directly between cells through conjugation, transformation, or transduction — allowing resistance to spread between species without reproduction"),
+        ("Superbug", "A bacterial strain that has evolved resistance to multiple classes of antibiotics — such as MRSA, CRE, and XDR-TB — making infections extremely difficult or impossible to treat with existing drugs")
+    ],
+    "components": [
+        ("Antibiotic Exposure", "The concentration, duration, and frequency of antibiotic use in a bacterial population — the primary selective pressure that drives resistance evolution by killing susceptible bacteria and favoring resistant mutants", True),
+        ("Bacterial Population Diversity", "The natural genetic variation present in a bacterial colony due to random mutations — larger and more diverse populations have a higher probability of containing pre-existing resistance mutations", True),
+        ("Mutation Rate", "The frequency at which random genetic changes occur during bacterial DNA replication — bacteria reproduce every 20-30 minutes, generating millions of mutations daily across a population", False),
+        ("Resistance Gene Frequency", "The proportion of bacteria in the population carrying one or more resistance genes — increases rapidly under antibiotic selective pressure as susceptible bacteria die and resistant ones multiply", False),
+        ("Treatment Effectiveness", "How well an antibiotic kills or inhibits the target bacterial population — decreases as Resistance Gene Frequency increases, eventually reaching zero when the population is fully resistant", False)
+    ],
+    "think_about_it": "A patient starts a 10-day antibiotic course but stops after 5 days because they feel better. At that point, the weakest bacteria are dead but the most resistant ones are still alive. What does your model predict about Resistance Gene Frequency in the surviving population?",
+    "scenarios": [
+        ("Full Treatment Course", "Set Antibiotic Exposure to the correct dose for the full prescribed duration — observe how Resistance Gene Frequency changes when nearly all bacteria are eliminated before resistant mutants can multiply"),
+        ("Incomplete Course", "Set Antibiotic Exposure to stop at 50% of the prescribed duration — observe how surviving bacteria with partial resistance multiply without competition and increase Resistance Gene Frequency"),
+        ("Agricultural Overuse", "Set Antibiotic Exposure to low, constant sub-therapeutic levels across a massive bacterial population — observe how this creates ideal conditions for gradual resistance evolution")
+    ],
+    "sim_scenarios": [
+        ("Complete Treatment", "Antibiotic Exposure: Full dose, 10 days | Population Diversity: Moderate | Mutation Rate: Normal", "When antibiotics are taken correctly for the full duration, what happens to Resistance Gene Frequency over time?"),
+        ("Stopped Early", "Antibiotic Exposure: Full dose, 5 days then stopped | Population Diversity: Moderate | Mutation Rate: Normal", "What happens to the bacterial population when treatment stops before all bacteria are killed?"),
+        ("Farm Antibiotics", "Antibiotic Exposure: Low constant dose | Population Diversity: High | Mutation Rate: Normal", "How does constant low-level antibiotic exposure in livestock create resistant bacteria?")
+    ],
+    "discoveries": [
+        "Incomplete antibiotic courses are one of the most powerful drivers of resistance — they kill weak bacteria and leave the most resistant ones to reproduce without competition",
+        "Resistance evolution follows predictable natural selection: random mutation provides variation, antibiotics provide selective pressure, and differential survival increases resistance gene frequency",
+        "Horizontal gene transfer allows resistance to jump between bacterial species, meaning resistance that evolves in harmless soil bacteria can transfer to deadly pathogens",
+        "Sub-therapeutic antibiotic use in agriculture exposes trillions of bacteria to low-level selective pressure — the perfect training ground for resistance evolution on a massive scale"
+    ],
+    "answer": "Antibiotic resistance is getting worse because we are accelerating bacterial evolution through misuse. Antibiotics create intense selective pressure — every time bacteria are exposed, the susceptible ones die and any resistant mutants survive to reproduce without competition. Incomplete treatment courses are especially dangerous because they kill weak bacteria while leaving partially resistant ones alive to evolve further. Agricultural overuse exposes trillions of bacteria to constant low-level antibiotics, creating a massive evolutionary laboratory for resistance. Horizontal gene transfer allows resistance genes to spread between species, compounding the problem. We are heading toward a post-antibiotic era unless we dramatically change how we use these drugs — the bacteria are not outsmarting us; we are training them to defeat our own medicines.",
+    "stem_title": "Design an Antibiotic Stewardship Campaign",
+    "stem_mission": "Design an evidence-based public awareness and behavior change campaign that reduces antibiotic misuse in your community by targeting the specific behaviors that drive resistance evolution.",
+    "stem_scenario": "Your county health department has documented a 40% increase in antibiotic-resistant infections over the past decade. Data shows the top three drivers are: patients demanding antibiotics for viral infections, patients not completing prescribed courses, and agricultural antibiotic overuse. Your team must design a multi-pronged campaign that changes these behaviors using evolutionary biology evidence.",
+    "stem_questions": [
+        "Which of the three misuse behaviors does your model show drives resistance fastest, and why?",
+        "How can you explain natural selection to the general public without using jargon?",
+        "What does your model predict about resistance trends if current misuse patterns continue for 20 more years?"
+    ],
+    "stem_design_qs": [
+        "What specific behaviors does your campaign target and what evidence-based strategies do you use to change them?",
+        "How does your campaign communicate evolutionary biology concepts in ways non-scientists can understand and act on?",
+        "What model evidence supports your claim that these interventions will slow resistance evolution?",
+        "How would you measure whether your campaign actually reduces antibiotic misuse and resistance rates?"
+    ],
+    "career": "Epidemiologists and antimicrobial resistance researchers track the spread of resistant infections and develop containment strategies, earning $60,000-$120,000/year. Infectious disease physicians specialize in treating resistant infections and designing antibiotic stewardship programs, earning $200,000-$350,000/year. Pharmaceutical microbiologists developing new antibiotics earn $75,000-$140,000/year.",
+    "images": {
+        "cover": ("G12L1-L06-cover.png", "A photorealistic close-up of diverse 17-18 year old students in a modern microbiology lab examining bacterial culture plates under dramatic lighting, with petri dishes showing zones of inhibition on the lab bench"),
+        "landscape": ("G12L1-L06-landscape.png", "A diverse group of 17-18 year old students in a modern biology classroom examining diagrams of bacterial resistance mechanisms on a large smartboard, with microscopes and culture plates on lab tables"),
+        "modeling": ("G12L1-L06-modeling.png", "Diverse 17-18 year old students working on laptops building computational models of bacterial population dynamics, classroom walls showing evolution and natural selection diagrams"),
+        "discussion": ("G12L1-L06-discussion.png", "A teacher leading an animated discussion with diverse 17-18 year old students about antibiotic resistance, a graph showing rising resistance rates displayed on the smartboard"),
+        "stem": ("G12L1-L06-stem.png", "Diverse 17-18 year old students designing public health campaign materials on whiteboards and laptops, with infographics about antibiotic stewardship visible")
+    },
+    "pre_assessment": [
+        "Have you or someone you know ever stopped taking antibiotics early because you felt better? What do you think happens to the bacteria that survive?",
+        "Why do you think antibiotics don\'t work against viruses like the common cold or flu?",
+        "What does the term \'superbug\' mean to you, and why do you think they\'re becoming more common?",
+        "Do you think bacteria \'learn\' to resist antibiotics, or is something else happening? Explain your thinking."
+    ],
+    "extend_components": [
+        ("Horizontal Gene Transfer Rate", "The frequency at which bacteria exchange resistance genes through conjugation, transformation, and transduction — allows resistance to spread between unrelated species without reproduction"),
+        ("Immune System Response", "The host\'s innate and adaptive immune defenses working alongside antibiotics — when immunity is compromised, even low levels of resistant bacteria can cause life-threatening infections"),
+        ("Biofilm Formation", "Bacterial communities encased in a protective matrix that reduces antibiotic penetration by up to 1000x — bacteria in biofilms require much higher antibiotic concentrations to kill, promoting resistance development")
+    ],
+    "reflections": [
+        "How does your model demonstrate that antibiotic resistance is an example of evolution by natural selection happening in real time?",
+        "Why is stopping antibiotics early one of the most dangerous things a patient can do, according to your model?",
+        "If bacteria evolve resistance to every antibiotic we create, is developing new antibiotics a long-term solution? What does your model suggest?",
+        "How does agricultural antibiotic use connect to human health, even if people never directly consume those antibiotics?",
+        "What are the ethical implications of wealthy countries having access to last-resort antibiotics while developing nations do not?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Constructing Explanations", "Students construct evidence-based explanations for how the four factors of evolution — population growth potential, heritable variation, competition, and differential survival — drive antibiotic resistance."),
+        ("Disciplinary Core Idea", "LS4.B Natural Selection", "Natural selection acts on heritable variation in bacterial populations: antibiotic exposure selects for resistance mutations, and surviving bacteria reproduce to increase resistance gene frequency in subsequent generations."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal relationships between antibiotic usage patterns and the rate of resistance evolution, predicting how changes in human behavior affect bacterial population dynamics.")
+    ],
+    "cast_items": [
+        "Construct an explanation for how natural selection drives antibiotic resistance using evidence from the model",
+        "Predict how different antibiotic usage patterns affect resistance gene frequency over multiple bacterial generations",
+        "Explain why horizontal gene transfer makes antibiotic resistance a community-level threat rather than an individual patient problem"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A patient takes antibiotics for 5 of the prescribed 10 days and feels better. Based on the natural selection model, what is the most likely composition of the remaining bacterial population and why does this matter?"),
+        ("Constructed Response:", "Using your model, explain why giving low doses of antibiotics to healthy livestock to promote growth is considered one of the greatest threats to human health. Reference at least three model components and the mechanism of natural selection.")
+    ],
+    "background_intro": "Antibiotics transformed medicine after Alexander Fleming\'s discovery of penicillin in 1928, turning previously fatal infections into treatable conditions. But bacteria have been evolving resistance mechanisms for billions of years — antibiotic resistance genes have been found in 30,000-year-old permafrost bacteria. What\'s changed is the speed of evolution: human antibiotic use has created unprecedented selective pressure that accelerates resistance development from millennia to mere years.",
+    "background_sections": [
+        ("The Mechanics of Resistance", "Bacteria develop resistance through several mechanisms: enzymatic degradation (producing enzymes like beta-lactamase that break down antibiotics), target modification (altering the cellular structure an antibiotic targets), efflux pumps (actively pumping antibiotics out of the cell), and reduced permeability (changing membrane proteins to prevent antibiotic entry). These mechanisms arise from random mutations during DNA replication and are passed to daughter cells during binary fission."),
+        ("The Role of Horizontal Gene Transfer", "Unlike humans, bacteria can share genetic material between unrelated species through three mechanisms: conjugation (direct cell-to-cell transfer via pili), transformation (uptake of free DNA from dead bacteria), and transduction (transfer via bacteriophage viruses). This means a resistance gene that evolves in a harmless soil bacterium can transfer to a deadly pathogen. Plasmids — small circular DNA molecules — often carry multiple resistance genes simultaneously, creating multi-drug resistance in a single transfer event."),
+        ("Agricultural Antibiotics: The Hidden Driver", "Approximately 73% of all antibiotics sold globally are used in livestock — not to treat sick animals, but as growth promoters at sub-therapeutic doses. This practice exposes trillions of bacteria to constant low-level selective pressure, the perfect conditions for gradual resistance evolution. Resistant bacteria then spread to humans through direct contact, food supply, water runoff, and airborne transmission. The WHO has called for a complete ban on growth-promotion antibiotics, but economic interests have slowed policy changes."),
+        ("The Post-Antibiotic Threat", "The WHO has warned that without urgent action, we face a post-antibiotic era where common infections and minor injuries can once again kill. The development pipeline for new antibiotics is nearly empty because pharmaceutical companies find it unprofitable — a new antibiotic takes 10-15 years and $1 billion to develop but can become obsolete in 2-3 years. Currently, 700,000 people die annually from resistant infections, projected to reach 10 million by 2050 — surpassing cancer as a cause of death.")
+    ],
+    "lever_L": "Students identify antibiotic exposure, bacterial population diversity, mutation rate, resistance gene frequency, and treatment effectiveness as the key components of the antibiotic resistance system.",
+    "lever_E": "Students determine that antibiotic exposure creates selective pressure favoring resistant mutations, that incomplete courses and low doses accelerate resistance, and that treatment effectiveness decreases as resistance gene frequency rises.",
+    "lever_V": "Students build a computational model showing how antibiotic usage patterns interact with bacterial reproduction and mutation to drive the evolution of resistance over multiple generations.",
+    "lever_Ev": "Students run full treatment, incomplete course, and agricultural overuse scenarios to test predictions about which behaviors drive resistance evolution fastest.",
+    "lever_R": "Students add horizontal gene transfer, immune response, or biofilm formation to explore how real-world complexity affects resistance dynamics and treatment outcomes.",
+    "slides_guide": [
+        {
+            "num": "Slide 1",
+            "title": "Cover",
+            "visual": "Title slide with compelling image related to Why Is Antibiotic Resistance Getting Worse?",
+            "say": "Every year, 1.27 million people die from infections that antibiotics can no longer treat. Today we investigate why.",
+            "do": "Show cover image. Ask: Has anyone ever stopped taking antibiotics early? Why?",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 2",
+            "title": "Learning Objectives",
+            "visual": "Learning goals and vocabulary terms",
+            "say": "Here\'s what you\'ll be able to do by the end of today\'s lesson — model how bacteria evolve resistance in real time.",
+            "do": "Have students read objectives aloud. Pre-teach vocabulary with visual aids showing bacterial structures.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 3",
+            "title": "Big Question",
+            "visual": "Provocative question with image of resistant bacteria vs. antibiotics",
+            "say": "Are we heading toward a world where a simple cut could kill you because no antibiotic works? Let\'s find out.",
+            "do": "Quick-write: Students write their initial hypothesis about why resistance is increasing. Save to compare later.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 4",
+            "title": "LEVER Framework",
+            "visual": "LEVER steps overview",
+            "say": "We\'re going to model evolution by natural selection — happening right now, in real time, inside your body.",
+            "do": "Preview each LEVER step. Emphasize that this is evolution you can observe in days, not millions of years.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 5",
+            "title": "Activity 1: Components",
+            "visual": "Component cards for sorting — antibiotic exposure, population diversity, mutation rate, resistance frequency, treatment effectiveness",
+            "say": "What are the key parts of this evolutionary system? Which inputs come from outside the bacteria?",
+            "do": "Guide sorting of external vs. internal components. Use think-pair-share for reasoning about which factors bacteria control vs. which humans control.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 6",
+            "title": "Activity 2: Connections",
+            "visual": "Relationship arrows between components",
+            "say": "When Antibiotic Exposure increases but the course is incomplete, what happens to the surviving population\'s Resistance Gene Frequency?",
+            "do": "Students draw arrows showing +/- relationships. Discuss the feedback loop: more resistance leads to less effective treatment leads to more antibiotic use.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 7",
+            "title": "Activity 3: Simulation",
+            "visual": "Simulation results showing bacterial population changes over time",
+            "say": "Now let\'s test our model. Run each scenario — full course, incomplete course, and farm antibiotics — and record what happens.",
+            "do": "Students run all scenarios, record predictions vs. observations. Discuss why incomplete courses are so dangerous.",
+            "time": "10 min"
+        },
+        {
+            "num": "Slide 8",
+            "title": "Discoveries",
+            "visual": "Key findings summary with resistance evolution timeline",
+            "say": "Our model reveals that WE are the selective pressure. Every time we misuse antibiotics, we train bacteria to defeat them.",
+            "do": "Class discussion of discoveries. Compare initial hypotheses to model evidence. Emphasize this is evolution by natural selection in action.",
+            "time": "5 min"
+        },
+        {
+            "num": "Slide 9",
+            "title": "STEM Challenge",
+            "visual": "Engineering challenge: Design an Antibiotic Stewardship Campaign",
+            "say": "Now apply what you\'ve learned. Your county needs a campaign that changes the specific behaviors driving resistance.",
+            "do": "Groups design evidence-based campaigns targeting the three main drivers. Present and evaluate using model data.",
+            "time": "12 min"
+        }
+    ],
+    "sort_reasoning": "Antibiotic Exposure and Bacterial Population Diversity are external components because they represent inputs that exist before the evolutionary process begins — one is determined by human medical/agricultural practices and the other by the natural variation in bacterial colonies. Mutation Rate, Resistance Gene Frequency, and Treatment Effectiveness are internal because they are properties that emerge from how the bacterial population responds to selective pressure over generations.",
+    "relationships": [
+        ("Antibiotic Exposure to Resistance Gene Frequency", "POSITIVE (+)", "Antibiotic exposure creates selective pressure that kills susceptible bacteria and allows resistant mutants to survive and reproduce, increasing the proportion of resistance genes in the population."),
+        ("Bacterial Population Diversity to Mutation Rate", "POSITIVE (+)", "More diverse populations have greater genetic variation, increasing the probability that resistance-conferring mutations already exist or will arise through recombination."),
+        ("Mutation Rate to Resistance Gene Frequency", "POSITIVE (+)", "Higher mutation rates increase the probability of resistance mutations arising in each generation, providing more raw material for natural selection to act upon."),
+        ("Resistance Gene Frequency to Treatment Effectiveness", "NEGATIVE (-)", "As the proportion of resistant bacteria increases, the antibiotic kills fewer and fewer organisms, reducing treatment effectiveness until it reaches zero for fully resistant populations.")
+    ],
+    "sim_answers": [
+        ("Full Treatment Course", "With complete antibiotic exposure at proper dosage, the model shows that nearly all bacteria — including partially resistant ones — are eliminated before they can reproduce. Resistance Gene Frequency stays low because the few surviving highly resistant mutants face competition from the recovering microbiome and immune system. This demonstrates why completing the full course is critical."),
+        ("Incomplete Course", "When treatment stops at 50%, the model shows a dramatic spike in Resistance Gene Frequency. The weakest bacteria are dead, but partially resistant ones survive without competition. They reproduce rapidly, and within a few generations, the population is dominated by resistant organisms. The next time this person needs antibiotics, the same drug may not work."),
+        ("Agricultural Overuse", "Constant low-level exposure creates the most dangerous scenario in the model: gentle but persistent selective pressure across a massive population. Resistance Gene Frequency climbs steadily because sub-therapeutic doses kill only the most susceptible bacteria while leaving billions of partially resistant ones to gradually evolve stronger resistance over time.")
+    ],
+    "reflection_exemplars": [
+        ("Is developing new antibiotics enough to solve the resistance crisis?", "Our model shows that developing new antibiotics alone is a losing strategy — it\'s an arms race where bacteria evolve faster than we can develop new drugs. A new antibiotic takes 10-15 years to develop, but resistance can emerge in 2-3 years. The model demonstrates that reducing selective pressure (through better stewardship, completing courses, and eliminating agricultural overuse) is more effective than simply adding new weapons. We need both, but prevention of resistance must be the priority."),
+        ("Why does agricultural antibiotic use affect human health?", "The model reveals that sub-therapeutic doses in agriculture create a massive evolutionary laboratory — trillions of bacteria under constant gentle selective pressure. Horizontal gene transfer means resistance genes that evolve in animal gut bacteria can transfer to human pathogens through the food chain, water runoff, and environmental contact. The agricultural setting amplifies the total pool of resistance genes in the environment, which inevitably flows into human medicine.")
+    ],
+    "stem_intro": "Present the challenge: Your county health department has documented a 40% increase in antibiotic-resistant infections. Your team must design a multi-pronged campaign targeting the three main drivers of resistance: patients demanding antibiotics for viral infections, patients not completing courses, and agricultural overuse. Use your model data to prioritize which behaviors to target first.",
+    "stem_concepts": [
+        ("Antibiotic Stewardship", "A coordinated program to improve and measure the appropriate use of antibiotics — including selecting the right drug, correct dose, and proper duration. Hospital stewardship programs have reduced resistant infections by 20-30% where implemented."),
+        ("One Health Approach", "A framework that recognizes that human health, animal health, and environmental health are interconnected. Antibiotic resistance in livestock directly affects human medicine, so solutions must address all three domains simultaneously."),
+        ("Surveillance and Tracking", "Systematic monitoring of resistance patterns across regions and populations to detect emerging threats early. The CDC\'s Antibiotic Resistance Threats Report tracks the most dangerous resistant organisms and guides intervention priorities.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Campaign targets all three drivers with specific evidence-based interventions, communicates evolution clearly to non-scientists, uses model data to justify priorities, and includes measurable outcomes"),
+        ("Proficient (3)", "Campaign addresses major drivers with reasonable interventions and some reference to evolutionary model evidence"),
+        ("Developing (2)", "Campaign identifies some drivers but interventions are vague or not grounded in evolutionary biology evidence"),
+        ("Beginning (1)", "Campaign is incomplete, scientifically inaccurate, or does not connect antibiotic misuse to evolutionary mechanisms")
+    ],
+    "support": [
+        "Provide a visual timeline showing how a bacterial population changes during complete vs. incomplete antibiotic treatment",
+        "Use a color-coded population diagram: green = susceptible, yellow = partially resistant, red = fully resistant, showing selection in action",
+        "Sentence frames: \'When antibiotic exposure ___, the resistant bacteria survive because ___, which causes Resistance Gene Frequency to ___\'"
+    ],
+    "extensions": [
+        "Research the discovery pipeline for new antibiotics — why have pharmaceutical companies largely abandoned antibiotic development, and what economic solutions have been proposed?",
+        "Investigate phage therapy as an alternative to antibiotics — how does using viruses that specifically infect bacteria potentially avoid the resistance problem?",
+        "Analyze the case of colistin resistance (the MCR-1 gene) — how did resistance to humanity\'s last-resort antibiotic emerge in Chinese pig farms and spread globally within years?"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate bacterial population growth using exponential functions: if one resistant bacterium divides every 20 minutes, how many resistant bacteria exist after 24 hours? Graph resistance gene frequency as a function of antibiotic selection pressure."),
+        ("ELA", "Write a persuasive letter to a state legislator arguing for legislation to ban sub-therapeutic antibiotics in livestock, using evolutionary biology evidence from your model to support your position"),
+        ("History", "Research the history of antibiotic development from Fleming\'s penicillin to modern last-resort drugs. Create a timeline showing when each major antibiotic was introduced and when resistance was first detected — what pattern emerges?")
+    ],
+    "misconceptions": [
+        ("Bacteria become resistant by adapting to antibiotics like building immunity", "Bacteria don\'t \'learn\' or \'adapt\' to antibiotics the way humans build immunity to diseases. Resistance arises from random mutations that happen to provide a survival advantage when antibiotics are present. Natural selection favors these pre-existing mutants — the antibiotic doesn\'t cause the mutation, it selects for it. This is a critical distinction between Lamarckian (acquired traits) and Darwinian (natural selection) evolution.", "Demonstrate with a thought experiment: If you painted a room with poison paint, the surviving cockroaches wouldn\'t be ones that \'learned\' to resist poison — they\'d be ones that happened to already have genetic resistance. The paint selected for resistance that already existed."),
+        ("Antibiotic resistance only affects people who take antibiotics", "Resistant bacteria spread between people, animals, and environments regardless of individual antibiotic use. A person who has never taken an antibiotic can be infected by MRSA from a gym locker room, resistant E. coli from contaminated food, or resistant tuberculosis from a cough. Resistance is a community-level threat driven by total population antibiotic use, not an individual consequence.", "Ask: If your neighbor\'s overuse of antibiotics creates resistant bacteria that spread to you, is antibiotic misuse a personal choice or a public health issue? Compare to secondhand smoke."),
+        ("We can always develop new antibiotics to stay ahead of resistance", "The antibiotic development pipeline is nearly empty. Only 12 new antibiotics have been approved since 2017, and most are modifications of existing classes rather than truly novel mechanisms. Development takes 10-15 years and costs over $1 billion, but a new antibiotic generates less revenue than drugs for chronic conditions because it\'s used short-term and doctors are told to use it sparingly. Meanwhile, bacteria can evolve resistance in 2-3 years. We cannot innovate our way out of this crisis without also reducing misuse.", "Compare the development timeline (10-15 years per new drug) with the resistance timeline (2-3 years). Draw a graph showing both trends — where do the lines cross? This visual makes the math of the problem unmistakable.")
+    ]
+}
+
+L07 = {
+    "id": "G12L1-L07",
+    "title": "Can We Edit the Human Genome?",
+    "subtitle": "Modeling CRISPR Gene Editing, Inheritance, and the Ethics of Genetic Engineering",
+    "ngss": "HS-LS3-1",
+    "ngss_desc": "Ask questions to clarify relationships about the role of DNA and chromosomes in coding the instructions for characteristic traits passed from parents to offspring.",
+    "big_question": "CRISPR technology lets scientists edit DNA like a word processor edits text — cutting out disease-causing genes and replacing them with healthy versions. If we can cure genetic diseases before birth, should we? And where is the line between healing and designing \'perfect\' humans?",
+    "objectives": [
+        "Model how CRISPR-Cas9 uses guide RNA to locate, cut, and replace specific DNA sequences in the genome",
+        "Explain how edited genes are inherited and how germline vs. somatic editing differ in their generational impact",
+        "Predict the biological outcomes of gene editing for single-gene disorders vs. complex polygenic traits",
+        "Analyze the ethical tensions between curing genetic disease and enabling genetic enhancement or eugenics"
+    ],
+    "vocabulary": [
+        ("CRISPR-Cas9", "A gene-editing tool adapted from bacterial immune systems that uses a guide RNA to direct the Cas9 protein to a specific DNA sequence, where it cuts both strands — allowing scientists to delete, replace, or insert genetic material with unprecedented precision"),
+        ("Guide RNA", "A short RNA molecule engineered to match a specific DNA target sequence — it directs the Cas9 protein to the exact location in the genome where the edit should occur, providing the specificity that makes CRISPR revolutionary"),
+        ("Germline Editing", "Genetic modifications made to sperm, eggs, or embryos that are inherited by all future generations — the most powerful and most controversial application of CRISPR because changes are permanent and affect people who cannot consent"),
+        ("Off-Target Effects", "Unintended cuts or edits at DNA locations similar but not identical to the target sequence — the primary safety concern with CRISPR, as even small unintended changes could activate cancer genes or disrupt essential functions")
+    ],
+    "components": [
+        ("Guide RNA Specificity", "How precisely the guide RNA matches the intended DNA target — higher specificity means fewer off-target effects, but perfect specificity is difficult to achieve because the human genome contains many similar sequences", True),
+        ("Target Gene Location", "The specific position in the genome where the edit is intended — some locations are easier to access and edit than others, and the surrounding DNA context affects both editing efficiency and off-target risk", True),
+        ("Editing Efficiency", "The percentage of cells in which the CRISPR system successfully makes the intended edit — varies from 10-90% depending on guide RNA design, delivery method, and target accessibility", False),
+        ("Off-Target Mutation Rate", "The frequency of unintended edits at non-target locations in the genome — even rates as low as 0.1% are concerning because off-target cuts in tumor suppressor genes could cause cancer", False),
+        ("Therapeutic Outcome", "The overall health benefit or harm resulting from the gene edit — determined by the balance between successful on-target editing and harmful off-target effects across all edited cells", False)
+    ],
+    "think_about_it": "A scientist designs a guide RNA to fix a mutation causing sickle cell disease. The guide RNA has 99.5% specificity — sounds nearly perfect. But the human genome has 3.2 billion base pairs. What does your model predict about Off-Target Mutation Rate across the entire genome?",
+    "scenarios": [
+        ("High-Specificity Single Gene Edit", "Set Guide RNA Specificity to maximum with a well-characterized Target Gene Location — observe high Editing Efficiency, low Off-Target Mutation Rate, and strong Therapeutic Outcome"),
+        ("Low-Specificity Editing", "Reduce Guide RNA Specificity to moderate levels — observe how Off-Target Mutation Rate increases and Therapeutic Outcome becomes uncertain as unintended edits accumulate"),
+        ("Complex Polygenic Trait", "Attempt to edit multiple genes simultaneously for a trait controlled by many genes — observe how Editing Efficiency drops and Off-Target Mutation Rate multiplies with each additional target")
+    ],
+    "sim_scenarios": [
+        ("Sickle Cell Cure", "Guide RNA Specificity: High | Target: Single gene (HBB) | Delivery: Somatic cells", "When CRISPR targets a single well-known gene with high specificity, what does the model predict for Therapeutic Outcome?"),
+        ("Multiple Gene Edit", "Guide RNA Specificity: Moderate | Target: 5 genes simultaneously | Delivery: Somatic cells", "What happens to Off-Target Mutation Rate when you try to edit multiple genes at once?"),
+        ("Germline Enhancement", "Guide RNA Specificity: High | Target: Multiple trait genes | Delivery: Embryo (germline)", "What are the risks when gene edits in an embryo will be inherited by all future descendants?")
+    ],
+    "discoveries": [
+        "CRISPR is highly effective for single-gene disorders like sickle cell disease where one specific mutation can be precisely targeted with well-designed guide RNA",
+        "Off-target effects are the critical safety limitation — even with 99.9% specificity, the sheer size of the genome means unintended cuts are statistically inevitable across millions of cells",
+        "Editing multiple genes simultaneously for complex traits multiplies both the difficulty and the risk — each additional target increases the probability of harmful off-target effects",
+        "Germline editing raises unique concerns because edits are permanent and heritable — mistakes cannot be undone and will propagate through all future generations of that lineage"
+    ],
+    "answer": "Yes, we can edit the human genome — and we already have. In 2023, the FDA approved the first CRISPR-based therapy for sickle cell disease, marking a new era in medicine. CRISPR-Cas9 works by using a guide RNA to direct a molecular scissors (Cas9) to a precise location in the DNA, where it cuts and allows the cell\'s repair machinery to fix or replace the gene. For single-gene diseases, this is revolutionary. But the technology has real limitations: off-target effects can cause unintended mutations, editing multiple genes is exponentially more complex, and germline edits affect future generations who cannot consent. The line between healing and enhancement is the great ethical challenge of our generation.",
+    "stem_title": "Design a Gene Therapy Ethics Framework",
+    "stem_mission": "Design a comprehensive ethical framework that a hospital genetics board could use to evaluate whether a proposed CRISPR gene-editing treatment should be approved, considering both scientific evidence and societal implications.",
+    "stem_scenario": "A genetics company has developed a CRISPR treatment that could eliminate the gene for Huntington\'s disease in embryos — a fatal neurodegenerative disorder with no cure. But the same technology could potentially be used to select for traits like height, intelligence, or eye color. Your hospital\'s ethics board needs a decision framework that distinguishes between therapeutic and enhancement uses of gene editing.",
+    "stem_questions": [
+        "What scientific criteria from your model should determine whether a gene edit is safe enough to approve?",
+        "Where should the ethical line be drawn between treating disease and enhancing traits, and who decides?",
+        "What does your model reveal about the technical limitations that should constrain what gene edits are attempted?"
+    ],
+    "stem_design_qs": [
+        "What specific criteria does your framework use to evaluate whether an edit is \'therapeutic\' vs. \'enhancement\'?",
+        "How does your framework account for the scientific uncertainty of off-target effects when making approval decisions?",
+        "What safeguards does your framework include for germline edits that will affect future generations?",
+        "How does your framework address equity — preventing a future where gene editing creates biological inequality between rich and poor?"
+    ],
+    "career": "Genetic counselors help families understand genetic testing results and make informed decisions about treatments including gene therapy, earning $80,000-$110,000/year. Bioethicists specializing in genetic technology work at hospitals, universities, and policy organizations, earning $60,000-$130,000/year. CRISPR researchers in biotechnology companies earn $90,000-$180,000/year.",
+    "images": {
+        "cover": ("G12L1-L07-cover.png", "A photorealistic image of diverse 17-18 year old students in a modern genetics lab examining DNA models and CRISPR diagrams on a holographic display, dramatic lighting emphasizing the futuristic technology"),
+        "landscape": ("G12L1-L07-landscape.png", "A diverse group of 17-18 year old students in a modern biology classroom with DNA double helix models on desks, a large smartboard showing CRISPR mechanism diagrams, natural light"),
+        "modeling": ("G12L1-L07-modeling.png", "Diverse 17-18 year old students working on laptops building computational models of gene editing efficiency, classroom walls showing genetics and CRISPR infographics"),
+        "discussion": ("G12L1-L07-discussion.png", "A teacher facilitating a Socratic seminar with diverse 17-18 year old students debating gene editing ethics, students showing passionate engagement, ethics guidelines visible on a poster"),
+        "stem": ("G12L1-L07-stem.png", "Diverse 17-18 year old students collaborating around a table with documents, creating an ethics framework flowchart on a large whiteboard, modern classroom setting")
+    },
+    "pre_assessment": [
+        "What do you already know about CRISPR or gene editing? Where did you learn about it?",
+        "If scientists could edit a gene to prevent a fatal disease in an unborn child, do you think they should? Why or why not?",
+        "What\'s the difference between curing a disease and enhancing a trait? Is the line always clear?",
+        "Who should decide what gene edits are allowed — scientists, governments, parents, or society as a whole?"
+    ],
+    "extend_components": [
+        ("Delivery Method Efficiency", "How effectively the CRISPR components are delivered into target cells — viral vectors, lipid nanoparticles, and electroporation each have different efficiency rates and tissue specificity that affect overall therapeutic outcome"),
+        ("Mosaicism Risk", "The probability that only some cells in an organism are successfully edited while others retain the original gene — creates organisms with mixed genetic populations, reducing therapeutic effectiveness"),
+        ("Epigenetic Disruption", "The risk that DNA cuts or insertions alter the epigenetic marks (methylation, histone modification) near the target site, changing gene expression patterns in ways that may not be apparent for years")
+    ],
+    "reflections": [
+        "How does your model help explain why CRISPR works well for single-gene diseases but struggles with complex traits like intelligence or height?",
+        "What does the Off-Target Mutation Rate reveal about why we should be cautious even when editing seems highly precise?",
+        "Should germline editing be banned, regulated, or left to individual families? What evidence from your model informs your position?",
+        "If gene editing becomes affordable, how might it affect social inequality? What if only wealthy families can access genetic enhancements?",
+        "How does the precautionary principle apply to a technology that could cure devastating diseases but also enable genetic discrimination?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Asking Questions and Defining Problems", "Students ask clarifying questions about the relationships between DNA structure, gene function, and how CRISPR-mediated changes to DNA sequences affect protein production and trait expression."),
+        ("Disciplinary Core Idea", "LS3.A Inheritance of Traits", "DNA sequences code for proteins that determine traits; CRISPR allows modification of these sequences, and whether changes are in somatic or germline cells determines whether modifications are inherited by offspring."),
+        ("Crosscutting Concept", "Structure and Function", "Students connect the molecular structure of DNA, guide RNA, and Cas9 protein to the function of precise gene editing, understanding how structural specificity determines functional accuracy.")
+    ],
+    "cast_items": [
+        "Model how CRISPR-Cas9 uses guide RNA specificity to target and edit specific DNA sequences with varying degrees of accuracy",
+        "Predict therapeutic outcomes based on the interaction of editing efficiency and off-target mutation rate for different types of genetic modifications",
+        "Explain why germline edits have different ethical and biological implications than somatic cell edits"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A CRISPR guide RNA with 99.8% specificity is used to edit embryonic cells. Given that the human genome contains 3.2 billion base pairs, approximately how many potential off-target sites could be affected, and why does this matter for germline editing?"),
+        ("Constructed Response:", "Using your model, compare the predicted Therapeutic Outcome for editing a single gene causing cystic fibrosis versus editing the 20+ genes associated with height. Explain why the model predicts dramatically different outcomes and what this reveals about the limits of gene editing for complex traits.")
+    ],
+    "background_intro": "CRISPR-Cas9 is arguably the most revolutionary biological technology since the discovery of DNA\'s structure. Adapted from a natural immune system that bacteria use to defend against viruses, CRISPR allows scientists to edit any organism\'s DNA with a precision that was unimaginable a decade ago. The technology is transforming medicine, agriculture, and our fundamental understanding of genetics — while raising ethical questions that humanity has never faced before.",
+    "background_sections": [
+        ("How CRISPR Works", "The CRISPR-Cas9 system has two key components: a guide RNA (gRNA) that is designed to match a specific 20-nucleotide DNA target sequence, and the Cas9 protein that acts as molecular scissors. The gRNA leads Cas9 to the correct location in the genome, where Cas9 cuts both strands of the DNA double helix. The cell\'s natural repair mechanisms then fix the break — either by joining the cut ends (often disabling the gene) or by using a provided DNA template to insert a new sequence. This allows scientists to delete harmful mutations, correct disease-causing variants, or insert entirely new genetic sequences."),
+        ("Current Medical Applications", "CRISPR has already produced FDA-approved therapies. Casgevy (2023) treats sickle cell disease and transfusion-dependent beta-thalassemia by editing patients\' own blood stem cells to reactivate fetal hemoglobin production. Clinical trials are underway for CRISPR treatments of cancer (editing immune cells to better attack tumors), hereditary blindness (Leber congenital amaurosis), HIV (disabling the CCR5 receptor), and dozens of other genetic conditions. Most current applications use somatic cell editing — modifying the patient\'s cells without affecting their children."),
+        ("The Germline Editing Controversy", "In 2018, Chinese scientist He Jiankui shocked the world by announcing he had used CRISPR to edit human embryos — twin girls born with modified CCR5 genes intended to confer HIV resistance. The scientific community condemned the experiment as premature, poorly designed, and ethically unjustifiable. The girls may face unknown health consequences from off-target effects. The incident crystallized the debate: germline edits are permanent, heritable, and affect individuals who cannot consent. Most countries have banned germline editing, but enforcement is inconsistent."),
+        ("The Enhancement vs. Therapy Debate", "The most contentious ethical frontier is the line between therapy (fixing a disease-causing gene) and enhancement (improving a normal trait). Curing Huntington\'s disease seems clearly therapeutic. But what about editing genes associated with higher intelligence, greater muscle mass, or longer lifespan? Most traits are polygenic — influenced by dozens or hundreds of genes interacting with environment — making enhancement both technically difficult and ethically fraught. Critics warn of a new eugenics where wealthy families purchase genetic advantages, creating biological inequality between economic classes.")
+    ],
+    "lever_L": "Students identify guide RNA specificity, target gene location, editing efficiency, off-target mutation rate, and therapeutic outcome as the key components of the CRISPR gene-editing system.",
+    "lever_E": "Students determine that guide RNA specificity is the primary determinant of editing accuracy, that off-target effects increase with lower specificity and multiple targets, and that therapeutic outcome depends on the balance of on-target success and off-target harm.",
+    "lever_V": "Students build a computational model showing how guide RNA design, target complexity, and cellular repair mechanisms interact to determine the safety and effectiveness of gene edits.",
+    "lever_Ev": "Students run single-gene, multi-gene, and germline editing scenarios to test predictions about when CRISPR is safe and effective versus when risks outweigh benefits.",
+    "lever_R": "Students add delivery method efficiency, mosaicism risk, or epigenetic disruption to explore how real-world biological complexity affects gene-editing outcomes beyond the simplified model.",
+    "slides_guide": [
+        {
+            "num": "Slide 1",
+            "title": "Cover",
+            "visual": "Title slide with compelling image related to Can We Edit the Human Genome?",
+            "say": "What if you could rewrite the code of life itself? Today we investigate the most powerful biological technology ever created.",
+            "do": "Show cover image. Ask: What have you heard about CRISPR or gene editing? Quick share-out.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 2",
+            "title": "Learning Objectives",
+            "visual": "Learning goals and vocabulary terms with DNA/CRISPR visuals",
+            "say": "Here\'s what you\'ll be able to do by the end of today — model how CRISPR edits DNA and evaluate when it should be used.",
+            "do": "Have students read objectives aloud. Pre-teach vocabulary with molecular animation or diagram of CRISPR mechanism.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 3",
+            "title": "Big Question",
+            "visual": "Provocative question with split image: disease cure vs. designer baby",
+            "say": "CRISPR can cure sickle cell disease AND theoretically enhance intelligence. Should we use it for both? Neither? Where\'s the line?",
+            "do": "Quick-write: Students write their initial position on where the line should be drawn. Save to revisit after modeling.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 4",
+            "title": "LEVER Framework",
+            "visual": "LEVER steps overview",
+            "say": "We\'re going to model the actual molecular mechanism of CRISPR to understand both its power and its limitations.",
+            "do": "Preview each LEVER step. Emphasize that understanding the biology is essential for informed ethical reasoning.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 5",
+            "title": "Activity 1: Components",
+            "visual": "Component cards — guide RNA specificity, target gene location, editing efficiency, off-target rate, therapeutic outcome",
+            "say": "What are the key parts of this gene-editing system? What inputs do scientists control, and what emerges from the biology?",
+            "do": "Guide sorting of external vs. internal components. Discuss: What can scientists design, and what does biology determine?",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 6",
+            "title": "Activity 2: Connections",
+            "visual": "Relationship arrows between CRISPR components",
+            "say": "If Guide RNA Specificity decreases even slightly, what happens to Off-Target Mutation Rate across 3.2 billion base pairs?",
+            "do": "Students draw arrows showing +/- relationships. Discuss why the genome\'s massive size amplifies even tiny error rates.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 7",
+            "title": "Activity 3: Simulation",
+            "visual": "Simulation results comparing single-gene vs. multi-gene editing outcomes",
+            "say": "Run each scenario. Compare what happens when you edit one gene precisely vs. multiple genes simultaneously.",
+            "do": "Students run all scenarios, record predictions vs. observations. Discuss why complex traits are so much harder to edit safely.",
+            "time": "10 min"
+        },
+        {
+            "num": "Slide 8",
+            "title": "Discoveries",
+            "visual": "Key findings summary — what CRISPR can and cannot safely do",
+            "say": "Our model reveals both the extraordinary promise and the real limitations of gene editing technology.",
+            "do": "Class discussion of discoveries. Revisit initial positions — has the model evidence changed anyone\'s thinking about where the line should be?",
+            "time": "5 min"
+        },
+        {
+            "num": "Slide 9",
+            "title": "STEM Challenge",
+            "visual": "Engineering challenge: Design a Gene Therapy Ethics Framework",
+            "say": "Now apply both the science AND the ethics. Your hospital needs a framework for deciding which gene edits to approve.",
+            "do": "Groups design ethics frameworks using model data to set scientific criteria. Present and debate frameworks.",
+            "time": "12 min"
+        }
+    ],
+    "sort_reasoning": "Guide RNA Specificity and Target Gene Location are external components because they represent inputs that scientists design and select before the editing process begins — the guide RNA is engineered in the lab and the target is chosen based on the disease. Editing Efficiency, Off-Target Mutation Rate, and Therapeutic Outcome are internal because they emerge from the biological interactions between the CRISPR system and the cell\'s DNA and repair machinery.",
+    "relationships": [
+        ("Guide RNA Specificity to Editing Efficiency", "POSITIVE (+)", "Higher guide RNA specificity means the CRISPR system binds more reliably to the intended target, increasing the percentage of cells where the correct edit is made."),
+        ("Guide RNA Specificity to Off-Target Mutation Rate", "NEGATIVE (-)", "Higher specificity reduces the chance of the guide RNA binding to similar but incorrect DNA sequences elsewhere in the genome, decreasing off-target mutations."),
+        ("Off-Target Mutation Rate to Therapeutic Outcome", "NEGATIVE (-)", "More off-target mutations increase the risk of harmful unintended effects — including potential activation of oncogenes — which decreases overall therapeutic benefit."),
+        ("Editing Efficiency to Therapeutic Outcome", "POSITIVE (+)", "Higher editing efficiency means more cells carry the corrected gene, producing more functional protein and greater therapeutic benefit for the patient.")
+    ],
+    "sim_answers": [
+        ("High-Specificity Single Gene Edit", "With maximum Guide RNA Specificity targeting a well-characterized gene like HBB (sickle cell), the model shows high Editing Efficiency (70-90%), very low Off-Target Mutation Rate, and strong Therapeutic Outcome. This represents the best-case scenario for CRISPR and mirrors the success of approved sickle cell therapies."),
+        ("Complex Polygenic Trait", "When attempting to edit 5+ genes simultaneously, the model shows dramatically different results. Each additional guide RNA introduces its own off-target risk, and the cumulative Off-Target Mutation Rate multiplies. Editing Efficiency for all targets simultaneously drops below 10%, and Therapeutic Outcome becomes unpredictable. This is why \'designer babies\' for complex traits remain science fiction, not science.")
+    ],
+    "reflection_exemplars": [
+        ("Should germline editing ever be allowed?", "This requires balancing immense potential benefit against irreversible risk. Our model shows that for severe single-gene diseases like Huntington\'s — which is fatal, has no cure, and is caused by one well-characterized mutation — the Therapeutic Outcome of germline editing could be transformative: an entire lineage freed from the disease. But the model also shows that Off-Target Mutation Rate, however small, creates risks that would propagate through all future generations. The precautionary principle suggests extreme caution, but an absolute ban condemns families to preventable suffering. A regulated, transparent system with extensive safety testing may be the most ethical path."),
+        ("Could gene editing create a genetic class system?", "If gene editing becomes commercially available, our model suggests that the most effective edits — those with high Guide RNA Specificity and proven safety — will initially be extremely expensive. Wealthy families could access genetic enhancements (disease resistance, cognitive advantages) that poor families cannot. Over generations, this could create biological inequality reinforcing economic inequality. The model\'s technical data shows that safe, effective editing is possible for single-gene traits, making this scenario plausible. Equitable access policies would need to be established before the technology becomes widespread.")
+    ],
+    "stem_intro": "Present the challenge: A genetics company has applied to your hospital to begin offering CRISPR editing for Huntington\'s disease in embryos. The same technology could be used for trait selection. Your ethics board must develop a decision framework that approves beneficial applications while preventing misuse — and your criteria must be grounded in both scientific evidence and ethical principles.",
+    "stem_concepts": [
+        ("Informed Consent in Genetics", "A foundational bioethics principle requiring that patients fully understand the risks, benefits, and alternatives before agreeing to treatment. Germline editing complicates consent because the edited individual (future child) cannot participate in the decision, and effects extend to all their descendants."),
+        ("Genetic Determinism vs. Gene-Environment Interaction", "The misconception that genes alone determine traits. In reality, most traits result from complex interactions between multiple genes and environmental factors. This means editing \'intelligence genes\' would have unpredictable outcomes because the same genetic variant may produce different effects in different environments."),
+        ("Precautionary Principle", "When an action raises threats of harm, precautionary measures should be taken even if some cause-and-effect relationships are not fully established scientifically. Applied to gene editing, this means the burden of proof for safety should be on those proposing edits, especially for irreversible germline changes.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Framework establishes clear scientific safety criteria grounded in model data, distinguishes therapy from enhancement with specific definitions, addresses germline vs. somatic editing differently, and includes equity provisions"),
+        ("Proficient (3)", "Framework has reasonable criteria for evaluating safety and distinguishing therapy from enhancement with some model evidence"),
+        ("Developing (2)", "Framework identifies some ethical concerns but criteria are vague or not connected to scientific evidence from the model"),
+        ("Beginning (1)", "Framework is incomplete, lacks scientific grounding, or does not address the therapy-enhancement distinction")
+    ],
+    "support": [
+        "Provide a simplified diagram of the CRISPR mechanism: Guide RNA finds target -> Cas9 cuts DNA -> Cell repairs -> Gene is edited",
+        "Use a risk-benefit matrix: rows for different types of edits (single gene disease, polygenic trait, enhancement), columns for safety, effectiveness, ethics",
+        "Sentence frames: \'When Guide RNA Specificity is ___, Off-Target Mutation Rate is ___ because the genome contains ___\'"
+    ],
+    "extensions": [
+        "Research the He Jiankui case (2018 CRISPR babies in China) — what went wrong scientifically and ethically, and what has changed in gene-editing governance since?",
+        "Investigate base editing and prime editing — newer CRISPR technologies that may reduce off-target effects. How do they differ from traditional Cas9 cutting?",
+        "Analyze the movie Gattaca (1997) through the lens of your CRISPR model — which aspects of the film\'s genetic future are scientifically plausible and which are fiction?"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate the probability of at least one off-target edit given a per-site error rate of 0.001% across 3.2 billion base pairs. Use complementary probability: P(at least one) = 1 - P(none). What does the result reveal about genome-wide safety?"),
+        ("ELA", "Write a Socratic dialogue between two scientists debating whether germline editing should be permitted for fatal genetic diseases, using evidence from your CRISPR model to support both positions"),
+        ("History", "Research the history of eugenics in the United States (1900s-1970s) — forced sterilization programs, immigration restrictions, and the science that was used to justify them. How should this history inform modern gene-editing policy?")
+    ],
+    "misconceptions": [
+        ("CRISPR can edit any trait we want with perfect precision", "While CRISPR is remarkably precise compared to previous gene-editing tools, it is not perfect. Off-target effects occur because the guide RNA can bind to similar DNA sequences elsewhere in the genome. More importantly, most human traits (intelligence, height, personality) are influenced by hundreds of genes interacting with environment, making them far beyond current editing capabilities. CRISPR works best for single-gene disorders with well-characterized mutations.", "Ask students: How many genes affect your height? (Answer: over 700 identified so far.) Now imagine trying to edit all 700 with some off-target risk at each one — the math makes it clear why \'designer babies\' are science fiction."),
+        ("Gene editing is the same as GMOs in food", "While both involve modifying DNA, the techniques, organisms, and ethical stakes are fundamentally different. Agricultural GMOs typically insert genes from other species into plants for pest resistance or nutrition (like Bt corn or Golden Rice). Human gene editing with CRISPR corrects or modifies existing human genes. The ethical considerations — informed consent, heritability, equity, human dignity — are unique to human germline editing and don\'t apply to crop modification.", "Create a Venn diagram: What do GMO crops and human gene editing share? Where do they differ? Focus on the ethical dimensions that are unique to editing humans."),
+        ("If a gene edit cures a disease, there are no downsides", "The model clearly shows that every gene edit carries some off-target risk. Additionally, some disease-causing genes confer benefits in other contexts — the sickle cell gene provides malaria resistance, and some cancer-risk genes enhance immune function. Editing these genes may cure one condition while creating vulnerability to another. The concept of pleiotropy (one gene affecting multiple traits) means the full consequences of any edit may not be apparent for years or generations.", "Discuss the sickle cell example: The HBB mutation causes sickle cell disease when you have two copies, but carrying one copy protects against malaria. If we edit out sickle cell, what happens to malaria resistance in regions where it\'s needed?")
+    ]
+}
+
+L08 = {
+    "id": "G12L1-L08",
+    "title": "Why Does Stress Make You Sick?",
+    "subtitle": "Modeling Stress Hormones, Immune Suppression, and the Mind-Body Connection",
+    "ngss": "HS-LS1-3",
+    "ngss_desc": "Plan and conduct an investigation to provide evidence that feedback mechanisms maintain homeostasis.",
+    "big_question": "Your body has an immune system powerful enough to kill cancer cells and fight off deadly pathogens. So why does being stressed about a test, a breakup, or family problems make you more likely to catch a cold, break out in acne, and take longer to heal from injuries?",
+    "objectives": [
+        "Model how the hypothalamic-pituitary-adrenal (HPA) axis activates cortisol release and how chronic activation suppresses immune function",
+        "Explain why the stress response evolved as a survival mechanism but becomes destructive when chronically activated",
+        "Predict how different stress patterns (acute vs. chronic) produce different immune outcomes",
+        "Analyze how understanding the stress-immune connection can inform practical health strategies for students"
+    ],
+    "vocabulary": [
+        ("Cortisol", "A glucocorticoid hormone released by the adrenal glands in response to stress signals from the brain — acutely it mobilizes energy and enhances focus, but chronic elevation suppresses immune cell production, increases inflammation, and damages the hippocampus"),
+        ("HPA Axis", "The hypothalamic-pituitary-adrenal axis — a neuroendocrine feedback loop where the hypothalamus signals the pituitary gland to release ACTH, which triggers cortisol release from the adrenal glands, with cortisol feeding back to shut down the loop when stress resolves"),
+        ("Immune Suppression", "The reduction in immune system function caused by chronic cortisol exposure — cortisol reduces the production and activity of lymphocytes (T-cells, B-cells, natural killer cells), making the body more vulnerable to infections and slower to heal"),
+        ("Allostatic Load", "The cumulative physiological wear and tear on the body from chronic stress activation — measured by biomarkers including cortisol levels, blood pressure, inflammatory markers, and metabolic indicators, representing the long-term cost of constant stress response activation")
+    ],
+    "components": [
+        ("Stress Exposure", "The intensity, duration, and frequency of psychological or physical stressors — can range from acute (a single exam) to chronic (ongoing family conflict, poverty, or discrimination), with very different biological effects", True),
+        ("Social Support", "The availability and quality of supportive relationships that buffer the stress response — strong social connections reduce HPA axis activation and cortisol release, while social isolation amplifies stress effects", True),
+        ("Cortisol Level", "The concentration of cortisol in the bloodstream at any given time — rises sharply during acute stress to mobilize energy, but should return to baseline when stress resolves; chronic elevation indicates a dysregulated HPA axis", False),
+        ("Immune Function", "The overall capacity of the immune system to detect and destroy pathogens, infected cells, and cancer cells — measured by lymphocyte count, antibody production, and natural killer cell activity, all of which decrease under chronic cortisol exposure", False),
+        ("Health Outcome", "The observable health effects resulting from the balance between stress exposure, cortisol regulation, and immune function — ranges from optimal health with acute-only stress to frequent illness, slow healing, and chronic inflammation under persistent stress", False)
+    ],
+    "think_about_it": "During finals week, stress is high and sleep is low. Your model shows Cortisol Level spiking. But after finals, the stress is gone — yet many students get sick DURING the break. What does your model predict about the lag between cortisol exposure and immune recovery?",
+    "scenarios": [
+        ("Acute Stress Response", "Set Stress Exposure to high but brief (single event) with moderate Social Support — observe how Cortisol Level spikes then returns to baseline, with Immune Function temporarily suppressed but quickly recovering"),
+        ("Chronic Stress Without Support", "Set Stress Exposure to moderate but continuous with low Social Support — observe how Cortisol Level remains elevated, Immune Function progressively declines, and Health Outcome deteriorates over weeks"),
+        ("Chronic Stress With Strong Support", "Set Stress Exposure to moderate continuous with high Social Support — observe how Social Support buffers the cortisol response and partially protects Immune Function despite ongoing stress")
+    ],
+    "sim_scenarios": [
+        ("Fight or Flight", "Stress Exposure: High, single event | Social Support: Moderate | Duration: 1 hour", "When you face a brief intense stressor (like a presentation), what does the model predict for Cortisol Level and Immune Function over the next 24 hours?"),
+        ("Finals Week", "Stress Exposure: Moderate-high, continuous | Social Support: Low (isolated studying) | Duration: 2 weeks", "What happens to Immune Function after two weeks of sustained stress with little social connection?"),
+        ("Supported Through Crisis", "Stress Exposure: High, continuous | Social Support: High (strong friend/family network) | Duration: 2 weeks", "How does strong social support change the trajectory of cortisol and immune function during a stressful period?")
+    ],
+    "discoveries": [
+        "Acute stress actually enhances immune function briefly — cortisol mobilizes immune cells for potential injury, which is why the fight-or-flight response is adaptive for short-term survival",
+        "Chronic stress is immunosuppressive because sustained cortisol exposure reduces lymphocyte production, impairs antibody response, and increases systemic inflammation — the opposite of the acute response",
+        "Social support is not just emotional comfort — it measurably reduces HPA axis activation and cortisol release, creating a biological buffer that partially protects immune function during chronic stress",
+        "There is a lag between stress cessation and immune recovery — this explains why people often get sick right after a stressful period ends, when cortisol drops but immune function hasn\'t yet restored"
+    ],
+    "answer": "Stress makes you sick because of a tragic mismatch between evolution and modern life. Your stress response system — the HPA axis — evolved to handle short-term physical threats: a predator, a rival, a storm. Cortisol surges to mobilize energy, sharpen focus, and temporarily boost immune readiness. The system works brilliantly for 20-minute emergencies. But modern stress is chronic — school pressure, social media, family conflict, financial worry — and the HPA axis never shuts off. Sustained cortisol exposure suppresses the very immune cells (T-cells, B-cells, NK cells) that protect you from infection and cancer. Your body is literally choosing to fight the perceived threat at the expense of fighting actual pathogens. Social support is the most powerful natural buffer — it physically reduces cortisol output and partially protects immune function even during chronic stress.",
+    "stem_title": "Design a School Stress Reduction Program",
+    "stem_mission": "Using your model data on the biological mechanisms of stress-immune suppression, design an evidence-based stress reduction program for your school that targets the specific biological pathways through which chronic stress damages health.",
+    "stem_scenario": "Your school\'s health data shows that 68% of seniors report chronic stress, absences spike during exam periods, and students who report low social support have 3x more sick days. The administration wants a science-based program — not generic wellness posters — that addresses the biological mechanisms your model revealed. The program must be practical, evidence-based, and measurable.",
+    "stem_questions": [
+        "Which biological pathway does your model identify as the most important target for stress intervention?",
+        "How can your program increase Social Support as a cortisol buffer, based on what your model shows about its protective effects?",
+        "What does your model predict about the health impact of reducing chronic stress exposure by even 20%?"
+    ],
+    "stem_design_qs": [
+        "What specific stress-reduction interventions does your program include and which biological mechanism does each one target?",
+        "How does your program address the social support component that your model shows is critical for cortisol buffering?",
+        "What model evidence supports your claim that these interventions will measurably improve student health?",
+        "How would you measure whether your program actually reduces cortisol levels and improves immune function outcomes?"
+    ],
+    "career": "Psychoneuroimmunologists study the interactions between psychological processes, the nervous system, and the immune system, earning $70,000-$140,000/year in research positions. Health psychologists apply stress-health research in clinical settings, earning $75,000-$120,000/year. Public health specialists designing workplace and school wellness programs earn $55,000-$100,000/year.",
+    "images": {
+        "cover": ("G12L1-L08-cover.png", "A photorealistic image of a diverse 17-18 year old student looking stressed while studying late at night, surrounded by textbooks and a laptop, with a visual overlay suggesting biological stress markers, dramatic moody lighting"),
+        "landscape": ("G12L1-L08-landscape.png", "A diverse group of 17-18 year old students in a modern health science classroom examining HPA axis diagrams and immune system models on a smartboard, some students looking engaged in animated discussion"),
+        "modeling": ("G12L1-L08-modeling.png", "Diverse 17-18 year old students working on laptops building computational models of cortisol-immune interactions, classroom walls showing endocrine system and immune cell diagrams"),
+        "discussion": ("G12L1-L08-discussion.png", "A teacher leading a discussion with diverse 17-18 year old students about stress and health, a diagram of the HPA axis feedback loop on the smartboard, students sharing personal observations"),
+        "stem": ("G12L1-L08-stem.png", "Diverse 17-18 year old students collaboratively designing a school wellness program on whiteboards, with health data charts and stress intervention flowcharts visible")
+    },
+    "pre_assessment": [
+        "Have you ever gotten sick right after a really stressful period (like after finals or a big event)? Why do you think that happens?",
+        "What do you think the connection is between your mental state and your physical health? Can thoughts really affect your body?",
+        "What does \'stress\' actually mean biologically? What\'s happening inside your body when you feel stressed?",
+        "Do you think having close friends and family actually affects your physical health, or is that just a feel-good idea?"
+    ],
+    "extend_components": [
+        ("Sleep Quality", "The duration and architecture of sleep — chronic stress disrupts sleep, and sleep deprivation independently elevates cortisol and suppresses immune function, creating a vicious cycle that compounds stress-immune damage"),
+        ("Inflammatory Response", "The body\'s generalized immune activation that increases under chronic stress — cortisol paradoxically increases systemic inflammation even while suppressing specific immune defenses, contributing to autoimmune conditions and cardiovascular disease"),
+        ("Coping Strategy Effectiveness", "The degree to which an individual\'s stress management techniques actually reduce HPA axis activation — evidence-based strategies (exercise, mindfulness, social connection) produce measurable cortisol reduction, while maladaptive coping (substance use, avoidance) can worsen the stress response")
+    ],
+    "reflections": [
+        "How does your model explain the paradox that stress evolved as a survival mechanism but now causes disease?",
+        "Why does chronic stress suppress the immune system while acute stress briefly enhances it? What does this reveal about evolutionary design?",
+        "Your model shows that social support physically reduces cortisol. What are the implications for people who are socially isolated — and for how we design schools and communities?",
+        "How might understanding the stress-immune connection change the way you manage your own health during stressful periods?",
+        "What are the equity implications of stress-immune research, given that poverty, discrimination, and adverse childhood experiences create chronic stress in specific populations?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Planning and Carrying Out Investigations", "Students plan investigations to provide evidence that the HPA axis feedback mechanism maintains cortisol homeostasis during acute stress but fails during chronic activation, leading to immune suppression."),
+        ("Disciplinary Core Idea", "LS1.A Structure and Function", "The HPA axis is a homeostatic feedback mechanism that maintains cortisol balance: the hypothalamus detects stress, signals the pituitary, which triggers adrenal cortisol release, which feeds back to suppress further activation — a loop that breaks down under chronic stress."),
+        ("Crosscutting Concept", "Stability and Change", "Students analyze how the stress response system maintains stability (homeostasis) during normal conditions but shifts to a disease-promoting state when chronic stress overwhelms the feedback mechanisms designed for short-term activation.")
+    ],
+    "cast_items": [
+        "Provide evidence that the HPA axis is a feedback mechanism that maintains cortisol homeostasis under normal conditions but fails under chronic stress",
+        "Predict how different stress patterns (acute vs. chronic) and social support levels affect immune function and health outcomes",
+        "Explain why the stress response is adaptive for short-term survival but maladaptive when chronically activated in modern environments"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A student experiences two weeks of chronic stress during finals with minimal sleep and social isolation. Based on the stress-immune model, which of the following best predicts their health outcome during winter break and why?"),
+        ("Constructed Response:", "Using your model, explain the biological mechanism by which strong social support protects immune function during chronic stress. Reference the HPA axis feedback loop, cortisol levels, and at least two specific immune components that are affected.")
+    ],
+    "background_intro": "The field of psychoneuroimmunology — the study of how psychological states affect the nervous and immune systems — has revolutionized our understanding of the mind-body connection. Far from being separate systems, the brain, endocrine system, and immune system are in constant bidirectional communication. Stress hormones directly regulate immune cell production and activity, meaning that your psychological state literally determines how well your body can fight infection and disease.",
+    "background_sections": [
+        ("The HPA Axis: Your Stress Command Center", "When the brain perceives a threat, the hypothalamus releases corticotropin-releasing hormone (CRH), which signals the anterior pituitary to release adrenocorticotropic hormone (ACTH) into the bloodstream. ACTH travels to the adrenal glands atop the kidneys, triggering cortisol release. This cascade takes about 20 minutes from threat perception to peak cortisol. Critically, cortisol feeds back to the hypothalamus and pituitary to suppress further CRH and ACTH release — a negative feedback loop that shuts down the stress response once the threat passes. Under chronic stress, this feedback mechanism becomes desensitized, and cortisol remains elevated."),
+        ("How Cortisol Suppresses Immunity", "Cortisol suppresses the immune system through multiple mechanisms: it reduces the production of lymphocytes (T-cells, B-cells) in the thymus and bone marrow, inhibits cytokine signaling between immune cells, reduces the activity of natural killer cells that patrol for cancer and virus-infected cells, and shifts immune response from anti-viral (Th1) to anti-bacterial (Th2), leaving the body more vulnerable to viruses. Acutely, this makes evolutionary sense — during a fight, the body redirects resources from long-term immune surveillance to immediate survival. Chronically, it\'s catastrophic."),
+        ("The Social Buffer Effect", "Research by Sheldon Cohen, Janice Kiecolt-Glaser, and others has demonstrated that social support physically reduces HPA axis activation. Studies show that people with strong social networks produce less cortisol in response to the same stressor, recover cortisol baseline faster after stress, have higher natural killer cell activity, produce stronger antibody responses to vaccines, and heal from wounds 40% faster. The mechanism appears to involve oxytocin release during positive social interactions, which directly inhibits HPA axis activation."),
+        ("Allostatic Load and Health Disparities", "Bruce McEwen\'s concept of allostatic load describes the cumulative biological cost of chronic stress. Populations experiencing poverty, discrimination, adverse childhood experiences, and environmental hazards carry disproportionate allostatic load — measurable in higher cortisol, elevated inflammatory markers, accelerated telomere shortening, and premature aging of the immune system. This provides a biological mechanism for observed health disparities: chronic social stress produces chronic immune suppression, which produces higher rates of infection, autoimmune disease, cancer, and cardiovascular disease in specific communities.")
+    ],
+    "lever_L": "Students identify stress exposure, social support, cortisol level, immune function, and health outcome as the key components of the stress-immune system.",
+    "lever_E": "Students determine that chronic stress elevates cortisol which suppresses immune function, that social support buffers cortisol response, and that the pattern of stress (acute vs. chronic) determines whether immune effects are adaptive or destructive.",
+    "lever_V": "Students build a computational model showing how the HPA axis feedback loop responds to different stress patterns and how social support modifies cortisol output and downstream immune function.",
+    "lever_Ev": "Students run acute stress, chronic stress without support, and chronic stress with support scenarios to test predictions about how stress patterns and social connections affect immune function and health outcomes.",
+    "lever_R": "Students add sleep quality, inflammatory response, or coping strategy effectiveness to explore how additional factors interact with the basic stress-immune model.",
+    "slides_guide": [
+        {
+            "num": "Slide 1",
+            "title": "Cover",
+            "visual": "Title slide with compelling image related to Why Does Stress Make You Sick?",
+            "say": "Ever get sick right after finals? That\'s not coincidence — it\'s biology. Today we investigate the science behind it.",
+            "do": "Show cover image. Ask: How many of you have gotten sick after a stressful period? Quick show of hands.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 2",
+            "title": "Learning Objectives",
+            "visual": "Learning goals and vocabulary terms with HPA axis diagram",
+            "say": "Here\'s what you\'ll understand by the end of today — the actual biological mechanism connecting your thoughts to your immune system.",
+            "do": "Have students read objectives aloud. Pre-teach vocabulary with endocrine system diagram showing the HPA axis pathway.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 3",
+            "title": "Big Question",
+            "visual": "Provocative question with image showing stressed student and immune cell imagery",
+            "say": "Your immune system can kill cancer cells. So why can worrying about a test make you catch a cold?",
+            "do": "Quick-write: Students hypothesize a biological mechanism connecting stress and illness. Save to compare with model evidence.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 4",
+            "title": "LEVER Framework",
+            "visual": "LEVER steps overview",
+            "say": "We\'re going to model the hidden conversation between your brain, your hormones, and your immune system.",
+            "do": "Preview each LEVER step. Emphasize that this model connects psychology to biology through measurable hormones.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 5",
+            "title": "Activity 1: Components",
+            "visual": "Component cards — stress exposure, social support, cortisol level, immune function, health outcome",
+            "say": "What are the key parts of this stress-immune system? Which inputs come from your environment, and which emerge inside your body?",
+            "do": "Guide sorting of external vs. internal components. Discuss why social support is an external input that modifies internal biology.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 6",
+            "title": "Activity 2: Connections",
+            "visual": "Relationship arrows between stress-immune components",
+            "say": "When Stress Exposure is chronic and Social Support is low, what happens to Cortisol Level? And what does sustained cortisol do to Immune Function?",
+            "do": "Students draw arrows showing +/- relationships. Discuss the HPA feedback loop and why chronic stress breaks it.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 7",
+            "title": "Activity 3: Simulation",
+            "visual": "Simulation results comparing acute vs. chronic stress immune effects",
+            "say": "Run each scenario. Notice the dramatic difference between brief stress and sustained stress on your immune system.",
+            "do": "Students run all scenarios, record predictions vs. observations. Discuss the social support buffer effect.",
+            "time": "10 min"
+        },
+        {
+            "num": "Slide 8",
+            "title": "Discoveries",
+            "visual": "Key findings summary — stress-immune connection mechanisms",
+            "say": "Your model reveals that chronic stress literally turns down your immune system — and social connection literally turns it back up.",
+            "do": "Class discussion of discoveries. Compare initial hypotheses to model evidence. Emphasize the evolutionary mismatch.",
+            "time": "5 min"
+        },
+        {
+            "num": "Slide 9",
+            "title": "STEM Challenge",
+            "visual": "Engineering challenge: Design a School Stress Reduction Program",
+            "say": "Now design a program that targets the specific biological pathways your model revealed. No generic wellness posters.",
+            "do": "Groups design evidence-based programs targeting HPA axis regulation and social support. Present with model data justification.",
+            "time": "12 min"
+        }
+    ],
+    "sort_reasoning": "Stress Exposure and Social Support are external components because they represent environmental inputs that exist before the biological stress response activates — one is the stressor itself and the other is the social environment that modifies the response. Cortisol Level, Immune Function, and Health Outcome are internal because they emerge from the body\'s neuroendocrine and immune processing of those external inputs through the HPA axis feedback system.",
+    "relationships": [
+        ("Stress Exposure to Cortisol Level", "POSITIVE (+)", "Greater stress exposure activates the HPA axis more intensely and for longer durations, increasing cortisol production and bloodstream concentration."),
+        ("Social Support to Cortisol Level", "NEGATIVE (-)", "Stronger social support reduces HPA axis activation through oxytocin-mediated pathways, lowering cortisol output even when stress exposure remains constant."),
+        ("Cortisol Level to Immune Function", "NEGATIVE (-)", "Elevated cortisol suppresses lymphocyte production, reduces natural killer cell activity, and impairs antibody response, progressively weakening immune defenses."),
+        ("Immune Function to Health Outcome", "POSITIVE (+)", "Higher immune function means greater capacity to fight infections, detect abnormal cells, and heal injuries, directly improving overall health outcomes.")
+    ],
+    "sim_answers": [
+        ("Acute Stress Response", "With high but brief Stress Exposure and moderate Social Support, the model shows a sharp Cortisol spike that returns to baseline within hours. Immune Function dips temporarily but recovers fully. Health Outcome remains positive because the system worked as designed — a short mobilization followed by recovery. This is the stress response doing its evolutionary job."),
+        ("Chronic Stress Without Support", "With continuous moderate Stress Exposure and low Social Support, the model shows Cortisol Level remaining elevated for weeks. The HPA feedback loop becomes desensitized and fails to shut down. Immune Function progressively declines as lymphocyte production drops and natural killer cell activity decreases. Health Outcome deteriorates with increased susceptibility to infection, slower wound healing, and rising inflammation. This is the most dangerous pattern — and the most common in modern life.")
+    ],
+    "reflection_exemplars": [
+        ("Why is chronic stress more dangerous than acute stress?", "Our model clearly shows the difference: acute stress produces a cortisol spike that enhances immune readiness briefly and resolves quickly — exactly what evolution designed. Chronic stress keeps cortisol elevated indefinitely because the HPA feedback loop becomes desensitized and fails to shut down the response. This sustained cortisol exposure progressively destroys immune function: T-cells decline, natural killer cells become less active, and antibody production drops. The system evolved for 20-minute emergencies but modern life creates 20-week (or 20-year) chronic activation. The immune system pays the price."),
+        ("How does social support physically protect health?", "This isn\'t just psychology — our model shows a measurable biological mechanism. Social support reduces HPA axis activation through oxytocin release during positive social interactions. Oxytocin directly inhibits CRH release from the hypothalamus, which means less ACTH, less cortisol, and less immune suppression. Research shows this is dose-dependent: people with stronger social networks produce measurably less cortisol in response to identical stressors, have higher NK cell counts, and produce stronger vaccine antibody responses. Social connection is literally medicine — it modifies the same biological pathway that chronic stress damages.")
+    ],
+    "stem_intro": "Present the challenge: Your school\'s health data shows alarming connections between student stress levels and illness rates. The administration wants a science-based stress reduction program — not generic motivational posters, but interventions that target the specific HPA axis and immune pathways your model revealed. Use your model data to identify the highest-leverage intervention points and design a program with measurable health outcomes.",
+    "stem_concepts": [
+        ("Mind-Body Medicine", "A medical approach that recognizes the bidirectional communication between psychological states and physiological processes. Evidence-based mind-body interventions include mindfulness meditation (shown to reduce cortisol by 25%), yoga (reduces inflammatory markers), and cognitive behavioral therapy (normalizes HPA axis function)."),
+        ("Biofeedback", "A technique that uses real-time monitoring of physiological processes (heart rate variability, skin conductance, cortisol levels) to teach people to consciously modify their stress response. Studies show biofeedback can reduce HPA axis reactivity with consistent practice."),
+        ("Universal vs. Targeted Prevention", "In public health, universal programs serve everyone (like school-wide mindfulness), while targeted programs focus on high-risk individuals (like students with chronic stressors). Effective stress programs use both tiers because different populations have different allostatic loads and different biological needs.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Program targets specific biological mechanisms (HPA axis, cortisol, immune pathways) with evidence-based interventions, includes social support building as a core component, uses model data to justify design, and has measurable health outcomes"),
+        ("Proficient (3)", "Program addresses stress-immune biology with reasonable interventions and some reference to model evidence and measurable outcomes"),
+        ("Developing (2)", "Program identifies stress as a health concern but interventions are generic or not connected to the specific biological mechanisms from the model"),
+        ("Beginning (1)", "Program is incomplete, not grounded in stress-immune biology, or relies on unscientific approaches")
+    ],
+    "support": [
+        "Provide a labeled diagram of the HPA axis feedback loop: Hypothalamus -> CRH -> Pituitary -> ACTH -> Adrenals -> Cortisol -> (feedback to hypothalamus)",
+        "Use a traffic light analogy: Green = acute stress (helpful), Yellow = moderate stress (manageable), Red = chronic stress (immune damage) — what determines which zone you\'re in?",
+        "Sentence frames: \'When Stress Exposure is ___ and Social Support is ___, the model predicts Cortisol Level will ___ because the HPA axis ___\'"
+    ],
+    "extensions": [
+        "Research telomere shortening as a biomarker of chronic stress — how does Elizabeth Blackburn\'s Nobel Prize-winning research show that stress literally ages your cells faster?",
+        "Investigate how adverse childhood experiences (ACEs) reprogram the HPA axis during development — why are the stress-immune effects of childhood trauma measurable decades later?",
+        "Design an experiment to measure cortisol levels in your classmates during exam week vs. a normal week using salivary cortisol test strips — what does your model predict the results will show?"
+    ],
+    "cross_curr": [
+        ("Math", "Graph cortisol levels over 24 hours for acute stress (single spike and recovery) vs. chronic stress (sustained elevation). Calculate the area under the curve for each — how does total cortisol exposure compare, and what does this imply for cumulative immune damage?"),
+        ("ELA", "Write a research-based essay arguing that later school start times, reduced homework loads, or increased recess time would improve student health based on the biological mechanisms of stress-immune suppression"),
+        ("Sociology", "Research how allostatic load — the biological cost of chronic stress — contributes to health disparities in communities experiencing poverty, discrimination, and environmental injustice. How does the stress-immune model explain patterns in population health data?")
+    ],
+    "misconceptions": [
+        ("Stress is all in your head — it can\'t really make you physically sick", "Stress is a full-body physiological event, not just a mental state. The HPA axis converts psychological perception of threat into measurable hormonal changes (cortisol, adrenaline) that directly affect immune cell production, inflammatory pathways, cardiovascular function, and wound healing. Brain scans, blood tests, and immune assays all show physical changes during stress. The mind-body connection is not metaphorical — it operates through specific, measurable neuroendocrine pathways.", "Show data: surgical wounds heal 40% slower in chronically stressed patients. Vaccine antibody responses are 50% weaker in stressed caregivers. These are physical measurements, not opinions."),
+        ("Some stress is good for you, so all stress management is unnecessary", "The model clearly distinguishes between acute and chronic stress. Acute stress IS beneficial — it enhances alertness, mobilizes energy, and briefly boosts immune readiness. This is the \'good stress\' (eustress) people reference. But chronic stress — where cortisol remains elevated for days, weeks, or months — is unambiguously harmful. The issue isn\'t eliminating all stress but preventing the chronic activation that damages the HPA feedback loop and suppresses immunity.", "Demonstrate with the model: Run the acute scenario (positive outcome) then the chronic scenario (negative outcome). Same system, different patterns — the difference is duration, not existence of stress."),
+        ("Relaxation techniques are too simple to affect real biology", "Evidence-based stress reduction techniques produce measurable biological changes. Mindfulness meditation reduces cortisol by 25% and increases natural killer cell activity. Regular exercise normalizes HPA axis sensitivity and reduces inflammatory markers. Deep breathing activates the parasympathetic nervous system, directly counteracting the sympathetic stress response. These aren\'t placebo effects — they are physiological modifications of the same neuroendocrine pathways your model shows driving immune suppression.", "Compare: A prescription medication that reduced cortisol by 25% would be considered highly effective. Mindfulness meditation achieves the same result through a different mechanism — activating the parasympathetic nervous system. Both modify the same biology; only the delivery method differs.")
+    ]
+}
+
+L09 = {
+    "id": "G12L1-L09",
+    "title": "Is Social Media Rewiring Your Brain?",
+    "subtitle": "Modeling Dopamine Pathways, Attention Regulation, and Digital Addiction Mechanisms",
+    "ngss": "HS-LS1-2",
+    "ngss_desc": "Develop and use a model to illustrate the hierarchical organization of interacting systems that provide specific functions within multicellular organisms.",
+    "big_question": "You check your phone 96 times a day — once every 10 minutes. Instagram, TikTok, and Snapchat were designed by neuroscientists to be as addictive as possible. Is social media physically changing the structure and function of your brain, and if so, can you get it back?",
+    "objectives": [
+        "Model how variable-ratio reinforcement schedules in social media trigger dopamine release patterns that hijack the brain\'s reward circuitry",
+        "Explain how chronic social media use alters prefrontal cortex function, attention span, and the brain\'s baseline dopamine sensitivity",
+        "Predict how different usage patterns (passive scrolling vs. active creation vs. digital detox) produce different neurological outcomes",
+        "Analyze whether social media platforms should be regulated based on neuroscience evidence of addictive design"
+    ],
+    "vocabulary": [
+        ("Variable-Ratio Reinforcement", "A reward schedule where the payoff comes after an unpredictable number of actions — the most addictive pattern known to behavioral neuroscience, used in slot machines and social media feeds where you never know when the next like, comment, or viral post will appear"),
+        ("Dopamine Baseline", "The brain\'s resting level of dopamine activity that determines normal mood, motivation, and pleasure capacity — chronic overstimulation from social media can lower this baseline, making non-digital activities feel boring and unrewarding by comparison"),
+        ("Attention Fragmentation", "The progressive shortening of sustained attention capacity caused by rapid-switching between stimuli — social media trains the brain to expect new content every few seconds, making it increasingly difficult to maintain focus on longer tasks like reading or studying"),
+        ("Neuroplasticity", "The brain\'s ability to physically reorganize neural pathways based on repeated experience — social media use literally strengthens the neural circuits associated with checking, scrolling, and seeking social validation while weakening circuits for sustained attention and deep thinking")
+    ],
+    "components": [
+        ("Social Media Exposure", "The total time, frequency, and type of social media use — includes passive scrolling (consuming content), active posting (creating content), and social comparison (evaluating self against others), each with different neurological effects", True),
+        ("Notification Frequency", "The rate at which push notifications, alerts, and badges interrupt ongoing activity — each notification triggers a micro-dopamine hit and trains the brain to expect and crave interruptions, designed by platforms to maximize engagement", True),
+        ("Dopamine Sensitivity", "The brain\'s responsiveness to dopamine signals in the reward circuit — decreases with chronic overstimulation as receptors downregulate, requiring increasingly intense stimuli to achieve the same pleasure response", False),
+        ("Attention Capacity", "The brain\'s ability to sustain focus on a single task without switching — measured by duration of sustained attention, resistance to distraction, and depth of cognitive processing, all of which decrease with heavy social media use", False),
+        ("Cognitive Well-Being", "The overall health of higher-order brain functions including working memory, impulse control, emotional regulation, and self-directed attention — reflects the cumulative impact of social media on prefrontal cortex function and dopamine system integrity", False)
+    ],
+    "think_about_it": "TikTok serves you a new video every 15-60 seconds, each one optimized by AI to maximize your dopamine response. After two hours of this, you try to read a textbook chapter. What does your model predict about Attention Capacity, and why does the textbook feel unbearable?",
+    "scenarios": [
+        ("Heavy Passive Scrolling", "Set Social Media Exposure to high passive scrolling with maximum Notification Frequency — observe how Dopamine Sensitivity drops, Attention Capacity shrinks, and Cognitive Well-Being deteriorates over time"),
+        ("Active and Intentional Use", "Set Social Media Exposure to moderate with active creation (posting original content) and low Notification Frequency — observe how intentional use produces different dopamine patterns and partially preserves Attention Capacity"),
+        ("Digital Detox", "Reduce Social Media Exposure to zero for 7 days with zero Notification Frequency — observe how Dopamine Sensitivity gradually recovers and Attention Capacity begins to restore, though not immediately")
+    ],
+    "sim_scenarios": [
+        ("Doom Scrolling", "Social Media Exposure: 4+ hours passive scrolling | Notification Frequency: Maximum | Duration: 30 days", "After a month of heavy passive scrolling with constant notifications, what does the model predict for Dopamine Sensitivity and Attention Capacity?"),
+        ("Mindful Usage", "Social Media Exposure: 1 hour active/creative | Notification Frequency: Off | Duration: 30 days", "How does intentional, time-limited, notification-free social media use compare to passive scrolling in its effects on the brain?"),
+        ("Recovery Period", "Social Media Exposure: Zero | Notification Frequency: Zero | Duration: 14 days after heavy use", "How quickly do Dopamine Sensitivity and Attention Capacity recover after a two-week digital detox? Does the brain fully reset?")
+    ],
+    "discoveries": [
+        "Social media platforms use variable-ratio reinforcement — the same mechanism that makes slot machines addictive — to create unpredictable reward patterns that maximize dopamine release and compulsive checking behavior",
+        "Chronic heavy use lowers dopamine baseline sensitivity through receptor downregulation, making non-digital activities (reading, conversation, nature) feel increasingly boring and unrewarding",
+        "Attention fragmentation is a neuroplastic change — the brain physically strengthens rapid-switching circuits and weakens sustained-attention circuits, measurably reducing the ability to focus on tasks longer than a few minutes",
+        "Recovery is possible but not instant — dopamine sensitivity and attention capacity can partially restore during digital detox, but full recovery requires weeks to months depending on the duration and intensity of prior use"
+    ],
+    "answer": "Yes, social media is physically rewiring your brain — and the science is increasingly clear about how. Social media platforms exploit variable-ratio reinforcement schedules (the same mechanism behind slot machine addiction) to trigger unpredictable dopamine surges that train your brain to compulsively check for new content. Chronic use downregulates dopamine receptors, lowering your baseline sensitivity so that normal activities feel increasingly unsatisfying. Meanwhile, the constant stream of 15-60 second content fragments trains your attention circuits to expect rapid novelty, physically weakening the neural pathways for sustained focus through neuroplasticity. The good news: the brain can recover. Digital detox studies show measurable improvement in attention span and dopamine sensitivity within 2-4 weeks. But the platforms are designed by neuroscientists to prevent exactly this recovery — every notification pulls you back.",
+    "stem_title": "Design a Digital Wellness App",
+    "stem_mission": "Design a smartphone application that helps teens monitor and manage their social media use by providing real-time feedback on neurological effects, using the same behavioral neuroscience principles that make social media addictive — but in reverse, to build healthier digital habits.",
+    "stem_scenario": "A tech company wants to create a counter-product: an app that uses behavioral neuroscience to help people break unhealthy social media habits. The app must be based on the same dopamine and reinforcement science that makes platforms addictive, but designed to promote digital wellness. The challenge: the app itself must avoid becoming another addictive screen experience.",
+    "stem_questions": [
+        "What specific dopamine and reinforcement mechanisms does your model identify as the targets for intervention?",
+        "How can you use variable-ratio reinforcement FOR good — rewarding healthy behaviors instead of compulsive checking?",
+        "What does your model predict about the minimum digital detox duration needed for measurable dopamine sensitivity recovery?"
+    ],
+    "stem_design_qs": [
+        "What specific behavioral neuroscience principles does your app use to counteract addictive social media design?",
+        "How does your app provide feedback without becoming another source of compulsive checking and dopamine-seeking?",
+        "What model evidence supports your claim that your app\'s intervention strategy will improve attention capacity and dopamine sensitivity?",
+        "How would you measure whether your app actually reduces problematic social media use and improves cognitive well-being?"
+    ],
+    "career": "Behavioral neuroscientists study how digital technology affects brain function and development, earning $70,000-$140,000/year in research positions. UX ethics designers ensure technology products don\'t exploit psychological vulnerabilities, earning $90,000-$160,000/year. Digital wellness consultants help organizations develop healthy technology policies, earning $65,000-$120,000/year.",
+    "images": {
+        "cover": ("G12L1-L09-cover.png", "A photorealistic image of a diverse 17-18 year old student illuminated by the blue glow of a smartphone screen in a dimly lit room, with faint neural pathway graphics overlaid suggesting brain rewiring, cinematic lighting"),
+        "landscape": ("G12L1-L09-landscape.png", "A diverse group of 17-18 year old students in a modern neuroscience classroom examining brain imaging displays showing dopamine pathways, smartphones on desks, engaged in lively debate"),
+        "modeling": ("G12L1-L09-modeling.png", "Diverse 17-18 year old students working on laptops building computational models of dopamine and attention, classroom walls showing reward pathway diagrams and attention research posters"),
+        "discussion": ("G12L1-L09-discussion.png", "A teacher leading a discussion with diverse 17-18 year old students about social media and the brain, a comparison of brain scans during scrolling vs. reading displayed on the smartboard"),
+        "stem": ("G12L1-L09-stem.png", "Diverse 17-18 year old students designing a digital wellness app interface on whiteboards and tablets, with behavioral science flowcharts and wireframes visible")
+    },
+    "pre_assessment": [
+        "How many times do you estimate you check your phone each day? Do you think the actual number is higher or lower than your estimate?",
+        "Have you noticed any changes in your ability to focus on reading or homework over the past few years? What do you think caused those changes?",
+        "Why do you think scrolling through TikTok or Instagram feels so satisfying in the moment but often leaves you feeling worse afterward?",
+        "Do you think social media companies have a responsibility to make their products less addictive? Why or why not?"
+    ],
+    "extend_components": [
+        ("Social Comparison Intensity", "The degree to which social media use triggers upward social comparison — comparing yourself to curated highlight reels of others\' lives, which activates stress pathways and reduces self-esteem independently of the dopamine and attention effects"),
+        ("Sleep Disruption", "The impact of evening screen use on melatonin production and sleep architecture — blue light suppresses melatonin, social media content increases arousal, and poor sleep independently impairs dopamine system recovery and attention restoration"),
+        ("FOMO Activation", "Fear of missing out — a psychological driver that keeps users checking social media even when they want to stop, operating through anxiety pathways that are separate from but synergistic with the dopamine reward system")
+    ],
+    "reflections": [
+        "How does your model explain why TikTok and Instagram feel more compelling than reading a book, even when you know the book is more valuable?",
+        "What does dopamine receptor downregulation mean for your ability to enjoy non-digital activities like conversation, nature, or hobbies?",
+        "Your model shows that notification frequency is a powerful driver of compulsive checking. What would happen if you turned off ALL notifications for a week?",
+        "Should social media platforms be required to disclose the psychological manipulation techniques they use, similar to nutrition labels on food?",
+        "If social media is rewiring teenage brains during critical development periods, is this a personal responsibility issue or a public health issue?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop computational models to illustrate how hierarchically organized neural systems — from individual dopamine neurons to reward circuits to prefrontal cortex regulation — are disrupted by social media\'s designed reinforcement patterns."),
+        ("Disciplinary Core Idea", "LS1.A Structure and Function", "The brain\'s reward circuitry (ventral tegmental area, nucleus accumbens, prefrontal cortex) provides specific motivational and attention-regulation functions that are altered by chronic social media stimulation patterns, affecting the hierarchical organization of cognitive control."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal mechanisms linking specific social media design features (variable-ratio reinforcement, notification systems) to measurable changes in dopamine sensitivity and attention capacity through neuroplastic reorganization.")
+    ],
+    "cast_items": [
+        "Model how variable-ratio reinforcement in social media platforms triggers dopamine release patterns that lead to receptor downregulation and compulsive use",
+        "Predict how different social media usage patterns (passive scrolling vs. active creation vs. detox) produce different neurological outcomes for attention and reward sensitivity",
+        "Explain how neuroplasticity enables both the damage from chronic heavy use and the recovery during digital detox"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A student spends 4 hours daily on TikTok for 3 months, then tries to study for the SAT. Based on the social media-brain model, which neurological changes best explain why sustained focus on test preparation feels nearly impossible?"),
+        ("Constructed Response:", "Using your model, compare the predicted neurological effects of 3 hours of passive Instagram scrolling per day versus 3 hours of active content creation (making art, writing, filming). Explain why the same total screen time produces different effects on Dopamine Sensitivity and Attention Capacity.")
+    ],
+    "background_intro": "Silicon Valley\'s most profitable products are designed using the same behavioral neuroscience that makes slot machines addictive. Former tech insiders — including Facebook\'s founding president Sean Parker, Google\'s former design ethicist Tristan Harris, and the creators of the iPhone\'s infinite scroll — have publicly warned that social media platforms are engineered to exploit dopamine-driven feedback loops in the human brain. The question is no longer whether social media affects the brain, but how much damage is being done and whether it\'s reversible.",
+    "background_sections": [
+        ("The Neuroscience of the Scroll", "Social media platforms use variable-ratio reinforcement — delivering rewards (likes, comments, interesting content) at unpredictable intervals. This is the most addictive reinforcement schedule known to behavioral science, identical to the mechanism that makes slot machines the most profitable form of gambling. Each scroll is a pull of the lever: sometimes you get nothing interesting, sometimes you get a dopamine-triggering post. The unpredictability is the key — the brain releases more dopamine in anticipation of an uncertain reward than in response to a guaranteed one. This is why you can\'t stop scrolling even when most content is boring."),
+        ("Dopamine Downregulation and Anhedonia", "When the brain is chronically flooded with dopamine from social media stimulation, it protects itself by reducing dopamine receptor density — the same downregulation mechanism seen in substance addiction. The result is a lowered dopamine baseline: the brain\'s resting state of pleasure and motivation drops below normal. Activities that once felt rewarding — reading, face-to-face conversation, walking in nature — no longer produce enough dopamine to feel satisfying. Stanford psychiatrist Anna Lembke calls this \'dopamine deficit state\' — a mild but pervasive anhedonia (inability to feel pleasure) that drives the user back to the screen for relief."),
+        ("Attention Fragmentation and Neuroplasticity", "The average TikTok video is 15-60 seconds. Instagram Reels, YouTube Shorts, and Twitter/X are all converging toward shorter content because engagement data shows users prefer rapid novelty. This preference isn\'t innate — it\'s trained. Neuroplasticity means the brain strengthens whatever neural circuits are used most frequently. Hours of daily rapid-content-switching strengthens circuits for quick task-switching while weakening circuits for sustained attention. Research by Gloria Mark at UC Irvine shows average attention span on a single screen has decreased from 2.5 minutes in 2004 to 47 seconds in 2023 — and heavy social media users show the shortest spans."),
+        ("The Adolescent Vulnerability Window", "The adolescent brain is uniquely vulnerable because the prefrontal cortex — responsible for impulse control, long-term planning, and self-regulation — doesn\'t fully mature until age 25. Meanwhile, the reward circuitry (nucleus accumbens) is fully active and hypersensitive during adolescence. This creates a developmental mismatch: teens have a fully operational gas pedal (reward-seeking) with an underdeveloped brake (impulse control). Social media exploits this window — which is why teen usage rates, addiction indicators, and mental health impacts consistently exceed those of adults exposed to identical platforms.")
+    ],
+    "lever_L": "Students identify social media exposure, notification frequency, dopamine sensitivity, attention capacity, and cognitive well-being as the key components of the social media-brain system.",
+    "lever_E": "Students determine that variable-ratio reinforcement and notification interruptions drive dopamine dysregulation, that chronic exposure reduces dopamine sensitivity and attention capacity through neuroplasticity, and that usage pattern (passive vs. active) affects outcomes differently.",
+    "lever_V": "Students build a computational model showing how social media design features interact with the brain\'s dopamine and attention systems to produce measurable changes in cognitive function over time.",
+    "lever_Ev": "Students run heavy passive use, mindful active use, and digital detox scenarios to test predictions about how different usage patterns affect dopamine sensitivity, attention capacity, and cognitive well-being.",
+    "lever_R": "Students add social comparison intensity, sleep disruption, or FOMO activation to explore how additional psychological mechanisms interact with the core dopamine and attention model.",
+    "slides_guide": [
+        {
+            "num": "Slide 1",
+            "title": "Cover",
+            "visual": "Title slide with compelling image related to Is Social Media Rewiring Your Brain?",
+            "say": "You check your phone 96 times a day. That\'s not a personal choice — it\'s a design specification. Today we investigate why.",
+            "do": "Show cover image. Ask: Estimate your daily screen time. Then check your phone\'s actual report. Surprised?",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 2",
+            "title": "Learning Objectives",
+            "visual": "Learning goals and vocabulary terms with dopamine pathway diagram",
+            "say": "Here\'s what you\'ll understand by the end — the neuroscience behind why you can\'t put your phone down.",
+            "do": "Have students read objectives aloud. Pre-teach vocabulary with reward circuit diagram showing dopamine pathways.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 3",
+            "title": "Big Question",
+            "visual": "Provocative question with split image: phone-addicted teen vs. engaged student",
+            "say": "Social media was designed by neuroscientists to be as addictive as possible. Is it physically changing your brain?",
+            "do": "Quick-write: Students write honestly about their own social media habits and any effects they\'ve noticed. Save to revisit.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 4",
+            "title": "LEVER Framework",
+            "visual": "LEVER steps overview",
+            "say": "We\'re going to model how the same dopamine system targeted by addictive substances is being targeted by your phone.",
+            "do": "Preview each LEVER step. Emphasize that this is personal — the model describes what\'s happening in THEIR brains right now.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 5",
+            "title": "Activity 1: Components",
+            "visual": "Component cards — social media exposure, notification frequency, dopamine sensitivity, attention capacity, cognitive well-being",
+            "say": "What are the key parts of this system? What do the platforms control, and what happens inside your brain?",
+            "do": "Guide sorting of external vs. internal components. Discuss: What\'s designed by the platform vs. what\'s your brain\'s response?",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 6",
+            "title": "Activity 2: Connections",
+            "visual": "Relationship arrows between social media and brain components",
+            "say": "After 3 hours of TikTok, you try to read a textbook. What does your model predict about Attention Capacity? Why does reading feel impossible?",
+            "do": "Students draw arrows showing +/- relationships. Discuss the dopamine downregulation cycle and attention fragmentation.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 7",
+            "title": "Activity 3: Simulation",
+            "visual": "Simulation results comparing usage patterns over 30 days",
+            "say": "Run each scenario. Compare heavy passive scrolling, mindful active use, and digital detox. The differences are dramatic.",
+            "do": "Students run all scenarios, record predictions vs. observations. Discuss what recovery actually looks like neurologically.",
+            "time": "10 min"
+        },
+        {
+            "num": "Slide 8",
+            "title": "Discoveries",
+            "visual": "Key findings summary — social media\'s neurological impact",
+            "say": "The science is clear: social media exploits your dopamine system by design, and your brain physically changes in response. But recovery IS possible.",
+            "do": "Class discussion of discoveries. Revisit initial reflections — has the model changed how you think about your own usage?",
+            "time": "5 min"
+        },
+        {
+            "num": "Slide 9",
+            "title": "STEM Challenge",
+            "visual": "Engineering challenge: Design a Digital Wellness App",
+            "say": "Now use the same neuroscience that makes social media addictive — but in reverse. Design an app that builds healthy digital habits.",
+            "do": "Groups design wellness apps using behavioral neuroscience principles from the model. Present and evaluate designs.",
+            "time": "12 min"
+        }
+    ],
+    "sort_reasoning": "Social Media Exposure and Notification Frequency are external components because they represent designed inputs from technology platforms that exist before any neurological response begins — the platforms control how content is delivered and how often users are interrupted. Dopamine Sensitivity, Attention Capacity, and Cognitive Well-Being are internal because they emerge from the brain\'s neuroplastic response to those external stimulation patterns over time.",
+    "relationships": [
+        ("Social Media Exposure to Dopamine Sensitivity", "NEGATIVE (-)", "Chronic high social media exposure floods the reward circuit with dopamine, triggering receptor downregulation that lowers baseline dopamine sensitivity over time."),
+        ("Notification Frequency to Attention Capacity", "NEGATIVE (-)", "Frequent notifications train the brain to expect and seek constant interruptions, weakening the neural circuits for sustained attention through neuroplastic reorganization."),
+        ("Dopamine Sensitivity to Cognitive Well-Being", "POSITIVE (+)", "Higher dopamine sensitivity means normal activities produce adequate pleasure and motivation, supporting healthy mood, engagement, and executive function."),
+        ("Attention Capacity to Cognitive Well-Being", "POSITIVE (+)", "Greater attention capacity supports deeper learning, better emotional regulation, and more effective problem-solving — all core components of cognitive well-being.")
+    ],
+    "sim_answers": [
+        ("Heavy Passive Scrolling", "With 4+ hours of daily passive scrolling and maximum notifications, the model shows progressive decline across all internal components. Dopamine Sensitivity drops as receptors downregulate from chronic overstimulation. Attention Capacity shrinks as rapid-switching circuits strengthen and sustained-attention circuits weaken. Cognitive Well-Being deteriorates as the combined effects impair mood, motivation, and academic performance. After 30 days, the model shows significant measurable changes — consistent with real-world research findings."),
+        ("Digital Detox", "After 14 days of zero social media and zero notifications, the model shows gradual but incomplete recovery. Dopamine Sensitivity begins to restore as receptors upregulate in the absence of overstimulation — the first few days are the hardest as the brain experiences dopamine deficit. Attention Capacity improves more slowly because neuroplastic changes require sustained practice of focused activities. The model predicts meaningful improvement by day 14 but not full recovery — consistent with research showing 4-6 weeks for substantial restoration.")
+    ],
+    "reflection_exemplars": [
+        ("Is social media addiction a real addiction?", "Our model reveals striking parallels between social media and substance addiction. Both exploit dopamine pathways: substances flood the system chemically while social media floods it through variable-ratio reinforcement. Both cause receptor downregulation, lowering baseline dopamine sensitivity. Both create compulsive behavior despite negative consequences — people continue scrolling even when they know it\'s making them unhappy. The main difference is degree: substances produce much larger dopamine surges (200-1000% vs. 50-100% for social media), making physical dependence more severe. But the neurological mechanism is fundamentally the same, and the behavioral pattern of compulsive use despite harm meets clinical definitions of addiction."),
+        ("Should social media platforms be regulated like addictive substances?", "The model provides evidence that social media exploits the same dopamine pathways as addictive substances, using behavioral design techniques specifically engineered to maximize compulsive engagement. Variable-ratio reinforcement, infinite scroll, autoplay, and notification systems are not accidental — they were designed by behavioral scientists to exploit known neurological vulnerabilities. The adolescent brain is particularly vulnerable because the prefrontal cortex (impulse control) is still developing. This parallels the argument for tobacco regulation: a product designed to be addictive, marketed to vulnerable populations, with documented health harms. Whether regulation is the right policy response involves values, but the scientific case for harm is strong.")
+    ],
+    "stem_intro": "Present the challenge: A tech company wants to create an app that uses behavioral neuroscience to help people break unhealthy social media habits. Your team must design this app using the same dopamine and reinforcement principles that make platforms addictive — but in reverse. The critical constraint: your app must avoid becoming another source of addictive screen behavior.",
+    "stem_concepts": [
+        ("Persuasive Design Ethics", "The practice of using psychological principles to influence user behavior through technology design. When used to maximize engagement regardless of user well-being, it\'s manipulation. When used to help users achieve their own goals (like reducing screen time), it\'s ethical persuasion. The line depends on whose interests are served."),
+        ("Habit Reversal Training", "A behavioral therapy technique that replaces unwanted habitual behaviors with healthier alternatives. For social media: identifying triggers (boredom, FOMO), awareness of the automatic response (reaching for phone), and substituting a competing response (calling a friend, taking a walk, reading)."),
+        ("Dopamine Scheduling", "The practice of intentionally structuring activities to maintain healthy dopamine levels without overstimulation. Includes alternating high-stimulation and low-stimulation activities, scheduling social media windows rather than constant access, and building tolerance for boredom as a path to dopamine system recovery.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "App design uses specific behavioral neuroscience principles from the model, targets dopamine and attention mechanisms directly, avoids becoming addictive itself, includes measurable outcomes, and addresses the adolescent vulnerability window"),
+        ("Proficient (3)", "App addresses dopamine and attention concerns with reasonable neuroscience-based features and some built-in measurement"),
+        ("Developing (2)", "App has wellness features but they are generic or not grounded in the specific neurological mechanisms from the model"),
+        ("Beginning (1)", "App is incomplete, lacks neuroscience grounding, or risks becoming another addictive screen experience")
+    ],
+    "support": [
+        "Provide a comparison diagram: Slot Machine (pull lever -> random reward -> dopamine -> pull again) vs. Social Media (scroll -> random interesting post -> dopamine -> scroll again)",
+        "Use a dopamine timeline graphic showing baseline sensitivity over 30 days of heavy use vs. 14 days of detox recovery",
+        "Sentence frames: \'When Social Media Exposure is ___ and Notification Frequency is ___, Dopamine Sensitivity ___ because the brain\'s reward circuit ___\'"
+    ],
+    "extensions": [
+        "Watch and analyze \'The Social Dilemma\' documentary — which claims are supported by the neuroscience in your model, and which are exaggerated or unsupported?",
+        "Research the proposed Kids Online Safety Act (KOSA) — does the neuroscience evidence from your model support or undermine the argument for legislative regulation of social media for minors?",
+        "Design and conduct a self-experiment: track your screen time, attention span (using a sustained attention test app), and mood for one week of normal use and one week of reduced use. Compare results to your model\'s predictions."
+    ],
+    "cross_curr": [
+        ("Math", "Calculate the cumulative dopamine overstimulation from social media: if each notification produces a 50% dopamine surge lasting 30 seconds, and you receive 80 notifications per day, what is the total \'dopamine exposure\' over a month? Compare to baseline levels and discuss receptor downregulation thresholds."),
+        ("ELA", "Write an argumentative essay taking a position on whether social media companies should be legally liable for designing addictive products that harm adolescent brain development, using neuroscience evidence from your model"),
+        ("Economics", "Analyze the attention economy: social media platforms sell your attention to advertisers. Calculate the revenue per user-hour for major platforms. How does this business model create incentives to maximize addictive design rather than user well-being?")
+    ],
+    "misconceptions": [
+        ("Social media is just a tool — it\'s how you use it that matters", "While usage patterns do affect outcomes (passive scrolling is worse than active creation), the platforms themselves are engineered to exploit neurological vulnerabilities. Variable-ratio reinforcement, infinite scroll, autoplay, algorithmic content curation, and notification systems are deliberate design choices made by behavioral scientists to maximize time-on-platform. Saying social media is \'just a tool\' ignores that the tool was specifically designed to be addictive. A hammer is just a tool. A slot machine is a tool designed to exploit dopamine pathways — and so is social media.", "Compare: A knife is a neutral tool. A slot machine is a tool designed to exploit your brain. Which one is social media more like? Have students identify the specific design features in their favorite apps that map to behavioral addiction mechanisms."),
+        ("I can stop anytime I want — I\'m not addicted", "The model shows that dopamine downregulation happens gradually and below conscious awareness. Most people don\'t recognize their baseline has shifted until they try to stop — and experience the restlessness, boredom, and irritability of dopamine deficit. Research shows that 50% of teens describe themselves as \'addicted\' to their phones, and most who attempt digital detox fail within the first 72 hours. The hallmark of addiction is continued use despite negative consequences and difficulty stopping despite wanting to.", "Challenge students: Put your phone in a locked drawer for 24 hours (including sleeping hours). Journal how you feel at 1 hour, 4 hours, 8 hours, and 24 hours. If you can\'t do it, or if you feel significant distress, what does that reveal?"),
+        ("Attention spans aren\'t really getting shorter — that\'s just older people complaining", "Measurable data contradicts this. Gloria Mark\'s research at UC Irvine tracked attention span on screens from 2004-2023, showing a decline from 2.5 minutes to 47 seconds. Standardized cognitive testing shows declining sustained attention scores in heavy social media users. Brain imaging studies show reduced gray matter volume in the prefrontal cortex of heavy users — the same region that controls sustained attention. This isn\'t generational bias — it\'s neuroscience measured with fMRI machines and standardized tests.", "Show the data: Gloria Mark\'s graph of declining screen attention spans from 2004-2023. Ask students to honestly self-report how long they can read a textbook without checking their phone. Compare their answers to the research data.")
+    ]
+}
+
+L10 = {
+    "id": "G12L1-L10",
+    "title": "How Can One Mutation Change Everything?",
+    "subtitle": "Modeling Gene Mutations, Protein Structure, and Phenotypic Variation",
+    "ngss": "HS-LS3-2",
+    "ngss_desc": "Make and defend a claim based on evidence that inheritable genetic variations may result from (1) new genetic combinations through meiosis, (2) viable errors occurring during replication, and (3) mutations caused by environmental factors.",
+    "big_question": "A single change in one letter of your DNA — out of 3.2 billion — can cause sickle cell disease, give you red hair, protect you from HIV, or increase your cancer risk. How can one tiny mutation in a gene have such massive effects on an organism, and why do some mutations help while others harm?",
+    "objectives": [
+        "Model how point mutations, insertions, and deletions alter DNA sequences and produce changed proteins with different structures and functions",
+        "Explain why the phenotypic impact of a mutation depends on its location in the gene, the type of change, and the protein\'s functional tolerance for variation",
+        "Predict whether a given mutation will be harmful, neutral, or beneficial based on its effect on protein structure and function",
+        "Analyze why genetic variation from mutations is the raw material for evolution and why most mutations are neutral rather than harmful"
+    ],
+    "vocabulary": [
+        ("Point Mutation", "A change in a single nucleotide base in the DNA sequence — can be silent (no effect on protein), missense (changes one amino acid), or nonsense (creates a premature stop codon), with vastly different phenotypic consequences depending on location and type"),
+        ("Frameshift Mutation", "An insertion or deletion of nucleotides that is not a multiple of three, shifting the entire reading frame of the genetic code downstream — typically devastating because every amino acid after the mutation is wrong, usually producing a nonfunctional protein"),
+        ("Phenotypic Variation", "Observable differences in traits among individuals caused by underlying genetic differences — the visible expression of genotypic variation, ranging from trivial (hair color) to life-threatening (sickle cell disease) depending on which protein is affected"),
+        ("Protein Folding", "The process by which a linear amino acid chain folds into a specific three-dimensional structure that determines its function — even a single amino acid change can destabilize folding, creating a misfolded protein that cannot perform its biological role")
+    ],
+    "components": [
+        ("Mutation Type", "The category of genetic change — point mutations (substitutions), insertions, and deletions each alter the DNA sequence differently, with frameshift mutations generally being more disruptive than single-base substitutions", True),
+        ("Gene Location", "Where in the genome the mutation occurs — mutations in coding regions affect protein sequence directly, mutations in regulatory regions affect gene expression levels, and mutations in non-coding regions are usually silent", True),
+        ("Protein Structure Change", "The degree to which the mutation alters the three-dimensional folding and shape of the encoded protein — ranges from no change (silent mutation) to complete misfolding (frameshift or critical-site missense mutation)", False),
+        ("Protein Function", "How well the mutated protein performs its biological role — directly determined by structural change; a slightly altered structure may retain partial function, while a severely misfolded protein is typically nonfunctional or toxic", False),
+        ("Phenotypic Impact", "The observable effect of the mutation on the organism\'s traits, health, or fitness — determined by how much protein function changes and how critical that protein is to the organism\'s survival and reproduction", False)
+    ],
+    "think_about_it": "Sickle cell disease is caused by a single point mutation: one A changed to a T in the hemoglobin gene, replacing glutamic acid with valine. This changes ONE amino acid out of 147 in the protein. How does your model explain why such a tiny change has such a massive Phenotypic Impact?",
+    "scenarios": [
+        ("Silent Mutation", "Set Mutation Type to point mutation (synonymous substitution) in a coding region — observe how the redundancy of the genetic code means no amino acid change, no protein change, and no phenotypic effect"),
+        ("Missense Mutation in Critical Site", "Set Mutation Type to point mutation (missense) at an active site of an essential protein — observe how a single amino acid change disrupts Protein Structure, destroys Protein Function, and produces severe Phenotypic Impact"),
+        ("Frameshift in Early Gene", "Set Mutation Type to single-base insertion early in a gene\'s coding sequence — observe how the reading frame shift changes every downstream amino acid, producing a completely nonfunctional protein")
+    ],
+    "sim_scenarios": [
+        ("Silent Change", "Mutation Type: Point (synonymous) | Gene Location: Coding region, non-critical site | Protein: Hemoglobin", "When a mutation changes the DNA but NOT the amino acid (due to genetic code redundancy), what happens to Phenotypic Impact?"),
+        ("Sickle Cell Mutation", "Mutation Type: Point (missense, E6V) | Gene Location: HBB gene, position 6 | Protein: Hemoglobin beta chain", "The sickle cell mutation changes just one amino acid. Why does the model predict such severe Phenotypic Impact from this tiny change?"),
+        ("Frameshift Disaster", "Mutation Type: Single base insertion | Gene Location: Early in CFTR gene coding region | Protein: CFTR chloride channel", "What happens when a frameshift mutation near the beginning of a gene scrambles the entire downstream protein sequence?")
+    ],
+    "discoveries": [
+        "The genetic code\'s redundancy provides a buffer: about 25% of all possible point mutations are silent because multiple codons code for the same amino acid, producing no phenotypic effect whatsoever",
+        "Location matters enormously — the same type of mutation (missense) can be harmless in one part of a protein and fatal in another, depending on whether the changed amino acid is at a structurally or functionally critical site",
+        "Frameshift mutations are almost always devastating because they change every amino acid downstream of the insertion or deletion, producing a completely different and usually nonfunctional protein",
+        "Most mutations are neutral or slightly harmful — beneficial mutations are rare but provide the raw genetic variation that natural selection acts upon to drive evolution"
+    ],
+    "answer": "One mutation can change everything because proteins are molecular machines whose function depends entirely on their precise three-dimensional structure — and structure is determined by amino acid sequence, which is determined by DNA sequence. A single nucleotide change can alter one amino acid, which can destabilize the entire protein\'s folding, which can destroy its function, which can cause disease or death. The sickle cell mutation changes just one amino acid (glutamic acid to valine) in hemoglobin, but this causes hemoglobin molecules to polymerize into rigid fibers that distort red blood cells into sickle shapes, blocking blood flow and causing organ damage. However, most mutations are not this dramatic — the genetic code\'s redundancy means many mutations are silent, and many amino acid changes occur at positions that tolerate variation. Whether a mutation helps, harms, or does nothing depends on what protein it affects, where in that protein the change occurs, and what function that protein serves in the organism.",
+    "stem_title": "Design a Genetic Screening Decision Tool",
+    "stem_mission": "Design a decision-support tool that helps genetic counselors explain to patients what their specific gene mutations mean — distinguishing between harmful, neutral, and potentially beneficial variants using the protein structure-function model.",
+    "stem_scenario": "A genetics clinic receives hundreds of patient genome sequences each week, each containing thousands of mutations compared to the reference genome. Most mutations are harmless, but a few may cause disease. Genetic counselors need a tool that uses the principles from your model — mutation type, gene location, protein structure change, and functional impact — to rapidly classify mutations and explain results to patients in understandable terms.",
+    "stem_questions": [
+        "What criteria from your model best predict whether a specific mutation will be harmful, neutral, or beneficial?",
+        "How can you communicate the uncertainty of mutation classification to patients without causing unnecessary panic?",
+        "What does your model reveal about why the same mutation can have different severity in different individuals?"
+    ],
+    "stem_design_qs": [
+        "What specific model-based criteria does your tool use to classify mutations as harmful, neutral, or potentially beneficial?",
+        "How does your tool communicate complex genetic information to patients without scientific training?",
+        "What model evidence supports your classification criteria, and how does your tool handle uncertain or ambiguous mutations?",
+        "How does your tool account for the fact that phenotypic impact can vary between individuals carrying the same mutation?"
+    ],
+    "career": "Genetic counselors help patients understand genetic test results and make health decisions, earning $80,000-$110,000/year. Bioinformaticians who analyze genome sequences and classify mutation variants earn $75,000-$140,000/year. Structural biologists studying protein folding and mutation effects work in pharmaceutical and biotech companies, earning $80,000-$160,000/year.",
+    "images": {
+        "cover": ("G12L1-L10-cover.png", "A photorealistic close-up of diverse 17-18 year old students in a modern genetics lab examining 3D protein structure models on a large display, with DNA sequence data visible on screens, dramatic lighting"),
+        "landscape": ("G12L1-L10-landscape.png", "A diverse group of 17-18 year old students in a modern biology classroom with protein folding models on desks and a smartboard showing DNA mutation comparisons, engaged in collaborative analysis"),
+        "modeling": ("G12L1-L10-modeling.png", "Diverse 17-18 year old students working on laptops building computational models of mutation effects on protein structure, classroom walls showing the genetic code table and protein folding diagrams"),
+        "discussion": ("G12L1-L10-discussion.png", "A teacher leading a discussion with diverse 17-18 year old students about genetic mutations and their effects, normal vs. sickle cell hemoglobin comparison displayed on the smartboard"),
+        "stem": ("G12L1-L10-stem.png", "Diverse 17-18 year old students designing a genetic screening decision tool on whiteboards and laptops, with mutation classification flowcharts and patient communication materials visible")
+    },
+    "pre_assessment": [
+        "What is a mutation? Is it always a bad thing? Explain your thinking with any examples you know.",
+        "How do you think a change in DNA can affect the way your body looks or functions?",
+        "If every human has millions of mutations compared to each other, why aren\'t we all sick? What does that suggest about most mutations?",
+        "Have you heard of sickle cell disease or cystic fibrosis? What do you know about what causes them at the genetic level?"
+    ],
+    "extend_components": [
+        ("Epigenetic Modification", "Chemical changes to DNA or histone proteins that alter gene expression without changing the DNA sequence — can amplify or suppress the phenotypic impact of a mutation by changing how much of the mutated protein is actually produced"),
+        ("Genetic Background", "The combined effect of all other genes in an individual\'s genome — modifier genes can enhance or suppress the phenotypic impact of a specific mutation, explaining why the same mutation causes severe disease in one person and mild symptoms in another"),
+        ("Environmental Interaction", "External factors like diet, temperature, UV exposure, and chemical exposure that interact with genotype to determine phenotype — some mutations are only harmful under specific environmental conditions, revealing gene-environment interactions")
+    ],
+    "reflections": [
+        "How does your model explain why a single amino acid change can sometimes cause fatal disease and sometimes have no effect at all?",
+        "Why is the redundancy of the genetic code (multiple codons for the same amino acid) an important buffer against mutation damage?",
+        "Your model shows that frameshift mutations are almost always devastating. Why is the reading frame so important for protein function?",
+        "If most mutations are neutral, why do people associate the word \'mutation\' with disease and danger? How does your model challenge that assumption?",
+        "How does genetic variation from mutations connect to evolution by natural selection? Why are mutations essential for adaptation?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Engaging in Argument from Evidence", "Students make and defend claims about whether specific mutations will be harmful, neutral, or beneficial, using evidence from their model about mutation type, protein structure change, and functional impact."),
+        ("Disciplinary Core Idea", "LS3.B Variation of Traits", "Genetic variations result from mutations during DNA replication and from environmental mutagens; these variations alter protein structure and function, producing phenotypic variation that ranges from undetectable to lethal depending on the protein and position affected."),
+        ("Crosscutting Concept", "Structure and Function", "Students connect DNA sequence structure to protein three-dimensional structure to biological function, understanding how a change at one structural level cascades through to produce observable phenotypic effects.")
+    ],
+    "cast_items": [
+        "Make and defend a claim about whether a described mutation will be harmful, neutral, or beneficial based on its predicted effect on protein structure and function",
+        "Predict the phenotypic impact of different mutation types (silent, missense, nonsense, frameshift) based on their location in the gene and effect on the encoded protein",
+        "Explain why genetic variation from mutations is the essential raw material for evolution by natural selection"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A point mutation changes codon 6 of the hemoglobin beta gene from GAG (glutamic acid) to GTG (valine). Based on the mutation-protein-phenotype model, why does this single amino acid change at this specific location cause the severe symptoms of sickle cell disease?"),
+        ("Constructed Response:", "Using your model, explain why a frameshift mutation caused by a single base insertion at position 10 of a 500-amino-acid protein is likely to be more damaging than a missense mutation at position 450 of the same protein. Reference Protein Structure Change, Protein Function, and Phenotypic Impact in your answer.")
+    ],
+    "background_intro": "Every time a cell divides, its entire genome — 3.2 billion base pairs — must be copied. DNA polymerase is remarkably accurate, making only about 1 error per billion base pairs copied. But with 37 trillion cells in the human body dividing regularly, mutations are inevitable. Most are repaired by proofreading enzymes, but some persist. Understanding how these changes in DNA sequence translate to changes in protein structure, function, and ultimately observable traits is fundamental to genetics, medicine, and evolution.",
+    "background_sections": [
+        ("From DNA to Protein: The Central Dogma", "The flow of genetic information follows the central dogma: DNA is transcribed into mRNA, which is translated into protein by ribosomes reading three-nucleotide codons. Each codon specifies one of 20 amino acids (or a stop signal). The amino acid sequence determines how the protein folds into its three-dimensional structure, and this structure determines the protein\'s function. A mutation in DNA changes the mRNA, which can change the amino acid sequence, which can change protein folding, which can change function. This cascade — sequence to structure to function — is why a single DNA change can have system-wide effects."),
+        ("Types of Mutations and Their Effects", "Point mutations (single nucleotide changes) come in three categories: silent/synonymous (no amino acid change due to genetic code redundancy — about 25% of all possible point mutations), missense (different amino acid — effects range from undetectable to fatal depending on location), and nonsense (premature stop codon — usually produces a truncated, nonfunctional protein). Insertions and deletions that aren\'t multiples of three cause frameshift mutations that scramble the entire downstream reading frame. Large-scale mutations include chromosomal duplications, deletions, inversions, and translocations that affect thousands of genes simultaneously."),
+        ("Why Location Determines Impact", "Not all positions in a protein are equally important. Active sites (where enzymes catalyze reactions), binding sites (where proteins interact with other molecules), and structural core residues (that maintain three-dimensional shape) are highly sensitive to amino acid changes — mutations at these sites often destroy function. Surface residues and flexible loop regions are more tolerant of substitution. Similarly, mutations in regulatory regions (promoters, enhancers) can change when, where, and how much protein is produced without changing the protein itself — sometimes with dramatic phenotypic effects like cancer when tumor suppressors are silenced."),
+        ("Mutations as Raw Material for Evolution", "While most attention focuses on harmful mutations, the majority of mutations are neutral — they occur in non-coding DNA, produce silent changes, or affect tolerant positions in proteins. These neutral mutations accumulate over generations and serve as the raw material for evolution. Occasionally, a mutation produces a protein variant that works better in a specific environment — like the hemoglobin S variant that protects against malaria in heterozygous carriers. Natural selection acts on this variation: beneficial mutations increase in frequency, harmful ones are removed, and neutral ones drift randomly. Without mutations, there would be no genetic variation and no evolution.")
+    ],
+    "lever_L": "Students identify mutation type, gene location, protein structure change, protein function, and phenotypic impact as the key components of the mutation-to-phenotype system.",
+    "lever_E": "Students determine that mutation type and gene location together determine the degree of protein structure change, that structural change directly affects protein function, and that the criticality of the affected protein determines phenotypic impact.",
+    "lever_V": "Students build a computational model showing how different mutations at different gene locations cascade through protein structure and function to produce varying degrees of phenotypic impact.",
+    "lever_Ev": "Students run silent mutation, critical missense, and frameshift scenarios to test predictions about which combinations of mutation type and location produce harmful, neutral, or beneficial phenotypic outcomes.",
+    "lever_R": "Students add epigenetic modification, genetic background, or environmental interaction to explore why the same mutation can produce different phenotypes in different individuals or conditions.",
+    "slides_guide": [
+        {
+            "num": "Slide 1",
+            "title": "Cover",
+            "visual": "Title slide with compelling image related to How Can One Mutation Change Everything?",
+            "say": "One letter changed out of 3.2 billion. That\'s all it takes to cause sickle cell disease — or to protect against HIV. Today we model why.",
+            "do": "Show cover image. Ask: What comes to mind when you hear the word \'mutation\'? Quick share-out — note how many responses are negative.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 2",
+            "title": "Learning Objectives",
+            "visual": "Learning goals and vocabulary terms with genetic code chart",
+            "say": "Here\'s what you\'ll understand by the end — how to predict whether a mutation will help, harm, or do nothing at all.",
+            "do": "Have students read objectives aloud. Pre-teach vocabulary with visual showing DNA to protein pathway and mutation types.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 3",
+            "title": "Big Question",
+            "visual": "Provocative question with image showing normal vs. sickle cell red blood cells",
+            "say": "One amino acid. Out of 147. Changes a round, flexible red blood cell into a rigid sickle that blocks blood vessels. How?",
+            "do": "Quick-write: Students hypothesize how a single DNA change could have system-wide effects. Save to compare with model evidence.",
+            "time": "3 min"
+        },
+        {
+            "num": "Slide 4",
+            "title": "LEVER Framework",
+            "visual": "LEVER steps overview",
+            "say": "We\'re going to model the cascade from DNA change to protein change to whole-organism effect — one of biology\'s most important chains of causation.",
+            "do": "Preview each LEVER step. Emphasize that this model connects molecular biology to observable traits.",
+            "time": "2 min"
+        },
+        {
+            "num": "Slide 5",
+            "title": "Activity 1: Components",
+            "visual": "Component cards — mutation type, gene location, protein structure change, protein function, phenotypic impact",
+            "say": "What are the key parts of this system? What determines the input, and what emerges from the biology?",
+            "do": "Guide sorting of external vs. internal components. Discuss: Scientists control where to look, but biology determines the outcome.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 6",
+            "title": "Activity 2: Connections",
+            "visual": "Relationship arrows between mutation-protein-phenotype components",
+            "say": "A missense mutation at an enzyme\'s active site vs. at a surface loop — same mutation type, dramatically different Phenotypic Impact. Why?",
+            "do": "Students draw arrows showing +/- relationships. Discuss why location in the protein matters as much as the type of mutation.",
+            "time": "8 min"
+        },
+        {
+            "num": "Slide 7",
+            "title": "Activity 3: Simulation",
+            "visual": "Simulation results comparing silent, missense, and frameshift mutations",
+            "say": "Run each scenario. The silent mutation, the sickle cell missense, and the frameshift. Watch how the cascade plays out differently each time.",
+            "do": "Students run all scenarios, record predictions vs. observations. Discuss why most mutations are actually neutral.",
+            "time": "10 min"
+        },
+        {
+            "num": "Slide 8",
+            "title": "Discoveries",
+            "visual": "Key findings summary — the mutation spectrum from neutral to devastating",
+            "say": "Most mutations are nothing. Some are everything. Your model reveals what determines which is which.",
+            "do": "Class discussion of discoveries. Challenge the \'mutations are bad\' assumption — most are neutral, and some are essential for evolution.",
+            "time": "5 min"
+        },
+        {
+            "num": "Slide 9",
+            "title": "STEM Challenge",
+            "visual": "Engineering challenge: Design a Genetic Screening Decision Tool",
+            "say": "Now apply your model. A genetics clinic needs to classify thousands of mutations quickly. Your tool must predict which ones matter.",
+            "do": "Groups design classification tools using model criteria. Present and evaluate using real mutation examples.",
+            "time": "12 min"
+        }
+    ],
+    "sort_reasoning": "Mutation Type and Gene Location are external components because they represent the specific characteristics of the genetic change — what kind of mutation occurred and where in the genome it happened — which are determined before the biological consequences play out. Protein Structure Change, Protein Function, and Phenotypic Impact are internal because they emerge from how the cell processes the mutated DNA through transcription, translation, and protein folding into observable biological effects.",
+    "relationships": [
+        ("Mutation Type to Protein Structure Change", "POSITIVE (+)", "More disruptive mutation types (frameshift > nonsense > missense > silent) cause greater changes to the protein\'s amino acid sequence, producing larger structural disruptions."),
+        ("Gene Location to Protein Structure Change", "POSITIVE (+)", "Mutations at functionally critical gene locations (active sites, structural cores) produce greater protein structure changes than mutations at tolerant positions (surface loops, non-coding regions)."),
+        ("Protein Structure Change to Protein Function", "NEGATIVE (-)", "Greater structural changes disrupt the protein\'s three-dimensional shape, reducing or destroying its ability to perform its biological role."),
+        ("Protein Function to Phenotypic Impact", "NEGATIVE (-)", "Reduced protein function affects the biological processes that protein supports; the more critical the protein and the greater the functional loss, the more severe the observable phenotypic effect.")
+    ],
+    "sim_answers": [
+        ("Silent Mutation", "With a synonymous point mutation in a coding region, the genetic code\'s redundancy means the same amino acid is produced despite the DNA change. Protein Structure Change is zero, Protein Function is unchanged, and Phenotypic Impact is nil. This demonstrates why about 25% of all possible point mutations are invisible to natural selection — they literally do not change the protein. This is a major source of neutral genetic variation used for population genetics studies."),
+        ("Missense Mutation in Critical Site", "The sickle cell mutation (E6V in hemoglobin) changes a single charged amino acid (glutamic acid) to a hydrophobic one (valine) at position 6 of the beta chain. The model shows moderate Protein Structure Change — the overall fold is mostly preserved, but the surface chemistry changes dramatically. This creates a hydrophobic patch that causes hemoglobin molecules to polymerize into rigid fibers under low oxygen conditions. Protein Function is severely compromised, and Phenotypic Impact is devastating: sickle-shaped red blood cells, vaso-occlusive crises, organ damage. The model illustrates how one amino acid at a critical position can cascade to system-wide effects."),
+        ("Frameshift in Early Gene", "A single base insertion early in the coding sequence shifts the entire reading frame, producing a completely different amino acid sequence for the remainder of the protein. The model shows maximum Protein Structure Change — the protein cannot fold correctly because virtually every amino acid after the insertion is wrong. Protein Function drops to zero, and Phenotypic Impact depends on the protein\'s importance: for essential proteins like CFTR (cystic fibrosis), the result is severe disease.")
+    ],
+    "reflection_exemplars": [
+        ("Why are most mutations neutral rather than harmful?", "Our model reveals three key reasons. First, genetic code redundancy: about 25% of point mutations are silent because multiple codons specify the same amino acid — the DNA changes but the protein doesn\'t. Second, most of the human genome (over 98%) is non-coding, so random mutations are far more likely to land in regions that don\'t encode proteins. Third, even within proteins, many amino acid positions are tolerant of substitution — surface residues and flexible loops can often accommodate different amino acids without significant structural or functional change. The model shows that devastating mutations like sickle cell are actually the exception, not the rule. This is important because it means genetic variation — the raw material for evolution — can accumulate without killing the organism."),
+        ("How does the sickle cell mutation illustrate gene-environment interaction?", "The sickle cell mutation (E6V) is a perfect case study in context-dependent phenotypic impact. In homozygous individuals (two copies), it causes severe sickle cell disease. But in heterozygous carriers (one copy), the model shows a different outcome: enough normal hemoglobin is produced to prevent sickling under most conditions, while the sickle hemoglobin makes red blood cells inhospitable to the malaria parasite. In malaria-endemic regions, carriers have a survival advantage over both non-carriers (who die of malaria) and homozygous individuals (who die of sickle cell). This is heterozygote advantage — a mutation that is simultaneously harmful, neutral, and beneficial depending on genetic dosage and environmental context.")
+    ],
+    "stem_intro": "Present the challenge: A genetics clinic processes hundreds of patient genomes each week, each containing thousands of variants compared to the reference genome. Your team must design a decision-support tool that uses the principles from your mutation-protein-phenotype model to help genetic counselors rapidly classify mutations as harmful, neutral, or potentially beneficial, and communicate these classifications to patients clearly.",
+    "stem_concepts": [
+        ("Variant Classification", "The American College of Medical Genetics (ACMG) classifies genetic variants into five categories: pathogenic, likely pathogenic, variant of uncertain significance (VUS), likely benign, and benign. This classification uses evidence about mutation type, location, protein effect, population frequency, and clinical data — directly paralleling your model\'s components."),
+        ("Genetic Counseling Communication", "Translating complex genetic information into language that patients can understand and act upon. Key challenges include explaining probabilistic risk (a mutation increases risk by X%, not guarantees disease), conveying uncertainty (VUS classifications), and avoiding unnecessary anxiety while ensuring informed decision-making."),
+        ("Personalized Medicine", "Using individual genetic information to guide medical decisions — including drug selection, dosing, screening schedules, and preventive interventions. Understanding mutation impact on protein function is the foundation of pharmacogenomics and precision medicine.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Tool uses specific model-based criteria (mutation type, location, protein structure change, functional impact) to classify variants, communicates uncertainty clearly, includes patient-friendly explanations, and accounts for variable penetrance"),
+        ("Proficient (3)", "Tool has reasonable classification criteria based on model principles and includes some patient communication guidance"),
+        ("Developing (2)", "Tool identifies some classification criteria but logic is incomplete or patient communication is overly technical"),
+        ("Beginning (1)", "Tool is incomplete, uses oversimplified binary classification, or does not connect to the mutation-protein-phenotype model")
+    ],
+    "support": [
+        "Provide a visual cascade diagram: DNA Change -> mRNA Change -> Amino Acid Change -> Protein Folding Change -> Function Change -> Trait Change, with branching paths for silent vs. missense vs. frameshift",
+        "Use a color-coded genetic code table where students can look up whether a specific nucleotide change is silent, missense, or nonsense",
+        "Sentence frames: \'This mutation is predicted to be ___ because the ___ change at ___ position in the protein will ___ protein folding, which will ___ function\'"
+    ],
+    "extensions": [
+        "Research the CCR5-delta32 mutation that provides resistance to HIV infection — how does a loss-of-function mutation in a surface receptor become beneficial, and what does this reveal about the context-dependency of mutation effects?",
+        "Investigate how cancer arises from accumulated mutations in proto-oncogenes and tumor suppressor genes — use your model to explain why cancer is a disease of multiple mutations rather than a single genetic change",
+        "Use protein structure databases (like RCSB PDB) to visualize the actual 3D structure of normal hemoglobin vs. the sickle cell variant — how does one amino acid change alter the protein\'s surface chemistry and cause polymerization?"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate the probability of a specific point mutation occurring in the hemoglobin gene given the human mutation rate (1.1 x 10^-8 per base per generation), the gene length (1,600 base pairs), and the global birth rate. How many babies per year are expected to carry a new HBB mutation?"),
+        ("ELA", "Write a patient-friendly explanation of a genetic test result that shows a \'variant of uncertain significance\' in a cancer-risk gene, balancing scientific accuracy with compassion and avoiding unnecessary alarm"),
+        ("History", "Research how the geographic distribution of the sickle cell allele maps onto historical malaria-endemic regions. How does this pattern provide evidence for natural selection and the heterozygote advantage hypothesis?")
+    ],
+    "misconceptions": [
+        ("All mutations are harmful", "The vast majority of mutations are neutral — they either occur in non-coding DNA, produce silent changes due to genetic code redundancy, or affect tolerant positions in proteins. Of the mutations that do affect protein function, many cause only minor changes that the organism can compensate for. Truly harmful mutations are a small minority, and beneficial mutations (though rare) are the essential raw material for evolution. Without mutations, there would be no genetic variation and no adaptive evolution.", "Ask: If mutations were always harmful, how would species ever adapt to changing environments? Evolution requires genetic variation, and mutations are the ultimate source. Have students estimate what fraction of their own ~100 new mutations are in coding regions (answer: about 1-2)."),
+        ("A single mutation directly causes a single trait change", "The relationship between genotype and phenotype is rarely one-to-one. Most traits are polygenic (influenced by many genes), and most genes are pleiotropic (affecting multiple traits). The sickle cell mutation affects hemoglobin but the downstream consequences include blood flow, oxygen delivery, organ function, malaria resistance, and bone development. Environmental factors, epigenetic modifications, and other genes all modify how a mutation expresses as a phenotype. The model simplifies this to make the mechanism clear, but reality involves multiple interacting layers.", "Use the sickle cell example: One mutation in one gene produces effects on blood cells, blood vessels, spleen, kidneys, lungs, bones, and malaria susceptibility. Draw a map of all these downstream effects from one amino acid change. Is this really a \'single trait change\'?"),
+        ("Mutations are random, so they can\'t produce organized adaptation", "Mutations ARE random with respect to whether they\'ll be helpful — the cell doesn\'t \'know\' what mutations would be beneficial. But natural selection is decidedly non-random. Selection consistently preserves beneficial mutations and removes harmful ones over generations. The combination of random mutation + non-random selection is what produces organized adaptation. Our model shows that even though most mutations are neutral or harmful, the rare beneficial ones — like CCR5-delta32 for HIV resistance or hemoglobin S for malaria resistance — can sweep through populations when they provide a survival advantage.", "Analogy: Imagine typing random letters on a keyboard (mutations). Most produce gibberish. But if a spell-checker deletes everything except real words (natural selection), eventually meaningful text emerges. The randomness of input doesn\'t prevent organized output when there\'s a selection filter.")
+    ]
+}
+
+ALL_LESSONS = [L01, L02, L03, L04, L05, L06, L07, L08, L09, L10]
