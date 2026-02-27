@@ -15,6 +15,7 @@ import os, re, sys
 # Add scripts dir to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+from lesson_data_G04 import ALL_LESSONS as G04_LESSONS
 from lesson_data_G06 import ALL_LESSONS as G06_LESSONS
 from lesson_data_G07 import ALL_LESSONS as G07_LESSONS
 from lesson_data_G08 import ALL_LESSONS as G08_LESSONS
@@ -55,6 +56,8 @@ def get_grade_info(lesson_id):
         return "7th", "7th Grade", "12-13 years old", "45-60 minutes"
     elif lesson_id.startswith("G08"):
         return "8th", "8th Grade", "13-14 years old", "50-70 minutes"
+    elif lesson_id.startswith("G04"):
+        return "4th", "4th Grade", "9-10 years old", "35-45 minutes"
     else:
         return "5th", "5th Grade", "10-11 years old", "40-45 minutes"
 
@@ -920,9 +923,11 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     # Determine which grades to generate
-    grades_to_gen = sys.argv[1:] if len(sys.argv) > 1 else ["G06", "G07", "G08", "G09L1", "G09L2", "G09L3", "G10L1", "G10L2", "G10L3"]
+    grades_to_gen = sys.argv[1:] if len(sys.argv) > 1 else ["G04", "G06", "G07", "G08", "G09L1", "G09L2", "G09L3", "G10L1", "G10L2", "G10L3"]
 
     all_lessons = []
+    if "G04" in grades_to_gen:
+        all_lessons.extend(G04_LESSONS)
     if "G06" in grades_to_gen:
         all_lessons.extend(G06_LESSONS)
     if "G07" in grades_to_gen:
@@ -943,7 +948,7 @@ def main():
         all_lessons.extend(G10L3_LESSONS)
 
     if not all_lessons:
-        print("No lessons to generate. Use: python generate_lesson_markdown.py [G06] [G07] [G08] [G09L1] [G09L2] [G09L3] [G10L1] [G10L2] [G10L3]")
+        print("No lessons to generate. Use: python generate_lesson_markdown.py [G04] [G06] [G07] [G08] [G09L1] [G09L2] [G09L3] [G10L1] [G10L2] [G10L3]")
         return
 
     print(f"Generating {len(all_lessons)} lesson markdown files...\n")
