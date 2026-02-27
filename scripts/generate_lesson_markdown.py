@@ -15,6 +15,22 @@ import os, re, sys
 # Add scripts dir to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+try:
+    from lesson_data_GK import ALL_LESSONS as GK_LESSONS
+except ImportError:
+    GK_LESSONS = []
+try:
+    from lesson_data_G01 import ALL_LESSONS as G01_LESSONS
+except ImportError:
+    G01_LESSONS = []
+try:
+    from lesson_data_G02 import ALL_LESSONS as G02_LESSONS
+except ImportError:
+    G02_LESSONS = []
+try:
+    from lesson_data_G03 import ALL_LESSONS as G03_LESSONS
+except ImportError:
+    G03_LESSONS = []
 from lesson_data_G04 import ALL_LESSONS as G04_LESSONS
 from lesson_data_G06 import ALL_LESSONS as G06_LESSONS
 from lesson_data_G07 import ALL_LESSONS as G07_LESSONS
@@ -76,6 +92,14 @@ def get_grade_info(lesson_id):
         return "8th", "8th Grade", "13-14 years old", "50-70 minutes"
     elif lesson_id.startswith("G04"):
         return "4th", "4th Grade", "9-10 years old", "35-45 minutes"
+    elif lesson_id.startswith("G03"):
+        return "3rd", "3rd Grade", "8-9 years old", "35-45 minutes"
+    elif lesson_id.startswith("G02"):
+        return "2nd", "2nd Grade", "7-8 years old", "30-40 minutes"
+    elif lesson_id.startswith("G01"):
+        return "1st", "1st Grade", "6-7 years old", "25-35 minutes"
+    elif lesson_id.startswith("GK"):
+        return "K", "Kindergarten", "5-6 years old", "25-35 minutes"
     else:
         return "5th", "5th Grade", "10-11 years old", "40-45 minutes"
 
@@ -480,7 +504,7 @@ def generate_markdown(L):
     add("3. WHAT'S MISSING?")
     add('   Your model is simple. Real systems involve more. Think about:')
     add('')
-    for name, desc in L["extend_components"]:
+    for name, desc in L.get("extend_components", []):
         add(f'   \u2022 {name} \u2014 {desc}')
     add('')
     add('\u2501' * 60)
@@ -494,7 +518,7 @@ def generate_markdown(L):
         add(f'   \u2022 {bg_title} \u2014 how does this connect to your model?')
     add('')
     add('\U0001f50d QUESTIONS TO INVESTIGATE:')
-    for refl in L["reflections"][:4]:
+    for refl in L.get("reflections", L.get("discoveries", []))[:4]:
         add(f'   \u2022 {refl}')
     add('')
     add('\u2501' * 60)
@@ -534,7 +558,7 @@ def generate_markdown(L):
     add(f"Your model has {len(L['components'])} components. Real systems involve")
     add("way more. Think about...")
     add('')
-    for name, desc in L["extend_components"]:
+    for name, desc in L.get("extend_components", []):
         add(f"{name}. {desc}")
         add("How would you model that?")
         add('')
@@ -680,11 +704,12 @@ def generate_markdown(L):
     for scenario, answer in L["sim_answers"]:
         add(f'\u2022 {scenario}: {answer}')
     add('')
-    add('Reflection Exemplars:')
-    for q, a in L["reflection_exemplars"]:
-        add(f'\u2022 Q: {q}')
-        add(f'  A: {a}')
-    add('')
+    if L.get("reflection_exemplars"):
+        add('Reflection Exemplars:')
+        for q, a in L["reflection_exemplars"]:
+            add(f'\u2022 Q: {q}')
+            add(f'  A: {a}')
+        add('')
 
     add('STEM CHALLENGE GUIDANCE:')
     add(f'Title: {L["stem_title"]}')
@@ -715,14 +740,16 @@ def generate_markdown(L):
         add(f'  \u2022 {subj}: {conn}')
     add('')
 
-    add('CAST ALIGNMENT:')
-    for item in L["cast_items"]:
-        add(f'\u2022 {item}')
-    add('')
-    add('CAST-Style Assessment Questions:')
-    for q_type, question in L["cast_questions"]:
-        add(f'\u2022 {q_type} {question}')
-    add('')
+    if L.get("cast_items"):
+        add('CAST ALIGNMENT:')
+        for item in L["cast_items"]:
+            add(f'\u2022 {item}')
+        add('')
+    if L.get("cast_questions"):
+        add('CAST-Style Assessment Questions:')
+        for q_type, question in L["cast_questions"]:
+            add(f'\u2022 {q_type} {question}')
+        add('')
 
     add('\u2501' * 60)
     add('```')
@@ -834,17 +861,18 @@ def generate_markdown(L):
     add('')
 
     # Reflection
-    add('\u2501' * 60)
-    add('REFLECTION')
-    add('\u2501' * 60)
-    add('')
-    for i, refl in enumerate(L["reflections"], 1):
-        add(f'{i}. {refl}')
+    if L.get("reflections"):
+        add('\u2501' * 60)
+        add('REFLECTION')
+        add('\u2501' * 60)
         add('')
-        add('   _________________________________________________________')
-        add('')
-        add('   _________________________________________________________')
-        add('')
+        for i, refl in enumerate(L["reflections"], 1):
+            add(f'{i}. {refl}')
+            add('')
+            add('   _________________________________________________________')
+            add('')
+            add('   _________________________________________________________')
+            add('')
 
     # Post-Assessment
     add('\u2501' * 60)
@@ -864,7 +892,8 @@ def generate_markdown(L):
     for dim_type, dim_title, _ in L["dimensions"]:
         add(f'   \u25a1 {dim_type}: {dim_title}')
     add('')
-    add(f'3. {L["reflections"][-1]}')
+    reflections = L.get("reflections", L.get("discoveries", ["What did you learn?"]))
+    add(f'3. {reflections[-1]}')
     add('')
     add('   _________________________________________________________')
     add('')
@@ -910,10 +939,14 @@ def generate_markdown(L):
     add('## Resources', '')
     add('| Resource | Link |')
     add('|----------|------|')
-    grade_folder = f'grade-{L["id"][1:3]}'
-    add(f'| Activity Pack (DOCX) | [materials/{grade_folder}/{L["id"]}/{L["id"]}-Student-Activity-Pack.docx] |')
-    add(f'| Teacher Guide (DOCX) | [materials/{grade_folder}/{L["id"]}/{L["id"]}-Teachers-Guide.docx] |')
-    add(f'| PPT Presentation | [materials/{grade_folder}/{L["id"]}/{L["id"]}-Student-Presentation.pptx] |')
+    lid = L["id"]
+    if lid.startswith("GK"):
+        grade_folder = 'grade-K'
+    else:
+        grade_folder = f'grade-{lid[1:3]}'
+    add(f'| Activity Pack (DOCX) | [materials/{grade_folder}/{lid}/{lid}-Student-Activity-Pack.docx] |')
+    add(f'| Teacher Guide (DOCX) | [materials/{grade_folder}/{lid}/{lid}-Teachers-Guide.docx] |')
+    add(f'| PPT Presentation | [materials/{grade_folder}/{lid}/{lid}-Student-Presentation.pptx] |')
     add('| Platform Link | [ModelIt lesson link] |')
     add('')
     add('---', '')
@@ -941,10 +974,11 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     # Determine which grades to generate
-    all_grade_keys = ["G04", "G06", "G07", "G08", "G09L1", "G09L2", "G09L3", "G10L1", "G10L2", "G10L3", "G11L1", "G11L2", "G11L3", "G12L1", "G12L2", "G12L3"]
+    all_grade_keys = ["GK", "G01", "G02", "G03", "G04", "G06", "G07", "G08", "G09L1", "G09L2", "G09L3", "G10L1", "G10L2", "G10L3", "G11L1", "G11L2", "G11L3", "G12L1", "G12L2", "G12L3"]
     grades_to_gen = sys.argv[1:] if len(sys.argv) > 1 else all_grade_keys
 
     grade_map = {
+        "GK": GK_LESSONS, "G01": G01_LESSONS, "G02": G02_LESSONS, "G03": G03_LESSONS,
         "G04": G04_LESSONS, "G06": G06_LESSONS, "G07": G07_LESSONS, "G08": G08_LESSONS,
         "G09L1": G09L1_LESSONS, "G09L2": G09L2_LESSONS, "G09L3": G09L3_LESSONS,
         "G10L1": G10L1_LESSONS, "G10L2": G10L2_LESSONS, "G10L3": G10L3_LESSONS,
@@ -979,6 +1013,8 @@ def main():
         elif lid.startswith("G09L"):
             level_num = lid[4]
             grade_folder = os.path.join('grade-09', f'level-{level_num}')
+        elif lid.startswith("GK"):
+            grade_folder = 'grade-K'
         else:
             grade_folder = f'grade-{lid[1:3]}'
         grade_dir = os.path.join(out_dir, grade_folder)
