@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAST Science Analytics | The Right Path Educational Consulting</title>
+<script src="https://cdn.jsdelivr.net/npm/apache-echarts@5.5.0/dist/echarts.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #111827;
+    --bg-card: #1a2236;
+    --bg-card-hover: #1f2a42;
+    --border: #2a3654;
+    --text-primary: #f0f4ff;
+    --text-secondary: #8b97b8;
+    --text-muted: #5a6685;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
+    --accent-rose: #f43f5e;
+    --accent-cyan: #06b6d4;
+    --accent-indigo: #6366f1;
+    --gradient-blue: linear-gradient(135deg, #3b82f6, #6366f1);
+    --gradient-emerald: linear-gradient(135deg, #10b981, #06b6d4);
+    --gradient-amber: linear-gradient(135deg, #f59e0b, #f97316);
+    --gradient-rose: linear-gradient(135deg, #f43f5e, #ec4899);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.4);
+    --shadow-glow-blue: 0 0 30px rgba(59,130,246,0.15);
+    --shadow-glow-purple: 0 0 30px rgba(139,92,246,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background grid */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .dashboard {
+    position: relative;
+    z-index: 1;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding: 24px 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-glow-blue);
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-mark {
+    width: 56px;
+    height: 56px;
+    background: var(--gradient-blue);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    box-shadow: 0 4px 20px rgba(59,130,246,0.3);
+  }
+
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #f0f4ff, #8b97b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header .subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .live-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(16,185,129,0.1);
+    border: 1px solid rgba(16,185,129,0.3);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-emerald);
+  }
+
+  .live-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-emerald);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+    50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+  }
+
+  .date-display {
+    padding: 8px 16px;
+    background: rgba(99,102,241,0.1);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent-indigo);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* KPI Row */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .kpi-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .kpi-card:hover {
+    transform: translateY(-2px);
+    background: var(--bg-card-hover);
+    border-color: var(--accent-blue);
+    box-shadow: var(--shadow-glow-blue);
+  }
+
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  .kpi-card:nth-child(1)::before { background: var(--gradient-blue); }
+  .kpi-card:nth-child(2)::before { background: var(--gradient-emerald); }
+  .kpi-card:nth-child(3)::before { background: var(--gradient-amber); }
+  .kpi-card:nth-child(4)::before { background: var(--gradient-rose); }
+
+  .kpi-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .kpi-value {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .kpi-card:nth-child(1) .kpi-value { color: var(--accent-blue); }
+  .kpi-card:nth-child(2) .kpi-value { color: var(--accent-emerald); }
+  .kpi-card:nth-child(3) .kpi-value { color: var(--accent-amber); }
+  .kpi-card:nth-child(4) .kpi-value { color: var(--accent-rose); }
+
+  .kpi-change {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+
+  .kpi-change.up {
+    color: var(--accent-emerald);
+    background: rgba(16,185,129,0.1);
+  }
+
+  .kpi-change.down {
+    color: var(--accent-rose);
+    background: rgba(244,63,94,0.1);
+  }
+
+  /* Chart Grid */
+  .chart-grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .grid-2col { grid-template-columns: 1fr 1fr; }
+  .grid-3col { grid-template-columns: 2fr 1fr 1fr; }
+  .grid-2-1 { grid-template-columns: 2fr 1fr; }
+  .grid-1-2 { grid-template-columns: 1fr 2fr; }
+
+  .chart-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .chart-card:hover {
+    border-color: rgba(99,102,241,0.3);
+    box-shadow: var(--shadow-glow-purple);
+  }
+
+  .chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .chart-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  .chart-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .badge-bar { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+  .badge-line { background: rgba(16,185,129,0.15); color: var(--accent-emerald); }
+  .badge-radar { background: rgba(139,92,246,0.15); color: var(--accent-purple); }
+  .badge-treemap { background: rgba(245,158,11,0.15); color: var(--accent-amber); }
+  .badge-heatmap { background: rgba(244,63,94,0.15); color: var(--accent-rose); }
+  .badge-scatter { background: rgba(6,182,212,0.15); color: var(--accent-cyan); }
+  .badge-gauge { background: rgba(99,102,241,0.15); color: var(--accent-indigo); }
+  .badge-pie { background: rgba(236,72,153,0.15); color: #ec4899; }
+  .badge-sankey { background: rgba(245,158,11,0.15); color: var(--accent-amber); }
+  .badge-funnel { background: rgba(6,182,212,0.15); color: var(--accent-cyan); }
+
+  .chart-container {
+    width: 100%;
+    height: 320px;
+  }
+
+  .chart-container.tall { height: 400px; }
+  .chart-container.short { height: 260px; }
+
+  /* Design Elements Legend */
+  .design-legend {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+  }
+
+  .design-legend h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .design-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .design-item {
+    padding: 16px;
+    background: rgba(59,130,246,0.05);
+    border: 1px solid rgba(59,130,246,0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .design-item:hover {
+    background: rgba(59,130,246,0.1);
+    border-color: rgba(59,130,246,0.3);
+    transform: translateY(-1px);
+  }
+
+  .design-item h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 6px;
+  }
+
+  .design-item p {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .footer a {
+    color: var(--accent-blue);
+    text-decoration: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .grid-2col, .grid-3col, .grid-2-1, .grid-1-2 { grid-template-columns: 1fr; }
+    .design-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .dashboard { padding: 12px; }
+    .kpi-row { grid-template-columns: 1fr; }
+    .header { flex-direction: column; gap: 16px; text-align: center; }
+    .header-right { justify-content: center; }
+    .design-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo-mark">CS</div>
+      <div>
+        <h1>CAST Science Analytics Dashboard</h1>
+        <div class="subtitle">The Right Path Educational Consulting | Curriculum Data Visualization</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="live-badge"><div class="live-dot"></div>LIVE DATA</div>
+      <div class="date-display" id="dateDisplay"></div>
+    </div>
+  </div>
+
+  <!-- KPI Cards -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">Total Lessons Created</div>
+      <div class="kpi-value" id="kpi1">0</div>
+      <div class="kpi-change up">+30 this week</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Grade Levels Covered</div>
+      <div class="kpi-value" id="kpi2">0</div>
+      <div class="kpi-change up">G04-G12 complete</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">NGSS Standards Aligned</div>
+      <div class="kpi-value" id="kpi3">0</div>
+      <div class="kpi-change up">100% coverage</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Materials Generated</div>
+      <div class="kpi-value" id="kpi4">0</div>
+      <div class="kpi-change up">.pptx + .docx + images</div>
+    </div>
+  </div>
+
+  <!-- Design Elements Legend -->
+  <div class="design-legend">
+    <h2>Design Dimensions Available for Data Visualization</h2>
+    <div class="design-grid">
+      <div class="design-item">
+        <h3>10+ Chart Types</h3>
+        <p>Bar, Line, Area, Scatter, Pie, Donut, Radar, Treemap, Heatmap, Gauge, Sankey, Funnel, Candlestick, Boxplot, Parallel</p>
+      </div>
+      <div class="design-item">
+        <h3>Interactivity</h3>
+        <p>Hover tooltips, click-to-drill, zoom/pan, brush selection, legend toggling, data filtering, linked views</p>
+      </div>
+      <div class="design-item">
+        <h3>Color Systems</h3>
+        <p>Custom palettes, gradients, opacity control, sequential/diverging/categorical scales, dark/light themes</p>
+      </div>
+      <div class="design-item">
+        <h3>Animation</h3>
+        <p>Entry animations, transition morphing, real-time streaming, staggered reveals, easing curves</p>
+      </div>
+      <div class="design-item">
+        <h3>Layout</h3>
+        <p>Responsive grid, dashboard panels, split views, overlay panels, full-screen charts, print-ready export</p>
+      </div>
+      <div class="design-item">
+        <h3>Typography</h3>
+        <p>Variable fonts, size hierarchy, weight contrast, monospace data labels, custom axis formatting</p>
+      </div>
+      <div class="design-item">
+        <h3>Data Labels</h3>
+        <p>Callouts, annotations, trend lines, reference bands, min/max markers, threshold indicators</p>
+      </div>
+      <div class="design-item">
+        <h3>Real-Time Data</h3>
+        <p>WebSocket feeds, polling intervals, live API connections (NASA, USGS, Weather, EPA), streaming updates</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 1: Bar + Line -->
+  <div class="chart-grid grid-2col">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Lessons by Grade Level</span>
+        <span class="chart-badge badge-bar">BAR</span>
+      </div>
+      <div class="chart-container" id="chartBar"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Curriculum Build Progress (Weekly)</span>
+        <span class="chart-badge badge-line">LINE + AREA</span>
+      </div>
+      <div class="chart-container" id="chartLine"></div>
+    </div>
+  </div>
+
+  <!-- Row 2: Radar + Treemap -->
+  <div class="chart-grid grid-2col">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">NGSS Science & Engineering Practices Coverage</span>
+        <span class="chart-badge badge-radar">RADAR</span>
+      </div>
+      <div class="chart-container" id="chartRadar"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Content Distribution by Domain</span>
+        <span class="chart-badge badge-treemap">TREEMAP</span>
+      </div>
+      <div class="chart-container" id="chartTreemap"></div>
+    </div>
+  </div>
+
+  <!-- Row 3: Heatmap full width -->
+  <div class="chart-grid">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Student Inquiry Activity by Hour & Day (Simulated Engagement Data)</span>
+        <span class="chart-badge badge-heatmap">HEATMAP</span>
+      </div>
+      <div class="chart-container tall" id="chartHeatmap"></div>
+    </div>
+  </div>
+
+  <!-- Row 4: Scatter + Gauges -->
+  <div class="chart-grid grid-2-1">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Lesson Complexity vs. Inquiry Depth</span>
+        <span class="chart-badge badge-scatter">SCATTER</span>
+      </div>
+      <div class="chart-container" id="chartScatter"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Curriculum Completion</span>
+        <span class="chart-badge badge-gauge">GAUGE</span>
+      </div>
+      <div class="chart-container" id="chartGauge"></div>
+    </div>
+  </div>
+
+  <!-- Row 5: Sankey + Pie -->
+  <div class="chart-grid grid-2col">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Student Learning Pathway Flow</span>
+        <span class="chart-badge badge-sankey">SANKEY</span>
+      </div>
+      <div class="chart-container tall" id="chartSankey"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Material Types Generated</span>
+        <span class="chart-badge badge-pie">PIE + DONUT</span>
+      </div>
+      <div class="chart-container tall" id="chartPie"></div>
+    </div>
+  </div>
+
+  <!-- Row 6: Funnel -->
+  <div class="chart-grid grid-2col">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Inquiry Cycle Funnel (5E Model)</span>
+        <span class="chart-badge badge-funnel">FUNNEL</span>
+      </div>
+      <div class="chart-container" id="chartFunnel"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">API Data Sources Connected</span>
+        <span class="chart-badge badge-bar">HORIZONTAL BAR</span>
+      </div>
+      <div class="chart-container" id="chartHBar"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Built with Apache ECharts | No Tableau License Required | Fully Open Source<br>
+    <a href="https://github.com/alexandriasworld1234-source/cast-science-resources">The Right Path Educational Consulting</a> | CAST Science Resources
+  </div>
+
+</div>
+
+<script>
+// Date display
+document.getElementById('dateDisplay').textContent = new Date().toLocaleDateString('en-US', {
+  weekday: 'short', month: 'short', day: 'numeric', year: 'numeric',
+  hour: '2-digit', minute: '2-digit'
+});
+
+// Animated KPI counters
+function animateKPI(id, target, suffix = '') {
+  const el = document.getElementById(id);
+  let current = 0;
+  const step = Math.ceil(target / 40);
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) { current = target; clearInterval(timer); }
+    el.textContent = current.toLocaleString() + suffix;
+  }, 30);
+}
+setTimeout(() => animateKPI('kpi1', 180), 200);
+setTimeout(() => animateKPI('kpi2', 9), 400);
+setTimeout(() => animateKPI('kpi3', 47), 600);
+setTimeout(() => animateKPI('kpi4', 540), 800);
+
+// Theme
+const theme = {
+  bg: 'transparent',
+  textColor: '#8b97b8',
+  axisLine: '#2a3654',
+  splitLine: '#1e293b',
+};
+
+function initChart(id) {
+  return echarts.init(document.getElementById(id), null, { renderer: 'canvas' });
+}
+
+// ─── 1. BAR CHART: Lessons by Grade ───
+const chartBar = initChart('chartBar');
+chartBar.setOption({
+  tooltip: { trigger: 'axis', backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  grid: { left: 40, right: 20, top: 20, bottom: 40 },
+  xAxis: {
+    type: 'category',
+    data: ['G04', 'G05', 'G06', 'G07', 'G08', 'G09', 'G10', 'G11', 'G12'],
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor, fontWeight: 600, fontSize: 12 }
+  },
+  yAxis: {
+    type: 'value',
+    splitLine: { lineStyle: { color: theme.splitLine }},
+    axisLabel: { color: theme.textColor }
+  },
+  series: [{
+    type: 'bar',
+    data: [10, 10, 10, 10, 10, 30, 30, 30, 30],
+    itemStyle: {
+      borderRadius: [6, 6, 0, 0],
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        { offset: 0, color: '#6366f1' },
+        { offset: 1, color: '#3b82f6' }
+      ])
+    },
+    emphasis: {
+      itemStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          { offset: 0, color: '#818cf8' },
+          { offset: 1, color: '#60a5fa' }
+        ])
+      }
+    },
+    animationDelay: (idx) => idx * 80,
+    label: {
+      show: true, position: 'top', color: '#8b97b8', fontWeight: 600, fontSize: 12
+    }
+  }],
+  animationEasing: 'elasticOut'
+});
+
+// ─── 2. LINE + AREA CHART ───
+const chartLine = initChart('chartLine');
+chartLine.setOption({
+  tooltip: { trigger: 'axis', backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  legend: { data: ['Lessons', 'Materials', 'Images'], textStyle: { color: theme.textColor }, top: 0 },
+  grid: { left: 40, right: 20, top: 40, bottom: 40 },
+  xAxis: {
+    type: 'category',
+    data: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor }
+  },
+  yAxis: {
+    type: 'value',
+    splitLine: { lineStyle: { color: theme.splitLine }},
+    axisLabel: { color: theme.textColor }
+  },
+  series: [
+    {
+      name: 'Lessons', type: 'line', smooth: true,
+      data: [10, 20, 30, 40, 60, 80, 100, 130, 160, 180],
+      lineStyle: { width: 3, color: '#3b82f6' },
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          { offset: 0, color: 'rgba(59,130,246,0.3)' },
+          { offset: 1, color: 'rgba(59,130,246,0)' }
+        ])
+      },
+      itemStyle: { color: '#3b82f6' }
+    },
+    {
+      name: 'Materials', type: 'line', smooth: true,
+      data: [30, 60, 90, 120, 180, 240, 300, 390, 480, 540],
+      lineStyle: { width: 3, color: '#10b981' },
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          { offset: 0, color: 'rgba(16,185,129,0.2)' },
+          { offset: 1, color: 'rgba(16,185,129,0)' }
+        ])
+      },
+      itemStyle: { color: '#10b981' }
+    },
+    {
+      name: 'Images', type: 'line', smooth: true,
+      data: [50, 100, 150, 200, 300, 400, 500, 650, 800, 900],
+      lineStyle: { width: 3, color: '#f59e0b' },
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          { offset: 0, color: 'rgba(245,158,11,0.15)' },
+          { offset: 1, color: 'rgba(245,158,11,0)' }
+        ])
+      },
+      itemStyle: { color: '#f59e0b' }
+    }
+  ]
+});
+
+// ─── 3. RADAR: NGSS SEP Coverage ───
+const chartRadar = initChart('chartRadar');
+chartRadar.setOption({
+  tooltip: { backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  radar: {
+    indicator: [
+      { name: 'Asking\nQuestions', max: 100 },
+      { name: 'Developing\nModels', max: 100 },
+      { name: 'Planning\nInvestigations', max: 100 },
+      { name: 'Analyzing\nData', max: 100 },
+      { name: 'Using\nMath', max: 100 },
+      { name: 'Constructing\nExplanations', max: 100 },
+      { name: 'Engaging in\nArgument', max: 100 },
+      { name: 'Obtaining\nInformation', max: 100 }
+    ],
+    axisName: { color: '#8b97b8', fontSize: 10 },
+    splitArea: { areaStyle: { color: ['rgba(59,130,246,0.02)', 'rgba(59,130,246,0.04)'] }},
+    axisLine: { lineStyle: { color: '#2a3654' }},
+    splitLine: { lineStyle: { color: '#2a3654' }}
+  },
+  series: [{
+    type: 'radar',
+    data: [
+      {
+        value: [95, 100, 88, 92, 78, 96, 85, 90],
+        name: 'CAST Coverage',
+        lineStyle: { width: 2, color: '#6366f1' },
+        areaStyle: { color: 'rgba(99,102,241,0.2)' },
+        itemStyle: { color: '#6366f1' }
+      },
+      {
+        value: [70, 60, 65, 55, 50, 68, 45, 62],
+        name: 'Traditional Textbook',
+        lineStyle: { width: 2, color: '#f43f5e', type: 'dashed' },
+        areaStyle: { color: 'rgba(244,63,94,0.08)' },
+        itemStyle: { color: '#f43f5e' }
+      }
+    ]
+  }],
+  legend: {
+    data: ['CAST Coverage', 'Traditional Textbook'],
+    textStyle: { color: theme.textColor },
+    bottom: 0
+  }
+});
+
+// ─── 4. TREEMAP: Content Domains ───
+const chartTreemap = initChart('chartTreemap');
+chartTreemap.setOption({
+  tooltip: { backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  series: [{
+    type: 'treemap',
+    roam: false,
+    breadcrumb: { show: false },
+    itemStyle: { borderColor: '#0a0e1a', borderWidth: 3, gapWidth: 2 },
+    label: { color: '#f0f4ff', fontSize: 13, fontWeight: 700 },
+    levels: [{
+      itemStyle: { borderColor: '#0a0e1a', borderWidth: 4, gapWidth: 4 }
+    }],
+    data: [
+      { name: 'Physical\nScience', value: 45, itemStyle: { color: '#3b82f6' }},
+      { name: 'Life\nScience', value: 35, itemStyle: { color: '#10b981' }},
+      { name: 'Earth &\nSpace', value: 40, itemStyle: { color: '#8b5cf6' }},
+      { name: 'Engineering\nDesign', value: 30, itemStyle: { color: '#f59e0b' }},
+      { name: 'Environmental\nScience', value: 20, itemStyle: { color: '#06b6d4' }},
+      { name: 'Computational\nThinking', value: 10, itemStyle: { color: '#f43f5e' }}
+    ]
+  }]
+});
+
+// ─── 5. HEATMAP: Engagement by Hour/Day ───
+const chartHeatmap = initChart('chartHeatmap');
+const hours = ['8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm'];
+const days = ['Monday','Tuesday','Wednesday','Thursday','Friday'];
+const heatData = [];
+for (let d = 0; d < 5; d++) {
+  for (let h = 0; h < 9; h++) {
+    const base = (h >= 2 && h <= 5) ? 70 : 30;
+    const dayBoost = (d === 1 || d === 3) ? 15 : 0;
+    heatData.push([h, d, Math.min(100, base + dayBoost + Math.floor(Math.random() * 25))]);
+  }
+}
+chartHeatmap.setOption({
+  tooltip: {
+    position: 'top',
+    backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' },
+    formatter: (p) => `${days[p.value[1]]} ${hours[p.value[0]]}<br/>Engagement: <b>${p.value[2]}%</b>`
+  },
+  grid: { left: 100, right: 40, top: 20, bottom: 60 },
+  xAxis: {
+    type: 'category', data: hours, splitArea: { show: true, areaStyle: { color: ['rgba(59,130,246,0.02)', 'transparent'] }},
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor, fontWeight: 600 }
+  },
+  yAxis: {
+    type: 'category', data: days,
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor, fontWeight: 600 }
+  },
+  visualMap: {
+    min: 0, max: 100, calculable: true, orient: 'horizontal', left: 'center', bottom: 10,
+    textStyle: { color: theme.textColor },
+    inRange: {
+      color: ['#1e293b', '#1e3a5f', '#1d4ed8', '#3b82f6', '#60a5fa', '#93c5fd']
+    }
+  },
+  series: [{
+    type: 'heatmap', data: heatData,
+    label: { show: true, color: '#f0f4ff', fontSize: 12, fontWeight: 600,
+      formatter: (p) => p.value[2] + '%' },
+    itemStyle: { borderColor: '#0a0e1a', borderWidth: 3, borderRadius: 4 },
+    emphasis: { itemStyle: { shadowBlur: 10, shadowColor: 'rgba(59,130,246,0.5)' }}
+  }]
+});
+
+// ─── 6. SCATTER: Complexity vs Inquiry Depth ───
+const chartScatter = initChart('chartScatter');
+const grades = ['G04','G05','G06','G07','G08','G09','G10','G11','G12'];
+const gradeColors = ['#f43f5e','#f59e0b','#10b981','#06b6d4','#3b82f6','#6366f1','#8b5cf6','#a855f7','#ec4899'];
+const scatterData = [];
+grades.forEach((g, gi) => {
+  const count = gi < 5 ? 10 : 30;
+  for (let i = 0; i < count; i++) {
+    const complexity = 2 + gi * 1.1 + Math.random() * 2;
+    const inquiry = 3 + gi * 0.8 + Math.random() * 2;
+    scatterData.push({ value: [complexity, inquiry], grade: g, color: gradeColors[gi] });
+  }
+});
+chartScatter.setOption({
+  tooltip: {
+    backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' },
+    formatter: (p) => `${p.data.grade}<br/>Complexity: ${p.value[0].toFixed(1)}<br/>Inquiry Depth: ${p.value[1].toFixed(1)}`
+  },
+  grid: { left: 50, right: 20, top: 20, bottom: 40 },
+  xAxis: {
+    name: 'Component Complexity', nameLocation: 'center', nameGap: 30,
+    nameTextStyle: { color: theme.textColor, fontWeight: 600 },
+    splitLine: { lineStyle: { color: theme.splitLine }},
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor }
+  },
+  yAxis: {
+    name: 'Inquiry Depth', nameLocation: 'center', nameGap: 35,
+    nameTextStyle: { color: theme.textColor, fontWeight: 600 },
+    splitLine: { lineStyle: { color: theme.splitLine }},
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor }
+  },
+  series: [{
+    type: 'scatter', symbolSize: 12,
+    data: scatterData,
+    itemStyle: { color: (p) => p.data.color, borderColor: '#0a0e1a', borderWidth: 1, opacity: 0.85 },
+    emphasis: { itemStyle: { shadowBlur: 10, shadowColor: 'rgba(99,102,241,0.5)', opacity: 1 }}
+  }]
+});
+
+// ─── 7. GAUGE: Completion ───
+const chartGauge = initChart('chartGauge');
+chartGauge.setOption({
+  series: [{
+    type: 'gauge',
+    startAngle: 200, endAngle: -20,
+    min: 0, max: 100,
+    progress: { show: true, width: 20,
+      itemStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+          { offset: 0, color: '#3b82f6' },
+          { offset: 1, color: '#10b981' }
+        ])
+      }
+    },
+    axisLine: { lineStyle: { width: 20, color: [[1, '#1e293b']] }},
+    axisTick: { show: false },
+    splitLine: { distance: -20, length: 20, lineStyle: { color: '#2a3654', width: 2 }},
+    axisLabel: { distance: -30, color: theme.textColor, fontSize: 11 },
+    pointer: { show: false },
+    anchor: { show: false },
+    title: { show: true, offsetCenter: [0, '40%'], fontSize: 14, color: theme.textColor, fontWeight: 600 },
+    detail: {
+      valueAnimation: true, fontSize: 48, fontWeight: 900, offsetCenter: [0, '-5%'],
+      formatter: '{value}%',
+      color: '#f0f4ff'
+    },
+    data: [{ value: 82, name: 'G04-G12 Complete' }]
+  }]
+});
+
+// ─── 8. SANKEY: Learning Pathway ───
+const chartSankey = initChart('chartSankey');
+chartSankey.setOption({
+  tooltip: { trigger: 'item', backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  series: [{
+    type: 'sankey',
+    layoutIterations: 32,
+    nodeAlign: 'justify',
+    emphasis: { focus: 'adjacency' },
+    lineStyle: { color: 'gradient', curveness: 0.5, opacity: 0.3 },
+    itemStyle: { borderWidth: 0 },
+    label: { color: '#f0f4ff', fontSize: 11, fontWeight: 600 },
+    data: [
+      { name: 'Engage', itemStyle: { color: '#3b82f6' }},
+      { name: 'Explore', itemStyle: { color: '#06b6d4' }},
+      { name: 'Explain', itemStyle: { color: '#10b981' }},
+      { name: 'Elaborate', itemStyle: { color: '#f59e0b' }},
+      { name: 'Evaluate', itemStyle: { color: '#8b5cf6' }},
+      { name: 'Phenomenon Hook', itemStyle: { color: '#60a5fa' }},
+      { name: 'Data Collection', itemStyle: { color: '#34d399' }},
+      { name: 'Model Building', itemStyle: { color: '#fbbf24' }},
+      { name: 'Simulation', itemStyle: { color: '#a78bfa' }},
+      { name: 'Peer Review', itemStyle: { color: '#f472b6' }},
+      { name: 'Research Extend', itemStyle: { color: '#fb923c' }},
+      { name: 'Reflection', itemStyle: { color: '#2dd4bf' }},
+      { name: 'STEM Challenge', itemStyle: { color: '#e879f9' }}
+    ],
+    links: [
+      { source: 'Engage', target: 'Phenomenon Hook', value: 100 },
+      { source: 'Phenomenon Hook', target: 'Explore', value: 95 },
+      { source: 'Explore', target: 'Data Collection', value: 90 },
+      { source: 'Data Collection', target: 'Explain', value: 85 },
+      { source: 'Explain', target: 'Model Building', value: 80 },
+      { source: 'Model Building', target: 'Elaborate', value: 75 },
+      { source: 'Elaborate', target: 'Simulation', value: 50 },
+      { source: 'Elaborate', target: 'Research Extend', value: 25 },
+      { source: 'Simulation', target: 'Evaluate', value: 45 },
+      { source: 'Research Extend', target: 'Evaluate', value: 25 },
+      { source: 'Evaluate', target: 'Peer Review', value: 40 },
+      { source: 'Evaluate', target: 'Reflection', value: 20 },
+      { source: 'Peer Review', target: 'STEM Challenge', value: 35 },
+      { source: 'Reflection', target: 'STEM Challenge', value: 15 },
+      { source: 'Phenomenon Hook', target: 'Data Collection', value: 5 }
+    ]
+  }]
+});
+
+// ─── 9. PIE / DONUT ───
+const chartPie = initChart('chartPie');
+chartPie.setOption({
+  tooltip: { backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  legend: { orient: 'vertical', left: 10, top: 'center', textStyle: { color: theme.textColor, fontSize: 12 }},
+  series: [
+    {
+      type: 'pie', radius: ['45%', '70%'], center: ['60%', '50%'],
+      avoidLabelOverlap: true,
+      itemStyle: { borderRadius: 8, borderColor: '#1a2236', borderWidth: 3 },
+      label: { show: true, color: '#8b97b8', fontSize: 12, formatter: '{d}%' },
+      emphasis: {
+        label: { fontSize: 16, fontWeight: 700, color: '#f0f4ff' },
+        itemStyle: { shadowBlur: 20, shadowColor: 'rgba(0,0,0,0.5)' }
+      },
+      data: [
+        { value: 180, name: 'Presentations (.pptx)', itemStyle: { color: '#3b82f6' }},
+        { value: 180, name: 'Activity Packs (.docx)', itemStyle: { color: '#10b981' }},
+        { value: 180, name: "Teacher's Guides (.docx)", itemStyle: { color: '#8b5cf6' }},
+        { value: 900, name: 'Images (.png)', itemStyle: { color: '#f59e0b' }},
+        { value: 180, name: 'Lesson Plans (.md)', itemStyle: { color: '#06b6d4' }}
+      }
+    }
+  ]
+});
+
+// ─── 10. FUNNEL: 5E Inquiry ───
+const chartFunnel = initChart('chartFunnel');
+chartFunnel.setOption({
+  tooltip: { trigger: 'item', backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  series: [{
+    type: 'funnel',
+    left: '10%', top: 20, bottom: 20, width: '80%',
+    min: 0, max: 100,
+    minSize: '20%', maxSize: '100%',
+    sort: 'descending', gap: 4,
+    label: { show: true, position: 'inside', color: '#f0f4ff', fontSize: 14, fontWeight: 700 },
+    itemStyle: { borderColor: '#0a0e1a', borderWidth: 2 },
+    emphasis: { label: { fontSize: 18 }},
+    data: [
+      { value: 100, name: 'Engage (Phenomenon)', itemStyle: { color: '#3b82f6' }},
+      { value: 85, name: 'Explore (Investigate)', itemStyle: { color: '#06b6d4' }},
+      { value: 70, name: 'Explain (Model)', itemStyle: { color: '#10b981' }},
+      { value: 55, name: 'Elaborate (Apply)', itemStyle: { color: '#f59e0b' }},
+      { value: 40, name: 'Evaluate (Reflect)', itemStyle: { color: '#8b5cf6' }}
+    ]
+  }]
+});
+
+// ─── 11. HORIZONTAL BAR: API Sources ───
+const chartHBar = initChart('chartHBar');
+chartHBar.setOption({
+  tooltip: { trigger: 'axis', backgroundColor: '#1a2236', borderColor: '#2a3654', textStyle: { color: '#f0f4ff' }},
+  grid: { left: 140, right: 30, top: 10, bottom: 30 },
+  xAxis: {
+    type: 'value',
+    splitLine: { lineStyle: { color: theme.splitLine }},
+    axisLabel: { color: theme.textColor }
+  },
+  yAxis: {
+    type: 'category',
+    data: ['NASA', 'USGS', 'EPA', 'Weather', 'USDA', 'NPS', 'xeno-canto', 'Zoo Animals', 'TheMealDB', 'QuickChart'],
+    axisLine: { lineStyle: { color: theme.axisLine }},
+    axisLabel: { color: theme.textColor, fontWeight: 600, fontSize: 11 }
+  },
+  series: [{
+    type: 'bar',
+    data: [
+      { value: 48, itemStyle: { color: '#3b82f6' }},
+      { value: 35, itemStyle: { color: '#f43f5e' }},
+      { value: 28, itemStyle: { color: '#10b981' }},
+      { value: 42, itemStyle: { color: '#06b6d4' }},
+      { value: 22, itemStyle: { color: '#f59e0b' }},
+      { value: 18, itemStyle: { color: '#8b5cf6' }},
+      { value: 15, itemStyle: { color: '#ec4899' }},
+      { value: 20, itemStyle: { color: '#a855f7' }},
+      { value: 12, itemStyle: { color: '#fb923c' }},
+      { value: 30, itemStyle: { color: '#2dd4bf' }}
+    ],
+    itemStyle: { borderRadius: [0, 6, 6, 0] },
+    label: { show: true, position: 'right', color: '#8b97b8', fontWeight: 600,
+      formatter: '{c} lessons' }
+  }]
+});
+
+// Responsive resize
+window.addEventListener('resize', () => {
+  [chartBar, chartLine, chartRadar, chartTreemap, chartHeatmap,
+   chartScatter, chartGauge, chartSankey, chartPie, chartFunnel, chartHBar
+  ].forEach(c => c.resize());
+});
+</script>
+
+</body>
+</html>
