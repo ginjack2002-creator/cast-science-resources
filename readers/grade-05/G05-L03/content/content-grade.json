@@ -1,0 +1,90 @@
+{
+  "story": {
+    "title": "Dr. Okafor's Energy Puzzle",
+    "text": "Hi, I’m Dr. Amara Okafor, and I’m a Bioenergy Systems Engineer. That’s a long title, but it just means I figure out the best way to turn plants into fuel for cars and planes! My work is like solving a giant energy puzzle. It all starts with the sun.<br><br>At my lab, we grow tiny plants called algae in large, clear tanks. These algae are amazing <strong>producers</strong>—organisms that make their own food. They do this through a process called <strong>photosynthesis</strong>, where they use sunlight to turn carbon dioxide and water into sugar. That sugar is stored energy.<br><br>My daily job involves building computer models to track how energy moves. I look at factors like Sunlight Intensity. Is it a bright, sunny day or a cloudy one? More light means more energy for the algae. I also track the Temperature, because just like you, algae have a temperature range where they are happiest and most productive. My model shows that when sunlight and temperature increase, the Photosynthesis Rate goes up. This means the algae are making more sugar, faster.<br><br>This is where it gets exciting. A higher rate of photosynthesis means there is more Energy Available. For an animal, or a <strong>consumer</strong>, this means more food to eat. For me, it means more algae biomass to turn into clean fuel! This whole process is a type of <strong>energy transfer</strong>—moving energy from the sun, to a plant, and then to a source we can use.<br><br>My model is good, but it’s not perfect. I’m always thinking about what else to add. What about the amount of water the algae have, or the concentration of CO2 in the air? Every new piece makes my model better at predicting how we can power our future with the sun.",
+    "think_abouts": [
+      "Why would an engineer who makes fuel need to know so much about plants?",
+      "What other things, besides sunlight and temperature, might affect how fast Dr. Okafor's algae grow?"
+    ],
+    "go_deeper": "Dr. Okafor uses algae to make fuel. How is this similar to how your body gets energy from eating a plant like a carrot?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The process plants use to convert sunlight, water, and carbon dioxide into sugar (food).",
+      "use_sentence": "My job is to maximize photosynthesis in special algae to create clean energy.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "Producer",
+      "definition": "An organism, like a plant, that makes its own food using energy from the sun.",
+      "use_sentence": "Algae, like any plant, is a producer because it makes its own food from sunlight.",
+      "phonetic": "pruh-DOO-ser",
+      "cognate": "productor"
+    },
+    {
+      "term": "Consumer",
+      "definition": "An organism that gets energy by eating other organisms.",
+      "use_sentence": "When you eat a salad, you are a consumer getting energy that started in a plant.",
+      "phonetic": "kun-SOO-mer",
+      "cognate": "consumidor"
+    },
+    {
+      "term": "Energy Transfer",
+      "definition": "The movement of energy from one place or organism to another.",
+      "use_sentence": "The energy transfer from the sun to the algae and then into biofuel is what I study.",
+      "phonetic": "EN-er-jee TRANS-fer",
+      "cognate": "transferencia de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Okafor models how sunlight, temperature, and photosynthesis are connected. What other connections or components could you add to a model of a farm or a forest?",
+      "frame": null
+    },
+    {
+      "prompt": "How is the energy you get from eating an apple an example of energy that originally came from the sun?",
+      "frame": null
+    },
+    {
+      "prompt": "Dr. Okafor’s job is a Bioenergy Systems Engineer. What kind of problems do you think she helps solve for the world?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Tracing Energy from the Sun",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Sunlight Intensity"
+      },
+      {
+        "label": "Effect",
+        "content": "Higher Photosynthesis Rate"
+      },
+      {
+        "label": "Cause",
+        "content": "Higher Photosynthesis Rate"
+      },
+      {
+        "label": "Effect",
+        "content": "More Energy Available (for food or fuel)"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

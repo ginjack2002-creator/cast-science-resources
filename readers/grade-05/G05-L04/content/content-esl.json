@@ -1,0 +1,123 @@
+{
+  "story": {
+    "title": "Dr. Morales and the Mountain Reservoirs",
+    "text": "My name is Dr. Rafael Morales. I am a scientist called a hydrologist. I study how water moves on Earth. My job helps communities know how much water they will have for the year. Millions of people depend on my work.<br><br>I start by looking at <strong>precipitation</strong>. I measure how much snow falls in the mountains. This mountain snow is a giant frozen <strong>reservoir</strong>. It stores water for the dry summer months. Then, I track the <strong>temperature</strong>. As the weather gets warmer, the snow melts. This melted snow becomes the <strong>freshwater</strong> that flows into rivers.<br><br>But higher temperatures also increase <strong>evaporation</strong>. This means more water turns into vapor and goes into the air. When evaporation is high, less freshwater is available for communities. I use a computer model to see these connections. My model helps me predict if there will be enough water. But I always ask, what else is important? For example, how much water do farms need? Thinking about new parts helps me make my model better.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "hydrologist",
+        "definition": "a scientist who studies water"
+      },
+      {
+        "term": "model",
+        "definition": "a simple way to show something complex"
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Morales measure in the mountains?",
+      "What happens when the temperature gets warmer?"
+    ],
+    "word_bank": [
+      "precipitation",
+      "reservoir",
+      "temperature",
+      "freshwater",
+      "evaporation",
+      "model"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Precipitation",
+        "spanish": "Precipitación"
+      },
+      {
+        "english": "Evaporation",
+        "spanish": "Evaporación"
+      },
+      {
+        "english": "Temperature",
+        "spanish": "Temperatura"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      },
+      {
+        "english": "Reservoir",
+        "spanish": "Reservorio"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Precipitation",
+      "definition": "Water that falls from the sky, like rain or snow.",
+      "use_sentence": "Winter precipitation often falls as snow in the mountains.",
+      "phonetic": "/prəˌsɪpɪˈteɪʃən/",
+      "cognate": "Precipitación"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process of water turning into a gas called water vapor.",
+      "use_sentence": "Heat from the sun causes evaporation from the lake's surface.",
+      "phonetic": "/ɪˌvæpəˈreɪʃən/",
+      "cognate": "Evaporación"
+    },
+    {
+      "term": "Freshwater",
+      "definition": "Water that is not salty and is safe for people to use and drink.",
+      "use_sentence": "Rivers and lakes are important sources of freshwater.",
+      "phonetic": "/ˈfrɛʃˌwɔtər/",
+      "cognate": null
+    },
+    {
+      "term": "Reservoir",
+      "definition": "A place where a large amount of water is stored.",
+      "use_sentence": "The dam created a large reservoir to hold water for the city.",
+      "phonetic": "/ˈrɛzərˌvwɑr/",
+      "cognate": "Reservorio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Morales mentioned that farms use a lot of water. What is another thing in your community that uses a lot of freshwater?",
+      "frame": "In my community, ___ uses a lot of freshwater because ___."
+    },
+    {
+      "prompt": "Besides temperature, what other weather condition might affect how much freshwater is available?",
+      "frame": "I think ___ could affect the freshwater because it ___."
+    }
+  ],
+  "organizer": {
+    "title": "Water Connections",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "Higher temperature"
+      },
+      {
+        "label": "Effect",
+        "content": "Higher evaporation rate"
+      },
+      {
+        "label": "Cause",
+        "content": "Higher evaporation rate"
+      },
+      {
+        "label": "Effect",
+        "content": "Less freshwater is available"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that water ___.",
+    "learned": "From the story, I learned that scientists like Dr. Morales ___.",
+    "wonder": "Now I wonder how ___ affects our water."
+  }
+}

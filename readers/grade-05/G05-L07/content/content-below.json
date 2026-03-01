@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Osei and the Forest's Helpers",
+    "text": "Hi, I'm Dr. Jabari Osei. I am a scientist who studies the soil in the rainforests of Panama. I want to know how trees share things with each other. They use a secret network under our feet!<br><br>This network is made of tiny fungal threads called <strong>hyphae</strong>. It connects the roots of different trees, like an underground internet. The trees and fungi have a special partnership. This helpful relationship is called <strong>mutualism</strong>. The trees give the fungi sugar. The fungi help the trees get <strong>nutrients</strong> from the soil.<br><br>To understand this, I build models on my computer. A model helps me see what makes the network strong. I measure two main things in the forest. First, I check the 'Leaf Litter'. This is the layer of dead leaves on the ground. It is food for the fungi. Second, I measure the 'Soil Moisture'. Fungi need water to live and grow.<br><br>When there is plenty of food and water, the 'Fungal Network Activity' goes up. An active network can do more work. This leads to more 'Nutrient Transfer Between Trees'. This means the trees can share more with their neighbors.<br><br>But I still have questions. Does an older forest network share better than a young one? What happens if there are many different kinds of fungi? My work helps us learn how to protect these amazing forest helpers.",
+    "think_abouts": [],
+    "go_deeper": "What is one new thing you could add to a model of the forest floor?",
+    "margin_defs": [
+      {
+        "term": "hyphae",
+        "definition": "Tiny threads that make up a fungus."
+      },
+      {
+        "term": "mutualism",
+        "definition": "A partnership where two living things help each other."
+      },
+      {
+        "term": "nutrients",
+        "definition": "Food that living things need to grow."
+      }
+    ],
+    "check_prompts": [
+      "What two things help the fungal network grow?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Mycorrhizal",
+      "definition": "A type of fungus that works together with plant roots.",
+      "use_sentence": "The mycorrhizal network helps the trees get water.",
+      "phonetic": "my-ko-RISE-ul",
+      "cognate": null
+    },
+    {
+      "term": "Mutualism",
+      "definition": "A relationship where both living things get something good.",
+      "use_sentence": "The bee and the flower have a relationship of mutualism.",
+      "phonetic": "MYOO-choo-ul-izm",
+      "cognate": "mutualismo"
+    },
+    {
+      "term": "Hyphae",
+      "definition": "The very small, thin threads that make up a fungus.",
+      "use_sentence": "The hyphae spread out under the ground to find food.",
+      "phonetic": "HI-fee",
+      "cognate": null
+    },
+    {
+      "term": "Nutrient",
+      "definition": "A substance that plants and animals need to live and grow.",
+      "use_sentence": "Plants get a key nutrient called phosphorus from the soil.",
+      "phonetic": "NOO-tree-ent",
+      "cognate": "nutriente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Osei called the fungal network the 'forest's helpers.' What do you think he meant by that?",
+      "frame": "I think he meant that the fungi ___."
+    },
+    {
+      "prompt": "If you were a scientist like Dr. Osei, what question would you want to ask about the underground network?",
+      "frame": "I would want to ask ___."
+    },
+    {
+      "prompt": "How does Dr. Osei's model help him understand the forest, even when he is at his computer?",
+      "frame": "His model helps him see how ___."
+    }
+  ],
+  "organizer": {
+    "title": "How the Forest Network Works",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Leaf Litter / More Soil Moisture"
+      },
+      {
+        "label": "Effect",
+        "content": "More Fungal Network Activity"
+      },
+      {
+        "label": "Cause",
+        "content": "More Fungal Network Activity"
+      },
+      {
+        "label": "Effect",
+        "content": "More Nutrient Transfer Between Trees"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

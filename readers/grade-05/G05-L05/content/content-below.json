@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Nair's Great Matter Count",
+    "text": "My name is Dr. Priya Nair. I am a scientist who works with matter. My job is to make sure we don't lose any of it when we make new things.<br><br>Think of it like being a detective for tiny atoms! Everything is made of matter. Matter has <strong>mass</strong>, which is how much stuff is in it. We have a rule in science called <strong>conservation</strong>. It means matter can change, but it can’t just disappear.<br><br>Here is how I model it:<br>1. We start with a solid material. We measure its <strong>Starting Mass</strong> very carefully.<br>2. We add heat. The <strong>Air Temperature</strong> around it goes up.<br>3. The solid melts into a liquid. This is a <strong>physical change</strong>. The <strong>Ice Amount</strong> (our solid) goes down. The <strong>Liquid Water Amount</strong> goes up.<br><br>The total <strong>mass</strong> at the start and the end is exactly the same! The matter just changed its <strong>state of matter</strong>. Sometimes, a change makes a gas we can’t see. My job is to track that invisible gas, too. Every atom counts!",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "track",
+        "definition": "To follow or find something."
+      },
+      {
+        "term": "material",
+        "definition": "The matter that something is made from."
+      }
+    ],
+    "check_prompts": [
+      "What happens to the amount of solid when the temperature goes up?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Conservation",
+      "definition": "A science rule that says matter can't be made or lost, only changed.",
+      "use_sentence": "Because of conservation, the total mass of the water stayed the same when it froze.",
+      "phonetic": "kon-sur-VAY-shun",
+      "cognate": "Conservación"
+    },
+    {
+      "term": "State of Matter",
+      "definition": "The form that matter is in, like a solid, a liquid, or a gas.",
+      "use_sentence": "Water's state of matter can change from liquid to solid ice.",
+      "phonetic": "stayt uv MAT-er",
+      "cognate": null
+    },
+    {
+      "term": "Physical Change",
+      "definition": "A change in how matter looks or feels, but not what it is made of.",
+      "use_sentence": "Melting an ice cube is a physical change.",
+      "phonetic": "FIZ-i-kuhl chaynj",
+      "cognate": null
+    },
+    {
+      "term": "Mass",
+      "definition": "The amount of stuff, or matter, that is in an object.",
+      "use_sentence": "A big rock has more mass than a small pebble.",
+      "phonetic": "mass",
+      "cognate": "Masa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nair mentioned that some changes create a gas. How could you prove that a gas has mass, even if you can't see it?",
+      "frame": "To prove a gas has mass, I could try to..."
+    },
+    {
+      "prompt": "Why is it important for a scientist like Dr. Nair to track all the matter and make sure none is wasted?",
+      "frame": "It is important to not waste matter because..."
+    }
+  ],
+  "organizer": {
+    "title": "Tracking Changes in Matter",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "Air Temperature increases."
+      },
+      {
+        "label": "Effect on Solid",
+        "content": ""
+      },
+      {
+        "label": "Effect on Liquid",
+        "content": ""
+      },
+      {
+        "label": "Effect on Total Mass",
+        "content": "The total mass..."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "story": {
+    "title": "Dr. Keisha Williams: Wildfire Detective",
+    "text": "My name is Dr. Keisha Williams. I am a Fire Behavior Analyst. I work for the U.S. Forest Service. My job is to predict where wildfires will go. I use science to keep people safe. I look at Earth's systems to make my predictions.<br><br>Every day, I check four main things.<br>1. I look at <strong>Rainfall</strong>. This is part of the hydrosphere, or Earth’s water. Less rain means plants get very dry.<br>2. I check the <strong>Dry Vegetation</strong>. This is the biosphere, or all living things. Dry plants are fuel for a fire.<br>3. I study the <strong>Wind</strong>. The wind is part of the atmosphere, or Earth’s air. Wind pushes fire and makes it grow.<br>4. I use this information to model <strong>Fire Spread</strong>. This helps firefighters know where to go.<br><br>My computer model is like a puzzle. I put in the pieces: wind, rain, and fuel. The model shows me a map of the fire's future path. But there is more to the puzzle. I also look at how steep the hills are. Fire moves much faster uphill. I also have to think about flying embers. Hot embers can start new fires far away. My job is to see the whole picture.",
+    "think_abouts": [
+      "Dr. Williams called her model a 'puzzle'. What did she mean?",
+      "Why is it important for firefighters to know where a fire might spread?"
+    ],
+    "go_deeper": "What is one new part you could add to a fire model? Why would it be important?",
+    "margin_defs": [
+      {
+        "term": "predict",
+        "definition": "to say what will happen in the future"
+      },
+      {
+        "term": "fuel",
+        "definition": "material like wood or plants that can burn"
+      },
+      {
+        "term": "model",
+        "definition": "a computer program that shows how something works"
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Williams's job?",
+      "What are two things Dr. Williams checks every day?",
+      "What is something else Dr. Williams adds to her model?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "The solid Earth—rocks, mountains, soil, and landforms",
+      "use_sentence": "Fire moves faster uphill on the steep parts of the geosphere.",
+      "phonetic": "JEE-oh-sfeer",
+      "cognate": "Geosfera"
+    },
+    {
+      "term": "Biosphere",
+      "definition": "All living things on Earth—plants, animals, fungi, bacteria",
+      "use_sentence": "The dry plants of the biosphere become fuel for fires.",
+      "phonetic": "BYE-oh-sfeer",
+      "cognate": "Biosfera"
+    },
+    {
+      "term": "Hydrosphere",
+      "definition": "All water on Earth—oceans, rivers, groundwater, ice",
+      "use_sentence": "Less rain from the hydrosphere makes the land drier.",
+      "phonetic": "HY-droh-sfeer",
+      "cognate": "Hidrosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The blanket of gases surrounding Earth—our air",
+      "use_sentence": "Wind in the atmosphere pushes the fire across the land.",
+      "phonetic": "AT-moh-sfeer",
+      "cognate": "Atmósfera"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Williams looks at four Earth systems. How does the hydrosphere (water) affect the biosphere (plants) in her model?",
+      "frame": "The hydrosphere affects the biosphere because when there is less rain..."
+    },
+    {
+      "prompt": "Besides wind and dry plants, what is another thing that can make a fire spread faster?",
+      "frame": "Another thing that makes fire spread faster is..."
+    },
+    {
+      "prompt": "Why is a job like Dr. Williams's important for communities?",
+      "frame": "A Fire Behavior Analyst is important because they help..."
+    }
+  ],
+  "organizer": {
+    "title": "What Makes Wildfires Spread?",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "Less <strong>Rainfall</strong>"
+      },
+      {
+        "label": "Effect",
+        "content": "More <strong>Dry Vegetation</strong> (Fuel)"
+      },
+      {
+        "label": "Cause",
+        "content": "Strong <strong>Wind</strong>"
+      },
+      {
+        "label": "Effect",
+        "content": "Faster <strong>Fire Spread</strong>"
+      },
+      {
+        "label": "Cause",
+        "content": "Steep Hills (Slope)"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

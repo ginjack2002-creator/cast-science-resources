@@ -1,0 +1,79 @@
+{
+  "story": {
+    "title": "Dr. Aisha Patel: Cosmic Detective",
+    "text": "My screen glows with data from a star hundreds of light-years away. I’m Dr. Aisha Patel, and at NASA's Goddard Space Flight Center, my job is to find and understand planets orbiting other stars. I’m a cosmic detective, and my most important clue is ancient starlight.<br><br>When I analyze a star, I start with its <strong>apparent brightness</strong>, which is simply how bright it appears to us here on Earth. But that single fact can be misleading. A star might look dim because it has a low <strong>luminosity</strong>—the actual amount of energy it produces—or it could be a supergiant that’s just incredibly far away. It’s a puzzle I have to solve.<br><br>To crack the case, I need to figure out the star’s distance. Distance changes everything. The farther a star is, the longer its light takes to travel through space to our telescopes. The light I’m analyzing today from the star Kepler-186 left 500 years ago! That means I’m seeing the star as it was 500 years in the past. We measure these vast distances in <strong>light-years</strong>. Distance also affects brightness. As light travels, it spreads out, so a more distant star appears fainter. This is a fundamental rule called the <strong>inverse square law</strong>.<br><br>My computer models are designed to handle all these variables. They even account for other factors, like whether interstellar dust is blocking some of the light. By building a complete profile of the star, I can then accurately measure the size and temperature of any planets that might be circling it. Every photon of old light tells a story, helping me piece together the puzzle of new worlds.",
+    "think_abouts": [
+      "If two stars have the same actual luminosity, why might one appear much brighter than the other from Earth?",
+      "Dr. Patel calls herself a 'cosmic detective.' What clues does she use and what mysteries is she trying to solve?"
+    ],
+    "go_deeper": "Dr. Patel mentions that interstellar dust can make a star look dimmer. How would this extra variable make her job of calculating a star's true luminosity and distance more challenging?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Light-Year",
+      "definition": "The distance that light can travel in one full year, about 6 trillion miles.",
+      "use_sentence": "The nearest star system to us, Alpha Centauri, is over four light-years away.",
+      "phonetic": "/laɪt jɪər/",
+      "cognate": "año luz"
+    },
+    {
+      "term": "Luminosity",
+      "definition": "The true, total amount of light and energy that a star actually gives off.",
+      "use_sentence": "A giant blue star has a much higher luminosity than our smaller, yellow Sun.",
+      "phonetic": "/luː.mɪˈnɒs.ə.ti/",
+      "cognate": "luminosidad"
+    },
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star looks to an observer from their specific location, like from Earth.",
+      "use_sentence": "Because the star is so far away, its apparent brightness is very low, even though it's huge.",
+      "phonetic": "/əˈpær.ənt ˈbraɪt.nəs/",
+      "cognate": "brillo aparente"
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "A scientific rule explaining how light spreads out and appears dimmer as it gets farther from its source.",
+      "use_sentence": "The inverse square law helps scientists calculate a star's distance based on changes in its brightness.",
+      "phonetic": "/ɪnˈvɜːs skweər lɔː/",
+      "cognate": "ley del inverso del cuadrado"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel says she is 'looking at the past' when she observes distant stars. What does she mean by that, and how does it relate to the speed of light?",
+      "frame": null
+    },
+    {
+      "prompt": "Imagine you discover two new stars. Star A looks very bright. Star B looks very dim. What two key pieces of information would you need to figure out which star is *actually* more powerful?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Star Facts vs. Star Appearance",
+    "type": "t-chart",
+    "boxes": [],
+    "left_header": "What the Star is ACTUALLY Like (Intrinsic Properties)",
+    "right_header": "How the Star APPEARS From Earth (Observed Properties)",
+    "left_items": [
+      "Actual Luminosity",
+      "Distance from Earth",
+      "Temperature (Color)",
+      "Age"
+    ],
+    "right_items": [
+      "Apparent Brightness",
+      "Light Travel Time (The light is old)",
+      "",
+      ""
+    ]
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

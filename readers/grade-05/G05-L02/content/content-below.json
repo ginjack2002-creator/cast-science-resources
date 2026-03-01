@@ -1,0 +1,108 @@
+{
+  "story": {
+    "title": "Dr. Chen and Nature's Cleanup Crew",
+    "text": "Hi, I'm Dr. Marcus Chen. I'm an engineer who helps clean up our planet. My cleanup crew is amazing, but you can't see them! They are tiny helpers called <strong>decomposers</strong>, like bacteria and fungi. They are nature's best recyclers.<br><br>Sometimes, messy spills happen and harmful stuff gets into the soil. My job is to figure out the best way for decomposers to clean it up. The harmful stuff is made of dead <strong>organic matter</strong>. For my decomposer crew, this is their food source.<br><br>I use a computer model before I start a project. Think of it like a video game that predicts the future.<br>1. First, I tell the model about the <strong>soil moisture</strong>. My decomposer crew gets thirsty and needs water to work hard.<br>2. Then, my model predicts the <strong>decomposer activity</strong>. More water and more food means a busier crew.<br>3. Finally, the model shows the <strong>nutrient release</strong>. As my crew breaks down the bad stuff, they release good <strong>nutrients</strong>. This makes the soil healthy again for plants. It’s all part of Earth's <strong>matter cycle</strong>.<br><br>My model also needs to know other things. What is the temperature? Decomposers slow down in the cold. What is the material? A leaf decomposes way faster than plastic. My job is to give nature's recyclers the best chance to do their work.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Decomposers",
+        "definition": "Tiny living things that eat dead stuff."
+      },
+      {
+        "term": "Organic matter",
+        "definition": "Stuff that was once alive."
+      },
+      {
+        "term": "Nutrients",
+        "definition": "Food that helps plants grow."
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Chen's job?",
+      "What two things do decomposers need to be active?",
+      "What else does Dr. Chen's model need to know about?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Decomposer",
+      "definition": "An organism that breaks down dead organic material.",
+      "use_sentence": "Worms and mushrooms are decomposers that help recycle leaves in a forest.",
+      "phonetic": "dee-kum-POH-zer",
+      "cognate": "descomponedor"
+    },
+    {
+      "term": "Nutrient",
+      "definition": "A substance that living things need to live and grow.",
+      "use_sentence": "Plants pull nutrients from the soil through their roots.",
+      "phonetic": "NOO-tree-ent",
+      "cognate": "nutriente"
+    },
+    {
+      "term": "Organic Matter",
+      "definition": "Any material that comes from something that was once alive.",
+      "use_sentence": "When a tree falls, it becomes organic matter for decomposers to eat.",
+      "phonetic": "or-GAN-ik MAT-er",
+      "cognate": "materia orgánica"
+    },
+    {
+      "term": "Matter Cycle",
+      "definition": "The path that matter takes as it moves through an ecosystem.",
+      "use_sentence": "The matter cycle ensures that nutrients from dead plants are returned to the soil for new plants.",
+      "phonetic": "MAT-er SY-kul",
+      "cognate": "ciclo de la materia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen mentioned that temperature matters for his cleanup crew. What is another condition that might make decomposers work faster or slower?",
+      "frame": "I think decomposers might work faster if ___."
+    },
+    {
+      "prompt": "Why is the work of decomposers so important for keeping Earth from filling up with dead stuff?",
+      "frame": "Decomposers are important because they ___."
+    }
+  ],
+  "organizer": {
+    "title": "What Helps Decomposers Work?",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More dead organic matter (food)"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      },
+      {
+        "label": "Cause",
+        "content": "More soil moisture (water)"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      },
+      {
+        "label": "Cause",
+        "content": "More decomposer activity"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

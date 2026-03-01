@@ -1,0 +1,117 @@
+{
+  "story": {
+    "title": "Tracking Every Atom with Dr. Nair",
+    "text": "Hello! I am Dr. Priya Nair. I am a materials scientist at 3M. My job is to be a detective for matter. I track every single atom to make sure nothing gets lost when we make new things. This important rule is called the law of <strong>Conservation</strong> of matter.<br><br>Imagine we have an ice cube in a completely sealed jar. The first thing I measure is its total <strong>mass</strong>. This is our <strong>Starting Mass</strong>, and it is very important. It tells us how much 'stuff' is in our system.<br><br>Next, I check the <strong>Air Temperature</strong> around the jar. If the temperature gets warmer, the ice begins to melt. This is a <strong>Physical Change</strong>. The water is not disappearing. It is only changing its <strong>State of Matter</strong> from a solid to a liquid.<br><br>Inside the jar, the <strong>Ice Amount</strong> gets smaller. At the same time, the <strong>Liquid Water Amount</strong> gets bigger. But guess what? The total <strong>mass</strong> inside the jar never changes! It stays exactly the same.<br><br>My work is just like this, but with different materials. I have to think about other things too, like gases we can’t see. Does making a gas mean mass is lost? No! We just have to measure it, too.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "sealed",
+        "definition": "closed so nothing can get in or out"
+      },
+      {
+        "term": "atom",
+        "definition": "a very tiny piece of matter"
+      }
+    ],
+    "check_prompts": [
+      "What happens to the total mass when ice melts in a sealed jar?"
+    ],
+    "word_bank": [
+      "mass",
+      "conservation",
+      "physical change",
+      "state of matter",
+      "temperature"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      },
+      {
+        "english": "mass",
+        "spanish": "masa"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "liquid",
+        "spanish": "líquido"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Conservation",
+      "definition": "The rule that matter is never lost or made, only changed.",
+      "use_sentence": "The law of conservation means the total mass always stays the same.",
+      "phonetic": "kon-ser-VEY-shuhn",
+      "cognate": "Conservación"
+    },
+    {
+      "term": "State of Matter",
+      "definition": "The form of something, like a solid, liquid, or gas.",
+      "use_sentence": "Ice and water are different states of matter.",
+      "phonetic": "steyt uhv MAT-er",
+      "cognate": "Estado de la materia"
+    },
+    {
+      "term": "Physical Change",
+      "definition": "A change in how something looks or feels, but not what it is.",
+      "use_sentence": "Melting an ice cube is a physical change.",
+      "phonetic": "FIZ-i-kuhl cheynj",
+      "cognate": "Cambio físico"
+    },
+    {
+      "term": "Mass",
+      "definition": "How much 'stuff' or matter is in an object.",
+      "use_sentence": "The mass of the water is the same whether it is ice or liquid.",
+      "phonetic": "mas",
+      "cognate": "Masa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nair tracks gases to make sure no mass is lost. What is an example of a gas you have seen or felt?",
+      "frame": "An example of a gas I have seen or felt is ___."
+    },
+    {
+      "prompt": "Why is it important for a company like 3M to not waste any matter when making products?",
+      "frame": "It is important to not waste matter because ___."
+    }
+  ],
+  "organizer": {
+    "title": "Cause and Effect: Melting Ice",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "The Air Temperature increases."
+      },
+      {
+        "label": "Effect on Ice",
+        "content": ""
+      },
+      {
+        "label": "Effect on Liquid Water",
+        "content": ""
+      },
+      {
+        "label": "Effect on Total Mass",
+        "content": ""
+      }
+    ]
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

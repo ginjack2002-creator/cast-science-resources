@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Al-Rashid's Virus-Busting Surfaces",
+    "text": "Hi, I’m Dr. Fatima Al-Rashid, and I design smart surfaces that fight germs all by themselves. At the Johns Hopkins Applied Physics Lab, I’m an Antimicrobial Surfaces Engineer. It’s a big title, but my job is simple: I make materials for places like hospitals and schools that can destroy a dangerous <strong>pathogen</strong>—a germ that causes disease—on contact.<br><br>The science I use is the same science that makes washing your hands with soap and water so powerful. In my computer models, I test how different factors change the outcome. For example, I adjust the <strong>Soap Concentration</strong>, which is how much of my active ingredient is on the surface. I also have to account for if <strong>Water is Present</strong>, because just like regular soap, my coatings often need a little moisture to get activated and spread out.<br><br>When both of these factors are high, my model shows a big increase in <strong>Soap Effectiveness</strong>. This is where the magic happens. Many viruses are protected by a fatty outer layer called a <strong>lipid</strong> <strong>membrane</strong>. My coatings, and the soap you use, contain special molecules that are <strong>amphiphilic</strong>. This means one end of the molecule loves water, and the other end loves fat. The fat-loving end drills into the virus's lipid shield, breaking it apart and destroying the virus completely.<br><br>My goal is always to see the <strong>Virus Survival Rate</strong> drop to nearly zero. The more effective my surface is, the fewer viruses survive. My work gets even more detailed when I add factors like <strong>Scrubbing Friction</strong> or temperature, but the basic idea is the same: use chemistry to pop that virus like a balloon!",
+    "think_abouts": [
+      "Why do you think the fat-loving end of a soap molecule is the key to destroying a virus's membrane?",
+      "Dr. Al-Rashid models how her surfaces work. How is that similar to the model you are building in class?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Lipid",
+      "definition": "A molecule of fat or oil. Viruses often have an outer coating made of lipids.",
+      "use_sentence": "The soap molecule attached to the lipid layer of the virus.",
+      "phonetic": "LIP-id",
+      "cognate": "lípido"
+    },
+    {
+      "term": "Membrane",
+      "definition": "A thin, protective outer layer that surrounds a cell or a virus.",
+      "use_sentence": "Once the virus's membrane was broken, it could no longer cause harm.",
+      "phonetic": "MEM-brain",
+      "cognate": "membrana"
+    },
+    {
+      "term": "Amphiphilic",
+      "definition": "Describes a molecule that is attracted to both water and fats/oils, like soap.",
+      "use_sentence": "The amphiphilic nature of soap allows it to wash away both dirt and germs.",
+      "phonetic": "am-fuh-FILL-ick",
+      "cognate": null
+    },
+    {
+      "term": "Pathogen",
+      "definition": "A bacterium, virus, or other microorganism that can cause disease.",
+      "use_sentence": "Washing your hands is a great way to remove a harmful pathogen.",
+      "phonetic": "PATH-oh-jen",
+      "cognate": "patógeno"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Al-Rashid designs germ-fighting surfaces for hospitals and schools. Where else would a self-cleaning surface be very useful? Why?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that factors like 'Scrubbing Friction' can be added to the model. What other factors do you think could affect how well soap works?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Cause and Effect: How Soap Works",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More soap is used (Higher Soap Concentration)"
+      },
+      {
+        "label": "Effect",
+        "content": "Soap Effectiveness increases"
+      },
+      {
+        "label": "Cause",
+        "content": "High Soap Effectiveness"
+      },
+      {
+        "label": "Effect",
+        "content": "The virus's lipid membrane is broken apart"
+      },
+      {
+        "label": "Cause",
+        "content": "The virus's lipid membrane is broken"
+      },
+      {
+        "label": "Effect",
+        "content": "Virus Survival Rate decreases"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "story": {
+    "title": "Dr. Okafor's Energy Equation",
+    "text": "My title is Bioenergy Systems Engineer, which sounds complicated, but my goal is simple: to figure out the most efficient way to turn sunlight into fuel. My work at the National Renewable Energy Laboratory starts with the same fundamental question you’re exploring: How does energy from the sun become usable energy? For an ecosystem, that energy transfer powers a <strong>consumer</strong> that eats a <strong>producer</strong>. For me, it’s about optimizing that initial energy capture to create biofuels.<br><br>Every day, I work with complex computer models—digital ecosystems where I can manipulate variables to understand their impact. My model treats the whole process like a giant equation. I can ask it, 'What happens to the overall <strong>Photosynthesis</strong> Rate if we increase the Sunlight Intensity, or if the average Temperature rises by a few degrees?' The simulation then calculates the outcome, showing me how much chemical energy the plants store. This output represents the Energy Available to Animals in a food web, or in my case, the potential energy we can refine into fuel.<br><br>However, a simple model is just the beginning. The real world is infinitely more detailed. My team and I are constantly adding new layers of complexity to make our simulations more accurate. For instance, we have to account for Water Availability. A plant can be bathed in sunlight, but without water, it closes its stomata and photosynthesis grinds to a halt. We also investigate how increasing CO2 Concentration in a controlled environment can significantly boost the growth of our energy crops. We even model factors like Chlorophyll Health, because a plant stressed by nutrient deficiencies or disease is an inefficient solar collector. My job is to understand and optimize this entire system, tracing the path of <strong>energy transfer</strong> from a distant star into a fuel that can power a city bus. The system you’re modeling in class is the same one I work with every day—the one that powers our entire planet.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Okafor mentioned her lab manipulates CO2 levels to boost plant growth for biofuels. Why might this strategy be beneficial for creating fuel but a potential problem if it were to happen on a global scale?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The complex process by which green plants use sunlight, water, and carbon dioxide to create their own food (sugar) and release oxygen.",
+      "use_sentence": "Without water, a plant closes its stomata and photosynthesis grinds to a halt.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "Producer",
+      "definition": "An organism, such as a plant, that is able to produce its own food from inorganic substances using light or chemical energy.",
+      "use_sentence": "For an ecosystem, that energy transfer powers a consumer that eats a producer.",
+      "phonetic": "pruh-DOO-ser",
+      "cognate": "productor"
+    },
+    {
+      "term": "Consumer",
+      "definition": "An organism that derives its energy by feeding on other organisms.",
+      "use_sentence": "For an ecosystem, that energy transfer powers a consumer that eats a producer.",
+      "phonetic": "kuhn-SOO-mer",
+      "cognate": "consumidor"
+    },
+    {
+      "term": "Energy Transfer",
+      "definition": "The movement of energy from one system or organism to another.",
+      "use_sentence": "My job is to trace the path of energy transfer from a distant star into a fuel.",
+      "phonetic": "EN-er-jee TRANS-fer",
+      "cognate": "transferencia de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Okafor uses computer models to test variables before trying them in the real world. What are the advantages of modeling a complex system like an ecosystem before building a large-scale biofuel farm?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that a sick plant is an 'inefficient solar collector.' What factors, other than those mentioned in the text, could negatively affect a plant's health and its ability to perform photosynthesis?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Modeling Energy Flow",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "External Factor (Cause)",
+        "content": "Increased Sunlight Intensity"
+      },
+      {
+        "label": "Effect on Plant (Photosynthesis Rate)",
+        "content": ""
+      },
+      {
+        "label": "Effect on System (Energy Available)",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

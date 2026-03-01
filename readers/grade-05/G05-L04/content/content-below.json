@@ -1,0 +1,107 @@
+{
+  "story": {
+    "title": "Dr. Morales and the Mountain Water Bank",
+    "text": "My name is Dr. Rafael Morales. I am a hydrologist, a scientist who studies water. My job is to track the journey of water that starts as ice and snow on tall mountains. Think of me as a water detective for big communities.<br><br>My work starts in the winter. I look at the amount of <strong>precipitation</strong>, which is mostly snow in the mountains. This deep snowpack is like a frozen <strong>reservoir</strong> for water. It stores fresh water that cities and farms will need during the hot, dry summer. My team and I use special tools to measure how deep this snow is.<br><br>In the spring, the <strong>temperature</strong> becomes a key part of the story. As the air gets warmer, the snow begins to melt. This meltwater becomes the <strong>freshwater</strong> that flows into rivers and lakes. My computer models help predict how quickly the snow will melt based on the temperature.<br><br>But there's another factor: <strong>evaporation</strong>. High temperatures can also make surface water disappear into the air as vapor. This means less water is available for people to use. My job is to put all these pieces—precipitation, temperature, and evaporation—together. My models help communities plan how to use their water wisely, especially when supplies are low.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Hydrologist",
+        "definition": "A scientist who studies water and how it moves."
+      },
+      {
+        "term": "Snowpack",
+        "definition": "A large area of snow that builds up over winter."
+      },
+      {
+        "term": "Downstream",
+        "definition": "The direction that a river or stream flows."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Morales call the mountain snowpack?",
+      "What two things does a rise in temperature cause in the story?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Precipitation",
+      "definition": "Water that falls from the clouds as rain, snow, or hail.",
+      "use_sentence": "We had a lot of precipitation last night in the form of heavy rain.",
+      "phonetic": "pre-sip-i-TAY-shun",
+      "cognate": "precipitación"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process of water turning into a gas called water vapor.",
+      "use_sentence": "The puddle on the sidewalk disappeared because of evaporation.",
+      "phonetic": "e-vap-or-AY-shun",
+      "cognate": "evaporación"
+    },
+    {
+      "term": "Freshwater",
+      "definition": "Water that is not salty and is safe for people to use and drink.",
+      "use_sentence": "Rivers, lakes, and glaciers are all sources of freshwater.",
+      "phonetic": "FRESH-wa-ter",
+      "cognate": "agua dulce"
+    },
+    {
+      "term": "Reservoir",
+      "definition": "A place where a large amount of water is stored for use.",
+      "use_sentence": "The town gets its drinking water from a large reservoir.",
+      "phonetic": "REZ-er-vwar",
+      "cognate": "reservorio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Morales called the snowpack a 'frozen reservoir'. What do you think he meant by that comparison?",
+      "frame": "I think Dr. Morales meant that the snowpack is like a frozen reservoir because..."
+    },
+    {
+      "prompt": "Dr. Morales's model includes precipitation and temperature. What is another thing he might need to measure to help communities plan their water use?",
+      "frame": "Another thing he might need to measure is..."
+    }
+  ],
+  "organizer": {
+    "title": "Water Availability: Cause and Effect",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More <strong>Precipitation</strong> (snow)"
+      },
+      {
+        "label": "Effect",
+        "content": "More <strong>Freshwater Availability</strong>"
+      },
+      {
+        "label": "Cause",
+        "content": "Higher <strong>Temperature</strong>"
+      },
+      {
+        "label": "Effect",
+        "content": "Higher <strong>Evaporation Rate</strong>"
+      },
+      {
+        "label": "Cause",
+        "content": "Higher <strong>Evaporation Rate</strong>"
+      },
+      {
+        "label": "Effect",
+        "content": "Less <strong>Freshwater Availability</strong>"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

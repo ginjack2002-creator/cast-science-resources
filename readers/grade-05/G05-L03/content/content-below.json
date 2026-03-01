@@ -1,0 +1,96 @@
+{
+  "story": {
+    "title": "Dr. Okafor's Energy Puzzle",
+    "text": "My name is Dr. Amara Okafor. I am a Bioenergy Systems Engineer. I work at a lab where we study new ways to make energy. My job is to figure out the best way to turn plants into fuel for cars and homes. It all starts with the sun!<br><br>Plants are a type of <strong>producer</strong>. They produce their own food using sunlight. In my computer models, I study how plants grow. I look at two main things outside the plant. First, I check the Sunlight Intensity. Second, I check the Temperature. Both of these give the plant energy to grow.<br><br><strong>CHECK:</strong> What two outside things help plants grow?<br><br>Next, I look at what happens inside the plant. Plants use a process called <strong>photosynthesis</strong> to turn sunlight into sugar. This sugar is the plant's food. My model shows how fast this happens. This is the Photosynthesis Rate. When there is more sun and warmth, the rate goes up. The plant makes food faster.<br><br><strong>CHECK:</strong> What process do plants use to make food?<br><br>The energy in the plant's sugar doesn't stop there. An animal, which is a <strong>consumer</strong>, might eat the plant. When the animal eats the plant, it gets energy. This is called <strong>energy transfer</strong>. You get energy the same way when you eat a salad! In my work, I want to capture that plant energy to make fuel. I have to think about other things, too. Do the plants have enough water? Are their leaves healthy and green? It's all part of the puzzle.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Engineer",
+        "definition": "A person who designs and builds things to solve problems."
+      },
+      {
+        "term": "Models",
+        "definition": "Simple ways to understand how something works."
+      },
+      {
+        "term": "Fuel",
+        "definition": "A material that is used to produce heat or power."
+      }
+    ],
+    "check_prompts": [
+      "What two outside things help plants grow?",
+      "What process do plants use to make food?",
+      "How does energy move from a plant to an animal?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The way plants use sunlight, water, and air to make their own food (sugar).",
+      "use_sentence": "Through photosynthesis, a plant can turn sunlight into energy.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "Fotosíntesis"
+    },
+    {
+      "term": "Producer",
+      "definition": "A living thing, like a plant, that makes its own food.",
+      "use_sentence": "A tree is a producer because it makes its food from sunlight.",
+      "phonetic": "pro-DOO-ser",
+      "cognate": "Productor"
+    },
+    {
+      "term": "Consumer",
+      "definition": "A living thing that gets energy by eating other living things.",
+      "use_sentence": "A rabbit is a consumer because it eats plants for energy.",
+      "phonetic": "kon-SOO-mer",
+      "cognate": "Consumidor"
+    },
+    {
+      "term": "Energy Transfer",
+      "definition": "The movement of energy from one thing to another.",
+      "use_sentence": "When a bird eats a worm, that is an example of energy transfer.",
+      "phonetic": "EN-er-jee TRANS-fer",
+      "cognate": "Transferencia de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Okafor mentioned that plants need water and healthy leaves. How might a lack of water change the amount of energy available to animals?",
+      "frame": "If a plant does not have enough water, then ___."
+    },
+    {
+      "prompt": "Think about the food you ate today. Trace the energy in that food back to the sun. What were the producers?",
+      "frame": "The energy in my food came from the sun, which helped the producer, a ___, grow."
+    }
+  ],
+  "organizer": {
+    "title": "From Sun to Energy",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Sunlight"
+      },
+      {
+        "label": "Effect",
+        "content": "Faster Photosynthesis"
+      },
+      {
+        "label": "Cause",
+        "content": "Faster Photosynthesis"
+      },
+      {
+        "label": "Effect",
+        "content": "More Energy for Consumers"
+      }
+    ]
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

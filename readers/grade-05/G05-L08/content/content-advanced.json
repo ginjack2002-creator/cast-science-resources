@@ -1,0 +1,95 @@
+{
+  "story": {
+    "title": "Dr. Al-Rashid's Molecular Mission: Defeating Viruses with Smart Surfaces",
+    "text": "My laboratory at Johns Hopkins isn't filled with bubbling beakers; it’s filled with powerful computers. As an Antimicrobial Surfaces Engineer, I design materials that can destroy a dangerous <strong>pathogen</strong> on contact. The inspiration for a self-cleaning doorknob or hospital bedrail comes from something you use every day: soap.<br><br>To invent the future, I first have to perfectly understand the present. I build complex computer models that simulate exactly how soap dismantles a virus. In my models, I begin with the key external components. First, there’s 'Soap Concentration.' The more soap, the more tiny warriors I have to attack the virus. Second is the presence of 'Water,' which is crucial for activating and spreading those warriors. These inputs directly influence an internal component I call 'Soap Effectiveness.' When both concentration and water are high, the effectiveness skyrockets.<br><br>So, what does an 'effective' soap molecule do? Viruses are often encased in a fatty outer shell called a <strong>lipid</strong> <strong>membrane</strong>. Soap molecules are special because they are <strong>amphiphilic</strong>—one end is attracted to water, while the other is attracted to fats and oils. This dual nature allows the soap molecule’s fat-loving end to burrow into the virus’s protective <strong>membrane</strong>, prying it apart like a molecular crowbar. Once the membrane is breached, the virus spills its contents and is destroyed.<br><br>The ultimate goal in my simulations is to minimize the 'Virus Survival Rate.' The relationship is clear: as 'Soap Effectiveness' increases, the 'Virus Survival Rate' plummets. But the real world is more complicated than this basic model. I constantly ask, what else matters? My research shows that factors like 'Water Temperature' and 'Scrubbing Friction' can accelerate this entire process. Understanding these complex interactions is the key to designing a surface that does all the work for us, keeping us safe automatically.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Al-Rashid mentions that her models must account for 'Viral Load'—the number of virus particles on a surface. How would you add this component to your own model? What other components would it affect, and how?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Lipid",
+      "definition": "A molecule of fat or oil; it forms the protective outer layer of many viruses.",
+      "use_sentence": "The soap molecule's main job is to break apart the virus's protective lipid membrane.",
+      "phonetic": "LIP-id",
+      "cognate": "Lípido"
+    },
+    {
+      "term": "Membrane",
+      "definition": "A thin, flexible layer that acts as a barrier, surrounding a cell or a virus.",
+      "use_sentence": "Once the outer membrane is destroyed, the virus can no longer function.",
+      "phonetic": "MEM-brain",
+      "cognate": "Membrana"
+    },
+    {
+      "term": "Amphiphilic",
+      "definition": "A type of molecule that is attracted to both water and fats/oils, like a soap molecule.",
+      "use_sentence": "Because soap molecules are amphiphilic, they can connect the water from the sink to the oily virus membrane.",
+      "phonetic": "am-fih-FILL-ik",
+      "cognate": "Anfifílico"
+    },
+    {
+      "term": "Pathogen",
+      "definition": "A bacterium, virus, or other microorganism that has the potential to cause disease.",
+      "use_sentence": "Dr. Al-Rashid designs surfaces that can destroy any pathogen on contact.",
+      "phonetic": "PATH-oh-jen",
+      "cognate": "Patógeno"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Al-Rashid's job is to engineer surfaces that clean themselves. Besides doorknobs, what other surfaces in a school or hospital would be most important to make antimicrobial?",
+      "frame": null
+    },
+    {
+      "prompt": "The story explains that soap molecules are amphiphilic. How does this unique property make them so effective at destroying viruses compared to just rinsing with water?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were an engineer on Dr. Al-Rashid's team, what new component (like 'Scrubbing Friction' or 'Water Temperature') would you suggest adding to the computer model to make it more realistic? Explain your reasoning.",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Modeling the Effect of Soap on Viruses",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "External Factor (Cause)",
+        "content": "Increased Soap Concentration"
+      },
+      {
+        "label": "Internal System (Effect)",
+        "content": "Increased Soap Effectiveness"
+      },
+      {
+        "label": "Final Outcome (Effect)",
+        "content": "Decreased Virus Survival Rate"
+      },
+      {
+        "label": "External Factor (Cause)",
+        "content": "Presence of Water"
+      },
+      {
+        "label": "Internal System (Effect)",
+        "content": "Increased Soap Effectiveness"
+      },
+      {
+        "label": "Final Outcome (Effect)",
+        "content": "Decreased Virus Survival Rate"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

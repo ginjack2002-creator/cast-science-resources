@@ -1,0 +1,82 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Soil Superheroes",
+    "text": "My name is Dr. Marcus Chen, and I'm a Bioremediation Engineer. That's a fancy way of saying I use nature to solve pollution problems. At my company, Terranova Solutions, we get calls when there's an oil spill or a chemical leak. Instead of just digging up tons of dirt and moving it somewhere else, we help the Earth heal itself right where it is.<br><br>Last week, we started a project at an old factory. Some oily waste leaked into the ground. This waste is a type of <strong>organic matter</strong>, which is any material that once came from a living thing. My job is to figure out the fastest way for nature to clean it up. My secret weapon? A team of microscopic superheroes called <strong>decomposers</strong>—tiny bacteria and fungi that break down dead material for energy.<br><br>To make a plan, I build a computer model of the site. My model first looks at the amount of <strong>organic matter</strong> (the pollution) available as food. Then, I check the <strong>soil moisture</strong>. Decomposers get thirsty! If the soil is too dry, their activity slows down. When my model shows high decomposer activity, I know they are working hard, breaking down the pollution. This amazing process releases <strong>nutrients</strong>, which are like vitamins for the soil, making it healthy for plants to grow again. It’s all part of Earth's incredible <strong>matter cycle</strong>, where materials are constantly reused.<br><br>My model has to be smart, though. I have to tell it what the <strong>temperature</strong> is, because my decomposer team works much slower in the cold. I also consider the type of material. A banana peel breaks down in weeks, but some pollutants take much longer. By understanding this whole system, we help nature's recycling crew do its job.",
+    "think_abouts": [
+      "How does adding more water (Soil Moisture) help Dr. Chen's decomposers work faster?",
+      "Dr. Chen mentioned winter slows things down. What new component could you add to a model to show the effect of temperature?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Decomposer",
+      "definition": "An organism, like a bacterium or fungus, that breaks down dead organic material.",
+      "use_sentence": "A worm is a decomposer that helps turn dead leaves into healthy soil.",
+      "phonetic": "dee-kuhm-POH-zer",
+      "cognate": "Descomponedor"
+    },
+    {
+      "term": "Nutrient",
+      "definition": "A substance that living things need to live and grow.",
+      "use_sentence": "The compost pile is full of nutrients that will help the garden plants grow strong.",
+      "phonetic": "NOO-tree-uhnt",
+      "cognate": "Nutriente"
+    },
+    {
+      "term": "Organic Matter",
+      "definition": "Any material that comes from something that was once alive, like plants or animals.",
+      "use_sentence": "Fallen leaves and grass clippings are types of organic matter.",
+      "phonetic": "or-GAN-ik MAT-er",
+      "cognate": "Materia Orgánica"
+    },
+    {
+      "term": "Matter Cycle",
+      "definition": "The movement and recycling of matter (the 'stuff' things are made of) through an ecosystem.",
+      "use_sentence": "In the water cycle, a key matter cycle, water moves from the sky to the earth and back again.",
+      "phonetic": "MAT-er SY-kuhl",
+      "cognate": "Ciclo de la Materia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen uses decomposers to clean up pollution. What are some other ways decomposers help the environment in your own neighborhood?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were building a model like Dr. Chen's, what two other components besides moisture and food would you add to predict decomposer activity? Why?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Nature's Recycling System: Cause and Effect",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Dead Organic Matter (food) and Soil Moisture (water) are available."
+      },
+      {
+        "label": "Effect",
+        "content": "Decomposer Activity increases."
+      },
+      {
+        "label": "Effect",
+        "content": "Nutrient Release into the soil increases."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

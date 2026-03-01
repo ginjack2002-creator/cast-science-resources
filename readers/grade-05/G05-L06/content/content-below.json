@@ -1,0 +1,100 @@
+{
+  "story": {
+    "title": "Dr. Hashimoto's Forest Puzzle",
+    "text": "Hi, I’m Dr. Tomoko Hashimoto. I work for NASA. I don’t fly into space. Instead, I use satellites to look at Earth’s forests from above. My job is to solve a big puzzle: Where does a tree get its weight from?<br><br>Most people think trees grow from the soil, like they are drinking a dirt milkshake. But that’s not the whole story. A huge tree is very heavy. Most of that weight, or <strong>biomass</strong>, comes from something you can’t even see. It comes from the air!<br><br>Here is how my computer model works.<br>1. First, we measure the <strong>CO2 (Carbon Dioxide)</strong> in the air. This gas is the main building block for the tree.<br>2. Next, my satellites measure <strong>Sunlight</strong>. Sunlight gives the tree the energy it needs to build itself.<br>3. Then, the tree does <strong>photosynthesis</strong>. It uses light energy to turn CO2 and water into a sugar called <strong>glucose</strong>. This is the tree's food.<br>4. Finally, the tree uses that <strong>glucose</strong> to grow bigger. More food means the tree adds more <strong>biomass</strong>.<br><br>My model helps me understand how much carbon forests pull from the air. But I always want to make it better. I ask, 'What about the roots underground?' or 'Do trees grow faster in the summer when there are more leaves?' These questions help me understand our amazing planet.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Satellites",
+        "definition": "Machines that orbit Earth and take pictures or measurements."
+      },
+      {
+        "term": "Model",
+        "definition": "A simple way to show how something complex works."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Hashimoto study using satellites?",
+      "What gas from the air is a tree's main building block?",
+      "What else does Dr. Hashimoto think about adding to her model?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The way plants use sunlight, water, and CO2 to make their own food (sugar).",
+      "use_sentence": "Through photosynthesis, a leaf can make food for the whole tree.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "CO2 (Carbon Dioxide)",
+      "definition": "A gas in the air that plants breathe in to build their bodies.",
+      "use_sentence": "We breathe out CO2, and plants use it to grow.",
+      "phonetic": "KAR-bun dy-OK-side",
+      "cognate": "dióxido de carbono"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total weight of a living thing, like a tree's wood, leaves, and roots.",
+      "use_sentence": "The giant redwood tree has a lot of biomass.",
+      "phonetic": "BY-oh-mass",
+      "cognate": "biomasa"
+    },
+    {
+      "term": "Glucose",
+      "definition": "A type of sugar that plants make for energy and for building materials.",
+      "use_sentence": "Plants use glucose as the building blocks for their stems and leaves.",
+      "phonetic": "GLOO-kose",
+      "cognate": "glucosa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hashimoto says most of a tree's weight comes from the air. Why does this sound surprising? What did you used to think trees were made of?",
+      "frame": "This is surprising because I thought trees were made of..."
+    },
+    {
+      "prompt": "Dr. Hashimoto thinks about roots and seasons to improve her model. What is one other thing you think could affect how much a tree grows?",
+      "frame": "I think a tree's growth could be affected by..."
+    }
+  ],
+  "organizer": {
+    "title": "Where a Tree's Mass Comes From",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "INPUT (from air)",
+        "content": "CO2 (Carbon Dioxide)"
+      },
+      {
+        "label": "INPUT (from sun)",
+        "content": "Sunlight"
+      },
+      {
+        "label": "PROCESS (in leaves)",
+        "content": "Photosynthesis"
+      },
+      {
+        "label": "OUTPUT (food & building blocks)",
+        "content": "Glucose (Sugar)"
+      },
+      {
+        "label": "RESULT (tree gets heavier)",
+        "content": "Increased Tree Biomass"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that trees need ___ to live.",
+    "learned": "From the story, I learned that most of a tree's mass comes from ___.",
+    "wonder": "Now I wonder how scientists measure ___ from space."
+  }
+}

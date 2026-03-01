@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ lesson_id }} Reader — {{ level_label }}</title>
+<link rel="stylesheet" href="{{ css_base_url }}/reader-base.css">
+<link rel="stylesheet" href="{{ css_base_url }}/reader-colors.css">
+<link rel="stylesheet" href="{{ css_base_url }}/reader-print.css">
+<link rel="stylesheet" href="{{ css_base_url }}/level-{{ level_key }}.css">
+<style>
+@page { size: letter; margin: 0.35in 0.4in; }
+body { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; }
+</style>
+</head>
+<body>
+
+<!-- ========== PAGE 1: Cover Card + Vocabulary Flaps ========== -->
+<div class="page">
+  <div class="page-top">
+    <div class="cut-piece cover-card">
+      <div class="grade-badge">{{ grade }}</div>
+      <div class="level-badge {{ level_key }}">{{ level_label }}</div>
+      {% if images.cover %}
+      <img class="hero-image" src="{{ images.cover }}" alt="Cover: {{ lesson_title }}">
+      {% endif %}
+      <div class="lesson-title">{{ lesson_title }}</div>
+      <div class="lesson-subtitle">{{ lesson_subtitle }}</div>
+      <div class="career-tagline">A Day in the Life of a {{ scientist.title }}</div>
+      <div class="branding">CAST Science &bull; ModelIt! &bull; Interactive Notebook Insert</div>
+    </div>
+  </div>
+
+  <div class="page-bottom">
+    <div class="section-header navy">Vocabulary Flaps — Cut, Fold &amp; Glue</div>
+    <div class="vocab-grid">
+      {% for v in vocabulary %}
+      <div class="vocab-flap">
+        <div class="vocab-term">{{ v.term }}</div>
+        {% if v.phonetic %}<div class="vocab-phonetic">{{ v.phonetic }}</div>{% endif %}
+        {% if v.cognate %}<div class="vocab-cognate">Spanish: {{ v.cognate }}</div>{% endif %}
+        <div class="vocab-def">{{ v.definition }}</div>
+        {% if v.use_sentence %}<div class="vocab-sentence">"{{ v.use_sentence }}"</div>{% endif %}
+        <div class="fold-line"></div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="glue-tab mt-4">&#x2702; Cut along dashed lines &bull; Fold on dotted line &bull; Glue into notebook</div>
+  </div>
+</div>
+
+<!-- ========== PAGE 2: The Science Story ========== -->
+<div class="page">
+  <div class="cut-piece story-page">
+    <div class="section-header brand-blue">The Science Story</div>
+    <div class="story-title">{{ story.title }}</div>
+
+    {% if story.word_bank %}
+    <div class="word-bank">
+      <div class="word-bank-title">Word Bank</div>
+      <div class="word-bank-items">
+        {% for w in story.word_bank %}
+        <span class="word-bank-item">{{ w }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if story.cognate_sidebar %}
+    <div class="cognate-sidebar">
+      <div class="cognate-sidebar-title">Cognados / Cognates</div>
+      {% for c in story.cognate_sidebar %}
+      <div><strong>{{ c.english }}</strong> = {{ c.spanish }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if images.story_inline %}
+    <img class="story-image" src="{{ images.story_inline }}" alt="Story illustration">
+    {% endif %}
+
+    <div class="story-text clearfix">
+      {{ story.text }}
+    </div>
+
+    {% for ta in story.think_abouts %}
+    <div class="think-about">Think About It: {{ ta }}</div>
+    {% endfor %}
+
+    {% if story.go_deeper %}
+    <div class="go-deeper">Go Deeper: {{ story.go_deeper }}</div>
+    {% endif %}
+
+    {% for md in story.margin_defs %}
+    <div class="margin-def"><strong>{{ md.term }}:</strong> {{ md.definition }}</div>
+    {% endfor %}
+
+    {% for cp in story.check_prompts %}
+    <div class="check-prompt">&#x2714; Check: {{ cp }}</div>
+    {% endfor %}
+
+    <div class="glue-tab mt-4">&#x2702; Cut &bull; Glue into notebook</div>
+  </div>
+</div>
+
+<!-- ========== PAGE 3: System Map + What Else Explorer ========== -->
+<div class="page">
+  <div class="page-top">
+    <div class="cut-piece system-map">
+      <div class="section-header mid-blue">System Connection Map</div>
+      <div class="map-title">{{ lesson_title }} — Component Model</div>
+
+      <div style="text-align: center; margin: 8px 0;">
+        {% for comp in components %}
+        <div class="component-box {{ 'external' if comp.is_external else 'internal' }}" style="margin: 4px;">
+          {{ comp.name }}
+          <div style="font-size: 7pt; font-weight: 400; color: #666;">{{ 'External' if comp.is_external else 'Internal' }}</div>
+        </div>
+        {% if not loop.last %}
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <div style="margin: 4px 0; font-size: 8.5pt;">
+        {% for rel in relationships %}
+        <div style="padding: 2px 0;">
+          <span class="bold">{{ rel.from_comp }}</span>
+          <span class="arrow-{{ 'positive' if rel.sign == '+' else 'negative' }}" style="font-weight: 900;">
+            &mdash;{{ rel.sign }}&rarr;
+          </span>
+          <span class="bold">{{ rel.to_comp }}</span>
+          <span class="text-muted text-small">({{ rel.reason }})</span>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="scientist-callout">
+        <strong>{{ scientist.name }}, {{ scientist.title }}:</strong>
+        "This is the basic model. But in my {{ scientist.workplace | lower }}, I track way more than this..."
+      </div>
+    </div>
+  </div>
+
+  <div class="page-bottom">
+    <div class="section-header orange">What Else Could You Add?</div>
+    <div class="text-small text-muted mb-8">These are components {{ scientist.name }} tracks in real life. How do YOU think they connect?</div>
+    <div class="explorer-cards">
+      {% for ec in extend_components %}
+      <div class="explorer-card">
+        <div class="comp-name">{{ ec.name }}</div>
+        <div class="comp-why">{{ ec.why }}</div>
+        <div class="comp-connect">How does this connect? _______________</div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="glue-tab mt-4">&#x2702; Cut out cards &bull; Add to your model sketch in your notebook</div>
+  </div>
+</div>
+
+<!-- ========== PAGE 4: Spotlight + Data Detective ========== -->
+<div class="page">
+  <div class="page-top">
+    <div class="cut-piece spotlight">
+      <div class="section-header navy">Real-World Spotlight</div>
+      <div class="spotlight-title">{{ spotlight.title }}</div>
+      {% if images.spotlight %}
+      <img class="spotlight-image" src="{{ images.spotlight }}" alt="Spotlight: {{ spotlight.title }}">
+      {% endif %}
+      <div class="spotlight-text clearfix">{{ spotlight.narrative }}</div>
+      <div class="spotlight-prompt">Discuss: {{ spotlight.discussion_prompt }}</div>
+    </div>
+  </div>
+
+  <div class="page-bottom">
+    <div class="cut-piece data-detective">
+      <div class="section-header brand-blue">Data Detective</div>
+      <div class="detective-title">{{ data.title }}</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            {% for h in data.headers %}
+            <th>{{ h }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in data.rows %}
+          <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <ul class="data-prompts">
+        {% for p in data.prompts %}
+        <li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="glue-tab mt-4">&#x2702; Cut &bull; Glue into notebook &bull; Annotate the data</div>
+  </div>
+</div>
+
+<!-- ========== PAGE 5: Discussion Cards + Graphic Organizer ========== -->
+<div class="page">
+  <div class="page-top">
+    <div class="section-header mid-blue">Discussion Cards — Draw One, Discuss, Glue Your Favorite</div>
+    <div class="discussion-grid">
+      {% for dc in discussion_cards %}
+      <div class="discussion-card">
+        <div class="card-number">{{ loop.index }}</div>
+        <div class="card-prompt">{{ dc.prompt }}</div>
+        {% if dc.frame %}<div class="card-frame">Sentence starter: {{ dc.frame }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="page-bottom">
+    <div class="cut-piece graphic-org">
+      <div class="section-header orange">{{ organizer.title }}</div>
+      {% if organizer.type == 'cause-effect' %}
+      <div class="cause-effect-chain">
+        {% for box in organizer.boxes %}
+        {% if not loop.first %}<div class="chain-arrow">&rarr;</div>{% endif %}
+        <div class="chain-box {{ 'filled' if box.content else 'blank' }}">
+          <div class="chain-label">{{ box.label }}</div>
+          <div>{{ box.content if box.content else '________________________' }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% elif organizer.type == 't-chart' %}
+      <div class="t-chart">
+        <div class="t-chart-col">
+          <div class="t-chart-header">{{ organizer.left_header }}</div>
+          {% for item in organizer.left_items %}
+          <div class="t-chart-item">{{ item if item else '' }}</div>
+          {% endfor %}
+        </div>
+        <div class="t-chart-col">
+          <div class="t-chart-header">{{ organizer.right_header }}</div>
+          {% for item in organizer.right_items %}
+          <div class="t-chart-item">{{ item if item else '' }}</div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="glue-tab mt-4">&#x2702; Cut &bull; Fold &bull; Glue into notebook &bull; Complete the organizer</div>
+  </div>
+</div>
+
+<!-- ========== PAGE 6: Reflection + Career Spotlight ========== -->
+<div class="page">
+  <div class="page-top">
+    <div class="cut-piece reflection-flap">
+      <div class="section-header navy">Reflection Flap — Cut, Fold &amp; Glue Left Edge</div>
+      <div class="tri-fold">
+        <div class="tri-fold-panel">
+          <div class="panel-header knew">What I Knew</div>
+          {% if reflection_frames and reflection_frames.knew %}
+          <div class="panel-frame">{{ reflection_frames.knew }}</div>
+          {% endif %}
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+        </div>
+        <div class="tri-fold-panel" style="border-right: 2px dashed #999;">
+          <div class="panel-header learned">What I Learned</div>
+          {% if reflection_frames and reflection_frames.learned %}
+          <div class="panel-frame">{{ reflection_frames.learned }}</div>
+          {% endif %}
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+        </div>
+        <div class="tri-fold-panel">
+          <div class="panel-header wonder">What I Wonder</div>
+          {% if reflection_frames and reflection_frames.wonder %}
+          <div class="panel-frame">{{ reflection_frames.wonder }}</div>
+          {% endif %}
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+          <div class="panel-lines"></div>
+        </div>
+      </div>
+      <div class="glue-tab mt-4">&#x2702; Cut outer border &bull; Fold on dashed lines &bull; Glue LEFT edge only</div>
+    </div>
+  </div>
+
+  <div class="page-bottom">
+    <div class="section-header brand-blue">Career Spotlight — Cut &amp; Glue</div>
+    <div class="career-cards">
+      <div class="career-card">
+        {% if images.career %}
+        <img class="career-image" src="{{ images.career }}" alt="{{ scientist.title }}">
+        {% endif %}
+        <div class="career-title">{{ scientist.title }}</div>
+        <div class="career-desc">{{ scientist.what_they_model }}</div>
+        <div class="career-salary">{{ scientist.salary }}</div>
+        <div class="career-path">Path: {{ scientist.education }}</div>
+      </div>
+      <div class="career-card">
+        <div class="career-title">{{ additional_career.name }}</div>
+        <div class="career-desc">{{ additional_career.description }}</div>
+        <div class="career-salary">{{ additional_career.salary }}</div>
+        <div class="career-path">Path: {{ additional_career.education }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

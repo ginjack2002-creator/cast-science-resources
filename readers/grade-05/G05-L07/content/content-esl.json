@@ -1,0 +1,123 @@
+{
+  "story": {
+    "title": "Dr. Osei and the Forest's Internet",
+    "text": "My name is Dr. Jabari Osei. I am a scientist in the rainforest of Panama. I study the amazing world under our feet.<br><br>Trees look separate above ground. But underground, they are connected. They use a network of fungi to share food. I call it the forest’s internet. My job is to understand how this system works.<br><br>Every day, I measure things in the soil. I check the amount of <strong>leaf litter</strong>. This is dead leaves that feed the fungi. I also measure the <strong>soil moisture</strong>. Fungi need water to grow their tiny threads. When there is more food and water, the <strong>mycorrhizal fungal network activity</strong> goes up. The network gets busy and strong. This leads to more <strong>nutrient transfer between trees</strong>. The trees can share more resources with each other.<br><br>I use a computer to model this system. My model helps me make predictions. I also think about other questions. Does the age of a network change how well it works? What happens if there are many different types of fungi? My research helps us protect these important forest ecosystems.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "rainforest",
+        "definition": "A forest with tall trees and a lot of rain."
+      },
+      {
+        "term": "network",
+        "definition": "A system of connected things."
+      },
+      {
+        "term": "model",
+        "definition": "A simple way to show how something works."
+      }
+    ],
+    "check_prompts": [
+      "What two things does Dr. Osei measure in the soil?",
+      "What happens to nutrient transfer when fungal network activity goes up?"
+    ],
+    "word_bank": [
+      "scientist",
+      "network",
+      "leaf litter",
+      "soil moisture",
+      "fungal network activity",
+      "nutrient transfer"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "activity",
+        "spanish": "actividad"
+      },
+      {
+        "english": "nutrient",
+        "spanish": "nutriente"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mycorrhizal",
+      "definition": "About a special fungus that works with plant roots.",
+      "use_sentence": "The mycorrhizal network helps the trees get food.",
+      "phonetic": "my-ko-RISE-ul",
+      "cognate": "micorriza"
+    },
+    {
+      "term": "Mutualism",
+      "definition": "A partnership where two living things help each other.",
+      "use_sentence": "The fungus and the tree have a mutualism relationship.",
+      "phonetic": "MYOO-choo-ul-izm",
+      "cognate": "mutualismo"
+    },
+    {
+      "term": "Hyphae",
+      "definition": "The tiny, thin threads that make up a fungus.",
+      "use_sentence": "The hyphae spread through the soil to connect trees.",
+      "phonetic": "HI-fee",
+      "cognate": "hifas"
+    },
+    {
+      "term": "Nutrient",
+      "definition": "Food that plants and animals need to live and grow.",
+      "use_sentence": "The soil has a lot of nutrient for the plants.",
+      "phonetic": "NOO-tree-ent",
+      "cognate": "nutriente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Osei mentioned network age. How might an older, 100-year-old network be different from a new, 10-year-old network?",
+      "frame": "I think an older network might be ___ because ___."
+    },
+    {
+      "prompt": "If a forest has very dry soil for a long time, what do you predict will happen to the nutrient transfer between trees? Why?",
+      "frame": "If the soil is dry, I predict that nutrient transfer will ___ because the fungal network needs ___."
+    }
+  ],
+  "organizer": {
+    "title": "How the Forest Network Works",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Leaf Litter (food) AND More Soil Moisture (water)"
+      },
+      {
+        "label": "Effect",
+        "content": "More Fungal Network Activity"
+      },
+      {
+        "label": "Cause",
+        "content": "More Fungal Network Activity"
+      },
+      {
+        "label": "Effect",
+        "content": "More Nutrient Transfer Between Trees"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

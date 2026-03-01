@@ -1,0 +1,14 @@
+/* ESL-Assisted: Maximum scaffolding */
+/* Shows everything: margin defs, sentence starters, check prompts, word bank, cognate sidebar, card frames, panel frames, phonetic, cognate */
+.margin-def { display: block !important; }
+.sentence-starter { display: block !important; }
+.check-prompt { display: block !important; }
+.card-frame { display: block !important; }
+.panel-frame { display: block !important; }
+.word-bank { display: block !important; }
+.cognate-sidebar { display: block !important; }
+.vocab-phonetic { display: block !important; }
+.vocab-cognate { display: block !important; }
+.think-about { display: block !important; }
+
+.go-deeper { display: none !important; }

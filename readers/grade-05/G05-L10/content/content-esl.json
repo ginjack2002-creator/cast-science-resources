@@ -1,0 +1,120 @@
+{
+  "story": {
+    "title": "Dr. Patel's Light Puzzles",
+    "text": "My name is Dr. Aisha Patel. I am a scientist at NASA. I study new planets that are very far away. I cannot see these planets directly. I only see the light from their star.<br><br>This light tells me a story from the past. A very distant star sends us very old light. This is the <strong>Light Travel Time</strong>. The <strong>Star Distance</strong> is very important. A farther star looks dimmer to me. Some stars are very powerful. They have high <strong>Luminosity</strong>. This makes them look brighter from Earth. I use my computer to model these things. My model calculates the <strong>Apparent Brightness</strong> we see.<br><br>But my job is more complex. I also look at the star's color. A blue star is hotter than a red star. Dust in space also changes the light. My model must include these details, too. Every star's light is a puzzle. I love solving these puzzles to find new worlds.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "distant",
+        "definition": "far away"
+      },
+      {
+        "term": "model",
+        "definition": "a simple version of something complex"
+      },
+      {
+        "term": "complex",
+        "definition": "having many different parts"
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Patel study?",
+      "Does light from a far star reach us right away?"
+    ],
+    "word_bank": [
+      "distance",
+      "luminosity",
+      "apparent brightness",
+      "model",
+      "light year"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "scientist",
+        "spanish": "científica"
+      },
+      {
+        "english": "planet",
+        "spanish": "planeta"
+      },
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "complex",
+        "spanish": "complejo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Light Year",
+      "definition": "The distance light travels in one year. It is a unit of distance, not time.",
+      "use_sentence": "The nearest star system to us is more than four light years away.",
+      "phonetic": "lite yeer",
+      "cognate": "año luz"
+    },
+    {
+      "term": "Luminosity",
+      "definition": "The true, actual amount of light and energy a star gives off.",
+      "use_sentence": "A giant star has a much higher luminosity than a small star.",
+      "phonetic": "loo-min-AH-si-tee",
+      "cognate": "luminosidad"
+    },
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star looks to us when we see it from Earth.",
+      "use_sentence": "A close, dim star can have a greater apparent brightness than a far, luminous star.",
+      "phonetic": "ah-PARE-ent BRITE-ness",
+      "cognate": "brillo aparente"
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "A science rule that says light gets much weaker as it spreads out over distance.",
+      "use_sentence": "Because of the inverse square law, a star that is twice as far away looks four times dimmer.",
+      "phonetic": "IN-verse skwair law",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel's basic model includes Star Distance and Star Luminosity. What else does she add to her model to make it better?",
+      "frame": "To make her model better, Dr. Patel also adds information about a star's ___ and ___."
+    },
+    {
+      "prompt": "Why is the light Dr. Patel sees 'a story from the past'?",
+      "frame": "The light is from the past because it takes a very long time to ___ from the star to Earth."
+    },
+    {
+      "prompt": "If two stars have the same luminosity, what would make one star have a greater apparent brightness?",
+      "frame": "If two stars have the same luminosity, the one that is ___ to Earth would look brighter."
+    }
+  ],
+  "organizer": {
+    "title": "What Makes a Star Look Bright or Dim?",
+    "type": "t-chart",
+    "left_header": "Makes a Star Look BRIGHTER From Earth",
+    "right_header": "Makes a Star Look DIMMER From Earth",
+    "left_items": [
+      "It is closer to Earth.",
+      "It has a higher luminosity.",
+      ""
+    ],
+    "right_items": [
+      "It is farther from Earth.",
+      "It has a lower luminosity.",
+      ""
+    ]
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that stars are ___.",
+    "learned": "From the story, I learned that scientists use a star's light to ___.",
+    "wonder": "Now I wonder how scientists measure a star's ___."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "story": {
+    "title": "Dr. Whitehorse's Air Model",
+    "text": "My name is Dr. James Whitehorse. I am a scientist at NOAA. I use computer models to see how air moves in our communities.<br><br>Every morning, I look at my computer screen. My model shows a city. I add information, or data, to the model. First, I add the <strong>Vehicle Traffic Density</strong>. More cars and trucks on the road mean more exhaust. This adds pollution to the air.<br><br>Next, I add the <strong>Wind Speed</strong>. Wind is very important. A strong wind blows pollution away. It cleans the air. A calm day with no wind can trap pollution.<br><br>My model uses this data. It predicts the <strong>Air Pollution Concentration</strong> for different neighborhoods. This tells us if the air is clean or dirty. This is important for our health. High pollution can affect our lungs. It changes the <strong>Respiratory Health Impact</strong> for the people who live there.<br><br>My work also looks at other things. Tall buildings can block wind. The time of day also changes the air. My job is to help everyone understand and breathe cleaner air.",
+    "think_abouts": [],
+    "go_deeper": "What is one thing your community could do to lower its Vehicle Traffic Density?",
+    "margin_defs": [
+      {
+        "term": "models",
+        "definition": "computer copies of something in the real world"
+      },
+      {
+        "term": "data",
+        "definition": "information and numbers"
+      },
+      {
+        "term": "predicts",
+        "definition": "makes a smart guess about the future"
+      }
+    ],
+    "check_prompts": [
+      "What happens to air pollution when the wind is strong?",
+      "What does Dr. Whitehorse add to his model first?"
+    ],
+    "word_bank": [
+      "model",
+      "pollution",
+      "community",
+      "predicts",
+      "health",
+      "wind"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "concentration",
+        "spanish": "concentración"
+      },
+      {
+        "english": "community",
+        "spanish": "comunidad"
+      },
+      {
+        "english": "respiratory",
+        "spanish": "respiratorio"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Air Quality Index",
+      "definition": "A number that measures how clean or polluted the air is.",
+      "use_sentence": "We checked the Air Quality Index before going to the park.",
+      "phonetic": "/er ˈkwɑlədi ˈɪnˌdɛks/",
+      "cognate": null
+    },
+    {
+      "term": "Particulate Matter",
+      "definition": "Tiny solid or liquid pieces floating in the air, like dust or smoke.",
+      "use_sentence": "The smoke from the fire created a lot of particulate matter.",
+      "phonetic": "/pɑrˈtɪkjəlɪt ˈmætər/",
+      "cognate": "materia particulada"
+    },
+    {
+      "term": "Respiratory",
+      "definition": "Having to do with the lungs and breathing.",
+      "use_sentence": "Pollution can cause problems for your respiratory system.",
+      "phonetic": "/ˈrɛspərəˌtɔri/",
+      "cognate": "respiratorio"
+    },
+    {
+      "term": "Environmental Justice",
+      "definition": "The fair treatment of all people, so everyone has a safe and healthy environment.",
+      "use_sentence": "Building parks in all neighborhoods is an example of environmental justice.",
+      "phonetic": "/ɛnˌvaɪrənˈmɛntəl ˈʤʌstɪs/",
+      "cognate": "justicia ambiental"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "How could a school use Dr. Whitehorse's model to keep students safe?",
+      "frame": "A school could use the model to decide ___."
+    },
+    {
+      "prompt": "Dr. Whitehorse mentioned that building height can affect pollution. Why do you think tall buildings might trap pollution?",
+      "frame": "I think tall buildings might trap pollution because they ___."
+    },
+    {
+      "prompt": "If you were a city planner, what is one change you would make to improve air quality for everyone?",
+      "frame": "To improve air quality, I would ___."
+    }
+  ],
+  "organizer": {
+    "title": "What Affects Our Air?",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Cars (High Vehicle Traffic)"
+      },
+      {
+        "label": "Effect",
+        "content": "More Air Pollution"
+      },
+      {
+        "label": "Cause",
+        "content": "Strong Wind (High Wind Speed)"
+      },
+      {
+        "label": "Effect",
+        "content": "Less Air Pollution"
+      },
+      {
+        "label": "Cause",
+        "content": "More Air Pollution"
+      },
+      {
+        "label": "Effect",
+        "content": "More breathing problems (Health Impact)"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___.",
+    "learned": "From the story, I learned that ___.",
+    "wonder": "Now I wonder how ___."
+  }
+}

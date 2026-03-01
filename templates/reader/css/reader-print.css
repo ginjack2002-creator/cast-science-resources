@@ -1,0 +1,44 @@
+/* ==============================================
+   Print-Specific Styles
+   @page rules for WeasyPrint PDF generation
+   ============================================== */
+
+@page {
+    size: letter;
+    margin: 0.4in;
+}
+
+@media print {
+    body { background: white; }
+
+    .page {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+    .page:last-child { page-break-after: avoid; }
+
+    /* Ensure cut lines print */
+    .cut-piece,
+    .vocab-flap,
+    .explorer-card,
+    .discussion-card,
+    .career-card,
+    .tri-fold {
+        border-style: dashed !important;
+        border-color: #555 !important;
+    }
+
+    /* No background colors bleeding in print */
+    .section-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .data-table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .card-number { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .level-badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .panel-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .component-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+    /* Ensure images don't break across pages */
+    img { page-break-inside: avoid; }
+}

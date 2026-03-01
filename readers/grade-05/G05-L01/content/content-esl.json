@@ -1,0 +1,132 @@
+{
+  "story": {
+    "title": "Dr. Williams and the Fire Model",
+    "text": "My name is Dr. Keisha Williams. I am a Fire Behavior Analyst. My job is to predict where a wildfire will spread. I use a special computer model to help firefighters stay safe.<br><br>Every day, my model needs new information. First, I look at the <strong>atmosphere</strong>. I check the data for <strong>Wind</strong> speed and direction. Strong wind pushes flames across the land. Next, I check the <strong>hydrosphere</strong> for recent <strong>Rainfall</strong>. If there is no rain for a long time, the plants get very dry. These plants are the <strong>biosphere</strong>. This <strong>Dry Vegetation</strong> becomes fuel for a fire. More fuel helps the <strong>Fire Spread</strong> happen quickly.<br><br>My model connects these Earth systems. I also add more details to make my prediction better. I check how much moisture is inside the plants. I look at maps of the <strong>geosphere</strong>. Fire races up steep hills. My model even shows how burning embers can fly in the wind and start new fires. This work helps firefighters make smart plans to protect people and homes.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "predict",
+        "definition": "To say what will happen in the future."
+      },
+      {
+        "term": "model",
+        "definition": "A simple version of something complex to help us understand it."
+      },
+      {
+        "term": "fuel",
+        "definition": "Material that burns to make heat or power."
+      }
+    ],
+    "check_prompts": [
+      "What is one type of information Dr. Williams puts into her computer model?"
+    ],
+    "word_bank": [
+      "predict",
+      "model",
+      "atmosphere",
+      "wind",
+      "rainfall",
+      "vegetation",
+      "fuel",
+      "spread"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Analyst",
+        "spanish": "Analista"
+      },
+      {
+        "english": "Information",
+        "spanish": "Información"
+      },
+      {
+        "english": "Vegetation",
+        "spanish": "Vegetación"
+      },
+      {
+        "english": "Protect",
+        "spanish": "Proteger"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "All the land on Earth, like mountains, rocks, and soil.",
+      "use_sentence": "A volcano is a part of the geosphere.",
+      "phonetic": "JEE-oh-sfeer",
+      "cognate": "Geosfera"
+    },
+    {
+      "term": "Biosphere",
+      "definition": "All the living things on Earth, like plants and animals.",
+      "use_sentence": "The trees in the forest are part of the biosphere.",
+      "phonetic": "BYE-oh-sfeer",
+      "cognate": "Biosfera"
+    },
+    {
+      "term": "Hydrosphere",
+      "definition": "All the water on Earth, like oceans, rivers, and ice.",
+      "use_sentence": "We went swimming in the river, which is in the hydrosphere.",
+      "phonetic": "HY-dro-sfeer",
+      "cognate": "Hidrosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The air and gases that surround the Earth.",
+      "use_sentence": "The wind we feel is moving air in the atmosphere.",
+      "phonetic": "AT-mo-sfeer",
+      "cognate": "Atmósfera"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "How does information from the atmosphere help Dr. Williams predict fire spread?",
+      "frame": "Information from the atmosphere, like ___, helps Dr. Williams because ___."
+    },
+    {
+      "prompt": "Dr. Williams studies how Earth's systems connect. Describe one connection you read about.",
+      "frame": "One connection I read about was between the ___ and the ___."
+    },
+    {
+      "prompt": "What other jobs might use computer models to predict things?",
+      "frame": "A person who is a ___ might use a model to predict ___."
+    }
+  ],
+  "organizer": {
+    "title": "Wildfire Cause and Effect",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "Less Rainfall (Hydrosphere)"
+      },
+      {
+        "label": "Effect",
+        "content": "More Dry Vegetation (Biosphere)"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      },
+      {
+        "label": "Cause",
+        "content": "More Wind (Atmosphere)"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "story": {
+    "title": "Dr. Aisha Patel and the Starlight Detectives",
+    "text": "My computer screen glows, not with a game, but with a stream of data from a star thousands of <strong>light-years</strong> away. As an Exoplanet Characterization Scientist at NASA, I’m a cosmic detective. I hunt for planets orbiting distant stars, and my primary clue is the ancient starlight that finally reaches our telescopes after a journey across the void.<br><br>The first thing my models must account for is that we are always looking into the past. The greater the <strong>Star Distance</strong>, the longer the <strong>Light Travel Time</strong>. The light I’m analyzing today might have left its star before the pyramids were built. This time delay is fascinating, but distance presents a more practical challenge: it diminishes brightness. A star’s actual, intrinsic energy output is its <strong>luminosity</strong>—think of it as its true wattage. But what we measure here on Earth is its <strong>apparent brightness</strong>, which is a mere echo of its original power.<br><br>This is because light spreads out as it travels, following a fundamental principle called the <strong>Inverse Square Law</strong>. This law dictates that a star twice as far away appears four times dimmer, not just twice as dim. It’s a crucial relationship in my models. If I can accurately measure a star’s distance and its apparent brightness, I can reverse the calculation to uncover its true luminosity. This is the baseline I need to even begin searching for planets.<br><br>Once I have that baseline, I can look for the telltale dip in brightness that occurs when an exoplanet transits, or passes in front of, its star. But my work doesn't stop there. My models must be more sophisticated. What if there's a cloud of interstellar dust between us and the target, making the star appear dimmer and redder than it truly is? I have to subtract that effect. I also analyze the star’s color to determine its temperature and age, as a star’s luminosity evolves over its lifespan. Each of these variables is a new component in my model, refining our understanding and bringing a hidden world into focus from a faint glimmer of old light.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Patel's models must account for many variables. If a star's light is dimmed by interstellar dust, how might that incorrectly change her calculations about the star's distance or an exoplanet's size? What clues might help her detect the dust?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Light Year",
+      "definition": "The distance that light travels in the vacuum of space in one Earth year, which is about 6 trillion miles or 9.5 trillion kilometers.",
+      "use_sentence": "The nearest star system, Alpha Centauri, is over four light-years away from Earth.",
+      "phonetic": "lite yeer",
+      "cognate": "año luz"
+    },
+    {
+      "term": "Luminosity",
+      "definition": "The total amount of energy, or light, that a star emits from its surface. It is a measure of the star's intrinsic, or actual, brightness.",
+      "use_sentence": "A massive blue giant star has a much higher luminosity than a small red dwarf star.",
+      "phonetic": "loo-mi-NOS-i-tee",
+      "cognate": "luminosidad"
+    },
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star appears to an observer on Earth. This depends on both the star's actual luminosity and its distance from us.",
+      "use_sentence": "Even though Rigel has a higher luminosity than Sirius, its greater distance gives it a lower apparent brightness in our night sky.",
+      "phonetic": "uh-PAIR-ent BRITE-ness",
+      "cognate": "brillo aparente"
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "A scientific law stating that the apparent brightness of a light source is inversely proportional to the square of its distance. In simpler terms, as light gets farther away, it spreads out and gets much dimmer, very quickly.",
+      "use_sentence": "According to the Inverse Square Law, a star that is three times farther away will appear nine times dimmer.",
+      "phonetic": "IN-verse skwair law",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel calls herself a 'cosmic detective.' In what ways is her work like looking into the past? What challenges does this create for her models?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that star color, age, and interstellar dust are extra components Dr. Patel adds to her model. Why is it important for a scientific model to include as many real-world variables as possible?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "What Affects a Star's Appearance?",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "A star has a very high actual Luminosity."
+      },
+      {
+        "label": "Cause",
+        "content": "The star is also a great Distance from Earth."
+      },
+      {
+        "label": "Effect",
+        "content": "Light spreads out over a huge area (Inverse Square Law) and has a long Light Travel Time."
+      },
+      {
+        "label": "Final Effect",
+        "content": "The star's Apparent Brightness is much lower than its actual Luminosity."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

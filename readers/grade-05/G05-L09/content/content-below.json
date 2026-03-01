@@ -1,0 +1,120 @@
+{
+  "story": {
+    "title": "Dr. Whitehorse's Air Map",
+    "text": "My name is Dr. James Whitehorse. I am an atmospheric dispersion modeler. That’s a big title! It means I make special computer maps of the air in our cities. My job is to predict where air pollution will go.<br><br>1. First, I look at the cars. I count the <strong>vehicle traffic</strong> on big roads. More cars and trucks release more exhaust. This exhaust is a type of pollution. My model shows busy freeways as bright red lines.<br><br>2. Next, I add wind to my model. I check the <strong>wind speed</strong>. Is it a windy day or a calm day? A strong wind can blow pollution away and spread it out. This makes the air cleaner. But on a calm day, pollution can get stuck.<br><br>3. My computer then calculates the <strong>air pollution concentration</strong>. It shows me \"hot spots\" where the air is the dirtiest. Sometimes, tall buildings can block the wind. This traps pollution down on the streets where people walk.<br><br>4. This work is important for everyone's health. High pollution can affect our breathing. We call this the <strong>respiratory health impact</strong>. My maps help communities understand their air. They can use this information to protect people, especially kids and elders. Everyone deserves to breathe clean air.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "modeler",
+        "definition": "a person who makes computer programs to predict things"
+      },
+      {
+        "term": "pollution",
+        "definition": "harmful things in the air, water, or land"
+      },
+      {
+        "term": "concentration",
+        "definition": "how much of something is crowded into one place"
+      }
+    ],
+    "check_prompts": [
+      "What is the first thing Dr. Whitehorse looks at for his model?",
+      "How does wind change the air pollution?",
+      "Why is Dr. Whitehorse's work important for people's health?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Air Quality Index",
+      "definition": "A number that tells us how clean or dirty the air is.",
+      "use_sentence": "On a day with a high Air Quality Index, we played inside during recess.",
+      "phonetic": null,
+      "cognate": "Índice de Calidad del Aire"
+    },
+    {
+      "term": "Particulate Matter",
+      "definition": "Tiny bits of dust, dirt, and smoke in the air that can be breathed in.",
+      "use_sentence": "The smoke from the wildfire created a lot of particulate matter in the air.",
+      "phonetic": "par-TIK-yoo-lit MAT-er",
+      "cognate": "materia particulada"
+    },
+    {
+      "term": "Respiratory",
+      "definition": "Having to do with breathing and the lungs.",
+      "use_sentence": "If you have asthma, you have a respiratory condition.",
+      "phonetic": "RES-per-uh-tor-ee",
+      "cognate": "respiratorio"
+    },
+    {
+      "term": "Environmental Justice",
+      "definition": "The idea that all people deserve to live in a safe and healthy environment.",
+      "use_sentence": "The community fought for environmental justice to clean up the air in their neighborhood.",
+      "phonetic": null,
+      "cognate": "justicia ambiental"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Whitehorse's model uses vehicle traffic and wind. What is ONE other thing you think could change the air quality in a neighborhood?",
+      "frame": "I think that ___ could also change the air quality because ___."
+    },
+    {
+      "prompt": "How can knowing about air pollution 'hot spots' help a community?",
+      "frame": "If a community knows where the air is dirty, they can ___."
+    },
+    {
+      "prompt": "The story mentions that tall buildings can trap pollution. Where in a city might you find the cleanest air?",
+      "frame": "I think the cleanest air in a city might be ___ because ___."
+    }
+  ],
+  "organizer": {
+    "title": "What Changes the Air?",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More cars and trucks on the road"
+      },
+      {
+        "label": "Effect",
+        "content": "More pollution in the air"
+      },
+      {
+        "label": "Cause",
+        "content": "A very windy day"
+      },
+      {
+        "label": "Effect",
+        "content": "Pollution gets blown away"
+      },
+      {
+        "label": "Cause",
+        "content": "High air pollution"
+      },
+      {
+        "label": "Effect",
+        "content": "More breathing problems for people"
+      },
+      {
+        "label": "Cause",
+        "content": "Tall buildings close together"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

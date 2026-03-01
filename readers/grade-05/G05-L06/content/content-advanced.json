@@ -1,0 +1,83 @@
+{
+  "story": {
+    "title": "Dr. Hashimoto and the Carbon Count",
+    "text": "Hello from NASA's Jet Propulsion Laboratory! My name is Dr. Tomoko Hashimoto, and I'm a Forest Carbon Scientist. It might sound unusual for NASA to study forests, but Earth is our most important planet, and forests are like its lungs. My job is to answer a huge question: how much carbon do the world's forests actually store? This leads to an even more fundamental question you're exploring: where does a tree’s mass come from?<br><br>For centuries, people assumed that trees grew by 'eating' soil. It makes intuitive sense—you plant a seed in the ground, and a huge tree emerges. But when scientists finally measured it, they found the soil mass barely changed. The answer, we now know, is far more amazing: trees are built from the air.<br><br>In my work, I build complex computer models to understand this process on a global scale. My models begin with two key external inputs: the concentration of <strong>CO2 in the Air</strong> and the amount of available <strong>Sunlight</strong>. These are the raw materials and the energy source. Together, they determine the <strong>Photosynthesis Rate</strong>—the speed at which a tree can convert that invisible gas into a simple sugar called <strong>glucose</strong>. This process is the engine of life on our planet.<br><br>The more <strong>glucose</strong> a tree produces, the more it can grow. That sugar is the fundamental building block for wood, leaves, and roots. This total mass of living material is what we call <strong>Biomass</strong>. So, when my model shows a high rate of photosynthesis, it directly predicts an increase in tree biomass. A giant redwood is essentially a magnificent tower of carbon pulled from the atmosphere, powered by the sun.<br><br>Of course, the real world is more complex. My models must also account for factors you might not see, like the massive <strong>Root Biomass</strong> underground or the fact that the <strong>Seasonal Growth Rate</strong> changes. Using satellite data, I even measure a forest's total <strong>Leaf Surface Area</strong> to refine my calculations. Understanding this global carbon cycle is critical for monitoring the health of our planet.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Hashimoto's model includes roots, seasons, and leaf area. What other factors, like water availability or tree age, might also affect a forest's total biomass? How would you add one of these new components to your system model?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The chemical process plants use to convert sunlight, water, and carbon dioxide into glucose (sugar) and oxygen.",
+      "use_sentence": "The high rate of photosynthesis during the summer allows the tree to grow quickly.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "CO2 (Carbon Dioxide)",
+      "definition": "An invisible gas in the atmosphere that plants absorb and use as a primary raw material for growth.",
+      "use_sentence": "Dr. Hashimoto's model calculates how much CO2 a forest pulls from the air.",
+      "phonetic": "KAR-buhn dai-OK-said",
+      "cognate": "dióxido de carbono"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total mass of all living material (wood, leaves, roots) in an organism or ecosystem.",
+      "use_sentence": "A significant portion of a tree's biomass is hidden underground in its root system.",
+      "phonetic": "BAI-o-mass",
+      "cognate": "biomasa"
+    },
+    {
+      "term": "Glucose",
+      "definition": "A simple sugar produced during photosynthesis that serves as both energy (food) and a building block for the plant.",
+      "use_sentence": "The tree uses glucose to build cellulose, the strong material that makes up wood.",
+      "phonetic": "GLOO-kose",
+      "cognate": "glucosa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hashimoto says a tree is 'constructed mostly from an invisible gas.' How does this scientific idea change the way you think about the air around you?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were a scientist like Dr. Hashimoto using satellites and computer models, what question about Earth's forests would you want to investigate?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "From Air to Wood: A Causal Chain",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "CO2 in Air + Sunlight"
+      },
+      {
+        "label": "Effect / Cause",
+        "content": "Increased Photosynthesis Rate"
+      },
+      {
+        "label": "Effect / Cause",
+        "content": "More Glucose is produced"
+      },
+      {
+        "label": "Ultimate Effect",
+        "content": "Tree Biomass increases"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

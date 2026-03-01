@@ -1,0 +1,134 @@
+{
+  "story": {
+    "title": "Dr. Okafor: Growing Fuel with Sunlight",
+    "text": "Hello! I am Dr. Amara Okafor. I am a bioenergy systems engineer. My job is to find the best way to grow plants for fuel. This fuel can power cars and homes. It all starts with the sun.<br><br>Plants are amazing <strong>producers</strong>. They use a process called <strong>photosynthesis</strong> to turn sunlight into food. This food is stored energy. I use a computer model to understand this process. My model shows how different things affect how fast plants grow. For example, I look at <strong>sunlight intensity</strong>. More sunlight gives plants more power. This increases their <strong>photosynthesis rate</strong>.<br><br>I also add <strong>temperature</strong> to my model. A warm day can help plants make food faster. When plants make more food, more energy is available. This is <strong>energy transfer</strong>. Animals that eat plants are called <strong>consumers</strong>. They get energy from the plants. In my lab, we are the consumers. We use the plant's stored energy to create clean fuel.<br><br>My model helps me ask new questions. What else helps plants grow? I think about how much water they get. Or how much carbon dioxide is in the air. These are new pieces for my energy puzzle.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "producers",
+        "definition": "Living things that make their own food."
+      },
+      {
+        "term": "photosynthesis",
+        "definition": "The way plants use sunlight to make food."
+      },
+      {
+        "term": "consumers",
+        "definition": "Living things that eat for energy."
+      },
+      {
+        "term": "energy transfer",
+        "definition": "When energy moves from one thing to another."
+      }
+    ],
+    "check_prompts": [
+      "What two things help increase the photosynthesis rate?"
+    ],
+    "word_bank": [
+      "engineer",
+      "fuel",
+      "sunlight",
+      "plants",
+      "model",
+      "energy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "process",
+        "spanish": "proceso"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniera"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The way plants use sunlight, water, and air to make their own food.",
+      "use_sentence": "Plants use photosynthesis to turn sunlight into sugar.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "Producer",
+      "definition": "A living thing, like a plant, that makes its own food.",
+      "use_sentence": "A plant is a producer because it uses sunlight for energy.",
+      "phonetic": "pro-DOO-ser",
+      "cognate": "productor"
+    },
+    {
+      "term": "Consumer",
+      "definition": "A living thing that must eat other living things for energy.",
+      "use_sentence": "A rabbit is a consumer because it eats plants for energy.",
+      "phonetic": "con-SOO-mer",
+      "cognate": "consumidor"
+    },
+    {
+      "term": "Energy Transfer",
+      "definition": "The movement of energy from one thing to another, like from a plant to an animal.",
+      "use_sentence": "Energy transfer happens when a cow eats grass.",
+      "phonetic": "EN-er-jee TRANS-fer",
+      "cognate": "transferencia de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Okafor mentioned water and air as other parts of her 'energy puzzle.' What is another thing a plant might need to grow well? Why?",
+      "frame": "I think a plant also needs ___ because ___."
+    }
+  ],
+  "organizer": {
+    "title": "Cause and Effect: Helping Plants Grow",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More sunlight"
+      },
+      {
+        "label": "Effect",
+        "content": "Photosynthesis rate is faster"
+      },
+      {
+        "label": "Cause",
+        "content": "Warmer temperature"
+      },
+      {
+        "label": "Effect",
+        "content": "Photosynthesis rate is faster"
+      },
+      {
+        "label": "Cause",
+        "content": "Photosynthesis rate is faster"
+      },
+      {
+        "label": "Effect",
+        "content": "More energy is available"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that plants need ___ to live.",
+    "learned": "From the story, I learned that an engineer can use a model to ___.",
+    "wonder": "Now I wonder what would happen if ___."
+  }
+}

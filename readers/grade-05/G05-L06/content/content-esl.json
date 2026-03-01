@@ -1,0 +1,122 @@
+{
+  "story": {
+    "title": "Dr. Hashimoto's Forest Secrets",
+    "text": "Hello! I am Dr. Tomoko Hashimoto. I am a scientist at NASA. I study forests from space.<br><br>People ask a big question. Where does a tree's mass come from? Many think it comes from the soil. But that is not the main answer. Most of a tree is made from air!<br><br>I use models on my computer. These models help me understand tree growth. I measure the <strong>CO2 in Air</strong>. Trees breathe this gas. I also measure the amount of <strong>Sunlight</strong>. Sunlight gives trees energy.<br><br>With lots of CO2 and sunlight, a tree's <strong>Photosynthesis Rate</strong> goes up. This means the tree makes food faster. This food builds the tree's body. We call this the <strong>Tree Biomass</strong>. More food means more biomass.<br><br>My job is to measure this. My satellites see how much carbon forests take from the air. We see that trees grow faster in the summer. They have more sunlight then. Satellites can even measure the number of leaves on the trees. More leaves mean more photosynthesis. We also remember the roots. A big part of the tree is under the ground. We have to estimate that part. My model helps us see the whole picture.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Models",
+        "definition": "Computer programs that copy the real world."
+      },
+      {
+        "term": "Satellites",
+        "definition": "Machines in space that look at Earth."
+      }
+    ],
+    "check_prompts": [
+      "Where does Dr. Hashimoto say most of a tree's mass comes from?"
+    ],
+    "word_bank": [
+      "Photosynthesis",
+      "CO2 in Air",
+      "Sunlight",
+      "Tree Biomass",
+      "Models",
+      "Scientist"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Scientist",
+        "spanish": "Científico/a"
+      },
+      {
+        "english": "Carbon",
+        "spanish": "Carbono"
+      },
+      {
+        "english": "Models",
+        "spanish": "Modelos"
+      },
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The way plants use sunlight, water, and air to make their own food.",
+      "use_sentence": "Plants grow big and strong because of <strong>photosynthesis</strong>.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "Fotosíntesis"
+    },
+    {
+      "term": "CO2 (Carbon Dioxide)",
+      "definition": "A gas in the air that plants use to grow.",
+      "use_sentence": "We breathe out <strong>CO2</strong>, and plants breathe it in.",
+      "phonetic": "KAR-bon dy-OK-side",
+      "cognate": "Dióxido de Carbono"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total weight of a living thing, like a tree.",
+      "use_sentence": "The tree's <strong>biomass</strong> includes its trunk, branches, and leaves.",
+      "phonetic": "BY-o-mass",
+      "cognate": "Biomasa"
+    },
+    {
+      "term": "Glucose",
+      "definition": "The sugar that plants make for food and energy.",
+      "use_sentence": "Photosynthesis creates <strong>glucose</strong>, which helps the tree build more wood.",
+      "phonetic": "GLOO-kose",
+      "cognate": "Glucosa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hashimoto says most of a tree's mass comes from the air. Why might this idea surprise someone?",
+      "frame": "This idea might surprise someone because ___."
+    },
+    {
+      "prompt": "Dr. Hashimoto uses satellites to study forests. What is one new thing a satellite might help her discover about trees?",
+      "frame": "A satellite might help her discover ___ about trees."
+    },
+    {
+      "prompt": "The story mentions sunlight and seasons. How does the time of year change how a tree grows?",
+      "frame": "In the summer, a tree grows ___ because ___."
+    }
+  ],
+  "organizer": {
+    "title": "How a Tree Gains Mass",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More CO2 in Air and more Sunlight"
+      },
+      {
+        "label": "Effect",
+        "content": "Photosynthesis Rate increases"
+      },
+      {
+        "label": "Cause",
+        "content": "Photosynthesis Rate increases"
+      },
+      {
+        "label": "Effect",
+        "content": "More Tree Biomass (The tree gets heavier)"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that trees need ___.",
+    "learned": "From the story, I learned that most of a tree's mass comes from ___.",
+    "wonder": "Now I wonder how scientists measure ___."
+  }
+}

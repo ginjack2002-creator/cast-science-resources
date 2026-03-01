@@ -1,0 +1,86 @@
+{
+  "story": {
+    "title": "Dr. Osei and the Forest's Secret Internet",
+    "text": "My boots sink into the damp earth here in Panama. I’m Dr. Jabari Osei, a soil microbiome researcher, and I study the forest’s hidden communication system. It's a secret world where trees share resources and send warnings through a vast underground web.<br><br>This web is made of <strong>mycorrhizal</strong> fungi—special fungi that partner with tree roots. It’s a perfect example of <strong>mutualism</strong> (a relationship where both organisms benefit). The trees give the fungi sugar, and in return, the fungi deliver water and vital <strong>nutrients</strong> (substances living things need to grow) from the soil.<br><br>My team and I build computer models to understand this 'Wood Wide Web.' We ask: what conditions control how much trees can share? In our models, we start with external factors. We measure the amount of <strong>Leaf Litter</strong> on the ground, which is food for the fungi. We also track the <strong>Soil Moisture</strong>, because the tiny fungal threads, called <strong>hyphae</strong>, need water to thrive.<br><br>These inputs directly affect the <strong>Mycorrhizal Fungal Network Activity</strong>. More food and water mean a more active, bustling network. And what’s the result? More <strong>Nutrient Transfer Between Trees</strong>. A healthy network is like a busy highway, efficiently moving resources where they’re needed most.<br><br>But our model is always growing. We’re now adding new components, like the age of the network—we’ve found older networks are more efficient. We're also studying how having many different fungal species makes the whole system stronger. By understanding these connections, we can help protect these vital forest ecosystems for the future.",
+    "think_abouts": [
+      "What might happen to the nutrient transfer between trees during a long period with no rain?",
+      "Dr. Osei mentioned that older, more established networks are more efficient. Why do you think that might be?"
+    ],
+    "go_deeper": "How could a logging company use Dr. Osei's research to harvest trees more sustainably, protecting the fungal network?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Mycorrhizal",
+      "definition": "Related to a partnership between a fungus and the roots of a plant.",
+      "use_sentence": "The mycorrhizal network connects nearly all the trees in the forest.",
+      "phonetic": "my-ko-RY-zal",
+      "cognate": "Micorrícico"
+    },
+    {
+      "term": "Mutualism",
+      "definition": "A relationship between two living things where both of them benefit.",
+      "use_sentence": "The partnership between the fungi and the trees is a great example of mutualism.",
+      "phonetic": "MYOO-choo-uh-liz-um",
+      "cognate": "Mutualismo"
+    },
+    {
+      "term": "Hyphae",
+      "definition": "The tiny, branching threads that make up the body of a fungus.",
+      "use_sentence": "A vast web of hyphae spread out under the forest floor to gather nutrients.",
+      "phonetic": "HY-fee",
+      "cognate": "Hifas"
+    },
+    {
+      "term": "Nutrient",
+      "definition": "A substance that plants, animals, and people need to live and grow.",
+      "use_sentence": "The fungus delivers a key nutrient called phosphorus to the tree's roots.",
+      "phonetic": "NOO-tree-ent",
+      "cognate": "Nutriente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Osei uses a computer model to understand the forest. What are the benefits of using a model instead of only observing the real forest?",
+      "frame": "Using a model is helpful because ___."
+    },
+    {
+      "prompt": "The story mentions that having many different fungal species makes the network stronger. How is this similar to having different types of players on a sports team?",
+      "frame": "Having different types of fungi is like a sports team because ___."
+    },
+    {
+      "prompt": "If you were a scientist like Dr. Osei, what is one new component you would add to the model of the underground network? Why?",
+      "frame": "I would add ___ to the model because ___."
+    }
+  ],
+  "organizer": {
+    "title": "The Underground Network: A Cause & Effect Chain",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "External Condition (Cause)",
+        "content": "More Leaf Litter / More Soil Moisture"
+      },
+      {
+        "label": "Effect on Fungi",
+        "content": "Increased Mycorrhizal Fungal Network Activity"
+      },
+      {
+        "label": "Effect on Trees (Final Outcome)",
+        "content": "Increased Nutrient Transfer Between Trees"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

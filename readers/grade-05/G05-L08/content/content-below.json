@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Al-Rashid's Virus-Busting Model",
+    "text": "Hello! I'm Dr. Fatima Al-Rashid. I'm an engineer. My job is to design special surfaces that destroy germs on contact. Think of a door handle that cleans itself! I study tiny invaders called <strong>pathogens</strong>, like viruses. To understand how to stop them, I build models that show how different parts of a system work together.<br><br>Let’s make a model for handwashing. 1. First, we need soap. The amount of soap is important. We can call this <strong>Soap Concentration</strong>. 2. Next, we need water. Is <strong>Water Present</strong>? Yes! Water helps the soap spread everywhere. 3. When soap and water mix, they create <strong>Soap Effectiveness</strong>. This tells us how well the soap is working. More soap and water make the soap more effective.<br><br>So, how does soap work? 1. Viruses wear a protective coat made of fat. This is their <strong>lipid</strong> <strong>membrane</strong>. 2. Soap molecules are special. They are <strong>amphiphilic</strong>. This means one end of the molecule loves water, and the other end loves fat. 3. The soap molecule’s fat-loving end sticks into the virus's lipid membrane. It pulls the membrane apart like a zipper!<br><br>My model helps me measure the final result: the <strong>Virus Survival Rate</strong>. When soap effectiveness is high, the virus survival rate is very low. That's our goal! In my lab, I also test other things. Does <strong>Water Temperature</strong> matter? Or how hard you scrub? These are new parts we could add to our model.",
+    "think_abouts": [
+      "Dr. Al-Rashid mentioned adding 'how hard you scrub' to the model. How would that connect to the other parts?",
+      "What is another part you think could be added to the handwashing model? (Hint: Think about how long you wash your hands.)"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Pathogens",
+        "definition": "Tiny germs that can make you sick."
+      },
+      {
+        "term": "Lipid membrane",
+        "definition": "The virus's outer coat made of fat."
+      },
+      {
+        "term": "Amphiphilic",
+        "definition": "A molecule that is attracted to both water and fat."
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Al-Rashid's job?",
+      "What two things make soap more effective?",
+      "What part of a virus does soap attack?",
+      "What happens to the virus survival rate when soap is effective?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Lipid",
+      "definition": "A fat or oil molecule that makes up the outer coating of a virus.",
+      "use_sentence": "A virus is covered in a layer of lipid.",
+      "phonetic": "/ˈlɪp.ɪd/",
+      "cognate": "lípido"
+    },
+    {
+      "term": "Membrane",
+      "definition": "A thin layer that surrounds and protects a cell or virus.",
+      "use_sentence": "The soap breaks apart the virus's outer membrane.",
+      "phonetic": "/ˈmɛmˌbreɪn/",
+      "cognate": "membrana"
+    },
+    {
+      "term": "Amphiphilic",
+      "definition": "A special type of molecule that is attracted to both water AND oil/fat.",
+      "use_sentence": "Soap is amphiphilic, so it can grab both water and oily dirt.",
+      "phonetic": "/ˌæm.fɪˈfɪl.ɪk/",
+      "cognate": "amfifílico"
+    },
+    {
+      "term": "Pathogen",
+      "definition": "Any tiny germ, like a virus or bacteria, that can cause disease.",
+      "use_sentence": "We wash our hands to get rid of any dangerous pathogen.",
+      "phonetic": "/ˈpæθ.ə.dʒən/",
+      "cognate": "patógeno"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Al-Rashid studies special surfaces that clean themselves. How is washing your hands with soap like using one of her special surfaces?",
+      "frame": "Washing my hands is like using a special surface because..."
+    },
+    {
+      "prompt": "Why is just using water not as good as using soap and water to destroy a virus?",
+      "frame": "Just using water isn't as good because the water needs soap to..."
+    }
+  ],
+  "organizer": {
+    "title": "How Soap Stops Viruses",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "You add soap and water to your hands."
+      },
+      {
+        "label": "Effect",
+        "content": "The soap molecules surround the virus."
+      },
+      {
+        "label": "Cause",
+        "content": "The soap's 'fat-loving' end breaks the virus's lipid membrane."
+      },
+      {
+        "label": "Effect",
+        "content": "The virus falls apart and is washed away."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

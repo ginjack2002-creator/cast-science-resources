@@ -1,0 +1,80 @@
+{
+  "story": {
+    "title": "Dr. Whitehorse and the Invisible Rivers of Air",
+    "text": "Dr. James Whitehorse doesn't look at a city map and see just streets and buildings; he sees a complex system of invisible rivers. These rivers, made of air, flow around skyscrapers and through neighborhoods, carrying with them everything from pollen to pollution. From his desk at NOAA, his job is to model this unseen world. Using powerful computers, he builds digital versions of cities to understand how what we put into the air affects what we breathe.<br><br>This morning, his model focuses on a city corridor sliced by a major freeway. He inputs the data for vehicle traffic density, watching as a plume of simulated exhaust, rich with <strong>particulate matter</strong>, begins to accumulate. As the virtual rush hour progresses, the model’s <strong>Air Quality Index</strong> plummets in the neighborhoods closest to the traffic. Dr. Whitehorse knows this isn’t just a computer simulation; this data directly correlates with the real-world <strong>respiratory</strong> health impact on the people living there, a reality that drives the urgency of his work.<br><br>Next, he introduces a new variable: wind speed. He adjusts the model to simulate a breezy afternoon. Immediately, the concentrated pollution begins to disperse, thinning out as the wind carries it away from the source. While one simulation might show a calm day where pollution builds up, another demonstrates how a strong breeze can act as a natural air filter, providing immediate relief to residents. His model confirms a fundamental relationship: the stronger the wind, the lower the pollution concentration in a specific area.<br><br>But Dr. Whitehorse’s most sophisticated models account for even more. He considers how time of day alters traffic patterns and how tall buildings can create 'street canyons' that trap pollutants, preventing wind from clearing them out. He even simulates temperature inversions, an atmospheric condition that puts a warm 'lid' over colder air, effectively trapping an entire city under a blanket of its own exhaust. By predicting these high-pollution events, his work provides critical information to city planners and community leaders, empowering them to make decisions that work toward <strong>environmental justice</strong> and healthier air for everyone.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Whitehorse's model includes building heights and time of day. What other factors, not mentioned in the story, could affect a neighborhood's air quality and might be important to add to a model?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Air Quality Index",
+      "definition": "A scale from 0 to 500 that measures how clean or polluted the air is, and what associated health effects might be a concern.",
+      "use_sentence": "When the Air Quality Index is high, it is a good idea for people with asthma to stay indoors.",
+      "phonetic": "/er ˈkwälədē ˈinˌdeks/",
+      "cognate": null
+    },
+    {
+      "term": "Particulate Matter",
+      "definition": "A mixture of extremely small solid particles and liquid droplets suspended in the air, such as dust, soot, and smoke.",
+      "use_sentence": "Vehicle exhaust is a major source of particulate matter in urban environments.",
+      "phonetic": "/pärˈtikyələt ˈmadər/",
+      "cognate": "Materia Particulada"
+    },
+    {
+      "term": "Respiratory",
+      "definition": "Relating to the organs and system involved in breathing, primarily the lungs.",
+      "use_sentence": "Poor air quality can lead to a number of respiratory problems, including asthma.",
+      "phonetic": "/ˈrespərəˌtôrē/",
+      "cognate": "Respiratorio"
+    },
+    {
+      "term": "Environmental Justice",
+      "definition": "The principle that all people, regardless of race or income, deserve fair treatment and meaningful involvement regarding environmental laws and policies.",
+      "use_sentence": "Fighting for environmental justice means ensuring that no single community bears a disproportionate burden of pollution.",
+      "phonetic": "/inˌvīrənˈmen(t)l ˈjəstəs/",
+      "cognate": "Justicia Ambiental"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Whitehorse's models help predict future air quality. How could a city government use these predictions to protect its citizens' health?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that pollution can be higher in some neighborhoods than others. Why do you think this happens, and what makes it an issue of fairness?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were an atmospheric dispersion modeler like Dr. Whitehorse, what city or area would you want to study first, and why?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Factors Affecting Air Pollution",
+    "type": "t-chart",
+    "boxes": [],
+    "left_header": "Factors that INCREASE Pollution Concentration",
+    "right_header": "Factors that DECREASE Pollution Concentration",
+    "left_items": [
+      "High vehicle traffic",
+      "Low wind speed",
+      "Tall buildings creating 'canyons'",
+      "Temperature inversions"
+    ],
+    "right_items": [
+      "Low vehicle traffic",
+      "High wind speed",
+      "Open spaces like parks",
+      "Use of electric vehicles"
+    ]
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

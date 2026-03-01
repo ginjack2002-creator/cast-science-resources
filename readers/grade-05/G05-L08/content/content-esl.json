@@ -1,0 +1,119 @@
+{
+  "story": {
+    "title": "Dr. Al-Rashid's Smart Surfaces",
+    "text": "Hello! I am Dr. Fatima Al-Rashid. I am an engineer. I design special surfaces that fight tiny germs called <strong>pathogens</strong>.<br><br>My work is inspired by simple things, like soap. Soap is amazing at destroying viruses. I use computer models to understand how it works. In my model, I test different things. I can change the <strong>Soap Concentration</strong>. This means I change how much soap is used. I see how this changes the <strong>Soap Effectiveness</strong>. More soap molecules can attack the virus’s outer <strong>membrane</strong>.<br><br>I also add <strong>Water Present</strong> to my model. Water helps soap spread everywhere. It activates the soap molecules. When <strong>Soap Effectiveness</strong> goes up, I can see the <strong>Virus Survival Rate</strong> go down. This is my goal! Fewer viruses mean healthier people.<br><br>My models help me ask new questions. What if we change the water temperature? What about the friction from scrubbing your hands? My job is to use these ideas to create surfaces for hospitals and schools that clean themselves. We want to stop pathogens before they can make anyone sick.",
+    "think_abouts": [],
+    "go_deeper": "How could Dr. Al-Rashid's work designing self-cleaning surfaces help people in a hospital or on a spaceship?",
+    "margin_defs": [
+      {
+        "term": "engineer",
+        "definition": "A person who designs and builds things to solve problems."
+      },
+      {
+        "term": "models",
+        "definition": "Simple versions of a system used to test ideas."
+      },
+      {
+        "term": "surfaces",
+        "definition": "The outside part or layer of something, like a tabletop."
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Al-Rashid's main goal in her work?",
+      "What two things does her model show help soap work better?"
+    ],
+    "word_bank": [
+      "engineer",
+      "surfaces",
+      "pathogens",
+      "models",
+      "concentration",
+      "effectiveness"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "virus",
+        "spanish": "virus"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "concentration",
+        "spanish": "concentración"
+      },
+      {
+        "english": "effective",
+        "spanish": "efectivo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Lipid",
+      "definition": "A fat or oil molecule that makes up the virus's outer coating.",
+      "use_sentence": "Soap breaks down the <strong>lipid</strong> layer of a virus.",
+      "phonetic": "LIP-id",
+      "cognate": "lípido"
+    },
+    {
+      "term": "Membrane",
+      "definition": "A thin layer that surrounds and protects a cell or virus.",
+      "use_sentence": "A virus has a protective outer <strong>membrane</strong>.",
+      "phonetic": "MEM-brain",
+      "cognate": "membrana"
+    },
+    {
+      "term": "Amphiphilic",
+      "definition": "A molecule that is attracted to both water and oil/fat.",
+      "use_sentence": "A soap molecule is <strong>amphiphilic</strong>, so it can trap oily germs and be washed away by water.",
+      "phonetic": "am-fi-FIL-ik",
+      "cognate": null
+    },
+    {
+      "term": "Pathogen",
+      "definition": "Any microorganism, like a virus or bacteria, that can cause disease.",
+      "use_sentence": "Washing our hands helps remove harmful <strong>pathogens</strong>.",
+      "phonetic": "PATH-oh-jen",
+      "cognate": "patógeno"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Al-Rashid uses computer models to test ideas. Why is it helpful to test ideas in a model before building something in the real world?",
+      "frame": "Using a computer model is helpful because ___."
+    },
+    {
+      "prompt": "The story mentions adding 'scrubbing friction' to the model. What else do you do when you wash your hands that might help destroy viruses?",
+      "frame": "When I wash my hands, I also ___ and that might help."
+    }
+  ],
+  "organizer": {
+    "title": "Cause and Effect: How Soap Works",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "A person uses soap and water to wash their hands."
+      },
+      {
+        "label": "Effect",
+        "content": "The soap molecules break apart the virus's lipid membrane."
+      },
+      {
+        "label": "Final Effect",
+        "content": "The virus is destroyed and washed away with water."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

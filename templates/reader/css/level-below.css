@@ -1,0 +1,15 @@
+/* Below Level: Enhanced scaffolding */
+/* Shows: margin defs, sentence starters, check prompts, card frames */
+/* Hides: word bank, cognate sidebar, go deeper, phonetic, cognate */
+.margin-def { display: block !important; }
+.sentence-starter { display: block !important; }
+.check-prompt { display: block !important; }
+.card-frame { display: block !important; }
+.panel-frame { display: block !important; }
+.think-about { display: block !important; }
+
+.word-bank { display: none !important; }
+.cognate-sidebar { display: none !important; }
+.go-deeper { display: none !important; }
+.vocab-phonetic { display: none !important; }
+.vocab-cognate { display: none !important; }

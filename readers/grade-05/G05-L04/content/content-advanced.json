@@ -1,0 +1,87 @@
+{
+  "story": {
+    "title": "Dr. Morales and the Mountain's Water Bank",
+    "text": "My screen displays a map saturated with color—blues, greens, and reds flowing down from the Rocky Mountains. I’m Dr. Rafael Morales, a glacier hydrologist with the U.S. Geological Survey, and this isn't a weather map; it's a forecast for water.<br><br>My job is to answer a critical question for millions of people: how much <strong>freshwater</strong> will they have in the coming months? To do that, I build complex computer models that treat mountain ranges like giant water bank accounts. The primary deposit into this account is winter <strong>precipitation</strong>. The amount of snowfall we receive directly influences the potential water supply for the dry summer months.<br><br>However, making a deposit is only half the story; we also have to track withdrawals. A major factor is <strong>temperature</strong>. An unusually warm spring might seem pleasant, but in my model, it’s a warning flag. Higher temperatures accelerate snowmelt, but they also significantly increase the rate of <strong>evaporation</strong>. Every molecule of water that turns to vapor and rises into the atmosphere is a molecule that won't reach a river, a farm, or a city tap. This process can deplete a seemingly healthy snowpack before it ever becomes usable runoff.<br><br>My model goes beyond these basics. I input data on snowpack depth—is it a dense, water-rich layer or a light, fluffy one? This frozen <strong>reservoir</strong> behaves differently depending on its composition. Furthermore, I must account for factors my model can't see, like the groundwater recharge rate, which determines how quickly underground aquifers refill. I also analyze agricultural demand. When cities and farms are drawing from the same limited supply during a drought, my models help water managers make difficult, but essential, decisions. It’s a dynamic puzzle, and my work is to provide the clearest possible picture of the future.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Morales mentioned that farms and cities compete for water during a drought. What other factors, besides agriculture, could create a high demand for freshwater in a community?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Precipitation",
+      "definition": "Water in any form, such as rain, snow, sleet, or hail, that falls from clouds in the atmosphere to the Earth's surface.",
+      "use_sentence": "The annual precipitation in the mountains determines how much water will flow into the rivers the following spring.",
+      "phonetic": "/prəˌsɪpɪˈteɪʃən/",
+      "cognate": "precipitación"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process where a liquid, especially water, transforms into a gas or vapor and rises into the atmosphere.",
+      "use_sentence": "The sun's heat caused the evaporation of water from the surface of the lake.",
+      "phonetic": "/ɪˌvæpəˈreɪʃən/",
+      "cognate": "evaporación"
+    },
+    {
+      "term": "Freshwater",
+      "definition": "Water with very low concentrations of dissolved salts, making it suitable for drinking, agriculture, and industry.",
+      "use_sentence": "Only a tiny fraction of Earth's water is accessible freshwater for human use.",
+      "phonetic": "/ˈfrɛʃˌwɔtər/",
+      "cognate": null
+    },
+    {
+      "term": "Reservoir",
+      "definition": "A large natural or human-made lake used as a source of water supply.",
+      "use_sentence": "The mountain snowpack acts as a natural reservoir, storing water until it melts in the spring.",
+      "phonetic": "/ˈrɛzərˌvwɑr/",
+      "cognate": "reservorio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Morales describes his computer model as a 'dynamic puzzle.' What makes predicting freshwater availability so complex? What are some of the 'pieces' of the puzzle he mentioned?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were a water manager for a city that relies on snowmelt, what kind of information from Dr. Morales would be most valuable to you in the middle of winter? What about during a very hot, dry summer?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Modeling Freshwater Availability",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause/Input",
+        "content": "Higher than average winter Precipitation"
+      },
+      {
+        "label": "Effect on Freshwater Supply",
+        "content": ""
+      },
+      {
+        "label": "Cause/Input",
+        "content": "Unusually high spring Temperature"
+      },
+      {
+        "label": "Effect on Evaporation Rate",
+        "content": ""
+      },
+      {
+        "label": "Overall Effect on Freshwater Availability",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

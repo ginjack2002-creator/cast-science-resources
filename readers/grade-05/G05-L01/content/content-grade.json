@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Williams's Wildfire Forecast",
+    "text": "My name is Dr. Keisha Williams, and my job is to think like a wildfire. I'm a Fire Behavior Analyst for the U.S. Forest Service. My team uses science to predict where a fire will spread and how fast it will move. To do this, we have to understand how Earth's four major systems work together.<br><br>First, we analyze the <strong>biosphere</strong>, which is all the living things on our planet. For us, that means the forests and grasslands of California. This <strong>Dry Vegetation</strong> is the fuel for a wildfire. We constantly monitor how dry the plants are. This connects directly to the <strong>hydrosphere</strong>, which is all of Earth’s water. The amount of <strong>Rainfall</strong> we get over the winter and spring determines how dry the fuel will be in the summer and fall. Little rain means the plants are like a pile of matches waiting for a spark.<br><br>Next, we turn to the <strong>atmosphere</strong>, the blanket of air surrounding Earth. We focus on <strong>Wind</strong>. Strong winds can push flames across the land with incredible speed, causing the <strong>Fire Spread</strong> to become dangerously fast. Wind also carries burning embers, which can start new fires miles ahead of the main blaze.<br><br>We map all of this onto the <strong>geosphere</strong>—the solid Earth, with its mountains and canyons. Why does this matter? Fire races uphill, so the shape of the land is a critical piece of the puzzle. We feed all this data into our computer models to create a forecast for the fire. Our predictions help firefighters decide where to build fire lines and how to keep people safe. It’s a challenging job, but it’s amazing to see how science can help us understand and respond to the power of nature.",
+    "think_abouts": [
+      "Dr. Williams studies four of Earth's systems. How does a change in the atmosphere (like more wind) affect the biosphere (the trees) during a fire?",
+      "The story mentions that fire travels faster uphill. How does the geosphere (the shape of the land) influence fire spread?"
+    ],
+    "go_deeper": "Dr. Williams's model uses data about wind, rain, and dry plants. What other data from the hydrosphere or geosphere might make her predictions even more accurate?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "The solid parts of Earth, like rocks, soil, and mountains.",
+      "use_sentence": "The shape of the geosphere, like a steep hill, can make a wildfire move very quickly.",
+      "phonetic": "JEE-oh-sfeer",
+      "cognate": "Geosfera"
+    },
+    {
+      "term": "Biosphere",
+      "definition": "All the living things on Earth, including plants, animals, and people.",
+      "use_sentence": "The dry plants in the biosphere provided the fuel for the forest fire.",
+      "phonetic": "BY-oh-sfeer",
+      "cognate": "Biosfera"
+    },
+    {
+      "term": "Hydrosphere",
+      "definition": "All the water on Earth, found in oceans, rivers, lakes, and ice.",
+      "use_sentence": "A lack of rain from the hydrosphere can lead to very dry conditions.",
+      "phonetic": "HY-droh-sfeer",
+      "cognate": "Hidrosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The layer of gases, or air, that surrounds Earth.",
+      "use_sentence": "Strong winds in the atmosphere pushed the smoke from the fire across the city.",
+      "phonetic": "AT-muh-sfeer",
+      "cognate": "Atmósfera"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Williams's job is a 'Fire Behavior Analyst.' What skills do you think someone needs to be good at this job? Why?",
+      "frame": null
+    },
+    {
+      "prompt": "The story explains how different Earth systems interact to cause wildfires. Can you think of another event on Earth (like a flood or a hurricane) where different systems interact?",
+      "frame": null
+    },
+    {
+      "prompt": "Dr. Williams uses computer models to predict fire spread. How is this similar to or different from a weather forecast?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "How Earth Systems Fuel a Fire",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause (What happens first?)",
+        "content": "Less Rainfall from the atmosphere"
+      },
+      {
+        "label": "Effect (What is the result?)",
+        "content": "More Dry Vegetation in the biosphere"
+      },
+      {
+        "label": "Cause (What happens first?)",
+        "content": "More Dry Vegetation"
+      },
+      {
+        "label": "Effect (What is the result?)",
+        "content": ""
+      },
+      {
+        "label": "Cause (What happens first?)",
+        "content": "Strong Wind from the atmosphere"
+      },
+      {
+        "label": "Effect (What is the result?)",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

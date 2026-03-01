@@ -1,0 +1,774 @@
+/* ==============================================
+   CAST Science Readers — Base Layout
+   Interactive Notebook Insert (Cut-and-Paste)
+   6 pages per reader, designed for composition notebooks
+   ============================================== */
+
+/* --- Reset & Base --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background: white;
+}
+
+/* --- Page Setup --- */
+.page {
+    width: 7.5in;
+    height: 10in;
+    padding: 0.4in;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+}
+.page:last-child { page-break-after: avoid; }
+
+/* --- Cut Lines (Dashed borders for all cut-out pieces) --- */
+.cut-piece {
+    border: 2px dashed #555;
+    position: relative;
+    margin-bottom: 0.15in;
+}
+.cut-piece::before {
+    content: "\2702";  /* scissors emoji */
+    position: absolute;
+    top: -10px;
+    left: 6px;
+    font-size: 14px;
+    color: #555;
+    background: white;
+    padding: 0 3px;
+    z-index: 2;
+}
+
+/* --- Fold Indicators --- */
+.fold-line {
+    border-top: 2px dashed #999;
+    margin: 0;
+    position: relative;
+}
+.fold-line::after {
+    content: "\2194 FOLD";
+    position: absolute;
+    top: -9px;
+    right: 6px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #999;
+    background: white;
+    padding: 0 4px;
+    letter-spacing: 1px;
+}
+
+/* --- Section Headers --- */
+.section-header {
+    font-size: 13pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+    color: white;
+    border-radius: 3px;
+}
+
+.section-subheader {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #1A4780;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #2E86AB;
+    padding-bottom: 3px;
+}
+
+/* --- Glue Tab --- */
+.glue-tab {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 2px 8px;
+    font-size: 7pt;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* --- Page Split (Top/Bottom halves) --- */
+.page-top {
+    height: 4.6in;
+    overflow: hidden;
+    position: relative;
+}
+.page-bottom {
+    height: 4.6in;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0.1in;
+    padding-top: 0.1in;
+    border-top: 1px solid #ddd;
+}
+
+/* --- Cover Card (Page 1 Top) --- */
+.cover-card {
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+.cover-card .lesson-title {
+    font-size: 18pt;
+    font-weight: 900;
+    color: #0D1B2A;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+.cover-card .lesson-subtitle {
+    font-size: 10pt;
+    font-style: italic;
+    color: #2E86AB;
+    margin-bottom: 8px;
+}
+.cover-card .career-tagline {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #E67E22;
+    margin-top: 6px;
+}
+.cover-card .hero-image {
+    width: 100%;
+    max-height: 2.2in;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #0D1B2A;
+}
+.cover-card .level-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 3px 10px;
+    font-size: 8pt;
+    font-weight: 800;
+    color: white;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cover-card .grade-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 10px;
+    font-size: 8pt;
+    font-weight: 800;
+    color: white;
+    background: #0D1B2A;
+    border-radius: 12px;
+}
+.branding {
+    font-size: 7pt;
+    color: #999;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/* --- Vocabulary Flaps (Page 1 Bottom) --- */
+.vocab-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    padding: 4px;
+}
+.vocab-flap {
+    border: 2px dashed #555;
+    padding: 6px 8px;
+    position: relative;
+    min-height: 0.9in;
+}
+.vocab-flap::before {
+    content: "\2702";
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    font-size: 12px;
+    color: #555;
+    background: white;
+    padding: 0 2px;
+}
+.vocab-term {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #1A4780;
+    margin-bottom: 3px;
+}
+.vocab-icon {
+    float: right;
+    font-size: 16px;
+    margin-left: 4px;
+}
+.vocab-def {
+    font-size: 9pt;
+    line-height: 1.35;
+    color: #333;
+}
+.vocab-sentence {
+    font-size: 8pt;
+    font-style: italic;
+    color: #666;
+    margin-top: 3px;
+    border-top: 1px dotted #ccc;
+    padding-top: 2px;
+}
+/* ESL additions */
+.vocab-phonetic {
+    font-size: 8pt;
+    color: #2E86AB;
+    font-style: italic;
+    display: none;
+}
+.vocab-cognate {
+    font-size: 8pt;
+    color: #E67E22;
+    font-weight: 600;
+    display: none;
+}
+
+/* --- Science Story (Page 2) --- */
+.story-page {
+    padding: 10px 14px;
+}
+.story-page .story-title {
+    font-size: 14pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 8px;
+    border-bottom: 3px solid #E67E22;
+    padding-bottom: 4px;
+}
+.story-page .story-text {
+    font-size: 10.5pt;
+    line-height: 1.55;
+    column-count: 1;
+    text-align: justify;
+}
+.story-page .story-text .bold-term {
+    font-weight: 700;
+    color: #1A4780;
+}
+.story-page .story-image {
+    float: right;
+    width: 2.5in;
+    margin: 0 0 8px 10px;
+    border-radius: 4px;
+    border: 2px solid #2E86AB;
+}
+.story-page .go-deeper {
+    background: #f7f3e8;
+    border-left: 4px solid #E67E22;
+    padding: 6px 10px;
+    margin-top: 10px;
+    font-size: 9.5pt;
+    font-weight: 600;
+}
+.story-page .think-about {
+    background: #e8f4f8;
+    border-left: 4px solid #2E86AB;
+    padding: 5px 8px;
+    margin: 8px 0;
+    font-size: 9pt;
+    font-style: italic;
+}
+/* Below-level margin defs */
+.margin-def {
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    padding: 3px 6px;
+    font-size: 8pt;
+    margin: 4px 0;
+    border-radius: 3px;
+    display: none;
+}
+/* ESL word bank */
+.word-bank {
+    background: #e8f5e9;
+    border: 2px solid #4caf50;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: none;
+}
+.word-bank-title {
+    font-size: 9pt;
+    font-weight: 800;
+    color: #2e7d32;
+    margin-bottom: 3px;
+}
+.word-bank-items {
+    font-size: 9pt;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.word-bank-item {
+    background: white;
+    border: 1px solid #4caf50;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+/* Cognate sidebar */
+.cognate-sidebar {
+    background: #fff3e0;
+    border: 1px solid #ff9800;
+    padding: 6px;
+    font-size: 8pt;
+    float: right;
+    width: 1.5in;
+    margin: 0 0 6px 8px;
+    border-radius: 3px;
+    display: none;
+}
+.cognate-sidebar-title {
+    font-weight: 800;
+    color: #e65100;
+    margin-bottom: 3px;
+}
+/* Sentence starters */
+.sentence-starter {
+    background: #e3f2fd;
+    border: 1px solid #1976d2;
+    padding: 3px 6px;
+    font-size: 8pt;
+    margin: 4px 0;
+    border-radius: 3px;
+    display: none;
+}
+/* Check prompts (below level) */
+.check-prompt {
+    background: #fce4ec;
+    border-left: 3px solid #e91e63;
+    padding: 3px 6px;
+    font-size: 8pt;
+    font-weight: 600;
+    margin: 4px 0;
+    display: none;
+}
+
+/* --- System Connection Map (Page 3 Top) --- */
+.system-map {
+    padding: 8px;
+}
+.system-map .map-title {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 6px;
+}
+.component-box {
+    display: inline-block;
+    border: 2px solid #1A4780;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 9pt;
+    font-weight: 700;
+    text-align: center;
+    min-width: 1.2in;
+    background: white;
+}
+.component-box.external {
+    background: #e8f4f8;
+    border-color: #2E86AB;
+}
+.component-box.internal {
+    background: #fff3e0;
+    border-color: #E67E22;
+}
+.arrow-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #1A4780;
+    text-align: center;
+    padding: 2px 0;
+}
+.arrow-positive { color: #2e7d32; }
+.arrow-negative { color: #c62828; }
+.scientist-callout {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 9pt;
+    font-style: italic;
+    color: #555;
+}
+.scientist-callout strong { color: #1A4780; }
+
+/* --- What Else Explorer (Page 3 Bottom) --- */
+.explorer-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+}
+.explorer-card {
+    border: 2px dashed #555;
+    padding: 6px 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
+    align-items: start;
+}
+.explorer-card::before {
+    content: "\2702";
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    font-size: 12px;
+    color: #555;
+    background: white;
+    padding: 0 2px;
+}
+.explorer-card .comp-name {
+    font-size: 10pt;
+    font-weight: 800;
+    color: #1A4780;
+    white-space: nowrap;
+}
+.explorer-card .comp-why {
+    font-size: 9pt;
+    line-height: 1.3;
+}
+.explorer-card .comp-connect {
+    font-size: 8pt;
+    font-style: italic;
+    color: #E67E22;
+    font-weight: 600;
+}
+
+/* --- Real-World Spotlight (Page 4 Top) --- */
+.spotlight {
+    padding: 8px;
+}
+.spotlight .spotlight-title {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 4px;
+}
+.spotlight .spotlight-image {
+    float: left;
+    width: 2.2in;
+    margin: 0 10px 6px 0;
+    border-radius: 4px;
+    border: 2px solid #0D1B2A;
+}
+.spotlight .spotlight-text {
+    font-size: 9.5pt;
+    line-height: 1.5;
+    text-align: justify;
+}
+.spotlight .spotlight-prompt {
+    background: #e8f4f8;
+    border-left: 4px solid #2E86AB;
+    padding: 5px 8px;
+    font-size: 9pt;
+    font-weight: 600;
+    margin-top: 6px;
+    clear: both;
+}
+
+/* --- Data Detective (Page 4 Bottom) --- */
+.data-detective {
+    padding: 8px;
+}
+.data-detective .detective-title {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 6px;
+}
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    margin-bottom: 8px;
+}
+.data-table th {
+    background: #0D1B2A;
+    color: white;
+    padding: 4px 6px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 8.5pt;
+}
+.data-table td {
+    padding: 3px 6px;
+    border-bottom: 1px solid #ddd;
+}
+.data-table tr:nth-child(even) td {
+    background: #f8f8f8;
+}
+.data-prompts {
+    list-style: none;
+    padding: 0;
+}
+.data-prompts li {
+    padding: 4px 0 4px 18px;
+    font-size: 9pt;
+    position: relative;
+    line-height: 1.4;
+}
+.data-prompts li::before {
+    content: "\1F50D";
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+}
+
+/* --- Discussion Cards (Page 5 Top) --- */
+.discussion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+.discussion-card {
+    border: 2px dashed #555;
+    padding: 6px 8px;
+    position: relative;
+    min-height: 0.8in;
+}
+.discussion-card::before {
+    content: "\2702";
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    font-size: 12px;
+    color: #555;
+    background: white;
+    padding: 0 2px;
+}
+.discussion-card .card-number {
+    display: inline-block;
+    background: #0D1B2A;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 9pt;
+    font-weight: 800;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.discussion-card .card-prompt {
+    font-size: 9pt;
+    line-height: 1.35;
+}
+.discussion-card .card-frame {
+    font-size: 8pt;
+    color: #666;
+    font-style: italic;
+    margin-top: 4px;
+    border-top: 1px dotted #ccc;
+    padding-top: 3px;
+    display: none;
+}
+
+/* --- Graphic Organizer (Page 5 Bottom) --- */
+.graphic-org {
+    padding: 8px;
+}
+.graphic-org .org-title {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 6px;
+}
+/* Cause-Effect Chain */
+.cause-effect-chain {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+}
+.chain-box {
+    flex: 1;
+    border: 2px solid #1A4780;
+    border-radius: 4px;
+    padding: 5px 6px;
+    font-size: 8pt;
+    min-height: 0.7in;
+    position: relative;
+}
+.chain-box.filled {
+    background: #e8f4f8;
+}
+.chain-box.blank {
+    background: #f9f9f9;
+}
+.chain-box .chain-label {
+    font-weight: 700;
+    font-size: 7pt;
+    color: #2E86AB;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.chain-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 16pt;
+    color: #1A4780;
+    font-weight: 900;
+}
+/* T-Chart */
+.t-chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #1A4780;
+}
+.t-chart-col {
+    padding: 6px;
+}
+.t-chart-col:first-child {
+    border-right: 2px solid #1A4780;
+}
+.t-chart-header {
+    font-weight: 800;
+    font-size: 10pt;
+    color: #0D1B2A;
+    text-align: center;
+    border-bottom: 2px solid #1A4780;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+.t-chart-item {
+    font-size: 9pt;
+    padding: 3px 0;
+    border-bottom: 1px dotted #ddd;
+    min-height: 0.3in;
+}
+
+/* --- Reflection Flap (Page 6 Top) --- */
+.reflection-flap {
+    padding: 8px;
+}
+.reflection-flap .flap-title {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 6px;
+}
+.tri-fold {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px dashed #555;
+    position: relative;
+}
+.tri-fold::before {
+    content: "\2702";
+    position: absolute;
+    top: -10px;
+    left: 6px;
+    font-size: 14px;
+    color: #555;
+    background: white;
+    padding: 0 3px;
+}
+.tri-fold-panel {
+    padding: 8px;
+    min-height: 1.8in;
+    position: relative;
+}
+.tri-fold-panel:not(:last-child) {
+    border-right: 2px dashed #999;
+}
+.tri-fold-panel .panel-header {
+    font-size: 10pt;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+.tri-fold-panel .panel-lines {
+    border-bottom: 1px solid #ddd;
+    height: 0.3in;
+    margin-bottom: 2px;
+}
+/* ESL sentence frames in reflection */
+.panel-frame {
+    font-size: 7.5pt;
+    color: #888;
+    font-style: italic;
+    display: none;
+}
+
+/* --- Career Spotlight Card (Page 6 Bottom) --- */
+.career-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.career-card {
+    border: 2px dashed #555;
+    padding: 8px;
+    position: relative;
+    border-radius: 4px;
+}
+.career-card::before {
+    content: "\2702";
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    font-size: 12px;
+    color: #555;
+    background: white;
+    padding: 0 2px;
+}
+.career-card .career-title {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #0D1B2A;
+    margin-bottom: 2px;
+}
+.career-card .career-desc {
+    font-size: 8.5pt;
+    line-height: 1.35;
+    color: #333;
+    margin-bottom: 4px;
+}
+.career-card .career-salary {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #2e7d32;
+}
+.career-card .career-path {
+    font-size: 8pt;
+    color: #666;
+    margin-top: 3px;
+    border-top: 1px solid #ddd;
+    padding-top: 3px;
+}
+.career-card .career-image {
+    width: 100%;
+    height: 1in;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    border: 1px solid #ddd;
+}
+
+/* --- Utility Classes --- */
+.text-center { text-align: center; }
+.text-small { font-size: 8pt; }
+.text-muted { color: #888; }
+.mt-4 { margin-top: 4px; }
+.mt-8 { margin-top: 8px; }
+.mb-4 { margin-bottom: 4px; }
+.mb-8 { margin-bottom: 8px; }
+.bold { font-weight: 700; }
+.clearfix::after { content: ""; display: table; clear: both; }

@@ -1,0 +1,16 @@
+/* Grade Level: Balanced scaffolding */
+/* Shows: Think About prompts */
+/* Hides: margin defs, sentence starters, check prompts, word bank, cognate sidebar, card frames, panel frames */
+.margin-def { display: none !important; }
+.sentence-starter { display: none !important; }
+.check-prompt { display: none !important; }
+.word-bank { display: none !important; }
+.cognate-sidebar { display: none !important; }
+.card-frame { display: none !important; }
+.panel-frame { display: none !important; }
+.vocab-phonetic { display: none !important; }
+.vocab-cognate { display: none !important; }
+
+/* Show Think About, hide Go Deeper */
+.think-about { display: block !important; }
+.go-deeper { display: none !important; }

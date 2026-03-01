@@ -1,0 +1,87 @@
+{
+  "story": {
+    "title": "Dr. Nair's Atomic Accounting",
+    "text": "People sometimes ask me if my job is like being a detective, and in a way, it is. I'm Dr. Priya Nair, a Materials Characterization Scientist, and my job is to solve the mystery of 'the disappearing act.' When we're inventing a new product, like a super-strong adhesive, we mix different ingredients together. These ingredients undergo a <strong>physical change</strong>, transforming from powders and liquids into a completely new material. My mystery isn't 'who did it,' but 'where did all the atoms go?'<br><br>The law of <strong>conservation</strong> of matter is the number one rule in my lab. It states that matter isn't created or destroyed, so if my starting ingredients have a certain <strong>mass</strong>, the final product—plus any byproducts—must have the exact same total mass. I call it atomic accounting. Every single atom must be accounted for.<br><br>To do this, I build a model of the system. I measure the <strong>Starting Mass</strong> with incredible precision. Then, I track how variables like <strong>Air Temperature</strong> affect the process. For instance, if I raise the temperature, I can observe how the amount of solid polymer decreases while the amount of liquid polymer increases as they change their <strong>state of matter</strong>. The two amounts are always linked; if one goes up, the other must go down, because they share the same total mass. It's a perfect balancing act.<br><br>The real challenge comes when a change produces something invisible, like a gas. It might seem like mass has vanished, but it hasn't! That gas is matter, and it has mass. My instruments are designed to capture and weigh these gases, ensuring my atomic accounting is perfect. By understanding how factors like temperature affect reaction speed or how increasing the surface area makes things dissolve faster, I can control the transformation of matter without ever losing a single atom. It's how we turn simple ingredients into the amazing products you use every day.",
+    "think_abouts": [],
+    "go_deeper": "How might Dr. Nair's methods for tracking mass apply to baking a cake, where gases are produced and water evaporates into the air?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Conservation",
+      "definition": "The principle that the total amount of matter remains constant, even when it changes form.",
+      "use_sentence": "The law of conservation meant Dr. Nair had to account for every atom from the start to the end of the experiment.",
+      "phonetic": "kon-sur-VAY-shun",
+      "cognate": "conservación"
+    },
+    {
+      "term": "State of Matter",
+      "definition": "The distinct form that matter can take, most commonly solid, liquid, or gas.",
+      "use_sentence": "When ice melts, its state of matter changes from solid to liquid, but its mass stays the same.",
+      "phonetic": "stayt uv MAT-er",
+      "cognate": "materia"
+    },
+    {
+      "term": "Physical Change",
+      "definition": "A change affecting the form of a substance, but not its chemical composition.",
+      "use_sentence": "Melting wax is a physical change because it is still wax, just in a different form.",
+      "phonetic": "FIZ-i-kuhl chaynj",
+      "cognate": "físico"
+    },
+    {
+      "term": "Mass",
+      "definition": "The measure of the amount of matter in an object or substance.",
+      "use_sentence": "Dr. Nair used a highly sensitive scale to measure the mass of the ingredients before mixing them.",
+      "phonetic": "mas",
+      "cognate": "masa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nair calls her work 'atomic accounting.' What do you think she means by that, and how does it relate to the conservation of mass?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that even invisible gases have mass. Describe an experiment you could design to prove that the gas produced in a reaction has mass.",
+      "frame": null
+    },
+    {
+      "prompt": "Why is it so important for a company like 3M to track every atom in a manufacturing process? What problems could happen if they didn't?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Tracking Changes in Dr. Nair's System",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "Air Temperature Increases"
+      },
+      {
+        "label": "Effect",
+        "content": "The amount of solid material decreases, while the amount of liquid material increases."
+      },
+      {
+        "label": "Cause",
+        "content": "A physical change occurs in a closed system."
+      },
+      {
+        "label": "Effect",
+        "content": "The total mass of the system remains exactly the same."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

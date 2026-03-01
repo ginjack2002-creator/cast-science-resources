@@ -1,0 +1,90 @@
+{
+  "story": {
+    "title": "Dr. Hashimoto's View from Space: Where Does a Tree's Mass Come From?",
+    "text": "People are often surprised when I tell them I study Earth's forests from space. I'm Dr. Tomoko Hashimoto, a Forest Carbon Scientist at NASA's Jet Propulsion Laboratory. My job is to solve a giant puzzle: Where does a tree get all its mass? If you weigh a tiny seed and then a giant redwood tree, where did all that extra stuff come from?<br><br>For a long time, people thought trees ‘ate’ soil. But we now know that's not true. Most of a tree is built from... air! Specifically, it’s built from a gas in the air called <strong>carbon dioxide (CO2)</strong>. At NASA, I use satellites to measure how much <strong>CO2 in Air</strong> is being 'inhaled' by forests all over the planet. Using energy from sunlight, trees perform a chemical magic trick called <strong>photosynthesis</strong>. This is the process plants use to turn light, water, and CO2 into a sugar called <strong>glucose</strong>. This sugar is both food and a building block for the tree.<br><br>In my computer models, I look at the relationship between these parts. The amount of <strong>Sunlight</strong> and <strong>CO2 in Air</strong> directly affects the <strong>Photosynthesis Rate</strong>—how fast the tree can make its food. A faster rate means the tree can build more wood, leaves, and roots, increasing its total <strong>Tree Biomass</strong>, which is the total mass of living material in the tree.<br><br>But my model gets even more detailed. I also have to think about things you can't easily see. How big are the roots underground? I estimate that a tree's <strong>Root Biomass</strong> can be almost a third of its total weight! My satellites can even measure the total <strong>Leaf Surface Area</strong> of a forest to predict how much CO2 it can absorb. It’s amazing to think that the giant, heavy trees we see are mostly made of air, transformed by the power of sunlight.",
+    "think_abouts": [
+      "Dr. Hashimoto's model shows that more sunlight leads to more tree mass. Why do you think trees in a rainforest grow so much bigger than trees in the arctic?",
+      "If a tree is mostly made from a gas in the air (CO2), what do you think happens to all that carbon when a tree dies and decomposes?"
+    ],
+    "go_deeper": "Dr. Hashimoto uses satellites to measure things like leaf area. What other tools or measurements could a scientist use to improve a model of forest growth?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The process plants use to convert light energy, water, and carbon dioxide into sugar (glucose) for food.",
+      "use_sentence": "Through photosynthesis, a small seedling can grow into a giant tree.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "CO2 (Carbon Dioxide)",
+      "definition": "A gas in the air that plants use as a key ingredient to build their mass.",
+      "use_sentence": "Plants 'breathe in' CO2 from the atmosphere to grow.",
+      "phonetic": null,
+      "cognate": "dióxido de carbono"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total mass, or weight, of all the living material in an organism, like a tree.",
+      "use_sentence": "A giant sequoia tree has an enormous amount of biomass.",
+      "phonetic": "BY-o-mass",
+      "cognate": "biomasa"
+    },
+    {
+      "term": "Glucose",
+      "definition": "A type of sugar that plants create during photosynthesis to use as energy and as a building block for growth.",
+      "use_sentence": "The glucose a plant makes is used to build its trunk, branches, and leaves.",
+      "phonetic": "GLOO-kose",
+      "cognate": "glucosa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hashimoto says most of a tree's mass comes from the air. Why does this idea seem surprising to many people? What did you think a tree was made of before this lesson?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that Dr. Hashimoto adds 'Root Biomass' to her models. Why is it important for a scientist to include parts of a system that are hard to see, like roots?",
+      "frame": null
+    },
+    {
+      "prompt": "How does Dr. Hashimoto's job as a Forest Carbon Scientist at NASA help us understand the health of our planet?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "From Air to Tree",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Inputs (Ingredients)",
+        "content": "Sunlight\nCO2 in Air\nWater (from soil)"
+      },
+      {
+        "label": "Process",
+        "content": "Photosynthesis"
+      },
+      {
+        "label": "Products (What's made)",
+        "content": "Glucose (Sugar for energy & building)\nOxygen (Released into air)"
+      },
+      {
+        "label": "Result",
+        "content": "Increased Tree Biomass (Growth)"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": null,
+    "right_items": null
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

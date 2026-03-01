@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Dr. Patel's Light Detective Work",
+    "text": "Hi, I'm Dr. Aisha Patel. I am a scientist at NASA. My job is to find planets that are orbiting distant stars. It’s like being a space detective!<br><br>The clues I use are made of light. But the light I see in my telescope is already very old. This is because stars are so far away. The light takes a long, long time to travel to Earth. The <strong>Star Distance</strong> tells me the <strong>Light Travel Time</strong>. For some stars, the light is millions of years old. I am looking at the past!<br><br>Next, I measure how bright a star looks from here. We call this its <strong>Apparent Brightness</strong>. But a star's brightness can be tricky. A dim star that is close can look brighter than a super bright star that is far away. I need to know the star’s real brightness, its actual <strong>Luminosity</strong>.<br><br>My computer models use both clues to understand a star. How far is it? How bright is it really? When I know that, I can look for tiny dips in the starlight. Those dips might be a new planet I’ve discovered. My model also has to think about other things, like the star's color and if space dust is blocking my view.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Telescope",
+        "definition": "A tool that makes faraway objects look closer."
+      },
+      {
+        "term": "Models",
+        "definition": "Computer programs that use rules to show how something works."
+      },
+      {
+        "term": "Dips",
+        "definition": "Small moments when something goes down or gets lower."
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Patel's job?",
+      "Why is the light from a star old?",
+      "What two main clues does Dr. Patel use to understand a star?"
+    ],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Light Year",
+      "definition": "The distance that light travels in one whole year.",
+      "use_sentence": "The closest star to our sun is more than four light years away.",
+      "phonetic": "LITE-yeer",
+      "cognate": "Año luz"
+    },
+    {
+      "term": "Luminosity",
+      "definition": "The real, actual amount of light a star gives off.",
+      "use_sentence": "A giant star has much more luminosity than a small star.",
+      "phonetic": "loo-min-AH-sit-ee",
+      "cognate": "Luminosidad"
+    },
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star looks to us when we see it from Earth.",
+      "use_sentence": "A nearby candle has a greater apparent brightness than a faraway streetlight.",
+      "phonetic": "uh-PARE-ent BRITE-ness",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel says she is 'looking at the past' when she looks at stars. What do you think that feels like?",
+      "frame": "I think looking at the past would feel ___ because ___."
+    },
+    {
+      "prompt": "Dr. Patel's model uses distance, brightness, color, and dust. What is another clue you think a scientist could add to their model to learn about a star?",
+      "frame": "A scientist could add ___ to their model because ___."
+    },
+    {
+      "prompt": "If two stars have the same real luminosity, what must be true about the one that looks dimmer from Earth?",
+      "frame": "The star that looks dimmer must be ___."
+    }
+  ],
+  "organizer": {
+    "title": "What Changes a Star's Apparent Brightness?",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause: A star is very far away.",
+        "content": "Effect: Its apparent brightness is..."
+      },
+      {
+        "label": "Cause: A star has very high luminosity.",
+        "content": "Effect: Its apparent brightness is..."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

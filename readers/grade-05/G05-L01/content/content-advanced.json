@@ -1,0 +1,87 @@
+{
+  "story": {
+    "title": "Dr. Williams and the Fire Puzzle",
+    "text": "My morning doesn’t start with coffee; it starts with data. As a Fire Behavior Analyst for the U.S. Forest Service, I’m a bit like a weather forecaster, but I predict the path of wildfires. My computer screen shows a map of California, but it’s a living model—a complex simulation of how Earth’s systems interact to create dangerous fire conditions.<br><br>First, I analyze the <strong>atmosphere</strong>. What are the winds doing today? A strong, hot wind acts like a giant bellows, fanning the flames and pushing a fire across the landscape with terrifying speed. Next, I examine the <strong>hydrosphere</strong>’s recent contributions, or more often, its absence. Has there been significant <strong>rainfall</strong>? A long drought leaves the <strong>biosphere</strong>—the trees, shrubs, and grasses—in a perilous state. This collection of <strong>dry vegetation</strong> becomes fuel, creating a volatile pathway for fire. My model visualizes these critical relationships: less rainfall leads to drier vegetation, and more fuel directly correlates with faster <strong>fire spread</strong>.<br><br>However, a truly predictive model must be more sophisticated. It's not enough to know if the ground is dry; I need to factor in the <strong>fuel moisture content</strong>, which is the amount of water held within the plants themselves. If it drops below a critical threshold, the landscape is primed to burn. Then, I layer on the <strong>geosphere</strong>. My model isn’t flat; it incorporates <strong>topography</strong>. Fire doesn't just spread; it accelerates uphill, sometimes doubling its speed on a steep slope. Every canyon and ridge must be accounted for.<br><br>Finally, I model one of the most unpredictable variables: <strong>ember transport</strong>. Fierce fires launch burning embers high into the air, where winds can carry them up to two miles ahead of the main fire front. These embers start new spot fires, allowing the blaze to jump highways and rivers. My job is to solve this intricate puzzle, connecting all of Earth’s systems to help firefighters stay safe and protect our communities.",
+    "think_abouts": [],
+    "go_deeper": "Dr. Williams’s model includes topography and fuel moisture. What other components from the atmosphere, hydrosphere, or geosphere do you think would be important to add to a fire spread model? Explain your reasoning.",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "The solid parts of the Earth, including rocks, mountains, soil, and landforms.",
+      "use_sentence": "Dr. Williams maps the geosphere, paying close attention to steep mountains where fire can spread quickly.",
+      "phonetic": "JEE-oh-sfeer",
+      "cognate": "geosfera"
+    },
+    {
+      "term": "Biosphere",
+      "definition": "All living things on Earth, such as plants, animals, fungi, and bacteria.",
+      "use_sentence": "The dry plants of the biosphere provide the fuel that wildfires need to burn.",
+      "phonetic": "BAI-oh-sfeer",
+      "cognate": "biosfera"
+    },
+    {
+      "term": "Hydrosphere",
+      "definition": "All the water on Earth, found in oceans, rivers, groundwater, ice, and in the air.",
+      "use_sentence": "A lack of rain from the hydrosphere means the moisture content in trees and soil is very low.",
+      "phonetic": "HAI-droh-sfeer",
+      "cognate": "hidrosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The layer of gases that surrounds Earth; the air we breathe.",
+      "use_sentence": "Strong winds from the atmosphere can carry embers miles ahead of the main fire.",
+      "phonetic": "AT-muh-sfeer",
+      "cognate": "atmósfera"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Williams calls her work a 'complex puzzle.' What makes predicting wildfire spread so challenging compared to predicting the daily weather?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were designing a new technology to help Fire Behavior Analysts, what kind of data would it collect and how would it help them make better predictions?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that fire 'accelerates uphill.' Why do you think the topography (the shape of the land) has such a significant effect on fire behavior?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Analyzing Fire Behavior",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause: Atmosphere Factor",
+        "content": ""
+      },
+      {
+        "label": "Cause: Biosphere Factor",
+        "content": ""
+      },
+      {
+        "label": "Cause: Geosphere Factor",
+        "content": ""
+      },
+      {
+        "label": "Overall Effect on Fire Spread",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

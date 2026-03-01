@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Whitehorse and the City's Breath",
+    "text": "My name is Dr. James Whitehorse, and I’m an Atmospheric Dispersion Modeler at NOAA. That’s a long title, but my job is simple to explain: I build computer maps that show where air pollution travels in a city.<br><br>Think of a city as a complex system. My model starts with the sources, like <strong>Vehicle Traffic Density</strong>. When thousands of cars and trucks are on a freeway, they release a lot of exhaust. This increases the <strong>Air Pollution Concentration</strong> in the air nearby. My model shows this as a plume of dirty air spreading out from the highway.<br><br>But the air isn’t standing still. The next thing I add to my model is <strong>Wind Speed</strong>. A strong, steady wind acts like a giant fan. It disperses, or spreads out, the pollution, making the air cleaner for everyone. On a calm day, however, that pollution can just sit and build up, especially in certain neighborhoods.<br><br>This work matters because poor air quality has a real <strong>Respiratory Health Impact</strong>, affecting how well people can breathe. My models help us predict the <strong>Air Quality Index</strong> (a number that tells us how clean the air is). We track harmful things like <strong>Particulate Matter</strong> (tiny bits of dust and soot) that can get into your lungs.<br><br>My model also considers other factors, like how tall buildings create 'canyons' that trap pollution, or how the time of day affects traffic. By understanding how all these parts work together, we can help cities make smarter choices. It's all part of a bigger idea called <strong>Environmental Justice</strong> (the fair idea that everyone deserves to breathe clean air). My goal is to use science to help make that a reality for every community.",
+    "think_abouts": [
+      "What do you think happens to air pollution on a day with no wind?",
+      "Why is it important for city planners to see Dr. Whitehorse's models?"
+    ],
+    "go_deeper": "Besides traffic, what are some other sources of air pollution Dr. Whitehorse might need to add to his models for a big city?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Air Quality Index",
+      "definition": "A number used by the government to communicate to the public how polluted the air currently is.",
+      "use_sentence": "When the Air Quality Index is high, it's a good day to play inside.",
+      "phonetic": null,
+      "cognate": "Índice"
+    },
+    {
+      "term": "Particulate Matter",
+      "definition": "A mix of tiny solid particles and liquid droplets in the air, like dust, soot, and smoke.",
+      "use_sentence": "Wildfire smoke releases a lot of Particulate Matter into the atmosphere.",
+      "phonetic": "pahr-TIK-yoo-lit MAT-er",
+      "cognate": "Materia"
+    },
+    {
+      "term": "Respiratory",
+      "definition": "Relating to the organs we use for breathing, like the lungs.",
+      "use_sentence": "Pollution can cause respiratory problems like coughing and asthma.",
+      "phonetic": "res-per-uh-TOR-ee",
+      "cognate": "Respiratorio"
+    },
+    {
+      "term": "Environmental Justice",
+      "definition": "The idea that all people, regardless of race or income, deserve equal protection from environmental and health hazards.",
+      "use_sentence": "Building parks in all neighborhoods is an act of environmental justice.",
+      "phonetic": "en-vy-ruhn-MEN-tal JUS-tis",
+      "cognate": "Justicia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Whitehorse's models show that pollution is often highest near major highways. What are some ideas your community could try to protect the health of people living there?",
+      "frame": "One idea to protect people's health is ___."
+    },
+    {
+      "prompt": "If you could add one more thing to Dr. Whitehorse's model to make it more accurate, what would it be and why?",
+      "frame": "I would add ___ to the model because ___."
+    }
+  ],
+  "organizer": {
+    "title": "Mapping Air Quality",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Vehicle Traffic"
+      },
+      {
+        "label": "Effect",
+        "content": "Higher Air Pollution"
+      },
+      {
+        "label": "Cause",
+        "content": "Stronger Wind Speed"
+      },
+      {
+        "label": "Effect",
+        "content": "Lower Air Pollution"
+      },
+      {
+        "label": "Cause",
+        "content": "Higher Air Pollution"
+      },
+      {
+        "label": "Effect",
+        "content": "Negative Respiratory Health Impacts"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

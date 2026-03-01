@@ -1,0 +1,136 @@
+{
+  "story": {
+    "title": "Dr. Chen's Recycling Team",
+    "text": "My name is Dr. Marcus Chen. I am a Bioremediation Engineer. I help clean up our Earth. My team uses nature's recyclers to do the job. We have a big question: how can we clean polluted soil faster?<br><br>I use a computer model to find the answer. The model needs information. First, I tell it about the <strong>organic matter</strong>. This is the pollution we need to clean. It is food for my tiny helpers.<br><br>Next, I add the soil moisture. My helpers need water to live and work. These helpers are called <strong>decomposers</strong>. They are bacteria and fungi. They are my recycling team!<br><br>My model shows their activity. When the decomposers eat the pollution, they do something amazing. They release <strong>nutrients</strong> back into the soil. This makes the soil healthy again for plants. This is part of the <strong>matter cycle</strong>.<br><br>My job is to help the decomposers work their best. I also think about other things. Is it warm or cold outside? Is there enough oxygen in the soil? What type of material are we cleaning? All these things change how fast my team works.",
+    "think_abouts": [],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Bioremediation Engineer",
+        "definition": "A scientist who uses living things to clean the environment."
+      },
+      {
+        "term": "Model",
+        "definition": "A simple way to show how something complex works."
+      },
+      {
+        "term": "Pollution",
+        "definition": "Something harmful that is added to the environment."
+      }
+    ],
+    "check_prompts": [
+      "What two things do Dr. Chen's decomposers need to do their job?"
+    ],
+    "word_bank": [
+      "Decomposer",
+      "Nutrient",
+      "Organic Matter",
+      "Matter Cycle"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Organic Matter",
+        "spanish": "Materia Orgánica"
+      },
+      {
+        "english": "Decomposer",
+        "spanish": "Descomponedor"
+      },
+      {
+        "english": "Nutrient",
+        "spanish": "Nutriente"
+      },
+      {
+        "english": "Cycle",
+        "spanish": "Ciclo"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Decomposer",
+      "definition": "A living thing, like bacteria or fungi, that eats dead things.",
+      "use_sentence": "A worm is a decomposer that helps make healthy soil.",
+      "phonetic": "dee-kom-POH-zer",
+      "cognate": "Descomponedor"
+    },
+    {
+      "term": "Nutrient",
+      "definition": "Food that plants and animals need to grow strong.",
+      "use_sentence": "The soil is full of nutrients for the new flowers.",
+      "phonetic": "NOO-tree-ent",
+      "cognate": "Nutriente"
+    },
+    {
+      "term": "Organic Matter",
+      "definition": "Stuff that comes from something that was once alive, like leaves or wood.",
+      "use_sentence": "Fallen leaves are organic matter that will break down in the soil.",
+      "phonetic": "or-GAN-ik MAT-er",
+      "cognate": "Materia Orgánica"
+    },
+    {
+      "term": "Matter Cycle",
+      "definition": "How matter moves from dead things back to living things in a loop.",
+      "use_sentence": "The matter cycle makes sure nothing is wasted in a forest.",
+      "phonetic": "MAT-er SY-kul",
+      "cognate": "Ciclo de la Materia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen's model includes soil moisture. What do you think would happen to the decomposer activity if there was no rain for a long time (a drought)?",
+      "frame": "If there was a drought, I think the decomposer activity would ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen also thinks about temperature. How might his cleanup plan change between a project in a hot desert and a project in the cold arctic?",
+      "frame": "In the desert, the cleanup might be ___. In the arctic, the cleanup might be ___."
+    },
+    {
+      "prompt": "What is another component you think Dr. Chen should add to his computer model to understand decomposition better?",
+      "frame": "I think Dr. Chen should add ___ to his model because ___."
+    }
+  ],
+  "organizer": {
+    "title": "Nature's Recycling System: Cause and Effect",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "If this INCREASES...",
+        "content": "Dead Organic Matter (food)"
+      },
+      {
+        "label": "Then this also INCREASES...",
+        "content": "Decomposer Activity"
+      },
+      {
+        "label": "If this INCREASES...",
+        "content": "Soil Moisture (water)"
+      },
+      {
+        "label": "Then this also INCREASES...",
+        "content": "Decomposer Activity"
+      },
+      {
+        "label": "If this INCREASES...",
+        "content": "Decomposer Activity"
+      },
+      {
+        "label": "Then this also INCREASES...",
+        "content": "Nutrient Release"
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

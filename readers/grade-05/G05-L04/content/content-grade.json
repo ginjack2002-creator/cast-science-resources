@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Morales and the Mountain Water Bank",
+    "text": "My name is Dr. Rafael Morales, and I’m a glacier hydrologist. That’s a scientist who studies how water moves from glaciers and snowfields. For millions of people who live in dry areas, the snow that piles up on mountains is like a giant, frozen water savings account for the summer.<br><br>Every day, I use computer models to help answer our big question: What controls how much fresh water is available? My model starts with data on <strong>Precipitation</strong> (any form of water falling from clouds, like rain or snow). The amount of snowfall is a key input. More <strong>Precipitation</strong> usually leads to more <strong>Freshwater Availability</strong> for communities downstream.<br><br>But it's not that simple. My model also has to include <strong>Temperature</strong>. When spring and summer get warmer, it increases the <strong>Evaporation Rate</strong>, which is how fast water turns into vapor and disappears into the air. A lot of that precious snowmelt can vanish before it ever reaches a river or fills a <strong>reservoir</strong> (a natural or artificial storage place for water). So, a higher <strong>Evaporation Rate</strong> means less <strong>Freshwater Availability</strong>.<br><br>My work is to understand how all these parts connect. I even hike into the mountains to measure the snowpack depth to make my model more accurate. The predictions we make help city leaders and farmers plan for the year. It’s like being a detective, following the journey of a single snowflake until it flows from someone’s tap.",
+    "think_abouts": [
+      "Why would Dr. Morales call a mountain's snowpack a 'water savings account'?",
+      "What might happen to freshwater availability if the temperature is very high but precipitation is very low one year?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Precipitation",
+      "definition": "Water that falls from the atmosphere to the Earth's surface as rain, snow, sleet, or hail.",
+      "use_sentence": "The forecast calls for heavy precipitation this weekend, so we can expect a lot of rain.",
+      "phonetic": "pri-sip-i-TAY-shun",
+      "cognate": "Precipitación"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process of a liquid turning into a gas, or vapor.",
+      "use_sentence": "After the rainstorm, we saw evaporation happen as the puddles dried up in the sun.",
+      "phonetic": "ee-vap-uh-RAY-shun",
+      "cognate": "Evaporación"
+    },
+    {
+      "term": "Freshwater",
+      "definition": "Water that has a very low salt content, making it suitable for drinking and farming.",
+      "use_sentence": "Lakes, rivers, and groundwater are all important sources of freshwater.",
+      "phonetic": "FRESH-wah-ter",
+      "cognate": null
+    },
+    {
+      "term": "Reservoir",
+      "definition": "A large natural or man-made lake used as a source of water supply.",
+      "use_sentence": "The city built a new reservoir to store enough water for the dry summer months.",
+      "phonetic": "REZ-er-vwar",
+      "cognate": "Reservorio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Morales uses a computer model to predict water availability. What are some decisions a city leader might make based on his predictions for a dry year?",
+      "frame": null
+    },
+    {
+      "prompt": "The story mentions that farms and cities both need water. How could understanding the water system help them share this important resource?",
+      "frame": null
+    },
+    {
+      "prompt": "What other factors, besides the ones in the story, do you think could affect a community's freshwater availability?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Water Availability: Causes and Effects",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Cause",
+        "content": "More Precipitation"
+      },
+      {
+        "label": "Effect",
+        "content": "Increases Freshwater Availability"
+      },
+      {
+        "label": "Cause",
+        "content": "Higher Temperature"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      },
+      {
+        "label": "Cause",
+        "content": "Increased Evaporation Rate"
+      },
+      {
+        "label": "Effect",
+        "content": ""
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

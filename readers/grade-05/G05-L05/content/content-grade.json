@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Nair and the Case of the Vanishing Liquid",
+    "text": "Hi, I'm Dr. Priya Nair, and I’m a materials scientist at 3M. You could also call me a 'matter detective.' My job is to solve mysteries about how matter changes during manufacturing.<br><br>Imagine we’re creating a new, super-strong coating for phone screens. We start with a special liquid mixture in a sealed container. The first thing I do is measure its starting <strong>mass</strong>, which is the total amount of matter we begin with. Then, we spread the liquid very thinly onto a glass plate inside the chamber.<br><br>Next, we change the air temperature. The heat causes a <strong>physical change</strong>—a change in the substance's form, not what it's made of. The liquid seems to vanish, leaving a tough, solid film behind. But where did the rest of the liquid go? This is the core of my job: applying the law of <strong>conservation</strong> of matter. This principle states that matter can't be created or destroyed.<br><br>So, the 'missing' matter didn't disappear; it just changed its <strong>state of matter</strong>. It evaporated, turning from a liquid into an invisible gas. My instruments are sensitive enough to measure the mass of the solid film and also the mass of the gas that now fills the sealed chamber. When I add those two measurements together, the total mass is exactly the same as our starting mass. Every atom is accounted for! By tracking where all the matter goes, even the invisible parts, we can perfect our products and make sure nothing is wasted.",
+    "think_abouts": [
+      "Dr. Nair uses a sealed chamber. Why is it important that the system is sealed to prove the law of conservation?",
+      "What are the two states of matter Dr. Nair measures at the end of her experiment?"
+    ],
+    "go_deeper": "How might changing the air temperature affect the *speed* of the physical change Dr. Nair observes?",
+    "margin_defs": [],
+    "check_prompts": [],
+    "word_bank": [],
+    "cognate_sidebar": []
+  },
+  "vocabulary": [
+    {
+      "term": "Conservation",
+      "definition": "The principle that the total amount of matter stays the same, even when it changes form.",
+      "use_sentence": "Dr. Nair's work applies the law of conservation to make sure no material is lost.",
+      "phonetic": "/kon-ser-VEY-shuhn/",
+      "cognate": "Conservación"
+    },
+    {
+      "term": "State of Matter",
+      "definition": "The physical form that matter takes, such as a solid, liquid, or gas.",
+      "use_sentence": "The liquid changed its state of matter to a gas when it was heated.",
+      "phonetic": "/steyt uhv MAT-er/",
+      "cognate": "Estado de la materia"
+    },
+    {
+      "term": "Physical Change",
+      "definition": "A change in the size, shape, or state of matter that does not create a new substance.",
+      "use_sentence": "Melting ice is a physical change because it is still water.",
+      "phonetic": "/FIZ-i-kuhl cheynj/",
+      "cognate": "Cambio físico"
+    },
+    {
+      "term": "Mass",
+      "definition": "The amount of matter that makes up an object.",
+      "use_sentence": "She measured the mass of the liquid before and after the experiment.",
+      "phonetic": "/mas/",
+      "cognate": "Masa"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nair tracks matter that seems to disappear. Describe another example from your life where matter changes state, like a puddle drying up or your breath fogging a window.",
+      "frame": null
+    },
+    {
+      "prompt": "Why is it important for a company to track all its materials and make sure nothing is wasted?",
+      "frame": null
+    },
+    {
+      "prompt": "Dr. Nair mentioned spreading the liquid thinly to speed up the change. How is this similar to a sugar cube dissolving faster when it's crushed into powder?",
+      "frame": null
+    }
+  ],
+  "organizer": {
+    "title": "Tracking Matter's Changes",
+    "type": "cause-effect",
+    "boxes": [
+      {
+        "label": "Start",
+        "content": "Liquid coating has a starting mass of 10 grams."
+      },
+      {
+        "label": "Cause",
+        "content": "Heat is added to the liquid."
+      },
+      {
+        "label": "Effect 1: Solid Formed",
+        "content": "A solid film with a mass of 4g is left behind."
+      },
+      {
+        "label": "Effect 2: Gas Produced",
+        "content": "An invisible gas with a mass of ___ g is captured."
+      },
+      {
+        "label": "Conclusion",
+        "content": "The starting mass (10g) = the final mass (4g + ___ g). Matter is conserved."
+      }
+    ],
+    "left_header": null,
+    "right_header": null,
+    "left_items": [],
+    "right_items": []
+  },
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}
