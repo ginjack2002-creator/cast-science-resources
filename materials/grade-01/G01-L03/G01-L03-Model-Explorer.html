@@ -6,162 +6,145 @@
 <title>Model Explorer: How Do Baby Animals Look Like Their Parents?</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f7ff;
+body{font-family:'Comic Sans MS','Segoe UI',system-ui,sans-serif;background:#f0f7ff;
   min-height:100vh;display:flex;flex-direction:column;align-items:center}
 .header{background:linear-gradient(135deg,#1A4780,#2E86AB);color:#fff;
   width:100%;padding:16px 24px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.15)}
-.header h1{font-size:clamp(18px,4vw,28px);margin-bottom:4px}
-.header .sub{font-size:clamp(12px,2.5vw,16px);opacity:.85}
-.nav{display:flex;gap:8px;justify-content:center;padding:12px;flex-wrap:wrap}
-.nav button{padding:10px 20px;border:3px solid #1A4780;border-radius:24px;
-  background:#fff;color:#1A4780;font-size:clamp(13px,2.5vw,16px);font-weight:700;
-  cursor:pointer;transition:all .2s}
-.nav button:hover,.nav button.active{background:#1A4780;color:#fff;transform:scale(1.05)}
+.header h1{font-size:clamp(22px,5vw,36px);margin-bottom:4px}
+.header .sub{font-size:clamp(14px,3vw,20px);opacity:.9}
+.nav{display:flex;gap:10px;justify-content:center;padding:14px;flex-wrap:wrap}
+.nav button{padding:12px 24px;border:4px solid #1A4780;border-radius:30px;
+  background:#fff;color:#1A4780;font-size:clamp(15px,3vw,20px);font-weight:700;
+  cursor:pointer;transition:all .2s;font-family:inherit}
+.nav button:hover,.nav button.active{background:#1A4780;color:#fff;transform:scale(1.08)}
 .nav button.done{border-color:#27AE60;color:#27AE60}
 .nav button.done.active{background:#27AE60;color:#fff}
-.screen{display:none;width:min(95vw,700px);padding:20px;margin:8px auto}
+.screen{display:none;width:min(95vw,750px);padding:20px;margin:8px auto}
 .screen.active{display:block}
-.screen h2{color:#1A4780;font-size:clamp(18px,3.5vw,24px);text-align:center;margin-bottom:16px}
-.instruction{background:#fff;border-left:4px solid #E67E22;padding:12px 16px;
-  border-radius:0 8px 8px 0;margin-bottom:20px;font-size:clamp(14px,2.5vw,17px);color:#333}
+.screen h2{color:#1A4780;font-size:clamp(22px,4vw,30px);text-align:center;margin-bottom:16px}
+.instruction{background:#fff;border-left:6px solid #E67E22;padding:14px 18px;
+  border-radius:0 12px 12px 0;margin-bottom:20px;font-size:clamp(16px,3vw,20px);
+  color:#333;box-shadow:0 2px 6px rgba(0,0,0,.06)}
 
-/* Screen 1: Sort */
-.sort-area{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
-.sort-box{background:#fff;border:3px dashed #2E86AB;border-radius:16px;padding:16px;
-  min-width:200px;min-height:140px;flex:1;text-align:center;transition:border-color .3s}
-.sort-box h3{color:#fff;padding:8px;border-radius:8px;margin-bottom:12px;
-  font-size:clamp(13px,2.5vw,16px)}
-.sort-box.external h3{background:#E67E22}
-.sort-box.internal h3{background:#2E86AB}
-.sort-box.highlight{border-color:#E67E22;background:#fff8f0}
-.cards{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+/* Sort */
+.sort-area{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.sort-box{background:#fff;border:4px dashed #2E86AB;border-radius:20px;padding:18px;
+  min-width:220px;min-height:160px;flex:1;text-align:center;transition:all .3s}
+.sort-box h3{color:#fff;padding:10px;border-radius:12px;margin-bottom:14px;
+  font-size:clamp(15px,3vw,20px)}
+.sort-box.external h3{background:linear-gradient(135deg,#E67E22,#F39C12)}
+.sort-box.internal h3{background:linear-gradient(135deg,#2E86AB,#5DB7DE)}
+.sort-box.highlight{border-color:#E67E22;background:#fff8f0;transform:scale(1.02)}
+.cards{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
 .card{background:linear-gradient(135deg,#5DB7DE,#2E86AB);color:#fff;
-  padding:12px 20px;border-radius:12px;font-size:clamp(14px,2.5vw,18px);
+  padding:14px 24px;border-radius:16px;font-size:clamp(16px,3vw,22px);
   font-weight:700;cursor:grab;user-select:none;touch-action:none;
-  box-shadow:0 3px 8px rgba(0,0,0,.15);transition:transform .2s}
-.card:active{transform:scale(1.08);cursor:grabbing}
-.card.placed{opacity:.4;pointer-events:none}
-.placed-card{background:#E8F5E9;border:2px solid #27AE60;border-radius:10px;
-  padding:8px 14px;margin:4px;display:inline-block;font-weight:600;color:#1A4780;
-  font-size:clamp(13px,2.5vw,16px)}
+  box-shadow:0 4px 10px rgba(0,0,0,.15);transition:transform .2s}
+.card:active{transform:scale(1.1);cursor:grabbing}
+.card.placed{opacity:.3;pointer-events:none}
+.placed-card{background:#E8F5E9;border:3px solid #27AE60;border-radius:12px;
+  padding:10px 16px;margin:5px;display:inline-block;font-weight:700;color:#1A4780;
+  font-size:clamp(15px,3vw,18px)}
 
-/* Screen 2: Fix Arrows */
-.model-display{background:#fff;border-radius:16px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.08);
-  text-align:center;margin-bottom:16px}
-.comp-row{display:flex;align-items:center;justify-content:center;gap:12px;
-  flex-wrap:wrap;margin:12px 0}
-.comp-box{background:linear-gradient(135deg,#f0f7ff,#e0efff);border:3px solid #1A4780;
-  border-radius:12px;padding:14px 20px;font-weight:700;font-size:clamp(14px,2.5vw,18px);
-  color:#1A4780;min-width:120px}
-.arrow-btn{width:64px;height:64px;border-radius:50%;border:3px solid #ccc;
-  font-size:28px;font-weight:900;cursor:pointer;transition:all .3s;
-  display:flex;align-items:center;justify-content:center;background:#fff}
+/* Arrows */
+.model-display{background:#fff;border-radius:20px;padding:28px;
+  box-shadow:0 3px 15px rgba(0,0,0,.08);text-align:center;margin-bottom:18px}
+.comp-row{display:flex;align-items:center;justify-content:center;gap:16px;
+  flex-wrap:wrap;margin:16px 0}
+.comp-box{background:linear-gradient(135deg,#E3F2FD,#BBDEFB);border:4px solid #1A4780;
+  border-radius:16px;padding:16px 24px;font-weight:700;font-size:clamp(16px,3vw,22px);
+  color:#1A4780;min-width:130px}
+.arrow-btn{width:72px;height:72px;border-radius:50%;border:4px solid #ccc;
+  font-size:32px;font-weight:900;cursor:pointer;transition:all .3s;
+  display:flex;align-items:center;justify-content:center;background:#fff;font-family:inherit}
 .arrow-btn.positive{border-color:#27AE60;color:#27AE60;background:#E8F5E9}
 .arrow-btn.negative{border-color:#E74C3C;color:#E74C3C;background:#FDEDEC}
 .arrow-btn:hover{transform:scale(1.15)}
-.arrow-label{font-size:clamp(11px,2vw,13px);color:#666;margin-top:4px;text-align:center}
+.arrow-label{font-size:clamp(12px,2.5vw,15px);color:#666;margin-top:6px;text-align:center;font-weight:600}
 
-/* Screen 3: Explore */
-.explore-panel{background:#fff;border-radius:16px;padding:24px;
-  box-shadow:0 2px 12px rgba(0,0,0,.08);text-align:center}
-.ctrl-row{display:flex;align-items:center;justify-content:center;gap:16px;
-  margin:16px 0;flex-wrap:wrap}
-.ctrl-label{font-size:clamp(14px,2.5vw,18px);font-weight:700;color:#1A4780;min-width:100px}
-.ctrl-btn{width:56px;height:56px;border-radius:50%;border:none;
-  font-size:28px;font-weight:900;cursor:pointer;color:#fff;transition:transform .2s}
-.ctrl-btn:hover{transform:scale(1.12)}
-.ctrl-btn.up{background:#27AE60}
-.ctrl-btn.down{background:#E74C3C}
-.bar-container{width:min(80%,300px);height:32px;background:#eee;border-radius:16px;
+/* Explore */
+.explore-panel{background:#fff;border-radius:20px;padding:28px;
+  box-shadow:0 3px 15px rgba(0,0,0,.08);text-align:center}
+.ctrl-row{display:flex;align-items:center;justify-content:center;gap:18px;
+  margin:18px 0;flex-wrap:wrap}
+.ctrl-label{font-size:clamp(16px,3vw,22px);font-weight:700;color:#1A4780;min-width:110px}
+.ctrl-btn{width:64px;height:64px;border-radius:50%;border:none;
+  font-size:32px;font-weight:900;cursor:pointer;color:#fff;transition:transform .2s;font-family:inherit}
+.ctrl-btn:hover{transform:scale(1.15)}
+.ctrl-btn.up{background:linear-gradient(135deg,#27AE60,#2ECC71)}
+.ctrl-btn.down{background:linear-gradient(135deg,#E74C3C,#C0392B)}
+.bar-container{width:min(80%,300px);height:36px;background:#eee;border-radius:18px;
   overflow:hidden;margin:8px auto;position:relative}
-.bar-fill{height:100%;border-radius:16px;transition:width .5s ease;
-  display:flex;align-items:center;justify-content:flex-end;padding-right:8px;
-  font-size:13px;font-weight:700;color:#fff}
+.bar-fill{height:100%;border-radius:18px;transition:width .5s ease;
+  display:flex;align-items:center;justify-content:flex-end;padding-right:10px;
+  font-size:15px;font-weight:700;color:#fff}
 .bar-fill.ext{background:linear-gradient(90deg,#E67E22,#F39C12)}
 .bar-fill.int{background:linear-gradient(90deg,#2E86AB,#5DB7DE)}
-.result-text{font-size:clamp(14px,2.5vw,17px);color:#333;margin:12px 0;
-  min-height:48px;line-height:1.5}
-.sentence{background:#FFF8E1;border:2px solid #F39C12;border-radius:12px;
-  padding:14px 20px;font-size:clamp(14px,2.5vw,17px);font-weight:600;
-  color:#1A4780;margin-top:16px}
+.result-text{font-size:clamp(16px,3vw,20px);color:#333;margin:14px 0;
+  min-height:50px;line-height:1.5}
+.sentence{background:#FFF8E1;border:3px solid #F39C12;border-radius:16px;
+  padding:16px 24px;font-size:clamp(16px,3vw,20px);font-weight:600;
+  color:#1A4780;margin-top:18px}
 
 /* Celebration */
 .celebrate{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999}
-.star{position:absolute;font-size:clamp(20px,5vw,36px);animation:fall 1.5s ease-out forwards}
+.star{position:absolute;font-size:clamp(24px,6vw,44px);animation:fall 1.8s ease-out forwards}
 @keyframes fall{0%{opacity:1;transform:translateY(-20px) rotate(0deg) scale(1)}
   100%{opacity:0;transform:translateY(80vh) rotate(720deg) scale(.3)}}
 .check-anim{animation:pop .5s ease}
 @keyframes pop{0%{transform:scale(0)}50%{transform:scale(1.3)}100%{transform:scale(1)}}
-
-/* Feedback */
-.feedback{padding:12px 20px;border-radius:12px;text-align:center;
-  font-size:clamp(14px,2.5vw,17px);font-weight:600;margin:12px 0;
-  animation:pop .4s ease}
-.feedback.correct{background:#E8F5E9;color:#27AE60;border:2px solid #27AE60}
-.feedback.wrong{background:#FDEDEC;color:#E74C3C;border:2px solid #E74C3C}
-.feedback.info{background:#FFF8E1;color:#E67E22;border:2px solid #E67E22}
-
-.reset-btn{display:block;margin:20px auto 0;padding:10px 24px;border:2px solid #2E86AB;
-  border-radius:20px;background:#fff;color:#2E86AB;font-size:15px;font-weight:600;
-  cursor:pointer}
+.feedback{padding:14px 24px;border-radius:16px;text-align:center;
+  font-size:clamp(16px,3vw,20px);font-weight:700;margin:14px 0;animation:pop .4s ease}
+.feedback.correct{background:#E8F5E9;color:#27AE60;border:3px solid #27AE60}
+.feedback.wrong{background:#FDEDEC;color:#E74C3C;border:3px solid #E74C3C}
+.reset-btn{display:block;margin:20px auto 0;padding:12px 28px;border:3px solid #2E86AB;
+  border-radius:24px;background:#fff;color:#2E86AB;font-size:18px;font-weight:700;
+  cursor:pointer;font-family:inherit}
 .reset-btn:hover{background:#2E86AB;color:#fff}
 </style>
 </head>
 <body>
-
 <div class="header">
   <h1>Model Explorer</h1>
   <div class="sub" id="lessonTitle"></div>
 </div>
-
 <div class="nav">
   <button id="nav1" class="active" onclick="showScreen(1)">1. Sort the Parts!</button>
   <button id="nav2" onclick="showScreen(2)">2. Fix the Arrows!</button>
   <button id="nav3" onclick="showScreen(3)">3. What Happens?</button>
 </div>
-
-<!-- SCREEN 1: Sort the Parts -->
 <div class="screen active" id="screen1">
   <h2>Sort the Parts!</h2>
   <div class="instruction">Drag each part into the correct box. <b>We Control</b> means WE
-    decide to change it. <b>Changes by Itself</b> means it changes on its own when something
-    else changes.</div>
+    decide to change it. <b>Changes by Itself</b> means it changes on its own!</div>
   <div class="cards" id="cardArea"></div>
   <div class="sort-area">
     <div class="sort-box external" id="extBox" ondragover="allowDrop(event)"
          ondrop="dropCard(event,'external')">
-      <h3>We Control (Outside)</h3>
-      <div id="extCards"></div>
+      <h3>We Control (Outside)</h3><div id="extCards"></div>
     </div>
     <div class="sort-box internal" id="intBox" ondragover="allowDrop(event)"
          ondrop="dropCard(event,'internal')">
-      <h3>Changes by Itself (Inside)</h3>
-      <div id="intCards"></div>
+      <h3>Changes by Itself (Inside)</h3><div id="intCards"></div>
     </div>
   </div>
   <div id="sortFeedback"></div>
 </div>
-
-<!-- SCREEN 2: Fix the Arrows -->
 <div class="screen" id="screen2">
   <h2>Fix the Arrows!</h2>
-  <div class="instruction">The arrows are WRONG! Tap each arrow button to change it between
+  <div class="instruction">The arrows are WRONG! Tap each arrow to change it between
     <span style="color:#27AE60;font-weight:700">+ (go together)</span> and
-    <span style="color:#E74C3C;font-weight:700">- (go opposite)</span> until the model is correct.</div>
+    <span style="color:#E74C3C;font-weight:700">- (go opposite)</span> until correct!</div>
   <div class="model-display" id="arrowModel"></div>
   <div id="arrowFeedback"></div>
 </div>
-
-<!-- SCREEN 3: Explore -->
 <div class="screen" id="screen3">
   <h2>What Happens?</h2>
-  <div class="instruction">Press the UP or DOWN buttons to change the outside part.
+  <div class="instruction">Press UP or DOWN buttons to change the outside part.
     Watch what happens to the inside parts!</div>
   <div class="explore-panel" id="explorePanel"></div>
 </div>
-
 <script>
-// ── Lesson data (injected by Python) ──
 const LESSON = {
   "title": "How Do Baby Animals Look Like Their Parents?",
   "components": [
@@ -196,277 +179,112 @@ const LESSON = {
   ],
   "sentenceFrame": "When the parent has _______, the baby also has _______."
 };
+let screenDone=[false,false,false],sortCorrect={},arrowStates={},exploreLevels={};
+document.getElementById('lessonTitle').textContent=LESSON.title;
+initSort();initArrows();initExplore();
 
-// ── State ──
-let screenDone = [false, false, false];
-let sortCorrect = {};
-let arrowStates = {};
-let exploreLevels = {};
-
-// ── Init ──
-document.getElementById('lessonTitle').textContent = LESSON.title;
-initSort();
-initArrows();
-initExplore();
-
-// ── Navigation ──
-function showScreen(n) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
-  document.getElementById('screen' + n).classList.add('active');
-  document.getElementById('nav' + n).classList.add('active');
+function showScreen(n){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('screen'+n).classList.add('active');
+  document.getElementById('nav'+n).classList.add('active');
 }
-
-// ── SCREEN 1: Sort the Parts ──
-function initSort() {
-  const cardArea = document.getElementById('cardArea');
-  // Shuffle components
-  let comps = [...LESSON.components];
-  for (let i = comps.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [comps[i], comps[j]] = [comps[j], comps[i]];
-  }
-  comps.forEach((comp, i) => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.id = 'card-' + i;
-    card.textContent = comp.name;
-    card.draggable = true;
-    card.dataset.name = comp.name;
-    card.dataset.external = comp.external;
-    card.ondragstart = e => {
-      e.dataTransfer.setData('text/plain', i.toString());
-      card.style.opacity = '0.5';
-    };
-    card.ondragend = () => card.style.opacity = '1';
-    // Touch support
-    card.ontouchstart = e => {
-      e.preventDefault();
-      card.dataset.dragging = 'true';
-      card.style.transform = 'scale(1.08)';
-    };
-    card.ontouchend = e => {
-      e.preventDefault();
-      card.style.transform = '';
-      card.dataset.dragging = 'false';
-      const touch = e.changedTouches[0];
-      const el = document.elementFromPoint(touch.clientX, touch.clientY);
-      const box = el ? el.closest('.sort-box') : null;
-      if (box) {
-        const type = box.classList.contains('external') ? 'external' : 'internal';
-        placeCard(i, type);
-      }
-    };
-    cardArea.appendChild(card);
+function initSort(){
+  const area=document.getElementById('cardArea');
+  let comps=[...LESSON.components];
+  for(let i=comps.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[comps[i],comps[j]]=[comps[j],comps[i]];}
+  comps.forEach((comp,i)=>{
+    const card=document.createElement('div');card.className='card';card.id='card-'+i;
+    card.textContent=comp.name;card.draggable=true;card.dataset.name=comp.name;card.dataset.external=comp.external;
+    card.ondragstart=e=>{e.dataTransfer.setData('text/plain',i.toString());card.style.opacity='0.5';};
+    card.ondragend=()=>card.style.opacity='1';
+    card.ontouchstart=e=>{e.preventDefault();card.style.transform='scale(1.1)';};
+    card.ontouchend=e=>{e.preventDefault();card.style.transform='';
+      const t=e.changedTouches[0],el=document.elementFromPoint(t.clientX,t.clientY);
+      const box=el?el.closest('.sort-box'):null;
+      if(box){placeCard(i,box.classList.contains('external')?'external':'internal');}};
+    area.appendChild(card);
   });
 }
-
-function allowDrop(e) { e.preventDefault(); e.currentTarget.classList.add('highlight'); }
-document.querySelectorAll('.sort-box').forEach(b => {
-  b.ondragleave = () => b.classList.remove('highlight');
-});
-
-function dropCard(e, type) {
-  e.preventDefault();
-  e.currentTarget.classList.remove('highlight');
-  const idx = parseInt(e.dataTransfer.getData('text/plain'));
-  placeCard(idx, type);
-}
-
-function placeCard(idx, type) {
-  const comps = LESSON.components;
-  const comp = comps[idx];
-  if (!comp) return;
-  const card = document.getElementById('card-' + idx);
-  if (card.classList.contains('placed')) return;
-
-  const isCorrect = (type === 'external') === comp.external;
-  const targetId = type === 'external' ? 'extCards' : 'intCards';
-  const target = document.getElementById(targetId);
-
-  const placed = document.createElement('div');
-  placed.className = 'placed-card';
-  placed.textContent = comp.name;
-  target.appendChild(placed);
-  card.classList.add('placed');
-  sortCorrect[idx] = isCorrect;
-
-  if (Object.keys(sortCorrect).length === comps.length) {
-    const allRight = Object.values(sortCorrect).every(v => v);
-    const fb = document.getElementById('sortFeedback');
-    if (allRight) {
-      fb.innerHTML = '<div class="feedback correct check-anim">Awesome! You sorted all the parts correctly!</div>';
-      screenDone[0] = true;
-      document.getElementById('nav1').classList.add('done');
-      celebrate();
-    } else {
-      fb.innerHTML = '<div class="feedback wrong">Not quite! Some parts are in the wrong box. Try again!</div>' +
-        '<button class="reset-btn" onclick="resetSort()">Try Again</button>';
-    }
+function allowDrop(e){e.preventDefault();e.currentTarget.classList.add('highlight');}
+document.querySelectorAll('.sort-box').forEach(b=>{b.ondragleave=()=>b.classList.remove('highlight');});
+function dropCard(e,type){e.preventDefault();e.currentTarget.classList.remove('highlight');placeCard(parseInt(e.dataTransfer.getData('text/plain')),type);}
+function placeCard(idx,type){
+  const comp=LESSON.components[idx];if(!comp)return;
+  const card=document.getElementById('card-'+idx);if(card.classList.contains('placed'))return;
+  const isCorrect=(type==='external')===comp.external;
+  const target=document.getElementById(type==='external'?'extCards':'intCards');
+  const placed=document.createElement('div');placed.className='placed-card';placed.textContent=comp.name;
+  target.appendChild(placed);card.classList.add('placed');sortCorrect[idx]=isCorrect;
+  if(Object.keys(sortCorrect).length===LESSON.components.length){
+    const allRight=Object.values(sortCorrect).every(v=>v);
+    const fb=document.getElementById('sortFeedback');
+    if(allRight){fb.innerHTML='<div class="feedback correct check-anim">Awesome! You sorted all the parts!</div>';
+      screenDone[0]=true;document.getElementById('nav1').classList.add('done');celebrate();}
+    else{fb.innerHTML='<div class="feedback wrong">Not quite! Try again!</div><button class="reset-btn" onclick="resetSort()">Try Again</button>';}
   }
 }
-
-function resetSort() {
-  sortCorrect = {};
-  document.getElementById('extCards').innerHTML = '';
-  document.getElementById('intCards').innerHTML = '';
-  document.getElementById('sortFeedback').innerHTML = '';
-  document.querySelectorAll('.card').forEach(c => c.classList.remove('placed'));
+function resetSort(){sortCorrect={};document.getElementById('extCards').innerHTML='';document.getElementById('intCards').innerHTML='';document.getElementById('sortFeedback').innerHTML='';document.querySelectorAll('.card').forEach(c=>c.classList.remove('placed'));}
+function initArrows(){
+  const model=document.getElementById('arrowModel');let html='';
+  LESSON.relationships.forEach((rel,i)=>{
+    const wrong=rel.type==='+'?'-':'+';arrowStates[i]=wrong;
+    html+='<div class="comp-row"><div class="comp-box">'+rel.from+'</div><div style="text-align:center">'
+      +'<button class="arrow-btn '+(wrong==='+'?'positive':'negative')+'" id="arrow-'+i+'" onclick="toggleArrow('+i+')">'
+      +(wrong==='+'?'+ &rarr;':'- &rarr;')+'</button><div class="arrow-label">'+(wrong==='+'?'Go together':'Go opposite')
+      +'</div></div><div class="comp-box">'+rel.to+'</div></div>';
+  });model.innerHTML=html;
 }
-
-// ── SCREEN 2: Fix the Arrows ──
-function initArrows() {
-  const model = document.getElementById('arrowModel');
-  let html = '';
-  LESSON.relationships.forEach((rel, i) => {
-    // Start with WRONG direction
-    const correctType = rel.type;
-    const wrongType = correctType === '+' ? '-' : '+';
-    arrowStates[i] = wrongType;
-
-    html += '<div class="comp-row">';
-    html += `<div class="comp-box">${rel.from}</div>`;
-    html += '<div style="text-align:center">';
-    html += `<button class="arrow-btn ${wrongType === '+' ? 'positive' : 'negative'}"
-              id="arrow-${i}" onclick="toggleArrow(${i})"
-              title="Tap to change">${wrongType === '+' ? '+ →' : '- →'}</button>`;
-    html += `<div class="arrow-label">${wrongType === '+' ? 'Go together' : 'Go opposite'}</div>`;
-    html += '</div>';
-    html += `<div class="comp-box">${rel.to}</div>`;
-    html += '</div>';
-  });
-  model.innerHTML = html;
+function toggleArrow(i){
+  const next=arrowStates[i]==='+'?'-':'+';arrowStates[i]=next;
+  const btn=document.getElementById('arrow-'+i);
+  btn.innerHTML=next==='+'?'+ &rarr;':'- &rarr;';
+  btn.className='arrow-btn '+(next==='+'?'positive':'negative');
+  btn.nextElementSibling.textContent=next==='+'?'Go together':'Go opposite';
+  if(LESSON.relationships.every((rel,j)=>arrowStates[j]===rel.type)){
+    document.getElementById('arrowFeedback').innerHTML='<div class="feedback correct check-anim">You fixed all the arrows!</div>';
+    screenDone[1]=true;document.getElementById('nav2').classList.add('done');celebrate();}
+  else document.getElementById('arrowFeedback').innerHTML='';
 }
-
-function toggleArrow(i) {
-  const current = arrowStates[i];
-  const next = current === '+' ? '-' : '+';
-  arrowStates[i] = next;
-  const btn = document.getElementById('arrow-' + i);
-  btn.textContent = next === '+' ? '+ →' : '- →';
-  btn.className = 'arrow-btn ' + (next === '+' ? 'positive' : 'negative');
-  btn.nextElementSibling.textContent = next === '+' ? 'Go together' : 'Go opposite';
-
-  // Check if all correct
-  const allCorrect = LESSON.relationships.every((rel, j) => arrowStates[j] === rel.type);
-  const fb = document.getElementById('arrowFeedback');
-  if (allCorrect) {
-    fb.innerHTML = '<div class="feedback correct check-anim">You fixed all the arrows! Great job!</div>';
-    screenDone[1] = true;
-    document.getElementById('nav2').classList.add('done');
-    celebrate();
-  } else {
-    fb.innerHTML = '';
-  }
+function initExplore(){
+  const panel=document.getElementById('explorePanel');let html='';
+  const ext=LESSON.components.filter(c=>c.external),int_=LESSON.components.filter(c=>!c.external);
+  ext.forEach(comp=>{exploreLevels[comp.name]=50;
+    html+='<div class="ctrl-row"><span class="ctrl-label">'+comp.name+'</span>'
+      +'<button class="ctrl-btn down" onclick="adj(\''+comp.name+'\',-25)">&#9660;</button>'
+      +'<div class="bar-container"><div class="bar-fill ext" id="bar-'+css(comp.name)+'" style="width:50%">50%</div></div>'
+      +'<button class="ctrl-btn up" onclick="adj(\''+comp.name+'\',25)">&#9650;</button></div>';});
+  int_.forEach(comp=>{exploreLevels[comp.name]=50;
+    html+='<div class="ctrl-row"><span class="ctrl-label">'+comp.name+'</span>'
+      +'<div class="bar-container"><div class="bar-fill int" id="bar-'+css(comp.name)+'" style="width:50%">50%</div></div></div>';});
+  html+='<div class="result-text" id="exploreResult">Press UP or DOWN to explore!</div>';
+  html+='<div class="sentence" id="exploreSentence">'+LESSON.sentenceFrame+'</div>';
+  panel.innerHTML=html;
 }
-
-// ── SCREEN 3: Explore ──
-function initExplore() {
-  const panel = document.getElementById('explorePanel');
-  let html = '';
-
-  // External components (controls)
-  const externals = LESSON.components.filter(c => c.external);
-  const internals = LESSON.components.filter(c => !c.external);
-
-  externals.forEach(comp => {
-    exploreLevels[comp.name] = 50;
-    html += `<div class="ctrl-row">
-      <span class="ctrl-label">${comp.name}</span>
-      <button class="ctrl-btn down" onclick="adjustLevel('${comp.name}',-25)">▼</button>
-      <div class="bar-container">
-        <div class="bar-fill ext" id="bar-${css(comp.name)}" style="width:50%">50%</div>
-      </div>
-      <button class="ctrl-btn up" onclick="adjustLevel('${comp.name}',25)">▲</button>
-    </div>`;
-  });
-
-  internals.forEach(comp => {
-    exploreLevels[comp.name] = 50;
-    html += `<div class="ctrl-row">
-      <span class="ctrl-label">${comp.name}</span>
-      <div class="bar-container">
-        <div class="bar-fill int" id="bar-${css(comp.name)}" style="width:50%">50%</div>
-      </div>
-    </div>`;
-  });
-
-  html += '<div class="result-text" id="exploreResult">Press the UP or DOWN buttons to explore!</div>';
-  html += `<div class="sentence" id="exploreSentence">${LESSON.sentenceFrame}</div>`;
-  panel.innerHTML = html;
+function css(n){return n.replace(/[^a-zA-Z0-9]/g,'_');}
+function adj(name,delta){
+  let val=Math.max(0,Math.min(100,exploreLevels[name]+delta));exploreLevels[name]=val;updBar(name,val);
+  LESSON.relationships.forEach(rel=>{if(rel.from===name){
+    let tv=rel.type==='+'?val:100-val;exploreLevels[rel.to]=tv;updBar(rel.to,tv);}});
+  updText();if(!screenDone[2]){screenDone[2]=true;document.getElementById('nav3').classList.add('done');}
 }
-
-function css(name) { return name.replace(/[^a-zA-Z0-9]/g, '_'); }
-
-function adjustLevel(name, delta) {
-  let val = exploreLevels[name] + delta;
-  val = Math.max(0, Math.min(100, val));
-  exploreLevels[name] = val;
-  updateBar(name, val);
-
-  // Update internal components based on relationships
-  LESSON.relationships.forEach(rel => {
-    if (rel.from === name) {
-      const target = rel.to;
-      let targetVal;
-      if (rel.type === '+') {
-        targetVal = val; // same direction
-      } else {
-        targetVal = 100 - val; // opposite direction
-      }
-      exploreLevels[target] = targetVal;
-      updateBar(target, targetVal);
-    }
-  });
-
-  updateExploreText();
-  if (!screenDone[2]) {
-    screenDone[2] = true;
-    document.getElementById('nav3').classList.add('done');
-  }
+function updBar(n,v){const b=document.getElementById('bar-'+css(n));if(b){b.style.width=v+'%';b.textContent=v+'%';}}
+function updText(){
+  const el=document.getElementById('exploreResult'),parts=[];
+  LESSON.components.filter(c=>c.external).forEach(comp=>{
+    const l=exploreLevels[comp.name],w=l>60?'HIGH':l<40?'LOW':'MEDIUM';
+    LESSON.relationships.forEach(rel=>{if(rel.from===comp.name){
+      const tl=exploreLevels[rel.to],tw=tl>60?'HIGH':tl<40?'LOW':'MEDIUM';
+      parts.push('When '+comp.name+' is '+w+', '+rel.to+' is '+tw+'!');}});});
+  el.textContent=parts.join(' ')||'Press buttons to explore!';
 }
-
-function updateBar(name, val) {
-  const bar = document.getElementById('bar-' + css(name));
-  if (bar) {
-    bar.style.width = val + '%';
-    bar.textContent = val + '%';
-  }
-}
-
-function updateExploreText() {
-  const el = document.getElementById('exploreResult');
-  const ext = LESSON.components.filter(c => c.external);
-  const parts = [];
-  ext.forEach(comp => {
-    const lvl = exploreLevels[comp.name];
-    const word = lvl > 60 ? 'HIGH' : lvl < 40 ? 'LOW' : 'MEDIUM';
-    LESSON.relationships.forEach(rel => {
-      if (rel.from === comp.name) {
-        const tLvl = exploreLevels[rel.to];
-        const tWord = tLvl > 60 ? 'HIGH' : tLvl < 40 ? 'LOW' : 'MEDIUM';
-        parts.push(`When ${comp.name} is ${word}, ${rel.to} is ${tWord}!`);
-      }
-    });
-  });
-  el.textContent = parts.join(' ') || 'Press buttons to explore!';
-}
-
-// ── Celebration ──
-function celebrate() {
-  const div = document.createElement('div');
-  div.className = 'celebrate';
-  const emojis = ['⭐','🌟','✨','🎉','🎊','💫','🏆','👏'];
-  for (let i = 0; i < 20; i++) {
-    const star = document.createElement('div');
-    star.className = 'star';
-    star.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-    star.style.left = Math.random() * 100 + '%';
-    star.style.animationDelay = Math.random() * 0.8 + 's';
-    div.appendChild(star);
-  }
-  document.body.appendChild(div);
-  setTimeout(() => div.remove(), 2500);
+function celebrate(){
+  const div=document.createElement('div');div.className='celebrate';
+  const emojis=['&#11088;','&#127775;','&#10024;','&#127881;','&#127882;','&#128079;','&#127942;','&#128171;'];
+  for(let i=0;i<24;i++){const s=document.createElement('div');s.className='star';
+    s.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+    s.style.left=Math.random()*100+'%';s.style.animationDelay=Math.random()*1+'s';div.appendChild(s);}
+  document.body.appendChild(div);setTimeout(()=>div.remove(),2500);
 }
 </script>
 </body>
