@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-3 Video Sample Comparison — Veo 3.1 vs Grok</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background: linear-gradient(135deg, #0D1B2A 0%, #1A4780 50%, #2E86AB 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #F69338, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #7EC8E3;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            margin: 15px 5px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 30px;
+        }
+
+        .video-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .video-card .label {
+            padding: 20px 24px 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .video-card .label h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .veo .label h2 { color: #00BEF2; }
+        .grok .label h2 { color: #F69338; }
+
+        .video-card .label .tag {
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            border-radius: 0;
+        }
+
+        .video-info {
+            padding: 16px 24px 20px;
+        }
+
+        .video-info table {
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        .video-info td {
+            padding: 4px 0;
+        }
+
+        .video-info td:first-child {
+            color: #7EC8E3;
+            width: 120px;
+        }
+
+        .notes {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 30px 40px;
+        }
+
+        .notes-card {
+            background: rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 24px 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .notes h3 {
+            color: #F69338;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .notes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .notes li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #c0d8e8;
+            font-size: 0.95rem;
+        }
+
+        .notes li::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            color: #F69338;
+        }
+
+        @media (max-width: 900px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            .header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ModelIt! K-3 Video Comparison</h1>
+        <p>GK-L01: "Why Do Things Fall Down?" — Compare Veo 3.1 vs Grok Imagine Video for animated lesson companions</p>
+        <span class="badge">Blue's Clues Design</span>
+        <span class="badge">Nickelodeon Color Science</span>
+        <span class="badge">Hume "Caring Mother" Voice</span>
+        <span class="badge">~120 wpm Pacing</span>
+    </div>
+
+    <div class="comparison">
+        <div class="video-card veo">
+            <div class="label">
+                <h2>Google Veo 3.1</h2>
+                <span class="tag">Smooth AI Video</span>
+            </div>
+            <video controls preload="metadata">
+                <source src="GK-L01-Veo-Sample.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <table>
+                    <tr><td>Duration</td><td>~77 seconds</td></tr>
+                    <tr><td>File Size</td><td>7.1 MB</td></tr>
+                    <tr><td>Resolution</td><td>1280x720</td></tr>
+                    <tr><td>Clip Length</td><td>6s per scene</td></tr>
+                    <tr><td>Animation</td><td>Image-to-video, smooth interpolation</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="video-card grok">
+            <div class="label">
+                <h2>xAI Grok Imagine</h2>
+                <span class="tag">Creative Animation</span>
+            </div>
+            <video controls preload="metadata">
+                <source src="GK-L01-Grok-Sample.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <table>
+                    <tr><td>Duration</td><td>~77 seconds</td></tr>
+                    <tr><td>File Size</td><td>18.4 MB</td></tr>
+                    <tr><td>Resolution</td><td>1280x720</td></tr>
+                    <tr><td>Clip Length</td><td>5s per scene</td></tr>
+                    <tr><td>Animation</td><td>Image-to-video, creative motion</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="notes">
+        <div class="notes-card">
+            <h3>Research-Based Design Principles Applied</h3>
+            <ul>
+                <li><strong>Blue's Clues Style:</strong> Single warm narrator talking directly to one child, built-in pauses for thinking, 3-clue progressive structure</li>
+                <li><strong>Sesame Street Stickiness:</strong> Comprehension drives attention — concepts build on each other, not random segments</li>
+                <li><strong>Gladwell's Stickiness Factor:</strong> Simple packaging of complex ideas, narrative format over disconnected facts</li>
+                <li><strong>Nickelodeon Color Science:</strong> Warm saturated focal elements (Deep Saffron #F69338, Process Cyan #00BEF2) on calmer backgrounds</li>
+                <li><strong>Voice:</strong> Hume "Caring Mother" — warm American female, ~120 wpm, conversational tone, speed 0.85x for young learners</li>
+                <li><strong>Pacing:</strong> 60-90 second total runtime, 2-3 key concepts max, natural pauses for child response</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
