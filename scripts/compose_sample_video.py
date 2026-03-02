@@ -49,7 +49,7 @@ def create_end_card(output_path, duration=4):
         "-vf",
         "drawtext=text='You are a Scientist!':fontsize=55:fontcolor=#F69338:x=(w-text_w)/2:y=h/3:fontfile=C\\\\:/Windows/Fonts/comicbd.ttf,"
         "drawtext=text='Keep Exploring!':fontsize=40:fontcolor=white:x=(w-text_w)/2:y=h/2+20:fontfile=C\\\\:/Windows/Fonts/comic.ttf,"
-        "drawtext=text='ModelIt! by CAST Science':fontsize=24:fontcolor=#7EC8E3:x=(w-text_w)/2:y=h*3/4:fontfile=C\\\\:/Windows/Fonts/comic.ttf,"
+        "drawtext=text='ModelIt! by Discovery Collective':fontsize=24:fontcolor=#7EC8E3:x=(w-text_w)/2:y=h*3/4:fontfile=C\\\\:/Windows/Fonts/comic.ttf,"
         "fade=t=in:st=0:d=1,fade=t=out:st=3:d=1",
         "-c:v", "libx264", "-pix_fmt", "yuv420p",
         "-t", str(duration),
