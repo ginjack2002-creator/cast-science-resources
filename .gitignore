@@ -1,3 +1,12 @@
 __pycache__/
 *.pyc
 .env
+
+# Intermediate video assets (regenerable via scripts)
+videos/grade-*/*/narration_*.wav
+videos/grade-*/*/scene_*.png
+videos/grade-*/*/clip_*.mp4
+videos/grade-*/*/title_*.mp4
+videos/grade-*/*/end_*.mp4
+videos/grade-*/*/seg_*.mp4
+videos/samples/GK-L01/
