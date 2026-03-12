@@ -71,6 +71,21 @@ This bibliography documents the peer-reviewed research that underpins the scient
 
 ---
 
+#### Sensitivity Analysis of Biological Boolean Networks Using Information Fusion Based on Nonadditive Set Functions
+**Kochi N, Helikar T, Allen L, et al.**
+*BMC Systems Biology*, 2014; 8:92
+
+> Algebraic method for assessing how node attribute combinations contribute to Boolean network sensitivity. Found combined out-degree and average node sensitivity most significant.
+
+| Access | Link |
+|--------|------|
+| BMC (Open Access) | [bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-014-0092-4](https://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-014-0092-4) |
+| ResearchGate | [researchgate.net/publication/265392373](https://www.researchgate.net/publication/265392373) |
+
+**ModelIt! Relevance:** Validates the scientific rigor underlying Cell Collective's Boolean modeling. When students manipulate variables in ModelIt!, simulation behavior is grounded in mathematically validated sensitivity analysis.
+
+---
+
 #### Ergodic sets as cell phenotype of budding yeast cell cycle
 **Helikar T, et al.**
 *PLOS ONE*
@@ -109,15 +124,19 @@ This bibliography documents the peer-reviewed research that underpins the scient
 ---
 
 ### A Cell Simulator Platform: The Cell Collective
-**Helikar T, et al.**
+**Helikar T, Kowal B, Rogers JA**
 *Clinical Pharmacology & Therapeutics*, 2013; 93(5):393-395
 
-> Clinical applications and broader impact of the Cell Collective platform.
+> **Web-based platform for collaborative Boolean network modeling without code or advanced math.** Supports real-time what-if scenarios, loss/gain-of-function testing. Hundreds of models including influenza and breast cancer with experimentally verified predictions. Free for academic use.
 
 | Access | Link |
 |--------|------|
 | Wiley | [ascpt.onlinelibrary.wiley.com/doi/10.1038/clpt.2013.41](https://ascpt.onlinelibrary.wiley.com/doi/10.1038/clpt.2013.41) |
 | PubMed | [23549147](https://pubmed.ncbi.nlm.nih.gov/23549147/) |
+| PubMed Central | [PMC5242230](https://pmc.ncbi.nlm.nih.gov/articles/PMC5242230/) |
+| ResearchGate | [researchgate.net/publication/236100210](https://www.researchgate.net/publication/236100210) |
+
+**ModelIt! Relevance:** Foundational paper for the platform powering ModelIt!. The "plain-English, logic-based" interface means K-12 students can build authentic models without programming. Research-grade yet accessible.
 
 ---
 
@@ -184,14 +203,18 @@ This bibliography documents the peer-reviewed research that underpins the scient
 ### Digital Twin Initiative
 
 #### Roadmap for building a digital twin of the immune system
-**Helikar T, et al.**
-*Nature Digital Medicine*, 2022
+**Laubenbacher R, Niarakis A, Helikar T, An G, Shapiro B, Malik-Sheriff RS, Sego TJ, Knapp A, Macklin P, Glazier JA**
+*NPJ Digital Medicine*, 2022; 5(1):64
+DOI: 10.1038/s41746-022-00610-z
 
-> Vision paper outlining the approach to creating a comprehensive computational model of the human immune system.
+> **Roadmap for personalized computational models of immune responses.** Four-stage process: use-case specification, model construction, personalization, continuous improvement. Outlines the path toward digital twins that integrate multi-scale immunological data.
 
 | Access | Link |
 |--------|------|
-| Nature Digital Medicine | [nature.com/npjdigitalmed](https://www.nature.com/npjdigitalmed) |
+| Nature Digital Medicine | [nature.com/articles/s41746-022-00610-z](https://www.nature.com/articles/s41746-022-00610-z) |
+| ResearchGate | [researchgate.net/publication/360728524](https://www.researchgate.net/publication/360728524) |
+
+**ModelIt! Relevance:** Digital twins represent the frontier of computational modeling. Students learning systems modeling on ModelIt! are building skills directly relevant to tomorrow's precision medicine technologies.
 
 ---
 
@@ -234,16 +257,31 @@ This bibliography documents the peer-reviewed research that underpins the scient
 ## Biology Education Research
 
 #### Research-driven facilitation of systems thinking with computational models in life sciences education
-**Helikar T, et al.**
+**Helikar T and colleagues (University of Nebraska-Lincoln)**
+2016
 
-> Research on using computational models to develop systems thinking skills in biology students.
+> **Pre-intervention assessments showed traditional lecture students could recall more individual components but were no better at integrating them into systems-level understanding.** Computational modeling increased mechanistic reasoning — students who used simulations demonstrated stronger ability to connect components into coherent system-level explanations.
+
+| Access | Link |
+|--------|------|
+| ResearchGate | [researchgate.net/publication/300035430](https://www.researchgate.net/publication/300035430) |
+
+**ModelIt! Relevance:** Core pedagogical justification for ModelIt!'s approach. Demonstrates lecture-based instruction produces students who can list parts but cannot reason about system interactions — the exact gap ModelIt! addresses.
 
 ---
 
 #### Factors Influencing Instructors' Adoption and Continued Use of Computing Science Technologies: A Case Study in the Context of Cell Collective
-**Helikar T, Smith WM, et al.**
+**Song C, Helikar R, Smith WM, Helikar T**
+*CBE—Life Sciences Education*, 2023; 22(3):ar29
+DOI: 10.1187/cbe.22-11-0239
 
-> Study of factors affecting instructor adoption of computational modeling tools in biology education.
+> **Study of 43 instructors from 37 institutions.** Features improving student learning had strongest influence on adoption (effect size 0.309). Teaching-convenience features showed no significant impact. Identifies key barriers and facilitators for computational modeling tool adoption in higher education.
+
+| Access | Link |
+|--------|------|
+| ResearchGate | [researchgate.net/publication/373581536](https://www.researchgate.net/publication/373581536) |
+
+**ModelIt! Relevance:** The most directly relevant study — literally studied Cell Collective adoption. Finding that learning-focused features drive adoption means ModelIt! should prioritize interactive simulations and real-time feedback over administrative tools.
 
 ---
 
@@ -251,6 +289,84 @@ This bibliography documents the peer-reviewed research that underpins the scient
 **Helikar T, et al.**
 
 > Research on the pedagogical value of model revision in understanding cellular respiration.
+
+---
+
+#### Simulating a Computational Biological Model, Rather Than Reading, Elicits Changes in Brain Activity during Biological Reasoning
+**Clark CAC, Helikar T, Dauer J**
+*CBE—Life Sciences Education*, 2020; 19(3):ar45
+DOI: 10.1187/cbe.19-11-0237
+
+> **Neuroscience-based proof that simulation beats reading.** Using fMRI neuroimaging, simulation group showed significantly higher brain activation in visuospatial processing (cuneal/postcentral) and interoceptive awareness (posterior insula/cingulate) regions compared to reading group.
+
+| Access | Link |
+|--------|------|
+| ResearchGate | [researchgate.net/publication/344051598](https://www.researchgate.net/publication/344051598) |
+
+**ModelIt! Relevance:** The most powerful evidence for ModelIt!'s pedagogical approach. Students literally build different neural representations when they interact with computational models vs. reading. Validates simulation-first science education at the neurological level.
+
+---
+
+#### The Need for Research-Grade Systems Modeling Technologies for Life Science Education
+**Helikar T**
+*Trends in Molecular Medicine*, 2021; 27(2):100-103
+DOI: 10.1016/j.molmed.2020.11.005
+
+> **The manifesto for ModelIt!'s existence.** Written during COVID-19, argues students must be trained with research-grade tools, not simplified simulations. NGSS mandates computational modeling but most tools are either too simplified or too complex.
+
+| Access | Link |
+|--------|------|
+| PubMed Central | [PMC8353068](https://pmc.ncbi.nlm.nih.gov/articles/PMC8353068/) |
+| ResearchGate | [researchgate.net/publication/347650969](https://www.researchgate.net/publication/347650969) |
+
+**ModelIt! Relevance:** Explicitly identifies the problem ModelIt! solves. Cell Collective occupies the critical middle ground: research-grade scientific authenticity with an accessible interface. This is the strongest single piece of evidence for ModelIt!'s value proposition.
+
+---
+
+#### Teaching Metabolism in Upper-Division Undergraduate Biochemistry Courses using Online Computational Systems and Dynamical Models Improves Student Performance
+**Booth CS, Song C, Howell ME, Rasquinha A, Saska A, Helikar R, Sikich SM, Couch BA, van Dijk K, Roston RL, Helikar T**
+*CBE—Life Sciences Education*, 2021; 20(1):ar13
+DOI: 10.1187/cbe.20-05-0105
+
+> **Direct empirical evidence of learning gains.** Students using Cell Collective's predict-observe-explain modules showed 8% learning gain vs 0% for control group. No gender bias detected.
+
+| Access | Link |
+|--------|------|
+| ResearchGate | [researchgate.net/publication/349698006](https://www.researchgate.net/publication/349698006) |
+
+**ModelIt! Relevance:** Provides measurable proof that Cell Collective (powering ModelIt!) produces learning gains. The predict-observe-explain framework is the same approach embedded in ModelIt!'s lesson activities. Evidence that it works at undergrad level validates the K-12 adaptation.
+
+---
+
+#### Integrating Interactive Computational Modeling in Biology Curricula
+**Helikar T, Cutucache CE, Dahlquist LM, Herek TA, Larson JJ, Rogers JA**
+*PLoS Computational Biology*, 2015; 11(3):e1004131
+DOI: 10.1371/journal.pcbi.1004131
+
+> **Direct precedent for ModelIt!'s curriculum integration strategy.** Implemented Cell Collective as standalone course and integrated modules. Students produced conference presentations and peer-reviewed publications.
+
+| Access | Link |
+|--------|------|
+| PLOS (Open Access) | [journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004131](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004131) |
+| ResearchGate | [researchgate.net/publication/273780438](https://www.researchgate.net/publication/273780438) |
+
+**ModelIt! Relevance:** Demonstrates two deployment models ModelIt! replicates at K-12 level: standalone courses and modules integrated into existing courses. The latter is exactly what ModelIt!'s lesson packs are designed for.
+
+---
+
+#### DBERlibR: Automated Data Analysis for Discipline-Based Education Research
+**Song C, Helikar R, Smith WM, Helikar T**
+*bioRxiv preprint*, 2022
+DOI: 10.1101/2022.08.24.504993
+
+> R package automating DBER data analysis workflows — reads assessment data, checks assumptions, applies tests, interprets results.
+
+| Access | Link |
+|--------|------|
+| bioRxiv | [biorxiv.org/content/10.1101/2022.08.24.504993v1](https://www.biorxiv.org/content/10.1101/2022.08.24.504993v1) |
+| ResearchGate | [researchgate.net/publication/362979774](https://www.researchgate.net/publication/362979774) |
+
+**ModelIt! Relevance:** Research infrastructure designed to measure ModelIt!'s educational impact. Enables rigorous evaluation of whether K-12 students achieve measurable learning gains.
 
 ---
 
@@ -284,6 +400,9 @@ This bibliography documents the peer-reviewed research that underpins the scient
 |--------|------|
 | EMBO (Open Access) | [embopress.org/doi/10.15252/msb.20199110](https://www.embopress.org/doi/full/10.15252/msb.20199110) |
 | PubMed Central (Free) | [PMC7450664](https://pmc.ncbi.nlm.nih.gov/articles/PMC7450664/) |
+| ResearchGate | [researchgate.net/publication/343897506](https://www.researchgate.net/publication/343897506) |
+
+**ModelIt! Relevance:** Cell Collective uses SBML-compatible logical network models. Students on ModelIt! work with the internationally recognized standard for biological model exchange — authentic science, not toy models.
 
 ---
 
@@ -304,6 +423,35 @@ This bibliography documents the peer-reviewed research that underpins the scient
 **Helikar T, et al.**
 
 > Framework for ensuring reproducibility in metabolic modeling research.
+
+---
+
+#### SBML Qualitative Models: A Model Representation Format and Infrastructure
+**Chaouiya C, Berenguier D, Keating SM, Naldi A, van Iersel MP, Rodriguez N, Drager A, Buchel F, Cokelaer T, Kowal B, ... Helikar T, et al.**
+*BMC Systems Biology*, 2013; 7:135
+
+> Introduces SBML qual extension for Boolean networks and logical models. Founded the CoLoMoTo collaborative project.
+
+| Access | Link |
+|--------|------|
+| PMC | [PMC3892043](https://pmc.ncbi.nlm.nih.gov/articles/PMC3892043/) |
+| ResearchGate | [researchgate.net/publication/259252062](https://www.researchgate.net/publication/259252062) |
+
+**ModelIt! Relevance:** Technical backbone making Cell Collective interoperable with broader computational biology ecosystem. Models students work with aren't locked in proprietary format — they connect to international standards.
+
+---
+
+#### From FAIR to CURE: Guidelines for Computational Models of Biological Systems
+**Sauro HM, Agmon E, Blinov ML, Helikar T, et al. (35+ co-authors)**
+*ArXiv preprint*, 2025 (NIH-funded)
+
+> Proposes CURE principles: Credible, Understandable, Reproducible, Extensible. Complements FAIR data principles for computational biological models.
+
+| Access | Link |
+|--------|------|
+| ResearchGate | [researchgate.net/publication/389274636](https://www.researchgate.net/publication/389274636) |
+
+**ModelIt! Relevance:** Cell Collective already embodies CURE principles — SBML compatibility (Reproducible), visual interfaces (Understandable), model sharing (Extensible). ModelIt! can position as CURE-compliant research-grade infrastructure for K-12.
 
 ---
 
@@ -331,6 +479,21 @@ This bibliography documents the peer-reviewed research that underpins the scient
 **Helikar T, et al.**
 
 > Computational pipeline for cancer research using high-throughput data.
+
+---
+
+#### Recent Applications of Quantitative Systems Pharmacology and Machine Learning Models Across Diseases
+**Aghamiri SS, Amin R, Helikar T**
+*Journal of Pharmacokinetics and Pharmacodynamics*, 2021; 49(1):19-37
+DOI: 10.1007/s10928-021-09790-9
+
+> Meta-analysis of QSP models integrated with ML for drug development. Largest area: immuno-oncology.
+
+| Access | Link |
+|--------|------|
+| ResearchGate | [researchgate.net/publication/355443268](https://www.researchgate.net/publication/355443268) |
+
+**ModelIt! Relevance:** Demonstrates real-world professional applications of systems modeling. Answers the student question "Why does this matter?" — computational modeling drives drug development breakthroughs. Shows career pathways that systems modeling skills unlock.
 
 ---
 
@@ -381,6 +544,15 @@ The Cell Collective platform evolved into ModelIt K12, meaning students are usin
 ### Standards Compliance
 Dr. Helikar's work on SBML and other standards ensures that models created in ModelIt are scientifically valid and interoperable with professional research tools.
 
+### Neuroscience Validation
+The fMRI study (Clark, Helikar & Dauer, 2020) provides neuroimaging evidence that simulating models activates deeper brain processing than reading, validating ModelIt!'s simulation-first approach at the neurological level.
+
+### Measurable Learning Gains
+The Booth et al. (2021) study demonstrates 8% learning gains with computational modeling modules vs. 0% for control groups, with no gender bias — providing quantitative evidence of effectiveness.
+
+### Product-Market Fit Evidence
+Helikar's (2021) call for research-grade yet accessible modeling tools explicitly identifies the gap ModelIt! fills between oversimplified (PhET-style) and overly complex (programming-required) tools.
+
 ---
 
 ## How to Cite This Collection
@@ -393,4 +565,4 @@ Repository: github.com/Alexandria-s-Design/cast-science-resources
 
 ---
 
-*Last updated: February 2026*
+*Last updated: March 2026*
