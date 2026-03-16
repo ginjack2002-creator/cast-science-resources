@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelIt! Student Activity Pack &mdash; G01-L05</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+  --purple-deep: #4A3A7A;
+  --purple-brand: #6B5B95;
+  --purple-mid: #8B7BB5;
+  --purple-light: #B8A9D4;
+  --purple-pale: #E8E0F0;
+  --purple-bg: #F5F0FA;
+  --teal-brand: #5BBFCF;
+  --teal-mid: #7ED4E0;
+  --teal-light: #B0E8EF;
+  --teal-pale: #E0F5F8;
+  --navy: #1E1B4B;
+  --dark-text: #2D2A45;
+  --body-text: #3E3A55;
+  --gray-text: #6B6880;
+  --white: #FFFFFF;
+  --green-pos: #2ECC71;
+  --red-neg: #E74C3C;
+  --orange-accent: #F39C12;
+  --orange-light: #FEF3E2;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@page { size: letter; margin: 0.5in; }
+
+@media print {
+  body { margin: 0; padding: 0; background: white; }
+  .page { page-break-after: always; box-shadow: none !important; margin: 0 !important; border-radius: 0 !important; }
+  .page:last-child { page-break-after: avoid; }
+}
+
+body {
+  font-family: 'Nunito', 'Segoe UI', sans-serif;
+  color: var(--body-text);
+  background: #E8E0F0;
+  line-height: 1.5;
+  font-size: 11pt;
+}
+
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 20px auto;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(74,58,122,0.15);
+  border-radius: 4px;
+}
+
+/* ===== COVER PAGE ===== */
+.cover-page { display: flex; flex-direction: column; height: 11in; }
+
+.cover-header {
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-brand) 50%, var(--teal-brand) 100%);
+  padding: 0.6in 0.6in 0.5in;
+  position: relative;
+  flex: 0 0 auto;
+}
+.cover-header.teacher-variant {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 40%, var(--purple-brand) 100%);
+}
+.cover-header::after {
+  content: '';
+  position: absolute;
+  bottom: -30px; left: 0; right: 0;
+  height: 60px; background: white;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.cover-bubbles { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; }
+.cover-bubbles .bubble { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.08); }
+.cover-bubbles .b1 { width: 120px; height: 120px; top: -20px; right: 60px; }
+.cover-bubbles .b2 { width: 80px; height: 80px; top: 30px; right: 180px; }
+.cover-bubbles .b3 { width: 60px; height: 60px; bottom: 40px; left: 40px; }
+.cover-bubbles .b4 { width: 40px; height: 40px; top: 15px; left: 120px; }
+.cover-bubbles .b5 { width: 90px; height: 90px; bottom: 10px; right: 20px; }
+
+.cover-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; position: relative; z-index: 2; }
+.logo-text { font-family: 'Quicksand', sans-serif; font-size: 28pt; font-weight: 700; color: white; letter-spacing: 1px; }
+
+.cover-doc-type {
+  background: var(--teal-brand); color: white;
+  font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 13pt;
+  padding: 6px 24px; border-radius: 20px; display: inline-block;
+  position: relative; z-index: 2; letter-spacing: 0.5px;
+}
+.cover-doc-type.teacher { background: var(--purple-mid); }
+
+.cover-body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.4in 0.7in; text-align: center; }
+.cover-title { font-family: 'Quicksand', sans-serif; font-size: 32pt; font-weight: 800; color: var(--navy); line-height: 1.2; margin-bottom: 12px; }
+.cover-subtitle { font-size: 14pt; color: var(--gray-text); font-weight: 400; margin-bottom: 30px; line-height: 1.4; }
+
+.cover-meta-row { display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.cover-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--purple-pale); color: var(--purple-deep); padding: 6px 16px; border-radius: 20px; font-size: 10pt; font-weight: 700; }
+.cover-badge.teal { background: var(--teal-pale); color: #2A8A96; }
+
+.cover-name-block { margin-top: 20px; display: flex; justify-content: center; gap: 30px; }
+.cover-field { text-align: left; }
+.cover-field label { font-size: 9pt; font-weight: 700; color: var(--purple-brand); text-transform: uppercase; letter-spacing: 1px; }
+.cover-field .line { width: 200px; border-bottom: 2px solid var(--purple-light); margin-top: 4px; height: 24px; }
+
+.cover-quick-ref { background: var(--purple-bg); border-radius: 14px; padding: 18px 24px; text-align: left; max-width: 500px; margin: 0 auto; border: 2px solid var(--purple-light); }
+.cover-quick-ref h3 { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 12pt; color: var(--purple-deep); margin-bottom: 10px; text-align: center; }
+.qr-row { display: flex; padding: 4px 0; border-bottom: 1px solid var(--purple-pale); font-size: 9.5pt; }
+.qr-row:last-child { border-bottom: none; }
+.qr-label { font-weight: 700; color: var(--purple-brand); width: 110px; flex-shrink: 0; }
+.qr-value { color: var(--dark-text); }
+
+.cover-footer { background: var(--purple-pale); padding: 14px 0.6in; display: flex; justify-content: space-between; align-items: center; font-size: 8pt; color: var(--gray-text); }
+.cover-footer.teacher { background: var(--navy); color: rgba(255,255,255,0.5); }
+.cover-footer-logo { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 10pt; color: var(--purple-brand); }
+.cover-footer.teacher .cover-footer-logo { color: var(--teal-brand); }
+
+/* ===== INTERIOR PAGES ===== */
+.page-header {
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-brand) 100%);
+  padding: 16px 0.5in 14px;
+  display: flex; justify-content: space-between; align-items: center;
+  position: relative;
+}
+.page-header.teacher-variant { background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 100%); }
+.page-header::after { content: ''; position: absolute; bottom: -12px; left: 0; right: 0; height: 24px; background: white; border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+
+.page-header-bubbles { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; }
+.page-header-bubbles .hb { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.06); }
+.page-header-bubbles .hb1 { width: 50px; height: 50px; top: -10px; right: 80px; }
+.page-header-bubbles .hb2 { width: 30px; height: 30px; top: 5px; right: 160px; }
+.page-header-bubbles .hb3 { width: 40px; height: 40px; bottom: -5px; left: 100px; }
+
+.section-number { background: var(--teal-brand); color: white; font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 16pt; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; flex-shrink: 0; }
+.section-title { font-family: 'Quicksand', sans-serif; font-size: 18pt; font-weight: 700; color: white; position: relative; z-index: 2; flex: 1; margin-left: 14px; }
+.page-logo-mini { font-family: 'Quicksand', sans-serif; font-size: 10pt; font-weight: 700; color: rgba(255,255,255,0.6); position: relative; z-index: 2; }
+
+.page-content { padding: 0.3in 0.55in 0.4in; }
+
+/* Section intro */
+.section-intro { background: var(--purple-bg); border-left: 4px solid var(--purple-brand); border-radius: 0 12px 12px 0; padding: 14px 18px; margin-bottom: 20px; font-size: 11pt; color: var(--dark-text); line-height: 1.6; }
+
+/* Questions */
+.question-block { margin-bottom: 18px; }
+.question-label { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 11pt; color: var(--purple-deep); margin-bottom: 6px; display: flex; align-items: flex-start; gap: 8px; }
+.q-number { background: var(--purple-brand); color: white; font-size: 9pt; font-weight: 800; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+
+.response-box { border: 2px solid var(--purple-light); border-radius: 10px; min-height: 60px; padding: 8px 12px; background: var(--white); }
+.response-box.tall { min-height: 90px; }
+.response-box.short { min-height: 45px; }
+
+.response-lines { border: none; background: repeating-linear-gradient(transparent, transparent 23px, var(--purple-pale) 23px, var(--purple-pale) 24px); min-height: 72px; border-radius: 10px; border: 2px solid var(--purple-light); padding: 4px 12px; }
+.response-lines.tall { min-height: 108px; }
+.response-lines.short { min-height: 50px; }
+
+/* Tables */
+.styled-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden; margin-bottom: 16px; border: 2px solid var(--purple-light); }
+.styled-table th { background: var(--purple-brand); color: white; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 10pt; padding: 10px 14px; text-align: left; }
+.styled-table td { padding: 10px 14px; border-bottom: 1px solid var(--purple-pale); font-size: 10pt; vertical-align: top; }
+.styled-table tr:nth-child(even) td { background: var(--purple-bg); }
+.styled-table tr:last-child td { border-bottom: none; }
+
+/* Rubric */
+.rubric-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden; border: 2px solid var(--purple-light); font-size: 8.5pt; margin-bottom: 16px; }
+.rubric-table th { background: var(--purple-brand); color: white; font-family: 'Quicksand', sans-serif; font-weight: 700; padding: 8px 10px; text-align: center; }
+.rubric-table th:first-child { text-align: left; }
+.rubric-table td { padding: 8px 10px; border-bottom: 1px solid var(--purple-pale); border-right: 1px solid var(--purple-pale); vertical-align: top; line-height: 1.4; }
+.rubric-table td:last-child { border-right: none; }
+.rubric-table tr:last-child td { border-bottom: none; }
+.rubric-table td:first-child { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--purple-deep); background: var(--purple-pale); width: 18%; }
+.rubric-level { font-size: 7pt; font-weight: 700; color: var(--teal-brand); text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 2px; }
+
+/* Scenario cards */
+.scenario-card { border: 2px solid var(--teal-brand); border-radius: 14px; margin-bottom: 18px; overflow: hidden; }
+.scenario-header { background: linear-gradient(135deg, var(--teal-brand) 0%, #4AA8B8 100%); color: white; padding: 10px 16px; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 12pt; display: flex; align-items: center; gap: 10px; }
+.scenario-icon { width: 30px; height: 30px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14pt; }
+.scenario-body { padding: 14px 16px; }
+.scenario-instruction { background: var(--teal-pale); padding: 8px 14px; border-radius: 8px; margin-bottom: 12px; font-size: 10pt; color: #2A8A96; font-weight: 600; }
+.predict-observe { display: flex; gap: 12px; }
+.predict-observe > div { flex: 1; }
+.po-label { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 9pt; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; padding-left: 2px; }
+.po-label.predict { color: var(--purple-brand); }
+.po-label.observe { color: var(--teal-brand); }
+.po-box { border-radius: 8px; min-height: 55px; padding: 6px 10px; border: 2px solid; }
+.po-box.predict { border-color: var(--purple-light); background: var(--purple-bg); }
+.po-box.observe { border-color: var(--teal-light); background: var(--teal-pale); }
+
+/* Callouts */
+.callout { border-radius: 12px; padding: 14px 18px; margin-bottom: 16px; }
+.callout.purple { background: var(--purple-bg); border: 2px solid var(--purple-light); }
+.callout.teal { background: var(--teal-pale); border: 2px solid var(--teal-light); }
+.callout.orange { background: var(--orange-light); border: 2px solid #F5D89A; }
+.callout-title { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 11pt; margin-bottom: 6px; }
+.callout.purple .callout-title { color: var(--purple-deep); }
+.callout.teal .callout-title { color: #2A8A96; }
+.callout.orange .callout-title { color: #B8860B; }
+
+/* Sorting */
+.sort-columns { display: flex; gap: 14px; margin-bottom: 16px; }
+.sort-col { flex: 1; border: 2px solid; border-radius: 12px; overflow: hidden; }
+.sort-col.external { border-color: var(--teal-brand); }
+.sort-col.internal { border-color: var(--purple-brand); }
+.sort-col-header { padding: 8px 14px; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 11pt; color: white; text-align: center; }
+.sort-col.external .sort-col-header { background: var(--teal-brand); }
+.sort-col.internal .sort-col-header { background: var(--purple-brand); }
+.sort-col-body { padding: 12px; min-height: 100px; }
+.sort-item-slot { border: 2px dashed; border-radius: 8px; height: 30px; margin-bottom: 8px; }
+.sort-col.external .sort-item-slot { border-color: var(--teal-light); }
+.sort-col.internal .sort-item-slot { border-color: var(--purple-light); }
+
+/* Relationship key */
+.rel-key { display: flex; gap: 20px; margin-bottom: 14px; }
+.rel-key-item { display: flex; align-items: center; gap: 8px; font-size: 10pt; }
+.rel-symbol { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 14pt; color: white; }
+.rel-symbol.pos { background: var(--green-pos); }
+.rel-symbol.neg { background: var(--red-neg); }
+
+/* Sketch area */
+.sketch-area { border: 2px solid var(--purple-light); border-radius: 14px; min-height: 220px; background: white; position: relative; margin-bottom: 14px; }
+.sketch-area::after { content: 'Draw your model here'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--purple-light); font-size: 12pt; font-family: 'Quicksand', sans-serif; font-weight: 600; }
+
+/* Component chips */
+.component-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.chip { padding: 5px 14px; border-radius: 20px; font-size: 9pt; font-weight: 700; font-family: 'Quicksand', sans-serif; }
+.chip.purple { background: var(--purple-pale); color: var(--purple-deep); }
+.chip.teal { background: var(--teal-pale); color: #2A8A96; }
+
+/* STEM Mission */
+.stem-mission { background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 100%); border-radius: 14px; padding: 18px 22px; color: white; margin-bottom: 16px; position: relative; overflow: hidden; }
+.stem-mission::before { content: ''; position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: rgba(91,191,207,0.15); border-radius: 50%; }
+.stem-mission-title { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 14pt; color: var(--teal-brand); margin-bottom: 8px; }
+.stem-mission p { font-size: 10pt; line-height: 1.6; color: rgba(255,255,255,0.9); }
+
+/* Extension list */
+.extension-list { list-style: none; margin-bottom: 14px; }
+.extension-list li { padding: 8px 14px; margin-bottom: 6px; background: var(--purple-bg); border-radius: 8px; font-size: 10pt; }
+.extension-list li strong { color: var(--purple-deep); font-family: 'Quicksand', sans-serif; }
+
+/* Design grid */
+.design-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+.design-box { border: 2px solid var(--teal-light); border-radius: 10px; padding: 10px 14px; min-height: 60px; }
+.design-box-label { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 9pt; color: var(--teal-brand); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+
+/* Map area */
+.map-area { border: 2px solid var(--teal-brand); border-radius: 14px; height: 200px; background: white; position: relative; margin-bottom: 14px; overflow: hidden; }
+.map-area .map-label { position: absolute; top: 8px; left: 12px; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 9pt; color: var(--teal-brand); text-transform: uppercase; letter-spacing: 1px; }
+.map-area .compass { position: absolute; top: 8px; right: 12px; width: 30px; height: 30px; border: 2px solid var(--teal-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: var(--teal-brand); }
+
+/* Interior headings */
+h2.interior-heading { font-family: 'Quicksand', sans-serif; font-size: 14pt; font-weight: 800; color: var(--purple-deep); margin-bottom: 10px; padding-bottom: 4px; border-bottom: 2px solid var(--purple-pale); }
+h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-weight: 700; color: var(--purple-brand); margin-bottom: 6px; margin-top: 12px; }
+
+/* TOC */
+.toc-list { list-style: none; counter-reset: toc-counter; }
+.toc-list li { counter-increment: toc-counter; display: flex; align-items: center; padding: 10px 0; border-bottom: 1px dashed var(--purple-pale); font-size: 11pt; }
+.toc-list li::before { content: counter(toc-counter); background: var(--purple-brand); color: white; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 10pt; margin-right: 14px; flex-shrink: 0; }
+.toc-list li:nth-child(even)::before { background: var(--teal-brand); }
+.toc-list li .toc-dots { flex: 1; border-bottom: 1px dotted var(--purple-light); margin: 0 8px; height: 1px; align-self: flex-end; margin-bottom: 4px; }
+.toc-list li .toc-page { font-weight: 700; color: var(--purple-brand); font-size: 10pt; }
+
+/* Teacher-specific */
+.teacher-tip { background: var(--purple-bg); border-left: 4px solid var(--purple-brand); border-radius: 0 10px 10px 0; padding: 12px 16px; margin-bottom: 14px; font-size: 9.5pt; }
+.teacher-tip-title { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 10pt; color: var(--purple-deep); margin-bottom: 4px; }
+.teacher-script { background: var(--teal-pale); border-left: 4px solid var(--teal-brand); border-radius: 0 10px 10px 0; padding: 12px 16px; margin-bottom: 14px; font-size: 9.5pt; font-style: italic; color: #2A6A76; }
+.teacher-script strong { color: #1A5A66; font-style: normal; }
+.watch-for { background: var(--orange-light); border-left: 4px solid var(--orange-accent); border-radius: 0 10px 10px 0; padding: 12px 16px; margin-bottom: 14px; font-size: 9.5pt; }
+.watch-for-title { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 10pt; color: #B8860B; margin-bottom: 4px; }
+
+/* NGSS table */
+.ngss-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden; border: 2px solid var(--purple-light); margin-bottom: 14px; font-size: 9pt; }
+.ngss-table th { background: var(--purple-brand); color: white; font-family: 'Quicksand', sans-serif; font-weight: 700; padding: 8px 12px; text-align: left; }
+.ngss-table td { padding: 10px 12px; border-bottom: 1px solid var(--purple-pale); vertical-align: top; line-height: 1.5; }
+.ngss-table tr:last-child td { border-bottom: none; }
+.ngss-table td:first-child { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--purple-deep); background: var(--purple-pale); width: 28%; }
+
+/* Answer key */
+.answer-key-box { background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 100%); border-radius: 12px; padding: 14px 18px; margin-bottom: 14px; color: white; }
+.answer-key-box h4 { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 11pt; color: var(--teal-brand); margin-bottom: 6px; }
+.answer-key-box p, .answer-key-box li { font-size: 9pt; line-height: 1.6; color: rgba(255,255,255,0.9); }
+.answer-key-box ul { margin-left: 16px; }
+
+/* Differentiation */
+.diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.diff-card { border-radius: 10px; padding: 12px 14px; border: 2px solid; font-size: 9pt; }
+.diff-card.below { border-color: var(--teal-light); background: var(--teal-pale); }
+.diff-card.advanced { border-color: var(--purple-light); background: var(--purple-bg); }
+.diff-card.ell { border-color: #F5D89A; background: var(--orange-light); }
+.diff-card.gifted { border-color: var(--teal-brand); background: white; }
+.diff-card-title { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 10pt; margin-bottom: 4px; }
+.diff-card.below .diff-card-title { color: #2A8A96; }
+.diff-card.advanced .diff-card-title { color: var(--purple-deep); }
+.diff-card.ell .diff-card-title { color: #B8860B; }
+.diff-card.gifted .diff-card-title { color: var(--teal-brand); }
+
+/* Misconceptions */
+.misconception-row { display: flex; gap: 0; margin-bottom: 10px; border-radius: 10px; overflow: hidden; border: 2px solid var(--purple-light); font-size: 9pt; }
+.misconception-wrong { background: #FDE8E8; padding: 10px 14px; width: 45%; border-right: 2px solid var(--purple-light); }
+.misconception-right { background: #E8F8E8; padding: 10px 14px; width: 55%; }
+.misconception-label { font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+.misconception-wrong .misconception-label { color: var(--red-neg); }
+.misconception-right .misconception-label { color: var(--green-pos); }
+
+/* LEVER framework */
+.lever-step { display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start; }
+.lever-letter { width: 36px; height: 36px; background: var(--purple-brand); color: white; font-family: 'Quicksand', sans-serif; font-weight: 900; font-size: 16pt; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.lever-letter.teal { background: var(--teal-brand); }
+.lever-desc { font-size: 9.5pt; }
+.lever-desc strong { font-family: 'Quicksand', sans-serif; color: var(--purple-deep); display: block; font-size: 10pt; }
+
+/* Slide facilitation */
+.slide-card { border: 2px solid var(--purple-light); border-radius: 12px; margin-bottom: 14px; overflow: hidden; }
+.slide-card-header { background: var(--purple-brand); color: white; padding: 8px 14px; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 11pt; display: flex; justify-content: space-between; align-items: center; }
+.slide-time { background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 12px; font-size: 8pt; }
+.slide-card-body { padding: 12px 14px; }
+
+/* CAST questions */
+.cast-question { background: var(--purple-bg); border: 2px solid var(--purple-light); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; font-size: 9pt; }
+.cast-question-type { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 8pt; color: var(--purple-brand); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+
+/* Earth systems table */
+.earth-systems-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden; border: 2px solid var(--teal-light); margin-bottom: 14px; font-size: 9pt; }
+.earth-systems-table th { background: var(--teal-brand); color: white; font-family: 'Quicksand', sans-serif; font-weight: 700; padding: 8px 12px; text-align: left; }
+.earth-systems-table td { padding: 8px 12px; border-bottom: 1px solid var(--teal-pale); vertical-align: top; }
+.earth-systems-table tr:nth-child(even) td { background: var(--teal-pale); }
+.earth-systems-table tr:last-child td { border-bottom: none; }
+
+/* Page footer */
+.page-footer { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 0.5in; display: flex; justify-content: space-between; align-items: center; font-size: 7pt; color: var(--gray-text); border-top: 1px solid var(--purple-pale); background: white; }
+.page-footer .footer-logo { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--purple-brand); font-size: 8pt; }
+.page-footer .footer-bar { height: 3px; position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, var(--purple-brand), var(--teal-brand)); }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="page cover-page">
+  <div class="cover-header">
+    <div class="cover-bubbles"><div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div><div class="bubble b5"></div></div>
+    <div class="cover-logo"><div class="logo-text">ModelIt!</div></div>
+    <div class="cover-doc-type">Student Activity Pack</div>
+  </div>
+  <div class="cover-body">
+    <div class="cover-title">How Do Animals Use Their Body Parts?</div>
+    <div class="cover-subtitle">The Science of Structure and Function</div>
+    <div class="cover-meta-row">
+      <div class="cover-badge">Grade 1</div>
+      <div class="cover-badge teal">NGSS 1-LS1-1</div>
+      <div class="cover-badge">Structure and Function</div>
+    </div>
+    <div class="cover-name-block">
+      <div class="cover-field"><label>Student Name</label><div class="line"></div></div>
+      <div class="cover-field"><label>Date</label><div class="line"></div></div>
+    </div>
+  </div>
+  <div class="cover-footer">
+    <div class="cover-footer-logo">ModelIt! &mdash; Discovery Collective</div>
+    <div>&copy; 2026 Discovery Collective. All rights reserved.</div>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div style="display:flex;align-items:center;position:relative;z-index:2;">
+      <div class="section-title" style="margin-left:0;">Table of Contents</div>
+    </div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content" style="padding-top: 0.5in;">
+    <ul class="toc-list">
+      <li><span>Pre-Assessment</span><span class="toc-dots"></span><span class="toc-page">3</span></li>
+      <li><span>Scoring Rubric</span><span class="toc-dots"></span><span class="toc-page">4</span></li>
+      <li><span>Component Analysis</span><span class="toc-dots"></span><span class="toc-page">5</span></li>
+      <li><span>Model Recording Page</span><span class="toc-dots"></span><span class="toc-page">6</span></li>
+      <li><span>Simulation Observations</span><span class="toc-dots"></span><span class="toc-page">7</span></li>
+      <li><span>Research &amp; Extend</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
+      <li><span>Reflection Questions</span><span class="toc-dots"></span><span class="toc-page">9</span></li>
+      <li><span>STEM Challenge</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 2</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 1: PRE-ASSESSMENT -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">1</div>
+    <div class="section-title">Pre-Assessment</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="section-intro"><strong>What Do You Know?</strong> Answer each question below to the best of your ability. There are no wrong answers &mdash; this helps your teacher understand what you already know!</div>
+    <div class="question-block">
+      <div class="question-label"><span class="q-number">1</span><span>Draw an animal and circle one body part. Write or tell what job that body part does.</span></div>
+      <div class="response-lines"></div>
+    </div><div class="question-block">
+      <div class="question-label"><span class="q-number">2</span><span>Circle the body part that helps a bird eat: wings, beak, tail feathers.</span></div>
+      <div class="response-lines"></div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 3</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 2: SCORING RUBRIC -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">2</div>
+    <div class="section-title">Scoring Rubric</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="section-intro">Your teacher will use this rubric to assess your work. Read through each level to understand what is expected!</div>
+    <table class="rubric-table">
+      <thead><tr><th>Skill</th><th>Expert (4)</th><th>Proficient (3)</th><th>Developing (2)</th><th>Beginning (1)</th></tr></thead>
+      <tbody>
+        <tr><td>Identifying Components</td><td><span class="rubric-level">Expert</span>Correctly identifies and sorts ALL components as internal or external with detailed reasoning</td><td><span class="rubric-level">Proficient</span>Correctly identifies and sorts MOST components with some reasoning</td><td><span class="rubric-level">Developing</span>Identifies components but has difficulty sorting or explaining</td><td><span class="rubric-level">Beginning</span>Needs significant help identifying components</td></tr>
+        <tr><td>Establishing Relationships</td><td><span class="rubric-level">Expert</span>Accurately describes ALL positive and negative relationships with clear evidence</td><td><span class="rubric-level">Proficient</span>Accurately describes MOST relationships with some evidence</td><td><span class="rubric-level">Developing</span>Identifies some relationships but struggles with direction</td><td><span class="rubric-level">Beginning</span>Needs help understanding how components connect</td></tr>
+        <tr><td>Running Simulations</td><td><span class="rubric-level">Expert</span>Makes accurate predictions AND explains surprising results using evidence</td><td><span class="rubric-level">Proficient</span>Makes reasonable predictions and records clear observations</td><td><span class="rubric-level">Developing</span>Runs simulations but predictions or observations are incomplete</td><td><span class="rubric-level">Beginning</span>Needs help running simulations or recording data</td></tr>
+        <tr><td>Explaining Results</td><td><span class="rubric-level">Expert</span>Uses multiple pieces of evidence to explain HOW and WHY systems interact</td><td><span class="rubric-level">Proficient</span>Uses evidence to explain system interactions</td><td><span class="rubric-level">Developing</span>Gives partial explanations with limited evidence</td><td><span class="rubric-level">Beginning</span>Needs help connecting evidence to explanations</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 4</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 3: COMPONENT ANALYSIS -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">3</div>
+    <div class="section-title">Component Analysis</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="callout teal">
+      <div class="callout-title">What is a Component?</div>
+      A <strong>component</strong> is a part of a system that plays a specific role. Components can be <strong>EXTERNAL</strong> (come from outside the system) or <strong>INTERNAL</strong> (happen within the system).
+    </div>
+    <h3 class="sub-heading">Sort These Components</h3>
+    <div class="component-chips"><span class="chip teal">Body Part Size</span><span class="chip purple">Ability to Get Food</span></div>
+    <div class="sort-columns">
+      <div class="sort-col external"><div class="sort-col-header">EXTERNAL</div><div class="sort-col-body"><div class="sort-item-slot"></div></div></div>
+      <div class="sort-col internal"><div class="sort-col-header">INTERNAL</div><div class="sort-col-body"><div class="sort-item-slot"></div></div></div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span class="q-number">?</span><span>Explain your reasoning: Why did you sort each component the way you did?</span></div>
+      <div class="response-lines tall"></div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 5</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 4: MODEL RECORDING -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">4</div>
+    <div class="section-title">Model Recording Page</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="section-intro">Draw your model showing all components and their relationships. Use the relationship key below to label your arrows!</div>
+    <div class="rel-key">
+      <div class="rel-key-item"><div class="rel-symbol pos">+</div><span><strong>POSITIVE:</strong> When A increases, B also increases</span></div>
+      <div class="rel-key-item"><div class="rel-symbol neg">&minus;</div><span><strong>NEGATIVE:</strong> When A increases, B decreases</span></div>
+    </div>
+    <div class="sketch-area"></div>
+    <div class="question-block">
+      <div class="question-label"><span class="q-number">?</span><span>Explain ONE relationship in your model. What happens when one component changes?</span></div>
+      <div class="response-lines tall"></div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 6</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 5: SIMULATION OBSERVATIONS -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">5</div>
+    <div class="section-title">Simulation Observations</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="section-intro">Run each scenario in ModelIt! First, write your <strong>prediction</strong>. Then run the simulation and record what you <strong>observe</strong>.</div>
+    <div class="scenario-card">
+      <div class="scenario-header"><div class="scenario-icon">1</div>Scenario 1: Long Beak</div>
+      <div class="scenario-body">
+        <div class="scenario-instruction">Body Part Size set to long beak</div>
+        <div class="predict-observe">
+          <div><div class="po-label predict">My Prediction</div><div class="po-box predict"></div></div>
+          <div><div class="po-label observe">What I Observed</div><div class="po-box observe"></div></div>
+        </div>
+      </div>
+    </div><div class="scenario-card">
+      <div class="scenario-header"><div class="scenario-icon">2</div>Scenario 2: Short Beak</div>
+      <div class="scenario-body">
+        <div class="scenario-instruction">Body Part Size set to short beak</div>
+        <div class="predict-observe">
+          <div><div class="po-label predict">My Prediction</div><div class="po-box predict"></div></div>
+          <div><div class="po-label observe">What I Observed</div><div class="po-box observe"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 7</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 6: RESEARCH & EXTEND -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">6</div>
+    <div class="section-title">Research &amp; Extend</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="section-intro">Real systems are more complex than our model! Here are additional components scientists study. Choose one and explain how it could connect to our model.</div>
+    <h3 class="sub-heading">Possible New Components</h3>
+    <ul class="extension-list"></ul>
+    <h3 class="sub-heading">My Extension</h3>
+    <div class="question-block"><div class="question-label"><span class="q-number">A</span><span>Which new component would you add to the model?</span></div><div class="response-box short"></div></div>
+    <div class="question-block"><div class="question-label"><span class="q-number">B</span><span>How would it connect to the existing components? (Draw or describe)</span></div><div class="response-lines tall"></div></div>
+    <div class="question-block"><div class="question-label"><span class="q-number">C</span><span>What evidence or reasoning supports your connection?</span></div><div class="response-lines"></div></div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 8</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 7: REFLECTION -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">7</div>
+    <div class="section-title">Reflection Questions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="callout purple">
+      <div class="callout-title">The Big Question</div>
+      <strong>How do animals use their body parts to help them survive?</strong> Use evidence from your simulation to support your answers.
+    </div>
+    
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 9</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- SECTION 8: STEM CHALLENGE -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">8</div>
+    <div class="section-title">STEM Challenge: Design an Animal Tool</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="stem-mission">
+      <div class="stem-mission-title">YOUR ENGINEERING MISSION</div>
+      <p>Build a tool inspired by an animal body part that helps solve a problem, like picking up small objects.</p>
+    </div>
+    <div class='callout orange'><div class='callout-title'>THE SCENARIO</div>Scientists need your help! They want to pick up small beads from a cup without using their fingers. Look at animal body parts for ideas. Can you design a tool that works like an animal's beak, claw, or trunk to grab the beads?</div>
+    <h3 class="sub-heading">Engineering Design Thinking</h3>
+    <div class="design-grid"><div class="design-box"><div class="design-box-label">1. What animal body part inspired your tool design?</div></div><div class="design-box"><div class="design-box-label">2. What materials will you use to build your tool?</div></div><div class="design-box"><div class="design-box-label">3. How will you test if your tool can pick up small beads?</div></div><div class="design-box"><div class="design-box-label">4. Can you make your tool work better by changing its shape or size?</div></div></div>
+    <h3 class="sub-heading">My Design</h3>
+    <div class="map-area"><div class="map-label">Design Area &mdash; Draw Your Solution</div><div class="compass">N</div></div>
+    <div class="question-block">
+      <div class="question-label"><span class="q-number">!</span><span>Explain your design using scientific evidence from the simulation:</span></div>
+      <div class="response-lines tall"></div>
+    </div>
+    <div class='callout teal'><div class='callout-title'>Real Career Connection</div>Biomedical Engineers design tools and devices inspired by animal body parts, like robotic arms that work like elephant trunks. They earn $50,000-$95,000/year.</div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G01-L05 &bull; Student Activity Pack</span>
+    <span>Page 10</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelIt! Coloring &amp; Activity Pages — G05-L01</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap');
+
+  :root {
+    --purple-deep: #4A3A7A;
+    --purple-brand: #6B5B95;
+    --purple-light: #B8A9D4;
+    --purple-pale: #E8E0F0;
+    --purple-bg: #F5F0FA;
+    --teal-brand: #5BBFCF;
+    --teal-light: #B0E8EF;
+    --teal-pale: #E0F5F8;
+    --navy: #1E1B4B;
+    --dark-text: #2D2A45;
+    --body-text: #3E3A55;
+    --gray-text: #6B6880;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: letter; margin: 0.4in; }
+  @media print {
+    body { margin: 0; padding: 0; }
+    .page { page-break-after: always; box-shadow: none !important; margin: 0 !important; }
+    .page:last-child { page-break-after: avoid; }
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--body-text);
+    background: #E8E0F0;
+    line-height: 1.4;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    margin: 20px auto;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(74,58,122,0.15);
+  }
+
+  /* ===== COLORING PAGE: EARTH SYSTEMS ===== */
+  .coloring-page {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 11in;
+  }
+
+  .coloring-header {
+    background: linear-gradient(135deg, var(--purple-deep), var(--purple-brand));
+    padding: 12px 0.5in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .coloring-header .ch-bubbles {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden; pointer-events: none;
+  }
+  .coloring-header .chb {
+    position: absolute; border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+  .coloring-header .chb1 { width: 60px; height: 60px; top: -15px; right: 50px; }
+  .coloring-header .chb2 { width: 35px; height: 35px; top: 8px; right: 130px; }
+  .coloring-header .chb3 { width: 45px; height: 45px; bottom: -10px; left: 80px; }
+
+  .coloring-header h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18pt;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+
+  .coloring-header .badge {
+    background: var(--teal-brand);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    padding: 4px 14px;
+    border-radius: 14px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .coloring-body {
+    flex: 1;
+    padding: 0.3in 0.4in;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SVG illustration area */
+  .illustration-frame {
+    flex: 1;
+    border: 3px solid var(--purple-light);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+
+  .illustration-frame svg {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* Decorative corner badges on illustration */
+  .corner-badge {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 7pt;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  .corner-badge.tl { top: 8px; left: 8px; background: var(--purple-brand); }
+  .corner-badge.tr { top: 8px; right: 8px; background: var(--teal-brand); }
+
+  .coloring-instructions {
+    background: var(--purple-bg);
+    border-radius: 12px;
+    padding: 12px 16px;
+    border: 2px solid var(--purple-pale);
+    font-size: 10pt;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .instruction-icon {
+    width: 32px; height: 32px;
+    background: var(--purple-brand);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .instruction-icon svg {
+    width: 18px; height: 18px;
+  }
+
+  .coloring-footer {
+    padding: 8px 0.5in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7pt;
+    color: var(--gray-text);
+    border-top: 1px solid var(--purple-pale);
+  }
+  .coloring-footer .fl {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--purple-brand);
+    font-size: 8pt;
+  }
+  .coloring-footer .fb {
+    height: 3px;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(90deg, var(--purple-brand), var(--teal-brand));
+  }
+
+  /* ===== WORD SEARCH / PUZZLE PAGE ===== */
+  .puzzle-body {
+    flex: 1;
+    padding: 0.3in 0.5in;
+  }
+
+  .word-search-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(12, 28px);
+    gap: 2px;
+    margin: 10px auto;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 12pt;
+    color: var(--purple-deep);
+  }
+
+  .ws-cell {
+    width: 28px; height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--purple-pale);
+    border-radius: 4px;
+    background: white;
+  }
+
+  .word-bank {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .word-chip {
+    background: var(--purple-pale);
+    color: var(--purple-deep);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    padding: 5px 14px;
+    border-radius: 16px;
+  }
+  .word-chip.teal {
+    background: var(--teal-pale);
+    color: #2A8A96;
+  }
+
+  .vocab-match {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .vocab-term {
+    background: var(--purple-brand);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .vocab-def {
+    background: var(--teal-pale);
+    color: #2A6A76;
+    font-size: 9pt;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 2px dashed var(--teal-light);
+    display: flex;
+    align-items: center;
+  }
+
+  /* ===== CROSSWORD PUZZLE ===== */
+  .crossword-section {
+    margin-top: 12px;
+  }
+
+  .crossword-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(10, 26px);
+    gap: 1px;
+    margin: 8px auto;
+  }
+
+  .cw-cell {
+    width: 26px; height: 26px;
+    border: 2px solid var(--purple-brand);
+    border-radius: 3px;
+    position: relative;
+    background: white;
+  }
+  .cw-cell.black {
+    background: var(--purple-deep);
+    border-color: var(--purple-deep);
+  }
+  .cw-cell .cw-num {
+    position: absolute;
+    top: 1px; left: 2px;
+    font-size: 6pt;
+    font-weight: 700;
+    color: var(--purple-brand);
+  }
+
+  .crossword-clues {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+    font-size: 9pt;
+  }
+
+  .clue-group h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 10pt;
+    color: var(--purple-deep);
+    margin-bottom: 4px;
+  }
+  .clue-group.teal h4 { color: #2A8A96; }
+
+  .clue-group ol {
+    margin-left: 16px;
+    line-height: 1.7;
+  }
+
+  /* Connection arrows page */
+  .connection-area {
+    border: 3px solid var(--teal-light);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 14px;
+    background: white;
+    min-height: 300px;
+    position: relative;
+  }
+
+  .system-node {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    text-align: center;
+    border: 3px solid;
+    background: white;
+  }
+
+  .system-node svg {
+    width: 36px; height: 36px;
+    margin-bottom: 4px;
+  }
+
+  .arrow-hint {
+    background: var(--purple-bg);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 9pt;
+    border: 2px solid var(--purple-pale);
+    margin-bottom: 10px;
+  }
+
+  .arrow-hint strong {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--purple-deep);
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1: EARTH SYSTEMS COLORING ==================== -->
+<div class="page coloring-page">
+  <div class="coloring-header">
+    <div class="ch-bubbles">
+      <div class="chb chb1"></div><div class="chb chb2"></div><div class="chb chb3"></div>
+    </div>
+    <h1>Color the Earth Systems</h1>
+    <div class="badge">Activity Page</div>
+  </div>
+
+  <div class="coloring-body">
+    <div class="illustration-frame">
+      <div class="corner-badge tl">Hydrosphere</div>
+      <div class="corner-badge tr">Atmosphere</div>
+
+      <!-- SVG Earth Systems Illustration -->
+      <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Earth circle -->
+        <circle cx="250" cy="200" r="140" fill="none" stroke="#B8A9D4" stroke-width="3"/>
+        <!-- Continents outline -->
+        <path d="M180 120 C190 110, 220 100, 240 110 C260 120, 270 115, 280 120 C290 125, 295 140, 290 150 C285 160, 270 165, 260 160 C250 155, 240 160, 230 155 C220 150, 200 145, 190 135 Z" fill="none" stroke="#6B5B95" stroke-width="2.5"/>
+        <path d="M200 180 C210 175, 230 170, 250 180 C270 190, 290 185, 300 195 C310 205, 305 225, 295 235 C285 245, 265 250, 245 245 C225 240, 210 230, 205 215 C200 200, 195 190, 200 180 Z" fill="none" stroke="#6B5B95" stroke-width="2.5"/>
+        <!-- Water waves -->
+        <path d="M130 160 Q145 152, 160 160 Q175 168, 190 160" fill="none" stroke="#5BBFCF" stroke-width="2" stroke-dasharray="4 2"/>
+        <path d="M300 200 Q315 192, 330 200 Q345 208, 360 200" fill="none" stroke="#5BBFCF" stroke-width="2" stroke-dasharray="4 2"/>
+        <path d="M150 250 Q165 242, 180 250 Q195 258, 210 250" fill="none" stroke="#5BBFCF" stroke-width="2" stroke-dasharray="4 2"/>
+        <!-- Clouds -->
+        <ellipse cx="180" cy="80" rx="35" ry="18" fill="none" stroke="#B8A9D4" stroke-width="2"/>
+        <ellipse cx="200" cy="75" rx="25" ry="15" fill="none" stroke="#B8A9D4" stroke-width="2"/>
+        <ellipse cx="320" cy="90" rx="30" ry="16" fill="none" stroke="#B8A9D4" stroke-width="2"/>
+        <ellipse cx="340" cy="85" rx="22" ry="13" fill="none" stroke="#B8A9D4" stroke-width="2"/>
+        <!-- Rain drops -->
+        <path d="M170 100 L168 108 C168 110, 172 110, 172 108 Z" fill="none" stroke="#5BBFCF" stroke-width="1.5"/>
+        <path d="M185 105 L183 113 C183 115, 187 115, 187 113 Z" fill="none" stroke="#5BBFCF" stroke-width="1.5"/>
+        <path d="M195 98 L193 106 C193 108, 197 108, 197 106 Z" fill="none" stroke="#5BBFCF" stroke-width="1.5"/>
+        <!-- Trees -->
+        <polygon points="140,290 155,255 135,265 150,235 130,245 145,215 125,225 145,290" fill="none" stroke="#6B5B95" stroke-width="2"/>
+        <polygon points="240,305 255,275 240,282 250,255 235,262 245,235 230,242 240,305" fill="none" stroke="#6B5B95" stroke-width="2"/>
+        <polygon points="340,295 355,260 340,268 350,240 335,248 345,220 330,228 340,295" fill="none" stroke="#6B5B95" stroke-width="2"/>
+        <!-- Tree trunks -->
+        <rect x="138" y="290" width="8" height="20" fill="none" stroke="#6B5B95" stroke-width="1.5" rx="2"/>
+        <rect x="238" y="305" width="7" height="18" fill="none" stroke="#6B5B95" stroke-width="1.5" rx="2"/>
+        <rect x="338" y="295" width="7" height="18" fill="none" stroke="#6B5B95" stroke-width="1.5" rx="2"/>
+        <!-- Sun -->
+        <circle cx="420" cy="60" r="30" fill="none" stroke="#F39C12" stroke-width="2.5"/>
+        <line x1="420" y1="22" x2="420" y2="12" stroke="#F39C12" stroke-width="2"/>
+        <line x1="420" y1="98" x2="420" y2="108" stroke="#F39C12" stroke-width="2"/>
+        <line x1="382" y1="60" x2="372" y2="60" stroke="#F39C12" stroke-width="2"/>
+        <line x1="458" y1="60" x2="468" y2="60" stroke="#F39C12" stroke-width="2"/>
+        <line x1="399" y1="39" x2="392" y2="32" stroke="#F39C12" stroke-width="2"/>
+        <line x1="441" y1="81" x2="448" y2="88" stroke="#F39C12" stroke-width="2"/>
+        <line x1="399" y1="81" x2="392" y2="88" stroke="#F39C12" stroke-width="2"/>
+        <line x1="441" y1="39" x2="448" y2="32" stroke="#F39C12" stroke-width="2"/>
+        <!-- Wind arrows -->
+        <path d="M80 150 C90 145, 100 148, 110 145 C120 142, 115 135, 125 140" fill="none" stroke="#B8A9D4" stroke-width="2"/>
+        <polygon points="125,140 118,136 120,143" fill="#B8A9D4"/>
+        <path d="M70 170 C80 165, 90 168, 100 165" fill="none" stroke="#B8A9D4" stroke-width="2"/>
+        <polygon points="100,165 93,161 95,168" fill="#B8A9D4"/>
+        <!-- Fire -->
+        <path d="M290 300 C292 285, 300 275, 295 260 C305 270, 310 265, 308 280 C315 270, 320 275, 315 290 C312 300, 295 310, 290 300 Z" fill="none" stroke="#E74C3C" stroke-width="2"/>
+        <path d="M296 295 C297 288, 300 283, 298 275 C303 280, 305 278, 303 288 Z" fill="none" stroke="#F39C12" stroke-width="1.5"/>
+        <!-- Ground line -->
+        <path d="M100 320 Q200 315, 250 320 Q300 325, 400 318" fill="none" stroke="#B8A9D4" stroke-width="2" stroke-dasharray="6 3"/>
+        <!-- Labels -->
+        <text x="250" y="380" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="14" font-weight="700" fill="#6B5B95">Earth's Interconnected Systems</text>
+      </svg>
+    </div>
+
+    <div class="coloring-instructions">
+      <div class="instruction-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l4 4 14-14M3 7l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div>
+        <strong style="font-family: Quicksand; color: #4A3A7A;">Color &amp; Label Challenge:</strong> Color the Hydrosphere (water) BLUE, Biosphere (trees) GREEN, Atmosphere (clouds/wind) LIGHT PURPLE, and Geosphere (ground) BROWN. Then draw arrows showing how each system connects to wildfire conditions!
+      </div>
+    </div>
+  </div>
+
+  <div class="coloring-footer">
+    <span class="fl">ModelIt!</span>
+    <span>G05-L01 &bull; Activity Page</span>
+    <span>&copy; 2026 Discovery Collective</span>
+    <div class="fb"></div>
+  </div>
+</div>
+
+<!-- ==================== PAGE 2: VOCABULARY WORD SEARCH ==================== -->
+<div class="page coloring-page">
+  <div class="coloring-header">
+    <div class="ch-bubbles">
+      <div class="chb chb1"></div><div class="chb chb2"></div><div class="chb chb3"></div>
+    </div>
+    <h1>Vocabulary Word Search</h1>
+    <div class="badge">Puzzle Page</div>
+  </div>
+
+  <div class="puzzle-body">
+    <p style="text-align:center; font-size:10pt; color:#6B6880; margin-bottom:8px;">
+      Find all the key vocabulary words hidden in the grid below!
+    </p>
+
+    <div style="text-align:center;">
+      <div class="word-search-grid">
+        <div class="ws-cell">C</div><div class="ws-cell">O</div><div class="ws-cell">M</div><div class="ws-cell">P</div><div class="ws-cell">O</div><div class="ws-cell">N</div><div class="ws-cell">E</div><div class="ws-cell">N</div><div class="ws-cell">T</div><div class="ws-cell">S</div><div class="ws-cell">W</div><div class="ws-cell">F</div>
+        <div class="ws-cell">D</div><div class="ws-cell">R</div><div class="ws-cell">O</div><div class="ws-cell">U</div><div class="ws-cell">G</div><div class="ws-cell">H</div><div class="ws-cell">T</div><div class="ws-cell">K</div><div class="ws-cell">L</div><div class="ws-cell">M</div><div class="ws-cell">I</div><div class="ws-cell">U</div>
+        <div class="ws-cell">E</div><div class="ws-cell">X</div><div class="ws-cell">T</div><div class="ws-cell">E</div><div class="ws-cell">R</div><div class="ws-cell">N</div><div class="ws-cell">A</div><div class="ws-cell">L</div><div class="ws-cell">Q</div><div class="ws-cell">B</div><div class="ws-cell">N</div><div class="ws-cell">E</div>
+        <div class="ws-cell">V</div><div class="ws-cell">R</div><div class="ws-cell">A</div><div class="ws-cell">I</div><div class="ws-cell">N</div><div class="ws-cell">F</div><div class="ws-cell">A</div><div class="ws-cell">L</div><div class="ws-cell">L</div><div class="ws-cell">P</div><div class="ws-cell">D</div><div class="ws-cell">L</div>
+        <div class="ws-cell">P</div><div class="ws-cell">O</div><div class="ws-cell">S</div><div class="ws-cell">I</div><div class="ws-cell">T</div><div class="ws-cell">I</div><div class="ws-cell">V</div><div class="ws-cell">E</div><div class="ws-cell">J</div><div class="ws-cell">S</div><div class="ws-cell">H</div><div class="ws-cell">T</div>
+        <div class="ws-cell">W</div><div class="ws-cell">Y</div><div class="ws-cell">Z</div><div class="ws-cell">K</div><div class="ws-cell">M</div><div class="ws-cell">O</div><div class="ws-cell">D</div><div class="ws-cell">E</div><div class="ws-cell">L</div><div class="ws-cell">R</div><div class="ws-cell">X</div><div class="ws-cell">A</div>
+        <div class="ws-cell">I</div><div class="ws-cell">N</div><div class="ws-cell">T</div><div class="ws-cell">E</div><div class="ws-cell">R</div><div class="ws-cell">N</div><div class="ws-cell">A</div><div class="ws-cell">L</div><div class="ws-cell">V</div><div class="ws-cell">B</div><div class="ws-cell">C</div><div class="ws-cell">N</div>
+        <div class="ws-cell">S</div><div class="ws-cell">Y</div><div class="ws-cell">S</div><div class="ws-cell">T</div><div class="ws-cell">E</div><div class="ws-cell">M</div><div class="ws-cell">S</div><div class="ws-cell">N</div><div class="ws-cell">Q</div><div class="ws-cell">G</div><div class="ws-cell">F</div><div class="ws-cell">E</div>
+        <div class="ws-cell">N</div><div class="ws-cell">E</div><div class="ws-cell">G</div><div class="ws-cell">A</div><div class="ws-cell">T</div><div class="ws-cell">I</div><div class="ws-cell">V</div><div class="ws-cell">E</div><div class="ws-cell">U</div><div class="ws-cell">J</div><div class="ws-cell">O</div><div class="ws-cell">G</div>
+        <div class="ws-cell">S</div><div class="ws-cell">I</div><div class="ws-cell">M</div><div class="ws-cell">U</div><div class="ws-cell">L</div><div class="ws-cell">A</div><div class="ws-cell">T</div><div class="ws-cell">I</div><div class="ws-cell">O</div><div class="ws-cell">N</div><div class="ws-cell">W</div><div class="ws-cell">A</div>
+        <div class="ws-cell">V</div><div class="ws-cell">E</div><div class="ws-cell">G</div><div class="ws-cell">E</div><div class="ws-cell">T</div><div class="ws-cell">A</div><div class="ws-cell">T</div><div class="ws-cell">I</div><div class="ws-cell">O</div><div class="ws-cell">N</div><div class="ws-cell">K</div><div class="ws-cell">R</div>
+        <div class="ws-cell">W</div><div class="ws-cell">I</div><div class="ws-cell">L</div><div class="ws-cell">D</div><div class="ws-cell">F</div><div class="ws-cell">I</div><div class="ws-cell">R</div><div class="ws-cell">E</div><div class="ws-cell">S</div><div class="ws-cell">T</div><div class="ws-cell">U</div><div class="ws-cell">M</div>
+      </div>
+    </div>
+
+    <div class="word-bank">
+      <span class="word-chip">COMPONENT</span>
+      <span class="word-chip teal">DROUGHT</span>
+      <span class="word-chip">EXTERNAL</span>
+      <span class="word-chip teal">RAINFALL</span>
+      <span class="word-chip">POSITIVE</span>
+      <span class="word-chip teal">MODEL</span>
+      <span class="word-chip">INTERNAL</span>
+      <span class="word-chip teal">SYSTEM</span>
+      <span class="word-chip">NEGATIVE</span>
+      <span class="word-chip teal">SIMULATION</span>
+      <span class="word-chip">VEGETATION</span>
+      <span class="word-chip teal">WILDFIRE</span>
+    </div>
+
+    <div style="background: var(--purple-bg); border-radius: 12px; padding: 14px 18px; border: 2px solid var(--purple-pale);">
+      <strong style="font-family: Quicksand; font-size: 11pt; color: #4A3A7A;">Bonus Challenge:</strong>
+      <span style="font-size: 10pt;">Write a sentence using THREE of the vocabulary words from the word bank:</span>
+      <div style="border-bottom: 2px solid var(--purple-light); height: 28px; margin-top: 8px;"></div>
+      <div style="border-bottom: 2px solid var(--purple-light); height: 28px;"></div>
+    </div>
+  </div>
+
+  <div class="coloring-footer">
+    <span class="fl">ModelIt!</span>
+    <span>G05-L01 &bull; Puzzle Page</span>
+    <span>&copy; 2026 Discovery Collective</span>
+    <div class="fb"></div>
+  </div>
+</div>
+
+<!-- ==================== PAGE 3: VOCABULARY MATCHING ==================== -->
+<div class="page coloring-page">
+  <div class="coloring-header">
+    <div class="ch-bubbles">
+      <div class="chb chb1"></div><div class="chb chb2"></div><div class="chb chb3"></div>
+    </div>
+    <h1>Vocabulary Match-Up</h1>
+    <div class="badge">Activity Page</div>
+  </div>
+
+  <div class="puzzle-body">
+    <p style="text-align:center; font-size:10pt; color:#6B6880; margin-bottom:14px;">
+      Draw a line connecting each vocabulary term to its correct definition!
+    </p>
+
+    <div style="display: flex; gap: 40px; justify-content: center; margin-bottom: 24px;">
+      <!-- Terms column -->
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="vocab-term">Component</div>
+        <div class="vocab-term" style="background: var(--teal-brand);">Model</div>
+        <div class="vocab-term">Simulation</div>
+        <div class="vocab-term" style="background: var(--teal-brand);">External</div>
+        <div class="vocab-term">Internal</div>
+        <div class="vocab-term" style="background: var(--teal-brand);">Positive (+)</div>
+        <div class="vocab-term">Negative (-)</div>
+        <div class="vocab-term" style="background: var(--teal-brand);">System</div>
+      </div>
+
+      <!-- Space for drawing lines -->
+      <div style="width: 60px;"></div>
+
+      <!-- Definitions column (shuffled) -->
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="vocab-def">A group of parts that work together</div>
+        <div class="vocab-def">When A goes up, B goes DOWN</div>
+        <div class="vocab-def">A part of a system that has a job</div>
+        <div class="vocab-def">Comes from inside the system</div>
+        <div class="vocab-def">Running a model to test &ldquo;what if&rdquo;</div>
+        <div class="vocab-def">A simplified version of something real</div>
+        <div class="vocab-def">When A goes up, B also goes UP</div>
+        <div class="vocab-def">Comes from outside the system</div>
+      </div>
+    </div>
+
+    <div style="background: var(--teal-pale); border-radius: 12px; padding: 14px 18px; border: 2px solid var(--teal-light);">
+      <strong style="font-family: Quicksand; font-size: 11pt; color: #2A8A96;">Think About It:</strong>
+      <span style="font-size: 10pt;">Give a real-life example of a system with external and internal components (hint: think about your own body, a car, or a school!):</span>
+      <div style="border-bottom: 2px solid var(--teal-light); height: 28px; margin-top: 8px;"></div>
+      <div style="border-bottom: 2px solid var(--teal-light); height: 28px;"></div>
+      <div style="border-bottom: 2px solid var(--teal-light); height: 28px;"></div>
+    </div>
+  </div>
+
+  <div class="coloring-footer">
+    <span class="fl">ModelIt!</span>
+    <span>G05-L01 &bull; Activity Page</span>
+    <span>&copy; 2026 Discovery Collective</span>
+    <div class="fb"></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelIt! Teacher's Guide — G05-L01</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap');
+
+  :root {
+    --purple-deep: #4A3A7A;
+    --purple-brand: #6B5B95;
+    --purple-mid: #8B7BB5;
+    --purple-light: #B8A9D4;
+    --purple-pale: #E8E0F0;
+    --purple-bg: #F5F0FA;
+    --teal-brand: #5BBFCF;
+    --teal-mid: #7ED4E0;
+    --teal-light: #B0E8EF;
+    --teal-pale: #E0F5F8;
+    --navy: #1E1B4B;
+    --dark-text: #2D2A45;
+    --body-text: #3E3A55;
+    --gray-text: #6B6880;
+    --white: #FFFFFF;
+    --green-pos: #2ECC71;
+    --red-neg: #E74C3C;
+    --orange-accent: #F39C12;
+    --orange-light: #FEF3E2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page { size: letter; margin: 0.5in; }
+
+  @media print {
+    body { margin: 0; padding: 0; }
+    .page { page-break-after: always; box-shadow: none !important; margin: 0 !important; border-radius: 0 !important; }
+    .page:last-child { page-break-after: avoid; }
+  }
+
+  body {
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    color: var(--body-text);
+    background: #E8E0F0;
+    line-height: 1.5;
+    font-size: 10pt;
+  }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 20px auto;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(74,58,122,0.15);
+    border-radius: 4px;
+  }
+
+  /* ===== COVER ===== */
+  .cover-page { display: flex; flex-direction: column; height: 11in; }
+
+  .cover-header-tg {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 40%, var(--purple-brand) 100%);
+    padding: 0.6in 0.6in 0.5in;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  .cover-header-tg::after {
+    content: '';
+    position: absolute;
+    bottom: -30px; left: 0; right: 0;
+    height: 60px;
+    background: white;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+
+  .cover-bubbles {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden; pointer-events: none;
+  }
+  .cover-bubbles .bubble { position: absolute; border-radius: 50%; background: rgba(91,191,207,0.1); }
+  .cover-bubbles .b1 { width: 140px; height: 140px; top: -30px; right: 40px; }
+  .cover-bubbles .b2 { width: 80px; height: 80px; top: 20px; right: 200px; }
+  .cover-bubbles .b3 { width: 50px; height: 50px; bottom: 50px; left: 30px; }
+  .cover-bubbles .b4 { width: 70px; height: 70px; bottom: 20px; right: 100px; }
+
+  .cover-logo {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 14px; position: relative; z-index: 2;
+  }
+  .logo-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28pt; font-weight: 700; color: white; letter-spacing: 1px;
+  }
+
+  .cover-doc-badge {
+    background: var(--purple-mid);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; font-size: 13pt;
+    padding: 6px 24px; border-radius: 20px;
+    display: inline-block;
+    position: relative; z-index: 2;
+  }
+
+  .cover-body {
+    flex: 1; display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0.4in 0.7in; text-align: center;
+  }
+  .cover-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32pt; font-weight: 800;
+    color: var(--navy); line-height: 1.2; margin-bottom: 12px;
+  }
+  .cover-subtitle {
+    font-size: 14pt; color: var(--gray-text);
+    font-weight: 400; margin-bottom: 30px; line-height: 1.4;
+  }
+
+  .cover-quick-ref {
+    background: var(--purple-bg);
+    border-radius: 14px;
+    padding: 18px 24px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid var(--purple-light);
+  }
+  .cover-quick-ref h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800; font-size: 12pt;
+    color: var(--purple-deep); margin-bottom: 10px;
+    text-align: center;
+  }
+  .qr-row {
+    display: flex; padding: 4px 0;
+    border-bottom: 1px solid var(--purple-pale);
+    font-size: 9.5pt;
+  }
+  .qr-row:last-child { border-bottom: none; }
+  .qr-label {
+    font-weight: 700; color: var(--purple-brand);
+    width: 110px; flex-shrink: 0;
+  }
+  .qr-value { color: var(--dark-text); }
+
+  .cover-footer {
+    background: var(--navy);
+    padding: 14px 0.6in;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 8pt; color: rgba(255,255,255,0.5);
+  }
+  .cover-footer .footer-logo-w {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; font-size: 10pt; color: var(--teal-brand);
+  }
+
+  /* ===== INTERIOR ===== */
+  .page-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 100%);
+    padding: 14px 0.5in 12px;
+    display: flex; justify-content: space-between; align-items: center;
+    position: relative;
+  }
+  .page-header::after {
+    content: ''; position: absolute; bottom: -10px; left: 0; right: 0;
+    height: 20px; background: white;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  .page-header-bubbles {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden; pointer-events: none;
+  }
+  .page-header-bubbles .hb { position: absolute; border-radius: 50%; background: rgba(91,191,207,0.08); }
+  .page-header-bubbles .hb1 { width: 40px; height: 40px; top: -8px; right: 70px; }
+  .page-header-bubbles .hb2 { width: 25px; height: 25px; top: 5px; right: 140px; }
+
+  .section-number {
+    background: var(--teal-brand); color: white;
+    font-family: 'Quicksand', sans-serif; font-weight: 800; font-size: 14pt;
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 2; flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt; font-weight: 700; color: white;
+    position: relative; z-index: 2; flex: 1; margin-left: 12px;
+  }
+  .page-logo-mini {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 9pt; font-weight: 700; color: rgba(255,255,255,0.5);
+    position: relative; z-index: 2;
+  }
+
+  .page-content { padding: 0.25in 0.5in 0.4in; }
+
+  /* Teacher callout boxes */
+  .teacher-tip {
+    background: var(--purple-bg);
+    border-left: 4px solid var(--purple-brand);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    font-size: 9.5pt;
+  }
+  .teacher-tip-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800; font-size: 10pt;
+    color: var(--purple-deep); margin-bottom: 4px;
+  }
+
+  .teacher-script {
+    background: var(--teal-pale);
+    border-left: 4px solid var(--teal-brand);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: #2A6A76;
+  }
+  .teacher-script strong { color: #1A5A66; font-style: normal; }
+
+  .watch-for {
+    background: var(--orange-light);
+    border-left: 4px solid var(--orange-accent);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    font-size: 9.5pt;
+  }
+  .watch-for-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800; font-size: 10pt;
+    color: #B8860B; margin-bottom: 4px;
+  }
+
+  /* NGSS table */
+  .ngss-table {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    border-radius: 10px; overflow: hidden;
+    border: 2px solid var(--purple-light); margin-bottom: 14px;
+    font-size: 9pt;
+  }
+  .ngss-table th {
+    background: var(--purple-brand); color: white;
+    font-family: 'Quicksand', sans-serif; font-weight: 700;
+    padding: 8px 12px; text-align: left;
+  }
+  .ngss-table td {
+    padding: 10px 12px; border-bottom: 1px solid var(--purple-pale);
+    vertical-align: top; line-height: 1.5;
+  }
+  .ngss-table tr:last-child td { border-bottom: none; }
+  .ngss-table td:first-child {
+    font-family: 'Quicksand', sans-serif; font-weight: 700;
+    color: var(--purple-deep); background: var(--purple-pale);
+    width: 28%;
+  }
+
+  /* Facilitation table */
+  .facilitation-table {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    border-radius: 10px; overflow: hidden;
+    border: 2px solid var(--teal-light); margin-bottom: 14px;
+    font-size: 8.5pt;
+  }
+  .facilitation-table th {
+    background: var(--teal-brand); color: white;
+    font-family: 'Quicksand', sans-serif; font-weight: 700;
+    padding: 6px 10px; text-align: left;
+  }
+  .facilitation-table td {
+    padding: 8px 10px; border-bottom: 1px solid var(--teal-pale);
+    vertical-align: top; line-height: 1.5;
+    border-right: 1px solid var(--teal-pale);
+  }
+  .facilitation-table td:last-child { border-right: none; }
+  .facilitation-table tr:last-child td { border-bottom: none; }
+
+  /* Answer key callout */
+  .answer-key-box {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--purple-deep) 100%);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    color: white;
+  }
+  .answer-key-box h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800; font-size: 11pt;
+    color: var(--teal-brand); margin-bottom: 6px;
+  }
+  .answer-key-box p, .answer-key-box li {
+    font-size: 9pt; line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+  }
+  .answer-key-box ul { margin-left: 16px; }
+
+  /* Differentiation cards */
+  .diff-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 10px; margin-bottom: 14px;
+  }
+  .diff-card {
+    border-radius: 10px; padding: 12px 14px;
+    border: 2px solid; font-size: 9pt;
+  }
+  .diff-card.below {
+    border-color: var(--teal-light); background: var(--teal-pale);
+  }
+  .diff-card.advanced {
+    border-color: var(--purple-light); background: var(--purple-bg);
+  }
+  .diff-card.ell {
+    border-color: #F5D89A; background: var(--orange-light);
+  }
+  .diff-card.gifted {
+    border-color: var(--teal-brand); background: white;
+  }
+  .diff-card-title {
+    font-family: 'Quicksand', sans-serif; font-weight: 800;
+    font-size: 10pt; margin-bottom: 4px;
+  }
+  .diff-card.below .diff-card-title { color: #2A8A96; }
+  .diff-card.advanced .diff-card-title { color: var(--purple-deep); }
+  .diff-card.ell .diff-card-title { color: #B8860B; }
+  .diff-card.gifted .diff-card-title { color: var(--teal-brand); }
+
+  /* Misconception table */
+  .misconception-row {
+    display: flex; gap: 0; margin-bottom: 10px;
+    border-radius: 10px; overflow: hidden;
+    border: 2px solid var(--purple-light);
+    font-size: 9pt;
+  }
+  .misconception-wrong {
+    background: #FDE8E8; padding: 10px 14px;
+    width: 45%; border-right: 2px solid var(--purple-light);
+  }
+  .misconception-right {
+    background: #E8F8E8; padding: 10px 14px;
+    width: 55%;
+  }
+  .misconception-label {
+    font-family: 'Quicksand', sans-serif; font-weight: 800;
+    font-size: 8pt; text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .misconception-wrong .misconception-label { color: var(--red-neg); }
+  .misconception-right .misconception-label { color: var(--green-pos); }
+
+  h2.interior-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13pt; font-weight: 800;
+    color: var(--purple-deep); margin-bottom: 8px;
+    padding-bottom: 3px; border-bottom: 2px solid var(--purple-pale);
+  }
+
+  h3.sub-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10.5pt; font-weight: 700;
+    color: var(--purple-brand); margin-bottom: 5px; margin-top: 10px;
+  }
+
+  /* Slide facilitation card */
+  .slide-card {
+    border: 2px solid var(--purple-light);
+    border-radius: 12px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .slide-card-header {
+    background: var(--purple-brand);
+    color: white;
+    padding: 8px 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; font-size: 11pt;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .slide-time {
+    background: rgba(255,255,255,0.2);
+    padding: 2px 10px; border-radius: 12px;
+    font-size: 8pt;
+  }
+  .slide-card-body { padding: 12px 14px; }
+
+  /* Earth systems table */
+  .earth-systems-table {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    border-radius: 10px; overflow: hidden;
+    border: 2px solid var(--teal-light); margin-bottom: 14px;
+    font-size: 9pt;
+  }
+  .earth-systems-table th {
+    background: var(--teal-brand); color: white;
+    font-family: 'Quicksand', sans-serif; font-weight: 700;
+    padding: 8px 12px; text-align: left;
+  }
+  .earth-systems-table td {
+    padding: 8px 12px; border-bottom: 1px solid var(--teal-pale);
+    vertical-align: top;
+  }
+  .earth-systems-table tr:nth-child(even) td { background: var(--teal-pale); }
+  .earth-systems-table tr:last-child td { border-bottom: none; }
+
+  .page-footer {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 8px 0.5in;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 7pt; color: var(--gray-text);
+    border-top: 1px solid var(--purple-pale); background: white;
+  }
+  .page-footer .footer-logo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; color: var(--purple-brand); font-size: 8pt;
+  }
+  .page-footer .footer-bar {
+    height: 3px; position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(90deg, var(--navy), var(--purple-brand), var(--teal-brand));
+  }
+
+  /* LEVER framework */
+  .lever-step {
+    display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start;
+  }
+  .lever-letter {
+    width: 36px; height: 36px;
+    background: var(--purple-brand);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900; font-size: 16pt;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .lever-letter.teal { background: var(--teal-brand); }
+  .lever-desc {
+    font-size: 9.5pt;
+  }
+  .lever-desc strong {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--purple-deep);
+    display: block;
+    font-size: 10pt;
+  }
+
+  /* CAST question box */
+  .cast-question {
+    background: var(--purple-bg);
+    border: 2px solid var(--purple-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 9pt;
+  }
+  .cast-question-type {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; font-size: 8pt;
+    color: var(--purple-brand);
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .toc-list {
+    list-style: none; counter-reset: toc-counter;
+  }
+  .toc-list li {
+    counter-increment: toc-counter;
+    display: flex; align-items: center;
+    padding: 9px 0; border-bottom: 1px dashed var(--purple-pale);
+    font-size: 10.5pt;
+  }
+  .toc-list li::before {
+    content: counter(toc-counter);
+    background: var(--purple-brand); color: white;
+    width: 24px; height: 24px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 9pt; margin-right: 12px; flex-shrink: 0;
+  }
+  .toc-list li:nth-child(even)::before { background: var(--teal-brand); }
+  .toc-list li .toc-dots {
+    flex: 1; border-bottom: 1px dotted var(--purple-light);
+    margin: 0 8px; height: 1px; align-self: flex-end; margin-bottom: 4px;
+  }
+  .toc-list li .toc-page {
+    font-weight: 700; color: var(--purple-brand); font-size: 9pt;
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER PAGE ==================== -->
+<div class="page cover-page">
+  <div class="cover-header-tg">
+    <div class="cover-bubbles">
+      <div class="bubble b1"></div><div class="bubble b2"></div>
+      <div class="bubble b3"></div><div class="bubble b4"></div>
+    </div>
+    <div class="cover-logo">
+      <div class="logo-text">ModelIt!</div>
+    </div>
+    <div class="cover-doc-badge">Teacher's Guide</div>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-title">When Trees Become Matches</div>
+    <div class="cover-subtitle">California's Burning Season and the Earth Systems That Fuel It</div>
+
+    <div class="cover-quick-ref">
+      <h3>Quick Reference</h3>
+      <div class="qr-row"><span class="qr-label">Grade Level</span><span class="qr-value">5th Grade</span></div>
+      <div class="qr-row"><span class="qr-label">NGSS Standard</span><span class="qr-value">5-ESS2-1</span></div>
+      <div class="qr-row"><span class="qr-label">Time</span><span class="qr-value">45&ndash;60 minutes (core lesson)</span></div>
+      <div class="qr-row"><span class="qr-label">Materials</span><span class="qr-value">Student Activity Pack, devices with ModelIt! access</span></div>
+      <div class="qr-row"><span class="qr-label">Prep</span><span class="qr-value">Print activity packs, test ModelIt! on student devices</span></div>
+      <div class="qr-row"><span class="qr-label">Grouping</span><span class="qr-value">Partners or small groups (2&ndash;4)</span></div>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    <div class="footer-logo-w">ModelIt! &mdash; Discovery Collective</div>
+    <div>&copy; 2026 Discovery Collective. All rights reserved. For teacher use only.</div>
+  </div>
+</div>
+
+<!-- ==================== TABLE OF CONTENTS ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div style="display:flex;align-items:center;position:relative;z-index:2;">
+      <div class="section-title" style="margin-left:0;">Table of Contents</div>
+    </div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content" style="padding-top: 0.45in;">
+    <ul class="toc-list">
+      <li><span>NGSS Standards Unpacking &amp; CAST Alignment</span><span class="toc-dots"></span><span class="toc-page">3</span></li>
+      <li><span>Background Content Knowledge</span><span class="toc-dots"></span><span class="toc-page">4</span></li>
+      <li><span>The LEVER Framework</span><span class="toc-dots"></span><span class="toc-page">5</span></li>
+      <li><span>Slide-by-Slide Facilitation Guide</span><span class="toc-dots"></span><span class="toc-page">6</span></li>
+      <li><span>Answer Key &amp; Expected Responses</span><span class="toc-dots"></span><span class="toc-page">9</span></li>
+      <li><span>STEM Challenge Teacher Guidance</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
+      <li><span>Differentiation &amp; Extensions</span><span class="toc-dots"></span><span class="toc-page">11</span></li>
+      <li><span>Common Misconceptions</span><span class="toc-dots"></span><span class="toc-page">12</span></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 2</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 1: NGSS UNPACKING ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">1</div>
+    <div class="section-title">NGSS Standards &amp; CAST Alignment</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="teacher-tip">
+      <div class="teacher-tip-title">Performance Expectation: 5-ESS2-1</div>
+      Develop a model using an example to describe ways the geosphere, biosphere, hydrosphere, and/or atmosphere interact.
+    </div>
+
+    <h2 class="interior-heading">Three-Dimensional Learning</h2>
+    <table class="ngss-table">
+      <tr>
+        <td>Science &amp; Engineering Practice</td>
+        <td><strong>Developing and Using Models</strong> &mdash; Students develop and use models to describe phenomena. In this lesson, students build a computational model showing how components interact in California's fire system.</td>
+      </tr>
+      <tr>
+        <td>Disciplinary Core Idea</td>
+        <td><strong>ESS2.A: Earth Materials and Systems</strong> &mdash; Earth's major systems are the geosphere, hydrosphere, atmosphere, and biosphere. These systems interact in multiple ways to affect Earth's surface materials and processes.</td>
+      </tr>
+      <tr>
+        <td>Crosscutting Concept</td>
+        <td><strong>Systems and System Models</strong> &mdash; A system can be described in terms of its components and their interactions. Students identify components and model the relationships between them.</td>
+      </tr>
+    </table>
+
+    <h2 class="interior-heading">CAST Testing Alignment</h2>
+    <div class="cast-question">
+      <div class="cast-question-type">Sample Multiple Choice</div>
+      A student builds a model showing that when rainfall decreases, dry vegetation increases. What type of relationship does this represent?<br>
+      <strong>A.</strong> Positive &nbsp; <strong>B.</strong> Negative &nbsp; <strong>C.</strong> No relationship &nbsp; <strong>D.</strong> Random
+    </div>
+    <div class="cast-question">
+      <div class="cast-question-type">Sample Constructed Response</div>
+      Using evidence from the simulation, explain how at least two Earth systems interact to create wildfire conditions in California. Include the role of at least one external and one internal component.
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 3</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 2: BACKGROUND KNOWLEDGE ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">2</div>
+    <div class="section-title">Background Content Knowledge</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="teacher-tip">
+      <div class="teacher-tip-title">For Your Confidence</div>
+      This section provides the science background you need to facilitate this lesson with authority. You don't need to teach all of this &mdash; it's here so you can answer student questions accurately.
+    </div>
+
+    <h2 class="interior-heading">California Wildfire Science</h2>
+    <p style="font-size:9.5pt; margin-bottom: 10px;">California's Mediterranean climate creates a predictable cycle: wet winters grow vegetation, followed by long dry summers that turn that vegetation into fuel. When hot, dry Santa Ana winds arrive in fall, the conditions are set for catastrophic fire events. This is why California burns &ldquo;at the same time every year.&rdquo;</p>
+
+    <h2 class="interior-heading">Earth Systems Connections</h2>
+    <table class="earth-systems-table">
+      <thead>
+        <tr>
+          <th>Earth System</th>
+          <th>Role in Wildfires</th>
+          <th>Components in Model</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Hydrosphere</strong></td>
+          <td>Rainfall patterns determine vegetation moisture levels. Drought = dry fuel.</td>
+          <td>Rainfall (External)</td>
+        </tr>
+        <tr>
+          <td><strong>Biosphere</strong></td>
+          <td>Living plants become fuel when dried out. Density and type of vegetation matter.</td>
+          <td>Dry Vegetation (Internal)</td>
+        </tr>
+        <tr>
+          <td><strong>Atmosphere</strong></td>
+          <td>Wind carries fire embers, feeds oxygen to flames, and affects humidity.</td>
+          <td>Wind (External)</td>
+        </tr>
+        <tr>
+          <td><strong>Geosphere</strong></td>
+          <td>Terrain and slopes affect fire behavior &mdash; fire travels uphill faster.</td>
+          <td>Extension component</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="watch-for">
+      <div class="watch-for-title">Key Misconception Alert</div>
+      Students often think wildfires are caused only by human carelessness (campfires, arson). While human activity is a factor, the underlying conditions &mdash; dry vegetation, wind, low humidity &mdash; are what make large fires possible. Help students see that Earth systems create the conditions, even if humans sometimes provide the spark.
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 4</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 3: LEVER FRAMEWORK ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">3</div>
+    <div class="section-title">The LEVER Framework</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="teacher-tip">
+      <div class="teacher-tip-title">About the LEVER Framework</div>
+      LEVER is ModelIt!'s systematic approach to building computational models. Each phase scaffolds student thinking from identifying components to revising models based on evidence.
+    </div>
+
+    <div class="lever-step">
+      <div class="lever-letter">L</div>
+      <div class="lever-desc">
+        <strong>Locate the System</strong>
+        Identify the components (parts) of the system. Determine which are EXTERNAL (inputs from outside) and INTERNAL (processes within the system). In this lesson: Rainfall and Wind are external; Dry Vegetation and Fire Spread are internal.
+      </div>
+    </div>
+
+    <div class="lever-step">
+      <div class="lever-letter teal">E</div>
+      <div class="lever-desc">
+        <strong>Establish Relationships</strong>
+        Determine how components affect each other using (+) positive and (-) negative relationships. Example: Rainfall has a NEGATIVE effect on Dry Vegetation (more rain = less dry vegetation).
+      </div>
+    </div>
+
+    <div class="lever-step">
+      <div class="lever-letter">V</div>
+      <div class="lever-desc">
+        <strong>Visualize &amp; Model</strong>
+        Build the model in ModelIt! Set up components, draw relationship arrows, and configure the simulation. Students see their conceptual model come to life computationally.
+      </div>
+    </div>
+
+    <div class="lever-step">
+      <div class="lever-letter teal">E</div>
+      <div class="lever-desc">
+        <strong>Evaluate Outcomes</strong>
+        Run simulations with different scenarios (drought, wind, fire season). Analyze graphs showing how components change over time. Compare predictions to actual results.
+      </div>
+    </div>
+
+    <div class="lever-step">
+      <div class="lever-letter">R</div>
+      <div class="lever-desc">
+        <strong>Revise &amp; Extend</strong>
+        Add complexity to the model (new components like temperature or humidity). Improve the model based on new evidence. Connect to real-world applications.
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 5</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 4: SLIDE FACILITATION ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">4</div>
+    <div class="section-title">Slide-by-Slide Facilitation</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="slide-card">
+      <div class="slide-card-header">
+        <span>Slide 1: Cover &amp; Introduction</span>
+        <span class="slide-time">3&ndash;5 min</span>
+      </div>
+      <div class="slide-card-body">
+        <div class="teacher-script">
+          <strong>Say:</strong> &ldquo;Today we're going to investigate a real mystery: Why does California burn at the same time every year? We're going to build a scientific model to figure this out &mdash; and by the end, you'll be able to explain it like a scientist.&rdquo;
+        </div>
+        <div class="watch-for">
+          <div class="watch-for-title">Watch For</div>
+          Gauge prior knowledge. Some students may have personal experience with wildfires. Be sensitive to students who may have been affected by fires.
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-card">
+      <div class="slide-card-header">
+        <span>Slide 2: Learning Objectives &amp; Vocabulary</span>
+        <span class="slide-time">3&ndash;4 min</span>
+      </div>
+      <div class="slide-card-body">
+        <div class="teacher-script">
+          <strong>Say:</strong> &ldquo;Let's preview the key words we'll use today. A COMPONENT is a part of a system. A MODEL is a simplified version of something complex. A SIMULATION lets us test 'what if' scenarios.&rdquo;
+        </div>
+        <div class="teacher-tip">
+          <div class="teacher-tip-title">Tip</div>
+          Have students turn and talk: &ldquo;What models have you seen in science before?&rdquo; Accept all answers &mdash; globes, diagrams, dioramas are all models.
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-card">
+      <div class="slide-card-header">
+        <span>Slide 3: The Big Question</span>
+        <span class="slide-time">2&ndash;3 min</span>
+      </div>
+      <div class="slide-card-body">
+        <div class="teacher-script">
+          <strong>Say:</strong> &ldquo;Here's our big question: Why does California burn at the same time every year? By the end of today's lesson, you'll be able to answer this using evidence from your model.&rdquo;
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-card">
+      <div class="slide-card-header">
+        <span>Slide 5: Activity 1 &mdash; Sort Components</span>
+        <span class="slide-time">5&ndash;8 min</span>
+      </div>
+      <div class="slide-card-body">
+        <div class="teacher-script">
+          <strong>Say:</strong> &ldquo;Now you'll sort these four components into EXTERNAL and INTERNAL. External means it comes from outside the system &mdash; we can't control it from within. Internal means it's part of the system's inner workings.&rdquo;
+        </div>
+        <div class="watch-for">
+          <div class="watch-for-title">Common Mistake</div>
+          Students often think &ldquo;fire&rdquo; is external because it seems to &ldquo;come from outside.&rdquo; Help them see that Fire Spread is an internal process that results from the interaction of other components.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 6</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 5: ANSWER KEY ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">5</div>
+    <div class="section-title">Answer Key &amp; Expected Responses</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="answer-key-box">
+      <h4>Component Sorting (Section 3)</h4>
+      <ul>
+        <li><strong>EXTERNAL:</strong> Rainfall, Wind &mdash; these come from outside the wildfire system</li>
+        <li><strong>INTERNAL:</strong> Dry Vegetation, Fire Spread &mdash; these are processes within the system</li>
+      </ul>
+    </div>
+
+    <div class="answer-key-box">
+      <h4>Relationships (Section 4)</h4>
+      <ul>
+        <li><strong>Rainfall &rarr; Dry Vegetation:</strong> NEGATIVE (-) &mdash; More rain = less dry vegetation</li>
+        <li><strong>Dry Vegetation &rarr; Fire Spread:</strong> POSITIVE (+) &mdash; More dry vegetation = more fire spread</li>
+        <li><strong>Wind &rarr; Fire Spread:</strong> POSITIVE (+) &mdash; More wind = more fire spread</li>
+      </ul>
+    </div>
+
+    <div class="answer-key-box">
+      <h4>Simulation Observations (Section 5)</h4>
+      <ul>
+        <li><strong>Scenario 1 (Drought):</strong> Without rainfall, dry vegetation increases steadily. Fire spread increases as fuel accumulates.</li>
+        <li><strong>Scenario 2 (Windy Day):</strong> Wind causes fire to spread faster and farther. Even with normal vegetation, wind accelerates fire.</li>
+        <li><strong>Scenario 3 (Fire Season):</strong> Combined conditions create the worst-case scenario. Both dry vegetation AND wind amplify fire spread dramatically.</li>
+      </ul>
+    </div>
+
+    <div class="answer-key-box">
+      <h4>Reflection: The Big Answer</h4>
+      <p>California burns at the same time every year because of its Mediterranean climate cycle. Wet winters grow vegetation, long dry summers turn it into fuel (hydrosphere + biosphere), and fall Santa Ana winds provide the atmospheric push (atmosphere). When these Earth systems align, fire conditions peak. The model shows that removing rainfall and adding wind creates maximum fire spread &mdash; exactly what happens during California's fall fire season.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 9</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 7: DIFFERENTIATION ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">7</div>
+    <div class="section-title">Differentiation &amp; Extensions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="diff-grid">
+      <div class="diff-card below">
+        <div class="diff-card-title">Below Grade Level</div>
+        <ul style="margin-left: 14px; font-size: 9pt; line-height: 1.6;">
+          <li>Pre-sort components as a whole class before independent work</li>
+          <li>Provide sentence frames: &ldquo;When _____ increases, _____ decreases because...&rdquo;</li>
+          <li>Use visual vocabulary cards with pictures</li>
+          <li>Pair with a strong reader for the activity pack</li>
+        </ul>
+      </div>
+      <div class="diff-card advanced">
+        <div class="diff-card-title">Advanced Learners</div>
+        <ul style="margin-left: 14px; font-size: 9pt; line-height: 1.6;">
+          <li>Add Santa Ana Winds and Terrain as new components</li>
+          <li>Research historical fire data from CAL FIRE</li>
+          <li>Create a multi-step causal chain explanation</li>
+          <li>Compare California to Australia's fire seasons</li>
+        </ul>
+      </div>
+      <div class="diff-card ell">
+        <div class="diff-card-title">English Language Learners</div>
+        <ul style="margin-left: 14px; font-size: 9pt; line-height: 1.6;">
+          <li>Pre-teach vocabulary: component, model, simulation, relationship</li>
+          <li>Provide bilingual glossary if available</li>
+          <li>Use visual supports and diagrams alongside text</li>
+          <li>Allow verbal responses recorded on device</li>
+        </ul>
+      </div>
+      <div class="diff-card gifted">
+        <div class="diff-card-title">Gifted &amp; Talented</div>
+        <ul style="margin-left: 14px; font-size: 9pt; line-height: 1.6;">
+          <li>Challenge: Create a feedback loop diagram</li>
+          <li>Research prescribed burns as fire prevention</li>
+          <li>Write a policy brief for fire prevention</li>
+          <li>Connect to climate change projections</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 11</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION 8: MISCONCEPTIONS ==================== -->
+<div class="page" style="position:relative;">
+  <div class="page-header">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div></div>
+    <div class="section-number">8</div>
+    <div class="section-title">Common Misconceptions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
+  <div class="page-content">
+    <div class="teacher-tip">
+      <div class="teacher-tip-title">Why This Matters</div>
+      Addressing misconceptions proactively helps students build accurate scientific understanding. Use these as formative assessment checkpoints during the lesson.
+    </div>
+
+    <div class="misconception-row">
+      <div class="misconception-wrong">
+        <div class="misconception-label">Students May Think</div>
+        &ldquo;All wildfires are caused by people being careless.&rdquo;
+      </div>
+      <div class="misconception-right">
+        <div class="misconception-label">Scientific Understanding</div>
+        While human activity can start fires, the <em>conditions</em> for large wildfires &mdash; dry vegetation, low humidity, wind &mdash; are created by natural Earth system interactions. Without these conditions, a spark won't become a wildfire.
+      </div>
+    </div>
+
+    <div class="misconception-row">
+      <div class="misconception-wrong">
+        <div class="misconception-label">Students May Think</div>
+        &ldquo;Fire just needs fuel to burn.&rdquo;
+      </div>
+      <div class="misconception-right">
+        <div class="misconception-label">Scientific Understanding</div>
+        The fire triangle requires fuel, heat, AND oxygen. Our model focuses on fuel (dry vegetation) and wind (which provides oxygen and spreads heat), showing how multiple factors work together.
+      </div>
+    </div>
+
+    <div class="misconception-row">
+      <div class="misconception-wrong">
+        <div class="misconception-label">Students May Think</div>
+        &ldquo;Drought kills plants right away.&rdquo;
+      </div>
+      <div class="misconception-right">
+        <div class="misconception-label">Scientific Understanding</div>
+        Drought is a gradual process. Plants lose moisture over weeks and months, becoming increasingly flammable. This is why California's fire risk peaks in late fall after months of dry conditions.
+      </div>
+    </div>
+
+    <div class="misconception-row">
+      <div class="misconception-wrong">
+        <div class="misconception-label">Students May Think</div>
+        &ldquo;All wildfires happen in summer.&rdquo;
+      </div>
+      <div class="misconception-right">
+        <div class="misconception-label">Scientific Understanding</div>
+        In California, the worst fires often occur in October&ndash;November when Santa Ana winds arrive. The combination of months of drought-dried vegetation plus these hot, dry winds creates peak fire danger in fall, not summer.
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G05-L01 &bull; Teacher's Guide</span>
+    <span>Page 12</span>
+    <div class="footer-bar"></div>
+  </div>
+</div>
+
+</body>
+</html>
