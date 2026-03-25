@@ -738,6 +738,121 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-ESS2-1.
+
+---
+
+### Question 1
+
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.A.3 (Identify Earth's major systems) + CCC4 (Describe a system in terms of its components)
+
+A scientist is studying California wildfires. She makes a list of things that affect whether a wildfire spreads: rainfall, dry plants, wind, and fire spread itself. She sorts them into two groups: things that come from outside the fire system (external) and things that change within the fire system (internal).
+
+Which list correctly sorts the components of the wildfire system?
+
+A. External: Rainfall, Dry Plants — Internal: Wind, Fire Spread
+B. External: Rainfall, Wind — Internal: Dry Plants, Fire Spread
+C. External: Fire Spread, Wind — Internal: Rainfall, Dry Plants
+D. External: Dry Plants, Rainfall — Internal: Wind, Fire Spread
+
+Correct Answer: B
+
+Feedback: Rainfall and wind are atmospheric and weather forces that come from outside the system, making them external. Dry plants and fire spread change based on conditions within the system, making them internal. If you chose A, you may have thought dry plants come from outside the system, but they change based on how much rain falls. If you chose C, fire spread is the result of the system, not an outside force. If you chose D, wind is a weather force that comes from outside, not from within the fire system.
+
+---
+
+### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.A.3 (Describe how two systems interact) + CCC4 (Describe components and interactions)
+
+In a wildfire model, a student draws an arrow from Rainfall to Dry Vegetation and labels it as a negative relationship. This means that when rainfall increases, dry vegetation decreases. Another student disagrees and says the arrow should be a positive relationship.
+
+Which explanation best supports why the relationship between Rainfall and Dry Vegetation is negative?
+
+A. When it rains more, plants grow faster, so there is more vegetation overall.
+B. When it rains more, plants stay wet and green, so there is less dry vegetation.
+C. When it rains less, plants die and disappear, so there is less dry vegetation.
+D. When it rains more, the ground floods, so the vegetation washes away.
+
+Correct Answer: B
+
+Feedback: A negative relationship means that when one component goes up, the other goes down. When rainfall increases, plants get water and stay wet and green, which means there is less dry vegetation. That is why the arrow is negative. If you chose A, this describes plant growth, not dryness. The model tracks dry vegetation specifically, not total vegetation. More rain does help plants grow, but the key point is that it keeps them from drying out. If you chose C, this reverses the relationship. When it rains less, plants dry out, so dry vegetation increases, not decreases. If you chose D, flooding is an extreme event and does not describe the normal relationship between rainfall and how dry plants become.
+
+---
+
+### Question 3
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.A.3 (Describe how two systems interact) + CCC4 (Describe interactions within a system)
+
+A student builds a model of California's wildfire system. The model shows that when rainfall increases, dry vegetation decreases (a negative relationship). It also shows that when dry vegetation increases, fire spread increases (a positive relationship). And when wind increases, fire spread also increases (a positive relationship). The student wants to test what happens during a drought, so she removes all rainfall from the model.
+
+Based on the model, what would most likely happen when rainfall drops to zero?
+
+A. Dry vegetation would decrease because there is no water to grow plants.
+B. Fire spread would decrease because there is no rain to start fires.
+C. Dry vegetation would increase, and then fire spread would also increase.
+D. Wind would increase because droughts always cause stronger winds.
+
+Correct Answer: C
+
+Feedback: The model shows a negative relationship between rainfall and dry vegetation. That means when rainfall goes down, dry vegetation goes up. Without any rain, plants dry out and become fuel. Then the positive relationship kicks in: more dry vegetation leads to more fire spread. If you chose A, you may have confused plant growth with plant dryness. Without rain, plants do not disappear. They dry out and become more flammable. If you chose B, rain does not start fires. Rain actually prevents fires by keeping plants wet. Without rain, fire risk goes up, not down. If you chose D, the model does not show any connection between drought and wind. Wind is an external factor that acts on its own.
+
+---
+
+### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.A.3 (Interpret a model showing how two systems interact) + CCC4 (Describe components and interactions)
+
+Scientists studied a California valley over four months. In June, rainfall was low, dry vegetation was medium, wind speed was low, and wildfire risk was low. In July, there was no rainfall, dry vegetation was high, wind speed was low, and wildfire risk was medium. In August, there was still no rainfall, dry vegetation was very high, wind speed was low, and wildfire risk stayed at medium. In September, there was still no rainfall, dry vegetation was still very high, but wind speed increased to high, and wildfire risk jumped to very high.
+
+Which observation best supports the idea that wind and dry vegetation work together to increase wildfire risk?
+
+A. In June, rainfall was low and wildfire risk was also low.
+B. From June to August, as rainfall stopped, dry vegetation increased.
+C. From August to September, dry vegetation stayed very high but wind increased, and wildfire risk jumped from medium to very high.
+D. In September, there was no rainfall and wildfire risk was very high.
+
+Correct Answer: C
+
+Feedback: In August and September, dry vegetation was the same (very high). The only thing that changed was wind speed, which went from low to high. When wind increased while dry vegetation was already very high, wildfire risk jumped from medium to very high. This shows that both wind and dry vegetation need to be high for the worst fire conditions. If you chose A, this only describes June and does not show how wind and vegetation work together. If you chose B, this correctly describes how rainfall affects vegetation, but it does not address wind at all. If you chose D, this is true but does not explain why the risk is very high. It does not isolate which factors are working together.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI ESS2.A.3 (Describe how two Earth systems interact) + CCC4 (Describe system components and interactions)
+
+A city in Southern California wants to reduce wildfire damage. City planners are studying a model of their fire system. The model shows that less rainfall leads to more dry vegetation (negative relationship), more dry vegetation leads to more fire spread (positive relationship), and more wind leads to more fire spread (positive relationship). The planners know they cannot control rainfall or wind. But they can add a new action to the system.
+
+Based on the model, which action would most likely reduce fire spread by changing something inside the system?
+
+A. Build walls to block the wind from reaching the hills.
+B. Remove dry brush and dead plants from hillsides near homes.
+C. Set up more weather stations to measure rainfall amounts.
+D. Wait for the rainy season to return so that plants turn green again.
+
+Correct Answer: B
+
+Feedback: Dry vegetation is an internal component of the fire system, and it has a positive relationship to fire spread. By removing dry brush and dead plants, the city directly reduces the amount of fuel available for fire. Less fuel means less fire spread. If you chose A, wind is an external force that the planners said they cannot control. Building walls would be trying to change something outside the system. If you chose C, measuring rainfall is monitoring, not taking action. It does not change any component in the model. If you chose D, rainfall is an external force that the planners said they cannot control. Waiting for rain means hoping an outside force will fix the problem instead of taking action on something inside the system.
+
+---
+
+### Answer Key
+
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.A.3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.A.3, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.A.3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.A.3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI ESS2.A.3, CCC4)
+
+---
+
 ## Resources
 
 | Resource | Link |
