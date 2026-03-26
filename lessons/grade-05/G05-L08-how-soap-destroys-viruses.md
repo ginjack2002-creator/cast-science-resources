@@ -50,7 +50,7 @@ Students model the chemistry of handwashing — discovering that soap doesn't ju
 
 ---
 
-## Activity 1: LOCATE — Build Your Handwashing Chemistry System
+## Step 1: LOCATE — Build Your Handwashing Chemistry System
 
 ### Text Editor
 
@@ -80,7 +80,7 @@ You've been doing molecular demolition every time you wash your hands.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can choose/control):
   ○ Click "Soap Concentration" — how much soap you apply
@@ -89,10 +89,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Soap Effectiveness" — how well the soap can attack viruses
   ○ Click "Virus Survival Rate" — what percentage of viruses survive
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • EXTERNAL = what you control (or what's available)
 • INTERNAL = what happens chemically as a result
 • Sort them, then your teacher will explain the connections
@@ -167,7 +167,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Wire the Handwashing Chemistry
+## Step 2: ESTABLISH — Wire the Handwashing Chemistry
 
 ### Text Editor
 
@@ -179,15 +179,15 @@ One positive chain, one negative payoff. Let's map it.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Soap Concentration → Soap Effectiveness
 • Water Present → Soap Effectiveness
 • Soap Effectiveness → Virus Survival Rate
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ Soap Concentration → Soap Effectiveness = POSITIVE (+)
     More soap = MORE soap molecules available to attack membranes
     (More molecules = more demolition)
@@ -201,7 +201,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     MORE effective soap = FEWER viruses surviving
     (This is the ONE negative relationship — it's the point!)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows: 2 positive, 1 negative
 • The negative relationship is the KEY — effectiveness REDUCES survival
 
@@ -269,7 +269,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Handwashing Model
+## Step 3: VISUALIZE & EVALUATE — Run the Handwashing Model
 
 ### Text Editor
 
@@ -281,30 +281,30 @@ test different handwashing scenarios to see which works best.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click "Play" in the TOP LEFT
 • Watch all four component lines on the graph
 
-STEP 2: SCENARIO 1 — RINSING WITH WATER ONLY (No Soap)
+Task B: SCENARIO 1 — RINSING WITH WATER ONLY (No Soap)
 • Lock Soap Concentration to ZERO (0%)
 • Lock Water Present to HIGH (100%)
 • What happens to Soap Effectiveness?
 • What happens to Virus Survival Rate?
 • Does water alone destroy viruses?
 
-STEP 3: SCENARIO 2 — DRY SOAP (Soap, No Water)
+Task C: SCENARIO 2 — DRY SOAP (Soap, No Water)
 • Lock Water Present to ZERO
 • Set Soap Concentration to HIGH (100%)
 • What happens now?
 • Is soap without water effective?
 
-STEP 4: SCENARIO 3 — PROPER HANDWASHING (Soap + Water)
+Task D: SCENARIO 3 — PROPER HANDWASHING (Soap + Water)
 • Unlock both. Set BOTH to HIGH (100%)
 • Watch Soap Effectiveness climb
 • Watch Virus Survival Rate drop
 • How close to zero does it get?
 
-STEP 5: BONUS — QUICK RINSE VS. 20-SECOND WASH
+Task E: BONUS — QUICK RINSE VS. 20-SECOND WASH
 • Lower Water Present slightly to simulate a quick rinse (less contact time)
 • Compare Virus Survival Rate to the full 20-second wash
 
@@ -371,7 +371,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -617,10 +617,10 @@ NGSS ALIGNMENT:
 of two or more substances results in new substances.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -640,13 +640,13 @@ COMMON MISCONCEPTIONS:
   bacteria, not viruses; regular soap is equally effective against viruses
 
 FACILITATION TIPS:
-• Activity 1: The "molecular demolition" framing is very engaging for 5th graders.
+• Step 1: The "molecular demolition" framing is very engaging for 5th graders.
   Ask them what demolition equipment the soap molecule is like.
-• Activity 2: Make sure students understand why the Soap Effectiveness → Virus Survival
+• Step 2: Make sure students understand why the Soap Effectiveness → Virus Survival
   relationship is NEGATIVE — it's counterintuitive that "more effective" leads to "less survival."
-• Activity 3: The three-scenario comparison is the most powerful moment. Run all three
+• Step 3: The three-scenario comparison is the most powerful moment. Run all three
   side by side if possible for class discussion.
-• Activity 4: The Semmelweis story is excellent for discussing scientific courage,
+• Step 4: The Semmelweis story is excellent for discussing scientific courage,
   institutional resistance to change, and how lives can be lost when good science is ignored.
 
 DISCUSSION PROMPTS:

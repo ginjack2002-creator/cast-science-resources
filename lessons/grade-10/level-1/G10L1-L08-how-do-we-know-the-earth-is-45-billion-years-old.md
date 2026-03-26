@@ -52,7 +52,7 @@ The question 'How old is the Earth?' was unanswerable for most of human history.
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Decay Rate" — the constant rate at which the radioactive parent transforms into the daughter product
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Geological Event Timing" — the dates of major events in earth's history — mountain building
   ○ Click "Age Estimate Accuracy" — the precision and reliability of the age calculation
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,16 +153,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Decay Rate" and drag an arrow to "Radioactive Isotope Amount"
 • Click on "Radioactive Isotope Amount" and drag an arrow to "Rock Layer Age"
 • Click on "Rock Layer Age" and drag an arrow to "Geological Event Timing"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -175,7 +175,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Rock Layer Age → Geological Event Timing = POSITIVE (+)
     Dating specific rock layers places geological events — volcanic eruptions, asteroid impacts, mass extinctions, mountain building — on an absolute timeline. The age of a rock layer constrains the age of any fossils or geological features within or adjacent to it.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 0 positive relationship(s)
 • This is your system model!
@@ -238,7 +238,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -250,28 +250,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Decay Rate is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — YOUNG ROCK
+Task C: SCENARIO — YOUNG ROCK
 • Parent:Daughter ratio high | Short half-life isotope
 • PREDICT FIRST: What age do you predict for a rock where 90% of the parent isotope remains?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — ANCIENT ROCK
+Task D: SCENARIO — ANCIENT ROCK
 • Parent:Daughter ratio low | Long half-life isotope
 • PREDICT FIRST: If only 6.25% of the original uranium remains in a rock, how many half-lives have passed and what is the rock's age?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — MULTIPLE METHODS
+Task E: SCENARIO — MULTIPLE METHODS
 • Same rock | Three different isotope systems
 • PREDICT FIRST: Do you predict that different isotope systems will give the same age for the same rock? Why or why not?
 • Resume the simulation and observe what happens
@@ -328,7 +328,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -546,10 +546,10 @@ THREE-DIMENSIONAL LEARNING:
   Students identify the mathematical pattern of exponential decay in radioactive isotopes and use this pattern to calculate ages and predict isotope ratios at different points in geological time.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -592,13 +592,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Analogy: If one clock says 3:00 PM, it might be wrong. If 100 different clocks built by different people using different mechanisms all say 3:00 PM, what time is it? That's radiometric dating — overwhelming convergence from independent evidence.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

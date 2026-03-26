@@ -52,7 +52,7 @@ Sleep is not a passive state — it's an active, highly structured process essen
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Light Exposure" — the amount and timing of light entering the eyes
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Sleep Pressure" — the accumulated adenosine in the brain that creates the drive to sleep — builds during waking hours and clears during sleep
   ○ Click "Cognitive Performance" — the brain's ability to learn
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,17 +153,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Light Exposure" and drag an arrow to "Circadian Phase"
 • Click on "Circadian Phase" and drag an arrow to "Melatonin Level"
 • Click on "Melatonin Level" and drag an arrow to "Sleep Pressure"
 • Click on "Sleep Pressure" and drag an arrow to "Cognitive Performance"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -179,7 +179,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Sleep Pressure → Cognitive Performance = NEGATIVE (−)
     Unresolved sleep pressure from insufficient or poorly timed sleep directly impairs memory, attention, and executive function.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 1 negative relationship(s), 1 positive relationship(s)
 • This is your system model!
@@ -252,7 +252,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -264,28 +264,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Light Exposure is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — NATURAL RHYTHM
+Task C: SCENARIO — NATURAL RHYTHM
 • Light: Natural daylight | No screens after 8 PM | Wake: Natural
 • PREDICT FIRST: What do you predict happens to Cognitive Performance when sleep timing matches the circadian rhythm?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — BLUE LIGHT DISRUPTION
+Task D: SCENARIO — BLUE LIGHT DISRUPTION
 • Light: 2 hours screen time before bed | Wake: 6:30 AM
 • PREDICT FIRST: How does blue light from phones and laptops affect Melatonin Level and subsequent sleep quality?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — SLEEP DEBT ACCUMULATION
+Task E: SCENARIO — SLEEP DEBT ACCUMULATION
 • Light: Screens until midnight | Wake: 6:30 AM | Repeat 5 days
 • PREDICT FIRST: What happens to Cognitive Performance after five days of circadian misalignment?
 • Resume the simulation and observe what happens
@@ -342,7 +342,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -560,10 +560,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze how the circadian system maintains stable sleep-wake cycles through feedback mechanisms and how external disruptions (light, schedules) shift the system away from equilibrium.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -606,13 +606,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Run the model: After 5 days of debt, how much weekend sleep is needed to return to baseline? The answer is more than 2 weekend mornings can provide.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

@@ -57,7 +57,7 @@ Humanity has added over 1.5 trillion tons of CO2 to the atmosphere since the Ind
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -72,7 +72,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "CO2 Concentration" — the atmospheric concentration of carbon dioxide at the capture site
@@ -87,11 +87,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Geological Sequestration" — the effectiveness and permanence of underground co2 storage
   ○ Click "Carbon Credit Value" — the market price paid per ton of co2 removed
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 10 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -142,7 +142,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -156,7 +156,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -168,16 +168,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Energy Input" and drag an arrow to "Capture Rate"
 • Click on "Sorbent Efficiency" and drag an arrow to "Regeneration Cost"
 • Click on "Carbon Credit Value" and drag an arrow to "Capture Rate"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -190,7 +190,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Carbon Credit Value → Capture Rate = POSITIVE (+)
     Higher carbon credit prices create economic incentive to invest in larger facilities and more efficient technology, increasing capture capacity. When credits are too cheap, facilities cannot cover operating costs and scale stagnates.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -253,7 +253,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -265,28 +265,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When CO2 Concentration is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CURRENT TECHNOLOGY
+Task C: SCENARIO — CURRENT TECHNOLOGY
 • 2024-era capture technology at 420 ppm with fossil energy mix
 • PREDICT FIRST: What do you predict the net CO2 removal will be when the capture plant itself consumes fossil energy?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — CLEAN ENERGY POWERED
+Task D: SCENARIO — CLEAN ENERGY POWERED
 • All operations powered by renewable energy with zero emissions
 • PREDICT FIRST: What do you predict happens to the true climate impact when the energy source is completely clean?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — SCALED TO CLIMATE IMPACT
+Task E: SCENARIO — SCALED TO CLIMATE IMPACT
 • Operations scaled to 1 billion tons per year of capture
 • PREDICT FIRST: What do you predict are the barriers to scaling capture from 4,000 tons per year to 1 billion tons per year?
 • Resume the simulation and observe what happens
@@ -343,7 +343,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -563,10 +563,10 @@ THREE-DIMENSIONAL LEARNING:
   Students grapple with the enormous scale mismatch between current capture capacity (thousands of tons) and climate-relevant removal (billions of tons), analyzing what scaling requires.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -609,13 +609,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Evidence: Natural CO2 deposits like those in the Pisgah Crater formation in California have held CO2 underground for over 100,000 years. If nature can store CO2 for millennia, engineered storage with monitoring can certainly do the same.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

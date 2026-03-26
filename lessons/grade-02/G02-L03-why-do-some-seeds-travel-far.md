@@ -48,7 +48,7 @@ Plants are rooted in one spot, but their seeds can travel incredible distances. 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -63,7 +63,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Seed Shape" — the shape and features of the seed — wings
@@ -71,11 +71,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
 • Find the INTERNAL components (things that change because of other things):
   ○ Click "Travel Distance" — how far the seed gets from the parent plant — farther means more chance to find a good spot to grow
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 3 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -119,7 +119,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -133,7 +133,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -145,15 +145,15 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Seed Shape (fluffy/winged)" and drag an arrow to "Travel Distance"
 • Click on "Wind Interaction" and drag an arrow to "Travel Distance"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -163,7 +163,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Wind Interaction → Travel Distance = POSITIVE (+)
     Stronger wind or better wind-catching seed shapes mean the seed travels farther. More wind energy helps carry the seed a longer distance before it lands.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 2 arrows total
 • 0 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -216,7 +216,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -228,28 +228,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Seed Shape is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — FLUFFY DANDELION SEED
+Task C: SCENARIO — FLUFFY DANDELION SEED
 • Seed Shape is fluffy, Wind is breezy
 • PREDICT FIRST: What do you predict will happen to Travel Distance when a fluffy seed is in the wind?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — HEAVY ACORN
+Task D: SCENARIO — HEAVY ACORN
 • Seed Shape is heavy round, Wind is breezy
 • PREDICT FIRST: What do you predict will happen to Travel Distance when a heavy acorn is in the wind?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — HELICOPTER MAPLE SEED
+Task E: SCENARIO — HELICOPTER MAPLE SEED
 • Seed Shape is winged, Wind is breezy
 • PREDICT FIRST: Will a winged seed travel more like the fluffy seed or the acorn?
 • Resume the simulation and observe what happens
@@ -306,7 +306,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -513,10 +513,10 @@ THREE-DIMENSIONAL LEARNING:
   Students connect the shape (structure) of a seed to how it moves (function) — fluffy shapes float, hooks stick, and wings spin.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 30-40 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -556,13 +556,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Place a bean seed on a wet paper towel in a bag. In a few days, students will see it sprout — proof it is alive!
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

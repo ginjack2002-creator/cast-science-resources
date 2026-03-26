@@ -54,7 +54,7 @@ Over 100,000 people in the United States are on the organ transplant waiting lis
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Print Resolution" — the minimum feature size the bioprinter can create — measured in micrometers
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Immune Compatibility" — the degree to which the bioprinted tissue avoids triggering the recipient's immune system — using the patient's own cells (autologous) eliminates rejection but requires weeks of cell culture
   ○ Click "Functional Maturation" — the degree to which bioprinted tissue develops the specialized functions of native tissue — a bioprinted heart patch must not only survive but contract rhythmically
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,17 +159,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Print Resolution" and drag an arrow to "Cell Viability Rate"
 • Click on "Vascularization Depth" and drag an arrow to "Functional Maturation"
 • Click on "Nutrient Diffusion Limit" and drag an arrow to "Vascularization Depth"
 • Click on "Scaffold Degradation Rate" and drag an arrow to "Functional Maturation"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -185,7 +185,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Scaffold Degradation Rate → Functional Maturation = POSITIVE (+)
     If scaffold degradation is too fast, the construct loses mechanical support before cells produce sufficient extracellular matrix, causing collapse. If too slow, the persistent scaffold physically prevents cell migration, matrix deposition, and tissue remodeling. Only when degradation rate matches maturation rate does the tissue successfully transition from scaffold-dependent to self-supporting.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 2 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -258,7 +258,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -270,28 +270,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Print Resolution is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SKIN PATCH BIOPRINTING
+Task C: SCENARIO — SKIN PATCH BIOPRINTING
 • Moderate resolution, thin construct, no deep vascularization required
 • PREDICT FIRST: What do you predict the cell viability rate will be in a tissue that is thin enough for nutrients to diffuse from the surface to all cells?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — CARDIAC PATCH WITH VASCULARIZATION
+Task D: SCENARIO — CARDIAC PATCH WITH VASCULARIZATION
 • 5mm thick cardiac construct requiring internal blood vessel channels
 • PREDICT FIRST: What do you predict happens to the cells in the center of the construct if the printed blood vessel channels do not connect to a nutrient supply within hours?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — FULL KIDNEY SCAFFOLD
+Task E: SCENARIO — FULL KIDNEY SCAFFOLD
 • Complex organ with millions of functional units and extensive vasculature
 • PREDICT FIRST: What do you predict is the primary failure point when attempting to print an organ with the structural complexity of a human kidney?
 • Resume the simulation and observe what happens
@@ -348,7 +348,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -567,10 +567,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze how the three-dimensional architecture of bioprinted tissue — cell arrangement, scaffold geometry, blood vessel network — directly determines whether the construct can sustain cell life and replicate native tissue function.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -613,13 +613,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Analysis: List every non-patient-derived material in a bioprinted construct (hydrogel, crosslinker, growth factors, culture media residue, scaffold polymers) and research which ones are known to trigger immune responses. Discuss why even an all-autologous-cell construct is not truly 100% self.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

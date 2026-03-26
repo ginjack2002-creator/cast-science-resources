@@ -50,7 +50,7 @@ Students model the Wood Wide Web — the underground fungal network that connect
 
 ---
 
-## Activity 1: LOCATE — Build the Underground Network System
+## Step 1: LOCATE — Build the Underground Network System
 
 ### Text Editor
 
@@ -78,7 +78,7 @@ A forest isn't a collection of individual trees. It's one connected community.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Leaf Litter / Organic Matter" — trees drop this constantly
@@ -87,10 +87,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Mycorrhizal Fungal Network Activity" — how active the network is
   ○ Click "Nutrient Transfer Between Trees" — what the network enables
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Which come from the environment? Which change based on conditions?
 • Sort before your teacher continues in the video
 
@@ -157,7 +157,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Underground Network
+## Step 2: ESTABLISH — Connect the Underground Network
 
 ### Text Editor
 
@@ -169,15 +169,15 @@ trees share. When it shuts down, trees are isolated. Let's map this.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Leaf Litter / Organic Matter → Mycorrhizal Fungal Network Activity
 • Soil Moisture → Mycorrhizal Fungal Network Activity
 • Mycorrhizal Fungal Network Activity → Nutrient Transfer Between Trees
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ Leaf Litter / Organic Matter → Fungal Network Activity = POSITIVE (+)
     More organic matter = MORE food for fungi = more network growth
     (Fungi break down organic matter to get carbon and energy)
@@ -190,7 +190,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     More active network = MORE nutrients flowing between trees
     (Active fungal threads are the literal pipes that move nutrients)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows, all positive
 • The chain: Food + Water → Active Network → Trees Share
 
@@ -253,7 +253,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Forest Network
+## Step 3: VISUALIZE & EVALUATE — Run the Forest Network
 
 ### Text Editor
 
@@ -266,27 +266,27 @@ the forest community together.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click "Play" in the TOP LEFT
 • Watch all four component lines
 
-STEP 2: OBSERVE A HEALTHY FOREST
+Task B: OBSERVE A HEALTHY FOREST
 • Let it run for about 30 time steps
 • With normal organic matter and moisture, watch Fungal Network Activity
 • Watch Nutrient Transfer — are trees connected and sharing?
 
-STEP 3: SIMULATE DROUGHT (SOIL MOISTURE LOSS)
+Task C: SIMULATE DROUGHT (SOIL MOISTURE LOSS)
 • Lock Soil Moisture to LOW (10%)
 • Watch Fungal Network Activity — do the fungal threads retreat?
 • Watch Nutrient Transfer — are trees becoming isolated?
 • This is what happens in severe drought: the forest's internet goes offline
 
-STEP 4: SIMULATE DEFORESTATION AFTERMATH
+Task D: SIMULATE DEFORESTATION AFTERMATH
 • Lock Leaf Litter to ZERO (cleared land, no trees dropping leaves)
 • Even with moisture, what happens to fungal activity?
 • What happens to Nutrient Transfer?
 
-STEP 5: RESTORE CONDITIONS
+Task E: RESTORE CONDITIONS
 • Unlock both. Watch how the network recovers
 • How long does it take? Is recovery instant?
 
@@ -347,7 +347,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -588,10 +588,10 @@ NGSS ALIGNMENT:
 plants, animals, decomposers, and the environment.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -610,14 +610,14 @@ COMMON MISCONCEPTIONS:
   both competition AND cooperation happen simultaneously in forests
 
 FACILITATION TIPS:
-• Activity 1: The "trees talk to each other" opening creates immediate
+• Step 1: The "trees talk to each other" opening creates immediate
   engagement. Ask students "What do you think they 'say'?" before revealing.
-• Activity 2: The "mutualism deal" framing helps students understand
+• Step 2: The "mutualism deal" framing helps students understand
   why fungi cooperate — it's not altruistic, it's mutually beneficial.
-• Activity 3: The drought scenario is emotionally compelling — make sure
+• Step 3: The drought scenario is emotionally compelling — make sure
   students understand it's not just individual trees suffering but the
   entire community losing its connection.
-• Activity 4: Dr. Suzanne Simard's story is a great role model moment —
+• Step 4: Dr. Suzanne Simard's story is a great role model moment —
   a woman scientist whose counterintuitive discovery changed a field.
 
 DISCUSSION PROMPTS:

@@ -57,7 +57,7 @@ Ecosystems are not static — they are dynamic systems maintained by feedback lo
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -72,7 +72,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Disturbance Severity" — the intensity of the initial catastrophic event — measured by what proportion of biomass
@@ -87,11 +87,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Invasive Species Pressure" — the degree to which non-native species colonize the disturbed area and outcompete native species attempting to re-establish — invasive species exploit the open conditions created by disturbance and can permanently alter successional trajectories
   ○ Click "Recovery Completeness Index" — a composite measure of how closely the recovering ecosystem matches the pre-disturbance state in species composition
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 10 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -142,7 +142,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -156,7 +156,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -168,11 +168,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Disturbance Severity" and drag an arrow to "Soil Development Rate"
 • Click on "Seed Bank and Propagule Availability" and drag an arrow to "Pioneer Species Establishment"
 • Click on "Pioneer Species Establishment" and drag an arrow to "Soil Development Rate"
@@ -182,7 +182,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Invasive Species Pressure" and drag an arrow to "Recovery Completeness Index"
 • Click on "Climate Suitability" and drag an arrow to "Recovery Completeness Index"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -210,7 +210,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Climate Suitability → Recovery Completeness Index = POSITIVE (+)
     When climate conditions support the historical ecosystem, full recovery is possible given sufficient time and biological legacy. When climate has shifted beyond the tolerance of key species, recovery plateaus at a lower completeness level because the original community cannot re-establish.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 8 arrows total
 • 2 negative relationship(s), 6 positive relationship(s)
 • This is your system model!
@@ -323,7 +323,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -335,28 +335,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Disturbance Severity is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — POST-FIRE RECOVERY
+Task C: SCENARIO — POST-FIRE RECOVERY
 • Disturbance: Moderate | Soil: Intact | Seed Bank: Rich | Climate: Stable
 • PREDICT FIRST: What do you predict the recovery timeline will be when soil and seed banks survive the disturbance, and which component recovers fastest?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — PRIMARY SUCCESSION
+Task D: SCENARIO — PRIMARY SUCCESSION
 • Disturbance: Complete sterilization | Soil: None | Seed Bank: None | Climate: Stable
 • PREDICT FIRST: What do you predict is the bottleneck in recovery when succession must begin from bare rock with no biological legacy, and how long until the Recovery Completeness Index reaches 50%?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — CLIMATE-SHIFTED RECOVERY
+Task E: SCENARIO — CLIMATE-SHIFTED RECOVERY
 • Disturbance: High | Soil: Degraded | Seed Bank: Moderate | Climate: 2 degrees C warmer, 20% drier
 • PREDICT FIRST: When climate has shifted enough that the original ecosystem cannot re-establish, what do you predict the Recovery Completeness Index will stabilize at, and what alternative ecosystem might replace the original?
 • Resume the simulation and observe what happens
@@ -413,7 +413,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -633,10 +633,10 @@ THREE-DIMENSIONAL LEARNING:
   Students identify the feedback mechanisms that maintain ecosystem stability (negative feedbacks in mature systems) and the tipping points where positive feedbacks drive rapid transition to alternative states (regime shifts).
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -679,13 +679,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show the projected range shift for a key tree species like ponderosa pine under 2 degrees C warming. The future suitable range may be 200-500 km north of the current range. Ask: if this species cannot grow here in 50 years, should we plant it as part of restoration today?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

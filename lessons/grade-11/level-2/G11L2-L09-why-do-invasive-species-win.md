@@ -53,7 +53,7 @@ Invasive species represent one of the most powerful and underappreciated drivers
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -68,7 +68,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Invasive Species Introduction Rate" — the rate at which non-native organisms enter an ecosystem through human activities — international shipping
@@ -79,11 +79,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Native Biodiversity Index" — the species richness
   ○ Click "Ecosystem Function Integrity" — the overall health and stability of ecosystem services — nutrient cycling
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 6 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -130,7 +130,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -144,7 +144,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -156,18 +156,18 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Invasive Species Introduction Rate" and drag an arrow to "Invasive Population Growth Rate"
 • Click on "Invasive Population Growth Rate" and drag an arrow to "Resource Availability"
 • Click on "Resource Availability" and drag an arrow to "Native Species Competitive Fitness"
 • Click on "Native Species Competitive Fitness" and drag an arrow to "Native Biodiversity Index"
 • Click on "Native Biodiversity Index" and drag an arrow to "Ecosystem Function Integrity"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -186,7 +186,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Native Biodiversity Index → Ecosystem Function Integrity = POSITIVE (+)
     Higher biodiversity supports more complete ecosystem function — pollination networks, decomposition cycles, nutrient transport, predator-prey balance, and disease regulation all depend on having sufficient species to fill functional roles. As biodiversity declines, ecosystem services degrade in a nonlinear pattern where the loss of keystone species triggers disproportionate functional collapse.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 5 arrows total
 • 1 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -269,7 +269,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -281,28 +281,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Invasive Species Introduction Rate is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — EARLY DETECTION
+Task C: SCENARIO — EARLY DETECTION
 • 100 invasive individuals, diverse native community intact
 • PREDICT FIRST: What do you predict happens to Invasive Population Growth Rate if removal efforts target the population while it is still small and before it reaches the self-sustaining threshold?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — ESTABLISHED INVASION
+Task D: SCENARIO — ESTABLISHED INVASION
 • Invasive population above establishment threshold, spreading
 • PREDICT FIRST: At what point do you predict Native Biodiversity Index decline becomes self-reinforcing — where the loss of native species makes it easier for the invader and harder for remaining natives?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — MANAGED ECOSYSTEM
+Task E: SCENARIO — MANAGED ECOSYSTEM
 • Biocontrol agents introduced plus active removal of invasive biomass
 • PREDICT FIRST: Do you predict that management can restore Native Biodiversity Index to pre-invasion levels, or has the ecosystem permanently shifted to a new state?
 • Resume the simulation and observe what happens
@@ -359,7 +359,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -577,10 +577,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze the cause-and-effect chains through which invasive species destabilize ecosystems, identifying the feedback loops and tipping points that determine whether ecosystems can absorb the disturbance or collapse to a degraded state.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -623,13 +623,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Calculate: a species that doubles every month reaches 1 million from 1 individual in 20 months. If you can remove 10,000 per month, when does removal exceed reproduction? (Never — because the population keeps doubling). Now recalculate if you catch it at 100 individuals. The math is the argument for early detection.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

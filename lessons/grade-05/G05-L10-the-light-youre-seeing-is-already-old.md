@@ -50,7 +50,7 @@ Students model the relationship between star distance, star luminosity, light tr
 
 ---
 
-## Activity 1: LOCATE — Build Your Starlight System
+## Step 1: LOCATE — Build Your Starlight System
 
 ### Text Editor
 
@@ -81,7 +81,7 @@ The night sky is a time machine. And you're looking into it every time you go ou
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't change):
   ○ Click "Star Distance" — we can't move stars; they are where they are
@@ -90,10 +90,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Light Travel Time" — how old the light is when it reaches us
   ○ Click "Apparent Brightness" — how bright the star actually looks from Earth
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • EXTERNAL = properties of the star that we observe but can't change
 • INTERNAL = what we experience because of those properties
 • Sort them, then your teacher will explain the connections
@@ -173,7 +173,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Starlight System
+## Step 2: ESTABLISH — Connect the Starlight System
 
 ### Text Editor
 
@@ -185,15 +185,15 @@ bright the star looks. Let's map both connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Star Distance → Light Travel Time
 • Star Distance → Apparent Brightness
 • Star Actual Luminosity → Apparent Brightness
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ Star Distance → Light Travel Time = POSITIVE (+)
     Farther star = MORE time for light to travel = OLDER light when it arrives
     (Double the distance = double the travel time)
@@ -207,7 +207,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     More luminous star = MORE apparent brightness
     (A brighter star at the same distance looks brighter to us)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows: 1 positive (travel time), 1 negative (distance dims brightness), 1 positive (luminosity brightens)
 • Two forces affect Apparent Brightness: Luminosity INCREASES it, Distance DECREASES it
 
@@ -272,7 +272,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Starlight Model
+## Step 3: VISUALIZE & EVALUATE — Run the Starlight Model
 
 ### Text Editor
 
@@ -285,26 +285,26 @@ sun dominates our sky.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click "Play" in the TOP LEFT
 • Watch all four component lines
 
-STEP 2: SCENARIO 1 — THE SUN (CLOSE + MODERATELY BRIGHT)
+Task B: SCENARIO 1 — THE SUN (CLOSE + MODERATELY BRIGHT)
 • Star Distance: VERY LOW (near 0%) — the sun is our nearest star
 • Star Luminosity: MODERATE (50%) — the sun is an average star
 • Watch Apparent Brightness — what happens?
 • Watch Light Travel Time — about 8 minutes in reality!
 
-STEP 3: SCENARIO 2 — A NEARBY FAINT STAR (CLOSE + DIM)
+Task C: SCENARIO 2 — A NEARBY FAINT STAR (CLOSE + DIM)
 • Increase Distance slightly (25%), decrease Luminosity to LOW (15%)
 • Watch Apparent Brightness — does proximity help a dim star?
 
-STEP 4: SCENARIO 3 — A DISTANT SUPER-BRIGHT STAR (FAR + VERY BRIGHT)
+Task D: SCENARIO 3 — A DISTANT SUPER-BRIGHT STAR (FAR + VERY BRIGHT)
 • Set Distance to HIGH (85%), set Luminosity to VERY HIGH (95%)
 • Watch Apparent Brightness — can extreme brightness overcome distance?
 • Watch Light Travel Time — how old is this light?
 
-STEP 5: WHICH STAR SEEMS BRIGHTEST?
+Task E: WHICH STAR SEEMS BRIGHTEST?
 • Try different combinations — can you find one farther than the sun that
   still looks just as bright? (You'll need very high luminosity!)
 
@@ -366,7 +366,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -619,10 +619,10 @@ NGSS ALIGNMENT:
 of the sun compared to other stars is due to their relative distances from Earth.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -640,14 +640,14 @@ COMMON MISCONCEPTIONS:
   only because of its proximity to Earth
 
 FACILITATION TIPS:
-• Activity 1: The opening video script has some of the most compelling content in the
+• Step 1: The opening video script has some of the most compelling content in the
   whole curriculum. Read it, or play a well-chosen astronomy clip, before students
   start the simulation. Set the emotional tone first.
-• Activity 2: The negative Distance → Apparent Brightness relationship is the critical
+• Step 2: The negative Distance → Apparent Brightness relationship is the critical
   insight. Use the streetlight analogy: same bulb, farther away, appears dimmer.
-• Activity 3: Three scenarios side-by-side if possible: the Sun scenario, a dim nearby
+• Step 3: Three scenarios side-by-side if possible: the Sun scenario, a dim nearby
   star, a distant supergiant. The comparison makes the trade-off viscerally clear.
-• Activity 4: The Hubble Deep Field moment should be given time — it reframes the
+• Step 4: The Hubble Deep Field moment should be given time — it reframes the
   lesson into a larger perspective that many students find profound.
 
 DISCUSSION PROMPTS:

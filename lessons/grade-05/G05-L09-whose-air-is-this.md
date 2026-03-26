@@ -50,7 +50,7 @@ Students model the relationship between vehicle traffic, wind patterns, air poll
 
 ---
 
-## Activity 1: LOCATE — Build Your Air Quality System
+## Step 1: LOCATE — Build Your Air Quality System
 
 ### Text Editor
 
@@ -73,7 +73,7 @@ every day. Let's model it.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things the community can't easily control):
   ○ Click "Vehicle Traffic Density" — road infrastructure determines this
@@ -82,10 +82,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Air Pollution Concentration" — builds up or disperses based on other factors
   ○ Click "Respiratory Health Impact" — this is what affects real people's bodies
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Which come from outside the community's direct control?
 • Which change as a result of those external factors?
 • Sort them, then your teacher will explain the connections
@@ -152,7 +152,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Air Quality System
+## Step 2: ESTABLISH — Connect the Air Quality System
 
 ### Text Editor
 
@@ -165,15 +165,15 @@ Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Vehicle Traffic Density → Air Pollution Concentration
 • Wind Speed → Air Pollution Concentration
 • Air Pollution Concentration → Respiratory Health Impact
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ Vehicle Traffic → Air Pollution = POSITIVE (+)
     More vehicles = MORE exhaust, particulates, and gases in the air
     (Each car/truck adds CO, NOx, particulate matter to the air)
@@ -185,7 +185,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Air Pollution → Respiratory Health Impact = POSITIVE (+)
     More pollution = MORE health impact (more asthma triggers, lung damage)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows: 2 positive, 1 negative
 • The negative relationship is CRITICAL — wind is the community's natural defense
 
@@ -246,7 +246,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Air Quality Model
+## Step 3: VISUALIZE & EVALUATE — Run the Air Quality Model
 
 ### Text Editor
 
@@ -258,15 +258,15 @@ scenarios and see what communities living near freeways face.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click "Play" in the TOP LEFT
 • Watch all four component lines
 
-STEP 2: BASELINE CONDITIONS
+Task B: BASELINE CONDITIONS
 • Let it run for about 30 time steps at normal traffic and wind
 • Where does Respiratory Health Impact stabilize?
 
-STEP 3: MORNING RUSH HOUR (High Traffic, Low Wind)
+Task C: MORNING RUSH HOUR (High Traffic, Low Wind)
 • Lock Traffic to HIGH (90%) — morning commute on a freeway
 • Lock Wind Speed to LOW (10%) — calm summer morning (no breeze)
 • Watch Pollution Concentration build up
@@ -274,13 +274,13 @@ STEP 3: MORNING RUSH HOUR (High Traffic, Low Wind)
 
 This scenario represents exactly what communities near freeways experience.
 
-STEP 4: WINDY AFTERNOON (Same Traffic, High Wind)
+Task D: WINDY AFTERNOON (Same Traffic, High Wind)
 • Keep Traffic HIGH (90%), increase Wind Speed to HIGH (80%)
 • Watch Pollution Concentration respond
 • Does Respiratory Health Impact improve?
 • This is why air quality varies by day — same traffic, but wind changes everything
 
-STEP 5: LOW TRAFFIC DAY (Holiday, Weekend)
+Task E: LOW TRAFFIC DAY (Holiday, Weekend)
 • Keep moderate wind. Drop Traffic to LOW (20%)
 • Watch what happens to air quality
 • This is measurable in real cities — air quality improves significantly on holidays
@@ -343,7 +343,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -585,10 +585,10 @@ communities use science ideas to protect the Earth's resources
 and environment.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -612,13 +612,13 @@ COMMON MISCONCEPTIONS:
   issue, not primarily an individual choice problem
 
 FACILITATION TIPS:
-• Activity 1: Open with local air quality data if possible — airnow.gov shows
+• Step 1: Open with local air quality data if possible — airnow.gov shows
   current AQI for any location. This immediately grounds the lesson in the real.
-• Activity 2: The negative Wind → Pollution relationship can be demonstrated by
+• Step 2: The negative Wind → Pollution relationship can be demonstrated by
   asking "What's the air like near a campfire on a still night vs. a windy night?"
-• Activity 3: The holiday traffic scenario is compelling — students are often
+• Step 3: The holiday traffic scenario is compelling — students are often
   surprised that air quality measurably improves on low-traffic days.
-• Activity 4: Focus on community agency — the solutions section is empowering.
+• Step 4: Focus on community agency — the solutions section is empowering.
   Communities are not just suffering; they're responding with science.
 
 DISCUSSION PROMPTS:

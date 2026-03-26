@@ -50,7 +50,7 @@ Students model one of the most mind-blowing facts in science: a massive tree get
 
 ---
 
-## Activity 1: LOCATE — Build Your Tree-Building System
+## Step 1: LOCATE — Build Your Tree-Building System
 
 ### Text Editor
 
@@ -75,7 +75,7 @@ The air. Most of it — up to 95% — literally came from the air.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things the tree can't control):
   ○ Click "CO2 in Air" — carbon dioxide concentration in the atmosphere
@@ -84,10 +84,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Photosynthesis Rate" — how fast the tree is converting CO2 to mass
   ○ Click "Tree Biomass" — the actual physical weight of the tree
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • EXTERNAL = inputs the tree receives from the environment
 • INTERNAL = what changes inside the tree because of those inputs
 • Sort them, then your teacher will explain the connections
@@ -158,7 +158,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Wire the Tree-Building Process
+## Step 2: ESTABLISH — Wire the Tree-Building Process
 
 ### Text Editor
 
@@ -170,15 +170,15 @@ becomes a tree. Let's map the chain.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • CO2 in Air → Photosynthesis Rate
 • Sunlight → Photosynthesis Rate
 • Photosynthesis Rate → Tree Biomass
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ CO2 in Air → Photosynthesis Rate = POSITIVE (+)
     More CO2 available = FASTER photosynthesis
     (CO2 is literally the raw material — like flour for bread)
@@ -191,7 +191,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     Faster photosynthesis = MORE sugar produced = MORE growth
     (Every molecule of sugar made is potential wood and mass)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows, all positive
 • The chain: Air + Light → Photosynthesis → Tree Mass
 
@@ -252,7 +252,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Tree-Growth Model
+## Step 3: VISUALIZE & EVALUATE — Run the Tree-Growth Model
 
 ### Text Editor
 
@@ -264,27 +264,27 @@ tree mass. Let's run it and see how these inputs control tree growth.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click "Play" in the TOP LEFT
 • Watch all four component lines
 
-STEP 2: OBSERVE NORMAL GROWING CONDITIONS
+Task B: OBSERVE NORMAL GROWING CONDITIONS
 • Let it run for about 30 time steps
 • With CO2 and Sunlight at normal levels, how fast does Tree Biomass grow?
 
-STEP 3: REMOVE THE CO2
+Task C: REMOVE THE CO2
 • Lock CO2 in Air to 0%
 • This simulates a sealed environment — no carbon dioxide
 • What happens to Photosynthesis Rate?
 • What happens to Tree Biomass growth?
 • Does Tree Biomass reverse, or just stop growing?
 
-STEP 4: RESTORE CO2, THEN REMOVE SUNLIGHT
+Task D: RESTORE CO2, THEN REMOVE SUNLIGHT
 • Unlock CO2. Lock Sunlight to 0%
 • This simulates a cave or completely shaded environment
 • What happens now?
 
-STEP 5: MAXIMUM GROWTH CONDITIONS
+Task E: MAXIMUM GROWTH CONDITIONS
 • Unlock both. Set CO2 to HIGH and Sunlight to HIGH
 • Greenhouses do exactly this — extra CO2 + bright lights = faster plant growth
 • Watch how fast Tree Biomass climbs!
@@ -347,7 +347,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -576,17 +576,17 @@ misconceptions in science education — that plants get their mass
 from soil. Van Helmont's experiment (1648) is used as a historical
 hook, and the model allows students to prove to themselves that
 CO2 drives plant mass, not soil. The climate change connection in
-Activity 4 makes the science immediately relevant.
+Step 4 makes the science immediately relevant.
 
 NGSS ALIGNMENT:
 5-LS1-1: Support an argument that plants get the materials they
 need for growth chiefly from air and water.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -603,14 +603,14 @@ COMMON MISCONCEPTIONS:
   essential — it's the energy source for photosynthesis
 
 FACILITATION TIPS:
-• Activity 1: Start with the question "Where does a tree's mass come from?"
+• Step 1: Start with the question "Where does a tree's mass come from?"
   and take a class vote. Record predictions to revisit after the lesson.
-• Activity 2: The photosynthesis equation (6CO2 + 6H2O + light → glucose + O2)
+• Step 2: The photosynthesis equation (6CO2 + 6H2O + light → glucose + O2)
   can be introduced here even if students don't need to memorize it — it
   makes the "ingredients" visible.
-• Activity 3: The CO2 removal scenario is the key insight moment. When
+• Step 3: The CO2 removal scenario is the key insight moment. When
   Tree Biomass stops growing, students physically see the connection.
-• Activity 4: Connect to climate change — deforestation releases stored
+• Step 4: Connect to climate change — deforestation releases stored
   CO2 back to atmosphere. This gives students environmental context.
 
 DISCUSSION PROMPTS:

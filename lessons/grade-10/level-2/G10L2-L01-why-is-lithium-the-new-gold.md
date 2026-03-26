@@ -54,7 +54,7 @@ Lithium — element number 3, the lightest metal on the periodic table — has b
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Recycling Rate" — the percentage of lithium from end-of-life batteries that is successfully recovered and returned to the supply chain through hydrometallurgical or pyrometallurgical processes
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Battery Performance" — the energy density
   ○ Click "Market Price" — the spot price of battery-grade lithium carbonate or hydroxide on global commodity markets
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,16 +159,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "EV Adoption" and drag an arrow to "Lithium Demand"
 • Click on "Lithium Demand" and drag an arrow to "Market Price"
 • Click on "Mining Rate" and drag an arrow to "Environmental Damage"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -181,7 +181,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Mining Rate → Environmental Damage = POSITIVE (+)
     Higher Mining Rate directly increases Environmental Damage through greater water consumption in brine extraction, more toxic waste from hard-rock processing, expanded habitat destruction, and increased displacement of indigenous communities near mining sites.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 0 negative relationship(s), 3 positive relationship(s)
 • This is your system model!
@@ -244,7 +244,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -256,28 +256,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Recycling Rate is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — STEADY GROWTH
+Task C: SCENARIO — STEADY GROWTH
 • Moderate EV adoption, current mining capacity
 • PREDICT FIRST: What do you predict will happen to Market Price if EV Adoption grows steadily but Mining Rate stays flat?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — EV BOOM, NO RECYCLING
+Task D: SCENARIO — EV BOOM, NO RECYCLING
 • Rapid EV adoption, zero recycling
 • PREDICT FIRST: What do you predict happens to Environmental Damage when all lithium comes from new mining operations?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — CIRCULAR ECONOMY
+Task E: SCENARIO — CIRCULAR ECONOMY
 • High recycling, moderate adoption
 • PREDICT FIRST: Do you predict that high Recycling Rate can significantly reduce the need for new Mining Rate?
 • Resume the simulation and observe what happens
@@ -334,7 +334,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -553,10 +553,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace causal chains from EV policy decisions through resource extraction to environmental consequences, modeling the lithium economy as an interconnected system with feedback loops.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -599,13 +599,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show the cost curves: Plot lithium mining cost vs. recycling cost over the past decade. The crossover point where recycling becomes cheaper has already been reached for many operations.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

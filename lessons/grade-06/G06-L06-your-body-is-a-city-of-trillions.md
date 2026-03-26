@@ -51,7 +51,7 @@ The human body is an extraordinary system of interacting subsystems — approxim
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -66,7 +66,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Nutrient Intake" — the amount of glucose and other fuel molecules available from digested food
@@ -75,11 +75,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Heart Rate" — how many times the heart beats per minute
   ○ Click "Blood Oxygen Level" — the percentage of hemoglobin in red blood cells carrying oxygen to tissues
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 4 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -124,7 +124,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -138,7 +138,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -150,16 +150,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Physical Activity" and drag an arrow to "Heart Rate"
 • Click on "Physical Activity" and drag an arrow to "Blood Oxygen"
 • Click on "Nutrient Intake" and drag an arrow to "Physical Performance"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -172,7 +172,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Nutrient Intake → Physical Performance = POSITIVE (+)
     More available nutrients (especially glucose) provide more fuel for cellular respiration in muscle cells, supporting sustained physical activity.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -235,7 +235,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -247,28 +247,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Nutrient Intake is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — RESTING STATE
+Task C: SCENARIO — RESTING STATE
 • Low physical activity, normal nutrients and oxygen
 • PREDICT FIRST: What do you predict heart rate will be during rest? Why?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — SPRINT MODE
+Task D: SCENARIO — SPRINT MODE
 • Maximum physical activity
 • PREDICT FIRST: What do you predict happens to blood oxygen when you sprint? Why does heart rate increase?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — SKIPPING LUNCH
+Task E: SCENARIO — SKIPPING LUNCH
 • Low nutrients, moderate activity
 • PREDICT FIRST: What happens to your body's performance when fuel runs low?
 • Resume the simulation and observe what happens
@@ -325,7 +325,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -544,10 +544,10 @@ THREE-DIMENSIONAL LEARNING:
   Students use the concept of interacting systems to understand how changes in one body system (e.g., increased physical activity) cascade through other systems (increased heart rate, breathing rate, energy demand).
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 45-60 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -590,13 +590,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Ask: What happens to muscles if the heart stops? What happens to the brain? Everything is connected.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

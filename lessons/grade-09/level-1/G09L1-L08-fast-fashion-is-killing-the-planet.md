@@ -52,7 +52,7 @@ The fashion industry has quietly become one of the most destructive industries o
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Consumer Demand" — the volume and frequency of clothing purchases driven by trends
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Water Consumption" — the total freshwater used in growing cotton
   ○ Click "Carbon Emissions" — the total greenhouse gases released from manufacturing processes
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,17 +153,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Consumer Demand" and drag an arrow to "Production Rate"
 • Click on "Production Rate" and drag an arrow to "Textile Waste"
 • Click on "Production Rate" and drag an arrow to "Water Consumption"
 • Click on "Production Rate" and drag an arrow to "Carbon Emissions"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -179,7 +179,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Production Rate → Carbon Emissions = POSITIVE (+)
     Increased production requires more energy for manufacturing, more petroleum for synthetic fibers, more fuel for global shipping, and generates more landfill methane from unsold and discarded garments.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 0 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -252,7 +252,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -264,28 +264,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Consumer Demand is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — BUSINESS AS USUAL
+Task C: SCENARIO — BUSINESS AS USUAL
 • Consumer Demand at current high levels
 • PREDICT FIRST: What do you predict will happen to textile waste and carbon emissions if shopping habits stay exactly the same for the next 10 years?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — BUY LESS MOVEMENT
+Task D: SCENARIO — BUY LESS MOVEMENT
 • Consumer Demand reduced by 50%
 • PREDICT FIRST: What do you predict happens to the entire supply chain when people buy half as many clothes?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — CIRCULAR FASHION
+Task E: SCENARIO — CIRCULAR FASHION
 • High demand but with recycling and reuse systems
 • PREDICT FIRST: Can technology and recycling offset the environmental impact of high consumer demand?
 • Resume the simulation and observe what happens
@@ -342,7 +342,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -560,10 +560,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace the causal chain from consumer purchasing decisions through industrial production to measurable environmental consequences, demonstrating how individual actions aggregate into global system-level effects.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -606,13 +606,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Calculate: You buy twelve $5 shirts that each last 2 months, or two $30 shirts that each last a year. Same time period — which costs more? Which creates more waste?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

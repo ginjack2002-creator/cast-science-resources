@@ -50,7 +50,7 @@ Students model the surprising distribution of Earth's water and the forces that 
 
 ---
 
-## Activity 1: LOCATE — Build Your Water Distribution System
+## Step 1: LOCATE — Build Your Water Distribution System
 
 ### Text Editor
 
@@ -73,7 +73,7 @@ faster than it refills. Today you're going to model where it goes
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Precipitation Amount" — clouds and weather control this
@@ -82,10 +82,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Freshwater Availability" — this changes based on the system
   ○ Click "Evaporation Rate" — this changes based on temperature
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Which are EXTERNAL inputs? Which are INTERNAL responses?
 • Sort them before your teacher continues in the video
 
@@ -145,7 +145,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Water System
+## Step 2: ESTABLISH — Connect the Water System
 
 ### Text Editor
 
@@ -160,15 +160,15 @@ Let's map these connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Precipitation → Freshwater Availability
 • Temperature → Evaporation Rate
 • Evaporation Rate → Freshwater Availability
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ Precipitation Amount → Freshwater Availability = POSITIVE (+)
     More rain = MORE freshwater in rivers, lakes, and groundwater
 
@@ -179,7 +179,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     More evaporation = LESS fresh water available
     (It's evaporating away before communities can access it)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows total: 2 positive, 1 negative
 • The one negative relationship is the KEY
 • Evaporation COMPETES with precipitation for freshwater availability
@@ -239,7 +239,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Water System
+## Step 3: VISUALIZE & EVALUATE — Run the Water System
 
 ### Text Editor
 
@@ -251,15 +251,15 @@ Let's see your model show the tug-of-war.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT
 • Watch all four component lines on the graph
 
-STEP 2: OBSERVE THE BALANCE
+Task B: OBSERVE THE BALANCE
 • With normal precipitation and moderate temperature, watch
   Freshwater Availability — where does it stabilize?
 
-STEP 3: SIMULATE A DROUGHT + HEAT WAVE
+Task C: SIMULATE A DROUGHT + HEAT WAVE
 • Lock Precipitation to LOW (10%) — almost no rain
 • Lock Temperature to HIGH (90%) — heat wave conditions
 • Watch what happens to Evaporation Rate
@@ -268,13 +268,13 @@ STEP 3: SIMULATE A DROUGHT + HEAT WAVE
 This is what Cape Town, South Africa experienced in 2018 — they
 nearly ran out of water completely. They called it "Day Zero."
 
-STEP 4: SIMULATE WINTER SNOWPACK BUILDING
+Task D: SIMULATE WINTER SNOWPACK BUILDING
 • Lock Temperature to LOW (20%) — cold winter
 • Bring Precipitation to HIGH (80%) — heavy snowfall
 • Watch how Freshwater Availability responds
 • (This is how mountain snowpack stores water for summer use)
 
-STEP 5: SPRING THAW — TEMPERATURE RISES SUDDENLY
+Task E: SPRING THAW — TEMPERATURE RISES SUDDENLY
 • Keep Precipitation low but raise Temperature back to HIGH
 • Snow melts rapidly — watch the spike in Freshwater Availability
 • But also watch Evaporation climb with the heat
@@ -336,7 +336,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -569,10 +569,10 @@ and fresh water in various reservoirs to provide evidence about the
 distribution of water on Earth.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -591,13 +591,13 @@ COMMON MISCONCEPTIONS:
   but not necessarily to the same location or community
 
 FACILITATION TIPS:
-• Activity 1: The 97%/2%/<1% statistic is the hook. Ask students to
+• Step 1: The 97%/2%/<1% statistic is the hook. Ask students to
   express it as a pie chart — most are shocked by the visual.
-• Activity 2: The negative relationship (evaporation reducing freshwater)
+• Step 2: The negative relationship (evaporation reducing freshwater)
   is the key insight. Ask "Is evaporation helping or hurting?" to guide.
-• Activity 3: Cape Town's Day Zero is emotionally resonant and recent.
+• Step 3: Cape Town's Day Zero is emotionally resonant and recent.
   Show the images if possible — water collection lines, restrictions.
-• Activity 4: Agriculture's 70% use is a great controversy starter —
+• Step 4: Agriculture's 70% use is a great controversy starter —
   invite students to discuss whether this distribution is fair.
 
 DISCUSSION PROMPTS:

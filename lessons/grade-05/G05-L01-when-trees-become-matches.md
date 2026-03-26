@@ -50,7 +50,7 @@ Students model why California experiences devastating wildfires year after year.
 
 ---
 
-## Activity 1: LOCATE — Build Your Fire System
+## Step 1: LOCATE — Build Your Fire System
 
 ### Text Editor
 
@@ -63,7 +63,7 @@ model exactly why it happens.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Rainfall" — weather controls this, not us
@@ -72,11 +72,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Dry Vegetation" — this changes based on conditions
   ○ Click "Fire Spread" — this is what we're trying to understand
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 4 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (weather, wind)
 • INTERNAL = things that change because of other things
@@ -122,7 +122,7 @@ Sort your components, then hit the PLUS button to add each one to your
 model canvas.
 
 You've got your pieces. But right now they're just sitting there, not
-connected. In the next activity, we'll draw the invisible lines that
+connected. In the next step, we'll draw the invisible lines that
 turn California gold into California orange.
 
 Now it's your turn to ModelIt!"
@@ -136,7 +136,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -148,16 +148,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Rainfall" and drag an arrow to "Dry Vegetation"
 • Click on "Dry Vegetation" and drag an arrow to "Fire Spread"
 • Click on "Wind" and drag an arrow to "Fire Spread"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/- toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -170,7 +170,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Wind → Fire Spread = POSITIVE (+)
     More wind = MORE fire spread (flames jump further!)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship, 2 positive relationships
 • This is your fire system!
@@ -229,7 +229,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Fire Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Fire Model
 
 ### Text Editor
 
@@ -241,28 +241,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Rainfall is HIGH (100%), what happens to Dry Vegetation?
 • When Dry Vegetation is LOW, what happens to Fire Spread?
 
-STEP 3: CREATE A DROUGHT
+Task C: CREATE A DROUGHT
 • Look at the RIGHT PANEL where your components are listed
 • Find the LOCK icon (🔒) next to "Rainfall"
 • Click the lock to TURN OFF Rainfall (set to 0%)
 • This simulates a drought — no rain for months
 
-STEP 4: WATCH THE CASCADE
+Task D: WATCH THE CASCADE
 • Resume the simulation
 • What happens to Dry Vegetation when rain stops?
 • What happens to Fire Spread when vegetation dries out?
 
-STEP 5: ADD WIND
+Task E: ADD WIND
 • Lock "Wind" to ON (100%)
 • This simulates California's famous hot, dry Santa Ana winds
 • What happens to Fire Spread now?
@@ -323,7 +323,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -569,10 +569,10 @@ NGSS ALIGNMENT:
 geosphere, biosphere, hydrosphere, and/or atmosphere interact.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -589,12 +589,12 @@ COMMON MISCONCEPTIONS:
    significantly due to climate patterns.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 1: Let students explore the interface. Don't over-explain.
+• Step 2: Ask "When this goes up, what happens to that?" to
    guide positive/negative relationship decisions.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
    things on/off and observe. This is where insight happens.
-• Activity 4: Don't give answers. Ask questions. "What about heat?"
+• Step 4: Don't give answers. Ask questions. "What about heat?"
    "Where do humans fit?" Let curiosity drive.
 
 DISCUSSION PROMPTS:

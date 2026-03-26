@@ -53,7 +53,7 @@ The development of vaccines is arguably the greatest achievement in the history 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -68,7 +68,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Vaccination Rate" — the percentage of the population that receives the vaccine
@@ -79,11 +79,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Herd Immunity Level" — the effective immunity of the population as a whole — when enough individuals are immune
   ○ Click "Disease Transmission Rate" — the rate at which the pathogen spreads through the remaining susceptible population
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 6 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -130,7 +130,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -144,7 +144,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -156,16 +156,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Antigen Exposure" and drag an arrow to "Antibody Production"
 • Click on "Antibody Production" and drag an arrow to "Memory Cell Population"
 • Click on "Vaccination Rate" and drag an arrow to "Herd Immunity Level"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -178,7 +178,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Vaccination Rate → Herd Immunity Level = POSITIVE (+)
     As vaccination rate increases, herd immunity builds gradually but the protective effect is nonlinear — disease transmission drops sharply when coverage crosses the herd immunity threshold (1 - 1/R0). Below the threshold, outbreaks can still occur; above it, transmission chains break.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 0 negative relationship(s), 3 positive relationship(s)
 • This is your system model!
@@ -241,7 +241,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -253,28 +253,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Vaccination Rate is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — INDIVIDUAL IMMUNE RESPONSE
+Task C: SCENARIO — INDIVIDUAL IMMUNE RESPONSE
 • Single vaccination dose | 30-day antibody tracking + 6-month memory tracking
 • PREDICT FIRST: After vaccination, do you predict antibody levels will remain permanently high or decline after the initial response? If they decline, what protects you when you encounter the real pathogen years later?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — HERD IMMUNITY BUILDUP
+Task D: SCENARIO — HERD IMMUNITY BUILDUP
 • Vaccination rate: 0% to 95% | Disease R0 = 5
 • PREDICT FIRST: At what vaccination percentage do you predict disease transmission will effectively stop? Is it a gradual slowdown or a sharp threshold effect?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — OUTBREAK IN UNDER-VACCINATED POPULATION
+Task E: SCENARIO — OUTBREAK IN UNDER-VACCINATED POPULATION
 • Vaccination rate: 80% | Disease requiring 93% immunity (measles)
 • PREDICT FIRST: If a community is 80% vaccinated against measles but the threshold is 93%, do you predict outbreaks will affect only unvaccinated individuals or also some vaccinated ones? Why?
 • Resume the simulation and observe what happens
@@ -331,7 +331,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -550,10 +550,10 @@ THREE-DIMENSIONAL LEARNING:
   Students model immunity at two scales: the cellular scale (individual immune response) and the population scale (herd immunity dynamics), understanding how individual-level processes create emergent population-level protection.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -596,13 +596,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Run the model with 93% immunity achieved through natural infection: calculate the hospitalizations and deaths required. Then run it with 93% achieved through vaccination. The herd immunity outcome is identical; the human cost is not.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

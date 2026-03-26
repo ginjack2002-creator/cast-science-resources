@@ -52,7 +52,7 @@ Every device you own is a chain of energy conversions, and every link in that ch
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Screen Brightness" — how much power the display consumes
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Heat Generation" — wasted energy converted to thermal energy
   ○ Click "Battery Life" — how long the device operates before running out
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,16 +153,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Screen Brightness" and drag an arrow to "Battery Life"
 • Click on "Processing Load" and drag an arrow to "Heat Generation"
 • Click on "Heat Generation" and drag an arrow to "Battery Life"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -175,7 +175,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Heat Generation → Battery Life = NEGATIVE (−)
     Heat represents wasted energy — every watt of heat is a watt that didn't go to useful function. More heat means faster energy depletion and shorter battery life.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 2 negative relationship(s), 1 positive relationship(s)
 • This is your system model!
@@ -238,7 +238,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -250,28 +250,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Screen Brightness is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — HEAVY GAMING
+Task C: SCENARIO — HEAVY GAMING
 • Screen Brightness: HIGH | Processing Load: HIGH
 • PREDICT FIRST: Predict: How long will the battery last? How much heat will be generated?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — STANDBY MODE
+Task D: SCENARIO — STANDBY MODE
 • Screen Brightness: LOW | Processing Load: LOW
 • PREDICT FIRST: Predict: How much longer does the battery last compared to gaming?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — BRIGHTNESS TEST
+Task E: SCENARIO — BRIGHTNESS TEST
 • Processing Load: MEDIUM | Screen Brightness: LOW → HIGH
 • PREDICT FIRST: Which factor drains battery faster — screen brightness or processing load?
 • Resume the simulation and observe what happens
@@ -328,7 +328,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -547,10 +547,10 @@ THREE-DIMENSIONAL LEARNING:
   Energy is conserved but degrades in quality — chemical energy converts to electrical to light/computation plus waste heat. Tracking energy flows reveals why systems are never perfectly efficient.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -593,13 +593,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Analogy: A bigger gas tank doesn't help if your car's engine is inefficient. A Prius with 11 gallons outlasts a truck with 30 gallons.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 
@@ -856,7 +856,7 @@ SCENARIO: A student's phone has a 4,000 mAh battery. They need to text, check so
 GUIDING QUESTIONS:
 • Which energy-consuming components can you reduce without ruining the experience?
 • When during the day should you allow high-power activities vs. conserve?
-• What's the minimum acceptable brightness and processing for each activity?
+• What's the minimum acceptable brightness and processing for each step?
 
 DESIGN THINKING:
 • What are the highest-priority functions the phone must perform?

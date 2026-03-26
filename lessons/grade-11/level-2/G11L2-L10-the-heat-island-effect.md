@@ -53,7 +53,7 @@ The urban heat island effect is one of the most measurable and consequential way
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -68,7 +68,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Urban Land Cover Composition" — the proportion of a city's surface covered by impervious materials (buildings
@@ -79,11 +79,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Ambient Air Temperature" — the actual air temperature experienced by people in different parts of the city
   ○ Click "Heat-Related Health Impact" — the burden of heat illness
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 6 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -130,7 +130,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -144,7 +144,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -156,18 +156,18 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Urban Land Cover Composition" and drag an arrow to "Surface Heat Absorption Rate"
 • Click on "Urban Land Cover Composition" and drag an arrow to "Evapotranspiration Cooling Rate"
 • Click on "Surface Heat Absorption Rate" and drag an arrow to "Ambient Air Temperature"
 • Click on "Waste Heat Generation" and drag an arrow to "Ambient Air Temperature"
 • Click on "Ambient Air Temperature" and drag an arrow to "Heat-Related Health Impact"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -186,7 +186,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Ambient Air Temperature → Heat-Related Health Impact = POSITIVE (+)
     Heat-related illness and mortality increase nonlinearly above critical temperature thresholds. Below ~95°F, most healthy people thermoregulate effectively. Above 105°F with high humidity, outdoor activity becomes dangerous for everyone. Above wet-bulb temperatures of 95°F, the human body cannot cool itself regardless of shade or hydration. Urban heat islands push cities across these thresholds for more hours and more days per year.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 5 arrows total
 • 1 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -269,7 +269,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -281,28 +281,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Urban Land Cover Composition is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CURRENT URBAN BASELINE
+Task C: SCENARIO — CURRENT URBAN BASELINE
 • 60-80% impervious surface, minimal tree canopy in underserved areas
 • PREDICT FIRST: What do you predict is the temperature difference between the highest-canopy neighborhood and the lowest-canopy neighborhood on a 100°F day, and how does this affect Heat-Related Health Impact?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — CLIMATE CHANGE AMPLIFICATION
+Task D: SCENARIO — CLIMATE CHANGE AMPLIFICATION
 • Current heat island plus 3-5°F baseline warming
 • PREDICT FIRST: How many additional days per year do you predict will exceed dangerous heat thresholds (105°F+) in the most vulnerable urban neighborhoods when climate change compounds the heat island effect?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — GREEN INFRASTRUCTURE INTERVENTION
+Task E: SCENARIO — GREEN INFRASTRUCTURE INTERVENTION
 • 30% tree canopy, 50% cool roofs, connected green corridors
 • PREDICT FIRST: Do you predict that green infrastructure can reduce heat island intensity enough to prevent the most dangerous climate-amplified heat scenarios, or are there limits to what vegetation and reflective surfaces can achieve?
 • Resume the simulation and observe what happens
@@ -359,7 +359,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -577,10 +577,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace causal chains from urban land cover decisions through thermodynamic processes to health outcomes, modeling the city as a system where material choices, energy flows, and human vulnerability interact to produce unequal heat exposure.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -623,13 +623,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Map exercise: overlay three maps of the same city — surface temperature, median household income, and tree canopy coverage. The correlation is not coincidental — it is the physical infrastructure of inequality. Ask: If you could only cool one neighborhood, which would you choose and why?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

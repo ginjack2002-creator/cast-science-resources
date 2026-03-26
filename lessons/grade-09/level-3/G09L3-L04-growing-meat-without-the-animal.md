@@ -57,7 +57,7 @@ This lesson introduces students to predictive modeling and multi-parameter optim
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -72,7 +72,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Nutrient Medium Concentration" — the formulation and concentration of amino acids
@@ -87,11 +87,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Production Cost" — the calculated cost per kilogram of final cultured meat product
   ○ Click "Scale Factor" — the ratio of production volume to cost efficiency — larger bioreactors can be more cost-effective but face challenges in maintaining uniform conditions throughout the vessel
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 10 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -142,7 +142,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -156,7 +156,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -168,11 +168,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Nutrient Medium Concentration" and drag an arrow to "Cell Growth Rate"
 • Click on "Cell Growth Rate" and drag an arrow to "Waste Product Accumulation"
 • Click on "Waste Product Accumulation" and drag an arrow to "Cell Growth Rate"
@@ -180,7 +180,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Scaffold Structure" and drag an arrow to "Texture Quality"
 • Click on "Nutrient Medium Concentration" and drag an arrow to "Production Cost"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -202,7 +202,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Nutrient Medium Concentration → Production Cost = POSITIVE (+)
     Growth medium — especially growth factors — is the primary cost driver; higher concentration and more frequent replacement directly increase per-kilogram production costs.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 6 arrows total
 • 1 negative relationship(s), 5 positive relationship(s)
 • This is your system model!
@@ -295,7 +295,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -307,28 +307,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Nutrient Medium Concentration is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — LAB PROTOTYPE
+Task C: SCENARIO — LAB PROTOTYPE
 • Small-scale, optimized conditions
 • PREDICT FIRST: What do you predict Production Cost per kilogram will be at lab scale, and why?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — MAXIMUM GROWTH
+Task D: SCENARIO — MAXIMUM GROWTH
 • All inputs maximized for fastest cell division
 • PREDICT FIRST: What do you predict happens to Waste Product Accumulation when Cell Growth Rate is maximized?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — COMMERCIAL SCALE-UP
+Task E: SCENARIO — COMMERCIAL SCALE-UP
 • Large bioreactor, cost-minimized inputs
 • PREDICT FIRST: Do you predict that scaling up 1000x will reduce per-kilogram cost, and what new problems emerge?
 • Resume the simulation and observe what happens
@@ -385,7 +385,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -607,10 +607,10 @@ THREE-DIMENSIONAL LEARNING:
   Students model the bioreactor as a complex system where multiple interacting variables must be simultaneously optimized, and small changes in one parameter cascade through the entire system.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -653,13 +653,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Model it: Even if you solve every other problem, growth factor cost alone makes cultured meat 3-5x more expensive than conventional beef. What breakthrough would change that equation?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

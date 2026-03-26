@@ -53,7 +53,7 @@ The fashion industry has undergone a radical transformation over the past two de
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -68,7 +68,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Production Volume" — the number of garments produced annually by the fashion industry — currently over 100 billion pieces per year for a global population of 8 billion
@@ -79,11 +79,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Carbon Emissions" — the total co2 released from fiber production
   ○ Click "Textile Waste Generated" — the volume of clothing that ends up in landfills or incinerators at end of life — the average american discards 37 kg of clothing per year
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 6 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -130,7 +130,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -144,7 +144,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -156,16 +156,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Production Volume" and drag an arrow to "Carbon Emissions"
 • Click on "Material Type" and drag an arrow to "Water Consumption"
 • Click on "Garment Lifespan" and drag an arrow to "Textile Waste Generated"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -178,7 +178,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Garment Lifespan → Textile Waste Generated = NEGATIVE (−)
     Longer garment lifespan directly reduces the rate at which clothing enters the waste stream. If the average garment lifespan doubles from 7 to 14 wears, the waste generated per consumer per year is cut approximately in half because fewer replacement garments are needed.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 1 positive relationship(s)
 • This is your system model!
@@ -241,7 +241,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -253,28 +253,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Production Volume is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — FAST FASHION DEFAULT
+Task C: SCENARIO — FAST FASHION DEFAULT
 • Production: Maximum | Material: Polyester | Lifespan: 7 wears
 • PREDICT FIRST: Over one year for 1,000 consumers, what total water consumption, carbon emissions, and textile waste do you predict from the fast fashion model?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — SUSTAINABLE WARDROBE
+Task D: SCENARIO — SUSTAINABLE WARDROBE
 • Production: -50% | Material: Organic cotton/recycled | Lifespan: 100 wears
 • PREDICT FIRST: Do you predict that buying half as many garments but wearing them 10x longer will reduce environmental impact by half, or by more? Why?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — CIRCULAR FASHION SYSTEM
+Task E: SCENARIO — CIRCULAR FASHION SYSTEM
 • Production: Moderate | Fiber recycling: 70% recovery
 • PREDICT FIRST: If 70% of textile fiber is recycled into new clothing, do you predict this will eliminate the need for virgin materials entirely? What percentage remains?
 • Resume the simulation and observe what happens
@@ -331,7 +331,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -551,10 +551,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace the flow of matter (fibers, water, chemicals) and energy (fossil fuels for production and transport) through the complete life cycle of a garment, identifying where waste and pollution enter the environment at each stage.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -597,13 +597,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Compare the impact of one consumer switching to sustainable fashion versus one policy requiring all brands to fund textile recycling. Ask: Which creates more change? (The policy, by orders of magnitude.) Both are needed, but individual action alone cannot solve a systemic problem.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

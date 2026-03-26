@@ -56,7 +56,7 @@ This lesson uses a threshold model to explore one of the most critical questions
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -71,7 +71,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "CO2 Emissions" — the rate of carbon dioxide released into the atmosphere from human activity
@@ -83,11 +83,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Sea Level" — global average sea level
   ○ Click "Ocean Heat Absorption" — the rate at which oceans absorb atmospheric heat — oceans have absorbed 90% of excess heat but are approaching saturation
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -135,7 +135,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -149,7 +149,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -161,11 +161,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "CO2 Emissions" and drag an arrow to "Global Temperature"
 • Click on "Global Temperature" and drag an arrow to "Ice Cover"
 • Click on "Ice Cover" and drag an arrow to "Albedo Effect"
@@ -175,7 +175,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Global Temperature" and drag an arrow to "Sea Level"
 • Click on "Ocean Heat Absorption" and drag an arrow to "Global Temperature"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -203,7 +203,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Ocean Heat Absorption → Global Temperature = NEGATIVE (−)
     Ocean heat absorption temporarily slows atmospheric warming by storing heat in deep water. However, this capacity is limited — as oceans warm, they absorb less heat, and this buffering effect diminishes over time.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 8 arrows total
 • 3 negative relationship(s), 5 positive relationship(s)
 • This is your system model!
@@ -316,7 +316,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -328,28 +328,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When CO2 Emissions is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — BELOW THRESHOLD
+Task C: SCENARIO — BELOW THRESHOLD
 • Moderate CO2 emissions, current conditions
 • PREDICT FIRST: What do you predict happens to Global Temperature and Ice Cover when emissions stay at moderate levels? Does the system find a new equilibrium?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — CROSSING THE THRESHOLD
+Task D: SCENARIO — CROSSING THE THRESHOLD
 • CO2 emissions increase past the tipping point
 • PREDICT FIRST: What do you predict happens to Ice Cover and Albedo Effect once Global Temperature crosses the tipping point? Does the change accelerate or slow down?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — ATTEMPTED RECOVERY
+Task E: SCENARIO — ATTEMPTED RECOVERY
 • Emissions drop to zero after tipping point is crossed
 • PREDICT FIRST: If we reduce CO2 Emissions to zero AFTER the tipping point, do you predict the system will return to its original state? Why or why not?
 • Resume the simulation and observe what happens
@@ -408,7 +408,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -626,10 +626,10 @@ THREE-DIMENSIONAL LEARNING:
   Students explore how climate systems can appear stable while approaching critical thresholds, and how small perturbations can trigger large-scale irreversible changes when tipping points are crossed.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -675,13 +675,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Ask: 'What's the difference between 99°C water and 101°C water? Just 2 degrees — but one is liquid and one is gas. Thresholds matter.' The same principle applies to climate tipping points.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

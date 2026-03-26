@@ -49,7 +49,7 @@ Every animal on Earth is equipped with an amazing set of body structures — bot
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -64,7 +64,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Body Structure Type" — the kind of survival features an animal has — thick fur
@@ -72,11 +72,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
 • Find the INTERNAL components (things that change because of other things):
   ○ Click "Survival Rate" — how likely an animal is to survive based on how well its structures match its environment's dangers
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 3 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -120,7 +120,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -134,7 +134,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -146,15 +146,15 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Body Structure Type" and drag an arrow to "Survival Rate"
 • Click on "Environment Danger Level" and drag an arrow to "Survival Rate"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -164,7 +164,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Environment Danger Level → Survival Rate = NEGATIVE (−)
     More dangers in the environment make it harder for all animals to survive. Higher danger means lower survival rate unless the animal has structures that specifically counter those dangers.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 2 arrows total
 • 1 negative relationship(s), 1 positive relationship(s)
 • This is your system model!
@@ -217,7 +217,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -229,28 +229,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Body Structure Type is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — PERFECT MATCH
+Task C: SCENARIO — PERFECT MATCH
 • Thick fur in arctic cold
 • PREDICT FIRST: What do you predict will happen to Survival Rate when an animal's body perfectly matches its environment?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — MISMATCH
+Task D: SCENARIO — MISMATCH
 • Thick fur in desert heat
 • PREDICT FIRST: What do you predict will happen when an animal's body does NOT match its environment?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — HIGH DANGER
+Task E: SCENARIO — HIGH DANGER
 • Maximum danger, comparing structures
 • PREDICT FIRST: Which body structure type do you predict will survive best in a very dangerous environment?
 • Resume the simulation and observe what happens
@@ -307,7 +307,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -526,10 +526,10 @@ THREE-DIMENSIONAL LEARNING:
   Students explore how the structure (shape, form, material) of an animal's body parts directly relates to their function (what job they do for survival).
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 35-45 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -572,13 +572,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Have students list structures they can see (fur, claws, shells) AND structures they cannot see (bones, lungs, muscles) to show that both types matter equally.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

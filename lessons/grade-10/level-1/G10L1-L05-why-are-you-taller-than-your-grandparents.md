@@ -52,7 +52,7 @@ Over the past 150 years, the average height of people in developed countries has
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Nutrition Quality" — the availability of essential proteins
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Bone Growth Rate" — the speed at which growth plates produce new cartilage that ossifies into bone
   ○ Click "Final Height" — the adult height reached when growth plates close
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,16 +153,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Nutrition Quality" and drag an arrow to "Gene Expression Level"
 • Click on "Gene Expression Level" and drag an arrow to "Growth Hormone Release"
 • Click on "Growth Hormone Release" and drag an arrow to "Bone Growth Rate"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -175,7 +175,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Growth Hormone Release → Bone Growth Rate = POSITIVE (+)
     Growth hormone directly stimulates chondrocyte proliferation in growth plates and promotes IGF-1 production, which drives bone lengthening. More growth hormone during the active growth period means faster bone elongation and ultimately greater height.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 0 negative relationship(s), 3 positive relationship(s)
 • This is your system model!
@@ -238,7 +238,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -250,28 +250,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Nutrition Quality is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — OPTIMAL NUTRITION
+Task C: SCENARIO — OPTIMAL NUTRITION
 • Nutrition Quality: Maximum | All other factors responding
 • PREDICT FIRST: What do you predict happens to Final Height when nutrition is excellent throughout childhood?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — NUTRITIONAL DEPRIVATION
+Task D: SCENARIO — NUTRITIONAL DEPRIVATION
 • Nutrition Quality: Low | Simulating historical conditions
 • PREDICT FIRST: How much shorter do you predict a person will be if nutrition is poor, even with the same genes?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — GENERATIONAL COMPARISON
+Task E: SCENARIO — GENERATIONAL COMPARISON
 • Same genes | 1940s vs. 2020s nutrition
 • PREDICT FIRST: What height difference do you predict between genetically similar people raised in different nutritional environments?
 • Resume the simulation and observe what happens
@@ -328,7 +328,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -546,10 +546,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze the causal relationships between nutrition, gene expression, growth hormone release, and final height, distinguishing genetic causes from environmental ones.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -592,13 +592,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Evidence: Populations that experienced sudden nutritional improvements (post-war Japan, South Korea) showed immediate height increases in a single generation. Evolution takes hundreds of generations. The speed of change proves the cause is environmental, not genetic.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

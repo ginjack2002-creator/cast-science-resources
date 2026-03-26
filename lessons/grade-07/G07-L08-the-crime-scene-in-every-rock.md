@@ -51,7 +51,7 @@ Earth is 4.6 billion years old, and its history is written in stone — literall
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -66,7 +66,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Sedimentation Rate" — how quickly new layers of sediment are deposited by water
@@ -75,11 +75,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Rock Layer Thickness" — how thick the accumulated rock strata become over geological time
   ○ Click "Fossil Preservation Quality" — how well organisms are preserved in the rock — depends on burial speed and conditions
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 4 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -124,7 +124,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -138,7 +138,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -150,16 +150,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Sedimentation Rate" and drag an arrow to "Rock Layer Thickness"
 • Click on "Erosion Rate" and drag an arrow to "Rock Layer Thickness"
 • Click on "Rock Layer Thickness" and drag an arrow to "Fossil Preservation Quality"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -172,7 +172,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Rock Layer Thickness → Fossil Preservation Quality = POSITIVE (+)
     Thicker, more rapidly deposited layers bury organisms quickly, protecting them from decomposition and creating better-preserved fossils.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -235,7 +235,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -247,28 +247,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Sedimentation Rate is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — RAPID DEPOSITION
+Task C: SCENARIO — RAPID DEPOSITION
 • Sedimentation Rate at maximum (flood event)
 • PREDICT FIRST: What do you predict happens to Fossil Preservation Quality when organisms are buried quickly?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — HEAVY EROSION
+Task D: SCENARIO — HEAVY EROSION
 • Erosion Rate at maximum, normal sedimentation
 • PREDICT FIRST: What do you predict happens to Rock Layer Thickness and fossil evidence when erosion dominates?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — BALANCED SYSTEM
+Task E: SCENARIO — BALANCED SYSTEM
 • Moderate sedimentation and erosion
 • PREDICT FIRST: How do you predict the rock record forms under normal conditions over millions of years?
 • Resume the simulation and observe what happens
@@ -325,7 +325,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -544,10 +544,10 @@ THREE-DIMENSIONAL LEARNING:
   Students work with vast timescales (millions to billions of years) and understand how thin layers of rock can represent enormous spans of geological time.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 45-60 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -590,13 +590,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show a time-lapse animation of continental drift from Pangaea to present. Earth never stays the same.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

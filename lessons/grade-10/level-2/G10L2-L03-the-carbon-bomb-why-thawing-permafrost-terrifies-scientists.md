@@ -54,7 +54,7 @@ Beneath the frozen ground of Siberia, Alaska, and northern Canada lies a carbon 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Atmospheric CO2" — the total concentration of carbon dioxide in the earth's atmosphere
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Vegetation Growth" — the expansion of plant life into newly thawed arctic regions
   ○ Click "Feedback Amplification" — the net acceleration of warming caused by permafrost carbon release reinforcing the original warming signal — the key metric that determines whether the system passes the tipping point
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,16 +159,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Atmospheric CO2" and drag an arrow to "Permafrost Temperature"
 • Click on "Permafrost Temperature" and drag an arrow to "Microbial Decomposition"
 • Click on "Microbial Decomposition" and drag an arrow to "Atmospheric CO2"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -181,7 +181,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Microbial Decomposition → Atmospheric CO2 = POSITIVE (+)
     Active Microbial Decomposition converts ancient organic carbon into CO2 (in aerobic conditions) and methane (in anaerobic conditions), both of which enter the atmosphere and increase greenhouse gas concentrations — completing the positive feedback loop.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 0 negative relationship(s), 3 positive relationship(s)
 • This is your system model!
@@ -244,7 +244,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -256,28 +256,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Atmospheric CO2 is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CURRENT TRAJECTORY
+Task C: SCENARIO — CURRENT TRAJECTORY
 • Rising atmospheric CO2, continued warming
 • PREDICT FIRST: What do you predict happens to Feedback Amplification over the next 50 years if emissions continue at current rates?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — AGGRESSIVE CUTS
+Task D: SCENARIO — AGGRESSIVE CUTS
 • Near-zero emissions growth
 • PREDICT FIRST: Do you predict that stopping human emissions will also stop the permafrost feedback — or has it already become self-sustaining?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — METHANE BURST
+Task E: SCENARIO — METHANE BURST
 • Sudden large-scale methane release
 • PREDICT FIRST: What do you predict happens to Atmospheric CO2 and Permafrost Temperature after a sudden methane burst from thermokarst collapse?
 • Resume the simulation and observe what happens
@@ -334,7 +334,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -552,10 +552,10 @@ THREE-DIMENSIONAL LEARNING:
   Students model how a stable system (frozen permafrost storing carbon for millennia) can be pushed past a tipping point into a new, self-reinforcing state of change.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -598,13 +598,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show the temperature record: Plot Arctic temperature over the past 100,000 years alongside the current warming spike. The rate of change is unprecedented.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

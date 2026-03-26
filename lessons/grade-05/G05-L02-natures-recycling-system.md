@@ -50,7 +50,7 @@ Students model Earth's decomposition cycle — the invisible system that breaks 
 
 ---
 
-## Activity 1: LOCATE — Build Your Decomposition System
+## Step 1: LOCATE — Build Your Decomposition System
 
 ### Text Editor
 
@@ -66,7 +66,7 @@ The answer: decomposers. The most underrated living things on Earth.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Dead Organic Matter" — nature produces this constantly
@@ -75,11 +75,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Decomposer Activity" — this changes based on conditions
   ○ Click "Nutrient Release" — this is what we're trying to understand
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 • You should now see 4 components on your screen
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Identify which are EXTERNAL (inputs to the system)
 • Identify which are INTERNAL (respond to other components)
 • Your teacher will explain this in the video
@@ -140,7 +140,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Decomposition Chain
+## Step 2: ESTABLISH — Connect the Decomposition Chain
 
 ### Text Editor
 
@@ -154,16 +154,16 @@ show exactly how they make it work.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Dead Organic Matter → Decomposer Activity
 • Soil Moisture → Decomposer Activity
 • Decomposer Activity → Nutrient Release
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • For each arrow, ask: "When this goes UP, does the other go UP or DOWN?"
 
   ○ Dead Organic Matter → Decomposer Activity = POSITIVE (+)
@@ -175,7 +175,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Decomposer Activity → Nutrient Release = POSITIVE (+)
     More decomposer work = MORE nutrients released to the soil
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • All 3 are POSITIVE relationships
 • This is your recycling chain!
@@ -231,7 +231,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Recycling System
+## Step 3: VISUALIZE & EVALUATE — Run the Recycling System
 
 ### Text Editor
 
@@ -243,23 +243,23 @@ works like Earth's actual decomposition system.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT
 • Watch the graph panel — you'll see lines for each component
 
-STEP 2: OBSERVE THE HEALTHY ECOSYSTEM
+Task B: OBSERVE THE HEALTHY ECOSYSTEM
 • Let it run for about 30 time steps
 • When Dead Organic Matter is HIGH, what happens to Decomposer Activity?
 • When Decomposer Activity is HIGH, what happens to Nutrient Release?
 
-STEP 3: SIMULATE A DROUGHT
+Task C: SIMULATE A DROUGHT
 • Find the LOCK icon next to "Soil Moisture"
 • Set Soil Moisture to 0% (drought conditions)
 • What happens to Decomposer Activity?
 • What happens to Nutrient Release?
 • What happens to Dead Organic Matter over time? (hint: it starts piling up)
 
-STEP 4: BRING BACK THE RAIN
+Task D: BRING BACK THE RAIN
 • Unlock Soil Moisture
 • Watch how fast the system recovers
 • Can you see the decomposers "catching up" on all that piled-up matter?
@@ -320,7 +320,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -564,10 +564,10 @@ NGSS ALIGNMENT:
 plants, animals, decomposers, and the environment.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -584,16 +584,16 @@ COMMON MISCONCEPTIONS:
   water, on surfaces, even inside other organisms
 
 FACILITATION TIPS:
-• Activity 1: Ask students "When was the last time you saw a pile of
+• Step 1: Ask students "When was the last time you saw a pile of
   dead leaves still there years later?" This prompts them to recognize
   that dead matter disappears — creating the authentic question.
-• Activity 2: Use the analogy of an assembly line — dead matter is
+• Step 2: Use the analogy of an assembly line — dead matter is
   the raw material, moisture is the power, decomposers are the workers,
   nutrients are the finished product.
-• Activity 3: The drought scenario is the key insight moment. Let
+• Step 3: The drought scenario is the key insight moment. Let
   students observe the accumulation of dead matter silently before
   asking what they notice.
-• Activity 4: If students ask about plastic not decomposing, validate
+• Step 4: If students ask about plastic not decomposing, validate
   it — that's a real and important extension connecting to the pollution unit.
 
 DISCUSSION PROMPTS:

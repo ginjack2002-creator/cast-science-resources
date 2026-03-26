@@ -52,7 +52,7 @@ CRISPR-Cas9 is arguably the most revolutionary biological technology since the d
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Guide RNA Specificity" — how precisely the guide rna matches the intended dna target — higher specificity means fewer off-target effects
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Off-Target Mutation Rate" — the frequency of unintended edits at non-target locations in the genome — even rates as low as 0
   ○ Click "Therapeutic Outcome" — the overall health benefit or harm resulting from the gene edit — determined by the balance between successful on-target editing and harmful off-target effects across all edited cells
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,17 +153,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Guide RNA Specificity" and drag an arrow to "Editing Efficiency"
 • Click on "Guide RNA Specificity" and drag an arrow to "Off-Target Mutation Rate"
 • Click on "Off-Target Mutation Rate" and drag an arrow to "Therapeutic Outcome"
 • Click on "Editing Efficiency" and drag an arrow to "Therapeutic Outcome"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -179,7 +179,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Editing Efficiency → Therapeutic Outcome = POSITIVE (+)
     Higher editing efficiency means more cells carry the corrected gene, producing more functional protein and greater therapeutic benefit for the patient.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 2 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -252,7 +252,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -264,28 +264,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Guide RNA Specificity is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SICKLE CELL CURE
+Task C: SCENARIO — SICKLE CELL CURE
 • Guide RNA Specificity: High | Target: Single gene (HBB) | Delivery: Somatic cells
 • PREDICT FIRST: When CRISPR targets a single well-known gene with high specificity, what does the model predict for Therapeutic Outcome?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — MULTIPLE GENE EDIT
+Task D: SCENARIO — MULTIPLE GENE EDIT
 • Guide RNA Specificity: Moderate | Target: 5 genes simultaneously | Delivery: Somatic cells
 • PREDICT FIRST: What happens to Off-Target Mutation Rate when you try to edit multiple genes at once?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — GERMLINE ENHANCEMENT
+Task E: SCENARIO — GERMLINE ENHANCEMENT
 • Guide RNA Specificity: High | Target: Multiple trait genes | Delivery: Embryo (germline)
 • PREDICT FIRST: What are the risks when gene edits in an embryo will be inherited by all future descendants?
 • Resume the simulation and observe what happens
@@ -342,7 +342,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -561,10 +561,10 @@ THREE-DIMENSIONAL LEARNING:
   Students connect the molecular structure of DNA, guide RNA, and Cas9 protein to the function of precise gene editing, understanding how structural specificity determines functional accuracy.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -607,13 +607,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Discuss the sickle cell example: The HBB mutation causes sickle cell disease when you have two copies, but carrying one copy protects against malaria. If we edit out sickle cell, what happens to malaria resistance in regions where it's needed?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

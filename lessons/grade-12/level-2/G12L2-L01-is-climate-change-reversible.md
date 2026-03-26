@@ -54,7 +54,7 @@ The global carbon cycle is one of Earth\'s most fundamental biogeochemical proce
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Atmospheric CO2" — the concentration of carbon dioxide in the atmosphere measured in parts per million — the primary driver of the greenhouse effect
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Ice-Albedo Feedback" — the self-reinforcing cycle where warming melts reflective ice and snow
   ○ Click "Permafrost Methane Release" — the emission of methane and co2 from thawing arctic permafrost — a massive carbon reservoir containing roughly twice the carbon currently in the atmosphere that becomes an additional emission source as it thaws
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,11 +159,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Fossil Fuel Emissions" and drag an arrow to "Atmospheric CO2"
 • Click on "Atmospheric CO2" and drag an arrow to "Global Temperature Anomaly"
 • Click on "Global Temperature Anomaly" and drag an arrow to "Ice-Albedo Feedback"
@@ -171,7 +171,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Global Temperature Anomaly" and drag an arrow to "Ocean Carbon Absorption"
 • Click on "Terrestrial Carbon Storage" and drag an arrow to "Atmospheric CO2"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -193,7 +193,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Terrestrial Carbon Storage → Atmospheric CO2 = NEGATIVE (−)
     Healthy forests and soils absorb CO2 from the atmosphere through photosynthesis and storage, reducing atmospheric concentration. Deforestation or ecosystem degradation reverses this relationship.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 6 arrows total
 • 2 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -286,7 +286,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -298,28 +298,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Atmospheric CO2 is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — BUSINESS AS USUAL
+Task C: SCENARIO — BUSINESS AS USUAL
 • Fossil Fuel Emissions: Current Rate | Ocean Absorption: Declining | Terrestrial Storage: Declining
 • PREDICT FIRST: If emissions continue at current rates for 30 years, what do you predict happens to Global Temperature Anomaly and when do feedback loops become self-sustaining?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — IMMEDIATE NET ZERO
+Task D: SCENARIO — IMMEDIATE NET ZERO
 • Fossil Fuel Emissions: Zero | Ocean Absorption: Current | Terrestrial Storage: Current
 • PREDICT FIRST: If all emissions stopped today, would Global Temperature Anomaly immediately decrease, slowly decrease, stay the same, or continue rising? Explain your reasoning.
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — ENHANCED SINKS STRATEGY
+Task E: SCENARIO — ENHANCED SINKS STRATEGY
 • Fossil Fuel Emissions: 50% Reduction | Ocean Absorption: Current | Terrestrial Storage: Increased 30%
 • PREDICT FIRST: Can increasing natural carbon sinks compensate for continued partial emissions? What does the model show about the timeline?
 • Resume the simulation and observe what happens
@@ -376,7 +376,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -595,10 +595,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze how the climate system can shift from a relatively stable state to a new equilibrium through positive feedback loops and tipping points, and evaluate the conditions under which stability can be maintained or restored.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -641,13 +641,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show students the relative scale: a person recycling saves perhaps 0.5 tons of CO2 per year; total global emissions are 36 billion tons. Ask: How many individual actions would it take to match one policy change that shifts an entire energy grid?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

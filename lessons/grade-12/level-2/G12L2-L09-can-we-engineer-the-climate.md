@@ -54,7 +54,7 @@ As the gap between climate targets and actual emission reductions widens, attent
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Atmospheric CO2 Concentration" — the total amount of carbon dioxide in the atmosphere — currently 424 ppm and rising approximately 2
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Carbon Removal Rate" — the net rate at which co2 is removed from the atmosphere by cdr technologies — currently negligible (approximately 0
   ○ Click "Termination Risk" — the probability and consequences of geoengineering being suddenly stopped — srm must be maintained continuously because stopping it exposes the planet to all accumulated warming within months
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,18 +159,18 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Atmospheric CO2 Concentration" and drag an arrow to "Global Mean Temperature"
 • Click on "Solar Radiation Reaching Surface" and drag an arrow to "Global Mean Temperature"
 • Click on "Atmospheric CO2 Concentration" and drag an arrow to "Ocean Acidification Level"
 • Click on "Solar Radiation Reaching Surface" and drag an arrow to "Regional Climate Disruption"
 • Click on "Atmospheric CO2 Concentration" and drag an arrow to "Termination Risk"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -189,7 +189,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Atmospheric CO2 Concentration → Termination Risk = POSITIVE (+)
     Higher CO2 behind the SRM shield means greater warming exposure if SRM stops. Termination Risk grows every year that SRM masks accumulating CO2, creating an increasingly dangerous dependency.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 5 arrows total
 • 0 negative relationship(s), 5 positive relationship(s)
 • This is your system model!
@@ -272,7 +272,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -284,28 +284,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Atmospheric CO2 Concentration is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SOLAR SHIELD
+Task C: SCENARIO — SOLAR SHIELD
 • SRM: Active (1.5C offset) | Emissions: Continuing | CDR: None
 • PREDICT FIRST: If we deploy a solar shield to cool the planet without reducing emissions, what happens to Ocean Acidification? What is the Termination Risk after 50 years? Is this a solution or a trap?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — CARBON REMOVAL
+Task D: SCENARIO — CARBON REMOVAL
 • SRM: None | Emissions: Current | CDR: 10 Gt/year
 • PREDICT FIRST: Can carbon dioxide removal at massive scale reduce atmospheric CO2 meaningfully? What does the model show about the gap between current removal capacity and the scale needed?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — INTEGRATED SOLUTION
+Task E: SCENARIO — INTEGRATED SOLUTION
 • SRM: None | Emissions: -50% | CDR: 5 Gt/year
 • PREDICT FIRST: What does the model show when emission reduction is combined with carbon removal? Is this pathway achievable without the risks of solar radiation management?
 • Resume the simulation and observe what happens
@@ -362,7 +362,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -581,10 +581,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze the causal relationships between geoengineering interventions and their climate system effects, distinguishing between addressing root causes (reducing CO2) and masking symptoms (reflecting sunlight), and identifying the unintended cascading effects of each approach.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -627,13 +627,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show the solar panel cost curve as an analogy: technology that was impossibly expensive in 1977 is now the cheapest electricity source. DAC is on a similar trajectory. The question is not whether it will become affordable but whether it can scale fast enough to matter — and the model shows it is a complement to, not a substitute for, emission reduction.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

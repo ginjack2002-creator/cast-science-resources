@@ -49,7 +49,7 @@ Earthquake engineering is one of the most important applications of science to h
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -64,7 +64,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Earthquake Strength" — how powerful the earthquake is
@@ -72,11 +72,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Building Flexibility" — how much a building can sway and bend during shaking without cracking or falling
   ○ Click "Damage Level" — how much destruction the earthquake causes to the building and things inside it
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 3 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -120,7 +120,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -134,7 +134,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -146,15 +146,15 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Earthquake Strength" and drag an arrow to "Damage Level"
 • Click on "Building Flexibility" and drag an arrow to "Damage Level"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -164,7 +164,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Building Flexibility → Damage Level = NEGATIVE (−)
     More flexible buildings absorb earthquake energy by swaying instead of cracking. Increasing flexibility DECREASES damage because the building moves WITH the shaking instead of fighting it.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 2 arrows total
 • 1 negative relationship(s), 1 positive relationship(s)
 • This is your system model!
@@ -217,7 +217,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -229,28 +229,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Earthquake Strength is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SMALL TREMOR
+Task C: SCENARIO — SMALL TREMOR
 • Low earthquake, moderate flexibility
 • PREDICT FIRST: What do you predict will happen to the Damage Level during a small earthquake in a normal building?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — MAJOR QUAKE, STIFF BUILDING
+Task D: SCENARIO — MAJOR QUAKE, STIFF BUILDING
 • High earthquake, low flexibility
 • PREDICT FIRST: What do you predict will happen to the Damage Level when a big earthquake hits a stiff building?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — MAJOR QUAKE, FLEXIBLE BUILDING
+Task E: SCENARIO — MAJOR QUAKE, FLEXIBLE BUILDING
 • High earthquake, high flexibility
 • PREDICT FIRST: What do you predict will happen to the Damage Level when the SAME big earthquake hits a flexible building?
 • Resume the simulation and observe what happens
@@ -307,7 +307,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -525,10 +525,10 @@ THREE-DIMENSIONAL LEARNING:
   Students identify cause and effect relationships between earthquake strength, building design, and damage levels to engineer protective solutions.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 35-45 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -571,13 +571,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Compare: The 2010 Haiti earthquake (magnitude 7.0) killed over 200,000 people. The 2010 Chile earthquake (magnitude 8.8 — nearly 500 times more powerful) killed about 500 people. Why? Chile had modern building codes. Engineering saves lives.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

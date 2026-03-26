@@ -54,7 +54,7 @@ Fire has shaped Earth\'s ecosystems for at least 420 million years — since the
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Climate and Weather Conditions" — temperature
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Forest Carbon Balance" — the net carbon flux between the forest ecosystem and atmosphere — healthy forests are carbon sinks that absorb more co2 than they release
   ○ Click "Ecosystem Resilience" — the ability of the ecosystem to absorb disturbance and return to a functional state — fire-adapted ecosystems have high resilience to fires within their historical regime but low resilience to fires that exceed historical intensity
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,11 +159,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Fuel Load Accumulation" and drag an arrow to "Fire Intensity"
 • Click on "Climate and Weather Conditions" and drag an arrow to "Fire Intensity"
 • Click on "Fire Intensity" and drag an arrow to "Soil Health and Seed Bank"
@@ -171,7 +171,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Post-Fire Vegetation Recovery" and drag an arrow to "Forest Carbon Balance"
 • Click on "Ecosystem Resilience" and drag an arrow to "Post-Fire Vegetation Recovery"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -193,7 +193,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Ecosystem Resilience → Post-Fire Vegetation Recovery = POSITIVE (+)
     Resilient ecosystems with intact biodiversity, healthy soil biology, and genetic diversity among tree species recover faster and more completely from fire. Repeated megafires erode resilience, making each subsequent recovery more difficult.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 6 arrows total
 • 1 negative relationship(s), 5 positive relationship(s)
 • This is your system model!
@@ -286,7 +286,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -298,28 +298,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Climate and Weather Conditions is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — HISTORICAL NATURAL FIRE
+Task C: SCENARIO — HISTORICAL NATURAL FIRE
 • Fuel Load: Moderate (Natural) | Climate: Historical Average | Fire Type: Surface
 • PREDICT FIRST: When fire burns through an ecosystem with natural fuel levels under historical conditions, what do you predict happens to Soil Health, Post-Fire Recovery, and Ecosystem Resilience?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — SUPPRESSION LEGACY FIRE
+Task D: SCENARIO — SUPPRESSION LEGACY FIRE
 • Fuel Load: Maximum (100yr Accumulation) | Climate: Current | Fire Type: Mixed Surface/Crown
 • PREDICT FIRST: After a century of fire suppression, the forest has 5-10x more fuel than natural. What happens when this fuel finally burns? How does fire intensity change and what cascading effects follow?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — CLIMATE MEGAFIRE
+Task E: SCENARIO — CLIMATE MEGAFIRE
 • Fuel Load: Maximum | Climate: Extreme (Drought + Heat + Wind) | Fire Type: Crown
 • PREDICT FIRST: When accumulated fuel meets climate-amplified conditions, what does the model predict about fire intensity, soil sterilization, and the ecosystem\'s ability to recover? Could this push the ecosystem past a tipping point?
 • Resume the simulation and observe what happens
@@ -376,7 +376,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -595,10 +595,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze how fire-adapted ecosystems maintain stability through regular natural disturbance, how disrupting the disturbance regime creates instability, and how climate change is shifting the balance from stabilizing fire to destabilizing megafire.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -641,13 +641,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Present the risk comparison mathematically: 1-2% risk of a prescribed burn escaping versus near-certainty of megafire without treatment. Calculate the expected damage from each scenario. The numbers make an overwhelming case for prescribed burning.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

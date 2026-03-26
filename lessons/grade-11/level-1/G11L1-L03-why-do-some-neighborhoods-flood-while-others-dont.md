@@ -52,7 +52,7 @@ When Hurricane Harvey flooded Houston in 2017, the most severely impacted areas 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Impervious Surface Coverage" — the percentage of a neighborhood covered by pavement
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Runoff Volume" — the total volume of water flowing across the surface during a storm
   ○ Click "Flood Depth" — the depth of standing water in a neighborhood when runoff volume exceeds storm drain capacity — the direct measure of flood damage risk to homes
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,16 +153,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Impervious Surface Coverage" and drag an arrow to "Runoff Volume"
 • Click on "Storm Drain Capacity" and drag an arrow to "Flood Depth"
 • Click on "Green Infrastructure Area" and drag an arrow to "Runoff Volume"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -175,7 +175,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Green Infrastructure Area → Runoff Volume = NEGATIVE (−)
     Green infrastructure absorbs, stores, and slowly releases rainwater, reducing the total volume of runoff that must be handled by storm drains. A comprehensive network of rain gardens, bioswales, tree canopy, and permeable pavement can reduce neighborhood runoff by 20-40%.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 2 negative relationship(s), 1 positive relationship(s)
 • This is your system model!
@@ -238,7 +238,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -250,28 +250,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Impervious Surface Coverage is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — DISINVESTED NEIGHBORHOOD
+Task C: SCENARIO — DISINVESTED NEIGHBORHOOD
 • Impervious: 90% | Storm drains: Low capacity (1950s) | Green infrastructure: Near zero
 • PREDICT FIRST: During a major storm, what flood depth do you predict in this neighborhood? How does the lack of green infrastructure and old pipes contribute?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — AFFLUENT NEIGHBORHOOD
+Task D: SCENARIO — AFFLUENT NEIGHBORHOOD
 • Impervious: 60% | Storm drains: High capacity (modern) | Green infrastructure: Moderate
 • PREDICT FIRST: The same storm hits both neighborhoods — do you predict the affluent neighborhood will flood at all? What factors protect it?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — GREEN INFRASTRUCTURE RETROFIT
+Task E: SCENARIO — GREEN INFRASTRUCTURE RETROFIT
 • Disinvested neighborhood + significant green infrastructure addition
 • PREDICT FIRST: If you add rain gardens, bioswales, and tree canopy to the disinvested neighborhood, do you predict it can achieve the same flood protection as the affluent neighborhood, or are other upgrades also needed?
 • Resume the simulation and observe what happens
@@ -328,7 +328,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -548,10 +548,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace the causal chain from historical policy decisions (redlining, disinvestment) through infrastructure disparities to unequal flood outcomes, identifying both proximate causes (impervious surfaces, old pipes) and root causes (systemic racism).
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -594,13 +594,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Compare costs: show that installing green infrastructure across a neighborhood costs a fraction of replacing all underground pipes while achieving similar flood reduction. Ask: If you had limited budget, which approach gives more flood protection per dollar?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

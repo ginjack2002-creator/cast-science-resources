@@ -54,7 +54,7 @@ Classical computers process information as bits — switches that are either 0 o
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Qubit Count" — the total number of physical qubits available on the quantum processor — more qubits enable larger computations but also increase the complexity of control and error management
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Circuit Depth" — the number of sequential gate operations that can be performed before accumulated errors and decoherence destroy the quantum state — deeper circuits solve harder problems but require better qubits
   ○ Click "Quantum Volume" — a holistic performance metric combining qubit count
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,17 +159,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Operating Temperature" and drag an arrow to "Coherence Time"
 • Click on "Coherence Time" and drag an arrow to "Circuit Depth"
 • Click on "Gate Error Rate" and drag an arrow to "Quantum Volume"
 • Click on "Qubit Count" and drag an arrow to "Quantum Volume"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -185,7 +185,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Qubit Count → Quantum Volume = POSITIVE (+)
     More physical qubits increase the computational space available for quantum algorithms and provide additional resources for error correction. However, this relationship is mediated by gate fidelity and connectivity — more qubits only help if they can be operated reliably.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 2 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -258,7 +258,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -270,28 +270,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Qubit Count is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CURRENT STATE-OF-THE-ART
+Task C: SCENARIO — CURRENT STATE-OF-THE-ART
 • 1,000 qubits, 100 microsecond coherence, 0.3% gate error rate
 • PREDICT FIRST: What do you predict the quantum volume will be with today's noisy intermediate-scale quantum hardware?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — ERROR-CORRECTED REGIME
+Task D: SCENARIO — ERROR-CORRECTED REGIME
 • 10,000 qubits, 0.01% gate error, 10 ms coherence time
 • PREDICT FIRST: What do you predict happens to circuit depth and computational advantage when errors become rare enough for fault-tolerant operation?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — THERMAL DISRUPTION
+Task E: SCENARIO — THERMAL DISRUPTION
 • Operating temperature increases from 15 mK to 100 mK
 • PREDICT FIRST: What do you predict happens to all quantum properties when thermal energy exceeds the qubit energy gap?
 • Resume the simulation and observe what happens
@@ -348,7 +348,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -567,10 +567,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze how quantum advantage scales exponentially with qubit count while errors also scale exponentially with circuit depth, creating competing exponentials that determine feasibility.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -613,13 +613,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Timeline exercise: Plot the trajectory from today's 1,000 qubits to the millions needed for transformative applications. At current scaling rates, when does the model predict we cross each threshold? What assumptions could make this faster or slower?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

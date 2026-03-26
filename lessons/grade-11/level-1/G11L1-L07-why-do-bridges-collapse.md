@@ -53,7 +53,7 @@ On August 1, 2007, the I-35W bridge in Minneapolis collapsed during rush hour, d
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -68,7 +68,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Applied Load" — the total force exerted on the bridge by vehicles
@@ -79,11 +79,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Fatigue Damage" — the cumulative microscopic crack growth caused by millions of repeated loading cycles — fatigue damage is invisible without specialized inspection and accumulates over years
   ○ Click "Structural Integrity" — the overall ability of the bridge to safely carry its designed load — starts at 100% when new and decreases as fatigue damage accumulates
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 6 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -130,7 +130,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -144,7 +144,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -156,16 +156,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Applied Load" and drag an arrow to "Force Distribution"
 • Click on "Force Distribution" and drag an arrow to "Fatigue Damage"
 • Click on "Maintenance Interval" and drag an arrow to "Structural Integrity"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -178,7 +178,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Maintenance Interval → Structural Integrity = POSITIVE (+)
     More frequent maintenance does not prevent fatigue damage — it detects it early. When inspectors find cracks below critical length, they can be repaired by welding, grinding, or adding reinforcement. Regular maintenance maintains Structural Integrity by catching damage before it becomes dangerous. Deferred maintenance allows cracks to grow unchecked toward catastrophic failure.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 0 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -241,7 +241,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -253,28 +253,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Applied Load is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — NORMAL SERVICE LIFE
+Task C: SCENARIO — NORMAL SERVICE LIFE
 • Load: Standard traffic | Design: Steel truss | Maintenance: Every 2 years | 50-year simulation
 • PREDICT FIRST: What percentage of its original Structural Integrity do you predict the bridge will retain after 50 years with regular maintenance?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — DEFERRED MAINTENANCE
+Task D: SCENARIO — DEFERRED MAINTENANCE
 • Load: Standard traffic | Maintenance: Every 10 years | 50-year simulation
 • PREDICT FIRST: How much faster do you predict Structural Integrity will decline when inspections happen every 10 years instead of every 2? Will the bridge survive 50 years?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — OVERLOADING EVENT
+Task E: SCENARIO — OVERLOADING EVENT
 • Load: 150% of design capacity | Bridge at 70% integrity
 • PREDICT FIRST: If a bridge that has already lost 30% of its structural integrity is subjected to 50% more load than designed for, do you predict it will hold or fail? What determines the outcome?
 • Resume the simulation and observe what happens
@@ -331,7 +331,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -551,10 +551,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze how bridges appear stable while undergoing gradual internal change through fatigue damage, and identify the threshold where gradual change produces sudden catastrophic instability.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -597,13 +597,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show images of ultrasonic fatigue crack detection — the crack is invisible to the eye but clearly visible on the ultrasound screen. Ask: If you can't see it, smell it, or hear it, how do you know it's there? (You test for it — which requires time, equipment, and money.)
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

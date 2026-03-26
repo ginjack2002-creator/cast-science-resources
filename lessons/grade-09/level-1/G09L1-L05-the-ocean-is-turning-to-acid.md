@@ -51,7 +51,7 @@ Ocean acidification is often called 'the other CO2 problem' — less famous than
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -66,7 +66,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "CO2 Emissions" — the rate at which humans release carbon dioxide into the atmosphere from burning fossil fuels
@@ -75,11 +75,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Ocean pH" — the acidity level of seawater
   ○ Click "Coral Health" — the ability of coral reefs and shell-building organisms to survive
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 4 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -124,7 +124,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -138,7 +138,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -150,16 +150,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "CO2 Emissions" and drag an arrow to "Ocean CO2 Absorption"
 • Click on "Ocean CO2 Absorption" and drag an arrow to "Ocean pH"
 • Click on "Ocean pH" and drag an arrow to "Coral Health"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -172,7 +172,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Ocean pH → Coral Health = POSITIVE (+)
     Higher pH (less acidic) supports healthy coral growth. As pH drops, coral's calcium carbonate structures dissolve faster than organisms can build them, leading to reef death.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -235,7 +235,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -247,28 +247,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When CO2 Emissions is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CURRENT TRAJECTORY
+Task C: SCENARIO — CURRENT TRAJECTORY
 • CO2 Emissions: HIGH (current rate)
 • PREDICT FIRST: Predict: What happens to ocean pH and coral health over 50 years at current emission rates?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — PARIS AGREEMENT
+Task D: SCENARIO — PARIS AGREEMENT
 • CO2 Emissions: MEDIUM (reduced)
 • PREDICT FIRST: Predict: Does reducing emissions stop acidification or just slow it?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — ZERO EMISSIONS
+Task E: SCENARIO — ZERO EMISSIONS
 • CO2 Emissions: LOW (near zero)
 • PREDICT FIRST: Predict: If we stopped all emissions today, how long would the ocean take to recover?
 • Resume the simulation and observe what happens
@@ -325,7 +325,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -543,10 +543,10 @@ THREE-DIMENSIONAL LEARNING:
   The ocean's pH has been stable for millions of years. Human CO2 emissions have disrupted this stability faster than marine organisms can adapt, pushing the system toward a new — and potentially catastrophic — equilibrium.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -589,13 +589,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Calculate: The ocean volume is 1.335 × 10^18 cubic meters. How many tons of limestone would you need per cubic meter? Multiply out to see the absurdity.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

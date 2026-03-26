@@ -54,7 +54,7 @@ Environmental justice research has consistently demonstrated that environmental 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Pollution Source Density" — the concentration of industrial facilities
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Community Political Power" — the ability of residents to influence zoning decisions
   ○ Click "Green Infrastructure Access" — the availability of parks
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,11 +159,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Pollution Source Density" and drag an arrow to "Pollution Exposure Level"
 • Click on "Pollution Exposure Level" and drag an arrow to "Health Outcome Disparity"
 • Click on "Health Outcome Disparity" and drag an arrow to "Community Socioeconomic Status"
@@ -171,7 +171,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Community Political Power" and drag an arrow to "Regulatory Enforcement Level"
 • Click on "Regulatory Enforcement Level" and drag an arrow to "Pollution Exposure Level"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -193,7 +193,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Regulatory Enforcement Level → Pollution Exposure Level = NEGATIVE (−)
     Stronger enforcement reduces pollution by penalizing violations, requiring emission reductions, and compelling cleanup of contaminated sites. Communities with robust enforcement have measurably lower pollution exposure.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 6 arrows total
 • 2 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -286,7 +286,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -298,28 +298,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Pollution Source Density is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — STATUS QUO
+Task C: SCENARIO — STATUS QUO
 • Pollution Sources: Concentrated in Low-Income Areas | Enforcement: Weak in Low-Income Areas | Political Power: Correlated with Income
 • PREDICT FIRST: What does the model predict about health outcome disparities under current conditions? How do feedback loops prevent disadvantaged communities from escaping the pollution burden?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — EQUAL ENFORCEMENT
+Task D: SCENARIO — EQUAL ENFORCEMENT
 • Pollution Sources: Existing Distribution | Enforcement: Equal Across All Areas | Political Power: Current
 • PREDICT FIRST: If environmental regulations were enforced equally in all communities, would pollution exposure disparities decrease? Or are there structural factors that maintain inequity even with equal enforcement?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — SYSTEMIC TRANSFORMATION
+Task E: SCENARIO — SYSTEMIC TRANSFORMATION
 • Pollution Sources: Reduced in Overburdened Areas | Enforcement: Equal + Enhanced | Political Power: Equalized | Green Infrastructure: Invested
 • PREDICT FIRST: What happens when you address multiple drivers simultaneously? Can a comprehensive approach reverse environmental inequity, and how long does the model show it takes?
 • Resume the simulation and observe what happens
@@ -376,7 +376,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -595,10 +595,10 @@ THREE-DIMENSIONAL LEARNING:
   Students model environmental inequity as a complex system with feedback loops that maintain disparities, understanding that effective solutions must address multiple system components simultaneously rather than treating individual symptoms in isolation.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -641,13 +641,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Present the analogy: If two runners race but one must carry a 50-pound weight (pollution burden), individual effort still matters, but the structural disadvantage determines the outcome far more than personal performance. Ask: Is it fair to judge both runners equally when one started with a massive disadvantage?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

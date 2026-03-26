@@ -52,7 +52,7 @@ Every time a cell divides, its entire genome — 3.2 billion base pairs — must
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Mutation Type" — the category of genetic change — point mutations (substitutions)
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Protein Function" — how well the mutated protein performs its biological role — directly determined by structural change; a slightly altered structure may retain partial function
   ○ Click "Phenotypic Impact" — the observable effect of the mutation on the organism's traits
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,17 +153,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Mutation Type" and drag an arrow to "Protein Structure Change"
 • Click on "Gene Location" and drag an arrow to "Protein Structure Change"
 • Click on "Protein Structure Change" and drag an arrow to "Protein Function"
 • Click on "Protein Function" and drag an arrow to "Phenotypic Impact"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -179,7 +179,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Protein Function → Phenotypic Impact = NEGATIVE (−)
     Reduced protein function affects the biological processes that protein supports; the more critical the protein and the greater the functional loss, the more severe the observable phenotypic effect.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 2 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -252,7 +252,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -264,28 +264,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Mutation Type is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SILENT CHANGE
+Task C: SCENARIO — SILENT CHANGE
 • Mutation Type: Point (synonymous) | Gene Location: Coding region, non-critical site | Protein: Hemoglobin
 • PREDICT FIRST: When a mutation changes the DNA but NOT the amino acid (due to genetic code redundancy), what happens to Phenotypic Impact?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — SICKLE CELL MUTATION
+Task D: SCENARIO — SICKLE CELL MUTATION
 • Mutation Type: Point (missense, E6V) | Gene Location: HBB gene, position 6 | Protein: Hemoglobin beta chain
 • PREDICT FIRST: The sickle cell mutation changes just one amino acid. Why does the model predict such severe Phenotypic Impact from this tiny change?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — FRAMESHIFT DISASTER
+Task E: SCENARIO — FRAMESHIFT DISASTER
 • Mutation Type: Single base insertion | Gene Location: Early in CFTR gene coding region | Protein: CFTR chloride channel
 • PREDICT FIRST: What happens when a frameshift mutation near the beginning of a gene scrambles the entire downstream protein sequence?
 • Resume the simulation and observe what happens
@@ -342,7 +342,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -561,10 +561,10 @@ THREE-DIMENSIONAL LEARNING:
   Students connect DNA sequence structure to protein three-dimensional structure to biological function, understanding how a change at one structural level cascades through to produce observable phenotypic effects.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -607,13 +607,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Analogy: Imagine typing random letters on a keyboard (mutations). Most produce gibberish. But if a spell-checker deletes everything except real words (natural selection), eventually meaningful text emerges. The randomness of input doesn't prevent organized output when there's a selection filter.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

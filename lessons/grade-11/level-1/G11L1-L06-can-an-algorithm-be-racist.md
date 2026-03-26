@@ -52,7 +52,7 @@ In 2016, ProPublica investigated COMPAS, an algorithm used across the United Sta
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -67,7 +67,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Training Data Composition" — the demographic representation and historical patterns in the data used to train the algorithm — biased data produces biased algorithms regardless of the algorithm's design
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Prediction Accuracy" — the overall correctness of the algorithm's decisions
   ○ Click "Disparate Impact Ratio" — the ratio of favorable outcomes for the disadvantaged group compared to the advantaged group — a ratio below 0
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 5 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -127,7 +127,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -141,7 +141,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -153,16 +153,16 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Training Data Composition" and drag an arrow to "Disparate Impact Ratio"
 • Click on "Feature Selection" and drag an arrow to "Disparate Impact Ratio"
 • Click on "Algorithm Fairness Constraint" and drag an arrow to "Prediction Accuracy"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -175,7 +175,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Algorithm Fairness Constraint → Prediction Accuracy = NEGATIVE (−)
     Imposing fairness constraints (e.g., requiring equal false positive rates across groups) typically reduces overall prediction accuracy by a small but measurable amount, because it forces the algorithm to sacrifice some predictive power to achieve equitable outcomes. Research shows this trade-off is usually modest (1-3% accuracy reduction) but not zero.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 3 arrows total
 • 1 negative relationship(s), 0 positive relationship(s)
 • This is your system model!
@@ -238,7 +238,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -250,28 +250,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Training Data Composition is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — BIASED HISTORICAL DATA
+Task C: SCENARIO — BIASED HISTORICAL DATA
 • Training data: 20 years of historical hiring with demographic imbalance | No fairness constraints
 • PREDICT FIRST: Do you predict the algorithm's overall accuracy will be high or low? What about its accuracy specifically for minority applicants?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — DEBIASED TRAINING DATA
+Task D: SCENARIO — DEBIASED TRAINING DATA
 • Training data: Balanced demographic representation | No fairness constraints
 • PREDICT FIRST: If we balance the training data, do you predict overall accuracy will increase, decrease, or stay the same? What happens to the disparate impact ratio?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — FAIRNESS-CONSTRAINED ALGORITHM
+Task E: SCENARIO — FAIRNESS-CONSTRAINED ALGORITHM
 • Training data: Original biased data | Fairness constraint: Equal false positive rates
 • PREDICT FIRST: If we force the algorithm to make errors at equal rates for all groups, do you predict this will increase or decrease overall accuracy? Is this trade-off worth it?
 • Resume the simulation and observe what happens
@@ -328,7 +328,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -548,10 +548,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace the causal pathway from historical discrimination through biased training data to disparate algorithmic outcomes, identifying how proxy variables transmit racial information even when race is not explicitly used.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -594,13 +594,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Demonstrate with the model: remove the race variable and show that the Disparate Impact Ratio barely changes. Then show which proxy variables carry the most racial information. Ask: If removing race doesn't help, what does?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

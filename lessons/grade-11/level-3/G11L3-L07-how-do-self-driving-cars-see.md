@@ -54,7 +54,7 @@ Every time you ride in a car, your brain performs an extraordinary feat of real-
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "LiDAR Resolution" — the density of laser points per square meter at a given distance — higher resolution creates more detailed 3d maps but generates exponentially more data that must be processed in real time
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Decision Algorithm Reliability" — the probability that the path-planning algorithm selects the safest action given the perceived environment — affected by the completeness of the environmental model
   ○ Click "Safety Margin" — the buffer between the vehicle's current trajectory and the nearest potential collision — measured in both distance and time
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,17 +159,17 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "LiDAR Resolution" and drag an arrow to "Sensor Fusion Confidence"
 • Click on "Environmental Degradation" and drag an arrow to "Camera Detection Accuracy"
 • Click on "Processing Latency" and drag an arrow to "Safety Margin"
 • Click on "Sensor Fusion Confidence" and drag an arrow to "Decision Algorithm Reliability"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -185,7 +185,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Sensor Fusion Confidence → Decision Algorithm Reliability = POSITIVE (+)
     Higher fusion confidence means the decision algorithm receives a more accurate environmental model, enabling more reliable path planning. When fusion confidence is low, the decision algorithm must make choices based on uncertain information, increasing the probability of errors.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 4 arrows total
 • 2 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -258,7 +258,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -270,28 +270,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When LiDAR Resolution is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CLEAR HIGHWAY DRIVING
+Task C: SCENARIO — CLEAR HIGHWAY DRIVING
 • Maximum LiDAR, minimal environmental degradation, increasing speed
 • PREDICT FIRST: What do you predict happens to the safety margin as vehicle speed doubles while processing latency remains constant?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — HEAVY RAIN URBAN INTERSECTION
+Task D: SCENARIO — HEAVY RAIN URBAN INTERSECTION
 • 40% LiDAR degradation, 30% camera degradation, complex urban scene
 • PREDICT FIRST: What do you predict happens to sensor fusion confidence when the two primary sensors both lose significant capability simultaneously?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — NOVEL OBJECT EMERGENCY
+Task E: SCENARIO — NOVEL OBJECT EMERGENCY
 • Unclassified obstacle appears in the vehicle's path at highway speed
 • PREDICT FIRST: What do you predict the decision algorithm does when it detects something in the road but cannot determine what it is?
 • Resume the simulation and observe what happens
@@ -348,7 +348,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -567,10 +567,10 @@ THREE-DIMENSIONAL LEARNING:
   Students analyze the autonomous vehicle as an integrated system where sensors, processors, and actuators must work together with precise timing, and where failure in any subsystem cascades through the entire driving system.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -613,13 +613,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Demonstration: Present the classification system with progressively more unusual objects — from common (car, pedestrian, bicycle) to uncommon (horse, wheelchair, scooter) to rare (overturned furniture, escaped animal, fallen tree) — and show how confidence decreases with novelty regardless of total training data volume.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

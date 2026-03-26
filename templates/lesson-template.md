@@ -3,10 +3,10 @@
 ## Instructions for Lesson Creators
 
 Use this template to create NGSS-aligned, phenomenon-based ModelIt lessons. Follow the LEVER framework flow:
-- **Activity 1**: LOCATE — Build components
-- **Activity 2**: ESTABLISH — Connect relationships
-- **Activity 3**: VISUALIZE/EVALUATE — Simulate and observe
-- **Activity 4**: REVISE/EXTEND — Play, research, expand
+- **Step 1**: LOCATE — Build components
+- **Step 2**: ESTABLISH — Connect relationships
+- **Step 3**: VISUALIZE/EVALUATE — Simulate and observe
+- **Step 4**: REVISE/EXTEND — Play, research, expand
 
 ### Key Requirements
 - [ ] High-interest phenomenon (relatable, surprising, engaging)
@@ -71,7 +71,7 @@ Use this template to create NGSS-aligned, phenomenon-based ModelIt lessons. Foll
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -80,7 +80,7 @@ Use this template to create NGSS-aligned, phenomenon-based ModelIt lessons. Foll
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "[Component 1]" — [why it's external]
@@ -89,11 +89,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "[Component 3]" — [why it's internal]
   ○ Click "[Component 4]" — [why it's internal]
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see [X] components on your canvas
 
-STEP 3: ARRANGE YOUR MODEL
+Task C: ARRANGE YOUR MODEL
 • Drag and drop components to organize them
 • Put EXTERNAL components (orange) on the LEFT
 • Put INTERNAL components (gray) on the RIGHT
@@ -101,7 +101,7 @@ STEP 3: ARRANGE YOUR MODEL
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-[Transition sentence setting up Activity 2]
+[Transition sentence setting up Step 2]
 ```
 
 ### Video Script
@@ -140,7 +140,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -149,16 +149,16 @@ Now it's your turn to ModelIt!"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "[Component A]" and drag an arrow to "[Component B]"
 • Click on "[Component B]" and drag an arrow to "[Component C]"
 • [Additional connections as needed]
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/- toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -170,7 +170,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
 
   ○ [Additional relationships]
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have [X] arrows total
 • [X] negative relationships, [X] positive relationships
 
@@ -211,7 +211,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -220,28 +220,28 @@ Now it's your turn to ModelIt!"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When [Component A] is HIGH (100%), what happens to [Component B]?
 • When [Component B] is [HIGH/LOW], what happens to [Component C]?
 
-STEP 3: CHANGE A VARIABLE
+Task C: CHANGE A VARIABLE
 • Look at the RIGHT PANEL where your components are listed
 • Find the LOCK icon (🔒) next to "[Component A]"
 • Click the lock to TURN [ON/OFF] [Component A] (set to [0/100]%)
 • This simulates [what real-world scenario?]
 
-STEP 4: WATCH THE CASCADE
+Task D: WATCH THE CASCADE
 • Resume the simulation
 • What happens to [Component B] when [condition]?
 • What happens to [Component C]?
 
-STEP 5: TRY ANOTHER SCENARIO
+Task E: TRY ANOTHER SCENARIO
 • Lock "[Component D]" to [ON/OFF] ([0/100]%)
 • This simulates [what?]
 • What changes now?
@@ -289,7 +289,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -496,10 +496,10 @@ NGSS ALIGNMENT:
 [Standard code and text]
 
 PACING GUIDE:
-• Activity 1 (Locate): [X] minutes
-• Activity 2 (Establish): [X] minutes
-• Activity 3 (Visualize): [X] minutes
-• Activity 4 (Extend): [X] minutes
+• Step 1 (Locate): [X] minutes
+• Step 2 (Establish): [X] minutes
+• Step 3 (Visualize): [X] minutes
+• Step 4 (Extend): [X] minutes
 • Total: [X] minutes (or split across [X] days)
 
 PRE-LESSON PREP:
@@ -514,10 +514,10 @@ COMMON MISCONCEPTIONS:
 • "[Misconception 3]" → [Correction]
 
 FACILITATION TIPS:
-• Activity 1: [Specific guidance]
-• Activity 2: [Specific guidance]
-• Activity 3: [Specific guidance]
-• Activity 4: [Specific guidance]
+• Step 1: [Specific guidance]
+• Step 2: [Specific guidance]
+• Step 3: [Specific guidance]
+• Step 4: [Specific guidance]
 
 DISCUSSION PROMPTS:
 • "[Question 1]"

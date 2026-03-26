@@ -54,7 +54,7 @@ The global food system is one of humanity\'s greatest achievements and greatest 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -69,7 +69,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Global Population" — the total number of humans requiring food — projected to reach 9
@@ -81,11 +81,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Food Waste and Loss" — the portion of food produced that is never consumed — approximately 1
   ○ Click "Biodiversity in Agricultural Landscapes" — the variety of species within and around farmland that provide ecosystem services — pollinators
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 7 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -133,7 +133,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -159,11 +159,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Global Population" and drag an arrow to "Crop Yield Per Hectare"
 • Click on "Crop Yield Per Hectare" and drag an arrow to "Soil Health Index"
 • Click on "Soil Health Index" and drag an arrow to "Crop Yield Per Hectare"
@@ -171,7 +171,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Biodiversity in Agricultural Landscapes" and drag an arrow to "Crop Yield Per Hectare"
 • Click on "Food Waste and Loss" and drag an arrow to "Global Population"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -193,7 +193,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Food Waste and Loss → Global Population = NEGATIVE (−)
     Higher food waste reduces the effective food supply relative to production, increasing the gap between what is grown and what is available for consumption, effectively raising the production requirement for each person fed.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 6 arrows total
 • 2 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -286,7 +286,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -298,28 +298,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Global Population is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — INDUSTRIAL EXPANSION
+Task C: SCENARIO — INDUSTRIAL EXPANSION
 • Agricultural Land: +20% | Chemical Inputs: Maximum | Soil Practices: Conventional Tillage
 • PREDICT FIRST: What do you predict happens to Crop Yield Per Hectare in the short term (5 years) versus the long term (30 years) under industrial intensification?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — POPULATION PRESSURE
+Task D: SCENARIO — POPULATION PRESSURE
 • Global Population: 10 Billion | Agricultural Land: Current | Farming: Current Practices
 • PREDICT FIRST: Can current food systems feed 10 billion people without changes? What component becomes the bottleneck first?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — REGENERATIVE TRANSITION
+Task E: SCENARIO — REGENERATIVE TRANSITION
 • Agricultural Land: Current | Waste Reduction: 50% | Soil Health: Improving | Biodiversity: Protected
 • PREDICT FIRST: Can we feed more people with the same land by improving efficiency and soil health? What does the model show about the timeline?
 • Resume the simulation and observe what happens
@@ -376,7 +376,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -595,10 +595,10 @@ THREE-DIMENSIONAL LEARNING:
   Students use systems thinking to understand how food production, resource consumption, waste, and environmental degradation form interconnected feedback loops that determine whether food systems are sustainable or self-undermining.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -641,13 +641,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show the model scenario where technology increases yields short-term but soil and water continue declining. Ask: What happens when you run a more powerful engine but keep draining the fuel tank faster? Technology without system change accelerates collapse, not sustainability.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

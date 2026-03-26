@@ -57,7 +57,7 @@ Mars is the most Earth-like planet in our solar system, yet it remains profoundl
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -72,7 +72,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Solar Energy Input" — the amount of solar radiation reaching the martian surface — approximately 43% of earth's solar constant due to greater distance from the sun
@@ -87,11 +87,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Waste Processing Rate" — the speed at which biological and industrial waste is converted into reusable resources through composting
   ○ Click "Colony Viability Index" — an integrated measure of the colony's ability to sustain human life indefinitely — a composite of all life support metrics that indicates whether the system is self-sustaining
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 10 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -142,7 +142,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -156,7 +156,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -168,11 +168,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Solar Energy Input" and drag an arrow to "Oxygen Production Rate"
 • Click on "Solar Energy Input" and drag an arrow to "Food Production Capacity"
 • Click on "Atmospheric CO2 Availability" and drag an arrow to "Oxygen Production Rate"
@@ -182,7 +182,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Oxygen Production Rate" and drag an arrow to "Colony Viability Index"
 • Click on "Waste Processing Rate" and drag an arrow to "Water Recycling Efficiency"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -210,7 +210,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Waste Processing Rate → Water Recycling Efficiency = POSITIVE (+)
     Waste processing recovers water from biological waste, graywater, and humidity. Faster waste processing feeds more water back into the recycling system, improving overall water availability for the colony.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 8 arrows total
 • 1 negative relationship(s), 7 positive relationship(s)
 • This is your system model!
@@ -323,7 +323,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -335,28 +335,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Solar Energy Input is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — OPTIMAL CONDITIONS
+Task C: SCENARIO — OPTIMAL CONDITIONS
 • Solar Energy: Maximum | Ice Reserves: Full | Radiation: Shielded | All systems nominal
 • PREDICT FIRST: When all external inputs are favorable and shielding is effective, what do you predict the Colony Viability Index will be and which system is the weakest link?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — DUST STORM CRISIS
+Task D: SCENARIO — DUST STORM CRISIS
 • Solar Energy: -90% for 90 days | Ice Reserves: Full | All systems on battery backup
 • PREDICT FIRST: During a three-month global dust storm, which life support system do you predict will fail first and what cascade effects will follow?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — AGING COLONY
+Task E: SCENARIO — AGING COLONY
 • Solar panels at 70% efficiency | Water recycling at 90% | Habitat integrity degraded 15%
 • PREDICT FIRST: After ten years of operation with no resupply from Earth, what do you predict happens to the Colony Viability Index?
 • Resume the simulation and observe what happens
@@ -413,7 +413,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -634,10 +634,10 @@ THREE-DIMENSIONAL LEARNING:
   Students identify how the behavior of the Mars colony emerges from the interactions among ten components rather than from any individual component, revealing that system-level properties like viability cannot be predicted from parts alone.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -680,13 +680,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Have students list all the things they rely on that Earth provides for free — breathable air, drinkable water, food, radiation shielding, comfortable temperature, atmospheric pressure — and calculate what it would cost to engineer each one artificially.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

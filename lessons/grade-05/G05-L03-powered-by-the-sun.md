@@ -50,7 +50,7 @@ Students trace the energy chain from sunlight to photosynthesis to the food they
 
 ---
 
-## Activity 1: LOCATE — Build Your Energy Chain
+## Step 1: LOCATE — Build Your Energy Chain
 
 ### Text Editor
 
@@ -68,7 +68,7 @@ Let's model how that chain actually works.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Sunlight Intensity" — we can't turn the sun up or down
@@ -77,11 +77,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Photosynthesis Rate" — plants do this faster in better conditions
   ○ Click "Energy Available to Animals" — this is what you ultimately eat
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 • You should now see 4 components on your screen
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • EXTERNAL = inputs from the environment (sun, temperature)
 • INTERNAL = things that change BECAUSE of those inputs
 • Sort them, then your teacher will continue in the video
@@ -138,7 +138,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Wire the Energy Chain
+## Step 2: ESTABLISH — Wire the Energy Chain
 
 ### Text Editor
 
@@ -150,15 +150,15 @@ You run. Simple — except it's not. Let's map the real connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Sunlight Intensity → Photosynthesis Rate
 • Temperature → Photosynthesis Rate
 • Photosynthesis Rate → Energy Available to Animals
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Ask: "When this goes UP, does the other go UP or DOWN?"
 
   ○ Sunlight Intensity → Photosynthesis Rate = POSITIVE (+)
@@ -173,7 +173,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     More photosynthesis = MORE sugar/energy stored in plants
     More plant energy = MORE energy available when animals eat them
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows, all positive
 • The energy flows ONE direction: sun → plants → animals
 
@@ -227,7 +227,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the Energy Chain
+## Step 3: VISUALIZE & EVALUATE — Run the Energy Chain
 
 ### Text Editor
 
@@ -239,28 +239,28 @@ behaves like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT
 • Watch all four component lines on the graph
 
-STEP 2: OBSERVE NORMAL CONDITIONS
+Task B: OBSERVE NORMAL CONDITIONS
 • Let it run for about 30 time steps
 • When Sunlight is HIGH and Temperature is warm, where is
   Photosynthesis Rate? Where is Energy Available to Animals?
 
-STEP 3: SIMULATE WINTER (SHORT DAYS, COLD TEMPS)
+Task C: SIMULATE WINTER (SHORT DAYS, COLD TEMPS)
 • Lock Sunlight Intensity to LOW (25%)
 • Lock Temperature to LOW (25%)
 • Watch what happens to Photosynthesis Rate
 • Watch what happens to Energy Available to Animals
 • This is why animals hibernate and migrate!
 
-STEP 4: SIMULATE A TOTAL ECLIPSE / NO SUN
+Task D: SIMULATE A TOTAL ECLIPSE / NO SUN
 • Lock Sunlight Intensity to 0%
 • What happens to the entire energy chain?
 • How long before Energy Available to Animals collapses?
 
-STEP 5: BRING THE SUN BACK
+Task E: BRING THE SUN BACK
 • Unlock both components
 • How quickly does the ecosystem recover?
 
@@ -326,7 +326,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -562,10 +562,10 @@ NGSS ALIGNMENT:
 once energy from the sun.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -582,13 +582,13 @@ COMMON MISCONCEPTIONS:
   thermal vents), all life on Earth depends on solar energy
 
 FACILITATION TIPS:
-• Activity 1: Open with "What did you eat for lunch?" and then ask them
+• Step 1: Open with "What did you eat for lunch?" and then ask them
   to trace it back. This hooks students immediately.
-• Activity 2: Emphasize that the three positive relationships mean the
+• Step 2: Emphasize that the three positive relationships mean the
   whole chain rises and falls TOGETHER — it's connected.
-• Activity 3: The winter scenario is the power moment. Let students
+• Step 3: The winter scenario is the power moment. Let students
   watch the collapse in silence, then ask "What animals does this explain?"
-• Activity 4: The 10% rule is a great extension that can shift students'
+• Step 4: The 10% rule is a great extension that can shift students'
   thinking about food choices and sustainability.
 
 DISCUSSION PROMPTS:

@@ -50,7 +50,7 @@ Students model the apparent "disappearing act" when ice melts — discovering th
 
 ---
 
-## Activity 1: LOCATE — Build Your Matter-Changing System
+## Step 1: LOCATE — Build Your Matter-Changing System
 
 ### Text Editor
 
@@ -71,7 +71,7 @@ Where did the ice go? It didn't go anywhere. It just... changed.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Air Temperature" — the environment decides how warm it is
@@ -80,10 +80,10 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Ice Amount" — changes based on temperature
   ○ Click "Liquid Water Amount" — changes based on temperature
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • What do students control? What changes on its own?
 • Your teacher will explain the key relationship in the video
 
@@ -147,7 +147,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the State-Change System
+## Step 2: ESTABLISH — Connect the State-Change System
 
 ### Text Editor
 
@@ -159,15 +159,15 @@ But the total never changes. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Air Temperature → Ice Amount
 • Air Temperature → Liquid Water Amount
 • Ice Amount → Liquid Water Amount
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
   ○ Air Temperature → Ice Amount = NEGATIVE (−)
     More heat = LESS ice (it melts away)
 
@@ -179,7 +179,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
     (They're the SAME matter in two different forms — when one goes up,
     the other MUST go down)
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • 3 arrows: 2 negative, 1 positive
 • Look carefully at Ice → Liquid: this is the CONSERVATION relationship!
 
@@ -238,7 +238,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run the State-Change Model
+## Step 3: VISUALIZE & EVALUATE — Run the State-Change Model
 
 ### Text Editor
 
@@ -250,28 +250,28 @@ and verify that matter is actually conserved — that nothing disappears.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click "Play" in the TOP LEFT
 • Watch all four component lines
 
-STEP 2: OBSERVE AT NORMAL TEMPERATURE
+Task B: OBSERVE AT NORMAL TEMPERATURE
 • Let it run for about 30 time steps
 • Notice the relationship between Ice Amount and Liquid Water Amount
 • As one goes up, does the other go down?
 
-STEP 3: SIMULATE A FREEZE
+Task C: SIMULATE A FREEZE
 • Lock Air Temperature to LOW (10%) — freezing conditions
 • Watch Ice Amount: does it go UP?
 • Watch Liquid Water Amount: does it go DOWN?
 • Does Starting Mass change? (It should STAY flat!)
 
-STEP 4: SIMULATE SUMMER HEAT
+Task D: SIMULATE SUMMER HEAT
 • Unlock and set Air Temperature to HIGH (90%) — hot conditions
 • Watch Ice Amount: does it go DOWN?
 • Watch Liquid Water Amount: does it go UP?
 • Is Starting Mass still the same flat line?
 
-STEP 5: WATCH THE MIRROR
+Task E: WATCH THE MIRROR
 • Notice that Ice Amount and Liquid Water Amount are like MIRRORS
 • When one goes up, the other goes down by the SAME amount
 • Starting Mass stays constant — THAT'S conservation of matter!
@@ -331,7 +331,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -567,10 +567,10 @@ of the type of change that occurs when heating, cooling, or mixing
 substances, the total weight of matter is conserved.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize): 10-12 minutes
-• Activity 4 (Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize): 10-12 minutes
+• Step 4 (Extend): 10-15 minutes
 • Total: 40-45 minutes (or split across 2 days)
 
 PRE-LESSON PREP:
@@ -586,14 +586,14 @@ COMMON MISCONCEPTIONS:
   (CO2, H2O vapor) — mass is still conserved
 
 FACILITATION TIPS:
-• Activity 1: If possible, actually put an ice cube on a scale at the start
+• Step 1: If possible, actually put an ice cube on a scale at the start
   and let students predict what the mass will be after melting. The live
   demo is powerful.
-• Activity 2: Emphasize that the negative Ice → Liquid relationship exists
+• Step 2: Emphasize that the negative Ice → Liquid relationship exists
   because they're sharing the same mass, not because they're opponents.
-• Activity 3: Point to the flat Starting Mass line as the "proof" —
+• Step 3: Point to the flat Starting Mass line as the "proof" —
   ask students what it would mean if that line moved.
-• Activity 4: The burning log example is a common confusion point —
+• Step 4: The burning log example is a common confusion point —
   address it directly. Where does the "missing" mass go?
 
 DISCUSSION PROMPTS:

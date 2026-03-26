@@ -48,7 +48,7 @@ Every living thing on Earth has traits — characteristics that make it unique. 
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -63,7 +63,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Parent Traits" — the characteristics that the mother and father have — these are passed down to offspring
@@ -71,11 +71,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Genetic Variation" — the natural mixing and shuffling of parent traits that creates unique combinations in each offspring
   ○ Click "Offspring Appearance" — what the baby animal or plant looks like — a unique blend of traits from both parents
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 3 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -119,7 +119,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -133,7 +133,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -145,15 +145,15 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Parent Traits" and drag an arrow to "Genetic Variation"
 • Click on "Genetic Variation" and drag an arrow to "Offspring Appearance"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -163,7 +163,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Genetic Variation → Offspring Appearance = POSITIVE (+)
     More genetic variation means more possible outcomes for what offspring look like. High variation means each sibling is likely to look noticeably different, while low variation means siblings will look more similar to each other.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 2 arrows total
 • 0 negative relationship(s), 2 positive relationship(s)
 • This is your system model!
@@ -216,7 +216,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -228,28 +228,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Parent Traits is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SIMILAR PARENTS
+Task C: SCENARIO — SIMILAR PARENTS
 • Parent Traits set to very similar
 • PREDICT FIRST: What do you predict the offspring will look like when both parents look almost the same?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — DIFFERENT PARENTS
+Task D: SCENARIO — DIFFERENT PARENTS
 • Parent Traits set to very different
 • PREDICT FIRST: What do you predict will happen to Genetic Variation when the parents look very different from each other?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — MIXED PARENTS
+Task E: SCENARIO — MIXED PARENTS
 • Parent Traits set to somewhat different
 • PREDICT FIRST: Will the offspring look more like one parent or a mix of both?
 • Resume the simulation and observe what happens
@@ -306,7 +306,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -512,10 +512,10 @@ THREE-DIMENSIONAL LEARNING:
   Students identify patterns in how traits are passed from parents to offspring and how variation creates predictable differences within groups.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 35-45 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -555,13 +555,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Shuffle a deck of cards and deal two hands of five cards. Ask: Are the hands the same? No! Same deck, different combinations. That is how siblings work — same parents, different trait mixes.
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

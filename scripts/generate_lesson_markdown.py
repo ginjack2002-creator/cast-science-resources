@@ -180,10 +180,10 @@ def generate_markdown(L):
     add('---', '')
 
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    # ACTIVITY 1: LOCATE
+    # STEP 1: LOCATE
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-    add('## Activity 1: LOCATE \u2014 Build Your System', '')
+    add('## Step 1: LOCATE \u2014 Build Your System', '')
     add('### Text Editor', '')
     add('```')
     add(L["title"].upper())
@@ -196,7 +196,7 @@ def generate_markdown(L):
     add('')
     add('\u2501' * 60)
     add('')
-    add('STEP 1: CHOOSE YOUR COMPONENTS')
+    add('Task A: CHOOSE YOUR COMPONENTS')
     add('\u2022 Look at the component panel on the RIGHT side of your screen')
     add('\u2022 Find the EXTERNAL components (things we can\'t control):')
     for name, desc, is_ext in L["components"]:
@@ -209,11 +209,11 @@ def generate_markdown(L):
             short_desc = desc.split(',')[0].split('.')[0] if ',' in desc or '.' in desc else desc
             add(f'  \u25cb Click "{name}" \u2014 {short_desc.lower().rstrip(".")}')
     add('')
-    add('STEP 2: ADD TO YOUR MODEL')
+    add('Task B: ADD TO YOUR MODEL')
     add('\u2022 Click the PLUS (+) button to add each component to your picture')
     add(f'\u2022 You should now see {len(L["components"])} components on your canvas')
     add('')
-    add('STEP 3: SORT YOUR COMPONENTS')
+    add('Task C: SORT YOUR COMPONENTS')
     add('\u2022 Sort your components into EXTERNAL and INTERNAL')
     add('\u2022 EXTERNAL = things we can\'t control (inputs from outside the system)')
     add('\u2022 INTERNAL = things that change because of other things in the system')
@@ -226,7 +226,7 @@ def generate_markdown(L):
     add('```')
     add('')
 
-    # Activity 1 Video Script
+    # Step 1 Video Script
     add('### Video Script', '')
     add('```')
     add(f'"{L["big_question"]}')
@@ -259,7 +259,7 @@ def generate_markdown(L):
     add("to your model canvas.")
     add('')
     add("You've got your pieces. But right now they're just sitting there,")
-    add("not connected. In the next activity, we'll draw the invisible")
+    add("not connected. In the next step, we'll draw the invisible")
     add("lines that show how everything affects everything else.")
     add('')
     add('Now it\'s your turn to ModelIt!"')
@@ -275,10 +275,10 @@ def generate_markdown(L):
     add('---', '')
 
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    # ACTIVITY 2: ESTABLISH
+    # STEP 2: ESTABLISH
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-    add('## Activity 2: ESTABLISH \u2014 Connect the Relationships', '')
+    add('## Step 2: ESTABLISH \u2014 Connect the Relationships', '')
     add('### Text Editor', '')
     add('```')
     add('TIME TO DRAW THE INVISIBLE LINES')
@@ -288,17 +288,17 @@ def generate_markdown(L):
     add('')
     add('\u2501' * 60)
     add('')
-    add('STEP 1: OPEN CONNECTION MODE')
+    add('Task A: OPEN CONNECTION MODE')
     add('\u2022 Click the "Connect" icon in the TOP LEFT corner of your screen')
     add('\u2022 Your cursor is now ready to draw relationship arrows')
     add('')
-    add('STEP 2: DRAW YOUR RELATIONSHIPS')
+    add('Task B: DRAW YOUR RELATIONSHIPS')
     for conn, sign, explanation in L["relationships"]:
         parts = conn.split(" to ")
         if len(parts) == 2:
             add(f'\u2022 Click on "{parts[0]}" and drag an arrow to "{parts[1]}"')
     add('')
-    add('STEP 3: SET POSITIVE OR NEGATIVE')
+    add('Task C: SET POSITIVE OR NEGATIVE')
     add('\u2022 Look at the +/\u2212 toggle in the TOP LEFT corner')
     add('\u2022 For each connection, ask: "When this goes UP, does the other go UP or DOWN?"')
     add('')
@@ -313,7 +313,7 @@ def generate_markdown(L):
             add(f'    {explanation}')
             add('')
 
-    add('STEP 4: CHECK YOUR MODEL')
+    add('Task D: CHECK YOUR MODEL')
     add(f'\u2022 You should have {len(L["relationships"])} arrows total')
     add(f'\u2022 {neg_count} negative relationship(s), {pos_count} positive relationship(s)')
     add('\u2022 This is your system model!')
@@ -324,7 +324,7 @@ def generate_markdown(L):
     add('```')
     add('')
 
-    # Activity 2 Video Script
+    # Step 2 Video Script
     add('### Video Script', '')
     add('```')
     add('"Your pieces are on the board, but they\'re not talking to each')
@@ -376,10 +376,10 @@ def generate_markdown(L):
     add('---', '')
 
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    # ACTIVITY 3: VISUALIZE & EVALUATE
+    # STEP 3: VISUALIZE & EVALUATE
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-    add('## Activity 3: VISUALIZE & EVALUATE \u2014 Run Your Model', '')
+    add('## Step 3: VISUALIZE & EVALUATE \u2014 Run Your Model', '')
     add('### Text Editor', '')
     add('```')
     add('TIME TO SEE YOUR SYSTEM IN ACTION')
@@ -389,11 +389,11 @@ def generate_markdown(L):
     add('')
     add('\u2501' * 60)
     add('')
-    add('STEP 1: RUN THE SIMULATION')
+    add('Task A: RUN THE SIMULATION')
     add('\u2022 Click the "Play" button in the TOP LEFT corner')
     add("\u2022 Watch the graph panel \u2014 you'll see percentage lines for each component")
     add('')
-    add('STEP 2: OBSERVE THE BASELINE')
+    add('Task B: OBSERVE THE BASELINE')
     add('\u2022 Let it run for about 30 time steps')
     add('\u2022 Notice how the lines relate to each other')
 
@@ -403,9 +403,10 @@ def generate_markdown(L):
     add('')
 
     # Scenario steps
+    task_letters = "CDEFG"
     for i, (name, settings, prediction) in enumerate(L["sim_scenarios"]):
-        step_num = i + 3
-        add(f'STEP {step_num}: SCENARIO \u2014 {name.upper()}')
+        task_letter = task_letters[i] if i < len(task_letters) else chr(ord('C') + i)
+        add(f'Task {task_letter}: SCENARIO \u2014 {name.upper()}')
         add(f'\u2022 {settings}')
         add(f'\u2022 PREDICT FIRST: {prediction}')
         add('\u2022 Resume the simulation and observe what happens')
@@ -422,7 +423,7 @@ def generate_markdown(L):
     add('```')
     add('')
 
-    # Activity 3 Video Script
+    # Step 3 Video Script
     add('### Video Script', '')
     add('```')
     add('"You\'ve built the machine. You\'ve wired the connections. Now let\'s')
@@ -472,10 +473,10 @@ def generate_markdown(L):
     add('---', '')
 
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    # ACTIVITY 4: REVISE & EXTEND
+    # STEP 4: REVISE & EXTEND
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-    add('## Activity 4: REVISE & EXTEND \u2014 Play, Research, Expand', '')
+    add('## Step 4: REVISE & EXTEND \u2014 Play, Research, Expand', '')
     add('### Text Editor', '')
     add('```')
     add("YOUR MODEL WORKS \u2014 BUT IT'S NOT COMPLETE")
@@ -534,7 +535,7 @@ def generate_markdown(L):
     add('```')
     add('')
 
-    # Activity 4 Video Script
+    # Step 4 Video Script
     add('### Video Script', '')
     add('```')
     add('"Your model works. It showed us how the key components interact')
@@ -649,10 +650,10 @@ def generate_markdown(L):
     add('')
 
     add('PACING GUIDE:')
-    add('\u2022 Activity 1 (Locate): 8-10 minutes')
-    add('\u2022 Activity 2 (Establish): 8-10 minutes')
-    add('\u2022 Activity 3 (Visualize & Evaluate): 10-12 minutes')
-    add('\u2022 Activity 4 (Revise & Extend): 10-15 minutes')
+    add('\u2022 Step 1 (Locate): 8-10 minutes')
+    add('\u2022 Step 2 (Establish): 8-10 minutes')
+    add('\u2022 Step 3 (Visualize & Evaluate): 10-12 minutes')
+    add('\u2022 Step 4 (Revise & Extend): 10-15 minutes')
     add(f'\u2022 Total: {session_time} (or split across 2 class periods)')
     add('')
 
@@ -685,13 +686,13 @@ def generate_markdown(L):
         add('')
 
     add('FACILITATION TIPS:')
-    add("\u2022 Activity 1: Let students explore the interface. Don't over-explain.")
+    add("\u2022 Step 1: Let students explore the interface. Don't over-explain.")
     add('  Let them discover. Circulate and support, don\'t lecture.')
-    add('\u2022 Activity 2: Ask "When this goes up, what happens to that?" to')
+    add('\u2022 Step 2: Ask "When this goes up, what happens to that?" to')
     add('  guide positive/negative relationship decisions. Let students debate.')
-    add('\u2022 Activity 3: Give time for students to "break" the model \u2014 turn')
+    add('\u2022 Step 3: Give time for students to "break" the model \u2014 turn')
     add("  things on/off and observe. This is where real insight happens.")
-    add("\u2022 Activity 4: Don't give answers. Ask questions. Let curiosity drive")
+    add("\u2022 Step 4: Don't give answers. Ask questions. Let curiosity drive")
     add("  the research. Celebrate when students' additions don't work as")
     add("  expected \u2014 that's authentic science.")
     add('')

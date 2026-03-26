@@ -56,7 +56,7 @@ This lesson introduces students to predictive epidemiological modeling — the c
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -71,7 +71,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Wildlife-Human Contact Rate" — the frequency and intensity of interactions between humans and wild animal species that harbor novel viruses — increased by deforestation
@@ -85,11 +85,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Healthcare Capacity" — the ability of the local and national healthcare system to identify
   ○ Click "Intervention Speed" — the time between outbreak detection and implementation of effective containment measures — quarantine
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 9 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -139,7 +139,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -153,7 +153,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -165,18 +165,18 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Wildlife-Human Contact Rate" and drag an arrow to "Zoonotic Spillover Probability"
 • Click on "Viral Mutation Rate" and drag an arrow to "Zoonotic Spillover Probability"
 • Click on "Population Density" and drag an arrow to "Intervention Speed"
 • Click on "Travel Connectivity" and drag an arrow to "Geographic Spread Rate"
 • Click on "Surveillance Detection Speed" and drag an arrow to "Intervention Speed"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -195,7 +195,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Surveillance Detection Speed → Intervention Speed = POSITIVE (+)
     Faster surveillance detection enables faster intervention — you cannot contain what you haven't detected. Every day of detection delay exponentially increases the infected population that must be contained.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 5 arrows total
 • 1 negative relationship(s), 4 positive relationship(s)
 • This is your system model!
@@ -278,7 +278,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -290,28 +290,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Wildlife-Human Contact Rate is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — SLOW BURN
+Task C: SCENARIO — SLOW BURN
 • Moderate contact, average mutation, moderate surveillance
 • PREDICT FIRST: How many spillover events do you predict will occur before one leads to sustained human-to-human transmission?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — COVID-19 ANALOG
+Task D: SCENARIO — COVID-19 ANALOG
 • High contact, high density, high travel, slow detection
 • PREDICT FIRST: What do you predict the infection curve looks like when surveillance is slow and travel connectivity is high?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — EARLY WARNING OPTIMIZED
+Task E: SCENARIO — EARLY WARNING OPTIMIZED
 • Fast surveillance, moderate risk factors
 • PREDICT FIRST: Do you predict that fast detection alone can prevent a pandemic, even if all other risk factors are elevated?
 • Resume the simulation and observe what happens
@@ -368,7 +368,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -589,10 +589,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace the causal chain from local wildlife contact to global pandemic, analyzing how small changes in early-stage parameters produce vastly different outcomes at global scale.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -635,13 +635,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Compare costs: Global pandemic surveillance costs ~$4 billion/year. COVID-19 cost the global economy ~$16 TRILLION. Which investment makes more sense?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 

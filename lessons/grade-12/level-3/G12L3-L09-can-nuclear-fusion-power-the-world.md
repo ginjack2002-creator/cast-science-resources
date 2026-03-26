@@ -57,7 +57,7 @@ Nuclear fusion is the process that powers every star in the universe, converting
 
 ---
 
-## Activity 1: LOCATE — Build Your System
+## Step 1: LOCATE — Build Your System
 
 ### Text Editor
 
@@ -72,7 +72,7 @@ And you're about to build exactly that.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: CHOOSE YOUR COMPONENTS
+Task A: CHOOSE YOUR COMPONENTS
 • Look at the component panel on the RIGHT side of your screen
 • Find the EXTERNAL components (things we can't control):
   ○ Click "Deuterium-Tritium Fuel Supply" — the availability of fusion fuel — deuterium is abundant in seawater (1 in 6
@@ -87,11 +87,11 @@ STEP 1: CHOOSE YOUR COMPONENTS
   ○ Click "Wall Material Degradation" — the rate at which reactor structural materials are damaged by neutron bombardment — high-energy neutrons create atomic displacements
   ○ Click "Net Energy Output (Q Factor)" — the ratio of fusion energy produced to energy invested in heating — q = 1 is breakeven
 
-STEP 2: ADD TO YOUR MODEL
+Task B: ADD TO YOUR MODEL
 • Click the PLUS (+) button to add each component to your picture
 • You should now see 10 components on your canvas
 
-STEP 3: SORT YOUR COMPONENTS
+Task C: SORT YOUR COMPONENTS
 • Sort your components into EXTERNAL and INTERNAL
 • EXTERNAL = things we can't control (inputs from outside the system)
 • INTERNAL = things that change because of other things in the system
@@ -142,7 +142,7 @@ Sort your components, then hit the PLUS button to add each one
 to your model canvas.
 
 You've got your pieces. But right now they're just sitting there,
-not connected. In the next activity, we'll draw the invisible
+not connected. In the next step, we'll draw the invisible
 lines that show how everything affects everything else.
 
 Now it's your turn to ModelIt!"
@@ -156,7 +156,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 2: ESTABLISH — Connect the Relationships
+## Step 2: ESTABLISH — Connect the Relationships
 
 ### Text Editor
 
@@ -168,11 +168,11 @@ When one changes, others change too. Let's map those connections.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: OPEN CONNECTION MODE
+Task A: OPEN CONNECTION MODE
 • Click the "Connect" icon in the TOP LEFT corner of your screen
 • Your cursor is now ready to draw relationship arrows
 
-STEP 2: DRAW YOUR RELATIONSHIPS
+Task B: DRAW YOUR RELATIONSHIPS
 • Click on "Magnetic Field Strength" and drag an arrow to "Confinement Time"
 • Click on "Plasma Temperature" and drag an arrow to "Fusion Reaction Rate"
 • Click on "Plasma Density" and drag an arrow to "Fusion Reaction Rate"
@@ -182,7 +182,7 @@ STEP 2: DRAW YOUR RELATIONSHIPS
 • Click on "Energy Input" and drag an arrow to "Plasma Temperature"
 • Click on "Wall Material Degradation" and drag an arrow to "Net Energy Output"
 
-STEP 3: SET POSITIVE OR NEGATIVE
+Task C: SET POSITIVE OR NEGATIVE
 • Look at the +/− toggle in the TOP LEFT corner
 • For each connection, ask: "When this goes UP, does the other go UP or DOWN?"
 
@@ -210,7 +210,7 @@ STEP 3: SET POSITIVE OR NEGATIVE
   ○ Wall Material Degradation → Net Energy Output = NEGATIVE (−)
     As wall materials degrade, they release impurities into the plasma that radiate energy and cool it, reducing fusion performance. Degraded walls also reduce tritium breeding efficiency and eventually require reactor shutdown for replacement, reducing overall energy output.
 
-STEP 4: CHECK YOUR MODEL
+Task D: CHECK YOUR MODEL
 • You should have 8 arrows total
 • 1 negative relationship(s), 7 positive relationship(s)
 • This is your system model!
@@ -323,7 +323,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 3: VISUALIZE & EVALUATE — Run Your Model
+## Step 3: VISUALIZE & EVALUATE — Run Your Model
 
 ### Text Editor
 
@@ -335,28 +335,28 @@ like the real world.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-STEP 1: RUN THE SIMULATION
+Task A: RUN THE SIMULATION
 • Click the "Play" button in the TOP LEFT corner
 • Watch the graph panel — you'll see percentage lines for each component
 
-STEP 2: OBSERVE THE BASELINE
+Task B: OBSERVE THE BASELINE
 • Let it run for about 30 time steps
 • Notice how the lines relate to each other
 • When Deuterium-Tritium Fuel Supply is HIGH, what happens to the internal components?
 
-STEP 3: SCENARIO — CURRENT PERFORMANCE
+Task C: SCENARIO — CURRENT PERFORMANCE
 • Plasma Temp: 150M degrees C | Density: Moderate | Confinement: 5 seconds | Q = 0.33
 • PREDICT FIRST: What does the current best-performing fusion experiment reveal about which component of the triple product is the primary limiting factor?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 4: SCENARIO — ITER TARGET
+Task D: SCENARIO — ITER TARGET
 • Plasma Temp: 150M degrees C | Density: High | Confinement: 500 sec | Energy Input: 50 MW | Target Q = 10
 • PREDICT FIRST: What do you predict are the tightest engineering margins in ITER's design, and which component is most likely to underperform?
 • Resume the simulation and observe what happens
 • Was your prediction correct?
 
-STEP 5: SCENARIO — COMMERCIAL PLANT
+Task E: SCENARIO — COMMERCIAL PLANT
 • Sustained Q > 30 | Continuous operation | Tritium self-sufficiency | Electricity on grid
 • PREDICT FIRST: What engineering challenges beyond achieving Q > 10 must be solved to go from ITER to a commercial fusion power plant, and which does your model suggest is hardest?
 • Resume the simulation and observe what happens
@@ -413,7 +413,7 @@ Now it's your turn to ModelIt!"
 
 ---
 
-## Activity 4: REVISE & EXTEND — Play, Research, Expand
+## Step 4: REVISE & EXTEND — Play, Research, Expand
 
 ### Text Editor
 
@@ -633,10 +633,10 @@ THREE-DIMENSIONAL LEARNING:
   Students trace the flow of energy from magnetic and heating input through plasma fusion reactions to neutron kinetic energy, thermal conversion, and electrical output, quantifying the energy balance at each stage.
 
 PACING GUIDE:
-• Activity 1 (Locate): 8-10 minutes
-• Activity 2 (Establish): 8-10 minutes
-• Activity 3 (Visualize & Evaluate): 10-12 minutes
-• Activity 4 (Revise & Extend): 10-15 minutes
+• Step 1 (Locate): 8-10 minutes
+• Step 2 (Establish): 8-10 minutes
+• Step 3 (Visualize & Evaluate): 10-12 minutes
+• Step 4 (Revise & Extend): 10-15 minutes
 • Total: 50-70 minutes (or split across 2 class periods)
 
 PRE-LESSON PREP:
@@ -679,13 +679,13 @@ COMMON MISCONCEPTIONS:
   Strategy: Show the full energy accounting: 300 MJ electrical input -> 2.05 MJ laser energy -> 3.15 MJ fusion energy. The fusion gain was 1.5x relative to the laser, but 0.01x relative to the electrical input. Ask: what efficiency improvements are needed for this approach to produce net electricity?
 
 FACILITATION TIPS:
-• Activity 1: Let students explore the interface. Don't over-explain.
+• Step 1: Let students explore the interface. Don't over-explain.
   Let them discover. Circulate and support, don't lecture.
-• Activity 2: Ask "When this goes up, what happens to that?" to
+• Step 2: Ask "When this goes up, what happens to that?" to
   guide positive/negative relationship decisions. Let students debate.
-• Activity 3: Give time for students to "break" the model — turn
+• Step 3: Give time for students to "break" the model — turn
   things on/off and observe. This is where real insight happens.
-• Activity 4: Don't give answers. Ask questions. Let curiosity drive
+• Step 4: Don't give answers. Ask questions. Let curiosity drive
   the research. Celebrate when students' additions don't work as
   expected — that's authentic science.
 
