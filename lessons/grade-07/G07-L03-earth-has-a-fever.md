@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS3-5.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the greenhouse effect?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS3-5 + CCC4 (Systems and System Models)
 
-A. When greenhouses release chemicals that warm the atmosphere
-B. When certain gases in the atmosphere trap heat from the Sun, warming Earth's surface
-C. When the Sun's rays are reflected by green plants back into space
-D. When Earth's temperature drops because clouds block sunlight
-
-Correct Answer: B
-
-Feedback: Correct! The greenhouse effect occurs when gases like CO2 and methane in the atmosphere trap heat energy, keeping Earth's surface warmer than it would otherwise be. Not quite. The greenhouse effect is the process by which certain atmospheric gases (like CO2 and methane) trap heat radiated from Earth's surface, warming the planet.
-
----
-
-### Question 2
-
-Which human activity contributes MOST to increasing carbon dioxide in the atmosphere?
-
-A. Planting new forests and gardens
-B. Burning fossil fuels like coal, oil, and natural gas
-C. Recycling plastic bottles and aluminum cans
-D. Building taller skyscrapers in cities
-
-Correct Answer: B
-
-Feedback: Correct! Burning fossil fuels for energy, transportation, and industry is the largest source of human-caused CO2 emissions. Not quite. Burning fossil fuels (coal, oil, natural gas) for energy and transportation is the primary human activity that increases atmospheric CO2.
-
----
-
-### Question 3
-
-What is the difference between weather and climate?
-
-A. Weather and climate mean the same thing
-B. Weather is long-term patterns; climate is what happens today
-C. Weather is short-term, local conditions; climate is long-term, global patterns
-D. Climate only applies to tropical regions; weather applies everywhere
-
-Correct Answer: C
-
-Feedback: Correct! Weather describes short-term, local atmospheric conditions (today's temperature), while climate describes long-term patterns averaged over decades or more. Not quite. Weather is the short-term state of the atmosphere in a specific place (daily temperature, rain). Climate is the long-term average pattern over decades across a region or globally.
-
----
-
-### Question 4
-
-Why do you think ice at the North and South Poles has been melting in recent decades?
-
-A. The Sun has been getting significantly hotter each year
-B. Ocean currents have shifted and now carry warm water to the poles
-C. Increased greenhouse gases are trapping more heat, raising global temperatures
-D. Volcanic eruptions under the ice are melting it from below
-
-Correct Answer: C
-
-Feedback: Correct! Rising concentrations of greenhouse gases in the atmosphere are trapping more heat, causing global temperatures to rise and polar ice to melt. Not quite. The primary driver of polar ice melt in recent decades is the increase in greenhouse gas concentrations (especially CO2) that trap more heat and raise global temperatures.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: CO2 Concentration, Solar Energy Input, Average Global Temperature, Ice Sheet Coverage. Some components are external (CO2 Concentration, Solar Energy Input) and some are internal (Average Global Temperature, Ice Sheet Coverage). The student needs to understand what each component represents and how they are organized.
 
 In your climate model, CO2 concentration is increased from 280 ppm (pre-industrial) to 420 ppm (current levels). Which cascade of effects does the model predict?
 
@@ -967,11 +907,15 @@ D. Ice sheets grow thicker because warmer air holds more moisture for snowfall
 
 Correct Answer: B
 
-Feedback: Correct! More CO2 traps more heat, raising temperatures. Higher temperatures melt ice sheets, exposing dark ocean that absorbs even more heat, creating a positive feedback loop that accelerates warming. Not quite. Increasing CO2 traps more heat (greenhouse effect), which raises temperatures, melts ice, and exposes dark surfaces that absorb more heat. This positive feedback loop accelerates climate change.
+Feedback: Correct! More CO2 traps more heat, raising temperatures. Higher temperatures melt ice sheets, exposing dark ocean that absorbs even more heat, creating a positive feedback loop that accelerates warming. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS3-5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when CO2 Concentration increases, Average Global Temperature increases; when Solar Energy Input increases, Average Global Temperature increases. The student is trying to understand why these relationships are positive or negative.
 
 A classmate says: 'It was really cold last week, so climate change is not real.' Which response uses the best scientific reasoning?
 
@@ -982,11 +926,15 @@ D. Cold weather means climate change has reversed itself.
 
 Correct Answer: B
 
-Feedback: Correct! A single cold week is weather, not climate. Climate change refers to long-term shifts in global average temperatures measured over decades. Short-term local variation does not contradict the long-term trend. Not quite. Weather (daily or weekly conditions) is different from climate (long-term patterns over decades). A cold week in one location does not disprove the decades-long trend of rising global average temperatures.
+Feedback: Correct! A single cold week is weather, not climate. Climate change refers to long-term shifts in global average temperatures measured over decades. Short-term local variation does not contradict the long-term trend. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS3-5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when CO2 Concentration increases, Average Global Temperature increases and when Solar Energy Input increases, Average Global Temperature increases and when Average Global Temperature increases, Ice Sheet Coverage decreases. The student changes one variable to see how the whole system responds.
 
 Which best explains why the ice-albedo effect is called a 'positive feedback loop'?
 
@@ -997,11 +945,15 @@ D. It only occurs in positively charged regions of the atmosphere
 
 Correct Answer: B
 
-Feedback: Correct! In a positive feedback loop, the output amplifies the input. Warming melts ice, exposing dark ocean, which absorbs more heat, causing more warming and more melting. The cycle reinforces itself. Not quite. 'Positive feedback' in science means the output amplifies the original change. Warming melts ice, revealing dark surfaces that absorb more heat, causing more warming and more melting. The cycle accelerates itself.
+Feedback: Correct! In a positive feedback loop, the output amplifies the input. Warming melts ice, exposing dark ocean, which absorbs more heat, causing more warming and more melting. The cycle reinforces itself. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS3-5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on the climate model, what is the key difference between the 'current trajectory' and the 'emission reduction' scenarios?
 
@@ -1012,25 +964,37 @@ D. Current trajectory cools the planet because more CO2 means more plants absorb
 
 Correct Answer: C
 
-Feedback: Correct! Reducing emissions does not instantly reverse warming, but it significantly slows the rate of temperature increase and ice loss, giving ecosystems more time to adapt. Not quite. The model shows that reducing emissions slows warming and ice loss significantly compared to the current trajectory, even though it does not instantly reverse the effects already underway.
+Feedback: Correct! Reducing emissions does not instantly reverse warming, but it significantly slows the rate of temperature increase and ice loss, giving ecosystems more time to adapt. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS3-5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (CO2 Concentration, Solar Energy Input), but they can take action on internal components (Average Global Temperature, Ice Sheet Coverage). They need to decide which action would be most effective based on what the model shows.
+
+What is the greenhouse effect?
+
+A. When greenhouses release chemicals that warm the atmosphere
+B. When certain gases in the atmosphere trap heat from the Sun, warming Earth's surface
+C. When the Sun's rays are reflected by green plants back into space
+D. When Earth's temperature drops because clouds block sunlight
+
+Correct Answer: B
+
+Feedback: Correct! The greenhouse effect occurs when gases like CO2 and methane in the atmosphere trap heat energy, keeping Earth's surface warmer than it would otherwise be. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS3-5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS3-5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS3-5, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS3-5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS3-5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

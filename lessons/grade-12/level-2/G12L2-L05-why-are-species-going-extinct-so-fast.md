@@ -946,86 +946,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Current extinction rates are estimated at 100-1,000 times the natural background rate. Which factor has the strongest correlation with species extinction risk in terrestrial ecosystems?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.7 + CCC1 (Patterns)
 
-A. Natural predation pressure within food webs
-B. Habitat loss and fragmentation from land use change
-C. Natural climate variability within historical ranges
-D. Competition from closely related species
-
-Correct Answer: B
-
-Feedback: Correct. Habitat loss and fragmentation from human land use change is the primary driver of the current extinction crisis. It reduces total habitat area, isolates populations below viable sizes, and blocks migration corridors needed for climate adaptation. Incorrect. While multiple factors contribute to extinction, habitat loss and fragmentation from human land use change is overwhelmingly the strongest driver. It directly reduces population sizes, isolates gene pools, and prevents the movement needed for climate adaptation.
-
----
-
-### Question 2
-
-Why is habitat fragmentation considered more damaging to biodiversity than an equivalent amount of simple habitat loss?
-
-A. Fragmentation only affects plant species, not animals
-B. Fragmentation creates edge effects, blocks migration corridors, isolates populations genetically, and prevents species from tracking climate change
-C. Fragmentation increases total habitat area by creating more edges
-D. Fragmented habitats have higher species diversity because of increased habitat types
-
-Correct Answer: B
-
-Feedback: Correct. Fragmentation compounds the damage of area loss by creating multiple additional threats: edge effects degrade habitat quality, isolation prevents gene flow and recolonization, migration barriers trap populations in unsuitable conditions, and small isolated populations face inbreeding depression. Incorrect. Fragmentation is more destructive because it does much more than reduce area. It isolates populations into patches too small for viability, creates degraded edge habitat, blocks the corridors species need to migrate with climate change, and prevents the gene flow needed for genetic health.
-
----
-
-### Question 3
-
-The concept of minimum viable population (MVP) suggests that most mammals need 500-5,000 individuals to survive long-term. What happens to populations that fall below this threshold?
-
-A. They rapidly evolve adaptations to survive at small population sizes
-B. They face increasing risk from inbreeding depression, genetic drift, and random demographic events that can drive extinction
-C. They are automatically protected by natural compensatory mechanisms
-D. They stabilize at a lower population level with no change in viability
-
-Correct Answer: B
-
-Feedback: Correct. Below MVP, populations enter an extinction vortex: inbreeding reduces fitness, genetic drift erodes adaptive variation, and small numbers make the population vulnerable to random events (disease outbreaks, extreme weather) that larger populations would survive. Incorrect. Below minimum viable population size, populations face compounding genetic and demographic threats. Inbreeding reduces reproductive fitness, genetic drift eliminates beneficial alleles, and small populations cannot buffer against random catastrophic events. These factors create a downward spiral called an extinction vortex.
-
----
-
-### Question 4
-
-Ecosystem services such as pollination, water purification, and carbon storage are provided by biodiversity. What is the relationship between species loss and ecosystem function?
-
-A. Ecosystem function declines linearly with each species lost
-B. Ecosystem function is maintained initially as redundant species compensate, but collapses rapidly past a threshold when critical functions are no longer covered
-C. Ecosystem function improves as competition is reduced by species loss
-D. Ecosystem function is independent of species diversity
-
-Correct Answer: B
-
-Feedback: Correct. Ecosystems show functional redundancy up to a point. As species are lost, remaining species may compensate. But past a threshold, when species performing unique ecological roles disappear, ecosystem function collapses non-linearly because critical processes lose their biological agents. Incorrect. The relationship between biodiversity and ecosystem function is non-linear. Initial species losses may be buffered by functional redundancy, but past a critical threshold, the loss of species performing irreplaceable ecological roles causes rapid ecosystem function collapse.
-
----
-
-### Question 5
-
-An extinction cascade occurs when the loss of one species triggers the decline of dependent species. Which type of species would most likely trigger the largest extinction cascade if removed?
-
-A. A rare species that occupies a specialized niche with few interactions
-B. A keystone species with many ecological connections, such as a primary pollinator or top predator
-C. The most abundant species in the ecosystem
-D. A recently introduced invasive species
-
-Correct Answer: B
-
-Feedback: Correct. Keystone species have disproportionate effects on ecosystem structure relative to their abundance. A primary pollinator connects to many plant species, which in turn support herbivores, predators, and decomposers. Removing this hub species propagates disruption throughout the interaction network. Incorrect. Extinction cascades are largest when highly connected species are removed. Keystone species like primary pollinators or top predators interact with many other species, so their loss cascades through the entire interaction network, affecting far more species than their direct dependents.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Land Use Change Rate, Climate Velocity, Habitat Connectivity, Population Viability, Species Interaction Network, Ecosystem Function Index, Extinction Rate. Some components are external (Land Use Change Rate, Climate Velocity) and some are internal (Habitat Connectivity, Population Viability, Species Interaction Network, Ecosystem Function Index, Extinction Rate). The student needs to understand what each component represents and how they are organized.
 
 A model shows that extinction rates increase slowly with the first 30% of habitat loss but accelerate dramatically after 70% loss. What ecological principle explains this non-linear pattern?
 
@@ -1036,11 +961,15 @@ D. After 70% loss, invasive species immediately colonize all remaining habitat
 
 Correct Answer: B
 
-Feedback: Correct. The non-linearity reflects population viability thresholds. Early habitat loss still leaves patches large and connected enough for viable populations. Beyond approximately 70% loss, remaining patches are too small for minimum viable populations and too isolated for recolonization, triggering rapid extinction. Incorrect. The non-linear pattern results from population viability thresholds. Large connected patches support viable populations, so moderate loss has limited effect. But past a critical threshold, remaining patches drop below minimum viable population sizes and lose connectivity, causing extinction rates to accelerate dramatically.
+Feedback: Correct. The non-linearity reflects population viability thresholds. Early habitat loss still leaves patches large and connected enough for viable populations. Beyond approximately 70% loss, remaining patches are too small for minimum viable populations and too isolated for recolonization, triggering rapid extinction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.7 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Land Use Change Rate increases, Habitat Connectivity decreases; when Habitat Connectivity increases, Population Viability increases. The student is trying to understand why these relationships are positive or negative.
 
 A student's model compares two landscapes with identical total protected area: one has a single large connected reserve, and the other has multiple small isolated fragments. The connected reserve supports significantly more species. Which concept does this demonstrate?
 
@@ -1051,11 +980,15 @@ D. Protected area size has no relationship to species conservation outcomes
 
 Correct Answer: B
 
-Feedback: Correct. This demonstrates the SLOSS principle (Single Large Or Several Small). Connected habitat supports larger, genetically healthier populations, enables migration and recolonization, and allows species to track climate change. The same total area in isolated fragments loses these connectivity benefits. Incorrect. Connectivity multiplies the conservation value of protected areas. A connected reserve supports larger populations above MVP thresholds, enables gene flow that prevents inbreeding, allows recolonization after local extinctions, and provides migration corridors for climate adaptation.
+Feedback: Correct. This demonstrates the SLOSS principle (Single Large Or Several Small). Connected habitat supports larger, genetically healthier populations, enables migration and recolonization, and allows species to track climate change. The same total area in isolated fragments loses these connectivity benefits. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.7 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Land Use Change Rate increases, Habitat Connectivity decreases and when Habitat Connectivity increases, Population Viability increases and when Climate Velocity increases, Population Viability decreases. The student changes one variable to see how the whole system responds.
 
 The model shows that wildlife corridors connecting fragmented habitats significantly reduce extinction rates even without stopping habitat loss. What mechanism best explains this finding?
 
@@ -1066,11 +999,15 @@ D. Corridors only benefit large mammal species and have no effect on overall ext
 
 Correct Answer: B
 
-Feedback: Correct. Corridors do not add significant habitat area but provide critical connectivity functions: gene flow prevents inbreeding in small populations, recolonization rescues patches from local extinction, and range-shifting enables climate adaptation. These functions reduce extinction risk disproportionately to the area corridors occupy. Incorrect. Corridors work not by adding area but by restoring connectivity. They enable gene flow (preventing inbreeding), rescue effects (recolonization after local extinction), and climate migration (range shifts tracking temperature). These connectivity functions dramatically improve population viability across the landscape.
+Feedback: Correct. Corridors do not add significant habitat area but provide critical connectivity functions: gene flow prevents inbreeding in small populations, recolonization rescues patches from local extinction, and range-shifting enables climate adaptation. These functions reduce extinction risk disproportionately to the area corridors occupy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.7 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student models the removal of a keystone pollinator species and observes that 12 plant species decline, followed by 8 herbivore species, 3 predator species, and 2 decomposer species. Which systems concept does this cascade demonstrate?
 
@@ -1081,11 +1018,15 @@ D. Ecosystem resilience preventing any cascading effects
 
 Correct Answer: B
 
-Feedback: Correct. The cascade demonstrates network propagation through species interaction networks. The pollinator's removal affects its plant partners, which affects their herbivores, which affects their predators, creating an amplifying chain reaction where one species loss triggers 25 additional declines. Incorrect. This is network propagation through an ecological interaction web. The initial loss propagates through trophic connections: pollinator loss reduces plant reproduction, plant decline reduces herbivore food, herbivore decline reduces predator prey, demonstrating how highly connected networks amplify disturbances.
+Feedback: Correct. The cascade demonstrates network propagation through species interaction networks. The pollinator's removal affects its plant partners, which affects their herbivores, which affects their predators, creating an amplifying chain reaction where one species loss triggers 25 additional declines. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.7 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Land Use Change Rate, Climate Velocity), but they can take action on internal components (Habitat Connectivity, Population Viability, Species Interaction Network, Ecosystem Function Index, Extinction Rate). They need to decide which action would be most effective based on what the model shows.
 
 Based on model evidence, a conservation planner has a budget to either protect 5% more habitat or create wildlife corridors connecting existing protected areas. Which strategy would the model predict is more effective for reducing extinction rates, and why?
 
@@ -1096,27 +1037,18 @@ D. The strategies are exactly equivalent in their conservation outcomes
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that connectivity is a force multiplier. Wildlife corridors transform isolated protected areas into a functional network where gene flow, recolonization, and climate migration can occur. This connectivity benefit exceeds the marginal value of adding small amounts of unconnected area. Incorrect. Model evidence consistently shows that connectivity has disproportionate conservation value. Corridors enable the ecological processes (gene flow, recolonization, migration) that make existing protected areas functional, producing larger reductions in extinction risk per unit of land area than additional isolated habitat.
+Feedback: Correct. The model shows that connectivity is a force multiplier. Wildlife corridors transform isolated protected areas into a functional network where gene flow, recolonization, and climate migration can occur. This connectivity benefit exceeds the marginal value of adding small amounts of unconnected area. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.7, CCC1)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.7, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.7, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.7, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.7, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -946,86 +946,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A scientist models the global carbon cycle and finds that the ocean currently absorbs about 25% of human CO2 emissions. Which factor would most likely reduce the ocean's capacity as a carbon sink over time?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.5 + CCC4 (Systems and System Models)
 
-A. Increasing ocean surface temperature and rising acidity
-B. Increasing wind speed across ocean surfaces
-C. Decreasing the salinity of surface waters
-D. Increasing the depth of the thermocline layer
-
-Correct Answer: A
-
-Feedback: Correct. Warmer water dissolves less CO2, and increased acidity from absorbed CO2 shifts the carbonate equilibrium, both reducing the ocean's absorption capacity and creating a positive feedback loop. Incorrect. Consider how temperature and chemical changes in seawater affect CO2 solubility. Warmer, more acidic water holds less dissolved CO2, reducing the ocean's function as a carbon sink.
-
----
-
-### Question 2
-
-Which statement best describes why positive feedback loops make climate change difficult to reverse?
-
-A. They slow down the rate of warming, giving ecosystems time to adapt
-B. They amplify an initial change, causing the system to accelerate away from its original state
-C. They maintain the climate in a stable equilibrium regardless of CO2 levels
-D. They only operate when temperatures exceed 3 degrees Celsius above pre-industrial levels
-
-Correct Answer: B
-
-Feedback: Correct. Positive feedback loops amplify change. For example, warming melts ice, reducing albedo, which causes more warming. This self-reinforcing cycle makes it progressively harder to return to the original state. Incorrect. Positive feedback loops do not stabilize or slow a system. They amplify the original perturbation, creating a self-reinforcing cycle that accelerates change in one direction.
-
----
-
-### Question 3
-
-Pre-industrial atmospheric CO2 was approximately 280 ppm. Current levels are approximately 424 ppm. A student claims that reducing emissions to zero would immediately return CO2 to 280 ppm. What is the primary flaw in this reasoning?
-
-A. CO2 has a very short atmospheric residence time and would dissipate within weeks
-B. Natural carbon sinks can only remove excess CO2 gradually over centuries, and activated feedback loops continue releasing CO2 independently
-C. Volcanic eruptions would replace the CO2 removed by natural sinks within a few years
-D. Plant photosynthesis rates would immediately double to compensate for reduced emissions
-
-Correct Answer: B
-
-Feedback: Correct. Even at zero emissions, natural sinks like oceans and forests remove excess CO2 slowly over centuries, not instantly. Meanwhile, activated feedback loops such as permafrost thaw continue adding CO2 to the atmosphere independently of human activity. Incorrect. The key concept is thermal inertia and feedback loops. CO2 has an atmospheric residence time of centuries, natural sinks operate slowly, and feedback mechanisms like permafrost methane release continue independently of human emissions.
-
----
-
-### Question 4
-
-A climate model shows that after all emissions stop, global temperature continues rising for 20-40 years before stabilizing. Which concept best explains this delay?
-
-A. Albedo effect from increased cloud cover
-B. Thermal inertia of the ocean, which has absorbed and slowly releases stored heat
-C. Rapid growth of vegetation absorbing excess solar radiation
-D. Increased volcanic activity triggered by atmospheric pressure changes
-
-Correct Answer: B
-
-Feedback: Correct. The ocean absorbs enormous amounts of heat, which it continues to release over decades. This thermal inertia means the climate system responds with a significant lag, so temperature continues rising even after the forcing (emissions) stops. Incorrect. The delay is primarily due to the ocean's thermal inertia. The ocean acts as a massive heat reservoir, and the energy already stored continues warming the atmosphere for decades after emissions cease.
-
----
-
-### Question 5
-
-Which strategy would be most effective at preventing climate tipping points from being crossed, based on carbon cycle dynamics?
-
-A. Relying solely on tree planting to offset continued fossil fuel emissions at current rates
-B. Combining aggressive emission reductions with enhanced carbon sinks to limit total cumulative CO2
-C. Waiting for natural carbon sinks to absorb all excess CO2 before taking policy action
-D. Focusing exclusively on reducing methane emissions while maintaining current CO2 output
-
-Correct Answer: B
-
-Feedback: Correct. Tipping points depend on cumulative CO2 and total warming. Only a combined approach that reduces emissions at the source AND enhances carbon sinks can limit cumulative CO2 enough to prevent crossing critical thresholds. Incorrect. No single approach is sufficient. Tree planting alone cannot offset current emission rates, waiting allows further accumulation, and methane alone does not address the primary driver. A combined strategy targeting both emission reduction and sink enhancement is necessary.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Atmospheric CO2, Fossil Fuel Emissions, Ocean Carbon Absorption, Terrestrial Carbon Storage, Global Temperature Anomaly, Ice-Albedo Feedback, Permafrost Methane Release. Some components are external (Atmospheric CO2, Fossil Fuel Emissions) and some are internal (Ocean Carbon Absorption, Terrestrial Carbon Storage, Global Temperature Anomaly, Ice-Albedo Feedback, Permafrost Methane Release). The student needs to understand what each component represents and how they are organized.
 
 A student runs a climate model simulation where fossil fuel emissions drop to zero immediately. The model shows temperature continuing to rise for 30 years. Which combination of factors best explains this result?
 
@@ -1036,11 +961,15 @@ D. Natural variation in Earth's orbital parameters causing a warming cycle
 
 Correct Answer: A
 
-Feedback: Correct. The ocean has absorbed vast amounts of heat that continues warming the atmosphere (thermal inertia), and positive feedback loops like ice-albedo reduction and permafrost methane release have been triggered and operate independently of human emissions. Incorrect. The continued warming results from two system-level properties: the ocean's thermal inertia (stored heat being released gradually) and self-sustaining positive feedback loops (ice-albedo, permafrost thaw) that were activated by prior warming and no longer depend on human emissions.
+Feedback: Correct. The ocean has absorbed vast amounts of heat that continues warming the atmosphere (thermal inertia), and positive feedback loops like ice-albedo reduction and permafrost methane release have been triggered and operate independently of human emissions. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Fossil Fuel Emissions increases, Atmospheric CO2 increases; when Atmospheric CO2 increases, Global Temperature Anomaly increases. The student is trying to understand why these relationships are positive or negative.
 
 In a carbon cycle model, a student observes that increasing terrestrial carbon storage by 30% while reducing emissions by 50% still results in rising temperatures for 15 years. What does this demonstrate about the climate system?
 
@@ -1051,11 +980,15 @@ D. A 50% emission reduction is identical in effect to no reduction at all
 
 Correct Answer: B
 
-Feedback: Correct. The continued temperature rise despite improved conditions demonstrates that the climate system has significant lag times (thermal inertia) and that previously activated feedback loops continue operating. The combined strategy does eventually stabilize temperatures, but the system does not respond instantly. Incorrect. The enhanced sinks and reduced emissions do help, as temperatures eventually stabilize rather than continuing to rise indefinitely. The temporary continued warming demonstrates system lag and feedback persistence, not that the interventions are ineffective.
+Feedback: Correct. The continued temperature rise despite improved conditions demonstrates that the climate system has significant lag times (thermal inertia) and that previously activated feedback loops continue operating. The combined strategy does eventually stabilize temperatures, but the system does not respond instantly. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.5 + CCC3 (Scale, Proportion, and Quantity)
+
+A student runs a simulation of the model. The model shows that when Fossil Fuel Emissions increases, Atmospheric CO2 increases and when Atmospheric CO2 increases, Global Temperature Anomaly increases and when Global Temperature Anomaly increases, Permafrost Methane Release increases. The student changes one variable to see how the whole system responds.
 
 Which evidence from a carbon cycle model most strongly supports the conclusion that some aspects of climate change are irreversible on human timescales?
 
@@ -1066,11 +999,15 @@ D. Different tree species absorb CO2 at different rates depending on latitude
 
 Correct Answer: B
 
-Feedback: Correct. Self-sustaining feedback loops represent potential tipping points. Once permafrost begins releasing stored methane and ice loss reduces albedo, these processes continue regardless of emission reductions, making the resulting warming effectively irreversible on human timescales. Incorrect. The key to irreversibility is self-sustaining positive feedback loops. Seasonal fluctuations and ocean oscillations are natural cycles, not indicators of irreversibility. The activation of feedbacks that operate independently of human action is what creates irreversible change.
+Feedback: Correct. Self-sustaining feedback loops represent potential tipping points. Once permafrost begins releasing stored methane and ice loss reduces albedo, these processes continue regardless of emission reductions, making the resulting warming effectively irreversible on human timescales. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A policy team uses a climate model to compare three scenarios: business as usual, immediate net zero, and gradual reduction with enhanced sinks. Which finding would provide the strongest evidence for recommending the combined approach over net zero alone?
 
@@ -1081,11 +1018,15 @@ D. The combined approach results in higher atmospheric CO2 levels but lower temp
 
 Correct Answer: A
 
-Feedback: Correct. Enhanced carbon sinks actively draw down atmospheric CO2, addressing the stock of greenhouse gases already accumulated, while net zero only stops new additions. The faster stabilization timeline provides the strongest science-based justification for the combined approach. Incorrect. The strongest evidence is scientific, not economic or logistical. Enhanced sinks combined with emission reduction actively removes CO2 from the atmosphere, addressing the existing stock rather than just stopping new flow, which accelerates temperature stabilization.
+Feedback: Correct. Enhanced carbon sinks actively draw down atmospheric CO2, addressing the stock of greenhouse gases already accumulated, while net zero only stops new additions. The faster stabilization timeline provides the strongest science-based justification for the combined approach. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Atmospheric CO2, Fossil Fuel Emissions), but they can take action on internal components (Ocean Carbon Absorption, Terrestrial Carbon Storage, Global Temperature Anomaly, Ice-Albedo Feedback, Permafrost Methane Release). They need to decide which action would be most effective based on what the model shows.
 
 A student argues that since the ocean absorbs 25% of human CO2 emissions, increasing emissions would actually increase ocean carbon absorption and help solve climate change. Evaluate this claim using carbon cycle dynamics.
 
@@ -1096,27 +1037,18 @@ D. The claim is invalid only because ocean organisms would die from excess CO2, 
 
 Correct Answer: B
 
-Feedback: Correct. While the ocean does absorb more CO2 as atmospheric levels rise, this absorption causes acidification that harms marine life, and warming reduces the ocean's ability to dissolve CO2. These factors create a diminishing-returns dynamic where the ocean's sink capacity decreases as it is needed most. Incorrect. The claim fails because it ignores crucial system dynamics: CO2 absorption causes harmful acidification, and as the ocean warms, it becomes less capable of absorbing CO2. The relationship is not linear and unlimited but is constrained by chemistry and temperature.
+Feedback: Correct. While the ocean does absorb more CO2 as atmospheric levels rise, this absorption causes acidification that harms marine life, and warming reduces the ocean's ability to dissolve CO2. These factors create a diminishing-returns dynamic where the ocean's sink capacity decreases as it is needed most. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.5, CCC3)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.5, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: A
-Question 5: B
-
----
 
 ## Resources
 

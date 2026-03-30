@@ -749,77 +749,17 @@ POST-ASSESSMENT
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-PS1-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-An ice cube weighs 50 grams. After it melts completely into water, how much will the water weigh?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.2 + CCC4 (Systems and System Models)
 
-A. Less than 50 grams because some water evaporated
-B. Exactly 50 grams
-C. More than 50 grams because water is heavier than ice
-D. Zero grams because the ice disappeared
-
-Correct Answer: B
-
-Feedback: That's right! When ice melts, the mass stays exactly the same. The water molecules are still there, just in a different form. When ice melts, no matter is added or removed. The same molecules that made up the ice are now in liquid form. The mass stays exactly 50 grams. This is called conservation of matter.
-
----
-
-### Question 2
-
-When wood burns and only ash remains, where did most of the mass go?
-
-A. The mass was destroyed by the fire
-B. The mass went into the ground
-C. The mass became gases (like CO2 and water vapor) that went into the air
-D. The mass turned into heat and light
-
-Correct Answer: C
-
-Feedback: Correct! When wood burns, most of its mass becomes carbon dioxide and water vapor, which are invisible gases that float into the air. The mass wasn't destroyed. Matter cannot be destroyed. When wood burns, the carbon in the wood combines with oxygen to form CO2 gas, and hydrogen becomes water vapor. These invisible gases carry away most of the mass.
-
----
-
-### Question 3
-
-What does 'conservation of matter' mean?
-
-A. We should save and recycle materials
-B. Matter can be created from nothing
-C. Matter cannot be created or destroyed, only changed in form
-D. Solids are more important than liquids
-
-Correct Answer: C
-
-Feedback: That's right! Conservation of matter means the total amount of matter stays the same, even when it changes form. It can't appear from nothing or vanish. In science, conservation of matter is a law stating that matter cannot be created or destroyed. It can change shape, form, or state, but the total amount of matter always stays the same.
-
----
-
-### Question 4
-
-When you dissolve sugar in water, the sugar seems to disappear. What actually happened?
-
-A. The sugar was destroyed by the water
-B. The sugar molecules spread out in the water but are still there
-C. The sugar turned into water
-D. The sugar evaporated
-
-Correct Answer: B
-
-Feedback: Correct! The sugar molecules separated and spread throughout the water. They are still there, which is why the water tastes sweet. The sugar didn't disappear. Its molecules separated and mixed with the water molecules. You can prove the sugar is still there because the water tastes sweet. The total mass hasn't changed.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Air Temperature, Starting Mass, Ice Amount, Liquid Water Amount. Some components are external (Air Temperature, Starting Mass) and some are internal (Ice Amount, Liquid Water Amount). The student needs to understand what each component represents and how they are organized.
 
 In the state change model, what happens to Starting Mass when Air Temperature increases and ice melts?
 
@@ -830,11 +770,15 @@ D. Starting Mass fluctuates up and down
 
 Correct Answer: C
 
-Feedback: Exactly! Starting Mass never changes regardless of temperature. This is the key discovery: mass is conserved during state changes. Ice becomes water, but the total mass is unchanged. Remember what happened in the simulation. No matter how much the temperature changed, the Starting Mass line stayed perfectly flat. Ice Amount and Liquid Water Amount changed, but their total always equaled Starting Mass.
+Feedback: Exactly! Starting Mass never changes regardless of temperature. This is the key discovery: mass is conserved during state changes. Ice becomes water, but the total mass is unchanged. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Air Temperature increases, Ice Amount decreases; when Air Temperature increases, Liquid Water Amount increases. The student is trying to understand why these relationships are positive or negative.
 
 What type of relationship exists between Ice Amount and Liquid Water Amount?
 
@@ -845,11 +789,15 @@ D. Positive: melting creates extra liquid
 
 Correct Answer: B
 
-Feedback: Correct! Ice and liquid share the same total mass. When one increases, the other must decrease by the same amount. They are mirror images of each other. Since Starting Mass is constant, Ice Amount and Liquid Water Amount must always add up to the same total. When ice goes up, liquid must go down, and vice versa. This is a negative (-) relationship.
+Feedback: Correct! Ice and liquid share the same total mass. When one increases, the other must decrease by the same amount. They are mirror images of each other. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Air Temperature increases, Ice Amount decreases and when Air Temperature increases, Liquid Water Amount increases and when Ice Amount increases, Liquid Water Amount decreases. The student changes one variable to see how the whole system responds.
 
 A student puts 200g of ice in a sealed container and heats it until all the ice melts and some water evaporates. What is the total mass inside the container?
 
@@ -860,11 +808,15 @@ D. It depends on the temperature
 
 Correct Answer: C
 
-Feedback: That's right! In a sealed (closed) container, no matter can enter or leave. The total mass remains exactly 200g whether the water is solid, liquid, gas, or a mix. In a sealed container, matter cannot escape. Whether the water is ice, liquid, or vapor, all the molecules are still inside. Conservation of matter tells us the total mass stays at exactly 200g.
+Feedback: That's right! In a sealed (closed) container, no matter can enter or leave. The total mass remains exactly 200g whether the water is solid, liquid, gas, or a mix. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A candle starts at 80 grams. After burning for 30 minutes, only 60 grams of wax remain. Using conservation of matter, which statement is true?
 
@@ -875,25 +827,37 @@ D. The scale must be broken because matter can't change mass
 
 Correct Answer: B
 
-Feedback: Correct! The 'missing' 20 grams became invisible gases (CO2 and water vapor) that floated into the air. If you could capture those gases, they would weigh exactly 20 grams. Matter is never destroyed. When wax burns, the carbon and hydrogen atoms combine with oxygen from the air to form CO2 and water vapor. These gases carry the 20 grams of mass into the air.
+Feedback: Correct! The 'missing' 20 grams became invisible gases (CO2 and water vapor) that floated into the air. If you could capture those gases, they would weigh exactly 20 grams. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Air Temperature, Starting Mass), but they can take action on internal components (Ice Amount, Liquid Water Amount). They need to decide which action would be most effective based on what the model shows.
+
+An ice cube weighs 50 grams. After it melts completely into water, how much will the water weigh?
+
+A. Less than 50 grams because some water evaporated
+B. Exactly 50 grams
+C. More than 50 grams because water is heavier than ice
+D. Zero grams because the ice disappeared
+
+Correct Answer: B
+
+Feedback: That's right! When ice melts, the mass stays exactly the same. The water molecules are still there, just in a different form. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

@@ -895,86 +895,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Sound travels through air as a wave. When a microphone captures this sound, what physical quantity does it detect?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.5 + CCC4 (Systems and System Models)
 
-A. Changes in air temperature caused by the sound source.
-B. Variations in air pressure that correspond to the frequency and amplitude of the sound wave.
-C. Electromagnetic radiation emitted by vibrating molecules.
-D. The velocity of individual air molecules traveling from the source to the microphone.
-
-Correct Answer: B
-
-Feedback: Correct. Sound is a longitudinal pressure wave. A microphone's diaphragm responds to the alternating compressions and rarefactions of air pressure, converting them to an electrical signal. Incorrect. Sound is a mechanical pressure wave. The microphone detects pressure variations in the air that correspond to the sound's frequency (pitch) and amplitude (loudness).
-
----
-
-### Question 2
-
-A 3-minute song stored as an uncompressed audio file is approximately 30 MB. The same song compressed as an MP3 is 3 MB. What was removed during compression?
-
-A. The lower-quality instruments in the recording.
-B. Every other sound sample, cutting the data in half repeatedly.
-C. Sounds and frequencies that fall below the threshold of human hearing perception.
-D. The silence between notes, which takes up most of the file.
-
-Correct Answer: C
-
-Feedback: Correct. Lossy compression algorithms like MP3 use psychoacoustic models to identify and remove frequencies humans cannot hear, sounds masked by louder sounds, and redundant data patterns. Incorrect. MP3 compression exploits the limits of human hearing. It removes inaudible frequencies (above ~20 kHz), sounds masked by louder simultaneous sounds, and temporal details the brain fills in.
-
----
-
-### Question 3
-
-The Nyquist theorem states that to accurately capture a sound wave digitally, the sampling rate must be at least:
-
-A. Equal to the frequency of the sound wave.
-B. Twice the highest frequency to be captured.
-C. Ten times the highest frequency to ensure accuracy.
-D. Independent of frequency, as long as bit depth is sufficient.
-
-Correct Answer: B
-
-Feedback: Correct. The Nyquist theorem requires sampling at twice the maximum frequency. CD quality samples at 44,100 Hz to capture frequencies up to 22,050 Hz, exceeding the ~20,000 Hz limit of human hearing. Incorrect. The Nyquist theorem requires a sampling rate of at least twice the highest frequency in the signal. This prevents aliasing and ensures accurate digital reproduction of the analog waveform.
-
----
-
-### Question 4
-
-A music streaming service recommends songs to users. Which type of data would be MOST useful for the recommendation algorithm?
-
-A. The user's age, gender, and geographic location.
-B. Patterns of listening behavior, including play counts, skip rates, and completion rates across many users.
-C. The recording quality and bit rate of each song file.
-D. The number of awards each artist has won.
-
-Correct Answer: B
-
-Feedback: Correct. Recommendation algorithms rely on behavioral data. Play counts, skip rates, listening duration, and patterns across millions of users reveal preferences far more accurately than demographic data alone. Incorrect. Behavioral listening data (what people play, skip, repeat, and how they interact with suggestions) provides the richest signal for predicting preferences through collaborative filtering.
-
----
-
-### Question 5
-
-Which statement accurately describes the relationship between audio file size and sound quality in digital music?
-
-A. Larger files always sound better because they contain more data.
-B. There is a trade-off: higher quality requires more data, but beyond a threshold most listeners cannot detect further improvements.
-C. File size has no relationship to sound quality in modern formats.
-D. Smaller files sound better because compression removes noise and distortion.
-
-Correct Answer: B
-
-Feedback: Correct. Higher bit rates and sampling rates capture more audio detail, but human hearing has limits. Above approximately 256 kbps, most listeners cannot distinguish compressed from uncompressed audio in blind tests. Incorrect. There is a direct trade-off between file size and quality, but it has a perceptual ceiling. Beyond a certain quality level, the human auditory system cannot detect further improvements.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Audio Signal Quality, Data Compression Rate, Algorithm Accuracy, User Engagement, Recommendation Match. Some components are external (Audio Signal Quality, Data Compression Rate) and some are internal (Algorithm Accuracy, User Engagement, Recommendation Match). The student needs to understand what each component represents and how they are organized.
 
 The model shows that at maximum Data Compression Rate, audio quality degrades noticeably. At moderate compression, quality is virtually indistinguishable from the original. What concept from wave physics explains why moderate compression works without perceptible quality loss?
 
@@ -985,11 +910,15 @@ D. Compression algorithms add synthetic frequencies to replace removed data.
 
 Correct Answer: B
 
-Feedback: Correct. Psychoacoustic masking is a property of human hearing where loud sounds render quieter nearby sounds imperceptible. Compression algorithms exploit this by removing masked data that the listener would never perceive. Incorrect. The model demonstrates that compression works because of psychoacoustic masking. Human hearing naturally suppresses perception of sounds masked by louder sounds, making their removal undetectable.
+Feedback: Correct. Psychoacoustic masking is a property of human hearing where loud sounds render quieter nearby sounds imperceptible. Compression algorithms exploit this by removing masked data that the listener would never perceive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Audio Signal Quality increases, Data Compression Rate increases; when Data Compression Rate increases, User Engagement increases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, a new user with no listening history receives recommendations with approximately 20-30% accuracy, while a veteran user with 1,000+ hours has 70-80% accuracy. What system behavior does this demonstrate?
 
@@ -1000,11 +929,15 @@ D. Diminishing returns, where additional data beyond the first hour provides no 
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a positive feedback loop: more listening generates more behavioral data, which trains better algorithms, which provide better recommendations, which increases engagement and data generation. Incorrect. The model demonstrates a feedback loop: engagement produces data, data improves algorithm accuracy, better accuracy increases user satisfaction and engagement, generating more data.
+Feedback: Correct. The model reveals a positive feedback loop: more listening generates more behavioral data, which trains better algorithms, which provide better recommendations, which increases engagement and data generation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Audio Signal Quality increases, Data Compression Rate increases and when Data Compression Rate increases, User Engagement increases and when User Engagement increases, Algorithm Accuracy increases. The student changes one variable to see how the whole system responds.
 
 A student examines the model and notices that a 64 GB device stores approximately 1,200 songs at maximum quality but 12,000 songs at standard compression. The student argues that maximum compression should always be used. Which model evidence challenges this argument?
 
@@ -1015,11 +948,15 @@ D. The model shows that all compression levels produce identical listening exper
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that excessive compression degrades quality, which reduces user engagement, which decreases the data feeding the recommendation algorithm. The system optimizes for a balance, not a single variable. Incorrect. The model demonstrates that compression exists on a curve with diminishing returns. Beyond the perception threshold, further compression degrades quality enough to reduce engagement, harming the entire system.
+Feedback: Correct. The model shows that excessive compression degrades quality, which reduces user engagement, which decreases the data feeding the recommendation algorithm. The system optimizes for a balance, not a single variable. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on the model, which statement best explains why digital music storage became practical for portable devices?
 
@@ -1030,11 +967,15 @@ D. Digital signals are inherently smaller than analog signals.
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that psychoacoustic compression, based on wave physics and human hearing limits, enables 90% data reduction while maintaining perceptually identical quality, making portable music libraries possible. Incorrect. The breakthrough was understanding that human hearing has specific limitations (frequency range, masking effects) that compression algorithms can exploit to dramatically reduce file sizes without perceptible quality loss.
+Feedback: Correct. The model shows that psychoacoustic compression, based on wave physics and human hearing limits, enables 90% data reduction while maintaining perceptually identical quality, making portable music libraries possible. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Audio Signal Quality, Data Compression Rate), but they can take action on internal components (Algorithm Accuracy, User Engagement, Recommendation Match). They need to decide which action would be most effective based on what the model shows.
 
 The model demonstrates that algorithm accuracy improves from 20% to 80% as listening data increases. A privacy advocate argues that less data should be collected. Using the model, which design approach best addresses both accuracy and privacy concerns?
 
@@ -1045,27 +986,18 @@ D. The model proves privacy and accuracy are completely incompatible goals.
 
 Correct Answer: C
 
-Feedback: Correct. The model shows diminishing returns in accuracy with additional data. Engineering solutions can identify the optimal data collection level that achieves acceptable accuracy while minimizing privacy intrusion. Incorrect. The model shows diminishing returns in the data-accuracy relationship. This means a balance point exists where sufficient accuracy is achieved with limited, transparent data collection.
+Feedback: Correct. The model shows diminishing returns in accuracy with additional data. Engineering solutions can identify the optimal data collection level that achieves acceptable accuracy while minimizing privacy intrusion. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.5, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.5, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
-
----
 
 ## Resources
 

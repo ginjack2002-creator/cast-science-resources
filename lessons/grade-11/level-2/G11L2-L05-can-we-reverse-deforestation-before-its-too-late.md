@@ -928,86 +928,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What makes a forest a 'carbon sink'?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.4 + CCC4 (Systems and System Models)
 
-A. The forest floor absorbs carbon from underground rock formations
-B. Trees absorb more CO2 through photosynthesis than the forest releases through respiration and decomposition
-C. Forests produce carbon monoxide, which traps less heat than CO2
-D. Carbon sinks are man-made reservoirs installed in forests
-
-Correct Answer: B
-
-Feedback: Correct. A carbon sink absorbs more CO2 than it releases. Intact forests absorb about 2.6 billion tons of CO2 annually through photosynthesis. A forest is a carbon sink when its net carbon uptake (via photosynthesis) exceeds its net carbon release (via respiration and decomposition). Intact forests globally absorb approximately 2.6 billion tons of CO2 per year.
-
----
-
-### Question 2
-
-How do tropical forests contribute to their own rainfall?
-
-A. Tree canopies physically block rain from evaporating, trapping moisture
-B. Trees pump water from soil and release it as vapor through evapotranspiration, generating clouds and rainfall
-C. Forests produce chemicals that seed cloud formation from industrial pollutants
-D. Tropical forests do not significantly affect local rainfall patterns
-
-Correct Answer: B
-
-Feedback: Correct. Through evapotranspiration, tropical forests create up to 50% of their own precipitation by recycling water from soil to atmosphere. Tropical trees absorb water through their roots and release it as vapor through leaf pores (evapotranspiration). This moisture forms clouds that produce rainfall, recycling up to 50% of the forest's precipitation.
-
----
-
-### Question 3
-
-What is 'savannification' in the context of tropical forests?
-
-A. The natural growth cycle of savanna grasslands
-B. The irreversible transition of a tropical rainforest to a savanna or grassland when tree cover drops below a critical threshold
-C. A conservation strategy that replaces forests with grasslands
-D. The seasonal drying of tropical forests during winter months
-
-Correct Answer: B
-
-Feedback: Correct. Savannification is the irreversible loss of tropical rainforest structure and function, triggered when deforestation reduces tree cover below the threshold needed to sustain the forest's rainfall cycle. Savannification occurs when deforestation reduces forest cover below the threshold needed to maintain the evapotranspiration-rainfall cycle. Without enough trees to generate moisture, the forest dries out and transitions irreversibly to savanna.
-
----
-
-### Question 4
-
-Approximately what percentage of the Amazon rainforest has already been deforested?
-
-A. About 5%
-B. About 17%
-C. About 40%
-D. About 65%
-
-Correct Answer: B
-
-Feedback: Correct. The Amazon has lost approximately 17% of its original forest, with scientists estimating the tipping point at 20-25% loss. Approximately 17% of the Amazon rainforest has been cleared. Scientists estimate the tipping point for irreversible savannification at 20-25% loss, meaning the Amazon is dangerously close to a critical threshold.
-
----
-
-### Question 5
-
-If a region loses 30% of its forest cover, how might this affect the local fire risk?
-
-A. Fire risk decreases because there is less fuel to burn
-B. Fire risk remains unchanged because fires depend only on temperature
-C. Fire risk increases because reduced evapotranspiration dries out the remaining forest, and fragmented forest edges are more exposed
-D. Fire risk increases only in non-tropical forests
-
-Correct Answer: C
-
-Feedback: Correct. Deforestation reduces rainfall via decreased evapotranspiration, drying out remaining forest. Fragmented edges are exposed to drying winds and human ignition sources, dramatically increasing fire risk. Deforestation reduces local rainfall by disrupting evapotranspiration, drying out remaining forest. Forest edges exposed by fragmentation are particularly vulnerable to desiccation and fire, which can destroy more forest in a self-reinforcing cycle.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Deforestation Rate, Forest Carbon Stock, Evapotranspiration Rate, Regional Rainfall, Fire Susceptibility, Reforestation Rate. Some components are external (Deforestation Rate, Reforestation Rate) and some are internal (Forest Carbon Stock, Evapotranspiration Rate, Regional Rainfall, Fire Susceptibility). The student needs to understand what each component represents and how they are organized.
 
 The model shows that at 25% Amazon deforestation, Regional Rainfall drops below a threshold and Fire Susceptibility spikes. Even when Reforestation Rate is set to match Deforestation Rate, the forest continues to decline. What best explains this result?
 
@@ -1018,11 +943,15 @@ D. The model is flawed because reforestation always restores forest function imm
 
 Correct Answer: B
 
-Feedback: Correct. The tipping point is where the positive feedback loop (less forest leads to less rain leads to more fire leads to less forest) becomes self-reinforcing and overpowers reforestation efforts. Beyond the tipping point, the deforestation-drought-fire feedback loop operates independently of human reforestation efforts. Reduced forest cover decreases evapotranspiration, lowering rainfall, which dries out remaining forest, increasing fire risk in a self-sustaining cycle.
+Feedback: Correct. The tipping point is where the positive feedback loop (less forest leads to less rain leads to more fire leads to less forest) becomes self-reinforcing and overpowers reforestation efforts. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.4 + CCC3 (Scale, Proportion, and Quantity)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Deforestation Rate increases, Forest Carbon Stock decreases; when Forest Carbon Stock increases, Evapotranspiration Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 A policy team proposes planting 10 million hectares of new forest per year to fully offset 10 million hectares of annual deforestation. The model shows this strategy fails over 30 years. Which timescale mismatch is responsible?
 
@@ -1033,11 +962,15 @@ D. Deforestation only affects carbon storage, not water cycles
 
 Correct Answer: B
 
-Feedback: Correct. A chainsaw releases centuries of stored carbon in hours, while a seedling takes 20-40 years to reach maturity. This asymmetry creates an unavoidable carbon debt even with equal area replanting. The fundamental timescale mismatch: deforestation releases stored carbon almost instantly, but a newly planted tree needs 20-40 years to reach the carbon sequestration capacity of the mature tree it replaced. Hectare-for-hectare replacement does not equal carbon-for-carbon replacement.
+Feedback: Correct. A chainsaw releases centuries of stored carbon in hours, while a seedling takes 20-40 years to reach maturity. This asymmetry creates an unavoidable carbon debt even with equal area replanting. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Deforestation Rate increases, Forest Carbon Stock decreases and when Forest Carbon Stock increases, Evapotranspiration Rate increases and when Evapotranspiration Rate increases, Regional Rainfall increases. The student changes one variable to see how the whole system responds.
 
 The model reveals that forests generate up to 50% of their own rainfall. A student concludes that any amount of deforestation will proportionally reduce rainfall. Why is this linear interpretation incorrect?
 
@@ -1048,11 +981,15 @@ D. Forest rainfall recycling only matters in temperate, not tropical, forests
 
 Correct Answer: B
 
-Feedback: Correct. The forest-rainfall relationship has threshold dynamics. Above the threshold, the cycle is self-sustaining with gradual decline. Below it, the cycle collapses rapidly because the remaining forest cannot generate enough moisture. The model shows nonlinear threshold behavior: the evapotranspiration-rainfall system is self-sustaining above a critical forest cover threshold but collapses below it. The transition from forest to savanna is abrupt, not proportional to deforestation area.
+Feedback: Correct. The forest-rainfall relationship has threshold dynamics. Above the threshold, the cycle is self-sustaining with gradual decline. Below it, the cycle collapses rapidly because the remaining forest cannot generate enough moisture. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.4 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An economist argues that converting forest to agriculture is rational because farmland generates immediate revenue. Using the model, which systems-level analysis best addresses this argument?
 
@@ -1063,11 +1000,15 @@ D. Deforestation has no economic consequences beyond the cleared area
 
 Correct Answer: B
 
-Feedback: Correct. This is a tragedy of the commons: individual economic incentives favor clearing, but the collective value of intact forest ecosystem services far exceeds agricultural revenue when properly accounted for. The model demonstrates a classic externality problem: the farmer captures agricultural revenue but the costs of lost ecosystem services (rainfall, carbon storage, biodiversity) are borne by everyone. The total value of ecosystem services exceeds agricultural value, but markets fail to reflect this.
+Feedback: Correct. This is a tragedy of the commons: individual economic incentives favor clearing, but the collective value of intact forest ecosystem services far exceeds agricultural revenue when properly accounted for. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Deforestation Rate, Reforestation Rate), but they can take action on internal components (Forest Carbon Stock, Evapotranspiration Rate, Regional Rainfall, Fire Susceptibility). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, which combination of strategies would be most effective at preventing the Amazon from crossing its savannification tipping point?
 
@@ -1078,27 +1019,18 @@ D. Accept savannification as inevitable and adapt agricultural practices
 
 Correct Answer: C
 
-Feedback: Correct. The model shows that preventing tipping point crossing requires stopping intact forest loss (the primary threat), restoring degraded areas, and changing the economic calculus that drives deforestation. The model indicates that the most effective strategy addresses all three dimensions: stopping further loss of intact forest (to stay above the threshold), restoring degraded land (to rebuild the evapotranspiration cycle), and restructuring economic incentives (to make conservation economically viable).
+Feedback: Correct. The model shows that preventing tipping point crossing requires stopping intact forest loss (the primary threat), restoring degraded areas, and changing the economic calculus that drives deforestation. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC3)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.4, CCC2)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
-
----
 
 ## Resources
 

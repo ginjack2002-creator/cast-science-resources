@@ -726,73 +726,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-PS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-On a hot sunny day, which spot feels warmer?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.1 + CCC4 (Systems and System Models)
 
-A. Under a big tree in the shade
-B. Out in the sunshine
-C. They feel the same
-
-Correct Answer: B
-
-Feedback: Yes! The spot in the sunshine feels warmer because the sun heats it up. A spot in the sunshine feels warmer than a spot in the shade. The sun sends heat to the ground.
-
----
-
-### Question 2
-
-What does the sun give us?
-
-A. Only light
-B. Light and warmth
-C. Only wind
-
-Correct Answer: B
-
-Feedback: That is right! The sun gives us both light and warmth. The sun gives us light AND warmth. That is why sunny days feel warm.
-
----
-
-### Question 3
-
-Why do people sit in the shade on a hot day?
-
-A. To get more sun
-B. To stay cooler
-C. To get wet
-
-Correct Answer: B
-
-Feedback: Yes! People sit in the shade to stay cooler because shade blocks the hot sunlight. People sit in the shade to stay cooler. The shade blocks sunlight so it is not as hot.
-
----
-
-### Question 4
-
-If you touch a sidewalk in the sun, how does it feel?
-
-A. Cold
-B. Warm or hot
-C. Wet
-
-Correct Answer: B
-
-Feedback: Yes! A sidewalk in the sun feels warm or hot because the sun heats it up. A sidewalk in the sun feels warm or hot. The sunlight carries energy that heats up the sidewalk.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Sunlight, Surface Temperature. Some components are external (Amount of Sunlight) and some are internal (Surface Temperature). The student needs to understand what each component represents and how they are organized.
 
 When there is MORE sunlight on a spot, what happens to the temperature?
 
@@ -802,11 +746,15 @@ C. It goes up
 
 Correct Answer: C
 
-Feedback: Yes! More sunlight makes the temperature go up. The sun's energy heats things up. When there is more sunlight, the temperature goes up. Sunlight carries energy that warms the ground.
+Feedback: Yes! More sunlight makes the temperature go up. The sun's energy heats things up. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Sunlight increases, Surface Temperature increases. The student is trying to understand why these relationships are positive or negative.
 
 What does shade do?
 
@@ -816,11 +764,15 @@ C. It makes rain
 
 Correct Answer: B
 
-Feedback: That is right! Shade blocks sunlight, so the spot stays cooler than a sunny spot. Shade blocks sunlight from reaching the ground. That is why shady spots feel cooler than sunny spots.
+Feedback: That is right! Shade blocks sunlight, so the spot stays cooler than a sunny spot. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Amount of Sunlight increases, Surface Temperature increases. The student changes one variable to see how the whole system responds.
 
 Amount of Sunlight and Surface Temperature have what kind of connection?
 
@@ -830,11 +782,15 @@ C. No connection
 
 Correct Answer: A
 
-Feedback: Yes! It is a positive connection. When sunlight goes up, temperature goes up too. It is a positive connection. More sunlight means higher temperature. They go up together.
+Feedback: Yes! It is a positive connection. When sunlight goes up, temperature goes up too. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which would feel hotter in the sun?
 
@@ -844,25 +800,36 @@ C. They feel the same
 
 Correct Answer: B
 
-Feedback: Yes! Dark colors soak up more sunlight and get hotter than light colors. A black piece of paper gets hotter in the sun because dark colors absorb more sunlight and heat up more.
+Feedback: Yes! Dark colors soak up more sunlight and get hotter than light colors. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Sunlight), but they can take action on internal components (Surface Temperature). They need to decide which action would be most effective based on what the model shows.
+
+On a hot sunny day, which spot feels warmer?
+
+A. Under a big tree in the shade
+B. Out in the sunshine
+C. They feel the same
+
+Correct Answer: B
+
+Feedback: Yes! The spot in the sunshine feels warmer because the sun heats it up. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: A
-Question 4: B
-
----
 
 ## Resources
 

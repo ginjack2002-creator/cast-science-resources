@@ -910,86 +910,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-In a landmark NIH clinical trial, participants eating ultra-processed meals consumed 500 more calories per day than those eating unprocessed meals, despite both groups having unlimited food access. Which factor best explains this difference?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.7 + CCC4 (Systems and System Models)
 
-A. Ultra-processed foods contain more total calories per gram than whole foods
-B. Ultra-processed foods bypass normal satiety signaling, causing people to eat faster and consume more before feeling full
-C. Participants eating whole foods were more motivated to lose weight
-D. Ultra-processed foods are more nutritious, so the body craves less of them
-
-Correct Answer: B
-
-Feedback: Correct. Ultra-processed foods are consumed 20-30% faster and produce weaker fullness signals than whole foods. The body cannot regulate intake effectively when satiety mechanisms are disrupted by food engineering. Incorrect. The key mechanism is disrupted satiety signaling. Ultra-processed foods are eaten faster and produce weaker fullness signals, so people consume significantly more calories before feeling satisfied.
-
----
-
-### Question 2
-
-What distinguishes an ultra-processed food from a processed food?
-
-A. Ultra-processed foods have fewer ingredients than processed foods
-B. Ultra-processed foods are industrially manufactured products containing ingredients not found in home kitchens, such as emulsifiers, flavor enhancers, and hydrogenated oils
-C. Any food that has been cooked is considered ultra-processed
-D. Ultra-processed foods are always more expensive than whole foods
-
-Correct Answer: B
-
-Feedback: Correct. Ultra-processed foods are defined by the NOVA classification as industrial formulations made mostly from substances derived from foods, with additives not found in home kitchens, designed for hyper-palatability, shelf life, and profit. Incorrect. Ultra-processed foods contain industrial ingredients like emulsifiers, flavor enhancers, and hydrogenated oils that are not used in home cooking. They are engineered for maximum palatability, not nutrition.
-
----
-
-### Question 3
-
-What is metabolic syndrome?
-
-A. A single disease caused by eating too much sugar
-B. A cluster of conditions including high blood sugar, excess abdominal fat, high blood pressure, and abnormal cholesterol that together increase heart disease and diabetes risk
-C. A genetic disorder that prevents the body from digesting food
-D. A temporary condition that resolves when a person exercises more
-
-Correct Answer: B
-
-Feedback: Correct. Metabolic syndrome is a cluster of interconnected conditions that dramatically increase the risk of heart disease, stroke, and type 2 diabetes. Ultra-processed diets are strongly associated with its development. Incorrect. Metabolic syndrome is not a single disease but a cluster of co-occurring conditions (high blood sugar, abdominal fat, high blood pressure, abnormal cholesterol) that together multiply the risk of cardiovascular disease and diabetes.
-
----
-
-### Question 4
-
-Why is blaming obesity on 'lack of willpower' scientifically inaccurate based on food science research?
-
-A. Because obesity is entirely genetic and food choice plays no role
-B. Because ultra-processed foods are engineered to override biological satiety signals, making overconsumption a physiological response rather than a character flaw
-C. Because all people have exactly the same willpower regardless of circumstances
-D. Because only extremely rare medical conditions cause obesity
-
-Correct Answer: B
-
-Feedback: Correct. Ultra-processed foods disrupt the hormonal signals (leptin, ghrelin) that regulate hunger and fullness. The overconsumption is driven by food engineering that bypasses biological controls, not by individual willpower failure. Incorrect. Research shows that ultra-processed foods override the body's natural satiety signaling systems. People overconsume because the food is engineered to bypass fullness signals, not because they lack self-control.
-
----
-
-### Question 5
-
-How does the gut microbiome relate to ultra-processed food consumption?
-
-A. Ultra-processed foods increase gut microbiome diversity, which improves health
-B. The gut microbiome is not affected by diet in any measurable way
-C. Ultra-processed food consumption significantly decreases gut microbiome diversity, which correlates with metabolic dysfunction and impaired immune function
-D. The gut microbiome only affects digestion and has no connection to overall health
-
-Correct Answer: C
-
-Feedback: Correct. Research shows that ultra-processed diets dramatically reduce the diversity of gut bacteria, which correlates with metabolic problems, weakened immune function, and even mood disturbances. Incorrect. Ultra-processed foods decrease gut microbiome diversity. The gut microbiome influences metabolism, immune function, and even mood, so reduced diversity from ultra-processed diets has far-reaching health consequences.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Processing Level, Sugar and Additive Load, Satiety Response, Metabolic Health, Caloric Overconsumption. Some components are external (Processing Level) and some are internal (Sugar and Additive Load, Satiety Response, Metabolic Health, Caloric Overconsumption). The student needs to understand what each component represents and how they are organized.
 
 The food model shows that Processing Level predicts health outcomes better than individual nutrient content. Two meals have identical calories, protein, fat, carbohydrates, and fiber. One is ultra-processed, one is whole food. Which model mechanism explains why health outcomes differ?
 
@@ -1000,11 +925,15 @@ D. The whole food meal causes faster digestion, which alone accounts for the dif
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that processing level affects the food matrix itself, not just nutrient content. Ultra-processed foods are consumed 20-30% faster and produce weaker satiety responses, causing overconsumption regardless of macronutrient matching. Incorrect. The model reveals that it is the processing that matters, not just the nutrients. Ultra-processed foods are eaten faster and disrupt satiety signaling, causing the body to overconsume even when the nutritional profile appears identical.
+Feedback: Correct. The model shows that processing level affects the food matrix itself, not just nutrient content. Ultra-processed foods are consumed 20-30% faster and produce weaker satiety responses, causing overconsumption regardless of macronutrient matching. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.7 + CCC1 (Patterns)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Processing Level increases, Sugar and Additive Load increases; when Sugar and Additive Load increases, Satiety Response decreases. The student is trying to understand why these relationships are positive or negative.
 
 According to the model, when a person shifts from an 80% ultra-processed diet to 50% whole foods, what pattern of Metabolic Health recovery does the model predict?
 
@@ -1015,11 +944,15 @@ D. Metabolic damage from ultra-processed foods is permanent and irreversible
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that metabolic damage is partially reversible. Shifting to more whole foods shows measurable improvements in blood sugar, inflammation markers, and gut microbiome diversity within 2-4 weeks. Incorrect. The model demonstrates that metabolic damage from ultra-processed diets is partially reversible. Measurable improvements appear within 2-4 weeks of dietary change, with continued improvement over longer periods.
+Feedback: Correct. The model shows that metabolic damage is partially reversible. Shifting to more whole foods shows measurable improvements in blood sugar, inflammation markers, and gut microbiome diversity within 2-4 weeks. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.7 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Processing Level increases, Sugar and Additive Load increases and when Sugar and Additive Load increases, Satiety Response decreases and when Satiety Response increases, Caloric Overconsumption decreases. The student changes one variable to see how the whole system responds.
 
 The model includes Satiety Response as a component. What causal mechanism links ultra-processing to weakened satiety?
 
@@ -1030,11 +963,15 @@ D. Satiety is entirely determined by stomach volume, not food processing level
 
 Correct Answer: B
 
-Feedback: Correct. The eating speed mechanism is critical. Ultra-processed foods are consumed faster because of their texture and palatability engineering. The gut hormones that signal fullness need 15-20 minutes to activate, but the food is already consumed. Incorrect. Ultra-processed foods are eaten 20-30% faster due to engineered texture and palatability. The gut hormones (leptin, GLP-1) that signal fullness need time to reach the brain, but the rapid consumption means excess calories are consumed before the signal arrives.
+Feedback: Correct. The eating speed mechanism is critical. Ultra-processed foods are consumed faster because of their texture and palatability engineering. The gut hormones that signal fullness need 15-20 minutes to activate, but the food is already consumed. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.7 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student adds Food Marketing Exposure as a component to the model. Children and teens see an average of 13 food ads per day, overwhelmingly for ultra-processed products. How does this component interact with Caloric Overconsumption?
 
@@ -1045,11 +982,15 @@ D. Marketing decreases consumption by making people more aware of what they are 
 
 Correct Answer: C
 
-Feedback: Correct. Food marketing increases both preference for and availability-seeking of ultra-processed products, driving more frequent consumption of foods that disrupt satiety signaling and amplifying the overconsumption pathway in the model. Incorrect. Research shows that food marketing exposure increases preference for ultra-processed foods, leading to more frequent consumption of products that disrupt satiety signaling, which amplifies the Caloric Overconsumption pathway.
+Feedback: Correct. Food marketing increases both preference for and availability-seeking of ultra-processed products, driving more frequent consumption of foods that disrupt satiety signaling and amplifying the overconsumption pathway in the model. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.7 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Processing Level), but they can take action on internal components (Sugar and Additive Load, Satiety Response, Metabolic Health, Caloric Overconsumption). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, which intervention would be MOST effective at reducing population-level metabolic disease from ultra-processed food consumption?
 
@@ -1060,27 +1001,18 @@ D. Removing all fat content from ultra-processed foods
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that Processing Level is the root driver of metabolic dysfunction. Addressing the upstream cause (reducing processing) through food policy is more effective than downstream interventions like calorie counting or exercise. Incorrect. The model identifies Processing Level as the upstream driver. Individual-level interventions like calorie counting address symptoms, not causes. Systemic changes to food availability, affordability, and processing practices address the root mechanism.
+Feedback: Correct. The model shows that Processing Level is the root driver of metabolic dysfunction. Addressing the upstream cause (reducing processing) through food policy is more effective than downstream interventions like calorie counting or exercise. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.7, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.7, CCC1)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.7, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.7, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.7, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
-
----
 
 ## Resources
 

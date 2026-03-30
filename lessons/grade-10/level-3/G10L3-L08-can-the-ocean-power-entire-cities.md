@@ -907,86 +907,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Ocean surface water in the tropics is approximately 25-30 degrees Celsius while deep water at 1,000 meters is approximately 4-5 degrees Celsius. What physical principle allows this temperature difference to be used for electricity generation?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.2 + CCC2 (Cause and Effect)
 
-A. Cold water naturally generates electricity when brought to the surface
-B. A heat engine can extract work from any temperature difference — warm water evaporates a working fluid, the vapor drives a turbine, and cold water condenses it back to liquid, completing the thermodynamic cycle
-C. The temperature difference creates pressure that directly drives a turbine
-D. The mixing of warm and cold water creates a chemical reaction that produces electricity
-
-Correct Answer: B
-
-Feedback: Correct. OTEC uses the same thermodynamic principle as any heat engine (like a steam power plant): heat flows from a hot source to a cold sink, and work is extracted during the transfer. The unique aspect is that both the heat source and sink are seawater at relatively low temperatures. Think about how a conventional power plant works: it uses a temperature difference to evaporate a fluid, drive a turbine, and condense the fluid. OTEC applies the same principle but uses ocean water as both the heat source and cold sink.
-
----
-
-### Question 2
-
-The Carnot efficiency formula gives the maximum possible efficiency for a heat engine: efficiency = 1 - (T_cold / T_hot), where temperatures are in Kelvin. For OTEC with surface water at 28 degrees C (301 K) and deep water at 4 degrees C (277 K), what is the maximum theoretical efficiency?
-
-A. Approximately 86% (very high efficiency like a modern gas turbine)
-B. Approximately 50% (moderate efficiency)
-C. Approximately 8% (very low efficiency due to the small temperature difference)
-D. Approximately 0.1% (essentially zero usable energy)
-
-Correct Answer: C
-
-Feedback: Correct. Carnot efficiency = 1 - (277/301) = 1 - 0.920 = 0.080 or about 8%. This is the theoretical MAXIMUM — actual net efficiency is 2-3% after pumping costs. The small temperature differential (24 degrees vs. hundreds of degrees in fossil plants) fundamentally limits OTEC efficiency. Apply the Carnot formula: efficiency = 1 - (T_cold/T_hot) = 1 - (277/301). Note that both temperatures must be in Kelvin (add 273 to Celsius). The result shows the maximum fraction of thermal energy that can be converted to work.
-
----
-
-### Question 3
-
-A conventional natural gas power plant operates with a temperature difference of approximately 1,000 degrees Celsius. OTEC operates with approximately 20 degrees Celsius. What engineering consequence does this 50-fold difference in temperature gradient have?
-
-A. No engineering consequence — both systems produce similar amounts of electricity
-B. OTEC must process approximately 50 times more working fluid per unit of electricity generated, requiring massive heat exchangers and seawater pumps
-C. OTEC compensates by running 50 times faster than gas turbines
-D. The temperature difference only affects efficiency, not equipment size
-
-Correct Answer: B
-
-Feedback: Correct. Because each unit of seawater contains very little extractable energy (due to the small temperature difference and low Carnot efficiency), enormous volumes must be processed. A 100 MW OTEC plant must pump millions of gallons of seawater per minute, requiring massive infrastructure that dominates the engineering challenge and cost. If each gallon of water provides very little energy (due to low efficiency), how much water must be processed to generate significant electricity? Compare this to a gas plant that extracts much more energy per unit of fuel.
-
----
-
-### Question 4
-
-OTEC deep-water intake pipes must extend to 800-1,000 meters depth. What is the primary engineering challenge of building and maintaining these pipes in the open ocean?
-
-A. The pipes must be heated to prevent the cold water from freezing
-B. The pipes face enormous hydrostatic pressure, ocean current forces, corrosive saltwater, biofouling by marine organisms, and potential damage from storms — all while maintaining structural integrity over decades
-C. Deep water cannot be pumped to the surface because of pressure differences
-D. The pipes are too expensive to manufacture but are otherwise straightforward to maintain
-
-Correct Answer: B
-
-Feedback: Correct. The deep-water pipe faces multiple simultaneous challenges: hydrostatic pressure increases with depth, ocean currents exert lateral forces, saltwater corrodes metals, marine organisms (barnacles, algae) colonize surfaces and reduce thermal efficiency, and tropical storms can damage surface connections. These combined stresses must be managed for 20-30 year operational lifespans. Consider all the environmental forces acting on a pipe that extends 1 km into the ocean: pressure, currents, corrosion, biological growth, and storm damage. What makes maintaining such infrastructure challenging?
-
----
-
-### Question 5
-
-Unlike solar and wind energy, OTEC can generate electricity 24 hours a day, 365 days a year. What physical characteristic of the ocean makes this baseload consistency possible?
-
-A. The ocean is heated by underwater volcanoes that operate continuously
-B. Ocean surface temperature and deep water temperature remain relatively stable regardless of time of day or season in tropical regions — the thermal gradient is always present because of the ocean's enormous heat capacity
-C. OTEC plants store energy during the day for nighttime use
-D. Wind drives the temperature differential, and wind blows at night too
-
-Correct Answer: B
-
-Feedback: Correct. The ocean's enormous thermal mass (high heat capacity) means surface temperatures in the tropics vary by only 1-2 degrees Celsius between day and night, and deep water temperature is essentially constant. Unlike solar (no sun at night) or wind (intermittent), the temperature gradient is continuously available. Consider what drives solar and wind intermittency versus what drives OTEC. Solar depends on sunlight (absent at night). Wind varies unpredictably. What about the ocean temperature gradient — does it change significantly between day and night?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Surface Water Temperature, Deep Water Temperature, Temperature Differential, Fluid Flow Rate, Turbine Efficiency, Energy Conversion, Environmental Impact, Infrastructure Cost, Power Output. Some components are external (Surface Water Temperature, Deep Water Temperature) and some are internal (Temperature Differential, Fluid Flow Rate, Turbine Efficiency, Energy Conversion, Environmental Impact, Infrastructure Cost, Power Output). The student needs to understand what each component represents and how they are organized.
 
 The model shows that reducing the Temperature Differential from 24 degrees to 15 degrees Celsius causes Power Output to drop by more than 50%, even though the temperature change is only about 35%. What physical relationship explains this nonlinear response?
 
@@ -997,11 +922,15 @@ D. The deep water pump automatically shuts down at lower differentials
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a compounding effect: reduced differential lowers both the Carnot efficiency ceiling and the thermal energy available per unit of water. Meanwhile, pumping costs (which are roughly fixed) consume a larger percentage of the reduced output. Net power drops faster than the differential reduction because of this double squeeze on efficiency. Consider two effects: (1) lower temperature differential means lower theoretical efficiency, and (2) the energy cost of pumping water remains roughly the same. If the gross output decreases but the pumping cost stays constant, what happens to net output?
+Feedback: Correct. The model reveals a compounding effect: reduced differential lowers both the Carnot efficiency ceiling and the thermal energy available per unit of water. Meanwhile, pumping costs (which are roughly fixed) consume a larger percentage of the reduced output. Net power drops faster than the differential reduction because of this double squeeze on efficiency. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Temperature Differential increases, Energy Conversion increases; when Fluid Flow Rate increases, Power Output increases. The student is trying to understand why these relationships are positive or negative.
 
 The model includes Environmental Impact as an internal variable that increases with Fluid Flow Rate. A student argues this trade-off makes OTEC environmentally harmful. What evidence from the model provides a more nuanced evaluation?
 
@@ -1012,11 +941,15 @@ D. The model does not address environmental impact
 
 Correct Answer: B
 
-Feedback: Correct. The model captures a genuine duality: cold, nutrient-rich deep water brought to the surface can fertilize marine ecosystems and enhance fisheries (positive), but it also changes local temperature patterns and disrupts existing ecosystem structure (negative). Responsible OTEC design must manage this trade-off through careful siting and discharge management. Consider what happens when you pump nutrient-rich deep water to the nutrient-depleted surface. Is the ecological effect entirely negative, or could there be beneficial consequences alongside the disruptive ones?
+Feedback: Correct. The model captures a genuine duality: cold, nutrient-rich deep water brought to the surface can fertilize marine ecosystems and enhance fisheries (positive), but it also changes local temperature patterns and disrupts existing ecosystem structure (negative). Responsible OTEC design must manage this trade-off through careful siting and discharge management. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Temperature Differential increases, Energy Conversion increases and when Fluid Flow Rate increases, Power Output increases and when Fluid Flow Rate increases, Environmental Impact increases. The student changes one variable to see how the whole system responds.
 
 The model classifies Surface Water Temperature and Deep Water Temperature as external variables. Why is Temperature Differential classified as internal even though it is simply the mathematical difference between them?
 
@@ -1027,11 +960,15 @@ D. The classification is incorrect and should be changed
 
 Correct Answer: B
 
-Feedback: Correct. While Temperature Differential appears to be a simple calculation, in practice it is affected by the system's own operation. Cold water discharged near the surface can reduce the local surface temperature, decreasing the effective differential. This feedback makes it an emergent property rather than a pure input. Consider whether the OTEC system itself can change the local temperature conditions. If the system discharges cold deep water near the surface, what happens to the local surface temperature? Does the differential remain constant?
+Feedback: Correct. While Temperature Differential appears to be a simple calculation, in practice it is affected by the system's own operation. Cold water discharged near the surface can reduce the local surface temperature, decreasing the effective differential. This feedback makes it an emergent property rather than a pure input. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.2 + CCC3 (Scale, Proportion, and Quantity)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The maximum scale scenario shows that increasing Fluid Flow Rate 10x increases Power Output approximately 10x but increases Infrastructure Cost by 15x and Environmental Impact by 12x. What does this disproportionate scaling reveal?
 
@@ -1042,11 +979,15 @@ D. Infrastructure Cost and Environmental Impact are unrelated to Fluid Flow Rate
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that power output scales approximately linearly with flow rate, but costs and impacts scale superlinearly (faster than linear). This means there is an economically optimal facility size beyond which each additional megawatt costs more and causes more harm per unit of energy — a critical insight for OTEC deployment planning. Compare the scaling factors: power goes up 10x but cost goes up 15x. Does the cost per unit of energy decrease, stay the same, or increase as the facility scales up?
+Feedback: Correct. The model reveals that power output scales approximately linearly with flow rate, but costs and impacts scale superlinearly (faster than linear). This means there is an economically optimal facility size beyond which each additional megawatt costs more and causes more harm per unit of energy — a critical insight for OTEC deployment planning. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Surface Water Temperature, Deep Water Temperature), but they can take action on internal components (Temperature Differential, Fluid Flow Rate, Turbine Efficiency, Energy Conversion, Environmental Impact, Infrastructure Cost, Power Output). They need to decide which action would be most effective based on what the model shows.
 
 An island nation currently pays $0.40/kWh for diesel electricity. The model predicts OTEC could deliver power at $0.15-0.25/kWh. A student argues OTEC is clearly the better option. What important variable from the model should temper this conclusion?
 
@@ -1057,27 +998,18 @@ D. The diesel price will decrease to below OTEC cost in the future
 
 Correct Answer: B
 
-Feedback: Correct. While operating cost per kWh favors OTEC, the model shows that Infrastructure Cost is enormous — $25,000-$50,000 per installed kilowatt, orders of magnitude higher than diesel generators. The island must finance billions in upfront construction costs and operate for decades to achieve the per-kWh savings. This capital barrier, not operating cost, is typically the limiting factor. Consider the difference between operating cost (per kWh) and capital cost (upfront investment). Even if OTEC is cheaper to run, what about the cost to build the facility in the first place?
+Feedback: Correct. While operating cost per kWh favors OTEC, the model shows that Infrastructure Cost is enormous — $25,000-$50,000 per installed kilowatt, orders of magnitude higher than diesel generators. The island must finance billions in upfront construction costs and operate for decades to achieve the per-kWh savings. This capital barrier, not operating cost, is typically the limiting factor. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.2, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.2, CCC3)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

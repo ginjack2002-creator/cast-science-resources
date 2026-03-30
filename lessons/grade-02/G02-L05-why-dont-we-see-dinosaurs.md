@@ -825,77 +825,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS4-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Did dinosaurs really live on Earth?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
 
-A. No, dinosaurs are only in movies
-B. Yes, dinosaurs lived on Earth millions of years ago
-C. Yes, dinosaurs still live on Earth today
-D. No, dinosaurs are just big lizards
-
-Correct Answer: B
-
-Feedback: That is right! Dinosaurs really lived on Earth millions of years ago. We know this because scientists have found their fossils. Dinosaurs were real animals that lived on Earth millions of years ago. Scientists have found their bones, teeth, and footprints preserved in rocks called fossils.
-
----
-
-### Question 2
-
-What is a fossil?
-
-A. A type of pet
-B. A fancy rock that sparkles
-C. The remains of a plant or animal from long ago preserved in rock
-D. A toy shaped like a dinosaur
-
-Correct Answer: C
-
-Feedback: Yes! A fossil is the remains or trace of a plant or animal from long ago that has been preserved in rock over millions of years. A fossil is not just any rock. It contains the remains or traces of living things from long ago, like bones, teeth, shells, or footprints, that were preserved in rock over millions of years.
-
----
-
-### Question 3
-
-Why are there no dinosaurs alive today?
-
-A. People caught all of them
-B. They are hiding underground
-C. They went to another planet
-D. Something big happened that they could not survive
-
-Correct Answer: D
-
-Feedback: Correct! Something big happened (a giant asteroid hit Earth) that changed the environment so much that dinosaurs could not survive. They went extinct. Dinosaurs went extinct because a giant asteroid hit Earth about 66 million years ago. It changed the climate so much that dinosaurs could not find food or survive.
-
----
-
-### Question 4
-
-What does extinct mean?
-
-A. An animal that is sleeping for a long time
-B. An animal that moved to a different place
-C. When every single one of a type of animal has died and none are left
-D. An animal that is very small
-
-Correct Answer: C
-
-Feedback: That is right! Extinct means every single one of that type of animal has died and there are none left alive anywhere on Earth. Extinct does not mean hiding or sleeping. It means every last one of that type of animal has died and there are none left alive anywhere on Earth. They are gone forever.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Habitat Change, Animal Survival, Population Size. Some components are external (Habitat Change) and some are internal (Animal Survival, Population Size). The student needs to understand what each component represents and how they are organized.
 
 What happened when the dinosaurs' habitat changed a LOT?
 
@@ -906,11 +846,15 @@ D. Nothing happened to the dinosaurs
 
 Correct Answer: B
 
-Feedback: Correct! When the habitat changed too much and too fast, dinosaurs could not find the food, water, and shelter they needed. They went extinct. When a habitat changes a lot very quickly, animals cannot adapt fast enough. Dinosaurs could not find food or shelter after the asteroid changed their world, so their population dropped to zero and they went extinct.
+Feedback: Correct! When the habitat changed too much and too fast, dinosaurs could not find the food, water, and shelter they needed. They went extinct. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Habitat Change increases, Animal Survival decreases; when Animal Survival increases, Population Size increases. The student is trying to understand why these relationships are positive or negative.
 
 Scientists found a fossil of a fish in the middle of a desert. What does this tell us?
 
@@ -921,11 +865,15 @@ D. The fossil is fake
 
 Correct Answer: C
 
-Feedback: Yes! A fish fossil in a desert is evidence that the area was once covered by water. Habitats change over millions of years. Fossils are clues about the past. A fish fossil in a desert tells us that millions of years ago, that spot was underwater. Habitats can change a lot over very long time periods.
+Feedback: Yes! A fish fossil in a desert is evidence that the area was once covered by water. Habitats change over millions of years. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Habitat Change increases, Animal Survival decreases and when Animal Survival increases, Population Size increases. The student changes one variable to see how the whole system responds.
 
 In our model, what is the relationship between Habitat Change and Animal Survival?
 
@@ -936,11 +884,15 @@ D. Positive: animals like when things change a lot
 
 Correct Answer: B
 
-Feedback: Correct! The relationship is negative. When the habitat changes a lot, it becomes harder for animals to find what they need, so survival goes down. It is a negative relationship. When habitat change increases, animal survival decreases because the animals cannot find food, water, and shelter in the changed environment.
+Feedback: Correct! The relationship is negative. When the habitat changes a lot, it becomes harder for animals to find what they need, so survival goes down. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which animals alive today are related to dinosaurs?
 
@@ -951,25 +903,37 @@ D. Snakes and lizards only
 
 Correct Answer: C
 
-Feedback: That is right! Scientists discovered that birds are actually living dinosaurs. They evolved from small feathered dinosaurs millions of years ago. Fossil evidence shows that birds evolved from small feathered dinosaurs. So every bird you see today, from chickens to eagles, is actually a modern dinosaur!
+Feedback: That is right! Scientists discovered that birds are actually living dinosaurs. They evolved from small feathered dinosaurs millions of years ago. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Change), but they can take action on internal components (Animal Survival, Population Size). They need to decide which action would be most effective based on what the model shows.
+
+Did dinosaurs really live on Earth?
+
+A. No, dinosaurs are only in movies
+B. Yes, dinosaurs lived on Earth millions of years ago
+C. Yes, dinosaurs still live on Earth today
+D. No, dinosaurs are just big lizards
+
+Correct Answer: B
+
+Feedback: That is right! Dinosaurs really lived on Earth millions of years ago. We know this because scientists have found their fossils. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: D
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

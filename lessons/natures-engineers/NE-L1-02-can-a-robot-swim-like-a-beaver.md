@@ -168,77 +168,17 @@ Biomechanical Engineers study how animals move and use those ideas to design bet
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-LS1-1, 3-5-ETS1-1, 3-5-ETS1-3.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What does it mean to copy an idea from nature to solve a problem?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. Taking an animal home as a pet
-B. Using a design found in nature to build something useful
-C. Drawing a picture of an animal
-D. Planting a garden
-
-Correct Answer: B
-
-Feedback: Yes! Using designs found in nature to build useful things is called biomimicry. Engineers study animals and plants to get ideas for better technology. Copying ideas from nature means studying how animals and plants solve problems, then using those ideas to build better technology. This is called biomimicry.
-
----
-
-### Question 2
-
-Why do you think a beaver has a flat tail?
-
-A. It looks nice
-B. It helps the beaver swim and steer in the water
-C. It keeps the beaver warm at night
-D. It has no purpose at all
-
-Correct Answer: B
-
-Feedback: Correct! A beaver's flat tail is an adaptation that helps it swim efficiently by pushing against the water like a paddle. A beaver's flat tail is specially shaped to help it swim. The flat shape pushes against water like a paddle, giving the beaver speed and steering ability. This is called an adaptation.
-
----
-
-### Question 3
-
-If an engineer wanted to build a swimming robot, where might they look for ideas?
-
-A. At a car factory
-B. At animals that are good swimmers
-C. At a grocery store
-D. At a library for fiction books
-
-Correct Answer: B
-
-Feedback: That is right! Engineers often study animals that are good swimmers, like beavers, fish, and dolphins, to get ideas for designing swimming robots. Engineers look at animals that are good at swimming. By studying how fish, beavers, and dolphins move through water, engineers can design better swimming robots. Nature has been testing designs for millions of years.
-
----
-
-### Question 4
-
-What is a tradeoff?
-
-A. When you trade toys with a friend
-B. When improving one thing means making another thing worse
-C. When you get everything you want with no problems
-D. When two people agree on the same answer
-
-Correct Answer: B
-
-Feedback: Correct! A tradeoff is when improving one thing means another thing gets worse. You cannot have everything at once. A tradeoff happens when making one thing better causes another thing to get worse. For example, making a robot bigger might give it more power, but it would also use more energy. You cannot have everything.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Tail Shape, Body Size, Swimming Speed, Energy Used. Some components are external (Tail Shape, Body Size) and some are internal (Swimming Speed, Energy Used). The student needs to understand what each component represents and how they are organized.
 
 What is biomimicry?
 
@@ -249,11 +189,15 @@ D. Taking photographs of animals
 
 Correct Answer: B
 
-Feedback: Correct! Biomimicry is the practice of designing human technology by copying ideas and strategies found in nature. Biomimicry means designing technology by studying and copying ideas from nature. Engineers look at how animals solve problems and use those strategies to build better machines.
+Feedback: Correct! Biomimicry is the practice of designing human technology by copying ideas and strategies found in nature. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Tail Shape increases, Swimming Speed decreases; when Body Size increases, Swimming Speed decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, what happened when you changed the tail shape from flat (beaver) to round?
 
@@ -264,11 +208,15 @@ D. The robot could not swim at all
 
 Correct Answer: B
 
-Feedback: Yes! A flat tail pushes more water and creates more swimming speed. Changing to a round tail decreased speed because it pushes less water. The model showed that a flat tail (like a beaver's) pushes more water than a round tail, creating more swimming speed. When you switched to a round tail, speed went down because less water was being pushed.
+Feedback: Yes! A flat tail pushes more water and creates more swimming speed. Changing to a round tail decreased speed because it pushes less water. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Tail Shape increases, Swimming Speed decreases and when Body Size increases, Swimming Speed decreases and when Body Size increases, Energy Used increases. The student changes one variable to see how the whole system responds.
 
 What tradeoff did the model reveal about body size?
 
@@ -279,11 +227,15 @@ D. Body size has no effect on swimming
 
 Correct Answer: C
 
-Feedback: Correct! The model showed that bigger bodies provide more power but also use more energy. This is a classic engineering tradeoff. The model revealed a tradeoff: a bigger body is stronger and more powerful, but it also uses more energy to move through water. Good engineering means finding the best balance between power and energy use.
+Feedback: Correct! The model showed that bigger bodies provide more power but also use more energy. This is a classic engineering tradeoff. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why do engineers study animal shapes instead of inventing designs from scratch?
 
@@ -294,25 +246,37 @@ D. Because the government requires it
 
 Correct Answer: B
 
-Feedback: That is right! Nature has been testing designs through evolution for millions of years. Animals alive today have shapes and features that have been refined over a very long time. Engineers study animal shapes because evolution has been testing and improving these designs for millions of years. The animals alive today have features that have been refined over vast stretches of time, making them excellent starting points for engineering designs.
+Feedback: That is right! Nature has been testing designs through evolution for millions of years. Animals alive today have shapes and features that have been refined over a very long time. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Tail Shape, Body Size), but they can take action on internal components (Swimming Speed, Energy Used). They need to decide which action would be most effective based on what the model shows.
+
+What does it mean to copy an idea from nature to solve a problem?
+
+A. Taking an animal home as a pet
+B. Using a design found in nature to build something useful
+C. Drawing a picture of an animal
+D. Planting a garden
+
+Correct Answer: B
+
+Feedback: Yes! Using designs found in nature to build useful things is called biomimicry. Engineers study animals and plants to get ideas for better technology. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Lesson Metadata
 

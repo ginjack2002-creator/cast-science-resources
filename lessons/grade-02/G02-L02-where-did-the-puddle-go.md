@@ -825,77 +825,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-PS1-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What happens to a puddle on a sunny day?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.4 + CCC4 (Systems and System Models)
 
-A. It gets bigger
-B. It gets smaller and dries up
-C. It turns into ice
-D. It stays the same size all day
-
-Correct Answer: B
-
-Feedback: That is right! On a sunny day, the sun heats the water and the puddle gets smaller and dries up. If you watch a puddle on a sunny day, it gets smaller and smaller until it dries up. The sun's heat causes the water to change.
-
----
-
-### Question 2
-
-Where do you think puddle water goes when it dries up?
-
-A. It soaks into outer space
-B. It goes into the air
-C. It disappears forever
-D. It goes underground to the center of Earth
-
-Correct Answer: B
-
-Feedback: Yes! When a puddle dries up, the water goes into the air as an invisible gas called water vapor. Puddle water does not disappear forever. It turns into an invisible gas called water vapor and goes into the air around us.
-
----
-
-### Question 3
-
-Can you see water in the air?
-
-A. Yes, water is always visible
-B. No, water in the air is an invisible gas
-C. Only at night
-D. Only when it is cold
-
-Correct Answer: B
-
-Feedback: Correct! When water is a gas (water vapor), it is invisible. You cannot see it, but it is all around us in the air. Water vapor is an invisible gas. When water evaporates, it turns into water vapor that you cannot see, even though it is in the air all around us.
-
----
-
-### Question 4
-
-What makes water get warmer?
-
-A. Darkness
-B. Cold wind
-C. Heat from the sun
-D. More water
-
-Correct Answer: C
-
-Feedback: That is right! Heat from the sun warms up water. The sun is our biggest source of heat. The sun sends heat energy to Earth. That heat warms up water in puddles, lakes, and oceans. Sunlight is what makes water warmer.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun Heat, Evaporation Speed, Puddle Size. Some components are external (Sun Heat) and some are internal (Evaporation Speed, Puddle Size). The student needs to understand what each component represents and how they are organized.
 
 What is evaporation?
 
@@ -906,11 +846,15 @@ D. When water gets dirty
 
 Correct Answer: B
 
-Feedback: Yes! Evaporation is when liquid water heats up and turns into an invisible gas called water vapor. Evaporation is the process where liquid water gets enough heat energy to turn into water vapor, an invisible gas. It is how puddles dry up.
+Feedback: Yes! Evaporation is when liquid water heats up and turns into an invisible gas called water vapor. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sun Heat increases, Evaporation Speed increases; when Evaporation Speed increases, Puddle Size decreases. The student is trying to understand why these relationships are positive or negative.
 
 What is condensation?
 
@@ -921,11 +865,15 @@ D. When water goes underground
 
 Correct Answer: A
 
-Feedback: Correct! Condensation is when water vapor cools down and turns back into tiny drops of liquid water, like on a cold glass. Condensation is the opposite of evaporation. When water vapor cools down, it turns back into tiny liquid water drops. You can see this on the outside of a cold glass on a warm day.
+Feedback: Correct! Condensation is when water vapor cools down and turns back into tiny drops of liquid water, like on a cold glass. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sun Heat increases, Evaporation Speed increases and when Evaporation Speed increases, Puddle Size decreases. The student changes one variable to see how the whole system responds.
 
 Why does a puddle dry up faster on a hot sunny day than on a cloudy day?
 
@@ -936,11 +884,15 @@ D. Because clouds add more water to the puddle
 
 Correct Answer: B
 
-Feedback: That is right! More heat from the sun gives the water more energy to evaporate. Hot sunny days speed up evaporation. The sun provides heat energy. More heat makes water evaporate faster. On a hot sunny day, the puddle gets lots of heat, so the water turns into vapor quickly and the puddle shrinks fast.
+Feedback: That is right! More heat from the sun gives the water more energy to evaporate. Hot sunny days speed up evaporation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Is evaporation a reversible change?
 
@@ -951,25 +903,37 @@ D. Yes, but only in winter
 
 Correct Answer: B
 
-Feedback: Correct! Evaporation is reversible. Water can turn from liquid to gas (evaporation) and back from gas to liquid (condensation) over and over again. Evaporation IS reversible. Water vapor can cool down and turn back into liquid water through condensation. The water goes from liquid to gas and back to liquid, again and again.
+Feedback: Correct! Evaporation is reversible. Water can turn from liquid to gas (evaporation) and back from gas to liquid (condensation) over and over again. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun Heat), but they can take action on internal components (Evaporation Speed, Puddle Size). They need to decide which action would be most effective based on what the model shows.
+
+What happens to a puddle on a sunny day?
+
+A. It gets bigger
+B. It gets smaller and dries up
+C. It turns into ice
+D. It stays the same size all day
+
+Correct Answer: B
+
+Feedback: That is right! On a sunny day, the sun heats the water and the puddle gets smaller and dries up. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.4, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

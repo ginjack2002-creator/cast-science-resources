@@ -948,86 +948,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Fossil fuels (oil, coal, natural gas) are considered non-renewable resources. Which statement BEST explains why scientists are working to develop alternative fuel sources?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.5 + CCC4 (Systems and System Models)
 
-A. Fossil fuels are too expensive for most countries to afford
-B. Fossil fuel reserves are finite and their combustion releases greenhouse gases that drive climate change, creating both supply and environmental sustainability crises
-C. Fossil fuels are a recent discovery and we have not yet learned how to use them efficiently
-D. Alternative fuels have already replaced fossil fuels in most applications
-
-Correct Answer: B
-
-Feedback: Correct. Fossil fuels are finite geological resources formed over millions of years. Their combustion releases stored carbon as CO2, contributing to climate change. Developing renewable alternatives addresses both resource depletion and environmental impact. Consider the two fundamental problems with fossil fuel dependence: one is about supply (how much is left) and one is about impact (what happens when we burn it). Which answer addresses both?
-
----
-
-### Question 2
-
-Microorganisms like yeast have been used for thousands of years to ferment sugars into ethanol (alcohol). How does modern metabolic engineering differ from traditional fermentation?
-
-A. Modern metabolic engineering uses larger fermentation vessels
-B. Metabolic engineering modifies the organism's genetic pathways to produce specific desired products more efficiently, rather than relying on the organism's natural metabolic capabilities
-C. Traditional fermentation produces ethanol while modern methods cannot
-D. There is no meaningful difference between the two approaches
-
-Correct Answer: B
-
-Feedback: Correct. Traditional fermentation relies on organisms' natural metabolic capabilities. Metabolic engineering redesigns those pathways, adding new enzyme genes, deleting competing pathways, and optimizing regulatory elements to redirect cellular resources toward a specific product like advanced biofuels. Consider the difference between using an organism as-is versus deliberately modifying its internal biochemistry to redirect its metabolism toward a product it would not naturally produce at useful levels.
-
----
-
-### Question 3
-
-A cell converts glucose into energy through a series of enzyme-catalyzed reactions. If you wanted a cell to produce biofuel instead of its normal products, what would you need to change?
-
-A. Feed the cell a different sugar
-B. Add new enzyme genes that redirect metabolic intermediates toward fuel molecules instead of the cell's normal products
-C. Increase the temperature to force different reactions
-D. Remove all of the cell's original DNA
-
-Correct Answer: B
-
-Feedback: Correct. Metabolic engineering introduces new enzymatic steps (via gene insertion) that divert carbon from normal metabolic pathways toward desired fuel molecules. The cell's existing pathways provide the precursors, and engineered enzymes redirect them toward biofuel production. Think about metabolism as a network of enzyme-catalyzed reactions. Each enzyme catalyzes a specific conversion. To create a new product, you need to insert what at the appropriate branch point in the network?
-
----
-
-### Question 4
-
-An engineer observes that when a microbial biofuel pathway is pushed to maximum production, the cells grow very slowly and sometimes die. Which concept BEST explains this observation?
-
-A. The biofuel product is always toxic to cells
-B. The engineered pathway competes with the cell's own essential processes for shared resources like energy, amino acids, and ribosomes, creating a metabolic burden that compromises cell viability
-C. The cells are allergic to the engineered genes
-D. Maximum production always kills cells regardless of the product
-
-Correct Answer: B
-
-Feedback: Correct. Cells have finite resources. Ribosomes making engineered pathway enzymes are not available for making essential cellular proteins. ATP spent on the biofuel pathway is not available for cell maintenance. This resource competition is called metabolic burden. Consider a factory analogy: if you reassign most of your workers to a new product line, who maintains the building, runs the cafeteria, and keeps the lights on? Cells face the same resource allocation problem.
-
----
-
-### Question 5
-
-Many biochemical reactions require helper molecules called cofactors (such as NAD+/NADH and ATP/ADP) to proceed. Why is cofactor availability important in metabolic engineering?
-
-A. Cofactors are only needed in small quantities and never limit reactions
-B. Engineered pathways may consume cofactors faster than the cell can regenerate them, causing the entire pathway to stall even if all enzymes are present and active
-C. Cofactors are only important in animal cells, not microbes
-D. Cofactors are catalysts that are never consumed in reactions
-
-Correct Answer: B
-
-Feedback: Correct. Cofactors like NADH and ATP are recycled, not created from scratch for each reaction. If an engineered pathway consumes NAD+ to NADH faster than the cell regenerates NAD+, the cofactor pool becomes imbalanced and pathway flux stalls, regardless of enzyme availability. Cofactors participate in reactions and must be recycled back to their original form. Consider what happens when an engineered pathway uses a cofactor at a rate that exceeds the cell's ability to regenerate it.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Substrate Concentration, Enzyme Activity, Pathway Flux, Cofactor Availability, Metabolic Burden, Cell Growth Rate, Product Yield, Byproduct Accumulation, Fermentation Efficiency. Some components are external (Substrate Concentration) and some are internal (Enzyme Activity, Pathway Flux, Cofactor Availability, Metabolic Burden, Cell Growth Rate, Product Yield, Byproduct Accumulation, Fermentation Efficiency). The student needs to understand what each component represents and how they are organized.
 
 A student's model shows that setting all pathway enzymes to maximum expression DECREASES total biofuel Fermentation Efficiency compared to a moderately expressed pathway. Which systems-level explanation BEST accounts for this paradox?
 
@@ -1038,11 +963,15 @@ D. Maximum expression always improves production in real biological systems
 
 Correct Answer: A
 
-Feedback: Correct. This is the central paradox of metabolic engineering. Total productivity = per-cell production x number of cells. Maximum enzyme expression may increase per-cell production capacity but simultaneously crashes cell growth through metabolic burden. The optimal expression level balances per-cell yield against population growth. Total biofuel production depends on two factors: how much each cell produces AND how many cells there are. What happens to the second factor when the first is pushed to its absolute maximum?
+Feedback: Correct. This is the central paradox of metabolic engineering. Total productivity = per-cell production x number of cells. Maximum enzyme expression may increase per-cell production capacity but simultaneously crashes cell growth through metabolic burden. The optimal expression level balances per-cell yield against population growth. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Substrate Concentration increases, Pathway Flux increases; when Enzyme Activity increases, Pathway Flux increases. The student is trying to understand why these relationships are positive or negative.
 
 A model simulation reveals that a pathway bottleneck at the third enzymatic step limits overall Pathway Flux to 30% of theoretical maximum, even though all other enzymes operate at near-maximum capacity. Which optimization strategy is MOST effective?
 
@@ -1053,11 +982,15 @@ D. Decrease expression of the bottleneck enzyme to reduce competition
 
 Correct Answer: B
 
-Feedback: Correct. In a metabolic pathway, overall flux is limited by the slowest step (the bottleneck). Increasing non-bottleneck enzymes wastes resources without improving flux. Targeted overexpression of only the bottleneck enzyme relieves the rate-limiting step with minimal additional metabolic burden. Think of a pathway as water flowing through pipes of different diameters. If one pipe is narrower than the others, what is the most efficient way to increase total flow? Do you need to widen all pipes, or just the narrowest one?
+Feedback: Correct. In a metabolic pathway, overall flux is limited by the slowest step (the bottleneck). Increasing non-bottleneck enzymes wastes resources without improving flux. Targeted overexpression of only the bottleneck enzyme relieves the rate-limiting step with minimal additional metabolic burden. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Substrate Concentration increases, Pathway Flux increases and when Enzyme Activity increases, Pathway Flux increases and when Enzyme Activity increases, Metabolic Burden increases. The student changes one variable to see how the whole system responds.
 
 A student observes that Byproduct Accumulation of acetate above 8 g/L inhibits further Cell Growth Rate in their model. Which intervention would MOST effectively address this problem?
 
@@ -1068,11 +1001,15 @@ D. Increase bioreactor temperature to evaporate the acetate
 
 Correct Answer: B
 
-Feedback: Correct. A two-pronged approach is most effective: genetic engineering eliminates or reduces the metabolic branch that produces acetate (redirecting carbon toward the desired product), while process engineering (continuous fermentation with in-line removal) prevents any residual acetate from reaching inhibitory concentrations. Byproduct accumulation is both a carbon diversion problem (lost yield) and a toxicity problem (growth inhibition). What combination of genetic and process engineering strategies addresses both aspects simultaneously?
+Feedback: Correct. A two-pronged approach is most effective: genetic engineering eliminates or reduces the metabolic branch that produces acetate (redirecting carbon toward the desired product), while process engineering (continuous fermentation with in-line removal) prevents any residual acetate from reaching inhibitory concentrations. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An economic analysis within the model shows that achieving 85% of theoretical maximum Product Yield at titers above 50 g/L is required for commercial viability. Current laboratory strains achieve 45% yield at 15 g/L. Which assessment MOST accurately characterizes the engineering challenge?
 
@@ -1083,11 +1020,15 @@ D. The economic targets are arbitrary and can be changed to match current perfor
 
 Correct Answer: B
 
-Feedback: Correct. The lab-to-commercial gap cannot be closed by optimizing any single variable. It requires integrated systems engineering: improving yield (pathway optimization), increasing titer (toxicity tolerance, continuous removal), reducing burden (balanced expression), and maintaining cofactor balance, all simultaneously within a viable cell. Consider that 45% to 85% yield AND 15 to 50 g/L titer are both required. These are different metrics that depend on different cellular processes. Can either be achieved by modifying just one aspect of the system?
+Feedback: Correct. The lab-to-commercial gap cannot be closed by optimizing any single variable. It requires integrated systems engineering: improving yield (pathway optimization), increasing titer (toxicity tolerance, continuous removal), reducing burden (balanced expression), and maintaining cofactor balance, all simultaneously within a viable cell. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Substrate Concentration), but they can take action on internal components (Enzyme Activity, Pathway Flux, Cofactor Availability, Metabolic Burden, Cell Growth Rate, Product Yield, Byproduct Accumulation, Fermentation Efficiency). They need to decide which action would be most effective based on what the model shows.
 
 A student's model demonstrates that reducing Enzyme Activity from maximum to 60% of maximum INCREASES total Fermentation Efficiency by 25%. The student claims this proves that 'less is more' in metabolic engineering. Which refinement makes this claim MORE scientifically precise?
 
@@ -1098,27 +1039,18 @@ D. Reducing enzyme activity reduces product quality, making the comparison inval
 
 Correct Answer: B
 
-Feedback: Correct. Total productivity = (per-cell production rate) x (total cell number). Maximum enzyme expression maximizes the first term but minimizes the second through metabolic burden. The optimal expression level is where the product of both terms is maximized, which is always an intermediate value when burden is significant. The student's observation is real but needs quantitative framing. Total production is a function of BOTH per-cell yield and population size. At what enzyme expression level is this two-variable product maximized?
+Feedback: Correct. Total productivity = (per-cell production rate) x (total cell number). Maximum enzyme expression maximizes the first term but minimizes the second through metabolic burden. The optimal expression level is where the product of both terms is maximized, which is always an intermediate value when burden is significant. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.5, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.5, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

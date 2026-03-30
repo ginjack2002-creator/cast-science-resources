@@ -887,77 +887,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-6.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Where do plants get the energy they need to grow?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS1-6 + CCC4 (Systems and System Models)
 
-A. From the soil through their roots
-B. From sunlight through their leaves
-C. From water in the ground
-D. From other organisms they consume
-
-Correct Answer: B
-
-Feedback: Correct! Plants capture light energy from the Sun using chlorophyll in their leaves and convert it into chemical energy through photosynthesis. Not quite. Plants get their energy from sunlight. Their leaves contain chlorophyll, a green pigment that captures light energy and uses it to power photosynthesis, the process of making food.
-
----
-
-### Question 2
-
-What gas do plants take in from the air to make food?
-
-A. Oxygen
-B. Nitrogen
-C. Carbon dioxide
-D. Hydrogen
-
-Correct Answer: C
-
-Feedback: Correct! Plants absorb carbon dioxide (CO2) from the air through tiny pores in their leaves and use it as a carbon source during photosynthesis. Not quite. Plants take in carbon dioxide (CO2) from the air. They use the carbon atoms from CO2 to build sugar molecules during photosynthesis. Plants actually release oxygen as a byproduct.
-
----
-
-### Question 3
-
-Where do you think the MASS of a large tree comes from?
-
-A. Mostly from the soil it grows in
-B. Mostly from the water it absorbs
-C. Mostly from the carbon dioxide in the air
-D. Mostly from sunlight energy
-
-Correct Answer: C
-
-Feedback: Correct! Most of a tree's mass comes from carbon dioxide in the air. Plants use carbon atoms from CO2 to build glucose, cellulose, and all the organic molecules that make up wood, bark, and leaves. Not quite. This is a common misconception! Most of a tree's mass actually comes from carbon dioxide in the air. The carbon atoms from CO2 are rearranged into sugars and other organic molecules that become the tree's wood, bark, and leaves.
-
----
-
-### Question 4
-
-What is the role of the green color in plant leaves?
-
-A. It is just decoration to attract pollinators
-B. It is a pigment called chlorophyll that captures light energy
-C. It helps plants absorb water
-D. It protects leaves from insects
-
-Correct Answer: B
-
-Feedback: Correct! The green color comes from chlorophyll, a pigment that absorbs light energy (especially red and blue light) and uses it to power photosynthesis. Not quite. The green color in leaves is caused by chlorophyll, a pigment molecule that captures light energy from the Sun. This captured energy drives the chemical reactions of photosynthesis.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sunlight Intensity, Water Availability, CO₂ Concentration, Chlorophyll Amount. Some components are external (Sunlight Intensity, Water Availability, CO₂ Concentration) and some are internal (Chlorophyll Amount). The student needs to understand what each component represents and how they are organized.
 
 In the photosynthesis model, what happens when Sunlight Intensity is locked at 20% while water and CO2 remain normal?
 
@@ -968,11 +908,15 @@ D. Chlorophyll Amount increases automatically to capture more light
 
 Correct Answer: B
 
-Feedback: Correct! Sunlight provides the energy that drives photosynthesis. Without sufficient light, the plant cannot convert CO2 and water into glucose, even if those inputs are abundant. Not quite. Sunlight is the energy source for photosynthesis. Even with plenty of water and CO2, the plant cannot make glucose without adequate light energy. All three inputs are essential.
+Feedback: Correct! Sunlight provides the energy that drives photosynthesis. Without sufficient light, the plant cannot convert CO2 and water into glucose, even if those inputs are abundant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS1-6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sunlight Intensity increases, Glucose Production increases; when Water Availability increases, Glucose Production increases. The student is trying to understand why these relationships are positive or negative.
 
 Which statement correctly explains why most of a tree's mass comes from the air and not the soil?
 
@@ -983,11 +927,15 @@ D. Sunlight energy becomes solid matter inside the tree
 
 Correct Answer: B
 
-Feedback: Correct! During photosynthesis, trees take CO2 from the air and use light energy to rearrange the carbon atoms into glucose. That glucose is then converted into cellulose and other molecules that form wood, bark, and leaves. Not quite. Trees pull carbon dioxide out of the air and use photosynthesis to convert the carbon atoms into glucose molecules. Those glucose molecules are then used to build cellulose (wood fiber) and other structural molecules. The carbon in wood literally came from the air.
+Feedback: Correct! During photosynthesis, trees take CO2 from the air and use light energy to rearrange the carbon atoms into glucose. That glucose is then converted into cellulose and other molecules that form wood, bark, and leaves. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS1-6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sunlight Intensity increases, Glucose Production increases and when Water Availability increases, Glucose Production increases and when CO₂ Concentration increases, Glucose Production increases. The student changes one variable to see how the whole system responds.
 
 How are photosynthesis and cellular respiration related?
 
@@ -998,11 +946,15 @@ D. They both require sunlight to function
 
 Correct Answer: B
 
-Feedback: Correct! Photosynthesis and cellular respiration are balanced, opposite reactions. Photosynthesis uses light energy to build glucose from CO2 and water; respiration breaks glucose down to release energy, producing CO2 and water. Not quite. Photosynthesis and cellular respiration are reverse processes. Photosynthesis: CO2 + water + light -> glucose + O2. Respiration: glucose + O2 -> CO2 + water + energy. Plants actually do BOTH processes.
+Feedback: Correct! Photosynthesis and cellular respiration are balanced, opposite reactions. Photosynthesis uses light energy to build glucose from CO2 and water; respiration breaks glucose down to release energy, producing CO2 and water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS1-6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A scientist grows two identical plants. Plant A receives normal CO2 levels, and Plant B is placed in a sealed chamber with very low CO2. After four weeks, Plant B has grown much less. What does this evidence support?
 
@@ -1013,25 +965,37 @@ D. Low CO2 caused the plant to overheat
 
 Correct Answer: B
 
-Feedback: Correct! The plant with low CO2 grew less because CO2 provides the carbon atoms plants need to build glucose and other organic molecules. Without enough CO2, the plant cannot produce enough material to grow. Not quite. This experiment shows that CO2 is essential for plant growth. Carbon dioxide provides the carbon atoms that plants use to build glucose and structural molecules. Less CO2 means less raw material for growth.
+Feedback: Correct! The plant with low CO2 grew less because CO2 provides the carbon atoms plants need to build glucose and other organic molecules. Without enough CO2, the plant cannot produce enough material to grow. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS1-6 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sunlight Intensity, Water Availability, CO₂ Concentration), but they can take action on internal components (Chlorophyll Amount). They need to decide which action would be most effective based on what the model shows.
+
+Where do plants get the energy they need to grow?
+
+A. From the soil through their roots
+B. From sunlight through their leaves
+C. From water in the ground
+D. From other organisms they consume
+
+Correct Answer: B
+
+Feedback: Correct! Plants capture light energy from the Sun using chlorophyll in their leaves and convert it into chemical energy through photosynthesis. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS1-6, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS1-6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS1-6, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS1-6, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS1-6, CCC5)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

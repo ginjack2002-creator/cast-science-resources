@@ -825,77 +825,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS4-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why do you think there are so many different kinds of insects?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
 
-A. Because there is only one kind of place to live
-B. Because there are many different places to live and each needs different insects
-C. Because all insects look the same
-D. Because insects choose to look different for fun
-
-Correct Answer: B
-
-Feedback: That is right! There are many different habitats on Earth, and each habitat needs insects with different body features to survive there. Earth has many different habitats like gardens, ponds, forests, and deserts. Each habitat has different challenges, so insects in each place need different body features to survive.
-
----
-
-### Question 2
-
-What is a habitat?
-
-A. A type of insect
-B. The place where an animal lives and finds food, water, and shelter
-C. A pet store for bugs
-D. A type of rock
-
-Correct Answer: B
-
-Feedback: Yes! A habitat is the place where an animal lives and finds everything it needs to survive, like food, water, and shelter. A habitat is an animal's home in nature. It is the place that provides everything the animal needs to survive, including food, water, and shelter.
-
----
-
-### Question 3
-
-Do a butterfly and a water beetle need the same body features to survive?
-
-A. Yes, all insects need the same body parts
-B. No, they live in different places and need different features
-C. Yes, because they are both insects
-D. No, because one is bigger than the other
-
-Correct Answer: B
-
-Feedback: Correct! A butterfly flies in gardens and needs wings, while a water beetle swims in ponds and needs paddle-shaped legs. Different habitats need different features. Even though both are insects, they live in very different places. A butterfly needs wings to fly between flowers. A water beetle needs flat legs to swim in ponds. Their different habitats require different body features.
-
----
-
-### Question 4
-
-How many legs does an insect have?
-
-A. Four legs
-B. Eight legs
-C. Six legs
-D. Two legs
-
-Correct Answer: C
-
-Feedback: That is right! All insects have six legs. This is one feature that makes an insect an insect. Spiders have eight legs, so they are NOT insects. All insects have six legs and three body parts. Spiders have eight legs, so they are arachnids, not insects. If you count six legs, it is an insect!
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Habitat Type, Body Features, Survival Success. Some components are external (Habitat Type) and some are internal (Body Features, Survival Success). The student needs to understand what each component represents and how they are organized.
 
 A water beetle has flat, paddle-shaped legs. Why does it have this body feature?
 
@@ -906,11 +846,15 @@ D. Because it needs to fly between flowers
 
 Correct Answer: B
 
-Feedback: Correct! The water beetle's flat, paddle-shaped legs are an adaptation that helps it swim in its pond habitat. Its body features match the challenges of living in water. Body features match habitats. A water beetle lives in ponds, so it needs features for swimming. Flat, paddle-shaped legs push through water like oars, helping it move and find food in its water habitat.
+Feedback: Correct! The water beetle's flat, paddle-shaped legs are an adaptation that helps it swim in its pond habitat. Its body features match the challenges of living in water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Habitat Type increases, Body Features increases; when Body Features increases, Survival Success increases. The student is trying to understand why these relationships are positive or negative.
 
 What is diversity?
 
@@ -921,11 +865,15 @@ D. A type of insect
 
 Correct Answer: B
 
-Feedback: Yes! Diversity means having many different kinds of living things with lots of variety. Earth has incredible diversity, with over a million different insect species alone. Diversity means variety. Having many different kinds of living things is what makes life on Earth so diverse. There are over one million different species of insects, each unique.
+Feedback: Yes! Diversity means having many different kinds of living things with lots of variety. Earth has incredible diversity, with over a million different insect species alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Habitat Type increases, Body Features increases and when Body Features increases, Survival Success increases. The student changes one variable to see how the whole system responds.
 
 In our model, what happens when you change the Habitat Type from garden to pond?
 
@@ -936,11 +884,15 @@ D. Nothing changes at all
 
 Correct Answer: B
 
-Feedback: Correct! Different habitats need different body features. Garden insects need wings and camouflage, while pond insects need swimming legs and waterproof bodies. When the habitat changes, the body features that help an insect survive also change. A garden needs fliers with camouflage, while a pond needs swimmers with paddle legs. Different habitat, different features.
+Feedback: Correct! Different habitats need different body features. Garden insects need wings and camouflage, while pond insects need swimming legs and waterproof bodies. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is it important for an insect's body features to match its habitat?
 
@@ -951,25 +903,37 @@ D. Because insects with the wrong features grow bigger
 
 Correct Answer: C
 
-Feedback: That is right! When body features match the habitat, the insect can find food, hide from predators, and survive. A butterfly's wings help it fly to flowers in a garden, and a beetle's paddle legs help it swim in a pond. An insect survives best when its features match its habitat. A water beetle with paddle legs thrives in a pond. A butterfly with wings thrives in a garden. If the features do not match the habitat, the insect cannot find food or escape danger.
+Feedback: That is right! When body features match the habitat, the insect can find food, hide from predators, and survive. A butterfly's wings help it fly to flowers in a garden, and a beetle's paddle legs help it swim in a pond. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Type), but they can take action on internal components (Body Features, Survival Success). They need to decide which action would be most effective based on what the model shows.
+
+Why do you think there are so many different kinds of insects?
+
+A. Because there is only one kind of place to live
+B. Because there are many different places to live and each needs different insects
+C. Because all insects look the same
+D. Because insects choose to look different for fun
+
+Correct Answer: B
+
+Feedback: That is right! There are many different habitats on Earth, and each habitat needs insects with different body features to survive there. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why do you think zebras live together in large herds instead of living alone?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
 
-A. Zebras like to play games together
-B. Living in a group helps protect them from predators
-C. Zebras cannot find food by themselves
-D. Zebras are afraid of the dark
-
-Correct Answer: B
-
-Feedback: Great thinking! One of the biggest reasons animals live in groups is that it helps them stay safe from predators. More eyes watching means danger is spotted faster. While animals may enjoy being together, the main reason many animals live in groups is safety. A group has more eyes watching for predators, so danger is spotted faster.
-
----
-
-### Question 2
-
-What is a predator?
-
-A. An animal that eats only plants
-B. An animal that sleeps during the day
-C. An animal that hunts and eats other animals
-D. An animal that lives underground
-
-Correct Answer: C
-
-Feedback: That is right! A predator is an animal that hunts and eats other animals. Lions, hawks, and wolves are examples of predators. A predator is an animal that hunts other animals for food. Think of a lion hunting a zebra or a hawk catching a mouse.
-
----
-
-### Question 3
-
-Would you feel safer walking through a dark forest alone or with ten friends? Why?
-
-A. Alone, because friends slow you down
-B. With friends, because more people can watch for danger and help each other
-C. It does not matter how many people are with you
-D. Alone, because a group makes too much noise
-
-Correct Answer: B
-
-Feedback: Exactly! More friends means more eyes watching for danger and more people to help if something happens. Animals feel the same way! Most people feel safer in a group because more people can watch for danger and help each other. This is the same reason many animals live in groups.
-
----
-
-### Question 4
-
-Which of these animals do you think lives in a group?
-
-A. A wolf in a pack
-B. A polar bear that hunts alone
-C. A tiger that lives by itself
-D. An octopus at the bottom of the ocean
-
-Correct Answer: A
-
-Feedback: Yes! Wolves live in groups called packs. They hunt together, protect each other, and raise their pups as a team. Wolves live in groups called packs. Unlike polar bears, tigers, and octopuses, wolves work as a team to hunt, protect each other, and raise their young.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Group Size, Predator Detection, Survival Rate. Some components are external (Group Size) and some are internal (Predator Detection, Survival Rate). The student needs to understand what each component represents and how they are organized.
 
 In the model, when Group Size increases, what happens to Predator Detection?
 
@@ -904,11 +844,15 @@ D. Predator Detection disappears in large groups
 
 Correct Answer: C
 
-Feedback: Correct! Group Size and Predator Detection have a positive relationship. More animals in the group means more eyes watching, so predators are spotted faster. In the model, more animals means more eyes watching for predators. When Group Size goes up, Predator Detection goes up too. This is a positive relationship.
+Feedback: Correct! Group Size and Predator Detection have a positive relationship. More animals in the group means more eyes watching, so predators are spotted faster. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Group Size increases, Predator Detection increases; when Predator Detection increases, Survival Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 A herd of 30 antelope spots a lion faster than one antelope standing alone. What is the BEST explanation?
 
@@ -919,11 +863,15 @@ D. The lion is afraid of large numbers
 
 Correct Answer: B
 
-Feedback: You got it! With 30 animals watching in different directions, there is a much better chance that at least one will spot the lion early and warn the others. The key idea is that 30 pairs of eyes watching in different directions will spot danger faster than just one. When one animal sees the lion, it warns everyone else.
+Feedback: You got it! With 30 animals watching in different directions, there is a much better chance that at least one will spot the lion early and warn the others. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Group Size increases, Predator Detection increases and when Predator Detection increases, Survival Rate increases. The student changes one variable to see how the whole system responds.
 
 What does 'safety in numbers' mean for animal groups?
 
@@ -934,11 +882,15 @@ D. Numbers are safe but letters are dangerous
 
 Correct Answer: B
 
-Feedback: Exactly! Safety in numbers means that a bigger group detects predators faster AND each individual has a smaller chance of being the one caught. Both factors help animals survive. Safety in numbers means being in a bigger group makes each animal safer. More watchers spot danger faster, and each individual animal has a smaller chance of being the one a predator catches.
+Feedback: Exactly! Safety in numbers means that a bigger group detects predators faster AND each individual has a smaller chance of being the one caught. Both factors help animals survive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which component in the animal group model is EXTERNAL?
 
@@ -949,25 +901,37 @@ D. Warning Signals
 
 Correct Answer: C
 
-Feedback: Right! Group Size is external because it is the starting condition we set. Predator Detection and Survival Rate are internal components that change in response to Group Size. The external component is the one we control at the start. We set the Group Size, and then Predator Detection and Survival Rate change as a result inside the system.
+Feedback: Right! Group Size is external because it is the starting condition we set. Predator Detection and Survival Rate are internal components that change in response to Group Size. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Group Size), but they can take action on internal components (Predator Detection, Survival Rate). They need to decide which action would be most effective based on what the model shows.
+
+Why do you think zebras live together in large herds instead of living alone?
+
+A. Zebras like to play games together
+B. Living in a group helps protect them from predators
+C. Zebras cannot find food by themselves
+D. Zebras are afraid of the dark
+
+Correct Answer: B
+
+Feedback: Great thinking! One of the biggest reasons animals live in groups is that it helps them stay safe from predators. More eyes watching means danger is spotted faster. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: A
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

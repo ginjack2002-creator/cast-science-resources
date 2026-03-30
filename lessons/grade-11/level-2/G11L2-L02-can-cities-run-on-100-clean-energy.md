@@ -915,86 +915,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Which of the following best describes the concept of 'intermittency' as it applies to renewable energy?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.3 + CCC5 (Energy and Matter)
 
-A. Renewable energy sources produce electricity only when natural conditions allow, creating gaps in supply
-B. Renewable energy systems break down frequently and need constant repair
-C. Renewable energy costs fluctuate unpredictably from day to day
-D. Renewable energy sources can only be installed in certain geographic regions
-
-Correct Answer: A
-
-Feedback: Correct. Intermittency refers to the variable nature of solar and wind power, which depends on weather and time of day. Intermittency means that renewable sources like solar and wind produce electricity only when conditions permit (sun shining, wind blowing), creating periods when generation is low or zero.
-
----
-
-### Question 2
-
-What does the term 'capacity factor' measure for an energy source?
-
-A. The maximum number of homes it can power at peak output
-B. The ratio of actual electricity output to maximum possible output over time
-C. The physical size of the generating equipment relative to its power rating
-D. The number of years the equipment can operate before replacement
-
-Correct Answer: B
-
-Feedback: Correct. Capacity factor is the ratio of actual output to maximum possible output, reflecting how much of the time a source operates at full capacity. Capacity factor compares actual electricity produced to what would be produced if the source ran at full power 24/7. Solar panels average 20-25% capacity factor because they only generate during daylight.
-
----
-
-### Question 3
-
-On an electrical grid, what must always be true about the relationship between electricity supply and demand?
-
-A. Supply should always exceed demand by at least 50% for safety
-B. Supply and demand must be balanced in real time to maintain grid stability
-C. Demand can safely exceed supply for up to 24 hours using voltage reduction
-D. Supply and demand only need to match on a monthly average basis
-
-Correct Answer: B
-
-Feedback: Correct. Electricity supply and demand must be matched essentially instantaneously. Even seconds of imbalance can cause frequency deviations and blackouts. Unlike other commodities, electricity cannot be easily inventoried. Supply and demand must balance in real time, or the grid experiences frequency instability that can cascade into blackouts.
-
----
-
-### Question 4
-
-Which statement best explains why energy storage is important for renewable energy grids?
-
-A. Stored energy is cheaper to produce than directly generated energy
-B. Storage allows excess energy produced during high-generation periods to be used during low-generation periods
-C. Energy storage eliminates the need for any grid infrastructure
-D. Storage converts renewable energy into a more efficient form of power
-
-Correct Answer: B
-
-Feedback: Correct. Storage bridges the timing gap between when renewables generate electricity and when consumers need it. Energy storage captures surplus generation (e.g., midday solar) and releases it when generation is low but demand is high (e.g., evening peaks), solving the timing mismatch inherent to intermittent sources.
-
----
-
-### Question 5
-
-What is 'curtailment' in the context of renewable energy?
-
-A. The gradual phase-out of fossil fuel power plants
-B. Government regulations that limit renewable energy installation
-C. Deliberately reducing renewable energy output because the grid cannot absorb all the power being generated
-D. The loss of energy during transmission over long distances
-
-Correct Answer: C
-
-Feedback: Correct. Curtailment is the intentional reduction of renewable output when production exceeds demand and storage capacity, effectively wasting clean energy. Curtailment occurs when renewable generation exceeds what the grid and storage can absorb. The energy is essentially wasted, which is a paradox of high-renewable grids.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Solar Generation Capacity, Wind Generation Capacity, Energy Storage Capacity, Grid Demand Pattern, Supply-Demand Balance, Grid Reliability Index. Some components are external (Solar Generation Capacity, Wind Generation Capacity, Energy Storage Capacity) and some are internal (Grid Demand Pattern, Supply-Demand Balance, Grid Reliability Index). The student needs to understand what each component represents and how they are organized.
 
 A model shows that moving from 50% to 80% renewable energy requires doubling storage capacity, but moving from 80% to 100% requires increasing storage capacity tenfold. Which concept best explains this nonlinear relationship?
 
@@ -1005,11 +930,15 @@ D. Grid operators intentionally slow renewable adoption above 80%
 
 Correct Answer: B
 
-Feedback: Correct. The exponential storage increase is driven by worst-case scenarios: at 100% renewable, even rare events like a week of cloudy, windless winter weather must be covered entirely by storage. At 50% renewable, fossil plants handle gaps. At 80%, daily cycling needs more storage. At 100%, multi-day and seasonal low-generation events must be covered entirely by storage, requiring exponentially more capacity.
+Feedback: Correct. The exponential storage increase is driven by worst-case scenarios: at 100% renewable, even rare events like a week of cloudy, windless winter weather must be covered entirely by storage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.3 + CCC1 (Patterns)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Storage Capacity increases, Grid Reliability Index increases; when Demand Balance increases, Grid Reliability Index increases. The student is trying to understand why these relationships are positive or negative.
 
 The 'duck curve' describes a pattern where net electricity demand dips at midday and spikes in the evening. A student proposes solving this by installing more solar panels. Why is this solution insufficient?
 
@@ -1020,11 +949,15 @@ D. Solar panels generate more electricity in the evening than at midday
 
 Correct Answer: B
 
-Feedback: Correct. Adding more solar worsens the midday oversupply while the evening demand peak remains unmet, making the duck curve problem worse, not better. More solar panels increase midday generation when supply already exceeds demand, leading to more curtailment. The evening peak occurs after sunset, so additional solar capacity cannot help. Storage or demand-shifting is needed.
+Feedback: Correct. Adding more solar worsens the midday oversupply while the evening demand peak remains unmet, making the duck curve problem worse, not better. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Energy Storage Capacity increases, Grid Reliability Index increases and when Demand Balance increases, Grid Reliability Index increases. The student changes one variable to see how the whole system responds.
 
 A city's grid model achieves 99.97% reliability at 90% renewable energy with 12 hours of battery storage. When pushed to 100% renewable, reliability drops to 98.5%. What systems-level intervention would most effectively close this gap?
 
@@ -1035,11 +968,15 @@ D. Accept the lower reliability since 98.5% is close enough
 
 Correct Answer: B
 
-Feedback: Correct. Closing the last reliability gap requires a systems approach: long-duration storage (pumped hydro), flexible demand, and geographically diverse generation to reduce the probability of system-wide low generation. The 1.47% reliability gap represents ~129 hours of potential blackout per year. Closing it requires multiple complementary strategies: long-duration storage for multi-day events, demand flexibility, and geographic spread to ensure weather events don't affect all sources simultaneously.
+Feedback: Correct. Closing the last reliability gap requires a systems approach: long-duration storage (pumped hydro), flexible demand, and geographically diverse generation to reduce the probability of system-wide low generation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.3 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student argues that seasonal variation in solar energy is a minor challenge because 'the sun shines every day.' Using model data, which evidence best counters this claim?
 
@@ -1050,11 +987,15 @@ D. Wind energy perfectly compensates for all seasonal solar variation
 
 Correct Answer: A
 
-Feedback: Correct. Seasonal variation at mid-latitudes creates a generation gap lasting weeks to months. Daily battery cycling (4-12 hours) cannot bridge a months-long winter solar deficit. At mid-latitudes, winter solar generation can be 25% of summer levels. This creates a seasonal deficit lasting months that cannot be addressed by daily battery cycling, requiring either long-duration storage or complementary wind and other sources.
+Feedback: Correct. Seasonal variation at mid-latitudes creates a generation gap lasting weeks to months. Daily battery cycling (4-12 hours) cannot bridge a months-long winter solar deficit. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.3 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Solar Generation Capacity, Wind Generation Capacity, Energy Storage Capacity), but they can take action on internal components (Grid Demand Pattern, Supply-Demand Balance, Grid Reliability Index). They need to decide which action would be most effective based on what the model shows.
 
 Evaluate this claim: 'Since wind and solar are now the cheapest forms of electricity generation, transitioning to 100% renewable energy is primarily an economic decision.' Which model finding most effectively challenges this claim?
 
@@ -1065,27 +1006,18 @@ D. Fossil fuel companies will lobby against the transition
 
 Correct Answer: B
 
-Feedback: Correct. The cost of generating renewable electricity is low, but the systems engineering challenge of maintaining reliability through all weather conditions drives exponentially higher storage and infrastructure costs. Generation cost is only part of the equation. The fundamental challenge is physics: matching variable supply to constant demand requires storage, grid flexibility, and backup capacity that become exponentially more expensive as renewable penetration approaches 100%.
+Feedback: Correct. The cost of generating renewable electricity is low, but the systems engineering challenge of maintaining reliability through all weather conditions drives exponentially higher storage and infrastructure costs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.3, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.3, CCC1)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.3, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.3, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.3, CCC5)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: A
-Question 5: B
-
----
 
 ## Resources
 

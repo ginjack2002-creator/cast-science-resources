@@ -901,86 +901,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Electromagnetic waves are used for wireless communication. Which relationship between frequency and wavelength is correct?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.2 + CCC4 (Systems and System Models)
 
-A. Higher frequency corresponds to longer wavelength
-B. Higher frequency corresponds to shorter wavelength
-C. Frequency and wavelength are independent of each other
-D. All electromagnetic waves have the same wavelength regardless of frequency
-
-Correct Answer: B
-
-Feedback: Correct. Frequency and wavelength are inversely related. Since all electromagnetic waves travel at the speed of light, higher frequency waves must have shorter wavelengths. Frequency and wavelength have an inverse relationship: as frequency increases, wavelength decreases. This follows from the wave equation: speed of light = frequency x wavelength.
-
----
-
-### Question 2
-
-When an electromagnetic wave encounters a solid wall, some of its energy is absorbed. Which factor most determines how much energy is absorbed?
-
-A. The color of the wall
-B. The frequency of the electromagnetic wave and the material composition of the wall
-C. The speed at which the wave is traveling
-D. The number of walls in the building
-
-Correct Answer: B
-
-Feedback: Correct. Absorption depends on the interaction between the wave's frequency and the material's molecular structure. Higher-frequency waves are generally absorbed more readily by common building materials. Absorption depends on two factors: the frequency of the wave (higher frequencies tend to be absorbed more) and the material properties of the obstacle (density, composition, moisture content).
-
----
-
-### Question 3
-
-A cell tower broadcasts a signal. According to the inverse square law, what happens to the signal strength when the distance from the tower is doubled?
-
-A. Signal strength is reduced to one-half
-B. Signal strength is reduced to one-quarter
-C. Signal strength remains the same
-D. Signal strength doubles
-
-Correct Answer: B
-
-Feedback: Correct. The inverse square law states that signal intensity is inversely proportional to the square of the distance. Doubling the distance reduces signal strength to (1/2)^2 = 1/4. The inverse square law states that intensity decreases with the square of the distance. At twice the distance, intensity drops to 1/4, not 1/2. This is because the signal spreads over four times the area.
-
----
-
-### Question 4
-
-5G networks use frequencies in the 'millimeter wave' range (30-300 GHz). What trade-off does this frequency range present for network engineers?
-
-A. Millimeter waves travel farther but carry less data than lower frequencies
-B. Millimeter waves carry enormous amounts of data but are easily blocked by buildings, trees, and rain
-C. Millimeter waves are invisible to detection equipment, making network monitoring impossible
-D. Millimeter waves require less energy to transmit than lower-frequency signals
-
-Correct Answer: B
-
-Feedback: Correct. This fundamental trade-off between data capacity and penetration ability is the central engineering challenge of 5G: higher frequencies enable faster data rates but are absorbed and blocked by obstacles far more easily. The millimeter wave trade-off is fundamental: these high frequencies can carry vastly more data (10+ Gbps) but are easily absorbed by buildings, vegetation, rain, and even humidity, severely limiting their range and penetration.
-
----
-
-### Question 5
-
-MIMO (Multiple-Input Multiple-Output) antenna technology uses multiple antennas simultaneously. What is the primary advantage of this approach?
-
-A. It allows a single antenna to broadcast at multiple frequencies simultaneously
-B. It increases network capacity by transmitting and receiving multiple independent data streams at the same time
-C. It eliminates the need for cell towers entirely
-D. It converts electromagnetic waves into sound waves for clearer voice calls
-
-Correct Answer: B
-
-Feedback: Correct. MIMO uses spatial multiplexing to send multiple independent data streams through multiple antennas simultaneously, dramatically increasing the total data capacity of the network. MIMO's primary advantage is increased capacity through spatial multiplexing. By using multiple antennas to transmit and receive independent data streams simultaneously, the network can serve more users at higher speeds.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Signal Frequency, Wave Penetration, Data Transfer Rate, Tower Density, Interference Level, Energy Absorption, Network Capacity. Some components are external (Signal Frequency, Tower Density) and some are internal (Wave Penetration, Data Transfer Rate, Interference Level, Energy Absorption, Network Capacity). The student needs to understand what each component represents and how they are organized.
 
 In the wireless communication model, what is the fundamental trade-off that the relationship between Signal Frequency and Wave Penetration reveals?
 
@@ -991,11 +916,15 @@ D. Lower frequencies require more tower density because they carry less data per
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates the core physics trade-off: Data Transfer Rate increases with frequency but Wave Penetration decreases, forcing engineers to dramatically increase Tower Density to maintain coverage. The model reveals the fundamental constraint: as Signal Frequency increases, Data Transfer Rate rises (more bandwidth) but Wave Penetration drops (signals blocked more easily). This trade-off is the defining engineering challenge of 5G.
+Feedback: Correct. The model demonstrates the core physics trade-off: Data Transfer Rate increases with frequency but Wave Penetration decreases, forcing engineers to dramatically increase Tower Density to maintain coverage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Signal Frequency increases, Data Transfer Rate increases; when Signal Frequency increases, Wave Penetration decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student compares the 4G scenario (700 MHz) to the 5G millimeter wave scenario (39 GHz) in the model. Tower Density must increase dramatically for 5G. What does the model show as the primary reason?
 
@@ -1006,11 +935,15 @@ D. 4G towers broadcast in all directions while 5G towers can only broadcast in o
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that millimeter wave signals attenuate so rapidly that each cell covers a fraction of the area of a 4G cell, requiring a massive increase in the number of transmitters to provide continuous coverage. The model demonstrates that coverage area per cell shrinks dramatically at higher frequencies. A 4G cell at 700 MHz might cover 2-5 km, but a 5G millimeter wave cell at 39 GHz covers only 200-300 meters due to rapid signal attenuation.
+Feedback: Correct. The model shows that millimeter wave signals attenuate so rapidly that each cell covers a fraction of the area of a 4G cell, requiring a massive increase in the number of transmitters to provide continuous coverage. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Signal Frequency increases, Data Transfer Rate increases and when Signal Frequency increases, Wave Penetration decreases and when Tower Density increases, Interference Level increases. The student changes one variable to see how the whole system responds.
 
 The model shows that increasing Tower Density to compensate for poor Wave Penetration creates a secondary problem. What is it?
 
@@ -1021,11 +954,15 @@ D. Tower Density has no effect on any other variable in the model
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a cascade: more towers create more signal overlap and interference, which degrades network quality. Engineers must deploy beamforming and MIMO technology to direct signals precisely and manage interference. The model shows that Tower Density creates a secondary challenge: more closely-spaced towers produce overlapping signals that interfere with each other, requiring sophisticated beamforming and MIMO technology to maintain signal quality.
+Feedback: Correct. The model reveals a cascade: more towers create more signal overlap and interference, which degrades network quality. Engineers must deploy beamforming and MIMO technology to direct signals precisely and manage interference. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on the model, why did engineers design 5G as a layered network using multiple frequency bands rather than a single millimeter wave frequency?
 
@@ -1036,11 +973,15 @@ D. Because millimeter waves are dangerous to human health at high power levels
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that no single frequency band can optimize both coverage and capacity. The layered approach uses each band's strengths: low-band for reach, mid-band for balance, and millimeter wave for dense, high-speed areas. The model shows that the coverage-capacity trade-off cannot be resolved with a single frequency. A layered approach assigns low-band frequencies for rural coverage, mid-band for urban areas, and millimeter wave for high-density locations like stadiums.
+Feedback: Correct. The model demonstrates that no single frequency band can optimize both coverage and capacity. The layered approach uses each band's strengths: low-band for reach, mid-band for balance, and millimeter wave for dense, high-speed areas. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Signal Frequency, Tower Density), but they can take action on internal components (Wave Penetration, Data Transfer Rate, Interference Level, Energy Absorption, Network Capacity). They need to decide which action would be most effective based on what the model shows.
 
 A student claims that 5G is simply 'better 4G' with no fundamental physics differences. Using evidence from the model, which response best evaluates this claim?
 
@@ -1051,27 +992,18 @@ D. The claim is incorrect because 5G uses sound waves instead of electromagnetic
 
 Correct Answer: B
 
-Feedback: Correct. While both use electromagnetic waves, the model shows that millimeter wave frequencies introduce qualitatively different behavior: near-total absorption by obstacles, atmospheric attenuation by rain, and coverage areas orders of magnitude smaller. The model demonstrates that 5G is not simply a faster version of 4G. The jump to millimeter wave frequencies introduces fundamentally different physics: signals that cannot penetrate walls, are absorbed by rain, and require completely different infrastructure.
+Feedback: Correct. While both use electromagnetic waves, the model shows that millimeter wave frequencies introduce qualitatively different behavior: near-total absorption by obstacles, atmospheric attenuation by rain, and coverage areas orders of magnitude smaller. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

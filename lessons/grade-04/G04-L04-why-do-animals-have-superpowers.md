@@ -868,77 +868,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why do polar bears have thick white fur?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC6 (Structure and Function)
 
-A. Because they think it looks nice
-B. Because the fur keeps them warm and helps them hide in the snow
-C. Because all bears have white fur
-D. Because they eat too much snow
-
-Correct Answer: B
-
-Feedback: That is right! A polar bear's thick fur is a body structure that serves two functions: keeping the bear warm in freezing temperatures and providing camouflage in the snow. Polar bears have thick white fur because it helps them survive. The fur keeps them warm in the Arctic cold and helps them blend in with the snow to hunt.
-
----
-
-### Question 2
-
-What is the difference between an external structure and an internal structure?
-
-A. External structures are big and internal structures are small
-B. External structures are on the outside of the body and internal structures are on the inside
-C. External structures are useful and internal structures are not
-D. There is no difference between them
-
-Correct Answer: B
-
-Feedback: Correct! External structures are body parts on the outside (like fur, claws, and shells) and internal structures are body parts on the inside (like bones, lungs, and hearts). The difference is location. External structures are on the outside of the animal's body, and internal structures are on the inside. Both are important for survival.
-
----
-
-### Question 3
-
-A bird has a long, thin beak. What do you think this beak helps the bird do?
-
-A. Dig underground tunnels
-B. Reach insects or nectar deep inside flowers or bark
-C. Fly faster through the air
-D. Breathe underwater
-
-Correct Answer: B
-
-Feedback: Right! A long, thin beak is a body structure that helps a bird reach food in hard-to-reach places, like insects inside tree bark or nectar inside flowers. Think about what a long, thin shape is good for. It can reach into narrow spaces. Birds with long beaks use them to reach insects or nectar that other birds cannot get to.
-
----
-
-### Question 4
-
-What does 'survival' mean for an animal?
-
-A. Being the biggest animal in the area
-B. Living in a zoo where people take care of you
-C. Staying alive by finding food, avoiding predators, and having babies
-D. Being able to run faster than every other animal
-
-Correct Answer: C
-
-Feedback: Exactly! Survival means staying alive by meeting basic needs: finding food and water, staying safe from predators, and reproducing (having babies) to continue the species. Survival is not about being the biggest or fastest. It means staying alive by finding food, avoiding danger, and having babies so the species continues.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Body Structure Type, Environment Danger Level, Survival Rate. Some components are external (Body Structure Type, Environment Danger Level) and some are internal (Survival Rate). The student needs to understand what each component represents and how they are organized.
 
 In the model, Body Structure Type and Environment Danger Level are both EXTERNAL components. What does this tell us?
 
@@ -949,11 +889,15 @@ D. They both cause the animal to run away
 
 Correct Answer: B
 
-Feedback: Right! In the model, external components are the inputs we can control. We set the body structure type and the environment danger level, then observe how survival rate responds. In a model, external components are inputs we can set and change. Body structure type and environment danger level are both inputs that affect the survival rate output.
+Feedback: Right! In the model, external components are the inputs we can control. We set the body structure type and the environment danger level, then observe how survival rate responds. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Body Structure Type increases, Survival Rate increases; when Environment Danger Level increases, Survival Rate decreases. The student is trying to understand why these relationships are positive or negative.
 
 An animal with thick fur is placed in a hot desert environment. What does the model predict will happen to its survival rate?
 
@@ -964,11 +908,15 @@ D. Survival rate depends only on how fast the animal can run
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that survival rate drops when body structures do not match the environment. Thick fur would overheat an animal in a desert. The same body structure can help or hurt survival depending on the environment. Thick fur is great in the Arctic but harmful in a desert because it traps too much heat.
+Feedback: Correct! The model showed that survival rate drops when body structures do not match the environment. Thick fur would overheat an animal in a desert. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC6 (Structure and Function)
+
+A student runs a simulation of the model. The model shows that when Body Structure Type increases, Survival Rate increases and when Environment Danger Level increases, Survival Rate decreases. The student changes one variable to see how the whole system responds.
 
 Which statement best describes the relationship between body structure and survival?
 
@@ -979,11 +927,15 @@ D. Bigger animals always survive better than smaller animals
 
 Correct Answer: C
 
-Feedback: Exactly! The model demonstrated that animals survive best when their body structures match the specific dangers in their environment. A perfect match leads to high survival. Survival depends on how well an animal's body structures fit its environment. Both internal and external structures matter, and size alone does not determine survival.
+Feedback: Exactly! The model demonstrated that animals survive best when their body structures match the specific dangers in their environment. A perfect match leads to high survival. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC6 (Structure and Function)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A cactus has a thick waxy coating and sharp spines. How do these structures help it survive in the desert?
 
@@ -994,25 +946,37 @@ D. The wax attracts rain and the spines collect sunlight
 
 Correct Answer: B
 
-Feedback: Right! In a dry desert, the waxy coating prevents water loss (function: water conservation) and the spines protect the cactus from thirsty animals (function: defense). Each structure has a survival function. Each body structure has a job (function) that helps survival. The waxy coating prevents water from escaping, and the spines protect the cactus from animals trying to eat it for water.
+Feedback: Right! In a dry desert, the waxy coating prevents water loss (function: water conservation) and the spines protect the cactus from thirsty animals (function: defense). Each structure has a survival function. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Body Structure Type, Environment Danger Level), but they can take action on internal components (Survival Rate). They need to decide which action would be most effective based on what the model shows.
+
+Why do polar bears have thick white fur?
+
+A. Because they think it looks nice
+B. Because the fur keeps them warm and helps them hide in the snow
+C. Because all bears have white fur
+D. Because they eat too much snow
+
+Correct Answer: B
+
+Feedback: That is right! A polar bear's thick fur is a body structure that serves two functions: keeping the bear warm in freezing temperatures and providing camouflage in the snow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC6)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC6)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC6)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

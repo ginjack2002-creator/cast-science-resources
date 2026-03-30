@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-1, MS-LS4-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a fossil?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS4-1, MS-LS4-2 + CCC3 (Scale, Proportion, and Quantity)
 
-A. Any rock that is more than 1,000 years old
-B. The preserved remains or traces of an ancient organism found in rock
-C. A mineral that forms in the shape of a living thing by coincidence
-D. A bone from a dinosaur that has turned into calcium powder
-
-Correct Answer: B
-
-Feedback: Correct! Fossils are the preserved remains or traces of organisms that lived in the past, typically found embedded in sedimentary rock. Not quite. A fossil is the preserved remains or traces of an ancient organism, such as bones, shells, or imprints, found in rock.
-
----
-
-### Question 2
-
-A whale's flipper, a bat's wing, and a human arm all contain the same basic bone structure. What might this suggest?
-
-A. These animals all live in the same habitat
-B. These animals evolved from a common ancestor that had that bone structure
-C. These animals copied each other's bone design over time
-D. Having the same bones is just a random coincidence
-
-Correct Answer: B
-
-Feedback: Correct! Shared bone structures, called homologous structures, are strong evidence that these animals inherited their basic body plan from a common ancestor. Not quite. When very different animals share the same underlying bone structure, it is evidence of common ancestry. These are called homologous structures.
-
----
-
-### Question 3
-
-How do scientists determine which organisms are related to each other?
-
-A. By looking at whether animals live in the same area today
-B. By comparing body structures, DNA, and fossil evidence
-C. By checking if animals eat the same food
-D. By asking zookeepers which animals look alike
-
-Correct Answer: B
-
-Feedback: Correct! Scientists use multiple types of evidence including anatomy, DNA sequences, and the fossil record to determine evolutionary relationships. Not quite. Scientists determine evolutionary relationships by comparing body structures (anatomy), DNA sequences, and fossil evidence, not just by appearance or habitat.
-
----
-
-### Question 4
-
-What happens to most organisms after they die?
-
-A. They automatically become fossils within a few years
-B. They decompose and are not preserved as fossils
-C. They are always preserved if they are buried underground
-D. Only dinosaurs can become fossils
-
-Correct Answer: B
-
-Feedback: Correct! Most organisms decompose completely after death. Fossilization is actually very rare and requires specific conditions like rapid burial in sediment. Not quite. The vast majority of organisms decompose and leave no fossil record. Fossilization is extremely rare and requires rapid burial under the right conditions.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Environmental Change Rate, Time (Millions of Years), Anatomical Similarity, Species Diversity. Some components are external (Environmental Change Rate, Time (Millions of Years)) and some are internal (Anatomical Similarity, Species Diversity). The student needs to understand what each component represents and how they are organized.
 
 Tiktaalik is a 375-million-year-old fossil that has fish features (scales, fins) AND land animal features (flat head, wrist bones). What type of fossil is this?
 
@@ -967,11 +907,15 @@ D. A modern fossil that formed recently from a living species
 
 Correct Answer: B
 
-Feedback: Correct! Tiktaalik is a transitional fossil because it shows features of both fish (ancestral group) and land vertebrates (descendant group), providing evidence of evolutionary transition. Not quite. Tiktaalik is classified as a transitional fossil because it displays characteristics of both fish and land animals, bridging the evolutionary gap between these groups.
+Feedback: Correct! Tiktaalik is a transitional fossil because it shows features of both fish (ancestral group) and land vertebrates (descendant group), providing evidence of evolutionary transition. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS4-1, MS-LS4-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Environmental Change Rate increases, Species Diversity decreases; when Ana increases, mical Similarity decreases. The student is trying to understand why these relationships are positive or negative.
 
 In a model of evolutionary change, environmental change rate is set to maximum, simulating a mass extinction event. What does the model predict will happen to species diversity?
 
@@ -982,11 +926,15 @@ D. Species diversity is unaffected because evolution is too slow to notice
 
 Correct Answer: C
 
-Feedback: Correct! Rapid environmental change causes mass extinction because many species cannot adapt fast enough. However, after the change stabilizes, surviving species can diversify into empty ecological niches. Not quite. When environmental change is rapid and extreme, many species go extinct because they cannot adapt quickly enough, causing species diversity to crash.
+Feedback: Correct! Rapid environmental change causes mass extinction because many species cannot adapt fast enough. However, after the change stabilizes, surviving species can diversify into empty ecological niches. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS4-1, MS-LS4-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Environmental Change Rate increases, Species Diversity decreases and when Ana increases, mical Similarity decreases and when Species Diversity increases, Anatomical Similarity increases. The student changes one variable to see how the whole system responds.
 
 A student asks: 'If humans evolved from fish, why do fish still exist?' Which response best addresses this misconception?
 
@@ -997,11 +945,15 @@ D. Only certain special fish evolved into humans while the rest stayed the same
 
 Correct Answer: B
 
-Feedback: Correct! Humans and modern fish share a common ancestor from about 375 million years ago. Both lineages have been evolving separately since then. Modern fish are not our ancestors; they are our very distant evolutionary cousins. Not quite. Humans did not evolve from modern fish. Both humans and today's fish descended from a common ancestor. The two lineages have been evolving independently for hundreds of millions of years.
+Feedback: Correct! Humans and modern fish share a common ancestor from about 375 million years ago. Both lineages have been evolving separately since then. Modern fish are not our ancestors; they are our very distant evolutionary cousins. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS4-1, MS-LS4-2 + CCC1 (Patterns)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which pattern in the fossil record provides the strongest evidence that life on Earth has changed over time?
 
@@ -1012,25 +964,37 @@ D. The same exact species appears in every rock layer across Earth's history
 
 Correct Answer: B
 
-Feedback: Correct! The fossil record shows a clear pattern: the oldest layers contain simple, single-celled organisms, and complexity increases in younger layers. This documents how life has changed and diversified over billions of years. Not quite. The fossil record shows that simpler organisms appear in older rock layers and more complex organisms appear in younger layers, demonstrating that life has changed over geological time.
+Feedback: Correct! The fossil record shows a clear pattern: the oldest layers contain simple, single-celled organisms, and complexity increases in younger layers. This documents how life has changed and diversified over billions of years. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS4-1, MS-LS4-2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Environmental Change Rate, Time (Millions of Years)), but they can take action on internal components (Anatomical Similarity, Species Diversity). They need to decide which action would be most effective based on what the model shows.
+
+What is a fossil?
+
+A. Any rock that is more than 1,000 years old
+B. The preserved remains or traces of an ancient organism found in rock
+C. A mineral that forms in the shape of a living thing by coincidence
+D. A bone from a dinosaur that has turned into calcium powder
+
+Correct Answer: B
+
+Feedback: Correct! Fossils are the preserved remains or traces of organisms that lived in the past, typically found embedded in sedimentary rock. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS4-1, MS-LS4-2, CCC3)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS4-1, MS-LS4-2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS4-1, MS-LS4-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS4-1, MS-LS4-2, CCC1)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS4-1, MS-LS4-2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

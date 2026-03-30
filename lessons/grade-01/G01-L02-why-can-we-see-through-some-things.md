@@ -732,73 +732,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Can you see through a window?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.3 + CCC4 (Systems and System Models)
 
-A. Yes, you can see through it
-B. No, you cannot see through it
-C. Only at night
-
-Correct Answer: A
-
-Feedback: Yes! Windows are clear, so light goes right through them. Think about looking out a window. You can see outside because light passes through the glass.
-
----
-
-### Question 2
-
-What happens when you shine a light on a book?
-
-A. The light goes through the book
-B. The light is blocked by the book
-C. The book disappears
-
-Correct Answer: B
-
-Feedback: That is right! A book blocks the light because you cannot see through it. A book is solid and thick. Light cannot pass through it, so the light is blocked.
-
----
-
-### Question 3
-
-Which one can you see through?
-
-A. A brick wall
-B. A clear water bottle
-C. A wooden door
-
-Correct Answer: B
-
-Feedback: Yes! A clear water bottle lets light through so you can see what is inside. Clear things like water bottles let light pass through. Walls and doors block the light.
-
----
-
-### Question 4
-
-Why can you NOT see through a wall?
-
-A. The wall is too tall
-B. Light cannot go through the wall
-C. Your eyes are closed
-
-Correct Answer: B
-
-Feedback: That is right! Walls block all the light, so you cannot see through them. Walls are made of solid material that stops light from passing through.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Material Type, Light Passing Through. Some components are external (Material Type) and some are internal (Light Passing Through). The student needs to understand what each component represents and how they are organized.
 
 What does the word transparent mean?
 
@@ -808,11 +752,15 @@ C. It is very dark
 
 Correct Answer: B
 
-Feedback: Yes! Transparent means light passes through and you can see clearly, like a window. Transparent means you can see right through it, like clear glass or plastic wrap.
+Feedback: Yes! Transparent means light passes through and you can see clearly, like a window. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Material Type increases, Light Passing Through increases. The student is trying to understand why these relationships are positive or negative.
 
 Wax paper lets some light through but things look blurry. What is wax paper?
 
@@ -822,11 +770,15 @@ C. Translucent
 
 Correct Answer: C
 
-Feedback: That is right! Translucent means some light gets through but things look blurry. When some light passes through but you cannot see clearly, the material is translucent.
+Feedback: That is right! Translucent means some light gets through but things look blurry. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Material Type increases, Light Passing Through increases. The student changes one variable to see how the whole system responds.
 
 A piece of cardboard blocks ALL the light. What is cardboard?
 
@@ -836,11 +788,15 @@ C. Translucent
 
 Correct Answer: B
 
-Feedback: Yes! Opaque means no light gets through at all. When a material blocks all the light, it is called opaque. You cannot see through it.
+Feedback: Yes! Opaque means no light gets through at all. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 When the material is more clear, what happens to the light passing through?
 
@@ -850,25 +806,36 @@ C. More light gets through
 
 Correct Answer: C
 
-Feedback: That is right! Clearer materials let more light pass through. The clearer a material is, the more light can travel through it.
+Feedback: That is right! Clearer materials let more light pass through. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Material Type), but they can take action on internal components (Light Passing Through). They need to decide which action would be most effective based on what the model shows.
+
+Can you see through a window?
+
+A. Yes, you can see through it
+B. No, you cannot see through it
+C. Only at night
+
+Correct Answer: A
+
+Feedback: Yes! Windows are clear, so light goes right through them. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

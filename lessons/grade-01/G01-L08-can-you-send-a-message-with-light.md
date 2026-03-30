@@ -730,73 +730,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Can you use light to tell someone something?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.4 + CCC4 (Systems and System Models)
 
-A. No, light cannot send messages
-B. Yes, you can flash a light to send a message
-C. Only if you also talk
-
-Correct Answer: B
-
-Feedback: Yes! You can flash a light on and off to send a message to someone. Light can be used to send messages. Think about traffic lights. They tell drivers what to do using light.
-
----
-
-### Question 2
-
-What does a traffic light use to tell cars when to stop?
-
-A. Sound
-B. Light
-C. Words on a sign
-
-Correct Answer: B
-
-Feedback: That is right! A traffic light uses colored light to send a message to drivers. A traffic light uses red, yellow, and green light to tell drivers to stop, slow down, or go.
-
----
-
-### Question 3
-
-What is a signal?
-
-A. A kind of food
-B. A message sent using light, sound, or movement
-C. A type of animal
-
-Correct Answer: B
-
-Feedback: Yes! A signal is a message sent using things like light, sound, or hand movements. A signal is a way to share a message. Waving, flashing a light, and honking a horn are all signals.
-
----
-
-### Question 4
-
-A lighthouse shines a bright light at night. Why?
-
-A. To look pretty
-B. To help ships see where the rocks are
-C. To scare fish away
-
-Correct Answer: B
-
-Feedback: Yes! Lighthouses use a bright light signal to warn ships about dangerous rocks. Lighthouses send a light signal to help ships know where it is safe to go.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Signal Brightness, Message Received. Some components are external (Signal Brightness) and some are internal (Message Received). The student needs to understand what each component represents and how they are organized.
 
 When signal brightness goes UP, what happens to the message being received?
 
@@ -806,11 +750,15 @@ C. Nothing changes
 
 Correct Answer: B
 
-Feedback: Yes! Brighter light signals are easier to see, so the message is more likely to be received. A brighter signal is easier to see from far away, making it more likely the message gets through.
+Feedback: Yes! Brighter light signals are easier to see, so the message is more likely to be received. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Signal Brightness increases, Message Received increases. The student is trying to understand why these relationships are positive or negative.
 
 What does communicate mean?
 
@@ -820,11 +768,15 @@ C. To eat lunch
 
 Correct Answer: B
 
-Feedback: That is right! Communicate means sharing a message or idea with someone else. To communicate means to share a message with another person. You can communicate with light, sound, or words.
+Feedback: That is right! Communicate means sharing a message or idea with someone else. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Signal Brightness increases, Message Received increases. The student changes one variable to see how the whole system responds.
 
 You and your friend make a light code: 1 flash means yes, 2 flashes mean no. Why do you need a code?
 
@@ -834,11 +786,15 @@ C. So the light lasts longer
 
 Correct Answer: B
 
-Feedback: Yes! A code helps both people understand the message. Without a code, flashing a light does not tell you anything. A code gives meaning to the flashes. Without it, you would see the light but not understand the message.
+Feedback: Yes! A code helps both people understand the message. Without a code, flashing a light does not tell you anything. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why would a dim flashlight be hard to use to send a message across a big room?
 
@@ -848,25 +804,36 @@ C. Dim lights change colors
 
 Correct Answer: B
 
-Feedback: That is right! A dim light is hard to see when you are far away, so the message might not get through. If the light is dim, the person far away may not be able to see it, so the message would be lost.
+Feedback: That is right! A dim light is hard to see when you are far away, so the message might not get through. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Signal Brightness), but they can take action on internal components (Message Received). They need to decide which action would be most effective based on what the model shows.
+
+Can you use light to tell someone something?
+
+A. No, light cannot send messages
+B. Yes, you can flash a light to send a message
+C. Only if you also talk
+
+Correct Answer: B
+
+Feedback: Yes! You can flash a light on and off to send a message to someone. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

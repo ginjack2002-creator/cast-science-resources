@@ -825,77 +825,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-PS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do you think makes a ball start moving?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.1 + CCC4 (Systems and System Models)
 
-A. The ball decides to move on its own
-B. A push or a pull (a force) makes the ball move
-C. The ball moves because it is round
-D. Gravity makes all balls roll all the time
-
-Correct Answer: B
-
-Feedback: That is right! A force is a push or pull. When you push a ball, you apply a force that makes it start moving. Objects need a force (a push or a pull) to start moving. A ball sits still until someone or something pushes it. That push is a force.
-
----
-
-### Question 2
-
-Why do you think a ball rolling on carpet stops faster than a ball rolling on a smooth floor?
-
-A. Carpet is softer, so the ball gets sleepy
-B. Carpet is rougher and creates more friction, which slows the ball down
-C. Carpet makes the ball lighter
-D. The ball does not like carpet
-
-Correct Answer: B
-
-Feedback: Great thinking! Rough surfaces like carpet create more friction, which is a force that slows objects down. Smooth surfaces create less friction. Carpet is rougher than a smooth floor, so it creates more friction. Friction is a force that happens when surfaces rub together, and it slows things down.
-
----
-
-### Question 3
-
-A book is sitting still on a table. What do you think is happening to the forces on the book?
-
-A. There are no forces on the book
-B. The forces are balanced, so the book stays still
-C. The book is being pushed in one direction
-D. Only gravity is acting on the book
-
-Correct Answer: B
-
-Feedback: Good thinking! The book has forces acting on it. Gravity pulls it down and the table pushes it up with equal force. Since the forces are balanced, the book stays still. Even though the book is not moving, forces ARE acting on it. Gravity pulls it down and the table pushes it up. These forces are equal and opposite (balanced), so the book stays still.
-
----
-
-### Question 4
-
-What do you think friction is?
-
-A. A type of glue
-B. A force that happens when two surfaces rub together, which slows things down
-C. The color of a surface
-D. A type of push that makes things go faster
-
-Correct Answer: B
-
-Feedback: Correct! Friction is a force created when two surfaces rub against each other. It works against motion and slows things down. Friction is a force that happens when two surfaces rub together. It always works against the direction of motion, slowing things down. Rough surfaces create more friction than smooth ones.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Push Force, Friction, Object Motion. Some components are external (Push Force) and some are internal (Friction, Object Motion). The student needs to understand what each component represents and how they are organized.
 
 In the forces model, when Push Force increases on a smooth surface, what happens to Object Motion?
 
@@ -906,11 +846,15 @@ D. The object does not move at all
 
 Correct Answer: B
 
-Feedback: Correct! A stronger push creates a bigger unbalanced force. The push easily overcomes friction on a smooth surface, so the object moves faster and farther. When you push harder, the force becomes more unbalanced. The push is much stronger than friction, so the object moves faster and farther. Push Force and Object Motion have a positive relationship.
+Feedback: Correct! A stronger push creates a bigger unbalanced force. The push easily overcomes friction on a smooth surface, so the object moves faster and farther. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Push Force increases, Object Motion increases; when Friction increases, Object Motion increases. The student is trying to understand why these relationships are positive or negative.
 
 What is the difference between balanced and unbalanced forces?
 
@@ -921,11 +865,15 @@ D. Balanced forces are stronger than unbalanced forces
 
 Correct Answer: B
 
-Feedback: Exactly! When forces are balanced (equal and opposite), nothing changes. When forces are unbalanced (one is stronger), the object starts moving, speeds up, slows down, or changes direction. Balanced forces are equal and opposite, so the object stays still or keeps moving the same way. Unbalanced forces happen when one force is stronger, causing the object to change its motion.
+Feedback: Exactly! When forces are balanced (equal and opposite), nothing changes. When forces are unbalanced (one is stronger), the object starts moving, speeds up, slows down, or changes direction. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Push Force increases, Object Motion increases and when Friction increases, Object Motion increases. The student changes one variable to see how the whole system responds.
 
 In the 'Hard Push on Rough Carpet' scenario, why did the object not travel as far as on the smooth floor?
 
@@ -936,11 +884,15 @@ D. The object wanted to stop on the carpet
 
 Correct Answer: B
 
-Feedback: You got it! Rough carpet creates more friction than a smooth floor. Even with the same push, more friction means the object slows down faster and does not travel as far. The same push was used both times, but carpet creates much more friction than a smooth floor. More friction means more force opposing the motion, so the object slows down and stops sooner.
+Feedback: You got it! Rough carpet creates more friction than a smooth floor. Even with the same push, more friction means the object slows down faster and does not travel as far. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A book is sitting still on a table. Which statement correctly explains why it does not move?
 
@@ -951,25 +903,37 @@ D. Friction is holding the book in the air
 
 Correct Answer: B
 
-Feedback: Right! Two forces act on the book: gravity pulls it down and the table pushes it up. These forces are equal and opposite (balanced), so the book stays perfectly still. Even though the book is still, forces ARE acting on it. Gravity pulls it down toward the floor, and the table pushes it up with an equal force. Because these forces are balanced, the book does not move.
+Feedback: Right! Two forces act on the book: gravity pulls it down and the table pushes it up. These forces are equal and opposite (balanced), so the book stays perfectly still. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Push Force), but they can take action on internal components (Friction, Object Motion). They need to decide which action would be most effective based on what the model shows.
+
+What do you think makes a ball start moving?
+
+A. The ball decides to move on its own
+B. A push or a pull (a force) makes the ball move
+C. The ball moves because it is round
+D. Gravity makes all balls roll all the time
+
+Correct Answer: B
+
+Feedback: That is right! A force is a push or pull. When you push a ball, you apply a force that makes it start moving. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

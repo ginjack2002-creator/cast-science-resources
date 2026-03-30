@@ -957,86 +957,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-In normal Mendelian inheritance, what percentage of offspring receive a specific allele from one parent?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
 
-A. 100% of offspring
-B. 75% of offspring
-C. 50% of offspring
-D. 25% of offspring
-
-Correct Answer: C
-
-Feedback: Correct. In standard Mendelian inheritance, each parent has two copies of a gene and passes one to each offspring, giving each allele a 50% chance of being inherited. Mendelian inheritance follows a 50/50 pattern. Each parent passes one of their two alleles at random, giving any specific allele a 50% chance of being transmitted to each offspring.
-
----
-
-### Question 2
-
-What is a gene drive?
-
-A. A natural process by which genes spread through a population over thousands of generations
-B. A genetic engineering technology that biases inheritance so an engineered gene is passed to nearly all offspring (95-99%) rather than the normal 50%
-C. A device used to sequence DNA in a laboratory
-D. A type of gene therapy used to treat human diseases
-
-Correct Answer: B
-
-Feedback: Correct. A gene drive uses CRISPR technology to copy itself onto both chromosomes, ensuring nearly all offspring inherit the engineered gene. This allows the modification to spread through a wild population far faster than normal inheritance would allow. Gene drives are engineered systems that 'cheat' at inheritance. By copying themselves to both chromosomes, they achieve 95-99% inheritance instead of the normal 50%, allowing rapid spread through a population.
-
----
-
-### Question 3
-
-What is a 'fitness cost' in evolutionary biology?
-
-A. The financial cost of maintaining a genetic engineering program
-B. A reduction in an organism's survival or reproductive success caused by carrying a particular genetic trait
-C. The energy required for an organism to exercise
-D. The price of genetic testing for a particular allele
-
-Correct Answer: B
-
-Feedback: Correct. A fitness cost means carrying a specific gene reduces the organism's ability to survive or reproduce. Natural selection acts against genes with fitness costs, which is relevant to gene drives because engineered genes may reduce host fitness. In evolutionary terms, fitness refers to reproductive success, not physical exercise. A fitness cost means a gene reduces the carrier's survival or reproduction rate, making natural selection work against that gene over time.
-
----
-
-### Question 4
-
-Why is the potential application of gene drives to malaria-carrying mosquitoes considered both promising and controversial?
-
-A. Gene drives would be too expensive to deploy in tropical regions
-B. Gene drives could eliminate malaria (which kills 600,000 people per year) but could also have unpredictable ecological consequences from removing or modifying an entire species
-C. Gene drives have already been proven completely safe through decades of field testing
-D. Malaria mosquitoes are immune to genetic modification
-
-Correct Answer: B
-
-Feedback: Correct. The tension is between massive humanitarian benefit (preventing 600,000 deaths annually) and unknown ecological risk (what happens when you suppress or modify a species that is part of complex food webs and ecosystems). Gene drives for malaria represent a genuine ethical dilemma: the technology could save hundreds of thousands of lives, but the ecological consequences of altering wild populations are largely unknown and potentially irreversible.
-
----
-
-### Question 5
-
-What happens if natural resistance evolves against a gene drive after it has been released into a wild population?
-
-A. Resistance is impossible because gene drives are too powerful
-B. Resistance mutations could halt the drive's spread, leaving a partially modified population with unknown consequences
-C. Resistance would strengthen the gene drive's effect
-D. Scientists can simply recall the gene drive from the wild population
-
-Correct Answer: B
-
-Feedback: Correct. Resistance mutations that prevent the gene drive from copying itself can arise and spread through natural selection. If this happens mid-deployment, the population is partially modified, potentially the worst outcome because neither the goal nor the original state is achieved. Resistance evolution is a real concern. Gene drives cannot be recalled from wild populations, and if resistance halts the drive partway through, the result is a partially modified population in an unknown ecological state.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Gene Drive Frequency, Wild-Type Allele Frequency, Population Size, Fitness Cost, Resistance Evolution, Inheritance Bias, Ecological Impact. Some components are external (Fitness Cost, Inheritance Bias) and some are internal (Gene Drive Frequency, Wild-Type Allele Frequency, Population Size, Resistance Evolution, Ecological Impact). The student needs to understand what each component represents and how they are organized.
 
 The simulation shows that a gene drive with 99% inheritance bias and zero fitness cost reaches fixation (100% of population) in approximately 12 generations. When fitness cost is added at 10%, the drive still reaches fixation but takes 20 generations. What does this comparison reveal about the relative strength of inheritance bias versus natural selection?
 
@@ -1047,11 +972,15 @@ D. The drive reaches fixation at the same speed regardless of fitness cost
 
 Correct Answer: B
 
-Feedback: Correct. The 99% inheritance bias creates a powerful mathematical advantage over the normal 50%. Even with a 10% fitness cost (natural selection pushing back), the inheritance advantage dominates, reaching fixation at a slower but still inevitable pace. The gene drive's inheritance advantage (99% vs. 50%) is a powerful mathematical force. Fitness costs create opposing selection pressure, but moderate costs only slow the drive without stopping it, because the inheritance bias is disproportionately strong.
+Feedback: Correct. The 99% inheritance bias creates a powerful mathematical advantage over the normal 50%. Even with a 10% fitness cost (natural selection pushing back), the inheritance advantage dominates, reaching fixation at a slower but still inevitable pace. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Inheritance Bias increases, Gene Drive Frequency increases; when Fitness Cost increases, Gene Drive Frequency decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals a critical race between gene drive spread and resistance evolution. Under what conditions does resistance 'win' against the drive?
 
@@ -1062,11 +991,15 @@ D. Resistance only matters in laboratory settings, not in wild populations
 
 Correct Answer: B
 
-Feedback: Correct. It is a rate competition. If resistance mutations arise and spread through natural selection faster than the drive can reach fixation, resistance individuals outcompete drive carriers, and the drive stalls. The outcome depends on relative rates. In large populations with high genetic diversity, resistance mutations are more likely to arise. If they spread fast enough through natural selection, they can outcompete the drive before it reaches fixation.
+Feedback: Correct. It is a rate competition. If resistance mutations arise and spread through natural selection faster than the drive can reach fixation, resistance individuals outcompete drive carriers, and the drive stalls. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Inheritance Bias increases, Gene Drive Frequency increases and when Fitness Cost increases, Gene Drive Frequency decreases and when Gene Drive Frequency increases, Resistance Evolution increases. The student changes one variable to see how the whole system responds.
 
 A student's model shows that suppressing mosquito populations by 90% causes significant declines in bat, bird, and fish populations that feed on mosquitoes. What systems concept does this demonstrate?
 
@@ -1077,11 +1010,15 @@ D. Only the mosquito population is affected by gene drive deployment
 
 Correct Answer: B
 
-Feedback: Correct. Removing or suppressing a species creates ripple effects through the food web. Species that depend on mosquitoes as food (bats, birds, fish, other insects) lose a resource, which can cascade further up the food chain. Ecosystems are interconnected networks. Suppressing one species affects all species connected to it. Mosquitoes serve as food for many predators, and their removal or reduction triggers cascading effects that propagate through the entire food web.
+Feedback: Correct. Removing or suppressing a species creates ripple effects through the food web. Species that depend on mosquitoes as food (bats, birds, fish, other insects) lose a resource, which can cascade further up the food chain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The simulation demonstrates that once a gene drive is released into a wild population, it cannot be recalled. Why is this irreversibility fundamentally different from other biotechnologies?
 
@@ -1092,11 +1029,15 @@ D. Irreversibility is only a theoretical concern with no practical implications
 
 Correct Answer: B
 
-Feedback: Correct. A gene drive is self-propagating, meaning it reproduces and spreads through natural mating. Unlike a chemical spill (which can be cleaned) or a GMO crop (which can be contained), a gene drive becomes part of the wild gene pool permanently. The key distinction is self-propagation. Most technologies can be recalled, deactivated, or contained. A gene drive, once released, spreads autonomously through reproduction. It cannot be collected from wild organisms or reversed once integrated into the gene pool.
+Feedback: Correct. A gene drive is self-propagating, meaning it reproduces and spreads through natural mating. Unlike a chemical spill (which can be cleaned) or a GMO crop (which can be contained), a gene drive becomes part of the wild gene pool permanently. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Fitness Cost, Inheritance Bias), but they can take action on internal components (Gene Drive Frequency, Wild-Type Allele Frequency, Population Size, Resistance Evolution, Ecological Impact). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model evidence, which deployment strategy best balances the humanitarian goal of malaria elimination with ecological safety?
 
@@ -1107,27 +1048,18 @@ D. Deploy the gene drive only in laboratories and never release it into the wild
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that outcomes depend on parameters (fitness cost, resistance rate, ecological connections) that vary across environments. A phased approach allows data collection at each stage, with the ability to halt before irreversible consequences occur. The model demonstrates that uncertainty in ecological impacts and resistance dynamics requires a cautious, staged approach. Phased deployment with monitoring and halt criteria balances the urgency of disease elimination with the irreversibility of the technology.
+Feedback: Correct. The model shows that outcomes depend on parameters (fitness cost, resistance rate, ecological connections) that vary across environments. A phased approach allows data collection at each stage, with the ability to halt before irreversible consequences occur. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

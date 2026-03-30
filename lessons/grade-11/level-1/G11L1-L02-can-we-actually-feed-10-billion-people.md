@@ -899,86 +899,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Global food production currently generates approximately 6,000 calories per person per day, yet 735 million people are chronically hungry. Which factor best explains this paradox?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
 
-A. The world does not produce enough total food to feed 8 billion people
-B. Distribution inefficiencies, food waste, and diversion to animal feed and biofuels prevent produced calories from reaching people as food
-C. The 735 million hungry people live in regions where crops cannot physically grow
-D. Food production data is inaccurate and actual output is much lower than reported
-
-Correct Answer: B
-
-Feedback: Correct. The world produces sufficient total calories, but roughly two-thirds are lost to waste, animal feed conversion, and biofuel production before reaching humans as food. Hunger is a distribution and allocation problem, not a production problem. Consider the math: 6,000 calories produced per person versus 2,000 needed. The total is sufficient. What happens to the other 4,000 calories per person? The answer involves the entire supply chain, not production capacity.
-
----
-
-### Question 2
-
-A farmer applies maximum synthetic fertilizer to increase crop yield. Which long-term consequence is most likely based on soil science?
-
-A. Soil organic matter will increase indefinitely as crops grow larger and return more biomass
-B. Soil health will remain unchanged because synthetic fertilizer replaces natural nutrients
-C. Soil degradation will accelerate as microbial diversity declines, organic matter decreases, and chemical runoff pollutes waterways
-D. Crop yields will increase linearly with fertilizer application without any diminishing returns
-
-Correct Answer: C
-
-Feedback: Correct. Excessive synthetic fertilizer degrades soil health by reducing microbial diversity, decreasing organic matter, causing acidification, and contributing to waterway pollution through runoff. Short-term yield gains mask long-term soil destruction. Consider what soil health depends on beyond just chemical nutrients. Healthy soil is a living ecosystem of microorganisms, organic matter, and nutrient cycles. How does flooding it with synthetic chemicals affect these biological systems over years?
-
----
-
-### Question 3
-
-Carrying capacity for a human population depends on which set of factors?
-
-A. Only the total land area of the planet
-B. Agricultural technology, diet choices, resource distribution, and environmental sustainability practices
-C. The birth rate and death rate of the population alone
-D. The number of animal species in an ecosystem
-
-Correct Answer: B
-
-Feedback: Correct. Human carrying capacity is not a fixed number. It depends on how efficiently we produce food (technology), what we eat (diet choices affect land use 10x), how we share resources (distribution), and whether we maintain the ecosystems that sustain agriculture. Unlike most species, human carrying capacity is highly flexible because we can modify our technology, diet, and resource management. Consider how switching from beef to plant-based diets would change how many people the same land could feed.
-
----
-
-### Question 4
-
-Which strategy would most effectively increase food production while minimizing environmental damage?
-
-A. Converting all remaining forests to farmland to maximize arable land area
-B. Applying maximum fertilizer to existing farmland to push yields higher
-C. Sustainable intensification that maintains soil health while improving yield per hectare on existing farmland
-D. Reducing the global population to match current food distribution capacity
-
-Correct Answer: C
-
-Feedback: Correct. Sustainable intensification improves yield on existing land through precision agriculture, soil conservation, and integrated pest management without the environmental costs of land expansion or chemical overuse. Consider the trade-offs of each approach. Land expansion destroys ecosystems. Maximum fertilizer degrades soil. The challenge is increasing output per hectare without destroying the resource base. Which approach achieves both?
-
----
-
-### Question 5
-
-A computational model of global agriculture shows that crop yields initially increase with fertilizer application but eventually plateau and then decline. This pattern is best explained by which concept?
-
-A. Linear growth, where outputs always increase proportionally with inputs
-B. Diminishing returns followed by degradation, where initial gains are offset by cumulative damage to the soil ecosystem
-C. Random variation in weather patterns that occasionally reduce yields
-D. Government regulations that limit how much fertilizer farmers can apply
-
-Correct Answer: B
-
-Feedback: Correct. The yield curve demonstrates diminishing returns (each additional unit of fertilizer produces less additional yield) followed by negative returns as soil degradation from excess chemicals reduces the land's productive capacity. Think about what happens to the soil, not just the crop, when fertilizer is applied repeatedly at maximum levels. Initially yields rise, then the gains shrink, and eventually the soil is damaged enough that yields actually fall.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Arable Land Area, Fertilizer Input, Water Availability, Crop Yield per Hectare, Soil Health Index, Total Food Production. Some components are external (Arable Land Area, Fertilizer Input, Water Availability) and some are internal (Crop Yield per Hectare, Soil Health Index, Total Food Production). The student needs to understand what each component represents and how they are organized.
 
 A student's 30-year simulation shows that the Green Revolution strategy (maximum fertilizer and water) produces higher yields than sustainable intensification for the first 15 years, but then yields crash while the sustainable approach maintains steady output. Which conclusion is best supported by this model data?
 
@@ -989,11 +914,15 @@ D. Both strategies produce the same total food over 30 years, just distributed d
 
 Correct Answer: C
 
-Feedback: Correct. The simulation reveals a time-delayed feedback: soil degradation accumulates beneath rising yields until a tipping point is reached. The sustainable strategy avoids this crash by maintaining the resource base, producing more total food across the full period. Compare total food produced over the entire 30-year period, not just the peak year. The Green Revolution strategy borrows from future productivity. When the soil debt comes due, the crash erases the early gains.
+Feedback: Correct. The simulation reveals a time-delayed feedback: soil degradation accumulates beneath rising yields until a tipping point is reached. The sustainable strategy avoids this crash by maintaining the resource base, producing more total food across the full period. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Fertilizer Input increases, Crop Yield per Hectare increases; when Fertilizer Input increases, Soil Health Index decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that converting 30% of forest to farmland increases total food production by only 18%, not 30%. Which factor best explains why the production increase is less than proportional to the land increase?
 
@@ -1004,11 +933,15 @@ D. Global food demand decreased during the simulation period
 
 Correct Answer: A
 
-Feedback: Correct. Forest soils, once cleared, lose organic matter rapidly, lack irrigation infrastructure, and are prone to erosion. New farmland is inherently less productive than established agricultural land, and deforestation disrupts local water cycles that previously supported the ecosystem. Think about what makes existing farmland productive: decades of soil management, irrigation systems, local climate adapted to open land. Newly cleared forest has none of these advantages and faces additional challenges like rapid topsoil loss.
+Feedback: Correct. Forest soils, once cleared, lose organic matter rapidly, lack irrigation infrastructure, and are prone to erosion. New farmland is inherently less productive than established agricultural land, and deforestation disrupts local water cycles that previously supported the ecosystem. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Fertilizer Input increases, Crop Yield per Hectare increases and when Fertilizer Input increases, Soil Health Index decreases and when Soil Health Index increases, Crop Yield per Hectare increases. The student changes one variable to see how the whole system responds.
 
 A student proposes reducing food waste by 50% as an alternative to increasing production. Based on the model, which assessment of this proposal is most accurate?
 
@@ -1019,11 +952,15 @@ D. The model shows waste reduction is impossible because spoilage is a natural a
 
 Correct Answer: B
 
-Feedback: Correct. Since roughly one-third of all food produced is wasted, a 50% reduction in waste would free up massive amounts of food without any additional environmental burden. This is the most resource-efficient strategy for closing the food gap. Consider that approximately one-third of global food production is wasted. Recovering even half of that waste means more food is available without planting a single additional hectare or applying any additional fertilizer.
+Feedback: Correct. Since roughly one-third of all food produced is wasted, a 50% reduction in waste would free up massive amounts of food without any additional environmental burden. This is the most resource-efficient strategy for closing the food gap. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The simulation reveals that water availability is the first resource to become limiting in the Green Revolution scenario. Which systems-level explanation accounts for water becoming the bottleneck before soil degradation or land availability?
 
@@ -1034,11 +971,15 @@ D. Water limitations are an artifact of the model and do not reflect real-world 
 
 Correct Answer: B
 
-Feedback: Correct. Intensive agriculture creates a water scarcity feedback loop: higher fertilizer increases crop water demand, irrigation depletes aquifers faster than they recharge, and agricultural runoff degrades the watersheds that supply fresh water. The water crisis is both driven by and amplified by intensification. Consider how intensive farming affects water from multiple directions simultaneously. High-yield crops need more water, irrigation draws down aquifers, and chemical runoff pollutes water sources. These effects compound each other.
+Feedback: Correct. Intensive agriculture creates a water scarcity feedback loop: higher fertilizer increases crop water demand, irrigation depletes aquifers faster than they recharge, and agricultural runoff degrades the watersheds that supply fresh water. The water crisis is both driven by and amplified by intensification. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Arable Land Area, Fertilizer Input, Water Availability), but they can take action on internal components (Crop Yield per Hectare, Soil Health Index, Total Food Production). They need to decide which action would be most effective based on what the model shows.
 
 Based on the complete model analysis, which policy recommendation is best supported by the simulation evidence for feeding 10 billion people by 2058?
 
@@ -1049,27 +990,18 @@ D. Maintain current agricultural practices and rely on future technological brea
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that no single strategy is sufficient. Sustainable intensification maintains yields without soil degradation, waste reduction frees existing food without environmental cost, and dietary shifts dramatically reduce the land and water needed per calorie. The combined approach is the only one that closes the gap sustainably. Review the model results for each individual strategy. None of them alone feeds 10 billion people sustainably for 30 years. The question is which combination of strategies addresses production, distribution, and demand simultaneously.
+Feedback: Correct. The model shows that no single strategy is sufficient. Sustainable intensification maintains yields without soil degradation, waste reduction frees existing food without environmental cost, and dietary shifts dramatically reduce the land and water needed per calorie. The combined approach is the only one that closes the gap sustainably. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: A
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

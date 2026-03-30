@@ -914,86 +914,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Earth is approximately 70% water. What percentage of Earth's total water is accessible freshwater?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.5 + CCC4 (Systems and System Models)
 
-A. About 10%
-B. About 2.5%
-C. About 0.5%
-D. About 25%
-
-Correct Answer: C
-
-Feedback: Correct. Only about 0.5% of Earth's water is accessible freshwater. The rest is saltwater (97.5%) or frozen in ice caps and glaciers. Although Earth has vast water, 97.5% is saltwater and about 2% is frozen in ice caps and glaciers. Only about 0.5% is accessible freshwater in rivers, lakes, and reachable groundwater.
-
----
-
-### Question 2
-
-What is an aquifer?
-
-A. A man-made reservoir for storing treated water
-B. An underground layer of rock or sediment that holds and transmits groundwater
-C. A type of water treatment plant
-D. A dam built across a river to store water
-
-Correct Answer: B
-
-Feedback: Correct. An aquifer is a geological formation (rock, gravel, sand) that stores groundwater in pore spaces and can transmit it to wells and springs. An aquifer is a natural underground formation of permeable rock, sand, or gravel that holds groundwater. Wells are drilled into aquifers to access this water for drinking, irrigation, and industry.
-
----
-
-### Question 3
-
-Which sector consumes the largest share of global freshwater withdrawals?
-
-A. Residential and municipal use (drinking, bathing, toilets)
-B. Industrial manufacturing
-C. Agriculture (irrigation)
-D. Energy production (power plant cooling)
-
-Correct Answer: C
-
-Feedback: Correct. Agriculture accounts for approximately 70% of all global freshwater withdrawals, primarily for irrigation. Agriculture consumes about 70% of all freshwater withdrawn globally. Irrigation is by far the largest use, with much of it using inefficient flood methods that waste 40-60% of applied water.
-
----
-
-### Question 4
-
-What does 'water stress' mean for a region?
-
-A. The region receives too much rainfall, causing flooding
-B. Water demand exceeds available supply, or poor water quality restricts use
-C. Water infrastructure requires expensive repairs
-D. The region has more surface water than groundwater
-
-Correct Answer: B
-
-Feedback: Correct. A region is water-stressed when demand approaches or exceeds the available supply, or when water quality is too poor for intended uses. Water stress occurs when the demand for freshwater (from population, agriculture, industry) approaches or exceeds the available supply. Regions where more than 40% of available water is withdrawn are classified as severely stressed.
-
----
-
-### Question 5
-
-Why might depleting an aquifer be considered 'functionally irreversible'?
-
-A. Empty aquifers immediately fill with saltwater that cannot be removed
-B. Many major aquifers accumulated water over thousands to millions of years, and natural recharge replaces less than 1% of withdrawals annually
-C. Government regulations permanently prevent refilling depleted aquifers
-D. Aquifer rock collapses when water is removed, destroying the formation
-
-Correct Answer: B
-
-Feedback: Correct. Major agricultural aquifers like the Ogallala formed over millions of years. Current extraction rates far exceed natural recharge, making depletion effectively permanent on human timescales. Many large aquifers are 'fossil water' systems that accumulated over geological timescales. When extraction vastly exceeds the tiny natural recharge rate, the aquifer is being mined like a non-renewable resource. Refilling would take thousands of years.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Population and Agricultural Demand, Groundwater Extraction Rate, Aquifer Water Level, Natural Recharge Rate, Surface Water Availability, Regional Food Production Capacity. Some components are external (Population and Agricultural Demand, Groundwater Extraction Rate) and some are internal (Aquifer Water Level, Natural Recharge Rate, Surface Water Availability, Regional Food Production Capacity). The student needs to understand what each component represents and how they are organized.
 
 The model shows that the Ogallala Aquifer has lost 30% of its volume in 60 years while natural recharge replaces less than 1% of annual withdrawals. A farmer proposes 'just pumping less.' At what extraction rate does the model show the aquifer stabilizes?
 
@@ -1004,11 +929,15 @@ D. The aquifer cannot stabilize because climate change is increasing recharge
 
 Correct Answer: B
 
-Feedback: Correct. For the aquifer to stabilize, extraction cannot exceed recharge. Since recharge is less than 1% of current withdrawal, extraction would need to drop by roughly 99%, which is practically impossible without completely transforming regional agriculture. The model shows sustainability requires withdrawal equals recharge. Since natural recharge is less than 1% of current extraction, stabilization requires a near-complete halt to pumping. This reveals the magnitude of the problem: current agriculture depends on mining a non-renewable resource.
+Feedback: Correct. For the aquifer to stabilize, extraction cannot exceed recharge. Since recharge is less than 1% of current withdrawal, extraction would need to drop by roughly 99%, which is practically impossible without completely transforming regional agriculture. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Population and Agricultural Demand increases, Groundwater Extraction Rate increases; when Groundwater Extraction Rate increases, Aquifer Water Level decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model demonstrates a cascading failure: aquifer depletion reduces food production, food shortages drive migration, and migration concentrates populations in cities facing their own water stress. What systems concept does this cascade illustrate?
 
@@ -1019,11 +948,15 @@ D. A self-correcting market response to resource scarcity
 
 Correct Answer: B
 
-Feedback: Correct. This cascade is a positive feedback loop across coupled systems: water depletion drives food loss, which drives migration, which intensifies urban water stress, worsening conditions across all connected systems. The cascade demonstrates how interconnected systems amplify failures: aquifer depletion is not just a water problem but triggers food insecurity, migration, and urban stress in a compounding positive feedback loop that affects multiple sectors simultaneously.
+Feedback: Correct. This cascade is a positive feedback loop across coupled systems: water depletion drives food loss, which drives migration, which intensifies urban water stress, worsening conditions across all connected systems. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Population and Agricultural Demand increases, Groundwater Extraction Rate increases and when Groundwater Extraction Rate increases, Aquifer Water Level decreases and when Aquifer Water Level increases, Regional Food Production Capacity increases. The student changes one variable to see how the whole system responds.
 
 A student proposes desalination as the solution to global water scarcity. Based on the model, which limitation most significantly constrains this approach?
 
@@ -1034,11 +967,15 @@ D. Only coastal cities can benefit, and most water stress occurs inland
 
 Correct Answer: B
 
-Feedback: Correct. Desalination faces scalability challenges: high energy costs, limited current contribution (<1% of global supply), and environmental impacts from brine disposal make it a supplementary solution, not a replacement for sustainable groundwater management. While desalination works technically, it currently provides less than 1% of global freshwater and faces major scalability constraints: high energy requirements, significant cost per unit volume, and environmental damage from concentrated brine waste discharged into marine environments.
+Feedback: Correct. Desalination faces scalability challenges: high energy costs, limited current contribution (<1% of global supply), and environmental impacts from brine disposal make it a supplementary solution, not a replacement for sustainable groundwater management. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model's 'virtual water' concept reveals that a kilogram of beef requires approximately 15,000 liters of water. How does this inform a systems-level approach to water scarcity?
 
@@ -1049,11 +986,15 @@ D. Beef production should be banned in all water-stressed regions
 
 Correct Answer: B
 
-Feedback: Correct. Virtual water analysis reveals that demand-side changes (dietary shifts, crop choice, agricultural efficiency) can achieve far greater water savings than supply-side engineering because agriculture dominates consumption. Understanding virtual water shows that water scarcity is partly a demand problem. Since agriculture uses 70% of freshwater and water intensity varies widely (15,000 L/kg beef vs. 1,800 L/kg grain), dietary and crop shifts can yield massive water savings.
+Feedback: Correct. Virtual water analysis reveals that demand-side changes (dietary shifts, crop choice, agricultural efficiency) can achieve far greater water savings than supply-side engineering because agriculture dominates consumption. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.5 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Population and Agricultural Demand, Groundwater Extraction Rate), but they can take action on internal components (Aquifer Water Level, Natural Recharge Rate, Surface Water Availability, Regional Food Production Capacity). They need to decide which action would be most effective based on what the model shows.
 
 The model shows that increasing Population and Agricultural Demand by 50% while decreasing Natural Recharge Rate by 20% (due to climate change) causes Aquifer Water Level to crash decades sooner than either factor alone. What does this reveal about compounding stressors in water systems?
 
@@ -1064,27 +1005,18 @@ D. Population growth can always be offset by more efficient irrigation technolog
 
 Correct Answer: B
 
-Feedback: Correct. When demand rises while supply falls simultaneously, the depletion gap widens from both sides, creating a multiplicative effect that accelerates collapse far beyond what either stressor would cause independently. Compounding stressors are worse than additive: rising demand and declining recharge simultaneously widen the extraction-recharge gap, causing nonlinear acceleration. The aquifer depletes much faster under compound stress than under either factor alone.
+Feedback: Correct. When demand rises while supply falls simultaneously, the depletion gap widens from both sides, creating a multiplicative effect that accelerates collapse far beyond what either stressor would cause independently. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.5, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

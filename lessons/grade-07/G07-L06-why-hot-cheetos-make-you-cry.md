@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-How does your body detect when something is hot?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS1-8 + CCC4 (Systems and System Models)
 
-A. Your skin changes color to signal danger to your brain
-B. Specialized nerve endings called receptors detect the heat and send signals to your brain
-C. Your blood heats up and your brain feels the temperature change directly
-D. Hot objects emit a sound frequency that your ears detect
-
-Correct Answer: B
-
-Feedback: Correct! Your body has specialized sensory receptors (thermoreceptors) in your skin that detect temperature changes and send electrical signals through nerves to your brain. Not quite. Your body detects heat through specialized sensory receptors in your skin. These receptors convert the temperature stimulus into electrical nerve signals that travel to your brain.
-
----
-
-### Question 2
-
-Why do you think eating spicy food makes some people cry and sweat?
-
-A. Spicy food contains acid that burns holes in your tongue
-B. The chemicals in spicy food may activate pain or heat receptors in your mouth
-C. Crying is an allergic reaction that only some people have to spices
-D. Spicy food makes you sad, which causes tears
-
-Correct Answer: B
-
-Feedback: Correct! Capsaicin in spicy food activates the same receptors that detect actual heat, triggering a pain response that includes tears, sweating, and a runny nose. Not quite. Capsaicin, the chemical that makes food spicy, binds to heat/pain receptors in your mouth, tricking your brain into responding as if your mouth is on fire.
-
----
-
-### Question 3
-
-What happens inside your body between the moment you touch a hot pan and the moment you pull your hand away?
-
-A. Nothing happens inside your body. Your hand moves on its own.
-B. Your hand sends a signal to your brain, which sends a signal back to your muscles
-C. The heat melts the nerves in your hand, causing it to jerk away
-D. Your eyes see the hot pan and tell your hand to move
-
-Correct Answer: B
-
-Feedback: Correct! Sensory receptors detect the heat and send an electrical signal through nerves. Your nervous system processes this signal and sends a response back to your muscles to pull away. Not quite. When you touch something hot, receptors send an electrical signal through your nerves. Your nervous system processes the signal and sends a motor signal back to your muscles to pull your hand away.
-
----
-
-### Question 4
-
-Can your senses ever be tricked into perceiving something that is not real?
-
-A. No. Our senses always give us a perfectly accurate picture of reality.
-B. Yes. Optical illusions, phantom vibrations, and certain chemicals can fool our sensory receptors.
-C. Only sight can be tricked. All other senses are always accurate.
-D. Senses can only be tricked if a person is asleep
-
-Correct Answer: B
-
-Feedback: Correct! Our senses can be fooled. Optical illusions trick our vision, capsaicin tricks heat receptors, and menthol tricks cold receptors. The brain responds to the signal it receives, even if the stimulus is not what it seems. Not quite. All of our senses can be tricked. Optical illusions fool vision, capsaicin makes us feel burning heat that is not real, and menthol creates a sensation of cold without an actual temperature change.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Stimulus Intensity, Receptor Sensitivity, Nerve Signal Strength, Brain Response. Some components are external (Stimulus Intensity, Receptor Sensitivity) and some are internal (Nerve Signal Strength, Brain Response). The student needs to understand what each component represents and how they are organized.
 
 Capsaicin from a Hot Cheeto binds to TRPV1 receptors in your mouth. What happens next in the nervous system pathway?
 
@@ -967,11 +907,15 @@ D. TRPV1 receptors release capsaicin back into the mouth, amplifying the spicy f
 
 Correct Answer: B
 
-Feedback: Correct! Capsaicin activates TRPV1 heat/pain receptors, which generate electrical signals that travel through neurons to the brain. The brain interprets this as burning and triggers protective responses: tears, sweating, and mucus production. Not quite. When capsaicin binds to TRPV1 receptors, those receptors fire electrical signals through neurons to the brain. The brain cannot distinguish this signal from real burning, so it triggers pain responses including tears, sweating, and a runny nose.
+Feedback: Correct! Capsaicin activates TRPV1 heat/pain receptors, which generate electrical signals that travel through neurons to the brain. The brain interprets this as burning and triggers protective responses: tears, sweating, and mucus production. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS1-8 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Stimulus Intensity increases, Nerve Signal Strength increases; when Receptor Sensitivity increases, Nerve Signal Strength increases. The student is trying to understand why these relationships are positive or negative.
 
 After being in a room with a strong smell for 10 minutes, you stop noticing the odor. What does the nervous system model predict is happening?
 
@@ -982,11 +926,15 @@ D. Your nose has become physically blocked by the smell particles
 
 Correct Answer: B
 
-Feedback: Correct! This is sensory adaptation. When exposed to a constant stimulus, receptors gradually decrease their firing rate. The smell is still there, but your nervous system reduces its response because the stimulus has not changed. Not quite. This phenomenon is called sensory adaptation. Your receptors reduce their firing rate when exposed to a constant, unchanging stimulus. The smell has not disappeared; your nervous system has simply decreased its response to it.
+Feedback: Correct! This is sensory adaptation. When exposed to a constant stimulus, receptors gradually decrease their firing rate. The smell is still there, but your nervous system reduces its response because the stimulus has not changed. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS1-8 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Stimulus Intensity increases, Nerve Signal Strength increases and when Receptor Sensitivity increases, Nerve Signal Strength increases and when Nerve Signal Strength increases, Brain Response increases. The student changes one variable to see how the whole system responds.
 
 Your hand pulls away from a hot stove BEFORE you consciously feel pain. How does the model explain this?
 
@@ -997,11 +945,15 @@ D. You saw the stove was hot before touching it, so your hand pulled away from m
 
 Correct Answer: B
 
-Feedback: Correct! Reflexes bypass the brain for speed. The pain signal goes from sensory receptors to the spinal cord, which immediately sends a motor signal to your arm muscles. Your brain receives the pain signal after your hand has already moved. Not quite. Reflex arcs bypass the brain entirely. The signal travels from receptors to the spinal cord, which sends an immediate motor response to your muscles. This takes about 0.05 seconds. Conscious awareness of pain comes later when the signal reaches the brain.
+Feedback: Correct! Reflexes bypass the brain for speed. The pain signal goes from sensory receptors to the spinal cord, which immediately sends a motor signal to your arm muscles. Your brain receives the pain signal after your hand has already moved. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS1-8 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which statement best explains why capsaicin causes a real pain response even though it does not damage any tissue?
 
@@ -1012,25 +964,37 @@ D. Capsaicin only triggers a mild response that people exaggerate for attention
 
 Correct Answer: B
 
-Feedback: Correct! The brain cannot tell the difference between a signal caused by capsaicin and one caused by actual heat above 43 degrees C. Both activate the same TRPV1 receptor, generating identical nerve signals. The response is genuine even though no damage occurs. Not quite. Capsaicin activates the exact same TRPV1 receptor that detects temperatures above 43 degrees C. The receptor sends an identical signal regardless of the cause. The brain responds to the signal, not the source, which is why the pain response is real.
+Feedback: Correct! The brain cannot tell the difference between a signal caused by capsaicin and one caused by actual heat above 43 degrees C. Both activate the same TRPV1 receptor, generating identical nerve signals. The response is genuine even though no damage occurs. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS1-8 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Stimulus Intensity, Receptor Sensitivity), but they can take action on internal components (Nerve Signal Strength, Brain Response). They need to decide which action would be most effective based on what the model shows.
+
+How does your body detect when something is hot?
+
+A. Your skin changes color to signal danger to your brain
+B. Specialized nerve endings called receptors detect the heat and send signals to your brain
+C. Your blood heats up and your brain feels the temperature change directly
+D. Hot objects emit a sound frequency that your ears detect
+
+Correct Answer: B
+
+Feedback: Correct! Your body has specialized sensory receptors (thermoreceptors) in your skin that detect temperature changes and send electrical signals through nerves to your brain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS1-8, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS1-8, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS1-8, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS1-8, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS1-8, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

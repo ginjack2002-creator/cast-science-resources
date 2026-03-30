@@ -901,86 +901,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Animal migration is a seasonal movement between distinct habitats. What is the primary evolutionary driver that maintains migration behavior in a population?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.8 + CCC4 (Systems and System Models)
 
-A. Animals migrate because they enjoy traveling and exploring new environments
-B. Migration provides a net reproductive advantage: animals that migrate produce more surviving offspring than those that do not, despite the journey's risks
-C. Animals migrate because other animals in the group force them to follow
-D. Migration occurs randomly with no evolutionary explanation
-
-Correct Answer: B
-
-Feedback: Correct. Migration is maintained by natural selection because the reproductive benefits at the destination (abundant food, safe breeding grounds) outweigh the mortality costs of the journey. It is a cost-benefit equation refined over millions of years. Migration persists because it is an evolutionarily stable strategy: the reproductive payoff at the destination exceeds the mortality cost of the journey. Natural selection maintains migration when stay-at-home individuals produce fewer surviving offspring.
-
----
-
-### Question 2
-
-Many migratory birds navigate using Earth's magnetic field. What is the term for this biological ability?
-
-A. Echolocation
-B. Magnetoreception
-C. Phototropism
-D. Chemotaxis
-
-Correct Answer: B
-
-Feedback: Correct. Magnetoreception is the ability to detect and orient using Earth's magnetic field. It has been documented in birds, sea turtles, salmon, and other migratory species, likely using magnetite crystals or cryptochrome proteins. Magnetoreception is the biological sense that allows organisms to detect Earth's magnetic field for navigation. It is distinct from echolocation (sound-based), phototropism (light-directed growth), and chemotaxis (chemical-directed movement).
-
----
-
-### Question 3
-
-Stopover sites are locations where migratory animals rest and refuel during their journey. Why are these sites considered critical to species survival?
-
-A. Stopover sites are where migratory animals permanently settle and establish new populations
-B. Loss of even a single critical stopover site can cause population collapse across the entire migration route because animals cannot complete the journey without refueling
-C. Stopover sites are only used by weak or injured animals and are not important for healthy migrants
-D. Animals do not actually need to stop during migration because they carry enough energy for the entire journey
-
-Correct Answer: B
-
-Feedback: Correct. Most migratory species cannot carry enough energy reserves for the entire journey. They depend on a chain of stopover sites to refuel, and losing one critical link can strand entire populations mid-migration. Stopover sites function as essential refueling stations. Most migrants cannot complete their journey on a single energy load and must stop to eat and rest. Losing a critical stopover site can cause population-level mortality across the species' entire range.
-
----
-
-### Question 4
-
-Climate change is altering the timing of seasonal events like insect emergence and plant flowering. How might this affect migratory species?
-
-A. Climate change benefits all migrants by extending the growing season at their destination
-B. A phenological mismatch can occur when migrants arrive at breeding grounds on their genetically programmed schedule but peak food resources have already passed due to earlier warming
-C. Climate change has no effect on migration because animals can instantly adjust their departure timing
-D. Climate change only affects non-migratory species because migrants can escape to better climates
-
-Correct Answer: B
-
-Feedback: Correct. Phenological mismatch occurs when migration timing (often triggered by day length, which is not changing) falls out of sync with food availability (which is shifting earlier due to warming), creating a survival crisis at the destination. Climate change creates phenological mismatch: migration timing is often controlled by photoperiod (unchanged), while food availability at the destination shifts with temperature (changing). Animals arrive 'on time' but the food peak has already passed.
-
----
-
-### Question 5
-
-Many migratory species travel in large groups rather than individually. Which benefit of group migration provides the most direct survival advantage during the journey?
-
-A. Larger groups attract more predators, giving individuals practice at escaping
-B. Group migration provides predator dilution (reduced individual risk), collective navigation accuracy, and energy savings through aerodynamic drafting
-C. Groups migrate faster because dominant individuals force slower members to speed up
-D. Group migration is purely social and provides no survival benefit
-
-Correct Answer: B
-
-Feedback: Correct. Group migration provides multiple survival benefits: each individual's predation risk decreases with group size (dilution), navigation errors average out (collective intelligence), and aerodynamic drafting reduces energy costs. Group migration confers compound survival benefits: predator dilution (lower individual risk in larger groups), collective navigation (averaging out individual errors), and energy efficiency (drafting reduces flight costs by up to 25%).
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Navigation Accuracy, Energy Reserves, Climate Trigger, Predator Avoidance, Group Size, Food Availability, Reproductive Success. Some components are external (Climate Trigger, Food Availability) and some are internal (Navigation Accuracy, Energy Reserves, Predator Avoidance, Group Size, Reproductive Success). The student needs to understand what each component represents and how they are organized.
 
 In the migration model, what does the relationship between Climate Trigger and Food Availability reveal as the most dangerous threat to migratory species?
 
@@ -991,11 +916,15 @@ D. That animals can consciously adjust their departure date to match food availa
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that migration evolved when these two clocks were synchronized. Climate change is disrupting Food Availability timing while leaving the photoperiod trigger unchanged, creating a potentially fatal mismatch. The model demonstrates that migration timing evolved when photoperiod (the departure trigger) reliably predicted food availability at the destination. Climate change is shifting food timing independently of day length, breaking this ancient coordination.
+Feedback: Correct. The model reveals that migration evolved when these two clocks were synchronized. Climate change is disrupting Food Availability timing while leaving the photoperiod trigger unchanged, creating a potentially fatal mismatch. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.8 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Climate Trigger increases, Energy Reserves increases; when Energy Reserves increases, Navigation Accuracy increases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that Group Size provides compound benefits through the 'many wrongs' principle. What does this principle demonstrate about collective navigation?
 
@@ -1006,11 +935,15 @@ D. That groups always navigate worse than individuals because they argue about d
 
 Correct Answer: B
 
-Feedback: Correct. The 'many wrongs' principle shows that when individual navigation errors are independent and random, the group's average heading is more accurate than any single member's heading, improving collective navigation accuracy. The 'many wrongs' principle is a statistical phenomenon: each individual's navigation has some random error, but when the group averages these independent errors, they cancel out, producing a collective heading more accurate than any individual's.
+Feedback: Correct. The 'many wrongs' principle shows that when individual navigation errors are independent and random, the group's average heading is more accurate than any single member's heading, improving collective navigation accuracy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.8 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Climate Trigger increases, Energy Reserves increases and when Energy Reserves increases, Navigation Accuracy increases and when Food Availability increases, Reproductive Success increases. The student changes one variable to see how the whole system responds.
 
 A student runs the model with a scenario where one critical stopover site is removed from the migration route. What does the model predict?
 
@@ -1021,11 +954,15 @@ D. Only old or weak animals are affected; healthy animals complete the journey w
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that migration routes function as a chain of energy stations. Removing one link creates a gap too large for energy reserves to bridge, causing widespread mortality that cascades to population-level impacts. The model shows that stopover sites form an interconnected chain. Most migrants cannot simply skip a stop because their energy reserves are calibrated for the distance between established refueling points. Removing a critical stopover creates a lethal energy gap.
+Feedback: Correct. The model demonstrates that migration routes function as a chain of energy stations. Removing one link creates a gap too large for energy reserves to bridge, causing widespread mortality that cascades to population-level impacts. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.8 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model demonstrates that migration is an evolutionary cost-benefit calculation. Which evidence from the model best explains why migration remains stable in a population?
 
@@ -1036,11 +973,15 @@ D. Migration exists because habitats are always identical at both endpoints
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that migration is evolutionarily stable only when the reproductive payoff exceeds the journey's mortality cost. If conditions change to shift this balance, migration can be lost from a population. The model frames migration as an ongoing cost-benefit equation shaped by natural selection. Reproductive Success at the destination must consistently exceed journey mortality for migration to be maintained. When this balance shifts, populations may evolve to become sedentary.
+Feedback: Correct. The model shows that migration is evolutionarily stable only when the reproductive payoff exceeds the journey's mortality cost. If conditions change to shift this balance, migration can be lost from a population. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.8 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Climate Trigger, Food Availability), but they can take action on internal components (Navigation Accuracy, Energy Reserves, Predator Avoidance, Group Size, Reproductive Success). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, which combination of human-caused changes poses the greatest threat to migratory species survival?
 
@@ -1051,27 +992,18 @@ D. Artificial lighting in cities that attracts migrating birds at night
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that migration depends on two pillars: timing coordination (food must be available on arrival) and infrastructure (stopover sites must exist for refueling). Climate change attacks the first while habitat destruction attacks the second, creating a compound threat. The model reveals that migration is vulnerable to compound threats. Climate change creates phenological mismatch (timing failure), while habitat destruction removes stopover sites (energy failure). Together, these simultaneously undermine the two fundamental requirements for successful migration.
+Feedback: Correct. The model shows that migration depends on two pillars: timing coordination (food must be available on arrival) and infrastructure (stopover sites must exist for refueling). Climate change attacks the first while habitat destruction attacks the second, creating a compound threat. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.8, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.8, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.8, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.8, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.8, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

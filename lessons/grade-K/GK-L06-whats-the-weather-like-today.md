@@ -724,73 +724,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the weather like when the sun is shining and there are no clouds?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
 
-A. Rainy
-B. Sunny
-C. Snowy
-
-Correct Answer: B
-
-Feedback: Yes! When the sun is shining with no clouds, the weather is sunny. When the sun is out and there are no clouds, we call the weather sunny. The sun shines bright.
-
----
-
-### Question 2
-
-What do clouds look like in the sky?
-
-A. Like white or gray fluffy shapes
-B. Like stars
-C. Like rainbows
-
-Correct Answer: A
-
-Feedback: Yes! Clouds look like white or gray fluffy shapes floating in the sky. Clouds are white or gray fluffy shapes in the sky. They can be big and puffy or thin and wispy.
-
----
-
-### Question 3
-
-Can the weather change from one day to the next?
-
-A. No, it is always the same
-B. Yes, it can be different every day
-C. Only in winter
-
-Correct Answer: B
-
-Feedback: Yes! The weather can be different every day. It might be sunny today and rainy tomorrow. Weather changes from day to day. One day might be sunny and the next might be cloudy or rainy.
-
----
-
-### Question 4
-
-When big dark clouds fill the sky, what might happen?
-
-A. It will get very hot
-B. It might rain
-C. The clouds will go away quickly
-
-Correct Answer: B
-
-Feedback: Yes! Dark clouds often mean rain is coming. The clouds are full of water. When dark clouds fill the sky, it often means rain is coming. Dark clouds hold lots of water.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Number of Clouds, Amount of Sunshine. Some components are external (Number of Clouds) and some are internal (Amount of Sunshine). The student needs to understand what each component represents and how they are organized.
 
 When there are MORE clouds, what happens to the Amount of Sunshine?
 
@@ -800,11 +744,15 @@ C. It stays the same
 
 Correct Answer: B
 
-Feedback: Yes! More clouds means less sunshine. The clouds block the sunlight. That is a negative connection. When clouds go up, sunshine goes down. Clouds block the sun's light from reaching the ground.
+Feedback: Yes! More clouds means less sunshine. The clouds block the sunlight. That is a negative connection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Number of Clouds increases, Amount of Sunshine decreases. The student is trying to understand why these relationships are positive or negative.
 
 What kind of connection do Number of Clouds and Amount of Sunshine have?
 
@@ -814,11 +762,15 @@ C. They are not connected
 
 Correct Answer: B
 
-Feedback: Yes! It is a negative connection. When clouds go up, sunshine goes down. They go in opposite directions. It is a negative connection. More clouds means less sunshine. When one goes up, the other goes down.
+Feedback: Yes! It is a negative connection. When clouds go up, sunshine goes down. They go in opposite directions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC1 (Patterns)
+
+A student runs a simulation of the model. The model shows that when Number of Clouds increases, Amount of Sunshine decreases. The student changes one variable to see how the whole system responds.
 
 What is a pattern?
 
@@ -828,11 +780,15 @@ C. A type of cloud
 
 Correct Answer: B
 
-Feedback: Yes! A pattern is something that happens the same way again and again, like sunny weeks in summer. A pattern is something that repeats. In weather, we might see patterns like sunny days followed by rainy days.
+Feedback: Yes! A pattern is something that happens the same way again and again, like sunny weeks in summer. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is it dimmer and cooler when the sky is full of clouds?
 
@@ -842,25 +798,36 @@ C. The ground is wet
 
 Correct Answer: B
 
-Feedback: Yes! Clouds block the sunlight like a big blanket in the sky, making it dimmer and cooler below. The sun is still shining, but the clouds block the light from reaching us. That is why it is dimmer and cooler.
+Feedback: Yes! Clouds block the sunlight like a big blanket in the sky, making it dimmer and cooler below. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Number of Clouds), but they can take action on internal components (Amount of Sunshine). They need to decide which action would be most effective based on what the model shows.
+
+What is the weather like when the sun is shining and there are no clouds?
+
+A. Rainy
+B. Sunny
+C. Snowy
+
+Correct Answer: B
+
+Feedback: Yes! When the sun is shining with no clouds, the weather is sunny. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC1)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

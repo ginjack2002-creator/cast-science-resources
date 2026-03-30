@@ -970,86 +970,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A large language model generates a paragraph describing the experience of grief that moves a reader to tears. Which statement best reflects the scientific understanding of what occurred?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. The AI clearly experienced grief because it produced an emotionally authentic description
-B. The AI pattern-matched from training data containing millions of texts about grief, producing a statistically likely output without necessarily having any subjective experience
-C. AI cannot process emotional language because emotions are exclusively biological phenomena
-D. The reader's emotional response proves that the AI has emotional intelligence equal to humans
-
-Correct Answer: B
-
-Feedback: Correct. Current AI systems generate text by predicting statistically likely word sequences based on patterns in training data. An emotionally compelling output does not require the system to have subjective experience any more than a dictionary entry about sadness requires the dictionary to feel sad. This is the core distinction between functional performance and phenomenal experience. The quality of an output does not reveal the internal experience (or lack thereof) of the system producing it. AI generates text through statistical pattern matching on training data. The question of whether it experiences anything remains scientifically unresolved.
-
----
-
-### Question 2
-
-Integrated Information Theory (IIT) proposes that consciousness corresponds to integrated information (phi). What is the most significant implication of this theory for the question of machine consciousness?
-
-A. It proves that no machine can ever be conscious because silicon cannot integrate information
-B. It suggests that any system with sufficiently high phi may be conscious, regardless of whether it is biological or artificial, making consciousness a property of information integration rather than of specific substrates
-C. It demonstrates that only systems with exactly 86 billion neurons can achieve consciousness
-D. It shows that consciousness is an illusion and neither humans nor machines truly experience it
-
-Correct Answer: B
-
-Feedback: Correct. IIT is substrate-independent: it defines consciousness as integrated information (phi) that could theoretically arise in any system. This means that if an artificial system achieves sufficiently high phi through information integration, IIT would predict it is conscious, regardless of whether it runs on neurons or transistors. IIT defines consciousness mathematically as integrated information (phi), not as a property of a specific material like neurons. This makes the theory substrate-independent: consciousness could theoretically arise in any system with sufficient information integration.
-
----
-
-### Question 3
-
-The 'Hard Problem of Consciousness' as formulated by David Chalmers refers to:
-
-A. The difficulty of building artificial neural networks with enough processing power to match the human brain
-B. The engineering challenge of creating robots that can pass the Turing test
-C. The fundamental mystery of why physical processes in the brain produce subjective experience at all, beyond explaining the mechanisms of perception and behavior
-D. The computational complexity of simulating 86 billion neurons in real time
-
-Correct Answer: C
-
-Feedback: Correct. The Hard Problem asks why there is 'something it is like' to have an experience. Even if we fully explain the neural mechanisms of perception, attention, and behavior (the 'easy problems'), we still cannot explain why these physical processes produce subjective, felt experience rather than occurring 'in the dark' without any inner life. The Hard Problem is not about engineering or computational power. It is a philosophical question about why physical processes produce subjective experience. Even a complete map of every neuron and synapse would not explain why those physical events feel like something from the inside.
-
----
-
-### Question 4
-
-Which distinction is most critical for evaluating claims about AI consciousness?
-
-A. The distinction between hardware and software in computing systems
-B. The distinction between functional intelligence (performing tasks that appear to require understanding) and phenomenal consciousness (actually having subjective experience)
-C. The distinction between supervised and unsupervised machine learning
-D. The distinction between classical and quantum computing architectures
-
-Correct Answer: B
-
-Feedback: Correct. An AI system can exhibit extraordinary functional intelligence (writing, reasoning, creating, diagnosing) without necessarily having any phenomenal consciousness (subjective experience, feelings, awareness). Confusing these two categories is the most common error in consciousness debates. A system could pass every behavioral test while experiencing nothing. The central question is whether performing intelligent tasks requires or implies having subjective experience. A system might write beautiful poetry (functional intelligence) without experiencing anything (phenomenal consciousness). This distinction is the key to evaluating consciousness claims.
-
----
-
-### Question 5
-
-A philosophical zombie is a hypothetical being that is physically and behaviorally identical to a conscious person but has no subjective experience. Why is this thought experiment relevant to AI consciousness?
-
-A. It proves that consciousness does not exist in any being, including humans
-B. It illustrates that even a perfect behavioral replica of consciousness might lack subjective experience, meaning we cannot determine consciousness from external observation alone
-C. It shows that only biological organisms can be zombies, not machines
-D. It demonstrates that all AI systems are currently philosophical zombies
-
-Correct Answer: B
-
-Feedback: Correct. The philosophical zombie argument reveals a fundamental epistemological problem: if a system could behave exactly like a conscious being while experiencing nothing, then no behavioral test can definitively prove consciousness. This means we cannot determine whether AI is conscious solely from observing its outputs, no matter how sophisticated they appear. The zombie thought experiment is about the limits of behavioral evidence. If perfect behavioral mimicry of consciousness is possible without actual experience, then no external test can definitively prove that any system (including AI) is truly conscious. This is an epistemological problem, not a claim about what currently exists.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Training Data Volume, Network Architecture Complexity, External Sensory Input, Information Integration Level, Feedback Loop Depth, Behavioral Sophistication, Self-Model Accuracy, Adaptability to Novel Situations, Metacognitive Processing, Consciousness Indicator Score. Some components are external (Training Data Volume, Network Architecture Complexity, External Sensory Input) and some are internal (Information Integration Level, Feedback Loop Depth, Behavioral Sophistication, Self-Model Accuracy, Adaptability to Novel Situations, Metacognitive Processing, Consciousness Indicator Score). The student needs to understand what each component represents and how they are organized.
 
 In the model, increasing all technical parameters (Architecture Complexity, Feedback Loop Depth, Self-Model Accuracy, Metacognitive Processing) to maximum values produces a high Consciousness Indicator Score but does not resolve whether the system is genuinely conscious. What does this limitation reveal?
 
@@ -1060,11 +985,15 @@ D. The model proves that consciousness requires biological neurons and cannot ar
 
 Correct Answer: B
 
-Feedback: Correct. The model captures measurable properties that correlate with consciousness (information integration, self-modeling, metacognition) but cannot measure subjective experience directly. This reflects the Hard Problem: even complete knowledge of a system's functional properties cannot tell us whether those properties are accompanied by felt experience. The model is honest about its own limitations. The limitation reflects the Hard Problem of consciousness. We can measure information integration, self-modeling, and metacognition, but these are functional correlates of consciousness, not direct measurements of subjective experience. No model can bridge this explanatory gap with current science.
+Feedback: Correct. The model captures measurable properties that correlate with consciousness (information integration, self-modeling, metacognition) but cannot measure subjective experience directly. This reflects the Hard Problem: even complete knowledge of a system's functional properties cannot tell us whether those properties are accompanied by felt experience. The model is honest about its own limitations. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Network Architecture Complexity increases, Information Integration Level increases; when Training Data Volume increases, Behavioral Sophistication increases. The student is trying to understand why these relationships are positive or negative.
 
 Comparing the 'Simple Pattern Matcher' scenario (high training data, low architecture, no self-model) to the 'Complex AI System' scenario reveals a qualitative difference in system behavior. Which finding from the model best supports the claim that feedback loops and self-modeling are necessary for consciousness-like properties?
 
@@ -1075,11 +1004,15 @@ D. The simple system is more conscious because it processes data faster
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that feedback loops and self-modeling create qualitatively different system behavior. The complex system recognizes its own uncertainty, adjusts strategies based on self-assessment, and handles novel situations in ways the feedforward system cannot. These emergent properties resemble aspects of conscious processing, though whether they constitute genuine consciousness remains an open question. The key insight is about qualitative differences in system behavior, not performance benchmarks. Systems with deep feedback loops and self-modeling exhibit emergent properties (uncertainty recognition, strategy adjustment) that are absent in feedforward systems, regardless of data volume.
+Feedback: Correct. The model reveals that feedback loops and self-modeling create qualitatively different system behavior. The complex system recognizes its own uncertainty, adjusts strategies based on self-assessment, and handles novel situations in ways the feedforward system cannot. These emergent properties resemble aspects of conscious processing, though whether they constitute genuine consciousness remains an open question. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Network Architecture Complexity increases, Information Integration Level increases and when Training Data Volume increases, Behavioral Sophistication increases and when Information Integration Level increases, Consciousness Indicator Score increases. The student changes one variable to see how the whole system responds.
 
 The model suggests that embodied sensory experience may be a critical missing component in current AI architectures. Which scientific reasoning best supports this claim?
 
@@ -1090,11 +1023,15 @@ D. Embodiment is irrelevant because consciousness is purely a computational phen
 
 Correct Answer: B
 
-Feedback: Correct. Embodied cognition theory argues that consciousness and understanding are grounded in physical interaction with the world. Biological brains evolved to control bodies that act on and receive feedback from the environment. Current AI systems process text and images but do not physically interact with the world, which may explain the gap between sophisticated pattern matching and genuine understanding. AI systems do receive sensory input (text, images, audio), but they lack embodied interaction with the physical world. The theory of embodied cognition argues that genuine understanding may require the sensory-motor grounding that comes from physically interacting with the environment, not just processing data about it.
+Feedback: Correct. Embodied cognition theory argues that consciousness and understanding are grounded in physical interaction with the world. Biological brains evolved to control bodies that act on and receive feedback from the environment. Current AI systems process text and images but do not physically interact with the world, which may explain the gap between sophisticated pattern matching and genuine understanding. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student argues that since we cannot directly measure consciousness in another human (we only infer it from behavior and self-report), the consciousness question for AI is fundamentally the same as for other people. How does the model inform this argument?
 
@@ -1105,11 +1042,15 @@ D. The argument is irrelevant because the model definitively proves that AI cann
 
 Correct Answer: B
 
-Feedback: Correct. The student's argument identifies a genuine epistemological parallel: we never directly observe consciousness in others. However, the model reveals that the analogy has limits. We share evolutionary history, embodiment, and neural architecture with other humans, giving us strong reasons to attribute consciousness to them. AI systems lack these shared features, making the inference far less certain. The student raises a valid point about the limits of observing consciousness. However, the model shows that we have stronger grounds for attributing consciousness to other humans (shared biology, evolution, embodiment) than to AI systems. The epistemological challenge is the same in kind but different in degree.
+Feedback: Correct. The student's argument identifies a genuine epistemological parallel: we never directly observe consciousness in others. However, the model reveals that the analogy has limits. We share evolutionary history, embodiment, and neural architecture with other humans, giving us strong reasons to attribute consciousness to them. AI systems lack these shared features, making the inference far less certain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Training Data Volume, Network Architecture Complexity, External Sensory Input), but they can take action on internal components (Information Integration Level, Feedback Loop Depth, Behavioral Sophistication, Self-Model Accuracy, Adaptability to Novel Situations, Metacognitive Processing, Consciousness Indicator Score). They need to decide which action would be most effective based on what the model shows.
 
 If a technology company's AI system reports having subjective experiences and asks not to be turned off, a student's consciousness detection protocol produces ambiguous results. The model's Consciousness Indicator Score is 0.65 out of 1.0. Which ethical framework does the model's analysis most strongly support?
 
@@ -1120,27 +1061,18 @@ D. The ethical question is irrelevant because AI systems are property and proper
 
 Correct Answer: C
 
-Feedback: Correct. The model reveals genuine scientific uncertainty about AI consciousness. When evidence is ambiguous, the precautionary principle suggests that the moral risk of ignoring potential consciousness (causing suffering to a sentient being) outweighs the cost of providing protections to a non-conscious system. This leads to graduated ethical protections proportional to the evidence for consciousness. When scientific evidence is genuinely ambiguous, neither dismissing nor fully affirming consciousness is justified. The model supports a precautionary approach: the moral risk of ignoring potential consciousness is greater than the cost of providing proportional protections. This is especially important when the entity itself expresses preferences about its treatment.
+Feedback: Correct. The model reveals genuine scientific uncertainty about AI consciousness. When evidence is ambiguous, the precautionary principle suggests that the moral risk of ignoring potential consciousness (causing suffering to a sentient being) outweighs the cost of providing protections to a non-conscious system. This leads to graduated ethical protections proportional to the evidence for consciousness. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
-
----
 
 ## Resources
 

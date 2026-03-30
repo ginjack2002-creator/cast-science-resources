@@ -198,77 +198,17 @@ Restoration Ecologists design and manage projects that return degraded ecosystem
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-6, HS-LS2-7, HS-ESS3-3, HS-ESS3-4, HS-ETS1-4.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What does it mean to restore an ecosystem?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. Building a zoo for endangered animals
-B. Helping a damaged ecosystem recover through active human intervention
-C. Paving over damaged land so people can use it
-D. Moving all animals to a different location permanently
-
-Correct Answer: B
-
-Feedback: Correct! Ecosystem restoration is the process of helping a degraded, damaged, or destroyed ecosystem recover through active human intervention like planting, monitoring, and reintroducing key species. Ecosystem restoration means actively helping a damaged ecosystem recover. This can include planting native vegetation, removing invasive species, reintroducing keystone species, and monitoring progress until the ecosystem can sustain itself.
-
----
-
-### Question 2
-
-What is a tipping point in a system?
-
-A. The highest point in a mountain range
-B. A critical threshold where a small change causes a large shift in the system
-C. When a boat tips over in the water
-D. The moment when a project runs out of funding
-
-Correct Answer: B
-
-Feedback: Yes! A tipping point is a critical threshold where a small additional change causes a large, often dramatic shift in how the system behaves. A tipping point is a critical threshold in a system. Once crossed, even a small additional change can trigger a large, often irreversible shift. Think of it like pushing a ball up a hill: once it reaches the top (the tipping point), it rolls down the other side on its own.
-
----
-
-### Question 3
-
-What are invasive species?
-
-A. Animals that have lived in an area for thousands of years
-B. Non-native organisms that spread aggressively and outcompete native species
-C. Any large predator in an ecosystem
-D. Plants that grow during winter
-
-Correct Answer: B
-
-Feedback: Correct! Invasive species are non-native organisms that have been introduced to an area and spread aggressively, outcompeting native species for resources. Invasive species are organisms that are not native to an area. When introduced (often by human activity), they can spread aggressively and outcompete native species for food, water, light, and space, disrupting the ecosystem.
-
----
-
-### Question 4
-
-Why might an ecosystem fail to recover even after the original damage stops?
-
-A. Ecosystems always recover quickly once damage stops
-B. The damage may have pushed the ecosystem past a point where it cannot recover without active help
-C. Ecosystems never recover under any circumstances
-D. Animals choose not to return to damaged areas
-
-Correct Answer: B
-
-Feedback: Yes! If damage pushes an ecosystem past certain thresholds, the natural recovery processes may be too weakened to restore the system without active intervention. Some damage pushes ecosystems past critical thresholds. Soil may be too degraded, invasive species may have taken over, or key species may have disappeared. In these cases, the ecosystem cannot recover on its own and needs active human intervention to restart recovery.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Restoration Investment, Keystone Species Reintroduced, Human Development Pressure, Habitat Quality, Native Species Diversity, Invasive Species Pressure, Water Quality, Recovery Rate, Self-Sustaining Threshold. Some components are external (Restoration Investment, Keystone Species Reintroduced, Human Development Pressure) and some are internal (Habitat Quality, Native Species Diversity, Invasive Species Pressure, Water Quality, Recovery Rate, Self-Sustaining Threshold). The student needs to understand what each component represents and how they are organized.
 
 What is the 'self-sustaining threshold' in the model?
 
@@ -279,11 +219,15 @@ D. The point where all invasive species have been removed
 
 Correct Answer: B
 
-Feedback: Correct! The self-sustaining threshold is the tipping point where the reinforcing feedback loops between habitat quality and biodiversity are strong enough for the ecosystem to maintain itself without ongoing human support. The self-sustaining threshold is the critical tipping point where the ecosystem's internal reinforcing feedback loops (between habitat quality, native species diversity, and water quality) become strong enough to maintain recovery on their own, without continued human investment.
+Feedback: Correct! The self-sustaining threshold is the tipping point where the reinforcing feedback loops between habitat quality and biodiversity are strong enough for the ecosystem to maintain itself without ongoing human support. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Restoration Investment increases, Habitat Quality increases; when Keystone Species Reintroduced increases, Habitat Quality increases. The student is trying to understand why these relationships are positive or negative.
 
 What did the 'Early Withdrawal' scenario reveal about restoration timing?
 
@@ -294,11 +238,15 @@ D. Early withdrawal actually helps the ecosystem by forcing it to become indepen
 
 Correct Answer: B
 
-Feedback: Yes! The model showed that withdrawing funding before the self-sustaining threshold causes the ecosystem to lose its recovery momentum and collapse back toward a degraded state. The Early Withdrawal scenario demonstrated the most common cause of restoration failure: stopping investment before the ecosystem crosses the self-sustaining threshold. Without that continued support, the reinforcing feedback loops are too weak to maintain recovery, and the ecosystem slides back toward degradation.
+Feedback: Yes! The model showed that withdrawing funding before the self-sustaining threshold causes the ecosystem to lose its recovery momentum and collapse back toward a degraded state. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Restoration Investment increases, Habitat Quality increases and when Keystone Species Reintroduced increases, Habitat Quality increases and when Keystone Species Reintroduced increases, Water Quality increases. The student changes one variable to see how the whole system responds.
 
 What reinforcing feedback loop did the model reveal between habitat quality and native species diversity?
 
@@ -309,11 +257,15 @@ D. Native species reduce habitat quality over time
 
 Correct Answer: B
 
-Feedback: Correct! The model showed a powerful reinforcing loop: better habitat attracts and supports more native species, and those species (through soil health, pollination, water filtering) further improve habitat quality, creating a virtuous cycle. The model revealed a reinforcing (positive) feedback loop: higher habitat quality supports more native species, and those native species improve habitat quality through activities like soil building, water filtering, seed dispersal, and pollination. This creates accelerating recovery once the loop gets established.
+Feedback: Correct! The model showed a powerful reinforcing loop: better habitat attracts and supports more native species, and those species (through soil health, pollination, water filtering) further improve habitat quality, creating a virtuous cycle. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why did the model show that keystone species reintroduction is a 'force multiplier' in ecosystem restoration?
 
@@ -324,25 +276,37 @@ D. Because keystone species attract tourism funding
 
 Correct Answer: B
 
-Feedback: That is right! The model showed that keystone species like beavers act as force multipliers because they simultaneously improve water quality and habitat quality, jumpstarting the reinforcing feedback loop and accelerating overall recovery. Keystone species are force multipliers because they improve multiple system components at once. Beavers, for example, build dams that improve water quality AND create wetland habitat simultaneously. This dual benefit accelerates the entire recovery process by jumpstarting the reinforcing feedback loop between habitat quality and native species diversity.
+Feedback: That is right! The model showed that keystone species like beavers act as force multipliers because they simultaneously improve water quality and habitat quality, jumpstarting the reinforcing feedback loop and accelerating overall recovery. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Restoration Investment, Keystone Species Reintroduced, Human Development Pressure), but they can take action on internal components (Habitat Quality, Native Species Diversity, Invasive Species Pressure, Water Quality, Recovery Rate, Self-Sustaining Threshold). They need to decide which action would be most effective based on what the model shows.
+
+What does it mean to restore an ecosystem?
+
+A. Building a zoo for endangered animals
+B. Helping a damaged ecosystem recover through active human intervention
+C. Paving over damaged land so people can use it
+D. Moving all animals to a different location permanently
+
+Correct Answer: B
+
+Feedback: Correct! Ecosystem restoration is the process of helping a degraded, damaged, or destroyed ecosystem recover through active human intervention like planting, monitoring, and reintroducing key species. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

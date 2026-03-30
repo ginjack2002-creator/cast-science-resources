@@ -900,86 +900,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Permafrost is ground that has remained frozen for at least two consecutive years. Approximately what fraction of the Northern Hemisphere's land surface is covered by permafrost?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.6 + CCC4 (Systems and System Models)
 
-A. About 1% of the Northern Hemisphere's land surface
-B. About 10% of the Northern Hemisphere's land surface
-C. About 25% of the Northern Hemisphere's land surface
-D. About 75% of the Northern Hemisphere's land surface
-
-Correct Answer: C
-
-Feedback: Correct. Approximately 25% of the Northern Hemisphere's land surface is underlain by permafrost, storing an estimated 1,500 billion tons of organic carbon. Permafrost covers approximately 25% of the Northern Hemisphere's land surface, spanning vast areas of Siberia, Canada, and Alaska. This enormous area stores roughly 1,500 billion tons of organic carbon.
-
----
-
-### Question 2
-
-A scientist states that methane is a more potent greenhouse gas than carbon dioxide. Which comparison best supports this claim?
-
-A. Methane is produced in larger quantities than CO2 from industrial sources
-B. Methane traps approximately 80 times more heat than CO2 over a 20-year period per molecule
-C. Methane remains in the atmosphere for thousands of years while CO2 breaks down quickly
-D. Methane absorbs visible light while CO2 only absorbs ultraviolet light
-
-Correct Answer: B
-
-Feedback: Correct. While methane has a shorter atmospheric lifetime than CO2, its heat-trapping capacity is approximately 80 times greater over a 20-year period, making it an extremely potent greenhouse gas. Methane is more potent per molecule because it traps approximately 80 times more heat than CO2 over a 20-year period. However, methane has a shorter atmospheric lifetime (about 12 years) compared to CO2 (hundreds of years).
-
----
-
-### Question 3
-
-In a positive feedback loop, how does the output of a process relate to its input?
-
-A. The output counteracts the input, stabilizing the system
-B. The output amplifies the input, causing the process to accelerate
-C. The output has no relationship to the input
-D. The output always decreases the input over time
-
-Correct Answer: B
-
-Feedback: Correct. In a positive feedback loop, the output reinforces the original input, creating a self-amplifying cycle. This does not mean the outcome is 'positive' or beneficial; it means the change accelerates. A positive feedback loop is self-amplifying: the output of a process reinforces its own input, causing acceleration. The word 'positive' refers to amplification, not to whether the outcome is good or bad.
-
----
-
-### Question 4
-
-Which process is primarily responsible for converting dead organic matter into CO2 and methane in thawed soil?
-
-A. Photosynthesis by newly established plants
-B. Volcanic outgassing from geothermal activity
-C. Microbial decomposition by bacteria and fungi
-D. Chemical weathering of exposed rock surfaces
-
-Correct Answer: C
-
-Feedback: Correct. When permafrost thaws, dormant microorganisms (bacteria and archaea) reactivate and begin decomposing the ancient organic carbon, producing CO2 in aerobic conditions and methane in anaerobic conditions. Microbial decomposition is the primary process. When frozen ground thaws, soil microorganisms awaken from dormancy and begin metabolizing organic matter that has been frozen for thousands of years, releasing CO2 and methane.
-
----
-
-### Question 5
-
-A tipping point in an environmental system is best described as which of the following?
-
-A. The point at which pollution levels begin to affect human health
-B. A critical threshold beyond which a system shifts rapidly and potentially irreversibly to a new state
-C. The maximum temperature any ecosystem can tolerate before all organisms die
-D. The moment when government policy reverses an environmental trend
-
-Correct Answer: B
-
-Feedback: Correct. A tipping point is a threshold where small additional changes trigger a large, often irreversible shift in the system's behavior, moving it to a fundamentally different state. A tipping point is a critical threshold in a system. Once crossed, the system undergoes a rapid, self-reinforcing shift to a new state that may be irreversible on human timescales, regardless of subsequent interventions.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Permafrost Temperature, Methane Release Rate, Microbial Decomposition, Atmospheric CO2, Ocean Absorption, Vegetation Growth, Feedback Amplification. Some components are external (Atmospheric CO2) and some are internal (Permafrost Temperature, Methane Release Rate, Microbial Decomposition, Ocean Absorption, Vegetation Growth, Feedback Amplification). The student needs to understand what each component represents and how they are organized.
 
 In the permafrost carbon feedback model, which sequence correctly describes the positive feedback loop that drives accelerating warming?
 
@@ -990,11 +915,15 @@ D. Atmospheric CO2 rises -> Ocean Absorption increases -> Permafrost Temperature
 
 Correct Answer: A
 
-Feedback: Correct. The model demonstrates a self-amplifying cycle: rising CO2 warms the atmosphere, thawing permafrost, activating microbes that release more greenhouse gases, further increasing atmospheric CO2. The positive feedback loop in the model follows a clear causal chain: atmospheric CO2 raises temperature, which thaws permafrost, which activates microbial decomposition of ancient carbon, which releases more CO2 and methane, which raises temperature further.
+Feedback: Correct. The model demonstrates a self-amplifying cycle: rising CO2 warms the atmosphere, thawing permafrost, activating microbes that release more greenhouse gases, further increasing atmospheric CO2. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Atmospheric CO2 increases, Permafrost Temperature increases; when Permafrost Temperature increases, Microbial Decomposition increases. The student is trying to understand why these relationships are positive or negative.
 
 The model includes Ocean Absorption and Vegetation Growth as components. What role do these play in the permafrost feedback system?
 
@@ -1005,11 +934,15 @@ D. They completely offset all carbon released from thawing permafrost
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that Ocean Absorption and Vegetation Growth provide negative feedback (slowing the cycle), but the volume of carbon stored in permafrost vastly exceeds what these sinks can absorb, especially after the tipping point. These components act as partial brakes on the system. They absorb some CO2, slowing the feedback loop, but the 1,500 billion tons of carbon in permafrost overwhelms their capacity, particularly once Feedback Amplification becomes self-sustaining.
+Feedback: Correct. The model shows that Ocean Absorption and Vegetation Growth provide negative feedback (slowing the cycle), but the volume of carbon stored in permafrost vastly exceeds what these sinks can absorb, especially after the tipping point. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Atmospheric CO2 increases, Permafrost Temperature increases and when Permafrost Temperature increases, Microbial Decomposition increases and when Microbial Decomposition increases, Atmospheric CO2 increases. The student changes one variable to see how the whole system responds.
 
 A student runs the model with Atmospheric CO2 increasing at current rates and observes Feedback Amplification becoming self-sustaining. What does 'self-sustaining' mean in this context?
 
@@ -1020,11 +953,15 @@ D. Vegetation Growth will eventually absorb all released carbon
 
 Correct Answer: B
 
-Feedback: Correct. Once the feedback becomes self-sustaining, the system generates enough warming from its own carbon releases to continue thawing more permafrost, independent of human emissions. This is what makes the tipping point so dangerous. A self-sustaining feedback means the process no longer requires an external driver. The warming from permafrost carbon release alone is sufficient to thaw more permafrost, creating an autonomous cycle that persists even if human emissions cease entirely.
+Feedback: Correct. Once the feedback becomes self-sustaining, the system generates enough warming from its own carbon releases to continue thawing more permafrost, independent of human emissions. This is what makes the tipping point so dangerous. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model compares the 1,500 billion tons of carbon in permafrost to the approximately 900 billion tons currently in the atmosphere. Why does this comparison alarm climate scientists?
 
@@ -1035,11 +972,15 @@ D. Because permafrost carbon is composed of a different isotope that traps less 
 
 Correct Answer: B
 
-Feedback: Correct. With nearly twice as much carbon stored in permafrost as exists in the entire atmosphere, even partial release represents an enormous addition to atmospheric greenhouse gases that current climate models may underestimate. The sheer scale is the concern: permafrost holds approximately 1.7 times more carbon than the entire atmosphere. Its release over decades rather than millennia would overwhelm Earth's carbon sinks and push warming far beyond current projections.
+Feedback: Correct. With nearly twice as much carbon stored in permafrost as exists in the entire atmosphere, even partial release represents an enormous addition to atmospheric greenhouse gases that current climate models may underestimate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Atmospheric CO2), but they can take action on internal components (Permafrost Temperature, Methane Release Rate, Microbial Decomposition, Ocean Absorption, Vegetation Growth, Feedback Amplification). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, which intervention strategy would be most effective at preventing the permafrost feedback from reaching the tipping point?
 
@@ -1050,27 +991,18 @@ D. Pumping cold water underground to refreeze thawed permafrost
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that the only realistic prevention strategy is reducing global emissions fast enough to limit warming before permafrost thaw crosses the self-sustaining threshold. Once crossed, no practical intervention can reverse the feedback. The model reveals that the window for action is before the tipping point. Once the feedback becomes self-sustaining, it is practically irreversible. Only rapid reduction of atmospheric CO2 emissions can keep Permafrost Temperature below critical thresholds.
+Feedback: Correct. The model shows that the only realistic prevention strategy is reducing global emissions fast enough to limit warming before permafrost thaw crosses the self-sustaining threshold. Once crossed, no practical intervention can reverse the feedback. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.6, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

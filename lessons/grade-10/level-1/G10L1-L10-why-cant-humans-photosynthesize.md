@@ -895,86 +895,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Which equation correctly represents the overall reaction of photosynthesis?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.7 + CCC4 (Systems and System Models)
 
-A. C6H12O6 + 6O2 -> 6CO2 + 6H2O + energy
-B. 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2
-C. 6O2 + 6H2O -> 6CO2 + C6H12O6 + light
-D. C6H12O6 -> 6CO2 + 6H2O + light energy
-
-Correct Answer: B
-
-Feedback: Correct. Photosynthesis uses light energy to convert carbon dioxide and water into glucose and oxygen. This reaction stores solar energy in the chemical bonds of glucose. Incorrect. Photosynthesis converts CO2 and H2O into glucose and O2 using light energy. Choice A describes cellular respiration, the reverse process.
-
----
-
-### Question 2
-
-Cellular respiration is the process by which organisms:
-
-A. Absorb oxygen through their skin to cool their body temperature.
-B. Break down glucose using oxygen to release stored chemical energy as ATP.
-C. Convert sunlight into chemical energy stored in glucose.
-D. Eliminate carbon dioxide waste produced by photosynthesis.
-
-Correct Answer: B
-
-Feedback: Correct. Cellular respiration breaks the bonds of glucose molecules using oxygen, releasing the stored energy as ATP (the cell's energy currency) with CO2 and H2O as byproducts. Incorrect. Cellular respiration is the metabolic process that breaks down glucose (C6H12O6 + 6O2 -> 6CO2 + 6H2O + ATP), releasing energy stored in chemical bonds for cellular work.
-
----
-
-### Question 3
-
-As organisms increase in size, their surface-area-to-volume ratio:
-
-A. Increases, allowing larger organisms to capture more light per unit volume.
-B. Stays the same regardless of size.
-C. Decreases, because volume grows faster (r^3) than surface area (r^2).
-D. Depends only on the organism's shape, not its size.
-
-Correct Answer: C
-
-Feedback: Correct. Surface area scales with the square of linear dimensions (r^2) while volume scales with the cube (r^3). Larger organisms have proportionally less surface area relative to their volume. Incorrect. As organisms grow, volume increases faster than surface area (cube vs. square relationship). This decreasing surface-area-to-volume ratio has profound implications for energy capture and heat regulation.
-
----
-
-### Question 4
-
-Photosynthesis converts approximately what percentage of incoming solar energy into chemical energy stored in glucose?
-
-A. About 50%, making it highly efficient.
-B. About 25%, comparable to solar panels.
-C. About 1-2% under field conditions.
-D. About 90%, since plants have evolved for billions of years.
-
-Correct Answer: C
-
-Feedback: Correct. Despite 3 billion years of evolution, photosynthesis achieves only about 1-2% energy conversion efficiency under field conditions. This is due to losses at multiple steps in the light and dark reactions. Incorrect. Natural photosynthesis is surprisingly inefficient, converting only about 1-2% of incoming solar energy to glucose. Losses occur at multiple steps: wrong wavelengths, reflection, heat loss, and photorespiration.
-
----
-
-### Question 5
-
-What is the relationship between photosynthesis and cellular respiration in the global carbon cycle?
-
-A. They are unrelated processes that happen to involve similar molecules.
-B. They are complementary reactions that cycle carbon between the atmosphere (CO2) and living organisms (organic molecules).
-C. Photosynthesis creates carbon while cellular respiration destroys it.
-D. Both processes release CO2 into the atmosphere.
-
-Correct Answer: B
-
-Feedback: Correct. Photosynthesis removes CO2 from the atmosphere and stores carbon in glucose. Cellular respiration breaks down glucose and returns CO2 to the atmosphere. Together, they cycle carbon between living and non-living systems. Incorrect. Photosynthesis and cellular respiration are mirror-image reactions that together drive the global carbon cycle. Photosynthesis fixes atmospheric CO2 into organic molecules; respiration returns that carbon to the atmosphere.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sunlight Intensity, Chlorophyll Concentration, Glucose Production Rate, Cellular Respiration Rate, Net Energy Output. Some components are external (Sunlight Intensity, Chlorophyll Concentration) and some are internal (Glucose Production Rate, Cellular Respiration Rate, Net Energy Output). The student needs to understand what each component represents and how they are organized.
 
 The model shows that a photosynthetic human with 1.7 m^2 of surface area would produce approximately 60-100 kcal/day, while needing 2,000 kcal/day. What is the fundamental constraint the model identifies as making photosynthetic humans impossible?
 
@@ -985,11 +910,15 @@ D. Cellular respiration prevents photosynthesis from occurring in the same organ
 
 Correct Answer: B
 
-Feedback: Correct. The model identifies the surface-area-to-volume ratio as the fundamental constraint. A human's metabolic demands scale with body volume, but light capture scales with surface area. The geometry makes photosynthetic humans mathematically impossible. Incorrect. The model reveals that the fundamental constraint is geometric: energy needs scale with body volume while light capture scales with surface area. As body size increases, the energy deficit grows unavoidably.
+Feedback: Correct. The model identifies the surface-area-to-volume ratio as the fundamental constraint. A human's metabolic demands scale with body volume, but light capture scales with surface area. The geometry makes photosynthetic humans mathematically impossible. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.7 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sunlight Intensity increases, Glucose Production Rate increases; when Chlorophyll Concentration increases, Glucose Production Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 In the Scaling Problem scenario, the model shows that single-celled organisms can fully meet energy needs through photosynthesis, but organisms at human scale cannot. At what approximate body size does the model predict photosynthesis becomes insufficient?
 
@@ -1000,11 +929,15 @@ D. Photosynthesis is sufficient at all body sizes if enough chlorophyll is prese
 
 Correct Answer: C
 
-Feedback: Correct. The model shows that for organisms with high metabolic rates like animals, the crossover point where respiration exceeds photosynthetic capacity occurs at roughly millimeter scale. Plants succeed because they are metabolically slow. Incorrect. The model demonstrates that the crossover depends on BOTH size and metabolic rate. For organisms with human-like metabolism, photosynthesis becomes insufficient at approximately millimeter scale.
+Feedback: Correct. The model shows that for organisms with high metabolic rates like animals, the crossover point where respiration exceeds photosynthetic capacity occurs at roughly millimeter scale. Plants succeed because they are metabolically slow. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.7 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sunlight Intensity increases, Glucose Production Rate increases and when Chlorophyll Concentration increases, Glucose Production Rate increases and when Glucose Production Rate increases, Net Energy Output increases. The student changes one variable to see how the whole system responds.
 
 The model demonstrates that Sunlight Intensity has a positive effect on Glucose Production Rate, but only up to a saturation point. What biological mechanism explains this saturation?
 
@@ -1015,11 +948,15 @@ D. High light intensity converts glucose back into CO2 through reverse photosynt
 
 Correct Answer: B
 
-Feedback: Correct. The model reflects that photosynthetic enzymes (particularly in the Calvin cycle) have maximum reaction rates. Beyond light saturation, the bottleneck shifts from light availability to enzyme processing capacity. Incorrect. Light saturation occurs because photosynthetic enzymes have a maximum processing rate. Once the reaction centers are operating at full capacity, additional photons cannot increase glucose production regardless of intensity.
+Feedback: Correct. The model reflects that photosynthetic enzymes (particularly in the Calvin cycle) have maximum reaction rates. Beyond light saturation, the bottleneck shifts from light availability to enzyme processing capacity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.7 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student examines the model and observes that photosynthesis (6CO2 + 6H2O -> C6H12O6 + 6O2) and cellular respiration (C6H12O6 + 6O2 -> 6CO2 + 6H2O) are chemically opposite. Based on the model, what role does this complementary relationship play in Earth's systems?
 
@@ -1030,11 +967,15 @@ D. The complementary relationship means organisms that photosynthesize do not ne
 
 Correct Answer: B
 
-Feedback: Correct. The model shows these mirror reactions form the biological carbon cycle. Photosynthesis fixes atmospheric CO2; respiration returns it. This cycle has maintained CO2 balance for hundreds of millions of years until fossil fuel burning disrupted it. Incorrect. The model demonstrates that photosynthesis and respiration together form a carbon cycle between atmosphere and biosphere. This cycle maintained atmospheric CO2 balance for hundreds of millions of years before human fossil fuel use disrupted it.
+Feedback: Correct. The model shows these mirror reactions form the biological carbon cycle. Photosynthesis fixes atmospheric CO2; respiration returns it. This cycle has maintained CO2 balance for hundreds of millions of years until fossil fuel burning disrupted it. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.7 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sunlight Intensity, Chlorophyll Concentration), but they can take action on internal components (Glucose Production Rate, Cellular Respiration Rate, Net Energy Output). They need to decide which action would be most effective based on what the model shows.
 
 Based on model evidence, a biotech company proposes engineering algae that achieve 10% photosynthetic efficiency (compared to the natural 1-2%) for biofuel production. Which model insight best evaluates whether this is scientifically plausible?
 
@@ -1045,27 +986,18 @@ D. The model does not provide information relevant to bioengineering efficiency.
 
 Correct Answer: B
 
-Feedback: Correct. The model identifies where energy is lost at each step. Since the theoretical maximum (~11%) exceeds the proposed 10%, the goal is not thermodynamically impossible but would require addressing multiple specific bottlenecks identified by the model. Incorrect. The model maps specific energy losses at each step of photosynthesis. Since the theoretical maximum (~11%) allows room for improvement beyond natural 1-2%, the 10% goal is thermodynamically possible but biologically challenging.
+Feedback: Correct. The model identifies where energy is lost at each step. Since the theoretical maximum (~11%) exceeds the proposed 10%, the goal is not thermodynamically impossible but would require addressing multiple specific bottlenecks identified by the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.7, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.7, CCC5)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.7, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.7, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.7, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

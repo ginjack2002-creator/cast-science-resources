@@ -776,77 +776,17 @@ POST-ASSESSMENT
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-ESS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Do all neighborhoods in a city have the same air quality?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.1 + CCC4 (Systems and System Models)
 
-A. Yes, air moves around so it's the same everywhere
-B. No, neighborhoods near freeways and factories often have worse air quality
-C. Yes, the government makes sure air is clean everywhere
-D. No, but only because some neighborhoods have more trees
-
-Correct Answer: B
-
-Feedback: That's right! Air quality varies significantly by location. Communities near freeways, factories, and other pollution sources breathe measurably worse air. Air quality is not the same everywhere. Studies show that neighborhoods near freeways and industrial areas have much higher levels of pollution, leading to higher rates of asthma and other health problems.
-
----
-
-### Question 2
-
-What is the main source of air pollution in most neighborhoods?
-
-A. Trees releasing pollen
-B. People breathing out CO2
-C. Vehicle exhaust from cars and trucks
-D. Wind blowing dust around
-
-Correct Answer: C
-
-Feedback: Correct! Vehicle exhaust contains harmful pollutants including carbon monoxide, nitrogen oxides, and tiny particles (PM2.5) that can damage lungs. Vehicle exhaust is the primary source of air pollution in most urban neighborhoods. Cars and trucks release exhaust containing harmful gases and tiny particles that affect air quality and health.
-
----
-
-### Question 3
-
-Why might children living near a freeway have higher rates of asthma?
-
-A. They play outside too much
-B. They are exposed to higher concentrations of vehicle exhaust pollution
-C. They drink different water than other kids
-D. They go to different schools
-
-Correct Answer: B
-
-Feedback: That's right! Children near freeways breathe air with higher concentrations of exhaust particles and gases, which irritate their lungs and airways. Research shows that children within 500 meters of freeways have higher asthma rates because they are constantly exposed to vehicle exhaust containing harmful particulate matter that damages airways.
-
----
-
-### Question 4
-
-On a windy day versus a calm day, which would have worse air pollution near a freeway?
-
-A. A windy day, because wind stirs up more pollution
-B. A calm day, because pollution builds up without wind to blow it away
-C. They would be the same
-D. Neither, because freeways don't cause pollution
-
-Correct Answer: B
-
-Feedback: Good thinking! Wind disperses and dilutes pollution. On calm, still days, exhaust builds up near the source, creating worse air quality for nearby communities. Wind acts as a natural air cleaner by dispersing and diluting pollution. On calm days with no wind, vehicle exhaust lingers and builds up near the freeway, making air quality much worse.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Vehicle Traffic Density, Wind Speed, Air Pollution Concentration, Respiratory Health Impact. Some components are external (Vehicle Traffic Density, Wind Speed) and some are internal (Air Pollution Concentration, Respiratory Health Impact). The student needs to understand what each component represents and how they are organized.
 
 In the air quality model, what happens during 'Rush Hour + Still Air' (90% traffic, 10% wind)?
 
@@ -857,11 +797,15 @@ D. Wind Speed doesn't matter because pollution disperses on its own
 
 Correct Answer: C
 
-Feedback: Correct! With maximum traffic adding pollution and minimal wind to disperse it, pollution concentration spikes. This directly increases the health impact on the community. Remember the rush hour simulation. High traffic produces lots of exhaust, and without wind to carry it away, pollution builds up. This concentrated pollution causes more respiratory health problems.
+Feedback: Correct! With maximum traffic adding pollution and minimal wind to disperse it, pollution concentration spikes. This directly increases the health impact on the community. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Vehicle Traffic increases, Air Pollution increases; when Wind Speed increases, Air Pollution decreases. The student is trying to understand why these relationships are positive or negative.
 
 What type of relationship does Wind Speed have with Air Pollution Concentration?
 
@@ -872,11 +816,15 @@ D. Positive: wind blows pollution toward communities
 
 Correct Answer: B
 
-Feedback: That's right! Wind disperses and dilutes pollutants, reducing their concentration. This is a negative relationship. Wind is the community's natural defense against pollution buildup. Wind acts like nature's ventilation system. It blows pollution away and mixes it with cleaner air, reducing the concentration near the source. This is a negative (-) relationship.
+Feedback: That's right! Wind disperses and dilutes pollutants, reducing their concentration. This is a negative relationship. Wind is the community's natural defense against pollution buildup. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.1 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Vehicle Traffic increases, Air Pollution increases and when Wind Speed increases, Air Pollution decreases and when Air Pollution increases, Respiratory Health Impact increases. The student changes one variable to see how the whole system responds.
 
 Air quality disparities near freeways are considered an environmental justice issue because:
 
@@ -887,11 +835,15 @@ D. Environmental justice only applies to water pollution
 
 Correct Answer: B
 
-Feedback: Correct! Environmental justice means the fair distribution of environmental risks. Historically, freeways were routed through communities that had less political power to resist, creating lasting health disparities. Environmental justice is about fairness. Research shows that freeways were disproportionately built through low-income neighborhoods and communities of color, meaning these communities bear an unfair burden of air pollution.
+Feedback: Correct! Environmental justice means the fair distribution of environmental risks. Historically, freeways were routed through communities that had less political power to resist, creating lasting health disparities. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on your model, which would be the MOST effective way to reduce air pollution near a freeway?
 
@@ -902,25 +854,37 @@ D. Move all homes farther from the freeway
 
 Correct Answer: B
 
-Feedback: Exactly! Reducing traffic addresses the source (less pollution input), and trees capture particulate matter (acting like a filter). This addresses the system at multiple points. The most effective solutions address the system at multiple points. Reducing traffic lowers pollution input, while tree barriers capture particles before they reach communities. Together they tackle both sides of the equation.
+Feedback: Exactly! Reducing traffic addresses the source (less pollution input), and trees capture particulate matter (acting like a filter). This addresses the system at multiple points. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Vehicle Traffic Density, Wind Speed), but they can take action on internal components (Air Pollution Concentration, Respiratory Health Impact). They need to decide which action would be most effective based on what the model shows.
+
+Do all neighborhoods in a city have the same air quality?
+
+A. Yes, air moves around so it's the same everywhere
+B. No, neighborhoods near freeways and factories often have worse air quality
+C. Yes, the government makes sure air is clean everywhere
+D. No, but only because some neighborhoods have more trees
+
+Correct Answer: B
+
+Feedback: That's right! Air quality varies significantly by location. Communities near freeways, factories, and other pollution sources breathe measurably worse air. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.1, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

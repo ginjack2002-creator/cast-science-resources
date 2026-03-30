@@ -179,77 +179,17 @@ Wetland Ecologists study how wetland ecosystems function and design restoration 
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-LS2-1, 5-ESS2-1, 3-5-ETS1-3.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What is a cascade effect in nature?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. When water flows down a waterfall
-B. When a change in one part of a system triggers changes in many other parts
-C. When animals migrate in a long line
-D. When trees grow taller each year
-
-Correct Answer: B
-
-Feedback: Correct! A cascade effect is when a change in one part of a system triggers a chain of changes in many other connected parts, like dominoes falling. A cascade effect happens when a change in one part of a system triggers changes in many other parts. Think of it like dominoes falling: one change sets off the next, which sets off the next.
-
----
-
-### Question 2
-
-What is a wetland?
-
-A. An area that is always covered by deep ocean water
-B. An area of land saturated with water that supports unique plants and animals
-C. A dry desert with no water at all
-D. A swimming pool for wildlife
-
-Correct Answer: B
-
-Feedback: Yes! A wetland is an area of land saturated with water. Wetlands support unique communities of plants and animals that thrive in wet conditions. A wetland is an area where land meets water. The ground is saturated with moisture, creating conditions that support unique plants (like cattails and sedges) and animals (like herons, frogs, and fish) that thrive in wet environments.
-
----
-
-### Question 3
-
-How many species do you think a beaver pond can support?
-
-A. Only beavers live in beaver ponds
-B. Maybe 5 to 10 other species
-C. Hundreds of different species of plants, insects, fish, birds, and mammals
-D. No species can live in a beaver pond because the dam blocks them
-
-Correct Answer: C
-
-Feedback: Correct! Beaver ponds can support hundreds of species. The wetland habitat they create is one of the most biodiverse ecosystems in nature. Beaver ponds are incredibly rich habitats. They support hundreds of species including fish, amphibians, insects, birds, mammals, and diverse plants. The wetland created by a single beaver dam can become one of the most biodiverse places in the landscape.
-
----
-
-### Question 4
-
-What happens to a beaver pond if the beavers leave and stop maintaining the dam?
-
-A. The pond stays exactly the same forever
-B. The dam eventually breaks down, the pond drains, and the habitat changes
-C. Other animals repair the dam and keep the pond
-D. The pond gets deeper and turns into a lake
-
-Correct Answer: B
-
-Feedback: Yes! Without beavers maintaining the dam, it eventually breaks down. The pond drains, the wetland dries up, and the habitat changes dramatically. Without beavers maintaining the dam, it deteriorates over time. Water breaks through, the pond drains, and the wetland gradually dries up. All the species that depended on the pond habitat are affected.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Beaver Population, Tree Availability, Rainfall, Dam Size, Water Level, Wetland Area, Biodiversity. Some components are external (Beaver Population, Tree Availability, Rainfall) and some are internal (Dam Size, Water Level, Wetland Area, Biodiversity). The student needs to understand what each component represents and how they are organized.
 
 In the 7-component model, what is the correct cascade chain from beaver activity to biodiversity?
 
@@ -260,11 +200,15 @@ D. Biodiversity creates beavers, which then create dams
 
 Correct Answer: B
 
-Feedback: Correct! The model showed the full cascade chain: Beavers + Trees build a Dam, the Dam raises the Water Level, higher Water creates Wetland Area, and Wetland Area supports Biodiversity. The model revealed a step-by-step cascade: Beaver Population + Tree Availability determine Dam Size, Dam Size determines Water Level, Water Level determines Wetland Area, and Wetland Area determines Biodiversity. Each step depends on the one before it.
+Feedback: Correct! The model showed the full cascade chain: Beavers + Trees build a Dam, the Dam raises the Water Level, higher Water creates Wetland Area, and Wetland Area supports Biodiversity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Beaver Population increases, Dam Size increases; when Tree Availability increases, Dam Size increases. The student is trying to understand why these relationships are positive or negative.
 
 What did the model show happens during a drought year when beavers and trees are present?
 
@@ -275,11 +219,15 @@ D. Beavers leave the area immediately when drought begins
 
 Correct Answer: B
 
-Feedback: Yes! The model showed that beaver dams store water and can buffer against moderate drought, but they cannot create water. Extreme drought still weakens the system. The model demonstrated that beaver dams help during drought by storing water in the pond and surrounding wetland. This buffering effect protects the ecosystem from moderate drought. However, beaver dams cannot create water, so extreme, prolonged drought still weakens the entire cascade.
+Feedback: Yes! The model showed that beaver dams store water and can buffer against moderate drought, but they cannot create water. Extreme drought still weakens the system. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Beaver Population increases, Dam Size increases and when Tree Availability increases, Dam Size increases and when Dam Size increases, Water Level increases. The student changes one variable to see how the whole system responds.
 
 According to the model, why does removing beavers affect the ENTIRE ecosystem, not just the pond?
 
@@ -290,11 +238,15 @@ D. The model showed that removing beavers only affects the pond, not other parts
 
 Correct Answer: B
 
-Feedback: Correct! The cascade means each component depends on the previous one. Remove beavers and dam size drops, water level drops, wetland area shrinks, and biodiversity crashes. The cascade structure means each step depends on the one before it. Without beavers, there is no dam maintenance. Without the dam, water level drops. Without high water, wetlands shrink. Without wetlands, biodiversity crashes. The entire chain unravels from top to bottom.
+Feedback: Correct! The cascade means each component depends on the previous one. Remove beavers and dam size drops, water level drops, wetland area shrinks, and biodiversity crashes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 What did the deforestation scenario reveal about the relationship between trees and the beaver ecosystem?
 
@@ -305,25 +257,37 @@ D. Trees only matter for the appearance of the ecosystem
 
 Correct Answer: B
 
-Feedback: That is right! The deforestation scenario showed that trees are an essential input. Even a large beaver population cannot maintain the ecosystem cascade without building materials. The model clearly showed that tree availability is critical. Without trees, beavers have no building material for their dams, regardless of how many beavers are present. This breaks the first link in the cascade and all downstream components (water level, wetland area, biodiversity) decline.
+Feedback: That is right! The deforestation scenario showed that trees are an essential input. Even a large beaver population cannot maintain the ecosystem cascade without building materials. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Beaver Population, Tree Availability, Rainfall), but they can take action on internal components (Dam Size, Water Level, Wetland Area, Biodiversity). They need to decide which action would be most effective based on what the model shows.
+
+What is a cascade effect in nature?
+
+A. When water flows down a waterfall
+B. When a change in one part of a system triggers changes in many other parts
+C. When animals migrate in a long line
+D. When trees grow taller each year
+
+Correct Answer: B
+
+Feedback: Correct! A cascade effect is when a change in one part of a system triggers a chain of changes in many other connected parts, like dominoes falling. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

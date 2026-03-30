@@ -951,86 +951,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the primary mechanism by which bacteria develop resistance to antibiotics?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.2 + CCC4 (Systems and System Models)
 
-A. Bacteria intentionally mutate their DNA in response to antibiotic exposure
-B. Random genetic mutations occur naturally, and antibiotics select for individuals carrying resistance traits
-C. Antibiotics chemically alter bacterial DNA to create resistant strains
-D. Bacteria learn to recognize and avoid antibiotics through repeated exposure
-
-Correct Answer: B
-
-Feedback: Correct. Antibiotic resistance arises from random mutations that exist before antibiotic exposure. Antibiotics create selective pressure that favors already-resistant individuals, allowing them to survive and reproduce. Bacteria do not intentionally mutate or learn. Resistance genes arise from random mutations that happen naturally. Antibiotics then act as a selective pressure, killing susceptible bacteria while resistant ones survive and multiply.
-
----
-
-### Question 2
-
-A patient feels better after 4 days of a 10-day antibiotic prescription and stops taking the medication. What is the most likely outcome?
-
-A. The infection is cured because the patient's symptoms have resolved
-B. The remaining bacteria are too weak to cause further illness
-C. The surviving bacteria are disproportionately resistant, increasing the chance of a harder-to-treat reinfection
-D. The patient's immune system will easily handle any remaining bacteria without further treatment
-
-Correct Answer: C
-
-Feedback: Correct. Incomplete treatment kills susceptible bacteria first, leaving behind a population enriched with resistant strains. These resistant survivors can multiply and cause reinfection that is more difficult to treat. Feeling better does not mean the infection is eliminated. The first bacteria killed are the susceptible ones. Stopping early leaves resistant bacteria alive, free from competition, and able to multiply into a resistant population.
-
----
-
-### Question 3
-
-Which term best describes a cycle in which more resistant bacteria lead to less effective antibiotics, which in turn allows even more resistant bacteria to survive?
-
-A. Balancing feedback loop
-B. Reinforcing feedback loop
-C. Negative feedback loop
-D. Stabilizing feedback loop
-
-Correct Answer: B
-
-Feedback: Correct. A reinforcing (positive) feedback loop amplifies change in the same direction. More resistance reduces antibiotic effectiveness, which allows more resistant bacteria to thrive, further reducing effectiveness. Balancing, negative, and stabilizing feedback loops all describe self-correcting systems that return to equilibrium. The resistance cycle amplifies itself, which is the defining characteristic of a reinforcing feedback loop.
-
----
-
-### Question 4
-
-What role does natural selection play in the development of antibiotic-resistant bacterial populations?
-
-A. Natural selection creates new resistance genes in response to environmental stress
-B. Natural selection has no role because resistance is entirely caused by human overuse of antibiotics
-C. Natural selection favors bacteria with pre-existing resistance traits when antibiotics create selective pressure
-D. Natural selection eliminates resistant bacteria because they require more energy to maintain resistance genes
-
-Correct Answer: C
-
-Feedback: Correct. Natural selection acts on existing variation. When antibiotics are present, bacteria that already carry resistance genes have a survival advantage and reproduce at higher rates than susceptible individuals. Natural selection does not create new traits; it acts on variation that already exists. In the presence of antibiotics, pre-existing resistance mutations become advantageous, and individuals carrying them survive and reproduce preferentially.
-
----
-
-### Question 5
-
-Horizontal gene transfer allows bacteria to share resistance genes across species. Why does this make the antibiotic resistance problem more severe?
-
-A. It means resistance can only spread through reproduction within a single species
-B. It allows resistance to spread much faster than mutation alone, even to unrelated bacterial species
-C. It reduces the overall mutation rate in bacterial populations
-D. It ensures that only harmful bacteria receive resistance genes
-
-Correct Answer: B
-
-Feedback: Correct. Horizontal gene transfer allows resistance genes to jump between species via plasmids, dramatically accelerating the spread of resistance beyond what mutation and vertical inheritance alone could achieve. Horizontal gene transfer is significant precisely because it is NOT limited to a single species. Bacteria can share resistance genes across species boundaries, meaning one resistant strain can arm entirely different bacterial populations.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Antibiotic Dosage, Treatment Duration, Bacterial Population, Resistant Bacteria Percentage, Mutation Rate, Immune Response. Some components are external (Antibiotic Dosage, Treatment Duration) and some are internal (Bacterial Population, Resistant Bacteria Percentage, Mutation Rate, Immune Response). The student needs to understand what each component represents and how they are organized.
 
 In the antibiotic resistance model, which scenario produces the most dangerous long-term outcome for public health?
 
@@ -1041,11 +966,15 @@ D. A single high dose followed by immediate discontinuation
 
 Correct Answer: C
 
-Feedback: Correct. Sub-therapeutic dosage is the most dangerous because it creates enough selective pressure to favor resistant bacteria but is too weak to eliminate them. This provides the ideal environment for evolving resistance over an extended period. Sub-therapeutic dosage creates the worst outcome because the antibiotic is strong enough to kill susceptible bacteria (selecting for resistance) but too weak to kill resistant ones. This sustained selective pressure breeds resistance more effectively than no treatment or brief treatment.
+Feedback: Correct. Sub-therapeutic dosage is the most dangerous because it creates enough selective pressure to favor resistant bacteria but is too weak to eliminate them. This provides the ideal environment for evolving resistance over an extended period. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Antibiotic Dosage increases, Bacterial Population decreases; when Treatment Duration increases, Resistant Bacteria Percentage decreases. The student is trying to understand why these relationships are positive or negative.
 
 A computational model shows that Resistant Bacteria Percentage increases exponentially after Treatment Duration is reduced to 50%. Which systems thinking concept best explains this behavior?
 
@@ -1056,11 +985,15 @@ D. Random variation in bacterial population dynamics
 
 Correct Answer: B
 
-Feedback: Correct. The exponential increase is driven by a reinforcing feedback loop: as resistant bacteria increase, antibiotic effectiveness decreases, allowing even more resistant bacteria to survive and reproduce, further reducing effectiveness. Exponential growth in resistance is the signature of a reinforcing feedback loop, not random variation or a linear relationship. Each cycle through the loop amplifies the previous change, creating accelerating resistance.
+Feedback: Correct. The exponential increase is driven by a reinforcing feedback loop: as resistant bacteria increase, antibiotic effectiveness decreases, allowing even more resistant bacteria to survive and reproduce, further reducing effectiveness. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Antibiotic Dosage increases, Bacterial Population decreases and when Treatment Duration increases, Resistant Bacteria Percentage decreases and when Bacterial Population increases, Resistant Bacteria Percentage increases. The student changes one variable to see how the whole system responds.
 
 A student's model predicts that reducing the Immune Response component to low while maintaining full antibiotic treatment results in treatment failure. What does this reveal about the system?
 
@@ -1071,11 +1004,15 @@ D. Immune response has no measurable effect on bacterial population dynamics
 
 Correct Answer: C
 
-Feedback: Correct. The model reveals that antibiotics reduce bacterial populations but rely on the immune system to clear remaining bacteria. Without adequate immune support, even full antibiotic courses may fail to eliminate the infection. The model demonstrates that antibiotics and the immune system work as partners. Antibiotics reduce the bacterial load to a level the immune system can handle, but neither system alone is sufficient in many cases.
+Feedback: Correct. The model reveals that antibiotics reduce bacterial populations but rely on the immune system to clear remaining bacteria. Without adequate immune support, even full antibiotic courses may fail to eliminate the infection. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Using evidence from the simulation, a student argues that 'antibiotics create resistant bacteria.' Which response most accurately corrects this misconception?
 
@@ -1086,11 +1023,15 @@ D. Only overuse of antibiotics creates resistance; proper use never contributes 
 
 Correct Answer: B
 
-Feedback: Correct. This is a critical distinction. Resistance mutations arise randomly regardless of antibiotic presence. Antibiotics create the environmental conditions where those mutations become advantageous, selecting for resistant individuals. The key insight is that antibiotics do not cause mutations. Resistance genes exist before antibiotic exposure. Antibiotics act as a selective filter, killing susceptible bacteria and allowing resistant ones to dominate the population.
+Feedback: Correct. This is a critical distinction. Resistance mutations arise randomly regardless of antibiotic presence. Antibiotics create the environmental conditions where those mutations become advantageous, selecting for resistant individuals. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Antibiotic Dosage, Treatment Duration), but they can take action on internal components (Bacterial Population, Resistant Bacteria Percentage, Mutation Rate, Immune Response). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, which public health intervention would be most effective at slowing the reinforcing feedback loop driving antibiotic resistance?
 
@@ -1101,27 +1042,18 @@ D. Increasing the mutation rate in bacterial populations to introduce harmful mu
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that incomplete courses and unnecessary prescriptions are the primary drivers of the reinforcing loop. Completing full courses interrupts the loop by eliminating partially resistant bacteria, and reducing unnecessary prescriptions limits selective pressure. The model identifies incomplete treatment and unnecessary prescriptions as the key drivers activating the reinforcing loop. Stronger antibiotics face the same resistance dynamics, and restricting access alone does not address misuse patterns.
+Feedback: Correct. The model shows that incomplete courses and unnecessary prescriptions are the primary drivers of the reinforcing loop. Completing full courses interrupts the loop by eliminating partially resistant bacteria, and reducing unnecessary prescriptions limits selective pressure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.2, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

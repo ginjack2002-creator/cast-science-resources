@@ -900,86 +900,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Dinosaurs dominated Earth for approximately 165 million years. Which statement best describes the primary cause of their mass extinction approximately 66 million years ago?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
 
-A. A gradual cooling trend over millions of years that slowly reduced their habitat
-B. A catastrophic asteroid impact that caused rapid, global environmental changes exceeding their ability to adapt
-C. Competition from early mammals that outcompeted dinosaurs for food resources
-D. A series of volcanic eruptions that heated the planet beyond what dinosaurs could tolerate
-
-Correct Answer: B
-
-Feedback: Correct. The Chicxulub asteroid impact triggered rapid global environmental changes including impact winter, acid rain, and food web collapse that overwhelmed the adaptive capacity of most dinosaur species. While volcanic activity (Deccan Traps) may have contributed to stress, the primary cause was the Chicxulub asteroid impact, which caused rapid environmental devastation that exceeded the dinosaurs' ability to adapt.
-
----
-
-### Question 2
-
-After a mass extinction event, the fossil record shows a pattern called adaptive radiation. What does this term describe?
-
-A. The emission of radioactive energy from fossils over time
-B. The rapid diversification of surviving species into newly vacant ecological niches
-C. The gradual accumulation of harmful mutations after a catastrophe
-D. The process by which predators radiate outward from their territory
-
-Correct Answer: B
-
-Feedback: Correct. After mass extinctions create vacant niches, surviving lineages rapidly diversify to fill those opportunities, as seen in the mammalian radiation after the dinosaur extinction. Adaptive radiation is an evolutionary pattern where surviving species rapidly diversify to fill ecological niches left empty by extinct organisms. The mammalian diversification after the dinosaur extinction is a classic example.
-
----
-
-### Question 3
-
-Natural selection acts on the variation within populations. During a period of rapid environmental change, which type of organisms are most likely to survive?
-
-A. The largest and most dominant predators in the ecosystem
-B. Organisms with traits that happen to be advantageous in the new environmental conditions
-C. The oldest individuals with the most experience in the ecosystem
-D. Organisms that have remained unchanged for the longest evolutionary time
-
-Correct Answer: B
-
-Feedback: Correct. Natural selection favors traits that are advantageous in the current environment, not traits that were advantageous before the change. Survival depends on having pre-existing variation that matches new conditions. Natural selection is blind to past success. What matters is which organisms possess traits that happen to be beneficial under the new conditions. This is why dominant species can go extinct while seemingly insignificant ones survive.
-
----
-
-### Question 4
-
-Which factor most limits how quickly a population can evolve new traits in response to environmental change?
-
-A. The intelligence of individual organisms
-B. Generation time and the amount of genetic variation available in the population
-C. The physical size of the organisms
-D. The temperature of the environment
-
-Correct Answer: B
-
-Feedback: Correct. Evolutionary adaptation requires genetic variation to act on and reproduction to pass traits to offspring. Shorter generation times allow faster evolutionary responses because selection acts each generation. Adaptation speed is constrained by two key factors: the available genetic variation (the raw material for selection) and generation time (how quickly selected traits can spread through the population).
-
----
-
-### Question 5
-
-Some scientists describe the current era as a 'sixth mass extinction.' What evidence would support this classification?
-
-A. A few species have gone extinct in the past century
-B. Current species extinction rates are estimated at 100-1,000 times higher than the natural background rate
-C. The climate is warmer now than it was during the last ice age
-D. Human population has grown rapidly in the past century
-
-Correct Answer: B
-
-Feedback: Correct. The defining characteristic of a mass extinction is an extinction rate dramatically exceeding the background rate. Current estimates suggest species are disappearing 100-1,000 times faster than the natural baseline. A mass extinction is defined by extinction rates far exceeding background levels, typically eliminating 75%+ of species. Current rates are estimated at 100-1,000 times the natural background rate, which meets the threshold for mass extinction classification.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Species Diversity, Environmental Change Rate, Adaptation Speed, Extinction Pressure, Niche Competition, Survival Advantage, Population Recovery. Some components are external (Environmental Change Rate) and some are internal (Species Diversity, Adaptation Speed, Extinction Pressure, Niche Competition, Survival Advantage, Population Recovery). The student needs to understand what each component represents and how they are organized.
 
 In the extinction dynamics model, what happens when Environmental Change Rate exceeds Adaptation Speed?
 
@@ -990,11 +915,15 @@ D. Niche Competition decreases as resources become more abundant
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that when environmental conditions change faster than populations can adapt, Extinction Pressure overwhelms Species Diversity and populations decline toward extinction. The model clearly shows that adaptation has a biological speed limit. When environmental change outpaces this limit, populations cannot evolve fast enough, Extinction Pressure rises, and extinction becomes inevitable regardless of previous fitness.
+Feedback: Correct. The model demonstrates that when environmental conditions change faster than populations can adapt, Extinction Pressure overwhelms Species Diversity and populations decline toward extinction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Environmental Change Rate increases, Extinction Pressure increases; when Extinction Pressure increases, Species Diversity decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals that during the asteroid impact scenario, Survival Advantage shifts dramatically. Which combination of traits does the model show as most important for surviving a mass extinction?
 
@@ -1005,11 +934,15 @@ D. Bright coloration, territorial behavior, and complex social structures
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that mass extinction reverses the competitive hierarchy: traits advantageous in stable environments (large size, specialization) become liabilities, while small size, dietary flexibility, and torpor become critical survival advantages. The model demonstrates a competitive reversal during mass extinction. Small body size requires less food, generalist diets allow flexibility when food webs collapse, torpor allows surviving periods of extreme conditions, and rapid reproduction enables faster recovery.
+Feedback: Correct. The model shows that mass extinction reverses the competitive hierarchy: traits advantageous in stable environments (large size, specialization) become liabilities, while small size, dietary flexibility, and torpor become critical survival advantages. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC1 (Patterns)
+
+A student runs a simulation of the model. The model shows that when Environmental Change Rate increases, Extinction Pressure increases and when Extinction Pressure increases, Species Diversity decreases and when Species Diversity increases, Population Recovery increases. The student changes one variable to see how the whole system responds.
 
 In the model, the 'Gradual Climate Change' scenario shows a different extinction pattern than the 'Catastrophic Impact' scenario. What is the key difference?
 
@@ -1020,11 +953,15 @@ D. Gradual change only affects plants while catastrophic change only affects ani
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that when environmental change is gradual, populations can evolve and species can be replaced through normal turnover. Catastrophic change overwhelms adaptation entirely, causing mass extinction. The critical variable is rate. The model shows that gradual change allows evolutionary adaptation to keep pace, enabling normal species turnover and niche competition. Catastrophic change exceeds all biological adaptation limits simultaneously.
+Feedback: Correct. The model shows that when environmental change is gradual, populations can evolve and species can be replaced through normal turnover. Catastrophic change overwhelms adaptation entirely, causing mass extinction. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC1 (Patterns)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model demonstrates that Population Recovery after mass extinction follows a predictable pattern. Which sequence does the model show?
 
@@ -1035,11 +972,15 @@ D. Recovery occurs only when a new asteroid impact creates fresh ecological oppo
 
 Correct Answer: B
 
-Feedback: Correct. The model shows recovery beginning with generalist 'weedy' species, followed by increasing specialization as populations diversify to exploit available ecological niches through adaptive radiation. The model demonstrates predictable recovery stages: fast-reproducing generalists colonize first because they can exploit varied resources, then gradual specialization and adaptive radiation fill the empty niches over evolutionary timescales.
+Feedback: Correct. The model shows recovery beginning with generalist 'weedy' species, followed by increasing specialization as populations diversify to exploit available ecological niches through adaptive radiation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Environmental Change Rate), but they can take action on internal components (Species Diversity, Adaptation Speed, Extinction Pressure, Niche Competition, Survival Advantage, Population Recovery). They need to decide which action would be most effective based on what the model shows.
 
 A student uses the model to argue that the current human-caused biodiversity loss is comparable to past mass extinctions. Which model evidence most strongly supports this argument?
 
@@ -1050,27 +991,18 @@ D. The model shows that only natural disasters can cause mass extinctions
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that mass extinction dynamics depend on the rate and scale of environmental change relative to adaptation capacity, not on the specific cause. Human activities that rapidly change environments across the globe produce the same systemic pressures. The model is agnostic about cause. It shows that whenever Environmental Change Rate exceeds Adaptation Speed across broad geographic scales, the resulting Extinction Pressure produces mass extinction dynamics, whether the driver is an asteroid, volcanism, or human activity.
+Feedback: Correct. The model reveals that mass extinction dynamics depend on the rate and scale of environmental change relative to adaptation capacity, not on the specific cause. Human activities that rapidly change environments across the globe produce the same systemic pressures. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC1)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC1)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

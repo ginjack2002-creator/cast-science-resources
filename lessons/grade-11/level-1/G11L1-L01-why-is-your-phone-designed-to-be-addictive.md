@@ -900,86 +900,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A student notices that she checks her phone more frequently during the evening, even though she receives the same number of notifications as during the morning. Which explanation best accounts for this pattern from a homeostatic feedback perspective?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.3 + CCC2 (Cause and Effect)
 
-A. Her dopamine receptor sensitivity has decreased throughout the day due to repeated stimulation, requiring more frequent checking to achieve the same reward feeling
-B. Her phone sends more notifications at night because the algorithm detects lower usage
-C. She is simply more bored in the evening and has more free time to check her phone
-D. Her brain produces more dopamine at night due to circadian rhythm cycles
-
-Correct Answer: A
-
-Feedback: Correct. Tolerance buildup from repeated dopamine stimulation throughout the day reduces receptor sensitivity, requiring more frequent checking to achieve the same neurochemical reward, a classic homeostatic disruption. Consider what happens to neurotransmitter receptors when they are repeatedly stimulated over the course of a day. The brain adapts by reducing sensitivity, which drives the need for more frequent stimulation.
-
----
-
-### Question 2
-
-Which of the following best describes the role of variable reward schedules in social media app design?
-
-A. They ensure users receive a consistent experience each time they open the app
-B. They deliver unpredictable rewards that produce stronger dopamine responses than predictable ones, mimicking slot machine psychology
-C. They reduce the total time users spend on the app by making content less engaging
-D. They help users develop healthy habits by spacing out notifications at regular intervals
-
-Correct Answer: B
-
-Feedback: Correct. Variable reward schedules, where the outcome of checking is unpredictable, produce significantly stronger and more persistent dopamine responses than consistent rewards. This is the same mechanism exploited in gambling. Think about why slot machines are more addictive than vending machines. The unpredictability of the reward, not the reward itself, is what drives the strongest neurochemical response.
-
----
-
-### Question 3
-
-A neuroscientist proposes that phone addiction operates through a positive feedback loop rather than a negative feedback loop. Which evidence would best support this claim?
-
-A. Users who turn off their phones for a week report reduced urges to check them
-B. Increased phone checking leads to tolerance, which leads to even more checking, escalating the behavior over time
-C. Users who receive consistent notifications check their phones at a steady rate
-D. The brain eventually reaches a saturation point where no further dopamine is released
-
-Correct Answer: B
-
-Feedback: Correct. A positive feedback loop amplifies the output: more checking leads to more tolerance, which leads to more checking. The behavior escalates rather than stabilizing, which is the hallmark of positive feedback. Recall the difference between positive and negative feedback. Positive feedback amplifies a response (it spirals), while negative feedback dampens it (it stabilizes). Which answer describes an escalating spiral?
-
----
-
-### Question 4
-
-In the context of dopamine and phone usage, tolerance is best defined as which of the following?
-
-A. The brain's ability to handle increasing amounts of screen time without physical harm
-B. A social willingness to accept smartphone use in professional settings
-C. A neurological adaptation where repeated stimulation reduces receptor sensitivity, requiring more intense or frequent stimulation for the same effect
-D. The maximum number of notifications a user can receive before feeling overwhelmed
-
-Correct Answer: C
-
-Feedback: Correct. Tolerance is a neurological adaptation involving dopamine receptor downregulation. As sensitivity decreases, the brain requires increasingly frequent or intense stimulation to produce the same reward feeling. Tolerance in neuroscience refers to a specific biological adaptation at the receptor level, not a social or behavioral threshold. Consider how the brain physically changes in response to repeated chemical stimulation.
-
----
-
-### Question 5
-
-A researcher compares two groups: one uses an app with randomly timed notifications, and the other uses an app with notifications at fixed hourly intervals. Which prediction is most consistent with behavioral neuroscience?
-
-A. The fixed-interval group will show higher compulsive checking because they can anticipate when rewards arrive
-B. Both groups will show identical checking behavior because the total number of notifications is the same
-C. The random-interval group will show higher compulsive checking because unpredictable timing produces stronger dopamine anticipation responses
-D. The fixed-interval group will develop tolerance faster because their dopamine spikes are more regular
-
-Correct Answer: C
-
-Feedback: Correct. Unpredictable reward timing triggers stronger dopamine anticipation responses. The uncertainty about when a reward will arrive keeps the brain in a heightened state of anticipation, driving more frequent checking behavior. Consider the variable reward schedule principle: which timing pattern creates more uncertainty and anticipation? The brain's dopamine system responds most strongly to unpredictable rewards, not to predictable ones.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Notification Frequency, Reward Variability, Dopamine Release, Tolerance Level, Compulsive Checking, Screen Time. Some components are external (Notification Frequency, Reward Variability) and some are internal (Dopamine Release, Tolerance Level, Compulsive Checking, Screen Time). The student needs to understand what each component represents and how they are organized.
 
 A student's computational model shows that reducing notification frequency to zero for 7 days causes dopamine receptor sensitivity to partially recover, but compulsive checking behavior persists. Which explanation best accounts for these two different recovery patterns?
 
@@ -990,11 +915,15 @@ D. Dopamine receptors cannot actually recover once tolerance is established
 
 Correct Answer: B
 
-Feedback: Correct. Receptor sensitivity is a physiological adaptation that can partially reverse, but the learned behavior, a conditioned anticipation response, is encoded in neural pathways and persists even after the chemical stimulus is removed. This explains why digital detoxes only partially work. The model reveals two different biological systems at work: receptor chemistry (which can recover) and conditioned behavioral patterns (which are learned). These operate on different timescales and through different mechanisms.
+Feedback: Correct. Receptor sensitivity is a physiological adaptation that can partially reverse, but the learned behavior, a conditioned anticipation response, is encoded in neural pathways and persists even after the chemical stimulus is removed. This explains why digital detoxes only partially work. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Reward Variability increases, Dopamine Release increases; when Dopamine Release increases, Tolerance Level increases. The student is trying to understand why these relationships are positive or negative.
 
 Using model evidence, a student argues that making social media rewards predictable rather than variable would reduce compulsive behavior. A classmate counters that this would also reduce engagement, making the app commercially unviable. Which response best evaluates this trade-off using systems thinking?
 
@@ -1005,11 +934,15 @@ D. The trade-off is irrelevant because all apps eventually lose users regardless
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that reducing variable rewards breaks the compulsive dopamine loop, but engagement can be sustained through other mechanisms (content quality, genuine social interaction) that do not exploit neurological vulnerabilities. The trade-off is not zero-sum. Systems thinking requires considering multiple pathways. Engagement is not solely driven by dopamine exploitation. Consider whether there are other reasons people use social media that do not depend on addictive design patterns.
+Feedback: Correct. The model shows that reducing variable rewards breaks the compulsive dopamine loop, but engagement can be sustained through other mechanisms (content quality, genuine social interaction) that do not exploit neurological vulnerabilities. The trade-off is not zero-sum. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Reward Variability increases, Dopamine Release increases and when Dopamine Release increases, Tolerance Level increases and when Tolerance Level increases, Compulsive Checking increases. The student changes one variable to see how the whole system responds.
 
 A model simulation shows that after 30 days of high-frequency variable notifications, screen time increased by 340% while self-reported satisfaction decreased by 60%. Which interpretation best explains this divergence?
 
@@ -1020,11 +953,15 @@ D. The app's content quality decreased over the 30-day period, frustrating users
 
 Correct Answer: C
 
-Feedback: Correct. This is the signature of a tolerance-driven addiction cycle: behavior escalates (more screen time) while the reward per interaction diminishes (less satisfaction). The dopamine system drives the behavior, not the subjective experience of enjoyment. Consider what tolerance does to the relationship between behavior and reward. When receptor sensitivity decreases, each interaction produces less reward, so the brain drives more frequent behavior to compensate. Usage goes up, satisfaction goes down.
+Feedback: Correct. This is the signature of a tolerance-driven addiction cycle: behavior escalates (more screen time) while the reward per interaction diminishes (less satisfaction). The dopamine system drives the behavior, not the subjective experience of enjoyment. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An ethical app design team proposes three changes: (1) predictable notification timing, (2) daily usage limits, and (3) removal of infinite scroll. Based on the dopamine feedback model, which change would have the greatest impact on reducing compulsive behavior?
 
@@ -1035,11 +972,15 @@ D. All three changes would have equal impact because they all reduce screen time
 
 Correct Answer: C
 
-Feedback: Correct. The model identifies variable reward schedules as the primary driver of compulsive dopamine responses. Making rewards predictable addresses the root cause of the feedback loop, while usage limits and scroll changes address symptoms without altering the neurochemical driver. The model shows that the variable reward schedule is the primary mechanism driving the dopamine-tolerance-checking loop. Which intervention targets this root mechanism directly rather than addressing downstream symptoms?
+Feedback: Correct. The model identifies variable reward schedules as the primary driver of compulsive dopamine responses. Making rewards predictable addresses the root cause of the feedback loop, while usage limits and scroll changes address symptoms without altering the neurochemical driver. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Notification Frequency, Reward Variability), but they can take action on internal components (Dopamine Release, Tolerance Level, Compulsive Checking, Screen Time). They need to decide which action would be most effective based on what the model shows.
 
 A policymaker uses the model to argue for regulations requiring social media companies to disclose how their notification algorithms work. An opponent argues that algorithms are proprietary trade secrets. Which claim is best supported by the model evidence?
 
@@ -1050,27 +991,18 @@ D. Both positions are equally valid because the model cannot distinguish between
 
 Correct Answer: B
 
-Feedback: Correct. The model provides evidence that specific, identifiable design features exploit homeostatic feedback mechanisms in measurable ways. This evidence supports the argument that users deserve transparency about how their neurochemistry is being targeted, analogous to nutritional labels on food. Review what the model demonstrates about the relationship between design choices and neurological outcomes. The model provides quantifiable evidence that specific design features cause specific neurochemical effects. Consider whether this evidence supports or undermines the case for transparency.
+Feedback: Correct. The model provides evidence that specific, identifiable design features exploit homeostatic feedback mechanisms in measurable ways. This evidence supports the argument that users deserve transparency about how their neurochemistry is being targeted, analogous to nutritional labels on food. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.3, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.3, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
-Question 5: B
-
----
 
 ## Resources
 

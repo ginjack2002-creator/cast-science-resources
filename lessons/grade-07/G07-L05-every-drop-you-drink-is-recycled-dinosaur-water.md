@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What happens to water in a puddle on a hot, sunny day?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS2-4 + CCC5 (Energy and Matter)
 
-A. The water seeps into the center of the Earth and disappears
-B. The water absorbs heat and evaporates into water vapor in the air
-C. The Sun's rays destroy the water molecules permanently
-D. The water is absorbed by the wind and carried away as liquid
-
-Correct Answer: B
-
-Feedback: Correct! Solar energy heats the water, giving the molecules enough energy to escape from the liquid surface and enter the air as invisible water vapor. This process is called evaporation. Not quite. When the Sun heats a puddle, the water molecules gain enough energy to change from liquid to gas (water vapor) and rise into the atmosphere. This is evaporation.
-
----
-
-### Question 2
-
-Where does the water that comes out of your tap originally come from?
-
-A. It is manufactured in a water factory from hydrogen and oxygen
-B. It cycles through natural systems like rivers, lakes, groundwater, and the atmosphere
-C. It comes directly from the ocean with salt removed at the tap
-D. New water is constantly created by rain clouds
-
-Correct Answer: B
-
-Feedback: Correct! Tap water comes from natural sources like rivers, lakes, and underground aquifers that are continuously replenished by the water cycle. Not quite. Your tap water originates from natural water sources (rivers, lakes, groundwater) that are part of the continuous water cycle driven by solar energy and gravity.
-
----
-
-### Question 3
-
-Could the water you drink today have once been consumed by a dinosaur?
-
-A. No, because water molecules break down and new ones are created every few years
-B. No, because dinosaurs lived too long ago for the water to still exist
-C. Yes, because Earth has been recycling the same water for billions of years
-D. Yes, but only if you live near where dinosaurs once lived
-
-Correct Answer: C
-
-Feedback: Correct! Earth has had roughly the same water for over 4 billion years. Water is recycled endlessly through evaporation, condensation, and precipitation, so the same molecules have been used by countless organisms. Not quite. Earth's water has been cycling through the same systems for over 4 billion years. No new water is being created. The molecules in your glass have been through countless cycles, including through ancient organisms.
-
----
-
-### Question 4
-
-What provides the energy that drives the water cycle?
-
-A. Wind turbines and hydroelectric dams
-B. Heat from Earth's core
-C. Energy from the Sun
-D. The Moon's gravitational pull
-
-Correct Answer: C
-
-Feedback: Correct! Solar energy is the primary driver of the water cycle. It provides the heat needed to evaporate water from oceans, lakes, and land surfaces. Not quite. The Sun provides the energy that drives the water cycle by heating surface water and causing evaporation, which starts the cycle of evaporation, condensation, and precipitation.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Solar Energy, Ground Temperature, Evaporation Rate, Precipitation Rate. Some components are external (Solar Energy, Ground Temperature) and some are internal (Evaporation Rate, Precipitation Rate). The student needs to understand what each component represents and how they are organized.
 
 In the water cycle model, solar energy and ground temperature are both set to maximum (simulating a heat wave). What does the model predict?
 
@@ -967,11 +907,15 @@ D. Precipitation rate drops because heat destroys cloud formation
 
 Correct Answer: B
 
-Feedback: Correct! More solar energy and higher temperatures provide more energy for evaporation, putting more water vapor into the atmosphere, which eventually condenses and falls as increased precipitation. The cycle accelerates. Not quite. Higher temperatures increase evaporation rate, which puts more water vapor into the atmosphere. This leads to more condensation and increased precipitation. The entire water cycle speeds up.
+Feedback: Correct! More solar energy and higher temperatures provide more energy for evaporation, putting more water vapor into the atmosphere, which eventually condenses and falls as increased precipitation. The cycle accelerates. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS2-4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Solar Energy increases, Evaporation Rate increases; when Ground Temperature increases, Evaporation Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 A student says, 'Clouds are made of water vapor.' How should this misconception be corrected?
 
@@ -982,11 +926,15 @@ D. Clouds are made of frozen oxygen that forms at high altitudes
 
 Correct Answer: A
 
-Feedback: Correct! Water vapor is an invisible gas. Clouds form when water vapor condenses into tiny visible liquid droplets or ice crystals. If you can see it, the water has already changed from vapor to liquid or solid. Not quite. Clouds are made of tiny liquid water droplets or ice crystals, not water vapor. Water vapor is invisible. When we see a cloud, the vapor has already condensed into visible droplets.
+Feedback: Correct! Water vapor is an invisible gas. Clouds form when water vapor condenses into tiny visible liquid droplets or ice crystals. If you can see it, the water has already changed from vapor to liquid or solid. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS2-4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Solar Energy increases, Evaporation Rate increases and when Ground Temperature increases, Evaporation Rate increases and when Evaporation Rate increases, Precipitation Rate increases. The student changes one variable to see how the whole system responds.
 
 Which two forces work together to drive the water cycle?
 
@@ -997,11 +945,15 @@ D. The Moon's gravity and Earth's rotation
 
 Correct Answer: B
 
-Feedback: Correct! Solar energy drives evaporation (lifting water into the atmosphere), and gravity drives precipitation (pulling water back to Earth) and runoff (moving water downhill to the ocean). Not quite. The water cycle is driven by solar energy (which provides heat for evaporation) and gravity (which pulls water back as precipitation and drives surface runoff toward the ocean).
+Feedback: Correct! Solar energy drives evaporation (lifting water into the atmosphere), and gravity drives precipitation (pulling water back to Earth) and runoff (moving water downhill to the ocean). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS2-4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 How does deforestation affect the water cycle in a region?
 
@@ -1012,25 +964,37 @@ D. It stops the water cycle entirely in the deforested area
 
 Correct Answer: C
 
-Feedback: Correct! Trees release significant amounts of water vapor through transpiration. Removing forests reduces this moisture source, which can decrease local rainfall and increase surface runoff and erosion. Not quite. Trees contribute water vapor to the atmosphere through transpiration. A single large tree can release over 100 gallons of water per day. Removing forests reduces this moisture, potentially decreasing local rainfall.
+Feedback: Correct! Trees release significant amounts of water vapor through transpiration. Removing forests reduces this moisture source, which can decrease local rainfall and increase surface runoff and erosion. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS2-4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Solar Energy, Ground Temperature), but they can take action on internal components (Evaporation Rate, Precipitation Rate). They need to decide which action would be most effective based on what the model shows.
+
+What happens to water in a puddle on a hot, sunny day?
+
+A. The water seeps into the center of the Earth and disappears
+B. The water absorbs heat and evaporates into water vapor in the air
+C. The Sun's rays destroy the water molecules permanently
+D. The water is absorbed by the wind and carried away as liquid
+
+Correct Answer: B
+
+Feedback: Correct! Solar energy heats the water, giving the molecules enough energy to escape from the liquid surface and enter the air as invisible water vapor. This process is called evaporation. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS2-4, CCC5)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS2-4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS2-4, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS2-4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS2-4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

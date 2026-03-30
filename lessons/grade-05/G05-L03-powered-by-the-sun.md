@@ -747,77 +747,17 @@ POST-ASSESSMENT
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-PS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Where does the energy in your food originally come from?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.1 + CCC5 (Energy and Matter)
 
-A. The soil where plants grow
-B. The water that plants drink
-C. The sun
-D. The air around us
-
-Correct Answer: C
-
-Feedback: That's right! All energy in food can be traced back to the sun. Plants capture sunlight through photosynthesis and store it as chemical energy. Think about the very beginning of the food chain. Plants use sunlight to make their own food through photosynthesis. That solar energy passes to animals when they eat plants.
-
----
-
-### Question 2
-
-What is photosynthesis?
-
-A. When plants drink water from the soil
-B. The process plants use to convert sunlight into food (sugar)
-C. When animals eat plants for energy
-D. The process of plants growing taller
-
-Correct Answer: B
-
-Feedback: Correct! Photosynthesis is how plants convert light energy from the sun into sugar (glucose), which is their food. Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar (glucose). It is how plants create their own food using the sun's energy.
-
----
-
-### Question 3
-
-Why do many animals hibernate or store fat before winter?
-
-A. They are tired from summer activities
-B. Less sunlight in winter means less plant food is available
-C. They prefer sleeping in cold weather
-D. Winter makes animals lazy
-
-Correct Answer: B
-
-Feedback: Good thinking! Winter brings less sunlight, which means less photosynthesis, fewer plants growing, and less food energy available for animals. Think about the energy chain. Less winter sunlight means plants produce less food through photosynthesis. With less food available, animals must store energy or sleep to survive.
-
----
-
-### Question 4
-
-What would happen to animals if all plants on Earth suddenly disappeared?
-
-A. Nothing, animals make their own energy
-B. Animals would find other food sources easily
-C. Animals would eventually run out of food and energy
-D. Animals would start doing photosynthesis themselves
-
-Correct Answer: C
-
-Feedback: Exactly! Plants are the foundation of almost every food chain. Without them, there would be no food energy for animals. Animals cannot make their own energy. They depend on plants (producers) either directly or indirectly through the food chain. Without plants, the entire food chain would collapse.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sunlight Intensity, Temperature, Photosynthesis Rate, Energy Available to Animals. Some components are external (Sunlight Intensity, Temperature) and some are internal (Photosynthesis Rate, Energy Available to Animals). The student needs to understand what each component represents and how they are organized.
 
 In the energy flow model, what happens when Sunlight Intensity is locked at 0%?
 
@@ -828,11 +768,15 @@ D. Temperature increases to make up for the lost sunlight
 
 Correct Answer: C
 
-Feedback: Correct! Without sunlight, photosynthesis cannot occur. No new plant sugar is produced, so energy available to animals drops toward zero. Remember the eclipse scenario from the simulation. Sunlight is the energy source that powers photosynthesis. Without it, no new food energy is produced for animals.
+Feedback: Correct! Without sunlight, photosynthesis cannot occur. No new plant sugar is produced, so energy available to animals drops toward zero. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.1 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sunlight Intensity increases, Photosynthesis Rate increases; when Temperature increases, Photosynthesis Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 Which statement best explains why a hamburger contains energy from the sun?
 
@@ -843,11 +787,15 @@ D. The cow drank water that was heated by the sun
 
 Correct Answer: A
 
-Feedback: That's right! The energy chain goes: Sun -> grass (photosynthesis) -> cow (eating grass) -> hamburger. Every step transfers energy that originally came from sunlight. Trace the energy: The sun's light energy was captured by grass through photosynthesis and stored as sugar. The cow ate the grass and stored that energy. The hamburger carries that transferred solar energy.
+Feedback: That's right! The energy chain goes: Sun -> grass (photosynthesis) -> cow (eating grass) -> hamburger. Every step transfers energy that originally came from sunlight. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sunlight Intensity increases, Photosynthesis Rate increases and when Temperature increases, Photosynthesis Rate increases and when Photosynthesis Rate increases, Energy Available to Animals increases. The student changes one variable to see how the whole system responds.
 
 What type of relationship exists between Sunlight Intensity and Photosynthesis Rate?
 
@@ -858,11 +806,15 @@ D. Negative: sunlight damages plant cells
 
 Correct Answer: B
 
-Feedback: Correct! More sunlight provides more energy for plants to perform photosynthesis, so the rate increases. This is a positive relationship. Sunlight is the energy source that drives photosynthesis. When there is more sunlight, plants can perform more photosynthesis and produce more sugar. This is a positive (+) relationship.
+Feedback: Correct! More sunlight provides more energy for plants to perform photosynthesis, so the rate increases. This is a positive relationship. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An organism that makes its own food using sunlight is called a:
 
@@ -873,25 +825,37 @@ D. Predator
 
 Correct Answer: C
 
-Feedback: Correct! Producers (like plants) make their own food through photosynthesis. They are the foundation of energy flow in ecosystems. An organism that makes its own food is a producer. Consumers eat other organisms, decomposers break down dead matter, and predators hunt other animals. Plants are producers because they produce food from sunlight.
+Feedback: Correct! Producers (like plants) make their own food through photosynthesis. They are the foundation of energy flow in ecosystems. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.1 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sunlight Intensity, Temperature), but they can take action on internal components (Photosynthesis Rate, Energy Available to Animals). They need to decide which action would be most effective based on what the model shows.
+
+Where does the energy in your food originally come from?
+
+A. The soil where plants grow
+B. The water that plants drink
+C. The sun
+D. The air around us
+
+Correct Answer: C
+
+Feedback: That's right! All energy in food can be traced back to the sun. Plants capture sunlight through photosynthesis and store it as chemical energy. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.1, CCC5)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.1, CCC5)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.1, CCC5)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: A
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

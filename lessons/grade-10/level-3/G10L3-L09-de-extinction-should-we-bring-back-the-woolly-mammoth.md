@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Scientists have recovered fragmented DNA from woolly mammoth specimens preserved in permafrost. Why is ancient DNA always incomplete, and what does this mean for de-extinction?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.4 + CCC4 (Systems and System Models)
 
-A. Ancient DNA is complete but encoded differently than modern DNA
-B. DNA degrades over time through hydrolysis, oxidation, and cross-linking, breaking into increasingly short fragments — meaning the reconstructed genome is a patchwork of recovered mammoth sequences and gap-filling from the closest living relative (Asian elephant)
-C. Permafrost perfectly preserves DNA in its original complete form
-D. DNA degradation only occurs in tropical environments, not permafrost
-
-Correct Answer: B
-
-Feedback: Correct. Even under the best preservation conditions (permafrost at -50 degrees Celsius), chemical processes slowly break DNA strands and modify individual bases. After 4,000+ years, the mammoth genome is fragmentary. Scientists must assemble these fragments and fill gaps with Asian elephant DNA, creating a hybrid genome rather than a true mammoth genome. Consider what happens to complex organic molecules over thousands of years. Even in frozen conditions, chemical reactions slowly break and modify DNA. What implications does this have for reconstructing a complete genome?
-
----
-
-### Question 2
-
-CRISPR gene editing can modify an Asian elephant cell to express mammoth traits like cold-adapted hemoglobin, thick fat layers, and long hair. Why does this not constitute true de-extinction?
-
-A. CRISPR cannot make precise enough edits for de-extinction
-B. The result is an Asian elephant with selected mammoth traits — a hybrid organism with primarily elephant genetics — not a complete resurrection of the mammoth species with its full genome, behavioral repertoire, and ecological relationships
-C. The edited cells cannot develop into a living organism
-D. CRISPR only works on bacteria, not mammalian cells
-
-Correct Answer: B
-
-Feedback: Correct. CRISPR can insert specific mammoth genes into an elephant genome, but a species is more than a collection of traits. The resulting organism has an elephant developmental program, elephant immune system, and no inherited mammoth behaviors (migration routes, social structures, foraging strategies). It is a cold-adapted elephant, not a mammoth. Consider what makes a species more than its visible physical traits. A mammoth's genome contained tens of thousands of genes controlling development, immunity, behavior, and physiology. Can editing a few dozen genes recreate the full organism?
-
----
-
-### Question 3
-
-The minimum viable population (MVP) for large mammals is estimated at 500-5,000 individuals. Why does de-extinction require creating hundreds of genetically diverse individuals rather than just one?
-
-A. One individual is sufficient to establish a population through cloning
-B. A population below MVP lacks sufficient genetic diversity, leading to inbreeding depression — reduced fertility, increased disease susceptibility, and loss of adaptive potential that causes population decline toward extinction a second time
-C. Multiple individuals are needed only for companionship
-D. The MVP concept applies only to currently living species, not de-extinct ones
-
-Correct Answer: B
-
-Feedback: Correct. A self-sustaining population requires genetic diversity to maintain fertility, disease resistance, and adaptive potential across generations. A population founded from one or a few individuals becomes increasingly inbred, accumulating harmful recessive alleles and losing the genetic variation needed to adapt to environmental changes. Consider what happens to a population with very few individuals. Over generations, they must mate with relatives. What happens to the health and reproductive success of inbred populations?
-
----
-
-### Question 4
-
-The mammoth steppe — the vast grassland ecosystem mammoths inhabited — has largely converted to boreal forest and tundra over the past 10,000 years. What does this habitat transformation mean for de-extinction plans?
-
-A. The habitat change is irrelevant because mammoths can adapt to any environment
-B. Mammoths evolved for an ecosystem that no longer exists, meaning reintroduced mammoths would face unfamiliar vegetation, different predators, novel diseases, and a fundamentally altered ecological context
-C. The mammoth steppe still exists exactly as it was 10,000 years ago in Siberia
-D. Habitat changes occurred too slowly to affect large mammals
-
-Correct Answer: B
-
-Feedback: Correct. De-extinction faces the 'ecological niche' problem: the ecological role mammoths played (maintaining grasslands through grazing, compacting snow, dispersing seeds) may no longer be supported by the current ecosystem. The food sources, competitors, predators, and climate conditions have all changed. Reintroduced mammoths would inhabit a world that has moved on without them. Consider what happens when you place an organism in an ecosystem it did not evolve to inhabit. Are the right food plants available? Are there new diseases? Has the climate changed?
-
----
-
-### Question 5
-
-Some scientists argue that de-extinction funds would be better spent protecting currently endangered species. What is the strongest scientific basis for this opportunity cost argument?
-
-A. Endangered species are less interesting to the public than mammoths
-B. Currently endangered species have intact genomes, known ecological roles, existing habitats (though threatened), and established conservation methods — the same investment could protect entire ecosystems with existing species rather than attempting to recreate one species for an uncertain ecological outcome
-C. De-extinction is guaranteed to fail so the money would be completely wasted
-D. Endangered species do not need additional funding because they are already protected by law
-
-Correct Answer: B
-
-Feedback: Correct. Conservation triage asks where limited resources produce the greatest biodiversity benefit. Protecting existing species preserves functional ecosystems, intact genomes, and evolved ecological relationships. De-extinction requires solving DNA recovery, genome reconstruction, surrogate pregnancy, population founding, habitat restoration, and disease resistance — with uncertain outcomes. The comparison is between proven conservation and experimental resurrection. Compare what you know and can protect (existing species with known needs) versus what you must reconstruct from scratch (an extinct species with incomplete DNA, no habitat, and no immune defense against modern diseases). Where does each dollar produce more conservation value?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: DNA Recovery Quality, Gene Editing Accuracy, Surrogate Compatibility, Population Viability, Ecosystem Readiness, Habitat Availability, Genetic Diversity, Disease Resistance, Ecological Integration, Ethical Threshold. Some components are external (DNA Recovery Quality, Gene Editing Accuracy, Ethical Threshold) and some are internal (Surrogate Compatibility, Population Viability, Ecosystem Readiness, Habitat Availability, Genetic Diversity, Disease Resistance, Ecological Integration). The student needs to understand what each component represents and how they are organized.
 
 The model shows that even with maximum DNA Recovery Quality and Gene Editing Accuracy, Population Viability remains low until hundreds of genetically distinct individuals are created. What bottleneck does this reveal?
 
@@ -1001,11 +926,15 @@ D. Creating one individual is sufficient because it can reproduce asexually
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that technological perfection in reconstructing one genome does not solve the population-level challenge. Each ancient specimen provides unique genetic variation, and few well-preserved specimens exist. Without enough distinct genomes, the founding population lacks the diversity needed for long-term viability, regardless of the quality of individual reconstructions. Consider the difference between individual and population genetics. Even a perfectly reconstructed genome from one specimen provides only that individual's genetic variation. How many different individuals' DNA do you need for a diverse founding population?
+Feedback: Correct. The model reveals that technological perfection in reconstructing one genome does not solve the population-level challenge. Each ancient specimen provides unique genetic variation, and few well-preserved specimens exist. Without enough distinct genomes, the founding population lacks the diversity needed for long-term viability, regardless of the quality of individual reconstructions. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when DNA Recovery Quality increases, Gene Editing Accuracy increases; when Ecosystem Readiness increases, Population Viability increases. The student is trying to understand why these relationships are positive or negative.
 
 The ecological mismatch scenario shows viable de-extinct individuals but low Ecosystem Readiness and Habitat Availability. The model predicts Ecological Integration remains low despite healthy individuals. What does this demonstrate?
 
@@ -1016,11 +945,15 @@ D. Ecological factors are irrelevant to de-extinction success
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates the cascade structure of de-extinction: solving technology (DNA + gene editing) is necessary but insufficient. Without solving ecology (habitat + niche + species interactions), the animals are confined to managed care — expensive zoo exhibits rather than self-sustaining wild populations. All ten variables must reach viable levels simultaneously. Consider what happens when you place a healthy animal in an ecosystem where its food sources, climate conditions, and ecological relationships have changed. Can the animal survive even if it is genetically healthy?
+Feedback: Correct. The model demonstrates the cascade structure of de-extinction: solving technology (DNA + gene editing) is necessary but insufficient. Without solving ecology (habitat + niche + species interactions), the animals are confined to managed care — expensive zoo exhibits rather than self-sustaining wild populations. All ten variables must reach viable levels simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when DNA Recovery Quality increases, Gene Editing Accuracy increases and when Ecosystem Readiness increases, Population Viability increases and when Genetic Diversity increases, Disease Resistance increases. The student changes one variable to see how the whole system responds.
 
 The model classifies Ethical Threshold as an external variable alongside DNA Recovery Quality and Gene Editing Accuracy. Why is an ethical variable included in a scientific model?
 
@@ -1031,11 +964,15 @@ D. All external variables in scientific models must include ethical consideratio
 
 Correct Answer: B
 
-Feedback: Correct. The model recognizes that scientific projects exist within societal contexts. High ethical concerns can reduce funding, increase regulatory barriers, and erode public support — all of which constrain the project's ability to achieve the scale needed for population viability. Ethics is not separate from feasibility; it is a determining factor. Consider what happens to a research project when the public objects to it, regulators impose restrictions, or funding agencies redirect money to less controversial alternatives. Do ethical concerns affect whether a scientifically possible project actually happens?
+Feedback: Correct. The model recognizes that scientific projects exist within societal contexts. High ethical concerns can reduce funding, increase regulatory barriers, and erode public support — all of which constrain the project's ability to achieve the scale needed for population viability. Ethics is not separate from feasibility; it is a determining factor. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model includes Disease Resistance as a variable showing that de-extinct mammoths would face modern pathogens their immune systems never evolved to fight. Which analogy from history best illustrates this vulnerability?
 
@@ -1046,11 +983,15 @@ D. Modern humans traveling to Mars, who would face only known Earth pathogens
 
 Correct Answer: B
 
-Feedback: Correct. This is a direct parallel: populations without evolutionary exposure to specific pathogens are highly vulnerable. Mammoths have been absent for 4,000 years, during which bacteria, viruses, and parasites have continued evolving. The de-extinct mammoth's immune system would have no evolved defense against these modern pathogens, creating a serious survival challenge. Think about what happens when an organism encounters pathogens it has no evolutionary history with. Has this happened before in human history? What were the consequences?
+Feedback: Correct. This is a direct parallel: populations without evolutionary exposure to specific pathogens are highly vulnerable. Mammoths have been absent for 4,000 years, during which bacteria, viruses, and parasites have continued evolving. The de-extinct mammoth's immune system would have no evolved defense against these modern pathogens, creating a serious survival challenge. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.4 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (DNA Recovery Quality, Gene Editing Accuracy, Ethical Threshold), but they can take action on internal components (Surrogate Compatibility, Population Viability, Ecosystem Readiness, Habitat Availability, Genetic Diversity, Disease Resistance, Ecological Integration). They need to decide which action would be most effective based on what the model shows.
 
 After running all three scenarios, a student argues that de-extinction should proceed because the technology is nearly viable, even though ecological barriers remain unsolved. Using model evidence, what is the strongest counterargument?
 
@@ -1061,27 +1002,18 @@ D. The ecological barriers will resolve themselves once the technology is perfec
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that de-extinction success requires ALL ten variables at viable levels simultaneously. Technology addresses 2-3 variables (DNA, gene editing, surrogate pregnancy). The remaining 7 ecological, population, and ethical variables require separate, potentially more difficult solutions. Proceeding on technology alone creates expensive captive animals, not restored species. Count how many of the ten model variables are addressed by technology alone versus how many require ecological and societal solutions. If only 2-3 out of 10 are solved, is the project likely to achieve its goal of species restoration?
+Feedback: Correct. The model demonstrates that de-extinction success requires ALL ten variables at viable levels simultaneously. Technology addresses 2-3 variables (DNA, gene editing, surrogate pregnancy). The remaining 7 ecological, population, and ethical variables require separate, potentially more difficult solutions. Proceeding on technology alone creates expensive captive animals, not restored species. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.4, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

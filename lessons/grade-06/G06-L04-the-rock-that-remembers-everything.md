@@ -887,77 +887,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-1, MS-ESS2-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Which type of rock is formed when melted rock (magma or lava) cools and hardens?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS2-1, MS-ESS2-3 + CCC4 (Systems and System Models)
 
-A. Sedimentary rock
-B. Metamorphic rock
-C. Igneous rock
-D. Fossil rock
-
-Correct Answer: C
-
-Feedback: Correct! Igneous rock forms when magma (underground) or lava (on the surface) cools and solidifies. 'Igneous' comes from the Latin word for fire. Not quite. When melted rock cools and hardens, it forms igneous rock. Sedimentary rock forms from compressed layers, and metamorphic rock forms from heat and pressure changing existing rock.
-
----
-
-### Question 2
-
-Where are fossils most commonly found?
-
-A. Inside volcanic lava flows
-B. In layers of sedimentary rock
-C. Deep inside metamorphic rock
-D. On the surface of igneous rock
-
-Correct Answer: B
-
-Feedback: Correct! Fossils are preserved in sedimentary rock because organisms get buried in layers of sediment that compress over time without destroying the remains. Not quite. Fossils are almost always found in sedimentary rock. The gentle process of burial in sediment layers preserves organisms, while the extreme heat of igneous and metamorphic processes destroys them.
-
----
-
-### Question 3
-
-What do you think causes rocks to break down into smaller pieces over time?
-
-A. Rocks don't break down — they last forever
-B. Only earthquakes can break rocks
-C. Wind, water, ice, and chemicals gradually wear rocks down
-D. Rocks dissolve in sunlight
-
-Correct Answer: C
-
-Feedback: Correct! Weathering is the process by which wind, water, ice, and chemical reactions gradually break rocks into smaller pieces over time. Not quite. Rocks are constantly being broken down by weathering: wind blows particles against them, water seeps into cracks and freezes, and chemical reactions dissolve minerals. This is a slow but powerful process.
-
----
-
-### Question 4
-
-Can one type of rock change into a different type of rock?
-
-A. No, rocks stay the same type forever
-B. Yes, but only if they melt completely
-C. Yes, heat, pressure, and weathering can transform rocks from one type to another
-D. Only scientists can change rock types in a laboratory
-
-Correct Answer: C
-
-Feedback: Correct! The rock cycle continuously transforms rocks from one type to another through processes like melting, cooling, weathering, compression, and heat and pressure. Not quite. Rocks are constantly being transformed through the rock cycle. Heat and pressure can change sedimentary rock into metamorphic rock, weathering can break any rock into sediment, and melting and cooling creates igneous rock.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Heat & Pressure, Weathering Rate, Sediment Layers, Time. Some components are external (Heat & Pressure, Weathering Rate, Time) and some are internal (Sediment Layers). The student needs to understand what each component represents and how they are organized.
 
 How can seashell fossils be found on top of a mountain thousands of meters above sea level?
 
@@ -968,11 +908,15 @@ D. The mountain was always above water, and the shells are from freshwater anima
 
 Correct Answer: B
 
-Feedback: Correct! Shells accumulated on an ancient seafloor and were buried in sediment that became rock. Over millions of years, tectonic plate collisions pushed that rock upward, forming mountains with ocean fossils inside. Not quite. Shell fossils on mountains formed on ancient ocean floors where shells were buried in sediment. Over millions of years, tectonic forces pushed that sedimentary rock upward to become mountain ranges.
+Feedback: Correct! Shells accumulated on an ancient seafloor and were buried in sediment that became rock. Over millions of years, tectonic plate collisions pushed that rock upward, forming mountains with ocean fossils inside. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS2-1, MS-ESS2-3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Pressure increases, Rock Transformation increases; when Weathering Rate increases, Sediment Layers increases. The student is trying to understand why these relationships are positive or negative.
 
 In the rock cycle model, what happens when Heat & Pressure are set to maximum while Weathering Rate is low?
 
@@ -983,11 +927,15 @@ D. Nothing happens because rocks can't change without weathering
 
 Correct Answer: B
 
-Feedback: Correct! Extreme heat and pressure transform existing rock into metamorphic rock. The rock's mineral structure changes without the rock actually melting. This happens deep underground at plate boundaries. Not quite. When heat and pressure are extreme, rocks are transformed into metamorphic rock. The minerals recrystallize into new forms without melting. If the rock fully melts, it would eventually form igneous rock instead.
+Feedback: Correct! Extreme heat and pressure transform existing rock into metamorphic rock. The rock's mineral structure changes without the rock actually melting. This happens deep underground at plate boundaries. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS2-1, MS-ESS2-3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Pressure increases, Rock Transformation increases and when Weathering Rate increases, Sediment Layers increases and when Sediment Layers increases, Fossil Preservation increases. The student changes one variable to see how the whole system responds.
 
 Why are fossils ONLY preserved in sedimentary rock and not in igneous or metamorphic rock?
 
@@ -998,11 +946,15 @@ D. Sedimentary rock has special chemicals that preserve fossils
 
 Correct Answer: C
 
-Feedback: Correct! Igneous rock forms from melting (destroying any remains), and metamorphic rock forms under extreme heat and pressure (also destroying remains). Only sedimentary rock forms gently enough to preserve fossils. Not quite. The processes that create igneous rock (melting) and metamorphic rock (extreme heat and pressure) are so intense they destroy any organic material. Sedimentary rock forms through gentle burial and compression, preserving fossils.
+Feedback: Correct! Igneous rock forms from melting (destroying any remains), and metamorphic rock forms under extreme heat and pressure (also destroying remains). Only sedimentary rock forms gently enough to preserve fossils. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS2-1, MS-ESS2-3 + CCC5 (Energy and Matter)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The rock cycle is driven by two energy sources. What are they?
 
@@ -1013,25 +965,37 @@ D. Earthquakes and volcanoes
 
 Correct Answer: C
 
-Feedback: Correct! Earth's internal heat drives metamorphism, melting, and tectonic uplift, while the Sun's energy drives weathering and erosion through wind, rain, and temperature changes. Not quite. The rock cycle is powered by Earth's internal heat (which causes melting, metamorphism, and plate movement) and the Sun's energy (which drives weather patterns that cause erosion and weathering).
+Feedback: Correct! Earth's internal heat drives metamorphism, melting, and tectonic uplift, while the Sun's energy drives weathering and erosion through wind, rain, and temperature changes. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS2-1, MS-ESS2-3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Heat & Pressure, Weathering Rate, Time), but they can take action on internal components (Sediment Layers). They need to decide which action would be most effective based on what the model shows.
+
+Which type of rock is formed when melted rock (magma or lava) cools and hardens?
+
+A. Sedimentary rock
+B. Metamorphic rock
+C. Igneous rock
+D. Fossil rock
+
+Correct Answer: C
+
+Feedback: Correct! Igneous rock forms when magma (underground) or lava (on the surface) cools and solidifies. 'Igneous' comes from the Latin word for fire. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS2-1, MS-ESS2-3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS2-1, MS-ESS2-3, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS2-1, MS-ESS2-3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS2-1, MS-ESS2-3, CCC5)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS2-1, MS-ESS2-3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
-
----
 
 ## Resources
 

@@ -714,73 +714,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What does a bird use to eat?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC6 (Structure and Function)
 
-A. Its wings
-B. Its beak
-C. Its tail
-
-Correct Answer: B
-
-Feedback: Yes! A bird uses its beak to pick up and eat food. A bird's beak is the body part it uses to grab, crack, or pick up food.
-
----
-
-### Question 2
-
-Why do fish have fins?
-
-A. To help them fly
-B. To help them swim
-C. To help them dig
-
-Correct Answer: B
-
-Feedback: That is right! Fish use their fins to swim through the water. Fins push water to help fish move. Fins are shaped perfectly for swimming.
-
----
-
-### Question 3
-
-A bird has a very long beak. What kind of food do you think it eats?
-
-A. Hard nuts
-B. Food deep inside flowers
-C. Big pieces of meat
-
-Correct Answer: B
-
-Feedback: Yes! A long thin beak can reach deep into flowers to sip nectar. Long, thin beaks are shaped to reach deep inside flowers where nectar hides.
-
----
-
-### Question 4
-
-Do animals choose to grow the body parts they want?
-
-A. Yes, they pick their body parts
-B. No, they are born with them
-C. Yes, but only when they are babies
-
-Correct Answer: B
-
-Feedback: That is right! Animals are born with their body parts. They do not choose them. Animals cannot choose their body parts. They are born with the parts they have.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Body Part Size, Ability to Get Food. Some components are external (Body Part Size) and some are internal (Ability to Get Food). The student needs to understand what each component represents and how they are organized.
 
 What does structure mean in science?
 
@@ -790,11 +734,15 @@ C. How fast an animal can run
 
 Correct Answer: B
 
-Feedback: Yes! Structure means a body part with a special shape, like claws, wings, or a beak. In science, structure means a body part's shape, like a beak, claw, or fin.
+Feedback: Yes! Structure means a body part with a special shape, like claws, wings, or a beak. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that components affect each other through positive and negative relationships. The student is trying to understand why these relationships are positive or negative.
 
 What does function mean?
 
@@ -804,11 +752,15 @@ C. Where an animal lives
 
 Correct Answer: A
 
-Feedback: That is right! Function means the job a body part does, like grabbing, flying, or eating. Function means the job or purpose of a body part. A beak's function is to eat food.
+Feedback: That is right! Function means the job a body part does, like grabbing, flying, or eating. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that components interact through cause-and-effect chains. The student changes one variable to see how the whole system responds.
 
 When body part size goes UP for a bird's beak, what happens to its ability to get food from deep flowers?
 
@@ -818,11 +770,15 @@ C. It gets better at getting food
 
 Correct Answer: C
 
-Feedback: Yes! A longer beak can reach deeper into flowers to get nectar. A longer beak reaches deeper, so the bird gets better at reaching food inside deep flowers.
+Feedback: Yes! A longer beak can reach deeper into flowers to get nectar. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An eagle has a hooked beak and a hummingbird has a long thin beak. Why are they different?
 
@@ -832,25 +788,36 @@ C. Because they live in different colors
 
 Correct Answer: B
 
-Feedback: Yes! The shape of the beak matches the kind of food the bird eats. Hooked beaks tear meat. Long thin beaks sip nectar. Different beak shapes help birds eat different foods. The shape matches the job.
+Feedback: Yes! The shape of the beak matches the kind of food the bird eats. Hooked beaks tear meat. Long thin beaks sip nectar. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Body Part Size), but they can take action on internal components (Ability to Get Food). They need to decide which action would be most effective based on what the model shows.
+
+What does a bird use to eat?
+
+A. Its wings
+B. Its beak
+C. Its tail
+
+Correct Answer: B
+
+Feedback: Yes! A bird uses its beak to pick up and eat food. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC6)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

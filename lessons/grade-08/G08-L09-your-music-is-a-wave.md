@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS4-1, MS-PS4-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What causes sound?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-PS4-1, MS-PS4-2 + CCC5 (Energy and Matter)
 
-A. Light waves bouncing off objects
-B. Vibrations that travel through a medium like air
-C. Electricity flowing through the air
-D. Temperature changes in the atmosphere
-
-Correct Answer: B
-
-Feedback: Correct! Sound is produced by vibrations (from a speaker, vocal cord, instrument, etc.) that create pressure waves traveling through a medium such as air, water, or solids. Sound is caused by vibrations that create pressure waves in a medium (air, water, or solids). When a speaker vibrates, it compresses and stretches the air, creating waves that travel to your ears.
-
----
-
-### Question 2
-
-When you turn up the volume on your phone, what property of the sound wave are you changing?
-
-A. The speed of the wave
-B. The wavelength of the wave
-C. The amplitude (height) of the wave
-D. The direction the wave travels
-
-Correct Answer: C
-
-Feedback: Correct! Volume corresponds to amplitude. Turning up the volume increases the amplitude (height) of the sound wave, which carries more energy and sounds louder. Volume is related to amplitude, not speed or wavelength. Increasing the volume increases the amplitude of the sound wave, meaning larger pressure variations reach your ear, and you perceive louder sound.
-
----
-
-### Question 3
-
-What determines the pitch of a sound (whether it sounds high or low)?
-
-A. The speed at which the sound travels
-B. The number of wave cycles per second (frequency)
-C. The distance between the sound source and your ear
-D. The temperature of the air
-
-Correct Answer: B
-
-Feedback: Correct! Pitch is determined by frequency, measured in Hertz (Hz). Higher frequency means more wave cycles per second and a higher-pitched sound. Pitch is determined by frequency. A high-frequency wave (many cycles per second) sounds high-pitched, while a low-frequency wave sounds low-pitched. Frequency is measured in Hertz (Hz).
-
----
-
-### Question 4
-
-Can sound travel through a vacuum (completely empty space)?
-
-A. Yes, sound travels through everything
-B. No, sound requires a medium (matter) to travel through
-C. Yes, but only very loud sounds
-D. Sound travels faster in a vacuum than in air
-
-Correct Answer: B
-
-Feedback: Correct! Sound is a mechanical wave that requires particles to vibrate. In a vacuum (no particles), there is nothing to carry the vibrations, so sound cannot travel. Sound is a mechanical wave that travels by vibrating particles in a medium. A vacuum has no particles, so sound waves have nothing to travel through. This is why there is no sound in outer space.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Wave Amplitude, Wave Frequency, Wave Energy, Sound Perception. Some components are external (Wave Amplitude, Wave Frequency) and some are internal (Wave Energy, Sound Perception). The student needs to understand what each component represents and how they are organized.
 
 Your model showed that doubling the amplitude quadrupled the wave energy. What mathematical relationship does this demonstrate?
 
@@ -967,11 +907,15 @@ D. Energy and amplitude are unrelated
 
 Correct Answer: B
 
-Feedback: Correct! Wave energy is proportional to amplitude squared. This is why doubling the amplitude (2 squared = 4) quadruples the energy. A small increase in amplitude means a large increase in energy. The model demonstrates a squared relationship. Since energy is proportional to amplitude squared, doubling amplitude increases energy by 2 squared = 4 times. This is a fundamental property of waves.
+Feedback: Correct! Wave energy is proportional to amplitude squared. This is why doubling the amplitude (2 squared = 4) quadruples the energy. A small increase in amplitude means a large increase in energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-PS4-1, MS-PS4-2 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Wave Amplitude increases, Wave Energy increases; when Wave Frequency increases, Sound Perception increases. The student is trying to understand why these relationships are positive or negative.
 
 In the 'Bass Drop' scenario, amplitude was maximum but frequency was minimum. In the 'Screaming High Note' scenario, both were maximum. Both had high Wave Energy. What does this tell you about what determines wave energy?
 
@@ -982,11 +926,15 @@ D. Wave energy is constant regardless of amplitude or frequency
 
 Correct Answer: C
 
-Feedback: Correct! The model shows that both amplitude and frequency contribute to wave energy. A loud bass note (high amplitude, low frequency) and a screaming high note (high amplitude, high frequency) both carry significant energy. Both amplitude and frequency contribute to wave energy. A wave can have high energy from high amplitude (loud), high frequency (rapid oscillation), or both. The model shows these contributions through different scenarios.
+Feedback: Correct! The model shows that both amplitude and frequency contribute to wave energy. A loud bass note (high amplitude, low frequency) and a screaming high note (high amplitude, high frequency) both carry significant energy. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-PS4-1, MS-PS4-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Wave Amplitude increases, Wave Energy increases and when Wave Frequency increases, Sound Perception increases and when Wave Energy increases, Sound Perception increases. The student changes one variable to see how the whole system responds.
 
 Sound, light, radio, and WiFi are all waves. Your model showed that amplitude controls loudness in sound. In light waves, what does amplitude control?
 
@@ -997,11 +945,15 @@ D. Whether light can pass through glass
 
 Correct Answer: B
 
-Feedback: Correct! Just as amplitude determines loudness in sound, amplitude determines brightness in light. The same wave property (amplitude = energy intensity) manifests differently in different types of waves. Amplitude is the intensity property of all waves. In sound, higher amplitude means louder. In light, higher amplitude means brighter. Color is determined by frequency, just as pitch is determined by frequency in sound.
+Feedback: Correct! Just as amplitude determines loudness in sound, amplitude determines brightness in light. The same wave property (amplitude = energy intensity) manifests differently in different types of waves. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-PS4-1, MS-PS4-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the STEM challenge, you designed a concert venue. A student suggests making all walls from hard, smooth materials like glass. Using your model's principles about wave behavior, what problem would this create?
 
@@ -1012,25 +964,37 @@ D. Smooth walls would cause sound to travel faster, distorting the pitch
 
 Correct Answer: B
 
-Feedback: Correct! Hard, smooth surfaces reflect rather than absorb sound waves. This creates echoes and reverberation where reflected waves overlap with direct sound, muddying the audio. Good acoustics require a balance of reflective and absorptive materials. When waves encounter a surface, they can be reflected, absorbed, or transmitted. Hard, smooth surfaces primarily reflect sound waves. Multiple reflections create echoes and reverberation that distort musical clarity. Concert venues need absorptive materials to control reflections.
+Feedback: Correct! Hard, smooth surfaces reflect rather than absorb sound waves. This creates echoes and reverberation where reflected waves overlap with direct sound, muddying the audio. Good acoustics require a balance of reflective and absorptive materials. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-PS4-1, MS-PS4-2 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Wave Amplitude, Wave Frequency), but they can take action on internal components (Wave Energy, Sound Perception). They need to decide which action would be most effective based on what the model shows.
+
+What causes sound?
+
+A. Light waves bouncing off objects
+B. Vibrations that travel through a medium like air
+C. Electricity flowing through the air
+D. Temperature changes in the atmosphere
+
+Correct Answer: B
+
+Feedback: Correct! Sound is produced by vibrations (from a speaker, vocal cord, instrument, etc.) that create pressure waves traveling through a medium such as air, water, or solids. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-PS4-1, MS-PS4-2, CCC5)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI MS-PS4-1, MS-PS4-2, CCC5)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-PS4-1, MS-PS4-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-PS4-1, MS-PS4-2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-PS4-1, MS-PS4-2, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

@@ -917,86 +917,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A scientist designs a guide RNA to target a specific gene mutation. Which factor most directly determines whether the CRISPR-Cas9 system will cut only the intended DNA sequence and not similar sequences elsewhere in the genome?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
 
-A. The degree of complementarity between the guide RNA and the target DNA sequence
-B. The total number of genes in the organism's genome
-C. The temperature at which the editing reaction is performed
-D. The type of cell being edited
-
-Correct Answer: A
-
-Feedback: Correct. Guide RNA specificity, the degree to which it matches only the intended target and not similar sequences, is the primary determinant of on-target versus off-target cutting by Cas9. The guide RNA's complementarity to the target sequence is the key factor. If it closely matches other genomic locations, Cas9 will cut at those off-target sites as well.
-
----
-
-### Question 2
-
-Why does editing human germline cells raise different ethical concerns than editing somatic cells?
-
-A. Germline cells are harder to access surgically than somatic cells
-B. Changes to germline cells are passed to all future generations without their consent
-C. Somatic cell edits are always more precise than germline cell edits
-D. Germline cells contain different DNA than somatic cells
-
-Correct Answer: B
-
-Feedback: Correct. Germline edits are heritable, meaning every descendant carries the modification, raising unique ethical concerns about consent and unintended consequences across generations. The central ethical distinction is heritability. Somatic edits affect only the individual patient, but germline edits become permanent changes in the human gene pool, affecting descendants who never consented.
-
----
-
-### Question 3
-
-After Cas9 cuts a DNA double strand, the cell can repair the break through two different pathways. Which outcome is most likely when the cell uses non-homologous end joining (NHEJ) instead of homology-directed repair (HDR)?
-
-A. The original disease-causing mutation is precisely corrected
-B. Random insertions or deletions are introduced at the cut site
-C. The cut DNA strand is left permanently unrepaired
-D. A template sequence is automatically inserted from a neighboring chromosome
-
-Correct Answer: B
-
-Feedback: Correct. Non-homologous end joining is error-prone and typically introduces random insertions or deletions (indels) at the break site, rather than making a precise correction. NHEJ is the error-prone repair pathway. Unlike homology-directed repair, which uses a template to make precise corrections, NHEJ simply joins broken DNA ends and frequently introduces random insertions or deletions.
-
----
-
-### Question 4
-
-A research team reports that their CRISPR therapy successfully edited 60% of target cells but also produced off-target edits at a rate of 0.1%. Why might this seemingly low off-target rate still be a significant safety concern?
-
-A. The 60% editing efficiency is too low to produce any therapeutic benefit
-B. A 0.1% rate applied across 3.2 billion base pairs means millions of potential off-target sites could be affected
-C. Off-target edits only occur in germline cells, not somatic cells
-D. The 0.1% rate will decrease to zero in subsequent cell divisions
-
-Correct Answer: B
-
-Feedback: Correct. Even a 0.1% off-target rate is concerning because the human genome is enormous. Across billions of base pairs and many similar sequences, even a low percentage translates to a meaningful number of unintended edits that could disrupt essential genes. The concern is scale. The human genome contains 3.2 billion base pairs with many sequences similar to the target. A 0.1% off-target rate across this vast genome can still produce numerous unintended cuts, some potentially in critical genes.
-
----
-
-### Question 5
-
-Which statement best describes a fundamental limitation of using CRISPR-Cas9 for gene therapy in living patients?
-
-A. CRISPR can only edit bacterial DNA, not human DNA
-B. The Cas9 protein is too large to enter any human cell
-C. Delivering CRISPR components to all affected cells in a tissue while minimizing off-target effects remains a major challenge
-D. CRISPR technology has not yet been tested in any clinical setting
-
-Correct Answer: C
-
-Feedback: Correct. Delivery efficiency is a central challenge: getting CRISPR components into enough target cells to achieve therapeutic benefit while limiting off-target edits and immune reactions remains a major engineering hurdle. CRISPR works in human cells and has been used in clinical trials. The fundamental limitation is delivery: efficiently reaching all affected cells while controlling off-target effects and immune responses.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Guide RNA Specificity, Cas9 Cutting Efficiency, Off-Target Edit Rate, Repair Pathway Selection, Delivery Efficiency, Therapeutic Benefit, Unintended Mutations. Some components are external (Guide RNA Specificity, Delivery Efficiency) and some are internal (Cas9 Cutting Efficiency, Off-Target Edit Rate, Repair Pathway Selection, Therapeutic Benefit, Unintended Mutations). The student needs to understand what each component represents and how they are organized.
 
 A computational model shows that increasing guide RNA specificity from 85% to 99% reduces off-target edits by 90% but also decreases on-target editing efficiency by 25%. Which interpretation best reflects the system-level trade-off?
 
@@ -1007,11 +932,15 @@ D. The 25% efficiency loss can be eliminated by simply using more Cas9 protein
 
 Correct Answer: B
 
-Feedback: Correct. This is a context-dependent trade-off. For a fatal disease with no alternatives, accepting lower efficiency for higher precision may be justified, while for a non-lethal condition, the calculus may differ. The trade-off between precision and efficiency must be evaluated in context. For fatal diseases with no alternatives, reduced efficiency may be acceptable if precision is high. The optimal balance depends on the clinical scenario.
+Feedback: Correct. This is a context-dependent trade-off. For a fatal disease with no alternatives, accepting lower efficiency for higher precision may be justified, while for a non-lethal condition, the calculus may differ. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Delivery Efficiency increases, Cas9 Cutting Efficiency increases; when Target Edit Rate increases, Unintended Mutations increases. The student is trying to understand why these relationships are positive or negative.
 
 In a CRISPR gene therapy model, a student observes that doubling the delivery dose of CRISPR components increases both on-target editing (from 40% to 70% of cells) and off-target events (from 50 to 180 per genome). What does this relationship reveal about the system?
 
@@ -1022,11 +951,15 @@ D. Doubling the dose always doubles the therapeutic benefit
 
 Correct Answer: C
 
-Feedback: Correct. On-target editing increased 1.75x while off-target events increased 3.6x, demonstrating a nonlinear relationship where safety risks escalate faster than therapeutic benefits at higher doses. Compare the ratios: on-target editing increased from 40% to 70% (1.75x), but off-target events increased from 50 to 180 (3.6x). The off-target risk scales disproportionately, meaning higher doses yield diminishing net therapeutic value.
+Feedback: Correct. On-target editing increased 1.75x while off-target events increased 3.6x, demonstrating a nonlinear relationship where safety risks escalate faster than therapeutic benefits at higher doses. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Delivery Efficiency increases, Cas9 Cutting Efficiency increases and when Target Edit Rate increases, Unintended Mutations increases and when Cas9 Cutting Efficiency increases, Therapeutic Benefit increases. The student changes one variable to see how the whole system responds.
 
 A model compares somatic cell editing for sickle cell disease with germline editing of the same HBB gene mutation. Which analysis best explains why the risk assessment differs fundamentally between these two approaches?
 
@@ -1037,11 +970,15 @@ D. Somatic cells have fewer off-target sites than germline cells
 
 Correct Answer: C
 
-Feedback: Correct. The fundamental difference is that somatic editing errors are contained within one patient's lifetime and can be monitored, while germline errors become permanent heritable changes that propagate through all future descendants. The key distinction is heritability of errors. Somatic editing errors are limited to one patient; germline editing errors enter the human gene pool and are inherited by all descendants, making the consequences of off-target edits irreversible at a population level.
+Feedback: Correct. The fundamental difference is that somatic editing errors are contained within one patient's lifetime and can be monitored, while germline errors become permanent heritable changes that propagate through all future descendants. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student's CRISPR model shows that homology-directed repair (HDR) occurs in only 20% of edited cells while non-homologous end joining (NHEJ) occurs in 80%. The student proposes increasing Cas9 concentration to improve the HDR rate. Why is this proposal scientifically flawed?
 
@@ -1052,11 +989,15 @@ D. Cas9 concentration only affects germline cells, not somatic cells
 
 Correct Answer: A
 
-Feedback: Correct. The ratio of HDR to NHEJ is determined by the cell's intrinsic repair machinery and cell cycle phase, not by Cas9 concentration. More Cas9 creates more cuts but does not shift which repair pathway the cell activates. The cell's choice between HDR and NHEJ depends on its repair machinery availability and cell cycle stage, not on Cas9 levels. Adding more Cas9 increases total cuts (including off-target) without changing the fundamental repair pathway ratio.
+Feedback: Correct. The ratio of HDR to NHEJ is determined by the cell's intrinsic repair machinery and cell cycle phase, not by Cas9 concentration. More Cas9 creates more cuts but does not shift which repair pathway the cell activates. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Guide RNA Specificity, Delivery Efficiency), but they can take action on internal components (Cas9 Cutting Efficiency, Off-Target Edit Rate, Repair Pathway Selection, Therapeutic Benefit, Unintended Mutations). They need to decide which action would be most effective based on what the model shows.
 
 Based on the CRISPR gene editing model, which conclusion about the relationship between guide RNA design and therapeutic outcomes is best supported by the simulation data?
 
@@ -1067,27 +1008,18 @@ D. Longer guide RNA sequences always produce better therapeutic outcomes than sh
 
 Correct Answer: B
 
-Feedback: Correct. Guide RNA specificity is the upstream variable that determines where Cas9 cuts. Every downstream outcome, from repair pathway activation to therapeutic benefit to unintended mutations, depends on this initial targeting accuracy. Guide RNA specificity is the foundational upstream variable in the system. It determines where Cas9 cuts, which then cascades to affect repair pathway selection, on-target correction rates, off-target mutation rates, and ultimately clinical outcomes.
+Feedback: Correct. Guide RNA specificity is the upstream variable that determines where Cas9 cuts. Every downstream outcome, from repair pathway activation to therapeutic benefit to unintended mutations, depends on this initial targeting accuracy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: A
-Question 5: B
-
----
 
 ## Resources
 

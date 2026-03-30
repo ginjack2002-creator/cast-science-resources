@@ -925,86 +925,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What are microplastics?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC4 (Systems and System Models)
 
-A. A type of biodegradable plastic that breaks down in the ocean within weeks
-B. Plastic fragments smaller than 5 millimeters, created by breakdown of larger plastic items
-C. Microscopic organisms that consume plastic waste
-D. Plastic packaging designed to be as small as possible to reduce waste
-
-Correct Answer: B
-
-Feedback: Correct. Microplastics are plastic fragments smaller than 5 mm, produced when larger plastic items break down through UV exposure and physical weathering. Microplastics are plastic fragments less than 5 mm in diameter. They form when UV radiation and physical forces break larger plastic items into progressively smaller pieces. An estimated 14 million tons enter the ocean annually.
-
----
-
-### Question 2
-
-What is biomagnification?
-
-A. The use of magnifying equipment to study small organisms
-B. The increasing concentration of a substance at each successive level in a food chain
-C. The rapid growth of organisms exposed to plastic pollution
-D. The expansion of biological populations in polluted areas
-
-Correct Answer: B
-
-Feedback: Correct. Biomagnification is the progressive increase in concentration of a substance (like toxins on microplastics) at each trophic level as predators consume contaminated prey. Biomagnification occurs when a toxic substance becomes more concentrated at each step of the food chain. A toxin at 1 ppm in plankton can reach 10,000 ppm in a top predator through cumulative dietary exposure.
-
----
-
-### Question 3
-
-What is an ocean gyre, and how does it relate to plastic pollution?
-
-A. A deep-sea volcano that incinerates plastic waste on the ocean floor
-B. A large system of circular ocean currents that traps floating debris in accumulation zones
-C. A man-made barrier designed to contain oil spills and plastic waste
-D. A type of marine organism that feeds exclusively on plastic
-
-Correct Answer: B
-
-Feedback: Correct. Ocean gyres are large circular current systems that sweep floating debris toward their calm centers, creating massive accumulation zones like the Great Pacific Garbage Patch. Ocean gyres are circular current systems driven by wind, Coriolis effect, and continental boundaries. They sweep floating debris inward, trapping it in accumulation zones. The Great Pacific Garbage Patch covers an area twice the size of Texas.
-
----
-
-### Question 4
-
-Does plastic truly biodegrade in the ocean?
-
-A. Yes, most plastic biodegrades within 5-10 years in saltwater
-B. No, plastic photodegrades into ever-smaller fragments but never fully breaks down on human timescales
-C. Yes, ocean bacteria have evolved to completely consume plastic
-D. Plastic only degrades in warm tropical waters
-
-Correct Answer: B
-
-Feedback: Correct. Plastic does not biodegrade. UV light and mechanical forces break it into smaller and smaller fragments, but every piece of plastic ever produced still exists in some form. Plastic does not biodegrade in the ocean. It photodegrades, breaking into smaller and smaller pieces through UV exposure and mechanical weathering, but the polymer material persists indefinitely. Every piece of plastic ever made still exists in some form.
-
----
-
-### Question 5
-
-Approximately how much plastic enters the ocean each year?
-
-A. About 1,000 metric tons
-B. About 100,000 metric tons
-C. About 11 million metric tons
-D. About 1 billion metric tons
-
-Correct Answer: C
-
-Feedback: Correct. Approximately 11 million metric tons of plastic enter the ocean each year, projected to triple by 2040 without major intervention. An estimated 11 million metric tons of plastic enter the ocean annually through inadequate waste management, industrial discharge, and product degradation. This figure is projected to triple by 2040 without significant intervention.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plastic Production and Disposal Rate, UV and Mechanical Fragmentation, Ocean Gyre Concentration, Microplastic Ingestion Rate, Trophic-Level Toxin Concentration, Marine Ecosystem Health. Some components are external (Plastic Production and Disposal Rate) and some are internal (UV and Mechanical Fragmentation, Ocean Gyre Concentration, Microplastic Ingestion Rate, Trophic-Level Toxin Concentration, Marine Ecosystem Health). The student needs to understand what each component represents and how they are organized.
 
 The model shows that even after reducing plastic input by 50%, Marine Ecosystem Health takes decades to improve. Which characteristic of microplastic pollution best explains this delay?
 
@@ -1015,11 +940,15 @@ D. Reducing production causes economic disruption that harms coastal communities
 
 Correct Answer: B
 
-Feedback: Correct. The lag exists because microplastics already in the ocean persist essentially forever and gyres have no mechanism to flush accumulated debris. Even with reduced input, the existing stock continues contaminating food webs. The delay is caused by the persistence of existing contamination. Microplastics already in the ocean do not degrade, and gyre circulation traps them indefinitely. Reducing input prevents additional contamination but does not remove what is already there.
+Feedback: Correct. The lag exists because microplastics already in the ocean persist essentially forever and gyres have no mechanism to flush accumulated debris. Even with reduced input, the existing stock continues contaminating food webs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Plastic Production increases, UV and Mechanical Fragmentation increases; when UV and Mechanical Fragmentation increases, Ocean Gyre Concentration increases. The student is trying to understand why these relationships are positive or negative.
 
 The model demonstrates that toxin concentrations increase by factors of 10-100 at each trophic level through biomagnification. If zooplankton contain microplastic-associated toxins at 1 part per billion, what concentration might be found in a fourth-level predator?
 
@@ -1030,11 +959,15 @@ D. Less than 1 part per billion (organisms metabolize toxins)
 
 Correct Answer: B
 
-Feedback: Correct. With 10-100x magnification at each trophic level, three jumps from zooplankton to a 4th-level predator could concentrate toxins by 10^3 to 10^6, reaching parts per million or higher. Biomagnification is multiplicative, not additive. With 10-100x concentration increase at each trophic level, three jumps produce 10^3 to 10^6 increase (1,000 to 1,000,000x). Starting at 1 ppb, a 4th-level predator could contain 1-1,000 ppm.
+Feedback: Correct. With 10-100x magnification at each trophic level, three jumps from zooplankton to a 4th-level predator could concentrate toxins by 10^3 to 10^6, reaching parts per million or higher. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Plastic Production increases, UV and Mechanical Fragmentation increases and when UV and Mechanical Fragmentation increases, Ocean Gyre Concentration increases and when Ocean Gyre Concentration increases, Microplastic Ingestion Rate increases. The student changes one variable to see how the whole system responds.
 
 The model compares source reduction versus ocean cleanup at reducing gyre plastic concentration. Why does source reduction vastly outperform cleanup in the model?
 
@@ -1045,11 +978,15 @@ D. Cleanup operations accidentally harm more marine life than plastic does
 
 Correct Answer: B
 
-Feedback: Correct. The math is decisive: inflow exceeds cleanup capacity by roughly 1,000:1, and fragmentation creates particles too small for collection. Prevention outperforms remediation by orders of magnitude. Source reduction outperforms cleanup because of scale: 11 million tons enter annually versus ~10,000 tons that can be removed. Additionally, fragmentation creates trillions of particles below the size threshold for collection technology, making cleanup of existing microplastics physically impossible.
+Feedback: Correct. The math is decisive: inflow exceeds cleanup capacity by roughly 1,000:1, and fragmentation creates particles too small for collection. Prevention outperforms remediation by orders of magnitude. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Microplastics have been found in human blood, placental tissue, and deep-sea sediments. What does this global distribution pattern reveal about the plastic pollution system?
 
@@ -1060,11 +997,15 @@ D. This distribution pattern is normal for all synthetic materials
 
 Correct Answer: B
 
-Feedback: Correct. The ubiquity of microplastics across environments and inside human bodies demonstrates that contamination has reached a scale where prevention is the only viable primary strategy, since cleanup of this diffuse, global pollution is impractical. Finding microplastics in blood, placentas, Arctic ice, and the deepest ocean trenches reveals that contamination is already globally systemic. This distribution makes remediation practically impossible and underscores that prevention (reducing plastic entering the environment) must be the primary response.
+Feedback: Correct. The ubiquity of microplastics across environments and inside human bodies demonstrates that contamination has reached a scale where prevention is the only viable primary strategy, since cleanup of this diffuse, global pollution is impractical. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Plastic Production and Disposal Rate), but they can take action on internal components (UV and Mechanical Fragmentation, Ocean Gyre Concentration, Microplastic Ingestion Rate, Trophic-Level Toxin Concentration, Marine Ecosystem Health). They need to decide which action would be most effective based on what the model shows.
 
 A policy analyst proposes banning single-use plastics as the primary solution. Using the model, evaluate the likely effectiveness of this approach.
 
@@ -1075,27 +1016,18 @@ D. Bans would increase ocean pollution by forcing consumers to use heavier, more
 
 Correct Answer: B
 
-Feedback: Correct. Single-use bans address a major input pathway but are one component of a comprehensive strategy. Existing contamination persists, other sources (microfibers, industrial pellets, tire wear) continue, and replacement materials need life-cycle assessment. Single-use plastic bans address an important source but the model shows the problem requires a systems approach: existing ocean contamination persists for centuries, other sources (microfibers from textiles, tire wear, industrial pellets) contribute significantly, and replacement materials must be assessed for their own environmental impacts.
+Feedback: Correct. Single-use bans address a major input pathway but are one component of a comprehensive strategy. Existing contamination persists, other sources (microfibers, industrial pellets, tire wear) continue, and replacement materials need life-cycle assessment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

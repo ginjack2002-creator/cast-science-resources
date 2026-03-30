@@ -954,86 +954,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is an urban heat island?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC4 (Systems and System Models)
 
-A. A tropical island located near a major city
-B. A metropolitan area that is significantly warmer than surrounding rural areas due to human-modified surfaces and activities
-C. A heat wave that only affects coastal cities
-D. An area of a city designated for industrial heat production
-
-Correct Answer: B
-
-Feedback: Correct. An urban heat island is the phenomenon where cities experience significantly higher temperatures than surrounding rural and forested areas due to heat-absorbing surfaces, reduced vegetation, and waste heat from buildings and vehicles. An urban heat island is not a geographic feature but a temperature phenomenon. Cities with their dark pavement, concrete, and limited vegetation absorb and retain more heat than surrounding natural landscapes.
-
----
-
-### Question 2
-
-What is albedo, and how does it relate to surface temperature?
-
-A. Albedo is the amount of heat a surface generates; high albedo surfaces produce more heat
-B. Albedo is the reflectivity of a surface; high-albedo surfaces reflect more solar radiation and stay cooler
-C. Albedo is a measure of wind speed over urban areas
-D. Albedo is the humidity level in a city compared to rural areas
-
-Correct Answer: B
-
-Feedback: Correct. Albedo measures how much incoming solar radiation a surface reflects. Light-colored and vegetated surfaces have high albedo (reflect more, absorb less heat), while dark surfaces like asphalt have low albedo (absorb more, get hotter). Albedo is specifically about reflectivity, not heat generation. A surface with high albedo reflects most incoming solar energy back to space, staying cooler. Low-albedo surfaces (dark pavement, rooftops) absorb that energy as heat.
-
----
-
-### Question 3
-
-How does air conditioning contribute to outdoor temperatures in a city?
-
-A. Air conditioning has no effect on outdoor temperatures
-B. AC units cool both indoor and outdoor air equally
-C. AC units transfer heat from indoors to outdoors, adding waste heat to the surrounding environment
-D. AC units create cold spots in outdoor areas near buildings
-
-Correct Answer: C
-
-Feedback: Correct. Air conditioners work by transferring heat from inside a building to outside. This waste heat warms the surrounding outdoor air, contributing to higher urban temperatures, especially during heat waves when AC use peaks. AC units do not destroy heat; they move it. They cool indoor spaces by pumping thermal energy outside, where it warms the surrounding air. During peak cooling demand, the cumulative waste heat from millions of AC units measurably raises outdoor temperatures.
-
----
-
-### Question 4
-
-What is environmental justice, and how does it relate to urban heat?
-
-A. Environmental justice is a legal term for environmental regulations that apply equally to all areas
-B. The principle that no community should bear a disproportionate share of environmental hazards due to race, income, or political power
-C. Environmental justice means all neighborhoods have equal access to air conditioning
-D. It refers to criminal penalties for polluting companies
-
-Correct Answer: B
-
-Feedback: Correct. Environmental justice recognizes that environmental hazards, including extreme heat, are often disproportionately concentrated in low-income communities and communities of color due to historical investment patterns. Environmental justice addresses the inequitable distribution of environmental burdens. In urban heat, this means that historically marginalized communities often have less tree cover, more pavement, and greater heat exposure than wealthier neighborhoods.
-
----
-
-### Question 5
-
-Why do trees and vegetation help cool urban areas?
-
-A. Trees block wind, which reduces the wind chill factor and makes areas feel warmer
-B. Trees and vegetation cool air through evapotranspiration (releasing water vapor) and by providing shade that prevents surfaces from absorbing solar radiation
-C. Vegetation has no measurable effect on urban temperatures
-D. Trees only provide psychological cooling, not actual temperature reduction
-
-Correct Answer: B
-
-Feedback: Correct. Trees cool through two mechanisms: evapotranspiration (releasing water vapor that absorbs heat as it evaporates) and shading (preventing solar radiation from heating pavement and buildings). Together, these can reduce local temperatures by several degrees. Trees provide measurable cooling through evapotranspiration (a process similar to sweating, where water evaporation absorbs heat) and shading. Studies show tree cover can reduce local temperatures by 2-8 degrees Fahrenheit.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Impervious Surface Area, Green Space Coverage, Ambient Temperature, Energy Consumption (AC), Air Quality Index, Heat-Related Health Risk. Some components are external (Impervious Surface Area, Green Space Coverage) and some are internal (Ambient Temperature, Energy Consumption (AC), Air Quality Index, Heat-Related Health Risk). The student needs to understand what each component represents and how they are organized.
 
 The model reveals a reinforcing feedback loop involving air conditioning. Which of the following correctly describes this loop?
 
@@ -1044,11 +969,15 @@ D. The AC loop is a balancing feedback that stabilizes urban temperatures
 
 Correct Answer: B
 
-Feedback: Correct. This is a reinforcing loop: heat drives AC demand, AC waste heat warms outdoor air, warmer air drives more AC demand. This loop amplifies temperatures, especially during heat waves when the effect is most concentrated. AC creates a reinforcing (not balancing) loop. While it cools indoors, it heats outdoors. The cumulative effect of millions of AC units pumping heat into already-hot air creates a self-amplifying cycle.
+Feedback: Correct. This is a reinforcing loop: heat drives AC demand, AC waste heat warms outdoor air, warmer air drives more AC demand. This loop amplifies temperatures, especially during heat waves when the effect is most concentrated. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Impervious Surface increases, Ambient Temperature increases; when Green Space increases, Ambient Temperature decreases. The student is trying to understand why these relationships are positive or negative.
 
 The simulation comparing two neighborhoods shows a 10-degree F temperature difference between a high-green-space neighborhood and a high-concrete neighborhood during a heat wave. The model also shows different health outcomes. What structural factor explains both the temperature AND health disparities?
 
@@ -1059,11 +988,15 @@ D. The two neighborhoods are in different climate zones
 
 Correct Answer: B
 
-Feedback: Correct. The temperature disparity is structural, rooted in historical investment patterns including redlining. Low-income communities received less green infrastructure and more industrial/commercial development, creating heat islands that compound health vulnerabilities. Urban heat inequality is not random but structural. Historical policies directed green infrastructure investment to wealthier neighborhoods while concentrating heat-absorbing development in lower-income areas, creating measurable disparities in both temperature and health outcomes.
+Feedback: Correct. The temperature disparity is structural, rooted in historical investment patterns including redlining. Low-income communities received less green infrastructure and more industrial/commercial development, creating heat islands that compound health vulnerabilities. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Impervious Surface increases, Ambient Temperature increases and when Green Space increases, Ambient Temperature decreases and when Ambient Temperature increases, Energy Consumption increases. The student changes one variable to see how the whole system responds.
 
 A student's model shows that a regional heat wave of +5 degrees C produces +8 degrees C in the urban core but only +5.5 degrees C in suburban areas. What does this amplification effect demonstrate?
 
@@ -1074,11 +1007,15 @@ D. The urban core has a different climate than surrounding areas
 
 Correct Answer: B
 
-Feedback: Correct. Urban areas amplify regional heat events because their existing heat island infrastructure (dark surfaces, minimal vegetation, waste heat) adds to the regional increase. The AC reinforcing loop further amplifies temperatures during extreme heat. The urban heat island does not merely add a constant offset; it amplifies heat events. During a heat wave, the existing urban infrastructure absorbs more energy, vegetation provides less cooling, and the AC feedback loop intensifies.
+Feedback: Correct. Urban areas amplify regional heat events because their existing heat island infrastructure (dark surfaces, minimal vegetation, waste heat) adds to the regional increase. The AC reinforcing loop further amplifies temperatures during extreme heat. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC6 (Structure and Function)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model identifies green infrastructure as an intervention that 'breaks the reinforcing loop.' How does increasing green space from 10% to 40% break this loop?
 
@@ -1089,11 +1026,15 @@ D. Increasing green space increases humidity, which makes heat feel worse
 
 Correct Answer: B
 
-Feedback: Correct. Green infrastructure interrupts the reinforcing loop at its source. By cooling the environment passively through evapotranspiration and shade, it reduces the temperature trigger that drives AC use, thereby reducing the waste heat that amplifies outdoor temperatures. Green space breaks the loop by providing passive cooling that replaces the need for active (heat-generating) cooling. Lower ambient temperatures mean less AC demand, less waste heat, and a dampened reinforcing cycle.
+Feedback: Correct. Green infrastructure interrupts the reinforcing loop at its source. By cooling the environment passively through evapotranspiration and shade, it reduces the temperature trigger that drives AC use, thereby reducing the waste heat that amplifies outdoor temperatures. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Impervious Surface Area, Green Space Coverage), but they can take action on internal components (Ambient Temperature, Energy Consumption (AC), Air Quality Index, Heat-Related Health Risk). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, a city has limited budget for cooling interventions. Which approach best reflects systems thinking and environmental justice principles?
 
@@ -1104,27 +1045,18 @@ D. Wait until new cooling technologies are developed before investing
 
 Correct Answer: B
 
-Feedback: Correct. Systems thinking shows the reinforcing loop is strongest where green space is lowest and impervious surface is highest. Environmental justice demands that the most vulnerable communities, who bear the greatest heat burden, receive priority investment. Equal distribution ignores that the heat burden is unequally distributed. Systems analysis shows that targeting the hottest, most vulnerable neighborhoods breaks the reinforcing loop where it is strongest, producing the greatest temperature reduction per dollar invested.
+Feedback: Correct. Systems thinking shows the reinforcing loop is strongest where green space is lowest and impervious surface is highest. Environmental justice demands that the most vulnerable communities, who bear the greatest heat burden, receive priority investment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC6)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

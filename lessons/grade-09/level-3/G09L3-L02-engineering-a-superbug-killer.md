@@ -936,86 +936,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Antibiotic-resistant bacteria are considered a major global health threat. Which process BEST explains how bacterial populations develop resistance to antibiotics?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. Individual bacteria learn to recognize and avoid antibiotics through repeated exposure
-B. Random genetic mutations produce resistant individuals, and natural selection favors their survival when antibiotics are applied
-C. Antibiotics cause bacteria to intentionally mutate their DNA for protection
-D. Resistant bacteria are a completely different species that is naturally immune
-
-Correct Answer: B
-
-Feedback: Correct. Resistance arises through random mutations that occur before antibiotic exposure. When antibiotics are applied, susceptible bacteria die while resistant mutants survive and reproduce, increasing the frequency of resistance genes in the population through natural selection. Think about how evolution by natural selection works. Mutations occur randomly, and the environment determines which individuals survive. Bacteria do not choose to become resistant.
-
----
-
-### Question 2
-
-A bacteriophage is a type of virus. What distinguishes bacteriophages from viruses that cause human diseases like influenza?
-
-A. Bacteriophages are larger than human viruses
-B. Bacteriophages exclusively infect bacteria and cannot infect human cells
-C. Bacteriophages contain DNA while human viruses contain RNA
-D. Bacteriophages do not replicate like other viruses
-
-Correct Answer: B
-
-Feedback: Correct. Bacteriophages require specific bacterial surface receptors for attachment and infection. Human cells lack these receptors, making phages biologically incapable of infecting human cells. This specificity is what makes them potentially useful as targeted antibacterial treatments. Consider what determines which cells a virus can infect. Viruses need specific surface receptors on their target cells. Think about whether bacterial surface receptors are the same as human cell surface receptors.
-
----
-
-### Question 3
-
-A hospital patient has an infection caused by a bacterium resistant to all available antibiotics. A doctor suggests using a virus to treat the infection. What is the MOST reasonable concern about this approach?
-
-A. The virus might infect the patient's own cells and cause additional illness
-B. The bacteria might evolve resistance to the virus, just as they evolved resistance to antibiotics
-C. Viruses cannot kill bacteria because they are smaller
-D. The immune system would prevent any virus from entering the body
-
-Correct Answer: B
-
-Feedback: Correct. Just as bacteria evolve antibiotic resistance through natural selection, they can also evolve resistance to bacteriophages by modifying the surface receptors that phages use for attachment. This is a legitimate scientific concern for phage therapy. Consider the evolutionary principle at work. If natural selection drives resistance to one type of selective pressure (antibiotics), could the same process operate against a different selective pressure (viral predation)?
-
----
-
-### Question 4
-
-Unlike antibiotics, which degrade after administration, bacteriophages can increase in number inside a patient during treatment. What biological process allows this?
-
-A. Phages undergo cell division like bacteria
-B. The patient's immune system produces more phages
-C. Phages replicate inside the bacteria they infect, releasing new phage particles when the bacterial cell bursts
-D. Phages absorb nutrients from the patient's bloodstream to grow
-
-Correct Answer: C
-
-Feedback: Correct. Phages inject their genetic material into bacterial cells, hijack the cell's protein synthesis machinery to produce new phage components, assemble 50-200 new phage particles, and lyse (burst) the cell. This makes phage therapy self-amplifying. Remember that viruses cannot reproduce independently. They need a host cell's machinery. In phage therapy, what serves as the host cell?
-
----
-
-### Question 5
-
-The human gut contains trillions of beneficial bacteria that aid in digestion and immune function. Why is this relevant when considering phage therapy for a bacterial infection?
-
-A. Beneficial gut bacteria would prevent phages from reaching the pathogenic bacteria
-B. Phage therapy must be specific enough to kill pathogenic bacteria without destroying the beneficial microbiome
-C. Gut bacteria are immune to all viruses and would be unaffected
-D. The microbiome has no relevance to infection treatment decisions
-
-Correct Answer: B
-
-Feedback: Correct. A treatment that kills both pathogenic and beneficial bacteria (as many broad-spectrum antibiotics do) can cause serious complications. Phage specificity, the ability to target only the disease-causing strain, is a critical design parameter. Consider the consequences of a treatment that does not distinguish between harmful bacteria and the beneficial bacteria your body depends on for normal function.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Phage Population, Target Bacteria Population, Phage Specificity, Bacterial Resistance Rate, Immune System Response, Phage Replication Rate, Healthy Microbiome Impact, Treatment Timing, Dosage Optimization. Some components are external (Phage Specificity, Treatment Timing, Dosage Optimization) and some are internal (Phage Population, Target Bacteria Population, Bacterial Resistance Rate, Immune System Response, Phage Replication Rate, Healthy Microbiome Impact). The student needs to understand what each component represents and how they are organized.
 
 In a phage therapy model, a student observes that increasing initial Phage Dosage leads to faster bacterial clearance, but the effect plateaus after a certain dose. Which explanation BEST accounts for this plateau?
 
@@ -1026,11 +951,15 @@ D. Bacteria become instantly resistant when phage concentration is too high
 
 Correct Answer: A
 
-Feedback: Correct. Because phage therapy is self-amplifying (each lysed bacterium releases 50-200 new phages), the initial dose only needs to be large enough to establish productive infections. Beyond that threshold, the phage population grows exponentially regardless of the starting dose. Consider what makes phage therapy fundamentally different from antibiotic treatment. Antibiotics degrade over time, but phages do something unique when they encounter target bacteria.
+Feedback: Correct. Because phage therapy is self-amplifying (each lysed bacterium releases 50-200 new phages), the initial dose only needs to be large enough to establish productive infections. Beyond that threshold, the phage population grows exponentially regardless of the starting dose. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Dosage Optimization increases, Phage Population increases; when Phage Population increases, Target Bacteria Population decreases. The student is trying to understand why these relationships are positive or negative.
 
 A model simulation shows that when Treatment Timing is delayed from Day 1 to Day 5 of infection, the probability of treatment failure increases dramatically. Which factor MOST directly explains this finding?
 
@@ -1041,11 +970,15 @@ D. The infection has already caused irreversible organ damage by Day 5
 
 Correct Answer: B
 
-Feedback: Correct. As bacterial populations grow, they accumulate genetic diversity through random mutation. A population of 10 billion bacteria is far more likely to contain individuals with phage-resistant mutations than a population of 10,000. Natural selection rapidly amplifies these resistant mutants under phage pressure. Consider the relationship between population size and genetic diversity. How does a larger bacterial population change the probability that resistance-conferring mutations exist before treatment begins?
+Feedback: Correct. As bacterial populations grow, they accumulate genetic diversity through random mutation. A population of 10 billion bacteria is far more likely to contain individuals with phage-resistant mutations than a population of 10,000. Natural selection rapidly amplifies these resistant mutants under phage pressure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Dosage Optimization increases, Phage Population increases and when Phage Population increases, Target Bacteria Population decreases and when Target Bacteria Population increases, Phage Replication Rate increases. The student changes one variable to see how the whole system responds.
 
 A researcher observes that bacteria which evolve resistance to a phage by modifying their surface receptors simultaneously become susceptible to an antibiotic they were previously resistant to. This phenomenon is BEST explained by which concept?
 
@@ -1056,11 +989,15 @@ D. The antibiotic was reformulated to be more effective against the mutant strai
 
 Correct Answer: B
 
-Feedback: Correct. This is phage-antibiotic synergy. Surface receptor proteins often serve multiple functions. When bacteria modify a receptor to block phage attachment, they may lose the efflux pump or structural feature that made them antibiotic-resistant. Evolution forces a trade-off between two survival strategies. Think about the dual function of bacterial surface receptors. If a receptor protein both enables antibiotic resistance AND serves as the phage attachment site, what happens when the bacterium mutates that receptor to escape the phage?
+Feedback: Correct. This is phage-antibiotic synergy. Surface receptor proteins often serve multiple functions. When bacteria modify a receptor to block phage attachment, they may lose the efflux pump or structural feature that made them antibiotic-resistant. Evolution forces a trade-off between two survival strategies. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A phage therapy optimization model includes both Phage Specificity and Healthy Microbiome Impact as components. A student increases Phage Specificity to its maximum value. What is the MOST LIKELY effect on Healthy Microbiome Impact?
 
@@ -1071,11 +1008,15 @@ D. Healthy Microbiome Impact remains the same because the microbiome is immune t
 
 Correct Answer: B
 
-Feedback: Correct. Phage Specificity and Healthy Microbiome Impact have a negative relationship. Higher specificity means the phage more precisely distinguishes between pathogenic bacteria and beneficial microbiome species, resulting in less collateral damage to the gut ecosystem. Consider what specificity means in biological targeting. A highly specific phage recognizes only one bacterial strain's receptors. How would this affect bacteria in the gut that have different surface receptors?
+Feedback: Correct. Phage Specificity and Healthy Microbiome Impact have a negative relationship. Higher specificity means the phage more precisely distinguishes between pathogenic bacteria and beneficial microbiome species, resulting in less collateral damage to the gut ecosystem. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Phage Specificity, Treatment Timing, Dosage Optimization), but they can take action on internal components (Phage Population, Target Bacteria Population, Bacterial Resistance Rate, Immune System Response, Phage Replication Rate, Healthy Microbiome Impact). They need to decide which action would be most effective based on what the model shows.
 
 A clinical team is designing a phage cocktail containing three different phages, each targeting a different surface receptor on the same pathogenic bacterium. What is the PRIMARY advantage of this multi-phage approach over using a single phage type?
 
@@ -1086,27 +1027,18 @@ D. Using three phages reduces the immune system's response to the treatment
 
 Correct Answer: B
 
-Feedback: Correct. If resistance to one phage occurs at a rate of 1 in 10^6, simultaneous resistance to three independent phages targeting different receptors occurs at approximately 1 in 10^18. This combinatorial principle is the same logic behind HIV combination therapy and makes resistance evolution astronomically unlikely. Consider the mathematics of probability. If each phage targets a different receptor, a bacterium must independently mutate all three receptors simultaneously to survive. How does requiring multiple simultaneous mutations change the odds?
+Feedback: Correct. If resistance to one phage occurs at a rate of 1 in 10^6, simultaneous resistance to three independent phages targeting different receptors occurs at approximately 1 in 10^18. This combinatorial principle is the same logic behind HIV combination therapy and makes resistance evolution astronomically unlikely. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

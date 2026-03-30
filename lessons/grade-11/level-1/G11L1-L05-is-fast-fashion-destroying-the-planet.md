@@ -901,86 +901,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A student calculates that a $5 polyester t-shirt requires 2,700 liters of water, produces 5.5 kg of CO2, and releases 700,000 microplastic fibers per wash. These costs are not reflected in the purchase price. What economic concept best describes this situation?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.2 + CCC4 (Systems and System Models)
 
-A. Supply and demand equilibrium, where the price accurately reflects all costs
-B. Externalities, where environmental and social costs are borne by third parties (ecosystems, communities) rather than the producer or consumer
-C. Overpricing, where the shirt costs more to produce than its retail price
-D. Market efficiency, where the price automatically includes all costs
-
-Correct Answer: B
-
-Feedback: Correct. Externalities are costs imposed on third parties who did not choose to incur them. Water pollution, carbon emissions, and microplastic contamination are absorbed by ecosystems and communities rather than reflected in the shirt's price, creating a false sense of cheapness. If the environmental costs are not in the price, someone or something else must be paying them. Consider who absorbs the cost of water pollution, carbon emissions, and microplastic contamination. These are costs shifted away from the transaction.
-
----
-
-### Question 2
-
-Which material used in clothing production is most associated with long-lasting microplastic pollution in oceans?
-
-A. Organic cotton, which biodegrades in water
-B. Polyester, a petroleum-based synthetic that sheds microscopic plastic fibers during washing
-C. Wool, which is a natural animal fiber
-D. Hemp, which requires minimal processing
-
-Correct Answer: B
-
-Feedback: Correct. Polyester is made from petroleum and sheds up to 700,000 microplastic fibers per wash load. These fibers are too small for water treatment plants to filter, accumulating in oceans, soil, food chains, and even human tissue, persisting for centuries. Consider which clothing materials are derived from petroleum. Synthetic fabrics like polyester are essentially plastic in fiber form. When washed, they shed microscopic plastic particles that enter the water system.
-
----
-
-### Question 3
-
-A life cycle assessment of clothing tracks environmental impact from which starting point to which ending point?
-
-A. From the retail store to the consumer's closet
-B. From raw material extraction through manufacturing, consumer use, and end-of-life disposal or recycling
-C. Only the manufacturing phase, which produces the most pollution
-D. From the consumer's purchase to their first washing of the garment
-
-Correct Answer: B
-
-Feedback: Correct. A life cycle assessment is a cradle-to-grave analysis that accounts for every stage: growing or extracting raw materials, processing and manufacturing, shipping, consumer use (including washing), and final disposal or recycling. Each stage contributes to the total environmental footprint. A life cycle assessment is meant to capture the TOTAL environmental impact. Consider all the stages a garment passes through from the moment raw materials are extracted from the earth to the moment the garment reaches its final destination (landfill, incinerator, or recycling facility).
-
----
-
-### Question 4
-
-The fashion industry produces over 100 billion garments per year for a global population of 8 billion. Which trend best describes the relationship between production volume and garment lifespan over the past 20 years?
-
-A. Production has increased while garment lifespan has decreased, with average garments worn only 7-10 times before disposal
-B. Production has decreased as consumers buy fewer, higher-quality items
-C. Both production and lifespan have increased proportionally
-D. Production has remained constant while lifespan has doubled due to better materials
-
-Correct Answer: A
-
-Feedback: Correct. Fast fashion has driven a dramatic increase in production volume while simultaneously reducing how long garments are worn. This combination maximizes waste: more garments produced, each worn fewer times, creating an accelerating stream of textile waste. Consider the fast fashion business model: low prices encourage frequent purchasing, trend cycles encourage rapid disposal, and low quality means garments do not last. How would these incentives affect both production volume and how long each item is used?
-
----
-
-### Question 5
-
-If a consumer extends a garment's lifespan from 10 wears to 50 wears, the per-wear environmental impact is reduced by what factor?
-
-A. It remains the same because the total impact was already created during manufacturing
-B. It is reduced by a factor of 5, because the fixed manufacturing impact is distributed across 5 times as many uses
-C. It doubles because the garment is washed more times
-D. It cannot be calculated without knowing the specific garment material
-
-Correct Answer: B
-
-Feedback: Correct. Most of a garment's environmental impact occurs during production (water, carbon, chemicals). By wearing it 5 times longer, that fixed production cost is amortized across 5 times more uses, reducing the per-wear impact by a factor of 5. This makes garment lifespan the most powerful lever consumers have. Think about the per-wear cost. If manufacturing a shirt uses 2,700 liters of water, wearing it 10 times means 270 liters per wear. Wearing it 50 times means 54 liters per wear. The fixed production cost is simply divided across more uses.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Production Volume, Material Type, Garment Lifespan, Water Consumption, Carbon Emissions, Textile Waste Generated. Some components are external (Production Volume, Material Type, Garment Lifespan) and some are internal (Water Consumption, Carbon Emissions, Textile Waste Generated). The student needs to understand what each component represents and how they are organized.
 
 A student's model simulation compares three scenarios over one year for 1,000 consumers. Fast fashion (100B garments/polyester/7 wears) produces 847,000 kg of textile waste. Sustainable wardrobe (50B garments/organic cotton/100 wears) produces 29,000 kg. Which factor contributes most to the 29x difference?
 
@@ -991,11 +916,15 @@ D. The difference in retail price between the two scenarios
 
 Correct Answer: B
 
-Feedback: Correct. The model shows garment lifespan is the dominant variable. A 14x increase in lifespan means each garment replaces 14 fast-fashion equivalents, reducing both production demand and waste generation multiplicatively. The 50% production cut is significant but secondary to the lifespan effect. Compare the magnitudes: production is halved (2x reduction), but lifespan increases 14x. In a waste model, each long-lasting garment replaces many short-lived ones. The compound effect of longer lifespan on both production needs and waste generation makes it the dominant factor.
+Feedback: Correct. The model shows garment lifespan is the dominant variable. A 14x increase in lifespan means each garment replaces 14 fast-fashion equivalents, reducing both production demand and waste generation multiplicatively. The 50% production cut is significant but secondary to the lifespan effect. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Production Volume increases, Carbon Emissions increases; when Material Type increases, Water Consumption increases. The student is trying to understand why these relationships are positive or negative.
 
 The circular fashion model shows that 70% fiber recycling reduces virgin material demand but does not eliminate it entirely. Based on the model, which factor prevents 100% circularity?
 
@@ -1006,11 +935,15 @@ D. The technology for textile recycling does not exist yet
 
 Correct Answer: B
 
-Feedback: Correct. Circular systems face inherent material losses at every step: collection inefficiency (not all garments are returned), sorting challenges (blended fabrics cannot be separated), and fiber degradation (each recycling cycle shortens fibers, reducing quality). These losses require virgin material inputs to maintain the system. Think about what happens at each step of the recycling process. Not all garments are collected. Mixed materials are hard to separate. Recycled fiber is shorter and weaker. Each of these losses means some virgin material must enter the system to replace what is lost.
+Feedback: Correct. Circular systems face inherent material losses at every step: collection inefficiency (not all garments are returned), sorting challenges (blended fabrics cannot be separated), and fiber degradation (each recycling cycle shortens fibers, reducing quality). These losses require virgin material inputs to maintain the system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Production Volume increases, Carbon Emissions increases and when Material Type increases, Water Consumption increases and when Garment Lifespan increases, Textile Waste Generated decreases. The student changes one variable to see how the whole system responds.
 
 A student argues that switching from polyester to organic cotton would solve the fashion industry's environmental problem. Based on the model, which critique of this argument is most accurate?
 
@@ -1021,11 +954,15 @@ D. Polyester is actually more sustainable than organic cotton in all categories
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that material substitution addresses some impacts (microplastics) but not others (water use, land use, carbon from manufacturing and shipping). The fundamental problem is the volume-lifespan equation: producing too many garments that are used too few times, regardless of material. Consider whether changing the material addresses the core problem of overproduction and underuse. Organic cotton has advantages (no microplastics, biodegradable) but still requires enormous resources per garment. If you still make 100 billion garments worn 7 times each, how much does the material change help?
+Feedback: Correct. The model shows that material substitution addresses some impacts (microplastics) but not others (water use, land use, carbon from manufacturing and shipping). The fundamental problem is the volume-lifespan equation: producing too many garments that are used too few times, regardless of material. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model reveals that the fashion industry produces 10% of global CO2 emissions, more than international flights and maritime shipping combined. A student identifies manufacturing and dyeing as the largest emission sources. Which intervention would the model predict to have the greatest impact on total fashion carbon emissions?
 
@@ -1036,11 +973,15 @@ D. Switching to electric delivery vehicles for last-mile retail distribution
 
 Correct Answer: B
 
-Feedback: Correct. Since manufacturing and dyeing are the largest emission sources, the most effective intervention is reducing how many garments need to be manufactured and dyed. Extending lifespan from 7 to 30 wears means producing roughly one-quarter as many garments, cutting the dominant emission sources by over 75%. If manufacturing and dyeing are the biggest carbon sources, which intervention most directly reduces the number of garments that need to be manufactured and dyed? Shipping and washing are smaller contributors. The leverage point is reducing total production volume.
+Feedback: Correct. Since manufacturing and dyeing are the largest emission sources, the most effective intervention is reducing how many garments need to be manufactured and dyed. Extending lifespan from 7 to 30 wears means producing roughly one-quarter as many garments, cutting the dominant emission sources by over 75%. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Production Volume, Material Type, Garment Lifespan), but they can take action on internal components (Water Consumption, Carbon Emissions, Textile Waste Generated). They need to decide which action would be most effective based on what the model shows.
 
 Based on the complete model analysis, a student proposes a fashion sustainability policy requiring all garments to display an 'environmental cost label' showing water use, carbon emissions, and expected lifespan. Which argument best supports this policy using model evidence?
 
@@ -1051,27 +992,18 @@ D. The model shows that consumer behavior has no impact on fashion's environment
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals massive hidden costs that are not reflected in price. A $5 shirt worn 7 times costs $0.71/wear plus enormous environmental externalities, while a $30 shirt worn 100 times costs $0.30/wear with a fraction of the impact. Without labels, consumers cannot make informed comparisons. The model showed that a $5 fast-fashion shirt is actually more expensive per wear AND more environmentally damaging than a $30 quality shirt. This counter-intuitive finding is invisible without data. Consider whether making this data visible would change purchasing decisions.
+Feedback: Correct. The model reveals massive hidden costs that are not reflected in price. A $5 shirt worn 7 times costs $0.71/wear plus enormous environmental externalities, while a $30 shirt worn 100 times costs $0.30/wear with a fraction of the impact. Without labels, consumers cannot make informed comparisons. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: A
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

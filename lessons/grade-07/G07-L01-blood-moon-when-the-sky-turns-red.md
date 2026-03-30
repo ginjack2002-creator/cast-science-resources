@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS1-1, MS-ESS1-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What causes the Moon to appear to change shape throughout the month?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS1-1, MS-ESS1-2 + CCC4 (Systems and System Models)
 
-A. Earth's shadow falls on different parts of the Moon each night
-B. We see different amounts of the Moon's sunlit side as it orbits Earth
-C. The Moon rotates and shows us different sides each night
-D. Clouds in Earth's atmosphere block parts of the Moon
-
-Correct Answer: B
-
-Feedback: Correct! As the Moon orbits Earth, the angle between the Sun, Moon, and Earth changes, so we see different amounts of the Moon's sunlit surface. Not quite. Moon phases are caused by seeing different portions of the Moon's sunlit side as it orbits Earth, not by Earth's shadow, rotation showing different sides, or clouds.
-
----
-
-### Question 2
-
-Where does the light we see from the Moon actually come from?
-
-A. The Moon generates its own light like a star
-B. The Moon glows because of radioactive minerals on its surface
-C. The Moon reflects light from the Sun
-D. Light from distant stars bounces off the Moon
-
-Correct Answer: C
-
-Feedback: Correct! The Moon has no light of its own. What we call moonlight is sunlight reflecting off the Moon's surface. Not quite. The Moon does not produce its own light. Moonlight is actually sunlight that reflects off the Moon's surface back toward Earth.
-
----
-
-### Question 3
-
-How long does it take the Moon to complete one full orbit around Earth?
-
-A. About 24 hours
-B. About 7 days
-C. About 29.5 days
-D. About 365 days
-
-Correct Answer: C
-
-Feedback: Correct! The Moon's orbital period is approximately 29.5 days, which is why the cycle of Moon phases repeats roughly every month. Not quite. The Moon takes about 29.5 days to orbit Earth once, which is why we see a full cycle of phases approximately every month.
-
----
-
-### Question 4
-
-What force keeps the Moon in orbit around Earth?
-
-A. Magnetism from Earth's core
-B. The push of solar wind from the Sun
-C. Gravity between Earth and the Moon
-D. The Moon's own spinning motion
-
-Correct Answer: C
-
-Feedback: Correct! Gravity is the attractive force between Earth and the Moon that keeps the Moon in a stable orbit. Not quite. Gravity is the force responsible for keeping the Moon in orbit around Earth. It is the attractive force between all objects with mass.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun Angle, Moon Position, Earth's Shadow, Visible Moon Phase. Some components are external (Sun Angle, Moon Position) and some are internal (Earth's Shadow, Visible Moon Phase). The student needs to understand what each component represents and how they are organized.
 
 During a lunar eclipse, the Moon appears red instead of disappearing completely. Which explanation best accounts for this observation?
 
@@ -967,11 +907,15 @@ D. Mars reflects red light onto the Moon during eclipse alignment
 
 Correct Answer: B
 
-Feedback: Correct! Earth's atmosphere acts like a lens, refracting red wavelengths of sunlight into the shadow zone. Blue and green wavelengths scatter away, but red light bends enough to reach the Moon. Not quite. During a lunar eclipse, Earth's atmosphere bends red wavelengths of sunlight into the shadow. It is essentially projecting all of Earth's sunsets onto the Moon at once.
+Feedback: Correct! Earth's atmosphere acts like a lens, refracting red wavelengths of sunlight into the shadow zone. Blue and green wavelengths scatter away, but red light bends enough to reach the Moon. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS1-1, MS-ESS1-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sun Angle increases, Visible Moon Phase increases; when s Shadow increases, Visible Moon Phase decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student claims that we should see a lunar eclipse every month during the full Moon. Why is this claim incorrect?
 
@@ -982,11 +926,15 @@ D. The Sun moves out of alignment with Earth and the Moon after each eclipse
 
 Correct Answer: B
 
-Feedback: Correct! Because the Moon's orbit is tilted about 5 degrees, the Moon usually passes above or below Earth's shadow during full Moon. Eclipses only occur when the Moon crosses the plane of Earth's orbit at the right time. Not quite. Eclipses are rare because the Moon's orbit is tilted about 5 degrees relative to Earth's orbital plane. Most months, the Moon passes above or below Earth's shadow.
+Feedback: Correct! Because the Moon's orbit is tilted about 5 degrees, the Moon usually passes above or below Earth's shadow during full Moon. Eclipses only occur when the Moon crosses the plane of Earth's orbit at the right time. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS1-1, MS-ESS1-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sun Angle increases, Visible Moon Phase increases and when s Shadow increases, Visible Moon Phase decreases. The student changes one variable to see how the whole system responds.
 
 In a model of the Earth-Moon-Sun system, a student sets the Moon's position directly between Earth and the Sun. What phase will the model predict?
 
@@ -997,11 +945,15 @@ D. Lunar eclipse, because the Moon is in Earth's shadow
 
 Correct Answer: C
 
-Feedback: Correct! When the Moon is between Earth and the Sun, the sunlit side faces away from us, making the Moon invisible from Earth. This is a new Moon. Not quite. When the Moon is positioned between Earth and the Sun, the side of the Moon that faces Earth is not illuminated. This configuration produces a new Moon.
+Feedback: Correct! When the Moon is between Earth and the Sun, the sunlit side faces away from us, making the Moon invisible from Earth. This is a new Moon. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS1-1, MS-ESS1-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which statement best describes the role of gravity in the Earth-Moon-Sun system?
 
@@ -1012,25 +964,37 @@ D. Gravity has no effect on the Moon because there is no air in space to transmi
 
 Correct Answer: B
 
-Feedback: Correct! Gravity is the fundamental force that maintains the orbital motions of the entire system. Without gravity, there would be no orbits, no phases, no eclipses, and no tides. Not quite. Gravity is the attractive force that keeps the Moon orbiting Earth and Earth orbiting the Sun. It acts continuously, not just during eclipses, and it works through empty space.
+Feedback: Correct! Gravity is the fundamental force that maintains the orbital motions of the entire system. Without gravity, there would be no orbits, no phases, no eclipses, and no tides. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS1-1, MS-ESS1-2 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun Angle, Moon Position), but they can take action on internal components (Earth's Shadow, Visible Moon Phase). They need to decide which action would be most effective based on what the model shows.
+
+What causes the Moon to appear to change shape throughout the month?
+
+A. Earth's shadow falls on different parts of the Moon each night
+B. We see different amounts of the Moon's sunlit side as it orbits Earth
+C. The Moon rotates and shows us different sides each night
+D. Clouds in Earth's atmosphere block parts of the Moon
+
+Correct Answer: B
+
+Feedback: Correct! As the Moon orbits Earth, the angle between the Sun, Moon, and Earth changes, so we see different amounts of the Moon's sunlit surface. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS1-1, MS-ESS1-2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS1-1, MS-ESS1-2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS1-1, MS-ESS1-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS1-1, MS-ESS1-2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS1-1, MS-ESS1-2, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

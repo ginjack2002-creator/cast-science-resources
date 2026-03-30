@@ -724,73 +724,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS3-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a flood?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.2 + CCC4 (Systems and System Models)
 
-A. When the sun comes out
-B. When too much water covers the ground
-C. When it snows
-
-Correct Answer: B
-
-Feedback: Yes! A flood is when too much water covers land that is usually dry. A flood happens when too much water covers the ground. Water gets so deep it covers roads and yards.
-
----
-
-### Question 2
-
-What causes a flood?
-
-A. Too much sunshine
-B. Too much wind
-C. Too much rain
-
-Correct Answer: C
-
-Feedback: Yes! Too much rain is the most common cause of floods. The ground cannot soak up all the water. Floods usually happen when too much rain falls. The water has nowhere to go, so it spreads out and covers the ground.
-
----
-
-### Question 3
-
-Can people do anything to stop water from flooding?
-
-A. No, we cannot do anything
-B. Yes, we can build walls to block the water
-C. Yes, we can make the rain stop
-
-Correct Answer: B
-
-Feedback: Yes! People can build walls, sandbags, and other barriers to block flood water. People cannot stop the rain, but they CAN build walls and barriers to block the water from reaching homes.
-
----
-
-### Question 4
-
-What happens after a big rainstorm?
-
-A. The ground gets very dry
-B. Big puddles and standing water appear
-C. The sky gets sunny right away
-
-Correct Answer: B
-
-Feedback: Yes! After a big rainstorm, there are big puddles and lots of water on the ground. After a big rainstorm, water collects on the ground as puddles. If there is too much water, it can become a flood.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Rain, Flood Level. Some components are external (Amount of Rain) and some are internal (Flood Level). The student needs to understand what each component represents and how they are organized.
 
 When the Amount of Rain goes UP, what happens to the Flood Level?
 
@@ -800,11 +744,15 @@ C. It stays the same
 
 Correct Answer: B
 
-Feedback: Yes! More rain means the flood level gets higher. That is a positive connection. When more rain falls, the flood level goes up. More water falls than the ground can soak up.
+Feedback: Yes! More rain means the flood level gets higher. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Rain increases, Flood Level increases. The student is trying to understand why these relationships are positive or negative.
 
 What is a barrier?
 
@@ -814,11 +762,15 @@ C. A type of cloud
 
 Correct Answer: B
 
-Feedback: Yes! A barrier blocks or stops water from going where it should not go, like toward homes. A barrier is something that blocks water. Sandbags and walls are barriers that stop flood water from reaching houses.
+Feedback: Yes! A barrier blocks or stops water from going where it should not go, like toward homes. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Amount of Rain increases, Flood Level increases. The student changes one variable to see how the whole system responds.
 
 What can people build to protect homes from floods?
 
@@ -828,11 +780,15 @@ C. Taller roofs
 
 Correct Answer: B
 
-Feedback: Yes! People build walls, sandbags, and levees to block flood water and keep homes safe. Walls, sandbags, and levees are barriers that block flood water. Engineers design these to protect people.
+Feedback: Yes! People build walls, sandbags, and levees to block flood water and keep homes safe. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is it important to know when a big storm is coming?
 
@@ -842,25 +798,36 @@ C. So we can water the plants
 
 Correct Answer: B
 
-Feedback: Yes! Knowing about storms helps people prepare by building barriers, moving to higher ground, and staying safe. Weather reports help people get ready before a big storm. They can build barriers and move to safe places.
+Feedback: Yes! Knowing about storms helps people prepare by building barriers, moving to higher ground, and staying safe. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Rain), but they can take action on internal components (Flood Level). They need to decide which action would be most effective based on what the model shows.
+
+What is a flood?
+
+A. When the sun comes out
+B. When too much water covers the ground
+C. When it snows
+
+Correct Answer: B
+
+Feedback: Yes! A flood is when too much water covers land that is usually dry. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

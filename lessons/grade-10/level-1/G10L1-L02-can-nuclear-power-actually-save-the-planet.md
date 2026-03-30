@@ -894,86 +894,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Nuclear power plants generate electricity through a process called fission. Which of the following best describes what occurs during nuclear fission?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.8 + CCC5 (Energy and Matter)
 
-A. Two light atomic nuclei combine to form a heavier nucleus, releasing energy.
-B. A heavy atomic nucleus splits into two lighter nuclei, releasing a large amount of energy.
-C. Electrons are stripped from uranium atoms, and the free electrons flow as electric current.
-D. Uranium atoms burn in oxygen like fossil fuels, producing heat to generate steam.
-
-Correct Answer: B
-
-Feedback: Correct. Nuclear fission involves splitting heavy nuclei (such as uranium-235) into lighter elements, releasing enormous energy from the conversion of a small amount of mass according to E=mc^2. Incorrect. Fission is the splitting of a heavy nucleus into lighter nuclei. This is distinct from fusion (combining nuclei), chemical combustion, or electron stripping.
-
----
-
-### Question 2
-
-Compared to burning coal, nuclear fission produces approximately how much more energy per kilogram of fuel?
-
-A. About 10 times more energy.
-B. About 1,000 times more energy.
-C. About 2 million times more energy.
-D. About the same amount of energy, but with less pollution.
-
-Correct Answer: C
-
-Feedback: Correct. Nuclear fission releases roughly 2 million times more energy per kilogram than chemical combustion of coal, making nuclear fuel extraordinarily energy-dense. Incorrect. The energy density difference between nuclear fuel and coal is enormous. A single uranium fuel pellet produces as much energy as approximately one ton of coal.
-
----
-
-### Question 3
-
-Which of the following is the primary environmental concern associated with nuclear power generation?
-
-A. Large quantities of carbon dioxide emissions during normal operation.
-B. Radioactive waste that remains hazardous for thousands to hundreds of thousands of years.
-C. Destruction of the ozone layer from radiation leaks.
-D. Consumption of large quantities of fossil fuels to enrich uranium.
-
-Correct Answer: B
-
-Feedback: Correct. The primary environmental challenge of nuclear power is the production of radioactive waste, particularly spent fuel containing isotopes that remain dangerous for extremely long periods. Incorrect. Nuclear power produces virtually no CO2 during operation. The main concern is long-lived radioactive waste that must be securely stored for thousands of years.
-
----
-
-### Question 4
-
-The half-life of a radioactive isotope is 30 years. If a sample starts with 1,000 grams of the isotope, approximately how much will remain after 90 years?
-
-A. 500 grams
-B. 250 grams
-C. 125 grams
-D. 0 grams
-
-Correct Answer: C
-
-Feedback: Correct. After 3 half-lives (90 years / 30 years each): 1,000 -> 500 -> 250 -> 125 grams. Each half-life reduces the remaining quantity by exactly half. Incorrect. After 3 half-lives (90/30 = 3), the calculation is: 1,000 x (1/2)^3 = 125 grams. Each half-life halves the remaining amount.
-
----
-
-### Question 5
-
-When evaluating energy sources for reducing climate change, which factor makes nuclear power a strong candidate despite its drawbacks?
-
-A. Nuclear power plants can be built quickly and cheaply compared to renewable energy.
-B. Nuclear power produces near-zero carbon emissions during operation while providing reliable baseload electricity.
-C. Nuclear waste can be safely recycled into new fuel indefinitely.
-D. Nuclear power requires no water for cooling, minimizing environmental impact.
-
-Correct Answer: B
-
-Feedback: Correct. Nuclear power's lifecycle carbon emissions (~12 g CO2/kWh) are comparable to wind power and far below fossil fuels, while providing consistent 24/7 baseload power independent of weather. Incorrect. Nuclear power's key advantage for climate is its near-zero operational carbon emissions combined with its ability to provide reliable baseload power around the clock, unlike intermittent renewable sources.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Uranium Fuel Supply, Fission Rate, Energy Output, Radioactive Waste, Carbon Emissions Avoided. Some components are external (Uranium Fuel Supply) and some are internal (Fission Rate, Energy Output, Radioactive Waste, Carbon Emissions Avoided). The student needs to understand what each component represents and how they are organized.
 
 In the computational model, when Fission Rate is increased, both Energy Output and Radioactive Waste increase proportionally. What does this relationship reveal about nuclear power as an energy source?
 
@@ -984,11 +909,15 @@ D. The relationship is coincidental and would not hold in a real reactor.
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that energy and waste are coupled outputs of fission. Every atom that splits produces both useful energy and radioactive fission products. You cannot have one without the other. Incorrect. The model shows a fundamental physical reality: fission simultaneously produces energy and radioactive waste. These are inseparable products of the same nuclear reaction.
+Feedback: Correct. The model demonstrates that energy and waste are coupled outputs of fission. Every atom that splits produces both useful energy and radioactive fission products. You cannot have one without the other. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.8 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Uranium Fuel Supply increases, Fission Rate increases; when Fission Rate increases, Energy Output increases. The student is trying to understand why these relationships are positive or negative.
 
 A student uses the model to compare nuclear and natural gas electricity generation. The nuclear plant avoids 4 million tons of CO2 annually but produces 20 metric tons of radioactive waste. Which analysis best evaluates this trade-off?
 
@@ -999,11 +928,15 @@ D. The trade-off cannot be evaluated because the risks operate on different time
 
 Correct Answer: A
 
-Feedback: Correct. This captures the central trade-off: nuclear waste is small in volume but long-lived in hazard, while carbon avoidance is massive in scale and provides immediate climate benefits. Both factors must be weighed. Incorrect. Evaluating this trade-off requires considering both the scale and timescale of each impact. The waste is small-volume but long-term; the carbon avoidance is large-scale and addresses an urgent crisis.
+Feedback: Correct. This captures the central trade-off: nuclear waste is small in volume but long-lived in hazard, while carbon avoidance is massive in scale and provides immediate climate benefits. Both factors must be weighed. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.8 + CCC5 (Energy and Matter)
+
+A student runs a simulation of the model. The model shows that when Uranium Fuel Supply increases, Fission Rate increases and when Fission Rate increases, Energy Output increases and when Fission Rate increases, Radioactive Waste increases. The student changes one variable to see how the whole system responds.
 
 The model shows that reducing the Fission Rate to 50% decreases Energy Output proportionally. A policy analyst argues this means nuclear plants should always run at full power. Which limitation of this argument does the model reveal?
 
@@ -1014,11 +947,15 @@ D. Reduced power operation actually increases efficiency by allowing better neut
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that waste scales proportionally with energy output. Running at full power maximizes both energy and waste. The analyst's argument ignores the waste side of the trade-off. Incorrect. The key insight is that the waste-to-energy ratio is constant regardless of power level. The argument for full power ignores that waste generation also increases proportionally.
+Feedback: Correct. The model shows that waste scales proportionally with energy output. Running at full power maximizes both energy and waste. The analyst's argument ignores the waste side of the trade-off. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.8 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Germany phased out nuclear power after Fukushima, and its carbon emissions subsequently increased because it burned more coal. Based on the model, which conclusion is best supported?
 
@@ -1029,11 +966,15 @@ D. Germany's decision was purely political and had no scientific basis.
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that energy portfolio decisions are interconnected. Removing one source (nuclear) without adequate zero-carbon replacement forces increased reliance on fossil fuels, increasing emissions. Incorrect. The model supports the principle that energy systems are interconnected. Removing nuclear capacity without equivalent zero-carbon replacement creates a gap that fossil fuels typically fill, increasing emissions.
+Feedback: Correct. The model demonstrates that energy portfolio decisions are interconnected. Removing one source (nuclear) without adequate zero-carbon replacement forces increased reliance on fossil fuels, increasing emissions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.8 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Uranium Fuel Supply), but they can take action on internal components (Fission Rate, Energy Output, Radioactive Waste, Carbon Emissions Avoided). They need to decide which action would be most effective based on what the model shows.
 
 Using the model's Fuel Depletion scenario, a single reactor fuel load produces tens of billions of kWh while generating approximately 20 tons of spent fuel. Which statement best characterizes nuclear fuel's energy density based on this evidence?
 
@@ -1044,27 +985,18 @@ D. The energy density depends entirely on reactor design rather than the propert
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates nuclear fuel's extraordinary energy density: a single fuel pellet the size of a pencil eraser produces as much energy as a ton of coal, making it roughly 2 million times more energy-dense than chemical fuels. Incorrect. The model data shows that nuclear fuel produces enormous energy from small quantities of material. This extreme energy density is a fundamental property of nuclear versus chemical reactions.
+Feedback: Correct. The model demonstrates nuclear fuel's extraordinary energy density: a single fuel pellet the size of a pencil eraser produces as much energy as a ton of coal, making it roughly 2 million times more energy-dense than chemical fuels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC5)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC5)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC5)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

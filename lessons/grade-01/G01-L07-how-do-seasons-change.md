@@ -730,73 +730,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-ESS1-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Which season is usually the hottest?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.2 + CCC4 (Systems and System Models)
 
-A. Winter
-B. Fall
-C. Summer
-
-Correct Answer: C
-
-Feedback: Yes! Summer is usually the hottest season because the sun shines the longest. Summer is the warmest season. The sun stays out for many hours each day in summer.
-
----
-
-### Question 2
-
-What are the four seasons?
-
-A. Morning, noon, evening, night
-B. Spring, summer, fall, winter
-C. Hot, cold, warm, cool
-
-Correct Answer: B
-
-Feedback: That is right! The four seasons are spring, summer, fall, and winter. The four seasons are spring, summer, fall, and winter. They repeat in the same order every year.
-
----
-
-### Question 3
-
-In winter, the sun goes down early. What does that mean?
-
-A. There is more daylight
-B. There is less daylight
-C. The sun is broken
-
-Correct Answer: B
-
-Feedback: Yes! In winter, the sun is out for fewer hours, so there is less daylight. When the sun goes down early, it means there are fewer hours of sunlight. That is why winter days feel short.
-
----
-
-### Question 4
-
-Do the seasons come in the same order every year?
-
-A. No, they are random
-B. Yes, it is always the same order
-C. Sometimes they skip a season
-
-Correct Answer: B
-
-Feedback: That is right! Seasons always go spring, summer, fall, winter, then start over. Seasons follow a pattern. They always come in the same order: spring, summer, fall, winter.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Daylight, Temperature. Some components are external (Amount of Daylight) and some are internal (Temperature). The student needs to understand what each component represents and how they are organized.
 
 Why is it hotter in summer than in winter?
 
@@ -806,11 +750,15 @@ C. People turn on the heat in summer
 
 Correct Answer: B
 
-Feedback: Yes! In summer, the sun shines for more hours, warming the Earth more. That is why it is hotter. Summer has more hours of daylight, so the sun warms the Earth for a longer time each day.
+Feedback: Yes! In summer, the sun shines for more hours, warming the Earth more. That is why it is hotter. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Daylight increases, Temperature increases. The student is trying to understand why these relationships are positive or negative.
 
 When the amount of daylight goes UP, what happens to temperature?
 
@@ -820,11 +768,15 @@ C. Temperature goes up
 
 Correct Answer: C
 
-Feedback: That is right! More daylight means more sun warming the Earth, so the temperature goes up. More hours of sunshine means the Earth gets warmer. More daylight equals higher temperature.
+Feedback: That is right! More daylight means more sun warming the Earth, so the temperature goes up. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Amount of Daylight increases, Temperature increases. The student changes one variable to see how the whole system responds.
 
 Which season has the LEAST daylight?
 
@@ -834,11 +786,15 @@ C. Winter
 
 Correct Answer: C
 
-Feedback: Yes! Winter has the fewest hours of daylight, which is why it is the coldest season. Winter days are the shortest. The sun is out for fewer hours, so it is cold.
+Feedback: Yes! Winter has the fewest hours of daylight, which is why it is the coldest season. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.2 + CCC1 (Patterns)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 What is a pattern that the seasons follow?
 
@@ -848,25 +804,36 @@ C. Summer, summer, winter, winter
 
 Correct Answer: B
 
-Feedback: That is right! The seasons always go in the order: spring, summer, fall, winter. This pattern repeats every year. The seasons follow a repeating pattern: spring, summer, fall, winter, then it starts again.
+Feedback: That is right! The seasons always go in the order: spring, summer, fall, winter. This pattern repeats every year. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Daylight), but they can take action on internal components (Temperature). They need to decide which action would be most effective based on what the model shows.
+
+Which season is usually the hottest?
+
+A. Winter
+B. Fall
+C. Summer
+
+Correct Answer: C
+
+Feedback: Yes! Summer is usually the hottest season because the sun shines the longest. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.2, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.2, CCC1)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS2-1, MS-LS2-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Coral reefs are sometimes called 'rainforests of the sea.' What does this comparison most likely refer to?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS2-1, MS-LS2-4 + CCC4 (Systems and System Models)
 
-A. Both receive a lot of rainfall
-B. Both support an extremely high diversity of species
-C. Both are located in tropical land environments
-D. Both are made entirely of plants
-
-Correct Answer: B
-
-Feedback: Correct! Coral reefs, like tropical rainforests, support an extraordinary diversity of life. Reefs host roughly 25% of all marine species despite covering less than 1% of the ocean floor. The comparison refers to biodiversity. Coral reefs support roughly 25% of all marine species, making them one of the most species-rich ecosystems on Earth, similar to rainforests on land.
-
----
-
-### Question 2
-
-Which of the following best describes coral?
-
-A. A type of colorful underwater rock
-B. A plant that grows on the ocean floor
-C. A colony of tiny animals called polyps
-D. A type of seaweed with a hard outer shell
-
-Correct Answer: C
-
-Feedback: Correct! Coral is an animal. Each coral colony is made up of thousands of tiny polyps that are related to jellyfish and sea anemones. Despite looking like rocks or plants, coral is actually an animal. Coral colonies are made up of thousands of tiny polyps, which are invertebrate animals related to jellyfish.
-
----
-
-### Question 3
-
-What is symbiosis?
-
-A. When one organism hunts and eats another
-B. A close, long-term relationship between two different species
-C. When organisms compete for the same resources
-D. The process of organisms adapting to a new environment
-
-Correct Answer: B
-
-Feedback: Correct! Symbiosis describes a close and long-term biological interaction between two different species, which can be mutualistic, parasitic, or commensal. Symbiosis is not predation or competition. It specifically refers to a close, long-term relationship between two different species that live in close association.
-
----
-
-### Question 4
-
-How might rising ocean temperatures affect organisms that live in the sea?
-
-A. Warmer water always helps marine organisms grow faster
-B. Temperature changes have no effect on marine organisms because water stays the same temperature
-C. Organisms adapted to specific temperature ranges may become stressed if temperatures change beyond their tolerance
-D. Only land organisms are affected by temperature changes
-
-Correct Answer: C
-
-Feedback: Correct! Marine organisms are adapted to specific temperature ranges. When temperatures exceed their tolerance, they can become stressed, which may disrupt feeding, reproduction, or survival. Marine organisms are highly sensitive to temperature. Many are adapted to narrow ranges, and even small increases (1-2 degrees Celsius) can cause significant stress, disrupting biological processes.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Ocean Temperature, Ocean Acidity (pH), Zooxanthellae Population, Coral Health. Some components are external (Ocean Temperature, Ocean Acidity (pH)) and some are internal (Zooxanthellae Population, Coral Health). The student needs to understand what each component represents and how they are organized.
 
 In your model, when Ocean Temperature was increased +3 degrees Celsius, Zooxanthellae Population dropped first, and then Coral Health declined. What type of ecological relationship does this sequence demonstrate?
 
@@ -967,11 +907,15 @@ D. Parasitism where zooxanthellae harm coral when temperatures rise
 
 Correct Answer: B
 
-Feedback: Correct! This is a trophic cascade. The temperature disrupts the coral-zooxanthellae symbiosis first (zooxanthellae expelled), which then cascades to affect coral health because coral depends on zooxanthellae for up to 90% of its energy. The sequence shows a cascade effect. Temperature stress does not make coral eat zooxanthellae or turn the relationship parasitic. It disrupts the mutualistic symbiosis, and because coral depends on zooxanthellae for energy, the coral then declines.
+Feedback: Correct! This is a trophic cascade. The temperature disrupts the coral-zooxanthellae symbiosis first (zooxanthellae expelled), which then cascades to affect coral health because coral depends on zooxanthellae for up to 90% of its energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS2-1, MS-LS2-4 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Ocean Temperature increases, Zooxanthellae Population decreases; when Ocean Acidity increases, Coral Health decreases. The student is trying to understand why these relationships are positive or negative.
 
 Your model showed that the 'Double Threat' scenario (increased temperature AND acidity) caused far worse coral decline than temperature alone. Which explanation best accounts for this?
 
@@ -982,11 +926,15 @@ D. The model was inaccurate because in reality these factors do not interact
 
 Correct Answer: B
 
-Feedback: Correct! The two stressors attack the coral system through different pathways: temperature disrupts the energy supply (zooxanthellae), while acidity weakens the physical structure (skeleton). Together, recovery becomes nearly impossible. The double threat is worse because the two factors target different vulnerabilities. Temperature causes bleaching (energy loss), while acidification weakens the calcium carbonate skeleton. These simultaneous attacks through different pathways make recovery far more difficult.
+Feedback: Correct! The two stressors attack the coral system through different pathways: temperature disrupts the energy supply (zooxanthellae), while acidity weakens the physical structure (skeleton). Together, recovery becomes nearly impossible. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS2-1, MS-LS2-4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Ocean Temperature increases, Zooxanthellae Population decreases and when Ocean Acidity increases, Coral Health decreases and when Zooxanthellae Population increases, Coral Health increases. The student changes one variable to see how the whole system responds.
 
 A marine biologist observes that a reef bleached during a heat wave but recovered six months later when temperatures returned to normal. Which component of the model best explains the recovery?
 
@@ -997,11 +945,15 @@ D. The ocean became more acidic, which helped coral rebuild
 
 Correct Answer: C
 
-Feedback: Correct! Bleached coral is stressed and starving but not necessarily dead. If conditions return to normal quickly enough, zooxanthellae can recolonize the coral tissue, restoring the energy supply and allowing recovery. Bleaching occurs when coral expels its zooxanthellae under heat stress. The coral is still alive during early bleaching. Recovery happens when temperatures drop and zooxanthellae return to the coral tissue, restoring the mutualistic energy supply.
+Feedback: Correct! Bleached coral is stressed and starving but not necessarily dead. If conditions return to normal quickly enough, zooxanthellae can recolonize the coral tissue, restoring the energy supply and allowing recovery. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS2-1, MS-LS2-4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on your model, which intervention would most effectively protect coral reefs in the long term?
 
@@ -1012,25 +964,37 @@ D. Adding more salt to the ocean to increase its buffering capacity
 
 Correct Answer: B
 
-Feedback: Correct! Since CO2 drives both ocean warming (through the greenhouse effect) and ocean acidification (CO2 dissolving in seawater), reducing emissions addresses the root causes of both external stressors in the model. The model shows that temperature and acidity are the external drivers of reef decline, and both are linked to CO2. Reducing emissions is the only option that addresses the root cause of both stressors simultaneously.
+Feedback: Correct! Since CO2 drives both ocean warming (through the greenhouse effect) and ocean acidification (CO2 dissolving in seawater), reducing emissions addresses the root causes of both external stressors in the model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS2-1, MS-LS2-4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Ocean Temperature, Ocean Acidity (pH)), but they can take action on internal components (Zooxanthellae Population, Coral Health). They need to decide which action would be most effective based on what the model shows.
+
+Coral reefs are sometimes called 'rainforests of the sea.' What does this comparison most likely refer to?
+
+A. Both receive a lot of rainfall
+B. Both support an extremely high diversity of species
+C. Both are located in tropical land environments
+D. Both are made entirely of plants
+
+Correct Answer: B
+
+Feedback: Correct! Coral reefs, like tropical rainforests, support an extraordinary diversity of life. Reefs host roughly 25% of all marine species despite covering less than 1% of the ocean floor. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS2-1, MS-LS2-4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS2-1, MS-LS2-4, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS2-1, MS-LS2-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS2-1, MS-LS2-4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS2-1, MS-LS2-4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

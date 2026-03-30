@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-ESS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Are all rocks the same?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.1 + CCC4 (Systems and System Models)
 
-A. Yes, all rocks are exactly alike
-B. No, there are many different kinds of rocks that look and feel different
-C. Yes, rocks are just gray and hard
-D. No, but there are only two kinds of rocks
-
-Correct Answer: B
-
-Feedback: That is right! Rocks come in many different types. Some are smooth, some are rough, some are sparkly, and some have layers. Each type formed in a different way. Rocks are very different from each other. Some are smooth from river water, some are rough from volcanoes, and some have colorful layers. Each rock formed from a different event on Earth.
-
----
-
-### Question 2
-
-What do you think is inside a mountain?
-
-A. Empty space like a cave
-B. Layers of rock stacked on top of each other
-C. Just dirt all the way through
-D. Water all the way through
-
-Correct Answer: B
-
-Feedback: Yes! If you could cut a mountain in half, you would see layers of rock stacked on top of each other, like pages in a book. Each layer formed at a different time. Mountains are made of layers of rock. If you could slice a mountain in half, you would see different layers stacked up. Each layer was formed at a different time by different events.
-
----
-
-### Question 3
-
-Can rocks change over time?
-
-A. No, rocks never change
-B. Yes, but only if people break them
-C. Yes, wind and water can slowly change rocks over a very long time
-D. Rocks change every day
-
-Correct Answer: C
-
-Feedback: Correct! Wind and water slowly wear down rocks over thousands and millions of years. This process is called erosion. Rocks do change, but usually very slowly. Over thousands and millions of years, wind and water wear rocks down, breaking off tiny pieces and carrying them away. This slow change is called erosion.
-
----
-
-### Question 4
-
-What is a volcano?
-
-A. A type of cloud
-B. An opening in the Earth where hot melted rock comes out
-C. A very tall tree
-D. A deep lake
-
-Correct Answer: B
-
-Feedback: That is right! A volcano is an opening in the Earth's surface where hot melted rock called lava comes out. When the lava cools, it makes new rock. A volcano is a place where hot melted rock from deep inside the Earth comes up to the surface. The hot liquid rock is called lava, and when it cools down, it hardens into new rock.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Earth Event, Rock Type, Rock Layer Pattern. Some components are external (Earth Event) and some are internal (Rock Type, Rock Layer Pattern). The student needs to understand what each component represents and how they are organized.
 
 Which rock layer is the oldest in a stack of rock layers?
 
@@ -904,11 +844,15 @@ D. They are all the same age
 
 Correct Answer: C
 
-Feedback: Correct! The bottom layer is the oldest because it formed first. Each new layer settles on top, so the top layer is the newest. Rock layers build up from the bottom. The bottom layer was deposited first, making it the oldest. Each layer on top formed later. Reading layers from bottom to top is like reading a book from beginning to end.
+Feedback: Correct! The bottom layer is the oldest because it formed first. Each new layer settles on top, so the top layer is the newest. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Earth Event (slow) increases, Rock Type increases; when Earth Event (fast) increases, Rock Type increases. The student is trying to understand why these relationships are positive or negative.
 
 A scientist finds smooth, round rocks at the bottom of a valley. What Earth event most likely shaped these rocks?
 
@@ -919,11 +863,15 @@ D. A lightning strike
 
 Correct Answer: B
 
-Feedback: Yes! Smooth, round rocks are shaped by water flowing over them for a very long time. A river slowly wears down the rough edges, making rocks smooth and round. Smooth, round rocks are a clue that water shaped them. Rivers flow over rocks for thousands of years, slowly wearing down rough edges and making them smooth and round. This is a slow Earth event.
+Feedback: Yes! Smooth, round rocks are shaped by water flowing over them for a very long time. A river slowly wears down the rough edges, making rocks smooth and round. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Earth Event (slow) increases, Rock Type increases and when Earth Event (fast) increases, Rock Type increases. The student changes one variable to see how the whole system responds.
 
 What is the difference between a fast Earth event and a slow Earth event?
 
@@ -934,11 +882,15 @@ D. Fast events only happen at night
 
 Correct Answer: B
 
-Feedback: Correct! Fast Earth events like volcanic eruptions happen in minutes or hours. Slow Earth events like erosion and sediment building up take thousands or millions of years. Both leave evidence in rocks. Some Earth events happen quickly (volcanoes erupt, earthquakes shake) while others take a very long time (rivers carve canyons, wind wears down rock). Both fast and slow events leave evidence in the rocks they create.
+Feedback: Correct! Fast Earth events like volcanic eruptions happen in minutes or hours. Slow Earth events like erosion and sediment building up take thousands or millions of years. Both leave evidence in rocks. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 What is sediment?
 
@@ -949,25 +901,37 @@ D. Water that is very dirty
 
 Correct Answer: C
 
-Feedback: That is right! Sediment is made up of tiny pieces of rock, sand, and soil. When sediment settles in layers and gets pressed together over millions of years, it becomes sedimentary rock. Sediment is tiny pieces of rock, sand, and soil that have been broken off by wind, water, or ice. When these tiny pieces settle in layers and get pressed together over a very long time, they can turn into new rock.
+Feedback: That is right! Sediment is made up of tiny pieces of rock, sand, and soil. When sediment settles in layers and gets pressed together over millions of years, it becomes sedimentary rock. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Earth Event), but they can take action on internal components (Rock Type, Rock Layer Pattern). They need to decide which action would be most effective based on what the model shows.
+
+Are all rocks the same?
+
+A. Yes, all rocks are exactly alike
+B. No, there are many different kinds of rocks that look and feel different
+C. Yes, rocks are just gray and hard
+D. No, but there are only two kinds of rocks
+
+Correct Answer: B
+
+Feedback: That is right! Rocks come in many different types. Some are smooth, some are rough, some are sparkly, and some have layers. Each type formed in a different way. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

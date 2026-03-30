@@ -824,77 +824,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS2-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-How do seeds get to new places if plants cannot walk?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.2 + CCC4 (Systems and System Models)
 
-A. Seeds can only grow right under the parent plant
-B. People must plant every seed by hand
-C. Wind, water, and animals can carry seeds to new places
-D. Seeds walk to new places when nobody is watching
-
-Correct Answer: C
-
-Feedback: That is right! Wind, water, and animals are all ways seeds travel to new places, even though the parent plant cannot move. Plants cannot walk, but seeds have amazing ways to travel. Wind blows fluffy seeds, water carries floating seeds, and animals carry seeds on their fur or in their bellies.
-
----
-
-### Question 2
-
-What happens when you blow on a dandelion puff?
-
-A. Nothing happens
-B. The seeds float away in the air
-C. The seeds get heavier
-D. The flower grows bigger
-
-Correct Answer: B
-
-Feedback: Yes! Dandelion seeds have fluffy tops that catch the air, so when you blow on them, they float away like tiny parachutes. Dandelion seeds are light and fluffy. When you blow on them, the air carries them away. The fluffy part acts like a parachute and helps the seed float to a new place.
-
----
-
-### Question 3
-
-Why would it be a problem if all seeds fell right under the parent plant?
-
-A. It would be fine because they would all grow together
-B. They would be too crowded and not have enough sun and water
-C. The seeds would be happier together
-D. The parent plant would eat the seeds
-
-Correct Answer: B
-
-Feedback: Correct! If all seeds fell in the same spot, they would be too crowded. They would compete for sunlight, water, and space, and many would not survive. If too many seeds grow in one spot, they have to share sunlight, water, and nutrients. This is called competition. Seeds travel away so they can find their own spot with enough resources to grow.
-
----
-
-### Question 4
-
-Which seed shape would help a seed travel far in the wind?
-
-A. Heavy and round like a marble
-B. Light and fluffy like a feather
-C. Square and flat like a book
-D. Sticky like tape
-
-Correct Answer: B
-
-Feedback: That is right! Light, fluffy seeds catch the wind and float far away, just like dandelion seeds or cottonwood fluff. For wind travel, seeds need to be light and catch the air. Fluffy or winged shapes stay in the air longer and travel farther. Heavy round seeds just drop to the ground.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Seed Shape, Wind Interaction, Travel Distance. Some components are external (Seed Shape, Wind Interaction) and some are internal (Travel Distance). The student needs to understand what each component represents and how they are organized.
 
 What is seed dispersal?
 
@@ -905,11 +845,15 @@ D. When plants grow taller
 
 Correct Answer: B
 
-Feedback: Yes! Seed dispersal is when seeds move away from the parent plant to a new place where they can grow. Seed dispersal means seeds moving AWAY from the parent plant. Seeds travel to new places using wind, water, or animals so they can find a good spot to grow.
+Feedback: Yes! Seed dispersal is when seeds move away from the parent plant to a new place where they can grow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Wind Interaction increases, Travel Distance increases. The student is trying to understand why these relationships are positive or negative.
 
 A dandelion seed has a fluffy top. An acorn is heavy and round. Which one will travel farther in the wind?
 
@@ -920,11 +864,15 @@ D. Neither one can travel in the wind
 
 Correct Answer: C
 
-Feedback: Correct! The dandelion seed's fluffy top catches the wind like a parachute, helping it float far away. The heavy acorn cannot float and just drops to the ground. Fluffy shapes catch the wind and stay in the air longer. The dandelion seed floats far because its fluffy top acts like a parachute. The heavy acorn falls straight down because the wind cannot carry it.
+Feedback: Correct! The dandelion seed's fluffy top catches the wind like a parachute, helping it float far away. The heavy acorn cannot float and just drops to the ground. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Wind Interaction increases, Travel Distance increases. The student changes one variable to see how the whole system responds.
 
 What is an adaptation?
 
@@ -935,11 +883,15 @@ D. A kind of weather
 
 Correct Answer: B
 
-Feedback: That is right! An adaptation is a body part or feature that helps a living thing survive. Fluffy tops on seeds and wings on maple seeds are adaptations for wind travel. An adaptation is a special body part or feature that helps a living thing survive. Seeds have adaptations like fluff, wings, or hooks that help them travel to new places.
+Feedback: That is right! An adaptation is a body part or feature that helps a living thing survive. Fluffy tops on seeds and wings on maple seeds are adaptations for wind travel. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In our model, what happened to Travel Distance when the Seed Shape was fluffy and there was wind?
 
@@ -950,25 +902,37 @@ D. The seed could not move
 
 Correct Answer: B
 
-Feedback: Correct! When the Seed Shape was fluffy and there was wind, Travel Distance was far. The fluffy shape catches the air and helps the seed float a long way. In our model, fluffy seeds with wind traveled far because the fluffy shape catches the air. This is a positive relationship: more fluffiness plus wind equals more travel distance.
+Feedback: Correct! When the Seed Shape was fluffy and there was wind, Travel Distance was far. The fluffy shape catches the air and helps the seed float a long way. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Seed Shape, Wind Interaction), but they can take action on internal components (Travel Distance). They need to decide which action would be most effective based on what the model shows.
+
+How do seeds get to new places if plants cannot walk?
+
+A. Seeds can only grow right under the parent plant
+B. People must plant every seed by hand
+C. Wind, water, and animals can carry seeds to new places
+D. Seeds walk to new places when nobody is watching
+
+Correct Answer: C
+
+Feedback: That is right! Wind, water, and animals are all ways seeds travel to new places, even though the parent plant cannot move. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

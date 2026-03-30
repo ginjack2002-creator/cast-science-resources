@@ -167,77 +167,17 @@ Hydrologists study how water moves through the environment — where it flows, w
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4, MS-ESS3-3.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What happens to rain when it falls on a grassy field?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. It bounces back up into the sky
-B. It soaks into the ground
-C. It turns into ice immediately
-D. It disappears completely
-
-Correct Answer: B
-
-Feedback: Yes! When rain falls on a grassy field, much of it soaks into the soil. The ground acts like a sponge and absorbs the water. When rain hits a grassy field, the soil absorbs it like a sponge. The water soaks down into the ground where plant roots can use it.
-
----
-
-### Question 2
-
-What happens to rain when it falls on a parking lot?
-
-A. It soaks into the pavement
-B. It evaporates instantly
-C. It flows across the surface as runoff
-D. It stays in one spot and never moves
-
-Correct Answer: C
-
-Feedback: Correct! Pavement does not absorb water, so rain flows across the surface as runoff, often collecting in low spots or drains. Pavement cannot absorb water the way soil does. Instead, rain flows across the hard surface as runoff, moving toward drains, gutters, and low spots.
-
----
-
-### Question 3
-
-Why do some neighborhoods have more flooding problems than others?
-
-A. Because it rains more in some neighborhoods
-B. Because some neighborhoods have more pavement and less soil to absorb water
-C. Because floods only happen near the ocean
-D. Because some people leave their sprinklers on
-
-Correct Answer: B
-
-Feedback: Yes! Neighborhoods with more pavement and less natural ground have more flooding because the water has no place to soak in. Flooding is often worse in areas with more pavement. When natural ground is replaced with roads, parking lots, and buildings, rainwater cannot soak in and instead runs off the surface, causing floods.
-
----
-
-### Question 4
-
-What does 'permeable' mean?
-
-A. Something that is very hard and strong
-B. Something that lets water pass through it
-C. Something that is colorful
-D. Something that floats on water
-
-Correct Answer: B
-
-Feedback: Correct! Permeable means a surface lets water pass through it, like soil or gravel. Permeable means a surface allows water to pass through it. Soil and gravel are permeable because water can soak through them. Pavement is impermeable because it blocks water.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Ground Type, Rainfall Amount, Water Absorbed, Runoff. Some components are external (Ground Type, Rainfall Amount) and some are internal (Water Absorbed, Runoff). The student needs to understand what each component represents and how they are organized.
 
 What is the difference between a permeable and an impermeable surface?
 
@@ -248,11 +188,15 @@ D. There is no difference between them
 
 Correct Answer: B
 
-Feedback: That is right! Permeable surfaces like soil let water soak through, while impermeable surfaces like pavement block water from passing through. Permeable surfaces (like soil and gravel) allow water to pass through and soak in. Impermeable surfaces (like pavement and rock) block water from passing through, causing it to flow across the surface as runoff.
+Feedback: That is right! Permeable surfaces like soil let water soak through, while impermeable surfaces like pavement block water from passing through. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Ground Type increases, Water Absorbed decreases; when Ground Type increases, Runoff decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, what happened to runoff when the ground type was changed from soil to pavement?
 
@@ -263,11 +207,15 @@ D. Runoff and absorption both increased equally
 
 Correct Answer: C
 
-Feedback: Correct! The model showed that runoff increased dramatically on pavement because the impermeable surface cannot absorb water, forcing it all to flow across the surface. The model showed that switching from soil to pavement caused a large increase in runoff. Pavement is impermeable, meaning it blocks water from soaking in, so nearly all rain becomes runoff that flows across the surface.
+Feedback: Correct! The model showed that runoff increased dramatically on pavement because the impermeable surface cannot absorb water, forcing it all to flow across the surface. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Ground Type increases, Water Absorbed decreases and when Ground Type increases, Runoff decreases and when Rainfall Amount increases, Water Absorbed increases. The student changes one variable to see how the whole system responds.
 
 According to the model, what is the main reason cities experience more flooding than natural areas?
 
@@ -278,11 +226,15 @@ D. City buildings attract more rain clouds
 
 Correct Answer: B
 
-Feedback: Yes! The model showed that replacing permeable soil with impermeable pavement is the main cause of urban flooding. Water that would normally soak into the ground instead becomes runoff. The model demonstrated that cities flood more because they have replaced natural soil (which absorbs water) with pavement (which blocks absorption). This turns rain into surface runoff, overwhelming drainage systems and causing floods.
+Feedback: Yes! The model showed that replacing permeable soil with impermeable pavement is the main cause of urban flooding. Water that would normally soak into the ground instead becomes runoff. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 What does the model predict will happen if rainfall doubles on a soil surface?
 
@@ -293,25 +245,37 @@ D. Runoff will decrease because more rain makes soil absorb better
 
 Correct Answer: B
 
-Feedback: Correct! When rainfall doubles on soil, both absorption and runoff increase. The soil can only absorb so much, but it still handles heavy rain far better than pavement. When rainfall increases on soil, both absorption and runoff go up. Soil has a limit to how much water it can absorb, so some extra rain becomes runoff. But soil still handles heavy rain much better than pavement, which produces nearly 100% runoff.
+Feedback: Correct! When rainfall doubles on soil, both absorption and runoff increase. The soil can only absorb so much, but it still handles heavy rain far better than pavement. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Ground Type, Rainfall Amount), but they can take action on internal components (Water Absorbed, Runoff). They need to decide which action would be most effective based on what the model shows.
+
+What happens to rain when it falls on a grassy field?
+
+A. It bounces back up into the sky
+B. It soaks into the ground
+C. It turns into ice immediately
+D. It disappears completely
+
+Correct Answer: B
+
+Feedback: Yes! When rain falls on a grassy field, much of it soaks into the soil. The ground acts like a sponge and absorbs the water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

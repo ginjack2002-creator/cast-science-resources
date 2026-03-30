@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS1-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What can you learn by looking at layers of rock in a cliff or canyon?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS1-4 + CCC4 (Systems and System Models)
 
-A. Nothing useful. Rocks are just rocks.
-B. Each layer represents a different time period and can reveal what the environment was like when it formed
-C. Rock layers only form during earthquakes, so they tell us about seismic history
-D. The color of rock layers tells us what temperature it was when they formed
-
-Correct Answer: B
-
-Feedback: Correct! Rock layers (strata) form over time as sediment accumulates. Each layer is like a page in Earth's history, recording the environmental conditions when it was deposited. Not quite. Rock layers are records of the past. Each layer formed at a different time and contains evidence about the environment, climate, and organisms that existed during that period.
-
----
-
-### Question 2
-
-Why are fossils found inside certain types of rocks?
-
-A. Fossils can form in any type of rock equally well
-B. Fossils form best in sedimentary rocks because organisms get buried in layers of sediment before they decompose
-C. Fossils only form inside volcanic rocks that melt and preserve organisms
-D. Animals deliberately crawl inside rocks before they die
-
-Correct Answer: B
-
-Feedback: Correct! Sedimentary rocks form from accumulated layers of sediment. When organisms are buried in this sediment quickly enough, they can be preserved as fossils before decomposition. Not quite. Fossils are most commonly found in sedimentary rocks because the process of sedimentation can bury organisms before they decompose, preserving them over millions of years.
-
----
-
-### Question 3
-
-If you found a fish fossil in a rock on top of a mountain, what would that tell you?
-
-A. Fish once flew through the air and landed on the mountain
-B. Someone carried the fossil up the mountain and left it there
-C. The rock formed underwater and was later uplifted to become a mountain
-D. The fossil is fake because fish cannot live on mountains
-
-Correct Answer: C
-
-Feedback: Correct! Marine fossils on mountains are evidence that the rock formed on an ancient ocean floor. Tectonic forces later uplifted those ocean-floor rocks thousands of feet into the air. Not quite. Finding marine fossils on mountaintops is powerful evidence that those rocks formed at the bottom of an ancient ocean and were later pushed upward by tectonic forces over millions of years.
-
----
-
-### Question 4
-
-In a stack of undisturbed rock layers, which layer is the oldest?
-
-A. The layer at the very top
-B. The thickest layer, regardless of position
-C. The layer at the very bottom
-D. The darkest-colored layer
-
-Correct Answer: C
-
-Feedback: Correct! This is the principle of superposition. In undisturbed rock layers, each new layer is deposited on top of older layers, so the bottom layer is the oldest. Not quite. The principle of superposition states that in undisturbed rock sequences, the oldest layers are at the bottom and the youngest are at the top, because each new layer is deposited on top of existing ones.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sedimentation Rate, Erosion Rate, Rock Layer Thickness, Fossil Preservation Quality. Some components are external (Sedimentation Rate, Erosion Rate) and some are internal (Rock Layer Thickness, Fossil Preservation Quality). The student needs to understand what each component represents and how they are organized.
 
 In the rock strata model, sedimentation rate is set to maximum (simulating a flood event). What does the model predict about fossil preservation quality?
 
@@ -967,11 +907,15 @@ D. No fossils form during floods because water prevents sedimentation
 
 Correct Answer: B
 
-Feedback: Correct! Rapid burial during events like floods protects organisms from decomposition and scavengers, leading to excellent fossil preservation. Many of the world's best fossil sites formed during rapid deposition events. Not quite. Rapid sedimentation (like during a flood or volcanic ash fall) buries organisms quickly, protecting them from decomposition and scavengers. This is why rapid burial produces the best-preserved fossils.
+Feedback: Correct! Rapid burial during events like floods protects organisms from decomposition and scavengers, leading to excellent fossil preservation. Many of the world's best fossil sites formed during rapid deposition events. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS1-4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sedimentation Rate increases, Rock Layer Thickness increases; when Erosion Rate increases, Rock Layer Thickness decreases. The student is trying to understand why these relationships are positive or negative.
 
 A geologist finds a rock sequence where a layer containing marine fossils sits between two layers containing land plant fossils. What is the best interpretation?
 
@@ -982,11 +926,15 @@ D. The rock layers have been flipped upside down by an earthquake
 
 Correct Answer: B
 
-Feedback: Correct! The sequence tells a story: the area was initially land (plant fossils), then sea levels rose and the area was covered by ocean (marine fossils), then sea levels dropped and it became land again (more plant fossils). Not quite. Using the principle of superposition, we read bottom to top: first land (plant fossils), then ocean covered the area (marine fossils), then the sea retreated and land returned (more plant fossils). The rock records changing environments over time.
+Feedback: Correct! The sequence tells a story: the area was initially land (plant fossils), then sea levels rose and the area was covered by ocean (marine fossils), then sea levels dropped and it became land again (more plant fossils). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS1-4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sedimentation Rate increases, Rock Layer Thickness increases and when Erosion Rate increases, Rock Layer Thickness decreases and when Rock Layer Thickness increases, Fossil Preservation Quality increases. The student changes one variable to see how the whole system responds.
 
 What does an unconformity in the rock record represent?
 
@@ -997,11 +945,15 @@ D. A boundary between igneous and metamorphic rock
 
 Correct Answer: B
 
-Feedback: Correct! An unconformity is a gap in the geological record where erosion removed existing layers or deposition did not occur. These gaps can represent millions of years of missing history. Not quite. An unconformity is a gap in the rock record where layers are missing. This can happen when erosion wears away existing layers or when new sediment is not deposited. These gaps represent potentially millions of years of lost geological history.
+Feedback: Correct! An unconformity is a gap in the geological record where erosion removed existing layers or deposition did not occur. These gaps can represent millions of years of missing history. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS1-4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the model, when erosion rate exceeds sedimentation rate for a long period, what happens to the rock record at that location?
 
@@ -1012,25 +964,37 @@ D. The rock layers become stronger and more resistant to future erosion
 
 Correct Answer: B
 
-Feedback: Correct! When erosion dominates, it wears away existing rock layers, reducing their thickness and destroying the fossils within them. This is how erosion acts as a 'thief,' stealing pages from Earth's history book. Not quite. When erosion rate exceeds sedimentation rate, existing rock layers are worn away. This reduces layer thickness and destroys fossils, creating gaps in the geological record at that location.
+Feedback: Correct! When erosion dominates, it wears away existing rock layers, reducing their thickness and destroying the fossils within them. This is how erosion acts as a 'thief,' stealing pages from Earth's history book. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS1-4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sedimentation Rate, Erosion Rate), but they can take action on internal components (Rock Layer Thickness, Fossil Preservation Quality). They need to decide which action would be most effective based on what the model shows.
+
+What can you learn by looking at layers of rock in a cliff or canyon?
+
+A. Nothing useful. Rocks are just rocks.
+B. Each layer represents a different time period and can reveal what the environment was like when it formed
+C. Rock layers only form during earthquakes, so they tell us about seismic history
+D. The color of rock layers tells us what temperature it was when they formed
+
+Correct Answer: B
+
+Feedback: Correct! Rock layers (strata) form over time as sediment accumulates. Each layer is like a page in Earth's history, recording the environmental conditions when it was deposited. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS1-4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS1-4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS1-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS1-4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS1-4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

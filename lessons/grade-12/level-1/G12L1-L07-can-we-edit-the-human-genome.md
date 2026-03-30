@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the function of the guide RNA in the CRISPR-Cas9 system?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
 
-A. It provides energy for the Cas9 protein to cut DNA
-B. It is a short RNA molecule engineered to match a specific DNA target, directing Cas9 to the exact genome location for editing
-C. It repairs the DNA after Cas9 makes a cut
-D. It protects the rest of the genome from being edited accidentally
-
-Correct Answer: B
-
-Feedback: Correct. The guide RNA provides the specificity of CRISPR. It is designed to complement a specific DNA sequence, directing the Cas9 protein to the precise location where the edit should occur. Incorrect. Guide RNA acts as the targeting system. It is engineered to match a specific DNA sequence, guiding the Cas9 cutting protein to the exact location in the genome where the edit is intended.
-
----
-
-### Question 2
-
-What is the critical difference between germline editing and somatic cell editing?
-
-A. Germline editing is less accurate than somatic editing
-B. Somatic editing affects only the treated individual, while germline editing modifies sperm, eggs, or embryos and is inherited by all future generations
-C. Germline editing only works in plants, not humans
-D. Somatic editing changes DNA permanently while germline editing is temporary
-
-Correct Answer: B
-
-Feedback: Correct. Germline edits are made in reproductive cells or embryos, meaning the changes are inherited by all descendants. Somatic edits affect only the treated individual's body cells and are not passed to offspring. Incorrect. The key difference is heritability. Germline edits (in sperm, eggs, embryos) are passed to all future generations, while somatic edits affect only the treated individual and are not inherited.
-
----
-
-### Question 3
-
-What are off-target effects in the context of CRISPR gene editing?
-
-A. Intended edits that work better than expected
-B. Unintended cuts or edits at DNA locations similar but not identical to the target sequence, potentially causing harmful mutations
-C. The side effects of the drugs used alongside CRISPR treatment
-D. Changes in gene expression that occur naturally without any editing
-
-Correct Answer: B
-
-Feedback: Correct. Off-target effects occur when the guide RNA binds to DNA sequences similar to the intended target, directing Cas9 to make cuts at unintended locations. Even rare off-target cuts could activate cancer genes. Incorrect. Off-target effects are unintended edits at genome locations that are similar to the target sequence. They are the primary safety concern because unplanned cuts could disrupt essential genes or activate cancer-causing mutations.
-
----
-
-### Question 4
-
-In 2023, the FDA approved the first CRISPR-based therapy. What disease does it treat?
-
-A. Type 2 diabetes
-B. Sickle cell disease
-C. Alzheimer's disease
-D. Common cold
-
-Correct Answer: B
-
-Feedback: Correct. The FDA approved CRISPR-based therapy for sickle cell disease in 2023, marking a milestone. Sickle cell is an ideal CRISPR target because it is caused by a single, well-characterized gene mutation. Incorrect. The first FDA-approved CRISPR therapy treats sickle cell disease. This single-gene disorder is ideal for CRISPR because the mutation is well-characterized and can be precisely targeted.
-
----
-
-### Question 5
-
-Why is editing complex traits like intelligence or height fundamentally more difficult than editing single-gene disorders?
-
-A. Complex traits are not influenced by genes at all, only by environment
-B. Complex traits are controlled by many genes (polygenic), and editing multiple genes simultaneously multiplies both difficulty and the risk of off-target effects
-C. CRISPR can only work on genes located on chromosome 1
-D. Complex traits are determined by a single gene that is too large to edit
-
-Correct Answer: B
-
-Feedback: Correct. Complex traits like height involve 20+ genes. Each additional gene target multiplies editing complexity and off-target risk. The model shows dramatically different outcomes for single-gene vs. polygenic editing. Incorrect. Complex traits are polygenic (controlled by many genes). Each additional CRISPR target increases the probability of off-target effects multiplicatively, making multi-gene editing far riskier and less predictable than single-gene editing.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Guide RNA Specificity, Target Gene Location, Editing Efficiency, Off-Target Mutation Rate, Therapeutic Outcome. Some components are external (Guide RNA Specificity, Target Gene Location) and some are internal (Editing Efficiency, Off-Target Mutation Rate, Therapeutic Outcome). The student needs to understand what each component represents and how they are organized.
 
 A scientist designs a guide RNA with 99.5% specificity to edit embryonic cells. The human genome has 3.2 billion base pairs. What does the model predict about off-target effects?
 
@@ -1001,11 +926,15 @@ D. The number of base pairs does not affect off-target calculations
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that 'nearly perfect' specificity is misleading when applied to a 3.2 billion base pair genome. Even 0.5% non-specificity creates millions of potential off-target sites, which is especially dangerous in germline editing. Incorrect. The genome's enormous size means even tiny percentages of non-specificity translate to millions of potential off-target sites. For germline editing, where mistakes are inherited by all future generations, this risk is particularly serious.
+Feedback: Correct. The model reveals that 'nearly perfect' specificity is misleading when applied to a 3.2 billion base pair genome. Even 0.5% non-specificity creates millions of potential off-target sites, which is especially dangerous in germline editing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Guide RNA Specificity increases, Editing Efficiency increases; when Target Mutation Rate increases, Therapeutic Outcome decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model predicts high Therapeutic Outcome for single-gene disorders like sickle cell disease. Which combination of model components explains this prediction?
 
@@ -1016,11 +945,15 @@ D. Single-gene disorders are easier because they do not require any DNA cutting
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that single-gene disorders are ideal CRISPR targets because: (1) guide RNA can be highly specific to one known target, (2) only one gene needs editing, keeping off-target risk low, and (3) editing efficiency is maximized with a single, well-characterized target. Incorrect. The model predicts success for single-gene disorders because high guide RNA specificity can be achieved for one well-known target, editing efficiency is high with a single target, and off-target risk stays low without multiplying across many targets.
+Feedback: Correct. The model shows that single-gene disorders are ideal CRISPR targets because: (1) guide RNA can be highly specific to one known target, (2) only one gene needs editing, keeping off-target risk low, and (3) editing efficiency is maximized with a single, well-characterized target. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Guide RNA Specificity increases, Editing Efficiency increases and when Target Mutation Rate increases, Therapeutic Outcome decreases and when Editing Efficiency increases, Therapeutic Outcome increases. The student changes one variable to see how the whole system responds.
 
 A student models the scenario of editing 5 genes simultaneously for a complex trait. How does the model predict Off-Target Mutation Rate will change compared to single-gene editing?
 
@@ -1031,11 +964,15 @@ D. Off-Target Mutation Rate doubles with each additional gene, following a linea
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that each additional guide RNA introduces its own set of off-target risks, and these risks multiply rather than simply adding together, making multi-gene editing exponentially more dangerous. Incorrect. Each additional guide RNA in multi-gene editing introduces independent off-target risks that compound multiplicatively. Five simultaneous targets create far more than five times the risk of a single target.
+Feedback: Correct. The model shows that each additional guide RNA introduces its own set of off-target risks, and these risks multiply rather than simply adding together, making multi-gene editing exponentially more dangerous. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model distinguishes between 'therapeutic' and 'enhancement' uses of gene editing. Which ethical criterion from the model best separates these categories?
 
@@ -1046,11 +983,15 @@ D. The distinction is purely subjective with no scientific basis
 
 Correct Answer: B
 
-Feedback: Correct. The model supports a science-based distinction: therapeutic editing targets known pathogenic variants to restore normal protein function, while enhancement seeks to modify traits within or beyond normal human variation, which involves polygenic complexity and greater uncertainty. Incorrect. The scientific distinction is clear: therapeutic editing corrects known disease-causing mutations to restore normal function (supported by the model's single-gene success data), while enhancement targets traits within normal variation (which the model shows involves polygenic complexity and higher risk).
+Feedback: Correct. The model supports a science-based distinction: therapeutic editing targets known pathogenic variants to restore normal protein function, while enhancement seeks to modify traits within or beyond normal human variation, which involves polygenic complexity and greater uncertainty. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Guide RNA Specificity, Target Gene Location), but they can take action on internal components (Editing Efficiency, Off-Target Mutation Rate, Therapeutic Outcome). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model's predictions about germline editing, which concern is MOST scientifically justified?
 
@@ -1061,27 +1002,18 @@ D. Germline editing always produces beneficial mutations in subsequent generatio
 
 Correct Answer: B
 
-Feedback: Correct. The model's most powerful insight about germline editing is irreversibility: any off-target error is not just permanent in the individual but inherited by ALL descendants, affecting people who never consented to the modification. Incorrect. The model shows that germline editing's greatest risk is permanence and heritability. Unlike somatic edits (limited to one person), germline errors propagate through every subsequent generation, affecting individuals who could not consent.
+Feedback: Correct. The model's most powerful insight about germline editing is irreversibility: any off-target error is not just permanent in the individual but inherited by ALL descendants, affecting people who never consented to the modification. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -724,73 +724,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do plants need to grow?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
 
-A. Toys
-B. Water and sunlight
-C. Candy
-
-Correct Answer: B
-
-Feedback: Yes! Plants need water and sunlight to grow big and healthy. Plants need water and sunlight to grow. Water and sunshine help them make food and get bigger.
-
----
-
-### Question 2
-
-What happens if a plant does not get any water?
-
-A. It grows bigger
-B. Nothing happens
-C. It gets droopy and sad
-
-Correct Answer: C
-
-Feedback: That is right! A plant without water gets droopy, wilts, and can turn brown. Without water, a plant gets droopy and sad. Plants need water to stay healthy and stand up tall.
-
----
-
-### Question 3
-
-Where do plants get their water?
-
-A. From their leaves
-B. From the sky and ground
-C. From other plants
-
-Correct Answer: B
-
-Feedback: Yes! Plants get water from rain and from the ground through their roots. Plants get water from rain falling from the sky and from the soil through their roots.
-
----
-
-### Question 4
-
-Do plants need sunlight?
-
-A. Yes, they use it to make food
-B. No, they only need water
-C. No, they only need soil
-
-Correct Answer: A
-
-Feedback: Yes! Plants use sunlight to make their own food so they can grow. Plants do need sunlight. They use the sun's light to make their own food inside their leaves.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Water, Plant Growth. Some components are external (Amount of Water) and some are internal (Plant Growth). The student needs to understand what each component represents and how they are organized.
 
 When a plant gets MORE water, what happens to Plant Growth?
 
@@ -800,11 +744,15 @@ C. It does not change
 
 Correct Answer: B
 
-Feedback: Yes! More water helps the plant grow bigger and taller. Water carries nutrients through the plant. When a plant gets more water, it grows more. Water carries nutrients and helps the plant make food.
+Feedback: Yes! More water helps the plant grow bigger and taller. Water carries nutrients through the plant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Water increases, Plant Growth increases. The student is trying to understand why these relationships are positive or negative.
 
 What are nutrients?
 
@@ -814,11 +762,15 @@ C. The color of the leaves
 
 Correct Answer: B
 
-Feedback: That is right! Nutrients are good things in water and soil. They are like food for the plant. Nutrients are good things found in water and soil that help plants grow. They are like food for the plant.
+Feedback: That is right! Nutrients are good things in water and soil. They are like food for the plant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Amount of Water increases, Plant Growth increases. The student changes one variable to see how the whole system responds.
 
 How does water get from the soil to the top of the plant?
 
@@ -828,11 +780,15 @@ C. Someone pours it on the leaves
 
 Correct Answer: B
 
-Feedback: Yes! The roots suck up water from the soil and send it all through the plant, like a straw. The plant's roots suck up water from the soil, like a straw. The water travels up through the stem to the leaves.
+Feedback: Yes! The roots suck up water from the soil and send it all through the plant, like a straw. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In our model, Amount of Water is the outside part. Why?
 
@@ -842,25 +798,36 @@ C. Because water is always the same
 
 Correct Answer: B
 
-Feedback: Yes! WE decide how much water to give the plant, so Amount of Water is the outside part of our model. Amount of Water is outside because WE choose how much to water the plant. We control that part.
+Feedback: Yes! WE decide how much water to give the plant, so Amount of Water is the outside part of our model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Water), but they can take action on internal components (Plant Growth). They need to decide which action would be most effective based on what the model shows.
+
+What do plants need to grow?
+
+A. Toys
+B. Water and sunlight
+C. Candy
+
+Correct Answer: B
+
+Feedback: Yes! Plants need water and sunlight to grow big and healthy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: A
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

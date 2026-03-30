@@ -728,73 +728,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What happens when you hit a drum?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.1 + CCC2 (Cause and Effect)
 
-A. It makes a sound
-B. It changes color
-C. It gets smaller
-
-Correct Answer: A
-
-Feedback: Yes! When you hit a drum, it shakes and makes a sound. Think about what you hear when you tap a drum. Hitting a drum makes it shake and create a sound.
-
----
-
-### Question 2
-
-How does sound get to your ears?
-
-A. It flies like a bird
-B. It travels through the air
-C. It walks on the ground
-
-Correct Answer: B
-
-Feedback: That is right! Sound moves through the air to reach your ears. Sound is invisible. It moves through the air in waves until it reaches your ears.
-
----
-
-### Question 3
-
-What makes a louder sound?
-
-A. Tapping a drum softly
-B. Hitting a drum very hard
-C. Looking at a drum
-
-Correct Answer: B
-
-Feedback: Yes! Hitting harder makes bigger shakes and a louder sound. When you hit something harder, it shakes more and makes a louder sound.
-
----
-
-### Question 4
-
-What is shaking back and forth very fast called?
-
-A. A shadow
-B. A rainbow
-C. A vibration
-
-Correct Answer: C
-
-Feedback: That is right! Shaking back and forth very fast is called a vibration. When something shakes back and forth really fast, scientists call that a vibration.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Vibration Strength, Sound Volume. Some components are external (Vibration Strength) and some are internal (Sound Volume). The student needs to understand what each component represents and how they are organized.
 
 What causes sound?
 
@@ -804,11 +748,15 @@ C. Wind blowing
 
 Correct Answer: B
 
-Feedback: Yes! All sounds are made by vibrations. Something must shake to make a sound. Every sound starts with a vibration. Something has to shake back and forth to create sound.
+Feedback: Yes! All sounds are made by vibrations. Something must shake to make a sound. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Vibration Strength increases, Sound Volume increases. The student is trying to understand why these relationships are positive or negative.
 
 When vibration strength goes UP, what happens to the sound?
 
@@ -818,11 +766,15 @@ C. The sound stays the same
 
 Correct Answer: A
 
-Feedback: That is right! Bigger vibrations make louder sounds. Remember, stronger vibrations push the air harder, so the sound gets louder.
+Feedback: That is right! Bigger vibrations make louder sounds. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Vibration Strength increases, Sound Volume increases. The student changes one variable to see how the whole system responds.
 
 If you pluck a guitar string gently, what kind of sound does it make?
 
@@ -832,11 +784,15 @@ C. A soft, quiet sound
 
 Correct Answer: C
 
-Feedback: Yes! A gentle pluck makes a small vibration and a soft sound. Gentle plucking means small vibrations, which make soft, quiet sounds.
+Feedback: Yes! A gentle pluck makes a small vibration and a soft sound. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 You put your hand on a speaker that is playing music. What do you feel?
 
@@ -846,25 +802,36 @@ C. Cold air
 
 Correct Answer: B
 
-Feedback: Yes! You can feel the vibrations because sound is made by things shaking. A speaker shakes to make sound. If you touch it, you can feel those vibrations.
+Feedback: Yes! You can feel the vibrations because sound is made by things shaking. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Vibration Strength), but they can take action on internal components (Sound Volume). They need to decide which action would be most effective based on what the model shows.
+
+What happens when you hit a drum?
+
+A. It makes a sound
+B. It changes color
+C. It gets smaller
+
+Correct Answer: A
+
+Feedback: Yes! When you hit a drum, it shakes and makes a sound. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.1, CCC2)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

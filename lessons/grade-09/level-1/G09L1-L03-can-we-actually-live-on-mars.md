@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Mars has an atmospheric pressure of approximately 0.6 kPa, while Earth's is 101.3 kPa. What would be the most immediate consequence for an unprotected human exposed to Mars' atmosphere?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.2 + CCC4 (Systems and System Models)
 
-A. They would freeze to death within minutes due to the cold temperature
-B. The extremely low pressure would cause body fluids to boil at body temperature and prevent breathing
-C. They would suffocate slowly over several hours as oxygen depleted
-D. They would be crushed by the high atmospheric pressure of Mars
-
-Correct Answer: B
-
-Feedback: Correct. At 0.6 kPa, water boils at temperatures well below body temperature. An unprotected human would experience ebullism (body fluids vaporizing), inability to breathe, and loss of consciousness within approximately 15 seconds. While Mars is extremely cold, the most immediate lethal threat is the near-vacuum pressure. At 0.6 kPa (less than 1% of Earth's), water boils at body temperature, making blood and tissue fluids vaporize. This effect is more immediately lethal than the temperature.
-
----
-
-### Question 2
-
-Earth is protected from most solar radiation by its magnetic field and thick atmosphere. Mars lacks both of these protections. What is the primary biological danger of this radiation exposure?
-
-A. Radiation causes sunburn on exposed skin
-B. Ionizing radiation damages DNA, increasing the risk of cancer and cellular dysfunction
-C. Radiation heats the body, causing overheating similar to heat stroke
-D. Radiation prevents photosynthesis in all plant species
-
-Correct Answer: B
-
-Feedback: Correct. Ionizing radiation from solar wind and cosmic rays has enough energy to break chemical bonds in DNA, causing mutations that can lead to cancer, cellular dysfunction, and potentially lethal organ damage over extended exposure periods. The primary danger of Mars' unshielded radiation is DNA damage. Ionizing radiation breaks chemical bonds within DNA molecules, causing mutations. Over a two-year Mars stay, astronauts would receive radiation doses that significantly increase cancer risk and can impair cellular function.
-
----
-
-### Question 3
-
-A student argues that Mars colonization is mainly a discovery problem: 'We just need to find the right resources on Mars.' Which response best evaluates this claim?
-
-A. This is correct because we don't know what Mars has to offer yet
-B. This is partially correct; we need to discover new physics to survive on Mars
-C. This is incorrect; Mars colonization is primarily an engineering problem because we already understand the challenges but lack the technology to solve them all simultaneously
-D. This is incorrect because Mars has no useful resources whatsoever
-
-Correct Answer: C
-
-Feedback: Correct. We already know Mars has water ice, a CO2 atmosphere, and mineral resources. The challenge is engineering all the systems needed to maintain human life simultaneously: pressurized habitats, radiation shielding, water extraction, food production, and temperature control, all with virtually zero margin for error. Mars colonization is fundamentally an engineering challenge, not a discovery one. We know what Mars has (water ice, CO2 atmosphere, minerals) and what humans need (pressure, oxygen, water, food, radiation shielding). The challenge is building systems that deliver all of these simultaneously and reliably in an environment where any single failure is catastrophic.
-
----
-
-### Question 4
-
-Which statement best describes why growing food on Mars is particularly challenging?
-
-A. Mars soil contains all necessary nutrients but receives too much sunlight for plant growth
-B. Plants require controlled atmospheric pressure, radiation shielding, appropriate temperature, and purified water, none of which Mars provides naturally
-C. Earth plants cannot grow in reduced gravity under any circumstances
-D. Mars has adequate conditions for plant growth in its equatorial regions during summer
-
-Correct Answer: B
-
-Feedback: Correct. Food production on Mars requires simultaneously solving multiple environmental challenges: maintaining atmospheric pressure above the boiling point of water, shielding crops from lethal radiation, controlling temperature within growth ranges, and providing clean water free of toxic perchlorates found in Martian soil. Growing food on Mars requires engineering solutions for every environmental factor plants need: adequate pressure (Mars has less than 1% of Earth's), radiation protection, temperature control (Mars averages -60 degrees C), and clean water. Mars soil also contains toxic perchlorates that must be removed.
-
----
-
-### Question 5
-
-An engineer designing a Mars habitat says: 'If we can solve the water problem, everything else falls into place.' Why is this statement an oversimplification?
-
-A. Water is not actually needed on Mars because astronauts can bring enough from Earth
-B. Mars survival requires solving multiple interdependent challenges simultaneously; failure of any single system, not just water, can be catastrophic
-C. Water is the least important resource on Mars
-D. The water problem on Mars has already been solved by robotic missions
-
-Correct Answer: B
-
-Feedback: Correct. Mars survival is a systems problem. Pressure, radiation, temperature, water, and food must all be maintained simultaneously. Solving water alone does not address the other four critical factors, each of which can independently cause mission failure. Mars colonization requires solving all five survival factors simultaneously: atmospheric pressure, radiation shielding, temperature control, water availability, and food production. Solving any one problem in isolation does not prevent catastrophic failure from the others. It is the interdependence of these systems that makes Mars colonization so challenging.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Atmospheric Pressure, Radiation Exposure, Water Availability, Temperature, Crop Viability. Some components are external (Atmospheric Pressure, Radiation Exposure, Water Availability, Temperature) and some are internal (Crop Viability). The student needs to understand what each component represents and how they are organized.
 
 In a Mars habitat model, a student simulates a slow atmospheric pressure leak that reduces habitat pressure by 20% over three days. The model shows Crop Viability dropping before any other system reaches critical levels. Why do crops fail first?
 
@@ -1001,11 +926,15 @@ D. Crops fail because lower pressure increases radiation inside the habitat
 
 Correct Answer: A
 
-Feedback: Correct. Plants rely on adequate atmospheric pressure for transpiration, water transport through xylem, and gas exchange through stomata. As pressure drops, water begins to boil at lower temperatures, disrupting plant physiology before the pressure becomes immediately lethal to humans who can don emergency pressure suits. Crops are particularly sensitive to pressure changes because plant physiology depends on adequate atmospheric pressure for water transport, transpiration, and gas exchange. Plants cannot don emergency equipment like humans can, making them the most vulnerable biological component during a gradual pressure loss.
+Feedback: Correct. Plants rely on adequate atmospheric pressure for transpiration, water transport through xylem, and gas exchange through stomata. As pressure drops, water begins to boil at lower temperatures, disrupting plant physiology before the pressure becomes immediately lethal to humans who can don emergency pressure suits. If you chose B, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Atmospheric Pressure increases, Crop Viability increases; when Radiation Exposure increases, Crop Viability decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student compares the 'Pressure Breach' and 'Water Crisis' scenarios in their Mars habitat model. Which conclusion is best supported by the model evidence?
 
@@ -1016,11 +945,15 @@ D. Neither scenario is truly dangerous because backup systems would prevent any 
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that different failure modes operate on different timescales. A pressure breach can kill within minutes, making it the most time-critical threat. A water crisis develops over weeks but threatens long-term survival by limiting food production and life support. The 'most critical' factor depends on whether you are evaluating immediate or sustained survival. The model demonstrates that different system failures have different temporal profiles. Pressure loss is the most acute threat because humans and plants cannot survive without adequate pressure for more than minutes. Water scarcity is a slower-developing but equally fatal threat because it limits food production, oxygen generation, and basic life support over weeks to months.
+Feedback: Correct. The model reveals that different failure modes operate on different timescales. A pressure breach can kill within minutes, making it the most time-critical threat. A water crisis develops over weeks but threatens long-term survival by limiting food production and life support. The 'most critical' factor depends on whether you are evaluating immediate or sustained survival. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Atmospheric Pressure increases, Crop Viability increases and when Radiation Exposure increases, Crop Viability decreases and when Water Availability increases, Crop Viability increases. The student changes one variable to see how the whole system responds.
 
 A student's Mars habitat model has four external components (Pressure, Radiation, Water, Temperature) all affecting one internal component (Crop Viability). What does this model structure reveal about system vulnerability?
 
@@ -1031,11 +964,15 @@ D. The model structure shows that only one external factor needs to be controlle
 
 Correct Answer: B
 
-Feedback: Correct. The model structure reveals that Crop Viability acts as a single point of failure with four independent failure pathways. Since ANY one of the four external factors dropping below its threshold can destroy crops, the system has no redundancy at this critical node. This explains why Mars colonization requires near-perfect engineering across all systems simultaneously. Having four independent failure pathways converging on a single critical output (Crop Viability) makes the system extremely fragile. If any ONE external factor fails, crops die regardless of the other three being perfect. This lack of redundancy means the probability of system failure is the sum of all individual failure probabilities.
+Feedback: Correct. The model structure reveals that Crop Viability acts as a single point of failure with four independent failure pathways. Since ANY one of the four external factors dropping below its threshold can destroy crops, the system has no redundancy at this critical node. This explains why Mars colonization requires near-perfect engineering across all systems simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 After running all scenarios, a student concludes: 'Mars colonization is fundamentally different from any engineering challenge on Earth.' Which model evidence best supports this conclusion?
 
@@ -1046,11 +983,15 @@ D. Mars has different gravity, which is the only significant engineering challen
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that Earth engineering can rely on baseline environmental support. If a building's climate control fails on Earth, occupants can open a window. On Mars, failure of any life support system means death because the external environment provides nothing humans need. This zero-backup condition makes Mars engineering fundamentally different in kind, not just degree. The key insight from the model is that Earth always provides environmental backup. On Earth, if one system fails, the natural environment still provides breathable air, drinkable water, tolerable temperatures, and adequate pressure. On Mars, the environment provides none of these, so every single system must function perfectly with no fallback.
+Feedback: Correct. The model demonstrates that Earth engineering can rely on baseline environmental support. If a building's climate control fails on Earth, occupants can open a window. On Mars, failure of any life support system means death because the external environment provides nothing humans need. This zero-backup condition makes Mars engineering fundamentally different in kind, not just degree. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Atmospheric Pressure, Radiation Exposure, Water Availability, Temperature), but they can take action on internal components (Crop Viability). They need to decide which action would be most effective based on what the model shows.
 
 A student adds Energy Production as a new component to their Mars model and discovers that ALL other systems depend on it. What does this reveal about the system's interdependencies?
 
@@ -1061,27 +1002,18 @@ D. Adding more components always makes models less accurate
 
 Correct Answer: B
 
-Feedback: Correct. The extended model reveals that energy production is a 'master dependency' because every other survival system requires continuous power. Pressure pumps, heating systems, water extraction equipment, and radiation shielding all consume energy. An energy failure cascades immediately into failure of all dependent systems, making it arguably the most critical component. Adding energy production to the model reveals a critical insight: it is a foundational dependency that all other systems require. Without power, pressure cannot be maintained, temperature cannot be regulated, water cannot be extracted, and many forms of radiation shielding require active systems. Energy failure effectively causes simultaneous failure of every other survival system.
+Feedback: Correct. The extended model reveals that energy production is a 'master dependency' because every other survival system requires continuous power. Pressure pumps, heating systems, water extraction equipment, and radiation shielding all consume energy. An energy failure cascades immediately into failure of all dependent systems, making it arguably the most critical component. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

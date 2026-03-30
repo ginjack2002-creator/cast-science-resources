@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS2-3, MS-PS2-5.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a magnet?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-PS2-3, MS-PS2-5 + CCC4 (Systems and System Models)
 
-A. Any metal object that is painted silver
-B. An object that produces an invisible field that can attract or repel certain materials
-C. A rock that only works when connected to electricity
-D. A special type of battery that stores electrical energy
-
-Correct Answer: B
-
-Feedback: Correct! A magnet produces a magnetic field, an invisible area of force that can attract magnetic materials like iron and repel other magnets. Not quite. A magnet is an object that produces an invisible magnetic field capable of attracting magnetic materials (like iron) or repelling other magnets.
-
----
-
-### Question 2
-
-Can you make a magnet stronger or weaker?
-
-A. No. All magnets have a fixed strength that never changes.
-B. Yes, but only by painting the magnet a different color
-C. Yes. Factors like material, size, and electrical current can affect magnet strength.
-D. Magnets only get weaker over time and can never be made stronger
-
-Correct Answer: C
-
-Feedback: Correct! Magnet strength can be changed by the material used, the design of the magnet, and in the case of electromagnets, by adjusting the electric current. Not quite. The strength of a magnet depends on factors like its material and design. Electromagnets can be made stronger or weaker by changing the electric current flowing through them.
-
----
-
-### Question 3
-
-What do you think connects electricity and magnetism?
-
-A. They are completely separate forces with nothing in common
-B. Moving electric charges create magnetic fields, linking the two forces
-C. Magnetism is a type of static electricity stored in metal
-D. Electricity and magnetism only interact inside batteries
-
-Correct Answer: B
-
-Feedback: Correct! Electricity and magnetism are connected. Moving electric charges (current) create magnetic fields, and moving magnets can generate electric current. Not quite. Electricity and magnetism are aspects of the same fundamental force. Moving electric charges create magnetic fields, and moving magnets can generate electric current.
-
----
-
-### Question 4
-
-How can a magnet attract a paper clip without touching it?
-
-A. The magnet shoots invisible particles at the paper clip
-B. The magnet creates a field of force that extends through the air to the paper clip
-C. Air molecules carry the magnetic force from the magnet to the paper clip
-D. The paper clip moves on its own when it senses the magnet nearby
-
-Correct Answer: B
-
-Feedback: Correct! Magnets produce a magnetic field that extends through space. This field exerts a force on magnetic materials like the iron in a paper clip, even without physical contact. Not quite. A magnet creates an invisible magnetic field that extends through the space around it. This field exerts force on magnetic materials at a distance, without needing contact.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Electric Current, Number of Coil Wraps, Magnetic Field Strength, Lifting Capacity. Some components are external (Electric Current, Number of Coil Wraps) and some are internal (Magnetic Field Strength, Lifting Capacity). The student needs to understand what each component represents and how they are organized.
 
 A student builds an electromagnet by wrapping 50 turns of wire around an iron nail and connecting it to a battery. It picks up 8 paper clips. Which change would most likely INCREASE the number of paper clips it lifts?
 
@@ -967,11 +907,15 @@ D. Moving the electromagnet farther from the paper clips before turning it on
 
 Correct Answer: B
 
-Feedback: Correct! Doubling the number of coil wraps concentrates and amplifies the magnetic field, significantly increasing the electromagnet's lifting capacity. Not quite. Increasing the number of coil wraps is one of the most effective ways to strengthen an electromagnet because each additional loop adds its magnetic field to the total.
+Feedback: Correct! Doubling the number of coil wraps concentrates and amplifies the magnetic field, significantly increasing the electromagnet's lifting capacity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-PS2-3, MS-PS2-5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Electric Current increases, Magnetic Field Strength increases; when Number of Coil Wraps increases, Magnetic Field Strength increases. The student is trying to understand why these relationships are positive or negative.
 
 In the electromagnet model, setting both electric current AND number of coil wraps to maximum produces a much stronger result than changing just one variable. What does this demonstrate?
 
@@ -982,11 +926,15 @@ D. Electric current cancels out the effect of additional coils
 
 Correct Answer: B
 
-Feedback: Correct! Current and coils work together. More current through more coils produces a much stronger field than either change alone, demonstrating a combined effect on electromagnetic force. Not quite. The model shows that current and coils have a combined effect on field strength. Increasing both variables together produces a result greater than changing either one alone.
+Feedback: Correct! Current and coils work together. More current through more coils produces a much stronger field than either change alone, demonstrating a combined effect on electromagnetic force. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-PS2-3, MS-PS2-5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Electric Current increases, Magnetic Field Strength increases and when Number of Coil Wraps increases, Magnetic Field Strength increases and when Magnetic Field Strength increases, Lifting Capacity increases. The student changes one variable to see how the whole system responds.
 
 Why are electromagnets more useful than permanent magnets for many real-world applications?
 
@@ -997,11 +945,15 @@ D. Electromagnets work in space, but permanent magnets do not
 
 Correct Answer: B
 
-Feedback: Correct! The ability to control electromagnets by switching them on/off and adjusting their strength makes them far more versatile than permanent magnets for applications like cranes, motors, and MRI machines. Not quite. The key advantage of electromagnets is controllability. They can be turned on and off and their strength can be adjusted, making them essential for applications like junkyard cranes, electric motors, and MRI machines.
+Feedback: Correct! The ability to control electromagnets by switching them on/off and adjusting their strength makes them far more versatile than permanent magnets for applications like cranes, motors, and MRI machines. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-PS2-3, MS-PS2-5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which statement best explains how your model proves that invisible forces are real?
 
@@ -1012,25 +964,37 @@ D. The model demonstrates that invisible forces only work at very short distance
 
 Correct Answer: A
 
-Feedback: Correct! The model demonstrates that changes in current and coils produce measurable changes in lifting capacity. The force acts at a distance through an invisible field, providing evidence that non-contact forces are real. Not quite. The model provides evidence that invisible forces exist because changing the inputs (current, coils) produces measurable outputs (lifting capacity) without physical contact between the electromagnet and the objects it lifts.
+Feedback: Correct! The model demonstrates that changes in current and coils produce measurable changes in lifting capacity. The force acts at a distance through an invisible field, providing evidence that non-contact forces are real. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-PS2-3, MS-PS2-5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Electric Current, Number of Coil Wraps), but they can take action on internal components (Magnetic Field Strength, Lifting Capacity). They need to decide which action would be most effective based on what the model shows.
+
+What is a magnet?
+
+A. Any metal object that is painted silver
+B. An object that produces an invisible field that can attract or repel certain materials
+C. A rock that only works when connected to electricity
+D. A special type of battery that stores electrical energy
+
+Correct Answer: B
+
+Feedback: Correct! A magnet produces a magnetic field, an invisible area of force that can attract magnetic materials like iron and repel other magnets. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-PS2-3, MS-PS2-5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-PS2-3, MS-PS2-5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-PS2-3, MS-PS2-5, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-PS2-3, MS-PS2-5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-PS2-3, MS-PS2-5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: A
-
----
 
 ## Resources
 

@@ -728,73 +728,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A mother cat has orange fur. What color will her kittens probably be?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
 
-A. Green
-B. Orange or similar
-C. Any random color
-
-Correct Answer: B
-
-Feedback: Yes! Baby animals usually look a lot like their parents. Baby animals get their features from their parents, so kittens usually have colors like their mom and dad.
-
----
-
-### Question 2
-
-Do baby animals look exactly the same as their parents?
-
-A. Yes, they are exact copies
-B. No, they look a little different
-C. They look nothing alike
-
-Correct Answer: B
-
-Feedback: That is right! Baby animals look similar to their parents, but not exactly the same. Babies look a lot like their parents, but there are always small differences that make each baby unique.
-
----
-
-### Question 3
-
-A puppy has floppy ears like its dad. Why?
-
-A. The puppy chose floppy ears
-B. The puppy got them from its dad
-C. All dogs have floppy ears
-
-Correct Answer: B
-
-Feedback: Yes! The puppy got floppy ears from its parent. Babies get features like ear shape from their parents. The puppy inherited floppy ears from its dad.
-
----
-
-### Question 4
-
-Which of these is a trait?
-
-A. A dog's toy
-B. A cat's fur color
-C. A fish's bowl
-
-Correct Answer: B
-
-Feedback: Yes! Fur color is a trait. A trait is a body feature an animal has. A trait is a feature of an animal's body, like fur color, eye shape, or ear size.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Parent Traits, Baby Traits. Some components are external (Parent Traits) and some are internal (Baby Traits). The student needs to understand what each component represents and how they are organized.
 
 What does inherited mean?
 
@@ -804,11 +748,15 @@ C. Something you find outside
 
 Correct Answer: B
 
-Feedback: Yes! Inherited means a feature passed from parents to their babies. Inherited means you got it from your parents, like your eye color or hair type.
+Feedback: Yes! Inherited means a feature passed from parents to their babies. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Parent Traits increases, Baby Traits increases. The student is trying to understand why these relationships are positive or negative.
 
 A parent dog has spots. What will the puppies probably look like?
 
@@ -818,11 +766,15 @@ C. They will have no pattern at all
 
 Correct Answer: B
 
-Feedback: That is right! Puppies inherit traits like spots from their parents. Babies inherit traits from their parents. If a parent has spots, the babies will probably have spots too.
+Feedback: That is right! Puppies inherit traits like spots from their parents. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Parent Traits increases, Baby Traits increases. The student changes one variable to see how the whole system responds.
 
 Two kittens from the same parents look a little different from each other. Why?
 
@@ -832,11 +784,15 @@ C. They are not really from the same parents
 
 Correct Answer: B
 
-Feedback: Yes! Even babies from the same parents are a little different. Each one is unique. Parent traits mix together in new ways, so each baby is similar but a little different.
+Feedback: Yes! Even babies from the same parents are a little different. Each one is unique. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Can a baby animal choose what color its fur will be?
 
@@ -846,25 +802,36 @@ C. Yes, if it tries really hard
 
 Correct Answer: B
 
-Feedback: That is right! Animals cannot choose their traits. They inherit them from their parents. Baby animals cannot choose their features. Traits like fur color are passed from parents before the baby is even born.
+Feedback: That is right! Animals cannot choose their traits. They inherit them from their parents. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Parent Traits), but they can take action on internal components (Baby Traits). They need to decide which action would be most effective based on what the model shows.
+
+A mother cat has orange fur. What color will her kittens probably be?
+
+A. Green
+B. Orange or similar
+C. Any random color
+
+Correct Answer: B
+
+Feedback: Yes! Baby animals usually look a lot like their parents. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

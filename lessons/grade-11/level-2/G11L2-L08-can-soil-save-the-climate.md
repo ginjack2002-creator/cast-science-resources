@@ -925,86 +925,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the primary process by which carbon enters soil from the atmosphere?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.4 + CCC4 (Systems and System Models)
 
-A. Carbon falls from the atmosphere as particulate matter during rainstorms
-B. Plants capture CO2 through photosynthesis and transfer carbon to soil through roots, leaf litter, and root exudates
-C. Soil minerals chemically react with atmospheric CO2 to form carbonates
-D. Animals breathe CO2 into the soil through burrows
-
-Correct Answer: B
-
-Feedback: Correct. Atmospheric CO2 enters soil primarily through plant photosynthesis. Plants fix carbon and transfer it belowground via root growth, leaf litter decomposition, and root exudates. The primary pathway is photosynthesis: plants capture atmospheric CO2 and transfer the fixed carbon to soil through root growth, leaf litter that decomposes on the surface, and root exudates that feed soil microorganisms.
-
----
-
-### Question 2
-
-Approximately how much organic carbon do the world's soils contain compared to the atmosphere?
-
-A. About 10% as much as the atmosphere
-B. About the same amount
-C. About 3 times as much as the atmosphere
-D. About 10 times as much as the atmosphere
-
-Correct Answer: C
-
-Feedback: Correct. Global soils contain approximately 2,500 gigatons of organic carbon, roughly three times the ~880 gigatons in the atmosphere. The world's soils hold approximately 2,500 gigatons of organic carbon, about three times the carbon in the entire atmosphere (~880 Gt) and four times the carbon in all living vegetation (~450 Gt).
-
----
-
-### Question 3
-
-What is 'soil respiration'?
-
-A. The process of air moving through soil pore spaces
-B. The metabolic activity of soil organisms and roots that converts organic carbon back to CO2
-C. The release of oxygen by plant roots into the soil
-D. The absorption of nitrogen gas by soil bacteria
-
-Correct Answer: B
-
-Feedback: Correct. Soil respiration is the combined metabolic output of soil microbes and plant roots that decomposes organic matter and releases CO2. Soil respiration refers to the biological process where microorganisms and plant roots break down organic matter, converting stored carbon back to CO2. The rate of soil respiration determines whether soil gains or loses carbon over time.
-
----
-
-### Question 4
-
-What percentage of their original organic carbon have agricultural soils lost through centuries of tillage?
-
-A. About 5-10%
-B. About 20-30%
-C. About 50-70%
-D. About 90-100%
-
-Correct Answer: C
-
-Feedback: Correct. Agricultural soils have lost 50-70% of their original carbon through centuries of tillage, which exposes buried carbon to oxygen and accelerates microbial decomposition. Centuries of conventional tillage have depleted 50-70% of original soil organic carbon. Plowing physically breaks apart soil structure and exposes buried organic matter to oxygen, accelerating microbial decomposition and CO2 release.
-
----
-
-### Question 5
-
-What is 'regenerative agriculture'?
-
-A. Farming that uses only genetically modified crops to increase yields
-B. A system of farming that prioritizes soil health through practices like cover cropping, no-till, and diverse rotations to rebuild soil organic matter
-C. Industrial agriculture that maximizes production regardless of environmental impact
-D. Farming that eliminates all human labor through automation
-
-Correct Answer: B
-
-Feedback: Correct. Regenerative agriculture focuses on rebuilding soil health through practices that increase soil organic matter, enhance biodiversity, and restore ecosystem function. Regenerative agriculture prioritizes soil health through practices like no-till farming, cover cropping, diverse crop rotations, and integrated livestock grazing. The goal is to rebuild soil organic matter and restore ecosystem function.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Agricultural Management Practice, Plant Carbon Fixation Rate, Soil Microbial Activity, Soil Organic Carbon Stock, Soil Respiration Rate, Net Soil Carbon Balance. Some components are external (Agricultural Management Practice) and some are internal (Plant Carbon Fixation Rate, Soil Microbial Activity, Soil Organic Carbon Stock, Soil Respiration Rate, Net Soil Carbon Balance). The student needs to understand what each component represents and how they are organized.
 
 The model shows that regenerative agriculture can sequester 0.5-3.0 tons of carbon per hectare per year, but gains slow after 20-30 years. What does this saturation effect imply for the role of soil carbon in climate strategy?
 
@@ -1015,11 +940,15 @@ D. The saturation effect means soils release all stored carbon after 30 years
 
 Correct Answer: B
 
-Feedback: Correct. Soil carbon sequestration provides meaningful near-term benefits but plateaus as soils reach a new equilibrium. It buys time but cannot replace the need to eliminate fossil fuel emissions. The saturation effect means soils approach a new carbon equilibrium under regenerative management. The 20-30 year window provides meaningful mitigation (2-5 Gt CO2/year globally) but is finite. Soil carbon is a bridge strategy, not a permanent solution.
+Feedback: Correct. Soil carbon sequestration provides meaningful near-term benefits but plateaus as soils reach a new equilibrium. It buys time but cannot replace the need to eliminate fossil fuel emissions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.4 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Agricultural Management Practice increases, Plant Carbon Fixation Rate increases; when Plant Carbon Fixation Rate increases, Soil Microbial Activity increases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals a dangerous climate feedback: warming accelerates soil respiration, releasing stored carbon, which causes more warming. With 2,500 Gt of carbon in soils (3x the atmosphere), what is the most alarming implication?
 
@@ -1030,11 +959,15 @@ D. This feedback loop would stop once atmospheric CO2 reaches a certain concentr
 
 Correct Answer: B
 
-Feedback: Correct. The soil-climate feedback is potentially catastrophic: if warming accelerates respiration enough to flip soils from sinks to sources, the 2,500 Gt carbon reservoir becomes a warming accelerant rather than a buffer. The model shows that soils store 3x the atmospheric carbon. If warming-accelerated respiration exceeds plant carbon inputs globally, soils could release hundreds of gigatons of CO2, dwarfing both human emissions and any sequestration effort in a self-reinforcing cycle.
+Feedback: Correct. The soil-climate feedback is potentially catastrophic: if warming accelerates respiration enough to flip soils from sinks to sources, the 2,500 Gt carbon reservoir becomes a warming accelerant rather than a buffer. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Agricultural Management Practice increases, Plant Carbon Fixation Rate increases and when Plant Carbon Fixation Rate increases, Soil Microbial Activity increases and when Soil Microbial Activity increases, Soil Organic Carbon Stock increases. The student changes one variable to see how the whole system responds.
 
 A carbon credit company claims farmers can earn $50/ton for soil carbon sequestration. The model shows that carbon gains are reversible if practices revert to conventional tillage. What risk does this 'permanence problem' create?
 
@@ -1045,11 +978,15 @@ D. The permanence problem only affects tropical soils, not temperate agricultura
 
 Correct Answer: B
 
-Feedback: Correct. Unlike geological carbon storage, soil carbon gains are biologically reversible. If economic conditions change and farmers revert to conventional tillage, decades of stored carbon can be released in just a few years. Soil carbon storage is biologically active and reversible. If a farmer who earned carbon credits for no-till practice returns to conventional plowing (due to economics, crop disease, or land sale), the stored carbon can be released rapidly, creating a 'phantom credit' problem in carbon markets.
+Feedback: Correct. Unlike geological carbon storage, soil carbon gains are biologically reversible. If economic conditions change and farmers revert to conventional tillage, decades of stored carbon can be released in just a few years. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model compares conventional tillage (bare fallow, synthetic inputs) to regenerative management (no-till, cover crops). After 50 years, the conventional scenario shows steadily declining Soil Organic Carbon Stock. Which mechanism drives this decline?
 
@@ -1060,11 +997,15 @@ D. Machinery compaction squeezes carbon gas out of the soil
 
 Correct Answer: B
 
-Feedback: Correct. Tillage is the primary driver: it breaks apart soil aggregates that protect organic matter, exposes carbon to aerobic decomposition, and the absence of cover crops during fallow periods means no new carbon inputs to offset losses. Conventional tillage accelerates carbon loss through two mechanisms: plowing physically exposes buried organic matter to oxygen, accelerating microbial decomposition, and bare fallow periods between crops provide zero new carbon inputs. The soil steadily loses carbon because outputs exceed inputs.
+Feedback: Correct. Tillage is the primary driver: it breaks apart soil aggregates that protect organic matter, exposes carbon to aerobic decomposition, and the absence of cover crops during fallow periods means no new carbon inputs to offset losses. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Agricultural Management Practice), but they can take action on internal components (Plant Carbon Fixation Rate, Soil Microbial Activity, Soil Organic Carbon Stock, Soil Respiration Rate, Net Soil Carbon Balance). They need to decide which action would be most effective based on what the model shows.
 
 A policymaker asks whether soil carbon sequestration alone could offset all global CO2 emissions (approximately 40 Gt/year). Using the model's data on sequestration rates (0.5-3.0 tons C/hectare/year) and global cropland (1.5 billion hectares), evaluate this claim.
 
@@ -1075,27 +1016,18 @@ D. The calculation is irrelevant because soil carbon has no effect on atmospheri
 
 Correct Answer: B
 
-Feedback: Correct. Even the maximum theoretical calculation (3 t C x 1.5B ha = 4.5 Gt C/year = ~16 Gt CO2/year) covers only about 40% of emissions. Realistic adoption rates and the 20-30 year plateau reduce this further to 5-10%. The math shows soil carbon sequestration's limits: even at maximum rates across all cropland, the theoretical offset is roughly 16 Gt CO2/year (40% of emissions). Realistically, partial adoption and lower average rates reduce this to 2-5 Gt CO2/year (5-12%), and gains plateau after 20-30 years.
+Feedback: Correct. Even the maximum theoretical calculation (3 t C x 1.5B ha = 4.5 Gt C/year = ~16 Gt CO2/year) covers only about 40% of emissions. Realistic adoption rates and the 20-30 year plateau reduce this further to 5-10%. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

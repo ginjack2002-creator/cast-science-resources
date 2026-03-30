@@ -946,86 +946,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Global food systems currently waste approximately one-third of all food produced. If this waste were eliminated, what would be the equivalent effect on agricultural land?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC2 (Cause and Effect)
 
-A. It would be equivalent to increasing agricultural land by approximately 25% without any environmental cost
-B. It would have no measurable impact because waste occurs after food leaves the farm
-C. It would require doubling chemical fertilizer use to compensate for reduced composting
-D. It would increase water consumption because more food would need to be transported
-
-Correct Answer: A
-
-Feedback: Correct. Eliminating one-third of food waste is effectively equivalent to producing 33% more food from existing land, which translates to roughly a 25% increase in effective agricultural area without requiring deforestation, water use, or chemical inputs. Incorrect. Food waste represents enormous embedded resources. Reducing waste by one-third effectively increases the food available from existing agricultural land by about 25%, making it the single highest-leverage intervention in the food system.
-
----
-
-### Question 2
-
-A farmer increases crop yields by applying maximum chemical fertilizers to a monoculture field for 20 years. Based on agricultural systems dynamics, what is the most likely long-term outcome?
-
-A. Yields continue increasing indefinitely as soil adapts to higher nutrient levels
-B. Soil degradation through nutrient depletion, loss of soil biology, and compaction leads to declining yields despite increasing inputs
-C. The soil becomes permanently improved and requires less fertilizer over time
-D. Monoculture farming has no negative effects on soil as long as fertilizer is applied
-
-Correct Answer: B
-
-Feedback: Correct. Intensive monoculture with chemical fertilizers degrades soil biology, structure, and organic matter over time. While short-term yields increase, long-term productivity declines as the soil loses its natural fertility, creating dependence on ever-increasing chemical inputs with diminishing returns. Incorrect. The key concept is that intensive farming mines soil health. Chemical fertilizers provide macronutrients but damage soil biology, structure, and organic matter. Over 20 years, this degradation reduces the soil's capacity to support crops, causing yields to plateau and eventually decline.
-
----
-
-### Question 3
-
-Agriculture uses approximately 70% of global freshwater withdrawals. Which change in farming practice would have the greatest impact on reducing agricultural water demand?
-
-A. Replacing flood irrigation with drip irrigation systems
-B. Planting crops only during the rainy season
-C. Increasing pesticide application to reduce crop losses
-D. Converting all farms to hydroponic greenhouses
-
-Correct Answer: A
-
-Feedback: Correct. Flood irrigation wastes 40-60% of water through evaporation and runoff. Drip irrigation delivers water directly to plant roots with 90-95% efficiency. Because agriculture is the dominant water user, this single change has the largest potential impact on total freshwater demand. Incorrect. Since agriculture consumes 70% of freshwater, the most impactful change targets irrigation efficiency. Drip irrigation reduces water use by 40-60% compared to flood irrigation by delivering water directly to roots, making it the highest-impact intervention.
-
----
-
-### Question 4
-
-The concept of carrying capacity in agricultural systems differs from simple population limits. Which factor makes carrying capacity a dynamic rather than fixed number?
-
-A. It depends only on total land area and cannot change
-B. It changes based on the sustainability of farming practices, distribution efficiency, and resource management
-C. It is determined exclusively by genetic modifications to crop species
-D. It remains constant regardless of how resources are managed
-
-Correct Answer: B
-
-Feedback: Correct. Agricultural carrying capacity is dynamic because it depends on how resources are managed. Sustainable practices maintain or increase it over time, while exploitative practices deplete soil and water, reducing it. Distribution efficiency also matters because food waste effectively lowers carrying capacity. Incorrect. Carrying capacity is not fixed. It depends on agricultural practices (sustainable vs. exploitative), resource management (water, soil), distribution efficiency (waste levels), and dietary choices. These human decisions make carrying capacity a moving target.
-
----
-
-### Question 5
-
-Biodiversity in agricultural landscapes provides ecosystem services such as pollination, pest control, and soil health. What happens to these services under intensive monoculture farming?
-
-A. They increase because monoculture simplifies ecological interactions
-B. They decline as habitat loss and chemical use reduce populations of pollinators, predators, and soil organisms
-C. They remain unchanged because ecosystem services are provided by wild areas far from farms
-D. They are replaced entirely by chemical substitutes with no loss of function
-
-Correct Answer: B
-
-Feedback: Correct. Intensive monoculture eliminates the habitat diversity that supports beneficial organisms. Pollinators lose nesting sites, natural pest predators lose prey diversity, and soil organisms are killed by tillage and chemicals, undermining the ecosystem services that agriculture depends on. Incorrect. Ecosystem services require living organisms that depend on habitat within and around farms. Monoculture eliminates this habitat, while pesticides and tillage directly harm beneficial organisms. Chemical substitutes cannot fully replicate these complex biological services.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Global Population, Agricultural Land Area, Crop Yield Per Hectare, Soil Health Index, Water Availability for Agriculture, Food Waste and Loss, Biodiversity in Agricultural Landscapes. Some components are external (Global Population, Agricultural Land Area) and some are internal (Crop Yield Per Hectare, Soil Health Index, Water Availability for Agriculture, Food Waste and Loss, Biodiversity in Agricultural Landscapes). The student needs to understand what each component represents and how they are organized.
 
 A food system model shows that industrial intensification increases yields by 30% in 5 years but decreases soil health index by 40% over 30 years. A student concludes that intensification is the best strategy because it produces more food. What critical flaw exists in this reasoning?
 
@@ -1036,11 +961,15 @@ D. Soil health is unrelated to crop yield in modern agriculture
 
 Correct Answer: A
 
-Feedback: Correct. The student commits a temporal scale error by evaluating a long-term system using short-term data. The 30-year trajectory shows that the initial yield gains are unsustainable because they come at the cost of the soil health that ultimately determines productive capacity. Incorrect. The critical flaw is the mismatch in timescales. Short-term yield increases can mask long-term productive capacity loss. The soil health decline means that after 30 years, the system produces less food than it would have under sustainable management.
+Feedback: Correct. The student commits a temporal scale error by evaluating a long-term system using short-term data. The 30-year trajectory shows that the initial yield gains are unsustainable because they come at the cost of the soil health that ultimately determines productive capacity. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Global Population increases, Crop Yield Per Hectare increases; when Crop Yield Per Hectare increases, Soil Health Index decreases. The student is trying to understand why these relationships are positive or negative.
 
 A model shows that water availability becomes the binding constraint on food production before land runs out. Which evidence from the model would most strongly support this conclusion?
 
@@ -1051,11 +980,15 @@ D. Population growth slows in water-scarce regions
 
 Correct Answer: A
 
-Feedback: Correct. If aquifers are depleted to the point where pumping is no longer economical while cultivable land still exists but cannot be farmed without irrigation, this directly demonstrates that water, not land, is the binding constraint on production capacity. Incorrect. The strongest evidence for water as the binding constraint would show that available land exists but cannot produce food due to water scarcity. Aquifer depletion rendering existing farmland unirrigable while potential cropland goes unused directly proves water is the limiting factor.
+Feedback: Correct. If aquifers are depleted to the point where pumping is no longer economical while cultivable land still exists but cannot be farmed without irrigation, this directly demonstrates that water, not land, is the binding constraint on production capacity. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Global Population increases, Crop Yield Per Hectare increases and when Crop Yield Per Hectare increases, Soil Health Index decreases and when Soil Health Index increases, Crop Yield Per Hectare increases. The student changes one variable to see how the whole system responds.
 
 The model demonstrates that sustainable intensification can theoretically feed 10 billion people on current agricultural land. Why does the word 'theoretically' represent an important qualification?
 
@@ -1066,11 +999,15 @@ D. Because sustainable farming always produces less food than industrial farming
 
 Correct Answer: B
 
-Feedback: Correct. The model shows biophysical feasibility, but real-world implementation requires transforming subsidies, supply chains, dietary patterns, trade policies, and land ownership structures. The gap between what is technically possible and what is politically achievable is the central challenge. Incorrect. The 'theoretical' qualification acknowledges the gap between biophysical capacity and real-world implementation. Feeding 10 billion sustainably is scientifically possible but requires political, economic, and social transformations that are far more challenging than the technical aspects.
+Feedback: Correct. The model shows biophysical feasibility, but real-world implementation requires transforming subsidies, supply chains, dietary patterns, trade policies, and land ownership structures. The gap between what is technically possible and what is politically achievable is the central challenge. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student's model shows that combining waste reduction, soil regeneration, and biodiversity protection produces better long-term food security than any single intervention alone. Which systems concept does this demonstrate?
 
@@ -1081,11 +1018,15 @@ D. Single interventions are always more cost-effective than combined approaches
 
 Correct Answer: B
 
-Feedback: Correct. This demonstrates synergy in complex systems. Waste reduction frees resources, healthy soil sustains yields, and biodiversity provides ecosystem services. These interventions reinforce each other, producing combined benefits that exceed what any single intervention could achieve alone. Incorrect. The model demonstrates synergistic effects. Multiple interventions targeting different leverage points in a complex system produce benefits that reinforce each other, yielding outcomes greater than the sum of individual actions. This is a fundamental property of complex adaptive systems.
+Feedback: Correct. This demonstrates synergy in complex systems. Waste reduction frees resources, healthy soil sustains yields, and biodiversity provides ecosystem services. These interventions reinforce each other, producing combined benefits that exceed what any single intervention could achieve alone. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Global Population, Agricultural Land Area), but they can take action on internal components (Crop Yield Per Hectare, Soil Health Index, Water Availability for Agriculture, Food Waste and Loss, Biodiversity in Agricultural Landscapes). They need to decide which action would be most effective based on what the model shows.
 
 Based on the food system model, a policy advisor must choose where to invest limited resources. Which model finding provides the strongest evidence for prioritizing food waste reduction over agricultural land expansion?
 
@@ -1096,27 +1037,18 @@ D. Agricultural land expansion has no environmental consequences in most regions
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that reducing waste by 50% is equivalent to expanding farmland by 25%, but without deforestation, biodiversity loss, increased water demand, or soil degradation. The same food availability outcome with dramatically lower environmental cost makes waste reduction the superior investment. Incorrect. The model evidence shows waste reduction achieves comparable food availability gains to land expansion but without the associated environmental damage. This cost-benefit analysis, grounded in model data, provides the strongest evidence for prioritizing waste reduction.
+Feedback: Correct. The model shows that reducing waste by 50% is equivalent to expanding farmland by 25%, but without deforestation, biodiversity loss, increased water demand, or soil degradation. The same food availability outcome with dramatically lower environmental cost makes waste reduction the superior investment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: A
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC2)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: A
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS3-3, MS-PS3-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-When you hold a hot mug, your hands feel warm. What is happening?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-PS3-3, MS-PS3-4 + CCC4 (Systems and System Models)
 
-A. Cold is leaving your hands and going into the mug
-B. Heat energy is transferring from the hot mug to your cooler hands
-C. Your hands are creating their own heat in response to the mug
-D. The mug's color is making your hands feel warm
-
-Correct Answer: B
-
-Feedback: Correct! Thermal energy always transfers from warmer objects to cooler objects through direct contact, a process called conduction. Not quite. Heat energy transfers from the hotter object (the mug) to the cooler object (your hands). Cold is not a substance that moves; rather, heat energy flows from hot to cold.
-
----
-
-### Question 2
-
-If you leave a hot drink on the counter, what will eventually happen to its temperature?
-
-A. It will stay hot forever
-B. It will get colder than room temperature
-C. It will cool down until it matches room temperature
-D. It depends on the color of the cup
-
-Correct Answer: C
-
-Feedback: Correct! Heat flows from the hot drink to the cooler surroundings until both reach the same temperature, called thermal equilibrium. Not quite. A hot drink will always cool down to match the temperature of its surroundings. Heat flows from hot to cold until temperatures equalize.
-
----
-
-### Question 3
-
-Why does a metal spoon in hot soup feel hotter than a wooden spoon?
-
-A. Metal is always hotter than wood
-B. Metal transfers heat to your hand faster than wood does
-C. Wood absorbs all the heat so none reaches your hand
-D. The metal spoon is closer to the heat source
-
-Correct Answer: B
-
-Feedback: Correct! Metal is a better conductor of heat than wood. It transfers thermal energy to your hand much faster, making it feel hotter even at the same temperature. Not quite. Metal conducts heat much faster than wood. Both spoons may be the same temperature, but the metal one transfers that heat to your hand more quickly, so it feels hotter.
-
----
-
-### Question 4
-
-What do you think keeps a drink warm inside a thermos?
-
-A. A thermos generates its own heat
-B. The thermos adds chemicals that heat the drink
-C. The thermos has materials that slow down heat from escaping
-D. The drink stays hot because no air can get in
-
-Correct Answer: C
-
-Feedback: Correct! A thermos uses insulating materials and a vacuum layer to slow down thermal energy transfer, keeping the drink hot longer. Not quite. A thermos works by using insulation to slow down the transfer of heat from the hot drink to the cooler surroundings. It doesn't add heat; it just slows the loss.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Temperature Difference, Insulation Level, Container Surface Area, Air Movement. Some components are external (Temperature Difference, Air Movement) and some are internal (Insulation Level, Container Surface Area). The student needs to understand what each component represents and how they are organized.
 
 Which of the three methods of heat transfer is responsible for warm air rising above a hot cup of cocoa?
 
@@ -967,11 +907,15 @@ D. Insulation — air traps the heat near the cup
 
 Correct Answer: B
 
-Feedback: Correct! Convection is the transfer of heat through the movement of fluids (liquids and gases). Warm air above the cocoa rises, carrying thermal energy away. Not quite. When warm air rises above a hot drink, that is convection. Convection is heat transfer through the movement of fluids, including air. Warm air is less dense, so it rises.
+Feedback: Correct! Convection is the transfer of heat through the movement of fluids (liquids and gases). Warm air above the cocoa rises, carrying thermal energy away. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-PS3-3, MS-PS3-4 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Temperature Difference increases, Heat Loss Rate increases; when Insulation Level increases, Heat Loss Rate decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the thermal energy model, which variable has a NEGATIVE relationship with heat loss rate?
 
@@ -982,11 +926,15 @@ D. Air Movement — more wind means faster heat loss
 
 Correct Answer: C
 
-Feedback: Correct! Insulation Level has a negative relationship with heat loss. As insulation increases, the rate of heat loss decreases because insulation slows thermal energy transfer. Not quite. Insulation Level has a negative relationship with heat loss rate. More insulation means less heat escapes. The other options (temperature difference, surface area, air movement) all have positive relationships with heat loss.
+Feedback: Correct! Insulation Level has a negative relationship with heat loss. As insulation increases, the rate of heat loss decreases because insulation slows thermal energy transfer. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-PS3-3, MS-PS3-4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Temperature Difference increases, Heat Loss Rate increases and when Insulation Level increases, Heat Loss Rate decreases and when Air Movement increases, Heat Loss Rate increases. The student changes one variable to see how the whole system responds.
 
 Why does a tall, thin mug lose heat faster than a short, wide mug that holds the same amount of cocoa?
 
@@ -997,11 +945,15 @@ D. Short mugs have stronger insulation
 
 Correct Answer: A
 
-Feedback: Correct! A tall, thin mug has more surface area relative to its volume than a short, wide mug. More surface area means more area for heat to escape through conduction and convection. Not quite. The key factor is surface area. A tall, thin mug exposes more surface to the surrounding air, giving heat more area to escape through. This is why mug shape matters for keeping drinks hot.
+Feedback: Correct! A tall, thin mug has more surface area relative to its volume than a short, wide mug. More surface area means more area for heat to escape through conduction and convection. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-PS3-3, MS-PS3-4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student designs two containers: one wrapped in foam and one left bare. Both start at 80 degrees C. After 30 minutes, the foam container is at 65 degrees C and the bare one is at 45 degrees C. What does this evidence show?
 
@@ -1012,25 +964,37 @@ D. Foam changes the boiling point of the liquid inside
 
 Correct Answer: B
 
-Feedback: Correct! The foam insulation slowed the transfer of thermal energy from the hot liquid to the cooler environment. Both containers lost heat, but the insulated one lost it more slowly. Not quite. The foam acts as insulation, which slows thermal energy transfer. Both drinks cooled, but the insulated container lost heat more slowly because the foam reduced conduction through the container walls.
+Feedback: Correct! The foam insulation slowed the transfer of thermal energy from the hot liquid to the cooler environment. Both containers lost heat, but the insulated one lost it more slowly. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-PS3-3, MS-PS3-4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Temperature Difference, Air Movement), but they can take action on internal components (Insulation Level, Container Surface Area). They need to decide which action would be most effective based on what the model shows.
+
+When you hold a hot mug, your hands feel warm. What is happening?
+
+A. Cold is leaving your hands and going into the mug
+B. Heat energy is transferring from the hot mug to your cooler hands
+C. Your hands are creating their own heat in response to the mug
+D. The mug's color is making your hands feel warm
+
+Correct Answer: B
+
+Feedback: Correct! Thermal energy always transfers from warmer objects to cooler objects through direct contact, a process called conduction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-PS3-3, MS-PS3-4, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI MS-PS3-3, MS-PS3-4, CCC5)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI MS-PS3-3, MS-PS3-4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-PS3-3, MS-PS3-4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-PS3-3, MS-PS3-4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: A
-Question 4: B
-
----
 
 ## Resources
 

@@ -919,86 +919,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Backpropagation is the primary algorithm used to train neural networks. Which description best explains what backpropagation does?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ETS1.1 + CCC1 (Patterns)
 
-A. It forwards data through the network to produce a prediction
-B. It calculates how much each connection weight contributed to the prediction error and adjusts weights to reduce that error
-C. It randomly generates new connection weights after each training cycle
-D. It removes neurons that produce incorrect outputs
-
-Correct Answer: B
-
-Feedback: Correct. Backpropagation calculates the gradient of the error with respect to each weight, then adjusts weights in the direction that reduces the error. This process repeats millions of times to gradually improve the network's predictions. Backpropagation works backward from the output error, calculating each weight's contribution to that error, then adjusting weights to reduce the error. It is a systematic optimization process, not random or destructive.
-
----
-
-### Question 2
-
-A neural network achieves 99% accuracy on its training data but only 60% accuracy on new, unseen data. Which concept best explains this discrepancy?
-
-A. The network needs more training time to improve on new data
-B. Overfitting: the network memorized specific training examples rather than learning generalizable patterns
-C. The new data contains errors that confuse the network
-D. The network has too few layers to process new data types
-
-Correct Answer: B
-
-Feedback: Correct. The large gap between training accuracy (99%) and validation accuracy (60%) is the hallmark of overfitting. The network memorized the training examples instead of learning the underlying patterns that would generalize to new data. This gap between training and validation performance is the classic signature of overfitting. The network essentially memorized answers rather than understanding patterns, like a student who memorizes test answers without understanding the concepts.
-
----
-
-### Question 3
-
-Why does training data quality have a more significant impact on neural network fairness than network architecture?
-
-A. Network architecture determines the speed of training but not the quality of outputs
-B. The network never sees the real world directly; it only learns patterns from whatever data humans provide, so biases in the data become biases in the model
-C. Network architecture is always unbiased regardless of training data
-D. Training data quality only affects accuracy, not fairness
-
-Correct Answer: B
-
-Feedback: Correct. A neural network's understanding of the world is entirely derived from its training data. If the data underrepresents certain populations or encodes historical biases, the model will reproduce and potentially amplify those biases. Neural networks learn exclusively from their training data. They have no independent knowledge of the world. If training data is biased, incomplete, or unrepresentative, the model's outputs will reflect and potentially amplify those biases regardless of architecture.
-
----
-
-### Question 4
-
-The learning rate is a critical hyperparameter in neural network training. What happens if the learning rate is set too high?
-
-A. The network trains more slowly but achieves higher accuracy
-B. The network's weight adjustments are too large, causing it to overshoot optimal values and potentially never converge on a good solution
-C. The network automatically adjusts the learning rate to compensate
-D. Training data quality becomes less important at higher learning rates
-
-Correct Answer: B
-
-Feedback: Correct. A learning rate that is too high causes weight updates that are too large, causing the optimization to oscillate wildly or diverge rather than converging on the optimal solution. When the learning rate is too high, each weight adjustment overshoots the optimum. Instead of gradually descending toward the best solution, the network bounces around or diverges, failing to learn effectively.
-
----
-
-### Question 5
-
-Training GPT-4 reportedly cost over $100 million in computational resources. What does this reveal about the relationship between model capability and resource consumption in current AI development?
-
-A. The high cost indicates that the model is inefficient and should use fewer parameters
-B. Current state-of-the-art performance relies on scaling data, parameters, and compute, creating an exponentially increasing resource demand that raises questions about sustainability and access
-C. The cost is a one-time investment that does not recur for future models
-D. More expensive models always produce proportionally better results
-
-Correct Answer: B
-
-Feedback: Correct. The 'scaling paradigm' in AI achieves performance gains by increasing data, parameters, and compute, but each increment of improvement requires exponentially more resources, raising questions about sustainability, energy consumption, and who can afford to build frontier models. The enormous training cost reflects the scaling paradigm: bigger models with more data and compute produce better results, but the resource requirements grow exponentially. This raises fundamental questions about sustainability and whether only a few organizations can afford frontier AI.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Training Data Volume, Training Data Quality, Network Depth, Learning Rate, Prediction Accuracy, Overfitting Risk, Computational Cost. Some components are external (Training Data Volume, Training Data Quality, Network Depth, Learning Rate) and some are internal (Prediction Accuracy, Overfitting Risk, Computational Cost). The student needs to understand what each component represents and how they are organized.
 
 A student's neural network model shows that increasing network depth from 5 to 20 layers improves pattern recognition accuracy from 75% to 92% but increases overfitting risk from 10% to 45%. What is the most scientifically sound interpretation of this trade-off?
 
@@ -1009,11 +934,15 @@ D. Reducing depth to 1 layer would eliminate overfitting while maintaining accur
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a nonlinear trade-off: accuracy gains diminish with depth while overfitting risk accelerates. Optimal design requires finding the depth that maximizes the gap between genuine pattern learning and memorization. The data shows diminishing accuracy returns (75% to 92%) against accelerating overfitting risk (10% to 45%). Optimal network design must balance the representational power of deeper networks against their tendency to memorize rather than generalize.
+Feedback: Correct. The model reveals a nonlinear trade-off: accuracy gains diminish with depth while overfitting risk accelerates. Optimal design requires finding the depth that maximizes the gap between genuine pattern learning and memorization. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ETS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Training Data Quality increases, Prediction Accuracy increases; when Network Depth increases, Overfitting Risk increases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, a student trains two identical networks on the same task, one with a diverse, representative dataset and one with a dataset that overrepresents one demographic group. Both achieve 90% overall accuracy. Why does the second network pose a fairness problem despite equal overall accuracy?
 
@@ -1024,11 +953,15 @@ D. Demographic composition of training data does not affect neural network outpu
 
 Correct Answer: A
 
-Feedback: Correct. Aggregate accuracy can hide severe disparities. A model trained on biased data may achieve 98% accuracy on the overrepresented group and 60% on others, averaging to 90% overall but performing unacceptably for underrepresented populations. Overall accuracy is a misleading metric when data is biased. The biased network likely achieves high accuracy on the overrepresented group and much lower accuracy on underrepresented groups, creating discriminatory performance that is hidden by the aggregate number.
+Feedback: Correct. Aggregate accuracy can hide severe disparities. A model trained on biased data may achieve 98% accuracy on the overrepresented group and 60% on others, averaging to 90% overall but performing unacceptably for underrepresented populations. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ETS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Training Data Quality increases, Prediction Accuracy increases and when Network Depth increases, Overfitting Risk increases and when Training Data Volume increases, Computational Cost increases. The student changes one variable to see how the whole system responds.
 
 The model demonstrates that reducing the learning rate from 0.01 to 0.001 increases training time by 10x but reduces the loss function value by 30%. A student proposes using the higher learning rate to save time. What critical factor does this proposal overlook?
 
@@ -1039,11 +972,15 @@ D. The 10x time increase can be eliminated by using fewer training examples
 
 Correct Answer: B
 
-Feedback: Correct. The 30% improvement in loss function represents meaningfully better pattern learning. The higher learning rate saves time but risks suboptimal convergence. The trade-off between training cost and model quality must be evaluated against the application's requirements. A higher learning rate often settles in suboptimal solutions because it overshoots better minima. The 30% loss improvement from the lower rate represents substantially better learning quality. For high-stakes applications, the 10x time investment may be essential.
+Feedback: Correct. The 30% improvement in loss function represents meaningfully better pattern learning. The higher learning rate saves time but risks suboptimal convergence. The trade-off between training cost and model quality must be evaluated against the application's requirements. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ETS1.1 + CCC3 (Scale, Proportion, and Quantity)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student observes that their model's computational cost scales quadratically with the number of parameters but performance improvements scale logarithmically. What does this relationship predict about the long-term sustainability of the 'scale everything up' approach to AI?
 
@@ -1054,11 +991,15 @@ D. The logarithmic performance curve indicates that AI has reached its maximum c
 
 Correct Answer: B
 
-Feedback: Correct. When costs grow quadratically but returns grow logarithmically, each increment of improvement becomes dramatically more expensive. This divergence predicts that pure scaling will hit economic and environmental limits, requiring new approaches. The divergence between quadratic cost growth and logarithmic performance improvement means each additional unit of capability costs far more than the last. This trajectory is unsustainable and implies that continued AI progress will require algorithmic innovations, not just bigger models.
+Feedback: Correct. When costs grow quadratically but returns grow logarithmically, each increment of improvement becomes dramatically more expensive. This divergence predicts that pure scaling will hit economic and environmental limits, requiring new approaches. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ETS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Training Data Volume, Training Data Quality, Network Depth, Learning Rate), but they can take action on internal components (Prediction Accuracy, Overfitting Risk, Computational Cost). They need to decide which action would be most effective based on what the model shows.
 
 Based on the neural network model, which conclusion about the relationship between training data volume and model generalization is best supported by the simulation?
 
@@ -1069,27 +1010,18 @@ D. Generalization decreases with more training data because the network becomes 
 
 Correct Answer: B
 
-Feedback: Correct. The model shows diminishing returns from data volume. After the network captures the distribution's primary patterns, additional identical data provides little benefit. Data quality and diversity, ensuring all subgroups and edge cases are represented, become more important than raw volume. Data volume helps generalization but with diminishing returns. Once the primary patterns are learned, adding more data of the same type provides minimal benefit. At that point, data quality and diversity, covering edge cases and underrepresented scenarios, become the limiting factors.
+Feedback: Correct. The model shows diminishing returns from data volume. After the network captures the distribution's primary patterns, additional identical data provides little benefit. Data quality and diversity, ensuring all subgroups and edge cases are represented, become more important than raw volume. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ETS1.1, CCC1)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI ETS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ETS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ETS1.1, CCC3)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ETS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

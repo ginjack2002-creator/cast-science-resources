@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why do you think bees visit flowers?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
 
-A. Bees like to smell the flowers
-B. Bees drink a sugary liquid called nectar from inside the flowers
-C. Bees are lost and looking for their hive
-D. Bees want to sting the flowers
-
-Correct Answer: B
-
-Feedback: That is right! Bees visit flowers to drink nectar, a sweet liquid that flowers make. While drinking, pollen sticks to the bee's fuzzy body. Bees visit flowers for food. Flowers make a sweet liquid called nectar that bees drink. While the bee drinks, pollen sticks to its fuzzy body.
-
----
-
-### Question 2
-
-What do you think happens to a flower's pollen when a bee visits?
-
-A. The bee eats all the pollen
-B. Pollen sticks to the bee's body and gets carried to the next flower
-C. The pollen falls on the ground and is wasted
-D. Nothing happens to the pollen
-
-Correct Answer: B
-
-Feedback: Correct! Sticky pollen hitches a ride on the bee's fuzzy body. When the bee visits the next flower, some pollen falls off and pollinates that flower. When a bee visits a flower, sticky pollen attaches to its fuzzy body. The bee then carries this pollen to the next flower it visits, helping the plant reproduce.
-
----
-
-### Question 3
-
-What do you think would happen if there were no bees?
-
-A. Nothing would change
-B. Flowers would still make fruit on their own
-C. Many plants could not make fruit or seeds, and we would have less food
-D. Only beeswax would disappear
-
-Correct Answer: C
-
-Feedback: Great thinking! Without bees and other pollinators, many plants could not make fruit or seeds. About 75% of our food crops need pollinators. Bees are essential for most plants to make fruit and seeds. Without bees, many of our favorite foods like apples, strawberries, and almonds would not grow.
-
----
-
-### Question 4
-
-Which of these is an example of a pollinator?
-
-A. A rock
-B. A butterfly
-C. A fish
-D. A pencil
-
-Correct Answer: B
-
-Feedback: Yes! Butterflies are pollinators, just like bees, hummingbirds, and bats. They all carry pollen from flower to flower. A pollinator is an animal that carries pollen between flowers. Butterflies, bees, hummingbirds, and bats are all pollinators.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Pollinator Visits, Pollination Success, Fruit Production. Some components are external (Pollinator Visits) and some are internal (Pollination Success, Fruit Production). The student needs to understand what each component represents and how they are organized.
 
 In the pollination model, when Pollinator Visits increase, what happens to Pollination Success?
 
@@ -904,11 +844,15 @@ D. Pollination Success disappears
 
 Correct Answer: B
 
-Feedback: Correct! Pollinator Visits and Pollination Success have a positive relationship. More bee visits means more flowers receive pollen and can start making seeds. More pollinator visits means more flowers get pollen delivered to them. When Pollinator Visits go up, Pollination Success goes up too. This is a positive relationship.
+Feedback: Correct! Pollinator Visits and Pollination Success have a positive relationship. More bee visits means more flowers receive pollen and can start making seeds. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Pollinator Visits increases, Pollination Success increases; when Pollination Success increases, Fruit Production increases. The student is trying to understand why these relationships are positive or negative.
 
 What does interdependence mean in the relationship between bees and flowers?
 
@@ -919,11 +863,15 @@ D. Only flowers need bees, but bees do not need flowers
 
 Correct Answer: C
 
-Feedback: Exactly! Interdependence means they BOTH need each other. Bees need flower nectar for food, and flowers need bees to carry pollen so they can make seeds and fruit. Interdependence means two living things need EACH OTHER. Bees depend on flowers for nectar (food), and flowers depend on bees to spread their pollen. Neither can thrive without the other.
+Feedback: Exactly! Interdependence means they BOTH need each other. Bees need flower nectar for food, and flowers need bees to carry pollen so they can make seeds and fruit. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Pollinator Visits increases, Pollination Success increases and when Pollination Success increases, Fruit Production increases. The student changes one variable to see how the whole system responds.
 
 In the 'No Pollinators' scenario, what happened to Fruit Production?
 
@@ -934,11 +882,15 @@ D. Fruit Production doubled
 
 Correct Answer: C
 
-Feedback: You got it! With no pollinators visiting, no pollen moves between flowers. Without pollination, plants cannot make fruit or seeds, so Fruit Production drops to near zero. Without pollinators, no pollen is carried from flower to flower. Plants need pollination to make fruit and seeds. With zero pollinator visits, fruit production drops to very low or zero.
+Feedback: You got it! With no pollinators visiting, no pollen moves between flowers. Without pollination, plants cannot make fruit or seeds, so Fruit Production drops to near zero. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 About what percentage of food crops depend on pollinators like bees?
 
@@ -949,25 +901,37 @@ D. About 75%
 
 Correct Answer: D
 
-Feedback: Right! About 75% of food crops depend on pollinators. That includes apples, strawberries, almonds, chocolate, and many more foods we eat every day. About 75% of the food crops that humans eat depend on pollinators like bees, butterflies, and hummingbirds. Without pollinators, most of our favorite foods would disappear.
+Feedback: Right! About 75% of food crops depend on pollinators. That includes apples, strawberries, almonds, chocolate, and many more foods we eat every day. If you chose A, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Pollinator Visits), but they can take action on internal components (Pollination Success, Fruit Production). They need to decide which action would be most effective based on what the model shows.
+
+Why do you think bees visit flowers?
+
+A. Bees like to smell the flowers
+B. Bees drink a sugary liquid called nectar from inside the flowers
+C. Bees are lost and looking for their hive
+D. Bees want to sting the flowers
+
+Correct Answer: B
+
+Feedback: That is right! Bees visit flowers to drink nectar, a sweet liquid that flowers make. While drinking, pollen sticks to the bee's fuzzy body. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
+Question 4: D (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: D
-
----
 
 ## Resources
 

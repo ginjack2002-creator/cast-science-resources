@@ -730,73 +730,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do you need to make a shadow?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.3 + CCC4 (Systems and System Models)
 
-A. Darkness and a blanket
-B. Light and something to block it
-C. Paint and paper
-
-Correct Answer: B
-
-Feedback: Yes! You need a light and something that blocks it to make a shadow. A shadow is made when something stands in the way of light and blocks it.
-
----
-
-### Question 2
-
-Where does a shadow appear?
-
-A. In front of the light
-B. On the same side as the light
-C. Behind the object, away from the light
-
-Correct Answer: C
-
-Feedback: That is right! A shadow appears behind the object, on the side away from the light. Shadows appear behind objects because that is where the light cannot reach.
-
----
-
-### Question 3
-
-Can you make a shadow with a clear glass cup?
-
-A. Yes, everything makes a shadow
-B. No, because light goes through clear glass
-C. Only if the cup is full of water
-
-Correct Answer: B
-
-Feedback: Yes! Clear glass lets light pass through, so it does not block the light to make a shadow. Light passes through clear glass. Since nothing is blocked, no shadow is made.
-
----
-
-### Question 4
-
-Is a shadow alive?
-
-A. Yes, shadows are alive
-B. No, a shadow is just a dark area where light is blocked
-C. Yes, shadows follow you
-
-Correct Answer: B
-
-Feedback: That is right! Shadows are not alive. They are just dark spots where light cannot reach. Shadows are not alive. They are simply dark areas that appear when something blocks the light.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Light Position, Shadow Size. Some components are external (Light Position) and some are internal (Shadow Size). The student needs to understand what each component represents and how they are organized.
 
 What is a light source?
 
@@ -806,11 +750,15 @@ C. A shadow on the wall
 
 Correct Answer: B
 
-Feedback: Yes! A light source is something that makes light, like the sun, a flashlight, or a lamp. A light source is anything that produces light, such as the sun, a flashlight, or a lamp.
+Feedback: Yes! A light source is something that makes light, like the sun, a flashlight, or a lamp. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Light Position increases, Shadow Size increases. The student is trying to understand why these relationships are positive or negative.
 
 When the light is CLOSER to an object, what happens to the shadow?
 
@@ -820,11 +768,15 @@ C. The shadow gets bigger
 
 Correct Answer: C
 
-Feedback: That is right! When the light moves closer to the object, the shadow gets bigger. Moving the light closer makes the object block more light, which creates a bigger shadow.
+Feedback: That is right! When the light moves closer to the object, the shadow gets bigger. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Light Position increases, Shadow Size increases. The student changes one variable to see how the whole system responds.
 
 When the light is FAR from an object, what happens to the shadow?
 
@@ -834,11 +786,15 @@ C. The shadow turns colors
 
 Correct Answer: B
 
-Feedback: Yes! When the light is farther away, the shadow gets smaller. Moving the light farther away means the object blocks less of the total light, making a smaller shadow.
+Feedback: Yes! When the light is farther away, the shadow gets smaller. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 You want to make a GIANT shadow puppet on the wall. What should you do?
 
@@ -848,25 +804,36 @@ C. Move the flashlight close to the puppet
 
 Correct Answer: C
 
-Feedback: Yes! Moving the light closer to the puppet makes the shadow much bigger. That is the trick shadow puppeteers use! To make a bigger shadow, move the light closer to the object. The closer the light, the bigger the shadow.
+Feedback: Yes! Moving the light closer to the puppet makes the shadow much bigger. That is the trick shadow puppeteers use! If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Light Position), but they can take action on internal components (Shadow Size). They need to decide which action would be most effective based on what the model shows.
+
+What do you need to make a shadow?
+
+A. Darkness and a blanket
+B. Light and something to block it
+C. Paint and paper
+
+Correct Answer: B
+
+Feedback: Yes! You need a light and something that blocks it to make a shadow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

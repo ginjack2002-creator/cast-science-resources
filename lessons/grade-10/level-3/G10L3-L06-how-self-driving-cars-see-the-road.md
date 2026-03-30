@@ -907,86 +907,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A self-driving car uses LIDAR, cameras, and radar simultaneously. Why is this multi-sensor approach (sensor fusion) more reliable than using any single sensor?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.2 + CCC4 (Systems and System Models)
 
-A. More sensors make the car look more advanced and increase consumer confidence
-B. Each sensor type excels in different conditions and detects different properties — LIDAR provides 3D mapping, cameras provide color and sign recognition, radar works in all weather — so combining them creates redundancy where one sensor's weakness is covered by another's strength
-C. Using three sensors makes the car exactly three times safer
-D. Single sensors are never used in any vehicle application
-
-Correct Answer: B
-
-Feedback: Correct. Sensor fusion combines complementary strengths: LIDAR provides precise 3D spatial mapping but fails in rain, cameras provide color/texture for classification but struggle in fog, and radar measures velocity and penetrates weather but lacks spatial detail. Together, they create a perception model more robust than any single source. Consider what each sensor type is good at and what it struggles with. LIDAR fires lasers, cameras capture visible light, and radar uses radio waves. Each interacts with the environment differently.
-
----
-
-### Question 2
-
-An autonomous vehicle's decision latency is 200 milliseconds, while a human driver's reaction time is approximately 1,500 milliseconds. At 60 mph (27 m/s), how much additional stopping distance does the human driver need compared to the autonomous system?
-
-A. Approximately 5 meters (negligible difference)
-B. Approximately 15 meters (the human needs about 35 meters of reaction distance versus the car's 5.4 meters)
-C. Approximately 35 meters (the human needs about 40 meters versus 5.4 meters)
-D. The difference depends on the type of obstacle, not the reaction time
-
-Correct Answer: C
-
-Feedback: Correct. Human reaction distance = 27 m/s x 1.5 s = 40.5 m. AV reaction distance = 27 m/s x 0.2 s = 5.4 m. The difference is approximately 35 meters — enough to determine whether a collision occurs. This demonstrates the reaction time advantage of autonomous systems. Calculate distance = speed x time for both reaction times. At 27 m/s, how far does the vehicle travel during 1.5 seconds (human) versus 0.2 seconds (autonomous)?
-
----
-
-### Question 3
-
-An autonomous vehicle encounters an object it cannot classify with high confidence — a deflated mylar balloon in the road. This situation is called an 'edge case.' Why are edge cases particularly dangerous for autonomous systems?
-
-A. Edge cases cause the sensors to malfunction permanently
-B. The system's machine learning models were trained on common scenarios and may misclassify novel objects — stopping for a harmless balloon wastes time, but driving over an object misidentified as harmless could be fatal
-C. Edge cases only occur in bad weather, so they are easily avoided
-D. Human drivers also cannot handle edge cases, so it is not a unique autonomous vehicle problem
-
-Correct Answer: B
-
-Feedback: Correct. Edge cases expose the fundamental limitation of pattern-matching AI: it excels at recognizing common objects from training data but struggles with novel situations. Humans use general intelligence and common sense to assess unknown objects; autonomous systems must choose between stopping (safe but potentially disruptive) or proceeding (efficient but potentially dangerous). Consider how the system decides what to do with an object. It compares what it sees to patterns it learned during training. What happens when the object does not match any learned pattern?
-
----
-
-### Question 4
-
-During heavy rain, a self-driving car's LIDAR loses 60% of its effectiveness because laser pulses scatter off water droplets. Which alternative sensor is LEAST affected by rain and could compensate?
-
-A. Additional LIDAR units mounted at different angles
-B. High-resolution cameras, which also use visible light affected by rain
-C. Radar, which uses radio waves that penetrate rain, fog, and snow with minimal degradation
-D. Ultrasonic sensors, which have sufficient range to replace LIDAR
-
-Correct Answer: C
-
-Feedback: Correct. Radar uses radio waves (centimeter wavelengths) that pass through rain droplets with minimal scattering, unlike LIDAR (near-infrared, micrometer wavelengths) and cameras (visible light) which are significantly degraded. This is why sensor fusion is essential — radar provides reliable distance and velocity data when other sensors fail. Consider the wavelength of each sensor's emissions relative to the size of rain droplets. Longer wavelengths pass through small obstacles more easily than shorter wavelengths.
-
----
-
-### Question 5
-
-An autonomous vehicle maintains a safety margin — a buffer distance beyond the minimum required for safe braking. Increasing this margin makes the car safer but has a trade-off. What is the primary trade-off?
-
-A. Larger safety margins require more fuel, increasing emissions
-B. Larger margins cause the car to brake earlier, drive slower, and create gaps in traffic flow — reducing efficiency and potentially frustrating other drivers who may drive unpredictably in response
-C. Larger margins increase the risk of rear-end collisions from following vehicles
-D. There is no trade-off — larger safety margins are always better in every way
-
-Correct Answer: B
-
-Feedback: Correct. The safety margin trade-off is both an engineering and societal question. Overly conservative driving reduces throughput, increases congestion, and may cause human drivers to behave aggressively around the autonomous vehicle. Finding the optimal margin balances individual safety against traffic flow and social integration. Think about what happens when a car maintains very large following distances and brakes much earlier than necessary. How does this affect the overall traffic system and other drivers?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: LIDAR Pulse Frequency, Detection Range, Signal Processing Speed, Obstacle Classification, Weather Interference, Decision Latency, Sensor Fusion Accuracy, Route Optimization, Safety Margin. Some components are external (LIDAR Pulse Frequency, Weather Interference) and some are internal (Detection Range, Signal Processing Speed, Obstacle Classification, Decision Latency, Sensor Fusion Accuracy, Route Optimization, Safety Margin). The student needs to understand what each component represents and how they are organized.
 
 The model shows that in heavy rain, LIDAR performance drops 60%, camera drops 40%, but radar drops only 10%. Despite these individual degradations, Sensor Fusion Accuracy drops by only 25%. What system property explains this resilience?
 
@@ -997,11 +922,15 @@ D. Rain does not actually affect autonomous vehicle performance in real systems
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates the core value of sensor fusion: when individual sensors degrade at different rates due to environmental conditions, the fusion algorithm shifts weighting toward the most reliable sensor. This built-in redundancy maintains system-level performance above any single sensor's degraded level. Consider what happens when the fusion algorithm knows that LIDAR and cameras are less reliable in rain. Can it adjust how much it trusts each sensor's data? What sensor remains reliable?
+Feedback: Correct. The model demonstrates the core value of sensor fusion: when individual sensors degrade at different rates due to environmental conditions, the fusion algorithm shifts weighting toward the most reliable sensor. This built-in redundancy maintains system-level performance above any single sensor's degraded level. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when LIDAR Pulse Frequency increases, Detection Range increases; when Weather Interference increases, Sensor Fusion Accuracy decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the edge case scenario, the model shows Obstacle Classification confidence dropping below 50% for a novel object. The system responds by expanding Safety Margin and reducing speed. What decision-making principle does this represent?
 
@@ -1012,11 +941,15 @@ D. Speed reduction is the only response the system has to any anomaly
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates a fundamental safety principle: when the perception system has low confidence, the decision system compensates by increasing safety margins. This buys time for additional sensor data, allows the object to be observed from closer range, and provides the option for human takeover. Think about what a cautious human driver would do when encountering something unexpected on the road. Would they speed up, maintain speed, or slow down? Why?
+Feedback: Correct. The model demonstrates a fundamental safety principle: when the perception system has low confidence, the decision system compensates by increasing safety margins. This buys time for additional sensor data, allows the object to be observed from closer range, and provides the option for human takeover. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when LIDAR Pulse Frequency increases, Detection Range increases and when Weather Interference increases, Sensor Fusion Accuracy decreases and when Sensor Fusion Accuracy increases, Decision Latency decreases. The student changes one variable to see how the whole system responds.
 
 The model classifies LIDAR Pulse Frequency and Weather Interference as external variables. Why is Weather Interference classified as external even though it directly affects sensor performance?
 
@@ -1027,11 +960,15 @@ D. The classification is incorrect and should be changed
 
 Correct Answer: B
 
-Feedback: Correct. External variables represent conditions imposed on the system from outside. The autonomous vehicle cannot change the weather — it can only respond to it. Weather Interference is an environmental input that affects system performance but is not controlled by the system. Ask: can the autonomous vehicle control the weather? If not, weather is an environmental condition the system must deal with, not a system property it can adjust.
+Feedback: Correct. External variables represent conditions imposed on the system from outside. The autonomous vehicle cannot change the weather — it can only respond to it. Weather Interference is an environmental input that affects system performance but is not controlled by the system. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.2 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model predicts that Decision Latency increases from 150 ms in clear conditions to 350 ms in the edge case scenario. What system interaction causes this increase?
 
@@ -1042,11 +979,15 @@ D. The increase is caused by physical distance to the obstacle, not processing t
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals an important trade-off: when the system encounters an ambiguous object, it spends more time trying to classify it correctly before deciding on an action. This is the speed-accuracy trade-off — taking longer to decide increases accuracy but also increases the distance traveled before responding. Consider what the system does when it encounters an object it cannot quickly classify. Does it immediately decide, or does it run additional analysis to improve classification confidence?
+Feedback: Correct. The model reveals an important trade-off: when the system encounters an ambiguous object, it spends more time trying to classify it correctly before deciding on an action. This is the speed-accuracy trade-off — taking longer to decide increases accuracy but also increases the distance traveled before responding. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (LIDAR Pulse Frequency, Weather Interference), but they can take action on internal components (Detection Range, Signal Processing Speed, Obstacle Classification, Decision Latency, Sensor Fusion Accuracy, Route Optimization, Safety Margin). They need to decide which action would be most effective based on what the model shows.
 
 A student argues that autonomous vehicles should not be deployed until they can handle 100% of edge cases correctly. Based on the model, what is the most scientifically valid evaluation of this standard?
 
@@ -1057,27 +998,18 @@ D. Human drivers handle 100% of edge cases correctly, so autonomous vehicles sho
 
 Correct Answer: B
 
-Feedback: Correct. The real world presents an effectively infinite set of possible situations. No system — human or autonomous — handles all of them correctly. The model shows that the engineering solution is not perfect classification but safe degradation: when confidence is low, the system increases caution and can hand control to a human driver. Consider whether it is possible to train a system on every possible situation it might ever encounter. Also consider: do human drivers handle 100% of situations correctly? The relevant question is how the system responds when it encounters uncertainty.
+Feedback: Correct. The real world presents an effectively infinite set of possible situations. No system — human or autonomous — handles all of them correctly. The model shows that the engineering solution is not perfect classification but safe degradation: when confidence is low, the system increases caution and can hand control to a human driver. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.2, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -867,77 +867,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-PS4-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is sound?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.1 + CCC4 (Systems and System Models)
 
-A. An invisible gas that floats through the air
-B. Vibrations that travel through air, water, or other materials
-C. A type of light that our ears can detect
-D. Something that only exists when music is playing
-
-Correct Answer: B
-
-Feedback: That is right! Sound is made of vibrations. When something vibrates, it pushes air molecules back and forth, creating sound waves. Sound is not a gas or a type of light. Sound is actually vibrations that travel through materials like air, water, or even solid objects.
-
----
-
-### Question 2
-
-Why is a shout louder than a whisper?
-
-A. A shout uses different air molecules than a whisper
-B. A shout pushes more air and makes bigger vibrations
-C. A shout travels faster through the air
-D. A shout creates a different type of sound wave
-
-Correct Answer: B
-
-Feedback: Correct! When you shout, you push more air with more force, creating bigger vibrations (larger amplitude), which your ears hear as louder sound. Loud and quiet sounds travel at the same speed through air. The difference is how big the vibrations are. Shouting pushes more air, making bigger vibrations.
-
----
-
-### Question 3
-
-Can sound travel through outer space?
-
-A. Yes, sound travels everywhere
-B. Yes, but only very loud sounds
-C. No, because there is no air or material for sound to travel through
-D. No, because space is too cold for sound
-
-Correct Answer: C
-
-Feedback: Right! Sound needs a material (like air, water, or a solid) to travel through. Space is a vacuum with almost no molecules, so sound cannot travel there. Temperature is not the reason. Sound needs molecules to vibrate and carry the wave. In space, there are almost no molecules, so sound cannot travel.
-
----
-
-### Question 4
-
-How does a phone know you are talking to it?
-
-A. It reads your lips through the camera
-B. It has a tiny person inside listening
-C. It has a microphone that vibrates when sound waves hit it
-D. It guesses what you might be saying
-
-Correct Answer: C
-
-Feedback: Exactly! A phone's microphone has a small part called a diaphragm that vibrates when sound waves hit it, turning your voice into electrical signals. Phones detect your voice using a microphone. The microphone has a tiny part inside that vibrates when sound waves from your voice hit it.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sound Wave Strength, Vibration Size, Volume Level. Some components are external (Sound Wave Strength) and some are internal (Vibration Size, Volume Level). The student needs to understand what each component represents and how they are organized.
 
 What is amplitude?
 
@@ -948,11 +888,15 @@ D. The number of waves that pass by in one second
 
 Correct Answer: C
 
-Feedback: That is right! Amplitude is the size of the wave from top to bottom. Bigger amplitude means the air molecules move farther back and forth, creating a louder sound. Amplitude is not about speed or pitch. It measures how big the wave is. Larger amplitude means louder sound because the air molecules vibrate more.
+Feedback: That is right! Amplitude is the size of the wave from top to bottom. Bigger amplitude means the air molecules move farther back and forth, creating a louder sound. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sound Wave Strength increases, Vibration Size increases; when Vibration Size increases, Volume Level increases. The student is trying to understand why these relationships are positive or negative.
 
 In the sound wave model, Sound Wave Strength is an external component. Vibration Size and Volume Level are internal components. Why?
 
@@ -963,11 +907,15 @@ D. Because external means louder and internal means quieter
 
 Correct Answer: B
 
-Feedback: Correct! Sound wave strength is external because the speaker controls it. Vibration size and volume level are internal because they change as a result of how strong the sound source is. In a model, external components are things we can control. Internal components are things that change in response. The speaker controls sound strength, and vibration size and volume change as a result.
+Feedback: Correct! Sound wave strength is external because the speaker controls it. Vibration size and volume level are internal because they change as a result of how strong the sound source is. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sound Wave Strength increases, Vibration Size increases and when Vibration Size increases, Volume Level increases. The student changes one variable to see how the whole system responds.
 
 A student plucks a guitar string gently, then plucks it hard. The hard pluck makes a louder sound. Which best explains why?
 
@@ -978,11 +926,15 @@ D. The hard pluck creates a higher-pitched sound that seems louder
 
 Correct Answer: A
 
-Feedback: Exactly! Plucking harder makes the string vibrate more, creating sound waves with larger amplitude. Larger amplitude means louder sound. Plucking harder does not change speed or pitch. It makes the string vibrate with bigger movements (larger amplitude), which creates louder sound waves.
+Feedback: Exactly! Plucking harder makes the string vibrate more, creating sound waves with larger amplitude. Larger amplitude means louder sound. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that when sound wave strength increases, vibration size increases, and volume level increases. This is an example of what kind of relationship?
 
@@ -993,25 +945,37 @@ D. A random relationship because it changes every time
 
 Correct Answer: B
 
-Feedback: Right! This is a positive relationship. When sound wave strength increases, vibration size increases, and volume level increases. They all go up together in a cause-and-effect chain. When one component increases and another also increases, that is a positive relationship. All three components increase together in a direct chain.
+Feedback: Right! This is a positive relationship. When sound wave strength increases, vibration size increases, and volume level increases. They all go up together in a cause-and-effect chain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sound Wave Strength), but they can take action on internal components (Vibration Size, Volume Level). They need to decide which action would be most effective based on what the model shows.
+
+What is sound?
+
+A. An invisible gas that floats through the air
+B. Vibrations that travel through air, water, or other materials
+C. A type of light that our ears can detect
+D. Something that only exists when music is playing
+
+Correct Answer: B
+
+Feedback: That is right! Sound is made of vibrations. When something vibrates, it pushes air molecules back and forth, creating sound waves. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: A
-Question 4: B
-
----
 
 ## Resources
 

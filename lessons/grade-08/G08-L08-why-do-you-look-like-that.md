@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS3-1, MS-LS3-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Humans have 46 chromosomes. How many come from each parent?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS3-1, MS-LS3-2 + CCC4 (Systems and System Models)
 
-A. 46 from the mother and 46 from the father
-B. 23 from each parent
-C. All 46 from the mother; the father contributes none
-D. It varies randomly from person to person
-
-Correct Answer: B
-
-Feedback: Correct! Humans inherit 23 chromosomes from each parent, for a total of 46. This is why you share traits with both parents but are not identical to either. During sexual reproduction, each parent contributes 23 chromosomes through their reproductive cells (egg and sperm), resulting in offspring with 46 chromosomes total.
-
----
-
-### Question 2
-
-What is a gene?
-
-A. A type of clothing brand
-B. A segment of DNA that contains instructions for a specific protein or trait
-C. A complete chromosome that determines all traits at once
-D. A chemical that only controls hair and eye color
-
-Correct Answer: B
-
-Feedback: Correct! A gene is a segment of DNA on a chromosome that provides instructions for making a specific protein, which in turn influences a trait. A gene is a specific segment of DNA located on a chromosome. It contains the instructions for making a particular protein, which contributes to an organism's traits.
-
----
-
-### Question 3
-
-Two brown-eyed parents have a child with blue eyes. How is this possible?
-
-A. It is impossible; brown-eyed parents can only have brown-eyed children
-B. The child's eye color was determined by environmental factors, not genes
-C. Both parents may carry a hidden (recessive) blue eye gene that they each passed to the child
-D. The child mutated spontaneously to develop blue eyes
-
-Correct Answer: C
-
-Feedback: Correct! Brown eye color is dominant over blue. Both parents can be carriers of the recessive blue allele (Bb) without showing it. If both pass on the recessive allele, the child is bb (blue eyes). Brown-eyed parents can have blue-eyed children if both carry a recessive blue eye allele. They would each have the genotype Bb (heterozygous). When both pass on their recessive b allele, the child is bb and expresses blue eyes.
-
----
-
-### Question 4
-
-Why are siblings who share the same parents not identical to each other (unless they are identical twins)?
-
-A. Siblings receive different amounts of DNA from their parents
-B. Each sibling receives a different random combination of alleles from the same parents
-C. Only the first-born child inherits genes from both parents
-D. Siblings are only related to one parent, not both
-
-Correct Answer: B
-
-Feedback: Correct! Each parent has two alleles for every gene and randomly passes on one. The specific combination each sibling receives is different, creating genetic uniqueness. Each reproductive cell (egg or sperm) contains a random assortment of alleles. Since each parent randomly passes on one of their two alleles for every gene, each sibling receives a unique combination.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Parent 1 Alleles, Parent 2 Alleles, Offspring Genotype, Trait Expression (Phenotype). Some components are external (Parent 1 Alleles, Parent 2 Alleles) and some are internal (Offspring Genotype, Trait Expression (Phenotype)). The student needs to understand what each component represents and how they are organized.
 
 In the model, when both parents were set to Bb (heterozygous) for a trait, the offspring showed a 3:1 phenotype ratio. What does this ratio mean?
 
@@ -967,11 +907,15 @@ D. 3 offspring survive and 1 does not
 
 Correct Answer: B
 
-Feedback: Correct! In a Bb x Bb cross, the possible genotypes are BB, Bb, Bb, and bb. Three out of four (BB, Bb, Bb) express the dominant phenotype, while one (bb) expresses the recessive phenotype. The 3:1 ratio refers to phenotype expression. From a Bb x Bb cross, three possible genotypes (BB, Bb, Bb) show the dominant trait, while one (bb) shows the recessive trait. This is about trait expression, not survival or trait strength.
+Feedback: Correct! In a Bb x Bb cross, the possible genotypes are BB, Bb, Bb, and bb. Three out of four (BB, Bb, Bb) express the dominant phenotype, while one (bb) expresses the recessive phenotype. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS3-1, MS-LS3-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Parent 1 Alleles increases, Offspring Genotype increases; when Parent 2 Alleles increases, Offspring Genotype increases. The student is trying to understand why these relationships are positive or negative.
 
 Your model showed that a Bb x bb cross produced offspring that were 50% Bb and 50% bb. A student claims the recessive parent 'weakened' the dominant trait. Using the model, what is the correct explanation?
 
@@ -982,11 +926,15 @@ D. Allele inheritance depends on which parent is taller
 
 Correct Answer: B
 
-Feedback: Correct! Alleles are not weakened or strengthened. The Bb parent randomly passes either B or b with equal probability. The bb parent can only pass b. So offspring are either Bb (dominant phenotype) or bb (recessive phenotype). Recessive alleles do not weaken dominant ones. Inheritance is about random allele distribution. The Bb parent has a 50% chance of passing B and 50% of passing b. The bb parent always passes b. This produces a 1:1 ratio of Bb to bb offspring.
+Feedback: Correct! Alleles are not weakened or strengthened. The Bb parent randomly passes either B or b with equal probability. The bb parent can only pass b. So offspring are either Bb (dominant phenotype) or bb (recessive phenotype). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS3-1, MS-LS3-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Parent 1 Alleles increases, Offspring Genotype increases and when Parent 2 Alleles increases, Offspring Genotype increases and when Offspring Genotype increases, Trait Expression increases. The student changes one variable to see how the whole system responds.
 
 The model demonstrates that sexual reproduction produces offspring with genetic variation, while asexual reproduction produces genetically identical offspring. Why is genetic variation important for species survival?
 
@@ -997,11 +945,15 @@ D. Variation only matters for plants, not animals
 
 Correct Answer: B
 
-Feedback: Correct! Genetic variation is the raw material for natural selection. When the environment changes, a genetically diverse population is more likely to include individuals with traits suited to the new conditions, preventing extinction. Genetic variation provides a survival advantage for populations. If all individuals were genetically identical, a single disease or environmental change could wipe out the entire population. Variation ensures some individuals may have traits suited to new conditions.
+Feedback: Correct! Genetic variation is the raw material for natural selection. When the environment changes, a genetically diverse population is more likely to include individuals with traits suited to the new conditions, preventing extinction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS3-1, MS-LS3-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the STEM challenge, you used genotype and phenotype data to identify the parents of an unknown cub. The cub expressed a recessive trait (bb). Which parent combinations could NOT have produced this cub?
 
@@ -1012,25 +964,37 @@ D. bb x bb (both homozygous recessive)
 
 Correct Answer: C
 
-Feedback: Correct! BB x BB can only produce BB offspring. Since the cub is bb (two recessive alleles), at least one b allele must come from each parent. Two BB parents cannot provide any b alleles. A bb offspring must inherit one b allele from each parent. If both parents are BB, they have no b alleles to pass on. Only parents with at least one b allele each (Bb or bb) can produce bb offspring.
+Feedback: Correct! BB x BB can only produce BB offspring. Since the cub is bb (two recessive alleles), at least one b allele must come from each parent. Two BB parents cannot provide any b alleles. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS3-1, MS-LS3-2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Parent 1 Alleles, Parent 2 Alleles), but they can take action on internal components (Offspring Genotype, Trait Expression (Phenotype)). They need to decide which action would be most effective based on what the model shows.
+
+Humans have 46 chromosomes. How many come from each parent?
+
+A. 46 from the mother and 46 from the father
+B. 23 from each parent
+C. All 46 from the mother; the father contributes none
+D. It varies randomly from person to person
+
+Correct Answer: B
+
+Feedback: Correct! Humans inherit 23 chromosomes from each parent, for a total of 46. This is why you share traits with both parents but are not identical to either. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS3-1, MS-LS3-2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS3-1, MS-LS3-2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS3-1, MS-LS3-2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS3-1, MS-LS3-2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS3-1, MS-LS3-2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

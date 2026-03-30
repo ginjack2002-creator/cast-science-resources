@@ -984,86 +984,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Nuclear fusion and nuclear fission both release energy from atomic nuclei, but through opposite processes. Which statement most accurately distinguishes them?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.8 + CCC4 (Systems and System Models)
 
-A. Fusion combines light nuclei (hydrogen isotopes) into heavier ones (helium), while fission splits heavy nuclei (uranium) into lighter ones. Both release energy because the products have less mass than the reactants
-B. Fusion splits atoms while fission combines them
-C. Fusion produces nuclear waste while fission does not
-D. Fusion and fission are identical processes that differ only in scale
-
-Correct Answer: A
-
-Feedback: Correct. Fusion combines deuterium and tritium nuclei into helium, while fission splits uranium or plutonium into lighter elements. In both cases, the products have slightly less mass than the reactants, and this mass difference is converted to energy via E=mc2. Fusion releases roughly 4x more energy per unit mass than fission. Fusion (combining) and fission (splitting) are opposite processes. Fusion joins light nuclei (deuterium + tritium to helium), fission splits heavy nuclei (uranium into lighter elements). Both release energy because the products have slightly less mass than the reactants, converted to energy via E=mc2.
-
----
-
-### Question 2
-
-The Lawson criterion specifies the minimum product of temperature, density, and confinement time for fusion to produce net energy. Why is achieving all three simultaneously so difficult?
-
-A. Current technology can easily achieve all three; the delay is due to lack of funding
-B. The three requirements work against each other: higher temperature makes plasma harder to confine, higher density creates instabilities that shorten confinement time, and longer confinement requires extraordinary magnetic field precision against instabilities that develop within milliseconds
-C. The Lawson criterion was disproven in the 1990s and is no longer relevant
-D. Only temperature matters; density and confinement time are irrelevant to fusion
-
-Correct Answer: B
-
-Feedback: Correct. The three parameters of the Lawson criterion are interconnected and often adversarial. A 150-million-degree plasma exerts enormous pressure that fights confinement. Increasing density makes the plasma more prone to instabilities (kink modes, ballooning modes) that can destroy confinement in milliseconds. Maintaining confinement for hundreds of seconds requires real-time feedback control of magnetic fields with extraordinary precision. The fundamental challenge is that the three requirements compete with each other. Hotter plasma is harder to confine. Denser plasma develops instabilities faster. Longer confinement requires suppressing instabilities that evolve on millisecond timescales. Achieving all three simultaneously is the engineering challenge that has made fusion so difficult.
-
----
-
-### Question 3
-
-A tokamak confines fusion plasma using magnetic fields rather than physical walls. Why can't the 150-million-degree plasma simply be contained in a physical container?
-
-A. Physical containers could contain the plasma, but magnetic confinement is cheaper
-B. No known material can withstand 150 million degrees Celsius. The plasma would instantly vaporize any physical wall it contacts, so it must be suspended by magnetic fields that keep it away from all surfaces
-C. Physical containers work fine for fusion; tokamaks use magnets for aesthetic reasons
-D. The plasma is too cold to damage physical walls but too light to be held by gravity
-
-Correct Answer: B
-
-Feedback: Correct. At 150 million degrees C (ten times hotter than the Sun's core), every known material would instantly vaporize on contact with the plasma. Magnetic confinement uses the fact that plasma is ionized (charged particles) and responds to magnetic fields, allowing the plasma to be suspended in a magnetic bottle that prevents it from touching any physical surface. 150 million degrees is approximately ten times hotter than the core of the Sun. No material exists that could survive contact with plasma at this temperature. Magnetic confinement works because plasma consists of charged particles that are deflected by magnetic fields, allowing the plasma to float without touching any surface.
-
----
-
-### Question 4
-
-E = mc2 explains why nuclear fusion releases enormous energy from tiny amounts of fuel. What does this equation tell us about fusion specifically?
-
-A. Energy equals mass times the speed of light squared, meaning the small mass difference between fusion reactants and products is multiplied by c2 (a huge number), converting minuscule mass into enormous energy
-B. The equation shows that fusion creates mass from energy
-C. E = mc2 only applies to fission reactions, not fusion
-D. The equation means that faster-moving atoms produce more fusion reactions
-
-Correct Answer: A
-
-Feedback: Correct. When deuterium and tritium fuse into helium, the helium nucleus has slightly less mass than the combined mass of the reactants. This 'missing' mass (about 0.4% of the input mass) is converted to energy via E = mc2. Because c2 is approximately 9 x 10^16 m2/s2, even a tiny mass difference produces enormous energy: 17.6 MeV per fusion reaction. E = mc2 applies to all nuclear reactions. In fusion, the products (helium) have slightly less mass than the reactants (deuterium + tritium). This mass difference, multiplied by the speed of light squared (a very large number), yields the enormous energy released per reaction.
-
----
-
-### Question 5
-
-Fusion fuel consists of deuterium and tritium. Which statement accurately describes the availability of these fuels?
-
-A. Both deuterium and tritium are abundant and easily obtained from seawater
-B. Deuterium is abundant in seawater (1 in 6,500 water molecules), but tritium is radioactive, rare (global supply approximately 25 kg), and must be bred from lithium inside the fusion reactor itself
-C. Both fuels must be mined from the Moon's surface
-D. Deuterium and tritium are the same isotope of hydrogen
-
-Correct Answer: B
-
-Feedback: Correct. Deuterium is naturally abundant (approximately 0.015% of all hydrogen). Tritium, however, is radioactive with a 12.3-year half-life and exists only in trace amounts naturally. The world's total tritium supply is about 25 kg, far less than a single power plant would consume annually. Commercial fusion reactors must breed their own tritium from lithium blankets surrounding the reactor. Deuterium is abundant in seawater, but tritium is a critical constraint. Tritium is radioactive, has a short half-life (12.3 years), and exists in only trace amounts on Earth (about 25 kg worldwide). A commercial fusion plant would consume about 56 kg per year, so it must breed its own tritium from lithium inside the reactor.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Deuterium-Tritium Fuel Supply, Magnetic Field Strength, Energy Input (Heating), Plasma Temperature, Plasma Density, Confinement Time, Fusion Reaction Rate, Neutron Flux on Walls, Wall Material Degradation, Net Energy Output (Q Factor). Some components are external (Deuterium-Tritium Fuel Supply, Magnetic Field Strength, Energy Input (Heating)) and some are internal (Plasma Temperature, Plasma Density, Confinement Time, Fusion Reaction Rate, Neutron Flux on Walls, Wall Material Degradation, Net Energy Output (Q Factor)). The student needs to understand what each component represents and how they are organized.
 
 The model shows that current best fusion performance (JET tokamak, Q = 0.33 for 5 seconds) achieves the required temperature and density but fails on confinement time. What does this reveal about the primary engineering bottleneck for fusion?
 
@@ -1074,11 +999,15 @@ D. Confinement is the easiest parameter to achieve and temperature is the real b
 
 Correct Answer: C
 
-Feedback: Correct. The model reveals that temperature and density are achievable with current technology, but maintaining stable confinement against multiple plasma instability modes (kink, ballooning, edge-localized modes) for hundreds of seconds remains the primary bottleneck. This requires real-time magnetic field control with millisecond response times and extraordinary precision. The model shows that temperature and density targets are within reach. The bottleneck is confinement time: plasma instabilities develop on millisecond timescales and must be continuously suppressed through real-time magnetic field adjustments to maintain confinement for the hundreds of seconds needed for net energy production.
+Feedback: Correct. The model reveals that temperature and density are achievable with current technology, but maintaining stable confinement against multiple plasma instability modes (kink, ballooning, edge-localized modes) for hundreds of seconds remains the primary bottleneck. This requires real-time magnetic field control with millisecond response times and extraordinary precision. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.8 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Magnetic Field Strength increases, Confinement Time increases; when Plasma Temperature increases, Fusion Reaction Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 ITER is designed to achieve Q = 10 (500 MW fusion from 50 MW heating). The model reveals that achieving Q = 10 is necessary but insufficient for commercial fusion. What additional challenges must be solved between ITER and a power plant on the electrical grid?
 
@@ -1089,11 +1018,15 @@ D. Commercial fusion requires Q = 10 and nothing more
 
 Correct Answer: B
 
-Feedback: Correct. ITER is a physics experiment, not a power plant. Commercial fusion must solve: continuous operation for 11+ months per year (ITER runs in pulses); tritium breeding ratio > 1.0 (ITER does not breed tritium at scale); wall materials that survive 14.1 MeV neutron bombardment for years (ITER will identify the damage but not solve it); and cost-competitive electricity generation. Each is a major unsolved engineering challenge. ITER demonstrates that fusion physics works at scale, but a commercial power plant requires far more: sustained (not pulsed) operation, tritium self-sufficiency, neutron-resistant wall materials that last years, and electricity generation at competitive cost. These are engineering challenges beyond ITER's scope.
+Feedback: Correct. ITER is a physics experiment, not a power plant. Commercial fusion must solve: continuous operation for 11+ months per year (ITER runs in pulses); tritium breeding ratio > 1.0 (ITER does not breed tritium at scale); wall materials that survive 14.1 MeV neutron bombardment for years (ITER will identify the damage but not solve it); and cost-competitive electricity generation. Each is a major unsolved engineering challenge. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.8 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Magnetic Field Strength increases, Confinement Time increases and when Plasma Temperature increases, Fusion Reaction Rate increases and when Plasma Density increases, Fusion Reaction Rate increases. The student changes one variable to see how the whole system responds.
 
 The model reveals that neutron flux on reactor walls is a 'hidden' challenge because neutrons carry 80% of fusion energy but cannot be confined by magnetic fields. What are the consequences of this for reactor engineering?
 
@@ -1104,11 +1037,15 @@ D. Neutrons from fusion are low-energy and cause negligible damage to materials
 
 Correct Answer: B
 
-Feedback: Correct. Unlike charged plasma particles, neutrons have no charge and pass through magnetic fields unimpeded. At 14.1 MeV, they are highly energetic and cause severe material damage: displacing atoms from crystal lattices, creating helium bubbles that weaken metal, and transmuting elements. This creates a materials science challenge with no current solution. Inner wall components may need replacement every 2-5 years. Fusion neutrons at 14.1 MeV are extremely energetic and uncontrollable by magnetic fields (they are electrically neutral). They damage structural materials through atomic displacement, helium bubble formation, and transmutation, requiring periodic wall replacement and creating a materials science challenge that has no existing solution.
+Feedback: Correct. Unlike charged plasma particles, neutrons have no charge and pass through magnetic fields unimpeded. At 14.1 MeV, they are highly energetic and cause severe material damage: displacing atoms from crystal lattices, creating helium bubbles that weaken metal, and transmuting elements. This creates a materials science challenge with no current solution. Inner wall components may need replacement every 2-5 years. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.8 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that tritium self-sufficiency requires a tritium breeding ratio (TBR) greater than 1.0 from lithium blankets surrounding the plasma. Why must the TBR exceed 1.0 rather than exactly equal 1.0?
 
@@ -1119,11 +1056,15 @@ D. The model shows that TBR of 0.5 is sufficient for commercial operation
 
 Correct Answer: B
 
-Feedback: Correct. Even with perfect blanket coverage, some bred tritium decays before use (half-life 12.3 years), some is lost during the extraction and purification process, and some permeates through materials and escapes. These unavoidable losses mean the TBR must exceed 1.0 (typically estimated at 1.05-1.15) to maintain a net positive tritium inventory over the reactor's lifetime. A TBR of exactly 1.0 would mean zero margin for losses. Tritium is radioactive (decays at 5.5% per year), and some is inevitably lost during extraction, processing, and storage. The reactor must breed more than it consumes to compensate for these losses, requiring TBR > 1.0.
+Feedback: Correct. Even with perfect blanket coverage, some bred tritium decays before use (half-life 12.3 years), some is lost during the extraction and purification process, and some permeates through materials and escapes. These unavoidable losses mean the TBR must exceed 1.0 (typically estimated at 1.05-1.15) to maintain a net positive tritium inventory over the reactor's lifetime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.8 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Deuterium-Tritium Fuel Supply, Magnetic Field Strength, Energy Input (Heating)), but they can take action on internal components (Plasma Temperature, Plasma Density, Confinement Time, Fusion Reaction Rate, Neutron Flux on Walls, Wall Material Degradation, Net Energy Output (Q Factor)). They need to decide which action would be most effective based on what the model shows.
 
 The model predicts that high-temperature superconducting (HTS) magnets generating 20+ Tesla could significantly improve fusion feasibility compared to ITER's low-temperature superconducting magnets at 11.8 Tesla. What is the primary advantage of stronger magnetic fields for fusion?
 
@@ -1134,27 +1075,18 @@ D. HTS magnets operate at room temperature and require no cooling
 
 Correct Answer: B
 
-Feedback: Correct. Magnetic confinement performance scales with the fourth power of magnetic field strength. Doubling the field from 11.8 to 20+ Tesla enables roughly 16x better confinement performance, meaning the same fusion conditions can be achieved in a much smaller, cheaper device. This is why private fusion companies like Commonwealth Fusion Systems are pursuing HTS magnets as a potential shortcut past ITER-scale facilities. Stronger magnetic fields improve plasma confinement, allowing higher density and stability in a smaller device. Since confinement scales roughly with the fourth power of field strength, HTS magnets at 20+ Tesla could achieve ITER-level performance in a reactor a fraction of ITER's size, dramatically cutting cost and accelerating timelines.
+Feedback: Correct. Magnetic confinement performance scales with the fourth power of magnetic field strength. Doubling the field from 11.8 to 20+ Tesla enables roughly 16x better confinement performance, meaning the same fusion conditions can be achieved in a much smaller, cheaper device. This is why private fusion companies like Commonwealth Fusion Systems are pursuing HTS magnets as a potential shortcut past ITER-scale facilities. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: A
-Question 5: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

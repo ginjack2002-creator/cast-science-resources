@@ -910,86 +910,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Dopamine is a neurotransmitter often associated with reward and pleasure. Which statement most accurately describes dopamine's role in the brain?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. Dopamine directly causes feelings of happiness and contentment
-B. Dopamine signals anticipation of reward and reinforces behaviors that triggered its release, motivating repetition of those behaviors
-C. Dopamine is only released during physical exercise
-D. Dopamine is a hormone that controls sleep cycles
-
-Correct Answer: B
-
-Feedback: Correct. Dopamine functions primarily as a reward-prediction signal, not just a pleasure chemical. It is released in anticipation of a potential reward and reinforces the neural pathways associated with the behavior that preceded the reward, making you more likely to repeat that behavior. Dopamine is more accurately described as a reward-anticipation and reinforcement signal rather than a simple pleasure chemical. It is released when the brain anticipates a potential reward and strengthens the neural connections associated with the behavior that preceded the reward, driving future repetition of that behavior.
-
----
-
-### Question 2
-
-Slot machines are designed so that payouts occur at random, unpredictable intervals. Why is this pattern more addictive than receiving a reward every time?
-
-A. Random rewards are always larger in value than predictable ones
-B. Unpredictable reward timing keeps the brain in a constant state of anticipation, generating more dopamine than predictable rewards because each attempt might be the big payoff
-C. Predictable rewards are boring because humans only enjoy surprises
-D. Random rewards trick people into thinking they are winning more often than they actually are
-
-Correct Answer: B
-
-Feedback: Correct. Variable ratio reinforcement schedules produce the highest and most persistent engagement because the brain remains in a state of anticipatory dopamine release. Each attempt could be rewarded, maintaining the motivation to continue. The brain actually releases more dopamine during anticipation than during the reward itself. Variable (unpredictable) reward schedules are the most addictive pattern because the brain maintains a constant state of anticipation. The uncertainty about when the next reward will arrive keeps dopamine levels elevated, and the brain releases more dopamine during anticipation of a possible reward than during the actual reward delivery.
-
----
-
-### Question 3
-
-A student reports feeling worse about themselves after spending two hours scrolling through Instagram. Which psychological mechanism best explains this experience?
-
-A. The blue light from the screen directly causes depression
-B. Social comparison with curated, idealized content makes the student perceive their own life as less attractive, successful, or exciting by comparison
-C. Instagram sends subliminal messages that make users feel bad
-D. Two hours is not enough time for social media to affect mood
-
-Correct Answer: B
-
-Feedback: Correct. Social comparison theory explains that humans evaluate themselves by comparing to others. On social media, users compare their unfiltered daily reality to others' curated highlight reels, consistently producing unfavorable comparisons that erode self-esteem and life satisfaction. Social comparison theory describes our innate tendency to evaluate ourselves against others. Social media amplifies this by presenting curated, filtered, idealized versions of other people's lives. When you compare your authentic daily experience to someone else's carefully constructed highlight reel, the comparison consistently makes you feel worse about yourself.
-
----
-
-### Question 4
-
-The human brain continues developing until approximately age 25, with the prefrontal cortex being one of the last regions to mature. Why does this make adolescents particularly vulnerable to social media's addictive design?
-
-A. Adolescents have smaller brains that cannot process social media content
-B. The prefrontal cortex, which controls impulse regulation and long-term decision-making, is not yet fully developed in teenagers, while the reward system (dopamine pathways) is fully active
-C. Adolescents are not actually more vulnerable than adults to social media addiction
-D. The prefrontal cortex controls vision, which makes teens see social media differently
-
-Correct Answer: B
-
-Feedback: Correct. There is an imbalance in adolescent brain development: the dopamine reward system is fully functional and highly responsive, while the prefrontal cortex (responsible for impulse control, delayed gratification, and risk assessment) is still maturing. This creates a neurological vulnerability where teens can experience the full addictive pull of variable rewards without the fully developed capacity to resist it. Adolescent vulnerability stems from a developmental imbalance: the brain's reward circuitry (dopamine pathways) is fully active and highly responsive to social stimuli, while the prefrontal cortex, which provides impulse control and long-term decision-making, is still developing. This means teens experience the full addictive pull without the neurological brakes that adults have.
-
----
-
-### Question 5
-
-A student claims: 'I use social media because I choose to. It's completely my decision.' Which counterargument best challenges this claim using neuroscience evidence?
-
-A. Social media is controlled by the government, so no one truly chooses to use it
-B. While the initial download is a choice, continued use is heavily influenced by design features (variable rewards, infinite scroll, notification timing) specifically engineered to bypass conscious decision-making and exploit the dopamine system
-C. Teenagers are incapable of making any real choices
-D. Social media is perfectly safe and does not influence behavior at all
-
-Correct Answer: B
-
-Feedback: Correct. Social media platforms employ teams of behavioral psychologists to optimize features like variable notification timing, infinite scroll, autoplay, and algorithmic content delivery. These are specifically designed to maximize engagement by exploiting the brain's reward pathways, operating below the level of conscious decision-making. The initial choice to use social media is genuine, but the continued engagement is heavily shaped by design features engineered to exploit unconscious neurological processes. Variable reward schedules, infinite scroll, autoplay, and personalized notification timing are all optimized through A/B testing to maximize the time users spend on the platform, often bypassing conscious intention.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Notification Frequency, Screen Time, Dopamine Release, Social Comparison, Self-Esteem Level. Some components are external (Notification Frequency) and some are internal (Screen Time, Dopamine Release, Social Comparison, Self-Esteem Level). The student needs to understand what each component represents and how they are organized.
 
 In a student's computational model, reducing Notification Frequency from HIGH to LOW decreases Dopamine Release, which decreases Screen Time, which decreases Social Comparison, which stabilizes Self-Esteem. What does this model output demonstrate about the system?
 
@@ -1000,11 +925,15 @@ D. The model proves that social media has no negative effects
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that the feedback loop has a controllable entry point. By reducing notification frequency, the initial dopamine trigger is diminished, which reduces the behavioral response (screen time), which reduces the psychological exposure (social comparison), which stabilizes the outcome (self-esteem). Intervening early in the chain disrupts all downstream effects. The model reveals that the addictive loop has a single controllable entry point: notification frequency. Since each component in the chain depends on the previous one, reducing the initial stimulus (notifications) cascades through the entire system, reducing dopamine release, screen time, social comparison, and ultimately protecting self-esteem.
+Feedback: Correct. The model demonstrates that the feedback loop has a controllable entry point. By reducing notification frequency, the initial dopamine trigger is diminished, which reduces the behavioral response (screen time), which reduces the psychological exposure (social comparison), which stabilizes the outcome (self-esteem). Intervening early in the chain disrupts all downstream effects. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Notification Frequency increases, Dopamine Release increases; when Dopamine Release increases, Screen Time increases. The student is trying to understand why these relationships are positive or negative.
 
 A student's model shows that during the 'High Notifications' scenario, Screen Time continues to increase even after the student reports wanting to stop. The model predicts this behavior because:
 
@@ -1015,11 +944,15 @@ D. Notification frequency has no relationship to screen time in the model
 
 Correct Answer: B
 
-Feedback: Correct. The model illustrates how a positive feedback loop becomes self-sustaining through neuroplasticity. Repeated dopamine-driven phone-checking physically strengthens the neural pathways associated with this behavior, eventually making it automatic and habitual. At this point, the behavior continues even when the conscious mind wants to stop, because the habit pathway bypasses deliberate decision-making. The model shows how positive feedback loops become self-sustaining. Through neuroplasticity, repeated phone-checking behavior physically strengthens the neural pathways involved, making the behavior increasingly automatic. Once the habit pathway is established, it operates below conscious control, which is why people report being unable to stop scrolling even when they consciously want to.
+Feedback: Correct. The model illustrates how a positive feedback loop becomes self-sustaining through neuroplasticity. Repeated dopamine-driven phone-checking physically strengthens the neural pathways associated with this behavior, eventually making it automatic and habitual. At this point, the behavior continues even when the conscious mind wants to stop, because the habit pathway bypasses deliberate decision-making. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Notification Frequency increases, Dopamine Release increases and when Dopamine Release increases, Screen Time increases and when Screen Time increases, Social Comparison increases. The student changes one variable to see how the whole system responds.
 
 Two students compare their models. Student A's model only includes Notifications → Dopamine → Screen Time. Student B's model adds Social Comparison → Self-Esteem, with low Self-Esteem feeding back to increase Screen Time (seeking validation). Which model better captures the addictive nature of social media?
 
@@ -1030,11 +963,15 @@ D. Neither model is useful because addiction cannot be modeled computationally
 
 Correct Answer: B
 
-Feedback: Correct. Student B's model captures the critical self-reinforcing loop: social comparison erodes self-esteem, and low self-esteem drives users to seek validation online (more likes, followers, comments), which increases screen time and exposure to more comparison content. This positive feedback loop is what makes the system self-sustaining and difficult to escape. Student B's model more accurately represents the addictive dynamic because it includes the feedback loop where the output (reduced self-esteem) becomes an input (seeking online validation). This creates a self-reinforcing cycle where each pass through the loop intensifies the next, making the behavior progressively harder to stop. Student A's model shows the initial pathway but misses this critical self-perpetuating mechanism.
+Feedback: Correct. Student B's model captures the critical self-reinforcing loop: social comparison erodes self-esteem, and low self-esteem drives users to seek validation online (more likes, followers, comments), which increases screen time and exposure to more comparison content. This positive feedback loop is what makes the system self-sustaining and difficult to escape. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student designs a digital wellness app that detects when a user has been scrolling for 30 minutes and suggests they message a real friend instead. Which neuroscience principle from the model does this intervention apply?
 
@@ -1045,11 +982,15 @@ D. Increasing notification frequency to overwhelm the dopamine system
 
 Correct Answer: B
 
-Feedback: Correct. Neuroscience shows that habits cannot simply be deleted; they must be replaced with alternative behaviors that satisfy the same underlying need. The need for social connection can be met through direct messaging (without the comparison content of feeds). This redirects the behavior without fighting the fundamental human drive for social interaction. Habit replacement theory, supported by neuroscience, states that successful behavior change comes from redirecting the underlying need to a healthier alternative, not from eliminating the behavior entirely. The underlying need (social connection) is legitimate; the problem is that passive scrolling satisfies it through a pathway that includes harmful social comparison. Direct messaging satisfies the same need without the comparison element.
+Feedback: Correct. Neuroscience shows that habits cannot simply be deleted; they must be replaced with alternative behaviors that satisfy the same underlying need. The need for social connection can be met through direct messaging (without the comparison content of feeds). This redirects the behavior without fighting the fundamental human drive for social interaction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Notification Frequency), but they can take action on internal components (Screen Time, Dopamine Release, Social Comparison, Self-Esteem Level). They need to decide which action would be most effective based on what the model shows.
 
 After studying the model, a student argues: 'Social media companies are doing the same thing the tobacco industry did. They're designing products they know cause harm to maximize profit.' Evaluate this analogy using evidence from the model.
 
@@ -1060,27 +1001,18 @@ D. The analogy is exaggerated because social media has no documented negative he
 
 Correct Answer: B
 
-Feedback: Correct. The model supports this analogy on multiple levels: both industries target biological vulnerabilities (the dopamine reward system for social media, nicotine receptors for tobacco), both use behavioral research to maximize engagement/addiction, and both have demonstrated awareness of harm to users (Facebook's internal research showing Instagram's effect on teen mental health mirrors tobacco companies' suppressed cancer research). The mechanism of exploitation is remarkably parallel. The model provides strong evidence for this analogy. Both industries exploit specific biological vulnerabilities to create habit-forming products. Both conduct internal research on health effects and continue optimizing for engagement despite negative findings. Both use variable reinforcement to maximize compulsive behavior. Leaked internal documents from Meta (formerly Facebook) showed the company knew Instagram harmed teen mental health, paralleling tobacco industry suppression of cancer evidence.
+Feedback: Correct. The model supports this analogy on multiple levels: both industries target biological vulnerabilities (the dopamine reward system for social media, nicotine receptors for tobacco), both use behavioral research to maximize engagement/addiction, and both have demonstrated awareness of harm to users (Facebook's internal research showing Instagram's effect on teen mental health mirrors tobacco companies' suppressed cancer research). The mechanism of exploitation is remarkably parallel. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

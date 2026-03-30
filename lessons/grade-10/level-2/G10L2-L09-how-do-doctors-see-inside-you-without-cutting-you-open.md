@@ -901,86 +901,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-MRI (Magnetic Resonance Imaging) creates detailed images of internal body structures. Which type of energy does MRI use to generate these images?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.4 + CCC4 (Systems and System Models)
 
-A. Ionizing X-ray radiation that passes through the body
-B. Strong magnetic fields and radiofrequency electromagnetic waves
-C. Ultrasonic sound waves that reflect off internal organs
-D. Infrared heat radiation detected through the skin
-
-Correct Answer: B
-
-Feedback: Correct. MRI uses a powerful static magnetic field to align hydrogen nuclei in the body, then applies radiofrequency pulses to excite them. The signals emitted as nuclei return to equilibrium are used to construct images. MRI does not use X-rays, sound waves, or infrared radiation. It works by placing the body in a strong magnetic field, applying radiofrequency electromagnetic pulses, and detecting the signals emitted by hydrogen nuclei as they relax.
-
----
-
-### Question 2
-
-Clinical MRI machines operate at magnetic field strengths of 1.5 to 3 Tesla. How does this compare to Earth's natural magnetic field?
-
-A. MRI machines produce a field about twice as strong as Earth's
-B. MRI machines produce a field 30,000 to 60,000 times stronger than Earth's magnetic field
-C. MRI machines and Earth have approximately the same magnetic field strength
-D. Earth's magnetic field is stronger than any MRI machine
-
-Correct Answer: B
-
-Feedback: Correct. Earth's magnetic field is approximately 50 microtesla (0.00005 Tesla). A 3 Tesla MRI is 60,000 times stronger, which is why MRI rooms require strict safety protocols for metallic objects. Clinical MRI magnets are extraordinarily powerful: 1.5 to 3 Tesla compared to Earth's approximately 50 microtesla. This means an MRI magnet is 30,000 to 60,000 times stronger than the planet's natural magnetic field.
-
----
-
-### Question 3
-
-The superconducting coils in an MRI machine must be cooled to near absolute zero using liquid helium. What property does superconductivity provide that is essential for MRI?
-
-A. Superconducting coils emit X-rays that help create the image
-B. Zero electrical resistance allows the coils to carry enormous electrical currents without energy loss, generating a stable, powerful magnetic field
-C. Superconducting coils are magnetic only at low temperatures and become non-magnetic when warm
-D. Liquid helium creates the radio waves used to excite hydrogen nuclei
-
-Correct Answer: B
-
-Feedback: Correct. At superconducting temperatures, the coil wire has zero electrical resistance, allowing massive persistent currents to flow without energy loss, producing the stable, powerful magnetic field MRI requires. Superconductivity provides zero electrical resistance, allowing the coils to sustain enormous currents indefinitely without energy input or heat generation. This is the only practical way to produce the powerful, stable magnetic fields that MRI requires.
-
----
-
-### Question 4
-
-Different tissue types appear as different shades in an MRI image. What property of tissues creates this contrast?
-
-A. Different tissues have different colors that are directly photographed by the scanner
-B. Different tissues have different densities that block magnetic fields differently
-C. Different tissues contain different amounts of hydrogen, and the hydrogen nuclei in each tissue type have different relaxation times after radiofrequency excitation
-D. Different tissues reflect radio waves at different angles
-
-Correct Answer: C
-
-Feedback: Correct. MRI contrast comes from differences in how quickly hydrogen nuclei in different tissues return to equilibrium (relaxation times) after being excited by a radiofrequency pulse. Fat, muscle, and fluid all have distinct relaxation behaviors. MRI contrast depends on tissue-specific relaxation times. After radiofrequency excitation, hydrogen nuclei in different tissues (fat, muscle, fluid, bone) return to equilibrium at different rates, creating the signal differences that produce image contrast.
-
----
-
-### Question 5
-
-Why is MRI generally considered safer than CT scans for repeated imaging of the same patient?
-
-A. MRI machines are smaller and less intimidating for patients
-B. MRI does not use ionizing radiation, eliminating the cumulative cancer risk associated with repeated X-ray or CT exposure
-C. MRI scans take less time than CT scans
-D. CT scans require injection of toxic contrast agents while MRI does not use any contrast
-
-Correct Answer: B
-
-Feedback: Correct. MRI uses magnetic fields and radio waves, which are non-ionizing and do not damage DNA. CT scans use ionizing X-ray radiation, which carries a small but cumulative cancer risk with repeated exposure. The key safety advantage of MRI is that it uses non-ionizing radiation (magnetic fields and radio waves) that does not damage DNA. CT scans use ionizing X-rays that carry cumulative cancer risk, making repeated CT scanning a clinical concern.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Magnetic Field Strength, Coil Temperature, Image Resolution, Tissue Contrast, Patient Safety, Energy Consumption, Diagnostic Accuracy. Some components are external (Magnetic Field Strength, Coil Temperature) and some are internal (Image Resolution, Tissue Contrast, Patient Safety, Energy Consumption, Diagnostic Accuracy). The student needs to understand what each component represents and how they are organized.
 
 In the MRI physics model, Magnetic Field Strength is identified as a primary driver of image quality. What specific relationship does the model demonstrate?
 
@@ -991,11 +916,15 @@ D. Lower field strength produces better images because weaker magnets create les
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that stronger magnetic fields align more hydrogen nuclei, producing stronger signals relative to background noise. This improved signal-to-noise ratio directly enhances both spatial resolution and tissue contrast. The model demonstrates that Magnetic Field Strength improves image quality by increasing the signal-to-noise ratio. More nuclei are aligned in a stronger field, producing stronger detectable signals that translate to better resolution and tissue differentiation.
+Feedback: Correct. The model shows that stronger magnetic fields align more hydrogen nuclei, producing stronger signals relative to background noise. This improved signal-to-noise ratio directly enhances both spatial resolution and tissue contrast. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Magnetic Field Strength increases, Image Resolution increases; when Magnetic Field Strength increases, Tissue Contrast increases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals a critical vulnerability in MRI systems related to Coil Temperature. What happens if the superconducting coils warm above their critical temperature?
 
@@ -1006,11 +935,15 @@ D. Nothing happens because modern MRI coils work at any temperature
 
 Correct Answer: B
 
-Feedback: Correct. The model identifies the quench as the most catastrophic failure mode in MRI: loss of superconductivity causes the enormous stored current to generate extreme heat, explosively vaporizing liquid helium and destroying the magnetic field. A quench is a rapid, dangerous failure where superconductivity is lost. The enormous persistent current suddenly encounters electrical resistance, generating extreme heat that boils the liquid helium explosively. The magnetic field collapses and the system is disabled.
+Feedback: Correct. The model identifies the quench as the most catastrophic failure mode in MRI: loss of superconductivity causes the enormous stored current to generate extreme heat, explosively vaporizing liquid helium and destroying the magnetic field. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Magnetic Field Strength increases, Image Resolution increases and when Magnetic Field Strength increases, Tissue Contrast increases and when Image Resolution increases, Diagnostic Accuracy increases. The student changes one variable to see how the whole system responds.
 
 A student compares 1.5T and 7T MRI scenarios in the model. The 7T scanner produces dramatically better Image Resolution but the model also shows significant increases in Patient Safety concerns. Why?
 
@@ -1021,11 +954,15 @@ D. 7T scanners require patients to hold their breath for the entire scan duratio
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that higher field strength amplifies multiple safety concerns: greater forces on any ferromagnetic materials near the scanner, increased specific absorption rate (SAR) heating of tissue, and louder acoustic noise from gradient coils. The model demonstrates that Patient Safety concerns scale with field strength. Stronger magnets exert greater forces on metallic objects, deposit more radiofrequency energy into tissue (potential heating), and produce louder gradient switching noise.
+Feedback: Correct. The model shows that higher field strength amplifies multiple safety concerns: greater forces on any ferromagnetic materials near the scanner, increased specific absorption rate (SAR) heating of tissue, and louder acoustic noise from gradient coils. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that Diagnostic Accuracy depends on the combination of Image Resolution, Tissue Contrast, and radiologist expertise. Why does the model indicate that the most powerful MRI machine is not always the best clinical choice?
 
@@ -1036,11 +973,15 @@ D. Because all MRI machines produce identical images regardless of field strengt
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that clinical decision-making must balance image quality against safety, cost, and energy. For most diagnoses, 1.5T provides adequate accuracy with lower risk, making it the practical optimum. The model reveals that optimal clinical practice involves trade-offs. While 7T provides superior images, 1.5T meets diagnostic needs for most conditions with significantly lower safety risks, energy costs, and infrastructure requirements.
+Feedback: Correct. The model demonstrates that clinical decision-making must balance image quality against safety, cost, and energy. For most diagnoses, 1.5T provides adequate accuracy with lower risk, making it the practical optimum. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.4 + CCC6 (Structure and Function)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Magnetic Field Strength, Coil Temperature), but they can take action on internal components (Image Resolution, Tissue Contrast, Patient Safety, Energy Consumption, Diagnostic Accuracy). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, why is MRI particularly superior to CT or X-ray for imaging soft tissue structures like the brain, muscles, and ligaments?
 
@@ -1051,27 +992,18 @@ D. Because MRI scans are faster than CT scans for soft tissue imaging
 
 Correct Answer: B
 
-Feedback: Correct. The model explains that MRI's tissue contrast mechanism (hydrogen relaxation times) varies significantly between soft tissues, while X-ray/CT contrast (density-based attenuation) shows minimal differences between soft tissue types. MRI excels at soft tissue because its contrast mechanism depends on hydrogen content and relaxation times, which differ substantially between muscle, fat, ligament, and brain tissue. X-rays and CT rely on density differences, which are small between soft tissues.
+Feedback: Correct. The model explains that MRI's tissue contrast mechanism (hydrogen relaxation times) varies significantly between soft tissues, while X-ray/CT contrast (density-based attenuation) shows minimal differences between soft tissue types. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.4, CCC6)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

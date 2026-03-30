@@ -825,77 +825,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why do you think puppies from the same litter can have different fur colors?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.1 + CCC4 (Systems and System Models)
 
-A. Someone painted them different colors
-B. Each puppy gets a different mix of traits from the mom and dad
-C. Puppies choose their own fur color
-D. All puppies from the same litter look exactly the same
-
-Correct Answer: B
-
-Feedback: Great thinking! Each puppy gets a unique combination of traits from both parents. That is why siblings can look different from each other. Puppies get their traits from both their mom and dad. Each puppy gets a different mix, which is why brothers and sisters can have different fur colors.
-
----
-
-### Question 2
-
-What is a trait?
-
-A. A type of food that animals eat
-B. A feature of a living thing, like eye color, fur pattern, or height
-C. A trick an animal can do
-D. A place where animals live
-
-Correct Answer: B
-
-Feedback: That is right! A trait is a feature or characteristic of a living thing. Eye color, hair type, height, and fur pattern are all examples of traits. A trait is a feature or characteristic of a living thing. Your eye color, hair type, and height are all traits. Animals have traits too, like fur color and ear shape.
-
----
-
-### Question 3
-
-Which of these traits do you think you got from your parents?
-
-A. Your favorite video game
-B. Your eye color
-C. Your best friend's name
-D. The language you speak
-
-Correct Answer: B
-
-Feedback: Correct! Eye color is an inherited trait, meaning it is passed from your parents to you. Favorite games and languages are learned, not inherited. Eye color is inherited, meaning you got it from your parents through their genes. Things like favorite games, friends, and languages are learned, not inherited.
-
----
-
-### Question 4
-
-Do you think two kittens from the same parents will look exactly the same?
-
-A. Yes, siblings always look identical
-B. No, each kitten gets a different mix of traits from the parents
-C. Only if they are born on the same day
-D. Only if they eat the same food
-
-Correct Answer: B
-
-Feedback: You got it! Each kitten gets a unique combination of the parents' traits. That is why siblings often look similar but not exactly alike. Siblings do not look exactly the same because each one gets a different mix of traits from the parents. Traits shuffle differently for each baby, like dealing different hands from the same deck of cards.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Parent Traits, Genetic Variation, Offspring Appearance. Some components are external (Parent Traits) and some are internal (Genetic Variation, Offspring Appearance). The student needs to understand what each component represents and how they are organized.
 
 In the model, when Parent Traits are very different from each other, what happens to Genetic Variation in the offspring?
 
@@ -906,11 +846,15 @@ D. The offspring will have no traits at all
 
 Correct Answer: B
 
-Feedback: Correct! When parents are very different, there are more possible combinations of traits, which creates more genetic variation in the offspring. When parents have very different traits, there are more possible combinations for the offspring. This means more genetic variation, with siblings looking more different from each other.
+Feedback: Correct! When parents are very different, there are more possible combinations of traits, which creates more genetic variation in the offspring. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.1 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Parent Traits increases, Genetic Variation increases; when Genetic Variation increases, Offspring Appearance increases. The student is trying to understand why these relationships are positive or negative.
 
 What is the difference between an inherited trait and a trait caused by the environment?
 
@@ -921,11 +865,15 @@ D. Inherited traits can be chosen; environmental traits cannot
 
 Correct Answer: B
 
-Feedback: Exactly! Inherited traits (like eye color) come from your parents through genes. Environmental traits (like a scar or learned skills) are caused by your surroundings. Inherited traits are passed from parents to offspring through genes, like eye color or fur pattern. Environmental traits are caused by surroundings, like how much sunlight a plant gets or a scar from an injury.
+Feedback: Exactly! Inherited traits (like eye color) come from your parents through genes. Environmental traits (like a scar or learned skills) are caused by your surroundings. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Parent Traits increases, Genetic Variation increases and when Genetic Variation increases, Offspring Appearance increases. The student changes one variable to see how the whole system responds.
 
 Why is variation in a group of animals important?
 
@@ -936,11 +884,15 @@ D. It confuses predators so they cannot count the animals
 
 Correct Answer: C
 
-Feedback: You got it! Variation is important because when the environment changes, some animals with certain traits may be better at surviving. Variation gives a species a better chance of surviving change. Variation helps species survive! If all animals were exactly the same and the environment changed, they might all struggle. With variation, some individuals may have traits that help them survive the new conditions.
+Feedback: You got it! Variation is important because when the environment changes, some animals with certain traits may be better at surviving. Variation gives a species a better chance of surviving change. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the trait model, which component is EXTERNAL?
 
@@ -951,25 +903,37 @@ D. Environment
 
 Correct Answer: C
 
-Feedback: Right! Parent Traits is external because it is the starting condition. The parents' traits are set before reproduction. Genetic Variation and Offspring Appearance are internal results. Parent Traits is the external component because the parents' features are the starting input. Genetic Variation and Offspring Appearance are internal components that result from how the parents' traits mix.
+Feedback: Right! Parent Traits is external because it is the starting condition. The parents' traits are set before reproduction. Genetic Variation and Offspring Appearance are internal results. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Parent Traits), but they can take action on internal components (Genetic Variation, Offspring Appearance). They need to decide which action would be most effective based on what the model shows.
+
+Why do you think puppies from the same litter can have different fur colors?
+
+A. Someone painted them different colors
+B. Each puppy gets a different mix of traits from the mom and dad
+C. Puppies choose their own fur color
+D. All puppies from the same litter look exactly the same
+
+Correct Answer: B
+
+Feedback: Great thinking! Each puppy gets a unique combination of traits from both parents. That is why siblings can look different from each other. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.1, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
-
----
 
 ## Resources
 

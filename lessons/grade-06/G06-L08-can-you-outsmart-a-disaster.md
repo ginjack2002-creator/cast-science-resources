@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS3-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Which of these is an example of a natural hazard?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS3-2 + CCC4 (Systems and System Models)
 
-A. A car accident on the highway
-B. A hurricane making landfall on a coastal city
-C. A building collapsing due to poor construction
-D. Air pollution from a factory
-
-Correct Answer: B
-
-Feedback: Correct! Natural hazards are naturally occurring events like hurricanes, earthquakes, floods, and wildfires that can threaten human life and property. Not quite. Natural hazards are events caused by natural processes, not human activity. Hurricanes, earthquakes, floods, tornadoes, and wildfires are all natural hazards.
-
----
-
-### Question 2
-
-Why do you think some communities recover from natural disasters faster than others?
-
-A. Some places just get weaker storms
-B. It depends on how well prepared the community is, including buildings, warning systems, and emergency plans
-C. Wealthier communities always recover faster regardless of preparation
-D. Recovery speed is completely random
-
-Correct Answer: B
-
-Feedback: Correct! Community preparation, including building codes, early warning systems, evacuation plans, and emergency resources, is the biggest factor in how well a community survives and recovers from a disaster. Not quite. The level of preparation is the key factor. Communities with strong building codes, early warning systems, emergency plans, and trained responders survive disasters better and recover faster.
-
----
-
-### Question 3
-
-Can scientists predict when and where natural disasters will happen?
-
-A. Yes, scientists can predict exact dates and locations of all disasters
-B. No, natural disasters are completely unpredictable
-C. Scientists can identify high-risk areas and patterns but cannot predict exact events
-D. Only volcanic eruptions can be predicted
-
-Correct Answer: C
-
-Feedback: Correct! Scientists use data on past events, geological features, and weather patterns to identify where hazards are likely and forecast general timeframes, but exact predictions remain very difficult. Not quite. Scientists can analyze data patterns to determine which areas are at highest risk for specific hazards and provide general forecasts, but they cannot predict exact dates and locations of most natural disasters.
-
----
-
-### Question 4
-
-What does it mean to 'mitigate' a natural hazard?
-
-A. To prevent the hazard from ever happening
-B. To take actions before a disaster to reduce its impact
-C. To clean up after a disaster
-D. To study the hazard in a laboratory
-
-Correct Answer: B
-
-Feedback: Correct! Mitigation means actions taken BEFORE a disaster to reduce its impact, such as building levees, enforcing building codes, creating firebreaks, and developing warning systems. Not quite. Mitigation refers to proactive steps taken before a disaster to reduce the damage it causes. We cannot stop natural hazards, but we can reduce their impact through engineering and planning.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Hazard Intensity, Population Density, Warning Time, Building Design. Some components are external (Hazard Intensity, Warning Time) and some are internal (Population Density, Building Design). The student needs to understand what each component represents and how they are organized.
 
 In the natural hazards model, which factor most effectively reduces BOTH casualties AND property damage?
 
@@ -967,11 +907,15 @@ D. Hazard Intensity — hoping for weaker storms
 
 Correct Answer: B
 
-Feedback: Correct! Building Design is the only factor that protects both people AND property. Warning time saves lives through evacuation but can't move buildings. Well-designed structures survive the hazard and protect people inside. Not quite. While warning time helps evacuate people, it doesn't protect buildings. Building Design is the most effective factor for reducing both casualties AND property damage because strong buildings survive the hazard and protect people inside.
+Feedback: Correct! Building Design is the only factor that protects both people AND property. Warning time saves lives through evacuation but can't move buildings. Well-designed structures survive the hazard and protect people inside. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS3-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Warning Time increases, Casualties decreases; when Building Design increases, Property Damage decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that Warning Time dramatically reduces casualties but NOT property damage. Why?
 
@@ -982,11 +926,15 @@ D. Warning time actually reduces property damage too
 
 Correct Answer: B
 
-Feedback: Correct! Early warnings give people time to evacuate to safety, reducing deaths. But buildings, roads, and infrastructure stay in place and cannot be moved, so property damage remains the same regardless of warning time. Not quite. Warning systems help save lives because people can move to safety. However, buildings, bridges, power lines, and other infrastructure stay in place and absorb the full force of the hazard, so property damage is not reduced by warning time alone.
+Feedback: Correct! Early warnings give people time to evacuate to safety, reducing deaths. But buildings, roads, and infrastructure stay in place and cannot be moved, so property damage remains the same regardless of warning time. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS3-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Warning Time increases, Casualties decreases and when Building Design increases, Property Damage decreases and when Population Density increases, Total Impact increases. The student changes one variable to see how the whole system responds.
 
 Japan and Haiti both experience earthquakes, but Japan typically suffers far fewer deaths from similar-magnitude quakes. Based on the model, what explains this?
 
@@ -997,11 +945,15 @@ D. Japan's earthquakes happen further from cities
 
 Correct Answer: B
 
-Feedback: Correct! Japan has decades of investment in building codes requiring earthquake-resistant design, advanced seismic warning systems, and regular disaster preparedness training. These mitigation measures save thousands of lives. Not quite. The key difference is preparation. Japan has invested heavily in earthquake-resistant building codes, early warning technology, and citizen training. These mitigation measures dramatically reduce casualties even from powerful earthquakes.
+Feedback: Correct! Japan has decades of investment in building codes requiring earthquake-resistant design, advanced seismic warning systems, and regular disaster preparedness training. These mitigation measures save thousands of lives. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS3-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A city planner has a limited budget and must choose between upgrading building codes OR installing a new early warning system. Based on the model, which should they prioritize and why?
 
@@ -1012,25 +964,37 @@ D. Warning system, because it is always cheaper than building upgrades
 
 Correct Answer: B
 
-Feedback: Correct! The model shows building design reduces both casualties AND property damage. Warning systems save lives but not property. With a limited budget, building codes provide the most comprehensive protection. Not quite. According to the model, building design is the most effective single investment because it reduces both casualties and property damage. Warning systems are valuable for saving lives but don't protect infrastructure.
+Feedback: Correct! The model shows building design reduces both casualties AND property damage. Warning systems save lives but not property. With a limited budget, building codes provide the most comprehensive protection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS3-2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Hazard Intensity, Warning Time), but they can take action on internal components (Population Density, Building Design). They need to decide which action would be most effective based on what the model shows.
+
+Which of these is an example of a natural hazard?
+
+A. A car accident on the highway
+B. A hurricane making landfall on a coastal city
+C. A building collapsing due to poor construction
+D. Air pollution from a factory
+
+Correct Answer: B
+
+Feedback: Correct! Natural hazards are naturally occurring events like hurricanes, earthquakes, floods, and wildfires that can threaten human life and property. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS3-2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS3-2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS3-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS3-2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS3-2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

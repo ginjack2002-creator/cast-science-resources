@@ -868,77 +868,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a fossil?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.1 + CCC4 (Systems and System Models)
 
-A. A type of rock that looks like an animal
-B. A living animal that lives inside rocks
-C. The preserved remains or trace of a living thing from long ago
-D. A bone from an animal that died last year
-
-Correct Answer: C
-
-Feedback: That is right! A fossil is the preserved remains or trace of a living thing from long ago. Fossils form when living things get buried in sediment that hardens into rock over millions of years. A fossil is not a living thing or a recent bone. It is the preserved remains or trace of something that lived long ago, found in rock that formed over millions of years.
-
----
-
-### Question 2
-
-How do you think seashells could end up on top of a mountain?
-
-A. Birds carried them up there
-B. People left them there during a hike
-C. The mountain was once under the ocean and the land was pushed up over time
-D. The seashells grew on the mountain like plants
-
-Correct Answer: C
-
-Feedback: Correct! Many mountains were once ocean floor. Over millions of years, forces inside the Earth pushed the rock layers (with their fossils) upward, creating mountains. Finding ocean fossils on mountaintops is evidence that those mountains were once under the ocean. Earth's forces slowly pushed the ocean floor rock upward over millions of years.
-
----
-
-### Question 3
-
-What is sediment?
-
-A. A type of glue that holds rocks together
-B. Tiny pieces of rock, sand, mud, and shells that settle in layers
-C. A fossil that has been broken into pieces
-D. Hot liquid rock that comes out of volcanoes
-
-Correct Answer: B
-
-Feedback: Right! Sediment is tiny pieces of rock, sand, mud, and shells that settle and pile up in layers over time. When sediment hardens, it becomes sedimentary rock. Sediment is made of tiny pieces of rock, sand, mud, and shell fragments that settle in layers. Over millions of years, these layers get pressed together and harden into rock.
-
----
-
-### Question 4
-
-How long do you think it takes for a fossil to form?
-
-A. A few days
-B. About one year
-C. A few hundred years
-D. Thousands to millions of years
-
-Correct Answer: D
-
-Feedback: Exactly! Fossils take thousands to millions of years to form. The living thing must be buried in sediment, and the sediment must slowly harden into rock over a very long time. Fossil formation is an extremely slow process. It takes thousands to millions of years for sediment to bury a living thing and harden into rock with the fossil inside.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sediment Buildup, Earth Movement Speed, Fossil Exposure. Some components are external (Sediment Buildup, Earth Movement Speed) and some are internal (Fossil Exposure). The student needs to understand what each component represents and how they are organized.
 
 In the fossil model, Sediment Buildup and Earth Movement Speed are external components. What does Fossil Exposure (internal) depend on?
 
@@ -949,11 +889,15 @@ D. The color of the rock layers
 
 Correct Answer: B
 
-Feedback: Right! Fossil exposure depends on both external inputs. Sediment buildup creates fossils by burying organisms, and Earth movement pushes those layers to the surface where erosion reveals them. The model shows that fossil exposure depends on both sediment buildup (which creates fossils) and Earth movement speed (which pushes fossil layers to the surface).
+Feedback: Right! Fossil exposure depends on both external inputs. Sediment buildup creates fossils by burying organisms, and Earth movement pushes those layers to the surface where erosion reveals them. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sediment Buildup increases, Fossil Exposure increases; when Earth Movement Speed increases, Fossil Exposure increases. The student is trying to understand why these relationships are positive or negative.
 
 A scientist finds fish fossils on top of a mountain. What does this evidence tell us about the mountain's history?
 
@@ -964,11 +908,15 @@ D. The fish climbed the mountain millions of years ago
 
 Correct Answer: C
 
-Feedback: Exactly! Fish fossils on a mountain are evidence that those rock layers were once underwater. Earth movement pushed the ocean floor rock upward over millions of years to form the mountain. Fish fossils on a mountain are powerful evidence that the rock was once ocean floor. Over millions of years, forces inside Earth pushed those rock layers up to become a mountain.
+Feedback: Exactly! Fish fossils on a mountain are evidence that those rock layers were once underwater. Earth movement pushed the ocean floor rock upward over millions of years to form the mountain. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sediment Buildup increases, Fossil Exposure increases and when Earth Movement Speed increases, Fossil Exposure increases. The student changes one variable to see how the whole system responds.
 
 Put these events in the correct order for how ocean fossils end up on mountains.
 
@@ -979,11 +927,15 @@ D. Sediment builds up, erosion breaks it apart, then organisms get buried
 
 Correct Answer: B
 
-Feedback: That is right! The correct sequence is: organisms die and get buried in sediment layers, the sediment hardens into rock over time, Earth movement pushes the rock layers upward, and then wind and rain erode the surface to reveal the fossils. The correct order is: organisms die and get buried in sediment, sediment turns to rock, Earth movement pushes rock layers upward to form mountains, and then erosion at the surface reveals the ancient fossils.
+Feedback: That is right! The correct sequence is: organisms die and get buried in sediment layers, the sediment hardens into rock over time, Earth movement pushes the rock layers upward, and then wind and rain erode the surface to reveal the fossils. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which rock layer would contain the OLDEST fossils?
 
@@ -994,25 +946,37 @@ D. All layers contain fossils of the same age
 
 Correct Answer: B
 
-Feedback: Correct! The bottom rock layer was deposited first, so it contains the oldest fossils. Each layer above is younger. This is called the law of superposition. Rock layers build up from the bottom. The bottom layer was deposited first and is the oldest, so it contains the oldest fossils. Newer layers stack on top.
+Feedback: Correct! The bottom rock layer was deposited first, so it contains the oldest fossils. Each layer above is younger. This is called the law of superposition. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sediment Buildup, Earth Movement Speed), but they can take action on internal components (Fossil Exposure). They need to decide which action would be most effective based on what the model shows.
+
+What is a fossil?
+
+A. A type of rock that looks like an animal
+B. A living animal that lives inside rocks
+C. The preserved remains or trace of a living thing from long ago
+D. A bone from an animal that died last year
+
+Correct Answer: C
+
+Feedback: That is right! A fossil is the preserved remains or trace of a living thing from long ago. Fossils form when living things get buried in sediment that hardens into rock over millions of years. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: C
-Question 3: B
-Question 4: D
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

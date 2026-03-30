@@ -907,86 +907,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A Mars habitat relies on solar panels for energy and a closed-loop system for water recycling. If a dust storm reduces solar output by 50%, which outcome is most likely based on systems engineering principles?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.4 + CCC2 (Cause and Effect)
 
-A. Only the lighting system is affected because other systems have independent power sources
-B. Water recycling, temperature regulation, and food production all degrade because they depend on the shared energy supply
-C. The habitat automatically switches to backup wind power from Martian winds
-D. Crew psychological well-being improves because dust storms reduce outside radiation exposure
-
-Correct Answer: B
-
-Feedback: Correct. In an interdependent system, energy generation is the keystone variable. When it degrades, all downstream systems that require power — water recycling, temperature regulation, food production lighting — are affected in a cascading failure. Consider that most habitat systems require continuous electrical power. When the primary energy source degrades, any system dependent on that power will also degrade. This is the principle of cascading failure in interdependent systems.
-
----
-
-### Question 2
-
-Why is systems redundancy considered essential in Mars habitat engineering but less critical for buildings on Earth?
-
-A. Mars habitats use more advanced technology that breaks down more frequently
-B. Earth buildings never experience system failures
-C. On Mars, there is no possibility of rapid resupply or external rescue, so a single-point failure could be fatal
-D. Redundancy is equally important on Earth but is never implemented due to cost
-
-Correct Answer: C
-
-Feedback: Correct. The nearest help is 225 million km away with a 6-9 month transit time. Unlike Earth, where emergency services, replacement parts, and evacuation are available, Mars demands built-in redundancy because there is no external backup. Think about what makes Mars fundamentally different from Earth as an engineering environment. The key factor is isolation — the inability to receive help, parts, or rescue in a timely manner.
-
----
-
-### Question 3
-
-In-situ resource utilization (ISRU) on Mars involves extracting oxygen from atmospheric CO2. Which scientific principle best explains why this is preferable to transporting oxygen from Earth?
-
-A. Martian oxygen is chemically purer than Earth-produced oxygen
-B. The energy cost of launching mass from Earth's gravity well makes local resource harvesting far more economical
-C. Oxygen cannot survive the radiation environment during the transit from Earth to Mars
-D. Earth does not have sufficient oxygen reserves to supply a Mars colony
-
-Correct Answer: B
-
-Feedback: Correct. Launching mass from Earth costs approximately $10,000-$50,000 per kilogram. Extracting resources locally eliminates launch mass costs, making ISRU essential for long-term sustainability despite the energy required for extraction. Consider the economics and physics of space travel. Moving mass from Earth's surface to Mars requires overcoming Earth's gravitational pull with enormous amounts of rocket fuel, making every kilogram extremely expensive.
-
----
-
-### Question 4
-
-A habitat engineer argues that psychological well-being should be deprioritized during a crisis because it is not a physical survival system. What is the strongest scientific counterargument?
-
-A. Psychological well-being has no measurable effect on physical systems
-B. Degraded mental health directly impairs crew decision-making, maintenance quality, and conflict resolution — creating feedback loops that worsen the crisis
-C. Crew members can simply be ordered to maintain good morale during emergencies
-D. Psychological monitoring equipment uses too much energy during power shortages
-
-Correct Answer: B
-
-Feedback: Correct. Psychological well-being is a survival variable, not a luxury. Research from ISS missions and Antarctic isolation studies shows that degraded mental health leads to poor decisions, maintenance errors, and interpersonal conflict — all of which can compound a physical crisis. Consider how human performance under stress affects every other system. If crew members are making poor decisions due to psychological deterioration, every system they maintain or manage is at greater risk.
-
----
-
-### Question 5
-
-Which engineering design philosophy is most appropriate for a Mars habitat that must survive unpredictable equipment failures?
-
-A. Design for maximum efficiency so every component operates at peak capacity with no wasted resources
-B. Design for graceful degradation so the habitat can operate at reduced capacity rather than failing completely
-C. Design for minimum mass to reduce launch costs, even if it means eliminating backup systems
-D. Design for rapid replacement so failed components can be swapped out within hours
-
-Correct Answer: B
-
-Feedback: Correct. Graceful degradation means the habitat continues functioning at reduced capacity during failures rather than experiencing catastrophic collapse. This approach keeps the crew alive while repairs are made, unlike binary success/failure designs. Think about what happens when a system fails on Mars. The best engineering approach is one where failure of a component reduces performance but does not cause total system collapse.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Radiation Shielding, Atmosphere Control, Water Recycling, Food Production, Energy Generation, Structural Integrity, Temperature Regulation, Waste Management, Psychological Well-Being. Some components are external (Energy Generation, Psychological Well-Being) and some are internal (Radiation Shielding, Atmosphere Control, Water Recycling, Food Production, Structural Integrity, Temperature Regulation, Waste Management). The student needs to understand what each component represents and how they are organized.
 
 A student's computational model shows that reducing Energy Generation by 40% causes Atmosphere Control to drop to critical levels within 2 days, but Food Production does not reach critical levels for 30 days. What does this difference reveal about crisis management priorities?
 
@@ -997,11 +922,15 @@ D. Energy Generation does not actually affect Atmosphere Control
 
 Correct Answer: B
 
-Feedback: Correct. Different systems have different buffer capacities. Atmosphere composition changes within hours to days without active management, while stored food can sustain crew for weeks. This time-to-critical difference directly informs triage priorities during energy crises. Consider that different systems have different reserves or buffers. A system with large stored reserves (food) can tolerate power loss longer than a system requiring continuous operation (air composition management).
+Feedback: Correct. Different systems have different buffer capacities. Atmosphere composition changes within hours to days without active management, while stored food can sustain crew for weeks. This time-to-critical difference directly informs triage priorities during energy crises. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.4 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Generation increases, Atmosphere Control increases; when Water Recycling increases, Food Production increases. The student is trying to understand why these relationships are positive or negative.
 
 In the Mars habitat model, Energy Generation is classified as an external (input) variable while Temperature Regulation is classified as internal. What is the best justification for this distinction?
 
@@ -1012,11 +941,15 @@ D. The classification is arbitrary and could be reversed without affecting the m
 
 Correct Answer: B
 
-Feedback: Correct. In computational modeling, external (input) variables represent quantities that operators set or control directly. Internal variables emerge from the interactions between inputs and system dynamics. Energy Generation is set by the power system design; Temperature Regulation responds to available energy and Mars surface conditions. Think about the difference between variables you directly set (inputs you control) and variables that result from the system's behavior (outputs that emerge from interactions).
+Feedback: Correct. In computational modeling, external (input) variables represent quantities that operators set or control directly. Internal variables emerge from the interactions between inputs and system dynamics. Energy Generation is set by the power system design; Temperature Regulation responds to available energy and Mars surface conditions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.4 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Energy Generation increases, Atmosphere Control increases and when Water Recycling increases, Food Production increases. The student changes one variable to see how the whole system responds.
 
 The model predicts that during a 45-day dust storm, crew psychological well-being degrades, which causes maintenance quality to decline, which causes additional system failures. This pattern is best described as:
 
@@ -1027,11 +960,15 @@ D. An artifact of the model that would not occur in a real habitat
 
 Correct Answer: B
 
-Feedback: Correct. This is a positive (amplifying) feedback loop: psychological stress reduces maintenance quality, which causes more system failures, which increases stress further. Without intervention, the loop spirals toward increasingly dangerous conditions. Consider the direction of the cycle: does each step make the next step better or worse? When worsening conditions cause further worsening in a circular pattern, that is a specific type of feedback loop.
+Feedback: Correct. This is a positive (amplifying) feedback loop: psychological stress reduces maintenance quality, which causes more system failures, which increases stress further. Without intervention, the loop spirals toward increasingly dangerous conditions. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A team redesigns the habitat to use nuclear power instead of solar as the primary energy source. According to the model's systems logic, which prediction is best supported?
 
@@ -1042,11 +979,15 @@ D. Psychological well-being automatically improves because nuclear energy is mor
 
 Correct Answer: B
 
-Feedback: Correct. The dust storm crisis in the model is triggered by reduced solar energy generation. Nuclear power operates independently of atmospheric conditions, so the primary cascade trigger is eliminated. However, nuclear introduces different risks (radiation, mechanical failure) that would need to be modeled separately. Consider what specifically triggers the cascading failure in the dust storm scenario. If the energy source is not affected by dust, does the same cascade occur?
+Feedback: Correct. The dust storm crisis in the model is triggered by reduced solar energy generation. Nuclear power operates independently of atmospheric conditions, so the primary cascade trigger is eliminated. However, nuclear introduces different risks (radiation, mechanical failure) that would need to be modeled separately. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Energy Generation, Psychological Well-Being), but they can take action on internal components (Radiation Shielding, Atmosphere Control, Water Recycling, Food Production, Structural Integrity, Temperature Regulation, Waste Management). They need to decide which action would be most effective based on what the model shows.
 
 A model limitation is that it uses nine components to represent a habitat that would actually contain hundreds of subsystems. How does this simplification most likely affect the model's predictions?
 
@@ -1057,27 +998,18 @@ D. The model overestimates system resilience because it includes too many redund
 
 Correct Answer: B
 
-Feedback: Correct. Model simplification is a standard scientific practice that captures essential dynamics while sacrificing detail. The nine-component model reveals fundamental interdependencies and cascade patterns but cannot predict every specific failure pathway that hundreds of subsystems might produce. Think about the purpose of modeling. All models are simplifications of reality. The question is whether the simplification preserves the important dynamics (cascade effects, interdependencies) even if it misses specific details.
+Feedback: Correct. Model simplification is a standard scientific practice that captures essential dynamics while sacrificing detail. The nine-component model reveals fundamental interdependencies and cascade patterns but cannot predict every specific failure pathway that hundreds of subsystems might produce. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.4, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.4, CCC5)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.4, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

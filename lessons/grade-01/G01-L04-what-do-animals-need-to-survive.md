@@ -732,73 +732,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do animals need to stay alive?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
 
-A. Toys and games
-B. Food and water
-C. A TV and a phone
-
-Correct Answer: B
-
-Feedback: Yes! All animals need food and water to survive. Animals need real things like food and water to stay alive, not toys or electronics.
-
----
-
-### Question 2
-
-What happens to an animal that has no water?
-
-A. It stays healthy
-B. It gets sick and weak
-C. Nothing happens
-
-Correct Answer: B
-
-Feedback: That is right! Without water, an animal gets sick and weak. Water is very important. Without it, an animal's body cannot work and it gets very sick.
-
----
-
-### Question 3
-
-What is a shelter?
-
-A. A type of food
-B. A safe place to hide
-C. A kind of weather
-
-Correct Answer: B
-
-Feedback: Yes! A shelter is a safe place where an animal can hide from danger and bad weather. A shelter is a safe home or hiding place, like a bird's nest or a rabbit's burrow.
-
----
-
-### Question 4
-
-Do all animals need the same things to survive?
-
-A. No, every animal needs completely different things
-B. Yes, they all need food, water, air, and shelter
-C. Only big animals need food and water
-
-Correct Answer: B
-
-Feedback: That is right! Every animal needs food, water, air, and shelter. All animals, big and small, need the same four basic things: food, water, air, and shelter.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Resources Available, Animal Health. Some components are external (Resources Available) and some are internal (Animal Health). The student needs to understand what each component represents and how they are organized.
 
 What are the four basic things all animals need to survive?
 
@@ -808,11 +752,15 @@ C. Water, friends, sun, and music
 
 Correct Answer: A
 
-Feedback: Yes! Food, water, air, and shelter are the four basic needs of all animals. All animals need four things to survive: food for energy, water to drink, air to breathe, and shelter to stay safe.
+Feedback: Yes! Food, water, air, and shelter are the four basic needs of all animals. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Resources Available increases, Animal Health increases. The student is trying to understand why these relationships are positive or negative.
 
 When resources available goes UP, what happens to animal health?
 
@@ -822,11 +770,15 @@ C. Animal health goes up
 
 Correct Answer: C
 
-Feedback: That is right! More resources means a healthier, stronger animal. When animals have plenty of food, water, and shelter, they stay healthy and strong.
+Feedback: That is right! More resources means a healthier, stronger animal. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Resources Available increases, Animal Health increases. The student changes one variable to see how the whole system responds.
 
 What is a habitat?
 
@@ -836,11 +788,15 @@ C. A type of shelter made of wood
 
 Correct Answer: B
 
-Feedback: Yes! A habitat is the place where an animal lives and finds everything it needs. A habitat is an animal's natural home where it can find food, water, air, and shelter.
+Feedback: Yes! A habitat is the place where an animal lives and finds everything it needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A fish lives in a pond. Why is the pond a good habitat for the fish?
 
@@ -850,25 +806,36 @@ C. Because fish like the color blue
 
 Correct Answer: B
 
-Feedback: Yes! The pond gives the fish water to swim in, food to eat, and places to hide. A good habitat has all four things an animal needs. A pond gives a fish water, food, air, and shelter.
+Feedback: Yes! The pond gives the fish water to swim in, food to eat, and places to hide. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Resources Available), but they can take action on internal components (Animal Health). They need to decide which action would be most effective based on what the model shows.
+
+What do animals need to stay alive?
+
+A. Toys and games
+B. Food and water
+C. A TV and a phone
+
+Correct Answer: B
+
+Feedback: Yes! All animals need food and water to survive. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

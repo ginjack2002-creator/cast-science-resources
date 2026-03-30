@@ -178,77 +178,17 @@ Robotics Engineers specializing in biomimicry design robots inspired by nature f
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-4, MS-ETS1-1, MS-ETS1-2, MS-ETS1-3, MS-ETS1-4.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What does 'fidelity' mean in engineering design?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. How much a design costs to build
-B. How accurately an artificial design replicates the original natural feature
-C. How fast a machine can move
-D. How many people like the design
-
-Correct Answer: B
-
-Feedback: Correct! Fidelity refers to how accurately an artificial design copies or replicates the original natural feature it is based on. In engineering, fidelity means how accurately an artificial design replicates the original. High fidelity means the design closely matches the real thing; low fidelity means it is a rough approximation.
-
----
-
-### Question 2
-
-Why is it difficult to build a robot that perfectly mimics an animal?
-
-A. Animals are too small to copy
-B. Every design improvement creates tradeoffs with other performance aspects
-C. Robots cannot be built in animal shapes
-D. Engineers are not allowed to study animals
-
-Correct Answer: B
-
-Feedback: Yes! Building animal-like robots is challenging because improving one aspect (like movement accuracy) often creates tradeoffs with other aspects (like energy use or durability). Creating a lifelike animal robot is hard because every design choice involves tradeoffs. Making the robot move more naturally might require more energy. Using lifelike materials might reduce durability. Engineers must balance multiple competing goals.
-
----
-
-### Question 3
-
-What is an iteration in the engineering design process?
-
-A. The final step where you stop working
-B. A cycle of testing, evaluating, and improving a design
-C. When you copy someone else's design exactly
-D. When you give up on a project
-
-Correct Answer: B
-
-Feedback: Correct! An iteration is one cycle of testing, evaluating results, and making improvements to a design. Good engineering involves many iterations. An iteration is a complete cycle of the design process: build, test, evaluate, and improve. Engineers rarely get a design right on the first try. Each iteration brings the design closer to the goal.
-
----
-
-### Question 4
-
-Can a robot with the wrong basic shape be fixed by using better materials?
-
-A. Yes, better materials always fix design problems
-B. No, the fundamental design must be correct first, then materials improve it
-C. Materials do not matter at all in engineering
-D. Only the color of the materials matters
-
-Correct Answer: B
-
-Feedback: Yes! The fundamental design choice matters most. Better materials can improve a good design, but they cannot rescue a fundamentally flawed one. The fundamental shape and design must be correct first. No amount of expensive or high-tech materials can fix a design that copies the wrong animal feature. The basic concept must work before materials and power can enhance it.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Animal Feature Selected, Material Choice, Power Source, Movement Accuracy, Energy Use, Durability, Detection Risk. Some components are external (Animal Feature Selected, Material Choice, Power Source) and some are internal (Movement Accuracy, Energy Use, Durability, Detection Risk). The student needs to understand what each component represents and how they are organized.
 
 In the model, which input had the GREATEST impact on overall performance?
 
@@ -259,11 +199,15 @@ D. All three inputs have exactly equal impact
 
 Correct Answer: C
 
-Feedback: Correct! The model showed that the fundamental design choice (which animal feature to copy) had the greatest impact. No material or power boost could fix a bad fundamental design. The model clearly demonstrated that selecting the right animal feature to copy is the most important decision. When the wrong feature was chosen (pointed tail instead of flat for swimming), even the best materials and maximum power could not compensate.
+Feedback: Correct! The model showed that the fundamental design choice (which animal feature to copy) had the greatest impact. No material or power boost could fix a bad fundamental design. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Animal Feature increases, Movement Accuracy decreases; when Material Choice increases, Movement Accuracy increases. The student is trying to understand why these relationships are positive or negative.
 
 What tradeoff did the model reveal about using lifelike materials?
 
@@ -274,11 +218,15 @@ D. Lifelike materials only affected appearance, nothing else
 
 Correct Answer: B
 
-Feedback: Yes! The model showed that lifelike materials (like silicone) made the robot harder to detect as artificial, but they also increased energy use and reduced durability. This is a classic engineering tradeoff. Lifelike materials like silicone reduced detection risk (the robot looked more real) but came with costs: they increased energy use and decreased durability. This demonstrates that in engineering, improving one metric often worsens another.
+Feedback: Yes! The model showed that lifelike materials (like silicone) made the robot harder to detect as artificial, but they also increased energy use and reduced durability. This is a classic engineering tradeoff. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Animal Feature increases, Movement Accuracy decreases and when Material Choice increases, Movement Accuracy increases and when Material Choice increases, Detection Risk decreases. The student changes one variable to see how the whole system responds.
 
 What did the model show about whether more power can overcome material limitations?
 
@@ -289,11 +237,15 @@ D. More power always makes performance worse
 
 Correct Answer: B
 
-Feedback: Correct! More power improved some outputs but introduced new tradeoffs: heavier batteries, more heat, and shorter operational lifespan. There is no free lunch in engineering. The model showed that increasing power helped improve movement accuracy, but it also brought new problems: the power source was heavier, generated more heat, and reduced operational lifespan. Engineering tradeoffs mean you cannot simply add more power to solve every problem.
+Feedback: Correct! More power improved some outputs but introduced new tradeoffs: heavier batteries, more heat, and shorter operational lifespan. There is no free lunch in engineering. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why are nature's designs so efficient compared to human engineering?
 
@@ -304,25 +256,37 @@ D. Nature's designs are not actually efficient
 
 Correct Answer: B
 
-Feedback: That is right! Evolution has been testing and refining animal designs for millions of years. Only the most efficient designs survived, making them excellent models for human engineering. Nature's designs are efficient because evolution has been testing and selecting the best solutions for millions of years. Animals that survived had the most efficient body structures and features. This is why biomimicry is so valuable: engineers can start from solutions that have already been refined over vast timescales.
+Feedback: That is right! Evolution has been testing and refining animal designs for millions of years. Only the most efficient designs survived, making them excellent models for human engineering. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Animal Feature Selected, Material Choice, Power Source), but they can take action on internal components (Movement Accuracy, Energy Use, Durability, Detection Risk). They need to decide which action would be most effective based on what the model shows.
+
+What does 'fidelity' mean in engineering design?
+
+A. How much a design costs to build
+B. How accurately an artificial design replicates the original natural feature
+C. How fast a machine can move
+D. How many people like the design
+
+Correct Answer: B
+
+Feedback: Correct! Fidelity refers to how accurately an artificial design copies or replicates the original natural feature it is based on. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

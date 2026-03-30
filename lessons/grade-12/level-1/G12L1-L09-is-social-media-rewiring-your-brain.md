@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Social media platforms use variable-ratio reinforcement schedules in their design. Which comparison best illustrates why this pattern is so addictive?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. It is like getting paid the same amount every hour at a job
-B. It is the same mechanism that makes slot machines addictive: unpredictable rewards after an uncertain number of actions create the most compulsive behavior patterns
-C. It is like earning a fixed grade on every assignment
-D. It is similar to watching a movie with a predictable plot
-
-Correct Answer: B
-
-Feedback: Correct. Variable-ratio reinforcement is the most addictive reward schedule known to behavioral neuroscience. The unpredictability of when the next reward (like, comment, viral post) will arrive creates compulsive checking behavior. Incorrect. Variable-ratio reinforcement, where rewards come after an unpredictable number of actions, is the same mechanism used in slot machines. It creates the most compulsive behavior because you never know when the next reward is coming.
-
----
-
-### Question 2
-
-What is dopamine baseline and how does chronic social media use affect it?
-
-A. Dopamine baseline is the brain's resting mood level; social media has no effect on it
-B. Dopamine baseline is the brain's resting dopamine activity; chronic overstimulation from social media can lower it, making non-digital activities feel boring and unrewarding
-C. Dopamine baseline increases with social media use, making everything more enjoyable
-D. Dopamine baseline is determined entirely by genetics and cannot change
-
-Correct Answer: B
-
-Feedback: Correct. The dopamine baseline determines normal mood, motivation, and pleasure capacity. Chronic social media overstimulation lowers this baseline through receptor downregulation, making non-digital experiences feel less rewarding. Incorrect. Chronic social media use can lower the dopamine baseline through receptor downregulation. When baseline dopamine activity drops, non-digital activities like reading, conversation, and hobbies feel increasingly boring by comparison.
-
----
-
-### Question 3
-
-What is attention fragmentation, and how does social media contribute to it?
-
-A. A medical condition unrelated to technology use
-B. The progressive shortening of sustained attention capacity caused by the brain adapting to expect new content every few seconds through neuroplastic changes
-C. The ability to focus on multiple social media platforms simultaneously, which improves multitasking
-D. A temporary condition that resolves as soon as a person puts down their phone
-
-Correct Answer: B
-
-Feedback: Correct. Attention fragmentation is a neuroplastic change where the brain physically strengthens rapid-switching circuits and weakens sustained-attention circuits. Social media trains the brain to expect new stimuli every few seconds. Incorrect. Attention fragmentation is a measurable neuroplastic change. Social media trains the brain to expect new content every few seconds, physically strengthening rapid-switching circuits while weakening the ability to sustain focus on longer tasks.
-
----
-
-### Question 4
-
-TikTok serves videos every 15-60 seconds, each optimized by AI to maximize dopamine response. After two hours, a student tries to read a textbook. Why does the textbook feel unbearable?
-
-A. The textbook contains more difficult vocabulary than TikTok videos
-B. Two hours of rapid dopamine hits from short-form content temporarily elevates the brain's reward threshold, making the slower, lower-stimulation experience of reading feel unsatisfying by comparison
-C. The student is simply not interested in the subject of the textbook
-D. Reading requires different eye muscles than watching videos, causing physical fatigue
-
-Correct Answer: B
-
-Feedback: Correct. Rapid-fire short-form content creates a temporarily elevated dopamine threshold. The textbook's slower, lower-stimulation experience cannot compete, making it feel unsatisfying and requiring more effort to sustain attention. Incorrect. Two hours of rapid dopamine hits raises the brain's reward threshold. The textbook delivers stimulation below this elevated threshold, making it feel boring and effortful. The brain has been temporarily trained to expect constant novelty.
-
----
-
-### Question 5
-
-Can the brain recover from the neurological effects of heavy social media use?
-
-A. No, all changes to brain structure from social media are permanent and irreversible
-B. Yes, digital detox studies show measurable improvement in dopamine sensitivity and attention span within 2-4 weeks, though full recovery depends on duration and intensity of prior use
-C. Recovery happens instantly as soon as a person deletes their social media accounts
-D. Only children's brains can recover; adult brains are permanently changed
-
-Correct Answer: B
-
-Feedback: Correct. Neuroplasticity works in both directions. Digital detox research shows measurable recovery of dopamine sensitivity and attention capacity within 2-4 weeks, though complete recovery may take longer depending on the extent of prior use. Incorrect. The brain's neuroplasticity enables recovery. Digital detox studies demonstrate measurable improvements in attention and dopamine sensitivity within 2-4 weeks, though full restoration depends on the duration and intensity of prior heavy use.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Social Media Exposure, Notification Frequency, Dopamine Sensitivity, Attention Capacity, Cognitive Well-Being. Some components are external (Social Media Exposure, Notification Frequency) and some are internal (Dopamine Sensitivity, Attention Capacity, Cognitive Well-Being). The student needs to understand what each component represents and how they are organized.
 
 The model includes Social Media Exposure, Notification Frequency, Dopamine Sensitivity, Attention Capacity, and Cognitive Well-Being. After 30 days of 4+ hours of passive scrolling with maximum notifications, what does the model predict?
 
@@ -1001,11 +926,15 @@ D. All components return to baseline within 24 hours of stopping
 
 Correct Answer: B
 
-Feedback: Correct. The model predicts a three-part decline: receptor downregulation lowers Dopamine Sensitivity, neuroplastic changes shorten Attention Capacity, and both effects compound to reduce Cognitive Well-Being (working memory, impulse control, emotional regulation). Incorrect. The model shows heavy passive use drives three interconnected declines: dopamine receptor downregulation reduces reward sensitivity, neuroplastic adaptation weakens sustained attention circuits, and both compound to impair overall cognitive well-being.
+Feedback: Correct. The model predicts a three-part decline: receptor downregulation lowers Dopamine Sensitivity, neuroplastic changes shorten Attention Capacity, and both effects compound to reduce Cognitive Well-Being (working memory, impulse control, emotional regulation). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC1 (Patterns)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Social Media Exposure increases, Dopamine Sensitivity decreases; when Notification Frequency increases, Attention Capacity decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model compares passive scrolling versus active content creation with equal total screen time. Why does the model predict different neurological outcomes for these two usage patterns?
 
@@ -1016,11 +945,15 @@ D. Active creation is more addictive than passive scrolling because it involves 
 
 Correct Answer: B
 
-Feedback: Correct. The type of engagement matters as much as duration. Passive scrolling triggers rapid variable-ratio dopamine hits, while active creation engages different neural circuits (sustained attention, prefrontal planning) with more natural dopamine patterns. Incorrect. The model shows that dopamine release patterns differ by usage type. Passive scrolling provides rapid, unpredictable rewards that downregulate receptors, while active creation engages sustained attention and goal-directed processing with healthier dopamine dynamics.
+Feedback: Correct. The type of engagement matters as much as duration. Passive scrolling triggers rapid variable-ratio dopamine hits, while active creation engages different neural circuits (sustained attention, prefrontal planning) with more natural dopamine patterns. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Social Media Exposure increases, Dopamine Sensitivity decreases and when Notification Frequency increases, Attention Capacity decreases. The student changes one variable to see how the whole system responds.
 
 The model predicts that a 14-day digital detox shows partial recovery. Why does the model predict that full recovery requires weeks to months rather than days?
 
@@ -1031,11 +964,15 @@ D. Recovery is actually instant; the model's prediction of weeks to months is in
 
 Correct Answer: B
 
-Feedback: Correct. The changes from heavy social media use are neuroplastic (structural). Reversing them requires the brain to strengthen sustained-attention circuits and upregulate dopamine receptors through new neuroplastic changes, which is a gradual process. Incorrect. Recovery takes time because the changes are neuroplastic (structural adaptations in neural circuits). Rebuilding sustained-attention pathways and upregulating dopamine receptors requires time for new structural changes, just as the original damage developed gradually.
+Feedback: Correct. The changes from heavy social media use are neuroplastic (structural). Reversing them requires the brain to strengthen sustained-attention circuits and upregulate dopamine receptors through new neuroplastic changes, which is a gradual process. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student adds FOMO Activation as a component to the model. How does FOMO interact with the existing dopamine-based mechanisms to keep users engaged?
 
@@ -1046,11 +983,15 @@ D. FOMO only affects users under 13 years old
 
 Correct Answer: B
 
-Feedback: Correct. FOMO adds an anxiety-based drive that operates through different neural pathways than dopamine reward. Together, they create a dual mechanism: users check for rewards (dopamine) AND to relieve anxiety about missing out (FOMO), making disengagement doubly difficult. Incorrect. FOMO operates through anxiety pathways that are separate from but synergistic with the dopamine reward system. This dual-drive mechanism means users are pulled to check by both reward-seeking AND anxiety-avoidance, compounding the addictive pull.
+Feedback: Correct. FOMO adds an anxiety-based drive that operates through different neural pathways than dopamine reward. Together, they create a dual mechanism: users check for rewards (dopamine) AND to relieve anxiety about missing out (FOMO), making disengagement doubly difficult. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Social Media Exposure, Notification Frequency), but they can take action on internal components (Dopamine Sensitivity, Attention Capacity, Cognitive Well-Being). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model's evidence about variable-ratio reinforcement and neuroplasticity, which regulatory approach is MOST directly supported by the neuroscience?
 
@@ -1061,27 +1002,18 @@ D. Regulation is unnecessary because individuals can simply choose to use less s
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that platforms deliberately exploit known addictive mechanisms. Transparency requirements and design regulations address the root cause (engineered addiction) rather than placing the full burden on individuals whose brains are being manipulated. Incorrect. The model demonstrates that platforms use deliberate psychological manipulation (variable-ratio reinforcement, notification systems). Requiring disclosure and design changes addresses the engineered addictiveness at its source, rather than asking individuals to resist neuroscientific manipulation alone.
+Feedback: Correct. The model shows that platforms deliberately exploit known addictive mechanisms. Transparency requirements and design regulations address the root cause (engineered addiction) rather than placing the full burden on individuals whose brains are being manipulated. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC1)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

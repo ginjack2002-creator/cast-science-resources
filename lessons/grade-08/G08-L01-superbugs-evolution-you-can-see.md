@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-4, MS-LS4-6.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the primary function of antibiotics?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS4-4, MS-LS4-6 + CCC4 (Systems and System Models)
 
-A. To kill or stop the growth of bacteria
-B. To boost the human immune system
-C. To kill viruses that cause the common cold
-D. To prevent all types of infections permanently
-
-Correct Answer: A
-
-Feedback: Correct! Antibiotics specifically target bacteria. They do not work against viruses or permanently prevent infections. Antibiotics are medicines designed to kill or inhibit the growth of bacteria. They do not affect viruses, boost the immune system directly, or provide permanent protection.
-
----
-
-### Question 2
-
-Where do new traits in a population originally come from?
-
-A. Organisms choose to develop traits they need to survive
-B. Random changes (mutations) in an organism's DNA
-C. The environment directly changes the organism's genes
-D. Traits are created by natural selection itself
-
-Correct Answer: B
-
-Feedback: Correct! Mutations are random changes in DNA that introduce new traits into a population. Natural selection then acts on those traits. New traits arise from random mutations in DNA. Organisms cannot choose traits, the environment does not directly rewrite genes, and natural selection acts on existing variation rather than creating it.
-
----
-
-### Question 3
-
-In the process of natural selection, which organisms are most likely to survive and reproduce?
-
-A. The largest and strongest organisms
-B. Organisms with traits that are best suited to their current environment
-C. The oldest organisms in the population
-D. Organisms that can change their traits when the environment changes
-
-Correct Answer: B
-
-Feedback: Correct! Natural selection favors organisms with traits that provide an advantage in their specific environment, regardless of size, age, or intentional adaptation. 'Survival of the fittest' does not mean strongest or largest. It means organisms whose traits happen to be best suited to the current environment are more likely to survive and pass on those traits.
-
----
-
-### Question 4
-
-A doctor prescribes antibiotics for a patient with a bacterial infection. The patient feels better after 3 days but has a 10-day prescription. What should the patient do?
-
-A. Stop taking the antibiotics since the infection is gone
-B. Take the remaining pills all at once to finish faster
-C. Complete the full 10-day course as prescribed
-D. Save the remaining pills for the next time they get sick
-
-Correct Answer: C
-
-Feedback: Correct! Completing the full course ensures that even partially resistant bacteria are killed. Stopping early can leave the most resistant bacteria alive to reproduce. Patients should always complete the full antibiotic course. Stopping early, taking pills all at once, or saving them can all contribute to antibiotic resistance by allowing resistant bacteria to survive.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Antibiotic Use, Mutation Rate, Resistant Bacteria, Treatment Effectiveness. Some components are external (Antibiotic Use, Mutation Rate) and some are internal (Resistant Bacteria, Treatment Effectiveness). The student needs to understand what each component represents and how they are organized.
 
 In a population of bacteria exposed to antibiotics, resistant bacteria survive while non-resistant bacteria die. Which statement best explains why the resistant bacteria survived?
 
@@ -967,11 +907,15 @@ D. The resistant bacteria learned to fight the antibiotic through repeated expos
 
 Correct Answer: C
 
-Feedback: Correct! Resistance genes arise from random mutations that exist before antibiotic exposure. Antibiotics do not cause resistance; they select for bacteria that already carry resistance genes. Antibiotics do not cause mutations or teach bacteria to resist. Resistance genes arise from random mutations that happened before any antibiotic was present. The antibiotic acts as a selective pressure, favoring bacteria that already have resistance.
+Feedback: Correct! Resistance genes arise from random mutations that exist before antibiotic exposure. Antibiotics do not cause resistance; they select for bacteria that already carry resistance genes. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS4-4, MS-LS4-6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Antibiotic Use increases, Resistant Bacteria increases; when Mutation Rate increases, Resistant Bacteria increases. The student is trying to understand why these relationships are positive or negative.
 
 A model shows that when antibiotic use is set to 100%, resistant bacteria reach 90% of the population in 10 generations. When antibiotic use is set to 30%, resistant bacteria reach only 25% in the same time. What does this evidence support?
 
@@ -982,11 +926,15 @@ D. Antibiotics at 30% are too weak to kill any bacteria
 
 Correct Answer: B
 
-Feedback: Correct! Higher antibiotic use creates stronger selective pressure. More non-resistant bacteria are killed, giving resistant bacteria a larger reproductive advantage and accelerating population change. Reducing antibiotic use does not stop mutations. Resistant bacteria can appear at any antibiotic level. The key insight is that higher use creates stronger selective pressure, so the resistant population grows faster.
+Feedback: Correct! Higher antibiotic use creates stronger selective pressure. More non-resistant bacteria are killed, giving resistant bacteria a larger reproductive advantage and accelerating population change. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS4-4, MS-LS4-6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Antibiotic Use increases, Resistant Bacteria increases and when Mutation Rate increases, Resistant Bacteria increases and when Resistant Bacteria increases, Treatment Effectiveness decreases. The student changes one variable to see how the whole system responds.
 
 A hospital notices that MRSA infections have increased by 300% over 10 years. Using your understanding of natural selection, which factor most directly drove this increase?
 
@@ -997,11 +945,15 @@ D. Patients' immune systems became weaker, allowing bacteria to mutate faster
 
 Correct Answer: B
 
-Feedback: Correct! Repeated antibiotic use acts as a sustained selective pressure. Over many generations, bacteria with pre-existing resistance genes outcompete susceptible bacteria, increasing the resistant population. Bacteria do not deliberately evolve. Cleanliness and immune strength affect infection rates but do not drive resistance evolution. The mechanism is natural selection: repeated antibiotic use selects for bacteria that already carry resistance genes.
+Feedback: Correct! Repeated antibiotic use acts as a sustained selective pressure. Over many generations, bacteria with pre-existing resistance genes outcompete susceptible bacteria, increasing the resistant population. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS4-4, MS-LS4-6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Your model includes Mutation Rate and Antibiotic Use as external components and Resistant Bacteria and Treatment Effectiveness as internal components. If you wanted to slow the rise of resistant bacteria, which strategy would your model support?
 
@@ -1012,25 +964,37 @@ D. Eliminate all bacteria from hospitals using stronger chemicals
 
 Correct Answer: C
 
-Feedback: Correct! Reducing antibiotic use decreases selective pressure. Without strong selection against non-resistant bacteria, resistant bacteria do not gain as large a reproductive advantage, slowing the spread of resistance. Increasing mutation rate would create more variation, not fewer survivors. Maximum antibiotic use increases selective pressure. The model shows that reducing antibiotic use (lowering selective pressure) is the most effective strategy to slow resistance evolution.
+Feedback: Correct! Reducing antibiotic use decreases selective pressure. Without strong selection against non-resistant bacteria, resistant bacteria do not gain as large a reproductive advantage, slowing the spread of resistance. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS4-4, MS-LS4-6 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Antibiotic Use, Mutation Rate), but they can take action on internal components (Resistant Bacteria, Treatment Effectiveness). They need to decide which action would be most effective based on what the model shows.
+
+What is the primary function of antibiotics?
+
+A. To kill or stop the growth of bacteria
+B. To boost the human immune system
+C. To kill viruses that cause the common cold
+D. To prevent all types of infections permanently
+
+Correct Answer: A
+
+Feedback: Correct! Antibiotics specifically target bacteria. They do not work against viruses or permanently prevent infections. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS4-4, MS-LS4-6, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS4-4, MS-LS4-6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS4-4, MS-LS4-6, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS4-4, MS-LS4-6, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS4-4, MS-LS4-6, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

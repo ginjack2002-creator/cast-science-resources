@@ -948,86 +948,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A patient receives a chemotherapy drug that kills 95% of cancer cells in a petri dish. Which factor BEST explains why the same drug might fail when given to a patient?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.4 + CCC3 (Scale, Proportion, and Quantity)
 
-A. The drug must travel through the body and may never reach sufficient concentration at the tumor site
-B. Cancer cells in a petri dish are genetically different from those in a patient
-C. Chemotherapy drugs only work on blood cancers, not solid tumors
-D. The petri dish contains more oxygen than the human body
-
-Correct Answer: A
-
-Feedback: Correct. Pharmacokinetics describes how drugs move through the body. Absorption, metabolism, and clearance all reduce the concentration that actually reaches the tumor, which is often far lower than the controlled dose in a petri dish. Consider how a drug must be absorbed, distributed through the bloodstream, and metabolized before it reaches a tumor. The concentration at the tumor site may be very different from the dose administered.
-
----
-
-### Question 2
-
-Which of the following BEST describes why chemotherapy often causes severe side effects such as hair loss and nausea?
-
-A. Chemotherapy drugs are designed to only target cancer cells but sometimes malfunction
-B. The drugs damage rapidly dividing healthy cells in addition to cancer cells because they cannot distinguish between the two
-C. Side effects are caused by allergic reactions to the drug compounds
-D. Chemotherapy weakens the immune system, which causes all other symptoms
-
-Correct Answer: B
-
-Feedback: Correct. Most chemotherapy drugs target rapidly dividing cells. Since both cancer cells and certain healthy cells (hair follicles, gut lining, bone marrow) divide rapidly, the drugs damage both, producing severe side effects. Think about what cancer cells and certain healthy cells (like those in hair follicles and the digestive tract) have in common. Chemotherapy targets a cellular behavior, not a specific cell type.
-
----
-
-### Question 3
-
-A doctor says a drug has a 'narrow therapeutic window.' What does this MOST LIKELY mean?
-
-A. The drug is only effective during a short time period after administration
-B. The difference between an effective dose and a toxic dose is very small
-C. The drug can only be given through one specific route of administration
-D. Only a narrow range of patients can benefit from the drug
-
-Correct Answer: B
-
-Feedback: Correct. A narrow therapeutic window means the minimum dose needed for effectiveness is dangerously close to the maximum dose the body can tolerate, leaving very little room for dosing error. A therapeutic window refers to the range of drug concentrations in the blood between the minimum effective dose and the maximum safe dose. Consider what 'narrow' means in that context.
-
----
-
-### Question 4
-
-After taking a medication, a patient's blood test shows the drug concentration rising, peaking, and then declining over 12 hours. Which organs are MOST responsible for the decline phase?
-
-A. The heart and lungs, which pump the drug out of the body
-B. The liver and kidneys, which metabolize and excrete the drug
-C. The stomach and intestines, which stop absorbing the drug
-D. The brain and spinal cord, which signal the body to reject foreign chemicals
-
-Correct Answer: B
-
-Feedback: Correct. The liver enzymatically breaks down drugs into inactive metabolites, and the kidneys filter these metabolites from the blood for excretion in urine. Together, they are primarily responsible for drug clearance. Consider which organs are responsible for breaking down substances in the blood and removing waste products from the body.
-
----
-
-### Question 5
-
-Why would a computational model be useful in designing cancer drug dosing protocols BEFORE testing on patients?
-
-A. Computer models can perfectly predict every patient's response to a drug
-B. Models allow researchers to simulate thousands of dosing strategies and identify the most promising ones without risking patient safety
-C. Computational models eliminate the need for clinical trials entirely
-D. Models can generate new drug molecules that are guaranteed to work
-
-Correct Answer: B
-
-Feedback: Correct. Computational models enable researchers to test many variables (dose, timing, frequency) virtually, narrowing down the most promising strategies before expensive and risky human trials. They do not replace clinical trials but make them more efficient. Think about the purpose of modeling. Models are tools for exploring possibilities and reducing risk, not for producing guaranteed outcomes or replacing experimental validation.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Drug Dosage, Absorption Rate, Blood Concentration, Tumor Uptake, Healthy Cell Damage, Metabolism Rate, Kidney Clearance, Therapeutic Window, Side Effect Severity. Some components are external (Drug Dosage) and some are internal (Absorption Rate, Blood Concentration, Tumor Uptake, Healthy Cell Damage, Metabolism Rate, Kidney Clearance, Therapeutic Window, Side Effect Severity). The student needs to understand what each component represents and how they are organized.
 
 In a multi-scale pharmacokinetic model, Drug Dosage is increased by 50%. Blood Concentration rises proportionally, but Tumor Uptake only increases by 10%. Which explanation BEST accounts for this discrepancy?
 
@@ -1038,11 +963,15 @@ D. Blood concentration and tumor uptake are independent variables in pharmacokin
 
 Correct Answer: A
 
-Feedback: Correct. Tumor uptake depends on the tumor's blood vessel density, permeability, and available receptor binding sites. Once these are saturated, additional circulating drug provides diminishing returns at the tumor while increasing systemic toxicity. Consider what limits the amount of drug that can cross from the bloodstream into the tumor microenvironment. Blood concentration is a necessary but not sufficient condition for tumor uptake.
+Feedback: Correct. Tumor uptake depends on the tumor's blood vessel density, permeability, and available receptor binding sites. Once these are saturated, additional circulating drug provides diminishing returns at the tumor while increasing systemic toxicity. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Drug Dosage increases, Blood Concentration increases; when Blood Concentration increases, Tumor Uptake increases. The student is trying to understand why these relationships are positive or negative.
 
 A pharmacokineticist compares two dosing strategies: (1) a single high dose every 3 weeks and (2) lower doses given 3 times per week. Both deliver the same total drug amount. Which outcome does the metronomic (frequent low-dose) strategy MOST LIKELY produce?
 
@@ -1053,11 +982,15 @@ D. Identical outcomes because the total drug amount is the same
 
 Correct Answer: B
 
-Feedback: Correct. Metronomic dosing maintains more consistent drug levels by avoiding the extreme peaks (which cause toxicity) and deep troughs (which allow tumor regrowth) of single high-dose protocols. The total amount matters less than the time spent within the therapeutic window. Consider what happens to blood concentration over time with each strategy. A single large dose creates a high peak followed by a long trough, while frequent smaller doses create a more level concentration profile.
+Feedback: Correct. Metronomic dosing maintains more consistent drug levels by avoiding the extreme peaks (which cause toxicity) and deep troughs (which allow tumor regrowth) of single high-dose protocols. The total amount matters less than the time spent within the therapeutic window. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Drug Dosage increases, Blood Concentration increases and when Blood Concentration increases, Tumor Uptake increases and when Blood Concentration increases, Healthy Cell Damage increases. The student changes one variable to see how the whole system responds.
 
 Two patients receive identical chemotherapy doses, but Patient A experiences severe toxicity while Patient B shows minimal side effects. Based on pharmacokinetic modeling, which variable MOST LIKELY differs between them?
 
@@ -1068,11 +1001,15 @@ D. The time of day the drug was administered
 
 Correct Answer: B
 
-Feedback: Correct. Liver enzyme activity (metabolism rate) varies significantly between individuals due to genetic polymorphisms. A patient with slow metabolism will maintain higher blood drug concentrations for longer, potentially exceeding the toxic threshold, while a fast metabolizer may clear the drug before it reaches effective levels. In pharmacokinetic modeling, the same dose produces different blood concentration profiles in different patients. Consider which biological process most directly controls how long the drug remains active in the body.
+Feedback: Correct. Liver enzyme activity (metabolism rate) varies significantly between individuals due to genetic polymorphisms. A patient with slow metabolism will maintain higher blood drug concentrations for longer, potentially exceeding the toxic threshold, while a fast metabolizer may clear the drug before it reaches effective levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student's pharmacokinetic model shows that increasing Kidney Clearance rate while holding all other variables constant results in DECREASED Side Effect Severity but ALSO decreased Tumor Uptake. Which analysis BEST explains this trade-off?
 
@@ -1083,11 +1020,15 @@ D. Increased kidney function strengthens the immune system, which independently 
 
 Correct Answer: A
 
-Feedback: Correct. Kidney clearance reduces overall blood concentration over time. This shorter exposure window means less time for healthy cells to absorb the drug (reducing side effects) but also less time for the tumor to accumulate sufficient drug (reducing efficacy). This is a systems-level trade-off. Consider that kidney clearance affects the overall drug concentration in the blood, which is the supply for BOTH tumor uptake and healthy cell damage. What happens when you reduce that shared supply faster?
+Feedback: Correct. Kidney clearance reduces overall blood concentration over time. This shorter exposure window means less time for healthy cells to absorb the drug (reducing side effects) but also less time for the tumor to accumulate sufficient drug (reducing efficacy). This is a systems-level trade-off. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Drug Dosage), but they can take action on internal components (Absorption Rate, Blood Concentration, Tumor Uptake, Healthy Cell Damage, Metabolism Rate, Kidney Clearance, Therapeutic Window, Side Effect Severity). They need to decide which action would be most effective based on what the model shows.
 
 An adaptive dosing algorithm monitors a cancer patient's blood biomarkers in real time and automatically adjusts the next dose. Which design principle is MOST critical for patient safety in this system?
 
@@ -1098,27 +1039,18 @@ D. The algorithm should use a fixed dosing schedule regardless of biomarker read
 
 Correct Answer: B
 
-Feedback: Correct. Safety thresholds are non-negotiable in adaptive dosing. The algorithm must continuously monitor blood concentration against the upper bound of the therapeutic window and automatically reduce or pause dosing before toxicity occurs, even if this temporarily reduces tumor kill rate. Consider the primary risk of automated medical dosing. What safeguard must be built into any system that adjusts drug doses without direct physician intervention for each decision?
+Feedback: Correct. Safety thresholds are non-negotiable in adaptive dosing. The algorithm must continuously monitor blood concentration against the upper bound of the therapeutic window and automatically reduce or pause dosing before toxicity occurs, even if this temporarily reduces tumor kill rate. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC3)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: A
-Question 5: B
-
----
 
 ## Resources
 

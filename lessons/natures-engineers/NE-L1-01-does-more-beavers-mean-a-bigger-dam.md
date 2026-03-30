@@ -162,77 +162,17 @@ Wildlife Biologists study how animals like beavers change their environments. Th
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-3, 3-LS4-4, 3-5-ETS1-1.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What is a dam?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. A wall built across a stream that holds water back
-B. A type of boat that floats on water
-C. A hole dug into the ground to find water
-D. A bridge that lets animals cross a river
-
-Correct Answer: A
-
-Feedback: Correct! A dam is a wall built across a stream that holds water back and creates a pond. A dam is a wall built across a stream that holds water back. When a dam blocks flowing water, it creates a pond behind it.
-
----
-
-### Question 2
-
-What do beavers use to build their dams?
-
-A. Rocks and sand only
-B. Trees, sticks, and mud
-C. Leaves and grass
-D. They do not build anything
-
-Correct Answer: B
-
-Feedback: That is right! Beavers use trees, sticks, and mud to build their dams across streams. Beavers are natural builders that use trees, sticks, and mud to construct their dams. They chew down trees with their strong teeth and drag them into the water.
-
----
-
-### Question 3
-
-What do you think happens to a stream when something blocks the water?
-
-A. The water disappears completely
-B. The water flows faster downstream
-C. The water collects and forms a pond
-D. The water turns into ice
-
-Correct Answer: C
-
-Feedback: Yes! When something blocks a stream, water collects behind the blockage and forms a pond. When water is blocked, it does not disappear. Instead, it collects behind the blockage and forms a pond or lake.
-
----
-
-### Question 4
-
-Why might other animals care about a beaver dam?
-
-A. Other animals are afraid of beaver dams
-B. The pond creates a new place for animals to live
-C. Other animals want to destroy the dam
-D. Other animals do not notice beaver dams at all
-
-Correct Answer: B
-
-Feedback: Correct! The pond created by a beaver dam becomes a new habitat where many animals like fish, frogs, and birds can live. Beaver dams are important to many animals because the pond they create becomes a new habitat. Fish, frogs, birds, and many other animals move in and make the pond their home.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Number of Beavers, Trees Available, Dam Size, Pond Size. Some components are external (Number of Beavers, Trees Available) and some are internal (Dam Size, Pond Size). The student needs to understand what each component represents and how they are organized.
 
 Why are beavers called 'ecosystem engineers'?
 
@@ -243,11 +183,15 @@ D. They only build things for themselves
 
 Correct Answer: B
 
-Feedback: That is right! Beavers are called ecosystem engineers because their dam-building changes the whole environment, creating habitats for many other species. Beavers are called ecosystem engineers because they change their environment in big ways. Their dams create ponds that become habitats for fish, frogs, birds, and many other animals.
+Feedback: That is right! Beavers are called ecosystem engineers because their dam-building changes the whole environment, creating habitats for many other species. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Number of Beavers increases, Dam Size increases; when Trees Available increases, Dam Size increases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, what TWO things do beavers need to build a successful dam?
 
@@ -258,11 +202,15 @@ D. Only lots of water
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that beavers need both enough family members to do the work AND enough trees as building material. The model showed that beavers need TWO inputs to build a dam: enough beaver family members to do the building work AND enough trees to use as construction material. If either one is missing, the dam cannot grow.
+Feedback: Correct! The model showed that beavers need both enough family members to do the work AND enough trees as building material. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Number of Beavers increases, Dam Size increases and when Trees Available increases, Dam Size increases and when Dam Size increases, Pond Size increases. The student changes one variable to see how the whole system responds.
 
 What happens in the model when there are many beavers but NO trees?
 
@@ -273,11 +221,15 @@ D. The pond gets bigger without a dam
 
 Correct Answer: C
 
-Feedback: Yes! Even with many beavers, the dam cannot grow without trees. Both inputs are needed for the system to work. Without trees, even lots of beavers cannot build a dam. The model shows that BOTH inputs (beavers AND trees) must be present for the dam to grow and the pond to form.
+Feedback: Yes! Even with many beavers, the dam cannot grow without trees. Both inputs are needed for the system to work. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 How does dam size affect pond size in the model?
 
@@ -288,25 +240,37 @@ D. Only rainfall affects pond size
 
 Correct Answer: A
 
-Feedback: Correct! In the model, a bigger dam holds back more water, which creates a bigger pond. This is a cause and effect relationship. In the model, dam size directly affects pond size. A bigger dam holds back more water, creating a bigger pond. This is a cause and effect relationship where one component influences another.
+Feedback: Correct! In the model, a bigger dam holds back more water, which creates a bigger pond. This is a cause and effect relationship. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Number of Beavers, Trees Available), but they can take action on internal components (Dam Size, Pond Size). They need to decide which action would be most effective based on what the model shows.
+
+What is a dam?
+
+A. A wall built across a stream that holds water back
+B. A type of boat that floats on water
+C. A hole dug into the ground to find water
+D. A bridge that lets animals cross a river
+
+Correct Answer: A
+
+Feedback: Correct! A dam is a wall built across a stream that holds water back and creates a pond. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: A
-
----
 
 ## Lesson Metadata
 

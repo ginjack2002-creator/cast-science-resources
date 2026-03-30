@@ -894,86 +894,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A trait like height is described as 'polygenic.' What does this mean?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.2 + CCC4 (Systems and System Models)
 
-A. The trait is controlled by a single gene with multiple alleles.
-B. The trait is influenced by many different genes, each contributing a small effect.
-C. The trait is determined entirely by environmental factors, not genetics.
-D. The trait skips generations and appears only in every other generation.
-
-Correct Answer: B
-
-Feedback: Correct. Polygenic traits like height are influenced by hundreds of genes, each contributing a small amount to the final phenotype, resulting in a continuous distribution in populations. Incorrect. 'Polygenic' means controlled by many genes (poly = many). Height is influenced by over 700 identified genetic variants, each contributing a small effect to the overall trait.
-
----
-
-### Question 2
-
-The average height in the Netherlands increased by 18 cm over the past 160 years. Which factor most likely explains this increase?
-
-A. Natural selection favored taller individuals, causing rapid genetic evolution.
-B. Improvements in childhood nutrition allowed people to reach more of their genetic height potential.
-C. Interbreeding with taller populations introduced height-increasing genes.
-D. Climate change in Northern Europe stimulated bone growth in all populations.
-
-Correct Answer: B
-
-Feedback: Correct. The secular trend happened over only 6 generations, far too fast for genetic evolution. Improved nutrition during childhood provided the raw materials for maximum bone growth, allowing more genetic potential to be realized. Incorrect. Genetic evolution requires hundreds of generations, but this change occurred in just 6. The secular height trend is primarily explained by improved childhood nutrition enabling fuller expression of existing genetic potential.
-
----
-
-### Question 3
-
-Which of the following best describes the concept of epigenetics?
-
-A. Mutations that permanently alter the DNA sequence and are passed to offspring.
-B. Changes in gene activity caused by environmental factors that do not alter the DNA sequence itself.
-C. The study of genetic diseases that appear only in certain ethnic groups.
-D. The process by which genes are copied during cell division.
-
-Correct Answer: B
-
-Feedback: Correct. Epigenetics involves chemical modifications (like methylation) that turn genes on or off without changing the DNA sequence. Environmental factors like nutrition can trigger these modifications. Incorrect. Epigenetic changes affect gene ACTIVITY (expression), not the DNA sequence itself. Environmental factors like nutrition can activate or silence genes through chemical modifications to DNA or histones.
-
----
-
-### Question 4
-
-In humans, growth plates are regions of cartilage near the ends of long bones. What happens when growth plates fuse during late adolescence?
-
-A. Bones continue to grow but at a slower rate.
-B. Height increase stops permanently because no new bone can be added to the length.
-C. Growth hormone production ceases entirely.
-D. The bones begin to shrink as calcium is reabsorbed.
-
-Correct Answer: B
-
-Feedback: Correct. When growth plates fuse (ossify), the cartilage is replaced by solid bone, permanently ending longitudinal bone growth. No amount of nutrition or hormones can increase height after fusion. Incorrect. Growth plate fusion is irreversible. Once the cartilage is replaced by bone, no further lengthening is possible, making childhood and adolescent nutrition critically important for reaching full height potential.
-
----
-
-### Question 5
-
-North Koreans and South Koreans share very similar genetic backgrounds, yet South Koreans are approximately 8 cm taller on average. What does this difference most strongly suggest?
-
-A. South Korea has experienced genetic evolution toward taller height over the past 70 years.
-B. Environmental factors, particularly nutrition, significantly influence the expression of height-related genes.
-C. North Koreans carry different height genes due to geographic isolation.
-D. Height is entirely determined by environment, and genetics plays no role.
-
-Correct Answer: B
-
-Feedback: Correct. The genetic similarity between the two populations, combined with their dramatically different nutrition environments, demonstrates that environmental factors significantly affect how height genes are expressed. Incorrect. This natural experiment shows that with nearly identical genetics, dramatically different nutrition environments produce significant height differences, demonstrating the power of gene-environment interaction.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Gene Expression Level, Growth Hormone Release, Nutrition Quality, Bone Growth Rate, Final Height. Some components are external (Nutrition Quality) and some are internal (Gene Expression Level, Growth Hormone Release, Bone Growth Rate, Final Height). The student needs to understand what each component represents and how they are organized.
 
 The computational model shows that setting Nutrition Quality to maximum produces Final Height near the top of the genetic range, while setting it to low produces Final Height well below the genetic range. What does this demonstrate about the nature vs. nurture debate?
 
@@ -984,11 +909,15 @@ D. The model cannot distinguish between genetic and environmental effects.
 
 Correct Answer: C
 
-Feedback: Correct. The model demonstrates that genes establish the boundaries (range) of possible height, but nutrition determines the actual height achieved within that range. Neither factor alone determines the outcome. Incorrect. The model shows an interactive relationship: genetics defines the potential range, and environment (especially nutrition) determines where within that range a person ends up.
+Feedback: Correct. The model demonstrates that genes establish the boundaries (range) of possible height, but nutrition determines the actual height achieved within that range. Neither factor alone determines the outcome. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Nutrition Quality increases, Gene Expression Level increases; when Gene Expression Level increases, Growth Hormone Release increases. The student is trying to understand why these relationships are positive or negative.
 
 In the generational comparison scenario, the model produces an 8-12 cm height difference using identical genetic components but 1940s versus 2020s nutrition. A student claims this proves 'genetics doesn't matter.' Which model evidence refutes this claim?
 
@@ -999,11 +928,15 @@ D. The height difference was too small to be significant.
 
 Correct Answer: A
 
-Feedback: Correct. Even with dramatic nutritional differences, both heights fall within the genetically defined range. Genetics determines the ceiling and floor; nutrition determines the position within those limits. Both matter. Incorrect. The model shows that while nutrition shifts height significantly, the result always stays within the genetically determined range. This proves BOTH genetics and environment are essential determinants.
+Feedback: Correct. Even with dramatic nutritional differences, both heights fall within the genetically defined range. Genetics determines the ceiling and floor; nutrition determines the position within those limits. Both matter. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Nutrition Quality increases, Gene Expression Level increases and when Gene Expression Level increases, Growth Hormone Release increases and when Growth Hormone Release increases, Bone Growth Rate increases. The student changes one variable to see how the whole system responds.
 
 The model reveals a cascade: Nutrition Quality affects Gene Expression Level, which affects Growth Hormone Release, which affects Bone Growth Rate, which determines Final Height. If a child has excellent nutrition but a genetic condition that limits Growth Hormone Release, what does the model predict?
 
@@ -1014,11 +947,15 @@ D. The genetic condition will have no effect because growth plates respond direc
 
 Correct Answer: B
 
-Feedback: Correct. The model's cascade structure shows that each component depends on the one before it. A disruption at any point in the chain (in this case, Growth Hormone Release) limits all downstream outcomes. Incorrect. The cascade model demonstrates sequential dependence. Even with optimal upstream conditions, a limitation at any point in the chain constrains all downstream components, including final height.
+Feedback: Correct. The model's cascade structure shows that each component depends on the one before it. A disruption at any point in the chain (in this case, Growth Hormone Release) limits all downstream outcomes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A public health researcher uses the model to argue for investing in school nutrition programs. Which model scenario provides the strongest evidence for this argument?
 
@@ -1029,11 +966,15 @@ D. The model cannot inform public health policy because it only models individua
 
 Correct Answer: B
 
-Feedback: Correct. The Generational Comparison scenario directly demonstrates that improving nutrition, not changing genetics, produces significant measurable height gains. This shows a clear return on nutritional investment within one generation. Incorrect. The Generational Comparison scenario is the strongest evidence because it isolates nutrition as the variable while holding genetics constant, demonstrating that nutritional improvements produce measurable results within a single generation.
+Feedback: Correct. The Generational Comparison scenario directly demonstrates that improving nutrition, not changing genetics, produces significant measurable height gains. This shows a clear return on nutritional investment within one generation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Nutrition Quality), but they can take action on internal components (Gene Expression Level, Growth Hormone Release, Bone Growth Rate, Final Height). They need to decide which action would be most effective based on what the model shows.
 
 The model shows that growth plates fuse in late adolescence, after which no further height increase is possible. What critical implication does this have for the timing of nutrition interventions?
 
@@ -1044,27 +985,18 @@ D. Growth plates can reopen with sufficient nutrition, so timing does not matter
 
 Correct Answer: C
 
-Feedback: Correct. The model demonstrates that growth plates represent a limited window of opportunity. Once they fuse, height is permanently set. This makes childhood and adolescent nutrition critically time-sensitive. Incorrect. Growth plate fusion is irreversible. The model shows that the window for influencing height through nutrition closes permanently in late adolescence, making early intervention essential.
+Feedback: Correct. The model demonstrates that growth plates represent a limited window of opportunity. Once they fuse, height is permanently set. This makes childhood and adolescent nutrition critically time-sensitive. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
+Question 2: A (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: A
-Question 3: B
-Question 4: B
-Question 5: C
-
----
 
 ## Resources
 

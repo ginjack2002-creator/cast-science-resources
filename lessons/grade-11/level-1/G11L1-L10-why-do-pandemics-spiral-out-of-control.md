@@ -914,86 +914,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A disease has a basic reproduction number (R0) of 3.0. In a fully susceptible population, what does this value indicate?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.2 + CCC4 (Systems and System Models)
 
-A. The disease will infect exactly 3 people total before dying out
-B. Each infected person will, on average, transmit the disease to 3 new people, causing exponential growth
-C. The disease has a 3% chance of causing a pandemic
-D. Three people must be infected simultaneously for the disease to spread
-
-Correct Answer: B
-
-Feedback: Correct. R0 = 3 means each infected individual infects 3 others on average in a fully susceptible population. This creates exponential growth: 1 becomes 3, 3 becomes 9, 9 becomes 27. Any R0 greater than 1 indicates the outbreak will grow rather than die out. R0 is a multiplication factor per generation of infection. If one person infects 3, and each of those infects 3 more, the number grows as a power of 3 with each generation. Calculate: 3, 9, 27, 81. This is exponential growth.
-
----
-
-### Question 2
-
-In the SIR model of infectious disease, people flow through three compartments. Which sequence correctly describes this flow?
-
-A. Recovered to Infected to Susceptible
-B. Susceptible to Infected to Recovered
-C. Infected to Susceptible to Recovered
-D. Susceptible to Recovered to Infected
-
-Correct Answer: B
-
-Feedback: Correct. In the SIR model, individuals start as Susceptible (can be infected), move to Infected (have the disease and can transmit it), and then move to Recovered (immune and no longer transmitting). The rate of flow between compartments determines the epidemic curve. Think about the natural progression of disease in a person: first they are vulnerable to catching it (Susceptible), then they catch it (Infected), then they recover with immunity (Recovered). This one-directional flow is the foundation of the SIR model.
-
----
-
-### Question 3
-
-SARS (2003) infected 8,098 people and was contained. COVID-19 (2020) infected over 700 million people globally. Both were respiratory viruses originating in Asia. Which factor most likely explains the dramatically different outcomes?
-
-A. SARS was a less dangerous virus with lower mortality
-B. COVID-19 had a longer presymptomatic infectious period, allowing infected people to spread the virus before showing symptoms and being identified for isolation
-C. Public health response was identical for both outbreaks
-D. SARS spread through water while COVID-19 spread through air
-
-Correct Answer: B
-
-Feedback: Correct. SARS patients became symptomatic before becoming highly infectious, making them identifiable for isolation before spreading the virus. COVID-19 patients were most infectious 1-2 days BEFORE symptom onset, creating invisible transmission chains that could not be detected through symptom-based surveillance. Consider what makes a disease easy or hard to contain. If infected people show symptoms quickly, they can be identified and isolated. If they spread the virus before showing any symptoms, how do you find them? This timing difference between symptoms and infectiousness is critical.
-
----
-
-### Question 4
-
-The effective reproduction number (Re) differs from R0 in which way?
-
-A. Re is always higher than R0
-B. Re accounts for the current population immunity and intervention measures, representing the actual transmission rate at a given point in the epidemic rather than the baseline maximum
-C. Re only applies to the first case in an outbreak
-D. Re measures the total number of people who have recovered
-
-Correct Answer: B
-
-Feedback: Correct. R0 is the theoretical maximum in a fully susceptible population with no interventions. Re adjusts for reality: as people become immune (through infection or vaccination) and interventions are implemented (masks, distancing), Re decreases. When Re drops below 1, the epidemic declines. R0 assumes everyone is susceptible and no interventions exist. Re adjusts this number for the actual conditions at any point in the epidemic. As immunity builds and interventions are deployed, the effective transmission rate changes. Which answer describes this adjustment?
-
----
-
-### Question 5
-
-An epidemic curve shows a sharp spike followed by a rapid decline. This pattern indicates which of the following?
-
-A. The disease is not very contagious
-B. The outbreak grew rapidly through a susceptible population and declined as the susceptible population was exhausted, either through infection or intervention
-C. The disease mutated to become less infectious over time
-D. The population was already immune before the outbreak began
-
-Correct Answer: B
-
-Feedback: Correct. A sharp epidemic curve indicates rapid transmission through a largely susceptible population. The peak occurs when the rate of new infections equals the rate of recoveries. The decline happens as the susceptible pool shrinks (through infection or intervention), reducing Re below 1. The shape of an epidemic curve reflects the balance between new infections and the remaining susceptible population. A sharp spike means rapid transmission. The decline means the susceptible pool is shrinking. Why would the susceptible pool shrink? People are either getting infected or getting vaccinated.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: R0 Value, Vaccination Rate, Susceptible Population, Infection Rate, Recovery Rate, Effective R (Re). Some components are external (R0 Value, Vaccination Rate) and some are internal (Susceptible Population, Infection Rate, Recovery Rate, Effective R (Re)). The student needs to understand what each component represents and how they are organized.
 
 A student's model shows that implementing social distancing on day 10 of an outbreak reduces total infections by 85%, but implementing the same measure on day 30 reduces total infections by only 22%. Which mathematical concept best explains this dramatic difference?
 
@@ -1004,11 +929,15 @@ D. Social distancing only works in the first two weeks of any outbreak
 
 Correct Answer: B
 
-Feedback: Correct. During exponential growth, delays are devastating. With a 4-day doubling period, 20 days represents 5 doublings: 2^5 = 32. Intervening at 32x the infection level means 32x more people are already infected and transmitting. The same intervention is applied to a vastly larger problem, reducing its relative impact dramatically. During exponential growth, the number of infected people doubles at a fixed interval. Calculate how many doublings occur in 20 days with a 4-day doubling time: 20/4 = 5 doublings, meaning 2^5 = 32 times more infections. How does intervening against 32x more infections reduce the relative impact?
+Feedback: Correct. During exponential growth, delays are devastating. With a 4-day doubling period, 20 days represents 5 doublings: 2^5 = 32. Intervening at 32x the infection level means 32x more people are already infected and transmitting. The same intervention is applied to a vastly larger problem, reducing its relative impact dramatically. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.2 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when R0 Value increases, Infection Rate increases; when Vaccination Rate increases, Susceptible Population decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model compares an uncontrolled outbreak (R0 = 2.5, no interventions) with a managed outbreak (same R0, vaccination + social distancing started at day 14). The uncontrolled outbreak infects 78% of the population; the managed outbreak infects 31%. A student observes that Re dropped below 1 on day 42 in the managed scenario. What caused Re to cross this critical threshold?
 
@@ -1019,11 +948,15 @@ D. The model automatically forces Re below 1 after a fixed number of days
 
 Correct Answer: B
 
-Feedback: Correct. Re = R0 * (susceptible fraction) * (1 - intervention effectiveness). Three factors compound: natural immunity removes people from the susceptible pool, vaccination removes more, and social distancing reduces the transmission probability per contact. Together they pushed the effective susceptible fraction below the epidemic threshold. Re is a product of multiple factors: the baseline R0, the fraction of people still susceptible, and the effectiveness of interventions. Each factor that reduces any of these components brings Re closer to 1. The threshold is crossed when their combined effect is sufficient.
+Feedback: Correct. Re = R0 * (susceptible fraction) * (1 - intervention effectiveness). Three factors compound: natural immunity removes people from the susceptible pool, vaccination removes more, and social distancing reduces the transmission probability per contact. Together they pushed the effective susceptible fraction below the epidemic threshold. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when R0 Value increases, Infection Rate increases and when Vaccination Rate increases, Susceptible Population decreases and when Susceptible Population increases, Effective R increases. The student changes one variable to see how the whole system responds.
 
 A student compares two diseases in the model: Disease A (R0 = 2, 14-day infectious period) and Disease B (R0 = 2, 3-day infectious period). Both produce the same peak infection percentage but Disease B's epidemic is over in 45 days while Disease A's lasts 180 days. Which analysis best explains the timeline difference?
 
@@ -1034,11 +967,15 @@ D. The infectious period has no effect on epidemic timeline
 
 Correct Answer: B
 
-Feedback: Correct. R0 determines the final epidemic size (how many total infections), but the generation time (related to infectious period) determines the speed. Disease B cycles through the S-I-R compartments much faster because each infected person transmits and recovers in 3 days instead of 14, compressing the same total epidemic into fewer days. R0 determines how many people are ultimately infected, but the infectious period determines how fast the epidemic progresses. If each generation of infection is 3 days instead of 14, the entire epidemic runs through the population in roughly 1/4.7 the time, even with the same final outcome.
+Feedback: Correct. R0 determines the final epidemic size (how many total infections), but the generation time (related to infectious period) determines the speed. Disease B cycles through the S-I-R compartments much faster because each infected person transmits and recovers in 3 days instead of 14, compressing the same total epidemic into fewer days. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that quarantining 50% of detected cases reduces total infections by 40%, while quarantining 90% of detected cases reduces total infections by 75%. A student notes this is not proportional. Which factor accounts for the diminishing returns?
 
@@ -1049,11 +986,15 @@ D. People refuse to comply with quarantine at higher rates
 
 Correct Answer: B
 
-Feedback: Correct. Quarantine can only isolate DETECTED cases. Presymptomatic transmission (before symptoms appear) and asymptomatic transmission (in people who never show symptoms) create chains of invisible spread that are unaffected by quarantine. This undetectable transmission becomes the dominant pathway as quarantine catches more detected cases. Consider what quarantine can and cannot do. It isolates people who are KNOWN to be infected. But what about people who are infectious but do not know it yet (presymptomatic) or who never show symptoms (asymptomatic)? These invisible transmitters are unaffected by quarantine.
+Feedback: Correct. Quarantine can only isolate DETECTED cases. Presymptomatic transmission (before symptoms appear) and asymptomatic transmission (in people who never show symptoms) create chains of invisible spread that are unaffected by quarantine. This undetectable transmission becomes the dominant pathway as quarantine catches more detected cases. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (R0 Value, Vaccination Rate), but they can take action on internal components (Susceptible Population, Infection Rate, Recovery Rate, Effective R (Re)). They need to decide which action would be most effective based on what the model shows.
 
 Based on the complete model analysis, a public health official must choose between two strategies with limited resources: (A) achieve 60% vaccination coverage slowly over 6 months, or (B) achieve 40% vaccination coverage quickly in the first 2 months. For a disease with R0 = 2.5 and herd immunity threshold of 60%, which strategy does the model predict will result in fewer total infections, and why?
 
@@ -1064,27 +1005,18 @@ D. Strategy A, because higher coverage is always better regardless of timing
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that timing matters more than final coverage during exponential growth. Vaccinating 40% of the population in the first 2 months reduces Re during the critical growth phase, potentially preventing millions of infections that would otherwise occur before Strategy A reaches its higher but later coverage target. The epidemic does not wait for vaccination programs to finish. Remember the model's key finding about intervention timing: the same action taken 20 days earlier can prevent 85% more infections versus 22%. During exponential growth, speed of deployment matters enormously because each day of delay means dramatically more infections. Apply this principle to the vaccination timing question.
+Feedback: Correct. The model demonstrates that timing matters more than final coverage during exponential growth. Vaccinating 40% of the population in the first 2 months reduces Re during the critical growth phase, potentially preventing millions of infections that would otherwise occur before Strategy A reaches its higher but later coverage target. The epidemic does not wait for vaccination programs to finish. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.2, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

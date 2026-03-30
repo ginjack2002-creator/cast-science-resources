@@ -907,86 +907,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A classical computer with 3 bits can represent one of 8 possible states at any time. A quantum computer with 3 qubits in superposition can represent how many states simultaneously?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.3 + CCC4 (Systems and System Models)
 
-A. 3 states (one per qubit)
-B. 6 states (twice the classical number)
-C. 8 states (all possible combinations at once through superposition)
-D. 24 states (3 factorial times the classical number)
-
-Correct Answer: C
-
-Feedback: Correct. N qubits in superposition can represent all 2^N states simultaneously. With 3 qubits, that is 2^3 = 8 states explored in parallel. This exponential scaling is the source of quantum computing's potential power — 300 qubits represent more states than atoms in the observable universe. A qubit in superposition exists in a combination of 0 and 1 simultaneously. With N qubits, the system can represent all 2^N combinations at once. Calculate 2^3.
-
----
-
-### Question 2
-
-Quantum computers must be cooled to approximately 15 millikelvin (colder than outer space). What is the primary scientific reason for this extreme cooling?
-
-A. Superconducting circuits only work at low temperatures to reduce electrical resistance
-B. Thermal energy causes random interactions with qubits that destroy quantum superposition (decoherence), and cooling minimizes these interactions
-C. Cold temperatures make qubits process information faster
-D. The cooling system generates the magnetic fields needed to control qubits
-
-Correct Answer: B
-
-Feedback: Correct. Thermal energy produces photons and phonons that interact with qubits, causing decoherence — the collapse of quantum superposition into classical states. At 15 millikelvin, thermal noise is minimized, extending the time qubits maintain their quantum properties. Consider what temperature represents at the atomic level — the kinetic energy and vibration of particles. How would energetic particles in the environment interact with a fragile quantum state?
-
----
-
-### Question 3
-
-A quantum computer has a per-gate error rate of 0.5%. After a circuit of 200 sequential gate operations, what is the approximate probability that NO errors have occurred?
-
-A. 99.5% (almost certain success)
-B. 99.0% (very high success)
-C. Approximately 37% (0.995^200), meaning the majority of runs will contain at least one error
-D. 0.5% (almost certain failure)
-
-Correct Answer: C
-
-Feedback: Correct. Error probabilities compound multiplicatively across sequential operations. (1 - 0.005)^200 = 0.995^200 is approximately 0.37, meaning only about 37% of runs will be error-free after just 200 gates. This is why error correction is essential for any useful quantum computation. Error rates compound across sequential operations. If each gate has a 99.5% chance of being correct, the probability of ALL 200 gates being correct is 0.995 multiplied by itself 200 times. Calculate this compound probability.
-
----
-
-### Question 4
-
-Entanglement links two qubits so that measuring one instantly determines the state of the other. Why is this property essential for quantum computing rather than merely a curiosity?
-
-A. Entanglement allows qubits to communicate faster than light, speeding up the computer
-B. Entanglement creates correlations between qubits that enable quantum algorithms to coordinate operations across many qubits simultaneously, which is necessary for quantum speedup
-C. Entanglement doubles the number of qubits available for computation
-D. Entanglement is not actually used in quantum computing algorithms
-
-Correct Answer: B
-
-Feedback: Correct. Entanglement allows quantum algorithms to create correlated multi-qubit states that cannot be represented classically. These correlations enable interference patterns where correct answers are amplified and wrong answers are suppressed — the fundamental mechanism of quantum speedup. Think about what entanglement provides that classical bits cannot achieve. Classical bits are independent. Entangled qubits are correlated in ways that allow quantum algorithms to process information fundamentally differently.
-
----
-
-### Question 5
-
-If quantum computers are potentially millions of times faster than classical computers for certain problems, why are they not used for everyday computing tasks like email and web browsing?
-
-A. Quantum computers are too expensive for consumer use but would be faster at everything
-B. Quantum advantage is problem-specific — quantum algorithms exist only for certain problem types (cryptography, molecular simulation, optimization), and classical computers are already optimal for most everyday tasks
-C. Quantum computers are banned from consumer applications by government regulation
-D. Quantum computers will replace classical computers completely within 5 years
-
-Correct Answer: B
-
-Feedback: Correct. Quantum advantage emerges only for specific problem classes where quantum algorithms exploit superposition and entanglement. For sequential tasks like word processing or video streaming, quantum computers offer no speedup. They are complementary tools, not replacements. Consider whether every type of computation benefits from quantum parallelism. Some problems have inherent sequential structure that quantum mechanics cannot accelerate.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Qubit Coherence Time, Entanglement Fidelity, Error Rate, Gate Operation Speed, Cooling Temperature, Quantum Volume, Decoherence Rate, Classical Overhead, Computational Advantage. Some components are external (Cooling Temperature, Classical Overhead) and some are internal (Qubit Coherence Time, Entanglement Fidelity, Error Rate, Gate Operation Speed, Quantum Volume, Decoherence Rate, Computational Advantage). The student needs to understand what each component represents and how they are organized.
 
 In the model, a student reduces Cooling Temperature from 15 millikelvin to 100 millikelvin. The model shows Decoherence Rate increasing dramatically, Qubit Coherence Time dropping, and Computational Advantage falling to near zero. Which relationship chain best explains this cascade?
 
@@ -997,11 +922,15 @@ D. Cooling temperature only affects energy consumption, not computation quality
 
 Correct Answer: A
 
-Feedback: Correct. The model reveals a clear causal cascade: temperature increase leads to more thermal photons/phonons, which interact with qubits faster (higher decoherence rate), which shortens coherence time, which limits circuit depth, which eliminates computational advantage. Each link is a direct physical mechanism. Trace the chain: temperature affects the environment around the qubits. How does a noisier environment affect quantum states? How does that affect the time available for computation?
+Feedback: Correct. The model reveals a clear causal cascade: temperature increase leads to more thermal photons/phonons, which interact with qubits faster (higher decoherence rate), which shortens coherence time, which limits circuit depth, which eliminates computational advantage. Each link is a direct physical mechanism. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.3 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Cooling Temperature increases, Decoherence Rate decreases; when Decoherence Rate increases, Qubit Coherence Time decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that reducing Error Rate from 0.5% to 0.01% causes a dramatic nonlinear increase in Quantum Volume and Computational Advantage. What best explains this threshold behavior?
 
@@ -1012,11 +941,15 @@ D. The improvement is due to needing fewer physical qubits, not related to error
 
 Correct Answer: B
 
-Feedback: Correct. This is the fault-tolerance threshold. Above it, error correction consumes more resources than it saves. Below it, correction gains exceed correction costs, creating a virtuous cycle where logical qubit quality improves with more physical qubits. This threshold behavior is a fundamental feature of quantum error correction. Consider the error correction paradox: correction itself uses quantum operations that can introduce errors. At what point does the correction process start winning against the errors it introduces?
+Feedback: Correct. This is the fault-tolerance threshold. Above it, error correction consumes more resources than it saves. Below it, correction gains exceed correction costs, creating a virtuous cycle where logical qubit quality improves with more physical qubits. This threshold behavior is a fundamental feature of quantum error correction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Cooling Temperature increases, Decoherence Rate decreases and when Decoherence Rate increases, Qubit Coherence Time decreases and when Error Rate increases, Classical Overhead increases. The student changes one variable to see how the whole system responds.
 
 A 1,000 physical qubit processor uses a surface code requiring 1,000 physical qubits per logical qubit at current error rates. How many error-corrected logical qubits are available for actual computation?
 
@@ -1027,11 +960,15 @@ D. Zero logical qubits because 1,000 is below the minimum threshold
 
 Correct Answer: C
 
-Feedback: Correct. At a 1,000:1 overhead ratio, 1,000 physical qubits yield approximately 1 error-corrected logical qubit. This reveals why current quantum computers are called NISQ (Noisy Intermediate-Scale Quantum) — they lack enough physical qubits for meaningful error correction. Millions of physical qubits are needed for thousands of logical qubits. Divide the total physical qubits by the overhead ratio (physical qubits per logical qubit). At a 1,000:1 ratio, how many logical qubits can 1,000 physical qubits produce?
+Feedback: Correct. At a 1,000:1 overhead ratio, 1,000 physical qubits yield approximately 1 error-corrected logical qubit. This reveals why current quantum computers are called NISQ (Noisy Intermediate-Scale Quantum) — they lack enough physical qubits for meaningful error correction. Millions of physical qubits are needed for thousands of logical qubits. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model classifies Cooling Temperature and Classical Overhead as external variables. A student proposes reclassifying Qubit Coherence Time as external. What is the strongest argument against this reclassification?
 
@@ -1042,11 +979,15 @@ D. Coherence Time is too difficult to measure to be classified as anything
 
 Correct Answer: B
 
-Feedback: Correct. External variables represent direct engineering inputs that operators set. Qubit Coherence Time emerges from the combination of cooling temperature, material properties, shielding quality, and other physical factors. It cannot be directly dialed to a value — it is a consequence of other conditions. Ask whether engineers can directly set Qubit Coherence Time with a dial or switch, or whether it emerges as a result of other controllable conditions. External variables are direct inputs; internal variables are system responses.
+Feedback: Correct. External variables represent direct engineering inputs that operators set. Qubit Coherence Time emerges from the combination of cooling temperature, material properties, shielding quality, and other physical factors. It cannot be directly dialed to a value — it is a consequence of other conditions. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.3 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Cooling Temperature, Classical Overhead), but they can take action on internal components (Qubit Coherence Time, Entanglement Fidelity, Error Rate, Gate Operation Speed, Quantum Volume, Decoherence Rate, Computational Advantage). They need to decide which action would be most effective based on what the model shows.
 
 Based on model evidence, a student concludes that quantum computing will never be practical because current error rates are too high. Using the model's scenario comparisons, what is the best evaluation of this conclusion?
 
@@ -1057,27 +998,18 @@ D. Error rates are irrelevant to quantum computing practicality
 
 Correct Answer: B
 
-Feedback: Correct. The model shows two distinct regimes: current technology (limited advantage) and near-perfect qubits (transformative advantage). The gap between them is large but represents an engineering challenge, not a physical impossibility. Extrapolating current limitations as permanent ignores historical patterns of technology improvement. Compare the model's current technology scenario with the near-perfect qubits scenario. Does the model suggest the current state is a permanent condition, or does it show what becomes possible with achievable improvements?
+Feedback: Correct. The model shows two distinct regimes: current technology (limited advantage) and near-perfect qubits (transformative advantage). The gap between them is large but represents an engineering challenge, not a physical impossibility. Extrapolating current limitations as permanent ignores historical patterns of technology improvement. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.3, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.3, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.3, CCC2)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

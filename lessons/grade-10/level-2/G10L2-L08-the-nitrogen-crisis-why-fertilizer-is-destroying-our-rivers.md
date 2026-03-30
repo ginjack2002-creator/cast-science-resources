@@ -900,86 +900,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Nitrogen is essential for plant growth. In what form do most plants absorb nitrogen from the soil?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.4 + CCC4 (Systems and System Models)
 
-A. As nitrogen gas (N2) directly from the atmosphere through their leaves
-B. As dissolved nitrate (NO3-) or ammonium (NH4+) ions through their roots
-C. As solid nitrogen crystals extracted from bedrock by root pressure
-D. As nitrogen dioxide (NO2) absorbed from automobile exhaust
-
-Correct Answer: B
-
-Feedback: Correct. Most plants absorb nitrogen as dissolved nitrate or ammonium ions through their root systems. Plants cannot use atmospheric N2 directly because the triple bond between nitrogen atoms is too stable. Plants absorb nitrogen primarily as dissolved nitrate (NO3-) or ammonium (NH4+) ions through their roots. Most plants cannot fix atmospheric N2 directly because the triple bond requires enormous energy to break.
-
----
-
-### Question 2
-
-Eutrophication is a process that occurs in water bodies receiving excess nutrients. Which sequence correctly describes the eutrophication process?
-
-A. Excess nutrients -> algal bloom -> algae die -> bacterial decomposition consumes oxygen -> aquatic organisms suffocate
-B. Excess nutrients -> fish population increases -> water temperature rises -> algae die
-C. Excess nutrients -> water becomes clearer -> more sunlight reaches the bottom -> plants grow on the lakebed
-D. Excess nutrients -> bacteria consume the nutrients directly -> oxygen levels increase -> fish populations boom
-
-Correct Answer: A
-
-Feedback: Correct. Eutrophication follows a predictable cascade: excess nutrients fuel explosive algal growth, the algae die and sink, bacteria decompose the dead algae and consume dissolved oxygen, creating hypoxic conditions that kill aquatic life. Eutrophication follows a specific causal chain: nutrient enrichment fuels algal blooms, the algae eventually die, bacterial decomposition of the dead biomass consumes dissolved oxygen, and the resulting hypoxia kills fish and other organisms.
-
----
-
-### Question 3
-
-What is nonpoint source pollution, and why is it particularly difficult to control?
-
-A. Pollution from a single, identifiable discharge pipe that can be easily regulated
-B. Pollution from many diffuse sources across a landscape, such as agricultural runoff, making it difficult to trace and regulate
-C. Pollution that occurs at a single geographic point but at unpredictable intervals
-D. Pollution visible to the naked eye that can be physically collected and removed
-
-Correct Answer: B
-
-Feedback: Correct. Nonpoint source pollution comes from widespread, diffuse sources rather than a single discharge point. Agricultural runoff from millions of individual fields is virtually impossible to monitor or regulate at each source. Nonpoint source pollution originates from many scattered sources (farm fields, lawns, roads) rather than a single pipe or outfall. Its diffuse nature makes it extremely difficult to monitor, regulate, or control compared to point-source pollution.
-
----
-
-### Question 4
-
-The Gulf of Mexico contains one of the world's largest 'dead zones.' What defines a dead zone in aquatic ecology?
-
-A. An area where water temperature exceeds 40 degrees Celsius
-B. An area where dissolved oxygen levels are too low to support most marine life
-C. An area where no water currents flow, creating stagnant conditions
-D. An area where radioactive contamination prevents any biological activity
-
-Correct Answer: B
-
-Feedback: Correct. A dead zone is an area of hypoxia where dissolved oxygen drops below approximately 2 mg/L, suffocating most marine organisms. The Gulf of Mexico dead zone can exceed 22,000 square kilometers annually. A dead zone is defined by hypoxia, dissolved oxygen levels below approximately 2 mg/L that cannot support most marine life. The Gulf of Mexico dead zone, fed by agricultural runoff from the Mississippi River basin, can cover over 22,000 km2.
-
----
-
-### Question 5
-
-Only a fraction of nitrogen fertilizer applied to crops is actually absorbed by plants. What happens to the remainder?
-
-A. It is completely broken down by soil bacteria into harmless atmospheric nitrogen within hours
-B. It remains permanently bound to soil particles and never moves
-C. A significant portion washes off fields as runoff into streams and rivers or leaches into groundwater
-D. It evaporates into the atmosphere as nitrogen gas within minutes of application
-
-Correct Answer: C
-
-Feedback: Correct. Typically only 30-50% of applied nitrogen is absorbed by crops. The remainder enters waterways through surface runoff and groundwater leaching, making agriculture the largest source of nutrient pollution. Only 30-50% of applied nitrogen fertilizer is absorbed by crops. Much of the rest is lost through surface runoff during rain events and leaching into groundwater, eventually reaching streams, rivers, and ultimately coastal waters.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Fertilizer Application, Nitrogen Runoff, Algal Bloom Growth, Oxygen Depletion, Fish Kill Rate, Soil Depletion, Water Treatment Cost. Some components are external (Fertilizer Application) and some are internal (Nitrogen Runoff, Algal Bloom Growth, Oxygen Depletion, Fish Kill Rate, Soil Depletion, Water Treatment Cost). The student needs to understand what each component represents and how they are organized.
 
 In the nitrogen pollution model, Soil Depletion creates a vicious cycle with Fertilizer Application. How does the model represent this feedback?
 
@@ -990,11 +915,15 @@ D. Soil Depletion is beneficial because it increases the soil's ability to filte
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a positive feedback loop: intensive farming with high fertilizer use degrades soil organic matter and structure, reducing the soil's capacity to retain nitrogen, which demands even more fertilizer application. The model shows a self-reinforcing cycle: heavy fertilizer use and intensive monoculture deplete soil organic matter, reducing the soil's natural nitrogen-holding capacity. This forces farmers to apply even more synthetic fertilizer, further degrading the soil.
+Feedback: Correct. The model reveals a positive feedback loop: intensive farming with high fertilizer use degrades soil organic matter and structure, reducing the soil's capacity to retain nitrogen, which demands even more fertilizer application. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Fertilizer Application increases, Nitrogen Runoff increases; when Nitrogen Runoff increases, Algal Bloom Growth increases. The student is trying to understand why these relationships are positive or negative.
 
 The model demonstrates a threshold effect in the relationship between Nitrogen Runoff and Algal Bloom Growth. What does this threshold reveal?
 
@@ -1005,11 +934,15 @@ D. The threshold represents the point where algal growth becomes beneficial to t
 
 Correct Answer: B
 
-Feedback: Correct. The model shows a non-linear response: aquatic ecosystems can absorb and process moderate nitrogen loading, but above a critical concentration, the system tips into uncontrollable algal bloom and subsequent oxygen collapse. The model reveals non-linear dynamics: rivers and coastal waters have a finite capacity to process nitrogen. Below the threshold, natural processes handle the load. Above it, algal growth becomes explosive and self-sustaining, leading to dead zones.
+Feedback: Correct. The model shows a non-linear response: aquatic ecosystems can absorb and process moderate nitrogen loading, but above a critical concentration, the system tips into uncontrollable algal bloom and subsequent oxygen collapse. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Fertilizer Application increases, Nitrogen Runoff increases and when Nitrogen Runoff increases, Algal Bloom Growth increases and when Algal Bloom Growth increases, Oxygen Depletion increases. The student changes one variable to see how the whole system responds.
 
 A student compares the 'Conventional Farming' and 'Precision Agriculture' scenarios in the model. The precision agriculture scenario reduces Fertilizer Application by 40% while maintaining crop yields. What does the model show happens to downstream impacts?
 
@@ -1020,11 +953,15 @@ D. Only Water Treatment Cost changes; biological impacts remain the same
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that reducing excess fertilizer application directly reduces the cascade: less nitrogen runs off, fewer algal blooms develop, oxygen depletion decreases, and dead zone formation is reduced. The model demonstrates that reducing Fertilizer Application to match actual crop needs dramatically reduces the entire downstream cascade. Since most pollution comes from excess application (the 50-70% not absorbed by crops), precision agriculture addresses the root cause.
+Feedback: Correct. The model shows that reducing excess fertilizer application directly reduces the cascade: less nitrogen runs off, fewer algal blooms develop, oxygen depletion decreases, and dead zone formation is reduced. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.4 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model reveals that the economic costs of nutrient pollution often exceed the economic gains from the excess fertilizer that caused it. Which model components support this finding?
 
@@ -1035,11 +972,15 @@ D. Fertilizer always generates more economic value than it costs, regardless of 
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that when all costs are accounted for, the marginal revenue from excess fertilizer is dwarfed by Water Treatment Cost, fishery collapse losses, and tourism damage from dead zones. The model integrates economic analysis showing that excess fertilizer (beyond what crops absorb) generates minimal additional revenue while creating billions in downstream costs: water treatment, fishery losses, tourism decline, and ecosystem restoration.
+Feedback: Correct. The model demonstrates that when all costs are accounted for, the marginal revenue from excess fertilizer is dwarfed by Water Treatment Cost, fishery collapse losses, and tourism damage from dead zones. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Fertilizer Application), but they can take action on internal components (Nitrogen Runoff, Algal Bloom Growth, Oxygen Depletion, Fish Kill Rate, Soil Depletion, Water Treatment Cost). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, which approach most effectively breaks the nitrogen pollution cycle?
 
@@ -1050,27 +991,18 @@ D. Building larger water treatment plants downstream to remove all nitrogen
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that breaking the cycle requires addressing multiple points: reducing excess input (precision agriculture), restoring the soil's natural capacity (soil health), and intercepting pollution before it reaches water (buffer zones). The model demonstrates that effective intervention requires a multi-pronged approach: precision application reduces excess input, soil restoration rebuilds natural nitrogen retention, and buffer zones provide a last line of defense before nitrogen reaches waterways.
+Feedback: Correct. The model shows that breaking the cycle requires addressing multiple points: reducing excess input (precision agriculture), restoring the soil's natural capacity (soil health), and intercepting pollution before it reaches water (buffer zones). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.4, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

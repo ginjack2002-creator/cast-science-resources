@@ -810,77 +810,17 @@ POST-ASSESSMENT
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-PS1-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why do we wash our hands with soap instead of just water?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.4 + CCC4 (Systems and System Models)
 
-A. Soap makes water wetter
-B. Soap smells better than plain water
-C. Soap can break apart germs in a way that water alone cannot
-D. There is no real difference between soap and water
-
-Correct Answer: C
-
-Feedback: That's right! Soap has a special chemical structure that lets it break apart the protective coatings on viruses and bacteria, something water alone cannot do. Soap isn't just for smell. It has a special molecular structure that can wedge into and break apart the fatty outer layer (membrane) of many viruses, actually destroying them.
-
----
-
-### Question 2
-
-What do you think happens to a virus when soap touches it?
-
-A. The soap just washes the virus off your hands
-B. The soap breaks apart the virus's protective coating, destroying it
-C. The soap freezes the virus
-D. Nothing happens to the virus
-
-Correct Answer: B
-
-Feedback: Correct! Soap molecules actually break apart the lipid (fatty) membrane that protects many viruses, causing the virus to fall apart and be destroyed. Soap does more than rinse. Its molecules have a special shape that lets them wedge into a virus's fatty outer coating and break it apart. The virus is actually destroyed, not just rinsed away.
-
----
-
-### Question 3
-
-Why are we told to wash our hands for at least 20 seconds?
-
-A. It takes that long for the water to warm up
-B. 20 seconds is just a random number
-C. Soap needs enough time to spread across hands and break apart germs
-D. It takes 20 seconds for soap to dissolve
-
-Correct Answer: C
-
-Feedback: Good thinking! 20 seconds gives soap molecules enough time to spread to all surfaces of your hands, get into crevices, and break apart virus membranes. The 20-second rule is based on science. Soap molecules need time to spread across all hand surfaces, reach into crevices and under nails, and contact and destroy virus membranes.
-
----
-
-### Question 4
-
-Which is MORE effective for removing viruses from your hands?
-
-A. Water only
-B. Soap only (without water)
-C. Soap and water together
-D. They are all equally effective
-
-Correct Answer: C
-
-Feedback: Correct! Soap and water work together as a team. Water activates and spreads the soap, while soap does the actual work of destroying virus membranes. Soap and water are a team. Water alone can't break virus membranes. Soap alone can't spread properly without water. Together, they are far more effective than either one alone.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Soap Concentration, Water Present, Soap Effectiveness, Virus Survival Rate. Some components are external (Soap Concentration, Water Present) and some are internal (Soap Effectiveness, Virus Survival Rate). The student needs to understand what each component represents and how they are organized.
 
 In the handwashing model, what type of relationship exists between Soap Effectiveness and Virus Survival Rate?
 
@@ -891,11 +831,15 @@ D. Positive: soap helps viruses grow
 
 Correct Answer: B
 
-Feedback: Correct! This is the key negative relationship in the model. More effective soap means more virus membranes are destroyed, so fewer viruses survive. That's the whole goal! Think about the purpose of handwashing. When soap is more effective at breaking apart lipid membranes, more viruses are destroyed, meaning the Virus Survival Rate goes down. This is a negative (-) relationship.
+Feedback: Correct! This is the key negative relationship in the model. More effective soap means more virus membranes are destroyed, so fewer viruses survive. That's the whole goal! If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.4 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Soap Concentration increases, Soap Effectiveness increases; when Water Present increases, Soap Effectiveness increases. The student is trying to understand why these relationships are positive or negative.
 
 A soap molecule is called 'amphiphilic' because it:
 
@@ -906,11 +850,15 @@ D. Works only on bacteria, not viruses
 
 Correct Answer: B
 
-Feedback: That's right! Amphiphilic means one end of the soap molecule loves water (hydrophilic) and the other end loves fat (lipophilic). This lets soap bridge between water and the fatty virus membrane. Amphiphilic means 'loving both.' One end of a soap molecule is attracted to water, and the other end is attracted to fat and oil. This dual nature lets soap wedge into fatty virus membranes.
+Feedback: That's right! Amphiphilic means one end of the soap molecule loves water (hydrophilic) and the other end loves fat (lipophilic). This lets soap bridge between water and the fatty virus membrane. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Soap Concentration increases, Soap Effectiveness increases and when Water Present increases, Soap Effectiveness increases and when Soap Effectiveness increases, Virus Survival Rate decreases. The student changes one variable to see how the whole system responds.
 
 In the simulation, what happened when Soap was at 100% but Water was at 0% (dry soap)?
 
@@ -921,11 +869,15 @@ D. Viruses were completely destroyed
 
 Correct Answer: C
 
-Feedback: Correct! Without water, soap can't spread across surfaces or activate properly. Both soap AND water are needed for maximum effectiveness against viruses. Remember the 'Dry Soap' scenario. Even with lots of soap, without water to activate and spread it, Soap Effectiveness remained low. Both components work together as a system.
+Feedback: Correct! Without water, soap can't spread across surfaces or activate properly. Both soap AND water are needed for maximum effectiveness against viruses. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is regular soap just as effective as antibacterial soap for destroying viruses?
 
@@ -936,25 +888,37 @@ D. Because viruses and bacteria are the same thing
 
 Correct Answer: B
 
-Feedback: Exactly! Antibacterial chemicals specifically target bacteria. But regular soap destroys viruses by physically breaking apart their lipid membranes, which works regardless of the type of pathogen. Antibacterial additives are designed to kill bacteria specifically. Regular soap works differently. It physically breaks apart lipid membranes, which is effective against any membrane-coated pathogen, including viruses.
+Feedback: Exactly! Antibacterial chemicals specifically target bacteria. But regular soap destroys viruses by physically breaking apart their lipid membranes, which works regardless of the type of pathogen. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Soap Concentration, Water Present), but they can take action on internal components (Soap Effectiveness, Virus Survival Rate). They need to decide which action would be most effective based on what the model shows.
+
+Why do we wash our hands with soap instead of just water?
+
+A. Soap makes water wetter
+B. Soap smells better than plain water
+C. Soap can break apart germs in a way that water alone cannot
+D. There is no real difference between soap and water
+
+Correct Answer: C
+
+Feedback: That's right! Soap has a special chemical structure that lets it break apart the protective coatings on viruses and bacteria, something water alone cannot do. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

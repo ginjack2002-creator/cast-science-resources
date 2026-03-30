@@ -755,77 +755,17 @@ POST-ASSESSMENT
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-ESS2-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-About how much of Earth's water is fresh water that people can drink?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.2 + CCC4 (Systems and System Models)
 
-A. About 50%
-B. About 25%
-C. About 10%
-D. Less than 1%
-
-Correct Answer: D
-
-Feedback: That's right! About 97% of Earth's water is saltwater, about 2% is frozen in glaciers and ice caps, and less than 1% is accessible fresh water. It may surprise you, but less than 1% of all Earth's water is drinkable fresh water. Most water (97%) is saltwater in the oceans, and about 2% is frozen in glaciers.
-
----
-
-### Question 2
-
-What happens to water in a lake on a very hot, sunny day?
-
-A. It sinks deeper underground
-B. It evaporates into the air as water vapor
-C. It turns into saltwater
-D. It stays exactly the same
-
-Correct Answer: B
-
-Feedback: Correct! Heat from the sun causes water to evaporate, turning liquid water into water vapor that rises into the atmosphere. When the sun heats water, the water molecules gain energy and escape into the air as water vapor. This process is called evaporation, and it removes water from lakes and rivers.
-
----
-
-### Question 3
-
-What controls whether a city has enough water to drink?
-
-A. Only how much it rains
-B. Only how hot it is
-C. The balance between rainfall adding water and evaporation removing it
-D. How close the city is to the ocean
-
-Correct Answer: C
-
-Feedback: Good thinking! Freshwater availability depends on the balance between water coming in (precipitation) and water leaving (evaporation and use). A city's water supply depends on more than one factor. Precipitation adds water to reservoirs, while evaporation removes it. The balance between these forces determines how much fresh water is available.
-
----
-
-### Question 4
-
-Why do some places experience water shortages while others have plenty?
-
-A. Some places are closer to the sun
-B. Different places have different amounts of rainfall and different temperatures
-C. Water shortages only happen in deserts
-D. Some places waste more water than others
-
-Correct Answer: B
-
-Feedback: That's right! Climate patterns determine how much rain falls and how fast water evaporates, creating very different water availability in different locations. Water availability varies because different regions receive different amounts of precipitation and have different temperatures. Hot, dry areas lose water to evaporation faster than rain can replace it.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Precipitation Amount, Temperature, Freshwater Availability, Evaporation Rate. Some components are external (Precipitation Amount, Temperature) and some are internal (Freshwater Availability, Evaporation Rate). The student needs to understand what each component represents and how they are organized.
 
 In the water system model, what happens during a drought with a heat wave (low precipitation, high temperature)?
 
@@ -836,11 +776,15 @@ D. Precipitation increases to balance out the heat
 
 Correct Answer: B
 
-Feedback: Correct! When precipitation is low and temperature is high, evaporation removes water faster than rain can replace it. Freshwater availability drops toward zero. Remember the drought simulation. High temperatures increase evaporation (removing water), while low precipitation means little water is being added. This double effect causes freshwater to crash.
+Feedback: Correct! When precipitation is low and temperature is high, evaporation removes water faster than rain can replace it. Freshwater availability drops toward zero. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Precipitation Amount increases, Freshwater Availability increases; when Temperature increases, Evaporation Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 What type of relationship does Evaporation Rate have with Freshwater Availability?
 
@@ -851,11 +795,15 @@ D. Positive: evaporation creates rain which adds freshwater
 
 Correct Answer: B
 
-Feedback: That's right! Evaporation removes water from lakes, rivers, and reservoirs, reducing the amount of fresh water available for communities. This is a negative relationship. Evaporation takes water away from the surface and puts it into the atmosphere. While it may eventually rain somewhere, the local freshwater supply decreases. This is a negative (-) relationship.
+Feedback: That's right! Evaporation removes water from lakes, rivers, and reservoirs, reducing the amount of fresh water available for communities. This is a negative relationship. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.2 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Precipitation Amount increases, Freshwater Availability increases and when Temperature increases, Evaporation Rate increases and when Evaporation Rate increases, Freshwater Availability decreases. The student changes one variable to see how the whole system responds.
 
 In 2018, Cape Town, South Africa nearly ran out of water. Based on your model, what combination of conditions most likely caused this?
 
@@ -866,11 +814,15 @@ D. Too many rivers flowing into the ocean
 
 Correct Answer: B
 
-Feedback: Exactly! Cape Town experienced a severe drought (low precipitation) combined with warm temperatures (high evaporation). This matches the worst-case scenario in your model. Cape Town's crisis happened because of prolonged drought (very little rain) combined with warm conditions that increased evaporation. In your model, this is the 'Drought + Heat Wave' scenario.
+Feedback: Exactly! Cape Town experienced a severe drought (low precipitation) combined with warm temperatures (high evaporation). This matches the worst-case scenario in your model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why does cold winter weather actually help build freshwater supplies?
 
@@ -881,25 +833,37 @@ D. People use less water in winter
 
 Correct Answer: B
 
-Feedback: Correct! Cold temperatures slow evaporation dramatically, and heavy precipitation stored as snowpack acts as a natural reservoir that releases water slowly during warmer months. In the winter snowpack scenario, low temperatures reduce evaporation (less water is lost), and precipitation falls as snow that accumulates. This stored snow releases water gradually in spring and summer.
+Feedback: Correct! Cold temperatures slow evaporation dramatically, and heavy precipitation stored as snowpack acts as a natural reservoir that releases water slowly during warmer months. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Precipitation Amount, Temperature), but they can take action on internal components (Freshwater Availability, Evaporation Rate). They need to decide which action would be most effective based on what the model shows.
+
+About how much of Earth's water is fresh water that people can drink?
+
+A. About 50%
+B. About 25%
+C. About 10%
+D. Less than 1%
+
+Correct Answer: D
+
+Feedback: That's right! About 97% of Earth's water is saltwater, about 2% is frozen in glaciers and ice caps, and less than 1% is accessible fresh water. If you chose A, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (D) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: D
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.2, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.2, CCC4)
+Question 5: D (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

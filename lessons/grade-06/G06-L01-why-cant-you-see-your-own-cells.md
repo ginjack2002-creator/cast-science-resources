@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-1, MS-LS1-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the basic building block of all living things?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS1-1, MS-LS1-2 + CCC4 (Systems and System Models)
 
-A. Atoms
-B. Cells
-C. Molecules
-D. Organs
-
-Correct Answer: B
-
-Feedback: Correct! Cells are the smallest unit of life. Every living organism is made of one or more cells. Not quite. While atoms and molecules are important, the cell is the basic unit of life. All living things are made of cells.
-
----
-
-### Question 2
-
-Why do scientists need microscopes to study most cells?
-
-A. Cells move too fast to see
-B. Cells are transparent and invisible
-C. Cells are too small to see with the naked eye
-D. Cells only exist inside bones where we can't look
-
-Correct Answer: C
-
-Feedback: Correct! Most cells are far too small to see without magnification. Human cells are typically 10-100 micrometers wide. Not quite. The main reason we need microscopes is that cells are extremely small, usually between 10 and 100 micrometers, which is far below what our eyes can detect.
-
----
-
-### Question 3
-
-Which of these is a living thing made of only ONE cell?
-
-A. A dog
-B. A tree
-C. A bacterium
-D. A mushroom
-
-Correct Answer: C
-
-Feedback: Correct! Bacteria are single-celled organisms. Each bacterium is one complete living cell that carries out all life functions. Not quite. Dogs, trees, and mushrooms are all made of many cells. Bacteria are single-celled organisms, meaning one cell does everything needed to survive.
-
----
-
-### Question 4
-
-What do you think cells need to stay alive?
-
-A. Only water
-B. Only sunlight
-C. Nutrients, oxygen, and waste removal
-D. Nothing — cells are self-sufficient
-
-Correct Answer: C
-
-Feedback: Correct! Cells need nutrients for energy, oxygen for cellular respiration, and they must remove waste to survive. Not quite. Like all living things, cells need multiple resources: nutrients for energy, oxygen for respiration, and a way to get rid of waste products.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Cell Size, Nutrient Supply, Oxygen Level, Waste Buildup. Some components are external (Nutrient Supply, Oxygen Level) and some are internal (Cell Size, Waste Buildup). The student needs to understand what each component represents and how they are organized.
 
 Why can't a single cell grow to be as large as a basketball?
 
@@ -967,11 +907,15 @@ D. There aren't enough organelles to fill a cell that big
 
 Correct Answer: B
 
-Feedback: Correct! The surface-area-to-volume ratio is the key constraint. A larger cell would have too much interior for its membrane to supply with nutrients and remove waste from. Not quite. The real reason is the surface-area-to-volume ratio. As a cell grows, its interior (volume) increases faster than its membrane (surface area), so the membrane can't keep up with exchanging nutrients and waste.
+Feedback: Correct! The surface-area-to-volume ratio is the key constraint. A larger cell would have too much interior for its membrane to supply with nutrients and remove waste from. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS1-1, MS-LS1-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Nutrient Supply increases, Cell Size increases; when Oxygen Level increases, Waste Buildup decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the cell model, what happens when Nutrient Supply is locked at 10%?
 
@@ -982,11 +926,15 @@ D. Nothing changes because cells can survive without nutrients
 
 Correct Answer: C
 
-Feedback: Correct! Without adequate nutrients, cells shrink because they can't maintain their structures, and waste builds up because the cell can't power its cleanup systems. Not quite. When nutrient supply drops to 10%, cells shrink because they lack energy to maintain their structures. Waste also builds up because the cell can't power its waste removal systems.
+Feedback: Correct! Without adequate nutrients, cells shrink because they can't maintain their structures, and waste builds up because the cell can't power its cleanup systems. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS1-1, MS-LS1-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Nutrient Supply increases, Cell Size increases and when Oxygen Level increases, Waste Buildup decreases and when Waste Buildup increases, Cell Size decreases. The student changes one variable to see how the whole system responds.
 
 Which statement best describes the relationship between Oxygen Level and Waste Buildup in the cell model?
 
@@ -997,11 +945,15 @@ D. Oxygen creates waste as a byproduct of respiration
 
 Correct Answer: B
 
-Feedback: Correct! Higher oxygen levels allow cellular respiration to work efficiently, which helps break down and remove waste. Low oxygen causes waste to accumulate. Not quite. Oxygen and Waste Buildup have a negative relationship. More oxygen allows efficient cellular respiration, which helps cells break down waste. When oxygen drops, waste accumulates.
+Feedback: Correct! Higher oxygen levels allow cellular respiration to work efficiently, which helps break down and remove waste. Low oxygen causes waste to accumulate. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS1-1, MS-LS1-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A scientist observes that cells in a tissue sample are shrinking and accumulating waste. Which combination of conditions most likely explains this?
 
@@ -1012,25 +964,37 @@ D. Low nutrient supply and high oxygen
 
 Correct Answer: B
 
-Feedback: Correct! Both low nutrients (causing shrinkage) and low oxygen (causing waste buildup) together would produce these symptoms. This is what happens when blood flow to a tissue is restricted. Not quite. Shrinking cells indicate low nutrient supply, and waste accumulation indicates low oxygen. Both conditions together, such as restricted blood flow, would cause these observations.
+Feedback: Correct! Both low nutrients (causing shrinkage) and low oxygen (causing waste buildup) together would produce these symptoms. This is what happens when blood flow to a tissue is restricted. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS1-1, MS-LS1-2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Nutrient Supply, Oxygen Level), but they can take action on internal components (Cell Size, Waste Buildup). They need to decide which action would be most effective based on what the model shows.
+
+What is the basic building block of all living things?
+
+A. Atoms
+B. Cells
+C. Molecules
+D. Organs
+
+Correct Answer: B
+
+Feedback: Correct! Cells are the smallest unit of life. Every living organism is made of one or more cells. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS1-1, MS-LS1-2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS1-1, MS-LS1-2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS1-1, MS-LS1-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS1-1, MS-LS1-2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS1-1, MS-LS1-2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

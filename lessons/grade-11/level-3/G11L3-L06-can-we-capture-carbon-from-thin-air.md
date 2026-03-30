@@ -914,86 +914,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-CO2 exists at approximately 420 parts per million (ppm) in the atmosphere. Why does this low concentration make direct air capture significantly more energy-intensive than capturing CO2 from power plant exhaust?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC5 (Energy and Matter)
 
-A. Power plant exhaust contains no CO2, making it easier to process
-B. At 420 ppm, CO2 is extremely dilute compared to exhaust gases at ~120,000 ppm, and thermodynamics requires exponentially more energy to separate increasingly dilute components from a mixture
-C. Direct air capture equipment is always less efficient than industrial capture equipment
-D. The atmosphere contains pollutants that block CO2 capture
-
-Correct Answer: B
-
-Feedback: Correct. Thermodynamics dictates that separating a dilute component from a mixture requires more energy as the concentration decreases. CO2 in air is ~300x more dilute than in exhaust, making air capture fundamentally more energy-intensive. The challenge is thermodynamic: separating a substance from a dilute mixture requires more energy than from a concentrated one. At 420 ppm, CO2 in air is nearly 300 times more dilute than in power plant exhaust (~120,000 ppm), demanding proportionally more energy.
-
----
-
-### Question 2
-
-A direct air capture system powered by natural gas captures 1,000 tonnes of CO2 per year but the gas combustion emits 400 tonnes of CO2. What is the net carbon removal?
-
-A. 1,000 tonnes because only captured CO2 counts
-B. 600 tonnes because the system's own emissions must be subtracted from gross capture to determine actual atmospheric CO2 reduction
-C. 1,400 tonnes because both captured and emitted CO2 should be counted as removed
-D. 0 tonnes because any fossil fuel use invalidates the capture
-
-Correct Answer: B
-
-Feedback: Correct. Net carbon removal equals gross capture minus all system emissions. If the DAC system emits 400 tonnes while capturing 1,000, the net removal is 600 tonnes. This is why energy source carbon intensity is a critical design variable. Net removal accounts for the full carbon budget of the system. Gross capture (1,000 tonnes) minus system emissions (400 tonnes) yields 600 tonnes of net removal. Ignoring system emissions would overstate the climate benefit.
-
----
-
-### Question 3
-
-The thermodynamic minimum energy required to separate CO2 from air at 420 ppm is approximately 250 kWh per tonne. Current DAC systems require 1,000-2,500 kWh per tonne. What explains this gap?
-
-A. Current systems violate the laws of thermodynamics
-B. Real systems have engineering inefficiencies including heat losses, fan power, sorbent degradation, and incomplete CO2 release during regeneration that increase energy requirements 3-5x above the theoretical minimum
-C. The thermodynamic minimum calculation is incorrect
-D. Current systems capture more CO2 than intended, using extra energy
-
-Correct Answer: B
-
-Feedback: Correct. The thermodynamic minimum represents a theoretical floor under perfect conditions. Real engineering systems face unavoidable losses from heat transfer, air movement, sorbent cycling, and regeneration inefficiency that multiply the actual energy requirement. The gap between theoretical and actual energy use reflects real-world engineering losses. No system achieves 100% efficiency: fans require power, heat is lost during sorbent regeneration, sorbents degrade over cycles, and CO2 is not fully released. These compound to 3-5x the theoretical minimum.
-
----
-
-### Question 4
-
-Why is the energy source used to power a direct air capture system the single most important variable in determining whether the system actually reduces atmospheric CO2?
-
-A. Renewable energy is cheaper than fossil energy for all applications
-B. If the energy source emits CO2 (e.g., fossil fuels), those emissions can partially or completely negate the CO2 captured, potentially making the system a net emitter rather than a net remover
-C. The energy source determines the physical location of the DAC facility
-D. Only nuclear energy produces enough power for DAC systems
-
-Correct Answer: B
-
-Feedback: Correct. A fossil-powered DAC system could emit more CO2 from its energy source than it captures from the air, creating a net positive emission rather than net removal. The carbon intensity of the energy source directly determines whether DAC helps or harms. The energy source's carbon intensity is critical because it can negate or exceed the CO2 captured. A coal-powered DAC system could theoretically emit more CO2 from combustion than it removes from the air, making it counterproductive.
-
----
-
-### Question 5
-
-Humanity emits approximately 37 gigatonnes of CO2 per year. If each DAC facility captures 4,000 tonnes per year (like Climeworks' Orca plant), approximately how many facilities would be needed to capture just 1% of annual emissions?
-
-A. About 370 facilities
-B. About 9,250 facilities
-C. About 92,500 facilities
-D. About 925,000 facilities
-
-Correct Answer: C
-
-Feedback: Correct. 1% of 37 gigatonnes = 370 million tonnes. At 4,000 tonnes per facility, that requires 92,500 facilities. This calculation reveals the enormous scale challenge: even 1% of emissions requires tens of thousands of industrial-scale plants. The math: 1% of 37 Gt = 0.37 Gt = 370,000,000 tonnes. Divided by 4,000 tonnes per facility = 92,500 facilities. This reveals the daunting scale challenge that makes DAC a supplement to, not a replacement for, emissions reduction.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Energy Source Carbon Intensity, Sorbent Efficiency, Thermal Energy Requirement, Net Carbon Removal, Capture Cost, Deployment Scale. Some components are external (Energy Source Carbon Intensity, Deployment Scale) and some are internal (Sorbent Efficiency, Thermal Energy Requirement, Net Carbon Removal, Capture Cost). The student needs to understand what each component represents and how they are organized.
 
 A student's DAC model shows that switching from natural gas power to 100% renewable energy increases net carbon removal from 600 to 1,000 tonnes per year (per facility) but increases capture cost from $400 to $550 per tonne. What is the most complete analysis of this trade-off?
 
@@ -1004,11 +929,15 @@ D. Both systems are equally effective because they use the same capture technolo
 
 Correct Answer: B
 
-Feedback: Correct. Cost per tonne alone is misleading without accounting for net removal. The renewable system captures more net CO2 per dollar of total investment because it eliminates the 400 tonnes of self-generated emissions that reduce the fossil system's actual climate impact. The analysis must compare net removal, not gross capture or cost alone. The fossil system's apparent cost advantage disappears when you account for its 400 tonnes of self-generated emissions. Per net tonne removed, the renewable system is actually more cost-effective.
+Feedback: Correct. Cost per tonne alone is misleading without accounting for net removal. The renewable system captures more net CO2 per dollar of total investment because it eliminates the 400 tonnes of self-generated emissions that reduce the fossil system's actual climate impact. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Source Carbon Intensity increases, Net Carbon Removal decreases; when Sorbent Efficiency increases, Thermal Energy Requirement decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model demonstrates that sorbent efficiency degrades by 2% per cycle over thousands of regeneration cycles. After 500 cycles, what is the cumulative impact on system performance, and what does this imply for operational planning?
 
@@ -1019,11 +948,15 @@ D. Degradation stops after the first 100 cycles as the sorbent reaches equilibri
 
 Correct Answer: B
 
-Feedback: Correct. Cumulative degradation means sorbent replacement is a recurring operational cost. The replacement schedule, disposal/recycling of spent sorbent, and the carbon footprint of manufacturing new sorbent must all be included in the system's true cost and environmental analysis. Sorbent degradation is cumulative and creates a maintenance cycle: periodic replacement adds cost, generates waste, and requires manufacturing new sorbent (with its own carbon footprint). Life-cycle analysis must include these recurring costs.
+Feedback: Correct. Cumulative degradation means sorbent replacement is a recurring operational cost. The replacement schedule, disposal/recycling of spent sorbent, and the carbon footprint of manufacturing new sorbent must all be included in the system's true cost and environmental analysis. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Energy Source Carbon Intensity increases, Net Carbon Removal decreases and when Sorbent Efficiency increases, Thermal Energy Requirement decreases and when Deployment Scale increases, Capture Cost decreases. The student changes one variable to see how the whole system responds.
 
 A student models the land use required for DAC at gigatonne scale and finds that powering the systems with solar energy would require solar farms covering an area the size of a small state. Another student argues this makes DAC impractical. Which response best evaluates this claim?
 
@@ -1034,11 +967,15 @@ D. The calculation must be wrong because no technology requires that much land
 
 Correct Answer: B
 
-Feedback: Correct. Land use is a legitimate constraint but must be evaluated comparatively. Reforestation for equivalent CO2 removal requires even more land, and unmitigated climate change threatens vastly more land through environmental degradation. No carbon removal option is free of trade-offs. The analysis requires comparison: what is the land footprint of alternative approaches? Reforestation for equivalent removal requires 5-10x more land. And unmitigated climate change threatens far more land. DAC's land use is a valid constraint but not a unique disqualification.
+Feedback: Correct. Land use is a legitimate constraint but must be evaluated comparatively. Reforestation for equivalent CO2 removal requires even more land, and unmitigated climate change threatens vastly more land through environmental degradation. No carbon removal option is free of trade-offs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that DAC capture cost follows a learning curve: costs decrease by 15% for every doubling of cumulative installed capacity. Current costs are $600/tonne at 0.01 Mt/year capacity. Approximately what cost per tonne would the model predict at 10 Mt/year capacity (roughly 10 doublings)?
 
@@ -1049,11 +986,15 @@ D. $6,000/tonne because costs increase with scale
 
 Correct Answer: B
 
-Feedback: Correct. Learning curve economics: 0.85^10 = approximately 0.20, so costs would fall to roughly $120/tonne. This is optimistic but grounded in observed learning rates for analogous technologies. However, the thermodynamic minimum sets a floor below which costs cannot fall. Learning curve analysis: each doubling reduces cost by 15% (multiply by 0.85). After 10 doublings: $600 x 0.85^10 = approximately $120/tonne. This assumes the historical learning rate holds, though the thermodynamic minimum energy cost sets a permanent floor.
+Feedback: Correct. Learning curve economics: 0.85^10 = approximately 0.20, so costs would fall to roughly $120/tonne. This is optimistic but grounded in observed learning rates for analogous technologies. However, the thermodynamic minimum sets a floor below which costs cannot fall. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Energy Source Carbon Intensity, Deployment Scale), but they can take action on internal components (Sorbent Efficiency, Thermal Energy Requirement, Net Carbon Removal, Capture Cost). They need to decide which action would be most effective based on what the model shows.
 
 Based on the DAC model, which conclusion about the role of direct air capture in climate strategy is best supported by the simulation data?
 
@@ -1064,27 +1005,18 @@ D. DAC should only be deployed after all fossil fuel use has been eliminated
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that DAC cannot scale fast enough or cheaply enough to offset 37 Gt/year of ongoing emissions. Its role is addressing hard-to-abate sectors and historical emissions after aggressive emissions reduction brings the remaining gap to a manageable scale. The model shows that DAC's current cost and energy requirements make it unable to match the scale of ongoing emissions. It is most valuable as a complement to emissions reduction, addressing residual emissions from hard-to-decarbonize sectors and drawing down historical atmospheric CO2.
+Feedback: Correct. The model demonstrates that DAC cannot scale fast enough or cheaply enough to offset 37 Gt/year of ongoing emissions. Its role is addressing hard-to-abate sectors and historical emissions after aggressive emissions reduction brings the remaining gap to a manageable scale. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

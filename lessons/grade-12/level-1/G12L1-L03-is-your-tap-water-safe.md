@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-The EPA action level for lead in drinking water is 15 parts per billion (ppb). What does this measurement represent?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.2 + CCC6 (Structure and Function)
 
-A. The temperature at which lead dissolves in water
-B. A concentration of contamination so small that specialized instruments are needed to detect it
-C. The percentage of water molecules that contain lead atoms
-D. The number of lead pipes in a city's water distribution system
-
-Correct Answer: B
-
-Feedback: Correct. Parts per billion is an extremely small concentration measurement. At 15 ppb, there are only 15 lead molecules for every billion water molecules, yet even this tiny amount can cause harm, especially to children. Incorrect. Parts per billion (ppb) measures contamination concentration. At 15 ppb, there are 15 units of lead per billion units of water. No level of lead is considered safe for children.
-
----
-
-### Question 2
-
-What is the primary function of corrosion control in municipal water treatment?
-
-A. To remove bacteria and viruses from the water supply
-B. To add fluoride to water for dental health
-C. To create a protective coating inside water pipes that prevents lead and copper from leaching into drinking water
-D. To adjust the color and taste of water to make it more appealing
-
-Correct Answer: C
-
-Feedback: Correct. Corrosion control chemicals create a protective mineral coating inside pipes that prevents metals from dissolving into the water. The failure of this treatment triggered the Flint, Michigan water crisis. Incorrect. Corrosion control adds chemicals that form a protective coating on the inner surfaces of pipes, preventing lead and copper from leaching into drinking water. Its failure was central to the Flint crisis.
-
----
-
-### Question 3
-
-In the Flint, Michigan water crisis, what was the initial cause that triggered the contamination cascade?
-
-A. A natural disaster destroyed the water treatment plant
-B. The city switched to a new water source with different chemistry and failed to adjust corrosion control treatment
-C. Residents deliberately contaminated their own water supply
-D. The EPA raised the acceptable lead limit, making previously safe water unsafe
-
-Correct Answer: B
-
-Feedback: Correct. Flint switched from Detroit's treated Lake Huron water to the Flint River to save money. The new water had different chemistry (higher chloride) that corroded the protective coating in lead pipes, releasing lead into the drinking water. Incorrect. The crisis began when Flint switched water sources to save money. The new source water had different chemistry that was more corrosive, and without adjusting corrosion control treatment, the protective coatings in lead pipes dissolved.
-
----
-
-### Question 4
-
-Why is tap water safety described as a 'system property' rather than determined by any single factor?
-
-A. Because water safety is subjective and depends on individual taste preferences
-B. Because tap water quality depends on the interconnected functioning of source protection, treatment, and distribution infrastructure
-C. Because different government agencies each test for different contaminants
-D. Because water safety varies by the time of day it is tested
-
-Correct Answer: B
-
-Feedback: Correct. Tap water safety is an emergent property of an interconnected system. Even if the treatment plant produces perfectly clean water, aging pipes in the distribution system can introduce contaminants before it reaches your tap. Incorrect. Water safety emerges from the interaction of source water quality, treatment effectiveness, and distribution infrastructure integrity. A failure in any component can compromise the entire system.
-
----
-
-### Question 5
-
-The EPA estimates that 6-10 million American homes receive water through lead service lines. Why does this represent an ongoing public health concern?
-
-A. Lead pipes are structurally weaker and prone to bursting during cold weather
-B. Lead pipes can leach lead into drinking water, especially when protective coatings fail or water chemistry changes
-C. Lead pipes reduce water flow, causing water shortages in those homes
-D. Lead pipes are only found in commercial buildings, not residential homes
-
-Correct Answer: B
-
-Feedback: Correct. Lead service lines are a latent hazard. While corrosion control can keep lead levels low, any change in water chemistry, treatment failure, or coating deterioration can cause lead to leach into drinking water at dangerous levels. Incorrect. Lead pipes remain a public health concern because they can release lead into drinking water whenever protective coatings break down due to water chemistry changes, treatment failures, or aging infrastructure.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Source Water Quality, Treatment Effectiveness, Pipe Infrastructure Age, Corrosion Rate, Tap Water Safety. Some components are external (Source Water Quality, Pipe Infrastructure Age) and some are internal (Treatment Effectiveness, Corrosion Rate, Tap Water Safety). The student needs to understand what each component represents and how they are organized.
 
 In the water safety model, a city has excellent Source Water Quality and high Treatment Effectiveness, but its Pipe Infrastructure is 80+ years old with lead service lines. What does the model predict about Tap Water Safety?
 
@@ -1001,11 +926,15 @@ D. Tap Water Safety will be low only if the water temperature exceeds 70 degrees
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that aging infrastructure is a ticking time bomb. Even with excellent source water and treatment, deteriorating lead pipes can leach contaminants into water after it leaves the plant, making Tap Water Safety a system property. Incorrect. The model predicts that pipe infrastructure age independently threatens Tap Water Safety. Water that is perfectly clean leaving the treatment plant can become contaminated as it travels through aging lead pipes.
+Feedback: Correct. The model shows that aging infrastructure is a ticking time bomb. Even with excellent source water and treatment, deteriorating lead pipes can leach contaminants into water after it leaves the plant, making Tap Water Safety a system property. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Source Water Quality increases, Treatment Effectiveness increases; when Source Water Quality increases, Corrosion Rate decreases. The student is trying to understand why these relationships are positive or negative.
 
 Using the model, which sequence correctly describes the Flint water crisis as a cascading system failure?
 
@@ -1016,11 +945,15 @@ D. Tap Water Safety declined first, which caused Source Water Quality to deterio
 
 Correct Answer: B
 
-Feedback: Correct. The Flint crisis was a cascading failure: the new water source had different chemistry, treatment was not adjusted for the new chemistry, corrosion rates spiked in unprotected lead pipes, and lead leached into drinking water. Incorrect. The model shows the cascade: Source Water Quality changed when Flint switched rivers, Treatment Effectiveness was not recalibrated, Corrosion Rate increased dramatically in the aging lead pipes, and Tap Water Safety collapsed.
+Feedback: Correct. The Flint crisis was a cascading failure: the new water source had different chemistry, treatment was not adjusted for the new chemistry, corrosion rates spiked in unprotected lead pipes, and lead leached into drinking water. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Source Water Quality increases, Treatment Effectiveness increases and when Source Water Quality increases, Corrosion Rate decreases and when Pipe Infrastructure Age increases, Corrosion Rate increases. The student changes one variable to see how the whole system responds.
 
 A student extends the model by adding Community Socioeconomic Status as a component. Based on environmental justice research, how would this component most likely interact with the other variables?
 
@@ -1031,11 +964,15 @@ D. Socioeconomic status only affects Source Water Quality, not distribution infr
 
 Correct Answer: B
 
-Feedback: Correct. The model extension reveals that lower-income communities face compounding vulnerabilities: older pipes, less political influence for infrastructure investment, and fewer resources for bottled water when contamination occurs. Incorrect. Environmental justice research shows that socioeconomic status correlates with infrastructure age, political power to demand repairs, and access to alternatives, making lower-income communities disproportionately vulnerable to water contamination.
+Feedback: Correct. The model extension reveals that lower-income communities face compounding vulnerabilities: older pipes, less political influence for infrastructure investment, and fewer resources for bottled water when contamination occurs. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is replacing lead pipes considered a more permanent solution than adjusting water chemistry, according to the water safety model?
 
@@ -1046,11 +983,15 @@ D. New pipes never corrode, making them maintenance-free forever
 
 Correct Answer: C
 
-Feedback: Correct. The model shows that corrosion control is a continuous treatment that can fail if conditions change, while removing lead pipes permanently eliminates the source of lead contamination from the system. Incorrect. The model demonstrates that chemical corrosion control requires continuous maintenance and is vulnerable to changes in water chemistry. Replacing lead pipes permanently removes the contamination source, making the system inherently safer.
+Feedback: Correct. The model shows that corrosion control is a continuous treatment that can fail if conditions change, while removing lead pipes permanently eliminates the source of lead contamination from the system. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Source Water Quality, Pipe Infrastructure Age), but they can take action on internal components (Treatment Effectiveness, Corrosion Rate, Tap Water Safety). They need to decide which action would be most effective based on what the model shows.
 
 Based on the systems model of water safety, which intervention strategy would be MOST effective at preventing a crisis similar to Flint?
 
@@ -1061,27 +1002,18 @@ D. Relying solely on residents to report discolored water
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that addressing both infrastructure (replacing lead pipes) and monitoring (testing at multiple distribution points) creates redundant protections that can detect problems before they reach crisis levels. Incorrect. The systems model shows that effective prevention requires addressing multiple components: replacing the source of contamination (lead pipes) AND monitoring water quality throughout the distribution system, not just at the plant exit.
+Feedback: Correct. The model shows that addressing both infrastructure (replacing lead pipes) and monitoring (testing at multiple distribution points) creates redundant protections that can detect problems before they reach crisis levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.2, CCC6)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.2, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
-
----
 
 ## Resources
 

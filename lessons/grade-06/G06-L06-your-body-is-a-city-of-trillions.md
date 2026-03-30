@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the correct order of organization in the human body, from smallest to largest?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS1-3 + CCC4 (Systems and System Models)
 
-A. Organs, cells, tissues, organ systems
-B. Cells, tissues, organs, organ systems
-C. Tissues, cells, organ systems, organs
-D. Organ systems, organs, tissues, cells
-
-Correct Answer: B
-
-Feedback: Correct! The body is organized from smallest to largest: cells form tissues, tissues form organs, and organs form organ systems that work together. Not quite. The correct order from smallest to largest is: cells (the smallest unit of life), tissues (groups of similar cells), organs (groups of tissues), and organ systems (groups of organs working together).
-
----
-
-### Question 2
-
-Why does your heart beat faster when you exercise?
-
-A. Exercise scares the heart into beating faster
-B. Your muscles need more oxygen and nutrients, so the heart pumps blood faster
-C. The heart gets warmer during exercise and naturally speeds up
-D. Exercise makes your blood thicker so the heart has to work harder
-
-Correct Answer: B
-
-Feedback: Correct! During exercise, your muscles demand more oxygen and nutrients. The heart beats faster to increase blood flow and deliver these resources to working muscles. Not quite. When you exercise, your muscles need extra oxygen and nutrients for energy. Your heart responds by beating faster to pump more blood, delivering those resources to where they are needed.
-
----
-
-### Question 3
-
-Which body system is responsible for breaking down the food you eat?
-
-A. Circulatory system
-B. Respiratory system
-C. Digestive system
-D. Muscular system
-
-Correct Answer: C
-
-Feedback: Correct! The digestive system breaks down food into nutrients that cells can use for energy and building materials. Not quite. The digestive system is responsible for breaking down food into nutrients. The circulatory system transports those nutrients, the respiratory system handles oxygen, and the muscular system enables movement.
-
----
-
-### Question 4
-
-Can your body systems work independently, or do they depend on each other?
-
-A. Each system works independently without needing the others
-B. Only the heart and lungs depend on each other
-C. All body systems are interconnected and depend on each other to function
-D. Systems only interact when the body is sick
-
-Correct Answer: C
-
-Feedback: Correct! All body systems are interconnected. The digestive system provides nutrients, the respiratory system provides oxygen, the circulatory system delivers both, and the muscular system depends on all three. Not quite. All body systems are deeply interconnected. No system can function alone. For example, muscles need oxygen (from lungs) and nutrients (from digestion), both delivered by the circulatory system.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Heart Rate, Blood Oxygen Level, Nutrient Intake, Physical Activity. Some components are external (Nutrient Intake, Physical Activity) and some are internal (Heart Rate, Blood Oxygen Level). The student needs to understand what each component represents and how they are organized.
 
 In the body systems model, what happens when Physical Activity is set to maximum?
 
@@ -967,11 +907,15 @@ D. Blood Oxygen increases because the lungs work faster
 
 Correct Answer: B
 
-Feedback: Correct! Maximum physical activity causes the heart to beat faster (to deliver more blood), blood oxygen to drop (muscles consume it faster), and the body demands more nutrients for energy. Not quite. During intense activity, the heart rate increases to deliver more blood, blood oxygen drops because muscles consume it faster than lungs replace it, and the body demands more nutrients. All systems are affected.
+Feedback: Correct! Maximum physical activity causes the heart to beat faster (to deliver more blood), blood oxygen to drop (muscles consume it faster), and the body demands more nutrients for energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS1-3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Physical Activity increases, Heart Rate increases; when Physical Activity increases, Blood Oxygen decreases. The student is trying to understand why these relationships are positive or negative.
 
 What is homeostasis and why is it important for body function?
 
@@ -982,11 +926,15 @@ D. The way the immune system fights diseases
 
 Correct Answer: B
 
-Feedback: Correct! Homeostasis is the body's ability to keep internal conditions stable, like temperature, blood oxygen, and nutrient levels, even when the outside environment changes. All organ systems contribute. Not quite. Homeostasis is the body's ability to maintain a stable internal environment. When you exercise, get cold, or skip a meal, your body systems work together to keep conditions balanced for cell survival.
+Feedback: Correct! Homeostasis is the body's ability to keep internal conditions stable, like temperature, blood oxygen, and nutrient levels, even when the outside environment changes. All organ systems contribute. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS1-3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Physical Activity increases, Heart Rate increases and when Physical Activity increases, Blood Oxygen decreases and when Nutrient Intake increases, Physical Performance increases. The student changes one variable to see how the whole system responds.
 
 A student skips lunch and then tries to run the 400-meter dash. Based on the body systems model, what would happen?
 
@@ -997,11 +945,15 @@ D. The student would run faster because the body is lighter without food
 
 Correct Answer: C
 
-Feedback: Correct! Without adequate nutrients, cells can't produce enough energy for intense activity. This affects muscles (less power), the heart (must compensate), and breathing (increased demand). All systems are interconnected. Not quite. When nutrient intake is low, the body can't produce enough energy for intense physical activity. This cascades through all systems: muscles weaken, the heart must work harder, and breathing increases. Body systems are interconnected.
+Feedback: Correct! Without adequate nutrients, cells can't produce enough energy for intense activity. This affects muscles (less power), the heart (must compensate), and breathing (increased demand). All systems are interconnected. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS1-3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which statement best supports the claim that the body is a system of interacting subsystems?
 
@@ -1012,25 +964,37 @@ D. Red blood cells carry oxygen through the bloodstream
 
 Correct Answer: B
 
-Feedback: Correct! This example shows three systems interacting: the respiratory system's failure triggers a response in the circulatory system, and the muscular system is still affected. This chain reaction proves systems are interconnected. Not quite. The best evidence for interacting subsystems shows how changes in one system cause responses in other systems. When oxygen intake drops, the heart compensates by beating faster, but muscles still decline, proving the systems are interdependent.
+Feedback: Correct! This example shows three systems interacting: the respiratory system's failure triggers a response in the circulatory system, and the muscular system is still affected. This chain reaction proves systems are interconnected. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS1-3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Nutrient Intake, Physical Activity), but they can take action on internal components (Heart Rate, Blood Oxygen Level). They need to decide which action would be most effective based on what the model shows.
+
+What is the correct order of organization in the human body, from smallest to largest?
+
+A. Organs, cells, tissues, organ systems
+B. Cells, tissues, organs, organ systems
+C. Tissues, cells, organ systems, organs
+D. Organ systems, organs, tissues, cells
+
+Correct Answer: B
+
+Feedback: Correct! The body is organized from smallest to largest: cells form tissues, tissues form organs, and organs form organ systems that work together. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS1-3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS1-3, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS1-3, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS1-3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS1-3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

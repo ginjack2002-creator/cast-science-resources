@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A direct air capture facility removes 10,000 tons of CO2 per year but is powered by natural gas that emits 4,000 tons of CO2. What is the facility's net CO2 removal, and what does this reveal about the importance of energy source?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.6 + CCC5 (Energy and Matter)
 
-A. Net removal is 10,000 tons because emissions from power generation are counted separately
-B. Net removal is 6,000 tons, demonstrating that the energy source directly determines the actual climate benefit
-C. Net removal is 14,000 tons because the facility also captures its own emissions
-D. Net removal cannot be calculated without knowing the carbon credit price
-
-Correct Answer: B
-
-Feedback: Correct. Net removal = gross capture minus process emissions = 10,000 - 4,000 = 6,000 tons. The energy source reduces the climate benefit by 40%. If powered by coal, emissions could exceed capture, making the facility a net climate harm. This is the energy-emissions paradox. Calculate: if the facility removes 10,000 tons from the atmosphere but the energy source adds 4,000 tons back, what is the net effect on atmospheric CO2?
-
----
-
-### Question 2
-
-Global CO2 emissions exceed 36 billion tons per year. The world's largest direct air capture facility removes 4,000 tons per year. How many facilities of this size would be needed to capture just 1% of annual emissions?
-
-A. 360 facilities
-B. 3,600 facilities
-C. 90,000 facilities
-D. 900,000 facilities
-
-Correct Answer: C
-
-Feedback: Correct. 1% of 36 billion tons = 360 million tons. At 4,000 tons per facility, that requires 360,000,000 / 4,000 = 90,000 facilities. This scale comparison demonstrates why carbon capture alone cannot substitute for emission reduction. Calculate step by step: 1% of 36 billion = 360 million tons. Then divide by the capacity of one facility (4,000 tons/year).
-
----
-
-### Question 3
-
-A sorbent material captures CO2 from ambient air at 420 parts per million. Why does the low concentration of CO2 in the atmosphere make direct air capture inherently more challenging than capturing CO2 from a power plant exhaust?
-
-A. Atmospheric CO2 is chemically different from power plant CO2
-B. At 420 ppm, CO2 constitutes only 0.042% of the air, meaning enormous volumes of air must be processed to capture significant quantities — power plant exhaust is 10-15% CO2, a concentration 250-350 times higher
-C. Low concentration makes no difference because the same sorbent works at any concentration
-D. Direct air capture is actually easier because atmospheric air is cleaner than power plant exhaust
-
-Correct Answer: B
-
-Feedback: Correct. Thermodynamic and practical constraints make capturing dilute CO2 far more energy-intensive and expensive than capturing concentrated CO2. Processing air at 420 ppm requires 250-350 times more air volume than capturing from power plant exhaust at 10-15% concentration. Think about what happens when you try to capture a substance that makes up only 0.042% of a gas mixture. How much gas must you process to collect a significant amount of that substance?
-
----
-
-### Question 4
-
-Geological sequestration involves injecting captured CO2 into deep underground rock formations. What is the primary scientific basis for expecting this storage to be permanent?
-
-A. The CO2 is compressed into a solid that cannot escape
-B. CO2 dissolves in brine, reacts with minerals, and eventually converts to carbonate rock — processes that trap it permanently, as demonstrated by natural CO2 reservoirs that have held gas for millions of years
-C. Underground formations are sealed with cement caps that prevent any leakage
-D. The CO2 naturally decomposes underground within a few years
-
-Correct Answer: B
-
-Feedback: Correct. Multiple trapping mechanisms ensure permanence: structural trapping (impermeable cap rock), dissolution in brine, chemical reaction with minerals to form carbonates, and capillary trapping. Natural analogs prove these mechanisms hold CO2 for geological timescales. Consider the natural geological processes that trap CO2 underground. Some natural formations have held CO2 for over 100,000 years. What physical and chemical mechanisms make this possible?
-
----
-
-### Question 5
-
-Carbon credits create a financial incentive for CO2 removal. At a current price range of $100-$1,000 per ton and a capture cost of $400-$1,000 per ton, what does this suggest about the economic viability of direct air capture without additional policy support?
-
-A. DAC is already highly profitable at all credit prices
-B. DAC is economically marginal — only viable when credit prices are at the high end of the range and capture costs are at the low end, suggesting that policy incentives or technology cost reductions are needed for widespread deployment
-C. Credit prices are irrelevant because governments fund all capture operations directly
-D. The economics prove that DAC should be abandoned in favor of tree planting exclusively
-
-Correct Answer: B
-
-Feedback: Correct. When costs overlap with or exceed credit prices, the operation is only viable under favorable conditions. Widespread deployment requires either credit prices rising sustainably above $200/ton, technology improvements reducing costs below $200/ton, or both — alongside supportive policies. Compare the cost range ($400-$1,000/ton) with the credit price range ($100-$1,000/ton). Under what conditions does revenue exceed cost? How often does that occur across the ranges?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: CO2 Concentration, Capture Rate, Sorbent Efficiency, Energy Input, Storage Capacity, Reaction Temperature, Regeneration Cost, Transport Distance, Geological Sequestration, Carbon Credit Value. Some components are external (CO2 Concentration, Energy Input, Transport Distance) and some are internal (Capture Rate, Sorbent Efficiency, Storage Capacity, Reaction Temperature, Regeneration Cost, Geological Sequestration, Carbon Credit Value). The student needs to understand what each component represents and how they are organized.
 
 The model shows that switching from fossil-powered to renewable-powered energy input increases net CO2 removal from 6,000 to 10,000 tons per year for the same facility. What variable in the model changes to produce this result?
 
@@ -1001,11 +926,15 @@ D. Sorbent Efficiency improves when powered by renewable energy
 
 Correct Answer: B
 
-Feedback: Correct. The facility's capture technology performs the same regardless of energy source. What changes is the emissions from energy generation: fossil fuel produces CO2 that offsets capture, while renewables produce zero operational CO2. Net removal = gross capture minus process emissions. Identify what specifically changes when you switch the energy source. Does the capture technology itself change, or does something about the process emissions change?
+Feedback: Correct. The facility's capture technology performs the same regardless of energy source. What changes is the emissions from energy generation: fossil fuel produces CO2 that offsets capture, while renewables produce zero operational CO2. Net removal = gross capture minus process emissions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.6 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Input increases, Capture Rate increases; when Sorbent Efficiency increases, Regeneration Cost decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student's model predicts that scaling capture from 4,000 tons/year to 1 billion tons/year would require energy equivalent to 1% of global energy production. What does this reveal about the scale challenge?
 
@@ -1016,11 +945,15 @@ D. The model overestimates energy requirements by a factor of 100
 
 Correct Answer: B
 
-Feedback: Correct. Dedicating 1% of global energy to carbon capture is a massive infrastructure investment — equivalent to the entire energy output of a major industrial nation. This energy must come from clean sources (or the capture is self-defeating), requiring purpose-built renewable capacity beyond what is needed to decarbonize existing energy demand. Consider what 1% of global energy production represents in absolute terms. Is this a trivial amount, or does it represent a significant industrial undertaking? And what must be true about the source of that energy?
+Feedback: Correct. Dedicating 1% of global energy to carbon capture is a massive infrastructure investment — equivalent to the entire energy output of a major industrial nation. This energy must come from clean sources (or the capture is self-defeating), requiring purpose-built renewable capacity beyond what is needed to decarbonize existing energy demand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Energy Input increases, Capture Rate increases and when Sorbent Efficiency increases, Regeneration Cost decreases and when Carbon Credit Value increases, Capture Rate increases. The student changes one variable to see how the whole system responds.
 
 In the model, CO2 Concentration is classified as an external variable even though it changes with global emissions over time. What is the best justification for this classification?
 
@@ -1031,11 +964,15 @@ D. The classification is arbitrary and has no scientific basis
 
 Correct Answer: B
 
-Feedback: Correct. External variables represent conditions that affect the modeled system but are not significantly changed by it. A single capture facility removing 4,000 tons from an atmosphere containing 3.3 trillion tons has negligible effect on global concentration — it is a boundary condition, not a dependent variable. Consider the scale difference between what one facility captures and total atmospheric CO2. Can one facility meaningfully change the atmospheric concentration? If not, the concentration is an external condition, not a system output.
+Feedback: Correct. External variables represent conditions that affect the modeled system but are not significantly changed by it. A single capture facility removing 4,000 tons from an atmosphere containing 3.3 trillion tons has negligible effect on global concentration — it is a boundary condition, not a dependent variable. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model includes both Sorbent Efficiency and Regeneration Cost as separate variables. A student argues they should be combined into one variable. What is the strongest argument for keeping them separate?
 
@@ -1046,11 +983,15 @@ D. The model needs a minimum number of variables to be valid
 
 Correct Answer: B
 
-Feedback: Correct. A breakthrough in sorbent chemistry (higher CO2 affinity) could increase Sorbent Efficiency without changing Regeneration Cost. Conversely, cheaper renewable heat could reduce Regeneration Cost without affecting Sorbent Efficiency. Keeping them separate reveals which innovations most impact overall economic viability. Consider whether improvements in one area necessarily improve the other. Could you improve how well the sorbent captures CO2 without changing how much it costs to regenerate it, or vice versa?
+Feedback: Correct. A breakthrough in sorbent chemistry (higher CO2 affinity) could increase Sorbent Efficiency without changing Regeneration Cost. Conversely, cheaper renewable heat could reduce Regeneration Cost without affecting Sorbent Efficiency. Keeping them separate reveals which innovations most impact overall economic viability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.6 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (CO2 Concentration, Energy Input, Transport Distance), but they can take action on internal components (Capture Rate, Sorbent Efficiency, Storage Capacity, Reaction Temperature, Regeneration Cost, Geological Sequestration, Carbon Credit Value). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model's three scenarios, a student concludes that carbon capture should be deployed only after all fossil fuel emissions are eliminated. Using model evidence, what is the strongest counterargument?
 
@@ -1061,27 +1002,18 @@ D. The model does not address this question
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that capture and emission reduction serve different functions. Emission reduction prevents new CO2 from entering the atmosphere. Capture addresses hard-to-abate sectors (where elimination is technically impossible) and removes legacy CO2 that will otherwise cause warming for centuries. Both are necessary simultaneously. Consider whether all emission sources can be eliminated. Some industrial processes (cement production, steel manufacturing, long-haul aviation) inherently produce CO2. Also consider the CO2 already in the atmosphere from past emissions.
+Feedback: Correct. The model reveals that capture and emission reduction serve different functions. Emission reduction prevents new CO2 from entering the atmosphere. Capture addresses hard-to-abate sectors (where elimination is technically impossible) and removes legacy CO2 that will otherwise cause warming for centuries. Both are necessary simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.6, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.6, CCC5)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.6, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.6, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.6, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS2-1, MS-PS2-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-According to Newton's First Law, what happens to an object in motion when no external force acts on it?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-PS2-1, MS-PS2-2 + CCC4 (Systems and System Models)
 
-A. It gradually slows down and stops
-B. It continues moving at the same speed in the same direction
-C. It speeds up over time
-D. It changes direction randomly
-
-Correct Answer: B
-
-Feedback: Correct! Newton's First Law (inertia) states that an object in motion stays in motion at constant speed and direction unless acted upon by an unbalanced force. Newton's First Law states that an object in motion remains in motion at constant velocity unless an external force acts on it. This property is called inertia.
-
----
-
-### Question 2
-
-When you push against a wall, the wall pushes back against you with an equal force. This is an example of:
-
-A. Newton's First Law (inertia)
-B. Newton's Second Law (F=ma)
-C. Newton's Third Law (action-reaction)
-D. The law of gravity
-
-Correct Answer: C
-
-Feedback: Correct! Newton's Third Law states that for every action force, there is an equal and opposite reaction force. The wall pushes back with the same force you apply. This is Newton's Third Law: for every action, there is an equal and opposite reaction. When you push the wall, it exerts an equal force back on you in the opposite direction.
-
----
-
-### Question 3
-
-What is a concussion?
-
-A. A bruise on the outside of the skull
-B. A brain injury caused by the brain moving inside the skull during a sudden impact
-C. A cracked skull bone
-D. Temporary dizziness that has no lasting effects
-
-Correct Answer: B
-
-Feedback: Correct! A concussion occurs when a sudden impact causes the brain to move inside the skull, potentially damaging brain cells and disrupting normal brain function. A concussion is a traumatic brain injury that occurs when the brain shifts inside the skull during a sudden deceleration or impact. It is not just a skull bruise or crack, and it can have lasting effects.
-
----
-
-### Question 4
-
-If you double the speed of a moving object, how does the force of impact change when it suddenly stops?
-
-A. The force stays the same regardless of speed
-B. The force doubles
-C. The force more than doubles
-D. The force decreases because faster objects stop more smoothly
-
-Correct Answer: C
-
-Feedback: Correct! Force of impact increases with speed, but because kinetic energy depends on speed squared, doubling speed more than doubles the impact force. When speed doubles, the impact force more than doubles. This is because kinetic energy depends on speed squared (KE = 1/2 mv squared). Doubling speed quadruples the kinetic energy that must be absorbed during the stop.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Collision Speed, Player Mass, Impact Force, Brain Acceleration. Some components are external (Collision Speed, Player Mass) and some are internal (Impact Force, Brain Acceleration). The student needs to understand what each component represents and how they are organized.
 
 Your model showed that even with a helmet, Brain Acceleration remained significant during a 20 mph collision. Using Newton's Laws, which explanation best accounts for why helmets cannot eliminate concussions?
 
@@ -967,11 +907,15 @@ D. Concussions are caused by neck injuries, not brain movement
 
 Correct Answer: B
 
-Feedback: Correct! Newton's First Law explains that the brain, floating in cerebrospinal fluid, keeps moving when the skull stops suddenly. No helmet can stop the brain from decelerating inside the skull because the helmet only protects the outside. The fundamental physics problem is inertia. The brain floats inside the skull in fluid. During a collision, the skull stops, but the brain continues moving (Newton's First Law), striking the inside of the skull. Helmets protect the skull but cannot prevent this internal brain movement.
+Feedback: Correct! Newton's First Law explains that the brain, floating in cerebrospinal fluid, keeps moving when the skull stops suddenly. No helmet can stop the brain from decelerating inside the skull because the helmet only protects the outside. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-PS2-1, MS-PS2-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Collision Speed increases, Impact Force increases; when Player Mass increases, Impact Force increases. The student is trying to understand why these relationships are positive or negative.
 
 Your model showed that helmets reduce Impact Force by extending the time of collision. This demonstrates the concept of impulse. If a helmet extends the collision time from 5 milliseconds to 50 milliseconds, what happens to the peak force?
 
@@ -982,11 +926,15 @@ D. Peak force is eliminated entirely by extending the time
 
 Correct Answer: B
 
-Feedback: Correct! Impulse = Force x Time. Since the total momentum change stays the same, spreading it over 10 times longer reduces the peak force to about one-tenth. This is exactly how helmet padding works. Impulse = Force x Time, and momentum change is fixed. By extending the collision time by a factor of 10, the peak force must decrease by the same factor to maintain the same impulse. This is the physics principle behind all impact protection.
+Feedback: Correct! Impulse = Force x Time. Since the total momentum change stays the same, spreading it over 10 times longer reduces the peak force to about one-tenth. This is exactly how helmet padding works. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-PS2-1, MS-PS2-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Collision Speed increases, Impact Force increases and when Player Mass increases, Impact Force increases and when Impact Force increases, Brain Acceleration increases. The student changes one variable to see how the whole system responds.
 
 In the model, when Player Mass was doubled at 15 mph, Impact Force increased significantly. When Collision Speed was doubled at normal mass, Impact Force increased even more. What does this comparison reveal?
 
@@ -997,11 +945,15 @@ D. The model was inaccurate because mass should not affect collisions
 
 Correct Answer: B
 
-Feedback: Correct! KE = 1/2 mv squared means doubling speed quadruples kinetic energy, while doubling mass only doubles it. Speed has a disproportionately larger effect on collision force. Both mass and speed affect impact force, but not equally. Because kinetic energy is proportional to speed squared (v squared) but only proportional to mass (m), doubling speed has a much larger effect than doubling mass.
+Feedback: Correct! KE = 1/2 mv squared means doubling speed quadruples kinetic energy, while doubling mass only doubles it. Speed has a disproportionately larger effect on collision force. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-PS2-1, MS-PS2-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on your model results, a sports equipment company wants to design a helmet that better reduces concussion risk. Which design principle is best supported by the model evidence?
 
@@ -1012,25 +964,37 @@ D. Add a sharp outer edge to deflect opponents during contact
 
 Correct Answer: B
 
-Feedback: Correct! The model shows that extending collision time reduces peak force (impulse principle). Materials that compress slowly and progressively absorb energy over a longer period, reducing the peak deceleration the brain experiences. A rigid helmet would transfer force more quickly, not less. The model supports using materials that compress progressively, extending the deceleration time and thereby reducing peak force through the impulse principle.
+Feedback: Correct! The model shows that extending collision time reduces peak force (impulse principle). Materials that compress slowly and progressively absorb energy over a longer period, reducing the peak deceleration the brain experiences. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-PS2-1, MS-PS2-2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Collision Speed, Player Mass), but they can take action on internal components (Impact Force, Brain Acceleration). They need to decide which action would be most effective based on what the model shows.
+
+According to Newton's First Law, what happens to an object in motion when no external force acts on it?
+
+A. It gradually slows down and stops
+B. It continues moving at the same speed in the same direction
+C. It speeds up over time
+D. It changes direction randomly
+
+Correct Answer: B
+
+Feedback: Correct! Newton's First Law (inertia) states that an object in motion stays in motion at constant speed and direction unless acted upon by an unbalanced force. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-PS2-1, MS-PS2-2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-PS2-1, MS-PS2-2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-PS2-1, MS-PS2-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-PS2-1, MS-PS2-2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-PS2-1, MS-PS2-2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

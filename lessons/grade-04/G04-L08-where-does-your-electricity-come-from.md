@@ -867,77 +867,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Where does the electricity in your home come from?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.1 + CCC5 (Energy and Matter)
 
-A. It is created inside the walls of your house
-B. It comes from a power plant that converts natural resources into electricity
-C. It comes directly from the Sun through the windows
-D. It is stored inside the light switches
-
-Correct Answer: B
-
-Feedback: That is right! Electricity is generated at power plants that convert natural resources (like coal, gas, sunlight, or wind) into electrical energy, which then travels through wires to your home. Electricity does not come from walls or switches. Power plants convert natural resources into electricity, and wires carry that electricity to homes and buildings.
-
----
-
-### Question 2
-
-What is a natural resource?
-
-A. Something made in a factory
-B. A material from nature that people use, like water, coal, sunlight, or wind
-C. A type of electricity
-D. Something that only exists underground
-
-Correct Answer: B
-
-Feedback: Correct! Natural resources are materials from nature that people use. Examples include water, coal, natural gas, sunlight, wind, and soil. Natural resources are not man-made. They are materials found in nature that people use, such as water, sunlight, wind, coal, and natural gas.
-
----
-
-### Question 3
-
-What is the difference between renewable and nonrenewable energy?
-
-A. Renewable energy is more expensive and nonrenewable is free
-B. Renewable energy sources never run out (like sunlight and wind), but nonrenewable sources can be used up (like coal and gas)
-C. Renewable energy is old and nonrenewable is new
-D. There is no real difference between them
-
-Correct Answer: B
-
-Feedback: Right! Renewable energy sources like sunlight, wind, and water replenish naturally and will not run out. Nonrenewable sources like coal, oil, and gas took millions of years to form and can be used up. Renewable energy comes from sources that nature replenishes, like sunlight and wind. Nonrenewable energy comes from sources like coal and gas that can run out.
-
----
-
-### Question 4
-
-How does burning coal affect the environment?
-
-A. It has no effect on the environment at all
-B. It makes the air cleaner
-C. It releases pollution and gases that contribute to climate change
-D. It only affects the area right around the power plant
-
-Correct Answer: C
-
-Feedback: Exactly! Burning coal releases pollution, including carbon dioxide and other gases that contribute to climate change and can harm air quality. Burning coal does affect the environment. It releases smoke, pollution, and greenhouse gases into the air that can harm air quality and contribute to climate change.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Energy Source Amount, Power Plant Output, Home Electricity. Some components are external (Energy Source Amount) and some are internal (Power Plant Output, Home Electricity). The student needs to understand what each component represents and how they are organized.
 
 In the energy model, Energy Source Amount is an external component. Power Plant Output and Home Electricity are internal components. What chain does this create?
 
@@ -948,11 +888,15 @@ D. Home electricity creates the energy source
 
 Correct Answer: B
 
-Feedback: Right! The model shows a positive chain: when more natural resource is available, the power plant produces more electricity, and more electricity reaches homes. The model shows a cause-and-effect chain: more energy source available means the power plant can produce more output, which means more electricity reaches homes.
+Feedback: Right! The model shows a positive chain: when more natural resource is available, the power plant produces more electricity, and more electricity reaches homes. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Energy Source Amount increases, Power Plant Output increases; when Power Plant Output increases, Home Electricity increases. The student is trying to understand why these relationships are positive or negative.
 
 A town relies on solar panels for electricity. It has been cloudy for a week. What does the model predict?
 
@@ -963,11 +907,15 @@ D. Nothing changes because solar panels do not need sunlight
 
 Correct Answer: B
 
-Feedback: Correct! The model shows that when the energy source amount decreases (less sunlight), power plant output drops, and home electricity also drops. This is a challenge of solar energy. Solar panels need sunlight to generate electricity. When clouds block the sun, the energy source is reduced, so the power plant produces less electricity and homes receive less.
+Feedback: Correct! The model shows that when the energy source amount decreases (less sunlight), power plant output drops, and home electricity also drops. This is a challenge of solar energy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.1 + CCC5 (Energy and Matter)
+
+A student runs a simulation of the model. The model shows that when Energy Source Amount increases, Power Plant Output increases and when Power Plant Output increases, Home Electricity increases. The student changes one variable to see how the whole system responds.
 
 Which energy plan would give a town the MOST reliable electricity while being kindest to the environment?
 
@@ -978,11 +926,15 @@ D. Do not use any electricity to protect the environment
 
 Correct Answer: C
 
-Feedback: Exactly! A mix of renewable sources provides more reliability. If the sun is not shining, the wind might be blowing. Combining sources helps ensure the town always has clean electricity. Using just one source has weaknesses. Coal pollutes, and solar only works when sunny. A mix of clean sources like solar and wind is more reliable because they cover for each other.
+Feedback: Exactly! A mix of renewable sources provides more reliability. If the sun is not shining, the wind might be blowing. Combining sources helps ensure the town always has clean electricity. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.1 + CCC5 (Energy and Matter)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is it important to know that ALL energy sources affect the environment in some way?
 
@@ -993,25 +945,37 @@ D. Because it means renewable energy is just as bad as fossil fuels
 
 Correct Answer: B
 
-Feedback: Right! Understanding that every energy source has trade-offs helps us make better choices. Renewable sources have fewer environmental impacts than fossil fuels, even though they still need space and materials. Knowing about environmental impacts helps us make better decisions. We cannot stop using energy, but we can choose sources with less impact and find ways to reduce harm.
+Feedback: Right! Understanding that every energy source has trade-offs helps us make better choices. Renewable sources have fewer environmental impacts than fossil fuels, even though they still need space and materials. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Energy Source Amount), but they can take action on internal components (Power Plant Output, Home Electricity). They need to decide which action would be most effective based on what the model shows.
+
+Where does the electricity in your home come from?
+
+A. It is created inside the walls of your house
+B. It comes from a power plant that converts natural resources into electricity
+C. It comes directly from the Sun through the windows
+D. It is stored inside the light switches
+
+Correct Answer: B
+
+Feedback: That is right! Electricity is generated at power plants that convert natural resources (like coal, gas, sunlight, or wind) into electrical energy, which then travels through wires to your home. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.1, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.1, CCC5)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.1, CCC5)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

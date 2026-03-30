@@ -957,86 +957,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What are microplastics?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.6 + CCC1 (Patterns)
 
-A. A type of biodegradable plastic designed to break down quickly in the environment
-B. Plastic particles smaller than 5mm that result from degradation of larger plastics or are manufactured as microbeads, persisting in the environment for centuries
-C. Microscopic organisms that feed on plastic waste in the ocean
-D. A new type of recyclable plastic developed for marine environments
-
-Correct Answer: B
-
-Feedback: Correct. Microplastics are plastic particles under 5mm that persist in the environment for hundreds of years. They come from breakdown of larger plastics and from products containing manufactured microbeads. Microplastics are defined as plastic particles smaller than 5mm. They are not biodegradable and persist for centuries, entering food chains and accumulating at every trophic level.
-
----
-
-### Question 2
-
-What is the difference between bioaccumulation and biomagnification?
-
-A. They are the same process described with different terms
-B. Bioaccumulation is the buildup of a substance within a single organism over time; biomagnification is the increasing concentration at each higher level of the food chain
-C. Bioaccumulation only occurs in marine organisms; biomagnification only occurs on land
-D. Bioaccumulation reduces toxin levels; biomagnification increases them
-
-Correct Answer: B
-
-Feedback: Correct. Bioaccumulation occurs within one organism as intake exceeds excretion. Biomagnification occurs across trophic levels as predators accumulate the combined load from all their prey, creating progressively higher concentrations up the food chain. These are related but distinct processes. Bioaccumulation is the buildup within a single organism. Biomagnification is the amplification across trophic levels, where each predator inherits the accumulated load of all its prey organisms.
-
----
-
-### Question 3
-
-Why is the extremely slow decomposition rate of plastics a significant environmental concern?
-
-A. Slow decomposition means plastics are recyclable and therefore not a problem
-B. Because plastic input far exceeds decomposition, concentrations in the environment can only increase over time, creating a one-way accumulation problem
-C. Slow decomposition is beneficial because it means plastic products last longer
-D. Decomposition rate has no relationship to environmental impact
-
-Correct Answer: B
-
-Feedback: Correct. With a decomposition rate measured in centuries and an input rate measured in millions of tons per year, environmental plastic concentration can only go up. Even stopping all new plastic input would not reduce existing concentrations for hundreds of years. The mismatch between input rate (millions of tons per year) and decomposition rate (centuries) means plastic accumulates relentlessly. This one-way ratchet ensures environmental concentrations rise year after year.
-
----
-
-### Question 4
-
-How do microplastics enter the human food supply?
-
-A. Only through direct ingestion of plastic products
-B. Through the food chain: marine organisms ingest microplastics, fish eat those organisms, and humans eat the fish, inheriting accumulated plastic from every trophic level below
-C. Microplastics do not enter the human food supply
-D. Only through drinking water contamination, not through food
-
-Correct Answer: B
-
-Feedback: Correct. Microplastics enter the food chain at the lowest level (plankton) and are amplified through trophic transfer. Humans, as top consumers, ingest the accumulated plastic from the entire food chain, plus additional exposure from water and air. Microplastics reach humans through multiple pathways, but the food chain is a major route. Biomagnification means that each trophic level concentrates the plastic load from the level below, and humans at the top inherit the highest concentrations.
-
----
-
-### Question 5
-
-Approximately how much plastic does the average person ingest per week according to recent research estimates?
-
-A. A barely detectable amount with no health significance
-B. About the weight of a credit card (approximately 5 grams)
-C. Several kilograms of plastic per week
-D. Exactly zero, because food safety regulations prevent any plastic from entering food
-
-Correct Answer: B
-
-Feedback: Correct. Research estimates suggest the average person ingests approximately 5 grams of microplastic per week, roughly equivalent to the weight of a credit card, through food, water, and air. Studies estimate approximately 5 grams per week, the equivalent of a credit card. This plastic comes from seafood, drinking water, food packaging, and airborne particles, and the long-term health effects are still being studied.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plastic Input Rate, Microplastic Concentration, Bioaccumulation Factor, Trophic Transfer, Marine Organism Health, Decomposition Rate, Human Exposure Level. Some components are external (Plastic Input Rate, Decomposition Rate) and some are internal (Microplastic Concentration, Bioaccumulation Factor, Trophic Transfer, Marine Organism Health, Human Exposure Level). The student needs to understand what each component represents and how they are organized.
 
 The simulation projects microplastic concentration 50 years forward under current input rates with near-zero decomposition. The model shows concentration increasing linearly, not exponentially. What does this linear pattern reveal about the accumulation dynamics?
 
@@ -1047,11 +972,15 @@ D. Linear growth indicates the model is incorrect
 
 Correct Answer: B
 
-Feedback: Correct. Microplastic accumulation is a stock-flow problem: constant input with negligible output produces linear growth. There is no reinforcing feedback accelerating the input, but the absence of any meaningful removal mechanism means concentrations rise relentlessly. The linear pattern reflects the stock-flow dynamics: a constant input rate combined with near-zero decomposition creates steady accumulation. While not exponential, linear growth of a persistent pollutant over decades produces massive cumulative concentrations.
+Feedback: Correct. Microplastic accumulation is a stock-flow problem: constant input with negligible output produces linear growth. There is no reinforcing feedback accelerating the input, but the absence of any meaningful removal mechanism means concentrations rise relentlessly. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Plastic Input Rate increases, Microplastic Concentration increases; when Decomposition Rate increases, Microplastic Concentration decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student's model tracks microplastic concentration through four trophic levels: water, plankton, small fish, and tuna. The concentration increases by roughly 10x at each level. What mechanism drives this amplification?
 
@@ -1062,11 +991,15 @@ D. The amplification is an artifact of the model and does not occur in real food
 
 Correct Answer: B
 
-Feedback: Correct. Biomagnification occurs because each predator consumes many prey items, inheriting the plastic load from each one. Since plastic is not metabolized or excreted efficiently, it accumulates in the predator at the combined concentration of all its prey. The 10x amplification at each level reflects biomagnification. A tuna eats hundreds of small fish, each of which ate thousands of plankton. The plastic from every organism consumed accumulates in the predator because plastic resists metabolic breakdown.
+Feedback: Correct. Biomagnification occurs because each predator consumes many prey items, inheriting the plastic load from each one. Since plastic is not metabolized or excreted efficiently, it accumulates in the predator at the combined concentration of all its prey. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.6 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Plastic Input Rate increases, Microplastic Concentration increases and when Decomposition Rate increases, Microplastic Concentration decreases and when Microplastic Concentration increases, Bioaccumulation Factor increases. The student changes one variable to see how the whole system responds.
 
 The model shows that reducing plastic input by 50% today causes ocean concentrations to continue rising (just more slowly) rather than declining. What does this reveal about the timescale mismatch in this system?
 
@@ -1077,11 +1010,15 @@ D. The 50% reduction was not enough to matter
 
 Correct Answer: B
 
-Feedback: Correct. The timescale mismatch is the core problem. Plastic enters the system in years but takes centuries to degrade. Even halving input means new plastic continues to add to the existing stock, which barely decomposes. Concentrations only stabilize when input equals the negligible decomposition rate. The system has massive inertia because existing plastic persists for centuries. Reducing input slows the rate of increase but cannot reverse it quickly because the decomposition timescale (hundreds of years) vastly exceeds the input timescale (ongoing annual additions).
+Feedback: Correct. The timescale mismatch is the core problem. Plastic enters the system in years but takes centuries to degrade. Even halving input means new plastic continues to add to the existing stock, which barely decomposes. Concentrations only stabilize when input equals the negligible decomposition rate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on the model, which intervention point in the plastic pathway would produce the greatest reduction in human microplastic exposure?
 
@@ -1092,11 +1029,15 @@ D. Filtering microplastics from the air inside homes
 
 Correct Answer: B
 
-Feedback: Correct. Source reduction is the highest-leverage intervention because it prevents plastic from entering the accumulation pathway at all. Every unit of plastic prevented at the source avoids amplification through bioaccumulation and biomagnification at every subsequent trophic level. The model shows that plastic amplifies at each stage of the pathway. Preventing one unit of plastic at the source prevents its amplified presence at every subsequent level. End-of-chain interventions (filtering fish, cleaning air) cannot match the leverage of source prevention.
+Feedback: Correct. Source reduction is the highest-leverage intervention because it prevents plastic from entering the accumulation pathway at all. Every unit of plastic prevented at the source avoids amplification through bioaccumulation and biomagnification at every subsequent trophic level. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.6 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Plastic Input Rate, Decomposition Rate), but they can take action on internal components (Microplastic Concentration, Bioaccumulation Factor, Trophic Transfer, Marine Organism Health, Human Exposure Level). They need to decide which action would be most effective based on what the model shows.
 
 A student argues that 'the plastic problem will eventually solve itself because organisms will evolve to digest plastic.' Based on the model's timescale analysis, what is the flaw in this reasoning?
 
@@ -1107,27 +1048,18 @@ D. Evolution cannot act on plastic because plastic is not a biological substance
 
 Correct Answer: B
 
-Feedback: Correct. The timescale mismatch is critical. Even if plastic-digesting enzymes evolve (some primitive examples exist), the evolutionary timescale is vastly longer than the decades over which accumulation is causing ecological damage. Relying on evolution means accepting centuries of harm. While evolution could theoretically produce plastic-digesting organisms, this process operates on timescales far longer than the rapid accumulation of microplastics. The ecological damage occurring now and in coming decades cannot wait for an evolutionary solution that may take millennia.
+Feedback: Correct. The timescale mismatch is critical. Even if plastic-digesting enzymes evolve (some primitive examples exist), the evolutionary timescale is vastly longer than the decades over which accumulation is causing ecological damage. Relying on evolution means accepting centuries of harm. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC1)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

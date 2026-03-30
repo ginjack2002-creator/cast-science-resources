@@ -900,86 +900,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Chemiluminescence is the production of light from a chemical reaction. What distinguishes chemiluminescence from incandescence (such as a light bulb filament)?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.4 + CCC4 (Systems and System Models)
 
-A. Chemiluminescence requires electricity while incandescence does not
-B. Chemiluminescence converts chemical energy directly to light without requiring high temperatures, while incandescence produces light by heating a material
-C. Chemiluminescence produces only ultraviolet light while incandescence produces visible light
-D. There is no meaningful difference between the two processes
-
-Correct Answer: B
-
-Feedback: Correct. Chemiluminescence is 'cold light' produced directly from chemical bond energy, while incandescence requires heating a material to such high temperatures that it emits visible radiation. The key distinction is the energy source. Chemiluminescence converts chemical bond energy directly into photons without significant heat, while incandescence produces light by heating a material until it glows. This is why glow sticks are cool to the touch.
-
----
-
-### Question 2
-
-Activation energy is the minimum energy that reacting molecules must possess for a chemical reaction to occur. How does increasing temperature affect the fraction of molecules that exceed this threshold?
-
-A. Higher temperature decreases the fraction of molecules exceeding the activation energy
-B. Higher temperature increases the fraction of molecules exceeding the activation energy, accelerating the reaction
-C. Temperature has no effect on the activation energy of a reaction
-D. Higher temperature eliminates the need for activation energy entirely
-
-Correct Answer: B
-
-Feedback: Correct. Higher temperature increases the average kinetic energy of molecules, shifting the distribution so that a greater fraction exceeds the activation energy threshold, resulting in more successful collisions per unit time. Temperature increases the kinetic energy of molecules, shifting the Maxwell-Boltzmann distribution so that more molecules exceed the activation energy threshold. This is why chemical reactions generally speed up when heated.
-
----
-
-### Question 3
-
-In a chemical reaction, reactants are converted to products. As a reaction proceeds in a closed system (like a glow stick), what happens to the concentration of reactants over time?
-
-A. Reactant concentration remains constant throughout the reaction
-B. Reactant concentration increases as the reaction proceeds
-C. Reactant concentration decreases as reactants are consumed and converted to products
-D. Reactant concentration oscillates between high and low values
-
-Correct Answer: C
-
-Feedback: Correct. In a closed system, reactants are consumed as they are converted to products. This decrease in concentration is why chemical reactions typically slow down over time. In a closed system like a glow stick, reactants are consumed as the reaction proceeds. Their concentration decreases steadily as they are converted into products, which is why glow sticks gradually dim.
-
----
-
-### Question 4
-
-A student places one glow stick in hot water and an identical one in ice water. Both are activated at the same time. Which observation is the student most likely to make?
-
-A. Both glow sticks will have identical brightness and duration
-B. The hot glow stick will glow brighter but stop sooner; the cold one will glow dimmer but last longer
-C. The cold glow stick will glow brighter because cold preserves chemical energy
-D. Neither glow stick will work because extreme temperatures prevent the chemical reaction
-
-Correct Answer: B
-
-Feedback: Correct. Heat increases the reaction rate, producing brighter light but consuming reactants faster. Cold slows the reaction, producing dimmer light but extending the duration. Temperature controls reaction rate. The heated glow stick has a faster reaction rate (brighter glow) but exhausts its reactants sooner. The cooled glow stick has a slower rate (dimmer glow) but its reactants last longer.
-
----
-
-### Question 5
-
-Chemical equilibrium in a reaction system is reached when which condition is met?
-
-A. All reactants have been completely converted to products
-B. The forward and reverse reactions occur at equal rates, resulting in no net change in concentrations
-C. The reaction has completely stopped and no molecular motion occurs
-D. The temperature of the system equals room temperature
-
-Correct Answer: B
-
-Feedback: Correct. At chemical equilibrium, the forward and reverse reactions continue but at equal rates, so concentrations of reactants and products remain constant. The reaction has not stopped; it is dynamically balanced. Chemical equilibrium is a dynamic state where forward and reverse reactions occur at equal rates. Concentrations of reactants and products remain constant, but the reactions have not stopped. It is balance, not cessation.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Chemical Concentration, Temperature, Reaction Rate, Fluorescent Dye Activation, Light Output, Energy Dissipation, Product Buildup. Some components are external (Temperature) and some are internal (Chemical Concentration, Reaction Rate, Fluorescent Dye Activation, Light Output, Energy Dissipation, Product Buildup). The student needs to understand what each component represents and how they are organized.
 
 In the glow stick model, Temperature is identified as the master controller. Why does the model assign this role to Temperature?
 
@@ -990,11 +915,15 @@ D. Because Temperature is the only component students can observe without instru
 
 Correct Answer: B
 
-Feedback: Correct. The model shows Temperature as the upstream driver that sets the pace of the entire system: higher temperature increases Reaction Rate, which increases Light Output but also accelerates Chemical Concentration depletion. Temperature is the master controller because it directly sets the Reaction Rate, which then determines how quickly Chemical Concentration drops, how bright Light Output is, and how long the glow lasts. All other dynamics flow from this variable.
+Feedback: Correct. The model shows Temperature as the upstream driver that sets the pace of the entire system: higher temperature increases Reaction Rate, which increases Light Output but also accelerates Chemical Concentration depletion. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Temperature increases, Reaction Rate increases; when Reaction Rate increases, Chemical Concentration decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals a fundamental trade-off between brightness and duration. A student asks: 'Does a hot glow stick produce more total light than a cold one?' What does the model show?
 
@@ -1005,11 +934,15 @@ D. Total light output depends entirely on the color of the fluorescent dye, not 
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates conservation of energy: the same chemical fuel produces approximately the same total light output, just distributed differently over time. Temperature controls the rate, not the total energy conversion. The model reveals that total light output is approximately constant because temperature changes the rate of energy conversion, not the total amount of chemical energy available. A hot glow stick is brighter but shorter; a cold one is dimmer but longer.
+Feedback: Correct. The model demonstrates conservation of energy: the same chemical fuel produces approximately the same total light output, just distributed differently over time. Temperature controls the rate, not the total energy conversion. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Temperature increases, Reaction Rate increases and when Reaction Rate increases, Chemical Concentration decreases and when Product Buildup increases, Reaction Rate decreases. The student changes one variable to see how the whole system responds.
 
 In the model, Product Buildup creates a negative feedback loop. What effect does this have on the reaction over time?
 
@@ -1020,11 +953,15 @@ D. Product Buildup causes the glow stick to switch colors as different products 
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that as products (phenol and CO2) accumulate, they dilute the remaining reactants, reducing collision frequency and pushing the system toward equilibrium, which explains the gradual dimming of glow sticks. Product Buildup creates negative feedback: accumulated products dilute the remaining reactants, reduce the probability of reactant collisions, and drive the system toward equilibrium. This is why glow sticks gradually dim rather than shutting off suddenly.
+Feedback: Correct. The model shows that as products (phenol and CO2) accumulate, they dilute the remaining reactants, reducing collision frequency and pushing the system toward equilibrium, which explains the gradual dimming of glow sticks. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student runs the model at three temperatures and observes that the glow stick at high temperature emits the same total light as the one at low temperature, just over a shorter period. Which chemical principle does this observation illustrate?
 
@@ -1035,11 +972,15 @@ D. Hess's law of constant heat summation
 
 Correct Answer: B
 
-Feedback: Correct. This observation perfectly illustrates conservation of energy: the total energy stored in the chemical reactants is fixed at the time of activation. Temperature controls how quickly that energy is converted, not how much is available. The observation demonstrates conservation of energy. The glow stick contains a fixed amount of chemical energy. Temperature changes the rate of energy release (power) but not the total energy available (work), so total light output remains approximately constant.
+Feedback: Correct. This observation perfectly illustrates conservation of energy: the total energy stored in the chemical reactants is fixed at the time of activation. Temperature controls how quickly that energy is converted, not how much is available. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Temperature), but they can take action on internal components (Chemical Concentration, Reaction Rate, Fluorescent Dye Activation, Light Output, Energy Dissipation, Product Buildup). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, a glow stick manufacturer wants to maximize the duration of glow for a 12-hour emergency light. Which combination of conditions does the model recommend?
 
@@ -1050,27 +991,18 @@ D. Add a catalyst to speed up the reaction so it finishes faster
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that maximizing duration requires more reactant fuel (high concentration) combined with conditions that slow consumption (moderate-to-low temperature), producing adequate light over a longer period. The model demonstrates that duration depends on two factors: total reactant supply and consumption rate. For a 12-hour emergency light, you need abundant reactants (high concentration) consumed slowly (moderate-to-low temperature).
+Feedback: Correct. The model shows that maximizing duration requires more reactant fuel (high concentration) combined with conditions that slow consumption (moderate-to-low temperature), producing adequate light over a longer period. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -888,77 +888,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS1-4, MS-PS1-5.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a chemical reaction?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-PS1-4, MS-PS1-5 + CCC4 (Systems and System Models)
 
-A. Mixing two substances together without any change
-B. A process where atoms rearrange to form new substances with different properties
-C. Heating a substance until it melts
-D. Breaking an object into smaller pieces
-
-Correct Answer: B
-
-Feedback: Correct! A chemical reaction involves the rearrangement of atoms to form new substances. The products have different chemical properties than the reactants. A chemical reaction is not just mixing or physical change. It involves the rearrangement of atoms, breaking and forming chemical bonds to create entirely new substances with different properties.
-
----
-
-### Question 2
-
-When wood burns in a fireplace, the ashes weigh less than the original wood. Does this mean mass was destroyed?
-
-A. Yes, burning destroys mass permanently
-B. No, the 'missing' mass escaped as gases (CO2 and water vapor) into the air
-C. Yes, fire consumes mass and converts it to pure energy
-D. No, the ashes actually weigh the same as the wood
-
-Correct Answer: B
-
-Feedback: Correct! Mass is conserved in chemical reactions. The 'missing' mass was released as carbon dioxide and water vapor gases. If you could capture all products (ash + gases), the total mass would equal the original wood plus the oxygen used. Mass is never destroyed in a chemical reaction (conservation of mass). When wood burns, carbon and hydrogen atoms combine with oxygen to form CO2 and H2O gases that escape into the air. The total mass of all products equals the total mass of all reactants.
-
----
-
-### Question 3
-
-What is the difference between an exothermic and an endothermic reaction?
-
-A. Exothermic reactions are fast; endothermic reactions are slow
-B. Exothermic reactions release heat to the surroundings; endothermic reactions absorb heat from the surroundings
-C. Exothermic reactions only occur in living things; endothermic reactions only occur in non-living things
-D. There is no difference; they are the same thing
-
-Correct Answer: B
-
-Feedback: Correct! Exothermic reactions release energy as heat (the surroundings warm up), while endothermic reactions absorb energy as heat (the surroundings cool down). The key distinction is energy flow. Exothermic reactions release heat to the surroundings (you feel warmth), while endothermic reactions absorb heat from the surroundings (you feel cooling). Speed is not the defining difference.
-
----
-
-### Question 4
-
-If you combine baking soda and vinegar and the mixture gets colder, what type of reaction occurred?
-
-A. Exothermic, because a chemical reaction happened
-B. Endothermic, because the reaction absorbed heat from the surroundings
-C. No reaction occurred because temperature changed
-D. Both exothermic and endothermic at the same time
-
-Correct Answer: B
-
-Feedback: Correct! If the surroundings (mixture) got colder, the reaction absorbed heat energy from the surroundings. This is the hallmark of an endothermic reaction. A temperature decrease in the surroundings indicates an endothermic reaction. The reaction absorbed thermal energy from its surroundings, causing the temperature to drop. This is the opposite of an exothermic reaction, which would release heat.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Iron Powder Amount, Oxygen Exposure, Reaction Rate, Heat Output. Some components are external (Iron Powder Amount, Oxygen Exposure) and some are internal (Reaction Rate, Heat Output). The student needs to understand what each component represents and how they are organized.
 
 In your model, when Oxygen Exposure was set to zero, the iron powder remained unchanged and Heat Output stayed at zero, even though Iron Powder Amount was at maximum. What does this demonstrate?
 
@@ -969,11 +909,15 @@ D. Oxygen has no role in chemical reactions with metals
 
 Correct Answer: B
 
-Feedback: Correct! Chemical reactions require all reactants to be present. Iron + Oxygen -> Iron Oxide + Heat. Without oxygen, the iron cannot oxidize, so no reaction occurs and no heat is released. This is why hand warmers work only when opened (exposed to air). The model demonstrates a fundamental chemistry principle: all reactants must be present for a reaction to proceed. The iron oxidation reaction (Iron + Oxygen -> Iron Oxide) requires both iron and oxygen. This is why hand warmers are sealed until use.
+Feedback: Correct! Chemical reactions require all reactants to be present. Iron + Oxygen -> Iron Oxide + Heat. Without oxygen, the iron cannot oxidize, so no reaction occurs and no heat is released. This is why hand warmers work only when opened (exposed to air). If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-PS1-4, MS-PS1-5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Iron Powder Amount increases, Reaction Rate increases; when Oxygen Exposure increases, Reaction Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 Your model showed that the hand warmer eventually stopped producing heat even though oxygen was still available. The iron had been fully consumed. This is an example of:
 
@@ -984,11 +928,15 @@ D. Oxygen becoming too concentrated for the reaction to continue
 
 Correct Answer: B
 
-Feedback: Correct! Iron was the limiting reactant. Once all the iron reacted with oxygen, no more iron oxide (or heat) could be produced, regardless of how much oxygen remained. The limiting reactant determines when the reaction stops. This demonstrates the concept of a limiting reactant. Even with plenty of oxygen available, the reaction stops when all the iron has been consumed. The iron limits how much product (iron oxide and heat) can be formed.
+Feedback: Correct! Iron was the limiting reactant. Once all the iron reacted with oxygen, no more iron oxide (or heat) could be produced, regardless of how much oxygen remained. The limiting reactant determines when the reaction stops. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-PS1-4, MS-PS1-5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Iron Powder Amount increases, Reaction Rate increases and when Oxygen Exposure increases, Reaction Rate increases and when Reaction Rate increases, Heat Output increases. The student changes one variable to see how the whole system responds.
 
 A student weighs a sealed hand warmer before and after the reaction is complete. The mass stays the same, yet new substances (iron oxide) have formed. Which law explains this?
 
@@ -999,11 +947,15 @@ D. Newton's Third Law, because every reaction has an equal and opposite reaction
 
 Correct Answer: C
 
-Feedback: Correct! Conservation of mass states that atoms are neither created nor destroyed in a chemical reaction. The same iron and oxygen atoms that started as reactants are now rearranged as iron oxide. Same atoms, same total mass, new substance. The law of conservation of mass explains this observation. In a chemical reaction, atoms rearrange but are never created or destroyed. The iron and oxygen atoms still exist as iron oxide. Since no atoms were added or removed, the total mass remains unchanged.
+Feedback: Correct! Conservation of mass states that atoms are neither created nor destroyed in a chemical reaction. The same iron and oxygen atoms that started as reactants are now rearranged as iron oxide. Same atoms, same total mass, new substance. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-PS1-4, MS-PS1-5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on your model, you need to design a hand warmer that lasts exactly 8 hours. Currently, your prototype lasts only 4 hours. Which modification is best supported by the model evidence?
 
@@ -1014,25 +966,37 @@ D. Make the packet smaller to concentrate the heat
 
 Correct Answer: A
 
-Feedback: Correct! The model shows that Iron Powder Amount directly affects how long the reaction lasts (more reactant = longer reaction). Doubling the iron gives twice as much fuel for the exothermic reaction. You might also control oxygen exposure rate to regulate how fast the iron reacts. The model shows that the amount of iron (the limiting reactant) determines how long the reaction lasts. Doubling the iron provides twice as much fuel for the oxidation reaction. Removing oxygen would stop the reaction, and a non-reactive metal would produce no heat.
+Feedback: Correct! The model shows that Iron Powder Amount directly affects how long the reaction lasts (more reactant = longer reaction). Doubling the iron gives twice as much fuel for the exothermic reaction. You might also control oxygen exposure rate to regulate how fast the iron reacts. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-PS1-4, MS-PS1-5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Iron Powder Amount, Oxygen Exposure), but they can take action on internal components (Reaction Rate, Heat Output). They need to decide which action would be most effective based on what the model shows.
+
+What is a chemical reaction?
+
+A. Mixing two substances together without any change
+B. A process where atoms rearrange to form new substances with different properties
+C. Heating a substance until it melts
+D. Breaking an object into smaller pieces
+
+Correct Answer: B
+
+Feedback: Correct! A chemical reaction involves the rearrangement of atoms to form new substances. The products have different chemical properties than the reactants. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-PS1-4, MS-PS1-5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-PS1-4, MS-PS1-5, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI MS-PS1-4, MS-PS1-5, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-PS1-4, MS-PS1-5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-PS1-4, MS-PS1-5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: A
-
----
 
 ## Resources
 

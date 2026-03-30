@@ -895,86 +895,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-When a metal salt such as strontium chloride is heated in a flame, it produces a characteristic red color. Which of the following best explains why different metals produce different flame colors?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.1 + CCC4 (Systems and System Models)
 
-A. Each metal has a unique set of electron energy levels, so the photons emitted during electron transitions have different wavelengths.
-B. Different metals burn at different temperatures, and hotter flames always produce bluer colors.
-C. The oxygen in the air reacts differently with each metal, producing unique combustion byproducts that glow different colors.
-D. Larger atoms produce longer wavelengths of light because their electrons are farther from the nucleus.
-
-Correct Answer: A
-
-Feedback: Correct. Each element has quantized electron energy levels with unique spacing, so electron transitions emit photons of characteristic wavelengths, producing element-specific colors. Incorrect. Flame color is determined by the specific energy gaps between electron levels in each element, not by combustion temperature, oxygen reactions, or atomic size alone.
-
----
-
-### Question 2
-
-A student observes that heating copper chloride produces a blue-green flame while heating sodium chloride produces a yellow flame. Which statement best explains this observation?
-
-A. Copper burns at a higher temperature than sodium, producing a higher-energy color.
-B. The electron energy gaps in copper atoms correspond to blue-green photon wavelengths, while sodium's gaps correspond to yellow wavelengths.
-C. Chloride ions determine the flame color, and different amounts of chloride produce different colors.
-D. Copper reflects blue-green light from the flame while sodium reflects yellow light.
-
-Correct Answer: B
-
-Feedback: Correct. The color is determined by the metal's unique electron energy level spacing. When excited electrons fall back to lower levels, they release photons with wavelengths specific to that element. Incorrect. The metal cation, not the anion, determines the flame color. The color arises from the specific energy transitions of electrons within each metal's atomic structure.
-
----
-
-### Question 3
-
-Which of the following statements about electromagnetic radiation is accurate?
-
-A. Red light has a shorter wavelength and higher energy than blue light.
-B. All colors of visible light carry the same amount of energy per photon.
-C. Blue light has a shorter wavelength and higher energy per photon than red light.
-D. The energy of a photon is independent of its wavelength.
-
-Correct Answer: C
-
-Feedback: Correct. Photon energy is inversely proportional to wavelength (E = hc/lambda). Blue light (~450 nm) has shorter wavelength and higher energy than red light (~650 nm). Incorrect. Photon energy and wavelength are inversely related. Shorter wavelengths (blue/violet) carry more energy per photon than longer wavelengths (red).
-
----
-
-### Question 4
-
-An atom absorbs energy and one of its electrons moves from a lower energy level to a higher one. What happens when the electron returns to its original energy level?
-
-A. The atom absorbs another photon of equal energy.
-B. The electron emits a photon with energy equal to the difference between the two levels.
-C. The electron releases heat energy but no light.
-D. The atom splits into two smaller atoms, releasing nuclear energy.
-
-Correct Answer: B
-
-Feedback: Correct. When an excited electron drops to a lower energy level, the energy difference is emitted as a photon whose wavelength corresponds to that specific energy gap. Incorrect. Electron transitions to lower energy levels release energy as photons. The photon's energy exactly matches the energy difference between the two levels.
-
----
-
-### Question 5
-
-A scientist wants to identify an unknown metal sample. She heats the sample and observes its emission spectrum. Why is this method reliable for element identification?
-
-A. Every element melts at a unique temperature, which determines the color of light it emits.
-B. Each element has a unique set of electron energy levels, producing a characteristic pattern of spectral lines.
-C. Heavier elements always produce more spectral lines than lighter elements.
-D. The chemical bonds in each element vibrate at unique frequencies when heated.
-
-Correct Answer: B
-
-Feedback: Correct. Each element's electron configuration creates unique energy level spacings, producing a distinctive emission spectrum that acts as a chemical fingerprint. Incorrect. Emission spectra are unique because each element has a distinct set of quantized electron energy levels. This produces characteristic spectral line patterns regardless of the element's mass or melting point.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Element Type, Electron Energy Level, Oxidizer Strength, Combustion Temperature, Color Wavelength. Some components are external (Element Type, Oxidizer Strength) and some are internal (Electron Energy Level, Combustion Temperature, Color Wavelength). The student needs to understand what each component represents and how they are organized.
 
 A firework shell contains both strontium chloride (red) and copper chloride (blue). When detonated, the firework produces a purple color. Which explanation best accounts for this observation using the computational model?
 
@@ -985,11 +910,15 @@ D. The combined electron clouds of both metals create a new set of energy levels
 
 Correct Answer: B
 
-Feedback: Correct. Each metal retains its unique emission spectrum. The strontium emits red photons and the copper emits blue photons independently. The combination is perceived as purple through additive color mixing. Incorrect. Each metal's emission is determined by its own atomic structure. When both emit simultaneously, the human eye perceives the combined wavelengths as purple through additive color mixing.
+Feedback: Correct. Each metal retains its unique emission spectrum. The strontium emits red photons and the copper emits blue photons independently. The combination is perceived as purple through additive color mixing. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.1 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Element Type increases, Electron Energy Level increases; when Oxidizer Strength increases, Combustion Temperature increases. The student is trying to understand why these relationships are positive or negative.
 
 In the computational model, increasing the Oxidizer Strength to its maximum value causes the firework color to wash out toward white. Which of the following best explains this result?
 
@@ -1000,11 +929,15 @@ D. Maximum oxidizer causes all electrons to be stripped from the atoms, preventi
 
 Correct Answer: B
 
-Feedback: Correct. At very high combustion temperatures, the intense thermal (blackbody) radiation across all visible wavelengths overwhelms the discrete emission lines of the metal, producing white light. Incorrect. Extremely high temperatures produce intense blackbody radiation across all wavelengths. This continuous spectrum drowns out the discrete emission lines from the metal salt, washing the color toward white.
+Feedback: Correct. At very high combustion temperatures, the intense thermal (blackbody) radiation across all visible wavelengths overwhelms the discrete emission lines of the metal, producing white light. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Element Type increases, Electron Energy Level increases and when Oxidizer Strength increases, Combustion Temperature increases and when Electron Energy Level increases, Color Wavelength increases. The student changes one variable to see how the whole system responds.
 
 A student claims that the color of a firework is determined by the type of gunpowder used, not the metal salt. Based on the model, which evidence best refutes this claim?
 
@@ -1015,11 +948,15 @@ D. The model shows that gunpowder does not contain any electrons capable of emit
 
 Correct Answer: A
 
-Feedback: Correct. The model demonstrates that changing only the Element Type component (metal salt) while holding gunpowder constant produces different colors. This proves the color originates from the metal's electron transitions, not the explosive. Incorrect. The key evidence is that the same gunpowder produces different colors when paired with different metal salts. This isolates the metal as the source of the color, since its unique electron energy gaps determine the emitted wavelengths.
+Feedback: Correct. The model demonstrates that changing only the Element Type component (metal salt) while holding gunpowder constant produces different colors. This proves the color originates from the metal's electron transitions, not the explosive. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Astronomers use the same principles as firework chemistry to determine the composition of distant stars. Which model component most directly enables this astronomical application?
 
@@ -1030,11 +967,15 @@ D. Color Wavelength, because all stars emit the same wavelengths regardless of c
 
 Correct Answer: C
 
-Feedback: Correct. Each element produces a unique emission spectrum regardless of distance. Astronomers analyze starlight for these characteristic spectral lines to identify which elements are present in the star's atmosphere. Incorrect. The key principle is that each element produces a unique emission spectrum (spectral fingerprint) based on its electron energy levels. This spectrum is the same whether the element is in a firework or a star billions of light-years away.
+Feedback: Correct. Each element produces a unique emission spectrum regardless of distance. Astronomers analyze starlight for these characteristic spectral lines to identify which elements are present in the star's atmosphere. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Element Type, Oxidizer Strength), but they can take action on internal components (Electron Energy Level, Combustion Temperature, Color Wavelength). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, a pyrotechnician wants to produce the purest possible green firework. Which combination of component settings would the model predict will yield the best result?
 
@@ -1045,27 +986,18 @@ D. Any metal salt with maximum Combustion Temperature, since higher temperatures
 
 Correct Answer: B
 
-Feedback: Correct. Barium produces green emission (~525 nm). Moderate oxidizer provides enough energy to excite electrons without generating excessive blackbody radiation that would wash out the color purity. Incorrect. For pure color, the correct metal salt (barium for green) must be paired with moderate oxidizer strength. Too much oxidizer creates excessive blackbody radiation that drowns out the characteristic emission, reducing color purity.
+Feedback: Correct. Barium produces green emission (~525 nm). Moderate oxidizer provides enough energy to excite electrons without generating excessive blackbody radiation that would wash out the color purity. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.1, CCC2)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: A
-Question 4: C
-Question 5: B
-
----
 
 ## Resources
 

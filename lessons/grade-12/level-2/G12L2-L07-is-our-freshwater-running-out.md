@@ -946,86 +946,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Only 0.5% of Earth's total water is accessible freshwater. Which statement best explains why some regions face severe water scarcity despite Earth having abundant total water?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.5 + CCC2 (Cause and Effect)
 
-A. Water evaporates too quickly for humans to use it
-B. Most water is saltwater or frozen, and accessible freshwater is unevenly distributed, with many regions extracting groundwater faster than natural recharge
-C. Freshwater cannot be transported between regions
-D. All freshwater is polluted and unusable
-
-Correct Answer: B
-
-Feedback: Correct. Of Earth's total water, 97.5% is saltwater and most freshwater is locked in ice caps. The tiny fraction that is accessible is unevenly distributed geographically, and many regions pump groundwater far faster than the slow natural recharge process, depleting supplies that took millennia to accumulate. Incorrect. Water scarcity results from the combination of limited accessibility (only 0.5% is usable freshwater), uneven geographic distribution, and unsustainable extraction rates that deplete groundwater aquifers much faster than natural processes can recharge them.
-
----
-
-### Question 2
-
-Agriculture accounts for approximately 70% of global freshwater withdrawals. Which irrigation method is most responsible for water waste in agricultural systems?
-
-A. Drip irrigation, which delivers water directly to plant roots
-B. Flood irrigation, which loses 40-60% of water to evaporation and runoff
-C. Subsurface irrigation, which delivers water below the soil surface
-D. Precision irrigation guided by soil moisture sensors
-
-Correct Answer: B
-
-Feedback: Correct. Flood irrigation is extremely inefficient, losing 40-60% of water to evaporation and surface runoff before it reaches plant roots. Despite this waste, it remains the most common irrigation method globally because of its low technology requirements and initial cost. Incorrect. Flood irrigation is the most wasteful method, losing 40-60% of water to evaporation and runoff. In contrast, drip and precision irrigation systems deliver water directly to plant roots with 90-95% efficiency. Converting from flood to drip irrigation would dramatically reduce agricultural water demand.
-
----
-
-### Question 3
-
-An aquifer that took 10,000 years to fill is being depleted at a rate that will exhaust it in 50 years. Why is this considered effectively irreversible on human timescales?
-
-A. Modern pumping technology can refill the aquifer once it is depleted
-B. Natural recharge rates are measured in millimeters per year, meaning the aquifer would take thousands of years to recover, far beyond any human planning horizon
-C. Artificial recharge can instantly replace depleted groundwater
-D. Rain will automatically refill the aquifer within 5-10 years of pumping cessation
-
-Correct Answer: B
-
-Feedback: Correct. Natural groundwater recharge occurs through slow percolation at rates of millimeters to centimeters per year. An aquifer depleted in decades would require thousands of years to refill naturally. This timescale mismatch makes aquifer depletion effectively permanent for any practical planning purpose. Incorrect. The key is the timescale mismatch between extraction and recharge. Water percolates into aquifers at millimeters per year through natural geological processes. Depleting in 50 years what took 10,000 years to accumulate means recovery would require millennia, making it irreversible for all practical purposes.
-
----
-
-### Question 4
-
-Climate change is projected to make wet regions wetter and dry regions drier. How does this pattern affect global water security?
-
-A. It improves water security by increasing total global precipitation
-B. It worsens water insecurity by concentrating precipitation in already water-rich areas while further reducing it in water-stressed regions that most need it
-C. It has no effect because water can be easily redistributed between regions
-D. It eliminates water scarcity by increasing evaporation and cloud formation
-
-Correct Answer: B
-
-Feedback: Correct. Climate change intensifies the existing geographic inequality of water distribution. Regions already experiencing water stress receive less precipitation, while water-rich regions get more. This amplifies existing scarcity where it is most dangerous, threatening agriculture and populations in arid regions. Incorrect. The pattern of wet-gets-wetter, dry-gets-drier amplifies existing geographic inequality. Regions already facing water stress become drier while water-rich areas receive more precipitation. This spatial mismatch worsens water insecurity where it matters most, particularly in agricultural regions dependent on irrigation.
-
----
-
-### Question 5
-
-Desalination can theoretically provide unlimited freshwater from the ocean. What are the primary limitations that prevent desalination from solving the global water crisis?
-
-A. Desalination technology does not yet exist at any scale
-B. High energy requirements (3-10 kWh per cubic meter), concentrated brine waste, and costs 3-5 times higher than conventional freshwater make it impractical for large-scale agricultural use
-C. Desalinated water is unsafe for human consumption
-D. There is not enough ocean water to meet freshwater demand through desalination
-
-Correct Answer: B
-
-Feedback: Correct. Desalination is technologically feasible but limited by high energy costs, environmental damage from brine waste discharge, and economics that make it 3-5 times more expensive than conventional freshwater. These constraints make it viable for urban drinking water but impractical for the massive volumes needed in agriculture. Incorrect. Desalination technology works but faces practical constraints. Its high energy requirement makes it expensive, concentrated brine waste damages marine ecosystems, and costs 3-5 times higher than conventional sources make it unsuitable for the agricultural sector, which consumes 70% of freshwater.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Precipitation Rate, Population and Agricultural Demand, Surface Water Availability, Groundwater Level, Water Recycling and Efficiency, Ecosystem Water Requirements, Water Quality Index. Some components are external (Precipitation Rate, Population and Agricultural Demand) and some are internal (Surface Water Availability, Groundwater Level, Water Recycling and Efficiency, Ecosystem Water Requirements, Water Quality Index). The student needs to understand what each component represents and how they are organized.
 
 A student's water system model shows that increasing demand by 30% causes groundwater levels to accelerate their decline non-linearly. What explains this acceleration rather than a proportional increase in depletion rate?
 
@@ -1036,11 +961,15 @@ D. Surface water compensates for groundwater loss, hiding the true rate
 
 Correct Answer: B
 
-Feedback: Correct. Groundwater depletion involves positive feedback. As levels drop, recharge pathways shorten, reducing natural replenishment. Deeper pumping accesses less permeable zones with lower yields. The aquifer's ability to sustain extraction decreases as it depletes, accelerating the decline beyond the proportional increase in demand. Incorrect. The non-linear acceleration results from feedback dynamics in the groundwater system. As aquifer levels decline, recharge rates decrease, pumping efficiency drops, and land subsidence can permanently reduce storage capacity. These feedbacks compound the direct effect of increased extraction.
+Feedback: Correct. Groundwater depletion involves positive feedback. As levels drop, recharge pathways shorten, reducing natural replenishment. Deeper pumping accesses less permeable zones with lower yields. The aquifer's ability to sustain extraction decreases as it depletes, accelerating the decline beyond the proportional increase in demand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.5 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Precipitation Rate increases, Surface Water Availability increases; when Precipitation Rate increases, Groundwater Level increases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that a 20% precipitation decline causes water crisis faster than a 30% demand increase. What does this comparison reveal about the water system?
 
@@ -1051,11 +980,15 @@ D. The 20% and 30% numbers are not comparable because they measure different thi
 
 Correct Answer: B
 
-Feedback: Correct. Precipitation decline acts as a supply shock that affects every component simultaneously: rivers drop, reservoir storage decreases, groundwater recharge slows, soil moisture falls, and ecosystem water needs go unmet. Demand increases only affect the extraction side, leaving natural recharge intact. Incorrect. Precipitation decline is more destabilizing because it reduces the fundamental input to the entire water system. Every component suffers simultaneously: surface flows, groundwater recharge, soil moisture, and ecosystem water. Demand increases only accelerate withdrawal without affecting the supply side.
+Feedback: Correct. Precipitation decline acts as a supply shock that affects every component simultaneously: rivers drop, reservoir storage decreases, groundwater recharge slows, soil moisture falls, and ecosystem water needs go unmet. Demand increases only affect the extraction side, leaving natural recharge intact. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Precipitation Rate increases, Surface Water Availability increases and when Precipitation Rate increases, Groundwater Level increases and when Population and Agricultural Demand increases, Groundwater Level decreases. The student changes one variable to see how the whole system responds.
 
 A student models a conservation strategy with 40% efficiency improvements and active water recycling. The model shows this can offset 30% demand growth but cannot restore depleted groundwater. What does this finding demonstrate about water system management?
 
@@ -1066,11 +999,15 @@ D. Recycling produces water of lower quality that cannot substitute for freshwat
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that efficiency gains can manage future demand growth but cannot undo historical overextraction. In regions where aquifers are already depleted beyond recovery, conservation must be paired with structural reforms: changing crop types, reducing irrigated acreage, or developing alternative water sources. Incorrect. Efficiency improvements are valuable for managing growth but cannot reverse existing depletion. The model shows that in overdrafted regions, demand management alone is insufficient. Structural changes to agricultural practices, water rights allocation, and alternative supply development are required to achieve sustainability.
+Feedback: Correct. The model reveals that efficiency gains can manage future demand growth but cannot undo historical overextraction. In regions where aquifers are already depleted beyond recovery, conservation must be paired with structural reforms: changing crop types, reducing irrigated acreage, or developing alternative water sources. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that ignoring ecosystem water requirements to meet human demand ultimately reduces total usable water. Which mechanism explains this counterintuitive finding?
 
@@ -1081,11 +1018,15 @@ D. Ecosystems transport water from dry regions to wet regions
 
 Correct Answer: B
 
-Feedback: Correct. Ecosystems provide essential water services: wetlands filter pollutants, riparian vegetation prevents erosion, forest soils enhance infiltration and groundwater recharge, and healthy watersheds regulate flow. Depriving ecosystems of water degrades these services, ultimately reducing the quantity and quality of water available for human use. Incorrect. The counterintuitive finding reflects the water-provisioning role of ecosystems. Wetlands purify water, vegetation controls erosion, forests enhance groundwater recharge, and healthy watersheds regulate flow timing. When these ecosystem functions are degraded by water diversion, total water availability and quality decline.
+Feedback: Correct. Ecosystems provide essential water services: wetlands filter pollutants, riparian vegetation prevents erosion, forest soils enhance infiltration and groundwater recharge, and healthy watersheds regulate flow. Depriving ecosystems of water degrades these services, ultimately reducing the quantity and quality of water available for human use. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Precipitation Rate, Population and Agricultural Demand), but they can take action on internal components (Surface Water Availability, Groundwater Level, Water Recycling and Efficiency, Ecosystem Water Requirements, Water Quality Index). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, a water manager must advise a semi-arid agricultural region facing both population growth and climate-driven precipitation decline. Which recommendation is most strongly supported by the model evidence?
 
@@ -1096,27 +1037,18 @@ D. Build a single large desalination plant to replace all groundwater use
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that no single intervention is sufficient. The comprehensive strategy addresses demand (efficiency, crop transitions), supply (managed recharge), and governance (extraction limits). This multi-pronged approach is the only pathway that achieves long-term groundwater stability. Incorrect. Model evidence clearly supports a comprehensive approach. Efficiency gains alone are insufficient, drilling deeper accelerates depletion, desalination is too expensive for agriculture, and abandoning agriculture is socioeconomically catastrophic. Only the combination of demand reduction, supply enhancement, and governance reform can achieve sustainability.
+Feedback: Correct. The model shows that no single intervention is sufficient. The comprehensive strategy addresses demand (efficiency, crop transitions), supply (managed recharge), and governance (extraction limits). This multi-pronged approach is the only pathway that achieves long-term groundwater stability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.5, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.5, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.5, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

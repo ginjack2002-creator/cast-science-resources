@@ -868,77 +868,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Can water break apart solid rock?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
 
-A. No, water is too soft to break anything hard
-B. Yes, but only if the water is boiling hot
-C. Yes, flowing water can slowly wear away even the hardest rock over time
-D. No, only earthquakes can break rocks
-
-Correct Answer: C
-
-Feedback: That is right! Even though water seems soft, flowing water can carry sand and small rocks that grind against larger rocks. Over millions of years, water can carve through mountains. Water is more powerful than it seems! Flowing water carries sand and pebbles that grind away rock like sandpaper. Given enough time, water can wear away even the hardest rock.
-
----
-
-### Question 2
-
-What is erosion?
-
-A. When rocks get bigger over time
-B. When broken rock and soil are moved from one place to another by water, wind, or ice
-C. When animals dig holes in the ground
-D. When the Earth shakes during an earthquake
-
-Correct Answer: B
-
-Feedback: Correct! Erosion is the movement of broken rock and soil from one place to another by natural forces like water, wind, or ice. Erosion is the process of broken rock and soil being carried away from one place to another. Water, wind, and ice are the main forces that cause erosion.
-
----
-
-### Question 3
-
-How was the Grand Canyon formed?
-
-A. People dug it with shovels a long time ago
-B. An earthquake cracked the ground open all at once
-C. A river slowly carved through the rock over millions of years
-D. A volcano blew a hole in the ground
-
-Correct Answer: C
-
-Feedback: Right! The Colorado River carved the Grand Canyon over about 5 to 6 million years. Flowing water slowly wore away layer after layer of rock. The Grand Canyon was not created by a sudden event. The Colorado River slowly carved through the rock over millions of years, cutting deeper and deeper.
-
----
-
-### Question 4
-
-What is the difference between weathering and erosion?
-
-A. They are the same thing
-B. Weathering breaks rock apart, erosion moves the broken pieces away
-C. Weathering is caused by rain and erosion is caused by wind
-D. Weathering only happens to old rocks and erosion only happens to new rocks
-
-Correct Answer: B
-
-Feedback: Exactly! Weathering is the breaking apart of rock. Erosion is the movement of that broken material to a new location. Weathering happens first, then erosion carries the pieces away. Weathering and erosion are related but different. Weathering is the breaking down of rock into smaller pieces. Erosion is the movement of those broken pieces to a new place.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Water Flow Speed, Rock Hardness, Erosion Rate. Some components are external (Water Flow Speed, Rock Hardness) and some are internal (Erosion Rate). The student needs to understand what each component represents and how they are organized.
 
 In the erosion model, Water Flow Speed and Rock Hardness are external components. What is the relationship between Water Flow Speed and Erosion Rate?
 
@@ -949,11 +889,15 @@ D. It depends on what day of the week it is
 
 Correct Answer: B
 
-Feedback: Right! The relationship is positive. Faster water has more energy and can break apart and carry away more rock. When water flow speed goes up, erosion rate goes up. Faster water carries more energy and more force. The model shows a positive relationship: when water flow speed increases, the erosion rate also increases.
+Feedback: Right! The relationship is positive. Faster water has more energy and can break apart and carry away more rock. When water flow speed goes up, erosion rate goes up. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Water Flow Speed increases, Erosion Rate increases; when Rock Hardness increases, Erosion Rate decreases. The student is trying to understand why these relationships are positive or negative.
 
 What is the relationship between Rock Hardness and Erosion Rate?
 
@@ -964,11 +908,15 @@ D. Positive: all rocks erode at the same speed
 
 Correct Answer: B
 
-Feedback: Correct! The relationship is negative. Harder rock is more resistant to erosion, so it erodes more slowly. When rock hardness goes up, erosion rate goes down. This is a negative relationship. Harder rock is more resistant to being broken apart. When rock hardness increases, erosion rate decreases.
+Feedback: Correct! The relationship is negative. Harder rock is more resistant to erosion, so it erodes more slowly. When rock hardness goes up, erosion rate goes down. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Water Flow Speed increases, Erosion Rate increases and when Rock Hardness increases, Erosion Rate decreases. The student changes one variable to see how the whole system responds.
 
 A gentle stream flows over very soft rock for millions of years. What does the model predict will happen?
 
@@ -979,11 +927,15 @@ D. The stream will dry up before any erosion happens
 
 Correct Answer: C
 
-Feedback: That is right! Even slow-moving water can erode soft rock over long periods of time. The model shows that soft rock plus any flowing water leads to erosion. Given millions of years, even gentle streams can carve canyons. The model shows that even slow water erodes soft rock. Given enough time, even a gentle stream can carve a significant canyon through soft rock.
+Feedback: That is right! Even slow-moving water can erode soft rock over long periods of time. The model shows that soft rock plus any flowing water leads to erosion. Given millions of years, even gentle streams can carve canyons. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An engineer wants to protect a riverbank from erosion. Based on the model, which approach would work best?
 
@@ -994,25 +946,37 @@ D. Make the riverbank out of softer materials so the water flows smoothly
 
 Correct Answer: B
 
-Feedback: Exactly! The model shows two ways to reduce erosion: slow down the water (reduce water flow speed) and increase the hardness of the bank material. Placing rocks along the bank does both. The model shows that slower water and harder rock both reduce erosion. So slowing the water AND adding hard materials to the bank is the best engineering solution.
+Feedback: Exactly! The model shows two ways to reduce erosion: slow down the water (reduce water flow speed) and increase the hardness of the bank material. Placing rocks along the bank does both. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Water Flow Speed, Rock Hardness), but they can take action on internal components (Erosion Rate). They need to decide which action would be most effective based on what the model shows.
+
+Can water break apart solid rock?
+
+A. No, water is too soft to break anything hard
+B. Yes, but only if the water is boiling hot
+C. Yes, flowing water can slowly wear away even the hardest rock over time
+D. No, only earthquakes can break rocks
+
+Correct Answer: C
+
+Feedback: That is right! Even though water seems soft, flowing water can carry sand and small rocks that grind against larger rocks. Over millions of years, water can carve through mountains. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

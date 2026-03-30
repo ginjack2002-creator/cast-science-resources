@@ -730,73 +730,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is inside a seed?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
 
-A. Nothing, it is empty
-B. A tiny baby plant
-C. Just dirt
-
-Correct Answer: B
-
-Feedback: Yes! Inside every seed is a tiny baby plant waiting to grow. A seed is like a tiny package. Inside is a baby plant and a bit of food to help it start growing.
-
----
-
-### Question 2
-
-What do seeds need to start growing?
-
-A. Water and sunlight
-B. Candy and toys
-C. Music and paint
-
-Correct Answer: A
-
-Feedback: That is right! Seeds need water and sunlight to start growing. Seeds need real things from nature, like water, sunlight, and soil, to start growing into plants.
-
----
-
-### Question 3
-
-What happens if you never water a seed?
-
-A. It grows really fast
-B. It does not grow at all
-C. It turns into a rock
-
-Correct Answer: B
-
-Feedback: Yes! Without water, a seed will not grow. It will just sit there in the soil. Seeds need water to wake up and start growing. Without water, nothing happens.
-
----
-
-### Question 4
-
-Are seeds alive?
-
-A. No, seeds are like tiny rocks
-B. Yes, seeds are alive but sleeping
-C. Only big seeds are alive
-
-Correct Answer: B
-
-Feedback: That is right! Seeds are alive, just waiting for water and warmth to start growing. Seeds are alive. They are like sleeping baby plants waiting for the right conditions to wake up.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Water Amount, Plant Growth. Some components are external (Water Amount) and some are internal (Plant Growth). The student needs to understand what each component represents and how they are organized.
 
 What is it called when a baby plant first pushes out of the seed?
 
@@ -806,11 +750,15 @@ C. Sleeping
 
 Correct Answer: B
 
-Feedback: Yes! When the baby plant first pokes out of the seed, we call it sprouting. Sprouting is when the baby plant inside the seed pushes up through the soil for the first time.
+Feedback: Yes! When the baby plant first pokes out of the seed, we call it sprouting. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Water Amount increases, Plant Growth increases. The student is trying to understand why these relationships are positive or negative.
 
 When water amount goes UP, what happens to plant growth?
 
@@ -820,11 +768,15 @@ C. Plant growth goes up
 
 Correct Answer: C
 
-Feedback: That is right! When plants get the right amount of water, they grow taller and healthier. Water helps plants grow. More water (up to a point) means better plant growth.
+Feedback: That is right! When plants get the right amount of water, they grow taller and healthier. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Water Amount increases, Plant Growth increases. The student changes one variable to see how the whole system responds.
 
 What is the correct order of plant growth?
 
@@ -834,11 +786,15 @@ C. Big plant, small plant, seed, sprout
 
 Correct Answer: B
 
-Feedback: Yes! A plant starts as a seed, then sprouts, grows into a small plant, and becomes a big plant. Plants grow in order: first a seed, then a sprout, then a small plant, and finally a big plant with leaves or flowers.
+Feedback: Yes! A plant starts as a seed, then sprouts, grows into a small plant, and becomes a big plant. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 You planted two seeds. You watered one every day and never watered the other. What will happen?
 
@@ -848,25 +804,36 @@ C. The dry seed will grow faster
 
 Correct Answer: B
 
-Feedback: Yes! The watered seed will sprout and grow. The dry seed will stay the same because it needs water to grow. Seeds need water to grow. The watered seed will sprout and grow, while the dry seed will not change.
+Feedback: Yes! The watered seed will sprout and grow. The dry seed will stay the same because it needs water to grow. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Water Amount), but they can take action on internal components (Plant Growth). They need to decide which action would be most effective based on what the model shows.
+
+What is inside a seed?
+
+A. Nothing, it is empty
+B. A tiny baby plant
+C. Just dirt
+
+Correct Answer: B
+
+Feedback: Yes! Inside every seed is a tiny baby plant waiting to grow. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

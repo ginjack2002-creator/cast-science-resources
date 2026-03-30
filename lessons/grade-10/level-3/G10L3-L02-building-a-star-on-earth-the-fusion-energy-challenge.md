@@ -908,86 +908,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Nuclear fusion combines light atomic nuclei to form heavier ones. What is the fundamental physical difference between fusion and fission that makes fusion potentially cleaner?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.1 + CCC5 (Energy and Matter)
 
-A. Fusion uses renewable fuel while fission uses non-renewable fuel
-B. Fusion produces helium and neutrons with no long-lived radioactive actinides, while fission produces heavy radioactive isotopes that remain dangerous for thousands of years
-C. Fusion reactions produce no radiation of any kind
-D. Fission requires higher temperatures than fusion
-
-Correct Answer: B
-
-Feedback: Correct. Fusion of deuterium and tritium produces helium-4 and a neutron. While fusion-activated structural materials are radioactive for 50-100 years, fission produces actinides like plutonium-239 (half-life 24,000 years) that remain hazardous for hundreds of thousands of years. Compare the products of each reaction. Fission splits heavy nuclei into lighter but still radioactive fragments. Fusion combines light nuclei into helium. Consider which products are more problematic long-term.
-
----
-
-### Question 2
-
-Fusion fuel (plasma) must reach 150 million degrees Celsius, yet the superconducting magnets confining it must operate near -250 degrees Celsius. What engineering challenge does this extreme temperature contrast create?
-
-A. The magnets melt from the plasma heat, requiring frequent replacement
-B. Thermal management systems must maintain a 150-million-degree temperature gradient across just a few meters while preventing any heat transfer between systems
-C. The cold magnets extinguish the plasma through heat absorption
-D. No engineering challenge exists because vacuum insulation perfectly separates the two
-
-Correct Answer: B
-
-Feedback: Correct. Maintaining the most extreme temperature gradient engineered by humans — from 150 million degrees Celsius to nearly absolute zero across a few meters — requires extraordinary thermal isolation, cryogenic cooling systems, and radiation shielding, all operating simultaneously and continuously. Consider the practical challenge of having the hottest and nearly the coldest temperatures on Earth within meters of each other inside the same machine. Heat naturally flows from hot to cold, and preventing that flow is an enormous engineering task.
-
----
-
-### Question 3
-
-The Lawson criterion states that fusion requires the simultaneous achievement of sufficient temperature, density, and confinement time. Why can these requirements not be met one at a time?
-
-A. Each parameter is independent and can be optimized separately
-B. The fusion reaction rate depends on the product of all three — if any one is too low, the reaction rate drops below the threshold for net energy regardless of the others
-C. Scientists have not tried optimizing them separately yet
-D. The Lawson criterion is a theoretical concept that does not apply to real reactors
-
-Correct Answer: B
-
-Feedback: Correct. The Lawson criterion is expressed as the triple product n*T*tau, where all three must simultaneously exceed a threshold. Extremely high temperature with low density or short confinement time yields insufficient fusion reactions for net energy gain. The Lawson criterion is a product (multiplication) of three variables. What happens to a product when one factor is very small, even if the others are very large?
-
----
-
-### Question 4
-
-Every deuterium-tritium fusion reaction produces both 17.6 MeV of energy and a 14.1 MeV neutron. Why does this create a fundamental engineering tension?
-
-A. The neutron carries away energy that could otherwise be used for electricity
-B. Neutrons are impossible to detect so engineers cannot track them
-C. Each energy-producing reaction simultaneously damages the reactor structure through neutron bombardment, coupling energy output with material degradation
-D. Neutrons trigger additional unwanted fusion reactions in the reactor walls
-
-Correct Answer: C
-
-Feedback: Correct. This is the cruel paradox of fusion: the same nuclear reaction that produces useful energy also produces a high-energy neutron that damages reactor walls. More energy output means more material damage, creating a direct trade-off between power production and reactor lifespan. Consider that the neutron from each reaction does not simply disappear — it escapes the magnetic confinement (neutrons are uncharged) and strikes the reactor wall materials at extremely high velocity.
-
----
-
-### Question 5
-
-Magnetic confinement fusion uses powerful magnets to suspend plasma away from reactor walls. What would happen if the magnetic field weakened by 20% during operation?
-
-A. The fusion reaction would become 20% more efficient due to lower energy consumption by magnets
-B. The plasma would expand, contact the reactor walls, cool instantly, and fusion would stop while potentially damaging wall materials
-C. Nothing would change because the plasma is self-confining at fusion temperatures
-D. The weakened field would cause a nuclear explosion similar to a hydrogen bomb
-
-Correct Answer: B
-
-Feedback: Correct. Magnetic confinement creates a magnetic bottle that prevents 150-million-degree plasma from touching physical walls. If the field weakens, the plasma drifts outward, contacts the wall, and cools in milliseconds — stopping fusion and potentially melting or eroding wall materials. No explosion occurs because fusion requires extreme conditions to sustain. Remember that no physical material can survive contact with 150-million-degree plasma. The magnetic field is the only barrier keeping the plasma suspended. What happens when that barrier weakens?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plasma Temperature, Magnetic Containment, Fuel Injection Rate, Energy Output, Neutron Damage, Cooling System, Power Conversion, Materials Degradation, Net Energy Gain. Some components are external (Plasma Temperature, Magnetic Containment, Fuel Injection Rate) and some are internal (Energy Output, Neutron Damage, Cooling System, Power Conversion, Materials Degradation, Net Energy Gain). The student needs to understand what each component represents and how they are organized.
 
 In the computational model, a student increases Plasma Temperature to maximum while keeping Magnetic Containment at moderate levels. The model shows Energy Output initially rising but then Net Energy Gain declining. What best explains this result?
 
@@ -998,11 +923,15 @@ D. Net Energy Gain always increases with temperature because more fusion reactio
 
 Correct Answer: B
 
-Feedback: Correct. This reveals the optimization challenge in fusion: pushing temperature higher increases fusion output but also increases the energy cost of containment, cooling, and managing instabilities. Net energy gain is maximized at a specific operating point, not at maximum temperature. Consider that Energy Output and Net Energy Gain are different variables. Net Energy Gain subtracts all input energy (heating, magnets, cooling) from output energy. What happens to input costs as temperature increases?
+Feedback: Correct. This reveals the optimization challenge in fusion: pushing temperature higher increases fusion output but also increases the energy cost of containment, cooling, and managing instabilities. Net energy gain is maximized at a specific operating point, not at maximum temperature. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Plasma Temperature increases, Energy Output increases; when Energy Output increases, Neutron Damage increases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows three relationships: Plasma Temperature positively affects Energy Output, Energy Output positively affects Neutron Damage, and Neutron Damage positively affects Materials Degradation. What type of systemic pattern does this represent?
 
@@ -1013,11 +942,15 @@ D. A random correlation with no causal mechanism
 
 Correct Answer: C
 
-Feedback: Correct. This is a feedforward cascade — a causal chain where increasing the input to get more desired output automatically increases undesired consequences downstream. In fusion, you cannot increase energy production without increasing neutron-induced material damage. Trace the causal chain: higher temperature causes more energy output, which causes more neutrons, which causes more material damage. Is this cycle self-correcting (negative feedback) or does it represent a one-directional cascade?
+Feedback: Correct. This is a feedforward cascade — a causal chain where increasing the input to get more desired output automatically increases undesired consequences downstream. In fusion, you cannot increase energy production without increasing neutron-induced material damage. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.1 + CCC5 (Energy and Matter)
+
+A student runs a simulation of the model. The model shows that when Plasma Temperature increases, Energy Output increases and when Energy Output increases, Neutron Damage increases and when Neutron Damage increases, Materials Degradation increases. The student changes one variable to see how the whole system responds.
 
 ITER is designed to achieve Q=10, meaning it produces 10 times more fusion energy than the heating energy input. Why is Q=10 a more meaningful milestone than Q=1?
 
@@ -1028,11 +961,15 @@ D. There is no practical difference between Q=1 and Q=10
 
 Correct Answer: B
 
-Feedback: Correct. Q measures only fusion energy output versus heating energy input. But a reactor also needs energy for magnets, cooling, tritium breeding, and facility operations. Q=1 means fusion output equals heating input — there is nothing left for everything else. Q=10 provides sufficient surplus to cover all auxiliary systems and deliver net electricity. Consider that Q only compares fusion energy to heating energy. A reactor has many other energy-consuming systems (magnets, cooling, control systems). How much surplus is needed to cover all of those AND deliver useful electricity?
+Feedback: Correct. Q measures only fusion energy output versus heating energy input. But a reactor also needs energy for magnets, cooling, tritium breeding, and facility operations. Q=1 means fusion output equals heating input — there is nothing left for everything else. Q=10 provides sufficient surplus to cover all auxiliary systems and deliver net electricity. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student claims that discovering a material immune to neutron damage would solve all remaining fusion challenges. Using the model, which response best evaluates this claim?
 
@@ -1043,11 +980,15 @@ D. The claim is correct because neutron damage is the only variable connected to
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that materials degradation is ONE of several major constraints. Solving it would be transformative — allowing longer reactor lifetimes and higher operating parameters. But plasma instabilities, tritium breeding sufficiency, and the overall energy balance remain challenges that materials alone do not address. Look at all the variables in the model. Materials Degradation is connected to reactor lifetime, but are there other variables (plasma stability, fuel supply, energy balance) that represent independent challenges?
+Feedback: Correct. The model shows that materials degradation is ONE of several major constraints. Solving it would be transformative — allowing longer reactor lifetimes and higher operating parameters. But plasma instabilities, tritium breeding sufficiency, and the overall energy balance remain challenges that materials alone do not address. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Plasma Temperature, Magnetic Containment, Fuel Injection Rate), but they can take action on internal components (Energy Output, Neutron Damage, Cooling System, Power Conversion, Materials Degradation, Net Energy Gain). They need to decide which action would be most effective based on what the model shows.
 
 The model uses nine components to represent a fusion reactor system. A critic argues that a real tokamak has thousands of interacting subsystems. What is the most scientifically valid defense of the simplified model?
 
@@ -1058,27 +999,18 @@ D. The critic is wrong because fusion reactors are simple enough to model with n
 
 Correct Answer: B
 
-Feedback: Correct. Scientific models are deliberately simplified to reveal essential dynamics. The nine-component model captures the fundamental trade-offs — energy output coupled with material damage, temperature requirements versus confinement stability — that determine system behavior at the highest level, even though it cannot predict every subsystem interaction. Consider the purpose of a model in science. Models are not meant to be perfect replicas of reality. They are simplifications that highlight the most important relationships. What essential dynamics does this model successfully capture?
+Feedback: Correct. Scientific models are deliberately simplified to reveal essential dynamics. The nine-component model captures the fundamental trade-offs — energy output coupled with material damage, temperature requirements versus confinement stability — that determine system behavior at the highest level, even though it cannot predict every subsystem interaction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC5)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC5)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

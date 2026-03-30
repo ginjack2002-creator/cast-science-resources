@@ -907,86 +907,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Two identical buildings experience the same earthquake. Building A is rigidly connected to its foundation. Building B sits on flexible rubber-steel bearings (base isolation). Which building experiences greater floor acceleration, and why?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.2 + CCC4 (Systems and System Models)
 
-A. Building B, because the flexible bearings amplify ground motion like a trampoline
-B. Building A, because the rigid connection transmits 100% of ground acceleration directly to the structure, while base isolation decouples the building from ground motion
-C. Both experience identical acceleration because they have the same mass
-D. Neither experiences significant acceleration because modern buildings are earthquake-proof
-
-Correct Answer: B
-
-Feedback: Correct. Base isolation works by decoupling the building from ground motion. The flexible bearings absorb and spread seismic energy over a longer period, reducing the peak acceleration transmitted to the structure by 50-80%. The rigid building transmits every ground acceleration directly. Consider what happens when you shake a table with a cup glued to it versus a cup sitting on a rubber pad. Which cup experiences more force from the shaking?
-
----
-
-### Question 2
-
-In the 1985 Mexico City earthquake, buildings of 8-15 stories collapsed while shorter and taller buildings survived. What physical phenomenon best explains this selective destruction?
-
-A. Buildings of 8-15 stories were built with weaker materials
-B. The earthquake's dominant wave frequency matched the natural oscillation period of 8-15 story buildings, causing resonance amplification that multiplied forces by 5-10 times
-C. Only 8-15 story buildings were occupied at the time of the earthquake
-D. Taller buildings have deeper foundations that protected them from ground motion
-
-Correct Answer: B
-
-Feedback: Correct. Resonance occurs when external forcing frequency matches a structure's natural frequency. Medium-rise buildings (8-15 stories) have natural periods of approximately 1-2 seconds, which matched the 2-second dominant period of the Mexico City earthquake. This amplified ground motion 5-10 times, causing selective destruction. Consider why ONLY buildings of a certain height range were destroyed. What physical property changes with building height, and how could matching with earthquake characteristics cause amplified damage?
-
----
-
-### Question 3
-
-A tuned mass damper is a heavy pendulum mounted near the top of a skyscraper. During an earthquake, the damper swings opposite to the building's motion. What physical principle explains how this reduces damage?
-
-A. The damper's weight prevents the building from moving at all
-B. The damper absorbs kinetic energy from the building's oscillation and converts it to heat through friction, reducing the amplitude of building motion by 30-50%
-C. The damper pushes the building back to vertical using stored gravitational energy
-D. The damper is primarily decorative and has minimal structural benefit
-
-Correct Answer: B
-
-Feedback: Correct. The tuned mass damper acts as an energy sink. When the building sways right, the damper swings left, absorbing kinetic energy through friction and viscous resistance. This energy is converted to heat rather than continuing to build up in the structure. Taipei 101's 730-ton damper reduces sway by approximately 40%. Think about energy conservation: the earthquake pumps kinetic energy into the building. Where does that energy go? The damper provides a mechanism to remove energy from the building's oscillation.
-
----
-
-### Question 4
-
-Newton's second law states F = ma. During an earthquake, a 200,000-ton skyscraper experiences a floor acceleration of 0.5g. What is the approximate lateral force on the structure?
-
-A. 100,000 newtons
-B. 1 million newtons (1 MN)
-C. Approximately 980 million newtons (980 MN) — almost 1 billion newtons
-D. The force cannot be calculated without knowing the building height
-
-Correct Answer: C
-
-Feedback: Correct. F = ma = 200,000,000 kg x 0.5 x 9.8 m/s^2 = 980,000,000 N = 980 MN. This enormous force — nearly 1 billion newtons — demonstrates why seismic engineering focuses on reducing acceleration (through base isolation and damping) rather than just strengthening structures. Apply F = ma directly. Convert 200,000 metric tons to kilograms (multiply by 1,000,000). Multiply by 0.5g (where g = 9.8 m/s^2).
-
----
-
-### Question 5
-
-Modern earthquake engineering designs buildings for 'life safety' rather than 'zero damage.' What engineering principle justifies this approach?
-
-A. Engineers do not know how to build damage-free structures
-B. Designing for zero damage in the maximum credible earthquake would be prohibitively expensive, so buildings are designed to sustain controlled structural damage that protects occupants while potentially sacrificing the building itself
-C. All earthquake damage can be repaired after the event, so prevention is unnecessary
-D. Life safety and zero damage require the same engineering approach
-
-Correct Answer: B
-
-Feedback: Correct. This is performance-based design: the building absorbs seismic energy through planned damage in designated structural members (like sacrificial fuses) while maintaining enough integrity for safe evacuation. The building may be demolished afterward, but no one dies. This philosophy optimizes cost versus safety. Consider the cost-benefit analysis. Designing for the absolute worst-case earthquake with zero damage would require enormous structural capacity. Is it more practical to accept some damage while ensuring the building does not collapse?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Seismic Wave Intensity, Building Mass, Damper Effectiveness, Foundation Flexibility, Resonance Frequency, Material Strength, Floor Acceleration, Evacuation Time, Damage Index. Some components are external (Seismic Wave Intensity, Foundation Flexibility) and some are internal (Building Mass, Damper Effectiveness, Resonance Frequency, Material Strength, Floor Acceleration, Evacuation Time, Damage Index). The student needs to understand what each component represents and how they are organized.
 
 The model shows Building A (natural period 3.0 seconds) in an earthquake with a dominant period of 3.1 seconds. Building B (natural period 1.2 seconds) is in the same earthquake. The model predicts Building A's Damage Index is 5 times higher. What variable drives this difference?
 
@@ -997,11 +922,15 @@ D. The earthquake hits Building B with less intensity because it is shorter
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that resonance is the primary determinant of damage, not building height or material strength. Building A's 3.0-second period nearly matches the earthquake's 3.1-second period, causing amplification. Building B's 1.2-second period is far from resonance, so it experiences the earthquake at its actual intensity. Look at the relationship between each building's natural period and the earthquake's dominant period. When do forces amplify? When the frequencies are close to matching, or when they are far apart?
+Feedback: Correct. The model demonstrates that resonance is the primary determinant of damage, not building height or material strength. Building A's 3.0-second period nearly matches the earthquake's 3.1-second period, causing amplification. Building B's 1.2-second period is far from resonance, so it experiences the earthquake at its actual intensity. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Seismic Wave Intensity increases, Floor Acceleration increases; when Resonance Frequency increases, Floor Acceleration increases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, a student increases Material Strength by 50% while keeping all other variables the same, including resonance risk. The Damage Index decreases by only 10%. What does this disproportionate response reveal?
 
@@ -1012,11 +941,15 @@ D. Material Strength has no relationship to Damage Index in the model
 
 Correct Answer: C
 
-Feedback: Correct. This is a key model insight: strength alone cannot overcome resonance amplification. If an earthquake at resonance multiplies forces by 5-10x, a 50% stronger structure still fails under those amplified forces. The model shows that avoiding resonance (through base isolation or period-shifting) reduces damage far more effectively than adding strength. Consider the magnitude of resonance amplification (5-10x) versus the material improvement (1.5x). If forces are multiplied by 7 through resonance, does making the structure 1.5 times stronger prevent failure?
+Feedback: Correct. This is a key model insight: strength alone cannot overcome resonance amplification. If an earthquake at resonance multiplies forces by 5-10x, a 50% stronger structure still fails under those amplified forces. The model shows that avoiding resonance (through base isolation or period-shifting) reduces damage far more effectively than adding strength. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.2 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Seismic Wave Intensity increases, Floor Acceleration increases and when Resonance Frequency increases, Floor Acceleration increases and when Floor Acceleration increases, Damage Index increases. The student changes one variable to see how the whole system responds.
 
 The model classifies Seismic Wave Intensity and Foundation Flexibility as external variables. A student argues that Building Mass should also be external because it is set during design. What is the best evaluation of this argument?
 
@@ -1027,11 +960,15 @@ D. The classification makes no difference to model behavior
 
 Correct Answer: B
 
-Feedback: Correct. The distinction is nuanced: external variables represent conditions that the system encounters (earthquake intensity, foundation engineering choice). Building Mass, while determined during design, is a property of the system itself — it interacts with acceleration to produce force (F=ma) and with natural period to determine resonance risk. The model treats it as a system characteristic. Consider the difference between conditions the building encounters (earthquake characteristics, foundation type) and properties of the building itself. The model analyzes how the building system responds to seismic conditions.
+Feedback: Correct. The distinction is nuanced: external variables represent conditions that the system encounters (earthquake intensity, foundation engineering choice). Building Mass, while determined during design, is a property of the system itself — it interacts with acceleration to produce force (F=ma) and with natural period to determine resonance risk. The model treats it as a system characteristic. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model's moderate earthquake scenario (0.3g) with base isolation shows a Damage Index near zero, while the same earthquake at resonance (without isolation) shows a Damage Index near 0.8. Both scenarios have identical earthquake intensity. What does this comparison demonstrate about seismic design?
 
@@ -1042,11 +979,15 @@ D. Damage Index is not a reliable metric for comparing seismic scenarios
 
 Correct Answer: B
 
-Feedback: Correct. This is the model's most powerful finding: the same earthquake produces radically different outcomes based solely on structural design. Base isolation prevents resonance and decouples the building from ground motion. Without it, resonance amplifies the same moderate earthquake to destructive levels. Design, not earthquake size, determines survival. Compare the two scenarios: same earthquake intensity, same building, but dramatically different outcomes. What is the only difference between them? What does that tell you about what determines building survival?
+Feedback: Correct. This is the model's most powerful finding: the same earthquake produces radically different outcomes based solely on structural design. Base isolation prevents resonance and decouples the building from ground motion. Without it, resonance amplifies the same moderate earthquake to destructive levels. Design, not earthquake size, determines survival. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Seismic Wave Intensity, Foundation Flexibility), but they can take action on internal components (Building Mass, Damper Effectiveness, Resonance Frequency, Material Strength, Floor Acceleration, Evacuation Time, Damage Index). They need to decide which action would be most effective based on what the model shows.
 
 After running all three scenarios, a student concludes that base isolation alone is sufficient seismic protection for any building. Using model evidence, what is the strongest limitation of this conclusion?
 
@@ -1057,27 +998,18 @@ D. The model does not include a base isolation variable
 
 Correct Answer: B
 
-Feedback: Correct. The model's three scenarios reveal that base isolation handles moderate earthquakes excellently but has limits under extreme near-fault ground motion. The maximum credible earthquake scenario demonstrates that combined strategies — isolation, structural flexibility, and energy-dissipating dampers — are needed for comprehensive protection. Look at the maximum credible earthquake scenario results. Does base isolation alone reduce the Damage Index to near zero in that extreme case, or does the building still experience significant forces?
+Feedback: Correct. The model's three scenarios reveal that base isolation handles moderate earthquakes excellently but has limits under extreme near-fault ground motion. The maximum credible earthquake scenario demonstrates that combined strategies — isolation, structural flexibility, and energy-dissipating dampers — are needed for comprehensive protection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.2, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

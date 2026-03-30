@@ -984,86 +984,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-After a volcanic eruption sterilizes a landscape down to bare rock, the first organisms to colonize are typically lichens and mosses, not trees. Why is this sequence ecologically necessary?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.6 + CCC4 (Systems and System Models)
 
-A. Lichens and mosses arrive first simply because their seeds are lighter and travel farther on wind
-B. Pioneer species like lichens weather rock surfaces, fix nitrogen, and create thin soil layers that subsequent species require for root establishment, making them essential foundation builders in primary succession
-C. Trees cannot grow on volcanic rock because they are allergic to volcanic minerals
-D. Lichens and mosses outcompete trees for sunlight on bare rock surfaces
-
-Correct Answer: B
-
-Feedback: Correct. Primary succession follows a necessary sequence because each stage creates conditions required by the next. Lichens weather rock surfaces through chemical and physical processes. Their organic remains combine with weathered minerals to create thin soil. Nitrogen-fixing organisms add essential nutrients. Only after sufficient soil development can grasses, shrubs, and eventually trees establish root systems. The sequence is not random. Each successional stage creates conditions necessary for the next. Lichens and mosses physically and chemically weather rock, and their remains contribute to soil formation. Without this soil-building foundation, larger plants cannot establish root systems.
-
----
-
-### Question 2
-
-What distinguishes secondary succession (after a fire) from primary succession (after a volcanic eruption)?
-
-A. Secondary succession is slower because fire is more destructive than volcanic eruption
-B. Secondary succession proceeds much faster because soil, seed banks, and root networks survive the disturbance, providing a biological legacy that accelerates recovery
-C. There is no difference; both types of succession follow identical timelines
-D. Primary succession involves animals while secondary succession involves only plants
-
-Correct Answer: B
-
-Feedback: Correct. Secondary succession (post-fire) takes decades rather than centuries because the biological infrastructure survives: intact soil with its microbial communities, dormant seed banks that germinate after fire, root networks that resprout, and mycorrhizal fungi that support seedling growth. Primary succession must build all of this from scratch. The critical difference is what survives the disturbance. After fire, soil, seeds, roots, and microorganisms persist. After volcanic sterilization, nothing remains. This biological legacy (surviving soil, seed banks, root networks) accelerates secondary succession from centuries to decades.
-
----
-
-### Question 3
-
-A regime shift occurs when an ecosystem transitions to a fundamentally different stable state after disturbance. Which of the following is the most accurate example of a regime shift?
-
-A. A forest growing back after a small fire within 5 years
-B. A coral reef losing its coral to heat stress and becoming permanently dominated by algae, with feedback loops that prevent coral from re-establishing even if water temperatures return to normal
-C. A garden that needs weeding after a rainstorm
-D. A lake that freezes in winter and thaws in spring
-
-Correct Answer: B
-
-Feedback: Correct. A regime shift is a transition between alternative stable states with different feedback loops. Once coral is lost, algae establishes feedback loops (shading coral recruits, altering nutrient cycling, supporting algae-grazing fish communities) that maintain the algae-dominated state even if the original stressor is removed. The system has crossed a resilience threshold. A regime shift is not temporary recovery or seasonal change. It is a permanent transition to a fundamentally different ecosystem with different feedback loops. The coral-to-algae transition is a classic example because algae establish self-reinforcing feedbacks that prevent coral from returning.
-
----
-
-### Question 4
-
-Trophic cascades demonstrate that removing a single species can transform an entire ecosystem. Which mechanism drives trophic cascades?
-
-A. Removing any species has no effect because other species fill the ecological niche immediately
-B. Changes at one trophic level (e.g., removal of top predators) propagate through the food web, releasing herbivore populations that overgraze vegetation, altering soil stability, water quality, and community structure across multiple levels
-C. Trophic cascades only occur in aquatic ecosystems and never in terrestrial systems
-D. Trophic cascades are caused by climate change, not species removal
-
-Correct Answer: B
-
-Feedback: Correct. Trophic cascades demonstrate top-down ecosystem regulation. When wolves were removed from Yellowstone, elk populations exploded, overgrazing streamside vegetation. This changed erosion patterns, stream morphology, songbird habitat, and even the physical course of rivers. The removal of one species cascaded through the entire ecosystem. Trophic cascades show that ecosystems are top-down regulated. Removing predators releases herbivore populations, which overgraze vegetation, which affects soil stability, water quality, insect communities, and many other components. The impact cascades through the food web.
-
----
-
-### Question 5
-
-Climate change is expected to alter ecosystem recovery from disturbance. How might a warming, drying climate change the recovery trajectory of a burned conifer forest?
-
-A. Warmer temperatures always accelerate forest recovery because trees grow faster in heat
-B. If the new climate no longer supports the original conifer species, the ecosystem may recover to a fundamentally different state (e.g., grassland or shrubland) even if soil and seed sources are available, because the environmental conditions no longer match the species' requirements
-C. Climate change has no effect on ecosystem recovery because plants adapt immediately to new conditions
-D. A warming climate would freeze the soil, preventing any plant growth
-
-Correct Answer: B
-
-Feedback: Correct. Each plant species has specific temperature and precipitation requirements. If climate has shifted enough that the original conifers cannot establish or survive, the burned area will recover to whatever community is suited to the new conditions, even if soil and seed banks are intact. This is how climate change lowers resilience thresholds and increases the probability of regime shifts after disturbance. Recovery depends on whether the post-disturbance climate can support the original species. If temperatures have risen and precipitation has decreased beyond the tolerance of conifers, the ecosystem cannot return to its previous state regardless of soil condition or seed availability. Climate change shifts the recovery endpoint.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Disturbance Severity, Seed Bank and Propagule Availability, Climate Suitability, Pioneer Species Establishment, Soil Development Rate, Biodiversity Accumulation, Nutrient Cycling Efficiency, Trophic Web Complexity, Invasive Species Pressure, Recovery Completeness Index. Some components are external (Disturbance Severity, Seed Bank and Propagule Availability, Climate Suitability) and some are internal (Pioneer Species Establishment, Soil Development Rate, Biodiversity Accumulation, Nutrient Cycling Efficiency, Trophic Web Complexity, Invasive Species Pressure, Recovery Completeness Index). The student needs to understand what each component represents and how they are organized.
 
 The model shows that recovery timeline differs by 10-50x between scenarios with intact soil versus scenarios starting from bare rock. What makes soil the critical bottleneck in ecosystem recovery?
 
@@ -1074,11 +999,15 @@ D. Soil only matters for agricultural crops, not for natural ecosystems
 
 Correct Answer: B
 
-Feedback: Correct. Soil is not just dirt. It is a complex biological system containing microbial communities that cycle nutrients, mycorrhizal fungi that extend root networks, organic matter that retains water, and physical structure that anchors roots. Building this from bare rock requires centuries of weathering, organic matter accumulation, and microbial colonization. With intact soil, plant establishment can begin immediately. Soil is a complex biological system containing microbial communities, mycorrhizal networks, organic matter, and nutrient reserves that took centuries to develop. Plants cannot establish on bare rock without these services. This is why primary succession from bare rock takes 100-1000 years while secondary succession on intact soil takes 20-50 years.
+Feedback: Correct. Soil is not just dirt. It is a complex biological system containing microbial communities that cycle nutrients, mycorrhizal fungi that extend root networks, organic matter that retains water, and physical structure that anchors roots. Building this from bare rock requires centuries of weathering, organic matter accumulation, and microbial colonization. With intact soil, plant establishment can begin immediately. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Disturbance Severity increases, Soil Development Rate decreases; when Seed Bank and Propagule Availability increases, Pioneer Species Establishment increases. The student is trying to understand why these relationships are positive or negative.
 
 The 'Climate-Shifted Recovery' scenario shows the Recovery Completeness Index stabilizing at approximately 40% relative to the original ecosystem. The model indicates this is not a failure of recovery but rather a successful recovery to a different stable state. What concept does this illustrate?
 
@@ -1089,11 +1018,15 @@ D. The model is broken because recovery should always reach 100%
 
 Correct Answer: B
 
-Feedback: Correct. The 40% Recovery Completeness Index (measured against the original ecosystem) reflects a climate-driven regime shift. The ecosystem IS recovering successfully, but to a state suited to the new climate conditions. If the original conifers require cooler, wetter conditions than now exist, the recovering ecosystem will be composed of species adapted to the warmer, drier climate. This is a functioning ecosystem, just not the original one. The model measures recovery against the pre-disturbance reference ecosystem. A 40% score does not mean 60% failure. It means the ecosystem has recovered to a stable, functional state that differs from the original because climate conditions have changed. This is a regime shift driven by altered environmental conditions.
+Feedback: Correct. The 40% Recovery Completeness Index (measured against the original ecosystem) reflects a climate-driven regime shift. The ecosystem IS recovering successfully, but to a state suited to the new climate conditions. If the original conifers require cooler, wetter conditions than now exist, the recovering ecosystem will be composed of species adapted to the warmer, drier climate. This is a functioning ecosystem, just not the original one. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Disturbance Severity increases, Soil Development Rate decreases and when Seed Bank and Propagule Availability increases, Pioneer Species Establishment increases and when Pioneer Species Establishment increases, Soil Development Rate increases. The student changes one variable to see how the whole system responds.
 
 The model reveals that Invasive Species Pressure has its greatest impact during early succession when the disturbed ecosystem has open space, available nutrients, and reduced competition. Which management implication follows directly from this finding?
 
@@ -1104,11 +1037,15 @@ D. Invasive species management is only effective after the ecosystem has fully r
 
 Correct Answer: B
 
-Feedback: Correct. The model shows a vulnerability window during early succession. Invasive species that establish during this window can modify soil chemistry, outcompete native seedlings, and alter the successional trajectory permanently. Early intervention (within the first few years) prevents establishment before self-reinforcing feedbacks lock in the invasive-dominated state. Waiting until invasives are established makes management orders of magnitude more difficult. The model identifies early succession as a critical vulnerability window. Invasive species that establish during this period alter soil, outcompete natives, and create self-reinforcing feedbacks that lock in their dominance. Early management prevents establishment; late management must fight an already-established alternative state.
+Feedback: Correct. The model shows a vulnerability window during early succession. Invasive species that establish during this window can modify soil chemistry, outcompete native seedlings, and alter the successional trajectory permanently. Early intervention (within the first few years) prevents establishment before self-reinforcing feedbacks lock in the invasive-dominated state. Waiting until invasives are established makes management orders of magnitude more difficult. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Adding 'Mycorrhizal Network Recovery' to the model reveals that tree seedlings in areas with surviving mycorrhizal fungi grow 50-80% faster than seedlings in areas without. What does this reveal about the role of belowground networks in ecosystem recovery?
 
@@ -1119,11 +1056,15 @@ D. Tree growth rate has no relationship to mycorrhizal presence
 
 Correct Answer: B
 
-Feedback: Correct. Mycorrhizal networks are belowground infrastructure that takes decades to fully develop. They extend root absorption area by orders of magnitude, transfer nutrients and water between connected plants (including from established trees to seedlings), and transmit chemical signals about pests and drought. Areas where these networks survive disturbance recover dramatically faster because seedlings immediately connect to existing infrastructure. Mycorrhizal fungi are mutualistic partners, not parasites. They form underground networks that extend root systems, transfer nutrients between plants, and facilitate communication. Their survival after disturbance dramatically accelerates recovery because new seedlings can immediately connect to existing fungal infrastructure.
+Feedback: Correct. Mycorrhizal networks are belowground infrastructure that takes decades to fully develop. They extend root absorption area by orders of magnitude, transfer nutrients and water between connected plants (including from established trees to seedlings), and transmit chemical signals about pests and drought. Areas where these networks survive disturbance recover dramatically faster because seedlings immediately connect to existing infrastructure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Disturbance Severity, Seed Bank and Propagule Availability, Climate Suitability), but they can take action on internal components (Pioneer Species Establishment, Soil Development Rate, Biodiversity Accumulation, Nutrient Cycling Efficiency, Trophic Web Complexity, Invasive Species Pressure, Recovery Completeness Index). They need to decide which action would be most effective based on what the model shows.
 
 A restoration ecology team uses the model to design a restoration plan for a severely burned Sierra Nevada forest where climate projections indicate 1.5 degrees C warming and 15% less precipitation by 2050. The model suggests planting species adapted to future conditions rather than the original conifer species. This 'assisted migration' strategy is controversial. Which model evidence most strongly supports this approach?
 
@@ -1134,27 +1075,18 @@ D. The model shows that climate change will reverse itself within 20 years, maki
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that planting species mismatched to future climate conditions results in high mortality and failed restoration. Species adapted to the projected warmer, drier conditions establish successfully and provide ecosystem services (carbon sequestration, habitat, erosion control) decades sooner than waiting for natural range shifts. The trade-off is not recreating the past versus accepting change; it is functional recovery versus failed restoration. The model shows a practical choice: plant species that match the projected climate and get functional ecosystem recovery within decades, or plant original species that cannot survive new conditions and get restoration failure. Assisted migration trades historical fidelity for functional success.
+Feedback: Correct. The model reveals that planting species mismatched to future climate conditions results in high mortality and failed restoration. Species adapted to the projected warmer, drier conditions establish successfully and provide ecosystem services (carbon sequestration, habitat, erosion control) decades sooner than waiting for natural range shifts. The trade-off is not recreating the past versus accepting change; it is functional recovery versus failed restoration. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

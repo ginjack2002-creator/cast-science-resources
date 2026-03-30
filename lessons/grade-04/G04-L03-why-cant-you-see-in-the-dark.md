@@ -867,77 +867,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-PS4-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-How do your eyes let you see objects?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.2 + CCC4 (Systems and System Models)
 
-A. Your eyes shoot out invisible beams that bounce off objects
-B. Light bounces off objects and enters your eyes
-C. Your brain imagines what things look like and sends pictures to your eyes
-D. Objects glow with their own light so your eyes can see them
-
-Correct Answer: B
-
-Feedback: That is right! You see objects because light from a source hits them, bounces off, and enters your eyes. Your eyes receive light, they do not send it out. Your eyes do not shoot out beams, and most objects do not make their own light. You see objects because light bounces off them and enters your eyes.
-
----
-
-### Question 2
-
-Why is it hard to see anything in a completely dark room?
-
-A. Your eyes need time to warm up before they can see
-B. Dark rooms have too much air blocking your vision
-C. There is no light to bounce off objects and enter your eyes
-D. Objects turn invisible when the lights go off
-
-Correct Answer: C
-
-Feedback: Correct! Without a light source, there is no light to bounce off objects. Your eyes need reflected light to see, so no light means no vision. Objects do not actually become invisible. The problem is that without a light source, there is no light to bounce off objects and reach your eyes.
-
----
-
-### Question 3
-
-Which of these is a light source?
-
-A. A mirror
-B. A white piece of paper
-C. The Moon
-D. The Sun
-
-Correct Answer: D
-
-Feedback: Right! The Sun makes its own light, so it is a light source. Mirrors and paper only reflect light, and the Moon also reflects light from the Sun. A light source must make its own light. Mirrors and paper reflect light, and the Moon only shines because it reflects sunlight. The Sun creates its own light.
-
----
-
-### Question 4
-
-What is the black circle in the middle of your eye called?
-
-A. The eyelid
-B. The pupil
-C. The eyebrow
-D. The iris
-
-Correct Answer: B
-
-Feedback: That is right! The pupil is the black opening in your eye that lets light in. It gets bigger in dim light to let more light in and smaller in bright light. The black circle in the center of your eye is called the pupil. It is the opening that lets light enter your eye so you can see.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Light Source Brightness, Light Bouncing Off Objects, Eye Detection. Some components are external (Light Source Brightness) and some are internal (Light Bouncing Off Objects, Eye Detection). The student needs to understand what each component represents and how they are organized.
 
 In the light and vision model, what are the three components?
 
@@ -948,11 +888,15 @@ D. Lamp size, mirror angle, and pupil color
 
 Correct Answer: B
 
-Feedback: Exactly! The model has three components: light source brightness (external), light bouncing off objects (internal), and eye detection (internal). The three model components are light source brightness, light bouncing off objects, and eye detection. These show the chain from light source to seeing.
+Feedback: Exactly! The model has three components: light source brightness (external), light bouncing off objects (internal), and eye detection (internal). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Light Source Brightness increases, Light Bouncing Off Objects increases; when Light Bouncing Off Objects increases, Eye Detection increases. The student is trying to understand why these relationships are positive or negative.
 
 What does it mean that most objects REFLECT light rather than making their own light?
 
@@ -963,11 +907,15 @@ D. Most objects create light but only when we look at them
 
 Correct Answer: B
 
-Feedback: Right! Most objects do not make their own light. We see them because light from a source (like the Sun or a lamp) hits them, bounces off, and enters our eyes. Most objects are not light sources. They reflect (bounce back) light that hits them from a light source. That reflected light enters your eyes, and that is how you see.
+Feedback: Right! Most objects do not make their own light. We see them because light from a source (like the Sun or a lamp) hits them, bounces off, and enters our eyes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Light Source Brightness increases, Light Bouncing Off Objects increases and when Light Bouncing Off Objects increases, Eye Detection increases. The student changes one variable to see how the whole system responds.
 
 A student shines a flashlight in a dark room. They can see a white ball but a black ball is harder to see. Why?
 
@@ -978,11 +926,15 @@ D. The flashlight only works on white objects
 
 Correct Answer: B
 
-Feedback: That is right! White objects reflect most of the light that hits them, so more light reaches your eyes. Dark objects absorb more light and reflect less, making them harder to see. Neither ball makes its own light. The difference is that white surfaces reflect most light while dark surfaces absorb most of it. More reflected light means easier to see.
+Feedback: That is right! White objects reflect most of the light that hits them, so more light reaches your eyes. Dark objects absorb more light and reflect less, making them harder to see. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on the model, what must happen for you to see an object?
 
@@ -993,25 +945,37 @@ D. The object must be brighter than everything else in the room
 
 Correct Answer: B
 
-Feedback: Exactly! The model shows a three-step chain: light source creates light, light reflects off the object, and the reflected light enters your eyes. All three steps are needed to see. Your eyes do not send out beams. The model shows three connected steps: a light source creates light, that light bounces off an object, and the reflected light enters your eyes.
+Feedback: Exactly! The model shows a three-step chain: light source creates light, light reflects off the object, and the reflected light enters your eyes. All three steps are needed to see. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Light Source Brightness), but they can take action on internal components (Light Bouncing Off Objects, Eye Detection). They need to decide which action would be most effective based on what the model shows.
+
+How do your eyes let you see objects?
+
+A. Your eyes shoot out invisible beams that bounce off objects
+B. Light bounces off objects and enters your eyes
+C. Your brain imagines what things look like and sends pictures to your eyes
+D. Objects glow with their own light so your eyes can see them
+
+Correct Answer: B
+
+Feedback: That is right! You see objects because light from a source hits them, bounces off, and enters your eyes. Your eyes receive light, they do not send it out. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: D
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

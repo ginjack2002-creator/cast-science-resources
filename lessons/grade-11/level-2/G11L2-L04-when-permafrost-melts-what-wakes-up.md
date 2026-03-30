@@ -927,86 +927,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is permafrost?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.4 + CCC4 (Systems and System Models)
 
-A. Ice that covers the Arctic Ocean during winter months
-B. Ground that has remained at or below 0 degrees Celsius continuously for at least two years
-C. Glaciers that never melt, even in summer
-D. Frozen precipitation that accumulates on mountain peaks
-
-Correct Answer: B
-
-Feedback: Correct. Permafrost is soil, rock, or sediment that has stayed frozen (at or below 0 degrees C) continuously for at least two consecutive years. Permafrost refers to ground (soil, rock, sediment) that remains frozen continuously for at least two years. It is found primarily in Arctic and sub-Arctic regions and can extend hundreds of meters deep.
-
----
-
-### Question 2
-
-Approximately how much carbon is stored in Arctic permafrost compared to the current atmosphere?
-
-A. About 10% as much as the atmosphere
-B. About the same amount as the atmosphere
-C. About twice as much as the atmosphere
-D. About ten times as much as the atmosphere
-
-Correct Answer: C
-
-Feedback: Correct. Arctic permafrost contains approximately 1,500 billion tons of carbon, roughly twice the amount currently in the entire atmosphere. Permafrost stores approximately 1,500 billion tons of organic carbon accumulated over thousands of years. This is roughly double the carbon currently in the atmosphere (~880 billion tons).
-
----
-
-### Question 3
-
-In climate science, what does a 'positive feedback loop' mean?
-
-A. A beneficial process that improves environmental conditions
-B. A self-reinforcing cycle where an initial change triggers processes that amplify that change further
-C. A process that stabilizes temperature by counteracting warming
-D. An accurate climate model prediction that proves correct
-
-Correct Answer: B
-
-Feedback: Correct. In systems science, 'positive' means self-reinforcing, not 'good.' A positive feedback amplifies the initial change. In systems science, 'positive feedback' means self-reinforcing: an initial change triggers responses that amplify the original change further. This does not mean beneficial; it means the effect keeps growing.
-
----
-
-### Question 4
-
-Why is the Arctic warming faster than the global average?
-
-A. The Arctic receives more direct sunlight than other regions
-B. Arctic amplification occurs because melting ice exposes darker surfaces that absorb more heat, reinforcing further warming
-C. Most greenhouse gas emissions are produced in Arctic countries
-D. The Arctic's thin atmosphere traps heat more efficiently
-
-Correct Answer: B
-
-Feedback: Correct. Arctic amplification is driven largely by the ice-albedo feedback: as reflective ice melts, darker ocean and land surfaces absorb more solar energy, accelerating warming. Arctic amplification occurs because the loss of reflective ice and snow exposes darker surfaces (ocean, land) that absorb more solar energy instead of reflecting it, creating a feedback loop that accelerates regional warming.
-
----
-
-### Question 5
-
-When organic matter in permafrost thaws, what gases are released and why?
-
-A. Oxygen is released because frozen plants resume photosynthesis
-B. Nitrogen is released because permafrost is primarily composed of frozen air
-C. CO2 and methane are released because soil microbes decompose the thawed organic matter
-D. Water vapor is the only gas released as ice melts
-
-Correct Answer: C
-
-Feedback: Correct. When permafrost thaws, soil microbes become active and decompose the previously frozen organic material, producing CO2 in dry conditions and methane in waterlogged conditions. Thawed permafrost exposes ancient organic matter to microbial decomposition. In dry conditions, microbes produce CO2; in wet, oxygen-poor conditions, they produce methane, which is about 80 times more potent as a greenhouse gas over 20 years.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Arctic Temperature Anomaly, Permafrost Thaw Depth, Carbon Release Rate, Atmospheric Greenhouse Gas Level, Global Warming Rate, Thermokarst Formation Rate. Some components are external (Arctic Temperature Anomaly) and some are internal (Permafrost Thaw Depth, Carbon Release Rate, Atmospheric Greenhouse Gas Level, Global Warming Rate, Thermokarst Formation Rate). The student needs to understand what each component represents and how they are organized.
 
 The model shows that at +4 degrees C Arctic warming, Carbon Release Rate accelerates nonlinearly due to thermokarst formation. Which systems-level explanation best accounts for this nonlinear acceleration?
 
@@ -1017,11 +942,15 @@ D. Wind patterns shift at higher temperatures, cooling the Arctic surface
 
 Correct Answer: B
 
-Feedback: Correct. Thermokarst is a threshold process: once ice-rich permafrost begins collapsing, it exposes far more frozen carbon to thawing conditions than gradual surface warming, creating a nonlinear acceleration. Thermokarst formation creates a step-change in thaw dynamics. Ground collapse forms lakes and sinkholes that expose permafrost to warm water on multiple surfaces simultaneously, dramatically accelerating carbon release beyond the rate predicted by surface warming alone.
+Feedback: Correct. Thermokarst is a threshold process: once ice-rich permafrost begins collapsing, it exposes far more frozen carbon to thawing conditions than gradual surface warming, creating a nonlinear acceleration. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.4 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Arctic Temperature Anomaly increases, Permafrost Thaw Depth increases; when Permafrost Thaw Depth increases, Carbon Release Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 A student argues that permafrost carbon feedback is not concerning because 'we can just stop emitting fossil fuels.' Which model finding most directly challenges this reasoning?
 
@@ -1032,11 +961,15 @@ D. Stopping fossil fuel emissions would cause immediate global cooling
 
 Correct Answer: B
 
-Feedback: Correct. This is the critical distinction: unlike fossil fuel emissions, which humans can choose to stop, permafrost carbon feedback is a natural process that becomes self-sustaining once tipping points are crossed. The model reveals that permafrost carbon feedback is fundamentally different from fossil fuel emissions because it is a natural, self-reinforcing process. Once thaw releases enough greenhouse gas to sustain further warming and thaw, it continues regardless of human policy.
+Feedback: Correct. This is the critical distinction: unlike fossil fuel emissions, which humans can choose to stop, permafrost carbon feedback is a natural process that becomes self-sustaining once tipping points are crossed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Arctic Temperature Anomaly increases, Permafrost Thaw Depth increases and when Permafrost Thaw Depth increases, Carbon Release Rate increases and when Carbon Release Rate increases, Atmospheric Greenhouse Gas Level increases. The student changes one variable to see how the whole system responds.
 
 The model includes both CO2 and methane release from permafrost. Why is the methane pathway particularly concerning even though methane concentrations are much lower than CO2?
 
@@ -1047,11 +980,15 @@ D. Methane release from permafrost has already exceeded fossil fuel methane emis
 
 Correct Answer: A
 
-Feedback: Correct. Methane's global warming potential is approximately 80x that of CO2 over 20 years, so even relatively small methane releases from waterlogged permafrost have significant warming impacts. Methane has a global warming potential roughly 80 times greater than CO2 over a 20-year timeframe. This means methane released from waterlogged thawing permafrost has an outsized impact on warming, even at much lower concentrations.
+Feedback: Correct. Methane's global warming potential is approximately 80x that of CO2 over 20 years, so even relatively small methane releases from waterlogged permafrost have significant warming impacts. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Comparing the +2 degrees C and +6 degrees C Arctic scenarios, the model shows that permafrost carbon release at +2 degrees C adds modest warming, while at +6 degrees C the feedback loop appears to become self-sustaining. What is the most important implication for climate policy?
 
@@ -1062,11 +999,15 @@ D. The difference between +2 and +6 degrees C is too small to matter
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that there is a critical threshold between manageable and self-sustaining permafrost feedback, making it imperative to reduce emissions fast enough to stay below that threshold. The model identifies a critical threshold between +2 and +6 degrees C Arctic warming where permafrost feedback transitions from manageable to self-sustaining. Policy must target staying below this threshold, because beyond it, the carbon release cannot be stopped by human action.
+Feedback: Correct. The model demonstrates that there is a critical threshold between manageable and self-sustaining permafrost feedback, making it imperative to reduce emissions fast enough to stay below that threshold. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Arctic Temperature Anomaly), but they can take action on internal components (Permafrost Thaw Depth, Carbon Release Rate, Atmospheric Greenhouse Gas Level, Global Warming Rate, Thermokarst Formation Rate). They need to decide which action would be most effective based on what the model shows.
 
 Most current climate models have historically underestimated permafrost carbon feedback. What does this suggest about the adequacy of current global emission reduction targets?
 
@@ -1077,27 +1018,18 @@ D. Model underestimation means permafrost feedback is actually less severe than 
 
 Correct Answer: B
 
-Feedback: Correct. If the models used to determine emission targets underestimated permafrost feedback, then those targets allow more warming than intended and may need to be tightened. If the climate models that informed emission reduction targets did not fully account for permafrost carbon feedback, the actual warming produced by those targets will exceed projections. This means targets may need to be more aggressive to achieve the same temperature goals.
+Feedback: Correct. If the models used to determine emission targets underestimated permafrost feedback, then those targets allow more warming than intended and may need to be tightened. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.4, CCC2)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: A
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

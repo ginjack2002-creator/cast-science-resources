@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A space elevator cable must extend from Earth's surface to beyond geostationary orbit (35,786 km). What two forces keep the cable taut and stationary relative to the ground?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.2 + CCC4 (Systems and System Models)
 
-A. Electromagnetic attraction between the cable and the atmosphere, and wind pushing the cable upward
-B. Gravity pulling the lower portion toward Earth and centrifugal force from Earth's rotation pulling the upper portion and counterweight outward — these forces balance at geostationary orbit
-C. Rocket thrust at the top and magnetic anchoring at the base
-D. The cable is so rigid that it does not need any forces to maintain its shape
-
-Correct Answer: B
-
-Feedback: Correct. Below geostationary orbit, gravity dominates (pulling the cable down). Above it, centrifugal force from Earth's rotation dominates (pulling the cable outward). The cable is balanced with its center of mass at geostationary altitude, with the counterweight beyond geostationary orbit providing the centrifugal force to keep the whole structure taut. Think about what happens to an object attached to a rotating body. Below a certain altitude, gravity pulls it inward. Above that altitude, the centrifugal effect of rotation pulls it outward. Where is the balance point?
-
----
-
-### Question 2
-
-Carbon nanotubes have a theoretical tensile strength of 100+ GPa, making them the strongest material ever theorized. Current manufacturing produces fibers of only 1-2 GPa. What does this 50-100x gap represent?
-
-A. A fundamental physical impossibility — the theoretical strength is wrong
-B. The difference between the perfect atomic structure theorized for individual nanotubes and the defects, misalignment, and weak junctions that occur when manufacturing bulk fibers from billions of nanotubes at practical scale
-C. A measurement error in the theoretical calculations
-D. The gap is small enough that current materials already work for a space elevator
-
-Correct Answer: B
-
-Feedback: Correct. Individual carbon nanotubes approach theoretical strength because their atomic structure can be nearly perfect at nanometer scales. Manufacturing bulk fibers requires assembling billions of nanotubes, introducing defects, misalignment, impurities, and weak inter-tube junctions. Each defect is a potential failure point that dramatically reduces bulk strength below theoretical limits. Consider the difference between one perfect nanotube (nanometers long) and a fiber made from billions of nanotubes (meters to kilometers long). What happens at the junctions between individual nanotubes? What effect do even small defects have?
-
----
-
-### Question 3
-
-Current rocket launches cost approximately $2,000-$10,000 per kilogram to reach orbit. A space elevator could potentially reduce this to under $200 per kilogram. What physical property of rockets drives their high cost?
-
-A. Rockets are made from expensive materials that cannot be recycled
-B. Rockets must carry their own fuel, and the fuel needed to lift the fuel creates an exponential mass penalty (the Tsiolkovsky rocket equation) — a space elevator uses external energy to lift the climber, avoiding this mass penalty entirely
-C. Launch facilities are located in expensive real estate areas
-D. Rocket engineers command higher salaries than elevator engineers
-
-Correct Answer: B
-
-Feedback: Correct. The tyranny of the rocket equation: to lift 1 kg of payload, rockets must carry many kilograms of fuel, plus fuel to lift that fuel, plus fuel to lift THAT fuel. This exponential relationship means 90-95% of a rocket's launch mass is fuel. A space elevator eliminates this by transmitting energy externally (laser or microwave) to the climber, so no fuel mass is carried. Consider what makes up most of a rocket's mass at launch. Approximately 90-95% is fuel. Why? Because the fuel must also lift itself. A space elevator climber receives energy externally, so it carries no fuel. How does this change the economics?
-
----
-
-### Question 4
-
-The cable must support its own weight across 36,000+ km. Gravity is strongest at the surface (9.8 m/s^2) and decreases with altitude squared. At what point along the cable is the stress (tension) maximum?
-
-A. At the surface where the cable attaches to the ground anchor
-B. At geostationary orbit (35,786 km) where the transition from gravity-dominated to centrifugal-dominated occurs and the cable supports the maximum total weight below while being pulled outward above
-C. At the very top where the counterweight is attached
-D. Stress is uniform throughout the cable because gravity is the same everywhere
-
-Correct Answer: B
-
-Feedback: Correct. At geostationary orbit, the cable must support the weight of all the cable below it (pulled down by gravity) while being pulled upward by the centrifugal force on the cable and counterweight above. This dual-direction loading creates maximum stress at the geostationary point, which is why cable taper designs are thickest at this altitude. Think about what the cable at geostationary altitude must support: below it, all the cable being pulled down by gravity; above it, all the cable and counterweight pulling upward from centrifugal force. Where does the cable bear the most total load?
-
----
-
-### Question 5
-
-The lower 100 km of a space elevator cable passes through Earth's atmosphere. What unique challenges does this atmospheric section face that the rest of the cable does not?
-
-A. No unique challenges — the atmosphere is too thin to affect the cable
-B. Lightning strikes, wind loading from jet streams and storms, ice accumulation, chemical corrosion from atmospheric gases, and aerodynamic vibration — forces not present in the vacuum of space above
-C. The only challenge is air resistance slowing down the climber vehicle
-D. Atmospheric pressure would crush the cable material
-
-Correct Answer: B
-
-Feedback: Correct. The atmospheric section faces a unique combination of hazards: lightning (the cable is an ideal conductor extending into thunderstorms), wind forces (including jet streams at 200+ mph), ice buildup (adding mass and drag), ozone and UV degradation of materials, and vibration from aerodynamic forces. None of these challenges exist in the vacuum above 100 km. Consider what conditions exist in the atmosphere that do not exist in space: weather, wind, lightning, ice, and reactive gases. How would each of these affect a thin cable extending vertically through the atmosphere?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Cable Tensile Strength, Gravitational Force Gradient, Centrifugal Counterweight, Climber Mass, Orbital Altitude, Material Limits, Energy Consumption, Payload Capacity, Atmospheric Stress, Economic Viability. Some components are external (Cable Tensile Strength, Centrifugal Counterweight, Climber Mass) and some are internal (Gravitational Force Gradient, Orbital Altitude, Material Limits, Energy Consumption, Payload Capacity, Atmospheric Stress, Economic Viability). The student needs to understand what each component represents and how they are organized.
 
 The model's current materials scenario (1-2 GPa cable strength) shows the cable snapping under its own weight at approximately 100 km altitude. The carbon nanotube ideal scenario (100+ GPa) shows a viable system. What does this 50-100x gap tell us about the nature of the space elevator problem?
 
@@ -1001,11 +926,15 @@ D. The gap between scenarios is too small to be significant
 
 Correct Answer: B
 
-Feedback: Correct. The model cleanly separates physics (which works — forces balance, the concept is viable) from materials science (which is currently insufficient). When the model uses theoretical material properties, the system functions. When it uses current manufacturing capabilities, it fails catastrophically. This identifies the precise bottleneck. Compare what changes between the two scenarios. The physics, the forces, and the engineering design are identical. Only the material strength changes. What does this tell you about where the challenge lies?
+Feedback: Correct. The model cleanly separates physics (which works — forces balance, the concept is viable) from materials science (which is currently insufficient). When the model uses theoretical material properties, the system functions. When it uses current manufacturing capabilities, it fails catastrophically. This identifies the precise bottleneck. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Cable Tensile Strength increases, Payload Capacity increases; when Gravitational Force Gradient increases, Cable Tensile Strength increases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, increasing Climber Mass from 5 tons to 20 tons increases Payload Capacity proportionally but requires a corresponding increase in Cable Tensile Strength. What engineering trade-off does this relationship represent?
 
@@ -1016,11 +945,15 @@ D. Lighter climbers are always preferable because they reduce cable stress
 
 Correct Answer: B
 
-Feedback: Correct. The cable must support its own weight plus climber loads. A heavier climber requires a thicker cable section where it climbs, which adds cable mass, which requires even more strength. This circular dependency means the cable material's strength-to-weight ratio determines the maximum payload, not just the maximum weight it can hold at one point. Consider the chain reaction: heavier climber needs stronger cable, stronger cable means thicker or denser cable, which means more cable mass to support. This creates a constraint where gains in payload are partially offset by the need for more cable material.
+Feedback: Correct. The cable must support its own weight plus climber loads. A heavier climber requires a thicker cable section where it climbs, which adds cable mass, which requires even more strength. This circular dependency means the cable material's strength-to-weight ratio determines the maximum payload, not just the maximum weight it can hold at one point. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Cable Tensile Strength increases, Payload Capacity increases and when Gravitational Force Gradient increases, Cable Tensile Strength increases and when Payload Capacity increases, Economic Viability increases. The student changes one variable to see how the whole system responds.
 
 The model classifies Cable Tensile Strength, Centrifugal Counterweight, and Climber Mass as external variables. Why is Gravitational Force Gradient classified as internal despite being determined by well-known physics?
 
@@ -1031,11 +964,15 @@ D. The classification is arbitrary
 
 Correct Answer: B
 
-Feedback: Correct. The gravitational force gradient describes how the cable experiences gravity along its length — this depends on the cable's mass distribution, taper profile, and material density interacting with the inverse-square law. Engineers do not set the gradient; they set the cable properties, and the gradient is the resulting load profile. It is a system response to the design choices. Ask whether engineers set the gravitational gradient as a design choice (external) or whether it emerges from how the cable they designed interacts with Earth's gravitational field (internal). What can engineers actually control?
+Feedback: Correct. The gravitational force gradient describes how the cable experiences gravity along its length — this depends on the cable's mass distribution, taper profile, and material density interacting with the inverse-square law. Engineers do not set the gradient; they set the cable properties, and the gradient is the resulting load profile. It is a system response to the design choices. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.2 + CCC2 (Cause and Effect)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model includes Atmospheric Stress as a variable affecting only the lowest 100 km of cable, while Gravitational Force Gradient affects the entire 100,000+ km structure. A student argues that Atmospheric Stress is negligible because it affects only 0.1% of the cable length. What model evidence counters this argument?
 
@@ -1046,11 +983,15 @@ D. The atmospheric section can be made from a different, cheaper material
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates the 'weakest link' principle: the cable is only as strong as its most vulnerable section. Lightning, wind loading, ice accumulation, and chemical corrosion in the atmospheric section can cause failure even though it represents a tiny fraction of total length. A break anywhere causes catastrophic collapse of the entire structure. Consider what happens if the cable breaks at ANY point along its length. Does it matter whether that break occurs in the atmosphere (100 km) or in space (50,000 km)? A chain is only as strong as its weakest link.
+Feedback: Correct. The model demonstrates the 'weakest link' principle: the cable is only as strong as its most vulnerable section. Lightning, wind loading, ice accumulation, and chemical corrosion in the atmospheric section can cause failure even though it represents a tiny fraction of total length. A break anywhere causes catastrophic collapse of the entire structure. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.2 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Cable Tensile Strength, Centrifugal Counterweight, Climber Mass), but they can take action on internal components (Gravitational Force Gradient, Orbital Altitude, Material Limits, Energy Consumption, Payload Capacity, Atmospheric Stress, Economic Viability). They need to decide which action would be most effective based on what the model shows.
 
 Based on all model scenarios, a student concludes that a space elevator will be built within 10 years because the physics is sound. Using model evidence across all ten variables, what is the most comprehensive evaluation of this prediction?
 
@@ -1061,27 +1002,18 @@ D. 10 years is too conservative — it could be built in 5 years
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that the physics is sound (the concept works) but the implementation faces multiple unsolved challenges across many variables. The materials gap alone is enormous, and it is compounded by atmospheric vulnerability, orbital debris risk, energy transmission challenges, and the need for economically competitive operations. Sound physics is necessary but far from sufficient for an engineering megaproject. Look at all ten variables in the model. How many are at viable levels with current technology? The physics works (the concept is valid), but how many engineering and materials science variables remain far from their required values?
+Feedback: Correct. The model shows that the physics is sound (the concept works) but the implementation faces multiple unsolved challenges across many variables. The materials gap alone is enormous, and it is compounded by atmospheric vulnerability, orbital debris risk, energy transmission challenges, and the need for economically competitive operations. Sound physics is necessary but far from sufficient for an engineering megaproject. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.2, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.2, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

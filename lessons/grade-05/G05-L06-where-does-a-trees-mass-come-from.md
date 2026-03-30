@@ -766,77 +766,17 @@ POST-ASSESSMENT
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A giant tree weighs 1 million pounds. Where do you think most of that mass came from?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
 
-A. The soil it grows in
-B. The water it drinks
-C. Carbon dioxide (CO2) from the air
-D. Sunlight energy
-
-Correct Answer: C
-
-Feedback: That's right! About 95% of a tree's mass comes from carbon dioxide in the air. Trees pull CO2 through their leaves and use photosynthesis to turn it into solid wood. This is one of the most surprising facts in science. Trees get most of their mass from CO2 in the air, not from soil. Soil provides minerals, and water helps, but carbon from air becomes the wood itself.
-
----
-
-### Question 2
-
-What do plants need to perform photosynthesis?
-
-A. Soil and fertilizer only
-B. Sunlight, water, and carbon dioxide
-C. Oxygen and sugar
-D. Darkness and cold temperatures
-
-Correct Answer: B
-
-Feedback: Correct! Plants use sunlight as energy, water from the soil, and CO2 from the air to make glucose (sugar) through photosynthesis. Photosynthesis requires three inputs: sunlight (energy source), water (from roots), and carbon dioxide (from air). These combine to produce glucose (sugar) and oxygen.
-
----
-
-### Question 3
-
-A scientist grew a tree in a pot for 5 years. The tree gained 164 pounds, but the soil lost only 2 ounces. What does this prove?
-
-A. The tree must have gotten mass from somewhere other than soil
-B. The scale was broken
-C. The soil regenerated itself
-D. Trees don't actually gain mass
-
-Correct Answer: A
-
-Feedback: Exactly! Van Helmont's famous experiment showed that trees don't get their mass from soil. The mass comes from CO2 in the air and water. If the tree gained 164 pounds but the soil barely changed, the mass must have come from somewhere else. That somewhere is the air. Trees absorb CO2 and convert it into solid wood.
-
----
-
-### Question 4
-
-Why do plants need sunlight?
-
-A. To keep warm
-B. To provide energy for making food through photosynthesis
-C. To dry out their leaves
-D. Plants don't actually need sunlight
-
-Correct Answer: B
-
-Feedback: That's right! Sunlight provides the energy that powers photosynthesis, allowing plants to convert CO2 and water into sugar. Sunlight is the energy source that drives photosynthesis. Without light energy, plants cannot combine CO2 and water to make glucose. No sunlight means no food production and no growth.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: CO2 in Air, Sunlight, Photosynthesis Rate, Tree Biomass. Some components are external (CO2 in Air, Sunlight) and some are internal (Photosynthesis Rate, Tree Biomass). The student needs to understand what each component represents and how they are organized.
 
 In the tree growth model, what happens when CO2 in Air is locked to 0%?
 
@@ -847,11 +787,15 @@ D. Sunlight increases to compensate for the missing CO2
 
 Correct Answer: B
 
-Feedback: Correct! Without CO2, there is no raw material for photosynthesis. The tree cannot build new tissue, so growth stops completely. CO2 is the raw material that provides carbon atoms for building wood. Without CO2, photosynthesis has nothing to build with. Sunlight provides energy, but CO2 provides the actual building blocks.
+Feedback: Correct! Without CO2, there is no raw material for photosynthesis. The tree cannot build new tissue, so growth stops completely. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when CO2 in Air increases, Photosynthesis Rate increases; when Sunlight increases, Photosynthesis Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 Why is cutting down large forests a climate change problem?
 
@@ -862,11 +806,15 @@ D. Trees absorb heat from the sun so it doesn't reach the ground
 
 Correct Answer: B
 
-Feedback: Exactly! Trees are essentially solidified CO2. When forests are cut down, the stored carbon returns to the atmosphere, increasing greenhouse gas levels. Remember: trees get their mass from CO2. A tree is basically solid carbon pulled from the air. When trees are cut and decompose or burn, all that stored carbon goes back into the atmosphere as CO2.
+Feedback: Exactly! Trees are essentially solidified CO2. When forests are cut down, the stored carbon returns to the atmosphere, increasing greenhouse gas levels. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when CO2 in Air increases, Photosynthesis Rate increases and when Sunlight increases, Photosynthesis Rate increases and when Photosynthesis Rate increases, Tree Biomass increases. The student changes one variable to see how the whole system responds.
 
 Both CO2 in Air and Sunlight have what type of relationship with Photosynthesis Rate?
 
@@ -877,11 +825,15 @@ D. Neither affects photosynthesis
 
 Correct Answer: B
 
-Feedback: Correct! Both relationships are positive. More CO2 provides more raw material, and more sunlight provides more energy, both increasing the rate of photosynthesis. CO2 provides the building material (carbon atoms) and sunlight provides the energy. Increasing either one gives photosynthesis more of what it needs, so both have a positive (+) effect.
+Feedback: Correct! Both relationships are positive. More CO2 provides more raw material, and more sunlight provides more energy, both increasing the rate of photosynthesis. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A greenhouse farmer pumps extra CO2 into her greenhouse and uses grow lights. Based on your model, what will happen to plant growth?
 
@@ -892,25 +844,37 @@ D. The extra light will cancel out the extra CO2
 
 Correct Answer: C
 
-Feedback: That's right! This is exactly what commercial greenhouses do. Increasing both CO2 and light maximizes photosynthesis, leading to faster plant growth and more biomass. In the 'Maximum Growth' simulation scenario, increasing both CO2 and sunlight to high levels caused photosynthesis to max out and tree biomass to grow rapidly. This is exactly how commercial greenhouses boost crop yields.
+Feedback: That's right! This is exactly what commercial greenhouses do. Increasing both CO2 and light maximizes photosynthesis, leading to faster plant growth and more biomass. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (CO2 in Air, Sunlight), but they can take action on internal components (Photosynthesis Rate, Tree Biomass). They need to decide which action would be most effective based on what the model shows.
+
+A giant tree weighs 1 million pounds. Where do you think most of that mass came from?
+
+A. The soil it grows in
+B. The water it drinks
+C. Carbon dioxide (CO2) from the air
+D. Sunlight energy
+
+Correct Answer: C
+
+Feedback: That's right! About 95% of a tree's mass comes from carbon dioxide in the air. Trees pull CO2 through their leaves and use photosynthesis to turn it into solid wood. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: A
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

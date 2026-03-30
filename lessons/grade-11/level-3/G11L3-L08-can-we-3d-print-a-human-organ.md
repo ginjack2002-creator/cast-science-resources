@@ -918,86 +918,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-The 200-micrometer nutrient diffusion limit is the most critical constraint in bioprinting. What does this limit mean for tissue engineering?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. Cells cannot be printed smaller than 200 micrometers in diameter
-B. Every cell in bioprinted tissue must be within 200 micrometers of a blood capillary or nutrient source, or it will die from oxygen and nutrient deprivation within hours
-C. Bioprinted tissues cannot exceed 200 micrometers in total width
-D. The printer nozzle cannot be smaller than 200 micrometers
-
-Correct Answer: B
-
-Feedback: Correct. Oxygen and nutrients can only diffuse approximately 200 micrometers through tissue before being consumed. Beyond this distance, cells die. This is why vascularization, creating blood vessel networks, is the central challenge of printing thick tissues. The diffusion limit means cells cannot survive beyond 200 micrometers from a nutrient source. In native tissue, capillaries ensure every cell is within this distance. Without engineered blood vessel networks, bioprinted tissue thicker than ~400 micrometers will develop a necrotic core.
-
----
-
-### Question 2
-
-Why is vascularization considered the single greatest challenge in bioprinting functional organs?
-
-A. Blood vessels are made of only one cell type, making them simple but fragile
-B. Organs like the kidney contain over 100 miles of blood vessels reaching every functional unit, and replicating this density and complexity at the capillary scale with current printing technology is beyond our resolution
-C. Vascularization is only needed for organs larger than the heart
-D. Blood vessels cannot be made from the patient's own cells
-
-Correct Answer: B
-
-Feedback: Correct. The complexity and density of native vascular networks is staggering. A human kidney contains ~100 miles of blood vessels branching down to capillary scale. Printing this network at the required resolution while maintaining cell viability is the defining engineering challenge. Native organs have extraordinarily dense vascular networks. Replicating networks that branch from arteries down to capillaries at ~10-micrometer scale, while maintaining cell viability during the printing process, exceeds current bioprinting resolution by orders of magnitude.
-
----
-
-### Question 3
-
-Bioink must balance multiple competing requirements during the printing process. Which property conflict is most challenging to resolve?
-
-A. Color versus transparency of the printed material
-B. The bioink must be viscous enough to hold its shape during printing but soft enough that cells survive the shear stress of being pushed through the print nozzle
-C. The bioink must be both hot and cold simultaneously
-D. The bioink must contain both living cells and plastic polymers
-
-Correct Answer: B
-
-Feedback: Correct. This is the central bioink dilemma: structural integrity requires high viscosity (stiff material), but cell viability requires low shear stress (soft material). These requirements directly conflict, and finding the optimal balance is a core engineering challenge. The bioink paradox: it must be stiff enough to maintain its printed shape (high viscosity) yet gentle enough that cells survive the mechanical forces of extrusion (low shear stress). These requirements are fundamentally in tension.
-
----
-
-### Question 4
-
-After printing, bioprinted tissue requires weeks to months of maturation in a bioreactor. What happens during this maturation period?
-
-A. The printer continues to add new layers to the construct
-B. Cells proliferate, form cell-cell junctions, deposit extracellular matrix, and develop the mechanical and functional properties of native tissue
-C. The scaffold material is injected with drugs to prevent rejection
-D. The construct is frozen to preserve it for future transplantation
-
-Correct Answer: B
-
-Feedback: Correct. Immediately after printing, tissue is structurally and functionally immature. During maturation, cells establish connections, produce their own structural matrix, and develop specialized functions. A bioprinted heart patch must learn to contract rhythmically during this period. Maturation is the period where printed cells transition from a passive arrangement to an active, functional tissue. Cells multiply, establish junctions, produce extracellular matrix, and develop specialized tissue-specific functions like contraction or secretion.
-
----
-
-### Question 5
-
-Using a patient's own cells (autologous cells) for bioprinting eliminates immune rejection but creates a different challenge. What is it?
-
-A. Autologous cells cannot survive the printing process
-B. Growing sufficient quantities of a patient's cells requires weeks of cell culture, creating a time constraint that is incompatible with emergency transplantation needs
-C. Autologous cells are always of lower quality than donor cells
-D. Autologous cells cannot differentiate into specialized cell types
-
-Correct Answer: B
-
-Feedback: Correct. While autologous cells eliminate rejection, the weeks required to culture enough cells from a small biopsy mean this approach cannot serve patients who need immediate transplantation. This creates a trade-off between immune compatibility and time-to-treatment. The trade-off is time versus compatibility. Autologous cells provide perfect immune matching but require weeks of culture to reach sufficient quantities. For patients deteriorating rapidly on transplant waiting lists, this timeline may be too long.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Print Resolution, Cell Viability Rate, Vascularization Depth, Scaffold Degradation Rate, Nutrient Diffusion Limit, Immune Compatibility, Functional Maturation. Some components are external (Print Resolution, Nutrient Diffusion Limit) and some are internal (Cell Viability Rate, Vascularization Depth, Scaffold Degradation Rate, Immune Compatibility, Functional Maturation). The student needs to understand what each component represents and how they are organized.
 
 A student's bioprinting model shows that increasing print resolution from 200 to 50 micrometers improves tissue architecture fidelity by 60% but reduces cell viability from 90% to 65% due to increased shear stress. How should this trade-off be evaluated?
 
@@ -1008,11 +933,15 @@ D. The 50-micrometer resolution should be used for all tissue types regardless o
 
 Correct Answer: B
 
-Feedback: Correct. Architecture is meaningless if cells die. The optimal print resolution varies by tissue type: complex organs may need 50-micrometer precision, but only if cell viability remains above the threshold for functional maturation. Resolution and viability are coupled through shear stress. Finer printing requires smaller nozzles, generating more shear force. The optimal resolution is tissue-specific: some tissues require architectural precision, others prioritize cell survival. Neither variable can be maximized independently.
+Feedback: Correct. Architecture is meaningless if cells die. The optimal print resolution varies by tissue type: complex organs may need 50-micrometer precision, but only if cell viability remains above the threshold for functional maturation. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Print Resolution increases, Cell Viability Rate decreases; when Vascularization Depth increases, Functional Maturation increases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that scaffold degradation rate must match the rate of cell-produced extracellular matrix deposition. If the scaffold degrades faster than cells produce matrix, what is the structural consequence?
 
@@ -1023,11 +952,15 @@ D. The degradation rate has no effect on construct integrity after printing
 
 Correct Answer: B
 
-Feedback: Correct. The scaffold provides mechanical support during maturation. If it degrades before cells produce their own structural matrix, the construct loses its shape and collapses. Matching these rates is critical for successful tissue engineering. The scaffold is a temporary structure that must persist until cells produce their own matrix. If degradation outpaces matrix production, the construct loses mechanical support and collapses. This timing mismatch is a common failure mode in bioprinted tissues.
+Feedback: Correct. The scaffold provides mechanical support during maturation. If it degrades before cells produce their own structural matrix, the construct loses its shape and collapses. Matching these rates is critical for successful tissue engineering. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Print Resolution increases, Cell Viability Rate decreases and when Vascularization Depth increases, Functional Maturation increases and when Nutrient Diffusion Limit increases, Vascularization Depth decreases. The student changes one variable to see how the whole system responds.
 
 A student models two bioprinting approaches for a heart patch: Approach A achieves immediate structural integrity but requires donor cells with rejection risk. Approach B uses autologous cells with no rejection but requires 6 weeks of cell culture before printing. For a patient with heart failure deteriorating over 2-3 months, which analysis best evaluates these options?
 
@@ -1038,11 +971,15 @@ D. Both approaches are equivalent because maturation time is the same
 
 Correct Answer: B
 
-Feedback: Correct. This is a patient-specific clinical trade-off. The immune compatibility advantage of autologous cells provides long-term benefit, but only if the patient survives the cell culture delay. Medical decision-making must weigh acute survival against long-term graft success. The optimal approach depends on the individual patient's condition. A rapidly deteriorating patient may not survive the 6-week culture period, making donor cells necessary despite rejection risk. A more stable patient benefits from the immune compatibility of autologous cells.
+Feedback: Correct. This is a patient-specific clinical trade-off. The immune compatibility advantage of autologous cells provides long-term benefit, but only if the patient survives the cell culture delay. Medical decision-making must weigh acute survival against long-term graft success. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model reveals that bioprinted tissue thicker than 1 mm develops necrotic cores within 24 hours without vascularization, regardless of how perfectly the cells were printed. What does this demonstrate about the hierarchy of engineering challenges in bioprinting?
 
@@ -1053,11 +990,15 @@ D. The necrotic core will eventually be cleared by the body's immune system
 
 Correct Answer: B
 
-Feedback: Correct. Vascularization is the hierarchical gating constraint. All other bioprinting advances are necessary but insufficient without solving the vascular challenge. A perfectly printed organ with no blood supply is a dead organ. The model demonstrates a hierarchy of constraints: vascularization sits at the top. Without adequate blood vessel networks, improvements in every other parameter, resolution, bioink, cell viability, and scaffold design, cannot produce a viable thick tissue. Vascularization is the prerequisite for all other advances.
+Feedback: Correct. Vascularization is the hierarchical gating constraint. All other bioprinting advances are necessary but insufficient without solving the vascular challenge. A perfectly printed organ with no blood supply is a dead organ. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Print Resolution, Nutrient Diffusion Limit), but they can take action on internal components (Cell Viability Rate, Vascularization Depth, Scaffold Degradation Rate, Immune Compatibility, Functional Maturation). They need to decide which action would be most effective based on what the model shows.
 
 Based on the bioprinting model, which conclusion about the relationship between construct complexity and functional maturation time is best supported by the simulation data?
 
@@ -1068,27 +1009,18 @@ D. Simpler constructs require longer maturation because they have fewer cells to
 
 Correct Answer: B
 
-Feedback: Correct. Complex constructs face a sequential development challenge: different tissue types must mature in coordination, interfaces must form between tissues, and vascular networks must integrate with functional units. This orchestration requires substantially more time than simple, single-tissue constructs. Complexity and maturation time have a nonlinear relationship. Simple tissue patches need only one cell type to mature. Multi-tissue constructs require coordinated development of multiple cell populations, tissue-tissue interface formation, and vascular integration, each adding time and complexity.
+Feedback: Correct. Complex constructs face a sequential development challenge: different tissue types must mature in coordination, interfaces must form between tissues, and vascular networks must integrate with functional units. This orchestration requires substantially more time than simple, single-tissue constructs. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-ESS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-How do you think the Grand Canyon was formed?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
 
-A. People dug it with shovels
-B. Water from a river slowly carved it over millions of years
-C. It was always there since Earth was created
-D. A giant earthquake split the ground open
-
-Correct Answer: B
-
-Feedback: That is right! The Grand Canyon was carved by the Colorado River over about 6 million years. Water is a powerful force that shapes the land very slowly. The Grand Canyon was carved by the Colorado River over millions of years. Even though water seems soft, it can carve through rock when given enough time.
-
----
-
-### Question 2
-
-What do you think happens when a lot of rain falls on a dirt hill?
-
-A. Nothing changes
-B. The dirt turns into rock
-C. The water washes some of the dirt away
-D. The hill gets taller
-
-Correct Answer: C
-
-Feedback: Good thinking! When rain falls on a dirt hill, the water picks up soil and carries it downhill. This process of water moving soil is called erosion. When water flows over dirt, it picks up loose soil and carries it away. This is called erosion. You might have seen dirt washing away during a rainstorm.
-
----
-
-### Question 3
-
-What is the word for tiny pieces of sand, mud, and dirt that settle in layers?
-
-A. Fossils
-B. Magnets
-C. Sediment
-D. Pollution
-
-Correct Answer: C
-
-Feedback: Correct! Sediment is the name for tiny pieces of sand, mud, and dirt that settle in layers on the ground or at the bottom of water. Tiny pieces of sand, mud, and dirt that settle in layers are called sediment. Rivers carry sediment and drop it off when the water slows down.
-
----
-
-### Question 4
-
-Do you think a fast river or a slow stream moves more rocks and soil?
-
-A. A slow stream moves more because it has more time
-B. They move the same amount
-C. A fast river moves more because it has more power
-D. Neither one can move rocks
-
-Correct Answer: C
-
-Feedback: You got it! A fast river has more power to pick up and carry rocks and soil. The faster water flows, the bigger the pieces it can move. Faster water has more energy and more power. A fast river can pick up and move much bigger pieces of rock and soil than a slow, gentle stream.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Water Flow, Erosion Strength, Land Shape Change. Some components are external (Water Flow) and some are internal (Erosion Strength, Land Shape Change). The student needs to understand what each component represents and how they are organized.
 
 In the erosion model, when Water Flow increases, what happens to Erosion Strength?
 
@@ -904,11 +844,15 @@ D. The water stops flowing
 
 Correct Answer: B
 
-Feedback: Correct! Water Flow and Erosion Strength have a positive relationship. Faster, stronger water can pick up more rocks and soil, causing more erosion. In the model, Water Flow and Erosion Strength have a positive relationship. When water flows faster, it has more energy to pick up and carry rocks and soil.
+Feedback: Correct! Water Flow and Erosion Strength have a positive relationship. Faster, stronger water can pick up more rocks and soil, causing more erosion. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Water Flow increases, Erosion Strength increases; when Erosion Strength increases, Land Shape Change increases. The student is trying to understand why these relationships are positive or negative.
 
 What is the difference between weathering and erosion?
 
@@ -919,11 +863,15 @@ D. Weathering only happens in winter; erosion only happens in summer
 
 Correct Answer: B
 
-Feedback: Exactly! Weathering is the breaking apart of rocks by water, ice, wind, or roots. Erosion is when water, wind, or ice picks up the broken pieces and carries them somewhere else. Weathering and erosion are two different processes. Weathering breaks rocks into smaller pieces. Then erosion picks up those pieces and carries them to a new location.
+Feedback: Exactly! Weathering is the breaking apart of rocks by water, ice, wind, or roots. Erosion is when water, wind, or ice picks up the broken pieces and carries them somewhere else. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Water Flow increases, Erosion Strength increases and when Erosion Strength increases, Land Shape Change increases. The student changes one variable to see how the whole system responds.
 
 When water slows down and drops the rocks and soil it was carrying, this is called:
 
@@ -934,11 +882,15 @@ D. Evaporation
 
 Correct Answer: C
 
-Feedback: Right! Deposition is when water slows down and drops the material it was carrying. This is how deltas, beaches, and sandbars are formed. When moving water slows down, it drops the rocks and soil it was carrying. This process is called deposition. It is the opposite of erosion and creates new landforms like deltas and beaches.
+Feedback: Right! Deposition is when water slows down and drops the material it was carrying. This is how deltas, beaches, and sandbars are formed. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the flooding river scenario, Erosion Strength and Land Shape Change were both very high. Why?
 
@@ -949,25 +901,37 @@ D. Because Land Shape Change is not connected to Erosion Strength
 
 Correct Answer: B
 
-Feedback: You got it! Flooding rivers have enormous energy. The powerful water picks up large rocks and carves deep channels, causing major changes to the shape of the land. During a flood, the water flows very fast and has enormous energy. This strong flow picks up large amounts of rock and soil and can carve deep channels, causing big changes to the land.
+Feedback: You got it! Flooding rivers have enormous energy. The powerful water picks up large rocks and carves deep channels, causing major changes to the shape of the land. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Water Flow), but they can take action on internal components (Erosion Strength, Land Shape Change). They need to decide which action would be most effective based on what the model shows.
+
+How do you think the Grand Canyon was formed?
+
+A. People dug it with shovels
+B. Water from a river slowly carved it over millions of years
+C. It was always there since Earth was created
+D. A giant earthquake split the ground open
+
+Correct Answer: B
+
+Feedback: That is right! The Grand Canyon was carved by the Colorado River over about 6 million years. Water is a powerful force that shapes the land very slowly. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-
----
 
 ## Resources
 

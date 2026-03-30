@@ -885,77 +885,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the outermost layer of the Earth called?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-ESS2-2 + CCC4 (Systems and System Models)
 
-A. Mantle
-B. Core
-C. Crust
-D. Magma
-
-Correct Answer: C
-
-Feedback: Correct! The crust is the thin, solid outermost layer of Earth where we live. It sits on top of the mantle. Not quite. The outermost layer of the Earth is the crust. The mantle is below the crust, and the core is at Earth's center.
-
----
-
-### Question 2
-
-Why do you think earthquakes happen in certain places more than others?
-
-A. Earthquakes happen randomly all over the planet
-B. Earthquakes only happen near oceans
-C. Earthquakes happen where pieces of Earth's surface meet and push against each other
-D. Earthquakes are caused by underground explosions
-
-Correct Answer: C
-
-Feedback: Correct! Earthquakes occur most often at plate boundaries, where large pieces of Earth's crust (tectonic plates) meet and interact. Not quite. Earthquakes are not random. They occur most frequently at plate boundaries, where large sections of Earth's crust push together, pull apart, or slide past each other.
-
----
-
-### Question 3
-
-What do you think causes the ground to shake during an earthquake?
-
-A. Wind pushing on the ground
-B. The Moon's gravity pulling on Earth
-C. Energy released when rocks suddenly break or slip
-D. Heavy rain soaking into the ground
-
-Correct Answer: C
-
-Feedback: Correct! Earthquakes happen when built-up stress in rocks is suddenly released as energy, creating seismic waves that shake the ground. Not quite. Earthquakes occur when stress builds up in rocks at plate boundaries and is suddenly released as energy. This energy travels as seismic waves that shake the ground.
-
----
-
-### Question 4
-
-What is beneath the solid ground you walk on?
-
-A. More solid rock all the way to the center of the Earth
-B. Empty space and underground caves
-C. Layers of increasingly hot rock, some of which flows very slowly
-D. Water and underground rivers
-
-Correct Answer: C
-
-Feedback: Correct! Beneath the crust are layers of increasingly hot rock. The mantle is semi-solid and flows very slowly, and the core is extremely hot metal. Not quite. Beneath the surface are layers of rock that get hotter with depth. The mantle is semi-solid rock that flows very slowly over millions of years, driven by heat from the core.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plate Movement Speed, Mantle Heat, Rock Density, Boundary Friction. Some components are external (Mantle Heat) and some are internal (Plate Movement Speed, Rock Density, Boundary Friction). The student needs to understand what each component represents and how they are organized.
 
 What drives the movement of tectonic plates?
 
@@ -966,11 +906,15 @@ D. Wind and ocean currents pushing on the continents
 
 Correct Answer: B
 
-Feedback: Correct! Heat from Earth's core creates convection currents in the mantle. Hot rock rises, cool rock sinks, and this circular flow drags tectonic plates along. Not quite. Tectonic plates are moved by convection currents in the mantle. Heat from Earth's core makes rock rise, and cooler rock sinks, creating a slow circular flow that drags plates.
+Feedback: Correct! Heat from Earth's core creates convection currents in the mantle. Hot rock rises, cool rock sinks, and this circular flow drags tectonic plates along. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-ESS2-2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Mantle Heat increases, Plate Movement Speed increases; when Plate Movement Speed increases, Boundary Friction increases. The student is trying to understand why these relationships are positive or negative.
 
 In the tectonic model, what happens when Boundary Friction is set to maximum?
 
@@ -981,11 +925,15 @@ D. Volcanic activity increases because friction melts rock
 
 Correct Answer: C
 
-Feedback: Correct! Maximum friction locks plates together, allowing enormous stress to accumulate. When the friction finally fails, all that energy releases at once as a powerful earthquake. Not quite. High friction locks plates together, preventing small releases. Energy builds up over time, and when the plates finally slip, the result is a large, powerful earthquake.
+Feedback: Correct! Maximum friction locks plates together, allowing enormous stress to accumulate. When the friction finally fails, all that energy releases at once as a powerful earthquake. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-ESS2-2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Mantle Heat increases, Plate Movement Speed increases and when Plate Movement Speed increases, Boundary Friction increases and when Boundary Friction increases, Earthquake Intensity increases. The student changes one variable to see how the whole system responds.
 
 Which explains why about 90% of earthquakes occur along the Ring of Fire?
 
@@ -996,11 +944,15 @@ D. The Ring of Fire receives more heat from the Sun
 
 Correct Answer: B
 
-Feedback: Correct! The Ring of Fire traces the boundaries of the Pacific Plate, where it interacts with many other plates. Plate boundary interactions cause earthquakes and volcanoes. Not quite. The Ring of Fire marks the edges of the Pacific Plate, where it meets several other tectonic plates. These boundary zones are where plates collide, separate, or slide past each other, causing earthquakes and volcanoes.
+Feedback: Correct! The Ring of Fire traces the boundaries of the Pacific Plate, where it interacts with many other plates. Plate boundary interactions cause earthquakes and volcanoes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-ESS2-2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A coastal region has not had a major earthquake in 150 years, even though it sits on a plate boundary. Based on the tectonic model, what should scientists predict?
 
@@ -1011,25 +963,37 @@ D. Earthquakes will never happen there again
 
 Correct Answer: B
 
-Feedback: Correct! A long quiet period at a plate boundary means friction is locking the plates while stress accumulates. The longer the quiet, the bigger the eventual release. Not quite. Plate boundaries don't stop being active. A long period without earthquakes means friction is holding the plates locked while stress builds. This makes a large earthquake more likely, not less.
+Feedback: Correct! A long quiet period at a plate boundary means friction is locking the plates while stress accumulates. The longer the quiet, the bigger the eventual release. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-ESS2-2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Mantle Heat), but they can take action on internal components (Plate Movement Speed, Rock Density, Boundary Friction). They need to decide which action would be most effective based on what the model shows.
+
+What is the outermost layer of the Earth called?
+
+A. Mantle
+B. Core
+C. Crust
+D. Magma
+
+Correct Answer: C
+
+Feedback: Correct! The crust is the thin, solid outermost layer of Earth where we live. It sits on top of the mantle. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: C
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-ESS2-2, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI MS-ESS2-2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-ESS2-2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-ESS2-2, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-ESS2-2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

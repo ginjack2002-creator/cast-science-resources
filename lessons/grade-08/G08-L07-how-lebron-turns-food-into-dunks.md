@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-5, MS-LS1-7.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the primary source of energy for the human body?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS1-5, MS-LS1-7 + CCC4 (Systems and System Models)
 
-A. Water
-B. Oxygen
-C. Food (glucose and other nutrients)
-D. Sunlight
-
-Correct Answer: C
-
-Feedback: Correct! Food, particularly glucose from carbohydrates, provides the chemical energy that cells break down to power all body functions. While water, oxygen, and sunlight are important for life, food is the primary energy source. Glucose from digested food is the main fuel that cells use to produce energy.
-
----
-
-### Question 2
-
-Why do you breathe harder during exercise?
-
-A. Your lungs need to cool down from the heat of exercise
-B. Your muscles need more oxygen to produce energy for increased activity
-C. Breathing harder pushes more blood to your muscles
-D. Exercise makes your lungs bigger so they need more air
-
-Correct Answer: B
-
-Feedback: Correct! During exercise, your muscles demand more energy. Producing that energy requires more oxygen, so your breathing rate increases to deliver it. Your muscles need oxygen to break down glucose and produce energy (ATP). During exercise, energy demand increases dramatically, so your body breathes faster to deliver more oxygen to working muscles.
-
----
-
-### Question 3
-
-What happens to the food you eat after it is digested?
-
-A. It disappears completely and is used up
-B. It is broken down into smaller molecules that are absorbed into the bloodstream
-C. It stays in your stomach until you need energy
-D. It is converted directly into muscle tissue
-
-Correct Answer: B
-
-Feedback: Correct! Digestion breaks food into small molecules like glucose, amino acids, and fatty acids that are absorbed into the bloodstream and delivered to cells throughout the body. During digestion, food is broken down into small molecules (like glucose) that pass into the bloodstream. These molecules are then transported to cells where they are used for energy or building materials.
-
----
-
-### Question 4
-
-What is ATP?
-
-A. A type of muscle fiber that contracts during exercise
-B. A protein that builds new cells
-C. A molecule that stores and releases energy for cell activities
-D. A hormone that regulates body temperature
-
-Correct Answer: C
-
-Feedback: Correct! ATP (adenosine triphosphate) is the 'energy currency' of cells. It stores chemical energy that is released when cells need power for activities like muscle contraction. ATP (adenosine triphosphate) is a molecule that serves as the universal energy currency of cells. It is produced during cellular respiration and releases energy when cells need to perform work.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Food Intake (Glucose), Oxygen Supply, ATP Production, Athletic Output. Some components are external (Food Intake (Glucose), Oxygen Supply) and some are internal (ATP Production, Athletic Output). The student needs to understand what each component represents and how they are organized.
 
 In your model, when Food Intake (Glucose) was set to zero, ATP Production dropped to near zero and Athletic Output collapsed. This demonstrates that:
 
@@ -967,11 +907,15 @@ D. ATP can be produced from water when glucose is unavailable
 
 Correct Answer: B
 
-Feedback: Correct! The equation for cellular respiration (Glucose + Oxygen -> CO2 + Water + ATP) shows that glucose is a required reactant. Without glucose, the reaction cannot proceed and no ATP is produced. Cellular respiration requires both glucose and oxygen as reactants. Without glucose, the reaction cannot occur, and cells cannot produce the ATP needed to power muscle contraction and all other cellular activities.
+Feedback: Correct! The equation for cellular respiration (Glucose + Oxygen -> CO2 + Water + ATP) shows that glucose is a required reactant. Without glucose, the reaction cannot proceed and no ATP is produced. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS1-5, MS-LS1-7 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Food Intake increases, ATP Production increases; when Oxygen Supply increases, ATP Production increases. The student is trying to understand why these relationships are positive or negative.
 
 Your model showed that during 'Maximum Effort,' both Food Intake and Oxygen Supply needed to be high for peak Athletic Output. If oxygen supply is limited (like exercising at high altitude), what does the model predict will happen?
 
@@ -982,11 +926,15 @@ D. The body switches to using carbon dioxide instead of oxygen
 
 Correct Answer: B
 
-Feedback: Correct! Oxygen is a required reactant in aerobic cellular respiration. When oxygen is limited, cells cannot fully break down glucose, reducing ATP production and therefore athletic performance. The model clearly shows that both glucose and oxygen are needed for maximum ATP production. Limited oxygen means cells switch to anaerobic respiration, which produces far less ATP and generates lactic acid, reducing performance.
+Feedback: Correct! Oxygen is a required reactant in aerobic cellular respiration. When oxygen is limited, cells cannot fully break down glucose, reducing ATP production and therefore athletic performance. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS1-5, MS-LS1-7 + CCC5 (Energy and Matter)
+
+A student runs a simulation of the model. The model shows that when Food Intake increases, ATP Production increases and when Oxygen Supply increases, ATP Production increases and when ATP Production increases, Athletic Output increases. The student changes one variable to see how the whole system responds.
 
 The chemical equation for cellular respiration is: Glucose + Oxygen -> Carbon Dioxide + Water + ATP (energy). A student claims that food 'gives you energy.' Using the model, which is a more scientifically accurate statement?
 
@@ -997,11 +945,15 @@ D. Food energy comes from the oxygen you breathe, not the food itself
 
 Correct Answer: B
 
-Feedback: Correct! Energy is not created from food. The chemical energy stored in glucose bonds is released through cellular respiration and transferred to ATP. The atoms are rearranged into new molecules (CO2 and H2O). Food does not create energy or burn in the stomach. During cellular respiration, the chemical bonds in glucose are broken and atoms are rearranged into CO2 and H2O. The energy from those bonds is transferred to ATP molecules.
+Feedback: Correct! Energy is not created from food. The chemical energy stored in glucose bonds is released through cellular respiration and transferred to ATP. The atoms are rearranged into new molecules (CO2 and H2O). If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS1-5, MS-LS1-7 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An athlete eats a large meal and then immediately tries to run a race but performs poorly. Using your model, which explanation best accounts for this?
 
@@ -1012,25 +964,37 @@ D. The model does not account for meal timing
 
 Correct Answer: B
 
-Feedback: Correct! The model shows that Food Intake (Glucose) is the input. Digestion must first convert food into glucose and deliver it via the bloodstream. This takes time, so eating immediately before activity means glucose is not yet available to muscles. The model uses glucose as the food input, but food must first be digested into glucose before it can enter cellular respiration. Digestion and absorption take time, so a meal eaten immediately before exercise cannot yet supply glucose to working muscles.
+Feedback: Correct! The model shows that Food Intake (Glucose) is the input. Digestion must first convert food into glucose and deliver it via the bloodstream. This takes time, so eating immediately before activity means glucose is not yet available to muscles. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS1-5, MS-LS1-7 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Food Intake (Glucose), Oxygen Supply), but they can take action on internal components (ATP Production, Athletic Output). They need to decide which action would be most effective based on what the model shows.
+
+What is the primary source of energy for the human body?
+
+A. Water
+B. Oxygen
+C. Food (glucose and other nutrients)
+D. Sunlight
+
+Correct Answer: C
+
+Feedback: Correct! Food, particularly glucose from carbohydrates, provides the chemical energy that cells break down to power all body functions. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS1-5, MS-LS1-7, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS1-5, MS-LS1-7, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS1-5, MS-LS1-7, CCC5)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS1-5, MS-LS1-7, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS1-5, MS-LS1-7, CCC5)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

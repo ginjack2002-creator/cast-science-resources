@@ -910,86 +910,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A 16-year-old naturally falls asleep at 11:30 PM and wakes at 8:30 AM on weekends, but must wake at 6:30 AM on school days. What biological factor most likely explains this pattern?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.3 + CCC4 (Systems and System Models)
 
-A. Teenagers are lazier than adults and choose to sleep later
-B. The adolescent circadian clock shifts approximately 2 hours later during puberty, delaying natural sleep onset
-C. Teenagers have a different type of sleep that requires more hours
-D. Weekend sleep patterns are abnormal and school-day patterns represent the body's true rhythm
-
-Correct Answer: B
-
-Feedback: Correct. During puberty, the suprachiasmatic nucleus shifts the circadian clock approximately 2 hours later, causing melatonin to rise around 11 PM instead of 9 PM. This is a biological change, not a behavioral choice. Incorrect. Adolescent circadian rhythms shift 1-2 hours later during puberty due to changes in the suprachiasmatic nucleus. Melatonin onset occurs later, making early wake times fight fundamental biology.
-
----
-
-### Question 2
-
-What role does melatonin play in the sleep-wake cycle?
-
-A. It provides energy to the brain during sleep so memories can be consolidated
-B. It is a hormone released in response to darkness that signals the body to prepare for sleep
-C. It is a neurotransmitter that keeps the brain active during REM sleep
-D. It is produced by the eyes to protect them from damage during sleep
-
-Correct Answer: B
-
-Feedback: Correct. Melatonin is produced by the pineal gland in response to darkness, signaling the body to prepare for sleep. Production begins about 2 hours before natural sleep onset and is suppressed by blue light. Incorrect. Melatonin is a hormone produced by the pineal gland when darkness is detected. It signals the body to prepare for sleep and is suppressed by blue light exposure from screens.
-
----
-
-### Question 3
-
-A student uses their phone in bed for 2 hours before trying to sleep. Which physiological effect is most likely to occur?
-
-A. The phone's warmth increases body temperature, making sleep impossible
-B. Blue light from the screen suppresses melatonin production, delaying sleep onset by 30-90 minutes
-C. The phone emits sound waves that interfere with brain wave patterns
-D. Phone use has no measurable effect on sleep biology
-
-Correct Answer: B
-
-Feedback: Correct. Blue-wavelength light from screens directly suppresses melatonin production in the pineal gland, delaying sleep onset by 30-90 minutes even when the person feels tired. Incorrect. Blue light from screens suppresses the pineal gland's melatonin production, the hormone that signals the body to prepare for sleep. This delays sleep onset by 30-90 minutes.
-
----
-
-### Question 4
-
-Sleep pressure refers to which biological phenomenon?
-
-A. The social pressure teenagers feel to stay up late with friends
-B. The physical compression of brain tissue during sleep
-C. The accumulating drive to sleep caused by the buildup of adenosine in the brain during waking hours
-D. The pressure from parents and schools to maintain regular sleep schedules
-
-Correct Answer: C
-
-Feedback: Correct. Sleep pressure results from adenosine accumulation during waking hours. The longer you are awake, the stronger the drive to sleep. Caffeine works by temporarily blocking adenosine receptors. Incorrect. Sleep pressure is a biological drive caused by adenosine buildup in the brain during waking hours. It increases the longer you stay awake and is cleared during sleep, especially deep sleep.
-
----
-
-### Question 5
-
-Why might getting 6 hours of sleep from 2 AM to 8 AM produce different cognitive outcomes than 6 hours from 10 PM to 4 AM, even though total hours are identical?
-
-A. Sleep quality is identical regardless of timing; only total hours matter
-B. The brain only needs sleep between midnight and 6 AM
-C. Cognitive performance depends on alignment between sleep timing and the circadian rhythm, not just total sleep hours
-D. Earlier sleep is always better because the body produces more growth hormone before midnight
-
-Correct Answer: C
-
-Feedback: Correct. Sleep architecture and restorative quality depend on alignment with the circadian rhythm. The same total hours produce different outcomes depending on when they occur relative to the body's biological clock. Incorrect. It is not just total hours but WHEN those hours occur that matters. Sleep timing must align with the circadian rhythm for optimal cognitive performance and restorative sleep architecture.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Light Exposure, Circadian Phase, Melatonin Level, Sleep Pressure, Cognitive Performance. Some components are external (Light Exposure) and some are internal (Circadian Phase, Melatonin Level, Sleep Pressure, Cognitive Performance). The student needs to understand what each component represents and how they are organized.
 
 Based on the sleep model, what cascade of effects does the model predict when a teenager experiences 5 consecutive school nights with a 6:30 AM wake time and an 11 PM circadian sleep onset?
 
@@ -1000,11 +925,15 @@ D. Melatonin production will shift earlier to compensate for the alarm time
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that sleep debt is cumulative. Each night of insufficient sleep compounds cognitive impairment, and weekend catch-up sleep only partially restores function because circadian misalignment cannot be fully corrected by sleeping in. Incorrect. The model predicts that sleep debt accumulates over the school week because the adolescent circadian clock cannot simply adjust to early wake times. Each night of lost sleep compounds cognitive impairment, and weekend recovery is only partial.
+Feedback: Correct. The model shows that sleep debt is cumulative. Each night of insufficient sleep compounds cognitive impairment, and weekend catch-up sleep only partially restores function because circadian misalignment cannot be fully corrected by sleeping in. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Light Exposure increases, Circadian Phase increases; when Circadian Phase increases, Melatonin Level increases. The student is trying to understand why these relationships are positive or negative.
 
 The model includes five components: Light Exposure, Circadian Phase, Melatonin Level, Sleep Pressure, and Cognitive Performance. If a student eliminates screen use after 8 PM, which component is FIRST directly affected, and what is the downstream cascade?
 
@@ -1015,11 +944,15 @@ D. Cognitive Performance improves first, which then reduces the need for sleep
 
 Correct Answer: B
 
-Feedback: Correct. Reducing evening light exposure is the first direct change, which allows melatonin production to begin on its natural schedule, improving sleep onset timing and downstream cognitive performance. Incorrect. The model shows that Light Exposure is the input variable most directly changed. Reducing blue light allows Melatonin Level to rise on schedule, which improves sleep onset timing and the downstream cascade to Cognitive Performance.
+Feedback: Correct. Reducing evening light exposure is the first direct change, which allows melatonin production to begin on its natural schedule, improving sleep onset timing and downstream cognitive performance. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Light Exposure increases, Circadian Phase increases and when Circadian Phase increases, Melatonin Level increases and when Melatonin Level increases, Sleep Pressure increases. The student changes one variable to see how the whole system responds.
 
 The American Academy of Pediatrics recommends high school start times no earlier than 8:30 AM. Based on the sleep model, which evidence most strongly supports this recommendation?
 
@@ -1030,11 +963,15 @@ D. The recommendation is based on teacher preferences, not student biology
 
 Correct Answer: B
 
-Feedback: Correct. The model provides biological evidence: adolescent melatonin onset occurs around 11 PM, natural wake time is 8-9 AM, and cognitive performance depends on sleep timing alignment with the circadian rhythm. A 8:30 AM start accommodates this biology. Incorrect. The recommendation is grounded in circadian biology. The adolescent circadian shift delays melatonin onset to ~11 PM, making the natural wake time 8-9 AM. Starting school at 8:30 AM allows sleep timing to align with the biological clock.
+Feedback: Correct. The model provides biological evidence: adolescent melatonin onset occurs around 11 PM, natural wake time is 8-9 AM, and cognitive performance depends on sleep timing alignment with the circadian rhythm. A 8:30 AM start accommodates this biology. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student adds Caffeine Level as a new component to the model. Based on caffeine's mechanism of action, how would this component interact with Sleep Pressure?
 
@@ -1045,11 +982,15 @@ D. Caffeine has no interaction with Sleep Pressure because they operate in diffe
 
 Correct Answer: B
 
-Feedback: Correct. Caffeine blocks adenosine receptors, which masks the sensation of sleep pressure without clearing the accumulated adenosine. When caffeine wears off (half-life 5-6 hours), the masked sleep pressure hits at full force. Incorrect. Caffeine does not reduce Sleep Pressure. It blocks adenosine receptors, hiding the sleep signal. The adenosine continues accumulating, and when caffeine's effects wear off (half-life 5-6 hours), the full sleep pressure returns.
+Feedback: Correct. Caffeine blocks adenosine receptors, which masks the sensation of sleep pressure without clearing the accumulated adenosine. When caffeine wears off (half-life 5-6 hours), the masked sleep pressure hits at full force. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Light Exposure), but they can take action on internal components (Circadian Phase, Melatonin Level, Sleep Pressure, Cognitive Performance). They need to decide which action would be most effective based on what the model shows.
 
 Schools that shifted to later start times reported improved grades, attendance, and mental health. Which component interaction in the sleep model best explains ALL three improvements simultaneously?
 
@@ -1060,27 +1001,18 @@ D. Students are simply happier about sleeping later, which creates a placebo eff
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that Cognitive Performance is downstream of circadian-aligned sleep. When sleep timing matches the biological clock, cognitive function improves across multiple domains: memory consolidation (grades), alertness (attendance), and emotional regulation (mental health). Incorrect. The model predicts that aligning sleep with the circadian rhythm improves the umbrella variable of Cognitive Performance, which encompasses memory consolidation (grades), daytime alertness (attendance), and emotional regulation (mental health).
+Feedback: Correct. The model shows that Cognitive Performance is downstream of circadian-aligned sleep. When sleep timing matches the biological clock, cognitive function improves across multiple domains: memory consolidation (grades), alertness (attendance), and emotional regulation (mental health). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.3, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.3, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

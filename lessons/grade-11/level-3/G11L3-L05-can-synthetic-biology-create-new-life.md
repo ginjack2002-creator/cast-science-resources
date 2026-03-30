@@ -914,86 +914,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Synthetic biologists design genetic circuits that function as biological logic gates. What does a genetic AND gate do in an engineered organism?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC7 (Stability and Change)
 
-A. It produces the output protein only when both molecular inputs are present simultaneously
-B. It produces the output protein when either input is present
-C. It blocks all protein production regardless of inputs
-D. It copies the organism's natural genes into a synthetic chromosome
-
-Correct Answer: A
-
-Feedback: Correct. Like an electronic AND gate, a biological AND gate requires both input signals (typically specific molecules or environmental conditions) to be present before activating gene expression and producing the output protein. A genetic AND gate functions like its electronic counterpart: it requires both molecular inputs to be present before the circuit activates gene expression. A single input alone is insufficient to produce the output.
-
----
-
-### Question 2
-
-Why does metabolic burden threaten the long-term stability of engineered genetic circuits in synthetic organisms?
-
-A. Metabolic burden causes the organism to grow faster, overwhelming the laboratory containment
-B. The synthetic circuit consumes cellular energy and resources, creating evolutionary pressure for mutations that disable the circuit because cells without the burden grow faster
-C. Metabolic burden only affects organisms in natural environments, not in laboratories
-D. The burden increases the organism's resistance to antibiotics
-
-Correct Answer: B
-
-Feedback: Correct. Synthetic circuits divert energy from growth. Natural selection favors cells that mutate to disable the costly circuit, meaning evolution actively works to break engineered systems over generations. Metabolic burden means the synthetic circuit diverts resources from normal cell functions. Cells with mutations that break the circuit grow faster, and natural selection amplifies these mutants over generations. Evolution is actively working against the engineer's design.
-
----
-
-### Question 3
-
-Craig Venter's team created JCVI-syn3.0, a synthetic organism with only 473 genes. What was the scientific significance of this achievement?
-
-A. It proved that organisms do not need DNA to survive
-B. It established the minimal genome, the smallest set of genes required to sustain a free-living organism, revealing the minimum blueprint for life
-C. It created the first organism that cannot evolve
-D. It demonstrated that synthetic organisms are always more efficient than natural ones
-
-Correct Answer: B
-
-Feedback: Correct. JCVI-syn3.0 identified the minimal set of genes necessary for independent life. This achievement established a baseline understanding of what is truly essential for a living cell to function. The significance was defining the minimal genome: the fewest genes needed for a free-living cell. With 473 genes (compared to thousands in natural bacteria), this experiment identified the essential blueprint for life.
-
----
-
-### Question 4
-
-Biocontainment strategies are engineered into synthetic organisms for safety. Which approach would be most effective at preventing environmental escape?
-
-A. Making the organism grow as fast as possible so it outcompetes natural organisms
-B. Engineering dependence on synthetic amino acids that do not exist in nature, so the organism cannot survive outside the laboratory
-C. Removing all antibiotic resistance genes from the organism
-D. Making the organism bioluminescent so it can be easily tracked
-
-Correct Answer: B
-
-Feedback: Correct. Creating dependence on synthetic nutrients not found in nature makes environmental survival effectively impossible. The organism cannot obtain the required nutrient outside the laboratory, making escape nonviable. The most effective containment creates a hard biological dependency. Engineering the organism to require synthetic amino acids that do not exist in nature means it cannot survive outside controlled conditions, regardless of mutations to other systems.
-
----
-
-### Question 5
-
-Why is evolution considered both a tool and a threat in synthetic biology?
-
-A. Evolution only creates beneficial mutations in synthetic organisms
-B. Evolution can be used to optimize engineered organisms through directed evolution, but it also generates random mutations that can disable engineered circuits, defeat containment, or create unpredicted behaviors
-C. Synthetic organisms cannot evolve because their DNA is artificial
-D. Evolution only affects natural organisms in the wild, not laboratory-grown organisms
-
-Correct Answer: B
-
-Feedback: Correct. Directed evolution is a powerful tool for optimizing synthetic organisms, but uncontrolled evolution generates random mutations that may break engineered functions, defeat safety mechanisms, or produce unexpected behaviors. Evolution is a double-edged sword. Scientists harness it through directed evolution to optimize circuits, but spontaneous mutations constantly test engineered designs. Any mutation that reduces metabolic burden will be selected for, potentially disabling the engineered function.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Circuit Complexity, Metabolic Burden, Evolutionary Stability, Output Fidelity, Growth Rate, Biocontainment Strength. Some components are external (Circuit Complexity, Biocontainment Strength) and some are internal (Metabolic Burden, Evolutionary Stability, Output Fidelity, Growth Rate). The student needs to understand what each component represents and how they are organized.
 
 A student's model shows that a simple biosensor circuit (2 genes) maintains function for 500 generations, while a complex metabolic pathway circuit (12 genes) loses function within 50 generations. What principle of evolutionary stability does this demonstrate?
 
@@ -1004,11 +929,15 @@ D. Simple circuits always outperform complex circuits in all applications
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates an inverse relationship: complexity increases both the number of mutational targets and the metabolic burden. Together, these factors dramatically accelerate the rate at which evolution disables engineered functions. The 10x difference in stability directly reflects the complexity-stability trade-off. More genes means more targets for disabling mutations, and greater metabolic burden means stronger selection for those mutations. Evolution breaks complex circuits faster because they are costlier to maintain.
+Feedback: Correct. The model demonstrates an inverse relationship: complexity increases both the number of mutational targets and the metabolic burden. Together, these factors dramatically accelerate the rate at which evolution disables engineered functions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Circuit Complexity increases, Metabolic Burden increases; when Metabolic Burden increases, Evolutionary Stability decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, a student increases biocontainment strength by adding a second independent kill switch. The single kill switch had an escape frequency of 10^-6 per generation; the dual system has 10^-12. Why does this dual system provide disproportionately better containment?
 
@@ -1019,11 +948,15 @@ D. Dual systems prevent all mutations from occurring in the organism
 
 Correct Answer: B
 
-Feedback: Correct. Independent safety mechanisms multiply their reliability. If each has a 10^-6 failure rate, defeating both requires both failures to occur simultaneously: 10^-6 x 10^-6 = 10^-12. This multiplicative security is a fundamental principle of layered containment. Independent containment systems provide multiplicative, not additive, security. The probability of defeating both is the product of defeating each individually (10^-6 x 10^-6 = 10^-12), making layered containment exponentially more secure.
+Feedback: Correct. Independent safety mechanisms multiply their reliability. If each has a 10^-6 failure rate, defeating both requires both failures to occur simultaneously: 10^-6 x 10^-6 = 10^-12. This multiplicative security is a fundamental principle of layered containment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Circuit Complexity increases, Metabolic Burden increases and when Metabolic Burden increases, Evolutionary Stability decreases and when Metabolic Burden increases, Growth Rate decreases. The student changes one variable to see how the whole system responds.
 
 The model reveals that output fidelity (precision of the genetic circuit) decreases as the cell's growth rate increases. A student proposes solving this by engineering a faster-growing host cell. Why would this approach likely worsen the problem?
 
@@ -1034,11 +967,15 @@ D. Faster-growing cells eliminate all mutations through more frequent DNA replic
 
 Correct Answer: B
 
-Feedback: Correct. Faster growth demands more cellular resources for natural functions, leaving fewer for the synthetic circuit. This intensifies the metabolic conflict and reduces the precision of the engineered output. Faster growth means the cell allocates more resources to its own replication, intensifying competition with the synthetic circuit for ribosomes, amino acids, and ATP. This increases metabolic burden and reduces circuit fidelity rather than improving it.
+Feedback: Correct. Faster growth demands more cellular resources for natural functions, leaving fewer for the synthetic circuit. This intensifies the metabolic conflict and reduces the precision of the engineered output. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student's model shows that an engineered organism designed to produce biofuel maintains 95% output in generation 1 but only 40% by generation 100. The student identifies three mutations in the circuit. Which analysis best explains the trajectory?
 
@@ -1049,11 +986,15 @@ D. The laboratory conditions degraded over 100 generations, not the organism
 
 Correct Answer: B
 
-Feedback: Correct. Each mutation that partially disables the costly circuit gives those cells a growth advantage. Natural selection amplifies these mutants, and as multiple mutations accumulate, the engineered output declines progressively. This is evolution actively optimizing against the engineered design. The decline follows a predictable pattern of evolutionary erosion. Each loss-of-function mutation reduces metabolic burden, giving mutant cells a growth advantage. Over generations, natural selection enriches these mutants, and as mutations accumulate, circuit output compounds downward.
+Feedback: Correct. Each mutation that partially disables the costly circuit gives those cells a growth advantage. Natural selection amplifies these mutants, and as multiple mutations accumulate, the engineered output declines progressively. This is evolution actively optimizing against the engineered design. If you chose A, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Circuit Complexity, Biocontainment Strength), but they can take action on internal components (Metabolic Burden, Evolutionary Stability, Output Fidelity, Growth Rate). They need to decide which action would be most effective based on what the model shows.
 
 Based on the synthetic biology model, which conclusion about the fundamental tension between engineering control and biological evolution is best supported by the simulation data?
 
@@ -1064,27 +1005,18 @@ D. All synthetic circuits will maintain function indefinitely if the laboratory 
 
 Correct Answer: B
 
-Feedback: Correct. The model consistently demonstrates that evolution pressures synthetic circuits proportionally to their metabolic cost. Sustainable designs must either minimize burden or create circuits that benefit the organism's fitness, aligning engineering goals with evolutionary incentives. The fundamental lesson is that evolution cannot be defeated, only managed. Circuits that impose metabolic cost will face constant selective pressure. The only durable strategies are minimizing burden or designing circuits where engineered function and organismal fitness are aligned.
+Feedback: Correct. The model consistently demonstrates that evolution pressures synthetic circuits proportionally to their metabolic cost. Sustainable designs must either minimize burden or create circuits that benefit the organism's fitness, aligning engineering goals with evolutionary incentives. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC7)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

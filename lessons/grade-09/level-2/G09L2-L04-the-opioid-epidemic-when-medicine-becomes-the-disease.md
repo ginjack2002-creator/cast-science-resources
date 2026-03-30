@@ -971,86 +971,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the difference between opioid tolerance and opioid dependence?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. Tolerance and dependence are the same thing, just different terms for addiction
-B. Tolerance means the body needs higher doses for the same effect; dependence means the body cannot function normally without the drug
-C. Tolerance is a psychological condition; dependence is a social behavior
-D. Tolerance develops only with illegal opioids; dependence develops only with prescription opioids
-
-Correct Answer: B
-
-Feedback: Correct. Tolerance is a neurological adaptation where repeated exposure reduces receptor sensitivity, requiring higher doses. Dependence is a state where the brain has physically adapted to the drug's presence and experiences withdrawal without it. Tolerance and dependence are distinct neurological processes. Tolerance means diminished response requiring dose escalation. Dependence means the brain has restructured to require the drug for normal function.
-
----
-
-### Question 2
-
-How do opioids produce their pain-relieving and euphoric effects in the brain?
-
-A. They destroy pain-sensing nerve cells permanently
-B. They bind to opioid receptors, triggering dopamine release in the brain's reward pathways
-C. They increase blood flow to injured areas, accelerating healing
-D. They strengthen the immune system to fight the source of pain
-
-Correct Answer: B
-
-Feedback: Correct. Opioids bind to mu-opioid receptors in the brain, triggering an excessive release of dopamine in reward pathways. This produces both pain relief and the euphoria that contributes to addiction potential. Opioids work by mimicking natural endorphins and binding to opioid receptors in the brain. This binding triggers a surge of dopamine, the neurotransmitter associated with pleasure and reward.
-
----
-
-### Question 3
-
-Why does chronic opioid use often lead to increased pain sensitivity rather than continued pain relief?
-
-A. The injury worsens over time regardless of medication
-B. Opioids have no actual effect on pain after the first dose
-C. The brain compensates for chronic opioid exposure by increasing pain sensitivity, a phenomenon called opioid-induced hyperalgesia
-D. Patients become psychologically convinced their pain is worse
-
-Correct Answer: C
-
-Feedback: Correct. Opioid-induced hyperalgesia occurs when chronic opioid use causes the nervous system to amplify pain signals as a compensatory response, paradoxically making the patient more sensitive to pain than before treatment. Opioid-induced hyperalgesia is a neurological adaptation, not psychological. The brain upregulates pain sensitivity pathways to compensate for chronic opioid receptor activation, creating a paradox where the treatment increases the problem.
-
----
-
-### Question 4
-
-What role did pharmaceutical marketing play in the opioid epidemic?
-
-A. Pharmaceutical companies had no involvement; the epidemic was entirely caused by illegal drug use
-B. Companies aggressively marketed prescription opioids as non-addictive, leading to widespread over-prescribing
-C. Companies accurately represented the risks, but patients misused the medications
-D. Marketing only affected a small number of prescriptions in rural areas
-
-Correct Answer: B
-
-Feedback: Correct. Pharmaceutical companies, most notably Purdue Pharma, marketed opioids like OxyContin as having very low addiction risk. This led to massive over-prescribing, creating millions of dependent patients who fueled the epidemic. The opioid epidemic was significantly driven by pharmaceutical marketing that downplayed addiction risks. This led to over-prescribing on a massive scale, creating the initial wave of dependence that cascaded into a broader crisis.
-
----
-
-### Question 5
-
-How can one person's opioid prescription contribute to addiction in other people within their community?
-
-A. Opioid addiction is contagious through casual contact
-B. Unused prescription pills can be diverted to friends or family, and social network effects normalize opioid use in the community
-C. Other people become addicted by being in the same room as someone taking opioids
-D. Prescriptions have no effect on anyone other than the prescribed patient
-
-Correct Answer: B
-
-Feedback: Correct. Unused pills become a source of exposure for others. Social network effects mean that as opioid use becomes normalized in a community, more people are exposed, creating a reinforcing loop that amplifies the epidemic beyond the original patient. Opioid spread through communities occurs through pill diversion (sharing or selling unused prescriptions) and social normalization. One prescription creates a supply that can expose multiple individuals through social networks.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Prescription Rate, Tolerance Development, Addiction Level, Dopamine Receptor Sensitivity, Social Network Exposure, Pain Threshold, Withdrawal Severity. Some components are external (Prescription Rate, Social Network Exposure) and some are internal (Tolerance Development, Addiction Level, Dopamine Receptor Sensitivity, Pain Threshold, Withdrawal Severity). The student needs to understand what each component represents and how they are organized.
 
 The opioid model contains multiple reinforcing feedback loops. Which of the following correctly describes the tolerance-dose escalation loop?
 
@@ -1061,11 +986,15 @@ D. Higher doses reduce tolerance, allowing patients to return to lower doses ove
 
 Correct Answer: B
 
-Feedback: Correct. The tolerance loop is a classic reinforcing cycle: opioid exposure reduces receptor sensitivity (tolerance), requiring higher doses for the same effect, which drives faster receptor adaptation, demanding even higher doses. The tolerance-escalation loop is reinforcing, not self-correcting. As tolerance develops, the effective dose decreases, prompting dose increases that accelerate receptor adaptation, creating a spiraling cycle of escalation.
+Feedback: Correct. The tolerance loop is a classic reinforcing cycle: opioid exposure reduces receptor sensitivity (tolerance), requiring higher doses for the same effect, which drives faster receptor adaptation, demanding even higher doses. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Prescription Rate increases, Tolerance increases; when Tolerance increases, Addiction Level increases. The student is trying to understand why these relationships are positive or negative.
 
 A student's model identifies a threshold in the system where a patient transitions from manageable pain treatment to physiological dependence. What makes this threshold so significant?
 
@@ -1076,11 +1005,15 @@ D. It only applies to patients who misuse their prescriptions
 
 Correct Answer: B
 
-Feedback: Correct. The dependence threshold represents a shift from temporary receptor changes (which reverse when the drug is removed) to structural neurological adaptations. Past this point, the brain has physically reorganized to require opioids for normal function. Addiction is not a choice but a neurological state change. The threshold represents the point where brain adaptations become structural, making dependence a physiological condition that persists even if the patient wants to stop.
+Feedback: Correct. The dependence threshold represents a shift from temporary receptor changes (which reverse when the drug is removed) to structural neurological adaptations. Past this point, the brain has physically reorganized to require opioids for normal function. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Prescription Rate increases, Tolerance increases and when Tolerance increases, Addiction Level increases and when Addiction increases, Dopamine Sensitivity decreases. The student changes one variable to see how the whole system responds.
 
 The simulation shows that the opioid epidemic has three distinct reinforcing loops: tolerance-escalation, hyperalgesia, and social network spread. How do these coupled loops make the crisis more difficult to address than a single-loop problem?
 
@@ -1091,11 +1024,15 @@ D. Only the social network loop matters; the brain-level loops are insignificant
 
 Correct Answer: B
 
-Feedback: Correct. The three loops operate at neurochemical, physiological, and social scales. Addressing only one level (e.g., reducing prescriptions) does not break the other loops (existing dependence, community supply). Effective intervention must target all three simultaneously. Multi-scale reinforcing loops create a multi-level crisis. Breaking the prescription loop does not break the tolerance loop in already-dependent individuals, and neither addresses the social network that has created alternative supply chains.
+Feedback: Correct. The three loops operate at neurochemical, physiological, and social scales. Addressing only one level (e.g., reducing prescriptions) does not break the other loops (existing dependence, community supply). Effective intervention must target all three simultaneously. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Based on model evidence, which intervention strategy would be most effective at addressing the opioid epidemic?
 
@@ -1106,11 +1043,15 @@ D. Developing more potent opioids that require smaller doses
 
 Correct Answer: B
 
-Feedback: Correct. The model shows three coupled feedback loops operating at different scales. Effective intervention must simultaneously address prescribing (prevention), dependence (treatment with medication-assisted therapy), and social spread (community supply reduction). The model demonstrates that single-target interventions fail because they leave other reinforcing loops intact. Only a multi-level approach targeting all three loops simultaneously can interrupt the cascading dynamics of the epidemic.
+Feedback: Correct. The model shows three coupled feedback loops operating at different scales. Effective intervention must simultaneously address prescribing (prevention), dependence (treatment with medication-assisted therapy), and social spread (community supply reduction). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Prescription Rate, Social Network Exposure), but they can take action on internal components (Tolerance Development, Addiction Level, Dopamine Receptor Sensitivity, Pain Threshold, Withdrawal Severity). They need to decide which action would be most effective based on what the model shows.
 
 A student argues that 'addiction is a choice, not a disease.' How does the computational model challenge this claim?
 
@@ -1121,27 +1062,18 @@ D. The model cannot address whether addiction is a choice or a disease
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that past the dependence threshold, tolerance and receptor downregulation physically restructure brain reward pathways. The compulsive drug-seeking behavior is driven by altered neurochemistry, not character or willpower. The computational model provides evidence that addiction involves measurable, physical changes in brain chemistry. Receptor downregulation and tolerance create neurological states where the brain requires opioids for normal function, which is a disease process, not a behavioral choice.
+Feedback: Correct. The model demonstrates that past the dependence threshold, tolerance and receptor downregulation physically restructure brain reward pathways. The compulsive drug-seeking behavior is driven by altered neurochemistry, not character or willpower. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

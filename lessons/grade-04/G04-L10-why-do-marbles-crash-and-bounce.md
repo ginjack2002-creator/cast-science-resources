@@ -867,77 +867,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-PS3-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-When a moving marble hits a marble that is sitting still, what happens?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.3 + CCC4 (Systems and System Models)
 
-A. Both marbles stop moving completely
-B. The moving marble stops or slows down, and the still marble starts moving
-C. The still marble disappears
-D. Nothing happens because marbles are too small to have energy
-
-Correct Answer: B
-
-Feedback: That is right! When a moving marble hits a still marble, energy transfers from the moving one to the still one. The first marble slows down, and the second marble starts moving. When a moving marble hits a still one, the energy moves from the first marble to the second. The first marble slows down or stops, and the second marble starts rolling.
-
----
-
-### Question 2
-
-What is energy transfer?
-
-A. When energy is created from nothing
-B. When energy moves from one object to another
-C. When energy disappears forever
-D. When energy turns into a solid object
-
-Correct Answer: B
-
-Feedback: Correct! Energy transfer is when energy moves from one object to another. During a collision, the moving object gives some or all of its energy to the object it hits. Energy is never created or destroyed. Energy transfer means energy moves from one object to another, like from a moving marble to a still marble during a collision.
-
----
-
-### Question 3
-
-If you roll a marble slowly and it taps another marble, what do you think will happen compared to rolling it fast?
-
-A. The slow marble and the fast marble will have the exact same effect
-B. The slow marble will make the other marble move less than the fast marble would
-C. The slow marble will make the other marble move more because it is gentler
-D. Speed does not matter at all in a collision
-
-Correct Answer: B
-
-Feedback: Right! A slower marble has less energy, so it transfers less energy to the other marble. A faster marble has more energy and causes a stronger collision. Speed matters in collisions. A slow marble has less energy to transfer, so the marble it hits will move less. A fast marble carries more energy and creates a stronger impact.
-
----
-
-### Question 4
-
-When two marbles crash and you hear a clicking sound, where does that sound come from?
-
-A. The marbles are talking to each other
-B. Some of the collision energy turns into sound energy
-C. The air makes the sound, not the marbles
-D. The sound was already there before the collision
-
-Correct Answer: B
-
-Feedback: Exactly! The clicking sound is energy! During a collision, some energy transforms into sound energy (the click you hear) and a tiny bit into heat energy. The clicking sound is actually energy being transformed. During a collision, some of the motion energy changes into sound energy, which is the click you hear.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Marble Speed, Collision Force, Energy Transfer. Some components are external (Marble Speed) and some are internal (Collision Force, Energy Transfer). The student needs to understand what each component represents and how they are organized.
 
 In the collision model, Marble Speed is an external component. What are the two internal components?
 
@@ -948,11 +888,15 @@ D. Sound volume and marble weight
 
 Correct Answer: B
 
-Feedback: Right! Collision force and energy transfer are the internal components. They respond to changes in marble speed. Faster marble speed causes greater collision force, which causes more energy transfer. The model's internal components are collision force and energy transfer. They change in response to the external component (marble speed).
+Feedback: Right! Collision force and energy transfer are the internal components. They respond to changes in marble speed. Faster marble speed causes greater collision force, which causes more energy transfer. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.3 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Marble Speed increases, Collision Force increases; when Collision Force increases, Energy Transfer increases. The student is trying to understand why these relationships are positive or negative.
 
 The model shows that when marble speed increases, collision force increases, and energy transfer increases. What type of relationships are these?
 
@@ -963,11 +907,15 @@ D. Random relationships that change unpredictably
 
 Correct Answer: B
 
-Feedback: Correct! These are positive relationships. More speed leads to more collision force, which leads to more energy transfer. All three increase together in a cause-and-effect chain. When one component increases and the next component also increases, that is a positive relationship. Speed, force, and energy transfer all increase together.
+Feedback: Correct! These are positive relationships. More speed leads to more collision force, which leads to more energy transfer. All three increase together in a cause-and-effect chain. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows a clear, predictable pattern. The relationships between components are consistent — they always work the same way when conditions change.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.3 + CCC5 (Energy and Matter)
+
+A student runs a simulation of the model. The model shows that when Marble Speed increases, Collision Force increases and when Collision Force increases, Energy Transfer increases. The student changes one variable to see how the whole system responds.
 
 A fast-moving marble hits a still marble. The fast marble stops completely and the still marble rolls away at the same speed. What happened to the energy?
 
@@ -978,11 +926,15 @@ D. Both marbles created their own energy
 
 Correct Answer: C
 
-Feedback: Exactly! Energy was transferred, not created or destroyed. The first marble's kinetic energy moved to the second marble. The total energy stayed the same, it just changed location. Energy is never created or destroyed. In this collision, the motion energy transferred from the moving marble to the still marble. The total energy in the system stays the same.
+Feedback: Exactly! Energy was transferred, not created or destroyed. The first marble's kinetic energy moved to the second marble. The total energy stayed the same, it just changed location. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.3 + CCC5 (Energy and Matter)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student rolls a marble from a tall ramp and it collides with a still marble. Then the student rolls a marble from a short ramp into another still marble. Which collision will transfer MORE energy, and why?
 
@@ -993,25 +945,37 @@ D. Neither will transfer energy because marbles are too light
 
 Correct Answer: C
 
-Feedback: Right! The marble from the tall ramp has more speed and more kinetic energy. More kinetic energy means a stronger collision force, which means more energy transfers to the still marble. A taller ramp gives the marble more speed (more kinetic energy). The model shows that more speed leads to more collision force and more energy transfer.
+Feedback: Right! The marble from the tall ramp has more speed and more kinetic energy. More kinetic energy means a stronger collision force, which means more energy transfers to the still marble. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Marble Speed), but they can take action on internal components (Collision Force, Energy Transfer). They need to decide which action would be most effective based on what the model shows.
+
+When a moving marble hits a marble that is sitting still, what happens?
+
+A. Both marbles stop moving completely
+B. The moving marble stops or slows down, and the still marble starts moving
+C. The still marble disappears
+D. Nothing happens because marbles are too small to have energy
+
+Correct Answer: B
+
+Feedback: That is right! When a moving marble hits a still marble, energy transfers from the moving one to the still one. The first marble slows down, and the second marble starts moving. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.3, CCC5)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.3, CCC5)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.3, CCC5)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
-
----
 
 ## Resources
 

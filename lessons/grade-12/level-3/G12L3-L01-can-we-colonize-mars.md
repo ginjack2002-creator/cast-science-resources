@@ -985,86 +985,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Mars receives approximately 43% of the solar energy that Earth receives. Which of the following best explains the primary consequence of this reduced solar input for a Mars colony?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.4 + CCC5 (Energy and Matter)
 
-A. Solar panels on Mars would need to be at least twice the surface area of equivalent Earth installations to generate comparable power
-B. Reduced solar energy creates a cascade effect limiting oxygen production, food growth, and water recycling simultaneously since all depend on energy input
-C. The colony would need to rely exclusively on nuclear power because solar energy is insufficient at Mars's distance from the Sun
-D. Lower solar radiation means Mars has fewer dust storms, making solar power more reliable than on Earth
-
-Correct Answer: B
-
-Feedback: Correct. Solar energy is the master variable in a Mars colony. Because oxygen production (electrolysis), food production (grow lights for hydroponics), and water recycling (purification pumps) all require energy, reduced solar input creates cascading limitations across every life support subsystem. Consider that a Mars colony is a closed system where nearly every life support function requires energy. When the primary energy source is reduced, the effects propagate through oxygen production, food growth, and water recycling simultaneously rather than affecting just one system.
-
----
-
-### Question 2
-
-A Mars colony life support system must recycle water at 98%+ efficiency. What is the most scientifically accurate explanation for why this threshold is so critical?
-
-A. Water on Mars exists only as vapor in the atmosphere and cannot be extracted in liquid form
-B. Water is used in a single process (drinking) so any loss reduces the potable supply linearly
-C. Water serves multiple interconnected functions including oxygen generation, food production, cooling, and hygiene, so small recycling losses compound across all systems
-D. The International Space Station achieves 98% efficiency, so Mars must match this standard for crew familiarity
-
-Correct Answer: C
-
-Feedback: Correct. Water is not just for drinking. It is the feedstock for oxygen generation via electrolysis, the medium for hydroponic food production, and essential for cooling systems and hygiene. A 5% recycling loss creates compounding deficits across all of these interconnected subsystems. Think about all the roles water plays in a closed life support system beyond just drinking. Water is used for oxygen generation (electrolysis), food production (hydroponics), cooling, and sanitation. Losses in recycling efficiency compound across all of these functions.
-
----
-
-### Question 3
-
-Mars lacks a global magnetic field. Which of the following correctly identifies the primary threat this poses to a human colony and the type of radiation involved?
-
-A. Ultraviolet radiation from the Sun would cause severe sunburns, requiring SPF-rated habitat windows
-B. Galactic cosmic rays and solar particle events deliver cumulative ionizing radiation doses approximately 200 times Earth's background level, requiring engineered shielding
-C. Infrared radiation causes the surface temperature to fluctuate wildly, making thermal regulation impossible
-D. Radio wave interference from solar flares would prevent all communication between the colony and Earth
-
-Correct Answer: B
-
-Feedback: Correct. Without a global magnetic field or thick atmosphere, Mars's surface is exposed to galactic cosmic rays and solar particle events that deliver approximately 0.67 millisieverts per day, roughly 200 times Earth's background radiation level. This ionizing radiation causes cumulative DNA damage and requires engineered shielding for long-term habitation. The key issue is ionizing radiation, not UV, infrared, or radio waves. Earth's magnetic field deflects charged particles from cosmic rays and solar events. Without this protection on Mars, colonists would receive cumulative radiation doses approximately 200 times Earth's background level.
-
----
-
-### Question 4
-
-In a closed-loop life support system, what distinguishes it fundamentally from the life support on the International Space Station?
-
-A. The ISS uses open-loop systems that vent all waste into space, while a Mars colony must recycle everything
-B. A truly closed-loop system recycles all essential resources with minimal external inputs, whereas the ISS receives regular resupply missions that compensate for recycling inefficiencies
-C. Closed-loop systems use only renewable energy while the ISS relies on fossil fuel generators
-D. The ISS does not recycle any water or air, relying entirely on deliveries from Earth
-
-Correct Answer: B
-
-Feedback: Correct. The ISS does recycle water (at approximately 93% efficiency) and regenerate oxygen, but it receives regular resupply missions every few months that compensate for losses. A Mars colony cannot rely on frequent resupply due to the 6-9 month transit time, so it must achieve near-perfect recycling in a truly closed-loop system. The ISS does recycle water and air, but it receives resupply missions regularly. The critical distinction is that a Mars colony cannot rely on frequent resupply due to orbital mechanics and transit time, making near-perfect closed-loop recycling essential rather than optional.
-
----
-
-### Question 5
-
-A student claims that terraforming Mars would be straightforward because we could release CO2 from the polar ice caps to thicken the atmosphere. Which scientific evidence most directly challenges this claim?
-
-A. Mars has no CO2 in its atmosphere, so there is nothing to build upon
-B. Research indicates that all accessible CO2 reserves on Mars would increase atmospheric pressure to only about 1-2% of Earth's, far below the level needed to support liquid water or breathable conditions
-C. CO2 is toxic to humans, so adding more would make Mars less habitable rather than more habitable
-D. Solar wind has no effect on the Martian atmosphere, so released CO2 would remain indefinitely
-
-Correct Answer: B
-
-Feedback: Correct. NASA-funded research has shown that even if all known accessible CO2 sources on Mars (polar caps, regolith adsorption, minerals) were released, the resulting atmospheric pressure would remain far below what is needed to support liquid surface water or human respiration. Terraforming through CO2 release alone is insufficient. Mars does have CO2 (95% of its thin atmosphere), but the total accessible reserves are insufficient. Studies show that releasing all known CO2 sources would raise atmospheric pressure to only 1-2% of Earth's level, far short of what is needed for liquid water or breathable conditions.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Solar Energy Input, Atmospheric CO2 Availability, Subsurface Ice Reserves, Radiation Exposure Level, Oxygen Production Rate, Water Recycling Efficiency, Food Production Capacity, Habitat Structural Integrity, Waste Processing Rate, Colony Viability Index. Some components are external (Solar Energy Input, Atmospheric CO2 Availability, Subsurface Ice Reserves, Radiation Exposure Level) and some are internal (Oxygen Production Rate, Water Recycling Efficiency, Food Production Capacity, Habitat Structural Integrity, Waste Processing Rate, Colony Viability Index). The student needs to understand what each component represents and how they are organized.
 
 A computational model of a Mars colony shows that during a 90-day dust storm reducing solar energy by 90%, the Colony Viability Index drops below the survival threshold by day 45. Which modification to the model would most effectively extend the survivable duration?
 
@@ -1075,11 +1000,15 @@ D. Increasing the efficiency of solar panels from 20% to 25%
 
 Correct Answer: A
 
-Feedback: Correct. The model demonstrates that energy is the master variable. A nuclear fission reactor provides energy independent of solar input, maintaining oxygen production, water recycling, and food production systems even during extended dust storms. This addresses the root cause of cascade failure rather than a single symptom. Consider what the model reveals about energy as the master variable. During a dust storm, the fundamental problem is loss of energy input. Increasing solar efficiency or reducing demand addresses symptoms, but only an energy source independent of solar input (like nuclear fission) fundamentally solves the cascade failure.
+Feedback: Correct. The model demonstrates that energy is the master variable. A nuclear fission reactor provides energy independent of solar input, maintaining oxygen production, water recycling, and food production systems even during extended dust storms. This addresses the root cause of cascade failure rather than a single symptom. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.4 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Solar Energy Input increases, Oxygen Production Rate increases; when Solar Energy Input increases, Food Production Capacity increases. The student is trying to understand why these relationships are positive or negative.
 
 A student's model reveals that water recycling efficiency dropping from 98% to 93% causes the Colony Viability Index to decline more rapidly than a 50% reduction in food production capacity. Which systems-level explanation best accounts for this finding?
 
@@ -1090,11 +1019,15 @@ D. The model has a programming error because food production should always have 
 
 Correct Answer: B
 
-Feedback: Correct. Water is a nexus variable in the life support network. It is the feedstock for oxygen generation (electrolysis), the medium for hydroponic food production, essential for thermal regulation, and necessary for sanitation. A 5% drop in recycling efficiency compounds across all these interconnected systems, creating a larger net impact than reducing any single subsystem. Think about water's role across the entire system. Water is used for oxygen production (electrolysis), food production (hydroponics), cooling systems, and hygiene. A drop in recycling efficiency affects ALL of these simultaneously, creating compounding deficits that exceed the impact of reducing any single subsystem.
+Feedback: Correct. Water is a nexus variable in the life support network. It is the feedstock for oxygen generation (electrolysis), the medium for hydroponic food production, essential for thermal regulation, and necessary for sanitation. A 5% drop in recycling efficiency compounds across all these interconnected systems, creating a larger net impact than reducing any single subsystem. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Solar Energy Input increases, Oxygen Production Rate increases and when Solar Energy Input increases, Food Production Capacity increases and when Atmospheric CO2 Availability increases, Oxygen Production Rate increases. The student changes one variable to see how the whole system responds.
 
 The model shows that adding a 'Psychological Stress Index' component creates a new feedback loop where increasing stress reduces crew productivity, which reduces system maintenance, which degrades habitat integrity, which increases stress further. This is an example of:
 
@@ -1105,11 +1038,15 @@ D. An independent variable that does not interact with the physical life support
 
 Correct Answer: B
 
-Feedback: Correct. This is a positive (reinforcing) feedback loop: stress reduces productivity, reduced productivity degrades systems, degraded systems increase stress. Each cycle amplifies the initial perturbation rather than dampening it, potentially driving the system toward a tipping point and collapse. This is distinct from a negative (balancing) feedback loop that would stabilize the system. Consider the direction of the effect at each step. Stress reduces productivity, which degrades systems, which increases stress further. Each step amplifies the previous one rather than counteracting it. This self-reinforcing cycle is a positive feedback loop that can drive exponential decline.
+Feedback: Correct. This is a positive (reinforcing) feedback loop: stress reduces productivity, reduced productivity degrades systems, degraded systems increase stress. Each cycle amplifies the initial perturbation rather than dampening it, potentially driving the system toward a tipping point and collapse. This is distinct from a negative (balancing) feedback loop that would stabilize the system. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Two students build Mars colony models with identical components but different relationship structures. Student A connects Solar Energy Input directly to all five output variables. Student B creates a cascade where Solar Energy Input drives Oxygen Production, which affects Food Production, which affects Water Recycling. Which model better represents the actual system and why?
 
@@ -1120,11 +1057,15 @@ D. Neither model is valid because Mars colony systems operate independently of e
 
 Correct Answer: B
 
-Feedback: Correct. Student B's cascade model better represents the real system because life support subsystems have sequential dependencies. Oxygen production requires energy, food production requires both energy and oxygen-rich atmosphere, and water recycling requires energy and is affected by biological processes in food production. The cascade structure reveals how upstream failures propagate and amplify through the system. Consider how the life support systems are connected. Oxygen production needs energy. Food production needs energy AND oxygen. Water recycling needs energy AND is connected to food production processes. These sequential dependencies mean a cascade model captures critical propagation dynamics that a parallel model misses.
+Feedback: Correct. Student B's cascade model better represents the real system because life support subsystems have sequential dependencies. Oxygen production requires energy, food production requires both energy and oxygen-rich atmosphere, and water recycling requires energy and is affected by biological processes in food production. The cascade structure reveals how upstream failures propagate and amplify through the system. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Solar Energy Input, Atmospheric CO2 Availability, Subsurface Ice Reserves, Radiation Exposure Level), but they can take action on internal components (Oxygen Production Rate, Water Recycling Efficiency, Food Production Capacity, Habitat Structural Integrity, Waste Processing Rate, Colony Viability Index). They need to decide which action would be most effective based on what the model shows.
 
 Analysis of the model under the 'Aging Colony' scenario (10 years, no resupply) reveals that Habitat Structural Integrity degradation has a threshold effect: below 85% integrity, the decline in Colony Viability Index accelerates nonlinearly. Which concept from systems thinking best explains this threshold behavior?
 
@@ -1135,27 +1076,18 @@ D. Equilibrium, where the colony reaches a stable but lower level of function in
 
 Correct Answer: B
 
-Feedback: Correct. The threshold represents a tipping point where degradation rate exceeds repair capacity. Above 85% integrity, maintenance crews can repair damage faster than it accumulates. Below 85%, the repair backlog grows, meaning more systems fail, requiring more repair time, leaving other systems unattended. This creates runaway decline characteristic of a system that has crossed a critical threshold. Consider what happens when damage accumulates faster than it can be repaired. Above the threshold, maintenance keeps pace with degradation. Below it, the backlog grows, causing cascading failures. This is a tipping point where the system transitions from stable decline to runaway deterioration.
+Feedback: Correct. The threshold represents a tipping point where degradation rate exceeds repair capacity. Above 85% integrity, maintenance crews can repair damage faster than it accumulates. Below 85%, the repair backlog grows, meaning more systems fail, requiring more repair time, leaving other systems unattended. This creates runaway decline characteristic of a system that has crossed a critical threshold. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.4, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.4, CCC2)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.4, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

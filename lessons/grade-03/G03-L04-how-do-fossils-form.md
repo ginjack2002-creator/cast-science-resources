@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do you think a fossil is?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.1 + CCC4 (Systems and System Models)
 
-A. A living animal found underground
-B. The preserved remains of an animal or plant from long ago, usually found in rock
-C. A type of rock that looks like an animal
-D. A toy dinosaur bone
-
-Correct Answer: B
-
-Feedback: That is right! A fossil is the preserved remains or traces of an animal or plant that lived long ago. Most fossils are found in rock. A fossil is not a living thing or a toy. It is the preserved remains of an animal or plant from long ago, and fossils are usually found inside rocks.
-
----
-
-### Question 2
-
-How long do you think it takes for a fossil to form?
-
-A. A few days
-B. A few weeks
-C. About one year
-D. Millions of years
-
-Correct Answer: D
-
-Feedback: You got it! Fossils take millions of years to form. The process of turning bones and shells into rock is very, very slow. Fossil formation is an extremely slow process. It takes millions of years for remains to be buried, pressed, and slowly turned into rock by minerals.
-
----
-
-### Question 3
-
-Where do you think fossils are usually found?
-
-A. On top of mountains in the snow
-B. Floating in the ocean
-C. Inside layers of rock underground
-D. Growing on trees
-
-Correct Answer: C
-
-Feedback: Correct! Most fossils are found inside layers of sedimentary rock underground. They were buried by layers of sand and mud over millions of years. Fossils form when remains are buried under layers of sand and mud. Over millions of years, those layers turn to rock, so fossils are found inside layers of rock underground.
-
----
-
-### Question 4
-
-What can fossils tell us about the past?
-
-A. Nothing useful
-B. What animals looked like and where they lived long ago
-C. What the weather will be tomorrow
-D. How to make new animals
-
-Correct Answer: B
-
-Feedback: Great thinking! Fossils are like clues from the past. They tell us what animals and plants looked like, what they ate, and what their environment was like millions of years ago. Fossils give us important clues about the past. By studying fossils, scientists can figure out what ancient animals looked like, what they ate, and what kind of environment they lived in.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Burial Depth, Pressure, Fossilization. Some components are external (Burial Depth) and some are internal (Pressure, Fossilization). The student needs to understand what each component represents and how they are organized.
 
 In the fossil model, when Burial Depth increases, what happens to Pressure?
 
@@ -904,11 +844,15 @@ D. Pressure has nothing to do with burial
 
 Correct Answer: B
 
-Feedback: Correct! Burial Depth and Pressure have a positive relationship. The deeper the remains are buried, the more sediment layers press down on top, creating more pressure. Think about what happens when more layers pile up. Each new layer adds weight. The deeper something is buried, the more layers are pressing down, so pressure increases.
+Feedback: Correct! Burial Depth and Pressure have a positive relationship. The deeper the remains are buried, the more sediment layers press down on top, creating more pressure. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Burial Depth increases, Pressure increases; when Pressure increases, Fossilization increases. The student is trying to understand why these relationships are positive or negative.
 
 What is the correct order for how a fossil forms?
 
@@ -919,11 +863,15 @@ D. Scientists make fossils in a laboratory
 
 Correct Answer: B
 
-Feedback: Exactly! First the animal dies, then its remains get buried by sediment layers. Over millions of years, pressure builds and minerals slowly replace the bones, turning them into rock. Fossils form in steps: an animal dies and gets buried by sediment. Over millions of years, more layers pile on (pressure), and minerals in groundwater slowly replace the bone material with rock.
+Feedback: Exactly! First the animal dies, then its remains get buried by sediment layers. Over millions of years, pressure builds and minerals slowly replace the bones, turning them into rock. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Burial Depth increases, Pressure increases and when Pressure increases, Fossilization increases. The student changes one variable to see how the whole system responds.
 
 A scientist who studies fossils to learn about ancient life is called a:
 
@@ -934,11 +882,15 @@ D. Astronaut
 
 Correct Answer: B
 
-Feedback: Right! A paleontologist is a scientist who studies fossils to learn about life on Earth millions of years ago. A paleontologist studies fossils and ancient life. A meteorologist studies weather, a veterinarian cares for animals, and an astronaut travels to space.
+Feedback: Right! A paleontologist is a scientist who studies fossils to learn about life on Earth millions of years ago. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why did the shallow burial scenario produce a weaker fossil than the deep burial scenario?
 
@@ -949,25 +901,37 @@ D. Shallow burials use different minerals
 
 Correct Answer: B
 
-Feedback: You got it! Shallow burial means fewer sediment layers, less pressure, and less mineral replacement. The deeper the burial, the more completely the remains turn into a fossil. With shallow burial, there are fewer layers pressing down, so there is less pressure. Less pressure means the mineral replacement process is less complete, resulting in a weaker fossil.
+Feedback: You got it! Shallow burial means fewer sediment layers, less pressure, and less mineral replacement. The deeper the burial, the more completely the remains turn into a fossil. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Burial Depth), but they can take action on internal components (Pressure, Fossilization). They need to decide which action would be most effective based on what the model shows.
+
+What do you think a fossil is?
+
+A. A living animal found underground
+B. The preserved remains of an animal or plant from long ago, usually found in rock
+C. A type of rock that looks like an animal
+D. A toy dinosaur bone
+
+Correct Answer: B
+
+Feedback: That is right! A fossil is the preserved remains or traces of an animal or plant that lived long ago. Most fossils are found in rock. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: D
-Question 3: C
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

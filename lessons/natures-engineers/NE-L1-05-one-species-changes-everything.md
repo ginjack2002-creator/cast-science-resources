@@ -164,77 +164,17 @@ Conservation Biologists protect endangered species and restore damaged ecosystem
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS2-4, HS-LS2-6.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-Are all species in an ecosystem equally important?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. Yes, every species has exactly the same importance
-B. No, some species have a bigger impact on the ecosystem than others
-C. Only the biggest animals are important
-D. Only plants are important in an ecosystem
-
-Correct Answer: B
-
-Feedback: Correct! While all species play a role, some species have an outsized impact on their ecosystem. These are called keystone species. Not all species have the same impact. Some species, called keystone species, have a much bigger effect on their ecosystem than others. Removing them can change the entire system.
-
----
-
-### Question 2
-
-What do you think happens to other animals when a beaver pond dries up?
-
-A. Nothing changes for the other animals
-B. Other animals benefit from the dry land
-C. Many animals lose their habitat and food sources
-D. New animals immediately take their place
-
-Correct Answer: C
-
-Feedback: Yes! When a beaver pond dries up, the fish, frogs, birds, and other animals that depended on that pond lose their habitat and food sources. When a beaver pond dries up, many animals are affected. Fish cannot survive without water, frogs lose their breeding ground, and birds lose food sources. The pond was habitat for many species.
-
----
-
-### Question 3
-
-What is biodiversity?
-
-A. The total number of animals in the world
-B. The variety of different species living in an ecosystem
-C. How big an ecosystem is
-D. The color of plants in an area
-
-Correct Answer: B
-
-Feedback: Correct! Biodiversity is the variety of different species living in an ecosystem. More biodiversity generally means a healthier system. Biodiversity refers to the variety of different species living in an ecosystem. An area with many different types of plants, animals, and insects has high biodiversity. Higher biodiversity usually means a healthier ecosystem.
-
----
-
-### Question 4
-
-What is a feedback loop?
-
-A. When something is fed back to animals in a zoo
-B. When the output of a system circles back and affects its own input
-C. When you leave feedback on a website
-D. When a loop of rope is used in an experiment
-
-Correct Answer: B
-
-Feedback: Yes! A feedback loop happens when the output of a system circles back and affects the input, creating a cycle that can amplify or reduce changes. A feedback loop is when the result (output) of a system circles back and affects what goes into the system (input). This creates a cycle. For example, more species improve habitat quality, which then supports even more species.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Keystone Species Population, Habitat Quality, Food Availability, Number of Other Species. Some components are external (Keystone Species Population) and some are internal (Habitat Quality, Food Availability, Number of Other Species). The student needs to understand what each component represents and how they are organized.
 
 What is a keystone species?
 
@@ -245,11 +185,15 @@ D. The most common species in an area
 
 Correct Answer: B
 
-Feedback: Correct! A keystone species has an outsized impact on its ecosystem. Like a keystone in an arch, removing it causes the whole structure to change or collapse. A keystone species is one that has a much bigger impact on its ecosystem than its numbers would suggest. Removing a keystone species triggers a cascade of changes throughout the entire ecosystem.
+Feedback: Correct! A keystone species has an outsized impact on its ecosystem. Like a keystone in an arch, removing it causes the whole structure to change or collapse. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Keystone Species Population increases, Habitat Quality increases; when Habitat Quality increases, Food Availability increases. The student is trying to understand why these relationships are positive or negative.
 
 What did the model show when the keystone species population was set to zero?
 
@@ -260,11 +204,15 @@ D. Other species became keystone species instead
 
 Correct Answer: B
 
-Feedback: Yes! The model showed a cascade effect: removing the keystone species caused habitat quality to drop, then food availability dropped, and then biodiversity crashed. The model demonstrated a cascade effect. When the keystone species was removed, habitat quality declined, which caused food availability to drop, which then led to a decline in the number of other species. One change triggered a chain of decline.
+Feedback: Yes! The model showed a cascade effect: removing the keystone species caused habitat quality to drop, then food availability dropped, and then biodiversity crashed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Keystone Species Population increases, Habitat Quality increases and when Habitat Quality increases, Food Availability increases and when Food Availability increases, Number of Other Species increases. The student changes one variable to see how the whole system responds.
 
 What type of feedback loop did the model reveal between biodiversity and habitat quality?
 
@@ -275,11 +223,15 @@ D. A loop that only works in one direction
 
 Correct Answer: B
 
-Feedback: Correct! The model showed a reinforcing feedback loop: more species improve habitat quality, and better habitat supports even more species, creating a cycle of growth. The model revealed a reinforcing (positive) feedback loop. More species improve habitat quality by contributing to soil health, water filtering, and vegetation growth. Better habitat then supports even more species. This cycle amplifies recovery.
+Feedback: Correct! The model showed a reinforcing feedback loop: more species improve habitat quality, and better habitat supports even more species, creating a cycle of growth. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 According to the model, what happens when keystone species are brought back after being removed?
 
@@ -290,25 +242,37 @@ D. Only the keystone species benefits, not other species
 
 Correct Answer: C
 
-Feedback: That is right! The model showed that recovery takes time. The ecosystem must rebuild gradually because each step in the cascade depends on the one before it. The model showed that ecosystems do not bounce back instantly. Recovery takes time because each part of the cascade (habitat, food, biodiversity) must rebuild in sequence. The reinforcing feedback loop eventually accelerates recovery, but it starts slowly.
+Feedback: That is right! The model showed that recovery takes time. The ecosystem must rebuild gradually because each step in the cascade depends on the one before it. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Keystone Species Population), but they can take action on internal components (Habitat Quality, Food Availability, Number of Other Species). They need to decide which action would be most effective based on what the model shows.
+
+Are all species in an ecosystem equally important?
+
+A. Yes, every species has exactly the same importance
+B. No, some species have a bigger impact on the ecosystem than others
+C. Only the biggest animals are important
+D. Only plants are important in an ecosystem
+
+Correct Answer: B
+
+Feedback: Correct! While all species play a role, some species have an outsized impact on their ecosystem. These are called keystone species. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Lesson Metadata
 

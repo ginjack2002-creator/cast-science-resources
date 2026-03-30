@@ -928,86 +928,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What makes a non-native species 'invasive'?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.2 + CCC4 (Systems and System Models)
 
-A. Any species found outside its native range is considered invasive
-B. A non-native species that establishes self-sustaining populations and causes ecological or economic harm
-C. A native species that becomes unusually abundant due to human activity
-D. Any species that migrates seasonally between different regions
-
-Correct Answer: B
-
-Feedback: Correct. Not all non-native species are invasive. The 'invasive' designation requires that the species establishes, spreads, and causes measurable ecological or economic harm. A species is invasive only if it is (1) non-native, (2) establishes self-sustaining populations, and (3) causes harm to the ecosystem, economy, or human health. Many non-native species exist harmlessly.
-
----
-
-### Question 2
-
-The 'enemy release hypothesis' suggests that invasive species thrive because:
-
-A. They evolve new defensive adaptations in their new environment
-B. They are freed from the predators, parasites, and diseases that controlled them in their native range
-C. Native species actively cooperate with invaders to share resources
-D. Human activity eliminates all predators in every ecosystem
-
-Correct Answer: B
-
-Feedback: Correct. Invasive species leave behind the specialized natural enemies (predators, parasites, pathogens) that kept their populations in check, allowing unconstrained growth in new environments. The enemy release hypothesis explains that invasive species succeed because they arrive without the specialized predators, parasites, and diseases that evolved alongside them to control their populations. Without these natural checks, their populations can grow exponentially.
-
----
-
-### Question 3
-
-What is 'competitive exclusion'?
-
-A. The principle that two species competing for the same limited resource cannot coexist indefinitely
-B. A conservation strategy that physically separates native and invasive species
-C. The process by which invasive species are excluded from protected areas
-D. A genetic mechanism that prevents hybridization between species
-
-Correct Answer: A
-
-Feedback: Correct. Competitive exclusion states that if two species compete for exactly the same limited resource, the one with even a slight advantage will eventually drive the other to local extinction. The competitive exclusion principle states that two species occupying the same ecological niche cannot coexist indefinitely. The species with even a small competitive advantage will eventually outcompete and locally eliminate the other.
-
----
-
-### Question 4
-
-Invasive species are the second leading cause of species extinction globally. What is the first?
-
-A. Climate change
-B. Pollution
-C. Habitat destruction
-D. Overhunting
-
-Correct Answer: C
-
-Feedback: Correct. Habitat destruction is the leading cause of extinction, followed by invasive species, which have contributed to approximately 60% of all documented extinctions. Habitat destruction (deforestation, land conversion, urbanization) is the leading cause of species extinction globally. Invasive species rank second, having contributed to about 60% of all documented plant and animal extinctions.
-
----
-
-### Question 5
-
-Why are island ecosystems disproportionately vulnerable to invasive species?
-
-A. Islands have more resources available for invasive species to exploit
-B. Island species evolved in isolation without exposure to aggressive competitors or predators, leaving them with no defensive adaptations
-C. Islands are closer to continental sources of invasive species
-D. Island climates are more favorable for non-native species than mainland climates
-
-Correct Answer: B
-
-Feedback: Correct. Island species evolved in isolation and never developed defenses against the types of predators and competitors found on continents. This evolutionary naivety makes them extremely vulnerable. Island species evolved in isolation, often without exposure to mammalian predators, aggressive competitors, or continental diseases. This evolutionary inexperience leaves them defenseless against invaders. About 75% of all documented extinctions have occurred on islands.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Invasive Species Introduction Rate, Invasive Population Growth Rate, Native Species Competitive Fitness, Resource Availability, Native Biodiversity Index, Ecosystem Function Integrity. Some components are external (Invasive Species Introduction Rate) and some are internal (Invasive Population Growth Rate, Native Species Competitive Fitness, Resource Availability, Native Biodiversity Index, Ecosystem Function Integrity). The student needs to understand what each component represents and how they are organized.
 
 The model shows that when Invasive Population is at 100 individuals, removal efforts successfully prevent establishment. At 10,000 individuals, the same removal rate fails. What does this threshold behavior demonstrate?
 
@@ -1018,11 +943,15 @@ D. At 10,000 individuals, invasive species begin migrating to new areas beyond t
 
 Correct Answer: B
 
-Feedback: Correct. Below the threshold, removal can suppress growth. Above it, exponential reproduction overwhelms removal capacity, and positive feedbacks (habitat modification, resource depletion) create conditions that further favor the invader. The establishment threshold marks a critical transition: below it, removal can outpace reproduction. Above it, exponential growth exceeds management capacity, and the invader begins modifying habitat in its own favor, creating positive feedback loops that make control progressively harder.
+Feedback: Correct. Below the threshold, removal can suppress growth. Above it, exponential reproduction overwhelms removal capacity, and positive feedbacks (habitat modification, resource depletion) create conditions that further favor the invader. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Invasive Species Introduction Rate increases, Invasive Population Growth Rate increases; when Invasive Population Growth Rate increases, Resource Availability decreases. The student is trying to understand why these relationships are positive or negative.
 
 The model demonstrates that invasive grasses increase fire frequency, which kills fire-intolerant native trees, creating more grassland for the invader. What type of system dynamic does this represent?
 
@@ -1033,11 +962,15 @@ D. Random environmental variation unrelated to the invasion
 
 Correct Answer: B
 
-Feedback: Correct. This is a textbook invasion-fire feedback loop: invasive grass increases fire frequency, fire eliminates native trees, more open space favors more grass, more grass means more fire. Each cycle accelerates invasion. The invasion-fire feedback is a positive (self-reinforcing) loop: the invader modifies its environment (more flammable grass) to create conditions (frequent fire) that eliminate competitors (fire-intolerant trees) and expand its own habitat, accelerating further invasion.
+Feedback: Correct. This is a textbook invasion-fire feedback loop: invasive grass increases fire frequency, fire eliminates native trees, more open space favors more grass, more grass means more fire. Each cycle accelerates invasion. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Invasive Species Introduction Rate increases, Invasive Population Growth Rate increases and when Invasive Population Growth Rate increases, Resource Availability decreases and when Resource Availability increases, Native Species Competitive Fitness increases. The student changes one variable to see how the whole system responds.
 
 The 'invasion curve' shows that spending $1 on prevention or early detection avoids $100-$1,000 in later control costs. A budget committee asks why prevention funding should be prioritized over more visible eradication programs. Which model-based argument is strongest?
 
@@ -1048,11 +981,15 @@ D. Early detection technology is more advanced than eradication technology
 
 Correct Answer: B
 
-Feedback: Correct. The cost-effectiveness case is rooted in systems dynamics: below the establishment threshold, small populations are manageable. Above it, positive feedbacks create exponentially growing costs and diminishing returns. The invasion curve demonstrates that cost-effectiveness declines exponentially with invasion stage. Prevention and early detection target populations before positive feedback loops (habitat modification, resource monopolization) engage, making control feasible and affordable.
+Feedback: Correct. The cost-effectiveness case is rooted in systems dynamics: below the establishment threshold, small populations are manageable. Above it, positive feedbacks create exponentially growing costs and diminishing returns. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the biocontrol scenario, introducing a natural predator from the invader's native range reduces invasive population growth. However, the model shows that Native Biodiversity Index does not return to pre-invasion levels. What best explains this incomplete recovery?
 
@@ -1063,11 +1000,15 @@ D. Biocontrol agents become invasive themselves 100% of the time
 
 Correct Answer: B
 
-Feedback: Correct. Even after reducing the invader, the ecosystem has undergone lasting changes: species extinctions, altered habitat structure, and disrupted ecological networks create a 'new normal' that differs from the pre-invasion state. The ecosystem has undergone a regime shift: some native species are locally extinct and cannot recolonize, habitat has been physically altered, and ecological interaction networks (pollination, seed dispersal, predation) have been rewired. The ecosystem stabilizes at a new, less diverse state.
+Feedback: Correct. Even after reducing the invader, the ecosystem has undergone lasting changes: species extinctions, altered habitat structure, and disrupted ecological networks create a 'new normal' that differs from the pre-invasion state. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Invasive Species Introduction Rate), but they can take action on internal components (Invasive Population Growth Rate, Native Species Competitive Fitness, Resource Availability, Native Biodiversity Index, Ecosystem Function Integrity). They need to decide which action would be most effective based on what the model shows.
 
 A student examines the model and notes that Resource Availability declines as Invasive Population grows, while Native Species Competitive Fitness drops simultaneously. How do these two variables interact to create the 'biodiversity collapse' seen in the model?
 
@@ -1078,27 +1019,18 @@ D. Native competitive fitness increases as resources decline because scarcity dr
 
 Correct Answer: B
 
-Feedback: Correct. The interaction is synergistic: invasive resource monopolization weakens native populations, which reduces their competitive fitness, which allows the invader to capture even more resources, compounding the decline in a reinforcing spiral. These variables interact synergistically: the invader takes resources, weakening natives. Weakened natives compete less effectively, losing more resources. Smaller native populations lose ecological partnerships (pollinators, seed dispersers). Each factor amplifies the other in a downward spiral.
+Feedback: Correct. The interaction is synergistic: invasive resource monopolization weakens native populations, which reduces their competitive fitness, which allows the invader to capture even more resources, compounding the decline in a reinforcing spiral. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: A
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

@@ -985,86 +985,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a 'tipping point' in the context of Earth's climate system?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.5 + CCC4 (Systems and System Models)
 
-A. The point at which global temperatures begin to rise above pre-industrial levels
-B. A critical threshold where a small additional change triggers a dramatic, often irreversible shift in system behavior
-C. The moment when CO2 emissions reach their peak before declining
-D. A natural cycle of warming and cooling that repeats every few thousand years
-
-Correct Answer: B
-
-Feedback: Correct. A tipping point is a threshold beyond which the system undergoes rapid, nonlinear change that may be irreversible on human timescales, fundamentally altering system behavior. A tipping point is not simply a gradual temperature increase or emissions peak. It is a critical threshold where the system shifts from one state to another, often abruptly and irreversibly.
-
----
-
-### Question 2
-
-When Arctic ice melts, it exposes darker ocean water that absorbs more solar radiation, causing further warming and more ice melt. What type of feedback is this?
-
-A. Negative feedback that stabilizes the climate
-B. A reinforcing feedback loop that amplifies the original change
-C. A balancing feedback loop that returns the system to equilibrium
-D. A linear response where change is proportional to input
-
-Correct Answer: B
-
-Feedback: Correct. The ice-albedo feedback is a reinforcing loop: warming melts ice, reducing reflectivity (albedo), which absorbs more heat, causing more warming and more melting. This is a reinforcing (positive) feedback loop because the output amplifies the input. More warming causes more melting, which causes more absorption of solar energy, leading to even more warming.
-
----
-
-### Question 3
-
-Permafrost in Arctic regions contains approximately how much carbon relative to the current atmosphere?
-
-A. About 10% of current atmospheric carbon
-B. Roughly equal to current atmospheric carbon
-C. About twice the carbon currently in the atmosphere
-D. A negligible amount that has little impact on climate
-
-Correct Answer: C
-
-Feedback: Correct. Arctic permafrost contains an estimated 1.5 trillion tons of carbon, roughly twice the amount currently in the atmosphere, making permafrost thaw a potentially massive additional source of greenhouse gases. Arctic permafrost contains approximately 1.5 trillion tons of carbon, about twice what is currently in the atmosphere. If released through thawing, this represents a massive greenhouse gas source independent of human emissions.
-
----
-
-### Question 4
-
-Why do scientists describe some climate tipping points as 'irreversible on human timescales'?
-
-A. Because humans lack the technology to reverse climate change
-B. Because once certain feedback loops are activated, the system continues changing even if the original cause is removed
-C. Because governments are unwilling to take action on climate policy
-D. Because Earth has never experienced rapid climate shifts before
-
-Correct Answer: B
-
-Feedback: Correct. Once reinforcing feedback loops are fully activated, they become self-sustaining. For example, once permafrost begins releasing methane, the warming this causes triggers more permafrost thaw, regardless of human emissions reductions. Irreversibility refers to the self-sustaining nature of activated feedback loops. Once crossed, the system's own internal dynamics drive continued change even if the original trigger is removed.
-
----
-
-### Question 5
-
-Which concept explains why the full effects of today's greenhouse gas emissions will not be felt for decades?
-
-A. The greenhouse effect
-B. Thermal inertia of the oceans
-C. Photosynthetic carbon absorption
-D. Atmospheric dilution of CO2
-
-Correct Answer: B
-
-Feedback: Correct. Oceans have enormous thermal inertia, meaning they absorb and slowly distribute heat over time. This creates a dangerous delay between emissions and their full warming impact. Thermal inertia describes the tendency of large systems like oceans to resist rapid temperature change. Oceans absorb excess heat slowly, creating a time lag that masks the true warming trajectory.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: CO2 Emissions, Global Temperature, Ice Cover, Albedo Effect, Permafrost Methane Release, Sea Level, Ocean Heat Absorption. Some components are external (CO2 Emissions) and some are internal (Global Temperature, Ice Cover, Albedo Effect, Permafrost Methane Release, Sea Level, Ocean Heat Absorption). The student needs to understand what each component represents and how they are organized.
 
 A student's climate model shows that reducing CO2 emissions to zero after crossing the ice-albedo tipping point does not restore ice cover within 200 years. What does this demonstrate?
 
@@ -1075,11 +1000,15 @@ D. The ice-albedo effect is a balancing feedback loop that requires time to resp
 
 Correct Answer: B
 
-Feedback: Correct. Once the tipping point is crossed, the ice-albedo reinforcing loop sustains itself: less ice means more absorption, more warming, and still less ice. Eliminating the original trigger (emissions) does not break the loop. This is the defining characteristic of a tipping point. Once crossed, the system's internal reinforcing feedback loops drive continued change. Removing the original cause is insufficient to reverse the process.
+Feedback: Correct. Once the tipping point is crossed, the ice-albedo reinforcing loop sustains itself: less ice means more absorption, more warming, and still less ice. Eliminating the original trigger (emissions) does not break the loop. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when CO2 Emissions increases, Global Temperature increases; when Global Temperature increases, Ice Cover decreases. The student is trying to understand why these relationships are positive or negative.
 
 The simulation reveals that the climate system has multiple reinforcing feedback loops (ice-albedo, permafrost methane, ocean heat absorption). How do these coupled loops affect system behavior compared to a system with only one feedback loop?
 
@@ -1090,11 +1019,15 @@ D. Multiple loops slow the overall rate of change by distributing energy
 
 Correct Answer: B
 
-Feedback: Correct. Coupled reinforcing loops create cascading tipping points. Crossing the ice-albedo threshold can trigger permafrost thaw, which releases methane, causing more warming that accelerates ice loss further. Multiple reinforcing loops do not cancel out or operate independently. They cascade, meaning crossing one tipping point can trigger additional tipping points, creating a domino effect of accelerating change.
+Feedback: Correct. Coupled reinforcing loops create cascading tipping points. Crossing the ice-albedo threshold can trigger permafrost thaw, which releases methane, causing more warming that accelerates ice loss further. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when CO2 Emissions increases, Global Temperature increases and when Global Temperature increases, Ice Cover decreases and when Ice Cover increases, Albedo Effect increases. The student changes one variable to see how the whole system responds.
 
 A model comparison shows that the same CO2 emission level produces stable conditions in one scenario but runaway warming in another. What variable most likely differs between the two scenarios?
 
@@ -1105,11 +1038,15 @@ D. The speed at which the simulation runs
 
 Correct Answer: B
 
-Feedback: Correct. Threshold dynamics mean that the same input can produce dramatically different outcomes depending on the system's starting state. Below the threshold, the system absorbs the change; above it, reinforcing feedback loops activate. This is an example of threshold dynamics. The system's behavior depends critically on whether it is above or below the tipping point. The same emission level can be manageable in one state and catastrophic in another.
+Feedback: Correct. Threshold dynamics mean that the same input can produce dramatically different outcomes depending on the system's starting state. Below the threshold, the system absorbs the change; above it, reinforcing feedback loops activate. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Ocean heat absorption has been described as 'masking' the true rate of global warming. Based on the model, why is this masking effect dangerous rather than protective?
 
@@ -1120,11 +1057,15 @@ D. Ocean heat absorption has no significant effect on climate modeling
 
 Correct Answer: B
 
-Feedback: Correct. Ocean heat absorption creates a dangerous time delay. The warming is committed but not yet felt. When oceans reach absorption capacity, surface temperatures will rise to reflect all accumulated excess heat, revealing the true extent of warming. Ocean heat absorption is temporary storage, not permanent removal. The delay means we experience less warming than we have committed to, creating a false sense that the problem is manageable when the full impact has simply been deferred.
+Feedback: Correct. Ocean heat absorption creates a dangerous time delay. The warming is committed but not yet felt. When oceans reach absorption capacity, surface temperatures will rise to reflect all accumulated excess heat, revealing the true extent of warming. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (CO2 Emissions), but they can take action on internal components (Global Temperature, Ice Cover, Albedo Effect, Permafrost Methane Release, Sea Level, Ocean Heat Absorption). They need to decide which action would be most effective based on what the model shows.
 
 Based on simulation evidence, which statement best describes the relationship between CO2 emissions and climate tipping points?
 
@@ -1135,27 +1076,18 @@ D. Only complete elimination of all emissions can prevent any climate change
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that tipping points occur at specific thresholds (estimated at 1.5-2.0 degrees C above pre-industrial). Moderate reductions may slow the approach but not prevent crossing if the trajectory is already aimed at these thresholds. The simulation demonstrates that tipping points are real thresholds in the climate system. Moderate emission reductions change the timeline but may not prevent threshold crossing if cumulative warming is already on track to reach critical levels.
+Feedback: Correct. The model shows that tipping points occur at specific thresholds (estimated at 1.5-2.0 degrees C above pre-industrial). Moderate reductions may slow the approach but not prevent crossing if the trajectory is already aimed at these thresholds. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.5, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

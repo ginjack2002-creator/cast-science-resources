@@ -824,77 +824,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-ESS3-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is a natural hazard?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.1 + CCC4 (Systems and System Models)
 
-A. A game you play outside
-B. A dangerous natural event like a flood, tornado, or earthquake
-C. A type of animal
-D. A safe place to play
-
-Correct Answer: B
-
-Feedback: That is right! A natural hazard is a dangerous event caused by nature, like floods, tornadoes, hurricanes, and earthquakes. They can harm people and damage buildings. A natural hazard is a dangerous event that happens in nature. Floods, tornadoes, hurricanes, and earthquakes are all natural hazards that can cause harm to people and property.
-
----
-
-### Question 2
-
-Do you think people can build things to protect themselves from floods?
-
-A. No, there is nothing we can do about floods
-B. Yes, engineers can design walls, channels, and raised buildings to reduce flood damage
-C. Only by building houses underground
-D. Only by moving to outer space
-
-Correct Answer: B
-
-Feedback: Good thinking! Engineers design special structures like levees (flood walls), channels, and raised buildings to protect people from floods. Engineers use science and math to design solutions for natural hazards. Levees (walls that hold back water), flood channels, and raised buildings all help reduce flood damage.
-
----
-
-### Question 3
-
-What does the word engineering mean?
-
-A. Driving a train
-B. Using science and math to design and build solutions to problems
-C. Drawing pictures of buildings
-D. Watching the weather on TV
-
-Correct Answer: B
-
-Feedback: Correct! Engineering is using science and math to design and build things that solve problems. Engineers design everything from bridges to storm shelters. Engineering means using science and math to design and build solutions to problems. Engineers study how things work and use that knowledge to make things that help people.
-
----
-
-### Question 4
-
-Which natural hazard involves strong winds that can damage buildings?
-
-A. A drought
-B. A tornado
-C. An earthquake
-D. A flood
-
-Correct Answer: B
-
-Feedback: Yes! Tornadoes are powerful spinning winds that can damage or destroy buildings, flip cars, and knock down trees. Tornadoes are columns of rapidly spinning air with very strong winds. They can tear apart buildings and cause major damage. Droughts are about lack of rain, earthquakes shake the ground, and floods involve water.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Hazard Strength, Protection Design, Damage Reduction. Some components are external (Hazard Strength, Protection Design) and some are internal (Damage Reduction). The student needs to understand what each component represents and how they are organized.
 
 In the natural hazards model, when Protection Design gets stronger, what happens to Damage Reduction?
 
@@ -905,11 +845,15 @@ D. Protection Design is not connected to Damage Reduction
 
 Correct Answer: B
 
-Feedback: Correct! Protection Design and Damage Reduction have a positive relationship. Stronger, better-designed protection prevents more damage from natural hazards. Better protection design means more damage is prevented. When Protection Design gets stronger, Damage Reduction increases. This is a positive relationship.
+Feedback: Correct! Protection Design and Damage Reduction have a positive relationship. Stronger, better-designed protection prevents more damage from natural hazards. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Protection Design increases, Damage Reduction increases; when Hazard Strength increases, Damage Reduction increases. The student is trying to understand why these relationships are positive or negative.
 
 In the 'Strong Storm, Weak Protection' scenario, what happened?
 
@@ -920,11 +864,15 @@ D. The strong storm had no effect
 
 Correct Answer: B
 
-Feedback: Exactly! Even weak protection helps some, but a strong storm requires strong engineering. Weak protection cannot stop most of the damage from a powerful natural hazard. Weak protection is better than no protection, but it cannot stop a strong storm from causing major damage. Strong hazards need strong engineering solutions to prevent serious harm.
+Feedback: Exactly! Even weak protection helps some, but a strong storm requires strong engineering. Weak protection cannot stop most of the damage from a powerful natural hazard. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Protection Design increases, Damage Reduction increases and when Hazard Strength increases, Damage Reduction increases. The student changes one variable to see how the whole system responds.
 
 What is mitigation?
 
@@ -935,11 +883,15 @@ D. Predicting when hazards will happen
 
 Correct Answer: B
 
-Feedback: Right! Mitigation means taking actions to reduce damage from natural hazards. Building levees, storm shelters, and reinforced buildings are all examples of mitigation. Mitigation means reducing the impact of natural hazards. It includes things like building levees to hold back floodwater, designing storm shelters for tornadoes, and making buildings that can withstand earthquakes.
+Feedback: Right! Mitigation means taking actions to reduce damage from natural hazards. Building levees, storm shelters, and reinforced buildings are all examples of mitigation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why do engineers study past disasters when designing new protection?
 
@@ -950,25 +902,37 @@ D. Past disasters are not useful for future design
 
 Correct Answer: B
 
-Feedback: You got it! Engineers study past disasters to learn what worked and what did not. This helps them design stronger, smarter protection that saves more lives in the future. Engineers learn from the past. By studying what failed and what survived during previous disasters, they can design better, stronger protection for the future.
+Feedback: You got it! Engineers study past disasters to learn what worked and what did not. This helps them design stronger, smarter protection that saves more lives in the future. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Hazard Strength, Protection Design), but they can take action on internal components (Damage Reduction). They need to decide which action would be most effective based on what the model shows.
+
+What is a natural hazard?
+
+A. A game you play outside
+B. A dangerous natural event like a flood, tornado, or earthquake
+C. A type of animal
+D. A safe place to play
+
+Correct Answer: B
+
+Feedback: That is right! A natural hazard is a dangerous event caused by nature, like floods, tornadoes, hurricanes, and earthquakes. They can harm people and damage buildings. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

@@ -724,73 +724,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-PS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What happens when you let go of a ball?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS2.1 + CCC4 (Systems and System Models)
 
-A. It falls down
-B. It floats up
-C. It stays in the air
-
-Correct Answer: A
-
-Feedback: Yes! When you let go of a ball, it always falls down to the ground. Actually, when you let go of a ball, it falls down. Something called gravity pulls it toward the ground.
-
----
-
-### Question 2
-
-If you drop a rock, which way does it go?
-
-A. It goes sideways
-B. It goes up
-C. It goes down
-
-Correct Answer: C
-
-Feedback: That is right! A rock always falls down when you drop it. When you drop a rock, it goes down toward the ground. Everything falls down when you let go of it.
-
----
-
-### Question 3
-
-What do you think makes things fall to the ground?
-
-A. The wind blows them down
-B. Something invisible pulls them down
-C. They want to be on the ground
-
-Correct Answer: B
-
-Feedback: Good thinking! Something invisible called gravity pulls everything down toward the ground. There is an invisible force called gravity that pulls everything down toward the ground. You cannot see it, but it is always working.
-
----
-
-### Question 4
-
-If you hold a toy up high and let go, what will happen?
-
-A. It will fly away
-B. It will fall down
-C. Nothing will happen
-
-Correct Answer: B
-
-Feedback: Yes! The toy will fall down because gravity pulls it toward the ground. When you let go of a toy, it falls down. Gravity is always pulling things toward the ground.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Drop Height, Fall Speed. Some components are external (Drop Height) and some are internal (Fall Speed). The student needs to understand what each component represents and how they are organized.
 
 What is gravity?
 
@@ -800,11 +744,15 @@ C. A sound you hear
 
 Correct Answer: B
 
-Feedback: That is right! Gravity is a pull that makes things fall down toward the ground. Gravity is a pull. It pulls everything down toward the ground. That is why things always fall when you let go.
+Feedback: That is right! Gravity is a pull that makes things fall down toward the ground. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Drop Height increases, Fall Speed increases. The student is trying to understand why these relationships are positive or negative.
 
 When you drop a ball from HIGH up, what happens?
 
@@ -814,11 +762,15 @@ C. It does not fall at all
 
 Correct Answer: B
 
-Feedback: Yes! Dropping from higher up makes the ball fall faster because gravity has more time to pull on it. When you drop a ball from higher up, it falls faster. Gravity pulls it for a longer time, so it speeds up more.
+Feedback: Yes! Dropping from higher up makes the ball fall faster because gravity has more time to pull on it. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Drop Height increases, Fall Speed increases. The student changes one variable to see how the whole system responds.
 
 In our model, which part do WE get to decide?
 
@@ -828,11 +780,15 @@ C. Gravity
 
 Correct Answer: B
 
-Feedback: Yes! WE choose how high to hold the ball. That is the Drop Height, and it is the outside part of our model. Drop Height is the part we decide. We choose how high to hold the ball before letting go.
+Feedback: Yes! WE choose how high to hold the ball. That is the Drop Height, and it is the outside part of our model. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Does gravity ever stop pulling on things?
 
@@ -842,25 +798,36 @@ C. No, it never stops
 
 Correct Answer: C
 
-Feedback: That is right! Gravity never stops. It is always pulling on everything, even when things are sitting on a table. Gravity never stops. It is always pulling on everything, all the time, day and night.
+Feedback: That is right! Gravity never stops. It is always pulling on everything, even when things are sitting on a table. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Drop Height), but they can take action on internal components (Fall Speed). They need to decide which action would be most effective based on what the model shows.
+
+What happens when you let go of a ball?
+
+A. It falls down
+B. It floats up
+C. It stays in the air
+
+Correct Answer: A
+
+Feedback: Yes! When you let go of a ball, it always falls down to the ground. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS2.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS2.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

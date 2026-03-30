@@ -886,77 +886,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS2-2, MS-LS2-3, MS-LS2-5.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is an ecosystem?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS2-2, MS-LS2-3, MS-LS2-5 + CCC4 (Systems and System Models)
 
-A. A collection of only animals in one area
-B. A community of living organisms interacting with each other and their nonliving environment
-C. A zoo where different species are kept together
-D. Any area with plants growing in it
-
-Correct Answer: B
-
-Feedback: Correct! An ecosystem includes all living things (plants, animals, fungi, bacteria) AND nonliving things (water, soil, sunlight, air) in an area, plus all their interactions. Not quite. An ecosystem is a complete community of living organisms (plants, animals, decomposers) interacting with each other AND with the nonliving parts of their environment (water, soil, sunlight, temperature).
-
----
-
-### Question 2
-
-What happens to a prey population if all the predators are removed from an ecosystem?
-
-A. The prey population stays the same
-B. The prey population grows without limit forever
-C. The prey population grows rapidly at first, but eventually runs out of food and crashes
-D. The prey population decreases because they need predators to survive
-
-Correct Answer: C
-
-Feedback: Correct! Without predators, prey populations grow rapidly. But eventually they exceed the carrying capacity, consuming all available food and resources, leading to a population crash. Not quite. Without predators to control their numbers, prey populations initially explode. But they eventually eat all the available food and overshoot the carrying capacity, leading to starvation and a dramatic population crash.
-
----
-
-### Question 3
-
-Why is biodiversity (having many different species) important for an ecosystem?
-
-A. It makes the ecosystem look more interesting
-B. It doesn't matter — only the largest animals are important
-C. More species means the ecosystem is more stable and can recover from disturbances
-D. Biodiversity only matters in tropical rainforests
-
-Correct Answer: C
-
-Feedback: Correct! High biodiversity makes ecosystems more resilient. When there are many species, the loss of one has less impact because other species can fill similar roles, keeping the system functioning. Not quite. Biodiversity makes ecosystems stronger and more resilient. Diverse ecosystems have more species filling different roles, so if one species declines, others can compensate. This stability helps ecosystems recover from disturbances.
-
----
-
-### Question 4
-
-In a food chain, what is the role of a decomposer?
-
-A. To hunt and eat other animals
-B. To produce food using sunlight
-C. To break down dead organisms and recycle nutrients back into the ecosystem
-D. To pollinate flowers and spread seeds
-
-Correct Answer: C
-
-Feedback: Correct! Decomposers like fungi and bacteria break down dead organisms and waste, recycling nutrients back into the soil where plants can use them again. They close the loop in nutrient cycling. Not quite. Decomposers break down dead organisms and waste material, returning nutrients to the soil. This nutrient recycling is essential because it allows producers (plants) to grow, keeping the food chain going.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Predator Population, Prey Population, Habitat Size, Resource Availability. Some components are external (Habitat Size, Resource Availability) and some are internal (Predator Population, Prey Population). The student needs to understand what each component represents and how they are organized.
 
 In the ecosystem model, what pattern do predator and prey populations follow over time in a balanced ecosystem?
 
@@ -967,11 +907,15 @@ D. Populations change randomly with no predictable pattern
 
 Correct Answer: B
 
-Feedback: Correct! Predator-prey populations follow a natural cycle. More prey means more food for predators, so predators increase. More predators means more prey eaten, so prey decreases. Then predators decline from lack of food, and the cycle repeats. Not quite. Predator and prey populations follow a cyclical pattern. When prey is abundant, predators thrive and increase. This increased predation causes prey to decline, which then causes predators to decline from food scarcity. With fewer predators, prey recovers, and the cycle repeats.
+Feedback: Correct! Predator-prey populations follow a natural cycle. More prey means more food for predators, so predators increase. More predators means more prey eaten, so prey decreases. Then predators decline from lack of food, and the cycle repeats. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS2-2, MS-LS2-3, MS-LS2-5 + CCC2 (Cause and Effect)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Prey Population increases, Predator Population increases; when Predator Population increases, Prey Population decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, when Predator Population is locked at zero, the prey population initially explodes but then crashes. What causes the crash?
 
@@ -982,11 +926,15 @@ D. The prey migrate to a different ecosystem
 
 Correct Answer: B
 
-Feedback: Correct! Without predators controlling their numbers, prey populations grow beyond what the habitat can support (carrying capacity). They deplete food and resources, leading to mass starvation and a population crash. Not quite. Without predators, prey populations grow unchecked past the environment's carrying capacity. They consume all available food and resources, and when resources are depleted, the population crashes due to starvation.
+Feedback: Correct! Without predators controlling their numbers, prey populations grow beyond what the habitat can support (carrying capacity). They deplete food and resources, leading to mass starvation and a population crash. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS2-2, MS-LS2-3, MS-LS2-5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Prey Population increases, Predator Population increases and when Predator Population increases, Prey Population decreases and when Habitat Size increases, Carrying Capacity increases. The student changes one variable to see how the whole system responds.
 
 When Habitat Size is reduced to 25% in the model, what happens to BOTH predator and prey populations?
 
@@ -997,11 +945,15 @@ D. Predator populations increase because prey are easier to catch in a smaller a
 
 Correct Answer: C
 
-Feedback: Correct! Reducing habitat shrinks the carrying capacity for ALL species. Less habitat means less food, water, and shelter, so both predator and prey populations decline. The smallest populations are pushed toward extinction first. Not quite. Habitat loss reduces the carrying capacity for every species in the ecosystem. With only 25% of the original habitat, there is less food, water, and shelter to support populations. Both predator and prey populations decline.
+Feedback: Correct! Reducing habitat shrinks the carrying capacity for ALL species. Less habitat means less food, water, and shelter, so both predator and prey populations decline. The smallest populations are pushed toward extinction first. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS2-2, MS-LS2-3, MS-LS2-5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A nature preserve has lost most of its wolves, and deer populations have exploded, overgrazing vegetation and degrading streams. Based on the model, which intervention would be most effective?
 
@@ -1012,25 +964,37 @@ D. Remove all deer and start over with new animals
 
 Correct Answer: C
 
-Feedback: Correct! Reintroducing predators restores the natural predator-prey cycle. With wolves present, deer populations are controlled, allowing vegetation to recover. This is exactly what happened when wolves were reintroduced to Yellowstone National Park. Not quite. The most effective intervention is reintroducing wolves to restore the predator-prey balance. This is a real-world example: when wolves were returned to Yellowstone, deer populations stabilized, vegetation recovered, and the entire ecosystem improved.
+Feedback: Correct! Reintroducing predators restores the natural predator-prey cycle. With wolves present, deer populations are controlled, allowing vegetation to recover. This is exactly what happened when wolves were reintroduced to Yellowstone National Park. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS2-2, MS-LS2-3, MS-LS2-5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Size, Resource Availability), but they can take action on internal components (Predator Population, Prey Population). They need to decide which action would be most effective based on what the model shows.
+
+What is an ecosystem?
+
+A. A collection of only animals in one area
+B. A community of living organisms interacting with each other and their nonliving environment
+C. A zoo where different species are kept together
+D. Any area with plants growing in it
+
+Correct Answer: B
+
+Feedback: Correct! An ecosystem includes all living things (plants, animals, fungi, bacteria) AND nonliving things (water, soil, sunlight, air) in an area, plus all their interactions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS2-2, MS-LS2-3, MS-LS2-5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS2-2, MS-LS2-3, MS-LS2-5, CCC2)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS2-2, MS-LS2-3, MS-LS2-5, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS2-2, MS-LS2-3, MS-LS2-5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS2-2, MS-LS2-3, MS-LS2-5, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: C
-Question 4: C
-
----
 
 ## Resources
 

@@ -826,77 +826,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do you think plants need to grow?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.1 + CCC4 (Systems and System Models)
 
-A. Only soil
-B. Only water
-C. Sunlight, water, and nutrients
-D. Just a flowerpot
-
-Correct Answer: C
-
-Feedback: That is right! Plants need sunlight, water, and nutrients to grow. They use these to make their own food and stay healthy. Plants need more than just one thing. They need sunlight for energy, water to drink, and nutrients like tiny vitamins to grow strong and healthy.
-
----
-
-### Question 2
-
-Can a plant grow if you put it in water with no soil?
-
-A. No, plants always need soil to grow
-B. Yes, plants can grow in water if they get sunlight and nutrients
-C. Only fake plants grow in water
-D. Plants in water die right away
-
-Correct Answer: B
-
-Feedback: Yes! Plants can grow in water if they still get sunlight and nutrients. This is called hydroponics. Plants do not actually need soil itself. They need what is IN the soil: water and nutrients. If you give a plant water, nutrients, and sunlight, it can grow just fine without any soil.
-
----
-
-### Question 3
-
-What do roots do for a plant?
-
-A. Roots make flowers bloom
-B. Roots soak up water and nutrients from the ground
-C. Roots make the plant smell nice
-D. Roots help the plant see sunlight
-
-Correct Answer: B
-
-Feedback: Correct! Roots soak up water and nutrients from the soil (or water) and send them up to the rest of the plant. Roots are the drinking straws of the plant. They soak up water and nutrients from the soil or from water and send them up through the stem to the rest of the plant.
-
----
-
-### Question 4
-
-What does sunlight do for a plant?
-
-A. Sunlight gives the plant energy to make its own food
-B. Sunlight makes the plant cold
-C. Sunlight makes the soil taste better for the plant
-D. Sunlight does not help plants at all
-
-Correct Answer: A
-
-Feedback: That is right! Sunlight gives plants the energy they need to make their own food inside their leaves. Plants use sunlight as energy to make their own food in their leaves. Without sunlight, a plant cannot feed itself and will become pale and weak.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sunlight Amount, Water Availability, Plant Growth. Some components are external (Sunlight Amount, Water Availability) and some are internal (Plant Growth). The student needs to understand what each component represents and how they are organized.
 
 A student grows one plant in sunlight with water and another plant in a dark closet with water. After two weeks, the dark plant is pale and droopy. What does this tell us?
 
@@ -907,11 +847,15 @@ D. The plant in the closet had too much water
 
 Correct Answer: B
 
-Feedback: Correct! Even though both plants had water, the one without sunlight could not make food and became pale and weak. Plants NEED sunlight. Both plants had water, but only the sunny plant grew well. The dark plant became pale because it could not make food without sunlight. This proves plants need sunlight to grow healthy.
+Feedback: Correct! Even though both plants had water, the one without sunlight could not make food and became pale and weak. Plants NEED sunlight. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sunlight Amount increases, Plant Growth increases; when Water Availability increases, Plant Growth increases. The student is trying to understand why these relationships are positive or negative.
 
 What is hydroponics?
 
@@ -922,11 +866,15 @@ D. Growing plants with no water at all
 
 Correct Answer: B
 
-Feedback: Yes! Hydroponics is growing plants in water instead of soil. The water has nutrients added so the plant gets everything it needs. Hydroponics is a way of growing plants in water with added nutrients, instead of in soil. It works because plants need what is IN the soil, not the soil itself.
+Feedback: Yes! Hydroponics is growing plants in water instead of soil. The water has nutrients added so the plant gets everything it needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sunlight Amount increases, Plant Growth increases and when Water Availability increases, Plant Growth increases. The student changes one variable to see how the whole system responds.
 
 In our model, what happens to Plant Growth when both Sunlight Amount and Water Availability are high?
 
@@ -937,11 +885,15 @@ D. Nothing happens to the plant
 
 Correct Answer: B
 
-Feedback: That is right! When a plant gets lots of sunlight AND lots of water, it has everything it needs to grow strong and healthy. Both sunlight and water have a positive effect on plant growth. When both are high, the plant has all the energy and water it needs, so it grows tall with bright green leaves.
+Feedback: That is right! When a plant gets lots of sunlight AND lots of water, it has everything it needs to grow strong and healthy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why can plants grow without soil?
 
@@ -952,25 +904,37 @@ D. Because plants do not have roots
 
 Correct Answer: C
 
-Feedback: Correct! Soil is helpful because it holds water and nutrients near the roots, but if the plant gets water and nutrients another way, it does not need soil at all. Soil holds water and nutrients near the roots, but soil itself is not what the plant eats. If you give a plant water, nutrients, and sunlight without soil, it can grow just fine.
+Feedback: Correct! Soil is helpful because it holds water and nutrients near the roots, but if the plant gets water and nutrients another way, it does not need soil at all. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sunlight Amount, Water Availability), but they can take action on internal components (Plant Growth). They need to decide which action would be most effective based on what the model shows.
+
+What do you think plants need to grow?
+
+A. Only soil
+B. Only water
+C. Sunlight, water, and nutrients
+D. Just a flowerpot
+
+Correct Answer: C
+
+Feedback: That is right! Plants need sunlight, water, and nutrients to grow. They use these to make their own food and stay healthy. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: A
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

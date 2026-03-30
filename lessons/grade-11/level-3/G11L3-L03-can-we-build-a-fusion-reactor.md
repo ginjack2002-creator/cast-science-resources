@@ -918,86 +918,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-The Lawson criterion requires that three plasma parameters must simultaneously exceed critical thresholds for sustained fusion. What makes this a fundamentally difficult engineering challenge?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.8 + CCC2 (Cause and Effect)
 
-A. Each parameter is easy to achieve individually, but improving one parameter often degrades another
-B. The three parameters are completely independent and can be optimized separately
-C. Only one parameter needs to exceed its threshold; the other two are secondary
-D. Current materials can withstand all required conditions without degradation
-
-Correct Answer: A
-
-Feedback: Correct. The difficulty lies in the coupling between parameters: hotter plasma is harder to confine, denser plasma generates more instabilities, and longer confinement requires stronger magnetic fields. Optimizing all three simultaneously is the central challenge. The parameters are coupled, not independent. Increasing plasma temperature makes confinement harder; increasing density generates instabilities; extending confinement time requires ever-stronger magnetic fields. The simultaneous optimization is the core challenge.
-
----
-
-### Question 2
-
-In a fusion reactor, plasma must be heated to over 150 million degrees Celsius. Why is magnetic confinement necessary at these temperatures?
-
-A. Magnetic fields accelerate the fusion reaction rate
-B. No known physical material can survive direct contact with plasma at fusion temperatures, so magnetic fields suspend the plasma away from all surfaces
-C. Magnetic fields cool the plasma to a safe temperature for the reactor walls
-D. The magnetic field provides the neutrons needed for the fusion reaction
-
-Correct Answer: B
-
-Feedback: Correct. At 150 million degrees, any material touching the plasma would instantly vaporize. Superconducting magnets create a 'magnetic bottle' that suspends the charged plasma particles away from physical surfaces. The purpose of magnetic confinement is containment, not reaction enhancement. No material exists that can withstand 150 million degrees. Magnetic fields create an invisible container that holds the plasma without physical contact.
-
----
-
-### Question 3
-
-The Q factor in fusion energy represents the ratio of energy output to energy input. Which Q factor value would indicate that a fusion reactor has achieved the minimum condition for commercial viability?
-
-A. Q = 0.5, because any fusion output is valuable
-B. Q = 1, because this means energy breakeven
-C. Q greater than 10, because the reactor must produce enough surplus energy to cover all facility operations, conversion losses, and still deliver power to the grid
-D. Q = infinity, because only self-sustaining plasma is commercially viable
-
-Correct Answer: C
-
-Feedback: Correct. Q = 1 is scientific breakeven, but commercial viability requires Q much greater than 1 to cover energy conversion losses, facility operations, magnet cooling, and other parasitic loads while still delivering net power. Scientific breakeven (Q = 1) means energy out equals energy in, but this ignores conversion losses and facility operations. Commercial viability likely requires Q greater than 10 to produce enough surplus energy for practical power generation.
-
----
-
-### Question 4
-
-Deuterium-tritium fusion produces helium and a high-energy neutron. Why does the neutron flux from fusion reactions pose a long-term challenge for reactor design?
-
-A. Neutrons carry negative charges that interfere with the magnetic confinement system
-B. Neutrons are absorbed by the plasma and reduce the fusion reaction rate
-C. High-energy neutrons bombard reactor structural materials, displacing atoms and causing cumulative degradation that limits reactor lifetime
-D. Neutrons escape the reactor and pose radiation hazards to nearby cities
-
-Correct Answer: C
-
-Feedback: Correct. 14.1 MeV neutrons penetrate structural materials, displacing atoms from crystal lattices, creating helium bubbles, and transmuting elements. This cumulative damage limits the lifetime of reactor components. Neutrons are uncharged and pass through the magnetic field unconfined. They bombard the reactor's structural first wall, displacing atoms and causing cumulative material degradation that limits component lifetime and creates an engineering challenge for long-term operation.
-
----
-
-### Question 5
-
-Why must a commercial fusion reactor breed its own tritium fuel?
-
-A. Tritium is the most abundant element on Earth but is difficult to extract
-B. Tritium is radioactive with a 12.3-year half-life and does not exist in useful natural quantities, so the reactor must produce it by bombarding lithium with fusion neutrons
-C. Tritium breeding reduces the reactor's Q factor to improve safety
-D. Tritium can only be created through the fusion reaction itself
-
-Correct Answer: B
-
-Feedback: Correct. Tritium's short half-life means it decays away and cannot be stockpiled from natural sources. The reactor must manufacture its own fuel by using fusion neutrons to convert lithium in a breeding blanket into tritium. Tritium is radioactive and decays with a 12.3-year half-life. It does not exist in useful natural quantities. A commercial fusion reactor must breed tritium by bombarding lithium in a blanket surrounding the reactor with the neutrons produced by the fusion reaction.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Plasma Temperature, Magnetic Field Strength, Fuel Density, Energy Output, Neutron Flux, Wall Material Degradation, Net Energy Gain. Some components are external (Plasma Temperature, Magnetic Field Strength, Fuel Density) and some are internal (Energy Output, Neutron Flux, Wall Material Degradation, Net Energy Gain). The student needs to understand what each component represents and how they are organized.
 
 A student's fusion model shows that increasing plasma temperature from 100M to 200M degrees Celsius doubles the fusion reaction rate but causes a 40% increase in plasma instabilities that degrade confinement time. What does this reveal about the system dynamics?
 
@@ -1008,11 +933,15 @@ D. The model indicates that lower temperatures are always preferable for fusion
 
 Correct Answer: B
 
-Feedback: Correct. This demonstrates the fundamental coupling in fusion systems: the Lawson criterion parameters are not independent. Optimizing temperature degrades confinement, illustrating why meeting all three conditions simultaneously has been so challenging. The key insight is parameter coupling. The Lawson criterion requires temperature, density, and confinement time to all exceed thresholds simultaneously, but increasing temperature drives instabilities that reduce confinement time. This coupling is why fusion optimization is a multi-dimensional balancing act.
+Feedback: Correct. This demonstrates the fundamental coupling in fusion systems: the Lawson criterion parameters are not independent. Optimizing temperature degrades confinement, illustrating why meeting all three conditions simultaneously has been so challenging. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.8 + CCC5 (Energy and Matter)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Plasma Temperature increases, Energy Output increases; when Energy Output increases, Neutron Flux increases. The student is trying to understand why these relationships are positive or negative.
 
 In the fusion reactor model, doubling magnetic field strength from 5T to 10T improves plasma confinement but requires superconducting magnets that consume 3x more cooling energy. How should this trade-off be evaluated in terms of net energy gain (Q factor)?
 
@@ -1023,11 +952,15 @@ D. The Q factor only accounts for plasma heating energy, not magnet cooling
 
 Correct Answer: B
 
-Feedback: Correct. The Q factor represents total energy balance. Any energy consumed by the system, including magnet cooling, must be subtracted from the fusion output. Stronger magnets that improve confinement may actually reduce net energy gain if their cooling costs are too high. Net energy gain (Q) accounts for ALL energy inputs, including magnet cooling. If doubling field strength triples cooling costs, the improved confinement must produce enough additional fusion energy to more than offset this parasitic load, or Q actually decreases.
+Feedback: Correct. The Q factor represents total energy balance. Any energy consumed by the system, including magnet cooling, must be subtracted from the fusion output. Stronger magnets that improve confinement may actually reduce net energy gain if their cooling costs are too high. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.8 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Plasma Temperature increases, Energy Output increases and when Energy Output increases, Neutron Flux increases and when Neutron Flux increases, Wall Material Degradation increases. The student changes one variable to see how the whole system responds.
 
 The model reveals that neutron flux causes first-wall material degradation that follows a nonlinear curve: damage increases slowly for the first 5 years, then accelerates. What engineering implication does this have for commercial reactor design?
 
@@ -1038,11 +971,15 @@ D. The accelerating damage indicates that fusion power becomes more efficient ov
 
 Correct Answer: B
 
-Feedback: Correct. Nonlinear degradation with an acceleration point means components have a predictable but limited service life. Commercial reactor design must include engineered replacement schedules, and the associated costs and downtime directly affect economic viability. The accelerating degradation curve creates a maintenance engineering challenge. Components cannot last indefinitely, so commercial reactors must be designed with replaceable first-wall modules on predictable schedules, with replacement cost and reactor downtime factored into the economic model.
+Feedback: Correct. Nonlinear degradation with an acceleration point means components have a predictable but limited service life. Commercial reactor design must include engineered replacement schedules, and the associated costs and downtime directly affect economic viability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.8 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student uses the model to compare two reactor designs: Design A achieves Q = 15 but has a tritium breeding ratio of 0.9, while Design B achieves Q = 8 but has a breeding ratio of 1.15. Which analysis correctly identifies the long-term viability issue?
 
@@ -1053,11 +990,15 @@ D. Design A's higher Q compensates for its lower breeding ratio over time
 
 Correct Answer: B
 
-Feedback: Correct. A tritium breeding ratio below 1.0 means the reactor consumes more tritium than it creates. No matter how much energy it produces, Design A will eventually exhaust its fuel supply. Design B is self-sustaining in fuel production. A tritium breeding ratio below 1.0 is fatal to long-term operation. Tritium cannot be sourced naturally in useful quantities. Design A produces more energy per cycle but will run out of fuel, while Design B is fuel self-sufficient and can operate indefinitely.
+Feedback: Correct. A tritium breeding ratio below 1.0 means the reactor consumes more tritium than it creates. No matter how much energy it produces, Design A will eventually exhaust its fuel supply. Design B is self-sustaining in fuel production. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.8 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Plasma Temperature, Magnetic Field Strength, Fuel Density), but they can take action on internal components (Energy Output, Neutron Flux, Wall Material Degradation, Net Energy Gain). They need to decide which action would be most effective based on what the model shows.
 
 Based on the fusion reactor model, which conclusion about the relationship between energy output and wall material degradation is best supported by the simulation?
 
@@ -1068,27 +1009,18 @@ D. Reducing energy output to zero is the only way to prevent wall degradation
 
 Correct Answer: B
 
-Feedback: Correct. In D-T fusion, 80% of the energy is carried by the neutron. The very reaction that produces energy also produces the particles that damage the reactor. This inherent coupling means more power necessarily means more damage. Energy output and wall degradation are coupled by the physics of the D-T reaction: fusion produces helium AND a 14.1 MeV neutron that carries 80% of the energy. You cannot have the energy without the neutrons that cause structural damage.
+Feedback: Correct. In D-T fusion, 80% of the energy is carried by the neutron. The very reaction that produces energy also produces the particles that damage the reactor. This inherent coupling means more power necessarily means more damage. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: C
-Question 4: C
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.8, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.8, CCC5)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.8, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.8, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.8, CCC5)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

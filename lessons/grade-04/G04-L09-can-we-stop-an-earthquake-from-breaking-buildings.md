@@ -867,77 +867,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS3-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What causes an earthquake?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.2 + CCC4 (Systems and System Models)
 
-A. Heavy trucks driving on the roads
-B. Movement of large pieces of rock deep beneath Earth's surface
-C. Strong wind blowing against the ground
-D. Too many buildings in one area
-
-Correct Answer: B
-
-Feedback: That is right! Earthquakes happen when large pieces of Earth's crust (tectonic plates) move, slide, or bump against each other deep underground, causing the ground to shake. Earthquakes are not caused by things on the surface. They happen when huge pieces of rock deep underground shift and release energy, making the ground shake.
-
----
-
-### Question 2
-
-Can engineers stop earthquakes from happening?
-
-A. Yes, they can prevent all earthquakes
-B. Yes, but only small ones
-C. No, but they can design buildings to survive them
-D. No, and there is nothing anyone can do about earthquake damage
-
-Correct Answer: C
-
-Feedback: Correct! Engineers cannot prevent earthquakes because they are caused by natural forces deep underground. But engineers CAN design buildings and structures that survive shaking. Nobody can stop earthquakes. But engineers have found ways to design buildings that can survive even strong earthquakes by using special building techniques.
-
----
-
-### Question 3
-
-What is a natural hazard?
-
-A. Any danger caused by people
-B. A natural event like an earthquake, flood, or hurricane that can harm people
-C. A hazard sign posted in a park
-D. A dangerous animal in the wild
-
-Correct Answer: B
-
-Feedback: Right! A natural hazard is a natural event, like an earthquake, flood, volcano eruption, or hurricane, that has the potential to harm people and property. A natural hazard is a natural event, not a human-caused danger. Earthquakes, floods, and hurricanes are examples of natural hazards that can harm people and property.
-
----
-
-### Question 4
-
-Why do some buildings fall down during earthquakes while others stay standing?
-
-A. The fallen buildings were older and the standing ones were newer
-B. It depends on luck and nothing else
-C. The standing buildings were designed with special features to handle shaking
-D. The earthquake only shook certain blocks and skipped others
-
-Correct Answer: C
-
-Feedback: Exactly! Buildings that survive earthquakes are usually designed with special engineering features like flexibility, strong foundations, and cross-bracing that help them absorb and withstand shaking. Building design makes a big difference. Buildings with special engineering features, like flexible frames and strong foundations, are much more likely to survive earthquake shaking.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Earthquake Strength, Building Flexibility, Damage Level. Some components are external (Earthquake Strength) and some are internal (Building Flexibility, Damage Level). The student needs to understand what each component represents and how they are organized.
 
 In the earthquake model, what is the relationship between Earthquake Strength and Damage Level?
 
@@ -948,11 +888,15 @@ D. The relationship changes every time
 
 Correct Answer: B
 
-Feedback: Right! The relationship is positive. As earthquake strength increases, damage level also increases. Stronger shaking causes more destruction. Stronger earthquakes release more energy and cause more shaking. The model shows a positive relationship: more earthquake strength means more damage.
+Feedback: Right! The relationship is positive. As earthquake strength increases, damage level also increases. Stronger shaking causes more destruction. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Earthquake Strength increases, Damage Level increases; when Building Flexibility increases, Damage Level decreases. The student is trying to understand why these relationships are positive or negative.
 
 What is the relationship between Building Flexibility and Damage Level?
 
@@ -963,11 +907,15 @@ D. Flexible buildings always collapse
 
 Correct Answer: B
 
-Feedback: Correct! The relationship is negative. When building flexibility increases, damage decreases. Flexible buildings sway WITH the earthquake instead of fighting against it. More flexibility means less damage. Flexible buildings bend and sway with the shaking instead of cracking. This is a negative relationship: flexibility goes up, damage goes down.
+Feedback: Correct! The relationship is negative. When building flexibility increases, damage decreases. Flexible buildings sway WITH the earthquake instead of fighting against it. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Earthquake Strength increases, Damage Level increases and when Building Flexibility increases, Damage Level decreases. The student changes one variable to see how the whole system responds.
 
 Two buildings face the same strong earthquake. Building A is stiff and rigid. Building B is flexible with base isolation pads. Which building will likely have LESS damage, and why?
 
@@ -978,11 +926,15 @@ D. Building A, because base isolation pads make buildings weaker
 
 Correct Answer: B
 
-Feedback: Exactly! Building B will have less damage. Flexible buildings sway with the earthquake, and base isolation pads absorb shaking energy. The model shows that flexibility reduces damage even in strong earthquakes. The model shows that stiff buildings crack because they fight against the shaking. Flexible buildings with base isolators absorb the energy and experience less damage.
+Feedback: Exactly! Building B will have less damage. Flexible buildings sway with the earthquake, and base isolation pads absorb shaking energy. The model shows that flexibility reduces damage even in strong earthquakes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 An engineer is asked to design a new school in earthquake country. Based on the model, what is the MOST important design feature to include?
 
@@ -993,25 +945,37 @@ D. Windows that open during earthquakes to let the shaking out
 
 Correct Answer: B
 
-Feedback: Right! The model clearly shows that flexibility reduces damage. Cross-bracing, flexible frames, and base isolation help buildings absorb earthquake energy instead of cracking. The model shows that stiff, rigid buildings suffer more damage. The best design includes flexibility features like cross-bracing and bendable frames that absorb earthquake energy.
+Feedback: Right! The model clearly shows that flexibility reduces damage. Cross-bracing, flexible frames, and base isolation help buildings absorb earthquake energy instead of cracking. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.2 + CCC2 (Cause and Effect)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Earthquake Strength), but they can take action on internal components (Building Flexibility, Damage Level). They need to decide which action would be most effective based on what the model shows.
+
+What causes an earthquake?
+
+A. Heavy trucks driving on the roads
+B. Movement of large pieces of rock deep beneath Earth's surface
+C. Strong wind blowing against the ground
+D. Too many buildings in one area
+
+Correct Answer: B
+
+Feedback: That is right! Earthquakes happen when large pieces of Earth's crust (tectonic plates) move, slide, or bump against each other deep underground, causing the ground to shake. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.2, CCC2)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

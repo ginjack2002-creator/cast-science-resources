@@ -829,77 +829,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-PS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What happens to water when you pour it from a cup into a bowl?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS1.1 + CCC4 (Systems and System Models)
 
-A. The water changes shape to match the bowl
-B. The water stays the same shape as the cup
-C. The water disappears
-D. The water gets heavier
-
-Correct Answer: A
-
-Feedback: That is right! Water is a liquid, so it flows and takes the shape of whatever container it is poured into. Water is a liquid. Liquids do not keep their shape. When you pour water into a new container, it changes to match the new shape.
-
----
-
-### Question 2
-
-Which one is a liquid?
-
-A. A wooden block
-B. A rock
-C. Juice
-D. A crayon
-
-Correct Answer: C
-
-Feedback: Yes! Juice is a liquid because it flows and takes the shape of its container, just like water. A liquid is something that flows and takes the shape of its container. Juice flows just like water, so juice is a liquid.
-
----
-
-### Question 3
-
-If you put a toy block into a different box, what happens to the block's shape?
-
-A. It melts into the new box
-B. It stays the same shape
-C. It gets bigger
-D. It turns into water
-
-Correct Answer: B
-
-Feedback: Correct! A block is a solid. Solids keep their own shape no matter where you put them. A toy block is a solid. Solids keep their own shape. No matter what box you put it in, the block stays the same shape.
-
----
-
-### Question 4
-
-What is matter?
-
-A. Only things that are really heavy
-B. Anything you can touch or feel that takes up space
-C. Only things that are hard like rocks
-D. Only things you can see
-
-Correct Answer: B
-
-Feedback: That is right! Matter is anything you can touch or feel that takes up space. Water, air, wood, and even tiny grains of sand are all matter. Matter is not just heavy things or hard things. Matter is anything that takes up space and can be touched or felt, including liquids like water and gases like air.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Container Shape, Water Shape, Water Level. Some components are external (Container Shape) and some are internal (Water Shape, Water Level). The student needs to understand what each component represents and how they are organized.
 
 You pour the same water from a tall skinny cup into a wide flat bowl. What stays the same?
 
@@ -910,11 +850,15 @@ D. Nothing stays the same
 
 Correct Answer: C
 
-Feedback: Correct! The shape and height change, but the amount of water stays the same. You still have the same water, just in a new shape. When you pour water into a new container, the shape and height change, but the amount of water stays exactly the same. No water is lost or gained.
+Feedback: Correct! The shape and height change, but the amount of water stays the same. You still have the same water, just in a new shape. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Container Shape increases, Water Shape increases; when Container Shape increases, Water Level decreases. The student is trying to understand why these relationships are positive or negative.
 
 In the model, Container Shape is an external component. What does that mean?
 
@@ -925,11 +869,15 @@ D. It only works with water
 
 Correct Answer: B
 
-Feedback: Yes! An external component is something we choose or control. We pick which container to use before the experiment starts. External components are inputs that we choose or control. We decide which container to use (tall cup, flat bowl, round jar), so Container Shape is external.
+Feedback: Yes! An external component is something we choose or control. We pick which container to use before the experiment starts. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Container Shape increases, Water Shape increases and when Container Shape increases, Water Level decreases. The student changes one variable to see how the whole system responds.
 
 What is a property of a liquid?
 
@@ -940,11 +888,15 @@ D. It is always cold
 
 Correct Answer: B
 
-Feedback: That is right! A key property of liquids is that they flow and take the shape of whatever container they are in. Liquids do not keep their own shape like solids do. A property of liquids is that they flow and take the shape of whatever container holds them.
+Feedback: That is right! A key property of liquids is that they flow and take the shape of whatever container they are in. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 When the container gets wider, what happens to the water level?
 
@@ -955,25 +907,37 @@ D. The water level disappears
 
 Correct Answer: C
 
-Feedback: Correct! When the container is wider, the same amount of water spreads out more, so the water level goes down. This is a negative relationship. When a container is wider, the same water spreads out across a bigger bottom. Since it spreads out, the water level gets lower. The amount of water has not changed, just how it is spread out.
+Feedback: Correct! When the container is wider, the same amount of water spreads out more, so the water level goes down. This is a negative relationship. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Container Shape), but they can take action on internal components (Water Shape, Water Level). They need to decide which action would be most effective based on what the model shows.
+
+What happens to water when you pour it from a cup into a bowl?
+
+A. The water changes shape to match the bowl
+B. The water stays the same shape as the cup
+C. The water disappears
+D. The water gets heavier
+
+Correct Answer: A
+
+Feedback: That is right! Water is a liquid, so it flows and takes the shape of whatever container it is poured into. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: C
-Question 3: B
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS1.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS1.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS1.1, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: C
-
----
 
 ## Resources
 

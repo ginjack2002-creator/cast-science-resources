@@ -161,77 +161,17 @@ Environmental Ethicists and Science Policy Advisors help governments and organiz
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ETS1-1, HS-ETS1-3.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-When scientists discover a new technology that could help the environment, should they always use it right away?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. Yes, if it could help, they should use it immediately
-B. No, they should first consider whether it might cause new problems
-C. It does not matter because technology always works perfectly
-D. Scientists should never use technology on the environment
-
-Correct Answer: B
-
-Feedback: Correct! Before using a new technology, scientists should carefully consider whether it might cause unintended negative consequences. Before using any technology, especially in the environment, scientists must think carefully about whether it could cause new problems. Good intentions do not guarantee good outcomes.
-
----
-
-### Question 2
-
-What does 'risk assessment' mean?
-
-A. Deciding how much money something will cost
-B. Carefully evaluating what could go wrong before taking action
-C. Testing how fast something can move
-D. Asking your friends what they think
-
-Correct Answer: B
-
-Feedback: Yes! Risk assessment means carefully evaluating potential negative outcomes before taking action. It is a critical step in responsible decision-making. Risk assessment is the process of carefully evaluating what could go wrong before taking action. Scientists and engineers use risk assessment to weigh potential benefits against potential harm.
-
----
-
-### Question 3
-
-What are 'unintended consequences'?
-
-A. Results that you planned for and expected
-B. Unexpected negative outcomes from an action that was meant to help
-C. Consequences that do not actually happen
-D. Positive results that always follow good decisions
-
-Correct Answer: B
-
-Feedback: Correct! Unintended consequences are unexpected negative outcomes that happen as a result of an action meant to be helpful. Unintended consequences are unexpected negative results that come from actions meant to help. For example, introducing a new animal to control pests might cause that animal to harm native species too.
-
----
-
-### Question 4
-
-Should decisions about the environment be based on feelings or on scientific evidence?
-
-A. Only on feelings because science is too complicated
-B. Only on evidence because feelings never matter
-C. Primarily on evidence, but values and ethics also play a role
-D. On whatever the majority votes for
-
-Correct Answer: C
-
-Feedback: Yes! Environmental decisions should be based primarily on scientific evidence, but values, ethics, and community input also matter in making responsible choices. Environmental decisions work best when they are based on scientific evidence combined with ethical reasoning. Evidence tells us what will happen; ethics helps us decide what should happen. Both matter.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Problem Severity, Solution Risk, Available Evidence, Intervention Justified. Some components are external (Problem Severity, Solution Risk, Available Evidence) and some are internal (Intervention Justified). The student needs to understand what each component represents and how they are organized.
 
 In the model, what THREE factors determine whether an environmental intervention is justified?
 
@@ -242,11 +182,15 @@ D. Number of scientists, amount of funding, and public opinion
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that problem severity, solution risk, and available evidence are the three key inputs that determine whether intervention makes sense. The model identified three critical inputs: how severe the problem is, how risky the proposed solution is, and how strong the scientific evidence supporting the solution is. All three must be considered together.
+Feedback: Correct! The model showed that problem severity, solution risk, and available evidence are the three key inputs that determine whether intervention makes sense. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Problem Severity increases, Intervention Justified increases; when Solution Risk increases, Intervention Justified decreases. The student is trying to understand why these relationships are positive or negative.
 
 What did the model show when problem severity was high, solution risk was high, and evidence was moderate?
 
@@ -257,11 +201,15 @@ D. The model could not produce any result
 
 Correct Answer: C
 
-Feedback: Yes! This was a 'hard call' scenario. The severe problem pushes toward action, but the high risk and only moderate evidence create genuine uncertainty. When factors conflict (severe problem pushing for action, high risk pushing against it, moderate evidence), the model shows a 'hard call.' Most real-world ethical decisions fall in this gray area where the answer is not obvious.
+Feedback: Yes! This was a 'hard call' scenario. The severe problem pushes toward action, but the high risk and only moderate evidence create genuine uncertainty. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Problem Severity increases, Intervention Justified increases and when Solution Risk increases, Intervention Justified decreases and when Available Evidence increases, Intervention Justified increases. The student changes one variable to see how the whole system responds.
 
 According to the model, what is the main limitation of using computational models for ethical decisions?
 
@@ -272,11 +220,15 @@ D. Models can only work with environmental problems
 
 Correct Answer: B
 
-Feedback: Correct! Models are powerful tools for seeing all the factors clearly, but they cannot determine what is morally right. That judgment requires human reasoning and ethical values. Models help us see the factors and tradeoffs clearly, but they cannot make moral judgments for us. Science tells us what WILL happen; ethics tells us what SHOULD happen. Models inform ethical decisions but cannot replace human moral reasoning.
+Feedback: Correct! Models are powerful tools for seeing all the factors clearly, but they cannot determine what is morally right. That judgment requires human reasoning and ethical values. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 What did the model reveal about when ethical decisions are easiest vs. hardest?
 
@@ -287,25 +239,37 @@ D. Decisions are hard only when you do not have a computer model
 
 Correct Answer: B
 
-Feedback: That is right! Ethical decisions are straightforward when all factors point the same direction, but they become genuinely difficult when factors pull in opposing directions. The model showed that decisions are easy when all factors align (severe problem, safe solution, strong evidence). They become truly difficult when factors conflict, like a very severe problem with a very risky solution. Most real-world decisions fall in the 'hard call' zone.
+Feedback: That is right! Ethical decisions are straightforward when all factors point the same direction, but they become genuinely difficult when factors pull in opposing directions. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Problem Severity, Solution Risk, Available Evidence), but they can take action on internal components (Intervention Justified). They need to decide which action would be most effective based on what the model shows.
+
+When scientists discover a new technology that could help the environment, should they always use it right away?
+
+A. Yes, if it could help, they should use it immediately
+B. No, they should first consider whether it might cause new problems
+C. It does not matter because technology always works perfectly
+D. Scientists should never use technology on the environment
+
+Correct Answer: B
+
+Feedback: Correct! Before using a new technology, scientists should carefully consider whether it might cause unintended negative consequences. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

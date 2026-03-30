@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-ESS2-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What does a map show?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.2 + CCC4 (Systems and System Models)
 
-A. What a place looks like from above, like a bird flying over it
-B. Only buildings and roads
-C. What a place looks like from under the ground
-D. Only oceans and nothing else
-
-Correct Answer: A
-
-Feedback: That is right! A map shows what a place looks like from above, as if you were a bird flying high over the area. Maps show a bird's eye view, which means they show what an area looks like from above. They can show land, water, buildings, roads, and many other features.
-
----
-
-### Question 2
-
-What does the color blue usually mean on a map?
-
-A. The sky
-B. Water like rivers, lakes, and oceans
-C. Cold places
-D. Blue flowers
-
-Correct Answer: B
-
-Feedback: Yes! On most maps, blue represents water, including rivers, lakes, streams, and oceans. On maps, blue represents water, not the sky. When you see blue on a map, it shows where rivers, lakes, and oceans are located.
-
----
-
-### Question 3
-
-What is a mountain?
-
-A. A very deep hole in the ground
-B. A flat area of land
-C. A tall area of land that rises high above the area around it
-D. A type of river
-
-Correct Answer: C
-
-Feedback: Correct! A mountain is a tall area of land that rises high above the surrounding area. Mountains are one of many landforms on Earth. A mountain is a landform that rises high above the surrounding area. Mountains are the tallest features on Earth's surface. Some are covered in snow, forests, or bare rock.
-
----
-
-### Question 4
-
-Where does water flow when it rains on a mountain?
-
-A. Uphill toward the top of the mountain
-B. It stays right where it lands
-C. Downhill toward the bottom and into valleys
-D. Into outer space
-
-Correct Answer: C
-
-Feedback: That is right! Water always flows downhill because of gravity. Rain on a mountain flows down into valleys, streams, and rivers. Gravity pulls water downhill. When rain falls on a mountain, it flows down the sides into valleys, creating streams and rivers that carry water to the lowest spots.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Land Height, Water Location, Map Features. Some components are external (Land Height) and some are internal (Water Location, Map Features). The student needs to understand what each component represents and how they are organized.
 
 What is a landform?
 
@@ -904,11 +844,15 @@ D. A weather pattern
 
 Correct Answer: B
 
-Feedback: Yes! A landform is a natural shape on Earth's surface. Mountains, hills, valleys, and plains are all landforms. Landforms are natural shapes on Earth's surface that were created by nature, not people. Mountains, hills, valleys, plains, and canyons are all examples of landforms.
+Feedback: Yes! A landform is a natural shape on Earth's surface. Mountains, hills, valleys, and plains are all landforms. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Land Height increases, Water Location decreases; when Land Height increases, Map Features increases. The student is trying to understand why these relationships are positive or negative.
 
 In our model, why does water collect in valleys and low areas?
 
@@ -919,11 +863,15 @@ D. Because water prefers to be in valleys
 
 Correct Answer: B
 
-Feedback: Correct! Water always flows downhill because of gravity. It naturally collects at the lowest points, which is why rivers and lakes are found in valleys and low areas. Gravity pulls water downhill. Water flows from high places like mountains down to the lowest spots. That is why lakes and rivers are found in valleys and low areas, not on top of mountains.
+Feedback: Correct! Water always flows downhill because of gravity. It naturally collects at the lowest points, which is why rivers and lakes are found in valleys and low areas. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Land Height increases, Water Location decreases and when Land Height increases, Map Features increases. The student changes one variable to see how the whole system responds.
 
 On a map, you see a blue winding line between two brown shapes. What does the blue line most likely represent?
 
@@ -934,11 +882,15 @@ D. A blue fence
 
 Correct Answer: B
 
-Feedback: That is right! Blue on a map means water. A winding blue line between brown shapes (mountains) is a river flowing through a valley. Maps use colors to show features. Blue means water and brown often means mountains or high land. A winding blue line between brown shapes is a river flowing between mountains.
+Feedback: That is right! Blue on a map means water. A winding blue line between brown shapes (mountains) is a river flowing through a valley. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 How is a map different from standing on the ground and looking around?
 
@@ -949,25 +901,37 @@ D. Standing on the ground gives you a better view than any map
 
 Correct Answer: B
 
-Feedback: Correct! A map gives you a bird's eye view so you can see the whole area at once, including things you could never see from the ground like how a river bends or what is on the other side of a mountain. From the ground, you can only see what is nearby. A map shows you the whole area from above, so you can see all the mountains, rivers, and features at once, even places you cannot see from the ground.
+Feedback: Correct! A map gives you a bird's eye view so you can see the whole area at once, including things you could never see from the ground like how a river bends or what is on the other side of a mountain. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Land Height), but they can take action on internal components (Water Location, Map Features). They need to decide which action would be most effective based on what the model shows.
+
+What does a map show?
+
+A. What a place looks like from above, like a bird flying over it
+B. Only buildings and roads
+C. What a place looks like from under the ground
+D. Only oceans and nothing else
+
+Correct Answer: A
+
+Feedback: That is right! A map shows what a place looks like from above, as if you were a bird flying high over the area. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: C
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.2, CCC4)
+Question 5: A (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

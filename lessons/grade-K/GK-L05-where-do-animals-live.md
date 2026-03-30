@@ -724,73 +724,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-LS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Where does a fish live?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.1 + CCC4 (Systems and System Models)
 
-A. In a tree
-B. In the water
-C. In the desert
-
-Correct Answer: B
-
-Feedback: Yes! Fish live in the water because that is where they can breathe and find food. Fish live in the water. They need water to breathe through their gills and to find food.
-
----
-
-### Question 2
-
-What do animals need to stay alive?
-
-A. Toys and games
-B. Food, water, and a safe place
-C. Only sunshine
-
-Correct Answer: B
-
-Feedback: Yes! Animals need food to eat, water to drink, and a safe place to live. Animals need food, water, and a safe place called a shelter. These things help them stay alive.
-
----
-
-### Question 3
-
-Why can a polar bear live in the cold snow?
-
-A. It has thick fur to keep warm
-B. It does not like the cold
-C. It lives inside a house
-
-Correct Answer: A
-
-Feedback: Yes! Polar bears have thick fur that keeps them warm in the cold, snowy Arctic. Polar bears have thick fur that helps them stay warm. Their bodies are built for the cold, snowy place where they live.
-
----
-
-### Question 4
-
-If a pond has lots of fish, how many ducks can eat there?
-
-A. No ducks
-B. Only one duck
-C. Many ducks
-
-Correct Answer: C
-
-Feedback: Yes! If there are lots of fish to eat, many ducks can live at that pond. When there are lots of fish, many ducks can eat there. More food means more animals can live in that place.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Amount of Food, Number of Animals. Some components are external (Amount of Food) and some are internal (Number of Animals). The student needs to understand what each component represents and how they are organized.
 
 What is a habitat?
 
@@ -800,11 +744,15 @@ C. A kind of food
 
 Correct Answer: B
 
-Feedback: Yes! A habitat is the place where an animal lives. It has the food, water, and shelter the animal needs. A habitat is an animal's home. It gives the animal food, water, and a safe place to live.
+Feedback: Yes! A habitat is the place where an animal lives. It has the food, water, and shelter the animal needs. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Amount of Food increases, Number of Animals increases. The student is trying to understand why these relationships are positive or negative.
 
 When there is MORE food in a habitat, what happens to the Number of Animals?
 
@@ -814,11 +762,15 @@ C. It goes up
 
 Correct Answer: C
 
-Feedback: Yes! More food means more animals can live there. That is a positive connection. When there is more food, more animals can live in that habitat. More food supports more animals.
+Feedback: Yes! More food means more animals can live there. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Amount of Food increases, Number of Animals increases. The student changes one variable to see how the whole system responds.
 
 What is a shelter?
 
@@ -828,11 +780,15 @@ C. The water in a pond
 
 Correct Answer: B
 
-Feedback: That is right! A shelter is a safe place where an animal can hide, rest, and stay warm or cool. A shelter is a safe place for an animal. It is where they hide from danger, rest, and stay warm or cool.
+Feedback: That is right! A shelter is a safe place where an animal can hide, rest, and stay warm or cool. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 What happens when food runs out in a habitat?
 
@@ -842,25 +798,36 @@ C. Nothing changes
 
 Correct Answer: B
 
-Feedback: Yes! When food runs out, animals have to move to find a new home or fewer animals can survive there. When food is gone, animals must find a new place to live. Without food, fewer animals can stay in that habitat.
+Feedback: Yes! When food runs out, animals have to move to find a new home or fewer animals can survive there. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Amount of Food), but they can take action on internal components (Number of Animals). They need to decide which action would be most effective based on what the model shows.
+
+Where does a fish live?
+
+A. In a tree
+B. In the water
+C. In the desert
+
+Correct Answer: B
+
+Feedback: Yes! Fish live in the water because that is where they can breathe and find food. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: A
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.1, CCC4)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

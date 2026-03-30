@@ -901,86 +901,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Which property of lithium makes it particularly valuable for use in rechargeable batteries compared to other metals?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.1 + CCC4 (Systems and System Models)
 
-A. It is the lightest metal with a high electrochemical potential, enabling energy-dense batteries
-B. It is the most abundant metal in Earth's crust, making it inexpensive to mine
-C. It is the hardest metal available, making batteries more durable
-D. It has the highest melting point of all metals, preventing battery overheating
-
-Correct Answer: A
-
-Feedback: Correct. Lithium's low atomic mass and high electrochemical potential allow batteries to store large amounts of energy relative to their weight, which is critical for electric vehicles and portable electronics. Lithium is actually quite scarce and soft. Its value comes from being the lightest metal with a high electrochemical potential, which enables energy-dense batteries ideal for EVs and electronics.
-
----
-
-### Question 2
-
-A country holds 60% of the world's known lithium reserves. Which term best describes the type of risk this concentration creates for global EV manufacturers?
-
-A. Environmental risk from mining pollution
-B. Supply chain risk from geopolitical concentration
-C. Technological risk from outdated extraction methods
-D. Financial risk from currency fluctuations
-
-Correct Answer: B
-
-Feedback: Correct. When a critical resource is concentrated in a few locations, political instability, trade disputes, or export restrictions in those regions can disrupt the entire global supply chain. While environmental and financial risks exist, the primary concern when reserves are geographically concentrated is supply chain vulnerability to geopolitical disruption, trade restrictions, or political instability in those regions.
-
----
-
-### Question 3
-
-In a linear economy model, what happens to the lithium in a battery at the end of the product's useful life?
-
-A. It is recovered and refined for use in new batteries
-B. It is disposed of as waste in landfills or storage facilities
-C. It naturally decomposes and returns to the environment harmlessly
-D. It is converted into a different element through chemical reactions
-
-Correct Answer: B
-
-Feedback: Correct. In a linear economy (extract-use-dispose), materials are discarded after use rather than recovered, leading to resource waste and environmental contamination. In a linear economy, the model is extract-use-dispose. Unlike a circular economy where materials are recovered and reused, a linear model sends end-of-life products to landfills or waste storage.
-
----
-
-### Question 4
-
-Which factor most limits how quickly the global lithium supply can increase in response to rising demand?
-
-A. The speed at which electric vehicles can be manufactured
-B. The time required to discover, permit, and develop new mining operations
-C. The cost of transporting lithium from mines to battery factories
-D. The number of scientists researching lithium chemistry
-
-Correct Answer: B
-
-Feedback: Correct. New lithium mines typically require 7-10 years from discovery through permitting to production, creating a significant lag between demand signals and supply responses. The primary bottleneck is development time. New lithium mines take 7-10 years to bring online due to exploration, environmental assessment, permitting, and construction, creating a fundamental supply lag.
-
----
-
-### Question 5
-
-A student claims that switching entirely to electric vehicles will have no negative environmental consequences. Which evidence would best challenge this claim?
-
-A. Electric vehicles produce tailpipe emissions when driven at high speeds
-B. Lithium extraction from brine pools consumes massive quantities of water in arid regions
-C. Electric vehicle batteries last forever and never need replacement
-D. Lithium is a renewable resource that replenishes naturally over time
-
-Correct Answer: B
-
-Feedback: Correct. Lithium brine extraction requires pumping underground saltwater into evaporation ponds in some of the world's driest regions, consuming enormous amounts of water and impacting local ecosystems and communities. EVs produce zero tailpipe emissions and batteries do degrade over time. The strongest counterargument is that lithium extraction itself causes significant environmental harm, particularly through massive water consumption in arid mining regions.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Lithium Demand, Mining Rate, Environmental Damage, Battery Performance, Recycling Rate, Market Price, EV Adoption. Some components are external (Recycling Rate, EV Adoption) and some are internal (Lithium Demand, Mining Rate, Environmental Damage, Battery Performance, Market Price). The student needs to understand what each component represents and how they are organized.
 
 In the lithium supply chain model, when EV Adoption surges but Mining Rate remains flat, which outcome does the model predict?
 
@@ -991,11 +916,15 @@ D. Battery Performance improves immediately to reduce the amount of lithium need
 
 Correct Answer: B
 
-Feedback: Correct. When demand exceeds supply, market prices spike. This price pressure also pushes existing mines to expand and intensify operations, increasing environmental damage in mining regions. In the model, when demand surges but supply is constrained, prices spike due to scarcity. Recycling and battery improvements require deliberate investment and time; they do not automatically compensate for supply shortfalls.
+Feedback: Correct. When demand exceeds supply, market prices spike. This price pressure also pushes existing mines to expand and intensify operations, increasing environmental damage in mining regions. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.1 + CCC6 (Structure and Function)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when EV Adoption increases, Lithium Demand increases; when Lithium Demand increases, Market Price increases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals that high Market Price triggers investment in both new mining operations AND recycling infrastructure. Why does the model show recycling scaling faster than mining?
 
@@ -1006,11 +935,15 @@ D. Governments ban new mining whenever prices rise above a threshold
 
 Correct Answer: B
 
-Feedback: Correct. Recycling infrastructure has a much shorter development timeline than new mining operations, allowing it to respond to price signals and supply shortages more rapidly. The key difference is timescale. Recycling facilities can be built in a few years, while new mines require 7-10 years for discovery, permitting, and development. This makes recycling a faster response to supply gaps.
+Feedback: Correct. Recycling infrastructure has a much shorter development timeline than new mining operations, allowing it to respond to price signals and supply shortages more rapidly. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when EV Adoption increases, Lithium Demand increases and when Lithium Demand increases, Market Price increases and when Mining Rate increases, Environmental Damage increases. The student changes one variable to see how the whole system responds.
 
 A student runs the 'Circular Economy Transition' scenario with 90% Recycling Rate and moderate EV Adoption. Which system-level outcome best explains why this scenario stabilizes the lithium supply?
 
@@ -1021,11 +954,15 @@ D. Recycling converts lithium into a different element that works better in batt
 
 Correct Answer: B
 
-Feedback: Correct. A circular economy reduces but does not eliminate mining demand. By recovering lithium from spent batteries, the system reduces price volatility, decreases extraction pressure, and mitigates environmental damage. A circular economy does not eliminate mining entirely or change lithium's chemistry. It stabilizes the system by reducing the fraction of demand that must be met through new extraction, moderating prices and environmental impact.
+Feedback: Correct. A circular economy reduces but does not eliminate mining demand. By recovering lithium from spent batteries, the system reduces price volatility, decreases extraction pressure, and mitigates environmental damage. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model demonstrates a 'supply-demand-environment trilemma' in the lithium economy. Which combination of strategies does the model show as the only viable resolution?
 
@@ -1036,11 +973,15 @@ D. Switching all vehicles to hydrogen fuel cells within five years
 
 Correct Answer: C
 
-Feedback: Correct. The model shows that the only sustainable path resolves all three tensions simultaneously: reducing lithium per vehicle through better battery chemistry and recovering lithium through high recycling rates. The model shows that neither pure supply-side (more mining) nor demand-side (fewer EVs) approaches solve the trilemma. Only combining reduced lithium requirements (better batteries) with high recycling rates addresses supply, demand, and environment simultaneously.
+Feedback: Correct. The model shows that the only sustainable path resolves all three tensions simultaneously: reducing lithium per vehicle through better battery chemistry and recovering lithium through high recycling rates. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Recycling Rate, EV Adoption), but they can take action on internal components (Lithium Demand, Mining Rate, Environmental Damage, Battery Performance, Market Price). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model's feedback loops, which statement best explains why the lithium economy exhibits extreme price volatility?
 
@@ -1051,27 +992,18 @@ D. Consumers hoard lithium during shortages, creating artificial scarcity
 
 Correct Answer: B
 
-Feedback: Correct. The fundamental source of volatility is the time asymmetry between demand and supply responses. EV adoption and policy can shift demand in months, but new mining capacity takes 7-10 years to come online. Price volatility in the lithium market stems from a temporal mismatch: demand can shift rapidly with policy changes and consumer behavior, while supply adjustments require years to decades for new mining development.
+Feedback: Correct. The fundamental source of volatility is the time asymmetry between demand and supply responses. EV adoption and policy can shift demand in months, but new mining capacity takes 7-10 years to come online. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.1, CCC6)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: B
-
----
 
 ## Resources
 

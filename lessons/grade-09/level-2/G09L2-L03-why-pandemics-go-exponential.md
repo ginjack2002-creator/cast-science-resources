@@ -973,86 +973,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-In epidemiology, what does R-naught (R0) represent?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.6 + CCC4 (Systems and System Models)
 
-A. The total number of people who will be infected during a pandemic
-B. The average number of new infections caused by one infected person in a fully susceptible population
-C. The mortality rate of a disease in a given population
-D. The speed at which a vaccine can be distributed
-
-Correct Answer: B
-
-Feedback: Correct. R0 represents the basic reproduction number, indicating how many secondary infections one infected person generates on average in a population where everyone is susceptible. R0 is not a count of total infections or a mortality rate. It specifically measures transmission potential: how many new cases one infected person typically creates in a fully susceptible population.
-
----
-
-### Question 2
-
-Why does an infectious disease initially spread exponentially through a population?
-
-A. Because the virus mutates to become more contagious over time
-B. Because hospitals become overwhelmed and cannot treat patients
-C. Because each infected person infects multiple new people, and each of those infects multiple more, creating compound growth
-D. Because governments delay their response to the outbreak
-
-Correct Answer: C
-
-Feedback: Correct. Exponential growth occurs because the rate of increase is proportional to the current number infected. If each person infects 3 others, one case becomes 3, then 9, then 27, with each generation multiplying by the same factor. Exponential spread is a mathematical property of compound transmission, not a result of mutations or policy failures. When each infected person creates multiple new infections, the total grows by a multiplying factor each generation.
-
----
-
-### Question 3
-
-The SIR model divides a population into three compartments: Susceptible, Infected, and Recovered. Why does the epidemic eventually peak and decline even without intervention?
-
-A. The virus naturally becomes weaker over time
-B. As more people recover and gain immunity, fewer susceptible people remain for the virus to infect
-C. Infected people stop being contagious after a fixed period
-D. The population develops collective behavioral changes
-
-Correct Answer: B
-
-Feedback: Correct. The epidemic peaks when the susceptible population is depleted to the point where each infected person cannot sustain transmission to enough new hosts. As Recovered increases, Susceptible decreases, naturally reducing the transmission rate. The epidemic declines because the Susceptible pool shrinks. As individuals move from Susceptible to Infected to Recovered, fewer susceptible hosts remain, reducing the effective reproduction number below 1.
-
----
-
-### Question 4
-
-What is the herd immunity threshold?
-
-A. The point at which everyone in the population has been infected
-B. The proportion of the population that must be immune to stop sustained transmission
-C. The minimum number of hospital beds needed during a pandemic
-D. The temperature at which the virus can no longer survive
-
-Correct Answer: B
-
-Feedback: Correct. The herd immunity threshold is the proportion of the population that must be immune (through infection or vaccination) so that each infected person generates fewer than one new infection on average, causing the epidemic to decline. Herd immunity does not require everyone to be infected. It is the percentage of immune individuals needed to reduce the effective reproduction number below 1, preventing sustained transmission through the population.
-
----
-
-### Question 5
-
-A city implements strict quarantine measures that reduce person-to-person contact by 75%. How does this affect the course of an epidemic?
-
-A. It eliminates the disease completely within days
-B. It has no effect because the virus will eventually infect everyone
-C. It reduces the effective reproduction number, slowing the spread and lowering the peak number of infections
-D. It only delays the epidemic without changing the total number of infections
-
-Correct Answer: C
-
-Feedback: Correct. Reducing contact rate directly reduces the effective R value. If R0 is 3 and contact is reduced 75%, the effective R drops to about 0.75, meaning the epidemic shrinks rather than grows. Quarantine works by reducing the contact rate, which directly lowers the effective reproduction number. This both slows the spread and reduces the total number of infections, not just the timing.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Susceptible Population, Infected Population, Recovered Population, Contact Rate, Transmission Rate, Vaccination Rate, Quarantine Effectiveness. Some components are external (Contact Rate, Vaccination Rate, Quarantine Effectiveness) and some are internal (Susceptible Population, Infected Population, Recovered Population, Transmission Rate). The student needs to understand what each component represents and how they are organized.
 
 A student's SIR model shows that implementing quarantine at 1% infection rate versus 10% infection rate results in 60% fewer total infections despite identical quarantine strength. What principle does this demonstrate?
 
@@ -1063,11 +988,15 @@ D. The 1% scenario had a smaller initial population
 
 Correct Answer: B
 
-Feedback: Correct. During exponential growth, the number of infected people doubles rapidly. Intervening early (at 1%) stops the doubling chain much sooner, preventing vastly more infections than the same intervention applied after significant spread. The intervention was identical in both scenarios. The difference in outcome is entirely due to timing. Exponential growth means that waiting from 1% to 10% infection allows enormous additional transmission that even strong intervention cannot undo.
+Feedback: Correct. During exponential growth, the number of infected people doubles rapidly. Intervening early (at 1%) stops the doubling chain much sooner, preventing vastly more infections than the same intervention applied after significant spread. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Contact Rate increases, Infected Population increases; when Susceptible Population increases, Infected Population increases. The student is trying to understand why these relationships are positive or negative.
 
 In the SIR model, the Susceptible, Infected, and Recovered compartments are described as 'coupled.' What does this mean in systems thinking terms?
 
@@ -1078,11 +1007,15 @@ D. Coupling means the model requires three separate simulations to run
 
 Correct Answer: B
 
-Feedback: Correct. Coupled compartments means the state of each compartment influences the others. New infections depend on BOTH the number of Susceptible AND Infected people simultaneously, creating interdependent dynamics. Coupling means the compartments are dynamically linked. The flow from Susceptible to Infected depends on the product of Susceptible and Infected populations. As one changes, all flows in the system adjust.
+Feedback: Correct. Coupled compartments means the state of each compartment influences the others. New infections depend on BOTH the number of Susceptible AND Infected people simultaneously, creating interdependent dynamics. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Contact Rate increases, Infected Population increases and when Susceptible Population increases, Infected Population increases and when Infected Population increases, Susceptible Population decreases. The student changes one variable to see how the whole system responds.
 
 The model shows that vaccination moves people directly from Susceptible to Recovered without passing through Infected. Why is this pathway so valuable compared to natural immunity?
 
@@ -1093,11 +1026,15 @@ D. Vaccination works faster than natural infection
 
 Correct Answer: B
 
-Feedback: Correct. In the SIR model, both infection and vaccination reduce the Susceptible pool. But vaccination achieves this without the suffering, healthcare burden, and mortality of passing through the Infected compartment. The model shows that both pathways reduce Susceptible and increase Recovered, slowing the epidemic identically from a mathematical perspective. The critical advantage of vaccination is bypassing the Infected stage and its associated harm.
+Feedback: Correct. In the SIR model, both infection and vaccination reduce the Susceptible pool. But vaccination achieves this without the suffering, healthcare burden, and mortality of passing through the Infected compartment. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A simulation compares an uncontrolled epidemic to one with moderate intervention. Both ultimately infect similar percentages of the population, but the intervention scenario has far fewer deaths. What explains this?
 
@@ -1108,11 +1045,15 @@ D. The intervention eliminated the most dangerous variant
 
 Correct Answer: B
 
-Feedback: Correct. Flattening the curve does not necessarily reduce total infections, but it spreads them over a longer period. This prevents hospitals from being overwhelmed, ensuring patients receive adequate care, which reduces mortality. The question states that similar percentages were infected. The difference in deaths comes from the rate of infection. When the peak is flattened, hospitals can treat patients effectively. When overwhelmed, patients who could have survived die from inadequate care.
+Feedback: Correct. Flattening the curve does not necessarily reduce total infections, but it spreads them over a longer period. This prevents hospitals from being overwhelmed, ensuring patients receive adequate care, which reduces mortality. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS2.6 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Contact Rate, Vaccination Rate, Quarantine Effectiveness), but they can take action on internal components (Susceptible Population, Infected Population, Recovered Population, Transmission Rate). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, what happens to the effective reproduction number as more people are vaccinated, and what is the significance of this change?
 
@@ -1123,27 +1064,18 @@ D. The effective R drops to exactly zero once any vaccination program begins
 
 Correct Answer: C
 
-Feedback: Correct. The effective R equals R0 multiplied by the fraction of the population still susceptible. Vaccination reduces this fraction, lowering the effective R. When it drops below 1, each infection generates less than one new case, and the epidemic declines. Vaccination shrinks the Susceptible pool, directly reducing the effective reproduction number. The critical threshold is R < 1, at which point the epidemic declines rather than grows. This is the mathematical basis of herd immunity.
+Feedback: Correct. The effective R equals R0 multiplied by the fraction of the population still susceptible. Vaccination reduces this fraction, lowering the effective R. When it drops below 1, each infection generates less than one new case, and the epidemic declines. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.6, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS2.6, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS2.6, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS2.6, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: C
-
----
 
 ## Resources
 

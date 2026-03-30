@@ -934,86 +934,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-In normal Mendelian inheritance, a gene from one parent has a 50% chance of being passed to each offspring. A gene drive technology increases this to over 99%. What biological mechanism could MOST PLAUSIBLY achieve this?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS3.2 + CCC4 (Systems and System Models)
 
-A. The gene drive kills all offspring that do not inherit it
-B. The gene drive copies itself onto the partner chromosome during reproduction, converting heterozygotes into homozygotes
-C. The gene drive makes the organism produce more eggs or sperm
-D. The gene drive prevents meiosis from occurring normally
-
-Correct Answer: B
-
-Feedback: Correct. CRISPR-based gene drives cut the wild-type allele on the partner chromosome and use homology-directed repair to copy the drive sequence onto it. This converts a heterozygous individual (one copy) into a homozygous individual (two copies), ensuring nearly 100% of offspring inherit the drive. Think about what would need to happen at the chromosomal level to change the inheritance ratio from 50% to over 99%. The drive must somehow ensure both copies of the gene carry the engineered sequence.
-
----
-
-### Question 2
-
-Malaria is transmitted to humans through mosquito bites. If mosquitoes could be genetically modified to be unable to carry the malaria parasite, what would be the MOST DIRECT effect?
-
-A. The malaria parasite would go extinct globally
-B. Human malaria transmission rates would decrease because mosquitoes could no longer serve as vectors
-C. All mosquito species would die because they depend on the malaria parasite
-D. Humans would develop natural immunity to malaria
-
-Correct Answer: B
-
-Feedback: Correct. Mosquitoes are the vector (carrier) for malaria. If they cannot carry the parasite, they cannot transmit it to humans during blood meals, breaking the transmission cycle. The parasite would not necessarily go extinct, as it could persist in other reservoirs. Consider the role mosquitoes play in the malaria life cycle. They are the bridge between infected and uninfected humans. What happens when that bridge is removed?
-
----
-
-### Question 3
-
-An ecologist argues that eliminating all mosquitoes could have serious consequences for other species. Which reasoning BEST supports this concern?
-
-A. Mosquitoes are the most important species on Earth
-B. Many species of bats, birds, fish, and other organisms rely on mosquitoes as a food source, and their removal could trigger cascading effects through food webs
-C. Without mosquitoes, there would be no insects left in the ecosystem
-D. Mosquito elimination would cause immediate extinction of all predator species
-
-Correct Answer: B
-
-Feedback: Correct. Mosquitoes occupy ecological niches as food sources for many organisms and as pollinators in some ecosystems. Removing them could cause population declines in species that depend on them, which could cascade through multiple trophic levels in the food web. Consider the concept of ecological cascades. When one species is removed from a food web, which other species are affected and how do those effects ripple outward?
-
----
-
-### Question 4
-
-A scientist proposes releasing genetically modified organisms into the wild to solve an environmental problem. A critic responds that 'you cannot recall a gene drive once it is released.' What does this criticism MOST LIKELY mean?
-
-A. The modified organisms cannot be physically recaptured
-B. Once a self-spreading genetic modification enters a wild population, it will continue to propagate through reproduction and cannot be retrieved or reversed
-C. The gene drive will eventually spread to all species, not just the target
-D. Scientists will forget the genetic sequence they used
-
-Correct Answer: B
-
-Feedback: Correct. Gene drives are self-propagating through natural reproduction. Once released into a wild population, the engineered gene spreads through mating and is inherited by future generations. Unlike a chemical pesticide that degrades over time, a gene drive persists and spreads indefinitely. Think about how genetic information is transmitted. Once an engineered gene enters a breeding population, what natural process ensures it continues to spread?
-
----
-
-### Question 5
-
-Why might natural selection eventually undermine a gene drive designed to suppress a mosquito population?
-
-A. Mosquitoes will migrate to areas without the gene drive
-B. Random mutations that block the gene drive mechanism will be strongly favored by natural selection, since individuals with those mutations survive and reproduce while drive-carrying individuals do not
-C. Gene drives cannot function in tropical climates
-D. Natural selection does not act on engineered genes
-
-Correct Answer: B
-
-Feedback: Correct. Any mosquito that develops a mutation preventing the gene drive from copying itself onto its chromosomes will have a survival advantage. Natural selection will amplify this resistance mutation in the population, potentially rendering the gene drive ineffective. Apply the logic of natural selection. If the gene drive reduces mosquito fitness, what happens to any individual that happens to carry a mutation blocking the drive? Does it have a survival advantage?
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Gene Drive Efficiency, Mosquito Population, Malaria Transmission Rate, Wild-Type Gene Frequency, Ecological Dependence, Resistance Evolution, Geographic Spread Rate, Human Malaria Cases, Ecosystem Disruption Risk. Some components are external (Gene Drive Efficiency) and some are internal (Mosquito Population, Malaria Transmission Rate, Wild-Type Gene Frequency, Ecological Dependence, Resistance Evolution, Geographic Spread Rate, Human Malaria Cases, Ecosystem Disruption Risk). The student needs to understand what each component represents and how they are organized.
 
 A student's gene drive model shows that at 95% Gene Drive Efficiency, Wild-Type Gene Frequency drops to near zero within 12 generations. When Gene Drive Efficiency is reduced to 85%, Wild-Type Gene Frequency stabilizes at approximately 40% even after 50 generations. Which factor BEST explains this difference?
 
@@ -1024,11 +949,15 @@ D. Wild-type mosquitoes reproduce faster than drive-carrying mosquitoes at any e
 
 Correct Answer: A
 
-Feedback: Correct. At lower drive efficiency, there is more time per generation for resistance mutations to arise and be selected for. The population reaches an equilibrium where the rate of drive spread is balanced by the rate of resistance evolution, preventing complete population suppression. Consider the race between gene drive propagation and resistance evolution. At lower efficiency, which process gains a relative advantage, and what does that mean for the long-term population composition?
+Feedback: Correct. At lower drive efficiency, there is more time per generation for resistance mutations to arise and be selected for. The population reaches an equilibrium where the rate of drive spread is balanced by the rate of resistance evolution, preventing complete population suppression. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Type Gene Frequency increases, Mosquito Population increases; when Mosquito Population increases, Malaria Transmission Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 A simulation of global gene drive release shows that Ecosystem Disruption Risk increases nonlinearly as Mosquito Population approaches zero. Which ecological principle BEST explains this nonlinear relationship?
 
@@ -1039,11 +968,15 @@ D. Mosquito population decline automatically increases all other insect populati
 
 Correct Answer: B
 
-Feedback: Correct. Ecosystems exhibit functional redundancy, where other species can partially fill ecological roles. But below a critical threshold, predator species that depend on mosquitoes cannot switch to alternative prey fast enough, triggering cascading population declines through the food web. This is a nonlinear tipping point effect. Think about ecosystem resilience. Ecosystems can absorb some perturbation, but there is a point where compensatory mechanisms are overwhelmed. What determines that threshold?
+Feedback: Correct. Ecosystems exhibit functional redundancy, where other species can partially fill ecological roles. But below a critical threshold, predator species that depend on mosquitoes cannot switch to alternative prey fast enough, triggering cascading population declines through the food web. This is a nonlinear tipping point effect. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS3.2 + CCC2 (Cause and Effect)
+
+A student runs a simulation of the model. The model shows that when Type Gene Frequency increases, Mosquito Population increases and when Mosquito Population increases, Malaria Transmission Rate increases and when Mosquito Population increases, Ecosystem Disruption Risk decreases. The student changes one variable to see how the whole system responds.
 
 A gene drive cannot be geographically contained because mosquitoes that carry the drive can migrate to new areas. A student proposes engineering a 'self-limiting' gene drive that weakens after a set number of generations. Which trade-off does this design MOST DIRECTLY create?
 
@@ -1054,11 +987,15 @@ D. Self-limiting drives eliminate the ecological risks entirely
 
 Correct Answer: A
 
-Feedback: Correct. A self-limiting drive trades long-term persistence for containability. It reduces the risk of irreversible global ecosystem disruption but may not sustain itself long enough to achieve the goal of malaria elimination. This is a fundamental trade-off between safety and efficacy. Consider what happens when a gene drive is designed to degrade over generations. It addresses the 'cannot be recalled' problem, but what new problem does it introduce for the malaria elimination goal?
+Feedback: Correct. A self-limiting drive trades long-term persistence for containability. It reduces the risk of irreversible global ecosystem disruption but may not sustain itself long enough to achieve the goal of malaria elimination. This is a fundamental trade-off between safety and efficacy. If you chose B, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In a gene drive governance debate, one argument is that communities most affected by malaria should have decision-making authority over gene drive deployment, even if the drive will cross national borders. Which ethical principle does this argument MOST DIRECTLY invoke?
 
@@ -1069,11 +1006,15 @@ D. National sovereignty, because each country controls its own borders
 
 Correct Answer: B
 
-Feedback: Correct. This invokes the principle that communities most impacted by both the disease and the intervention should have meaningful input into the decision. Environmental justice recognizes that those who bear the risks and consequences of an action should have proportional voice in deciding whether to proceed. Consider who is most affected by both malaria (600,000 deaths/year, primarily in sub-Saharan Africa) and by the potential ecological consequences of gene drive release. Which ethical framework addresses this asymmetry?
+Feedback: Correct. This invokes the principle that communities most impacted by both the disease and the intervention should have meaningful input into the decision. Environmental justice recognizes that those who bear the risks and consequences of an action should have proportional voice in deciding whether to proceed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS3.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Gene Drive Efficiency), but they can take action on internal components (Mosquito Population, Malaria Transmission Rate, Wild-Type Gene Frequency, Ecological Dependence, Resistance Evolution, Geographic Spread Rate, Human Malaria Cases, Ecosystem Disruption Risk). They need to decide which action would be most effective based on what the model shows.
 
 A coupled gene drive model shows that reducing Mosquito Population by 90% decreases Human Malaria Cases by only 60%. Which systems-level explanation BEST accounts for this result?
 
@@ -1084,27 +1025,18 @@ D. Humans develop resistance to malaria when mosquito populations decrease
 
 Correct Answer: B
 
-Feedback: Correct. Malaria transmission is a complex function of mosquito density, biting frequency, parasite development time, and human immune status. Reducing mosquito numbers shifts other parameters. Surviving mosquitoes may bite more frequently with less competition, and reduced exposure may decrease population-level immunity, partially offsetting the benefit of fewer vectors. Think about malaria transmission as a system with multiple interacting variables, not just mosquito count. When one variable changes dramatically, how might other variables in the system respond?
+Feedback: Correct. Malaria transmission is a complex function of mosquito density, biting frequency, parasite development time, and human immune status. Reducing mosquito numbers shifts other parameters. Surviving mosquitoes may bite more frequently with less competition, and reduced exposure may decrease population-level immunity, partially offsetting the benefit of fewer vectors. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: A (Cognitive Level: Identify — SEP 2.1.1, DCI LS3.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS3.2, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI LS3.2, CCC2)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS3.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS3.2, CCC4)
 
-**Post-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: A
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

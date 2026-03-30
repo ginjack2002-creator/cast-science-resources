@@ -888,77 +888,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS4-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What is the main difference between an analog signal and a digital signal?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-PS4-3 + CCC4 (Systems and System Models)
 
-A. Analog signals are newer technology; digital signals are older
-B. Analog signals vary continuously and smoothly; digital signals use discrete values like 1s and 0s
-C. Analog signals can only carry sound; digital signals can only carry images
-D. There is no real difference. They are two words for the same thing.
-
-Correct Answer: B
-
-Feedback: Correct! Analog signals are continuous, like the smooth groove in a vinyl record. Digital signals encode information as discrete steps, typically binary values (1s and 0s) that represent measurements of the original signal. Not quite. Analog signals vary smoothly and continuously (like a sound wave), while digital signals break information into discrete numerical values (typically 1s and 0s) that can be exactly copied and transmitted.
-
----
-
-### Question 2
-
-Why might a digital copy of a song sound different from a live performance?
-
-A. Digital recordings always sound better than live music
-B. Converting a continuous sound wave into digital format involves measuring it at intervals, which may not capture every detail
-C. Digital recordings add extra sounds that were not in the original performance
-D. Live performances use analog sound, which is always lower quality than digital
-
-Correct Answer: B
-
-Feedback: Correct! When sound is digitized, it is sampled at regular intervals. Some details between samples may be lost. The quality depends on how frequently and precisely the sound is measured. Not quite. When analog sound is converted to digital, it is measured at specific intervals (sampling). Details that exist between those measurement points may not be captured, depending on the sampling rate and precision.
-
----
-
-### Question 3
-
-What does 'compression' mean when talking about digital files like MP3s?
-
-A. Physically squishing the device to make files smaller
-B. Reducing the file size by removing some data, which may reduce quality
-C. Making the sound louder by pressing the audio waves closer together
-D. Converting the file from digital back to analog format
-
-Correct Answer: B
-
-Feedback: Correct! Compression reduces file size by removing data. Lossy compression (like MP3) permanently removes data that algorithms predict humans will not notice, trading some quality for much smaller files. Not quite. Digital compression reduces file size by removing some data. In lossy compression (like MP3), data deemed least noticeable to human ears is permanently removed, making the file smaller but slightly reducing quality.
-
----
-
-### Question 4
-
-Why do some music files take up more storage space than others, even if the songs are the same length?
-
-A. Longer song titles create larger file sizes
-B. Different formats use different amounts of data to encode the same audio, depending on quality settings
-C. Louder songs take up more space than quieter songs
-D. All songs of the same length have exactly the same file size
-
-Correct Answer: B
-
-Feedback: Correct! Different audio formats and quality settings use different amounts of data. An uncompressed WAV file contains all the original data, while a compressed MP3 removes data to reduce file size. Higher quality settings mean larger files. Not quite. File size depends on the format and quality settings used. An uncompressed WAV file stores all audio data and is very large, while an MP3 uses compression to reduce size by removing data. Higher quality settings produce larger files.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sampling Rate, Compression Level, Signal Accuracy, File Size. Some components are external (Sampling Rate, Compression Level) and some are internal (Signal Accuracy, File Size). The student needs to understand what each component represents and how they are organized.
 
 In the digital signal model, sampling rate is set to maximum and compression level to minimum. What does the model predict about signal accuracy and file size?
 
@@ -969,11 +909,15 @@ D. Signal accuracy and file size are unrelated to these settings
 
 Correct Answer: B
 
-Feedback: Correct! Maximum sampling rate captures the most detail (highest accuracy) but produces the most data. Minimum compression keeps all that data intact, resulting in very large files. This is studio-quality audio. Not quite. High sampling rate with low compression produces the most accurate digital reproduction of the original signal, but at the cost of very large file sizes. This is the quality-vs-size trade-off engineers must balance.
+Feedback: Correct! Maximum sampling rate captures the most detail (highest accuracy) but produces the most data. Minimum compression keeps all that data intact, resulting in very large files. This is studio-quality audio. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-PS4-3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sampling Rate increases, Signal Accuracy increases; when Compression Level increases, File Size decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student claims: 'Digital music is always better than analog vinyl.' Based on the model, which response is most scientifically accurate?
 
@@ -984,11 +928,15 @@ D. Neither is better because they produce identical sound
 
 Correct Answer: B
 
-Feedback: Correct! Digital's advantage is reliability: perfect copies with no degradation. But digital quality depends on settings. High-quality digital can sound as good as or better than vinyl, while heavily compressed digital may lose detail that vinyl preserves. Not quite. Digital signals are more reliable because they can be copied perfectly without degradation. However, the quality of digital audio depends on sampling rate and compression. Highly compressed digital files may actually lose details that a well-maintained vinyl record preserves.
+Feedback: Correct! Digital's advantage is reliability: perfect copies with no degradation. But digital quality depends on settings. High-quality digital can sound as good as or better than vinyl, while heavily compressed digital may lose detail that vinyl preserves. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-PS4-3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sampling Rate increases, Signal Accuracy increases and when Compression Level increases, File Size decreases and when Compression Level increases, Signal Accuracy decreases. The student changes one variable to see how the whole system responds.
 
 When compression level is pushed to maximum in the model, what happens to the music?
 
@@ -999,11 +947,15 @@ D. The music plays faster because there is less data to process
 
 Correct Answer: B
 
-Feedback: Correct! Extreme compression removes so much audio data that quality drops noticeably. The music may sound thin, watery, or metallic because the compression algorithm removed too many details that human ears can detect. Not quite. At extreme compression levels, the algorithm removes enough data that humans can hear the difference. The music may sound thin, metallic, or lacking in detail because important audio information has been permanently deleted.
+Feedback: Correct! Extreme compression removes so much audio data that quality drops noticeably. The music may sound thin, watery, or metallic because the compression algorithm removed too many details that human ears can detect. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-PS4-3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why are digital signals considered more reliable than analog signals for transmitting and storing information?
 
@@ -1014,25 +966,37 @@ D. Digital signals use more electricity, which makes them more powerful
 
 Correct Answer: B
 
-Feedback: Correct! Digital signals are just numbers (binary), and numbers can be copied exactly. The millionth copy is identical to the first. Analog signals are physical patterns that degrade with each copy, like photocopying a photocopy. Digital also includes error correction to fix transmission mistakes. Not quite. The key advantage is that digital signals encode information as exact numbers (1s and 0s) that can be copied perfectly every time. Analog signals are physical patterns that degrade with each copy or playback. Digital systems also include error correction to detect and fix transmission errors.
+Feedback: Correct! Digital signals are just numbers (binary), and numbers can be copied exactly. The millionth copy is identical to the first. Analog signals are physical patterns that degrade with each copy, like photocopying a photocopy. Digital also includes error correction to fix transmission mistakes. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-PS4-3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sampling Rate, Compression Level), but they can take action on internal components (Signal Accuracy, File Size). They need to decide which action would be most effective based on what the model shows.
+
+What is the main difference between an analog signal and a digital signal?
+
+A. Analog signals are newer technology; digital signals are older
+B. Analog signals vary continuously and smoothly; digital signals use discrete values like 1s and 0s
+C. Analog signals can only carry sound; digital signals can only carry images
+D. There is no real difference. They are two words for the same thing.
+
+Correct Answer: B
+
+Feedback: Correct! Analog signals are continuous, like the smooth groove in a vinyl record. Digital signals encode information as discrete steps, typically binary values (1s and 0s) that represent measurements of the original signal. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI MS-PS4-3, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-PS4-3, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-PS4-3, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-PS4-3, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-PS4-3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

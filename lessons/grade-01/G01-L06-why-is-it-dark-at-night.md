@@ -730,73 +730,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-ESS1-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Why does it get dark at night?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS1.1 + CCC2 (Cause and Effect)
 
-A. The sun turns off
-B. Someone turns off the lights
-C. Our side of Earth turns away from the sun
-
-Correct Answer: C
-
-Feedback: Yes! The Earth spins, and when our side faces away from the sun, it gets dark. The sun does not turn off. The Earth spins, and our side turns away from the sun at night.
-
----
-
-### Question 2
-
-Does the sun go away at night?
-
-A. Yes, the sun disappears
-B. No, the sun stays in the same place
-C. Yes, the sun sleeps at night
-
-Correct Answer: B
-
-Feedback: That is right! The sun stays in the same place. The Earth moves, not the sun. The sun never goes away. It stays in one place. The Earth spins, which is why we see day and night.
-
----
-
-### Question 3
-
-What does rotate mean?
-
-A. To jump up and down
-B. To spin around
-C. To stand very still
-
-Correct Answer: B
-
-Feedback: Yes! Rotate means to spin around, like a top. The Earth rotates every day. Rotate means to spin around in a circle, just like the Earth does every 24 hours.
-
----
-
-### Question 4
-
-Day and night happen over and over. What is something that repeats called?
-
-A. A surprise
-B. A pattern
-C. A secret
-
-Correct Answer: B
-
-Feedback: That is right! Something that repeats the same way is called a pattern. When something happens the same way over and over, like day then night then day, that is a pattern.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Earth's Position, Amount of Sunlight. Some components are external (Earth's Position) and some are internal (Amount of Sunlight). The student needs to understand what each component represents and how they are organized.
 
 What causes day and night?
 
@@ -806,11 +750,15 @@ C. The sun moving around the Earth
 
 Correct Answer: B
 
-Feedback: Yes! The Earth spins (rotates), and that is what causes day and night. Day and night are caused by the Earth rotating. When your side faces the sun, it is day. When it faces away, it is night.
+Feedback: Yes! The Earth spins (rotates), and that is what causes day and night. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when s Position increases, Amount of Sunlight increases. The student is trying to understand why these relationships are positive or negative.
 
 When your side of Earth faces the sun, what is it?
 
@@ -820,11 +768,15 @@ C. Winter
 
 Correct Answer: B
 
-Feedback: That is right! When your side of Earth faces the sun, the sun shines on you and it is daytime. When the sun shines on your part of the Earth, it is bright and warm. That is daytime.
+Feedback: That is right! When your side of Earth faces the sun, the sun shines on you and it is daytime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when s Position increases, Amount of Sunlight increases. The student changes one variable to see how the whole system responds.
 
 How long does it take the Earth to spin around one time?
 
@@ -834,11 +786,15 @@ C. About 1 year
 
 Correct Answer: B
 
-Feedback: Yes! The Earth takes about 24 hours to make one full spin. That is why we have one day and one night every 24 hours. One full spin of the Earth takes about 24 hours, which gives us one daytime and one nighttime.
+Feedback: Yes! The Earth takes about 24 hours to make one full spin. That is why we have one day and one night every 24 hours. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 When Earth's position faces the sun, the amount of sunlight goes ___.
 
@@ -848,25 +804,36 @@ C. It does not change
 
 Correct Answer: B
 
-Feedback: That is right! Facing the sun means lots of sunlight. That is daytime. When your part of the Earth faces the sun, you get more sunlight, making it bright and warm.
+Feedback: That is right! Facing the sun means lots of sunlight. That is daytime. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS1.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Earth's Position), but they can take action on internal components (Amount of Sunlight). They need to decide which action would be most effective based on what the model shows.
+
+Why does it get dark at night?
+
+A. The sun turns off
+B. Someone turns off the lights
+C. Our side of Earth turns away from the sun
+
+Correct Answer: C
+
+Feedback: Yes! The Earth spins, and when our side faces away from the sun, it gets dark. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS1.1, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS1.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS1.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS1.1, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS1.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

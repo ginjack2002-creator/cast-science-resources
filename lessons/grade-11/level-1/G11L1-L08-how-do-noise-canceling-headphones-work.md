@@ -897,86 +897,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Noise-canceling headphones eliminate unwanted sound through which physical principle?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS4.1 + CCC4 (Systems and System Models)
 
-A. Blocking sound waves from entering the ear by using thick padding as a physical barrier
-B. Destructive interference, where a generated anti-phase sound wave combines with the noise wave to cancel it
-C. Converting sound energy into heat energy through friction in the ear cushions
-D. Increasing the frequency of the noise until it is above the range of human hearing
-
-Correct Answer: B
-
-Feedback: Correct. Active noise cancellation generates an anti-phase signal that is identical to the incoming noise but shifted by 180 degrees. When these two waves combine, their amplitudes cancel through destructive interference, producing silence or significantly reduced noise. Active noise cancellation does not block sound or absorb it. Instead, it fights sound with sound. Consider what happens when two waves of equal amplitude but opposite phase occupy the same space.
-
----
-
-### Question 2
-
-The principle of superposition states that when two waves occupy the same space, the resulting displacement at any point equals which value?
-
-A. The displacement of the louder wave only
-B. The algebraic sum of the individual wave displacements at that point
-C. The average of the two wave displacements
-D. Zero, because waves always cancel each other
-
-Correct Answer: B
-
-Feedback: Correct. Superposition is the addition of wave amplitudes at each point. If both waves have positive displacement at a point, they add constructively (louder). If one is positive and the other equally negative, they add destructively (silence). The result depends on the relative phase at each point. Superposition is fundamentally about addition. At any given point, you simply add the displacement of wave 1 to the displacement of wave 2. The result can be constructive (louder), destructive (quieter), or anything in between.
-
----
-
-### Question 3
-
-For complete destructive interference to occur between two sound waves, which conditions must both be met?
-
-A. The waves must have different frequencies and random phase relationships
-B. The waves must have the same frequency and amplitude, with a phase difference of exactly 180 degrees (half a wavelength)
-C. The waves must have the same frequency but different amplitudes
-D. The waves must be traveling in the same direction at different speeds
-
-Correct Answer: B
-
-Feedback: Correct. Complete cancellation requires three conditions: same frequency (so the waves stay in phase relationship), same amplitude (so the peaks and troughs are equal in magnitude), and 180-degree phase offset (so peaks of one wave align exactly with troughs of the other). For one wave to perfectly cancel another, what must be true? Each peak of the noise wave must be met by an equally deep trough from the canceling wave. This requires matching frequency, matching amplitude, and exact opposite phase alignment.
-
----
-
-### Question 4
-
-Noise-canceling headphones are significantly more effective at canceling low-frequency sounds (like airplane engine hum) than high-frequency sounds (like human speech). Which physical explanation accounts for this limitation?
-
-A. Low-frequency sounds are louder than high-frequency sounds
-B. High-frequency sounds have shorter wavelengths, requiring the electronics to process and generate the anti-phase signal with much tighter timing precision to maintain accurate phase alignment
-C. Human ears are more sensitive to low frequencies, so cancellation seems more effective
-D. High-frequency sounds cannot undergo destructive interference
-
-Correct Answer: B
-
-Feedback: Correct. High frequencies have short wavelengths, meaning a given timing error represents a larger fraction of the wavelength. At 100 Hz (wavelength 3.4 m), a microsecond error is negligible. At 4,000 Hz (wavelength 0.085 m), the same error causes significant phase misalignment, reducing cancellation effectiveness. Consider the relationship between frequency and wavelength. Higher frequency means shorter wavelength. A small timing error in generating the anti-phase signal represents a tiny fraction of a long wavelength (low frequency) but a significant fraction of a short wavelength (high frequency).
-
----
-
-### Question 5
-
-If a sound wave has a frequency of 200 Hz and travels at 343 m/s through air, what is its wavelength?
-
-A. 0.58 meters
-B. 1.715 meters
-C. 68,600 meters
-D. 143 meters
-
-Correct Answer: B
-
-Feedback: Correct. Wavelength = speed / frequency = 343 m/s / 200 Hz = 1.715 meters. This relatively long wavelength is why low frequencies are easier to cancel; the anti-phase signal has more temporal margin for error. Use the wave equation: wavelength = speed / frequency. Speed of sound in air is 343 m/s, frequency is 200 Hz. Divide speed by frequency to find the wavelength.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Ambient Noise Frequency, Ambient Noise Amplitude, Processing Speed, Phase Accuracy, Cancellation Effectiveness. Some components are external (Ambient Noise Frequency, Ambient Noise Amplitude) and some are internal (Processing Speed, Phase Accuracy, Cancellation Effectiveness). The student needs to understand what each component represents and how they are organized.
 
 A student's model shows that at 100 Hz, a 5-microsecond timing error in the anti-phase signal reduces cancellation effectiveness by only 2%, but at 5,000 Hz the same error reduces effectiveness by 45%. Which analysis best explains this frequency-dependent sensitivity?
 
@@ -987,11 +912,15 @@ D. The model applies different equations for low and high frequencies
 
 Correct Answer: B
 
-Feedback: Correct. Phase accuracy is relative to wavelength, not absolute. A fixed timing error is a small fraction of a long-period wave (low frequency) but a large fraction of a short-period wave (high frequency). This is why the same hardware achieves excellent low-frequency cancellation but poor high-frequency cancellation. Think of the timing error as a fraction of the wave's period. At 100 Hz, the period is 0.01 seconds (10 ms), so 5 microseconds is 0.05% of one cycle. At 5,000 Hz, the period is 0.0002 seconds (0.2 ms), so 5 microseconds is 2.5% of one cycle. Which fraction causes more phase misalignment?
+Feedback: Correct. Phase accuracy is relative to wavelength, not absolute. A fixed timing error is a small fraction of a long-period wave (low frequency) but a large fraction of a short-period wave (high frequency). This is why the same hardware achieves excellent low-frequency cancellation but poor high-frequency cancellation. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Ambient Noise Frequency increases, Phase Accuracy decreases; when Phase Accuracy increases, Cancellation Effectiveness increases. The student is trying to understand why these relationships are positive or negative.
 
 The model reveals that when the anti-phase signal has 95% amplitude accuracy but perfect phase alignment, cancellation effectiveness is 90%. When phase accuracy is 95% but amplitude is perfect, cancellation effectiveness drops to 72%. Which conclusion is best supported by this comparison?
 
@@ -1002,11 +931,15 @@ D. Neither accuracy matters because cancellation is an all-or-nothing phenomenon
 
 Correct Answer: B
 
-Feedback: Correct. Phase errors cause portions of the anti-phase signal to shift from canceling (destructive) to reinforcing (constructive), actively adding energy rather than removing it. Amplitude errors merely leave residual noise proportional to the mismatch. Phase errors have more severe consequences because they can reverse the intended effect. Compare what each type of error does. An amplitude error means the anti-phase signal is slightly too weak (leaving some residual noise) or too strong (adding some extra). A phase error means portions of the waves ADD together instead of canceling. Which has the more severe consequence?
+Feedback: Correct. Phase errors cause portions of the anti-phase signal to shift from canceling (destructive) to reinforcing (constructive), actively adding energy rather than removing it. Amplitude errors merely leave residual noise proportional to the mismatch. Phase errors have more severe consequences because they can reverse the intended effect. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Ambient Noise Frequency increases, Phase Accuracy decreases and when Phase Accuracy increases, Cancellation Effectiveness increases and when Processing Speed increases, Phase Accuracy increases. The student changes one variable to see how the whole system responds.
 
 A student proposes improving noise cancellation by adding a second microphone farther from the ear to give the processor more time to compute the anti-phase signal. Based on the model, which evaluation of this proposal is most accurate?
 
@@ -1017,11 +950,15 @@ D. The additional microphone would cancel the first microphone's signal
 
 Correct Answer: B
 
-Feedback: Correct. This is exactly how modern feedforward noise cancellation works. An external microphone captures noise before it reaches the ear, providing crucial extra processing time. This advance warning is particularly valuable for higher frequencies, where the short wavelengths demand faster and more precise anti-phase generation. Consider the timing problem: the processor needs time to sample the noise, compute the anti-phase signal, and output it before the original noise reaches the ear. A microphone placed farther away detects the noise earlier, giving the processor a head start.
+Feedback: Correct. This is exactly how modern feedforward noise cancellation works. An external microphone captures noise before it reaches the ear, providing crucial extra processing time. This advance warning is particularly valuable for higher frequencies, where the short wavelengths demand faster and more precise anti-phase generation. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model shows that noise cancellation achieves 28 dB reduction at 100 Hz, 22 dB at 500 Hz, 12 dB at 2,000 Hz, and only 3 dB at 8,000 Hz. A student asks why the headphones do not simply use passive isolation (physical blocking) for high frequencies instead. Based on wave physics, which response is most accurate?
 
@@ -1032,11 +969,15 @@ D. High frequencies are too quiet to need isolation
 
 Correct Answer: B
 
-Feedback: Correct. This is a fundamental insight about wave behavior: long-wavelength (low-frequency) waves diffract around barriers, making them hard to block physically but their long period makes them easy to cancel actively. Short-wavelength (high-frequency) waves are easily blocked by physical barriers but hard to cancel actively. Modern headphones combine both methods. Consider how waves interact with barriers. Long wavelengths bend around obstacles (diffraction), making physical blocking ineffective for low frequencies. Short wavelengths are absorbed or reflected by barriers. Each approach handles different parts of the frequency spectrum.
+Feedback: Correct. This is a fundamental insight about wave behavior: long-wavelength (low-frequency) waves diffract around barriers, making them hard to block physically but their long period makes them easy to cancel actively. Short-wavelength (high-frequency) waves are easily blocked by physical barriers but hard to cancel actively. Modern headphones combine both methods. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS4.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Ambient Noise Frequency, Ambient Noise Amplitude), but they can take action on internal components (Processing Speed, Phase Accuracy, Cancellation Effectiveness). They need to decide which action would be most effective based on what the model shows.
 
 Based on the complete model analysis, a student claims that perfect noise cancellation across all frequencies is theoretically possible with fast enough electronics. Which model-based assessment is most accurate?
 
@@ -1047,27 +988,18 @@ D. Perfect cancellation is already achieved by current technology
 
 Correct Answer: B
 
-Feedback: Correct. Processing speed is one limit, but not the only one. Sound reaches the ear from multiple directions with different delays, the listener's head movement changes the acoustic geometry, ear canal resonances alter phase relationships, and environmental noise is constantly changing. These physical realities impose limits beyond processing speed. Consider all the factors that affect whether two waves cancel perfectly. The anti-phase signal must match the noise at the exact point where the eardrum is. But sound reflects off surfaces, arrives from multiple angles, and the listener moves. Can a single speaker perfectly cancel a complex, changing acoustic field?
+Feedback: Correct. Processing speed is one limit, but not the only one. Sound reaches the ear from multiple directions with different delays, the listener's head movement changes the acoustic geometry, ear canal resonances alter phase relationships, and environmental noise is constantly changing. These physical realities impose limits beyond processing speed. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI PS4.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS4.1, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI PS4.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS4.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS4.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

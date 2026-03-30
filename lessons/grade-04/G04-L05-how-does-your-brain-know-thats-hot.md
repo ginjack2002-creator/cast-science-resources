@@ -867,77 +867,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-LS1-2.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What happens inside your body when you touch something hot?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. Your hand pulls away by magic
-B. Your skin sends a signal through your nerves to your brain, and your brain tells your hand to move
-C. The hot object pushes your hand away
-D. Your bones sense the heat and move your hand automatically
-
-Correct Answer: B
-
-Feedback: That is right! Your skin has sensors that detect heat. They send electrical signals through your nerves to your brain, and your brain sends a message back to your muscles to pull away. When you touch something hot, sensors in your skin detect the heat and send electrical signals through your nerves. Your brain processes the signal and tells your muscles to react.
-
----
-
-### Question 2
-
-How many senses do humans have?
-
-A. Two: seeing and hearing
-B. Three: seeing, hearing, and smelling
-C. Five: seeing, hearing, smelling, tasting, and touching
-D. One: feeling
-
-Correct Answer: C
-
-Feedback: Correct! Humans have five main senses: sight (eyes), hearing (ears), smell (nose), taste (tongue), and touch (skin). Each sense detects different types of information. Humans have five main senses: seeing with our eyes, hearing with our ears, smelling with our nose, tasting with our tongue, and touching with our skin.
-
----
-
-### Question 3
-
-What are nerves?
-
-A. The muscles in your arms and legs
-B. Thin fibers in your body that carry signals between your brain and other body parts
-C. The bones that protect your brain
-D. A feeling you get when you are scared
-
-Correct Answer: B
-
-Feedback: Right! Nerves are like electrical wires inside your body. They carry signals from your senses to your brain and from your brain back to your muscles. In science, nerves are thin fibers in your body that carry electrical signals. They connect your senses to your brain and your brain to your muscles.
-
----
-
-### Question 4
-
-Why do you think your hand pulls back from a hot stove SO fast, even before you feel the pain?
-
-A. Because your hand has its own brain
-B. Because the stove pushes your hand away
-C. Because your body has a fast emergency response system
-D. Because your eyes see the stove and tell your hand to move
-
-Correct Answer: C
-
-Feedback: Exactly! Your body has reflexes, a fast emergency response system. Some signals are so urgent that your spinal cord triggers a response even before the signal reaches your brain! Your body has an emergency system called a reflex. For serious dangers, the signal does not even have to reach your brain first. Your spinal cord can trigger the response to pull away instantly.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Heat Source Intensity, Nerve Signal Speed, Brain Response Time. Some components are external (Heat Source Intensity) and some are internal (Nerve Signal Speed, Brain Response Time). The student needs to understand what each component represents and how they are organized.
 
 In the model, Heat Source Intensity is an external component. What does that mean?
 
@@ -948,11 +888,15 @@ D. It only works when the temperature is very high
 
 Correct Answer: B
 
-Feedback: Right! Heat source intensity is the external component because it is the input we control. We change it (warm cup vs. hot stove vs. boiling water) to see how nerve signal speed and brain response time change. In the model, external components are inputs we can set. Heat source intensity is external because we change it to observe how the nervous system responds.
+Feedback: Right! Heat source intensity is the external component because it is the input we control. We change it (warm cup vs. hot stove vs. boiling water) to see how nerve signal speed and brain response time change. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Heat Source Intensity increases, Nerve Signal Speed increases; when Nerve Signal Speed increases, Brain Response Time increases. The student is trying to understand why these relationships are positive or negative.
 
 What is the correct order of events when you touch something hot?
 
@@ -963,11 +907,15 @@ D. Brain detects heat, sends signal to skin, muscles move
 
 Correct Answer: B
 
-Feedback: Exactly! The chain is: sensory receptors in skin detect heat, nerves carry an electrical signal to the brain, and the brain processes the danger and tells muscles to respond. The correct order is: skin sensors detect heat first, then nerves carry the signal to the brain, and then the brain processes the danger and sends a signal to muscles to react.
+Feedback: Exactly! The chain is: sensory receptors in skin detect heat, nerves carry an electrical signal to the brain, and the brain processes the danger and tells muscles to respond. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Heat Source Intensity increases, Nerve Signal Speed increases and when Nerve Signal Speed increases, Brain Response Time increases. The student changes one variable to see how the whole system responds.
 
 The model shows that when heat source intensity increases, nerve signals travel faster and brain response time gets quicker. Why?
 
@@ -978,11 +926,15 @@ D. Because cooler objects make nerves work faster
 
 Correct Answer: B
 
-Feedback: Correct! Greater danger triggers stronger, faster signals because the body's survival system treats high heat as an emergency. The nervous system is built for speed when danger is high. More intense heat means greater danger. The body's nervous system responds to emergencies by sending signals faster and reacting more quickly to protect you.
+Feedback: Correct! Greater danger triggers stronger, faster signals because the body's survival system treats high heat as an emergency. The nervous system is built for speed when danger is high. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A reflex is a response that happens before the signal even reaches your brain. Why is this important for survival?
 
@@ -993,25 +945,37 @@ D. It only works for cold objects, not hot ones
 
 Correct Answer: B
 
-Feedback: Right! Reflexes save precious time. Instead of the signal traveling all the way to the brain and back, the spinal cord can trigger muscle movement immediately. This protects you from serious burns and injuries. Reflexes are emergency shortcuts. The spinal cord triggers the response without waiting for the brain, saving time and protecting the body from serious harm.
+Feedback: Right! Reflexes save precious time. Instead of the signal traveling all the way to the brain and back, the spinal cord can trigger muscle movement immediately. This protects you from serious burns and injuries. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Heat Source Intensity), but they can take action on internal components (Nerve Signal Speed, Brain Response Time). They need to decide which action would be most effective based on what the model shows.
+
+What happens inside your body when you touch something hot?
+
+A. Your hand pulls away by magic
+B. Your skin sends a signal through your nerves to your brain, and your brain tells your hand to move
+C. The hot object pushes your hand away
+D. Your bones sense the heat and move your hand automatically
+
+Correct Answer: B
+
+Feedback: That is right! Your skin has sensors that detect heat. They send electrical signals through your nerves to your brain, and your brain sends a message back to your muscles to pull away. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

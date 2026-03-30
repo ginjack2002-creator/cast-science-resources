@@ -867,116 +867,115 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 5 multiple-choice questions are administered identically as both a pre-assessment (before Step 1) and a post-assessment (after Step 4). Score each out of 5. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-PS3-1.
 
 ---
 
 ### Question 1
 
-CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI PS3.1 + CCC5 (Energy and Matter)
 
-In a model of a roller coaster system, a student placed three components on the screen: Hill Height, Speed at Bottom, and Energy of Motion. Hill Height was labeled as an external component.
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Hill Height, Speed at Bottom, Energy of Motion. Some components are external (Hill Height) and some are internal (Speed at Bottom, Energy of Motion). The student needs to understand what each component represents and how they are organized.
 
-Which of the following best explains why Hill Height is classified as an external component in this model?
+A roller coaster is at the very top of the tallest hill. What type of energy does it have the MOST of?
 
-A. Hill Height changes whenever Speed at Bottom changes.
-B. Hill Height is determined by the track design before the coaster starts moving, so it is an input that comes from outside the system.
-C. Hill Height is the same thing as Energy of Motion.
-D. Hill Height is internal because the roller coaster controls how tall the hill is.
+A. Kinetic energy because it is moving fast
+B. Sound energy because the riders are screaming
+C. Potential energy because of its high position
+D. Heat energy because the sun is shining on it
 
-Correct Answer: B
+Correct Answer: C
 
-Feedback: If you chose A, that reverses the relationship. Hill Height does not change because of Speed at Bottom. Speed at Bottom changes because of Hill Height. If you chose B, you are correct. External components are inputs from outside the system that are set before the simulation runs. If you chose C, Hill Height and Energy of Motion are two different components. Hill Height refers to how tall the hill is, while Energy of Motion refers to kinetic energy. If you chose D, external means the component is NOT controlled by other parts inside the system. The track design sets the hill height before the ride begins.
+Feedback: That is right! At the top of a tall hill, the coaster has lots of potential energy stored because of its high position. That energy will convert to kinetic energy as it rolls down. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
 
-CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI PS3.1 + CCC4 (Systems and System Models)
 
-A student built a model showing that when Hill Height increases, Speed at Bottom also increases. The arrow between them was set to positive.
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Hill Height increases, Speed at Bottom increases; when Speed at Bottom increases, Energy of Motion increases. The student is trying to understand why these relationships are positive or negative.
 
-What does the positive relationship between Hill Height and Speed at Bottom mean in this model?
+In the roller coaster model, hill height is an EXTERNAL component. What does that mean?
 
-A. When Hill Height goes up, Speed at Bottom goes down.
-B. When Hill Height goes up, Speed at Bottom also goes up because taller hills give the coaster more stored energy that converts to speed.
-C. Hill Height and Speed at Bottom always stay at the same exact number.
-D. The positive sign means the coaster is moving forward instead of backward.
+A. It is located outside the amusement park
+B. It is a part of the system we can control or set before the ride starts
+C. It only matters when the weather is nice outside
+D. It has no effect on the coaster's speed
 
 Correct Answer: B
 
-Feedback: If you chose A, that would be a negative relationship, where one goes up and the other goes down. The model shows a positive relationship here. If you chose B, you are correct. A positive relationship means both components move in the same direction. Taller hills store more potential energy, which converts to greater speed at the bottom. If you chose C, a positive relationship does not mean the values are equal. It means they increase or decrease together. If you chose D, the positive sign in the model refers to the direction of the relationship between two components, not the direction the coaster travels.
+Feedback: Correct! An external component is something we can control or decide before the system runs. Hill height is a design choice made before the coaster moves. If you chose A, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose C, look at whether this is an external component (we can't control it) or an internal component (it changes based on other things in the system). The model makes this distinction clear. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
 
-CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC4 (Systems and System Models)
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI PS3.1 + CCC5 (Energy and Matter)
 
-A student ran a simulation where Hill Height was set to high. The model showed that Speed at Bottom increased, and then Energy of Motion also increased.
+A student runs a simulation of the model. The model shows that when Hill Height increases, Speed at Bottom increases and when Speed at Bottom increases, Energy of Motion increases. The student changes one variable to see how the whole system responds.
 
-Trace the cause-and-effect chain through this model and explain what would happen if Hill Height were set to low instead.
+As a roller coaster rolls from the top of a hill to the bottom, what happens to its energy?
 
-A. Speed at Bottom would increase and Energy of Motion would increase because the hill is still there.
-B. Speed at Bottom would decrease but Energy of Motion would increase because energy never changes.
-C. Speed at Bottom would decrease and Energy of Motion would also decrease because less height means less stored energy converting to speed, and less speed means less kinetic energy.
-D. Nothing would change because the coaster always goes the same speed.
+A. Potential energy transforms into kinetic energy
+B. Kinetic energy transforms into potential energy
+C. All energy is used up by the time it reaches the bottom
+D. New energy is created as the coaster goes faster
 
-Correct Answer: C
+Correct Answer: A
 
-Feedback: If you chose A, setting Hill Height to low means less stored energy at the top, so the coaster cannot reach the same speed at the bottom. If you chose B, Energy of Motion depends on Speed at Bottom in this model. If speed decreases, energy of motion also decreases through the positive relationship. If you chose C, you are correct. The chain works like this: lower Hill Height means less stored energy, which means less Speed at Bottom, which means less Energy of Motion. Both positive arrows mean all three decrease together. If you chose D, the simulation shows that changing Hill Height does change Speed at Bottom and Energy of Motion. That is the whole point of the model.
+Feedback: Exactly! As the coaster goes downhill, its stored potential energy transforms into kinetic energy (energy of motion). That is why it speeds up! If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
 
-CAST Alignment: SEP 4.1 (Analyzing and Interpreting Data) + DCI 4-PS3-1 (Energy and Speed) + CCC2 (Cause and Effect)
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI PS3.1 + CCC4 (Systems and System Models)
 
-A group of students ran three simulation trials. In Trial 1, Hill Height was set to low, and Speed at Bottom was low and Energy of Motion was low. In Trial 2, Hill Height was set to medium, and Speed at Bottom was medium and Energy of Motion was medium. In Trial 3, Hill Height was set to high, and Speed at Bottom was high and Energy of Motion was high.
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
-Which claim is best supported by this simulation data?
+The relationship between hill height and speed at the bottom is POSITIVE. What does that mean?
 
-A. Energy of Motion stays the same no matter what Hill Height is set to.
-B. Higher hills cause lower speeds because gravity pulls the coaster backward.
-C. As Hill Height increases, both Speed at Bottom and Energy of Motion increase, showing that the speed of an object is related to its energy.
-D. The simulation is broken because all three values should be different from each other.
+A. The roller coaster is always happy when it is tall
+B. When hill height goes up, speed at the bottom also goes up
+C. When hill height goes up, speed at the bottom goes down
+D. Hill height and speed are not connected at all
 
-Correct Answer: C
+Correct Answer: B
 
-Feedback: If you chose A, the data clearly shows Energy of Motion changing from low to medium to high across the three trials. It does not stay the same. If you chose B, the data shows the opposite pattern. Higher hills produced higher speeds in every trial. If you chose C, you are correct. The data from all three trials shows a consistent pattern: increasing Hill Height leads to increasing Speed at Bottom, which leads to increasing Energy of Motion. This directly supports the idea that the speed of an object is related to its energy. If you chose D, the three components are connected by positive relationships, so it makes sense that they would all increase together. The simulation is working correctly.
+Feedback: Right! A positive relationship means both things increase together. Taller hill means more stored energy, which means more speed at the bottom. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
 
-CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC5 (Energy and Matter)
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI PS3.1 + CCC4 (Systems and System Models)
 
-A skateboarder rides down a ramp at a skatepark. The ramp is very tall, and the skateboarder reaches a high speed at the bottom.
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Hill Height), but they can take action on internal components (Speed at Bottom, Energy of Motion). They need to decide which action would be most effective based on what the model shows.
 
-Using what you learned from the roller coaster model, which explanation best applies the model to this new situation?
+What makes a roller coaster speed up as it goes down a hill?
 
-A. The skateboarder goes fast because skateboards have engines that push them.
-B. The tall ramp stores energy at the top. As the skateboarder rolls down, that stored energy converts to speed, and greater speed means greater energy of motion, just like a taller roller coaster hill produces more speed and more kinetic energy at the bottom.
-C. The skateboarder goes fast because the ramp is painted a bright color.
-D. The skateboarder would go the same speed on a short ramp because height does not affect speed.
+A. An engine inside the roller coaster pushes it forward the whole ride
+B. Gravity pulls the coaster downhill and it picks up speed
+C. The wind blows it down the hill
+D. The passengers lean forward to make it go faster
 
 Correct Answer: B
 
-Feedback: If you chose A, skateboards do not have engines. The speed comes from gravity converting stored energy into motion as the skateboarder rolls down the ramp. If you chose B, you are correct. The skateboard ramp works like the roller coaster hill in the model. A taller ramp means more stored energy at the top, which converts to more speed at the bottom, which means more energy of motion. The same cause-and-effect chain applies. If you chose C, the color of the ramp has nothing to do with how fast the skateboarder goes. Height is the key factor. If you chose D, the model showed clearly that height does affect speed. A taller hill or ramp produces more speed at the bottom because there is more stored energy to convert.
+Feedback: That is right! Gravity pulls the coaster downhill, and it gains speed as it drops. No engine is needed after the first hill. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-Question 1: B (Cognitive Level: Identify -- SEP 2.3, DCI 4-PS3-1, CCC2)
-Question 2: B (Cognitive Level: Reason -- SEP 2.3, DCI 4-PS3-1, CCC2)
-Question 3: C (Cognitive Level: Reason + Evidence -- SEP 2.3, DCI 4-PS3-1, CCC4)
-Question 4: C (Cognitive Level: Reason + Evidence -- SEP 4.1, DCI 4-PS3-1, CCC2)
-Question 5: B (Cognitive Level: Predict + Apply -- SEP 2.3, DCI 4-PS3-1, CCC5)
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI PS3.1, CCC5)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI PS3.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI PS3.1, CCC5)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI PS3.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI PS3.1, CCC4)
 
----
 
 ## Resources
 

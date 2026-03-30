@@ -984,86 +984,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Cancer is fundamentally a disease of uncontrolled cell division. Which combination of cellular failures must occur for a normal cell to become cancerous?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.4 + CCC4 (Systems and System Models)
 
-A. A single mutation in any gene is sufficient to cause cancer
-B. Multiple mutations must accumulate in the same cell lineage, typically activating growth-promoting oncogenes AND inactivating growth-suppressing tumor suppressor genes
-C. Cancer occurs when cells divide too slowly and accumulate in tissues
-D. Cancer is caused exclusively by viral infections that force cells to divide
-
-Correct Answer: B
-
-Feedback: Correct. Cancer requires multiple genetic hits in the same cell lineage, a concept known as the multi-hit hypothesis. Typically, oncogenes must be activated (accelerator stuck on) AND tumor suppressors must be inactivated (brakes disabled). This is why cancer is rare relative to the billions of cell divisions occurring daily and why it becomes more common with age as mutations accumulate. Cancer is a multi-step process requiring several mutations in the same cell lineage. A single mutation is usually compensated by remaining defense mechanisms. Cancer typically requires both activating mutations in growth-promoting genes (oncogenes) and inactivating mutations in growth-suppressing genes (tumor suppressors).
-
----
-
-### Question 2
-
-Tumor suppressor gene TP53 is sometimes called the 'guardian of the genome.' Both copies must be inactivated for its protective function to be lost. This requirement is known as:
-
-A. The central dogma of molecular biology
-B. Knudson's two-hit hypothesis, where both alleles of a tumor suppressor must be inactivated before the cell loses that protection against cancer
-C. The Hardy-Weinberg principle applied to cancer genetics
-D. The one-hit hypothesis, where a single mutation is always sufficient
-
-Correct Answer: B
-
-Feedback: Correct. Knudson's two-hit hypothesis explains why tumor suppressor genes require inactivation of both copies (alleles). One functional copy still produces enough protein to maintain growth control. This provides a safety margin: inherited mutations in one copy (like BRCA1) increase cancer risk but do not guarantee cancer because the second copy must also be lost. Tumor suppressor genes are recessive at the cellular level: one working copy provides sufficient protein for growth control. Knudson's two-hit hypothesis states that both alleles must be inactivated before the cell loses that tumor-suppressive function.
-
----
-
-### Question 3
-
-Immunotherapy works by a fundamentally different mechanism than chemotherapy. Which statement most accurately contrasts these two approaches?
-
-A. Chemotherapy targets all rapidly dividing cells (including healthy ones) with cytotoxic drugs, while immunotherapy activates or enhances the patient's own immune system to specifically recognize and destroy cancer cells
-B. Chemotherapy uses radiation while immunotherapy uses surgery
-C. Both chemotherapy and immunotherapy work by directly killing cancer cells with toxic chemicals
-D. Immunotherapy replaces the patient's immune system with an artificial one
-
-Correct Answer: A
-
-Feedback: Correct. Chemotherapy is a blunt instrument that kills rapidly dividing cells, causing collateral damage to healthy tissues (hair follicles, gut lining, bone marrow). Immunotherapy is targeted: checkpoint inhibitors release the brakes on T cells, CAR-T therapy engineers the patient's own T cells to recognize tumor antigens, and cancer vaccines train the immune system to identify cancer cells specifically. The key distinction is mechanism: chemotherapy is cytotoxic to all rapidly dividing cells (cancer and healthy), while immunotherapy works by enhancing or directing the patient's own immune response to specifically target cancer cells.
-
----
-
-### Question 4
-
-Cancer becomes more common with age. Which biological explanation best accounts for this age-related increase?
-
-A. Older people have weaker bones that are more vulnerable to cancer
-B. More years of cell division means more opportunities for mutations to accumulate in the same cell lineage, progressively satisfying the multi-hit requirements for malignancy
-C. Cancer is caused by aging skin cells that stop dividing
-D. Older people are exposed to more viruses that cause cancer
-
-Correct Answer: B
-
-Feedback: Correct. Each cell division carries a small probability of mutation. Over decades, mutations accumulate in cell lineages, progressively activating oncogenes and inactivating tumor suppressors. By age 70+, the probability that a cell lineage has accumulated enough mutations to satisfy the multi-hit requirements is significantly higher than at age 20. The multi-hit hypothesis explains the age-cancer relationship. Cancer requires multiple specific mutations in the same cell lineage. More years of life mean more cell divisions, more accumulated mutations, and a higher probability that enough mutations have occurred in one lineage to produce malignancy.
-
----
-
-### Question 5
-
-Cancer cells often express PD-L1 protein on their surface. What is the function of PD-L1 in the context of immune evasion?
-
-A. PD-L1 makes cancer cells grow faster by promoting cell division
-B. PD-L1 binds to PD-1 receptors on T cells, activating an immune checkpoint that suppresses the T cell response and allows the cancer to hide from immune surveillance
-C. PD-L1 attracts immune cells to the tumor, making cancer easier to detect
-D. PD-L1 is a nutrient receptor that helps cancer cells absorb glucose
-
-Correct Answer: B
-
-Feedback: Correct. PD-L1 on cancer cells engages PD-1 on T cells, mimicking the normal checkpoint signal that prevents autoimmune attacks. This effectively tells T cells to stand down, allowing the tumor to evade immune destruction even when T cells recognize it as abnormal. Checkpoint inhibitor drugs block this PD-1/PD-L1 interaction. PD-L1 is an immune evasion strategy. When cancer cells express PD-L1, it binds to PD-1 on T cells, activating a molecular brake that suppresses the immune response. The tumor essentially puts the immune system's brakes on, hiding in plain sight.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Mutation Rate, Carcinogen Exposure, Inherited Genetic Risk, Oncogene Activation Level, Tumor Suppressor Function, Cell Cycle Checkpoint Integrity, Immune Surveillance Effectiveness, Tumor Microenvironment Immunosuppression, Angiogenesis Rate, Treatment Response Score. Some components are external (Mutation Rate, Carcinogen Exposure, Inherited Genetic Risk) and some are internal (Oncogene Activation Level, Tumor Suppressor Function, Cell Cycle Checkpoint Integrity, Immune Surveillance Effectiveness, Tumor Microenvironment Immunosuppression, Angiogenesis Rate, Treatment Response Score). The student needs to understand what each component represents and how they are organized.
 
 The model shows that sequential introduction of mutations (oncogene activation, then tumor suppressor loss, then checkpoint failure) produces a tipping point where tumor growth potential increases dramatically. At which step does the model indicate the cell becomes truly dangerous?
 
@@ -1074,11 +999,15 @@ D. At checkpoint failure, because this is always the first mutation to occur
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals a critical transition at the combination of oncogene activation AND tumor suppressor loss. A single oncogene activation is partially compensated by intact tumor suppressors and checkpoints. But when both the accelerator is stuck on (oncogene) and the brakes are disabled (tumor suppressor), the cell gains a proliferative advantage that overwhelms remaining checkpoint and immune defenses. The model shows that cancer danger increases nonlinearly with mutation accumulation. One mutation is usually compensated by remaining defenses. The critical transition occurs when growth-promoting mutations (oncogenes) combine with loss of growth-inhibiting genes (tumor suppressors), overwhelming the remaining defense layers.
+Feedback: Correct. The model reveals a critical transition at the combination of oncogene activation AND tumor suppressor loss. A single oncogene activation is partially compensated by intact tumor suppressors and checkpoints. But when both the accelerator is stuck on (oncogene) and the brakes are disabled (tumor suppressor), the cell gains a proliferative advantage that overwhelms remaining checkpoint and immune defenses. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Mutation Rate increases, Oncogene Activation Level increases; when Carcinogen Exposure increases, Mutation Rate increases. The student is trying to understand why these relationships are positive or negative.
 
 In the 'Immune Escape' scenario, the model shows that a tumor with high PD-L1 expression and an immunosuppressive microenvironment defeats even a robust immune system. What does this reveal about the tumor microenvironment?
 
@@ -1089,11 +1018,15 @@ D. Immune systems always defeat tumors if given enough time
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that the tumor microenvironment is not passive tissue but an actively engineered fortress. Tumors recruit regulatory T cells that suppress immune responses, secrete immunosuppressive cytokines (like TGF-beta and IL-10), and express checkpoint ligands (PD-L1) that deactivate attacking immune cells. This local immunosuppression can defeat even a strong systemic immune response. The tumor microenvironment is an actively remodeled ecosystem, not passive tissue. The model shows that tumors engineer their surroundings by recruiting suppressive immune cells, secreting inhibitory molecules, and expressing checkpoint proteins to create a local environment where immune attack is neutralized.
+Feedback: Correct. The model demonstrates that the tumor microenvironment is not passive tissue but an actively engineered fortress. Tumors recruit regulatory T cells that suppress immune responses, secrete immunosuppressive cytokines (like TGF-beta and IL-10), and express checkpoint ligands (PD-L1) that deactivate attacking immune cells. This local immunosuppression can defeat even a strong systemic immune response. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Mutation Rate increases, Oncogene Activation Level increases and when Carcinogen Exposure increases, Mutation Rate increases and when Mutation Rate increases, Tumor Suppressor Function decreases. The student changes one variable to see how the whole system responds.
 
 The model predicts that checkpoint inhibitor therapy is most effective in patients with high PD-L1 expression AND a strong but suppressed immune system. Why would a patient with a weak immune system respond poorly to checkpoint inhibitors?
 
@@ -1104,11 +1037,15 @@ D. Checkpoint inhibitors only work in patients under 50 years old
 
 Correct Answer: B
 
-Feedback: Correct. Checkpoint inhibitors work by removing the PD-1/PD-L1 brake on T cells that already recognize the tumor. If a patient has few T cells capable of recognizing tumor antigens (weak immune system), removing the brake has little effect because there are insufficient immune effectors to mount an anti-tumor response. The therapy reactivates existing capability rather than creating new capability. Checkpoint inhibitors do not create new immune capability. They release existing T cells from suppression. If a patient has very few tumor-recognizing T cells to begin with, releasing the brakes on those few cells produces minimal anti-tumor response. The therapy requires a strong but suppressed immune system to be effective.
+Feedback: Correct. Checkpoint inhibitors work by removing the PD-1/PD-L1 brake on T cells that already recognize the tumor. If a patient has few T cells capable of recognizing tumor antigens (weak immune system), removing the brake has little effect because there are insufficient immune effectors to mount an anti-tumor response. The therapy reactivates existing capability rather than creating new capability. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The model reveals that treatment resistance in cancer follows evolutionary principles analogous to antibiotic resistance in bacteria. Which model finding best demonstrates this?
 
@@ -1119,11 +1056,15 @@ D. All cancer cells become resistant simultaneously through a single mutation
 
 Correct Answer: B
 
-Feedback: Correct. Tumors are genetically heterogeneous populations. When treatment eliminates sensitive cells, rare resistant subclones (which may have pre-existed or emerged through new mutations) survive, proliferate, and repopulate the tumor with a resistant population. This is natural selection operating on cancer cell populations, identical in principle to antibiotic resistance in bacteria. Cancer treatment resistance follows Darwinian selection. Tumors contain genetically diverse subpopulations. Treatment kills sensitive cells but resistant variants survive and proliferate to dominate the tumor. This is natural selection, not learning or communication, and it is why combination therapies targeting multiple vulnerabilities are more effective.
+Feedback: Correct. Tumors are genetically heterogeneous populations. When treatment eliminates sensitive cells, rare resistant subclones (which may have pre-existed or emerged through new mutations) survive, proliferate, and repopulate the tumor with a resistant population. This is natural selection operating on cancer cell populations, identical in principle to antibiotic resistance in bacteria. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Mutation Rate, Carcinogen Exposure, Inherited Genetic Risk), but they can take action on internal components (Oncogene Activation Level, Tumor Suppressor Function, Cell Cycle Checkpoint Integrity, Immune Surveillance Effectiveness, Tumor Microenvironment Immunosuppression, Angiogenesis Rate, Treatment Response Score). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model's findings, why do oncologists increasingly favor combination therapies that attack multiple cancer vulnerabilities simultaneously rather than sequential single-agent approaches?
 
@@ -1134,27 +1075,18 @@ D. Combination therapies have fewer side effects than single agents
 
 Correct Answer: B
 
-Feedback: Correct. If a tumor contains rare cells resistant to drug A and other rare cells resistant to drug B, the probability that a cell is simultaneously resistant to both A and B is the product of the individual probabilities (very low). By attacking multiple vulnerabilities at once, combination therapy makes evolutionary escape far less likely, similar to why HIV and TB are treated with multi-drug regimens. The logic is probabilistic. A cell resistant to one drug may occur at 1 in a million frequency. A cell resistant to two unrelated drugs simultaneously might occur at 1 in a trillion. Combination therapy exploits the multiplicative improbability of simultaneous resistance to multiple mechanisms.
+Feedback: Correct. If a tumor contains rare cells resistant to drug A and other rare cells resistant to drug B, the probability that a cell is simultaneously resistant to both A and B is the product of the individual probabilities (very low). By attacking multiple vulnerabilities at once, combination therapy makes evolutionary escape far less likely, similar to why HIV and TB are treated with multi-drug regimens. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: A
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

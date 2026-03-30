@@ -911,86 +911,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-A student is convinced she saw a dog run across the street, but security footage shows it was a plastic bag blown by wind. Which explanation best accounts for this perceptual error?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS1.2 + CCC4 (Systems and System Models)
 
-A. The brain uses prior experience to fill in ambiguous sensory data, sometimes generating false perceptions
-B. The student's eyes were not functioning correctly at the time of the observation
-C. The brain randomly generates images that have no connection to sensory input
-D. Perceptual errors only occur in people with below-average intelligence
-
-Correct Answer: A
-
-Feedback: Correct. The brain relies on prior experience and heuristics to interpret ambiguous sensory input, which can produce systematic perceptual errors even in healthy individuals. Incorrect. Perceptual errors are a normal feature of neural processing. When sensory input is ambiguous, the brain uses prior experience to 'fill in' what it expects to see, sometimes generating false perceptions.
-
----
-
-### Question 2
-
-Two scientists analyze the same climate dataset and reach opposite conclusions. Which concept from neuroscience most directly explains this phenomenon?
-
-A. One scientist must have made a mathematical error in the analysis
-B. Confirmation bias causes each scientist to selectively attend to data supporting their pre-existing beliefs
-C. Scientific data is always ambiguous and can never support any conclusion
-D. Scientists with more education are always more accurate in their interpretations
-
-Correct Answer: B
-
-Feedback: Correct. Confirmation bias causes people to search for, interpret, and remember information that confirms their pre-existing beliefs while ignoring contradictory evidence. Incorrect. Confirmation bias is a well-documented cognitive bias where prior beliefs shape how new evidence is interpreted, causing two people to draw different conclusions from identical data.
-
----
-
-### Question 3
-
-What is a heuristic in the context of cognitive science?
-
-A. A type of brain damage that impairs decision-making ability
-B. A mental shortcut the brain uses for quick decisions that is efficient but prone to systematic errors
-C. A conscious, deliberate strategy for solving complex problems step by step
-D. A rare cognitive ability found only in experts with years of training
-
-Correct Answer: B
-
-Feedback: Correct. Heuristics are mental shortcuts that allow the brain to make rapid decisions without analyzing all available data. They work well most of the time but produce predictable errors in specific situations. Incorrect. Heuristics are mental shortcuts used by everyone's brain to make fast decisions. They are efficient most of the time but produce systematic, predictable errors called cognitive biases.
-
----
-
-### Question 4
-
-A student claims that highly intelligent people are less susceptible to cognitive biases. Based on neuroscience research, which response is most accurate?
-
-A. This is correct; intelligence fully protects against cognitive biases
-B. Intelligence has no relationship to cognitive processing at all
-C. Expertise can actually increase certain biases because strong prior knowledge shapes interpretation of ambiguous information
-D. Only people with cognitive disabilities experience biases
-
-Correct Answer: C
-
-Feedback: Correct. Research shows that expertise can increase confirmation bias because experts have stronger prior beliefs that more powerfully shape how they interpret new, ambiguous evidence. Incorrect. Cognitive biases are features of neural processing in all brains. Experts can actually be more biased in their area of expertise because their strong prior knowledge more powerfully filters new information.
-
----
-
-### Question 5
-
-When would a person's cognitive biases be MOST likely to influence their decision-making?
-
-A. When they are well-rested, have clear data, and no prior expectations
-B. When sensory input is clear and unambiguous with low cognitive load
-C. When they are stressed, fatigued, and processing ambiguous information with strong prior beliefs
-D. When they are making decisions in their area of least experience
-
-Correct Answer: C
-
-Feedback: Correct. Biases are strongest when cognitive load is high (stress, fatigue), sensory input is ambiguous, and prior experience is strong, because the brain relies more heavily on shortcuts under these conditions. Incorrect. Cognitive biases are amplified by high cognitive load (stress/fatigue), ambiguous information, and strong prior beliefs. Under these conditions, the brain shifts from careful analysis to quick heuristic shortcuts.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sensory Input, Prior Experience, Cognitive Load, Bias Strength, Decision Accuracy. Some components are external (Sensory Input, Prior Experience) and some are internal (Cognitive Load, Bias Strength, Decision Accuracy). The student needs to understand what each component represents and how they are organized.
 
 In the cognitive bias model, what happens to Decision Accuracy when Sensory Input is weak and Prior Experience is very strong?
 
@@ -1001,11 +926,15 @@ D. Decision Accuracy improves only if Cognitive Load is also high
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that when sensory input is ambiguous and prior experience is strong, the brain fills in gaps with what it expects to see, dramatically increasing Bias Strength and reducing Decision Accuracy. Incorrect. The model demonstrates that weak sensory input combined with strong prior experience increases Bias Strength because the brain relies on expectations rather than evidence, which decreases Decision Accuracy.
+Feedback: Correct. The model shows that when sensory input is ambiguous and prior experience is strong, the brain fills in gaps with what it expects to see, dramatically increasing Bias Strength and reducing Decision Accuracy. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS1.2 + CCC1 (Patterns)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sensory Input increases, Bias Strength decreases; when Prior Experience increases, Bias Strength increases. The student is trying to understand why these relationships are positive or negative.
 
 A hospital finds that diagnostic errors increase during long shifts. Based on the cognitive bias model, which mechanism best explains this pattern?
 
@@ -1016,11 +945,15 @@ D. Diagnostic protocols are only designed to work during short shifts
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that high Cognitive Load (from fatigue, stress, multitasking) forces the brain to shift from careful, analytical processing to faster heuristic shortcuts, amplifying all biases including anchoring and confirmation bias. Incorrect. The model predicts that increased Cognitive Load from fatigue amplifies Bias Strength because the brain shifts from analytical processing to heuristic shortcuts when overwhelmed, increasing the influence of anchoring and confirmation biases.
+Feedback: Correct. The model shows that high Cognitive Load (from fatigue, stress, multitasking) forces the brain to shift from careful, analytical processing to faster heuristic shortcuts, amplifying all biases including anchoring and confirmation bias. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sensory Input increases, Bias Strength decreases and when Prior Experience increases, Bias Strength increases and when Cognitive Load increases, Bias Strength increases. The student changes one variable to see how the whole system responds.
 
 A student adds Metacognition as a component to the cognitive bias model. Based on the model's predictions, how would Metacognition interact with Bias Strength?
 
@@ -1031,11 +964,15 @@ D. Metacognition would only affect Decision Accuracy if Cognitive Load is zero
 
 Correct Answer: B
 
-Feedback: Correct. The model predicts that metacognition (awareness of one's own thinking) acts as a moderating variable that can reduce but never fully eliminate bias, since biases are built into the brain's fundamental processing architecture. Incorrect. Metacognition moderates Bias Strength by enabling people to recognize when shortcuts might lead to errors, but it cannot eliminate biases entirely because they are fundamental features of neural processing, not optional settings.
+Feedback: Correct. The model predicts that metacognition (awareness of one's own thinking) acts as a moderating variable that can reduce but never fully eliminate bias, since biases are built into the brain's fundamental processing architecture. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Which scenario from the cognitive bias model would produce the HIGHEST Decision Accuracy?
 
@@ -1046,11 +983,15 @@ D. Low Sensory Input clarity, low Prior Experience, high Cognitive Load
 
 Correct Answer: A
 
-Feedback: Correct. The model predicts highest Decision Accuracy when sensory data is clear (reducing reliance on expectations), prior beliefs are weak (reducing confirmation bias), and cognitive load is low (allowing analytical rather than heuristic processing). Incorrect. Decision Accuracy is maximized when sensory input is strong and unambiguous, prior experience is low (reducing bias from preconceptions), and cognitive load is low (allowing the brain to process information analytically rather than through shortcuts).
+Feedback: Correct. The model predicts highest Decision Accuracy when sensory data is clear (reducing reliance on expectations), prior beliefs are weak (reducing confirmation bias), and cognitive load is low (allowing analytical rather than heuristic processing). If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS1.2 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sensory Input, Prior Experience), but they can take action on internal components (Cognitive Load, Bias Strength, Decision Accuracy). They need to decide which action would be most effective based on what the model shows.
 
 The model shows that cognitive biases are 'features' of neural processing rather than 'flaws.' Which evidence from the model best supports this claim?
 
@@ -1061,27 +1002,18 @@ D. Biases disappear entirely when a person is aware of them
 
 Correct Answer: B
 
-Feedback: Correct. The model reveals that heuristics evolved because they produce fast, accurate-enough decisions the vast majority of the time. They only fail systematically in specific conditions (ambiguous input, high load, strong priors), indicating they are adaptive features optimized for speed over perfect accuracy. Incorrect. The model shows biases are features because the underlying heuristics produce good decisions most of the time. Evolution optimized the brain for speed, not perfect accuracy, so these shortcuts work well in typical conditions but fail predictably when evidence is ambiguous or cognitive load is high.
+Feedback: Correct. The model reveals that heuristics evolved because they produce fast, accurate-enough decisions the vast majority of the time. They only fail systematically in specific conditions (ambiguous input, high load, strong priors), indicating they are adaptive features optimized for speed over perfect accuracy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: A
-Question 2: B
-Question 3: B
-Question 4: C
-Question 5: C
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS1.2, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS1.2, CCC1)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS1.2, CCC4)
+Question 4: A (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS1.2, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS1.2, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: A
-Question 5: B
-
----
 
 ## Resources
 

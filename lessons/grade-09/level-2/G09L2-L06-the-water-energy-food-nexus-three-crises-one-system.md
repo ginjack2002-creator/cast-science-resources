@@ -955,86 +955,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What does 'nexus thinking' mean in the context of resource management?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.4 + CCC2 (Cause and Effect)
 
-A. Managing each resource (water, energy, food) independently for maximum efficiency
-B. Analyzing the interconnections between resource systems and understanding how changes in one affect the others
-C. Prioritizing one critical resource above all others during a crisis
-D. Using advanced technology to eliminate the need for natural resources
-
-Correct Answer: B
-
-Feedback: Correct. Nexus thinking recognizes that water, energy, and food systems are deeply interconnected. Managing one without considering the others can create unintended consequences that worsen the overall resource situation. Nexus thinking is fundamentally about recognizing interconnections. Managing resources in isolation (siloed thinking) ignores the trade-offs and feedback loops that connect water, energy, and food production.
-
----
-
-### Question 2
-
-Why does producing more food typically require more water AND more energy?
-
-A. Food production has no significant relationship with water or energy use
-B. Crops need irrigation (water) and processing, transportation, and equipment all consume energy, while irrigation systems themselves require energy to operate
-C. Food production only requires water, not energy
-D. Modern farming has eliminated the need for water through synthetic alternatives
-
-Correct Answer: B
-
-Feedback: Correct. Agriculture is both water-intensive (irrigation, crop growth) and energy-intensive (pumping water, running equipment, processing, refrigeration, transportation). Expanding food production amplifies demand for both resources simultaneously. Food production sits at the intersection of water and energy systems. Growing crops requires irrigation, which consumes both water and the energy to pump it. Processing, refrigeration, and transportation add further energy demands.
-
----
-
-### Question 3
-
-A region builds a desalination plant to address water scarcity. What is the most likely unintended consequence?
-
-A. The desalination plant will also generate surplus energy
-B. The plant will significantly increase energy consumption, potentially straining the energy supply
-C. Desalination has no effect on other resource systems
-D. The plant will reduce food production by taking farmland
-
-Correct Answer: B
-
-Feedback: Correct. Desalination is extremely energy-intensive, requiring large amounts of electricity to force water through membranes. Solving the water problem creates increased demand on the energy system, illustrating the nexus trade-off. Desalination exemplifies a nexus trade-off. While it addresses water scarcity, it is one of the most energy-intensive water treatment processes, creating significant new demand on the energy system.
-
----
-
-### Question 4
-
-What is meant by 'carrying capacity' in the context of regional resource systems?
-
-A. The maximum weight that transportation infrastructure can support
-B. The maximum population a region can sustain given its available water, energy, and food resources
-C. The number of vehicles that can travel on a highway simultaneously
-D. The amount of cargo a single ship can transport
-
-Correct Answer: B
-
-Feedback: Correct. Carrying capacity is the maximum population that a region's resources can sustain. It is determined by the most limited resource, which means the scarcest of water, energy, or food sets the ceiling for population support. In resource management, carrying capacity refers to the sustainable population limit based on available resources. The limiting factor (the scarcest resource) determines the ceiling.
-
----
-
-### Question 5
-
-How does a circular economy approach differ from a linear 'take-make-dispose' economy in resource management?
-
-A. A circular economy uses more resources but creates less pollution
-B. A circular economy minimizes waste by recycling outputs from one process as inputs to another, reducing total resource demand
-C. There is no practical difference between the two approaches
-D. A circular economy only applies to manufacturing, not to water or energy
-
-Correct Answer: B
-
-Feedback: Correct. A circular economy closes resource loops by treating waste as input for other processes. Wastewater becomes irrigation water, food waste becomes biogas energy, and agricultural byproducts become fertilizer. A circular economy fundamentally redesigns resource flows to minimize waste. Instead of extract-use-dispose, it recycles outputs as inputs, reducing the total demand on raw resource supplies.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Water Availability, Energy Production, Agricultural Output, Population Demand, Industrial Usage, Wastewater Recycling. Some components are external (Water Availability, Population Demand, Wastewater Recycling) and some are internal (Energy Production, Agricultural Output, Industrial Usage). The student needs to understand what each component represents and how they are organized.
 
 The model shows that increasing energy production to meet growing demand causes water availability to decline. What system dynamic explains this?
 
@@ -1045,11 +970,15 @@ D. The model is showing random fluctuations, not a causal relationship
 
 Correct Answer: B
 
-Feedback: Correct. Thermal power plants are among the largest industrial water consumers, using water for cooling. Increasing energy output directly increases water withdrawal, creating resource competition between the energy and water systems. Power generation is extremely water-intensive. Thermal and nuclear plants require massive cooling water volumes. This creates a direct, measurable trade-off where expanding energy production reduces water available for agriculture and municipalities.
+Feedback: Correct. Thermal power plants are among the largest industrial water consumers, using water for cooling. Increasing energy output directly increases water withdrawal, creating resource competition between the energy and water systems. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Population Demand increases, Water Availability decreases; when Water Availability increases, Energy Production increases. The student is trying to understand why these relationships are positive or negative.
 
 A simulation of 30% population growth shows that the water system fails before energy or food. What does this reveal about system constraints?
 
@@ -1060,11 +989,15 @@ D. Energy and food systems are immune to population pressure
 
 Correct Answer: B
 
-Feedback: Correct. This illustrates the concept of a limiting factor or bottleneck. The system's carrying capacity is determined by its weakest link. Even if energy and food are abundant, water scarcity limits the population that can be sustained. The bottleneck principle means the scarcest resource sets the system limit. In this scenario, water is the constraint, but in different regions or conditions, energy or food could be the limiting factor.
+Feedback: Correct. This illustrates the concept of a limiting factor or bottleneck. The system's carrying capacity is determined by its weakest link. Even if energy and food are abundant, water scarcity limits the population that can be sustained. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Population Demand increases, Water Availability decreases and when Water Availability increases, Energy Production increases and when Water Availability increases, Agricultural Output increases. The student changes one variable to see how the whole system responds.
 
 The model demonstrates that a drought reduces water availability by 40%, which then reduces both energy production AND agricultural output. What systems concept does this illustrate?
 
@@ -1075,11 +1008,15 @@ D. The drought scenario is unrealistic and does not reflect real resource dynami
 
 Correct Answer: B
 
-Feedback: Correct. This demonstrates cascading failure in coupled systems. Because energy production needs cooling water and agriculture needs irrigation water, a water shock propagates through all connected systems, amplifying the original disruption. In coupled systems, a disruption to one component propagates to all connected components. Drought reduces water, which reduces energy (cooling) and food (irrigation), creating a multi-system crisis from a single initial shock.
+Feedback: Correct. This demonstrates cascading failure in coupled systems. Because energy production needs cooling water and agriculture needs irrigation water, a water shock propagates through all connected systems, amplifying the original disruption. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.4 + CCC5 (Energy and Matter)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 A student's model shows that increasing wastewater recycling to 90% partially decouples the water-energy-food nexus. What does 'decoupling' mean in this context?
 
@@ -1090,11 +1027,15 @@ D. Wastewater recycling has no effect on resource interdependence
 
 Correct Answer: B
 
-Feedback: Correct. Decoupling reduces the strength of competition between systems. Recycled water provides an alternative supply that reduces the demand on shared freshwater sources, allowing energy and agriculture to draw from different pools. Decoupling does not mean complete independence; it means reduced interdependence. By creating an alternative water supply through recycling, the competition between systems for the same finite source is reduced.
+Feedback: Correct. Decoupling reduces the strength of competition between systems. Recycled water provides an alternative supply that reduces the demand on shared freshwater sources, allowing energy and agriculture to draw from different pools. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.4 + CCC5 (Energy and Matter)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Water Availability, Population Demand, Wastewater Recycling), but they can take action on internal components (Energy Production, Agricultural Output, Industrial Usage). They need to decide which action would be most effective based on what the model shows.
 
 Based on the model, why is siloed resource planning (managing water, energy, and food independently) likely to fail as populations grow?
 
@@ -1105,27 +1046,18 @@ D. Population growth does not affect resource planning approaches
 
 Correct Answer: B
 
-Feedback: Correct. Siloed optimization creates a whack-a-mole dynamic: solving water scarcity with desalination strains energy, expanding energy strains water, expanding agriculture strains both. Population growth multiplies all demands simultaneously, making integrated planning essential. The model demonstrates that optimizing one resource in isolation inevitably creates pressure on the others because of their interconnections. As population grows, these trade-offs intensify, making integrated nexus planning the only viable approach.
+Feedback: Correct. Siloed optimization creates a whack-a-mole dynamic: solving water scarcity with desalination strains energy, expanding energy strains water, expanding agriculture strains both. Population growth multiplies all demands simultaneously, making integrated planning essential. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.4, CCC2)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.4, CCC5)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.4, CCC5)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 

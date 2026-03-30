@@ -164,77 +164,17 @@ Biomedical Engineers design medical devices including brain-computer interfaces 
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8, MS-PS4-2.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-How does your brain send a message to your hand to pick something up?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. Your brain yells really loudly
-B. Your brain sends electrical signals through your nerves
-C. Your hand moves on its own without the brain
-D. Your brain sends a letter through the mail
-
-Correct Answer: B
-
-Feedback: Correct! Your brain sends tiny electrical signals along your nerves to tell your muscles what to do. Your brain communicates by sending tiny electrical signals through your nervous system. These signals travel along nerves from your brain to your muscles, telling them when and how to move.
-
----
-
-### Question 2
-
-What happens to a message when there is a lot of noise around you?
-
-A. The message gets clearer
-B. The message becomes harder to hear or understand
-C. Noise does not affect messages at all
-D. The message speeds up
-
-Correct Answer: B
-
-Feedback: Yes! Noise makes messages harder to hear and understand. The same thing happens with electronic and brain signals. Noise interferes with messages and makes them harder to understand. Just like trying to hear someone in a loud room, electronic and brain signals can also be disrupted by interference.
-
----
-
-### Question 3
-
-If you whisper to someone far away, why might they not hear you?
-
-A. Whispers are invisible
-B. The sound is too weak to travel that far
-C. Their ears stop working when you whisper
-D. Whispers only work at night
-
-Correct Answer: B
-
-Feedback: Correct! A whisper is a weak signal that loses strength as it travels. The farther it goes, the harder it is to hear. A whisper is a weak signal. As sound travels, it loses strength over distance. This is called signal degradation, and it happens with all types of signals, not just sound.
-
----
-
-### Question 4
-
-What is a brain-computer interface?
-
-A. A computer that has a brain inside it
-B. A system that reads brain signals and uses them to control a machine
-C. A video game about brains
-D. A type of brain surgery
-
-Correct Answer: B
-
-Feedback: Yes! A brain-computer interface (BCI) is a system that reads electrical signals from the brain and translates them into commands that control a computer or machine. A brain-computer interface (BCI) reads the electrical signals your brain produces and translates them into commands that can control a computer, robotic arm, or other machine. It is a bridge between your brain and technology.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Signal Strength, Distance Traveled, Noise Level, Message Accuracy. Some components are external (Signal Strength, Distance Traveled, Noise Level) and some are internal (Message Accuracy). The student needs to understand what each component represents and how they are organized.
 
 In the model, which THREE factors affect whether a message arrives accurately?
 
@@ -245,11 +185,15 @@ D. Speed, direction, and shape
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that signal strength, distance, and noise level are the three inputs that determine message accuracy. The model identified three key factors: signal strength (how strong the message starts), distance traveled (how far it must go), and noise level (how much interference is in the environment). All three affect whether the message arrives accurately.
+Feedback: Correct! The model showed that signal strength, distance, and noise level are the three inputs that determine message accuracy. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Signal Strength increases, Message Accuracy increases; when Distance Traveled increases, Message Accuracy decreases. The student is trying to understand why these relationships are positive or negative.
 
 What did the model show happens when signal strength is high but noise level is also very high?
 
@@ -260,11 +204,15 @@ D. The distance automatically gets shorter
 
 Correct Answer: B
 
-Feedback: Yes! The model showed that extreme noise can degrade even a strong signal. No signal is immune to overwhelming interference. Even a strong signal can be ruined by extreme noise. The model showed that while high signal strength helps, it cannot completely overcome very high noise levels. Message accuracy still drops when interference is too great.
+Feedback: Yes! The model showed that extreme noise can degrade even a strong signal. No signal is immune to overwhelming interference. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Signal Strength increases, Message Accuracy increases and when Distance Traveled increases, Message Accuracy decreases and when Noise Level increases, Message Accuracy decreases. The student changes one variable to see how the whole system responds.
 
 How is the telephone game similar to the challenges of brain-computer interfaces?
 
@@ -275,11 +223,15 @@ D. They are not similar at all
 
 Correct Answer: B
 
-Feedback: Correct! Both the telephone game and BCIs face the same challenge: signals lose accuracy as they travel farther and encounter more noise along the way. The telephone game and brain-computer interfaces share the same core challenge: messages (signals) get distorted as they travel over distance, and noise in the environment makes them even harder to decode accurately.
+Feedback: Correct! Both the telephone game and BCIs face the same challenge: signals lose accuracy as they travel farther and encounter more noise along the way. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is reading brain signals so much harder than reading a keyboard press?
 
@@ -290,25 +242,37 @@ D. Brains do not actually produce electrical signals
 
 Correct Answer: B
 
-Feedback: That is right! Brain signals face all three challenges from the model: they are weak (low signal strength), must travel through tissue (distance), and are surrounded by billions of competing neural signals (noise). Reading brain signals is hard because of all three factors from our model. Brain signals are very weak (low signal strength), must travel through tissue and wires (distance), and are buried among billions of other neural signals (noise). Scientists must solve all three problems at once.
+Feedback: That is right! Brain signals face all three challenges from the model: they are weak (low signal strength), must travel through tissue (distance), and are surrounded by billions of competing neural signals (noise). If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Signal Strength, Distance Traveled, Noise Level), but they can take action on internal components (Message Accuracy). They need to decide which action would be most effective based on what the model shows.
+
+How does your brain send a message to your hand to pick something up?
+
+A. Your brain yells really loudly
+B. Your brain sends electrical signals through your nerves
+C. Your hand moves on its own without the brain
+D. Your brain sends a letter through the mail
+
+Correct Answer: B
+
+Feedback: Correct! Your brain sends tiny electrical signals along your nerves to tell your muscles what to do. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

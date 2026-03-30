@@ -197,77 +197,17 @@ AI Ethics Researchers and Conservation Technology Policy Analysts develop framew
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
-Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ETS1-1, HS-ETS1-3, HS-LS2-7, HS-LS4-6.
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to NGSS Standard.
 
 ---
-
-### Pre-Assessment Questions
 
 ### Question 1
 
-What does 'algorithmic transparency' mean?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI NGSS Standard + CCC4 (Systems and System Models)
 
-A. Making a computer screen see-through
-B. How clearly a technology's decision-making process can be understood and explained
-C. Using clear glass to build robots
-D. Keeping all technology decisions secret
-
-Correct Answer: B
-
-Feedback: Correct! Algorithmic transparency means making a technology's decision-making process clear and understandable to the public so people can evaluate whether it is being used responsibly. Algorithmic transparency refers to how openly and clearly a technology's decision-making process can be explained. When an AI system makes a decision, transparency means people can understand WHY it made that decision and evaluate whether it was appropriate.
-
----
-
-### Question 2
-
-Should a robot designed to protect wildlife be allowed to make decisions on its own without human oversight?
-
-A. Yes, robots always make better decisions than humans
-B. No, robots should never be used for wildlife protection
-C. It depends on the situation, and there are valid arguments on both sides
-D. Only if the robot was built by a government
-
-Correct Answer: C
-
-Feedback: Yes! This is a genuine ethical question with valid arguments on both sides. Autonomous systems can respond faster, but human oversight provides accountability. The answer depends on context. The question of robot autonomy in conservation is a real ethical debate. Autonomous systems can respond faster to threats, but they might make mistakes. Human oversight provides accountability but slows response time. The best answer depends on the specific situation, risks, and safeguards in place.
-
----
-
-### Question 3
-
-What is an ethical framework?
-
-A. A set of building materials for making robots
-B. A structured approach for evaluating whether an action is morally right or wrong
-C. A picture frame with ethical quotes on it
-D. A new programming language for computers
-
-Correct Answer: B
-
-Feedback: Correct! An ethical framework is a structured approach for evaluating moral decisions. It provides principles and criteria for determining whether an action is right or wrong. An ethical framework provides a structured way to think about moral decisions. It includes principles, values, and criteria that help evaluate whether a particular action or technology is morally acceptable. Different ethical frameworks may lead to different conclusions about the same situation.
-
----
-
-### Question 4
-
-When a new technology has both potential benefits and potential risks, who should decide whether to use it?
-
-A. Only the engineers who built it
-B. Only the government
-C. Multiple stakeholders including engineers, communities, scientists, and government working together
-D. No one, because technology always moves forward regardless
-
-Correct Answer: C
-
-Feedback: Yes! Decisions about powerful technology should involve multiple stakeholders. Engineers understand the technology, communities are affected by it, scientists evaluate the evidence, and government creates regulation. Complex technology decisions require input from multiple groups. Engineers understand what the technology can do, communities understand how it affects their lives, scientists evaluate the evidence, and government creates rules and oversight. No single group should make these decisions alone.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Technology Capability Level, Transparency Level, Ecological Crisis Severity, Regulation Strictness, Ecological Benefit, Unintended Consequences, Animal Autonomy Impact, Public Trust, Ethical Justification Score. Some components are external (Technology Capability Level, Transparency Level, Ecological Crisis Severity, Regulation Strictness) and some are internal (Ecological Benefit, Unintended Consequences, Animal Autonomy Impact, Public Trust, Ethical Justification Score). The student needs to understand what each component represents and how they are organized.
 
 In the model, what was the single strongest driver of public trust?
 
@@ -278,11 +218,15 @@ D. Regulation Strictness
 
 Correct Answer: C
 
-Feedback: Correct! The model showed that Transparency Level was the single strongest driver of Public Trust. Without transparency, even beneficial technology faces public opposition. The model clearly demonstrated that Transparency Level was the strongest driver of Public Trust. When the public can understand how a technology works and why it makes certain decisions, trust increases. Without transparency, even technology that produces good ecological results faces opposition.
+Feedback: Correct! The model showed that Transparency Level was the single strongest driver of Public Trust. Without transparency, even beneficial technology faces public opposition. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Technology Capability increases, Ecological Benefit increases; when Technology Capability increases, Unintended Consequences increases. The student is trying to understand why these relationships are positive or negative.
 
 What did the model reveal about the relationship between Technology Capability and Unintended Consequences?
 
@@ -293,11 +237,15 @@ D. Only low-capability technology creates unintended consequences
 
 Correct Answer: B
 
-Feedback: Yes! The model showed that technology capability is a double-edged sword. More powerful systems create greater ecological benefits but also carry a higher risk of unintended consequences. The model revealed that technology capability is a double-edged sword. Increasing capability simultaneously increases both ecological benefits (the good) and the risk of unintended consequences (the bad). This is why powerful technology requires stronger oversight and transparency.
+Feedback: Yes! The model showed that technology capability is a double-edged sword. More powerful systems create greater ecological benefits but also carry a higher risk of unintended consequences. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Technology Capability increases, Ecological Benefit increases and when Technology Capability increases, Unintended Consequences increases and when Technology Capability increases, Animal Autonomy Impact increases. The student changes one variable to see how the whole system responds.
 
 How did crisis severity affect the ethical calculus in the model?
 
@@ -308,11 +256,15 @@ D. Only low-severity crises justified technology use
 
 Correct Answer: B
 
-Feedback: Correct! The model showed that crisis severity shifts the ethical calculus. Actions and risks that would be unacceptable during normal conditions may become necessary when a species faces imminent extinction. The model demonstrated that crisis severity changes what is ethically justifiable. During normal conditions, risky interventions are hard to justify. But when a species faces extinction or an ecosystem faces irreversible collapse, the urgency shifts the ethical balance toward accepting greater risks.
+Feedback: Correct! The model showed that crisis severity shifts the ethical calculus. Actions and risks that would be unacceptable during normal conditions may become necessary when a species faces imminent extinction. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 According to the model, what combination of factors produces the highest Ethical Justification Score?
 
@@ -323,25 +275,37 @@ D. No technology use at all, regardless of the crisis
 
 Correct Answer: B
 
-Feedback: That is right! The model showed that the highest ethical justification requires BOTH high transparency AND moderate regulation. Neither alone is sufficient. Too much regulation limits benefits; too little allows harm. The model consistently showed that the highest Ethical Justification Scores required both high transparency and moderate regulation working together. Transparency without regulation leaves too much room for harm. Regulation without transparency erodes public trust. And extreme regulation reduces ecological benefit too much. The balance of both produces the most ethically defensible outcomes.
+Feedback: That is right! The model showed that the highest ethical justification requires BOTH high transparency AND moderate regulation. Neither alone is sufficient. Too much regulation limits benefits; too little allows harm. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI NGSS Standard + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Technology Capability Level, Transparency Level, Ecological Crisis Severity, Regulation Strictness), but they can take action on internal components (Ecological Benefit, Unintended Consequences, Animal Autonomy Impact, Public Trust, Ethical Justification Score). They need to decide which action would be most effective based on what the model shows.
+
+What does 'algorithmic transparency' mean?
+
+A. Making a computer screen see-through
+B. How clearly a technology's decision-making process can be understood and explained
+C. Using clear glass to build robots
+D. Keeping all technology decisions secret
+
+Correct Answer: B
+
+Feedback: Correct! Algorithmic transparency means making a technology's decision-making process clear and understandable to the public so people can evaluate whether it is being used responsibly. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: C
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI NGSS Standard, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI NGSS Standard, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI NGSS Standard, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI NGSS Standard, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI NGSS Standard, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Lesson Metadata
 

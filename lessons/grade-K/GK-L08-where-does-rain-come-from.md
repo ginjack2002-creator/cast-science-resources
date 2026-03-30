@@ -724,73 +724,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS2-1.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Where does rain come from?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.1 + CCC4 (Systems and System Models)
 
-A. From the ground
-B. From the clouds
-C. From the ocean
-
-Correct Answer: B
-
-Feedback: Yes! Rain falls from clouds in the sky. Rain falls from clouds. When clouds get very full of tiny water drops, the drops fall down as rain.
-
----
-
-### Question 2
-
-What happens to a puddle on a sunny day?
-
-A. It gets bigger
-B. It stays the same
-C. It dries up and goes away
-
-Correct Answer: C
-
-Feedback: Yes! A puddle on a sunny day dries up because the sun heats the water and it goes up into the sky. On a sunny day, a puddle dries up. The sun's heat turns the water into an invisible gas that floats into the sky.
-
----
-
-### Question 3
-
-What are clouds made of?
-
-A. Cotton
-B. Smoke
-C. Tiny drops of water
-
-Correct Answer: C
-
-Feedback: Yes! Clouds are made of tiny, tiny drops of water floating in the sky. Clouds are made of very tiny drops of water or bits of ice floating in the air. They look soft but they are actually water.
-
----
-
-### Question 4
-
-Does the sun help make rain?
-
-A. Yes, it heats up water so it goes into the sky
-B. No, the sun has nothing to do with rain
-C. The sun only makes snow
-
-Correct Answer: A
-
-Feedback: Yes! The sun heats up water, which makes it float up into the sky where it can become clouds and then rain. The sun does help make rain. It heats up water on the ground, the water goes up into the sky, forms clouds, and falls as rain.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun's Heat, Evaporation Speed. Some components are external (Sun's Heat) and some are internal (Evaporation Speed). The student needs to understand what each component represents and how they are organized.
 
 What is evaporation?
 
@@ -800,11 +744,15 @@ C. When rain falls from clouds
 
 Correct Answer: B
 
-Feedback: Yes! Evaporation is when the sun heats water and it turns into invisible gas that floats up into the sky. Evaporation is when the sun's heat turns water into an invisible gas that rises up into the sky. That is the first step of the water cycle.
+Feedback: Yes! Evaporation is when the sun heats water and it turns into invisible gas that floats up into the sky. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when s Heat increases, Evaporation Speed increases. The student is trying to understand why these relationships are positive or negative.
 
 When the Sun's Heat goes UP, what happens to Evaporation Speed?
 
@@ -814,11 +762,15 @@ C. It stops
 
 Correct Answer: B
 
-Feedback: Yes! More heat from the sun makes water evaporate faster. That is a positive connection. When the sun is hotter, evaporation goes faster. More heat gives water more energy to float up into the sky.
+Feedback: Yes! More heat from the sun makes water evaporate faster. That is a positive connection. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when s Heat increases, Evaporation Speed increases. The student changes one variable to see how the whole system responds.
 
 What is the water cycle?
 
@@ -828,11 +780,15 @@ C. Water coming from a faucet
 
 Correct Answer: A
 
-Feedback: Yes! The water cycle is water's journey. It goes up to the sky, makes clouds, and falls back as rain, over and over. The water cycle is the journey water takes: up to the sky (evaporation), into clouds, then back down as rain, over and over again.
+Feedback: Yes! The water cycle is water's journey. It goes up to the sky, makes clouds, and falls back as rain, over and over. If you chose B, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (A) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 On a hot sunny day, a puddle dries up fast. Where did the water go?
 
@@ -842,25 +798,36 @@ C. It disappeared forever
 
 Correct Answer: B
 
-Feedback: Yes! The sun heated the water and it turned into invisible gas that floated up into the sky. That is evaporation! The water did not disappear. The sun turned it into invisible gas (water vapor) that floated into the sky. It will become part of a cloud.
+Feedback: Yes! The sun heated the water and it turned into invisible gas that floated up into the sky. That is evaporation! If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.1 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun's Heat), but they can take action on internal components (Evaporation Speed). They need to decide which action would be most effective based on what the model shows.
+
+Where does rain come from?
+
+A. From the ground
+B. From the clouds
+C. From the ocean
+
+Correct Answer: B
+
+Feedback: Yes! Rain falls from clouds in the sky. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: C
-Question 4: A
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.1, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.1, CCC4)
+Question 3: A (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.1, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.1, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.1, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: A
-Question 4: B
-
----
 
 ## Resources
 

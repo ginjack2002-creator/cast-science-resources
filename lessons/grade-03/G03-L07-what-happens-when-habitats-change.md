@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-4.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-What do you think a habitat is?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS4.4 + CCC4 (Systems and System Models)
 
-A. A type of clothing animals wear
-B. The natural home where an animal lives, which provides food, water, and shelter
-C. A cage at the zoo
-D. A type of food animals eat
-
-Correct Answer: B
-
-Feedback: That is right! A habitat is the natural place where an animal or plant lives. It provides everything the organism needs: food, water, shelter, and space. A habitat is an animal's natural home. It provides food, water, shelter, and space. A forest, ocean, desert, and pond are all examples of habitats.
-
----
-
-### Question 2
-
-What do you think happens to animals when a forest fire burns down their home?
-
-A. Nothing changes for the animals
-B. The animals may lose their food and shelter, and some may not survive
-C. The animals enjoy the warmth of the fire
-D. New animals appear from the fire
-
-Correct Answer: B
-
-Feedback: Good thinking! When a habitat is destroyed by fire, animals lose their food and shelter. Some may move to new areas, but others may not survive the change. When a forest burns, animals lose their homes, food, and shelter. This is a major habitat change. Some animals can move to new areas, but others struggle to survive.
-
----
-
-### Question 3
-
-What does the word population mean?
-
-A. How popular an animal is
-B. The number of one type of animal living in an area
-C. How fast an animal can run
-D. The color of an animal's fur
-
-Correct Answer: B
-
-Feedback: Correct! Population is the number of one type of animal or plant living in an area. For example, if there are 50 deer in a forest, the deer population is 50. Population means the number of one type of animal living in an area. If a forest has 50 rabbits, the rabbit population is 50.
-
----
-
-### Question 4
-
-Do you think all animals are affected the same way when their habitat changes?
-
-A. Yes, all animals react the same way
-B. No, some animals can adapt better than others
-C. Animals do not notice habitat changes
-D. Only big animals are affected
-
-Correct Answer: B
-
-Feedback: You got it! Some animals can adapt, meaning they can change what they eat, where they live, or how they behave. Others that depend on only one food or place may struggle more. Animals respond differently to habitat changes. Some can adapt by finding new food or shelter. Others that eat only one type of food or live in only one type of place may have a harder time surviving.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Habitat Change, Food Availability, Animal Population. Some components are external (Habitat Change) and some are internal (Food Availability, Animal Population). The student needs to understand what each component represents and how they are organized.
 
 In the habitat model, when Habitat Change increases, what happens to Food Availability?
 
@@ -904,11 +844,15 @@ D. Food Availability is not connected to Habitat Change
 
 Correct Answer: B
 
-Feedback: Correct! Habitat Change and Food Availability have a negative relationship. When the habitat changes a lot (like a fire or drought), less food is available for animals. When a habitat is damaged or destroyed, the plants and food sources in that habitat are lost. More habitat change means less food available for animals. This is a negative relationship.
+Feedback: Correct! Habitat Change and Food Availability have a negative relationship. When the habitat changes a lot (like a fire or drought), less food is available for animals. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Habitat Change increases, Food Availability increases; when Food Availability increases, Animal Population increases. The student is trying to understand why these relationships are positive or negative.
 
 Which animals are MOST at risk when their habitat changes?
 
@@ -919,11 +863,15 @@ D. Animals that are very fast
 
 Correct Answer: B
 
-Feedback: Exactly! Specialized animals that depend on only one food or one type of habitat are most at risk. If their specific food or home is destroyed, they have no backup plan. Animals that eat only one food or live in only one place are the most at risk. If that specific food or habitat is destroyed, they cannot switch to something else. Animals that eat many foods have more options.
+Feedback: Exactly! Specialized animals that depend on only one food or one type of habitat are most at risk. If their specific food or home is destroyed, they have no backup plan. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Habitat Change increases, Food Availability increases and when Food Availability increases, Animal Population increases. The student changes one variable to see how the whole system responds.
 
 What is one way humans can help animals when their habitat is damaged?
 
@@ -934,11 +882,15 @@ D. Make the habitat change happen faster
 
 Correct Answer: B
 
-Feedback: Right! Wildlife corridors are safe paths that connect healthy habitats. They help animals move from damaged areas to places with food and shelter. Humans can help by creating wildlife corridors (safe paths to healthy areas), replanting forests, and protecting remaining habitats. These solutions help animals survive major habitat changes.
+Feedback: Right! Wildlife corridors are safe paths that connect healthy habitats. They help animals move from damaged areas to places with food and shelter. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 In the major change scenario (wildfire), both Food Availability and Animal Population dropped a lot. Why did the population drop?
 
@@ -949,25 +901,37 @@ D. Population is not connected to food
 
 Correct Answer: B
 
-Feedback: You got it! When a wildfire destroys most of the forest, food and shelter are greatly reduced. Without enough resources, many animals cannot survive, so the population drops. Animal populations depend on food and shelter. When a wildfire destroys the forest, food and shelter decrease dramatically. Fewer resources means fewer animals can survive, so the population drops.
+Feedback: You got it! When a wildfire destroys most of the forest, food and shelter are greatly reduced. Without enough resources, many animals cannot survive, so the population drops. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI LS4.4 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Habitat Change), but they can take action on internal components (Food Availability, Animal Population). They need to decide which action would be most effective based on what the model shows.
+
+What do you think a habitat is?
+
+A. A type of clothing animals wear
+B. The natural home where an animal lives, which provides food, water, and shelter
+C. A cage at the zoo
+D. A type of food animals eat
+
+Correct Answer: B
+
+Feedback: That is right! A habitat is the natural place where an animal or plant lives. It provides everything the organism needs: food, water, shelter, and space. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI LS4.4, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS4.4, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI LS4.4, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI LS4.4, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI LS4.4, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

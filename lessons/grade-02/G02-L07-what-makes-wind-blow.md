@@ -823,77 +823,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-ESS2-3.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-Can you see wind?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS2.3 + CCC2 (Cause and Effect)
 
-A. Yes, wind is blue
-B. Yes, wind looks like white lines
-C. No, but you can feel it and see what it does
-D. No, and wind does not do anything
-
-Correct Answer: C
-
-Feedback: That is right! You cannot see wind because air is invisible, but you can feel it on your skin and see what it does, like blowing leaves and waving flags. Wind is invisible because air is invisible. But we can tell wind is there by feeling it on our skin and watching what it does, like moving tree branches, blowing leaves, and making flags wave.
-
----
-
-### Question 2
-
-What is wind?
-
-A. Water falling from the sky
-B. Moving air
-C. A type of cloud
-D. Heat from the sun
-
-Correct Answer: B
-
-Feedback: Yes! Wind is simply air that is moving from one place to another. When air flows, we feel it as wind. Wind is moving air. When air flows from one place to another, we feel it as wind. A gentle flow is a breeze, and a strong flow is a gust.
-
----
-
-### Question 3
-
-What do you think makes the air start moving?
-
-A. Giant fans hidden in the sky
-B. The moon pushing the air
-C. The sun heating the ground
-D. Animals running around
-
-Correct Answer: C
-
-Feedback: Correct! The sun heats the ground, which warms the air above it. That warm air rises and cooler air rushes in to take its place, creating wind. The sun heats the ground unevenly. Some spots get hotter than others. The warm air above hot spots rises, and cooler air rushes in to fill the space. That moving air is wind.
-
----
-
-### Question 4
-
-On which day would you expect more wind?
-
-A. A hot sunny day at the beach
-B. A cool, cloudy day with even temperatures everywhere
-C. A day with no sun at all
-D. Wind is always the same every day
-
-Correct Answer: A
-
-Feedback: That is right! At the beach on a hot day, the sand heats up while the water stays cool. This temperature difference creates a breeze. Wind happens when there are temperature differences. At a hot beach, the sand gets hot while the water stays cool. This big temperature difference makes air move, creating a breeze.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Sun Heating, Air Movement, Wind Strength. Some components are external (Sun Heating) and some are internal (Air Movement, Wind Strength). The student needs to understand what each component represents and how they are organized.
 
 What causes wind?
 
@@ -904,11 +844,15 @@ D. Trees blow the air around with their branches
 
 Correct Answer: B
 
-Feedback: Yes! The sun heats the ground unevenly. Warm air rises because it is lighter, and cooler air rushes in to take its place. That rushing air is wind. Wind is caused by the sun heating the ground unevenly. The air above hot spots warms up and rises. Then cooler air from nearby rushes in to fill the empty space. That moving air is what we feel as wind.
+Feedback: Yes! The sun heats the ground unevenly. Warm air rises because it is lighter, and cooler air rushes in to take its place. That rushing air is wind. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS2.3 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Sun Heating increases, Air Movement increases; when Air Movement increases, Wind Strength increases. The student is trying to understand why these relationships are positive or negative.
 
 In our model, what is the relationship between Sun Heating and Air Movement?
 
@@ -919,11 +863,15 @@ D. The sun does not affect air movement
 
 Correct Answer: C
 
-Feedback: Correct! It is a positive relationship. More sun heating warms the ground more, which makes the air above it rise faster, causing more air movement and stronger wind. More sun heating creates a bigger temperature difference between warm and cool areas. This makes the air move more, creating stronger wind. So it is a positive relationship: more heating equals more movement.
+Feedback: Correct! It is a positive relationship. More sun heating warms the ground more, which makes the air above it rise faster, causing more air movement and stronger wind. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS2.3 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Sun Heating increases, Air Movement increases and when Air Movement increases, Wind Strength increases. The student changes one variable to see how the whole system responds.
 
 At the beach on a hot day, the sand gets very hot but the water stays cool. What happens?
 
@@ -934,11 +882,15 @@ D. The water gets as hot as the sand
 
 Correct Answer: B
 
-Feedback: That is right! The air above the hot sand rises, and cooler air from over the water rushes in to replace it. This creates a breeze that blows from the water toward the sand. Hot air rises above the warm sand. Cooler air from above the water rushes in to fill the space. This means the breeze blows FROM the cool water TOWARD the hot sand.
+Feedback: That is right! The air above the hot sand rises, and cooler air from over the water rushes in to replace it. This creates a breeze that blows from the water toward the sand. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS2.3 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Why is there very little wind on a cool, cloudy day?
 
@@ -949,25 +901,37 @@ D. Because wind only happens at night
 
 Correct Answer: B
 
-Feedback: Correct! Without strong sun heating, the ground stays cool and the temperature is more even everywhere. Without big temperature differences, there is very little air movement and weak wind. Wind needs temperature differences. On a cloudy day, the sun does not heat the ground much, so the temperature is more even everywhere. Without a big difference between warm and cool areas, there is not much air movement.
+Feedback: Correct! Without strong sun heating, the ground stays cool and the temperature is more even everywhere. Without big temperature differences, there is very little air movement and weak wind. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS2.3 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Sun Heating), but they can take action on internal components (Air Movement, Wind Strength). They need to decide which action would be most effective based on what the model shows.
+
+Can you see wind?
+
+A. Yes, wind is blue
+B. Yes, wind looks like white lines
+C. No, but you can feel it and see what it does
+D. No, and wind does not do anything
+
+Correct Answer: C
+
+Feedback: That is right! You cannot see wind because air is invisible, but you can feel it on your skin and see what it does, like blowing leaves and waving flags. If you chose A, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: C
-Question 4: A
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS2.3, CCC2)
+Question 2: C (Cognitive Level: Reason — SEP 2.1.2, DCI ESS2.3, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS2.3, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS2.3, CCC4)
+Question 5: C (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS2.3, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

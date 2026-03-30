@@ -888,77 +888,17 @@ EVALUATION RUBRIC:
 
 ### Administration Instructions
 
-These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
 
 Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-5.
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-How do you think humans got so many different dog breeds from wolves?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI MS-LS4-5 + CCC4 (Systems and System Models)
 
-A. Different dog breeds are actually different species that are unrelated to wolves
-B. Humans selected wolves with specific traits and bred them together over many generations
-C. Dogs evolved naturally into different breeds without any human involvement
-D. Scientists created dog breeds in laboratories using genetic engineering
-
-Correct Answer: B
-
-Feedback: Correct! Over at least 15,000 years, humans selected wolves with desirable traits (friendliness, herding ability, size) and bred them together, gradually creating the hundreds of breeds we have today. Not quite. All domestic dog breeds descended from wolves through selective breeding. Humans chose wolves with desired traits and bred them together over thousands of years, gradually producing the wide variety of breeds that exist today.
-
----
-
-### Question 2
-
-What does it mean to 'breed' plants or animals for specific traits?
-
-A. Choosing which organisms reproduce based on the traits they have, so offspring are more likely to have those traits
-B. Feeding organisms special food to change their physical appearance
-C. Painting or dyeing organisms to make them look different
-D. Training organisms to behave differently so their offspring learn the same behaviors
-
-Correct Answer: A
-
-Feedback: Correct! Selective breeding means choosing organisms with desired traits as parents, so those traits are more likely to be passed to the next generation through inheritance. Not quite. Breeding for specific traits means selecting organisms that already have the desired characteristics and allowing only those to reproduce. The traits are passed genetically to offspring.
-
----
-
-### Question 3
-
-What could go wrong if we only breed for one specific trait over many generations?
-
-A. Nothing can go wrong because selective breeding always produces healthier organisms
-B. The population could lose genetic variation, making it vulnerable to diseases and health problems
-C. The organisms would eventually evolve back to their original wild form
-D. Only the desired trait would change; everything else stays perfectly the same
-
-Correct Answer: B
-
-Feedback: Correct! Extreme selection for one trait reduces genetic diversity in the population. With less variation, organisms become more vulnerable to diseases, environmental changes, and inherited health problems. Not quite. When breeders focus too narrowly on one trait, they reduce the genetic diversity of the population. This makes the entire population more vulnerable to disease, genetic disorders, and environmental changes.
-
----
-
-### Question 4
-
-How is artificial selection different from natural selection?
-
-A. Artificial selection is faster and more powerful than natural selection in every way
-B. In artificial selection, humans choose which traits are favored; in natural selection, the environment determines fitness
-C. Natural selection only affects plants, while artificial selection only affects animals
-D. There is no difference. They are two names for the same process.
-
-Correct Answer: B
-
-Feedback: Correct! Both use the same mechanism (variation, selection, inheritance), but in natural selection the environment determines which traits help survival, while in artificial selection humans choose which traits to favor. Not quite. The key difference is who does the selecting. In natural selection, environmental pressures determine which organisms survive and reproduce. In artificial selection, humans choose which organisms reproduce based on traits we desire.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: Selection Pressure, Generation Time, Desired Trait Frequency, Genetic Diversity. Some components are external (Selection Pressure, Generation Time) and some are internal (Desired Trait Frequency, Genetic Diversity). The student needs to understand what each component represents and how they are organized.
 
 In the selective breeding model, selection pressure is set to maximum over many generations. The model shows desired trait frequency rising sharply. What also happens to genetic diversity?
 
@@ -969,11 +909,15 @@ D. Genetic diversity is not tracked in the model
 
 Correct Answer: C
 
-Feedback: Correct! The model reveals a critical trade-off: extreme selection increases the desired trait rapidly but dramatically reduces genetic diversity. By eliminating all individuals without the trait, the gene pool shrinks dangerously. Not quite. The model demonstrates that extreme selection pressure creates a trade-off. While the desired trait becomes very common, genetic diversity crashes because only a narrow subset of the population is allowed to reproduce.
+Feedback: Correct! The model reveals a critical trade-off: extreme selection increases the desired trait rapidly but dramatically reduces genetic diversity. By eliminating all individuals without the trait, the gene pool shrinks dangerously. If you chose A, this answer suggests something is being added to the system. Look carefully at the model — the total amount stays the same even when components change. The system is conserving matter or energy. If you chose B, look at the evidence from the model. The correct answer (C) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI MS-LS4-5 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when Selection Pressure increases, Desired Trait Frequency increases; when Generation Time increases, Desired Trait Frequency increases. The student is trying to understand why these relationships are positive or negative.
 
 English Bulldogs were selectively bred for flat faces over many generations. Today, many Bulldogs have severe breathing problems. What does this demonstrate about selective breeding?
 
@@ -984,11 +928,15 @@ D. Only natural selection can produce healthy organisms
 
 Correct Answer: B
 
-Feedback: Correct! The Bulldog example shows that selecting strongly for appearance traits can cause harmful side effects. The flat face that breeders wanted came at the cost of compressed airways that make breathing difficult. Not quite. Bulldogs demonstrate a key consequence of extreme selective breeding: the desired trait (flat face) was achieved, but it came with unintended harm (breathing difficulty). Breeding for appearance without considering health has real costs.
+Feedback: Correct! The Bulldog example shows that selecting strongly for appearance traits can cause harmful side effects. The flat face that breeders wanted came at the cost of compressed airways that make breathing difficult. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI MS-LS4-5 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when Selection Pressure increases, Desired Trait Frequency increases and when Generation Time increases, Desired Trait Frequency increases and when Selection Pressure increases, Genetic Diversity decreases. The student changes one variable to see how the whole system responds.
 
 Why might a population with high genetic diversity be healthier and more resilient than one with low genetic diversity?
 
@@ -999,11 +947,15 @@ D. High genetic diversity means all organisms are identical, which is ideal for 
 
 Correct Answer: B
 
-Feedback: Correct! Genetic diversity acts like an insurance policy. With more variation, some individuals are likely to have traits that help them survive unexpected challenges like new diseases, pests, or climate changes. Not quite. Genetic diversity is crucial for resilience. A diverse population contains more genetic variation, so when new threats appear (diseases, environmental changes), some individuals are more likely to have traits that allow them to survive.
+Feedback: Correct! Genetic diversity acts like an insurance policy. With more variation, some individuals are likely to have traits that help them survive unexpected challenges like new diseases, pests, or climate changes. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI MS-LS4-5 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 The Irish Potato Famine of the 1840s killed over one million people when a single disease destroyed the potato crop. How does the selective breeding model help explain this disaster?
 
@@ -1014,25 +966,37 @@ D. The famine was caused by weather, not by genetics or breeding
 
 Correct Answer: B
 
-Feedback: Correct! Irish farmers relied on a very small number of genetically similar potato varieties. When a blight arrived, it could destroy them all because none had genetic resistance. This is the real-world consequence of the diversity crash the model predicts. Not quite. The Potato Famine is a case study in what happens when genetic diversity is too low. Because nearly all the potatoes were genetically similar, one disease could destroy the entire crop. Greater genetic diversity would have meant some resistant varieties survived.
+Feedback: Correct! Irish farmers relied on a very small number of genetically similar potato varieties. When a blight arrived, it could destroy them all because none had genetic resistance. This is the real-world consequence of the diversity crash the model predicts. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI MS-LS4-5 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (Selection Pressure, Generation Time), but they can take action on internal components (Desired Trait Frequency, Genetic Diversity). They need to decide which action would be most effective based on what the model shows.
+
+How do you think humans got so many different dog breeds from wolves?
+
+A. Different dog breeds are actually different species that are unrelated to wolves
+B. Humans selected wolves with specific traits and bred them together over many generations
+C. Dogs evolved naturally into different breeds without any human involvement
+D. Scientists created dog breeds in laboratories using genetic engineering
+
+Correct Answer: B
+
+Feedback: Correct! Over at least 15,000 years, humans selected wolves with desirable traits (friendliness, herding ability, size) and bred them together, gradually creating the hundreds of breeds we have today. If you chose A, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: A
-Question 3: B
-Question 4: B
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI MS-LS4-5, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI MS-LS4-5, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI MS-LS4-5, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI MS-LS4-5, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI MS-LS4-5, CCC4)
 
-**Post-Assessment:**
-Question 1: C
-Question 2: B
-Question 3: B
-Question 4: B
-
----
 
 ## Resources
 

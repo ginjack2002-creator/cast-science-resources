@@ -893,86 +893,11 @@ Questions follow the California Science Test (CAST) stimulus-response format. Ea
 
 ---
 
-### Pre-Assessment Questions
-
 ### Question 1
 
-The pH scale measures acidity on a scale from 0 to 14. Ocean water has decreased from pH 8.2 to pH 8.1 since the Industrial Revolution. A student says this change is 'basically nothing.' Why is this assessment scientifically incorrect?
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI ESS3.6 + CCC4 (Systems and System Models)
 
-A. Any pH change in any system is always catastrophic
-B. The pH scale is logarithmic, so a 0.1-unit change represents approximately a 30% increase in hydrogen ion concentration
-C. The pH scale only goes from 0 to 7, so 0.1 out of 7 is significant
-D. Ocean pH should be exactly 7.0, so any deviation is a problem
-
-Correct Answer: B
-
-Feedback: Correct. Because pH is a logarithmic scale (each unit represents a 10x change), a 0.1-unit decrease represents approximately a 26-30% increase in hydrogen ion concentration. For organisms that evolved over millions of years in stable pH conditions, this rate of change is biologically significant. The pH scale is logarithmic, meaning each whole unit represents a 10-fold change in hydrogen ion concentration. A drop of 0.1 units means a roughly 30% increase in acidity. This may seem small on a linear scale, but marine organisms evolved in extremely stable pH conditions, and a 30% shift in their chemical environment causes measurable biological damage.
-
----
-
-### Question 2
-
-Approximately what percentage of human CO2 emissions does the ocean absorb?
-
-A. Less than 1%
-B. About 10%
-C. About 30%
-D. About 90%
-
-Correct Answer: C
-
-Feedback: Correct. The ocean absorbs approximately 30% of atmospheric CO2 emissions, making it a massive carbon sink. However, this absorption service comes at the cost of changing ocean chemistry through acidification. The ocean absorbs approximately 30% of the CO2 that humans emit into the atmosphere. This absorption has helped slow atmospheric warming but has fundamentally changed ocean chemistry, producing carbonic acid that lowers pH.
-
----
-
-### Question 3
-
-Coral reefs and shellfish build their structures from calcium carbonate (CaCO3). How might increased ocean acidity affect these organisms?
-
-A. Increased acidity strengthens calcium carbonate structures
-B. Acidic water dissolves calcium carbonate, threatening the structural integrity of shells and coral skeletons
-C. Ocean acidity has no effect on calcium carbonate because it is a mineral, not a living tissue
-D. Coral and shellfish can switch to building their structures from alternative materials
-
-Correct Answer: B
-
-Feedback: Correct. Calcium carbonate dissolves in acidic conditions. As ocean pH drops, the rate of dissolution increases while the organisms' ability to build new shell material decreases, creating a double threat to their structural survival. Calcium carbonate is an acid-soluble compound. In more acidic ocean water, existing shells and coral skeletons dissolve faster, while the reduced availability of carbonate ions makes it harder for organisms to build new structures. Below a critical pH threshold, dissolution exceeds construction.
-
----
-
-### Question 4
-
-A student asks: 'If CO2 is a natural part of the atmosphere, how can it be harmful to the ocean?' Which response best addresses this question?
-
-A. CO2 is not natural; it is entirely a human-created pollutant
-B. The issue is not CO2 itself but the unprecedented rate of increase; humans have raised atmospheric CO2 by 50% in 150 years, far faster than ocean chemistry can adapt
-C. CO2 is always harmful in any concentration
-D. Natural CO2 is different from human-produced CO2 at the molecular level
-
-Correct Answer: B
-
-Feedback: Correct. CO2 is natural and essential for photosynthesis. The problem is the rate: atmospheric CO2 was stable at ~280 ppm for 10,000 years before humans raised it to 420+ ppm in just 150 years. Natural CO2 cycling takes thousands of years; the ocean cannot adapt to changes this rapid. CO2 is chemically identical whether natural or human-produced. The critical issue is the unprecedented rate of increase. The ocean can absorb and process CO2 gradually over thousands of years. Human emissions have increased atmospheric CO2 by 50% in just 150 years, overwhelming the ocean's ability to adapt.
-
----
-
-### Question 5
-
-Which of the following best explains how burning gasoline in a car can affect coral reefs thousands of miles away?
-
-A. Gasoline fumes travel through the air and directly contact coral reefs
-B. CO2 from combustion enters the atmosphere, dissolves into ocean surface water globally, forms carbonic acid that lowers pH, and the acidified water dissolves coral's calcium carbonate structures
-C. Car exhaust creates acid rain that falls directly on coral reefs
-D. The vibrations from car engines travel through the Earth's crust and damage coral
-
-Correct Answer: B
-
-Feedback: Correct. This traces the complete pathway: combustion produces CO2, CO2 mixes into the global atmosphere, approximately 30% dissolves into ocean surface water, dissolved CO2 reacts with water to form carbonic acid, the acid releases hydrogen ions that lower pH, and lower pH dissolves calcium carbonate structures that corals and shellfish depend on. The pathway from car to coral is: burning gasoline produces CO2, which enters the atmosphere and mixes globally. About 30% of atmospheric CO2 dissolves into ocean surface water. When CO2 meets seawater, it forms carbonic acid, which releases hydrogen ions that lower ocean pH. This more acidic water dissolves the calcium carbonate structures of corals and shellfish.
-
----
-
-### Post-Assessment Questions
-
-### Question 1
+A student is using the ModelIt platform to study the system in this lesson. The model includes these components: CO2 Emissions, Ocean CO2 Absorption, Ocean pH, Coral Health. Some components are external (CO2 Emissions) and some are internal (Ocean CO2 Absorption, Ocean pH, Coral Health). The student needs to understand what each component represents and how they are organized.
 
 In a student's ocean acidification model, the 'Zero Emissions' scenario shows that ocean pH continues to decrease for several decades even after CO2 emissions stop completely. Which mechanism best explains this model behavior?
 
@@ -983,11 +908,15 @@ D. Marine organisms release CO2 when they die, creating a separate acidification
 
 Correct Answer: B
 
-Feedback: Correct. Even at zero emissions, the 420+ ppm of CO2 already in the atmosphere continues dissolving into ocean surface water. Additionally, the deep ocean, which contains 90% of ocean water, mixes with surface water through thermohaline circulation that takes 500-1,000 years per cycle. Full pH recovery would take tens of thousands of years. The lag effect exists because stopping emissions does not remove CO2 already in the atmosphere. The existing 420+ ppm continues to dissolve into the ocean. Furthermore, the deep ocean mixes with the surface on timescales of centuries to millennia, meaning acidification spreads throughout the entire ocean volume long after surface emissions stop.
+Feedback: Correct. Even at zero emissions, the 420+ ppm of CO2 already in the atmosphere continues dissolving into ocean surface water. Additionally, the deep ocean, which contains 90% of ocean water, mixes with surface water through thermohaline circulation that takes 500-1,000 years per cycle. Full pH recovery would take tens of thousands of years. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI ESS3.6 + CCC4 (Systems and System Models)
+
+In the computational model for this lesson, a student draws arrows between components to show relationships. The model shows that when CO2 Emissions increases, Ocean CO2 Absorption increases; when Ocean CO2 Absorption increases, Ocean pH decreases. The student is trying to understand why these relationships are positive or negative.
 
 A student traces a carbon atom from a car's gasoline tank to a dissolved acid molecule in the ocean. Which sequence correctly represents the conservation of matter through this process?
 
@@ -998,11 +927,15 @@ D. Carbon atoms change into hydrogen atoms when they enter the ocean
 
 Correct Answer: B
 
-Feedback: Correct. This sequence demonstrates conservation of mass: the carbon atom in the hydrocarbon fuel is oxidized to CO2 during combustion, the CO2 molecule dissolves into seawater intact, then reacts with water to form carbonic acid (H2CO3), which dissociates to release H+ ions. The carbon atom is conserved throughout every transformation. Atoms are conserved in all chemical reactions. The carbon atom in gasoline becomes part of CO2 during combustion, the CO2 dissolves into seawater, reacts with water to form carbonic acid (H2CO3), which then dissociates to release hydrogen ions (H+) that lower pH. The same carbon atom is present at every stage, just in different molecular arrangements.
+Feedback: Correct. This sequence demonstrates conservation of mass: the carbon atom in the hydrocarbon fuel is oxidized to CO2 during combustion, the CO2 molecule dissolves into seawater intact, then reacts with water to form carbonic acid (H2CO3), which dissociates to release H+ ions. The carbon atom is conserved throughout every transformation. If you chose A, this reflects a common misconception. Matter cannot be created or destroyed — it can only change form. The total amount of matter in the system stays the same. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 3
+
+CAST Alignment: SEP 2.1.3 (Evaluate a model's accuracy) + DCI ESS3.6 + CCC4 (Systems and System Models)
+
+A student runs a simulation of the model. The model shows that when CO2 Emissions increases, Ocean CO2 Absorption increases and when Ocean CO2 Absorption increases, Ocean pH decreases and when Ocean pH increases, Coral Health increases. The student changes one variable to see how the whole system responds.
 
 A policy advisor claims: 'The ocean is cleaning up our CO2 for free.' Using evidence from the model, which response best evaluates this statement?
 
@@ -1013,11 +946,15 @@ D. This statement is correct but incomplete; the ocean charges a small fee throu
 
 Correct Answer: B
 
-Feedback: Correct. The model demonstrates that ocean CO2 absorption is not 'free.' The payment is a fundamental change in ocean chemistry that dissolves coral reefs (supporting 25% of marine species), damages shellfish populations, and threatens food chains. The economic value of these ecosystem services is estimated in the trillions of dollars. The model clearly shows that ocean CO2 absorption has an enormous hidden cost: acidification. While the ocean has absorbed 30% of human emissions (slowing atmospheric warming), this service is destroying coral reefs that support 25% of all marine species, threatening shellfish at the base of food chains, and fundamentally altering ocean chemistry. The 'service' is anything but free.
+Feedback: Correct. The model demonstrates that ocean CO2 absorption is not 'free.' The payment is a fundamental change in ocean chemistry that dissolves coral reefs (supporting 25% of marine species), damages shellfish populations, and threatens food chains. The economic value of these ecosystem services is estimated in the trillions of dollars. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Question 4
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to explain/predict events) + DCI ESS3.6 + CCC4 (Systems and System Models)
+
+Scientists are studying data related to this system. They collected observations over time and noticed patterns in how the components change. The data shows how changes in one part of the system cascade through the other parts.
 
 Comparing the 'Current Trajectory' and 'Paris Agreement' scenarios, a student finds that the Paris scenario still shows significant pH decline, just at a slower rate. What is the most important policy implication of this finding?
 
@@ -1028,11 +965,15 @@ D. Ocean acidification is not a real concern because it happens slowly
 
 Correct Answer: B
 
-Feedback: Correct. The model shows that emission reduction changes the rate of acidification but cannot stop it in the near term because of the lag effect from existing atmospheric CO2. This means marine ecosystem protection requires both emission reduction (addressing the cause) AND near-term interventions like marine protected areas (addressing the symptoms). The model reveals that even under Paris Agreement targets, acidification continues because existing atmospheric CO2 keeps dissolving. This does not mean emission reduction is pointless; it dramatically reduces the long-term severity. But it does mean that protecting vulnerable ecosystems like coral reefs requires a dual strategy: reducing emissions AND implementing near-term protective measures.
+Feedback: Correct. The model shows that emission reduction changes the rate of acidification but cannot stop it in the near term because of the lag effect from existing atmospheric CO2. This means marine ecosystem protection requires both emission reduction (addressing the cause) AND near-term interventions like marine protected areas (addressing the symptoms). If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, the model shows these components ARE connected. When one changes, it affects the others through the relationships (positive or negative) that you mapped in the model.
 
 ---
 
 ### Question 5
+
+CAST Alignment: SEP 2.1.5 (Apply a model to make predictions) + DCI ESS3.6 + CCC4 (Systems and System Models)
+
+A team wants to use the model to solve a real-world problem related to this system. They know they cannot control the external components (CO2 Emissions), but they can take action on internal components (Ocean CO2 Absorption, Ocean pH, Coral Health). They need to decide which action would be most effective based on what the model shows.
 
 A student adds a 'Biological Buffering' component to their model, representing how healthy marine ecosystems (seagrasses, kelp forests) can partially buffer pH changes through photosynthesis. The model shows that destroying these ecosystems accelerates acidification. What systems thinking principle does this demonstrate?
 
@@ -1043,27 +984,18 @@ D. Adding components to models always produces the same results
 
 Correct Answer: B
 
-Feedback: Correct. Healthy marine vegetation absorbs CO2 during photosynthesis, providing a local buffering effect that partially counteracts acidification. Destroying these ecosystems removes this natural negative feedback, causing pH to drop faster. This demonstrates how interconnected systems can compound problems when multiple stressors act simultaneously. Marine plants act as a natural buffer by absorbing CO2 through photosynthesis, locally raising pH. When these ecosystems are destroyed (through pollution, development, or the acidification itself), the buffering capacity is lost, and pH drops faster. This shows how removing natural feedback mechanisms from a system accelerates destabilization.
+Feedback: Correct. Healthy marine vegetation absorbs CO2 during photosynthesis, providing a local buffering effect that partially counteracts acidification. Destroying these ecosystems removes this natural negative feedback, causing pH to drop faster. This demonstrates how interconnected systems can compound problems when multiple stressors act simultaneously. If you chose A, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose C, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows. If you chose D, look at the evidence from the model. The correct answer (B) is supported by the relationships between components. This answer does not match what the simulation data shows.
 
 ---
 
 ### Answer Key
 
-**Pre-Assessment:**
-Question 1: B
-Question 2: C
-Question 3: B
-Question 4: B
-Question 5: B
+Question 1: B (Cognitive Level: Identify — SEP 2.1.1, DCI ESS3.6, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI ESS3.6, CCC4)
+Question 3: B (Cognitive Level: Reason — SEP 2.1.3, DCI ESS3.6, CCC4)
+Question 4: B (Cognitive Level: Reason + Evidence — SEP 2.1.4, DCI ESS3.6, CCC4)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.5, DCI ESS3.6, CCC4)
 
-**Post-Assessment:**
-Question 1: B
-Question 2: B
-Question 3: B
-Question 4: B
-Question 5: B
-
----
 
 ## Resources
 
