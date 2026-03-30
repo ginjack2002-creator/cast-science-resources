@@ -927,6 +927,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-6, HS-ETS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+COVID-19 is believed to have originated when a virus jumped from an animal species to humans. This type of cross-species infection event is called:
+
+A. Horizontal gene transfer
+B. Zoonotic spillover
+C. Symbiotic exchange
+D. Antigenic shift
+
+Correct Answer: B
+
+Feedback: Correct. Zoonotic spillover occurs when a pathogen crosses the species barrier from an animal host to a human. Most emerging infectious diseases (HIV, Ebola, SARS, COVID-19) originated through zoonotic spillover events. Consider the term for a pathogen 'spilling over' from its animal reservoir into the human population. This is distinct from mutations that occur within an already-circulating human pathogen.
+
+---
+
+### Question 2
+
+When a completely new virus infects humans for the first time, why does it often spread rapidly through the population?
+
+A. New viruses are always more deadly than existing ones
+B. The human population has no pre-existing immunity to the novel pathogen, so virtually everyone is susceptible
+C. New viruses can only spread through water supplies
+D. Hospitals are unable to diagnose new viruses
+
+Correct Answer: B
+
+Feedback: Correct. Immune naivety means the entire human population lacks antibodies or immune memory against the new pathogen. With no pre-existing immunity, every person exposed is a potential host, enabling explosive epidemic growth that would not occur with a familiar pathogen. Think about the role of the immune system. When your body has encountered a pathogen before, immune memory enables a rapid response. What happens when nobody has ever been exposed?
+
+---
+
+### Question 3
+
+Deforestation and expansion of agriculture into wildlife habitats are considered risk factors for pandemic emergence. Which reasoning BEST explains this connection?
+
+A. Trees release antiviral compounds that protect nearby human populations
+B. Destroying wildlife habitat increases the frequency of contact between humans and wild animals that carry novel viruses
+C. Deforestation directly creates new viruses through environmental pollution
+D. Agricultural animals are immune to all wildlife viruses
+
+Correct Answer: B
+
+Feedback: Correct. As humans encroach into wildlife habitats through deforestation, farming, and urbanization, the frequency of contact between humans and wild animals (and their pathogens) increases. Each contact event is an opportunity for zoonotic spillover. Consider the spatial relationship between humans and wildlife. When forests are cleared for farms, what happens to the animals that lived there, and how does that change the frequency of human-animal interactions?
+
+---
+
+### Question 4
+
+A new respiratory virus is detected in a rural village of 200 people. Which factor would MOST increase the risk of this local outbreak becoming a global pandemic?
+
+A. The village is located at high altitude
+B. The village has a major airport or highway connection to densely populated cities
+C. The village has abundant medical supplies
+D. The virus causes visible symptoms within hours
+
+Correct Answer: B
+
+Feedback: Correct. Travel connectivity determines how quickly a local outbreak reaches other populations. A village connected to major transportation networks can seed infections in distant cities within days, far outpacing containment efforts. Think about what enables a pathogen to spread from a small, localized population to the entire world. What infrastructure connects remote locations to major population centers?
+
+---
+
+### Question 5
+
+During the early weeks of COVID-19, different countries detected and responded to the outbreak at different speeds. Based on pandemic science, which factor MOST LIKELY determined whether a country contained the outbreak or experienced widespread community transmission?
+
+A. The genetic makeup of the country's population
+B. The speed of surveillance detection and implementation of containment measures such as testing, contact tracing, and isolation
+C. The country's average temperature and humidity
+D. The number of hospitals in the country
+
+Correct Answer: B
+
+Feedback: Correct. Surveillance speed and intervention speed are the most critical determinants of outbreak trajectory. Countries that rapidly detected cases, implemented widespread testing, and isolated infected individuals (like South Korea and Taiwan) contained spread far more effectively than those with delayed responses. Consider what actions can be taken between the first infection and widespread community transmission. What capabilities determine whether that critical window of opportunity is used effectively?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A pandemic prediction model shows that reducing Surveillance Detection Speed from 28 days to 7 days decreases total predicted infections by 95%. Which systems-level principle explains why this relatively modest intervention has such a disproportionately large effect?
+
+A. Earlier detection allows containment during the exponential growth phase when case numbers are still small enough to trace and isolate
+B. Faster detection automatically cures infected patients
+C. Surveillance somehow reduces the mutation rate of the virus
+D. The 95% reduction is coincidental and does not reflect a causal relationship
+
+Correct Answer: A
+
+Feedback: Correct. During exponential growth, case counts double at regular intervals. At 7 days, there may be dozens of cases that can be individually traced and isolated. By 28 days, those dozens have become thousands or millions, making containment impossible. Early intervention operates during the period when each individual case still matters. Think about exponential growth. If cases double every 3 days, how many cases exist after 7 days versus 28 days? What does that mean for the feasibility of case-by-case containment?
+
+---
+
+### Question 2
+
+A student's model identifies a geographic region as a 'pandemic hotspot' based on four overlapping risk factors. Which combination of factors represents the MOST scientifically valid set of hotspot indicators?
+
+A. High wildlife diversity, rapid deforestation, dense human population, and limited healthcare infrastructure
+B. Cold climate, low population density, advanced hospitals, and strict border controls
+C. High altitude, oceanic climate, rural population, and abundant wildlife veterinarians
+D. Urban development, low wildlife diversity, high vaccination rates, and minimal travel
+
+Correct Answer: A
+
+Feedback: Correct. Pandemic hotspots occur where high wildlife diversity (more potential reservoir species) overlaps with rapid deforestation (increasing human-wildlife contact), dense human populations (enabling human-to-human transmission), and limited healthcare (delayed detection and response). These factors collectively maximize spillover probability and minimize containment capacity. Consider each step in the pandemic emergence pathway: spillover requires wildlife-human contact, which is increased by habitat destruction. Spread requires human density. Containment failure requires weak surveillance. Which combination captures all these risk factors?
+
+---
+
+### Question 3
+
+A model simulation shows that a virus with a Viral Mutation Rate 10x higher than average produces successful zoonotic spillover events 3x more frequently. However, only 1 in 50 spillover events leads to sustained human-to-human transmission. What does this reveal about pandemic emergence?
+
+A. Most pandemics are caused by viruses with low mutation rates
+B. Spillover events are necessary but not sufficient for pandemic emergence; the virus must also acquire mutations enabling efficient human-to-human transmission, which is a rare additional evolutionary step
+C. Mutation rate has no relationship to pandemic risk
+D. If spillover occurs 50 times, a pandemic is guaranteed
+
+Correct Answer: B
+
+Feedback: Correct. Spillover is the first barrier, but sustained human-to-human transmission requires additional adaptations (receptor binding optimization, airborne transmission capability, immune evasion). Most spillover events are evolutionary dead ends. Pandemic emergence requires crossing multiple biological barriers, each with its own probability. Think of pandemic emergence as a multi-step process, not a single event. A virus must first jump to humans (spillover) AND then evolve the ability to spread between humans. Why are most spillover events 'dead ends'?
+
+---
+
+### Question 4
+
+A student compares two intervention strategies in the pandemic model: (1) reducing Wildlife-Human Contact Rate by 50% and (2) improving Surveillance Detection Speed by 50%. The model shows Strategy 2 prevents more pandemics. Which analysis BEST explains this result?
+
+A. Reducing contact is irrelevant to pandemic prevention
+B. Contact reduction prevents spillover events but has diminishing returns because some level of human-wildlife interaction is unavoidable; surveillance improvement is effective against ALL spillover events regardless of how they occur
+C. Surveillance is always cheaper than habitat protection
+D. Contact reduction increases mutation rate, which cancels out the benefit
+
+Correct Answer: B
+
+Feedback: Correct. Reducing contact rate decreases the frequency of spillover opportunities but cannot eliminate them entirely because human-wildlife interaction is unavoidable in agriculture, conservation, and daily life. Improved surveillance operates downstream, catching and containing spillover events regardless of their source, making it a more robust intervention point. Consider where each intervention acts in the pandemic emergence pathway. Contact reduction targets the first step (spillover), but can it eliminate all risk? Surveillance improvement targets the detection step. Which intervention is effective against a broader range of scenarios?
+
+---
+
+### Question 5
+
+A pandemic prediction model shows that two scenarios with identical Zoonotic Spillover Probability produce vastly different outcomes: Scenario A results in 50 total cases while Scenario B results in 5 million cases. Which pair of variable differences MOST PLAUSIBLY explains the divergent outcomes?
+
+A. Scenario B had higher Viral Mutation Rate and lower Immune Naivety
+B. Scenario B had higher Population Density and Travel Connectivity combined with slower Surveillance Detection Speed
+C. Scenario B occurred in a warmer climate with more rainfall
+D. Scenario B involved a different animal reservoir species
+
+Correct Answer: B
+
+Feedback: Correct. Once spillover occurs, the trajectory depends on spread and detection variables. High Population Density provides more potential contacts, Travel Connectivity exports cases to other regions before containment, and slow Surveillance delays the response. Together, these variables determine whether a spillover becomes a contained cluster or a global pandemic. Both scenarios start with the same spillover probability, so the difference lies in what happens AFTER the first human infection. Which variables determine whether those initial cases are contained or amplified into millions?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

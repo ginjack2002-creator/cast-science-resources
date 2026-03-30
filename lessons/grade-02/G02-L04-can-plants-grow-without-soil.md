@@ -822,6 +822,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do you think plants need to grow?
+
+A. Only soil
+B. Only water
+C. Sunlight, water, and nutrients
+D. Just a flowerpot
+
+Correct Answer: C
+
+Feedback: That is right! Plants need sunlight, water, and nutrients to grow. They use these to make their own food and stay healthy. Plants need more than just one thing. They need sunlight for energy, water to drink, and nutrients like tiny vitamins to grow strong and healthy.
+
+---
+
+### Question 2
+
+Can a plant grow if you put it in water with no soil?
+
+A. No, plants always need soil to grow
+B. Yes, plants can grow in water if they get sunlight and nutrients
+C. Only fake plants grow in water
+D. Plants in water die right away
+
+Correct Answer: B
+
+Feedback: Yes! Plants can grow in water if they still get sunlight and nutrients. This is called hydroponics. Plants do not actually need soil itself. They need what is IN the soil: water and nutrients. If you give a plant water, nutrients, and sunlight, it can grow just fine without any soil.
+
+---
+
+### Question 3
+
+What do roots do for a plant?
+
+A. Roots make flowers bloom
+B. Roots soak up water and nutrients from the ground
+C. Roots make the plant smell nice
+D. Roots help the plant see sunlight
+
+Correct Answer: B
+
+Feedback: Correct! Roots soak up water and nutrients from the soil (or water) and send them up to the rest of the plant. Roots are the drinking straws of the plant. They soak up water and nutrients from the soil or from water and send them up through the stem to the rest of the plant.
+
+---
+
+### Question 4
+
+What does sunlight do for a plant?
+
+A. Sunlight gives the plant energy to make its own food
+B. Sunlight makes the plant cold
+C. Sunlight makes the soil taste better for the plant
+D. Sunlight does not help plants at all
+
+Correct Answer: A
+
+Feedback: That is right! Sunlight gives plants the energy they need to make their own food inside their leaves. Plants use sunlight as energy to make their own food in their leaves. Without sunlight, a plant cannot feed itself and will become pale and weak.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student grows one plant in sunlight with water and another plant in a dark closet with water. After two weeks, the dark plant is pale and droopy. What does this tell us?
+
+A. Water is not important for plants
+B. Plants need sunlight to grow healthy
+C. Dark closets have too much soil
+D. The plant in the closet had too much water
+
+Correct Answer: B
+
+Feedback: Correct! Even though both plants had water, the one without sunlight could not make food and became pale and weak. Plants NEED sunlight. Both plants had water, but only the sunny plant grew well. The dark plant became pale because it could not make food without sunlight. This proves plants need sunlight to grow healthy.
+
+---
+
+### Question 2
+
+What is hydroponics?
+
+A. Growing plants in sand
+B. Growing plants in water instead of soil
+C. Growing plants in the dark
+D. Growing plants with no water at all
+
+Correct Answer: B
+
+Feedback: Yes! Hydroponics is growing plants in water instead of soil. The water has nutrients added so the plant gets everything it needs. Hydroponics is a way of growing plants in water with added nutrients, instead of in soil. It works because plants need what is IN the soil, not the soil itself.
+
+---
+
+### Question 3
+
+In our model, what happens to Plant Growth when both Sunlight Amount and Water Availability are high?
+
+A. Plant Growth is very poor
+B. Plant Growth is strong and healthy
+C. The plant stops growing
+D. Nothing happens to the plant
+
+Correct Answer: B
+
+Feedback: That is right! When a plant gets lots of sunlight AND lots of water, it has everything it needs to grow strong and healthy. Both sunlight and water have a positive effect on plant growth. When both are high, the plant has all the energy and water it needs, so it grows tall with bright green leaves.
+
+---
+
+### Question 4
+
+Why can plants grow without soil?
+
+A. Because soil actually hurts plants
+B. Because plants only need air to survive
+C. Because plants need what is IN the soil (water and nutrients), not the soil itself
+D. Because plants do not have roots
+
+Correct Answer: C
+
+Feedback: Correct! Soil is helpful because it holds water and nutrients near the roots, but if the plant gets water and nutrients another way, it does not need soil at all. Soil holds water and nutrients near the roots, but soil itself is not what the plant eats. If you give a plant water, nutrients, and sunlight without soil, it can grow just fine.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: A
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

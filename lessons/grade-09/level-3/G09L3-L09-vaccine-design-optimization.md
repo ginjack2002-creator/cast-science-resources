@@ -940,6 +940,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-4, HS-LS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Vaccines work by training the immune system to recognize a pathogen before natural infection occurs. Which component of the immune system is MOST directly responsible for providing long-lasting protection after vaccination?
+
+A. Red blood cells, which carry oxygen to fight infection
+B. Memory B cells and memory T cells, which 'remember' the pathogen and mount a rapid response upon future exposure
+C. White blood cells that only live for a few hours
+D. Antibiotics produced by the immune system
+
+Correct Answer: B
+
+Feedback: Correct. Immunological memory is the basis of vaccination. Memory B cells can persist for decades and rapidly produce antibodies upon re-exposure, while memory T cells directly kill infected cells. This remembered response is faster and stronger than the initial response. Consider what makes vaccine protection last for months or years. Which immune cells persist long-term and 'remember' the pathogen?
+
+---
+
+### Question 2
+
+COVID-19 vaccines were developed in under a year, while most vaccines historically take 10-15 years. Which factor MOST contributed to this acceleration?
+
+A. The COVID-19 virus was simpler than other viruses
+B. mRNA vaccine technology, which had been in development for decades, allowed rapid design and manufacturing once the viral genome was sequenced
+C. Safety testing was completely skipped to save time
+D. COVID-19 vaccines were less effective than traditional vaccines but faster to produce
+
+Correct Answer: B
+
+Feedback: Correct. mRNA vaccine technology had been researched for over 20 years before COVID-19. Once the SARS-CoV-2 spike protein sequence was published, scientists could design an mRNA vaccine within days. The platform technology was ready; it just needed the target sequence. Consider what technological advances were already in place before the pandemic. The speed came not from cutting corners but from having a platform ready to be customized for a new target.
+
+---
+
+### Question 3
+
+Influenza (flu) vaccines must be redesigned every year because the virus changes. What is the term for the gradual mutation of surface proteins that allows the virus to partially evade existing immunity?
+
+A. Genetic drift (random changes in allele frequency in small populations)
+B. Antigenic drift, where small mutations accumulate in the virus's surface proteins
+C. Horizontal gene transfer between viral strains
+D. Planned obsolescence engineered by vaccine manufacturers
+
+Correct Answer: B
+
+Feedback: Correct. Antigenic drift is the gradual accumulation of mutations in surface proteins (like hemagglutinin) that changes the virus's appearance to the immune system. This is why last year's flu vaccine becomes less effective against this year's strains. Distinguish between genetic drift (random population changes) and antigenic drift (viral surface protein changes). Which one specifically describes how viral mutations erode vaccine effectiveness over time?
+
+---
+
+### Question 4
+
+An adjuvant is a substance added to vaccines to enhance the immune response. Why might a vaccine need an adjuvant rather than just the antigen alone?
+
+A. Adjuvants make the vaccine taste better
+B. Some antigens alone produce a weak immune response, and adjuvants activate innate immune cells that amplify the adaptive immune response, enabling protection with lower antigen doses
+C. Adjuvants prevent the vaccine from expiring
+D. All vaccines require adjuvants; no vaccine works without one
+
+Correct Answer: B
+
+Feedback: Correct. Adjuvants activate innate immune cells (dendritic cells, macrophages) that process and present the antigen more effectively to adaptive immune cells. This bridge between innate and adaptive immunity amplifies the response, allowing lower antigen doses to achieve protective immunity. Consider the two branches of the immune system: innate (rapid, nonspecific) and adaptive (slower, specific). How might enhancing the innate response improve the adaptive response to a vaccine antigen?
+
+---
+
+### Question 5
+
+A scientist proposes designing a 'universal' vaccine that protects against all variants of a rapidly mutating virus. What is the fundamental challenge this approach faces?
+
+A. Universal vaccines are physically impossible to manufacture
+B. Targeting highly conserved (unchanging) viral regions typically generates weaker immune responses than targeting variable regions, creating a trade-off between breadth of protection and strength of protection
+C. All viral proteins mutate at the same rate, so there are no conserved targets
+D. The immune system cannot recognize conserved viral proteins
+
+Correct Answer: B
+
+Feedback: Correct. Conserved viral regions (which would provide broad protection) are often less immunogenic or less accessible on the virus surface than the highly variable regions that current vaccines target. Designing a vaccine that generates a strong response to conserved regions is the central challenge of universal vaccine design. Consider why viruses keep some regions constant (they are essential for function) and let other regions mutate (to escape immunity). Which regions do current vaccines target, and which regions would a universal vaccine need to target? What is the trade-off?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's vaccine model shows that a strain-specific vaccine targeting the dominant viral variant produces high Antibody Production Rate initially, but Duration of Immunity drops to near zero after 12 months as the virus undergoes antigenic drift. Which design modification would MOST effectively extend Duration of Immunity?
+
+A. Increasing Adjuvant Strength to maximum to produce more antibodies against the same strain
+B. Switching Antigen Selection to target a conserved region that is shared across variants, accepting lower peak antibody levels in exchange for broader Cross-Reactivity that remains effective as the virus mutates
+C. Administering the same strain-specific vaccine more frequently
+D. Removing the adjuvant to reduce immune overstimulation
+
+Correct Answer: B
+
+Feedback: Correct. The root cause of declining immunity is antigenic drift changing the target. More antibodies against an outdated target do not solve this. Targeting a conserved region trades peak antibody levels for durability, because the conserved target changes slowly even as the rest of the virus mutates. If the problem is that the virus mutates away from the vaccine target, does producing more antibodies against that same target solve the problem? What alternative targeting strategy addresses the mutation issue directly?
+
+---
+
+### Question 2
+
+In the model, increasing Adjuvant Strength from 0 to moderate produces a large increase in Immune Cell Activation and Antibody Production Rate. Increasing from moderate to maximum produces only a small additional increase in protection but a large increase in side effects. This pattern is BEST described as:
+
+A. A linear dose-response relationship
+B. Diminishing returns, where each additional unit of adjuvant produces progressively less additional benefit while side effects continue to increase proportionally, defining an optimal adjuvant level that maximizes the benefit-to-risk ratio
+C. Evidence that adjuvants are unnecessary
+D. A measurement error in the model
+
+Correct Answer: B
+
+Feedback: Correct. Adjuvant dose-response follows a law of diminishing returns. The immune system has a finite capacity for activation, so beyond the saturation point, additional adjuvant stimulates marginal additional protection while continuing to increase inflammatory side effects. The optimal dose maximizes the ratio of benefit to adverse reactions. Graph the relationship: benefit rises steeply at low doses then plateaus, while side effects continue to increase. At what point is the gap between benefit and side effects maximized? That is the optimal dose.
+
+---
+
+### Question 3
+
+A model simulation shows that two vaccines with identical Antibody Production Rates produce very different long-term outcomes: Vaccine A provides protection for 6 months while Vaccine B provides protection for 10 years. Which component MOST LIKELY differs between them?
+
+A. Memory Cell Formation, where Vaccine B stimulates more robust differentiation of long-lived memory B cells and T cells that persist and rapidly reactivate upon pathogen re-exposure
+B. The number of total antibodies produced during the initial response
+C. The size of the injection needle used for administration
+D. The color of the vaccine formulation
+
+Correct Answer: A
+
+Feedback: Correct. Antibody levels wane over months as short-lived plasma cells die. Long-term protection depends on memory cells, which persist for years or decades. Vaccine B likely triggers more effective memory cell differentiation, enabling rapid recall responses that re-establish protective antibody levels upon future pathogen encounter. Short-term protection comes from circulating antibodies that wane over months. Long-term protection comes from something that persists much longer. What immune cell type provides this durable protection?
+
+---
+
+### Question 4
+
+A vaccine designer uses the model to evaluate Population Coverage across a genetically diverse population. The model shows that the vaccine protects 95% of individuals with one HLA type but only 40% of individuals with a different HLA type. What does this reveal about vaccine design?
+
+A. The vaccine is defective and should not be used
+B. Human genetic diversity in immune response genes (HLA) means the same antigen is presented differently to immune cells in different individuals, making it impossible to achieve equal protection across all genetic backgrounds with a single antigen design
+C. HLA type has no effect on vaccine efficacy
+D. Population coverage cannot be measured using computational models
+
+Correct Answer: B
+
+Feedback: Correct. HLA molecules determine which peptide fragments of the antigen are presented to T cells. Different HLA types present different fragments, meaning the same vaccine antigen triggers different immune responses in different people. This genetic diversity is a fundamental challenge for universal vaccine design and often requires multi-epitope vaccines. HLA genes are among the most variable in the human genome. They determine which pieces of a pathogen's protein the immune system 'sees.' If different people's immune systems see different pieces, how does this affect vaccine effectiveness across a diverse population?
+
+---
+
+### Question 5
+
+A student runs two simulations with identical vaccine designs but different Pathogen Mutation Rates. At low mutation rate, Cross-Reactivity maintains protection for 15 years. At high mutation rate, protection degrades after 2 years. Based on this analysis, which vaccine development strategy is MOST appropriate for a rapidly mutating pathogen?
+
+A. Design one perfect vaccine and administer it once
+B. A platform technology (like mRNA) that can be rapidly updated to match new variants, combined with targeting of the most conserved epitopes to extend the effective period between updates
+C. Abandon vaccination entirely for rapidly mutating pathogens
+D. Increase the dose of the original vaccine to compensate for mutations
+
+Correct Answer: B
+
+Feedback: Correct. For rapidly mutating pathogens, the strategy must combine two approaches: (1) target conserved regions to maximize the interval before updates are needed, and (2) use a platform technology that enables rapid redesign when updates become necessary. This is exactly the strategy used for COVID-19 variant-updated mRNA boosters. If the virus changes faster than any single vaccine can keep up with, what two-pronged approach combines durable design with the ability to rapidly update? Think about both the target choice and the manufacturing platform.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

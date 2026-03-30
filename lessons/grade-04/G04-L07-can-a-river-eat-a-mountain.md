@@ -864,6 +864,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Can water break apart solid rock?
+
+A. No, water is too soft to break anything hard
+B. Yes, but only if the water is boiling hot
+C. Yes, flowing water can slowly wear away even the hardest rock over time
+D. No, only earthquakes can break rocks
+
+Correct Answer: C
+
+Feedback: That is right! Even though water seems soft, flowing water can carry sand and small rocks that grind against larger rocks. Over millions of years, water can carve through mountains. Water is more powerful than it seems! Flowing water carries sand and pebbles that grind away rock like sandpaper. Given enough time, water can wear away even the hardest rock.
+
+---
+
+### Question 2
+
+What is erosion?
+
+A. When rocks get bigger over time
+B. When broken rock and soil are moved from one place to another by water, wind, or ice
+C. When animals dig holes in the ground
+D. When the Earth shakes during an earthquake
+
+Correct Answer: B
+
+Feedback: Correct! Erosion is the movement of broken rock and soil from one place to another by natural forces like water, wind, or ice. Erosion is the process of broken rock and soil being carried away from one place to another. Water, wind, and ice are the main forces that cause erosion.
+
+---
+
+### Question 3
+
+How was the Grand Canyon formed?
+
+A. People dug it with shovels a long time ago
+B. An earthquake cracked the ground open all at once
+C. A river slowly carved through the rock over millions of years
+D. A volcano blew a hole in the ground
+
+Correct Answer: C
+
+Feedback: Right! The Colorado River carved the Grand Canyon over about 5 to 6 million years. Flowing water slowly wore away layer after layer of rock. The Grand Canyon was not created by a sudden event. The Colorado River slowly carved through the rock over millions of years, cutting deeper and deeper.
+
+---
+
+### Question 4
+
+What is the difference between weathering and erosion?
+
+A. They are the same thing
+B. Weathering breaks rock apart, erosion moves the broken pieces away
+C. Weathering is caused by rain and erosion is caused by wind
+D. Weathering only happens to old rocks and erosion only happens to new rocks
+
+Correct Answer: B
+
+Feedback: Exactly! Weathering is the breaking apart of rock. Erosion is the movement of that broken material to a new location. Weathering happens first, then erosion carries the pieces away. Weathering and erosion are related but different. Weathering is the breaking down of rock into smaller pieces. Erosion is the movement of those broken pieces to a new place.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the erosion model, Water Flow Speed and Rock Hardness are external components. What is the relationship between Water Flow Speed and Erosion Rate?
+
+A. Negative: faster water causes less erosion
+B. Positive: faster water causes more erosion
+C. No relationship: water speed does not affect erosion
+D. It depends on what day of the week it is
+
+Correct Answer: B
+
+Feedback: Right! The relationship is positive. Faster water has more energy and can break apart and carry away more rock. When water flow speed goes up, erosion rate goes up. Faster water carries more energy and more force. The model shows a positive relationship: when water flow speed increases, the erosion rate also increases.
+
+---
+
+### Question 2
+
+What is the relationship between Rock Hardness and Erosion Rate?
+
+A. Positive: harder rock erodes faster
+B. Negative: harder rock erodes slower
+C. No relationship: rock hardness does not matter
+D. Positive: all rocks erode at the same speed
+
+Correct Answer: B
+
+Feedback: Correct! The relationship is negative. Harder rock is more resistant to erosion, so it erodes more slowly. When rock hardness goes up, erosion rate goes down. This is a negative relationship. Harder rock is more resistant to being broken apart. When rock hardness increases, erosion rate decreases.
+
+---
+
+### Question 3
+
+A gentle stream flows over very soft rock for millions of years. What does the model predict will happen?
+
+A. Nothing, because the stream is too gentle to cause any erosion
+B. The rock will get harder over time
+C. Even the gentle stream will eventually carve through the soft rock, creating a canyon
+D. The stream will dry up before any erosion happens
+
+Correct Answer: C
+
+Feedback: That is right! Even slow-moving water can erode soft rock over long periods of time. The model shows that soft rock plus any flowing water leads to erosion. Given millions of years, even gentle streams can carve canyons. The model shows that even slow water erodes soft rock. Given enough time, even a gentle stream can carve a significant canyon through soft rock.
+
+---
+
+### Question 4
+
+An engineer wants to protect a riverbank from erosion. Based on the model, which approach would work best?
+
+A. Make the water flow faster so it passes by quickly
+B. Slow down the water flow and add hard materials like rocks along the bank
+C. Remove all the soil from the riverbank
+D. Make the riverbank out of softer materials so the water flows smoothly
+
+Correct Answer: B
+
+Feedback: Exactly! The model shows two ways to reduce erosion: slow down the water (reduce water flow speed) and increase the hardness of the bank material. Placing rocks along the bank does both. The model shows that slower water and harder rock both reduce erosion. So slowing the water AND adding hard materials to the bank is the best engineering solution.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

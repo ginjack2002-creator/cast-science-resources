@@ -772,6 +772,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-ESS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Do all neighborhoods in a city have the same air quality?
+
+A. Yes, air moves around so it's the same everywhere
+B. No, neighborhoods near freeways and factories often have worse air quality
+C. Yes, the government makes sure air is clean everywhere
+D. No, but only because some neighborhoods have more trees
+
+Correct Answer: B
+
+Feedback: That's right! Air quality varies significantly by location. Communities near freeways, factories, and other pollution sources breathe measurably worse air. Air quality is not the same everywhere. Studies show that neighborhoods near freeways and industrial areas have much higher levels of pollution, leading to higher rates of asthma and other health problems.
+
+---
+
+### Question 2
+
+What is the main source of air pollution in most neighborhoods?
+
+A. Trees releasing pollen
+B. People breathing out CO2
+C. Vehicle exhaust from cars and trucks
+D. Wind blowing dust around
+
+Correct Answer: C
+
+Feedback: Correct! Vehicle exhaust contains harmful pollutants including carbon monoxide, nitrogen oxides, and tiny particles (PM2.5) that can damage lungs. Vehicle exhaust is the primary source of air pollution in most urban neighborhoods. Cars and trucks release exhaust containing harmful gases and tiny particles that affect air quality and health.
+
+---
+
+### Question 3
+
+Why might children living near a freeway have higher rates of asthma?
+
+A. They play outside too much
+B. They are exposed to higher concentrations of vehicle exhaust pollution
+C. They drink different water than other kids
+D. They go to different schools
+
+Correct Answer: B
+
+Feedback: That's right! Children near freeways breathe air with higher concentrations of exhaust particles and gases, which irritate their lungs and airways. Research shows that children within 500 meters of freeways have higher asthma rates because they are constantly exposed to vehicle exhaust containing harmful particulate matter that damages airways.
+
+---
+
+### Question 4
+
+On a windy day versus a calm day, which would have worse air pollution near a freeway?
+
+A. A windy day, because wind stirs up more pollution
+B. A calm day, because pollution builds up without wind to blow it away
+C. They would be the same
+D. Neither, because freeways don't cause pollution
+
+Correct Answer: B
+
+Feedback: Good thinking! Wind disperses and dilutes pollution. On calm, still days, exhaust builds up near the source, creating worse air quality for nearby communities. Wind acts as a natural air cleaner by dispersing and diluting pollution. On calm days with no wind, vehicle exhaust lingers and builds up near the freeway, making air quality much worse.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the air quality model, what happens during 'Rush Hour + Still Air' (90% traffic, 10% wind)?
+
+A. Air Pollution decreases because cars move fast
+B. Respiratory Health Impact stays low because people are indoors
+C. Air Pollution Concentration spikes and Respiratory Health Impact rises significantly
+D. Wind Speed doesn't matter because pollution disperses on its own
+
+Correct Answer: C
+
+Feedback: Correct! With maximum traffic adding pollution and minimal wind to disperse it, pollution concentration spikes. This directly increases the health impact on the community. Remember the rush hour simulation. High traffic produces lots of exhaust, and without wind to carry it away, pollution builds up. This concentrated pollution causes more respiratory health problems.
+
+---
+
+### Question 2
+
+What type of relationship does Wind Speed have with Air Pollution Concentration?
+
+A. Positive: more wind means more pollution
+B. Negative: more wind disperses and reduces pollution concentration
+C. No relationship: wind doesn't affect pollution
+D. Positive: wind blows pollution toward communities
+
+Correct Answer: B
+
+Feedback: That's right! Wind disperses and dilutes pollutants, reducing their concentration. This is a negative relationship. Wind is the community's natural defense against pollution buildup. Wind acts like nature's ventilation system. It blows pollution away and mixes it with cleaner air, reducing the concentration near the source. This is a negative (-) relationship.
+
+---
+
+### Question 3
+
+Air quality disparities near freeways are considered an environmental justice issue because:
+
+A. Everyone is equally affected by pollution
+B. Freeways were often built through communities with less political power, disproportionately affecting low-income communities and communities of color
+C. Only wealthy neighborhoods are near freeways
+D. Environmental justice only applies to water pollution
+
+Correct Answer: B
+
+Feedback: Correct! Environmental justice means the fair distribution of environmental risks. Historically, freeways were routed through communities that had less political power to resist, creating lasting health disparities. Environmental justice is about fairness. Research shows that freeways were disproportionately built through low-income neighborhoods and communities of color, meaning these communities bear an unfair burden of air pollution.
+
+---
+
+### Question 4
+
+Based on your model, which would be the MOST effective way to reduce air pollution near a freeway?
+
+A. Close windows in nearby homes
+B. Reduce vehicle traffic AND plant trees as pollution barriers
+C. Wait for windy days
+D. Move all homes farther from the freeway
+
+Correct Answer: B
+
+Feedback: Exactly! Reducing traffic addresses the source (less pollution input), and trees capture particulate matter (acting like a filter). This addresses the system at multiple points. The most effective solutions address the system at multiple points. Reducing traffic lowers pollution input, while tree barriers capture particles before they reach communities. Together they tackle both sides of the equation.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

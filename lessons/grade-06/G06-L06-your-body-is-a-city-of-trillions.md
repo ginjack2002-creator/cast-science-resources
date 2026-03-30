@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the correct order of organization in the human body, from smallest to largest?
+
+A. Organs, cells, tissues, organ systems
+B. Cells, tissues, organs, organ systems
+C. Tissues, cells, organ systems, organs
+D. Organ systems, organs, tissues, cells
+
+Correct Answer: B
+
+Feedback: Correct! The body is organized from smallest to largest: cells form tissues, tissues form organs, and organs form organ systems that work together. Not quite. The correct order from smallest to largest is: cells (the smallest unit of life), tissues (groups of similar cells), organs (groups of tissues), and organ systems (groups of organs working together).
+
+---
+
+### Question 2
+
+Why does your heart beat faster when you exercise?
+
+A. Exercise scares the heart into beating faster
+B. Your muscles need more oxygen and nutrients, so the heart pumps blood faster
+C. The heart gets warmer during exercise and naturally speeds up
+D. Exercise makes your blood thicker so the heart has to work harder
+
+Correct Answer: B
+
+Feedback: Correct! During exercise, your muscles demand more oxygen and nutrients. The heart beats faster to increase blood flow and deliver these resources to working muscles. Not quite. When you exercise, your muscles need extra oxygen and nutrients for energy. Your heart responds by beating faster to pump more blood, delivering those resources to where they are needed.
+
+---
+
+### Question 3
+
+Which body system is responsible for breaking down the food you eat?
+
+A. Circulatory system
+B. Respiratory system
+C. Digestive system
+D. Muscular system
+
+Correct Answer: C
+
+Feedback: Correct! The digestive system breaks down food into nutrients that cells can use for energy and building materials. Not quite. The digestive system is responsible for breaking down food into nutrients. The circulatory system transports those nutrients, the respiratory system handles oxygen, and the muscular system enables movement.
+
+---
+
+### Question 4
+
+Can your body systems work independently, or do they depend on each other?
+
+A. Each system works independently without needing the others
+B. Only the heart and lungs depend on each other
+C. All body systems are interconnected and depend on each other to function
+D. Systems only interact when the body is sick
+
+Correct Answer: C
+
+Feedback: Correct! All body systems are interconnected. The digestive system provides nutrients, the respiratory system provides oxygen, the circulatory system delivers both, and the muscular system depends on all three. Not quite. All body systems are deeply interconnected. No system can function alone. For example, muscles need oxygen (from lungs) and nutrients (from digestion), both delivered by the circulatory system.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the body systems model, what happens when Physical Activity is set to maximum?
+
+A. Heart Rate decreases because the body relaxes
+B. Heart Rate increases, Blood Oxygen drops, and Nutrient Intake demand rises
+C. Only the muscular system is affected; other systems stay the same
+D. Blood Oxygen increases because the lungs work faster
+
+Correct Answer: B
+
+Feedback: Correct! Maximum physical activity causes the heart to beat faster (to deliver more blood), blood oxygen to drop (muscles consume it faster), and the body demands more nutrients for energy. Not quite. During intense activity, the heart rate increases to deliver more blood, blood oxygen drops because muscles consume it faster than lungs replace it, and the body demands more nutrients. All systems are affected.
+
+---
+
+### Question 2
+
+What is homeostasis and why is it important for body function?
+
+A. The process of building new muscles during exercise
+B. The body's ability to maintain stable internal conditions despite changes in the external environment
+C. The chemical reaction that converts food into energy
+D. The way the immune system fights diseases
+
+Correct Answer: B
+
+Feedback: Correct! Homeostasis is the body's ability to keep internal conditions stable, like temperature, blood oxygen, and nutrient levels, even when the outside environment changes. All organ systems contribute. Not quite. Homeostasis is the body's ability to maintain a stable internal environment. When you exercise, get cold, or skip a meal, your body systems work together to keep conditions balanced for cell survival.
+
+---
+
+### Question 3
+
+A student skips lunch and then tries to run the 400-meter dash. Based on the body systems model, what would happen?
+
+A. Performance would be normal because the body stores enough energy
+B. Only the digestive system would be affected
+C. Performance would decline because low nutrient intake limits energy production, affecting the muscular, circulatory, and respiratory systems
+D. The student would run faster because the body is lighter without food
+
+Correct Answer: C
+
+Feedback: Correct! Without adequate nutrients, cells can't produce enough energy for intense activity. This affects muscles (less power), the heart (must compensate), and breathing (increased demand). All systems are interconnected. Not quite. When nutrient intake is low, the body can't produce enough energy for intense physical activity. This cascades through all systems: muscles weaken, the heart must work harder, and breathing increases. Body systems are interconnected.
+
+---
+
+### Question 4
+
+Which statement best supports the claim that the body is a system of interacting subsystems?
+
+A. The skeletal system provides structure for the body
+B. When the respiratory system fails to get enough oxygen, the circulatory system compensates by increasing heart rate, but muscles still decline
+C. The skin is the largest organ in the body
+D. Red blood cells carry oxygen through the bloodstream
+
+Correct Answer: B
+
+Feedback: Correct! This example shows three systems interacting: the respiratory system's failure triggers a response in the circulatory system, and the muscular system is still affected. This chain reaction proves systems are interconnected. Not quite. The best evidence for interacting subsystems shows how changes in one system cause responses in other systems. When oxygen intake drops, the heart compensates by beating faster, but muscles still decline, proving the systems are interdependent.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

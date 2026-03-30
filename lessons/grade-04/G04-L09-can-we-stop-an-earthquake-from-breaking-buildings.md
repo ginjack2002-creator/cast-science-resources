@@ -863,6 +863,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What causes an earthquake?
+
+A. Heavy trucks driving on the roads
+B. Movement of large pieces of rock deep beneath Earth's surface
+C. Strong wind blowing against the ground
+D. Too many buildings in one area
+
+Correct Answer: B
+
+Feedback: That is right! Earthquakes happen when large pieces of Earth's crust (tectonic plates) move, slide, or bump against each other deep underground, causing the ground to shake. Earthquakes are not caused by things on the surface. They happen when huge pieces of rock deep underground shift and release energy, making the ground shake.
+
+---
+
+### Question 2
+
+Can engineers stop earthquakes from happening?
+
+A. Yes, they can prevent all earthquakes
+B. Yes, but only small ones
+C. No, but they can design buildings to survive them
+D. No, and there is nothing anyone can do about earthquake damage
+
+Correct Answer: C
+
+Feedback: Correct! Engineers cannot prevent earthquakes because they are caused by natural forces deep underground. But engineers CAN design buildings and structures that survive shaking. Nobody can stop earthquakes. But engineers have found ways to design buildings that can survive even strong earthquakes by using special building techniques.
+
+---
+
+### Question 3
+
+What is a natural hazard?
+
+A. Any danger caused by people
+B. A natural event like an earthquake, flood, or hurricane that can harm people
+C. A hazard sign posted in a park
+D. A dangerous animal in the wild
+
+Correct Answer: B
+
+Feedback: Right! A natural hazard is a natural event, like an earthquake, flood, volcano eruption, or hurricane, that has the potential to harm people and property. A natural hazard is a natural event, not a human-caused danger. Earthquakes, floods, and hurricanes are examples of natural hazards that can harm people and property.
+
+---
+
+### Question 4
+
+Why do some buildings fall down during earthquakes while others stay standing?
+
+A. The fallen buildings were older and the standing ones were newer
+B. It depends on luck and nothing else
+C. The standing buildings were designed with special features to handle shaking
+D. The earthquake only shook certain blocks and skipped others
+
+Correct Answer: C
+
+Feedback: Exactly! Buildings that survive earthquakes are usually designed with special engineering features like flexibility, strong foundations, and cross-bracing that help them absorb and withstand shaking. Building design makes a big difference. Buildings with special engineering features, like flexible frames and strong foundations, are much more likely to survive earthquake shaking.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the earthquake model, what is the relationship between Earthquake Strength and Damage Level?
+
+A. Negative: stronger earthquakes cause less damage
+B. Positive: stronger earthquakes cause more damage
+C. No relationship: earthquake strength does not affect damage
+D. The relationship changes every time
+
+Correct Answer: B
+
+Feedback: Right! The relationship is positive. As earthquake strength increases, damage level also increases. Stronger shaking causes more destruction. Stronger earthquakes release more energy and cause more shaking. The model shows a positive relationship: more earthquake strength means more damage.
+
+---
+
+### Question 2
+
+What is the relationship between Building Flexibility and Damage Level?
+
+A. Positive: more flexible buildings have more damage
+B. Negative: more flexible buildings have less damage
+C. No relationship: flexibility does not matter
+D. Flexible buildings always collapse
+
+Correct Answer: B
+
+Feedback: Correct! The relationship is negative. When building flexibility increases, damage decreases. Flexible buildings sway WITH the earthquake instead of fighting against it. More flexibility means less damage. Flexible buildings bend and sway with the shaking instead of cracking. This is a negative relationship: flexibility goes up, damage goes down.
+
+---
+
+### Question 3
+
+Two buildings face the same strong earthquake. Building A is stiff and rigid. Building B is flexible with base isolation pads. Which building will likely have LESS damage, and why?
+
+A. Building A, because stiff buildings are stronger than flexible ones
+B. Building B, because it can sway with the earthquake and the base pads absorb shaking energy
+C. Both will have the same damage because the earthquake was the same strength
+D. Building A, because base isolation pads make buildings weaker
+
+Correct Answer: B
+
+Feedback: Exactly! Building B will have less damage. Flexible buildings sway with the earthquake, and base isolation pads absorb shaking energy. The model shows that flexibility reduces damage even in strong earthquakes. The model shows that stiff buildings crack because they fight against the shaking. Flexible buildings with base isolators absorb the energy and experience less damage.
+
+---
+
+### Question 4
+
+An engineer is asked to design a new school in earthquake country. Based on the model, what is the MOST important design feature to include?
+
+A. Very thick, rigid concrete walls that resist all movement
+B. Flexibility features like cross-bracing and a strong but bendable frame
+C. Extra heavy materials to keep the building from shaking
+D. Windows that open during earthquakes to let the shaking out
+
+Correct Answer: B
+
+Feedback: Right! The model clearly shows that flexibility reduces damage. Cross-bracing, flexible frames, and base isolation help buildings absorb earthquake energy instead of cracking. The model shows that stiff, rigid buildings suffer more damage. The best design includes flexibility features like cross-bracing and bendable frames that absorb earthquake energy.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

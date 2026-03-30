@@ -908,6 +908,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS4-1, HS-ETS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+LiDAR generates a 3D point cloud of the vehicle's surroundings. What physical principle does LiDAR use to measure distance to objects?
+
+A. It measures the color of reflected light to estimate distance
+B. It emits laser pulses and measures the time each pulse takes to bounce back from objects, using the speed of light to calculate distance
+C. It uses sound waves like sonar to detect nearby objects
+D. It detects the magnetic field of metallic objects in the environment
+
+Correct Answer: B
+
+Feedback: Correct. LiDAR is based on time-of-flight measurement: a laser pulse is emitted, bounces off an object, and returns. Since light travels at a known constant speed, the round-trip time directly determines the distance. LiDAR uses time-of-flight: it emits laser pulses and measures the time for each pulse to return. Since the speed of light is known, the round-trip time yields precise distance. This creates a detailed 3D point cloud of the environment.
+
+---
+
+### Question 2
+
+Why do autonomous vehicles use sensor fusion rather than relying on a single sensor type?
+
+A. Using multiple sensors is required by government regulations
+B. Each sensor type has different strengths and weaknesses: LiDAR provides precise 3D mapping but no color, cameras provide color and texture but poor depth, and radar works in bad weather but has low resolution. Combining them creates a more complete and reliable environmental model
+C. Multiple sensors are cheaper than a single high-quality sensor
+D. Sensor fusion eliminates all processing latency
+
+Correct Answer: B
+
+Feedback: Correct. No single sensor is sufficient for all conditions. Sensor fusion exploits each sensor's strengths while compensating for its weaknesses, creating a unified model that is more accurate and reliable than any individual sensor. Sensor fusion addresses the limitations of individual sensors. LiDAR excels at 3D mapping but fails in heavy rain; cameras detect color and signs but struggle in darkness; radar penetrates weather but has low resolution. Combining them creates redundancy and reliability.
+
+---
+
+### Question 3
+
+At 65 mph, a vehicle travels approximately 100 feet per second. If the perception-to-action pipeline takes 300 milliseconds, what is the practical safety implication?
+
+A. The delay is too short to matter at any speed
+B. The vehicle travels approximately 30 feet before it can respond to newly detected information, creating a fundamental gap between sensing reality and acting on it that grows with speed
+C. The vehicle automatically stops during the processing time
+D. The 300 milliseconds only applies to the braking system, not steering
+
+Correct Answer: B
+
+Feedback: Correct. At 100 feet/second, 300ms of processing means the car moves 30 feet 'blind' to new information. This latency gap is a fundamental safety constraint that must be compensated for through predictive algorithms and conservative speed management. Processing latency creates a distance gap: at 65 mph (100 ft/s), 300ms means the car travels 30 feet before it can respond to new sensor data. This gap grows with speed and represents a fundamental challenge for autonomous vehicle safety design.
+
+---
+
+### Question 4
+
+Object classification in autonomous vehicles must distinguish between a pedestrian and a mailbox, or a bicycle and a motorcycle. Why is this task particularly challenging for machine learning systems?
+
+A. All objects look identical to LiDAR sensors
+B. The system must correctly classify objects it may have never seen before in training data, handle partial occlusion, unusual angles, and novel combinations of conditions, all within milliseconds at highway speeds
+C. Classification only needs to distinguish between two categories: obstacles and non-obstacles
+D. Machine learning systems always classify objects with 100% accuracy
+
+Correct Answer: B
+
+Feedback: Correct. Real-world driving presents an open-ended set of objects, conditions, and scenarios that no training dataset can fully cover. The system must handle novel situations, partial views, and edge cases at extreme speed, making perfect classification fundamentally impossible. Classification in driving is an open-world problem: the system encounters objects, conditions, and combinations not in its training data. A child in an unusual costume, a fallen tree, or a wheelchair user may not match any learned category. This uncertainty, combined with time pressure, is the core challenge.
+
+---
+
+### Question 5
+
+Rain, fog, and sun glare all degrade autonomous vehicle sensor performance. Which sensor is most affected by heavy rain, and why?
+
+A. Radar, because water absorbs radio waves
+B. LiDAR, because water droplets scatter the laser beams and create false returns that corrupt the point cloud data
+C. GPS, because rain clouds block satellite signals
+D. Cameras, because raindrops on the lens block all visual input permanently
+
+Correct Answer: B
+
+Feedback: Correct. LiDAR laser beams are scattered by water droplets in heavy rain, creating false distance measurements (noise) in the point cloud. This degrades the 3D map quality and can cause missed or phantom object detections. Heavy rain scatters LiDAR laser pulses, creating false returns from water droplets that appear as noise in the point cloud. This corrupts the 3D environmental model. Radar, by contrast, is relatively unaffected by rain because radio waves pass through water droplets.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that increasing LiDAR resolution from 100 to 400 points per square meter improves object detection by 25% but increases processing latency from 150ms to 350ms. At 65 mph, what is the safety implication of this trade-off?
+
+A. Higher resolution is always safer because detection is more accurate
+B. The improved detection is offset by increased latency: the vehicle now travels 35 feet instead of 15 feet before responding, meaning the system detects objects better but reacts to them slower, potentially creating a net decrease in safety at highway speeds
+C. Processing latency has no effect on safety if detection accuracy is high
+D. The vehicle should switch to camera-only mode at high speeds
+
+Correct Answer: B
+
+Feedback: Correct. Better detection is meaningless if the response comes too late. The 200ms increase in latency adds 20 feet of travel before response. Optimal system design must balance detection quality against response time for the given speed envelope. Detection accuracy and response speed are coupled safety factors. The additional 200ms latency means the vehicle travels an extra 20 feet before reacting. At highway speeds, the faster but less detailed system may actually be safer because it responds sooner.
+
+---
+
+### Question 2
+
+The model demonstrates that sensor fusion confidence drops sharply when LiDAR and camera disagree about an object's classification. A LiDAR return suggests a large solid object, but the camera classifies it as a plastic bag. How should the decision algorithm handle this conflict?
+
+A. Always trust the camera because it provides richer visual information
+B. The system should apply a conservative safety hierarchy: treat the object as the more dangerous interpretation (solid obstacle) until additional sensor data or time resolves the conflict, because the cost of hitting a solid object far exceeds the cost of briefly avoiding a plastic bag
+C. Average the two sensor readings to create a compromise classification
+D. Ignore both sensors and maintain current speed and direction
+
+Correct Answer: B
+
+Feedback: Correct. Asymmetric risk demands conservative decision-making. Misclassifying a solid object as a bag could be fatal, while briefly treating a bag as a solid object merely causes a momentary slowdown. The cost of being wrong differs dramatically between the two errors. When sensors disagree, the system must consider the asymmetric consequences of each possible error. Treating a bag as a rock causes a brief inconvenience; treating a rock as a bag could cause a fatal collision. Conservative classification, defaulting to the more dangerous interpretation, is the safety-rational approach.
+
+---
+
+### Question 3
+
+A student observes that the model's decision algorithm performs well in scenarios represented in its training data but fails unpredictably in novel situations (e.g., a fallen tree across the road). What fundamental limitation of machine-learning-based decision systems does this reveal?
+
+A. The algorithm needs more processing power to handle novel scenarios
+B. Machine learning systems can only reliably handle situations similar to their training data; truly novel scenarios that fall outside the training distribution expose the system's inability to reason from first principles, unlike human drivers who can improvise
+C. All novel scenarios can be solved by adding more training data
+D. The algorithm should ignore novel scenarios and continue driving normally
+
+Correct Answer: B
+
+Feedback: Correct. This is the 'long tail' problem in autonomous driving. ML systems excel at pattern matching within their training distribution but cannot reason about genuinely novel situations. This limitation is why fully autonomous driving in all conditions remains unsolved. The fundamental issue is distribution shift: ML systems perform well within their training distribution but degrade unpredictably on novel inputs. Human drivers can reason about unfamiliar situations using general knowledge, but current AI systems lack this ability, creating the 'long tail' of rare but critical edge cases.
+
+---
+
+### Question 4
+
+The model shows that Environmental Degradation (heavy rain) reduces LiDAR range by 40%, camera detection by 60%, but radar by only 5%. What does this demonstrate about the critical role of sensor diversity in the system?
+
+A. The vehicle should only use radar and eliminate LiDAR and cameras
+B. Sensor diversity provides graceful degradation: when weather impairs optical sensors, radar maintains environmental awareness, preventing complete perception failure. No single sensor type is optimal in all conditions, making diversity a safety requirement rather than a luxury
+C. Heavy rain makes autonomous driving completely impossible regardless of sensors
+D. The degradation percentages are too small to affect driving safety
+
+Correct Answer: B
+
+Feedback: Correct. The asymmetric impact of rain across sensor types demonstrates why diversity is essential. Radar's weather resilience compensates for optical sensor degradation, maintaining minimum perception capability. Eliminating any sensor type would create conditions where the system is blind. Sensor diversity provides resilience through complementary failure modes. Rain severely degrades optical sensors but barely affects radar. Without sensor diversity, a single weather condition could eliminate all perception. The system degrades gracefully rather than catastrophically.
+
+---
+
+### Question 5
+
+Based on the autonomous vehicle model, which conclusion about the relationship between safety margin and processing latency is best supported by the simulation data?
+
+A. Safety margin is independent of processing latency at all speeds
+B. Safety margin decreases proportionally with both increasing speed and increasing processing latency, because the distance traveled during processing time is the product of speed and latency. This means safety-critical decisions are fundamentally constrained by computation speed, and faster algorithms directly translate to safer vehicles
+C. Safety margin only depends on the driver's reaction time, not the computer's processing time
+D. Reducing speed to zero is the only way to ensure an adequate safety margin
+
+Correct Answer: B
+
+Feedback: Correct. The blind distance (speed x latency) directly determines the minimum safety margin. This mathematical relationship means that improving processing speed has a direct, quantifiable safety benefit that increases with vehicle speed. Safety margin = available stopping distance minus blind distance (speed x latency). As speed or latency increases, the blind distance grows and the safety margin shrinks. Faster processing directly and proportionally improves safety at any given speed.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

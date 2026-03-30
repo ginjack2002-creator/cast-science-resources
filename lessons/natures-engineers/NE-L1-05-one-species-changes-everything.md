@@ -160,6 +160,156 @@ Conservation Biologists protect endangered species and restore damaged ecosystem
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS2-4, HS-LS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Are all species in an ecosystem equally important?
+
+A. Yes, every species has exactly the same importance
+B. No, some species have a bigger impact on the ecosystem than others
+C. Only the biggest animals are important
+D. Only plants are important in an ecosystem
+
+Correct Answer: B
+
+Feedback: Correct! While all species play a role, some species have an outsized impact on their ecosystem. These are called keystone species. Not all species have the same impact. Some species, called keystone species, have a much bigger effect on their ecosystem than others. Removing them can change the entire system.
+
+---
+
+### Question 2
+
+What do you think happens to other animals when a beaver pond dries up?
+
+A. Nothing changes for the other animals
+B. Other animals benefit from the dry land
+C. Many animals lose their habitat and food sources
+D. New animals immediately take their place
+
+Correct Answer: C
+
+Feedback: Yes! When a beaver pond dries up, the fish, frogs, birds, and other animals that depended on that pond lose their habitat and food sources. When a beaver pond dries up, many animals are affected. Fish cannot survive without water, frogs lose their breeding ground, and birds lose food sources. The pond was habitat for many species.
+
+---
+
+### Question 3
+
+What is biodiversity?
+
+A. The total number of animals in the world
+B. The variety of different species living in an ecosystem
+C. How big an ecosystem is
+D. The color of plants in an area
+
+Correct Answer: B
+
+Feedback: Correct! Biodiversity is the variety of different species living in an ecosystem. More biodiversity generally means a healthier system. Biodiversity refers to the variety of different species living in an ecosystem. An area with many different types of plants, animals, and insects has high biodiversity. Higher biodiversity usually means a healthier ecosystem.
+
+---
+
+### Question 4
+
+What is a feedback loop?
+
+A. When something is fed back to animals in a zoo
+B. When the output of a system circles back and affects its own input
+C. When you leave feedback on a website
+D. When a loop of rope is used in an experiment
+
+Correct Answer: B
+
+Feedback: Yes! A feedback loop happens when the output of a system circles back and affects the input, creating a cycle that can amplify or reduce changes. A feedback loop is when the result (output) of a system circles back and affects what goes into the system (input). This creates a cycle. For example, more species improve habitat quality, which then supports even more species.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is a keystone species?
+
+A. The largest animal in an ecosystem
+B. A species that has an outsized impact on its ecosystem, and removing it changes everything
+C. A species that lives in rocky habitats
+D. The most common species in an area
+
+Correct Answer: B
+
+Feedback: Correct! A keystone species has an outsized impact on its ecosystem. Like a keystone in an arch, removing it causes the whole structure to change or collapse. A keystone species is one that has a much bigger impact on its ecosystem than its numbers would suggest. Removing a keystone species triggers a cascade of changes throughout the entire ecosystem.
+
+---
+
+### Question 2
+
+What did the model show when the keystone species population was set to zero?
+
+A. Only the keystone species was affected
+B. Habitat quality, food availability, and biodiversity all declined in a cascade
+C. The ecosystem immediately recovered on its own
+D. Other species became keystone species instead
+
+Correct Answer: B
+
+Feedback: Yes! The model showed a cascade effect: removing the keystone species caused habitat quality to drop, then food availability dropped, and then biodiversity crashed. The model demonstrated a cascade effect. When the keystone species was removed, habitat quality declined, which caused food availability to drop, which then led to a decline in the number of other species. One change triggered a chain of decline.
+
+---
+
+### Question 3
+
+What type of feedback loop did the model reveal between biodiversity and habitat quality?
+
+A. A negative feedback loop where they cancel each other out
+B. A reinforcing feedback loop where more species improve habitat, which supports even more species
+C. No feedback loop exists between them
+D. A loop that only works in one direction
+
+Correct Answer: B
+
+Feedback: Correct! The model showed a reinforcing feedback loop: more species improve habitat quality, and better habitat supports even more species, creating a cycle of growth. The model revealed a reinforcing (positive) feedback loop. More species improve habitat quality by contributing to soil health, water filtering, and vegetation growth. Better habitat then supports even more species. This cycle amplifies recovery.
+
+---
+
+### Question 4
+
+According to the model, what happens when keystone species are brought back after being removed?
+
+A. The ecosystem recovers instantly
+B. The ecosystem never recovers
+C. Recovery takes time because the ecosystem must rebuild step by step
+D. Only the keystone species benefits, not other species
+
+Correct Answer: C
+
+Feedback: That is right! The model showed that recovery takes time. The ecosystem must rebuild gradually because each step in the cascade depends on the one before it. The model showed that ecosystems do not bounce back instantly. Recovery takes time because each part of the cascade (habitat, food, biodiversity) must rebuild in sequence. The reinforcing feedback loop eventually accelerates recovery, but it starts slowly.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

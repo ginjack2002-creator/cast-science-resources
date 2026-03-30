@@ -917,6 +917,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-4, HS-ESS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is permafrost?
+
+A. Ice that covers the Arctic Ocean during winter months
+B. Ground that has remained at or below 0 degrees Celsius continuously for at least two years
+C. Glaciers that never melt, even in summer
+D. Frozen precipitation that accumulates on mountain peaks
+
+Correct Answer: B
+
+Feedback: Correct. Permafrost is soil, rock, or sediment that has stayed frozen (at or below 0 degrees C) continuously for at least two consecutive years. Permafrost refers to ground (soil, rock, sediment) that remains frozen continuously for at least two years. It is found primarily in Arctic and sub-Arctic regions and can extend hundreds of meters deep.
+
+---
+
+### Question 2
+
+Approximately how much carbon is stored in Arctic permafrost compared to the current atmosphere?
+
+A. About 10% as much as the atmosphere
+B. About the same amount as the atmosphere
+C. About twice as much as the atmosphere
+D. About ten times as much as the atmosphere
+
+Correct Answer: C
+
+Feedback: Correct. Arctic permafrost contains approximately 1,500 billion tons of carbon, roughly twice the amount currently in the entire atmosphere. Permafrost stores approximately 1,500 billion tons of organic carbon accumulated over thousands of years. This is roughly double the carbon currently in the atmosphere (~880 billion tons).
+
+---
+
+### Question 3
+
+In climate science, what does a 'positive feedback loop' mean?
+
+A. A beneficial process that improves environmental conditions
+B. A self-reinforcing cycle where an initial change triggers processes that amplify that change further
+C. A process that stabilizes temperature by counteracting warming
+D. An accurate climate model prediction that proves correct
+
+Correct Answer: B
+
+Feedback: Correct. In systems science, 'positive' means self-reinforcing, not 'good.' A positive feedback amplifies the initial change. In systems science, 'positive feedback' means self-reinforcing: an initial change triggers responses that amplify the original change further. This does not mean beneficial; it means the effect keeps growing.
+
+---
+
+### Question 4
+
+Why is the Arctic warming faster than the global average?
+
+A. The Arctic receives more direct sunlight than other regions
+B. Arctic amplification occurs because melting ice exposes darker surfaces that absorb more heat, reinforcing further warming
+C. Most greenhouse gas emissions are produced in Arctic countries
+D. The Arctic's thin atmosphere traps heat more efficiently
+
+Correct Answer: B
+
+Feedback: Correct. Arctic amplification is driven largely by the ice-albedo feedback: as reflective ice melts, darker ocean and land surfaces absorb more solar energy, accelerating warming. Arctic amplification occurs because the loss of reflective ice and snow exposes darker surfaces (ocean, land) that absorb more solar energy instead of reflecting it, creating a feedback loop that accelerates regional warming.
+
+---
+
+### Question 5
+
+When organic matter in permafrost thaws, what gases are released and why?
+
+A. Oxygen is released because frozen plants resume photosynthesis
+B. Nitrogen is released because permafrost is primarily composed of frozen air
+C. CO2 and methane are released because soil microbes decompose the thawed organic matter
+D. Water vapor is the only gas released as ice melts
+
+Correct Answer: C
+
+Feedback: Correct. When permafrost thaws, soil microbes become active and decompose the previously frozen organic material, producing CO2 in dry conditions and methane in waterlogged conditions. Thawed permafrost exposes ancient organic matter to microbial decomposition. In dry conditions, microbes produce CO2; in wet, oxygen-poor conditions, they produce methane, which is about 80 times more potent as a greenhouse gas over 20 years.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that at +4 degrees C Arctic warming, Carbon Release Rate accelerates nonlinearly due to thermokarst formation. Which systems-level explanation best accounts for this nonlinear acceleration?
+
+A. Higher temperatures make microbes less efficient at decomposing organic matter
+B. Thermokarst collapse exposes massive volumes of permafrost to warm lake water and air simultaneously, creating localized carbon release hotspots that accelerate thaw far beyond what gradual surface warming alone would produce
+C. At +4 degrees C, all permafrost has already thawed, so carbon release stops
+D. Wind patterns shift at higher temperatures, cooling the Arctic surface
+
+Correct Answer: B
+
+Feedback: Correct. Thermokarst is a threshold process: once ice-rich permafrost begins collapsing, it exposes far more frozen carbon to thawing conditions than gradual surface warming, creating a nonlinear acceleration. Thermokarst formation creates a step-change in thaw dynamics. Ground collapse forms lakes and sinkholes that expose permafrost to warm water on multiple surfaces simultaneously, dramatically accelerating carbon release beyond the rate predicted by surface warming alone.
+
+---
+
+### Question 2
+
+A student argues that permafrost carbon feedback is not concerning because 'we can just stop emitting fossil fuels.' Which model finding most directly challenges this reasoning?
+
+A. Fossil fuel emissions are too difficult to reduce for political reasons
+B. Once permafrost thaw becomes self-sustaining, carbon release continues regardless of human emission decisions because the feedback loop operates independently of anthropogenic sources
+C. Permafrost carbon is a different type of carbon than fossil fuel carbon
+D. Stopping fossil fuel emissions would cause immediate global cooling
+
+Correct Answer: B
+
+Feedback: Correct. This is the critical distinction: unlike fossil fuel emissions, which humans can choose to stop, permafrost carbon feedback is a natural process that becomes self-sustaining once tipping points are crossed. The model reveals that permafrost carbon feedback is fundamentally different from fossil fuel emissions because it is a natural, self-reinforcing process. Once thaw releases enough greenhouse gas to sustain further warming and thaw, it continues regardless of human policy.
+
+---
+
+### Question 3
+
+The model includes both CO2 and methane release from permafrost. Why is the methane pathway particularly concerning even though methane concentrations are much lower than CO2?
+
+A. Methane is approximately 80 times more potent as a greenhouse gas than CO2 over a 20-year period, meaning small releases have outsized warming effects
+B. Methane destroys the ozone layer, which is a more urgent problem than warming
+C. Methane is only released in dry conditions, which are becoming more common
+D. Methane release from permafrost has already exceeded fossil fuel methane emissions
+
+Correct Answer: A
+
+Feedback: Correct. Methane's global warming potential is approximately 80x that of CO2 over 20 years, so even relatively small methane releases from waterlogged permafrost have significant warming impacts. Methane has a global warming potential roughly 80 times greater than CO2 over a 20-year timeframe. This means methane released from waterlogged thawing permafrost has an outsized impact on warming, even at much lower concentrations.
+
+---
+
+### Question 4
+
+Comparing the +2 degrees C and +6 degrees C Arctic scenarios, the model shows that permafrost carbon release at +2 degrees C adds modest warming, while at +6 degrees C the feedback loop appears to become self-sustaining. What is the most important implication for climate policy?
+
+A. Climate policy is irrelevant because warming has already passed the tipping point
+B. Emission reductions must be aggressive enough to keep Arctic warming below the threshold where the permafrost feedback becomes self-reinforcing, because beyond that point, additional warming occurs regardless of human action
+C. All climate policy should focus exclusively on the Arctic region
+D. The difference between +2 and +6 degrees C is too small to matter
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that there is a critical threshold between manageable and self-sustaining permafrost feedback, making it imperative to reduce emissions fast enough to stay below that threshold. The model identifies a critical threshold between +2 and +6 degrees C Arctic warming where permafrost feedback transitions from manageable to self-sustaining. Policy must target staying below this threshold, because beyond it, the carbon release cannot be stopped by human action.
+
+---
+
+### Question 5
+
+Most current climate models have historically underestimated permafrost carbon feedback. What does this suggest about the adequacy of current global emission reduction targets?
+
+A. Current targets are likely sufficient because models are always conservative
+B. Current targets may need to be more aggressive to account for the additional warming from permafrost carbon release that was not fully included in the models used to set those targets
+C. Emission targets should remain unchanged because permafrost is a minor carbon source
+D. Model underestimation means permafrost feedback is actually less severe than reported
+
+Correct Answer: B
+
+Feedback: Correct. If the models used to determine emission targets underestimated permafrost feedback, then those targets allow more warming than intended and may need to be tightened. If the climate models that informed emission reduction targets did not fully account for permafrost carbon feedback, the actual warming produced by those targets will exceed projections. This means targets may need to be more aggressive to achieve the same temperature goals.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -722,6 +722,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-PS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What makes a toy car start moving?
+
+A. It moves by itself
+B. Someone pushes or pulls it
+C. It wants to move
+
+Correct Answer: B
+
+Feedback: Yes! A toy car moves when someone pushes or pulls it. It cannot move by itself. A toy car cannot move by itself. It needs someone to push it or pull it to make it go.
+
+---
+
+### Question 2
+
+When you push a door, what happens?
+
+A. The door moves away from you
+B. The door comes toward you
+C. The door does not move
+
+Correct Answer: A
+
+Feedback: Yes! A push moves things away from you. When you push a door, it moves away. When you push a door, it moves away from you. A push sends things in the direction you are pushing.
+
+---
+
+### Question 3
+
+What is a pull?
+
+A. When something moves away from you
+B. When something comes closer to you
+C. When something stays still
+
+Correct Answer: B
+
+Feedback: That is right! A pull brings something closer to you, like pulling a wagon toward you. A pull is when you bring something closer to you. When you pull a wagon, it comes toward you.
+
+---
+
+### Question 4
+
+If you push a ball harder, what do you think happens?
+
+A. It stops right away
+B. It goes the same distance
+C. It goes farther
+
+Correct Answer: C
+
+Feedback: Good thinking! A harder push makes a ball go farther across the floor. When you push a ball harder, it goes farther. A bigger push gives the ball more energy to keep rolling.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is a force?
+
+A. A color
+B. A push or a pull
+C. A kind of sound
+
+Correct Answer: B
+
+Feedback: Yes! A force is a push or a pull. Forces make things move, stop, or change direction. A force is a push or a pull. Pushes and pulls are forces that make things move.
+
+---
+
+### Question 2
+
+When Push Strength goes UP, what happens to Distance Traveled?
+
+A. It goes up too
+B. It goes down
+C. It stays the same
+
+Correct Answer: A
+
+Feedback: That is right! When you push harder, the car goes farther. That is a positive connection. When Push Strength goes up, Distance Traveled goes up too. A harder push makes the car roll farther.
+
+---
+
+### Question 3
+
+Why did the car go farther with a big push?
+
+A. The car got lighter
+B. The strong force gave it more energy
+C. The floor got smoother
+
+Correct Answer: B
+
+Feedback: Yes! A strong push gives the car more energy, so it rolls farther before stopping. A big push gives the car more energy to keep rolling. More force means more energy, so the car travels farther.
+
+---
+
+### Question 4
+
+Push Strength is which part of our model?
+
+A. The inside part
+B. The outside part
+C. It is not in our model
+
+Correct Answer: B
+
+Feedback: Yes! Push Strength is the outside part because WE decide how hard to push. Push Strength is the outside part of our model. We choose how hard to push, so it goes on the outside.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

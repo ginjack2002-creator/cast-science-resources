@@ -974,6 +974,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Cities cover approximately 3% of Earth's land surface but consume 75% of global energy and produce 70% of carbon emissions. Which factor most directly explains this disproportionate resource consumption?
+
+A. Cities have worse weather than rural areas, requiring more heating and cooling energy
+B. High population density concentrates transportation, building, industrial, and infrastructure energy demands into a small area, amplified by urban heat island effects that increase cooling needs
+C. Rural areas produce no carbon emissions because they use only renewable energy
+D. City residents are individually more wasteful than rural residents in their daily habits
+
+Correct Answer: B
+
+Feedback: Correct. Cities concentrate millions of people, their transportation systems, buildings, industries, and infrastructure into dense areas. This concentration intensifies energy demand per unit area. The urban heat island effect further increases cooling energy needs by 1-3 degrees C above surrounding areas. The issue is systemic urban design, not individual behavior. The explanation is systemic, not behavioral. Cities concentrate transportation, building operations, industry, and infrastructure into dense areas. Urban heat island effects (cities are 1-3 degrees C warmer than surroundings) further amplify cooling energy demand. Individual behavior matters less than the system design.
+
+---
+
+### Question 2
+
+Transit-oriented development (TOD) is an urban planning strategy that concentrates housing and services within walking distance of transit stations. Why is this considered more effective than simply adding more bus routes to an existing car-dependent city?
+
+A. TOD makes public transit the most convenient option by design, reducing car dependency through land use rather than just adding transit service to a car-oriented landscape
+B. TOD is cheaper because it requires building fewer roads
+C. Bus routes always fail because people prefer driving regardless of service quality
+D. TOD only works in European cities and cannot be implemented in the United States
+
+Correct Answer: A
+
+Feedback: Correct. TOD integrates land use and transportation planning so that homes, jobs, and services are within walking distance of transit. This makes transit the easiest, fastest option by design rather than asking people to choose transit in a landscape designed for cars. It addresses the root cause (urban form) rather than adding service to a car-dependent design. Adding transit routes to a car-dependent city often fails because the urban form still favors driving. TOD works by changing the land use pattern itself so that transit becomes the most convenient option. It is a design solution, not just a service addition.
+
+---
+
+### Question 3
+
+The circular economy model contrasts with the linear 'take-make-dispose' model of resource use. Which statement best captures the core principle of circular economy in an urban context?
+
+A. All products should be made from recycled materials, even if recycled materials are lower quality
+B. Products are designed to be reused, repaired, remanufactured, or recycled, and waste from one process becomes feedstock for another, eliminating the concept of waste entirely
+C. Cities should ban all manufacturing to eliminate waste production
+D. Circular economy means recycling bins are placed in a circular pattern for easy access
+
+Correct Answer: B
+
+Feedback: Correct. The circular economy reimagines the entire production-consumption cycle so that materials continuously flow in loops rather than traveling linearly from extraction to landfill. Products are designed for disassembly, biological waste becomes compost, industrial waste becomes feedstock, and the concept of 'waste' is eliminated by design. The circular economy is not just about recycling. It redesigns the entire system so that waste is eliminated by design: products are built for reuse and repair, biological waste becomes compost, and industrial byproducts become inputs for other processes. The goal is to eliminate the concept of waste entirely.
+
+---
+
+### Question 4
+
+The urban heat island effect creates a positive feedback loop in cities. Which sequence correctly describes this feedback mechanism?
+
+A. Higher temperatures increase heating demand, which produces waste heat, which raises temperatures further
+B. Higher temperatures increase cooling energy demand, which increases fossil fuel combustion and waste heat, which contributes to further warming
+C. Urban trees absorb heat, which kills the trees, which removes shade, which increases heat
+D. Higher temperatures cause buildings to reflect more sunlight, which heats adjacent buildings
+
+Correct Answer: B
+
+Feedback: Correct. The urban heat island creates a reinforcing feedback loop: heat-absorbing surfaces raise temperatures, which increases air conditioning demand, which increases electricity generation (often from fossil fuels), which produces waste heat and emissions, which contribute to further warming. Green infrastructure breaks this loop by providing passive cooling through evapotranspiration. Focus on the cooling energy feedback. Higher urban temperatures drive more air conditioning use, which requires more electricity generation (producing waste heat and emissions), which contributes to further warming. This is a positive (reinforcing) feedback loop.
+
+---
+
+### Question 5
+
+A city sustainability plan focuses exclusively on converting to 100% renewable energy while keeping all other systems unchanged. Why is this approach insufficient according to systems thinking?
+
+A. Renewable energy is unreliable and cannot power a city
+B. Energy is only one of multiple interconnected urban systems; transportation, waste, water, and land use each contribute significantly to emissions and resource consumption, and changing energy alone leaves these systems' impacts unaddressed
+C. Renewable energy is too expensive to implement at city scale
+D. Energy has no connection to sustainability; only transportation matters
+
+Correct Answer: B
+
+Feedback: Correct. A city's environmental impact is distributed across multiple systems: transportation (mode share), waste (landfill vs. recycling), water (consumption and treatment), and land use (sprawl vs. density). Renewable energy addresses emissions from electricity generation but does nothing about car-dependent transportation, landfill methane, water waste, or the ecological impacts of sprawl. Systems thinking reveals that a city's sustainability depends on multiple interconnected systems, not just energy. Even with 100% renewable electricity, a city with 90% car mode share, 65% of waste going to landfill, and inefficient water systems remains unsustainable.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that transitioning Energy Mix to 80% renewable while keeping Transportation Mode Share at 85% car reduces Carbon Emissions Rate by only 35%, far less than the 80% energy transition might suggest. Which system interaction explains this gap?
+
+A. Renewable energy produces hidden emissions that offset the benefit
+B. Transportation is a separate emissions source that burns liquid fuels directly, so cleaning the electricity grid does not reduce emissions from gasoline-powered vehicles
+C. The model is incorrectly calibrated because energy should account for all emissions
+D. Carbon emissions cannot be reduced below 50% regardless of interventions
+
+Correct Answer: B
+
+Feedback: Correct. Transportation produces emissions directly through fuel combustion, independent of the electricity grid. A city with 85% car mode share continues generating transportation emissions even with 100% renewable electricity. This demonstrates why systems thinking is essential: sustainability requires addressing each emission source in its own subsystem. Transportation emissions come from burning gasoline and diesel in vehicles, not from the electricity grid. Cleaning the electricity supply does not affect the 85% of trips made in combustion-engine cars. Each emissions source must be addressed independently through its own subsystem.
+
+---
+
+### Question 2
+
+The 'Integrated Redesign' scenario simultaneously improves five urban systems and produces a Urban Sustainability Index far higher than the sum of individual improvements would predict. This demonstrates which systems concept?
+
+A. Synergistic interactions, where improvements in multiple interconnected systems produce multiplicative rather than additive benefits due to positive feedback loops between systems
+B. Linear scaling, where each improvement adds a fixed amount to the sustainability score
+C. Diminishing returns, where each additional improvement produces less benefit
+D. Randomness, where sustainability outcomes are unpredictable regardless of interventions
+
+Correct Answer: A
+
+Feedback: Correct. When multiple systems improve simultaneously, positive feedback loops amplify the benefits. Higher transit use reduces road congestion, which reduces emissions AND reclaims land for green space, which reduces heat island effect, which reduces cooling energy, which reduces emissions further. These synergistic interactions make comprehensive change far more effective than isolated improvements. When interconnected systems are improved simultaneously, the improvements reinforce each other. More transit use frees land from parking for green space, green space reduces cooling energy needs, reduced energy needs lower emissions. These cascading benefits create multiplicative rather than additive gains.
+
+---
+
+### Question 3
+
+Adding a Social Equity Index to the model reveals that a sustainability plan concentrating green infrastructure in wealthy neighborhoods produces a high environmental score but a low equity score, reducing the overall Urban Sustainability Index. What does this reveal about the definition of sustainability?
+
+A. Environmental improvements are not truly sustainable unless they are equitably distributed, because sustainability encompasses social justice alongside ecological health
+B. Equity is irrelevant to sustainability, which is purely an environmental concept
+C. Green infrastructure should only be placed where property values are highest to maximize return on investment
+D. The equity index should be removed from the model because it complicates the sustainability calculation
+
+Correct Answer: A
+
+Feedback: Correct. True sustainability integrates environmental, social, and economic dimensions. A city where clean air, green space, and transit access correlate with wealth is not sustainable because it perpetuates inequity that undermines social cohesion and political support for environmental policies. Environmental improvements must benefit all communities to be truly sustainable. Sustainability is not purely environmental. If environmental improvements are concentrated in wealthy areas while environmental burdens (pollution, heat, flooding) are concentrated in low-income communities, the city has not achieved sustainability. Equity is a core component, not an optional add-on.
+
+---
+
+### Question 4
+
+The model shows that Green Infrastructure Coverage produces non-linear benefits: below 15% coverage, benefits are modest, but above 25% coverage, stormwater management, temperature regulation, and air purification compound significantly. Which ecological principle explains this threshold effect?
+
+A. The law of diminishing returns, where each unit of green space produces less benefit
+B. Ecological connectivity, where isolated green patches provide limited ecosystem services but a connected network of green infrastructure creates synergistic benefits as habitat corridors link parks, urban forests, and bioswales into a functioning ecosystem
+C. Green infrastructure is only effective in tropical climates where plants grow faster
+D. The threshold is an artifact of the model and does not reflect real-world ecology
+
+Correct Answer: B
+
+Feedback: Correct. Isolated patches of green space provide limited local benefits. But when green infrastructure reaches sufficient coverage and connectivity, the patches link into a functioning ecosystem network. Connected corridors support wildlife movement, linked bioswales manage stormwater across watersheds, and coordinated tree canopy reduces urban temperatures across neighborhoods rather than at individual sites. The threshold effect reflects ecological connectivity. Isolated parks provide local shade and beauty but limited systemic benefits. Above a coverage threshold, green spaces connect into networks that provide watershed-scale stormwater management, city-wide temperature reduction, and functioning habitat corridors.
+
+---
+
+### Question 5
+
+A student's model reveals that Food System Localization (growing food within 100 miles) reduces Carbon Emissions Rate by a surprisingly small amount compared to Transportation Mode Share changes. However, localization significantly improves the Urban Sustainability Index through other pathways. Which pathways explain this finding?
+
+A. Local food tastes better, which improves resident satisfaction scores
+B. Local food systems improve food security (reducing supply chain vulnerability), create urban agricultural jobs, connect residents to ecological processes, and reduce packaging waste, contributing to sustainability dimensions beyond carbon emissions
+C. Local food production eliminates all food-related carbon emissions
+D. The model is incorrect because food transportation is the largest source of carbon emissions
+
+Correct Answer: B
+
+Feedback: Correct. Food transportation typically accounts for a small percentage of food's total carbon footprint (most emissions come from production, not transport). But local food systems contribute to sustainability through multiple non-carbon pathways: improved food security, urban employment, reduced packaging, community connection to ecology, and reduced vulnerability to supply chain disruption. Food transportation is actually a small fraction of food's total carbon footprint. Local food systems improve sustainability primarily through non-carbon pathways: food security, local employment, reduced packaging waste, and community resilience against supply chain disruptions.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: A
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

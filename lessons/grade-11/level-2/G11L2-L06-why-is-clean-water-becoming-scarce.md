@@ -904,6 +904,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-5, HS-ESS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Earth is approximately 70% water. What percentage of Earth's total water is accessible freshwater?
+
+A. About 10%
+B. About 2.5%
+C. About 0.5%
+D. About 25%
+
+Correct Answer: C
+
+Feedback: Correct. Only about 0.5% of Earth's water is accessible freshwater. The rest is saltwater (97.5%) or frozen in ice caps and glaciers. Although Earth has vast water, 97.5% is saltwater and about 2% is frozen in ice caps and glaciers. Only about 0.5% is accessible freshwater in rivers, lakes, and reachable groundwater.
+
+---
+
+### Question 2
+
+What is an aquifer?
+
+A. A man-made reservoir for storing treated water
+B. An underground layer of rock or sediment that holds and transmits groundwater
+C. A type of water treatment plant
+D. A dam built across a river to store water
+
+Correct Answer: B
+
+Feedback: Correct. An aquifer is a geological formation (rock, gravel, sand) that stores groundwater in pore spaces and can transmit it to wells and springs. An aquifer is a natural underground formation of permeable rock, sand, or gravel that holds groundwater. Wells are drilled into aquifers to access this water for drinking, irrigation, and industry.
+
+---
+
+### Question 3
+
+Which sector consumes the largest share of global freshwater withdrawals?
+
+A. Residential and municipal use (drinking, bathing, toilets)
+B. Industrial manufacturing
+C. Agriculture (irrigation)
+D. Energy production (power plant cooling)
+
+Correct Answer: C
+
+Feedback: Correct. Agriculture accounts for approximately 70% of all global freshwater withdrawals, primarily for irrigation. Agriculture consumes about 70% of all freshwater withdrawn globally. Irrigation is by far the largest use, with much of it using inefficient flood methods that waste 40-60% of applied water.
+
+---
+
+### Question 4
+
+What does 'water stress' mean for a region?
+
+A. The region receives too much rainfall, causing flooding
+B. Water demand exceeds available supply, or poor water quality restricts use
+C. Water infrastructure requires expensive repairs
+D. The region has more surface water than groundwater
+
+Correct Answer: B
+
+Feedback: Correct. A region is water-stressed when demand approaches or exceeds the available supply, or when water quality is too poor for intended uses. Water stress occurs when the demand for freshwater (from population, agriculture, industry) approaches or exceeds the available supply. Regions where more than 40% of available water is withdrawn are classified as severely stressed.
+
+---
+
+### Question 5
+
+Why might depleting an aquifer be considered 'functionally irreversible'?
+
+A. Empty aquifers immediately fill with saltwater that cannot be removed
+B. Many major aquifers accumulated water over thousands to millions of years, and natural recharge replaces less than 1% of withdrawals annually
+C. Government regulations permanently prevent refilling depleted aquifers
+D. Aquifer rock collapses when water is removed, destroying the formation
+
+Correct Answer: B
+
+Feedback: Correct. Major agricultural aquifers like the Ogallala formed over millions of years. Current extraction rates far exceed natural recharge, making depletion effectively permanent on human timescales. Many large aquifers are 'fossil water' systems that accumulated over geological timescales. When extraction vastly exceeds the tiny natural recharge rate, the aquifer is being mined like a non-renewable resource. Refilling would take thousands of years.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that the Ogallala Aquifer has lost 30% of its volume in 60 years while natural recharge replaces less than 1% of annual withdrawals. A farmer proposes 'just pumping less.' At what extraction rate does the model show the aquifer stabilizes?
+
+A. Extraction must be reduced to 50% of current levels
+B. Extraction must equal the natural recharge rate, which would require reducing current withdrawals by approximately 99%
+C. Any reduction in pumping will stabilize the aquifer within 10 years
+D. The aquifer cannot stabilize because climate change is increasing recharge
+
+Correct Answer: B
+
+Feedback: Correct. For the aquifer to stabilize, extraction cannot exceed recharge. Since recharge is less than 1% of current withdrawal, extraction would need to drop by roughly 99%, which is practically impossible without completely transforming regional agriculture. The model shows sustainability requires withdrawal equals recharge. Since natural recharge is less than 1% of current extraction, stabilization requires a near-complete halt to pumping. This reveals the magnitude of the problem: current agriculture depends on mining a non-renewable resource.
+
+---
+
+### Question 2
+
+The model demonstrates a cascading failure: aquifer depletion reduces food production, food shortages drive migration, and migration concentrates populations in cities facing their own water stress. What systems concept does this cascade illustrate?
+
+A. Negative feedback that stabilizes the system through migration
+B. A positive feedback loop where each system failure worsens conditions for the connected systems, compounding the crisis
+C. An isolated local problem with no broader systemic effects
+D. A self-correcting market response to resource scarcity
+
+Correct Answer: B
+
+Feedback: Correct. This cascade is a positive feedback loop across coupled systems: water depletion drives food loss, which drives migration, which intensifies urban water stress, worsening conditions across all connected systems. The cascade demonstrates how interconnected systems amplify failures: aquifer depletion is not just a water problem but triggers food insecurity, migration, and urban stress in a compounding positive feedback loop that affects multiple sectors simultaneously.
+
+---
+
+### Question 3
+
+A student proposes desalination as the solution to global water scarcity. Based on the model, which limitation most significantly constrains this approach?
+
+A. Desalination technology does not yet exist at commercial scale
+B. Desalination is energy-intensive and expensive ($0.50-$2.00/m3), currently supplies less than 1% of global freshwater, and generates concentrated brine waste that harms marine ecosystems
+C. Desalinated water is unsafe for irrigation
+D. Only coastal cities can benefit, and most water stress occurs inland
+
+Correct Answer: B
+
+Feedback: Correct. Desalination faces scalability challenges: high energy costs, limited current contribution (<1% of global supply), and environmental impacts from brine disposal make it a supplementary solution, not a replacement for sustainable groundwater management. While desalination works technically, it currently provides less than 1% of global freshwater and faces major scalability constraints: high energy requirements, significant cost per unit volume, and environmental damage from concentrated brine waste discharged into marine environments.
+
+---
+
+### Question 4
+
+The model's 'virtual water' concept reveals that a kilogram of beef requires approximately 15,000 liters of water. How does this inform a systems-level approach to water scarcity?
+
+A. Virtual water is theoretical and has no practical policy implications
+B. Shifting dietary patterns and agricultural choices can dramatically reduce water demand because food production accounts for 70% of withdrawals, and water intensity varies enormously between crop and livestock types
+C. Consumers should only eat locally grown food to reduce virtual water
+D. Beef production should be banned in all water-stressed regions
+
+Correct Answer: B
+
+Feedback: Correct. Virtual water analysis reveals that demand-side changes (dietary shifts, crop choice, agricultural efficiency) can achieve far greater water savings than supply-side engineering because agriculture dominates consumption. Understanding virtual water shows that water scarcity is partly a demand problem. Since agriculture uses 70% of freshwater and water intensity varies widely (15,000 L/kg beef vs. 1,800 L/kg grain), dietary and crop shifts can yield massive water savings.
+
+---
+
+### Question 5
+
+The model shows that increasing Population and Agricultural Demand by 50% while decreasing Natural Recharge Rate by 20% (due to climate change) causes Aquifer Water Level to crash decades sooner than either factor alone. What does this reveal about compounding stressors in water systems?
+
+A. Population growth and climate change affect water systems independently
+B. The interaction between rising demand and declining supply creates a nonlinear acceleration of depletion because both forces simultaneously widen the gap between extraction and recharge
+C. Climate change is the only significant factor in water scarcity
+D. Population growth can always be offset by more efficient irrigation technology
+
+Correct Answer: B
+
+Feedback: Correct. When demand rises while supply falls simultaneously, the depletion gap widens from both sides, creating a multiplicative effect that accelerates collapse far beyond what either stressor would cause independently. Compounding stressors are worse than additive: rising demand and declining recharge simultaneously widen the extraction-recharge gap, causing nonlinear acceleration. The aquifer depletes much faster under compound stress than under either factor alone.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

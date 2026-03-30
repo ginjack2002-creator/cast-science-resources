@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS1-1, MS-ESS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What causes the Moon to appear to change shape throughout the month?
+
+A. Earth's shadow falls on different parts of the Moon each night
+B. We see different amounts of the Moon's sunlit side as it orbits Earth
+C. The Moon rotates and shows us different sides each night
+D. Clouds in Earth's atmosphere block parts of the Moon
+
+Correct Answer: B
+
+Feedback: Correct! As the Moon orbits Earth, the angle between the Sun, Moon, and Earth changes, so we see different amounts of the Moon's sunlit surface. Not quite. Moon phases are caused by seeing different portions of the Moon's sunlit side as it orbits Earth, not by Earth's shadow, rotation showing different sides, or clouds.
+
+---
+
+### Question 2
+
+Where does the light we see from the Moon actually come from?
+
+A. The Moon generates its own light like a star
+B. The Moon glows because of radioactive minerals on its surface
+C. The Moon reflects light from the Sun
+D. Light from distant stars bounces off the Moon
+
+Correct Answer: C
+
+Feedback: Correct! The Moon has no light of its own. What we call moonlight is sunlight reflecting off the Moon's surface. Not quite. The Moon does not produce its own light. Moonlight is actually sunlight that reflects off the Moon's surface back toward Earth.
+
+---
+
+### Question 3
+
+How long does it take the Moon to complete one full orbit around Earth?
+
+A. About 24 hours
+B. About 7 days
+C. About 29.5 days
+D. About 365 days
+
+Correct Answer: C
+
+Feedback: Correct! The Moon's orbital period is approximately 29.5 days, which is why the cycle of Moon phases repeats roughly every month. Not quite. The Moon takes about 29.5 days to orbit Earth once, which is why we see a full cycle of phases approximately every month.
+
+---
+
+### Question 4
+
+What force keeps the Moon in orbit around Earth?
+
+A. Magnetism from Earth's core
+B. The push of solar wind from the Sun
+C. Gravity between Earth and the Moon
+D. The Moon's own spinning motion
+
+Correct Answer: C
+
+Feedback: Correct! Gravity is the attractive force between Earth and the Moon that keeps the Moon in a stable orbit. Not quite. Gravity is the force responsible for keeping the Moon in orbit around Earth. It is the attractive force between all objects with mass.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+During a lunar eclipse, the Moon appears red instead of disappearing completely. Which explanation best accounts for this observation?
+
+A. The Sun emits red light that passes through the Moon's interior
+B. Earth's atmosphere bends red wavelengths of sunlight into Earth's shadow
+C. The Moon's surface minerals glow red when they cool down in shadow
+D. Mars reflects red light onto the Moon during eclipse alignment
+
+Correct Answer: B
+
+Feedback: Correct! Earth's atmosphere acts like a lens, refracting red wavelengths of sunlight into the shadow zone. Blue and green wavelengths scatter away, but red light bends enough to reach the Moon. Not quite. During a lunar eclipse, Earth's atmosphere bends red wavelengths of sunlight into the shadow. It is essentially projecting all of Earth's sunsets onto the Moon at once.
+
+---
+
+### Question 2
+
+A student claims that we should see a lunar eclipse every month during the full Moon. Why is this claim incorrect?
+
+A. The Moon only passes through Earth's shadow during summer months
+B. The Moon's orbit is tilted about 5 degrees relative to Earth's orbit around the Sun
+C. Earth's shadow is too small to cover the Moon most months
+D. The Sun moves out of alignment with Earth and the Moon after each eclipse
+
+Correct Answer: B
+
+Feedback: Correct! Because the Moon's orbit is tilted about 5 degrees, the Moon usually passes above or below Earth's shadow during full Moon. Eclipses only occur when the Moon crosses the plane of Earth's orbit at the right time. Not quite. Eclipses are rare because the Moon's orbit is tilted about 5 degrees relative to Earth's orbital plane. Most months, the Moon passes above or below Earth's shadow.
+
+---
+
+### Question 3
+
+In a model of the Earth-Moon-Sun system, a student sets the Moon's position directly between Earth and the Sun. What phase will the model predict?
+
+A. Full Moon, because the Moon is closest to the Sun
+B. Waxing crescent, because the Moon is partially lit
+C. New Moon, because the sunlit side of the Moon faces away from Earth
+D. Lunar eclipse, because the Moon is in Earth's shadow
+
+Correct Answer: C
+
+Feedback: Correct! When the Moon is between Earth and the Sun, the sunlit side faces away from us, making the Moon invisible from Earth. This is a new Moon. Not quite. When the Moon is positioned between Earth and the Sun, the side of the Moon that faces Earth is not illuminated. This configuration produces a new Moon.
+
+---
+
+### Question 4
+
+Which statement best describes the role of gravity in the Earth-Moon-Sun system?
+
+A. Gravity only affects the Moon during eclipses when objects are aligned
+B. Gravity keeps the Moon orbiting Earth and Earth orbiting the Sun, creating the patterns we observe
+C. Gravity pushes the Moon away from Earth, causing it to move through phases
+D. Gravity has no effect on the Moon because there is no air in space to transmit force
+
+Correct Answer: B
+
+Feedback: Correct! Gravity is the fundamental force that maintains the orbital motions of the entire system. Without gravity, there would be no orbits, no phases, no eclipses, and no tides. Not quite. Gravity is the attractive force that keeps the Moon orbiting Earth and Earth orbiting the Sun. It acts continuously, not just during eclipses, and it works through empty space.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

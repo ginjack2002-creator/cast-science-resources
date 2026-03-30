@@ -922,6 +922,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Solar and wind energy are now cheaper than fossil fuels for new electricity generation in most of the world. What is the primary technical barrier preventing these sources from replacing fossil fuels entirely?
+
+A. Solar panels and wind turbines cannot generate enough total energy
+B. Intermittency: solar and wind generation varies with weather and time of day, creating a mismatch between variable supply and relatively constant demand
+C. Renewable energy cannot be transmitted through existing power lines
+D. Fossil fuels produce higher quality electricity than renewables
+
+Correct Answer: B
+
+Feedback: Correct. The fundamental challenge is intermittency. Solar produces no power at night, wind varies with weather, and electricity demand does not follow these patterns. Without sufficient storage and grid flexibility, this supply-demand mismatch limits renewable penetration. Incorrect. The primary barrier is intermittency. Renewables can generate sufficient total energy, but their output varies with weather and time of day. Matching variable supply to constant demand requires energy storage and grid flexibility that are currently insufficient.
+
+---
+
+### Question 2
+
+The capacity factor of solar panels is typically 15-25%, while natural gas plants achieve 90%+. What does this difference mean for grid planning?
+
+A. Solar panels are inherently less efficient at converting energy than gas plants
+B. A renewable grid needs significantly more installed generation capacity than a fossil fuel grid to produce the same total energy output
+C. Solar panels can only operate for 15-25% of their expected lifespan
+D. Gas plants produce electricity that is 90% higher quality than solar electricity
+
+Correct Answer: B
+
+Feedback: Correct. Capacity factor measures actual output versus maximum possible output. A 15-25% capacity factor means solar panels produce peak power only during sunny hours. To generate the same annual energy as a 90% capacity factor gas plant, a solar installation needs 3-6 times more nameplate capacity. Incorrect. Capacity factor reflects how much of the time a source produces at its rated output. Solar panels only produce at peak during sunny hours (15-25% of the time), so renewable grids need substantially more installed capacity to match the total energy output of always-on fossil fuel plants.
+
+---
+
+### Question 3
+
+Grid inertia is provided by the spinning mass of conventional generators. Why is the loss of grid inertia a concern as fossil fuel generators are replaced by solar and wind?
+
+A. Solar panels and wind turbines have no physical spinning mass, so grid frequency becomes harder to maintain during supply-demand imbalances
+B. Grid inertia only matters in winter when energy demand is highest
+C. Loss of inertia causes power lines to physically break
+D. Wind turbines provide more inertia than conventional generators
+
+Correct Answer: A
+
+Feedback: Correct. Grid frequency stability depends on the rotational inertia of large generators that resist frequency changes. Solar panels and most wind installations lack this physical inertia, requiring new solutions like synthetic inertia from battery inverters to maintain grid stability. Incorrect. Conventional generators have massive spinning rotors that naturally resist frequency changes, stabilizing the grid. Solar panels have no moving parts and provide no inertia. As fossil generators retire, new technologies must provide the frequency stabilization that spinning mass once supplied.
+
+---
+
+### Question 4
+
+A region wants to operate its grid on 100% renewable energy. Which technology is considered the most critical enabler for achieving this goal?
+
+A. More efficient solar panels
+B. Energy storage systems (batteries, pumped hydro) that can absorb excess generation and dispatch it during low-generation periods
+C. Larger wind turbines that generate more power per unit
+D. Longer-lasting power transmission cables
+
+Correct Answer: B
+
+Feedback: Correct. Energy storage is the keystone technology because it bridges the temporal mismatch between when renewable energy is generated (sunny/windy periods) and when it is needed (demand peaks, nighttime, calm periods). Without sufficient storage, high-renewable grids cannot maintain reliability. Incorrect. While all components matter, energy storage is the critical enabler. It solves the fundamental intermittency challenge by storing excess renewable generation for dispatch during low-generation periods, enabling reliable operation even when the sun is not shining and wind is not blowing.
+
+---
+
+### Question 5
+
+Global fossil fuel subsidies total approximately $5.9 trillion per year. How do these subsidies affect the renewable energy transition?
+
+A. They accelerate the transition by making fossil fuels too expensive to use
+B. They slow the transition by artificially lowering fossil fuel prices, making it harder for renewables to compete despite lower unsubsidized costs
+C. They have no effect because energy markets operate independently of government policy
+D. They primarily fund renewable energy research and development
+
+Correct Answer: B
+
+Feedback: Correct. Massive subsidies artificially reduce fossil fuel costs, creating an uneven playing field even though unsubsidized renewable generation is now cheaper. This policy distortion slows the transition by maintaining fossil fuel competitiveness that the market alone would not support. Incorrect. Fossil fuel subsidies create an artificial market distortion that slows the energy transition. By keeping fossil fuel prices below their true cost, subsidies undermine the natural cost advantage that renewables have achieved, maintaining fossil fuel market share that economics alone would not support.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that doubling renewable capacity without increasing storage causes grid instability above 40% renewable penetration. What system-level insight does this reveal?
+
+A. Renewable energy is fundamentally incapable of providing reliable power
+B. The energy system has interdependent components; generation capacity alone is insufficient without proportional investment in storage and grid infrastructure to manage intermittency
+C. 40% renewable penetration is the absolute physical maximum for any grid
+D. Storage technology cannot improve beyond current capabilities
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that the energy system functions as an integrated whole. Adding generation without storage creates excess power during sunny/windy periods and deficits during others. Reliable high-renewable operation requires coordinated investment across generation, storage, and grid management. Incorrect. The model demonstrates system interdependence, not a fundamental limitation. The 40% threshold is not a physical limit but a system integration constraint. With proportional storage and grid modernization, grids can operate reliably at 80-100% renewable penetration.
+
+---
+
+### Question 2
+
+The model shows that tripling storage capacity has a larger positive impact on grid reliability and carbon reduction than doubling renewable generation alone. What does this reveal about leverage points in the energy transition?
+
+A. Renewable generation is unnecessary if sufficient storage exists
+B. Storage is the current bottleneck, and investing in the most constrained component produces the greatest system-wide improvement
+C. Storage is always more important than generation in all energy systems
+D. Carbon reduction is unrelated to grid reliability
+
+Correct Answer: B
+
+Feedback: Correct. In systems thinking, the bottleneck constrains overall performance. Currently, storage is the binding constraint. Relieving this bottleneck unlocks the full potential of existing renewable capacity, producing outsized improvements in both reliability and carbon reduction compared to adding more generation alone. Incorrect. The finding reflects a bottleneck effect. In the current system, insufficient storage constrains the value of renewable generation. Relieving this bottleneck allows existing and planned renewable capacity to be used more effectively, producing the largest improvement per unit of investment.
+
+---
+
+### Question 3
+
+A model's integrated transition scenario achieves 80% renewable operation with maintained grid reliability. Which combination of factors makes this possible?
+
+A. Increased generation capacity alone without any other changes
+B. Coordinated investment in renewable generation, energy storage, grid modernization, and demand flexibility working together as an integrated system
+C. Maintaining fossil fuel backup for 80% of total capacity
+D. Reducing total energy demand by 80% so that existing renewables are sufficient
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that reliable high-renewable operation requires coordinated investment in all system components. Generation provides the energy, storage bridges intermittency, modernized grids handle variable flows, and demand flexibility matches consumption to supply. No single component suffices alone. Incorrect. The model clearly demonstrates that 80% reliable renewable operation requires an integrated approach. No single component achieves this alone. Generation, storage, grid infrastructure, and demand flexibility must be developed in coordination, each addressing a different aspect of the intermittency challenge.
+
+---
+
+### Question 4
+
+A student analyzes why fossil fuels still provide 80% of global energy despite renewables being cheaper. Based on model evidence, which explanation best accounts for this paradox?
+
+A. Renewables are actually more expensive when all costs are included
+B. Entrenched infrastructure, $5.9 trillion in annual subsidies, incumbent industry opposition, permitting delays, and the massive capital needed for grid transformation create barriers that override pure cost advantages
+C. Consumers prefer fossil fuel electricity because it is higher quality
+D. Renewable technology was only invented within the last 5 years
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that economic efficiency alone does not determine energy system composition. Entrenched infrastructure represents sunk costs, subsidies distort markets, incumbent industries resist change, and the enormous capital needed for grid transformation creates financing barriers despite favorable long-term economics. Incorrect. The paradox is explained by systemic barriers beyond simple cost comparison. Existing fossil fuel infrastructure, massive subsidies, political resistance from incumbent industries, permitting processes, and the scale of required grid investment all prevent the cost advantage of renewables from translating into rapid market replacement.
+
+---
+
+### Question 5
+
+Based on model evidence about the energy transition, a policy advisor must recommend the most effective single investment priority. Which recommendation is most strongly supported by the model?
+
+A. Invest exclusively in new renewable generation and let market forces handle the rest
+B. Prioritize energy storage deployment because it is the current bottleneck that limits the effectiveness of all other clean energy investments
+C. Invest exclusively in nuclear power as the only reliable low-carbon source
+D. Focus solely on reducing energy demand rather than changing how energy is generated
+
+Correct Answer: B
+
+Feedback: Correct. The model consistently identifies storage as the bottleneck. Without sufficient storage, additional renewable capacity is curtailed during excess generation and cannot fill gaps during low generation. Storage investment unlocks the value of both existing and future renewable generation capacity. Incorrect. The model identifies storage as the binding constraint. As the current bottleneck, storage investment produces the largest marginal improvement in grid reliability and carbon reduction. It enables existing renewable capacity to be used fully and creates headroom for additional generation.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

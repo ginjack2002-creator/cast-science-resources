@@ -726,6 +726,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-ESS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why does it get dark at night?
+
+A. The sun turns off
+B. Someone turns off the lights
+C. Our side of Earth turns away from the sun
+
+Correct Answer: C
+
+Feedback: Yes! The Earth spins, and when our side faces away from the sun, it gets dark. The sun does not turn off. The Earth spins, and our side turns away from the sun at night.
+
+---
+
+### Question 2
+
+Does the sun go away at night?
+
+A. Yes, the sun disappears
+B. No, the sun stays in the same place
+C. Yes, the sun sleeps at night
+
+Correct Answer: B
+
+Feedback: That is right! The sun stays in the same place. The Earth moves, not the sun. The sun never goes away. It stays in one place. The Earth spins, which is why we see day and night.
+
+---
+
+### Question 3
+
+What does rotate mean?
+
+A. To jump up and down
+B. To spin around
+C. To stand very still
+
+Correct Answer: B
+
+Feedback: Yes! Rotate means to spin around, like a top. The Earth rotates every day. Rotate means to spin around in a circle, just like the Earth does every 24 hours.
+
+---
+
+### Question 4
+
+Day and night happen over and over. What is something that repeats called?
+
+A. A surprise
+B. A pattern
+C. A secret
+
+Correct Answer: B
+
+Feedback: That is right! Something that repeats the same way is called a pattern. When something happens the same way over and over, like day then night then day, that is a pattern.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What causes day and night?
+
+A. The moon blocking the sun
+B. The Earth spinning
+C. The sun moving around the Earth
+
+Correct Answer: B
+
+Feedback: Yes! The Earth spins (rotates), and that is what causes day and night. Day and night are caused by the Earth rotating. When your side faces the sun, it is day. When it faces away, it is night.
+
+---
+
+### Question 2
+
+When your side of Earth faces the sun, what is it?
+
+A. Nighttime
+B. Daytime
+C. Winter
+
+Correct Answer: B
+
+Feedback: That is right! When your side of Earth faces the sun, the sun shines on you and it is daytime. When the sun shines on your part of the Earth, it is bright and warm. That is daytime.
+
+---
+
+### Question 3
+
+How long does it take the Earth to spin around one time?
+
+A. About 1 hour
+B. About 24 hours (one day)
+C. About 1 year
+
+Correct Answer: B
+
+Feedback: Yes! The Earth takes about 24 hours to make one full spin. That is why we have one day and one night every 24 hours. One full spin of the Earth takes about 24 hours, which gives us one daytime and one nighttime.
+
+---
+
+### Question 4
+
+When Earth's position faces the sun, the amount of sunlight goes ___.
+
+A. Down
+B. Up
+C. It does not change
+
+Correct Answer: B
+
+Feedback: That is right! Facing the sun means lots of sunlight. That is daytime. When your part of the Earth faces the sun, you get more sunlight, making it bright and warm.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

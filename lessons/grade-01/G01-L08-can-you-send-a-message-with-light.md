@@ -726,6 +726,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Can you use light to tell someone something?
+
+A. No, light cannot send messages
+B. Yes, you can flash a light to send a message
+C. Only if you also talk
+
+Correct Answer: B
+
+Feedback: Yes! You can flash a light on and off to send a message to someone. Light can be used to send messages. Think about traffic lights. They tell drivers what to do using light.
+
+---
+
+### Question 2
+
+What does a traffic light use to tell cars when to stop?
+
+A. Sound
+B. Light
+C. Words on a sign
+
+Correct Answer: B
+
+Feedback: That is right! A traffic light uses colored light to send a message to drivers. A traffic light uses red, yellow, and green light to tell drivers to stop, slow down, or go.
+
+---
+
+### Question 3
+
+What is a signal?
+
+A. A kind of food
+B. A message sent using light, sound, or movement
+C. A type of animal
+
+Correct Answer: B
+
+Feedback: Yes! A signal is a message sent using things like light, sound, or hand movements. A signal is a way to share a message. Waving, flashing a light, and honking a horn are all signals.
+
+---
+
+### Question 4
+
+A lighthouse shines a bright light at night. Why?
+
+A. To look pretty
+B. To help ships see where the rocks are
+C. To scare fish away
+
+Correct Answer: B
+
+Feedback: Yes! Lighthouses use a bright light signal to warn ships about dangerous rocks. Lighthouses send a light signal to help ships know where it is safe to go.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When signal brightness goes UP, what happens to the message being received?
+
+A. The message is harder to receive
+B. The message is easier to receive
+C. Nothing changes
+
+Correct Answer: B
+
+Feedback: Yes! Brighter light signals are easier to see, so the message is more likely to be received. A brighter signal is easier to see from far away, making it more likely the message gets through.
+
+---
+
+### Question 2
+
+What does communicate mean?
+
+A. To run very fast
+B. To share a message with another person
+C. To eat lunch
+
+Correct Answer: B
+
+Feedback: That is right! Communicate means sharing a message or idea with someone else. To communicate means to share a message with another person. You can communicate with light, sound, or words.
+
+---
+
+### Question 3
+
+You and your friend make a light code: 1 flash means yes, 2 flashes mean no. Why do you need a code?
+
+A. So the light looks cool
+B. So you both know what the flashes mean
+C. So the light lasts longer
+
+Correct Answer: B
+
+Feedback: Yes! A code helps both people understand the message. Without a code, flashing a light does not tell you anything. A code gives meaning to the flashes. Without it, you would see the light but not understand the message.
+
+---
+
+### Question 4
+
+Why would a dim flashlight be hard to use to send a message across a big room?
+
+A. Dim lights are too heavy
+B. A dim light is hard to see from far away
+C. Dim lights change colors
+
+Correct Answer: B
+
+Feedback: That is right! A dim light is hard to see when you are far away, so the message might not get through. If the light is dim, the person far away may not be able to see it, so the message would be lost.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

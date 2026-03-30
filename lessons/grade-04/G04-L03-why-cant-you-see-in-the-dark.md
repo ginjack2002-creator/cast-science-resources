@@ -863,6 +863,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-PS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+How do your eyes let you see objects?
+
+A. Your eyes shoot out invisible beams that bounce off objects
+B. Light bounces off objects and enters your eyes
+C. Your brain imagines what things look like and sends pictures to your eyes
+D. Objects glow with their own light so your eyes can see them
+
+Correct Answer: B
+
+Feedback: That is right! You see objects because light from a source hits them, bounces off, and enters your eyes. Your eyes receive light, they do not send it out. Your eyes do not shoot out beams, and most objects do not make their own light. You see objects because light bounces off them and enters your eyes.
+
+---
+
+### Question 2
+
+Why is it hard to see anything in a completely dark room?
+
+A. Your eyes need time to warm up before they can see
+B. Dark rooms have too much air blocking your vision
+C. There is no light to bounce off objects and enter your eyes
+D. Objects turn invisible when the lights go off
+
+Correct Answer: C
+
+Feedback: Correct! Without a light source, there is no light to bounce off objects. Your eyes need reflected light to see, so no light means no vision. Objects do not actually become invisible. The problem is that without a light source, there is no light to bounce off objects and reach your eyes.
+
+---
+
+### Question 3
+
+Which of these is a light source?
+
+A. A mirror
+B. A white piece of paper
+C. The Moon
+D. The Sun
+
+Correct Answer: D
+
+Feedback: Right! The Sun makes its own light, so it is a light source. Mirrors and paper only reflect light, and the Moon also reflects light from the Sun. A light source must make its own light. Mirrors and paper reflect light, and the Moon only shines because it reflects sunlight. The Sun creates its own light.
+
+---
+
+### Question 4
+
+What is the black circle in the middle of your eye called?
+
+A. The eyelid
+B. The pupil
+C. The eyebrow
+D. The iris
+
+Correct Answer: B
+
+Feedback: That is right! The pupil is the black opening in your eye that lets light in. It gets bigger in dim light to let more light in and smaller in bright light. The black circle in the center of your eye is called the pupil. It is the opening that lets light enter your eye so you can see.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the light and vision model, what are the three components?
+
+A. Eye color, room size, and object weight
+B. Light source brightness, light bouncing off objects, and eye detection
+C. Darkness level, eye strength, and brain power
+D. Lamp size, mirror angle, and pupil color
+
+Correct Answer: B
+
+Feedback: Exactly! The model has three components: light source brightness (external), light bouncing off objects (internal), and eye detection (internal). The three model components are light source brightness, light bouncing off objects, and eye detection. These show the chain from light source to seeing.
+
+---
+
+### Question 2
+
+What does it mean that most objects REFLECT light rather than making their own light?
+
+A. Most objects glow in the dark after lights are turned off
+B. Most objects bounce light from a source back to our eyes, which is how we see them
+C. Most objects absorb all light and never let any bounce off
+D. Most objects create light but only when we look at them
+
+Correct Answer: B
+
+Feedback: Right! Most objects do not make their own light. We see them because light from a source (like the Sun or a lamp) hits them, bounces off, and enters our eyes. Most objects are not light sources. They reflect (bounce back) light that hits them from a light source. That reflected light enters your eyes, and that is how you see.
+
+---
+
+### Question 3
+
+A student shines a flashlight in a dark room. They can see a white ball but a black ball is harder to see. Why?
+
+A. The black ball is smaller than the white ball
+B. The white ball reflects more light back to the student's eyes, while the black ball absorbs more light
+C. The white ball makes its own light and the black ball does not
+D. The flashlight only works on white objects
+
+Correct Answer: B
+
+Feedback: That is right! White objects reflect most of the light that hits them, so more light reaches your eyes. Dark objects absorb more light and reflect less, making them harder to see. Neither ball makes its own light. The difference is that white surfaces reflect most light while dark surfaces absorb most of it. More reflected light means easier to see.
+
+---
+
+### Question 4
+
+Based on the model, what must happen for you to see an object?
+
+A. The object must be close enough for your eyes to reach it with beams
+B. A light source must create light, the light must bounce off the object, and the reflected light must enter your eyes
+C. You must stare at the object for at least five seconds
+D. The object must be brighter than everything else in the room
+
+Correct Answer: B
+
+Feedback: Exactly! The model shows a three-step chain: light source creates light, light reflects off the object, and the reflected light enters your eyes. All three steps are needed to see. Your eyes do not send out beams. The model shows three connected steps: a light source creates light, that light bounces off an object, and the reflected light enters your eyes.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: D
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

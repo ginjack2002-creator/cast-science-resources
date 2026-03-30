@@ -889,6 +889,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-1, HS-ESS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Global food production currently generates approximately 6,000 calories per person per day, yet 735 million people are chronically hungry. Which factor best explains this paradox?
+
+A. The world does not produce enough total food to feed 8 billion people
+B. Distribution inefficiencies, food waste, and diversion to animal feed and biofuels prevent produced calories from reaching people as food
+C. The 735 million hungry people live in regions where crops cannot physically grow
+D. Food production data is inaccurate and actual output is much lower than reported
+
+Correct Answer: B
+
+Feedback: Correct. The world produces sufficient total calories, but roughly two-thirds are lost to waste, animal feed conversion, and biofuel production before reaching humans as food. Hunger is a distribution and allocation problem, not a production problem. Consider the math: 6,000 calories produced per person versus 2,000 needed. The total is sufficient. What happens to the other 4,000 calories per person? The answer involves the entire supply chain, not production capacity.
+
+---
+
+### Question 2
+
+A farmer applies maximum synthetic fertilizer to increase crop yield. Which long-term consequence is most likely based on soil science?
+
+A. Soil organic matter will increase indefinitely as crops grow larger and return more biomass
+B. Soil health will remain unchanged because synthetic fertilizer replaces natural nutrients
+C. Soil degradation will accelerate as microbial diversity declines, organic matter decreases, and chemical runoff pollutes waterways
+D. Crop yields will increase linearly with fertilizer application without any diminishing returns
+
+Correct Answer: C
+
+Feedback: Correct. Excessive synthetic fertilizer degrades soil health by reducing microbial diversity, decreasing organic matter, causing acidification, and contributing to waterway pollution through runoff. Short-term yield gains mask long-term soil destruction. Consider what soil health depends on beyond just chemical nutrients. Healthy soil is a living ecosystem of microorganisms, organic matter, and nutrient cycles. How does flooding it with synthetic chemicals affect these biological systems over years?
+
+---
+
+### Question 3
+
+Carrying capacity for a human population depends on which set of factors?
+
+A. Only the total land area of the planet
+B. Agricultural technology, diet choices, resource distribution, and environmental sustainability practices
+C. The birth rate and death rate of the population alone
+D. The number of animal species in an ecosystem
+
+Correct Answer: B
+
+Feedback: Correct. Human carrying capacity is not a fixed number. It depends on how efficiently we produce food (technology), what we eat (diet choices affect land use 10x), how we share resources (distribution), and whether we maintain the ecosystems that sustain agriculture. Unlike most species, human carrying capacity is highly flexible because we can modify our technology, diet, and resource management. Consider how switching from beef to plant-based diets would change how many people the same land could feed.
+
+---
+
+### Question 4
+
+Which strategy would most effectively increase food production while minimizing environmental damage?
+
+A. Converting all remaining forests to farmland to maximize arable land area
+B. Applying maximum fertilizer to existing farmland to push yields higher
+C. Sustainable intensification that maintains soil health while improving yield per hectare on existing farmland
+D. Reducing the global population to match current food distribution capacity
+
+Correct Answer: C
+
+Feedback: Correct. Sustainable intensification improves yield on existing land through precision agriculture, soil conservation, and integrated pest management without the environmental costs of land expansion or chemical overuse. Consider the trade-offs of each approach. Land expansion destroys ecosystems. Maximum fertilizer degrades soil. The challenge is increasing output per hectare without destroying the resource base. Which approach achieves both?
+
+---
+
+### Question 5
+
+A computational model of global agriculture shows that crop yields initially increase with fertilizer application but eventually plateau and then decline. This pattern is best explained by which concept?
+
+A. Linear growth, where outputs always increase proportionally with inputs
+B. Diminishing returns followed by degradation, where initial gains are offset by cumulative damage to the soil ecosystem
+C. Random variation in weather patterns that occasionally reduce yields
+D. Government regulations that limit how much fertilizer farmers can apply
+
+Correct Answer: B
+
+Feedback: Correct. The yield curve demonstrates diminishing returns (each additional unit of fertilizer produces less additional yield) followed by negative returns as soil degradation from excess chemicals reduces the land's productive capacity. Think about what happens to the soil, not just the crop, when fertilizer is applied repeatedly at maximum levels. Initially yields rise, then the gains shrink, and eventually the soil is damaged enough that yields actually fall.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's 30-year simulation shows that the Green Revolution strategy (maximum fertilizer and water) produces higher yields than sustainable intensification for the first 15 years, but then yields crash while the sustainable approach maintains steady output. Which conclusion is best supported by this model data?
+
+A. The Green Revolution strategy is superior because it feeds more people during the critical near-term period
+B. The model is unreliable because real-world yields have not yet shown this crash pattern globally
+C. Short-term yield maximization creates a soil degradation debt that accumulates invisibly until the system collapses, making the sustainable approach more productive over the full 30-year period
+D. Both strategies produce the same total food over 30 years, just distributed differently across time
+
+Correct Answer: C
+
+Feedback: Correct. The simulation reveals a time-delayed feedback: soil degradation accumulates beneath rising yields until a tipping point is reached. The sustainable strategy avoids this crash by maintaining the resource base, producing more total food across the full period. Compare total food produced over the entire 30-year period, not just the peak year. The Green Revolution strategy borrows from future productivity. When the soil debt comes due, the crash erases the early gains.
+
+---
+
+### Question 2
+
+The model shows that converting 30% of forest to farmland increases total food production by only 18%, not 30%. Which factor best explains why the production increase is less than proportional to the land increase?
+
+A. Newly converted forest land has lower soil fertility, less established irrigation, and higher erosion rates than existing optimized farmland
+B. The model incorrectly assumes that new farmland produces no food
+C. Farmers on new land use less fertilizer because they are unfamiliar with the soil
+D. Global food demand decreased during the simulation period
+
+Correct Answer: A
+
+Feedback: Correct. Forest soils, once cleared, lose organic matter rapidly, lack irrigation infrastructure, and are prone to erosion. New farmland is inherently less productive than established agricultural land, and deforestation disrupts local water cycles that previously supported the ecosystem. Think about what makes existing farmland productive: decades of soil management, irrigation systems, local climate adapted to open land. Newly cleared forest has none of these advantages and faces additional challenges like rapid topsoil loss.
+
+---
+
+### Question 3
+
+A student proposes reducing food waste by 50% as an alternative to increasing production. Based on the model, which assessment of this proposal is most accurate?
+
+A. Waste reduction is irrelevant because the problem is production, not distribution
+B. Reducing waste by 50% would effectively increase food availability by the equivalent of farming millions of additional hectares, without any environmental cost from land conversion or intensification
+C. Waste reduction would only affect wealthy nations and have no impact on global food security
+D. The model shows waste reduction is impossible because spoilage is a natural and unavoidable process
+
+Correct Answer: B
+
+Feedback: Correct. Since roughly one-third of all food produced is wasted, a 50% reduction in waste would free up massive amounts of food without any additional environmental burden. This is the most resource-efficient strategy for closing the food gap. Consider that approximately one-third of global food production is wasted. Recovering even half of that waste means more food is available without planting a single additional hectare or applying any additional fertilizer.
+
+---
+
+### Question 4
+
+The simulation reveals that water availability is the first resource to become limiting in the Green Revolution scenario. Which systems-level explanation accounts for water becoming the bottleneck before soil degradation or land availability?
+
+A. Water is the only resource that cannot be manufactured or substituted with technology
+B. Maximum fertilizer use increases crop water demand while simultaneously depleting aquifers and degrading watershed ecosystems, creating a self-reinforcing scarcity cycle
+C. Climate change is the only factor affecting water availability in the model
+D. Water limitations are an artifact of the model and do not reflect real-world agricultural constraints
+
+Correct Answer: B
+
+Feedback: Correct. Intensive agriculture creates a water scarcity feedback loop: higher fertilizer increases crop water demand, irrigation depletes aquifers faster than they recharge, and agricultural runoff degrades the watersheds that supply fresh water. The water crisis is both driven by and amplified by intensification. Consider how intensive farming affects water from multiple directions simultaneously. High-yield crops need more water, irrigation draws down aquifers, and chemical runoff pollutes water sources. These effects compound each other.
+
+---
+
+### Question 5
+
+Based on the complete model analysis, which policy recommendation is best supported by the simulation evidence for feeding 10 billion people by 2058?
+
+A. Maximize chemical inputs on existing farmland to push yields as high as possible in the short term
+B. A combined strategy of sustainable intensification, 50% waste reduction, and dietary shifts away from resource-intensive animal agriculture
+C. Convert all remaining forests to farmland to ensure maximum food production capacity
+D. Maintain current agricultural practices and rely on future technological breakthroughs to close the gap
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that no single strategy is sufficient. Sustainable intensification maintains yields without soil degradation, waste reduction frees existing food without environmental cost, and dietary shifts dramatically reduce the land and water needed per calorie. The combined approach is the only one that closes the gap sustainably. Review the model results for each individual strategy. None of them alone feeds 10 billion people sustainably for 30 years. The question is which combination of strategies addresses production, distribution, and demand simultaneously.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

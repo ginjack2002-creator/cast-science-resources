@@ -726,6 +726,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is inside a seed?
+
+A. Nothing, it is empty
+B. A tiny baby plant
+C. Just dirt
+
+Correct Answer: B
+
+Feedback: Yes! Inside every seed is a tiny baby plant waiting to grow. A seed is like a tiny package. Inside is a baby plant and a bit of food to help it start growing.
+
+---
+
+### Question 2
+
+What do seeds need to start growing?
+
+A. Water and sunlight
+B. Candy and toys
+C. Music and paint
+
+Correct Answer: A
+
+Feedback: That is right! Seeds need water and sunlight to start growing. Seeds need real things from nature, like water, sunlight, and soil, to start growing into plants.
+
+---
+
+### Question 3
+
+What happens if you never water a seed?
+
+A. It grows really fast
+B. It does not grow at all
+C. It turns into a rock
+
+Correct Answer: B
+
+Feedback: Yes! Without water, a seed will not grow. It will just sit there in the soil. Seeds need water to wake up and start growing. Without water, nothing happens.
+
+---
+
+### Question 4
+
+Are seeds alive?
+
+A. No, seeds are like tiny rocks
+B. Yes, seeds are alive but sleeping
+C. Only big seeds are alive
+
+Correct Answer: B
+
+Feedback: That is right! Seeds are alive, just waiting for water and warmth to start growing. Seeds are alive. They are like sleeping baby plants waiting for the right conditions to wake up.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is it called when a baby plant first pushes out of the seed?
+
+A. Swimming
+B. Sprouting
+C. Sleeping
+
+Correct Answer: B
+
+Feedback: Yes! When the baby plant first pokes out of the seed, we call it sprouting. Sprouting is when the baby plant inside the seed pushes up through the soil for the first time.
+
+---
+
+### Question 2
+
+When water amount goes UP, what happens to plant growth?
+
+A. Plant growth goes down
+B. Plant growth stays the same
+C. Plant growth goes up
+
+Correct Answer: C
+
+Feedback: That is right! When plants get the right amount of water, they grow taller and healthier. Water helps plants grow. More water (up to a point) means better plant growth.
+
+---
+
+### Question 3
+
+What is the correct order of plant growth?
+
+A. Flower, seed, sprout, big plant
+B. Seed, sprout, small plant, big plant
+C. Big plant, small plant, seed, sprout
+
+Correct Answer: B
+
+Feedback: Yes! A plant starts as a seed, then sprouts, grows into a small plant, and becomes a big plant. Plants grow in order: first a seed, then a sprout, then a small plant, and finally a big plant with leaves or flowers.
+
+---
+
+### Question 4
+
+You planted two seeds. You watered one every day and never watered the other. What will happen?
+
+A. Both seeds will grow the same
+B. The watered seed will grow and the dry one will not
+C. The dry seed will grow faster
+
+Correct Answer: B
+
+Feedback: Yes! The watered seed will sprout and grow. The dry seed will stay the same because it needs water to grow. Seeds need water to grow. The watered seed will sprout and grow, while the dry seed will not change.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

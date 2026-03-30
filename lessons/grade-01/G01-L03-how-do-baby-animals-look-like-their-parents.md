@@ -724,6 +724,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A mother cat has orange fur. What color will her kittens probably be?
+
+A. Green
+B. Orange or similar
+C. Any random color
+
+Correct Answer: B
+
+Feedback: Yes! Baby animals usually look a lot like their parents. Baby animals get their features from their parents, so kittens usually have colors like their mom and dad.
+
+---
+
+### Question 2
+
+Do baby animals look exactly the same as their parents?
+
+A. Yes, they are exact copies
+B. No, they look a little different
+C. They look nothing alike
+
+Correct Answer: B
+
+Feedback: That is right! Baby animals look similar to their parents, but not exactly the same. Babies look a lot like their parents, but there are always small differences that make each baby unique.
+
+---
+
+### Question 3
+
+A puppy has floppy ears like its dad. Why?
+
+A. The puppy chose floppy ears
+B. The puppy got them from its dad
+C. All dogs have floppy ears
+
+Correct Answer: B
+
+Feedback: Yes! The puppy got floppy ears from its parent. Babies get features like ear shape from their parents. The puppy inherited floppy ears from its dad.
+
+---
+
+### Question 4
+
+Which of these is a trait?
+
+A. A dog's toy
+B. A cat's fur color
+C. A fish's bowl
+
+Correct Answer: B
+
+Feedback: Yes! Fur color is a trait. A trait is a body feature an animal has. A trait is a feature of an animal's body, like fur color, eye shape, or ear size.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What does inherited mean?
+
+A. Something you buy at a store
+B. Something you get from your parents
+C. Something you find outside
+
+Correct Answer: B
+
+Feedback: Yes! Inherited means a feature passed from parents to their babies. Inherited means you got it from your parents, like your eye color or hair type.
+
+---
+
+### Question 2
+
+A parent dog has spots. What will the puppies probably look like?
+
+A. They will have stripes
+B. They will have similar spots
+C. They will have no pattern at all
+
+Correct Answer: B
+
+Feedback: That is right! Puppies inherit traits like spots from their parents. Babies inherit traits from their parents. If a parent has spots, the babies will probably have spots too.
+
+---
+
+### Question 3
+
+Two kittens from the same parents look a little different from each other. Why?
+
+A. One kitten is broken
+B. Babies are similar but never exact copies
+C. They are not really from the same parents
+
+Correct Answer: B
+
+Feedback: Yes! Even babies from the same parents are a little different. Each one is unique. Parent traits mix together in new ways, so each baby is similar but a little different.
+
+---
+
+### Question 4
+
+Can a baby animal choose what color its fur will be?
+
+A. Yes, it picks its favorite color
+B. No, traits come from parents
+C. Yes, if it tries really hard
+
+Correct Answer: B
+
+Feedback: That is right! Animals cannot choose their traits. They inherit them from their parents. Baby animals cannot choose their features. Traits like fur color are passed from parents before the baby is even born.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

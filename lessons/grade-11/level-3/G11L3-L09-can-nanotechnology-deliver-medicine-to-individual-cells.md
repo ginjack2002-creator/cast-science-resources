@@ -908,6 +908,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-3, HS-PS2-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Only approximately 0.7% of injected nanoparticles actually reach a tumor. What is the primary reason for this extremely low delivery efficiency?
+
+A. Nanoparticles are too large to travel through blood vessels
+B. The body's immune system, particularly liver and spleen macrophages, recognizes and removes the vast majority of nanoparticles from the bloodstream before they can reach the target
+C. Tumors actively repel nanoparticles through electrical fields
+D. Nanoparticles dissolve in the bloodstream before reaching the tumor
+
+Correct Answer: B
+
+Feedback: Correct. The mononuclear phagocyte system, primarily macrophages in the liver and spleen, aggressively clears foreign particles from the blood. 30-99% of injected nanoparticles are sequestered by the liver, leaving less than 1% to reach the tumor. The body's immune surveillance system treats nanoparticles as foreign invaders. Liver and spleen macrophages remove the vast majority from circulation within minutes. This biological barrier, not particle design, is the primary reason for low tumor delivery.
+
+---
+
+### Question 2
+
+What is opsonization, and why is it the first obstacle nanoparticles face after injection?
+
+A. Opsonization is the process by which nanoparticles absorb water and swell
+B. Blood proteins coat the nanoparticle surface, marking it for immune cell recognition and destruction, which begins within seconds of entering the bloodstream
+C. Opsonization is the chemical breakdown of the nanoparticle's drug payload
+D. Opsonization is the process by which nanoparticles bind to red blood cells
+
+Correct Answer: B
+
+Feedback: Correct. Opsonization begins almost immediately: blood proteins adsorb onto the nanoparticle surface, creating a 'protein corona' that immune cells recognize as foreign. This triggers phagocytosis and rapid clearance from the bloodstream. Opsonization is the body's first defense against foreign particles. Blood proteins coat the nanoparticle within seconds, acting as a 'eat me' signal for macrophages. Without countermeasures like PEGylation, nanoparticles are cleared from the blood in minutes.
+
+---
+
+### Question 3
+
+The enhanced permeability and retention (EPR) effect allows nanoparticles to accumulate in tumors passively. What biological feature of tumors enables this effect?
+
+A. Tumors produce magnetic fields that attract nanoparticles
+B. Tumor blood vessels are leaky with gaps of 200-800 nm, and the tumor's poor lymphatic drainage prevents nanoparticles from being cleared once they pass through the gaps
+C. Tumors are warmer than surrounding tissue, drawing nanoparticles toward them
+D. Tumor cells actively engulf all particles in the bloodstream
+
+Correct Answer: B
+
+Feedback: Correct. Tumors grow rapidly and form abnormal, leaky blood vessels with large gaps. Nanoparticles of the right size (20-200 nm) pass through these gaps, and the tumor's poorly developed lymphatic system cannot clear them, causing passive accumulation. The EPR effect relies on two tumor characteristics: 1) leaky blood vessels with 200-800 nm gaps that allow nanoparticles to pass through, and 2) poor lymphatic drainage that prevents clearance. This creates passive accumulation without any targeting ligand.
+
+---
+
+### Question 4
+
+PEGylation involves coating nanoparticles with polyethylene glycol (PEG) chains. What is the primary purpose of this surface modification?
+
+A. PEG increases the drug payload capacity of the nanoparticle
+B. PEG creates a hydrophilic stealth layer that reduces protein adsorption and immune recognition, extending the nanoparticle's circulation time from minutes to hours
+C. PEG makes nanoparticles magnetic for MRI tracking
+D. PEG increases the nanoparticle's size to improve tumor accumulation
+
+Correct Answer: B
+
+Feedback: Correct. PEG creates a hydrophilic shell that repels blood proteins, reducing opsonization and delaying immune recognition. This 'stealth' coating extends circulation half-life, giving nanoparticles more time to reach the tumor. PEGylation is a stealth strategy: the PEG polymer layer creates a hydrophilic brush that prevents blood proteins from adsorbing onto the nanoparticle surface, reducing immune recognition and extending circulation time from minutes to hours.
+
+---
+
+### Question 5
+
+Controlled drug release from nanoparticles can be triggered by conditions at the tumor site. Which tumor microenvironment condition is most commonly exploited for triggered release?
+
+A. The tumor's high oxygen concentration
+B. The acidic pH inside tumors (pH 5.5-6.5 compared to blood at pH 7.4), which can be used to design pH-sensitive nanoparticle coatings that dissolve and release drugs in the acidic tumor environment
+C. The tumor's low temperature compared to surrounding tissue
+D. The tumor's high electrical conductivity
+
+Correct Answer: B
+
+Feedback: Correct. Tumors typically have an acidic microenvironment (pH 5.5-6.5) due to rapid metabolism and poor blood flow. pH-sensitive nanoparticle coatings remain stable at blood pH (7.4) but dissolve in acidic conditions, releasing drugs specifically at the tumor. The acidic tumor microenvironment (pH 5.5-6.5) is the most widely exploited trigger. Nanoparticles can be designed with pH-sensitive bonds or coatings that are stable in blood (pH 7.4) but dissolve in the acidic tumor, providing site-specific drug release.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that increasing PEGylation density from 5% to 20% surface coverage extends circulation half-life from 2 to 12 hours but reduces cellular uptake at the tumor by 40%. What does this reveal about the design trade-off?
+
+A. Higher PEGylation is always better because longer circulation is the only goal
+B. The stealth effect of PEG that evades immune cells also reduces the nanoparticle's ability to interact with and enter target tumor cells, creating a fundamental tension between surviving the journey and completing the delivery
+C. PEGylation has no effect on tumor cell interactions
+D. The reduced uptake is caused by the nanoparticle becoming too large
+
+Correct Answer: B
+
+Feedback: Correct. The same PEG layer that protects nanoparticles from immune clearance also hinders their interaction with target cells. This 'PEG dilemma' is a central design challenge: stealth for the journey versus accessibility at the destination. This is the 'PEG dilemma': the stealth coating that enables immune evasion also prevents interaction with target cells. The nanoparticle must evade immune cells during transit but engage target cells at the tumor. These requirements are fundamentally in tension.
+
+---
+
+### Question 2
+
+The model shows that adding targeting ligands increases tumor cell binding by 300% but also increases liver accumulation by 150% because liver cells express low levels of the same receptor. What does this demonstrate about the specificity challenge?
+
+A. Targeting ligands should never be used because they increase off-target accumulation
+B. Active targeting improves tumor delivery but is limited by the fact that target receptors are rarely exclusive to tumor cells. Low-level expression on healthy cells creates off-target binding that concentrates the drug in the liver, potentially causing hepatotoxicity
+C. The 300% improvement in tumor binding outweighs all other considerations
+D. Liver accumulation is beneficial because it helps clear the drug from the body
+
+Correct Answer: B
+
+Feedback: Correct. The specificity challenge arises because few receptors are truly unique to tumor cells. Any receptor expressed (even at low levels) on healthy cells will capture targeting nanoparticles, concentrating drug in unintended organs and potentially causing toxicity. Targeting ligands improve tumor delivery but expose a specificity limitation: target receptors are rarely tumor-exclusive. Low-level expression on healthy cells, especially in the liver (which filters all blood), creates significant off-target accumulation. The therapeutic index must account for this.
+
+---
+
+### Question 3
+
+A student models nanoparticle size optimization and finds that 100 nm particles have the best balance of EPR-mediated tumor accumulation and immune evasion. Particles of 20 nm accumulate well but are cleared by the kidneys; 200 nm particles avoid kidney clearance but are captured more efficiently by liver macrophages. What principle does this size optimization demonstrate?
+
+A. All nanoparticle sizes perform equally well in the body
+B. Nanoparticle size must navigate between two biological barriers: renal filtration (removing particles that are too small) and phagocytic clearance (removing particles that are too large), creating a narrow optimal size window determined by the body's filtration and immune architecture
+C. Larger particles are always better because they carry more drug
+D. Size optimization is unnecessary because targeting ligands compensate for any size
+
+Correct Answer: B
+
+Feedback: Correct. The body imposes size-dependent barriers: kidneys clear small particles, liver macrophages clear large particles. The optimal size window (~60-120 nm) avoids both barriers while exploiting the EPR effect for tumor accumulation. The body's filtration systems create a size window: too small (<30 nm) and kidneys clear them; too large (>200 nm) and macrophages capture them more efficiently. The optimal range (~60-120 nm) threads between these biological barriers while maximizing tumor accumulation via the EPR effect.
+
+---
+
+### Question 4
+
+The model reveals that drug release rate must be tuned to a specific window: too fast and the drug is lost during circulation before reaching the tumor; too slow and therapeutic concentrations are never achieved at the target. A student proposes using the fastest possible release rate. Why is this approach counterproductive?
+
+A. Fast release increases the drug's potency at the tumor
+B. With fast release, most of the drug payload leaks out during the hours of circulation before the nanoparticle reaches the tumor, resulting in systemic drug exposure (conventional chemotherapy's side effect profile) rather than targeted delivery
+C. Release rate has no effect on therapeutic outcomes
+D. Fast release makes nanoparticles easier for the immune system to detect
+
+Correct Answer: B
+
+Feedback: Correct. If the drug releases during transit, the nanoparticle delivers free drug throughout the body rather than concentrated drug at the tumor. This negates the entire advantage of targeted delivery and reverts to the side-effect profile of conventional chemotherapy. Premature drug release defeats the purpose of nanoparticle delivery. If the drug leaks out during the hours of bloodstream circulation, it distributes systemically, just like conventional chemotherapy. The nanoparticle must retain its payload until it reaches the tumor.
+
+---
+
+### Question 5
+
+Based on the nanoparticle drug delivery model, which conclusion about the 0.7% tumor delivery rate is best supported by the simulation data?
+
+A. The 0.7% rate proves that nanoparticle drug delivery is a failed technology
+B. Despite the low percentage, the 0.7% delivery rate still represents a significant improvement over conventional chemotherapy because nanoparticles concentrate drug at the tumor while reducing exposure to healthy tissues. However, the model demonstrates that each biological barrier (opsonization, liver clearance, EPR variability, cellular uptake) multiplicatively reduces delivery, and meaningful improvement requires addressing multiple barriers simultaneously rather than optimizing any single parameter
+C. The 0.7% rate will naturally improve to 50% with continued use
+D. Tumor delivery percentage is irrelevant to therapeutic efficacy
+
+Correct Answer: B
+
+Feedback: Correct. The barriers are multiplicative: if each of 5 barriers removes 50% of particles, only 0.5^5 = 3% survive. Improving one barrier from 50% to 25% loss yields only a modest gain. Meaningful improvement requires addressing multiple barriers simultaneously. The delivery barriers are multiplicative, not additive. Each biological obstacle removes a fraction of particles, and the fractions compound. This means optimizing a single barrier provides limited benefit; only simultaneous improvement across multiple barriers can substantially increase tumor delivery.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

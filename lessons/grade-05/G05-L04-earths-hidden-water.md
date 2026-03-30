@@ -751,6 +751,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-ESS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+About how much of Earth's water is fresh water that people can drink?
+
+A. About 50%
+B. About 25%
+C. About 10%
+D. Less than 1%
+
+Correct Answer: D
+
+Feedback: That's right! About 97% of Earth's water is saltwater, about 2% is frozen in glaciers and ice caps, and less than 1% is accessible fresh water. It may surprise you, but less than 1% of all Earth's water is drinkable fresh water. Most water (97%) is saltwater in the oceans, and about 2% is frozen in glaciers.
+
+---
+
+### Question 2
+
+What happens to water in a lake on a very hot, sunny day?
+
+A. It sinks deeper underground
+B. It evaporates into the air as water vapor
+C. It turns into saltwater
+D. It stays exactly the same
+
+Correct Answer: B
+
+Feedback: Correct! Heat from the sun causes water to evaporate, turning liquid water into water vapor that rises into the atmosphere. When the sun heats water, the water molecules gain energy and escape into the air as water vapor. This process is called evaporation, and it removes water from lakes and rivers.
+
+---
+
+### Question 3
+
+What controls whether a city has enough water to drink?
+
+A. Only how much it rains
+B. Only how hot it is
+C. The balance between rainfall adding water and evaporation removing it
+D. How close the city is to the ocean
+
+Correct Answer: C
+
+Feedback: Good thinking! Freshwater availability depends on the balance between water coming in (precipitation) and water leaving (evaporation and use). A city's water supply depends on more than one factor. Precipitation adds water to reservoirs, while evaporation removes it. The balance between these forces determines how much fresh water is available.
+
+---
+
+### Question 4
+
+Why do some places experience water shortages while others have plenty?
+
+A. Some places are closer to the sun
+B. Different places have different amounts of rainfall and different temperatures
+C. Water shortages only happen in deserts
+D. Some places waste more water than others
+
+Correct Answer: B
+
+Feedback: That's right! Climate patterns determine how much rain falls and how fast water evaporates, creating very different water availability in different locations. Water availability varies because different regions receive different amounts of precipitation and have different temperatures. Hot, dry areas lose water to evaporation faster than rain can replace it.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the water system model, what happens during a drought with a heat wave (low precipitation, high temperature)?
+
+A. Freshwater Availability stays the same because water cycles back
+B. Evaporation Rate spikes while input drops, causing Freshwater Availability to crash
+C. Temperature has no effect on the water system
+D. Precipitation increases to balance out the heat
+
+Correct Answer: B
+
+Feedback: Correct! When precipitation is low and temperature is high, evaporation removes water faster than rain can replace it. Freshwater availability drops toward zero. Remember the drought simulation. High temperatures increase evaporation (removing water), while low precipitation means little water is being added. This double effect causes freshwater to crash.
+
+---
+
+### Question 2
+
+What type of relationship does Evaporation Rate have with Freshwater Availability?
+
+A. Positive: more evaporation increases freshwater
+B. Negative: more evaporation reduces freshwater availability
+C. No relationship: evaporation doesn't affect freshwater
+D. Positive: evaporation creates rain which adds freshwater
+
+Correct Answer: B
+
+Feedback: That's right! Evaporation removes water from lakes, rivers, and reservoirs, reducing the amount of fresh water available for communities. This is a negative relationship. Evaporation takes water away from the surface and puts it into the atmosphere. While it may eventually rain somewhere, the local freshwater supply decreases. This is a negative (-) relationship.
+
+---
+
+### Question 3
+
+In 2018, Cape Town, South Africa nearly ran out of water. Based on your model, what combination of conditions most likely caused this?
+
+A. High precipitation and low temperature
+B. Low precipitation and high temperature over an extended period
+C. High wind speeds that blew the water away
+D. Too many rivers flowing into the ocean
+
+Correct Answer: B
+
+Feedback: Exactly! Cape Town experienced a severe drought (low precipitation) combined with warm temperatures (high evaporation). This matches the worst-case scenario in your model. Cape Town's crisis happened because of prolonged drought (very little rain) combined with warm conditions that increased evaporation. In your model, this is the 'Drought + Heat Wave' scenario.
+
+---
+
+### Question 4
+
+Why does cold winter weather actually help build freshwater supplies?
+
+A. Cold weather creates more rain
+B. Cold temperatures reduce evaporation, and precipitation accumulates as snow that stores water
+C. Ice from glaciers melts faster in winter
+D. People use less water in winter
+
+Correct Answer: B
+
+Feedback: Correct! Cold temperatures slow evaporation dramatically, and heavy precipitation stored as snowpack acts as a natural reservoir that releases water slowly during warmer months. In the winter snowpack scenario, low temperatures reduce evaporation (less water is lost), and precipitation falls as snow that accumulates. This stored snow releases water gradually in spring and summer.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: D
+Question 2: B
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

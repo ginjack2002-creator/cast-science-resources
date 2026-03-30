@@ -918,6 +918,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-4, HS-ESS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What makes a forest a 'carbon sink'?
+
+A. The forest floor absorbs carbon from underground rock formations
+B. Trees absorb more CO2 through photosynthesis than the forest releases through respiration and decomposition
+C. Forests produce carbon monoxide, which traps less heat than CO2
+D. Carbon sinks are man-made reservoirs installed in forests
+
+Correct Answer: B
+
+Feedback: Correct. A carbon sink absorbs more CO2 than it releases. Intact forests absorb about 2.6 billion tons of CO2 annually through photosynthesis. A forest is a carbon sink when its net carbon uptake (via photosynthesis) exceeds its net carbon release (via respiration and decomposition). Intact forests globally absorb approximately 2.6 billion tons of CO2 per year.
+
+---
+
+### Question 2
+
+How do tropical forests contribute to their own rainfall?
+
+A. Tree canopies physically block rain from evaporating, trapping moisture
+B. Trees pump water from soil and release it as vapor through evapotranspiration, generating clouds and rainfall
+C. Forests produce chemicals that seed cloud formation from industrial pollutants
+D. Tropical forests do not significantly affect local rainfall patterns
+
+Correct Answer: B
+
+Feedback: Correct. Through evapotranspiration, tropical forests create up to 50% of their own precipitation by recycling water from soil to atmosphere. Tropical trees absorb water through their roots and release it as vapor through leaf pores (evapotranspiration). This moisture forms clouds that produce rainfall, recycling up to 50% of the forest's precipitation.
+
+---
+
+### Question 3
+
+What is 'savannification' in the context of tropical forests?
+
+A. The natural growth cycle of savanna grasslands
+B. The irreversible transition of a tropical rainforest to a savanna or grassland when tree cover drops below a critical threshold
+C. A conservation strategy that replaces forests with grasslands
+D. The seasonal drying of tropical forests during winter months
+
+Correct Answer: B
+
+Feedback: Correct. Savannification is the irreversible loss of tropical rainforest structure and function, triggered when deforestation reduces tree cover below the threshold needed to sustain the forest's rainfall cycle. Savannification occurs when deforestation reduces forest cover below the threshold needed to maintain the evapotranspiration-rainfall cycle. Without enough trees to generate moisture, the forest dries out and transitions irreversibly to savanna.
+
+---
+
+### Question 4
+
+Approximately what percentage of the Amazon rainforest has already been deforested?
+
+A. About 5%
+B. About 17%
+C. About 40%
+D. About 65%
+
+Correct Answer: B
+
+Feedback: Correct. The Amazon has lost approximately 17% of its original forest, with scientists estimating the tipping point at 20-25% loss. Approximately 17% of the Amazon rainforest has been cleared. Scientists estimate the tipping point for irreversible savannification at 20-25% loss, meaning the Amazon is dangerously close to a critical threshold.
+
+---
+
+### Question 5
+
+If a region loses 30% of its forest cover, how might this affect the local fire risk?
+
+A. Fire risk decreases because there is less fuel to burn
+B. Fire risk remains unchanged because fires depend only on temperature
+C. Fire risk increases because reduced evapotranspiration dries out the remaining forest, and fragmented forest edges are more exposed
+D. Fire risk increases only in non-tropical forests
+
+Correct Answer: C
+
+Feedback: Correct. Deforestation reduces rainfall via decreased evapotranspiration, drying out remaining forest. Fragmented edges are exposed to drying winds and human ignition sources, dramatically increasing fire risk. Deforestation reduces local rainfall by disrupting evapotranspiration, drying out remaining forest. Forest edges exposed by fragmentation are particularly vulnerable to desiccation and fire, which can destroy more forest in a self-reinforcing cycle.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that at 25% Amazon deforestation, Regional Rainfall drops below a threshold and Fire Susceptibility spikes. Even when Reforestation Rate is set to match Deforestation Rate, the forest continues to decline. What best explains this result?
+
+A. Reforestation seedlings consume more water than mature trees
+B. Once the rainfall-fire feedback loop engages, the system is self-reinforcing: reduced forest lowers rainfall, which increases fire, which destroys more forest, regardless of replanting efforts
+C. Deforestation and reforestation rates cancel out perfectly, so the forest should stabilize
+D. The model is flawed because reforestation always restores forest function immediately
+
+Correct Answer: B
+
+Feedback: Correct. The tipping point is where the positive feedback loop (less forest leads to less rain leads to more fire leads to less forest) becomes self-reinforcing and overpowers reforestation efforts. Beyond the tipping point, the deforestation-drought-fire feedback loop operates independently of human reforestation efforts. Reduced forest cover decreases evapotranspiration, lowering rainfall, which dries out remaining forest, increasing fire risk in a self-sustaining cycle.
+
+---
+
+### Question 2
+
+A policy team proposes planting 10 million hectares of new forest per year to fully offset 10 million hectares of annual deforestation. The model shows this strategy fails over 30 years. Which timescale mismatch is responsible?
+
+A. Newly planted trees grow faster than expected, overshooting carbon targets
+B. Deforestation releases stored carbon instantly, but replanted trees take 20-40 years to reach carbon sequestration maturity, creating a decades-long carbon debt
+C. Reforestation costs decrease over time, making the program unsustainable
+D. Deforestation only affects carbon storage, not water cycles
+
+Correct Answer: B
+
+Feedback: Correct. A chainsaw releases centuries of stored carbon in hours, while a seedling takes 20-40 years to reach maturity. This asymmetry creates an unavoidable carbon debt even with equal area replanting. The fundamental timescale mismatch: deforestation releases stored carbon almost instantly, but a newly planted tree needs 20-40 years to reach the carbon sequestration capacity of the mature tree it replaced. Hectare-for-hectare replacement does not equal carbon-for-carbon replacement.
+
+---
+
+### Question 3
+
+The model reveals that forests generate up to 50% of their own rainfall. A student concludes that any amount of deforestation will proportionally reduce rainfall. Why is this linear interpretation incorrect?
+
+A. Rainfall is entirely controlled by ocean temperatures, not forests
+B. The system exhibits threshold behavior: below a critical forest cover level, the evapotranspiration-rainfall cycle cannot sustain itself, causing a rapid nonlinear collapse rather than a gradual proportional decline
+C. Deforestation actually increases rainfall because bare ground reflects more heat
+D. Forest rainfall recycling only matters in temperate, not tropical, forests
+
+Correct Answer: B
+
+Feedback: Correct. The forest-rainfall relationship has threshold dynamics. Above the threshold, the cycle is self-sustaining with gradual decline. Below it, the cycle collapses rapidly because the remaining forest cannot generate enough moisture. The model shows nonlinear threshold behavior: the evapotranspiration-rainfall system is self-sustaining above a critical forest cover threshold but collapses below it. The transition from forest to savanna is abrupt, not proportional to deforestation area.
+
+---
+
+### Question 4
+
+An economist argues that converting forest to agriculture is rational because farmland generates immediate revenue. Using the model, which systems-level analysis best addresses this argument?
+
+A. Forest conservation never generates economic value
+B. While clearing forest is individually rational for landowners, the ecosystem services provided by intact forest (rainfall generation, carbon storage, biodiversity, flood control) are worth far more than agricultural revenue but are externalities not captured by market prices
+C. Agricultural revenue always exceeds the value of ecosystem services
+D. Deforestation has no economic consequences beyond the cleared area
+
+Correct Answer: B
+
+Feedback: Correct. This is a tragedy of the commons: individual economic incentives favor clearing, but the collective value of intact forest ecosystem services far exceeds agricultural revenue when properly accounted for. The model demonstrates a classic externality problem: the farmer captures agricultural revenue but the costs of lost ecosystem services (rainfall, carbon storage, biodiversity) are borne by everyone. The total value of ecosystem services exceeds agricultural value, but markets fail to reflect this.
+
+---
+
+### Question 5
+
+Based on the model, which combination of strategies would be most effective at preventing the Amazon from crossing its savannification tipping point?
+
+A. Focus exclusively on reforestation of already-cleared areas
+B. Allow continued deforestation but plant twice as many trees elsewhere
+C. Halt deforestation of intact forest to prevent crossing the threshold, while simultaneously reforesting degraded areas and creating economic alternatives that make standing forest more valuable than cleared land
+D. Accept savannification as inevitable and adapt agricultural practices
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that preventing tipping point crossing requires stopping intact forest loss (the primary threat), restoring degraded areas, and changing the economic calculus that drives deforestation. The model indicates that the most effective strategy addresses all three dimensions: stopping further loss of intact forest (to stay above the threshold), restoring degraded land (to rebuild the evapotranspiration cycle), and restructuring economic incentives (to make conservation economically viable).
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+---
+
 ## Resources
 
 | Resource | Link |

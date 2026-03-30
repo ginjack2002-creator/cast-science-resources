@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why do you think bees visit flowers?
+
+A. Bees like to smell the flowers
+B. Bees drink a sugary liquid called nectar from inside the flowers
+C. Bees are lost and looking for their hive
+D. Bees want to sting the flowers
+
+Correct Answer: B
+
+Feedback: That is right! Bees visit flowers to drink nectar, a sweet liquid that flowers make. While drinking, pollen sticks to the bee's fuzzy body. Bees visit flowers for food. Flowers make a sweet liquid called nectar that bees drink. While the bee drinks, pollen sticks to its fuzzy body.
+
+---
+
+### Question 2
+
+What do you think happens to a flower's pollen when a bee visits?
+
+A. The bee eats all the pollen
+B. Pollen sticks to the bee's body and gets carried to the next flower
+C. The pollen falls on the ground and is wasted
+D. Nothing happens to the pollen
+
+Correct Answer: B
+
+Feedback: Correct! Sticky pollen hitches a ride on the bee's fuzzy body. When the bee visits the next flower, some pollen falls off and pollinates that flower. When a bee visits a flower, sticky pollen attaches to its fuzzy body. The bee then carries this pollen to the next flower it visits, helping the plant reproduce.
+
+---
+
+### Question 3
+
+What do you think would happen if there were no bees?
+
+A. Nothing would change
+B. Flowers would still make fruit on their own
+C. Many plants could not make fruit or seeds, and we would have less food
+D. Only beeswax would disappear
+
+Correct Answer: C
+
+Feedback: Great thinking! Without bees and other pollinators, many plants could not make fruit or seeds. About 75% of our food crops need pollinators. Bees are essential for most plants to make fruit and seeds. Without bees, many of our favorite foods like apples, strawberries, and almonds would not grow.
+
+---
+
+### Question 4
+
+Which of these is an example of a pollinator?
+
+A. A rock
+B. A butterfly
+C. A fish
+D. A pencil
+
+Correct Answer: B
+
+Feedback: Yes! Butterflies are pollinators, just like bees, hummingbirds, and bats. They all carry pollen from flower to flower. A pollinator is an animal that carries pollen between flowers. Butterflies, bees, hummingbirds, and bats are all pollinators.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the pollination model, when Pollinator Visits increase, what happens to Pollination Success?
+
+A. Pollination Success decreases because the bees get tired
+B. Pollination Success increases because more flowers receive pollen
+C. Pollination Success stays the same
+D. Pollination Success disappears
+
+Correct Answer: B
+
+Feedback: Correct! Pollinator Visits and Pollination Success have a positive relationship. More bee visits means more flowers receive pollen and can start making seeds. More pollinator visits means more flowers get pollen delivered to them. When Pollinator Visits go up, Pollination Success goes up too. This is a positive relationship.
+
+---
+
+### Question 2
+
+What does interdependence mean in the relationship between bees and flowers?
+
+A. Bees and flowers have nothing to do with each other
+B. Only bees need flowers, but flowers do not need bees
+C. Bees and flowers need each other to survive: bees need nectar for food, and flowers need bees to spread pollen
+D. Only flowers need bees, but bees do not need flowers
+
+Correct Answer: C
+
+Feedback: Exactly! Interdependence means they BOTH need each other. Bees need flower nectar for food, and flowers need bees to carry pollen so they can make seeds and fruit. Interdependence means two living things need EACH OTHER. Bees depend on flowers for nectar (food), and flowers depend on bees to spread their pollen. Neither can thrive without the other.
+
+---
+
+### Question 3
+
+In the 'No Pollinators' scenario, what happened to Fruit Production?
+
+A. Fruit Production stayed normal
+B. Fruit Production increased
+C. Fruit Production dropped to very low or zero because no pollen was being moved between flowers
+D. Fruit Production doubled
+
+Correct Answer: C
+
+Feedback: You got it! With no pollinators visiting, no pollen moves between flowers. Without pollination, plants cannot make fruit or seeds, so Fruit Production drops to near zero. Without pollinators, no pollen is carried from flower to flower. Plants need pollination to make fruit and seeds. With zero pollinator visits, fruit production drops to very low or zero.
+
+---
+
+### Question 4
+
+About what percentage of food crops depend on pollinators like bees?
+
+A. About 10%
+B. About 25%
+C. About 50%
+D. About 75%
+
+Correct Answer: D
+
+Feedback: Right! About 75% of food crops depend on pollinators. That includes apples, strawberries, almonds, chocolate, and many more foods we eat every day. About 75% of the food crops that humans eat depend on pollinators like bees, butterflies, and hummingbirds. Without pollinators, most of our favorite foods would disappear.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: D
+
+---
+
 ## Resources
 
 | Resource | Link |

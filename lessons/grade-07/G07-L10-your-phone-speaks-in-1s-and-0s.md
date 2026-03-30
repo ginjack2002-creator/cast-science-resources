@@ -884,6 +884,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS4-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the main difference between an analog signal and a digital signal?
+
+A. Analog signals are newer technology; digital signals are older
+B. Analog signals vary continuously and smoothly; digital signals use discrete values like 1s and 0s
+C. Analog signals can only carry sound; digital signals can only carry images
+D. There is no real difference. They are two words for the same thing.
+
+Correct Answer: B
+
+Feedback: Correct! Analog signals are continuous, like the smooth groove in a vinyl record. Digital signals encode information as discrete steps, typically binary values (1s and 0s) that represent measurements of the original signal. Not quite. Analog signals vary smoothly and continuously (like a sound wave), while digital signals break information into discrete numerical values (typically 1s and 0s) that can be exactly copied and transmitted.
+
+---
+
+### Question 2
+
+Why might a digital copy of a song sound different from a live performance?
+
+A. Digital recordings always sound better than live music
+B. Converting a continuous sound wave into digital format involves measuring it at intervals, which may not capture every detail
+C. Digital recordings add extra sounds that were not in the original performance
+D. Live performances use analog sound, which is always lower quality than digital
+
+Correct Answer: B
+
+Feedback: Correct! When sound is digitized, it is sampled at regular intervals. Some details between samples may be lost. The quality depends on how frequently and precisely the sound is measured. Not quite. When analog sound is converted to digital, it is measured at specific intervals (sampling). Details that exist between those measurement points may not be captured, depending on the sampling rate and precision.
+
+---
+
+### Question 3
+
+What does 'compression' mean when talking about digital files like MP3s?
+
+A. Physically squishing the device to make files smaller
+B. Reducing the file size by removing some data, which may reduce quality
+C. Making the sound louder by pressing the audio waves closer together
+D. Converting the file from digital back to analog format
+
+Correct Answer: B
+
+Feedback: Correct! Compression reduces file size by removing data. Lossy compression (like MP3) permanently removes data that algorithms predict humans will not notice, trading some quality for much smaller files. Not quite. Digital compression reduces file size by removing some data. In lossy compression (like MP3), data deemed least noticeable to human ears is permanently removed, making the file smaller but slightly reducing quality.
+
+---
+
+### Question 4
+
+Why do some music files take up more storage space than others, even if the songs are the same length?
+
+A. Longer song titles create larger file sizes
+B. Different formats use different amounts of data to encode the same audio, depending on quality settings
+C. Louder songs take up more space than quieter songs
+D. All songs of the same length have exactly the same file size
+
+Correct Answer: B
+
+Feedback: Correct! Different audio formats and quality settings use different amounts of data. An uncompressed WAV file contains all the original data, while a compressed MP3 removes data to reduce file size. Higher quality settings mean larger files. Not quite. File size depends on the format and quality settings used. An uncompressed WAV file stores all audio data and is very large, while an MP3 uses compression to reduce size by removing data. Higher quality settings produce larger files.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the digital signal model, sampling rate is set to maximum and compression level to minimum. What does the model predict about signal accuracy and file size?
+
+A. Signal accuracy is low but file size is very small
+B. Signal accuracy is very high but file size is very large
+C. Both signal accuracy and file size are at minimum values
+D. Signal accuracy and file size are unrelated to these settings
+
+Correct Answer: B
+
+Feedback: Correct! Maximum sampling rate captures the most detail (highest accuracy) but produces the most data. Minimum compression keeps all that data intact, resulting in very large files. This is studio-quality audio. Not quite. High sampling rate with low compression produces the most accurate digital reproduction of the original signal, but at the cost of very large file sizes. This is the quality-vs-size trade-off engineers must balance.
+
+---
+
+### Question 2
+
+A student claims: 'Digital music is always better than analog vinyl.' Based on the model, which response is most scientifically accurate?
+
+A. The student is correct. Digital is superior in every measurable way.
+B. Digital is more RELIABLE (perfect copies, no degradation), but the quality depends on sampling rate and compression settings, and heavily compressed digital audio may sound worse than vinyl
+C. Vinyl is always better because it captures continuous sound without any loss
+D. Neither is better because they produce identical sound
+
+Correct Answer: B
+
+Feedback: Correct! Digital's advantage is reliability: perfect copies with no degradation. But digital quality depends on settings. High-quality digital can sound as good as or better than vinyl, while heavily compressed digital may lose detail that vinyl preserves. Not quite. Digital signals are more reliable because they can be copied perfectly without degradation. However, the quality of digital audio depends on sampling rate and compression. Highly compressed digital files may actually lose details that a well-maintained vinyl record preserves.
+
+---
+
+### Question 3
+
+When compression level is pushed to maximum in the model, what happens to the music?
+
+A. The music sounds identical because compression only affects file size, not quality
+B. The music quality drops noticeably, with thin, metallic, or watery sound artifacts because too much data has been removed
+C. The music gets louder because compression pushes the sound waves together
+D. The music plays faster because there is less data to process
+
+Correct Answer: B
+
+Feedback: Correct! Extreme compression removes so much audio data that quality drops noticeably. The music may sound thin, watery, or metallic because the compression algorithm removed too many details that human ears can detect. Not quite. At extreme compression levels, the algorithm removes enough data that humans can hear the difference. The music may sound thin, metallic, or lacking in detail because important audio information has been permanently deleted.
+
+---
+
+### Question 4
+
+Why are digital signals considered more reliable than analog signals for transmitting and storing information?
+
+A. Digital equipment is physically stronger and more durable than analog equipment
+B. Digital signals encode information as exact numbers that can be copied perfectly, while analog signals degrade with each copy or playback
+C. Analog signals can only travel short distances, while digital signals travel worldwide
+D. Digital signals use more electricity, which makes them more powerful
+
+Correct Answer: B
+
+Feedback: Correct! Digital signals are just numbers (binary), and numbers can be copied exactly. The millionth copy is identical to the first. Analog signals are physical patterns that degrade with each copy, like photocopying a photocopy. Digital also includes error correction to fix transmission mistakes. Not quite. The key advantage is that digital signals encode information as exact numbers (1s and 0s) that can be copied perfectly every time. Analog signals are physical patterns that degrade with each copy or playback. Digital systems also include error correction to detect and fix transmission errors.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

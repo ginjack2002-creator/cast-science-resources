@@ -885,6 +885,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-7, HS-LS2-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which equation correctly represents the overall reaction of photosynthesis?
+
+A. C6H12O6 + 6O2 -> 6CO2 + 6H2O + energy
+B. 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2
+C. 6O2 + 6H2O -> 6CO2 + C6H12O6 + light
+D. C6H12O6 -> 6CO2 + 6H2O + light energy
+
+Correct Answer: B
+
+Feedback: Correct. Photosynthesis uses light energy to convert carbon dioxide and water into glucose and oxygen. This reaction stores solar energy in the chemical bonds of glucose. Incorrect. Photosynthesis converts CO2 and H2O into glucose and O2 using light energy. Choice A describes cellular respiration, the reverse process.
+
+---
+
+### Question 2
+
+Cellular respiration is the process by which organisms:
+
+A. Absorb oxygen through their skin to cool their body temperature.
+B. Break down glucose using oxygen to release stored chemical energy as ATP.
+C. Convert sunlight into chemical energy stored in glucose.
+D. Eliminate carbon dioxide waste produced by photosynthesis.
+
+Correct Answer: B
+
+Feedback: Correct. Cellular respiration breaks the bonds of glucose molecules using oxygen, releasing the stored energy as ATP (the cell's energy currency) with CO2 and H2O as byproducts. Incorrect. Cellular respiration is the metabolic process that breaks down glucose (C6H12O6 + 6O2 -> 6CO2 + 6H2O + ATP), releasing energy stored in chemical bonds for cellular work.
+
+---
+
+### Question 3
+
+As organisms increase in size, their surface-area-to-volume ratio:
+
+A. Increases, allowing larger organisms to capture more light per unit volume.
+B. Stays the same regardless of size.
+C. Decreases, because volume grows faster (r^3) than surface area (r^2).
+D. Depends only on the organism's shape, not its size.
+
+Correct Answer: C
+
+Feedback: Correct. Surface area scales with the square of linear dimensions (r^2) while volume scales with the cube (r^3). Larger organisms have proportionally less surface area relative to their volume. Incorrect. As organisms grow, volume increases faster than surface area (cube vs. square relationship). This decreasing surface-area-to-volume ratio has profound implications for energy capture and heat regulation.
+
+---
+
+### Question 4
+
+Photosynthesis converts approximately what percentage of incoming solar energy into chemical energy stored in glucose?
+
+A. About 50%, making it highly efficient.
+B. About 25%, comparable to solar panels.
+C. About 1-2% under field conditions.
+D. About 90%, since plants have evolved for billions of years.
+
+Correct Answer: C
+
+Feedback: Correct. Despite 3 billion years of evolution, photosynthesis achieves only about 1-2% energy conversion efficiency under field conditions. This is due to losses at multiple steps in the light and dark reactions. Incorrect. Natural photosynthesis is surprisingly inefficient, converting only about 1-2% of incoming solar energy to glucose. Losses occur at multiple steps: wrong wavelengths, reflection, heat loss, and photorespiration.
+
+---
+
+### Question 5
+
+What is the relationship between photosynthesis and cellular respiration in the global carbon cycle?
+
+A. They are unrelated processes that happen to involve similar molecules.
+B. They are complementary reactions that cycle carbon between the atmosphere (CO2) and living organisms (organic molecules).
+C. Photosynthesis creates carbon while cellular respiration destroys it.
+D. Both processes release CO2 into the atmosphere.
+
+Correct Answer: B
+
+Feedback: Correct. Photosynthesis removes CO2 from the atmosphere and stores carbon in glucose. Cellular respiration breaks down glucose and returns CO2 to the atmosphere. Together, they cycle carbon between living and non-living systems. Incorrect. Photosynthesis and cellular respiration are mirror-image reactions that together drive the global carbon cycle. Photosynthesis fixes atmospheric CO2 into organic molecules; respiration returns that carbon to the atmosphere.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that a photosynthetic human with 1.7 m^2 of surface area would produce approximately 60-100 kcal/day, while needing 2,000 kcal/day. What is the fundamental constraint the model identifies as making photosynthetic humans impossible?
+
+A. Human skin cannot contain chlorophyll molecules.
+B. The surface-area-to-volume ratio: a human's energy needs (proportional to volume) vastly exceed light-capture capacity (proportional to surface area).
+C. Sunlight does not contain enough energy to power any organism.
+D. Cellular respiration prevents photosynthesis from occurring in the same organism.
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies the surface-area-to-volume ratio as the fundamental constraint. A human's metabolic demands scale with body volume, but light capture scales with surface area. The geometry makes photosynthetic humans mathematically impossible. Incorrect. The model reveals that the fundamental constraint is geometric: energy needs scale with body volume while light capture scales with surface area. As body size increases, the energy deficit grows unavoidably.
+
+---
+
+### Question 2
+
+In the Scaling Problem scenario, the model shows that single-celled organisms can fully meet energy needs through photosynthesis, but organisms at human scale cannot. At what approximate body size does the model predict photosynthesis becomes insufficient?
+
+A. At approximately 1 meter in length.
+B. At approximately 10 cm in length.
+C. At approximately millimeter scale for organisms with human-like metabolic rates.
+D. Photosynthesis is sufficient at all body sizes if enough chlorophyll is present.
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that for organisms with high metabolic rates like animals, the crossover point where respiration exceeds photosynthetic capacity occurs at roughly millimeter scale. Plants succeed because they are metabolically slow. Incorrect. The model demonstrates that the crossover depends on BOTH size and metabolic rate. For organisms with human-like metabolism, photosynthesis becomes insufficient at approximately millimeter scale.
+
+---
+
+### Question 3
+
+The model demonstrates that Sunlight Intensity has a positive effect on Glucose Production Rate, but only up to a saturation point. What biological mechanism explains this saturation?
+
+A. Excess light damages chlorophyll, reducing photosynthetic capacity.
+B. The photosynthetic reaction centers have a maximum processing rate. Beyond saturation, additional light photons cannot be utilized because the enzyme machinery is already operating at full capacity.
+C. Plants close their stomata in bright light, preventing CO2 entry.
+D. High light intensity converts glucose back into CO2 through reverse photosynthesis.
+
+Correct Answer: B
+
+Feedback: Correct. The model reflects that photosynthetic enzymes (particularly in the Calvin cycle) have maximum reaction rates. Beyond light saturation, the bottleneck shifts from light availability to enzyme processing capacity. Incorrect. Light saturation occurs because photosynthetic enzymes have a maximum processing rate. Once the reaction centers are operating at full capacity, additional photons cannot increase glucose production regardless of intensity.
+
+---
+
+### Question 4
+
+A student examines the model and observes that photosynthesis (6CO2 + 6H2O -> C6H12O6 + 6O2) and cellular respiration (C6H12O6 + 6O2 -> 6CO2 + 6H2O) are chemically opposite. Based on the model, what role does this complementary relationship play in Earth's systems?
+
+A. The reactions cancel each other out and have no net effect on Earth's atmosphere.
+B. Together they cycle carbon between the atmosphere and biosphere, maintaining atmospheric CO2 balance when not disrupted by external inputs like fossil fuel burning.
+C. They demonstrate that photosynthesis is a more important process than respiration.
+D. The complementary relationship means organisms that photosynthesize do not need to respire.
+
+Correct Answer: B
+
+Feedback: Correct. The model shows these mirror reactions form the biological carbon cycle. Photosynthesis fixes atmospheric CO2; respiration returns it. This cycle has maintained CO2 balance for hundreds of millions of years until fossil fuel burning disrupted it. Incorrect. The model demonstrates that photosynthesis and respiration together form a carbon cycle between atmosphere and biosphere. This cycle maintained atmospheric CO2 balance for hundreds of millions of years before human fossil fuel use disrupted it.
+
+---
+
+### Question 5
+
+Based on model evidence, a biotech company proposes engineering algae that achieve 10% photosynthetic efficiency (compared to the natural 1-2%) for biofuel production. Which model insight best evaluates whether this is scientifically plausible?
+
+A. The model shows 10% is impossible because photosynthesis has already been evolutionarily optimized.
+B. The model identifies specific energy loss steps (wrong wavelengths, heat loss, photorespiration) that could theoretically be improved. While the theoretical maximum is about 11%, achieving 10% in practice would require overcoming multiple biological constraints.
+C. The model proves that any efficiency above 2% violates the laws of thermodynamics.
+D. The model does not provide information relevant to bioengineering efficiency.
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies where energy is lost at each step. Since the theoretical maximum (~11%) exceeds the proposed 10%, the goal is not thermodynamically impossible but would require addressing multiple specific bottlenecks identified by the model. Incorrect. The model maps specific energy losses at each step of photosynthesis. Since the theoretical maximum (~11%) allows room for improvement beyond natural 1-2%, the 10% goal is thermodynamically possible but biologically challenging.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

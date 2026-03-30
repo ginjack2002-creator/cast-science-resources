@@ -922,6 +922,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Coral reefs cover less than 1% of the ocean floor but support approximately 25% of all marine species. Which ecological concept best explains this disproportionate importance?
+
+A. Competitive exclusion, where one species dominates all others
+B. Structural complexity that creates diverse microhabitats, supporting high species richness
+C. Uniform environmental conditions that favor a single dominant species
+D. Low predation pressure that allows unlimited population growth
+
+Correct Answer: B
+
+Feedback: Correct. Coral reefs create three-dimensional structural complexity with crevices, overhangs, and surfaces that provide diverse microhabitats for feeding, shelter, spawning, and nursery areas, supporting extraordinarily high biodiversity relative to their area. Incorrect. The key is structural complexity. Coral reefs are not uniform environments. Their intricate physical structure creates thousands of distinct microhabitats that support different species with different ecological needs.
+
+---
+
+### Question 2
+
+Ocean pH has dropped from 8.2 to 8.1 since pre-industrial times, a change that represents a 26% increase in acidity. Why is this small numerical change significant for coral reef organisms?
+
+A. The pH scale is logarithmic, so a 0.1 unit change represents a much larger proportional change in hydrogen ion concentration
+B. Marine organisms can only survive within a pH range of exactly 8.2 to 8.3
+C. The change only affects organisms larger than 1 centimeter in length
+D. pH changes in the ocean are immediately reversed by wave action mixing
+
+Correct Answer: A
+
+Feedback: Correct. Because pH is a logarithmic scale, a decrease of 0.1 units represents a 26% increase in hydrogen ion concentration. This substantial chemical change reduces carbonate ion availability, which corals and shellfish need to build calcium carbonate skeletons. Incorrect. The pH scale is logarithmic, meaning each unit change represents a tenfold change in hydrogen ion concentration. A 0.1 decrease equals approximately 26% more acidity, which significantly reduces the carbonate ions available for coral skeleton building.
+
+---
+
+### Question 3
+
+Zooxanthellae algae provide up to 90% of a coral's energy through photosynthesis. If ocean temperatures rise 1-2 degrees Celsius above the normal summer maximum, what would you predict happens to this symbiotic relationship?
+
+A. Zooxanthellae increase photosynthesis rates, providing more energy to the coral
+B. Corals expel the zooxanthellae under thermal stress, losing their primary energy source and their color
+C. Zooxanthellae migrate deeper into coral tissue where temperatures are cooler
+D. The coral secretes protective mucus that insulates the zooxanthellae from temperature change
+
+Correct Answer: B
+
+Feedback: Correct. Thermal stress causes corals to expel their zooxanthellae in a process called coral bleaching. The loss of these algae reveals the white skeleton and deprives the coral of up to 90% of its energy, leading to starvation and death if the stress persists. Incorrect. Under thermal stress, corals do not protect their zooxanthellae. Instead, they expel them in a stress response called bleaching. Without these symbiotic algae, corals lose both their color and their primary energy source.
+
+---
+
+### Question 4
+
+A marine biologist observes that a coral reef has shifted from being coral-dominated to algae-dominated after a series of bleaching events. Which term best describes this ecological change?
+
+A. Primary succession beginning on newly formed substrate
+B. A phase shift representing a regime change that is difficult to reverse due to positive feedback loops
+C. Normal seasonal variation in reef community composition
+D. Competitive exclusion that will naturally reverse once coral populations recover
+
+Correct Answer: B
+
+Feedback: Correct. A phase shift from coral to algae dominance represents a regime change. Positive feedback loops maintain the new state: algae smother coral larvae, dead coral provides algae substrate, and reduced reef structure drives away herbivorous fish that would control algae. Incorrect. This transition is a phase shift, not a temporary fluctuation. Once algae dominate, positive feedback loops (algae blocking coral recruitment, loss of herbivore fish habitat, dead coral becoming algae substrate) lock in the degraded state.
+
+---
+
+### Question 5
+
+Herbivorous fish like parrotfish play a critical role on coral reefs by consuming algae. If overfishing reduces parrotfish populations by 80%, which outcome is most likely during a moderate bleaching event?
+
+A. The reef recovers faster because there is less competition for coral larvae settlement
+B. The reef is more likely to undergo a phase shift to algae dominance because unchecked algae growth prevents coral recovery
+C. Algae populations decline because they lose a dispersal mechanism provided by fish
+D. Coral bleaching severity is reduced because fewer fish means less physical damage to coral
+
+Correct Answer: B
+
+Feedback: Correct. Without herbivorous fish to control algae growth, macroalgae rapidly colonize space left by bleached coral, preventing recovery. The reef loses its primary biological defense against phase shifts, making even moderate bleaching events potentially catastrophic. Incorrect. Herbivorous fish are critical for reef resilience. They control algae growth that would otherwise smother recovering corals. Without this top-down control, even moderate bleaching events can trigger irreversible phase shifts to algae dominance.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's reef model shows that a single bleaching event requires 10-15 years of stable conditions for full coral recovery, but bleaching events are now occurring every 2-3 years. What conclusion is best supported by this data?
+
+A. Corals are adapting to tolerate more frequent bleaching, so the frequency is not a concern
+B. The recovery deficit created by increasing bleaching frequency will cause cumulative coral decline even without any increase in bleaching severity
+C. The model must be inaccurate because natural systems always achieve equilibrium
+D. Recovery time is determined solely by water temperature and is unrelated to bleaching frequency
+
+Correct Answer: B
+
+Feedback: Correct. When disturbance frequency exceeds recovery time, the system experiences cumulative decline. Each bleaching event further weakens coral before it has recovered from the previous one, creating a ratchet effect that drives progressive reef degradation. Incorrect. The critical insight is the mismatch between recovery time (10-15 years) and disturbance frequency (2-3 years). When events recur faster than recovery can occur, each event starts from a more degraded baseline, creating cumulative decline.
+
+---
+
+### Question 2
+
+A student compares two model scenarios: one with warming only and one with warming plus acidification. Both show coral decline, but the combined scenario shows decline at a significantly lower temperature threshold. What does this demonstrate?
+
+A. Acidification and warming are independent stressors with no interaction
+B. Multiple simultaneous stressors produce compounding effects that lower the threshold for ecosystem collapse
+C. Acidification is always more damaging than warming in isolation
+D. The model is flawed because real ecosystems experience only one stressor at a time
+
+Correct Answer: B
+
+Feedback: Correct. The lower threshold under combined stress demonstrates a synergistic effect. Acidification weakens coral skeletons while warming disrupts the symbiosis, and the combined stress exceeds the sum of individual effects, pushing the system past tipping points at lower levels of each individual stressor. Incorrect. The combined scenario's lower threshold demonstrates synergistic interaction between stressors. In real ecosystems, multiple stressors operate simultaneously, and their combined effect is often greater than the sum of individual effects.
+
+---
+
+### Question 3
+
+In a reef model, maintaining high herbivore fish populations significantly increases reef resilience to bleaching. Which systems thinking concept does this illustrate?
+
+A. Removing a component has no effect if other components compensate
+B. Local management of one system component can buffer the system against external stressors by maintaining critical ecological functions
+C. Only global interventions can affect reef outcomes because climate is a global system
+D. Herbivore populations are independent of reef health and can be managed separately
+
+Correct Answer: B
+
+Feedback: Correct. Protecting herbivore fish populations is a local management action that maintains the ecological function of algae control, giving reefs more time to recover between bleaching events. This demonstrates how managing controllable local variables can buffer a system against uncontrollable global stressors. Incorrect. The model demonstrates that local management actions can meaningfully increase system resilience. By protecting herbivore fish, managers maintain algae control, which gives coral more recovery time between bleaching events, even though they cannot control global temperature.
+
+---
+
+### Question 4
+
+A reef ecologist presents model evidence showing that once coral cover drops below 10%, positive feedback loops make recovery nearly impossible without major intervention. Which set of feedback loops most accurately describes why?
+
+A. More dead coral provides substrate for algae, algae smother coral larvae, reduced reef structure drives away herbivorous fish, and fewer herbivores allow more algae growth
+B. Increased water clarity from fewer organisms causes UV damage to remaining coral
+C. Reduced reef size increases wave exposure, which improves water circulation and coral health
+D. Lower coral cover attracts more predatory fish that consume the remaining coral polyps
+
+Correct Answer: A
+
+Feedback: Correct. This describes a set of interconnected positive feedback loops that reinforce algae dominance: dead coral becomes algae substrate, algae block coral recruitment, degraded structure loses herbivore habitat, and reduced herbivory allows more algae growth. Each loop reinforces the others. Incorrect. The feedback loops maintaining a degraded reef state involve algae colonizing dead coral, algae preventing new coral settlement, loss of structural habitat driving away herbivorous fish, and reduced herbivory allowing more algae growth. These interconnected loops lock in the degraded state.
+
+---
+
+### Question 5
+
+Based on coral reef model evidence, which conservation strategy would be most effective for maximizing reef survival over the next 50 years?
+
+A. Focusing exclusively on local pollution reduction while ignoring global CO2 emissions
+B. A multi-scale approach combining local herbivore protection and pollution reduction with global emission reductions to slow warming and acidification
+C. Relocating all coral to deeper, cooler waters where they are protected from surface warming
+D. Allowing natural selection to produce heat-resistant coral strains without any human intervention
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that local management (herbivore protection, pollution reduction) buys time by increasing resilience, but long-term reef survival ultimately requires addressing global stressors (warming and acidification) through emission reductions. Neither local nor global action alone is sufficient. Incorrect. Model evidence shows that effective conservation requires action at multiple scales. Local protection increases resilience and buys time, but without addressing global warming and acidification through emission reductions, even well-managed reefs will eventually succumb to overwhelming thermal and chemical stress.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: A
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

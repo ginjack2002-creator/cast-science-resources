@@ -918,6 +918,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-2, HS-LS2-6, HS-LS4-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What makes a non-native species 'invasive'?
+
+A. Any species found outside its native range is considered invasive
+B. A non-native species that establishes self-sustaining populations and causes ecological or economic harm
+C. A native species that becomes unusually abundant due to human activity
+D. Any species that migrates seasonally between different regions
+
+Correct Answer: B
+
+Feedback: Correct. Not all non-native species are invasive. The 'invasive' designation requires that the species establishes, spreads, and causes measurable ecological or economic harm. A species is invasive only if it is (1) non-native, (2) establishes self-sustaining populations, and (3) causes harm to the ecosystem, economy, or human health. Many non-native species exist harmlessly.
+
+---
+
+### Question 2
+
+The 'enemy release hypothesis' suggests that invasive species thrive because:
+
+A. They evolve new defensive adaptations in their new environment
+B. They are freed from the predators, parasites, and diseases that controlled them in their native range
+C. Native species actively cooperate with invaders to share resources
+D. Human activity eliminates all predators in every ecosystem
+
+Correct Answer: B
+
+Feedback: Correct. Invasive species leave behind the specialized natural enemies (predators, parasites, pathogens) that kept their populations in check, allowing unconstrained growth in new environments. The enemy release hypothesis explains that invasive species succeed because they arrive without the specialized predators, parasites, and diseases that evolved alongside them to control their populations. Without these natural checks, their populations can grow exponentially.
+
+---
+
+### Question 3
+
+What is 'competitive exclusion'?
+
+A. The principle that two species competing for the same limited resource cannot coexist indefinitely
+B. A conservation strategy that physically separates native and invasive species
+C. The process by which invasive species are excluded from protected areas
+D. A genetic mechanism that prevents hybridization between species
+
+Correct Answer: A
+
+Feedback: Correct. Competitive exclusion states that if two species compete for exactly the same limited resource, the one with even a slight advantage will eventually drive the other to local extinction. The competitive exclusion principle states that two species occupying the same ecological niche cannot coexist indefinitely. The species with even a small competitive advantage will eventually outcompete and locally eliminate the other.
+
+---
+
+### Question 4
+
+Invasive species are the second leading cause of species extinction globally. What is the first?
+
+A. Climate change
+B. Pollution
+C. Habitat destruction
+D. Overhunting
+
+Correct Answer: C
+
+Feedback: Correct. Habitat destruction is the leading cause of extinction, followed by invasive species, which have contributed to approximately 60% of all documented extinctions. Habitat destruction (deforestation, land conversion, urbanization) is the leading cause of species extinction globally. Invasive species rank second, having contributed to about 60% of all documented plant and animal extinctions.
+
+---
+
+### Question 5
+
+Why are island ecosystems disproportionately vulnerable to invasive species?
+
+A. Islands have more resources available for invasive species to exploit
+B. Island species evolved in isolation without exposure to aggressive competitors or predators, leaving them with no defensive adaptations
+C. Islands are closer to continental sources of invasive species
+D. Island climates are more favorable for non-native species than mainland climates
+
+Correct Answer: B
+
+Feedback: Correct. Island species evolved in isolation and never developed defenses against the types of predators and competitors found on continents. This evolutionary naivety makes them extremely vulnerable. Island species evolved in isolation, often without exposure to mammalian predators, aggressive competitors, or continental diseases. This evolutionary inexperience leaves them defenseless against invaders. About 75% of all documented extinctions have occurred on islands.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that when Invasive Population is at 100 individuals, removal efforts successfully prevent establishment. At 10,000 individuals, the same removal rate fails. What does this threshold behavior demonstrate?
+
+A. Removal technology becomes less effective over time regardless of population size
+B. Below the establishment threshold, removal can outpace reproduction, but above it, the invasive population's growth rate exceeds removal capacity, and positive feedback loops (habitat modification, resource monopolization) make eradication increasingly difficult
+C. Invasive species develop resistance to removal methods after reaching 10,000 individuals
+D. At 10,000 individuals, invasive species begin migrating to new areas beyond the removal zone
+
+Correct Answer: B
+
+Feedback: Correct. Below the threshold, removal can suppress growth. Above it, exponential reproduction overwhelms removal capacity, and positive feedbacks (habitat modification, resource depletion) create conditions that further favor the invader. The establishment threshold marks a critical transition: below it, removal can outpace reproduction. Above it, exponential growth exceeds management capacity, and the invader begins modifying habitat in its own favor, creating positive feedback loops that make control progressively harder.
+
+---
+
+### Question 2
+
+The model demonstrates that invasive grasses increase fire frequency, which kills fire-intolerant native trees, creating more grassland for the invader. What type of system dynamic does this represent?
+
+A. Negative feedback that restores the native tree population
+B. A positive feedback loop where the invasive species modifies the environment to favor its own spread, making each increment of invasion accelerate the next
+C. A neutral interaction with no effect on invasion dynamics
+D. Random environmental variation unrelated to the invasion
+
+Correct Answer: B
+
+Feedback: Correct. This is a textbook invasion-fire feedback loop: invasive grass increases fire frequency, fire eliminates native trees, more open space favors more grass, more grass means more fire. Each cycle accelerates invasion. The invasion-fire feedback is a positive (self-reinforcing) loop: the invader modifies its environment (more flammable grass) to create conditions (frequent fire) that eliminate competitors (fire-intolerant trees) and expand its own habitat, accelerating further invasion.
+
+---
+
+### Question 3
+
+The 'invasion curve' shows that spending $1 on prevention or early detection avoids $100-$1,000 in later control costs. A budget committee asks why prevention funding should be prioritized over more visible eradication programs. Which model-based argument is strongest?
+
+A. Eradication programs are always unsuccessful
+B. Prevention catches invasions when populations are small and feedback loops have not engaged, making control feasible. Once populations cross the establishment threshold, positive feedbacks make eradication exponentially more expensive and less likely to succeed
+C. Prevention is cheaper because it requires fewer staff
+D. Early detection technology is more advanced than eradication technology
+
+Correct Answer: B
+
+Feedback: Correct. The cost-effectiveness case is rooted in systems dynamics: below the establishment threshold, small populations are manageable. Above it, positive feedbacks create exponentially growing costs and diminishing returns. The invasion curve demonstrates that cost-effectiveness declines exponentially with invasion stage. Prevention and early detection target populations before positive feedback loops (habitat modification, resource monopolization) engage, making control feasible and affordable.
+
+---
+
+### Question 4
+
+In the biocontrol scenario, introducing a natural predator from the invader's native range reduces invasive population growth. However, the model shows that Native Biodiversity Index does not return to pre-invasion levels. What best explains this incomplete recovery?
+
+A. Biocontrol agents always harm native species more than invasive species
+B. The invasion caused irreversible changes: native species driven to local extinction cannot return, habitat modifications persist, and ecological interactions (pollination networks, predator-prey relationships) were permanently disrupted
+C. Native species refuse to recolonize areas previously occupied by invasive species
+D. Biocontrol agents become invasive themselves 100% of the time
+
+Correct Answer: B
+
+Feedback: Correct. Even after reducing the invader, the ecosystem has undergone lasting changes: species extinctions, altered habitat structure, and disrupted ecological networks create a 'new normal' that differs from the pre-invasion state. The ecosystem has undergone a regime shift: some native species are locally extinct and cannot recolonize, habitat has been physically altered, and ecological interaction networks (pollination, seed dispersal, predation) have been rewired. The ecosystem stabilizes at a new, less diverse state.
+
+---
+
+### Question 5
+
+A student examines the model and notes that Resource Availability declines as Invasive Population grows, while Native Species Competitive Fitness drops simultaneously. How do these two variables interact to create the 'biodiversity collapse' seen in the model?
+
+A. They are independent variables that coincidentally decline at the same time
+B. As invasive species monopolize resources, native species face both resource scarcity AND reduced competitive ability (due to smaller populations, fragmented habitat, and disrupted ecological partnerships), creating a compounding decline where each factor worsens the other
+C. Resource availability declines because native species consume too much
+D. Native competitive fitness increases as resources decline because scarcity drives adaptation
+
+Correct Answer: B
+
+Feedback: Correct. The interaction is synergistic: invasive resource monopolization weakens native populations, which reduces their competitive fitness, which allows the invader to capture even more resources, compounding the decline in a reinforcing spiral. These variables interact synergistically: the invader takes resources, weakening natives. Weakened natives compete less effectively, losing more resources. Smaller native populations lose ecological partnerships (pollinators, seed dispersers). Each factor amplifies the other in a downward spiral.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

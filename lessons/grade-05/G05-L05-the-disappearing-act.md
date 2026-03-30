@@ -745,6 +745,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-PS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+An ice cube weighs 50 grams. After it melts completely into water, how much will the water weigh?
+
+A. Less than 50 grams because some water evaporated
+B. Exactly 50 grams
+C. More than 50 grams because water is heavier than ice
+D. Zero grams because the ice disappeared
+
+Correct Answer: B
+
+Feedback: That's right! When ice melts, the mass stays exactly the same. The water molecules are still there, just in a different form. When ice melts, no matter is added or removed. The same molecules that made up the ice are now in liquid form. The mass stays exactly 50 grams. This is called conservation of matter.
+
+---
+
+### Question 2
+
+When wood burns and only ash remains, where did most of the mass go?
+
+A. The mass was destroyed by the fire
+B. The mass went into the ground
+C. The mass became gases (like CO2 and water vapor) that went into the air
+D. The mass turned into heat and light
+
+Correct Answer: C
+
+Feedback: Correct! When wood burns, most of its mass becomes carbon dioxide and water vapor, which are invisible gases that float into the air. The mass wasn't destroyed. Matter cannot be destroyed. When wood burns, the carbon in the wood combines with oxygen to form CO2 gas, and hydrogen becomes water vapor. These invisible gases carry away most of the mass.
+
+---
+
+### Question 3
+
+What does 'conservation of matter' mean?
+
+A. We should save and recycle materials
+B. Matter can be created from nothing
+C. Matter cannot be created or destroyed, only changed in form
+D. Solids are more important than liquids
+
+Correct Answer: C
+
+Feedback: That's right! Conservation of matter means the total amount of matter stays the same, even when it changes form. It can't appear from nothing or vanish. In science, conservation of matter is a law stating that matter cannot be created or destroyed. It can change shape, form, or state, but the total amount of matter always stays the same.
+
+---
+
+### Question 4
+
+When you dissolve sugar in water, the sugar seems to disappear. What actually happened?
+
+A. The sugar was destroyed by the water
+B. The sugar molecules spread out in the water but are still there
+C. The sugar turned into water
+D. The sugar evaporated
+
+Correct Answer: B
+
+Feedback: Correct! The sugar molecules separated and spread throughout the water. They are still there, which is why the water tastes sweet. The sugar didn't disappear. Its molecules separated and mixed with the water molecules. You can prove the sugar is still there because the water tastes sweet. The total mass hasn't changed.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the state change model, what happens to Starting Mass when Air Temperature increases and ice melts?
+
+A. Starting Mass decreases because ice is lost
+B. Starting Mass increases because liquid weighs more
+C. Starting Mass stays completely flat, proving conservation of matter
+D. Starting Mass fluctuates up and down
+
+Correct Answer: C
+
+Feedback: Exactly! Starting Mass never changes regardless of temperature. This is the key discovery: mass is conserved during state changes. Ice becomes water, but the total mass is unchanged. Remember what happened in the simulation. No matter how much the temperature changed, the Starting Mass line stayed perfectly flat. Ice Amount and Liquid Water Amount changed, but their total always equaled Starting Mass.
+
+---
+
+### Question 2
+
+What type of relationship exists between Ice Amount and Liquid Water Amount?
+
+A. Positive: when ice increases, liquid increases too
+B. Negative: when ice increases, liquid decreases because they share the same mass
+C. No relationship: they change independently
+D. Positive: melting creates extra liquid
+
+Correct Answer: B
+
+Feedback: Correct! Ice and liquid share the same total mass. When one increases, the other must decrease by the same amount. They are mirror images of each other. Since Starting Mass is constant, Ice Amount and Liquid Water Amount must always add up to the same total. When ice goes up, liquid must go down, and vice versa. This is a negative (-) relationship.
+
+---
+
+### Question 3
+
+A student puts 200g of ice in a sealed container and heats it until all the ice melts and some water evaporates. What is the total mass inside the container?
+
+A. Less than 200g because some water became vapor
+B. More than 200g because heat was added
+C. Exactly 200g because matter is conserved in a closed system
+D. It depends on the temperature
+
+Correct Answer: C
+
+Feedback: That's right! In a sealed (closed) container, no matter can enter or leave. The total mass remains exactly 200g whether the water is solid, liquid, gas, or a mix. In a sealed container, matter cannot escape. Whether the water is ice, liquid, or vapor, all the molecules are still inside. Conservation of matter tells us the total mass stays at exactly 200g.
+
+---
+
+### Question 4
+
+A candle starts at 80 grams. After burning for 30 minutes, only 60 grams of wax remain. Using conservation of matter, which statement is true?
+
+A. 20 grams of matter were destroyed by the flame
+B. 20 grams became CO2 gas and water vapor that went into the air
+C. 20 grams of matter turned into pure energy
+D. The scale must be broken because matter can't change mass
+
+Correct Answer: B
+
+Feedback: Correct! The 'missing' 20 grams became invisible gases (CO2 and water vapor) that floated into the air. If you could capture those gases, they would weigh exactly 20 grams. Matter is never destroyed. When wax burns, the carbon and hydrogen atoms combine with oxygen from the air to form CO2 and water vapor. These gases carry the 20 grams of mass into the air.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

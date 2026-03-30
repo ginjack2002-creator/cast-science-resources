@@ -963,6 +963,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-6, HS-ETS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+In epidemiology, what does R-naught (R0) represent?
+
+A. The total number of people who will be infected during a pandemic
+B. The average number of new infections caused by one infected person in a fully susceptible population
+C. The mortality rate of a disease in a given population
+D. The speed at which a vaccine can be distributed
+
+Correct Answer: B
+
+Feedback: Correct. R0 represents the basic reproduction number, indicating how many secondary infections one infected person generates on average in a population where everyone is susceptible. R0 is not a count of total infections or a mortality rate. It specifically measures transmission potential: how many new cases one infected person typically creates in a fully susceptible population.
+
+---
+
+### Question 2
+
+Why does an infectious disease initially spread exponentially through a population?
+
+A. Because the virus mutates to become more contagious over time
+B. Because hospitals become overwhelmed and cannot treat patients
+C. Because each infected person infects multiple new people, and each of those infects multiple more, creating compound growth
+D. Because governments delay their response to the outbreak
+
+Correct Answer: C
+
+Feedback: Correct. Exponential growth occurs because the rate of increase is proportional to the current number infected. If each person infects 3 others, one case becomes 3, then 9, then 27, with each generation multiplying by the same factor. Exponential spread is a mathematical property of compound transmission, not a result of mutations or policy failures. When each infected person creates multiple new infections, the total grows by a multiplying factor each generation.
+
+---
+
+### Question 3
+
+The SIR model divides a population into three compartments: Susceptible, Infected, and Recovered. Why does the epidemic eventually peak and decline even without intervention?
+
+A. The virus naturally becomes weaker over time
+B. As more people recover and gain immunity, fewer susceptible people remain for the virus to infect
+C. Infected people stop being contagious after a fixed period
+D. The population develops collective behavioral changes
+
+Correct Answer: B
+
+Feedback: Correct. The epidemic peaks when the susceptible population is depleted to the point where each infected person cannot sustain transmission to enough new hosts. As Recovered increases, Susceptible decreases, naturally reducing the transmission rate. The epidemic declines because the Susceptible pool shrinks. As individuals move from Susceptible to Infected to Recovered, fewer susceptible hosts remain, reducing the effective reproduction number below 1.
+
+---
+
+### Question 4
+
+What is the herd immunity threshold?
+
+A. The point at which everyone in the population has been infected
+B. The proportion of the population that must be immune to stop sustained transmission
+C. The minimum number of hospital beds needed during a pandemic
+D. The temperature at which the virus can no longer survive
+
+Correct Answer: B
+
+Feedback: Correct. The herd immunity threshold is the proportion of the population that must be immune (through infection or vaccination) so that each infected person generates fewer than one new infection on average, causing the epidemic to decline. Herd immunity does not require everyone to be infected. It is the percentage of immune individuals needed to reduce the effective reproduction number below 1, preventing sustained transmission through the population.
+
+---
+
+### Question 5
+
+A city implements strict quarantine measures that reduce person-to-person contact by 75%. How does this affect the course of an epidemic?
+
+A. It eliminates the disease completely within days
+B. It has no effect because the virus will eventually infect everyone
+C. It reduces the effective reproduction number, slowing the spread and lowering the peak number of infections
+D. It only delays the epidemic without changing the total number of infections
+
+Correct Answer: C
+
+Feedback: Correct. Reducing contact rate directly reduces the effective R value. If R0 is 3 and contact is reduced 75%, the effective R drops to about 0.75, meaning the epidemic shrinks rather than grows. Quarantine works by reducing the contact rate, which directly lowers the effective reproduction number. This both slows the spread and reduces the total number of infections, not just the timing.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's SIR model shows that implementing quarantine at 1% infection rate versus 10% infection rate results in 60% fewer total infections despite identical quarantine strength. What principle does this demonstrate?
+
+A. Quarantine only works during the early stages of an epidemic
+B. The timing of intervention is critically important because exponential growth makes early action disproportionately effective
+C. The 10% scenario used a weaker quarantine measure
+D. The 1% scenario had a smaller initial population
+
+Correct Answer: B
+
+Feedback: Correct. During exponential growth, the number of infected people doubles rapidly. Intervening early (at 1%) stops the doubling chain much sooner, preventing vastly more infections than the same intervention applied after significant spread. The intervention was identical in both scenarios. The difference in outcome is entirely due to timing. Exponential growth means that waiting from 1% to 10% infection allows enormous additional transmission that even strong intervention cannot undo.
+
+---
+
+### Question 2
+
+In the SIR model, the Susceptible, Infected, and Recovered compartments are described as 'coupled.' What does this mean in systems thinking terms?
+
+A. Each compartment operates independently with fixed populations
+B. Changes in one compartment directly affect the flows into and out of the other compartments
+C. The compartments are grouped together for mathematical convenience but do not interact
+D. Coupling means the model requires three separate simulations to run
+
+Correct Answer: B
+
+Feedback: Correct. Coupled compartments means the state of each compartment influences the others. New infections depend on BOTH the number of Susceptible AND Infected people simultaneously, creating interdependent dynamics. Coupling means the compartments are dynamically linked. The flow from Susceptible to Infected depends on the product of Susceptible and Infected populations. As one changes, all flows in the system adjust.
+
+---
+
+### Question 3
+
+The model shows that vaccination moves people directly from Susceptible to Recovered without passing through Infected. Why is this pathway so valuable compared to natural immunity?
+
+A. Vaccinated people develop stronger immunity than naturally infected people
+B. Vaccination achieves the same epidemic-slowing effect (reducing the Susceptible pool) without the disease burden, hospital strain, and deaths of the Infected stage
+C. Vaccination completely eliminates the pathogen from the environment
+D. Vaccination works faster than natural infection
+
+Correct Answer: B
+
+Feedback: Correct. In the SIR model, both infection and vaccination reduce the Susceptible pool. But vaccination achieves this without the suffering, healthcare burden, and mortality of passing through the Infected compartment. The model shows that both pathways reduce Susceptible and increase Recovered, slowing the epidemic identically from a mathematical perspective. The critical advantage of vaccination is bypassing the Infected stage and its associated harm.
+
+---
+
+### Question 4
+
+A simulation compares an uncontrolled epidemic to one with moderate intervention. Both ultimately infect similar percentages of the population, but the intervention scenario has far fewer deaths. What explains this?
+
+A. The intervened epidemic used a less deadly strain
+B. Flattening the curve spread infections over more time, keeping hospital capacity from being overwhelmed
+C. Fewer people were actually infected in the intervention scenario
+D. The intervention eliminated the most dangerous variant
+
+Correct Answer: B
+
+Feedback: Correct. Flattening the curve does not necessarily reduce total infections, but it spreads them over a longer period. This prevents hospitals from being overwhelmed, ensuring patients receive adequate care, which reduces mortality. The question states that similar percentages were infected. The difference in deaths comes from the rate of infection. When the peak is flattened, hospitals can treat patients effectively. When overwhelmed, patients who could have survived die from inadequate care.
+
+---
+
+### Question 5
+
+Based on the model, what happens to the effective reproduction number as more people are vaccinated, and what is the significance of this change?
+
+A. The effective R stays constant because vaccination does not affect viral transmission
+B. The effective R increases because vaccinated people create new evolutionary pressure on the virus
+C. The effective R decreases proportionally as the Susceptible pool shrinks, and the epidemic can no longer sustain itself when R drops below 1
+D. The effective R drops to exactly zero once any vaccination program begins
+
+Correct Answer: C
+
+Feedback: Correct. The effective R equals R0 multiplied by the fraction of the population still susceptible. Vaccination reduces this fraction, lowering the effective R. When it drops below 1, each infection generates less than one new case, and the epidemic declines. Vaccination shrinks the Susceptible pool, directly reducing the effective reproduction number. The critical threshold is R < 1, at which point the epidemic declines rather than grows. This is the mathematical basis of herd immunity.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+---
+
 ## Resources
 
 | Resource | Link |

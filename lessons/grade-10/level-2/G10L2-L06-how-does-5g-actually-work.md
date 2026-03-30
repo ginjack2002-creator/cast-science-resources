@@ -891,6 +891,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS4-2, HS-PS4-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Electromagnetic waves are used for wireless communication. Which relationship between frequency and wavelength is correct?
+
+A. Higher frequency corresponds to longer wavelength
+B. Higher frequency corresponds to shorter wavelength
+C. Frequency and wavelength are independent of each other
+D. All electromagnetic waves have the same wavelength regardless of frequency
+
+Correct Answer: B
+
+Feedback: Correct. Frequency and wavelength are inversely related. Since all electromagnetic waves travel at the speed of light, higher frequency waves must have shorter wavelengths. Frequency and wavelength have an inverse relationship: as frequency increases, wavelength decreases. This follows from the wave equation: speed of light = frequency x wavelength.
+
+---
+
+### Question 2
+
+When an electromagnetic wave encounters a solid wall, some of its energy is absorbed. Which factor most determines how much energy is absorbed?
+
+A. The color of the wall
+B. The frequency of the electromagnetic wave and the material composition of the wall
+C. The speed at which the wave is traveling
+D. The number of walls in the building
+
+Correct Answer: B
+
+Feedback: Correct. Absorption depends on the interaction between the wave's frequency and the material's molecular structure. Higher-frequency waves are generally absorbed more readily by common building materials. Absorption depends on two factors: the frequency of the wave (higher frequencies tend to be absorbed more) and the material properties of the obstacle (density, composition, moisture content).
+
+---
+
+### Question 3
+
+A cell tower broadcasts a signal. According to the inverse square law, what happens to the signal strength when the distance from the tower is doubled?
+
+A. Signal strength is reduced to one-half
+B. Signal strength is reduced to one-quarter
+C. Signal strength remains the same
+D. Signal strength doubles
+
+Correct Answer: B
+
+Feedback: Correct. The inverse square law states that signal intensity is inversely proportional to the square of the distance. Doubling the distance reduces signal strength to (1/2)^2 = 1/4. The inverse square law states that intensity decreases with the square of the distance. At twice the distance, intensity drops to 1/4, not 1/2. This is because the signal spreads over four times the area.
+
+---
+
+### Question 4
+
+5G networks use frequencies in the 'millimeter wave' range (30-300 GHz). What trade-off does this frequency range present for network engineers?
+
+A. Millimeter waves travel farther but carry less data than lower frequencies
+B. Millimeter waves carry enormous amounts of data but are easily blocked by buildings, trees, and rain
+C. Millimeter waves are invisible to detection equipment, making network monitoring impossible
+D. Millimeter waves require less energy to transmit than lower-frequency signals
+
+Correct Answer: B
+
+Feedback: Correct. This fundamental trade-off between data capacity and penetration ability is the central engineering challenge of 5G: higher frequencies enable faster data rates but are absorbed and blocked by obstacles far more easily. The millimeter wave trade-off is fundamental: these high frequencies can carry vastly more data (10+ Gbps) but are easily absorbed by buildings, vegetation, rain, and even humidity, severely limiting their range and penetration.
+
+---
+
+### Question 5
+
+MIMO (Multiple-Input Multiple-Output) antenna technology uses multiple antennas simultaneously. What is the primary advantage of this approach?
+
+A. It allows a single antenna to broadcast at multiple frequencies simultaneously
+B. It increases network capacity by transmitting and receiving multiple independent data streams at the same time
+C. It eliminates the need for cell towers entirely
+D. It converts electromagnetic waves into sound waves for clearer voice calls
+
+Correct Answer: B
+
+Feedback: Correct. MIMO uses spatial multiplexing to send multiple independent data streams through multiple antennas simultaneously, dramatically increasing the total data capacity of the network. MIMO's primary advantage is increased capacity through spatial multiplexing. By using multiple antennas to transmit and receive independent data streams simultaneously, the network can serve more users at higher speeds.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the wireless communication model, what is the fundamental trade-off that the relationship between Signal Frequency and Wave Penetration reveals?
+
+A. Higher frequencies penetrate materials better but carry less data
+B. Higher frequencies carry more data but penetrate materials less effectively, requiring more infrastructure to compensate
+C. Signal frequency has no measurable effect on wave penetration in the model
+D. Lower frequencies require more tower density because they carry less data per tower
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates the core physics trade-off: Data Transfer Rate increases with frequency but Wave Penetration decreases, forcing engineers to dramatically increase Tower Density to maintain coverage. The model reveals the fundamental constraint: as Signal Frequency increases, Data Transfer Rate rises (more bandwidth) but Wave Penetration drops (signals blocked more easily). This trade-off is the defining engineering challenge of 5G.
+
+---
+
+### Question 2
+
+A student compares the 4G scenario (700 MHz) to the 5G millimeter wave scenario (39 GHz) in the model. Tower Density must increase dramatically for 5G. What does the model show as the primary reason?
+
+A. 5G towers are physically smaller and cannot transmit as much power
+B. Each 5G millimeter wave cell covers only 200-300 meters versus 2-5 kilometers for 4G because higher-frequency signals are absorbed more rapidly by the atmosphere and obstacles
+C. 5G towers are more expensive, so more small towers are needed to reduce cost
+D. 4G towers broadcast in all directions while 5G towers can only broadcast in one direction
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that millimeter wave signals attenuate so rapidly that each cell covers a fraction of the area of a 4G cell, requiring a massive increase in the number of transmitters to provide continuous coverage. The model demonstrates that coverage area per cell shrinks dramatically at higher frequencies. A 4G cell at 700 MHz might cover 2-5 km, but a 5G millimeter wave cell at 39 GHz covers only 200-300 meters due to rapid signal attenuation.
+
+---
+
+### Question 3
+
+The model shows that increasing Tower Density to compensate for poor Wave Penetration creates a secondary problem. What is it?
+
+A. More towers reduce the total network capacity by splitting the available bandwidth
+B. Interference Level increases as more closely spaced towers produce overlapping signals, requiring beamforming and MIMO to manage
+C. More towers consume less total energy because each tower is smaller
+D. Tower Density has no effect on any other variable in the model
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals a cascade: more towers create more signal overlap and interference, which degrades network quality. Engineers must deploy beamforming and MIMO technology to direct signals precisely and manage interference. The model shows that Tower Density creates a secondary challenge: more closely-spaced towers produce overlapping signals that interfere with each other, requiring sophisticated beamforming and MIMO technology to maintain signal quality.
+
+---
+
+### Question 4
+
+Based on the model, why did engineers design 5G as a layered network using multiple frequency bands rather than a single millimeter wave frequency?
+
+A. Because a single frequency would have been too simple to implement
+B. Because no single frequency band resolves the coverage-versus-capacity trade-off; low-band provides wide coverage, mid-band balances speed and reach, and millimeter wave provides high-density capacity
+C. Because the model shows that all frequency bands perform identically
+D. Because millimeter waves are dangerous to human health at high power levels
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that no single frequency band can optimize both coverage and capacity. The layered approach uses each band's strengths: low-band for reach, mid-band for balance, and millimeter wave for dense, high-speed areas. The model shows that the coverage-capacity trade-off cannot be resolved with a single frequency. A layered approach assigns low-band frequencies for rural coverage, mid-band for urban areas, and millimeter wave for high-density locations like stadiums.
+
+---
+
+### Question 5
+
+A student claims that 5G is simply 'better 4G' with no fundamental physics differences. Using evidence from the model, which response best evaluates this claim?
+
+A. The claim is correct because both use electromagnetic waves for communication
+B. The claim is incorrect because 5G operates at fundamentally different frequencies that introduce new physics trade-offs: millimeter waves behave qualitatively differently than sub-6 GHz signals regarding penetration, absorption, and infrastructure requirements
+C. The claim is correct because tower density is the same for both technologies
+D. The claim is incorrect because 5G uses sound waves instead of electromagnetic waves
+
+Correct Answer: B
+
+Feedback: Correct. While both use electromagnetic waves, the model shows that millimeter wave frequencies introduce qualitatively different behavior: near-total absorption by obstacles, atmospheric attenuation by rain, and coverage areas orders of magnitude smaller. The model demonstrates that 5G is not simply a faster version of 4G. The jump to millimeter wave frequencies introduces fundamentally different physics: signals that cannot penetrate walls, are absorbed by rain, and require completely different infrastructure.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

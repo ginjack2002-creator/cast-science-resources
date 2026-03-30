@@ -813,6 +813,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-ESS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why does the sun look so much brighter than other stars?
+
+A. The sun is the biggest and brightest star in the universe
+B. The sun is much closer to Earth than any other star
+C. Other stars are too small to see
+D. The sun is the only star that produces light
+
+Correct Answer: B
+
+Feedback: That's right! The sun appears brightest because it is much closer to Earth than any other star. Many stars are actually larger and more luminous than our sun. The sun is actually a fairly average star. It appears so much brighter because it is only 93 million miles away, while the next nearest star is about 25 trillion miles away.
+
+---
+
+### Question 2
+
+What is a light year?
+
+A. The amount of time it takes for a year to pass
+B. How bright a star is in one year
+C. The distance light travels in one year (about 6 trillion miles)
+D. A year with more sunlight than usual
+
+Correct Answer: C
+
+Feedback: Correct! A light year is a unit of distance, not time. It's the distance light travels in one year, which is about 6 trillion miles. Even though 'year' is in the name, a light year measures distance, not time. It's the distance that light (traveling at 186,000 miles per second) covers in one full year, about 6 trillion miles.
+
+---
+
+### Question 3
+
+When you look at a star that is 100 light years away, what are you actually seeing?
+
+A. The star as it looks right now
+B. The star as it looked 100 years ago
+C. A reflection of the star
+D. An illusion created by the atmosphere
+
+Correct Answer: B
+
+Feedback: That's right! The light from that star took 100 years to reach your eyes, so you're seeing it as it was 100 years ago. You're literally looking at the past! Light travels fast, but not instantly. If a star is 100 light years away, its light took 100 years to reach us. We see the star as it was 100 years ago, not as it is now.
+
+---
+
+### Question 4
+
+If two stars produce the same amount of light, which one will appear brighter from Earth?
+
+A. The one that is farther away
+B. The one that is closer to Earth
+C. They will look equally bright
+D. The one that is bigger
+
+Correct Answer: B
+
+Feedback: Correct! If two stars have the same luminosity (actual brightness), the closer one will appear brighter because light spreads out and gets dimmer with distance. Light spreads out as it travels through space. The closer star's light hasn't spread as much, so more of it reaches our eyes, making it appear brighter.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the starlight model, what type of relationship does Star Distance have with Apparent Brightness?
+
+A. Positive: farther stars appear brighter
+B. Negative: farther stars appear dimmer because light spreads out over distance
+C. No relationship: distance doesn't affect how bright a star looks
+D. Positive: distance makes light stronger
+
+Correct Answer: B
+
+Feedback: Correct! This is a negative relationship. As distance increases, apparent brightness decreases. Light spreads out as it travels, so less of it reaches our eyes from farther stars. As a star gets farther away, its light spreads out over a larger area, so less of it reaches our eyes. Greater distance means dimmer appearance. This is a negative (-) relationship.
+
+---
+
+### Question 2
+
+A very distant star still appears visible in the night sky. Based on your model, what must be true about this star?
+
+A. It must be very close to Earth
+B. It must have very high luminosity (actual brightness) to overcome the dimming effect of distance
+C. It must be moving toward Earth
+D. It must be reflecting light from another star
+
+Correct Answer: B
+
+Feedback: That's right! If a star is very far away but still visible, it must produce a tremendous amount of light. Its high luminosity compensates for the dimming effect of distance. In the model, distance reduces apparent brightness (negative relationship) while luminosity increases it (positive relationship). For a distant star to be visible, its luminosity must be high enough to overcome the distance.
+
+---
+
+### Question 3
+
+The sun appears brighter than Betelgeuse even though Betelgeuse is about 100,000 times more luminous. Why?
+
+A. Betelgeuse is broken and not working properly
+B. The sun is 93 million miles away while Betelgeuse is about 700 light years away, so distance more than cancels out the luminosity difference
+C. Betelgeuse is behind a cloud
+D. The sun is actually more luminous than Betelgeuse
+
+Correct Answer: B
+
+Feedback: Exactly! Even though Betelgeuse is far more luminous, it is enormously farther away. The inverse square law means its apparent brightness is drastically reduced by distance. Apparent brightness depends on BOTH luminosity AND distance. Betelgeuse is incredibly luminous but roughly 700 light years away. The sun is far less luminous but incomparably closer (93 million miles). Proximity wins.
+
+---
+
+### Question 4
+
+Could we be looking at a star tonight that has already exploded and no longer exists?
+
+A. No, we would immediately see it disappear
+B. Yes, because light takes time to travel, and we see distant stars as they were in the past
+C. No, stars never explode
+D. Yes, but only with a telescope
+
+Correct Answer: B
+
+Feedback: Correct! If a star 1,000 light years away exploded today, we wouldn't see it for 1,000 years. We are always seeing the past when we look at distant objects. Because light has a finite speed, we always see distant objects as they were in the past. A star 1,000 light years away that exploded today would still appear normal to us for 1,000 more years.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

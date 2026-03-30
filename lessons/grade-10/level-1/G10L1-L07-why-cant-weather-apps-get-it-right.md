@@ -884,6 +884,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-5, HS-ESS2-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which of the following is the primary energy source that drives all weather patterns on Earth?
+
+A. Heat from Earth's interior (geothermal energy).
+B. Differential solar heating of Earth's surface.
+C. The Moon's gravitational pull on the atmosphere.
+D. Chemical reactions in the upper atmosphere.
+
+Correct Answer: B
+
+Feedback: Correct. Solar radiation heats Earth's surface unevenly (equator vs. poles, land vs. ocean), creating temperature gradients that drive atmospheric circulation, wind, and all weather patterns. Incorrect. All weather is ultimately driven by differential solar heating. The equator receives more solar energy than the poles, creating temperature gradients that produce wind, convection, and precipitation.
+
+---
+
+### Question 2
+
+A weather forecast for tomorrow is typically about 95% accurate, but a forecast for 10 days out is approximately 50% accurate. Which best explains this decrease in accuracy?
+
+A. Meteorologists spend less effort on long-range forecasts.
+B. Small measurement errors in current conditions amplify exponentially over time in the chaotic atmospheric system.
+C. Weather satellites can only observe conditions a few days in advance.
+D. The atmosphere follows completely random patterns beyond three days.
+
+Correct Answer: B
+
+Feedback: Correct. The atmosphere is a chaotic system exhibiting sensitive dependence on initial conditions. Small measurement uncertainties grow exponentially, making forecasts progressively less reliable over time. Incorrect. The atmosphere is a deterministic but chaotic system. Tiny errors in measuring current conditions amplify over time (doubling roughly every 2-3 days), eventually making the forecast unreliable.
+
+---
+
+### Question 3
+
+For a thunderstorm to develop, which combination of atmospheric conditions is generally required?
+
+A. Cold, dry air at the surface with clear skies above.
+B. Warm, moist air at the surface with cooler air above, creating atmospheric instability.
+C. Uniform temperature throughout the atmosphere with moderate winds.
+D. High atmospheric pressure with low humidity.
+
+Correct Answer: B
+
+Feedback: Correct. Thunderstorms require instability (warm surface air beneath cooler upper air), moisture (for precipitation and latent heat release), and a lifting mechanism to initiate convection. Incorrect. Thunderstorm development requires atmospheric instability: warm, moist air near the surface overlain by cooler air aloft. This temperature structure promotes rapid upward convection that fuels storm development.
+
+---
+
+### Question 4
+
+The 'butterfly effect' in the context of weather prediction refers to:
+
+A. The effect of butterfly migrations on weather patterns.
+B. The sensitivity of weather systems to tiny changes in initial conditions, where small perturbations can lead to vastly different outcomes.
+C. The pattern of butterfly-shaped cloud formations that signal approaching storms.
+D. The way weather changes unpredictably from season to season.
+
+Correct Answer: B
+
+Feedback: Correct. The butterfly effect (sensitive dependence on initial conditions) means that tiny, unmeasurable differences in the atmosphere's starting state can produce completely different weather outcomes days later. Incorrect. The butterfly effect describes how infinitesimally small changes in initial atmospheric conditions can lead to dramatically different weather outcomes, placing a fundamental limit on forecast accuracy.
+
+---
+
+### Question 5
+
+What is the key difference between weather and climate prediction?
+
+A. There is no difference; both predict the same things over different timescales.
+B. Weather predicts specific atmospheric conditions on a given day (chaotic), while climate predicts statistical averages over decades (driven by energy balance physics).
+C. Climate prediction is more accurate day-to-day than weather prediction.
+D. Weather prediction uses computers while climate prediction uses only historical records.
+
+Correct Answer: B
+
+Feedback: Correct. Weather is the specific atmospheric state on a specific day (chaotic, unpredictable beyond ~2 weeks). Climate is the statistical average of weather over decades (predictable through energy balance physics). Incorrect. Weather and climate are fundamentally different prediction problems. Weather is chaotic and unpredictable beyond about two weeks. Climate is a statistical average driven by well-understood energy balance, making it highly predictable.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the Butterfly Effect Test scenario, two model runs with Solar Radiation differing by only 0.1% produce nearly identical 3-day forecasts but completely different 10-day forecasts. What mathematical property of the atmosphere does this demonstrate?
+
+A. The atmosphere follows random, unpredictable behavior at all timescales.
+B. Deterministic chaos, where the system follows precise physical laws but small initial differences grow exponentially, making long-range prediction impossible.
+C. Measurement instruments are too imprecise for useful forecasting.
+D. The model is flawed because a 0.1% change should not affect the forecast.
+
+Correct Answer: B
+
+Feedback: Correct. This demonstrates deterministic chaos: the system obeys exact physical laws (it is not random), but infinitesimal differences in starting conditions amplify exponentially, producing divergent outcomes after several days. Incorrect. The atmosphere is a deterministic chaotic system. It follows exact physical laws, so identical initial conditions always produce identical outcomes. But tiny differences in initial conditions grow exponentially, creating a fundamental prediction horizon.
+
+---
+
+### Question 2
+
+The model shows that Storm Probability increases when high Moisture Content coincides with strong Solar Radiation. A student asks why deserts have strong solar radiation but few thunderstorms. Which model component explains this?
+
+A. Wind Speed, because deserts have too much wind for storms to form.
+B. Moisture Content, because storms require simultaneous presence of multiple ingredients, and deserts lack sufficient atmospheric moisture despite having strong solar heating.
+C. Air Temperature, because deserts are too hot for storms.
+D. Solar Radiation Input, which is actually weaker in deserts than other regions.
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that storm formation requires MULTIPLE ingredients simultaneously. Deserts have strong heating but lack moisture. Without sufficient moisture, atmospheric instability alone cannot produce storms. Incorrect. The model shows storms require multiple conditions converging. Deserts have strong solar heating but lack moisture. Missing any key ingredient (instability, moisture, lift) prevents storm formation.
+
+---
+
+### Question 3
+
+Based on the model's forecast accuracy decay curve (95% at 1 day, 80% at 5 days, 50% at 10 days), a technology company claims its new AI system will produce accurate 30-day forecasts. What does the model's chaos theory framework predict about this claim?
+
+A. AI could achieve this because it can process data faster than traditional models.
+B. The claim violates the fundamental predictability limit of chaotic atmospheric systems. No technology can extend useful forecasts beyond approximately 2-3 weeks.
+C. AI would only need slightly more data to achieve 30-day accuracy.
+D. The model cannot evaluate this claim because it doesn't include AI.
+
+Correct Answer: B
+
+Feedback: Correct. The theoretical predictability limit for the atmosphere (~2-3 weeks) is a mathematical property of the chaotic equations, not a technology limitation. No computational advancement can overcome this fundamental boundary. Incorrect. Chaos theory sets a fundamental prediction horizon (~2-3 weeks) that is a property of the atmospheric equations themselves, not of the computing technology used. Better AI improves short-range forecasts but cannot extend the limit.
+
+---
+
+### Question 4
+
+The model demonstrates that all five atmospheric variables (solar radiation, temperature, moisture, wind, storm probability) interact with each other. Why does this interconnection make weather prediction particularly challenging?
+
+A. It means only one variable needs to be measured accurately for a good forecast.
+B. Each variable's error feeds into every other variable's calculation, causing errors to compound and propagate through the entire system simultaneously.
+C. The interactions cancel each other out, making the system simpler than it appears.
+D. Only temperature and moisture interact; the other variables are independent.
+
+Correct Answer: B
+
+Feedback: Correct. In an interconnected system, measurement errors in ANY variable propagate to ALL other variables through their interactions. This error propagation compounds exponentially in a chaotic system. Incorrect. The model shows all variables are coupled. A temperature error affects wind calculations, which affect moisture transport, which affects storm probability. Errors in any variable cascade through the entire interconnected system.
+
+---
+
+### Question 5
+
+A school principal wants to know if it will rain during an outdoor event in 14 days. Based on the model's findings about forecast accuracy, which recommendation is most scientifically sound?
+
+A. Check the 14-day forecast now and plan accordingly.
+B. 14-day forecasts are unreliable. Plan for both scenarios now, and check 3-5 day forecasts closer to the event for a more accurate prediction.
+C. Weather 14 days out is completely random, so there is no useful information available.
+D. The model shows that 14-day rain predictions are 90% accurate, so trust the current forecast.
+
+Correct Answer: B
+
+Feedback: Correct. The model shows 14-day forecasts are near the predictability limit and barely better than climatological averages. The scientifically sound approach is flexible planning now with decision-making based on more accurate 3-5 day forecasts. Incorrect. At 14 days, forecast accuracy is near the theoretical limit and provides little useful specific information. The model supports flexible planning with final decisions based on 3-5 day forecasts, which are approximately 80-90% accurate.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

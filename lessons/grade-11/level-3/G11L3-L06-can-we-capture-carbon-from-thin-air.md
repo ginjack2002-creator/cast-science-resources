@@ -904,6 +904,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4, HS-PS1-4, HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+CO2 exists at approximately 420 parts per million (ppm) in the atmosphere. Why does this low concentration make direct air capture significantly more energy-intensive than capturing CO2 from power plant exhaust?
+
+A. Power plant exhaust contains no CO2, making it easier to process
+B. At 420 ppm, CO2 is extremely dilute compared to exhaust gases at ~120,000 ppm, and thermodynamics requires exponentially more energy to separate increasingly dilute components from a mixture
+C. Direct air capture equipment is always less efficient than industrial capture equipment
+D. The atmosphere contains pollutants that block CO2 capture
+
+Correct Answer: B
+
+Feedback: Correct. Thermodynamics dictates that separating a dilute component from a mixture requires more energy as the concentration decreases. CO2 in air is ~300x more dilute than in exhaust, making air capture fundamentally more energy-intensive. The challenge is thermodynamic: separating a substance from a dilute mixture requires more energy than from a concentrated one. At 420 ppm, CO2 in air is nearly 300 times more dilute than in power plant exhaust (~120,000 ppm), demanding proportionally more energy.
+
+---
+
+### Question 2
+
+A direct air capture system powered by natural gas captures 1,000 tonnes of CO2 per year but the gas combustion emits 400 tonnes of CO2. What is the net carbon removal?
+
+A. 1,000 tonnes because only captured CO2 counts
+B. 600 tonnes because the system's own emissions must be subtracted from gross capture to determine actual atmospheric CO2 reduction
+C. 1,400 tonnes because both captured and emitted CO2 should be counted as removed
+D. 0 tonnes because any fossil fuel use invalidates the capture
+
+Correct Answer: B
+
+Feedback: Correct. Net carbon removal equals gross capture minus all system emissions. If the DAC system emits 400 tonnes while capturing 1,000, the net removal is 600 tonnes. This is why energy source carbon intensity is a critical design variable. Net removal accounts for the full carbon budget of the system. Gross capture (1,000 tonnes) minus system emissions (400 tonnes) yields 600 tonnes of net removal. Ignoring system emissions would overstate the climate benefit.
+
+---
+
+### Question 3
+
+The thermodynamic minimum energy required to separate CO2 from air at 420 ppm is approximately 250 kWh per tonne. Current DAC systems require 1,000-2,500 kWh per tonne. What explains this gap?
+
+A. Current systems violate the laws of thermodynamics
+B. Real systems have engineering inefficiencies including heat losses, fan power, sorbent degradation, and incomplete CO2 release during regeneration that increase energy requirements 3-5x above the theoretical minimum
+C. The thermodynamic minimum calculation is incorrect
+D. Current systems capture more CO2 than intended, using extra energy
+
+Correct Answer: B
+
+Feedback: Correct. The thermodynamic minimum represents a theoretical floor under perfect conditions. Real engineering systems face unavoidable losses from heat transfer, air movement, sorbent cycling, and regeneration inefficiency that multiply the actual energy requirement. The gap between theoretical and actual energy use reflects real-world engineering losses. No system achieves 100% efficiency: fans require power, heat is lost during sorbent regeneration, sorbents degrade over cycles, and CO2 is not fully released. These compound to 3-5x the theoretical minimum.
+
+---
+
+### Question 4
+
+Why is the energy source used to power a direct air capture system the single most important variable in determining whether the system actually reduces atmospheric CO2?
+
+A. Renewable energy is cheaper than fossil energy for all applications
+B. If the energy source emits CO2 (e.g., fossil fuels), those emissions can partially or completely negate the CO2 captured, potentially making the system a net emitter rather than a net remover
+C. The energy source determines the physical location of the DAC facility
+D. Only nuclear energy produces enough power for DAC systems
+
+Correct Answer: B
+
+Feedback: Correct. A fossil-powered DAC system could emit more CO2 from its energy source than it captures from the air, creating a net positive emission rather than net removal. The carbon intensity of the energy source directly determines whether DAC helps or harms. The energy source's carbon intensity is critical because it can negate or exceed the CO2 captured. A coal-powered DAC system could theoretically emit more CO2 from combustion than it removes from the air, making it counterproductive.
+
+---
+
+### Question 5
+
+Humanity emits approximately 37 gigatonnes of CO2 per year. If each DAC facility captures 4,000 tonnes per year (like Climeworks' Orca plant), approximately how many facilities would be needed to capture just 1% of annual emissions?
+
+A. About 370 facilities
+B. About 9,250 facilities
+C. About 92,500 facilities
+D. About 925,000 facilities
+
+Correct Answer: C
+
+Feedback: Correct. 1% of 37 gigatonnes = 370 million tonnes. At 4,000 tonnes per facility, that requires 92,500 facilities. This calculation reveals the enormous scale challenge: even 1% of emissions requires tens of thousands of industrial-scale plants. The math: 1% of 37 Gt = 0.37 Gt = 370,000,000 tonnes. Divided by 4,000 tonnes per facility = 92,500 facilities. This reveals the daunting scale challenge that makes DAC a supplement to, not a replacement for, emissions reduction.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's DAC model shows that switching from natural gas power to 100% renewable energy increases net carbon removal from 600 to 1,000 tonnes per year (per facility) but increases capture cost from $400 to $550 per tonne. What is the most complete analysis of this trade-off?
+
+A. The cost increase makes renewable-powered DAC economically nonviable
+B. The renewable system removes 67% more net CO2 per facility despite costing 38% more per tonne, and the fossil-powered system's lower cost is misleading because it includes 400 tonnes of self-generated emissions that the cost per tonne does not reflect
+C. Cost per tonne is the only metric that matters for evaluating DAC systems
+D. Both systems are equally effective because they use the same capture technology
+
+Correct Answer: B
+
+Feedback: Correct. Cost per tonne alone is misleading without accounting for net removal. The renewable system captures more net CO2 per dollar of total investment because it eliminates the 400 tonnes of self-generated emissions that reduce the fossil system's actual climate impact. The analysis must compare net removal, not gross capture or cost alone. The fossil system's apparent cost advantage disappears when you account for its 400 tonnes of self-generated emissions. Per net tonne removed, the renewable system is actually more cost-effective.
+
+---
+
+### Question 2
+
+The model demonstrates that sorbent efficiency degrades by 2% per cycle over thousands of regeneration cycles. After 500 cycles, what is the cumulative impact on system performance, and what does this imply for operational planning?
+
+A. 2% per cycle is negligible and can be ignored over any number of cycles
+B. After 500 cycles at 2% degradation per cycle, the sorbent has lost substantial capacity, requiring periodic replacement that adds to operational costs and creates secondary waste streams that must be factored into the system's life-cycle carbon footprint
+C. The sorbent improves with use as it becomes more selective for CO2
+D. Degradation stops after the first 100 cycles as the sorbent reaches equilibrium
+
+Correct Answer: B
+
+Feedback: Correct. Cumulative degradation means sorbent replacement is a recurring operational cost. The replacement schedule, disposal/recycling of spent sorbent, and the carbon footprint of manufacturing new sorbent must all be included in the system's true cost and environmental analysis. Sorbent degradation is cumulative and creates a maintenance cycle: periodic replacement adds cost, generates waste, and requires manufacturing new sorbent (with its own carbon footprint). Life-cycle analysis must include these recurring costs.
+
+---
+
+### Question 3
+
+A student models the land use required for DAC at gigatonne scale and finds that powering the systems with solar energy would require solar farms covering an area the size of a small state. Another student argues this makes DAC impractical. Which response best evaluates this claim?
+
+A. The claim is correct; DAC should be abandoned due to land requirements
+B. The land use concern is valid and represents a real constraint, but must be compared against the land use of alternative carbon removal strategies (reforestation, BECCS) and evaluated alongside the land impact of unmitigated climate change, which threatens far more land through desertification and sea level rise
+C. Land use is irrelevant because solar panels can be placed on existing buildings
+D. The calculation must be wrong because no technology requires that much land
+
+Correct Answer: B
+
+Feedback: Correct. Land use is a legitimate constraint but must be evaluated comparatively. Reforestation for equivalent CO2 removal requires even more land, and unmitigated climate change threatens vastly more land through environmental degradation. No carbon removal option is free of trade-offs. The analysis requires comparison: what is the land footprint of alternative approaches? Reforestation for equivalent removal requires 5-10x more land. And unmitigated climate change threatens far more land. DAC's land use is a valid constraint but not a unique disqualification.
+
+---
+
+### Question 4
+
+The model shows that DAC capture cost follows a learning curve: costs decrease by 15% for every doubling of cumulative installed capacity. Current costs are $600/tonne at 0.01 Mt/year capacity. Approximately what cost per tonne would the model predict at 10 Mt/year capacity (roughly 10 doublings)?
+
+A. $600/tonne because costs are fixed by thermodynamics
+B. Approximately $120/tonne, applying the 15% cost reduction across approximately 10 doublings of capacity (0.85^10 x $600)
+C. $0/tonne because enough scale eliminates all costs
+D. $6,000/tonne because costs increase with scale
+
+Correct Answer: B
+
+Feedback: Correct. Learning curve economics: 0.85^10 = approximately 0.20, so costs would fall to roughly $120/tonne. This is optimistic but grounded in observed learning rates for analogous technologies. However, the thermodynamic minimum sets a floor below which costs cannot fall. Learning curve analysis: each doubling reduces cost by 15% (multiply by 0.85). After 10 doublings: $600 x 0.85^10 = approximately $120/tonne. This assumes the historical learning rate holds, though the thermodynamic minimum energy cost sets a permanent floor.
+
+---
+
+### Question 5
+
+Based on the DAC model, which conclusion about the role of direct air capture in climate strategy is best supported by the simulation data?
+
+A. DAC can replace emissions reduction as the primary climate strategy because it removes CO2 directly
+B. DAC is a necessary complement to emissions reduction, not a substitute: the scale, cost, and energy requirements make it capable of addressing residual and historical emissions but incapable of keeping pace with current emission rates without dramatic emissions cuts first
+C. DAC is too expensive to ever play a meaningful role in climate strategy
+D. DAC should only be deployed after all fossil fuel use has been eliminated
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that DAC cannot scale fast enough or cheaply enough to offset 37 Gt/year of ongoing emissions. Its role is addressing hard-to-abate sectors and historical emissions after aggressive emissions reduction brings the remaining gap to a manageable scale. The model shows that DAC's current cost and energy requirements make it unable to match the scale of ongoing emissions. It is most valuable as a complement to emissions reduction, addressing residual emissions from hard-to-decarbonize sectors and drawing down historical atmospheric CO2.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

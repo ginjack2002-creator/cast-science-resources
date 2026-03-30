@@ -901,6 +901,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Many students report getting sick during winter break immediately after finals. Which physiological mechanism best explains this pattern?
+
+A. Cold weather during winter break causes more infections
+B. Chronic stress suppresses immune function through sustained cortisol, and there is a lag between stress cessation and immune recovery, leaving a vulnerability window
+C. Students are exposed to more germs at home than at school
+D. Relaxation directly weakens the immune system
+
+Correct Answer: B
+
+Feedback: Correct. During chronic stress, sustained cortisol suppresses immune cell production. When stress ends, cortisol drops but immune function doesn't recover immediately, creating a window of vulnerability when infections can take hold. Incorrect. The post-stress illness pattern occurs because chronic cortisol exposure suppresses immune function, and when stress ends, there is a lag before the immune system recovers. During this vulnerability window, infections can establish.
+
+---
+
+### Question 2
+
+What is the HPA axis and what role does it play in the stress response?
+
+A. A bone structure in the spine that causes back pain during stress
+B. A neuroendocrine feedback loop where the hypothalamus signals the pituitary, which triggers cortisol release from the adrenal glands
+C. A part of the digestive system that produces stomach acid during stress
+D. A brain region responsible for generating fear responses to visual stimuli
+
+Correct Answer: B
+
+Feedback: Correct. The HPA (hypothalamic-pituitary-adrenal) axis is a three-step feedback loop: hypothalamus detects stress, signals pituitary to release ACTH, which triggers adrenal cortisol release. Cortisol then feeds back to shut down the loop. Incorrect. The HPA axis is a neuroendocrine feedback loop: the hypothalamus signals the pituitary gland (via CRH), the pituitary releases ACTH, and the adrenal glands release cortisol. Cortisol feeds back to suppress further activation.
+
+---
+
+### Question 3
+
+How does cortisol affect the immune system differently during acute versus chronic stress?
+
+A. Cortisol has no effect on the immune system regardless of stress duration
+B. Acute cortisol briefly enhances immune readiness for potential injury, while chronic cortisol suppresses lymphocyte production and antibody response
+C. Both acute and chronic cortisol always suppress the immune system equally
+D. Cortisol only affects the immune system in people with pre-existing autoimmune conditions
+
+Correct Answer: B
+
+Feedback: Correct. This paradox is key: acute stress briefly mobilizes immune cells (adaptive for fight-or-flight), but chronic stress suppresses immune function by reducing T-cell, B-cell, and natural killer cell production and activity. Incorrect. Acute and chronic stress produce opposite immune effects. Acute cortisol briefly enhances immune readiness (adaptive for survival), while chronic cortisol suppresses lymphocyte production and increases vulnerability to infection.
+
+---
+
+### Question 4
+
+What is allostatic load?
+
+A. The weight of stress-related muscle tension in the body
+B. The cumulative physiological wear and tear on the body from chronic stress response activation
+C. The maximum amount of stress a person can handle before passing out
+D. A measurement of how many stressful events a person has experienced in their lifetime
+
+Correct Answer: B
+
+Feedback: Correct. Allostatic load represents the cumulative biological cost of chronic stress. It is measured through biomarkers including cortisol levels, blood pressure, inflammatory markers, and metabolic indicators. Incorrect. Allostatic load is the cumulative physiological damage from chronic stress activation. It is measured through biological markers (cortisol, blood pressure, inflammation, metabolic indicators) that reveal the long-term cost of sustained stress.
+
+---
+
+### Question 5
+
+Research shows that strong social support measurably reduces cortisol output during stressful periods. What does this suggest about the relationship between social connection and physical health?
+
+A. Social support is purely psychological comfort with no biological effects
+B. Social support physically reduces HPA axis activation and cortisol release, providing a biological buffer that partially protects immune function during chronic stress
+C. Social support only helps if the supportive person is a medical professional
+D. Social connection increases cortisol because being around people is inherently stressful
+
+Correct Answer: B
+
+Feedback: Correct. Social support is not just emotional comfort. Research shows it measurably reduces HPA axis activation, resulting in lower cortisol levels and partially preserved immune function during stressful periods. Incorrect. Social support has measurable biological effects: it reduces HPA axis activation and cortisol output, which partially protects immune function during chronic stress. This is a physiological mechanism, not just psychological comfort.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The stress-immune model includes five components: Stress Exposure, Social Support, Cortisol Level, Immune Function, and Health Outcome. In the 'Chronic Stress Without Support' scenario, which cascade does the model predict?
+
+A. Cortisol drops, Immune Function rises, Health Outcome improves
+B. Continuous Stress Exposure with low Social Support keeps Cortisol Level chronically elevated, progressively declining Immune Function, and deteriorating Health Outcome over weeks
+C. Social Support has no effect on the cascade because stress is too intense
+D. Immune Function adapts to high cortisol and returns to normal within 48 hours
+
+Correct Answer: B
+
+Feedback: Correct. The model predicts a progressive decline: without social buffering, continuous stress maintains elevated cortisol, which progressively suppresses lymphocyte production, reducing immune capacity and worsening health outcomes over time. Incorrect. Without social support buffering, the model shows: sustained stress keeps cortisol elevated, chronic cortisol progressively suppresses immune cell production and function, and health outcomes deteriorate as the body becomes increasingly vulnerable.
+
+---
+
+### Question 2
+
+The model shows that Social Support buffers cortisol response. Comparing the 'Chronic Stress Without Support' and 'Chronic Stress With Strong Support' scenarios with identical stress levels, what key difference does the model predict?
+
+A. Social Support eliminates cortisol entirely, producing perfect health even under chronic stress
+B. Strong Social Support reduces HPA axis activation, resulting in lower Cortisol Levels and partially preserved Immune Function, leading to measurably better Health Outcomes despite identical stress exposure
+C. Social Support only affects perceived stress, not actual cortisol or immune markers
+D. Both scenarios produce identical biological outcomes because the stressor is the same
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that social support physically reduces cortisol output (not just perceived stress), partially protecting immune function. The same chronic stressor produces measurably different biological outcomes depending on social support. Incorrect. The model demonstrates that social support is a biological modifier, not just emotional comfort. It reduces HPA axis activation and cortisol levels, partially preserving immune function and improving health outcomes even with identical stress exposure.
+
+---
+
+### Question 3
+
+The stress response evolved as a survival mechanism for short-term threats but becomes destructive when chronically activated. Which model evidence best explains this evolutionary mismatch?
+
+A. The stress response does not actually help with survival in any scenario
+B. Acute cortisol mobilizes energy and briefly enhances immune readiness (adaptive for a 20-minute predator encounter), but the same mechanisms destroy immune function when activated continuously by modern chronic stressors the system was never designed to handle
+C. Evolution has already corrected this mismatch in modern humans
+D. Chronic stress only became possible after the invention of antibiotics
+
+Correct Answer: B
+
+Feedback: Correct. The model shows the mismatch: the HPA axis evolved for brief physical threats where cortisol's effects (energy mobilization, temporary immune boost) are adaptive. Modern chronic psychological stressors keep the system activated far beyond its design parameters. Incorrect. The model reveals an evolutionary mismatch: the stress response is optimized for brief, intense physical threats. Modern stressors (school pressure, social media, financial worry) are chronic and psychological, keeping the system activated far beyond what evolution designed.
+
+---
+
+### Question 4
+
+A student adds Sleep Quality as a component to the stress-immune model. Based on the known interactions, how does chronic stress-disrupted sleep create a compounding effect?
+
+A. Sleep disruption has no measurable effect on cortisol or immune function
+B. Chronic stress disrupts sleep, and sleep deprivation independently elevates cortisol and suppresses immune function, creating a vicious cycle that compounds stress-immune damage beyond what either factor causes alone
+C. Better sleep during chronic stress would completely eliminate all immune suppression
+D. Sleep only affects physical recovery, not immune function or hormone levels
+
+Correct Answer: B
+
+Feedback: Correct. The model with added Sleep Quality shows a vicious cycle: stress disrupts sleep, poor sleep independently raises cortisol and suppresses immunity, which worsens stress response, which further disrupts sleep. The combined effect is greater than either alone. Incorrect. Adding Sleep Quality reveals a compounding cycle: chronic stress disrupts sleep architecture, and sleep deprivation independently elevates cortisol and suppresses immune function, amplifying the original stress-immune damage in a feedback loop.
+
+---
+
+### Question 5
+
+Based on the model, which school stress reduction intervention targets the MOST biologically impactful pathway?
+
+A. Posting motivational posters in hallways to improve student attitudes
+B. Creating structured peer support programs that increase Social Support, which the model shows directly reduces HPA axis activation and cortisol output, providing measurable immune protection
+C. Eliminating all homework to completely remove stress from students' lives
+D. Teaching students to ignore stress signals because acknowledging them makes them worse
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies Social Support as the most powerful modifiable variable. Structured peer support programs target the biological mechanism the model shows is most protective: reduced HPA axis activation and lower cortisol output. Incorrect. The model shows Social Support directly reduces cortisol output through reduced HPA axis activation. This is the most biologically impactful modifiable variable, making structured peer support programs the most evidence-based intervention.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -743,6 +743,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-PS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Where does the energy in your food originally come from?
+
+A. The soil where plants grow
+B. The water that plants drink
+C. The sun
+D. The air around us
+
+Correct Answer: C
+
+Feedback: That's right! All energy in food can be traced back to the sun. Plants capture sunlight through photosynthesis and store it as chemical energy. Think about the very beginning of the food chain. Plants use sunlight to make their own food through photosynthesis. That solar energy passes to animals when they eat plants.
+
+---
+
+### Question 2
+
+What is photosynthesis?
+
+A. When plants drink water from the soil
+B. The process plants use to convert sunlight into food (sugar)
+C. When animals eat plants for energy
+D. The process of plants growing taller
+
+Correct Answer: B
+
+Feedback: Correct! Photosynthesis is how plants convert light energy from the sun into sugar (glucose), which is their food. Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar (glucose). It is how plants create their own food using the sun's energy.
+
+---
+
+### Question 3
+
+Why do many animals hibernate or store fat before winter?
+
+A. They are tired from summer activities
+B. Less sunlight in winter means less plant food is available
+C. They prefer sleeping in cold weather
+D. Winter makes animals lazy
+
+Correct Answer: B
+
+Feedback: Good thinking! Winter brings less sunlight, which means less photosynthesis, fewer plants growing, and less food energy available for animals. Think about the energy chain. Less winter sunlight means plants produce less food through photosynthesis. With less food available, animals must store energy or sleep to survive.
+
+---
+
+### Question 4
+
+What would happen to animals if all plants on Earth suddenly disappeared?
+
+A. Nothing, animals make their own energy
+B. Animals would find other food sources easily
+C. Animals would eventually run out of food and energy
+D. Animals would start doing photosynthesis themselves
+
+Correct Answer: C
+
+Feedback: Exactly! Plants are the foundation of almost every food chain. Without them, there would be no food energy for animals. Animals cannot make their own energy. They depend on plants (producers) either directly or indirectly through the food chain. Without plants, the entire food chain would collapse.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the energy flow model, what happens when Sunlight Intensity is locked at 0%?
+
+A. Photosynthesis Rate stays the same because plants have stored energy
+B. Energy Available to Animals increases because plants release stored sugar
+C. Photosynthesis stops and Energy Available to Animals crashes
+D. Temperature increases to make up for the lost sunlight
+
+Correct Answer: C
+
+Feedback: Correct! Without sunlight, photosynthesis cannot occur. No new plant sugar is produced, so energy available to animals drops toward zero. Remember the eclipse scenario from the simulation. Sunlight is the energy source that powers photosynthesis. Without it, no new food energy is produced for animals.
+
+---
+
+### Question 2
+
+Which statement best explains why a hamburger contains energy from the sun?
+
+A. The cow ate grass, which captured sunlight through photosynthesis
+B. The sun warmed the cow and gave it energy directly
+C. The hamburger was cooked with fire, which is like sunlight
+D. The cow drank water that was heated by the sun
+
+Correct Answer: A
+
+Feedback: That's right! The energy chain goes: Sun -> grass (photosynthesis) -> cow (eating grass) -> hamburger. Every step transfers energy that originally came from sunlight. Trace the energy: The sun's light energy was captured by grass through photosynthesis and stored as sugar. The cow ate the grass and stored that energy. The hamburger carries that transferred solar energy.
+
+---
+
+### Question 3
+
+What type of relationship exists between Sunlight Intensity and Photosynthesis Rate?
+
+A. Negative: more sunlight slows photosynthesis
+B. Positive: more sunlight increases the rate of photosynthesis
+C. No relationship: sunlight doesn't affect photosynthesis
+D. Negative: sunlight damages plant cells
+
+Correct Answer: B
+
+Feedback: Correct! More sunlight provides more energy for plants to perform photosynthesis, so the rate increases. This is a positive relationship. Sunlight is the energy source that drives photosynthesis. When there is more sunlight, plants can perform more photosynthesis and produce more sugar. This is a positive (+) relationship.
+
+---
+
+### Question 4
+
+An organism that makes its own food using sunlight is called a:
+
+A. Consumer
+B. Decomposer
+C. Producer
+D. Predator
+
+Correct Answer: C
+
+Feedback: Correct! Producers (like plants) make their own food through photosynthesis. They are the foundation of energy flow in ecosystems. An organism that makes its own food is a producer. Consumers eat other organisms, decomposers break down dead matter, and predators hunt other animals. Plants are producers because they produce food from sunlight.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: C
+Question 2: A
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

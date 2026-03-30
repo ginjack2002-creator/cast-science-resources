@@ -936,6 +936,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A scientist models the global carbon cycle and finds that the ocean currently absorbs about 25% of human CO2 emissions. Which factor would most likely reduce the ocean's capacity as a carbon sink over time?
+
+A. Increasing ocean surface temperature and rising acidity
+B. Increasing wind speed across ocean surfaces
+C. Decreasing the salinity of surface waters
+D. Increasing the depth of the thermocline layer
+
+Correct Answer: A
+
+Feedback: Correct. Warmer water dissolves less CO2, and increased acidity from absorbed CO2 shifts the carbonate equilibrium, both reducing the ocean's absorption capacity and creating a positive feedback loop. Incorrect. Consider how temperature and chemical changes in seawater affect CO2 solubility. Warmer, more acidic water holds less dissolved CO2, reducing the ocean's function as a carbon sink.
+
+---
+
+### Question 2
+
+Which statement best describes why positive feedback loops make climate change difficult to reverse?
+
+A. They slow down the rate of warming, giving ecosystems time to adapt
+B. They amplify an initial change, causing the system to accelerate away from its original state
+C. They maintain the climate in a stable equilibrium regardless of CO2 levels
+D. They only operate when temperatures exceed 3 degrees Celsius above pre-industrial levels
+
+Correct Answer: B
+
+Feedback: Correct. Positive feedback loops amplify change. For example, warming melts ice, reducing albedo, which causes more warming. This self-reinforcing cycle makes it progressively harder to return to the original state. Incorrect. Positive feedback loops do not stabilize or slow a system. They amplify the original perturbation, creating a self-reinforcing cycle that accelerates change in one direction.
+
+---
+
+### Question 3
+
+Pre-industrial atmospheric CO2 was approximately 280 ppm. Current levels are approximately 424 ppm. A student claims that reducing emissions to zero would immediately return CO2 to 280 ppm. What is the primary flaw in this reasoning?
+
+A. CO2 has a very short atmospheric residence time and would dissipate within weeks
+B. Natural carbon sinks can only remove excess CO2 gradually over centuries, and activated feedback loops continue releasing CO2 independently
+C. Volcanic eruptions would replace the CO2 removed by natural sinks within a few years
+D. Plant photosynthesis rates would immediately double to compensate for reduced emissions
+
+Correct Answer: B
+
+Feedback: Correct. Even at zero emissions, natural sinks like oceans and forests remove excess CO2 slowly over centuries, not instantly. Meanwhile, activated feedback loops such as permafrost thaw continue adding CO2 to the atmosphere independently of human activity. Incorrect. The key concept is thermal inertia and feedback loops. CO2 has an atmospheric residence time of centuries, natural sinks operate slowly, and feedback mechanisms like permafrost methane release continue independently of human emissions.
+
+---
+
+### Question 4
+
+A climate model shows that after all emissions stop, global temperature continues rising for 20-40 years before stabilizing. Which concept best explains this delay?
+
+A. Albedo effect from increased cloud cover
+B. Thermal inertia of the ocean, which has absorbed and slowly releases stored heat
+C. Rapid growth of vegetation absorbing excess solar radiation
+D. Increased volcanic activity triggered by atmospheric pressure changes
+
+Correct Answer: B
+
+Feedback: Correct. The ocean absorbs enormous amounts of heat, which it continues to release over decades. This thermal inertia means the climate system responds with a significant lag, so temperature continues rising even after the forcing (emissions) stops. Incorrect. The delay is primarily due to the ocean's thermal inertia. The ocean acts as a massive heat reservoir, and the energy already stored continues warming the atmosphere for decades after emissions cease.
+
+---
+
+### Question 5
+
+Which strategy would be most effective at preventing climate tipping points from being crossed, based on carbon cycle dynamics?
+
+A. Relying solely on tree planting to offset continued fossil fuel emissions at current rates
+B. Combining aggressive emission reductions with enhanced carbon sinks to limit total cumulative CO2
+C. Waiting for natural carbon sinks to absorb all excess CO2 before taking policy action
+D. Focusing exclusively on reducing methane emissions while maintaining current CO2 output
+
+Correct Answer: B
+
+Feedback: Correct. Tipping points depend on cumulative CO2 and total warming. Only a combined approach that reduces emissions at the source AND enhances carbon sinks can limit cumulative CO2 enough to prevent crossing critical thresholds. Incorrect. No single approach is sufficient. Tree planting alone cannot offset current emission rates, waiting allows further accumulation, and methane alone does not address the primary driver. A combined strategy targeting both emission reduction and sink enhancement is necessary.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student runs a climate model simulation where fossil fuel emissions drop to zero immediately. The model shows temperature continuing to rise for 30 years. Which combination of factors best explains this result?
+
+A. Ocean thermal inertia releasing stored heat and self-sustaining positive feedback loops continuing to operate
+B. Increased solar output and reduced cloud cover after emission sources shut down
+C. Rising population growth increasing energy demand despite zero emissions
+D. Natural variation in Earth's orbital parameters causing a warming cycle
+
+Correct Answer: A
+
+Feedback: Correct. The ocean has absorbed vast amounts of heat that continues warming the atmosphere (thermal inertia), and positive feedback loops like ice-albedo reduction and permafrost methane release have been triggered and operate independently of human emissions. Incorrect. The continued warming results from two system-level properties: the ocean's thermal inertia (stored heat being released gradually) and self-sustaining positive feedback loops (ice-albedo, permafrost thaw) that were activated by prior warming and no longer depend on human emissions.
+
+---
+
+### Question 2
+
+In a carbon cycle model, a student observes that increasing terrestrial carbon storage by 30% while reducing emissions by 50% still results in rising temperatures for 15 years. What does this demonstrate about the climate system?
+
+A. Carbon sinks have no measurable effect on atmospheric CO2 levels
+B. The climate system has built-in lag times and activated feedbacks that persist even under improved conditions
+C. Terrestrial carbon storage is less important than ocean absorption in all scenarios
+D. A 50% emission reduction is identical in effect to no reduction at all
+
+Correct Answer: B
+
+Feedback: Correct. The continued temperature rise despite improved conditions demonstrates that the climate system has significant lag times (thermal inertia) and that previously activated feedback loops continue operating. The combined strategy does eventually stabilize temperatures, but the system does not respond instantly. Incorrect. The enhanced sinks and reduced emissions do help, as temperatures eventually stabilize rather than continuing to rise indefinitely. The temporary continued warming demonstrates system lag and feedback persistence, not that the interventions are ineffective.
+
+---
+
+### Question 3
+
+Which evidence from a carbon cycle model most strongly supports the conclusion that some aspects of climate change are irreversible on human timescales?
+
+A. Atmospheric CO2 fluctuates seasonally with plant growth cycles
+B. Once permafrost thaw and ice-albedo feedback loops are triggered, they continue driving warming independently of human emissions
+C. Ocean temperatures vary with El Nino and La Nina patterns
+D. Different tree species absorb CO2 at different rates depending on latitude
+
+Correct Answer: B
+
+Feedback: Correct. Self-sustaining feedback loops represent potential tipping points. Once permafrost begins releasing stored methane and ice loss reduces albedo, these processes continue regardless of emission reductions, making the resulting warming effectively irreversible on human timescales. Incorrect. The key to irreversibility is self-sustaining positive feedback loops. Seasonal fluctuations and ocean oscillations are natural cycles, not indicators of irreversibility. The activation of feedbacks that operate independently of human action is what creates irreversible change.
+
+---
+
+### Question 4
+
+A policy team uses a climate model to compare three scenarios: business as usual, immediate net zero, and gradual reduction with enhanced sinks. Which finding would provide the strongest evidence for recommending the combined approach over net zero alone?
+
+A. The combined approach achieves temperature stabilization 5 years faster than net zero alone because enhanced sinks actively remove atmospheric CO2 rather than just stopping additions
+B. The combined approach costs less to implement in the first year
+C. The combined approach requires fewer technological innovations
+D. The combined approach results in higher atmospheric CO2 levels but lower temperatures
+
+Correct Answer: A
+
+Feedback: Correct. Enhanced carbon sinks actively draw down atmospheric CO2, addressing the stock of greenhouse gases already accumulated, while net zero only stops new additions. The faster stabilization timeline provides the strongest science-based justification for the combined approach. Incorrect. The strongest evidence is scientific, not economic or logistical. Enhanced sinks combined with emission reduction actively removes CO2 from the atmosphere, addressing the existing stock rather than just stopping new flow, which accelerates temperature stabilization.
+
+---
+
+### Question 5
+
+A student argues that since the ocean absorbs 25% of human CO2 emissions, increasing emissions would actually increase ocean carbon absorption and help solve climate change. Evaluate this claim using carbon cycle dynamics.
+
+A. The claim is correct because ocean absorption scales linearly with atmospheric CO2 without limit
+B. The claim ignores that increased absorption causes ocean acidification and that warming reduces absorption capacity, creating a negative feedback that limits uptake
+C. The claim is correct because deeper ocean waters have unlimited CO2 storage capacity
+D. The claim is invalid only because ocean organisms would die from excess CO2, not because of any physical limitation
+
+Correct Answer: B
+
+Feedback: Correct. While the ocean does absorb more CO2 as atmospheric levels rise, this absorption causes acidification that harms marine life, and warming reduces the ocean's ability to dissolve CO2. These factors create a diminishing-returns dynamic where the ocean's sink capacity decreases as it is needed most. Incorrect. The claim fails because it ignores crucial system dynamics: CO2 absorption causes harmful acidification, and as the ocean warms, it becomes less capable of absorbing CO2. The relationship is not linear and unlimited but is constrained by chemistry and temperature.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: A
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

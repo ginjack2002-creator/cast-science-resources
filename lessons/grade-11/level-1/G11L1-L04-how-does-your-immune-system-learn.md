@@ -888,6 +888,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2, HS-LS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A person is vaccinated against measles at age 2 and encounters the actual measles virus at age 17. Their immune system mounts a rapid, powerful response. Which component of the immune system is primarily responsible for this rapid secondary response?
+
+A. Innate immune cells that provide the same nonspecific defense against all pathogens
+B. Memory B cells that retained the molecular blueprint for producing measles-specific antibodies for 15 years
+C. Red blood cells that carry antibodies through the bloodstream
+D. The vaccine itself, which remains active in the body for decades
+
+Correct Answer: B
+
+Feedback: Correct. Memory B cells are long-lived cells that persist for years or decades after the initial immune response. Upon re-exposure to the measles antigen, they rapidly differentiate into plasma cells that produce targeted antibodies within hours rather than the weeks required for a primary response. Consider what makes the secondary immune response different from the first. The speed and specificity suggest the immune system 'remembers' the pathogen. Which cell type stores this molecular memory?
+
+---
+
+### Question 2
+
+The herd immunity threshold for measles (R0 = 15) is approximately 93%. What does this percentage represent?
+
+A. The percentage of infected people who will recover from measles
+B. The proportion of the population that must be immune to prevent sustained community transmission
+C. The effectiveness rate of the measles vaccine
+D. The percentage of the population that will eventually contract measles
+
+Correct Answer: B
+
+Feedback: Correct. The herd immunity threshold (1 - 1/R0) is the proportion of the population that must be immune to break transmission chains. For measles, 93% immunity means each infected person encounters mostly immune individuals, reducing their effective transmission below 1. Herd immunity is a population-level concept. It refers to the point at which enough people are immune that the pathogen can no longer sustain transmission chains through the community. Calculate 1 - (1/15) to find the threshold.
+
+---
+
+### Question 3
+
+Which statement best describes how vaccines train the immune system?
+
+A. Vaccines inject pre-made antibodies that fight pathogens directly
+B. Vaccines introduce weakened or inactivated pathogen components that trigger the adaptive immune system to produce its own memory cells without causing disease
+C. Vaccines strengthen the innate immune system by increasing white blood cell production
+D. Vaccines create a permanent barrier in the bloodstream that prevents all pathogens from entering
+
+Correct Answer: B
+
+Feedback: Correct. Vaccines expose the immune system to antigens (pathogen components) in a safe form. This triggers the full adaptive immune response, including antibody production and memory cell formation, without the risk of disease. The immune system builds its own lasting protection. Vaccines work WITH your immune system, not as a substitute for it. They provide a safe preview of the pathogen so your immune system can build memory before encountering the real threat.
+
+---
+
+### Question 4
+
+If a community has 80% vaccination coverage against a disease requiring 93% coverage for herd immunity, which prediction is most accurate?
+
+A. The community is fully protected because 80% is close enough to 93%
+B. Outbreaks can still occur among the susceptible 20%, and unvaccinated individuals who cannot receive vaccines (infants, immunocompromised) remain at risk
+C. Only vaccinated individuals can contract the disease
+D. The disease will spontaneously disappear because 80% coverage eliminates the pathogen
+
+Correct Answer: B
+
+Feedback: Correct. The 13% gap below the herd immunity threshold means transmission chains can still propagate through the susceptible population. This puts everyone who cannot be vaccinated (infants, cancer patients, organ recipients) at risk because the community shield is incomplete. Herd immunity is a threshold effect, not a gradual one. Below the threshold, enough susceptible people remain connected in the population for the pathogen to spread. Consider who is most vulnerable when community protection is incomplete.
+
+---
+
+### Question 5
+
+After receiving a vaccine, a patient's blood test shows antibody levels that peak at 2 weeks, then gradually decline over the following months. Does this decline mean the vaccine has stopped working?
+
+A. Yes, declining antibodies mean the patient is no longer protected
+B. No, because memory B cells persist long after circulating antibody levels decline, enabling rapid antibody production upon re-exposure
+C. Yes, which is why booster shots must be given every month
+D. No, because the vaccine continuously produces new antibodies
+
+Correct Answer: B
+
+Feedback: Correct. Circulating antibody levels naturally decline after the initial immune response, but the critical memory cells persist for years or decades. These memory cells can reactivate within hours of re-exposure, producing antibodies far faster than the original response. Distinguish between circulating antibodies (which are active proteins in the blood) and memory cells (which are living cells that store the blueprint for making those antibodies). Which one provides long-term protection?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that when vaccination rate crosses the herd immunity threshold, disease transmission drops sharply rather than gradually. Which explanation best accounts for this threshold behavior?
+
+A. The vaccine becomes more effective at higher coverage levels
+B. Below the threshold, transmission chains can connect susceptible individuals across the population; at the threshold, immune individuals fragment these chains into disconnected clusters that cannot sustain spread
+C. The pathogen mutates to become less infectious at high vaccination rates
+D. People change their behavior when they know most of the population is vaccinated
+
+Correct Answer: B
+
+Feedback: Correct. Herd immunity operates as a percolation threshold: when enough nodes (people) are immune, the network of susceptible individuals becomes fragmented into small, disconnected clusters. The pathogen can no longer find a continuous path through the population, and transmission collapses. Think of the population as a network. Each immune person removes a node from the transmission network. At some point, the network fractures into small disconnected groups. This is a sudden transition, not a gradual decline.
+
+---
+
+### Question 2
+
+The model simulates an outbreak in a population with 85% vaccination coverage for a disease with R0 = 5 (herd immunity threshold = 80%). Despite being above the threshold, a small outbreak occurs. Which explanation is most consistent with the model?
+
+A. The model is incorrect because outbreaks should be impossible above the herd immunity threshold
+B. Clustering of unvaccinated individuals in geographic or social groups can create local pockets of susceptibility that sustain limited transmission even when overall coverage exceeds the threshold
+C. The vaccine failed in all affected individuals simultaneously
+D. The pathogen's R0 increased spontaneously during the simulation
+
+Correct Answer: B
+
+Feedback: Correct. Herd immunity thresholds assume uniform mixing. When unvaccinated individuals cluster together (by geography, community, or belief system), local susceptibility can exceed the threshold even when the overall population average is above it. This is why spatially uniform coverage matters. The overall percentage is above the threshold, but herd immunity assumes uniform distribution. Consider what happens if unvaccinated individuals are concentrated in the same school, neighborhood, or community rather than evenly spread across the population.
+
+---
+
+### Question 3
+
+A model comparison shows that the individual immune response simulation takes 14 days to reach peak antibody production on first exposure but only 2 days on second exposure. Which cellular mechanism accounts for this 7-fold speed increase?
+
+A. The pathogen is weaker on second exposure
+B. Memory B cells bypass the initial antigen recognition and clonal expansion phases, immediately differentiating into antibody-producing plasma cells
+C. The innate immune system handles the second infection entirely without adaptive immunity
+D. Antibodies from the first exposure remain in the blood permanently
+
+Correct Answer: B
+
+Feedback: Correct. During the primary response, naive B cells must encounter the antigen, become activated, undergo clonal expansion, and differentiate into plasma cells. Memory B cells skip these early steps, having already been selected and expanded. They can begin producing antibodies almost immediately. Consider what steps are required during the first immune response that can be skipped during the second. Memory cells exist precisely to accelerate this process. What steps do they eliminate?
+
+---
+
+### Question 4
+
+A pandemic response team uses the model to plan a vaccination rollout with limited supply. For a disease with R0 = 4.5 and a 6-month timeline, which prioritization strategy would the model evidence best support?
+
+A. Vaccinate the youngest populations first because they have the longest remaining lifespan
+B. Distribute vaccines randomly through a lottery system for fairness
+C. Prioritize high-transmission groups (healthcare workers, essential workers, densely housed populations) first to reduce Re below 1 as quickly as possible with limited supply
+D. Vaccinate only the elderly because they have the highest mortality risk
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that reducing Re below 1 is the critical objective for stopping exponential growth. Vaccinating high-transmission individuals first has the largest impact on Re per dose administered, slowing spread most efficiently while supply is limited. The model tracks transmission dynamics, not just individual protection. With limited supply, the strategic question is: which vaccinations reduce the most transmission per dose? Consider who drives the most spread in the population.
+
+---
+
+### Question 5
+
+A student observes that their model produces different outcomes for the same 85% vaccination rate depending on whether the disease has R0 = 3 or R0 = 12. For R0 = 3, the outbreak is contained; for R0 = 12, it spreads widely. Which analysis best explains this difference?
+
+A. The vaccine is less effective against diseases with higher R0
+B. 85% coverage exceeds the herd immunity threshold for R0 = 3 (threshold = 67%) but falls far short of the threshold for R0 = 12 (threshold = 92%), so the same coverage produces opposite outcomes
+C. Diseases with higher R0 mutate faster and evade the vaccine
+D. The model assigns random outcomes when coverage is between 80% and 90%
+
+Correct Answer: B
+
+Feedback: Correct. The herd immunity threshold depends directly on R0 (formula: 1 - 1/R0). At 85% coverage, R0 = 3 requires only 67% (covered), but R0 = 12 requires 92% (not covered). The same population-level immunity can be sufficient or inadequate depending on the pathogen's transmissibility. Calculate the herd immunity threshold for each R0 using 1 - (1/R0). For R0 = 3: 1 - (1/3) = 0.67 or 67%. For R0 = 12: 1 - (1/12) = 0.92 or 92%. Now compare each threshold to the 85% coverage.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

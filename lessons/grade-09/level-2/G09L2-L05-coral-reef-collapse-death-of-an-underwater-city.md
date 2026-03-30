@@ -961,6 +961,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-6, HS-ESS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is coral bleaching, and what causes it?
+
+A. Coral turns white because ocean pollution physically coats its surface
+B. Coral expels its symbiotic algae (zooxanthellae) due to thermal stress, losing its color and primary energy source
+C. Coral bleaching is a natural seasonal process that strengthens the coral over time
+D. Bleaching occurs when predators consume the outer layer of coral tissue
+
+Correct Answer: B
+
+Feedback: Correct. Coral bleaching occurs when thermal stress causes coral to expel the zooxanthellae that live within its tissues. These symbiotic algae provide up to 90% of coral's energy through photosynthesis, and their loss can be fatal. Coral bleaching is a stress response, not pollution coating or natural cycling. When water temperatures exceed a threshold, coral expels the photosynthetic zooxanthellae living in its tissue, losing both color and its primary energy source.
+
+---
+
+### Question 2
+
+Zooxanthellae are photosynthetic organisms that live within coral tissue. What percentage of the coral's energy do they provide?
+
+A. About 10%, with coral getting most energy from filter feeding
+B. About 50%, split evenly with other energy sources
+C. Up to 90%, making them essential for coral survival
+D. Less than 5%, making them relatively unimportant to coral health
+
+Correct Answer: C
+
+Feedback: Correct. Zooxanthellae provide up to 90% of the coral's energy through photosynthesis, making the symbiotic relationship essential. When zooxanthellae are expelled during bleaching, the coral is effectively starved of its primary energy supply. Zooxanthellae provide up to 90% of coral energy, making them far more than a minor contributor. This is why bleaching (expelling zooxanthellae) is so devastating, as it eliminates the coral's primary energy source.
+
+---
+
+### Question 3
+
+What is a 'phase shift' in the context of coral reef ecosystems?
+
+A. A temporary change in ocean currents that affects reef temperature
+B. A fundamental transition from a coral-dominated ecosystem to an algae-dominated one that is extremely difficult to reverse
+C. The daily cycle of photosynthesis and respiration on the reef
+D. A seasonal migration of fish species between reef habitats
+
+Correct Answer: B
+
+Feedback: Correct. A phase shift is a fundamental state change where the reef transitions from coral-dominated to algae-dominated. This new state is self-reinforcing and extremely difficult to reverse because the conditions that support coral recovery are eliminated. A phase shift represents a permanent state change, not a temporary fluctuation. Once a reef shifts from coral-dominated to algae-dominated, the algae prevent coral recovery by smothering settlement surfaces and altering water chemistry.
+
+---
+
+### Question 4
+
+How does ocean acidification affect coral reef organisms?
+
+A. It makes coral grow faster by providing more dissolved minerals
+B. It has no measurable effect on marine organisms
+C. It reduces the ability of coral and other calcifying organisms to build and maintain their calcium carbonate skeletons
+D. It only affects fish populations, not coral itself
+
+Correct Answer: C
+
+Feedback: Correct. As oceans absorb CO2, pH decreases, making it harder for coral and other calcifiers to precipitate calcium carbonate for their skeletons. This weakens existing structures and slows new growth. Ocean acidification reduces the availability of carbonate ions that coral needs to build its calcium carbonate skeleton. Lower pH means coral must expend more energy to calcify, weakening structures and slowing growth.
+
+---
+
+### Question 5
+
+Why are herbivorous fish important to coral reef health?
+
+A. They provide food for coral polyps through their waste products
+B. They graze on algae that would otherwise smother coral, keeping reef surfaces clear for coral growth
+C. They have no significant relationship with coral health
+D. They transport nutrients from deep water to the reef surface
+
+Correct Answer: B
+
+Feedback: Correct. Herbivorous fish like parrotfish and tangs graze algae off reef surfaces, preventing algae overgrowth that would smother coral. When fish populations decline, algae can outcompete coral for space and light. Herbivorous fish play a critical role in controlling algae. Without grazing pressure, fast-growing algae outcompete slow-growing coral for light and space, accelerating the transition toward an algae-dominated state.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The simulation shows that a 0.5-degree C temperature increase for one season causes bleaching, but coral recovers when temperatures normalize. However, a sustained 1.5-degree C increase causes permanent phase shift. What systems concept explains this difference?
+
+A. Linear response, where greater input always produces proportionally greater output
+B. Threshold dynamics, where the system can absorb stress up to a point but collapses rapidly beyond it
+C. Random variation in coral resilience between the two scenarios
+D. The 1.5-degree scenario lasted longer simply because the temperature was higher
+
+Correct Answer: B
+
+Feedback: Correct. This demonstrates threshold dynamics. Below the threshold, the system has enough resilience to recover. Above it, cascading feedback loops activate and the system enters a new stable state (phase shift) that resists reversal. The difference is not proportional (linear) but threshold-based. The 0.5-degree scenario stays within the system's recovery capacity, while 1.5 degrees crosses a critical threshold that activates self-reinforcing cascading feedback loops.
+
+---
+
+### Question 2
+
+The model reveals that three moderate stressors (temperature +1 degree C, acidity +0.1 pH, high fishing pressure) applied simultaneously cause reef collapse, while any single stressor at the same level does not. What does this demonstrate about coupled systems?
+
+A. The three stressors cancel each other out in some way
+B. Multiple stressors interact synergistically, meaning their combined effect exceeds the sum of their individual effects
+C. Only temperature matters; the other stressors are irrelevant
+D. The model is flawed because individual stressors should produce the same result as combined ones
+
+Correct Answer: B
+
+Feedback: Correct. The stressors interact synergistically through coupled feedback loops. Acidification lowers the bleaching threshold, fishing removes algae grazers, and temperature triggers bleaching. Together they push the system past a threshold that no single stressor could reach alone. This is synergistic interaction, where combined stressors produce effects greater than the sum of individual effects. Each stressor weakens the system's resilience, lowering the threshold for the other stressors to cause collapse.
+
+---
+
+### Question 3
+
+After a phase shift to algae dominance, the model shows the reef does not recover even when temperature returns to normal. Which systems thinking concept explains this irreversibility?
+
+A. The model has an error because removing the stressor should restore the system
+B. The algae-dominated state is a stable alternative equilibrium maintained by its own reinforcing feedback loops
+C. Temperature is not actually a factor in reef health
+D. The reef needs more time but will eventually recover on its own
+
+Correct Answer: B
+
+Feedback: Correct. The phase shift creates a new stable state. Algae smother coral settlement surfaces, degraded reef structure cannot support herbivorous fish, and without fish, algae grows unchecked. These self-reinforcing dynamics maintain the algae-dominated state. The algae-dominated state is self-reinforcing. Without coral structure, fish leave. Without fish, algae is uncontrolled. Algae smothers any new coral. This new equilibrium persists even after the original temperature stress is removed.
+
+---
+
+### Question 4
+
+A student's model identifies zooxanthellae density as the most sensitive component in the system. What makes this component a critical leverage point?
+
+A. Zooxanthellae are the most visually obvious component of the reef
+B. Zooxanthellae provide 90% of coral energy, so their loss triggers cascading failure through every connected component in the system
+C. Zooxanthellae are the easiest component to measure in the field
+D. Zooxanthellae only affect coral color, not reef function
+
+Correct Answer: B
+
+Feedback: Correct. Because zooxanthellae supply 90% of coral energy, their loss triggers a cascade: coral weakens and dies, reef structure degrades, fish lose habitat, algae overgrows. This single component's failure propagates through the entire coupled system. Zooxanthellae are a leverage point because they are the energy foundation of the entire reef ecosystem. Their loss does not just affect coral color; it initiates a cascading failure that propagates through energy supply, structural integrity, fish habitat, and algae competition.
+
+---
+
+### Question 5
+
+Based on the model, which reef restoration strategy would be most effective at preventing phase shift?
+
+A. Adding artificial color to bleached coral to make it look healthy
+B. Targeting multiple leverage points simultaneously: protecting herbivorous fish populations, reducing local acidification sources, and establishing marine temperature monitoring with early warning systems
+C. Focusing exclusively on reducing global CO2 emissions
+D. Relocating all coral to aquariums until ocean conditions improve
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that multiple coupled stressors drive collapse, so effective intervention must target multiple leverage points. Protecting fish controls algae, reducing local acidification raises bleaching thresholds, and monitoring enables early response. Because the reef system involves coupled feedback loops with multiple stressors, effective intervention must address multiple leverage points simultaneously. Single-factor approaches (emissions-only or relocation) fail to address the coupled dynamics.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

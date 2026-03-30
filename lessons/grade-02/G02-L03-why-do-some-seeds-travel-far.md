@@ -820,6 +820,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+How do seeds get to new places if plants cannot walk?
+
+A. Seeds can only grow right under the parent plant
+B. People must plant every seed by hand
+C. Wind, water, and animals can carry seeds to new places
+D. Seeds walk to new places when nobody is watching
+
+Correct Answer: C
+
+Feedback: That is right! Wind, water, and animals are all ways seeds travel to new places, even though the parent plant cannot move. Plants cannot walk, but seeds have amazing ways to travel. Wind blows fluffy seeds, water carries floating seeds, and animals carry seeds on their fur or in their bellies.
+
+---
+
+### Question 2
+
+What happens when you blow on a dandelion puff?
+
+A. Nothing happens
+B. The seeds float away in the air
+C. The seeds get heavier
+D. The flower grows bigger
+
+Correct Answer: B
+
+Feedback: Yes! Dandelion seeds have fluffy tops that catch the air, so when you blow on them, they float away like tiny parachutes. Dandelion seeds are light and fluffy. When you blow on them, the air carries them away. The fluffy part acts like a parachute and helps the seed float to a new place.
+
+---
+
+### Question 3
+
+Why would it be a problem if all seeds fell right under the parent plant?
+
+A. It would be fine because they would all grow together
+B. They would be too crowded and not have enough sun and water
+C. The seeds would be happier together
+D. The parent plant would eat the seeds
+
+Correct Answer: B
+
+Feedback: Correct! If all seeds fell in the same spot, they would be too crowded. They would compete for sunlight, water, and space, and many would not survive. If too many seeds grow in one spot, they have to share sunlight, water, and nutrients. This is called competition. Seeds travel away so they can find their own spot with enough resources to grow.
+
+---
+
+### Question 4
+
+Which seed shape would help a seed travel far in the wind?
+
+A. Heavy and round like a marble
+B. Light and fluffy like a feather
+C. Square and flat like a book
+D. Sticky like tape
+
+Correct Answer: B
+
+Feedback: That is right! Light, fluffy seeds catch the wind and float far away, just like dandelion seeds or cottonwood fluff. For wind travel, seeds need to be light and catch the air. Fluffy or winged shapes stay in the air longer and travel farther. Heavy round seeds just drop to the ground.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is seed dispersal?
+
+A. When seeds stay under the parent plant
+B. When seeds move away from the parent plant to a new place
+C. When seeds get eaten and are gone forever
+D. When plants grow taller
+
+Correct Answer: B
+
+Feedback: Yes! Seed dispersal is when seeds move away from the parent plant to a new place where they can grow. Seed dispersal means seeds moving AWAY from the parent plant. Seeds travel to new places using wind, water, or animals so they can find a good spot to grow.
+
+---
+
+### Question 2
+
+A dandelion seed has a fluffy top. An acorn is heavy and round. Which one will travel farther in the wind?
+
+A. The acorn because it is bigger
+B. They will travel the same distance
+C. The dandelion seed because its fluffy shape catches the wind
+D. Neither one can travel in the wind
+
+Correct Answer: C
+
+Feedback: Correct! The dandelion seed's fluffy top catches the wind like a parachute, helping it float far away. The heavy acorn cannot float and just drops to the ground. Fluffy shapes catch the wind and stay in the air longer. The dandelion seed floats far because its fluffy top acts like a parachute. The heavy acorn falls straight down because the wind cannot carry it.
+
+---
+
+### Question 3
+
+What is an adaptation?
+
+A. A toy for plants to play with
+B. A body part or feature that helps a living thing survive
+C. A type of soil
+D. A kind of weather
+
+Correct Answer: B
+
+Feedback: That is right! An adaptation is a body part or feature that helps a living thing survive. Fluffy tops on seeds and wings on maple seeds are adaptations for wind travel. An adaptation is a special body part or feature that helps a living thing survive. Seeds have adaptations like fluff, wings, or hooks that help them travel to new places.
+
+---
+
+### Question 4
+
+In our model, what happened to Travel Distance when the Seed Shape was fluffy and there was wind?
+
+A. Travel Distance was very short
+B. Travel Distance was very far
+C. Travel Distance did not change at all
+D. The seed could not move
+
+Correct Answer: B
+
+Feedback: Correct! When the Seed Shape was fluffy and there was wind, Travel Distance was far. The fluffy shape catches the air and helps the seed float a long way. In our model, fluffy seeds with wind traveled far because the fluffy shape catches the air. This is a positive relationship: more fluffiness plus wind equals more travel distance.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -164,6 +164,156 @@ Biomechanical Engineers study how animals move and use those ideas to design bet
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-LS1-1, 3-5-ETS1-1, 3-5-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What does it mean to copy an idea from nature to solve a problem?
+
+A. Taking an animal home as a pet
+B. Using a design found in nature to build something useful
+C. Drawing a picture of an animal
+D. Planting a garden
+
+Correct Answer: B
+
+Feedback: Yes! Using designs found in nature to build useful things is called biomimicry. Engineers study animals and plants to get ideas for better technology. Copying ideas from nature means studying how animals and plants solve problems, then using those ideas to build better technology. This is called biomimicry.
+
+---
+
+### Question 2
+
+Why do you think a beaver has a flat tail?
+
+A. It looks nice
+B. It helps the beaver swim and steer in the water
+C. It keeps the beaver warm at night
+D. It has no purpose at all
+
+Correct Answer: B
+
+Feedback: Correct! A beaver's flat tail is an adaptation that helps it swim efficiently by pushing against the water like a paddle. A beaver's flat tail is specially shaped to help it swim. The flat shape pushes against water like a paddle, giving the beaver speed and steering ability. This is called an adaptation.
+
+---
+
+### Question 3
+
+If an engineer wanted to build a swimming robot, where might they look for ideas?
+
+A. At a car factory
+B. At animals that are good swimmers
+C. At a grocery store
+D. At a library for fiction books
+
+Correct Answer: B
+
+Feedback: That is right! Engineers often study animals that are good swimmers, like beavers, fish, and dolphins, to get ideas for designing swimming robots. Engineers look at animals that are good at swimming. By studying how fish, beavers, and dolphins move through water, engineers can design better swimming robots. Nature has been testing designs for millions of years.
+
+---
+
+### Question 4
+
+What is a tradeoff?
+
+A. When you trade toys with a friend
+B. When improving one thing means making another thing worse
+C. When you get everything you want with no problems
+D. When two people agree on the same answer
+
+Correct Answer: B
+
+Feedback: Correct! A tradeoff is when improving one thing means another thing gets worse. You cannot have everything at once. A tradeoff happens when making one thing better causes another thing to get worse. For example, making a robot bigger might give it more power, but it would also use more energy. You cannot have everything.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is biomimicry?
+
+A. Training animals to do human jobs
+B. Designing human technology by copying ideas from nature
+C. Building houses for animals in the wild
+D. Taking photographs of animals
+
+Correct Answer: B
+
+Feedback: Correct! Biomimicry is the practice of designing human technology by copying ideas and strategies found in nature. Biomimicry means designing technology by studying and copying ideas from nature. Engineers look at how animals solve problems and use those strategies to build better machines.
+
+---
+
+### Question 2
+
+In the model, what happened when you changed the tail shape from flat (beaver) to round?
+
+A. Swimming speed increased and energy use decreased
+B. Swimming speed decreased because a round tail pushes less water
+C. Nothing changed at all
+D. The robot could not swim at all
+
+Correct Answer: B
+
+Feedback: Yes! A flat tail pushes more water and creates more swimming speed. Changing to a round tail decreased speed because it pushes less water. The model showed that a flat tail (like a beaver's) pushes more water than a round tail, creating more swimming speed. When you switched to a round tail, speed went down because less water was being pushed.
+
+---
+
+### Question 3
+
+What tradeoff did the model reveal about body size?
+
+A. Bigger bodies are always better in every way
+B. Smaller bodies are always better in every way
+C. A bigger body gives more power but uses more energy
+D. Body size has no effect on swimming
+
+Correct Answer: C
+
+Feedback: Correct! The model showed that bigger bodies provide more power but also use more energy. This is a classic engineering tradeoff. The model revealed a tradeoff: a bigger body is stronger and more powerful, but it also uses more energy to move through water. Good engineering means finding the best balance between power and energy use.
+
+---
+
+### Question 4
+
+Why do engineers study animal shapes instead of inventing designs from scratch?
+
+A. Because animals tell engineers what to build
+B. Because millions of years of evolution have already tested and refined these designs
+C. Because it is easier to copy than to think
+D. Because the government requires it
+
+Correct Answer: B
+
+Feedback: That is right! Nature has been testing designs through evolution for millions of years. Animals alive today have shapes and features that have been refined over a very long time. Engineers study animal shapes because evolution has been testing and improving these designs for millions of years. The animals alive today have features that have been refined over vast stretches of time, making them excellent starting points for engineering designs.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

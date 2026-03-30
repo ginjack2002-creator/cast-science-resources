@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS2-2, MS-LS2-3, MS-LS2-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is an ecosystem?
+
+A. A collection of only animals in one area
+B. A community of living organisms interacting with each other and their nonliving environment
+C. A zoo where different species are kept together
+D. Any area with plants growing in it
+
+Correct Answer: B
+
+Feedback: Correct! An ecosystem includes all living things (plants, animals, fungi, bacteria) AND nonliving things (water, soil, sunlight, air) in an area, plus all their interactions. Not quite. An ecosystem is a complete community of living organisms (plants, animals, decomposers) interacting with each other AND with the nonliving parts of their environment (water, soil, sunlight, temperature).
+
+---
+
+### Question 2
+
+What happens to a prey population if all the predators are removed from an ecosystem?
+
+A. The prey population stays the same
+B. The prey population grows without limit forever
+C. The prey population grows rapidly at first, but eventually runs out of food and crashes
+D. The prey population decreases because they need predators to survive
+
+Correct Answer: C
+
+Feedback: Correct! Without predators, prey populations grow rapidly. But eventually they exceed the carrying capacity, consuming all available food and resources, leading to a population crash. Not quite. Without predators to control their numbers, prey populations initially explode. But they eventually eat all the available food and overshoot the carrying capacity, leading to starvation and a dramatic population crash.
+
+---
+
+### Question 3
+
+Why is biodiversity (having many different species) important for an ecosystem?
+
+A. It makes the ecosystem look more interesting
+B. It doesn't matter — only the largest animals are important
+C. More species means the ecosystem is more stable and can recover from disturbances
+D. Biodiversity only matters in tropical rainforests
+
+Correct Answer: C
+
+Feedback: Correct! High biodiversity makes ecosystems more resilient. When there are many species, the loss of one has less impact because other species can fill similar roles, keeping the system functioning. Not quite. Biodiversity makes ecosystems stronger and more resilient. Diverse ecosystems have more species filling different roles, so if one species declines, others can compensate. This stability helps ecosystems recover from disturbances.
+
+---
+
+### Question 4
+
+In a food chain, what is the role of a decomposer?
+
+A. To hunt and eat other animals
+B. To produce food using sunlight
+C. To break down dead organisms and recycle nutrients back into the ecosystem
+D. To pollinate flowers and spread seeds
+
+Correct Answer: C
+
+Feedback: Correct! Decomposers like fungi and bacteria break down dead organisms and waste, recycling nutrients back into the soil where plants can use them again. They close the loop in nutrient cycling. Not quite. Decomposers break down dead organisms and waste material, returning nutrients to the soil. This nutrient recycling is essential because it allows producers (plants) to grow, keeping the food chain going.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the ecosystem model, what pattern do predator and prey populations follow over time in a balanced ecosystem?
+
+A. Both populations remain constant and never change
+B. Predators and prey cycle: prey increases, then predators increase, then prey decreases, then predators decrease
+C. Predators always increase while prey always decrease
+D. Populations change randomly with no predictable pattern
+
+Correct Answer: B
+
+Feedback: Correct! Predator-prey populations follow a natural cycle. More prey means more food for predators, so predators increase. More predators means more prey eaten, so prey decreases. Then predators decline from lack of food, and the cycle repeats. Not quite. Predator and prey populations follow a cyclical pattern. When prey is abundant, predators thrive and increase. This increased predation causes prey to decline, which then causes predators to decline from food scarcity. With fewer predators, prey recovers, and the cycle repeats.
+
+---
+
+### Question 2
+
+In the model, when Predator Population is locked at zero, the prey population initially explodes but then crashes. What causes the crash?
+
+A. Disease spreads faster in large populations
+B. Without predators, prey overshoot carrying capacity by consuming all available resources, leading to starvation
+C. New predators evolve to replace the removed ones
+D. The prey migrate to a different ecosystem
+
+Correct Answer: B
+
+Feedback: Correct! Without predators controlling their numbers, prey populations grow beyond what the habitat can support (carrying capacity). They deplete food and resources, leading to mass starvation and a population crash. Not quite. Without predators, prey populations grow unchecked past the environment's carrying capacity. They consume all available food and resources, and when resources are depleted, the population crashes due to starvation.
+
+---
+
+### Question 3
+
+When Habitat Size is reduced to 25% in the model, what happens to BOTH predator and prey populations?
+
+A. Both populations stay the same but are more crowded
+B. Only prey populations decline because they need more space
+C. Both populations decline because reduced habitat means reduced carrying capacity for all species
+D. Predator populations increase because prey are easier to catch in a smaller area
+
+Correct Answer: C
+
+Feedback: Correct! Reducing habitat shrinks the carrying capacity for ALL species. Less habitat means less food, water, and shelter, so both predator and prey populations decline. The smallest populations are pushed toward extinction first. Not quite. Habitat loss reduces the carrying capacity for every species in the ecosystem. With only 25% of the original habitat, there is less food, water, and shelter to support populations. Both predator and prey populations decline.
+
+---
+
+### Question 4
+
+A nature preserve has lost most of its wolves, and deer populations have exploded, overgrazing vegetation and degrading streams. Based on the model, which intervention would be most effective?
+
+A. Plant more trees to increase food supply for deer
+B. Build fences to keep deer in one area
+C. Reintroduce wolves to restore the predator-prey balance and allow vegetation to recover
+D. Remove all deer and start over with new animals
+
+Correct Answer: C
+
+Feedback: Correct! Reintroducing predators restores the natural predator-prey cycle. With wolves present, deer populations are controlled, allowing vegetation to recover. This is exactly what happened when wolves were reintroduced to Yellowstone National Park. Not quite. The most effective intervention is reintroducing wolves to restore the predator-prey balance. This is a real-world example: when wolves were returned to Yellowstone, deer populations stabilized, vegetation recovered, and the entire ecosystem improved.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

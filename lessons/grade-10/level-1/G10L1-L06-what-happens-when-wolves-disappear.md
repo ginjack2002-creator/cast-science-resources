@@ -884,6 +884,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-1, HS-LS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+In a food web, what is the most likely consequence of removing the top predator from an ecosystem?
+
+A. All other species in the ecosystem will thrive because there is less predation.
+B. Herbivore populations will increase unchecked, potentially overgrazing vegetation and destabilizing the ecosystem.
+C. The ecosystem will quickly self-correct and establish a new stable state.
+D. Only the species directly eaten by the predator will be affected.
+
+Correct Answer: B
+
+Feedback: Correct. Without top-down control, herbivore populations can explode beyond carrying capacity, leading to overgrazing, vegetation loss, and cascading effects throughout the ecosystem. Incorrect. Removing a top predator allows herbivore populations to grow unchecked, which cascades through the ecosystem as overgrazing damages vegetation and habitat for many other species.
+
+---
+
+### Question 2
+
+The term 'carrying capacity' refers to which ecological concept?
+
+A. The maximum number of predators an ecosystem can support.
+B. The maximum population size that an environment can sustain indefinitely given available resources.
+C. The total biomass of all organisms in an ecosystem.
+D. The rate at which a population grows under ideal conditions.
+
+Correct Answer: B
+
+Feedback: Correct. Carrying capacity (K) is the maximum population an environment can sustain over time, determined by available food, water, shelter, and space. Populations exceeding K face resource depletion. Incorrect. Carrying capacity is the maximum sustainable population size for a given environment, limited by available resources. Exceeding it leads to resource depletion and population decline.
+
+---
+
+### Question 3
+
+A 'keystone species' is best defined as a species that:
+
+A. Has the largest population in the ecosystem.
+B. Has an impact on the ecosystem disproportionately large compared to its population size.
+C. Is at the bottom of the food web and supports all other organisms.
+D. Can survive in the widest range of environmental conditions.
+
+Correct Answer: B
+
+Feedback: Correct. Keystone species have effects on ecosystem structure and function far beyond what their numbers suggest. Removing them causes fundamental changes to the ecosystem's organization. Incorrect. A keystone species has an outsized ecological impact relative to its abundance. Like a keystone in an arch, its removal causes the entire structure to change or collapse.
+
+---
+
+### Question 4
+
+Wolves were reintroduced to Yellowstone National Park in 1995. Which of the following is a documented ecological change that followed their return?
+
+A. Elk populations increased because wolves brought more prey into the park.
+B. Vegetation along rivers recovered as elk changed their grazing behavior to avoid wolf predation areas.
+C. All other predator species left the park due to competition with wolves.
+D. The wolf population immediately reached carrying capacity and stopped growing.
+
+Correct Answer: B
+
+Feedback: Correct. Wolf reintroduction created an 'ecology of fear' that changed elk behavior. Elk avoided riverbanks where they were vulnerable, allowing willows and aspens to recover, stabilizing riverbanks. Incorrect. Wolves reduced elk grazing pressure, particularly along rivers, through both direct predation and behavioral changes (ecology of fear). Riparian vegetation recovered as a result.
+
+---
+
+### Question 5
+
+In a stable ecosystem, predator and prey populations typically exhibit which pattern over time?
+
+A. Both populations remain at constant, unchanging levels.
+B. Predator populations always exceed prey populations.
+C. Oscillating cycles where prey increases are followed by predator increases, then prey decreases.
+D. Both populations grow exponentially without limit.
+
+Correct Answer: C
+
+Feedback: Correct. Predator-prey dynamics typically produce cyclical oscillations: prey increase leads to predator increase (more food), which reduces prey, which then reduces predators (less food), and the cycle repeats. Incorrect. Classic predator-prey dynamics show oscillating cycles. Prey abundance fuels predator growth, predator growth reduces prey, and prey scarcity causes predator decline, restarting the cycle.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the computational model, setting Predator Pressure to zero causes elk Population Size to increase by 300%, Food Availability to crash, and Extinction Risk for other species to spike. This sequence is best described as a:
+
+A. Negative feedback loop that stabilizes the ecosystem.
+B. Trophic cascade, where changes at one trophic level ripple through the entire ecosystem.
+C. Random fluctuation in population that will self-correct over time.
+D. Linear cause-and-effect where only the direct prey species is impacted.
+
+Correct Answer: B
+
+Feedback: Correct. This is a trophic cascade: removing the top predator causes a chain reaction through multiple trophic levels, from herbivore boom to vegetation collapse to habitat degradation to biodiversity loss. Incorrect. The model demonstrates a trophic cascade, a multi-level chain reaction where changes at the top of the food web ripple down through every level, transforming the entire ecosystem.
+
+---
+
+### Question 2
+
+The model shows that after wolf reintroduction, ecosystem recovery takes significantly longer than the degradation that occurred during wolf absence. Which explanation best accounts for this asymmetry?
+
+A. Wolves are less effective at controlling elk populations than expected.
+B. Destruction (overgrazing, erosion, species loss) happens quickly, but rebuilding (vegetation regrowth, soil accumulation, species recolonization) requires much more time.
+C. The model overestimates the speed of degradation.
+D. Recovery is slow because elk populations resist predation through learned behavior.
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals a fundamental asymmetry: destroying ecological structures (killing vegetation, eroding soil) is fast, but rebuilding them (growing trees, rebuilding soil, recolonizing species) requires years to decades. Incorrect. Ecological degradation is inherently faster than recovery. Overgrazing can kill decades of vegetation growth in a few years, while regrowth, soil rebuilding, and species recolonization take much longer.
+
+---
+
+### Question 3
+
+The model includes a 'Behavioral Response' component showing that elk change WHERE they graze when wolves are present. Why does the model suggest this 'ecology of fear' may be as important as direct predation?
+
+A. Fear causes elk to stop eating entirely, leading to population crash.
+B. Behavioral changes redistribute grazing pressure across the landscape, allowing vegetation recovery in previously overgrazed areas without requiring significant elk population reduction.
+C. The ecology of fear only affects young elk, which are not significant grazers.
+D. Fear-based responses last only a few days before elk resume normal behavior.
+
+Correct Answer: B
+
+Feedback: Correct. The ecology of fear changes the SPATIAL distribution of grazing, not just the number of elk. Even modest wolf populations can cause elk to avoid riverbanks and valleys, allowing vegetation recovery in these critical areas. Incorrect. The model shows that the ecology of fear redistributes grazing spatially. Elk avoid vulnerable areas (riverbanks, narrow valleys), allowing vegetation recovery in these critical zones regardless of total elk numbers.
+
+---
+
+### Question 4
+
+A student proposes simply reducing elk numbers through hunting instead of reintroducing wolves. Based on the model, which limitation of this approach does the trophic cascade evidence reveal?
+
+A. Hunting reduces elk numbers but does not create the behavioral changes (ecology of fear) that redistribute grazing pressure across the landscape.
+B. Hunting is more effective than wolf predation at controlling elk populations.
+C. The model shows that hunting and wolf predation produce identical ecological outcomes.
+D. Hunting would reduce elk populations below the level needed for the ecosystem to function.
+
+Correct Answer: A
+
+Feedback: Correct. The model distinguishes between population control (reducing numbers) and behavioral control (changing WHERE elk graze). Wolves provide both; hunting primarily provides only population reduction without the fear-driven spatial redistribution. Incorrect. The model reveals that wolves provide two types of control: direct population reduction AND behavioral modification (ecology of fear). Hunting can reduce numbers but does not create the landscape-scale behavioral changes that drive vegetation recovery.
+
+---
+
+### Question 5
+
+The model demonstrates that Population Size, Food Availability, Habitat Area, and Extinction Risk are all interconnected through feedback loops. What does this complexity imply for wildlife management decisions?
+
+A. Wildlife management is straightforward because changing one variable predictably controls all others.
+B. Ecosystems are too complex to manage, so intervention should be avoided.
+C. Management decisions must consider the entire system because intervening at one trophic level produces cascading effects at all levels, some of which may be unexpected.
+D. Only the top predator matters; managing any other species is unnecessary.
+
+Correct Answer: C
+
+Feedback: Correct. The model demonstrates that ecosystems are interconnected systems where single-variable interventions produce cascading effects throughout multiple trophic levels. Effective management requires systems-level thinking. Incorrect. The model shows that ecosystem components are tightly coupled through feedback loops. Changing any one variable cascades through the system, requiring managers to think in terms of whole systems, not isolated species.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: A
+Question 5: C
+
+---
+
 ## Resources
 
 | Resource | Link |

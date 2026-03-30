@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Where does rain come from?
+
+A. From the ground
+B. From the clouds
+C. From the ocean
+
+Correct Answer: B
+
+Feedback: Yes! Rain falls from clouds in the sky. Rain falls from clouds. When clouds get very full of tiny water drops, the drops fall down as rain.
+
+---
+
+### Question 2
+
+What happens to a puddle on a sunny day?
+
+A. It gets bigger
+B. It stays the same
+C. It dries up and goes away
+
+Correct Answer: C
+
+Feedback: Yes! A puddle on a sunny day dries up because the sun heats the water and it goes up into the sky. On a sunny day, a puddle dries up. The sun's heat turns the water into an invisible gas that floats into the sky.
+
+---
+
+### Question 3
+
+What are clouds made of?
+
+A. Cotton
+B. Smoke
+C. Tiny drops of water
+
+Correct Answer: C
+
+Feedback: Yes! Clouds are made of tiny, tiny drops of water floating in the sky. Clouds are made of very tiny drops of water or bits of ice floating in the air. They look soft but they are actually water.
+
+---
+
+### Question 4
+
+Does the sun help make rain?
+
+A. Yes, it heats up water so it goes into the sky
+B. No, the sun has nothing to do with rain
+C. The sun only makes snow
+
+Correct Answer: A
+
+Feedback: Yes! The sun heats up water, which makes it float up into the sky where it can become clouds and then rain. The sun does help make rain. It heats up water on the ground, the water goes up into the sky, forms clouds, and falls as rain.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is evaporation?
+
+A. When water freezes into ice
+B. When the sun heats water and it floats up into the sky
+C. When rain falls from clouds
+
+Correct Answer: B
+
+Feedback: Yes! Evaporation is when the sun heats water and it turns into invisible gas that floats up into the sky. Evaporation is when the sun's heat turns water into an invisible gas that rises up into the sky. That is the first step of the water cycle.
+
+---
+
+### Question 2
+
+When the Sun's Heat goes UP, what happens to Evaporation Speed?
+
+A. It slows down
+B. It speeds up
+C. It stops
+
+Correct Answer: B
+
+Feedback: Yes! More heat from the sun makes water evaporate faster. That is a positive connection. When the sun is hotter, evaporation goes faster. More heat gives water more energy to float up into the sky.
+
+---
+
+### Question 3
+
+What is the water cycle?
+
+A. Water going from the ground to the sky and back as rain, over and over
+B. Water sitting in a glass
+C. Water coming from a faucet
+
+Correct Answer: A
+
+Feedback: Yes! The water cycle is water's journey. It goes up to the sky, makes clouds, and falls back as rain, over and over. The water cycle is the journey water takes: up to the sky (evaporation), into clouds, then back down as rain, over and over again.
+
+---
+
+### Question 4
+
+On a hot sunny day, a puddle dries up fast. Where did the water go?
+
+A. It soaked into the ground only
+B. It turned into invisible gas and floated into the sky
+C. It disappeared forever
+
+Correct Answer: B
+
+Feedback: Yes! The sun heated the water and it turned into invisible gas that floated up into the sky. That is evaporation! The water did not disappear. The sun turned it into invisible gas (water vapor) that floated into the sky. It will become part of a cloud.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: A
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

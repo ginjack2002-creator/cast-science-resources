@@ -186,6 +186,156 @@ Ecohydrologists study how water and ecosystems interact. They work on wildfire m
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4, MS-ESS3-3, MS-ESS3-4, MS-LS2-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is ecohydrology?
+
+A. The study of how water is used in factories
+B. The study of how water movement through ecosystems affects living things, and how living things affect water movement
+C. The study of how to build hydroelectric dams
+D. The study of ocean currents
+
+Correct Answer: B
+
+Feedback: Correct! Ecohydrology studies the two-way relationship between water movement and living organisms in ecosystems. Ecohydrology is the study of how water movement through ecosystems affects living things AND how living things affect water movement. It is a two-way relationship between water and life.
+
+---
+
+### Question 2
+
+What is groundwater?
+
+A. Water that sits on the surface of the ground
+B. Water stored underground in soil and rock
+C. Water that falls from the sky as rain
+D. Water in rivers and streams only
+
+Correct Answer: B
+
+Feedback: Yes! Groundwater is water stored underground in the spaces between soil and rock particles. It is a hidden water supply that keeps plants alive during dry periods. Groundwater is water stored underground in soil and rock. Unlike surface water (rivers and ponds), groundwater is hidden below the surface. Plant roots tap into groundwater to survive dry periods.
+
+---
+
+### Question 3
+
+Why do wildfires spread more easily during a drought?
+
+A. Because the sun is closer to Earth during drought
+B. Because drought dries out vegetation, turning it into fuel that burns easily
+C. Because more lightning strikes happen during drought
+D. Because wind stops blowing during drought
+
+Correct Answer: B
+
+Feedback: Correct! Drought dries out vegetation, reducing its moisture content. Dry vegetation burns much more easily and intensely than green, hydrated plants. During drought, vegetation loses moisture and dries out. Dry, dead vegetation becomes fuel that ignites easily and burns quickly. Green, hydrated plants resist fire because the water inside them must evaporate before the plant can burn.
+
+---
+
+### Question 4
+
+Can beavers help prevent wildfires?
+
+A. No, beavers have nothing to do with fire
+B. Yes, beaver dams store water that keeps surrounding areas green and fire-resistant
+C. Yes, beavers fight fires directly with water from their ponds
+D. Only firefighters can prevent wildfires
+
+Correct Answer: B
+
+Feedback: Yes! Research shows that beaver dams store water and raise groundwater levels, keeping nearby vegetation green and moist even during drought. These green corridors resist fire. Research by scientists like Dr. Emily Fairfax shows that beaver dams raise groundwater levels and keep vegetation hydrated during drought. These well-watered areas create green corridors that resist fire while surrounding dry areas burn.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the 8-component model, what is the chain from beaver dams to fire resistance?
+
+A. Beaver Dams put out fires directly with water
+B. Beaver Dams raise Groundwater Level, which increases Soil Moisture, which keeps Vegetation healthy, which reduces Fire Spread Rate
+C. Beaver Dams block fire from crossing rivers
+D. Beaver Dams have no connection to fire in the model
+
+Correct Answer: B
+
+Feedback: Correct! The model shows the chain: Beaver Dams raise Groundwater, higher Groundwater increases Soil Moisture, moist soil keeps Vegetation healthy and green, and healthy vegetation resists Fire Spread. The model traces a clear chain: Beaver Dams raise the Groundwater Level by storing and spreading water. Higher Groundwater increases Soil Moisture. Moist soil keeps Vegetation healthy and hydrated. And healthy, green vegetation dramatically reduces Fire Spread Rate because wet plants do not burn easily.
+
+---
+
+### Question 2
+
+What happened in the model when drought was severe but beaver dams were present?
+
+A. The area burned just as badly as areas without beaver dams
+B. The area near beaver dams stayed greener and more fire-resistant than areas without dams
+C. The beaver dams made the drought worse
+D. The model showed no difference between dammed and undammed areas during drought
+
+Correct Answer: B
+
+Feedback: Yes! The model showed that even during drought, beaver-dammed areas maintained higher groundwater, soil moisture, and vegetation health than undammed areas, reducing fire spread. The model demonstrated that beaver-dammed areas stayed greener and more fire-resistant during drought. The stored water raised groundwater levels enough to keep vegetation hydrated while surrounding undammed areas dried out and became vulnerable to fire.
+
+---
+
+### Question 3
+
+What did the model show about the relationship between beaver dams and surface runoff?
+
+A. Beaver dams increase surface runoff
+B. Beaver dams have no effect on runoff
+C. Beaver dams reduce surface runoff by keeping more water in the landscape
+D. Surface runoff is not part of the ecohydrology model
+
+Correct Answer: C
+
+Feedback: Correct! The model showed that beaver dams reduce surface runoff by slowing water flow and spreading it across the floodplain, keeping more water stored in the landscape. Beaver dams reduce surface runoff by slowing water down and spreading it across the floodplain. Instead of rushing away across the surface, water soaks into the ground, raising the water table and staying in the landscape where it can keep vegetation hydrated.
+
+---
+
+### Question 4
+
+According to the extreme drought scenario, what are the limits of beaver dams as fire protection?
+
+A. Beaver dams have no limits and work perfectly in all conditions
+B. Beaver dams only work when there is no drought at all
+C. Beaver dams buffer against moderate drought but cannot maintain green corridors during extreme, prolonged drought with almost no precipitation
+D. Beaver dams make extreme drought worse
+
+Correct Answer: C
+
+Feedback: Yes! The model showed that beaver dams are powerful but have limits. They can buffer moderate drought, but extreme, prolonged drought with almost no rain eventually overwhelms even beaver-managed landscapes. The extreme drought scenario revealed that beaver dams have limits. They store and distribute water effectively during moderate drought, but they cannot create water from nothing. When precipitation drops to nearly zero for extended periods, even beaver-managed areas eventually lose moisture and become vulnerable to fire.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

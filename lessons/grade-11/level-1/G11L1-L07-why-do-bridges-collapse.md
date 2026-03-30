@@ -891,6 +891,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS2-1, HS-ETS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A bridge is designed with a factor of safety of 2.0. This means the bridge can handle which of the following?
+
+A. Exactly the maximum expected load, with no margin for error
+B. Twice the maximum expected load, providing a margin for unexpected loads, material defects, and degradation over time
+C. Half the maximum expected load, meaning it is underdesigned
+D. Two times its own weight but not any additional traffic load
+
+Correct Answer: B
+
+Feedback: Correct. A factor of safety of 2.0 means the bridge's designed capacity is double the maximum expected load. This margin accounts for unexpected traffic surges, material degradation, design uncertainties, and other factors that could increase actual loads above predictions. The factor of safety is a ratio: designed capacity divided by expected maximum load. A factor of 2.0 means the bridge is built to handle 2x what it is expected to experience. This buffer protects against unknowns.
+
+---
+
+### Question 2
+
+Material fatigue causes structural failure through which process?
+
+A. A single application of force exceeding the material's ultimate strength
+B. Progressive microscopic crack growth from millions of repeated loading cycles, even at forces well below the material's breaking strength
+C. Chemical corrosion that dissolves the material from the outside
+D. Gravitational settling that gradually lowers the bridge over decades
+
+Correct Answer: B
+
+Feedback: Correct. Material fatigue is insidious because each individual load is safely below the material's capacity. But millions of cycles create microscopic cracks that grow invisibly until they reach a critical length, at which point the structure fails suddenly without warning. Consider why fatigue is different from simple overloading. A paper clip does not break on the first bend or the second. But after enough bending cycles, it snaps. The same principle applies to bridge materials under repeated traffic loads.
+
+---
+
+### Question 3
+
+A truss bridge distributes forces primarily through which combination of force types?
+
+A. Magnetic attraction and electrical resistance
+B. Tension in lower members that are being pulled and compression in upper members that are being pushed
+C. Friction between the bridge deck and vehicle tires
+D. Centripetal force that curves the load around the bridge structure
+
+Correct Answer: B
+
+Feedback: Correct. A truss converts applied loads into tension (pulling forces in the bottom chord and diagonals) and compression (pushing forces in the top chord and verticals). This distribution allows efficient load-bearing using relatively lightweight triangular members. Think about what happens to the structural members when a heavy truck drives across a truss bridge. Some members are stretched (pulled apart) and some are squeezed (pushed together). These are the two fundamental force types in structures.
+
+---
+
+### Question 4
+
+Which factor is most important in determining whether a bridge lasts 30 years or 80 years, assuming it was properly designed and constructed?
+
+A. The color of the paint used on the bridge
+B. The frequency and quality of inspection and maintenance that catches fatigue damage before it reaches critical levels
+C. The number of pedestrians who walk across the bridge daily
+D. The geographic latitude where the bridge is located
+
+Correct Answer: B
+
+Feedback: Correct. All bridges accumulate fatigue damage over time. The difference between a bridge that lasts decades longer is whether inspections catch growing cracks before they reach critical failure length. Regular maintenance can repair damage and extend service life dramatically. Consider that all bridges degrade over time. The question is whether that degradation is detected and repaired before it becomes dangerous. Which factor directly addresses the detection and repair of accumulating damage?
+
+---
+
+### Question 5
+
+A bridge designer must choose between a beam bridge, an arch bridge, and a suspension bridge for a 500-meter span across a river. Which design is most suitable for this span length?
+
+A. A beam bridge, which is ideal for spans of any length
+B. An arch bridge, which is most efficient for spans under 50 meters
+C. A suspension bridge, which can span long distances by transferring deck loads through cables to main cables and towers that direct forces into compression
+D. None of these designs can span 500 meters
+
+Correct Answer: C
+
+Feedback: Correct. Suspension bridges excel at long spans (hundreds to thousands of meters) because they transfer the deck's weight through vertical cables to main cables that carry the load in tension to towers, which direct forces downward in compression to the foundation. This efficient force path enables very long spans. Consider how each bridge type handles long distances. Beam bridges sag under their own weight over long spans. Arch bridges are limited by the arch geometry. Suspension bridges use cables to transfer loads to towers, enabling spans that other designs cannot achieve.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's 50-year simulation shows that Structural Integrity decreases linearly for the first 30 years but then drops exponentially in years 30-40 when maintenance is deferred. Which explanation best accounts for this nonlinear transition?
+
+A. The material suddenly becomes weaker at the 30-year mark due to age
+B. Without maintenance to repair small cracks, fatigue damage compounds: existing cracks accelerate the growth of new cracks through stress concentration, creating a self-reinforcing degradation cycle
+C. Traffic volume always increases exponentially after 30 years
+D. The simulation model switches to a different equation at year 30
+
+Correct Answer: B
+
+Feedback: Correct. Deferred maintenance allows fatigue cracks to grow past the point where they concentrate stress at their tips, accelerating further crack growth. Small cracks that could have been cheaply repaired become large cracks that create stress concentrations, which generate more cracks. The degradation becomes self-reinforcing. Consider what happens when small fatigue cracks are not repaired. A crack concentrates stress at its tip, making that location more likely to crack further. This self-reinforcing process means crack growth accelerates over time, especially when maintenance that would have interrupted this cycle is skipped.
+
+---
+
+### Question 2
+
+The model compares three bridge designs under identical loading: beam, truss, and arch. The truss bridge shows the most even force distribution across its members, while the beam bridge shows high stress concentration at midspan. What structural principle explains this difference?
+
+A. Truss bridges are always made of stronger materials than beam bridges
+B. The truss geometry converts bending forces into axial tension and compression distributed across many triangular members, while the beam concentrates bending stress at a single cross-section
+C. Beam bridges receive more traffic than truss bridges
+D. Truss bridges weigh less than beam bridges, so they experience less force
+
+Correct Answer: B
+
+Feedback: Correct. The fundamental advantage of a truss is geometric: triangular elements convert applied bending loads into axial forces (pure tension or compression) in individual members. This distributes stress across many members rather than concentrating it at the critical midspan section of a beam. Think about why triangles are structurally efficient. A single beam must resist bending at its weakest point (midspan). A truss breaks the same load into many smaller tension and compression forces in individual members. The same total load is shared across the structure.
+
+---
+
+### Question 3
+
+A student's model predicts that doubling the maintenance inspection frequency extends bridge service life by 40%, while doubling the factor of safety at design only extends it by 15%. Which analysis best explains why maintenance has a larger effect than initial overdesign?
+
+A. Maintenance is always cheaper than building a stronger bridge
+B. A higher factor of safety delays the onset of critical damage but does not stop fatigue accumulation, while regular inspections catch and repair damage before it enters the exponential growth phase, resetting the degradation clock
+C. The factor of safety has no effect on bridge longevity
+D. Maintenance makes the bridge stronger than its original design
+
+Correct Answer: B
+
+Feedback: Correct. The factor of safety provides a larger initial margin before reaching critical levels, but fatigue still accumulates at the same rate. Maintenance actively interrupts the damage accumulation process by repairing cracks before they enter the self-reinforcing exponential growth phase, providing a much larger net benefit. Consider what each intervention actually does. Doubling the factor of safety means starting with more margin but still accumulating damage at the same rate. Maintenance catches and repairs damage, effectively restarting the clock. Which approach addresses the ongoing process rather than just the starting point?
+
+---
+
+### Question 4
+
+The simulation reveals that a bridge designed for 20,000 vehicles per day is now carrying 35,000 per day. The model predicts failure 18 years earlier than the original design life. A student argues this is solely the result of increased load exceeding the factor of safety. Which model-based critique identifies the missing factor?
+
+A. The student's analysis is complete and correct
+B. The student ignores the fatigue acceleration: 75% more load cycles per day means fatigue damage accumulates 75% faster, and fatigue failure can occur even while the instantaneous load remains within the factor of safety margin
+C. The bridge should be able to handle any amount of traffic because it was overdesigned
+D. Vehicle weight has not changed, so the total load is the same
+
+Correct Answer: B
+
+Feedback: Correct. The student focused only on peak load versus capacity, missing the critical fatigue component. Even if each individual truck is within the load limit, 75% more cycles per day means 75% more fatigue damage accumulation. Fatigue failure depends on cumulative cycles, not just peak force. The student is thinking about static load (can the bridge hold the weight right now?) but missing the dynamic effect. Material fatigue depends on the NUMBER of loading cycles, not just the magnitude of each cycle. More vehicles means more cycles, which means faster fatigue accumulation.
+
+---
+
+### Question 5
+
+Based on the complete model analysis, which policy recommendation is best supported by the evidence for preventing bridge failures?
+
+A. Build all bridges with a factor of safety of 10.0 to ensure they never fail
+B. Reduce traffic on all bridges to 50% of design capacity
+C. Implement risk-based inspection schedules that increase inspection frequency as bridges age and approach their fatigue damage thresholds, with mandatory repair protocols for detected damage
+D. Replace all bridges every 20 years regardless of condition
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that fatigue damage accelerates nonlinearly with age. Risk-based inspection schedules that intensify as bridges age match the inspection frequency to the increasing risk, catching damage during the early growth phase when repairs are effective and affordable. The model showed that fatigue accumulation accelerates over time and that early detection through inspection is the most effective intervention. Consider which policy matches inspection effort to risk level throughout the bridge's life.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+---
+
 ## Resources
 
 | Resource | Link |

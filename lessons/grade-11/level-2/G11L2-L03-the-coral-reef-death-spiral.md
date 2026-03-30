@@ -917,6 +917,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-2, HS-LS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is coral bleaching?
+
+A. A chemical process where ocean pollutants dissolve coral skeletons
+B. A stress response where corals expel their symbiotic algae, turning white and losing their primary energy source
+C. A natural seasonal color change similar to leaves changing in autumn
+D. A disease caused by bacteria that infects coral tissue
+
+Correct Answer: B
+
+Feedback: Correct. Coral bleaching occurs when heat stress causes corals to expel their symbiotic zooxanthellae algae, which normally provide up to 90% of the coral's energy. Bleaching is a stress response triggered primarily by elevated water temperatures. Corals expel their zooxanthellae algae, turning white. Without these algae, corals lose their main energy source and can die.
+
+---
+
+### Question 2
+
+What role do zooxanthellae play in coral reef ecosystems?
+
+A. They are parasites that slowly weaken coral over time
+B. They are photosynthetic algae living inside coral that provide up to 90% of the coral's energy
+C. They are predators that protect corals from fish
+D. They are bacteria that decompose dead coral material
+
+Correct Answer: B
+
+Feedback: Correct. Zooxanthellae are photosynthetic dinoflagellates that live within coral tissues in a mutualistic symbiosis, providing energy through photosynthesis. Zooxanthellae are microscopic photosynthetic algae living symbiotically inside coral tissue. They convert sunlight into energy that the coral uses, providing up to 90% of its nutritional needs.
+
+---
+
+### Question 3
+
+Approximately what percentage of all marine species depend on coral reefs for habitat, even though reefs cover less than 1% of the ocean floor?
+
+A. About 5%
+B. About 10%
+C. About 25%
+D. About 50%
+
+Correct Answer: C
+
+Feedback: Correct. Despite covering less than 1% of the ocean floor, coral reefs support approximately 25% of all marine species. Coral reefs are among the most biodiverse ecosystems on Earth. They support roughly 25% of all marine species despite occupying less than 1% of ocean area, earning them the title 'rainforests of the sea.'
+
+---
+
+### Question 4
+
+How long do scientists estimate corals typically need to fully recover after a bleaching event?
+
+A. A few weeks to a month
+B. 1-2 years
+C. 10-15 years
+D. Over 100 years
+
+Correct Answer: C
+
+Feedback: Correct. Full recovery from a major bleaching event typically requires 10-15 years, during which corals must regrow tissue and reestablish zooxanthellae populations. Corals generally need 10-15 years to fully recover from a bleaching event. They must regrow tissue, reacquire zooxanthellae, and rebuild energy reserves.
+
+---
+
+### Question 5
+
+What is a 'phase shift' in coral reef ecology?
+
+A. The normal seasonal cycle of coral growth and dormancy
+B. An abrupt transition from a coral-dominated reef to an algae-dominated one, often irreversible
+C. The migration of corals to deeper water to escape heat
+D. A temporary increase in coral growth following a bleaching event
+
+Correct Answer: B
+
+Feedback: Correct. A phase shift is an abrupt, often irreversible transition where algae overgrow dead and weakened coral, preventing recolonization. A phase shift occurs when a reef transitions from coral-dominated to algae-dominated. Algae colonize dead coral surfaces and prevent new coral larvae from settling, locking the reef in a degraded state.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows bleaching events occurring every 6 years, but full coral recovery requires 10-15 years. What mathematical relationship makes a death spiral inevitable under these conditions?
+
+A. The ratio of bleaching frequency to recovery time is less than 1, allowing gradual improvement
+B. The ratio of stress frequency to recovery time exceeds 1, meaning each bleaching event hits a reef that has not recovered from the previous one, compounding damage
+C. The absolute temperature during bleaching determines recovery time regardless of frequency
+D. Bleaching frequency has no relationship to long-term reef health
+
+Correct Answer: B
+
+Feedback: Correct. When stress frequency exceeds recovery capacity (ratio > 1), damage accumulates with each event. A 6-year bleaching cycle with 10-15-year recovery means each event strikes an increasingly weakened reef. The death spiral is mathematically driven by the stress-to-recovery ratio. If bleaching occurs every 6 years but recovery takes 10-15 years, each new event hits a reef that is only 40-60% recovered, creating cumulative damage.
+
+---
+
+### Question 2
+
+A student's model shows that after a phase shift from coral to algae dominance, Reef Structural Complexity and Marine Biodiversity both collapse. Why is this phase shift considered largely irreversible on human timescales?
+
+A. Algae grow so slowly that it takes centuries for them to be replaced
+B. Algae overgrow dead coral surfaces, preventing coral larvae from settling and recolonizing, while the three-dimensional reef structure erodes without living coral to maintain it
+C. Ocean temperatures never decrease, so bleaching conditions are permanent
+D. Marine species that leave degraded reefs can never navigate back to them
+
+Correct Answer: B
+
+Feedback: Correct. Algae act as a biological barrier to coral recolonization, and without living coral to build and maintain reef structure, the three-dimensional habitat erodes, eliminating the niches that supported biodiversity. Phase shifts are self-reinforcing: algae colonize dead coral surfaces and block new coral settlement, while the limestone reef skeleton erodes without living coral to maintain it. The physical habitat is lost along with its biological community.
+
+---
+
+### Question 3
+
+The Great Barrier Reef experienced mass bleaching events in 2016, 2017, 2020, 2022, and 2024. Using the model's framework, which prediction is best supported by this data?
+
+A. The reef is demonstrating natural resilience by surviving multiple events
+B. Bleaching frequency has increased to every 1-2 years, virtually eliminating recovery windows and placing the reef on a trajectory toward widespread phase shift
+C. The reef has already fully shifted to algae dominance
+D. Future bleaching events will be less severe because the most vulnerable corals have already died
+
+Correct Answer: B
+
+Feedback: Correct. Five mass bleaching events in 8 years gives a frequency of approximately every 1.6 years, far exceeding the 10-15 year recovery requirement, indicating progressive degradation. Five mass bleaching events in 8 years represents a bleaching frequency far shorter than the 10-15 years needed for recovery. The model predicts that sustained high-frequency bleaching will drive the reef toward irreversible phase shift.
+
+---
+
+### Question 4
+
+A conservation team proposes reducing local stressors (pollution, overfishing) to help a reef survive warming. According to the model, why might this be necessary but insufficient as a standalone strategy?
+
+A. Local stressors have no measurable effect on reef health
+B. Reducing local stressors improves baseline reef resilience and recovery capacity, but cannot prevent bleaching if sea surface temperatures continue rising above thermal stress thresholds
+C. Overfishing actually helps reefs by reducing the number of coral-eating organisms
+D. Pollution makes corals more resistant to temperature changes
+
+Correct Answer: B
+
+Feedback: Correct. Local stressor reduction improves coral health and recovery speed, but the primary driver of bleaching is thermal stress from global ocean warming, which local management cannot control. The model shows two scales of threat: local stressors (pollution, overfishing) degrade reef resilience, while global warming drives thermal bleaching. Addressing local stressors helps corals recover faster, but if warming continues, bleaching will still overwhelm recovery capacity.
+
+---
+
+### Question 5
+
+In the model, Algae Competition increases as coral dies. This creates a feedback loop because algae prevent coral recolonization, which allows more algae to grow. What type of feedback is this, and what is its significance?
+
+A. Negative feedback that stabilizes the reef at a healthy equilibrium
+B. Positive feedback that accelerates reef degradation by reinforcing the conditions that caused the initial coral loss
+C. No feedback; algae and coral dynamics are independent of each other
+D. Negative feedback that eventually reverses the phase shift
+
+Correct Answer: B
+
+Feedback: Correct. This is a positive (self-reinforcing) feedback loop: coral death enables algae growth, which prevents coral recovery, which leads to more coral death. It accelerates the phase shift. This is a positive feedback loop: it amplifies change in one direction. As coral dies, algae colonize the space and prevent coral recolonization, ensuring more coral loss and more algae growth. This self-reinforcing cycle drives the phase shift.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

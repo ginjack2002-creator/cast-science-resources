@@ -891,6 +891,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-1, HS-PS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which property of lithium makes it particularly valuable for use in rechargeable batteries compared to other metals?
+
+A. It is the lightest metal with a high electrochemical potential, enabling energy-dense batteries
+B. It is the most abundant metal in Earth's crust, making it inexpensive to mine
+C. It is the hardest metal available, making batteries more durable
+D. It has the highest melting point of all metals, preventing battery overheating
+
+Correct Answer: A
+
+Feedback: Correct. Lithium's low atomic mass and high electrochemical potential allow batteries to store large amounts of energy relative to their weight, which is critical for electric vehicles and portable electronics. Lithium is actually quite scarce and soft. Its value comes from being the lightest metal with a high electrochemical potential, which enables energy-dense batteries ideal for EVs and electronics.
+
+---
+
+### Question 2
+
+A country holds 60% of the world's known lithium reserves. Which term best describes the type of risk this concentration creates for global EV manufacturers?
+
+A. Environmental risk from mining pollution
+B. Supply chain risk from geopolitical concentration
+C. Technological risk from outdated extraction methods
+D. Financial risk from currency fluctuations
+
+Correct Answer: B
+
+Feedback: Correct. When a critical resource is concentrated in a few locations, political instability, trade disputes, or export restrictions in those regions can disrupt the entire global supply chain. While environmental and financial risks exist, the primary concern when reserves are geographically concentrated is supply chain vulnerability to geopolitical disruption, trade restrictions, or political instability in those regions.
+
+---
+
+### Question 3
+
+In a linear economy model, what happens to the lithium in a battery at the end of the product's useful life?
+
+A. It is recovered and refined for use in new batteries
+B. It is disposed of as waste in landfills or storage facilities
+C. It naturally decomposes and returns to the environment harmlessly
+D. It is converted into a different element through chemical reactions
+
+Correct Answer: B
+
+Feedback: Correct. In a linear economy (extract-use-dispose), materials are discarded after use rather than recovered, leading to resource waste and environmental contamination. In a linear economy, the model is extract-use-dispose. Unlike a circular economy where materials are recovered and reused, a linear model sends end-of-life products to landfills or waste storage.
+
+---
+
+### Question 4
+
+Which factor most limits how quickly the global lithium supply can increase in response to rising demand?
+
+A. The speed at which electric vehicles can be manufactured
+B. The time required to discover, permit, and develop new mining operations
+C. The cost of transporting lithium from mines to battery factories
+D. The number of scientists researching lithium chemistry
+
+Correct Answer: B
+
+Feedback: Correct. New lithium mines typically require 7-10 years from discovery through permitting to production, creating a significant lag between demand signals and supply responses. The primary bottleneck is development time. New lithium mines take 7-10 years to bring online due to exploration, environmental assessment, permitting, and construction, creating a fundamental supply lag.
+
+---
+
+### Question 5
+
+A student claims that switching entirely to electric vehicles will have no negative environmental consequences. Which evidence would best challenge this claim?
+
+A. Electric vehicles produce tailpipe emissions when driven at high speeds
+B. Lithium extraction from brine pools consumes massive quantities of water in arid regions
+C. Electric vehicle batteries last forever and never need replacement
+D. Lithium is a renewable resource that replenishes naturally over time
+
+Correct Answer: B
+
+Feedback: Correct. Lithium brine extraction requires pumping underground saltwater into evaporation ponds in some of the world's driest regions, consuming enormous amounts of water and impacting local ecosystems and communities. EVs produce zero tailpipe emissions and batteries do degrade over time. The strongest counterargument is that lithium extraction itself causes significant environmental harm, particularly through massive water consumption in arid mining regions.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the lithium supply chain model, when EV Adoption surges but Mining Rate remains flat, which outcome does the model predict?
+
+A. Market Price decreases because competition among miners increases supply
+B. Market Price spikes because demand outpaces supply, and Environmental Damage increases as existing mines intensify operations
+C. Recycling Rate automatically increases to fill the supply gap without any investment
+D. Battery Performance improves immediately to reduce the amount of lithium needed per vehicle
+
+Correct Answer: B
+
+Feedback: Correct. When demand exceeds supply, market prices spike. This price pressure also pushes existing mines to expand and intensify operations, increasing environmental damage in mining regions. In the model, when demand surges but supply is constrained, prices spike due to scarcity. Recycling and battery improvements require deliberate investment and time; they do not automatically compensate for supply shortfalls.
+
+---
+
+### Question 2
+
+The model reveals that high Market Price triggers investment in both new mining operations AND recycling infrastructure. Why does the model show recycling scaling faster than mining?
+
+A. Recycling produces higher-quality lithium than mining does
+B. Recycling facilities can be built in 2-3 years while new mines take 7-10 years to develop
+C. Recycling requires no energy input, making it instantly profitable
+D. Governments ban new mining whenever prices rise above a threshold
+
+Correct Answer: B
+
+Feedback: Correct. Recycling infrastructure has a much shorter development timeline than new mining operations, allowing it to respond to price signals and supply shortages more rapidly. The key difference is timescale. Recycling facilities can be built in a few years, while new mines require 7-10 years for discovery, permitting, and development. This makes recycling a faster response to supply gaps.
+
+---
+
+### Question 3
+
+A student runs the 'Circular Economy Transition' scenario with 90% Recycling Rate and moderate EV Adoption. Which system-level outcome best explains why this scenario stabilizes the lithium supply?
+
+A. High recycling eliminates the need for any new mining, allowing all mines to close permanently
+B. Recycled lithium reduces pressure on new mining, moderates Market Price swings, and decreases Environmental Damage from extraction
+C. The circular economy makes lithium worthless, so no one invests in EVs anymore
+D. Recycling converts lithium into a different element that works better in batteries
+
+Correct Answer: B
+
+Feedback: Correct. A circular economy reduces but does not eliminate mining demand. By recovering lithium from spent batteries, the system reduces price volatility, decreases extraction pressure, and mitigates environmental damage. A circular economy does not eliminate mining entirely or change lithium's chemistry. It stabilizes the system by reducing the fraction of demand that must be met through new extraction, moderating prices and environmental impact.
+
+---
+
+### Question 4
+
+The model demonstrates a 'supply-demand-environment trilemma' in the lithium economy. Which combination of strategies does the model show as the only viable resolution?
+
+A. Maximizing mining output regardless of environmental consequences
+B. Banning electric vehicles until lithium supplies recover
+C. Improving Battery Performance to use less lithium per vehicle AND scaling Recycling Rate to recover lithium from spent batteries
+D. Switching all vehicles to hydrogen fuel cells within five years
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that the only sustainable path resolves all three tensions simultaneously: reducing lithium per vehicle through better battery chemistry and recovering lithium through high recycling rates. The model shows that neither pure supply-side (more mining) nor demand-side (fewer EVs) approaches solve the trilemma. Only combining reduced lithium requirements (better batteries) with high recycling rates addresses supply, demand, and environment simultaneously.
+
+---
+
+### Question 5
+
+Based on the model's feedback loops, which statement best explains why the lithium economy exhibits extreme price volatility?
+
+A. Lithium prices are set by a single government and change unpredictably
+B. Demand responds rapidly to policy changes (months), but supply responds slowly to price signals (years to decades), creating persistent mismatches
+C. Lithium quality varies so much between mines that pricing is arbitrary
+D. Consumers hoard lithium during shortages, creating artificial scarcity
+
+Correct Answer: B
+
+Feedback: Correct. The fundamental source of volatility is the time asymmetry between demand and supply responses. EV adoption and policy can shift demand in months, but new mining capacity takes 7-10 years to come online. Price volatility in the lithium market stems from a temporal mismatch: demand can shift rapidly with policy changes and consumer behavior, while supply adjustments require years to decades for new mining development.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

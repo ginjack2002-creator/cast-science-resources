@@ -908,6 +908,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS1-8, HS-PS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+The Lawson criterion requires that three plasma parameters must simultaneously exceed critical thresholds for sustained fusion. What makes this a fundamentally difficult engineering challenge?
+
+A. Each parameter is easy to achieve individually, but improving one parameter often degrades another
+B. The three parameters are completely independent and can be optimized separately
+C. Only one parameter needs to exceed its threshold; the other two are secondary
+D. Current materials can withstand all required conditions without degradation
+
+Correct Answer: A
+
+Feedback: Correct. The difficulty lies in the coupling between parameters: hotter plasma is harder to confine, denser plasma generates more instabilities, and longer confinement requires stronger magnetic fields. Optimizing all three simultaneously is the central challenge. The parameters are coupled, not independent. Increasing plasma temperature makes confinement harder; increasing density generates instabilities; extending confinement time requires ever-stronger magnetic fields. The simultaneous optimization is the core challenge.
+
+---
+
+### Question 2
+
+In a fusion reactor, plasma must be heated to over 150 million degrees Celsius. Why is magnetic confinement necessary at these temperatures?
+
+A. Magnetic fields accelerate the fusion reaction rate
+B. No known physical material can survive direct contact with plasma at fusion temperatures, so magnetic fields suspend the plasma away from all surfaces
+C. Magnetic fields cool the plasma to a safe temperature for the reactor walls
+D. The magnetic field provides the neutrons needed for the fusion reaction
+
+Correct Answer: B
+
+Feedback: Correct. At 150 million degrees, any material touching the plasma would instantly vaporize. Superconducting magnets create a 'magnetic bottle' that suspends the charged plasma particles away from physical surfaces. The purpose of magnetic confinement is containment, not reaction enhancement. No material exists that can withstand 150 million degrees. Magnetic fields create an invisible container that holds the plasma without physical contact.
+
+---
+
+### Question 3
+
+The Q factor in fusion energy represents the ratio of energy output to energy input. Which Q factor value would indicate that a fusion reactor has achieved the minimum condition for commercial viability?
+
+A. Q = 0.5, because any fusion output is valuable
+B. Q = 1, because this means energy breakeven
+C. Q greater than 10, because the reactor must produce enough surplus energy to cover all facility operations, conversion losses, and still deliver power to the grid
+D. Q = infinity, because only self-sustaining plasma is commercially viable
+
+Correct Answer: C
+
+Feedback: Correct. Q = 1 is scientific breakeven, but commercial viability requires Q much greater than 1 to cover energy conversion losses, facility operations, magnet cooling, and other parasitic loads while still delivering net power. Scientific breakeven (Q = 1) means energy out equals energy in, but this ignores conversion losses and facility operations. Commercial viability likely requires Q greater than 10 to produce enough surplus energy for practical power generation.
+
+---
+
+### Question 4
+
+Deuterium-tritium fusion produces helium and a high-energy neutron. Why does the neutron flux from fusion reactions pose a long-term challenge for reactor design?
+
+A. Neutrons carry negative charges that interfere with the magnetic confinement system
+B. Neutrons are absorbed by the plasma and reduce the fusion reaction rate
+C. High-energy neutrons bombard reactor structural materials, displacing atoms and causing cumulative degradation that limits reactor lifetime
+D. Neutrons escape the reactor and pose radiation hazards to nearby cities
+
+Correct Answer: C
+
+Feedback: Correct. 14.1 MeV neutrons penetrate structural materials, displacing atoms from crystal lattices, creating helium bubbles, and transmuting elements. This cumulative damage limits the lifetime of reactor components. Neutrons are uncharged and pass through the magnetic field unconfined. They bombard the reactor's structural first wall, displacing atoms and causing cumulative material degradation that limits component lifetime and creates an engineering challenge for long-term operation.
+
+---
+
+### Question 5
+
+Why must a commercial fusion reactor breed its own tritium fuel?
+
+A. Tritium is the most abundant element on Earth but is difficult to extract
+B. Tritium is radioactive with a 12.3-year half-life and does not exist in useful natural quantities, so the reactor must produce it by bombarding lithium with fusion neutrons
+C. Tritium breeding reduces the reactor's Q factor to improve safety
+D. Tritium can only be created through the fusion reaction itself
+
+Correct Answer: B
+
+Feedback: Correct. Tritium's short half-life means it decays away and cannot be stockpiled from natural sources. The reactor must manufacture its own fuel by using fusion neutrons to convert lithium in a breeding blanket into tritium. Tritium is radioactive and decays with a 12.3-year half-life. It does not exist in useful natural quantities. A commercial fusion reactor must breed tritium by bombarding lithium in a blanket surrounding the reactor with the neutrons produced by the fusion reaction.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's fusion model shows that increasing plasma temperature from 100M to 200M degrees Celsius doubles the fusion reaction rate but causes a 40% increase in plasma instabilities that degrade confinement time. What does this reveal about the system dynamics?
+
+A. Temperature should always be maximized because fusion rate is the only important variable
+B. The system exhibits a coupled feedback where improving one Lawson criterion parameter (temperature) degrades another (confinement time), demonstrating why fusion optimization requires balancing competing constraints
+C. The instabilities can be eliminated by simply increasing magnetic field strength proportionally
+D. The model indicates that lower temperatures are always preferable for fusion
+
+Correct Answer: B
+
+Feedback: Correct. This demonstrates the fundamental coupling in fusion systems: the Lawson criterion parameters are not independent. Optimizing temperature degrades confinement, illustrating why meeting all three conditions simultaneously has been so challenging. The key insight is parameter coupling. The Lawson criterion requires temperature, density, and confinement time to all exceed thresholds simultaneously, but increasing temperature drives instabilities that reduce confinement time. This coupling is why fusion optimization is a multi-dimensional balancing act.
+
+---
+
+### Question 2
+
+In the fusion reactor model, doubling magnetic field strength from 5T to 10T improves plasma confinement but requires superconducting magnets that consume 3x more cooling energy. How should this trade-off be evaluated in terms of net energy gain (Q factor)?
+
+A. Stronger magnets always improve Q because confinement is the only factor in the energy balance
+B. The additional cooling energy must be subtracted from the fusion energy output; if the increased confinement does not produce enough additional fusion energy to offset the 3x cooling cost, the net Q factor may actually decrease
+C. Cooling energy is free because it comes from the fusion reactor itself
+D. The Q factor only accounts for plasma heating energy, not magnet cooling
+
+Correct Answer: B
+
+Feedback: Correct. The Q factor represents total energy balance. Any energy consumed by the system, including magnet cooling, must be subtracted from the fusion output. Stronger magnets that improve confinement may actually reduce net energy gain if their cooling costs are too high. Net energy gain (Q) accounts for ALL energy inputs, including magnet cooling. If doubling field strength triples cooling costs, the improved confinement must produce enough additional fusion energy to more than offset this parasitic load, or Q actually decreases.
+
+---
+
+### Question 3
+
+The model reveals that neutron flux causes first-wall material degradation that follows a nonlinear curve: damage increases slowly for the first 5 years, then accelerates. What engineering implication does this have for commercial reactor design?
+
+A. Reactors should be designed for unlimited operational lifetime since early degradation is slow
+B. The nonlinear degradation curve means that reactor first-wall components must be designed for periodic replacement on a schedule determined by the acceleration point, and the replacement cost and downtime must be factored into economic viability
+C. Thicker walls will permanently solve the degradation problem
+D. The accelerating damage indicates that fusion power becomes more efficient over time
+
+Correct Answer: B
+
+Feedback: Correct. Nonlinear degradation with an acceleration point means components have a predictable but limited service life. Commercial reactor design must include engineered replacement schedules, and the associated costs and downtime directly affect economic viability. The accelerating degradation curve creates a maintenance engineering challenge. Components cannot last indefinitely, so commercial reactors must be designed with replaceable first-wall modules on predictable schedules, with replacement cost and reactor downtime factored into the economic model.
+
+---
+
+### Question 4
+
+A student uses the model to compare two reactor designs: Design A achieves Q = 15 but has a tritium breeding ratio of 0.9, while Design B achieves Q = 8 but has a breeding ratio of 1.15. Which analysis correctly identifies the long-term viability issue?
+
+A. Design A is superior because higher Q always means better commercial performance
+B. Design B is more viable long-term because a breeding ratio below 1.0 means Design A consumes more tritium than it produces, eventually running out of fuel regardless of its energy output
+C. Both designs are equally viable because tritium can be purchased commercially
+D. Design A's higher Q compensates for its lower breeding ratio over time
+
+Correct Answer: B
+
+Feedback: Correct. A tritium breeding ratio below 1.0 means the reactor consumes more tritium than it creates. No matter how much energy it produces, Design A will eventually exhaust its fuel supply. Design B is self-sustaining in fuel production. A tritium breeding ratio below 1.0 is fatal to long-term operation. Tritium cannot be sourced naturally in useful quantities. Design A produces more energy per cycle but will run out of fuel, while Design B is fuel self-sufficient and can operate indefinitely.
+
+---
+
+### Question 5
+
+Based on the fusion reactor model, which conclusion about the relationship between energy output and wall material degradation is best supported by the simulation?
+
+A. Energy output and wall degradation are independent variables that can be optimized separately
+B. Higher fusion energy output necessarily produces more neutrons, which cause more wall degradation, creating an inherent coupling where the energy source and the primary damage mechanism are products of the same nuclear reaction
+C. Wall degradation can be eliminated by using alternative fusion fuels that produce no neutrons
+D. Reducing energy output to zero is the only way to prevent wall degradation
+
+Correct Answer: B
+
+Feedback: Correct. In D-T fusion, 80% of the energy is carried by the neutron. The very reaction that produces energy also produces the particles that damage the reactor. This inherent coupling means more power necessarily means more damage. Energy output and wall degradation are coupled by the physics of the D-T reaction: fusion produces helium AND a 14.1 MeV neutron that carries 80% of the energy. You cannot have the energy without the neutrons that cause structural damage.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: C
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

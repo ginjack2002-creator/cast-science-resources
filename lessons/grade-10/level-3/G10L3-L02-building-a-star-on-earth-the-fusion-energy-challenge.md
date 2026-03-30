@@ -898,6 +898,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS1-1, HS-PS3-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Nuclear fusion combines light atomic nuclei to form heavier ones. What is the fundamental physical difference between fusion and fission that makes fusion potentially cleaner?
+
+A. Fusion uses renewable fuel while fission uses non-renewable fuel
+B. Fusion produces helium and neutrons with no long-lived radioactive actinides, while fission produces heavy radioactive isotopes that remain dangerous for thousands of years
+C. Fusion reactions produce no radiation of any kind
+D. Fission requires higher temperatures than fusion
+
+Correct Answer: B
+
+Feedback: Correct. Fusion of deuterium and tritium produces helium-4 and a neutron. While fusion-activated structural materials are radioactive for 50-100 years, fission produces actinides like plutonium-239 (half-life 24,000 years) that remain hazardous for hundreds of thousands of years. Compare the products of each reaction. Fission splits heavy nuclei into lighter but still radioactive fragments. Fusion combines light nuclei into helium. Consider which products are more problematic long-term.
+
+---
+
+### Question 2
+
+Fusion fuel (plasma) must reach 150 million degrees Celsius, yet the superconducting magnets confining it must operate near -250 degrees Celsius. What engineering challenge does this extreme temperature contrast create?
+
+A. The magnets melt from the plasma heat, requiring frequent replacement
+B. Thermal management systems must maintain a 150-million-degree temperature gradient across just a few meters while preventing any heat transfer between systems
+C. The cold magnets extinguish the plasma through heat absorption
+D. No engineering challenge exists because vacuum insulation perfectly separates the two
+
+Correct Answer: B
+
+Feedback: Correct. Maintaining the most extreme temperature gradient engineered by humans — from 150 million degrees Celsius to nearly absolute zero across a few meters — requires extraordinary thermal isolation, cryogenic cooling systems, and radiation shielding, all operating simultaneously and continuously. Consider the practical challenge of having the hottest and nearly the coldest temperatures on Earth within meters of each other inside the same machine. Heat naturally flows from hot to cold, and preventing that flow is an enormous engineering task.
+
+---
+
+### Question 3
+
+The Lawson criterion states that fusion requires the simultaneous achievement of sufficient temperature, density, and confinement time. Why can these requirements not be met one at a time?
+
+A. Each parameter is independent and can be optimized separately
+B. The fusion reaction rate depends on the product of all three — if any one is too low, the reaction rate drops below the threshold for net energy regardless of the others
+C. Scientists have not tried optimizing them separately yet
+D. The Lawson criterion is a theoretical concept that does not apply to real reactors
+
+Correct Answer: B
+
+Feedback: Correct. The Lawson criterion is expressed as the triple product n*T*tau, where all three must simultaneously exceed a threshold. Extremely high temperature with low density or short confinement time yields insufficient fusion reactions for net energy gain. The Lawson criterion is a product (multiplication) of three variables. What happens to a product when one factor is very small, even if the others are very large?
+
+---
+
+### Question 4
+
+Every deuterium-tritium fusion reaction produces both 17.6 MeV of energy and a 14.1 MeV neutron. Why does this create a fundamental engineering tension?
+
+A. The neutron carries away energy that could otherwise be used for electricity
+B. Neutrons are impossible to detect so engineers cannot track them
+C. Each energy-producing reaction simultaneously damages the reactor structure through neutron bombardment, coupling energy output with material degradation
+D. Neutrons trigger additional unwanted fusion reactions in the reactor walls
+
+Correct Answer: C
+
+Feedback: Correct. This is the cruel paradox of fusion: the same nuclear reaction that produces useful energy also produces a high-energy neutron that damages reactor walls. More energy output means more material damage, creating a direct trade-off between power production and reactor lifespan. Consider that the neutron from each reaction does not simply disappear — it escapes the magnetic confinement (neutrons are uncharged) and strikes the reactor wall materials at extremely high velocity.
+
+---
+
+### Question 5
+
+Magnetic confinement fusion uses powerful magnets to suspend plasma away from reactor walls. What would happen if the magnetic field weakened by 20% during operation?
+
+A. The fusion reaction would become 20% more efficient due to lower energy consumption by magnets
+B. The plasma would expand, contact the reactor walls, cool instantly, and fusion would stop while potentially damaging wall materials
+C. Nothing would change because the plasma is self-confining at fusion temperatures
+D. The weakened field would cause a nuclear explosion similar to a hydrogen bomb
+
+Correct Answer: B
+
+Feedback: Correct. Magnetic confinement creates a magnetic bottle that prevents 150-million-degree plasma from touching physical walls. If the field weakens, the plasma drifts outward, contacts the wall, and cools in milliseconds — stopping fusion and potentially melting or eroding wall materials. No explosion occurs because fusion requires extreme conditions to sustain. Remember that no physical material can survive contact with 150-million-degree plasma. The magnetic field is the only barrier keeping the plasma suspended. What happens when that barrier weakens?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the computational model, a student increases Plasma Temperature to maximum while keeping Magnetic Containment at moderate levels. The model shows Energy Output initially rising but then Net Energy Gain declining. What best explains this result?
+
+A. The model has a calculation error at high temperatures
+B. Higher temperatures increase fusion reactions but also increase plasma instability, requiring more energy for containment and cooling — eventually the energy consumed exceeds the additional energy produced
+C. Plasma Temperature has no effect on Net Energy Gain in the model
+D. Net Energy Gain always increases with temperature because more fusion reactions always mean more net energy
+
+Correct Answer: B
+
+Feedback: Correct. This reveals the optimization challenge in fusion: pushing temperature higher increases fusion output but also increases the energy cost of containment, cooling, and managing instabilities. Net energy gain is maximized at a specific operating point, not at maximum temperature. Consider that Energy Output and Net Energy Gain are different variables. Net Energy Gain subtracts all input energy (heating, magnets, cooling) from output energy. What happens to input costs as temperature increases?
+
+---
+
+### Question 2
+
+The model shows three relationships: Plasma Temperature positively affects Energy Output, Energy Output positively affects Neutron Damage, and Neutron Damage positively affects Materials Degradation. What type of systemic pattern does this represent?
+
+A. A negative feedback loop that stabilizes the system
+B. An independent chain with no systemic implications
+C. A feedforward cascade where the desired output (energy) inevitably drives the undesired output (degradation) through a linked chain
+D. A random correlation with no causal mechanism
+
+Correct Answer: C
+
+Feedback: Correct. This is a feedforward cascade — a causal chain where increasing the input to get more desired output automatically increases undesired consequences downstream. In fusion, you cannot increase energy production without increasing neutron-induced material damage. Trace the causal chain: higher temperature causes more energy output, which causes more neutrons, which causes more material damage. Is this cycle self-correcting (negative feedback) or does it represent a one-directional cascade?
+
+---
+
+### Question 3
+
+ITER is designed to achieve Q=10, meaning it produces 10 times more fusion energy than the heating energy input. Why is Q=10 a more meaningful milestone than Q=1?
+
+A. Q=1 was already achieved by NIF in 2022, so it is no longer important
+B. Q=10 provides enough surplus energy to power the reactor's own magnets, cooling, and support systems while still delivering net electricity — Q=1 produces only enough to equal its heating input with nothing left over
+C. Q=10 means the reactor runs 10 times longer than Q=1
+D. There is no practical difference between Q=1 and Q=10
+
+Correct Answer: B
+
+Feedback: Correct. Q measures only fusion energy output versus heating energy input. But a reactor also needs energy for magnets, cooling, tritium breeding, and facility operations. Q=1 means fusion output equals heating input — there is nothing left for everything else. Q=10 provides sufficient surplus to cover all auxiliary systems and deliver net electricity. Consider that Q only compares fusion energy to heating energy. A reactor has many other energy-consuming systems (magnets, cooling, control systems). How much surplus is needed to cover all of those AND deliver useful electricity?
+
+---
+
+### Question 4
+
+A student claims that discovering a material immune to neutron damage would solve all remaining fusion challenges. Using the model, which response best evaluates this claim?
+
+A. The claim is correct — material damage is the only barrier to commercial fusion
+B. The claim is partially correct — it would remove the materials degradation constraint but plasma confinement instability, tritium supply, and net energy optimization remain independent challenges
+C. The claim is incorrect — materials play no significant role in the fusion challenge
+D. The claim is correct because neutron damage is the only variable connected to all other variables in the model
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that materials degradation is ONE of several major constraints. Solving it would be transformative — allowing longer reactor lifetimes and higher operating parameters. But plasma instabilities, tritium breeding sufficiency, and the overall energy balance remain challenges that materials alone do not address. Look at all the variables in the model. Materials Degradation is connected to reactor lifetime, but are there other variables (plasma stability, fuel supply, energy balance) that represent independent challenges?
+
+---
+
+### Question 5
+
+The model uses nine components to represent a fusion reactor system. A critic argues that a real tokamak has thousands of interacting subsystems. What is the most scientifically valid defense of the simplified model?
+
+A. Nine components are enough to capture every detail of a real fusion reactor
+B. The model captures the essential trade-offs and coupling dynamics (output-damage, temperature-confinement-time) that govern system behavior, even though individual subsystem interactions are abstracted
+C. More complex models always produce worse predictions
+D. The critic is wrong because fusion reactors are simple enough to model with nine variables
+
+Correct Answer: B
+
+Feedback: Correct. Scientific models are deliberately simplified to reveal essential dynamics. The nine-component model captures the fundamental trade-offs — energy output coupled with material damage, temperature requirements versus confinement stability — that determine system behavior at the highest level, even though it cannot predict every subsystem interaction. Consider the purpose of a model in science. Models are not meant to be perfect replicas of reality. They are simplifications that highlight the most important relationships. What essential dynamics does this model successfully capture?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

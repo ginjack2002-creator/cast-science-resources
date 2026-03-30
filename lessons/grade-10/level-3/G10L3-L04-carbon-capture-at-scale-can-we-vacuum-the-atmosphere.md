@@ -901,6 +901,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-6, HS-PS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A direct air capture facility removes 10,000 tons of CO2 per year but is powered by natural gas that emits 4,000 tons of CO2. What is the facility's net CO2 removal, and what does this reveal about the importance of energy source?
+
+A. Net removal is 10,000 tons because emissions from power generation are counted separately
+B. Net removal is 6,000 tons, demonstrating that the energy source directly determines the actual climate benefit
+C. Net removal is 14,000 tons because the facility also captures its own emissions
+D. Net removal cannot be calculated without knowing the carbon credit price
+
+Correct Answer: B
+
+Feedback: Correct. Net removal = gross capture minus process emissions = 10,000 - 4,000 = 6,000 tons. The energy source reduces the climate benefit by 40%. If powered by coal, emissions could exceed capture, making the facility a net climate harm. This is the energy-emissions paradox. Calculate: if the facility removes 10,000 tons from the atmosphere but the energy source adds 4,000 tons back, what is the net effect on atmospheric CO2?
+
+---
+
+### Question 2
+
+Global CO2 emissions exceed 36 billion tons per year. The world's largest direct air capture facility removes 4,000 tons per year. How many facilities of this size would be needed to capture just 1% of annual emissions?
+
+A. 360 facilities
+B. 3,600 facilities
+C. 90,000 facilities
+D. 900,000 facilities
+
+Correct Answer: C
+
+Feedback: Correct. 1% of 36 billion tons = 360 million tons. At 4,000 tons per facility, that requires 360,000,000 / 4,000 = 90,000 facilities. This scale comparison demonstrates why carbon capture alone cannot substitute for emission reduction. Calculate step by step: 1% of 36 billion = 360 million tons. Then divide by the capacity of one facility (4,000 tons/year).
+
+---
+
+### Question 3
+
+A sorbent material captures CO2 from ambient air at 420 parts per million. Why does the low concentration of CO2 in the atmosphere make direct air capture inherently more challenging than capturing CO2 from a power plant exhaust?
+
+A. Atmospheric CO2 is chemically different from power plant CO2
+B. At 420 ppm, CO2 constitutes only 0.042% of the air, meaning enormous volumes of air must be processed to capture significant quantities — power plant exhaust is 10-15% CO2, a concentration 250-350 times higher
+C. Low concentration makes no difference because the same sorbent works at any concentration
+D. Direct air capture is actually easier because atmospheric air is cleaner than power plant exhaust
+
+Correct Answer: B
+
+Feedback: Correct. Thermodynamic and practical constraints make capturing dilute CO2 far more energy-intensive and expensive than capturing concentrated CO2. Processing air at 420 ppm requires 250-350 times more air volume than capturing from power plant exhaust at 10-15% concentration. Think about what happens when you try to capture a substance that makes up only 0.042% of a gas mixture. How much gas must you process to collect a significant amount of that substance?
+
+---
+
+### Question 4
+
+Geological sequestration involves injecting captured CO2 into deep underground rock formations. What is the primary scientific basis for expecting this storage to be permanent?
+
+A. The CO2 is compressed into a solid that cannot escape
+B. CO2 dissolves in brine, reacts with minerals, and eventually converts to carbonate rock — processes that trap it permanently, as demonstrated by natural CO2 reservoirs that have held gas for millions of years
+C. Underground formations are sealed with cement caps that prevent any leakage
+D. The CO2 naturally decomposes underground within a few years
+
+Correct Answer: B
+
+Feedback: Correct. Multiple trapping mechanisms ensure permanence: structural trapping (impermeable cap rock), dissolution in brine, chemical reaction with minerals to form carbonates, and capillary trapping. Natural analogs prove these mechanisms hold CO2 for geological timescales. Consider the natural geological processes that trap CO2 underground. Some natural formations have held CO2 for over 100,000 years. What physical and chemical mechanisms make this possible?
+
+---
+
+### Question 5
+
+Carbon credits create a financial incentive for CO2 removal. At a current price range of $100-$1,000 per ton and a capture cost of $400-$1,000 per ton, what does this suggest about the economic viability of direct air capture without additional policy support?
+
+A. DAC is already highly profitable at all credit prices
+B. DAC is economically marginal — only viable when credit prices are at the high end of the range and capture costs are at the low end, suggesting that policy incentives or technology cost reductions are needed for widespread deployment
+C. Credit prices are irrelevant because governments fund all capture operations directly
+D. The economics prove that DAC should be abandoned in favor of tree planting exclusively
+
+Correct Answer: B
+
+Feedback: Correct. When costs overlap with or exceed credit prices, the operation is only viable under favorable conditions. Widespread deployment requires either credit prices rising sustainably above $200/ton, technology improvements reducing costs below $200/ton, or both — alongside supportive policies. Compare the cost range ($400-$1,000/ton) with the credit price range ($100-$1,000/ton). Under what conditions does revenue exceed cost? How often does that occur across the ranges?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that switching from fossil-powered to renewable-powered energy input increases net CO2 removal from 6,000 to 10,000 tons per year for the same facility. What variable in the model changes to produce this result?
+
+A. Capture Rate increases because renewable energy is more powerful
+B. The gross capture remains the same, but the process emissions drop to near zero, so net removal equals gross capture
+C. Carbon Credit Value increases when the facility uses renewables
+D. Sorbent Efficiency improves when powered by renewable energy
+
+Correct Answer: B
+
+Feedback: Correct. The facility's capture technology performs the same regardless of energy source. What changes is the emissions from energy generation: fossil fuel produces CO2 that offsets capture, while renewables produce zero operational CO2. Net removal = gross capture minus process emissions. Identify what specifically changes when you switch the energy source. Does the capture technology itself change, or does something about the process emissions change?
+
+---
+
+### Question 2
+
+A student's model predicts that scaling capture from 4,000 tons/year to 1 billion tons/year would require energy equivalent to 1% of global energy production. What does this reveal about the scale challenge?
+
+A. 1% of global energy is trivial and easily allocated to carbon capture
+B. The energy requirement demonstrates that climate-scale capture competes with other critical energy demands and requires massive expansion of clean energy infrastructure specifically dedicated to capture
+C. The energy calculation proves carbon capture is physically impossible
+D. The model overestimates energy requirements by a factor of 100
+
+Correct Answer: B
+
+Feedback: Correct. Dedicating 1% of global energy to carbon capture is a massive infrastructure investment — equivalent to the entire energy output of a major industrial nation. This energy must come from clean sources (or the capture is self-defeating), requiring purpose-built renewable capacity beyond what is needed to decarbonize existing energy demand. Consider what 1% of global energy production represents in absolute terms. Is this a trivial amount, or does it represent a significant industrial undertaking? And what must be true about the source of that energy?
+
+---
+
+### Question 3
+
+In the model, CO2 Concentration is classified as an external variable even though it changes with global emissions over time. What is the best justification for this classification?
+
+A. External variables never change in any model
+B. From the perspective of a single capture facility, atmospheric CO2 concentration is an environmental condition that the facility encounters but cannot meaningfully alter — it is set by global-scale processes beyond the facility's control
+C. CO2 concentration is the easiest variable to measure, so it must be external
+D. The classification is arbitrary and has no scientific basis
+
+Correct Answer: B
+
+Feedback: Correct. External variables represent conditions that affect the modeled system but are not significantly changed by it. A single capture facility removing 4,000 tons from an atmosphere containing 3.3 trillion tons has negligible effect on global concentration — it is a boundary condition, not a dependent variable. Consider the scale difference between what one facility captures and total atmospheric CO2. Can one facility meaningfully change the atmospheric concentration? If not, the concentration is an external condition, not a system output.
+
+---
+
+### Question 4
+
+The model includes both Sorbent Efficiency and Regeneration Cost as separate variables. A student argues they should be combined into one variable. What is the strongest argument for keeping them separate?
+
+A. Combining variables always makes models less accurate
+B. They respond to different physical factors: Sorbent Efficiency is determined by chemistry and contact time, while Regeneration Cost depends on thermal energy prices, sorbent cycle life, and maintenance — they can change independently based on different innovations
+C. They are already combined in real carbon capture facilities
+D. The model needs a minimum number of variables to be valid
+
+Correct Answer: B
+
+Feedback: Correct. A breakthrough in sorbent chemistry (higher CO2 affinity) could increase Sorbent Efficiency without changing Regeneration Cost. Conversely, cheaper renewable heat could reduce Regeneration Cost without affecting Sorbent Efficiency. Keeping them separate reveals which innovations most impact overall economic viability. Consider whether improvements in one area necessarily improve the other. Could you improve how well the sorbent captures CO2 without changing how much it costs to regenerate it, or vice versa?
+
+---
+
+### Question 5
+
+Based on the model's three scenarios, a student concludes that carbon capture should be deployed only after all fossil fuel emissions are eliminated. Using model evidence, what is the strongest counterargument?
+
+A. There is no counterargument — the student is correct that capture should wait
+B. Some emission sources (aviation, cement, steel) cannot be fully eliminated with current technology, and the 1.5 trillion tons of legacy CO2 already in the atmosphere will continue causing warming even if all new emissions stop — capture is needed for both residual and legacy emissions
+C. Carbon capture is cheaper than emission reduction in all sectors
+D. The model does not address this question
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that capture and emission reduction serve different functions. Emission reduction prevents new CO2 from entering the atmosphere. Capture addresses hard-to-abate sectors (where elimination is technically impossible) and removes legacy CO2 that will otherwise cause warming for centuries. Both are necessary simultaneously. Consider whether all emission sources can be eliminated. Some industrial processes (cement production, steel manufacturing, long-haul aviation) inherently produce CO2. Also consider the CO2 already in the atmosphere from past emissions.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

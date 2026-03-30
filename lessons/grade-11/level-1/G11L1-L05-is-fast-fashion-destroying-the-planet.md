@@ -891,6 +891,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-2, HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A student calculates that a $5 polyester t-shirt requires 2,700 liters of water, produces 5.5 kg of CO2, and releases 700,000 microplastic fibers per wash. These costs are not reflected in the purchase price. What economic concept best describes this situation?
+
+A. Supply and demand equilibrium, where the price accurately reflects all costs
+B. Externalities, where environmental and social costs are borne by third parties (ecosystems, communities) rather than the producer or consumer
+C. Overpricing, where the shirt costs more to produce than its retail price
+D. Market efficiency, where the price automatically includes all costs
+
+Correct Answer: B
+
+Feedback: Correct. Externalities are costs imposed on third parties who did not choose to incur them. Water pollution, carbon emissions, and microplastic contamination are absorbed by ecosystems and communities rather than reflected in the shirt's price, creating a false sense of cheapness. If the environmental costs are not in the price, someone or something else must be paying them. Consider who absorbs the cost of water pollution, carbon emissions, and microplastic contamination. These are costs shifted away from the transaction.
+
+---
+
+### Question 2
+
+Which material used in clothing production is most associated with long-lasting microplastic pollution in oceans?
+
+A. Organic cotton, which biodegrades in water
+B. Polyester, a petroleum-based synthetic that sheds microscopic plastic fibers during washing
+C. Wool, which is a natural animal fiber
+D. Hemp, which requires minimal processing
+
+Correct Answer: B
+
+Feedback: Correct. Polyester is made from petroleum and sheds up to 700,000 microplastic fibers per wash load. These fibers are too small for water treatment plants to filter, accumulating in oceans, soil, food chains, and even human tissue, persisting for centuries. Consider which clothing materials are derived from petroleum. Synthetic fabrics like polyester are essentially plastic in fiber form. When washed, they shed microscopic plastic particles that enter the water system.
+
+---
+
+### Question 3
+
+A life cycle assessment of clothing tracks environmental impact from which starting point to which ending point?
+
+A. From the retail store to the consumer's closet
+B. From raw material extraction through manufacturing, consumer use, and end-of-life disposal or recycling
+C. Only the manufacturing phase, which produces the most pollution
+D. From the consumer's purchase to their first washing of the garment
+
+Correct Answer: B
+
+Feedback: Correct. A life cycle assessment is a cradle-to-grave analysis that accounts for every stage: growing or extracting raw materials, processing and manufacturing, shipping, consumer use (including washing), and final disposal or recycling. Each stage contributes to the total environmental footprint. A life cycle assessment is meant to capture the TOTAL environmental impact. Consider all the stages a garment passes through from the moment raw materials are extracted from the earth to the moment the garment reaches its final destination (landfill, incinerator, or recycling facility).
+
+---
+
+### Question 4
+
+The fashion industry produces over 100 billion garments per year for a global population of 8 billion. Which trend best describes the relationship between production volume and garment lifespan over the past 20 years?
+
+A. Production has increased while garment lifespan has decreased, with average garments worn only 7-10 times before disposal
+B. Production has decreased as consumers buy fewer, higher-quality items
+C. Both production and lifespan have increased proportionally
+D. Production has remained constant while lifespan has doubled due to better materials
+
+Correct Answer: A
+
+Feedback: Correct. Fast fashion has driven a dramatic increase in production volume while simultaneously reducing how long garments are worn. This combination maximizes waste: more garments produced, each worn fewer times, creating an accelerating stream of textile waste. Consider the fast fashion business model: low prices encourage frequent purchasing, trend cycles encourage rapid disposal, and low quality means garments do not last. How would these incentives affect both production volume and how long each item is used?
+
+---
+
+### Question 5
+
+If a consumer extends a garment's lifespan from 10 wears to 50 wears, the per-wear environmental impact is reduced by what factor?
+
+A. It remains the same because the total impact was already created during manufacturing
+B. It is reduced by a factor of 5, because the fixed manufacturing impact is distributed across 5 times as many uses
+C. It doubles because the garment is washed more times
+D. It cannot be calculated without knowing the specific garment material
+
+Correct Answer: B
+
+Feedback: Correct. Most of a garment's environmental impact occurs during production (water, carbon, chemicals). By wearing it 5 times longer, that fixed production cost is amortized across 5 times more uses, reducing the per-wear impact by a factor of 5. This makes garment lifespan the most powerful lever consumers have. Think about the per-wear cost. If manufacturing a shirt uses 2,700 liters of water, wearing it 10 times means 270 liters per wear. Wearing it 50 times means 54 liters per wear. The fixed production cost is simply divided across more uses.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model simulation compares three scenarios over one year for 1,000 consumers. Fast fashion (100B garments/polyester/7 wears) produces 847,000 kg of textile waste. Sustainable wardrobe (50B garments/organic cotton/100 wears) produces 29,000 kg. Which factor contributes most to the 29x difference?
+
+A. The material change from polyester to organic cotton, which biodegrades faster
+B. The 14x increase in garment lifespan (7 to 100 wears), which delays disposal and reduces the replacement rate
+C. The 50% reduction in production volume alone
+D. The difference in retail price between the two scenarios
+
+Correct Answer: B
+
+Feedback: Correct. The model shows garment lifespan is the dominant variable. A 14x increase in lifespan means each garment replaces 14 fast-fashion equivalents, reducing both production demand and waste generation multiplicatively. The 50% production cut is significant but secondary to the lifespan effect. Compare the magnitudes: production is halved (2x reduction), but lifespan increases 14x. In a waste model, each long-lasting garment replaces many short-lived ones. The compound effect of longer lifespan on both production needs and waste generation makes it the dominant factor.
+
+---
+
+### Question 2
+
+The circular fashion model shows that 70% fiber recycling reduces virgin material demand but does not eliminate it entirely. Based on the model, which factor prevents 100% circularity?
+
+A. Recycled fiber is too expensive to compete with virgin polyester
+B. Each recycling cycle degrades fiber quality, blended fabrics are difficult to separate, and collection rates never reach 100%, so virgin material is always needed to replace losses
+C. Consumers refuse to buy clothing made from recycled materials
+D. The technology for textile recycling does not exist yet
+
+Correct Answer: B
+
+Feedback: Correct. Circular systems face inherent material losses at every step: collection inefficiency (not all garments are returned), sorting challenges (blended fabrics cannot be separated), and fiber degradation (each recycling cycle shortens fibers, reducing quality). These losses require virgin material inputs to maintain the system. Think about what happens at each step of the recycling process. Not all garments are collected. Mixed materials are hard to separate. Recycled fiber is shorter and weaker. Each of these losses means some virgin material must enter the system to replace what is lost.
+
+---
+
+### Question 3
+
+A student argues that switching from polyester to organic cotton would solve the fashion industry's environmental problem. Based on the model, which critique of this argument is most accurate?
+
+A. The student is correct because organic cotton has zero environmental impact
+B. Organic cotton eliminates microplastic pollution but still requires 2,700 liters of water per shirt and significant land use; without also addressing production volume and garment lifespan, the total environmental impact remains unsustainably high
+C. Material type has no effect on environmental impact according to the model
+D. Polyester is actually more sustainable than organic cotton in all categories
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that material substitution addresses some impacts (microplastics) but not others (water use, land use, carbon from manufacturing and shipping). The fundamental problem is the volume-lifespan equation: producing too many garments that are used too few times, regardless of material. Consider whether changing the material addresses the core problem of overproduction and underuse. Organic cotton has advantages (no microplastics, biodegradable) but still requires enormous resources per garment. If you still make 100 billion garments worn 7 times each, how much does the material change help?
+
+---
+
+### Question 4
+
+The model reveals that the fashion industry produces 10% of global CO2 emissions, more than international flights and maritime shipping combined. A student identifies manufacturing and dyeing as the largest emission sources. Which intervention would the model predict to have the greatest impact on total fashion carbon emissions?
+
+A. Using renewable energy in shipping to reduce transport emissions
+B. Extending average garment lifespan from 7 to 30 wears, which reduces the number of garments manufactured and dyed by over 75%
+C. Encouraging consumers to wash clothes in cold water
+D. Switching to electric delivery vehicles for last-mile retail distribution
+
+Correct Answer: B
+
+Feedback: Correct. Since manufacturing and dyeing are the largest emission sources, the most effective intervention is reducing how many garments need to be manufactured and dyed. Extending lifespan from 7 to 30 wears means producing roughly one-quarter as many garments, cutting the dominant emission sources by over 75%. If manufacturing and dyeing are the biggest carbon sources, which intervention most directly reduces the number of garments that need to be manufactured and dyed? Shipping and washing are smaller contributors. The leverage point is reducing total production volume.
+
+---
+
+### Question 5
+
+Based on the complete model analysis, a student proposes a fashion sustainability policy requiring all garments to display an 'environmental cost label' showing water use, carbon emissions, and expected lifespan. Which argument best supports this policy using model evidence?
+
+A. Labels are unnecessary because consumers already understand fashion's environmental impact
+B. The model demonstrates that the true environmental cost is invisible in the purchase price, and per-wear cost calculations show dramatic differences between fast and sustainable fashion that consumers cannot assess without data
+C. Labels would increase the cost of garments, making fashion less accessible
+D. The model shows that consumer behavior has no impact on fashion's environmental footprint
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals massive hidden costs that are not reflected in price. A $5 shirt worn 7 times costs $0.71/wear plus enormous environmental externalities, while a $30 shirt worn 100 times costs $0.30/wear with a fraction of the impact. Without labels, consumers cannot make informed comparisons. The model showed that a $5 fast-fashion shirt is actually more expensive per wear AND more environmentally damaging than a $30 quality shirt. This counter-intuitive finding is invisible without data. Consider whether making this data visible would change purchasing decisions.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: A
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

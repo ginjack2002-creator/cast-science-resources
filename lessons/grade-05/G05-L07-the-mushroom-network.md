@@ -776,6 +776,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-LS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Do trees in a forest mostly compete with each other or cooperate?
+
+A. They only compete for sunlight and water
+B. They only cooperate and share everything
+C. They both compete AND cooperate, including sharing nutrients underground
+D. Trees don't interact with each other at all
+
+Correct Answer: C
+
+Feedback: That's right! Scientists have discovered that trees both compete for resources AND cooperate by sharing nutrients through underground fungal networks. Trees do compete for sunlight and water, but scientists discovered they also cooperate. Underground fungal networks connect tree roots, allowing trees to share sugar and even send warning signals.
+
+---
+
+### Question 2
+
+What role do mushrooms and fungi play in an ecosystem?
+
+A. They are just decoration on the forest floor
+B. They only cause diseases in trees
+C. They break down dead material AND form partnerships with living trees
+D. They are a type of plant that does photosynthesis
+
+Correct Answer: C
+
+Feedback: Correct! Some fungi decompose dead material, while mycorrhizal fungi form beneficial partnerships with living tree roots, helping them share nutrients. Fungi serve multiple roles. Some break down dead material (decomposers), while others called mycorrhizal fungi form partnerships with living trees, connecting their roots and helping transport nutrients.
+
+---
+
+### Question 3
+
+What do you think the 'Wood Wide Web' refers to?
+
+A. A website about forests
+B. Spider webs found in forests
+C. An underground network of fungal threads that connects trees
+D. The branches of trees that touch each other
+
+Correct Answer: C
+
+Feedback: That's right! The Wood Wide Web is the nickname for the underground network of fungal threads (hyphae) that connects trees and allows them to share resources. The Wood Wide Web is a clever name for the underground fungal network that connects tree roots. Just like the internet connects computers, fungal threads connect trees so they can share nutrients and signals.
+
+---
+
+### Question 4
+
+If forest soil becomes very dry during a drought, what might happen to underground fungi?
+
+A. They grow faster because they prefer dry soil
+B. Nothing, fungi don't need water
+C. They slow down or die because they need moisture to survive
+D. They move deeper underground where it's wetter
+
+Correct Answer: C
+
+Feedback: Good thinking! Fungi are living organisms that need moisture. Drought conditions can severely damage or shut down fungal networks. Like all living things, fungi need water to survive and function. During a drought, fungal threads dry out and can't transport nutrients, essentially shutting down the tree-sharing network.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the mycorrhizal network model, what happens when Soil Moisture is locked to 10%?
+
+A. Fungal Network Activity increases because fungi prefer dry soil
+B. Nutrient Transfer Between Trees stays the same
+C. Fungal Network Activity drops and Nutrient Transfer collapses, isolating trees
+D. Trees start sharing nutrients through their branches instead
+
+Correct Answer: C
+
+Feedback: Correct! Without adequate moisture, fungal threads can't function. The network collapses and each tree becomes isolated, unable to share or receive nutrients. Remember the drought scenario. Fungi need moisture to grow and transport nutrients. When soil dries out, the fungal network shuts down, cutting off nutrient sharing between trees.
+
+---
+
+### Question 2
+
+What is the relationship between Leaf Litter/Organic Matter and Mycorrhizal Fungal Network Activity?
+
+A. Negative: more leaf litter hurts the fungi
+B. Positive: more organic matter provides food that helps the fungal network grow
+C. No relationship: fungi don't eat organic matter
+D. Negative: too many leaves block the fungi
+
+Correct Answer: B
+
+Feedback: That's right! Organic matter from dead leaves provides food for the fungal network. More food means a healthier, more active network. Leaf litter and dead organic matter serve as food for fungi. When there is more organic material available, the fungal network has more energy to grow and maintain connections between trees.
+
+---
+
+### Question 3
+
+Why does replanting a clear-cut forest take decades to fully recover, even with new trees?
+
+A. Trees grow slowly because of poor sunlight
+B. The underground fungal network was destroyed and takes decades to rebuild
+C. The soil was permanently damaged
+D. Animals ate all the new seedlings
+
+Correct Answer: B
+
+Feedback: Exactly! When a forest is clear-cut, the underground fungal network is destroyed. New trees are isolated without it. Rebuilding those connections takes 50+ years. The deforestation scenario showed what happens when organic matter drops to zero. The fungal network starves and dies. New trees planted in cleared land don't have the underground support system and must wait decades for it to rebuild.
+
+---
+
+### Question 4
+
+The relationship between trees and mycorrhizal fungi is called mutualism because:
+
+A. Only the fungi benefit from the relationship
+B. Only the trees benefit from the relationship
+C. Both organisms benefit: trees get water/minerals, fungi get sugar
+D. Neither organism benefits, they are just neighbors
+
+Correct Answer: C
+
+Feedback: Correct! Mutualism means both partners benefit. Trees provide fungi with sugar from photosynthesis, and fungi provide trees with water and minerals they can't reach alone. Mutualism is a partnership where both organisms benefit. Trees share sugar (from photosynthesis) with the fungi, and fungi share water and minerals (from the soil) with the trees. Both are better off together.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: C
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

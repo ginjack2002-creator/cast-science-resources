@@ -762,6 +762,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A giant tree weighs 1 million pounds. Where do you think most of that mass came from?
+
+A. The soil it grows in
+B. The water it drinks
+C. Carbon dioxide (CO2) from the air
+D. Sunlight energy
+
+Correct Answer: C
+
+Feedback: That's right! About 95% of a tree's mass comes from carbon dioxide in the air. Trees pull CO2 through their leaves and use photosynthesis to turn it into solid wood. This is one of the most surprising facts in science. Trees get most of their mass from CO2 in the air, not from soil. Soil provides minerals, and water helps, but carbon from air becomes the wood itself.
+
+---
+
+### Question 2
+
+What do plants need to perform photosynthesis?
+
+A. Soil and fertilizer only
+B. Sunlight, water, and carbon dioxide
+C. Oxygen and sugar
+D. Darkness and cold temperatures
+
+Correct Answer: B
+
+Feedback: Correct! Plants use sunlight as energy, water from the soil, and CO2 from the air to make glucose (sugar) through photosynthesis. Photosynthesis requires three inputs: sunlight (energy source), water (from roots), and carbon dioxide (from air). These combine to produce glucose (sugar) and oxygen.
+
+---
+
+### Question 3
+
+A scientist grew a tree in a pot for 5 years. The tree gained 164 pounds, but the soil lost only 2 ounces. What does this prove?
+
+A. The tree must have gotten mass from somewhere other than soil
+B. The scale was broken
+C. The soil regenerated itself
+D. Trees don't actually gain mass
+
+Correct Answer: A
+
+Feedback: Exactly! Van Helmont's famous experiment showed that trees don't get their mass from soil. The mass comes from CO2 in the air and water. If the tree gained 164 pounds but the soil barely changed, the mass must have come from somewhere else. That somewhere is the air. Trees absorb CO2 and convert it into solid wood.
+
+---
+
+### Question 4
+
+Why do plants need sunlight?
+
+A. To keep warm
+B. To provide energy for making food through photosynthesis
+C. To dry out their leaves
+D. Plants don't actually need sunlight
+
+Correct Answer: B
+
+Feedback: That's right! Sunlight provides the energy that powers photosynthesis, allowing plants to convert CO2 and water into sugar. Sunlight is the energy source that drives photosynthesis. Without light energy, plants cannot combine CO2 and water to make glucose. No sunlight means no food production and no growth.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the tree growth model, what happens when CO2 in Air is locked to 0%?
+
+A. Tree Biomass keeps growing because it can use stored energy
+B. Photosynthesis Rate drops to zero and Tree Biomass stops growing
+C. The tree switches to getting mass from the soil instead
+D. Sunlight increases to compensate for the missing CO2
+
+Correct Answer: B
+
+Feedback: Correct! Without CO2, there is no raw material for photosynthesis. The tree cannot build new tissue, so growth stops completely. CO2 is the raw material that provides carbon atoms for building wood. Without CO2, photosynthesis has nothing to build with. Sunlight provides energy, but CO2 provides the actual building blocks.
+
+---
+
+### Question 2
+
+Why is cutting down large forests a climate change problem?
+
+A. Trees provide shade that keeps Earth cool
+B. Trees store carbon as solid wood, and cutting them releases that carbon back into the atmosphere as CO2
+C. Trees produce wind that cools the planet
+D. Trees absorb heat from the sun so it doesn't reach the ground
+
+Correct Answer: B
+
+Feedback: Exactly! Trees are essentially solidified CO2. When forests are cut down, the stored carbon returns to the atmosphere, increasing greenhouse gas levels. Remember: trees get their mass from CO2. A tree is basically solid carbon pulled from the air. When trees are cut and decompose or burn, all that stored carbon goes back into the atmosphere as CO2.
+
+---
+
+### Question 3
+
+Both CO2 in Air and Sunlight have what type of relationship with Photosynthesis Rate?
+
+A. Negative: increasing either one slows photosynthesis
+B. Positive: increasing either one increases photosynthesis
+C. CO2 is positive but Sunlight is negative
+D. Neither affects photosynthesis
+
+Correct Answer: B
+
+Feedback: Correct! Both relationships are positive. More CO2 provides more raw material, and more sunlight provides more energy, both increasing the rate of photosynthesis. CO2 provides the building material (carbon atoms) and sunlight provides the energy. Increasing either one gives photosynthesis more of what it needs, so both have a positive (+) effect.
+
+---
+
+### Question 4
+
+A greenhouse farmer pumps extra CO2 into her greenhouse and uses grow lights. Based on your model, what will happen to plant growth?
+
+A. Plants will grow slower because too much CO2 is toxic
+B. Nothing will change because plants only need soil
+C. Plants will grow faster because both inputs to photosynthesis are increased
+D. The extra light will cancel out the extra CO2
+
+Correct Answer: C
+
+Feedback: That's right! This is exactly what commercial greenhouses do. Increasing both CO2 and light maximizes photosynthesis, leading to faster plant growth and more biomass. In the 'Maximum Growth' simulation scenario, increasing both CO2 and sunlight to high levels caused photosynthesis to max out and tree biomass to grow rapidly. This is exactly how commercial greenhouses boost crop yields.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: A
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

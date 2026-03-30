@@ -821,6 +821,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why do you think puppies from the same litter can have different fur colors?
+
+A. Someone painted them different colors
+B. Each puppy gets a different mix of traits from the mom and dad
+C. Puppies choose their own fur color
+D. All puppies from the same litter look exactly the same
+
+Correct Answer: B
+
+Feedback: Great thinking! Each puppy gets a unique combination of traits from both parents. That is why siblings can look different from each other. Puppies get their traits from both their mom and dad. Each puppy gets a different mix, which is why brothers and sisters can have different fur colors.
+
+---
+
+### Question 2
+
+What is a trait?
+
+A. A type of food that animals eat
+B. A feature of a living thing, like eye color, fur pattern, or height
+C. A trick an animal can do
+D. A place where animals live
+
+Correct Answer: B
+
+Feedback: That is right! A trait is a feature or characteristic of a living thing. Eye color, hair type, height, and fur pattern are all examples of traits. A trait is a feature or characteristic of a living thing. Your eye color, hair type, and height are all traits. Animals have traits too, like fur color and ear shape.
+
+---
+
+### Question 3
+
+Which of these traits do you think you got from your parents?
+
+A. Your favorite video game
+B. Your eye color
+C. Your best friend's name
+D. The language you speak
+
+Correct Answer: B
+
+Feedback: Correct! Eye color is an inherited trait, meaning it is passed from your parents to you. Favorite games and languages are learned, not inherited. Eye color is inherited, meaning you got it from your parents through their genes. Things like favorite games, friends, and languages are learned, not inherited.
+
+---
+
+### Question 4
+
+Do you think two kittens from the same parents will look exactly the same?
+
+A. Yes, siblings always look identical
+B. No, each kitten gets a different mix of traits from the parents
+C. Only if they are born on the same day
+D. Only if they eat the same food
+
+Correct Answer: B
+
+Feedback: You got it! Each kitten gets a unique combination of the parents' traits. That is why siblings often look similar but not exactly alike. Siblings do not look exactly the same because each one gets a different mix of traits from the parents. Traits shuffle differently for each baby, like dealing different hands from the same deck of cards.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, when Parent Traits are very different from each other, what happens to Genetic Variation in the offspring?
+
+A. Genetic Variation decreases because different traits cancel out
+B. Genetic Variation increases because there are more possible trait combinations
+C. Genetic Variation stays the same no matter what
+D. The offspring will have no traits at all
+
+Correct Answer: B
+
+Feedback: Correct! When parents are very different, there are more possible combinations of traits, which creates more genetic variation in the offspring. When parents have very different traits, there are more possible combinations for the offspring. This means more genetic variation, with siblings looking more different from each other.
+
+---
+
+### Question 2
+
+What is the difference between an inherited trait and a trait caused by the environment?
+
+A. There is no difference
+B. Inherited traits come from parents through genes; environmental traits are caused by surroundings like food and sunlight
+C. Environmental traits are passed to babies; inherited traits are not
+D. Inherited traits can be chosen; environmental traits cannot
+
+Correct Answer: B
+
+Feedback: Exactly! Inherited traits (like eye color) come from your parents through genes. Environmental traits (like a scar or learned skills) are caused by your surroundings. Inherited traits are passed from parents to offspring through genes, like eye color or fur pattern. Environmental traits are caused by surroundings, like how much sunlight a plant gets or a scar from an injury.
+
+---
+
+### Question 3
+
+Why is variation in a group of animals important?
+
+A. It is not important at all
+B. It makes the group look prettier
+C. It helps the species survive changes in the environment because different individuals may be better suited to new conditions
+D. It confuses predators so they cannot count the animals
+
+Correct Answer: C
+
+Feedback: You got it! Variation is important because when the environment changes, some animals with certain traits may be better at surviving. Variation gives a species a better chance of surviving change. Variation helps species survive! If all animals were exactly the same and the environment changed, they might all struggle. With variation, some individuals may have traits that help them survive the new conditions.
+
+---
+
+### Question 4
+
+In the trait model, which component is EXTERNAL?
+
+A. Genetic Variation
+B. Offspring Appearance
+C. Parent Traits
+D. Environment
+
+Correct Answer: C
+
+Feedback: Right! Parent Traits is external because it is the starting condition. The parents' traits are set before reproduction. Genetic Variation and Offspring Appearance are internal results. Parent Traits is the external component because the parents' features are the starting input. Genetic Variation and Offspring Appearance are internal components that result from how the parents' traits mix.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

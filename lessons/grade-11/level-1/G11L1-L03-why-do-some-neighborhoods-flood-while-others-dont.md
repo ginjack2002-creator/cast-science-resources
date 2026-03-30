@@ -886,6 +886,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4, HS-ETS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Two neighborhoods in the same city receive identical rainfall during a storm. Neighborhood A experiences 60 cm of flooding while Neighborhood B has no flooding at all. Which factor most likely accounts for this difference?
+
+A. Neighborhood A is located at a higher elevation than Neighborhood B
+B. Neighborhood A has significantly higher impervious surface coverage and older, lower-capacity storm drains than Neighborhood B
+C. Neighborhood A receives more rainfall because storms preferentially target certain areas
+D. The residents of Neighborhood A failed to prepare for the storm
+
+Correct Answer: B
+
+Feedback: Correct. Impervious surfaces prevent water infiltration, forcing it to flow overland as runoff. Combined with undersized storm drains, the system cannot handle the water volume. These are infrastructure characteristics, not weather differences. Since both neighborhoods received the same rainfall, the difference must be in how each neighborhood handles the water. Consider what physical features determine whether rainwater soaks in, drains away, or pools on the surface.
+
+---
+
+### Question 2
+
+Environmental justice in the context of urban flooding refers to which principle?
+
+A. All neighborhoods should receive equal amounts of rainfall
+B. No community should bear a disproportionate burden of flood risk due to race, income, or historical disinvestment
+C. Environmental regulations should be enforced equally regardless of neighborhood demographics
+D. Natural disasters affect all communities equally regardless of infrastructure quality
+
+Correct Answer: B
+
+Feedback: Correct. Environmental justice specifically addresses the disproportionate environmental burdens borne by marginalized communities due to historical and ongoing inequities in infrastructure investment, zoning decisions, and political power. Environmental justice is about the distribution of environmental risks and benefits. Consider which communities consistently experience the worst environmental outcomes and why. The pattern is not random.
+
+---
+
+### Question 3
+
+Green infrastructure such as rain gardens, bioswales, and permeable pavement reduces flood risk primarily by which mechanism?
+
+A. Blocking rainfall from reaching the ground
+B. Increasing the rate of evaporation so water disappears faster
+C. Allowing rainwater to infiltrate into the ground rather than flowing across impervious surfaces as runoff
+D. Redirecting storm water to other neighborhoods
+
+Correct Answer: C
+
+Feedback: Correct. Green infrastructure mimics natural water infiltration processes. By allowing water to soak into the ground through permeable surfaces, vegetation, and engineered soil systems, it reduces the volume of surface runoff that overwhelms storm drains. Think about what happens to rainwater in a forest versus a parking lot. In the forest, water soaks in. On the parking lot, it flows across the surface. Green infrastructure brings the forest's water-handling properties into urban areas.
+
+---
+
+### Question 4
+
+A city's 1935 redlining map shows that neighborhoods marked 'hazardous' (predominantly communities of color) correspond almost exactly with areas that experience severe flooding today. Which explanation best accounts for this correlation?
+
+A. Coincidence, since redlining maps and flood maps measure completely unrelated phenomena
+B. Redlined neighborhoods received decades of disinvestment in infrastructure, resulting in outdated storm drains, fewer parks, and more impervious surfaces
+C. Communities of color chose to live in flood-prone areas voluntarily
+D. Modern flooding patterns are caused entirely by climate change, not historical infrastructure decisions
+
+Correct Answer: B
+
+Feedback: Correct. Redlining systematically denied investment to Black and Brown neighborhoods for decades. This disinvestment resulted in aging infrastructure, inadequate storm drainage, removal of green space, and high impervious surface coverage, all of which increase flood vulnerability. Consider what happens to a neighborhood's infrastructure over 90 years of systematic disinvestment: pipes age without replacement, green spaces are paved over, and storm systems are never upgraded. These are cumulative effects of policy, not coincidence.
+
+---
+
+### Question 5
+
+Which of the following is an example of an impervious surface?
+
+A. A grass lawn in a residential yard
+B. A concrete parking lot covering three city blocks
+C. A rain garden planted with native vegetation
+D. A gravel path through a community park
+
+Correct Answer: B
+
+Feedback: Correct. Concrete is impervious, meaning water cannot pass through it. A large parking lot converts rainfall entirely into surface runoff, dramatically increasing flood risk downstream. Urban areas can be 80-95% impervious. Impervious means water cannot soak through. Consider which surfaces allow water to pass into the ground (permeable) versus which surfaces force water to flow across the top.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model simulation shows that adding green infrastructure to a disinvested neighborhood reduces flood depth by 45%, but the neighborhood still floods more than the affluent comparison neighborhood. Which conclusion is best supported by this evidence?
+
+A. Green infrastructure is ineffective and should not be pursued
+B. Green infrastructure alone cannot overcome the compounding effects of outdated storm drains, high impervious coverage, and decades of underinvestment; a comprehensive multi-factor retrofit is needed
+C. The affluent neighborhood has a natural advantage that cannot be replicated
+D. The model is inaccurate because green infrastructure should completely eliminate flooding
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that flood inequity results from multiple compounding factors: impervious surfaces, drain capacity, and green space all interact. Addressing only one factor (green infrastructure) reduces but cannot eliminate the disparity created by the full set of infrastructure deficits. The 45% reduction shows green infrastructure works, but the remaining gap shows it is not enough alone. Consider the other infrastructure differences between the neighborhoods that also contribute to flood risk.
+
+---
+
+### Question 2
+
+The model shows that impervious surface coverage has a nonlinear relationship with flood depth: increasing coverage from 60% to 70% adds 8 cm of flood depth, but increasing from 80% to 90% adds 22 cm. Which explanation best accounts for this nonlinear pattern?
+
+A. The model contains a calculation error at higher percentages
+B. At high impervious coverage, the remaining permeable surfaces are insufficient to absorb meaningful rainfall, so each additional percentage of pavement has a disproportionately large effect on runoff volume
+C. Higher impervious coverage causes more rainfall to fall on the neighborhood
+D. Storm drain capacity automatically increases at higher coverage levels, partially compensating
+
+Correct Answer: B
+
+Feedback: Correct. This is a threshold effect: when almost all ground is paved, the few remaining permeable surfaces provide the last buffer against flooding. Removing that final buffer has outsized consequences because the system has no remaining capacity to absorb water. Think about what happens as you approach 100% pavement. At 60% coverage, 40% of land still absorbs rain. At 90%, only 10% absorbs rain. Losing half of that remaining 10% has a much bigger relative impact than losing the same amount at lower coverage.
+
+---
+
+### Question 3
+
+A city council is debating two flood mitigation plans for a historically disinvested neighborhood. Plan A installs a new high-capacity storm drain system ($50M). Plan B adds green infrastructure throughout the neighborhood ($30M). Based on the model, which evaluation is most accurate?
+
+A. Plan A is always superior because engineered systems handle more water volume
+B. Plan B is always superior because it costs less
+C. The optimal approach combines both plans because storm drains handle peak flow while green infrastructure reduces total runoff volume, and together they address the problem at multiple points in the system
+D. Neither plan will work because flooding is determined by weather, not infrastructure
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that storm drains and green infrastructure address different aspects of the flood system. Green infrastructure reduces the total volume of runoff entering the system, while storm drains increase the capacity to move water that does run off. Together they provide more protection than either alone. Consider what each intervention does in the water system. Green infrastructure reduces how much water becomes runoff. Storm drains increase how fast runoff is removed. These are complementary functions addressing different parts of the system.
+
+---
+
+### Question 4
+
+A student uses the model to compare the same storm hitting the same neighborhood in 1960 versus 2020. The 2020 simulation shows 3x more flooding despite the same rainfall. Which combination of changes best explains the increase?
+
+A. Climate change caused the 2020 storm to produce more rain
+B. Increased impervious surfaces from development, aging storm infrastructure that has not been upgraded, and loss of green space from urban expansion
+C. The neighborhood's elevation decreased between 1960 and 2020
+D. Population growth in the neighborhood made flooding worse through more water usage
+
+Correct Answer: B
+
+Feedback: Correct. Over 60 years, urban development increased impervious coverage, the storm drain system aged without upgrades, and green spaces were converted to buildings and pavement. These cumulative infrastructure changes dramatically increased flood vulnerability to the same storm. The question specifies the same rainfall amount in both periods. The difference must come from changes in the neighborhood's physical characteristics. Consider how 60 years of development altered the ground surface and drainage infrastructure.
+
+---
+
+### Question 5
+
+Based on the model evidence, a student argues that flood risk disparities between neighborhoods constitute environmental racism because they result from racially motivated historical policies. An opponent argues the disparities are simply the result of economics, not race. Which model evidence is most relevant to evaluating these claims?
+
+A. The model cannot address social questions because it only simulates physical water flow
+B. The model shows that current infrastructure quality maps directly onto historical redlining boundaries, which were explicitly race-based policies, demonstrating that the physical infrastructure disparities have racial origins even if current maintenance decisions are economics-based
+C. The model proves that flooding affects wealthy and poor neighborhoods equally
+D. The model shows that all neighborhoods would flood equally if green infrastructure were removed
+
+Correct Answer: B
+
+Feedback: Correct. While the model simulates physical water flow, the input conditions (impervious coverage, drain capacity, green space) were shaped by explicitly race-based redlining policies. The model connects current physical disparities to their historical racial origins, showing that today's 'economic' patterns inherited their geography from racial policies. Consider the causal chain: redlining (explicitly racial) caused disinvestment, which caused infrastructure disparities, which cause unequal flooding. The model traces the physical consequences of historical racial policy, even though the model itself only simulates water.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

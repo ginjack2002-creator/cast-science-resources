@@ -722,6 +722,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-PS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+If you push a ball gently, what happens?
+
+A. It rolls fast
+B. It rolls slowly
+C. It does not move at all
+
+Correct Answer: B
+
+Feedback: Yes! A gentle push makes the ball roll slowly because it is a small force. A gentle push makes the ball roll slowly. A small push gives the ball only a little bit of energy to move.
+
+---
+
+### Question 2
+
+What makes a soccer ball go really fast?
+
+A. A tiny tap
+B. A really hard kick
+C. Leaving it on the ground
+
+Correct Answer: B
+
+Feedback: Yes! A really hard kick gives the ball lots of force, making it go really fast. A hard kick is a big force. More force makes the ball go faster.
+
+---
+
+### Question 3
+
+Can the same ball go fast AND slow?
+
+A. No, it always goes the same speed
+B. Yes, it depends on how hard you push it
+C. No, only big balls go fast
+
+Correct Answer: B
+
+Feedback: Yes! The same ball can go fast with a big push or slow with a gentle push. The same ball can go fast or slow. It all depends on how hard you push it. A big push makes it fast, a small push makes it slow.
+
+---
+
+### Question 4
+
+What happens if you do NOT push a ball?
+
+A. It rolls by itself
+B. It stays still
+C. It goes backward
+
+Correct Answer: B
+
+Feedback: Yes! A ball stays still unless something pushes it. It needs a force to start moving. A ball stays still if nothing pushes it. Things need a force, like a push, to start moving.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When Push Force goes UP, what happens to Ball Speed?
+
+A. Ball Speed goes down
+B. Ball Speed stays the same
+C. Ball Speed goes up
+
+Correct Answer: C
+
+Feedback: Yes! A harder push makes the ball go faster. More force means more speed. That is a positive connection. When Push Force goes up, Ball Speed goes up too. A bigger push gives the ball more energy to move faster.
+
+---
+
+### Question 2
+
+What is speed?
+
+A. How heavy something is
+B. How fast something is moving
+C. How big something is
+
+Correct Answer: B
+
+Feedback: Yes! Speed is how fast something is moving, like slow as a turtle or fast as a cheetah. Speed means how fast something is moving. A slow ball has low speed, and a fast ball has high speed.
+
+---
+
+### Question 3
+
+Push Force is the OUTSIDE part of our model. Why?
+
+A. Because WE choose how hard to push
+B. Because the ball decides the push
+C. Because force is invisible
+
+Correct Answer: A
+
+Feedback: Yes! WE decide how hard to push, so Push Force is the outside part. We control it. Push Force is outside because WE choose how hard to push. It is something we control.
+
+---
+
+### Question 4
+
+Why does the ball stop rolling after you push it?
+
+A. Gravity makes it stop
+B. The floor rubs against the ball and slows it down
+C. The ball gets tired
+
+Correct Answer: B
+
+Feedback: Yes! The floor rubs against the ball. That rubbing is called friction, and it slows the ball down until it stops. The ball stops because the floor rubs against it. This rubbing force is called friction, and it slows moving things down.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: A
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

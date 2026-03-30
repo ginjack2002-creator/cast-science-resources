@@ -821,6 +821,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-PS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens to a puddle on a sunny day?
+
+A. It gets bigger
+B. It gets smaller and dries up
+C. It turns into ice
+D. It stays the same size all day
+
+Correct Answer: B
+
+Feedback: That is right! On a sunny day, the sun heats the water and the puddle gets smaller and dries up. If you watch a puddle on a sunny day, it gets smaller and smaller until it dries up. The sun's heat causes the water to change.
+
+---
+
+### Question 2
+
+Where do you think puddle water goes when it dries up?
+
+A. It soaks into outer space
+B. It goes into the air
+C. It disappears forever
+D. It goes underground to the center of Earth
+
+Correct Answer: B
+
+Feedback: Yes! When a puddle dries up, the water goes into the air as an invisible gas called water vapor. Puddle water does not disappear forever. It turns into an invisible gas called water vapor and goes into the air around us.
+
+---
+
+### Question 3
+
+Can you see water in the air?
+
+A. Yes, water is always visible
+B. No, water in the air is an invisible gas
+C. Only at night
+D. Only when it is cold
+
+Correct Answer: B
+
+Feedback: Correct! When water is a gas (water vapor), it is invisible. You cannot see it, but it is all around us in the air. Water vapor is an invisible gas. When water evaporates, it turns into water vapor that you cannot see, even though it is in the air all around us.
+
+---
+
+### Question 4
+
+What makes water get warmer?
+
+A. Darkness
+B. Cold wind
+C. Heat from the sun
+D. More water
+
+Correct Answer: C
+
+Feedback: That is right! Heat from the sun warms up water. The sun is our biggest source of heat. The sun sends heat energy to Earth. That heat warms up water in puddles, lakes, and oceans. Sunlight is what makes water warmer.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is evaporation?
+
+A. When water freezes into ice
+B. When liquid water heats up and turns into water vapor
+C. When water falls from the sky as rain
+D. When water gets dirty
+
+Correct Answer: B
+
+Feedback: Yes! Evaporation is when liquid water heats up and turns into an invisible gas called water vapor. Evaporation is the process where liquid water gets enough heat energy to turn into water vapor, an invisible gas. It is how puddles dry up.
+
+---
+
+### Question 2
+
+What is condensation?
+
+A. When water vapor cools down and turns back into liquid drops
+B. When water turns into ice
+C. When water gets very hot
+D. When water goes underground
+
+Correct Answer: A
+
+Feedback: Correct! Condensation is when water vapor cools down and turns back into tiny drops of liquid water, like on a cold glass. Condensation is the opposite of evaporation. When water vapor cools down, it turns back into tiny liquid water drops. You can see this on the outside of a cold glass on a warm day.
+
+---
+
+### Question 3
+
+Why does a puddle dry up faster on a hot sunny day than on a cloudy day?
+
+A. Because the ground eats the water
+B. Because more sun heat makes water evaporate faster
+C. Because the puddle is scared of the sun
+D. Because clouds add more water to the puddle
+
+Correct Answer: B
+
+Feedback: That is right! More heat from the sun gives the water more energy to evaporate. Hot sunny days speed up evaporation. The sun provides heat energy. More heat makes water evaporate faster. On a hot sunny day, the puddle gets lots of heat, so the water turns into vapor quickly and the puddle shrinks fast.
+
+---
+
+### Question 4
+
+Is evaporation a reversible change?
+
+A. No, once water evaporates it is gone forever
+B. Yes, water vapor can cool down and turn back into liquid water
+C. No, water can only go one direction
+D. Yes, but only in winter
+
+Correct Answer: B
+
+Feedback: Correct! Evaporation is reversible. Water can turn from liquid to gas (evaporation) and back from gas to liquid (condensation) over and over again. Evaporation IS reversible. Water vapor can cool down and turn back into liquid water through condensation. The water goes from liquid to gas and back to liquid, again and again.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

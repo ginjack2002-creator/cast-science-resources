@@ -885,6 +885,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS2-1, HS-PS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A roller coaster reaches the top of its first hill moving very slowly. As it descends, it accelerates rapidly. Which energy transformation best explains this acceleration?
+
+A. Chemical energy from the motor converts to kinetic energy throughout the ride.
+B. Gravitational potential energy converts to kinetic energy as the coaster loses height.
+C. Thermal energy from friction converts to kinetic energy, speeding up the coaster.
+D. The coaster accelerates because air pressure pushes it downhill.
+
+Correct Answer: B
+
+Feedback: Correct. At the top of a hill, the coaster has maximum gravitational potential energy (PE = mgh). As it descends, this potential energy converts to kinetic energy (KE = 1/2 mv^2), increasing its speed. Incorrect. After the initial chain lift, the coaster has no motor. Its acceleration on descents comes from the conversion of stored gravitational potential energy into kinetic energy.
+
+---
+
+### Question 2
+
+On a roller coaster, why must the second hill always be shorter than the first hill?
+
+A. Building taller hills after the first one would be structurally unsafe.
+B. Energy is lost to friction throughout the ride, so the coaster cannot regain its original height without additional energy input.
+C. The coaster gains mass as it moves, requiring less height for the same thrill.
+D. Air resistance pushes the coaster downward, preventing it from climbing as high.
+
+Correct Answer: B
+
+Feedback: Correct. The first hill represents the total energy budget. Friction continuously removes energy from the system as heat, so less potential energy is available for subsequent hills, making each one necessarily shorter. Incorrect. Conservation of energy dictates that the coaster cannot return to its original height because friction converts some mechanical energy to thermal energy. Each subsequent hill must be shorter than the previous one.
+
+---
+
+### Question 3
+
+Two roller coasters descend from the same height. Coaster A has a mass of 5,000 kg and Coaster B has a mass of 10,000 kg. Ignoring friction, which coaster reaches a greater speed at the bottom?
+
+A. Coaster B, because it has more gravitational potential energy.
+B. Coaster A, because lighter objects fall faster.
+C. Both reach the same speed, because mass cancels out of the energy conservation equation.
+D. It depends on the shape of the track, not the mass.
+
+Correct Answer: C
+
+Feedback: Correct. Setting PE = KE: mgh = 1/2 mv^2. Mass cancels, giving v = sqrt(2gh). Speed at the bottom depends only on the height of the drop, not the coaster's mass. Incorrect. From energy conservation, v = sqrt(2gh). Mass appears on both sides and cancels. Both coasters reach exactly the same speed, confirming Galileo's principle that all objects fall at the same rate.
+
+---
+
+### Question 4
+
+A rider on a roller coaster feels pushed into their seat at the bottom of a steep drop. Which force is responsible for this sensation?
+
+A. Gravitational force increasing as the coaster moves faster.
+B. Centripetal acceleration from the curved track, which adds to the normal gravitational force.
+C. Air resistance pushing the rider downward at high speeds.
+D. The rider's inertia pulling them upward while the seat pushes them down.
+
+Correct Answer: B
+
+Feedback: Correct. At the bottom of a curve, the track must provide centripetal force (directed upward) in addition to supporting the rider's weight. This combined force creates the sensation of increased G-force. Incorrect. The heavy sensation at the bottom of a drop is caused by centripetal acceleration (a = v^2/r) from the curved track. This acceleration adds to gravity, making riders feel heavier than normal.
+
+---
+
+### Question 5
+
+A roller coaster engineer states that the chain lift at the beginning is the only source of energy for the entire ride. Which principle of physics supports this claim?
+
+A. Newton's first law of motion (objects in motion stay in motion).
+B. The law of conservation of energy (energy cannot be created or destroyed).
+C. Newton's third law of motion (every action has an equal and opposite reaction).
+D. The second law of thermodynamics (entropy always increases).
+
+Correct Answer: B
+
+Feedback: Correct. Conservation of energy means the total mechanical energy is set by the chain lift. After that, energy only converts between forms (PE to KE) and is lost to friction. No new energy is added. Incorrect. The conservation of energy principle explains that the chain lift's energy input is the ride's total energy budget. All subsequent motion comes from converting this stored potential energy.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Using the computational model, a student tests a 50-meter first hill. The model predicts the coaster reaches 31.3 m/s at the bottom (ignoring friction). The student then changes the coaster mass from 5,000 kg to 15,000 kg and runs the simulation again. What velocity does the model predict at the bottom?
+
+A. 10.4 m/s, because the heavier coaster has more inertia.
+B. 31.3 m/s, because velocity at the bottom is independent of mass.
+C. 93.9 m/s, because more mass means more kinetic energy.
+D. The model cannot predict this without knowing the track shape.
+
+Correct Answer: B
+
+Feedback: Correct. The model confirms v = sqrt(2gh). Since mass cancels from the equation, the heavier coaster reaches exactly the same speed. This validates Galileo's principle within the computational model. Incorrect. The model demonstrates that v = sqrt(2gh), where mass does not appear. Tripling the mass does not change the velocity at the bottom of the same drop.
+
+---
+
+### Question 2
+
+The model shows that a coaster traveling at 30 m/s through a loop with a 10-meter radius produces approximately 9.2 G-forces at the bottom. An engineer wants to reduce this to 4 G. Which model adjustment would achieve this?
+
+A. Increase the loop radius to reduce centripetal acceleration while maintaining the same speed.
+B. Decrease the coaster mass to reduce the force on riders.
+C. Increase the height of the preceding hill to give the coaster more energy.
+D. Add friction before the loop to increase the G-force.
+
+Correct Answer: A
+
+Feedback: Correct. G-force at the bottom of a loop depends on v^2/r. Increasing the radius (r) while maintaining the same velocity decreases centripetal acceleration and thus the G-force experienced by riders. Incorrect. Since G-force depends on centripetal acceleration (a = v^2/r), increasing the loop radius directly reduces the acceleration and G-force without changing the coaster's speed.
+
+---
+
+### Question 3
+
+A student runs the model with a 60-meter first hill and finds the coaster reaches 34 m/s at the bottom. With 10% energy lost to friction, what is the maximum height of the second hill the model would allow?
+
+A. 60 meters, because some energy is recovered during the climb.
+B. 54 meters, because 10% of the original potential energy has been lost to friction.
+C. 30 meters, because friction removes half the energy.
+D. The second hill can be any height as long as the track shape provides enough momentum.
+
+Correct Answer: B
+
+Feedback: Correct. With 10% energy loss, only 90% of the original PE remains. Since PE = mgh, the maximum height = 0.90 x 60 m = 54 m. The model correctly reflects conservation of energy minus friction losses. Incorrect. If 10% of the total energy is lost to friction, only 90% remains as mechanical energy. The maximum second hill height is 90% of the first hill: 0.90 x 60 = 54 meters.
+
+---
+
+### Question 4
+
+The model predicts that riders experience approximately 0 G (weightlessness) at the top of a parabolic hill when v^2/r = g. What does this finding reveal about the physics of 'airtime' on a roller coaster?
+
+A. Gravity temporarily stops acting on riders at the top of hills.
+B. The track curves away from the rider at exactly the rate that gravity would pull them, so no normal force is needed from the seat.
+C. Wind resistance lifts the riders out of their seats at high speeds.
+D. The coaster's kinetic energy is converted entirely to gravitational potential energy at the hill crest.
+
+Correct Answer: B
+
+Feedback: Correct. At 0 G, the centripetal acceleration needed to follow the track exactly equals gravitational acceleration. The rider is essentially in free fall while following the track curve, so no seat force is felt. Incorrect. Weightlessness occurs when the track's curvature matches the trajectory of free fall. The rider's body naturally follows a parabolic path at that speed, requiring zero contact force from the seat.
+
+---
+
+### Question 5
+
+Based on model evidence, a student argues that the coaster's energy is not truly 'conserved' because it slows down and eventually stops. Which response best addresses this argument using the model?
+
+A. The student is correct. Energy conservation is only an approximation that doesn't apply to real systems.
+B. Energy IS conserved. The mechanical energy converts to thermal energy through friction, so total energy remains constant even though the coaster's speed decreases.
+C. The model shows that gravity gradually removes energy from the system over time.
+D. The brakes at the end create new energy that replaces what was lost to friction.
+
+Correct Answer: B
+
+Feedback: Correct. The law of conservation of energy holds perfectly. Friction converts kinetic energy to thermal energy (heat in wheels, rails, and air). Total energy is constant; only the useful mechanical energy decreases. Incorrect. Energy conservation is a universal law. The coaster slows because friction converts mechanical energy to thermal energy, not because energy disappears. Total energy (mechanical + thermal) remains constant.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

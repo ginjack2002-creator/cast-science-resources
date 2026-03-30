@@ -821,6 +821,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS4-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why do you think there are so many different kinds of insects?
+
+A. Because there is only one kind of place to live
+B. Because there are many different places to live and each needs different insects
+C. Because all insects look the same
+D. Because insects choose to look different for fun
+
+Correct Answer: B
+
+Feedback: That is right! There are many different habitats on Earth, and each habitat needs insects with different body features to survive there. Earth has many different habitats like gardens, ponds, forests, and deserts. Each habitat has different challenges, so insects in each place need different body features to survive.
+
+---
+
+### Question 2
+
+What is a habitat?
+
+A. A type of insect
+B. The place where an animal lives and finds food, water, and shelter
+C. A pet store for bugs
+D. A type of rock
+
+Correct Answer: B
+
+Feedback: Yes! A habitat is the place where an animal lives and finds everything it needs to survive, like food, water, and shelter. A habitat is an animal's home in nature. It is the place that provides everything the animal needs to survive, including food, water, and shelter.
+
+---
+
+### Question 3
+
+Do a butterfly and a water beetle need the same body features to survive?
+
+A. Yes, all insects need the same body parts
+B. No, they live in different places and need different features
+C. Yes, because they are both insects
+D. No, because one is bigger than the other
+
+Correct Answer: B
+
+Feedback: Correct! A butterfly flies in gardens and needs wings, while a water beetle swims in ponds and needs paddle-shaped legs. Different habitats need different features. Even though both are insects, they live in very different places. A butterfly needs wings to fly between flowers. A water beetle needs flat legs to swim in ponds. Their different habitats require different body features.
+
+---
+
+### Question 4
+
+How many legs does an insect have?
+
+A. Four legs
+B. Eight legs
+C. Six legs
+D. Two legs
+
+Correct Answer: C
+
+Feedback: That is right! All insects have six legs. This is one feature that makes an insect an insect. Spiders have eight legs, so they are NOT insects. All insects have six legs and three body parts. Spiders have eight legs, so they are arachnids, not insects. If you count six legs, it is an insect!
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A water beetle has flat, paddle-shaped legs. Why does it have this body feature?
+
+A. Because it chose to have paddle legs
+B. Because paddle-shaped legs help it swim in its pond habitat
+C. Because all insects have paddle-shaped legs
+D. Because it needs to fly between flowers
+
+Correct Answer: B
+
+Feedback: Correct! The water beetle's flat, paddle-shaped legs are an adaptation that helps it swim in its pond habitat. Its body features match the challenges of living in water. Body features match habitats. A water beetle lives in ponds, so it needs features for swimming. Flat, paddle-shaped legs push through water like oars, helping it move and find food in its water habitat.
+
+---
+
+### Question 2
+
+What is diversity?
+
+A. When all living things look the same
+B. Having many different kinds of living things with lots of variety
+C. When animals live alone
+D. A type of insect
+
+Correct Answer: B
+
+Feedback: Yes! Diversity means having many different kinds of living things with lots of variety. Earth has incredible diversity, with over a million different insect species alone. Diversity means variety. Having many different kinds of living things is what makes life on Earth so diverse. There are over one million different species of insects, each unique.
+
+---
+
+### Question 3
+
+In our model, what happens when you change the Habitat Type from garden to pond?
+
+A. The Body Features stay exactly the same
+B. The Body Features change because pond insects need different features than garden insects
+C. The insects disappear
+D. Nothing changes at all
+
+Correct Answer: B
+
+Feedback: Correct! Different habitats need different body features. Garden insects need wings and camouflage, while pond insects need swimming legs and waterproof bodies. When the habitat changes, the body features that help an insect survive also change. A garden needs fliers with camouflage, while a pond needs swimmers with paddle legs. Different habitat, different features.
+
+---
+
+### Question 4
+
+Why is it important for an insect's body features to match its habitat?
+
+A. It is not important at all
+B. So the insect looks pretty
+C. Because matching features help the insect find food, escape danger, and survive
+D. Because insects with the wrong features grow bigger
+
+Correct Answer: C
+
+Feedback: That is right! When body features match the habitat, the insect can find food, hide from predators, and survive. A butterfly's wings help it fly to flowers in a garden, and a beetle's paddle legs help it swim in a pond. An insect survives best when its features match its habitat. A water beetle with paddle legs thrives in a pond. A butterfly with wings thrives in a garden. If the features do not match the habitat, the insect cannot find food or escape danger.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

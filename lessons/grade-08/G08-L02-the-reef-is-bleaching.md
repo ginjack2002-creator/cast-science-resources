@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS2-1, MS-LS2-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Coral reefs are sometimes called 'rainforests of the sea.' What does this comparison most likely refer to?
+
+A. Both receive a lot of rainfall
+B. Both support an extremely high diversity of species
+C. Both are located in tropical land environments
+D. Both are made entirely of plants
+
+Correct Answer: B
+
+Feedback: Correct! Coral reefs, like tropical rainforests, support an extraordinary diversity of life. Reefs host roughly 25% of all marine species despite covering less than 1% of the ocean floor. The comparison refers to biodiversity. Coral reefs support roughly 25% of all marine species, making them one of the most species-rich ecosystems on Earth, similar to rainforests on land.
+
+---
+
+### Question 2
+
+Which of the following best describes coral?
+
+A. A type of colorful underwater rock
+B. A plant that grows on the ocean floor
+C. A colony of tiny animals called polyps
+D. A type of seaweed with a hard outer shell
+
+Correct Answer: C
+
+Feedback: Correct! Coral is an animal. Each coral colony is made up of thousands of tiny polyps that are related to jellyfish and sea anemones. Despite looking like rocks or plants, coral is actually an animal. Coral colonies are made up of thousands of tiny polyps, which are invertebrate animals related to jellyfish.
+
+---
+
+### Question 3
+
+What is symbiosis?
+
+A. When one organism hunts and eats another
+B. A close, long-term relationship between two different species
+C. When organisms compete for the same resources
+D. The process of organisms adapting to a new environment
+
+Correct Answer: B
+
+Feedback: Correct! Symbiosis describes a close and long-term biological interaction between two different species, which can be mutualistic, parasitic, or commensal. Symbiosis is not predation or competition. It specifically refers to a close, long-term relationship between two different species that live in close association.
+
+---
+
+### Question 4
+
+How might rising ocean temperatures affect organisms that live in the sea?
+
+A. Warmer water always helps marine organisms grow faster
+B. Temperature changes have no effect on marine organisms because water stays the same temperature
+C. Organisms adapted to specific temperature ranges may become stressed if temperatures change beyond their tolerance
+D. Only land organisms are affected by temperature changes
+
+Correct Answer: C
+
+Feedback: Correct! Marine organisms are adapted to specific temperature ranges. When temperatures exceed their tolerance, they can become stressed, which may disrupt feeding, reproduction, or survival. Marine organisms are highly sensitive to temperature. Many are adapted to narrow ranges, and even small increases (1-2 degrees Celsius) can cause significant stress, disrupting biological processes.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In your model, when Ocean Temperature was increased +3 degrees Celsius, Zooxanthellae Population dropped first, and then Coral Health declined. What type of ecological relationship does this sequence demonstrate?
+
+A. Competition between coral and zooxanthellae for resources
+B. A trophic cascade where disrupting one level causes chain effects through the system
+C. Predation where rising temperatures help coral consume zooxanthellae
+D. Parasitism where zooxanthellae harm coral when temperatures rise
+
+Correct Answer: B
+
+Feedback: Correct! This is a trophic cascade. The temperature disrupts the coral-zooxanthellae symbiosis first (zooxanthellae expelled), which then cascades to affect coral health because coral depends on zooxanthellae for up to 90% of its energy. The sequence shows a cascade effect. Temperature stress does not make coral eat zooxanthellae or turn the relationship parasitic. It disrupts the mutualistic symbiosis, and because coral depends on zooxanthellae for energy, the coral then declines.
+
+---
+
+### Question 2
+
+Your model showed that the 'Double Threat' scenario (increased temperature AND acidity) caused far worse coral decline than temperature alone. Which explanation best accounts for this?
+
+A. Acidic water directly kills zooxanthellae, so both factors target the same component
+B. Temperature causes coral to expel zooxanthellae (losing its food source), while acidity weakens the coral skeleton (losing structural integrity), attacking the system through two different pathways
+C. Acidity and temperature cancel each other out, but the combination creates a new chemical that kills coral
+D. The model was inaccurate because in reality these factors do not interact
+
+Correct Answer: B
+
+Feedback: Correct! The two stressors attack the coral system through different pathways: temperature disrupts the energy supply (zooxanthellae), while acidity weakens the physical structure (skeleton). Together, recovery becomes nearly impossible. The double threat is worse because the two factors target different vulnerabilities. Temperature causes bleaching (energy loss), while acidification weakens the calcium carbonate skeleton. These simultaneous attacks through different pathways make recovery far more difficult.
+
+---
+
+### Question 3
+
+A marine biologist observes that a reef bleached during a heat wave but recovered six months later when temperatures returned to normal. Which component of the model best explains the recovery?
+
+A. The coral grew a new skeleton resistant to temperature changes
+B. New coral polyps migrated from cooler waters to replace the dead ones
+C. Zooxanthellae were able to recolonize the coral tissue once temperatures dropped back within tolerance
+D. The ocean became more acidic, which helped coral rebuild
+
+Correct Answer: C
+
+Feedback: Correct! Bleached coral is stressed and starving but not necessarily dead. If conditions return to normal quickly enough, zooxanthellae can recolonize the coral tissue, restoring the energy supply and allowing recovery. Bleaching occurs when coral expels its zooxanthellae under heat stress. The coral is still alive during early bleaching. Recovery happens when temperatures drop and zooxanthellae return to the coral tissue, restoring the mutualistic energy supply.
+
+---
+
+### Question 4
+
+Based on your model, which intervention would most effectively protect coral reefs in the long term?
+
+A. Painting bleached coral with colorful dye to attract fish back to the reef
+B. Reducing CO2 emissions, which would slow both ocean warming and acidification
+C. Moving all fish to aquariums so they are not affected by reef decline
+D. Adding more salt to the ocean to increase its buffering capacity
+
+Correct Answer: B
+
+Feedback: Correct! Since CO2 drives both ocean warming (through the greenhouse effect) and ocean acidification (CO2 dissolving in seawater), reducing emissions addresses the root causes of both external stressors in the model. The model shows that temperature and acidity are the external drivers of reef decline, and both are linked to CO2. Reducing emissions is the only option that addresses the root cause of both stressors simultaneously.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

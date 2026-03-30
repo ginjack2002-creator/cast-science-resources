@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-PS2-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do you think happens when you hold a magnet near a metal paperclip?
+
+A. The paperclip moves toward the magnet
+B. The paperclip melts
+C. The paperclip gets bigger
+D. Nothing happens
+
+Correct Answer: A
+
+Feedback: That is right! A magnet pulls a metal paperclip toward it using an invisible force called magnetic force. Think again. Magnets create a pulling force on certain metals. A paperclip is made of steel, so a magnet will pull it closer.
+
+---
+
+### Question 2
+
+Which of these materials do you think a magnet will stick to?
+
+A. A wooden block
+B. A plastic cup
+C. A steel spoon
+D. A sheet of paper
+
+Correct Answer: C
+
+Feedback: Great thinking! Steel is a metal that contains iron, so magnets stick to it. Magnets do not stick to wood, plastic, or paper. Magnets only stick to certain metals like iron and steel. A steel spoon is the only metal item in this list.
+
+---
+
+### Question 3
+
+Do you think a magnet can pull on a paperclip without touching it?
+
+A. No, the magnet must touch the paperclip to pull it
+B. Yes, the magnet can pull the paperclip from a short distance away
+C. Only if the paperclip is wet
+D. Only if someone pushes the paperclip first
+
+Correct Answer: B
+
+Feedback: You got it! Magnetic force is an invisible force that works through the air. A magnet can pull on metal objects even without touching them. Magnets actually can pull on metal objects without touching them. The invisible magnetic force reaches out through the air.
+
+---
+
+### Question 4
+
+A big magnet and a small magnet are both held near a paperclip. Which magnet will pull harder?
+
+A. The small magnet always pulls harder
+B. Both magnets always pull the same amount
+C. It depends on how strong each magnet is, not just its size
+D. Neither magnet can pull on a paperclip
+
+Correct Answer: C
+
+Feedback: Nice job! The strength of a magnet depends on what it is made of, not just its size. A small strong magnet can pull harder than a big weak one. Size does not always determine how strong a magnet is. A small magnet made of strong material can pull harder than a larger, weaker magnet.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, when Magnet Strength increases, what happens to Magnetic Force?
+
+A. Magnetic Force decreases
+B. Magnetic Force stays the same
+C. Magnetic Force increases
+D. Magnetic Force disappears
+
+Correct Answer: C
+
+Feedback: Correct! Magnet Strength and Magnetic Force have a positive relationship. A stronger magnet creates a stronger invisible pulling force. Remember the positive relationship in the model. When Magnet Strength goes up, Magnetic Force also goes up because the magnet creates a bigger invisible field.
+
+---
+
+### Question 2
+
+Why does a magnet stick to a steel refrigerator but NOT to a wooden door?
+
+A. The refrigerator is colder
+B. Steel contains iron, which is attracted to magnets, but wood is not magnetic
+C. The refrigerator is bigger
+D. Wood is too heavy for magnets
+
+Correct Answer: B
+
+Feedback: Exactly! Magnets only attract metals that contain iron, nickel, or cobalt. Steel has iron in it, so magnets stick to it. Wood has no magnetic metals. Temperature and size do not matter. Magnets only attract certain metals like iron, nickel, and cobalt. Steel has iron, but wood has no magnetic metals at all.
+
+---
+
+### Question 3
+
+A student tested a weak magnet and a strong magnet. The strong magnet picked up a paperclip from 3 inches away, but the weak magnet had to be 1 inch away. What does this tell us?
+
+A. Weak magnets do not work at all
+B. Stronger magnets have a bigger magnetic field that reaches farther
+C. The paperclip moved on its own
+D. Distance does not affect magnets
+
+Correct Answer: B
+
+Feedback: You got it! Stronger magnets create a bigger invisible magnetic field, so they can pull on objects from farther away. The strong magnet pulled from farther away because it has a larger magnetic field. Stronger magnets can reach farther with their invisible force.
+
+---
+
+### Question 4
+
+In the magnet model, which component is the EXTERNAL component that you can control?
+
+A. Magnetic Force
+B. Attraction
+C. Magnet Strength
+D. Distance
+
+Correct Answer: C
+
+Feedback: Right! Magnet Strength is the external component because YOU choose which magnet to use. Magnetic Force and Attraction are internal, meaning they change as a result. The external component is the one you set before the experiment. You choose the Magnet Strength by picking which magnet to use. The other parts change on their own inside the system.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: C
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

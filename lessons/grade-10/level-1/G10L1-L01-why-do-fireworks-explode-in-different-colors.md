@@ -885,6 +885,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS1-1, HS-PS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+When a metal salt such as strontium chloride is heated in a flame, it produces a characteristic red color. Which of the following best explains why different metals produce different flame colors?
+
+A. Each metal has a unique set of electron energy levels, so the photons emitted during electron transitions have different wavelengths.
+B. Different metals burn at different temperatures, and hotter flames always produce bluer colors.
+C. The oxygen in the air reacts differently with each metal, producing unique combustion byproducts that glow different colors.
+D. Larger atoms produce longer wavelengths of light because their electrons are farther from the nucleus.
+
+Correct Answer: A
+
+Feedback: Correct. Each element has quantized electron energy levels with unique spacing, so electron transitions emit photons of characteristic wavelengths, producing element-specific colors. Incorrect. Flame color is determined by the specific energy gaps between electron levels in each element, not by combustion temperature, oxygen reactions, or atomic size alone.
+
+---
+
+### Question 2
+
+A student observes that heating copper chloride produces a blue-green flame while heating sodium chloride produces a yellow flame. Which statement best explains this observation?
+
+A. Copper burns at a higher temperature than sodium, producing a higher-energy color.
+B. The electron energy gaps in copper atoms correspond to blue-green photon wavelengths, while sodium's gaps correspond to yellow wavelengths.
+C. Chloride ions determine the flame color, and different amounts of chloride produce different colors.
+D. Copper reflects blue-green light from the flame while sodium reflects yellow light.
+
+Correct Answer: B
+
+Feedback: Correct. The color is determined by the metal's unique electron energy level spacing. When excited electrons fall back to lower levels, they release photons with wavelengths specific to that element. Incorrect. The metal cation, not the anion, determines the flame color. The color arises from the specific energy transitions of electrons within each metal's atomic structure.
+
+---
+
+### Question 3
+
+Which of the following statements about electromagnetic radiation is accurate?
+
+A. Red light has a shorter wavelength and higher energy than blue light.
+B. All colors of visible light carry the same amount of energy per photon.
+C. Blue light has a shorter wavelength and higher energy per photon than red light.
+D. The energy of a photon is independent of its wavelength.
+
+Correct Answer: C
+
+Feedback: Correct. Photon energy is inversely proportional to wavelength (E = hc/lambda). Blue light (~450 nm) has shorter wavelength and higher energy than red light (~650 nm). Incorrect. Photon energy and wavelength are inversely related. Shorter wavelengths (blue/violet) carry more energy per photon than longer wavelengths (red).
+
+---
+
+### Question 4
+
+An atom absorbs energy and one of its electrons moves from a lower energy level to a higher one. What happens when the electron returns to its original energy level?
+
+A. The atom absorbs another photon of equal energy.
+B. The electron emits a photon with energy equal to the difference between the two levels.
+C. The electron releases heat energy but no light.
+D. The atom splits into two smaller atoms, releasing nuclear energy.
+
+Correct Answer: B
+
+Feedback: Correct. When an excited electron drops to a lower energy level, the energy difference is emitted as a photon whose wavelength corresponds to that specific energy gap. Incorrect. Electron transitions to lower energy levels release energy as photons. The photon's energy exactly matches the energy difference between the two levels.
+
+---
+
+### Question 5
+
+A scientist wants to identify an unknown metal sample. She heats the sample and observes its emission spectrum. Why is this method reliable for element identification?
+
+A. Every element melts at a unique temperature, which determines the color of light it emits.
+B. Each element has a unique set of electron energy levels, producing a characteristic pattern of spectral lines.
+C. Heavier elements always produce more spectral lines than lighter elements.
+D. The chemical bonds in each element vibrate at unique frequencies when heated.
+
+Correct Answer: B
+
+Feedback: Correct. Each element's electron configuration creates unique energy level spacings, producing a distinctive emission spectrum that acts as a chemical fingerprint. Incorrect. Emission spectra are unique because each element has a distinct set of quantized electron energy levels. This produces characteristic spectral line patterns regardless of the element's mass or melting point.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A firework shell contains both strontium chloride (red) and copper chloride (blue). When detonated, the firework produces a purple color. Which explanation best accounts for this observation using the computational model?
+
+A. The two metals chemically react to form a new compound that emits purple photons.
+B. Both metals independently emit their characteristic photons, and the mixture of red and blue light is perceived as purple by the human eye.
+C. The copper lowers the combustion temperature, shifting the strontium emission from red to purple.
+D. The combined electron clouds of both metals create a new set of energy levels that correspond to purple light.
+
+Correct Answer: B
+
+Feedback: Correct. Each metal retains its unique emission spectrum. The strontium emits red photons and the copper emits blue photons independently. The combination is perceived as purple through additive color mixing. Incorrect. Each metal's emission is determined by its own atomic structure. When both emit simultaneously, the human eye perceives the combined wavelengths as purple through additive color mixing.
+
+---
+
+### Question 2
+
+In the computational model, increasing the Oxidizer Strength to its maximum value causes the firework color to wash out toward white. Which of the following best explains this result?
+
+A. Excessive oxidizer causes the metal salts to decompose before they can emit light.
+B. At extremely high temperatures, blackbody radiation from the heated material overwhelms the characteristic emission lines of the metal.
+C. The oxidizer itself emits white light that covers up the metal's color.
+D. Maximum oxidizer causes all electrons to be stripped from the atoms, preventing any photon emission.
+
+Correct Answer: B
+
+Feedback: Correct. At very high combustion temperatures, the intense thermal (blackbody) radiation across all visible wavelengths overwhelms the discrete emission lines of the metal, producing white light. Incorrect. Extremely high temperatures produce intense blackbody radiation across all wavelengths. This continuous spectrum drowns out the discrete emission lines from the metal salt, washing the color toward white.
+
+---
+
+### Question 3
+
+A student claims that the color of a firework is determined by the type of gunpowder used, not the metal salt. Based on the model, which evidence best refutes this claim?
+
+A. Changing only the metal salt while keeping the same gunpowder produces different colors.
+B. Gunpowder produces smoke that filters out certain colors of light.
+C. Different gunpowder mixtures burn at different rates but all produce white light.
+D. The model shows that gunpowder does not contain any electrons capable of emitting visible light.
+
+Correct Answer: A
+
+Feedback: Correct. The model demonstrates that changing only the Element Type component (metal salt) while holding gunpowder constant produces different colors. This proves the color originates from the metal's electron transitions, not the explosive. Incorrect. The key evidence is that the same gunpowder produces different colors when paired with different metal salts. This isolates the metal as the source of the color, since its unique electron energy gaps determine the emitted wavelengths.
+
+---
+
+### Question 4
+
+Astronomers use the same principles as firework chemistry to determine the composition of distant stars. Which model component most directly enables this astronomical application?
+
+A. Oxidizer Strength, because stars burn fuel similar to firework oxidizers.
+B. Combustion Temperature, because stellar temperatures determine which elements are present.
+C. Element Type, because each element's unique emission spectrum serves as a fingerprint identifiable across any distance.
+D. Color Wavelength, because all stars emit the same wavelengths regardless of composition.
+
+Correct Answer: C
+
+Feedback: Correct. Each element produces a unique emission spectrum regardless of distance. Astronomers analyze starlight for these characteristic spectral lines to identify which elements are present in the star's atmosphere. Incorrect. The key principle is that each element produces a unique emission spectrum (spectral fingerprint) based on its electron energy levels. This spectrum is the same whether the element is in a firework or a star billions of light-years away.
+
+---
+
+### Question 5
+
+Based on the model, a pyrotechnician wants to produce the purest possible green firework. Which combination of component settings would the model predict will yield the best result?
+
+A. Barium chloride with maximum Oxidizer Strength to ensure all electrons are excited.
+B. Barium chloride with moderate Oxidizer Strength to achieve sufficient electron excitation without excessive blackbody radiation.
+C. A mixture of strontium and copper chloride with high Oxidizer Strength.
+D. Any metal salt with maximum Combustion Temperature, since higher temperatures produce brighter and purer colors.
+
+Correct Answer: B
+
+Feedback: Correct. Barium produces green emission (~525 nm). Moderate oxidizer provides enough energy to excite electrons without generating excessive blackbody radiation that would wash out the color purity. Incorrect. For pure color, the correct metal salt (barium for green) must be paired with moderate oxidizer strength. Too much oxidizer creates excessive blackbody radiation that drowns out the characteristic emission, reducing color purity.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

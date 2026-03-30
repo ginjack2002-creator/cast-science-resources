@@ -898,6 +898,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-3, HS-LS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Over the past several decades, wildfires in the western United States have become larger, more intense, and more destructive. Which combination of factors best explains this trend?
+
+A. Increased arson and careless campfire use are the sole causes
+B. A century of fire suppression has accumulated unnaturally high fuel loads, while climate change has made conditions hotter and drier, creating a compounding effect
+C. Wildfires have always been this destructive; modern media just reports on them more
+D. Increased urbanization has reduced the land available for fires to burn
+
+Correct Answer: B
+
+Feedback: Correct. The worsening wildfire crisis results from two compounding human interventions: a century of fire suppression that allowed fuel to accumulate to 5-10 times natural levels, and climate change that has raised temperatures, reduced soil moisture, and extended fire seasons by over 80 days since 1970. Worsening wildfires result from multiple compounding factors: 100+ years of fire suppression allowed dead wood and brush to accumulate far beyond natural levels, climate change has raised temperatures and extended drought, and development in fire-prone areas has increased exposure. These factors compound each other, creating conditions far worse than any single cause alone.
+
+---
+
+### Question 2
+
+Many ecosystems, including longleaf pine forests and tallgrass prairies, evolved with periodic natural fire. What role does low-intensity fire play in these ecosystems?
+
+A. Fire always destroys ecosystems and should be prevented in all cases
+B. Low-intensity fire clears accumulated dead material, recycles nutrients to the soil, kills disease organisms, and prevents fuel buildup that could cause catastrophic fires
+C. Fire has no ecological function and only occurs due to human activity
+D. Low-intensity fire only benefits animals by clearing paths for movement
+
+Correct Answer: B
+
+Feedback: Correct. Low-intensity surface fires are a natural and necessary disturbance in fire-adapted ecosystems. They clear dead vegetation, return nutrients to soil, create space for new growth, reduce disease, and most importantly prevent the fuel accumulation that leads to catastrophic, ecosystem-destroying crown fires. Many ecosystems evolved to depend on periodic fire. Low-intensity surface fires sweep through every 5-30 years naturally, clearing accumulated dead material, recycling nutrients, reducing disease, promoting biodiversity, and preventing the dangerous fuel buildup that leads to catastrophic crown fires. Fire is nature's maintenance tool.
+
+---
+
+### Question 3
+
+Which of the following best describes a positive feedback loop in an environmental system?
+
+A. A loop where the system always produces positive outcomes for the environment
+B. A self-reinforcing cycle where the output of a process amplifies the input, causing the system to accelerate in one direction
+C. A loop where the system maintains stable conditions through self-correction
+D. A feedback loop that only operates in human-engineered systems
+
+Correct Answer: B
+
+Feedback: Correct. A positive feedback loop is self-reinforcing: the output amplifies the original input, pushing the system further in the same direction. In wildfires, this means fire creates conditions for more fire. Unlike negative feedback (which stabilizes), positive feedback accelerates change and can lead to runaway effects. Despite the name, 'positive' feedback does not mean beneficial. It means self-reinforcing: the output of the process becomes an input that amplifies the process further. Positive feedback pushes systems away from equilibrium, potentially creating runaway effects. Negative feedback, by contrast, counteracts change and stabilizes systems.
+
+---
+
+### Question 4
+
+Climate change is often cited as a driver of worsening wildfires. Through which mechanisms does climate change increase wildfire risk?
+
+A. Climate change only increases lightning strikes, which start more fires
+B. Higher temperatures dry out vegetation and soil, earlier snowmelt reduces summer moisture, and longer drought periods extend the fire season, creating drier fuels over longer periods
+C. Climate change reduces wind speeds, which traps heat in forests
+D. Climate change causes more rain, which promotes vegetation growth that eventually becomes fuel
+
+Correct Answer: B
+
+Feedback: Correct. Climate change attacks wildfire risk through multiple mechanisms simultaneously: higher temperatures increase evapotranspiration (drying vegetation), earlier snowmelt reduces summer soil moisture, extended drought periods stress vegetation, and the fire season has lengthened by over 80 days in the western U.S. since 1970. Climate change increases wildfire risk through several interacting mechanisms: higher average temperatures dry out vegetation faster, snowpack melts earlier reducing summer water availability, drought periods are longer and more severe, and the overall fire season has extended by 80+ days since 1970. These factors compound each other, creating fire conditions that would have been extreme in the past but are now routine.
+
+---
+
+### Question 5
+
+Indigenous peoples across the Americas, Australia, and Africa have used controlled burning for thousands of years. What was the primary purpose of these 'cultural burns'?
+
+A. Cultural burns were purely ceremonial with no ecological purpose
+B. Cultural burns maintained healthy landscapes by periodically reducing fuel loads, promoting new growth, managing wildlife habitat, and preventing the conditions for catastrophic wildfire
+C. Indigenous peoples set fires to destroy enemy territories
+D. Cultural burns were accidental fires that were later given cultural significance
+
+Correct Answer: B
+
+Feedback: Correct. Indigenous fire management was sophisticated ecological engineering. Aboriginal Australians practiced 'fire-stick farming' for tens of thousands of years, and Native American tribes used controlled burns to manage forests, promote game habitat, and maintain productive landscapes. These practices effectively maintained the natural fire cycle that European colonizers disrupted through suppression. Indigenous cultural burning was a sophisticated land management practice. It served multiple purposes: reducing accumulated fuel loads, promoting new plant growth for food and materials, managing wildlife habitat, clearing travel corridors, and preventing catastrophic wildfire. These practices maintained healthy landscapes for millennia and are now being revived as modern fire management recognizes their effectiveness.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a student's wildfire model, the 'Healthy Fire Cycle' scenario shows that low-intensity fire actually REDUCES Fuel Load and stabilizes the system. The 'Catastrophic Fire' scenario shows that high-intensity fire INCREASES conditions for future catastrophic fire. What fundamental difference in system behavior do these two scenarios demonstrate?
+
+A. Both scenarios produce identical outcomes because all fire is the same
+B. Low-intensity fire acts as a stabilizing negative feedback (reducing fuel prevents future fire escalation), while high-intensity fire creates a destabilizing positive feedback (destroying vegetation leads to drier conditions and more combustible fuel for the next fire)
+C. The model shows that fire intensity has no relationship to ecosystem recovery
+D. Catastrophic fire is actually better for the ecosystem than low-intensity fire
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals two fundamentally different system behaviors depending on fire intensity. Low-intensity fire is a stabilizing force: it removes fuel, which reduces the potential energy for future fires, creating a negative feedback loop that maintains ecosystem health. High-intensity fire is destabilizing: it destroys vegetation, dries soil, and creates conditions that make the next fire equally or more catastrophic, creating a positive feedback loop. The model demonstrates that fire intensity determines whether the system behaves with negative feedback (stabilizing) or positive feedback (destabilizing). Low-intensity fire reduces fuel loads, preventing future catastrophic fires. High-intensity fire destroys the ecosystem's ability to recover, creating conditions for equally destructive future fires. The same process (fire) can either stabilize or destabilize the system depending on its intensity.
+
+---
+
+### Question 2
+
+A student traces the wildfire positive feedback loop in their model: Fire Intensity (high) → Soil Moisture (decreases) → Vegetation Recovery (slows) → Fuel Load (increases as dead material accumulates faster than living recovery) → next Fire Intensity (increases). Where in this loop could human intervention most effectively break the cycle?
+
+A. By increasing Wind Speed to blow fires out more quickly
+B. By reducing Fuel Load through prescribed burns and mechanical thinning before a wildfire occurs, breaking the cycle between accumulated fuel and catastrophic fire intensity
+C. By preventing all vegetation from growing in fire-prone areas
+D. By increasing Soil Moisture through continuous irrigation of all forests
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies Fuel Load as the most practical intervention point. While Wind Speed is uncontrollable and Soil Moisture cannot be artificially maintained at forest scale, Fuel Load can be directly reduced through prescribed burns and mechanical thinning. Reducing fuel before a wildfire occurs prevents high-intensity fire, which prevents the downstream cascade of soil drying, vegetation destruction, and further fuel accumulation. The model shows that Fuel Load is the most actionable intervention point. Prescribed burns and mechanical thinning directly reduce accumulated combustible material, preventing the high-intensity fire that triggers the destructive feedback loop. This mimics the natural low-intensity fire cycle that maintained healthy forests for millennia before fire suppression disrupted it.
+
+---
+
+### Question 3
+
+A student's model shows that after 80 years of fire suppression, fuel loads are 5-10 times higher than natural levels. A forest manager proposes continuing suppression but investing more in firefighting technology. Using model evidence, evaluate this proposal.
+
+A. This is the best approach because firefighting technology is always improving
+B. This approach treats the symptom (active fire) without addressing the cause (excessive fuel accumulation); the model shows that suppression has created the problem, and continuing it will make fuel loads even more extreme, guaranteeing increasingly catastrophic fires that eventually overwhelm any firefighting capability
+C. Firefighting budgets should be unlimited because fire is always bad
+D. The model shows that fire suppression has been successful and should continue
+
+Correct Answer: B
+
+Feedback: Correct. The model clearly demonstrates that fire suppression created the current crisis by allowing fuel to accumulate to unprecedented levels. Continuing suppression while investing in firefighting is analogous to buying bigger mops while leaving a broken pipe unfixed. The fuel continues to accumulate, making each future fire more extreme. The model shows that prevention (prescribed burns, fuel management) is fundamentally more effective than reaction (firefighting). The model provides clear evidence that fire suppression is the underlying cause of worsening wildfires, not the solution. Each year of additional suppression adds more fuel. The U.S. already spends over $3 billion annually on wildfire suppression, yet fires continue to worsen. The model shows that breaking the feedback loop requires reducing fuel loads through prescribed burns, not fighting ever-larger fires with ever-larger budgets.
+
+---
+
+### Question 4
+
+A student adds Carbon Release as a component to their model. They discover that wildfire releases massive amounts of stored CO2, which contributes to climate change, which creates hotter/drier conditions, which makes future fires worse. What does this reveal about the wildfire-climate relationship?
+
+A. Carbon release from wildfires is negligible compared to human emissions
+B. Wildfire and climate change form a nested positive feedback loop: fire releases carbon that accelerates climate change, which creates conditions for worse fires, creating a self-reinforcing cycle that operates at a larger scale than the vegetation-soil-fuel loop alone
+C. Climate change has no connection to wildfire behavior
+D. Wildfire carbon release actually helps cool the atmosphere by blocking sunlight with smoke
+
+Correct Answer: B
+
+Feedback: Correct. The extended model reveals a feedback loop operating at a larger scale than the original vegetation-soil-fuel cycle. Wildfire releases decades of stored carbon as CO2 in days. This CO2 contributes to atmospheric greenhouse gas concentration, which accelerates climate warming, which creates hotter and drier conditions, which makes future fires more intense and carbon-releasing. This creates a planetary-scale positive feedback loop. Adding Carbon Release to the model reveals a nested positive feedback loop operating at a larger scale. Individual fires release stored carbon that contributes to climate change, and climate change creates conditions for worse fires. This means the wildfire crisis is not just a local ecosystem problem but a component of a global climate feedback system where fire and warming reinforce each other.
+
+---
+
+### Question 5
+
+A student's community wildfire resilience plan proposes prescribed burns, defensible space requirements, fire-resistant building codes, and post-fire restoration. Their model shows this comprehensive approach reduces catastrophic fire risk by 70%. Why does the model predict that addressing the feedback loop at multiple points is more effective than targeting a single intervention?
+
+A. Multiple interventions always produce exactly additive results
+B. Targeting multiple points in the feedback loop reduces the probability that the cycle can self-sustain, because even if one intervention is imperfect, the others provide redundancy that prevents the system from reaching conditions for catastrophic fire
+C. The model is wrong because a single intervention should be sufficient
+D. Multiple interventions are only necessary in areas with high wind speeds
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that addressing the feedback loop at multiple points creates a resilient defense system. Prescribed burns reduce fuel (breaking the fuel-to-intensity link), defensible space protects structures even if fire occurs, building codes ensure structures survive moderate shaking, and post-fire restoration prevents the recovery-failure pathway. Each intervention reduces the probability of the next link in the chain activating, and together they prevent the feedback loop from completing its cycle. The model demonstrates that positive feedback loops can be disrupted most effectively by intervening at multiple points simultaneously. No single intervention is foolproof. Prescribed burns reduce fuel but cannot eliminate all risk. Defensible space protects structures but does not prevent fires from starting. Building codes help buildings survive but do not address ecosystem health. Together, these interventions provide overlapping protection that prevents the feedback loop from completing its cycle.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

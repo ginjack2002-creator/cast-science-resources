@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS2-3, MS-PS2-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a magnet?
+
+A. Any metal object that is painted silver
+B. An object that produces an invisible field that can attract or repel certain materials
+C. A rock that only works when connected to electricity
+D. A special type of battery that stores electrical energy
+
+Correct Answer: B
+
+Feedback: Correct! A magnet produces a magnetic field, an invisible area of force that can attract magnetic materials like iron and repel other magnets. Not quite. A magnet is an object that produces an invisible magnetic field capable of attracting magnetic materials (like iron) or repelling other magnets.
+
+---
+
+### Question 2
+
+Can you make a magnet stronger or weaker?
+
+A. No. All magnets have a fixed strength that never changes.
+B. Yes, but only by painting the magnet a different color
+C. Yes. Factors like material, size, and electrical current can affect magnet strength.
+D. Magnets only get weaker over time and can never be made stronger
+
+Correct Answer: C
+
+Feedback: Correct! Magnet strength can be changed by the material used, the design of the magnet, and in the case of electromagnets, by adjusting the electric current. Not quite. The strength of a magnet depends on factors like its material and design. Electromagnets can be made stronger or weaker by changing the electric current flowing through them.
+
+---
+
+### Question 3
+
+What do you think connects electricity and magnetism?
+
+A. They are completely separate forces with nothing in common
+B. Moving electric charges create magnetic fields, linking the two forces
+C. Magnetism is a type of static electricity stored in metal
+D. Electricity and magnetism only interact inside batteries
+
+Correct Answer: B
+
+Feedback: Correct! Electricity and magnetism are connected. Moving electric charges (current) create magnetic fields, and moving magnets can generate electric current. Not quite. Electricity and magnetism are aspects of the same fundamental force. Moving electric charges create magnetic fields, and moving magnets can generate electric current.
+
+---
+
+### Question 4
+
+How can a magnet attract a paper clip without touching it?
+
+A. The magnet shoots invisible particles at the paper clip
+B. The magnet creates a field of force that extends through the air to the paper clip
+C. Air molecules carry the magnetic force from the magnet to the paper clip
+D. The paper clip moves on its own when it senses the magnet nearby
+
+Correct Answer: B
+
+Feedback: Correct! Magnets produce a magnetic field that extends through space. This field exerts a force on magnetic materials like the iron in a paper clip, even without physical contact. Not quite. A magnet creates an invisible magnetic field that extends through the space around it. This field exerts force on magnetic materials at a distance, without needing contact.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student builds an electromagnet by wrapping 50 turns of wire around an iron nail and connecting it to a battery. It picks up 8 paper clips. Which change would most likely INCREASE the number of paper clips it lifts?
+
+A. Replacing the iron nail with a wooden dowel
+B. Wrapping 100 turns of wire instead of 50
+C. Using a longer nail with the same number of wraps
+D. Moving the electromagnet farther from the paper clips before turning it on
+
+Correct Answer: B
+
+Feedback: Correct! Doubling the number of coil wraps concentrates and amplifies the magnetic field, significantly increasing the electromagnet's lifting capacity. Not quite. Increasing the number of coil wraps is one of the most effective ways to strengthen an electromagnet because each additional loop adds its magnetic field to the total.
+
+---
+
+### Question 2
+
+In the electromagnet model, setting both electric current AND number of coil wraps to maximum produces a much stronger result than changing just one variable. What does this demonstrate?
+
+A. Only one variable matters, and the other has no real effect
+B. The two variables have a combined (multiplicative) effect on magnetic field strength
+C. Magnetic field strength has a maximum limit that cannot be exceeded
+D. Electric current cancels out the effect of additional coils
+
+Correct Answer: B
+
+Feedback: Correct! Current and coils work together. More current through more coils produces a much stronger field than either change alone, demonstrating a combined effect on electromagnetic force. Not quite. The model shows that current and coils have a combined effect on field strength. Increasing both variables together produces a result greater than changing either one alone.
+
+---
+
+### Question 3
+
+Why are electromagnets more useful than permanent magnets for many real-world applications?
+
+A. Electromagnets are cheaper to produce than permanent magnets
+B. Electromagnets can be turned on and off with a switch, and their strength can be adjusted
+C. Permanent magnets are too heavy to use in machines
+D. Electromagnets work in space, but permanent magnets do not
+
+Correct Answer: B
+
+Feedback: Correct! The ability to control electromagnets by switching them on/off and adjusting their strength makes them far more versatile than permanent magnets for applications like cranes, motors, and MRI machines. Not quite. The key advantage of electromagnets is controllability. They can be turned on and off and their strength can be adjusted, making them essential for applications like junkyard cranes, electric motors, and MRI machines.
+
+---
+
+### Question 4
+
+Which statement best explains how your model proves that invisible forces are real?
+
+A. The model shows that increasing current and coils increases lifting capacity, even though the magnetic field cannot be seen
+B. The model proves that forces only exist when objects are touching each other
+C. The model shows that magnetic force and gravitational force are the same thing
+D. The model demonstrates that invisible forces only work at very short distances
+
+Correct Answer: A
+
+Feedback: Correct! The model demonstrates that changes in current and coils produce measurable changes in lifting capacity. The force acts at a distance through an invisible field, providing evidence that non-contact forces are real. Not quite. The model provides evidence that invisible forces exist because changing the inputs (current, coils) produces measurable outputs (lifting capacity) without physical contact between the electromagnet and the objects it lifts.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: A
+
+---
+
 ## Resources
 
 | Resource | Link |

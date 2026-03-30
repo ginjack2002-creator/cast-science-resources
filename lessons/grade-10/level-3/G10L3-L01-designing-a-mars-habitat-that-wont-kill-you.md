@@ -897,6 +897,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS1-4, HS-ETS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A Mars habitat relies on solar panels for energy and a closed-loop system for water recycling. If a dust storm reduces solar output by 50%, which outcome is most likely based on systems engineering principles?
+
+A. Only the lighting system is affected because other systems have independent power sources
+B. Water recycling, temperature regulation, and food production all degrade because they depend on the shared energy supply
+C. The habitat automatically switches to backup wind power from Martian winds
+D. Crew psychological well-being improves because dust storms reduce outside radiation exposure
+
+Correct Answer: B
+
+Feedback: Correct. In an interdependent system, energy generation is the keystone variable. When it degrades, all downstream systems that require power — water recycling, temperature regulation, food production lighting — are affected in a cascading failure. Consider that most habitat systems require continuous electrical power. When the primary energy source degrades, any system dependent on that power will also degrade. This is the principle of cascading failure in interdependent systems.
+
+---
+
+### Question 2
+
+Why is systems redundancy considered essential in Mars habitat engineering but less critical for buildings on Earth?
+
+A. Mars habitats use more advanced technology that breaks down more frequently
+B. Earth buildings never experience system failures
+C. On Mars, there is no possibility of rapid resupply or external rescue, so a single-point failure could be fatal
+D. Redundancy is equally important on Earth but is never implemented due to cost
+
+Correct Answer: C
+
+Feedback: Correct. The nearest help is 225 million km away with a 6-9 month transit time. Unlike Earth, where emergency services, replacement parts, and evacuation are available, Mars demands built-in redundancy because there is no external backup. Think about what makes Mars fundamentally different from Earth as an engineering environment. The key factor is isolation — the inability to receive help, parts, or rescue in a timely manner.
+
+---
+
+### Question 3
+
+In-situ resource utilization (ISRU) on Mars involves extracting oxygen from atmospheric CO2. Which scientific principle best explains why this is preferable to transporting oxygen from Earth?
+
+A. Martian oxygen is chemically purer than Earth-produced oxygen
+B. The energy cost of launching mass from Earth's gravity well makes local resource harvesting far more economical
+C. Oxygen cannot survive the radiation environment during the transit from Earth to Mars
+D. Earth does not have sufficient oxygen reserves to supply a Mars colony
+
+Correct Answer: B
+
+Feedback: Correct. Launching mass from Earth costs approximately $10,000-$50,000 per kilogram. Extracting resources locally eliminates launch mass costs, making ISRU essential for long-term sustainability despite the energy required for extraction. Consider the economics and physics of space travel. Moving mass from Earth's surface to Mars requires overcoming Earth's gravitational pull with enormous amounts of rocket fuel, making every kilogram extremely expensive.
+
+---
+
+### Question 4
+
+A habitat engineer argues that psychological well-being should be deprioritized during a crisis because it is not a physical survival system. What is the strongest scientific counterargument?
+
+A. Psychological well-being has no measurable effect on physical systems
+B. Degraded mental health directly impairs crew decision-making, maintenance quality, and conflict resolution — creating feedback loops that worsen the crisis
+C. Crew members can simply be ordered to maintain good morale during emergencies
+D. Psychological monitoring equipment uses too much energy during power shortages
+
+Correct Answer: B
+
+Feedback: Correct. Psychological well-being is a survival variable, not a luxury. Research from ISS missions and Antarctic isolation studies shows that degraded mental health leads to poor decisions, maintenance errors, and interpersonal conflict — all of which can compound a physical crisis. Consider how human performance under stress affects every other system. If crew members are making poor decisions due to psychological deterioration, every system they maintain or manage is at greater risk.
+
+---
+
+### Question 5
+
+Which engineering design philosophy is most appropriate for a Mars habitat that must survive unpredictable equipment failures?
+
+A. Design for maximum efficiency so every component operates at peak capacity with no wasted resources
+B. Design for graceful degradation so the habitat can operate at reduced capacity rather than failing completely
+C. Design for minimum mass to reduce launch costs, even if it means eliminating backup systems
+D. Design for rapid replacement so failed components can be swapped out within hours
+
+Correct Answer: B
+
+Feedback: Correct. Graceful degradation means the habitat continues functioning at reduced capacity during failures rather than experiencing catastrophic collapse. This approach keeps the crew alive while repairs are made, unlike binary success/failure designs. Think about what happens when a system fails on Mars. The best engineering approach is one where failure of a component reduces performance but does not cause total system collapse.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's computational model shows that reducing Energy Generation by 40% causes Atmosphere Control to drop to critical levels within 2 days, but Food Production does not reach critical levels for 30 days. What does this difference reveal about crisis management priorities?
+
+A. Food Production is not important during a crisis
+B. Atmosphere Control has a shorter time-to-critical because breathable air cannot be stored in large quantities, while food reserves provide a buffer
+C. The model must contain an error because all systems should fail at the same rate
+D. Energy Generation does not actually affect Atmosphere Control
+
+Correct Answer: B
+
+Feedback: Correct. Different systems have different buffer capacities. Atmosphere composition changes within hours to days without active management, while stored food can sustain crew for weeks. This time-to-critical difference directly informs triage priorities during energy crises. Consider that different systems have different reserves or buffers. A system with large stored reserves (food) can tolerate power loss longer than a system requiring continuous operation (air composition management).
+
+---
+
+### Question 2
+
+In the Mars habitat model, Energy Generation is classified as an external (input) variable while Temperature Regulation is classified as internal. What is the best justification for this distinction?
+
+A. External variables are always more important than internal variables
+B. Energy Generation represents a resource that engineers directly control, while Temperature Regulation is a system response that depends on energy availability and environmental conditions
+C. Internal variables cannot be measured, only estimated
+D. The classification is arbitrary and could be reversed without affecting the model
+
+Correct Answer: B
+
+Feedback: Correct. In computational modeling, external (input) variables represent quantities that operators set or control directly. Internal variables emerge from the interactions between inputs and system dynamics. Energy Generation is set by the power system design; Temperature Regulation responds to available energy and Mars surface conditions. Think about the difference between variables you directly set (inputs you control) and variables that result from the system's behavior (outputs that emerge from interactions).
+
+---
+
+### Question 3
+
+The model predicts that during a 45-day dust storm, crew psychological well-being degrades, which causes maintenance quality to decline, which causes additional system failures. This pattern is best described as:
+
+A. A linear cause-and-effect chain with no feedback
+B. A positive feedback loop where declining well-being and system failures reinforce each other
+C. A negative feedback loop that stabilizes the system at a lower performance level
+D. An artifact of the model that would not occur in a real habitat
+
+Correct Answer: B
+
+Feedback: Correct. This is a positive (amplifying) feedback loop: psychological stress reduces maintenance quality, which causes more system failures, which increases stress further. Without intervention, the loop spirals toward increasingly dangerous conditions. Consider the direction of the cycle: does each step make the next step better or worse? When worsening conditions cause further worsening in a circular pattern, that is a specific type of feedback loop.
+
+---
+
+### Question 4
+
+A team redesigns the habitat to use nuclear power instead of solar as the primary energy source. According to the model's systems logic, which prediction is best supported?
+
+A. All other variables remain unchanged because only the energy source is different
+B. The dust storm crisis scenario becomes far less severe because nuclear power is unaffected by atmospheric dust, eliminating the primary trigger for cascading failures
+C. Nuclear power eliminates the need for systems redundancy entirely
+D. Psychological well-being automatically improves because nuclear energy is more powerful
+
+Correct Answer: B
+
+Feedback: Correct. The dust storm crisis in the model is triggered by reduced solar energy generation. Nuclear power operates independently of atmospheric conditions, so the primary cascade trigger is eliminated. However, nuclear introduces different risks (radiation, mechanical failure) that would need to be modeled separately. Consider what specifically triggers the cascading failure in the dust storm scenario. If the energy source is not affected by dust, does the same cascade occur?
+
+---
+
+### Question 5
+
+A model limitation is that it uses nine components to represent a habitat that would actually contain hundreds of subsystems. How does this simplification most likely affect the model's predictions?
+
+A. The model cannot provide any useful predictions because it is too simplified
+B. The model accurately captures overall system behavior and cascade dynamics but may miss specific failure modes or unexpected interactions between subsystems not represented
+C. Simplification makes the model more accurate because complexity introduces errors
+D. The model overestimates system resilience because it includes too many redundant components
+
+Correct Answer: B
+
+Feedback: Correct. Model simplification is a standard scientific practice that captures essential dynamics while sacrificing detail. The nine-component model reveals fundamental interdependencies and cascade patterns but cannot predict every specific failure pathway that hundreds of subsystems might produce. Think about the purpose of modeling. All models are simplifications of reality. The question is whether the simplification preserves the important dynamics (cascade effects, interdependencies) even if it misses specific details.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

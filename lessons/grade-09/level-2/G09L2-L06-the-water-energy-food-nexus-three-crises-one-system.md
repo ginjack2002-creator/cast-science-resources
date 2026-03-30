@@ -945,6 +945,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4, HS-ETS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What does 'nexus thinking' mean in the context of resource management?
+
+A. Managing each resource (water, energy, food) independently for maximum efficiency
+B. Analyzing the interconnections between resource systems and understanding how changes in one affect the others
+C. Prioritizing one critical resource above all others during a crisis
+D. Using advanced technology to eliminate the need for natural resources
+
+Correct Answer: B
+
+Feedback: Correct. Nexus thinking recognizes that water, energy, and food systems are deeply interconnected. Managing one without considering the others can create unintended consequences that worsen the overall resource situation. Nexus thinking is fundamentally about recognizing interconnections. Managing resources in isolation (siloed thinking) ignores the trade-offs and feedback loops that connect water, energy, and food production.
+
+---
+
+### Question 2
+
+Why does producing more food typically require more water AND more energy?
+
+A. Food production has no significant relationship with water or energy use
+B. Crops need irrigation (water) and processing, transportation, and equipment all consume energy, while irrigation systems themselves require energy to operate
+C. Food production only requires water, not energy
+D. Modern farming has eliminated the need for water through synthetic alternatives
+
+Correct Answer: B
+
+Feedback: Correct. Agriculture is both water-intensive (irrigation, crop growth) and energy-intensive (pumping water, running equipment, processing, refrigeration, transportation). Expanding food production amplifies demand for both resources simultaneously. Food production sits at the intersection of water and energy systems. Growing crops requires irrigation, which consumes both water and the energy to pump it. Processing, refrigeration, and transportation add further energy demands.
+
+---
+
+### Question 3
+
+A region builds a desalination plant to address water scarcity. What is the most likely unintended consequence?
+
+A. The desalination plant will also generate surplus energy
+B. The plant will significantly increase energy consumption, potentially straining the energy supply
+C. Desalination has no effect on other resource systems
+D. The plant will reduce food production by taking farmland
+
+Correct Answer: B
+
+Feedback: Correct. Desalination is extremely energy-intensive, requiring large amounts of electricity to force water through membranes. Solving the water problem creates increased demand on the energy system, illustrating the nexus trade-off. Desalination exemplifies a nexus trade-off. While it addresses water scarcity, it is one of the most energy-intensive water treatment processes, creating significant new demand on the energy system.
+
+---
+
+### Question 4
+
+What is meant by 'carrying capacity' in the context of regional resource systems?
+
+A. The maximum weight that transportation infrastructure can support
+B. The maximum population a region can sustain given its available water, energy, and food resources
+C. The number of vehicles that can travel on a highway simultaneously
+D. The amount of cargo a single ship can transport
+
+Correct Answer: B
+
+Feedback: Correct. Carrying capacity is the maximum population that a region's resources can sustain. It is determined by the most limited resource, which means the scarcest of water, energy, or food sets the ceiling for population support. In resource management, carrying capacity refers to the sustainable population limit based on available resources. The limiting factor (the scarcest resource) determines the ceiling.
+
+---
+
+### Question 5
+
+How does a circular economy approach differ from a linear 'take-make-dispose' economy in resource management?
+
+A. A circular economy uses more resources but creates less pollution
+B. A circular economy minimizes waste by recycling outputs from one process as inputs to another, reducing total resource demand
+C. There is no practical difference between the two approaches
+D. A circular economy only applies to manufacturing, not to water or energy
+
+Correct Answer: B
+
+Feedback: Correct. A circular economy closes resource loops by treating waste as input for other processes. Wastewater becomes irrigation water, food waste becomes biogas energy, and agricultural byproducts become fertilizer. A circular economy fundamentally redesigns resource flows to minimize waste. Instead of extract-use-dispose, it recycles outputs as inputs, reducing the total demand on raw resource supplies.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that increasing energy production to meet growing demand causes water availability to decline. What system dynamic explains this?
+
+A. Energy production and water availability are unrelated variables in the model
+B. Power generation (especially thermal and nuclear) requires enormous quantities of cooling water, creating direct competition between energy and water systems
+C. Energy production evaporates all nearby water sources
+D. The model is showing random fluctuations, not a causal relationship
+
+Correct Answer: B
+
+Feedback: Correct. Thermal power plants are among the largest industrial water consumers, using water for cooling. Increasing energy output directly increases water withdrawal, creating resource competition between the energy and water systems. Power generation is extremely water-intensive. Thermal and nuclear plants require massive cooling water volumes. This creates a direct, measurable trade-off where expanding energy production reduces water available for agriculture and municipalities.
+
+---
+
+### Question 2
+
+A simulation of 30% population growth shows that the water system fails before energy or food. What does this reveal about system constraints?
+
+A. Water is always the first resource to fail in any scenario
+B. The most constrained resource (the bottleneck) determines the system's carrying capacity, regardless of how abundant other resources are
+C. Population growth only affects water systems
+D. Energy and food systems are immune to population pressure
+
+Correct Answer: B
+
+Feedback: Correct. This illustrates the concept of a limiting factor or bottleneck. The system's carrying capacity is determined by its weakest link. Even if energy and food are abundant, water scarcity limits the population that can be sustained. The bottleneck principle means the scarcest resource sets the system limit. In this scenario, water is the constraint, but in different regions or conditions, energy or food could be the limiting factor.
+
+---
+
+### Question 3
+
+The model demonstrates that a drought reduces water availability by 40%, which then reduces both energy production AND agricultural output. What systems concept does this illustrate?
+
+A. Isolated impact, where drought only affects water supply
+B. Cascading failure through coupled systems, where a shock to one resource propagates through interconnected systems
+C. Resilience, where the system absorbs the shock without any downstream effects
+D. The drought scenario is unrealistic and does not reflect real resource dynamics
+
+Correct Answer: B
+
+Feedback: Correct. This demonstrates cascading failure in coupled systems. Because energy production needs cooling water and agriculture needs irrigation water, a water shock propagates through all connected systems, amplifying the original disruption. In coupled systems, a disruption to one component propagates to all connected components. Drought reduces water, which reduces energy (cooling) and food (irrigation), creating a multi-system crisis from a single initial shock.
+
+---
+
+### Question 4
+
+A student's model shows that increasing wastewater recycling to 90% partially decouples the water-energy-food nexus. What does 'decoupling' mean in this context?
+
+A. The three resources become completely independent of each other
+B. Recycling reduces the competition between systems by creating an alternative water supply that does not require drawing from the same finite source
+C. Decoupling means the model stops working correctly
+D. Wastewater recycling has no effect on resource interdependence
+
+Correct Answer: B
+
+Feedback: Correct. Decoupling reduces the strength of competition between systems. Recycled water provides an alternative supply that reduces the demand on shared freshwater sources, allowing energy and agriculture to draw from different pools. Decoupling does not mean complete independence; it means reduced interdependence. By creating an alternative water supply through recycling, the competition between systems for the same finite source is reduced.
+
+---
+
+### Question 5
+
+Based on the model, why is siloed resource planning (managing water, energy, and food independently) likely to fail as populations grow?
+
+A. Siloed planning works well at any population scale
+B. Each siloed solution optimizes one resource but creates unintended trade-offs that worsen the others, and population growth amplifies all competition simultaneously
+C. Siloed planning fails only because of poor communication between agencies
+D. Population growth does not affect resource planning approaches
+
+Correct Answer: B
+
+Feedback: Correct. Siloed optimization creates a whack-a-mole dynamic: solving water scarcity with desalination strains energy, expanding energy strains water, expanding agriculture strains both. Population growth multiplies all demands simultaneously, making integrated planning essential. The model demonstrates that optimizing one resource in isolation inevitably creates pressure on the others because of their interconnections. As population grows, these trade-offs intensify, making integrated nexus planning the only viable approach.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -900,6 +900,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which of the following best describes what causes earthquakes?
+
+A. Underground explosions caused by volcanic gases
+B. The sudden release of accumulated tectonic stress when rocks along a fault boundary slip past each other
+C. The gravitational pull of the Moon on Earth's crust
+D. Changes in temperature deep within the Earth's core
+
+Correct Answer: B
+
+Feedback: Correct. Earthquakes occur when tectonic plates, moving at 1-15 cm/year, build up stress along their boundaries. When accumulated stress exceeds the frictional strength of the rocks, the rocks suddenly slip, releasing stored energy as seismic waves. Earthquakes result from the sudden release of tectonic stress. Earth's plates move slowly but are locked together by friction at their boundaries. Stress accumulates over decades to centuries until it exceeds the rock's frictional strength, causing sudden slip and releasing stored energy as seismic waves.
+
+---
+
+### Question 2
+
+The 2010 Haiti earthquake (magnitude 7.0) killed approximately 230,000 people, while the 2010 Chile earthquake (magnitude 8.8, releasing nearly 500 times more energy) killed 525 people. Which factor most likely explains this difference?
+
+A. Chile's earthquake occurred in an unpopulated area
+B. Chile has strict seismic building codes and better infrastructure, while Haiti had virtually no building codes and widespread unreinforced construction
+C. Haiti's earthquake lasted much longer than Chile's
+D. Chile experienced an aftershock that reduced the main earthquake's impact
+
+Correct Answer: B
+
+Feedback: Correct. Chile's strict building codes, developed through extensive experience with earthquakes, meant most structures were designed to withstand severe shaking. Haiti had virtually no seismic building standards, and most structures were unreinforced masonry that collapsed at relatively moderate shaking levels. Building quality is the primary determinant of earthquake casualties. Chile's extensive building codes required seismic-resistant design. Haiti's structures were mostly unreinforced concrete and masonry with no seismic engineering. The saying 'earthquakes don't kill people, buildings do' directly applies here.
+
+---
+
+### Question 3
+
+A student claims: 'If you're far enough from an earthquake, you'll be safe.' What geological factor could make this claim inaccurate?
+
+A. Earthquakes can change direction mid-propagation to target specific cities
+B. Soft, loose soil can amplify seismic waves by factors of 2-10x, meaning a distant city on clay may experience worse shaking than a closer city on bedrock
+C. Earthquake waves speed up over distance, becoming more destructive
+D. All locations at the same distance from an earthquake experience identical shaking
+
+Correct Answer: B
+
+Feedback: Correct. Ground amplification is a critical factor that can override distance effects. When seismic waves travel from dense bedrock into soft, loose sediments, conservation of energy forces the waves to slow down and increase in amplitude. Mexico City, built on an ancient lakebed, was devastated by a 1985 earthquake whose epicenter was 350 km away. Distance alone does not determine earthquake damage. Ground amplification occurs when seismic waves pass from solid bedrock into soft sediments, causing the waves to increase in amplitude (like ocean waves growing taller near shore). A city on clay can experience 2-10 times more shaking than a city on bedrock at the same distance from the earthquake.
+
+---
+
+### Question 4
+
+Scientists can identify where earthquakes are likely to occur and roughly how strong they might be. Why can they not predict exactly when an earthquake will happen?
+
+A. Scientists have the technology but governments suppress the information
+B. The precise conditions under which accumulated stress exceeds rock friction and triggers rupture involve too many microscale variables to predict deterministically with current technology
+C. Earthquakes occur completely randomly with no underlying geological cause
+D. Earthquake prediction is easy but scientists choose not to share their predictions
+
+Correct Answer: B
+
+Feedback: Correct. While scientists can map fault lines, measure accumulated stress, and estimate potential magnitudes, the exact moment of rupture depends on microscale conditions at the fault surface (rock composition, fluid pressure, temperature, locked asperities) that are impossible to measure comprehensively at depth. Reliable short-term prediction remains beyond current capability. Earthquake prediction is limited by the complexity of fault mechanics. Scientists can identify where earthquakes will occur (plate boundaries, known faults) and estimate how strong they could be (based on fault length and accumulated stress), but the exact timing of rupture depends on unmeasurable conditions deep underground. The best approach is preparation, not prediction.
+
+---
+
+### Question 5
+
+If you were designing a building in a known earthquake zone, which feature would be most important for structural survival?
+
+A. Making the building as rigid as possible so it doesn't move at all
+B. Using a design that allows the building to flex and absorb seismic energy without collapsing
+C. Building the tallest possible structure to rise above the seismic waves
+D. Using the heaviest possible materials to anchor the building to the ground
+
+Correct Answer: B
+
+Feedback: Correct. Modern seismic engineering designs buildings to flex and absorb energy rather than resist it rigidly. Techniques like base isolation (rubber bearings that allow the building to 'float'), moment-resisting frames (flexible steel), and shear walls allow structures to deform without catastrophic failure. Counterintuitively, rigid buildings are often more vulnerable to earthquakes because they cannot absorb seismic energy. Modern earthquake-resistant design allows controlled flexibility: base isolation lets the building move independently of the ground, moment-resisting frames flex without breaking, and shear walls absorb lateral forces. The goal is to dissipate energy, not resist it.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a student's earthquake model, the same magnitude earthquake produces dramatically different outcomes in two simulated cities: City A (on bedrock, modern codes) shows minimal damage, while City B (on clay, older buildings) shows widespread destruction. Which model principle best explains this divergence?
+
+A. Earthquake magnitude is the only factor that determines destruction
+B. Local conditions (ground amplification and building vulnerability) act as multipliers that can transform the same seismic input into vastly different outcomes, demonstrating that magnitude alone is a poor predictor of damage
+C. City B must have been closer to the epicenter than City A
+D. The model is flawed because all locations should experience the same shaking from the same earthquake
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that earthquake magnitude describes energy released at the source, but destruction is determined by how local conditions modify that energy. Ground amplification multiplies seismic wave intensity (2-10x on soft soil), and building vulnerability determines whether structures survive or collapse under the modified shaking. These local factors can be more important than the earthquake itself. The model shows that identical seismic input produces different outcomes because local conditions act as multipliers. Soft soil amplifies shaking by 2-10x compared to bedrock, and unreinforced buildings fail at shaking levels that engineered buildings easily survive. Magnitude describes the source; local conditions determine the destination impact.
+
+---
+
+### Question 2
+
+A student's model includes a causal chain: Tectonic Stress → Fault Slip → Seismic Wave Energy → Ground Amplification → Building Vulnerability. At which point in this chain can humans most effectively intervene to reduce earthquake damage?
+
+A. Reducing tectonic stress through drilling into fault zones
+B. At the Ground Amplification and Building Vulnerability stages, through soil remediation, seismic building codes, and retrofitting existing structures
+C. Preventing fault slip by injecting concrete into fault lines
+D. Reducing seismic wave energy by building walls around cities
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that tectonic stress, fault slip, and seismic wave generation are geological processes beyond human control. However, Ground Amplification can be partially addressed through soil stabilization and foundation engineering, and Building Vulnerability can be directly addressed through seismic building codes, retrofitting, and appropriate land-use planning. The model reveals that the first three steps (tectonic stress, fault slip, seismic waves) are uncontrollable geological processes. Human intervention is only effective at the last two stages: engineering foundations that reduce ground amplification effects, and designing buildings that withstand amplified shaking through modern seismic codes and retrofitting programs.
+
+---
+
+### Question 3
+
+A student extends their model by adding Infrastructure Interdependency as a component. They find that earthquake damage cascades beyond structural collapse: gas lines rupture causing fires, broken water mains prevent firefighting, and downed power lines block roads. What systems thinking concept does this demonstrate?
+
+A. Infrastructure systems are independent and do not affect each other
+B. Cascading failures occur when the failure of one interconnected system triggers failures in other dependent systems, amplifying total damage far beyond direct seismic effects
+C. Infrastructure damage only occurs during earthquakes above magnitude 8.0
+D. Modern infrastructure is earthquake-proof and does not fail during seismic events
+
+Correct Answer: B
+
+Feedback: Correct. Infrastructure interdependency creates cascading failure pathways: seismic damage to gas infrastructure causes fires, damage to water infrastructure prevents firefighting, damage to electrical infrastructure blocks communication and access, and damage to transportation infrastructure prevents emergency response. Total damage from cascading failures often exceeds direct seismic damage. Cascading failures demonstrate how interconnected systems multiply damage beyond the initial seismic impact. When one system fails (gas lines rupture), it triggers failures in other systems (fires start, water mains break preventing firefighting, power failures prevent communication). The model shows that total earthquake impact is often determined more by infrastructure interdependencies than by the direct shaking damage alone.
+
+---
+
+### Question 4
+
+A city council is reviewing seismic risk. The model shows that neighborhoods on soft soil with older construction face 5-10x higher risk than neighborhoods on bedrock with modern buildings. Historically, low-income communities disproportionately occupy the high-risk zones. What does this model evidence reveal about the intersection of geology and social equity?
+
+A. Earthquake risk is purely a geological phenomenon with no social dimension
+B. Earthquake vulnerability is shaped by socioeconomic factors because lower-income communities historically settle on cheaper land (often soft soil) and occupy older, unreinforced buildings, meaning seismic risk maps and poverty maps frequently overlap
+C. All neighborhoods face identical earthquake risk regardless of geology or construction
+D. Wealthy neighborhoods should be prioritized for seismic retrofitting because their buildings are more valuable
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that earthquake risk is not just geological but deeply socioeconomic. The cheapest land in earthquake-prone cities is often on soft soil (former lakebeds, landfill, river deltas), and lower-income communities disproportionately live in older buildings without seismic engineering. Equitable earthquake preparedness requires prioritizing the most vulnerable communities, not just the most valuable properties. The model shows that earthquake risk has a social justice dimension. The geological factors that increase vulnerability (soft soil, ground amplification) correlate with lower land values, which correlate with lower-income communities. These same communities also tend to occupy older buildings without seismic engineering. Earthquake risk is distributed inequitably along socioeconomic lines.
+
+---
+
+### Question 5
+
+A student notes that the San Andreas Fault has not produced a major earthquake since 1906 and has accumulated approximately 5 meters of slip deficit. Based on the model, why does a long quiet period represent INCREASED rather than decreased risk?
+
+A. Faults become safer over time as they settle into stable positions
+B. Tectonic stress accumulates continuously during quiet periods; the longer the interval since the last major earthquake, the more stored energy is available for release, meaning the next earthquake is likely to be larger
+C. The absence of earthquakes means the fault has become inactive and poses no future risk
+D. Long quiet periods indicate that the tectonic plates have stopped moving
+
+Correct Answer: B
+
+Feedback: Correct. The model clearly shows that tectonic stress accumulates continuously because plate motion never stops. A long quiet period means more stress has built up without release. The San Andreas Fault's 5-meter slip deficit represents an enormous amount of stored elastic energy that will eventually be released, potentially in a single catastrophic event. Silence is not safety; it is energy storage. Tectonic plates move continuously, and stress accumulates continuously. A fault that has been quiet for 120 years has 120 years of stored energy waiting for release. The model demonstrates that the longer the quiet period, the more stored energy, and the more powerful the eventual earthquake. The San Andreas Fault's long silence means it has accumulated enormous potential for a major seismic event.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

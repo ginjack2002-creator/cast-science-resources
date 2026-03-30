@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do plants need to grow?
+
+A. Toys
+B. Water and sunlight
+C. Candy
+
+Correct Answer: B
+
+Feedback: Yes! Plants need water and sunlight to grow big and healthy. Plants need water and sunlight to grow. Water and sunshine help them make food and get bigger.
+
+---
+
+### Question 2
+
+What happens if a plant does not get any water?
+
+A. It grows bigger
+B. Nothing happens
+C. It gets droopy and sad
+
+Correct Answer: C
+
+Feedback: That is right! A plant without water gets droopy, wilts, and can turn brown. Without water, a plant gets droopy and sad. Plants need water to stay healthy and stand up tall.
+
+---
+
+### Question 3
+
+Where do plants get their water?
+
+A. From their leaves
+B. From the sky and ground
+C. From other plants
+
+Correct Answer: B
+
+Feedback: Yes! Plants get water from rain and from the ground through their roots. Plants get water from rain falling from the sky and from the soil through their roots.
+
+---
+
+### Question 4
+
+Do plants need sunlight?
+
+A. Yes, they use it to make food
+B. No, they only need water
+C. No, they only need soil
+
+Correct Answer: A
+
+Feedback: Yes! Plants use sunlight to make their own food so they can grow. Plants do need sunlight. They use the sun's light to make their own food inside their leaves.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When a plant gets MORE water, what happens to Plant Growth?
+
+A. It grows less
+B. It grows more
+C. It does not change
+
+Correct Answer: B
+
+Feedback: Yes! More water helps the plant grow bigger and taller. Water carries nutrients through the plant. When a plant gets more water, it grows more. Water carries nutrients and helps the plant make food.
+
+---
+
+### Question 2
+
+What are nutrients?
+
+A. Bugs that live in the soil
+B. Good things in water and soil that help plants grow
+C. The color of the leaves
+
+Correct Answer: B
+
+Feedback: That is right! Nutrients are good things in water and soil. They are like food for the plant. Nutrients are good things found in water and soil that help plants grow. They are like food for the plant.
+
+---
+
+### Question 3
+
+How does water get from the soil to the top of the plant?
+
+A. It jumps up
+B. The roots suck it up like a straw
+C. Someone pours it on the leaves
+
+Correct Answer: B
+
+Feedback: Yes! The roots suck up water from the soil and send it all through the plant, like a straw. The plant's roots suck up water from the soil, like a straw. The water travels up through the stem to the leaves.
+
+---
+
+### Question 4
+
+In our model, Amount of Water is the outside part. Why?
+
+A. Because the plant decides how much water it gets
+B. Because WE decide how much water to give the plant
+C. Because water is always the same
+
+Correct Answer: B
+
+Feedback: Yes! WE decide how much water to give the plant, so Amount of Water is the outside part of our model. Amount of Water is outside because WE choose how much to water the plant. We control that part.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: A
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

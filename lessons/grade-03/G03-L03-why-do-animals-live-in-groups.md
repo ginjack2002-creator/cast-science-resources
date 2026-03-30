@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why do you think zebras live together in large herds instead of living alone?
+
+A. Zebras like to play games together
+B. Living in a group helps protect them from predators
+C. Zebras cannot find food by themselves
+D. Zebras are afraid of the dark
+
+Correct Answer: B
+
+Feedback: Great thinking! One of the biggest reasons animals live in groups is that it helps them stay safe from predators. More eyes watching means danger is spotted faster. While animals may enjoy being together, the main reason many animals live in groups is safety. A group has more eyes watching for predators, so danger is spotted faster.
+
+---
+
+### Question 2
+
+What is a predator?
+
+A. An animal that eats only plants
+B. An animal that sleeps during the day
+C. An animal that hunts and eats other animals
+D. An animal that lives underground
+
+Correct Answer: C
+
+Feedback: That is right! A predator is an animal that hunts and eats other animals. Lions, hawks, and wolves are examples of predators. A predator is an animal that hunts other animals for food. Think of a lion hunting a zebra or a hawk catching a mouse.
+
+---
+
+### Question 3
+
+Would you feel safer walking through a dark forest alone or with ten friends? Why?
+
+A. Alone, because friends slow you down
+B. With friends, because more people can watch for danger and help each other
+C. It does not matter how many people are with you
+D. Alone, because a group makes too much noise
+
+Correct Answer: B
+
+Feedback: Exactly! More friends means more eyes watching for danger and more people to help if something happens. Animals feel the same way! Most people feel safer in a group because more people can watch for danger and help each other. This is the same reason many animals live in groups.
+
+---
+
+### Question 4
+
+Which of these animals do you think lives in a group?
+
+A. A wolf in a pack
+B. A polar bear that hunts alone
+C. A tiger that lives by itself
+D. An octopus at the bottom of the ocean
+
+Correct Answer: A
+
+Feedback: Yes! Wolves live in groups called packs. They hunt together, protect each other, and raise their pups as a team. Wolves live in groups called packs. Unlike polar bears, tigers, and octopuses, wolves work as a team to hunt, protect each other, and raise their young.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, when Group Size increases, what happens to Predator Detection?
+
+A. Predator Detection decreases because the group is too noisy
+B. Predator Detection stays the same no matter the group size
+C. Predator Detection increases because more eyes are watching for danger
+D. Predator Detection disappears in large groups
+
+Correct Answer: C
+
+Feedback: Correct! Group Size and Predator Detection have a positive relationship. More animals in the group means more eyes watching, so predators are spotted faster. In the model, more animals means more eyes watching for predators. When Group Size goes up, Predator Detection goes up too. This is a positive relationship.
+
+---
+
+### Question 2
+
+A herd of 30 antelope spots a lion faster than one antelope standing alone. What is the BEST explanation?
+
+A. The herd is louder and scares the lion away
+B. With 30 animals watching in different directions, the lion is spotted sooner
+C. Antelope can only see when they are in a group
+D. The lion is afraid of large numbers
+
+Correct Answer: B
+
+Feedback: You got it! With 30 animals watching in different directions, there is a much better chance that at least one will spot the lion early and warn the others. The key idea is that 30 pairs of eyes watching in different directions will spot danger faster than just one. When one animal sees the lion, it warns everyone else.
+
+---
+
+### Question 3
+
+What does 'safety in numbers' mean for animal groups?
+
+A. Animals in groups can count higher than animals alone
+B. Being in a bigger group makes each individual animal safer because predators are detected faster and each animal is less likely to be caught
+C. Groups of animals are never attacked by predators
+D. Numbers are safe but letters are dangerous
+
+Correct Answer: B
+
+Feedback: Exactly! Safety in numbers means that a bigger group detects predators faster AND each individual has a smaller chance of being the one caught. Both factors help animals survive. Safety in numbers means being in a bigger group makes each animal safer. More watchers spot danger faster, and each individual animal has a smaller chance of being the one a predator catches.
+
+---
+
+### Question 4
+
+Which component in the animal group model is EXTERNAL?
+
+A. Predator Detection
+B. Survival Rate
+C. Group Size
+D. Warning Signals
+
+Correct Answer: C
+
+Feedback: Right! Group Size is external because it is the starting condition we set. Predator Detection and Survival Rate are internal components that change in response to Group Size. The external component is the one we control at the start. We set the Group Size, and then Predator Detection and Survival Rate change as a result inside the system.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: A
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens to water in a puddle on a hot, sunny day?
+
+A. The water seeps into the center of the Earth and disappears
+B. The water absorbs heat and evaporates into water vapor in the air
+C. The Sun's rays destroy the water molecules permanently
+D. The water is absorbed by the wind and carried away as liquid
+
+Correct Answer: B
+
+Feedback: Correct! Solar energy heats the water, giving the molecules enough energy to escape from the liquid surface and enter the air as invisible water vapor. This process is called evaporation. Not quite. When the Sun heats a puddle, the water molecules gain enough energy to change from liquid to gas (water vapor) and rise into the atmosphere. This is evaporation.
+
+---
+
+### Question 2
+
+Where does the water that comes out of your tap originally come from?
+
+A. It is manufactured in a water factory from hydrogen and oxygen
+B. It cycles through natural systems like rivers, lakes, groundwater, and the atmosphere
+C. It comes directly from the ocean with salt removed at the tap
+D. New water is constantly created by rain clouds
+
+Correct Answer: B
+
+Feedback: Correct! Tap water comes from natural sources like rivers, lakes, and underground aquifers that are continuously replenished by the water cycle. Not quite. Your tap water originates from natural water sources (rivers, lakes, groundwater) that are part of the continuous water cycle driven by solar energy and gravity.
+
+---
+
+### Question 3
+
+Could the water you drink today have once been consumed by a dinosaur?
+
+A. No, because water molecules break down and new ones are created every few years
+B. No, because dinosaurs lived too long ago for the water to still exist
+C. Yes, because Earth has been recycling the same water for billions of years
+D. Yes, but only if you live near where dinosaurs once lived
+
+Correct Answer: C
+
+Feedback: Correct! Earth has had roughly the same water for over 4 billion years. Water is recycled endlessly through evaporation, condensation, and precipitation, so the same molecules have been used by countless organisms. Not quite. Earth's water has been cycling through the same systems for over 4 billion years. No new water is being created. The molecules in your glass have been through countless cycles, including through ancient organisms.
+
+---
+
+### Question 4
+
+What provides the energy that drives the water cycle?
+
+A. Wind turbines and hydroelectric dams
+B. Heat from Earth's core
+C. Energy from the Sun
+D. The Moon's gravitational pull
+
+Correct Answer: C
+
+Feedback: Correct! Solar energy is the primary driver of the water cycle. It provides the heat needed to evaporate water from oceans, lakes, and land surfaces. Not quite. The Sun provides the energy that drives the water cycle by heating surface water and causing evaporation, which starts the cycle of evaporation, condensation, and precipitation.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the water cycle model, solar energy and ground temperature are both set to maximum (simulating a heat wave). What does the model predict?
+
+A. Evaporation rate decreases because the air is too hot to hold water
+B. Evaporation rate increases dramatically, leading to increased precipitation
+C. The water cycle stops because all the water evaporates permanently
+D. Precipitation rate drops because heat destroys cloud formation
+
+Correct Answer: B
+
+Feedback: Correct! More solar energy and higher temperatures provide more energy for evaporation, putting more water vapor into the atmosphere, which eventually condenses and falls as increased precipitation. The cycle accelerates. Not quite. Higher temperatures increase evaporation rate, which puts more water vapor into the atmosphere. This leads to more condensation and increased precipitation. The entire water cycle speeds up.
+
+---
+
+### Question 2
+
+A student says, 'Clouds are made of water vapor.' How should this misconception be corrected?
+
+A. Clouds are made of tiny liquid water droplets or ice crystals, not invisible water vapor
+B. Clouds are made of dust particles that reflect sunlight to look white
+C. The student is correct. Clouds are entirely composed of water vapor gas.
+D. Clouds are made of frozen oxygen that forms at high altitudes
+
+Correct Answer: A
+
+Feedback: Correct! Water vapor is an invisible gas. Clouds form when water vapor condenses into tiny visible liquid droplets or ice crystals. If you can see it, the water has already changed from vapor to liquid or solid. Not quite. Clouds are made of tiny liquid water droplets or ice crystals, not water vapor. Water vapor is invisible. When we see a cloud, the vapor has already condensed into visible droplets.
+
+---
+
+### Question 3
+
+Which two forces work together to drive the water cycle?
+
+A. Magnetism and friction
+B. Solar energy and gravity
+C. Wind and volcanic activity
+D. The Moon's gravity and Earth's rotation
+
+Correct Answer: B
+
+Feedback: Correct! Solar energy drives evaporation (lifting water into the atmosphere), and gravity drives precipitation (pulling water back to Earth) and runoff (moving water downhill to the ocean). Not quite. The water cycle is driven by solar energy (which provides heat for evaporation) and gravity (which pulls water back as precipitation and drives surface runoff toward the ocean).
+
+---
+
+### Question 4
+
+How does deforestation affect the water cycle in a region?
+
+A. It has no effect because trees do not participate in the water cycle
+B. It increases local rainfall because more sunlight reaches the ground
+C. It reduces local rainfall because trees release water vapor through transpiration, and removing them reduces atmospheric moisture
+D. It stops the water cycle entirely in the deforested area
+
+Correct Answer: C
+
+Feedback: Correct! Trees release significant amounts of water vapor through transpiration. Removing forests reduces this moisture source, which can decrease local rainfall and increase surface runoff and erosion. Not quite. Trees contribute water vapor to the atmosphere through transpiration. A single large tree can release over 100 gallons of water per day. Removing forests reduces this moisture, potentially decreasing local rainfall.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

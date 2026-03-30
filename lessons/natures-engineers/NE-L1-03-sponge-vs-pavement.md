@@ -163,6 +163,156 @@ Hydrologists study how water moves through the environment — where it flows, w
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-4, MS-ESS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens to rain when it falls on a grassy field?
+
+A. It bounces back up into the sky
+B. It soaks into the ground
+C. It turns into ice immediately
+D. It disappears completely
+
+Correct Answer: B
+
+Feedback: Yes! When rain falls on a grassy field, much of it soaks into the soil. The ground acts like a sponge and absorbs the water. When rain hits a grassy field, the soil absorbs it like a sponge. The water soaks down into the ground where plant roots can use it.
+
+---
+
+### Question 2
+
+What happens to rain when it falls on a parking lot?
+
+A. It soaks into the pavement
+B. It evaporates instantly
+C. It flows across the surface as runoff
+D. It stays in one spot and never moves
+
+Correct Answer: C
+
+Feedback: Correct! Pavement does not absorb water, so rain flows across the surface as runoff, often collecting in low spots or drains. Pavement cannot absorb water the way soil does. Instead, rain flows across the hard surface as runoff, moving toward drains, gutters, and low spots.
+
+---
+
+### Question 3
+
+Why do some neighborhoods have more flooding problems than others?
+
+A. Because it rains more in some neighborhoods
+B. Because some neighborhoods have more pavement and less soil to absorb water
+C. Because floods only happen near the ocean
+D. Because some people leave their sprinklers on
+
+Correct Answer: B
+
+Feedback: Yes! Neighborhoods with more pavement and less natural ground have more flooding because the water has no place to soak in. Flooding is often worse in areas with more pavement. When natural ground is replaced with roads, parking lots, and buildings, rainwater cannot soak in and instead runs off the surface, causing floods.
+
+---
+
+### Question 4
+
+What does 'permeable' mean?
+
+A. Something that is very hard and strong
+B. Something that lets water pass through it
+C. Something that is colorful
+D. Something that floats on water
+
+Correct Answer: B
+
+Feedback: Correct! Permeable means a surface lets water pass through it, like soil or gravel. Permeable means a surface allows water to pass through it. Soil and gravel are permeable because water can soak through them. Pavement is impermeable because it blocks water.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is the difference between a permeable and an impermeable surface?
+
+A. Permeable surfaces are always wet and impermeable surfaces are always dry
+B. Permeable surfaces let water pass through, impermeable surfaces block water
+C. Permeable surfaces are natural and impermeable surfaces are always human-made
+D. There is no difference between them
+
+Correct Answer: B
+
+Feedback: That is right! Permeable surfaces like soil let water soak through, while impermeable surfaces like pavement block water from passing through. Permeable surfaces (like soil and gravel) allow water to pass through and soak in. Impermeable surfaces (like pavement and rock) block water from passing through, causing it to flow across the surface as runoff.
+
+---
+
+### Question 2
+
+In the model, what happened to runoff when the ground type was changed from soil to pavement?
+
+A. Runoff decreased because pavement absorbs more water
+B. Runoff stayed the same regardless of ground type
+C. Runoff increased significantly because pavement cannot absorb water
+D. Runoff and absorption both increased equally
+
+Correct Answer: C
+
+Feedback: Correct! The model showed that runoff increased dramatically on pavement because the impermeable surface cannot absorb water, forcing it all to flow across the surface. The model showed that switching from soil to pavement caused a large increase in runoff. Pavement is impermeable, meaning it blocks water from soaking in, so nearly all rain becomes runoff that flows across the surface.
+
+---
+
+### Question 3
+
+According to the model, what is the main reason cities experience more flooding than natural areas?
+
+A. Cities get more rainfall than natural areas
+B. Cities have replaced natural soil with impermeable pavement, increasing runoff
+C. Cities are built in areas that naturally flood
+D. City buildings attract more rain clouds
+
+Correct Answer: B
+
+Feedback: Yes! The model showed that replacing permeable soil with impermeable pavement is the main cause of urban flooding. Water that would normally soak into the ground instead becomes runoff. The model demonstrated that cities flood more because they have replaced natural soil (which absorbs water) with pavement (which blocks absorption). This turns rain into surface runoff, overwhelming drainage systems and causing floods.
+
+---
+
+### Question 4
+
+What does the model predict will happen if rainfall doubles on a soil surface?
+
+A. All the extra water will be absorbed by the soil
+B. Both absorption and runoff increase, but the soil still absorbs more than pavement would
+C. The soil will turn into pavement
+D. Runoff will decrease because more rain makes soil absorb better
+
+Correct Answer: B
+
+Feedback: Correct! When rainfall doubles on soil, both absorption and runoff increase. The soil can only absorb so much, but it still handles heavy rain far better than pavement. When rainfall increases on soil, both absorption and runoff go up. Soil has a limit to how much water it can absorb, so some extra rain becomes runoff. But soil still handles heavy rain much better than pavement, which produces nearly 100% runoff.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

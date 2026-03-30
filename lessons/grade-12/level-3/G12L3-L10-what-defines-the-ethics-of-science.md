@@ -974,6 +974,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Dual-use research of concern (DURC) produces knowledge with both beneficial applications and potential for misuse. Which of the following is the most accurate example of a dual-use dilemma?
+
+A. Research on improving crop yields, which has no potential for misuse
+B. Gain-of-function virology research that enhances pathogen transmissibility, which can inform pandemic preparedness and vaccine development but also provides a blueprint for creating biological weapons
+C. Teaching basic chemistry in high school, which enables students to make dangerous chemicals
+D. Publishing weather forecasts, which could be used by enemy nations to plan military operations
+
+Correct Answer: B
+
+Feedback: Correct. Gain-of-function research is the paradigmatic dual-use dilemma. Making a pathogen more transmissible reveals how natural variants might evolve (essential for pandemic preparedness), but the same knowledge could be used to engineer a biological weapon. The dual-use potential is not speculative; the knowledge and techniques are directly transferable between beneficial and harmful applications. A true dual-use dilemma involves research where the same knowledge is directly applicable to both beneficial and harmful purposes. Gain-of-function virology is the clearest example: understanding enhanced pathogen transmissibility helps prepare for pandemics but also provides the technical knowledge to create biological weapons.
+
+---
+
+### Question 2
+
+An Institutional Review Board (IRB) reviews research proposals involving human subjects. What is the primary purpose of IRB review?
+
+A. To ensure the research will produce profitable results for the institution
+B. To verify that the research meets ethical standards for informed consent, risk minimization, equitable participant selection, and privacy protection before experiments begin
+C. To determine whether the research will receive government funding
+D. To evaluate whether the research hypothesis is scientifically correct
+
+Correct Answer: B
+
+Feedback: Correct. IRBs exist to protect human research participants by ensuring that ethical standards are met before research begins. They evaluate whether informed consent is genuine, whether risks are minimized and justified by potential benefits, whether participant selection is equitable (not exploiting vulnerable populations), and whether privacy is protected. IRBs are ethics committees, not scientific or financial review boards. Their role is to protect human research participants by verifying informed consent, evaluating risk-benefit ratios, ensuring equitable selection (not exploiting vulnerable populations), and protecting privacy.
+
+---
+
+### Question 3
+
+The precautionary principle states that when a scientific activity raises potential threats, precautionary measures should be taken even before causal relationships are fully established. How does this differ from the standard of 'prove it is harmful before regulating it'?
+
+A. There is no difference; both approaches are identical
+B. The precautionary principle shifts the burden of proof: instead of requiring proof of harm before acting, it requires proof of safety before proceeding with potentially dangerous research or technology
+C. The precautionary principle prohibits all scientific research as potentially dangerous
+D. The standard approach is more cautious than the precautionary principle
+
+Correct Answer: B
+
+Feedback: Correct. The precautionary principle reverses the burden of proof. Instead of 'it is allowed unless proven harmful,' it adopts 'it should not proceed until proven safe.' This is particularly relevant for irreversible technologies (gene drives, geoengineering) where waiting for proof of harm may mean the harm is already done and cannot be undone. The precautionary principle shifts the burden of proof from 'prove harm before regulating' to 'prove safety before proceeding.' This distinction matters most for irreversible technologies where waiting for evidence of harm may mean the damage is already done.
+
+---
+
+### Question 4
+
+Scientific integrity includes honest data collection, accurate reporting, and willingness to publish negative results. Why is publishing negative results (experiments that did not support the hypothesis) important for scientific integrity?
+
+A. Negative results are not important because only successful experiments advance knowledge
+B. Publishing negative results prevents other researchers from wasting resources repeating failed experiments, reduces publication bias that distorts the scientific record, and demonstrates that the researcher is committed to truth rather than personal advancement
+C. Negative results are only published in low-quality journals
+D. Scientists are legally required to publish all results, including negative ones
+
+Correct Answer: B
+
+Feedback: Correct. When only positive results are published, the scientific literature becomes a biased sample that overstates the effectiveness of treatments, the strength of relationships, and the reproducibility of findings. Publishing negative results corrects this bias, saves resources, and maintains the self-correcting nature of science. The replication crisis in psychology and medicine is partly attributable to publication bias against negative results. Not publishing negative results creates publication bias: the literature disproportionately represents 'successful' experiments, overstating effect sizes and reliability. This contributed to the replication crisis. Publishing negative results saves resources (others do not repeat failed approaches) and maintains science's self-correcting capacity.
+
+---
+
+### Question 5
+
+Who should decide which scientific research gets funded and which gets restricted? This question is central to science ethics. Which consideration most complicates simple answers?
+
+A. Scientists should decide everything because they understand the research best
+B. Politicians should decide everything because they represent the public
+C. The question is complicated because scientists may have conflicts of interest (wanting to pursue their own research), politicians may lack technical understanding, and the public may not have access to sufficient information, suggesting that governance requires balanced input from multiple stakeholders
+D. No one should make these decisions; all research should be unregulated
+
+Correct Answer: C
+
+Feedback: Correct. No single group can optimally govern science alone. Scientists have expertise but may have conflicts of interest. Politicians represent public interests but may lack technical understanding. The public deserves a voice but may not have specialized knowledge. Effective science governance requires balanced input from all stakeholders, with structures that mitigate each group's limitations. Each potential decision-maker has both strengths and limitations. Scientists have expertise but conflicts of interest. Politicians have democratic mandate but may lack technical knowledge. The public deserves input but may lack information. Effective governance requires balanced structures drawing on all perspectives.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that maximizing Innovation Rate does not maximize Societal Impact Score. Instead, the highest Societal Impact Score occurs at a moderate Innovation Rate with robust oversight. What does this finding reveal about the relationship between scientific freedom and societal benefit?
+
+A. All scientific research should be stopped to maximize societal benefit
+B. Scientific freedom without ethical governance produces innovations that are inequitably distributed, generate dual-use risks, and erode public trust, creating net harm that partially offsets the gains from rapid innovation
+C. Innovation always produces net positive societal impact regardless of governance
+D. Societal Impact Score is a meaningless metric that should be removed from the model
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that unrestricted innovation generates benefits but also produces dual-use risks (technologies that can harm), inequitable distribution (benefits concentrated among the wealthy), and trust erosion (public loses faith in science due to real or perceived irresponsibility). These negative effects partially offset innovation gains, meaning a moderate pace with ethical governance produces greater net societal benefit than unchecked speed. The model demonstrates that innovation speed is not the only determinant of societal benefit. Unrestricted innovation generates dual-use risks, inequitable distribution, and trust erosion that reduce net benefit. Moderate innovation with robust ethical governance maximizes the gap between benefits generated and harms produced.
+
+---
+
+### Question 2
+
+The model reveals a positive feedback loop between Publication Transparency, Public Trust in Science, and funding support. When this loop operates in reverse (eroded trust), what cascade does the model predict?
+
+A. Eroded trust has no effect on funding or research because they are independent
+B. Reduced trust leads to reduced public support for research funding, which leads to less research, which leads to fewer scientific solutions to public problems, which further erodes trust in science's value, creating a self-reinforcing downward spiral
+C. Eroded trust increases funding because politicians want to prove science is still valuable
+D. Trust can never be eroded because science is inherently trustworthy
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals a self-reinforcing trust spiral. When transparency decreases or misconduct occurs, public trust drops. Lower trust reduces political support for research funding. Less funding means fewer scientific breakthroughs and solutions. Fewer solutions mean the public perceives less value from science. This further erodes trust, continuing the cycle. Rebuilding trust once lost requires sustained transparency far beyond what was needed to maintain it. The model shows a reinforcing feedback loop: trust loss reduces funding, which reduces scientific output, which reduces public perception of science's value, which further erodes trust. This downward spiral is much easier to trigger than to reverse, which is why maintaining transparency is critical.
+
+---
+
+### Question 3
+
+The model shows that Benefit Distribution Equity and Risk Distribution Equity are independent variables. A student discovers that a scenario with high total benefit but low equity scores produces a lower Societal Impact Score than a scenario with moderate total benefit but high equity. What does this reveal?
+
+A. Total benefit does not matter; only equity matters
+B. The distribution of benefits and risks matters as much as their total magnitude, because scientific advances that benefit only wealthy communities while imposing risks on marginalized communities create social harm that reduces net societal value even when total benefit is high
+C. Equity should not be measured because it is subjective
+D. The model incorrectly penalizes high-benefit research
+
+Correct Answer: B
+
+Feedback: Correct. The model captures the insight that a scientific advance is not socially optimal just because total benefit is high. If benefits flow to those who need them least while risks burden those who are already disadvantaged, the advance perpetuates and amplifies inequity. Historical examples (Tuskegee experiments, environmental pollution in minority communities) demonstrate that inequitable research creates lasting social harm that reduces net societal value. Both total benefit and equity distribution matter. High total benefit with low equity means benefits concentrate among the privileged while risks burden the disadvantaged. History shows this pattern (Tuskegee, environmental racism) creates lasting social harm that reduces net societal value even when total scientific output is impressive.
+
+---
+
+### Question 4
+
+In the 'Dual-Use Crisis' scenario, the model shows that restricting publication of extreme dual-use research reduces Innovation Rate by 15% but improves Societal Impact Score by 25% due to reduced misuse risk. A student argues this proves all research should be restricted. Why is this generalization incorrect?
+
+A. The student is correct; all research should be restricted
+B. The model shows that the optimal balance between restriction and openness depends on the specific dual-use potential of each research area. Low dual-use research benefits greatly from open publication, while extreme dual-use research warrants careful restriction. A blanket policy in either direction is suboptimal
+C. Restricting any research always reduces Societal Impact Score
+D. Dual-use potential does not vary between research areas
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that the restriction-openness balance is case-dependent. For low dual-use research (most basic science), open publication maximizes societal benefit through knowledge sharing and reproducibility. For extreme dual-use research (gain-of-function pathogens, autonomous weapons AI), measured restriction protects against catastrophic misuse. Blanket restriction would stifle beneficial research, while blanket openness would enable dangerous misuse. The model shows that the optimal governance approach depends on the specific dual-use potential. Most research benefits from open publication (transparency, reproducibility, collaboration). Only research with extreme misuse potential warrants restriction. Case-by-case ethical evaluation produces better outcomes than blanket policies in either direction.
+
+---
+
+### Question 5
+
+Adding 'International Governance Coordination' to the model reveals that unilateral research restrictions by one country are largely ineffective. What mechanism does the model identify as the cause of this ineffectiveness?
+
+A. International laws automatically prevent any country from conducting dangerous research
+B. When one country restricts research, scientists and research programs migrate to countries with fewer restrictions, meaning the dangerous research still occurs but without the oversight and transparency that governance was designed to provide, producing worse outcomes than coordinated international regulation
+C. Unilateral restrictions are effective because each country can control its own researchers completely
+D. International coordination is unnecessary because all countries have identical ethical standards
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates regulatory arbitrage: when restrictions are unilateral, research moves to less-regulated jurisdictions. The dangerous research still occurs, but now without the oversight, safety protocols, and transparency that the restricting country would have provided. This produces worse outcomes than either universal regulation or universal openness, because it combines the innovation cost of restriction (in the restricting country) with the safety cost of unrestricted research (in the receiving country). Unilateral restrictions drive research to less-regulated jurisdictions rather than preventing it. The model shows this regulatory arbitrage produces the worst of both worlds: the restricting country loses innovation while the receiving country gains dangerous research without adequate oversight. Only coordinated international regulation can effectively govern dual-use research.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Where does a fish live?
+
+A. In a tree
+B. In the water
+C. In the desert
+
+Correct Answer: B
+
+Feedback: Yes! Fish live in the water because that is where they can breathe and find food. Fish live in the water. They need water to breathe through their gills and to find food.
+
+---
+
+### Question 2
+
+What do animals need to stay alive?
+
+A. Toys and games
+B. Food, water, and a safe place
+C. Only sunshine
+
+Correct Answer: B
+
+Feedback: Yes! Animals need food to eat, water to drink, and a safe place to live. Animals need food, water, and a safe place called a shelter. These things help them stay alive.
+
+---
+
+### Question 3
+
+Why can a polar bear live in the cold snow?
+
+A. It has thick fur to keep warm
+B. It does not like the cold
+C. It lives inside a house
+
+Correct Answer: A
+
+Feedback: Yes! Polar bears have thick fur that keeps them warm in the cold, snowy Arctic. Polar bears have thick fur that helps them stay warm. Their bodies are built for the cold, snowy place where they live.
+
+---
+
+### Question 4
+
+If a pond has lots of fish, how many ducks can eat there?
+
+A. No ducks
+B. Only one duck
+C. Many ducks
+
+Correct Answer: C
+
+Feedback: Yes! If there are lots of fish to eat, many ducks can live at that pond. When there are lots of fish, many ducks can eat there. More food means more animals can live in that place.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is a habitat?
+
+A. A type of animal
+B. The place where an animal lives that has what it needs
+C. A kind of food
+
+Correct Answer: B
+
+Feedback: Yes! A habitat is the place where an animal lives. It has the food, water, and shelter the animal needs. A habitat is an animal's home. It gives the animal food, water, and a safe place to live.
+
+---
+
+### Question 2
+
+When there is MORE food in a habitat, what happens to the Number of Animals?
+
+A. It goes down
+B. It stays the same
+C. It goes up
+
+Correct Answer: C
+
+Feedback: Yes! More food means more animals can live there. That is a positive connection. When there is more food, more animals can live in that habitat. More food supports more animals.
+
+---
+
+### Question 3
+
+What is a shelter?
+
+A. A type of food for animals
+B. A safe place where an animal can hide and rest
+C. The water in a pond
+
+Correct Answer: B
+
+Feedback: That is right! A shelter is a safe place where an animal can hide, rest, and stay warm or cool. A shelter is a safe place for an animal. It is where they hide from danger, rest, and stay warm or cool.
+
+---
+
+### Question 4
+
+What happens when food runs out in a habitat?
+
+A. More animals come
+B. Animals have to leave or there are fewer of them
+C. Nothing changes
+
+Correct Answer: B
+
+Feedback: Yes! When food runs out, animals have to move to find a new home or fewer animals can survive there. When food is gone, animals must find a new place to live. Without food, fewer animals can stay in that habitat.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

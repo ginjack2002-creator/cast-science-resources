@@ -915,6 +915,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4, HS-LS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What are microplastics?
+
+A. A type of biodegradable plastic that breaks down in the ocean within weeks
+B. Plastic fragments smaller than 5 millimeters, created by breakdown of larger plastic items
+C. Microscopic organisms that consume plastic waste
+D. Plastic packaging designed to be as small as possible to reduce waste
+
+Correct Answer: B
+
+Feedback: Correct. Microplastics are plastic fragments smaller than 5 mm, produced when larger plastic items break down through UV exposure and physical weathering. Microplastics are plastic fragments less than 5 mm in diameter. They form when UV radiation and physical forces break larger plastic items into progressively smaller pieces. An estimated 14 million tons enter the ocean annually.
+
+---
+
+### Question 2
+
+What is biomagnification?
+
+A. The use of magnifying equipment to study small organisms
+B. The increasing concentration of a substance at each successive level in a food chain
+C. The rapid growth of organisms exposed to plastic pollution
+D. The expansion of biological populations in polluted areas
+
+Correct Answer: B
+
+Feedback: Correct. Biomagnification is the progressive increase in concentration of a substance (like toxins on microplastics) at each trophic level as predators consume contaminated prey. Biomagnification occurs when a toxic substance becomes more concentrated at each step of the food chain. A toxin at 1 ppm in plankton can reach 10,000 ppm in a top predator through cumulative dietary exposure.
+
+---
+
+### Question 3
+
+What is an ocean gyre, and how does it relate to plastic pollution?
+
+A. A deep-sea volcano that incinerates plastic waste on the ocean floor
+B. A large system of circular ocean currents that traps floating debris in accumulation zones
+C. A man-made barrier designed to contain oil spills and plastic waste
+D. A type of marine organism that feeds exclusively on plastic
+
+Correct Answer: B
+
+Feedback: Correct. Ocean gyres are large circular current systems that sweep floating debris toward their calm centers, creating massive accumulation zones like the Great Pacific Garbage Patch. Ocean gyres are circular current systems driven by wind, Coriolis effect, and continental boundaries. They sweep floating debris inward, trapping it in accumulation zones. The Great Pacific Garbage Patch covers an area twice the size of Texas.
+
+---
+
+### Question 4
+
+Does plastic truly biodegrade in the ocean?
+
+A. Yes, most plastic biodegrades within 5-10 years in saltwater
+B. No, plastic photodegrades into ever-smaller fragments but never fully breaks down on human timescales
+C. Yes, ocean bacteria have evolved to completely consume plastic
+D. Plastic only degrades in warm tropical waters
+
+Correct Answer: B
+
+Feedback: Correct. Plastic does not biodegrade. UV light and mechanical forces break it into smaller and smaller fragments, but every piece of plastic ever produced still exists in some form. Plastic does not biodegrade in the ocean. It photodegrades, breaking into smaller and smaller pieces through UV exposure and mechanical weathering, but the polymer material persists indefinitely. Every piece of plastic ever made still exists in some form.
+
+---
+
+### Question 5
+
+Approximately how much plastic enters the ocean each year?
+
+A. About 1,000 metric tons
+B. About 100,000 metric tons
+C. About 11 million metric tons
+D. About 1 billion metric tons
+
+Correct Answer: C
+
+Feedback: Correct. Approximately 11 million metric tons of plastic enter the ocean each year, projected to triple by 2040 without major intervention. An estimated 11 million metric tons of plastic enter the ocean annually through inadequate waste management, industrial discharge, and product degradation. This figure is projected to triple by 2040 without significant intervention.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that even after reducing plastic input by 50%, Marine Ecosystem Health takes decades to improve. Which characteristic of microplastic pollution best explains this delay?
+
+A. Ocean cleanup technology is too slow to remove accumulated plastic
+B. Existing microplastics persist for centuries because they do not biodegrade, and ocean gyres trap them in permanent accumulation zones with no natural flushing mechanism
+C. Marine organisms prefer eating microplastics over natural food
+D. Reducing production causes economic disruption that harms coastal communities
+
+Correct Answer: B
+
+Feedback: Correct. The lag exists because microplastics already in the ocean persist essentially forever and gyres have no mechanism to flush accumulated debris. Even with reduced input, the existing stock continues contaminating food webs. The delay is caused by the persistence of existing contamination. Microplastics already in the ocean do not degrade, and gyre circulation traps them indefinitely. Reducing input prevents additional contamination but does not remove what is already there.
+
+---
+
+### Question 2
+
+The model demonstrates that toxin concentrations increase by factors of 10-100 at each trophic level through biomagnification. If zooplankton contain microplastic-associated toxins at 1 part per billion, what concentration might be found in a fourth-level predator?
+
+A. 4 parts per billion (additive increase)
+B. 1,000 to 1,000,000 parts per billion (multiplicative increase across three trophic level jumps)
+C. 1 part per billion (concentration stays constant)
+D. Less than 1 part per billion (organisms metabolize toxins)
+
+Correct Answer: B
+
+Feedback: Correct. With 10-100x magnification at each trophic level, three jumps from zooplankton to a 4th-level predator could concentrate toxins by 10^3 to 10^6, reaching parts per million or higher. Biomagnification is multiplicative, not additive. With 10-100x concentration increase at each trophic level, three jumps produce 10^3 to 10^6 increase (1,000 to 1,000,000x). Starting at 1 ppb, a 4th-level predator could contain 1-1,000 ppm.
+
+---
+
+### Question 3
+
+The model compares source reduction versus ocean cleanup at reducing gyre plastic concentration. Why does source reduction vastly outperform cleanup in the model?
+
+A. Cleanup technology does not exist for ocean environments
+B. Fragmentation produces trillions of particles too small to capture, and the inflow rate of 11 million tons per year overwhelms the removal capacity of current cleanup systems at approximately 10,000 tons per year
+C. Source reduction is cheaper but less effective per ton removed
+D. Cleanup operations accidentally harm more marine life than plastic does
+
+Correct Answer: B
+
+Feedback: Correct. The math is decisive: inflow exceeds cleanup capacity by roughly 1,000:1, and fragmentation creates particles too small for collection. Prevention outperforms remediation by orders of magnitude. Source reduction outperforms cleanup because of scale: 11 million tons enter annually versus ~10,000 tons that can be removed. Additionally, fragmentation creates trillions of particles below the size threshold for collection technology, making cleanup of existing microplastics physically impossible.
+
+---
+
+### Question 4
+
+Microplastics have been found in human blood, placental tissue, and deep-sea sediments. What does this global distribution pattern reveal about the plastic pollution system?
+
+A. Microplastic contamination is limited to areas near plastic production facilities
+B. The contamination is already globally pervasive, crossing biological barriers (cell membranes, placenta) and reaching Earth's most remote environments, indicating that prevention rather than cleanup must be the primary strategy
+C. Microplastics are harmless because the human body can process them
+D. This distribution pattern is normal for all synthetic materials
+
+Correct Answer: B
+
+Feedback: Correct. The ubiquity of microplastics across environments and inside human bodies demonstrates that contamination has reached a scale where prevention is the only viable primary strategy, since cleanup of this diffuse, global pollution is impractical. Finding microplastics in blood, placentas, Arctic ice, and the deepest ocean trenches reveals that contamination is already globally systemic. This distribution makes remediation practically impossible and underscores that prevention (reducing plastic entering the environment) must be the primary response.
+
+---
+
+### Question 5
+
+A policy analyst proposes banning single-use plastics as the primary solution. Using the model, evaluate the likely effectiveness of this approach.
+
+A. Banning single-use plastics would solve the problem completely within 5 years
+B. Single-use bans address a significant source of ocean plastic but are insufficient alone because existing ocean contamination persists, industrial and textile microplastics contribute substantially, and alternative materials must be verified as genuinely less harmful
+C. Single-use plastic bans are ineffective because all plastic pollution comes from industrial sources
+D. Bans would increase ocean pollution by forcing consumers to use heavier, more harmful materials
+
+Correct Answer: B
+
+Feedback: Correct. Single-use bans address a major input pathway but are one component of a comprehensive strategy. Existing contamination persists, other sources (microfibers, industrial pellets, tire wear) continue, and replacement materials need life-cycle assessment. Single-use plastic bans address an important source but the model shows the problem requires a systems approach: existing ocean contamination persists for centuries, other sources (microfibers from textiles, tire wear, industrial pellets) contribute significantly, and replacement materials must be assessed for their own environmental impacts.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

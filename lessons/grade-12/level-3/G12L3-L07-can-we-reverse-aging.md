@@ -974,6 +974,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Telomeres shorten with each cell division. What is the biological consequence when telomeres become critically short?
+
+A. The cell divides faster to compensate for the shortened telomeres
+B. The cell activates DNA damage responses that trigger either permanent growth arrest (senescence) or programmed cell death (apoptosis)
+C. The cell's chromosomes fuse together to create a stronger genome
+D. Short telomeres have no biological effect and are simply a biomarker
+
+Correct Answer: B
+
+Feedback: Correct. Critically short telomeres are recognized as DNA damage, activating checkpoint pathways (particularly p53 and Rb) that either permanently arrest cell division (senescence) or trigger programmed death (apoptosis). This mechanism evolved as a cancer defense, preventing damaged cells from continuing to divide, but it also drives aging as senescent cells accumulate. When telomeres reach a critical length, the cell interprets the unprotected chromosome ends as DNA damage. This activates checkpoint pathways that force the cell into permanent growth arrest (senescence) or programmed death (apoptosis), preventing further division of potentially damaged cells.
+
+---
+
+### Question 2
+
+Cellular senescence was originally a cancer defense mechanism. Why does this defense mechanism paradoxically contribute to aging?
+
+A. Senescent cells divide too rapidly and crowd out healthy cells
+B. Senescent cells stop dividing but remain metabolically active, secreting inflammatory molecules (SASP) that damage neighboring healthy cells and drive chronic inflammation throughout surrounding tissue
+C. Senescent cells are immediately removed by the immune system and leave gaps in tissues
+D. Senescence only affects skin cells and does not contribute to internal organ aging
+
+Correct Answer: B
+
+Feedback: Correct. Senescent cells are growth-arrested (good for cancer prevention) but they secrete the senescence-associated secretory phenotype (SASP) containing inflammatory cytokines, growth factors, and matrix-degrading enzymes that damage neighboring healthy cells. This creates a paradox: the same mechanism that prevents cancer in youth drives tissue deterioration in old age through chronic inflammation. The paradox of senescence is that cells stop dividing (preventing cancer) but remain alive and metabolically active, secreting inflammatory molecules (SASP) that damage neighboring cells. Over decades, accumulated senescent cells create chronic inflammation that drives tissue deterioration and age-related disease.
+
+---
+
+### Question 3
+
+The epigenetic clock measures biological age through DNA methylation patterns. Why is biological age sometimes different from chronological age?
+
+A. Biological age is always exactly equal to chronological age because DNA methylation changes at a fixed rate
+B. Lifestyle factors (exercise, diet, stress), environmental exposures, and disease can accelerate or slow the rate of epigenetic changes, causing biological age to diverge from the number of years since birth
+C. The epigenetic clock only works for people under 30 and is inaccurate for older adults
+D. Biological age is determined entirely by genetics and cannot be influenced by behavior
+
+Correct Answer: B
+
+Feedback: Correct. DNA methylation patterns change with age, but the rate of change is influenced by modifiable factors. Exercise and caloric restriction slow epigenetic aging, while smoking, chronic stress, and obesity accelerate it. This explains why some 50-year-olds have the biological profile of a 40-year-old while others resemble a 60-year-old. Epigenetic aging is not fixed. While chronological age advances at one year per year for everyone, biological age (measured by DNA methylation) is influenced by lifestyle, environment, and disease. This is why interventions like exercise and caloric restriction can slow biological aging.
+
+---
+
+### Question 4
+
+Senolytics are a class of drugs that selectively destroy senescent cells. Why would removing senescent cells improve health in aged organisms?
+
+A. Removing senescent cells creates space for new cells but does not affect inflammation
+B. Eliminating senescent cells removes the source of chronic inflammatory SASP secretion, reducing tissue damage, reactivating stem cell function, and improving tissue repair capacity
+C. Senolytics work by adding new telomeres to existing cells
+D. Senescent cells produce too much energy, and removing them reduces metabolic overload
+
+Correct Answer: B
+
+Feedback: Correct. Senescent cells are the primary source of chronic age-related inflammation (inflammaging) through SASP secretion. Removing them eliminates this inflammatory signal, allowing neighboring healthy cells to function normally, reactivating stem cell populations that were suppressed by inflammation, and restoring tissue repair capacity. In mice, senolytics have reversed age-related decline by 25-35%. Senescent cells drive aging primarily through their inflammatory secretions (SASP). Removing them eliminates chronic inflammatory signaling, which in turn allows stem cells to reactivate, healthy cells to function normally, and tissue repair to resume. The benefit goes far beyond creating physical space.
+
+---
+
+### Question 5
+
+Caloric restriction is the most robust life-extending intervention across multiple species. Through which primary mechanism does it slow aging?
+
+A. Reduced caloric intake eliminates all oxidative stress by shutting down mitochondria completely
+B. Lower metabolic activity reduces mitochondrial reactive oxygen species (ROS) production, slowing oxidative damage to DNA, proteins, and lipids, which slows telomere erosion, reduces mutation accumulation, and decreases the rate at which cells enter senescence
+C. Caloric restriction only works in laboratory worms and does not apply to mammals
+D. Eating less food strengthens bones and prevents all age-related diseases through calcium conservation
+
+Correct Answer: B
+
+Feedback: Correct. Caloric restriction reduces metabolic throughput, which decreases mitochondrial ROS production at the source. Less oxidative damage means slower telomere shortening, fewer DNA mutations, less protein damage, and fewer cells reaching the damage threshold for senescence. This slows the entire aging network simultaneously by reducing the primary driver of cumulative cellular damage. Caloric restriction slows aging by reducing metabolic activity, which decreases reactive oxygen species (ROS) production by mitochondria. Less ROS means less oxidative damage to DNA, proteins, and lipids, which in turn slows telomere erosion, reduces mutation accumulation, and decreases the rate of cellular senescence.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that between ages 60-80, the rate of decline in the Healthspan Index accelerates dramatically compared to ages 40-60. Which model finding best explains this acceleration?
+
+A. The accumulation of senescent cells beyond a threshold activates a positive feedback loop where SASP from senescent cells pushes neighboring healthy cells into senescence faster than the body can clear them, creating exponential rather than linear decline
+B. Humans are genetically programmed to die at age 80, so decline is predetermined
+C. The model shows constant linear decline that only appears to accelerate due to graphing artifacts
+D. After age 60, the immune system attacks healthy cells, causing rapid decline
+
+Correct Answer: A
+
+Feedback: Correct. The model reveals a critical positive feedback loop. When senescent cell burden exceeds approximately 15-20% of cells in a tissue, their collective SASP secretion creates enough inflammatory signaling to push neighboring healthy cells into senescence faster than immune clearance can remove them. This creates an accelerating cascade that explains why aging appears relatively gradual until a threshold is crossed, after which decline becomes rapid. The acceleration is caused by a positive feedback loop, not a predetermined program. When senescent cell burden exceeds a threshold, the inflammatory SASP from senescent cells pushes more healthy cells into senescence, which increases SASP, which pushes more cells into senescence. This self-amplifying cycle explains the exponential acceleration of decline.
+
+---
+
+### Question 2
+
+In the senolytic therapy scenario, clearing 50% of senescent cells at age 65 produces a rapid improvement in the Healthspan Index that exceeds what removing half the inflammatory source would linearly predict. What explains this disproportionate benefit?
+
+A. Senolytics also repair DNA damage in healthy cells
+B. Reducing senescent cell burden below the feedback threshold breaks the self-reinforcing senescence-inflammation loop, allowing stem cells to reactivate, tissue repair to resume, and the remaining healthy cells to function without chronic inflammatory suppression
+C. The Healthspan Index is not a reliable measure of treatment effectiveness
+D. Removing senescent cells causes the remaining cells to divide faster, which shortens telomeres and should worsen health
+
+Correct Answer: B
+
+Feedback: Correct. The disproportionate benefit occurs because senolytics break the positive feedback loop. By reducing senescent cell burden below the self-reinforcing threshold, the inflammatory cascade stops amplifying. This allows dormant stem cells to reactivate in the now-lower-inflammation environment, tissue repair to resume, and remaining healthy cells to return to normal function. The benefit is systemic because the feedback loop was systemic. The key insight is about breaking a feedback loop. When senescent cells drop below the critical threshold, the self-reinforcing cycle of senescence leading to inflammation leading to more senescence is interrupted. This allows multiple downstream systems (stem cells, tissue repair, immune function) to recover simultaneously.
+
+---
+
+### Question 3
+
+The model predicts that 30% caloric restriction started at age 40 slows Epigenetic Age advancement by approximately 35-40% over 20 years. However, starting the same restriction at age 65 shows a much smaller effect. What does this difference reveal about the timing of anti-aging interventions?
+
+A. Caloric restriction only works for young people because older people need more calories
+B. Early intervention slows the accumulation of damage before the senescence-inflammation feedback loop reaches its critical threshold, while late intervention faces an already-established positive feedback cycle that caloric restriction alone cannot fully overcome
+C. The model is biased toward younger ages and produces inaccurate results for older adults
+D. Caloric restriction has no effect at any age according to the model
+
+Correct Answer: B
+
+Feedback: Correct. Early intervention prevents damage accumulation before the critical threshold is reached, keeping the system in its slower, linear-decline phase. Late intervention faces an already-established positive feedback loop with high senescent cell burden and chronic inflammation. While caloric restriction still provides benefit at 65, it cannot reverse the accumulated damage or fully counteract the self-reinforcing feedback cycle already in progress. Timing matters because of the positive feedback loop. Intervention at 40 slows damage accumulation before the senescence-inflammation feedback loop reaches its critical threshold. At 65, the feedback loop is already active, and caloric restriction alone cannot fully reverse the accumulated senescent cell burden driving the cycle.
+
+---
+
+### Question 4
+
+A student proposes adding an 'Autophagy Rate' component to the model. Autophagy is the cell's self-cleaning mechanism that digests damaged proteins and dysfunctional mitochondria. How would declining autophagy with age interact with the existing components?
+
+A. Reduced autophagy would have no effect because damaged proteins are not related to aging
+B. Declining autophagy would amplify aging by allowing damaged mitochondria (increased ROS production), misfolded proteins (cellular dysfunction), and other cellular debris to accumulate, accelerating the pathway toward senescence and feeding into the inflammation-senescence feedback loop
+C. Autophagy only affects brain cells and would not influence the overall Healthspan Index
+D. Increased autophagy would cause cells to self-destruct, worsening the aging process
+
+Correct Answer: B
+
+Feedback: Correct. Autophagy is the cell's quality control system. When it declines with age, damaged mitochondria that produce excess ROS are not removed, misfolded proteins accumulate and impair cellular function, and the overall cellular damage burden increases. This feeds into multiple model components: increased oxidative stress, faster telomere shortening, more cells reaching the damage threshold for senescence, and accelerated inflammation through increased SASP. Autophagy removes damaged cellular components. When it declines, damaged mitochondria produce more ROS, misfolded proteins accumulate, and cellular damage increases across the board. This feeds into the model's existing components by accelerating oxidative stress, telomere shortening, senescence, and inflammation.
+
+---
+
+### Question 5
+
+The model reveals that extending healthspan (years of good health) is a more meaningful goal than extending maximum lifespan (years alive). Which model evidence most directly supports this conclusion?
+
+A. The model shows that maximum lifespan cannot be extended under any intervention scenario
+B. Interventions that reduce senescent cell burden and inflammation can dramatically improve physical function, cognitive capacity, and disease resistance (compressing morbidity into a shorter end-of-life period) even if they only modestly extend total years of life
+C. Healthspan and lifespan are identical measures, so there is no meaningful distinction
+D. The model does not include any measure of quality of life
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that anti-aging interventions like senolytics and caloric restriction primarily compress morbidity, improving function and quality of life across many years even if total lifespan extension is modest. A person who is healthy until 82 and declines rapidly until death at 85 has a better outcome than someone who begins declining at 65 and lives in poor health until 90. Healthspan captures this distinction; lifespan alone does not. The model shows that the most impactful anti-aging interventions improve function and reduce disease across many years (compressing the period of decline) rather than simply extending total years alive. This is why healthspan (years of good health) is more clinically meaningful than maximum lifespan.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

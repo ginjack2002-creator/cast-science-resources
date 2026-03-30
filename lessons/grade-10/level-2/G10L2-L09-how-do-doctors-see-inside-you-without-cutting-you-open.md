@@ -891,6 +891,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS2-4, HS-PS4-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+MRI (Magnetic Resonance Imaging) creates detailed images of internal body structures. Which type of energy does MRI use to generate these images?
+
+A. Ionizing X-ray radiation that passes through the body
+B. Strong magnetic fields and radiofrequency electromagnetic waves
+C. Ultrasonic sound waves that reflect off internal organs
+D. Infrared heat radiation detected through the skin
+
+Correct Answer: B
+
+Feedback: Correct. MRI uses a powerful static magnetic field to align hydrogen nuclei in the body, then applies radiofrequency pulses to excite them. The signals emitted as nuclei return to equilibrium are used to construct images. MRI does not use X-rays, sound waves, or infrared radiation. It works by placing the body in a strong magnetic field, applying radiofrequency electromagnetic pulses, and detecting the signals emitted by hydrogen nuclei as they relax.
+
+---
+
+### Question 2
+
+Clinical MRI machines operate at magnetic field strengths of 1.5 to 3 Tesla. How does this compare to Earth's natural magnetic field?
+
+A. MRI machines produce a field about twice as strong as Earth's
+B. MRI machines produce a field 30,000 to 60,000 times stronger than Earth's magnetic field
+C. MRI machines and Earth have approximately the same magnetic field strength
+D. Earth's magnetic field is stronger than any MRI machine
+
+Correct Answer: B
+
+Feedback: Correct. Earth's magnetic field is approximately 50 microtesla (0.00005 Tesla). A 3 Tesla MRI is 60,000 times stronger, which is why MRI rooms require strict safety protocols for metallic objects. Clinical MRI magnets are extraordinarily powerful: 1.5 to 3 Tesla compared to Earth's approximately 50 microtesla. This means an MRI magnet is 30,000 to 60,000 times stronger than the planet's natural magnetic field.
+
+---
+
+### Question 3
+
+The superconducting coils in an MRI machine must be cooled to near absolute zero using liquid helium. What property does superconductivity provide that is essential for MRI?
+
+A. Superconducting coils emit X-rays that help create the image
+B. Zero electrical resistance allows the coils to carry enormous electrical currents without energy loss, generating a stable, powerful magnetic field
+C. Superconducting coils are magnetic only at low temperatures and become non-magnetic when warm
+D. Liquid helium creates the radio waves used to excite hydrogen nuclei
+
+Correct Answer: B
+
+Feedback: Correct. At superconducting temperatures, the coil wire has zero electrical resistance, allowing massive persistent currents to flow without energy loss, producing the stable, powerful magnetic field MRI requires. Superconductivity provides zero electrical resistance, allowing the coils to sustain enormous currents indefinitely without energy input or heat generation. This is the only practical way to produce the powerful, stable magnetic fields that MRI requires.
+
+---
+
+### Question 4
+
+Different tissue types appear as different shades in an MRI image. What property of tissues creates this contrast?
+
+A. Different tissues have different colors that are directly photographed by the scanner
+B. Different tissues have different densities that block magnetic fields differently
+C. Different tissues contain different amounts of hydrogen, and the hydrogen nuclei in each tissue type have different relaxation times after radiofrequency excitation
+D. Different tissues reflect radio waves at different angles
+
+Correct Answer: C
+
+Feedback: Correct. MRI contrast comes from differences in how quickly hydrogen nuclei in different tissues return to equilibrium (relaxation times) after being excited by a radiofrequency pulse. Fat, muscle, and fluid all have distinct relaxation behaviors. MRI contrast depends on tissue-specific relaxation times. After radiofrequency excitation, hydrogen nuclei in different tissues (fat, muscle, fluid, bone) return to equilibrium at different rates, creating the signal differences that produce image contrast.
+
+---
+
+### Question 5
+
+Why is MRI generally considered safer than CT scans for repeated imaging of the same patient?
+
+A. MRI machines are smaller and less intimidating for patients
+B. MRI does not use ionizing radiation, eliminating the cumulative cancer risk associated with repeated X-ray or CT exposure
+C. MRI scans take less time than CT scans
+D. CT scans require injection of toxic contrast agents while MRI does not use any contrast
+
+Correct Answer: B
+
+Feedback: Correct. MRI uses magnetic fields and radio waves, which are non-ionizing and do not damage DNA. CT scans use ionizing X-ray radiation, which carries a small but cumulative cancer risk with repeated exposure. The key safety advantage of MRI is that it uses non-ionizing radiation (magnetic fields and radio waves) that does not damage DNA. CT scans use ionizing X-rays that carry cumulative cancer risk, making repeated CT scanning a clinical concern.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the MRI physics model, Magnetic Field Strength is identified as a primary driver of image quality. What specific relationship does the model demonstrate?
+
+A. Higher field strength reduces Image Resolution because stronger magnets distort the image
+B. Higher field strength increases both Image Resolution and Tissue Contrast by improving the signal-to-noise ratio of detected signals
+C. Magnetic Field Strength affects only scan time, not image quality
+D. Lower field strength produces better images because weaker magnets create less interference
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that stronger magnetic fields align more hydrogen nuclei, producing stronger signals relative to background noise. This improved signal-to-noise ratio directly enhances both spatial resolution and tissue contrast. The model demonstrates that Magnetic Field Strength improves image quality by increasing the signal-to-noise ratio. More nuclei are aligned in a stronger field, producing stronger detectable signals that translate to better resolution and tissue differentiation.
+
+---
+
+### Question 2
+
+The model reveals a critical vulnerability in MRI systems related to Coil Temperature. What happens if the superconducting coils warm above their critical temperature?
+
+A. The image quality improves because warmer coils produce stronger magnetic fields
+B. A 'quench' occurs: the coils lose superconductivity, resistance appears, enormous currents generate heat that explosively boils the liquid helium, and the magnetic field collapses
+C. The coils gradually reduce their magnetic field output over several hours
+D. Nothing happens because modern MRI coils work at any temperature
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies the quench as the most catastrophic failure mode in MRI: loss of superconductivity causes the enormous stored current to generate extreme heat, explosively vaporizing liquid helium and destroying the magnetic field. A quench is a rapid, dangerous failure where superconductivity is lost. The enormous persistent current suddenly encounters electrical resistance, generating extreme heat that boils the liquid helium explosively. The magnetic field collapses and the system is disabled.
+
+---
+
+### Question 3
+
+A student compares 1.5T and 7T MRI scenarios in the model. The 7T scanner produces dramatically better Image Resolution but the model also shows significant increases in Patient Safety concerns. Why?
+
+A. 7T magnets are physically larger and patients feel claustrophobic
+B. Stronger magnetic fields create greater forces on metallic implants, increase radiofrequency energy absorption in tissue (SAR), and produce louder gradient noise, all posing elevated safety risks
+C. 7T scanners take longer, and patients become bored during the scan
+D. 7T scanners require patients to hold their breath for the entire scan duration
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that higher field strength amplifies multiple safety concerns: greater forces on any ferromagnetic materials near the scanner, increased specific absorption rate (SAR) heating of tissue, and louder acoustic noise from gradient coils. The model demonstrates that Patient Safety concerns scale with field strength. Stronger magnets exert greater forces on metallic objects, deposit more radiofrequency energy into tissue (potential heating), and produce louder gradient switching noise.
+
+---
+
+### Question 4
+
+The model shows that Diagnostic Accuracy depends on the combination of Image Resolution, Tissue Contrast, and radiologist expertise. Why does the model indicate that the most powerful MRI machine is not always the best clinical choice?
+
+A. Because more powerful machines always produce worse images
+B. Because 1.5T provides sufficient Diagnostic Accuracy for most clinical diagnoses while presenting fewer Patient Safety challenges and lower Energy Consumption, making it the optimal trade-off
+C. Because radiologists cannot interpret images from machines above 3T
+D. Because all MRI machines produce identical images regardless of field strength
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that clinical decision-making must balance image quality against safety, cost, and energy. For most diagnoses, 1.5T provides adequate accuracy with lower risk, making it the practical optimum. The model reveals that optimal clinical practice involves trade-offs. While 7T provides superior images, 1.5T meets diagnostic needs for most conditions with significantly lower safety risks, energy costs, and infrastructure requirements.
+
+---
+
+### Question 5
+
+Based on the model, why is MRI particularly superior to CT or X-ray for imaging soft tissue structures like the brain, muscles, and ligaments?
+
+A. Because MRI uses stronger radiation that penetrates soft tissue more deeply
+B. Because different soft tissues have distinct hydrogen content and relaxation times, creating excellent contrast on MRI, while X-rays and CT primarily differentiate tissues based on density differences that are minimal between soft tissues
+C. Because soft tissues are transparent to magnetic fields and invisible to X-rays
+D. Because MRI scans are faster than CT scans for soft tissue imaging
+
+Correct Answer: B
+
+Feedback: Correct. The model explains that MRI's tissue contrast mechanism (hydrogen relaxation times) varies significantly between soft tissues, while X-ray/CT contrast (density-based attenuation) shows minimal differences between soft tissue types. MRI excels at soft tissue because its contrast mechanism depends on hydrogen content and relaxation times, which differ substantially between muscle, fat, ligament, and brain tissue. X-rays and CT rely on density differences, which are small between soft tissues.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

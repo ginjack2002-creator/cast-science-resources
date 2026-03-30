@@ -901,6 +901,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Social media platforms use variable-ratio reinforcement schedules in their design. Which comparison best illustrates why this pattern is so addictive?
+
+A. It is like getting paid the same amount every hour at a job
+B. It is the same mechanism that makes slot machines addictive: unpredictable rewards after an uncertain number of actions create the most compulsive behavior patterns
+C. It is like earning a fixed grade on every assignment
+D. It is similar to watching a movie with a predictable plot
+
+Correct Answer: B
+
+Feedback: Correct. Variable-ratio reinforcement is the most addictive reward schedule known to behavioral neuroscience. The unpredictability of when the next reward (like, comment, viral post) will arrive creates compulsive checking behavior. Incorrect. Variable-ratio reinforcement, where rewards come after an unpredictable number of actions, is the same mechanism used in slot machines. It creates the most compulsive behavior because you never know when the next reward is coming.
+
+---
+
+### Question 2
+
+What is dopamine baseline and how does chronic social media use affect it?
+
+A. Dopamine baseline is the brain's resting mood level; social media has no effect on it
+B. Dopamine baseline is the brain's resting dopamine activity; chronic overstimulation from social media can lower it, making non-digital activities feel boring and unrewarding
+C. Dopamine baseline increases with social media use, making everything more enjoyable
+D. Dopamine baseline is determined entirely by genetics and cannot change
+
+Correct Answer: B
+
+Feedback: Correct. The dopamine baseline determines normal mood, motivation, and pleasure capacity. Chronic social media overstimulation lowers this baseline through receptor downregulation, making non-digital experiences feel less rewarding. Incorrect. Chronic social media use can lower the dopamine baseline through receptor downregulation. When baseline dopamine activity drops, non-digital activities like reading, conversation, and hobbies feel increasingly boring by comparison.
+
+---
+
+### Question 3
+
+What is attention fragmentation, and how does social media contribute to it?
+
+A. A medical condition unrelated to technology use
+B. The progressive shortening of sustained attention capacity caused by the brain adapting to expect new content every few seconds through neuroplastic changes
+C. The ability to focus on multiple social media platforms simultaneously, which improves multitasking
+D. A temporary condition that resolves as soon as a person puts down their phone
+
+Correct Answer: B
+
+Feedback: Correct. Attention fragmentation is a neuroplastic change where the brain physically strengthens rapid-switching circuits and weakens sustained-attention circuits. Social media trains the brain to expect new stimuli every few seconds. Incorrect. Attention fragmentation is a measurable neuroplastic change. Social media trains the brain to expect new content every few seconds, physically strengthening rapid-switching circuits while weakening the ability to sustain focus on longer tasks.
+
+---
+
+### Question 4
+
+TikTok serves videos every 15-60 seconds, each optimized by AI to maximize dopamine response. After two hours, a student tries to read a textbook. Why does the textbook feel unbearable?
+
+A. The textbook contains more difficult vocabulary than TikTok videos
+B. Two hours of rapid dopamine hits from short-form content temporarily elevates the brain's reward threshold, making the slower, lower-stimulation experience of reading feel unsatisfying by comparison
+C. The student is simply not interested in the subject of the textbook
+D. Reading requires different eye muscles than watching videos, causing physical fatigue
+
+Correct Answer: B
+
+Feedback: Correct. Rapid-fire short-form content creates a temporarily elevated dopamine threshold. The textbook's slower, lower-stimulation experience cannot compete, making it feel unsatisfying and requiring more effort to sustain attention. Incorrect. Two hours of rapid dopamine hits raises the brain's reward threshold. The textbook delivers stimulation below this elevated threshold, making it feel boring and effortful. The brain has been temporarily trained to expect constant novelty.
+
+---
+
+### Question 5
+
+Can the brain recover from the neurological effects of heavy social media use?
+
+A. No, all changes to brain structure from social media are permanent and irreversible
+B. Yes, digital detox studies show measurable improvement in dopamine sensitivity and attention span within 2-4 weeks, though full recovery depends on duration and intensity of prior use
+C. Recovery happens instantly as soon as a person deletes their social media accounts
+D. Only children's brains can recover; adult brains are permanently changed
+
+Correct Answer: B
+
+Feedback: Correct. Neuroplasticity works in both directions. Digital detox research shows measurable recovery of dopamine sensitivity and attention capacity within 2-4 weeks, though complete recovery may take longer depending on the extent of prior use. Incorrect. The brain's neuroplasticity enables recovery. Digital detox studies demonstrate measurable improvements in attention and dopamine sensitivity within 2-4 weeks, though full restoration depends on the duration and intensity of prior heavy use.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model includes Social Media Exposure, Notification Frequency, Dopamine Sensitivity, Attention Capacity, and Cognitive Well-Being. After 30 days of 4+ hours of passive scrolling with maximum notifications, what does the model predict?
+
+A. Dopamine Sensitivity increases and Attention Capacity improves because the brain is getting more practice
+B. Dopamine Sensitivity decreases through receptor downregulation, Attention Capacity shrinks due to neuroplastic strengthening of rapid-switching circuits, and Cognitive Well-Being deteriorates
+C. Only Attention Capacity changes; Dopamine Sensitivity is unaffected by passive scrolling
+D. All components return to baseline within 24 hours of stopping
+
+Correct Answer: B
+
+Feedback: Correct. The model predicts a three-part decline: receptor downregulation lowers Dopamine Sensitivity, neuroplastic changes shorten Attention Capacity, and both effects compound to reduce Cognitive Well-Being (working memory, impulse control, emotional regulation). Incorrect. The model shows heavy passive use drives three interconnected declines: dopamine receptor downregulation reduces reward sensitivity, neuroplastic adaptation weakens sustained attention circuits, and both compound to impair overall cognitive well-being.
+
+---
+
+### Question 2
+
+The model compares passive scrolling versus active content creation with equal total screen time. Why does the model predict different neurological outcomes for these two usage patterns?
+
+A. Active creation uses different apps, which have different screen resolutions
+B. Passive scrolling delivers rapid, variable-ratio dopamine hits that drive receptor downregulation, while active creation engages sustained attention, goal-directed behavior, and prefrontal cortex function, producing a different dopamine release pattern
+C. The outcomes are identical because total screen time is the only variable that matters
+D. Active creation is more addictive than passive scrolling because it involves more effort
+
+Correct Answer: B
+
+Feedback: Correct. The type of engagement matters as much as duration. Passive scrolling triggers rapid variable-ratio dopamine hits, while active creation engages different neural circuits (sustained attention, prefrontal planning) with more natural dopamine patterns. Incorrect. The model shows that dopamine release patterns differ by usage type. Passive scrolling provides rapid, unpredictable rewards that downregulate receptors, while active creation engages sustained attention and goal-directed processing with healthier dopamine dynamics.
+
+---
+
+### Question 3
+
+The model predicts that a 14-day digital detox shows partial recovery. Why does the model predict that full recovery requires weeks to months rather than days?
+
+A. Social media toxins must be physically eliminated from the bloodstream, which takes months
+B. Neuroplastic changes (strengthened rapid-switching circuits, weakened sustained-attention circuits, downregulated dopamine receptors) are structural brain adaptations that require time to reverse through new neuroplastic rewiring
+C. Recovery takes months because the brain must generate entirely new neurons to replace damaged ones
+D. Recovery is actually instant; the model's prediction of weeks to months is incorrect
+
+Correct Answer: B
+
+Feedback: Correct. The changes from heavy social media use are neuroplastic (structural). Reversing them requires the brain to strengthen sustained-attention circuits and upregulate dopamine receptors through new neuroplastic changes, which is a gradual process. Incorrect. Recovery takes time because the changes are neuroplastic (structural adaptations in neural circuits). Rebuilding sustained-attention pathways and upregulating dopamine receptors requires time for new structural changes, just as the original damage developed gradually.
+
+---
+
+### Question 4
+
+A student adds FOMO Activation as a component to the model. How does FOMO interact with the existing dopamine-based mechanisms to keep users engaged?
+
+A. FOMO is identical to dopamine reward and operates through the same pathway
+B. FOMO operates through anxiety pathways separate from but synergistic with the dopamine reward system, creating a dual-drive mechanism where users check both to seek rewards AND to avoid the anxiety of missing out
+C. FOMO has no biological basis and is purely a marketing concept
+D. FOMO only affects users under 13 years old
+
+Correct Answer: B
+
+Feedback: Correct. FOMO adds an anxiety-based drive that operates through different neural pathways than dopamine reward. Together, they create a dual mechanism: users check for rewards (dopamine) AND to relieve anxiety about missing out (FOMO), making disengagement doubly difficult. Incorrect. FOMO operates through anxiety pathways that are separate from but synergistic with the dopamine reward system. This dual-drive mechanism means users are pulled to check by both reward-seeking AND anxiety-avoidance, compounding the addictive pull.
+
+---
+
+### Question 5
+
+Based on the model's evidence about variable-ratio reinforcement and neuroplasticity, which regulatory approach is MOST directly supported by the neuroscience?
+
+A. Banning all social media for people under 25
+B. Requiring platforms to disclose the specific psychological manipulation techniques they use (like variable-ratio reinforcement) and mandating design changes that reduce addictive features, similar to how nutrition labels disclose food ingredients
+C. Making social media use a mandatory part of school curriculum to build tolerance
+D. Regulation is unnecessary because individuals can simply choose to use less social media
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that platforms deliberately exploit known addictive mechanisms. Transparency requirements and design regulations address the root cause (engineered addiction) rather than placing the full burden on individuals whose brains are being manipulated. Incorrect. The model demonstrates that platforms use deliberate psychological manipulation (variable-ratio reinforcement, notification systems). Requiring disclosure and design changes addresses the engineered addictiveness at its source, rather than asking individuals to resist neuroscientific manipulation alone.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

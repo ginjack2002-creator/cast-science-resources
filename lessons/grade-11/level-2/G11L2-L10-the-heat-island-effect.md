@@ -915,6 +915,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4, HS-ETS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the 'urban heat island' effect?
+
+A. A volcanic island near a city that generates heat from magma
+B. The phenomenon where metropolitan areas are significantly warmer than surrounding rural areas due to heat-absorbing surfaces and human activities
+C. A tropical island used for urban development
+D. The reflection of heat from city buildings into outer space
+
+Correct Answer: B
+
+Feedback: Correct. Urban heat islands occur because cities replace natural vegetation with dark, heat-absorbing surfaces (asphalt, concrete) and generate waste heat from vehicles and buildings. The urban heat island effect is the temperature difference between cities and surrounding rural areas. Cities can be 5-12 degrees F hotter during the day and up to 22 degrees F hotter at night due to heat-absorbing materials and waste heat generation.
+
+---
+
+### Question 2
+
+What is 'albedo' and why does it matter for urban temperatures?
+
+A. Albedo is the amount of CO2 a surface absorbs from the atmosphere
+B. Albedo is the fraction of sunlight a surface reflects; low-albedo surfaces (dark asphalt) absorb more heat, raising temperatures
+C. Albedo measures the age of building materials in a city
+D. Albedo is the rate at which cities expand into rural areas
+
+Correct Answer: B
+
+Feedback: Correct. Albedo measures surface reflectivity. Dark asphalt (albedo 0.05-0.10) absorbs 90-95% of solar energy as heat, while lighter surfaces reflect more and absorb less. Albedo is the fraction of incoming sunlight that a surface reflects. Fresh snow has high albedo (0.8-0.9, reflects most light), while dark asphalt has very low albedo (0.05-0.10, absorbs most light and converts it to heat).
+
+---
+
+### Question 3
+
+How does vegetation cool its surroundings?
+
+A. Trees block wind, preventing warm air from reaching people
+B. Plants convert solar energy into water vapor through evapotranspiration, cooling the air instead of heating it
+C. Vegetation has no significant cooling effect on local temperatures
+D. Plants absorb heat from the ground and store it permanently in their roots
+
+Correct Answer: B
+
+Feedback: Correct. Through evapotranspiration, vegetation converts solar energy into the latent heat of water vaporization rather than sensible heat, cooling surrounding air by 2-8 degrees F. Vegetation cools through evapotranspiration: trees and plants absorb water through roots and release it as vapor through leaves. This process converts solar energy into water vapor rather than heat, providing 2-8 degrees F of cooling compared to impervious surfaces.
+
+---
+
+### Question 4
+
+Which weather phenomenon kills more people annually in the United States than hurricanes, floods, and tornadoes combined?
+
+A. Blizzards
+B. Extreme heat
+C. Lightning
+D. Wildfires
+
+Correct Answer: B
+
+Feedback: Correct. Extreme heat is the deadliest weather phenomenon in the United States, causing more annual deaths than all other weather events combined. Extreme heat is the deadliest weather phenomenon in the US, causing more deaths annually than hurricanes, floods, and tornadoes combined. Climate change is projected to increase heat-related deaths 3-5x by 2050 in cities without cooling infrastructure investment.
+
+---
+
+### Question 5
+
+Why do cities stay hot even after the sun goes down?
+
+A. Streetlights and neon signs generate significant heat at night
+B. Concrete and asphalt have high thermal mass, absorbing heat during the day and slowly re-radiating it at night
+C. Night air in cities is trapped by skyscrapers, preventing cooling
+D. Urban populations generate body heat that keeps the city warm
+
+Correct Answer: B
+
+Feedback: Correct. High thermal mass materials (concrete, asphalt) absorb and store solar energy during the day and re-radiate it as heat at night, preventing the cooling that rural areas experience. Concrete, asphalt, and building materials have high thermal mass: they absorb solar energy during the day and release it slowly overnight. This re-radiation keeps cities 10-22 degrees F warmer than rural areas at night, which is particularly dangerous because it prevents the body from recovering from daytime heat stress.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that within a single city, temperature differences of 10-15 degrees F exist between neighborhoods, and these differences map directly onto historic patterns of racial segregation. What systems-level explanation connects redlining to current heat vulnerability?
+
+A. Redlined neighborhoods happen to be located on higher ground where it is warmer
+B. Historically redlined neighborhoods received less investment in tree planting, parks, and green infrastructure, resulting in more impervious surface, less evapotranspiration cooling, and higher temperatures today, creating a physical legacy of structural racism
+C. Redlining affected only housing prices, not physical infrastructure or vegetation
+D. All neighborhoods in a city experience identical temperatures regardless of tree cover
+
+Correct Answer: B
+
+Feedback: Correct. Redlining directed investment away from certain neighborhoods for decades, resulting in less tree cover, fewer parks, more impervious surface, and consequently higher temperatures. This is a direct physical legacy of discriminatory policy. Historic redlining caused decades of disinvestment in certain neighborhoods: fewer trees were planted, parks were not built, and infrastructure prioritized pavement. Today, these neighborhoods have less vegetation, more impervious surface, and temperatures 10-15 degrees F higher than better-invested areas.
+
+---
+
+### Question 2
+
+The model reveals an air conditioning feedback loop: higher temperatures increase AC demand, but AC units expel waste heat outdoors, which raises ambient temperatures further. What type of system dynamic is this?
+
+A. Negative feedback that stabilizes temperatures through mechanical cooling
+B. A positive feedback loop where individual cooling responses collectively worsen the problem they are trying to solve
+C. A neutral loop with no net temperature effect
+D. A negative feedback loop that will eventually eliminate the heat island
+
+Correct Answer: B
+
+Feedback: Correct. This is a positive feedback loop: AC cools interiors but dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Each individual's rational cooling decision collectively amplifies the heat island. The AC feedback loop is positive (self-reinforcing): cooling buildings dumps waste heat outside, raising outdoor temperatures, which increases AC demand. Dense urban cores can see 2-4 degrees F of additional warming from waste heat alone, creating a vicious cycle.
+
+---
+
+### Question 3
+
+A green infrastructure plan proposes increasing tree canopy from 10% to 30% in the hottest neighborhood. The model predicts 5-10 degrees F of cooling, but full canopy effect takes 15-20 years. A city council member argues this timeline is unacceptable. Which systems-informed response best addresses this concern?
+
+A. Abandon the tree planting plan entirely in favor of faster solutions
+B. Implement a phased strategy combining immediate interventions (cool roofs, shade structures, misting stations) for near-term relief with long-term tree planting for sustained cooling, acknowledging that no single solution addresses all timescales
+C. Plant only fast-growing tree species regardless of their suitability for the climate
+D. Wait until faster-growing tree varieties are developed before beginning
+
+Correct Answer: B
+
+Feedback: Correct. A systems approach layers short-term solutions (immediate cooling) with long-term investments (trees). This addresses the council member's urgency concern while still building toward the most effective permanent solution. The systems-informed approach combines time horizons: immediate relief (cool roofs install in months, shade structures in weeks) provides near-term protection while trees grow toward their full 15-20 year cooling potential. A layered strategy addresses both urgency and long-term effectiveness.
+
+---
+
+### Question 4
+
+Climate change is projected to add 3-5 degrees F of baseline warming to urban areas by 2050. The model shows this does not simply 'add' to the heat island but amplifies it. Which mechanism best explains this amplification?
+
+A. Climate change only affects rural areas, not cities
+B. Higher baseline temperatures increase AC waste heat, reduce remaining vegetation through heat stress, and push more days above dangerous thresholds, each of which further intensifies the heat island through positive feedback loops
+C. Cities are insulated from climate change by their concrete infrastructure
+D. Climate change reduces urban temperatures by increasing cloud cover over cities
+
+Correct Answer: B
+
+Feedback: Correct. Climate change amplifies the heat island through multiple reinforcing mechanisms: more AC waste heat, vegetation stress, and more frequent threshold exceedances, each feeding back to intensify warming. Climate warming amplifies rather than simply adds to the heat island because it triggers feedback loops: higher baseline temperatures increase AC demand (more waste heat), stress urban vegetation (less evapotranspiration), and push more days above health thresholds, each of which further increases temperatures.
+
+---
+
+### Question 5
+
+A student claims that solving the urban heat island is purely an engineering problem (install cool roofs, plant trees). The model reveals a critical additional dimension. Which dimension does the model highlight?
+
+A. The problem is too expensive for any city to address
+B. Environmental justice: cooling investments must be directed to the most heat-vulnerable neighborhoods, and plans must include anti-displacement protections to prevent gentrification from displacing the residents the cooling was meant to protect
+C. Engineering solutions are the only dimension that matters
+D. The heat island will resolve itself as cities naturally expand
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that heat burden is not distributed equally. Engineering solutions must be paired with equity-centered policies to ensure cooling benefits reach the most vulnerable populations without causing gentrification and displacement. The model reveals that the heat island is both an engineering and an environmental justice problem. The hottest neighborhoods are the most socially vulnerable, and green infrastructure investments can trigger gentrification, displacing the very residents they were meant to protect. Solutions must include anti-displacement policies.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

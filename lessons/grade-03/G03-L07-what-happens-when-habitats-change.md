@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do you think a habitat is?
+
+A. A type of clothing animals wear
+B. The natural home where an animal lives, which provides food, water, and shelter
+C. A cage at the zoo
+D. A type of food animals eat
+
+Correct Answer: B
+
+Feedback: That is right! A habitat is the natural place where an animal or plant lives. It provides everything the organism needs: food, water, shelter, and space. A habitat is an animal's natural home. It provides food, water, shelter, and space. A forest, ocean, desert, and pond are all examples of habitats.
+
+---
+
+### Question 2
+
+What do you think happens to animals when a forest fire burns down their home?
+
+A. Nothing changes for the animals
+B. The animals may lose their food and shelter, and some may not survive
+C. The animals enjoy the warmth of the fire
+D. New animals appear from the fire
+
+Correct Answer: B
+
+Feedback: Good thinking! When a habitat is destroyed by fire, animals lose their food and shelter. Some may move to new areas, but others may not survive the change. When a forest burns, animals lose their homes, food, and shelter. This is a major habitat change. Some animals can move to new areas, but others struggle to survive.
+
+---
+
+### Question 3
+
+What does the word population mean?
+
+A. How popular an animal is
+B. The number of one type of animal living in an area
+C. How fast an animal can run
+D. The color of an animal's fur
+
+Correct Answer: B
+
+Feedback: Correct! Population is the number of one type of animal or plant living in an area. For example, if there are 50 deer in a forest, the deer population is 50. Population means the number of one type of animal living in an area. If a forest has 50 rabbits, the rabbit population is 50.
+
+---
+
+### Question 4
+
+Do you think all animals are affected the same way when their habitat changes?
+
+A. Yes, all animals react the same way
+B. No, some animals can adapt better than others
+C. Animals do not notice habitat changes
+D. Only big animals are affected
+
+Correct Answer: B
+
+Feedback: You got it! Some animals can adapt, meaning they can change what they eat, where they live, or how they behave. Others that depend on only one food or place may struggle more. Animals respond differently to habitat changes. Some can adapt by finding new food or shelter. Others that eat only one type of food or live in only one type of place may have a harder time surviving.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the habitat model, when Habitat Change increases, what happens to Food Availability?
+
+A. Food Availability increases because new plants grow
+B. Food Availability decreases because the habitat that provided food is damaged or destroyed
+C. Food Availability stays the same
+D. Food Availability is not connected to Habitat Change
+
+Correct Answer: B
+
+Feedback: Correct! Habitat Change and Food Availability have a negative relationship. When the habitat changes a lot (like a fire or drought), less food is available for animals. When a habitat is damaged or destroyed, the plants and food sources in that habitat are lost. More habitat change means less food available for animals. This is a negative relationship.
+
+---
+
+### Question 2
+
+Which animals are MOST at risk when their habitat changes?
+
+A. Animals that can eat many different foods and live in many places
+B. Animals that eat only one type of food or live in only one type of place
+C. Animals that are very large
+D. Animals that are very fast
+
+Correct Answer: B
+
+Feedback: Exactly! Specialized animals that depend on only one food or one type of habitat are most at risk. If their specific food or home is destroyed, they have no backup plan. Animals that eat only one food or live in only one place are the most at risk. If that specific food or habitat is destroyed, they cannot switch to something else. Animals that eat many foods have more options.
+
+---
+
+### Question 3
+
+What is one way humans can help animals when their habitat is damaged?
+
+A. Do nothing and let nature take its course
+B. Build wildlife corridors so animals can move safely to healthy habitat
+C. Remove all the animals from the wild
+D. Make the habitat change happen faster
+
+Correct Answer: B
+
+Feedback: Right! Wildlife corridors are safe paths that connect healthy habitats. They help animals move from damaged areas to places with food and shelter. Humans can help by creating wildlife corridors (safe paths to healthy areas), replanting forests, and protecting remaining habitats. These solutions help animals survive major habitat changes.
+
+---
+
+### Question 4
+
+In the major change scenario (wildfire), both Food Availability and Animal Population dropped a lot. Why did the population drop?
+
+A. The animals moved to a different planet
+B. Without enough food and shelter, many animals cannot survive in the changed habitat
+C. The animals got bored and left
+D. Population is not connected to food
+
+Correct Answer: B
+
+Feedback: You got it! When a wildfire destroys most of the forest, food and shelter are greatly reduced. Without enough resources, many animals cannot survive, so the population drops. Animal populations depend on food and shelter. When a wildfire destroys the forest, food and shelter decrease dramatically. Fewer resources means fewer animals can survive, so the population drops.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -942,6 +942,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS3-1, HS-LS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Every cell in your body contains the same DNA, yet a liver cell looks and functions completely differently from a neuron. Which mechanism BEST explains how identical genomes produce different cell types?
+
+A. Different cell types have different DNA sequences
+B. Different cell types express different subsets of their shared genes, with some genes turned on and others turned off in each cell type
+C. Cells randomly change their DNA after they divide
+D. Only stem cells contain the complete genome
+
+Correct Answer: B
+
+Feedback: Correct. Differential gene expression is the mechanism by which identical genomes produce diverse cell types. Transcription factors, epigenetic modifications, and signaling molecules determine which of the ~20,000 genes are active in each cell, creating the functional specialization observed in different tissues. Consider that a liver cell and a neuron have identical DNA sequences. If the DNA is the same, what must be different to produce different proteins and therefore different cell functions?
+
+---
+
+### Question 2
+
+A transcription factor is a protein that binds to specific DNA sequences near a gene. What is the PRIMARY function of transcription factors in gene regulation?
+
+A. To physically copy the DNA during cell division
+B. To increase or decrease the rate at which a gene is transcribed into mRNA, controlling how much protein that gene produces
+C. To transport proteins from the nucleus to the cytoplasm
+D. To provide structural support for the chromosome
+
+Correct Answer: B
+
+Feedback: Correct. Transcription factors are regulatory proteins that bind to promoter or enhancer sequences and recruit or block RNA polymerase, thereby controlling the rate of mRNA synthesis. They are the molecular decision-makers of gene expression. The word 'transcription' refers to copying DNA into mRNA. A transcription 'factor' is something that influences this process. What would a protein that binds near a gene do to affect how much mRNA that gene produces?
+
+---
+
+### Question 3
+
+In a feedback loop, the output of a process influences its own input. Which of the following is a biological example of negative feedback?
+
+A. A gene produces a protein that activates its own transcription, producing more and more protein
+B. A gene produces a protein that represses its own transcription, maintaining a stable protein level
+C. A gene is permanently silenced and never produces any protein
+D. Two genes are transcribed at the same rate regardless of conditions
+
+Correct Answer: B
+
+Feedback: Correct. When a gene product represses its own transcription, it creates a self-correcting system. If protein levels rise too high, increased repression reduces production. If levels drop too low, reduced repression allows more production. This maintains homeostasis. Negative feedback opposes change. Think about what happens when the output of a system acts to reduce its own production. Does the system stabilize or become unstable?
+
+---
+
+### Question 4
+
+DNA methylation is a chemical modification that does not change the DNA sequence but can silence gene expression. This type of modification is called:
+
+A. A mutation
+B. An epigenetic modification
+C. A deletion
+D. A point substitution
+
+Correct Answer: B
+
+Feedback: Correct. Epigenetic modifications (epi = above/upon) alter gene expression without changing the DNA sequence itself. DNA methylation, histone modifications, and chromatin remodeling are epigenetic mechanisms that control gene accessibility and can be inherited through cell division. The prefix 'epi' means above or upon. What term describes modifications that sit 'on top of' the genetic code, affecting its expression without changing the sequence?
+
+---
+
+### Question 5
+
+Cancer is often described as a disease of uncontrolled cell division. Which type of gene regulatory failure could MOST directly lead to uncontrolled cell growth?
+
+A. A mutation that permanently activates a gene promoting cell division, or permanently inactivates a gene that normally stops cell division
+B. A mutation in a gene that controls hair color
+C. Overexpression of a gene for muscle protein production
+D. Complete silencing of all genes in the affected cell
+
+Correct Answer: A
+
+Feedback: Correct. Cancer results from disrupted gene regulation: oncogenes (pro-growth genes) become permanently activated and/or tumor suppressor genes (anti-growth genes) become inactivated. Both types of regulatory failure remove the checks on cell division, enabling uncontrolled proliferation. Cell division is normally controlled by a balance between pro-growth and anti-growth signals. What happens when either the accelerator gets stuck or the brakes are removed?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's gene regulatory network model shows that doubling Transcription Factor Concentration doubles mRNA Transcription Rate but only increases final Protein Translation Rate by 30%. Which component MOST LIKELY creates this discrepancy?
+
+A. mRNA Degradation Rate, which destroys a significant fraction of the additional mRNA before it can be translated, and limited Ribosome Availability, which prevents all remaining mRNA from being simultaneously translated
+B. Protein Degradation Rate alone accounts for the entire discrepancy
+C. The DNA sequence limits how much protein can be produced
+D. Transcription Factor Concentration has no effect on downstream protein levels
+
+Correct Answer: A
+
+Feedback: Correct. Two attenuation points operate between mRNA production and protein output. First, mRNA is constantly degraded, so more rapid transcription only modestly increases steady-state mRNA levels. Second, ribosomes are a shared, limited resource, so even higher mRNA levels cannot all be translated simultaneously. Together, these factors dampen the signal at each level. Consider the multi-step cascade from transcription factor to protein. At each step, both production AND degradation operate simultaneously. If you double input at step 1, the output at step 3 depends on what happens at each intermediate step.
+
+---
+
+### Question 2
+
+A model simulation demonstrates that switching Feedback Signal Strength from negative to positive converts a system with stable, graded gene expression into a bistable switch with only two possible states (high or low). Which property of positive feedback BEST explains this behavior?
+
+A. Positive feedback is inherently destructive and crashes the system
+B. When a protein activates its own gene, small increases in protein level trigger further increases, creating a self-reinforcing loop that drives the system to its maximum state; once at maximum, the loop maintains itself, making the high state self-sustaining and difficult to reverse
+C. Positive feedback has no effect on gene expression dynamics
+D. Positive feedback reduces protein levels by increasing degradation
+
+Correct Answer: B
+
+Feedback: Correct. Positive autoregulation creates bistability. Above a threshold concentration, the protein activates its own gene sufficiently to maintain high expression indefinitely. Below the threshold, expression decays to the basal low state. The system 'locks in' to whichever state it reaches, creating a binary switch from a continuous input. Think about what happens when a protein promotes its own production. If protein levels increase slightly, this increases production, which increases protein levels further. Where does this cycle end?
+
+---
+
+### Question 3
+
+In the model, increasing Epigenetic Modification (closing chromatin) at a gene locus renders the gene unresponsive to even high Transcription Factor Concentration. A student concludes that epigenetic silencing overrides transcription factor signaling. Which additional evidence from the model would STRENGTHEN this conclusion?
+
+A. Showing that the same transcription factor activates the gene normally when chromatin is open, demonstrating that the factor is functional and the silencing is specifically due to chromatin state, not transcription factor inactivity
+B. Showing that epigenetic modification affects all genes in the genome equally
+C. Demonstrating that transcription factors are destroyed by epigenetic modifications
+D. Proving that closed chromatin cannot be reopened under any conditions
+
+Correct Answer: A
+
+Feedback: Correct. This is a controlled comparison. By demonstrating that the same transcription factor successfully activates the gene when chromatin is open (control) but fails when chromatin is closed (experimental), the student isolates chromatin state as the variable responsible for silencing, ruling out transcription factor dysfunction as an alternative explanation. To strengthen a causal claim, you need a control condition. If the claim is that closed chromatin blocks gene activation, what control would demonstrate that the transcription factor itself is functional?
+
+---
+
+### Question 4
+
+A model of a gene regulatory network shows that Negative Feedback produces stable output despite random fluctuations (noise) in Transcription Factor Concentration. Which property of negative feedback MOST directly explains this noise reduction?
+
+A. Negative feedback eliminates all molecular noise at the DNA level
+B. When protein levels randomly rise above the set point, the feedback loop increases repression, pushing levels back down; when levels randomly drop below the set point, reduced repression allows levels to recover, creating a self-correcting homeostatic mechanism
+C. Negative feedback slows all cellular processes equally
+D. Negative feedback prevents transcription factors from binding to DNA
+
+Correct Answer: B
+
+Feedback: Correct. Negative feedback acts as an error-correction mechanism. Any deviation from the steady-state protein level triggers a proportional opposing response. This self-correction dampens random fluctuations, maintaining consistent gene expression output despite the inherently noisy cellular environment. Think about a thermostat. When temperature rises above the set point, cooling activates. When it drops below, heating activates. The temperature fluctuates but stays near the set point. How does negative feedback in gene regulation achieve the same result?
+
+---
+
+### Question 5
+
+A student analyzes how a mutation in a transcription factor that regulates cell cycle genes could lead to cancer. The model shows that the mutant transcription factor has increased Promoter Binding Affinity for pro-growth genes AND decreased binding to anti-growth genes. Which consequence does the model predict?
+
+A. Cell division rate remains unchanged because the two effects cancel out
+B. Simultaneous overexpression of growth-promoting genes and underexpression of growth-inhibiting genes removes both the accelerator limit and the brakes on cell division, producing uncontrolled proliferation characteristic of cancer
+C. The cell immediately dies because it cannot sustain high transcription rates
+D. The mutation only affects one gene at a time and cannot cause systemic effects
+
+Correct Answer: B
+
+Feedback: Correct. This dual disruption represents a 'two-hit' regulatory failure. Increased activation of oncogenes (accelerator) combined with decreased activation of tumor suppressors (brakes) removes two independent layers of growth control simultaneously, producing the unregulated cell division that defines cancer. Consider cell division as controlled by both accelerator (pro-growth) and brake (anti-growth) systems. What happens when a single mutation simultaneously increases one and decreases the other?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: A
+
+**Post-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -902,6 +902,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A patient takes antibiotics for 5 of a prescribed 10-day course because they feel better. What is the most likely outcome for the surviving bacterial population?
+
+A. All bacteria are eliminated because the patient felt better, indicating the infection is cured
+B. The weakest bacteria are killed but the most resistant ones survive and multiply without competition, increasing resistance gene frequency
+C. The surviving bacteria become weaker because they were partially exposed to the antibiotic
+D. The bacteria develop immunity to the antibiotic through a conscious adaptation process
+
+Correct Answer: B
+
+Feedback: Correct. Stopping antibiotics early kills susceptible bacteria but leaves resistant mutants alive to reproduce without competition. This is natural selection in action, increasing resistance gene frequency in the surviving population. Incorrect. Incomplete courses create strong selective pressure: the weakest bacteria die first, leaving the most resistant ones to multiply without competition from susceptible bacteria, dramatically increasing resistance gene frequency.
+
+---
+
+### Question 2
+
+Antibiotic resistance is an example of which fundamental biological process?
+
+A. Cellular respiration in bacterial cells
+B. Evolution by natural selection, where antibiotics create selective pressure that favors bacteria with resistance mutations
+C. Photosynthesis that allows bacteria to produce their own energy
+D. Bacteria deliberately learning to resist chemicals through memory
+
+Correct Answer: B
+
+Feedback: Correct. Antibiotic resistance is natural selection in real time: random mutations provide variation, antibiotics create selective pressure, susceptible bacteria die, and resistant mutants survive and reproduce. Incorrect. Antibiotic resistance is evolution by natural selection. Bacteria do not 'learn' to resist. Random mutations provide genetic variation, antibiotics create selective pressure, and bacteria with resistance mutations survive and reproduce.
+
+---
+
+### Question 3
+
+What is horizontal gene transfer and why does it make antibiotic resistance particularly dangerous?
+
+A. It is the process by which bacteria reproduce, creating identical copies of themselves
+B. It is the process by which bacteria share genetic material, including resistance genes, directly between cells, allowing resistance to spread between species
+C. It is the process by which viruses transfer genes to bacteria during infection
+D. It is a laboratory technique used to create genetically modified bacteria
+
+Correct Answer: B
+
+Feedback: Correct. Horizontal gene transfer (conjugation, transformation, transduction) allows bacteria to share resistance genes directly between cells, even between different species. This means resistance that evolves in one species can transfer to deadly pathogens. Incorrect. Horizontal gene transfer allows bacteria to share genetic material, including resistance genes, between unrelated cells and species. This means resistance genes can jump from harmless environmental bacteria to dangerous pathogens.
+
+---
+
+### Question 4
+
+Why is sub-therapeutic antibiotic use in livestock considered one of the greatest threats to human health?
+
+A. Antibiotics make the meat taste different and cause allergic reactions in consumers
+B. Constant low-level exposure creates ideal conditions for gradual resistance evolution in trillions of bacteria across massive populations
+C. Livestock antibiotics are chemically different from human antibiotics and cannot affect human health
+D. Agricultural antibiotic use has decreased over the past 50 years and is no longer a concern
+
+Correct Answer: B
+
+Feedback: Correct. Sub-therapeutic doses in livestock expose trillions of bacteria to constant low-level selective pressure. This is the perfect evolutionary training ground for resistance, and resistant bacteria can transfer to humans through food, water, and the environment. Incorrect. Agricultural antibiotic use exposes massive bacterial populations to constant sub-therapeutic levels, creating an enormous evolutionary laboratory for resistance development that can then transfer to human pathogens.
+
+---
+
+### Question 5
+
+What defines a 'superbug' and why are these organisms an urgent medical concern?
+
+A. Any bacterium that causes infection in hospitalized patients
+B. A bacterial strain that has evolved resistance to multiple classes of antibiotics, making infections extremely difficult or impossible to treat
+C. A genetically modified bacterium created in laboratories for research purposes
+D. A large bacterium that can be seen without a microscope
+
+Correct Answer: B
+
+Feedback: Correct. Superbugs like MRSA, CRE, and XDR-TB have evolved resistance to multiple antibiotic classes. When no antibiotics work, infections that were once easily treatable become life-threatening. Incorrect. Superbugs are bacterial strains resistant to multiple antibiotic classes. Examples include MRSA, CRE, and XDR-TB. They represent the endpoint of resistance evolution where our medicines are no longer effective.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the resistance model, a patient completes the full 10-day antibiotic course at the correct dose. What does the model predict about Resistance Gene Frequency compared to an incomplete course?
+
+A. Resistance Gene Frequency will be identical regardless of course completion
+B. Full course completion eliminates nearly all bacteria before resistant mutants can establish, keeping Resistance Gene Frequency low, while incomplete courses allow resistant survivors to multiply
+C. Full course completion increases Resistance Gene Frequency because longer exposure means more mutations
+D. Course duration does not affect bacterial population dynamics
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that completing the full course eliminates bacteria before resistant variants can establish a population. Stopping early removes the competition for resistant bacteria, allowing them to multiply and dominate. Incorrect. The model predicts that full treatment eliminates the vast majority of bacteria, including most with partial resistance, before they can multiply. Incomplete courses leave the most resistant bacteria alive with no competition.
+
+---
+
+### Question 2
+
+The model includes Mutation Rate as a component. Bacteria reproduce every 20-30 minutes, generating millions of mutations daily. Why does this reproductive speed make resistance evolution practically inevitable?
+
+A. Fast reproduction means each individual bacterium becomes resistant more quickly
+B. Rapid reproduction generates enormous genetic variation in very short time frames, making it statistically likely that pre-existing resistance mutations will be present before antibiotic exposure even begins
+C. Reproduction speed has no relationship to the probability of beneficial mutations
+D. Bacteria only mutate when exposed to antibiotics, so reproduction speed is irrelevant
+
+Correct Answer: B
+
+Feedback: Correct. With reproduction every 20-30 minutes, a single bacterium can produce billions of offspring in hours. With random mutations occurring at each division, the probability of pre-existing resistance mutations in any large population approaches certainty. Incorrect. Rapid reproduction creates massive genetic variation. Mutations are random and occur during every replication. With millions of divisions per day, the probability of resistance mutations existing BEFORE antibiotic exposure is very high in large populations.
+
+---
+
+### Question 3
+
+Based on the model, which of the three main misuse behaviors (incomplete courses, prescribing for viral infections, agricultural overuse) drives resistance evolution FASTEST, and why?
+
+A. Prescribing for viral infections, because viruses and bacteria share resistance genes
+B. Agricultural overuse, because it exposes trillions of bacteria to constant sub-therapeutic selective pressure across massive populations, maximizing the probability and speed of resistance evolution
+C. Incomplete courses, because they are the only behavior that actually affects bacteria
+D. All three behaviors have exactly identical effects on resistance evolution rates
+
+Correct Answer: B
+
+Feedback: Correct. The model predicts that agricultural overuse is the most dangerous because it combines the largest bacterial population sizes with constant sub-therapeutic selective pressure across continuous time periods, creating optimal conditions for resistance evolution. Incorrect. The model shows agricultural overuse is most dangerous because it exposes the largest bacterial populations to continuous selective pressure at sub-therapeutic levels, providing ideal conditions for gradual resistance evolution on a massive scale.
+
+---
+
+### Question 4
+
+Horizontal gene transfer allows resistance genes to move between bacterial species. How does including this mechanism in the model change predictions about the spread of resistance?
+
+A. It has no effect because resistance genes can only be passed from parent to offspring
+B. It transforms resistance from an individual-patient problem to a community-level threat, because resistance evolving in harmless environmental bacteria can transfer to deadly human pathogens
+C. It slows resistance spread because gene transfer between species is always unsuccessful
+D. It only matters in laboratory settings, not in natural environments
+
+Correct Answer: B
+
+Feedback: Correct. Horizontal gene transfer means resistance is not contained within a single species. Genes can jump from harmless soil bacteria to dangerous pathogens, making resistance a population-level and community-level threat. Incorrect. Horizontal gene transfer means resistance genes can jump between species through conjugation, transformation, and transduction. This transforms resistance from an individual infection problem into a community-wide and even global threat.
+
+---
+
+### Question 5
+
+The model demonstrates that antibiotic resistance follows all four factors of evolution by natural selection. Which correctly matches each factor to the resistance scenario?
+
+A. 1) Bacteria multiply rapidly, 2) Random mutations create variation, 3) Antibiotics create competition for survival, 4) Resistant bacteria survive and reproduce preferentially
+B. 1) Bacteria choose to become resistant, 2) Resistance is learned behavior, 3) All bacteria respond identically, 4) Antibiotics cause mutations
+C. 1) Bacteria reproduce slowly, 2) All bacteria are genetically identical, 3) Resources are unlimited, 4) Survival is random
+D. 1) Bacteria evolve intentionally, 2) Mutations are directed toward resistance, 3) Only strong antibiotics create selection, 4) Resistance disappears when antibiotics are removed
+
+Correct Answer: A
+
+Feedback: Correct. This correctly maps the four factors: (1) population growth potential (rapid reproduction), (2) heritable variation (random mutations), (3) competition for limited resources (antibiotic selective pressure), and (4) differential survival (resistant bacteria proliferate). Incorrect. The four factors of natural selection in resistance are: (1) bacteria can increase rapidly in number, (2) heritable genetic variation exists from random mutations, (3) antibiotics create selective pressure/competition, (4) resistant organisms survive and reproduce preferentially.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: A
+
+---
+
 ## Resources
 
 | Resource | Link |

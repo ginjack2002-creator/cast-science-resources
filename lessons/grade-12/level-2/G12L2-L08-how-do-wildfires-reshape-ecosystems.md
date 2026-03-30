@@ -936,6 +936,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Fire ecologists argue that frequent low-intensity fires are essential for maintaining healthy forest ecosystems. What ecological benefit do these natural fires provide?
+
+A. They permanently sterilize the soil to prevent invasive plant growth
+B. They clear understory fuel, recycle nutrients, stimulate seed germination, and maintain open forest structure that supports biodiversity
+C. They eliminate all plant species so the ecosystem can start fresh
+D. They have no ecological benefit and only cause destruction
+
+Correct Answer: B
+
+Feedback: Correct. Low-intensity surface fires perform essential ecological functions: clearing dead vegetation reduces fuel accumulation, burning releases locked-up nutrients back to soil, fire-adapted species depend on fire cues for seed germination, and open understory structure supports diverse plant and animal communities. Incorrect. Natural low-intensity fires are ecological maintenance processes. They reduce fuel loads, cycle nutrients from dead material back into soil, trigger reproduction in fire-adapted species, and maintain the open forest structure that many species require. Many ecosystems evolved with and depend on regular fire.
+
+---
+
+### Question 2
+
+A century of fire suppression has dramatically increased fuel loads in many forests. What is a fuel load, and why is its accumulation dangerous?
+
+A. Fuel load is the energy content of living trees, which decreases with forest age
+B. Fuel load is the amount of combustible dead vegetation, branches, and debris that accumulates when fire is excluded, creating conditions for catastrophic high-intensity fires
+C. Fuel load is the water content of forest soil, which fire suppression increases
+D. Fuel load is a measure of forest productivity that has no relationship to fire behavior
+
+Correct Answer: B
+
+Feedback: Correct. Without periodic fire to clear dead vegetation, fuel accumulates to 5-10 times natural levels. This dense layer of dead material, combined with ladder fuels that connect the ground to the canopy, transforms what would be a manageable surface fire into an uncontrollable crown fire. Incorrect. Fuel load is the total combustible material in a forest. When fire is suppressed for decades, dead leaves, branches, small trees, and other vegetation accumulate instead of being periodically cleared by natural fire. This creates conditions for fires of unprecedented intensity that exceed the ecosystem's tolerance.
+
+---
+
+### Question 3
+
+What is the difference between a surface fire and a crown fire, and why does this distinction matter ecologically?
+
+A. Surface fires burn along the ground and most trees survive; crown fires burn through the canopy at extreme intensity, often killing even fire-resistant trees and destroying seed sources
+B. Surface fires are hotter than crown fires but cover less area
+C. Crown fires only occur in deciduous forests, while surface fires occur in coniferous forests
+D. There is no ecological difference between surface and crown fires
+
+Correct Answer: A
+
+Feedback: Correct. This distinction is ecologically crucial. Surface fires burn at temperatures that thick-barked trees survive, leaving mature trees and seed sources intact for rapid recovery. Crown fires burn at extreme temperatures that kill even fire-resistant species and destroy the seed bank, potentially preventing forest regeneration entirely. Incorrect. The surface versus crown fire distinction determines ecological outcome. Surface fires burn at low intensity along the ground, leaving mature trees alive for regeneration. Crown fires burn through the canopy at extreme temperatures, killing even large fire-resistant trees and potentially eliminating the seed sources needed for recovery.
+
+---
+
+### Question 4
+
+Climate change has extended fire seasons by 40-80 days in many regions. How does this interact with accumulated fuel loads from fire suppression?
+
+A. Extended fire seasons have no effect because fire suppression prevents all fires
+B. Hotter, drier conditions combined with unprecedented fuel loads create conditions for fires of intensity and duration that have no historical precedent in these ecosystems
+C. Climate change makes forests wetter, reducing fire risk despite accumulated fuel
+D. Extended fire seasons allow more prescribed burns, naturally solving the fuel accumulation problem
+
+Correct Answer: B
+
+Feedback: Correct. Climate change and fire suppression create a compounding interaction. A century of fuel accumulation meets hotter temperatures, longer droughts, lower humidity, and stronger winds, producing fire behavior that exceeds anything in the historical record and overwhelms ecosystems adapted to lower-intensity fire regimes. Incorrect. Climate change and fire suppression compound each other's effects. The accumulated fuel from decades of suppression is now exposed to hotter, drier, and windier conditions from climate change, producing megafires of unprecedented intensity that exceed both historical fire regimes and current firefighting capacity.
+
+---
+
+### Question 5
+
+What is ecological succession, and how does fire intensity determine the trajectory of post-fire ecosystem recovery?
+
+A. Succession is the replacement of one species by a more competitive species, unrelated to fire
+B. Succession is the process by which ecosystems change in composition over time after disturbance. Low-intensity fire promotes recovery along historical trajectories, while extreme fire can redirect succession toward entirely different ecosystem types
+C. Succession always produces the same ecosystem regardless of disturbance type
+D. Succession only occurs in aquatic ecosystems after flooding events
+
+Correct Answer: B
+
+Feedback: Correct. Fire intensity determines whether succession follows a recovery pathway or a conversion pathway. Low-intensity fire leaves seed sources, mycorrhizal networks, and seed banks intact, enabling the ecosystem to recover its original composition. Extreme fire can destroy all of these, redirecting succession toward shrubland or grassland. Incorrect. Ecological succession is the directional change in community composition after disturbance. Fire intensity critically determines the trajectory: moderate fire allows recovery to the original community type, while extreme fire that sterilizes soil and destroys seed sources can permanently redirect succession toward a different ecosystem type.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student compares model outputs for a natural fire regime (moderate fuel, historical climate) versus a fire after 100 years of suppression (maximum fuel, current climate). The suppression-legacy fire shows 10 times greater intensity and severely degraded soil health. What systemic lesson does this comparison illustrate?
+
+A. Fire suppression has no long-term consequences for forest health
+B. Attempting to prevent all disturbance in a disturbance-dependent system does not eliminate the disturbance but transforms it from a manageable, beneficial process into a catastrophic one
+C. Fuel load has no effect on fire intensity
+D. Historical fire regimes were more destructive than modern fires
+
+Correct Answer: B
+
+Feedback: Correct. This is a fundamental systems lesson: fire-adapted ecosystems require periodic disturbance. Suppressing natural fire does not eliminate fire but guarantees that when fire eventually occurs (as it inevitably will), it will be catastrophically intense due to accumulated fuel, causing far more damage than the natural fires that were prevented. Incorrect. The comparison reveals the paradox of fire suppression: preventing small fires guarantees large ones. Fire-adapted ecosystems evolved with periodic burning. Removing fire from these systems does not create safety but accumulates risk, transforming inevitable future fire from beneficial to catastrophic.
+
+---
+
+### Question 2
+
+The model shows that a climate-amplified megafire (maximum fuel + extreme heat, drought, and wind) can sterilize soil to 10+ cm depth and destroy seed banks. A student predicts that the forest will recover naturally within 15 years. What does the model evidence suggest about this prediction?
+
+A. The prediction is accurate because all fires are followed by rapid recovery
+B. The prediction is likely wrong because soil sterilization and seed bank destruction remove the biological resources needed for forest recovery, potentially causing permanent type-conversion to shrubland or grassland
+C. The forest will recover faster than 15 years because fire releases nutrients
+D. The soil sterilization only affects the first growing season
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that when fire exceeds ecosystem tolerance thresholds, recovery may be impossible. Sterilized soil lacks mycorrhizal fungi, seed banks are destroyed, and mature seed-producing trees are killed. Without these biological resources, the ecosystem cannot regenerate as forest and may convert permanently to a different vegetation type. Incorrect. The model evidence contradicts natural recovery from extreme fire. When soil is sterilized to depth, seed banks destroyed, and seed-producing trees killed, the biological resources for forest recovery no longer exist. The ecosystem may undergo type-conversion to shrubland or grassland, representing permanent habitat loss.
+
+---
+
+### Question 3
+
+A model shows that healthy forests are carbon sinks, absorbing more CO2 than they release. After a megafire, the model shows the forest becoming a net carbon source for decades. What mechanism drives this reversal?
+
+A. Wildfires absorb CO2 from the atmosphere during combustion
+B. The fire rapidly releases stored carbon through combustion, while killing the living trees that would reabsorb it, and decomposition of dead wood continues releasing carbon for years after the fire
+C. Carbon sinks and sources are unrelated to living biomass
+D. Post-fire vegetation immediately compensates for all carbon lost in the fire
+
+Correct Answer: B
+
+Feedback: Correct. Megafires release decades of stored carbon in hours through combustion. They also kill the trees that serve as active carbon sinks. Dead trees and roots then decompose over years, continuing to release CO2. Without living trees to reabsorb carbon, the area remains a net source for decades, creating a positive climate feedback. Incorrect. The carbon reversal occurs through two mechanisms: rapid release of stored carbon during combustion, and the loss of living trees that would otherwise continue absorbing CO2. Dead biomass continues decomposing and releasing carbon for years, while regeneration (if it occurs at all) takes decades to restore sink function.
+
+---
+
+### Question 4
+
+The model demonstrates that prescribed burns reduce fuel loads and lower the intensity of subsequent wildfires. A community member opposes prescribed burns because 'setting fires in forests is never safe.' Based on model evidence, how should a fire ecologist respond?
+
+A. Agree that all fire in forests should be prevented
+B. Explain that model evidence shows controlled low-intensity prescribed burns reduce future wildfire intensity by removing accumulated fuel, and that the alternative to managed fire is not no fire but rather unmanaged catastrophic fire
+C. Ignore the community member's concern because science always overrides public opinion
+D. Recommend clear-cutting the forest instead of prescribed burning
+
+Correct Answer: B
+
+Feedback: Correct. The model provides clear evidence that the choice is not between fire and no fire, but between managed fire (prescribed burns at low intensity) and unmanaged fire (catastrophic wildfire at extreme intensity). Model data showing that fuel reduction through prescribed burns dramatically lowers future fire intensity makes the evidence-based case for proactive fire management. Incorrect. The model evidence directly addresses this concern. It shows that fire in fire-adapted ecosystems is inevitable. The real choice is between deliberate low-intensity prescribed burns that reduce fuel and maintain ecosystem health, or waiting for catastrophic wildfire that destroys ecosystems and threatens communities.
+
+---
+
+### Question 5
+
+Based on model evidence about fire ecology, climate change, and ecosystem resilience, which fire management strategy would be most effective for long-term forest and community protection?
+
+A. Continue aggressive fire suppression of all fires to protect communities
+B. An integrated approach that uses prescribed burns to reduce fuel in strategic areas, creates defensible space around communities, and allows ecological fire to play its natural role in wilderness areas
+C. Allow all fires to burn without any management or community protection
+D. Remove all forests within 50 miles of communities to eliminate fire risk
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that effective fire management requires an integrated strategy: prescribed burns reduce fuel loads and restore natural fire regimes, defensible space protects communities at the wildland-urban interface, and allowing ecological fire in appropriate areas maintains ecosystem health. This approach addresses both human safety and ecological integrity. Incorrect. Model evidence supports an integrated approach. Neither total suppression (which guarantees catastrophic fires) nor unmanaged fire (which threatens communities) is optimal. The evidence-based strategy combines proactive fuel management, community protection, and ecological fire stewardship.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

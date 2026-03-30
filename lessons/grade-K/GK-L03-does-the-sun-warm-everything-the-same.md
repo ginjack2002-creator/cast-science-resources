@@ -722,6 +722,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-PS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+On a hot sunny day, which spot feels warmer?
+
+A. Under a big tree in the shade
+B. Out in the sunshine
+C. They feel the same
+
+Correct Answer: B
+
+Feedback: Yes! The spot in the sunshine feels warmer because the sun heats it up. A spot in the sunshine feels warmer than a spot in the shade. The sun sends heat to the ground.
+
+---
+
+### Question 2
+
+What does the sun give us?
+
+A. Only light
+B. Light and warmth
+C. Only wind
+
+Correct Answer: B
+
+Feedback: That is right! The sun gives us both light and warmth. The sun gives us light AND warmth. That is why sunny days feel warm.
+
+---
+
+### Question 3
+
+Why do people sit in the shade on a hot day?
+
+A. To get more sun
+B. To stay cooler
+C. To get wet
+
+Correct Answer: B
+
+Feedback: Yes! People sit in the shade to stay cooler because shade blocks the hot sunlight. People sit in the shade to stay cooler. The shade blocks sunlight so it is not as hot.
+
+---
+
+### Question 4
+
+If you touch a sidewalk in the sun, how does it feel?
+
+A. Cold
+B. Warm or hot
+C. Wet
+
+Correct Answer: B
+
+Feedback: Yes! A sidewalk in the sun feels warm or hot because the sun heats it up. A sidewalk in the sun feels warm or hot. The sunlight carries energy that heats up the sidewalk.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When there is MORE sunlight on a spot, what happens to the temperature?
+
+A. It goes down
+B. It stays the same
+C. It goes up
+
+Correct Answer: C
+
+Feedback: Yes! More sunlight makes the temperature go up. The sun's energy heats things up. When there is more sunlight, the temperature goes up. Sunlight carries energy that warms the ground.
+
+---
+
+### Question 2
+
+What does shade do?
+
+A. It makes things hotter
+B. It blocks sunlight and keeps things cooler
+C. It makes rain
+
+Correct Answer: B
+
+Feedback: That is right! Shade blocks sunlight, so the spot stays cooler than a sunny spot. Shade blocks sunlight from reaching the ground. That is why shady spots feel cooler than sunny spots.
+
+---
+
+### Question 3
+
+Amount of Sunlight and Surface Temperature have what kind of connection?
+
+A. Positive: both go up together
+B. Negative: one goes up, one goes down
+C. No connection
+
+Correct Answer: A
+
+Feedback: Yes! It is a positive connection. When sunlight goes up, temperature goes up too. It is a positive connection. More sunlight means higher temperature. They go up together.
+
+---
+
+### Question 4
+
+Which would feel hotter in the sun?
+
+A. A white piece of paper
+B. A black piece of paper
+C. They feel the same
+
+Correct Answer: B
+
+Feedback: Yes! Dark colors soak up more sunlight and get hotter than light colors. A black piece of paper gets hotter in the sun because dark colors absorb more sunlight and heat up more.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: A
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

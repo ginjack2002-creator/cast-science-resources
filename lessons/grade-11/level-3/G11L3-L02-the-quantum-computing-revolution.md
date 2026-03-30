@@ -907,6 +907,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS4-3, HS-PS4-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A qubit differs from a classical bit because a qubit can exist in superposition. What does this mean for computational processing?
+
+A. A qubit processes information twice as fast as a classical bit
+B. A qubit can represent both 0 and 1 simultaneously with different probability amplitudes, enabling quantum parallelism
+C. A qubit stores two classical bits of information in the same physical space
+D. A qubit switches between 0 and 1 faster than a classical bit
+
+Correct Answer: B
+
+Feedback: Correct. Superposition allows a qubit to exist in a combination of 0 and 1 states simultaneously, described by probability amplitudes. This enables quantum algorithms to explore many solutions in parallel. Superposition is not about speed or storage size. A qubit occupies both 0 and 1 states simultaneously with different probability amplitudes until measured. This allows quantum algorithms to process exponentially many states in parallel.
+
+---
+
+### Question 2
+
+Superconducting qubits must be cooled to approximately 15 millikelvin, colder than outer space. What is the primary reason for this extreme cooling requirement?
+
+A. Superconducting materials only become conductive at very low temperatures
+B. Thermal energy at higher temperatures destroys the fragile quantum superposition states that enable quantum computation
+C. The cooling system generates the magnetic fields needed for qubit operations
+D. Low temperatures increase the physical size of qubits, making them easier to manufacture
+
+Correct Answer: B
+
+Feedback: Correct. Even tiny amounts of thermal energy cause decoherence, destroying the quantum superposition that gives qubits their computational advantage. Extreme cooling minimizes this environmental interference. The primary reason is decoherence. Thermal vibrations, even at millikelvin scales, can destroy the quantum superposition states. Extreme cooling minimizes thermal noise so qubits maintain their quantum properties long enough to complete calculations.
+
+---
+
+### Question 3
+
+Why is quantum error correction fundamentally different from classical error correction?
+
+A. Quantum systems do not experience errors during computation
+B. Classical errors can be detected by copying the data and comparing, but quantum states cannot be copied without destroying them
+C. Quantum error correction requires fewer resources than classical error correction
+D. Classical computers use parity bits while quantum computers use standard checksums
+
+Correct Answer: B
+
+Feedback: Correct. The no-cloning theorem prevents copying quantum states, so error correction must use fundamentally different strategies, such as encoding one logical qubit across many physical qubits to detect and correct errors indirectly. The core difference is that quantum states cannot be copied or directly measured without destroying them (the no-cloning theorem). Classical error correction relies on copying data to detect errors, but quantum error correction must encode information redundantly across many physical qubits.
+
+---
+
+### Question 4
+
+A quantum computer with 50 qubits can theoretically represent 2^50 states simultaneously. Why doesn't this automatically make it faster than a classical supercomputer for all problems?
+
+A. 50 qubits cannot store enough data for complex problems
+B. Quantum advantage only exists for specific problem types where quantum algorithms exploit interference and entanglement; many problems have no known quantum speedup
+C. Classical supercomputers always run faster because they operate at room temperature
+D. The 2^50 states are all identical and provide no computational diversity
+
+Correct Answer: B
+
+Feedback: Correct. Quantum advantage is problem-specific. Only certain problems, such as factoring, optimization, and quantum simulation, have quantum algorithms that are provably faster. For many everyday computations, classical computers are equally or more efficient. Quantum speedup is not universal. It requires quantum algorithms that exploit superposition, entanglement, and interference for specific problem structures. Many computational tasks have no known quantum advantage.
+
+---
+
+### Question 5
+
+Decoherence sets a time limit on quantum computation. Which statement best describes the engineering challenge this creates?
+
+A. All quantum computations must complete before qubits lose their quantum states, but error correction to extend this time requires additional qubits and gate operations that themselves introduce errors
+B. Decoherence can be completely eliminated by using better materials
+C. Decoherence only affects the final measurement step, not the computation itself
+D. Longer computations produce more accurate results because qubits stabilize over time
+
+Correct Answer: A
+
+Feedback: Correct. This is the central paradox: decoherence limits computation time, but error correction (the solution) consumes the very qubits and gate operations that decoherence is degrading, creating a challenging resource trade-off. Decoherence creates a countdown clock. The solution, quantum error correction, requires more qubits and more gates, which themselves are imperfect and consume limited resources. This creates a paradox where the cure for errors consumes the resources errors are destroying.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's quantum computing model shows that increasing qubit count from 50 to 100 doubles the potential computational power but increases the gate error rate from 0.5% to 0.8% per operation. For a 1,000-gate circuit, what is the most accurate analysis of this trade-off?
+
+A. The increased qubit count will always outweigh the higher error rate
+B. At 0.8% error per gate across 1,000 gates, the cumulative error probability approaches certainty, meaning the additional qubits provide no usable computational advantage without improved error correction
+C. The error rate increase is negligible because individual gate errors do not compound
+D. Reducing the circuit to 100 gates would eliminate all errors
+
+Correct Answer: B
+
+Feedback: Correct. Compound error probability across 1,000 gates at 0.8% per gate means the probability of zero errors is approximately (0.992)^1000, which is vanishingly small. More qubits are useless if the computation is drowned in errors. Gate errors compound across circuit depth. At 0.8% per gate over 1,000 gates, the probability that the entire circuit executes correctly is (0.992)^1000, which is extremely small. The additional qubits cannot overcome this error accumulation without better error correction.
+
+---
+
+### Question 2
+
+The model demonstrates that quantum volume, not raw qubit count, determines actual computational capability. Which combination of improvements would most effectively increase quantum volume?
+
+A. Doubling qubit count while keeping all other parameters the same
+B. Simultaneously improving gate fidelity, coherence time, and qubit connectivity while modestly increasing qubit count
+C. Maximizing qubit count and accepting higher error rates as a necessary trade-off
+D. Reducing operating temperature from 15 millikelvin to 10 millikelvin without any other changes
+
+Correct Answer: B
+
+Feedback: Correct. Quantum volume is a holistic metric. Increasing qubit count without improving gate fidelity, coherence, and connectivity produces an unusable system. Balanced improvement across all parameters yields the greatest gain in actual computational capability. Quantum volume combines qubit count, gate fidelity, coherence time, and connectivity into a single metric. Improving one dimension alone, especially qubit count, without improving others provides minimal real-world computational gain.
+
+---
+
+### Question 3
+
+A simulation shows that a quantum algorithm solves an optimization problem in 10 seconds that would take a classical computer 10,000 years. A student claims this proves quantum computers are universally superior. Which response best evaluates this claim?
+
+A. The claim is correct because the speedup factor is enormous
+B. The claim is incorrect because the comparison only demonstrates quantum advantage for that specific problem class; quantum computers may offer no speedup for sorting, databases, or many other computational tasks
+C. The claim is incorrect because classical computers will eventually match quantum speed through hardware improvements
+D. The claim is correct because all NP-hard problems can be solved faster on quantum computers
+
+Correct Answer: B
+
+Feedback: Correct. Quantum advantage is problem-specific. Exponential speedups exist for certain problem classes (factoring, certain optimizations, quantum simulation) but not for general-purpose computing. The dramatic speedup in one domain does not generalize. Quantum advantage is domain-specific. Some problems have provable quantum speedups, but many do not. Quantum computers are not universally faster; they exploit specific mathematical structures that only some problems possess.
+
+---
+
+### Question 4
+
+In the model, a student notices that entanglement fidelity drops from 99.5% to 97% when the system scales from 20 to 80 qubits. What is the most significant consequence of this degradation for quantum algorithms?
+
+A. The system will consume 2.5% more electricity
+B. Algorithms that depend on entanglement to coordinate multi-qubit operations will produce increasingly unreliable results, potentially making the larger system less capable than the smaller one for entanglement-dependent computations
+C. Individual qubit performance improves to compensate for lower fidelity
+D. The system can still execute all quantum algorithms with minor output adjustments
+
+Correct Answer: B
+
+Feedback: Correct. Many quantum algorithms rely on high-fidelity entanglement. A drop from 99.5% to 97% compounds across operations, and for algorithms requiring extensive entanglement, the larger system may produce worse results than the smaller, higher-fidelity one. Entanglement fidelity drops compound across multi-qubit operations. For algorithms heavily dependent on entanglement, the error accumulation in the 80-qubit system could make it effectively less capable than the 20-qubit system despite having four times more qubits.
+
+---
+
+### Question 5
+
+Based on the quantum computing model, which conclusion about the relationship between coherence time and circuit depth is best supported by the simulation data?
+
+A. Coherence time and circuit depth are independent variables with no relationship
+B. Coherence time sets an absolute ceiling on circuit depth because all gate operations must complete before quantum states decohere, making coherence time the fundamental bottleneck that limits the complexity of solvable problems
+C. Longer circuits always produce more accurate results regardless of coherence time
+D. Circuit depth can exceed coherence time limits by using faster gate operations without any trade-offs
+
+Correct Answer: B
+
+Feedback: Correct. Coherence time is the fundamental constraint. Every gate operation takes time, and the total circuit must complete before decoherence destroys the quantum state. This makes coherence time the ultimate limit on computational depth and problem complexity. Coherence time acts as a hard deadline. Since each gate operation consumes time, the maximum circuit depth equals coherence time divided by gate time. This ceiling limits which problems quantum computers can solve, making coherence time the foundational constraint.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: A
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

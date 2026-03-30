@@ -724,6 +724,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens when you hit a drum?
+
+A. It makes a sound
+B. It changes color
+C. It gets smaller
+
+Correct Answer: A
+
+Feedback: Yes! When you hit a drum, it shakes and makes a sound. Think about what you hear when you tap a drum. Hitting a drum makes it shake and create a sound.
+
+---
+
+### Question 2
+
+How does sound get to your ears?
+
+A. It flies like a bird
+B. It travels through the air
+C. It walks on the ground
+
+Correct Answer: B
+
+Feedback: That is right! Sound moves through the air to reach your ears. Sound is invisible. It moves through the air in waves until it reaches your ears.
+
+---
+
+### Question 3
+
+What makes a louder sound?
+
+A. Tapping a drum softly
+B. Hitting a drum very hard
+C. Looking at a drum
+
+Correct Answer: B
+
+Feedback: Yes! Hitting harder makes bigger shakes and a louder sound. When you hit something harder, it shakes more and makes a louder sound.
+
+---
+
+### Question 4
+
+What is shaking back and forth very fast called?
+
+A. A shadow
+B. A rainbow
+C. A vibration
+
+Correct Answer: C
+
+Feedback: That is right! Shaking back and forth very fast is called a vibration. When something shakes back and forth really fast, scientists call that a vibration.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What causes sound?
+
+A. Light shining on something
+B. Vibrations from something shaking
+C. Wind blowing
+
+Correct Answer: B
+
+Feedback: Yes! All sounds are made by vibrations. Something must shake to make a sound. Every sound starts with a vibration. Something has to shake back and forth to create sound.
+
+---
+
+### Question 2
+
+When vibration strength goes UP, what happens to the sound?
+
+A. The sound gets louder
+B. The sound goes away
+C. The sound stays the same
+
+Correct Answer: A
+
+Feedback: That is right! Bigger vibrations make louder sounds. Remember, stronger vibrations push the air harder, so the sound gets louder.
+
+---
+
+### Question 3
+
+If you pluck a guitar string gently, what kind of sound does it make?
+
+A. A very loud sound
+B. No sound at all
+C. A soft, quiet sound
+
+Correct Answer: C
+
+Feedback: Yes! A gentle pluck makes a small vibration and a soft sound. Gentle plucking means small vibrations, which make soft, quiet sounds.
+
+---
+
+### Question 4
+
+You put your hand on a speaker that is playing music. What do you feel?
+
+A. Nothing
+B. Vibrations
+C. Cold air
+
+Correct Answer: B
+
+Feedback: Yes! You can feel the vibrations because sound is made by things shaking. A speaker shakes to make sound. If you touch it, you can feel those vibrations.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

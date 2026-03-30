@@ -891,6 +891,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-8, HS-LS4-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Animal migration is a seasonal movement between distinct habitats. What is the primary evolutionary driver that maintains migration behavior in a population?
+
+A. Animals migrate because they enjoy traveling and exploring new environments
+B. Migration provides a net reproductive advantage: animals that migrate produce more surviving offspring than those that do not, despite the journey's risks
+C. Animals migrate because other animals in the group force them to follow
+D. Migration occurs randomly with no evolutionary explanation
+
+Correct Answer: B
+
+Feedback: Correct. Migration is maintained by natural selection because the reproductive benefits at the destination (abundant food, safe breeding grounds) outweigh the mortality costs of the journey. It is a cost-benefit equation refined over millions of years. Migration persists because it is an evolutionarily stable strategy: the reproductive payoff at the destination exceeds the mortality cost of the journey. Natural selection maintains migration when stay-at-home individuals produce fewer surviving offspring.
+
+---
+
+### Question 2
+
+Many migratory birds navigate using Earth's magnetic field. What is the term for this biological ability?
+
+A. Echolocation
+B. Magnetoreception
+C. Phototropism
+D. Chemotaxis
+
+Correct Answer: B
+
+Feedback: Correct. Magnetoreception is the ability to detect and orient using Earth's magnetic field. It has been documented in birds, sea turtles, salmon, and other migratory species, likely using magnetite crystals or cryptochrome proteins. Magnetoreception is the biological sense that allows organisms to detect Earth's magnetic field for navigation. It is distinct from echolocation (sound-based), phototropism (light-directed growth), and chemotaxis (chemical-directed movement).
+
+---
+
+### Question 3
+
+Stopover sites are locations where migratory animals rest and refuel during their journey. Why are these sites considered critical to species survival?
+
+A. Stopover sites are where migratory animals permanently settle and establish new populations
+B. Loss of even a single critical stopover site can cause population collapse across the entire migration route because animals cannot complete the journey without refueling
+C. Stopover sites are only used by weak or injured animals and are not important for healthy migrants
+D. Animals do not actually need to stop during migration because they carry enough energy for the entire journey
+
+Correct Answer: B
+
+Feedback: Correct. Most migratory species cannot carry enough energy reserves for the entire journey. They depend on a chain of stopover sites to refuel, and losing one critical link can strand entire populations mid-migration. Stopover sites function as essential refueling stations. Most migrants cannot complete their journey on a single energy load and must stop to eat and rest. Losing a critical stopover site can cause population-level mortality across the species' entire range.
+
+---
+
+### Question 4
+
+Climate change is altering the timing of seasonal events like insect emergence and plant flowering. How might this affect migratory species?
+
+A. Climate change benefits all migrants by extending the growing season at their destination
+B. A phenological mismatch can occur when migrants arrive at breeding grounds on their genetically programmed schedule but peak food resources have already passed due to earlier warming
+C. Climate change has no effect on migration because animals can instantly adjust their departure timing
+D. Climate change only affects non-migratory species because migrants can escape to better climates
+
+Correct Answer: B
+
+Feedback: Correct. Phenological mismatch occurs when migration timing (often triggered by day length, which is not changing) falls out of sync with food availability (which is shifting earlier due to warming), creating a survival crisis at the destination. Climate change creates phenological mismatch: migration timing is often controlled by photoperiod (unchanged), while food availability at the destination shifts with temperature (changing). Animals arrive 'on time' but the food peak has already passed.
+
+---
+
+### Question 5
+
+Many migratory species travel in large groups rather than individually. Which benefit of group migration provides the most direct survival advantage during the journey?
+
+A. Larger groups attract more predators, giving individuals practice at escaping
+B. Group migration provides predator dilution (reduced individual risk), collective navigation accuracy, and energy savings through aerodynamic drafting
+C. Groups migrate faster because dominant individuals force slower members to speed up
+D. Group migration is purely social and provides no survival benefit
+
+Correct Answer: B
+
+Feedback: Correct. Group migration provides multiple survival benefits: each individual's predation risk decreases with group size (dilution), navigation errors average out (collective intelligence), and aerodynamic drafting reduces energy costs. Group migration confers compound survival benefits: predator dilution (lower individual risk in larger groups), collective navigation (averaging out individual errors), and energy efficiency (drafting reduces flight costs by up to 25%).
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the migration model, what does the relationship between Climate Trigger and Food Availability reveal as the most dangerous threat to migratory species?
+
+A. That food availability has no relationship to migration timing
+B. That climate change is decoupling these two variables: Climate Trigger (photoperiod) remains constant while Food Availability shifts with temperature, creating a phenological mismatch that undermines the entire migration strategy
+C. That Climate Trigger and Food Availability always remain perfectly synchronized
+D. That animals can consciously adjust their departure date to match food availability
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that migration evolved when these two clocks were synchronized. Climate change is disrupting Food Availability timing while leaving the photoperiod trigger unchanged, creating a potentially fatal mismatch. The model demonstrates that migration timing evolved when photoperiod (the departure trigger) reliably predicted food availability at the destination. Climate change is shifting food timing independently of day length, breaking this ancient coordination.
+
+---
+
+### Question 2
+
+The model shows that Group Size provides compound benefits through the 'many wrongs' principle. What does this principle demonstrate about collective navigation?
+
+A. That all individuals in a group navigate perfectly, making no errors
+B. That individual navigation errors are random and tend to cancel out when averaged across a group, resulting in a more accurate collective trajectory than any single individual could achieve
+C. That only the lead animal navigates while all others follow blindly
+D. That groups always navigate worse than individuals because they argue about direction
+
+Correct Answer: B
+
+Feedback: Correct. The 'many wrongs' principle shows that when individual navigation errors are independent and random, the group's average heading is more accurate than any single member's heading, improving collective navigation accuracy. The 'many wrongs' principle is a statistical phenomenon: each individual's navigation has some random error, but when the group averages these independent errors, they cancel out, producing a collective heading more accurate than any individual's.
+
+---
+
+### Question 3
+
+A student runs the model with a scenario where one critical stopover site is removed from the migration route. What does the model predict?
+
+A. Animals easily skip the missing stopover and continue to the next one
+B. Energy Reserves become depleted before reaching the next refueling point, leading to increased mortality that can cause population-level collapse even when breeding and wintering grounds remain intact
+C. Animals permanently settle at the last available stopover site
+D. Only old or weak animals are affected; healthy animals complete the journey without stopping
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that migration routes function as a chain of energy stations. Removing one link creates a gap too large for energy reserves to bridge, causing widespread mortality that cascades to population-level impacts. The model shows that stopover sites form an interconnected chain. Most migrants cannot simply skip a stop because their energy reserves are calibrated for the distance between established refueling points. Removing a critical stopover creates a lethal energy gap.
+
+---
+
+### Question 4
+
+The model demonstrates that migration is an evolutionary cost-benefit calculation. Which evidence from the model best explains why migration remains stable in a population?
+
+A. Migration is a learned behavior that parents teach to offspring each generation
+B. Reproductive Success at the destination consistently exceeds the mortality cost of the journey, making migratory individuals produce more surviving offspring than non-migratory competitors
+C. All animals migrate because it is an instinct that cannot be selected against
+D. Migration exists because habitats are always identical at both endpoints
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that migration is evolutionarily stable only when the reproductive payoff exceeds the journey's mortality cost. If conditions change to shift this balance, migration can be lost from a population. The model frames migration as an ongoing cost-benefit equation shaped by natural selection. Reproductive Success at the destination must consistently exceed journey mortality for migration to be maintained. When this balance shifts, populations may evolve to become sedentary.
+
+---
+
+### Question 5
+
+Based on the model, which combination of human-caused changes poses the greatest threat to migratory species survival?
+
+A. Increased tourism at bird-watching sites along migration routes
+B. Climate change disrupting food timing (phenological mismatch) combined with habitat destruction eliminating critical stopover sites, simultaneously breaking both the navigation reliability and energy supply that migration depends on
+C. Construction of wind farms at the final destination only
+D. Artificial lighting in cities that attracts migrating birds at night
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that migration depends on two pillars: timing coordination (food must be available on arrival) and infrastructure (stopover sites must exist for refueling). Climate change attacks the first while habitat destruction attacks the second, creating a compound threat. The model reveals that migration is vulnerable to compound threats. Climate change creates phenological mismatch (timing failure), while habitat destruction removes stopover sites (energy failure). Together, these simultaneously undermine the two fundamental requirements for successful migration.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

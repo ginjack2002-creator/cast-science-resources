@@ -726,6 +726,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do you need to make a shadow?
+
+A. Darkness and a blanket
+B. Light and something to block it
+C. Paint and paper
+
+Correct Answer: B
+
+Feedback: Yes! You need a light and something that blocks it to make a shadow. A shadow is made when something stands in the way of light and blocks it.
+
+---
+
+### Question 2
+
+Where does a shadow appear?
+
+A. In front of the light
+B. On the same side as the light
+C. Behind the object, away from the light
+
+Correct Answer: C
+
+Feedback: That is right! A shadow appears behind the object, on the side away from the light. Shadows appear behind objects because that is where the light cannot reach.
+
+---
+
+### Question 3
+
+Can you make a shadow with a clear glass cup?
+
+A. Yes, everything makes a shadow
+B. No, because light goes through clear glass
+C. Only if the cup is full of water
+
+Correct Answer: B
+
+Feedback: Yes! Clear glass lets light pass through, so it does not block the light to make a shadow. Light passes through clear glass. Since nothing is blocked, no shadow is made.
+
+---
+
+### Question 4
+
+Is a shadow alive?
+
+A. Yes, shadows are alive
+B. No, a shadow is just a dark area where light is blocked
+C. Yes, shadows follow you
+
+Correct Answer: B
+
+Feedback: That is right! Shadows are not alive. They are just dark spots where light cannot reach. Shadows are not alive. They are simply dark areas that appear when something blocks the light.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is a light source?
+
+A. A dark room
+B. The thing that makes light, like the sun or a flashlight
+C. A shadow on the wall
+
+Correct Answer: B
+
+Feedback: Yes! A light source is something that makes light, like the sun, a flashlight, or a lamp. A light source is anything that produces light, such as the sun, a flashlight, or a lamp.
+
+---
+
+### Question 2
+
+When the light is CLOSER to an object, what happens to the shadow?
+
+A. The shadow gets smaller
+B. The shadow disappears
+C. The shadow gets bigger
+
+Correct Answer: C
+
+Feedback: That is right! When the light moves closer to the object, the shadow gets bigger. Moving the light closer makes the object block more light, which creates a bigger shadow.
+
+---
+
+### Question 3
+
+When the light is FAR from an object, what happens to the shadow?
+
+A. The shadow gets bigger
+B. The shadow gets smaller
+C. The shadow turns colors
+
+Correct Answer: B
+
+Feedback: Yes! When the light is farther away, the shadow gets smaller. Moving the light farther away means the object blocks less of the total light, making a smaller shadow.
+
+---
+
+### Question 4
+
+You want to make a GIANT shadow puppet on the wall. What should you do?
+
+A. Move the flashlight far away from the puppet
+B. Use a smaller puppet
+C. Move the flashlight close to the puppet
+
+Correct Answer: C
+
+Feedback: Yes! Moving the light closer to the puppet makes the shadow much bigger. That is the trick shadow puppeteers use! To make a bigger shadow, move the light closer to the object. The closer the light, the bigger the shadow.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

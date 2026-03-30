@@ -864,6 +864,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why do polar bears have thick white fur?
+
+A. Because they think it looks nice
+B. Because the fur keeps them warm and helps them hide in the snow
+C. Because all bears have white fur
+D. Because they eat too much snow
+
+Correct Answer: B
+
+Feedback: That is right! A polar bear's thick fur is a body structure that serves two functions: keeping the bear warm in freezing temperatures and providing camouflage in the snow. Polar bears have thick white fur because it helps them survive. The fur keeps them warm in the Arctic cold and helps them blend in with the snow to hunt.
+
+---
+
+### Question 2
+
+What is the difference between an external structure and an internal structure?
+
+A. External structures are big and internal structures are small
+B. External structures are on the outside of the body and internal structures are on the inside
+C. External structures are useful and internal structures are not
+D. There is no difference between them
+
+Correct Answer: B
+
+Feedback: Correct! External structures are body parts on the outside (like fur, claws, and shells) and internal structures are body parts on the inside (like bones, lungs, and hearts). The difference is location. External structures are on the outside of the animal's body, and internal structures are on the inside. Both are important for survival.
+
+---
+
+### Question 3
+
+A bird has a long, thin beak. What do you think this beak helps the bird do?
+
+A. Dig underground tunnels
+B. Reach insects or nectar deep inside flowers or bark
+C. Fly faster through the air
+D. Breathe underwater
+
+Correct Answer: B
+
+Feedback: Right! A long, thin beak is a body structure that helps a bird reach food in hard-to-reach places, like insects inside tree bark or nectar inside flowers. Think about what a long, thin shape is good for. It can reach into narrow spaces. Birds with long beaks use them to reach insects or nectar that other birds cannot get to.
+
+---
+
+### Question 4
+
+What does 'survival' mean for an animal?
+
+A. Being the biggest animal in the area
+B. Living in a zoo where people take care of you
+C. Staying alive by finding food, avoiding predators, and having babies
+D. Being able to run faster than every other animal
+
+Correct Answer: C
+
+Feedback: Exactly! Survival means staying alive by meeting basic needs: finding food and water, staying safe from predators, and reproducing (having babies) to continue the species. Survival is not about being the biggest or fastest. It means staying alive by finding food, avoiding danger, and having babies so the species continues.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, Body Structure Type and Environment Danger Level are both EXTERNAL components. What does this tell us?
+
+A. They are both found outside the animal's body
+B. They are both things we can set or change to see how survival rate responds
+C. They are both unimportant to the model
+D. They both cause the animal to run away
+
+Correct Answer: B
+
+Feedback: Right! In the model, external components are the inputs we can control. We set the body structure type and the environment danger level, then observe how survival rate responds. In a model, external components are inputs we can set and change. Body structure type and environment danger level are both inputs that affect the survival rate output.
+
+---
+
+### Question 2
+
+An animal with thick fur is placed in a hot desert environment. What does the model predict will happen to its survival rate?
+
+A. Survival rate will be high because fur always helps animals survive
+B. Survival rate will be low because the body structure does not match the environment
+C. Survival rate will stay the same because fur does not affect survival
+D. Survival rate depends only on how fast the animal can run
+
+Correct Answer: B
+
+Feedback: Correct! The model showed that survival rate drops when body structures do not match the environment. Thick fur would overheat an animal in a desert. The same body structure can help or hurt survival depending on the environment. Thick fur is great in the Arctic but harmful in a desert because it traps too much heat.
+
+---
+
+### Question 3
+
+Which statement best describes the relationship between body structure and survival?
+
+A. Animals with any body structure can survive anywhere
+B. Only external structures matter for survival, not internal structures
+C. Animals with structures that match their environment's dangers have the best chance of survival
+D. Bigger animals always survive better than smaller animals
+
+Correct Answer: C
+
+Feedback: Exactly! The model demonstrated that animals survive best when their body structures match the specific dangers in their environment. A perfect match leads to high survival. Survival depends on how well an animal's body structures fit its environment. Both internal and external structures matter, and size alone does not determine survival.
+
+---
+
+### Question 4
+
+A cactus has a thick waxy coating and sharp spines. How do these structures help it survive in the desert?
+
+A. The wax keeps it cool and the spines make music in the wind
+B. The wax keeps water inside the plant and the spines protect it from animals that want to eat it
+C. The wax makes it shiny and the spines help it walk
+D. The wax attracts rain and the spines collect sunlight
+
+Correct Answer: B
+
+Feedback: Right! In a dry desert, the waxy coating prevents water loss (function: water conservation) and the spines protect the cactus from thirsty animals (function: defense). Each structure has a survival function. Each body structure has a job (function) that helps survival. The waxy coating prevents water from escaping, and the spines protect the cactus from animals trying to eat it for water.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

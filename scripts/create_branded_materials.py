@@ -52,6 +52,100 @@ DESIGN_SYSTEM_CSS = """
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ===== MULTIPLE CHOICE QUESTIONS ===== */
+.mc-section-intro {
+  background: var(--purple-bg);
+  border-left: 4px solid var(--purple-brand);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 16px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+}
+.mc-question-block {
+  margin-bottom: 14px;
+  page-break-inside: avoid;
+}
+.mc-question-text {
+  font-weight: 700;
+  font-size: 10pt;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.mc-q-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: var(--purple-brand);
+  color: white;
+  border-radius: 50%;
+  font-size: 9pt;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
+}
+.mc-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  margin-left: 30px;
+}
+.mc-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  padding: 4px 8px;
+  border: 1.5px solid var(--purple-light);
+  border-radius: 6px;
+  background: white;
+}
+.mc-choice-letter {
+  font-weight: 800;
+  color: var(--purple-brand);
+  font-family: 'Quicksand', sans-serif;
+  min-width: 14px;
+}
+.mc-post-header {
+  background: linear-gradient(135deg, var(--teal-brand), var(--purple-brand));
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 11pt;
+  margin-bottom: 12px;
+}
+/* Answer key MC styles */
+.mc-answer-block {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--purple-bg);
+  border-radius: 8px;
+  font-size: 9pt;
+  page-break-inside: avoid;
+}
+.mc-answer-q {
+  font-weight: 700;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+}
+.mc-answer-correct {
+  color: var(--green-pos);
+  font-weight: 700;
+}
+.mc-answer-feedback {
+  font-size: 8.5pt;
+  color: var(--gray-text);
+  margin-top: 3px;
+  font-style: italic;
+}
+
 @page { size: letter; margin: 0.5in; }
 
 @media print {
@@ -391,10 +485,126 @@ def html_escape(text):
 
 
 # ============================================================
+# MC QUESTION LOADER
+# ============================================================
+
+def load_mc_questions(lesson_id):
+    """Load multiple choice questions for a lesson from the question files."""
+    scripts_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Map lesson ID prefix to question file
+    # Examples: GK-L01, G01-L01, G05-L02, G09L1-L01, NE-L1-01
+    prefix = lesson_id.split("-")[0]  # GK, G01, G09L1, NE, etc.
+
+    file_map = {
+        "GK": "lesson_questions_GK.py",
+        "G01": "lesson_questions_G01.py",
+        "G02": "lesson_questions_G02.py",
+        "G03": "lesson_questions_G03.py",
+        "G04": "lesson_questions_G04.py",
+        "G05": "lesson_questions_G05.py",
+        "G06": "lesson_questions_G06.py",
+        "G07": "lesson_questions_G07.py",
+        "G08": "lesson_questions_G08.py",
+        "G09L1": "lesson_questions_G09_L1.py",
+        "G09L2": "lesson_questions_G09_L2.py",
+        "G09L3": "lesson_questions_G09_L3.py",
+        "G10L1": "lesson_questions_G10_L1.py",
+        "G10L2": "lesson_questions_G10_L2.py",
+        "G10L3": "lesson_questions_G10_L3.py",
+        "G11L1": "lesson_questions_G11_L1.py",
+        "G11L2": "lesson_questions_G11_L2.py",
+        "G11L3": "lesson_questions_G11_L3.py",
+        "G12L1": "lesson_questions_G12_L1.py",
+        "G12L2": "lesson_questions_G12_L2.py",
+        "G12L3": "lesson_questions_G12_L3.py",
+    }
+
+    # Handle Nature's Engineers
+    if lesson_id.startswith("NE"):
+        filename = "lesson_questions_natures_engineers.py"
+    else:
+        filename = file_map.get(prefix)
+
+    if not filename:
+        return None
+
+    filepath = os.path.join(scripts_dir, filename)
+    if not os.path.exists(filepath):
+        return None
+
+    try:
+        spec = importlib.util.spec_from_file_location(f"questions_{prefix}", filepath)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+
+        if hasattr(mod, "ALL_QUESTIONS"):
+            return mod.ALL_QUESTIONS.get(lesson_id)
+    except Exception as e:
+        print(f"  Note: Could not load MC questions for {lesson_id}: {e}")
+
+    return None
+
+
+def render_mc_questions_html(questions, assessment_type="pre"):
+    """Render MC questions as HTML for the Student Activity Pack."""
+    if not questions:
+        return ""
+
+    key = f"mc_{assessment_type}_assessment"
+    mc_list = questions.get(key, [])
+    if not mc_list:
+        return ""
+
+    html = ""
+    for i, q in enumerate(mc_list, 1):
+        choices_html = ""
+        for letter in ["A", "B", "C", "D"]:
+            if letter in q.get("choices", {}):
+                choices_html += f'''<div class="mc-choice">
+            <span class="mc-choice-letter">{letter}.</span>
+            <span>{html_escape(q["choices"][letter])}</span>
+          </div>'''
+
+        html += f'''<div class="mc-question-block">
+      <div class="mc-question-text"><span class="mc-q-num">{i}</span><span>{html_escape(q["question"])}</span></div>
+      <div class="mc-choices">{choices_html}</div>
+    </div>'''
+
+    return html
+
+
+def render_mc_answer_key_html(questions):
+    """Render MC question answer keys for the Teacher's Guide."""
+    if not questions:
+        return ""
+
+    html = ""
+    for assessment_type, label in [("pre", "Pre-Assessment"), ("post", "Post-Assessment")]:
+        key = f"mc_{assessment_type}_assessment"
+        mc_list = questions.get(key, [])
+        if not mc_list:
+            continue
+
+        html += f'<h4 style="margin-top:12px;">Multiple Choice {label} Answer Key</h4>'
+        for i, q in enumerate(mc_list, 1):
+            correct = q.get("correct", "")
+            correct_text = q.get("choices", {}).get(correct, "")
+            feedback = q.get("feedback_correct", "")
+            html += f'''<div class="mc-answer-block">
+        <div class="mc-answer-q">{i}. {html_escape(q["question"])}</div>
+        <div class="mc-answer-correct">Correct: {correct}) {html_escape(correct_text)}</div>
+        <div class="mc-answer-feedback">{html_escape(feedback)}</div>
+      </div>'''
+
+    return html
+
+
+# ============================================================
 # STUDENT ACTIVITY PACK GENERATOR
 # ============================================================
 
-def generate_student_activity_pack(data):
+def generate_student_activity_pack(data, mc_questions=None):
     """Generate the complete Student Activity Pack HTML from lesson data."""
     lesson_id = data["id"]
     title = html_escape(data["title"])
@@ -448,6 +658,10 @@ def generate_student_activity_pack(data):
       <div class="question-label"><span class="q-number">{i}</span><span>{html_escape(q)}</span></div>
       <div class="response-lines"></div>
     </div>'''
+
+    # MC pre-assessment questions
+    mc_pre_html = render_mc_questions_html(mc_questions, "pre") if mc_questions else ""
+    mc_post_html = render_mc_questions_html(mc_questions, "post") if mc_questions else ""
 
     # Scenario cards
     scenario_html = ""
@@ -552,6 +766,7 @@ def generate_student_activity_pack(data):
       <li><span>Research &amp; Extend</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
       <li><span>Reflection Questions</span><span class="toc-dots"></span><span class="toc-page">9</span></li>
       <li><span>STEM Challenge</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
+      {"<li><span>Post-Assessment</span><span class='toc-dots'></span><span class='toc-page'>11</span></li>" if mc_post_html else ""}
     </ul>
   </div>
   {page_footer_html(lesson_id, "Student Activity Pack", 2)}
@@ -562,6 +777,7 @@ def generate_student_activity_pack(data):
   {section_page_header("1", "Pre-Assessment")}
   <div class="page-content">
     <div class="section-intro"><strong>What Do You Know?</strong> Answer each question below to the best of your ability. There are no wrong answers &mdash; this helps your teacher understand what you already know!</div>
+    {"<div class='mc-section-intro'><strong>Multiple Choice:</strong> Circle the best answer for each question.</div>" + mc_pre_html if mc_pre_html else ""}
     {pre_q_html}
   </div>
   {page_footer_html(lesson_id, "Student Activity Pack", 3)}
@@ -685,6 +901,17 @@ def generate_student_activity_pack(data):
   {page_footer_html(lesson_id, "Student Activity Pack", 10)}
 </div>
 
+{"" if not mc_post_html else f"""<!-- SECTION 9: POST-ASSESSMENT -->
+<div class="page" style="position:relative;">
+  {section_page_header("9", "Post-Assessment")}
+  <div class="page-content">
+    <div class="mc-post-header">Show What You Learned!</div>
+    <div class="mc-section-intro"><strong>Multiple Choice:</strong> Now that you have completed the lesson, circle the best answer for each question. Compare your answers to your pre-assessment &mdash; did your thinking change?</div>
+    {mc_post_html}
+  </div>
+  {page_footer_html(lesson_id, "Student Activity Pack", 11)}
+</div>
+"""}
 </body>
 </html>'''
 
@@ -695,7 +922,7 @@ def generate_student_activity_pack(data):
 # TEACHER'S GUIDE GENERATOR
 # ============================================================
 
-def generate_teachers_guide(data):
+def generate_teachers_guide(data, mc_questions=None):
     """Generate the complete Teacher's Guide HTML from lesson data."""
     lesson_id = data["id"]
     title = html_escape(data["title"])
@@ -777,6 +1004,9 @@ def generate_teachers_guide(data):
     components = data.get("components", [])
     ext_names = ", ".join([c[0] for c in components if c[2]])
     int_names = ", ".join([c[0] for c in components if not c[2]])
+
+    # MC answer key
+    mc_answer_key_html = render_mc_answer_key_html(mc_questions) if mc_questions else ""
 
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -954,6 +1184,7 @@ def generate_teachers_guide(data):
       <h4>Key Discoveries</h4>
       <ul>{answer_disc}</ul>
     </div>
+    {mc_answer_key_html}
   </div>
   {page_footer_html(lesson_id, "Teacher's Guide", 8)}
 </div>
@@ -1229,15 +1460,25 @@ def main():
 
         output_dir, lesson_folder = get_output_dir(args.grade, lesson_num)
 
+        # Load MC questions if available
+        lesson_id = data.get("id", "")
+        mc_questions = load_mc_questions(lesson_id)
+        if mc_questions:
+            pre_count = len(mc_questions.get("mc_pre_assessment", []))
+            post_count = len(mc_questions.get("mc_post_assessment", []))
+            print(f"  [MC] Loaded {pre_count} pre + {post_count} post assessment questions")
+        else:
+            print(f"  [MC] No MC questions found for {lesson_id}")
+
         if args.type in ("student", "both"):
-            html = generate_student_activity_pack(data)
+            html = generate_student_activity_pack(data, mc_questions)
             filepath = os.path.join(output_dir, f"{lesson_folder}-Student-Activity-Pack.html")
             with open(filepath, "w", encoding="utf-8") as f:
                 f.write(html)
             print(f"  [OK] Student Activity Pack: {filepath}")
 
         if args.type in ("teacher", "both"):
-            html = generate_teachers_guide(data)
+            html = generate_teachers_guide(data, mc_questions)
             filepath = os.path.join(output_dir, f"{lesson_folder}-Teachers-Guide.html")
             with open(filepath, "w", encoding="utf-8") as f:
                 f.write(html)

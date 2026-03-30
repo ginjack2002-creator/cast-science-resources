@@ -890,6 +890,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A student notices that she checks her phone more frequently during the evening, even though she receives the same number of notifications as during the morning. Which explanation best accounts for this pattern from a homeostatic feedback perspective?
+
+A. Her dopamine receptor sensitivity has decreased throughout the day due to repeated stimulation, requiring more frequent checking to achieve the same reward feeling
+B. Her phone sends more notifications at night because the algorithm detects lower usage
+C. She is simply more bored in the evening and has more free time to check her phone
+D. Her brain produces more dopamine at night due to circadian rhythm cycles
+
+Correct Answer: A
+
+Feedback: Correct. Tolerance buildup from repeated dopamine stimulation throughout the day reduces receptor sensitivity, requiring more frequent checking to achieve the same neurochemical reward, a classic homeostatic disruption. Consider what happens to neurotransmitter receptors when they are repeatedly stimulated over the course of a day. The brain adapts by reducing sensitivity, which drives the need for more frequent stimulation.
+
+---
+
+### Question 2
+
+Which of the following best describes the role of variable reward schedules in social media app design?
+
+A. They ensure users receive a consistent experience each time they open the app
+B. They deliver unpredictable rewards that produce stronger dopamine responses than predictable ones, mimicking slot machine psychology
+C. They reduce the total time users spend on the app by making content less engaging
+D. They help users develop healthy habits by spacing out notifications at regular intervals
+
+Correct Answer: B
+
+Feedback: Correct. Variable reward schedules, where the outcome of checking is unpredictable, produce significantly stronger and more persistent dopamine responses than consistent rewards. This is the same mechanism exploited in gambling. Think about why slot machines are more addictive than vending machines. The unpredictability of the reward, not the reward itself, is what drives the strongest neurochemical response.
+
+---
+
+### Question 3
+
+A neuroscientist proposes that phone addiction operates through a positive feedback loop rather than a negative feedback loop. Which evidence would best support this claim?
+
+A. Users who turn off their phones for a week report reduced urges to check them
+B. Increased phone checking leads to tolerance, which leads to even more checking, escalating the behavior over time
+C. Users who receive consistent notifications check their phones at a steady rate
+D. The brain eventually reaches a saturation point where no further dopamine is released
+
+Correct Answer: B
+
+Feedback: Correct. A positive feedback loop amplifies the output: more checking leads to more tolerance, which leads to more checking. The behavior escalates rather than stabilizing, which is the hallmark of positive feedback. Recall the difference between positive and negative feedback. Positive feedback amplifies a response (it spirals), while negative feedback dampens it (it stabilizes). Which answer describes an escalating spiral?
+
+---
+
+### Question 4
+
+In the context of dopamine and phone usage, tolerance is best defined as which of the following?
+
+A. The brain's ability to handle increasing amounts of screen time without physical harm
+B. A social willingness to accept smartphone use in professional settings
+C. A neurological adaptation where repeated stimulation reduces receptor sensitivity, requiring more intense or frequent stimulation for the same effect
+D. The maximum number of notifications a user can receive before feeling overwhelmed
+
+Correct Answer: C
+
+Feedback: Correct. Tolerance is a neurological adaptation involving dopamine receptor downregulation. As sensitivity decreases, the brain requires increasingly frequent or intense stimulation to produce the same reward feeling. Tolerance in neuroscience refers to a specific biological adaptation at the receptor level, not a social or behavioral threshold. Consider how the brain physically changes in response to repeated chemical stimulation.
+
+---
+
+### Question 5
+
+A researcher compares two groups: one uses an app with randomly timed notifications, and the other uses an app with notifications at fixed hourly intervals. Which prediction is most consistent with behavioral neuroscience?
+
+A. The fixed-interval group will show higher compulsive checking because they can anticipate when rewards arrive
+B. Both groups will show identical checking behavior because the total number of notifications is the same
+C. The random-interval group will show higher compulsive checking because unpredictable timing produces stronger dopamine anticipation responses
+D. The fixed-interval group will develop tolerance faster because their dopamine spikes are more regular
+
+Correct Answer: C
+
+Feedback: Correct. Unpredictable reward timing triggers stronger dopamine anticipation responses. The uncertainty about when a reward will arrive keeps the brain in a heightened state of anticipation, driving more frequent checking behavior. Consider the variable reward schedule principle: which timing pattern creates more uncertainty and anticipation? The brain's dopamine system responds most strongly to unpredictable rewards, not to predictable ones.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's computational model shows that reducing notification frequency to zero for 7 days causes dopamine receptor sensitivity to partially recover, but compulsive checking behavior persists. Which explanation best accounts for these two different recovery patterns?
+
+A. The model has an error because behavior should always match receptor sensitivity
+B. Receptor sensitivity is a neurological adaptation that reverses when stimulation stops, but learned anticipation behavior is a conditioned response that persists independently of receptor state
+C. The checking behavior persists because the phone continues to receive notifications even when alerts are turned off
+D. Dopamine receptors cannot actually recover once tolerance is established
+
+Correct Answer: B
+
+Feedback: Correct. Receptor sensitivity is a physiological adaptation that can partially reverse, but the learned behavior, a conditioned anticipation response, is encoded in neural pathways and persists even after the chemical stimulus is removed. This explains why digital detoxes only partially work. The model reveals two different biological systems at work: receptor chemistry (which can recover) and conditioned behavioral patterns (which are learned). These operate on different timescales and through different mechanisms.
+
+---
+
+### Question 2
+
+Using model evidence, a student argues that making social media rewards predictable rather than variable would reduce compulsive behavior. A classmate counters that this would also reduce engagement, making the app commercially unviable. Which response best evaluates this trade-off using systems thinking?
+
+A. The classmate is correct because reducing dopamine responses will always reduce engagement proportionally
+B. Predictable rewards reduce the dopamine-driven compulsive loop but can maintain engagement through content quality and social connection, meaning the trade-off is not zero-sum
+C. The student is wrong because predictable rewards produce the same dopamine response as variable rewards
+D. The trade-off is irrelevant because all apps eventually lose users regardless of reward schedule
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that reducing variable rewards breaks the compulsive dopamine loop, but engagement can be sustained through other mechanisms (content quality, genuine social interaction) that do not exploit neurological vulnerabilities. The trade-off is not zero-sum. Systems thinking requires considering multiple pathways. Engagement is not solely driven by dopamine exploitation. Consider whether there are other reasons people use social media that do not depend on addictive design patterns.
+
+---
+
+### Question 3
+
+A model simulation shows that after 30 days of high-frequency variable notifications, screen time increased by 340% while self-reported satisfaction decreased by 60%. Which interpretation best explains this divergence?
+
+A. The simulation has an error because increased usage should correlate with increased satisfaction
+B. Users are spending more time on the app because they enjoy it more but are unwilling to admit it on surveys
+C. Tolerance buildup means users need more stimulation to achieve diminishing dopamine rewards, driving increased usage while reducing the subjective reward per interaction
+D. The app's content quality decreased over the 30-day period, frustrating users
+
+Correct Answer: C
+
+Feedback: Correct. This is the signature of a tolerance-driven addiction cycle: behavior escalates (more screen time) while the reward per interaction diminishes (less satisfaction). The dopamine system drives the behavior, not the subjective experience of enjoyment. Consider what tolerance does to the relationship between behavior and reward. When receptor sensitivity decreases, each interaction produces less reward, so the brain drives more frequent behavior to compensate. Usage goes up, satisfaction goes down.
+
+---
+
+### Question 4
+
+An ethical app design team proposes three changes: (1) predictable notification timing, (2) daily usage limits, and (3) removal of infinite scroll. Based on the dopamine feedback model, which change would have the greatest impact on reducing compulsive behavior?
+
+A. Daily usage limits, because they physically prevent excessive screen time
+B. Removal of infinite scroll, because it eliminates the visual stimulus
+C. Predictable notification timing, because it eliminates the variable reward schedule that drives the strongest dopamine anticipation responses
+D. All three changes would have equal impact because they all reduce screen time
+
+Correct Answer: C
+
+Feedback: Correct. The model identifies variable reward schedules as the primary driver of compulsive dopamine responses. Making rewards predictable addresses the root cause of the feedback loop, while usage limits and scroll changes address symptoms without altering the neurochemical driver. The model shows that the variable reward schedule is the primary mechanism driving the dopamine-tolerance-checking loop. Which intervention targets this root mechanism directly rather than addressing downstream symptoms?
+
+---
+
+### Question 5
+
+A policymaker uses the model to argue for regulations requiring social media companies to disclose how their notification algorithms work. An opponent argues that algorithms are proprietary trade secrets. Which claim is best supported by the model evidence?
+
+A. The opponent is correct because algorithms are too complex for the public to understand
+B. The model shows that specific design choices (variable rewards, notification frequency) directly exploit homeostatic feedback mechanisms, and transparency about these choices is necessary for informed consent about neurological risks
+C. The policymaker is wrong because the model shows that individual willpower is the primary factor in phone addiction
+D. Both positions are equally valid because the model cannot distinguish between engineered addiction and user choice
+
+Correct Answer: B
+
+Feedback: Correct. The model provides evidence that specific, identifiable design features exploit homeostatic feedback mechanisms in measurable ways. This evidence supports the argument that users deserve transparency about how their neurochemistry is being targeted, analogous to nutritional labels on food. Review what the model demonstrates about the relationship between design choices and neurological outcomes. The model provides quantifiable evidence that specific design features cause specific neurochemical effects. Consider whether this evidence supports or undermines the case for transparency.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

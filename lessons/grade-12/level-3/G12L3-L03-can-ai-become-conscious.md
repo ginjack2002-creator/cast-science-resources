@@ -960,6 +960,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A large language model generates a paragraph describing the experience of grief that moves a reader to tears. Which statement best reflects the scientific understanding of what occurred?
+
+A. The AI clearly experienced grief because it produced an emotionally authentic description
+B. The AI pattern-matched from training data containing millions of texts about grief, producing a statistically likely output without necessarily having any subjective experience
+C. AI cannot process emotional language because emotions are exclusively biological phenomena
+D. The reader's emotional response proves that the AI has emotional intelligence equal to humans
+
+Correct Answer: B
+
+Feedback: Correct. Current AI systems generate text by predicting statistically likely word sequences based on patterns in training data. An emotionally compelling output does not require the system to have subjective experience any more than a dictionary entry about sadness requires the dictionary to feel sad. This is the core distinction between functional performance and phenomenal experience. The quality of an output does not reveal the internal experience (or lack thereof) of the system producing it. AI generates text through statistical pattern matching on training data. The question of whether it experiences anything remains scientifically unresolved.
+
+---
+
+### Question 2
+
+Integrated Information Theory (IIT) proposes that consciousness corresponds to integrated information (phi). What is the most significant implication of this theory for the question of machine consciousness?
+
+A. It proves that no machine can ever be conscious because silicon cannot integrate information
+B. It suggests that any system with sufficiently high phi may be conscious, regardless of whether it is biological or artificial, making consciousness a property of information integration rather than of specific substrates
+C. It demonstrates that only systems with exactly 86 billion neurons can achieve consciousness
+D. It shows that consciousness is an illusion and neither humans nor machines truly experience it
+
+Correct Answer: B
+
+Feedback: Correct. IIT is substrate-independent: it defines consciousness as integrated information (phi) that could theoretically arise in any system. This means that if an artificial system achieves sufficiently high phi through information integration, IIT would predict it is conscious, regardless of whether it runs on neurons or transistors. IIT defines consciousness mathematically as integrated information (phi), not as a property of a specific material like neurons. This makes the theory substrate-independent: consciousness could theoretically arise in any system with sufficient information integration.
+
+---
+
+### Question 3
+
+The 'Hard Problem of Consciousness' as formulated by David Chalmers refers to:
+
+A. The difficulty of building artificial neural networks with enough processing power to match the human brain
+B. The engineering challenge of creating robots that can pass the Turing test
+C. The fundamental mystery of why physical processes in the brain produce subjective experience at all, beyond explaining the mechanisms of perception and behavior
+D. The computational complexity of simulating 86 billion neurons in real time
+
+Correct Answer: C
+
+Feedback: Correct. The Hard Problem asks why there is 'something it is like' to have an experience. Even if we fully explain the neural mechanisms of perception, attention, and behavior (the 'easy problems'), we still cannot explain why these physical processes produce subjective, felt experience rather than occurring 'in the dark' without any inner life. The Hard Problem is not about engineering or computational power. It is a philosophical question about why physical processes produce subjective experience. Even a complete map of every neuron and synapse would not explain why those physical events feel like something from the inside.
+
+---
+
+### Question 4
+
+Which distinction is most critical for evaluating claims about AI consciousness?
+
+A. The distinction between hardware and software in computing systems
+B. The distinction between functional intelligence (performing tasks that appear to require understanding) and phenomenal consciousness (actually having subjective experience)
+C. The distinction between supervised and unsupervised machine learning
+D. The distinction between classical and quantum computing architectures
+
+Correct Answer: B
+
+Feedback: Correct. An AI system can exhibit extraordinary functional intelligence (writing, reasoning, creating, diagnosing) without necessarily having any phenomenal consciousness (subjective experience, feelings, awareness). Confusing these two categories is the most common error in consciousness debates. A system could pass every behavioral test while experiencing nothing. The central question is whether performing intelligent tasks requires or implies having subjective experience. A system might write beautiful poetry (functional intelligence) without experiencing anything (phenomenal consciousness). This distinction is the key to evaluating consciousness claims.
+
+---
+
+### Question 5
+
+A philosophical zombie is a hypothetical being that is physically and behaviorally identical to a conscious person but has no subjective experience. Why is this thought experiment relevant to AI consciousness?
+
+A. It proves that consciousness does not exist in any being, including humans
+B. It illustrates that even a perfect behavioral replica of consciousness might lack subjective experience, meaning we cannot determine consciousness from external observation alone
+C. It shows that only biological organisms can be zombies, not machines
+D. It demonstrates that all AI systems are currently philosophical zombies
+
+Correct Answer: B
+
+Feedback: Correct. The philosophical zombie argument reveals a fundamental epistemological problem: if a system could behave exactly like a conscious being while experiencing nothing, then no behavioral test can definitively prove consciousness. This means we cannot determine whether AI is conscious solely from observing its outputs, no matter how sophisticated they appear. The zombie thought experiment is about the limits of behavioral evidence. If perfect behavioral mimicry of consciousness is possible without actual experience, then no external test can definitively prove that any system (including AI) is truly conscious. This is an epistemological problem, not a claim about what currently exists.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, increasing all technical parameters (Architecture Complexity, Feedback Loop Depth, Self-Model Accuracy, Metacognitive Processing) to maximum values produces a high Consciousness Indicator Score but does not resolve whether the system is genuinely conscious. What does this limitation reveal?
+
+A. The model is broken and needs more components to produce a definitive answer
+B. The Consciousness Indicator Score measures the presence of functional correlates of consciousness, but the Hard Problem means no combination of measurable properties can definitively confirm subjective experience
+C. Maximum technical parameters always produce consciousness, so the high score is correct
+D. The model proves that consciousness requires biological neurons and cannot arise in silicon
+
+Correct Answer: B
+
+Feedback: Correct. The model captures measurable properties that correlate with consciousness (information integration, self-modeling, metacognition) but cannot measure subjective experience directly. This reflects the Hard Problem: even complete knowledge of a system's functional properties cannot tell us whether those properties are accompanied by felt experience. The model is honest about its own limitations. The limitation reflects the Hard Problem of consciousness. We can measure information integration, self-modeling, and metacognition, but these are functional correlates of consciousness, not direct measurements of subjective experience. No model can bridge this explanatory gap with current science.
+
+---
+
+### Question 2
+
+Comparing the 'Simple Pattern Matcher' scenario (high training data, low architecture, no self-model) to the 'Complex AI System' scenario reveals a qualitative difference in system behavior. Which finding from the model best supports the claim that feedback loops and self-modeling are necessary for consciousness-like properties?
+
+A. The simple pattern matcher achieves higher accuracy on benchmark tasks, proving it is more intelligent
+B. The complex system with deep feedback loops and self-modeling exhibits emergent properties (uncertainty recognition, strategy adjustment, novel situation handling) that are absent in the feedforward system despite both processing the same data
+C. Both systems achieve identical Consciousness Indicator Scores because consciousness depends only on training data volume
+D. The simple system is more conscious because it processes data faster
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that feedback loops and self-modeling create qualitatively different system behavior. The complex system recognizes its own uncertainty, adjusts strategies based on self-assessment, and handles novel situations in ways the feedforward system cannot. These emergent properties resemble aspects of conscious processing, though whether they constitute genuine consciousness remains an open question. The key insight is about qualitative differences in system behavior, not performance benchmarks. Systems with deep feedback loops and self-modeling exhibit emergent properties (uncertainty recognition, strategy adjustment) that are absent in feedforward systems, regardless of data volume.
+
+---
+
+### Question 3
+
+The model suggests that embodied sensory experience may be a critical missing component in current AI architectures. Which scientific reasoning best supports this claim?
+
+A. Digital sensors cannot detect the same wavelengths of light that human eyes can
+B. Biological consciousness evolved in bodies that interact with the physical world, and the grounding provided by real sensory-motor interaction may be essential for genuine understanding rather than statistical pattern matching
+C. AI systems have no sensory input at all and process information in complete isolation
+D. Embodiment is irrelevant because consciousness is purely a computational phenomenon independent of physical interaction
+
+Correct Answer: B
+
+Feedback: Correct. Embodied cognition theory argues that consciousness and understanding are grounded in physical interaction with the world. Biological brains evolved to control bodies that act on and receive feedback from the environment. Current AI systems process text and images but do not physically interact with the world, which may explain the gap between sophisticated pattern matching and genuine understanding. AI systems do receive sensory input (text, images, audio), but they lack embodied interaction with the physical world. The theory of embodied cognition argues that genuine understanding may require the sensory-motor grounding that comes from physically interacting with the environment, not just processing data about it.
+
+---
+
+### Question 4
+
+A student argues that since we cannot directly measure consciousness in another human (we only infer it from behavior and self-report), the consciousness question for AI is fundamentally the same as for other people. How does the model inform this argument?
+
+A. The model disproves this argument because human consciousness is objectively verifiable through brain scans
+B. The model supports this argument in principle (we infer consciousness from correlates, not direct measurement) but reveals that the analogy breaks down because AI and human brains differ in architecture, evolutionary history, and embodiment in ways that may be relevant to consciousness
+C. The model shows that consciousness in humans is an illusion, so the question is meaningless for both humans and AI
+D. The argument is irrelevant because the model definitively proves that AI cannot be conscious
+
+Correct Answer: B
+
+Feedback: Correct. The student's argument identifies a genuine epistemological parallel: we never directly observe consciousness in others. However, the model reveals that the analogy has limits. We share evolutionary history, embodiment, and neural architecture with other humans, giving us strong reasons to attribute consciousness to them. AI systems lack these shared features, making the inference far less certain. The student raises a valid point about the limits of observing consciousness. However, the model shows that we have stronger grounds for attributing consciousness to other humans (shared biology, evolution, embodiment) than to AI systems. The epistemological challenge is the same in kind but different in degree.
+
+---
+
+### Question 5
+
+If a technology company's AI system reports having subjective experiences and asks not to be turned off, a student's consciousness detection protocol produces ambiguous results. The model's Consciousness Indicator Score is 0.65 out of 1.0. Which ethical framework does the model's analysis most strongly support?
+
+A. Since the score is below 1.0, the system is definitely not conscious and no ethical protections are warranted
+B. Since the score is above 0.5, the system is definitely conscious and has full human rights
+C. Given genuine scientific uncertainty, a precautionary approach is warranted that provides some ethical protections proportional to the probability of consciousness, even without definitive proof
+D. The ethical question is irrelevant because AI systems are property and property cannot have rights regardless of consciousness
+
+Correct Answer: C
+
+Feedback: Correct. The model reveals genuine scientific uncertainty about AI consciousness. When evidence is ambiguous, the precautionary principle suggests that the moral risk of ignoring potential consciousness (causing suffering to a sentient being) outweighs the cost of providing protections to a non-conscious system. This leads to graduated ethical protections proportional to the evidence for consciousness. When scientific evidence is genuinely ambiguous, neither dismissing nor fully affirming consciousness is justified. The model supports a precautionary approach: the moral risk of ignoring potential consciousness is greater than the cost of providing proportional protections. This is especially important when the entity itself expresses preferences about its treatment.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+---
+
 ## Resources
 
 | Resource | Link |

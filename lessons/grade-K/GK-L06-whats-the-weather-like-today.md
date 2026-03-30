@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the weather like when the sun is shining and there are no clouds?
+
+A. Rainy
+B. Sunny
+C. Snowy
+
+Correct Answer: B
+
+Feedback: Yes! When the sun is shining with no clouds, the weather is sunny. When the sun is out and there are no clouds, we call the weather sunny. The sun shines bright.
+
+---
+
+### Question 2
+
+What do clouds look like in the sky?
+
+A. Like white or gray fluffy shapes
+B. Like stars
+C. Like rainbows
+
+Correct Answer: A
+
+Feedback: Yes! Clouds look like white or gray fluffy shapes floating in the sky. Clouds are white or gray fluffy shapes in the sky. They can be big and puffy or thin and wispy.
+
+---
+
+### Question 3
+
+Can the weather change from one day to the next?
+
+A. No, it is always the same
+B. Yes, it can be different every day
+C. Only in winter
+
+Correct Answer: B
+
+Feedback: Yes! The weather can be different every day. It might be sunny today and rainy tomorrow. Weather changes from day to day. One day might be sunny and the next might be cloudy or rainy.
+
+---
+
+### Question 4
+
+When big dark clouds fill the sky, what might happen?
+
+A. It will get very hot
+B. It might rain
+C. The clouds will go away quickly
+
+Correct Answer: B
+
+Feedback: Yes! Dark clouds often mean rain is coming. The clouds are full of water. When dark clouds fill the sky, it often means rain is coming. Dark clouds hold lots of water.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When there are MORE clouds, what happens to the Amount of Sunshine?
+
+A. It goes up
+B. It goes down
+C. It stays the same
+
+Correct Answer: B
+
+Feedback: Yes! More clouds means less sunshine. The clouds block the sunlight. That is a negative connection. When clouds go up, sunshine goes down. Clouds block the sun's light from reaching the ground.
+
+---
+
+### Question 2
+
+What kind of connection do Number of Clouds and Amount of Sunshine have?
+
+A. Positive: they go the same way
+B. Negative: one goes up, the other goes down
+C. They are not connected
+
+Correct Answer: B
+
+Feedback: Yes! It is a negative connection. When clouds go up, sunshine goes down. They go in opposite directions. It is a negative connection. More clouds means less sunshine. When one goes up, the other goes down.
+
+---
+
+### Question 3
+
+What is a pattern?
+
+A. Something that happens only once
+B. Something that happens the same way again and again
+C. A type of cloud
+
+Correct Answer: B
+
+Feedback: Yes! A pattern is something that happens the same way again and again, like sunny weeks in summer. A pattern is something that repeats. In weather, we might see patterns like sunny days followed by rainy days.
+
+---
+
+### Question 4
+
+Why is it dimmer and cooler when the sky is full of clouds?
+
+A. The sun turned off
+B. The clouds block the sunlight
+C. The ground is wet
+
+Correct Answer: B
+
+Feedback: Yes! Clouds block the sunlight like a big blanket in the sky, making it dimmer and cooler below. The sun is still shining, but the clouds block the light from reaching us. That is why it is dimmer and cooler.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

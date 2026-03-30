@@ -881,6 +881,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the outermost layer of the Earth called?
+
+A. Mantle
+B. Core
+C. Crust
+D. Magma
+
+Correct Answer: C
+
+Feedback: Correct! The crust is the thin, solid outermost layer of Earth where we live. It sits on top of the mantle. Not quite. The outermost layer of the Earth is the crust. The mantle is below the crust, and the core is at Earth's center.
+
+---
+
+### Question 2
+
+Why do you think earthquakes happen in certain places more than others?
+
+A. Earthquakes happen randomly all over the planet
+B. Earthquakes only happen near oceans
+C. Earthquakes happen where pieces of Earth's surface meet and push against each other
+D. Earthquakes are caused by underground explosions
+
+Correct Answer: C
+
+Feedback: Correct! Earthquakes occur most often at plate boundaries, where large pieces of Earth's crust (tectonic plates) meet and interact. Not quite. Earthquakes are not random. They occur most frequently at plate boundaries, where large sections of Earth's crust push together, pull apart, or slide past each other.
+
+---
+
+### Question 3
+
+What do you think causes the ground to shake during an earthquake?
+
+A. Wind pushing on the ground
+B. The Moon's gravity pulling on Earth
+C. Energy released when rocks suddenly break or slip
+D. Heavy rain soaking into the ground
+
+Correct Answer: C
+
+Feedback: Correct! Earthquakes happen when built-up stress in rocks is suddenly released as energy, creating seismic waves that shake the ground. Not quite. Earthquakes occur when stress builds up in rocks at plate boundaries and is suddenly released as energy. This energy travels as seismic waves that shake the ground.
+
+---
+
+### Question 4
+
+What is beneath the solid ground you walk on?
+
+A. More solid rock all the way to the center of the Earth
+B. Empty space and underground caves
+C. Layers of increasingly hot rock, some of which flows very slowly
+D. Water and underground rivers
+
+Correct Answer: C
+
+Feedback: Correct! Beneath the crust are layers of increasingly hot rock. The mantle is semi-solid and flows very slowly, and the core is extremely hot metal. Not quite. Beneath the surface are layers of rock that get hotter with depth. The mantle is semi-solid rock that flows very slowly over millions of years, driven by heat from the core.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What drives the movement of tectonic plates?
+
+A. Gravity pulling plates toward the equator
+B. Convection currents in the mantle caused by heat from Earth's core
+C. The Moon's gravitational pull on Earth's surface
+D. Wind and ocean currents pushing on the continents
+
+Correct Answer: B
+
+Feedback: Correct! Heat from Earth's core creates convection currents in the mantle. Hot rock rises, cool rock sinks, and this circular flow drags tectonic plates along. Not quite. Tectonic plates are moved by convection currents in the mantle. Heat from Earth's core makes rock rise, and cooler rock sinks, creating a slow circular flow that drags plates.
+
+---
+
+### Question 2
+
+In the tectonic model, what happens when Boundary Friction is set to maximum?
+
+A. Earthquakes happen more frequently but are very small
+B. Plates stop moving permanently
+C. Energy builds up for a long time, then releases as a large earthquake
+D. Volcanic activity increases because friction melts rock
+
+Correct Answer: C
+
+Feedback: Correct! Maximum friction locks plates together, allowing enormous stress to accumulate. When the friction finally fails, all that energy releases at once as a powerful earthquake. Not quite. High friction locks plates together, preventing small releases. Energy builds up over time, and when the plates finally slip, the result is a large, powerful earthquake.
+
+---
+
+### Question 3
+
+Which explains why about 90% of earthquakes occur along the Ring of Fire?
+
+A. The Pacific Ocean's water causes the crust to crack
+B. The Ring of Fire is the boundary of the Pacific Plate, where multiple plates interact
+C. Volcanic gases weaken the rock along the Ring of Fire
+D. The Ring of Fire receives more heat from the Sun
+
+Correct Answer: B
+
+Feedback: Correct! The Ring of Fire traces the boundaries of the Pacific Plate, where it interacts with many other plates. Plate boundary interactions cause earthquakes and volcanoes. Not quite. The Ring of Fire marks the edges of the Pacific Plate, where it meets several other tectonic plates. These boundary zones are where plates collide, separate, or slide past each other, causing earthquakes and volcanoes.
+
+---
+
+### Question 4
+
+A coastal region has not had a major earthquake in 150 years, even though it sits on a plate boundary. Based on the tectonic model, what should scientists predict?
+
+A. The plates have stopped moving, so the region is now safe
+B. A large earthquake is likely because stress has been building for 150 years
+C. The boundary has changed from convergent to divergent
+D. Earthquakes will never happen there again
+
+Correct Answer: B
+
+Feedback: Correct! A long quiet period at a plate boundary means friction is locking the plates while stress accumulates. The longer the quiet, the bigger the eventual release. Not quite. Plate boundaries don't stop being active. A long period without earthquakes means friction is holding the plates locked while stress builds. This makes a large earthquake more likely, not less.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: C
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -897,6 +897,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-2, HS-PS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Two identical buildings experience the same earthquake. Building A is rigidly connected to its foundation. Building B sits on flexible rubber-steel bearings (base isolation). Which building experiences greater floor acceleration, and why?
+
+A. Building B, because the flexible bearings amplify ground motion like a trampoline
+B. Building A, because the rigid connection transmits 100% of ground acceleration directly to the structure, while base isolation decouples the building from ground motion
+C. Both experience identical acceleration because they have the same mass
+D. Neither experiences significant acceleration because modern buildings are earthquake-proof
+
+Correct Answer: B
+
+Feedback: Correct. Base isolation works by decoupling the building from ground motion. The flexible bearings absorb and spread seismic energy over a longer period, reducing the peak acceleration transmitted to the structure by 50-80%. The rigid building transmits every ground acceleration directly. Consider what happens when you shake a table with a cup glued to it versus a cup sitting on a rubber pad. Which cup experiences more force from the shaking?
+
+---
+
+### Question 2
+
+In the 1985 Mexico City earthquake, buildings of 8-15 stories collapsed while shorter and taller buildings survived. What physical phenomenon best explains this selective destruction?
+
+A. Buildings of 8-15 stories were built with weaker materials
+B. The earthquake's dominant wave frequency matched the natural oscillation period of 8-15 story buildings, causing resonance amplification that multiplied forces by 5-10 times
+C. Only 8-15 story buildings were occupied at the time of the earthquake
+D. Taller buildings have deeper foundations that protected them from ground motion
+
+Correct Answer: B
+
+Feedback: Correct. Resonance occurs when external forcing frequency matches a structure's natural frequency. Medium-rise buildings (8-15 stories) have natural periods of approximately 1-2 seconds, which matched the 2-second dominant period of the Mexico City earthquake. This amplified ground motion 5-10 times, causing selective destruction. Consider why ONLY buildings of a certain height range were destroyed. What physical property changes with building height, and how could matching with earthquake characteristics cause amplified damage?
+
+---
+
+### Question 3
+
+A tuned mass damper is a heavy pendulum mounted near the top of a skyscraper. During an earthquake, the damper swings opposite to the building's motion. What physical principle explains how this reduces damage?
+
+A. The damper's weight prevents the building from moving at all
+B. The damper absorbs kinetic energy from the building's oscillation and converts it to heat through friction, reducing the amplitude of building motion by 30-50%
+C. The damper pushes the building back to vertical using stored gravitational energy
+D. The damper is primarily decorative and has minimal structural benefit
+
+Correct Answer: B
+
+Feedback: Correct. The tuned mass damper acts as an energy sink. When the building sways right, the damper swings left, absorbing kinetic energy through friction and viscous resistance. This energy is converted to heat rather than continuing to build up in the structure. Taipei 101's 730-ton damper reduces sway by approximately 40%. Think about energy conservation: the earthquake pumps kinetic energy into the building. Where does that energy go? The damper provides a mechanism to remove energy from the building's oscillation.
+
+---
+
+### Question 4
+
+Newton's second law states F = ma. During an earthquake, a 200,000-ton skyscraper experiences a floor acceleration of 0.5g. What is the approximate lateral force on the structure?
+
+A. 100,000 newtons
+B. 1 million newtons (1 MN)
+C. Approximately 980 million newtons (980 MN) — almost 1 billion newtons
+D. The force cannot be calculated without knowing the building height
+
+Correct Answer: C
+
+Feedback: Correct. F = ma = 200,000,000 kg x 0.5 x 9.8 m/s^2 = 980,000,000 N = 980 MN. This enormous force — nearly 1 billion newtons — demonstrates why seismic engineering focuses on reducing acceleration (through base isolation and damping) rather than just strengthening structures. Apply F = ma directly. Convert 200,000 metric tons to kilograms (multiply by 1,000,000). Multiply by 0.5g (where g = 9.8 m/s^2).
+
+---
+
+### Question 5
+
+Modern earthquake engineering designs buildings for 'life safety' rather than 'zero damage.' What engineering principle justifies this approach?
+
+A. Engineers do not know how to build damage-free structures
+B. Designing for zero damage in the maximum credible earthquake would be prohibitively expensive, so buildings are designed to sustain controlled structural damage that protects occupants while potentially sacrificing the building itself
+C. All earthquake damage can be repaired after the event, so prevention is unnecessary
+D. Life safety and zero damage require the same engineering approach
+
+Correct Answer: B
+
+Feedback: Correct. This is performance-based design: the building absorbs seismic energy through planned damage in designated structural members (like sacrificial fuses) while maintaining enough integrity for safe evacuation. The building may be demolished afterward, but no one dies. This philosophy optimizes cost versus safety. Consider the cost-benefit analysis. Designing for the absolute worst-case earthquake with zero damage would require enormous structural capacity. Is it more practical to accept some damage while ensuring the building does not collapse?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows Building A (natural period 3.0 seconds) in an earthquake with a dominant period of 3.1 seconds. Building B (natural period 1.2 seconds) is in the same earthquake. The model predicts Building A's Damage Index is 5 times higher. What variable drives this difference?
+
+A. Building A is taller and therefore always more vulnerable
+B. Resonance Frequency — Building A's natural period nearly matches the earthquake's dominant period, causing resonance amplification of forces, while Building B is far from resonance
+C. Building B has stronger materials based on its shorter natural period
+D. The earthquake hits Building B with less intensity because it is shorter
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that resonance is the primary determinant of damage, not building height or material strength. Building A's 3.0-second period nearly matches the earthquake's 3.1-second period, causing amplification. Building B's 1.2-second period is far from resonance, so it experiences the earthquake at its actual intensity. Look at the relationship between each building's natural period and the earthquake's dominant period. When do forces amplify? When the frequencies are close to matching, or when they are far apart?
+
+---
+
+### Question 2
+
+In the model, a student increases Material Strength by 50% while keeping all other variables the same, including resonance risk. The Damage Index decreases by only 10%. What does this disproportionate response reveal?
+
+A. Material Strength is incorrectly modeled and should have more impact
+B. The model is broken because stronger materials should always dramatically reduce damage
+C. When resonance amplifies forces by 5-10 times, a 50% increase in material strength is overwhelmed — addressing resonance avoidance (through flexibility or isolation) is more effective than adding strength
+D. Material Strength has no relationship to Damage Index in the model
+
+Correct Answer: C
+
+Feedback: Correct. This is a key model insight: strength alone cannot overcome resonance amplification. If an earthquake at resonance multiplies forces by 5-10x, a 50% stronger structure still fails under those amplified forces. The model shows that avoiding resonance (through base isolation or period-shifting) reduces damage far more effectively than adding strength. Consider the magnitude of resonance amplification (5-10x) versus the material improvement (1.5x). If forces are multiplied by 7 through resonance, does making the structure 1.5 times stronger prevent failure?
+
+---
+
+### Question 3
+
+The model classifies Seismic Wave Intensity and Foundation Flexibility as external variables. A student argues that Building Mass should also be external because it is set during design. What is the best evaluation of this argument?
+
+A. The argument is correct — Building Mass is a design choice and should be external
+B. While Building Mass is determined during design, in the model's context it is treated as a system property that interacts with seismic forces through F=ma — it is a characteristic of the system being analyzed, not a condition imposed on it
+C. Building Mass cannot be classified as either external or internal
+D. The classification makes no difference to model behavior
+
+Correct Answer: B
+
+Feedback: Correct. The distinction is nuanced: external variables represent conditions that the system encounters (earthquake intensity, foundation engineering choice). Building Mass, while determined during design, is a property of the system itself — it interacts with acceleration to produce force (F=ma) and with natural period to determine resonance risk. The model treats it as a system characteristic. Consider the difference between conditions the building encounters (earthquake characteristics, foundation type) and properties of the building itself. The model analyzes how the building system responds to seismic conditions.
+
+---
+
+### Question 4
+
+The model's moderate earthquake scenario (0.3g) with base isolation shows a Damage Index near zero, while the same earthquake at resonance (without isolation) shows a Damage Index near 0.8. Both scenarios have identical earthquake intensity. What does this comparison demonstrate about seismic design?
+
+A. Base isolation makes buildings completely indestructible
+B. The comparison demonstrates that resonance avoidance and energy decoupling are more important than earthquake intensity alone — the same earthquake can be harmless or catastrophic depending on the structural design
+C. The 0.3g earthquake is too weak to damage any building, so the comparison is meaningless
+D. Damage Index is not a reliable metric for comparing seismic scenarios
+
+Correct Answer: B
+
+Feedback: Correct. This is the model's most powerful finding: the same earthquake produces radically different outcomes based solely on structural design. Base isolation prevents resonance and decouples the building from ground motion. Without it, resonance amplifies the same moderate earthquake to destructive levels. Design, not earthquake size, determines survival. Compare the two scenarios: same earthquake intensity, same building, but dramatically different outcomes. What is the only difference between them? What does that tell you about what determines building survival?
+
+---
+
+### Question 5
+
+After running all three scenarios, a student concludes that base isolation alone is sufficient seismic protection for any building. Using model evidence, what is the strongest limitation of this conclusion?
+
+A. Base isolation is too expensive to be practical
+B. The maximum credible earthquake scenario (1.5g near-fault) shows that even base-isolated buildings experience significant forces — a multi-layered defense (isolation + dampers + flexible design) is needed for extreme events because no single strategy handles all scenarios
+C. Base isolation only works for buildings under 10 stories
+D. The model does not include a base isolation variable
+
+Correct Answer: B
+
+Feedback: Correct. The model's three scenarios reveal that base isolation handles moderate earthquakes excellently but has limits under extreme near-fault ground motion. The maximum credible earthquake scenario demonstrates that combined strategies — isolation, structural flexibility, and energy-dissipating dampers — are needed for comprehensive protection. Look at the maximum credible earthquake scenario results. Does base isolation alone reduce the Damage Index to near zero in that extreme case, or does the building still experience significant forces?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

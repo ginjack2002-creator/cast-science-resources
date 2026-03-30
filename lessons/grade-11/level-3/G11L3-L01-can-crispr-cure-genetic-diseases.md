@@ -907,6 +907,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS3-1, HS-LS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A scientist designs a guide RNA to target a specific gene mutation. Which factor most directly determines whether the CRISPR-Cas9 system will cut only the intended DNA sequence and not similar sequences elsewhere in the genome?
+
+A. The degree of complementarity between the guide RNA and the target DNA sequence
+B. The total number of genes in the organism's genome
+C. The temperature at which the editing reaction is performed
+D. The type of cell being edited
+
+Correct Answer: A
+
+Feedback: Correct. Guide RNA specificity, the degree to which it matches only the intended target and not similar sequences, is the primary determinant of on-target versus off-target cutting by Cas9. The guide RNA's complementarity to the target sequence is the key factor. If it closely matches other genomic locations, Cas9 will cut at those off-target sites as well.
+
+---
+
+### Question 2
+
+Why does editing human germline cells raise different ethical concerns than editing somatic cells?
+
+A. Germline cells are harder to access surgically than somatic cells
+B. Changes to germline cells are passed to all future generations without their consent
+C. Somatic cell edits are always more precise than germline cell edits
+D. Germline cells contain different DNA than somatic cells
+
+Correct Answer: B
+
+Feedback: Correct. Germline edits are heritable, meaning every descendant carries the modification, raising unique ethical concerns about consent and unintended consequences across generations. The central ethical distinction is heritability. Somatic edits affect only the individual patient, but germline edits become permanent changes in the human gene pool, affecting descendants who never consented.
+
+---
+
+### Question 3
+
+After Cas9 cuts a DNA double strand, the cell can repair the break through two different pathways. Which outcome is most likely when the cell uses non-homologous end joining (NHEJ) instead of homology-directed repair (HDR)?
+
+A. The original disease-causing mutation is precisely corrected
+B. Random insertions or deletions are introduced at the cut site
+C. The cut DNA strand is left permanently unrepaired
+D. A template sequence is automatically inserted from a neighboring chromosome
+
+Correct Answer: B
+
+Feedback: Correct. Non-homologous end joining is error-prone and typically introduces random insertions or deletions (indels) at the break site, rather than making a precise correction. NHEJ is the error-prone repair pathway. Unlike homology-directed repair, which uses a template to make precise corrections, NHEJ simply joins broken DNA ends and frequently introduces random insertions or deletions.
+
+---
+
+### Question 4
+
+A research team reports that their CRISPR therapy successfully edited 60% of target cells but also produced off-target edits at a rate of 0.1%. Why might this seemingly low off-target rate still be a significant safety concern?
+
+A. The 60% editing efficiency is too low to produce any therapeutic benefit
+B. A 0.1% rate applied across 3.2 billion base pairs means millions of potential off-target sites could be affected
+C. Off-target edits only occur in germline cells, not somatic cells
+D. The 0.1% rate will decrease to zero in subsequent cell divisions
+
+Correct Answer: B
+
+Feedback: Correct. Even a 0.1% off-target rate is concerning because the human genome is enormous. Across billions of base pairs and many similar sequences, even a low percentage translates to a meaningful number of unintended edits that could disrupt essential genes. The concern is scale. The human genome contains 3.2 billion base pairs with many sequences similar to the target. A 0.1% off-target rate across this vast genome can still produce numerous unintended cuts, some potentially in critical genes.
+
+---
+
+### Question 5
+
+Which statement best describes a fundamental limitation of using CRISPR-Cas9 for gene therapy in living patients?
+
+A. CRISPR can only edit bacterial DNA, not human DNA
+B. The Cas9 protein is too large to enter any human cell
+C. Delivering CRISPR components to all affected cells in a tissue while minimizing off-target effects remains a major challenge
+D. CRISPR technology has not yet been tested in any clinical setting
+
+Correct Answer: C
+
+Feedback: Correct. Delivery efficiency is a central challenge: getting CRISPR components into enough target cells to achieve therapeutic benefit while limiting off-target edits and immune reactions remains a major engineering hurdle. CRISPR works in human cells and has been used in clinical trials. The fundamental limitation is delivery: efficiently reaching all affected cells while controlling off-target effects and immune responses.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A computational model shows that increasing guide RNA specificity from 85% to 99% reduces off-target edits by 90% but also decreases on-target editing efficiency by 25%. Which interpretation best reflects the system-level trade-off?
+
+A. The decrease in efficiency makes high-specificity guide RNAs impractical for all applications
+B. Higher specificity creates a precision-efficiency trade-off that must be evaluated in the context of the disease severity and available alternatives
+C. Off-target reduction is always more important than on-target efficiency regardless of context
+D. The 25% efficiency loss can be eliminated by simply using more Cas9 protein
+
+Correct Answer: B
+
+Feedback: Correct. This is a context-dependent trade-off. For a fatal disease with no alternatives, accepting lower efficiency for higher precision may be justified, while for a non-lethal condition, the calculus may differ. The trade-off between precision and efficiency must be evaluated in context. For fatal diseases with no alternatives, reduced efficiency may be acceptable if precision is high. The optimal balance depends on the clinical scenario.
+
+---
+
+### Question 2
+
+In a CRISPR gene therapy model, a student observes that doubling the delivery dose of CRISPR components increases both on-target editing (from 40% to 70% of cells) and off-target events (from 50 to 180 per genome). What does this relationship reveal about the system?
+
+A. Off-target events are independent of CRISPR concentration
+B. The dose-response relationship is linear and proportional for both on-target and off-target effects
+C. Off-target events increase disproportionately faster than on-target editing, creating diminishing therapeutic returns at higher doses
+D. Doubling the dose always doubles the therapeutic benefit
+
+Correct Answer: C
+
+Feedback: Correct. On-target editing increased 1.75x while off-target events increased 3.6x, demonstrating a nonlinear relationship where safety risks escalate faster than therapeutic benefits at higher doses. Compare the ratios: on-target editing increased from 40% to 70% (1.75x), but off-target events increased from 50 to 180 (3.6x). The off-target risk scales disproportionately, meaning higher doses yield diminishing net therapeutic value.
+
+---
+
+### Question 3
+
+A model compares somatic cell editing for sickle cell disease with germline editing of the same HBB gene mutation. Which analysis best explains why the risk assessment differs fundamentally between these two approaches?
+
+A. Somatic editing uses different guide RNAs than germline editing
+B. Germline editing risks are confined to the individual patient while somatic editing affects future generations
+C. In somatic editing, off-target errors affect one patient and can potentially be monitored, while in germline editing, off-target errors become heritable and propagate through the gene pool indefinitely
+D. Somatic cells have fewer off-target sites than germline cells
+
+Correct Answer: C
+
+Feedback: Correct. The fundamental difference is that somatic editing errors are contained within one patient's lifetime and can be monitored, while germline errors become permanent heritable changes that propagate through all future descendants. The key distinction is heritability of errors. Somatic editing errors are limited to one patient; germline editing errors enter the human gene pool and are inherited by all descendants, making the consequences of off-target edits irreversible at a population level.
+
+---
+
+### Question 4
+
+A student's CRISPR model shows that homology-directed repair (HDR) occurs in only 20% of edited cells while non-homologous end joining (NHEJ) occurs in 80%. The student proposes increasing Cas9 concentration to improve the HDR rate. Why is this proposal scientifically flawed?
+
+A. Increasing Cas9 increases the total number of cuts but does not change the cell's intrinsic preference for NHEJ over HDR, which is determined by cell cycle stage and repair machinery
+B. Higher Cas9 concentration would prevent any DNA repair from occurring
+C. NHEJ and HDR are the same repair pathway at different concentrations
+D. Cas9 concentration only affects germline cells, not somatic cells
+
+Correct Answer: A
+
+Feedback: Correct. The ratio of HDR to NHEJ is determined by the cell's intrinsic repair machinery and cell cycle phase, not by Cas9 concentration. More Cas9 creates more cuts but does not shift which repair pathway the cell activates. The cell's choice between HDR and NHEJ depends on its repair machinery availability and cell cycle stage, not on Cas9 levels. Adding more Cas9 increases total cuts (including off-target) without changing the fundamental repair pathway ratio.
+
+---
+
+### Question 5
+
+Based on the CRISPR gene editing model, which conclusion about the relationship between guide RNA design and therapeutic outcomes is best supported by the simulation data?
+
+A. Perfect guide RNA specificity guarantees zero off-target effects in all patients
+B. Guide RNA specificity is the single most important variable in the system because it determines the initial distribution of on-target versus off-target Cas9 activity, which cascades through repair pathway selection and clinical outcomes
+C. Guide RNA design has minimal impact on therapeutic outcomes because delivery efficiency is the only variable that matters
+D. Longer guide RNA sequences always produce better therapeutic outcomes than shorter sequences
+
+Correct Answer: B
+
+Feedback: Correct. Guide RNA specificity is the upstream variable that determines where Cas9 cuts. Every downstream outcome, from repair pathway activation to therapeutic benefit to unintended mutations, depends on this initial targeting accuracy. Guide RNA specificity is the foundational upstream variable in the system. It determines where Cas9 cuts, which then cascades to affect repair pathway selection, on-target correction rates, off-target mutation rates, and ultimately clinical outcomes.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: A
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

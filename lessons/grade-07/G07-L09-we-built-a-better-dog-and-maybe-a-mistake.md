@@ -884,6 +884,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+How do you think humans got so many different dog breeds from wolves?
+
+A. Different dog breeds are actually different species that are unrelated to wolves
+B. Humans selected wolves with specific traits and bred them together over many generations
+C. Dogs evolved naturally into different breeds without any human involvement
+D. Scientists created dog breeds in laboratories using genetic engineering
+
+Correct Answer: B
+
+Feedback: Correct! Over at least 15,000 years, humans selected wolves with desirable traits (friendliness, herding ability, size) and bred them together, gradually creating the hundreds of breeds we have today. Not quite. All domestic dog breeds descended from wolves through selective breeding. Humans chose wolves with desired traits and bred them together over thousands of years, gradually producing the wide variety of breeds that exist today.
+
+---
+
+### Question 2
+
+What does it mean to 'breed' plants or animals for specific traits?
+
+A. Choosing which organisms reproduce based on the traits they have, so offspring are more likely to have those traits
+B. Feeding organisms special food to change their physical appearance
+C. Painting or dyeing organisms to make them look different
+D. Training organisms to behave differently so their offspring learn the same behaviors
+
+Correct Answer: A
+
+Feedback: Correct! Selective breeding means choosing organisms with desired traits as parents, so those traits are more likely to be passed to the next generation through inheritance. Not quite. Breeding for specific traits means selecting organisms that already have the desired characteristics and allowing only those to reproduce. The traits are passed genetically to offspring.
+
+---
+
+### Question 3
+
+What could go wrong if we only breed for one specific trait over many generations?
+
+A. Nothing can go wrong because selective breeding always produces healthier organisms
+B. The population could lose genetic variation, making it vulnerable to diseases and health problems
+C. The organisms would eventually evolve back to their original wild form
+D. Only the desired trait would change; everything else stays perfectly the same
+
+Correct Answer: B
+
+Feedback: Correct! Extreme selection for one trait reduces genetic diversity in the population. With less variation, organisms become more vulnerable to diseases, environmental changes, and inherited health problems. Not quite. When breeders focus too narrowly on one trait, they reduce the genetic diversity of the population. This makes the entire population more vulnerable to disease, genetic disorders, and environmental changes.
+
+---
+
+### Question 4
+
+How is artificial selection different from natural selection?
+
+A. Artificial selection is faster and more powerful than natural selection in every way
+B. In artificial selection, humans choose which traits are favored; in natural selection, the environment determines fitness
+C. Natural selection only affects plants, while artificial selection only affects animals
+D. There is no difference. They are two names for the same process.
+
+Correct Answer: B
+
+Feedback: Correct! Both use the same mechanism (variation, selection, inheritance), but in natural selection the environment determines which traits help survival, while in artificial selection humans choose which traits to favor. Not quite. The key difference is who does the selecting. In natural selection, environmental pressures determine which organisms survive and reproduce. In artificial selection, humans choose which organisms reproduce based on traits we desire.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the selective breeding model, selection pressure is set to maximum over many generations. The model shows desired trait frequency rising sharply. What also happens to genetic diversity?
+
+A. Genetic diversity increases because the population is improving
+B. Genetic diversity stays the same because only the desired trait changes
+C. Genetic diversity crashes because only organisms with the desired trait are allowed to reproduce
+D. Genetic diversity is not tracked in the model
+
+Correct Answer: C
+
+Feedback: Correct! The model reveals a critical trade-off: extreme selection increases the desired trait rapidly but dramatically reduces genetic diversity. By eliminating all individuals without the trait, the gene pool shrinks dangerously. Not quite. The model demonstrates that extreme selection pressure creates a trade-off. While the desired trait becomes very common, genetic diversity crashes because only a narrow subset of the population is allowed to reproduce.
+
+---
+
+### Question 2
+
+English Bulldogs were selectively bred for flat faces over many generations. Today, many Bulldogs have severe breathing problems. What does this demonstrate about selective breeding?
+
+A. Selective breeding always produces the healthiest possible organisms
+B. Selective breeding can achieve desired traits but may cause unintended harmful consequences
+C. Breathing problems in Bulldogs are unrelated to their breeding history
+D. Only natural selection can produce healthy organisms
+
+Correct Answer: B
+
+Feedback: Correct! The Bulldog example shows that selecting strongly for appearance traits can cause harmful side effects. The flat face that breeders wanted came at the cost of compressed airways that make breathing difficult. Not quite. Bulldogs demonstrate a key consequence of extreme selective breeding: the desired trait (flat face) was achieved, but it came with unintended harm (breathing difficulty). Breeding for appearance without considering health has real costs.
+
+---
+
+### Question 3
+
+Why might a population with high genetic diversity be healthier and more resilient than one with low genetic diversity?
+
+A. Genetic diversity makes organisms physically larger and stronger
+B. With more genetic variation, the population is more likely to have individuals that can survive new diseases or environmental changes
+C. Genetic diversity causes organisms to reproduce faster
+D. High genetic diversity means all organisms are identical, which is ideal for survival
+
+Correct Answer: B
+
+Feedback: Correct! Genetic diversity acts like an insurance policy. With more variation, some individuals are likely to have traits that help them survive unexpected challenges like new diseases, pests, or climate changes. Not quite. Genetic diversity is crucial for resilience. A diverse population contains more genetic variation, so when new threats appear (diseases, environmental changes), some individuals are more likely to have traits that allow them to survive.
+
+---
+
+### Question 4
+
+The Irish Potato Famine of the 1840s killed over one million people when a single disease destroyed the potato crop. How does the selective breeding model help explain this disaster?
+
+A. The potatoes were not selectively bred, so they had no protection against disease
+B. Irish farmers grew potatoes with extremely low genetic diversity, so one disease could wipe out the entire crop
+C. The disease was too powerful for any potato variety to resist, regardless of diversity
+D. The famine was caused by weather, not by genetics or breeding
+
+Correct Answer: B
+
+Feedback: Correct! Irish farmers relied on a very small number of genetically similar potato varieties. When a blight arrived, it could destroy them all because none had genetic resistance. This is the real-world consequence of the diversity crash the model predicts. Not quite. The Potato Famine is a case study in what happens when genetic diversity is too low. Because nearly all the potatoes were genetically similar, one disease could destroy the entire crop. Greater genetic diversity would have meant some resistant varieties survived.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

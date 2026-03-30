@@ -900,6 +900,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4, HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+The average American throws away approximately 81.5 pounds of clothing per year. What is the primary driver of this high disposal rate?
+
+A. Clothing is manufactured to decompose quickly for environmental reasons
+B. The fast fashion business model produces trendy, low-cost clothing designed to be frequently replaced rather than kept long-term
+C. Americans have unusually large wardrobes compared to all other countries
+D. Clothing donation programs encourage people to replace their wardrobes annually
+
+Correct Answer: B
+
+Feedback: Correct. Fast fashion brands produce thousands of new styles weekly at extremely low prices, creating a business model based on rapid consumption and disposal. When a T-shirt costs $5, consumers treat it as disposable rather than a long-term investment, driving high disposal rates. The fast fashion business model is designed around rapid trend cycles and low prices. Brands like Shein release thousands of new styles daily, encouraging consumers to buy frequently and discard quickly. When garments are priced so low they feel disposable, that is exactly how they get treated.
+
+---
+
+### Question 2
+
+A single cotton T-shirt requires approximately 2,700 liters of water to produce. What stages of production contribute to this water footprint?
+
+A. Water is only used during the final washing stage before packaging
+B. Cotton agriculture (irrigation), fabric dyeing, textile washing, and finishing processes all consume significant quantities of water throughout the supply chain
+C. The water is only used for shipping the T-shirt across the ocean
+D. Most of the water is used by consumers washing the shirt at home
+
+Correct Answer: B
+
+Feedback: Correct. Water consumption occurs at multiple stages: growing cotton requires extensive irrigation, dyeing fabric is extremely water-intensive (the fashion industry is the second-largest freshwater polluter globally), and washing and finishing the textile adds additional water use before the product ever reaches the consumer. The water footprint of a T-shirt spans the entire production chain: cotton agriculture requires extensive irrigation (the largest share), fabric dyeing uses large volumes of water and chemicals, and washing and finishing processes add further consumption. The fashion industry is the second-largest polluter of fresh water globally.
+
+---
+
+### Question 3
+
+The fashion industry produces approximately 10% of global carbon emissions. Which comparison best puts this figure in perspective?
+
+A. This is a negligible amount compared to other industries
+B. This exceeds the carbon emissions from all international flights and maritime shipping combined
+C. This is the same as residential home heating globally
+D. This represents only carbon from transportation of clothing
+
+Correct Answer: B
+
+Feedback: Correct. The fashion industry's 10% share of global carbon emissions exceeds the combined emissions from all international aviation and maritime shipping. This carbon comes from every stage: petroleum-based synthetic fibers, energy-intensive manufacturing, global shipping, and methane from textile waste decomposition. The fashion industry's carbon footprint is larger than most people realize. At 10% of global emissions, it exceeds the combined emissions from all international flights and maritime shipping. The carbon is produced at every stage of the supply chain: raw material production, manufacturing, global transportation, and decomposition in landfills.
+
+---
+
+### Question 4
+
+A student argues: 'I donate all my old clothes, so my fashion consumption doesn't create waste.' What evidence most effectively challenges this claim?
+
+A. Donated clothes are always thrown away immediately by charities
+B. Only 10-20% of donated clothing is sold domestically; the rest is exported to developing nations where up to 40% goes directly to landfills, often destroying local textile industries
+C. Donation bins are illegal in most countries
+D. Donating clothes is worse than throwing them away because of transportation emissions
+
+Correct Answer: B
+
+Feedback: Correct. The reality of clothing donation is far from the popular perception. Most donated clothing is not worn again domestically. It is exported in massive bales to developing nations, where a large percentage arrives in such poor condition it goes straight to landfills. This practice also undermines local textile manufacturing in receiving countries. Clothing donation creates an illusion of sustainability. Only a small fraction of donated items are sold to new consumers domestically. The majority is exported to developing nations where much of it ends up in landfills, just in a different country. The environmental impact of production (water, carbon, chemicals) has already occurred regardless of how the garment is later disposed of.
+
+---
+
+### Question 5
+
+Why might the environmental cost of clothing not be reflected in its price tag?
+
+A. Environmental costs are always included in retail prices
+B. The water pollution, carbon emissions, and waste disposal costs are externalities borne by communities and ecosystems rather than by the companies producing the clothing or the consumers purchasing it
+C. There are no environmental costs associated with clothing production
+D. Governments pay all environmental costs through tax revenue
+
+Correct Answer: B
+
+Feedback: Correct. Environmental costs in the fashion industry are externalities, meaning they are imposed on third parties (communities near factories, ecosystems, future generations) rather than being included in the product price. The $5 T-shirt price reflects only the direct costs of materials, labor, and distribution, not the environmental damage. The low price of fast fashion exists because environmental costs are externalized. The water used for cotton irrigation, the chemicals dumped into rivers during dyeing, the carbon emitted during manufacturing, and the landfill space consumed by textile waste are all costs paid by communities, ecosystems, and future generations rather than by the companies or consumers.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a student's fast fashion model, reducing Consumer Demand by 50% reduces ALL environmental outputs (textile waste, water consumption, and carbon emissions) roughly proportionally. Why does demand reduction have this comprehensive effect?
+
+A. Consumer demand is unrelated to environmental impact
+B. Consumer demand drives production rate, and since water consumption, carbon emissions, and textile waste are all outputs of the production process, reducing the input (demand) proportionally reduces all outputs simultaneously
+C. Reducing demand only affects textile waste, not water or carbon
+D. The model oversimplifies by linking all outputs to a single input
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that consumer demand is the primary driver of the entire system. Production rate responds to demand, and all three environmental outputs (waste, water, carbon) are direct consequences of production. Reducing the input variable proportionally reduces all output variables because they are all products of the same production process. The model structure shows that demand drives production, and production simultaneously generates waste, consumes water, and emits carbon. Since all three environmental outputs are products of the same production process, reducing the input (consumer demand) proportionally reduces every output. This is why demand reduction is the single most effective intervention point.
+
+---
+
+### Question 2
+
+A student compares two interventions: (A) recycling 50% of textile waste and (B) reducing consumer demand by 50%. The model shows intervention B has a greater total environmental impact. Why?
+
+A. Recycling technology does not exist yet
+B. Recycling addresses only the disposal stage, while demand reduction prevents environmental damage at the production stage, where the majority of water consumption, carbon emissions, and chemical pollution occur
+C. Both interventions have identical environmental impact
+D. Recycling actually increases carbon emissions
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that most environmental damage occurs during production (growing cotton, dyeing fabric, manufacturing, shipping), not during disposal. Recycling addresses only the waste output at the end of the lifecycle, while demand reduction prevents the production-stage impacts from occurring at all. Prevention is inherently more impactful than end-of-pipe treatment. The critical insight is that environmental damage is concentrated in the production phase. By the time a garment reaches the disposal stage, its water has already been consumed, its carbon already emitted, and its chemicals already discharged. Recycling can reduce waste going to landfills but cannot reverse the environmental damage that occurred during manufacturing. Reducing demand prevents that damage entirely.
+
+---
+
+### Question 3
+
+A clothing company claims to be 'carbon neutral' through purchasing carbon offsets. Using the model, which analysis best evaluates this claim?
+
+A. Carbon neutrality fully resolves the company's environmental impact
+B. Carbon offsets may address one of the model's outputs (carbon emissions) but ignore textile waste, water consumption, chemical pollution, and microplastic release, which the model shows are equally significant environmental impacts
+C. Carbon offsets are better than reducing production because they don't affect profits
+D. The model shows that carbon is the only significant environmental output of the fashion industry
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies multiple environmental output pathways from production. Carbon offsets potentially address only one (carbon emissions), leaving textile waste (92 million tons/year), water consumption (79 trillion liters/year), chemical pollution, and microplastic release completely unaddressed. The carbon neutral claim creates a misleading impression of comprehensive environmental responsibility. The model shows that the fashion industry's environmental impact includes multiple output pathways: carbon emissions, water consumption, textile waste, and chemical pollution. Carbon offsets, even if perfectly executed, address only one of these pathways. The remaining impacts continue unabated, making the 'carbon neutral' claim an incomplete and potentially misleading representation of the company's total environmental footprint.
+
+---
+
+### Question 4
+
+A student calculates the 'cost per wearing' of two shirts: a $5 fast fashion shirt worn 5 times ($1.00/wear) versus a $50 quality shirt worn 100 times ($0.50/wear). What does this analysis reveal about the economics of sustainable fashion?
+
+A. Cheap clothing is always more economical regardless of how long it lasts
+B. When measured by cost per use rather than purchase price, higher-quality clothing can be more economical than fast fashion while generating far less environmental waste per wearing
+C. Quality and price are unrelated in the clothing industry
+D. Consumers should never consider price when making purchasing decisions
+
+Correct Answer: B
+
+Feedback: Correct. Cost-per-wearing analysis reframes the economics of fashion. While the initial price of a quality garment is higher, dividing cost by the number of uses often reveals that durable clothing is cheaper per wearing than disposable fast fashion. Additionally, fewer garments purchased means proportionally less production-stage environmental damage per unit of wardrobe utility. Cost-per-wearing analysis reveals that the apparent affordability of fast fashion is an illusion. When total cost is divided by total uses, durable clothing often costs less per wearing. More importantly, one quality garment replacing ten disposable ones means one-tenth of the production-stage environmental impact (water, carbon, chemicals) for the same wardrobe function.
+
+---
+
+### Question 5
+
+After analyzing all model scenarios, a student concludes that solving the fast fashion environmental crisis requires intervention at multiple levels. Which combination of interventions does the model evidence best support?
+
+A. Only consumer behavior change can solve this problem
+B. Only government regulation of the fashion industry can solve this problem
+C. A combination of reduced consumer demand (addresses the driver), sustainable production methods (reduces per-unit impact), and improved recycling systems (addresses disposal), with policy mechanisms to internalize environmental costs in pricing
+D. Only technological innovation in materials can solve this problem
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that consumer demand is the primary driver, but production methods determine the per-unit environmental cost, and disposal systems determine end-of-life impact. Effective solutions must address all three stages while policy mechanisms (taxes, regulations, extended producer responsibility) ensure that environmental costs are no longer externalized. No single intervention is sufficient. The model reveals that the fast fashion problem exists at every stage of the lifecycle: demand drives overproduction, production methods determine per-unit environmental cost, and inadequate disposal creates waste. Comprehensive solutions must address all three levels simultaneously, with policy mechanisms ensuring that currently externalized environmental costs are reflected in product prices.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -945,6 +945,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2, HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Cultured meat is grown from animal cells in a laboratory rather than by raising and slaughtering animals. Which biological process is MOST fundamental to this technology?
+
+A. Photosynthesis, which provides energy for cell growth
+B. Cell division, which allows a small sample of muscle cells to multiply into a large quantity of tissue
+C. Fermentation, which converts plant material directly into meat
+D. Genetic modification, which transforms plant cells into animal cells
+
+Correct Answer: B
+
+Feedback: Correct. Cultured meat relies on the natural ability of animal muscle cells (satellite cells) to divide and proliferate when given appropriate nutrients and growth conditions. Starting from a small tissue biopsy, millions of cells can be grown through repeated cell division. Consider what happens at the cellular level. Cultured meat starts with real animal cells and needs them to multiply. Which fundamental cellular process makes this multiplication possible?
+
+---
+
+### Question 2
+
+A bioreactor is an enclosed vessel used to grow cells at large scale. Which condition would be MOST critical to maintain for mammalian cell growth?
+
+A. Ultraviolet light exposure to stimulate cell division
+B. Temperature at approximately 37 degrees C with controlled oxygen and nutrient delivery
+C. Extremely high pressure to compress cells into dense tissue
+D. Acidic pH below 4.0 to prevent bacterial contamination
+
+Correct Answer: B
+
+Feedback: Correct. Mammalian cells evolved to function at body temperature (37 degrees C) and require continuous oxygen and nutrient supply. Bioreactors must precisely maintain these conditions while removing metabolic waste products to keep cells healthy and dividing. Think about the conditions inside a living animal's body where muscle cells naturally grow. What temperature, nutrient supply, and gas exchange do they experience?
+
+---
+
+### Question 3
+
+Why does conventional meat production have a significant environmental impact compared to growing crops directly for human consumption?
+
+A. Animals are inherently inefficient converters of feed to meat, requiring many kilograms of grain and thousands of liters of water per kilogram of meat produced
+B. Meat production has no significant environmental impact
+C. Crop production requires more land than animal agriculture
+D. Animals release oxygen, which damages the atmosphere
+
+Correct Answer: A
+
+Feedback: Correct. The trophic efficiency of converting plant feed to animal tissue is approximately 10%. Producing 1 kg of beef requires roughly 7-10 kg of grain and 15,000 liters of water, along with significant greenhouse gas emissions from enteric fermentation and manure management. Consider energy transfer between trophic levels in an ecosystem. When animals eat grain, what fraction of that energy is converted into body mass versus being used for the animal's own metabolism?
+
+---
+
+### Question 4
+
+The first cultured meat hamburger in 2013 cost approximately $330,000 to produce. Which factor MOST LIKELY contributed to this extreme cost?
+
+A. The meat was made from endangered animal cells
+B. Growth factors and nutrient media required for cell culture were extremely expensive at small production scale
+C. The energy cost of maintaining a bioreactor is inherently prohibitive
+D. The technology required rare minerals found only in space
+
+Correct Answer: B
+
+Feedback: Correct. Growth factors (signaling proteins like FGF2 and IGF-1) are the most expensive component of cell culture media, costing thousands of dollars per gram. At early development scale, these costs dominated. Prices have since dropped by over 99% as production has scaled up. Think about what cells need to grow outside the body. The nutrients and growth signals that an animal's body provides for free must be supplied artificially. What makes that artificial supply expensive?
+
+---
+
+### Question 5
+
+A key challenge in growing cultured meat is creating tissue that has the texture of real steak rather than a paste-like consistency. Which structural feature of natural muscle is MOST responsible for meat's fibrous texture?
+
+A. The high water content of muscle cells
+B. Aligned, organized muscle fibers that are structured by connective tissue into bundles
+C. The color pigments in muscle tissue
+D. Fat deposits between muscle groups
+
+Correct Answer: B
+
+Feedback: Correct. Natural meat gets its characteristic texture from muscle fibers aligned in parallel, organized into bundles by connective tissue. Recreating this alignment in cultured meat requires scaffolds that guide cell growth and mechanical stimulation that exercises the developing tissue. When you pull apart a piece of steak, you can see the fibrous structure. What gives meat this directional, fiber-like quality at the cellular and tissue level?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a bioreactor optimization model, a student maximizes Nutrient Medium Concentration and Oxygen Supply simultaneously. Cell Growth Rate increases initially but then crashes. Which model component BEST explains this crash?
+
+A. Waste Product Accumulation increases proportionally with rapid cell growth, and the toxic byproducts (ammonia, lactate) inhibit further cell division when they exceed tolerable concentrations
+B. Cells have a maximum lifespan regardless of nutrient availability
+C. Oxygen is toxic to mammalian cells at high concentrations
+D. The bioreactor physically breaks from the increased cell mass
+
+Correct Answer: A
+
+Feedback: Correct. Faster cell growth means faster metabolism, which produces waste products (ammonia, lactate, CO2) at higher rates. When these toxic byproducts accumulate beyond threshold concentrations, they inhibit cell division and can cause cell death. This is a negative feedback loop in the system. Think about what happens at the metabolic level when cells are growing as fast as possible. Every nutrient consumed produces metabolic byproducts. What happens when those byproducts are generated faster than they can be removed?
+
+---
+
+### Question 2
+
+A cultured meat company scales their bioreactor from 1 liter to 10,000 liters. The per-kilogram cost decreases by 80% for some components but Oxygen Supply becomes a critical bottleneck. Which physical principle BEST explains why oxygen delivery fails at large scale?
+
+A. Oxygen molecules are too large to penetrate dense cell cultures
+B. Oxygen diffusion is limited to approximately 200 micrometers from the source, and larger bioreactors have more cells located far from oxygen delivery surfaces
+C. Large bioreactors generate too much heat for oxygen to remain dissolved
+D. Oxygen is consumed by chemical reactions with the nutrient medium before reaching cells
+
+Correct Answer: B
+
+Feedback: Correct. Oxygen diffusion in liquid is limited to approximately 200 micrometers before concentration drops below what cells need. In a small bioreactor, most cells are within this distance of a gas-liquid interface. At large scale, cells deep in the culture become hypoxic, limiting tissue thickness and cell viability. Consider the physics of gas diffusion in liquid. Oxygen dissolves at the surface and diffuses inward, but it is consumed by cells along the way. How does increasing the volume change the ratio of surface area to volume?
+
+---
+
+### Question 3
+
+A model shows that improving Scaffold Structure increases Texture Quality but also increases Production Cost. A student argues that the scaffold cost is acceptable because consumers will pay more for a steak-like product than a paste-like product. This reasoning is BEST described as:
+
+A. An optimization trade-off analysis that considers market value alongside production cost to determine overall economic viability
+B. A scientific error because cost and quality should never be compared
+C. An irrelevant business consideration with no connection to the biological model
+D. A misunderstanding of how scaffolds work in cell culture
+
+Correct Answer: A
+
+Feedback: Correct. Engineering optimization often requires evaluating trade-offs in terms of overall value, not just minimizing a single variable. If improved texture commands a higher market price, the increased scaffold cost may be justified by increased revenue per kilogram. In real-world engineering problems, optimization involves balancing multiple constraints including cost, quality, and market value. Is a higher production cost always bad if it enables a higher-value product?
+
+---
+
+### Question 4
+
+Two bioreactor designs produce cultured meat at the same cost. Design A uses 40% less energy but produces meat with lower Texture Quality. Design B uses more energy but achieves steak-like texture. From an environmental sustainability perspective, which analysis is MOST complete?
+
+A. Design A is always more sustainable because it uses less energy
+B. Design B is always more sustainable because higher quality means less food waste
+C. The comparison requires life-cycle analysis including energy source (renewable vs. fossil fuel), consumer acceptance (which affects adoption rate and displacement of conventional meat), and waste stream differences
+D. Environmental sustainability is irrelevant to cultured meat design
+
+Correct Answer: C
+
+Feedback: Correct. Sustainability assessment requires life-cycle analysis. Design A's lower energy use matters less if powered by fossil fuels than Design B powered by renewables. Consumer acceptance affects total market displacement of conventional meat. A thorough analysis considers the entire system, not just one variable. Consider all the factors that determine environmental impact. Energy quantity is one input, but what about energy source, consumer adoption rates (which affect how much conventional meat is displaced), and the full product lifecycle?
+
+---
+
+### Question 5
+
+A student's model reveals that increasing Scale Factor from lab to commercial production reduces per-kilogram Production Cost but introduces new challenges not present at lab scale. Which challenge is MOST directly a consequence of the scale-up?
+
+A. The chemistry of cell growth changes at larger volumes
+B. Maintaining uniform temperature, oxygen, and nutrient distribution throughout a large bioreactor volume becomes exponentially more difficult, creating zones of cell death
+C. Larger bioreactors require different cell types
+D. Commercial bioreactors cannot be sterilized
+
+Correct Answer: B
+
+Feedback: Correct. In a small bioreactor, mixing ensures relatively uniform conditions throughout. At commercial scale (10,000+ liters), maintaining homogeneous temperature, oxygen, nutrient concentration, and waste removal across the entire volume is a fundamental engineering challenge. Heterogeneity creates dead zones where conditions are suboptimal. Think about the physics of mixing and diffusion. What happens when you scale a well-mixed 1-liter container to a 10,000-liter vessel? Can you ensure every cell in the larger volume experiences the same conditions?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: A
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

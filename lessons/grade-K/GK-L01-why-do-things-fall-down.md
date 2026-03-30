@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-PS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens when you let go of a ball?
+
+A. It falls down
+B. It floats up
+C. It stays in the air
+
+Correct Answer: A
+
+Feedback: Yes! When you let go of a ball, it always falls down to the ground. Actually, when you let go of a ball, it falls down. Something called gravity pulls it toward the ground.
+
+---
+
+### Question 2
+
+If you drop a rock, which way does it go?
+
+A. It goes sideways
+B. It goes up
+C. It goes down
+
+Correct Answer: C
+
+Feedback: That is right! A rock always falls down when you drop it. When you drop a rock, it goes down toward the ground. Everything falls down when you let go of it.
+
+---
+
+### Question 3
+
+What do you think makes things fall to the ground?
+
+A. The wind blows them down
+B. Something invisible pulls them down
+C. They want to be on the ground
+
+Correct Answer: B
+
+Feedback: Good thinking! Something invisible called gravity pulls everything down toward the ground. There is an invisible force called gravity that pulls everything down toward the ground. You cannot see it, but it is always working.
+
+---
+
+### Question 4
+
+If you hold a toy up high and let go, what will happen?
+
+A. It will fly away
+B. It will fall down
+C. Nothing will happen
+
+Correct Answer: B
+
+Feedback: Yes! The toy will fall down because gravity pulls it toward the ground. When you let go of a toy, it falls down. Gravity is always pulling things toward the ground.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is gravity?
+
+A. A push that makes things go up
+B. A pull that makes things fall down
+C. A sound you hear
+
+Correct Answer: B
+
+Feedback: That is right! Gravity is a pull that makes things fall down toward the ground. Gravity is a pull. It pulls everything down toward the ground. That is why things always fall when you let go.
+
+---
+
+### Question 2
+
+When you drop a ball from HIGH up, what happens?
+
+A. It falls slowly
+B. It falls faster
+C. It does not fall at all
+
+Correct Answer: B
+
+Feedback: Yes! Dropping from higher up makes the ball fall faster because gravity has more time to pull on it. When you drop a ball from higher up, it falls faster. Gravity pulls it for a longer time, so it speeds up more.
+
+---
+
+### Question 3
+
+In our model, which part do WE get to decide?
+
+A. Fall Speed
+B. Drop Height
+C. Gravity
+
+Correct Answer: B
+
+Feedback: Yes! WE choose how high to hold the ball. That is the Drop Height, and it is the outside part of our model. Drop Height is the part we decide. We choose how high to hold the ball before letting go.
+
+---
+
+### Question 4
+
+Does gravity ever stop pulling on things?
+
+A. Yes, at night time
+B. Yes, when things are sitting still
+C. No, it never stops
+
+Correct Answer: C
+
+Feedback: That is right! Gravity never stops. It is always pulling on everything, even when things are sitting on a table. Gravity never stops. It is always pulling on everything, all the time, day and night.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -806,6 +806,156 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 5-PS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Why do we wash our hands with soap instead of just water?
+
+A. Soap makes water wetter
+B. Soap smells better than plain water
+C. Soap can break apart germs in a way that water alone cannot
+D. There is no real difference between soap and water
+
+Correct Answer: C
+
+Feedback: That's right! Soap has a special chemical structure that lets it break apart the protective coatings on viruses and bacteria, something water alone cannot do. Soap isn't just for smell. It has a special molecular structure that can wedge into and break apart the fatty outer layer (membrane) of many viruses, actually destroying them.
+
+---
+
+### Question 2
+
+What do you think happens to a virus when soap touches it?
+
+A. The soap just washes the virus off your hands
+B. The soap breaks apart the virus's protective coating, destroying it
+C. The soap freezes the virus
+D. Nothing happens to the virus
+
+Correct Answer: B
+
+Feedback: Correct! Soap molecules actually break apart the lipid (fatty) membrane that protects many viruses, causing the virus to fall apart and be destroyed. Soap does more than rinse. Its molecules have a special shape that lets them wedge into a virus's fatty outer coating and break it apart. The virus is actually destroyed, not just rinsed away.
+
+---
+
+### Question 3
+
+Why are we told to wash our hands for at least 20 seconds?
+
+A. It takes that long for the water to warm up
+B. 20 seconds is just a random number
+C. Soap needs enough time to spread across hands and break apart germs
+D. It takes 20 seconds for soap to dissolve
+
+Correct Answer: C
+
+Feedback: Good thinking! 20 seconds gives soap molecules enough time to spread to all surfaces of your hands, get into crevices, and break apart virus membranes. The 20-second rule is based on science. Soap molecules need time to spread across all hand surfaces, reach into crevices and under nails, and contact and destroy virus membranes.
+
+---
+
+### Question 4
+
+Which is MORE effective for removing viruses from your hands?
+
+A. Water only
+B. Soap only (without water)
+C. Soap and water together
+D. They are all equally effective
+
+Correct Answer: C
+
+Feedback: Correct! Soap and water work together as a team. Water activates and spreads the soap, while soap does the actual work of destroying virus membranes. Soap and water are a team. Water alone can't break virus membranes. Soap alone can't spread properly without water. Together, they are far more effective than either one alone.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the handwashing model, what type of relationship exists between Soap Effectiveness and Virus Survival Rate?
+
+A. Positive: more effective soap means more viruses survive
+B. Negative: more effective soap means fewer viruses survive
+C. No relationship: soap doesn't affect viruses
+D. Positive: soap helps viruses grow
+
+Correct Answer: B
+
+Feedback: Correct! This is the key negative relationship in the model. More effective soap means more virus membranes are destroyed, so fewer viruses survive. That's the whole goal! Think about the purpose of handwashing. When soap is more effective at breaking apart lipid membranes, more viruses are destroyed, meaning the Virus Survival Rate goes down. This is a negative (-) relationship.
+
+---
+
+### Question 2
+
+A soap molecule is called 'amphiphilic' because it:
+
+A. Can only dissolve in water
+B. Is attracted to both water AND fat/oil
+C. Is made of two different colors
+D. Works only on bacteria, not viruses
+
+Correct Answer: B
+
+Feedback: That's right! Amphiphilic means one end of the soap molecule loves water (hydrophilic) and the other end loves fat (lipophilic). This lets soap bridge between water and the fatty virus membrane. Amphiphilic means 'loving both.' One end of a soap molecule is attracted to water, and the other end is attracted to fat and oil. This dual nature lets soap wedge into fatty virus membranes.
+
+---
+
+### Question 3
+
+In the simulation, what happened when Soap was at 100% but Water was at 0% (dry soap)?
+
+A. Virus Survival Rate dropped to zero
+B. Soap Effectiveness was still high because soap alone is enough
+C. Soap Effectiveness was low because water is needed to activate and spread soap
+D. Viruses were completely destroyed
+
+Correct Answer: C
+
+Feedback: Correct! Without water, soap can't spread across surfaces or activate properly. Both soap AND water are needed for maximum effectiveness against viruses. Remember the 'Dry Soap' scenario. Even with lots of soap, without water to activate and spread it, Soap Effectiveness remained low. Both components work together as a system.
+
+---
+
+### Question 4
+
+Why is regular soap just as effective as antibacterial soap for destroying viruses?
+
+A. Because viruses are easier to kill than bacteria
+B. Because antibacterial chemicals target bacteria, not viruses, but regular soap breaks apart all lipid membranes
+C. Because antibacterial soap doesn't really work
+D. Because viruses and bacteria are the same thing
+
+Correct Answer: B
+
+Feedback: Exactly! Antibacterial chemicals specifically target bacteria. But regular soap destroys viruses by physically breaking apart their lipid membranes, which works regardless of the type of pathogen. Antibacterial additives are designed to kill bacteria specifically. Regular soap works differently. It physically breaks apart lipid membranes, which is effective against any membrane-coated pathogen, including viruses.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

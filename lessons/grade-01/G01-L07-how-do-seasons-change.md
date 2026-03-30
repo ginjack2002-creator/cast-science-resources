@@ -726,6 +726,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-ESS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which season is usually the hottest?
+
+A. Winter
+B. Fall
+C. Summer
+
+Correct Answer: C
+
+Feedback: Yes! Summer is usually the hottest season because the sun shines the longest. Summer is the warmest season. The sun stays out for many hours each day in summer.
+
+---
+
+### Question 2
+
+What are the four seasons?
+
+A. Morning, noon, evening, night
+B. Spring, summer, fall, winter
+C. Hot, cold, warm, cool
+
+Correct Answer: B
+
+Feedback: That is right! The four seasons are spring, summer, fall, and winter. The four seasons are spring, summer, fall, and winter. They repeat in the same order every year.
+
+---
+
+### Question 3
+
+In winter, the sun goes down early. What does that mean?
+
+A. There is more daylight
+B. There is less daylight
+C. The sun is broken
+
+Correct Answer: B
+
+Feedback: Yes! In winter, the sun is out for fewer hours, so there is less daylight. When the sun goes down early, it means there are fewer hours of sunlight. That is why winter days feel short.
+
+---
+
+### Question 4
+
+Do the seasons come in the same order every year?
+
+A. No, they are random
+B. Yes, it is always the same order
+C. Sometimes they skip a season
+
+Correct Answer: B
+
+Feedback: That is right! Seasons always go spring, summer, fall, winter, then start over. Seasons follow a pattern. They always come in the same order: spring, summer, fall, winter.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Why is it hotter in summer than in winter?
+
+A. The sun is on fire more in summer
+B. Summer has more hours of daylight
+C. People turn on the heat in summer
+
+Correct Answer: B
+
+Feedback: Yes! In summer, the sun shines for more hours, warming the Earth more. That is why it is hotter. Summer has more hours of daylight, so the sun warms the Earth for a longer time each day.
+
+---
+
+### Question 2
+
+When the amount of daylight goes UP, what happens to temperature?
+
+A. Temperature goes down
+B. Temperature stays the same
+C. Temperature goes up
+
+Correct Answer: C
+
+Feedback: That is right! More daylight means more sun warming the Earth, so the temperature goes up. More hours of sunshine means the Earth gets warmer. More daylight equals higher temperature.
+
+---
+
+### Question 3
+
+Which season has the LEAST daylight?
+
+A. Summer
+B. Spring
+C. Winter
+
+Correct Answer: C
+
+Feedback: Yes! Winter has the fewest hours of daylight, which is why it is the coldest season. Winter days are the shortest. The sun is out for fewer hours, so it is cold.
+
+---
+
+### Question 4
+
+What is a pattern that the seasons follow?
+
+A. Spring, winter, fall, summer
+B. Spring, summer, fall, winter
+C. Summer, summer, winter, winter
+
+Correct Answer: B
+
+Feedback: That is right! The seasons always go in the order: spring, summer, fall, winter. This pattern repeats every year. The seasons follow a repeating pattern: spring, summer, fall, winter, then it starts again.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

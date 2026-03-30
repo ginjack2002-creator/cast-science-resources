@@ -926,6 +926,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2, HS-LS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Antibiotic-resistant bacteria are considered a major global health threat. Which process BEST explains how bacterial populations develop resistance to antibiotics?
+
+A. Individual bacteria learn to recognize and avoid antibiotics through repeated exposure
+B. Random genetic mutations produce resistant individuals, and natural selection favors their survival when antibiotics are applied
+C. Antibiotics cause bacteria to intentionally mutate their DNA for protection
+D. Resistant bacteria are a completely different species that is naturally immune
+
+Correct Answer: B
+
+Feedback: Correct. Resistance arises through random mutations that occur before antibiotic exposure. When antibiotics are applied, susceptible bacteria die while resistant mutants survive and reproduce, increasing the frequency of resistance genes in the population through natural selection. Think about how evolution by natural selection works. Mutations occur randomly, and the environment determines which individuals survive. Bacteria do not choose to become resistant.
+
+---
+
+### Question 2
+
+A bacteriophage is a type of virus. What distinguishes bacteriophages from viruses that cause human diseases like influenza?
+
+A. Bacteriophages are larger than human viruses
+B. Bacteriophages exclusively infect bacteria and cannot infect human cells
+C. Bacteriophages contain DNA while human viruses contain RNA
+D. Bacteriophages do not replicate like other viruses
+
+Correct Answer: B
+
+Feedback: Correct. Bacteriophages require specific bacterial surface receptors for attachment and infection. Human cells lack these receptors, making phages biologically incapable of infecting human cells. This specificity is what makes them potentially useful as targeted antibacterial treatments. Consider what determines which cells a virus can infect. Viruses need specific surface receptors on their target cells. Think about whether bacterial surface receptors are the same as human cell surface receptors.
+
+---
+
+### Question 3
+
+A hospital patient has an infection caused by a bacterium resistant to all available antibiotics. A doctor suggests using a virus to treat the infection. What is the MOST reasonable concern about this approach?
+
+A. The virus might infect the patient's own cells and cause additional illness
+B. The bacteria might evolve resistance to the virus, just as they evolved resistance to antibiotics
+C. Viruses cannot kill bacteria because they are smaller
+D. The immune system would prevent any virus from entering the body
+
+Correct Answer: B
+
+Feedback: Correct. Just as bacteria evolve antibiotic resistance through natural selection, they can also evolve resistance to bacteriophages by modifying the surface receptors that phages use for attachment. This is a legitimate scientific concern for phage therapy. Consider the evolutionary principle at work. If natural selection drives resistance to one type of selective pressure (antibiotics), could the same process operate against a different selective pressure (viral predation)?
+
+---
+
+### Question 4
+
+Unlike antibiotics, which degrade after administration, bacteriophages can increase in number inside a patient during treatment. What biological process allows this?
+
+A. Phages undergo cell division like bacteria
+B. The patient's immune system produces more phages
+C. Phages replicate inside the bacteria they infect, releasing new phage particles when the bacterial cell bursts
+D. Phages absorb nutrients from the patient's bloodstream to grow
+
+Correct Answer: C
+
+Feedback: Correct. Phages inject their genetic material into bacterial cells, hijack the cell's protein synthesis machinery to produce new phage components, assemble 50-200 new phage particles, and lyse (burst) the cell. This makes phage therapy self-amplifying. Remember that viruses cannot reproduce independently. They need a host cell's machinery. In phage therapy, what serves as the host cell?
+
+---
+
+### Question 5
+
+The human gut contains trillions of beneficial bacteria that aid in digestion and immune function. Why is this relevant when considering phage therapy for a bacterial infection?
+
+A. Beneficial gut bacteria would prevent phages from reaching the pathogenic bacteria
+B. Phage therapy must be specific enough to kill pathogenic bacteria without destroying the beneficial microbiome
+C. Gut bacteria are immune to all viruses and would be unaffected
+D. The microbiome has no relevance to infection treatment decisions
+
+Correct Answer: B
+
+Feedback: Correct. A treatment that kills both pathogenic and beneficial bacteria (as many broad-spectrum antibiotics do) can cause serious complications. Phage specificity, the ability to target only the disease-causing strain, is a critical design parameter. Consider the consequences of a treatment that does not distinguish between harmful bacteria and the beneficial bacteria your body depends on for normal function.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a phage therapy model, a student observes that increasing initial Phage Dosage leads to faster bacterial clearance, but the effect plateaus after a certain dose. Which explanation BEST accounts for this plateau?
+
+A. Phages are self-amplifying, so once enough phages establish successful infections, additional initial phages are redundant because the population grows exponentially from bacterial lysis
+B. Higher doses are always toxic to the patient
+C. The immune system destroys all phages above a certain concentration
+D. Bacteria become instantly resistant when phage concentration is too high
+
+Correct Answer: A
+
+Feedback: Correct. Because phage therapy is self-amplifying (each lysed bacterium releases 50-200 new phages), the initial dose only needs to be large enough to establish productive infections. Beyond that threshold, the phage population grows exponentially regardless of the starting dose. Consider what makes phage therapy fundamentally different from antibiotic treatment. Antibiotics degrade over time, but phages do something unique when they encounter target bacteria.
+
+---
+
+### Question 2
+
+A model simulation shows that when Treatment Timing is delayed from Day 1 to Day 5 of infection, the probability of treatment failure increases dramatically. Which factor MOST directly explains this finding?
+
+A. The patient's immune system becomes too weak to support phage therapy after 5 days
+B. A larger, more genetically diverse bacterial population is more likely to contain pre-existing resistance mutations that natural selection can amplify
+C. Phages lose their effectiveness after being stored for 5 days
+D. The infection has already caused irreversible organ damage by Day 5
+
+Correct Answer: B
+
+Feedback: Correct. As bacterial populations grow, they accumulate genetic diversity through random mutation. A population of 10 billion bacteria is far more likely to contain individuals with phage-resistant mutations than a population of 10,000. Natural selection rapidly amplifies these resistant mutants under phage pressure. Consider the relationship between population size and genetic diversity. How does a larger bacterial population change the probability that resistance-conferring mutations exist before treatment begins?
+
+---
+
+### Question 3
+
+A researcher observes that bacteria which evolve resistance to a phage by modifying their surface receptors simultaneously become susceptible to an antibiotic they were previously resistant to. This phenomenon is BEST explained by which concept?
+
+A. Genetic linkage, where the resistance and susceptibility genes are on the same chromosome
+B. Evolutionary trade-offs, where the surface receptors used for phage attachment are the same receptors that confer antibiotic resistance, so modifying them costs both functions
+C. Horizontal gene transfer from phage DNA to bacterial DNA
+D. The antibiotic was reformulated to be more effective against the mutant strain
+
+Correct Answer: B
+
+Feedback: Correct. This is phage-antibiotic synergy. Surface receptor proteins often serve multiple functions. When bacteria modify a receptor to block phage attachment, they may lose the efflux pump or structural feature that made them antibiotic-resistant. Evolution forces a trade-off between two survival strategies. Think about the dual function of bacterial surface receptors. If a receptor protein both enables antibiotic resistance AND serves as the phage attachment site, what happens when the bacterium mutates that receptor to escape the phage?
+
+---
+
+### Question 4
+
+A phage therapy optimization model includes both Phage Specificity and Healthy Microbiome Impact as components. A student increases Phage Specificity to its maximum value. What is the MOST LIKELY effect on Healthy Microbiome Impact?
+
+A. Healthy Microbiome Impact increases because more specific phages are more potent
+B. Healthy Microbiome Impact decreases because highly specific phages only target the pathogenic strain and leave beneficial bacteria unharmed
+C. There is no relationship between specificity and microbiome impact
+D. Healthy Microbiome Impact remains the same because the microbiome is immune to phages
+
+Correct Answer: B
+
+Feedback: Correct. Phage Specificity and Healthy Microbiome Impact have a negative relationship. Higher specificity means the phage more precisely distinguishes between pathogenic bacteria and beneficial microbiome species, resulting in less collateral damage to the gut ecosystem. Consider what specificity means in biological targeting. A highly specific phage recognizes only one bacterial strain's receptors. How would this affect bacteria in the gut that have different surface receptors?
+
+---
+
+### Question 5
+
+A clinical team is designing a phage cocktail containing three different phages, each targeting a different surface receptor on the same pathogenic bacterium. What is the PRIMARY advantage of this multi-phage approach over using a single phage type?
+
+A. Three phages kill bacteria three times faster than one phage
+B. The probability of simultaneous resistance to all three phages is exponentially lower than resistance to any single phage, making treatment failure far less likely
+C. Different phages target different organs in the body, increasing tissue coverage
+D. Using three phages reduces the immune system's response to the treatment
+
+Correct Answer: B
+
+Feedback: Correct. If resistance to one phage occurs at a rate of 1 in 10^6, simultaneous resistance to three independent phages targeting different receptors occurs at approximately 1 in 10^18. This combinatorial principle is the same logic behind HIV combination therapy and makes resistance evolution astronomically unlikely. Consider the mathematics of probability. If each phage targets a different receptor, a bacterium must independently mutate all three receptors simultaneously to survive. How does requiring multiple simultaneous mutations change the odds?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -901,6 +901,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A student is convinced she saw a dog run across the street, but security footage shows it was a plastic bag blown by wind. Which explanation best accounts for this perceptual error?
+
+A. The brain uses prior experience to fill in ambiguous sensory data, sometimes generating false perceptions
+B. The student's eyes were not functioning correctly at the time of the observation
+C. The brain randomly generates images that have no connection to sensory input
+D. Perceptual errors only occur in people with below-average intelligence
+
+Correct Answer: A
+
+Feedback: Correct. The brain relies on prior experience and heuristics to interpret ambiguous sensory input, which can produce systematic perceptual errors even in healthy individuals. Incorrect. Perceptual errors are a normal feature of neural processing. When sensory input is ambiguous, the brain uses prior experience to 'fill in' what it expects to see, sometimes generating false perceptions.
+
+---
+
+### Question 2
+
+Two scientists analyze the same climate dataset and reach opposite conclusions. Which concept from neuroscience most directly explains this phenomenon?
+
+A. One scientist must have made a mathematical error in the analysis
+B. Confirmation bias causes each scientist to selectively attend to data supporting their pre-existing beliefs
+C. Scientific data is always ambiguous and can never support any conclusion
+D. Scientists with more education are always more accurate in their interpretations
+
+Correct Answer: B
+
+Feedback: Correct. Confirmation bias causes people to search for, interpret, and remember information that confirms their pre-existing beliefs while ignoring contradictory evidence. Incorrect. Confirmation bias is a well-documented cognitive bias where prior beliefs shape how new evidence is interpreted, causing two people to draw different conclusions from identical data.
+
+---
+
+### Question 3
+
+What is a heuristic in the context of cognitive science?
+
+A. A type of brain damage that impairs decision-making ability
+B. A mental shortcut the brain uses for quick decisions that is efficient but prone to systematic errors
+C. A conscious, deliberate strategy for solving complex problems step by step
+D. A rare cognitive ability found only in experts with years of training
+
+Correct Answer: B
+
+Feedback: Correct. Heuristics are mental shortcuts that allow the brain to make rapid decisions without analyzing all available data. They work well most of the time but produce predictable errors in specific situations. Incorrect. Heuristics are mental shortcuts used by everyone's brain to make fast decisions. They are efficient most of the time but produce systematic, predictable errors called cognitive biases.
+
+---
+
+### Question 4
+
+A student claims that highly intelligent people are less susceptible to cognitive biases. Based on neuroscience research, which response is most accurate?
+
+A. This is correct; intelligence fully protects against cognitive biases
+B. Intelligence has no relationship to cognitive processing at all
+C. Expertise can actually increase certain biases because strong prior knowledge shapes interpretation of ambiguous information
+D. Only people with cognitive disabilities experience biases
+
+Correct Answer: C
+
+Feedback: Correct. Research shows that expertise can increase confirmation bias because experts have stronger prior beliefs that more powerfully shape how they interpret new, ambiguous evidence. Incorrect. Cognitive biases are features of neural processing in all brains. Experts can actually be more biased in their area of expertise because their strong prior knowledge more powerfully filters new information.
+
+---
+
+### Question 5
+
+When would a person's cognitive biases be MOST likely to influence their decision-making?
+
+A. When they are well-rested, have clear data, and no prior expectations
+B. When sensory input is clear and unambiguous with low cognitive load
+C. When they are stressed, fatigued, and processing ambiguous information with strong prior beliefs
+D. When they are making decisions in their area of least experience
+
+Correct Answer: C
+
+Feedback: Correct. Biases are strongest when cognitive load is high (stress, fatigue), sensory input is ambiguous, and prior experience is strong, because the brain relies more heavily on shortcuts under these conditions. Incorrect. Cognitive biases are amplified by high cognitive load (stress/fatigue), ambiguous information, and strong prior beliefs. Under these conditions, the brain shifts from careful analysis to quick heuristic shortcuts.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the cognitive bias model, what happens to Decision Accuracy when Sensory Input is weak and Prior Experience is very strong?
+
+A. Decision Accuracy increases because strong prior experience compensates for weak sensory data
+B. Decision Accuracy decreases because the brain fills in gaps with expectations rather than evidence, increasing Bias Strength
+C. Decision Accuracy remains unchanged because Sensory Input and Prior Experience are independent variables
+D. Decision Accuracy improves only if Cognitive Load is also high
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that when sensory input is ambiguous and prior experience is strong, the brain fills in gaps with what it expects to see, dramatically increasing Bias Strength and reducing Decision Accuracy. Incorrect. The model demonstrates that weak sensory input combined with strong prior experience increases Bias Strength because the brain relies on expectations rather than evidence, which decreases Decision Accuracy.
+
+---
+
+### Question 2
+
+A hospital finds that diagnostic errors increase during long shifts. Based on the cognitive bias model, which mechanism best explains this pattern?
+
+A. Doctors become physically unable to see symptoms after working many hours
+B. Increased Cognitive Load from fatigue causes the brain to rely more heavily on heuristic shortcuts, amplifying anchoring and confirmation biases
+C. Patients who arrive during long shifts tend to have more unusual conditions
+D. Diagnostic protocols are only designed to work during short shifts
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that high Cognitive Load (from fatigue, stress, multitasking) forces the brain to shift from careful, analytical processing to faster heuristic shortcuts, amplifying all biases including anchoring and confirmation bias. Incorrect. The model predicts that increased Cognitive Load from fatigue amplifies Bias Strength because the brain shifts from analytical processing to heuristic shortcuts when overwhelmed, increasing the influence of anchoring and confirmation biases.
+
+---
+
+### Question 3
+
+A student adds Metacognition as a component to the cognitive bias model. Based on the model's predictions, how would Metacognition interact with Bias Strength?
+
+A. Metacognition would completely eliminate all cognitive biases
+B. Metacognition would act as a moderating variable that reduces but never eliminates the impact of biases on decisions
+C. Metacognition would increase Bias Strength by making people more aware of their beliefs
+D. Metacognition would only affect Decision Accuracy if Cognitive Load is zero
+
+Correct Answer: B
+
+Feedback: Correct. The model predicts that metacognition (awareness of one's own thinking) acts as a moderating variable that can reduce but never fully eliminate bias, since biases are built into the brain's fundamental processing architecture. Incorrect. Metacognition moderates Bias Strength by enabling people to recognize when shortcuts might lead to errors, but it cannot eliminate biases entirely because they are fundamental features of neural processing, not optional settings.
+
+---
+
+### Question 4
+
+Which scenario from the cognitive bias model would produce the HIGHEST Decision Accuracy?
+
+A. High Sensory Input clarity, low Prior Experience, low Cognitive Load
+B. Low Sensory Input clarity, high Prior Experience, high Cognitive Load
+C. Medium Sensory Input clarity, maximum Prior Experience, low Cognitive Load
+D. Low Sensory Input clarity, low Prior Experience, high Cognitive Load
+
+Correct Answer: A
+
+Feedback: Correct. The model predicts highest Decision Accuracy when sensory data is clear (reducing reliance on expectations), prior beliefs are weak (reducing confirmation bias), and cognitive load is low (allowing analytical rather than heuristic processing). Incorrect. Decision Accuracy is maximized when sensory input is strong and unambiguous, prior experience is low (reducing bias from preconceptions), and cognitive load is low (allowing the brain to process information analytically rather than through shortcuts).
+
+---
+
+### Question 5
+
+The model shows that cognitive biases are 'features' of neural processing rather than 'flaws.' Which evidence from the model best supports this claim?
+
+A. Biases only appear in people with brain injuries, suggesting they are abnormal
+B. Heuristic shortcuts produce correct decisions approximately 95% of the time, failing only in specific predictable situations involving ambiguous input or high cognitive load
+C. Biases are randomly distributed and unpredictable, suggesting they serve no function
+D. Biases disappear entirely when a person is aware of them
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that heuristics evolved because they produce fast, accurate-enough decisions the vast majority of the time. They only fail systematically in specific conditions (ambiguous input, high load, strong priors), indicating they are adaptive features optimized for speed over perfect accuracy. Incorrect. The model shows biases are features because the underlying heuristics produce good decisions most of the time. Evolution optimized the brain for speed, not perfect accuracy, so these shortcuts work well in typical conditions but fail predictably when evidence is ambiguous or cognitive load is high.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: A
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

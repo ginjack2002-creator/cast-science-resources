@@ -882,6 +882,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A student claims that sweating is a sign of being out of shape. Which of the following best explains why this claim is scientifically inaccurate?
+
+A. Sweating is the body's primary mechanism for evaporative cooling and is more efficient in well-conditioned athletes
+B. Sweating only occurs when the body is overheating due to illness
+C. Sweating is controlled by voluntary muscles and can be stopped at will
+D. Sweating depletes the body's salt reserves, which is harmful regardless of fitness level
+
+Correct Answer: A
+
+Feedback: Correct. Sweating is the body's primary thermoregulatory response, and trained athletes often sweat more efficiently because their cooling systems are better adapted to dissipate heat. Sweating is actually a sign of an efficient cooling system. Well-trained athletes often sweat MORE than untrained individuals because their thermoregulatory systems are better adapted to dissipate metabolic heat through evaporative cooling.
+
+---
+
+### Question 2
+
+During a football game on a hot day, two players of similar fitness levels are performing at the same intensity. Player A collapses from heat exhaustion while Player B continues playing. Which factor most likely explains this difference?
+
+A. Player A has a genetic condition that prevents all sweating
+B. Player A consumed significantly less water before and during the game than Player B
+C. Player B is naturally immune to heat-related illness
+D. Player A was wearing a darker uniform color that absorbed more heat
+
+Correct Answer: B
+
+Feedback: Correct. Hydration level is the most common variable that determines individual vulnerability to heat illness. Dehydration reduces the body's ability to produce sweat and maintain core temperature. The most likely explanation is a difference in hydration. When the body lacks sufficient water, it cannot produce enough sweat to cool itself, causing core temperature to rise uncontrollably. Uniform color has minimal impact compared to internal hydration status.
+
+---
+
+### Question 3
+
+Which of the following best describes the concept of homeostasis?
+
+A. The body's ability to increase temperature during exercise to improve performance
+B. A state where the body's internal conditions remain perfectly constant at all times
+C. The body's ability to maintain stable internal conditions within a functional range despite changing external conditions
+D. A process that only occurs when the body is at rest and not under physical stress
+
+Correct Answer: C
+
+Feedback: Correct. Homeostasis is the maintenance of stable internal conditions within a functional range, even as external conditions change. It is dynamic, not static, and operates continuously. Homeostasis does not mean conditions are perfectly constant or only maintained at rest. It refers to the body's ability to keep internal conditions like temperature, pH, and blood sugar within a functional range despite external changes.
+
+---
+
+### Question 4
+
+An athlete's core body temperature rises from 37°C to 39°C during a workout. The body responds by increasing sweat production, which eventually brings the temperature back toward 37°C. This process is an example of which type of biological mechanism?
+
+A. Positive feedback, because the response amplifies the original change
+B. Negative feedback, because the response counteracts the original change
+C. Passive diffusion, because heat naturally moves from hot to cold
+D. Active transport, because the body uses energy to move heat molecules
+
+Correct Answer: B
+
+Feedback: Correct. This is a negative feedback mechanism because the body's response (increased sweating) opposes the initial change (rising temperature), working to restore the original set point. When the body detects a change (rising temperature) and responds in a way that reverses that change (sweating to cool down), this is negative feedback. The response negates the stimulus, restoring balance.
+
+---
+
+### Question 5
+
+A coach notices that heat-related illness incidents at their school have occurred at outdoor temperatures as low as 78°F (26°C). Which explanation best accounts for this observation?
+
+A. Heat illness can only occur above 100°F, so these incidents must have been misdiagnosed
+B. Air temperature alone does not determine heat illness risk; humidity, exertion level, and hydration status interact to determine vulnerability
+C. The thermometers used to measure temperature were likely inaccurate
+D. Heat illness at low temperatures is caused by an allergic reaction to sunlight rather than thermoregulatory failure
+
+Correct Answer: B
+
+Feedback: Correct. Heat illness results from the interaction of multiple factors including humidity (which reduces evaporative cooling efficiency), exercise intensity (which generates metabolic heat), and hydration status. Air temperature is only one variable. Heat illness can occur at surprisingly moderate temperatures when other factors align. High humidity reduces the effectiveness of sweating, intense exertion generates large amounts of metabolic heat, and dehydration limits the body's cooling capacity. The combination of these factors matters more than air temperature alone.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a computational model of thermoregulation, a student sets Physical Exertion to maximum and Hydration Level to low. The model shows Core Temperature rising sharply while Sweat Rate initially increases then drops to near zero. Which explanation best interprets this model behavior?
+
+A. The model is malfunctioning because sweat rate should continue to increase with temperature
+B. The negative feedback loop has broken down because the body cannot produce sweat without adequate water, causing an uncontrolled temperature increase
+C. The body has switched from negative feedback to a more efficient cooling mechanism
+D. Sweat rate decreases because the body has successfully cooled itself and no longer needs evaporative cooling
+
+Correct Answer: B
+
+Feedback: Correct. This model output demonstrates the critical failure point in thermoregulation. Sweat production requires water. When hydration is depleted, the negative feedback loop breaks because the effector (sweat glands) can no longer function, converting the system to a dangerous positive feedback scenario. The model shows the breaking point of the thermoregulatory feedback loop. Sweating requires water. When hydration is too low, the body physically cannot produce sweat to cool itself. The negative feedback loop fails, and core temperature spirals upward without any mechanism to bring it back down.
+
+---
+
+### Question 2
+
+A student's model shows that during the 'Gradual Dehydration' scenario, core temperature remains stable for the first 45 minutes, then begins rising rapidly. Which concept best explains this pattern?
+
+A. The system has a tipping point where the feedback loop transitions from maintaining homeostasis to failing catastrophically
+B. The body's thermostat resets to a higher temperature after 45 minutes of exercise
+C. The model has a built-in delay that prevents temperature changes for the first 45 minutes
+D. Core temperature always rises linearly during exercise regardless of hydration
+
+Correct Answer: A
+
+Feedback: Correct. The model reveals a critical tipping point. Initially, the body has enough hydration to maintain the negative feedback loop. As water depletes, the system reaches a threshold where cooling capacity can no longer match heat production, and the system shifts from stable homeostasis to runaway heating. The delayed temperature rise followed by rapid increase demonstrates a tipping point in the system. The body maintains homeostasis as long as sufficient water is available for sweating. When hydration crosses a critical threshold, the cooling system fails and temperature rises uncontrollably.
+
+---
+
+### Question 3
+
+Two students build models of thermoregulation. Student A's model includes only Core Temperature and Sweat Rate. Student B's model adds Hydration Level and Physical Exertion. Which statement best evaluates the difference between these models?
+
+A. Student A's model is superior because simpler models are always more accurate
+B. Student B's model can predict system failure conditions that Student A's model cannot, because it includes the external inputs that drive and constrain the feedback loop
+C. Both models are equally valid because they contain the same core feedback mechanism
+D. Neither model is useful because thermoregulation requires at least ten components to model accurately
+
+Correct Answer: B
+
+Feedback: Correct. Student B's model includes the external variables (hydration and exertion) that determine whether the feedback loop functions or breaks down. Without these inputs, Student A's model cannot predict the conditions under which homeostasis fails. Student B's model is more powerful because it includes the external drivers (Physical Exertion and Hydration Level) that determine whether the negative feedback loop operates successfully. Student A's model can show the feedback mechanism but cannot predict when or why it fails.
+
+---
+
+### Question 4
+
+Based on model evidence, which intervention would be most effective at preventing heat-related illness during a high-intensity outdoor practice in 90°F weather?
+
+A. Moving practice to a shaded area, because shade eliminates the risk of overheating
+B. Implementing mandatory hydration breaks every 15 minutes, because maintaining hydration preserves the integrity of the negative feedback loop
+C. Reducing practice duration to 30 minutes, because heat illness cannot occur in short time periods
+D. Having athletes wear lighter-colored clothing, because clothing color is the primary determinant of core temperature
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that hydration is the critical variable that determines whether the thermoregulatory feedback loop continues to function. Mandatory hydration breaks maintain the body's ability to produce sweat and sustain evaporative cooling. The computational model shows that the feedback loop breaks when hydration drops below a critical threshold. Mandatory hydration breaks directly address the most important controllable variable in the system, ensuring the body can continue producing sweat to regulate core temperature.
+
+---
+
+### Question 5
+
+A student extends their thermoregulation model by adding an Acclimatization Level component. They find that higher acclimatization shifts the tipping point, allowing athletes to exercise longer before the feedback loop fails. Which reasoning best explains this model prediction?
+
+A. Acclimatized athletes do not produce body heat during exercise
+B. Acclimatization improves sweating efficiency and plasma volume, allowing the cooling system to operate effectively at higher core temperatures and lower hydration levels
+C. Acclimatization eliminates the body's need for water during exercise
+D. Acclimatized athletes have a lower resting core temperature, so they can tolerate unlimited heat exposure
+
+Correct Answer: B
+
+Feedback: Correct. Heat acclimatization produces physiological adaptations including earlier onset of sweating, increased sweat volume, expanded plasma volume, and improved cardiovascular efficiency. These changes extend the functional range of the feedback loop before it reaches its tipping point. Acclimatization does not eliminate the need for hydration or heat production. Instead, it improves the efficiency of the cooling system through physiological adaptations like increased sweat output, expanded blood plasma volume, and improved cardiovascular function, which extends how long the body can maintain homeostasis before the tipping point.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

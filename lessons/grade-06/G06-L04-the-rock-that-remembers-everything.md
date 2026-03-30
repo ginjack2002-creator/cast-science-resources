@@ -883,6 +883,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-1, MS-ESS2-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which type of rock is formed when melted rock (magma or lava) cools and hardens?
+
+A. Sedimentary rock
+B. Metamorphic rock
+C. Igneous rock
+D. Fossil rock
+
+Correct Answer: C
+
+Feedback: Correct! Igneous rock forms when magma (underground) or lava (on the surface) cools and solidifies. 'Igneous' comes from the Latin word for fire. Not quite. When melted rock cools and hardens, it forms igneous rock. Sedimentary rock forms from compressed layers, and metamorphic rock forms from heat and pressure changing existing rock.
+
+---
+
+### Question 2
+
+Where are fossils most commonly found?
+
+A. Inside volcanic lava flows
+B. In layers of sedimentary rock
+C. Deep inside metamorphic rock
+D. On the surface of igneous rock
+
+Correct Answer: B
+
+Feedback: Correct! Fossils are preserved in sedimentary rock because organisms get buried in layers of sediment that compress over time without destroying the remains. Not quite. Fossils are almost always found in sedimentary rock. The gentle process of burial in sediment layers preserves organisms, while the extreme heat of igneous and metamorphic processes destroys them.
+
+---
+
+### Question 3
+
+What do you think causes rocks to break down into smaller pieces over time?
+
+A. Rocks don't break down — they last forever
+B. Only earthquakes can break rocks
+C. Wind, water, ice, and chemicals gradually wear rocks down
+D. Rocks dissolve in sunlight
+
+Correct Answer: C
+
+Feedback: Correct! Weathering is the process by which wind, water, ice, and chemical reactions gradually break rocks into smaller pieces over time. Not quite. Rocks are constantly being broken down by weathering: wind blows particles against them, water seeps into cracks and freezes, and chemical reactions dissolve minerals. This is a slow but powerful process.
+
+---
+
+### Question 4
+
+Can one type of rock change into a different type of rock?
+
+A. No, rocks stay the same type forever
+B. Yes, but only if they melt completely
+C. Yes, heat, pressure, and weathering can transform rocks from one type to another
+D. Only scientists can change rock types in a laboratory
+
+Correct Answer: C
+
+Feedback: Correct! The rock cycle continuously transforms rocks from one type to another through processes like melting, cooling, weathering, compression, and heat and pressure. Not quite. Rocks are constantly being transformed through the rock cycle. Heat and pressure can change sedimentary rock into metamorphic rock, weathering can break any rock into sediment, and melting and cooling creates igneous rock.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+How can seashell fossils be found on top of a mountain thousands of meters above sea level?
+
+A. Ancient people carried the shells up the mountain
+B. Sedimentary rock with shells formed on an ancient ocean floor, then tectonic forces uplifted it into a mountain
+C. The shells were blown to the mountaintop by powerful ancient winds
+D. The mountain was always above water, and the shells are from freshwater animals
+
+Correct Answer: B
+
+Feedback: Correct! Shells accumulated on an ancient seafloor and were buried in sediment that became rock. Over millions of years, tectonic plate collisions pushed that rock upward, forming mountains with ocean fossils inside. Not quite. Shell fossils on mountains formed on ancient ocean floors where shells were buried in sediment. Over millions of years, tectonic forces pushed that sedimentary rock upward to become mountain ranges.
+
+---
+
+### Question 2
+
+In the rock cycle model, what happens when Heat & Pressure are set to maximum while Weathering Rate is low?
+
+A. Sedimentary rock forms quickly from compressed particles
+B. Existing rock transforms into metamorphic rock without melting
+C. All rocks melt and become igneous rock
+D. Nothing happens because rocks can't change without weathering
+
+Correct Answer: B
+
+Feedback: Correct! Extreme heat and pressure transform existing rock into metamorphic rock. The rock's mineral structure changes without the rock actually melting. This happens deep underground at plate boundaries. Not quite. When heat and pressure are extreme, rocks are transformed into metamorphic rock. The minerals recrystallize into new forms without melting. If the rock fully melts, it would eventually form igneous rock instead.
+
+---
+
+### Question 3
+
+Why are fossils ONLY preserved in sedimentary rock and not in igneous or metamorphic rock?
+
+A. Igneous and metamorphic rocks are too hard to contain fossils
+B. Animals only lived near sedimentary rock formations
+C. The extreme heat and pressure that form igneous and metamorphic rocks destroy any organic remains
+D. Sedimentary rock has special chemicals that preserve fossils
+
+Correct Answer: C
+
+Feedback: Correct! Igneous rock forms from melting (destroying any remains), and metamorphic rock forms under extreme heat and pressure (also destroying remains). Only sedimentary rock forms gently enough to preserve fossils. Not quite. The processes that create igneous rock (melting) and metamorphic rock (extreme heat and pressure) are so intense they destroy any organic material. Sedimentary rock forms through gentle burial and compression, preserving fossils.
+
+---
+
+### Question 4
+
+The rock cycle is driven by two energy sources. What are they?
+
+A. Wind and water
+B. Gravity and magnetism
+C. Earth's internal heat and the Sun's energy
+D. Earthquakes and volcanoes
+
+Correct Answer: C
+
+Feedback: Correct! Earth's internal heat drives metamorphism, melting, and tectonic uplift, while the Sun's energy drives weathering and erosion through wind, rain, and temperature changes. Not quite. The rock cycle is powered by Earth's internal heat (which causes melting, metamorphism, and plate movement) and the Sun's energy (which drives weather patterns that cause erosion and weathering).
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

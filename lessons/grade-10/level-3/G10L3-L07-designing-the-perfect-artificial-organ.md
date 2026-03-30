@@ -900,6 +900,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-6, HS-PS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+The human immune system evolved to destroy foreign materials inside the body. Why does this present a fundamental challenge for artificial organ design?
+
+A. Artificial organs are too large for the immune system to attack
+B. Every synthetic material triggers some degree of immune response, causing inflammation, fibrous encapsulation, and potential device failure — the very defense system that protects us also attacks the device meant to save us
+C. The immune system only attacks bacteria and viruses, not synthetic materials
+D. Immune rejection can be completely prevented with current medications
+
+Correct Answer: B
+
+Feedback: Correct. The immune system evolved to attack anything it does not recognize as 'self.' Artificial materials are inherently foreign, triggering inflammatory cascades that can encapsulate the device in fibrous tissue, block blood supply, and cause chronic inflammation — the fundamental biocompatibility challenge. Consider what the immune system does when it detects something foreign inside the body. Does it distinguish between a harmful bacterium and a helpful medical device?
+
+---
+
+### Question 2
+
+Surface chemistry modifications (like PEG coatings) are applied to implant surfaces to reduce immune recognition. Why is surface chemistry more important than the bulk material for determining biocompatibility?
+
+A. The bulk material is invisible to the immune system because it is inside the device
+B. The body's first interaction is with the outermost nanometer-thick surface layer — proteins adsorb, cells attach, and immune cells probe this surface, making its molecular properties more important than the interior material for immune compatibility
+C. Surface coatings make the implant physically stronger
+D. Bulk materials have no effect on the body because they are inert
+
+Correct Answer: B
+
+Feedback: Correct. Biological interactions occur at the interface — the outermost molecular layer. Within seconds of implantation, proteins from blood adsorb onto the surface, and their configuration (determined by surface chemistry) signals to immune cells whether the material is 'friend or foe.' The interior bulk material is never directly contacted by immune cells. Think about what the immune system actually contacts. Does it interact with the center of the implant or only with the outermost surface? What happens at that surface within seconds of implantation?
+
+---
+
+### Question 3
+
+An artificial heart valve must survive approximately 40 million cycles per year (heartbeats) in a warm, corrosive biochemical environment. What engineering property is most critical for long-term survival?
+
+A. Maximum hardness to resist any deformation
+B. Fatigue resistance — the ability to withstand tens of millions of loading cycles without developing micro-cracks that propagate to catastrophic failure under combined mechanical, thermal, and chemical stress
+C. Minimum weight to reduce strain on surrounding tissue
+D. Maximum flexibility to match the natural valve's motion exactly
+
+Correct Answer: B
+
+Feedback: Correct. Fatigue failure from cyclic loading is the primary mechanical failure mode for cardiovascular implants. Each heartbeat applies stress, and over years, micro-cracks initiate and propagate through the material. The biochemical environment accelerates this through corrosion-assisted fatigue. This is why pyrolytic carbon is used for heart valves — its fatigue life exceeds 40 years of heartbeats. Consider the combination of stresses an artificial heart valve faces: tens of millions of repetitive loading cycles, warm (37 degrees C) saline environment, and biological molecules that can corrode materials. What property determines survival under these combined conditions?
+
+---
+
+### Question 4
+
+An artificial kidney must filter blood to remove waste products while retaining essential proteins and cells. Why is this filtering function so difficult to replicate synthetically?
+
+A. Synthetic filters cannot separate molecules of different sizes
+B. Natural kidneys perform complex active transport, selective reabsorption, and hormone production in addition to passive filtration — functions that require living cells and cannot be fully replicated by synthetic membranes alone
+C. Artificial kidneys have already been perfected through dialysis machines
+D. Blood is too viscous for any artificial filter to process
+
+Correct Answer: B
+
+Feedback: Correct. Kidneys perform far more than passive filtration. They actively reabsorb 99% of filtered water and glucose, secrete hormones (erythropoietin, renin), regulate pH, and selectively transport molecules. Current dialysis replaces only basic filtration, which is why patients remain chronically ill. A true artificial kidney requires biological integration. Consider what natural kidneys do beyond simple filtering. Do they just remove waste, or do they also add things back, produce hormones, and make complex decisions about what to keep and what to discard?
+
+---
+
+### Question 5
+
+Tissue integration — where the patient's own cells grow into the implant — is essential for long-term function. Why is achieving tissue integration particularly challenging?
+
+A. Human cells cannot attach to any synthetic material
+B. Successful integration requires simultaneously promoting cell attachment and blood vessel growth while suppressing immune rejection — these goals often conflict because the immune response that attacks the device also prevents tissue from connecting to it
+C. Tissue integration is easily achieved with any biocompatible material
+D. Only bone tissue can integrate with implants; soft tissue integration is impossible
+
+Correct Answer: B
+
+Feedback: Correct. Integration requires cell attachment, vascularization, and functional tissue formation — all of which are impaired by the inflammatory response to a foreign body. The immune system's fibrous encapsulation physically blocks blood vessels and tissue from reaching the implant surface, creating a fundamental conflict between biocompatibility and integration. Consider the immune response timeline: inflammation occurs first, forming a barrier around the implant. How does this barrier affect the ability of blood vessels and tissue cells to reach and integrate with the device surface?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that reducing Immune Response Rate from high to low increases Functional Lifespan from 2 years to 15+ years, even when Structural Durability remains unchanged. What does this reveal about the dominant failure mode?
+
+A. Structural failure is the primary cause of implant failure in all cases
+B. Immune rejection drives the majority of implant failures — chronic inflammation degrades blood flow, blocks cell attachment, and creates fibrous barriers that impair function long before mechanical wear becomes critical
+C. The model incorrectly overweights the immune response variable
+D. Immune response has no effect on Functional Lifespan
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that for many implant types, immune rejection — not mechanical failure — is the life-limiting variable. Chronic inflammation creates fibrous capsules that block nutrient transport, prevent tissue integration, and progressively impair device function. Solving biocompatibility extends lifespan more than improving mechanical durability. Compare what changed (Immune Response Rate) with what stayed the same (Structural Durability) and what improved dramatically (Functional Lifespan). Which variable was controlling the lifespan?
+
+---
+
+### Question 2
+
+In the model, Biocompatible Material and Molecular Surface Chemistry are both classified as external variables. A student argues that Immune Response Rate should also be external because doctors can prescribe immunosuppressive drugs. What is the best evaluation?
+
+A. The student is correct — any variable that can be influenced is external
+B. Immune Response Rate emerges from the interaction between the material, its surface chemistry, and the patient's individual immune system — while drugs can modulate it, it is fundamentally a system response to the implant rather than a directly set parameter
+C. Immune Response Rate cannot be measured, so it cannot be classified
+D. Immunosuppressive drugs eliminate immune response entirely, making it irrelevant
+
+Correct Answer: B
+
+Feedback: Correct. External variables are direct engineering inputs set before implantation. Immune Response Rate emerges from the interaction between the chosen material, its surface modification, and the patient's unique biology. While drugs can modulate this response, it remains a system output — the model correctly captures this distinction. Consider whether Immune Response Rate is directly controlled (like choosing a material) or whether it emerges from the interaction between the implant and the patient's biology. Can a doctor set the immune response to an exact value?
+
+---
+
+### Question 3
+
+The model predicts that a pyrolytic carbon heart valve has excellent Structural Durability (30+ year fatigue life) but triggers moderate immune activation, while a new polymer valve has low immune response but only 8-year Structural Durability. Which model concept best describes this comparison?
+
+A. The polymer is always superior because immune response is more important
+B. Functional Lifespan is limited by whichever variable fails first — the carbon valve's lifespan is limited by immune response, the polymer valve's by mechanical wear — demonstrating that different materials face different life-limiting constraints
+C. Both materials will have identical Functional Lifespans
+D. Material choice has no effect on Functional Lifespan in the model
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates the 'weakest link' principle: Functional Lifespan is determined by whichever variable reaches its failure threshold first. Each material trades strength in one area for weakness in another. The optimal material would excel in both, but no current material achieves that. Think about what limits each valve's lifespan. If one variable is excellent but another fails, which determines how long the device lasts? The device fails when ANY critical variable reaches its limit.
+
+---
+
+### Question 4
+
+The immune rejection cascade scenario shows the following chain: high Immune Response Rate reduces Blood Flow Integration, which reduces Nutrient Transport, which reduces Cell Attachment Rate, which reduces Functional Lifespan. What type of systemic pattern is this?
+
+A. A negative feedback loop that self-corrects
+B. A feedforward degradation cascade where immune activation triggers sequential failures across multiple dependent variables, with each failure worsening the next
+C. A random correlation with no causal mechanism
+D. A positive feedback loop where the last variable feeds back to the first
+
+Correct Answer: B
+
+Feedback: Correct. This is a feedforward cascade: immune activation causes inflammation, inflammation reduces blood vessel formation around the implant, reduced blood flow starves cells of nutrients, and nutrient-deprived cells cannot attach and integrate. Each step directly causes the next in a unidirectional chain of degradation. Trace the causal direction: does each variable in the chain cause the next one to worsen? Does the last variable loop back to affect the first, or is this a one-directional cascade?
+
+---
+
+### Question 5
+
+A team proposes incorporating living kidney cells into a synthetic filtration membrane to create a bioartificial kidney. Based on the model, what new challenge does adding living cells introduce that a purely synthetic device does not face?
+
+A. Living cells make the device heavier, which is the only concern
+B. Living cells require continuous Nutrient Transport and oxygen supply, are vulnerable to immune attack as foreign biological material, and can die if Blood Flow Integration is insufficient — adding biological complexity to the engineering challenge
+C. Living cells eliminate all biocompatibility concerns because they are biological
+D. Adding living cells has no significant effect on any model variable
+
+Correct Answer: B
+
+Feedback: Correct. Living cells transform the engineering challenge: they require vascularization for nutrients and oxygen (diffusion limits cells to within 200 micrometers of a blood vessel), they may trigger immune responses if they come from a different individual, and they can die from insufficient blood flow. The device must now sustain living tissue in addition to performing mechanical filtration. Consider what living cells need to survive inside a device. Unlike synthetic materials, cells require oxygen, glucose, and waste removal. What model variables become critical when the device contains living tissue?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

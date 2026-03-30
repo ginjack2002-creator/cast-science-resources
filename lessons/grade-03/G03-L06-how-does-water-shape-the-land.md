@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-ESS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+How do you think the Grand Canyon was formed?
+
+A. People dug it with shovels
+B. Water from a river slowly carved it over millions of years
+C. It was always there since Earth was created
+D. A giant earthquake split the ground open
+
+Correct Answer: B
+
+Feedback: That is right! The Grand Canyon was carved by the Colorado River over about 6 million years. Water is a powerful force that shapes the land very slowly. The Grand Canyon was carved by the Colorado River over millions of years. Even though water seems soft, it can carve through rock when given enough time.
+
+---
+
+### Question 2
+
+What do you think happens when a lot of rain falls on a dirt hill?
+
+A. Nothing changes
+B. The dirt turns into rock
+C. The water washes some of the dirt away
+D. The hill gets taller
+
+Correct Answer: C
+
+Feedback: Good thinking! When rain falls on a dirt hill, the water picks up soil and carries it downhill. This process of water moving soil is called erosion. When water flows over dirt, it picks up loose soil and carries it away. This is called erosion. You might have seen dirt washing away during a rainstorm.
+
+---
+
+### Question 3
+
+What is the word for tiny pieces of sand, mud, and dirt that settle in layers?
+
+A. Fossils
+B. Magnets
+C. Sediment
+D. Pollution
+
+Correct Answer: C
+
+Feedback: Correct! Sediment is the name for tiny pieces of sand, mud, and dirt that settle in layers on the ground or at the bottom of water. Tiny pieces of sand, mud, and dirt that settle in layers are called sediment. Rivers carry sediment and drop it off when the water slows down.
+
+---
+
+### Question 4
+
+Do you think a fast river or a slow stream moves more rocks and soil?
+
+A. A slow stream moves more because it has more time
+B. They move the same amount
+C. A fast river moves more because it has more power
+D. Neither one can move rocks
+
+Correct Answer: C
+
+Feedback: You got it! A fast river has more power to pick up and carry rocks and soil. The faster water flows, the bigger the pieces it can move. Faster water has more energy and more power. A fast river can pick up and move much bigger pieces of rock and soil than a slow, gentle stream.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the erosion model, when Water Flow increases, what happens to Erosion Strength?
+
+A. Erosion Strength decreases because the water spreads out
+B. Erosion Strength increases because faster water can pick up and carry more material
+C. Erosion Strength stays the same
+D. The water stops flowing
+
+Correct Answer: B
+
+Feedback: Correct! Water Flow and Erosion Strength have a positive relationship. Faster, stronger water can pick up more rocks and soil, causing more erosion. In the model, Water Flow and Erosion Strength have a positive relationship. When water flows faster, it has more energy to pick up and carry rocks and soil.
+
+---
+
+### Question 2
+
+What is the difference between weathering and erosion?
+
+A. They are the same thing
+B. Weathering breaks rocks apart; erosion carries the broken pieces to a new place
+C. Erosion breaks rocks; weathering carries them away
+D. Weathering only happens in winter; erosion only happens in summer
+
+Correct Answer: B
+
+Feedback: Exactly! Weathering is the breaking apart of rocks by water, ice, wind, or roots. Erosion is when water, wind, or ice picks up the broken pieces and carries them somewhere else. Weathering and erosion are two different processes. Weathering breaks rocks into smaller pieces. Then erosion picks up those pieces and carries them to a new location.
+
+---
+
+### Question 3
+
+When water slows down and drops the rocks and soil it was carrying, this is called:
+
+A. Weathering
+B. Erosion
+C. Deposition
+D. Evaporation
+
+Correct Answer: C
+
+Feedback: Right! Deposition is when water slows down and drops the material it was carrying. This is how deltas, beaches, and sandbars are formed. When moving water slows down, it drops the rocks and soil it was carrying. This process is called deposition. It is the opposite of erosion and creates new landforms like deltas and beaches.
+
+---
+
+### Question 4
+
+In the flooding river scenario, Erosion Strength and Land Shape Change were both very high. Why?
+
+A. Because floods happen at night
+B. Because powerful flood water has enough energy to pick up large rocks and carve deep channels into the land
+C. Because floods make the land flat
+D. Because Land Shape Change is not connected to Erosion Strength
+
+Correct Answer: B
+
+Feedback: You got it! Flooding rivers have enormous energy. The powerful water picks up large rocks and carves deep channels, causing major changes to the shape of the land. During a flood, the water flows very fast and has enormous energy. This strong flow picks up large amounts of rock and soil and can carve deep channels, causing big changes to the land.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

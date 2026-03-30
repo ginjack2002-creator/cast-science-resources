@@ -922,6 +922,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Solar radiation management (SRM) and carbon dioxide removal (CDR) are two categories of geoengineering. What is the fundamental difference between their approaches to addressing climate change?
+
+A. SRM removes CO2 from the atmosphere while CDR blocks sunlight
+B. SRM masks warming by reducing incoming sunlight without removing CO2, while CDR addresses the root cause by removing CO2 from the atmosphere
+C. SRM and CDR are identical technologies with different names
+D. SRM increases greenhouse gas concentrations while CDR decreases solar output
+
+Correct Answer: B
+
+Feedback: Correct. SRM (like stratospheric aerosol injection) reduces sunlight reaching Earth's surface, counteracting greenhouse warming without changing CO2 levels. CDR (like direct air capture) removes CO2 from the atmosphere, addressing the root cause. This distinction has critical implications for effectiveness, risk, and long-term dependency. Incorrect. The fundamental difference is that SRM treats the symptom (temperature) by reducing incoming sunlight, while CDR treats the cause (CO2) by removing greenhouse gases from the atmosphere. SRM creates dependency because the underlying CO2 problem persists, while CDR can produce permanent resolution.
+
+---
+
+### Question 2
+
+Termination shock is a major risk associated with solar radiation management. What would cause termination shock?
+
+A. SRM technologies becoming too effective at cooling the planet
+B. Sudden cessation of SRM deployment, exposing the planet to the full accumulated greenhouse warming that was being masked
+C. Gradual reduction in solar output from the sun
+D. Increased volcanic eruptions triggered by SRM aerosols
+
+Correct Answer: B
+
+Feedback: Correct. SRM masks warming without reducing CO2. If deployed for decades while CO2 continues accumulating, stopping SRM suddenly would expose Earth to all the hidden warming within months. This could produce several degrees of warming in under a decade, a rate of change far exceeding anything in human history. Incorrect. Termination shock would occur if SRM were suddenly stopped after years of deployment. Because SRM masks warming without reducing CO2, all the accumulated greenhouse warming hidden behind the solar shield would be unleashed rapidly, causing catastrophic temperature increases within months to years.
+
+---
+
+### Question 3
+
+Current carbon dioxide removal (CDR) technology removes approximately 0.01 gigatons of CO2 per year, while annual emissions are approximately 36 gigatons. What does this gap reveal about CDR as a climate solution?
+
+A. CDR is already operating at sufficient scale to solve climate change
+B. CDR must be scaled up by approximately 3,600 times just to match current emissions, making it a complement to emission reduction rather than a substitute
+C. The gap shows that CDR is impossible and should be abandoned
+D. CDR will automatically scale to match emissions through market forces within 5 years
+
+Correct Answer: B
+
+Feedback: Correct. The 3,600-fold gap between current CDR capacity and annual emissions demonstrates that CDR cannot substitute for emission reduction at any realistic timescale. It can be a valuable complement by drawing down legacy CO2 after emissions are drastically cut, but achieving net-negative emissions requires massive emission reduction first. Incorrect. The gap between 0.01 Gt/year CDR capacity and 36 Gt/year emissions represents a 3,600-fold scale difference. This makes clear that CDR cannot replace emission reduction in any realistic scenario but can play a supporting role in achieving net-negative emissions after the heavy lifting of decarbonization.
+
+---
+
+### Question 4
+
+The moral hazard of geoengineering refers to which risk?
+
+A. Geoengineering technologies could directly harm human health
+B. The availability of geoengineering could reduce the urgency to cut emissions, leading to continued fossil fuel dependence and ultimately worsening the problem
+C. Geoengineering would be too expensive for any country to implement
+D. Geoengineering would eliminate all natural weather variability
+
+Correct Answer: B
+
+Feedback: Correct. Moral hazard is the risk that a perceived safety net reduces motivation to address the underlying problem. If policymakers believe geoengineering can fix climate change, they may delay the difficult transition away from fossil fuels, increasing long-term CO2 accumulation and making the climate problem worse while creating dependence on risky interventions. Incorrect. Moral hazard refers to the behavioral risk: if geoengineering is seen as a viable alternative to emission reduction, it could undermine political will for decarbonization. This delay would increase cumulative CO2, worsen the underlying problem, and create deeper dependence on interventions with serious risks and side effects.
+
+---
+
+### Question 5
+
+If a single nation unilaterally deployed stratospheric aerosol injection, what global governance challenge would this create?
+
+A. No governance challenge, because the effects would be limited to that nation's territory
+B. SRM would alter global climate patterns including monsoon rainfall, creating international winners and losers from a decision made without the consent of affected nations
+C. The technology is so expensive that no single nation could afford it
+D. Other nations would automatically benefit equally from the cooling effect
+
+Correct Answer: B
+
+Feedback: Correct. SRM's effects are inherently global and uneven. Stratospheric aerosols would reduce temperatures globally but could disrupt monsoon rainfall in South and East Asia, alter precipitation in Africa, and change tropical cyclone patterns. A unilateral decision affecting billions of people raises fundamental questions about global governance and justice. Incorrect. SRM is a global intervention with asymmetric effects. While it would cool the planet overall, it would alter regional weather patterns, potentially reducing monsoon rainfall critical for billions of people. Unilateral deployment creates a governance crisis: one nation's climate intervention becomes every nation's climate disruption.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that deploying SRM for 50 years while emissions continue causes Termination Risk to increase every year. What system dynamic creates this escalating risk?
+
+A. SRM aerosols accumulate in the stratosphere, becoming toxic over time
+B. Each year of SRM masks additional CO2 accumulation, so the gap between actual temperature and masked temperature grows larger, making the consequences of stopping SRM progressively more catastrophic
+C. SRM technology naturally degrades over time, losing effectiveness
+D. Termination Risk decreases over time as ecosystems adapt to SRM conditions
+
+Correct Answer: B
+
+Feedback: Correct. SRM creates a growing temperature debt. Each year that CO2 continues accumulating while warming is masked increases the difference between the temperature Earth would experience without SRM and the temperature being maintained. Stopping SRM would expose this ever-growing temperature gap, making termination shock progressively worse. Incorrect. The escalating risk comes from the growing gap between masked and actual greenhouse forcing. SRM holds temperature down while CO2 rises behind the shield. Each year, the accumulated CO2 represents more warming potential, so stopping SRM would produce an ever-larger temperature jump.
+
+---
+
+### Question 2
+
+A student's model shows that SRM stabilizes global temperature but ocean acidification continues worsening. What does this divergence reveal about the difference between treating symptoms versus causes?
+
+A. The model is flawed because temperature and acidification should always move together
+B. SRM only addresses the temperature symptom of excess CO2 while leaving the chemical cause (atmospheric CO2 dissolving in oceans) completely unaddressed
+C. Ocean acidification is unrelated to atmospheric CO2 and has a separate cause
+D. SRM should increase ocean pH because cooler water absorbs less CO2
+
+Correct Answer: B
+
+Feedback: Correct. This divergence powerfully demonstrates the difference between symptom management and cause treatment. SRM reduces incoming solar radiation (the temperature symptom) but does nothing about atmospheric CO2 (the cause). Since ocean acidification is driven by CO2 absorption, not temperature, it continues unabated. Incorrect. The divergence is a critical insight: SRM masks the temperature effect of CO2 but does nothing about the CO2 itself. Ocean acidification is caused by dissolved CO2 lowering ocean pH, a process entirely independent of temperature management. SRM's selective effect on temperature but not chemistry exposes its fundamental limitation.
+
+---
+
+### Question 3
+
+A model comparison shows that emission reduction combined with CDR produces the best outcomes with the lowest risk. A student asks why emission reduction alone is not sufficient. Which answer is best supported by the model?
+
+A. Emission reduction has no effect on atmospheric CO2 levels
+B. Even with aggressive emission reduction, the legacy CO2 already in the atmosphere continues driving warming and acidification. CDR can actively draw down this legacy stock, accelerating the return to safer CO2 levels
+C. CDR is easier and cheaper than emission reduction in all scenarios
+D. Emission reduction only affects CO2 while CDR affects all greenhouse gases simultaneously
+
+Correct Answer: B
+
+Feedback: Correct. Emission reduction stops adding new CO2 (addressing flow) but does not remove the approximately 1 trillion tons of excess CO2 already accumulated (the stock). CDR addresses this legacy stock, actively drawing down atmospheric CO2 toward safer levels. The combination addresses both flow and stock. Incorrect. The distinction is between flow and stock. Emission reduction stops the flow of new CO2 into the atmosphere, but the accumulated stock of excess CO2 continues affecting climate. CDR addresses this stock by actively removing legacy CO2, which emission reduction alone cannot do.
+
+---
+
+### Question 4
+
+A model reveals that SRM deployment would reduce monsoon rainfall in South Asia, where 1.5 billion people depend on monsoon agriculture. A wealthy nation proposes SRM to reduce its heat wave deaths. What ethical framework is most relevant for evaluating this decision?
+
+A. Cost-benefit analysis focused exclusively on the deploying nation
+B. Environmental justice, which requires evaluating whether the intervention distributes benefits and harms equitably and whether affected populations have meaningful consent in the decision
+C. Technological determinism, which holds that all available technologies should be deployed regardless of consequences
+D. Free market principles, where whichever nation can afford the technology should deploy it
+
+Correct Answer: B
+
+Feedback: Correct. Environmental justice demands that climate interventions distribute benefits and burdens equitably and that affected populations participate in decisions. SRM that reduces one nation's heat waves while disrupting another's food supply raises fundamental justice questions about who bears the risks of global climate engineering. Incorrect. The environmental justice framework is most relevant because it addresses the central ethical issue: one population's benefit at another's expense. Justice requires that affected communities (1.5 billion people dependent on monsoon agriculture) have meaningful voice and consent in decisions that affect their lives.
+
+---
+
+### Question 5
+
+Based on model evidence, a climate advisor must recommend a pathway for addressing warming that has reached 1.8 degrees Celsius. Which recommendation is most strongly supported by the combined scientific and ethical evidence?
+
+A. Immediate SRM deployment to prevent crossing 2 degrees, with no emission reduction
+B. Aggressive emission reduction as the primary strategy, complemented by moderate CDR deployment, with SRM held in reserve only as an emergency measure with international governance and consent frameworks
+C. No action, because climate engineering technologies are too risky to consider under any circumstances
+D. Maximum CDR deployment to remove all excess CO2 within 5 years while maintaining current emission levels
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that emission reduction addresses the root cause with the lowest risk. CDR complements it by drawing down legacy CO2. SRM carries significant risks (termination shock, regional disruption, governance challenges) but may be warranted as an emergency measure if tipping points are imminent, provided international governance ensures equitable decision-making. Incorrect. Model evidence supports a layered approach: emission reduction as the foundation (lowest risk, addresses root cause), CDR as a complement (draws down legacy CO2), and SRM only as a governed emergency measure. This balances scientific effectiveness with ethical requirements for equitable global governance.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

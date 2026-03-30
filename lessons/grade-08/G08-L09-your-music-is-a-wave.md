@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS4-1, MS-PS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What causes sound?
+
+A. Light waves bouncing off objects
+B. Vibrations that travel through a medium like air
+C. Electricity flowing through the air
+D. Temperature changes in the atmosphere
+
+Correct Answer: B
+
+Feedback: Correct! Sound is produced by vibrations (from a speaker, vocal cord, instrument, etc.) that create pressure waves traveling through a medium such as air, water, or solids. Sound is caused by vibrations that create pressure waves in a medium (air, water, or solids). When a speaker vibrates, it compresses and stretches the air, creating waves that travel to your ears.
+
+---
+
+### Question 2
+
+When you turn up the volume on your phone, what property of the sound wave are you changing?
+
+A. The speed of the wave
+B. The wavelength of the wave
+C. The amplitude (height) of the wave
+D. The direction the wave travels
+
+Correct Answer: C
+
+Feedback: Correct! Volume corresponds to amplitude. Turning up the volume increases the amplitude (height) of the sound wave, which carries more energy and sounds louder. Volume is related to amplitude, not speed or wavelength. Increasing the volume increases the amplitude of the sound wave, meaning larger pressure variations reach your ear, and you perceive louder sound.
+
+---
+
+### Question 3
+
+What determines the pitch of a sound (whether it sounds high or low)?
+
+A. The speed at which the sound travels
+B. The number of wave cycles per second (frequency)
+C. The distance between the sound source and your ear
+D. The temperature of the air
+
+Correct Answer: B
+
+Feedback: Correct! Pitch is determined by frequency, measured in Hertz (Hz). Higher frequency means more wave cycles per second and a higher-pitched sound. Pitch is determined by frequency. A high-frequency wave (many cycles per second) sounds high-pitched, while a low-frequency wave sounds low-pitched. Frequency is measured in Hertz (Hz).
+
+---
+
+### Question 4
+
+Can sound travel through a vacuum (completely empty space)?
+
+A. Yes, sound travels through everything
+B. No, sound requires a medium (matter) to travel through
+C. Yes, but only very loud sounds
+D. Sound travels faster in a vacuum than in air
+
+Correct Answer: B
+
+Feedback: Correct! Sound is a mechanical wave that requires particles to vibrate. In a vacuum (no particles), there is nothing to carry the vibrations, so sound cannot travel. Sound is a mechanical wave that travels by vibrating particles in a medium. A vacuum has no particles, so sound waves have nothing to travel through. This is why there is no sound in outer space.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Your model showed that doubling the amplitude quadrupled the wave energy. What mathematical relationship does this demonstrate?
+
+A. Energy and amplitude are inversely proportional (as one goes up, the other goes down)
+B. Energy is proportional to the square of amplitude (E is proportional to A squared)
+C. Energy and amplitude are directly proportional (doubling one doubles the other)
+D. Energy and amplitude are unrelated
+
+Correct Answer: B
+
+Feedback: Correct! Wave energy is proportional to amplitude squared. This is why doubling the amplitude (2 squared = 4) quadruples the energy. A small increase in amplitude means a large increase in energy. The model demonstrates a squared relationship. Since energy is proportional to amplitude squared, doubling amplitude increases energy by 2 squared = 4 times. This is a fundamental property of waves.
+
+---
+
+### Question 2
+
+In the 'Bass Drop' scenario, amplitude was maximum but frequency was minimum. In the 'Screaming High Note' scenario, both were maximum. Both had high Wave Energy. What does this tell you about what determines wave energy?
+
+A. Only amplitude determines wave energy; frequency has no effect
+B. Only frequency determines wave energy; amplitude has no effect
+C. Both amplitude and frequency contribute to the total energy of a wave
+D. Wave energy is constant regardless of amplitude or frequency
+
+Correct Answer: C
+
+Feedback: Correct! The model shows that both amplitude and frequency contribute to wave energy. A loud bass note (high amplitude, low frequency) and a screaming high note (high amplitude, high frequency) both carry significant energy. Both amplitude and frequency contribute to wave energy. A wave can have high energy from high amplitude (loud), high frequency (rapid oscillation), or both. The model shows these contributions through different scenarios.
+
+---
+
+### Question 3
+
+Sound, light, radio, and WiFi are all waves. Your model showed that amplitude controls loudness in sound. In light waves, what does amplitude control?
+
+A. The color of light
+B. The brightness (intensity) of light
+C. The speed of light
+D. Whether light can pass through glass
+
+Correct Answer: B
+
+Feedback: Correct! Just as amplitude determines loudness in sound, amplitude determines brightness in light. The same wave property (amplitude = energy intensity) manifests differently in different types of waves. Amplitude is the intensity property of all waves. In sound, higher amplitude means louder. In light, higher amplitude means brighter. Color is determined by frequency, just as pitch is determined by frequency in sound.
+
+---
+
+### Question 4
+
+In the STEM challenge, you designed a concert venue. A student suggests making all walls from hard, smooth materials like glass. Using your model's principles about wave behavior, what problem would this create?
+
+A. Glass walls would block all sound from entering the venue
+B. Hard, smooth surfaces reflect sound waves rather than absorbing them, creating excessive echoes and reverberation that distort the music
+C. Glass would amplify the sound waves, making them dangerously loud
+D. Smooth walls would cause sound to travel faster, distorting the pitch
+
+Correct Answer: B
+
+Feedback: Correct! Hard, smooth surfaces reflect rather than absorb sound waves. This creates echoes and reverberation where reflected waves overlap with direct sound, muddying the audio. Good acoustics require a balance of reflective and absorptive materials. When waves encounter a surface, they can be reflected, absorbed, or transmitted. Hard, smooth surfaces primarily reflect sound waves. Multiple reflections create echoes and reverberation that distort musical clarity. Concert venues need absorptive materials to control reflections.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

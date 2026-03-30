@@ -944,6 +944,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-5, HS-ETS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Plastic pollution is considered a persistent environmental problem because most plastics do not break down naturally. Which property of synthetic polymers BEST explains their environmental persistence?
+
+A. Plastics are too heavy for natural decomposition processes to affect
+B. The chemical bonds in synthetic polymers did not exist in nature before humans created them, so no organisms have evolved enzymes to break them down efficiently
+C. Plastics are made of organic materials that decompose rapidly
+D. All plastics dissolve in salt water within a few decades
+
+Correct Answer: B
+
+Feedback: Correct. Synthetic polymers like PET and polyethylene were invented in the 20th century. Natural decomposer organisms have had millions of years to evolve enzymes for breaking down natural polymers (cellulose, chitin), but synthetic polymers are too new for efficient enzymatic degradation to have evolved naturally. Consider why natural decomposition processes (bacteria, fungi) can break down wood, leaves, and bone but not plastic bottles. What would an organism need to degrade a material that has only existed for about 100 years?
+
+---
+
+### Question 2
+
+In 2016, scientists discovered a bacterium (Ideonella sakaiensis) that can break down PET plastic. This bacterium produces an enzyme called PETase. What does this discovery suggest about the possibility of using biology to address plastic pollution?
+
+A. The plastic pollution problem has already been solved
+B. Natural evolution has begun producing organisms that can degrade synthetic plastics, and these enzymes could potentially be engineered for faster, more efficient plastic degradation
+C. PETase can only work on one specific piece of plastic
+D. Bacteria should not be used for environmental applications because they are dangerous
+
+Correct Answer: B
+
+Feedback: Correct. The discovery of PETase proves that enzymatic plastic degradation is biologically possible. Scientists can now use protein engineering and synthetic biology to enhance PETase activity, improve its temperature tolerance, and design organisms with complete degradation pathways. The natural PETase enzyme is slow and limited, but its existence demonstrates a principle. What does it tell us about the possibility of engineering better versions?
+
+---
+
+### Question 3
+
+A synthetic biologist proposes releasing an engineered plastic-eating organism into the ocean. Which concern is MOST scientifically justified?
+
+A. The organism might evolve to eat metal instead of plastic
+B. Releasing self-replicating engineered organisms into open environments creates unpredictable ecological risks because their interactions with natural ecosystems cannot be fully controlled or reversed
+C. Engineered organisms cannot survive outside laboratory conditions
+D. The ocean is too salty for any microorganism to survive
+
+Correct Answer: B
+
+Feedback: Correct. The containment challenge is a central issue in environmental synthetic biology. Self-replicating organisms that are released into open environments can evolve, spread, and interact with native ecosystems in unpredictable ways. Unlike chemical cleanups, biological releases are essentially irreversible. Consider the unique property of living organisms compared to chemical treatments. What happens when you release something that can reproduce, evolve, and interact with other living things in an uncontrolled environment?
+
+---
+
+### Question 4
+
+An enzyme breaks down PET plastic most efficiently at 65 degrees C in a laboratory setting. Why would this be a significant limitation for using the enzyme to clean up ocean plastic pollution?
+
+A. Ocean water is too clean for the enzyme to function
+B. Average ocean temperature is approximately 15 degrees C, far below the enzyme's optimal temperature, which would dramatically reduce its catalytic activity
+C. Enzymes cannot function in salt water
+D. The ocean does not contain PET plastic
+
+Correct Answer: B
+
+Feedback: Correct. Enzyme activity is highly temperature-dependent. An enzyme optimized for 65 degrees C would lose 80-95% of its catalytic activity at 15 degrees C ocean temperatures. This is why engineering cold-active enzyme variants is a critical challenge for environmental bioremediation. Consider how temperature affects enzyme kinetics. Enzymes have optimal temperature ranges, and their activity decreases significantly outside those ranges. How does this affect real-world deployment?
+
+---
+
+### Question 5
+
+Metabolic engineering involves modifying an organism's biochemical pathways to enable new capabilities. In the context of plastic degradation, why is it insufficient to simply add a plastic-breaking enzyme to an organism?
+
+A. The organism also needs a complete metabolic pathway to process the breakdown products into harmless compounds and usable energy, not just break the plastic into potentially toxic intermediates
+B. Enzymes cannot be added to organisms
+C. Organisms already have all the enzymes they need
+D. Plastic-breaking enzymes are too large to fit inside a cell
+
+Correct Answer: A
+
+Feedback: Correct. PETase breaks PET into terephthalic acid and ethylene glycol. Without additional enzymes to further process these intermediates, they accumulate and can be more toxic than the original plastic. Complete bioremediation requires a full pathway from polymer to harmless end products. Think about what happens after the enzyme breaks the first bond in a plastic polymer. The initial breakdown products are not the final, harmless products. What additional biochemistry is needed?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that maximizing Enzyme Activity Level increases Degradation Rate in the lab but actually DECREASES overall environmental remediation effectiveness when Metabolic Pathway Efficiency is low. Which explanation BEST accounts for this counterintuitive result?
+
+A. High enzyme activity breaks plastic into intermediate compounds faster than the metabolic pathway can process them, leading to accumulation of toxic byproducts that may be more harmful than the original plastic
+B. Enzyme activity and degradation rate are always positively correlated
+C. The model is incorrect because higher enzyme activity should always produce better outcomes
+D. Environmental conditions reduce enzyme activity to zero
+
+Correct Answer: A
+
+Feedback: Correct. This is a rate-mismatch problem. When the first enzyme in a pathway works faster than downstream enzymes, intermediates accumulate. If those intermediates are toxic (as terephthalic acid can be), the fast first step actually worsens the pollution problem. The system must be optimized holistically, not component by component. Think of the degradation pathway as an assembly line. What happens when the first station works much faster than all the subsequent stations? Where do the partially processed products accumulate?
+
+---
+
+### Question 2
+
+A simulation comparing lab conditions versus ocean deployment shows that Degradation Rate drops by 90% when the organism is moved to ocean conditions. The student identifies Environmental Temperature as the primary factor. Which additional factor would create the SECOND largest performance reduction?
+
+A. Substrate Concentration, because ocean plastic is dispersed across vast areas rather than concentrated in a beaker, reducing the frequency of enzyme-plastic contact
+B. The color of the ocean water
+C. The depth of the ocean floor
+D. The presence of fish in the ocean
+
+Correct Answer: A
+
+Feedback: Correct. In a lab, plastic substrate can be concentrated in a small volume, ensuring frequent enzyme-substrate contact. In the ocean, plastic is distributed across millions of square kilometers at very low density, meaning the engineered organisms rarely encounter plastic particles. Enzyme kinetics depend on substrate availability. Consider the difference between a concentrated laboratory culture and the open ocean. In enzyme kinetics, the rate of reaction depends on how frequently enzymes encounter their substrate. How does the vast dilution of the ocean affect this?
+
+---
+
+### Question 3
+
+The containment-effectiveness paradox states that maximizing Containment Level reduces ecological risk but also limits Degradation Rate. A student proposes using an organism with an engineered 'kill switch' that causes cell death if a specific chemical is absent. What does this design achieve?
+
+A. It eliminates all ecological risk while maintaining maximum degradation capacity
+B. It provides a recall mechanism so the organism can be stopped by withdrawing the chemical, but limits the organism's range to areas where the chemical is actively supplied
+C. Kill switches make the organism more dangerous because it could evolve to ignore the switch
+D. Kill switches have no practical function in environmental applications
+
+Correct Answer: B
+
+Feedback: Correct. A kill switch dependent on an externally supplied chemical (auxotrophy) means the organism can only survive where that chemical is provided. This limits its geographic spread but also limits its reach to areas where the plastic is. The paradox remains: containment and effectiveness are fundamentally opposed for dispersed pollutants. Consider how a chemical dependency creates geographic control. The organism survives only where the chemical is supplied. What does this mean for its ability to reach plastic scattered across the open ocean?
+
+---
+
+### Question 4
+
+A research team compares three organism designs for ocean plastic cleanup: Design A has high Enzyme Activity but low pH Tolerance, Design B has moderate Enzyme Activity with broad pH Tolerance, and Design C has the highest Enzyme Activity but requires warm temperatures (50 degrees C). For deployment across diverse ocean environments, which design is MOST viable and why?
+
+A. Design C, because maximum enzyme activity always produces the best results
+B. Design A, because pH variation in the ocean is minimal
+C. Design B, because moderate activity across a broad range of environmental conditions produces more total degradation than high activity that only functions in narrow conditions
+D. All three designs would perform identically in the ocean
+
+Correct Answer: C
+
+Feedback: Correct. This is a robustness versus peak performance trade-off. Design B's moderate enzyme activity across broad conditions means it functions in more ocean environments (varying pH zones, coastal versus deep water) than designs that achieve higher peak activity but only in narrow conditions. Total real-world degradation depends on operating range, not just peak capacity. Think about the diversity of ocean environments: different pH levels, temperatures, and oxygen concentrations across different regions and depths. Which design functions in the most environments, and therefore degrades the most total plastic?
+
+---
+
+### Question 5
+
+After analyzing the model, a student concludes that engineering a single organism to solve ocean plastic pollution is insufficient and proposes a multi-organism system instead. Which argument BEST supports this systems-level approach?
+
+A. Using multiple organisms is always better than using one
+B. Different organisms could be optimized for different plastic types (PET, polyethylene, polystyrene), different environmental conditions (warm vs. cold, shallow vs. deep), and different stages of degradation (initial breakdown vs. intermediate processing), creating a more complete and resilient remediation system
+C. Multiple organisms would compete with each other and reduce effectiveness
+D. Regulatory agencies require multiple organisms for any environmental release
+
+Correct Answer: B
+
+Feedback: Correct. Ocean plastic pollution involves multiple polymer types distributed across diverse environmental conditions. No single organism can be optimized for all plastic types, all temperatures, all pH levels, and all stages of degradation. A consortium approach mirrors natural ecosystem division of labor, where different species specialize in different functions. Consider the diversity of the plastic pollution problem: multiple plastic types, multiple environmental conditions, and multiple stages of chemical degradation. Can any single organism be optimally designed for all of these simultaneously?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: A
+
+**Post-Assessment:**
+Question 1: A
+Question 2: A
+Question 3: B
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

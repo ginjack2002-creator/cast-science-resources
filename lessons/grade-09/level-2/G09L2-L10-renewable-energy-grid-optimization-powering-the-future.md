@@ -964,6 +964,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS3-3, HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is grid intermittency, and why is it a challenge for renewable energy?
+
+A. Intermittency means renewable energy costs fluctuate with market demand
+B. Intermittency means solar and wind energy production varies with weather and time of day, making supply unpredictable and sometimes unavailable when demand is highest
+C. Intermittency refers to planned maintenance shutdowns of power plants
+D. Intermittency only affects hydroelectric power, not solar or wind
+
+Correct Answer: B
+
+Feedback: Correct. Solar output drops to zero at night and varies with cloud cover. Wind output depends on weather patterns. This intermittency means renewable supply cannot be controlled to match demand, unlike fossil fuel plants that generate power on command. Intermittency is the fundamental challenge of renewable energy. Unlike fossil fuel plants that generate power whenever needed, solar and wind produce electricity only when nature cooperates, creating gaps between supply and demand.
+
+---
+
+### Question 2
+
+Why is energy storage considered essential for a renewable energy grid?
+
+A. Storage is not necessary because renewable energy is always available when needed
+B. Storage captures excess renewable energy during high-production periods and releases it during low-production periods, bridging the intermittency gap
+C. Storage is only needed for fossil fuel power plants
+D. Storage makes renewable energy more expensive without any benefit
+
+Correct Answer: B
+
+Feedback: Correct. Energy storage acts as a buffer between variable renewable supply and relatively constant demand. Batteries charge when solar/wind produce excess and discharge when production drops, smoothing out the intermittency. Storage is the bridge between when renewables produce energy and when consumers need it. Without storage, excess daytime solar power is wasted, and nighttime demand must be met by other sources.
+
+---
+
+### Question 3
+
+What is 'grid balancing' and why does it become more complex with high renewable penetration?
+
+A. Grid balancing means distributing power plants evenly across a geographic area
+B. Grid balancing is the continuous process of matching electricity supply to demand in real time, which becomes harder when a large portion of supply is variable and weather-dependent
+C. Grid balancing is only necessary during extreme weather events
+D. Grid balancing refers to equalizing electricity prices across regions
+
+Correct Answer: B
+
+Feedback: Correct. Electricity supply must match demand every second. With dispatchable fossil fuel plants, operators control output. With intermittent renewables, supply depends on weather, making the balancing act more complex and requiring storage and backup systems. Grid balancing is the real-time matching of supply and demand. When supply is weather-dependent (solar, wind), operators cannot simply increase production on demand, requiring sophisticated forecasting, storage, and backup generation.
+
+---
+
+### Question 4
+
+What is a 'dispatchable' energy source, and why is it important?
+
+A. A dispatchable source is one that can be delivered to remote locations
+B. A dispatchable source can be turned on and off on demand to meet grid needs, unlike solar and wind which produce power only when conditions allow
+C. All energy sources are dispatchable if enough capacity is built
+D. Dispatchable refers to the speed at which electricity travels through power lines
+
+Correct Answer: B
+
+Feedback: Correct. Dispatchable sources (natural gas, hydroelectric, nuclear) can increase or decrease output on command. This controllability is essential for filling gaps when renewable output drops, maintaining grid stability. Dispatchability means the ability to generate electricity on demand. Natural gas plants can ramp up in minutes to fill gaps when clouds cover solar panels or wind dies down. Solar and wind cannot increase output on command.
+
+---
+
+### Question 5
+
+Why is transitioning from 80% to 100% renewable energy considered much harder than going from 0% to 80%?
+
+A. The technology for 100% renewable energy does not exist yet
+B. The last 20% requires covering worst-case intermittency scenarios (multi-day periods of low sun AND low wind), which demands massive storage or overbuilding capacity at enormous cost
+C. It is equally difficult at every stage of the transition
+D. Political opposition increases proportionally with renewable percentage
+
+Correct Answer: B
+
+Feedback: Correct. At 80% renewable, fossil backup handles occasional gaps. At 100%, every gap must be covered by storage or excess renewable capacity. Multi-day weather events (cloudy calm periods) require enormous storage that is currently prohibitively expensive. The difficulty curve is exponential, not linear. The first 80% replaces baseload fossil fuel during periods when renewables produce plenty. The last 20% requires bridging worst-case multi-day intermittency gaps, demanding storage capacity that grows exponentially with the reliability requirement.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that during a sunny, windy day, renewable output exceeds demand by 40%. What happens to this excess energy in a grid with adequate battery storage versus one without?
+
+A. Excess energy is the same problem in both scenarios
+B. With adequate storage, excess energy charges batteries for later use during low-production periods; without storage, the excess is curtailed (wasted) because the grid cannot absorb more power than demand requires
+C. Excess renewable energy automatically increases demand to match supply
+D. The grid shuts down when supply exceeds demand regardless of storage
+
+Correct Answer: B
+
+Feedback: Correct. Storage converts a waste problem into an asset. Without batteries, excess renewable generation must be curtailed (dumped) because the grid requires constant supply-demand balance. With storage, that energy is captured for later use. Battery storage is the key differentiator. Excess energy that cannot be stored must be curtailed, representing a waste of generation capacity. Storage captures this surplus and makes it available during low-production periods.
+
+---
+
+### Question 2
+
+A simulation of a calm winter night shows battery storage depleting in 6 hours, after which fossil fuel backup activates to meet demand. What does this reveal about the current limitations of battery storage?
+
+A. Batteries are useless for renewable energy systems
+B. Current battery capacity can bridge short intermittency gaps (hours) but cannot economically cover extended periods of low renewable production, making some backup generation necessary
+C. The simulation proves that 100% renewable energy is impossible
+D. Battery technology has no room for improvement
+
+Correct Answer: B
+
+Feedback: Correct. Current battery technology effectively handles short gaps (hours) but the cost of storing enough energy for multi-day events (calm cloudy periods) is prohibitive. This is why backup generation remains necessary at high renewable penetration levels. The simulation reveals a duration limitation, not a fundamental failure. Batteries handle hourly fluctuations well but cannot economically bridge multi-day intermittency events. This gap is where backup generation or alternative long-duration storage technologies are needed.
+
+---
+
+### Question 3
+
+The model allows students to optimize energy mix across three competing objectives: minimize cost, minimize emissions, and maximize reliability. What does the optimization reveal?
+
+A. There is a single optimal solution that simultaneously minimizes cost, emissions, and maximizes reliability
+B. The three objectives create trade-offs where improving one metric often worsens another, requiring stakeholders to decide which priorities matter most
+C. Cost and emissions always improve together with no trade-off
+D. Reliability is independent of the energy mix chosen
+
+Correct Answer: B
+
+Feedback: Correct. This is a multi-objective optimization problem with inherent trade-offs. Maximum renewable (lowest emissions) costs more and may reduce reliability. Maximum reliability requires backup fossil fuel (higher emissions). There is no single solution that maximizes all three. Real engineering involves trade-offs. Minimizing emissions (more renewables) increases cost and may reduce reliability. Maximizing reliability (more backup) increases emissions. The optimization surface reveals that stakeholders must prioritize which objectives matter most.
+
+---
+
+### Question 4
+
+A student's model shows that connecting two geographically distant regions (one solar-rich, one wind-rich) reduces the probability of system-wide intermittency by 60%. What principle does this demonstrate?
+
+A. Geographic diversity has no effect on grid reliability
+B. Geographic diversity reduces correlated intermittency because weather patterns affecting solar and wind in one region are often independent of patterns in another, making simultaneous low production less likely
+C. Connecting distant regions doubles the total energy production
+D. Long-distance transmission has no energy losses
+
+Correct Answer: B
+
+Feedback: Correct. Geographic diversity exploits the fact that weather is a local phenomenon. When one region has clouds (low solar), another may have sun. When one area is calm (low wind), another may be windy. Connecting diverse regions reduces the probability that all sources fail simultaneously. Geographic diversity is a powerful strategy because it reduces the correlation between renewable output at different locations. The sun is not cloudy everywhere at once, and the wind does not stop everywhere simultaneously, so connecting diverse regions smooths out variability.
+
+---
+
+### Question 5
+
+Based on the complete model analysis, why does the transition to 100% clean energy require systems thinking rather than simply building more solar panels and wind turbines?
+
+A. Because solar panels and wind turbines are inherently unreliable technologies
+B. Because the grid is an interconnected system where generation, storage, transmission, demand, and backup must be balanced simultaneously, and optimizing one component without considering the others creates new problems
+C. Because renewable energy is more expensive than fossil fuels in all scenarios
+D. Because building more renewable capacity always solves the intermittency problem
+
+Correct Answer: B
+
+Feedback: Correct. The grid is a coupled system. Adding solar without storage creates curtailment waste. Adding storage without grid interconnection limits geographic diversity benefits. Removing backup without adequate storage risks blackouts. Every component interacts, requiring integrated systems thinking. The energy grid is a complex system where every component affects every other. Overbuilding renewables creates curtailment. Insufficient storage causes reliability gaps. Removing backup prematurely risks blackouts. Only systems thinking that considers all interactions simultaneously can design an effective transition.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

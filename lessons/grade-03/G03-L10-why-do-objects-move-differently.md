@@ -821,6 +821,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-PS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do you think makes a ball start moving?
+
+A. The ball decides to move on its own
+B. A push or a pull (a force) makes the ball move
+C. The ball moves because it is round
+D. Gravity makes all balls roll all the time
+
+Correct Answer: B
+
+Feedback: That is right! A force is a push or pull. When you push a ball, you apply a force that makes it start moving. Objects need a force (a push or a pull) to start moving. A ball sits still until someone or something pushes it. That push is a force.
+
+---
+
+### Question 2
+
+Why do you think a ball rolling on carpet stops faster than a ball rolling on a smooth floor?
+
+A. Carpet is softer, so the ball gets sleepy
+B. Carpet is rougher and creates more friction, which slows the ball down
+C. Carpet makes the ball lighter
+D. The ball does not like carpet
+
+Correct Answer: B
+
+Feedback: Great thinking! Rough surfaces like carpet create more friction, which is a force that slows objects down. Smooth surfaces create less friction. Carpet is rougher than a smooth floor, so it creates more friction. Friction is a force that happens when surfaces rub together, and it slows things down.
+
+---
+
+### Question 3
+
+A book is sitting still on a table. What do you think is happening to the forces on the book?
+
+A. There are no forces on the book
+B. The forces are balanced, so the book stays still
+C. The book is being pushed in one direction
+D. Only gravity is acting on the book
+
+Correct Answer: B
+
+Feedback: Good thinking! The book has forces acting on it. Gravity pulls it down and the table pushes it up with equal force. Since the forces are balanced, the book stays still. Even though the book is not moving, forces ARE acting on it. Gravity pulls it down and the table pushes it up. These forces are equal and opposite (balanced), so the book stays still.
+
+---
+
+### Question 4
+
+What do you think friction is?
+
+A. A type of glue
+B. A force that happens when two surfaces rub together, which slows things down
+C. The color of a surface
+D. A type of push that makes things go faster
+
+Correct Answer: B
+
+Feedback: Correct! Friction is a force created when two surfaces rub against each other. It works against motion and slows things down. Friction is a force that happens when two surfaces rub together. It always works against the direction of motion, slowing things down. Rough surfaces create more friction than smooth ones.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the forces model, when Push Force increases on a smooth surface, what happens to Object Motion?
+
+A. Object Motion decreases
+B. Object Motion increases because a stronger push creates a bigger unbalanced force
+C. Object Motion stays the same no matter how hard you push
+D. The object does not move at all
+
+Correct Answer: B
+
+Feedback: Correct! A stronger push creates a bigger unbalanced force. The push easily overcomes friction on a smooth surface, so the object moves faster and farther. When you push harder, the force becomes more unbalanced. The push is much stronger than friction, so the object moves faster and farther. Push Force and Object Motion have a positive relationship.
+
+---
+
+### Question 2
+
+What is the difference between balanced and unbalanced forces?
+
+A. There is no difference
+B. Balanced forces are equal and opposite so nothing changes; unbalanced forces are unequal so the object moves, speeds up, or slows down
+C. Balanced forces make things move; unbalanced forces make things stop
+D. Balanced forces are stronger than unbalanced forces
+
+Correct Answer: B
+
+Feedback: Exactly! When forces are balanced (equal and opposite), nothing changes. When forces are unbalanced (one is stronger), the object starts moving, speeds up, slows down, or changes direction. Balanced forces are equal and opposite, so the object stays still or keeps moving the same way. Unbalanced forces happen when one force is stronger, causing the object to change its motion.
+
+---
+
+### Question 3
+
+In the 'Hard Push on Rough Carpet' scenario, why did the object not travel as far as on the smooth floor?
+
+A. The push was weaker on the carpet
+B. The rough carpet created more friction, which opposed the push and slowed the object down sooner
+C. The carpet made the object heavier
+D. The object wanted to stop on the carpet
+
+Correct Answer: B
+
+Feedback: You got it! Rough carpet creates more friction than a smooth floor. Even with the same push, more friction means the object slows down faster and does not travel as far. The same push was used both times, but carpet creates much more friction than a smooth floor. More friction means more force opposing the motion, so the object slows down and stops sooner.
+
+---
+
+### Question 4
+
+A book is sitting still on a table. Which statement correctly explains why it does not move?
+
+A. There are no forces acting on the book
+B. Gravity pulls the book down and the table pushes it up with equal force, so the forces are balanced
+C. The book is too heavy to move
+D. Friction is holding the book in the air
+
+Correct Answer: B
+
+Feedback: Right! Two forces act on the book: gravity pulls it down and the table pushes it up. These forces are equal and opposite (balanced), so the book stays perfectly still. Even though the book is still, forces ARE acting on it. Gravity pulls it down toward the floor, and the table pushes it up with an equal force. Because these forces are balanced, the book does not move.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS3-1, MS-LS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Humans have 46 chromosomes. How many come from each parent?
+
+A. 46 from the mother and 46 from the father
+B. 23 from each parent
+C. All 46 from the mother; the father contributes none
+D. It varies randomly from person to person
+
+Correct Answer: B
+
+Feedback: Correct! Humans inherit 23 chromosomes from each parent, for a total of 46. This is why you share traits with both parents but are not identical to either. During sexual reproduction, each parent contributes 23 chromosomes through their reproductive cells (egg and sperm), resulting in offspring with 46 chromosomes total.
+
+---
+
+### Question 2
+
+What is a gene?
+
+A. A type of clothing brand
+B. A segment of DNA that contains instructions for a specific protein or trait
+C. A complete chromosome that determines all traits at once
+D. A chemical that only controls hair and eye color
+
+Correct Answer: B
+
+Feedback: Correct! A gene is a segment of DNA on a chromosome that provides instructions for making a specific protein, which in turn influences a trait. A gene is a specific segment of DNA located on a chromosome. It contains the instructions for making a particular protein, which contributes to an organism's traits.
+
+---
+
+### Question 3
+
+Two brown-eyed parents have a child with blue eyes. How is this possible?
+
+A. It is impossible; brown-eyed parents can only have brown-eyed children
+B. The child's eye color was determined by environmental factors, not genes
+C. Both parents may carry a hidden (recessive) blue eye gene that they each passed to the child
+D. The child mutated spontaneously to develop blue eyes
+
+Correct Answer: C
+
+Feedback: Correct! Brown eye color is dominant over blue. Both parents can be carriers of the recessive blue allele (Bb) without showing it. If both pass on the recessive allele, the child is bb (blue eyes). Brown-eyed parents can have blue-eyed children if both carry a recessive blue eye allele. They would each have the genotype Bb (heterozygous). When both pass on their recessive b allele, the child is bb and expresses blue eyes.
+
+---
+
+### Question 4
+
+Why are siblings who share the same parents not identical to each other (unless they are identical twins)?
+
+A. Siblings receive different amounts of DNA from their parents
+B. Each sibling receives a different random combination of alleles from the same parents
+C. Only the first-born child inherits genes from both parents
+D. Siblings are only related to one parent, not both
+
+Correct Answer: B
+
+Feedback: Correct! Each parent has two alleles for every gene and randomly passes on one. The specific combination each sibling receives is different, creating genetic uniqueness. Each reproductive cell (egg or sperm) contains a random assortment of alleles. Since each parent randomly passes on one of their two alleles for every gene, each sibling receives a unique combination.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, when both parents were set to Bb (heterozygous) for a trait, the offspring showed a 3:1 phenotype ratio. What does this ratio mean?
+
+A. 3 out of 4 offspring are heterozygous and 1 is homozygous
+B. Approximately 75% of offspring display the dominant trait and 25% display the recessive trait
+C. The dominant trait is 3 times stronger than the recessive trait
+D. 3 offspring survive and 1 does not
+
+Correct Answer: B
+
+Feedback: Correct! In a Bb x Bb cross, the possible genotypes are BB, Bb, Bb, and bb. Three out of four (BB, Bb, Bb) express the dominant phenotype, while one (bb) expresses the recessive phenotype. The 3:1 ratio refers to phenotype expression. From a Bb x Bb cross, three possible genotypes (BB, Bb, Bb) show the dominant trait, while one (bb) shows the recessive trait. This is about trait expression, not survival or trait strength.
+
+---
+
+### Question 2
+
+Your model showed that a Bb x bb cross produced offspring that were 50% Bb and 50% bb. A student claims the recessive parent 'weakened' the dominant trait. Using the model, what is the correct explanation?
+
+A. The student is correct; recessive alleles weaken dominant ones
+B. Each parent contributes one allele randomly. The Bb parent passes B or b (50/50), while the bb parent always passes b. This produces Bb or bb offspring in equal proportions
+C. The dominant allele became recessive after mixing with the other parent's genes
+D. Allele inheritance depends on which parent is taller
+
+Correct Answer: B
+
+Feedback: Correct! Alleles are not weakened or strengthened. The Bb parent randomly passes either B or b with equal probability. The bb parent can only pass b. So offspring are either Bb (dominant phenotype) or bb (recessive phenotype). Recessive alleles do not weaken dominant ones. Inheritance is about random allele distribution. The Bb parent has a 50% chance of passing B and 50% of passing b. The bb parent always passes b. This produces a 1:1 ratio of Bb to bb offspring.
+
+---
+
+### Question 3
+
+The model demonstrates that sexual reproduction produces offspring with genetic variation, while asexual reproduction produces genetically identical offspring. Why is genetic variation important for species survival?
+
+A. Genetic variation makes organisms look different, which is important for identification
+B. Genetic variation ensures that some individuals in a population are likely to have traits that help them survive if environmental conditions change
+C. Genetic variation is not important; identical organisms are better adapted
+D. Variation only matters for plants, not animals
+
+Correct Answer: B
+
+Feedback: Correct! Genetic variation is the raw material for natural selection. When the environment changes, a genetically diverse population is more likely to include individuals with traits suited to the new conditions, preventing extinction. Genetic variation provides a survival advantage for populations. If all individuals were genetically identical, a single disease or environmental change could wipe out the entire population. Variation ensures some individuals may have traits suited to new conditions.
+
+---
+
+### Question 4
+
+In the STEM challenge, you used genotype and phenotype data to identify the parents of an unknown cub. The cub expressed a recessive trait (bb). Which parent combinations could NOT have produced this cub?
+
+A. Bb x Bb (both heterozygous carriers)
+B. Bb x bb (one carrier, one recessive)
+C. BB x BB (both homozygous dominant)
+D. bb x bb (both homozygous recessive)
+
+Correct Answer: C
+
+Feedback: Correct! BB x BB can only produce BB offspring. Since the cub is bb (two recessive alleles), at least one b allele must come from each parent. Two BB parents cannot provide any b alleles. A bb offspring must inherit one b allele from each parent. If both parents are BB, they have no b alleles to pass on. Only parents with at least one b allele each (Bb or bb) can produce bb offspring.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS3-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the greenhouse effect?
+
+A. When greenhouses release chemicals that warm the atmosphere
+B. When certain gases in the atmosphere trap heat from the Sun, warming Earth's surface
+C. When the Sun's rays are reflected by green plants back into space
+D. When Earth's temperature drops because clouds block sunlight
+
+Correct Answer: B
+
+Feedback: Correct! The greenhouse effect occurs when gases like CO2 and methane in the atmosphere trap heat energy, keeping Earth's surface warmer than it would otherwise be. Not quite. The greenhouse effect is the process by which certain atmospheric gases (like CO2 and methane) trap heat radiated from Earth's surface, warming the planet.
+
+---
+
+### Question 2
+
+Which human activity contributes MOST to increasing carbon dioxide in the atmosphere?
+
+A. Planting new forests and gardens
+B. Burning fossil fuels like coal, oil, and natural gas
+C. Recycling plastic bottles and aluminum cans
+D. Building taller skyscrapers in cities
+
+Correct Answer: B
+
+Feedback: Correct! Burning fossil fuels for energy, transportation, and industry is the largest source of human-caused CO2 emissions. Not quite. Burning fossil fuels (coal, oil, natural gas) for energy and transportation is the primary human activity that increases atmospheric CO2.
+
+---
+
+### Question 3
+
+What is the difference between weather and climate?
+
+A. Weather and climate mean the same thing
+B. Weather is long-term patterns; climate is what happens today
+C. Weather is short-term, local conditions; climate is long-term, global patterns
+D. Climate only applies to tropical regions; weather applies everywhere
+
+Correct Answer: C
+
+Feedback: Correct! Weather describes short-term, local atmospheric conditions (today's temperature), while climate describes long-term patterns averaged over decades or more. Not quite. Weather is the short-term state of the atmosphere in a specific place (daily temperature, rain). Climate is the long-term average pattern over decades across a region or globally.
+
+---
+
+### Question 4
+
+Why do you think ice at the North and South Poles has been melting in recent decades?
+
+A. The Sun has been getting significantly hotter each year
+B. Ocean currents have shifted and now carry warm water to the poles
+C. Increased greenhouse gases are trapping more heat, raising global temperatures
+D. Volcanic eruptions under the ice are melting it from below
+
+Correct Answer: C
+
+Feedback: Correct! Rising concentrations of greenhouse gases in the atmosphere are trapping more heat, causing global temperatures to rise and polar ice to melt. Not quite. The primary driver of polar ice melt in recent decades is the increase in greenhouse gas concentrations (especially CO2) that trap more heat and raise global temperatures.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In your climate model, CO2 concentration is increased from 280 ppm (pre-industrial) to 420 ppm (current levels). Which cascade of effects does the model predict?
+
+A. Temperature decreases, ice sheets grow, sea level drops
+B. Temperature rises, ice sheets melt, which exposes dark ocean that absorbs more heat
+C. Temperature stays the same because Earth's systems are perfectly balanced
+D. Ice sheets grow thicker because warmer air holds more moisture for snowfall
+
+Correct Answer: B
+
+Feedback: Correct! More CO2 traps more heat, raising temperatures. Higher temperatures melt ice sheets, exposing dark ocean that absorbs even more heat, creating a positive feedback loop that accelerates warming. Not quite. Increasing CO2 traps more heat (greenhouse effect), which raises temperatures, melts ice, and exposes dark surfaces that absorb more heat. This positive feedback loop accelerates climate change.
+
+---
+
+### Question 2
+
+A classmate says: 'It was really cold last week, so climate change is not real.' Which response uses the best scientific reasoning?
+
+A. You're right. Cold weather proves the climate is not warming.
+B. Last week's cold is weather (short-term, local). Climate change is about long-term global temperature trends over decades.
+C. Climate change only happens in summer, so winter cold is expected.
+D. Cold weather means climate change has reversed itself.
+
+Correct Answer: B
+
+Feedback: Correct! A single cold week is weather, not climate. Climate change refers to long-term shifts in global average temperatures measured over decades. Short-term local variation does not contradict the long-term trend. Not quite. Weather (daily or weekly conditions) is different from climate (long-term patterns over decades). A cold week in one location does not disprove the decades-long trend of rising global average temperatures.
+
+---
+
+### Question 3
+
+Which best explains why the ice-albedo effect is called a 'positive feedback loop'?
+
+A. It has a positive impact on the environment by cooling Earth down
+B. Melting ice exposes dark surfaces that absorb more heat, causing more melting, which amplifies the original warming
+C. Adding more ice to the poles increases Earth's reflectivity and lowers temperature
+D. It only occurs in positively charged regions of the atmosphere
+
+Correct Answer: B
+
+Feedback: Correct! In a positive feedback loop, the output amplifies the input. Warming melts ice, exposing dark ocean, which absorbs more heat, causing more warming and more melting. The cycle reinforces itself. Not quite. 'Positive feedback' in science means the output amplifies the original change. Warming melts ice, revealing dark surfaces that absorb more heat, causing more warming and more melting. The cycle accelerates itself.
+
+---
+
+### Question 4
+
+Based on the climate model, what is the key difference between the 'current trajectory' and the 'emission reduction' scenarios?
+
+A. Emission reduction immediately reverses warming and restores all ice sheets
+B. Both scenarios show the same outcome because CO2 has no effect on temperature
+C. Emission reduction slows the rate of warming and ice loss significantly, though it does not immediately reverse the trend
+D. Current trajectory cools the planet because more CO2 means more plants absorbing heat
+
+Correct Answer: C
+
+Feedback: Correct! Reducing emissions does not instantly reverse warming, but it significantly slows the rate of temperature increase and ice loss, giving ecosystems more time to adapt. Not quite. The model shows that reducing emissions slows warming and ice loss significantly compared to the current trajectory, even though it does not instantly reverse the effects already underway.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

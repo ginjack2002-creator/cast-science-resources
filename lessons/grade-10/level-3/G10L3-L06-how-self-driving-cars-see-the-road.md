@@ -897,6 +897,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS4-2, HS-PS4-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A self-driving car uses LIDAR, cameras, and radar simultaneously. Why is this multi-sensor approach (sensor fusion) more reliable than using any single sensor?
+
+A. More sensors make the car look more advanced and increase consumer confidence
+B. Each sensor type excels in different conditions and detects different properties — LIDAR provides 3D mapping, cameras provide color and sign recognition, radar works in all weather — so combining them creates redundancy where one sensor's weakness is covered by another's strength
+C. Using three sensors makes the car exactly three times safer
+D. Single sensors are never used in any vehicle application
+
+Correct Answer: B
+
+Feedback: Correct. Sensor fusion combines complementary strengths: LIDAR provides precise 3D spatial mapping but fails in rain, cameras provide color/texture for classification but struggle in fog, and radar measures velocity and penetrates weather but lacks spatial detail. Together, they create a perception model more robust than any single source. Consider what each sensor type is good at and what it struggles with. LIDAR fires lasers, cameras capture visible light, and radar uses radio waves. Each interacts with the environment differently.
+
+---
+
+### Question 2
+
+An autonomous vehicle's decision latency is 200 milliseconds, while a human driver's reaction time is approximately 1,500 milliseconds. At 60 mph (27 m/s), how much additional stopping distance does the human driver need compared to the autonomous system?
+
+A. Approximately 5 meters (negligible difference)
+B. Approximately 15 meters (the human needs about 35 meters of reaction distance versus the car's 5.4 meters)
+C. Approximately 35 meters (the human needs about 40 meters versus 5.4 meters)
+D. The difference depends on the type of obstacle, not the reaction time
+
+Correct Answer: C
+
+Feedback: Correct. Human reaction distance = 27 m/s x 1.5 s = 40.5 m. AV reaction distance = 27 m/s x 0.2 s = 5.4 m. The difference is approximately 35 meters — enough to determine whether a collision occurs. This demonstrates the reaction time advantage of autonomous systems. Calculate distance = speed x time for both reaction times. At 27 m/s, how far does the vehicle travel during 1.5 seconds (human) versus 0.2 seconds (autonomous)?
+
+---
+
+### Question 3
+
+An autonomous vehicle encounters an object it cannot classify with high confidence — a deflated mylar balloon in the road. This situation is called an 'edge case.' Why are edge cases particularly dangerous for autonomous systems?
+
+A. Edge cases cause the sensors to malfunction permanently
+B. The system's machine learning models were trained on common scenarios and may misclassify novel objects — stopping for a harmless balloon wastes time, but driving over an object misidentified as harmless could be fatal
+C. Edge cases only occur in bad weather, so they are easily avoided
+D. Human drivers also cannot handle edge cases, so it is not a unique autonomous vehicle problem
+
+Correct Answer: B
+
+Feedback: Correct. Edge cases expose the fundamental limitation of pattern-matching AI: it excels at recognizing common objects from training data but struggles with novel situations. Humans use general intelligence and common sense to assess unknown objects; autonomous systems must choose between stopping (safe but potentially disruptive) or proceeding (efficient but potentially dangerous). Consider how the system decides what to do with an object. It compares what it sees to patterns it learned during training. What happens when the object does not match any learned pattern?
+
+---
+
+### Question 4
+
+During heavy rain, a self-driving car's LIDAR loses 60% of its effectiveness because laser pulses scatter off water droplets. Which alternative sensor is LEAST affected by rain and could compensate?
+
+A. Additional LIDAR units mounted at different angles
+B. High-resolution cameras, which also use visible light affected by rain
+C. Radar, which uses radio waves that penetrate rain, fog, and snow with minimal degradation
+D. Ultrasonic sensors, which have sufficient range to replace LIDAR
+
+Correct Answer: C
+
+Feedback: Correct. Radar uses radio waves (centimeter wavelengths) that pass through rain droplets with minimal scattering, unlike LIDAR (near-infrared, micrometer wavelengths) and cameras (visible light) which are significantly degraded. This is why sensor fusion is essential — radar provides reliable distance and velocity data when other sensors fail. Consider the wavelength of each sensor's emissions relative to the size of rain droplets. Longer wavelengths pass through small obstacles more easily than shorter wavelengths.
+
+---
+
+### Question 5
+
+An autonomous vehicle maintains a safety margin — a buffer distance beyond the minimum required for safe braking. Increasing this margin makes the car safer but has a trade-off. What is the primary trade-off?
+
+A. Larger safety margins require more fuel, increasing emissions
+B. Larger margins cause the car to brake earlier, drive slower, and create gaps in traffic flow — reducing efficiency and potentially frustrating other drivers who may drive unpredictably in response
+C. Larger margins increase the risk of rear-end collisions from following vehicles
+D. There is no trade-off — larger safety margins are always better in every way
+
+Correct Answer: B
+
+Feedback: Correct. The safety margin trade-off is both an engineering and societal question. Overly conservative driving reduces throughput, increases congestion, and may cause human drivers to behave aggressively around the autonomous vehicle. Finding the optimal margin balances individual safety against traffic flow and social integration. Think about what happens when a car maintains very large following distances and brakes much earlier than necessary. How does this affect the overall traffic system and other drivers?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that in heavy rain, LIDAR performance drops 60%, camera drops 40%, but radar drops only 10%. Despite these individual degradations, Sensor Fusion Accuracy drops by only 25%. What system property explains this resilience?
+
+A. The model underestimates the impact of rain on sensor performance
+B. Sensor fusion creates redundancy — the algorithm dynamically reweights sensors, relying more heavily on radar when LIDAR and cameras are degraded, maintaining combined accuracy above any single degraded sensor
+C. The 25% drop is unacceptable and means the system should shut down immediately
+D. Rain does not actually affect autonomous vehicle performance in real systems
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates the core value of sensor fusion: when individual sensors degrade at different rates due to environmental conditions, the fusion algorithm shifts weighting toward the most reliable sensor. This built-in redundancy maintains system-level performance above any single sensor's degraded level. Consider what happens when the fusion algorithm knows that LIDAR and cameras are less reliable in rain. Can it adjust how much it trusts each sensor's data? What sensor remains reliable?
+
+---
+
+### Question 2
+
+In the edge case scenario, the model shows Obstacle Classification confidence dropping below 50% for a novel object. The system responds by expanding Safety Margin and reducing speed. What decision-making principle does this represent?
+
+A. The system is malfunctioning because confidence should always be above 90%
+B. Conservative fallback — when uncertainty is high, the system increases caution by trading efficiency for safety, buying more time to classify the object or allowing the human to take control
+C. The system ignores unclassified objects to maintain traffic flow
+D. Speed reduction is the only response the system has to any anomaly
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates a fundamental safety principle: when the perception system has low confidence, the decision system compensates by increasing safety margins. This buys time for additional sensor data, allows the object to be observed from closer range, and provides the option for human takeover. Think about what a cautious human driver would do when encountering something unexpected on the road. Would they speed up, maintain speed, or slow down? Why?
+
+---
+
+### Question 3
+
+The model classifies LIDAR Pulse Frequency and Weather Interference as external variables. Why is Weather Interference classified as external even though it directly affects sensor performance?
+
+A. External variables must always be environmental conditions
+B. Weather Interference is a condition the autonomous system encounters but cannot control or change — it is an input from the environment, not a property of the engineering system being modeled
+C. Weather interference is too unpredictable to be modeled as an internal variable
+D. The classification is incorrect and should be changed
+
+Correct Answer: B
+
+Feedback: Correct. External variables represent conditions imposed on the system from outside. The autonomous vehicle cannot change the weather — it can only respond to it. Weather Interference is an environmental input that affects system performance but is not controlled by the system. Ask: can the autonomous vehicle control the weather? If not, weather is an environmental condition the system must deal with, not a system property it can adjust.
+
+---
+
+### Question 4
+
+The model predicts that Decision Latency increases from 150 ms in clear conditions to 350 ms in the edge case scenario. What system interaction causes this increase?
+
+A. The processors slow down in unusual situations
+B. Low Obstacle Classification confidence triggers additional processing cycles — the system runs more analysis algorithms, cross-references additional data sources, and may request human verification, all adding time before a decision is made
+C. Decision Latency is constant and does not change between scenarios
+D. The increase is caused by physical distance to the obstacle, not processing time
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals an important trade-off: when the system encounters an ambiguous object, it spends more time trying to classify it correctly before deciding on an action. This is the speed-accuracy trade-off — taking longer to decide increases accuracy but also increases the distance traveled before responding. Consider what the system does when it encounters an object it cannot quickly classify. Does it immediately decide, or does it run additional analysis to improve classification confidence?
+
+---
+
+### Question 5
+
+A student argues that autonomous vehicles should not be deployed until they can handle 100% of edge cases correctly. Based on the model, what is the most scientifically valid evaluation of this standard?
+
+A. The standard is achievable within 5 years with current technology trajectories
+B. The 100% standard is mathematically impossible — the set of possible edge cases is effectively infinite, and the model shows that the system's strength lies in safe fallback responses (slowing, stopping, human handoff) when it encounters situations beyond its classification ability
+C. Edge cases are rare enough that they can be ignored
+D. Human drivers handle 100% of edge cases correctly, so autonomous vehicles should too
+
+Correct Answer: B
+
+Feedback: Correct. The real world presents an effectively infinite set of possible situations. No system — human or autonomous — handles all of them correctly. The model shows that the engineering solution is not perfect classification but safe degradation: when confidence is low, the system increases caution and can hand control to a human driver. Consider whether it is possible to train a system on every possible situation it might ever encounter. Also consider: do human drivers handle 100% of situations correctly? The relevant question is how the system responds when it encounters uncertainty.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

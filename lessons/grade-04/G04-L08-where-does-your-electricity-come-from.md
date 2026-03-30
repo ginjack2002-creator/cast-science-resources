@@ -863,6 +863,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Where does the electricity in your home come from?
+
+A. It is created inside the walls of your house
+B. It comes from a power plant that converts natural resources into electricity
+C. It comes directly from the Sun through the windows
+D. It is stored inside the light switches
+
+Correct Answer: B
+
+Feedback: That is right! Electricity is generated at power plants that convert natural resources (like coal, gas, sunlight, or wind) into electrical energy, which then travels through wires to your home. Electricity does not come from walls or switches. Power plants convert natural resources into electricity, and wires carry that electricity to homes and buildings.
+
+---
+
+### Question 2
+
+What is a natural resource?
+
+A. Something made in a factory
+B. A material from nature that people use, like water, coal, sunlight, or wind
+C. A type of electricity
+D. Something that only exists underground
+
+Correct Answer: B
+
+Feedback: Correct! Natural resources are materials from nature that people use. Examples include water, coal, natural gas, sunlight, wind, and soil. Natural resources are not man-made. They are materials found in nature that people use, such as water, sunlight, wind, coal, and natural gas.
+
+---
+
+### Question 3
+
+What is the difference between renewable and nonrenewable energy?
+
+A. Renewable energy is more expensive and nonrenewable is free
+B. Renewable energy sources never run out (like sunlight and wind), but nonrenewable sources can be used up (like coal and gas)
+C. Renewable energy is old and nonrenewable is new
+D. There is no real difference between them
+
+Correct Answer: B
+
+Feedback: Right! Renewable energy sources like sunlight, wind, and water replenish naturally and will not run out. Nonrenewable sources like coal, oil, and gas took millions of years to form and can be used up. Renewable energy comes from sources that nature replenishes, like sunlight and wind. Nonrenewable energy comes from sources like coal and gas that can run out.
+
+---
+
+### Question 4
+
+How does burning coal affect the environment?
+
+A. It has no effect on the environment at all
+B. It makes the air cleaner
+C. It releases pollution and gases that contribute to climate change
+D. It only affects the area right around the power plant
+
+Correct Answer: C
+
+Feedback: Exactly! Burning coal releases pollution, including carbon dioxide and other gases that contribute to climate change and can harm air quality. Burning coal does affect the environment. It releases smoke, pollution, and greenhouse gases into the air that can harm air quality and contribute to climate change.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the energy model, Energy Source Amount is an external component. Power Plant Output and Home Electricity are internal components. What chain does this create?
+
+A. Home electricity controls how much energy source is available
+B. More energy source leads to more power plant output, which leads to more home electricity
+C. Power plant output has nothing to do with energy source amount
+D. Home electricity creates the energy source
+
+Correct Answer: B
+
+Feedback: Right! The model shows a positive chain: when more natural resource is available, the power plant produces more electricity, and more electricity reaches homes. The model shows a cause-and-effect chain: more energy source available means the power plant can produce more output, which means more electricity reaches homes.
+
+---
+
+### Question 2
+
+A town relies on solar panels for electricity. It has been cloudy for a week. What does the model predict?
+
+A. The solar panels will work even better because they are rested
+B. Power plant output and home electricity will both decrease because the energy source (sunlight) is low
+C. Home electricity will increase because clouds store energy
+D. Nothing changes because solar panels do not need sunlight
+
+Correct Answer: B
+
+Feedback: Correct! The model shows that when the energy source amount decreases (less sunlight), power plant output drops, and home electricity also drops. This is a challenge of solar energy. Solar panels need sunlight to generate electricity. When clouds block the sun, the energy source is reduced, so the power plant produces less electricity and homes receive less.
+
+---
+
+### Question 3
+
+Which energy plan would give a town the MOST reliable electricity while being kindest to the environment?
+
+A. Use only coal because it works day and night
+B. Use only solar because it is clean
+C. Use a mix of solar and wind so that when one source is low, the other may be available
+D. Do not use any electricity to protect the environment
+
+Correct Answer: C
+
+Feedback: Exactly! A mix of renewable sources provides more reliability. If the sun is not shining, the wind might be blowing. Combining sources helps ensure the town always has clean electricity. Using just one source has weaknesses. Coal pollutes, and solar only works when sunny. A mix of clean sources like solar and wind is more reliable because they cover for each other.
+
+---
+
+### Question 4
+
+Why is it important to know that ALL energy sources affect the environment in some way?
+
+A. Because it means we should stop using all electricity
+B. Because it helps us make informed choices about which energy sources to use and how to reduce harm
+C. Because it proves that natural resources are not real
+D. Because it means renewable energy is just as bad as fossil fuels
+
+Correct Answer: B
+
+Feedback: Right! Understanding that every energy source has trade-offs helps us make better choices. Renewable sources have fewer environmental impacts than fossil fuels, even though they still need space and materials. Knowing about environmental impacts helps us make better decisions. We cannot stop using energy, but we can choose sources with less impact and find ways to reduce harm.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

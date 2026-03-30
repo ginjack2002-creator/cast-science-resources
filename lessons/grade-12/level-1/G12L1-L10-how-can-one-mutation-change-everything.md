@@ -902,6 +902,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+The human genome contains 3.2 billion base pairs. Every human carries millions of mutations compared to each other. Why are most people not seriously ill from these mutations?
+
+A. Modern medicine corrects most mutations before they cause problems
+B. Most mutations are neutral because of genetic code redundancy, non-coding DNA locations, and many amino acid positions tolerating substitution without affecting protein function
+C. Humans have evolved to be immune to all mutations
+D. Mutations only occur in non-essential parts of the body like hair and nails
+
+Correct Answer: B
+
+Feedback: Correct. Three factors protect against most mutations: (1) genetic code redundancy means ~25% of point mutations are silent, (2) over 98% of DNA is non-coding, and (3) many protein positions tolerate amino acid changes without functional impact. Incorrect. Most mutations are neutral due to built-in buffers: genetic code redundancy (multiple codons for the same amino acid), the vast amount of non-coding DNA, and many protein positions that can tolerate amino acid substitutions.
+
+---
+
+### Question 2
+
+What is a point mutation?
+
+A. A mutation that occurs at the pointed end of a chromosome
+B. A change in a single nucleotide base that can be silent, missense, or nonsense depending on its effect on the amino acid sequence
+C. Any mutation that causes a disease
+D. A mutation that only occurs during embryonic development
+
+Correct Answer: B
+
+Feedback: Correct. A point mutation is a single nucleotide change. It can be silent (no amino acid change), missense (one amino acid changed), or nonsense (premature stop codon), with vastly different phenotypic consequences. Incorrect. A point mutation changes one nucleotide. Its effect depends on whether it is silent (no change to amino acid), missense (one amino acid substitution), or nonsense (creates a stop codon). Location and type determine impact.
+
+---
+
+### Question 3
+
+Why are frameshift mutations typically more damaging than point mutations?
+
+A. Frameshift mutations are louder and more easily detected by the cell's repair systems
+B. An insertion or deletion that is not a multiple of three shifts the entire reading frame, changing every amino acid downstream and usually producing a completely nonfunctional protein
+C. Frameshift mutations only occur in genes that control essential functions
+D. Frameshift mutations are less damaging because they only affect one amino acid
+
+Correct Answer: B
+
+Feedback: Correct. Frameshift mutations shift the reading frame of all downstream codons, producing a completely different amino acid sequence from the point of mutation onward. This typically results in a nonfunctional protein. Incorrect. Frameshift mutations are devastating because they shift the reading frame, causing every codon after the mutation to be read differently. This changes every downstream amino acid, typically producing a completely nonfunctional protein.
+
+---
+
+### Question 4
+
+Sickle cell disease is caused by a single amino acid change in hemoglobin (glutamic acid to valine at position 6). How can such a small change cause such severe disease?
+
+A. Position 6 is at the very end of the protein, so any change there is always fatal
+B. The amino acid change alters the surface chemistry of hemoglobin, causing molecules to polymerize into rigid fibers that distort red blood cells, blocking blood flow
+C. The mutation causes the body to stop producing hemoglobin entirely
+D. Valine is toxic to red blood cells regardless of its location in any protein
+
+Correct Answer: B
+
+Feedback: Correct. The glutamic acid to valine change replaces a charged, hydrophilic amino acid with a hydrophobic one, creating a sticky patch on hemoglobin's surface. Under low oxygen, hemoglobin molecules polymerize into fibers, distorting red blood cells into sickle shapes. Incorrect. The E6V mutation changes a charged amino acid to a hydrophobic one, creating a sticky patch on hemoglobin. Under low oxygen conditions, these sticky patches cause hemoglobin molecules to polymerize into rigid fibers that distort red blood cells.
+
+---
+
+### Question 5
+
+Why is protein folding critical for understanding mutation effects?
+
+A. Protein folding is decorative and does not affect protein function
+B. Proteins are molecular machines whose function depends on their precise three-dimensional structure, which is determined by amino acid sequence, so even single amino acid changes can destabilize folding and destroy function
+C. Only unfolded proteins are functional in cells
+D. Protein folding only matters for structural proteins like collagen, not enzymes
+
+Correct Answer: B
+
+Feedback: Correct. Protein function depends entirely on three-dimensional structure, which depends on amino acid sequence, which depends on DNA sequence. A single mutation can alter an amino acid, destabilize folding, and destroy function. Incorrect. The cascade is DNA sequence -> amino acid sequence -> protein folding -> protein function. Proteins are molecular machines that only work in their correct 3D shape. Even one amino acid change at a critical position can destabilize this folding.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The mutation model predicts that a synonymous (silent) point mutation in a coding region will produce zero Phenotypic Impact. Which mechanism explains this prediction?
+
+A. Silent mutations are repaired by DNA polymerase before they can have any effect
+B. The genetic code's redundancy means multiple codons specify the same amino acid, so the DNA changes but the protein sequence and structure remain identical
+C. Silent mutations only occur in non-essential genes
+D. All point mutations are silent and never cause phenotypic changes
+
+Correct Answer: B
+
+Feedback: Correct. The genetic code has 64 codons for only 20 amino acids. This redundancy means about 25% of point mutations change the DNA but not the amino acid, producing identical protein with zero phenotypic effect. Incorrect. Genetic code redundancy is the mechanism: 64 codons code for only 20 amino acids. A synonymous mutation changes the DNA codon but produces the same amino acid, so protein structure, function, and phenotype are all unchanged.
+
+---
+
+### Question 2
+
+Using the model, compare a missense mutation at position 6 of a 147-amino-acid protein versus the same type of mutation at position 140. Why might the model predict dramatically different Phenotypic Impact?
+
+A. The model predicts identical impact because both are missense mutations in the same protein
+B. Phenotypic Impact depends on whether the affected position is structurally or functionally critical; position 6 in hemoglobin affects surface chemistry critical for preventing polymerization, while position 140 may be in a region tolerant of substitution
+C. Later positions in a protein are always more important than earlier ones
+D. Only mutations in the first 10 amino acids of any protein can cause disease
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that location within the protein matters as much as mutation type. The same type of mutation at a critical functional site versus a tolerant surface region produces vastly different structural changes and phenotypic outcomes. Incorrect. The model predicts that Phenotypic Impact depends on the functional importance of the affected amino acid position. Some positions are critical for protein structure/function, while others tolerate substitutions with minimal effect.
+
+---
+
+### Question 3
+
+The model compares a frameshift mutation (single base insertion at position 10) versus a missense mutation at position 450 of a 500-amino-acid protein. Why does the model predict the frameshift is more damaging?
+
+A. Insertions are always more damaging than substitutions regardless of location
+B. The early frameshift changes the reading frame for 490 downstream amino acids (98% of the protein), producing a completely nonfunctional protein, while the missense at position 450 changes only one amino acid near the protein's end
+C. Position 10 is always more important than position 450 in every protein
+D. The model predicts the missense mutation is actually more damaging because it occurs later in the gene
+
+Correct Answer: B
+
+Feedback: Correct. The early frameshift scrambles nearly the entire protein (490 of 500 amino acids), guaranteeing complete loss of structure and function. The late missense changes only one amino acid, and its impact depends on that position's functional importance. Incorrect. An early frameshift shifts the reading frame for virtually the entire protein, producing a completely different and nonfunctional amino acid sequence. A late missense changes only one amino acid near the end, which may or may not be at a critical site.
+
+---
+
+### Question 4
+
+The sickle cell mutation provides heterozygote advantage in malaria-endemic regions. How does the model explain why the same mutation can be simultaneously harmful, neutral, and beneficial?
+
+A. The mutation changes effect based on the weather and climate conditions
+B. In homozygotes (two copies), severe sickling causes disease; in heterozygotes (one copy), enough normal hemoglobin prevents disease while sickle hemoglobin makes red blood cells inhospitable to the malaria parasite, creating a context-dependent phenotype
+C. The model cannot account for a mutation being both harmful and beneficial
+D. The mutation is beneficial in all people regardless of genotype or environment
+
+Correct Answer: B
+
+Feedback: Correct. Gene dosage and environmental context determine phenotype. Homozygotes (HbSS) have severe disease. Heterozygotes (HbAS) produce enough normal hemoglobin to avoid sickling while gaining malaria resistance. This is heterozygote advantage. Incorrect. The model shows that phenotypic impact depends on dosage and environment. Two copies cause disease, one copy provides malaria protection with minimal sickling. The same mutation is harmful, neutral, or beneficial depending on genotype and geographic context.
+
+---
+
+### Question 5
+
+Based on the model, most mutations are neutral rather than harmful. Why is this fact essential for understanding evolution by natural selection?
+
+A. Neutral mutations have no relevance to evolution because natural selection only acts on harmful mutations
+B. Neutral mutations allow genetic variation to accumulate in populations without killing organisms, providing the raw material that natural selection can act upon when environmental conditions change
+C. If all mutations were neutral, evolution could not occur
+D. Neutral mutations are actively selected for by natural selection because they are always beneficial
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that neutral mutations are the primary source of standing genetic variation. This accumulated variation provides the raw material for natural selection to act upon when environmental conditions change, enabling adaptation. Incorrect. Neutral mutations are essential for evolution because they allow genetic variation to build up in populations without causing disease. This reservoir of variation becomes the raw material that natural selection can act upon when environmental pressures change.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

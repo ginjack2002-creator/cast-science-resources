@@ -737,6 +737,121 @@ POST-ASSESSMENT
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Step 1) and a post-assessment (after Step 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously.
+
+---
+
+### Question 1
+
+CAST Alignment: SEP 2.1.1 (Determine components of a system) + DCI LS2.A (Interdependent relationships in ecosystems) + CCC4 (Describe a system in terms of its components)
+
+A student is building a model of how dead leaves and animals are recycled in a forest. She identifies four components: dead organic matter, soil moisture, decomposer activity, and nutrient release. She needs to sort them into external components (inputs from outside the system) and internal components (things that change within the system).
+
+Which list correctly sorts the components of the decomposition system?
+
+A. External: Dead Organic Matter, Decomposer Activity — Internal: Soil Moisture, Nutrient Release
+B. External: Nutrient Release, Soil Moisture — Internal: Dead Organic Matter, Decomposer Activity
+C. External: Dead Organic Matter, Soil Moisture — Internal: Decomposer Activity, Nutrient Release
+D. External: Decomposer Activity, Nutrient Release — Internal: Dead Organic Matter, Soil Moisture
+
+Correct Answer: C
+
+Feedback: Dead organic matter is constantly produced by nature and soil moisture depends on rainfall, so both are inputs from outside the system (external). Decomposer activity and nutrient release change based on conditions within the system, making them internal. If you chose A, decomposer activity is not an outside input. It changes based on how much food and moisture are available. If you chose B, nutrient release is the output of the system, not an outside input. If you chose D, decomposer activity and nutrient release both respond to conditions inside the system. They are not external inputs.
+
+---
+
+### Question 2
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.B (Cycles of matter and energy transfer in ecosystems) + CCC4 (Describe components and interactions)
+
+In a decomposition model, a student draws an arrow from Soil Moisture to Decomposer Activity and labels it as a positive relationship. A classmate asks why the arrow is positive instead of negative.
+
+Which explanation best supports why the relationship between Soil Moisture and Decomposer Activity is positive?
+
+A. When soil moisture increases, decomposers drown and become less active, so activity decreases.
+B. When soil moisture increases, decomposers have the water they need to survive and multiply, so their activity increases.
+C. When soil moisture decreases, decomposers work harder to find water, so their activity increases.
+D. When soil moisture increases, dead organic matter washes away, so decomposers have less to eat.
+
+Correct Answer: B
+
+Feedback: A positive relationship means when one component goes up, the other also goes up. Bacteria, fungi, and earthworms all need moisture to survive. When soil moisture increases, decomposers can grow, reproduce, and break down material more actively. If you chose A, at normal levels, more moisture helps decomposers. Drowning describes an extreme event, not the normal relationship. If you chose C, this describes a negative relationship, not a positive one. In reality, decomposers slow down in dry conditions rather than working harder. If you chose D, soil moisture does not wash away dead organic matter in the model. Moisture enables decomposer survival.
+
+---
+
+### Question 3
+
+CAST Alignment: SEP 2.1.2 (Determine relationships among components) + DCI LS2.B (Cycles of matter and energy transfer in ecosystems) + CCC2 (Describe cause and effect)
+
+A student builds a model of decomposition with three positive relationships: dead organic matter increases decomposer activity, soil moisture increases decomposer activity, and decomposer activity increases nutrient release. The student wants to test what happens during a drought, so she sets soil moisture to zero in the simulation.
+
+Based on the model, what would most likely happen when soil moisture drops to zero?
+
+A. Decomposer activity would increase because decomposers would try harder to survive.
+B. Nutrient release would stay the same because dead organic matter is still available.
+C. Decomposer activity would decrease, and nutrient release would also decrease.
+D. Dead organic matter would decrease because there is no water to produce dead leaves.
+
+Correct Answer: C
+
+Feedback: The model shows that soil moisture has a positive relationship with decomposer activity. When soil moisture drops to zero, decomposers cannot survive, so their activity decreases. Then, because decomposer activity has a positive relationship with nutrient release, nutrient release also decreases. The whole chain slows down. If you chose A, decomposers cannot simply try harder when they lack the water they need to function. They go dormant or die. If you chose B, nutrient release depends on decomposer activity, not just on whether dead matter exists. Without active decomposers, nutrients are not released even when dead matter is present. If you chose D, dead organic matter is an external input. Drought does not stop organisms from dying and leaves from falling. Dead matter would actually pile up because decomposers are not breaking it down.
+
+---
+
+### Question 4
+
+CAST Alignment: SEP 4.1.3 (Analyze and interpret data) + DCI LS2.B (Cycles of matter and energy transfer in ecosystems) + CCC2 (Describe cause and effect)
+
+Scientists studied two forest sites over the same time period. Site A had high soil moisture and abundant leaf litter. When researchers measured the forest floor, they found very little dead material remaining and the soil was rich in nutrients. Site B was in a drought zone with very low soil moisture but the same amount of leaf litter falling each year. Researchers found thick layers of dead leaves and branches piling up on the forest floor and the soil had low nutrient levels.
+
+Which observation best supports the idea that soil moisture drives the decomposition cycle?
+
+A. Site A had high soil moisture and also had abundant leaf litter, which means moisture creates dead leaves.
+B. Site B had low soil moisture and thick layers of dead material, which means drought kills more organisms and creates more dead matter.
+C. Site A had high moisture and low dead material with rich soil, while Site B had low moisture and high dead material with poor soil, showing that moisture enables decomposers to break down matter and release nutrients.
+D. Both sites had the same amount of leaf litter, which proves that soil moisture has no effect on how much dead matter is available.
+
+Correct Answer: C
+
+Feedback: Comparing the two sites directly shows the role of moisture. Both received the same amount of dead material each year, but Site A (high moisture) had little dead material left and nutrient-rich soil because decomposers were active. Site B (low moisture) had dead material piling up and poor soil because decomposers were inactive. This matches the model: moisture drives decomposer activity, which drives nutrient release. If you chose A, moisture does not create dead leaves. Dead organic matter is an external input that falls regardless of moisture. If you chose B, the thick dead material at Site B is not from more organisms dying. It is from decomposers failing to break down the same amount of falling material. If you chose D, the fact that both sites had the same leaf litter input but very different outcomes is exactly what proves soil moisture matters. The difference in results comes from decomposer activity, which depends on moisture.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.1.4 (Represent mechanisms to predict a scientific event) + DCI LS2.B (Cycles of matter and energy transfer in ecosystems) + CCC2 (Describe cause and effect)
+
+A community garden has soil that is not producing healthy plants. A soil scientist tests the soil and finds it has very low nutrient levels. The gardeners want to improve plant growth but do not want to use chemical fertilizers. The decomposition model shows that dead organic matter and soil moisture both increase decomposer activity (positive relationships), and decomposer activity increases nutrient release (positive relationship).
+
+Based on the model, which action would most likely increase the nutrient levels in the garden soil?
+
+A. Remove all dead leaves and plant material from the garden to keep it clean.
+B. Add compost (dead organic matter) to the garden beds and keep the soil consistently moist.
+C. Add more plants to the garden so there are more roots in the soil.
+D. Cover the soil with plastic to trap heat and warm the decomposers.
+
+Correct Answer: B
+
+Feedback: The model shows that both dead organic matter and soil moisture drive decomposer activity, which in turn releases nutrients. Adding compost provides the organic matter (food for decomposers), and keeping the soil moist provides the water decomposers need. Both inputs are maximized, so decomposer activity increases, and more nutrients are released into the soil. If you chose A, removing dead material eliminates the food source for decomposers. Without organic matter to break down, decomposers cannot release nutrients. This would make the problem worse. If you chose C, adding plants is a good gardening practice, but it does not directly address the decomposition model. The model shows nutrients come from decomposers breaking down dead matter, not from living plant roots. If you chose D, while warmth can help decomposers, the model does not include temperature as a component. The model identifies dead organic matter and soil moisture as the two inputs that drive the system. Plastic covering could also reduce moisture by preventing rain from reaching the soil.
+
+---
+
+### Answer Key
+
+Question 1: C (Cognitive Level: Identify — SEP 2.1.1, DCI LS2.A, CCC4)
+Question 2: B (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.B, CCC4)
+Question 3: C (Cognitive Level: Reason — SEP 2.1.2, DCI LS2.B, CCC2)
+Question 4: C (Cognitive Level: Reason + Evidence — SEP 4.1.3, DCI LS2.B, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply — SEP 2.1.4, DCI LS2.B, CCC2)
+
+---
+
 ## Resources
 
 | Resource | Link |

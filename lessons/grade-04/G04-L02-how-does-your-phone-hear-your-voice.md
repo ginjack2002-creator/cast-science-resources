@@ -863,6 +863,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-PS4-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is sound?
+
+A. An invisible gas that floats through the air
+B. Vibrations that travel through air, water, or other materials
+C. A type of light that our ears can detect
+D. Something that only exists when music is playing
+
+Correct Answer: B
+
+Feedback: That is right! Sound is made of vibrations. When something vibrates, it pushes air molecules back and forth, creating sound waves. Sound is not a gas or a type of light. Sound is actually vibrations that travel through materials like air, water, or even solid objects.
+
+---
+
+### Question 2
+
+Why is a shout louder than a whisper?
+
+A. A shout uses different air molecules than a whisper
+B. A shout pushes more air and makes bigger vibrations
+C. A shout travels faster through the air
+D. A shout creates a different type of sound wave
+
+Correct Answer: B
+
+Feedback: Correct! When you shout, you push more air with more force, creating bigger vibrations (larger amplitude), which your ears hear as louder sound. Loud and quiet sounds travel at the same speed through air. The difference is how big the vibrations are. Shouting pushes more air, making bigger vibrations.
+
+---
+
+### Question 3
+
+Can sound travel through outer space?
+
+A. Yes, sound travels everywhere
+B. Yes, but only very loud sounds
+C. No, because there is no air or material for sound to travel through
+D. No, because space is too cold for sound
+
+Correct Answer: C
+
+Feedback: Right! Sound needs a material (like air, water, or a solid) to travel through. Space is a vacuum with almost no molecules, so sound cannot travel there. Temperature is not the reason. Sound needs molecules to vibrate and carry the wave. In space, there are almost no molecules, so sound cannot travel.
+
+---
+
+### Question 4
+
+How does a phone know you are talking to it?
+
+A. It reads your lips through the camera
+B. It has a tiny person inside listening
+C. It has a microphone that vibrates when sound waves hit it
+D. It guesses what you might be saying
+
+Correct Answer: C
+
+Feedback: Exactly! A phone's microphone has a small part called a diaphragm that vibrates when sound waves hit it, turning your voice into electrical signals. Phones detect your voice using a microphone. The microphone has a tiny part inside that vibrates when sound waves from your voice hit it.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is amplitude?
+
+A. How fast a sound wave travels through the air
+B. How high or low a sound's pitch is
+C. How big a wave is from top to bottom
+D. The number of waves that pass by in one second
+
+Correct Answer: C
+
+Feedback: That is right! Amplitude is the size of the wave from top to bottom. Bigger amplitude means the air molecules move farther back and forth, creating a louder sound. Amplitude is not about speed or pitch. It measures how big the wave is. Larger amplitude means louder sound because the air molecules vibrate more.
+
+---
+
+### Question 2
+
+In the sound wave model, Sound Wave Strength is an external component. Vibration Size and Volume Level are internal components. Why?
+
+A. Because vibration size and volume are inside the phone
+B. Because the speaker controls sound wave strength, and vibration size and volume respond to it
+C. Because volume level is always the same
+D. Because external means louder and internal means quieter
+
+Correct Answer: B
+
+Feedback: Correct! Sound wave strength is external because the speaker controls it. Vibration size and volume level are internal because they change as a result of how strong the sound source is. In a model, external components are things we can control. Internal components are things that change in response. The speaker controls sound strength, and vibration size and volume change as a result.
+
+---
+
+### Question 3
+
+A student plucks a guitar string gently, then plucks it hard. The hard pluck makes a louder sound. Which best explains why?
+
+A. The hard pluck makes the string vibrate with larger amplitude, sending bigger sound waves to our ears
+B. The hard pluck makes the sound travel faster through the air
+C. The hard pluck changes the type of sound wave from one kind to another
+D. The hard pluck creates a higher-pitched sound that seems louder
+
+Correct Answer: A
+
+Feedback: Exactly! Plucking harder makes the string vibrate more, creating sound waves with larger amplitude. Larger amplitude means louder sound. Plucking harder does not change speed or pitch. It makes the string vibrate with bigger movements (larger amplitude), which creates louder sound waves.
+
+---
+
+### Question 4
+
+The model shows that when sound wave strength increases, vibration size increases, and volume level increases. This is an example of what kind of relationship?
+
+A. A negative relationship because loud sounds are bad for your ears
+B. A positive relationship because when one goes up, the others go up too
+C. No relationship because they are separate things
+D. A random relationship because it changes every time
+
+Correct Answer: B
+
+Feedback: Right! This is a positive relationship. When sound wave strength increases, vibration size increases, and volume level increases. They all go up together in a cause-and-effect chain. When one component increases and another also increases, that is a positive relationship. All three components increase together in a direct chain.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: A
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

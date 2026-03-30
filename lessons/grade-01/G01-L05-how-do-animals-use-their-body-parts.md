@@ -710,6 +710,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What does a bird use to eat?
+
+A. Its wings
+B. Its beak
+C. Its tail
+
+Correct Answer: B
+
+Feedback: Yes! A bird uses its beak to pick up and eat food. A bird's beak is the body part it uses to grab, crack, or pick up food.
+
+---
+
+### Question 2
+
+Why do fish have fins?
+
+A. To help them fly
+B. To help them swim
+C. To help them dig
+
+Correct Answer: B
+
+Feedback: That is right! Fish use their fins to swim through the water. Fins push water to help fish move. Fins are shaped perfectly for swimming.
+
+---
+
+### Question 3
+
+A bird has a very long beak. What kind of food do you think it eats?
+
+A. Hard nuts
+B. Food deep inside flowers
+C. Big pieces of meat
+
+Correct Answer: B
+
+Feedback: Yes! A long thin beak can reach deep into flowers to sip nectar. Long, thin beaks are shaped to reach deep inside flowers where nectar hides.
+
+---
+
+### Question 4
+
+Do animals choose to grow the body parts they want?
+
+A. Yes, they pick their body parts
+B. No, they are born with them
+C. Yes, but only when they are babies
+
+Correct Answer: B
+
+Feedback: That is right! Animals are born with their body parts. They do not choose them. Animals cannot choose their body parts. They are born with the parts they have.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What does structure mean in science?
+
+A. The color of an animal
+B. A body part that has a special shape
+C. How fast an animal can run
+
+Correct Answer: B
+
+Feedback: Yes! Structure means a body part with a special shape, like claws, wings, or a beak. In science, structure means a body part's shape, like a beak, claw, or fin.
+
+---
+
+### Question 2
+
+What does function mean?
+
+A. The job that a body part does
+B. How big an animal is
+C. Where an animal lives
+
+Correct Answer: A
+
+Feedback: That is right! Function means the job a body part does, like grabbing, flying, or eating. Function means the job or purpose of a body part. A beak's function is to eat food.
+
+---
+
+### Question 3
+
+When body part size goes UP for a bird's beak, what happens to its ability to get food from deep flowers?
+
+A. It gets worse at getting food
+B. Nothing changes
+C. It gets better at getting food
+
+Correct Answer: C
+
+Feedback: Yes! A longer beak can reach deeper into flowers to get nectar. A longer beak reaches deeper, so the bird gets better at reaching food inside deep flowers.
+
+---
+
+### Question 4
+
+An eagle has a hooked beak and a hummingbird has a long thin beak. Why are they different?
+
+A. Because eagles are bigger
+B. Because they eat different kinds of food
+C. Because they live in different colors
+
+Correct Answer: B
+
+Feedback: Yes! The shape of the beak matches the kind of food the bird eats. Hooked beaks tear meat. Long thin beaks sip nectar. Different beak shapes help birds eat different foods. The shape matches the job.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

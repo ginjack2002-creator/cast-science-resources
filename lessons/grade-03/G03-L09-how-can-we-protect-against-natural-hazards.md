@@ -820,6 +820,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-ESS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a natural hazard?
+
+A. A game you play outside
+B. A dangerous natural event like a flood, tornado, or earthquake
+C. A type of animal
+D. A safe place to play
+
+Correct Answer: B
+
+Feedback: That is right! A natural hazard is a dangerous event caused by nature, like floods, tornadoes, hurricanes, and earthquakes. They can harm people and damage buildings. A natural hazard is a dangerous event that happens in nature. Floods, tornadoes, hurricanes, and earthquakes are all natural hazards that can cause harm to people and property.
+
+---
+
+### Question 2
+
+Do you think people can build things to protect themselves from floods?
+
+A. No, there is nothing we can do about floods
+B. Yes, engineers can design walls, channels, and raised buildings to reduce flood damage
+C. Only by building houses underground
+D. Only by moving to outer space
+
+Correct Answer: B
+
+Feedback: Good thinking! Engineers design special structures like levees (flood walls), channels, and raised buildings to protect people from floods. Engineers use science and math to design solutions for natural hazards. Levees (walls that hold back water), flood channels, and raised buildings all help reduce flood damage.
+
+---
+
+### Question 3
+
+What does the word engineering mean?
+
+A. Driving a train
+B. Using science and math to design and build solutions to problems
+C. Drawing pictures of buildings
+D. Watching the weather on TV
+
+Correct Answer: B
+
+Feedback: Correct! Engineering is using science and math to design and build things that solve problems. Engineers design everything from bridges to storm shelters. Engineering means using science and math to design and build solutions to problems. Engineers study how things work and use that knowledge to make things that help people.
+
+---
+
+### Question 4
+
+Which natural hazard involves strong winds that can damage buildings?
+
+A. A drought
+B. A tornado
+C. An earthquake
+D. A flood
+
+Correct Answer: B
+
+Feedback: Yes! Tornadoes are powerful spinning winds that can damage or destroy buildings, flip cars, and knock down trees. Tornadoes are columns of rapidly spinning air with very strong winds. They can tear apart buildings and cause major damage. Droughts are about lack of rain, earthquakes shake the ground, and floods involve water.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the natural hazards model, when Protection Design gets stronger, what happens to Damage Reduction?
+
+A. Damage Reduction decreases
+B. Damage Reduction increases because stronger protection prevents more damage
+C. Damage Reduction stays the same no matter the design
+D. Protection Design is not connected to Damage Reduction
+
+Correct Answer: B
+
+Feedback: Correct! Protection Design and Damage Reduction have a positive relationship. Stronger, better-designed protection prevents more damage from natural hazards. Better protection design means more damage is prevented. When Protection Design gets stronger, Damage Reduction increases. This is a positive relationship.
+
+---
+
+### Question 2
+
+In the 'Strong Storm, Weak Protection' scenario, what happened?
+
+A. The weak protection stopped all the damage
+B. The weak protection helped a little but could not stop most of the damage from the strong storm
+C. The weak protection made the storm worse
+D. The strong storm had no effect
+
+Correct Answer: B
+
+Feedback: Exactly! Even weak protection helps some, but a strong storm requires strong engineering. Weak protection cannot stop most of the damage from a powerful natural hazard. Weak protection is better than no protection, but it cannot stop a strong storm from causing major damage. Strong hazards need strong engineering solutions to prevent serious harm.
+
+---
+
+### Question 3
+
+What is mitigation?
+
+A. Making natural hazards happen more often
+B. Actions people take to reduce the damage caused by natural hazards
+C. Running away from all storms
+D. Predicting when hazards will happen
+
+Correct Answer: B
+
+Feedback: Right! Mitigation means taking actions to reduce damage from natural hazards. Building levees, storm shelters, and reinforced buildings are all examples of mitigation. Mitigation means reducing the impact of natural hazards. It includes things like building levees to hold back floodwater, designing storm shelters for tornadoes, and making buildings that can withstand earthquakes.
+
+---
+
+### Question 4
+
+Why do engineers study past disasters when designing new protection?
+
+A. They like reading about old storms
+B. Past disasters teach them what failed and what worked, so they can design better protection for the future
+C. They want to build the same things that failed before
+D. Past disasters are not useful for future design
+
+Correct Answer: B
+
+Feedback: You got it! Engineers study past disasters to learn what worked and what did not. This helps them design stronger, smarter protection that saves more lives in the future. Engineers learn from the past. By studying what failed and what survived during previous disasters, they can design better, stronger protection for the future.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

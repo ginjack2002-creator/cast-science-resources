@@ -821,6 +821,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-LS4-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Did dinosaurs really live on Earth?
+
+A. No, dinosaurs are only in movies
+B. Yes, dinosaurs lived on Earth millions of years ago
+C. Yes, dinosaurs still live on Earth today
+D. No, dinosaurs are just big lizards
+
+Correct Answer: B
+
+Feedback: That is right! Dinosaurs really lived on Earth millions of years ago. We know this because scientists have found their fossils. Dinosaurs were real animals that lived on Earth millions of years ago. Scientists have found their bones, teeth, and footprints preserved in rocks called fossils.
+
+---
+
+### Question 2
+
+What is a fossil?
+
+A. A type of pet
+B. A fancy rock that sparkles
+C. The remains of a plant or animal from long ago preserved in rock
+D. A toy shaped like a dinosaur
+
+Correct Answer: C
+
+Feedback: Yes! A fossil is the remains or trace of a plant or animal from long ago that has been preserved in rock over millions of years. A fossil is not just any rock. It contains the remains or traces of living things from long ago, like bones, teeth, shells, or footprints, that were preserved in rock over millions of years.
+
+---
+
+### Question 3
+
+Why are there no dinosaurs alive today?
+
+A. People caught all of them
+B. They are hiding underground
+C. They went to another planet
+D. Something big happened that they could not survive
+
+Correct Answer: D
+
+Feedback: Correct! Something big happened (a giant asteroid hit Earth) that changed the environment so much that dinosaurs could not survive. They went extinct. Dinosaurs went extinct because a giant asteroid hit Earth about 66 million years ago. It changed the climate so much that dinosaurs could not find food or survive.
+
+---
+
+### Question 4
+
+What does extinct mean?
+
+A. An animal that is sleeping for a long time
+B. An animal that moved to a different place
+C. When every single one of a type of animal has died and none are left
+D. An animal that is very small
+
+Correct Answer: C
+
+Feedback: That is right! Extinct means every single one of that type of animal has died and there are none left alive anywhere on Earth. Extinct does not mean hiding or sleeping. It means every last one of that type of animal has died and there are none left alive anywhere on Earth. They are gone forever.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What happened when the dinosaurs' habitat changed a LOT?
+
+A. The dinosaurs grew bigger and stronger
+B. The dinosaurs could not find food or shelter and went extinct
+C. The dinosaurs built houses to stay safe
+D. Nothing happened to the dinosaurs
+
+Correct Answer: B
+
+Feedback: Correct! When the habitat changed too much and too fast, dinosaurs could not find the food, water, and shelter they needed. They went extinct. When a habitat changes a lot very quickly, animals cannot adapt fast enough. Dinosaurs could not find food or shelter after the asteroid changed their world, so their population dropped to zero and they went extinct.
+
+---
+
+### Question 2
+
+Scientists found a fossil of a fish in the middle of a desert. What does this tell us?
+
+A. Fish can live in sand
+B. Someone put the fish there
+C. That place was once covered by water long ago
+D. The fossil is fake
+
+Correct Answer: C
+
+Feedback: Yes! A fish fossil in a desert is evidence that the area was once covered by water. Habitats change over millions of years. Fossils are clues about the past. A fish fossil in a desert tells us that millions of years ago, that spot was underwater. Habitats can change a lot over very long time periods.
+
+---
+
+### Question 3
+
+In our model, what is the relationship between Habitat Change and Animal Survival?
+
+A. Positive: more habitat change means better survival
+B. Negative: more habitat change means lower survival
+C. No relationship: habitat change does not affect survival
+D. Positive: animals like when things change a lot
+
+Correct Answer: B
+
+Feedback: Correct! The relationship is negative. When the habitat changes a lot, it becomes harder for animals to find what they need, so survival goes down. It is a negative relationship. When habitat change increases, animal survival decreases because the animals cannot find food, water, and shelter in the changed environment.
+
+---
+
+### Question 4
+
+Which animals alive today are related to dinosaurs?
+
+A. Dogs and cats
+B. Fish and sharks
+C. Birds like chickens, robins, and eagles
+D. Snakes and lizards only
+
+Correct Answer: C
+
+Feedback: That is right! Scientists discovered that birds are actually living dinosaurs. They evolved from small feathered dinosaurs millions of years ago. Fossil evidence shows that birds evolved from small feathered dinosaurs. So every bird you see today, from chickens to eagles, is actually a modern dinosaur!
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: D
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

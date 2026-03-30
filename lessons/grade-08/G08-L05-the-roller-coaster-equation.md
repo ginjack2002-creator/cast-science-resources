@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS3-1, MS-PS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A ball is held at the top of a ramp. What type of energy does it have because of its position?
+
+A. Kinetic energy
+B. Chemical energy
+C. Potential energy
+D. Thermal energy
+
+Correct Answer: C
+
+Feedback: Correct! An object held at a height has gravitational potential energy because of its position. This energy is stored and can be converted to motion. An object at a height has potential energy, which is energy stored due to its position in a gravitational field. Kinetic energy is the energy of motion, which it would gain as it moves down the ramp.
+
+---
+
+### Question 2
+
+When a moving car comes to a stop by braking, what happens to its kinetic energy?
+
+A. The kinetic energy is destroyed
+B. The kinetic energy is transformed into thermal energy (heat) in the brakes
+C. The kinetic energy disappears because the car stopped moving
+D. The kinetic energy stays the same but is hidden inside the car
+
+Correct Answer: B
+
+Feedback: Correct! Energy cannot be destroyed. When the car brakes, kinetic energy is transformed into thermal energy through friction between the brake pads and rotors. Energy cannot be created or destroyed (conservation of energy). When a car brakes, its kinetic energy does not disappear. It is transformed into thermal energy (heat) through friction in the braking system.
+
+---
+
+### Question 3
+
+A roller coaster reaches its fastest speed at which point on the track?
+
+A. At the very top of the highest hill
+B. At the lowest point after the biggest drop
+C. Halfway up the second hill
+D. At the start of the ride before any hills
+
+Correct Answer: B
+
+Feedback: Correct! As the coaster descends, potential energy converts to kinetic energy. The lowest point after the biggest drop is where the most potential energy has been converted to speed. The coaster is fastest at the bottom of the biggest drop. This is where the maximum amount of potential energy (from height) has been converted into kinetic energy (speed).
+
+---
+
+### Question 4
+
+If you double the height of a ramp, what happens to the speed of a ball at the bottom?
+
+A. The speed exactly doubles
+B. The speed increases but does not quite double
+C. The speed stays the same regardless of height
+D. The speed decreases because the ball has farther to travel
+
+Correct Answer: B
+
+Feedback: Correct! Speed increases with height, but the relationship involves a square root. Doubling the height increases speed by a factor of about 1.4 (the square root of 2), not 2. Speed at the bottom increases with ramp height, but not proportionally. The relationship involves a square root: doubling the height increases speed by approximately 1.4 times, not 2 times.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Your model showed that at the top of the first hill, potential energy is at maximum and kinetic energy is near zero. At the bottom, potential energy is near zero and kinetic energy is at maximum. The total energy remained constant throughout. This demonstrates:
+
+A. Energy was created at the bottom of the hill
+B. The law of conservation of energy: energy transforms between forms but the total stays the same
+C. Potential energy is more powerful than kinetic energy
+D. The roller coaster used an engine at the bottom to speed up
+
+Correct Answer: B
+
+Feedback: Correct! The constant total energy demonstrates the law of conservation of energy. Energy was not created or destroyed. It transformed from potential (height) to kinetic (speed) and back again. The model demonstrates conservation of energy. No energy was created or destroyed. Potential energy transformed into kinetic energy during the descent and back into potential energy during the ascent, with the total remaining constant.
+
+---
+
+### Question 2
+
+In the 'Heavy Coaster' scenario, doubling the mass of the coaster doubled both the potential and kinetic energy at every point. However, the speed at the bottom was the same as the lighter coaster. What explains this?
+
+A. The model was inaccurate because heavier objects should move faster
+B. Kinetic energy depends on both mass and speed (KE = 1/2 mv squared), so when mass doubles, the same speed still means double the kinetic energy
+C. Heavier objects always move at the same speed as lighter objects
+D. The extra mass created friction that slowed the coaster to match the lighter one
+
+Correct Answer: B
+
+Feedback: Correct! Since KE = 1/2 mv squared, doubling mass doubles kinetic energy even at the same speed. The height determines the speed, regardless of mass, because both potential and kinetic energy scale equally with mass. The key is the mathematical relationship KE = 1/2 mv squared. When mass doubles, kinetic energy doubles, but speed stays the same because potential energy also doubled. Mass cancels out when converting between PE and KE, so speed at the bottom depends only on height.
+
+---
+
+### Question 3
+
+Using your model, a coaster starts at 30 meters high and must complete a loop that is 20 meters tall. At the top of the loop, the coaster still has kinetic energy. Why is this possible?
+
+A. The loop generated extra energy that did not exist at the start
+B. The coaster started at 30m, so after climbing 20m it still has 10m worth of potential energy that remains as kinetic energy (speed)
+C. The coaster accelerated inside the loop using centrifugal force
+D. Potential energy is always greater than kinetic energy in loops
+
+Correct Answer: B
+
+Feedback: Correct! Starting at 30m and climbing to 20m means 10m worth of potential energy was converted to kinetic energy at the loop top. The coaster still has speed because it has not used all its initial potential energy. Conservation of energy explains this. The coaster started with 30m worth of potential energy. At the top of the 20m loop, it used 20m of PE to climb, leaving 10m worth of energy as kinetic energy (motion). This is why the first hill must always be the tallest.
+
+---
+
+### Question 4
+
+A theme park engineer wants the second hill to be taller than the first. Based on your model, why is this impossible without adding an engine?
+
+A. The coaster would be moving too fast to climb a taller hill
+B. Conservation of energy means the coaster cannot have more potential energy at any point than it started with, and some energy is always lost to friction
+C. Taller hills are structurally unsafe for roller coasters
+D. Gravity only works on the first hill of a roller coaster
+
+Correct Answer: B
+
+Feedback: Correct! Without an external energy source, the coaster cannot gain more energy than it started with. A taller second hill would require more potential energy than the total energy available, violating conservation of energy. The law of conservation of energy sets this limit. The coaster's total energy is fixed by the height of the first hill. A second hill taller than the first would require more potential energy than the coaster possesses, which is impossible without adding energy from an engine.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens when people throw trash on the ground?
+
+A. It makes the Earth cleaner
+B. It makes the Earth dirty
+C. Nothing happens
+
+Correct Answer: B
+
+Feedback: Yes! Throwing trash on the ground makes the Earth dirty and can hurt animals. Trash on the ground makes the Earth dirty. It can hurt animals and make water yucky.
+
+---
+
+### Question 2
+
+What does it mean to recycle?
+
+A. To throw things in the trash
+B. To turn old things into new things
+C. To buy new toys
+
+Correct Answer: B
+
+Feedback: Yes! Recycling means turning old things into new things instead of throwing them away. Recycling is when old materials like paper and plastic are turned into brand new things instead of becoming trash.
+
+---
+
+### Question 3
+
+Can kids help take care of the Earth?
+
+A. No, only adults can help
+B. Yes, kids can help too
+C. The Earth does not need help
+
+Correct Answer: B
+
+Feedback: Yes! Kids can help by using less, reusing things, and putting paper and plastic in recycling bins. Kids can absolutely help take care of the Earth. Even small things like recycling paper make a difference.
+
+---
+
+### Question 4
+
+Which bin should a plastic bottle go in?
+
+A. The trash can
+B. The recycling bin
+C. On the ground
+
+Correct Answer: B
+
+Feedback: Yes! A plastic bottle should go in the recycling bin so it can be turned into something new. Plastic bottles go in the recycling bin. There they get cleaned and turned into new things instead of sitting in a landfill.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When the Amount of Trash goes UP, what happens to Pollution Level?
+
+A. It goes down
+B. It stays the same
+C. It goes up
+
+Correct Answer: C
+
+Feedback: Yes! More trash means more pollution. The Earth gets dirtier when people throw away more garbage. When trash goes up, pollution goes up too. More garbage makes the land, water, and air dirtier.
+
+---
+
+### Question 2
+
+What does REDUCE mean?
+
+A. To use MORE of something
+B. To use LESS of something so we make less trash
+C. To throw things away
+
+Correct Answer: B
+
+Feedback: Yes! Reduce means to use less so we make less trash in the first place. Reduce means using less of something. When we use less, we create less trash, and that helps the Earth.
+
+---
+
+### Question 3
+
+How can reusing things help the Earth?
+
+A. It makes more trash
+B. Every item reused is one less item in the trash
+C. It does not help
+
+Correct Answer: B
+
+Feedback: Yes! When we reuse something instead of throwing it away, that is one less piece of trash hurting the Earth. Reusing helps because every time we use something again, that is one less item going to the landfill.
+
+---
+
+### Question 4
+
+What are the three R's that help the Earth?
+
+A. Run, Rest, Read
+B. Reduce, Reuse, Recycle
+C. Rain, Rivers, Rocks
+
+Correct Answer: B
+
+Feedback: Yes! Reduce, Reuse, Recycle are the three R's. They help us make less trash and keep the Earth clean. The three R's are Reduce (use less), Reuse (use again), and Recycle (turn old into new). They all help the Earth.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

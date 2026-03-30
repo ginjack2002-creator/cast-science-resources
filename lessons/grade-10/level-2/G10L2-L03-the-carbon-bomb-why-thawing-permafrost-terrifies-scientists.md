@@ -890,6 +890,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS2-6, HS-LS2-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Permafrost is ground that has remained frozen for at least two consecutive years. Approximately what fraction of the Northern Hemisphere's land surface is covered by permafrost?
+
+A. About 1% of the Northern Hemisphere's land surface
+B. About 10% of the Northern Hemisphere's land surface
+C. About 25% of the Northern Hemisphere's land surface
+D. About 75% of the Northern Hemisphere's land surface
+
+Correct Answer: C
+
+Feedback: Correct. Approximately 25% of the Northern Hemisphere's land surface is underlain by permafrost, storing an estimated 1,500 billion tons of organic carbon. Permafrost covers approximately 25% of the Northern Hemisphere's land surface, spanning vast areas of Siberia, Canada, and Alaska. This enormous area stores roughly 1,500 billion tons of organic carbon.
+
+---
+
+### Question 2
+
+A scientist states that methane is a more potent greenhouse gas than carbon dioxide. Which comparison best supports this claim?
+
+A. Methane is produced in larger quantities than CO2 from industrial sources
+B. Methane traps approximately 80 times more heat than CO2 over a 20-year period per molecule
+C. Methane remains in the atmosphere for thousands of years while CO2 breaks down quickly
+D. Methane absorbs visible light while CO2 only absorbs ultraviolet light
+
+Correct Answer: B
+
+Feedback: Correct. While methane has a shorter atmospheric lifetime than CO2, its heat-trapping capacity is approximately 80 times greater over a 20-year period, making it an extremely potent greenhouse gas. Methane is more potent per molecule because it traps approximately 80 times more heat than CO2 over a 20-year period. However, methane has a shorter atmospheric lifetime (about 12 years) compared to CO2 (hundreds of years).
+
+---
+
+### Question 3
+
+In a positive feedback loop, how does the output of a process relate to its input?
+
+A. The output counteracts the input, stabilizing the system
+B. The output amplifies the input, causing the process to accelerate
+C. The output has no relationship to the input
+D. The output always decreases the input over time
+
+Correct Answer: B
+
+Feedback: Correct. In a positive feedback loop, the output reinforces the original input, creating a self-amplifying cycle. This does not mean the outcome is 'positive' or beneficial; it means the change accelerates. A positive feedback loop is self-amplifying: the output of a process reinforces its own input, causing acceleration. The word 'positive' refers to amplification, not to whether the outcome is good or bad.
+
+---
+
+### Question 4
+
+Which process is primarily responsible for converting dead organic matter into CO2 and methane in thawed soil?
+
+A. Photosynthesis by newly established plants
+B. Volcanic outgassing from geothermal activity
+C. Microbial decomposition by bacteria and fungi
+D. Chemical weathering of exposed rock surfaces
+
+Correct Answer: C
+
+Feedback: Correct. When permafrost thaws, dormant microorganisms (bacteria and archaea) reactivate and begin decomposing the ancient organic carbon, producing CO2 in aerobic conditions and methane in anaerobic conditions. Microbial decomposition is the primary process. When frozen ground thaws, soil microorganisms awaken from dormancy and begin metabolizing organic matter that has been frozen for thousands of years, releasing CO2 and methane.
+
+---
+
+### Question 5
+
+A tipping point in an environmental system is best described as which of the following?
+
+A. The point at which pollution levels begin to affect human health
+B. A critical threshold beyond which a system shifts rapidly and potentially irreversibly to a new state
+C. The maximum temperature any ecosystem can tolerate before all organisms die
+D. The moment when government policy reverses an environmental trend
+
+Correct Answer: B
+
+Feedback: Correct. A tipping point is a threshold where small additional changes trigger a large, often irreversible shift in the system's behavior, moving it to a fundamentally different state. A tipping point is a critical threshold in a system. Once crossed, the system undergoes a rapid, self-reinforcing shift to a new state that may be irreversible on human timescales, regardless of subsequent interventions.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the permafrost carbon feedback model, which sequence correctly describes the positive feedback loop that drives accelerating warming?
+
+A. Atmospheric CO2 rises -> Permafrost Temperature increases -> Microbial Decomposition releases greenhouse gases -> Atmospheric CO2 rises further
+B. Ocean Absorption increases -> Permafrost Temperature drops -> Vegetation Growth expands -> Atmospheric CO2 drops
+C. Vegetation Growth increases -> Methane Release Rate decreases -> Permafrost Temperature decreases -> Feedback Amplification stops
+D. Atmospheric CO2 rises -> Ocean Absorption increases -> Permafrost Temperature decreases -> Methane Release Rate stops
+
+Correct Answer: A
+
+Feedback: Correct. The model demonstrates a self-amplifying cycle: rising CO2 warms the atmosphere, thawing permafrost, activating microbes that release more greenhouse gases, further increasing atmospheric CO2. The positive feedback loop in the model follows a clear causal chain: atmospheric CO2 raises temperature, which thaws permafrost, which activates microbial decomposition of ancient carbon, which releases more CO2 and methane, which raises temperature further.
+
+---
+
+### Question 2
+
+The model includes Ocean Absorption and Vegetation Growth as components. What role do these play in the permafrost feedback system?
+
+A. They amplify the positive feedback loop, making warming faster
+B. They act as negative feedbacks that slow the warming cycle but cannot stop it if the tipping point is crossed
+C. They have no measurable effect on the permafrost carbon cycle
+D. They completely offset all carbon released from thawing permafrost
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that Ocean Absorption and Vegetation Growth provide negative feedback (slowing the cycle), but the volume of carbon stored in permafrost vastly exceeds what these sinks can absorb, especially after the tipping point. These components act as partial brakes on the system. They absorb some CO2, slowing the feedback loop, but the 1,500 billion tons of carbon in permafrost overwhelms their capacity, particularly once Feedback Amplification becomes self-sustaining.
+
+---
+
+### Question 3
+
+A student runs the model with Atmospheric CO2 increasing at current rates and observes Feedback Amplification becoming self-sustaining. What does 'self-sustaining' mean in this context?
+
+A. Human emissions are the only driver of further warming
+B. Permafrost carbon release would continue even if all human CO2 emissions stopped immediately
+C. The feedback will reverse naturally within a few decades
+D. Vegetation Growth will eventually absorb all released carbon
+
+Correct Answer: B
+
+Feedback: Correct. Once the feedback becomes self-sustaining, the system generates enough warming from its own carbon releases to continue thawing more permafrost, independent of human emissions. This is what makes the tipping point so dangerous. A self-sustaining feedback means the process no longer requires an external driver. The warming from permafrost carbon release alone is sufficient to thaw more permafrost, creating an autonomous cycle that persists even if human emissions cease entirely.
+
+---
+
+### Question 4
+
+The model compares the 1,500 billion tons of carbon in permafrost to the approximately 900 billion tons currently in the atmosphere. Why does this comparison alarm climate scientists?
+
+A. Because permafrost carbon is less harmful than atmospheric carbon
+B. Because releasing even a fraction of permafrost carbon could nearly double atmospheric CO2, overwhelming natural sinks and accelerating warming beyond current projections
+C. Because all of the permafrost carbon will be released within one year of thawing
+D. Because permafrost carbon is composed of a different isotope that traps less heat
+
+Correct Answer: B
+
+Feedback: Correct. With nearly twice as much carbon stored in permafrost as exists in the entire atmosphere, even partial release represents an enormous addition to atmospheric greenhouse gases that current climate models may underestimate. The sheer scale is the concern: permafrost holds approximately 1.7 times more carbon than the entire atmosphere. Its release over decades rather than millennia would overwhelm Earth's carbon sinks and push warming far beyond current projections.
+
+---
+
+### Question 5
+
+Based on the model, which intervention strategy would be most effective at preventing the permafrost feedback from reaching the tipping point?
+
+A. Increasing Ocean Absorption by fertilizing the oceans with iron
+B. Reducing Atmospheric CO2 emissions rapidly enough to keep Permafrost Temperature below thawing thresholds before the feedback becomes self-sustaining
+C. Planting trees on top of permafrost to shade it from the sun
+D. Pumping cold water underground to refreeze thawed permafrost
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that the only realistic prevention strategy is reducing global emissions fast enough to limit warming before permafrost thaw crosses the self-sustaining threshold. Once crossed, no practical intervention can reverse the feedback. The model reveals that the window for action is before the tipping point. Once the feedback becomes self-sustaining, it is practically irreversible. Only rapid reduction of atmospheric CO2 emissions can keep Permafrost Temperature below critical thresholds.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

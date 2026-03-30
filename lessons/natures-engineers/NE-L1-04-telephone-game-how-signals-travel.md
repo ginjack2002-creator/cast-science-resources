@@ -160,6 +160,156 @@ Biomedical Engineers design medical devices including brain-computer interfaces 
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8, MS-PS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+How does your brain send a message to your hand to pick something up?
+
+A. Your brain yells really loudly
+B. Your brain sends electrical signals through your nerves
+C. Your hand moves on its own without the brain
+D. Your brain sends a letter through the mail
+
+Correct Answer: B
+
+Feedback: Correct! Your brain sends tiny electrical signals along your nerves to tell your muscles what to do. Your brain communicates by sending tiny electrical signals through your nervous system. These signals travel along nerves from your brain to your muscles, telling them when and how to move.
+
+---
+
+### Question 2
+
+What happens to a message when there is a lot of noise around you?
+
+A. The message gets clearer
+B. The message becomes harder to hear or understand
+C. Noise does not affect messages at all
+D. The message speeds up
+
+Correct Answer: B
+
+Feedback: Yes! Noise makes messages harder to hear and understand. The same thing happens with electronic and brain signals. Noise interferes with messages and makes them harder to understand. Just like trying to hear someone in a loud room, electronic and brain signals can also be disrupted by interference.
+
+---
+
+### Question 3
+
+If you whisper to someone far away, why might they not hear you?
+
+A. Whispers are invisible
+B. The sound is too weak to travel that far
+C. Their ears stop working when you whisper
+D. Whispers only work at night
+
+Correct Answer: B
+
+Feedback: Correct! A whisper is a weak signal that loses strength as it travels. The farther it goes, the harder it is to hear. A whisper is a weak signal. As sound travels, it loses strength over distance. This is called signal degradation, and it happens with all types of signals, not just sound.
+
+---
+
+### Question 4
+
+What is a brain-computer interface?
+
+A. A computer that has a brain inside it
+B. A system that reads brain signals and uses them to control a machine
+C. A video game about brains
+D. A type of brain surgery
+
+Correct Answer: B
+
+Feedback: Yes! A brain-computer interface (BCI) is a system that reads electrical signals from the brain and translates them into commands that control a computer or machine. A brain-computer interface (BCI) reads the electrical signals your brain produces and translates them into commands that can control a computer, robotic arm, or other machine. It is a bridge between your brain and technology.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, which THREE factors affect whether a message arrives accurately?
+
+A. Color, size, and weight
+B. Signal strength, distance traveled, and noise level
+C. Temperature, time of day, and weather
+D. Speed, direction, and shape
+
+Correct Answer: B
+
+Feedback: Correct! The model showed that signal strength, distance, and noise level are the three inputs that determine message accuracy. The model identified three key factors: signal strength (how strong the message starts), distance traveled (how far it must go), and noise level (how much interference is in the environment). All three affect whether the message arrives accurately.
+
+---
+
+### Question 2
+
+What did the model show happens when signal strength is high but noise level is also very high?
+
+A. The message always arrives perfectly because signal strength overcomes noise
+B. Message accuracy drops because even strong signals can be ruined by extreme noise
+C. Noise and signal strength cancel each other out
+D. The distance automatically gets shorter
+
+Correct Answer: B
+
+Feedback: Yes! The model showed that extreme noise can degrade even a strong signal. No signal is immune to overwhelming interference. Even a strong signal can be ruined by extreme noise. The model showed that while high signal strength helps, it cannot completely overcome very high noise levels. Message accuracy still drops when interference is too great.
+
+---
+
+### Question 3
+
+How is the telephone game similar to the challenges of brain-computer interfaces?
+
+A. They both use telephones
+B. In both cases, signals degrade over distance and are disrupted by noise
+C. They both require electricity
+D. They are not similar at all
+
+Correct Answer: B
+
+Feedback: Correct! Both the telephone game and BCIs face the same challenge: signals lose accuracy as they travel farther and encounter more noise along the way. The telephone game and brain-computer interfaces share the same core challenge: messages (signals) get distorted as they travel over distance, and noise in the environment makes them even harder to decode accurately.
+
+---
+
+### Question 4
+
+Why is reading brain signals so much harder than reading a keyboard press?
+
+A. Keyboards are more expensive than brain sensors
+B. Brain signals are tiny, must travel through tissue, and are surrounded by billions of other signals creating noise
+C. Brain signals are too fast for computers to read
+D. Brains do not actually produce electrical signals
+
+Correct Answer: B
+
+Feedback: That is right! Brain signals face all three challenges from the model: they are weak (low signal strength), must travel through tissue (distance), and are surrounded by billions of competing neural signals (noise). Reading brain signals is hard because of all three factors from our model. Brain signals are very weak (low signal strength), must travel through tissue and wires (distance), and are buried among billions of other neural signals (noise). Scientists must solve all three problems at once.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

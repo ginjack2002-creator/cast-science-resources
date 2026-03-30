@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What can you learn by looking at layers of rock in a cliff or canyon?
+
+A. Nothing useful. Rocks are just rocks.
+B. Each layer represents a different time period and can reveal what the environment was like when it formed
+C. Rock layers only form during earthquakes, so they tell us about seismic history
+D. The color of rock layers tells us what temperature it was when they formed
+
+Correct Answer: B
+
+Feedback: Correct! Rock layers (strata) form over time as sediment accumulates. Each layer is like a page in Earth's history, recording the environmental conditions when it was deposited. Not quite. Rock layers are records of the past. Each layer formed at a different time and contains evidence about the environment, climate, and organisms that existed during that period.
+
+---
+
+### Question 2
+
+Why are fossils found inside certain types of rocks?
+
+A. Fossils can form in any type of rock equally well
+B. Fossils form best in sedimentary rocks because organisms get buried in layers of sediment before they decompose
+C. Fossils only form inside volcanic rocks that melt and preserve organisms
+D. Animals deliberately crawl inside rocks before they die
+
+Correct Answer: B
+
+Feedback: Correct! Sedimentary rocks form from accumulated layers of sediment. When organisms are buried in this sediment quickly enough, they can be preserved as fossils before decomposition. Not quite. Fossils are most commonly found in sedimentary rocks because the process of sedimentation can bury organisms before they decompose, preserving them over millions of years.
+
+---
+
+### Question 3
+
+If you found a fish fossil in a rock on top of a mountain, what would that tell you?
+
+A. Fish once flew through the air and landed on the mountain
+B. Someone carried the fossil up the mountain and left it there
+C. The rock formed underwater and was later uplifted to become a mountain
+D. The fossil is fake because fish cannot live on mountains
+
+Correct Answer: C
+
+Feedback: Correct! Marine fossils on mountains are evidence that the rock formed on an ancient ocean floor. Tectonic forces later uplifted those ocean-floor rocks thousands of feet into the air. Not quite. Finding marine fossils on mountaintops is powerful evidence that those rocks formed at the bottom of an ancient ocean and were later pushed upward by tectonic forces over millions of years.
+
+---
+
+### Question 4
+
+In a stack of undisturbed rock layers, which layer is the oldest?
+
+A. The layer at the very top
+B. The thickest layer, regardless of position
+C. The layer at the very bottom
+D. The darkest-colored layer
+
+Correct Answer: C
+
+Feedback: Correct! This is the principle of superposition. In undisturbed rock layers, each new layer is deposited on top of older layers, so the bottom layer is the oldest. Not quite. The principle of superposition states that in undisturbed rock sequences, the oldest layers are at the bottom and the youngest are at the top, because each new layer is deposited on top of existing ones.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the rock strata model, sedimentation rate is set to maximum (simulating a flood event). What does the model predict about fossil preservation quality?
+
+A. Fossil preservation quality decreases because floods destroy all organisms
+B. Fossil preservation quality is excellent because organisms are buried quickly before they decompose
+C. Fossil preservation quality is unaffected because preservation depends only on the type of organism
+D. No fossils form during floods because water prevents sedimentation
+
+Correct Answer: B
+
+Feedback: Correct! Rapid burial during events like floods protects organisms from decomposition and scavengers, leading to excellent fossil preservation. Many of the world's best fossil sites formed during rapid deposition events. Not quite. Rapid sedimentation (like during a flood or volcanic ash fall) buries organisms quickly, protecting them from decomposition and scavengers. This is why rapid burial produces the best-preserved fossils.
+
+---
+
+### Question 2
+
+A geologist finds a rock sequence where a layer containing marine fossils sits between two layers containing land plant fossils. What is the best interpretation?
+
+A. The marine fossils were placed there by ancient people
+B. The area was once land, then flooded by ocean (depositing marine sediment), then became land again
+C. The marine and plant fossils formed at the same time but in different parts of the rock
+D. The rock layers have been flipped upside down by an earthquake
+
+Correct Answer: B
+
+Feedback: Correct! The sequence tells a story: the area was initially land (plant fossils), then sea levels rose and the area was covered by ocean (marine fossils), then sea levels dropped and it became land again (more plant fossils). Not quite. Using the principle of superposition, we read bottom to top: first land (plant fossils), then ocean covered the area (marine fossils), then the sea retreated and land returned (more plant fossils). The rock records changing environments over time.
+
+---
+
+### Question 3
+
+What does an unconformity in the rock record represent?
+
+A. A layer of unusual or rare minerals
+B. A gap where rock layers are missing, representing lost time due to erosion or non-deposition
+C. A layer that contains no fossils at all
+D. A boundary between igneous and metamorphic rock
+
+Correct Answer: B
+
+Feedback: Correct! An unconformity is a gap in the geological record where erosion removed existing layers or deposition did not occur. These gaps can represent millions of years of missing history. Not quite. An unconformity is a gap in the rock record where layers are missing. This can happen when erosion wears away existing layers or when new sediment is not deposited. These gaps represent potentially millions of years of lost geological history.
+
+---
+
+### Question 4
+
+In the model, when erosion rate exceeds sedimentation rate for a long period, what happens to the rock record at that location?
+
+A. Rock layers continue building normally because erosion has no effect on existing layers
+B. Rock layer thickness decreases as existing layers are worn away, and fossil evidence is destroyed
+C. Erosion creates new types of fossils by exposing them to the air
+D. The rock layers become stronger and more resistant to future erosion
+
+Correct Answer: B
+
+Feedback: Correct! When erosion dominates, it wears away existing rock layers, reducing their thickness and destroying the fossils within them. This is how erosion acts as a 'thief,' stealing pages from Earth's history book. Not quite. When erosion rate exceeds sedimentation rate, existing rock layers are worn away. This reduces layer thickness and destroys fossils, creating gaps in the geological record at that location.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

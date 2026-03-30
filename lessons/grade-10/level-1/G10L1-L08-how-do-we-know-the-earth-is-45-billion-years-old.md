@@ -884,6 +884,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS1-5, HS-ESS1-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Radioactive decay is a process in which:
+
+A. A stable atom absorbs energy and becomes radioactive.
+B. An unstable atomic nucleus spontaneously transforms into a more stable configuration by emitting radiation.
+C. Chemical bonds between atoms break apart due to high temperatures.
+D. Electrons escape from an atom, leaving it electrically charged.
+
+Correct Answer: B
+
+Feedback: Correct. Radioactive decay is a nuclear process where unstable nuclei spontaneously emit particles or energy to become more stable. This occurs at a constant rate independent of external conditions. Incorrect. Radioactive decay is a spontaneous nuclear transformation. Unstable nuclei emit radiation (alpha, beta, or gamma) as they convert to more stable configurations at a constant, predictable rate.
+
+---
+
+### Question 2
+
+A radioactive isotope has a half-life of 1,000 years. If a sample begins with 800 atoms of the parent isotope, approximately how many parent atoms remain after 3,000 years?
+
+A. 400 atoms
+B. 200 atoms
+C. 100 atoms
+D. 0 atoms
+
+Correct Answer: C
+
+Feedback: Correct. After 3 half-lives (3,000/1,000 = 3): 800 -> 400 -> 200 -> 100 atoms. Each half-life reduces the remaining parent isotope by exactly half. Incorrect. Three half-lives pass in 3,000 years. Each halves the remaining amount: 800/2 = 400, 400/2 = 200, 200/2 = 100 atoms remaining.
+
+---
+
+### Question 3
+
+Why is carbon-14 dating NOT used to determine the age of the Earth?
+
+A. Carbon-14 is too abundant in old rocks to measure accurately.
+B. Carbon-14 has a half-life of only 5,730 years, so virtually none remains in samples older than about 50,000 years.
+C. Carbon-14 dating only works on metals, not rocks.
+D. The Earth does not contain any carbon-14.
+
+Correct Answer: B
+
+Feedback: Correct. With a half-life of 5,730 years, carbon-14 becomes undetectable after approximately 10 half-lives (~50,000 years). Earth's 4.5-billion-year age requires isotopes with much longer half-lives like uranium-238. Incorrect. Carbon-14's short half-life (5,730 years) means it decays to undetectable levels within ~50,000 years. Dating the 4.5-billion-year-old Earth requires isotopes with half-lives of billions of years.
+
+---
+
+### Question 4
+
+A geologist finds a rock where the ratio of parent radioactive isotope to daughter product is 1:3 (25% parent, 75% daughter). How many half-lives have elapsed since the rock formed?
+
+A. 1 half-life
+B. 2 half-lives
+C. 3 half-lives
+D. 4 half-lives
+
+Correct Answer: B
+
+Feedback: Correct. Starting at 100% parent: after 1 half-life = 50% parent; after 2 half-lives = 25% parent (with 75% daughter). The 25:75 ratio indicates exactly 2 half-lives have passed. Incorrect. Track the decay: 100% -> 50% (1 half-life) -> 25% (2 half-lives). A ratio of 25% parent to 75% daughter means 2 half-lives have elapsed.
+
+---
+
+### Question 5
+
+What makes radioactive decay rates reliable for dating geological samples?
+
+A. They can be adjusted in the laboratory to speed up the dating process.
+B. They are constant and unaffected by temperature, pressure, or any other environmental conditions.
+C. They change predictably with temperature, allowing corrections.
+D. They are the same for all elements, simplifying calculations.
+
+Correct Answer: B
+
+Feedback: Correct. Radioactive decay rates are determined by nuclear physics (the strong force). No known physical or chemical process can alter them, making them the most reliable natural chronometers available. Incorrect. Decay rates are fixed by fundamental nuclear forces and are completely independent of external conditions. This constancy is what makes them perfectly reliable clocks for geological dating.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model's Multiple Methods scenario, three independent isotope systems (U-Pb, K-Ar, Rb-Sr) applied to the same rock all yield the same age within measurement uncertainty. Why is this convergence considered strong scientific evidence?
+
+A. Because all three methods use the same mathematical equation.
+B. Because the probability of three independent methods, using different elements and decay mechanisms, accidentally producing the same wrong answer is vanishingly small.
+C. Because averaging three measurements always produces a more accurate result.
+D. Because the methods were calibrated against each other before being applied.
+
+Correct Answer: B
+
+Feedback: Correct. Independent convergence is among the strongest forms of scientific evidence. Each system involves different elements, different decay physics, and different half-lives. Agreement among independent methods rules out systematic error. Incorrect. The power of convergence comes from independence. Three different isotope systems with different elements, different decay mechanisms, and different half-lives all agreeing on the same age makes coincidental error essentially impossible.
+
+---
+
+### Question 2
+
+The model shows that only 6.25% of a parent isotope remains in an ancient rock. A student calculates this represents 4 half-lives. Using uranium-238 (half-life 4.47 billion years), the calculated age would be 17.9 billion years. The student recognizes this exceeds the age of the universe. What does the model suggest went wrong?
+
+A. The half-life of uranium-238 is incorrect.
+B. The wrong isotope system was selected for this sample's age range, or the sample was contaminated with additional daughter product.
+C. The model cannot handle ages greater than 4.5 billion years.
+D. Four half-lives is the maximum measurable by any dating method.
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that selecting the appropriate isotope system for the expected age range is critical. An impossibly old result signals either wrong isotope system choice or open-system behavior (contamination). Incorrect. The model teaches that impossible ages indicate either an inappropriate isotope system for the sample's true age or violation of the closed-system assumption (parent loss or daughter gain from external sources).
+
+---
+
+### Question 3
+
+Based on the model, a rock sample contains 50% parent and 50% daughter isotope using potassium-40 (half-life = 1.25 billion years). What is the calculated age of this rock?
+
+A. 625 million years
+B. 1.25 billion years
+C. 2.5 billion years
+D. 4.5 billion years
+
+Correct Answer: B
+
+Feedback: Correct. A 50:50 parent:daughter ratio means exactly 1 half-life has elapsed. For K-40 with a half-life of 1.25 billion years, the rock is 1.25 billion years old. Incorrect. When 50% of the parent remains, exactly 1 half-life has passed. For potassium-40: 1 half-life = 1.25 billion years. The rock formed 1.25 billion years ago.
+
+---
+
+### Question 4
+
+The model demonstrates that Earth's age (4.567 billion years) was determined using meteorites rather than Earth rocks. Which model concept best explains why Earth's oldest rocks (~4.0 billion years) do not directly record Earth's formation age?
+
+A. Earth's oldest rocks are too small to contain measurable radioactive isotopes.
+B. Earth's geological processes (plate tectonics, weathering, metamorphism) recycled the original crust, resetting the radiometric clocks of surface rocks.
+C. Radioactive decay did not begin until 500 million years after Earth formed.
+D. Earth rocks contain different isotopes than meteorites.
+
+Correct Answer: B
+
+Feedback: Correct. Earth's dynamic geology continuously recycles crustal material through plate tectonics, metamorphism, and weathering. These processes reset radiometric clocks, erasing the record of Earth's original formation age from surface rocks. Incorrect. Earth's active geology recycles its crust. Metamorphism, melting, and tectonic processes reset radiometric clocks in rocks. Meteorites, which have been geologically inactive since formation, preserve the original Solar System age.
+
+---
+
+### Question 5
+
+A student argues that radiometric dating is unreliable because scientists cannot verify ages independently. The model provides multiple forms of counter-evidence. Which is the STRONGEST counter-argument?
+
+A. Scientists have carefully calibrated their instruments.
+B. Multiple independent isotope systems using different elements and decay mechanisms consistently produce the same ages for the same rocks, and the natural reactor at Oklo, Gabon confirms decay rates were identical 2 billion years ago.
+C. The ages match what geologists expected based on rock appearance.
+D. Only one isotope system is actually needed for reliable dating.
+
+Correct Answer: B
+
+Feedback: Correct. The strongest evidence combines multiple independent convergence (different isotope systems agreeing) with the Oklo natural reactor, which provides a direct physical verification that decay rates 2 billion years ago were identical to today. Incorrect. The strongest evidence is independent convergence from multiple isotope systems plus physical verification from the Oklo natural reactor. Together, these provide overwhelming, independently verifiable evidence of reliability.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

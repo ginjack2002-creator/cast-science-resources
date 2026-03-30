@@ -883,6 +883,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Which of the following best describes the function of an enzyme in a biological system?
+
+A. Enzymes provide energy for cellular processes by breaking down ATP
+B. Enzymes are proteins that speed up specific chemical reactions without being consumed in the process
+C. Enzymes are carbohydrates that store genetic information
+D. Enzymes are lipids that form the cell membrane
+
+Correct Answer: B
+
+Feedback: Correct. Enzymes are biological catalysts, proteins that lower the activation energy of specific chemical reactions, allowing them to proceed much faster. Each enzyme is specific to a particular substrate, and the enzyme itself is not consumed or altered permanently by the reaction. Enzymes are proteins that function as biological catalysts. They speed up specific chemical reactions by lowering the activation energy required, and they are not consumed in the process. Each enzyme has a specific shape that fits only certain substrates, giving it high specificity.
+
+---
+
+### Question 2
+
+What does it mean when scientists say a gene is 'expressed'?
+
+A. The gene has been deleted from the DNA sequence
+B. The gene's information is being actively read and used to produce a functional protein
+C. The gene is present in the DNA but has no function
+D. The gene has mutated into a different form
+
+Correct Answer: B
+
+Feedback: Correct. Gene expression is the process by which the information encoded in a gene is used to synthesize a functional protein. This involves transcription (DNA to mRNA) and translation (mRNA to protein). A gene that is 'expressed' is actively producing its protein product. Gene expression refers to the process where a gene's DNA sequence is transcribed into mRNA and then translated into a functional protein. When a gene is expressed, the cell is actively using that gene's instructions to make a specific protein. Genes can be 'turned on' (expressed) or 'turned off' (silenced).
+
+---
+
+### Question 3
+
+A student says: 'Lactose intolerance is a disease that some people are born with.' Which correction is most scientifically accurate?
+
+A. Lactose intolerance is caused by a virus, not genetics
+B. Lactose intolerance is not a disease; it is the ancestral default human condition where lactase production naturally decreases after childhood
+C. Lactose intolerance only develops in people who drink too much milk
+D. Lactose intolerance and lactose allergy are the same condition
+
+Correct Answer: B
+
+Feedback: Correct. Lactase non-persistence (commonly called lactose intolerance) is the ancestral human condition shared by all mammals. Lactase production naturally decreases after weaning. Lactose tolerance is actually the mutation, arising approximately 7,500 years ago in dairy-farming populations. Lactose intolerance is not a disease or disorder. It is the default condition for most mammals, including most humans. All mammals naturally reduce lactase production after weaning because there is no nutritional need for it. Lactose tolerance in adults is the genetic mutation, which evolved approximately 7,500 years ago in populations that domesticated dairy animals.
+
+---
+
+### Question 4
+
+Approximately what percentage of the world's adult population is lactose intolerant?
+
+A. About 5%
+B. About 25%
+C. About 65%
+D. About 95%
+
+Correct Answer: C
+
+Feedback: Correct. Approximately 65-70% of the world's adult population has reduced lactase production after childhood. The distribution varies dramatically by region, with rates over 90% in East Asia and under 10% in Northern Europe, reflecting historical dairy farming practices. About 65% of the global adult population experiences reduced lactase production. This varies significantly by ancestry: over 90% in East Asian populations, 70-80% in African and Latin American populations, and under 10% in Northern European populations, closely tracking the history of dairy farming in different regions.
+
+---
+
+### Question 5
+
+When a lactose-intolerant person drinks milk, they often experience bloating, cramps, and diarrhea. What is the direct biological cause of these symptoms?
+
+A. The immune system attacks the milk proteins, causing an allergic reaction
+B. Undigested lactose passes to the large intestine where bacteria ferment it, producing gas, and the lactose draws water in through osmosis
+C. Milk contains toxins that are only harmful to certain people
+D. The stomach acid reacts with milk to produce a corrosive substance
+
+Correct Answer: B
+
+Feedback: Correct. Without sufficient lactase in the small intestine, lactose passes undigested to the large intestine. Gut bacteria ferment the lactose anaerobically, producing hydrogen, methane, and CO2 gas (causing bloating and cramps). The undigested lactose is also osmotically active, drawing water into the intestinal lumen (causing diarrhea). Lactose intolerance is not an immune response (that would be a milk allergy, which is different). The symptoms occur because undigested lactose reaches the large intestine, where bacteria ferment it to produce gas (bloating, cramps) and where its osmotic activity draws water into the gut (diarrhea).
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a student's model, setting Lactase Gene Activity to MEDIUM produces a scenario where small amounts of dairy cause no symptoms but large amounts cause significant discomfort. Which concept does this model behavior best demonstrate?
+
+A. Enzymes work in an all-or-nothing fashion with no intermediate states
+B. There is a threshold effect where limited enzyme can process a small substrate load but is overwhelmed by a large one, meaning intolerance exists on a spectrum rather than as a binary condition
+C. The model is inaccurate because lactose intolerance is always complete
+D. Medium gene activity means the person is allergic to some dairy products but not others
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals a threshold effect: limited lactase enzyme can successfully break down small amounts of lactose before it reaches the colon. But when lactose intake exceeds the enzyme's processing capacity, the excess passes to the large intestine and causes symptoms. This explains why many intolerant people can eat aged cheese or yogurt but not drink a full glass of milk. The model demonstrates that lactose intolerance is not binary but exists on a spectrum determined by the ratio of available enzyme to consumed lactose. At medium gene activity, there is enough lactase to process small amounts, but large dairy servings overwhelm the available enzyme, with excess lactose passing to the colon to be fermented by bacteria.
+
+---
+
+### Question 2
+
+A student's model traces the causal chain: Lactase Gene Activity → Lactase Enzyme Production → Lactose Breakdown → Gut Bacteria Response. If two siblings eat identical ice cream sundaes but only one gets sick, which part of the chain most likely differs between them?
+
+A. They have different gut bacteria species, which is the primary variable
+B. Their Lactase Gene Activity levels differ due to inherited genetic variation in LCT gene regulation, causing different amounts of enzyme to be produced
+C. One sibling has a stronger stomach that destroys lactose before it reaches the intestine
+D. The ice cream affected them differently because of their blood types
+
+Correct Answer: B
+
+Feedback: Correct. The model identifies Lactase Gene Activity as the primary driver of the entire causal chain. Siblings can inherit different regulatory variants of the LCT gene from their parents, resulting in different levels of lactase enzyme production and therefore different digestive outcomes from the same dairy intake. The model shows that the entire downstream chain depends on the initial gene activity level. Since siblings can inherit different combinations of LCT gene regulatory variants from their parents, they may have different levels of lactase production. The sibling with lower gene activity produces less enzyme, leading to more undigested lactose reaching gut bacteria.
+
+---
+
+### Question 3
+
+About 90% of Northern Europeans are lactose tolerant while 90% of East Asian populations are intolerant. A student's model of gene expression and natural selection best explains this pattern through which mechanism?
+
+A. Northern Europeans evolved a completely different digestive system from East Asians
+B. A mutation that kept the LCT gene active into adulthood provided a strong survival advantage in dairy-farming populations, spreading rapidly through natural selection over approximately 7,500 years
+C. East Asian populations lost the ability to digest milk due to lack of exercise
+D. Northern Europeans drink more milk during childhood, which permanently activates the gene
+
+Correct Answer: B
+
+Feedback: Correct. This is gene-culture co-evolution: the cultural practice of dairy farming created strong selective pressure favoring a mutation that maintains lactase production into adulthood. Populations without dairy farming traditions had no selective advantage for this mutation. The geographic distribution of lactose tolerance maps almost perfectly onto the history of dairy cattle domestication. The pattern reflects gene-culture co-evolution. Approximately 7,500 years ago, a mutation arose that prevents the normal age-related decrease in LCT gene expression. In populations that domesticated dairy animals, this mutation provided access to a rich, reliable food source, conferring a strong survival advantage. Natural selection rapidly spread this mutation. Populations without dairy farming traditions experienced no selective pressure for the mutation.
+
+---
+
+### Question 4
+
+A food scientist uses the model to design a lactose-free milk product. They add microbial lactase enzyme to milk during processing. Based on the model, why does this approach work?
+
+A. The added enzyme destroys the milk protein that causes allergic reactions
+B. The added enzyme changes the person's gene expression permanently
+C. The added enzyme performs the same lactose-to-glucose/galactose breakdown reaction externally that the body's own lactase would perform in the small intestine, eliminating the substrate before gut bacteria encounter it
+D. The added enzyme kills the gut bacteria that cause symptoms
+
+Correct Answer: C
+
+Feedback: Correct. The model shows that symptoms occur when undigested lactose reaches gut bacteria. Adding lactase to milk during processing breaks down lactose before the person ever drinks it, effectively performing the chemical reaction outside the body. The result is milk that contains glucose and galactose instead of lactose, which the body absorbs normally without any enzyme requirement. The model reveals that the critical step is lactose breakdown. Whether this happens via the person's own lactase in the small intestine or via externally added enzyme during milk processing, the result is the same: lactose is converted to absorbable glucose and galactose. Without intact lactose reaching the large intestine, there is nothing for bacteria to ferment, and no symptoms occur.
+
+---
+
+### Question 5
+
+A student reflects on their model and states: 'This is one of the clearest examples of how a single gene directly controls a physical trait through a protein intermediary.' Which reasoning best supports this claim?
+
+A. Many genes contribute to lactose digestion, so a single-gene model is oversimplified
+B. The causal chain from DNA sequence (LCT gene) → mRNA → protein (lactase enzyme) → chemical reaction (lactose hydrolysis) → observable phenotype (digestion vs. symptoms) traces the central dogma of molecular biology through a single, verifiable example
+C. Gene expression does not actually control protein production
+D. The trait of lactose tolerance is controlled by environmental factors, not genetics
+
+Correct Answer: B
+
+Feedback: Correct. Lactose tolerance/intolerance is an unusually clear example of the central dogma pathway from gene to phenotype. A single gene (LCT) is transcribed to mRNA, translated to a specific protein (lactase enzyme), which catalyzes a specific reaction (lactose hydrolysis), producing an observable physical outcome (comfortable digestion vs. gastrointestinal distress). Every link in the chain is well-characterized. This example elegantly demonstrates the central dogma of molecular biology in action: DNA (LCT gene regulation) determines mRNA levels, mRNA determines protein (lactase enzyme) quantity, enzyme quantity determines the rate of a specific chemical reaction (lactose breakdown), and the completeness of that reaction determines the observable phenotype (digestion vs. symptoms). Each step is directly traceable.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

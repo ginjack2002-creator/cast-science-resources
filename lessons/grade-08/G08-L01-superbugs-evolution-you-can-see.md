@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-4, MS-LS4-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the primary function of antibiotics?
+
+A. To kill or stop the growth of bacteria
+B. To boost the human immune system
+C. To kill viruses that cause the common cold
+D. To prevent all types of infections permanently
+
+Correct Answer: A
+
+Feedback: Correct! Antibiotics specifically target bacteria. They do not work against viruses or permanently prevent infections. Antibiotics are medicines designed to kill or inhibit the growth of bacteria. They do not affect viruses, boost the immune system directly, or provide permanent protection.
+
+---
+
+### Question 2
+
+Where do new traits in a population originally come from?
+
+A. Organisms choose to develop traits they need to survive
+B. Random changes (mutations) in an organism's DNA
+C. The environment directly changes the organism's genes
+D. Traits are created by natural selection itself
+
+Correct Answer: B
+
+Feedback: Correct! Mutations are random changes in DNA that introduce new traits into a population. Natural selection then acts on those traits. New traits arise from random mutations in DNA. Organisms cannot choose traits, the environment does not directly rewrite genes, and natural selection acts on existing variation rather than creating it.
+
+---
+
+### Question 3
+
+In the process of natural selection, which organisms are most likely to survive and reproduce?
+
+A. The largest and strongest organisms
+B. Organisms with traits that are best suited to their current environment
+C. The oldest organisms in the population
+D. Organisms that can change their traits when the environment changes
+
+Correct Answer: B
+
+Feedback: Correct! Natural selection favors organisms with traits that provide an advantage in their specific environment, regardless of size, age, or intentional adaptation. 'Survival of the fittest' does not mean strongest or largest. It means organisms whose traits happen to be best suited to the current environment are more likely to survive and pass on those traits.
+
+---
+
+### Question 4
+
+A doctor prescribes antibiotics for a patient with a bacterial infection. The patient feels better after 3 days but has a 10-day prescription. What should the patient do?
+
+A. Stop taking the antibiotics since the infection is gone
+B. Take the remaining pills all at once to finish faster
+C. Complete the full 10-day course as prescribed
+D. Save the remaining pills for the next time they get sick
+
+Correct Answer: C
+
+Feedback: Correct! Completing the full course ensures that even partially resistant bacteria are killed. Stopping early can leave the most resistant bacteria alive to reproduce. Patients should always complete the full antibiotic course. Stopping early, taking pills all at once, or saving them can all contribute to antibiotic resistance by allowing resistant bacteria to survive.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a population of bacteria exposed to antibiotics, resistant bacteria survive while non-resistant bacteria die. Which statement best explains why the resistant bacteria survived?
+
+A. The antibiotics caused the bacteria to mutate into resistant forms
+B. The resistant bacteria chose to activate their defense genes
+C. Random mutations that occurred before antibiotic exposure happened to provide resistance
+D. The resistant bacteria learned to fight the antibiotic through repeated exposure
+
+Correct Answer: C
+
+Feedback: Correct! Resistance genes arise from random mutations that exist before antibiotic exposure. Antibiotics do not cause resistance; they select for bacteria that already carry resistance genes. Antibiotics do not cause mutations or teach bacteria to resist. Resistance genes arise from random mutations that happened before any antibiotic was present. The antibiotic acts as a selective pressure, favoring bacteria that already have resistance.
+
+---
+
+### Question 2
+
+A model shows that when antibiotic use is set to 100%, resistant bacteria reach 90% of the population in 10 generations. When antibiotic use is set to 30%, resistant bacteria reach only 25% in the same time. What does this evidence support?
+
+A. Lower antibiotic use prevents all mutations from occurring
+B. Higher antibiotic use creates a stronger selective pressure, accelerating resistance evolution
+C. Resistant bacteria only appear when antibiotic use is above 50%
+D. Antibiotics at 30% are too weak to kill any bacteria
+
+Correct Answer: B
+
+Feedback: Correct! Higher antibiotic use creates stronger selective pressure. More non-resistant bacteria are killed, giving resistant bacteria a larger reproductive advantage and accelerating population change. Reducing antibiotic use does not stop mutations. Resistant bacteria can appear at any antibiotic level. The key insight is that higher use creates stronger selective pressure, so the resistant population grows faster.
+
+---
+
+### Question 3
+
+A hospital notices that MRSA infections have increased by 300% over 10 years. Using your understanding of natural selection, which factor most directly drove this increase?
+
+A. Bacteria deliberately evolved to resist methicillin
+B. Repeated antibiotic use selected for bacteria carrying pre-existing resistance genes over many generations
+C. The hospital became dirtier over time, creating new resistant bacteria
+D. Patients' immune systems became weaker, allowing bacteria to mutate faster
+
+Correct Answer: B
+
+Feedback: Correct! Repeated antibiotic use acts as a sustained selective pressure. Over many generations, bacteria with pre-existing resistance genes outcompete susceptible bacteria, increasing the resistant population. Bacteria do not deliberately evolve. Cleanliness and immune strength affect infection rates but do not drive resistance evolution. The mechanism is natural selection: repeated antibiotic use selects for bacteria that already carry resistance genes.
+
+---
+
+### Question 4
+
+Your model includes Mutation Rate and Antibiotic Use as external components and Resistant Bacteria and Treatment Effectiveness as internal components. If you wanted to slow the rise of resistant bacteria, which strategy would your model support?
+
+A. Increase mutation rate to create bacteria that are too mutated to survive
+B. Use antibiotics at maximum levels to kill all bacteria before they can reproduce
+C. Reduce antibiotic use to decrease the selective pressure favoring resistant bacteria
+D. Eliminate all bacteria from hospitals using stronger chemicals
+
+Correct Answer: C
+
+Feedback: Correct! Reducing antibiotic use decreases selective pressure. Without strong selection against non-resistant bacteria, resistant bacteria do not gain as large a reproductive advantage, slowing the spread of resistance. Increasing mutation rate would create more variation, not fewer survivors. Maximum antibiotic use increases selective pressure. The model shows that reducing antibiotic use (lowering selective pressure) is the most effective strategy to slow resistance evolution.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

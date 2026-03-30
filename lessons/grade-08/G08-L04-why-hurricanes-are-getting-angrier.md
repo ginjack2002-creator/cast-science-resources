@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-ESS2-5, MS-ESS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What provides the primary energy source for a hurricane?
+
+A. Cold air masses from the Arctic
+B. Warm ocean water that evaporates into the atmosphere
+C. Lightning strikes that generate heat
+D. Wind from nearby weather systems
+
+Correct Answer: B
+
+Feedback: Correct! Hurricanes are heat engines powered by the evaporation of warm ocean water. The warmer the water, the more energy is available for the storm. Hurricanes get their energy from warm ocean water. When water evaporates from the warm ocean surface, it releases heat energy into the atmosphere, which fuels the storm's winds and circulation.
+
+---
+
+### Question 2
+
+What is convection?
+
+A. The transfer of heat through solid materials by direct contact
+B. The rising of warm air and sinking of cool air that creates circulation patterns
+C. The reflection of sunlight off the ocean surface
+D. The spinning motion of the Earth on its axis
+
+Correct Answer: B
+
+Feedback: Correct! Convection is the circular motion that occurs when warm, less dense air rises and cool, denser air sinks to replace it, creating circulation patterns. Convection refers to heat transfer through fluid movement. Warm air rises because it is less dense, and cooler air sinks to take its place. This creates circular patterns that drive weather systems.
+
+---
+
+### Question 3
+
+What is a storm surge?
+
+A. The increase in wind speed during a thunderstorm
+B. A sudden burst of lightning during a storm
+C. An abnormal rise in sea level pushed onshore by a storm's winds and low pressure
+D. The calm area at the center of a hurricane
+
+Correct Answer: C
+
+Feedback: Correct! Storm surge is a rise in ocean water level caused by a storm's strong winds and low atmospheric pressure pushing water toward and onto the shore. Storm surge is the abnormal rise in sea level during a storm. It occurs when powerful winds and low air pressure push ocean water onto the coast, causing flooding that is often the most deadly part of a hurricane.
+
+---
+
+### Question 4
+
+How has the average global temperature of the ocean changed over the past several decades?
+
+A. Ocean temperatures have remained exactly the same
+B. Ocean temperatures have been steadily decreasing
+C. Ocean temperatures have been gradually increasing
+D. Ocean temperatures only change during El Nino years
+
+Correct Answer: C
+
+Feedback: Correct! Global ocean temperatures have been gradually rising. The ocean absorbs about 90% of the excess heat from global warming, leading to warmer sea surface temperatures. Data from NOAA and other agencies show that global ocean temperatures have been gradually increasing. The ocean absorbs approximately 90% of excess heat trapped by greenhouse gases.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In your model, when Sea Surface Temperature was increased from 80 degrees F to 90 degrees F, Hurricane Wind Speed increased dramatically. This relationship shows that hurricanes function as:
+
+A. Cold air converters that turn cool ocean water into wind
+B. Heat engines that convert thermal energy from warm water into kinetic energy of wind
+C. Electrical generators that create lightning from ocean salt
+D. Random weather events with no predictable relationship to ocean temperature
+
+Correct Answer: B
+
+Feedback: Correct! Hurricanes function as heat engines. They convert the thermal energy stored in warm ocean water into the kinetic energy of powerful winds through evaporation and convection. The model shows a clear cause-and-effect relationship: warmer water provides more thermal energy, which is converted into stronger winds. Hurricanes are essentially heat engines that run on warm ocean water.
+
+---
+
+### Question 2
+
+Your model demonstrated 'rapid intensification' when Sea Surface Temperature was locked at 90 degrees F. A hurricane's wind speed increased by 45 mph in 24 hours. What does this suggest about the relationship between ocean temperature and hurricane risk?
+
+A. Rapid intensification is impossible and the model must be wrong
+B. A small increase in ocean temperature produces only a small, proportional increase in wind speed
+C. Warmer ocean temperatures can fuel disproportionately large and sudden increases in storm intensity, making hurricanes less predictable and more dangerous
+D. Rapid intensification only happens when two hurricanes collide
+
+Correct Answer: C
+
+Feedback: Correct! The model shows a non-linear relationship. Small temperature increases can trigger rapid intensification, where storms strengthen disproportionately fast. This makes forecasting more difficult and communities more vulnerable. Rapid intensification is a real and increasingly common phenomenon. The model demonstrates that the relationship between ocean temperature and storm intensity is not simply proportional. Slightly warmer water can cause dramatic, sudden jumps in hurricane strength.
+
+---
+
+### Question 3
+
+In the 'Cool Water Encounter' scenario, the hurricane weakened rapidly when sea surface temperature dropped from 90 degrees F to 75 degrees F. Which model component explains this?
+
+A. Cool water added mass to the hurricane, making it too heavy to maintain wind speed
+B. The hurricane lost its energy source because cooler water provides less evaporation and less thermal energy for convection
+C. Cool water created ice that blocked the hurricane's rotation
+D. The atmospheric moisture increased, making the storm too wet to continue
+
+Correct Answer: B
+
+Feedback: Correct! When a hurricane moves over cooler water, evaporation decreases and less thermal energy enters the system. Without its fuel supply, the convection cycle weakens and wind speeds drop. The model shows that hurricanes depend on warm ocean water as their energy source. Cooler water means less evaporation, less heat released into the atmosphere, and therefore less energy to sustain the storm's convection and winds.
+
+---
+
+### Question 4
+
+Based on your model, if average sea surface temperatures continue to rise over the next 50 years, which prediction is best supported by the evidence?
+
+A. Hurricanes will become weaker because warmer air is less dense
+B. Hurricane frequency will decrease because warm water prevents storms from forming
+C. Hurricanes will have access to more energy, increasing the likelihood of stronger storms with higher storm surges
+D. Ocean temperature has no effect on long-term hurricane patterns
+
+Correct Answer: C
+
+Feedback: Correct! The model shows that warmer water provides more energy for hurricanes. Continued warming means more fuel available for storms, supporting predictions of more intense hurricanes with higher storm surges. The model provides clear evidence that warmer water increases hurricane intensity and storm surge height. Continued ocean warming would mean more thermal energy available to fuel stronger storms.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -884,6 +884,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS1-3, MS-PS1-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the difference between a natural material and a synthetic material?
+
+A. Natural materials are always better than synthetic ones
+B. Natural materials come from the Earth; synthetic materials are made by humans through chemical processes
+C. Synthetic materials are only used in laboratories
+D. There is no difference — all materials are the same
+
+Correct Answer: B
+
+Feedback: Correct! Natural materials (wood, cotton, stone) come directly from nature, while synthetic materials (plastic, nylon, polyester) are manufactured by humans through chemical processes. Not quite. Natural materials like wood, cotton, and stone come from the Earth as-is. Synthetic materials like plastic, nylon, and polyester are created by humans through chemical processes, often from natural resources like petroleum.
+
+---
+
+### Question 2
+
+What natural resource is most commonly used to make plastics?
+
+A. Sand
+B. Wood
+C. Petroleum (oil)
+D. Water
+
+Correct Answer: C
+
+Feedback: Correct! Most plastics are made from petroleum (crude oil), which is a natural resource formed from ancient organisms over millions of years. Not quite. Most plastics are manufactured from petroleum (crude oil). Petroleum contains hydrocarbon molecules that can be chemically rearranged into polymer chains that form plastic.
+
+---
+
+### Question 3
+
+Why do you think scientists create synthetic materials instead of just using natural ones?
+
+A. Synthetic materials are always cheaper
+B. Natural materials have run out completely
+C. Synthetic materials can be engineered to have specific properties that natural materials don't have
+D. Scientists create synthetic materials just for fun
+
+Correct Answer: C
+
+Feedback: Correct! Scientists engineer synthetic materials to have specific combinations of properties, like being lightweight AND strong, or flexible AND waterproof, that don't exist naturally. Not quite. The main reason for creating synthetic materials is that they can be precisely engineered to have specific properties. A single synthetic material can be lightweight, waterproof, flexible, and durable in ways that natural materials cannot.
+
+---
+
+### Question 4
+
+What is a polymer?
+
+A. A type of metal alloy
+B. A very long chain of repeating smaller molecules linked together
+C. A chemical that dissolves plastic
+D. A mineral found in volcanic rock
+
+Correct Answer: B
+
+Feedback: Correct! A polymer is a large molecule made of many smaller repeating units (monomers) linked together in a chain, like a molecular train. Plastics, nylon, and DNA are all polymers. Not quite. A polymer is a long chain molecule made of many small, repeating units (monomers) bonded together. Think of it like a train made of identical cars. Examples include plastics, rubber, nylon, and even DNA.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the synthetic materials model, what happens when Polymer Chain Length is increased from short to maximum?
+
+A. The material becomes weaker and more brittle
+B. The material becomes stronger because longer chains tangle and hold together better
+C. The material becomes more transparent
+D. The material's melting point decreases
+
+Correct Answer: B
+
+Feedback: Correct! Longer polymer chains create stronger materials because the chains become tangled with each other, creating more friction and connection points that resist pulling apart. Not quite. Longer polymer chains produce stronger materials. This is because long chains get tangled and intertwined, creating many points of contact that hold the material together, similar to how long strands of spaghetti tangle more than short pieces.
+
+---
+
+### Question 2
+
+How can the SAME base polymer be made into either a rigid plastic container or a flexible plastic wrap?
+
+A. By painting it different colors
+B. By adding chemical additives like plasticizers that change its flexibility
+C. By heating it to different temperatures during use
+D. They are actually made from completely different polymers
+
+Correct Answer: B
+
+Feedback: Correct! Chemical additives, especially plasticizers, can dramatically change a polymer's properties. Plasticizers insert between polymer chains, allowing them to slide more easily and making the material flexible. Not quite. Chemical additives like plasticizers can completely change a material's properties. Plasticizers work by inserting between polymer chains, allowing them to move more freely. This turns a rigid plastic into a flexible film without changing the base polymer.
+
+---
+
+### Question 3
+
+Why is it accurate to say that 'your sneakers are made of dinosaurs'?
+
+A. Scientists extract DNA from dinosaur bones to make plastic
+B. Sneaker materials come from petroleum, which formed from the remains of ancient organisms that lived alongside dinosaurs
+C. Dinosaur fossils are ground up to make rubber soles
+D. Sneakers are shaped like dinosaur feet for better grip
+
+Correct Answer: B
+
+Feedback: Correct! Petroleum formed from ancient organisms (plankton, algae, and other life from the dinosaur era) that were buried and transformed over millions of years. The synthetic materials in sneakers are manufactured from this petroleum. Not quite. Petroleum, the primary raw material for most plastics and synthetic materials in sneakers, formed from the remains of ancient organisms that lived during and before the age of dinosaurs. Over millions of years, those organisms became the oil we refine into plastics.
+
+---
+
+### Question 4
+
+A materials engineer needs a synthetic material that is both strong AND lightweight for airplane parts. Based on the model, which combination of properties should they target?
+
+A. Short polymer chains with maximum plasticizer additives
+B. Long polymer chains with optimal heat treatment and minimal heavy additives
+C. Maximum concentration of every additive available
+D. Short polymer chains with no heat treatment
+
+Correct Answer: B
+
+Feedback: Correct! Long polymer chains provide strength through tangling, optimal heat treatment organizes chains into strong crystalline structures, and minimizing heavy additives keeps the material lightweight. Not quite. For strong AND lightweight material: long polymer chains create strength through tangling, optimal heat treatment organizes chains into crystalline structures for additional strength, and avoiding heavy additives keeps the weight down.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -825,6 +825,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-PS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens to water when you pour it from a cup into a bowl?
+
+A. The water changes shape to match the bowl
+B. The water stays the same shape as the cup
+C. The water disappears
+D. The water gets heavier
+
+Correct Answer: A
+
+Feedback: That is right! Water is a liquid, so it flows and takes the shape of whatever container it is poured into. Water is a liquid. Liquids do not keep their shape. When you pour water into a new container, it changes to match the new shape.
+
+---
+
+### Question 2
+
+Which one is a liquid?
+
+A. A wooden block
+B. A rock
+C. Juice
+D. A crayon
+
+Correct Answer: C
+
+Feedback: Yes! Juice is a liquid because it flows and takes the shape of its container, just like water. A liquid is something that flows and takes the shape of its container. Juice flows just like water, so juice is a liquid.
+
+---
+
+### Question 3
+
+If you put a toy block into a different box, what happens to the block's shape?
+
+A. It melts into the new box
+B. It stays the same shape
+C. It gets bigger
+D. It turns into water
+
+Correct Answer: B
+
+Feedback: Correct! A block is a solid. Solids keep their own shape no matter where you put them. A toy block is a solid. Solids keep their own shape. No matter what box you put it in, the block stays the same shape.
+
+---
+
+### Question 4
+
+What is matter?
+
+A. Only things that are really heavy
+B. Anything you can touch or feel that takes up space
+C. Only things that are hard like rocks
+D. Only things you can see
+
+Correct Answer: B
+
+Feedback: That is right! Matter is anything you can touch or feel that takes up space. Water, air, wood, and even tiny grains of sand are all matter. Matter is not just heavy things or hard things. Matter is anything that takes up space and can be touched or felt, including liquids like water and gases like air.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+You pour the same water from a tall skinny cup into a wide flat bowl. What stays the same?
+
+A. The shape of the water
+B. The height of the water
+C. The amount of water
+D. Nothing stays the same
+
+Correct Answer: C
+
+Feedback: Correct! The shape and height change, but the amount of water stays the same. You still have the same water, just in a new shape. When you pour water into a new container, the shape and height change, but the amount of water stays exactly the same. No water is lost or gained.
+
+---
+
+### Question 2
+
+In the model, Container Shape is an external component. What does that mean?
+
+A. It changes on its own
+B. It is something we choose or control
+C. It is always the same
+D. It only works with water
+
+Correct Answer: B
+
+Feedback: Yes! An external component is something we choose or control. We pick which container to use before the experiment starts. External components are inputs that we choose or control. We decide which container to use (tall cup, flat bowl, round jar), so Container Shape is external.
+
+---
+
+### Question 3
+
+What is a property of a liquid?
+
+A. It keeps its own shape no matter where you put it
+B. It flows and takes the shape of its container
+C. It is always blue
+D. It is always cold
+
+Correct Answer: B
+
+Feedback: That is right! A key property of liquids is that they flow and take the shape of whatever container they are in. Liquids do not keep their own shape like solids do. A property of liquids is that they flow and take the shape of whatever container holds them.
+
+---
+
+### Question 4
+
+When the container gets wider, what happens to the water level?
+
+A. The water level goes up higher
+B. The water level stays exactly the same
+C. The water level goes down lower
+D. The water level disappears
+
+Correct Answer: C
+
+Feedback: Correct! When the container is wider, the same amount of water spreads out more, so the water level goes down. This is a negative relationship. When a container is wider, the same water spreads out across a bigger bottom. Since it spreads out, the water level gets lower. The amount of water has not changed, just how it is spread out.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

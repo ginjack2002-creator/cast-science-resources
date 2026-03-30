@@ -158,6 +158,156 @@ Wildlife Biologists study how animals like beavers change their environments. Th
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-3, 3-LS4-4, 3-5-ETS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a dam?
+
+A. A wall built across a stream that holds water back
+B. A type of boat that floats on water
+C. A hole dug into the ground to find water
+D. A bridge that lets animals cross a river
+
+Correct Answer: A
+
+Feedback: Correct! A dam is a wall built across a stream that holds water back and creates a pond. A dam is a wall built across a stream that holds water back. When a dam blocks flowing water, it creates a pond behind it.
+
+---
+
+### Question 2
+
+What do beavers use to build their dams?
+
+A. Rocks and sand only
+B. Trees, sticks, and mud
+C. Leaves and grass
+D. They do not build anything
+
+Correct Answer: B
+
+Feedback: That is right! Beavers use trees, sticks, and mud to build their dams across streams. Beavers are natural builders that use trees, sticks, and mud to construct their dams. They chew down trees with their strong teeth and drag them into the water.
+
+---
+
+### Question 3
+
+What do you think happens to a stream when something blocks the water?
+
+A. The water disappears completely
+B. The water flows faster downstream
+C. The water collects and forms a pond
+D. The water turns into ice
+
+Correct Answer: C
+
+Feedback: Yes! When something blocks a stream, water collects behind the blockage and forms a pond. When water is blocked, it does not disappear. Instead, it collects behind the blockage and forms a pond or lake.
+
+---
+
+### Question 4
+
+Why might other animals care about a beaver dam?
+
+A. Other animals are afraid of beaver dams
+B. The pond creates a new place for animals to live
+C. Other animals want to destroy the dam
+D. Other animals do not notice beaver dams at all
+
+Correct Answer: B
+
+Feedback: Correct! The pond created by a beaver dam becomes a new habitat where many animals like fish, frogs, and birds can live. Beaver dams are important to many animals because the pond they create becomes a new habitat. Fish, frogs, birds, and many other animals move in and make the pond their home.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Why are beavers called 'ecosystem engineers'?
+
+A. They wear hard hats when they work
+B. They change their environment by building dams that create new habitats
+C. They are the biggest animals in the forest
+D. They only build things for themselves
+
+Correct Answer: B
+
+Feedback: That is right! Beavers are called ecosystem engineers because their dam-building changes the whole environment, creating habitats for many other species. Beavers are called ecosystem engineers because they change their environment in big ways. Their dams create ponds that become habitats for fish, frogs, birds, and many other animals.
+
+---
+
+### Question 2
+
+In the model, what TWO things do beavers need to build a successful dam?
+
+A. Sunshine and wind
+B. Enough beaver family members AND enough trees
+C. Rocks and concrete
+D. Only lots of water
+
+Correct Answer: B
+
+Feedback: Correct! The model showed that beavers need both enough family members to do the work AND enough trees as building material. The model showed that beavers need TWO inputs to build a dam: enough beaver family members to do the building work AND enough trees to use as construction material. If either one is missing, the dam cannot grow.
+
+---
+
+### Question 3
+
+What happens in the model when there are many beavers but NO trees?
+
+A. The dam grows very large anyway
+B. The beavers use rocks instead
+C. The dam cannot grow because beavers need trees as building material
+D. The pond gets bigger without a dam
+
+Correct Answer: C
+
+Feedback: Yes! Even with many beavers, the dam cannot grow without trees. Both inputs are needed for the system to work. Without trees, even lots of beavers cannot build a dam. The model shows that BOTH inputs (beavers AND trees) must be present for the dam to grow and the pond to form.
+
+---
+
+### Question 4
+
+How does dam size affect pond size in the model?
+
+A. A bigger dam holds back more water, creating a bigger pond
+B. Dam size and pond size are not related
+C. A bigger dam makes the pond smaller
+D. Only rainfall affects pond size
+
+Correct Answer: A
+
+Feedback: Correct! In the model, a bigger dam holds back more water, which creates a bigger pond. This is a cause and effect relationship. In the model, dam size directly affects pond size. A bigger dam holds back more water, creating a bigger pond. This is a cause and effect relationship where one component influences another.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: A
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

@@ -936,6 +936,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Global food systems currently waste approximately one-third of all food produced. If this waste were eliminated, what would be the equivalent effect on agricultural land?
+
+A. It would be equivalent to increasing agricultural land by approximately 25% without any environmental cost
+B. It would have no measurable impact because waste occurs after food leaves the farm
+C. It would require doubling chemical fertilizer use to compensate for reduced composting
+D. It would increase water consumption because more food would need to be transported
+
+Correct Answer: A
+
+Feedback: Correct. Eliminating one-third of food waste is effectively equivalent to producing 33% more food from existing land, which translates to roughly a 25% increase in effective agricultural area without requiring deforestation, water use, or chemical inputs. Incorrect. Food waste represents enormous embedded resources. Reducing waste by one-third effectively increases the food available from existing agricultural land by about 25%, making it the single highest-leverage intervention in the food system.
+
+---
+
+### Question 2
+
+A farmer increases crop yields by applying maximum chemical fertilizers to a monoculture field for 20 years. Based on agricultural systems dynamics, what is the most likely long-term outcome?
+
+A. Yields continue increasing indefinitely as soil adapts to higher nutrient levels
+B. Soil degradation through nutrient depletion, loss of soil biology, and compaction leads to declining yields despite increasing inputs
+C. The soil becomes permanently improved and requires less fertilizer over time
+D. Monoculture farming has no negative effects on soil as long as fertilizer is applied
+
+Correct Answer: B
+
+Feedback: Correct. Intensive monoculture with chemical fertilizers degrades soil biology, structure, and organic matter over time. While short-term yields increase, long-term productivity declines as the soil loses its natural fertility, creating dependence on ever-increasing chemical inputs with diminishing returns. Incorrect. The key concept is that intensive farming mines soil health. Chemical fertilizers provide macronutrients but damage soil biology, structure, and organic matter. Over 20 years, this degradation reduces the soil's capacity to support crops, causing yields to plateau and eventually decline.
+
+---
+
+### Question 3
+
+Agriculture uses approximately 70% of global freshwater withdrawals. Which change in farming practice would have the greatest impact on reducing agricultural water demand?
+
+A. Replacing flood irrigation with drip irrigation systems
+B. Planting crops only during the rainy season
+C. Increasing pesticide application to reduce crop losses
+D. Converting all farms to hydroponic greenhouses
+
+Correct Answer: A
+
+Feedback: Correct. Flood irrigation wastes 40-60% of water through evaporation and runoff. Drip irrigation delivers water directly to plant roots with 90-95% efficiency. Because agriculture is the dominant water user, this single change has the largest potential impact on total freshwater demand. Incorrect. Since agriculture consumes 70% of freshwater, the most impactful change targets irrigation efficiency. Drip irrigation reduces water use by 40-60% compared to flood irrigation by delivering water directly to roots, making it the highest-impact intervention.
+
+---
+
+### Question 4
+
+The concept of carrying capacity in agricultural systems differs from simple population limits. Which factor makes carrying capacity a dynamic rather than fixed number?
+
+A. It depends only on total land area and cannot change
+B. It changes based on the sustainability of farming practices, distribution efficiency, and resource management
+C. It is determined exclusively by genetic modifications to crop species
+D. It remains constant regardless of how resources are managed
+
+Correct Answer: B
+
+Feedback: Correct. Agricultural carrying capacity is dynamic because it depends on how resources are managed. Sustainable practices maintain or increase it over time, while exploitative practices deplete soil and water, reducing it. Distribution efficiency also matters because food waste effectively lowers carrying capacity. Incorrect. Carrying capacity is not fixed. It depends on agricultural practices (sustainable vs. exploitative), resource management (water, soil), distribution efficiency (waste levels), and dietary choices. These human decisions make carrying capacity a moving target.
+
+---
+
+### Question 5
+
+Biodiversity in agricultural landscapes provides ecosystem services such as pollination, pest control, and soil health. What happens to these services under intensive monoculture farming?
+
+A. They increase because monoculture simplifies ecological interactions
+B. They decline as habitat loss and chemical use reduce populations of pollinators, predators, and soil organisms
+C. They remain unchanged because ecosystem services are provided by wild areas far from farms
+D. They are replaced entirely by chemical substitutes with no loss of function
+
+Correct Answer: B
+
+Feedback: Correct. Intensive monoculture eliminates the habitat diversity that supports beneficial organisms. Pollinators lose nesting sites, natural pest predators lose prey diversity, and soil organisms are killed by tillage and chemicals, undermining the ecosystem services that agriculture depends on. Incorrect. Ecosystem services require living organisms that depend on habitat within and around farms. Monoculture eliminates this habitat, while pesticides and tillage directly harm beneficial organisms. Chemical substitutes cannot fully replicate these complex biological services.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A food system model shows that industrial intensification increases yields by 30% in 5 years but decreases soil health index by 40% over 30 years. A student concludes that intensification is the best strategy because it produces more food. What critical flaw exists in this reasoning?
+
+A. The student is considering only the short-term output without accounting for the long-term decline in the system's productive capacity
+B. The student should focus on water use rather than soil health
+C. The 5-year data is unreliable compared to the 30-year data
+D. Soil health is unrelated to crop yield in modern agriculture
+
+Correct Answer: A
+
+Feedback: Correct. The student commits a temporal scale error by evaluating a long-term system using short-term data. The 30-year trajectory shows that the initial yield gains are unsustainable because they come at the cost of the soil health that ultimately determines productive capacity. Incorrect. The critical flaw is the mismatch in timescales. Short-term yield increases can mask long-term productive capacity loss. The soil health decline means that after 30 years, the system produces less food than it would have under sustainable management.
+
+---
+
+### Question 2
+
+A model shows that water availability becomes the binding constraint on food production before land runs out. Which evidence from the model would most strongly support this conclusion?
+
+A. Aquifer levels decline to economically non-pumpable depths while significant agricultural land remains available but unirrigable
+B. More land is converted to agriculture each year
+C. Crop prices increase due to transportation costs
+D. Population growth slows in water-scarce regions
+
+Correct Answer: A
+
+Feedback: Correct. If aquifers are depleted to the point where pumping is no longer economical while cultivable land still exists but cannot be farmed without irrigation, this directly demonstrates that water, not land, is the binding constraint on production capacity. Incorrect. The strongest evidence for water as the binding constraint would show that available land exists but cannot produce food due to water scarcity. Aquifer depletion rendering existing farmland unirrigable while potential cropland goes unused directly proves water is the limiting factor.
+
+---
+
+### Question 3
+
+The model demonstrates that sustainable intensification can theoretically feed 10 billion people on current agricultural land. Why does the word 'theoretically' represent an important qualification?
+
+A. Because the model uses inaccurate data about crop yields
+B. Because achieving this outcome requires fundamental transformation of farming practices, food distribution systems, and political-economic structures that face significant implementation barriers
+C. Because 10 billion people is an unrealistically high population projection
+D. Because sustainable farming always produces less food than industrial farming
+
+Correct Answer: B
+
+Feedback: Correct. The model shows biophysical feasibility, but real-world implementation requires transforming subsidies, supply chains, dietary patterns, trade policies, and land ownership structures. The gap between what is technically possible and what is politically achievable is the central challenge. Incorrect. The 'theoretical' qualification acknowledges the gap between biophysical capacity and real-world implementation. Feeding 10 billion sustainably is scientifically possible but requires political, economic, and social transformations that are far more challenging than the technical aspects.
+
+---
+
+### Question 4
+
+A student's model shows that combining waste reduction, soil regeneration, and biodiversity protection produces better long-term food security than any single intervention alone. Which systems concept does this demonstrate?
+
+A. Negative feedback loops always dominate positive feedback loops
+B. Interventions at multiple leverage points simultaneously produce synergistic effects greater than the sum of individual actions
+C. Complex systems are too unpredictable to model accurately
+D. Single interventions are always more cost-effective than combined approaches
+
+Correct Answer: B
+
+Feedback: Correct. This demonstrates synergy in complex systems. Waste reduction frees resources, healthy soil sustains yields, and biodiversity provides ecosystem services. These interventions reinforce each other, producing combined benefits that exceed what any single intervention could achieve alone. Incorrect. The model demonstrates synergistic effects. Multiple interventions targeting different leverage points in a complex system produce benefits that reinforce each other, yielding outcomes greater than the sum of individual actions. This is a fundamental property of complex adaptive systems.
+
+---
+
+### Question 5
+
+Based on the food system model, a policy advisor must choose where to invest limited resources. Which model finding provides the strongest evidence for prioritizing food waste reduction over agricultural land expansion?
+
+A. Land expansion produces immediate results while waste reduction takes decades to implement
+B. Waste reduction provides equivalent food availability gains without the environmental costs of deforestation, habitat loss, and soil degradation that come with land expansion
+C. Food waste only occurs in developed countries and is irrelevant globally
+D. Agricultural land expansion has no environmental consequences in most regions
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that reducing waste by 50% is equivalent to expanding farmland by 25%, but without deforestation, biodiversity loss, increased water demand, or soil degradation. The same food availability outcome with dramatically lower environmental cost makes waste reduction the superior investment. Incorrect. The model evidence shows waste reduction achieves comparable food availability gains to land expansion but without the associated environmental damage. This cost-benefit analysis, grounded in model data, provides the strongest evidence for prioritizing waste reduction.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: A
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -974,6 +974,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS2-8.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A virus has a basic reproduction number (R0) of 4. Which statement most accurately describes what this means for pandemic dynamics?
+
+A. Each infected person will infect exactly 4 others, regardless of interventions or population immunity
+B. In a fully susceptible population with no interventions, each infected person will transmit to an average of 4 others, creating exponential growth
+C. The virus will infect 4% of the population before the pandemic ends
+D. The virus mutates 4 times faster than seasonal influenza
+
+Correct Answer: B
+
+Feedback: Correct. R0 represents the average number of secondary infections in a completely susceptible population with no interventions. It describes the maximum transmission potential, not a fixed outcome. Interventions, immunity, and behavior can reduce the effective reproduction number below R0. R0 is an average in ideal conditions (fully susceptible population, no interventions), not a fixed number of infections per person. It describes the virus's inherent transmission potential, which can be modified by interventions, immunity, and behavioral changes.
+
+---
+
+### Question 2
+
+The herd immunity threshold for a disease with R0 = 5 is calculated as 1 - (1/R0). What does this threshold represent and what is its value?
+
+A. 60% of the population must be infected before the disease stops spreading
+B. 80% of the population must be immune (through vaccination or prior infection) to prevent sustained transmission
+C. 20% of the population is naturally resistant to the disease
+D. 50% vaccination coverage is sufficient to eliminate the disease entirely
+
+Correct Answer: B
+
+Feedback: Correct. The herd immunity threshold = 1 - (1/5) = 0.80, meaning 80% of the population must be immune to prevent sustained transmission. At this level, each infected person encounters enough immune individuals that the effective reproduction number drops below 1, and chains of transmission die out. Apply the formula: 1 - (1/R0) = 1 - (1/5) = 1 - 0.2 = 0.8 = 80%. This means 80% of the population must be immune to reduce the effective reproduction number below 1 and stop sustained transmission.
+
+---
+
+### Question 3
+
+During the early weeks of a pandemic, the number of confirmed cases appears to be growing slowly. A public health official argues that aggressive intervention is unnecessary because case counts are still low. Which scientific principle most directly undermines this argument?
+
+A. Correlation does not equal causation, so low case counts do not indicate low transmission
+B. Exponential growth is deceptively slow initially but accelerates dramatically, meaning the window for effective intervention closes before the threat becomes visually apparent
+C. Pandemics always resolve on their own through natural immunity without intervention
+D. Testing capacity is always insufficient early in a pandemic, so reported cases are meaningless
+
+Correct Answer: B
+
+Feedback: Correct. Exponential growth starts slowly: 2, 4, 8, 16, 32 cases appear manageable. But the same doubling time that produces 32 cases in week 5 produces 32,000 cases by week 15. By the time the pandemic is visibly severe, the mathematical trajectory is already set and intervention becomes far more costly and less effective. The critical insight is about exponential mathematics. When cases double every few days, the early phase looks manageable (2, 4, 8, 16) but the same growth rate quickly becomes overwhelming. By the time the problem is visible, the opportunity for cost-effective intervention has passed.
+
+---
+
+### Question 4
+
+A superspreader event occurs when a single infected individual transmits to many more people than the average R0 predicts. Which factor most directly enables superspreader events?
+
+A. The infected individual has a genetically mutated strain that is inherently more transmissible
+B. A combination of individual variation in viral shedding and environmental conditions such as crowded, poorly ventilated indoor spaces
+C. The individual deliberately spreads the disease by refusing to stay home
+D. Superspreader events only occur with bacterial diseases, not viral diseases
+
+Correct Answer: B
+
+Feedback: Correct. Superspreader events result from the convergence of biological factors (some individuals shed far more virus than average) and environmental conditions (crowded indoor spaces with poor ventilation maximize airborne transmission). This individual variation in infectiousness means that a small number of transmission events drive a disproportionate fraction of total spread. Superspreading is driven by the combination of biological variation (some individuals shed much more virus than others) and environmental conditions (crowded, enclosed, poorly ventilated spaces). It is not about deliberate behavior or specific pathogen types.
+
+---
+
+### Question 5
+
+When a pandemic overwhelms healthcare system capacity, mortality rates increase for reasons beyond the pandemic disease itself. Which explanation best captures this effect?
+
+A. Hospitals raise prices when demand is high, preventing patients from affording treatment
+B. When ICU beds, ventilators, and trained staff are consumed by pandemic patients, individuals with heart attacks, strokes, injuries, and other conditions cannot receive standard care, increasing deaths from all causes
+C. Overwhelmed healthcare workers transmit the disease to non-pandemic patients through poor hygiene
+D. Hospital buildings deteriorate physically when overused, creating unsafe conditions for all patients
+
+Correct Answer: B
+
+Feedback: Correct. Healthcare capacity is a mortality multiplier. When beds, ventilators, staff, and surgical capacity are consumed by pandemic patients, people experiencing heart attacks, strokes, accidents, cancer complications, and other conditions cannot receive timely treatment. The true death toll includes both direct pandemic deaths and indirect excess mortality from untreated conditions. The key concept is that hospital resources are finite and shared. When pandemic patients consume all ICU beds, ventilators, and staff time, patients with heart attacks, strokes, and other emergencies cannot receive standard care. This makes healthcare capacity a mortality multiplier for ALL causes of death.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that implementing social distancing (reducing Contact Rate by 50%) when R0 = 3 reduces the effective reproduction number to 1.5 but does not stop exponential growth. Which additional intervention does the model suggest is needed?
+
+A. Only a complete lockdown with zero contact can stop the pandemic
+B. A combination of additional interventions (testing, quarantine, and eventually vaccination) must work together with social distancing to push the effective R0 below 1
+C. Social distancing should be abandoned since it does not eliminate spread entirely
+D. Increasing hospital capacity is more important than reducing transmission
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that no single intervention is sufficient when R0 is high. Social distancing reduces R0 from 3 to 1.5, but further reduction below 1 requires layered interventions: testing and quarantine remove infectious individuals from the transmission chain, masks reduce per-contact transmission probability, and vaccination reduces the susceptible population. These interventions are multiplicative, not additive. An effective R0 of 1.5 still produces exponential growth, just more slowly. The model shows that multiple layered interventions are needed to push the effective R0 below 1. Social distancing, testing, quarantine, and vaccination work multiplicatively together.
+
+---
+
+### Question 2
+
+The model reveals that intervening 2 weeks after the first case prevents significantly more deaths than intervening 6 weeks later with identical measures. A student claims this is because 'the virus gets weaker over time.' What is the correct systems-level explanation?
+
+A. Early intervention prevents more deaths because exponential growth means each day of delay doubles or triples the infected population, making the same intervention far less effective against a larger epidemic
+B. The virus evolves to become less deadly over the 4-week delay period
+C. Healthcare workers are more motivated to help during the early phase of a pandemic
+D. Early interventions are more effective because the government has more funding available at the start of a pandemic
+
+Correct Answer: A
+
+Feedback: Correct. With exponential growth and a doubling time of a few days, a 4-week delay means the infected population is orders of magnitude larger. Social distancing that could have contained 1,000 cases at week 2 now faces 100,000+ cases at week 6. The intervention is identical, but the epidemic it must contain has grown exponentially, making it far less effective at reducing total mortality. The explanation is purely mathematical. Exponential growth means each day of delay allows the infected population to multiply. After 4 additional weeks of unchecked growth with a 3-day doubling time, the infected population may be 10,000 times larger, making identical interventions far less effective.
+
+---
+
+### Question 3
+
+A variant emerges at week 20 that partially evades existing immunity, raising the effective R0 from 0.8 (below threshold) back to 1.4 in a population that was approaching herd immunity. What does this reveal about herd immunity as a concept?
+
+A. Herd immunity is a myth because it can never be achieved
+B. Herd immunity is a moving target: variants that increase transmissibility or evade immunity raise the threshold and can reset the susceptible population, enabling new waves
+C. The concept of herd immunity only applies to bacterial diseases, not viral diseases
+D. The variant will quickly die out because most of the population is already immune
+
+Correct Answer: B
+
+Feedback: Correct. Herd immunity is not a fixed threshold but depends on the effective R0, which changes when variants alter transmissibility or immune evasion. A variant that partially escapes existing immunity effectively increases the susceptible population, while increased transmissibility raises the herd immunity threshold. This explains why pandemics can have multiple waves even with high vaccination rates. Consider what determines the herd immunity threshold: it depends on R0 (1 - 1/R0). When a variant increases transmissibility or evades immunity, it effectively changes the R0 that governs the threshold and resets part of the susceptible population. This makes herd immunity a moving target.
+
+---
+
+### Question 4
+
+Adding a 'Misinformation Spread Rate' component to the model reveals that it reduces both Vaccination Coverage Rate and Quarantine Compliance. Through which mechanism does misinformation most significantly increase Cumulative Mortality in the model?
+
+A. Misinformation directly increases the virus's biological transmissibility
+B. Misinformation reduces the effectiveness of every behavioral intervention simultaneously by undermining the public trust required for compliance, creating a systemic multiplier effect on mortality
+C. People who believe misinformation have weaker immune systems due to stress
+D. Misinformation only affects vaccination rates, not any other intervention
+
+Correct Answer: B
+
+Feedback: Correct. Misinformation acts as a systemic amplifier because it simultaneously reduces compliance with multiple interventions: vaccination, quarantine, masking, and social distancing. By eroding trust in public health authorities, it undermines the behavioral changes that all non-pharmaceutical interventions depend on, creating a multiplicative effect on transmission that no single medical countermeasure can overcome. Misinformation does not change the virus itself. Its power lies in simultaneously undermining multiple behavioral interventions: people are less likely to vaccinate, quarantine, mask, or distance when they distrust public health guidance. This creates a systemic multiplier because all interventions depend on public compliance.
+
+---
+
+### Question 5
+
+The model shows that Economic Impact Index and Cumulative Mortality have a complex, non-linear relationship: both zero intervention and maximum intervention produce poor economic outcomes. What systems concept explains this pattern?
+
+A. Diminishing returns, where each additional intervention costs more but saves fewer lives
+B. An optimization trade-off where moderate, well-timed interventions minimize combined health and economic damage, because uncontrolled spread devastates the economy through illness and death while excessive restrictions devastate it through shutdown
+C. Economic factors are independent of pandemic dynamics and should not be included in the model
+D. Maximum intervention always produces the best economic outcome because healthy workers are productive workers
+
+Correct Answer: B
+
+Feedback: Correct. This is an optimization problem with competing pressures. No intervention allows uncontrolled spread that causes mass illness, death, healthcare collapse, and economic devastation through workforce loss. Maximum sustained restriction prevents spread but causes economic devastation through business closure and unemployment. The model reveals that moderate, well-timed interventions minimize the combined health-economic damage curve. Consider the costs at both extremes. No intervention means mass illness, workforce loss, healthcare collapse, and economic devastation. Maximum restriction means business closure, unemployment, and economic devastation. The optimal outcome lies in well-timed, moderate interventions that minimize the sum of health and economic damage.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: A
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

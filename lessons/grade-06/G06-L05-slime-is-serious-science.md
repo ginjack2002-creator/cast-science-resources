@@ -881,6 +881,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-PS1-1, MS-PS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the smallest particle of a compound that still has the properties of that compound?
+
+A. An atom
+B. A molecule
+C. A cell
+D. An electron
+
+Correct Answer: B
+
+Feedback: Correct! A molecule is the smallest unit of a compound. It consists of two or more atoms bonded together in a specific arrangement. Not quite. A molecule is the smallest particle of a compound that retains the compound's properties. Atoms are the building blocks of molecules, but a single atom isn't the compound itself.
+
+---
+
+### Question 2
+
+Why do you think honey flows more slowly than water?
+
+A. Honey is heavier than water
+B. Honey is colder than water
+C. Honey has a thicker consistency because its molecules resist flowing
+D. Honey sticks to the container walls more
+
+Correct Answer: C
+
+Feedback: Correct! Honey has higher viscosity than water. Its larger, more complex molecules are tangled together and resist flowing past each other. Not quite. Honey flows slowly because it has high viscosity, meaning its molecules resist flowing. The large, complex sugar molecules in honey interact with each other and create resistance to flow.
+
+---
+
+### Question 3
+
+What happens to most substances when they are heated?
+
+A. They get heavier
+B. They flow more easily and may change state
+C. They get harder and more rigid
+D. Nothing happens unless chemicals are added
+
+Correct Answer: B
+
+Feedback: Correct! Heating gives molecules more energy, making them move faster. This causes substances to flow more easily and can cause state changes like melting or boiling. Not quite. When substances are heated, their molecules move faster with more energy. This generally makes solids softer and liquids flow more easily, and can cause changes of state.
+
+---
+
+### Question 4
+
+Is slime a solid or a liquid?
+
+A. It is a solid because you can hold it
+B. It is a liquid because it can flow and drip
+C. It can behave like both a solid and a liquid depending on the force applied
+D. It is a gas trapped inside a liquid
+
+Correct Answer: C
+
+Feedback: Correct! Slime is a non-Newtonian fluid. It acts solid when you squeeze it quickly but flows like a liquid when you let it sit. Its behavior depends on the force applied. Not quite. Slime is a special type of material called a non-Newtonian fluid. It behaves like a solid under quick force (squeezing) but flows like a liquid when force is gentle or absent.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Why does slime act like a solid when you squeeze it quickly but flow like a liquid when left alone?
+
+A. Slime contains both solid and liquid particles mixed together
+B. Quick force tangles the polymer chains, making them lock up; slow force lets chains slide past each other
+C. Squeezing heats the slime and changes its state of matter
+D. The glue in slime hardens when touched and melts when released
+
+Correct Answer: B
+
+Feedback: Correct! Slime is made of long polymer chains. Rapid force tangles the chains so they resist movement (solid-like), but slow force or no force lets the chains slide past each other (liquid-like). Not quite. Slime's behavior comes from its polymer chains. When force is applied quickly, the long chains tangle and lock up, resisting flow. When left alone, the chains slowly slide past each other, allowing the slime to flow.
+
+---
+
+### Question 2
+
+In the molecular model, what happens when Concentration is increased from 20% to 90%?
+
+A. The substance becomes more transparent
+B. The substance flows more easily because molecules are closer together
+C. The substance becomes thicker and more resistant to flow as more polymer chains interact
+D. Temperature increases because more molecules create friction
+
+Correct Answer: C
+
+Feedback: Correct! Higher concentration means more polymer chains in the mixture. More chains means more tangling and interaction between molecules, making the substance thicker and more viscous. Not quite. Increasing concentration packs more polymer chains into the mixture. With more chains present, there are more opportunities for tangling and interaction, which increases viscosity and makes the substance thicker.
+
+---
+
+### Question 3
+
+How does increasing Temperature affect the viscosity of a polymer substance?
+
+A. Higher temperature makes the substance thicker
+B. Higher temperature has no effect on viscosity
+C. Higher temperature loosens molecular bonds, making the substance flow more easily
+D. Higher temperature causes polymer chains to grow longer
+
+Correct Answer: C
+
+Feedback: Correct! Higher temperature gives molecules more kinetic energy, causing them to vibrate and move faster. This loosens the bonds between polymer chains, reducing viscosity and making the substance flow more easily. Not quite. Temperature increases molecular movement. When molecules vibrate faster, the bonds between polymer chains loosen, reducing the substance's viscosity (thickness) and allowing it to flow more easily.
+
+---
+
+### Question 4
+
+A toy designer wants to create a slime that is very stretchy but does not flow when set on a table. Which model settings would best achieve this?
+
+A. Short polymer chains, low concentration, high temperature
+B. Long polymer chains, moderate concentration, moderate bond strength
+C. Short polymer chains, maximum concentration, maximum bond strength
+D. Long polymer chains, low concentration, low bond strength
+
+Correct Answer: B
+
+Feedback: Correct! Long polymer chains allow stretching, moderate concentration provides structure without being rigid, and moderate bond strength lets chains slide slowly (stretchy) without flowing freely. Not quite. For stretchiness, you need long polymer chains that can extend. Moderate concentration and bond strength give the slime enough structure to hold its shape on a table while still being flexible enough to stretch.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

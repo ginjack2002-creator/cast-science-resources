@@ -886,6 +886,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS2-3, HS-PS3-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A magnet attracts a steel paperclip from a distance without touching it. What mediates this force between the two objects?
+
+A. Air molecules carry the magnetic force between the objects.
+B. A magnetic field, which is a physical entity that fills the space around the magnet.
+C. Static electricity builds up on both objects, creating attraction.
+D. Gravity pulls the lighter object toward the heavier magnet.
+
+Correct Answer: B
+
+Feedback: Correct. Magnetic force is mediated by the magnetic field, a real physical entity that exists in the space around every magnet. It carries energy and exerts forces on ferromagnetic materials within it. Incorrect. Magnetic attraction is mediated by the magnetic field, an invisible but real physical entity that fills space around magnets. It is not carried by air, electricity, or gravity.
+
+---
+
+### Question 2
+
+A student places a magnet on one side of a wooden table and a paperclip on the other side directly below. The paperclip sticks to the underside of the table. What does this demonstrate about magnetic fields?
+
+A. The magnet's field is strong enough to physically penetrate and weaken the wood.
+B. Wood is a magnetic material that transmits the force.
+C. Magnetic fields pass through non-ferromagnetic materials like wood with virtually no reduction.
+D. The magnet creates a gravitational effect that attracts the paperclip through the table.
+
+Correct Answer: C
+
+Feedback: Correct. Non-ferromagnetic materials (wood, plastic, glass, air) do not interact with magnetic fields. The field passes through them as if they were not present, maintaining its ability to exert force on ferromagnetic objects. Incorrect. Magnetic fields pass through non-ferromagnetic materials (wood, plastic, glass) with negligible interaction. The field does not need to 'penetrate' the material; the material is effectively invisible to it.
+
+---
+
+### Question 3
+
+When you move a magnet closer to a piece of iron, the attractive force increases dramatically. Which mathematical relationship best describes how magnetic force changes with distance?
+
+A. Force decreases linearly with distance.
+B. Force decreases with the square of distance (inverse square law).
+C. Force decreases with the cube of distance for magnetic dipoles (even steeper than inverse square).
+D. Force remains constant regardless of distance until contact is lost.
+
+Correct Answer: C
+
+Feedback: Correct. For magnetic dipoles (bar magnets), force decreases approximately as 1/r^3. Doubling the distance reduces force to about 1/8, explaining the dramatic 'grab' effect when magnets are very close. Incorrect. Magnetic dipole force follows an inverse cube relationship (F proportional to 1/r^3), which is even steeper than gravity's inverse square law. This is why magnetic force seems to suddenly 'turn on' at close range.
+
+---
+
+### Question 4
+
+Which of the following materials would MOST effectively block a magnetic field from reaching an object on the other side?
+
+A. A thick sheet of glass.
+B. A sheet of aluminum foil.
+C. A thick steel plate.
+D. A sheet of plastic.
+
+Correct Answer: C
+
+Feedback: Correct. Steel is ferromagnetic, meaning its atomic magnetic domains interact with and redirect the external field. A thick steel plate absorbs the field, preventing it from reaching objects behind it. Incorrect. Only ferromagnetic materials (iron, steel, nickel, cobalt) interact with and redirect magnetic fields. Glass, aluminum, and plastic are non-ferromagnetic and allow fields to pass through freely.
+
+---
+
+### Question 5
+
+When a magnet accelerates a paperclip toward it, the paperclip gains kinetic energy. Where does this energy come from?
+
+A. The magnet converts its own mass into energy.
+B. Energy stored in the magnetic field converts to kinetic energy of the moving paperclip.
+C. The paperclip's thermal energy converts to kinetic energy.
+D. Energy is created from nothing by the magnetic force.
+
+Correct Answer: B
+
+Feedback: Correct. The magnetic field contains real, measurable energy. When a ferromagnetic object moves to a lower-energy field configuration, the difference in field energy converts to the object's kinetic energy. Incorrect. Magnetic fields store real energy (proportional to B^2). When a paperclip moves closer to a magnet, the system moves to a lower-energy configuration, and the released field energy becomes the paperclip's kinetic energy.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The model shows that a 3 mm plastic phone case reduces magnetic force by only 15-25%, while a 3 mm iron plate reduces it dramatically. Which model principle explains this difference?
+
+A. Plastic is thinner than iron at the molecular level.
+B. The force reduction through plastic is due only to the additional 3 mm of distance, while iron actively interacts with and redirects the field, shielding the target.
+C. Iron is heavier than plastic, so it blocks more of the magnetic field through gravity.
+D. The model shows that all materials reduce magnetic force equally at the same thickness.
+
+Correct Answer: B
+
+Feedback: Correct. The model distinguishes between 'transparent' materials (plastic adds only distance) and 'opaque' materials (iron's ferromagnetic domains interact with and redirect the field). The mechanism of force reduction is fundamentally different. Incorrect. The model reveals two distinct mechanisms: plastic is magnetically transparent (force reduction comes only from added distance), while iron is ferromagnetic and actively redirects the field away from the target.
+
+---
+
+### Question 2
+
+The Distance Falloff scenario shows that force drops from 5 N at 1 mm to 0.005 N at 10 mm. Which statement best interprets this model result?
+
+A. The magnet is defective because it loses its magnetism quickly.
+B. The inverse cube relationship means a 10x increase in distance produces approximately a 1,000x decrease in force, creating a sharp apparent boundary between 'magnetic' and 'non-magnetic' zones.
+C. Air resistance reduces the magnetic force at greater distances.
+D. The model is unrealistic because real magnets maintain constant force.
+
+Correct Answer: B
+
+Feedback: Correct. The inverse cube law (F proportional to 1/r^3) produces the dramatic result: 10^3 = 1,000-fold decrease. This explains the common perception that magnets have a sharp 'range' when the falloff is actually continuous but extremely steep. Incorrect. The model correctly demonstrates the inverse cube relationship. A 10x distance increase produces a 1,000x force decrease (10^3). The magnet is not weakening; the field follows this steep mathematical decay at all distances.
+
+---
+
+### Question 3
+
+The model includes an Energy Stored in Field component. A student asks whether this energy is 'real' or just mathematical. Which model evidence best demonstrates that field energy is physically real?
+
+A. The field lines are visible when iron filings are sprinkled around a magnet.
+B. When a paperclip accelerates toward a magnet, the kinetic energy it gains exactly equals the decrease in field energy, demonstrating energy conservation.
+C. The magnet maintains its field for a very long time without external energy.
+D. The field equation (B^2/2mu_0) produces a number with energy units.
+
+Correct Answer: B
+
+Feedback: Correct. Energy conservation provides the strongest evidence: the paperclip's kinetic energy gain exactly matches the field's energy decrease. This measurable, quantitative energy exchange proves the field energy is physically real, not just mathematical. Incorrect. The most compelling evidence is energy conservation: the kinetic energy gained by the moving paperclip precisely equals the energy lost from the magnetic field. This quantitative energy exchange proves field energy is physically real.
+
+---
+
+### Question 4
+
+An engineer is designing a magnetic phone mount. The model shows that shear force (sliding) requires much less force to overcome than pull force (pulling straight apart). How should this inform the mount design?
+
+A. Design the mount so the phone must be pulled straight off, providing maximum security.
+B. Design the mount so the phone slides off sideways for easy one-handed removal, while the strong normal (pull) force provides secure holding during driving.
+C. Use the weakest possible magnets so the phone can be removed easily.
+D. This information is irrelevant to mount design.
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that shear and pull forces differ significantly for the same magnet. Engineering the removal direction (sliding rather than pulling) allows strong holding force while maintaining easy detachment. Incorrect. The model's distinction between shear and pull forces is a critical engineering insight. Strong normal force provides secure holding during bumps and turns, while lower shear force allows easy one-handed sliding removal.
+
+---
+
+### Question 5
+
+Based on the model, a student claims that magnets will eventually 'run out' of energy because they keep attracting things. Which model concept directly refutes this claim?
+
+A. The model shows that magnets slowly weaken with each use.
+B. The magnetic field is a property of the material's electron spin structure, not a consumable energy source. After each attraction event, the system can be reset by separating the objects, which restores the field energy.
+C. Magnets absorb energy from sunlight to recharge their fields.
+D. The model does not address whether magnets run out of energy.
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that magnetic fields arise from the quantum mechanical spin of electrons, an intrinsic material property. When objects are separated, energy is put back into the field. The field is a property, not a fuel. Incorrect. Magnetism is an intrinsic property of the material's atomic structure (electron spin), not a stored fuel. Pulling objects apart restores the field energy. Under normal conditions, permanent magnets lose less than 1% of field strength per century.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: C
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -728,6 +728,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-PS4-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Can you see through a window?
+
+A. Yes, you can see through it
+B. No, you cannot see through it
+C. Only at night
+
+Correct Answer: A
+
+Feedback: Yes! Windows are clear, so light goes right through them. Think about looking out a window. You can see outside because light passes through the glass.
+
+---
+
+### Question 2
+
+What happens when you shine a light on a book?
+
+A. The light goes through the book
+B. The light is blocked by the book
+C. The book disappears
+
+Correct Answer: B
+
+Feedback: That is right! A book blocks the light because you cannot see through it. A book is solid and thick. Light cannot pass through it, so the light is blocked.
+
+---
+
+### Question 3
+
+Which one can you see through?
+
+A. A brick wall
+B. A clear water bottle
+C. A wooden door
+
+Correct Answer: B
+
+Feedback: Yes! A clear water bottle lets light through so you can see what is inside. Clear things like water bottles let light pass through. Walls and doors block the light.
+
+---
+
+### Question 4
+
+Why can you NOT see through a wall?
+
+A. The wall is too tall
+B. Light cannot go through the wall
+C. Your eyes are closed
+
+Correct Answer: B
+
+Feedback: That is right! Walls block all the light, so you cannot see through them. Walls are made of solid material that stops light from passing through.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What does the word transparent mean?
+
+A. You cannot see through it
+B. You can see through it clearly
+C. It is very dark
+
+Correct Answer: B
+
+Feedback: Yes! Transparent means light passes through and you can see clearly, like a window. Transparent means you can see right through it, like clear glass or plastic wrap.
+
+---
+
+### Question 2
+
+Wax paper lets some light through but things look blurry. What is wax paper?
+
+A. Transparent
+B. Opaque
+C. Translucent
+
+Correct Answer: C
+
+Feedback: That is right! Translucent means some light gets through but things look blurry. When some light passes through but you cannot see clearly, the material is translucent.
+
+---
+
+### Question 3
+
+A piece of cardboard blocks ALL the light. What is cardboard?
+
+A. Transparent
+B. Opaque
+C. Translucent
+
+Correct Answer: B
+
+Feedback: Yes! Opaque means no light gets through at all. When a material blocks all the light, it is called opaque. You cannot see through it.
+
+---
+
+### Question 4
+
+When the material is more clear, what happens to the light passing through?
+
+A. Less light gets through
+B. No light gets through
+C. More light gets through
+
+Correct Answer: C
+
+Feedback: That is right! Clearer materials let more light pass through. The clearer a material is, the more light can travel through it.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |

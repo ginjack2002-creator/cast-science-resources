@@ -157,6 +157,156 @@ Environmental Ethicists and Science Policy Advisors help governments and organiz
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ETS1-1, HS-ETS1-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+When scientists discover a new technology that could help the environment, should they always use it right away?
+
+A. Yes, if it could help, they should use it immediately
+B. No, they should first consider whether it might cause new problems
+C. It does not matter because technology always works perfectly
+D. Scientists should never use technology on the environment
+
+Correct Answer: B
+
+Feedback: Correct! Before using a new technology, scientists should carefully consider whether it might cause unintended negative consequences. Before using any technology, especially in the environment, scientists must think carefully about whether it could cause new problems. Good intentions do not guarantee good outcomes.
+
+---
+
+### Question 2
+
+What does 'risk assessment' mean?
+
+A. Deciding how much money something will cost
+B. Carefully evaluating what could go wrong before taking action
+C. Testing how fast something can move
+D. Asking your friends what they think
+
+Correct Answer: B
+
+Feedback: Yes! Risk assessment means carefully evaluating potential negative outcomes before taking action. It is a critical step in responsible decision-making. Risk assessment is the process of carefully evaluating what could go wrong before taking action. Scientists and engineers use risk assessment to weigh potential benefits against potential harm.
+
+---
+
+### Question 3
+
+What are 'unintended consequences'?
+
+A. Results that you planned for and expected
+B. Unexpected negative outcomes from an action that was meant to help
+C. Consequences that do not actually happen
+D. Positive results that always follow good decisions
+
+Correct Answer: B
+
+Feedback: Correct! Unintended consequences are unexpected negative outcomes that happen as a result of an action meant to be helpful. Unintended consequences are unexpected negative results that come from actions meant to help. For example, introducing a new animal to control pests might cause that animal to harm native species too.
+
+---
+
+### Question 4
+
+Should decisions about the environment be based on feelings or on scientific evidence?
+
+A. Only on feelings because science is too complicated
+B. Only on evidence because feelings never matter
+C. Primarily on evidence, but values and ethics also play a role
+D. On whatever the majority votes for
+
+Correct Answer: C
+
+Feedback: Yes! Environmental decisions should be based primarily on scientific evidence, but values, ethics, and community input also matter in making responsible choices. Environmental decisions work best when they are based on scientific evidence combined with ethical reasoning. Evidence tells us what will happen; ethics helps us decide what should happen. Both matter.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, what THREE factors determine whether an environmental intervention is justified?
+
+A. Cost, speed, and popularity
+B. Problem severity, solution risk, and available evidence
+C. Location, season, and weather
+D. Number of scientists, amount of funding, and public opinion
+
+Correct Answer: B
+
+Feedback: Correct! The model showed that problem severity, solution risk, and available evidence are the three key inputs that determine whether intervention makes sense. The model identified three critical inputs: how severe the problem is, how risky the proposed solution is, and how strong the scientific evidence supporting the solution is. All three must be considered together.
+
+---
+
+### Question 2
+
+What did the model show when problem severity was high, solution risk was high, and evidence was moderate?
+
+A. The answer was clearly 'yes, intervene'
+B. The answer was clearly 'no, do not intervene'
+C. It was a hard call because the factors conflicted with each other
+D. The model could not produce any result
+
+Correct Answer: C
+
+Feedback: Yes! This was a 'hard call' scenario. The severe problem pushes toward action, but the high risk and only moderate evidence create genuine uncertainty. When factors conflict (severe problem pushing for action, high risk pushing against it, moderate evidence), the model shows a 'hard call.' Most real-world ethical decisions fall in this gray area where the answer is not obvious.
+
+---
+
+### Question 3
+
+According to the model, what is the main limitation of using computational models for ethical decisions?
+
+A. Models are too slow to be useful
+B. Models can show all the factors clearly but cannot tell us what is morally right
+C. Models always give wrong answers about ethics
+D. Models can only work with environmental problems
+
+Correct Answer: B
+
+Feedback: Correct! Models are powerful tools for seeing all the factors clearly, but they cannot determine what is morally right. That judgment requires human reasoning and ethical values. Models help us see the factors and tradeoffs clearly, but they cannot make moral judgments for us. Science tells us what WILL happen; ethics tells us what SHOULD happen. Models inform ethical decisions but cannot replace human moral reasoning.
+
+---
+
+### Question 4
+
+What did the model reveal about when ethical decisions are easiest vs. hardest?
+
+A. Ethical decisions are always equally difficult
+B. Decisions are easy when all factors align (severe problem, safe fix, strong evidence) and hard when factors conflict
+C. Decisions are easy when you have a lot of money
+D. Decisions are hard only when you do not have a computer model
+
+Correct Answer: B
+
+Feedback: That is right! Ethical decisions are straightforward when all factors point the same direction, but they become genuinely difficult when factors pull in opposing directions. The model showed that decisions are easy when all factors align (severe problem, safe solution, strong evidence). They become truly difficult when factors conflict, like a very severe problem with a very risky solution. Most real-world decisions fall in the 'hard call' zone.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

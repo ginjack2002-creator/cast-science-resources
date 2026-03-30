@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-ESS2-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Can you see wind?
+
+A. Yes, wind is blue
+B. Yes, wind looks like white lines
+C. No, but you can feel it and see what it does
+D. No, and wind does not do anything
+
+Correct Answer: C
+
+Feedback: That is right! You cannot see wind because air is invisible, but you can feel it on your skin and see what it does, like blowing leaves and waving flags. Wind is invisible because air is invisible. But we can tell wind is there by feeling it on our skin and watching what it does, like moving tree branches, blowing leaves, and making flags wave.
+
+---
+
+### Question 2
+
+What is wind?
+
+A. Water falling from the sky
+B. Moving air
+C. A type of cloud
+D. Heat from the sun
+
+Correct Answer: B
+
+Feedback: Yes! Wind is simply air that is moving from one place to another. When air flows, we feel it as wind. Wind is moving air. When air flows from one place to another, we feel it as wind. A gentle flow is a breeze, and a strong flow is a gust.
+
+---
+
+### Question 3
+
+What do you think makes the air start moving?
+
+A. Giant fans hidden in the sky
+B. The moon pushing the air
+C. The sun heating the ground
+D. Animals running around
+
+Correct Answer: C
+
+Feedback: Correct! The sun heats the ground, which warms the air above it. That warm air rises and cooler air rushes in to take its place, creating wind. The sun heats the ground unevenly. Some spots get hotter than others. The warm air above hot spots rises, and cooler air rushes in to fill the space. That moving air is wind.
+
+---
+
+### Question 4
+
+On which day would you expect more wind?
+
+A. A hot sunny day at the beach
+B. A cool, cloudy day with even temperatures everywhere
+C. A day with no sun at all
+D. Wind is always the same every day
+
+Correct Answer: A
+
+Feedback: That is right! At the beach on a hot day, the sand heats up while the water stays cool. This temperature difference creates a breeze. Wind happens when there are temperature differences. At a hot beach, the sand gets hot while the water stays cool. This big temperature difference makes air move, creating a breeze.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What causes wind?
+
+A. The moon pulls on the air
+B. The sun heats the ground unevenly, warm air rises, and cool air rushes in
+C. Clouds push the air down
+D. Trees blow the air around with their branches
+
+Correct Answer: B
+
+Feedback: Yes! The sun heats the ground unevenly. Warm air rises because it is lighter, and cooler air rushes in to take its place. That rushing air is wind. Wind is caused by the sun heating the ground unevenly. The air above hot spots warms up and rises. Then cooler air from nearby rushes in to fill the empty space. That moving air is what we feel as wind.
+
+---
+
+### Question 2
+
+In our model, what is the relationship between Sun Heating and Air Movement?
+
+A. Negative: more sun heating means less air movement
+B. No relationship at all
+C. Positive: more sun heating means more air movement
+D. The sun does not affect air movement
+
+Correct Answer: C
+
+Feedback: Correct! It is a positive relationship. More sun heating warms the ground more, which makes the air above it rise faster, causing more air movement and stronger wind. More sun heating creates a bigger temperature difference between warm and cool areas. This makes the air move more, creating stronger wind. So it is a positive relationship: more heating equals more movement.
+
+---
+
+### Question 3
+
+At the beach on a hot day, the sand gets very hot but the water stays cool. What happens?
+
+A. The wind blows from the hot sand toward the cool water
+B. A breeze blows from the cool water toward the hot sand
+C. There is no wind at the beach
+D. The water gets as hot as the sand
+
+Correct Answer: B
+
+Feedback: That is right! The air above the hot sand rises, and cooler air from over the water rushes in to replace it. This creates a breeze that blows from the water toward the sand. Hot air rises above the warm sand. Cooler air from above the water rushes in to fill the space. This means the breeze blows FROM the cool water TOWARD the hot sand.
+
+---
+
+### Question 4
+
+Why is there very little wind on a cool, cloudy day?
+
+A. Because clouds block the wind from forming
+B. Because without strong sun, there is little temperature difference to move the air
+C. Because the air is too heavy to move on cloudy days
+D. Because wind only happens at night
+
+Correct Answer: B
+
+Feedback: Correct! Without strong sun heating, the ground stays cool and the temperature is more even everywhere. Without big temperature differences, there is very little air movement and weak wind. Wind needs temperature differences. On a cloudy day, the sun does not heat the ground much, so the temperature is more even everywhere. Without a big difference between warm and cool areas, there is not much air movement.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: A
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-ESS2-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What does a map show?
+
+A. What a place looks like from above, like a bird flying over it
+B. Only buildings and roads
+C. What a place looks like from under the ground
+D. Only oceans and nothing else
+
+Correct Answer: A
+
+Feedback: That is right! A map shows what a place looks like from above, as if you were a bird flying high over the area. Maps show a bird's eye view, which means they show what an area looks like from above. They can show land, water, buildings, roads, and many other features.
+
+---
+
+### Question 2
+
+What does the color blue usually mean on a map?
+
+A. The sky
+B. Water like rivers, lakes, and oceans
+C. Cold places
+D. Blue flowers
+
+Correct Answer: B
+
+Feedback: Yes! On most maps, blue represents water, including rivers, lakes, streams, and oceans. On maps, blue represents water, not the sky. When you see blue on a map, it shows where rivers, lakes, and oceans are located.
+
+---
+
+### Question 3
+
+What is a mountain?
+
+A. A very deep hole in the ground
+B. A flat area of land
+C. A tall area of land that rises high above the area around it
+D. A type of river
+
+Correct Answer: C
+
+Feedback: Correct! A mountain is a tall area of land that rises high above the surrounding area. Mountains are one of many landforms on Earth. A mountain is a landform that rises high above the surrounding area. Mountains are the tallest features on Earth's surface. Some are covered in snow, forests, or bare rock.
+
+---
+
+### Question 4
+
+Where does water flow when it rains on a mountain?
+
+A. Uphill toward the top of the mountain
+B. It stays right where it lands
+C. Downhill toward the bottom and into valleys
+D. Into outer space
+
+Correct Answer: C
+
+Feedback: That is right! Water always flows downhill because of gravity. Rain on a mountain flows down into valleys, streams, and rivers. Gravity pulls water downhill. When rain falls on a mountain, it flows down the sides into valleys, creating streams and rivers that carry water to the lowest spots.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What is a landform?
+
+A. A type of plant that grows on land
+B. A natural shape on Earth's surface, like a mountain, hill, valley, or plain
+C. A building made by people
+D. A weather pattern
+
+Correct Answer: B
+
+Feedback: Yes! A landform is a natural shape on Earth's surface. Mountains, hills, valleys, and plains are all landforms. Landforms are natural shapes on Earth's surface that were created by nature, not people. Mountains, hills, valleys, plains, and canyons are all examples of landforms.
+
+---
+
+### Question 2
+
+In our model, why does water collect in valleys and low areas?
+
+A. Because valleys pull water up from underground
+B. Because water flows downhill and collects at the lowest points
+C. Because valleys are always near the ocean
+D. Because water prefers to be in valleys
+
+Correct Answer: B
+
+Feedback: Correct! Water always flows downhill because of gravity. It naturally collects at the lowest points, which is why rivers and lakes are found in valleys and low areas. Gravity pulls water downhill. Water flows from high places like mountains down to the lowest spots. That is why lakes and rivers are found in valleys and low areas, not on top of mountains.
+
+---
+
+### Question 3
+
+On a map, you see a blue winding line between two brown shapes. What does the blue line most likely represent?
+
+A. A road between two buildings
+B. A river flowing between two mountains
+C. A crack in the map
+D. A blue fence
+
+Correct Answer: B
+
+Feedback: That is right! Blue on a map means water. A winding blue line between brown shapes (mountains) is a river flowing through a valley. Maps use colors to show features. Blue means water and brown often means mountains or high land. A winding blue line between brown shapes is a river flowing between mountains.
+
+---
+
+### Question 4
+
+How is a map different from standing on the ground and looking around?
+
+A. A map only shows what is right in front of you
+B. A map shows the whole area from above so you can see everything at once
+C. A map does not show water
+D. Standing on the ground gives you a better view than any map
+
+Correct Answer: B
+
+Feedback: Correct! A map gives you a bird's eye view so you can see the whole area at once, including things you could never see from the ground like how a river bends or what is on the other side of a mountain. From the ground, you can only see what is nearby. A map shows you the whole area from above, so you can see all the mountains, rivers, and features at once, even places you cannot see from the ground.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

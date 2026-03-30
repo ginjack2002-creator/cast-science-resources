@@ -184,6 +184,156 @@ Neuroengineers design brain-computer interfaces that help paralyzed patients con
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8, HS-LS1-2, HS-ETS1-2, HS-ETS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is an electrode in the context of brain science?
+
+A. A type of battery
+B. A tiny sensor that detects electrical activity from the brain
+C. A medicine that helps the brain work better
+D. A screen that displays brain images
+
+Correct Answer: B
+
+Feedback: Correct! An electrode is a tiny sensor placed on or near the brain that can detect the electrical activity of nearby neurons. An electrode is a tiny sensor that is placed on or in the brain to detect electrical activity. Neurons communicate using electrical signals, and electrodes pick up those signals so they can be read by a computer.
+
+---
+
+### Question 2
+
+Why would someone need a brain-computer interface?
+
+A. To play video games faster
+B. To help paralyzed patients control computers or robotic limbs with their thoughts
+C. To make people smarter than everyone else
+D. To read other people's minds without their permission
+
+Correct Answer: B
+
+Feedback: Yes! One of the most important uses of brain-computer interfaces is helping people with paralysis control devices using their brain signals, restoring independence and movement. Brain-computer interfaces are being developed primarily to help people with paralysis or other conditions. By reading brain signals, a BCI can allow someone who cannot move their arms to control a robotic limb, cursor, or other device using only their thoughts.
+
+---
+
+### Question 3
+
+What is 'neural noise'?
+
+A. The sound your brain makes when you think
+B. Random electrical activity from millions of neurons that interferes with reading specific signals
+C. Loud music that makes it hard to study
+D. A new type of hearing aid
+
+Correct Answer: B
+
+Feedback: Correct! Neural noise is the random electrical activity from millions of neurons firing simultaneously, which creates interference when trying to read a specific brain signal. Neural noise is the random electrical activity produced by millions of neurons firing all the time in your brain. When you try to read one specific signal (like the intention to move your hand), all those other signals create interference, making it hard to isolate the one you want.
+
+---
+
+### Question 4
+
+Can the brain learn to work better with a machine over time?
+
+A. No, the brain cannot change how it sends signals
+B. Yes, the brain can adapt its signals to work more effectively with a BCI system
+C. Only children's brains can adapt, not adults'
+D. The machine adapts, but the brain stays the same
+
+Correct Answer: B
+
+Feedback: Yes! The brain has remarkable plasticity and can learn to produce cleaner, more consistent signals that a BCI can read more easily. This adaptation is a two-way process. The brain is remarkably adaptable. Through practice, it can learn to produce cleaner, more consistent signals that a BCI system can read more easily. This process of adaptation goes both ways: the brain learns to produce better signals, and the computer algorithms learn to interpret them better.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the 8-component model, what is the chain from stimulus to motor output?
+
+A. Stimulus goes directly to motor output with no steps in between
+B. Stimulus Intensity determines Signal Strength, Electrodes capture it for Encoding Accuracy, which determines Response Time and Motor Output Precision
+C. Electrode Count is the only factor that matters
+D. Motor output happens randomly regardless of input
+
+Correct Answer: B
+
+Feedback: Correct! The model traces the chain: Stimulus Intensity affects Signal Strength, Electrode Count and Noise Level affect Encoding Accuracy, and Encoding Accuracy determines both Response Time and Motor Output Precision. The model shows a clear processing chain: Stimulus Intensity creates Signal Strength. More Electrodes and lower Noise improve Encoding Accuracy. Better Encoding produces faster Response Time and higher Motor Output Precision. The Adaptation Level improves the whole chain over time.
+
+---
+
+### Question 2
+
+What role does Adaptation Level play in the model?
+
+A. Adaptation has no effect on BCI performance
+B. Adaptation only helps when all other conditions are perfect
+C. Adaptation improves the entire system over time as the brain and computer learn to work together
+D. Adaptation makes the system worse over time because the brain gets tired
+
+Correct Answer: C
+
+Feedback: Yes! The model showed that adaptation is a powerful factor. Over time, the brain produces cleaner signals and the computer gets better at decoding them, improving all downstream performance measures. Adaptation is one of the most important findings in the model. Over repeated practice sessions, the brain learns to produce cleaner signals and the computer learns to decode them better. This partnership between biological and artificial intelligence improves the entire system's performance over time.
+
+---
+
+### Question 3
+
+What did the 'Noise Flood' scenario reveal?
+
+A. That noise has no effect on a well-designed BCI
+B. That extreme noise degrades performance even with the best hardware, but adaptation can partially compensate
+C. That noise always completely destroys BCI performance with no way to recover
+D. That adding more noise actually improves signal quality
+
+Correct Answer: B
+
+Feedback: Correct! The Noise Flood scenario showed that extreme noise degrades even the best hardware, but adaptation can partially compensate by helping the brain produce cleaner, more distinguishable signals. The Noise Flood scenario demonstrated that extreme noise weakens performance even with high-quality equipment. However, the model also showed that adaptation can partially compensate: over time, the brain learns to produce signals that stand out more against the noise, and the computer learns better filtering strategies.
+
+---
+
+### Question 4
+
+According to the model, what makes the best-case BCI scenario work so well?
+
+A. Only one factor needs to be optimal for peak performance
+B. All three inputs must align: strong stimulus, many electrodes, and low noise, with adaptation amplifying the results over time
+C. The best case only requires expensive equipment, nothing else
+D. The best case works because the brain does all the work and the computer is passive
+
+Correct Answer: B
+
+Feedback: That is right! Peak BCI performance requires strong stimulus (clear signals), many electrodes (accurate capture), low noise (clean environment), and adaptation (learned partnership between brain and computer). The best-case scenario works because all three inputs are optimal: strong stimulus intensity (clear brain signals), high electrode count (accurate capture), and low noise (minimal interference). On top of this, adaptation amplifies the results as the brain and computer learn to work together more effectively.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

@@ -864,6 +864,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 4-ESS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a fossil?
+
+A. A type of rock that looks like an animal
+B. A living animal that lives inside rocks
+C. The preserved remains or trace of a living thing from long ago
+D. A bone from an animal that died last year
+
+Correct Answer: C
+
+Feedback: That is right! A fossil is the preserved remains or trace of a living thing from long ago. Fossils form when living things get buried in sediment that hardens into rock over millions of years. A fossil is not a living thing or a recent bone. It is the preserved remains or trace of something that lived long ago, found in rock that formed over millions of years.
+
+---
+
+### Question 2
+
+How do you think seashells could end up on top of a mountain?
+
+A. Birds carried them up there
+B. People left them there during a hike
+C. The mountain was once under the ocean and the land was pushed up over time
+D. The seashells grew on the mountain like plants
+
+Correct Answer: C
+
+Feedback: Correct! Many mountains were once ocean floor. Over millions of years, forces inside the Earth pushed the rock layers (with their fossils) upward, creating mountains. Finding ocean fossils on mountaintops is evidence that those mountains were once under the ocean. Earth's forces slowly pushed the ocean floor rock upward over millions of years.
+
+---
+
+### Question 3
+
+What is sediment?
+
+A. A type of glue that holds rocks together
+B. Tiny pieces of rock, sand, mud, and shells that settle in layers
+C. A fossil that has been broken into pieces
+D. Hot liquid rock that comes out of volcanoes
+
+Correct Answer: B
+
+Feedback: Right! Sediment is tiny pieces of rock, sand, mud, and shells that settle and pile up in layers over time. When sediment hardens, it becomes sedimentary rock. Sediment is made of tiny pieces of rock, sand, mud, and shell fragments that settle in layers. Over millions of years, these layers get pressed together and harden into rock.
+
+---
+
+### Question 4
+
+How long do you think it takes for a fossil to form?
+
+A. A few days
+B. About one year
+C. A few hundred years
+D. Thousands to millions of years
+
+Correct Answer: D
+
+Feedback: Exactly! Fossils take thousands to millions of years to form. The living thing must be buried in sediment, and the sediment must slowly harden into rock over a very long time. Fossil formation is an extremely slow process. It takes thousands to millions of years for sediment to bury a living thing and harden into rock with the fossil inside.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the fossil model, Sediment Buildup and Earth Movement Speed are external components. What does Fossil Exposure (internal) depend on?
+
+A. How many people go looking for fossils
+B. Both the amount of sediment that buries organisms and how fast Earth pushes layers upward
+C. Only the weather on the day you look for fossils
+D. The color of the rock layers
+
+Correct Answer: B
+
+Feedback: Right! Fossil exposure depends on both external inputs. Sediment buildup creates fossils by burying organisms, and Earth movement pushes those layers to the surface where erosion reveals them. The model shows that fossil exposure depends on both sediment buildup (which creates fossils) and Earth movement speed (which pushes fossil layers to the surface).
+
+---
+
+### Question 2
+
+A scientist finds fish fossils on top of a mountain. What does this evidence tell us about the mountain's history?
+
+A. Fish once flew through the air and landed on the mountain
+B. Someone placed the fish fossils there recently
+C. The rock layers now on top of the mountain were once at the bottom of an ocean
+D. The fish climbed the mountain millions of years ago
+
+Correct Answer: C
+
+Feedback: Exactly! Fish fossils on a mountain are evidence that those rock layers were once underwater. Earth movement pushed the ocean floor rock upward over millions of years to form the mountain. Fish fossils on a mountain are powerful evidence that the rock was once ocean floor. Over millions of years, forces inside Earth pushed those rock layers up to become a mountain.
+
+---
+
+### Question 3
+
+Put these events in the correct order for how ocean fossils end up on mountains.
+
+A. Earth pushes layers up, then organisms die and get buried, then erosion reveals fossils
+B. Organisms die and get buried in sediment, sediment hardens to rock, Earth pushes rock layers up, erosion reveals fossils at the surface
+C. Erosion reveals fossils, then organisms die, then Earth pushes layers up
+D. Sediment builds up, erosion breaks it apart, then organisms get buried
+
+Correct Answer: B
+
+Feedback: That is right! The correct sequence is: organisms die and get buried in sediment layers, the sediment hardens into rock over time, Earth movement pushes the rock layers upward, and then wind and rain erode the surface to reveal the fossils. The correct order is: organisms die and get buried in sediment, sediment turns to rock, Earth movement pushes rock layers upward to form mountains, and then erosion at the surface reveals the ancient fossils.
+
+---
+
+### Question 4
+
+Which rock layer would contain the OLDEST fossils?
+
+A. The top layer because it has been there the longest
+B. The bottom layer because it was deposited first
+C. The middle layer because it is the most protected
+D. All layers contain fossils of the same age
+
+Correct Answer: B
+
+Feedback: Correct! The bottom rock layer was deposited first, so it contains the oldest fossils. Each layer above is younger. This is called the law of superposition. Rock layers build up from the bottom. The bottom layer was deposited first and is the oldest, so it contains the oldest fossils. Newer layers stack on top.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: C
+Question 3: B
+Question 4: D
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

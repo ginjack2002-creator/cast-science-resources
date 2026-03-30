@@ -882,6 +882,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A classmate claims that vaping is safe because 'it's just water vapor.' Which scientific evidence most directly contradicts this claim?
+
+A. E-cigarette aerosol contains nicotine, formaldehyde, heavy metals, and ultrafine particles that penetrate deep into lung tissue
+B. Water vapor is always harmful when inhaled in any quantity
+C. Vaping devices use batteries, which emit radiation that damages lungs
+D. The flavoring in vapes is the only harmful component
+
+Correct Answer: A
+
+Feedback: Correct. Chemical analysis of e-cigarette aerosol reveals it contains far more than water vapor, including nicotine, formaldehyde, acrolein, heavy metals like lead and nickel, and ultrafine particles that reach the deepest parts of the lungs. E-cigarette aerosol is not water vapor. Chemical analysis shows it contains nicotine, propylene glycol, vegetable glycerin, formaldehyde, acrolein, heavy metals, and ultrafine particles. These substances cause direct cellular damage to lung tissue.
+
+---
+
+### Question 2
+
+Which of the following best describes the function of epithelial cells in the respiratory system?
+
+A. They produce red blood cells for oxygen transport
+B. They line the airways and alveoli, facilitating gas exchange and protecting against pathogens
+C. They break down food particles that accidentally enter the lungs
+D. They produce the surfactant that inflates the lungs during breathing
+
+Correct Answer: B
+
+Feedback: Correct. Epithelial cells form the thin lining of airways and alveoli, serving as the surface where oxygen and carbon dioxide exchange occurs and as a barrier protecting the lungs from foreign particles and pathogens. Epithelial cells line the airways and alveoli of the respiratory system. They form the delicate surface where gas exchange occurs between air and blood, and they serve as a protective barrier against inhaled particles and pathogens.
+
+---
+
+### Question 3
+
+A person experiences no noticeable symptoms after vaping daily for three months. Which statement best evaluates the conclusion that 'vaping is not causing any harm'?
+
+A. This conclusion is valid because symptoms always appear immediately when damage occurs
+B. This conclusion is flawed because cumulative cellular damage can accumulate silently before symptoms become noticeable
+C. This conclusion is valid because the lungs have a perfect self-repair mechanism
+D. This conclusion is flawed only if the person is using nicotine-containing products
+
+Correct Answer: B
+
+Feedback: Correct. Many forms of biological damage are cumulative and subclinical, meaning they build up over time without producing noticeable symptoms. Like UV skin damage, the effects of chronic chemical exposure may not manifest as symptoms until significant tissue damage has occurred. The absence of symptoms does not mean absence of harm. Cumulative damage to lung cells can occur at the microscopic level for months or years before clinical symptoms appear, similar to how sun damage accumulates invisibly before eventually causing visible skin changes.
+
+---
+
+### Question 4
+
+When foreign chemicals enter the lungs, the immune system responds with inflammation. Which of the following best describes the purpose of this response?
+
+A. Inflammation permanently strengthens lung tissue against future chemical exposure
+B. Inflammation sends immune cells and fluids to the damaged area to fight infection and begin repair
+C. Inflammation increases the absorption rate of chemicals to process them faster
+D. Inflammation shuts down the lungs temporarily to prevent further chemical entry
+
+Correct Answer: B
+
+Feedback: Correct. Inflammation is the body's acute defense response, mobilizing white blood cells, increasing blood flow, and releasing chemical signals to combat threats and initiate tissue repair at the site of injury. The inflammatory response is the immune system's way of defending damaged tissue. It recruits white blood cells to the injury site, increases blood flow to deliver healing factors, and initiates the repair process. It is meant to be a short-term protective response.
+
+---
+
+### Question 5
+
+The respiratory system is organized hierarchically: trachea branches into bronchi, which branch into bronchioles, which terminate in alveoli. What is the primary advantage of this organizational pattern?
+
+A. It slows down airflow to prevent damage to delicate tissue
+B. It maximizes the surface area available for gas exchange while fitting within the chest cavity
+C. It ensures that all inhaled particles are trapped before reaching the blood
+D. It creates a one-way airflow system similar to bird lungs
+
+Correct Answer: B
+
+Feedback: Correct. The branching structure creates an enormous surface area for gas exchange (approximately the size of a tennis court) while efficiently fitting within the limited space of the chest cavity. This hierarchical design maximizes oxygen absorption. The branching hierarchy of the respiratory system maximizes surface area for gas exchange. By subdividing into progressively smaller structures, the lungs achieve a gas exchange surface area equivalent to a tennis court within the compact space of the chest.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a computational model of vaping damage, a student observes that Inflammation Response increases steadily over time even when Nicotine Concentration remains constant. Which mechanism best explains this model behavior?
+
+A. The model contains an error because inflammation should remain constant if chemical input is constant
+B. Chronic inflammation creates a destructive feedback loop where the immune response itself damages healthy cells, triggering additional inflammation
+C. The body gradually becomes more allergic to nicotine over time
+D. Inflammation increases because the lungs are successfully healing and need more immune activity
+
+Correct Answer: B
+
+Feedback: Correct. Chronic inflammation produces a self-reinforcing cycle. The immune molecules (reactive oxygen species, cytokines) released to fight damage also destroy healthy neighboring cells, which triggers more inflammation to address the new damage. This destructive feedback loop escalates even at constant exposure levels. The model shows a destructive feedback loop. Chronic inflammation damages healthy cells through collateral immune activity. This new damage triggers additional inflammation, which causes more collateral damage. The cycle escalates even without increasing the chemical input.
+
+---
+
+### Question 2
+
+A student's model predicts that a person who quits vaping after 6 months recovers most lung cell health, while a person who quits after 3 years shows only partial recovery. What concept does this comparison best demonstrate?
+
+A. Lung cells regenerate at a constant rate regardless of damage severity
+B. Some cellular damage is reversible while prolonged exposure causes irreversible damage through permanent scar tissue formation
+C. The body develops immunity to chemical damage over longer exposure periods
+D. Recovery rate depends entirely on age, not duration of exposure
+
+Correct Answer: B
+
+Feedback: Correct. Short-term damage primarily involves repairable cellular injury. However, prolonged chronic inflammation leads to fibrosis (scarring), where functional lung tissue is permanently replaced by non-functional scar tissue that cannot regenerate. The model reveals that recovery potential depends on the type and extent of damage. Short-term exposure causes primarily reversible cellular damage. Prolonged exposure leads to fibrosis, where scar tissue permanently replaces functional lung tissue. Once scarring occurs, that damage cannot be reversed.
+
+---
+
+### Question 3
+
+Using the hierarchical organization framework, which sequence correctly traces the impact of vaping chemicals from the smallest to largest scale of biological organization?
+
+A. Whole lung function decreases → alveolar cells are damaged → molecules in aerosol enter airways
+B. Chemical molecules damage epithelial cells → damaged cells impair alveolar gas exchange → reduced gas exchange decreases whole lung function
+C. The respiratory system fails → individual cells die → chemical reactions are disrupted
+D. Nicotine enters the brain → the brain signals lungs to stop working → lung cells die
+
+Correct Answer: B
+
+Feedback: Correct. This sequence follows the hierarchical cascade from molecular level (chemical interaction with cells) to cellular level (epithelial damage) to tissue level (alveolar function) to organ level (whole lung function). Damage at smaller scales propagates upward through the hierarchy. The correct cascade follows hierarchical organization from small to large: chemical molecules interact with individual epithelial cells, damaged cells impair the function of alveolar structures, and compromised alveoli reduce overall lung function. Each level of organization is affected by damage at the level below it.
+
+---
+
+### Question 4
+
+A student's model shows that the 'Occasional Use' scenario still produces measurable decreases in Lung Cell Health, even though the person has no symptoms. What is the most important implication of this finding for public health messaging?
+
+A. Occasional use is completely safe because the damage is too small to matter
+B. Any level of vaping causes some degree of cellular damage, and the absence of symptoms does not indicate the absence of harm
+C. The model must be inaccurate because people with no symptoms cannot have any cellular damage
+D. Occasional use is only harmful if combined with cigarette smoking
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that even low-level exposure causes measurable biological changes at the cellular level. Symptoms are a lagging indicator that appear only after substantial cumulative damage. Absence of symptoms is not evidence of absence of harm. The model provides evidence that cellular damage occurs even at low exposure levels, below the threshold that produces noticeable symptoms. This means a person can sustain progressive lung cell damage without feeling any effects, making the damage invisible until it becomes clinically significant.
+
+---
+
+### Question 5
+
+A public health team uses model data to design an anti-vaping campaign. Which approach best applies the scientific evidence from the vaping damage model?
+
+A. Show graphic images of diseased lungs with the message 'Vaping kills' to scare teens into quitting
+B. Present the dose-response data showing cumulative cellular damage over time, with visualizations of how the inflammation-damage feedback loop escalates even after exposure stops
+C. Tell teens that vaping is illegal and they will be punished if caught
+D. Claim that one puff of a vape causes immediate lung cancer
+
+Correct Answer: B
+
+Feedback: Correct. Evidence-based science communication uses accurate data to inform decision-making. The model provides compelling data about cumulative damage, feedback loops, and the gap between symptoms and actual cellular harm. Presenting this evidence accurately is more credible and effective than fear tactics or exaggeration. Effective science communication presents accurate biological evidence in an accessible way. The model provides powerful evidence about cumulative damage and the destructive feedback loop that can be presented without exaggeration or fear tactics. Accuracy builds credibility, while scare tactics often backfire with skeptical teenage audiences.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: A
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

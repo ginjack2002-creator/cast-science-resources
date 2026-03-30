@@ -942,6 +942,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-5, HS-LS2-6.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+The greenhouse effect is a natural process that keeps Earth's surface warm enough to support life. Which statement BEST describes how human activities have altered this process?
+
+A. Humans have created the greenhouse effect, which did not exist before industrialization
+B. Burning fossil fuels has increased atmospheric CO2 concentration, which enhances the natural greenhouse effect and causes additional warming beyond what would occur naturally
+C. The greenhouse effect only affects greenhouse buildings, not the entire planet
+D. Human activities have weakened the greenhouse effect, causing cooling
+
+Correct Answer: B
+
+Feedback: Correct. The greenhouse effect existed naturally for billions of years. Human activities (primarily fossil fuel combustion and deforestation) have increased atmospheric CO2 from ~280 ppm (pre-industrial) to ~425 ppm, enhancing the effect and driving additional warming. Distinguish between the natural greenhouse effect (which has always existed and made Earth habitable) and the enhanced greenhouse effect caused by human activity. What specific change have humans made to the atmosphere?
+
+---
+
+### Question 2
+
+A positive feedback loop in climate science refers to a process where warming causes changes that produce MORE warming. Which of the following is an example of a climate positive feedback loop?
+
+A. Warmer temperatures increase plant growth, which absorbs more CO2 and reduces warming
+B. Warming melts arctic ice, which exposes dark ocean water that absorbs more sunlight, which causes more warming
+C. Increased cloud cover reflects sunlight back to space
+D. Ocean currents distribute heat evenly across the planet
+
+Correct Answer: B
+
+Feedback: Correct. This is the ice-albedo feedback. White ice reflects sunlight (high albedo), but when ice melts, it exposes dark ocean water that absorbs sunlight (low albedo). This absorption warms the water further, melting more ice, creating a self-amplifying cycle. A positive feedback amplifies the original change. Which process creates a cycle where warming leads to changes that cause even more warming, rather than counteracting it?
+
+---
+
+### Question 3
+
+Scientists warn about 'tipping points' in the climate system. What does a climate tipping point represent?
+
+A. The point at which climate change begins to occur
+B. A critical threshold beyond which a large, potentially irreversible change in the climate system is triggered, even if the original cause is removed
+C. The exact temperature at which all ice on Earth melts simultaneously
+D. A point that can only be identified after it has been passed, making it scientifically useless
+
+Correct Answer: B
+
+Feedback: Correct. Tipping points represent thresholds where self-reinforcing feedbacks take over. For example, if permafrost warming triggers methane release that causes more warming that releases more methane, the process may become self-sustaining even if human emissions stop. The system transitions to a new state. Think about what makes a threshold 'irreversible.' If you push a ball over the edge of a hill, it continues rolling down even if you stop pushing. What climate processes behave similarly once a critical temperature is reached?
+
+---
+
+### Question 4
+
+Forests absorb CO2 from the atmosphere through photosynthesis. A student claims that planting enough trees could solve climate change entirely. Which scientific limitation is MOST important for evaluating this claim?
+
+A. Trees do not actually absorb CO2
+B. While forests sequester significant carbon, there is not enough land area to plant sufficient trees to offset current annual emissions of ~40 billion tons of CO2, and forests under heat stress can flip from carbon sinks to carbon sources
+C. Trees produce more CO2 than they absorb
+D. Planting trees would block too much sunlight from reaching the ground
+
+Correct Answer: B
+
+Feedback: Correct. Global forests currently absorb ~2.6 billion tons of CO2/year, but annual emissions are ~40 billion tons. Even massive reforestation cannot offset total emissions. Additionally, forests under climate stress (drought, heat, wildfire) can die and release their stored carbon, converting from sinks to sources. Compare the scale of the solution to the scale of the problem. How much CO2 do forests absorb versus how much humans emit? And what happens to forest carbon storage under climate stress?
+
+---
+
+### Question 5
+
+Climate change impacts are often described as 'disproportionate,' meaning some communities are affected much more severely than others. Which factor MOST directly determines a community's vulnerability to climate impacts?
+
+A. The community's latitude (distance from the equator)
+B. The community's economic resources, infrastructure, and institutional capacity to adapt to changing conditions
+C. The community's historical CO2 emissions
+D. The community's total population size
+
+Correct Answer: B
+
+Feedback: Correct. Adaptation capacity depends on wealth, infrastructure, governance, and institutional capacity. Wealthy nations can build sea walls, develop drought-resistant crops, and relocate populations. Vulnerable communities with fewer resources face the same or worse physical impacts with far less ability to respond. Consider two coastal cities facing identical sea level rise: one has billions of dollars for flood infrastructure and the other has minimal resources. Which will be more severely impacted, and why?
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's coupled climate-ecosystem model shows that Forest Carbon Sequestration increases initially as Atmospheric CO2 rises (due to CO2 fertilization), but then sharply decreases after Global Temperature exceeds 2.5 degrees C above pre-industrial levels. Which phenomenon BEST explains this reversal?
+
+A. CO2 fertilization saturates at a fixed concentration level
+B. Above 2.5 degrees C, widespread forest die-off from heat stress, drought, and wildfire converts forests from carbon sinks to carbon sources, flipping a negative feedback into a positive feedback that accelerates warming
+C. Forest growth always decreases linearly with temperature
+D. CO2 fertilization does not exist and the initial increase was a model error
+
+Correct Answer: B
+
+Feedback: Correct. This is a critical tipping point in the carbon cycle. Below 2.5 degrees C, forests partially counteract warming by absorbing CO2 (negative feedback). Above this threshold, forests die back and release stored carbon (positive feedback). This flip from sink to source accelerates the very warming that caused it, exemplifying nonlinear system behavior. Consider what happens to a forest when temperatures and drought exceed what trees can tolerate. What becomes of the carbon stored in dead trees? Does the forest continue to absorb CO2, or does it release it?
+
+---
+
+### Question 2
+
+The model reveals that Permafrost Methane Release becomes self-sustaining above a specific Global Temperature threshold. A student identifies this as a tipping point. Which characteristic of the permafrost system MOST directly makes this self-sustaining?
+
+A. Methane is heavier than CO2 and sinks to ground level
+B. Released methane is a powerful greenhouse gas (80x CO2 over 20 years) that causes additional warming, which thaws more permafrost, releasing more methane, creating a positive feedback loop that continues regardless of human emission reductions
+C. Permafrost methane is released all at once in a single event
+D. Methane in permafrost is replenished by underground geological processes
+
+Correct Answer: B
+
+Feedback: Correct. The permafrost-methane feedback is a classic positive feedback tipping point. Once warming triggers sufficient methane release, the warming from that methane thaws additional permafrost, releasing more methane. Beyond the tipping point, this cycle generates enough warming to sustain itself regardless of whether human emissions continue. Think about the cycle: warming causes methane release, which causes more warming, which causes more methane release. At what point does this cycle generate enough warming on its own that it no longer needs human emissions as a driver?
+
+---
+
+### Question 3
+
+A student compares the Paris Agreement scenario (1.5-2.0 degrees C warming) with the Business-As-Usual scenario (3-4 degrees C warming) in the model. Sea Level Rise projections differ by a factor of 4 between the scenarios even though temperature differs by only a factor of 2. Which property of the climate system explains this disproportionate response?
+
+A. Sea level rise is directly proportional to temperature change
+B. Nonlinear ice sheet dynamics: above critical temperature thresholds, ice sheet collapse accelerates dramatically through feedback mechanisms (marine ice cliff instability, albedo loss) that do not operate below those thresholds
+C. The ocean in the higher scenario contains four times more water
+D. Measurement uncertainty accounts for the entire difference
+
+Correct Answer: B
+
+Feedback: Correct. Ice sheet loss is not linear. Below certain thresholds, ice sheets lose mass gradually from surface melting. Above those thresholds, catastrophic processes activate: marine ice cliffs become unstable and collapse, exposed dark surfaces absorb more heat, and warm water undercuts ice shelves. These nonlinear processes produce disproportionately large sea level rise at higher temperatures. If the response were linear, a 2x temperature increase would produce a 2x sea level increase. The fact that the relationship is 4x suggests nonlinear processes are operating. What changes about ice sheet dynamics above certain temperature thresholds?
+
+---
+
+### Question 4
+
+The model shows that Societal Adaptation Capacity is the most unevenly distributed component globally. A student uses this finding to argue that climate change is fundamentally a justice issue, not just an environmental one. Which evidence from the model MOST STRONGLY supports this argument?
+
+A. All countries experience identical climate impacts
+B. Nations that have contributed the least to Atmospheric CO2 (e.g., sub-Saharan Africa, Pacific island nations) face the most severe physical impacts (extreme heat, sea level rise, crop failure) while having the fewest economic and institutional resources to adapt
+C. Wealthy nations experience worse climate impacts than poor nations
+D. Societal Adaptation Capacity is unrelated to climate outcomes
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates a fundamental asymmetry: the nations that industrialized and generated most historical emissions have the wealth and infrastructure to adapt, while nations that contributed minimally to the problem face disproportionate impacts with minimal resources. This mismatch between contribution and consequence is the core of climate justice. Climate justice asks: who caused the problem, who suffers the consequences, and who has the resources to adapt? Use the model to trace the relationship between historical emissions, current vulnerability, and adaptation capacity across different regions.
+
+---
+
+### Question 5
+
+A student proposes two climate intervention strategies and uses the model to evaluate them: Strategy A reduces Atmospheric CO2 emissions by 50% immediately; Strategy B invests in maximizing Societal Adaptation Capacity while maintaining current emission levels. The model shows that Strategy A produces better long-term outcomes. Which systems-level principle EXPLAINS why emission reduction outperforms adaptation alone?
+
+A. Adaptation is always inferior to mitigation
+B. Adaptation addresses symptoms while emission reduction addresses the root cause; once positive feedback tipping points are crossed, adaptation capacity cannot compensate for self-reinforcing warming regardless of investment, making early emission reduction mathematically necessary to stay below irreversible thresholds
+C. Emission reduction is cheaper than adaptation
+D. The model is biased toward emission reduction strategies
+
+Correct Answer: B
+
+Feedback: Correct. This is the fundamental asymmetry between mitigation and adaptation. Adaptation has limits: no amount of adaptation can sustain agriculture, coastal cities, or ecosystems under 4+ degrees of warming with self-reinforcing feedbacks. Emission reduction operates upstream, preventing the tipping point crossings that would overwhelm any adaptation strategy. Both are necessary, but emission reduction is the only intervention that prevents irreversible system state changes. Think about where each strategy operates in the causal chain. Emission reduction prevents warming from crossing tipping points. Adaptation manages the consequences of warming that has already occurred. What happens when adaptation faces consequences that exceed its capacity because tipping points were crossed?
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

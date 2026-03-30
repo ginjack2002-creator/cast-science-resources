@@ -825,6 +825,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-ESS2-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+If it is usually hot in July and cold in January, what is the word for this pattern over many years?
+
+A. Weather
+B. Climate
+C. A storm
+D. Temperature
+
+Correct Answer: B
+
+Feedback: Nice thinking! Climate is the pattern of weather over a long time. Knowing that July is hot and January is cold is understanding climate. Weather is what is happening right now. The long-term pattern of weather over many years is called climate. Climate tells us what weather is typical for each season.
+
+---
+
+### Question 2
+
+Can scientists predict what the weather will be like tomorrow?
+
+A. No, weather is completely random and no one can predict it
+B. Yes, but only if they guess
+C. Yes, they use patterns in weather data to make predictions
+D. Only animals can predict the weather
+
+Correct Answer: C
+
+Feedback: That is right! Scientists called meteorologists use patterns in weather data to predict what will happen next. Weather is not random. Weather follows patterns that repeat over time. Meteorologists collect data on temperature, clouds, and rain, then use those patterns to make predictions.
+
+---
+
+### Question 3
+
+What tool do you think measures how hot or cold the air is?
+
+A. A ruler
+B. A thermometer
+C. A magnifying glass
+D. A clock
+
+Correct Answer: B
+
+Feedback: Correct! A thermometer measures temperature, which tells us how hot or cold the air is. A thermometer is the tool that measures temperature. It shows us how hot or cold the air is using degrees.
+
+---
+
+### Question 4
+
+What do you think precipitation means?
+
+A. How fast the wind blows
+B. How bright the sun is
+C. Water that falls from the sky, like rain or snow
+D. How many clouds are in the sky
+
+Correct Answer: C
+
+Feedback: You got it! Precipitation is any water that falls from the sky. This includes rain, snow, sleet, and hail. Precipitation is the science word for water that falls from the sky. Rain, snow, sleet, and hail are all types of precipitation.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the weather model, when Temperature increases, what happens to Cloud Cover?
+
+A. Cloud Cover always decreases to zero
+B. Cloud Cover can increase because warm air causes more water to evaporate and form clouds
+C. Cloud Cover is not connected to Temperature at all
+D. Clouds disappear when it is warm
+
+Correct Answer: B
+
+Feedback: Correct! When temperature rises, more water evaporates into the air, which can build up into clouds, especially during summer afternoons. In the model, Temperature and Cloud Cover have a positive relationship. Warmer air causes more water to evaporate, which can form more clouds.
+
+---
+
+### Question 2
+
+A student collected temperature data for a full year. She found that June, July, and August were always the hottest months. What did she discover?
+
+A. A weather event
+B. A seasonal pattern in climate data
+C. A random coincidence
+D. A mistake in her data
+
+Correct Answer: B
+
+Feedback: Exactly! She found a seasonal pattern. Climate is made of these repeating patterns. Summer months are typically the hottest year after year. When the same months are hot every year, that is a seasonal pattern, not a coincidence. Climate is the long-term pattern of weather, and seasons create the biggest patterns.
+
+---
+
+### Question 3
+
+What is the difference between weather and climate?
+
+A. Weather and climate mean the same thing
+B. Weather is what is happening right now; climate is the pattern of weather over many years
+C. Climate is only about rain; weather is about everything else
+D. Weather lasts longer than climate
+
+Correct Answer: B
+
+Feedback: You got it! Weather is what the sky and air are doing right now. Climate is the average weather pattern over 30 or more years. Weather is what is happening in the sky today. Climate is the BIG PICTURE pattern of weather over many years. Weather is like your mood today, climate is like your personality.
+
+---
+
+### Question 4
+
+In the model, Temperature is the external component. Why is it considered external?
+
+A. Because it changes every second
+B. Because it is set by the sun and seasons, and it drives the weather system
+C. Because it is not important to weather
+D. Because students can change the temperature outside
+
+Correct Answer: B
+
+Feedback: Right! Temperature is external because it is determined by the sun and seasons. We do not control it, but it drives Cloud Cover and Chance of Rain inside the system. An external component is something set by outside conditions that drives the system. Temperature is set by the sun and seasons, and it causes changes in Cloud Cover and Chance of Rain.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

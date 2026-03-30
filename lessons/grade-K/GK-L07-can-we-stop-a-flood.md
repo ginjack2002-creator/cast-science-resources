@@ -720,6 +720,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to K-ESS3-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a flood?
+
+A. When the sun comes out
+B. When too much water covers the ground
+C. When it snows
+
+Correct Answer: B
+
+Feedback: Yes! A flood is when too much water covers land that is usually dry. A flood happens when too much water covers the ground. Water gets so deep it covers roads and yards.
+
+---
+
+### Question 2
+
+What causes a flood?
+
+A. Too much sunshine
+B. Too much wind
+C. Too much rain
+
+Correct Answer: C
+
+Feedback: Yes! Too much rain is the most common cause of floods. The ground cannot soak up all the water. Floods usually happen when too much rain falls. The water has nowhere to go, so it spreads out and covers the ground.
+
+---
+
+### Question 3
+
+Can people do anything to stop water from flooding?
+
+A. No, we cannot do anything
+B. Yes, we can build walls to block the water
+C. Yes, we can make the rain stop
+
+Correct Answer: B
+
+Feedback: Yes! People can build walls, sandbags, and other barriers to block flood water. People cannot stop the rain, but they CAN build walls and barriers to block the water from reaching homes.
+
+---
+
+### Question 4
+
+What happens after a big rainstorm?
+
+A. The ground gets very dry
+B. Big puddles and standing water appear
+C. The sky gets sunny right away
+
+Correct Answer: B
+
+Feedback: Yes! After a big rainstorm, there are big puddles and lots of water on the ground. After a big rainstorm, water collects on the ground as puddles. If there is too much water, it can become a flood.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+When the Amount of Rain goes UP, what happens to the Flood Level?
+
+A. It goes down
+B. It goes up
+C. It stays the same
+
+Correct Answer: B
+
+Feedback: Yes! More rain means the flood level gets higher. That is a positive connection. When more rain falls, the flood level goes up. More water falls than the ground can soak up.
+
+---
+
+### Question 2
+
+What is a barrier?
+
+A. Something that makes more rain
+B. Something that blocks water from going where it should not
+C. A type of cloud
+
+Correct Answer: B
+
+Feedback: Yes! A barrier blocks or stops water from going where it should not go, like toward homes. A barrier is something that blocks water. Sandbags and walls are barriers that stop flood water from reaching houses.
+
+---
+
+### Question 3
+
+What can people build to protect homes from floods?
+
+A. More windows
+B. Walls, sandbags, and levees
+C. Taller roofs
+
+Correct Answer: B
+
+Feedback: Yes! People build walls, sandbags, and levees to block flood water and keep homes safe. Walls, sandbags, and levees are barriers that block flood water. Engineers design these to protect people.
+
+---
+
+### Question 4
+
+Why is it important to know when a big storm is coming?
+
+A. So we can play outside
+B. So we can prepare and stay safe
+C. So we can water the plants
+
+Correct Answer: B
+
+Feedback: Yes! Knowing about storms helps people prepare by building barriers, moving to higher ground, and staying safe. Weather reports help people get ready before a big storm. They can build barriers and move to safe places.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

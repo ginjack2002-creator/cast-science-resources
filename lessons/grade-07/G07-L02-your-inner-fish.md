@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-1, MS-LS4-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a fossil?
+
+A. Any rock that is more than 1,000 years old
+B. The preserved remains or traces of an ancient organism found in rock
+C. A mineral that forms in the shape of a living thing by coincidence
+D. A bone from a dinosaur that has turned into calcium powder
+
+Correct Answer: B
+
+Feedback: Correct! Fossils are the preserved remains or traces of organisms that lived in the past, typically found embedded in sedimentary rock. Not quite. A fossil is the preserved remains or traces of an ancient organism, such as bones, shells, or imprints, found in rock.
+
+---
+
+### Question 2
+
+A whale's flipper, a bat's wing, and a human arm all contain the same basic bone structure. What might this suggest?
+
+A. These animals all live in the same habitat
+B. These animals evolved from a common ancestor that had that bone structure
+C. These animals copied each other's bone design over time
+D. Having the same bones is just a random coincidence
+
+Correct Answer: B
+
+Feedback: Correct! Shared bone structures, called homologous structures, are strong evidence that these animals inherited their basic body plan from a common ancestor. Not quite. When very different animals share the same underlying bone structure, it is evidence of common ancestry. These are called homologous structures.
+
+---
+
+### Question 3
+
+How do scientists determine which organisms are related to each other?
+
+A. By looking at whether animals live in the same area today
+B. By comparing body structures, DNA, and fossil evidence
+C. By checking if animals eat the same food
+D. By asking zookeepers which animals look alike
+
+Correct Answer: B
+
+Feedback: Correct! Scientists use multiple types of evidence including anatomy, DNA sequences, and the fossil record to determine evolutionary relationships. Not quite. Scientists determine evolutionary relationships by comparing body structures (anatomy), DNA sequences, and fossil evidence, not just by appearance or habitat.
+
+---
+
+### Question 4
+
+What happens to most organisms after they die?
+
+A. They automatically become fossils within a few years
+B. They decompose and are not preserved as fossils
+C. They are always preserved if they are buried underground
+D. Only dinosaurs can become fossils
+
+Correct Answer: B
+
+Feedback: Correct! Most organisms decompose completely after death. Fossilization is actually very rare and requires specific conditions like rapid burial in sediment. Not quite. The vast majority of organisms decompose and leave no fossil record. Fossilization is extremely rare and requires rapid burial under the right conditions.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Tiktaalik is a 375-million-year-old fossil that has fish features (scales, fins) AND land animal features (flat head, wrist bones). What type of fossil is this?
+
+A. An index fossil used only for dating rock layers
+B. A transitional fossil showing features of both an ancestral and a descendant group
+C. A trace fossil showing only the footprints of an ancient animal
+D. A modern fossil that formed recently from a living species
+
+Correct Answer: B
+
+Feedback: Correct! Tiktaalik is a transitional fossil because it shows features of both fish (ancestral group) and land vertebrates (descendant group), providing evidence of evolutionary transition. Not quite. Tiktaalik is classified as a transitional fossil because it displays characteristics of both fish and land animals, bridging the evolutionary gap between these groups.
+
+---
+
+### Question 2
+
+In a model of evolutionary change, environmental change rate is set to maximum, simulating a mass extinction event. What does the model predict will happen to species diversity?
+
+A. Species diversity increases because organisms evolve faster under pressure
+B. Species diversity stays the same because organisms always adapt
+C. Species diversity drops sharply as many species cannot adapt fast enough
+D. Species diversity is unaffected because evolution is too slow to notice
+
+Correct Answer: C
+
+Feedback: Correct! Rapid environmental change causes mass extinction because many species cannot adapt fast enough. However, after the change stabilizes, surviving species can diversify into empty ecological niches. Not quite. When environmental change is rapid and extreme, many species go extinct because they cannot adapt quickly enough, causing species diversity to crash.
+
+---
+
+### Question 3
+
+A student asks: 'If humans evolved from fish, why do fish still exist?' Which response best addresses this misconception?
+
+A. Fish will eventually evolve into humans if given enough time
+B. Humans did not evolve from modern fish; both evolved from a common ancestor millions of years ago
+C. Fish stopped evolving because their environment has not changed
+D. Only certain special fish evolved into humans while the rest stayed the same
+
+Correct Answer: B
+
+Feedback: Correct! Humans and modern fish share a common ancestor from about 375 million years ago. Both lineages have been evolving separately since then. Modern fish are not our ancestors; they are our very distant evolutionary cousins. Not quite. Humans did not evolve from modern fish. Both humans and today's fish descended from a common ancestor. The two lineages have been evolving independently for hundreds of millions of years.
+
+---
+
+### Question 4
+
+Which pattern in the fossil record provides the strongest evidence that life on Earth has changed over time?
+
+A. All fossils look identical regardless of the rock layer they are found in
+B. Older rock layers contain simpler organisms, while younger layers contain more complex ones
+C. Fossils are only found in volcanic rock from eruptions
+D. The same exact species appears in every rock layer across Earth's history
+
+Correct Answer: B
+
+Feedback: Correct! The fossil record shows a clear pattern: the oldest layers contain simple, single-celled organisms, and complexity increases in younger layers. This documents how life has changed and diversified over billions of years. Not quite. The fossil record shows that simpler organisms appear in older rock layers and more complex organisms appear in younger layers, demonstrating that life has changed over geological time.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -901,6 +901,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS1-2, HS-LS3-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Research shows that genetic factors account for 40-60% of addiction vulnerability. What does this statistic mean in practical terms?
+
+A. People with addiction genes will always become addicted regardless of circumstances
+B. Inherited variations in brain chemistry create significantly different baseline vulnerabilities, but genes are not destiny
+C. Genetics play no meaningful role in addiction because environment is all that matters
+D. Exactly 50% of all people will become addicted to any substance they try
+
+Correct Answer: B
+
+Feedback: Correct. Genetic predisposition means inherited variations in dopamine receptors, metabolism enzymes, and stress response create different vulnerability levels. Genes load the dice but do not determine the outcome. Incorrect. The 40-60% figure means genetics significantly influence risk through variations in brain chemistry, but they do not determine outcomes. Environmental factors, age of exposure, and stress also play critical roles.
+
+---
+
+### Question 2
+
+What role does dopamine play in the brain's reward system and how do addictive substances exploit it?
+
+A. Dopamine is a pain-blocking chemical; drugs work by eliminating pain signals
+B. Dopamine signals reward and motivation; addictive substances flood the system with 2-10 times more dopamine than natural rewards, rewiring motivation circuits
+C. Dopamine is only released during sleep; drugs interfere with sleep patterns
+D. Dopamine destroys brain cells, which is why drugs are harmful
+
+Correct Answer: B
+
+Feedback: Correct. Dopamine signals reward and motivation through the mesolimbic pathway. Addictive substances produce dopamine surges far beyond natural rewards, gradually rewiring the brain to prioritize the substance above all else. Incorrect. Dopamine is a neurotransmitter that signals reward and motivation. Natural rewards produce 150-200% baseline dopamine, while drugs produce 200-1000%, overwhelming the system and physically rewiring motivation circuits.
+
+---
+
+### Question 3
+
+Why does the age of first substance exposure significantly affect addiction risk?
+
+A. Younger people have stronger immune systems that metabolize drugs faster
+B. The prefrontal cortex, responsible for impulse control, is not fully developed until age 25, making adolescent brains more vulnerable to reward circuit hijacking
+C. Younger people are more likely to use substances in social settings, which is the only risk factor
+D. Age of exposure has no significant effect on addiction outcomes
+
+Correct Answer: B
+
+Feedback: Correct. The prefrontal cortex (impulse control, long-term planning) is still developing during adolescence. Substance exposure during this critical period can permanently alter reward circuitry development. Incorrect. Adolescent brains are more vulnerable because the prefrontal cortex, which provides impulse control and long-term planning, is not fully mature until age 25. Substance exposure during brain development creates higher addiction risk.
+
+---
+
+### Question 4
+
+What is tolerance in the context of addiction neuroscience?
+
+A. The social acceptance of drug use in a community
+B. The brain's adaptation to repeated substance exposure by reducing dopamine receptor density, requiring increasing doses for the same effect
+C. The body's ability to completely eliminate a drug from the bloodstream
+D. A personality trait that determines whether someone will try drugs
+
+Correct Answer: B
+
+Feedback: Correct. Tolerance occurs when the brain reduces dopamine receptor density in response to repeated substance-induced flooding. This means higher doses are needed for the same effect, and natural rewards become less satisfying. Incorrect. Tolerance is a neurobiological adaptation where the brain reduces dopamine receptor density to cope with repeated substance-induced flooding. This requires escalating doses and is a hallmark of addiction progression.
+
+---
+
+### Question 5
+
+Which statement best reflects the current scientific understanding of addiction?
+
+A. Addiction is purely a moral failure that can be overcome through willpower alone
+B. Addiction is a chronic brain disease involving hijacked reward circuitry that overrides rational decision-making
+C. Addiction only affects people who choose to use drugs recreationally
+D. Addiction is completely determined by genetics with no environmental component
+
+Correct Answer: B
+
+Feedback: Correct. Modern neuroscience classifies addiction as a chronic brain disease. Substances physically rewire the brain's reward and motivation circuits, creating compulsions that override the prefrontal cortex's decision-making abilities. Incorrect. Neuroscience has established that addiction is a brain disease, not a moral failing. Addictive substances physically alter the brain's reward circuitry, creating compulsions that override rational decision-making capacity.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the addiction model, Individual A has high Genetic Vulnerability and first Substance Exposure at age 14. Individual B has low Genetic Vulnerability and first exposure at age 25. What does the model predict about their relative Addiction Severity trajectories?
+
+A. Both individuals will have identical trajectories because the substance is the same
+B. Individual A will show amplified Dopamine Surge, faster Receptor Downregulation, and higher Addiction Severity because high genetic vulnerability combined with adolescent brain development creates compounding risk
+C. Individual B will develop greater Addiction Severity because adult brains are more susceptible to addiction
+D. Neither individual will develop addiction because genetics alone do not determine outcomes
+
+Correct Answer: B
+
+Feedback: Correct. The model predicts compounding risk for Individual A: high genetic vulnerability means stronger initial dopamine response, and adolescent brain exposure means the still-developing prefrontal cortex cannot effectively moderate compulsive behavior. Incorrect. The model shows that Individual A faces compounding risk. High genetic vulnerability amplifies the dopamine surge, and adolescent exposure occurs during a critical window when the prefrontal cortex cannot yet effectively override reward-seeking behavior.
+
+---
+
+### Question 2
+
+The model shows that chronic stress multiplies addiction vulnerability rather than simply adding to it. Which mechanism best explains this multiplicative interaction?
+
+A. Stress causes people to spend more time around drugs, increasing exposure probability
+B. Chronic stress hormones sensitize the dopamine system (making it hyperresponsive to substances) while simultaneously impairing the prefrontal cortex's ability to override compulsions
+C. Stress only affects addiction in people who already have high genetic vulnerability
+D. Stress increases tolerance, which paradoxically protects against addiction
+
+Correct Answer: B
+
+Feedback: Correct. The model shows a dual mechanism: stress hormones sensitize the reward system (amplifying dopamine response to substances) AND impair prefrontal cortex function (weakening impulse control). These effects multiply, not add. Incorrect. Chronic stress is multiplicative because it simultaneously sensitizes the dopamine system to substances AND impairs the prefrontal cortex's ability to override compulsions. This dual mechanism compounds vulnerability beyond simple addition.
+
+---
+
+### Question 3
+
+Based on the model, why have fear-based prevention programs like 'Just Say No' consistently failed to reduce substance use initiation?
+
+A. They are too expensive to implement effectively
+B. They target conscious choice (prefrontal cortex) but addiction operates through subcortical reward circuits that bypass rational decision-making, and fear can actually increase curiosity
+C. They only work for adults, not teenagers
+D. They are too successful, leading schools to become overconfident and reduce other prevention efforts
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that addiction hijacks subcortical reward circuits that operate below conscious decision-making. Fear-based programs address the wrong neural system and research shows they can paradoxically increase curiosity about substances. Incorrect. The model reveals that addiction operates through reward circuits that bypass rational decision-making. Programs that rely on fear and conscious choice-making target the wrong part of the brain. Research also shows fear can increase curiosity.
+
+---
+
+### Question 4
+
+A student adds Epigenetic Modification as a component to the model. How does epigenetics expand understanding of addiction beyond simple genetic inheritance?
+
+A. Epigenetics replaces genetics entirely as the cause of addiction
+B. Epigenetic changes from stress or substance exposure can activate or silence addiction-related genes without altering DNA sequence, potentially affecting future generations
+C. Epigenetics only affects hair color and eye color, not brain function
+D. Epigenetic modifications are identical to mutations and are always harmful
+
+Correct Answer: B
+
+Feedback: Correct. Epigenetic modifications change gene expression without altering DNA sequence. Environmental factors like chronic stress or substance exposure can activate addiction-related genes, and some of these changes may be inherited across generations. Incorrect. Epigenetics adds a layer of complexity: environmental factors (stress, substance exposure) can change gene expression without altering DNA, potentially activating or silencing addiction-related genes across generations.
+
+---
+
+### Question 5
+
+The model predicts that understanding addiction as a brain disease should fundamentally change societal responses. Which policy change is most directly supported by the model's evidence?
+
+A. Increasing criminal penalties for substance use to deter people through fear
+B. Replacing punitive approaches with evidence-based treatment that targets the neurobiological mechanisms of reward circuit hijacking and receptor downregulation
+C. Eliminating all prevention programs since addiction is purely biological
+D. Making all substances legal since prohibition does not address brain chemistry
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that addiction involves physical brain changes (receptor downregulation, reward circuit rewiring) that require medical/therapeutic intervention, not punishment. Treatment must target the biological mechanisms the model reveals. Incorrect. The model demonstrates that addiction involves physical brain changes that cannot be addressed through punishment. Evidence-based treatment targeting the neurobiological mechanisms (dopamine system, receptor downregulation) is the approach supported by the science.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

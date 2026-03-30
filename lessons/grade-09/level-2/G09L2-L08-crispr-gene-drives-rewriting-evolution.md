@@ -947,6 +947,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-LS3-1, HS-LS4-5.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+In normal Mendelian inheritance, what percentage of offspring receive a specific allele from one parent?
+
+A. 100% of offspring
+B. 75% of offspring
+C. 50% of offspring
+D. 25% of offspring
+
+Correct Answer: C
+
+Feedback: Correct. In standard Mendelian inheritance, each parent has two copies of a gene and passes one to each offspring, giving each allele a 50% chance of being inherited. Mendelian inheritance follows a 50/50 pattern. Each parent passes one of their two alleles at random, giving any specific allele a 50% chance of being transmitted to each offspring.
+
+---
+
+### Question 2
+
+What is a gene drive?
+
+A. A natural process by which genes spread through a population over thousands of generations
+B. A genetic engineering technology that biases inheritance so an engineered gene is passed to nearly all offspring (95-99%) rather than the normal 50%
+C. A device used to sequence DNA in a laboratory
+D. A type of gene therapy used to treat human diseases
+
+Correct Answer: B
+
+Feedback: Correct. A gene drive uses CRISPR technology to copy itself onto both chromosomes, ensuring nearly all offspring inherit the engineered gene. This allows the modification to spread through a wild population far faster than normal inheritance would allow. Gene drives are engineered systems that 'cheat' at inheritance. By copying themselves to both chromosomes, they achieve 95-99% inheritance instead of the normal 50%, allowing rapid spread through a population.
+
+---
+
+### Question 3
+
+What is a 'fitness cost' in evolutionary biology?
+
+A. The financial cost of maintaining a genetic engineering program
+B. A reduction in an organism's survival or reproductive success caused by carrying a particular genetic trait
+C. The energy required for an organism to exercise
+D. The price of genetic testing for a particular allele
+
+Correct Answer: B
+
+Feedback: Correct. A fitness cost means carrying a specific gene reduces the organism's ability to survive or reproduce. Natural selection acts against genes with fitness costs, which is relevant to gene drives because engineered genes may reduce host fitness. In evolutionary terms, fitness refers to reproductive success, not physical exercise. A fitness cost means a gene reduces the carrier's survival or reproduction rate, making natural selection work against that gene over time.
+
+---
+
+### Question 4
+
+Why is the potential application of gene drives to malaria-carrying mosquitoes considered both promising and controversial?
+
+A. Gene drives would be too expensive to deploy in tropical regions
+B. Gene drives could eliminate malaria (which kills 600,000 people per year) but could also have unpredictable ecological consequences from removing or modifying an entire species
+C. Gene drives have already been proven completely safe through decades of field testing
+D. Malaria mosquitoes are immune to genetic modification
+
+Correct Answer: B
+
+Feedback: Correct. The tension is between massive humanitarian benefit (preventing 600,000 deaths annually) and unknown ecological risk (what happens when you suppress or modify a species that is part of complex food webs and ecosystems). Gene drives for malaria represent a genuine ethical dilemma: the technology could save hundreds of thousands of lives, but the ecological consequences of altering wild populations are largely unknown and potentially irreversible.
+
+---
+
+### Question 5
+
+What happens if natural resistance evolves against a gene drive after it has been released into a wild population?
+
+A. Resistance is impossible because gene drives are too powerful
+B. Resistance mutations could halt the drive's spread, leaving a partially modified population with unknown consequences
+C. Resistance would strengthen the gene drive's effect
+D. Scientists can simply recall the gene drive from the wild population
+
+Correct Answer: B
+
+Feedback: Correct. Resistance mutations that prevent the gene drive from copying itself can arise and spread through natural selection. If this happens mid-deployment, the population is partially modified, potentially the worst outcome because neither the goal nor the original state is achieved. Resistance evolution is a real concern. Gene drives cannot be recalled from wild populations, and if resistance halts the drive partway through, the result is a partially modified population in an unknown ecological state.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+The simulation shows that a gene drive with 99% inheritance bias and zero fitness cost reaches fixation (100% of population) in approximately 12 generations. When fitness cost is added at 10%, the drive still reaches fixation but takes 20 generations. What does this comparison reveal about the relative strength of inheritance bias versus natural selection?
+
+A. Natural selection completely overrides the gene drive
+B. The mathematical advantage of 99% inheritance is strong enough to overcome moderate natural selection against the drive, though fitness costs slow the process
+C. Fitness costs have no effect on gene drive dynamics
+D. The drive reaches fixation at the same speed regardless of fitness cost
+
+Correct Answer: B
+
+Feedback: Correct. The 99% inheritance bias creates a powerful mathematical advantage over the normal 50%. Even with a 10% fitness cost (natural selection pushing back), the inheritance advantage dominates, reaching fixation at a slower but still inevitable pace. The gene drive's inheritance advantage (99% vs. 50%) is a powerful mathematical force. Fitness costs create opposing selection pressure, but moderate costs only slow the drive without stopping it, because the inheritance bias is disproportionately strong.
+
+---
+
+### Question 2
+
+The model reveals a critical race between gene drive spread and resistance evolution. Under what conditions does resistance 'win' against the drive?
+
+A. Resistance always wins because natural selection is all-powerful
+B. Resistance wins when the rate of resistance mutation emergence exceeds the drive's ability to spread faster than resistant individuals reproduce
+C. Resistance never wins against a properly designed gene drive
+D. Resistance only matters in laboratory settings, not in wild populations
+
+Correct Answer: B
+
+Feedback: Correct. It is a rate competition. If resistance mutations arise and spread through natural selection faster than the drive can reach fixation, resistance individuals outcompete drive carriers, and the drive stalls. The outcome depends on relative rates. In large populations with high genetic diversity, resistance mutations are more likely to arise. If they spread fast enough through natural selection, they can outcompete the drive before it reaches fixation.
+
+---
+
+### Question 3
+
+A student's model shows that suppressing mosquito populations by 90% causes significant declines in bat, bird, and fish populations that feed on mosquitoes. What systems concept does this demonstrate?
+
+A. Mosquitoes are unimportant in ecosystems and can be safely removed
+B. Ecological cascading effects, where removing one species propagates disruptions through the food web to species that depend on it
+C. The model is flawed because mosquitoes have no ecological role
+D. Only the mosquito population is affected by gene drive deployment
+
+Correct Answer: B
+
+Feedback: Correct. Removing or suppressing a species creates ripple effects through the food web. Species that depend on mosquitoes as food (bats, birds, fish, other insects) lose a resource, which can cascade further up the food chain. Ecosystems are interconnected networks. Suppressing one species affects all species connected to it. Mosquitoes serve as food for many predators, and their removal or reduction triggers cascading effects that propagate through the entire food web.
+
+---
+
+### Question 4
+
+The simulation demonstrates that once a gene drive is released into a wild population, it cannot be recalled. Why is this irreversibility fundamentally different from other biotechnologies?
+
+A. All biotechnologies are equally irreversible
+B. Unlike contained technologies, a self-propagating gene drive reproduces and spreads autonomously through the ecosystem, making it impossible to retrieve or control after release
+C. Gene drives can be reversed by releasing a second gene drive
+D. Irreversibility is only a theoretical concern with no practical implications
+
+Correct Answer: B
+
+Feedback: Correct. A gene drive is self-propagating, meaning it reproduces and spreads through natural mating. Unlike a chemical spill (which can be cleaned) or a GMO crop (which can be contained), a gene drive becomes part of the wild gene pool permanently. The key distinction is self-propagation. Most technologies can be recalled, deactivated, or contained. A gene drive, once released, spreads autonomously through reproduction. It cannot be collected from wild organisms or reversed once integrated into the gene pool.
+
+---
+
+### Question 5
+
+Based on the model evidence, which deployment strategy best balances the humanitarian goal of malaria elimination with ecological safety?
+
+A. Immediate global release of the strongest possible gene drive to maximize speed
+B. A phased approach: contained testing, isolated island trials, staged regional deployment with continuous monitoring for resistance and ecological impacts, with predefined halt criteria
+C. Avoid gene drive technology entirely because the risks are too high
+D. Deploy the gene drive only in laboratories and never release it into the wild
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that outcomes depend on parameters (fitness cost, resistance rate, ecological connections) that vary across environments. A phased approach allows data collection at each stage, with the ability to halt before irreversible consequences occur. The model demonstrates that uncertainty in ecological impacts and resistance dynamics requires a cautious, staged approach. Phased deployment with monitoring and halt criteria balances the urgency of disease elimination with the irreversibility of the technology.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

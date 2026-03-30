@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-8.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+How does your body detect when something is hot?
+
+A. Your skin changes color to signal danger to your brain
+B. Specialized nerve endings called receptors detect the heat and send signals to your brain
+C. Your blood heats up and your brain feels the temperature change directly
+D. Hot objects emit a sound frequency that your ears detect
+
+Correct Answer: B
+
+Feedback: Correct! Your body has specialized sensory receptors (thermoreceptors) in your skin that detect temperature changes and send electrical signals through nerves to your brain. Not quite. Your body detects heat through specialized sensory receptors in your skin. These receptors convert the temperature stimulus into electrical nerve signals that travel to your brain.
+
+---
+
+### Question 2
+
+Why do you think eating spicy food makes some people cry and sweat?
+
+A. Spicy food contains acid that burns holes in your tongue
+B. The chemicals in spicy food may activate pain or heat receptors in your mouth
+C. Crying is an allergic reaction that only some people have to spices
+D. Spicy food makes you sad, which causes tears
+
+Correct Answer: B
+
+Feedback: Correct! Capsaicin in spicy food activates the same receptors that detect actual heat, triggering a pain response that includes tears, sweating, and a runny nose. Not quite. Capsaicin, the chemical that makes food spicy, binds to heat/pain receptors in your mouth, tricking your brain into responding as if your mouth is on fire.
+
+---
+
+### Question 3
+
+What happens inside your body between the moment you touch a hot pan and the moment you pull your hand away?
+
+A. Nothing happens inside your body. Your hand moves on its own.
+B. Your hand sends a signal to your brain, which sends a signal back to your muscles
+C. The heat melts the nerves in your hand, causing it to jerk away
+D. Your eyes see the hot pan and tell your hand to move
+
+Correct Answer: B
+
+Feedback: Correct! Sensory receptors detect the heat and send an electrical signal through nerves. Your nervous system processes this signal and sends a response back to your muscles to pull away. Not quite. When you touch something hot, receptors send an electrical signal through your nerves. Your nervous system processes the signal and sends a motor signal back to your muscles to pull your hand away.
+
+---
+
+### Question 4
+
+Can your senses ever be tricked into perceiving something that is not real?
+
+A. No. Our senses always give us a perfectly accurate picture of reality.
+B. Yes. Optical illusions, phantom vibrations, and certain chemicals can fool our sensory receptors.
+C. Only sight can be tricked. All other senses are always accurate.
+D. Senses can only be tricked if a person is asleep
+
+Correct Answer: B
+
+Feedback: Correct! Our senses can be fooled. Optical illusions trick our vision, capsaicin tricks heat receptors, and menthol tricks cold receptors. The brain responds to the signal it receives, even if the stimulus is not what it seems. Not quite. All of our senses can be tricked. Optical illusions fool vision, capsaicin makes us feel burning heat that is not real, and menthol creates a sensation of cold without an actual temperature change.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Capsaicin from a Hot Cheeto binds to TRPV1 receptors in your mouth. What happens next in the nervous system pathway?
+
+A. The capsaicin travels through your blood to your brain, where it is tasted
+B. TRPV1 receptors send electrical signals through neurons to the brain, which responds with tears, sweating, and pain
+C. The capsaicin destroys mouth tissue, causing your body to produce tears to heal the damage
+D. TRPV1 receptors release capsaicin back into the mouth, amplifying the spicy flavor
+
+Correct Answer: B
+
+Feedback: Correct! Capsaicin activates TRPV1 heat/pain receptors, which generate electrical signals that travel through neurons to the brain. The brain interprets this as burning and triggers protective responses: tears, sweating, and mucus production. Not quite. When capsaicin binds to TRPV1 receptors, those receptors fire electrical signals through neurons to the brain. The brain cannot distinguish this signal from real burning, so it triggers pain responses including tears, sweating, and a runny nose.
+
+---
+
+### Question 2
+
+After being in a room with a strong smell for 10 minutes, you stop noticing the odor. What does the nervous system model predict is happening?
+
+A. The smell has actually gone away because the chemicals dispersed
+B. Your sensory receptors have adapted and reduced their firing rate in response to the constant stimulus
+C. Your brain has permanently lost the ability to detect that particular smell
+D. Your nose has become physically blocked by the smell particles
+
+Correct Answer: B
+
+Feedback: Correct! This is sensory adaptation. When exposed to a constant stimulus, receptors gradually decrease their firing rate. The smell is still there, but your nervous system reduces its response because the stimulus has not changed. Not quite. This phenomenon is called sensory adaptation. Your receptors reduce their firing rate when exposed to a constant, unchanging stimulus. The smell has not disappeared; your nervous system has simply decreased its response to it.
+
+---
+
+### Question 3
+
+Your hand pulls away from a hot stove BEFORE you consciously feel pain. How does the model explain this?
+
+A. Your hand has its own brain that makes decisions independently
+B. The reflex signal goes from receptors to the spinal cord, which sends a motor response back without waiting for the brain
+C. Your hand moves due to the heat expanding the muscles, not due to nerve signals
+D. You saw the stove was hot before touching it, so your hand pulled away from memory
+
+Correct Answer: B
+
+Feedback: Correct! Reflexes bypass the brain for speed. The pain signal goes from sensory receptors to the spinal cord, which immediately sends a motor signal to your arm muscles. Your brain receives the pain signal after your hand has already moved. Not quite. Reflex arcs bypass the brain entirely. The signal travels from receptors to the spinal cord, which sends an immediate motor response to your muscles. This takes about 0.05 seconds. Conscious awareness of pain comes later when the signal reaches the brain.
+
+---
+
+### Question 4
+
+Which statement best explains why capsaicin causes a real pain response even though it does not damage any tissue?
+
+A. Capsaicin is actually toxic and does cause microscopic tissue damage that we cannot see
+B. The brain responds to the nerve signal it receives, not the actual stimulus, and TRPV1 receptors send the same signal for capsaicin as for real heat
+C. Pain is entirely psychological and has nothing to do with physical receptors
+D. Capsaicin only triggers a mild response that people exaggerate for attention
+
+Correct Answer: B
+
+Feedback: Correct! The brain cannot tell the difference between a signal caused by capsaicin and one caused by actual heat above 43 degrees C. Both activate the same TRPV1 receptor, generating identical nerve signals. The response is genuine even though no damage occurs. Not quite. Capsaicin activates the exact same TRPV1 receptor that detects temperatures above 43 degrees C. The receptor sends an identical signal regardless of the cause. The brain responds to the signal, not the source, which is why the pain response is real.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

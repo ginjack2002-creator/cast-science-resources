@@ -863,6 +863,121 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Step 1) and a post-assessment (after Step 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously.
+
+---
+
+### Question 1
+
+CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC2 (Cause and Effect)
+
+In a model of a roller coaster system, a student placed three components on the screen: Hill Height, Speed at Bottom, and Energy of Motion. Hill Height was labeled as an external component.
+
+Which of the following best explains why Hill Height is classified as an external component in this model?
+
+A. Hill Height changes whenever Speed at Bottom changes.
+B. Hill Height is determined by the track design before the coaster starts moving, so it is an input that comes from outside the system.
+C. Hill Height is the same thing as Energy of Motion.
+D. Hill Height is internal because the roller coaster controls how tall the hill is.
+
+Correct Answer: B
+
+Feedback: If you chose A, that reverses the relationship. Hill Height does not change because of Speed at Bottom. Speed at Bottom changes because of Hill Height. If you chose B, you are correct. External components are inputs from outside the system that are set before the simulation runs. If you chose C, Hill Height and Energy of Motion are two different components. Hill Height refers to how tall the hill is, while Energy of Motion refers to kinetic energy. If you chose D, external means the component is NOT controlled by other parts inside the system. The track design sets the hill height before the ride begins.
+
+---
+
+### Question 2
+
+CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC2 (Cause and Effect)
+
+A student built a model showing that when Hill Height increases, Speed at Bottom also increases. The arrow between them was set to positive.
+
+What does the positive relationship between Hill Height and Speed at Bottom mean in this model?
+
+A. When Hill Height goes up, Speed at Bottom goes down.
+B. When Hill Height goes up, Speed at Bottom also goes up because taller hills give the coaster more stored energy that converts to speed.
+C. Hill Height and Speed at Bottom always stay at the same exact number.
+D. The positive sign means the coaster is moving forward instead of backward.
+
+Correct Answer: B
+
+Feedback: If you chose A, that would be a negative relationship, where one goes up and the other goes down. The model shows a positive relationship here. If you chose B, you are correct. A positive relationship means both components move in the same direction. Taller hills store more potential energy, which converts to greater speed at the bottom. If you chose C, a positive relationship does not mean the values are equal. It means they increase or decrease together. If you chose D, the positive sign in the model refers to the direction of the relationship between two components, not the direction the coaster travels.
+
+---
+
+### Question 3
+
+CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC4 (Systems and System Models)
+
+A student ran a simulation where Hill Height was set to high. The model showed that Speed at Bottom increased, and then Energy of Motion also increased.
+
+Trace the cause-and-effect chain through this model and explain what would happen if Hill Height were set to low instead.
+
+A. Speed at Bottom would increase and Energy of Motion would increase because the hill is still there.
+B. Speed at Bottom would decrease but Energy of Motion would increase because energy never changes.
+C. Speed at Bottom would decrease and Energy of Motion would also decrease because less height means less stored energy converting to speed, and less speed means less kinetic energy.
+D. Nothing would change because the coaster always goes the same speed.
+
+Correct Answer: C
+
+Feedback: If you chose A, setting Hill Height to low means less stored energy at the top, so the coaster cannot reach the same speed at the bottom. If you chose B, Energy of Motion depends on Speed at Bottom in this model. If speed decreases, energy of motion also decreases through the positive relationship. If you chose C, you are correct. The chain works like this: lower Hill Height means less stored energy, which means less Speed at Bottom, which means less Energy of Motion. Both positive arrows mean all three decrease together. If you chose D, the simulation shows that changing Hill Height does change Speed at Bottom and Energy of Motion. That is the whole point of the model.
+
+---
+
+### Question 4
+
+CAST Alignment: SEP 4.1 (Analyzing and Interpreting Data) + DCI 4-PS3-1 (Energy and Speed) + CCC2 (Cause and Effect)
+
+A group of students ran three simulation trials. In Trial 1, Hill Height was set to low, and Speed at Bottom was low and Energy of Motion was low. In Trial 2, Hill Height was set to medium, and Speed at Bottom was medium and Energy of Motion was medium. In Trial 3, Hill Height was set to high, and Speed at Bottom was high and Energy of Motion was high.
+
+Which claim is best supported by this simulation data?
+
+A. Energy of Motion stays the same no matter what Hill Height is set to.
+B. Higher hills cause lower speeds because gravity pulls the coaster backward.
+C. As Hill Height increases, both Speed at Bottom and Energy of Motion increase, showing that the speed of an object is related to its energy.
+D. The simulation is broken because all three values should be different from each other.
+
+Correct Answer: C
+
+Feedback: If you chose A, the data clearly shows Energy of Motion changing from low to medium to high across the three trials. It does not stay the same. If you chose B, the data shows the opposite pattern. Higher hills produced higher speeds in every trial. If you chose C, you are correct. The data from all three trials shows a consistent pattern: increasing Hill Height leads to increasing Speed at Bottom, which leads to increasing Energy of Motion. This directly supports the idea that the speed of an object is related to its energy. If you chose D, the three components are connected by positive relationships, so it makes sense that they would all increase together. The simulation is working correctly.
+
+---
+
+### Question 5
+
+CAST Alignment: SEP 2.3 (Developing and Using Models) + DCI 4-PS3-1 (Energy and Speed) + CCC5 (Energy and Matter)
+
+A skateboarder rides down a ramp at a skatepark. The ramp is very tall, and the skateboarder reaches a high speed at the bottom.
+
+Using what you learned from the roller coaster model, which explanation best applies the model to this new situation?
+
+A. The skateboarder goes fast because skateboards have engines that push them.
+B. The tall ramp stores energy at the top. As the skateboarder rolls down, that stored energy converts to speed, and greater speed means greater energy of motion, just like a taller roller coaster hill produces more speed and more kinetic energy at the bottom.
+C. The skateboarder goes fast because the ramp is painted a bright color.
+D. The skateboarder would go the same speed on a short ramp because height does not affect speed.
+
+Correct Answer: B
+
+Feedback: If you chose A, skateboards do not have engines. The speed comes from gravity converting stored energy into motion as the skateboarder rolls down the ramp. If you chose B, you are correct. The skateboard ramp works like the roller coaster hill in the model. A taller ramp means more stored energy at the top, which converts to more speed at the bottom, which means more energy of motion. The same cause-and-effect chain applies. If you chose C, the color of the ramp has nothing to do with how fast the skateboarder goes. Height is the key factor. If you chose D, the model showed clearly that height does affect speed. A taller hill or ramp produces more speed at the bottom because there is more stored energy to convert.
+
+---
+
+### Answer Key
+
+Question 1: B (Cognitive Level: Identify -- SEP 2.3, DCI 4-PS3-1, CCC2)
+Question 2: B (Cognitive Level: Reason -- SEP 2.3, DCI 4-PS3-1, CCC2)
+Question 3: C (Cognitive Level: Reason + Evidence -- SEP 2.3, DCI 4-PS3-1, CCC4)
+Question 4: C (Cognitive Level: Reason + Evidence -- SEP 4.1, DCI 4-PS3-1, CCC2)
+Question 5: B (Cognitive Level: Predict + Apply -- SEP 2.3, DCI 4-PS3-1, CCC5)
+
+---
+
 ## Resources
 
 | Resource | Link |

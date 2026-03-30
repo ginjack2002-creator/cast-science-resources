@@ -935,6 +935,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+Since 1950, humans have produced 8.3 billion metric tons of plastic. Of all plastic waste ever generated, approximately what percentage has been recycled?
+
+A. About 45%, with most recycled into new products
+B. About 30%, with recycling rates increasing each decade
+C. About 9%, with 79% accumulating in landfills or the environment
+D. About 60%, with advanced recycling technologies processing most waste
+
+Correct Answer: C
+
+Feedback: Correct. Only 9% of all plastic ever produced has been recycled, 12% has been incinerated, and 79% has accumulated in landfills or the natural environment. This extremely low recycling rate is a central factor in the plastic pollution crisis. Incorrect. The recycling rate for plastic is far lower than most people assume. Only 9% of all plastic ever produced has been recycled. The remaining 91% has been incinerated (12%) or accumulated in landfills and the environment (79%).
+
+---
+
+### Question 2
+
+Microplastics have been detected in human blood, lungs, placenta, and breast milk. Which process best explains how plastic particles from the ocean reach human tissue?
+
+A. Plastic fragments evaporate from ocean surfaces and are inhaled directly
+B. Bioaccumulation through the food web, where microplastics consumed by small organisms concentrate at each trophic level until reaching humans
+C. Microplastics are absorbed through skin contact with ocean water during swimming
+D. Plastic particles are only found in people who work in plastic manufacturing
+
+Correct Answer: B
+
+Feedback: Correct. Microplastics enter food webs when filter feeders and small organisms ingest them. At each trophic level, concentrations increase through biomagnification. Humans at the top of food chains accumulate microplastics from seafood and other contaminated food sources. Incorrect. The primary pathway is bioaccumulation through food webs. Small organisms ingest microplastics, which concentrate at each trophic level through biomagnification. Humans consume contaminated seafood and other products, accumulating plastic particles in their tissues.
+
+---
+
+### Question 3
+
+Plastic production is currently growing at approximately 4% per year. If recycling rates triple from 9% to 27%, what would a systems analysis predict about total environmental plastic accumulation?
+
+A. Environmental plastic would decrease rapidly because recycling is tripling
+B. Environmental plastic would continue increasing because production growth outpaces the improved recycling rate
+C. Environmental plastic would remain exactly constant because the two rates would balance
+D. Environmental plastic would disappear within 10 years due to natural degradation
+
+Correct Answer: B
+
+Feedback: Correct. At 4% annual production growth, total plastic output doubles roughly every 18 years. Tripling recycling from 9% to 27% still leaves 73% of a rapidly growing total entering landfills or the environment. The exponential growth of production overwhelms the linear improvement in recycling. Incorrect. This is a rate comparison problem. Tripling recycling sounds impressive but only moves from 9% to 27% of waste recycled. Meanwhile, 4% annual production growth is exponential. The growing total output means more plastic enters the environment each year despite improved recycling.
+
+---
+
+### Question 4
+
+Plastics absorb and concentrate persistent organic pollutants (POPs) like PCBs from surrounding water. Why does this property make microplastics especially dangerous in food webs?
+
+A. The POPs make plastics biodegradable, releasing toxins all at once
+B. Microplastics act as delivery vehicles for concentrated toxins that are released in animal tissue upon ingestion, amplifying chemical exposure at each trophic level
+C. POPs attached to plastics are neutralized by stomach acid and pose no health risk
+D. Only plastics larger than 5mm can absorb POPs from the environment
+
+Correct Answer: B
+
+Feedback: Correct. Microplastics concentrate POPs from water on their surface, acting like toxic sponges. When organisms ingest these particles, the toxins transfer to their tissue. Through biomagnification, toxin concentrations increase at each trophic level, making top predators and humans most exposed. Incorrect. Microplastics absorb and concentrate toxic chemicals from surrounding water. When ingested by organisms, these concentrated toxins transfer to tissue. Biomagnification amplifies concentrations up the food chain, making microplastics essentially toxic delivery vehicles.
+
+---
+
+### Question 5
+
+A circular economy model for plastics would fundamentally differ from the current linear model. Which characteristic best defines a circular economy approach?
+
+A. Producing plastic more cheaply so more people can afford to buy and discard products
+B. Designing products for reuse, repair, and recycling so that no plastic ever becomes pollution
+C. Increasing landfill capacity to store more plastic waste
+D. Replacing all plastic with paper products regardless of functionality
+
+Correct Answer: B
+
+Feedback: Correct. A circular economy eliminates waste by design. Products are created for durability, reuse, repair, and eventual recycling into new products. This contrasts with the current take-make-waste model where plastic is designed for single use and disposal. Incorrect. A circular economy fundamentally redesigns the production-consumption cycle. Instead of a linear path from production to disposal, materials continuously cycle through use, reuse, repair, and recycling, so nothing becomes waste or pollution.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's model shows that even after all new plastic input to the ocean stops, microplastic concentration continues increasing for decades. What mechanism best explains this finding?
+
+A. New plastic is secretly being dumped into the ocean by unmonitored sources
+B. Existing macroplastics already in the ocean continue fragmenting into microplastics through UV radiation, wave action, and biological processes
+C. Microplastics are spontaneously generated from dissolved organic matter in seawater
+D. Ocean currents concentrate microplastics in measurement areas, creating an illusion of increase
+
+Correct Answer: B
+
+Feedback: Correct. The estimated 150 million metric tons of plastic already in the ocean continuously fragment into smaller pieces through UV degradation, mechanical wave action, and biological processes. This existing stock creates a legacy effect where microplastic concentrations rise even without new input. Incorrect. The legacy effect explains this pattern. The massive existing stock of macroplastics in the ocean (approximately 150 million tons) continuously breaks down into microplastics through UV, wave action, and biological processes. This fragmentation continues for centuries regardless of new input.
+
+---
+
+### Question 2
+
+A student compares three model scenarios: business as usual, recycling improvement only, and system transformation (production reduction + circular economy + producer responsibility). Only the system transformation shows a meaningful decline in environmental plastic. What does this reveal about the plastic pollution problem?
+
+A. Recycling is a waste of resources and should be abandoned entirely
+B. Downstream solutions alone cannot solve a problem driven by exponential upstream production growth; addressing the source is essential
+C. System transformation is too expensive to be practical
+D. Plastic pollution will solve itself naturally over time without any intervention
+
+Correct Answer: B
+
+Feedback: Correct. The model demonstrates that when production grows exponentially, downstream waste management can only slow accumulation, not reverse it. Only reducing production at the source, combined with circular design and recycling, can actually decrease environmental plastic loading. Incorrect. The model evidence shows a fundamental asymmetry: downstream solutions (recycling, cleanup) cannot keep pace with exponential upstream growth (production). Only addressing the source (reducing production, circular design) while also improving downstream management can reverse the trend.
+
+---
+
+### Question 3
+
+The model shows that bioaccumulation causes microplastic concentrations in top predators to be orders of magnitude higher than in surrounding water. Which principle of ecology explains this amplification?
+
+A. Energy flows efficiently from lower to higher trophic levels
+B. Biomagnification, where persistent substances that are ingested but not excreted accumulate at each trophic level, reaching highest concentrations in top predators
+C. Top predators preferentially seek out and consume plastic-contaminated prey
+D. Ocean currents deliver microplastics directly to top predator habitats
+
+Correct Answer: B
+
+Feedback: Correct. Biomagnification occurs because persistent substances like microplastics are consumed at each trophic level but not efficiently excreted. Each predator accumulates the plastics from all the prey it consumes over its lifetime, resulting in exponentially increasing concentrations up the food chain. Incorrect. Biomagnification is the key process. Since microplastics are persistent and not efficiently eliminated by organisms, each consumer accumulates the plastic burden of all the organisms it eats. Across multiple trophic levels, this produces dramatically amplified concentrations in top predators.
+
+---
+
+### Question 4
+
+A student argues that ocean cleanup projects are the solution to marine plastic pollution. Based on model evidence about plastic pathways and accumulation dynamics, what is the most accurate evaluation of this claim?
+
+A. Ocean cleanup is the complete solution because all plastic pollution is in the ocean
+B. Ocean cleanup addresses the symptom but not the cause; without reducing input, cleanup efforts are overwhelmed by the 8-12 million tons entering the ocean annually, and they cannot capture microplastics
+C. Ocean cleanup is unnecessary because plastic naturally biodegrades within a few years
+D. Ocean cleanup should be the sole focus because it is more cost-effective than reducing production
+
+Correct Answer: B
+
+Feedback: Correct. Model evidence shows that 8-12 million tons of plastic enter the ocean annually, far exceeding any cleanup capacity. Additionally, cleanup technologies cannot effectively capture microplastics, which are the most harmful form. Without reducing the input, cleanup is necessary but insufficient. Incorrect. The model clearly shows that input rate (8-12 million tons/year) vastly exceeds any realistic cleanup capacity. Furthermore, once plastic fragments into microplastics, it becomes essentially impossible to remove. Cleanup is a valuable complement but cannot solve the problem without source reduction.
+
+---
+
+### Question 5
+
+Based on the model's findings about plastic pollution pathways, which policy intervention would most effectively reduce long-term environmental plastic accumulation and human health exposure?
+
+A. Banning plastic straws and bags while allowing production growth to continue
+B. Extended producer responsibility laws that require manufacturers to design for circularity and fund end-of-life management, combined with production caps
+C. Subsidizing plastic production to make recycling more economically attractive
+D. Increasing landfill capacity in coastal areas to prevent ocean leakage
+
+Correct Answer: B
+
+Feedback: Correct. Extended producer responsibility addresses the root cause by shifting the cost of waste management to producers, incentivizing design for circularity. Combined with production caps, it addresses both the upstream source and downstream management, which the model shows is the only effective combination. Incorrect. The model shows that effective solutions must address both production and waste management. Extended producer responsibility creates economic incentives for manufacturers to design durable, recyclable products, while production caps prevent exponential growth from overwhelming improved waste management.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -975,6 +975,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-ESS3-5, HS-ESS2-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is a 'tipping point' in the context of Earth's climate system?
+
+A. The point at which global temperatures begin to rise above pre-industrial levels
+B. A critical threshold where a small additional change triggers a dramatic, often irreversible shift in system behavior
+C. The moment when CO2 emissions reach their peak before declining
+D. A natural cycle of warming and cooling that repeats every few thousand years
+
+Correct Answer: B
+
+Feedback: Correct. A tipping point is a threshold beyond which the system undergoes rapid, nonlinear change that may be irreversible on human timescales, fundamentally altering system behavior. A tipping point is not simply a gradual temperature increase or emissions peak. It is a critical threshold where the system shifts from one state to another, often abruptly and irreversibly.
+
+---
+
+### Question 2
+
+When Arctic ice melts, it exposes darker ocean water that absorbs more solar radiation, causing further warming and more ice melt. What type of feedback is this?
+
+A. Negative feedback that stabilizes the climate
+B. A reinforcing feedback loop that amplifies the original change
+C. A balancing feedback loop that returns the system to equilibrium
+D. A linear response where change is proportional to input
+
+Correct Answer: B
+
+Feedback: Correct. The ice-albedo feedback is a reinforcing loop: warming melts ice, reducing reflectivity (albedo), which absorbs more heat, causing more warming and more melting. This is a reinforcing (positive) feedback loop because the output amplifies the input. More warming causes more melting, which causes more absorption of solar energy, leading to even more warming.
+
+---
+
+### Question 3
+
+Permafrost in Arctic regions contains approximately how much carbon relative to the current atmosphere?
+
+A. About 10% of current atmospheric carbon
+B. Roughly equal to current atmospheric carbon
+C. About twice the carbon currently in the atmosphere
+D. A negligible amount that has little impact on climate
+
+Correct Answer: C
+
+Feedback: Correct. Arctic permafrost contains an estimated 1.5 trillion tons of carbon, roughly twice the amount currently in the atmosphere, making permafrost thaw a potentially massive additional source of greenhouse gases. Arctic permafrost contains approximately 1.5 trillion tons of carbon, about twice what is currently in the atmosphere. If released through thawing, this represents a massive greenhouse gas source independent of human emissions.
+
+---
+
+### Question 4
+
+Why do scientists describe some climate tipping points as 'irreversible on human timescales'?
+
+A. Because humans lack the technology to reverse climate change
+B. Because once certain feedback loops are activated, the system continues changing even if the original cause is removed
+C. Because governments are unwilling to take action on climate policy
+D. Because Earth has never experienced rapid climate shifts before
+
+Correct Answer: B
+
+Feedback: Correct. Once reinforcing feedback loops are fully activated, they become self-sustaining. For example, once permafrost begins releasing methane, the warming this causes triggers more permafrost thaw, regardless of human emissions reductions. Irreversibility refers to the self-sustaining nature of activated feedback loops. Once crossed, the system's own internal dynamics drive continued change even if the original trigger is removed.
+
+---
+
+### Question 5
+
+Which concept explains why the full effects of today's greenhouse gas emissions will not be felt for decades?
+
+A. The greenhouse effect
+B. Thermal inertia of the oceans
+C. Photosynthetic carbon absorption
+D. Atmospheric dilution of CO2
+
+Correct Answer: B
+
+Feedback: Correct. Oceans have enormous thermal inertia, meaning they absorb and slowly distribute heat over time. This creates a dangerous delay between emissions and their full warming impact. Thermal inertia describes the tendency of large systems like oceans to resist rapid temperature change. Oceans absorb excess heat slowly, creating a time lag that masks the true warming trajectory.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+A student's climate model shows that reducing CO2 emissions to zero after crossing the ice-albedo tipping point does not restore ice cover within 200 years. What does this demonstrate?
+
+A. The model contains an error because reducing emissions should reverse warming
+B. The reinforcing feedback loop has become self-sustaining, driving continued warming independent of emissions
+C. CO2 emissions have no effect on ice cover
+D. The ice-albedo effect is a balancing feedback loop that requires time to respond
+
+Correct Answer: B
+
+Feedback: Correct. Once the tipping point is crossed, the ice-albedo reinforcing loop sustains itself: less ice means more absorption, more warming, and still less ice. Eliminating the original trigger (emissions) does not break the loop. This is the defining characteristic of a tipping point. Once crossed, the system's internal reinforcing feedback loops drive continued change. Removing the original cause is insufficient to reverse the process.
+
+---
+
+### Question 2
+
+The simulation reveals that the climate system has multiple reinforcing feedback loops (ice-albedo, permafrost methane, ocean heat absorption). How do these coupled loops affect system behavior compared to a system with only one feedback loop?
+
+A. Multiple loops cancel each other out, creating stability
+B. Multiple loops create cascading tipping points where crossing one threshold triggers others
+C. Each loop operates independently with no interaction
+D. Multiple loops slow the overall rate of change by distributing energy
+
+Correct Answer: B
+
+Feedback: Correct. Coupled reinforcing loops create cascading tipping points. Crossing the ice-albedo threshold can trigger permafrost thaw, which releases methane, causing more warming that accelerates ice loss further. Multiple reinforcing loops do not cancel out or operate independently. They cascade, meaning crossing one tipping point can trigger additional tipping points, creating a domino effect of accelerating change.
+
+---
+
+### Question 3
+
+A model comparison shows that the same CO2 emission level produces stable conditions in one scenario but runaway warming in another. What variable most likely differs between the two scenarios?
+
+A. The color of the sky in the simulation
+B. Whether the system's initial temperature is above or below the tipping point threshold
+C. The number of components in the model
+D. The speed at which the simulation runs
+
+Correct Answer: B
+
+Feedback: Correct. Threshold dynamics mean that the same input can produce dramatically different outcomes depending on the system's starting state. Below the threshold, the system absorbs the change; above it, reinforcing feedback loops activate. This is an example of threshold dynamics. The system's behavior depends critically on whether it is above or below the tipping point. The same emission level can be manageable in one state and catastrophic in another.
+
+---
+
+### Question 4
+
+Ocean heat absorption has been described as 'masking' the true rate of global warming. Based on the model, why is this masking effect dangerous rather than protective?
+
+A. Oceans are cooling the planet permanently, so there is no danger
+B. The absorbed heat will eventually be released, and the delay creates a false sense of security while committed warming accumulates
+C. Ocean absorption reduces CO2 levels in the atmosphere directly
+D. Ocean heat absorption has no significant effect on climate modeling
+
+Correct Answer: B
+
+Feedback: Correct. Ocean heat absorption creates a dangerous time delay. The warming is committed but not yet felt. When oceans reach absorption capacity, surface temperatures will rise to reflect all accumulated excess heat, revealing the true extent of warming. Ocean heat absorption is temporary storage, not permanent removal. The delay means we experience less warming than we have committed to, creating a false sense that the problem is manageable when the full impact has simply been deferred.
+
+---
+
+### Question 5
+
+Based on simulation evidence, which statement best describes the relationship between CO2 emissions and climate tipping points?
+
+A. Reducing emissions always prevents tipping points from being crossed
+B. Tipping points exist at specific temperature thresholds, and the current trajectory may cross multiple thresholds even with moderate emission reductions
+C. Tipping points are theoretical constructs with no basis in climate data
+D. Only complete elimination of all emissions can prevent any climate change
+
+Correct Answer: B
+
+Feedback: Correct. The model shows that tipping points occur at specific thresholds (estimated at 1.5-2.0 degrees C above pre-industrial). Moderate reductions may slow the approach but not prevent crossing if the trajectory is already aimed at these thresholds. The simulation demonstrates that tipping points are real thresholds in the climate system. Moderate emission reductions change the timeline but may not prevent threshold crossing if cumulative warming is already on track to reach critical levels.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

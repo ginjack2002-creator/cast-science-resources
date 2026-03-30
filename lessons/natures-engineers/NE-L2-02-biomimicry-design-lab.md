@@ -174,6 +174,156 @@ Robotics Engineers specializing in biomimicry design robots inspired by nature f
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS4-4, MS-ETS1-1, MS-ETS1-2, MS-ETS1-3, MS-ETS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What does 'fidelity' mean in engineering design?
+
+A. How much a design costs to build
+B. How accurately an artificial design replicates the original natural feature
+C. How fast a machine can move
+D. How many people like the design
+
+Correct Answer: B
+
+Feedback: Correct! Fidelity refers to how accurately an artificial design copies or replicates the original natural feature it is based on. In engineering, fidelity means how accurately an artificial design replicates the original. High fidelity means the design closely matches the real thing; low fidelity means it is a rough approximation.
+
+---
+
+### Question 2
+
+Why is it difficult to build a robot that perfectly mimics an animal?
+
+A. Animals are too small to copy
+B. Every design improvement creates tradeoffs with other performance aspects
+C. Robots cannot be built in animal shapes
+D. Engineers are not allowed to study animals
+
+Correct Answer: B
+
+Feedback: Yes! Building animal-like robots is challenging because improving one aspect (like movement accuracy) often creates tradeoffs with other aspects (like energy use or durability). Creating a lifelike animal robot is hard because every design choice involves tradeoffs. Making the robot move more naturally might require more energy. Using lifelike materials might reduce durability. Engineers must balance multiple competing goals.
+
+---
+
+### Question 3
+
+What is an iteration in the engineering design process?
+
+A. The final step where you stop working
+B. A cycle of testing, evaluating, and improving a design
+C. When you copy someone else's design exactly
+D. When you give up on a project
+
+Correct Answer: B
+
+Feedback: Correct! An iteration is one cycle of testing, evaluating results, and making improvements to a design. Good engineering involves many iterations. An iteration is a complete cycle of the design process: build, test, evaluate, and improve. Engineers rarely get a design right on the first try. Each iteration brings the design closer to the goal.
+
+---
+
+### Question 4
+
+Can a robot with the wrong basic shape be fixed by using better materials?
+
+A. Yes, better materials always fix design problems
+B. No, the fundamental design must be correct first, then materials improve it
+C. Materials do not matter at all in engineering
+D. Only the color of the materials matters
+
+Correct Answer: B
+
+Feedback: Yes! The fundamental design choice matters most. Better materials can improve a good design, but they cannot rescue a fundamentally flawed one. The fundamental shape and design must be correct first. No amount of expensive or high-tech materials can fix a design that copies the wrong animal feature. The basic concept must work before materials and power can enhance it.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the model, which input had the GREATEST impact on overall performance?
+
+A. Power Source, because more power always fixes everything
+B. Material Choice, because expensive materials are always best
+C. Animal Feature Selected, because the fundamental design choice matters more than materials or power
+D. All three inputs have exactly equal impact
+
+Correct Answer: C
+
+Feedback: Correct! The model showed that the fundamental design choice (which animal feature to copy) had the greatest impact. No material or power boost could fix a bad fundamental design. The model clearly demonstrated that selecting the right animal feature to copy is the most important decision. When the wrong feature was chosen (pointed tail instead of flat for swimming), even the best materials and maximum power could not compensate.
+
+---
+
+### Question 2
+
+What tradeoff did the model reveal about using lifelike materials?
+
+A. Lifelike materials had no tradeoffs and were best in every category
+B. Lifelike materials reduced detection risk but increased energy use and decreased durability
+C. Lifelike materials were the cheapest option available
+D. Lifelike materials only affected appearance, nothing else
+
+Correct Answer: B
+
+Feedback: Yes! The model showed that lifelike materials (like silicone) made the robot harder to detect as artificial, but they also increased energy use and reduced durability. This is a classic engineering tradeoff. Lifelike materials like silicone reduced detection risk (the robot looked more real) but came with costs: they increased energy use and decreased durability. This demonstrates that in engineering, improving one metric often worsens another.
+
+---
+
+### Question 3
+
+What did the model show about whether more power can overcome material limitations?
+
+A. More power completely solves all material problems
+B. More power helps somewhat but creates its own problems, like heavier batteries and shorter lifespan
+C. Power and materials are completely unrelated in the model
+D. More power always makes performance worse
+
+Correct Answer: B
+
+Feedback: Correct! More power improved some outputs but introduced new tradeoffs: heavier batteries, more heat, and shorter operational lifespan. There is no free lunch in engineering. The model showed that increasing power helped improve movement accuracy, but it also brought new problems: the power source was heavier, generated more heat, and reduced operational lifespan. Engineering tradeoffs mean you cannot simply add more power to solve every problem.
+
+---
+
+### Question 4
+
+Why are nature's designs so efficient compared to human engineering?
+
+A. Nature uses better computers than humans
+B. Nature's designs have been optimized through millions of years of evolution
+C. Nature does not follow the laws of physics
+D. Nature's designs are not actually efficient
+
+Correct Answer: B
+
+Feedback: That is right! Evolution has been testing and refining animal designs for millions of years. Only the most efficient designs survived, making them excellent models for human engineering. Nature's designs are efficient because evolution has been testing and selecting the best solutions for millions of years. Animals that survived had the most efficient body structures and features. This is why biomimicry is so valuable: engineers can start from solutions that have already been refined over vast timescales.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Lesson Metadata
 
 | Field | Value |

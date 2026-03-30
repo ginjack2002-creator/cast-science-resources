@@ -728,6 +728,148 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 1-LS1-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do animals need to stay alive?
+
+A. Toys and games
+B. Food and water
+C. A TV and a phone
+
+Correct Answer: B
+
+Feedback: Yes! All animals need food and water to survive. Animals need real things like food and water to stay alive, not toys or electronics.
+
+---
+
+### Question 2
+
+What happens to an animal that has no water?
+
+A. It stays healthy
+B. It gets sick and weak
+C. Nothing happens
+
+Correct Answer: B
+
+Feedback: That is right! Without water, an animal gets sick and weak. Water is very important. Without it, an animal's body cannot work and it gets very sick.
+
+---
+
+### Question 3
+
+What is a shelter?
+
+A. A type of food
+B. A safe place to hide
+C. A kind of weather
+
+Correct Answer: B
+
+Feedback: Yes! A shelter is a safe place where an animal can hide from danger and bad weather. A shelter is a safe home or hiding place, like a bird's nest or a rabbit's burrow.
+
+---
+
+### Question 4
+
+Do all animals need the same things to survive?
+
+A. No, every animal needs completely different things
+B. Yes, they all need food, water, air, and shelter
+C. Only big animals need food and water
+
+Correct Answer: B
+
+Feedback: That is right! Every animal needs food, water, air, and shelter. All animals, big and small, need the same four basic things: food, water, air, and shelter.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+What are the four basic things all animals need to survive?
+
+A. Food, water, air, and shelter
+B. Food, toys, water, and a bed
+C. Water, friends, sun, and music
+
+Correct Answer: A
+
+Feedback: Yes! Food, water, air, and shelter are the four basic needs of all animals. All animals need four things to survive: food for energy, water to drink, air to breathe, and shelter to stay safe.
+
+---
+
+### Question 2
+
+When resources available goes UP, what happens to animal health?
+
+A. Animal health goes down
+B. Animal health stays the same
+C. Animal health goes up
+
+Correct Answer: C
+
+Feedback: That is right! More resources means a healthier, stronger animal. When animals have plenty of food, water, and shelter, they stay healthy and strong.
+
+---
+
+### Question 3
+
+What is a habitat?
+
+A. An animal's favorite food
+B. The place where an animal lives that has what it needs
+C. A type of shelter made of wood
+
+Correct Answer: B
+
+Feedback: Yes! A habitat is the place where an animal lives and finds everything it needs. A habitat is an animal's natural home where it can find food, water, air, and shelter.
+
+---
+
+### Question 4
+
+A fish lives in a pond. Why is the pond a good habitat for the fish?
+
+A. Because ponds are pretty
+B. Because the pond has water, food, and places to hide
+C. Because fish like the color blue
+
+Correct Answer: B
+
+Feedback: Yes! The pond gives the fish water to swim in, food to eat, and places to hide. A good habitat has all four things an animal needs. A pond gives a fish water, food, air, and shelter.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+**Post-Assessment:**
+Question 1: A
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

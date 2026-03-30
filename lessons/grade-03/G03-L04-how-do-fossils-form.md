@@ -819,6 +819,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 3-LS4-1.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What do you think a fossil is?
+
+A. A living animal found underground
+B. The preserved remains of an animal or plant from long ago, usually found in rock
+C. A type of rock that looks like an animal
+D. A toy dinosaur bone
+
+Correct Answer: B
+
+Feedback: That is right! A fossil is the preserved remains or traces of an animal or plant that lived long ago. Most fossils are found in rock. A fossil is not a living thing or a toy. It is the preserved remains of an animal or plant from long ago, and fossils are usually found inside rocks.
+
+---
+
+### Question 2
+
+How long do you think it takes for a fossil to form?
+
+A. A few days
+B. A few weeks
+C. About one year
+D. Millions of years
+
+Correct Answer: D
+
+Feedback: You got it! Fossils take millions of years to form. The process of turning bones and shells into rock is very, very slow. Fossil formation is an extremely slow process. It takes millions of years for remains to be buried, pressed, and slowly turned into rock by minerals.
+
+---
+
+### Question 3
+
+Where do you think fossils are usually found?
+
+A. On top of mountains in the snow
+B. Floating in the ocean
+C. Inside layers of rock underground
+D. Growing on trees
+
+Correct Answer: C
+
+Feedback: Correct! Most fossils are found inside layers of sedimentary rock underground. They were buried by layers of sand and mud over millions of years. Fossils form when remains are buried under layers of sand and mud. Over millions of years, those layers turn to rock, so fossils are found inside layers of rock underground.
+
+---
+
+### Question 4
+
+What can fossils tell us about the past?
+
+A. Nothing useful
+B. What animals looked like and where they lived long ago
+C. What the weather will be tomorrow
+D. How to make new animals
+
+Correct Answer: B
+
+Feedback: Great thinking! Fossils are like clues from the past. They tell us what animals and plants looked like, what they ate, and what their environment was like millions of years ago. Fossils give us important clues about the past. By studying fossils, scientists can figure out what ancient animals looked like, what they ate, and what kind of environment they lived in.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In the fossil model, when Burial Depth increases, what happens to Pressure?
+
+A. Pressure decreases because there is more space underground
+B. Pressure increases because more layers of sediment pile on top
+C. Pressure stays the same no matter how deep the burial
+D. Pressure has nothing to do with burial
+
+Correct Answer: B
+
+Feedback: Correct! Burial Depth and Pressure have a positive relationship. The deeper the remains are buried, the more sediment layers press down on top, creating more pressure. Think about what happens when more layers pile up. Each new layer adds weight. The deeper something is buried, the more layers are pressing down, so pressure increases.
+
+---
+
+### Question 2
+
+What is the correct order for how a fossil forms?
+
+A. Animal dies, fossil appears the next day, scientist digs it up
+B. Animal dies, remains get buried by sediment, pressure builds, minerals replace bones over millions of years
+C. Rocks turn into animals, then back into rocks
+D. Scientists make fossils in a laboratory
+
+Correct Answer: B
+
+Feedback: Exactly! First the animal dies, then its remains get buried by sediment layers. Over millions of years, pressure builds and minerals slowly replace the bones, turning them into rock. Fossils form in steps: an animal dies and gets buried by sediment. Over millions of years, more layers pile on (pressure), and minerals in groundwater slowly replace the bone material with rock.
+
+---
+
+### Question 3
+
+A scientist who studies fossils to learn about ancient life is called a:
+
+A. Meteorologist
+B. Paleontologist
+C. Veterinarian
+D. Astronaut
+
+Correct Answer: B
+
+Feedback: Right! A paleontologist is a scientist who studies fossils to learn about life on Earth millions of years ago. A paleontologist studies fossils and ancient life. A meteorologist studies weather, a veterinarian cares for animals, and an astronaut travels to space.
+
+---
+
+### Question 4
+
+Why did the shallow burial scenario produce a weaker fossil than the deep burial scenario?
+
+A. Shallow burials happen too fast
+B. Shallow burial means less pressure and less mineral replacement, so fossilization is less complete
+C. Deep burials are closer to the sun
+D. Shallow burials use different minerals
+
+Correct Answer: B
+
+Feedback: You got it! Shallow burial means fewer sediment layers, less pressure, and less mineral replacement. The deeper the burial, the more completely the remains turn into a fossil. With shallow burial, there are fewer layers pressing down, so there is less pressure. Less pressure means the mineral replacement process is less complete, resulting in a weaker fossil.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: D
+Question 3: C
+Question 4: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

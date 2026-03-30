@@ -882,6 +882,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to MS-LS1-1, MS-LS1-2.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What is the basic building block of all living things?
+
+A. Atoms
+B. Cells
+C. Molecules
+D. Organs
+
+Correct Answer: B
+
+Feedback: Correct! Cells are the smallest unit of life. Every living organism is made of one or more cells. Not quite. While atoms and molecules are important, the cell is the basic unit of life. All living things are made of cells.
+
+---
+
+### Question 2
+
+Why do scientists need microscopes to study most cells?
+
+A. Cells move too fast to see
+B. Cells are transparent and invisible
+C. Cells are too small to see with the naked eye
+D. Cells only exist inside bones where we can't look
+
+Correct Answer: C
+
+Feedback: Correct! Most cells are far too small to see without magnification. Human cells are typically 10-100 micrometers wide. Not quite. The main reason we need microscopes is that cells are extremely small, usually between 10 and 100 micrometers, which is far below what our eyes can detect.
+
+---
+
+### Question 3
+
+Which of these is a living thing made of only ONE cell?
+
+A. A dog
+B. A tree
+C. A bacterium
+D. A mushroom
+
+Correct Answer: C
+
+Feedback: Correct! Bacteria are single-celled organisms. Each bacterium is one complete living cell that carries out all life functions. Not quite. Dogs, trees, and mushrooms are all made of many cells. Bacteria are single-celled organisms, meaning one cell does everything needed to survive.
+
+---
+
+### Question 4
+
+What do you think cells need to stay alive?
+
+A. Only water
+B. Only sunlight
+C. Nutrients, oxygen, and waste removal
+D. Nothing — cells are self-sufficient
+
+Correct Answer: C
+
+Feedback: Correct! Cells need nutrients for energy, oxygen for cellular respiration, and they must remove waste to survive. Not quite. Like all living things, cells need multiple resources: nutrients for energy, oxygen for respiration, and a way to get rid of waste products.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Why can't a single cell grow to be as large as a basketball?
+
+A. Cells are programmed to stay small by their DNA
+B. As a cell grows, its volume increases faster than its surface area, so it can't exchange materials efficiently
+C. Gravity would crush a cell that large
+D. There aren't enough organelles to fill a cell that big
+
+Correct Answer: B
+
+Feedback: Correct! The surface-area-to-volume ratio is the key constraint. A larger cell would have too much interior for its membrane to supply with nutrients and remove waste from. Not quite. The real reason is the surface-area-to-volume ratio. As a cell grows, its interior (volume) increases faster than its membrane (surface area), so the membrane can't keep up with exchanging nutrients and waste.
+
+---
+
+### Question 2
+
+In the cell model, what happens when Nutrient Supply is locked at 10%?
+
+A. Cell Size increases because the cell stores energy
+B. Waste Buildup decreases because the cell uses less
+C. Cell Size decreases and Waste Buildup increases as the cell loses function
+D. Nothing changes because cells can survive without nutrients
+
+Correct Answer: C
+
+Feedback: Correct! Without adequate nutrients, cells shrink because they can't maintain their structures, and waste builds up because the cell can't power its cleanup systems. Not quite. When nutrient supply drops to 10%, cells shrink because they lack energy to maintain their structures. Waste also builds up because the cell can't power its waste removal systems.
+
+---
+
+### Question 3
+
+Which statement best describes the relationship between Oxygen Level and Waste Buildup in the cell model?
+
+A. Positive relationship — more oxygen means more waste
+B. Negative relationship — more oxygen helps break down waste, so waste decreases
+C. No relationship — oxygen and waste are independent
+D. Oxygen creates waste as a byproduct of respiration
+
+Correct Answer: B
+
+Feedback: Correct! Higher oxygen levels allow cellular respiration to work efficiently, which helps break down and remove waste. Low oxygen causes waste to accumulate. Not quite. Oxygen and Waste Buildup have a negative relationship. More oxygen allows efficient cellular respiration, which helps cells break down waste. When oxygen drops, waste accumulates.
+
+---
+
+### Question 4
+
+A scientist observes that cells in a tissue sample are shrinking and accumulating waste. Which combination of conditions most likely explains this?
+
+A. High nutrient supply and high oxygen
+B. Low nutrient supply and low oxygen
+C. High nutrient supply and low oxygen
+D. Low nutrient supply and high oxygen
+
+Correct Answer: B
+
+Feedback: Correct! Both low nutrients (causing shrinkage) and low oxygen (causing waste buildup) together would produce these symptoms. This is what happens when blood flow to a tissue is restricted. Not quite. Shrinking cells indicate low nutrient supply, and waste accumulation indicates low oxygen. Both conditions together, such as restricted blood flow, would cause these observations.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: C
+
+**Post-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+
+---
+
 ## Resources
 
 | Resource | Link |

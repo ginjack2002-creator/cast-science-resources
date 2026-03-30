@@ -887,6 +887,188 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 5 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 5. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to HS-PS3-1, HS-PS3-3.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+A phone battery stores energy in chemical form. When the phone is used, this energy is converted into multiple other forms. Which sequence correctly represents this energy conversion chain?
+
+A. Light energy → chemical energy → electrical energy → heat
+B. Chemical energy → electrical energy → light, sound, computation, and heat
+C. Electrical energy → chemical energy → nuclear energy → light
+D. Heat energy → electrical energy → chemical energy → light
+
+Correct Answer: B
+
+Feedback: Correct. Phone batteries store chemical energy in lithium-ion bonds. During discharge, this converts to electrical energy flowing through circuits, which then converts to light (screen), sound (speakers), computation (processor), and inevitably heat (waste energy at every conversion step). Batteries store energy as chemical potential energy. When discharged, this converts to electrical current, which is then converted to various useful forms (light from the screen, sound from speakers, computation from the processor) plus waste heat at every conversion step.
+
+---
+
+### Question 2
+
+Your phone gets noticeably warm after 30 minutes of gaming. Where is this thermal energy coming from?
+
+A. The phone absorbs heat from the user's hands
+B. The battery produces heat as a separate function to keep the phone warm
+C. It is wasted energy from inefficient conversion of electrical energy to computation and display, released as heat through electrical resistance
+D. The phone's antenna generates heat by receiving wireless signals
+
+Correct Answer: C
+
+Feedback: Correct. Heat generation in phones results from energy conversion inefficiency. Every time electrical energy converts to computation (transistor switching) or light (screen operation), some energy is inevitably lost as thermal energy due to electrical resistance. This waste heat represents battery energy that produced no useful output. The heat your phone generates during intensive use is wasted battery energy. Every energy conversion step loses some energy as heat due to electrical resistance in circuits and transistor switching. A gaming phone generating 3-5 watts of heat means 3-5 watts of battery energy are being converted to useless thermal output.
+
+---
+
+### Question 3
+
+The term 'energy efficiency' refers to the ratio of useful energy output to total energy input. Which statement best describes why no device can achieve 100% energy efficiency?
+
+A. Engineers are not skilled enough to build perfectly efficient devices
+B. The second law of thermodynamics states that every energy conversion inevitably produces some waste heat
+C. Devices intentionally waste energy to prevent overheating
+D. 100% efficiency is achievable but would make devices too expensive
+
+Correct Answer: B
+
+Feedback: Correct. The second law of thermodynamics establishes that entropy increases in any energy conversion, meaning some energy always degrades to thermal energy. This is a fundamental physical law, not an engineering limitation. The second law of thermodynamics dictates that every energy conversion produces some waste heat. This is a fundamental law of physics, not an engineering shortcoming. No device in the universe can convert energy from one form to another with perfect efficiency.
+
+---
+
+### Question 4
+
+A student notices their phone battery lasts 24 hours on standby but only 3 hours while gaming. What is the primary reason for this difference?
+
+A. Gaming uses a different type of battery chemistry than standby mode
+B. Gaming simultaneously drives maximum power draw from the screen and processor, consuming energy 20-50 times faster than standby
+C. The phone's battery shrinks during gaming due to heat damage
+D. Standby mode recharges the battery using ambient electromagnetic radiation
+
+Correct Answer: B
+
+Feedback: Correct. Gaming requires both the screen at high brightness and the CPU/GPU at maximum processing capacity simultaneously, drawing 5-8 watts compared to standby's 0.1-0.3 watts. This 20-50x power draw difference directly explains the proportional difference in battery life. The difference is entirely about power draw rate. Gaming demands maximum output from both the display (2-3 watts) and processor (3-5 watts) simultaneously, totaling 5-8 watts. Standby uses only 0.1-0.3 watts for basic radio operations. The same battery drains proportionally faster at higher power draw.
+
+---
+
+### Question 5
+
+A two-year-old phone has noticeably worse battery life than when it was new, even with the same usage patterns. What is the most likely explanation?
+
+A. The phone's software has become heavier and requires more energy
+B. Repeated charge-discharge cycles have degraded the battery's chemical structure, reducing its total energy storage capacity
+C. The phone's screen has become less efficient over time
+D. Electromagnetic interference from nearby devices drains the battery faster
+
+Correct Answer: B
+
+Feedback: Correct. Lithium-ion batteries degrade through repeated charge cycles. The electrode materials develop microscopic cracks, and a growing SEI layer permanently traps lithium ions. After approximately 500 full cycles, most batteries retain only about 80% of their original capacity. Battery degradation is a chemical process. Each charge-discharge cycle causes microscopic structural damage to electrode materials and growth of the SEI (solid electrolyte interphase) layer, which permanently traps lithium ions. This reduces the total amount of energy the battery can store, even though the phone's power consumption remains the same.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+In a phone energy model, a student observes that increasing Processing Load from LOW to HIGH increases both Battery Drain and Heat Generation. However, Heat Generation increases at a faster rate than useful computation output. What principle explains this observation?
+
+A. The processor deliberately generates extra heat to improve performance
+B. At higher processing loads, energy conversion efficiency decreases because more transistor switching events produce proportionally more waste heat through electrical resistance
+C. The phone heats up only because of the screen, not the processor
+D. Heat generation is unrelated to processing load and is caused by battery chemistry
+
+Correct Answer: B
+
+Feedback: Correct. At higher processing loads, the CPU/GPU performs billions of additional transistor switching events per second. Each switching event generates a small amount of waste heat through Joule heating (electrical resistance). The cumulative effect means heat generation scales disproportionately with processing intensity, reducing overall efficiency. The model shows that higher processing demands create disproportionately more waste heat because each additional transistor switching event produces its own small heat contribution. As billions of additional operations occur per second, the cumulative heat output increases faster than the useful computational output, reducing overall energy efficiency.
+
+---
+
+### Question 2
+
+A student runs the 'Brightness Test' scenario, keeping Processing Load at MEDIUM while increasing Screen Brightness from LOW to HIGH. The model shows that the screen alone accounts for the largest single battery drain. What design trade-off does this reveal?
+
+A. Phone screens should always be at minimum brightness to maximize battery life
+B. Screen brightness represents a direct trade-off between user experience (visibility) and energy consumption, requiring adaptive management to balance both
+C. Screen brightness has no impact on battery life in modern phones
+D. Processing load is always more important than screen brightness for battery life
+
+Correct Answer: B
+
+Feedback: Correct. The model reveals that screen brightness is often the single largest energy consumer, but visibility is essential for user experience. This creates a design trade-off that engineers address through adaptive brightness systems that adjust output based on ambient light, maximizing visibility while minimizing unnecessary energy waste. The model data shows that screen brightness is a major energy consumer that directly trades off against battery life. However, turning it to minimum is not practical. Engineers address this through adaptive brightness technology that adjusts screen output to match ambient lighting conditions, providing adequate visibility without wasting energy.
+
+---
+
+### Question 3
+
+A phone battery stores 15.4 Wh of energy. During gaming, the screen draws 2.5 W, the processor draws 3.0 W, and 0.8 W is dissipated as heat. What is the total power draw and approximately how long will the battery last?
+
+A. Total: 5.5 W; battery life: approximately 2.8 hours
+B. Total: 6.3 W; battery life: approximately 2.4 hours
+C. Total: 3.3 W; battery life: approximately 4.7 hours
+D. Total: 0.8 W; battery life: approximately 19.3 hours
+
+Correct Answer: B
+
+Feedback: Correct. Total power draw = 2.5 W + 3.0 W + 0.8 W = 6.3 W. Battery life = 15.4 Wh / 6.3 W = approximately 2.4 hours. Note that the 0.8 W heat is NOT separate from the battery drain. It IS battery energy being wasted, reducing both efficiency and battery life. Total power draw includes ALL energy pathways: screen (2.5 W) + processor (3.0 W) + heat (0.8 W) = 6.3 W total. Battery life = energy stored / power draw = 15.4 Wh / 6.3 W = 2.4 hours. The heat generation is wasted battery energy that must be included in the total draw calculation.
+
+---
+
+### Question 4
+
+A student extends their model by adding a Battery Age component. They discover that after 500 charge cycles, the same gaming session that lasted 2.4 hours on a new battery now lasts only 1.9 hours. What does this reveal about the relationship between battery chemistry and user experience?
+
+A. The phone is using more power because it has become less efficient with age
+B. The battery's chemical degradation reduces stored energy capacity while power consumption remains constant, meaning identical usage produces shorter battery life over the device's lifespan
+C. Older phones automatically increase screen brightness, causing faster drain
+D. Battery age only affects standby time, not active usage time
+
+Correct Answer: B
+
+Feedback: Correct. Battery degradation reduces the numerator (stored energy) while the denominator (power draw) remains unchanged. A battery retaining 80% capacity after 500 cycles stores 12.3 Wh instead of 15.4 Wh, but the phone still draws 6.3 W during gaming, resulting in proportionally shorter battery life (12.3 / 6.3 = 1.95 hours). Battery aging reduces the total energy stored (capacity) through chemical degradation, but the phone's energy consumption stays the same. With only 80% of original capacity remaining, the same gaming session drains the smaller energy reserve faster. The user experiences this as shorter battery life despite identical usage patterns.
+
+---
+
+### Question 5
+
+Based on their model, a student designs a power management plan for an 8-hour school day. Which strategy best applies the energy conversion principles from the model?
+
+A. Close all background apps every hour, since they are the primary battery drain
+B. Schedule high-power activities (video, gaming) during specific windows and maintain low brightness and minimal processing during class time, budgeting total energy expenditure across the day
+C. Keep the phone plugged into a charger at all times to maintain 100% battery
+D. Turn the phone completely off except during lunch break
+
+Correct Answer: B
+
+Feedback: Correct. This strategy applies the model's key finding: power draw varies enormously between use cases (0.2 W standby to 6+ W gaming). By scheduling high-power activities into specific windows and maintaining low-power settings otherwise, total energy expenditure can be budgeted to match available battery capacity across the full day. Effective power management applies the model insight that different activities draw vastly different amounts of power. By concentrating high-power activities into planned windows and maintaining low-power settings during class time, the total energy budget can be spread across 8 hours. Closing background apps actually wastes energy because reopening them requires more processing than leaving them suspended.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+
+**Post-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+
+---
+
 ## Resources
 
 | Resource | Link |

@@ -821,6 +821,156 @@ EVALUATION RUBRIC:
 
 ---
 
+## CAST-Aligned Pre/Post Assessment
+
+### Administration Instructions
+
+These 4 multiple-choice questions are administered identically as both a pre-assessment (before Activity 1) and a post-assessment (after Activity 4). Score each out of 4. Learning growth = post-score minus pre-score.
+
+Questions follow the California Science Test (CAST) stimulus-response format. Each item is three-dimensional, assessing a Science and Engineering Practice (SEP), Disciplinary Core Idea (DCI), and Crosscutting Concept (CCC) simultaneously, aligned to 2-PS1-4.
+
+---
+
+### Pre-Assessment Questions
+
+### Question 1
+
+What happens to an ice cube when you take it out of the freezer?
+
+A. It stays frozen forever
+B. It starts to melt and turn into water
+C. It gets colder
+D. It grows bigger
+
+Correct Answer: B
+
+Feedback: That is right! When you take ice out of the freezer, the warm air around it starts to melt the ice, turning it from a solid into liquid water. Ice is frozen water. When you take it out of the freezer, the warmer air transfers heat into the ice, causing it to melt and become liquid water.
+
+---
+
+### Question 2
+
+Can you turn water back into ice?
+
+A. No, once ice melts it can never be ice again
+B. Yes, by putting the water in a freezer to make it cold enough
+C. Only if you add special chemicals
+D. Only if the water is blue
+
+Correct Answer: B
+
+Feedback: Yes! You can turn water back into ice by putting it in a freezer. The cold temperature freezes the water back into solid ice. Water can absolutely be turned back into ice. Just put it in a freezer and wait. When the water gets cold enough, it freezes into solid ice again.
+
+---
+
+### Question 3
+
+Where would an ice cube melt faster?
+
+A. In a freezer
+B. In a refrigerator
+C. On a sunny sidewalk
+D. In a bucket of snow
+
+Correct Answer: C
+
+Feedback: Correct! A sunny sidewalk is the warmest place, so the ice would melt fastest there. More heat means faster melting. Ice melts faster in warmer places because more heat transfers into the ice. A sunny sidewalk is very warm, so the ice would melt quickly there.
+
+---
+
+### Question 4
+
+What is melting?
+
+A. When a solid heats up and turns into a liquid
+B. When a liquid heats up and turns into a gas
+C. When something gets colder
+D. When something breaks into small pieces
+
+Correct Answer: A
+
+Feedback: That is right! Melting is when a solid gets warm enough to turn into a liquid, like ice turning into water. Melting is the process of a solid turning into a liquid because of heat. When ice gets warm enough, it melts and becomes liquid water.
+
+---
+
+### Post-Assessment Questions
+
+### Question 1
+
+Two ice cubes of the same size are placed outside. One is in the shade and one is in direct sunlight. Which melts first?
+
+A. The one in the shade
+B. They melt at exactly the same speed
+C. The one in direct sunlight
+D. Neither one melts
+
+Correct Answer: C
+
+Feedback: Correct! The ice cube in direct sunlight melts first because it receives more heat energy from the sun, making it melt faster. The sun provides heat energy. The ice cube in direct sunlight gets much more heat than the one in the shade, so it melts faster. Warmer surroundings always mean faster melting.
+
+---
+
+### Question 2
+
+What is a reversible change?
+
+A. A change that can never happen again
+B. A change that can be undone, like melting and freezing
+C. A change that only happens once
+D. A change that makes things disappear
+
+Correct Answer: B
+
+Feedback: Yes! A reversible change is one that can be undone. Melting ice into water and freezing water back into ice is a reversible change because you can go back and forth. A reversible change is one you can undo. Ice can melt into water, and water can freeze back into ice. This change can go back and forth forever, making it reversible.
+
+---
+
+### Question 3
+
+In our model, what is the relationship between Surrounding Temperature and Melting Speed?
+
+A. Negative: higher temperature means slower melting
+B. Positive: higher temperature means faster melting
+C. No relationship: temperature does not matter
+D. Temperature only affects big ice cubes
+
+Correct Answer: B
+
+Feedback: Correct! It is a positive relationship. When the surrounding temperature goes up, the melting speed goes up too. Warmer surroundings transfer more heat to the ice. Higher surrounding temperature means more heat energy flows into the ice, making it melt faster. This is a positive relationship: as temperature increases, melting speed increases.
+
+---
+
+### Question 4
+
+Which of these is NOT a reversible change?
+
+A. Melting ice into water
+B. Freezing water into ice
+C. Baking a cookie from dough
+D. Melting a popsicle
+
+Correct Answer: C
+
+Feedback: That is right! Baking a cookie is NOT reversible. You cannot un-bake a cookie back into flour, sugar, and eggs. Melting and freezing are reversible, but baking is not. Melting and freezing are reversible because the water just changes form. But baking changes the ingredients in a way that cannot be undone. You cannot turn a cookie back into raw dough.
+
+---
+
+### Answer Key
+
+**Pre-Assessment:**
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: A
+
+**Post-Assessment:**
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: C
+
+---
+
 ## Resources
 
 | Resource | Link |
