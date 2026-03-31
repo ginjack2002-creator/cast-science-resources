@@ -1219,3 +1219,528 @@ L07 = {
         ("More research always beats more testing", "Research provides theoretical understanding, but testing provides real-world data that research cannot. The ideal approach combines both: research to build a strong foundation, then iterate to refine. Research alone misses problems that only emerge in physical testing. Testing alone wastes time on problems research could have prevented.", "Compare two strategies in the model: maximum research with one test vs. moderate research with three tests. The combination wins.")
     ]
 }
+
+L08 = {
+    "id": "G06L2-L08",
+    "title": "Why Does It Feel Colder When It's Windy?",
+    "subtitle": "Modeling Wind Chill and Convective Heat Loss",
+    "ngss": "MS-PS1-4, MS-PS3-4",
+    "ngss_desc": "Develop a model that predicts and describes changes in particle motion, temperature, and state of a pure substance when thermal energy is added or removed. Plan an investigation to determine the relationships among the energy transferred, the type of matter, the mass, and the change in the average kinetic energy of the particles as measured by the temperature of the sample.",
+    "big_question": "If the air temperature is the same on a calm day and a windy day, why does the windy day feel so much colder?",
+    "objectives": [
+        "Explain how wind increases the rate of convective heat loss from the skin",
+        "Model the relationship between wind speed, air temperature, and perceived cold",
+        "Distinguish between actual air temperature and the wind chill effect on the human body",
+        "Predict how changes in wind speed affect skin temperature at different air temperatures",
+        "Analyze why wind chill is a measure of heat loss rate rather than actual temperature"
+    ],
+    "vocabulary": [
+        ("Convection", "The transfer of thermal energy through the movement of a fluid (liquid or gas), carrying heat away from or toward a surface"),
+        ("Wind Chill", "A measure of how cold it feels to the human body when wind speed is factored in with actual air temperature"),
+        ("Thermal Boundary Layer", "A thin layer of warm air that forms against the skin and acts as insulation, which wind disrupts"),
+        ("Convective Heat Loss", "The process by which moving air carries thermal energy away from a warm surface, cooling it faster than still air"),
+        ("Perceived Temperature", "The temperature the body feels based on the combined effects of actual air temperature and wind speed on heat loss rate")
+    ],
+    "components": [
+        ("Wind Speed", "The velocity of moving air in the environment, which strips away the insulating boundary layer near the skin", True),
+        ("Air Temperature", "The actual measured temperature of the surrounding air, independent of wind conditions", True),
+        ("Convective Heat Loss", "The rate at which thermal energy is carried away from the skin by moving air currents", False),
+        ("Skin Temperature", "The surface temperature of the skin, which drops as heat is lost to the environment faster than the body replaces it", False),
+        ("Perceived Cold", "How cold the body feels based on the combined effect of air temperature and wind-driven heat loss", False)
+    ],
+    "think_about_it": "When wind speed increases, what happens to convective heat loss? If air temperature drops but wind speed is zero, how does perceived cold compare to a warmer day with high wind?",
+    "scenarios": [
+        ("Calm Cold Day", "Set Wind Speed to 0 and Air Temperature to low, then observe skin temperature and perceived cold"),
+        ("Windy Cold Day", "Set Wind Speed to high with the same low Air Temperature and compare the results"),
+        ("Wind Chill Danger", "Lock Air Temperature at moderate cold and gradually increase Wind Speed to observe when perceived cold becomes dangerous")
+    ],
+    "sim_scenarios": [
+        ("Calm Cold Day", "Wind Speed at 0, Air Temperature at 30°F", "What do you predict will happen to Perceived Cold when there is no wind but the air is cold?"),
+        ("Windy Cold Day", "Wind Speed at 30 mph, Air Temperature at 30°F", "What do you predict will happen to Skin Temperature when you add strong wind to the same cold air?"),
+        ("Wind Chill Danger", "Lock Air Temperature at 40°F, increase Wind Speed from 0 to 60 mph", "What do you predict will happen to Perceived Cold as wind speed keeps increasing at the same temperature?")
+    ],
+    "discoveries": [
+        "Wind does not change the actual air temperature but dramatically increases the rate of heat loss from the skin",
+        "The thermal boundary layer acts as a thin blanket of warm air against the skin that wind strips away",
+        "Wind chill is not a real temperature but a measure of how fast the body loses heat",
+        "At higher wind speeds, the additional cooling effect diminishes because the boundary layer is already fully disrupted",
+        "Wet skin loses heat even faster in wind because evaporation adds another cooling mechanism on top of convection"
+    ],
+    "answer": "It feels colder when it is windy because wind strips away the thin layer of warm air that your body naturally creates around your skin. This thermal boundary layer acts like insulation. Without wind, that warm air stays close and slows heat loss. But when wind blows, it constantly replaces that warm air with cold air, so your skin loses heat much faster. The air temperature has not changed, but the rate at which your body loses heat has increased dramatically.",
+    "stem_title": "Design a Wind Chill Shield",
+    "stem_mission": "Design a wearable face shield that minimizes convective heat loss while still allowing the wearer to breathe and see clearly.",
+    "stem_scenario": "A winter sports equipment company needs a new face protection system for skiers and snowboarders who experience extreme wind chill at high speeds. Your engineering team must design a prototype that reduces wind chill effects on exposed skin by at least 50% without fogging up or restricting breathing.",
+    "stem_questions": [
+        "How does your shield design maintain the thermal boundary layer against the skin?",
+        "What materials best block wind while allowing moisture from breathing to escape?",
+        "How will you test whether your shield actually reduces the rate of heat loss?"
+    ],
+    "stem_design_qs": [
+        "What shape will best deflect wind while allowing comfortable breathing?",
+        "What materials will provide wind blocking without trapping moisture?",
+        "How will you measure the temperature difference between shielded and unshielded skin?",
+        "How will you test your prototype at different simulated wind speeds?"
+    ],
+    "career": "Meteorologists and Atmospheric Scientists study weather patterns including wind chill to issue safety warnings that protect millions of people. They earn $55,000-$105,000/year.",
+    "images": {
+        "cover": ("cover-wind-chill.png", "A photorealistic image of wind blowing across a snowy landscape with visible wind streaks and frost crystals, dramatic winter lighting with blue and white tones"),
+        "landscape": ("landscape-wind-chill.png", "A diverse group of 6th grade students in a science lab using a small fan and thermometers to test heat loss, a Latino student holding a thermometer near the fan while a Black student records data, bright modern lab"),
+        "modeling": ("modeling-wind-chill.png", "6th grade students building a wind chill model on laptops, an Asian student pointing at the component relationships while a White student adjusts wind speed values, modern classroom with weather posters"),
+        "discussion": ("discussion-wind-chill.png", "A teacher explaining thermal boundary layers to 6th grade students using a diagram on a smartboard, Black and Latino students with hands raised, engaged discussion about why wind makes it feel colder"),
+        "stem": ("stem-wind-shield.png", "6th grade students testing face shield prototypes with a desk fan and temperature sensors, a White student wearing a prototype while an Asian student reads the thermometer, collaborative STEM lab")
+    },
+    "pre_assessment": [
+        "Have you ever noticed that a windy day feels much colder than a calm day at the same temperature? Why do you think that happens?",
+        "When you blow on hot soup, why does it cool down faster?",
+        "Does wind actually change the temperature of the air? Why or why not?",
+        "Draw what you think happens to the air around your skin on a windy day versus a calm day."
+    ],
+    "extend_components": [
+        ("Humidity Level", "The amount of moisture in the air. Higher humidity can increase heat loss through evaporative cooling, especially on windy days"),
+        ("Clothing Insulation", "How effectively clothing traps warm air near the body and blocks wind from stripping the thermal boundary layer"),
+        ("Physical Activity", "The rate at which the body generates internal heat through metabolism and muscle movement, counteracting heat loss")
+    ],
+    "reflections": [
+        "Why does the wind chill index warn about frostbite danger even when the actual temperature is above freezing?",
+        "How is the thermal boundary layer similar to wearing a thin invisible jacket?",
+        "Why does wind chill have a diminishing effect at very high wind speeds?",
+        "How could understanding convective heat loss help you dress more effectively for winter?",
+        "Why is wind chill only relevant to warm-blooded organisms and not to objects like cars or rocks?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a computational model showing how wind speed and air temperature interact to drive convective heat loss, skin temperature changes, and perceived cold."),
+        ("Disciplinary Core Idea", "PS3.A Definitions of Energy / PS3.B Conservation of Energy and Energy Transfer", "Energy is transferred from warmer to cooler objects or regions by conduction, convection, and radiation. Wind increases convective transfer rate, removing thermal energy from the skin faster."),
+        ("Crosscutting Concept", "Cause and Effect", "Students investigate the causal mechanisms by which wind speed increases heat loss rate, identifying that the disruption of the thermal boundary layer is the key mechanism linking wind to perceived cold.")
+    ],
+    "cast_items": [
+        "Explain how thermal energy is transferred from the body to the environment through convection",
+        "Model the relationship between wind speed and rate of heat loss from a warm surface",
+        "Predict wind chill effects given specific air temperature and wind speed conditions"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "Two students stand outside on a 35°F day. Student A is in a sheltered area with no wind. Student B is on a hilltop with 25 mph wind. Based on the wind chill model, which student will experience a lower skin temperature, and what is the primary mechanism causing the difference?"),
+        ("Constructed Response:", "Using your wind chill model, explain why a marathon runner who finishes a race on a cold, windy day is at risk of hypothermia even though they were warm during the race. Reference convective heat loss, the thermal boundary layer, and how physical activity and wind speed interact in the system.")
+    ],
+    "background_intro": "Wind chill is one of the most commonly experienced but least understood weather phenomena. Understanding the physics behind why wind makes cold feel colder reveals fundamental principles of thermal energy transfer and how the human body interacts with its environment.",
+    "background_sections": [
+        ("The Thermal Boundary Layer", "The human body constantly radiates heat, warming a thin layer of air directly against the skin. This thermal boundary layer acts as natural insulation, typically only a few millimeters thick. In still air, this layer remains intact and slows further heat loss. When wind blows, it strips this warm air away and replaces it with cold air, forcing the body to warm a new layer that is immediately stripped away again."),
+        ("Convection: The Mechanism of Wind Chill", "Convection is the transfer of thermal energy by the physical movement of a fluid. In wind chill, the fluid is air. Faster-moving air increases the rate of convective heat transfer because it replaces the warmed boundary layer more rapidly. This is the same principle that makes a convection oven cook faster than a conventional oven and why blowing on hot food cools it down."),
+        ("Wind Chill Is Not Real Temperature", "Wind chill is a calculated index that represents how fast exposed skin loses heat, not an actual air temperature. A wind chill of 0°F on a 20°F day with 25 mph wind means your skin loses heat at the same rate it would on a calm 0°F day. Objects that do not generate their own heat (like a car or a rock) will never cool below the actual air temperature regardless of wind."),
+        ("Diminishing Returns at High Speed", "The relationship between wind speed and wind chill is not linear. The first 10 mph of wind has a much greater cooling effect than going from 40 to 50 mph. This is because the thermal boundary layer is mostly disrupted at moderate wind speeds, so additional wind speed has less remaining insulation to remove.")
+    ],
+    "lever_L": "Students identify wind speed and air temperature as the two external components, and convective heat loss, skin temperature, and perceived cold as the three internal responses of the wind chill system.",
+    "lever_E": "Students determine that wind speed positively increases convective heat loss, air temperature negatively affects convective heat loss (colder air means more loss), convective heat loss negatively affects skin temperature, and lower skin temperature positively increases perceived cold.",
+    "lever_V": "Students build a model showing how wind disrupts the thermal boundary layer to increase heat loss, connecting wind speed and air temperature to the chain of convective heat loss, skin temperature drop, and perceived cold.",
+    "lever_Ev": "Students run calm vs. windy scenarios at the same temperature, then compare moderate wind at different temperatures to discover that wind amplifies cold but does not create it.",
+    "lever_R": "Students add humidity level or clothing insulation to explore how additional factors modify the wind chill effect and protection strategies.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with dramatic wind and winter imagery", "say": "It is 35 degrees outside. On Monday with no wind, you are comfortable in a jacket. On Tuesday with 30 mph wind, you are shivering and your face hurts. Same temperature. What changed?", "do": "Show weather reports from two days with same temperature but different wind. Let students compare.", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we are modeling why wind makes cold feel colder, and it is NOT because wind is cold. The answer is about how fast your body loses heat.", "do": "Have students read objectives. Pre-teach 'convection' and 'thermal boundary layer.'", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why does it feel colder when it is windy?", "say": "A thermometer reads the same temperature whether wind is blowing or not. So if the air is the same temperature, why does your body disagree?", "do": "Think-pair-share: When have you experienced wind chill? What did it feel like compared to a calm day?", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We are going to model the invisible layer of warm air your body creates around itself and what wind does to that layer.", "do": "Draw a person with a thin warm air layer. Show arrows of wind stripping it away.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Component cards for wind chill model", "say": "Which components are external inputs we cannot control, and which respond inside the system?", "do": "Guide sorting. Wind speed and air temperature are external. Convective heat loss, skin temperature, and perceived cold are internal responses.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows between wind chill components", "say": "Wind speed does not change the air temperature. It changes how fast your body loses heat. That is the key connection.", "do": "Trace the chain: wind speed increases convective heat loss, which decreases skin temperature, which increases perceived cold.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graph predictions for calm vs. windy at same temperature", "say": "Let's test it. Same air temperature, different wind speeds. Watch what happens to skin temperature.", "do": "Students predict then run calm, moderate wind, and high wind scenarios. Compare perceived cold values.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings about wind chill and convective heat loss", "say": "Wind does not make the air colder. It makes YOU colder by stripping away your body's natural warm air insulation.", "do": "Connect to real life: blowing on soup, car windshield defrost, why mittens work better than gloves.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Wind chill shield design challenge", "say": "Design a face shield that keeps the thermal boundary layer intact against wind while still letting you breathe and see.", "do": "Provide materials (fabric swatches, foam, plastic sheets). Test with a fan and thermometer. Measure temperature behind the shield.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Wind Speed is external because it is an environmental condition that the system cannot control. Air Temperature is external because it is determined by weather conditions outside the system. Convective Heat Loss is internal because it is a process rate driven by both external inputs. Skin Temperature is internal because it responds to the balance between body heat production and convective heat loss. Perceived Cold is internal because it is the body's response to the combined effects of the external conditions acting through the heat loss mechanism.",
+    "relationships": [
+        ("Wind Speed to Convective Heat Loss", "POSITIVE (+)", "Higher wind speed strips the thermal boundary layer faster, replacing warm air with cold air more rapidly and increasing the rate of heat transfer away from the skin."),
+        ("Air Temperature to Convective Heat Loss", "NEGATIVE (-)", "Lower air temperature increases the temperature difference between skin and air, driving faster heat transfer. Warmer air reduces the gradient and slows heat loss."),
+        ("Convective Heat Loss to Skin Temperature", "NEGATIVE (-)", "Greater convective heat loss removes thermal energy from the skin faster than the body can replace it, causing skin temperature to drop."),
+        ("Skin Temperature to Perceived Cold", "NEGATIVE (-)", "Lower skin temperature triggers more cold receptors in the skin, increasing the sensation of cold that the brain perceives."),
+        ("Wind Speed to Skin Temperature (indirect)", "NEGATIVE (-)", "This indirect path shows how wind speed ultimately drives down skin temperature through the convective heat loss mechanism, even though wind does not change air temperature.")
+    ],
+    "sim_answers": [
+        ("Calm Cold Day vs. Windy Cold Day", "At the same air temperature, the calm day shows moderate convective heat loss because the thermal boundary layer remains mostly intact. Skin temperature drops slowly. On the windy day, convective heat loss spikes because wind constantly strips the boundary layer. Skin temperature drops much faster and reaches a lower value. Perceived cold is significantly higher on the windy day even though the thermometer reads the same."),
+        ("Wind Chill Danger Scenario", "As wind speed increases from 0 to 60 mph at a constant 40°F, perceived cold increases rapidly at first (0-20 mph) then more gradually (40-60 mph). This diminishing return pattern shows that the thermal boundary layer is mostly disrupted at moderate wind speeds. The model demonstrates why wind chill warnings focus on the combination of cold AND wind rather than either alone.")
+    ],
+    "reflection_exemplars": [
+        ("Why is wind chill only relevant to warm-blooded organisms?", "Wind chill measures the rate of heat loss from a warm surface to cold moving air. Warm-blooded organisms generate their own internal heat and maintain a temperature above their environment, creating the thermal boundary layer that wind disrupts. A rock or car at ambient temperature has no boundary layer to strip because it is already the same temperature as the air. Wind cannot cool an object below the actual air temperature, only speed up the cooling to that temperature."),
+        ("How is the thermal boundary layer like wearing an invisible jacket?", "The thermal boundary layer is a thin layer of air warmed by body heat that stays against the skin in calm conditions. Like a jacket, it creates insulation between the warm body and the cold environment. Wind strips this layer away, just like removing a jacket exposes you to the cold. The difference is that the boundary layer constantly reforms (the body keeps warming the air) but wind keeps stripping it. It is like having your jacket repeatedly pulled off and put back on.")
+    ],
+    "stem_intro": "Present the challenge: Design a wearable face shield for extreme wind chill conditions that reduces heat loss by at least 50% while maintaining visibility and breathability. Test your prototype using a fan, warm water bottle (simulating a face), and thermometer to measure temperature behind your shield versus unshielded.",
+    "stem_concepts": [
+        ("Convective Heat Transfer", "Moving air carries heat away from warm surfaces. Faster air movement means faster heat loss. Your shield must slow or redirect airflow near the face."),
+        ("Thermal Insulation", "Materials that trap still air (fleece, foam, layered fabric) reduce convective heat loss by maintaining the boundary layer even in wind."),
+        ("Breathability vs. Wind Blocking", "A perfect wind block also blocks breathing air. The design challenge is allowing air exchange for breathing while minimizing convective heat loss from exposed skin.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Shield reduces measured heat loss by 50%+ with clear data, allows comfortable breathing and visibility, design choices connected to convection principles with model evidence"),
+        ("Proficient (3)", "Shield measurably reduces heat loss with data, reasonably comfortable, and design choices explained with thermal concepts"),
+        ("Developing (2)", "Shield provides some wind protection but limited data collection or unclear connection to convection principles"),
+        ("Beginning (1)", "Minimal design effort with no measurable data or connection to thermal energy transfer concepts")
+    ],
+    "support": [
+        "Provide a diagram of the thermal boundary layer for students to reference during model building",
+        "Use a hair dryer on low and a thermometer to physically demonstrate how wind cools a warm surface",
+        "Sentence frames: 'When wind speed increases, convective heat loss __ because __'"
+    ],
+    "extensions": [
+        "Research how Arctic animals (polar bears, penguins, musk oxen) have evolved physical adaptations to minimize wind chill effects",
+        "Calculate the wind chill index for different temperature and wind speed combinations using the NWS formula and graph the results",
+        "Investigate why humidity makes cold feel even colder and add a moisture component to your model"
+    ],
+    "cross_curr": [
+        ("Math", "Use the NWS wind chill formula to calculate perceived temperatures at various wind speeds and graph the nonlinear relationship"),
+        ("ELA", "Write a survival guide explaining wind chill to hikers, using scientific vocabulary while keeping it accessible to a general audience"),
+        ("Social Studies", "Research how indigenous Arctic peoples designed clothing and shelter systems that minimize convective heat loss and compare to modern winter gear")
+    ],
+    "misconceptions": [
+        ("Wind makes the air colder", "Wind does not change air temperature. A thermometer reads the same whether wind is blowing or not. Wind increases the rate at which warm objects lose heat to the air by disrupting the insulating boundary layer. The air is the same temperature; your body just loses heat to it faster.", "Place a thermometer in front of a fan and show that the reading does not change. Then hold a warm water bottle and show the temperature drops faster with the fan on."),
+        ("Wind chill temperature is a real temperature", "Wind chill is an index that describes heat loss rate, not an actual temperature. It tells you how fast exposed skin would lose heat compared to a calm day. A wind chill of -10°F does not mean anything outside will cool to -10°F. Only objects that generate their own heat (humans, animals) are affected by wind chill.", "Compare a person and a metal pole outside on a windy cold day. The person feels much colder with wind; the pole reaches air temperature and stops regardless of wind."),
+        ("More wind always means proportionally more cold", "The relationship between wind speed and cooling is nonlinear with diminishing returns. The first 10 mph of wind has a much greater effect than going from 40 to 50 mph because the boundary layer is already mostly disrupted at moderate speeds. The model shows this curve clearly.", "Run the simulation and graph perceived cold vs. wind speed. Students see the curve flatten at high speeds, demonstrating diminishing returns.")
+    ]
+}
+
+L09 = {
+    "id": "G06L2-L09",
+    "title": "Why Can't Two Plants Share the Same Sunlight?",
+    "subtitle": "Modeling Competition for Limited Resources in Ecosystems",
+    "ngss": "MS-LS2-1, MS-LS2-2",
+    "ngss_desc": "Analyze and interpret data to provide evidence for the effects of resource availability on organisms and populations of organisms in an ecosystem. Construct an explanation that predicts patterns of interactions among organisms across multiple ecosystems.",
+    "big_question": "If there is plenty of sunlight hitting a forest, why can't all plants grow equally tall and healthy?",
+    "objectives": [
+        "Model how two plants compete for limited sunlight and soil nutrients",
+        "Explain how resource availability determines which organisms thrive and which decline",
+        "Predict the outcome of competition when one plant species has an advantage in resource capture",
+        "Analyze how resource depletion creates feedback loops that intensify competition over time",
+        "Connect interspecific competition to patterns of biodiversity and species distribution"
+    ],
+    "vocabulary": [
+        ("Interspecific Competition", "Competition between two different species for the same limited resource such as light, water, or nutrients"),
+        ("Resource Partitioning", "When competing species evolve to use slightly different resources or the same resource at different times to reduce competition"),
+        ("Competitive Exclusion", "The principle that two species competing for the exact same resource cannot coexist indefinitely; one will outcompete the other"),
+        ("Limiting Factor", "A resource that is in shortest supply relative to demand, which restricts the growth of a population"),
+        ("Carrying Capacity", "The maximum population size an environment can sustain indefinitely given the available resources")
+    ],
+    "components": [
+        ("Sunlight Available", "The total amount of light energy reaching the ecosystem, which both plants need for photosynthesis", True),
+        ("Soil Nutrients", "The minerals and nitrogen in the soil that both plants require for growth but exist in limited quantities", True),
+        ("Plant A Growth", "The rate at which Plant A increases in biomass by capturing sunlight and absorbing soil nutrients", False),
+        ("Plant B Growth", "The rate at which Plant B increases in biomass by capturing sunlight and absorbing soil nutrients", False),
+        ("Resource Depletion", "The rate at which available sunlight and soil nutrients are consumed as both plants grow and compete", False)
+    ],
+    "think_about_it": "When Plant A grows taller and captures more sunlight, what happens to the sunlight available for Plant B? If soil nutrients are depleted faster, how does that affect both plants differently?",
+    "scenarios": [
+        ("Equal Start", "Set both plants to equal starting size with moderate sunlight and nutrients, then observe who wins over time"),
+        ("One Plant Advantage", "Give Plant A a height advantage and observe how initial advantage compounds through resource competition"),
+        ("Nutrient Crash", "Lock Soil Nutrients to low levels and observe how scarcity intensifies competition between the plants")
+    ],
+    "sim_scenarios": [
+        ("Equal Start", "Both plants at equal size, moderate resources", "What do you predict will happen to Plant A Growth and Plant B Growth when they start with equal access to resources?"),
+        ("One Plant Advantage", "Plant A starts taller, same soil nutrients", "What do you predict will happen to Plant B Growth when Plant A can reach more sunlight from the start?"),
+        ("Nutrient Crash", "Lock Soil Nutrients to low", "What do you predict will happen to Resource Depletion when nutrients are scarce and both plants are trying to grow?")
+    ],
+    "discoveries": [
+        "Even small initial advantages in resource capture can compound over time, leading to one species dominating",
+        "Competition for light is often asymmetric because taller plants shade shorter ones but not vice versa",
+        "Resource depletion creates a feedback loop where growth reduces available resources, which limits further growth",
+        "Two species can coexist if they partition resources (different root depths, different light needs, different growing seasons)",
+        "The competitive exclusion principle means identical niches cannot support two species long-term"
+    ],
+    "answer": "Two plants cannot truly share the same sunlight because light is a directional resource. The taller plant intercepts sunlight first, casting shade on the shorter plant below. As Plant A grows taller, it captures more light and more nutrients, which fuels more growth, which captures even more resources. This positive feedback loop means that even a tiny initial advantage compounds over time. The shorter plant gets less and less of both sunlight and nutrients until it cannot sustain itself. This is competitive exclusion in action.",
+    "stem_title": "Design a Coexistence Garden",
+    "stem_mission": "Design a small garden where two competing plant species can coexist by using resource partitioning strategies.",
+    "stem_scenario": "A community garden has limited space and wants to maximize biodiversity by growing two plant species in the same bed. Your ecology team must design a planting arrangement that allows both species to thrive by minimizing direct competition for sunlight and nutrients.",
+    "stem_questions": [
+        "How can you arrange plants so they do not directly compete for the same sunlight?",
+        "What characteristics of each plant species would allow them to partition soil nutrients?",
+        "How will you measure whether both species are truly coexisting versus one slowly outcompeting the other?"
+    ],
+    "stem_design_qs": [
+        "What two plant species will you choose and what are their light and nutrient requirements?",
+        "How will planting arrangement (spacing, height tiers, orientation) reduce light competition?",
+        "What soil amendments or root zone strategies will help both plants access nutrients?",
+        "How will you monitor the health and growth of both species over several weeks?"
+    ],
+    "career": "Ecologists and Conservation Biologists study species interactions including competition to protect biodiversity and manage ecosystems. They earn $55,000-$110,000/year.",
+    "images": {
+        "cover": ("cover-plant-competition.png", "A photorealistic image of two plant species growing close together in a forest, one tall and receiving full sunlight while the other is shaded below, dappled forest light with green tones"),
+        "landscape": ("landscape-plant-competition.png", "A diverse group of 6th grade students examining two potted plants growing at different heights under a grow light, a Black student measuring plant height while a White student records data, bright science lab"),
+        "modeling": ("modeling-plant-competition.png", "6th grade students building a plant competition model on laptops, a Latino student adjusting resource values while an Asian student compares growth curves on screen, modern classroom with ecology posters"),
+        "discussion": ("discussion-plant-competition.png", "A teacher showing photos of forest canopy layers to 6th grade students on a smartboard, explaining how tall trees shade understory plants, diverse students with hands raised in discussion"),
+        "stem": ("stem-coexistence-garden.png", "6th grade students designing a companion planting arrangement at lab tables with plant pots and soil, a White student sketching the layout while a Black student organizes seed packets, collaborative STEM lab")
+    },
+    "pre_assessment": [
+        "If you plant two different types of plants very close together, what do you think will happen over time?",
+        "Why do you think some plants grow tall while others stay close to the ground?",
+        "What resources do plants need to survive and where do those resources come from?",
+        "Draw what you think happens to sunlight as it passes through a forest with tall and short plants."
+    ],
+    "extend_components": [
+        ("Water Availability", "The amount of water in the soil, which both plants need and which can become a limiting factor in dry conditions"),
+        ("Root Depth Difference", "How deeply each plant's roots extend into the soil. Different root depths can allow plants to access different nutrient zones"),
+        ("Allelopathy", "Chemical compounds released by some plants that inhibit the growth of nearby competitors, a form of chemical competition")
+    ],
+    "reflections": [
+        "Why does even a small head start in height give one plant a compounding advantage over the other?",
+        "How is competition between plants different from competition between animals?",
+        "What would happen in your model if both plants were identical in every way?",
+        "How does resource partitioning allow species that would otherwise compete to coexist?",
+        "Why does competitive exclusion not eliminate all biodiversity in natural ecosystems?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a computational model showing how two plant species compete for limited sunlight and soil nutrients, with resource depletion creating feedback that determines which species thrives."),
+        ("Disciplinary Core Idea", "LS2.A Interdependent Relationships in Ecosystems", "Organisms and populations of organisms are dependent on their environmental interactions both with other living things and with nonliving factors. Competition for resources influences organism growth, survival, and reproduction."),
+        ("Crosscutting Concept", "Cause and Effect", "Students investigate how asymmetric resource capture causes one species to dominate another, identifying the feedback mechanisms that amplify small initial advantages into large competitive outcomes.")
+    ],
+    "cast_items": [
+        "Explain how competition for limited resources affects the growth and survival of organisms",
+        "Model the relationship between resource availability and population growth for competing species",
+        "Predict outcomes of interspecific competition based on resource capture advantages"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "In a field, Species A grows 2 cm taller per week than Species B. After 8 weeks, Species A is significantly taller and Species B is wilting. Based on the competition model, what is the most likely cause of Species B's decline?"),
+        ("Constructed Response:", "Using your competition model, explain why invasive plant species often outcompete native plants when introduced to a new ecosystem. Reference sunlight capture, soil nutrient depletion, and the feedback loop between growth and resource availability.")
+    ],
+    "background_intro": "Competition is one of the fundamental forces shaping ecosystems. When two organisms need the same limited resource, the outcome of their competition determines which species thrive, which decline, and how communities are structured. Understanding competition reveals why ecosystems look the way they do.",
+    "background_sections": [
+        ("Competition for Light Is Asymmetric", "Unlike nutrients or water, light comes from above. This means competition for light is inherently asymmetric: a taller plant shades a shorter one, but the shorter plant cannot shade the taller one. This asymmetry means that any height advantage compounds over time. The taller plant gets more light, grows more, gets even taller, and shades the shorter plant even more. This positive feedback loop is why forests have distinct canopy layers."),
+        ("The Competitive Exclusion Principle", "Ecologist G.F. Gause demonstrated in 1934 that two species competing for the exact same resource in the exact same way cannot coexist indefinitely. One will always eventually outcompete the other. This is why no two species occupy exactly the same ecological niche. When species do coexist, they have evolved to partition resources: different root depths, different light requirements, different growing seasons."),
+        ("Resource Depletion Feedback", "As competing organisms consume resources, those resources become scarcer. Scarcity intensifies competition because organisms must work harder (grow taller, extend roots deeper) to access what remains. This creates a feedback loop: growth depletes resources, scarcity intensifies competition, competition favors the stronger competitor, and the weaker competitor declines further. This feedback is why competition often leads to clear winners and losers."),
+        ("Coexistence Through Niche Partitioning", "Despite the competitive exclusion principle, ecosystems are full of biodiversity. Species coexist by partitioning resources: different depths in the soil, different heights in the canopy, different times of day for activity, or different types of nutrients. Some plants are shade-tolerant, thriving in the understory with less light. Others are sun-loving and dominate the canopy. This diversity of strategies allows many species to share an ecosystem.")
+    ],
+    "lever_L": "Students identify sunlight available and soil nutrients as the two external components, and Plant A growth, Plant B growth, and resource depletion as the three internal responses of the competition system.",
+    "lever_E": "Students determine that sunlight positively drives both plant growth rates, soil nutrients positively drive both plant growth rates, both growth rates positively increase resource depletion, and resource depletion negatively reduces available sunlight and nutrients in a feedback loop.",
+    "lever_V": "Students build a model showing how two plants draw from shared resource pools, with growth creating resource depletion that feeds back to limit both plants, especially the weaker competitor.",
+    "lever_Ev": "Students run equal-start and one-plant-advantage scenarios to observe how small initial differences amplify through the competition feedback loop.",
+    "lever_R": "Students add water availability or root depth difference to explore how resource partitioning changes competition outcomes.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with forest canopy and understory contrast", "say": "There is enough sunlight hitting this forest to power a small city. So why are the plants on the forest floor so small and struggling?", "do": "Show a photo of a dense forest canopy with dim understory. Let students observe the light difference.", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we are modeling what happens when two plants fight for the same sunlight and nutrients. Spoiler: it is not a fair fight.", "do": "Have students read objectives. Pre-teach 'interspecific competition' and 'competitive exclusion.'", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why can't two plants share the same sunlight?", "say": "If I put two plants side by side with the same soil and light, will they both grow equally? What if one starts just a little taller?", "do": "Think-pair-share: What do you think will happen to two identical plants growing next to each other?", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "Our model has a hidden feedback loop. When one plant grows, it takes resources from the other, which makes the first plant grow even more.", "do": "Sketch the feedback loop: growth captures resources, which starves the competitor, which frees more resources for the winner.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Component cards for competition model", "say": "Sunlight and soil nutrients are given by the environment. But plant growth and resource depletion are driven by the competition itself.", "do": "Guide sorting. Discuss why both plants draw from the same resource pools.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows showing competition dynamics", "say": "Here is the critical connection: Plant A's growth DEPLETES resources, which REDUCES Plant B's growth. And Plant B's growth does the same to Plant A.", "do": "Trace the competition loop. Both plants feed resource depletion, which hurts both, but hurts the weaker one more.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graph predictions for equal start vs. one plant advantage", "say": "What if Plant A starts just 1 centimeter taller? Does that tiny advantage matter? Let's find out.", "do": "Students predict outcomes. Run equal start and slight advantage scenarios. Watch how small differences amplify.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings about competition and resource depletion", "say": "Even a tiny advantage compounds over time because the winner captures more resources, grows more, and captures even more. It is a snowball effect.", "do": "Connect to real examples: invasive species, forest succession, why weeding a garden helps your plants.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Coexistence garden design challenge", "say": "Can you outsmart competitive exclusion? Design a garden where two competing species BOTH thrive.", "do": "Provide plant data cards with light and nutrient needs. Students design planting arrangements that partition resources.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Sunlight Available is external because it is determined by the environment (time of day, season, weather) and is not controlled by the plants. Soil Nutrients is external because it represents the existing mineral content of the soil before the plants begin competing. Plant A Growth and Plant B Growth are internal because they are responses driven by the available resources and competition dynamics. Resource Depletion is internal because it is a consequence of both plants consuming shared resources and creates the feedback that intensifies competition.",
+    "relationships": [
+        ("Sunlight Available to Plant A Growth", "POSITIVE (+)", "More available sunlight provides more energy for photosynthesis, allowing Plant A to produce more biomass and grow taller."),
+        ("Sunlight Available to Plant B Growth", "POSITIVE (+)", "More available sunlight provides more energy for Plant B's photosynthesis, but this is reduced if Plant A shades Plant B."),
+        ("Soil Nutrients to Plant A Growth", "POSITIVE (+)", "More soil nutrients provide the minerals needed for cell growth and reproduction, supporting Plant A's biomass increase."),
+        ("Soil Nutrients to Plant B Growth", "POSITIVE (+)", "More soil nutrients support Plant B's growth, but competition with Plant A for the same nutrient pool limits availability."),
+        ("Plant A Growth to Resource Depletion", "POSITIVE (+)", "As Plant A grows, it consumes more sunlight (through shading) and more soil nutrients (through root absorption), increasing the rate of resource depletion."),
+        ("Plant B Growth to Resource Depletion", "POSITIVE (+)", "As Plant B grows, it also consumes sunlight and nutrients, contributing to overall resource depletion in the shared environment."),
+        ("Resource Depletion to Plant A Growth", "NEGATIVE (-)", "As resources are depleted, there is less sunlight and fewer nutrients available for Plant A, slowing its growth rate."),
+        ("Resource Depletion to Plant B Growth", "NEGATIVE (-)", "Resource depletion reduces available sunlight and nutrients for Plant B. Because Plant A may already be capturing more, Plant B is disproportionately affected.")
+    ],
+    "sim_answers": [
+        ("Equal Start Scenario", "When both plants start equal, the model shows an unstable equilibrium. Both plants grow and deplete resources at similar rates initially. But any tiny random variation breaks the symmetry. Once one plant gains even a slight advantage, the feedback loop amplifies it. The winner grows faster, depletes more resources, and the loser declines. This demonstrates competitive exclusion: identical niches cannot support two equal competitors long-term."),
+        ("One Plant Advantage Scenario", "With Plant A starting taller, it immediately captures more sunlight and drives faster growth. Plant B receives less light from the start and grows slower. As Plant A grows more, it shades Plant B further and depletes soil nutrients faster. Plant B's growth rate drops toward zero while Plant A continues to dominate. The model clearly shows how small initial advantages compound through the resource depletion feedback loop.")
+    ],
+    "reflection_exemplars": [
+        ("Why does a small head start give a compounding advantage?", "A slightly taller plant captures slightly more sunlight, which produces slightly more growth, which makes it slightly taller still. Each cycle through the feedback loop amplifies the advantage. Meanwhile, the shorter plant gets progressively less light and fewer nutrients because the taller plant is consuming them. The advantage does not just maintain itself; it accelerates. This is why early establishment is so important in plant ecology and why invasive species that arrive first often dominate."),
+        ("Why does competitive exclusion not eliminate all biodiversity?", "Competitive exclusion says two species with identical niches cannot coexist, but ecosystems have enormous biodiversity because no two species occupy truly identical niches. Species partition resources: different root depths access different soil layers, shade-tolerant species thrive under canopies that sun-loving species need, some plants grow in spring while others grow in summer. This niche partitioning means species avoid direct competition for the exact same resource, allowing coexistence.")
+    ],
+    "stem_intro": "Present the challenge: Design a garden planting arrangement where two competing plant species can both thrive in the same space. Use provided plant data cards (light needs, root depth, nutrient requirements) to select species and arrange them so they partition resources rather than directly compete. Monitor growth of both species over 3 weeks.",
+    "stem_concepts": [
+        ("Resource Partitioning", "Species that use different parts of the same resource (different soil depths, different light levels) can coexist because they are not directly competing."),
+        ("Companion Planting", "Some plant combinations benefit each other. Tall sun-loving plants can shade heat-sensitive plants below. Deep-rooted plants access nutrients that shallow-rooted plants cannot reach."),
+        ("Carrying Capacity", "Every environment has a maximum amount of life it can support based on available resources. Exceeding carrying capacity leads to resource depletion and population decline.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Both species show healthy growth over 3 weeks with clear data, planting arrangement explicitly designed for resource partitioning, and design choices connected to competition model evidence"),
+        ("Proficient (3)", "Both species survive with growth data collected, planting arrangement shows resource partitioning strategy, and connection to competition concepts explained"),
+        ("Developing (2)", "Plants are arranged with some strategy but limited data on growth outcomes or unclear connection to competition principles"),
+        ("Beginning (1)", "Random planting arrangement with no resource partitioning strategy or data collection")
+    ],
+    "support": [
+        "Provide plant data cards with specific light, water, and nutrient requirements for different species",
+        "Use a lamp and two plants at different heights to physically demonstrate light competition in the classroom",
+        "Sentence frames: 'When Plant A grows taller, Plant B's growth __ because __'"
+    ],
+    "extensions": [
+        "Research a real example of competitive exclusion (red and gray squirrels in the UK, Gause's paramecium experiments) and explain the outcome using your competition model",
+        "Design an experiment to test whether root competition or light competition has a greater effect on plant growth",
+        "Investigate how invasive plant species like kudzu or purple loosestrife outcompete native plants and connect to your model's feedback loops"
+    ],
+    "cross_curr": [
+        ("Math", "Graph the growth curves of both plants over time and calculate the rate at which the gap between them widens, identifying exponential growth patterns"),
+        ("ELA", "Write a narrative from the perspective of Plant B as it slowly loses the competition for light, incorporating scientific vocabulary about resource limitation"),
+        ("Social Studies", "Research how competition for agricultural land and water resources has shaped human settlement patterns and conflicts throughout history")
+    ],
+    "misconceptions": [
+        ("Plants cooperate and share resources", "While some mutualistic relationships exist (mycorrhizal networks), plants in close proximity generally compete intensely for light, water, and nutrients. They do not share resources voluntarily. Even trees connected by fungal networks are engaged in complex competitive and cooperative dynamics, not simple sharing.", "Set up two plants under one lamp and observe over two weeks. The taller or faster-growing plant will shade the other, demonstrating competition rather than sharing."),
+        ("Competition only matters when resources are scarce", "Competition occurs whenever organisms use the same resource, even if that resource seems abundant. Two plants can compete for sunlight even on a bright day because one shades the other. Competition shapes growth patterns long before resources become critically scarce.", "Use the model to show that even with high sunlight available, Plant A's shading of Plant B reduces Plant B's growth rate."),
+        ("The bigger plant always wins", "While size is a major advantage, other factors matter. A smaller plant with deeper roots might access nutrients the taller plant cannot reach. A shade-tolerant species might thrive in the understory. The 'winner' depends on which resources are most limiting and how each species accesses them.", "Introduce the root depth component and show a scenario where the shorter plant with deeper roots outcompetes the taller plant when soil nutrients become the limiting factor.")
+    ]
+}
+
+L10 = {
+    "id": "G06L2-L10",
+    "title": "Why Do Some Countries Run Out of Water?",
+    "subtitle": "Modeling Water Stress from Rainfall, Population, and Consumption",
+    "ngss": "MS-ESS3-1, MS-ESS3-4",
+    "ngss_desc": "Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes. Construct an argument supported by evidence for how increases in human population and per-capita consumption of natural resources impact Earth's systems.",
+    "big_question": "If Earth has the same amount of water it has always had, why are some countries running out?",
+    "objectives": [
+        "Model how rainfall patterns and population density interact to create water stress",
+        "Explain the relationship between aquifer recharge rates and water demand",
+        "Predict which conditions lead to sustainable water use versus water crisis",
+        "Analyze how the Water Stress Index reflects the balance between supply and demand",
+        "Evaluate how human population growth and consumption patterns affect groundwater systems"
+    ],
+    "vocabulary": [
+        ("Aquifer", "An underground layer of rock or sediment that holds groundwater, recharged by rainfall seeping through soil over months to thousands of years"),
+        ("Water Stress", "A condition where water demand in a region approaches or exceeds the available supply, measured as the ratio of withdrawal to availability"),
+        ("Recharge Rate", "The speed at which an aquifer is replenished by rainfall infiltration, which is often much slower than the rate of human extraction"),
+        ("Per-Capita Consumption", "The average amount of water used by each person in a population, which varies greatly between countries and lifestyles"),
+        ("Water Stress Index", "A numerical measure of how close a region is to using all its renewable water supply, with higher values indicating greater risk of shortage")
+    ],
+    "components": [
+        ("Rainfall Pattern", "The amount, timing, and distribution of precipitation that provides the primary input of freshwater to a region", True),
+        ("Population Density", "The number of people per unit area, which drives total water demand through domestic, agricultural, and industrial use", True),
+        ("Aquifer Recharge", "The rate at which groundwater supplies are naturally replenished by rainfall infiltration through soil and rock", False),
+        ("Water Demand", "The total amount of water withdrawn for human use including drinking, agriculture, industry, and sanitation", False),
+        ("Water Stress Index", "A measure of the gap between available water supply and human water demand, indicating sustainability or crisis", False)
+    ],
+    "think_about_it": "When rainfall decreases, what happens to aquifer recharge? If population density increases while rainfall stays the same, what happens to the Water Stress Index?",
+    "scenarios": [
+        ("Sustainable Balance", "Set moderate rainfall and low population density, then observe aquifer recharge and water stress"),
+        ("Growing Demand", "Keep rainfall constant but gradually increase population density to observe when water stress becomes critical"),
+        ("Drought Crisis", "Lock rainfall to very low levels with moderate population and observe the growing gap between recharge and demand")
+    ],
+    "sim_scenarios": [
+        ("Sustainable Balance", "Moderate rainfall, low population density", "What do you predict will happen to the Water Stress Index when rainfall is sufficient and population is low?"),
+        ("Growing Demand", "Constant rainfall, population increasing", "What do you predict will happen to Aquifer Recharge compared to Water Demand as population grows?"),
+        ("Drought Crisis", "Very low rainfall, moderate population", "What do you predict will happen to the Water Stress Index when drought reduces rainfall but water demand stays the same?")
+    ],
+    "discoveries": [
+        "Water stress is not about total water on Earth but about the balance between local supply and local demand",
+        "Aquifer recharge can take years to centuries, while human extraction can drain aquifers in decades",
+        "Population growth increases water demand even when per-capita consumption stays constant",
+        "Rainfall patterns are uneven across the globe, creating natural water-rich and water-poor regions",
+        "The Water Stress Index can tip from sustainable to crisis when either supply drops or demand rises past a threshold"
+    ],
+    "answer": "Countries run out of water not because Earth's total water supply is shrinking but because the balance between local water supply and local demand becomes unsustainable. Rainfall patterns are geographically uneven, so some regions receive far less freshwater than others. When population density grows in these regions, water demand rises while aquifer recharge stays limited by rainfall. Humans can extract water from aquifers much faster than rain can replenish them. The result is a growing gap between supply and demand: the Water Stress Index rises until the region faces a water crisis.",
+    "stem_title": "Design a Water Management Plan",
+    "stem_mission": "Design a sustainable water management plan for a fictional growing city that prevents water stress from exceeding critical levels over the next 50 years.",
+    "stem_scenario": "A rapidly growing city in a semi-arid region currently has moderate water stress. Population projections show the city will triple in size over the next 50 years while climate models predict a 15% decrease in annual rainfall. Your environmental engineering team must design a comprehensive water management strategy that keeps the Water Stress Index below crisis level.",
+    "stem_questions": [
+        "How will you reduce water demand without limiting population growth?",
+        "What strategies can increase aquifer recharge even with less rainfall?",
+        "How will you balance agricultural, industrial, and domestic water needs?"
+    ],
+    "stem_design_qs": [
+        "What conservation measures will reduce per-capita water consumption?",
+        "What infrastructure (rainwater harvesting, wastewater recycling, desalination) will supplement natural supply?",
+        "How will you prioritize water allocation between agriculture, industry, and households?",
+        "How will you monitor the Water Stress Index over time and trigger emergency measures if needed?"
+    ],
+    "career": "Hydrologists and Water Resource Engineers study water systems and design sustainable management plans to ensure communities have clean water. They earn $60,000-$115,000/year.",
+    "images": {
+        "cover": ("cover-water-stress.png", "A photorealistic aerial view of a landscape split between a lush green irrigated area and a dry cracked earth region, showing the contrast between water availability and scarcity, dramatic lighting"),
+        "landscape": ("landscape-water-stress.png", "A diverse group of 6th grade students examining a watershed model on a table, a Black student pouring water over the model while a Latino student measures runoff with a graduated cylinder, bright science lab"),
+        "modeling": ("modeling-water-stress.png", "6th grade students building a water stress model on laptops, an Asian student adjusting rainfall values while a White student watches the Water Stress Index change on screen, modern classroom with water cycle posters"),
+        "discussion": ("discussion-water-stress.png", "A teacher showing a world map of water stress levels on a smartboard to 6th grade students, pointing to high-stress regions while diverse students compare their own city's water use, engaged classroom"),
+        "stem": ("stem-water-plan.png", "6th grade students collaborating on water management plans at lab tables with maps and calculators, a Latino student presenting their plan while a Black student points to projected population data, collaborative STEM lab")
+    },
+    "pre_assessment": [
+        "Where does the water that comes out of your tap originally come from?",
+        "Why do you think some places in the world do not have enough clean water?",
+        "If Earth is 70% covered in water, why would any country run out of water?",
+        "Draw what you think happens to rainwater after it hits the ground."
+    ],
+    "extend_components": [
+        ("Climate Change Effect", "Long-term shifts in rainfall patterns and temperature that can permanently reduce water supply in some regions and increase it in others"),
+        ("Agricultural Water Use", "Water consumed by farming, which typically accounts for 70% of all freshwater withdrawal globally and is often the largest demand on aquifers"),
+        ("Water Recycling Rate", "The percentage of used water that is treated and returned to the supply system, which can significantly reduce net demand on freshwater sources")
+    ],
+    "reflections": [
+        "Why is water stress a local problem even though Earth has a global water cycle?",
+        "How is the time mismatch between aquifer recharge and human extraction the root of water crises?",
+        "What would happen to your model if a country doubled its population but also cut per-capita consumption in half?",
+        "Why might two countries with the same rainfall have very different Water Stress Indexes?",
+        "How does your model show that water stress is about balance, not just about supply?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a computational model showing how rainfall patterns and population density interact through aquifer recharge and water demand to produce a Water Stress Index indicating sustainability or crisis."),
+        ("Disciplinary Core Idea", "ESS3.A Natural Resources / ESS3.C Human Impacts on Earth Systems", "Humans depend on Earth's land, ocean, atmosphere, and biosphere for freshwater resources. Increases in human population and per-capita consumption of natural resources impact Earth's groundwater systems."),
+        ("Crosscutting Concept", "Stability and Change", "Students investigate how the balance between water supply and demand can shift from stable sustainability to unstable crisis through changes in rainfall, population, or consumption patterns.")
+    ],
+    "cast_items": [
+        "Explain how uneven distribution of freshwater resources creates water-rich and water-poor regions",
+        "Model the relationship between human population growth and groundwater depletion",
+        "Predict water stress outcomes based on changes in rainfall patterns and population density"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "City A and City B both receive 500 mm of annual rainfall. City A has 100,000 residents and City B has 1,000,000 residents. Based on the water stress model, which city is more likely to face a water crisis, and what is the primary factor causing the difference?"),
+        ("Constructed Response:", "Using your water stress model, explain why Cape Town, South Africa nearly ran out of water in 2018 even though it receives moderate annual rainfall. Reference rainfall patterns, population growth, aquifer recharge rates, and the Water Stress Index in your explanation.")
+    ],
+    "background_intro": "Water is the most essential resource for human civilization, yet billions of people face water scarcity. Understanding why requires modeling the complex balance between natural water supply and human water demand, a balance that is shifting in dangerous directions around the world.",
+    "background_sections": [
+        ("Uneven Distribution of Freshwater", "Only about 2.5% of Earth's water is freshwater, and most of that is locked in ice caps and glaciers. The freshwater available for human use (rivers, lakes, accessible groundwater) is unevenly distributed by geography and climate. Some regions receive heavy rainfall while others are arid. This natural inequality means water stress is fundamentally a geographic problem, not a global shortage."),
+        ("Aquifers: Underground Water Banks", "Aquifers are layers of permeable rock or sediment that store groundwater. They are recharged when rainfall filters through the soil, a process that can take months to thousands of years depending on the aquifer depth and geology. Humans extract water from aquifers using wells and pumps. When extraction exceeds recharge (overdraft), the aquifer level drops, wells go dry, and land can permanently compact (subsidence), destroying storage capacity forever."),
+        ("Population Growth and Water Demand", "Global water demand has increased six-fold over the past century, driven primarily by population growth, agricultural expansion, and industrial development. Agriculture alone accounts for roughly 70% of freshwater withdrawal. As populations grow in water-stressed regions, the gap between demand and supply widens. Per-capita consumption also matters: an average American uses about 300 liters per day, while a person in sub-Saharan Africa may use only 20 liters."),
+        ("Tipping Points and Water Crisis", "Water systems can shift from stressed to crisis rapidly. Cape Town nearly reached 'Day Zero' in 2018, when taps would be shut off. The Aral Sea, once the world's fourth-largest lake, has nearly disappeared due to irrigation diversion. The Ogallala Aquifer in the US Great Plains is being depleted 3-10 times faster than it recharges. These examples show that water systems have tipping points beyond which recovery becomes extremely difficult or impossible.")
+    ],
+    "lever_L": "Students identify rainfall pattern and population density as the two external components, and aquifer recharge, water demand, and Water Stress Index as the three internal responses of the water stress system.",
+    "lever_E": "Students determine that rainfall positively drives aquifer recharge, population density positively drives water demand, aquifer recharge negatively reduces water stress (more recharge means less stress), and water demand positively increases the Water Stress Index.",
+    "lever_V": "Students build a model showing how rainfall feeds aquifer recharge while population drives demand, with the Water Stress Index reflecting the balance between supply and demand.",
+    "lever_Ev": "Students run sustainable balance, growing demand, and drought crisis scenarios to observe how the Water Stress Index responds to changes in either supply or demand.",
+    "lever_R": "Students add climate change effects or agricultural water use to explore how additional factors compound water stress beyond basic supply and demand.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with contrast between green and arid landscape", "say": "Earth has 326 million trillion gallons of water. That is a 326 followed by 18 zeros. So how is it possible that Cape Town almost turned off all its taps in 2018?", "do": "Show a photo of Cape Town's empty reservoirs during the crisis. Let students react to the contrast between Earth's total water and a city's shortage.", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we are modeling why some countries face water crises while others have plenty. The answer is about balance, not total supply.", "do": "Have students read objectives. Pre-teach 'aquifer,' 'recharge rate,' and 'Water Stress Index.'", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why do some countries run out of water?", "say": "If the water cycle recycles all water and Earth never loses water, how can any place run out?", "do": "Think-pair-share: Where does your tap water come from? What would happen if no rain fell for a year?", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "Water stress is about the BALANCE between how fast nature refills the supply and how fast humans drain it. Our model captures this balance.", "do": "Draw a simple balance scale: rainfall and recharge on one side, population and demand on the other. Water Stress Index is the needle.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Component cards for water stress model", "say": "Rainfall and population are givens that we cannot control in the model. But recharge, demand, and the stress index respond to those inputs.", "do": "Guide sorting. Discuss why rainfall pattern is external (weather) and population density is external (demographics).", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows between water stress components", "say": "Here is the critical insight: aquifer recharge is SLOW, measured in months to centuries. Water demand is FAST, measured in daily consumption. That time mismatch is what creates water stress.", "do": "Trace both paths: rainfall to recharge to supply, and population to demand. Show how the stress index compares the two.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graph predictions for sustainable vs. growing demand vs. drought", "say": "What happens when a city triples in size but the rain stays the same? Let's model it.", "do": "Students predict outcomes. Run all three scenarios. Watch the Water Stress Index cross from green to yellow to red.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings about water stress balance", "say": "Countries do not run out of water because Earth is drying up. They run out because they are using it faster than nature can replace it, and that is a choice we can change.", "do": "Show real-world examples: Ogallala Aquifer depletion, Aral Sea disappearance, Singapore's water recycling success.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Water management plan challenge", "say": "Your city is tripling in size and rainfall is dropping. Design a 50-year water plan that keeps the stress index below crisis.", "do": "Provide city data sheets with population projections and rainfall forecasts. Teams design management plans balancing conservation, infrastructure, and allocation.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Rainfall Pattern is external because it is determined by geographic location and climate, not by human activity within the system. Population Density is external because it is driven by demographic trends that are inputs to the water system rather than outputs. Aquifer Recharge is internal because its rate responds to rainfall patterns and soil conditions. Water Demand is internal because it is generated by the population's consumption patterns within the system. Water Stress Index is internal because it is a calculated measure of the balance between the supply (recharge) and demand sides of the system.",
+    "relationships": [
+        ("Rainfall Pattern to Aquifer Recharge", "POSITIVE (+)", "More rainfall provides more water that can infiltrate through soil and rock to replenish groundwater stores. Less rainfall means slower recharge."),
+        ("Population Density to Water Demand", "POSITIVE (+)", "More people in an area means more total water consumption for drinking, cooking, sanitation, agriculture, and industry, increasing overall demand."),
+        ("Aquifer Recharge to Water Stress Index", "NEGATIVE (-)", "Higher aquifer recharge means more water is being replenished, which reduces the gap between supply and demand and lowers the Water Stress Index."),
+        ("Water Demand to Water Stress Index", "POSITIVE (+)", "Higher water demand increases the gap between what humans need and what the environment can supply, raising the Water Stress Index toward crisis levels."),
+        ("Rainfall Pattern to Water Stress Index (indirect)", "NEGATIVE (-)", "This indirect path shows how rainfall ultimately reduces water stress by feeding aquifer recharge, which increases available supply relative to demand.")
+    ],
+    "sim_answers": [
+        ("Sustainable Balance vs. Growing Demand", "With moderate rainfall and low population, aquifer recharge keeps pace with water demand and the Water Stress Index remains low (green zone). As population triples while rainfall stays constant, water demand climbs steeply but aquifer recharge remains unchanged. The Water Stress Index crosses from sustainable to stressed to critical. The model reveals that the crisis is not caused by less water but by more demand on the same supply."),
+        ("Drought Crisis Scenario", "When rainfall drops to very low levels, aquifer recharge slows dramatically. Even with moderate population, water demand now far exceeds the rate of replenishment. The Water Stress Index rises rapidly into crisis territory. The model shows that both supply reduction (drought) and demand increase (population) push toward the same crisis, and when both occur simultaneously, the effect is compounded.")
+    ],
+    "reflection_exemplars": [
+        ("Why is water stress a local problem if Earth has a global water cycle?", "The water cycle moves water globally through evaporation, precipitation, and runoff, but it deposits water unevenly. Some regions get heavy rainfall while others are arid. Water stress occurs when local demand exceeds local supply. A region cannot easily use water that is falling thousands of miles away. It takes massive infrastructure (dams, pipelines, desalination) to move water from where it is to where it is needed. Until then, water stress is fundamentally a local mismatch between where rain falls and where people live."),
+        ("What would happen if a country doubled population but halved per-capita consumption?", "Total water demand would stay roughly the same (2x people times 0.5x consumption per person = 1x total demand). The Water Stress Index would remain unchanged because the supply-demand balance would not shift. This shows that per-capita consumption is just as important as population size. It also reveals a policy lever: reducing consumption per person can offset population growth. This is exactly what Singapore and Israel have done through aggressive conservation and water recycling.")
+    ],
+    "stem_intro": "Present the challenge: A semi-arid city currently has a Water Stress Index of 0.6 (moderate stress). Population will triple in 50 years and rainfall is projected to decrease 15%. Design a comprehensive water management plan that keeps the Water Stress Index below 0.8 (crisis threshold) for the entire 50-year period. Your plan must address conservation, infrastructure, and allocation priorities.",
+    "stem_concepts": [
+        ("Water Conservation", "Reducing per-capita water consumption through efficient fixtures, landscaping changes, pricing signals, and public education. Conservation is the cheapest way to reduce water stress."),
+        ("Water Recycling and Desalination", "Treating wastewater for reuse and converting seawater to freshwater. These technologies increase the effective water supply but require energy and infrastructure investment."),
+        ("Aquifer Management", "Protecting recharge zones, limiting extraction rates, and using managed aquifer recharge (deliberately infiltrating treated water into aquifers) to maintain long-term groundwater supply.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Comprehensive 50-year plan addresses conservation, infrastructure, and allocation with quantitative targets, keeps Water Stress Index below threshold with evidence, and connects strategies to model components"),
+        ("Proficient (3)", "Multi-strategy plan addresses at least two areas (conservation, infrastructure, allocation) with clear connection to water stress model"),
+        ("Developing (2)", "Plan includes some strategies but lacks quantitative targets or clear connection to how they reduce the Water Stress Index"),
+        ("Beginning (1)", "Minimal plan with single strategy and no connection to the water stress model or quantitative reasoning")
+    ],
+    "support": [
+        "Provide a world map showing water stress levels so students can identify real-world examples",
+        "Use a simple bucket with a small hole (recharge) and a cup for scooping (demand) to physically model the supply-demand balance",
+        "Sentence frames: 'When population density increases, water demand __ because __'"
+    ],
+    "extensions": [
+        "Research a real water crisis (Cape Town Day Zero, Flint Michigan, Aral Sea shrinkage) and explain it using your water stress model components",
+        "Calculate your household's daily water consumption and compare it to the global average. How would your water stress model change if everyone consumed at your household's rate?",
+        "Investigate how Israel became a world leader in water management despite being in one of the driest regions on Earth, and identify which model components they changed"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate the Water Stress Index for different cities using real rainfall and population data. Graph how the index changes as population grows at 3% per year"),
+        ("ELA", "Write a persuasive letter to a city council explaining why the current water usage rate is unsustainable and proposing three evidence-based solutions from your model"),
+        ("Social Studies", "Research how competition for water resources has contributed to conflicts between nations (Egypt-Ethiopia Nile dispute, India-Pakistan Indus Treaty) and connect to your water stress model")
+    ],
+    "misconceptions": [
+        ("Earth is running out of water", "Earth has the same amount of water it has always had. Water is not created or destroyed in the water cycle, only moved and transformed. The problem is distribution: freshwater is unevenly distributed, and humans are consuming it faster than nature replenishes it in certain locations. It is a local balance problem, not a global shortage.", "Show the water cycle diagram and emphasize that water is recycled. Then show the water stress world map to show the problem is WHERE water is, not HOW MUCH exists."),
+        ("Rainfall alone determines water stress", "Rainfall is only the supply side of the equation. Water stress depends on the BALANCE between supply and demand. A region with low rainfall but also low population may have no water stress, while a region with moderate rainfall but massive population can be in crisis. Both supply and demand must be modeled together.", "Compare two scenarios in the model: low rainfall with low population (low stress) vs. moderate rainfall with high population (high stress). Students see that demand matters as much as supply."),
+        ("Groundwater is unlimited because it refills from rain", "While aquifers do recharge from rainfall, the process can take years to thousands of years depending on depth and geology. Humans can extract water from an aquifer with a pump in minutes. This time mismatch means that aquifers can be depleted far faster than they recharge, effectively mining fossil water that took millennia to accumulate.", "Show the Ogallala Aquifer data: recharged over thousands of years, being depleted in decades. Have students calculate how long the aquifer would last at current extraction rates versus recharge rates.")
+    ]
+}

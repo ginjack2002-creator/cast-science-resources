@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Complete lesson data for Grade 5 Level 2 (G05L2-L01 through G05L2-L07)"""
+"""Complete lesson data for Grade 5 Level 2 (G05L2-L01 through G05L2-L10)"""
 
 L01 = {
     "id": "G05L2-L01",
@@ -1193,5 +1193,516 @@ L07 = {
         ("The brightest-looking stars are the closest", "Many of the brightest stars in the sky are not the closest. Sirius looks brightest because it is relatively close AND luminous, but Rigel is much farther and still very bright because of its enormous actual brightness.", "Compare Sirius (8.6 light-years, moderate luminosity) with Rigel (860 light-years, extreme luminosity)."),
         ("Stars are all the same brightness", "Stars vary enormously in actual brightness. Some produce millions of times more light than the Sun, while others produce only a fraction.", "Show a comparison chart of star luminosities."),
         ("We see stars as they are right now", "We see stars as they were when their light left them. A star 50 light-years away is seen as it was 50 years ago. The farther the star, the further back in time we are looking.", "Ask: If the Sun went dark right now, how long before we would notice? (8 minutes)")
+    ]
+}
+
+L08 = {
+    "id": "G05L2-L08",
+    "title": "Why Does Ice Cream Melt Faster on a Hot Day?",
+    "subtitle": "How Heat Energy Transfers from the Environment to Frozen Treats",
+    "ngss": "5-PS1-1, 5-PS1-3",
+    "ngss_desc": "Develop a model to describe that matter is made of particles too small to be seen. Make observations and measurements to identify materials based on their properties, including thermal conductivity and insulation.",
+    "big_question": "Why does ice cream melt faster on a hot day than on a cool day?",
+    "objectives": [
+        "Model how air temperature and insulation affect the rate of heat transfer",
+        "Explain how heat energy moves from warmer surroundings to colder objects",
+        "Predict how changing container insulation affects melting speed",
+        "Connect particle motion to temperature and state changes"
+    ],
+    "vocabulary": [
+        ("Heat Transfer", "The movement of thermal energy from a warmer object to a cooler object"),
+        ("Insulation", "A material that slows down heat transfer"),
+        ("Melting", "The change from solid to liquid caused by absorbing heat energy"),
+        ("Thermal Energy", "The total energy of moving particles in a substance")
+    ],
+    "components": [
+        ("Air Temperature", "The temperature of the surrounding environment", True),
+        ("Container Insulation", "How well the container blocks heat from reaching the ice cream", True),
+        ("Heat Transfer Rate", "How quickly thermal energy moves from the air to the ice cream", False),
+        ("Melting Speed", "How fast the ice cream changes from solid to liquid", False),
+        ("Ice Cream State", "The current condition of the ice cream — fully frozen, slushy, or melted", False)
+    ],
+    "think_about_it": "If you put one scoop of ice cream on a plate and another in a thermos, which one melts first? Why?",
+    "scenarios": [
+        ("Hot Summer Day", "Set Air Temperature to 90% and Container Insulation to 10%"),
+        ("Insulated Container", "Set Air Temperature to 90% and Container Insulation to 90%"),
+        ("Cool Day, No Insulation", "Set Air Temperature to 30% and Container Insulation to 10%")
+    ],
+    "sim_scenarios": [
+        ("Hot Summer Day", "High air temperature, low insulation", "What do you predict will happen to Melting Speed?"),
+        ("Insulated Container", "High air temperature, high insulation", "What do you predict will happen to Heat Transfer Rate compared to the hot day scenario?"),
+        ("Cool Day, No Insulation", "Low air temperature, no insulation", "What do you predict will happen to Ice Cream State over time?")
+    ],
+    "discoveries": [
+        "Heat always flows from warmer surroundings to cooler objects — never the other way",
+        "Higher air temperature means a greater difference in thermal energy, so heat transfers faster",
+        "Insulation slows heat transfer by blocking thermal energy from reaching the ice cream",
+        "Melting speed depends on BOTH air temperature and insulation working together"
+    ],
+    "answer": "Ice cream melts faster on a hot day because the greater difference between the air temperature and the ice cream temperature causes heat energy to transfer more quickly. The heat flows from the warm air into the cold ice cream, raising its temperature until it changes from solid to liquid.",
+    "stem_title": "Design the Ultimate Ice Cream Keeper",
+    "stem_mission": "Design an insulated container that keeps ice cream frozen the longest on a hot day.",
+    "stem_scenario": "Your school's summer fair is outdoors in 95-degree heat. The ice cream stand needs a way to keep scoops frozen for at least 30 minutes without electricity. Your team must design and test an insulated container.",
+    "stem_questions": [
+        "Which materials are the best insulators and why?",
+        "How does the thickness of insulation affect heat transfer rate?",
+        "What role does the container's color play in absorbing or reflecting heat?"
+    ],
+    "stem_design_qs": [
+        "What insulating materials will you use (foam, fabric, foil, air gaps)?",
+        "How will you minimize the opening where heat can enter?",
+        "How will you test whether your design actually slows melting?",
+        "How will you measure melting speed to compare designs?"
+    ],
+    "career": "Materials Scientists and Thermal Engineers design insulation for everything from food containers to spacecraft. They use the same heat transfer principles you modeled today. They earn $75,000-$130,000/year.",
+    "images": {
+        "cover": ("cover-ice-cream-melting.png", "A photorealistic, cinematic image of a scoop of ice cream melting on a cone in bright summer sunlight, with visible heat waves and dripping liquid, vibrant colors, ultra-crisp detail"),
+        "landscape": ("landscape-ice-cream-melting.png", "A photorealistic image of a Latino male student (age 10-11) holding an ice cream cone outdoors on a hot day while diverse 5th graders including Black, Asian, and White classmates observe the melting with clipboards, modern casual clothing, bright natural sunlight"),
+        "modeling": ("modeling-ice-cream-melting.png", "A photorealistic image of a Black female student (age 10-11) at a laptop building a heat transfer model, with White male, Asian female, and Latino classmates comparing results, modern classroom with science posters, natural light"),
+        "discussion": ("discussion-ice-cream-melting.png", "A photorealistic image of a White male teacher demonstrating insulation materials while diverse 5th graders including Black, Latino, and Asian students examine different containers, classroom with thermal experiment setup, warm lighting"),
+        "stem": ("stem-ice-cream-melting.png", "A photorealistic image of an Asian female student (age 10-11) presenting an insulated container design while Black, White, and Latino classmates test their own prototypes, school makerspace setting, bright natural light")
+    },
+    "pre_assessment": [
+        "Why does ice cream melt? What causes it to change from solid to liquid?",
+        "If you hold an ice cube in your hand, your hand feels cold. Is cold moving to your hand, or is something else happening?",
+        "Draw what you think is happening to the ice cream particles as it melts.",
+        "What could you do to keep ice cream frozen longer without a freezer?"
+    ],
+    "extend_components": [
+        ("Ice Cream Volume", "Larger scoops take longer to melt because there is more frozen material to warm up"),
+        ("Wind Speed", "Moving air carries heat to the ice cream faster than still air"),
+        ("Direct Sunlight", "Sunlight adds radiant heat energy directly to the ice cream surface")
+    ],
+    "reflections": [
+        "Why does heat always flow from hot to cold and never the other way?",
+        "How is a thermos like a winter coat? What do they have in common?",
+        "What surprised you most about how insulation affected melting speed?",
+        "If you could add one more component to this model, what would it be and why?",
+        "How does understanding heat transfer help engineers design better products?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model showing how air temperature and insulation control heat transfer and melting."),
+        ("Disciplinary Core Idea", "PS1.A Structure and Properties of Matter", "Students model how thermal energy transfer causes changes in the state of matter from solid to liquid."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal relationships between temperature difference, insulation, and melting speed.")
+    ],
+    "cast_items": [
+        "Explain how heat energy moves from the air to the ice cream",
+        "Predict how insulation affects the rate of melting",
+        "Describe the relationship between air temperature and heat transfer rate"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "Two identical ice cream scoops are placed outside on a 95°F day. One is in a foam container and one is on a plate. Which melts first and why?"),
+        ("Constructed Response:", "Explain why ice cream melts faster on a hot day than on a cool day using the concepts of heat transfer and thermal energy from your model.")
+    ],
+    "background_intro": "Heat transfer is one of the most fundamental concepts in physical science. Thermal energy always moves from warmer objects to cooler objects until they reach the same temperature — a state called thermal equilibrium. Ice cream melting is a perfect everyday example of this principle.",
+    "background_sections": [
+        ("What Is Heat Transfer?", "Heat transfer is the movement of thermal energy from a warmer substance to a cooler substance. This happens through three mechanisms: conduction (direct contact), convection (moving fluids), and radiation (electromagnetic waves). Ice cream melting involves all three."),
+        ("Temperature Difference Drives the Rate", "The greater the temperature difference between two objects, the faster heat transfers. On a 95°F day, heat rushes into 25°F ice cream much faster than on a 65°F day because the temperature gap is much larger."),
+        ("Insulation Slows Heat Transfer", "Insulating materials like foam, wool, and trapped air have low thermal conductivity — they resist the flow of heat. A thermos uses vacuum-sealed walls and reflective linings to minimize all three types of heat transfer."),
+        ("State Change Requires Energy", "Melting is a phase change that requires energy called the heat of fusion. The ice cream must absorb enough thermal energy to break the bonds holding its particles in a solid structure before it can become liquid.")
+    ],
+    "lever_L": "Students identify Air Temperature, Container Insulation, Heat Transfer Rate, Melting Speed, and Ice Cream State as the five system components.",
+    "lever_E": "Students determine that Air Temperature increases Heat Transfer Rate (+), Container Insulation decreases Heat Transfer Rate (-), Heat Transfer Rate increases Melting Speed (+), and Melting Speed changes Ice Cream State from frozen to melted (+).",
+    "lever_V": "Students build the heat transfer model showing how external conditions (temperature and insulation) control internal responses (heat flow, melting, state change).",
+    "lever_Ev": "Students run the Insulated Container scenario and observe that high insulation dramatically slows melting even on a hot day, then compare with the Cool Day scenario to see the effect of temperature alone.",
+    "lever_R": "Students add Wind Speed or Direct Sunlight to explore additional factors that affect heat transfer rate.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Ice cream melting in summer sunlight", "say": "You know it happens — your ice cream melts faster on a hot day. But WHY?", "do": "Ask students to share their worst ice cream melting story.", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary list", "say": "Today we model the invisible flow of heat energy.", "do": "Students read objectives and discuss what 'thermal energy' might mean.", "time": "2 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why does ice cream melt faster on a hot day?", "say": "Everyone knows it happens, but can you explain the science behind it?", "do": "Quick-write: students write their best explanation in 30 seconds.", "time": "2 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We will model heat transfer as a system with inputs we control and outputs we observe.", "do": "Preview the five components students will work with.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Five component cards with descriptions", "say": "Air Temperature and Container Insulation are external — we set them. The other three respond.", "do": "Students sort component cards into external and internal categories.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows with +/- signs", "say": "Notice insulation has a NEGATIVE effect — it works AGAINST heat transfer. That is what makes it useful.", "do": "Guide students to draw all four relationship arrows in ModelIt.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graphs comparing melting under different conditions", "say": "Let's race: hot day vs insulated container. Which ice cream survives longer?", "do": "Students run all three scenarios and record observations.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings about heat transfer and melting", "say": "Heat always flows from hot to cold. Insulation is just a speed bump for that flow.", "do": "Class discussion: What real-world products use this principle?", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Insulated container design challenge", "say": "Now design the ultimate ice cream keeper for the school fair.", "do": "Distribute materials; groups design, build, and test prototypes.", "time": "10 min"}
+    ],
+    "sort_reasoning": "Air Temperature and Container Insulation are external because they represent environmental conditions and design choices that students can adjust. Heat Transfer Rate, Melting Speed, and Ice Cream State are internal because they are determined by and respond to the external conditions.",
+    "relationships": [
+        ("Air Temperature to Heat Transfer Rate", "POSITIVE (+)", "Higher air temperature creates a larger temperature difference, driving faster heat transfer."),
+        ("Container Insulation to Heat Transfer Rate", "NEGATIVE (-)", "Better insulation blocks heat from reaching the ice cream, slowing the transfer rate."),
+        ("Heat Transfer Rate to Melting Speed", "POSITIVE (+)", "Faster heat transfer delivers more thermal energy to the ice cream, speeding up melting."),
+        ("Melting Speed to Ice Cream State", "POSITIVE (+)", "Faster melting causes the ice cream to transition from frozen to slushy to liquid more quickly.")
+    ],
+    "sim_answers": [
+        ("Insulated Container", "Even with Air Temperature at 90%, high insulation (90%) dramatically reduces Heat Transfer Rate. Melting Speed is much slower than the hot day scenario. The ice cream stays frozen much longer because insulation blocks most of the incoming heat energy."),
+        ("Cool Day, No Insulation", "With Air Temperature at only 30%, Heat Transfer Rate is low because the temperature difference is small. Melting Speed is slow even without insulation. This shows that temperature difference is the primary driver of heat transfer.")
+    ],
+    "reflection_exemplars": [
+        ("Why does heat always flow from hot to cold?", "Heat is the movement of thermal energy, and particles in warmer objects vibrate faster than particles in cooler objects. When they interact, the fast particles transfer energy to the slow ones until they balance out. Energy naturally spreads from concentrated areas to less concentrated areas."),
+        ("How is a thermos like a winter coat?", "Both work by trapping air, which is a poor conductor of heat. A winter coat traps air between fibers to slow heat from leaving your body. A thermos traps air (or vacuum) between walls to slow heat from entering the cold contents. Both are barriers to heat transfer, not heat generators.")
+    ],
+    "stem_intro": "Present the summer fair challenge. Connect to the model: every design decision either increases or decreases heat transfer rate. The winning design minimizes heat flow from the hot air to the ice cream.",
+    "stem_concepts": [
+        ("Thermal Conductivity", "Different materials transfer heat at different rates. Metal conducts heat quickly (bad for insulation), while foam and air conduct heat slowly (good for insulation)."),
+        ("Reflective Surfaces", "Shiny materials like aluminum foil reflect radiant heat away, adding another layer of protection against thermal energy transfer."),
+        ("Air Gaps", "Trapped air is one of the best insulators because air molecules are spread far apart and transfer energy slowly.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Design uses multiple insulation strategies, explains heat transfer principles, and includes a measurement plan to test effectiveness"),
+        ("Proficient (3)", "Design uses at least two insulation methods with scientific reasoning connected to the model"),
+        ("Developing (2)", "Design addresses insulation but lacks detail on why chosen materials work"),
+        ("Beginning (1)", "Design does not connect material choices to heat transfer principles")
+    ],
+    "support": [
+        "Provide physical materials (foam cups, foil, fabric) so students can feel the temperature difference",
+        "Use sentence frames: 'When air temperature increases, heat transfer rate __ because...'",
+        "Offer a pre-made observation table for recording melting times across scenarios"
+    ],
+    "extensions": [
+        "Test real insulating materials by timing how long an ice cube lasts in each container",
+        "Add Wind Speed as a component and explore how convection affects melting rate",
+        "Research how vacuum insulation in thermoses works and connect it to the model"
+    ],
+    "cross_curr": [
+        ("Math", "Graph melting speed vs. air temperature and find the relationship pattern"),
+        ("ELA", "Write a persuasive product description for your insulated container design"),
+        ("Social Studies", "Research how ancient civilizations stored ice and kept food cold before refrigeration")
+    ],
+    "misconceptions": [
+        ("Cold flows into the ice cream", "Cold is not a substance that flows. Heat (thermal energy) flows FROM the warm air INTO the cold ice cream. The ice cream warms up; the air does not send 'cold' anywhere.", "Hold an ice cube: your hand feels cold, but heat is leaving your hand and entering the ice."),
+        ("Insulation adds cold to keep things frozen", "Insulation does not generate cold. It simply slows down heat transfer. A thermos keeps things cold by preventing warm air from reaching the contents, not by adding cold.", "A thermos also keeps hot soup hot — it blocks heat transfer in both directions."),
+        ("All materials transfer heat at the same rate", "Different materials have very different thermal conductivities. Metal transfers heat rapidly while foam transfers it slowly. That is why a metal spoon in soup gets hot but a wooden spoon does not.", "Touch a metal desk and a book — the metal feels cooler because it conducts heat away from your hand faster.")
+    ]
+}
+
+L09 = {
+    "id": "G05L2-L09",
+    "title": "Can a River Change Direction?",
+    "subtitle": "How Flowing Water Reshapes the Land Over Time",
+    "ngss": "5-ESS2-1, 5-ESS2-2",
+    "ngss_desc": "Develop a model using an example to describe ways the geosphere, hydrosphere, atmosphere, and biosphere interact. Describe and graph the amounts and percentages of water and fresh water in various reservoirs to provide evidence about the distribution of water on Earth.",
+    "big_question": "Can a river actually change the direction it flows? What forces make that happen?",
+    "objectives": [
+        "Model how water flow speed and soil softness affect erosion and sediment transport",
+        "Explain how erosion on one bank and deposition on another changes a river's path",
+        "Predict how changes in water flow speed affect channel shape over time",
+        "Connect river processes to real-world landform changes"
+    ],
+    "vocabulary": [
+        ("Erosion", "The wearing away of rock and soil by water, wind, or ice"),
+        ("Sediment", "Small pieces of rock and soil carried by flowing water"),
+        ("Deposition", "When flowing water slows down and drops the sediment it was carrying"),
+        ("Channel", "The path or bed through which a river flows")
+    ],
+    "components": [
+        ("Water Flow Speed", "How fast the water moves through the river channel", True),
+        ("Soil Softness", "How easily the riverbank material can be worn away by water", True),
+        ("Erosion Rate", "How quickly the river wears away soil and rock from its banks", False),
+        ("Sediment Transport", "How much loose material the river carries as it flows", False),
+        ("Channel Shape Change", "How much the river's path shifts over time due to erosion and deposition", False)
+    ],
+    "think_about_it": "If you run water from a hose over a pile of sand, what happens to the sand? What if you turn the water up higher?",
+    "scenarios": [
+        ("Fast River, Soft Soil", "Set Water Flow Speed to 90% and Soil Softness to 90%"),
+        ("Slow River, Soft Soil", "Set Water Flow Speed to 20% and Soil Softness to 90%"),
+        ("Fast River, Hard Rock", "Set Water Flow Speed to 90% and Soil Softness to 10%")
+    ],
+    "sim_scenarios": [
+        ("Fast River, Soft Soil", "Maximum flow speed, very soft soil", "What do you predict will happen to Erosion Rate and Channel Shape Change?"),
+        ("Slow River, Soft Soil", "Low flow speed, very soft soil", "What do you predict will happen compared to the fast river scenario?"),
+        ("Fast River, Hard Rock", "Maximum flow speed, very hard rock", "What do you predict will happen to Erosion Rate even with fast water?")
+    ],
+    "discoveries": [
+        "Rivers CAN change direction over time through erosion on the outside of bends and deposition on the inside",
+        "Faster water erodes more material and carries more sediment, reshaping the channel quickly",
+        "Soft soil erodes much faster than hard rock, so rivers change course more easily in soft ground",
+        "Channel shape change is a SLOW process — it happens over years, decades, and centuries, not overnight"
+    ],
+    "answer": "Yes, a river can change direction! Fast-moving water erodes soft soil on the outside of bends, while slower water on the inside deposits sediment. Over time, this makes bends grow larger and the river shifts its path. In very soft soil with fast water, rivers can change course dramatically.",
+    "stem_title": "Design a Riverbank Protection Plan",
+    "stem_mission": "Design a plan to protect a community's riverbank from erosion without harming the river ecosystem.",
+    "stem_scenario": "A riverside community is losing land to erosion. Every year, the river eats away more of the bank, threatening homes and roads. Your team must design a protection plan that slows erosion while keeping the river healthy for fish and wildlife.",
+    "stem_questions": [
+        "What methods can slow erosion without blocking the river entirely?",
+        "How do plants help prevent riverbank erosion?",
+        "What happens downstream if you armor one section of riverbank?"
+    ],
+    "stem_design_qs": [
+        "What materials or natural features will you use to slow erosion?",
+        "How will you protect the bank without speeding up erosion elsewhere?",
+        "How will you ensure fish and wildlife can still use the river?",
+        "How will you measure whether your protection plan is working over time?"
+    ],
+    "career": "Fluvial Geomorphologists and River Engineers study how rivers shape the land and design solutions to protect communities from erosion and flooding. They earn $65,000-$120,000/year.",
+    "images": {
+        "cover": ("cover-river-direction.png", "A photorealistic, cinematic aerial image of a winding river with dramatic meanders cutting through a green valley, showing visible erosion on outer banks and sediment deposits on inner banks, golden hour lighting, ultra-crisp detail"),
+        "landscape": ("landscape-river-direction.png", "A photorealistic image of a Black female student (age 10-11) leading diverse 5th graders including White, Asian, and Latino classmates along a stream bank, pointing at erosion marks in the soil, wearing modern hoodies and sneakers, bright natural light"),
+        "modeling": ("modeling-river-direction.png", "A photorealistic image of a White male student (age 10-11) at a laptop building a river erosion model, with Black female, Asian male, and Latina classmates comparing simulation results, modern classroom, natural light"),
+        "discussion": ("discussion-river-direction.png", "A photorealistic image of an Asian female teacher using a stream table demonstration while diverse 5th graders including Black, White, and Latino students observe water cutting through sand, classroom science lab, warm lighting"),
+        "stem": ("stem-river-direction.png", "A photorealistic image of a Latino female student (age 10-11) presenting a riverbank protection poster while White, Black, and Asian classmates examine model riverbanks, school science room, bright natural light")
+    },
+    "pre_assessment": [
+        "Have you ever seen a place where water wore away the ground? What did it look like?",
+        "Do you think rivers have always been in the same place? Why or why not?",
+        "Draw what you think happens to a riverbank when water flows past it very quickly.",
+        "What do you think 'erosion' means? Where have you seen it happen?"
+    ],
+    "extend_components": [
+        ("Vegetation Cover", "Plant roots hold soil together, reducing erosion even when water flows fast"),
+        ("Rainfall Intensity", "Heavy rain adds more water to the river, increasing flow speed and erosion"),
+        ("River Slope", "Steeper river channels cause water to flow faster, increasing erosive power")
+    ],
+    "reflections": [
+        "Why do rivers have curves instead of flowing in straight lines?",
+        "How is a river like a living thing that changes and grows over time?",
+        "What surprised you most about how quickly soft soil erodes?",
+        "If you could add one more component to this model, what would it be and why?",
+        "How does understanding erosion help communities plan where to build?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model showing how water flow and soil properties control erosion, sediment transport, and channel change."),
+        ("Disciplinary Core Idea", "ESS2.A Earth Materials and Systems", "Students model how water interacts with earth materials to reshape landforms through erosion and deposition."),
+        ("Crosscutting Concept", "Stability and Change", "Students explore how river systems appear stable but are constantly changing through slow erosion processes.")
+    ],
+    "cast_items": [
+        "Explain how water flow speed affects erosion rate",
+        "Predict how a river's path will change based on soil type and water speed",
+        "Describe the relationship between erosion and deposition in shaping river channels"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A river flows through an area where one bank is soft clay and the other is solid rock. Over time, which direction will the river shift and why?"),
+        ("Constructed Response:", "Explain how a river can change direction over time using the concepts of erosion, sediment transport, and deposition from your model.")
+    ],
+    "background_intro": "Rivers are powerful agents of change on Earth's surface. Over time, flowing water reshapes the land by eroding material from some areas and depositing it in others. This constant process of erosion and deposition is how rivers carve valleys, create floodplains, and even change their own course.",
+    "background_sections": [
+        ("Erosion: Water's Sculpting Tool", "Erosion occurs when flowing water has enough energy to dislodge and carry away soil and rock particles. Faster water has more erosive power. On the outside of a river bend, water flows fastest and cuts into the bank."),
+        ("Sediment Transport", "Once material is eroded, the river carries it as sediment. Faster water can carry larger and heavier particles. When water slows down — on the inside of a bend or where the river widens — it drops its sediment load in a process called deposition."),
+        ("How Rivers Change Course", "Rivers develop curves called meanders because erosion on the outside of bends and deposition on the inside cause bends to grow larger over time. Eventually, a meander can loop so far that the river cuts a new, shorter path, leaving an oxbow lake behind."),
+        ("Factors That Control Erosion", "The rate of erosion depends on water speed, soil or rock type, vegetation cover, and slope. Soft soils like clay and sand erode quickly, while hard rock like granite resists erosion for thousands of years.")
+    ],
+    "lever_L": "Students identify Water Flow Speed, Soil Softness, Erosion Rate, Sediment Transport, and Channel Shape Change as the five system components.",
+    "lever_E": "Students determine that Water Flow Speed increases Erosion Rate (+), Soil Softness increases Erosion Rate (+), Erosion Rate increases Sediment Transport (+), Sediment Transport increases Channel Shape Change (+), and Water Flow Speed increases Sediment Transport (+).",
+    "lever_V": "Students build the river erosion model showing how external conditions (water speed and soil type) drive internal responses (erosion, transport, channel change).",
+    "lever_Ev": "Students run the Fast River, Hard Rock scenario and discover that even fast water erodes slowly through hard rock, then compare with soft soil scenarios to see the dramatic difference.",
+    "lever_R": "Students add Vegetation Cover or Rainfall Intensity to explore how plants and weather affect river erosion.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Aerial view of a winding river with dramatic meanders", "say": "Can a river actually change direction? The answer might surprise you.", "do": "Show satellite images of meandering rivers and ask: Has this river always looked like this?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary list", "say": "Today we model how water reshapes the very ground it flows over.", "do": "Students read objectives and share what they think 'erosion' means.", "time": "2 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Can a river change direction?", "say": "Rivers seem permanent, but they are constantly moving. How?", "do": "Partner discussion: Have you ever seen evidence of erosion?", "time": "2 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "Our model shows how TWO external factors combine to reshape a river over time.", "do": "Preview: water speed and soil type work together.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Five component cards with descriptions", "say": "Water Flow Speed and Soil Softness are external — we control them. Erosion, sediment, and channel change respond.", "do": "Students sort component cards into external and internal categories.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows with +/- signs", "say": "Notice that ALL relationships here are positive. More speed means more erosion, more erosion means more transport, and more transport means more channel change.", "do": "Guide students to draw all five relationship arrows in ModelIt.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graphs comparing erosion under different conditions", "say": "Fast water in soft soil vs fast water in hard rock — what is the difference? Let's test it.", "do": "Students run all three scenarios and record observations.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings about river erosion and change", "say": "Rivers are not permanent. They are constantly reshaping themselves and the land around them.", "do": "Class discussion: What does this mean for communities near rivers?", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Riverbank protection plan", "say": "A community needs your help to save their riverbank. Design a protection plan.", "do": "Groups brainstorm, design, and present their protection strategies.", "time": "10 min"}
+    ],
+    "sort_reasoning": "Water Flow Speed and Soil Softness are external because they represent environmental conditions that students can adjust. Erosion Rate, Sediment Transport, and Channel Shape Change are internal because they are determined by and respond to the combination of water flow and soil properties.",
+    "relationships": [
+        ("Water Flow Speed to Erosion Rate", "POSITIVE (+)", "Faster water has more energy to dislodge and carry away soil and rock particles."),
+        ("Soil Softness to Erosion Rate", "POSITIVE (+)", "Softer soil is easier for water to break apart and carry away."),
+        ("Erosion Rate to Sediment Transport", "POSITIVE (+)", "More erosion produces more loose material for the river to carry."),
+        ("Water Flow Speed to Sediment Transport", "POSITIVE (+)", "Faster water can carry more and larger sediment particles."),
+        ("Sediment Transport to Channel Shape Change", "POSITIVE (+)", "More sediment being moved and deposited causes greater changes in the river's path and shape.")
+    ],
+    "sim_answers": [
+        ("Fast River, Hard Rock", "Even with Water Flow Speed at 90%, the hard rock (Soil Softness at 10%) keeps Erosion Rate low. Sediment Transport is minimal and Channel Shape Change is very slow. This shows why some rivers have carved the same rocky canyon for millions of years."),
+        ("Slow River, Soft Soil", "With Water Flow Speed at only 20%, Erosion Rate is moderate despite soft soil because the water lacks energy. Sediment Transport is low and Channel Shape Change is slow. Water speed matters as much as soil type.")
+    ],
+    "reflection_exemplars": [
+        ("Why do rivers have curves?", "Rivers develop curves because any slight bend causes water to flow faster on the outside and slower on the inside. The fast water erodes the outer bank while the slow water deposits sediment on the inner bank. This makes the bend grow larger, creating meandering curves over time."),
+        ("How does understanding erosion help communities?", "Communities near rivers need to know where erosion is likely to occur so they can avoid building in those areas. Understanding that soft soil erodes faster helps planners predict which banks are at risk. Engineers can design protection like riprap or vegetation buffers based on erosion models.")
+    ],
+    "stem_intro": "Present the community crisis: a riverside neighborhood is losing land to erosion. Show before and after images of riverbank erosion. Connect to the model: every protection strategy works by changing erosion rate, sediment transport, or both.",
+    "stem_concepts": [
+        ("Riprap and Armor", "Large rocks placed along the bank absorb water energy and resist erosion, essentially making the soil 'harder' in model terms."),
+        ("Vegetation Buffers", "Deep-rooted plants hold soil in place and slow water near the bank, reducing both erosion rate and sediment transport."),
+        ("Engineered Channels", "Structures like wing dams and deflectors redirect water flow away from vulnerable banks, reducing the flow speed hitting the bank.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Plan uses multiple strategies, explains erosion science, considers downstream effects, and includes monitoring plan"),
+        ("Proficient (3)", "Plan uses at least two strategies with scientific reasoning and one consideration of environmental impact"),
+        ("Developing (2)", "Plan addresses erosion but lacks detail on why strategies work or environmental considerations"),
+        ("Beginning (1)", "Plan does not connect strategies to erosion science from the model")
+    ],
+    "support": [
+        "Use a stream table or sand tray to physically demonstrate erosion and deposition",
+        "Use sentence frames: 'When water flow speed increases, erosion rate __ because...'",
+        "Provide before/after satellite images of real river changes for comparison"
+    ],
+    "extensions": [
+        "Research the Mississippi River's historical course changes using old maps",
+        "Add Vegetation Cover as a component and explore how plants protect riverbanks",
+        "Build a stream table model and test how different bank materials resist erosion"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate how many cubic meters of soil a river removes per year at different erosion rates"),
+        ("ELA", "Write a news article about a community dealing with river erosion threatening their neighborhood"),
+        ("Social Studies", "Research how the changing course of the Mississippi River has affected cities and state borders")
+    ],
+    "misconceptions": [
+        ("Rivers have always been where they are now", "Rivers constantly change course through erosion and deposition. The Mississippi River has shifted hundreds of miles over thousands of years. Even small streams shift noticeably over decades.", "Compare old maps of a river with current satellite images to see the changes."),
+        ("Erosion only happens during floods", "Erosion happens every day as water flows past riverbanks. Floods accelerate erosion dramatically, but normal flow constantly wears away soft material. It is a slow, continuous process.", "Show time-lapse images of riverbank erosion over months or years."),
+        ("Rocks and soil are permanent", "Rocks and soil seem permanent because erosion is usually too slow to watch. But given enough time, water can carve through solid rock — that is how the Grand Canyon formed over millions of years.", "The Grand Canyon is a mile deep, carved entirely by the Colorado River.")
+    ]
+}
+
+L10 = {
+    "id": "G05L2-L10",
+    "title": "Why Do Some Things Dissolve and Others Don't?",
+    "subtitle": "How Water Temperature and Motion Affect Dissolving Speed",
+    "ngss": "5-PS1-1, 5-PS1-4",
+    "ngss_desc": "Develop a model to describe that matter is made of particles too small to be seen. Conduct an investigation to determine whether the mixing of two or more substances results in new substances.",
+    "big_question": "Why do some things dissolve in water quickly while others take forever or don't dissolve at all?",
+    "objectives": [
+        "Model how water temperature and stirring speed affect dissolving rate",
+        "Explain how particle contact rate determines how quickly a substance dissolves",
+        "Predict how changing temperature or stirring speed affects solution concentration",
+        "Connect particle-level interactions to observable dissolving behavior"
+    ],
+    "vocabulary": [
+        ("Dissolving", "The process of a solid breaking apart and mixing evenly into a liquid"),
+        ("Solution", "A mixture where one substance is completely dissolved in another"),
+        ("Concentration", "How much dissolved substance is in a given amount of liquid"),
+        ("Particles", "The tiny pieces that make up all matter, too small to see")
+    ],
+    "components": [
+        ("Water Temperature", "The temperature of the water used as the solvent", True),
+        ("Stirring Speed", "How fast the water is being stirred or agitated", True),
+        ("Particle Contact Rate", "How often water particles bump into and interact with the solid particles", False),
+        ("Dissolving Speed", "How quickly the solid breaks apart and mixes into the water", False),
+        ("Solution Concentration", "How much of the solid has dissolved into the water", False)
+    ],
+    "think_about_it": "If you put sugar in cold water and sugar in hot water, which one dissolves first? Why do you think that happens?",
+    "scenarios": [
+        ("Hot Water, Fast Stirring", "Set Water Temperature to 90% and Stirring Speed to 90%"),
+        ("Cold Water, No Stirring", "Set Water Temperature to 10% and Stirring Speed to 0%"),
+        ("Hot Water, No Stirring", "Set Water Temperature to 90% and Stirring Speed to 0%")
+    ],
+    "sim_scenarios": [
+        ("Hot Water, Fast Stirring", "High temperature, fast stirring", "What do you predict will happen to Dissolving Speed?"),
+        ("Cold Water, No Stirring", "Low temperature, no stirring", "What do you predict will happen to Dissolving Speed compared to the hot stirred scenario?"),
+        ("Hot Water, No Stirring", "High temperature, no stirring", "What do you predict — does temperature or stirring matter more?")
+    ],
+    "discoveries": [
+        "Hot water dissolves substances faster because its particles move faster and collide with the solid more often",
+        "Stirring increases dissolving speed by bringing fresh water particles into contact with the solid surface",
+        "BOTH temperature and stirring increase particle contact rate, which is the key to dissolving speed",
+        "Solution concentration builds over time as more and more of the solid dissolves into the water"
+    ],
+    "answer": "Some things dissolve faster because of particle contact rate — how often water particles bump into the solid. Hot water has faster-moving particles that collide more often, and stirring brings fresh water to the solid surface constantly. Both increase the rate at which the solid breaks apart and mixes into the water.",
+    "stem_title": "Design the Fastest Dissolving Method",
+    "stem_mission": "Design and test the fastest method to completely dissolve a sugar cube in water.",
+    "stem_scenario": "A drink company needs to dissolve flavor packets as fast as possible in their factory. They can adjust water temperature, stirring method, and other factors. Your team must find the fastest dissolving method and explain the science behind it.",
+    "stem_questions": [
+        "Does crushing the sugar cube before dissolving it help? Why or why not?",
+        "Is there a maximum amount of sugar that water can dissolve? What happens then?",
+        "How would you measure dissolving speed accurately?"
+    ],
+    "stem_design_qs": [
+        "What water temperature will you use and why?",
+        "What stirring method will you use (spoon, shaking, blending)?",
+        "Will you change the shape or size of the sugar cube? Why?",
+        "How will you measure the exact time it takes to fully dissolve?"
+    ],
+    "career": "Food Scientists and Chemical Engineers design processes for mixing, dissolving, and creating solutions at industrial scale. They use the same principles you modeled today to make medicines, beverages, and materials. They earn $70,000-$125,000/year.",
+    "images": {
+        "cover": ("cover-dissolving.png", "A photorealistic, cinematic close-up image of a sugar cube dissolving in a clear glass of water, with visible swirls and wisps of dissolved sugar spreading through the water, backlit with warm light, ultra-crisp detail"),
+        "landscape": ("landscape-dissolving.png", "A photorealistic image of an Asian female student (age 10-11) stirring a beaker of colored water while diverse 5th graders including Black, White, and Latino classmates observe and take notes, modern science classroom, natural light"),
+        "modeling": ("modeling-dissolving.png", "A photorealistic image of a Latino male student (age 10-11) at a laptop building a dissolving model, with White female, Black male, and Asian classmates comparing their simulation predictions, modern classroom, warm lighting"),
+        "discussion": ("discussion-dissolving.png", "A photorealistic image of a Black male teacher holding up two beakers — one with clear water and one with a dissolved solution — while diverse 5th graders including White, Asian, and Latina students discuss observations, classroom lab setting"),
+        "stem": ("stem-dissolving.png", "A photorealistic image of a White female student (age 10-11) timing a dissolving experiment with a stopwatch while Black, Asian, and Latino classmates test different water temperatures, school science lab, bright natural light")
+    },
+    "pre_assessment": [
+        "What does it mean when something 'dissolves'? Where does the solid go?",
+        "If you stir sugar into water, is the sugar still there? How do you know?",
+        "Draw what you think is happening to the sugar particles when sugar dissolves in water.",
+        "What could you do to make something dissolve faster?"
+    ],
+    "extend_components": [
+        ("Particle Size", "Smaller pieces have more surface area exposed to water, dissolving faster"),
+        ("Solvent Amount", "More water can dissolve more substance before reaching saturation"),
+        ("Substance Type", "Different substances have different solubilities — salt dissolves but sand does not")
+    ],
+    "reflections": [
+        "When sugar dissolves, does it disappear? How do you know it is still there?",
+        "Why does stirring help even if the water temperature stays the same?",
+        "What surprised you most about how temperature affected dissolving speed?",
+        "If you could add one more component to this model, what would it be and why?",
+        "How does understanding dissolving help in cooking, medicine, or manufacturing?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model showing how temperature and stirring affect particle interactions and dissolving."),
+        ("Disciplinary Core Idea", "PS1.A Structure and Properties of Matter", "Students model how particle-level interactions explain observable dissolving behavior and solution formation."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal relationships between temperature, stirring, particle contact, and dissolving speed.")
+    ],
+    "cast_items": [
+        "Explain how water temperature affects dissolving speed at the particle level",
+        "Predict how stirring changes the rate of dissolving",
+        "Describe why some conditions produce faster dissolving than others"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A student puts identical sugar cubes in two cups of water. Cup A is hot and stirred. Cup B is cold and not stirred. Which sugar cube dissolves first and what is the MAIN reason?"),
+        ("Constructed Response:", "Explain why hot, stirred water dissolves sugar faster than cold, still water. Use the concept of particle contact rate from your model in your explanation.")
+    ],
+    "background_intro": "Dissolving is a physical process where a solid breaks apart into particles so small they spread evenly throughout a liquid, forming a solution. Understanding what controls dissolving speed requires thinking about what happens at the particle level — even though we cannot see individual particles.",
+    "background_sections": [
+        ("What Happens When Something Dissolves?", "When a solid dissolves, its particles separate from each other and mix evenly among the liquid particles. The solid does not disappear — its particles are still there, just spread out. You can prove this by evaporating the water and finding the solid left behind."),
+        ("Temperature and Particle Motion", "In warmer water, particles move faster. These fast-moving water particles collide with the solid surface more often and with more energy, breaking apart the solid particles more quickly. This is why hot water dissolves most substances faster than cold water."),
+        ("Stirring and Fresh Contact", "When water is still, dissolved particles accumulate near the solid surface, creating a 'barrier' of already-saturated water. Stirring moves this saturated water away and brings fresh water into contact with the solid, maintaining a high rate of dissolving."),
+        ("Saturation: The Dissolving Limit", "Every liquid can only dissolve a certain amount of a substance at a given temperature. When no more can dissolve, the solution is saturated. Warming the water usually increases how much can dissolve, which is why more sugar dissolves in hot tea than iced tea.")
+    ],
+    "lever_L": "Students identify Water Temperature, Stirring Speed, Particle Contact Rate, Dissolving Speed, and Solution Concentration as the five system components.",
+    "lever_E": "Students determine that Water Temperature increases Particle Contact Rate (+), Stirring Speed increases Particle Contact Rate (+), Particle Contact Rate increases Dissolving Speed (+), and Dissolving Speed increases Solution Concentration (+).",
+    "lever_V": "Students build the dissolving model showing how external conditions (temperature and stirring) drive particle-level interactions that produce observable dissolving behavior.",
+    "lever_Ev": "Students run the Hot Water, No Stirring scenario and compare with the full hot-stirred scenario to isolate the effect of stirring alone, then test cold-no-stirring to see both factors removed.",
+    "lever_R": "Students add Particle Size or Substance Type to explore how physical properties of the solid affect dissolving.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Sugar cube dissolving in a glass of water with visible swirls", "say": "You have done this a hundred times — stirred sugar into a drink. But do you know WHY it dissolves?", "do": "Drop a sugar cube into a glass of water in front of the class. Ask: What is happening?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary list", "say": "Today we model the invisible particle collisions that make dissolving happen.", "do": "Students read objectives and discuss: Where does the sugar GO?", "time": "2 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why do some things dissolve faster than others?", "say": "Sugar dissolves. Sand does not. Hot water works faster than cold. Let's figure out why.", "do": "Quick-write: List three things you could do to make sugar dissolve faster.", "time": "2 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "Our model has two external factors that BOTH affect the same internal process — particle contact rate.", "do": "Preview: temperature and stirring both increase particle collisions.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Five component cards with descriptions", "say": "Water Temperature and Stirring Speed are external — we control them. The other three respond.", "do": "Students sort component cards into external and internal categories.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows with +/- signs", "say": "Notice that BOTH external components feed into Particle Contact Rate — it is the bottleneck of the system.", "do": "Guide students to draw all four relationship arrows in ModelIt.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graphs comparing dissolving under different conditions", "say": "Hot and stirred vs cold and still — how big is the difference? Let's race them.", "do": "Students run all three scenarios and record observations.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings about dissolving and particle interactions", "say": "Everything comes down to particle contact. More collisions, faster dissolving.", "do": "Class discussion: Where do you see dissolving in everyday life?", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Dissolving speed competition setup", "say": "Design the fastest method to dissolve a sugar cube. Time it. Beat the other teams.", "do": "Groups design methods, test with real materials, and record times.", "time": "10 min"}
+    ],
+    "sort_reasoning": "Water Temperature and Stirring Speed are external because they represent conditions that students can directly adjust. Particle Contact Rate, Dissolving Speed, and Solution Concentration are internal because they are determined by and respond to the combination of temperature and stirring conditions.",
+    "relationships": [
+        ("Water Temperature to Particle Contact Rate", "POSITIVE (+)", "Warmer water particles move faster, colliding with the solid surface more frequently."),
+        ("Stirring Speed to Particle Contact Rate", "POSITIVE (+)", "Stirring brings fresh water particles into contact with the solid, increasing collision frequency."),
+        ("Particle Contact Rate to Dissolving Speed", "POSITIVE (+)", "More frequent particle collisions break apart the solid faster."),
+        ("Dissolving Speed to Solution Concentration", "POSITIVE (+)", "Faster dissolving increases the amount of dissolved substance in the water over time.")
+    ],
+    "sim_answers": [
+        ("Cold Water, No Stirring", "With Water Temperature at 10% and Stirring Speed at 0%, Particle Contact Rate is very low. Dissolving Speed is extremely slow. Solution Concentration builds very slowly. The sugar cube sits in the water barely dissolving because particles move slowly and no fresh water reaches the surface."),
+        ("Hot Water, No Stirring", "With Water Temperature at 90% but no stirring, Particle Contact Rate is moderate — higher than cold water but lower than the hot-stirred scenario. Dissolving Speed is faster than cold water but noticeably slower than when stirring is added. This isolates the effect of temperature alone.")
+    ],
+    "reflection_exemplars": [
+        ("When sugar dissolves, does it disappear?", "No, the sugar is still there — its particles are just spread out evenly among the water particles. You can prove this because the water tastes sweet, and if you evaporate the water, the sugar remains behind. Dissolving is a physical change, not a chemical one."),
+        ("Why does stirring help even at the same temperature?", "When water is still, the water right next to the sugar cube becomes saturated — full of dissolved sugar. Stirring sweeps this saturated water away and replaces it with fresh water that can dissolve more sugar. It is like clearing a path so new water particles can reach the solid surface.")
+    ],
+    "stem_intro": "Present the drink company challenge. Connect to the model: every factory decision (water temperature, mixing speed, particle size) maps to a component in the model. Faster dissolving means faster production.",
+    "stem_concepts": [
+        ("Surface Area", "Crushing a sugar cube into powder creates much more surface area for water particles to contact. More surface area means more simultaneous particle collisions, dramatically increasing dissolving speed."),
+        ("Saturation Point", "At a given temperature, water can only dissolve a fixed amount of substance. Hot water usually has a higher saturation point, which is why more sugar dissolves in hot tea."),
+        ("Industrial Mixing", "Factories use high-speed mixers, heated water, and pre-ground materials to maximize dissolving speed. The same principles from your model operate at industrial scale.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Method optimizes multiple factors (temperature, stirring, particle size), explains particle-level reasoning, and includes accurate timing data"),
+        ("Proficient (3)", "Method optimizes at least two factors with scientific reasoning connected to the model"),
+        ("Developing (2)", "Method addresses one or two factors but lacks particle-level explanation"),
+        ("Beginning (1)", "Method does not connect choices to dissolving science from the model")
+    ],
+    "support": [
+        "Provide sugar cubes, warm and cold water, and spoons for hands-on testing alongside the model",
+        "Use sentence frames: 'When water temperature increases, particle contact rate __ because...'",
+        "Offer a pre-made data table for recording dissolving times under different conditions"
+    ],
+    "extensions": [
+        "Test dissolving speed of different substances (salt, baking soda, sand) and explain the differences",
+        "Add Particle Size as a component by crushing sugar cubes and comparing dissolving times",
+        "Research how pharmaceutical companies design medicines that dissolve at specific rates in the body"
+    ],
+    "cross_curr": [
+        ("Math", "Graph dissolving time vs. water temperature and find the relationship pattern"),
+        ("ELA", "Write a lab report explaining your dissolving experiment with claims, evidence, and reasoning"),
+        ("Social Studies", "Research how water purification uses dissolving and filtering to make water safe")
+    ],
+    "misconceptions": [
+        ("Dissolved substances disappear", "When a solid dissolves, it does not vanish. Its particles separate and mix evenly with the water particles. The dissolved substance is still there — the water tastes sweet, weighs more, and the solid reappears if you evaporate the water.", "Dissolve salt in water, then evaporate. The salt crystals reappear, proving they were always there."),
+        ("Stirring creates heat that dissolves things", "Stirring does not significantly heat the water. It works by moving fresh, unsaturated water to the solid surface. The mechanical motion replaces the saturated layer near the solid with water that can still dissolve more material.", "Stir cold water — it stays cold, but dissolving speeds up because fresh water reaches the solid."),
+        ("Everything dissolves if you stir long enough", "Some substances simply do not dissolve in water regardless of temperature or stirring. Sand, plastic, and oil do not dissolve because their particles are not attracted to water particles. Solubility is a property of the substance itself.", "Compare sugar (dissolves) with sand (does not dissolve) under identical conditions.")
     ]
 }

@@ -1197,3 +1197,516 @@ L07 = {
         ("Fossils are only found in very old rocks", "Fossils are found in sedimentary rocks of ALL ages, from billions of years old to very recent. Fossils are forming right now as organisms die and are buried in sediment. What changes over time is the TYPE of organisms preserved: ancient rocks contain simple organisms, while recent rocks contain more complex life.", "Show a recent shell being buried in beach sand. This is the beginning of fossilization. Now show an ancient trilobite fossil. Same process, different time.")
     ]
 }
+
+L08 = {
+    "id": "G07L2-L08",
+    "title": "Why Do You Weigh Less on the Moon?",
+    "subtitle": "Gravity, Mass, and the Force That Keeps You Grounded",
+    "ngss": "MS-PS2-4, MS-ESS1-2",
+    "ngss_desc": "Construct and present arguments using evidence to support the claim that gravitational interactions are attractive and depend on the masses of interacting objects. Develop and use a model to describe the role of gravity in the motions within galaxies and the solar system.",
+    "big_question": "Why would you weigh less on the Moon than on Earth, even though your body hasn't changed at all?",
+    "objectives": [
+        "Model how gravitational pull depends on the mass of the planet and the distance from its center",
+        "Explain the difference between mass and weight using gravitational interactions",
+        "Predict how object weight and jump height change on different planets and moons",
+        "Describe how gravity governs motion within the solar system and beyond"
+    ],
+    "vocabulary": [
+        ("Gravitational Pull", "The attractive force between two objects that depends on their masses and the distance between them"),
+        ("Mass", "The amount of matter in an object, which stays the same regardless of location"),
+        ("Weight", "The force of gravity acting on an object's mass, which changes depending on the gravitational pull of the planet or moon"),
+        ("Inverse Square Law", "The principle that gravitational force decreases rapidly as the distance between two objects increases")
+    ],
+    "components": [
+        ("Planet Mass", "The total amount of matter that makes up the planet or moon", True),
+        ("Distance from Center", "How far an object is from the center of the planet or moon's mass", True),
+        ("Gravitational Pull", "The strength of the attractive force exerted by the planet or moon on objects at its surface", False),
+        ("Object Weight", "The downward force experienced by an object due to gravitational pull", False),
+        ("Jump Height", "How high a person can jump, which increases when gravitational pull decreases", False)
+    ],
+    "think_about_it": "If you increase Planet Mass but keep Distance from Center the same, what happens to Gravitational Pull? What if you keep Planet Mass the same but increase Distance from Center? How do these two factors work together to determine your weight?",
+    "scenarios": [
+        ("Moon Landing", "Set Planet Mass to low (Moon) and Distance from Center to small and observe Object Weight and Jump Height"),
+        ("Jupiter Visit", "Set Planet Mass to very high (Jupiter) and observe how Gravitational Pull and Object Weight change"),
+        ("Space Station Orbit", "Set Distance from Center to very high and observe what happens to Gravitational Pull")
+    ],
+    "sim_scenarios": [
+        ("Moon vs. Earth", "Low planet mass (Moon), same distance from center", "What do you predict happens to your weight and jump height when the planet has much less mass than Earth?"),
+        ("Giant Planet", "Very high planet mass (Jupiter), same distance from center", "What do you predict happens to Gravitational Pull and Object Weight on a planet with 318 times Earth's mass?"),
+        ("Far from Center", "Same planet mass, greatly increased distance from center", "What do you predict happens to Gravitational Pull as you move farther from the center of a planet?")
+    ],
+    "discoveries": [
+        "Weight changes depending on where you are, but mass always stays the same because mass is the amount of matter in your body",
+        "Gravitational pull depends on BOTH the planet's mass AND your distance from its center, not just one factor",
+        "The Moon has about 1/6 of Earth's surface gravity, so you would weigh 1/6 as much and could jump 6 times higher",
+        "Gravity is what keeps planets in orbit around the Sun and moons in orbit around planets, because gravitational interactions are always attractive"
+    ],
+    "answer": "You weigh less on the Moon because weight is not just about YOU. Weight is the force of gravity pulling on your mass, and that force depends on the mass of the planet or moon you're standing on. The Moon has much less mass than Earth, so its gravitational pull is weaker, making you weigh less. Your mass (the amount of matter in your body) hasn't changed at all. This is why astronauts can take giant bouncing leaps on the Moon. The same principle explains why you'd be crushed on Jupiter, where gravity is 2.5 times stronger than Earth's!",
+    "stem_title": "Design a Space Colony Fitness Program",
+    "stem_mission": "Create a fitness and safety program for astronauts living on the Moon or Mars, accounting for how reduced gravity affects the human body, using data from your simulation model.",
+    "stem_scenario": "NASA is planning a permanent Moon base and needs your team to design daily fitness routines that account for the Moon's reduced gravity. Astronauts lose bone density and muscle mass in low gravity, so your program must keep them healthy for a two-year mission.",
+    "stem_questions": [
+        "How does reduced gravity affect the human body over long periods?",
+        "What exercises would be most effective in low gravity?",
+        "How can you use your model data to set exercise intensity targets for different gravity levels?"
+    ],
+    "stem_design_qs": [
+        "What gravity level will your colony experience, and how does that compare to Earth?",
+        "How will you simulate Earth-like resistance for muscles and bones in low gravity?",
+        "What model data will you use to calculate the difference in physical demands?",
+        "How will you monitor astronaut health and adjust the program over time?"
+    ],
+    "career": "Astrophysicists study the physics of celestial objects and the forces that govern their behavior. They work at NASA, universities, observatories, and aerospace companies, earning $80,000-$160,000/year.",
+    "images": {
+        "cover": ("cover-moon-weight.png", "A dramatic split-screen showing an astronaut jumping on the Moon with Earth visible in the sky compared to the same person standing on Earth, highlighting the difference in gravity, cinematic space illustration"),
+        "landscape": ("landscape-gravity.png", "A group of 7th grade students in a modern science lab using spring scales to weigh objects and calculate gravitational differences, a Black female student and a Latino male student comparing scale readings while an Asian female student records data, bright modern lab"),
+        "modeling": ("modeling-gravity.png", "A diverse group of 7th grade students working on laptops building a digital gravity model with planet data on screens, a White male student and a Black male student discussing planetary mass values, classroom with solar system posters"),
+        "discussion": ("discussion-gravity.png", "A teacher showing a solar system scale model while leading discussion about gravity with 7th grade students, a Latino female student and an Asian male student actively participating with hands raised, bright modern classroom"),
+        "stem": ("stem-space-fitness.png", "7th grade students designing a space colony fitness program poster, a Black male student leading the design while a White female student and Latino male student contribute exercise diagrams, collaborative group work with space imagery")
+    },
+    "pre_assessment": [
+        "What do you think the difference is between mass and weight?",
+        "Why do you think astronauts can jump so high on the Moon?",
+        "Draw what you think gravity looks like pulling on you on Earth vs. on the Moon.",
+        "Do you think you would weigh the same on every planet? Why or why not?"
+    ],
+    "extend_components": [
+        ("Atmospheric Density", "The thickness of the atmosphere surrounding the planet, which affects air resistance and terminal velocity of falling objects"),
+        ("Orbital Velocity", "The speed needed for an object to stay in orbit around the planet, which depends on gravitational pull"),
+        ("Tidal Force", "The difference in gravitational pull across an object's width, caused by being close to a massive body like a planet or moon")
+    ],
+    "reflections": [
+        "Why is it important to distinguish between mass and weight in science? How does your model make this distinction clear?",
+        "If you were designing a bathroom scale for the Moon, how would it need to be different from an Earth scale?",
+        "How does the inverse square relationship between distance and gravity affect spacecraft as they travel between planets?",
+        "Why doesn't the International Space Station fall to Earth even though it's within Earth's gravitational pull?",
+        "How does your model help explain why planets closer to the Sun orbit faster than distant planets?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model to describe how gravitational pull depends on planet mass and distance, and how this affects object weight and motion."),
+        ("Disciplinary Core Idea", "PS2.B Types of Interactions / ESS1.B Earth and the Solar System", "Gravitational forces are always attractive and depend on the masses of interacting objects. Gravity governs the motions of objects in the solar system."),
+        ("Crosscutting Concept", "Systems and System Models", "Students model the gravitational system with inputs (planet mass, distance) and outputs (gravitational pull, weight, jump height) to understand how the system behaves under different conditions.")
+    ],
+    "cast_items": [
+        "Model how gravitational pull depends on planet mass and distance from center",
+        "Explain why weight changes on different planets while mass stays constant",
+        "Describe how gravity governs orbital motion within the solar system"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "An astronaut weighs 180 pounds on Earth. On the Moon, where gravity is about 1/6 of Earth's, what would the astronaut weigh, and would their mass change?"),
+        ("Constructed Response:", "Using your gravity model, explain why Jupiter's moon Europa (which has less mass than Earth's Moon) would give you a different weight than standing on Jupiter itself. Describe how both planet mass and distance from center affect the gravitational pull you experience.")
+    ],
+    "background_intro": "Gravity is the universal force of attraction between all objects with mass. It is what gives you weight, keeps the Moon orbiting Earth, and holds the solar system together. Understanding gravity means understanding the difference between mass and weight, and how the gravitational pull of any body depends on its mass and your distance from its center.",
+    "background_sections": [
+        ("Mass vs. Weight", "Mass is the amount of matter in an object and is measured in kilograms. It never changes regardless of location. Weight is the force of gravity acting on that mass and is measured in newtons (or pounds). Your mass is the same on Earth, the Moon, and Jupiter, but your weight is different on each because the gravitational pull is different."),
+        ("What Determines Gravitational Pull", "Gravitational pull depends on two factors: the masses of the objects involved and the distance between their centers. More massive planets pull harder. Greater distance means weaker pull. This follows the inverse square law: if you double the distance, the gravitational force drops to one-quarter."),
+        ("Gravity in the Solar System", "The Sun's massive gravity (333,000 times Earth's mass) holds all planets in orbit. Closer planets orbit faster because they experience stronger gravitational pull. Moons orbit planets for the same reason. Even you and Earth are gravitationally attracted to each other, but Earth is so much more massive that you move toward it, not the other way around."),
+        ("Gravity and Space Exploration", "Understanding gravity is essential for space travel. Rocket launches must overcome Earth's gravitational pull. Spacecraft use gravitational slingshots around planets to gain speed. Astronauts on the ISS experience microgravity (not zero gravity) because they are in free fall around Earth, moving fast enough sideways that they keep missing it.")
+    ],
+    "lever_L": "Students identify planet mass, distance from center, gravitational pull, object weight, and jump height as components of the gravity system.",
+    "lever_E": "Students determine that planet mass and distance are external inputs that drive gravitational pull, which in turn determines weight and jump height.",
+    "lever_V": "Students build a model showing how changing planet mass and distance affects gravitational pull and its consequences for objects on the surface.",
+    "lever_Ev": "Students run Moon, Jupiter, and orbital distance scenarios to observe how gravitational pull, weight, and jump height respond to different conditions.",
+    "lever_R": "Students add atmospheric density or orbital velocity to explore how gravity interacts with other factors in planetary environments.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with astronaut jumping on Moon", "say": "If I put you on a scale right now, you'd get one number. But what if I put you on a scale on the Moon? Would the number change? Why?", "do": "Have students predict their Moon weight. Use a quick calculator: Earth weight / 6 = Moon weight.", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we're going to figure out why gravity changes from place to place in the solar system.", "do": "Have students read objectives. Pre-teach mass vs. weight distinction.", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why do you weigh less on the Moon?", "say": "Your body doesn't change when you go to the Moon. Same bones, same muscles, same atoms. So why does the scale say something different?", "do": "Show astronaut footage from Apollo missions with bouncing lunar walks. Discuss.", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We'll build a model of how gravity works across the solar system.", "do": "Preview LEVER steps. Show comparative gravity table for planets.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Component cards for gravity model", "say": "What factors affect gravity? Which ones can we change in our model, and which ones respond?", "do": "Guide sorting. Discuss why planet mass and distance are external driving inputs.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows between components", "say": "When planet mass goes up, what happens to gravitational pull? When distance increases, what happens?", "do": "Help students trace positive and negative relationships. Introduce inverse square concept.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graph predictions and results", "say": "Let's visit the Moon, then Jupiter, then float out into deep space. Watch what happens to your weight.", "do": "Students predict first, then run all three scenarios. Calculate actual weights on each body.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings from model", "say": "So what's the real answer? Is it YOU that changes, or is it the PLACE that changes? What did our model prove?", "do": "Lead discussion reinforcing mass vs. weight. Connect to orbital mechanics.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Space colony fitness program", "say": "NASA needs your help. How do you keep astronauts healthy when gravity is working against you?", "do": "Groups design fitness programs using gravity data from their models.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Planet Mass and Distance from Center are external because they are the physical properties of the environment that students control in the model: how massive the celestial body is and how far you are from its center. Gravitational Pull, Object Weight, and Jump Height are internal because they are the resulting effects that respond to those driving conditions.",
+    "relationships": [
+        ("Planet Mass to Gravitational Pull", "POSITIVE (+)", "Greater planet mass means stronger gravitational pull. A more massive planet attracts objects with more force."),
+        ("Distance from Center to Gravitational Pull", "NEGATIVE (-)", "Greater distance from the planet's center means weaker gravitational pull. Gravity decreases with the square of the distance."),
+        ("Gravitational Pull to Object Weight", "POSITIVE (+)", "Stronger gravitational pull means greater object weight. Weight is the force of gravity acting on mass."),
+        ("Gravitational Pull to Jump Height", "NEGATIVE (-)", "Stronger gravitational pull means lower jump height. More gravity holds you down, making it harder to leave the surface."),
+        ("Object Weight to Jump Height", "NEGATIVE (-)", "Greater object weight (due to stronger gravity) means lower jump height, because more force is needed to overcome the downward pull.")
+    ],
+    "sim_answers": [
+        ("Moon Landing Scenario", "With low Planet Mass (Moon) and small Distance from Center, Gravitational Pull is about 1/6 of Earth's. Object Weight drops dramatically, so an astronaut who weighs 180 lbs on Earth weighs only 30 lbs on the Moon. Jump Height increases significantly because there is less gravitational force holding them down."),
+        ("Jupiter Visit Scenario", "With very high Planet Mass (Jupiter), Gravitational Pull is about 2.5 times Earth's. Object Weight increases substantially, so the same 180 lb astronaut would weigh about 450 lbs. Jump Height decreases dramatically because the intense gravity makes it much harder to leave the surface.")
+    ],
+    "reflection_exemplars": [
+        ("Why distinguish mass and weight?", "Mass and weight are different because mass is a property of the object itself (how much matter it contains), while weight depends on the environment (the gravitational pull of whatever planet or moon you're on). A 70 kg person always has 70 kg of mass everywhere in the universe, but their weight changes from 686 N on Earth to 114 N on the Moon to 1,715 N on Jupiter. Our model makes this clear because changing Planet Mass changes weight but never changes the person's actual mass."),
+        ("Why doesn't the ISS fall to Earth?", "The ISS IS falling toward Earth constantly. But it's also moving sideways at about 28,000 km/h. The combination of falling toward Earth and moving sideways means it keeps missing the planet, following a curved path around it. This is what an orbit is: a continuous state of free fall. The astronauts inside feel weightless not because there's no gravity (there is, about 90% of Earth's surface gravity at ISS altitude), but because everything around them is falling at the same rate.")
+    ],
+    "stem_intro": "NASA is establishing a permanent Moon base, and astronauts will live there for up to two years. In the Moon's reduced gravity (1/6 of Earth's), muscles weaken and bones lose density rapidly. Your team must design a daily fitness program that keeps astronauts healthy using your simulation data to determine exercise intensity targets.",
+    "stem_concepts": [
+        ("Bone Density Loss", "In reduced gravity, bones don't bear as much weight, so the body reabsorbs bone material. Astronauts on the ISS lose about 1-2% of bone density per month. Exercise with resistance equipment can slow this loss significantly."),
+        ("Muscle Atrophy", "Without the constant work of supporting body weight against gravity, muscles shrink. Leg muscles are especially affected. On the ISS, astronauts exercise 2+ hours daily to maintain muscle mass."),
+        ("Gravitational Slingshot", "Spacecraft use a planet's gravity to gain speed without using fuel. By flying close to a planet, the spacecraft is pulled by gravity, gains kinetic energy, and is flung away at higher speed. This technique is how Voyager 1 and 2 reached the outer solar system.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Program accurately accounts for reduced gravity using model data, includes specific exercise types and durations, addresses both bone and muscle health, and provides monitoring protocols"),
+        ("Proficient (3)", "Program accounts for reduced gravity with model evidence and includes reasonable exercise recommendations"),
+        ("Developing (2)", "Program mentions gravity differences but doesn't use model data or provide specific exercise details"),
+        ("Beginning (1)", "Program is incomplete or doesn't account for how reduced gravity affects the human body")
+    ],
+    "support": [
+        "Provide a comparative gravity table showing surface gravity for all planets and major moons",
+        "Use spring scales with different settings to physically demonstrate how weight changes with gravity",
+        "Sentence frames: 'On __ the gravitational pull is __ because the planet's mass is __, which means your weight would be __'"
+    ],
+    "extensions": [
+        "Research how gravitational lensing allows astronomers to see galaxies behind other galaxies by bending light with gravity",
+        "Investigate how tidal forces from the Moon create ocean tides on Earth and how this relates to gravitational pull and distance",
+        "Model how escape velocity (the speed needed to leave a planet) depends on the planet's mass and radius"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate your weight on every planet in the solar system using the surface gravity ratios and create a bar graph comparing them"),
+        ("ELA", "Write a journal entry from the perspective of an astronaut experiencing reduced gravity on Mars for the first time"),
+        ("Social Studies", "Research the history of our understanding of gravity from Aristotle to Newton to Einstein and how each breakthrough changed science")
+    ],
+    "misconceptions": [
+        ("There's no gravity in space", "There IS gravity everywhere in space. The ISS orbits at an altitude where gravity is about 90% as strong as on Earth's surface. Astronauts float because they're in free fall, not because gravity is absent. Gravity extends infinitely; it just gets weaker with distance.", "Drop a ball. It falls because of gravity. Now imagine the floor wasn't there. You'd fall forever. That's what the ISS is doing: falling around Earth."),
+        ("Heavier objects fall faster", "In a vacuum (no air resistance), ALL objects fall at the same rate regardless of mass. A feather and a bowling ball dropped on the Moon (no air) hit the ground at the same time. This was actually demonstrated by Apollo 15 astronaut David Scott.", "Show the Apollo 15 hammer and feather drop video. Discuss why air resistance on Earth makes it SEEM like heavy objects fall faster."),
+        ("Weight and mass are the same thing", "Mass is how much matter you contain (measured in kg) and never changes. Weight is the gravitational force on that mass (measured in N or lbs) and changes depending on where you are. A 70 kg person has 70 kg of mass on Earth, the Moon, Jupiter, or floating in deep space, but their weight is different in each location.", "Weigh an object on a spring scale (shows weight). Then count the object's mass in standard units. Ask: Which number changes if we go to the Moon?")
+    ]
+}
+
+L09 = {
+    "id": "G07L2-L09",
+    "title": "Why Are Cheetahs Losing Their Speed?",
+    "subtitle": "Genetic Diversity, Habitat Loss, and the Future of the Fastest Animal",
+    "ngss": "MS-LS4-6, MS-LS4-4",
+    "ngss_desc": "Use mathematical representations to support explanations of how natural selection may lead to increases and decreases of specific traits in populations over time. Construct an explanation based on evidence that describes how genetic variations of traits in a population increase some individuals' probability of surviving and reproducing in a specific environment.",
+    "big_question": "Cheetahs are the fastest land animals on Earth, but they're slowing down. How can an entire species lose the very trait that defines its survival?",
+    "objectives": [
+        "Model how habitat fragmentation reduces population size and genetic diversity",
+        "Explain how low genetic diversity reduces trait variation and species fitness",
+        "Predict how small, isolated populations lose adaptive traits over time",
+        "Describe how natural selection depends on genetic variation within a population"
+    ],
+    "vocabulary": [
+        ("Genetic Diversity", "The total variety of genes and alleles within a population, which determines how much variation exists in traits"),
+        ("Habitat Fragmentation", "The breaking apart of large, continuous habitats into smaller, isolated patches, often caused by human development"),
+        ("Trait Variation", "The range of differences in a specific characteristic (like speed, size, or coloring) within a population"),
+        ("Species Fitness", "The overall ability of a population to survive, reproduce, and adapt to environmental changes")
+    ],
+    "components": [
+        ("Population Size", "The total number of individuals in the cheetah population", True),
+        ("Habitat Fragmentation", "The degree to which the cheetah's habitat has been broken into isolated patches", True),
+        ("Genetic Diversity", "The variety of genes and alleles present in the cheetah population", False),
+        ("Trait Variation", "The range of differences in physical traits like speed, size, and disease resistance among cheetahs", False),
+        ("Species Fitness", "The overall ability of the cheetah population to survive, reproduce, and adapt to challenges", False)
+    ],
+    "think_about_it": "If Population Size decreases and Habitat Fragmentation increases, what happens to Genetic Diversity? And if Genetic Diversity drops, how does that affect the cheetahs' ability to be fast, fight disease, or adapt to new threats?",
+    "scenarios": [
+        ("Bottleneck Event", "Set Population Size to very low and Habitat Fragmentation to high and observe Genetic Diversity and Species Fitness"),
+        ("Connected Habitat", "Set Habitat Fragmentation to low and Population Size to moderate and observe Trait Variation"),
+        ("Recovery Effort", "Start with low Population Size, then gradually increase it while reducing Habitat Fragmentation")
+    ],
+    "sim_scenarios": [
+        ("Severe Bottleneck", "Very small population, highly fragmented habitat", "What do you predict happens to Genetic Diversity and Species Fitness when only a few hundred cheetahs remain in isolated patches?"),
+        ("Healthy Population", "Large population, connected habitat", "What do you predict Trait Variation and Species Fitness look like when cheetahs can roam and breed across large, connected territories?"),
+        ("Conservation Corridor", "Gradually increasing population, decreasing fragmentation", "What do you predict happens to Genetic Diversity over time if wildlife corridors reconnect isolated cheetah populations?")
+    ],
+    "discoveries": [
+        "Cheetahs have extremely low genetic diversity because they went through a population bottleneck about 10,000 years ago when their numbers dropped dramatically",
+        "Low genetic diversity means less trait variation, so individuals are more similar and the population has fewer options for adapting to new threats",
+        "Habitat fragmentation isolates small groups, preventing gene flow between populations and further reducing genetic diversity",
+        "Natural selection can only work when there is genetic variation. Without variation, a population cannot adapt, no matter how strong the selection pressure"
+    ],
+    "answer": "Cheetahs are losing their speed because they've lost their genetic diversity. About 10,000 years ago, cheetah populations crashed to just a few individuals (a genetic bottleneck). The survivors were so closely related that today's cheetahs are almost genetic clones of each other. With so little genetic variation, there's almost no difference in speed, disease resistance, or any other trait between individuals. Natural selection needs variation to work. If every cheetah is basically the same genetically, there's no faster cheetah for selection to favor. Add habitat fragmentation that isolates the remaining populations, and genetic diversity drops even further. The fastest animal on Earth is being slowed down not by predators, but by its own genes.",
+    "stem_title": "Design a Cheetah Conservation Plan",
+    "stem_mission": "Create a science-based conservation plan to restore genetic diversity in cheetah populations, using your simulation model data to justify your strategies.",
+    "stem_scenario": "The Cheetah Conservation Fund has asked your team to develop a genetic rescue plan. Only about 7,000 cheetahs remain in the wild, scattered across fragmented habitats in Africa and Iran. Your plan must address both habitat connectivity and genetic diversity using evidence from your model.",
+    "stem_questions": [
+        "How can wildlife corridors help restore genetic diversity in isolated populations?",
+        "What does your model show about the minimum population size needed to maintain genetic diversity?",
+        "How do you balance the urgency of habitat protection with long-term genetic rescue?"
+    ],
+    "stem_design_qs": [
+        "What geographic regions will your conservation plan target?",
+        "How will you reconnect fragmented habitats to allow gene flow?",
+        "What model data will you use to justify your minimum population size recommendations?",
+        "How will you measure whether your plan is successfully increasing genetic diversity?"
+    ],
+    "career": "Conservation geneticists study the genetic health of endangered species and design breeding and habitat programs to preserve genetic diversity. They work at wildlife agencies, zoos, universities, and conservation organizations, earning $55,000-$110,000/year.",
+    "images": {
+        "cover": ("cover-cheetah-speed.png", "A dramatic photograph of a cheetah running at full speed across African savanna with motion blur showing its incredible velocity, but with fragmented habitat visible in the background showing fences and roads, cinematic wildlife photography"),
+        "landscape": ("landscape-cheetah.png", "A group of 7th grade students in a modern science classroom examining DNA gel electrophoresis images on a smartboard, a Latino female student and a White male student comparing genetic similarity charts while a Black female student takes notes, bright modern lab"),
+        "modeling": ("modeling-cheetah.png", "A diverse group of 7th grade students working on laptops building a population genetics model, an Asian female student and a Black male student discussing habitat fragmentation maps on screens, classroom with wildlife conservation posters"),
+        "discussion": ("discussion-cheetah.png", "A teacher showing a world map of cheetah habitat range (historical vs. current) while leading discussion with 7th grade students, a White female student and a Latino male student examining the dramatic habitat loss, bright modern classroom"),
+        "stem": ("stem-cheetah-conservation.png", "7th grade students creating a cheetah conservation plan poster with maps and data, a Black female student leading the presentation while an Asian male student and White female student add habitat corridor diagrams, collaborative group work")
+    },
+    "pre_assessment": [
+        "Why do you think there are different breeds of dogs with very different traits, but all cheetahs look almost identical?",
+        "What do you think happens to a population when there are only a few individuals left?",
+        "Draw what you think a healthy population's genetic diversity looks like compared to an endangered species.",
+        "How do you think roads and cities affect wild animal populations?"
+    ],
+    "extend_components": [
+        ("Disease Susceptibility", "How vulnerable the population is to epidemics, which increases when all individuals share similar immune genes"),
+        ("Inbreeding Rate", "The frequency of mating between closely related individuals, which increases in small, isolated populations"),
+        ("Gene Flow", "The transfer of genetic material between separate populations through migration, which introduces new genetic variation")
+    ],
+    "reflections": [
+        "Why is genetic diversity sometimes called the 'insurance policy' of a species? How does your model support this idea?",
+        "How does the cheetah's genetic bottleneck 10,000 years ago still affect the species today?",
+        "If all cheetahs are genetically similar, why is that a problem for fighting diseases?",
+        "How does habitat fragmentation make the genetic diversity problem worse, even if the total population stays the same?",
+        "What would your model predict for human-managed breeding programs that intentionally mix individuals from different isolated populations?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Using Mathematics and Computational Thinking", "Students use mathematical representations in their model to show how population size and fragmentation drive changes in genetic diversity and species fitness over time."),
+        ("Disciplinary Core Idea", "LS4.C Adaptation / LS4.B Natural Selection", "Natural selection acts on trait variation within populations. When genetic diversity is lost, the raw material for natural selection disappears, reducing a species' ability to adapt."),
+        ("Crosscutting Concept", "Cause and Effect", "Students trace the causal chain from habitat fragmentation and population decline through reduced genetic diversity to decreased trait variation and species fitness.")
+    ],
+    "cast_items": [
+        "Model how population size and habitat fragmentation affect genetic diversity",
+        "Explain how reduced genetic diversity limits natural selection and species fitness",
+        "Use mathematical reasoning to describe how trait variation changes in small populations"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A wildlife biologist discovers that a population of 50 isolated cheetahs has much less genetic diversity than a connected population of 500 cheetahs. Which factor best explains this difference?"),
+        ("Constructed Response:", "Using your population genetics model, explain why cheetahs are more vulnerable to a new disease than a species like coyotes, which have high genetic diversity. Describe how genetic diversity affects disease resistance at the population level.")
+    ],
+    "background_intro": "Cheetahs are a genetic paradox: the fastest land animal is also one of the most genetically uniform mammals on Earth. Their story reveals how population bottlenecks, habitat fragmentation, and the loss of genetic diversity can threaten even the most spectacular species.",
+    "background_sections": [
+        ("The Cheetah Bottleneck", "About 10,000 years ago, during the last ice age, cheetah populations crashed to perhaps fewer than 500 individuals. This genetic bottleneck meant that all surviving cheetahs were closely related. Today, any two cheetahs are as genetically similar as identical twins in other species. Scientists discovered this when skin grafts between unrelated cheetahs were not rejected, something that normally only works between identical twins."),
+        ("Why Genetic Diversity Matters", "Genetic diversity is a population's toolkit for survival. When individuals vary genetically, some will have traits that help them survive new diseases, climate changes, or predators. Without variation, the entire population is equally vulnerable. If a new disease kills one genetically identical cheetah, it can potentially kill them all."),
+        ("Habitat Fragmentation Compounds the Problem", "Cheetahs once roamed across Africa, the Middle East, and into India. Today, they occupy only 9% of their historical range, broken into isolated patches by roads, farms, and cities. These isolated groups cannot breed with each other, so each small population's genetic diversity decreases further with each generation through genetic drift."),
+        ("Natural Selection Needs Variation", "Natural selection is the engine of adaptation, but it needs fuel: genetic variation. If all cheetahs run at nearly the same speed (because they're nearly genetically identical), selection cannot favor faster individuals. The trait cannot improve. This is why the fastest animal on Earth may actually be getting slower over generations.")
+    ],
+    "lever_L": "Students identify population size, habitat fragmentation, genetic diversity, trait variation, and species fitness as components of the population genetics system.",
+    "lever_E": "Students determine that population size and habitat fragmentation are external drivers that affect genetic diversity, which cascades to trait variation and species fitness.",
+    "lever_V": "Students build a model showing how environmental pressures on population size and habitat connectivity determine the genetic health of a species.",
+    "lever_Ev": "Students run bottleneck, connected habitat, and recovery scenarios to observe how genetic diversity and species fitness respond to different population conditions.",
+    "lever_R": "Students add disease susceptibility or gene flow to explore how genetic uniformity creates vulnerability and how migration can restore diversity.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with running cheetah", "say": "Cheetahs can run 70 mph. They're the fastest animal on land. But scientists say they're getting slower. How is that even possible?", "do": "Show slow-motion cheetah running footage. Ask: What would make the fastest animal on Earth slow down?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we're investigating a genetic mystery that threatens an entire species.", "do": "Have students read objectives. Pre-teach genetic diversity and habitat fragmentation.", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Why are cheetahs losing their speed?", "say": "Here's the weird part: all cheetahs are almost genetically identical. You could swap skin between two random cheetahs and their bodies wouldn't reject it. Why is that a problem?", "do": "Show genetic similarity comparison: cheetahs vs. other big cats. Discuss.", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We'll build a model of how genetic diversity affects species survival.", "do": "Preview LEVER steps. Show cheetah historical vs. current range map.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Component cards for genetics model", "say": "What factors affect a species' genetic health? Which are the causes and which are the effects?", "do": "Guide sorting. Discuss why population size and fragmentation are the external drivers.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows between components", "say": "When population size drops, what happens to genetic diversity? And when genetic diversity drops, what happens to the species?", "do": "Help students trace the causal chain. Emphasize that this is a cascade effect.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graph predictions and results", "say": "Let's crash the population and see what happens to genetic diversity. Then let's try to bring it back.", "do": "Students predict first, then run all three scenarios. Discuss why recovery is so slow.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings from model", "say": "So can cheetahs get their speed back? What does our model say about their future?", "do": "Lead discussion about genetic rescue and conservation genetics. Connect to natural selection.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Conservation plan project", "say": "You're conservation geneticists now. Design a plan to save the cheetah's genetic future.", "do": "Groups create conservation plans using model data and habitat maps.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Population Size and Habitat Fragmentation are external because they are the environmental conditions that students control in the model: how many individuals exist and how connected their habitat is. Genetic Diversity, Trait Variation, and Species Fitness are internal because they are the biological outcomes that respond to those population and habitat conditions.",
+    "relationships": [
+        ("Population Size to Genetic Diversity", "POSITIVE (+)", "Larger populations maintain more genetic diversity because there are more individuals carrying different alleles. Small populations lose rare alleles through genetic drift."),
+        ("Habitat Fragmentation to Genetic Diversity", "NEGATIVE (-)", "Greater fragmentation isolates populations, preventing gene flow between groups. Each isolated group loses diversity independently through drift and inbreeding."),
+        ("Genetic Diversity to Trait Variation", "POSITIVE (+)", "More genetic diversity means more variation in physical traits like speed, disease resistance, and body size. Less diversity means individuals are more similar."),
+        ("Trait Variation to Species Fitness", "POSITIVE (+)", "Greater trait variation gives natural selection more to work with. Populations with diverse traits are better equipped to survive diseases, predators, and environmental changes."),
+        ("Habitat Fragmentation to Population Size", "NEGATIVE (-)", "Fragmented habitats support fewer individuals because each isolated patch has limited resources, increasing competition and reducing breeding opportunities.")
+    ],
+    "sim_answers": [
+        ("Bottleneck Event Scenario", "With very low Population Size and high Habitat Fragmentation, Genetic Diversity plummets. The few remaining individuals in isolated patches are forced to breed with close relatives, further reducing diversity. Trait Variation narrows dramatically, meaning all cheetahs become very similar. Species Fitness drops because the population has lost the genetic variation needed to adapt to new threats like diseases or climate change."),
+        ("Connected Habitat Scenario", "With low Habitat Fragmentation and moderate Population Size, Genetic Diversity stabilizes at a higher level. Gene flow between groups introduces new alleles, maintaining Trait Variation. Species Fitness remains stronger because the population has the genetic tools to respond to environmental challenges through natural selection.")
+    ],
+    "reflection_exemplars": [
+        ("Why is genetic diversity an 'insurance policy'?", "Genetic diversity works like insurance because it prepares a species for threats it hasn't faced yet. If a new disease appears, a genetically diverse population will have some individuals with immune genes that can fight it, so the species survives. A genetically uniform population (like cheetahs) might have NO individuals resistant to the new disease, and the entire species could be wiped out. Our model shows that as Genetic Diversity decreases, Species Fitness drops because the population loses its ability to respond to unexpected challenges."),
+        ("How does fragmentation make it worse?", "Even if the total number of cheetahs stays the same, fragmenting them into isolated groups is devastating. Imagine 1,000 cheetahs in one connected population vs. 10 groups of 100 in isolated patches. The connected group can share genes freely, maintaining diversity. Each isolated group of 100 loses genetic diversity through drift and inbreeding independently. After several generations, each small group has lost different alleles, and none of them have the full genetic toolkit anymore. Our model shows that Habitat Fragmentation has a NEGATIVE effect on Genetic Diversity even when total population numbers don't change.")
+    ],
+    "stem_intro": "The Cheetah Conservation Fund needs a science-based rescue plan for the world's remaining 7,000 wild cheetahs. Populations are scattered across fragmented habitats in sub-Saharan Africa, with a tiny population of about 50 in Iran. Your team will use model data to design strategies for reconnecting populations and restoring genetic diversity.",
+    "stem_concepts": [
+        ("Wildlife Corridors", "Protected strips of habitat connecting larger reserves, allowing animals to move between populations. Corridors enable gene flow, which introduces new genetic variation into isolated populations. Successful corridors have been built for Florida panthers, which faced similar genetic bottleneck problems."),
+        ("Genetic Rescue", "The intentional introduction of individuals from one population into another to increase genetic diversity. This has been successfully used with Florida panthers: introducing eight Texas cougars into the population tripled genetic diversity and dramatically improved kitten survival rates."),
+        ("Minimum Viable Population", "The smallest population size that can sustain itself long-term without losing genetic diversity to drift. For most large mammals, this is estimated at 500-5,000 breeding individuals. Below this number, genetic diversity erodes faster than mutation can replace it.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Plan uses model data to justify population size targets, includes habitat connectivity strategies, addresses genetic rescue mechanisms, and provides measurable success indicators"),
+        ("Proficient (3)", "Plan addresses both habitat and genetic diversity with model evidence and reasonable conservation strategies"),
+        ("Developing (2)", "Plan mentions conservation goals but doesn't connect them to model data or genetic diversity principles"),
+        ("Beginning (1)", "Plan is incomplete or focuses only on habitat without addressing genetic diversity")
+    ],
+    "support": [
+        "Provide historical vs. current cheetah range maps for students to compare habitat loss",
+        "Use colored beads to physically demonstrate how genetic diversity decreases in small populations (random sampling)",
+        "Sentence frames: 'When population size decreases, genetic diversity __ because __, which causes trait variation to __'"
+    ],
+    "extensions": [
+        "Research the Florida panther genetic rescue program and compare it to the cheetah's situation",
+        "Investigate how de-extinction efforts (like woolly mammoth revival) face the same genetic diversity challenges",
+        "Model how climate change could add additional pressure to already genetically vulnerable species"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate the percentage of genetic diversity lost per generation in populations of different sizes using Hardy-Weinberg equilibrium concepts"),
+        ("ELA", "Write a persuasive essay arguing for or against genetic rescue through captive breeding programs for endangered species"),
+        ("Social Studies", "Research how human land use decisions in Africa affect cheetah habitat and propose policies that balance development with conservation")
+    ],
+    "misconceptions": [
+        ("Evolution always makes species better", "Evolution through natural selection improves adaptation to CURRENT conditions, but it can only work if there is genetic variation. Without variation, natural selection has nothing to select from, and the population cannot adapt. Cheetahs show that evolution can be stuck if genetic diversity is lost.", "Ask: If every student in class had the exact same test score, could you pick the 'best' student? That's the problem natural selection faces with genetically identical populations."),
+        ("Endangered species just need more habitat", "Habitat is essential, but genetic diversity is equally important. A species with plenty of habitat but no genetic diversity is still vulnerable. Cheetahs could have all the habitat in the world, but without genetic variation, they cannot adapt to new diseases or environmental changes.", "Compare two scenarios: 1,000 genetically identical cheetahs in a huge reserve vs. 500 genetically diverse cheetahs in smaller connected reserves. Which population is more likely to survive a new disease?"),
+        ("Small populations will naturally recover on their own", "Small populations actually lose genetic diversity faster than they can gain it. Mutations introduce new variation very slowly, while genetic drift removes it quickly in small groups. Without intervention (like wildlife corridors or genetic rescue), small populations spiral toward genetic collapse.", "Use a jar of mixed-color beads. Remove half randomly (genetic drift). The remaining sample has fewer colors. Repeat. Each round, more colors disappear. That's what happens in small populations.")
+    ]
+}
+
+L10 = {
+    "id": "G07L2-L10",
+    "title": "Can We Run Out of Rare Earth Metals?",
+    "subtitle": "Mining, Recycling, and the Hidden Cost of Modern Technology",
+    "ngss": "MS-ESS3-1, MS-ESS3-4",
+    "ngss_desc": "Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes. Construct an argument supported by evidence for how increases in human population and per-capita consumption of natural resources impact Earth's systems.",
+    "big_question": "Every phone, computer, and electric car uses rare earth metals. If we keep mining them at current rates without recycling, will we run out?",
+    "objectives": [
+        "Model how mining rate and recycling rate interact to determine the available supply of rare earth metals",
+        "Explain how supply and demand dynamics drive market price and substitution incentives",
+        "Predict how changes in resource consumption and recycling affect long-term supply sustainability",
+        "Describe how human activity impacts Earth's finite mineral resources"
+    ],
+    "vocabulary": [
+        ("Rare Earth Metals", "A group of 17 metallic elements essential for modern technology including smartphones, wind turbines, electric vehicles, and military equipment"),
+        ("Mining Rate", "The speed at which raw materials are extracted from the Earth, measured in tons per year"),
+        ("Recycling Rate", "The percentage of used materials that are recovered and reprocessed for new use instead of being discarded"),
+        ("Substitution Incentive", "The economic motivation to find alternative materials when the original material becomes too expensive or scarce")
+    ],
+    "components": [
+        ("Mining Rate", "The rate at which rare earth metals are extracted from underground deposits", True),
+        ("Recycling Rate", "The percentage of rare earth metals recovered from discarded electronics and products", True),
+        ("Available Supply", "The total amount of rare earth metals accessible for manufacturing and technology production", False),
+        ("Market Price", "The cost per unit of rare earth metals, driven by the balance of supply and demand", False),
+        ("Substitution Incentive", "The economic pressure to develop alternative materials that can replace rare earth metals", False)
+    ],
+    "think_about_it": "If Mining Rate stays the same but Recycling Rate increases dramatically, what happens to Available Supply? And if supply increases, what happens to Market Price and the motivation to find substitutes?",
+    "scenarios": [
+        ("Business as Usual", "Set Mining Rate to high and Recycling Rate to low and observe Available Supply over time"),
+        ("Circular Economy", "Set Recycling Rate to high and Mining Rate to moderate and observe Market Price and supply sustainability"),
+        ("Supply Crisis", "Set Mining Rate to low (depleted mines) and Recycling Rate to low and observe Market Price and Substitution Incentive")
+    ],
+    "sim_scenarios": [
+        ("High Mining, Low Recycling", "Aggressive extraction, minimal recycling", "What do you predict happens to Available Supply and Market Price when we mine heavily but barely recycle?"),
+        ("Balanced Approach", "Moderate mining with high recycling", "What do you predict happens to long-term supply sustainability when recycling returns significant material to the supply chain?"),
+        ("Depletion Scenario", "Low mining (exhausted deposits), low recycling", "What do you predict happens to Market Price and Substitution Incentive when both new supply and recycled supply are low?")
+    ],
+    "discoveries": [
+        "Rare earth metals are not actually rare in Earth's crust, but they are rarely found in concentrations high enough to mine economically",
+        "Currently, less than 1% of rare earth metals are recycled from electronic waste, meaning massive amounts of valuable material end up in landfills",
+        "When Available Supply drops and Market Price rises, it creates economic incentive to develop substitutes, which can reduce dependence on rare earths",
+        "China controls about 60% of rare earth mining and 90% of processing, making global supply vulnerable to geopolitical disruptions"
+    ],
+    "answer": "We probably won't literally run out of rare earth metals, but we could face severe shortages that disrupt technology production worldwide. The minerals exist in Earth's crust, but the easy-to-mine deposits are being depleted. Right now, we recycle less than 1% of rare earths from old electronics. If we increased recycling dramatically and invested in substitute materials, we could extend supplies for centuries. But if we keep mining at current rates with minimal recycling, prices will spike, supply chains will break, and the technology we depend on (phones, electric vehicles, wind turbines, medical devices) could become much more expensive or unavailable. The solution isn't just finding more deposits. It's building a circular economy where we recycle and reuse the rare earths we've already mined.",
+    "stem_title": "Design a Rare Earth Recycling Program",
+    "stem_mission": "Create a community electronics recycling program that maximizes rare earth metal recovery, using your simulation model data to justify the program's design and expected impact.",
+    "stem_scenario": "Your city council wants to reduce electronic waste and recover valuable rare earth metals from discarded devices. Your team has been asked to design a recycling program that collects old electronics, extracts rare earth metals, and returns them to the supply chain, using your model data to project the program's impact.",
+    "stem_questions": [
+        "How much rare earth metal could your community recover from electronic waste each year?",
+        "What does your model show about how increased recycling rates affect long-term supply and prices?",
+        "How can you incentivize residents to participate in electronics recycling?"
+    ],
+    "stem_design_qs": [
+        "What collection methods will your program use (drop-off, curbside, mail-in)?",
+        "How will you separate and extract rare earth metals from mixed electronic waste?",
+        "What model data will you use to project the program's impact on local supply and prices?",
+        "How will you measure the program's success in terms of material recovered and waste diverted?"
+    ],
+    "career": "Materials scientists study the properties and applications of metals, ceramics, polymers, and composites. They develop new materials and recycling processes for industries including technology, aerospace, and renewable energy, earning $70,000-$130,000/year.",
+    "images": {
+        "cover": ("cover-rare-earth.png", "A dramatic split image showing a rare earth mine with massive excavation equipment on one side and a pile of discarded smartphones and electronics on the other, highlighting the connection between mining and e-waste, cinematic industrial photography"),
+        "landscape": ("landscape-rare-earth.png", "A group of 7th grade students examining disassembled electronic components on a lab table with a periodic table poster behind them, a White male student and a Black female student identifying rare earth elements in circuit boards while an Asian male student researches on a tablet, bright modern lab"),
+        "modeling": ("modeling-rare-earth.png", "A diverse group of 7th grade students working on laptops building a resource supply model, a Latino female student and a White female student analyzing supply chain data on screens, classroom with technology and Earth science posters"),
+        "discussion": ("discussion-rare-earth.png", "A teacher showing a world map of rare earth mining locations while leading discussion with 7th grade students, a Black male student and an Asian female student examining where their phone components come from, bright modern classroom"),
+        "stem": ("stem-recycling-program.png", "7th grade students designing an electronics recycling program poster with flow diagrams, a Latino male student leading the design while a Black female student and White male student calculate material recovery rates, collaborative group work")
+    },
+    "pre_assessment": [
+        "What do you think is inside your phone that makes it work? Where do those materials come from?",
+        "What happens to old electronics when you throw them away?",
+        "Draw what you think happens to the minerals inside a phone after it's discarded.",
+        "Do you think Earth has an unlimited supply of the materials we use for technology? Why or why not?"
+    ],
+    "extend_components": [
+        ("Geopolitical Risk", "The vulnerability of supply chains when a single country controls the majority of mining or processing, creating risk of trade disruptions"),
+        ("Technological Demand Growth", "The increasing global demand for rare earth metals driven by electric vehicles, renewable energy, smartphones, and defense technology"),
+        ("Environmental Mining Cost", "The ecological damage from rare earth extraction including toxic waste, water contamination, habitat destruction, and radioactive byproducts")
+    ],
+    "reflections": [
+        "Why is it misleading to say rare earth metals are 'rare'? How does your model show that the real problem is concentration and extraction, not total amount?",
+        "How does the relationship between supply, price, and substitution create a natural economic feedback loop?",
+        "Why is recycling rare earths from electronics so much more challenging than recycling aluminum cans?",
+        "What would your model predict if a major geopolitical event suddenly cut off 60% of the world's rare earth supply?",
+        "How does the concept of a 'circular economy' differ from the traditional 'mine-use-discard' model, and what does your simulation show about its benefits?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Constructing Explanations and Designing Solutions", "Students construct scientific explanations for how resource distribution results from geoscience processes and design solutions for sustainable resource management."),
+        ("Disciplinary Core Idea", "ESS3.A Natural Resources / ESS3.C Human Impacts on Earth Systems", "Humans depend on Earth's mineral resources, which are unevenly distributed. Increases in consumption impact Earth's systems and resource availability."),
+        ("Crosscutting Concept", "Cause and Effect", "Students trace the causal relationships between mining rate, recycling rate, available supply, market price, and substitution incentive to understand how human resource decisions create cascading effects.")
+    ],
+    "cast_items": [
+        "Explain how past geoscience processes created the uneven distribution of rare earth metal deposits",
+        "Model how mining and recycling rates interact to determine available supply and market dynamics",
+        "Construct an argument for how human consumption patterns impact Earth's finite mineral resources"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A country that depends on imported rare earth metals for its technology industry faces a supply disruption. According to the supply-price-substitution model, what would happen first?"),
+        ("Constructed Response:", "Using your resource model, explain why simply finding new rare earth deposits is NOT a long-term solution to the supply problem. Describe how a circular economy approach using recycling and substitution provides a more sustainable path, supported by evidence from your simulation scenarios.")
+    ],
+    "background_intro": "Rare earth metals are the hidden ingredients in nearly every piece of modern technology. Despite their name, they are not actually rare, but they are rarely found in concentrations high enough to mine profitably. As global demand skyrockets for electric vehicles, smartphones, and renewable energy technology, the question of whether we can sustain our consumption has become urgent.",
+    "background_sections": [
+        ("What Are Rare Earth Metals?", "Rare earth metals are a group of 17 elements including neodymium (magnets in headphones and wind turbines), lanthanum (camera lenses and batteries), and cerium (catalytic converters and glass polishing). They are called 'rare' not because they are scarce in Earth's crust, but because they rarely form concentrated deposits. They tend to be dispersed thinly across rock formations, making extraction difficult and expensive."),
+        ("Where They Come From", "Rare earth deposits formed through geoscience processes over billions of years. Magmatic activity concentrated certain elements in specific rock formations. Weathering and erosion redistributed them. Today, major deposits are found in China (which controls about 60% of global mining), Australia, the United States, Myanmar, and a few other countries. This uneven distribution creates geopolitical vulnerabilities."),
+        ("The E-Waste Problem", "About 50 million tons of electronic waste are generated globally each year, containing billions of dollars worth of rare earth metals. Yet less than 1% of rare earths are recovered from e-waste. The recycling challenge is that rare earths are used in tiny amounts spread across many components, making extraction expensive. A typical smartphone contains about 0.05 grams of rare earths across dozens of different parts."),
+        ("The Path to Sustainability", "Three strategies can address the rare earth challenge: (1) Increase recycling technology to economically recover rare earths from e-waste, (2) Develop substitute materials that can replace rare earths in key applications, and (3) Reduce consumption through more efficient product design and longer product lifespans. A circular economy that recycles, substitutes, and reduces can extend rare earth supplies for centuries.")
+    ],
+    "lever_L": "Students identify mining rate, recycling rate, available supply, market price, and substitution incentive as components of the rare earth resource system.",
+    "lever_E": "Students determine that mining rate and recycling rate are external inputs that drive available supply, which cascades to affect market price and substitution incentive.",
+    "lever_V": "Students build a model showing how human resource decisions (mining and recycling) determine the sustainability of rare earth metal supply.",
+    "lever_Ev": "Students run business-as-usual, circular economy, and supply crisis scenarios to observe how supply, price, and substitution incentive respond to different strategies.",
+    "lever_R": "Students add geopolitical risk or technological demand growth to explore how external pressures complicate resource management.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with rare earth mine and electronics", "say": "Pick up your phone. Inside it are metals that were mined from deep underground, possibly on the other side of the world. What happens when those mines run dry?", "do": "Pass around a disassembled circuit board. Ask: How many different materials do you think are in this?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we're investigating whether the technology we love is sustainable, or if we're heading toward a resource crisis.", "do": "Have students read objectives. Pre-teach rare earth metals and circular economy concepts.", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Can we run out of rare earth metals?", "say": "Every electric car battery, every wind turbine, every MRI machine uses rare earth metals. Demand is skyrocketing. Supply is limited. What happens next?", "do": "Show infographic of rare earth metals in everyday devices. Discuss which devices students use daily.", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We'll build a model of Earth's rare earth metal supply chain.", "do": "Preview LEVER steps. Show world map of rare earth deposits.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Component cards for resource model", "say": "What factors determine whether we'll have enough rare earth metals? Which can we control?", "do": "Guide sorting. Discuss why mining rate and recycling rate are the human-controlled inputs.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows between components", "say": "When mining goes up, what happens to supply? When supply goes down, what happens to prices? And when prices go up, what happens to the search for alternatives?", "do": "Help students trace the economic feedback loop. Emphasize cause-and-effect chains.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Graph predictions and results", "say": "Let's mine like there's no tomorrow and see what happens. Then let's try recycling and see the difference.", "do": "Students predict first, then run all three scenarios. Compare long-term supply projections.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings from model", "say": "So will we actually run out? What did our model reveal about the real solution?", "do": "Lead discussion about circular economy vs. linear consumption. Connect to Earth's finite resources.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Electronics recycling program", "say": "Your city needs a recycling program that recovers these valuable metals. Design one using your data.", "do": "Groups design community recycling programs with collection, extraction, and impact projections.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Mining Rate and Recycling Rate are external because they are the human-controlled activities that students adjust in the model: how fast we extract new resources and how much we recover from waste. Available Supply, Market Price, and Substitution Incentive are internal because they are the economic and material outcomes that respond to those human decisions.",
+    "relationships": [
+        ("Mining Rate to Available Supply", "POSITIVE (+)", "Higher mining rates extract more rare earth metals from the ground, increasing the available supply for manufacturing."),
+        ("Recycling Rate to Available Supply", "POSITIVE (+)", "Higher recycling rates recover rare earth metals from discarded electronics, returning them to the available supply without new mining."),
+        ("Available Supply to Market Price", "NEGATIVE (-)", "When available supply increases, market price decreases because supply exceeds demand. When supply drops, scarcity drives prices up."),
+        ("Market Price to Substitution Incentive", "POSITIVE (+)", "Higher market prices for rare earth metals create stronger economic incentive to develop cheaper alternative materials that can serve the same function."),
+        ("Mining Rate to Available Supply (long-term)", "NEGATIVE (-)", "In the long term, high mining rates deplete underground deposits faster, eventually reducing the available supply as easy-to-mine sources are exhausted.")
+    ],
+    "sim_answers": [
+        ("Business as Usual Scenario", "With high Mining Rate and low Recycling Rate, Available Supply initially appears stable but begins declining as deposits are depleted. Market Price gradually rises as supply tightens, and Substitution Incentive increases as companies seek cheaper alternatives. This is an unsustainable path because it relies entirely on finite underground deposits."),
+        ("Circular Economy Scenario", "With high Recycling Rate and moderate Mining Rate, Available Supply stabilizes at a sustainable level. Recycled material supplements mined material, reducing pressure on underground deposits. Market Price stays moderate, and Substitution Incentive remains low because supply is adequate. This path can be sustained for centuries because material is being reused rather than discarded.")
+    ],
+    "reflection_exemplars": [
+        ("Why aren't rare earths actually rare?", "Rare earth metals are relatively common in Earth's crust. Cerium is about as abundant as copper. The 'rare' in their name comes from the fact that they rarely form concentrated deposits. Instead, they're spread thinly across rock formations, mixed in with other minerals. Our model shows that the issue isn't total amount in Earth's crust but Available Supply, which depends on whether deposits are concentrated enough to mine economically. This is why geoscience processes matter: only specific geological events (like magmatic concentration) create minable deposits."),
+        ("What if 60% of supply was suddenly cut off?", "If a geopolitical event cut off China's rare earth exports (which represent about 60% of global supply), our model predicts Available Supply would crash, Market Price would spike dramatically, and Substitution Incentive would skyrocket. Industries dependent on rare earths (electronics, electric vehicles, wind turbines, defense) would face immediate shortages. This is exactly what happened briefly in 2010 when China restricted rare earth exports, causing prices to increase by 10-20x and triggering a global scramble for alternative sources and substitutes.")
+    ],
+    "stem_intro": "Your city council wants to address the growing problem of electronic waste while recovering valuable rare earth metals. Currently, less than 1% of rare earths are recycled from discarded electronics. Your team will design a community recycling program that maximizes recovery, using model data to project impact on local supply and costs.",
+    "stem_concepts": [
+        ("Urban Mining", "The process of recovering valuable metals from electronic waste, construction debris, and landfills. A ton of discarded smartphones contains about 300 times more gold and 10 times more rare earth metals than a ton of ore from a mine, making urban mining increasingly economical."),
+        ("Circular Economy", "An economic system that eliminates waste by keeping materials in use as long as possible through recycling, repair, refurbishment, and remanufacturing. Unlike the traditional linear model (mine-make-use-discard), a circular economy treats waste as a resource."),
+        ("Extended Producer Responsibility", "A policy approach where manufacturers are responsible for the entire lifecycle of their products, including collection and recycling after consumer use. This creates incentive for companies to design products that are easier to recycle and recover materials from.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Program includes specific collection, extraction, and distribution strategies, uses model data to project material recovery and supply impact, addresses economic feasibility, and provides measurable success metrics"),
+        ("Proficient (3)", "Program addresses collection and recycling with model evidence and reasonable recovery projections"),
+        ("Developing (2)", "Program describes a general recycling concept but lacks specific strategies or model-based projections"),
+        ("Beginning (1)", "Program is incomplete or doesn't connect recycling to rare earth supply and sustainability")
+    ],
+    "support": [
+        "Provide a periodic table highlighting the 17 rare earth elements and their common uses in technology",
+        "Show disassembled electronic devices so students can see the tiny components that contain rare earth metals",
+        "Sentence frames: 'When mining rate is __ and recycling rate is __, available supply __ because __, which causes market price to __'"
+    ],
+    "extensions": [
+        "Research how deep-sea mining of rare earth nodules could change the supply picture and the environmental tradeoffs involved",
+        "Investigate how Japan has developed rare earth recycling technology that recovers over 90% of rare earths from magnets",
+        "Model how the transition to electric vehicles will affect rare earth demand and whether current supply strategies are adequate"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate how many smartphones would need to be recycled to produce enough neodymium for one wind turbine magnet, given that each phone contains about 0.05g of rare earths"),
+        ("ELA", "Write a policy proposal to your city council arguing for an electronics recycling program, using evidence from your simulation model"),
+        ("Social Studies", "Research how China's dominance in rare earth processing affects global geopolitics and trade relationships, especially between the US, China, and the EU")
+    ],
+    "misconceptions": [
+        ("Rare earth metals are actually rare", "Rare earth metals are NOT rare in Earth's crust. Several are more common than lead or tin. They're called 'rare' because they rarely form concentrated deposits that can be mined economically. The real challenge is extraction, not existence. Earth has plenty of rare earth metals, but most are too spread out to mine profitably.", "Show abundance chart comparing rare earth elements to familiar metals like copper and tin. The rarest rare earth (thulium) is still more common than gold or platinum."),
+        ("We can just find more mines when current ones run out", "Finding new deposits doesn't solve the fundamental problem. Mining creates environmental damage (toxic waste, water contamination, radioactive byproducts) and deposits take millions of years to form. A sustainable solution requires recycling existing materials, not endlessly opening new mines.", "Ask: If you keep spending money without earning any back, does finding more money in a different pocket solve the problem? Recycling is like earning money back."),
+        ("Recycling electronics is easy", "Recycling rare earths from electronics is extremely difficult because the metals are used in tiny amounts spread across many different components. A smartphone might contain 0.05 grams of rare earths in dozens of different places. Separating and recovering these materials requires specialized chemical processes that are expensive and technically challenging.", "Open a disassembled phone. Point to the tiny magnets, speakers, and screen components. Ask: How would you separate 0.05 grams of specific metals from all of this?")
+    ]
+}

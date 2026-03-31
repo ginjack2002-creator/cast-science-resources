@@ -1215,3 +1215,525 @@ L07 = {
         ("The sound of a collision is separate from the energy transfer", "The sound IS part of the energy transfer — or more accurately, it is energy LEAKING from the transfer. When two objects collide, kinetic energy transforms into several forms simultaneously: some transfers as kinetic energy to the next object, some becomes sound waves, and some becomes heat. The sound and heat are not separate events — they are part of the same collision physics. Louder collisions mean more energy was converted to sound, meaning LESS energy was available for motion.", "Collide two objects gently (soft sound) then forcefully (loud sound). The louder collision had more energy in it, and more energy was converted to sound. Ask: if the sound is louder, does the next object get MORE or LESS kinetic energy?")
     ]
 }
+
+L08 = {
+    "id": "G04L2-L08",
+    "title": "Why Does a Black Car Get Hotter?",
+    "subtitle": "How Surface Color Affects Heat Absorption from Sunlight",
+    "ngss": "4-PS3-2",
+    "ngss_desc": "Make observations to provide evidence that energy can be transferred from place to place by sound, light, thermal energy, and electric currents.",
+    "big_question": "If two cars sit in the same sunny parking lot, why does the black car feel burning hot while the white car stays cooler?",
+    "objectives": [
+        "Explain how sunlight transfers energy to surfaces and how that energy becomes heat",
+        "Model how sunlight intensity, surface color, heat absorption, surface temperature, and comfort level interact in a system",
+        "Describe how darker surfaces absorb more light energy and convert it to heat compared to lighter surfaces",
+        "Use evidence from a model to explain why color matters for staying cool in the sun"
+    ],
+    "vocabulary": [
+        ("Light Energy", "Energy that travels from the sun as light waves and can be absorbed by surfaces, turning into heat"),
+        ("Heat Absorption", "When a surface takes in light energy and converts it into thermal energy, making the surface warmer"),
+        ("Surface Color", "How dark or light a surface is, which determines how much light energy it absorbs versus reflects"),
+        ("Thermal Energy", "Heat energy that moves from warmer objects to cooler objects, making things feel hot or cold"),
+        ("Reflection", "When light bounces off a surface instead of being absorbed, carrying the energy away instead of heating the surface")
+    ],
+    "components": [
+        ("Sunlight Intensity", "How strong the sunlight is, which depends on time of day, cloud cover, and season. Stronger sunlight delivers more energy to surfaces", True),
+        ("Surface Color", "How dark or light the surface is. Dark colors like black absorb most light energy, while light colors like white reflect most of it", True),
+        ("Heat Absorption", "The amount of light energy that a surface captures and converts into thermal energy instead of reflecting it back", False),
+        ("Surface Temperature", "How hot the surface becomes after absorbing light energy. More absorption means a higher temperature", False),
+        ("Comfort Level", "How comfortable a person feels when touching or sitting on the surface. Hotter surfaces are less comfortable", False)
+    ],
+    "think_about_it": "When Sunlight Intensity increases, what happens to Heat Absorption? When Surface Color is dark, what happens to Heat Absorption, and how does that affect Surface Temperature and Comfort Level?",
+    "scenarios": [
+        ("Bright Sun, Dark Surface", "Set Sunlight Intensity to 80% and Surface Color to dark (80%). Observe how much heat the surface absorbs and how hot it gets"),
+        ("Bright Sun, Light Surface", "Set Sunlight Intensity to 80% and Surface Color to light (20%). Compare the temperature to the dark surface"),
+        ("Cloudy Day, Dark Surface", "Set Sunlight Intensity to 20% and Surface Color to dark (80%). Does the dark surface still get very hot?"),
+        ("Cloudy Day, Light Surface", "Set Sunlight Intensity to 20% and Surface Color to light (20%). What is the coolest combination?")
+    ],
+    "sim_scenarios": [
+        ("Bright Sun, Dark Surface", "Sunlight Intensity at 80%, Surface Color at dark (80%)", "What do you predict will happen to Surface Temperature when strong sunlight hits a dark surface?"),
+        ("Bright Sun, Light Surface", "Sunlight Intensity at 80%, Surface Color at light (20%)", "How will the temperature of a light surface compare to the dark surface under the same sunlight?"),
+        ("Cloudy Day, Dark Surface", "Sunlight Intensity at 20%, Surface Color at dark (80%)", "Does a dark surface still get very hot when there is less sunlight?"),
+        ("Cloudy Day, Light Surface", "Sunlight Intensity at 20%, Surface Color at light (20%)", "What is the coolest possible combination? How comfortable is this surface?")
+    ],
+    "discoveries": [
+        "Dark surfaces absorb MORE light energy than light surfaces, converting that energy into heat that raises the surface temperature",
+        "Light-colored surfaces REFLECT most of the sunlight away, so less energy becomes heat and the surface stays cooler",
+        "Even a dark surface does not get extremely hot on a cloudy day because there is less light energy available to absorb",
+        "Both sunlight intensity AND surface color matter together. The hottest surfaces happen when STRONG sunlight hits DARK colors, and the coolest surfaces happen when WEAK sunlight hits LIGHT colors"
+    ],
+    "answer": "A black car gets hotter because dark colors ABSORB most of the light energy from the sun instead of reflecting it! When sunlight hits a dark surface, the light energy is captured and converted into THERMAL ENERGY (heat). The surface temperature rises because all that absorbed energy has nowhere to go but into the material. A white car reflects most of the sunlight away, so less energy is converted to heat and the surface stays cooler. It is the same amount of sunlight hitting both cars, but the dark car keeps more of that energy as heat while the white car bounces it away. That is why people in hot climates often wear light-colored clothing and why buildings in sunny areas are painted white!",
+    "stem_title": "Design the Coolest Parking Lot",
+    "stem_mission": "Design a model parking lot surface that keeps cars and people as cool as possible on a hot sunny day.",
+    "stem_scenario": "A school in a very hot city has a problem: their asphalt parking lot gets so hot in the summer that students cannot walk across it comfortably, car interiors become dangerously hot, and the playground equipment burns children's hands. The principal has hired your engineering team to redesign the parking lot surface to reduce temperatures. Use evidence from your model to recommend colors and materials.",
+    "stem_questions": [
+        "What color surface keeps the parking lot coolest, and how much cooler is it compared to black asphalt?",
+        "If you cannot change the color of the entire parking lot, where would you put lighter colors to help the most?",
+        "What other factors besides color might help keep a surface cool (shade, water, airflow)?"
+    ],
+    "stem_design_qs": [
+        "What materials will you test (black paper, white paper, aluminum foil, colored fabric)?",
+        "How will you measure the temperature of each surface after sitting in the sun?",
+        "How long will you leave each surface in the sun before measuring?",
+        "How will you make sure all surfaces get the same amount of sunlight for a fair test?"
+    ],
+    "career": "Environmental Engineers design buildings, roads, and cities to stay cool and save energy. They choose surface colors and materials that reduce heat absorption, helping fight the 'urban heat island' effect where cities get hotter than surrounding areas. They earn $65,000-$110,000/year.",
+    "images": {
+        "cover": ("cover-black-car-heat.png", "A dramatic split-image comparison of two identical cars side by side in a sunny parking lot, one jet black and one bright white, heat shimmer visible rising from the black car's hood, golden hour lighting, cinematic automotive photography"),
+        "landscape": ("landscape-black-car-heat.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a White girl and an Asian American boy leading the group, placing different colored paper squares on a sunny windowsill and holding thermometers, bright modern classroom, natural window light, genuinely diverse group including Black, Latino, White, and Asian students"),
+        "modeling": ("modeling-black-car-heat.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a Black boy taking the lead at the laptop, building a digital heat absorption model on screen showing light and dark surfaces, modern classroom with color spectrum posters, balanced diversity with varied hairstyles"),
+        "discussion": ("discussion-black-car-heat.png", "A photorealistic image of an Asian American female teacher leading a discussion with diverse 4th graders (9-10 years old) about light absorption and reflection, pointing at a diagram of sunlight hitting dark and light surfaces, students engaged and raising hands, balanced diversity"),
+        "stem": ("stem-black-car-heat.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a Latina girl and a White boy working together in the foreground, testing different colored surfaces under a desk lamp with thermometers, excited collaborative group work, balanced diversity")
+    },
+    "pre_assessment": [
+        "Have you ever touched a dark car seat on a hot day? What did it feel like compared to a lighter colored seat?",
+        "Why do you think people in very hot countries often wear white or light-colored clothing?",
+        "Draw what you think happens when sunlight hits a black surface versus a white surface.",
+        "Do you think a dark playground slide or a light playground slide gets hotter in the sun? Why?"
+    ],
+    "extend_components": [
+        ("Wind Speed", "How fast the air moves across the surface. Wind carries heat away from surfaces, cooling them down even if they absorb a lot of light energy"),
+        ("Surface Material", "What the surface is made of. Metal heats up faster than wood or plastic, even if they are the same color"),
+        ("Shade Coverage", "How much of the surface is blocked from direct sunlight by trees, buildings, or covers. Shade dramatically reduces heat absorption")
+    ],
+    "reflections": [
+        "Why does a black car get hotter than a white car sitting in the same parking lot?",
+        "If energy is being absorbed by the dark surface, where does that energy originally come from?",
+        "Why do you think rooftops in hot cities are sometimes painted white?",
+        "If you were designing a playground for a very sunny area, what colors would you choose and why?",
+        "How did your model help you understand the connection between color and temperature?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a five-component computational model showing how sunlight intensity and surface color interact to determine heat absorption, surface temperature, and comfort level."),
+        ("Disciplinary Core Idea", "PS3.B Conservation of Energy and Energy Transfer", "Energy can be transferred from place to place by light. When light energy is absorbed by a surface, it is converted to thermal energy. Dark surfaces absorb more light energy than light surfaces."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal relationships between surface color and temperature, understanding that darker colors cause more heat absorption because they absorb rather than reflect light energy.")
+    ],
+    "cast_items": [
+        "Explain how light energy from the sun is converted to thermal energy when absorbed by a surface",
+        "Use a model to describe how surface color affects how much light energy is absorbed versus reflected",
+        "Apply understanding of heat absorption to explain real-world temperature differences between dark and light objects"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "Two identical metal plates are placed in the sun for 30 minutes. One is painted black and the other is painted white. The black plate reaches 140 degrees F while the white plate reaches only 95 degrees F. Which best explains this difference?"),
+        ("Constructed Response:", "Your school is building a new outdoor eating area in a very sunny location. Using what you know about light energy, surface color, and heat absorption, write a recommendation to the principal about what color to paint the tables and benches. Use the words 'light energy,' 'heat absorption,' and 'surface temperature' in your answer.")
+    ],
+    "background_intro": "The relationship between color and heat is something we experience every day but rarely think about deeply. From the color of our clothes to the design of buildings and cities, understanding how surfaces interact with light energy helps engineers solve real problems like urban heat islands, energy-efficient buildings, and even spacecraft thermal protection.",
+    "background_sections": [
+        ("How Sunlight Becomes Heat", "Sunlight carries energy in the form of electromagnetic waves. When these waves hit a surface, one of two things happens: the energy is absorbed (taken in by the surface) or reflected (bounced back). Absorbed light energy transforms into thermal energy, raising the surface temperature. The more light energy a surface absorbs, the hotter it gets. This is the same process that warms the entire Earth — our planet absorbs sunlight and converts it to heat."),
+        ("Why Dark Colors Absorb More", "Color is actually about which wavelengths of light a surface reflects back to our eyes. A red ball looks red because it reflects red light and absorbs all other colors. A black surface absorbs nearly ALL wavelengths of light, converting all that energy to heat. A white surface reflects nearly ALL wavelengths, sending the energy away. This is why black absorbs the most heat and white absorbs the least — it is not magic, it is physics. The more light a surface reflects, the less energy it keeps as heat."),
+        ("Urban Heat Islands", "Cities are often 5 to 10 degrees hotter than surrounding rural areas because of the 'urban heat island' effect. Dark asphalt roads, dark rooftops, and concrete buildings absorb enormous amounts of sunlight and convert it to heat. This extra heat makes cities uncomfortable and increases energy costs for air conditioning. Environmental engineers combat this by using 'cool roofs' (white or reflective roofing), lighter-colored pavement, and increasing tree cover for shade. Some cities have reduced temperatures by several degrees just by changing surface colors."),
+        ("Color and Comfort in Daily Life", "Understanding heat absorption affects many everyday decisions. Light-colored clothing keeps you cooler in summer because it reflects sunlight. Car manufacturers know that dark-colored cars require more air conditioning energy to cool down. Desert animals often have lighter fur or skin to reflect sunlight. Even the color of your phone case matters — a black phone case in direct sun can get hot enough to trigger the phone's thermal shutdown. Engineers use this knowledge to design everything from solar panels (which WANT to absorb light) to spacesuits (which need to reflect it).")
+    ],
+    "lever_L": "Students identify Sunlight Intensity and Surface Color as external components (environmental conditions and design choices) and Heat Absorption, Surface Temperature, and Comfort Level as internal components that respond to the externals.",
+    "lever_E": "Students determine that Sunlight Intensity positively affects Heat Absorption, Surface Color (dark) positively affects Heat Absorption, Heat Absorption positively affects Surface Temperature, Surface Temperature negatively affects Comfort Level, and Sunlight Intensity positively affects Surface Temperature.",
+    "lever_V": "Students build a five-component model showing how light energy flows from the sun through surface color to heat absorption, raising surface temperature and decreasing comfort level.",
+    "lever_Ev": "Students run four scenarios (bright/dark, bright/light, cloudy/dark, cloudy/light) to observe how sunlight intensity and surface color combine to determine surface temperature and comfort.",
+    "lever_R": "Students add wind speed, surface material, or shade coverage to explore why some dark surfaces are still comfortable (shade) and why some light surfaces are still hot (metal material conducts heat quickly).",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with split image of black car and white car in sun", "say": "Has anyone ever burned their hand on a car seat in the summer? Why was it so hot? And why are some cars worse than others?", "do": "Ask students to share experiences touching hot surfaces in the sun. Prompt: Was the hot surface dark or light colored?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary with light energy and heat absorption", "say": "Today we are going to figure out exactly WHY color matters when it comes to heat. It is all about what happens to sunlight when it hits a surface.", "do": "Have students read objectives aloud. Pre-teach absorption vs. reflection using a flashlight on black and white paper.", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Two identical cars, one black and one white, in the same parking lot", "say": "Same sun, same parking lot, same amount of time. But one car is burning hot and the other is comfortable. Where does the extra heat come from?", "do": "Turn and talk: Why do you think the black car is hotter? Write predictions in notebooks.", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps with five components previewed", "say": "We are building a model with two things we can control — how much sun there is and how dark the surface is — and three things that respond.", "do": "Preview the five components. Hold up black and white paper and ask: Which do you think will get hotter in the sun?", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Five component cards for heat absorption system", "say": "Sunlight Intensity and Surface Color are our external components — they are the conditions we set. Heat Absorption, Surface Temperature, and Comfort Level are the results.", "do": "Guide component sorting. Discuss why comfort is internal — we do not choose how comfortable a surface feels, the temperature determines it.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows showing + and - connections", "say": "Here is the key: dark surfaces INCREASE heat absorption, and more heat absorption INCREASES temperature. But higher temperature DECREASES comfort. See how the system connects?", "do": "Map relationships together. Emphasize the negative relationship between temperature and comfort.", "time": "10 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Side-by-side comparison graphs of dark vs. light surfaces", "say": "Watch what happens when we change the surface from dark to light. Look at how much the temperature drops!", "do": "Run all four scenarios. Have students record temperatures and comfort levels for each combination.", "time": "12 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings with absorption vs. reflection diagram", "say": "Dark surfaces are heat sponges — they soak up sunlight and turn it into heat. Light surfaces are like mirrors — they bounce the sunlight away.", "do": "Demonstrate with a flashlight: shine it on black paper (light disappears) vs. white paper (light bounces visibly). The disappeared light became heat!", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Cool parking lot design challenge", "say": "Your mission: design the coolest possible parking lot for a school in a super hot city. Use your model data to make smart choices about color!", "do": "Distribute materials (colored paper, thermometers, lamp). Groups test surfaces and design their cool parking lot with a poster explaining their choices.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Sunlight Intensity is external because it is determined by weather and time of day — the system does not control how bright the sun is. Surface Color is external because it is a design choice — someone decides what color to paint a car or build a road. Heat Absorption, Surface Temperature, and Comfort Level are internal because they are physical outcomes determined by the interaction of sunlight with the surface color.",
+    "relationships": [
+        ("Sunlight Intensity to Heat Absorption", "POSITIVE (+)", "Stronger sunlight delivers more light energy to the surface. More energy hitting the surface means more energy available to be absorbed and converted to heat. A surface in direct midday sun absorbs far more energy than the same surface on a cloudy day."),
+        ("Surface Color (dark) to Heat Absorption", "POSITIVE (+)", "Darker surfaces absorb a higher percentage of the light energy that hits them. A black surface absorbs about 95% of incoming light, while a white surface absorbs only about 20%. More absorption means more light energy converting to thermal energy."),
+        ("Heat Absorption to Surface Temperature", "POSITIVE (+)", "When more light energy is absorbed and converted to thermal energy, the surface temperature rises. The relationship is direct — double the absorption and the temperature increase roughly doubles. Surfaces that absorb the most energy get the hottest."),
+        ("Surface Temperature to Comfort Level", "NEGATIVE (-)", "As surface temperature increases, comfort level decreases. A cool surface is comfortable to touch and sit on, while a hot surface can cause burns and discomfort. Beyond about 120 degrees F, surfaces become painful to touch."),
+        ("Sunlight Intensity to Surface Temperature", "POSITIVE (+)", "Stronger sunlight increases surface temperature both directly and indirectly through increased heat absorption. On the hottest, sunniest days, all surfaces reach their highest temperatures regardless of color.")
+    ],
+    "sim_answers": [
+        ("Bright Sun, Dark Surface", "With Sunlight Intensity at 80% and Surface Color at dark (80%), Heat Absorption is very high because strong sunlight delivers lots of energy and the dark surface captures nearly all of it. Surface Temperature rises dramatically, and Comfort Level drops to very low — this surface would be painful to touch."),
+        ("Bright Sun, Light Surface", "With Sunlight Intensity at 80% and Surface Color at light (20%), Heat Absorption is much lower because the light surface reflects most of the sunlight away. Surface Temperature is noticeably cooler than the dark surface under the same sun, and Comfort Level is significantly higher.")
+    ],
+    "reflection_exemplars": [
+        ("Why does a black car get hotter than a white car?", "A black car gets hotter because its dark surface ABSORBS almost all the light energy from the sun and converts it to thermal energy (heat). Our model showed that Surface Color has a positive relationship with Heat Absorption — darker surfaces absorb more. A white car REFLECTS most of the sunlight away, so less energy is converted to heat. Both cars receive the same amount of sunlight, but the black car keeps more of that energy as heat. This is why Surface Temperature is much higher for dark surfaces, which makes Comfort Level much lower."),
+        ("If you were designing a playground, what colors would you choose?", "I would choose LIGHT colors for the playground equipment and surfaces, especially for parts that children touch directly like slides, handrails, and seats. Our model showed that light-colored surfaces have lower Heat Absorption, which means lower Surface Temperature and higher Comfort Level. I would use white or very light colors for metal surfaces since metal conducts heat quickly. For the ground surface, I would choose light gray or tan instead of black asphalt. I might also add shade structures over the equipment since reducing Sunlight Intensity also reduces Heat Absorption.")
+    ],
+    "stem_intro": "Present the challenge: A school in Phoenix, Arizona has a serious problem. Their black asphalt parking lot and dark-colored playground equipment get dangerously hot in the summer — students have gotten burns from the slide, and teachers' car steering wheels are too hot to touch. The principal has hired your engineering team to redesign the outdoor surfaces. Test different colors, recommend the best options, and explain your reasoning using model evidence!",
+    "stem_concepts": [
+        ("Color Determines Absorption", "The darkness or lightness of a surface directly controls how much sunlight energy it captures. Black surfaces absorb about 95% of light energy, while white surfaces absorb only about 20%. This single factor can make a 40+ degree difference in surface temperature."),
+        ("Light Energy Becomes Heat Energy", "When a surface absorbs sunlight, it does not just 'get hot' — light energy physically transforms into thermal energy. This is energy transfer in action. The absorbed energy increases the vibration of molecules in the surface material, which we measure as temperature."),
+        ("Design Choices Have Consequences", "Every color choice in building design affects comfort and energy use. Dark buildings need more air conditioning. Dark roads increase urban temperatures. Understanding the science behind color and heat allows engineers to make smarter choices.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Student tests 3+ colors, accurately measures temperature differences, recommends optimal colors with clear model evidence, and explains the science of absorption vs. reflection"),
+        ("Proficient (3)", "Student tests 2+ colors, records temperature data, recommends lighter colors with general reasoning about heat absorption"),
+        ("Developing (2)", "Student tests colors but measurements are inconsistent, recommendation is correct but reasoning is vague"),
+        ("Beginning (1)", "Student identifies that light colors are cooler but cannot explain why or provide evidence from testing")
+    ],
+    "support": [
+        "Provide pre-cut colored paper squares (black, dark blue, red, yellow, white) so students can focus on testing rather than preparation",
+        "Use an infrared thermometer for instant temperature readings. If unavailable, place a regular thermometer on each surface and wait 5 minutes.",
+        "Sentence frames: 'When Sunlight Intensity increases, Heat Absorption __ because __. When Surface Color is dark, Surface Temperature __ which makes Comfort Level __.'"
+    ],
+    "extensions": [
+        "Research the 'urban heat island' effect and create a poster showing how cities can reduce temperatures by changing surface colors",
+        "Test whether the material matters by comparing black paper, black metal, and black fabric at the same temperature — do they all feel the same?",
+        "Design an experiment to find the exact color (shade of gray) where surfaces become uncomfortably hot in your local sun conditions"
+    ],
+    "cross_curr": [
+        ("Math", "Measure the temperature of 5 different colored surfaces every 5 minutes for 30 minutes. Create a line graph showing how each color's temperature changes over time and calculate the difference between the hottest and coolest surfaces."),
+        ("ELA", "Write a persuasive letter to your school principal recommending changes to the school's outdoor surfaces to keep students cooler and safer, using evidence from your model and experiments."),
+        ("Social Studies", "Research how traditional architecture in hot climates (white buildings in Greece, light-colored adobe in the American Southwest, reflective rooftops in the Middle East) uses color to stay cool without air conditioning.")
+    ],
+    "misconceptions": [
+        ("Black objects are hotter because black is a 'hot color'", "Black is not inherently hot — it ABSORBS more light energy. A black surface in a completely dark room is the same temperature as a white surface. The difference only appears when light energy hits the surfaces. Black absorbs about 95% of incoming light, while white reflects about 80%. The absorbed light energy converts to thermal energy (heat). Remove the light source and the temperature difference disappears.", "Put identical black and white paper in a dark closet for 10 minutes. Measure both — they are the same temperature! Now put both in the sun for 10 minutes. The black paper is hotter. The difference is the SUNLIGHT, not the color itself."),
+        ("White surfaces do not absorb any heat at all", "White surfaces DO absorb some light energy — typically about 20% of incoming sunlight. They are cooler than black surfaces, but they are not perfectly reflective. Only a perfect mirror would reflect 100% of light. White surfaces still warm up in the sun, just much less than dark ones. In very strong sunlight, even white surfaces can get uncomfortably warm.", "Measure a white surface after 30 minutes in strong sun — it IS warmer than it was in the shade, proving it absorbs some energy. Compare it to aluminum foil, which reflects even more light and stays even cooler."),
+        ("The color of a surface does not matter if it is in the shade", "This is actually MOSTLY true, which is why it is a useful misconception to address. In shade, there is very little direct sunlight to absorb, so color differences in temperature nearly disappear. This shows that the heat difference between dark and light surfaces is caused by SUNLIGHT, not by the colors themselves. However, some indirect light still reaches shaded surfaces, so a small temperature difference may remain.", "Test dark and light surfaces both in shade and in sun. In shade, they are nearly the same temperature. In sun, the dark surface is much hotter. This proves the color difference depends on LIGHT ENERGY hitting the surface.")
+    ]
+}
+
+L09 = {
+    "id": "G04L2-L09",
+    "title": "Can You Hear a Tsunami Coming?",
+    "subtitle": "How Early Detection Systems Save Lives from Giant Waves",
+    "ngss": "4-PS4-3, 4-ESS3-2",
+    "ngss_desc": "Generate and compare multiple solutions that use patterns to transfer information. Generate and compare multiple solutions to reduce the impacts of natural Earth processes on humans.",
+    "big_question": "If a massive earthquake creates a tsunami far out at sea, how do warning systems detect it in time to save people onshore?",
+    "objectives": [
+        "Explain how wave energy from an earthquake creates detectable signals that travel through the ocean",
+        "Model how wave energy, distance from shore, detection time, warning speed, and evacuation success interact in a system",
+        "Describe how early detection and fast warnings give people more time to evacuate to safety",
+        "Use evidence from a model to explain why some communities survive tsunamis better than others"
+    ],
+    "vocabulary": [
+        ("Tsunami", "A series of giant ocean waves caused by earthquakes, volcanic eruptions, or underwater landslides that can flood coastal areas"),
+        ("Wave Energy", "The power carried by ocean waves. Bigger earthquakes create waves with more energy that travel faster and hit harder"),
+        ("Detection", "Sensing or discovering something. Tsunami detection uses special ocean sensors that notice changes in water pressure caused by passing waves"),
+        ("Evacuation", "Moving people away from a dangerous area to a safe location before the danger arrives"),
+        ("Warning System", "A network of sensors, computers, and communication tools that detects a tsunami and alerts people to evacuate")
+    ],
+    "components": [
+        ("Wave Energy", "How powerful the tsunami waves are, determined by the strength of the earthquake or event that created them. More energy means bigger, faster, more destructive waves", True),
+        ("Distance from Shore", "How far away the tsunami starts from the coastline. Greater distance gives more time for detection and warning before waves arrive", True),
+        ("Detection Time", "How quickly ocean sensors detect the tsunami waves after the earthquake occurs. Faster detection means earlier warnings", False),
+        ("Warning Speed", "How fast the warning message reaches people in coastal areas after the tsunami is detected. Faster warnings give people more time to evacuate", False),
+        ("Evacuation Success", "How many people successfully reach safe higher ground before the tsunami waves arrive. Depends on how much time the warning provides", False)
+    ],
+    "think_about_it": "When Wave Energy increases, what happens to Detection Time? When Distance from Shore is greater, what happens to Warning Speed, and how does that affect Evacuation Success?",
+    "scenarios": [
+        ("Far Tsunami, High Energy", "Set Wave Energy to 80% and Distance from Shore to 80%. The tsunami is powerful but starts far away"),
+        ("Close Tsunami, High Energy", "Set Wave Energy to 80% and Distance from Shore to 20%. The tsunami is powerful AND close to shore"),
+        ("Far Tsunami, Low Energy", "Set Wave Energy to 20% and Distance from Shore to 80%. A smaller tsunami from far away"),
+        ("Close Tsunami, Low Energy", "Set Wave Energy to 20% and Distance from Shore to 20%. A smaller tsunami very close to shore")
+    ],
+    "sim_scenarios": [
+        ("Far Tsunami, High Energy", "Wave Energy at 80%, Distance from Shore at 80%", "What do you predict will happen to Evacuation Success when a powerful tsunami starts far away? Is there enough time to warn people?"),
+        ("Close Tsunami, High Energy", "Wave Energy at 80%, Distance from Shore at 20%", "What happens when a powerful tsunami starts close to shore? Will the warning system have enough time?"),
+        ("Far Tsunami, Low Energy", "Wave Energy at 20%, Distance from Shore at 80%", "Is a small, far-away tsunami still dangerous? How does lower energy affect detection?"),
+        ("Close Tsunami, Low Energy", "Wave Energy at 20%, Distance from Shore at 20%", "Which is more dangerous: a weak close tsunami or a strong far tsunami?")
+    ],
+    "discoveries": [
+        "Greater distance from shore gives warning systems MORE time to detect the tsunami and alert people, which increases evacuation success",
+        "Higher wave energy makes the tsunami easier to detect (bigger signals for sensors) but also more destructive, which works AGAINST evacuation success",
+        "The most dangerous scenario is high wave energy with short distance — the waves arrive before people can evacuate",
+        "Warning speed is critical: even with early detection, slow communication means people do not get the message in time to reach safety"
+    ],
+    "answer": "You CAN detect a tsunami coming, but TIME is everything! When an earthquake happens under the ocean, it creates powerful waves that travel outward. Special sensors on the ocean floor detect changes in water pressure as the waves pass over them. Computers analyze the data and send warnings to coastal communities. If the tsunami starts FAR from shore, there may be hours of warning time, and most people can evacuate successfully. But if the earthquake happens CLOSE to shore, the waves arrive in minutes, and there may not be enough time to warn everyone. That is why distance matters so much, and why coastal communities practice evacuation drills. Fast detection plus fast warnings plus practiced evacuations equals the best chance of survival!",
+    "stem_title": "Design a Tsunami Warning System",
+    "stem_mission": "Design a warning system that gives a coastal town the maximum amount of time to evacuate before tsunami waves arrive.",
+    "stem_scenario": "A coastal town in the Pacific has experienced two tsunamis in the past 20 years. The first tsunami started 500 miles away and killed no one because there was plenty of warning time. The second started just 50 miles offshore and killed 200 people because the warning came too late. The town council has hired your engineering team to design a better warning system that can save lives even when tsunamis start close to shore. Consider detection speed, communication methods, and evacuation routes.",
+    "stem_questions": [
+        "How can you make detection faster so there is more warning time even for close tsunamis?",
+        "What is the fastest way to get a warning message to every person in a coastal town?",
+        "If you only have 10 minutes of warning, how would you design evacuation routes to get everyone to high ground?"
+    ],
+    "stem_design_qs": [
+        "Where would you place ocean sensors for the earliest possible detection of nearby earthquakes?",
+        "What communication methods would you use to reach everyone quickly (sirens, phone alerts, radio)?",
+        "How would you design evacuation routes so they do not get jammed with people all trying to leave at once?",
+        "What could you build in the town (vertical evacuation towers, elevated shelters) for people who cannot reach high ground in time?"
+    ],
+    "career": "Emergency Management Specialists design disaster warning systems and evacuation plans that save lives. They work with scientists, engineers, and government agencies to prepare communities for natural disasters like tsunamis, earthquakes, and hurricanes. They earn $55,000-$95,000/year.",
+    "images": {
+        "cover": ("cover-tsunami-warning.png", "A dramatic image of a tsunami early warning buoy floating in deep blue ocean water with a distant coastline visible on the horizon, moody sky with breaking clouds, cinematic ocean photography with strong composition"),
+        "landscape": ("landscape-tsunami-warning.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with an Asian American girl and a Black boy leading the group, studying a large wall map showing tsunami wave patterns across the Pacific Ocean, bright modern classroom, genuinely diverse group including White, Latino, Asian, and Black students"),
+        "modeling": ("modeling-tsunami-warning.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a Latino boy taking the lead at the laptop, building a digital tsunami warning system model on screen, modern classroom with ocean science posters, balanced diversity with varied hairstyles and features"),
+        "discussion": ("discussion-tsunami-warning.png", "A photorealistic image of a Black female teacher leading a discussion with diverse 4th graders (9-10 years old) about how tsunami warning systems work, using a diagram showing sensors in the ocean connected to warning centers, students engaged, balanced diversity"),
+        "stem": ("stem-tsunami-warning.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a White girl and an Asian American boy working together in the foreground, building a model coastal town with evacuation routes marked in tape on a large poster board, excited collaborative group work, balanced diversity")
+    },
+    "pre_assessment": [
+        "What do you know about tsunamis? What causes them and what happens when they reach shore?",
+        "How do you think scientists know a tsunami is coming before it arrives at the beach?",
+        "Draw what you think happens in the ocean between an earthquake and a tsunami hitting the coast.",
+        "Why do you think some coastal towns survive tsunamis with few deaths while others have many deaths?"
+    ],
+    "extend_components": [
+        ("Coastal Shape", "Whether the coastline is a flat beach, a bay, or a harbor. Some shapes funnel wave energy and make tsunamis worse, while others spread the energy out"),
+        ("Population Density", "How many people live in the coastal area. More people means more people need to evacuate and more chances for traffic jams and confusion"),
+        ("Evacuation Practice", "How often the community practices tsunami drills. Communities that practice regularly evacuate faster and more successfully")
+    ],
+    "reflections": [
+        "Why is distance from shore such an important factor in tsunami survival?",
+        "If you cannot control how strong a tsunami is, what CAN you control to save more lives?",
+        "How is a tsunami warning system similar to a fire alarm in your school?",
+        "What would you tell a friend who lives near the ocean about tsunami safety?",
+        "How did your model help you understand why some tsunami events are more deadly than others?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models / Designing Solutions", "Students develop a five-component model of tsunami detection and warning, then design solutions to maximize evacuation success given constraints of distance and wave energy."),
+        ("Disciplinary Core Idea", "PS4.C Information Technologies and Instrumentation / ESS3.B Natural Hazards", "Patterns in waves can be used to transfer information through detection systems. Natural hazards like tsunamis can be reduced through engineering solutions and warning systems."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal chains from earthquake to wave energy to detection to warning to evacuation, understanding how each link affects the final outcome of human safety.")
+    ],
+    "cast_items": [
+        "Explain how tsunami waves carry energy from an earthquake to a coastline",
+        "Use a model to describe how detection time and warning speed affect evacuation success",
+        "Design a solution that maximizes warning time for a coastal community"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "Two coastal towns experience the same tsunami. Town A is 400 miles from the earthquake and has a warning siren system. Town B is 40 miles from the earthquake and has the same system. Town A evacuates successfully but Town B has many casualties. Which best explains the difference?"),
+        ("Constructed Response:", "A new coastal town is being built in a tsunami-risk area. Using what you know about wave energy, detection, and warning systems, write a plan for keeping residents safe. Use the words 'detection time,' 'warning speed,' and 'evacuation success' in your answer.")
+    ],
+    "background_intro": "Tsunamis are among the most destructive natural disasters on Earth, but they are also among the most predictable and survivable — IF communities have proper warning systems. The 2004 Indian Ocean tsunami killed over 230,000 people partly because there was no warning system in place. Since then, the world has invested billions in detection technology and warning networks that have saved countless lives.",
+    "background_sections": [
+        ("How Tsunamis Form", "Tsunamis begin when a massive disturbance displaces ocean water — usually an underwater earthquake, but also volcanic eruptions or landslides. The displaced water creates waves that radiate outward in all directions, similar to ripples from dropping a stone in a pond but on an enormous scale. In deep ocean, tsunami waves travel at speeds up to 500 mph (as fast as a jet airplane!) but are only about 1 to 3 feet tall, making them nearly invisible. As the waves approach shallow coastal water, they slow down and compress, growing into walls of water 30 to 100 feet tall."),
+        ("How Detection Works", "The Pacific Tsunami Warning System uses a network of ocean-floor sensors called DART buoys (Deep-ocean Assessment and Reporting of Tsunamis). These sensors sit on the ocean floor and measure water pressure. When a tsunami wave passes overhead, the increased water pressure triggers the sensor, which sends data to a surface buoy via acoustic signal. The surface buoy transmits the data to a satellite, which relays it to warning centers. Seismographs also detect the earthquakes that cause tsunamis, providing the first alert within minutes."),
+        ("The Race Against Time", "After detection, the warning must reach people fast enough for them to evacuate. Modern systems use multiple channels: outdoor sirens, emergency phone alerts, radio and TV broadcasts, and even social media. The challenge is that tsunamis from nearby earthquakes may arrive in as little as 10 to 30 minutes, while warnings take time to generate and distribute. This is why coastal communities conduct regular evacuation drills — when a real warning comes, everyone must already know where to go and how to get there without hesitation."),
+        ("Engineering Solutions for Close Tsunamis", "For tsunamis that originate close to shore, traditional warning systems may not provide enough time. Engineers have developed several solutions: vertical evacuation structures (tall, reinforced buildings or towers that people can climb above the wave height), earthquake-triggered automatic sirens (that sound immediately when a large earthquake is detected without waiting for wave confirmation), tsunami walls and barriers (sea walls designed to absorb or redirect wave energy), and natural barriers (mangrove forests and coral reefs that slow wave energy). Japan, which experiences frequent tsunamis, has invested heavily in all of these approaches.")
+    ],
+    "lever_L": "Students identify Wave Energy and Distance from Shore as external components (natural conditions the system cannot control) and Detection Time, Warning Speed, and Evacuation Success as internal components that respond to the external conditions and to each other.",
+    "lever_E": "Students determine that Wave Energy positively affects Detection Time (bigger waves are easier to detect), Distance from Shore positively affects Warning Speed (more distance means more time to communicate), Warning Speed positively affects Evacuation Success, Wave Energy negatively affects Evacuation Success (more powerful waves are harder to survive), and Detection Time positively affects Warning Speed.",
+    "lever_V": "Students build a five-component model showing how earthquake energy creates detectable waves, distance provides warning time, and the chain from detection to warning to evacuation determines whether people survive.",
+    "lever_Ev": "Students run four scenarios (far/strong, close/strong, far/weak, close/weak) to observe how the combination of wave energy and distance determines whether a warning system can save people.",
+    "lever_R": "Students add coastal shape, population density, or evacuation practice to explore why some communities are better prepared than others and why engineering solutions are needed for close-source tsunamis.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with tsunami detection buoy in the ocean", "say": "Imagine you live near the ocean and an earthquake just happened far away. A giant wave is coming. How would you even KNOW it is coming?", "do": "Show a brief video clip of a tsunami warning siren sounding. Ask: What would you do if you heard this? How much time do you think you would have?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary with tsunami and warning system terms", "say": "Today we are modeling something that saves real lives every year — tsunami warning systems. We are going to figure out what makes the difference between survival and disaster.", "do": "Have students read objectives aloud. Pre-teach 'detection' and 'evacuation' with simple examples (smoke detector detects fire, fire drill practices evacuation).", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Map showing earthquake epicenter and coastal town with distance marked", "say": "The earthquake happens HERE, under the ocean. The town is HERE, on the coast. The wave is coming. Can the warning system alert people in time?", "do": "Turn and talk: What do you think matters more — how strong the tsunami is or how far away it starts? Write predictions.", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps with five components previewed", "say": "We have two things nature controls — how strong the wave is and how far away it starts. Then three things that determine if people survive.", "do": "Preview all five components. Ask: Which component do you think is most important for saving lives?", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Five component cards for tsunami warning system", "say": "Wave Energy and Distance from Shore are external — nature decides these. Detection Time, Warning Speed, and Evacuation Success are the internal responses.", "do": "Guide component sorting. Discuss why we cannot control earthquakes or distance, but we CAN engineer better detection, faster warnings, and practiced evacuations.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows with + and - connections", "say": "Here is the tricky part: Wave Energy has BOTH a positive and negative effect. It makes detection EASIER but also makes survival HARDER. Distance helps everything.", "do": "Map relationships. Emphasize the competing effects of wave energy — easier to detect but harder to survive.", "time": "10 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Dashboard showing detection time, warning speed, and evacuation rates", "say": "Watch what happens to evacuation success in each scenario. The close, powerful tsunami is terrifying — look at how little time people have.", "do": "Run all four scenarios. Focus on comparing far/strong vs. close/strong — same wave energy, dramatically different outcomes.", "time": "12 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings with timeline showing detection to evacuation", "say": "Distance is the biggest gift a warning system has. More distance means more time, and more time means more lives saved.", "do": "Create a class timeline: earthquake happens (0 min), sensors detect (2 min), warning sent (5 min), sirens sound (7 min), evacuation (7-60 min). How much time does each scenario give?", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Coastal town warning system design challenge", "say": "Design the ultimate tsunami warning system for a town that faces BOTH far-away and nearby tsunami threats. How do you save lives when you might only have 10 minutes?", "do": "Groups design warning systems on poster boards — include sensor placement, communication methods, evacuation routes, and vertical evacuation structures for close tsunamis.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Wave Energy is external because it is determined by the earthquake's magnitude and location — the warning system cannot control how powerful the tsunami is. Distance from Shore is external because it depends on where the earthquake occurs relative to the coast — also uncontrollable. Detection Time, Warning Speed, and Evacuation Success are internal because they are outcomes that depend on the external conditions and on the engineering of the warning system.",
+    "relationships": [
+        ("Wave Energy to Detection Time", "POSITIVE (+)", "Bigger, more energetic tsunami waves create stronger pressure signals on ocean-floor sensors, making them easier and faster to detect. A magnitude 9.0 earthquake creates unmistakable signals that sensors pick up almost instantly, while a smaller event might take longer to confirm."),
+        ("Distance from Shore to Warning Speed", "POSITIVE (+)", "Greater distance between the tsunami's origin and the coast provides more time for the entire warning chain — detection, analysis, alert generation, and communication to the public. A tsunami 1,000 miles away gives hours of warning; one 50 miles away gives minutes."),
+        ("Warning Speed to Evacuation Success", "POSITIVE (+)", "Faster warnings give people more time to reach safe ground. Every additional minute of warning time means more people can evacuate. Studies show that each 10-minute increase in warning time can increase survival rates by significant percentages."),
+        ("Wave Energy to Evacuation Success", "NEGATIVE (-)", "More powerful tsunamis are harder to survive even with warning. Higher waves flood larger areas, reach farther inland, and are more destructive. People need to evacuate farther and higher to escape a powerful tsunami compared to a weaker one."),
+        ("Detection Time to Warning Speed", "POSITIVE (+)", "Faster detection feeds directly into faster warnings. If sensors detect the tsunami within 2 minutes instead of 10 minutes, the warning system gains 8 additional minutes to alert the public and begin evacuations.")
+    ],
+    "sim_answers": [
+        ("Far Tsunami, High Energy", "With Wave Energy at 80% and Distance at 80%, Detection Time is fast because the powerful waves create strong sensor signals. The large distance provides ample time for warnings to reach the population. Warning Speed is high and Evacuation Success is strong — most people reach safety because there is plenty of warning time despite the powerful waves."),
+        ("Close Tsunami, High Energy", "With Wave Energy at 80% and Distance at 20%, Detection Time is still fast (strong signals), but the extremely short distance means waves arrive before the warning chain can complete. Warning Speed is critically low and Evacuation Success drops dramatically — this is the most dangerous scenario, where even good detection cannot overcome the lack of time.")
+    ],
+    "reflection_exemplars": [
+        ("Why is distance the most important factor for tsunami survival?", "Distance is the most important factor because it determines HOW MUCH TIME the warning system has to work. Our model showed that Distance from Shore has a positive relationship with Warning Speed — more distance means more time between detection and wave arrival. Even the best detection system is useless if the wave arrives in 5 minutes but evacuation takes 15 minutes. A far-away tsunami gives the system time to detect, analyze, warn, and evacuate. A close tsunami collapses that entire timeline into minutes, making survival depend on immediate response rather than organized evacuation."),
+        ("How could you improve evacuation success for close tsunamis?", "For close tsunamis where distance is small and warning time is limited, I would focus on making EVERY SECOND count. First, I would use earthquake-triggered automatic sirens that sound IMMEDIATELY when a large earthquake is detected, without waiting for wave confirmation — because for close tsunamis, the earthquake IS the warning. Second, I would build vertical evacuation towers throughout the town so people only need to go UP instead of traveling miles inland. Third, I would conduct monthly evacuation drills so everyone knows exactly where to go without thinking. Our model showed that Warning Speed positively affects Evacuation Success, so making the warning instant and the evacuation path short is the key.")
+    ],
+    "stem_intro": "Present the challenge: A coastal town in the Pacific has experienced two tsunamis in 20 years. The first started 500 miles away and killed no one because of ample warning time. The second started 50 miles away and killed 200 people because warnings arrived too late. Your engineering team must design a comprehensive warning system that can save lives for BOTH far-away and close tsunamis. Include sensor placement, communication methods, evacuation routes, and structures for when there is not enough time to run!",
+    "stem_concepts": [
+        ("Detection Is the First Link", "Everything depends on detecting the tsunami as early as possible. Ocean sensors, seismographs, and even GPS-based systems all contribute to faster detection. The faster you know a tsunami is coming, the more time you have to save lives."),
+        ("Communication Speed Saves Lives", "Detection is useless if the warning does not reach people. Multiple redundant communication methods (sirens, phone alerts, radio) ensure that everyone gets the message. Automatic systems that trigger without human decision-making are fastest."),
+        ("Distance Cannot Be Changed, But Preparedness Can", "We cannot move towns farther from earthquakes, but we can build vertical evacuation structures, practice drills, and design communities with tsunami escape in mind. Engineering compensates for what nature does not provide.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Design includes sensor placement, multiple communication methods, evacuation routes AND vertical evacuation structures for close tsunamis, with clear model evidence explaining each choice"),
+        ("Proficient (3)", "Design includes detection, communication, and evacuation elements with general reasoning about time and distance"),
+        ("Developing (2)", "Design addresses warning and evacuation but misses one key element (detection, communication, or close-tsunami solution)"),
+        ("Beginning (1)", "Design is incomplete or does not address the close-tsunami challenge")
+    ],
+    "support": [
+        "Provide a simple map template of a coastal town with ocean, beach, flat area, and hills marked so students can draw sensor locations and evacuation routes",
+        "Use a stopwatch demonstration: start timing when 'earthquake' happens and call out 'waves arrive!' at different times (2 min for close, 20 min for far) so students feel the time pressure",
+        "Sentence frames: 'When Wave Energy increases, Detection Time __ because __. When Distance from Shore increases, Warning Speed __ which makes Evacuation Success __.'"
+    ],
+    "extensions": [
+        "Research the 2004 Indian Ocean tsunami and the 2011 Japan tsunami. Compare the warning systems available in each case and how that affected the death toll",
+        "Design a vertical evacuation tower for your school — how tall would it need to be, how many people could it hold, and how fast could everyone get to the top?",
+        "Create a tsunami preparedness brochure for a fictional coastal town, including what to do before, during, and after a tsunami warning"
+    ],
+    "cross_curr": [
+        ("Math", "If a tsunami travels at 500 mph and the coastline is 200 miles away, calculate how many minutes people have to evacuate. Repeat for distances of 50, 100, and 500 miles. Create a table showing distance vs. evacuation time."),
+        ("ELA", "Write a narrative from the perspective of a DART buoy sensor detecting a tsunami — describe what you sense, how you send the signal, and the race to warn people before the waves arrive."),
+        ("Social Studies", "Research how Japan has prepared for tsunamis compared to other countries. What engineering solutions, education programs, and cultural practices help the Japanese survive tsunamis that devastate other nations?")
+    ],
+    "misconceptions": [
+        ("Tsunamis are just really big waves like surfing waves", "Tsunamis are fundamentally different from wind-generated ocean waves. Regular waves are created by wind at the surface and only move the top layer of water. Tsunamis are caused by the displacement of the ENTIRE water column from the ocean floor to the surface. A regular wave might contain thousands of gallons of water. A tsunami contains BILLIONS of gallons pushing forward as a massive wall of water that does not just crash on shore — it floods inland for miles, carrying debris, and then rushes back out with equal force.", "Fill a baking pan with water. Blow across the surface to make 'wind waves' — notice only the surface moves. Now push the bottom of the pan up sharply to simulate an earthquake — the ENTIRE body of water surges forward. That is the difference."),
+        ("If you can see the tsunami wave coming, you still have time to run", "By the time you can see a tsunami wave approaching the shore, it is usually too late to escape on foot. Tsunami waves travel at 20 to 30 mph near shore — faster than any person can run. The wave may appear as a wall of water 30 to 100 feet tall moving faster than a car in a school zone. Additionally, the first sign of a tsunami is often the water pulling BACK from shore (exposing the sea floor), which happens just minutes before the wave arrives. That is why warning systems and pre-planned evacuations are essential.", "Walk at normal speed for 30 seconds and mark the distance. Explain that a tsunami wave covers that same distance in about 3 seconds. You simply cannot outrun it. That is why we need EARLY warning — minutes and hours of advance notice, not seconds."),
+        ("Tsunamis only happen in the Pacific Ocean", "While the Pacific Ocean has the most tsunami activity due to the Ring of Fire (a zone of frequent earthquakes), tsunamis can occur in ANY body of water. The 2004 Indian Ocean tsunami killed over 230,000 people. The Mediterranean Sea, Caribbean Sea, and even large lakes have experienced tsunamis. Any body of water near a fault line, volcano, or steep underwater slope can generate a tsunami.", "Show a world map of historical tsunami locations — students are often surprised to see events in the Mediterranean, Caribbean, Atlantic, and even the Great Lakes region (where underwater landslides have caused smaller tsunamis).")
+    ]
+}
+
+L10 = {
+    "id": "G04L2-L10",
+    "title": "Why Does Your Bike Rust?",
+    "subtitle": "How Water and Oxygen Change Metal Over Time",
+    "ngss": "4-PS1-2, 4-ETS1-1",
+    "ngss_desc": "Measure and graph quantities to provide evidence that when substances are mixed, new substances may be produced. Define a simple design problem reflecting a need or want that includes specified criteria for success and constraints on materials, time, or cost.",
+    "big_question": "If your bike is made of strong metal, why does leaving it outside in the rain turn that strong metal into crumbly, reddish-brown rust?",
+    "objectives": [
+        "Explain how water and oxygen interact with metal surfaces to create a new substance called rust",
+        "Model how water exposure, oxygen level, oxidation rate, rust formation, and metal strength interact in a system",
+        "Describe how rust is a chemical change that creates a new, weaker substance from the original strong metal",
+        "Use evidence from a model to explain why protecting metal from water and oxygen prevents rust"
+    ],
+    "vocabulary": [
+        ("Oxidation", "A chemical reaction where oxygen combines with another substance. When oxygen combines with iron, it creates iron oxide, which we call rust"),
+        ("Rust", "The reddish-brown, flaky substance that forms when iron or steel reacts with water and oxygen. Its scientific name is iron oxide"),
+        ("Chemical Change", "A change that creates an entirely new substance with different properties. Rusting turns strong, shiny metal into weak, crumbly rust — you cannot 'un-rust' it"),
+        ("Corrosion", "The gradual destruction of metal caused by chemical reactions with its environment, especially water and oxygen"),
+        ("Protective Coating", "A layer applied to metal surfaces — like paint, oil, or chrome plating — that blocks water and oxygen from reaching the metal")
+    ],
+    "components": [
+        ("Water Exposure", "How much water comes into contact with the metal surface, from rain, humidity, splashing, or being submerged. More water means more opportunity for rust to form", True),
+        ("Oxygen Level", "How much oxygen is available to react with the metal. Air is about 21% oxygen, and water contains dissolved oxygen too", True),
+        ("Oxidation Rate", "How quickly the chemical reaction between iron, water, and oxygen occurs. Higher water and oxygen levels speed up this reaction", False),
+        ("Rust Formation", "How much iron oxide (rust) has formed on the metal surface. Rust is a new substance that is weaker and flakier than the original metal", False),
+        ("Metal Strength", "How strong and structurally sound the metal remains. As rust replaces solid metal, the object becomes weaker and can eventually break", False)
+    ],
+    "think_about_it": "When Water Exposure increases, what happens to Oxidation Rate? When Oxidation Rate increases, what happens to Rust Formation, and how does that affect Metal Strength?",
+    "scenarios": [
+        ("Rainy and Open Air", "Set Water Exposure to 80% and Oxygen Level to 80%. The bike is left outside in frequent rain with plenty of air circulation"),
+        ("Dry and Open Air", "Set Water Exposure to 20% and Oxygen Level to 80%. The bike is stored in a dry garage with open air"),
+        ("Wet but Sealed", "Set Water Exposure to 80% and Oxygen Level to 20%. The bike is wet but coated in a layer that blocks most oxygen"),
+        ("Dry and Sealed", "Set Water Exposure to 20% and Oxygen Level to 20%. The bike is stored dry with a protective coating blocking oxygen")
+    ],
+    "sim_scenarios": [
+        ("Rainy and Open Air", "Water Exposure at 80%, Oxygen Level at 80%", "What do you predict will happen to Rust Formation when there is lots of water AND lots of oxygen?"),
+        ("Dry and Open Air", "Water Exposure at 20%, Oxygen Level at 80%", "Does having less water slow down rusting even when there is plenty of oxygen?"),
+        ("Wet but Sealed", "Water Exposure at 80%, Oxygen Level at 20%", "If the bike is wet but oxygen is blocked, will rust still form quickly?"),
+        ("Dry and Sealed", "Water Exposure at 20%, Oxygen Level at 20%", "What happens when BOTH water and oxygen are reduced? Is the metal safe from rust?")
+    ],
+    "discoveries": [
+        "Rust forms fastest when BOTH water and oxygen levels are high. The chemical reaction needs both ingredients to occur",
+        "Removing EITHER water or oxygen significantly slows rust formation. You do not need to eliminate both — reducing one dramatically helps",
+        "Rust is a NEW SUBSTANCE (iron oxide) that is weaker and flakier than the original metal. This is a chemical change, not just a surface stain",
+        "Protecting metal from water (keeping it dry) or from oxygen (coating it with paint, oil, or chrome) prevents rust by removing one of the necessary ingredients"
+    ],
+    "answer": "Your bike rusts because of a CHEMICAL REACTION between the iron in the metal, water, and oxygen from the air! When water sits on the metal surface, it helps oxygen molecules react with iron atoms. This reaction creates a completely new substance called iron oxide — what we call RUST. Rust is not just a color change — it is a brand new material that is weak, crumbly, and flaky. As more rust forms, it eats deeper into the metal, replacing strong iron with weak rust. Eventually, enough rust can make the metal break! The key is that rusting needs BOTH water AND oxygen. That is why bikes rust faster in rainy places than dry ones, and why painting or oiling metal prevents rust — the coating blocks water and oxygen from reaching the iron.",
+    "stem_title": "Design the Rust-Proof Bike",
+    "stem_mission": "Design a protective system that prevents a steel nail from rusting when exposed to water and air for one week.",
+    "stem_scenario": "A bicycle company has a problem: customers in rainy cities are complaining that their bikes are rusting within months. The company needs your engineering team to test different protective coatings and recommend the best way to keep bikes rust-free. You must test at least three different coatings on steel nails, expose them to water for one week, and present your findings with evidence about which coating works best and why.",
+    "stem_questions": [
+        "Which protective coating prevented the most rust, and why do you think it worked best?",
+        "Did any coating fail? What do you think happened at the molecular level that allowed rust through?",
+        "What coating would you recommend for a bike that will be used in the rain every day, and what evidence supports your choice?"
+    ],
+    "stem_design_qs": [
+        "What coatings will you test (petroleum jelly, nail polish, cooking oil, wax, tape, aluminum foil)?",
+        "How will you make sure your test is fair — same type of nail, same amount of water, same amount of time?",
+        "How will you measure how much rust forms on each nail after one week?",
+        "Will you also test one nail with NO coating as a control to compare against?"
+    ],
+    "career": "Materials Scientists study how different substances behave and develop new materials that resist damage from rust, heat, and wear. They create the coatings, alloys, and composites used in everything from bridges to spacecraft. They earn $75,000-$120,000/year.",
+    "images": {
+        "cover": ("cover-bike-rust.png", "A dramatic close-up of a bicycle chain and gear showing detailed rust formation with reddish-brown flaking texture contrasting with remaining shiny metal, shallow depth of field, moody lighting, cinematic macro photography"),
+        "landscape": ("landscape-bike-rust.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a Black girl and a Latino boy leading the group, examining steel nails in cups of water at their desks and using magnifying glasses to look for rust, bright modern classroom, natural window light, genuinely diverse group including White, Asian, Black, and Latino students"),
+        "modeling": ("modeling-bike-rust.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with a White boy taking the lead at the laptop, building a digital oxidation model on screen showing the chemical process of rusting, modern classroom with science posters about chemical changes, balanced diversity with varied hairstyles"),
+        "discussion": ("discussion-bike-rust.png", "A photorealistic image of a Latino male teacher leading a discussion with diverse 4th graders (9-10 years old) about chemical changes and rust, holding up two nails — one shiny and one heavily rusted — students looking closely with curiosity, balanced diversity"),
+        "stem": ("stem-bike-rust.png", "A photorealistic image of diverse 4th grade students (9-10 years old) with an Asian American girl and a Black boy working together in the foreground, coating steel nails with different materials like petroleum jelly, nail polish, and wax before placing them in cups of water, engaged collaborative work, balanced diversity")
+    },
+    "pre_assessment": [
+        "Have you ever seen rust on a bike, car, or piece of metal? What did it look like?",
+        "What do you think causes metal to rust? What conditions make rust happen?",
+        "Draw what you think is happening to the metal when it turns into rust. Is it just changing color, or is something else happening?",
+        "If you wanted to stop a piece of metal from rusting, what would you do? Why do you think that would work?"
+    ],
+    "extend_components": [
+        ("Salt Presence", "Whether salt is in the water or air. Salt water causes metal to rust much faster than fresh water because salt helps the chemical reaction happen more easily"),
+        ("Temperature", "How warm or cold the environment is. Warmer temperatures speed up chemical reactions, including rusting, while very cold temperatures slow them down"),
+        ("Metal Type", "What kind of metal the object is made from. Iron and steel rust easily, while aluminum, copper, and stainless steel resist corrosion through different chemical properties")
+    ],
+    "reflections": [
+        "Why does a bike left in the rain rust faster than one kept in a dry garage?",
+        "Is rust just a color change, or is something more happening to the metal? How do you know?",
+        "Why do you think painting metal helps prevent rust?",
+        "If rust needs both water and oxygen, would a nail at the bottom of a sealed jar of water rust? Why or why not?",
+        "How did your model help you understand why some conditions cause more rust than others?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models / Planning Investigations", "Students develop a five-component model of the rusting process and plan investigations to test protective coatings, controlling variables and measuring outcomes."),
+        ("Disciplinary Core Idea", "PS1.B Chemical Reactions / ETS1.A Defining and Delimiting Engineering Problems", "When iron is exposed to water and oxygen, a chemical reaction produces a new substance (iron oxide/rust) with different properties. Students define the problem of preventing rust and test solutions."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal relationships between environmental conditions (water, oxygen) and material changes (oxidation, rust, weakening), understanding that chemical reactions produce new substances with different properties.")
+    ],
+    "cast_items": [
+        "Explain how water and oxygen cause a chemical reaction that produces rust on iron surfaces",
+        "Use a model to describe how reducing water exposure or oxygen level slows rust formation",
+        "Design and test a solution that protects metal from rusting by blocking water or oxygen"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A student places four identical steel nails in different conditions: (A) in water with air, (B) in water with no air, (C) dry with air, (D) dry with no air. After two weeks, nail A has the most rust. Which best explains why?"),
+        ("Constructed Response:", "A bridge made of steel is starting to show rust. Using what you know about oxidation, water, and oxygen, explain why the bridge is rusting and recommend two different ways to slow or stop the rusting. Use the words 'chemical reaction,' 'oxidation,' and 'protective coating' in your answer.")
+    ],
+    "background_intro": "Rust is one of the most common and costly chemical reactions in the world. The United States alone spends over 270 billion dollars each year repairing and preventing rust damage to bridges, buildings, vehicles, and infrastructure. Understanding the chemistry of rust helps engineers protect the metal structures that hold up our modern world.",
+    "background_sections": [
+        ("The Chemistry of Rust", "Rust (iron oxide, Fe2O3) forms through a chemical reaction called oxidation. When iron (Fe) atoms on a metal surface come into contact with water (H2O) and oxygen (O2), they undergo a series of reactions. Water acts as a catalyst, helping oxygen molecules reach and react with iron atoms. The iron atoms lose electrons to the oxygen atoms, forming iron oxide — a completely new substance with entirely different properties. The original iron is shiny, strong, and magnetic. Rust is dull, weak, crumbly, and barely magnetic. This is a one-way chemical change — you cannot turn rust back into iron without extreme heat and chemical processing."),
+        ("Why Both Water AND Oxygen Are Needed", "Rusting requires both water and oxygen working together. Oxygen alone reacts with iron very slowly because the oxygen molecules cannot easily penetrate the metal surface. Water dissolves oxygen and carries it to the metal surface, and also conducts the electron transfer that makes the reaction possible. This is why metal in dry air barely rusts, metal underwater with no dissolved oxygen barely rusts, but metal in wet, airy conditions rusts rapidly. Salt accelerates rusting even further because salt water conducts electrons better than fresh water, speeding up the chemical reaction."),
+        ("How We Protect Metal", "Engineers use several strategies to prevent rust, all based on blocking water or oxygen from reaching the iron: Paint creates a physical barrier that water and oxygen cannot penetrate. Oil and grease coat the surface and repel water. Galvanizing (coating iron with zinc) provides a sacrificial layer — the zinc corrodes instead of the iron. Chrome plating creates a shiny, impermeable barrier. Stainless steel is an alloy that includes chromium, which forms its own invisible protective oxide layer. Even keeping metal dry and clean extends its life significantly."),
+        ("Rust in the Real World", "Rust is responsible for bridge collapses, ship sinkings, and building failures throughout history. The Statue of Liberty required a massive 1986 restoration because its internal iron framework had corroded. Ships in saltwater environments rust so quickly that they require constant maintenance — a ship that is not painted and maintained can lose structural integrity within a few years. On the other hand, some ancient iron artifacts have survived thousands of years because they were kept dry. The Iron Pillar of Delhi, India, has resisted rust for over 1,600 years due to its unique chemical composition that forms a natural protective layer.")
+    ],
+    "lever_L": "Students identify Water Exposure and Oxygen Level as external components (environmental conditions) and Oxidation Rate, Rust Formation, and Metal Strength as internal components that respond to the external conditions.",
+    "lever_E": "Students determine that Water Exposure positively affects Oxidation Rate, Oxygen Level positively affects Oxidation Rate, Oxidation Rate positively affects Rust Formation, Rust Formation negatively affects Metal Strength, and Water Exposure positively affects Rust Formation.",
+    "lever_V": "Students build a five-component model showing how water and oxygen drive the oxidation reaction, which produces rust that progressively weakens the metal structure.",
+    "lever_Ev": "Students run four scenarios (wet/air, dry/air, wet/sealed, dry/sealed) to observe how water and oxygen combine to determine rust formation, discovering that removing either ingredient dramatically slows the process.",
+    "lever_R": "Students add salt presence, temperature, or metal type to explore why coastal environments destroy metal faster, why warmer climates accelerate rusting, and why some metals resist corrosion.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Title slide with close-up of rusty bike chain next to shiny new chain", "say": "Look at these two chains. They are made of the exact same metal. But one has been sitting in the rain for months. What happened to it?", "do": "Pass around a rusty nail and a shiny nail (or show close-up photos). Let students feel the difference. Ask: Is the rusty nail just a different color, or has the metal itself changed?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary with oxidation, rust, and chemical change", "say": "Today we are investigating one of the most common chemical reactions on Earth. This reaction costs the country billions of dollars every year!", "do": "Have students read objectives aloud. Pre-teach 'chemical change' by comparing it to physical change (tearing paper vs. burning paper).", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Strong shiny metal transforming into crumbly rust", "say": "Metal is one of the strongest materials we have. So how does rain and air turn it into something you can crumble with your fingers?", "do": "Turn and talk: What do you think rust actually IS? Is it just dirty metal, or is it something completely different? Write predictions.", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps with five components previewed", "say": "We control two environmental factors — how wet the metal is and how much oxygen reaches it. Three things happen as a result.", "do": "Preview all five components. Ask: Do you think water or oxygen is more important for causing rust?", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Five component cards for rusting system", "say": "Water Exposure and Oxygen Level are external — they are environmental conditions. Oxidation Rate, Rust Formation, and Metal Strength are internal — they are what happens to the metal.", "do": "Guide component sorting. Emphasize that Metal Strength is internal because it changes as a RESULT of the rust forming, not as a design choice.", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Relationship arrows with + and - connections", "say": "Both water and oxygen INCREASE oxidation rate. More oxidation means more rust. And here is the important one — more rust means LESS metal strength. The rust is eating the metal!", "do": "Map relationships. Demonstrate with a real example: show how a rusty nail breaks more easily than a shiny nail.", "time": "10 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Four-scenario comparison showing rust levels and metal strength", "say": "Watch what happens in each scenario. The rainy, open-air bike is in trouble. But look at the dry, sealed bike — almost no rust at all!", "do": "Run all four scenarios. Focus on comparing wet/air vs. wet/sealed — same water, but blocking oxygen makes a huge difference.", "time": "12 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Key findings with before/after rust comparison", "say": "Rust is a chemical change — the iron atoms combine with oxygen to form a brand new substance. And you need BOTH water and oxygen for it to happen.", "do": "Quick experiment: put a drop of water on a piece of steel wool. Come back in 20 minutes — students will see rust starting already! Compare to dry steel wool.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Rust prevention coating experiment", "say": "A bike company needs YOUR help! Test different coatings to find the best way to protect metal from rust. You are materials scientists now!", "do": "Distribute materials (steel nails, cups of water, petroleum jelly, nail polish, cooking oil, wax, aluminum foil). Groups coat nails and place in water. Check results after one week.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Water Exposure is external because it is an environmental condition — rain, humidity, and splashing are not controlled by the metal. Oxygen Level is external because the air contains oxygen naturally, and coatings are external choices to block it. Oxidation Rate, Rust Formation, and Metal Strength are internal because they are chemical and physical outcomes determined by the interaction of the metal with its environment.",
+    "relationships": [
+        ("Water Exposure to Oxidation Rate", "POSITIVE (+)", "More water on the metal surface speeds up the oxidation reaction. Water acts as a catalyst, dissolving oxygen and carrying it to the iron atoms, and also conducting the electron transfer needed for the reaction. Wet metal rusts many times faster than dry metal."),
+        ("Oxygen Level to Oxidation Rate", "POSITIVE (+)", "More oxygen available means more oxygen molecules can react with iron atoms. Oxygen is one of the two essential reactants (along with water) for the rusting reaction. Higher oxygen levels provide more fuel for the chemical reaction."),
+        ("Oxidation Rate to Rust Formation", "POSITIVE (+)", "A faster oxidation rate means rust forms more quickly. When the chemical reaction is happening rapidly, iron atoms are being converted to iron oxide at a faster pace, and visible rust appears sooner and accumulates faster."),
+        ("Rust Formation to Metal Strength", "NEGATIVE (-)", "As more rust forms, metal strength decreases. Rust (iron oxide) is weaker, more brittle, and flakier than the original iron. Each layer of rust that forms replaces solid metal with a weak, porous substance. Eventually, enough rust can cause the metal to crumble and break."),
+        ("Water Exposure to Rust Formation", "POSITIVE (+)", "In addition to speeding up the oxidation rate, water directly contributes to rust formation by maintaining the wet conditions that sustain the ongoing chemical reaction. Continuously wet metal forms rust faster than metal that only gets wet occasionally.")
+    ],
+    "sim_answers": [
+        ("Rainy and Open Air", "With Water Exposure at 80% and Oxygen Level at 80%, Oxidation Rate is very high because both ingredients for the rusting reaction are abundant. Rust Formation is rapid and extensive, and Metal Strength decreases significantly. This is the worst-case scenario for a bike left outside in the rain."),
+        ("Dry and Open Air", "With Water Exposure at 20% and Oxygen Level at 80%, Oxidation Rate is low despite abundant oxygen. Without water to carry oxygen to the metal surface and conduct the reaction, rusting happens very slowly. Rust Formation is minimal and Metal Strength remains high. This is why storing bikes in a dry garage protects them.")
+    ],
+    "reflection_exemplars": [
+        ("Why does a bike in the rain rust but a bike in the garage does not?", "A bike in the rain rusts because it has BOTH ingredients needed for the chemical reaction: water from the rain and oxygen from the air. Our model showed that Water Exposure and Oxygen Level both have positive relationships with Oxidation Rate — more of either ingredient speeds up the reaction. In the rain, the metal surface stays wet, allowing water to carry dissolved oxygen to the iron atoms continuously. In a dry garage, even though oxygen is still in the air, there is very little water to carry it to the metal surface. Without water acting as a catalyst, the oxidation reaction is extremely slow. The key insight is that you do not need to remove BOTH — removing just the water is enough to dramatically slow rust."),
+        ("Is rust just the metal changing color, or is it something more?", "Rust is NOT just a color change — it is a completely new substance created by a chemical reaction. When iron atoms react with oxygen and water, they form iron oxide (Fe2O3), which has entirely different properties from the original iron. Iron is strong, shiny, smooth, and magnetic. Rust is weak, dull, rough, crumbly, and barely magnetic. You cannot turn rust back into iron by washing it or polishing it — the chemical change is permanent (without extreme processing). This is what makes rust so destructive: it does not just stain the metal, it REPLACES strong metal with a weak new substance. Our model showed that as Rust Formation increases, Metal Strength decreases because solid iron is literally being converted into crumbly iron oxide.")
+    ],
+    "stem_intro": "Present the challenge: A bicycle company is getting complaints from customers in Seattle (rainy) and Miami (humid and salty). Bikes shipped to these cities are rusting within 6 months, even with basic paint. The company has hired your materials science team to test different protective coatings and recommend the best rust prevention method. You must test at least three coatings on identical steel nails, expose them to water for one week, and present your findings with evidence about which coating works best and why!",
+    "stem_concepts": [
+        ("Rust Is a Chemical Reaction", "Rusting is not just surface damage — it is iron atoms combining with oxygen to form a new, weaker substance. Understanding this chemistry is the key to prevention: block either ingredient (water or oxygen) and the reaction cannot happen."),
+        ("Coatings Create Barriers", "Paint, oil, wax, and chrome plating all work by creating a physical barrier between the metal surface and the water and oxygen in the environment. The most effective coatings are those that create a complete, unbroken seal with no gaps or thin spots."),
+        ("Real Engineers Test and Compare", "Materials scientists do not guess which coating is best — they test multiple options under identical conditions and compare results. Your experiment must be fair: same nails, same water, same time, different coatings only.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Student tests 3+ coatings with a control nail, measures rust accurately, identifies the best coating with clear evidence, and explains WHY it works by blocking water or oxygen from the chemical reaction"),
+        ("Proficient (3)", "Student tests 2+ coatings with a control, observes and records rust differences, and recommends a coating with general reasoning"),
+        ("Developing (2)", "Student tests coatings but measurements are subjective, or control nail is missing, recommendation is reasonable but lacks strong evidence"),
+        ("Beginning (1)", "Student tests fewer than 2 coatings or cannot explain why coatings prevent rust")
+    ],
+    "support": [
+        "Provide pre-assembled rust test kits with labeled cups, nails, and coatings so students can focus on the science rather than setup",
+        "Show a time-lapse video of steel wool rusting in water over 48 hours — the dramatic orange color change makes the chemical reaction visible and engaging",
+        "Sentence frames: 'When Water Exposure increases, Oxidation Rate __ because __. When Rust Formation increases, Metal Strength __ because __.'"
+    ],
+    "extensions": [
+        "Research why the Statue of Liberty needed a massive restoration in 1986 — what role did rust play in damaging the internal iron framework, and how did engineers fix it?",
+        "Test whether salt water causes faster rusting than fresh water by placing identical nails in both for a week and comparing results",
+        "Investigate 'stainless steel' — what makes it different from regular steel, and why does it resist rust? Create a poster explaining the science of this special alloy"
+    ],
+    "cross_curr": [
+        ("Math", "Weigh 5 identical nails before the experiment, then weigh them again after one week of rusting. Calculate the percentage of weight change for each nail and create a bar graph comparing coated vs. uncoated nails."),
+        ("ELA", "Write a product review for the best rust-prevention coating you tested. Include your experimental evidence, explain the science of why it works, and give it a rating out of 5 stars."),
+        ("Social Studies", "Research how rust has affected historical structures around the world — from the Eiffel Tower (repainted every 7 years to prevent rust) to ancient iron tools preserved in dry desert climates. Create a timeline of famous rust-related events.")
+    ],
+    "misconceptions": [
+        ("Rust is just the metal getting dirty or stained", "Rust is NOT dirt or a stain — it is a completely new substance created by a chemical reaction. When iron reacts with oxygen and water, the iron atoms rearrange and combine with oxygen atoms to form iron oxide (Fe2O3). This new substance has entirely different properties: it is weaker, lighter, flakier, and a different color. You cannot wash rust off because it IS the metal — the iron itself has been chemically transformed. This is the difference between a physical change (like getting mud on metal, which you can wash off) and a chemical change (like rusting, which permanently alters the substance).", "Compare washing mud off a nail (physical change — the nail is unchanged underneath) to trying to wash rust off a nail (chemical change — the rust IS the nail now, and underneath is a pit where iron used to be)."),
+        ("All metals rust the same way", "Only iron and iron-containing metals (like steel) form the reddish-brown substance we call rust (iron oxide). Other metals corrode differently: copper turns green (patina/verdigris), aluminum forms a thin invisible oxide layer that actually PROTECTS it from further corrosion, and gold does not corrode at all. Each metal reacts with oxygen and water in its own unique way, producing different substances. 'Rust' specifically refers to iron oxide.", "Show photos of a rusty iron nail, a green copper penny, and a shiny aluminum can. All three have been exposed to air and water, but each reacted differently. Ask: If all metals rusted the same way, why do these look so different?"),
+        ("Putting metal underwater will make it rust fastest because there is more water", "While water is essential for rusting, metal submerged in water with NO dissolved oxygen actually rusts VERY SLOWLY. Remember, rusting needs BOTH water AND oxygen. Deep underwater, there is less dissolved oxygen, so the reaction slows down. The FASTEST rusting happens at the waterline — where metal is exposed to both liquid water AND air at the same time. Ships rust fastest at the waterline for exactly this reason.", "Place one nail fully submerged in water (low oxygen), one half in and half out of water (water + air), and one in damp air only. After a week, the half-submerged nail has the most rust at the waterline where water and air meet.")
+    ]
+}

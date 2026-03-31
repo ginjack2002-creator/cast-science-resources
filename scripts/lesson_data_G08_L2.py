@@ -1211,3 +1211,522 @@ L07 = {
         ("Waves carry matter from one place to another", "Waves carry ENERGY, not matter. The particles in the medium oscillate back and forth but stay in place — they don't travel with the wave. A cork floating on ocean waves bobs up and down but doesn't move toward shore. The wave pattern moves, not the water.", "Watch a wave in a slinky — the coils move back and forth, but they return to their starting position. The PULSE moves down the slinky; the COILS stay put.")
     ]
 }
+
+L08 = {
+    "id": "G08L2-L08",
+    "title": "Why Is Gold So Different from Iron?",
+    "subtitle": "How Atomic Structure Determines the Properties of Every Material",
+    "ngss": "MS-PS1-1, MS-PS1-3",
+    "ngss_desc": "Develop models to describe the atomic composition of simple molecules and extended structures. Gather and make sense of information to describe that synthetic materials come from natural resources and impact society.",
+    "big_question": "Why do two elements made of the same basic particles — protons, neutrons, and electrons — behave so differently?",
+    "objectives": [
+        "Explain how atomic number determines an element's identity and position on the periodic table",
+        "Model how electron configuration affects an element's reactivity and bonding behavior",
+        "Predict material properties like conductivity and reactivity based on atomic structure",
+        "Compare how differences at the atomic level produce dramatically different macroscopic properties"
+    ],
+    "vocabulary": [
+        ("Atomic Number", "The number of protons in an atom's nucleus, which defines the element and its place on the periodic table"),
+        ("Electron Configuration", "The arrangement of electrons in energy levels (shells) around the nucleus, which determines how an element bonds"),
+        ("Reactivity", "How readily an element undergoes chemical reactions — determined by how easily it gains, loses, or shares electrons"),
+        ("Conductivity", "The ability of a material to transmit electrical current or heat, related to how freely electrons move"),
+        ("Material Properties", "Observable characteristics of a substance — such as color, hardness, melting point, and luster — that result from its atomic structure")
+    ],
+    "components": [
+        ("Atomic Number", "The number of protons defining the element — sets identity and electron count", True),
+        ("Electron Configuration", "How electrons are arranged in energy levels — determines bonding and reactivity", True),
+        ("Reactivity", "How readily the element undergoes chemical reactions with other substances", False),
+        ("Conductivity", "How well the element transmits electricity and heat", False),
+        ("Material Properties", "Observable traits like color, luster, hardness, and melting point", False)
+    ],
+    "think_about_it": "Gold has 79 protons and iron has 26. Both are metals, both conduct electricity, but gold barely reacts with anything while iron rusts easily. What about their electron arrangement explains this?",
+    "scenarios": [
+        ("Compare Gold and Iron", "Set Atomic Number to 79 (gold) vs. 26 (iron) and observe differences in Reactivity and Conductivity"),
+        ("Highly Reactive Metal", "Set Electron Configuration to 1 outer electron (like sodium) and observe high Reactivity"),
+        ("Noble Gas Stability", "Set Electron Configuration to a full outer shell (like neon) and observe near-zero Reactivity")
+    ],
+    "sim_scenarios": [
+        ("Gold vs. Iron", "Atomic Number 79 vs. 26", "What do you predict will happen to Reactivity for each element?"),
+        ("Alkali Metal", "1 outer electron configuration", "What do you predict will happen to Reactivity and Conductivity?"),
+        ("Full Outer Shell", "Complete electron shell configuration", "What do you predict will happen to Reactivity?")
+    ],
+    "discoveries": [
+        "Atomic number determines the element's identity — change the proton count and you change the element entirely",
+        "Electron configuration, especially the outermost shell, determines how an element bonds and reacts",
+        "Elements with nearly full or nearly empty outer shells are the most reactive",
+        "Elements with full outer shells (noble gases) are extremely stable and barely react",
+        "Conductivity depends on how freely outer electrons can move — metals with loosely held electrons conduct well"
+    ],
+    "answer": "Gold and iron are so different because their electron configurations produce different reactivities and material properties. Iron has electrons that readily interact with oxygen and water, causing rust. Gold's electrons are held in a configuration that resists chemical reactions — its outer electrons are tightly bound due to relativistic effects from its large nucleus. Both conduct electricity because they are metals with mobile outer electrons, but their chemical behavior is worlds apart because of how those electrons are arranged.",
+    "stem_title": "Design a Material Selection Guide",
+    "stem_mission": "Design an evidence-based guide that recommends the best element or alloy for specific engineering applications, using your model data on atomic properties to justify each recommendation.",
+    "stem_scenario": "An engineering company needs to select materials for three products: electrical wiring, a corrosion-resistant ship hull, and a lightweight aircraft frame. Your team must recommend materials based on conductivity, reactivity, and material properties.",
+    "stem_questions": [
+        "Why is copper used for wiring instead of gold, even though gold conducts well?",
+        "What atomic properties make a material resistant to corrosion?",
+        "How do you balance conductivity, weight, and cost when selecting materials?"
+    ],
+    "stem_design_qs": [
+        "What specific atomic properties does each application require?",
+        "How does reactivity affect the long-term durability of each material?",
+        "What trade-offs exist between conductivity, cost, and corrosion resistance?",
+        "How will you use model evidence to justify each material recommendation?"
+    ],
+    "career": "Materials Scientists and Metallurgical Engineers study how atomic structure determines material properties and design new materials for technology, medicine, and construction. They earn $75,000-$130,000/year.",
+    "images": {
+        "cover": ("cover-gold-vs-iron.png", "A photorealistic dramatic split image showing a gleaming gold bar on one side and a rusty iron chain on the other, with atomic structure diagrams subtly overlaid, cinematic lighting"),
+        "landscape": ("landscape-gold-vs-iron.png", "A photorealistic image of a Black female 8th grade student (age 13-14) examining metal samples with a conductivity tester while diverse classmates record data, modern chemistry lab, natural lighting"),
+        "modeling": ("modeling-gold-vs-iron.png", "A photorealistic image of an Asian male 8th grade student (age 13-14) at a laptop comparing periodic table data for gold and iron, diverse classmates collaborating, modern classroom with periodic table poster"),
+        "discussion": ("discussion-gold-vs-iron.png", "A photorealistic image of a Latino male 8th grade student (age 13-14) pointing at electron configuration diagrams on a whiteboard explaining reactivity differences, diverse engaged classmates, bright modern classroom"),
+        "stem": ("stem-gold-vs-iron.png", "A photorealistic image of a White female 8th grade student (age 13-14) presenting a material selection poster with property comparisons, diverse team supporting, modern classroom setting")
+    },
+    "pre_assessment": [
+        "What makes one element different from another at the atomic level?",
+        "Why do some metals rust easily while others stay shiny for centuries?",
+        "What is an electron, and how might its position in an atom affect the atom's behavior?",
+        "Draw a simple atom and label the protons, neutrons, and electrons. How might adding more protons change the element?"
+    ],
+    "extend_components": [
+        ("Melting Point", "The temperature at which a solid becomes a liquid — related to the strength of bonds between atoms"),
+        ("Electronegativity", "How strongly an atom attracts electrons in a chemical bond — affects bonding type and reactivity"),
+        ("Density", "Mass per unit volume — heavier atoms and tighter packing increase density")
+    ],
+    "reflections": [
+        "Why is gold so valued throughout human history — is it just appearance, or do its atomic properties play a role?",
+        "How does the periodic table organize elements by atomic structure, and what patterns emerge?",
+        "Why are noble gases so unreactive while alkali metals are so reactive?",
+        "How does understanding electron configuration help engineers choose materials for specific jobs?",
+        "If you could design a new element with custom properties, what electron configuration would you choose and why?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model relating atomic number and electron configuration to macroscopic material properties like reactivity and conductivity."),
+        ("Disciplinary Core Idea", "PS1.A Structure and Properties of Matter", "Each pure substance has characteristic physical and chemical properties that can be used to identify it. Substances are made from different types of atoms, which combine in various ways."),
+        ("Crosscutting Concept", "Structure and Function", "Students connect the invisible structure of atoms (electron configuration) to the visible function and behavior of materials (conductivity, reactivity, material properties).")
+    ],
+    "cast_items": [
+        "Develop models describing atomic composition and how it relates to material properties",
+        "Gather and interpret information about how atomic structure determines element behavior",
+        "Use evidence from the periodic table to predict properties of unfamiliar elements"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "Element X has 11 protons and 1 electron in its outermost shell. Element Y has 18 protons and a completely full outermost shell. Which element is more likely to react violently with water, and why?"),
+        ("Constructed Response:", "Using evidence from your model, explain why gold (atomic number 79) resists corrosion while iron (atomic number 26) rusts easily. Include the role of electron configuration in your explanation.")
+    ],
+    "background_intro": "The periodic table organizes all known elements by their atomic structure, revealing patterns in properties that scientists have used for over 150 years. Understanding why gold resists corrosion while iron rusts, or why copper conducts electricity better than wood, requires looking at the atomic level — specifically at how electrons are arranged.",
+    "background_sections": [
+        ("Atomic Number and Identity", "Every element is defined by its atomic number — the number of protons in its nucleus. Hydrogen has 1, carbon has 6, iron has 26, gold has 79. Change the proton count and you change the element entirely. The atomic number also determines how many electrons surround the nucleus in a neutral atom, which in turn determines all chemical behavior."),
+        ("Electron Configuration and Reactivity", "Electrons occupy energy levels (shells) around the nucleus. The outermost shell determines reactivity. Atoms 'want' full outer shells — those with nearly empty outer shells (alkali metals like sodium) easily lose electrons, while those with nearly full shells (halogens like chlorine) easily gain electrons. Both are highly reactive. Noble gases already have full shells and barely react at all."),
+        ("Why Gold Resists Corrosion", "Gold is special among metals. Its large nucleus (79 protons) creates such a strong pull that inner electrons move at a significant fraction of the speed of light, causing relativistic effects that contract the inner shells and alter the outer electron energies. This makes gold's outer electrons unusually stable and resistant to chemical reactions — which is why gold jewelry from ancient Egypt still gleams today."),
+        ("Conductivity and Electron Mobility", "Metals conduct electricity because their outer electrons are loosely held and can flow freely through the material like a 'sea of electrons.' Silver is the best conductor, followed by copper, then gold. The arrangement and binding energy of outer electrons determine how freely they move. Non-metals hold their electrons tightly, making them poor conductors (insulators).")
+    ],
+    "lever_L": "Students identify atomic number, electron configuration, reactivity, conductivity, and material properties as system components.",
+    "lever_E": "Students determine that atomic number sets identity, electron configuration drives reactivity and conductivity, and these atomic-level factors produce observable material properties.",
+    "lever_V": "Students build the atomic property model showing how atomic number and electron configuration determine reactivity, conductivity, and material properties.",
+    "lever_Ev": "Students compare elements with different atomic numbers and electron configurations to verify that outer-shell electrons predict reactivity and conductivity patterns.",
+    "lever_R": "Students add melting point, electronegativity, or density to model more complex property relationships.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Gold bar vs. rusty iron", "say": "One of these has been treasured for 5,000 years. The other crumbles in the rain. Both are metals. Why?", "do": "Show gold and iron side by side. Ask: What makes them so different?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we go inside the atom to discover why elements behave so differently.", "do": "Pre-teach atomic number (identity), electron configuration (behavior), reactivity (chemical willingness).", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Gold vs. iron atomic diagrams", "say": "Both are made of protons, neutrons, and electrons. Same ingredients, wildly different results. Why?", "do": "Show atomic diagrams. Count the protons. Ask: Does more protons always mean more reactive?", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We'll model how atomic structure creates the material properties we observe.", "do": "Preview that electron arrangement is the key to everything.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Atomic structure components", "say": "Atomic number and electron configuration are our inputs. Reactivity, conductivity, and material properties are our outputs.", "do": "Sort components. Discuss why atomic number and electron config are external (they define the element).", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Property relationship arrows", "say": "Electron configuration drives everything — reactivity, conductivity, and the properties we can see and touch.", "do": "Map relationships. Highlight that outer-shell electrons are the most important factor.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Element comparison data", "say": "Compare gold, iron, sodium, and neon. Watch how electron configuration predicts their behavior.", "do": "Students predict properties before running. Compare reactive vs. stable elements.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Periodic table patterns", "say": "The periodic table isn't random — it's organized by electron configuration, and properties follow predictable patterns.", "do": "Identify groups: alkali metals (reactive), noble gases (stable), transition metals (variable).", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Material selection engineering", "say": "Engineers choose materials based on atomic properties. Your turn — recommend the best material for each job.", "do": "Teams analyze applications, select materials using model evidence, and present recommendations.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Atomic Number and Electron Configuration are external because they are inherent properties of the element that define its identity — they are the inputs that cannot change without changing the element itself. Reactivity, Conductivity, and Material Properties are internal because they are outcomes determined by those atomic-level inputs.",
+    "relationships": [
+        ("Atomic Number to Electron Configuration", "POSITIVE (+)", "More protons means more electrons in a neutral atom, filling additional energy levels and creating more complex configurations."),
+        ("Electron Configuration to Reactivity", "POSITIVE/NEGATIVE (+/-)", "Elements with nearly empty or nearly full outer shells are highly reactive. Elements with full outer shells have near-zero reactivity. The relationship depends on how close the outer shell is to being full or empty."),
+        ("Electron Configuration to Conductivity", "POSITIVE (+)", "Elements with loosely held outer electrons (metals) allow electron flow, creating high conductivity. Tightly held electrons (non-metals) resist flow."),
+        ("Reactivity to Material Properties", "POSITIVE (+)", "High reactivity leads to observable properties like tarnishing, corrosion, or vigorous reactions with water and acids."),
+        ("Conductivity to Material Properties", "POSITIVE (+)", "High conductivity correlates with metallic luster, malleability, and the ability to transmit heat — all observable material properties.")
+    ],
+    "sim_answers": [
+        ("Gold vs. Iron", "Gold (atomic number 79) shows very low Reactivity due to its uniquely stable electron configuration — relativistic effects from its large nucleus make outer electrons resistant to bonding. Iron (atomic number 26) shows moderate-to-high Reactivity because its outer electrons readily interact with oxygen and water. Both show high Conductivity as metals, but their chemical stability is dramatically different."),
+        ("Full Outer Shell", "With a complete outer electron shell (like neon or argon), Reactivity drops to near zero. The element has no 'need' to gain, lose, or share electrons because its configuration is already stable. This is why noble gases are called 'noble' — they don't easily combine with other elements. The model shows that electron satisfaction determines chemical behavior.")
+    ],
+    "reflection_exemplars": [
+        ("Why is gold so valued throughout human history?", "Gold's value comes directly from its atomic properties. Its electron configuration makes it extremely resistant to corrosion — it doesn't rust, tarnish, or degrade over millennia. It's also beautiful (its color comes from relativistic electron effects absorbing blue light), malleable (easy to shape into jewelry and coins), and rare. Ancient cultures discovered through experience what atomic physics now explains: gold is one of the most chemically stable elements on Earth."),
+        ("Why are noble gases so unreactive?", "Noble gases have completely full outer electron shells. Chemical reactions involve gaining, losing, or sharing electrons to achieve a full outer shell. Since noble gases already have this stable configuration, they have no driving force to react. It's like trying to fill a cup that's already full — there's no reason for the process to occur. This makes noble gases useful in situations where you need an inert (non-reactive) atmosphere, like protecting welds or filling lightbulbs.")
+    ],
+    "stem_intro": "Present the challenge: An engineering company is selecting materials for three products — electrical wiring, a ship hull that resists saltwater corrosion, and a lightweight aircraft frame. Your team must analyze atomic properties to recommend the best material for each application.",
+    "stem_concepts": [
+        ("Alloys", "Mixtures of two or more metals designed to combine desirable properties — steel is iron plus carbon for strength, stainless steel adds chromium for corrosion resistance."),
+        ("Corrosion Resistance", "The ability of a material to withstand chemical attack from its environment. Low reactivity and protective oxide layers both contribute to corrosion resistance."),
+        ("Cost-Performance Trade-off", "Gold conducts well and resists corrosion but is expensive and heavy. Copper conducts nearly as well at a fraction of the cost. Engineers balance performance with practical constraints.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Recommendations use specific atomic property data from the model, address trade-offs between properties, and include cost-performance analysis"),
+        ("Proficient (3)", "Recommendations reference electron configuration and reactivity data with clear connections to application requirements"),
+        ("Developing (2)", "Recommendations mention material properties but lack connection to atomic-level model evidence"),
+        ("Beginning (1)", "Recommendations don't connect to atomic structure concepts or model findings")
+    ],
+    "support": [
+        "Provide periodic table reference sheets with electron configuration diagrams for key elements",
+        "Use physical metal samples (copper, aluminum, iron, zinc) for students to test conductivity and observe properties",
+        "Sentence frames: 'Gold resists corrosion because its electron configuration __'"
+    ],
+    "extensions": [
+        "Research why relativistic effects in gold's electrons cause its distinctive color and chemical stability",
+        "Add electronegativity to the model and explore how it predicts bonding type (ionic vs. covalent)",
+        "Design a new alloy by combining elements with complementary properties and predict its behavior using model evidence"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate the number of electrons in each shell for elements up to atomic number 36 using the 2n² rule and connect to periodic table periods"),
+        ("ELA", "Write a persuasive argument for why a specific material should be used in a real-world engineering application, citing atomic property evidence"),
+        ("Social Studies", "Research how the discovery of bronze (copper-tin alloy) and steel (iron-carbon alloy) transformed human civilizations and economies")
+    ],
+    "misconceptions": [
+        ("All metals behave the same way", "Metals vary enormously in reactivity, conductivity, hardness, and other properties based on their atomic structure. Sodium explodes in water while gold sits in seawater for centuries unchanged. Mercury is a liquid at room temperature while tungsten doesn't melt until 3,422°C. Electron configuration explains these differences.", "In the model, compare sodium (1 outer electron), iron (variable outer electrons), and gold (stable outer electrons). Their Reactivity values are dramatically different despite all being metals."),
+        ("Bigger atoms are always more reactive", "Reactivity depends on electron configuration, not size. Neon (10 protons) is completely unreactive because its outer shell is full, while sodium (11 protons, just one more) is explosively reactive because it has a single lonely outer electron. Size alone tells you nothing about reactivity.", "In the model, compare neon (full shell) and sodium (1 outer electron). Despite being neighbors on the periodic table and similar in size, their Reactivity is opposite."),
+        ("Electrons orbit like planets around the sun", "Electrons don't travel in neat circular orbits. They exist in probability clouds (orbitals) — regions where they are likely to be found. The 'shell' model is a useful simplification for understanding energy levels and reactivity, but real electron behavior is described by quantum mechanics.", "The model uses energy levels (shells) as a simplification. Discuss that real atoms are more complex but the shell model accurately predicts reactivity patterns.")
+    ]
+}
+
+L09 = {
+    "id": "G08L2-L09",
+    "title": "How Does a Cut Heal Itself?",
+    "subtitle": "How Your Body Orchestrates Cell Division to Repair Damaged Tissue",
+    "ngss": "MS-LS1-4, MS-LS1-2",
+    "ngss_desc": "Use argument based on empirical evidence and scientific reasoning to support an explanation for how characteristic animal behaviors and specialized plant structures affect the probability of successful reproduction of animals and plants respectively. Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function.",
+    "big_question": "How does your body know when you're injured, and how does it rebuild damaged tissue cell by cell?",
+    "objectives": [
+        "Explain how wound severity and blood supply affect the healing process",
+        "Model the relationship between cell division rate and new tissue formation",
+        "Predict how different wound conditions affect healing progress over time",
+        "Evaluate evidence for why some wounds heal faster than others"
+    ],
+    "vocabulary": [
+        ("Wound Severity", "The depth and extent of tissue damage — deeper wounds destroy more cells and take longer to heal"),
+        ("Blood Supply", "The flow of blood to the wound area, delivering oxygen, nutrients, and immune cells needed for repair"),
+        ("Cell Division Rate", "How quickly cells near the wound are dividing (mitosis) to produce new cells for repair"),
+        ("New Tissue Formation", "The growth of replacement skin, blood vessels, and connective tissue to close and repair the wound"),
+        ("Healing Progress", "The overall advancement of wound repair from initial injury to complete tissue restoration")
+    ],
+    "components": [
+        ("Wound Severity", "The depth and area of tissue damage — sets the scale of repair needed", True),
+        ("Blood Supply", "Blood flow to the wound area delivering oxygen, nutrients, and immune cells", True),
+        ("Cell Division Rate", "How rapidly cells undergo mitosis to produce replacement cells", False),
+        ("New Tissue Formation", "Growth of new skin, blood vessels, and connective tissue at the wound site", False),
+        ("Healing Progress", "Overall wound closure and tissue restoration over time", False)
+    ],
+    "think_about_it": "A paper cut heals in a few days, but a deep gash might take weeks. Both involve the same process — cell division. What factors determine how fast your body can rebuild?",
+    "scenarios": [
+        ("Minor Cut", "Set Wound Severity to 20% and Blood Supply to 70% — a small, well-supplied wound"),
+        ("Deep Wound", "Set Wound Severity to 90% and Blood Supply to 70% — a serious injury with normal blood flow"),
+        ("Poor Circulation", "Set Wound Severity to 50% and Blood Supply to 20% — a moderate wound with limited blood flow")
+    ],
+    "sim_scenarios": [
+        ("Minor vs. Deep", "Low severity vs. high severity with normal blood supply", "What do you predict will happen to Healing Progress over 14 days?"),
+        ("Good vs. Poor Blood Supply", "Same wound severity with high vs. low blood supply", "What do you predict will happen to Cell Division Rate?"),
+        ("Worst Case", "High severity with low blood supply", "What do you predict will happen to New Tissue Formation?")
+    ],
+    "discoveries": [
+        "Wound severity determines the scale of repair needed — more damaged tissue requires more cell divisions to replace",
+        "Blood supply is critical because dividing cells need oxygen and nutrients delivered by blood to fuel mitosis",
+        "Cell division rate increases near the wound edge as the body signals cells to multiply faster",
+        "New tissue formation follows cell division — first new cells are produced, then they organize into functional tissue",
+        "Healing progress depends on both factors: severe wounds with good blood supply heal faster than moderate wounds with poor circulation"
+    ],
+    "answer": "Your body heals a cut through a carefully coordinated process. When tissue is damaged, chemical signals trigger nearby cells to increase their division rate (mitosis). Blood supply delivers the oxygen and nutrients these rapidly dividing cells need. New cells gradually fill the wound, forming new tissue. Wound severity sets the scale of the job, and blood supply determines how fast the workers can work. This is why diabetic patients (who often have poor circulation) heal slowly, and why keeping a wound clean and well-supplied with blood is essential for recovery.",
+    "stem_title": "Design a Wound Treatment Protocol",
+    "stem_mission": "Design an evidence-based wound treatment plan that optimizes healing conditions, using your model data to justify why each treatment step accelerates tissue repair.",
+    "stem_scenario": "A school nurse needs a science-based protocol for treating different types of student injuries — from minor scrapes to deeper cuts. Your team must create treatment guidelines that maximize healing speed based on the biological factors in your model.",
+    "stem_questions": [
+        "How does keeping a wound moist vs. dry affect cell division rate?",
+        "Why does elevating an injury help with healing?",
+        "What role does nutrition play in providing fuel for cell division?"
+    ],
+    "stem_design_qs": [
+        "What specific conditions optimize cell division rate at the wound site?",
+        "How will your protocol address blood supply to the wound?",
+        "What steps prevent infection, which would divert resources from healing?",
+        "How will you use model evidence to explain each treatment recommendation?"
+    ],
+    "career": "Biomedical Researchers and Wound Care Specialists study how the body repairs itself and develop treatments that accelerate healing. They work in hospitals, research labs, and pharmaceutical companies, earning $65,000-$120,000/year.",
+    "images": {
+        "cover": ("cover-wound-healing.png", "A photorealistic dramatic microscopic view of skin tissue healing, showing layers of new cells forming over a wound, with cellular detail visible, cinematic scientific visualization"),
+        "landscape": ("landscape-wound-healing.png", "A photorealistic image of a Latino male 8th grade student (age 13-14) examining cell division slides under a microscope while diverse classmates record observations, modern biology lab, natural lighting"),
+        "modeling": ("modeling-wound-healing.png", "A photorealistic image of a Black female 8th grade student (age 13-14) at a laptop graphing healing rate data over time, diverse classmates collaborating, modern classroom with biology and cell division posters"),
+        "discussion": ("discussion-wound-healing.png", "A photorealistic image of a White male 8th grade student (age 13-14) pointing at a diagram of wound healing stages on a whiteboard, diverse engaged classmates, teacher facilitating, bright modern classroom"),
+        "stem": ("stem-wound-healing.png", "A photorealistic image of an Asian female 8th grade student (age 13-14) presenting a wound treatment protocol poster with healing data charts, diverse team supporting, modern classroom setting")
+    },
+    "pre_assessment": [
+        "What happens when you get a cut? Describe what you think is happening inside your body.",
+        "Why do some cuts heal faster than others?",
+        "What is cell division, and why might it be important for healing?",
+        "Draw a simple diagram showing what you think happens to the cells around a wound over time."
+    ],
+    "extend_components": [
+        ("Immune Response", "White blood cells that fight infection at the wound site — infection diverts resources from repair"),
+        ("Scar Tissue Formation", "Collagen-rich tissue that forms when wounds are too large for perfect regeneration"),
+        ("Growth Factor Signaling", "Chemical signals released by damaged cells that trigger nearby cells to divide faster")
+    ],
+    "reflections": [
+        "Why do wounds on the tongue or inside the mouth heal faster than wounds on the skin?",
+        "How does the body 'know' when to stop dividing cells once a wound is healed?",
+        "Why do older people generally heal more slowly than younger people?",
+        "How does understanding wound healing connect to understanding cancer (uncontrolled cell division)?",
+        "What would happen if cell division at a wound site never stopped?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model showing how wound severity and blood supply affect cell division rate, new tissue formation, and overall healing progress."),
+        ("Disciplinary Core Idea", "LS1.B Growth and Development of Organisms", "Animals engage in characteristic behaviors and have specialized body structures that increase the probability of successful reproduction and survival, including wound repair through cell division."),
+        ("Crosscutting Concept", "Cause and Effect", "Students identify causal relationships between wound severity, blood supply, cell division rate, and healing outcomes — understanding that multiple causes interact to produce observed effects.")
+    ],
+    "cast_items": [
+        "Use models to describe how cells contribute to the function of tissue repair",
+        "Support explanations with empirical evidence about how cell division drives wound healing",
+        "Develop arguments about why different wound conditions lead to different healing outcomes"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "Patient A has a moderate cut on their well-supplied forearm. Patient B has the same cut on their lower leg, where circulation is reduced due to diabetes. After 10 days, which patient will show more healing progress, and what is the primary reason?"),
+        ("Constructed Response:", "Using evidence from your model, explain why a deep wound with good blood supply might heal faster than a shallow wound with poor blood supply. Include the roles of cell division rate and new tissue formation in your explanation.")
+    ],
+    "background_intro": "The human body is a remarkable self-repairing system. Every cut, scrape, and bruise triggers a precisely orchestrated cascade of cellular events that rebuild damaged tissue. Understanding how wounds heal reveals fundamental principles of cell biology — particularly cell division (mitosis) and how the body regulates growth.",
+    "background_sections": [
+        ("The Four Phases of Wound Healing", "Healing occurs in four overlapping phases: (1) Hemostasis — blood clotting stops the bleeding within minutes. (2) Inflammation — immune cells flood the area to fight infection and clear debris (hours to days). (3) Proliferation — cells divide rapidly to rebuild tissue, forming new skin, blood vessels, and connective tissue (days to weeks). (4) Remodeling — new tissue is reorganized and strengthened (weeks to months or years)."),
+        ("Cell Division: The Engine of Repair", "Mitosis is the process by which one cell divides into two identical daughter cells. At a wound site, cells at the edge receive chemical signals (growth factors) that trigger them to divide much faster than normal. These new cells migrate into the wound, gradually filling the gap. The rate of cell division depends heavily on blood supply — dividing cells consume enormous amounts of oxygen and nutrients."),
+        ("Blood Supply: The Lifeline", "Blood delivers everything healing cells need: oxygen for cellular respiration (energy production), glucose and amino acids for building new cellular structures, growth factors that signal cells to divide, and white blood cells that fight infection. Areas with rich blood supply (face, tongue, scalp) heal remarkably fast. Areas with poor circulation (lower legs, feet) heal slowly — this is why diabetic foot wounds are a serious medical concern."),
+        ("Why Some Wounds Scar", "Small wounds can regenerate tissue that is virtually identical to the original. Large or deep wounds cannot wait for perfect regeneration — they fill the gap quickly with collagen-rich scar tissue. Scars are functional but lack the full complexity of original tissue (no hair follicles, sweat glands, or normal pigmentation). The body prioritizes speed of closure over perfection of repair.")
+    ],
+    "lever_L": "Students identify wound severity, blood supply, cell division rate, new tissue formation, and healing progress as system components.",
+    "lever_E": "Students determine that wound severity sets the repair scale, blood supply fuels cell division, and cell division produces new tissue that drives healing progress.",
+    "lever_V": "Students build the wound healing model showing how inputs (severity and blood supply) affect the cascade of cell division, tissue formation, and healing.",
+    "lever_Ev": "Students compare scenarios with different severity and blood supply levels to verify that blood supply is the rate-limiting factor for healing speed.",
+    "lever_R": "Students add immune response, scar tissue formation, or growth factor signaling to model more complex healing dynamics.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Microscopic wound healing", "say": "Every time you get a cut, billions of cells launch a repair mission. How does your body rebuild itself?", "do": "Show microscopic wound healing image. Ask: What do you think happens in the first hour after a cut?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we model how your body heals wounds through cell division.", "do": "Pre-teach wound severity (how bad), blood supply (delivery system), cell division (copying cells).", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Paper cut vs. deep wound", "say": "A paper cut heals in days. A deep gash takes weeks. Same process, different timelines. Why?", "do": "Ask students to share experiences with cuts healing. What did they notice?", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We'll model the biological assembly line that rebuilds your tissue after injury.", "do": "Preview that healing is a cascade: severity sets the job, blood supply fuels the workers.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Healing system components", "say": "Wound severity and blood supply are our inputs. Cell division, tissue formation, and healing progress are outputs.", "do": "Sort components. Discuss why severity and blood supply are external (set by the injury and body).", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Healing cascade arrows", "say": "Blood supply fuels cell division. Cell division produces new tissue. New tissue drives healing progress.", "do": "Map the cascade. Highlight that blood supply is the rate-limiting factor.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Healing progress graphs", "say": "Compare a minor cut with good blood supply vs. a deep wound with poor circulation. What happens?", "do": "Students predict healing curves. Run scenarios. Identify the critical role of blood supply.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Healing factors summary", "say": "Your body is an incredible self-repair system — but it needs fuel, time, and the right conditions.", "do": "Summarize key findings. Connect to real medical practice (wound care, diabetes management).", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Wound treatment protocol", "say": "You're the school nurse's science advisor. Design a treatment protocol backed by cell biology evidence.", "do": "Teams create evidence-based protocols. Present and defend with model data.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Wound Severity and Blood Supply are external because they are conditions set by the injury and the body's circulatory system — they are inputs the healing process must work with. Cell Division Rate, New Tissue Formation, and Healing Progress are internal because they are biological responses that result from and are regulated by those external conditions.",
+    "relationships": [
+        ("Wound Severity to Cell Division Rate", "POSITIVE (+)", "More severe wounds trigger stronger chemical signals (growth factors) that increase the rate of cell division at the wound edge."),
+        ("Wound Severity to Healing Progress", "NEGATIVE (-)", "Greater wound severity means more tissue to replace, requiring more time to achieve complete healing — deeper wounds heal more slowly."),
+        ("Blood Supply to Cell Division Rate", "POSITIVE (+)", "Greater blood flow delivers more oxygen and nutrients to dividing cells, enabling faster mitosis and cell production."),
+        ("Cell Division Rate to New Tissue Formation", "POSITIVE (+)", "Faster cell division produces more new cells per day, accelerating the formation of replacement tissue."),
+        ("New Tissue Formation to Healing Progress", "POSITIVE (+)", "More new tissue filling the wound means greater healing progress — the wound closes and functional tissue is restored.")
+    ],
+    "sim_answers": [
+        ("Minor vs. Deep", "The minor cut (20% severity) shows rapid Healing Progress, reaching near-complete healing within 5-7 days because fewer cells need replacement. The deep wound (90% severity) shows much slower progress — Cell Division Rate is high (strong growth factor signals), but the sheer volume of tissue to replace means full healing takes 3-4 weeks even with good blood supply."),
+        ("Good vs. Poor Blood Supply", "With the same wound severity, good blood supply (70%) produces a significantly higher Cell Division Rate than poor blood supply (20%). Cells with adequate oxygen and nutrients divide rapidly, while oxygen-starved cells divide slowly. The poorly supplied wound shows much slower New Tissue Formation and delayed Healing Progress — this models why diabetic patients with poor circulation face chronic wound healing problems.")
+    ],
+    "reflection_exemplars": [
+        ("Why do mouth wounds heal faster?", "The mouth has one of the richest blood supplies in the body — dense networks of blood vessels deliver abundant oxygen, nutrients, and growth factors to injured tissue. Additionally, saliva contains growth factors and antimicrobial compounds that support healing. In the model, this is equivalent to setting Blood Supply to near-maximum. High blood supply drives high Cell Division Rate, which accelerates New Tissue Formation and Healing Progress. The mouth's biological environment is optimized for rapid repair."),
+        ("Connection between healing and cancer", "Normal wound healing involves controlled cell division — cells divide rapidly to fill the wound, then STOP when the tissue is repaired. Cancer occurs when this stop signal fails and cells continue dividing uncontrollably. In the model, imagine Cell Division Rate staying at maximum even after Healing Progress reaches 100%. The excess cells form a tumor. Understanding wound healing helps scientists understand cancer because both involve the same cellular machinery — mitosis — but cancer has lost the regulatory 'brakes.'")
+    ],
+    "stem_intro": "Present the scenario: The school nurse wants science-based treatment guidelines for different student injuries. Your team must create a protocol that optimizes healing conditions based on the biological factors in your wound healing model.",
+    "stem_concepts": [
+        ("Moist Wound Healing", "Research shows wounds heal up to 50% faster in a moist environment. Dry wounds form scabs that cells must dissolve before migrating — moist wounds allow cells to move freely and divide efficiently."),
+        ("Infection and Healing", "Bacterial infection diverts immune cells and blood supply away from tissue repair toward fighting invaders. Keeping wounds clean is essential because infection dramatically slows cell division dedicated to healing."),
+        ("Nutrition and Cell Division", "Cell division requires raw materials — proteins (amino acids), vitamins (especially C and A), and minerals (zinc). Malnourished patients heal significantly slower because their cells lack the building blocks for new tissue.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Protocol addresses all model factors (severity assessment, blood supply optimization, cell division support), includes evidence-based reasoning, and considers infection prevention"),
+        ("Proficient (3)", "Protocol references blood supply and cell division rate with connections to treatment steps and model evidence"),
+        ("Developing (2)", "Protocol mentions wound care steps but lacks biological reasoning from the model"),
+        ("Beginning (1)", "Protocol doesn't connect to cell division or wound healing model concepts")
+    ],
+    "support": [
+        "Provide wound healing timeline diagrams showing the four phases for reference",
+        "Use time-lapse videos of wound healing under microscope to visualize cell division and tissue formation",
+        "Sentence frames: 'Blood supply affects healing because dividing cells need __ to __'"
+    ],
+    "extensions": [
+        "Research how growth factors are used in medical treatments to accelerate wound healing in burn patients",
+        "Add immune response to the model and explore how infection delays healing by competing for blood supply",
+        "Compare regeneration in humans (limited) vs. organisms like salamanders and starfish (extensive) — what makes them different?"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate healing rates (percentage of wound closed per day) for different scenarios and create graphs comparing healing curves"),
+        ("ELA", "Write a patient education guide explaining the science of wound healing in accessible language for a hospital waiting room"),
+        ("Social Studies", "Research how access to medical care and nutrition affects wound healing outcomes across different communities and socioeconomic groups")
+    ],
+    "misconceptions": [
+        ("Scabs are the healing", "Scabs are blood clots that protect the wound, not the actual repair process. Real healing happens UNDERNEATH the scab as cells divide and form new tissue. In fact, keeping wounds moist (without a dry scab) often leads to faster healing because cells can migrate and divide more easily without having to dissolve dried material.", "In the model, healing progress tracks new tissue formation, not scab formation. The scab is a temporary protective barrier, not the repair itself."),
+        ("Wounds heal from the outside in", "Wounds actually heal from the edges inward and from the bottom up. Cells at the wound margin divide and migrate across the wound surface, while new blood vessels and connective tissue build up from below. This is why deep wounds take longer — there's more vertical depth to fill.", "In the model, New Tissue Formation builds gradually from the wound edges. Increasing wound severity (depth) dramatically increases the time needed because cells must fill a larger three-dimensional space."),
+        ("Your body just 'knows' when to heal", "Healing is triggered by specific chemical signals, not some mysterious awareness. When cells are damaged, they release growth factors and cytokines that signal neighboring cells to begin dividing. White blood cells arrive and release additional signals. This chemical cascade is automatic and measurable — it's biochemistry, not magic.", "In the model, Cell Division Rate increases in response to Wound Severity because damage triggers growth factor signals. The model shows the cause-and-effect chain: damage → signals → cell division → new tissue → healing.")
+    ]
+}
+
+L10 = {
+    "id": "G08L2-L10",
+    "title": "Why Is Groundwater Disappearing?",
+    "subtitle": "How Human Activity and Natural Cycles Determine the Future of Underground Water",
+    "ngss": "MS-ESS3-1, MS-ESS2-4",
+    "ngss_desc": "Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes. Develop a model to describe the cycling of water through Earth's systems driven by energy from the sun and the force of gravity.",
+    "big_question": "Why are aquifers that took thousands of years to fill being drained in just decades?",
+    "objectives": [
+        "Explain how agricultural irrigation and rainfall recharge affect aquifer levels",
+        "Model the relationship between water extraction and long-term aquifer sustainability",
+        "Predict how land subsidence occurs when underground water is removed",
+        "Evaluate evidence for why groundwater depletion threatens long-term water security"
+    ],
+    "vocabulary": [
+        ("Agricultural Irrigation", "The use of groundwater to water crops — the largest consumer of groundwater worldwide"),
+        ("Rainfall Recharge", "The natural process by which rainwater seeps through soil and rock to replenish underground aquifers"),
+        ("Aquifer Level", "The height of the water table in an underground aquifer — drops when extraction exceeds recharge"),
+        ("Land Subsidence", "The sinking or settling of the ground surface caused by the removal of underground water, oil, or minerals"),
+        ("Long-term Water Security", "The ability of a region to meet its water needs sustainably over decades and generations")
+    ],
+    "components": [
+        ("Agricultural Irrigation", "Volume of groundwater pumped for farming — the primary demand on aquifers", True),
+        ("Rainfall Recharge", "Amount of precipitation that percolates down to replenish the aquifer", True),
+        ("Aquifer Level", "Current water table height — decreases when pumping exceeds natural recharge", False),
+        ("Land Subsidence", "Ground surface sinking as empty underground spaces compact under pressure", False),
+        ("Long-term Water Security", "Projected ability to meet future water needs based on current extraction rates", False)
+    ],
+    "think_about_it": "The Ogallala Aquifer under the Great Plains took millions of years to fill. Farmers have been pumping it for about 70 years, and some areas have already lost over 50% of their water. What happens when the pumping rate exceeds the refill rate?",
+    "scenarios": [
+        ("Balanced Water Budget", "Set Agricultural Irrigation and Rainfall Recharge to equal levels — sustainable pumping"),
+        ("Over-Extraction", "Set Agricultural Irrigation to 90% and Rainfall Recharge to 30% — pumping far exceeds recharge"),
+        ("Drought Conditions", "Set Agricultural Irrigation to 60% and Rainfall Recharge to 10% — high demand with minimal rain")
+    ],
+    "sim_scenarios": [
+        ("Balanced vs. Over-Extraction", "Equal pumping and recharge vs. heavy pumping with low recharge", "What do you predict will happen to Aquifer Level over 20 years?"),
+        ("Drought Impact", "Moderate irrigation with very low rainfall recharge", "What do you predict will happen to Land Subsidence?"),
+        ("Long-term Projection", "Heavy irrigation sustained for 50 years", "What do you predict will happen to Long-term Water Security?")
+    ],
+    "discoveries": [
+        "When extraction exceeds recharge, aquifer levels decline steadily — this is called groundwater mining",
+        "Rainfall recharge is extremely slow — water may take decades or centuries to percolate down to deep aquifers",
+        "As aquifer levels drop, the empty pore spaces in rock and sediment compact under the weight of overlying land, causing permanent land subsidence",
+        "Land subsidence is irreversible — once the ground sinks, the aquifer can never hold as much water again even if refilled",
+        "Long-term water security requires that extraction rates stay at or below natural recharge rates"
+    ],
+    "answer": "Groundwater is disappearing because humans are pumping water out of aquifers far faster than nature can replace it. Agricultural irrigation is the biggest consumer, and rainfall recharge is a slow process that can take years to centuries. When aquifer levels drop, the rock and soil above compact and the land surface sinks (subsidence) — permanently reducing the aquifer's storage capacity. This creates a dangerous feedback loop: less storage, less water security, more vulnerability to drought. Without reducing extraction or finding alternative water sources, many of the world's major aquifers face depletion within our lifetimes.",
+    "stem_title": "Design a Sustainable Water Management Plan",
+    "stem_mission": "Design an evidence-based water management plan for a farming community that balances agricultural needs with long-term aquifer sustainability, using your model data to justify every recommendation.",
+    "stem_scenario": "A farming community in the Central Valley of California depends on groundwater for 80% of its irrigation. The aquifer level has dropped 60 feet in the last 30 years, and land subsidence has damaged roads and canals. Your team must create a plan that sustains both farming and the aquifer.",
+    "stem_questions": [
+        "How much can irrigation be reduced before crop yields are significantly affected?",
+        "What alternative water sources could supplement groundwater?",
+        "How can recharge be increased through managed aquifer replenishment?"
+    ],
+    "stem_design_qs": [
+        "What specific irrigation reduction targets does your model evidence support?",
+        "How will you balance short-term farming needs with long-term water security?",
+        "What infrastructure changes could increase rainfall recharge rates?",
+        "How will you monitor aquifer levels and land subsidence to measure your plan's effectiveness?"
+    ],
+    "career": "Hydrogeologists and Water Resource Engineers study groundwater systems and design sustainable water management strategies for communities, agriculture, and industry. They earn $65,000-$115,000/year.",
+    "images": {
+        "cover": ("cover-groundwater-disappearing.png", "A photorealistic dramatic cross-section of land showing an underground aquifer with the water level dropping, dried wells on the surface, cracked earth around them, farms in the background, cinematic environmental visualization"),
+        "landscape": ("landscape-groundwater-disappearing.png", "A photorealistic image of a White male 8th grade student (age 13-14) examining a groundwater model with layers of soil and rock in a clear tank, diverse classmates measuring water levels, modern earth science lab, natural lighting"),
+        "modeling": ("modeling-groundwater-disappearing.png", "A photorealistic image of a Black male 8th grade student (age 13-14) at a laptop graphing aquifer depletion data over decades, diverse classmates collaborating, modern classroom with water cycle and geology posters"),
+        "discussion": ("discussion-groundwater-disappearing.png", "A photorealistic image of a Latino female 8th grade student (age 13-14) pointing at a cross-section diagram of aquifer depletion and land subsidence on a whiteboard, diverse engaged classmates, teacher facilitating, bright modern classroom"),
+        "stem": ("stem-groundwater-disappearing.png", "A photorealistic image of an Asian male 8th grade student (age 13-14) presenting a water management plan poster with aquifer sustainability data, diverse team supporting, modern classroom setting")
+    },
+    "pre_assessment": [
+        "Where does the water come from when you turn on a tap? Trace it as far back as you can.",
+        "What is an aquifer, and how does water get underground?",
+        "Why might pumping too much water from underground be a problem?",
+        "Draw a simple diagram showing how rain becomes groundwater and how wells pump it back up."
+    ],
+    "extend_components": [
+        ("Urban Water Demand", "Water consumed by cities and towns for drinking, sanitation, and industry — competing with agricultural use"),
+        ("Aquifer Recharge Rate", "The speed at which water naturally percolates down to the aquifer — varies by soil type and geology"),
+        ("Contamination Risk", "The chance that pollutants enter the aquifer as water levels drop and flow patterns change")
+    ],
+    "reflections": [
+        "Why is groundwater depletion considered a 'slow-motion crisis' that many people don't notice until it's too late?",
+        "How does land subsidence create a feedback loop that makes the problem worse?",
+        "What responsibilities do current generations have to preserve groundwater for future generations?",
+        "How does climate change affect the balance between rainfall recharge and irrigation demand?",
+        "Why is it harder to manage groundwater than surface water like rivers and lakes?"
+    ],
+    "dimensions": [
+        ("Science Practice", "Developing and Using Models", "Students develop a model showing how agricultural extraction and natural recharge interact to determine aquifer levels, land subsidence, and long-term water security."),
+        ("Disciplinary Core Idea", "ESS3.A Natural Resources", "Humans depend on Earth's land, ocean, atmosphere, and biosphere for many different resources, including groundwater. The distribution and sustainability of these resources is determined by geoscience processes."),
+        ("Crosscutting Concept", "Stability and Change", "Students analyze how groundwater systems can remain stable (when recharge equals extraction) or change dramatically (when extraction exceeds recharge), and identify the tipping points where change becomes irreversible.")
+    ],
+    "cast_items": [
+        "Construct scientific explanations for how geoscience processes affect groundwater distribution",
+        "Develop models showing the cycling of water through Earth's systems including underground aquifers",
+        "Use evidence to argue for sustainable groundwater management practices"
+    ],
+    "cast_questions": [
+        ("Multiple Choice:", "A farming region pumps 500 million gallons per year from its aquifer. Rainfall recharges the aquifer at 200 million gallons per year. At this rate, which of the following will occur, and why?"),
+        ("Constructed Response:", "Using evidence from your model, explain why land subsidence is considered irreversible and how it creates a feedback loop that worsens groundwater depletion. Include the relationship between aquifer level and storage capacity in your explanation.")
+    ],
+    "background_intro": "Groundwater — water stored in underground rock formations called aquifers — supplies drinking water for nearly half the world's population and irrigates much of the world's farmland. Yet this invisible resource is being depleted at alarming rates, creating a slow-motion crisis that threatens food production and water security worldwide.",
+    "background_sections": [
+        ("What Is an Aquifer?", "An aquifer is an underground layer of permeable rock, sand, or gravel that holds and transmits water. Water fills the tiny spaces (pores) between rock particles, like water in a sponge. Major aquifers can be enormous — the Ogallala Aquifer underlies 174,000 square miles across eight US states. Some aquifers were filled millions of years ago and receive very little new water today (fossil aquifers)."),
+        ("The Recharge Problem", "Rainfall recharge is the process by which surface water percolates through soil and rock to reach an aquifer. This process is slow — water may take years to decades to travel from the surface to a deep aquifer. In arid regions, very little rain reaches the aquifer because most evaporates or is consumed by plants. When pumping exceeds recharge, the aquifer is essentially being mined like a non-renewable resource."),
+        ("Land Subsidence: The Irreversible Consequence", "When water is pumped from an aquifer, the pore spaces that held the water can collapse and compact under the weight of overlying land. This causes the ground surface to sink — a process called subsidence. In California's Central Valley, some areas have sunk over 28 feet since the 1920s. Critically, compacted rock cannot re-expand — even if the aquifer is refilled, it can never hold as much water as before. Subsidence is permanent."),
+        ("The Global Groundwater Crisis", "The world's largest aquifers are being depleted. The Ogallala Aquifer (US Great Plains) has lost an average of 15 feet of water since 1950, with some areas losing over 150 feet. India's aquifers support 60% of irrigated agriculture but are declining rapidly. The North China Plain aquifer drops 3 feet per year. NASA's GRACE satellites measure groundwater from space and show that 21 of Earth's 37 major aquifers are being drained faster than they're refilled.")
+    ],
+    "lever_L": "Students identify agricultural irrigation, rainfall recharge, aquifer level, land subsidence, and long-term water security as system components.",
+    "lever_E": "Students determine that irrigation depletes aquifer levels while rainfall recharges them, dropping aquifer levels cause land subsidence, and the balance determines long-term water security.",
+    "lever_V": "Students build the groundwater model showing how extraction and recharge rates determine aquifer sustainability and the cascading effects of depletion.",
+    "lever_Ev": "Students compare balanced vs. over-extraction scenarios to verify that sustainable pumping requires extraction at or below recharge rates, and observe irreversible subsidence effects.",
+    "lever_R": "Students add urban water demand, contamination risk, or variable recharge rates to model more complex groundwater dynamics.",
+    "slides_guide": [
+        {"num": "Slide 1", "title": "Cover", "visual": "Aquifer cross-section depleting", "say": "Beneath your feet right now, there might be an ocean of water. And it's disappearing.", "do": "Show aquifer cross-section. Ask: Where does well water actually come from?", "time": "2 min"},
+        {"num": "Slide 2", "title": "Learning Objectives", "visual": "Learning goals and vocabulary", "say": "Today we model why underground water that took millennia to accumulate is vanishing in decades.", "do": "Pre-teach aquifer (underground reservoir), recharge (natural refilling), subsidence (ground sinking).", "time": "3 min"},
+        {"num": "Slide 3", "title": "Big Question", "visual": "Ogallala Aquifer depletion map", "say": "The Ogallala Aquifer feeds America's breadbasket. Some areas have lost half their water in 70 years. Why?", "do": "Show before/after aquifer level maps. Ask: What happens when you drain a sponge faster than it can soak up water?", "time": "3 min"},
+        {"num": "Slide 4", "title": "LEVER Framework", "visual": "LEVER steps overview", "say": "We'll model the balance between what goes in (rain) and what comes out (pumping).", "do": "Preview that this is fundamentally a balance problem — input vs. output over time.", "time": "2 min"},
+        {"num": "Slide 5", "title": "Activity 1: Components", "visual": "Groundwater system components", "say": "Irrigation and rainfall are our inputs. Aquifer level, subsidence, and water security are the outputs.", "do": "Sort components. Discuss why irrigation and rainfall are external (human choice and weather).", "time": "8 min"},
+        {"num": "Slide 6", "title": "Activity 2: Connections", "visual": "Groundwater relationship arrows", "say": "Pumping drains the aquifer. Rain refills it. When the aquifer drops, the ground sinks — permanently.", "do": "Map relationships. Highlight the irreversibility of subsidence — this is the critical insight.", "time": "8 min"},
+        {"num": "Slide 7", "title": "Activity 3: Simulation", "visual": "Aquifer depletion projections", "say": "Compare sustainable pumping vs. over-extraction over 50 years. The difference is dramatic.", "do": "Students predict before running. Focus on the long-term divergence and the subsidence feedback loop.", "time": "10 min"},
+        {"num": "Slide 8", "title": "Discoveries", "visual": "Groundwater crisis data", "say": "This isn't a future problem — it's happening now. Twenty-one of Earth's major aquifers are being drained.", "do": "Show NASA GRACE satellite data. Connect to local water sources and regional agriculture.", "time": "5 min"},
+        {"num": "Slide 9", "title": "STEM Challenge", "visual": "Water management plan", "say": "A farming community needs your help. Design a plan that saves both the farms and the aquifer.", "do": "Teams create management plans using model evidence. Present trade-offs and justify recommendations.", "time": "12 min"}
+    ],
+    "sort_reasoning": "Agricultural Irrigation and Rainfall Recharge are external because they represent the demand and supply inputs to the groundwater system — human pumping decisions and weather patterns that the aquifer itself cannot control. Aquifer Level, Land Subsidence, and Long-term Water Security are internal because they are outcomes that respond to and are determined by the balance between those external inputs.",
+    "relationships": [
+        ("Agricultural Irrigation to Aquifer Level", "NEGATIVE (-)", "More pumping for irrigation removes water from the aquifer, lowering the water table."),
+        ("Rainfall Recharge to Aquifer Level", "POSITIVE (+)", "More rainfall percolation adds water to the aquifer, raising or stabilizing the water table."),
+        ("Aquifer Level to Land Subsidence", "NEGATIVE (-)", "Lower aquifer levels cause underground pore spaces to collapse, increasing land subsidence at the surface."),
+        ("Land Subsidence to Aquifer Level", "NEGATIVE (-)", "Subsidence permanently compacts aquifer rock, reducing its storage capacity — even if water is added, the aquifer holds less than before."),
+        ("Aquifer Level to Long-term Water Security", "POSITIVE (+)", "Higher aquifer levels mean more water available for future use, increasing long-term water security for the region.")
+    ],
+    "sim_answers": [
+        ("Balanced vs. Over-Extraction", "When irrigation equals recharge, Aquifer Level remains stable over 20 years — this is sustainable pumping. When irrigation is set to 90% and recharge to 30%, the aquifer loses water every year. After 20 years, the Aquifer Level has dropped dramatically, Land Subsidence has increased, and Long-term Water Security has plummeted. The gap between extraction and recharge compounds over time."),
+        ("Drought Impact", "With moderate irrigation (60%) but very low rainfall recharge (10%), the aquifer depletes rapidly despite not being heavily pumped. This shows that recharge is equally important as extraction in the water budget. Land Subsidence increases as the aquifer drops, and once the ground has sunk, the aquifer permanently loses storage capacity — creating a feedback loop that accelerates the crisis even if rain returns.")
+    ],
+    "reflection_exemplars": [
+        ("Why is groundwater depletion a 'slow-motion crisis'?", "Unlike a river running dry or a reservoir emptying — which are visible events people notice immediately — aquifer depletion happens underground, invisible to daily observation. Farmers pump water and crops grow normally for decades while the aquifer quietly drops. By the time wells start going dry or the ground visibly sinks, enormous damage has already been done. The model shows that over-extraction appears harmless in any single year but compounds catastrophically over decades. It's a classic 'boiling frog' problem — gradual change is harder to perceive than sudden change."),
+        ("How does subsidence create a feedback loop?", "When aquifer levels drop, pore spaces in the rock collapse and the ground sinks. This is irreversible — the compacted rock cannot re-expand. The permanently reduced pore space means the aquifer can now hold LESS water than before, even if fully recharged. So the maximum possible aquifer level decreases, which further reduces Long-term Water Security. In the model, this appears as a negative feedback from Land Subsidence back to Aquifer Level — each cycle of depletion and subsidence reduces the aquifer's total capacity, making recovery harder and the next drought more dangerous.")
+    ],
+    "stem_intro": "Present the scenario: A farming community in California's Central Valley depends on groundwater for most of its irrigation. The aquifer has dropped 60 feet in 30 years, roads are cracking from subsidence, and the state is requiring a sustainability plan. Your team must design a plan that keeps farms productive while restoring the aquifer.",
+    "stem_concepts": [
+        ("Managed Aquifer Recharge", "Intentionally directing surface water (from rivers, canals, or treated wastewater) into basins where it percolates down to recharge aquifers. This can supplement natural rainfall recharge."),
+        ("Deficit Irrigation", "Applying less water than crops ideally need during drought-tolerant growth stages. Many crops can produce 80-90% of normal yield with 60-70% of normal water — a significant savings."),
+        ("Water Banking", "Storing excess surface water underground during wet years for extraction during dry years. The aquifer acts as a natural reservoir, reducing evaporation losses compared to surface reservoirs.")
+    ],
+    "stem_eval": [
+        ("Expert (4)", "Plan uses model evidence to set specific extraction targets, addresses the subsidence feedback loop, includes recharge strategies, and balances agricultural and sustainability goals"),
+        ("Proficient (3)", "Plan references aquifer depletion data and proposes extraction limits with recharge strategies"),
+        ("Developing (2)", "Plan mentions reducing water use but lacks model evidence or specific sustainability targets"),
+        ("Beginning (1)", "Plan doesn't connect to groundwater system concepts or model findings")
+    ],
+    "support": [
+        "Provide groundwater budget worksheets where students calculate extraction vs. recharge rates",
+        "Use sponge-and-water demonstrations to model aquifer storage and compaction",
+        "Sentence frames: 'When irrigation exceeds recharge, the aquifer __ because __'"
+    ],
+    "extensions": [
+        "Research the Ogallala Aquifer and calculate how many years of water remain at current extraction rates",
+        "Add urban water demand and contamination risk to the model to explore competing pressures on groundwater",
+        "Design a managed aquifer recharge system for a local watershed and estimate how much additional recharge it could provide"
+    ],
+    "cross_curr": [
+        ("Math", "Calculate aquifer depletion rates using extraction and recharge data, and project how many years until the aquifer reaches critical levels"),
+        ("ELA", "Write a persuasive letter to a state water board arguing for groundwater conservation policies, using model evidence and real-world data"),
+        ("Social Studies", "Research how groundwater depletion affects different communities unequally — who loses access to water first, and what are the social justice implications?")
+    ],
+    "misconceptions": [
+        ("Groundwater is an underground lake or river", "Groundwater doesn't exist in open underground caverns (except in rare karst geology). It fills tiny pore spaces between rock and sediment particles, like water in a sponge. An aquifer is rock or sediment whose pores are saturated with water — it looks like wet sand, not an underground pool.", "The model treats the aquifer as a storage volume that fills and drains. Use a sponge demonstration: water is held in the tiny spaces, not in a hollow chamber."),
+        ("Rain immediately refills the aquifer", "Rainfall recharge is extremely slow. Water must percolate through soil, clay layers, and rock — a journey that can take months, years, or even centuries to reach deep aquifers. Most rainfall evaporates, runs off into rivers, or is absorbed by plant roots long before reaching the aquifer.", "In the model, even setting Rainfall Recharge to high values doesn't instantly restore Aquifer Level. The slow percolation rate means replenishment always lags behind extraction."),
+        ("We can always drill deeper to find more water", "Drilling deeper wells is a temporary solution that accelerates the problem. Deeper pumping lowers the water table faster, increases energy costs, and can access lower-quality water. It also increases subsidence by pulling water from deeper rock that is even more prone to compaction. Eventually, there is no deeper water to reach.", "In the model, increasing Agricultural Irrigation (analogous to drilling deeper) temporarily maintains supply but accelerates Aquifer Level decline, increases Land Subsidence, and reduces Long-term Water Security faster.")
+    ]
+}
