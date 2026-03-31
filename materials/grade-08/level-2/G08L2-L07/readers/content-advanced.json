@@ -1,0 +1,103 @@
+{
+  "story": {
+    "title": "Dr. Reyes: Decoding the Ocean's Invisible Symphony",
+    "text": "My lab isn't a quiet, sterile room; it's the entire ocean. As an acoustical physicist, I study the invisible symphony of sound underwater. Every ping from a submarine's sonar, every whale call, every rumble from a distant underwater earthquake is a wave carrying critical information. To decode it, you have to master the fundamental properties of waves.<br><br>Think about the difference between a whisper and a shout. A shout requires more energy from your vocal cords—that’s the <strong>Wave Source Energy</strong>. This energy directly translates into a sound wave with a greater <strong>Amplitude</strong>, which we perceive as loudness. The energy carried by a wave is actually proportional to the square of its amplitude, so a shout is exponentially more powerful than a whisper. The second part of the puzzle is the <strong>Medium</strong> the wave travels through. Sound moves over four times faster in water than in air. Why? Because water molecules are packed much more densely, allowing the vibrations to transfer far more efficiently. This change in <strong>Wave Speed</strong> is a critical variable in my calculations for accurately locating objects underwater.<br><br>Then there's the interplay between <strong>Frequency</strong> and <strong>Wavelength</strong>. A high-frequency sonar ping, which sounds like a high-pitched chirp, has a very short wavelength. This inverse relationship is defined by the equation λ = v/f. These short wavelengths allow us to create detailed images of the seafloor, but they don't travel as far. Low-frequency sounds, with their long wavelengths, can travel for thousands of kilometers. My work often involves analyzing how these waves interact. We model <strong>Wave Interference</strong>, where returning sonar echoes can either amplify each other or cancel out, creating complex patterns we must interpret. We even consider the <strong>Resonance Frequency</strong> of underwater structures, which could be dangerously amplified by the right sound wave. Understanding these principles isn't just academic; it's how we navigate the deep, protect our ships, and even listen for the planet's own rumblings.",
+    "think_abouts": [
+      "How does Dr. Reyes's work with sonar relate to the way bats or dolphins use echolocation?",
+      "If you wanted to send a secret message a very long distance underwater, would you use a high-frequency or low-frequency sound? Why?"
+    ],
+    "go_deeper": "Dr. Reyes mentions that wave energy is proportional to the square of its amplitude. If one ocean wave is three times taller than another, how many times more energy is it carrying?",
+    "margin_defs": [
+      {
+        "term": "Acoustical Physicist",
+        "definition": "A scientist who studies sound and its behavior."
+      },
+      {
+        "term": "Sonar",
+        "definition": "A system that uses sound waves to detect objects underwater."
+      },
+      {
+        "term": "Proportional",
+        "definition": "When two quantities change at the same rate relative to each other."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Reyes, why does sound travel faster through water than through air?"
+    ],
+    "word_bank": [
+      "Amplitude",
+      "Frequency",
+      "Wavelength",
+      "Wave Speed",
+      "Medium",
+      "Interference",
+      "Resonance"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "physicist",
+        "spanish": "físico"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "vibration",
+        "spanish": "vibración"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Amplitude",
+      "definition": "The maximum displacement or distance moved by a point on a vibrating body or wave measured from its equilibrium position. It corresponds to a wave's energy.",
+      "use_sentence": "A loud shout creates sound waves with a much larger amplitude than a whisper.",
+      "phonetic": "AM-pli-tood",
+      "cognate": "amplitud"
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of complete wave cycles that pass a point in a given amount of time, typically one second. It is measured in Hertz (Hz).",
+      "use_sentence": "The high frequency of the emergency siren produced a high-pitched sound.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance between two corresponding points of successive waves, such as from crest to crest or trough to trough.",
+      "use_sentence": "Because red light has a longer wavelength than blue light, it is scattered less by the atmosphere.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "The speed at which a wave travels through a medium, calculated by multiplying the wavelength by the frequency (v = λf).",
+      "use_sentence": "The wave speed of sound is significantly faster in solid steel than it is in the air.",
+      "phonetic": "WAYV speed",
+      "cognate": null
+    },
+    {
+      "term": "Medium",
+      "definition": "The substance or material that carries a mechanical wave.",
+      "use_sentence": "Water is the medium for ocean waves, while air is the most common medium for sound waves.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "medio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Reyes's work has applications in both military (submarines) and environmental science (earthquakes, whale tracking). What are some potential ethical considerations a scientist in his field might face?",
+      "frame": "A potential ethical issue could be..."
+    },
+    {
+      "prompt": "Noise-canceling headphones use destructive wave interference. What are some other everyday technologies that you think might rely on controlling wave properties?",
+      "frame": "I think that ___ might use wave properties because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

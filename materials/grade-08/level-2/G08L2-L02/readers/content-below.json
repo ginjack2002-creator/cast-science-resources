@@ -1,0 +1,113 @@
+{
+  "story": {
+    "title": "Dr. Osei-Mensah and the Ecosystem Domino Effect",
+    "text": "Hi, I'm Dr. Jasmine Osei-Mensah. I’m an ecologist at Yellowstone National Park. My job is to solve nature's big puzzles. I study how one small change can cause a huge domino effect. We call this a <strong>Trophic Cascade</strong>.<br><br>Imagine a food web without its top hunter, or <strong>Apex Predator</strong>. Let’s say all the wolves disappear. What happens next is a chain reaction I study closely.<br><br>1. First, the elk population grows out of control. There are no predators to hunt them. This loss of <strong>Top-Down Control</strong> is the first domino to fall.<br>2. Next, the huge elk herds eat all the young trees and plants along the rivers. This is called <strong>Overgrazing</strong>. It leaves the ground bare and unprotected.<br>3. Then, without plant roots to hold the soil, the riverbanks start to collapse and wash away. This erosion clouds the water and changes the shape of the river itself.<br>4. Finally, the whole system loses its balance. This poor <strong>Ecosystem Stability</strong> means other animals, like birds and beavers, can't find food or shelter.<br><br>By understanding these cascades, we can make better decisions to protect our amazing wild places.",
+    "think_abouts": [
+      "What might be the 'first domino' to fall in an ocean ecosystem?",
+      "How is a trophic cascade different from a simple food chain?"
+    ],
+    "go_deeper": "Dr. Osei-Mensah also studies the 'Landscape of Fear.' How might the *fear* of a predator change where and when elk eat, even if they aren't being hunted?",
+    "margin_defs": [
+      {
+        "term": "Trophic Cascade",
+        "definition": "A domino effect in nature caused by one species."
+      },
+      {
+        "term": "Apex Predator",
+        "definition": "The top hunter in a food web."
+      },
+      {
+        "term": "Top-Down Control",
+        "definition": "When predators control the animals below them."
+      },
+      {
+        "term": "Overgrazing",
+        "definition": "When too many animals eat all the plants."
+      },
+      {
+        "term": "Ecosystem Stability",
+        "definition": "How healthy and balanced an ecosystem is."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what is the first step that starts a trophic cascade in the story?"
+    ],
+    "word_bank": [
+      "predator",
+      "ecosystem",
+      "herbivore",
+      "vegetation",
+      "erosion"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Ecosystem",
+        "spanish": "Ecosistema"
+      },
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Predator",
+        "spanish": "Depredador"
+      },
+      {
+        "english": "Vegetation",
+        "spanish": "Vegetación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction in an ecosystem caused by adding or removing a top predator.",
+      "use_sentence": "Removing wolves from the park triggered a trophic cascade that harmed the rivers.",
+      "phonetic": "TRO-fik kas-KAYD",
+      "cognate": "Cascada"
+    },
+    {
+      "term": "Apex Predator",
+      "definition": "The top hunter in a food web that isn't hunted by other animals.",
+      "use_sentence": "A killer whale is an apex predator in the ocean.",
+      "phonetic": "AY-peks PRED-uh-ter",
+      "cognate": "Depredador"
+    },
+    {
+      "term": "Overgrazing",
+      "definition": "When too many animals eat plants so fast they can't grow back.",
+      "use_sentence": "The field turned to dust because of overgrazing by the large herd of cattle.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Ecosystem Stability",
+      "definition": "The ability of an ecosystem to stay balanced and healthy over time.",
+      "use_sentence": "Having many different types of plants and animals improves ecosystem stability.",
+      "phonetic": "EE-ko-sis-tem stuh-BIL-ih-tee",
+      "cognate": "Estabilidad"
+    },
+    {
+      "term": "Top-Down Control",
+      "definition": "When predators at the top of a food web control the population of their prey.",
+      "use_sentence": "Spiders provide top-down control on the number of insects in a garden.",
+      "phonetic": null,
+      "cognate": "Control"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Osei-Mensah studies wolves in Yellowstone. What is an apex predator in a different ecosystem, like an ocean or a desert? What could happen if it disappeared?",
+      "frame": "In a ___ ecosystem, the apex predator might be ___. If it disappeared, then ___."
+    },
+    {
+      "prompt": "How could reintroducing an apex predator, like bringing wolves back to Yellowstone, help fix the problems caused by their absence?",
+      "frame": "Bringing back an apex predator could help because it would ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

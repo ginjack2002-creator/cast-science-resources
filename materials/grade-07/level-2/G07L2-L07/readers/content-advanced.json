@@ -1,0 +1,91 @@
+{
+  "story": {
+    "title": "Dr. Laura Mendez: Reading Earth's 4.6-Billion-Year Diary",
+    "text": "My colleagues at the U.S. Geological Survey and I are essentially Earth's biographers. When someone asks why our 4.6-billion-year-old planet isn't just covered in ancient, static rocks, I show them a piece of granite. I explain that as a petrologist, I read the dynamic story of creation and destruction written in its crystals. Earth is a relentless recycling system.<br><br>The primary engine for this cycle operates deep underground, where immense <strong>heat and pressure</strong> govern everything. When these forces are extreme enough, rock melts into magma. This molten material is the source for all <strong>igneous rock</strong>, a process of formation that depends heavily on its cooling environment. When magma cools slowly, deep underground, it forms intrusive rocks like granite, whose large, interlocking crystals of quartz and feldspar tell a story of gradual solidification. If that same magma erupts as lava and cools rapidly at the surface, it forms extrusive rocks like basalt, with microscopic crystals you can't see.<br><br>But what if the rock doesn't melt? If it's subjected to intense <strong>heat and pressure</strong> but remains solid, it undergoes a <strong>metamorphic transformation</strong>. The rock's entire mineral structure realigns and recrystallizes, turning a sedimentary shale into a durable slate, for example. This process is a direct positive feedback loop: greater depth means greater pressure, which drives more transformation.<br><br>Simultaneously, at the surface, the <strong>weathering rate</strong> relentlessly attacks any exposed rock. This breaks down mountains, turning solid granite into sand and clay. These particles are transported by rivers and wind, eventually settling and accumulating in vast <strong>sedimentary layers</strong>. As layers build, the weight compacts the material below, cementing it into <strong>sedimentary rock</strong>. This very process of burial can set the stage for the next chapter; if buried deep enough, these sedimentary layers will themselves be subjected to the heat and pressure that trigger metamorphism, continuing the endless cycle. Each rock tells a piece of this planetary story, and it's our job to translate it.",
+    "think_abouts": [
+      "How can one type of rock become another?",
+      "What clues does a rock's appearance, like crystal size, give Dr. Mendez about its history?"
+    ],
+    "go_deeper": "If a tectonic plate carrying sedimentary rock subducts under another plate, what are all the possible transformations that rock could undergo on its journey into the mantle and potentially back to the surface?",
+    "margin_defs": [
+      {
+        "term": "Petrologist",
+        "definition": "A scientist who studies the origin, composition, and structure of rocks."
+      },
+      {
+        "term": "USGS",
+        "definition": "The U.S. Geological Survey, a science agency for the United States government."
+      }
+    ],
+    "check_prompts": [
+      "What two forces deep inside Earth are the primary drivers of igneous and metamorphic rock formation?"
+    ],
+    "word_bank": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic",
+      "Weathering",
+      "Pressure",
+      "Magma"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Formation",
+        "spanish": "Formación"
+      },
+      {
+        "english": "Transformation",
+        "spanish": "Transformación"
+      },
+      {
+        "english": "Pressure",
+        "spanish": "Presión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Igneous Rock",
+      "definition": "Rock formed from the cooling and solidification of magma or lava, either below or above Earth's surface.",
+      "use_sentence": "The granite countertop was made of igneous rock that cooled slowly deep underground, which is why it has large, visible crystals.",
+      "phonetic": "IG-nee-us",
+      "cognate": "Roca Ígnea"
+    },
+    {
+      "term": "Sedimentary Rock",
+      "definition": "Rock formed from compressed and cemented layers of sediment, often containing fossils.",
+      "use_sentence": "While hiking, we found a piece of sedimentary rock that had the clear imprint of an ancient leaf fossilized within its layers.",
+      "phonetic": "sed-uh-MEN-tuh-ree",
+      "cognate": "Roca Sedimentaria"
+    },
+    {
+      "term": "Metamorphic Rock",
+      "definition": "Rock that has been transformed by extreme heat and pressure without melting, changing its mineral structure.",
+      "use_sentence": "Marble is a metamorphic rock that forms when limestone is subjected to intense heat and pressure deep within the Earth's crust.",
+      "phonetic": "met-uh-MOR-fik",
+      "cognate": "Roca Metamórfica"
+    },
+    {
+      "term": "Weathering",
+      "definition": "The breaking down of rocks by physical, chemical, or biological processes at Earth's surface.",
+      "use_sentence": "Over millions of years, weathering by wind and rain carved the hard rock of the mountain into a series of deep canyons.",
+      "phonetic": "WEH-thur-ing",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Mendez calls the rock cycle 'Earth's grand recycling system.' What does she mean by this, and how does this system ensure that Earth doesn't run out of new rock?",
+      "frame": null
+    },
+    {
+      "prompt": "Imagine you find a rock with large, visible crystals and another with a smooth, glassy texture. Based on Dr. Mendez's work, what can you infer about where and how each of these rocks formed?",
+      "frame": "The rock with large crystals likely formed..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

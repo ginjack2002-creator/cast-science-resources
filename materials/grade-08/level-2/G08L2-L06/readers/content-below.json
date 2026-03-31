@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Liu's Hunt for DNA Typos",
+    "text": "Hi, I’m Dr. Michelle Liu. I’m a cancer genetics researcher. I study how tiny changes in our DNA can lead to big problems like cancer.<br><br>Think of your DNA as a huge instruction book inside every cell. This book has all the recipes for making proteins. Proteins do all the important jobs in your body.<br><br>1. Your cells are always dividing to help you grow and heal. Every time they divide, they must copy the entire DNA instruction book. Sometimes, they make a small typo. This typo is a <strong>mutation</strong>.<br><br>2. Some things in our environment can cause more typos. Things like UV radiation from the sun are called a <strong>mutagen</strong>. A mutagen can damage DNA and increase the chances of mistakes.<br><br>3. This process of using a gene's instructions is called <strong>gene expression</strong>. A <strong>mutation</strong> can change these instructions. This can change a <strong>protein’s function</strong>, meaning the protein might not do its job correctly anymore.<br><br>4. In my lab, we study genes that act like brakes to stop cells from dividing too fast. If a mutation breaks these 'brake' genes, cells can grow uncontrollably. This is how cancer can start, and it harms the <strong>organism's fitness</strong>.<br><br>Your cells have amazing repair tools to fix most typos. But over a lifetime, a few mistakes can build up. By studying them, we hope to find better ways to treat cancer.",
+    "think_abouts": [
+      "How is a DNA mutation like a typo in a recipe?",
+      "Why is it important that our cells can fix most DNA typos?"
+    ],
+    "go_deeper": "Besides sunlight, what other things in our environment might be mutagens that damage DNA?",
+    "margin_defs": [
+      {
+        "term": "DNA Repair",
+        "definition": "The cell's system for finding and fixing mistakes in its DNA."
+      },
+      {
+        "term": "Tumor Suppressor Genes",
+        "definition": "Genes that act like brakes to stop cells from dividing too fast."
+      }
+    ],
+    "check_prompts": [
+      "What is one example of a mutagen mentioned in the text?"
+    ],
+    "word_bank": [
+      "Mutation",
+      "Mutagen",
+      "Protein Function",
+      "Organism Fitness",
+      "Gene Expression"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Mutation",
+        "spanish": "Mutación"
+      },
+      {
+        "english": "Protein",
+        "spanish": "Proteína"
+      },
+      {
+        "english": "Organism",
+        "spanish": "Organismo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mutation",
+      "definition": "A change or 'typo' in the DNA code.",
+      "use_sentence": "A single mutation in a gene can change how a protein works.",
+      "phonetic": "myoo-TAY-shun",
+      "cognate": "Mutación"
+    },
+    {
+      "term": "Mutagen",
+      "definition": "Something in the environment, like sunlight or chemicals, that can cause mutations in DNA.",
+      "use_sentence": "Doctors say that UV light from the sun is a mutagen that can cause skin cancer.",
+      "phonetic": "MYOO-tuh-jen",
+      "cognate": null
+    },
+    {
+      "term": "Protein Function",
+      "definition": "The specific job that a protein does in a cell.",
+      "use_sentence": "If a protein's shape changes, its protein function might stop working correctly.",
+      "phonetic": null,
+      "cognate": "Función de la proteína"
+    },
+    {
+      "term": "Organism Fitness",
+      "definition": "How well an organism can survive and have babies in its environment.",
+      "use_sentence": "A harmful mutation can lower an organism's fitness, making it harder to live.",
+      "phonetic": null,
+      "cognate": "Aptitud del organismo"
+    },
+    {
+      "term": "Gene Expression",
+      "definition": "The process of a cell reading a gene's instructions to make a protein.",
+      "use_sentence": "Gene expression determines which proteins are made in a brain cell versus a skin cell.",
+      "phonetic": null,
+      "cognate": "Expresión génica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If a person spends a lot of time in the sun without protection, how might that affect their cells' DNA over many years?",
+      "frame": "Spending a lot of time in the sun could lead to more..."
+    },
+    {
+      "prompt": "Dr. Liu says mutations can be harmful, neutral, or even helpful. Can you think of a situation where a mutation might be helpful for an animal's survival?",
+      "frame": "A helpful mutation might be..."
+    },
+    {
+      "prompt": "Dr. Liu studies 'brake' genes that stop cell growth. Why is it so dangerous if one of these genes gets a mutation?",
+      "frame": "If a 'brake' gene gets a mutation, a cell might..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

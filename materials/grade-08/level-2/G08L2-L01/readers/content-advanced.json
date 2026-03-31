@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Brooks's Digital Ark: Modeling the Race Against Extinction",
+    "text": "At my lab at Harvard, I don't work with test tubes as much as you might think; my primary tool is a supercomputer, and my experiment is a digital world. I’m Dr. Terrence Brooks, and I build complex simulations to answer a critical question: Can a population adapt when its environment changes faster than it can evolve?<br><br>Imagine a population of birds facing a sudden, severe drought. This intense <strong>Environmental Pressure</strong> is the first variable I input. My model immediately shows a precipitous drop in the <strong>Survival Rate</strong>. But the story doesn't end there. The key to survival is the population’s hidden strength: its <strong>Population Diversity</strong>. If the group has a wide variety of beak shapes and sizes, there's a higher probability that some individuals will already possess a trait that allows them to crack the few, tough seeds that remain. This increases the <strong>Favorable Trait Frequency</strong> among the survivors.<br><br>This is where <strong>Natural Selection</strong> kicks into high gear. The individuals with higher <strong>Fitness</strong>—those with the advantageous beaks—survive and reproduce, passing those traits to their offspring. My model shows the frequency of the ‘tough-seed’ beak trait increasing with each subsequent generation. However, if the initial diversity is too low, or the drought too severe, the population crashes. The simulation flatlines; extinction.<br><br>My work extends beyond these theoretical models. We see these principles in the real world. The ‘Founder Effect,’ for instance, explains why isolated populations are so vulnerable; they start with a limited genetic toolkit. We also see the opposite in agriculture, where selective breeding for perfect-looking fruit reduces diversity, making entire crops susceptible to a single disease. But there is hope. We've used these models to inform 'genetic rescue' missions, like introducing Texas cougars to save the dwindling Florida panther population, successfully restoring the diversity they needed to survive. My job is to run the numbers, to predict the tipping points, and to give conservationists the data they need to act before it's too late.",
+    "think_abouts": [
+      "What two factors are most critical for a population's survival according to Dr. Brooks's models?",
+      "How is a computer simulation a useful tool for a population geneticist compared to only studying animals in the wild?"
+    ],
+    "go_deeper": "If selective breeding in agriculture reduces genetic diversity, what potential risks does this pose for our global food supply in the face of climate change and emerging diseases?",
+    "margin_defs": [
+      {
+        "term": "simulation",
+        "definition": "a computer model of a real-world process"
+      },
+      {
+        "term": "precipitous",
+        "definition": "dangerously high or steep; happening very quickly"
+      },
+      {
+        "term": "susceptible",
+        "definition": "likely to be harmed or influenced by something"
+      }
+    ],
+    "check_prompts": [
+      "According to the text, what is the direct negative effect of increased Environmental Pressure?"
+    ],
+    "word_bank": [
+      "Environmental Pressure",
+      "Population Diversity",
+      "Favorable Trait Frequency",
+      "Natural Selection",
+      "Fitness"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Selection",
+        "spanish": "Selección"
+      },
+      {
+        "english": "Diversity",
+        "spanish": "Diversidad"
+      },
+      {
+        "english": "Extinction",
+        "spanish": "Extinción"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Environmental Pressure",
+      "definition": "An external factor, such as resource scarcity or predation, that affects an organism's ability to survive and reproduce in a given environment.",
+      "use_sentence": "A prolonged drought acted as an intense environmental pressure on the local deer population, favoring individuals who could survive on less water.",
+      "phonetic": null,
+      "cognate": "Presión Ambiental"
+    },
+    {
+      "term": "Population Diversity",
+      "definition": "The total range of genetic and trait variations within a specific population, which provides the raw material for natural selection.",
+      "use_sentence": "The high population diversity in the finches allowed some to survive the new disease, whereas a less diverse group might have been wiped out completely.",
+      "phonetic": null,
+      "cognate": "Diversidad de la Población"
+    },
+    {
+      "term": "Favorable Trait Frequency",
+      "definition": "The proportion of individuals in a population that possess a specific inherited characteristic that enhances their survival and reproduction in the current environment.",
+      "use_sentence": "After several cold winters, the favorable trait frequency for thicker fur in the wolf pack increased significantly.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Natural Selection",
+      "definition": "The differential survival and reproduction of individuals due to differences in phenotype; the key mechanism of evolution.",
+      "use_sentence": "Through natural selection, the peppered moths with darker coloration became more common in industrial areas where tree bark was darkened by soot.",
+      "phonetic": null,
+      "cognate": "Selección Natural"
+    },
+    {
+      "term": "Fitness",
+      "definition": "A measure of an organism's reproductive success; its ability to survive and pass its genes on to the next generation.",
+      "use_sentence": "In the arctic environment, the polar bear's white fur and thick blubber contribute to its high fitness.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Brooks mentions 'genetic rescue' for Florida panthers. What are the potential benefits and ethical considerations of humans intervening to manage the genetic diversity of a wild species?",
+      "frame": "A primary benefit of genetic rescue is..., however, an ethical concern I have is that..."
+    },
+    {
+      "prompt": "The story contrasts natural selection with selective breeding. How might a trait that is 'favorable' in selective breeding (e.g., a dog's flat face) be unfavorable for an animal's fitness in the wild?",
+      "frame": "A trait like a pug's flat face, which humans selected for, would likely decrease its fitness in the wild because..."
+    },
+    {
+      "prompt": "How could Dr. Brooks's models be used to predict the impact of a new, rapidly-spreading disease on a specific animal population? What two variables would be most important to input into the simulation?",
+      "frame": "To model a new disease, the most important variables would be the initial... and the intensity of the disease as an..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Liu's Hunt for DNA Typos",
+    "text": "Hello, I am Dr. Michelle Liu. I am a cancer genetics researcher. I study how DNA changes over your lifetime. Think of your DNA as an instruction manual. Your cells copy this manual every time they divide.<br><br>Sometimes, the copy has a small error. We call this a <strong>mutation</strong>. Outside factors often cause these errors. These factors are called <strong>mutagens</strong>. For example, UV radiation from the sun is a <strong>mutagen</strong>.<br><br>More sun exposure increases the <strong>mutation</strong> frequency. Your cells work hard to fix these DNA mistakes. They have special DNA repair systems. But sometimes, a mistake is missed.<br><br>Over many years, these small mistakes add up. A <strong>mutation</strong> can change a gene's code. This can change a protein's shape and its job. We call this a change in <strong>protein function</strong>. This change can affect an organism's health, or its <strong>organism fitness</strong>.<br><br>Some genes act like brakes to stop cell division. A key <strong>mutation</strong> can break these brakes. Uncontrolled cell growth can lead to cancer. My research helps us understand how to fix these problems.",
+    "think_abouts": [
+      "How can something outside the body, like the sun, change something inside your cells?",
+      "Dr. Liu says cells have tools to fix mistakes. Why do you think some mistakes are still missed?"
+    ],
+    "go_deeper": "Besides sunlight, what other things in the environment might be mutagens that could increase mutation rates?",
+    "margin_defs": [
+      {
+        "term": "mutation",
+        "definition": "a change in DNA"
+      },
+      {
+        "term": "mutagen",
+        "definition": "something that causes DNA changes"
+      },
+      {
+        "term": "protein function",
+        "definition": "the job a protein does"
+      }
+    ],
+    "check_prompts": [
+      "What is one example of a mutagen mentioned in the text?"
+    ],
+    "word_bank": [
+      "mutation",
+      "mutagen",
+      "protein function",
+      "organism fitness",
+      "cell division"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "mutation",
+        "spanish": "mutación"
+      },
+      {
+        "english": "protein",
+        "spanish": "proteína"
+      },
+      {
+        "english": "radiation",
+        "spanish": "radiación"
+      },
+      {
+        "english": "cancer",
+        "spanish": "cáncer"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mutation",
+      "definition": "A change in the DNA code.",
+      "use_sentence": "A single mutation can sometimes change an organism's trait.",
+      "phonetic": "myoo-TAY-shun",
+      "cognate": "mutación"
+    },
+    {
+      "term": "Mutagen",
+      "definition": "Something in the environment that can cause a mutation in DNA.",
+      "use_sentence": "UV light from the sun is a common mutagen.",
+      "phonetic": "MYOO-tuh-jen",
+      "cognate": "mutágeno"
+    },
+    {
+      "term": "Protein Function",
+      "definition": "The specific job that a protein does in a cell.",
+      "use_sentence": "The mutation changed the protein function, so it could not work correctly.",
+      "phonetic": "PROH-teen FUNGK-shun",
+      "cognate": "función de la proteína"
+    },
+    {
+      "term": "Organism Fitness",
+      "definition": "How well an organism can survive and have babies in its environment.",
+      "use_sentence": "A helpful mutation can increase an organism's fitness.",
+      "phonetic": "OR-guh-niz-uhm FIT-ness",
+      "cognate": null
+    },
+    {
+      "term": "Gene Expression",
+      "definition": "The process of using a gene's instructions to make a protein.",
+      "use_sentence": "Gene expression determines which proteins a cell makes.",
+      "phonetic": "jeen ek-SPRESH-un",
+      "cognate": "expresión génica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Liu says mutations can build up over a lifetime. Why might the risk of some cancers increase as a person gets older?",
+      "frame": "As a person gets older, the risk of cancer might increase because ___."
+    },
+    {
+      "prompt": "If a mutation happens in a skin cell from sun exposure, can that person pass the mutation to their children? Why or why not?",
+      "frame": "A person can/cannot pass a skin cell mutation to their children because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

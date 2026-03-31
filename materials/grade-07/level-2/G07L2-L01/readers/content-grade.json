@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Decoding the Invisible War with Dr. Elena Rodriguez",
+    "text": "Hi, I’m Dr. Elena Rodriguez, and I work at the National Institutes of Health. My job is to study the invisible war happening inside you every single day: the fight between your immune system and invaders.<br><br>Think of your body as a fortress. A <strong>pathogen</strong> is any microorganism, like a virus or bacterium, that tries to break in and cause disease. The size of the invading army—what we call the pathogen load—often determines how sick you might get. A bigger invasion is harder to fight off quickly. Your first line of defense is your army of <strong>white blood cells</strong>, which are special cells that patrol your body, identify enemies, and attack them. A fast and strong response from these cells can stop an infection before it gets serious.<br><br>But the immune system has a secret weapon: memory. When your white blood cells encounter a new pathogen, they learn to create special proteins called <strong>antibodies</strong>. An <strong>antibody</strong> is like a custom-made key that fits perfectly onto a specific pathogen, marking it for destruction. The problem is, creating these for the first time takes a while.<br><br>This is where my work comes in. A <strong>vaccine</strong> introduces a safe, weakened or inactive piece of a pathogen to your immune system. It’s like giving your army the enemy’s battle plans without a real fight. Your body learns, produces antibodies, and creates memory cells. So if the real pathogen ever invades, your antibody production is immediate and powerful, neutralizing the threat. We’re constantly working to design smarter vaccines that create longer-lasting memory, keeping you safe from future diseases.",
+    "think_abouts": [
+      "Why do you think a large 'Pathogen Load' makes it harder for the immune system to win quickly?",
+      "How is a vaccine like a training exercise or a set of battle plans for an army?"
+    ],
+    "go_deeper": "If a vaccine trains the immune system to recognize a specific pathogen, why do we need a new flu shot every year? How does the flu virus's changing 'disguise' (antigenic drift) trick our defenses?",
+    "margin_defs": [
+      {
+        "term": "Pathogen",
+        "definition": "an invading germ, like a virus or bacterium"
+      },
+      {
+        "term": "Antibody",
+        "definition": "a special protein that targets a specific germ for destruction"
+      }
+    ],
+    "check_prompts": [
+      "What is the main job of an antibody?"
+    ],
+    "word_bank": [
+      "Pathogen",
+      "Antibody",
+      "Vaccine",
+      "White Blood Cell"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Infection",
+        "spanish": "Infección"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Vaccine",
+        "spanish": "Vacuna"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Pathogen",
+      "definition": "A microorganism such as a bacterium or virus that can cause disease when it enters the body.",
+      "use_sentence": "The flu is caused by a pathogen that infects the respiratory system.",
+      "phonetic": "PATH-uh-jen",
+      "cognate": "Patógeno"
+    },
+    {
+      "term": "Antibody",
+      "definition": "A Y-shaped protein produced by white blood cells that specifically targets and neutralizes a particular pathogen.",
+      "use_sentence": "After a vaccine, your body makes antibodies to be ready for a future infection.",
+      "phonetic": "AN-tee-bod-ee",
+      "cognate": "Anticuerpo"
+    },
+    {
+      "term": "Vaccine",
+      "definition": "A weakened or inactive form of a pathogen that trains the immune system to recognize and fight the real pathogen.",
+      "use_sentence": "The doctor gave me a vaccine to protect me from getting sick.",
+      "phonetic": "vak-SEEN",
+      "cognate": "Vacuna"
+    },
+    {
+      "term": "White Blood Cell",
+      "definition": "A type of blood cell that defends the body against infection by identifying, attacking, and destroying pathogens.",
+      "use_sentence": "When you have an infection, your body produces more white blood cells to fight it.",
+      "phonetic": "WYT BLUD SEL",
+      "cognate": "Glóbulo blanco"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Rodriguez describes the immune system as an 'invisible war.' What other metaphors or analogies could you use to describe how the immune system works? Explain your idea.",
+      "frame": "I could describe the immune system as a..."
+    },
+    {
+      "prompt": "If you were a scientist like Dr. Rodriguez designing a new vaccine, what would be the most important factor to consider to make sure it was both effective and safe?",
+      "frame": "To design a good vaccine, I would need to think about..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

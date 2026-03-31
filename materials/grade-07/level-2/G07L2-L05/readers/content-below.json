@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Nikolaou's Notebook: Watching Evolution Happen",
+    "text": "Hi, I’m Dr. Sophia Nikolaou. I’m an evolutionary biologist. In my lab, I study how groups of animals change over many generations. It’s like watching evolution in fast-forward.<br><br>Let’s think about a large population of lizards. They are not all identical. Some are brown, and some are gray. This is called <strong>Genetic Variation</strong>. Having many different traits in a group is very important for survival.<br><br>CHECK: Why is it important for a group to have variation?<br><br>Now, imagine their environment changes quickly. A volcano covers their sandy ground with dark gray rock. This creates a strong <strong>Selection Pressure</strong>. Suddenly, it is dangerous to be a brown lizard. Hungry birds can see them easily against the dark rocks. Gray lizards, however, blend in perfectly.<br><br>This is where <strong>Natural Selection</strong> happens. More gray lizards survive to have babies. They pass their gray color trait to their young. Over many years, the whole population changes. A helpful trait that helps an animal survive and reproduce is called an <strong>Adaptation</strong>. The lizard population adapted to its new home and is now better suited to survive there.",
+    "think_abouts": [
+      "What might happen to the lizard population if the ground changed back to brown sand?",
+      "If all the lizards were exactly the same color, how would the volcano have affected them?"
+    ],
+    "go_deeper": "What if a new, random mutation created a jet-black lizard? How might that affect the population on the dark volcanic rock?",
+    "margin_defs": [
+      {
+        "term": "biologist",
+        "definition": "a scientist who studies living things."
+      },
+      {
+        "term": "population",
+        "definition": "a group of the same kind of animal living in an area."
+      },
+      {
+        "term": "trait",
+        "definition": "a feature of an organism, like eye color or fur color."
+      }
+    ],
+    "check_prompts": [
+      "Why is it important for a group to have variation?"
+    ],
+    "word_bank": [
+      "Adaptation",
+      "Genetic Variation",
+      "Natural Selection",
+      "Selection Pressure"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "evolution",
+        "spanish": "evolución"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "variation",
+        "spanish": "variación"
+      },
+      {
+        "english": "selection",
+        "spanish": "selección"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Natural Selection",
+      "definition": "The process where living things with helpful traits survive and have more babies.",
+      "use_sentence": "Through natural selection, the fastest rabbits were the ones that escaped the fox.",
+      "phonetic": "NA-chur-ull seh-LEK-shun",
+      "cognate": "selección natural"
+    },
+    {
+      "term": "Selection Pressure",
+      "definition": "A challenge in the environment that makes it harder for some living things to survive.",
+      "use_sentence": "A long drought created a selection pressure for plants that could store water.",
+      "phonetic": "seh-LEK-shun PREH-shur",
+      "cognate": "presión de selección"
+    },
+    {
+      "term": "Adaptation",
+      "definition": "A helpful trait that an animal has to survive in its home.",
+      "use_sentence": "A polar bear's thick fur is an adaptation for living in the cold.",
+      "phonetic": "a-dap-TAY-shun",
+      "cognate": "adaptación"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "The differences in traits between individuals in a group.",
+      "use_sentence": "The dogs had a lot of genetic variation, with different fur, sizes, and shapes.",
+      "phonetic": "juh-NEH-tik vair-ee-AY-shun",
+      "cognate": "variación genética"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nikolaou says that having many different traits is important for survival. Describe a different animal and a possible environmental change. What traits would help it survive?",
+      "frame": "If the environment for a [animal name] changed by [environmental change], the trait that would help it survive is ___ because ___."
+    },
+    {
+      "prompt": "How does a 'selection pressure' like the dark rock connect to the idea of 'natural selection'?",
+      "frame": "A selection pressure like the dark rock causes natural selection to happen by ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

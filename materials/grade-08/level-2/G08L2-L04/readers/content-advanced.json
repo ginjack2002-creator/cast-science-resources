@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Kenji Nakamura and the Climate Amplifier",
+    "text": "At the National Center for Atmospheric Research, people often ask me how a few degrees of warming can be such a big deal. The answer isn't just about the initial temperature change; it's about the chain reactions that follow. My job as a climate feedback modeler is to understand these chain reactions, which we call <strong>feedback loops</strong>.<br><br>Think of it like a snowball rolling downhill. A small push starts it, but as it rolls, it picks up more snow, getting bigger and faster. In the climate system, the initial push is the increased atmospheric CO2 from human activities, which triggers the <strong>greenhouse effect</strong> and warms the planet. This initial warming starts melting Earth's ice cover. That’s where the snowball really starts accelerating.<br><br>Ice is bright white, so it has a high <strong>albedo</strong>, meaning it reflects a lot of sunlight back into space. When ice melts, it exposes darker ocean or land underneath, which has a lower <strong>albedo</strong>. This darker surface absorbs more sunlight, which causes even more warming, which then melts more ice. This cycle is a classic <strong>positive feedback</strong>; the effect amplifies the original cause, pushing the system further and faster in the same direction.<br><br>My computer models simulate this ice-albedo feedback, but they also have to account for other, even more complex loops. For instance, warmer air holds more water vapor, which is itself a powerful greenhouse gas, amplifying warming further. The role of clouds is one of our biggest uncertainties, as some types cool the planet while others trap more heat. By modeling these interconnected systems, we can identify potential <strong>tipping points</strong>—thresholds where these feedback loops could lock our planet into a new, much warmer state. Understanding these dynamics is critical for forecasting the future and informing the choices we make today.",
+    "think_abouts": [
+      "What is the 'snowball effect' that Dr. Nakamura uses as an analogy for positive feedback?",
+      "Besides melting ice, what are some other consequences of a rising global temperature?"
+    ],
+    "go_deeper": "Dr. Nakamura mentions that clouds are a major uncertainty in climate models. Why might it be so difficult to predict whether future clouds will have a net warming or cooling effect on the planet?",
+    "margin_defs": [
+      {
+        "term": "Albedo",
+        "definition": "The measure of how much light is reflected by a surface. Bright, white ice has a high albedo."
+      },
+      {
+        "term": "Tipping Point",
+        "definition": "A critical threshold where a small change can trigger a large, often irreversible, shift in a system."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, explain how melting ice, albedo, and global temperature are connected in a positive feedback loop."
+    ],
+    "word_bank": [
+      "Feedback Loop",
+      "Albedo",
+      "Greenhouse Effect",
+      "Tipping Point",
+      "Positive Feedback"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      },
+      {
+        "english": "Positive",
+        "spanish": "Positivo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Feedback Loop",
+      "definition": "A cycle within a system where an output is routed back as an input, either amplifying (positive) or dampening (negative) the original change.",
+      "use_sentence": "The ice-albedo cycle is a powerful feedback loop that accelerates warming in the Arctic.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Albedo",
+      "definition": "The proportion of light or radiation that is reflected by a surface, typically that of a planet or moon.",
+      "use_sentence": "Fresh snow has a very high albedo, reflecting up to 90% of incoming sunlight.",
+      "phonetic": "al-BEE-doh",
+      "cognate": null
+    },
+    {
+      "term": "Greenhouse Effect",
+      "definition": "The process by which certain gases in the atmosphere trap heat, warming the Earth's surface to a temperature above what it would be without this atmosphere.",
+      "use_sentence": "Without the natural greenhouse effect, Earth would be too cold to support life as we know it.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Tipping Point",
+      "definition": "A critical threshold at which a system reorganizes, often abruptly and irreversibly, into a new state.",
+      "use_sentence": "Scientists are concerned that the Amazon rainforest may be approaching a tipping point where it could transform into a savanna.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Positive Feedback",
+      "definition": "A type of feedback that amplifies an initial change, leading to further change in the same direction, often causing instability.",
+      "use_sentence": "Because melting permafrost releases methane, a greenhouse gas, it creates a positive feedback that leads to more warming.",
+      "phonetic": null,
+      "cognate": "Retroalimentación Positiva"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If a positive feedback loop amplifies change like a snowball, what might a 'negative feedback loop' do? Can you think of an example in climate or another system (like a thermostat in a house)?",
+      "frame": null
+    },
+    {
+      "prompt": "Dr. Nakamura's models help society understand potential 'tipping points.' Why is it so crucial for communities and global leaders to know where these thresholds might be?",
+      "frame": "One reason identifying tipping points is so important is because..."
+    },
+    {
+      "prompt": "The story mentions that oceans have absorbed most of the extra heat. How might this affect marine ecosystems and what new feedback loops could it create?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Dr. Rodriguez and the Body's Secret Army",
+    "text": "Hi, I'm Dr. Elena Rodriguez. I study the invisible war happening inside you every day. Your body has a secret army called the immune system. Its job is to protect you from invaders.<br><br>1. The Invasion: An invader is called a <strong>pathogen</strong>. This could be a virus or bacteria. If a lot of pathogens get in at once, that’s a high 'Pathogen Load'. This can make an infection worse.<br><br>2. The First Soldiers: Your body sounds an alarm. It sends out its first soldiers: <strong>White Blood Cells</strong>. These cells are amazing fighters. They find and destroy the pathogens. A quick 'White Blood Cell Response' is key to stopping the invasion early.<br><br>3. The Special Weapons: Your body also creates special weapons called <strong>Antibodies</strong>. They are like guided missiles. Each antibody is perfectly designed to find and stop one specific pathogen. The faster your body makes antibodies, the faster you get better.<br><br>4. The Training Plan: My job is to help your army train. A <strong>vaccine</strong> is like a training plan. It shows your body a weak or dead piece of a pathogen. Your army learns to make the right antibodies without a real fight. That way, if the real pathogen ever invades, your body is already prepared to win.",
+    "think_abouts": [
+      "How does a vaccine give your body an advantage in the 'invisible war'?",
+      "If the 'White Blood Cell Response' is slow, what do you think happens to the 'Infection Severity'?"
+    ],
+    "go_deeper": "The flu virus changes its 'disguise' every year. Why do you think you might need a new flu vaccine each year to stay protected?",
+    "margin_defs": [
+      {
+        "term": "Pathogen",
+        "definition": "A germ, like a virus or bacteria, that can make you sick."
+      },
+      {
+        "term": "Antibody",
+        "definition": "A special protein made by your body to fight a specific germ."
+      }
+    ],
+    "check_prompts": [
+      "What is the job of a White Blood Cell?"
+    ],
+    "word_bank": [
+      "Pathogen",
+      "Antibody",
+      "Vaccine",
+      "White Blood Cell"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Infection",
+        "spanish": "Infección"
+      },
+      {
+        "english": "Vaccine",
+        "spanish": "Vacuna"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Pathogen",
+      "definition": "A germ, like a bacterium or virus, that can cause a disease.",
+      "use_sentence": "The flu is caused by a pathogen that enters your body.",
+      "phonetic": "PATH-oh-jen",
+      "cognate": "Patógeno"
+    },
+    {
+      "term": "Antibody",
+      "definition": "A protein made by white blood cells that targets and stops a specific pathogen.",
+      "use_sentence": "My body produced an antibody to fight the cold virus.",
+      "phonetic": "AN-tee-bod-ee",
+      "cognate": "Anticuerpo"
+    },
+    {
+      "term": "Vaccine",
+      "definition": "A shot that trains your immune system to fight a real pathogen.",
+      "use_sentence": "The doctor gave me a vaccine to protect me from the flu.",
+      "phonetic": "vak-SEEN",
+      "cognate": "Vacuna"
+    },
+    {
+      "term": "White Blood Cell",
+      "definition": "A type of blood cell that defends the body against infection.",
+      "use_sentence": "A white blood cell is like a soldier in your body's army.",
+      "phonetic": "wite blud sel",
+      "cognate": "Glóbulo Blanco"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Rodriguez described the immune system as an 'army'. What are some other ways you could describe how the immune system works?",
+      "frame": null
+    },
+    {
+      "prompt": "Explain the connection between 'Pathogen Load' and 'Infection Severity' in your own words.",
+      "frame": "When the Pathogen Load is high, the Infection Severity..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Patel's Cosmic Calls",
+    "text": "My name is Dr. Raj Patel. I am an engineer at NASA. I send messages to spacecraft that are billions of miles away. How do I do it? I use invisible waves from the <strong>electromagnetic spectrum</strong>.<br><br>You know about visible light. But that’s only a tiny part of the spectrum. I use radio waves. They have a very low <strong>frequency</strong>. This means they have low energy and are safe. Higher frequency waves, like X-rays, have much more energy. Luckily, our atmosphere blocks most of them.<br><br>Because radio waves have a long <strong>wavelength</strong>, they can pass through things easily. They travel through clouds and space dust that would block visible light. This ability to pass through matter is called <strong>penetration depth</strong>. It lets my signals reach spacecraft far away.<br><br>To catch these long waves, we need huge antennas on Earth. They look like giant dishes pointed at the sky. They listen for weak signals from deep space. My job is to make sure we never lose contact. Understanding the whole spectrum helps us explore the universe.",
+    "think_abouts": [
+      "Why does Dr. Patel use low-energy radio waves instead of high-energy X-rays to talk to spacecraft?",
+      "What problem would Dr. Patel have if radio waves were blocked by clouds like visible light is?"
+    ],
+    "go_deeper": "Dr. Patel knows if a spacecraft is moving away from Earth if the radio waves he receives have a lower frequency than when they were sent. What do you think happens to the frequency if the spacecraft is moving towards Earth?",
+    "margin_defs": [
+      {
+        "term": "engineer",
+        "definition": "A person who designs and builds things to solve problems."
+      },
+      {
+        "term": "atmosphere",
+        "definition": "The layer of gases around a planet."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what is the electromagnetic spectrum?"
+    ],
+    "word_bank": [
+      "electromagnetic spectrum",
+      "frequency",
+      "wavelength",
+      "penetration depth"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "spectrum",
+        "spanish": "espectro"
+      },
+      {
+        "english": "radio",
+        "spanish": "radio"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniero"
+      },
+      {
+        "english": "universe",
+        "spanish": "universo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Electromagnetic Spectrum",
+      "definition": "The complete range of all types of light and energy waves, organized by their energy.",
+      "use_sentence": "Radio waves and X-rays are both part of the electromagnetic spectrum.",
+      "phonetic": "uh-lek-tro-mag-NET-ik SPEK-trum",
+      "cognate": "espectro electromagnético"
+    },
+    {
+      "term": "Frequency",
+      "definition": "How many waves pass a certain point in one second.",
+      "use_sentence": "A radio wave has a low frequency, while a gamma ray has a very high frequency.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance from the top of one wave to the top of the next wave.",
+      "use_sentence": "Low-frequency radio waves have a long wavelength, sometimes as long as a building.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Penetration Depth",
+      "definition": "How far a wave can travel through an object before it is stopped.",
+      "use_sentence": "X-rays have a high penetration depth, which lets them pass through your skin.",
+      "phonetic": "pen-uh-TRAY-shun depth",
+      "cognate": "penetración"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel uses radio waves for his job. Think of another job that uses a part of the electromagnetic spectrum we can't see. What is the job and what waves do they use?",
+      "frame": "A person who is a ____ uses ____ waves to do their job by ____."
+    },
+    {
+      "prompt": "Radio waves have low energy and X-rays have high energy. Why is it a good thing that Earth's atmosphere blocks most high-energy waves from space?",
+      "frame": "It is important that our atmosphere blocks high-energy waves because ____."
+    },
+    {
+      "prompt": "If you could see in a different wavelength besides visible light (like infrared or ultraviolet), how would the world look different to you?",
+      "frame": "If I could see in ____ waves, I think I would be able to see ____."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,24 +1,24 @@
 {
   "story": {
-    "title": "Dr. Rodriguez and the Immune System's Blueprint",
-    "text": "Here at the National Institutes of Health, my lab feels like a command center for an invisible war. I’m Dr. Elena Rodriguez, and I design blueprints for our body’s military: the immune system. We study how it distinguishes friend from foe and mounts a sophisticated defense against invading <strong>pathogens</strong>.<br><br>Imagine a breach in security. The initial <strong>Pathogen Load</strong>—the number of invaders—determines the scale of the threat. A larger invasion triggers a more substantial <strong>White Blood Cell Response</strong>, as our cellular soldiers rush to the front lines. This immediate counterattack is crucial; a rapid, robust response can neutralize the threat early, directly reducing the potential <strong>Infection Severity</strong>. However, this first wave of defense is general. To win the war, you need specialists.<br><br>This is where my work in vaccine development becomes critical. A <strong>vaccine</strong> acts as a training manual, presenting the immune system with a harmless piece of the enemy's code. This allows the system to develop highly specialized weapons called <strong>antibodies</strong> and, most importantly, memory cells. When a vaccinated person is later exposed to the real pathogen, their <strong>Vaccine Status</strong> means their immune system doesn't hesitate. It launches a massive, targeted <strong>Antibody Production</strong> wave that neutralizes the invaders before they can establish a foothold. It’s the difference between being ambushed and having a detailed battle plan.<br><br>My research now focuses on the nuances of this system. We investigate challenges like 'Antigenic Drift,' where viruses like influenza change their appearance, forcing us to create new vaccines annually. We also study 'Memory Cell Lifespan' to determine why some vaccines provide lifelong immunity while others require boosters. Understanding these complex, interacting subsystems is the key to creating next-generation defenses that can protect us from future threats.",
+    "title": "Dr. Rodriguez: Architect of Immunity",
+    "text": "My name is Dr. Elena Rodriguez, and from my lab at the National Institutes of Health, I study one of the most sophisticated systems on Earth: your immune system. Think of it as an invisible war, constantly being waged inside you. My job is to be a strategist, learning the enemy's tactics so we can design better defenses.<br><br>The first variable in any battle is the size of the invading force, which we call the <strong>pathogen</strong> load. A larger invasion can quickly overwhelm an unprepared system, leading to higher infection severity. In response, your body sounds the alarm, triggering a massive <strong>white blood cell</strong> response. These cells are the front-line soldiers, but their initial attack is often general, not specific.<br><br>The real game-changer is specific intelligence. This is where a <strong>vaccine</strong> comes in. A <strong>vaccine</strong> acts like a training manual, giving your immune system a blueprint of the enemy before the real invasion happens. When a vaccinated person is exposed to the real <strong>pathogen</strong>, their system doesn't hesitate. Specialized white blood cells immediately begin mass-producing targeted weapons called <strong>antibodies</strong>. This rapid, overwhelming <strong>antibody</strong> production neutralizes the invaders, meaning a powerful immune response leads to a lower infection severity. An unvaccinated system, by contrast, has to learn on the fly, a delay that gives the <strong>pathogen</strong> a dangerous head start.<br><br>However, our work is complicated by the enemy's own strategies. Some viruses, like influenza, constantly change their appearance in a process called antigenic drift, forcing us to create new vaccines annually. We also study why immune memory sometimes fades, requiring booster shots, and investigate rare cases where the immune system overreacts, causing a dangerous 'cytokine storm.' By understanding these complexities, we can architect smarter, more durable immunity for the future.",
     "think_abouts": [
-      "How is a vaccine like a training exercise or a 'battle plan' for your immune system?",
-      "Why is the initial number of invading pathogens (Pathogen Load) a critical factor in how sick a person might get?"
+      "What is the main advantage of having a vaccinated immune system when facing a pathogen?",
+      "How does Dr. Rodriguez describe the challenges that make her work difficult, such as antigenic drift?"
     ],
-    "go_deeper": "If a virus like the flu undergoes 'antigenic drift' every year, what challenges does this create for scientists like Dr. Rodriguez who are trying to develop long-lasting vaccines?",
+    "go_deeper": "Viruses like the flu constantly change their surface proteins (antigenic drift). How does this challenge scientists like Dr. Rodriguez who are trying to create long-lasting vaccines, and what kind of new vaccine technology might solve this problem?",
     "margin_defs": [
       {
-        "term": "Antigenic Drift",
-        "definition": "Small, gradual changes in a virus's surface proteins that help it evade the immune system."
+        "term": "Antigenic drift",
+        "definition": "Small, gradual changes in a virus's surface proteins that allow it to evade the immune system."
       },
       {
-        "term": "Memory Cell Lifespan",
-        "definition": "The length of time immune cells 'remember' a specific pathogen after an infection or vaccination."
+        "term": "Cytokine storm",
+        "definition": "A severe, uncontrolled immune reaction where the body releases too many inflammatory signals, damaging its own tissues."
       }
     ],
     "check_prompts": [
-      "According to Dr. Rodriguez, what is the main advantage of having a vaccinated immune system when a pathogen invades?"
+      "According to the text, what is the relationship between a rapid antibody production and the severity of an infection?"
     ],
     "word_bank": [
       "Pathogen",
@@ -28,57 +28,61 @@
     ],
     "cognate_sidebar": [
       {
-        "english": "Immune",
-        "spanish": "Inmune"
+        "english": "System",
+        "spanish": "Sistema"
       },
       {
         "english": "Vaccine",
         "spanish": "Vacuna"
       },
       {
-        "english": "System",
-        "spanish": "Sistema"
+        "english": "Infection",
+        "spanish": "Infección"
+      },
+      {
+        "english": "Protein",
+        "spanish": "Proteína"
       }
     ]
   },
   "vocabulary": [
     {
       "term": "Pathogen",
-      "definition": "A microorganism, such as a bacterium or virus, that has the potential to cause disease upon entering the body.",
-      "use_sentence": "The flu virus is a common pathogen that the immune system must fight off.",
-      "phonetic": "PATH-uh-jin",
+      "definition": "A microorganism, such as a bacterium or virus, that has the potential to cause disease.",
+      "use_sentence": "The lab was studying how the body defends itself against a new viral pathogen.",
+      "phonetic": "PATH-oh-jen",
       "cognate": "Patógeno"
     },
     {
       "term": "Antibody",
-      "definition": "A specialized, Y-shaped protein produced by B-lymphocytes (a type of white blood cell) that targets and neutralizes a specific pathogen.",
-      "use_sentence": "After the vaccination, her body began producing antibodies to recognize and fight the virus.",
+      "definition": "A specialized, Y-shaped protein produced by the immune system that identifies and neutralizes a specific pathogen.",
+      "use_sentence": "After the infection, his blood contained a high level of antibodies for that particular virus.",
       "phonetic": "AN-tee-bod-ee",
-      "cognate": "Anticuerpo"
+      "cognate": null
     },
     {
       "term": "Vaccine",
-      "definition": "A biological preparation that provides active acquired immunity to a particular infectious disease by introducing a weakened or inactivated form of the pathogen.",
-      "use_sentence": "The vaccine for measles has been highly effective in preventing widespread outbreaks.",
+      "definition": "A biological preparation that provides active acquired immunity to a particular infectious disease.",
+      "use_sentence": "The new vaccine trains the immune system to recognize the virus without causing illness.",
       "phonetic": "vak-SEEN",
       "cognate": "Vacuna"
     },
     {
       "term": "White Blood Cell",
-      "definition": "A diverse group of cells within the immune system, also known as leukocytes, that identify and destroy invading pathogens and cellular debris.",
-      "use_sentence": "A high white blood cell count can indicate that the body is actively fighting an infection.",
+      "definition": "A type of blood cell that is a key component of the immune system, responsible for identifying and destroying invading pathogens.",
+      "use_sentence": "When the body detects an infection, it increases its production of white blood cells to fight it.",
       "phonetic": "wite blud sel",
-      "cognate": null
+      "cognate": "Glóbulo blanco"
     }
   ],
   "discussion_cards": [
     {
-      "prompt": "Dr. Rodriguez describes the immune response as a race between pathogen spread and immune activation. Using the system components, explain how a very high 'Pathogen Load' could overwhelm the 'White Blood Cell Response' and lead to high 'Infection Severity,' even in a healthy person.",
-      "frame": "A high Pathogen Load could lead to a severe infection because..."
+      "prompt": "Dr. Rodriguez compares a vaccine to a 'training manual' for the immune system. What other analogies could you use to describe how a vaccine works to prepare the body for an invasion?",
+      "frame": "A vaccine is like a ___ because it ___."
     },
     {
-      "prompt": "Considering the concept of 'Memory Cell Lifespan,' why is it crucial for public health officials to track vaccination records and recommend booster shots for diseases like tetanus or whooping cough?",
-      "frame": null
+      "prompt": "The story mentions that the immune system can sometimes overreact (a 'cytokine storm'). Why do you think a system designed to protect the body could end up harming it under certain circumstances?",
+      "frame": "A protective system might become harmful if ___."
     }
   ],
   "reflection_frames": {

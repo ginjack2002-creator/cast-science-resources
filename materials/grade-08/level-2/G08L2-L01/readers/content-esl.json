@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Brooks Models a Population's Race for Survival",
+    "text": "I am Dr. Terrence Brooks. At Harvard University, I build computer models to see if animal populations can survive. My work helps us understand evolution in action and protect endangered species.<br><br>In my model, I can increase the <strong>environmental pressure</strong>. This could be a new disease or a hotter climate. This pressure challenges the population. A population's best defense is its <strong>population diversity</strong>. A group with many different traits has more chances to survive. High diversity makes it more likely that some animals have the right trait.<br><br>When this happens, the <strong>favorable trait frequency</strong> goes up. More individuals with this trait survive, which increases the overall <strong>survival rate</strong>. These survivors have more babies, increasing the <strong>reproduction rate</strong>. They pass their successful traits to the next generation. This is <strong>natural selection</strong>. My goal is to see if this process happens fast enough. Can the population adapt before the environment changes too much?",
+    "think_abouts": [
+      "What happens to the survival rate when environmental pressure goes up?",
+      "Why is a high population diversity like having more tools in a toolbox?"
+    ],
+    "go_deeper": "Humans used selective breeding to create different dog breeds. How might this reduce their population diversity and make some breeds vulnerable to disease?",
+    "margin_defs": [
+      {
+        "term": "Models",
+        "definition": "Simple computer programs to test ideas."
+      },
+      {
+        "term": "Adapt",
+        "definition": "To change over time to fit a new situation."
+      }
+    ],
+    "check_prompts": [
+      "What process allows populations to adapt to their environment over time?"
+    ],
+    "word_bank": [
+      "Environmental Pressure",
+      "Population Diversity",
+      "Natural Selection",
+      "Survival Rate",
+      "Reproduction Rate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Diversity",
+        "spanish": "Diversidad"
+      },
+      {
+        "english": "Selection",
+        "spanish": "Selección"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Environmental Pressure",
+      "definition": "Any factor in the environment that affects which organisms survive and reproduce.",
+      "use_sentence": "A long drought is a strong environmental pressure on desert plants.",
+      "phonetic": null,
+      "cognate": "Presión Ambiental"
+    },
+    {
+      "term": "Population Diversity",
+      "definition": "The range of different traits and genetic variations within a group of organisms.",
+      "use_sentence": "The high population diversity of the insects helped them survive the new pesticide.",
+      "phonetic": null,
+      "cognate": "Diversidad de la Población"
+    },
+    {
+      "term": "Favorable Trait Frequency",
+      "definition": "The percentage of a population that carries a trait suited to the current environment.",
+      "use_sentence": "After the cold winter, the favorable trait frequency for thick fur increased in the wolf pack.",
+      "phonetic": null,
+      "cognate": "Frecuencia de Rasgos Favorables"
+    },
+    {
+      "term": "Natural Selection",
+      "definition": "The process by which organisms with traits better suited to their environment survive and reproduce more.",
+      "use_sentence": "Through natural selection, giraffes developed long necks to reach high leaves.",
+      "phonetic": null,
+      "cognate": "Selección Natural"
+    },
+    {
+      "term": "Fitness",
+      "definition": "An organism's ability to survive and reproduce in its specific environment.",
+      "use_sentence": "The rabbit's speed gives it high fitness in an area with many foxes.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Florida panthers were saved by bringing in Texas cougars. Why did adding new animals with different traits (increasing diversity) help the population survive?",
+      "frame": "Adding new animals helped the panthers because..."
+    },
+    {
+      "prompt": "If a small group of birds colonizes a new island, why might they have less population diversity than the birds on the mainland?",
+      "frame": "The new island population might have less diversity because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

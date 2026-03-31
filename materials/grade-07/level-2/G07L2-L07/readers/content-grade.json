@@ -1,0 +1,87 @@
+{
+  "story": {
+    "title": "Dr. Mendez: Earth's Rock Detective",
+    "text": "Hi, I'm Dr. Laura Mendez, a petrologist at the U.S. Geological Survey. My job is like being a detective for Earth's history. People often ask me, if our planet is 4.6 billion years old, why aren't all rocks ancient? The answer is that Earth is a grand recycling system, always changing rocks from one type to another.<br><br>It all starts with intense <strong>Heat & Pressure</strong> deep underground. This energy can melt rock into magma. When that magma cools and hardens, it’s called <strong>Igneous Rock Formation</strong>, creating rocks like granite or basalt. But the story doesn't end there. On the surface, the <strong>Weathering Rate</strong>—how fast wind and water break things down—is constantly attacking these rocks. This process, called <strong>Weathering</strong>, creates sediment like sand and mud.<br><br>Faster weathering breaks down more rock, which gets carried by rivers and deposited, building up thick <strong>Sedimentary Layers</strong>. The weight of the top layers compacts the bottom ones into <strong>Sedimentary Rock</strong>, a type of rock that often traps fossils. If these layers get buried even deeper, the cycle continues. The immense <strong>Heat & Pressure</strong> trigger a <strong>Metamorphic Transformation</strong>. The rock doesn't melt, but its minerals realign to form <strong>Metamorphic Rock</strong>, like marble.<br><br>From there, the rock can be pushed to the surface to weather again, or be pushed deep enough to melt back into magma. This constant cycle of creation and destruction is why Earth's surface is always dynamic. By studying a rock's minerals and texture, we can read its unique journey and understand our planet's incredible past.",
+    "think_abouts": [
+      "Why would an igneous rock that cooled from a volcano have smaller crystals than one that cooled deep underground?",
+      "How does a mountain made of rock eventually become sand on a beach?"
+    ],
+    "go_deeper": "If you found a rock with a fossil inside, what type of rock must it be and why?",
+    "margin_defs": [
+      {
+        "term": "Petrologist",
+        "definition": "A scientist who studies how rocks are formed."
+      }
+    ],
+    "check_prompts": [
+      "What two forces cause metamorphic transformation?"
+    ],
+    "word_bank": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic",
+      "Weathering",
+      "Pressure",
+      "Magma"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Formation",
+        "spanish": "Formación"
+      },
+      {
+        "english": "Transformation",
+        "spanish": "Transformación"
+      },
+      {
+        "english": "Mineral",
+        "spanish": "Mineral"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Igneous Rock",
+      "definition": "Rock formed from the cooling and solidification of magma or lava, either below or above Earth's surface.",
+      "use_sentence": "The obsidian, a type of igneous rock, was smooth and glassy because it cooled very quickly.",
+      "phonetic": "IG-nee-us",
+      "cognate": "Roca Ígnea"
+    },
+    {
+      "term": "Sedimentary Rock",
+      "definition": "Rock formed from compressed and cemented layers of sediment, often containing fossils.",
+      "use_sentence": "We found a fossil of a leaf perfectly preserved in the layers of the sedimentary rock.",
+      "phonetic": "sed-uh-MEN-tuh-ree",
+      "cognate": "Roca Sedimentaria"
+    },
+    {
+      "term": "Metamorphic Rock",
+      "definition": "Rock that has been transformed by extreme heat and pressure without melting, changing its mineral structure.",
+      "use_sentence": "Marble is a metamorphic rock that forms when limestone is subjected to intense heat and pressure.",
+      "phonetic": "met-uh-MOR-fik",
+      "cognate": "Roca Metamórfica"
+    },
+    {
+      "term": "Weathering",
+      "definition": "The breaking down of rocks by physical, chemical, or biological processes at Earth's surface.",
+      "use_sentence": "The constant force of the waves caused weathering, which slowly turned the cliffside rocks into sand.",
+      "phonetic": "WEH-thur-ing",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Mendez says Earth is a 'grand recycling system.' What does she mean by that, and how does the rock cycle support this idea?",
+      "frame": "When Dr. Mendez calls Earth a 'recycling system,' she means that..."
+    },
+    {
+      "prompt": "How could an increase in the global weathering rate, perhaps due to changes in climate, affect the formation of both sedimentary and igneous rocks over millions of years?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

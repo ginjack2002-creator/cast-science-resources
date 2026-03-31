@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Raj Patel and the Whispers from Space",
+    "text": "I am Dr. Raj Patel, an engineer at NASA. I communicate with spacecraft far from Earth. We use invisible waves to send and receive messages. These waves are part of the <strong>electromagnetic spectrum</strong>. This spectrum includes everything from radio waves to gamma rays.<br><br>I specialize in radio waves. Radio waves have a low <strong>frequency</strong> and long <strong>wavelength</strong>. Low frequency means they carry less energy. This makes them safe. It also helps them travel far. Their great <strong>penetration depth</strong> lets them pass through gas and dust in space. Our atmosphere also lets radio waves pass through. This is lucky for us. The atmosphere blocks dangerous high-energy waves like X-rays.<br><br>Our eyes cannot see radio waves. Our detection sensitivity for them is zero. So, we build giant dish antennas to detect the signals. A signal with a bigger amplitude is stronger and easier to catch. We listen carefully to these whispers from space. These invisible signals help us explore our solar system.",
+    "think_abouts": [
+      "Why can't Dr. Patel use X-rays to communicate with spacecraft from Earth?",
+      "What would happen if a spacecraft's signal had a very low amplitude?"
+    ],
+    "go_deeper": "How does the Doppler Shift help Dr. Patel know if a spacecraft is moving towards or away from Earth?",
+    "margin_defs": [
+      {
+        "term": "engineer",
+        "definition": "A person who designs and builds things."
+      },
+      {
+        "term": "signals",
+        "definition": "Messages sent using waves."
+      },
+      {
+        "term": "antennas",
+        "definition": "Tools used to send or receive waves."
+      }
+    ],
+    "check_prompts": [
+      "What kind of waves does Dr. Patel use to communicate, and why are they good for this job?"
+    ],
+    "word_bank": [
+      "frequency",
+      "spectrum",
+      "penetration depth",
+      "wavelength",
+      "amplitude"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "engineer",
+        "spanish": "ingeniero"
+      },
+      {
+        "english": "spectrum",
+        "spanish": "espectro"
+      },
+      {
+        "english": "signal",
+        "spanish": "señal"
+      },
+      {
+        "english": "radio",
+        "spanish": "radio"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Electromagnetic Spectrum",
+      "definition": "The full family of light waves, organized by their energy level. Most are invisible to us.",
+      "use_sentence": "Visible light is only a small part of the electromagnetic spectrum.",
+      "phonetic": "uh-lek-troh-mag-NET-ik SPEK-trum",
+      "cognate": "espectro electromagnético"
+    },
+    {
+      "term": "Frequency",
+      "definition": "How many waves pass by in one second. Higher frequency means more energy.",
+      "use_sentence": "A radio wave has a low frequency, while an X-ray has a high frequency.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance from the top of one wave to the top of the next wave.",
+      "use_sentence": "Radio waves can have a long wavelength, as big as a building.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Penetration Depth",
+      "definition": "How well a wave can pass through an object without being stopped.",
+      "use_sentence": "X-rays have a high penetration depth, so they can pass through your skin.",
+      "phonetic": "pen-uh-TRAY-shun depth",
+      "cognate": "profundidad de penetración"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel uses radio waves. What are some other types of waves on the electromagnetic spectrum, and how do we use them in our daily lives?",
+      "frame": "One type of wave is ___, and we use it for ___."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Patel to study things that are invisible to our eyes?",
+      "frame": "It is important to study invisible things because ___."
+    },
+    {
+      "prompt": "The story says Earth's atmosphere blocks some waves. How is this both helpful and unhelpful for humans?",
+      "frame": "The atmosphere blocking waves is helpful because it ___, but it is unhelpful because it ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

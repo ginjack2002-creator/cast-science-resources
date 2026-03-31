@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Osei-Mensah and the Ecosystem's Ripple Effect",
+    "text": "Hi, I’m Dr. Jasmine Osei-Mensah, and I’m a trophic cascade ecologist with the National Park Service. My job is like being a detective for nature. I investigate what happens when you remove a key piece from an ecosystem's puzzle: the <strong>apex predator</strong>, which is the animal at the very top of the food web with no natural predators of its own. When that single piece vanishes, it can set off a powerful domino effect. We call this a <strong>trophic cascade</strong>: a chain of ecological effects triggered by the removal or return of a top predator.<br><br>The most famous example is right here in Yellowstone. For over 70 years, wolves were gone. Without wolves to hunt them, the elk population boomed. This led to severe <strong>overgrazing</strong>, a situation where herbivores destroy vegetation faster than it can regrow. The elk ate so many young trees and shrubs that entire forests began to disappear. With fewer plant roots to hold the soil, the riverbanks started eroding, clouding the water and changing the very shape of the rivers! The loss of this predator demonstrated a breakdown in <strong>top-down control</strong>, the process where predators regulate the populations below them.<br><br>When wolves were brought back, the cascade reversed. They didn't just control the elk population through hunting. They also created a 'landscape of fear,' which changed elk behavior. The elk avoided open valleys where they were vulnerable. This allowed willows and aspens to flourish along the rivers again. Stronger root systems stabilized the banks, beavers returned to build dams, and songbirds came back to the new forests. It’s a powerful reminder that every species plays a critical role in maintaining <strong>ecosystem stability</strong>, the overall health and balance of the environment. My work helps us understand these intricate connections to better manage and protect our planet’s amazing biodiversity.",
+    "think_abouts": [
+      "Why would fewer plants with weaker roots cause a river's shape to change?",
+      "Besides wolves and elk, what other species mentioned in the story were affected by the trophic cascade?"
+    ],
+    "go_deeper": "What might happen to populations of smaller animals like rabbits or foxes if wolves (the apex predator) were removed, allowing coyotes (a mesopredator) to thrive?",
+    "margin_defs": [
+      {
+        "term": "Erosion",
+        "definition": "The process of soil and rock being worn away by wind or water."
+      },
+      {
+        "term": "Herbivore",
+        "definition": "An animal that feeds on plants."
+      }
+    ],
+    "check_prompts": [
+      "Describe the chain of events that happens in a trophic cascade when an apex predator is removed."
+    ],
+    "word_bank": [
+      "Trophic Cascade",
+      "Apex Predator",
+      "Overgrazing",
+      "Ecosystem Stability",
+      "Top-Down Control"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Ecosystem",
+        "spanish": "Ecosistema"
+      },
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Vegetation",
+        "spanish": "Vegetación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain of ecological effects that are triggered by adding or removing a top predator from an ecosystem.",
+      "use_sentence": "The reintroduction of wolves to Yellowstone created a trophic cascade that eventually changed the course of rivers.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": "Cascada trófica"
+    },
+    {
+      "term": "Apex Predator",
+      "definition": "The predator at the very top of a food chain that has no natural predators of its own.",
+      "use_sentence": "The killer whale is an apex predator in the ocean, preying on seals, sea lions, and even other whales.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Overgrazing",
+      "definition": "When a population of herbivores eats plants so heavily that the vegetation is damaged and cannot regrow.",
+      "use_sentence": "Without predators to control the deer population, overgrazing destroyed the young saplings in the forest.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Ecosystem Stability",
+      "definition": "The ability of an ecosystem to maintain its structure, function, and balance over time, even with disturbances.",
+      "use_sentence": "Biodiversity is a key factor in maintaining ecosystem stability.",
+      "phonetic": null,
+      "cognate": "Estabilidad del ecosistema"
+    },
+    {
+      "term": "Top-Down Control",
+      "definition": "An ecological process where predators at the top of the food web regulate the populations of animals below them.",
+      "use_sentence": "Sharks exert top-down control on seal populations, which in turn affects fish populations.",
+      "phonetic": null,
+      "cognate": "Control descendente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Osei-Mensah describes her work as being an 'ecosystem detective.' What skills do you think an ecologist needs to solve puzzles in nature?",
+      "frame": "To be an ecosystem detective, I think you would need skills like ___ because ___."
+    },
+    {
+      "prompt": "The story mentions the 'landscape of fear.' How does the *threat* of a predator change an ecosystem, even before it hunts many animals?",
+      "frame": null
+    },
+    {
+      "prompt": "Humans often act like a new 'apex predator' in an ecosystem. What are some examples of human activities that could start a trophic cascade?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

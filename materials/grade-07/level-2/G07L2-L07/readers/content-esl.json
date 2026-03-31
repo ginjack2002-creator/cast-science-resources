@@ -1,0 +1,95 @@
+{
+  "story": {
+    "title": "Dr. Mendez Reads Earth's Rock Story",
+    "text": "Hello, I am Dr. Laura Mendez. I am a petrologist at the USGS. I read the story of Earth's past in rocks.<br><br>Earth is a great recycler. It constantly changes rocks in a big cycle. Deep underground, intense <strong>heat and pressure</strong> melt old rock into magma. When this hot magma cools, it hardens. It becomes new <strong>igneous rock</strong>, like granite.<br><br>On the surface, a different process happens. <strong>Weathering</strong> from wind and rain breaks rocks down. These small pieces, called sediment, travel with rivers. They settle in layers at the bottom of lakes or oceans. Over millions of years, the weight of more layers creates pressure. This pressure cements the sediment together. This makes <strong>sedimentary rock</strong>.<br><br>If sedimentary rock gets buried even deeper, the cycle continues. Extreme <strong>heat and pressure</strong> cook the rock. The minerals inside change. The rock transforms into <strong>metamorphic rock</strong>. It does not melt. This amazing cycle connects all rocks. It shows how our planet is always changing.",
+    "think_abouts": [
+      "Why does Dr. Mendez call Earth a 'great recycler'?",
+      "What two things are needed to make metamorphic rock?"
+    ],
+    "go_deeper": "How might the speed that magma cools change the look of an igneous rock?",
+    "margin_defs": [
+      {
+        "term": "magma",
+        "definition": "hot, liquid rock found under Earth's surface"
+      },
+      {
+        "term": "cycle",
+        "definition": "a series of events that repeat in a circle"
+      }
+    ],
+    "check_prompts": [
+      "What is one way sedimentary rock can form?"
+    ],
+    "word_bank": [
+      "Igneous Rock",
+      "Sedimentary Rock",
+      "Metamorphic Rock",
+      "Weathering",
+      "Heat",
+      "Pressure"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "cycle",
+        "spanish": "ciclo"
+      },
+      {
+        "english": "transform",
+        "spanish": "transformar"
+      },
+      {
+        "english": "pressure",
+        "spanish": "presión"
+      },
+      {
+        "english": "mineral",
+        "spanish": "mineral"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Igneous Rock",
+      "definition": "Rock made when hot, melted rock (magma or lava) cools and becomes solid.",
+      "use_sentence": "Volcanoes can create igneous rock when lava cools.",
+      "phonetic": "IG-nee-us",
+      "cognate": "Ígnea"
+    },
+    {
+      "term": "Sedimentary Rock",
+      "definition": "Rock made from small pieces of other rocks (sediment) that are pressed together in layers.",
+      "use_sentence": "You can often see the layers in sedimentary rock.",
+      "phonetic": "sed-uh-MEN-tuh-ree",
+      "cognate": "Sedimentaria"
+    },
+    {
+      "term": "Metamorphic Rock",
+      "definition": "Rock that has changed into a new type of rock because of great heat and pressure.",
+      "use_sentence": "Marble is a metamorphic rock that forms from limestone.",
+      "phonetic": "met-uh-MOR-fik",
+      "cognate": "Metamórfica"
+    },
+    {
+      "term": "Weathering",
+      "definition": "The process that breaks down rocks on Earth's surface into smaller pieces.",
+      "use_sentence": "Ice freezing in a crack and breaking a rock is a type of weathering.",
+      "phonetic": "WEH-thur-ing",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Mendez says she 'reads the story of Earth's past in rocks.' What do you think she means? What kind of story could a rock tell?",
+      "frame": "I think a rock could tell a story about ___ because ___."
+    },
+    {
+      "prompt": "If weathering suddenly stopped happening on Earth, how would that affect the rock cycle and the formation of new rocks?",
+      "frame": "If weathering stopped, then ___ would not be made anymore. This is because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

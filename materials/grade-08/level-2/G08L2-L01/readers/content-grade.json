@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Brooks and the Race Against Extinction",
+    "text": "Hi, I'm Dr. Terrence Brooks, and I use computer models to predict the future of species. My work in population genetics is all about a race against time: can a population adapt before its environment changes too much?<br><br>Imagine a population of birds facing a sudden drought. This intense <strong>Environmental Pressure</strong> (any factor that affects survival) means their usual food source disappears. The key to their survival is <strong>Population Diversity</strong>—the variety of traits within the group. If the population has a wide range of beak shapes, there's a higher chance some birds can eat tougher seeds that are still available. This means the group has a higher <strong>Favorable Trait Frequency</strong>, the percentage of individuals with the right trait for the new conditions.<br><br>Naturally, a higher frequency of that long-beak trait leads to a better Survival Rate. More of these birds survive the drought. Because more survive, their Reproduction Rate increases, and they pass that successful beak trait to their offspring. In the next generation, the <strong>Favorable Trait Frequency</strong> for long beaks is even higher. This is <strong>Natural Selection</strong> at work—the process that boosts an organism's <strong>Fitness</strong>, or its ability to survive and reproduce.<br><br>My models explore the tipping point. What if the drought is too severe, or if the population lacks diversity from the start? This can happen when a small group colonizes a new island—a 'founder effect.' Without enough variation, the population can't adapt fast enough and faces extinction. My research helps conservationists decide when to step in, like when they brought Texas cougars to Florida to save the panthers by boosting their genetic diversity.",
+    "think_abouts": [
+      "Why is a population with high diversity more likely to survive a sudden environmental change than one with low diversity?",
+      "Humans selectively breed dogs for specific traits. How might this affect a dog breed's ability to survive a new disease?"
+    ],
+    "go_deeper": "How is the 'founder effect' similar to selective breeding in the way it impacts population diversity?",
+    "margin_defs": [
+      {
+        "term": "Fitness",
+        "definition": "An organism's ability to survive and reproduce."
+      },
+      {
+        "term": "Founder Effect",
+        "definition": "Reduced genetic diversity when a population is started by a few individuals."
+      }
+    ],
+    "check_prompts": [
+      "What is the relationship between Environmental Pressure and Survival Rate?"
+    ],
+    "word_bank": [
+      "Environmental Pressure",
+      "Population Diversity",
+      "Favorable Trait Frequency",
+      "Natural Selection",
+      "Fitness"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Diversity",
+        "spanish": "Diversidad"
+      },
+      {
+        "english": "Selection",
+        "spanish": "Selección"
+      },
+      {
+        "english": "Reproduction",
+        "spanish": "Reproducción"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Environmental Pressure",
+      "definition": "Any factor in the environment that affects which organisms survive and reproduce.",
+      "use_sentence": "A severe drought is a strong environmental pressure on desert plants.",
+      "phonetic": null,
+      "cognate": "Presión ambiental"
+    },
+    {
+      "term": "Population Diversity",
+      "definition": "The range of different traits and genetic variations within a group of organisms.",
+      "use_sentence": "High population diversity helped the peppered moths adapt when pollution changed their environment.",
+      "phonetic": null,
+      "cognate": "Diversidad de la población"
+    },
+    {
+      "term": "Favorable Trait Frequency",
+      "definition": "The percentage of a population that carries a trait suited to the current environment.",
+      "use_sentence": "After the trees darkened, the favorable trait frequency for dark-colored moths increased.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Natural Selection",
+      "definition": "The process by which organisms with traits better suited to their environment survive and reproduce more.",
+      "use_sentence": "Natural selection explains how giraffes evolved long necks to reach higher leaves.",
+      "phonetic": null,
+      "cognate": "Selección natural"
+    },
+    {
+      "term": "Fitness",
+      "definition": "An organism's ability to survive and reproduce in its specific environment.",
+      "use_sentence": "In a snowy forest, a white rabbit has higher fitness than a brown rabbit.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Based on the reading, what two factors are most critical for a population's survival when its environment changes rapidly? Explain your reasoning.",
+      "frame": "I think the two most critical factors are ___ and ___ because ___."
+    },
+    {
+      "prompt": "Dr. Brooks mentioned saving the Florida panthers. Can you think of another situation where humans might need to help a species adapt or survive? What could they do?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were building a computer model like Dr. Brooks, what would happen to the 'Favorable Trait Frequency' if the 'Environmental Pressure' suddenly decreased?",
+      "frame": "If the environmental pressure decreased, the favorable trait frequency would likely ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

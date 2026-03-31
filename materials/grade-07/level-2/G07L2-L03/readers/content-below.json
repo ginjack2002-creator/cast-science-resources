@@ -1,0 +1,92 @@
+{
+  "story": {
+    "title": "Dr. Al-Zahrani and the Ocean's Giant River",
+    "text": "My name is Dr. Fatima Al-Zahrani. I am a physical oceanographer. My job is to study the ocean's invisible rivers. These are huge <strong>ocean currents</strong> that move water all around the world.<br><br>Think of a giant conveyor belt in the ocean. We call it Thermohaline Circulation. 1. The sun warms up water near the equator. This warm water travels on the surface toward the cold poles. 2. Near the poles, the water gets very cold and salty. This makes it heavy, so it sinks deep down. 3. This sinking motion pulls more warm water from the equator to replace it. This creates a huge, slow-moving loop.<br><br>This conveyor belt is key to our planet's <strong>regional climate</strong>. It moves heat from warm places to cold places. This process is called <strong>heat distribution</strong>. It helps keep some places from getting too hot or too cold. My computer models help me see what happens if this belt slows down. For example, melting glaciers add fresh water. This makes the polar water less salty and less heavy. It might not sink as fast. A weaker current means less heat gets moved. This could change weather patterns everywhere. My work helps us prepare for our planet's future.",
+    "think_abouts": [
+      "Why is it important to move heat from the equator to the poles?",
+      "What could happen to the weather in Europe if the ocean conveyor belt slowed down?"
+    ],
+    "go_deeper": "How might melting ice from glaciers affect the saltiness of the ocean and the conveyor belt?",
+    "margin_defs": [
+      {
+        "term": "oceanographer",
+        "definition": "A scientist who studies the ocean."
+      },
+      {
+        "term": "models",
+        "definition": "Computer programs that copy real-world systems to make predictions."
+      }
+    ],
+    "check_prompts": [
+      "What does the Great Ocean Conveyor Belt move around the world?"
+    ],
+    "word_bank": [
+      "ocean currents",
+      "heat distribution",
+      "regional climate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "ocean",
+        "spanish": "océano"
+      },
+      {
+        "english": "distribution",
+        "spanish": "distribución"
+      },
+      {
+        "english": "climate",
+        "spanish": "clima"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Thermohaline Circulation",
+      "definition": "A giant ocean current caused by changes in water temperature (thermo) and saltiness (haline).",
+      "use_sentence": "The thermohaline circulation acts like a big conveyor belt for the world's oceans.",
+      "phonetic": "thur-mo-HAY-line sur-kyoo-LAY-shun",
+      "cognate": "circulación"
+    },
+    {
+      "term": "Heat Distribution",
+      "definition": "The way heat energy is moved from warm places to cool places.",
+      "use_sentence": "Ocean currents are important for global heat distribution.",
+      "phonetic": null,
+      "cognate": "distribución"
+    },
+    {
+      "term": "Ocean Current",
+      "definition": "A steady flow of ocean water in one direction, like a river in the sea.",
+      "use_sentence": "The boat was pushed off course by a strong ocean current.",
+      "phonetic": null,
+      "cognate": "corriente"
+    },
+    {
+      "term": "Regional Climate",
+      "definition": "The average weather pattern for a large area over many years.",
+      "use_sentence": "Living near the coast gives our area a mild regional climate.",
+      "phonetic": null,
+      "cognate": "clima regional"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Al-Zahrani said the conveyor belt is like a 'big heater' for the planet. What do you think she means by that?",
+      "frame": "I think she means that the ocean currents..."
+    },
+    {
+      "prompt": "The story says melting ice can weaken the currents. How could a change in the ocean near the North Pole affect the weather where you live?",
+      "frame": "A change near the North Pole could affect my weather by..."
+    },
+    {
+      "prompt": "Dr. Al-Zahrani uses computer models to predict changes. Why is it important for scientists to predict how the climate might change in the future?",
+      "frame": "It is important to predict future changes so that we can..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

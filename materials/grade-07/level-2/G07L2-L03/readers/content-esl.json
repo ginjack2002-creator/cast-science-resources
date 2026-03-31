@@ -1,0 +1,99 @@
+{
+  "story": {
+    "title": "Dr. Al-Zahrani and the Ocean's Conveyor Belt",
+    "text": "My name is Dr. Fatima Al-Zahrani. I am a physical oceanographer. I study the ocean's invisible rivers. We call these giant rivers <strong>Ocean Currents</strong>.<br><br>Imagine a huge conveyor belt moving water around the world. This belt is called <strong>Thermohaline Circulation</strong>. It takes about 1,000 years to make one full trip. The sun warms water at the equator. This warm water flows toward the cold poles. Wind also pushes the water on the surface.<br><br>This conveyor belt is very important for our planet. It does the job of <strong>Heat Distribution</strong>. It moves warm water to cold places. This helps control the <strong>Regional Climate</strong> everywhere. It makes weather more stable and predictable for people.<br><br>My job is to ask, 'What if this belt slows down?' Melting glaciers add fresh water to the ocean. This can change the current's speed. I use computer models to see what might happen. My work helps us prepare for future changes to our climate.",
+    "think_abouts": [
+      "What happens to the 'conveyor belt' if the poles get warmer?",
+      "How might a slower ocean current change the weather where you live?"
+    ],
+    "go_deeper": "Dr. Al-Zahrani mentioned melting ice. How does adding fresh water to salty ocean water affect its density and its ability to sink?",
+    "margin_defs": [
+      {
+        "term": "conveyor belt",
+        "definition": "A system that moves things from one place to another."
+      },
+      {
+        "term": "models",
+        "definition": "Computer programs that show how something works."
+      }
+    ],
+    "check_prompts": [
+      "What two things cause ocean water to move in the global conveyor belt?"
+    ],
+    "word_bank": [
+      "heat",
+      "currents",
+      "climate",
+      "poles",
+      "equator",
+      "models"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "ocean",
+        "spanish": "océano"
+      },
+      {
+        "english": "climate",
+        "spanish": "clima"
+      },
+      {
+        "english": "region",
+        "spanish": "región"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "distribution",
+        "spanish": "distribución"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Thermohaline Circulation",
+      "definition": "The global ocean current system driven by differences in water temperature and saltiness. It is often called the Great Ocean Conveyor Belt.",
+      "use_sentence": "Thermohaline Circulation moves warm water from the equator to the poles.",
+      "phonetic": "thur-mo-HAY-leen sur-kyoo-LAY-shun",
+      "cognate": "circulación termohalina"
+    },
+    {
+      "term": "Heat Distribution",
+      "definition": "The process of spreading heat energy from warmer areas to cooler areas.",
+      "use_sentence": "Ocean currents are a major factor in global heat distribution.",
+      "phonetic": "heet dis-trih-BYOO-shun",
+      "cognate": "distribución de calor"
+    },
+    {
+      "term": "Ocean Current",
+      "definition": "A continuous, directed movement of ocean water.",
+      "use_sentence": "The strong ocean current pulled the boat off course.",
+      "phonetic": "OH-shun KUR-ent",
+      "cognate": "corriente oceánica"
+    },
+    {
+      "term": "Regional Climate",
+      "definition": "The average weather conditions in a specific geographic area over a long time.",
+      "use_sentence": "The regional climate of England is mild and wet because of a warm ocean current.",
+      "phonetic": "REE-juh-nul KLY-mit",
+      "cognate": "clima regional"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If the global conveyor belt slowed down, which places on Earth do you think would get much colder and which would get much hotter? Why?",
+      "frame": "I think that ___ would get colder because ___ and ___ would get hotter because ___."
+    },
+    {
+      "prompt": "Dr. Al-Zahrani uses computer models to predict the future. Why is it important for communities to know how ocean currents might change?",
+      "frame": "It is important to predict these changes so communities can prepare for ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

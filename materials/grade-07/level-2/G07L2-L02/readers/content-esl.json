@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Chang's Secret Switches",
+    "text": "Hello, I am Dr. William Chang. I am an epigenetics researcher at Johns Hopkins. You learn that your DNA makes you unique. But you share 99.9% of your DNA with everyone else. So, what explains all our differences? The answer is not just in the DNA code. It is also in how the code is read.<br><br>I study secret 'switches' on our DNA. These switches control which genes are on and which are off. This is called <strong>gene expression</strong>. Think of it like a light switch. The light bulb is the gene. The switch is the control. Your environment can flip these switches. Factors like your diet, stress levels, and even pollution can change them.<br><br>For example, my research shows that a mother's diet affects her baby's genes. Good nutrition can turn on genes that protect the baby. These switches do not change the DNA letters. They just add a chemical tag. Sometimes, these tags can even be passed to the next generation. My work helps explain how your life experiences make you who you are. It’s a big part of what makes you unique.",
+    "think_abouts": [
+      "What is one environmental factor that can 'flip a switch' on your genes?",
+      "How can two people with the same DNA (like identical twins) end up different?"
+    ],
+    "go_deeper": "If some gene switches can be passed down, how might the choices you make today affect future generations?",
+    "margin_defs": [
+      {
+        "term": "epigenetics",
+        "definition": "The study of how your environment changes how your genes work."
+      },
+      {
+        "term": "researcher",
+        "definition": "A person who studies something carefully to discover new facts."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Chang study to understand what makes people unique?"
+    ],
+    "word_bank": [
+      "gene expression",
+      "environment",
+      "unique",
+      "switches"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "unique",
+        "spanish": "único/a"
+      },
+      {
+        "english": "generation",
+        "spanish": "generación"
+      },
+      {
+        "english": "factor",
+        "spanish": "factor"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gene Expression",
+      "definition": "The process where a gene's instructions are used to make something, like a protein, which creates a trait.",
+      "use_sentence": "Eating healthy food can change the gene expression for growth.",
+      "phonetic": "/dʒiːn ɪkˈsprɛʃən/",
+      "cognate": "expresión genética"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "The differences in DNA among individuals in a population.",
+      "use_sentence": "Genetic variation is why people have different eye and hair colors.",
+      "phonetic": "/dʒəˈnɛtɪk ˌvɛəriˈeɪʃən/",
+      "cognate": "variación genética"
+    },
+    {
+      "term": "Mutation",
+      "definition": "A change in the DNA sequence of a gene.",
+      "use_sentence": "A small mutation in a gene can sometimes cause a big change in a trait.",
+      "phonetic": "/mjuːˈteɪʃən/",
+      "cognate": "mutación"
+    },
+    {
+      "term": "Allele",
+      "definition": "One of two or more versions of a gene.",
+      "use_sentence": "You get one allele for eye color from each parent.",
+      "phonetic": "/əˈliːl/",
+      "cognate": "alelo"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chang says your environment can flip gene 'switches'. What are some 'switches' in your school or neighborhood environment that might affect people's health?",
+      "frame": "In my neighborhood, one environmental factor is ___ which could affect people by ___."
+    },
+    {
+      "prompt": "If you could design an experiment to test how a certain food affects gene expression, what would you test and why?",
+      "frame": "I would test how ___ affects genes because I think it might ___."
+    },
+    {
+      "prompt": "The story says epigenetic changes can sometimes be inherited. How does this idea change how you think about your health and lifestyle choices?",
+      "frame": "This idea makes me think that my choices affect ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

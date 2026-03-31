@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Dr. Williams: Scripting the Rocket's Dance with Newton",
+    "text": "At SpaceX, my job is to solve one of the biggest physics puzzles imaginable: how to get a 500,000-kilogram rocket from a standstill into orbit. Why does a full shopping cart require a bigger push than an empty one? It’s the same reason our Falcon 9 rocket, with its immense <strong>inertia</strong>, needs over 1.7 million pounds of thrust just to lift off. Everything we do is a high-stakes application of Newton’s laws.<br><br>Our governing equation is Newton’s Second Law: Force = mass × <strong>acceleration</strong> (F=ma). To make an object with enormous mass achieve the incredible acceleration needed to escape Earth's gravity, you need an astronomical applied force. But the force that truly matters for performance is the <strong>Net Force</strong>—the overall force remaining after you subtract all opposing forces from the engine's thrust. Our two biggest opponents are the constant pull of gravity and aerodynamic drag, a powerful form of <strong>friction</strong> with the atmosphere.<br><br>Think of a bowling ball versus a tennis ball rolling on grass. The heavy bowling ball has more inertia and momentum, so it overcomes the friction of the grass for a longer time. Our rocket is like that bowling ball, but its opponent is the air itself. As the rocket accelerates and its velocity climbs, drag doesn't just grow; it increases with the square of the velocity, becoming a colossal counterforce we must meticulously model. This means the net force is a dynamic value: thrust minus weight minus ever-increasing drag. This remaining force, divided by the rocket's constantly decreasing mass as it burns fuel, dictates our precise acceleration at any given moment.<br><br>Once we reach the vacuum of space, Newton's First Law becomes our greatest ally. With virtually no friction, an object in motion stays in motion. This principle allows us to plan long, fuel-free coasting phases for interplanetary missions, conserving propellant for critical orbital maneuvers. My job is a constant dance with these fundamental forces, a dynamic calculation where a tiny error in net force can mean the difference between a perfect orbit and mission failure.",
+    "think_abouts": [
+      "Why is a rocket's mass constantly changing during launch, and how does this affect its acceleration?",
+      "How does Newton's First Law help an aerospace engineering company like SpaceX save fuel and money?"
+    ],
+    "go_deeper": "If gravity in low Earth orbit is still about 89% as strong as it is on the surface, why do astronauts experience the sensation of 'weightlessness'?",
+    "margin_defs": [
+      {
+        "term": "Thrust",
+        "definition": "The forward force produced by a rocket engine."
+      },
+      {
+        "term": "Aerodynamic Drag",
+        "definition": "The friction force that air exerts on an object moving through it."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Williams, what two main forces must a rocket's thrust overcome to achieve a positive net force during launch?"
+    ],
+    "word_bank": [
+      "Inertia",
+      "Thrust",
+      "Drag",
+      "Orbit"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Acceleration",
+        "spanish": "Aceleración"
+      },
+      {
+        "english": "Force",
+        "spanish": "Fuerza"
+      },
+      {
+        "english": "Mission",
+        "spanish": "Misión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Net Force",
+      "definition": "The total, unbalanced force acting on an object that causes it to accelerate; it's calculated by combining all individual forces, considering their directions.",
+      "use_sentence": "To get the rocket to lift off, the engine thrust must be greater than the force of gravity, creating a positive net force upwards.",
+      "phonetic": "/nɛt fɔrs/",
+      "cognate": "Fuerza neta"
+    },
+    {
+      "term": "Acceleration",
+      "definition": "The rate at which an object's velocity (speed and/or direction) changes over time, measured in meters per second squared (m/s²).",
+      "use_sentence": "With a constant net force, a lighter rocket will have a much greater acceleration than a heavier one.",
+      "phonetic": "/ækˌsɛləˈreɪʃən/",
+      "cognate": "Aceleración"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that opposes motion between two surfaces that are in contact, such as air resistance against a rocket.",
+      "use_sentence": "In the vacuum of space, there is almost no friction, so a spacecraft can coast for millions of miles without using its engines.",
+      "phonetic": "/ˈfrɪkʃən/",
+      "cognate": "Fricción"
+    },
+    {
+      "term": "Inertia",
+      "definition": "The property of an object to resist any change in its state of motion. Inertia is directly proportional to an object's mass.",
+      "use_sentence": "The massive inertia of the fully fueled rocket means an enormous force is required to start it moving.",
+      "phonetic": "/ɪˈnɜrʃə/",
+      "cognate": "Inercia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Williams must account for the rocket's changing mass as it burns fuel. How does this relate to the 'full vs. empty shopping cart' problem, and in what ways is the rocket's situation more complex?",
+      "frame": "The changing mass of the rocket is similar to the shopping cart because..., but it's more complex because the rocket also has to deal with..."
+    },
+    {
+      "prompt": "The story mentions 'fuel-free coasting phases.' Using Newton's First Law (the law of inertia), explain why a spacecraft doesn't need its engines firing constantly to travel between Earth and Mars.",
+      "frame": "According to Newton's First Law, an object in motion stays in motion unless acted on by an outside force. In space, this means..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

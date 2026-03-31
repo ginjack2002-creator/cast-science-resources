@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Nathan Kim and the Speed of Chemistry",
+    "text": "Hi, I’m Dr. Nathan Kim. I am a chemist, and my job is to study the speed of chemical reactions. I figure out how to make them faster or slower.<br><br>Think about mixing baking soda and vinegar. It fizzes and bubbles! That fizz is a chemical reaction. Let’s break down what is happening.<br><br>1. The baking soda and vinegar are the <strong>reactants</strong>. They are the starting ingredients.<br>2. When they mix, they create a new substance. It is a gas called carbon dioxide. This is <strong>gas production</strong>.<br>3. The speed of the fizzing is the <strong>reaction rate</strong>. A faster rate means more bubbles, faster.<br><br>So, how can we change the reaction rate?<br>4. We can use more reactants. More baking soda and vinegar means a bigger, faster reaction.<br>5. We can also change the <strong>surface area</strong>. Baking soda powder reacts very fast. A big, solid chunk of it would react much slower.<br><br>What about the 'explosion'? Where does the stuff go?<br>6. It doesn’t go anywhere! This is called the <strong>conservation of mass</strong>. The atoms just get rearranged. If you mix the reactants in a sealed bag, the total mass stays exactly the same. The gas just takes up more space and can pop the bag!<br><br>At my lab, understanding these rules is key. We use them to design better medicines and safer products.",
+    "think_abouts": [
+      "Why does a powder react faster than a solid chunk?",
+      "If the gas from the reaction escapes from an open bottle, what happens to the total mass you measure?"
+    ],
+    "go_deeper": "Dr. Kim puts the baking soda and vinegar in a sealed, hard bottle. What happens to the pressure inside the bottle as the gas is produced?",
+    "margin_defs": [
+      {
+        "term": "Reactants",
+        "definition": "The starting ingredients in a reaction."
+      },
+      {
+        "term": "Rate",
+        "definition": "How fast something happens."
+      }
+    ],
+    "check_prompts": [
+      "What are two things that can change a reaction's speed?"
+    ],
+    "word_bank": [
+      "Reaction Rate",
+      "Surface Area",
+      "Conservation of Mass",
+      "Gas Production",
+      "Reactant"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      },
+      {
+        "english": "production",
+        "spanish": "producción"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reaction Rate",
+      "definition": "How fast the starting chemicals (reactants) turn into new chemicals (products).",
+      "use_sentence": "Using a powder instead of a solid chunk increases the reaction rate.",
+      "phonetic": null,
+      "cognate": "reacción"
+    },
+    {
+      "term": "Surface Area",
+      "definition": "The total amount of the outside surface of an object that can be touched.",
+      "use_sentence": "A crushed sugar cube has more surface area than a whole cube.",
+      "phonetic": null,
+      "cognate": "superficie"
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The science rule that says mass is never created or lost in a sealed system.",
+      "use_sentence": "Because of the conservation of mass, the sealed bag weighed the same before and after the reaction.",
+      "phonetic": null,
+      "cognate": "conservación de la masa"
+    },
+    {
+      "term": "Gas Production",
+      "definition": "When a chemical reaction creates a gas, like the bubbles in soda.",
+      "use_sentence": "The fizzing we saw was evidence of gas production.",
+      "phonetic": null,
+      "cognate": "producción de gas"
+    },
+    {
+      "term": "Reactant",
+      "definition": "An ingredient that you start with in a chemical reaction.",
+      "use_sentence": "Baking soda was one reactant, and vinegar was the other.",
+      "phonetic": null,
+      "cognate": "reactivo"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kim wants to make the baking soda and vinegar reaction happen as fast as possible. What are two things from the text he should do?",
+      "frame": "To make the reaction faster, Dr. Kim should use ___ and ___."
+    },
+    {
+      "prompt": "If you want to make a cake rise slowly and evenly in the oven, would you use big chunks of baking soda or a fine powder? Explain your thinking.",
+      "frame": "To make it rise slowly, I would use ___ because it has less ___."
+    },
+    {
+      "prompt": "Imagine you mix the reactants in an open bottle versus a sealed bottle with a balloon on top. After the reaction, how would the final mass of each system compare? Why?",
+      "frame": "The mass of the open bottle would be less because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Patel's Cosmic Conversations",
+    "text": "Hi, I'm Dr. Raj Patel, and I talk to robots in deep space. Here at NASA’s Deep Space Network, my job is to make sure we can send commands to and get data from spacecraft like the Voyager probes, which are billions of miles away. How do we do it? Not with a phone call! We use the invisible power of the <strong>Electromagnetic Spectrum</strong>—the complete range of light waves, most of which our eyes can't see.<br><br>Your eyes only detect a tiny slice of this spectrum. We use radio waves, which are on the low-energy end. These waves have a very low <strong>frequency</strong> (the number of waves passing a point per second) and a very long <strong>wavelength</strong> (the distance between wave peaks). A key rule is that lower frequency means lower energy. This is great for us! These waves aren't harmful, and they have an amazing <strong>Penetration Depth</strong>, allowing them to travel through Earth’s atmosphere, clouds, and the vastness of space without being easily blocked.<br><br>Think about higher-energy waves like X-rays. They can pass through your skin but not your bones, which is why they're used for medical images. On the other end, very high-frequency gamma rays carry so much energy they can be dangerous.<br><br>The trade-off for using radio waves is antenna size. Because their wavelength can be meters long, we need giant dish antennas—some as wide as a football field—to catch their faint signals. The wave's amplitude, or strength, gets very weak over billions of miles, so our detectors have to be incredibly sensitive. It’s my job as a radio frequency engineer to make sure we can always hear that faint whisper from across the solar system.",
+    "think_abouts": [
+      "Why can your car radio work inside a garage, but your cell phone signal (which also uses radio waves) might not?",
+      "If higher frequency waves like X-rays have more energy, why are they useful for seeing inside things?"
+    ],
+    "go_deeper": "Dr. Patel uses the Doppler shift to track a spacecraft's speed. How is this similar to the way an ambulance siren's sound changes as it drives past you?",
+    "margin_defs": [
+      {
+        "term": "Frequency",
+        "definition": "How often a wave repeats itself in one second."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance from the top of one wave to the top of the next."
+      }
+    ],
+    "check_prompts": [
+      "What type of electromagnetic wave does Dr. Patel use to communicate with spacecraft, and why is it good for this job?"
+    ],
+    "word_bank": [
+      "Electromagnetic Spectrum",
+      "Frequency",
+      "Wavelength",
+      "Penetration Depth"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Spectrum",
+        "spanish": "Espectro"
+      },
+      {
+        "english": "Frequency",
+        "spanish": "Frecuencia"
+      },
+      {
+        "english": "Radio",
+        "spanish": "Radio"
+      },
+      {
+        "english": "Visible",
+        "spanish": "Visible"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Electromagnetic Spectrum",
+      "definition": "The complete range of electromagnetic waves organized by frequency, from low-energy radio waves to high-energy gamma rays.",
+      "use_sentence": "Visible light is only a small part of the entire electromagnetic spectrum.",
+      "phonetic": null,
+      "cognate": "Espectro Electromagnético"
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of wave cycles that pass a point per second, measured in Hertz; it is directly related to the energy carried by the wave.",
+      "use_sentence": "Gamma rays have a very high frequency, which is why they carry so much energy.",
+      "phonetic": null,
+      "cognate": "Frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance between two consecutive peaks of a wave; it is inversely related to frequency (higher frequency means shorter wavelength).",
+      "use_sentence": "Radio waves can have a wavelength of many meters, while X-rays have a wavelength smaller than an atom.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Penetration Depth",
+      "definition": "How far an electromagnetic wave can pass through a certain material before being absorbed or reflected.",
+      "use_sentence": "The high penetration depth of radio waves allows them to travel through Earth's atmosphere to reach our satellites.",
+      "phonetic": null,
+      "cognate": "Profundidad de Penetración"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel uses radio waves to communicate across billions of miles. What other technologies in your daily life use parts of the electromagnetic spectrum that you can't see?",
+      "frame": "One technology I use that relies on invisible waves is ___ because it ___."
+    },
+    {
+      "prompt": "If you were designing a new space probe, what kind of information would you want it to collect using different parts of the electromagnetic spectrum (e.g., infrared for heat, UV for stars)?",
+      "frame": "To study ___, I would want my probe to have a sensor that detects ___ waves because ___."
+    },
+    {
+      "prompt": "Why is it important for Earth's atmosphere to block most high-energy waves like X-rays and gamma rays from reaching the surface?",
+      "frame": "It is important for the atmosphere to block those waves because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

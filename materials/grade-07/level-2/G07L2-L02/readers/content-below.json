@@ -1,0 +1,92 @@
+{
+  "story": {
+    "title": "Dr. Chang and the Gene Switches",
+    "text": "Hi, I'm Dr. William Chang. I study why you are unique. You share almost all of your DNA with everyone else. So what makes you different? The answer is not just in your DNA code. It’s also in how your code is used. My field of science is called <strong>epigenetics</strong>.<br><br>Think of your DNA as a giant cookbook with thousands of recipes. Your <strong>genes</strong> are the recipes. <strong>Epigenetics</strong> adds little sticky notes to the pages. These notes tell your body which recipes to use and which to skip. This process of turning genes on or off is called <strong>gene expression</strong>. These notes don't change the recipes themselves.<br><br>So, what writes these sticky notes? Your <strong>environment</strong>! We found that a mother’s diet can add notes. These notes help her baby develop in healthy ways. Stress can also add notes. These might turn on genes that affect your mood. Even things your grandparents experienced can pass down these notes to you.<br><br>My team and I map these notes across the entire human genome. We want to see how they affect our health and our <strong>traits</strong>. Understanding these gene switches is a big step. It could help us find new ways to treat diseases in the future. We are learning how your life story can change your biology.",
+    "think_abouts": [
+      "What is one thing in your environment (like your food or activities) that might be 'writing sticky notes' on your genes?",
+      "Why is it important for doctors to know about a person's life experiences, not just their DNA code?"
+    ],
+    "go_deeper": "If epigenetic changes from a grandparent's life can affect a grandchild, what does that suggest about how our choices today might affect future generations?",
+    "margin_defs": [
+      {
+        "term": "epigenetics",
+        "definition": "The study of how your environment and behaviors can cause changes that affect the way your genes work."
+      },
+      {
+        "term": "genome",
+        "definition": "The complete set of DNA, or all the 'recipes,' in an organism."
+      }
+    ],
+    "check_prompts": [
+      "What is the main question Dr. Chang tries to answer?",
+      "In the cookbook example, what do the 'sticky notes' do?",
+      "Name one environmental factor that can affect gene expression.",
+      "How could understanding epigenetics help treat diseases?"
+    ],
+    "word_bank": [
+      "epigenetics",
+      "gene expression",
+      "environment",
+      "traits"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "genetic",
+        "spanish": "genético"
+      },
+      {
+        "english": "information",
+        "spanish": "información"
+      },
+      {
+        "english": "science",
+        "spanish": "ciencia"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gene Expression",
+      "definition": "The process of a gene being 'turned on' to make a protein and show a trait.",
+      "use_sentence": "When a gene for freckles is active, that is an example of gene expression.",
+      "phonetic": "jeen ek-SPREH-shun",
+      "cognate": "expresión genética"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "The small differences in DNA between individuals that create different traits in a population.",
+      "use_sentence": "Genetic variation is why some people in a family have curly hair and others have straight hair.",
+      "phonetic": "juh-NEH-tik vair-ee-AY-shun",
+      "cognate": "variación genética"
+    },
+    {
+      "term": "Mutation",
+      "definition": "A permanent change in the DNA code. It can be helpful, harmful, or have no effect.",
+      "use_sentence": "A small mutation in a gene can cause a big change in an organism's traits.",
+      "phonetic": "myoo-TAY-shun",
+      "cognate": "mutación"
+    },
+    {
+      "term": "Allele",
+      "definition": "A different version of the same gene. You get one from each parent.",
+      "use_sentence": "The allele for blue eyes is one version of the eye-color gene.",
+      "phonetic": "uh-LEEL",
+      "cognate": "alelo"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "The story says diet and stress can affect your genes. What are two healthy choices you can make this week that might help your gene expression?",
+      "frame": null
+    },
+    {
+      "prompt": "Dr. Chang's work could help treat diseases in the future. If you could 'turn off' a gene that causes a health problem, which one would you choose and why?",
+      "frame": "If I could turn off a gene for a health problem, I would choose ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Williams's Rocket Science: Newton's Laws in Action",
+    "text": "At SpaceX, my job is to make sure our rockets follow the rules—not company rules, but the laws of the universe set by Sir Isaac Newton. Every launch is a real-world test of his three laws of motion.<br><br>Think about the big question: a full shopping cart is harder to push than an empty one. A rocket is like the ultimate shopping cart. When it’s full of fuel, its mass is enormous. Its resistance to any change in motion, which we call <strong>inertia</strong> (in-UR-shuh), is huge. To get it off the launchpad, we need an incredible applied force from the engines.<br><br>The engines must produce enough thrust to overcome all opposing forces, like gravity and air resistance—a type of <strong>friction</strong> (FRIK-shun). The total force that’s left over to actually move the rocket is the <strong>net force</strong>. According to Newton's Second Law, this <strong>net force</strong> is what causes <strong>acceleration</strong> (ak-sel-uh-RAY-shun), or the rate at which the rocket's speed increases. More net force means more acceleration.<br><br>However, mass works against acceleration. The more massive our rocket is, the less it will accelerate for the same amount of engine thrust. That’s why an empty cart is so easy to zip around a store! Once in space, where there is almost no friction, Newton's First Law takes over. The spacecraft will coast with its engines off, its inertia keeping it moving in a straight line forever until another force acts on it. My job is to calculate every push, pull, and coast to guide our missions safely through the cosmos.",
+    "think_abouts": [
+      "Why does it take more effort to stop a heavy, rolling bowling ball than a light tennis ball, even if they're moving at the same speed?",
+      "What provides the 'applied force' to make you move forward on a skateboard, and what is the main source of 'friction' that slows you down?"
+    ],
+    "go_deeper": "Dr. Williams mentions that aerodynamic drag (a type of friction) increases dramatically with speed. If a rocket doubles its speed, the drag force becomes four times stronger. How does this affect the amount of engine thrust needed as the rocket gets faster?",
+    "margin_defs": [
+      {
+        "term": "inertia",
+        "definition": "An object's resistance to changing its motion."
+      },
+      {
+        "term": "friction",
+        "definition": "A force that opposes motion between surfaces."
+      },
+      {
+        "term": "net force",
+        "definition": "The total, unbalanced force that causes motion."
+      },
+      {
+        "term": "acceleration",
+        "definition": "The rate of change in an object's speed or direction."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Williams, what is the relationship between an object's mass and its inertia?"
+    ],
+    "word_bank": [
+      "Net Force",
+      "Acceleration",
+      "Friction",
+      "Inertia"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Acceleration",
+        "spanish": "aceleración"
+      },
+      {
+        "english": "Friction",
+        "spanish": "fricción"
+      },
+      {
+        "english": "Inertia",
+        "spanish": "inercia"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Net Force",
+      "definition": "The total force acting on an object after all individual forces are added together, accounting for their directions.",
+      "use_sentence": "To win the tug-of-war, our team had to pull with a greater net force than the other team.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Acceleration",
+      "definition": "The rate at which an object's speed or direction changes over time, measured in meters per second squared.",
+      "use_sentence": "When the driver stomped on the gas pedal, the car's acceleration pushed us back in our seats.",
+      "phonetic": "ak-sel-uh-RAY-shun",
+      "cognate": "aceleración"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that opposes motion between two surfaces that are in contact, converting kinetic energy into heat.",
+      "use_sentence": "The friction between the sled and the grass slowed it down much faster than when it was on the snow.",
+      "phonetic": "FRIK-shun",
+      "cognate": "fricción"
+    },
+    {
+      "term": "Inertia",
+      "definition": "An object's resistance to any change in its state of motion, which is directly related to its mass.",
+      "use_sentence": "Because of inertia, it is much harder to push a heavy boulder than a small pebble.",
+      "phonetic": "in-UR-shuh",
+      "cognate": "inercia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Williams compares a rocket to a shopping cart. What other everyday objects can you use to explain the relationship between force, mass, and acceleration?",
+      "frame": "An example I can think of is ___ because ___."
+    },
+    {
+      "prompt": "How does Newton's First Law (an object in motion stays in motion) explain why you should wear a seatbelt in a car?",
+      "frame": "A seatbelt is important because if the car stops suddenly, my body's inertia will..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

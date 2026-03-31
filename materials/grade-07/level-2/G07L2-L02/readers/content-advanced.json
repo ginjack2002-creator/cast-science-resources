@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Chang and the Code Beyond the Code",
+    "text": "As an epigenetics researcher, I often hear, 'If humans share 99.9% of their DNA, why are we all so different?' The answer lies beyond the sequence itself, in a dynamic layer of control that I study every day.<br><br>Think of your DNA as a vast library of cookbooks. The inherited <strong>genetic variation</strong> from your parents provides different recipe versions, or <strong>alleles</strong>, for everything from eye color to metabolism. However, something has to decide which recipes are cooked today. That 'something' is epigenetics. My team at Johns Hopkins investigates how environmental factors act as the chefs, selecting, modifying, and sometimes silencing recipes without rewriting them. A permanent rewrite would be a <strong>mutation</strong>, but this is different; it’s about which instructions are read.<br><br>We map the cellular mechanisms that control this process, particularly a phenomenon called methylation. Tiny chemical tags, called methyl groups, can attach to a gene and effectively switch it off. This targeted gene silencing is a crucial part of regulating <strong>gene expression</strong>. For instance, we've observed how a mother's nutritional intake during pregnancy can place these tags. A diet rich in folic acid helps ensure that genes critical for preventing spinal cord defects are switched on and remain active in the developing fetus.<br><br>What's truly profound is that some of these epigenetic patterns demonstrate generational inheritance. A grandparent's exposure to famine, for example, can leave an epigenetic mark that influences the metabolism of their grandchildren, preparing their bodies for an environment of scarcity. This biological memory shows that our lives are intricately connected to the experiences of our ancestors. We are not just our DNA sequence; we are a story written by our genes, our environment, and our history.",
+    "think_abouts": [
+      "How is epigenetics different from a genetic mutation?",
+      "Why is it important for genes to be turned on and off?"
+    ],
+    "go_deeper": "If epigenetic changes can be inherited, what are the potential long-term health implications for a population that experiences a widespread environmental event, like a prolonged famine or significant air pollution?",
+    "margin_defs": [
+      {
+        "term": "Epigenetics",
+        "definition": "The study of how your behaviors and environment can cause changes that affect the way your genes work."
+      },
+      {
+        "term": "Methylation",
+        "definition": "A biological process where chemical groups are added to DNA, often acting like a switch to turn genes off."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chang, what is one environmental factor that can change gene expression?"
+    ],
+    "word_bank": [
+      "epigenetics",
+      "methylation",
+      "generational inheritance",
+      "nutritional intake",
+      "gene silencing"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "variation",
+        "spanish": "variación"
+      },
+      {
+        "english": "mutation",
+        "spanish": "mutación"
+      },
+      {
+        "english": "generation",
+        "spanish": "generación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gene Expression",
+      "definition": "The process by which the genetic instructions in a gene are used to create a functional product, such as a protein, leading to a specific trait.",
+      "use_sentence": "Environmental factors like diet can alter gene expression, turning certain genes on or off.",
+      "phonetic": "/jēn ikˈspreSHən/",
+      "cognate": "expresión genética"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "The natural differences in DNA sequences among individuals in a population, which is the basis for unique traits.",
+      "use_sentence": "Genetic variation is why siblings with the same parents can have different hair and eye colors.",
+      "phonetic": "/jəˈnedik verēˈāSH(ə)n/",
+      "cognate": "variación genética"
+    },
+    {
+      "term": "Mutation",
+      "definition": "A permanent alteration in the DNA sequence of a gene, which may result in a different protein and potentially a new trait.",
+      "use_sentence": "While most mutations have no effect, some can cause disease or provide a survival advantage.",
+      "phonetic": "/myo͞oˈtāSH(ə)n/",
+      "cognate": "mutación"
+    },
+    {
+      "term": "Allele",
+      "definition": "One of two or more alternative forms of a gene that arise by mutation and are found at the same place on a chromosome.",
+      "use_sentence": "The allele for brown eyes is dominant over the allele for blue eyes.",
+      "phonetic": "/əˈlēl/",
+      "cognate": "alelo"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chang describes epigenetics as a form of 'biological memory.' What do you think he means by this, and can you think of other ways we 'remember' things outside of our brains?",
+      "frame": "I think 'biological memory' means that an organism's body can..."
+    },
+    {
+      "prompt": "If your environment and lifestyle can change how your genes are expressed, what choices could you make today that might have a positive impact on your long-term health?",
+      "frame": "A choice I could make to positively impact my gene expression is..."
+    },
+    {
+      "prompt": "The story mentions that a grandmother's famine experience can affect her grandchild's metabolism. How does this idea change your perspective on history and family health?",
+      "frame": "This idea makes me think that my family's history is important to my health because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

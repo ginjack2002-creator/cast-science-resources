@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Williams: Pushing Rockets to Space",
+    "text": "Hi, I’m Dr. Jerome Williams. I figure out how to launch giant rockets. It's a lot like pushing a shopping cart, but much bigger! Here’s how my team and I think about it using Newton's Laws.<br><br>1. A rocket on the launchpad has a lot of mass. This gives it <strong>inertia</strong>. That means it resists moving and wants to stay still. A full shopping cart is much harder to start pushing than an empty one for the same reason.<br><br>2. To get the rocket moving, we need a huge push. Our rocket engines provide this massive <strong>applied force</strong>. This push has to be much stronger than all the forces holding the rocket down.<br><br>3. As the rocket blasts off, the air pushes against it. This is a type of <strong>friction</strong> called air resistance. This force tries to slow the rocket down.<br><br>4. We subtract the slowing force of air <strong>friction</strong> from the engine's powerful push. The leftover force is called the <strong>net force</strong>. This is the real force that gets the rocket moving upwards.<br><br>5. A bigger <strong>net force</strong> makes the rocket <strong>accelerate</strong>, or speed up, much faster. My job is to make sure our <strong>net force</strong> is big enough to push our rocket all the way to space!",
+    "think_abouts": [
+      "Why is a heavy rocket with more mass harder to launch than a light one?",
+      "What would happen if the engine's push (applied force) was exactly the same as the air friction?"
+    ],
+    "go_deeper": "In space, there's almost no air friction. How does Newton's First Law (inertia) help engineers save rocket fuel on long trips to Mars?",
+    "margin_defs": [
+      {
+        "term": "inertia",
+        "definition": "an object's resistance to moving"
+      },
+      {
+        "term": "net force",
+        "definition": "the total push or pull left over"
+      },
+      {
+        "term": "accelerate",
+        "definition": "to speed up"
+      }
+    ],
+    "check_prompts": [
+      "What two main forces fight each other when a rocket launches?"
+    ],
+    "word_bank": [
+      "inertia",
+      "applied force",
+      "friction",
+      "net force",
+      "accelerate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "force",
+        "spanish": "fuerza"
+      },
+      {
+        "english": "acceleration",
+        "spanish": "aceleración"
+      },
+      {
+        "english": "inertia",
+        "spanish": "inercia"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Net Force",
+      "definition": "The total force acting on an object when you combine all the pushes and pulls.",
+      "use_sentence": "If you and a friend push a box in the same direction, the net force is stronger.",
+      "phonetic": "net forss",
+      "cognate": "fuerza neta"
+    },
+    {
+      "term": "Acceleration",
+      "definition": "The rate at which an object changes its speed or direction.",
+      "use_sentence": "When the driver hit the gas pedal, we felt the car's acceleration.",
+      "phonetic": "ak-sel-er-AY-shun",
+      "cognate": "aceleración"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that slows down moving objects when they touch a surface.",
+      "use_sentence": "The brakes on a bike use friction to stop the wheels from spinning.",
+      "phonetic": "FRIK-shun",
+      "cognate": "fricción"
+    },
+    {
+      "term": "Inertia",
+      "definition": "The property of an object to resist a change in its motion.",
+      "use_sentence": "Because of inertia, you feel pushed forward when a car suddenly stops.",
+      "phonetic": "in-ER-shuh",
+      "cognate": "inercia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about pushing an empty shopping cart and then a full one. How does Dr. Williams's story about mass and force explain this difference?",
+      "frame": "A full shopping cart is harder to push because..."
+    },
+    {
+      "prompt": "Dr. Williams has to plan for air friction on his rockets. What are two other examples of friction you see in your everyday life?",
+      "frame": "Two examples of friction I see are..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

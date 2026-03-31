@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Reyes: Listening to the Ocean's Secrets",
+    "text": "I am Dr. Antonio Reyes. I am an acoustical physicist. I study how sound waves move through our world.<br><br>Think about a shout and a whisper. A shout uses a lot of energy. This creates a sound wave with a large <strong>amplitude</strong>. A whisper uses very little energy. It makes a wave with a small <strong>amplitude</strong>. More amplitude means the sound is louder.<br><br>I also study a wave's <strong>frequency</strong>. High-frequency sounds have a high pitch, like a whistle. Low-frequency sounds have a low pitch, like a big drum.<br><br>Sound needs a <strong>medium</strong> to travel. This can be air, water, or a solid. My work helps submarines navigate underwater. Sound waves travel much faster in water than in air. The particles in water are closer together. This helps the wave's energy move faster. Understanding these properties helps us explore the deep ocean. We learn how to communicate using the power of waves.",
+    "think_abouts": [
+      "How does the energy of a sound source affect its amplitude?",
+      "Why is the medium important for wave speed?"
+    ],
+    "go_deeper": "Noise-canceling headphones listen to outside sounds and create an opposite wave to cancel them out. How might this idea be used to make submarines quieter?",
+    "margin_defs": [
+      {
+        "term": "acoustical physicist",
+        "definition": "A scientist who studies sound and waves."
+      },
+      {
+        "term": "amplitude",
+        "definition": "The height of a wave; its energy or loudness."
+      },
+      {
+        "term": "medium",
+        "definition": "The material a wave travels through."
+      }
+    ],
+    "check_prompts": [
+      "What wave property changes between a loud sound and a quiet sound?"
+    ],
+    "word_bank": [
+      "amplitude",
+      "frequency",
+      "medium",
+      "wave speed",
+      "energy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "amplitude",
+        "spanish": "amplitud"
+      },
+      {
+        "english": "frequency",
+        "spanish": "frecuencia"
+      },
+      {
+        "english": "physicist",
+        "spanish": "físico"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Amplitude",
+      "definition": "The height of a wave from its resting position. Larger amplitude means more energy.",
+      "use_sentence": "A loud shout creates a sound wave with a large amplitude.",
+      "phonetic": "AM-plih-tood",
+      "cognate": "amplitud"
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of waves that pass a point in one second, measured in Hertz (Hz).",
+      "use_sentence": "A high-pitched whistle has a sound wave with a high frequency.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance from the peak of one wave to the peak of the next wave.",
+      "use_sentence": "High-frequency waves have a short wavelength.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a wave travels through a medium.",
+      "use_sentence": "The wave speed of sound is much faster in water than in air.",
+      "phonetic": "WAYV SPEED",
+      "cognate": null
+    },
+    {
+      "term": "Medium",
+      "definition": "The material or substance that a wave moves through.",
+      "use_sentence": "Air is the most common medium for the sound waves we hear.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "medio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Reyes says sound travels faster in water than air. How might this be useful for animals that live in the ocean?",
+      "frame": "Animals in the ocean might use the fast speed of sound to ___."
+    },
+    {
+      "prompt": "If you drop a small pebble and a large rock into a pond, how will the amplitude and frequency of the waves be different?",
+      "frame": "The large rock will make waves with a larger ___ because it has more energy."
+    },
+    {
+      "prompt": "Besides sound, what other kinds of waves transfer energy from one place to another?",
+      "frame": "Another type of wave that transfers energy is a ___ wave, which I see when ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

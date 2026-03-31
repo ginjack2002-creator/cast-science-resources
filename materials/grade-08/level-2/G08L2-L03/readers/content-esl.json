@@ -1,0 +1,113 @@
+{
+  "story": {
+    "title": "Dr. Kim and the Secrets of Reaction Speed",
+    "text": "I am Dr. Nathan Kim. I am a chemist at Argonne National Laboratory.<br><br>I study how fast chemical reactions happen. We call this the <strong>reaction rate</strong>. Think about mixing baking soda and vinegar. When they mix, they fizz and make bubbles. This is a chemical reaction.<br><br>My job is to control the speed of reactions like this one. I can change the amount of each <strong>reactant</strong>. More reactants mean more particles to collide. This increases the <strong>reaction rate</strong>.<br><br>I also study <strong>surface area</strong>. A fine powder has more surface area than a big chunk. More surface area creates a much faster reaction. A faster reaction means faster <strong>gas production</strong>. We see more bubbles, more quickly.<br><br>In a sealed bottle, this gas creates pressure. If the pressure gets too high, the bottle can pop! But even if it seems like something disappeared, the total mass stays the same. This is the law of <strong>conservation of mass</strong>. Atoms just change form. My work helps us make everything from new fuels to medicines more efficiently.",
+    "think_abouts": [
+      "How could Dr. Kim make the baking soda reaction even *slower*?",
+      "Where does the mass of the gas (CO2) come from?"
+    ],
+    "go_deeper": "If the baking soda and vinegar reaction feels cold to the touch, is it releasing energy or absorbing it? What do scientists call this type of reaction?",
+    "margin_defs": [
+      {
+        "term": "chemist",
+        "definition": "A scientist who studies chemicals."
+      },
+      {
+        "term": "collide",
+        "definition": "To bump into each other."
+      },
+      {
+        "term": "pressure",
+        "definition": "The force of gas pushing on a container."
+      },
+      {
+        "term": "efficiently",
+        "definition": "Working well without wasting time or energy."
+      }
+    ],
+    "check_prompts": [
+      "What are two things Dr. Kim changes to control the reaction rate?"
+    ],
+    "word_bank": [
+      "Reaction Rate",
+      "Surface Area",
+      "Reactant",
+      "Gas Production",
+      "Conservation of Mass"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      },
+      {
+        "english": "chemist",
+        "spanish": "químico"
+      },
+      {
+        "english": "production",
+        "spanish": "producción"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reaction Rate",
+      "definition": "How fast reactants convert into products in a chemical reaction.",
+      "use_sentence": "Increasing the temperature often increases the reaction rate.",
+      "phonetic": "/riˈækʃən reɪt/",
+      "cognate": "reacción"
+    },
+    {
+      "term": "Surface Area",
+      "definition": "The amount of exposed surface where reactants can make contact.",
+      "use_sentence": "A sugar cube dissolves slower than loose sugar because it has less surface area.",
+      "phonetic": "/ˈsɜːrfɪs ˈɛəriə/",
+      "cognate": null
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The principle that total mass in a closed system stays the same before and after a reaction.",
+      "use_sentence": "Because of the conservation of mass, the weight of the ashes and smoke equals the weight of the original wood that burned.",
+      "phonetic": "/ˌkɒnsərˈveɪʃən əv mæs/",
+      "cognate": "conservación de masa"
+    },
+    {
+      "term": "Gas Production",
+      "definition": "The formation of gaseous products such as carbon dioxide during a chemical reaction.",
+      "use_sentence": "The fizzing in the soda is a sign of gas production.",
+      "phonetic": "/ɡæs prəˈdʌkʃən/",
+      "cognate": "producción de gas"
+    },
+    {
+      "term": "Reactant",
+      "definition": "A starting substance that is consumed during a chemical reaction.",
+      "use_sentence": "In the reaction, baking soda and vinegar are each a reactant.",
+      "phonetic": "/riˈæktənt/",
+      "cognate": "reactante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kim uses his knowledge to make things safely. Think of a time in your kitchen where controlling the speed of something (like cooking or cleaning) is important. Why?",
+      "frame": "In my kitchen, controlling the speed of ___ is important because ___."
+    },
+    {
+      "prompt": "The story says mass is conserved, even when gas is produced. How could you design an experiment to prove that the total mass of baking soda, vinegar, and the gas produced stays the same?",
+      "frame": "To prove mass is conserved, I would first ___. Then, I would ___ to measure all the parts."
+    },
+    {
+      "prompt": "Besides reactant amount and surface area, what is another factor you think might change a reaction rate? (Hint: Think about cooking food).",
+      "frame": "I think ___ could also change a reaction rate because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

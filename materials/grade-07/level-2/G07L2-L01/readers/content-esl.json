@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Rodriguez and Your Body's Army",
+    "text": "Hello, I am Dr. Elena Rodriguez. I am an immunologist. My job is to study your body's army. This army is your immune system. It fights an invisible war every day.<br><br>Imagine a dangerous invader enters your body. This invader is a <strong>pathogen</strong>, like a virus. Your body must fight back. Special soldiers called <strong>white blood cells</strong> find the invader. They send signals to the whole system. The system then makes special weapons. These weapons are called <strong>antibodies</strong>. Each <strong>antibody</strong> is made for one specific <strong>pathogen</strong>. They lock onto the invader and stop it.<br><br>This first fight can be slow. Your body gets sick while it learns to attack. This is where my work is important. I help design a <strong>vaccine</strong>. A <strong>vaccine</strong> is like a training mission for your army. It shows your immune system a weak or dead piece of the <strong>pathogen</strong>. Your body learns to make the right <strong>antibodies</strong> without getting sick. Now, your army has a memory. If the real invader comes, your body attacks very fast. The strong response keeps your infection from getting severe.",
+    "think_abouts": [
+      "What is the 'army' inside your body, and what does it fight?",
+      "How is a vaccine like a training mission for your immune system?"
+    ],
+    "go_deeper": "The flu virus changes its 'disguise' every year. How does this explain why we need a new flu vaccine each year?",
+    "margin_defs": [
+      {
+        "term": "invader",
+        "definition": "Something harmful that enters from the outside."
+      },
+      {
+        "term": "memory",
+        "definition": "The ability to remember a pathogen and fight it faster next time."
+      }
+    ],
+    "check_prompts": [
+      "What is the name of the Y-shaped protein that targets a specific pathogen?"
+    ],
+    "word_bank": [
+      "Pathogen",
+      "White Blood Cell",
+      "Antibody",
+      "Vaccine"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Immune System",
+        "spanish": "Sistema Inmune"
+      },
+      {
+        "english": "Infection",
+        "spanish": "Infección"
+      },
+      {
+        "english": "Vaccine",
+        "spanish": "Vacuna"
+      },
+      {
+        "english": "Virus",
+        "spanish": "Virus"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Pathogen",
+      "definition": "A germ, like a bacterium or virus, that can make you sick.",
+      "use_sentence": "The flu is caused by a pathogen that enters your body.",
+      "phonetic": "PATH-oh-jen",
+      "cognate": "Patógeno"
+    },
+    {
+      "term": "Antibody",
+      "definition": "A special protein that your body makes to fight a specific pathogen.",
+      "use_sentence": "My body produced an antibody to fight the cold virus.",
+      "phonetic": "AN-tee-bod-ee",
+      "cognate": null
+    },
+    {
+      "term": "Vaccine",
+      "definition": "A shot that teaches your body how to fight a pathogen before you get sick.",
+      "use_sentence": "The doctor gave me a vaccine to protect me from the measles.",
+      "phonetic": "vak-SEEN",
+      "cognate": "Vacuna"
+    },
+    {
+      "term": "White Blood Cell",
+      "definition": "A special cell in your blood that acts like a soldier to fight infections.",
+      "use_sentence": "A white blood cell attacks germs to keep you healthy.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If a vaccine is a 'training mission' for your immune system, what happens during a real infection if you are not vaccinated?",
+      "frame": "If a person is not vaccinated, their immune system might be slow to respond because ___."
+    },
+    {
+      "prompt": "How does having more white blood cells and antibodies help you feel less sick when a pathogen attacks?",
+      "frame": "More white blood cells and antibodies help by ___ which means the infection severity is ___."
+    },
+    {
+      "prompt": "Dr. Rodriguez designs vaccines. Why is this job important for keeping a whole community healthy?",
+      "frame": "A vaccine researcher's job is important for the community because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

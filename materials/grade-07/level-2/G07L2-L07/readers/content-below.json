@@ -1,0 +1,99 @@
+{
+  "story": {
+    "title": "Dr. Mendez and Earth's Great Rock Recycler",
+    "text": "Hi, I'm Dr. Laura Mendez, a petrologist at the USGS. I study rocks to understand Earth's history. People ask why we don't find more 4-billion-year-old rocks. It's because Earth is a great recycler! It is always changing old rocks into new ones. This is called the rock cycle.<br><br>Let's see how it works. 1. Deep underground, there is amazing heat and pressure. 2. This can melt solid rock into liquid magma. 3. When that magma cools down, it hardens into new <strong>igneous rock</strong>. Think of a volcano making new land. 4. But what if the rock doesn't melt? 5. The heat and pressure can still bake and squeeze it. This changes it into a completely new <strong>metamorphic rock</strong>.<br><br>Now, think about a mountain. 1. Wind, rain, and ice are always breaking it down. This process is called <strong>weathering</strong>. 2. Tiny pieces of rock, called sediment, get washed into rivers. 3. The sediment settles in layers. 4. Over millions of years, the weight of new layers presses down. 5. This pressure cements the sediment together to form <strong>sedimentary rock</strong>. You can often see the layers!<br><br>So, no rock stays the same forever. An igneous rock can be weathered into sediment. That sediment can become a sedimentary rock. If that rock gets buried deep again, it might become a metamorphic rock. It’s an endless cycle.",
+    "think_abouts": [
+      "If you found a rock with visible layers, what type of rock would it likely be? Why?",
+      "Dr. Mendez calls Earth a 'great recycler.' What does she mean by that?"
+    ],
+    "go_deeper": "How might the cooling rate of magma (fast vs. slow) change how an igneous rock looks?",
+    "margin_defs": [
+      {
+        "term": "petrologist",
+        "definition": "A scientist who studies how rocks are formed."
+      },
+      {
+        "term": "magma",
+        "definition": "Hot, liquid rock found beneath the Earth's surface."
+      },
+      {
+        "term": "sediment",
+        "definition": "Tiny pieces of rock broken down by weathering."
+      }
+    ],
+    "check_prompts": [
+      "What two forces deep inside Earth can change rocks?",
+      "How are the layers in sedimentary rock formed?"
+    ],
+    "word_bank": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic",
+      "Weathering",
+      "Pressure"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "cycle",
+        "spanish": "ciclo"
+      },
+      {
+        "english": "pressure",
+        "spanish": "presión"
+      },
+      {
+        "english": "sediment",
+        "spanish": "sedimento"
+      },
+      {
+        "english": "transform",
+        "spanish": "transformar"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Igneous Rock",
+      "definition": "Rock formed from the cooling and solidification of magma or lava.",
+      "use_sentence": "Volcanoes can create igneous rock when lava cools on the surface.",
+      "phonetic": "IG-nee-us",
+      "cognate": "Roca Ígnea"
+    },
+    {
+      "term": "Sedimentary Rock",
+      "definition": "Rock formed from compressed and cemented layers of sediment.",
+      "use_sentence": "We found a fossil of a leaf inside the sedimentary rock.",
+      "phonetic": "sed-uh-MEN-tuh-ree",
+      "cognate": "Roca Sedimentaria"
+    },
+    {
+      "term": "Metamorphic Rock",
+      "definition": "Rock that has been transformed by extreme heat and pressure without melting.",
+      "use_sentence": "Marble is a beautiful metamorphic rock that starts out as limestone.",
+      "phonetic": "met-uh-MOR-fik",
+      "cognate": "Roca Metamórfica"
+    },
+    {
+      "term": "Weathering",
+      "definition": "The breaking down of rocks by forces like wind, water, or ice.",
+      "use_sentence": "Weathering from the river made all the sharp rocks smooth and round.",
+      "phonetic": "WEH-thur-ing",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine you are a rock. Describe one full journey you might take through the rock cycle, starting as magma.",
+      "frame": "My journey starts as hot magma. First, I cool down and become..."
+    },
+    {
+      "prompt": "Dr. Mendez reads the 'story' in a rock. What clues might a metamorphic rock give her about its past?",
+      "frame": "A metamorphic rock might show clues like bent layers or new minerals, which tells me that..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

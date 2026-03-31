@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Nakamura and the Climate Snowball",
+    "text": "My name is Dr. Kenji Nakamura. I build computer models of Earth’s climate. My job is to figure out why small changes can lead to very big results. I study something called a <strong>feedback loop</strong>. Think of it like a snowball rolling downhill. It starts small, but it gets bigger and faster as it goes.<br><br>Here is a loop I see in my models:<br>1. Humans burn fossil fuels. This adds CO2 to the air.<br>2. CO2 acts like a blanket. It traps heat and warms the planet.<br>3. This extra heat melts the bright, white ice at the poles.<br>4. Under the ice is dark ocean water or land.<br>5. Dark surfaces absorb more heat from the sun. White ice reflects it.<br><br>This is the key part of the loop. Less ice means less reflection. We call this a lower <strong>albedo</strong>. When the Earth absorbs more heat, it gets even warmer. This melts even more ice. The snowball gets bigger. My models help us find the <strong>tipping point</strong>, where this loop could become too fast to stop.",
+    "think_abouts": [
+      "Why is a dark surface like the ocean a problem when ice melts?",
+      "What is another example of a 'snowball effect' you have seen in your own life?"
+    ],
+    "go_deeper": "My model also includes water vapor. When air gets warmer, it holds more water. Water vapor is a greenhouse gas, just like CO2. How might this create another feedback loop?",
+    "margin_defs": [
+      {
+        "term": "Feedback Loop",
+        "definition": "A cycle where the result makes the first action happen more."
+      },
+      {
+        "term": "Albedo",
+        "definition": "How much sunlight a surface reflects back to space."
+      },
+      {
+        "term": "Tipping Point",
+        "definition": "A point where a small change causes a big, fast shift in a system."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what happens when Earth's albedo gets lower?"
+    ],
+    "word_bank": [
+      "feedback loop",
+      "albedo",
+      "tipping point",
+      "model",
+      "reflects"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Feedback Loop",
+      "definition": "A cycle where the output of a system circles back to become an input, making the original change stronger or weaker.",
+      "use_sentence": "The melting ice created a feedback loop that made the planet warm up even faster.",
+      "phonetic": null,
+      "cognate": "sistema"
+    },
+    {
+      "term": "Albedo",
+      "definition": "The measure of how much light a surface reflects. White surfaces have high albedo; dark surfaces have low albedo.",
+      "use_sentence": "Fresh snow has a high albedo because it reflects most of the sunlight that hits it.",
+      "phonetic": "al-BEE-doh",
+      "cognate": null
+    },
+    {
+      "term": "Greenhouse Effect",
+      "definition": "The process where certain gases in the atmosphere trap heat, keeping the Earth warm.",
+      "use_sentence": "Without the natural greenhouse effect, Earth would be too cold for life.",
+      "phonetic": null,
+      "cognate": "efecto invernadero"
+    },
+    {
+      "term": "Tipping Point",
+      "definition": "A critical threshold where a small change can cause a system to shift into a new, often irreversible, state.",
+      "use_sentence": "Scientists worry we may reach a tipping point for the melting of Arctic sea ice.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Positive Feedback",
+      "definition": "A feedback loop that amplifies or increases the original change, causing a 'snowball effect'.",
+      "use_sentence": "More warming caused more ice to melt, which caused more warming. This is an example of positive feedback.",
+      "phonetic": null,
+      "cognate": "retroalimentación positiva"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nakamura's story describes a warming loop. Can you think of a feedback loop that might keep a system stable or cool it down?",
+      "frame": "A loop that could keep things stable might be when ___ happens, which then causes ___."
+    },
+    {
+      "prompt": "If you were a climate modeler like Dr. Nakamura, what is one question about the Earth's future you would want your model to answer?",
+      "frame": null
+    },
+    {
+      "prompt": "Besides ice and oceans, what other parts of the Earth system (like forests or clouds) might be part of a feedback loop?",
+      "frame": "I think ___ could be part of a feedback loop because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

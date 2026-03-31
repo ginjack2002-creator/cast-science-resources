@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Reyes and the Secrets of Sound",
+    "text": "Hi, I’m Dr. Antonio Reyes, an acoustical physicist. My lab at Penn State might seem quiet, but it’s filled with invisible energy: sound waves. I model how these mechanical waves travel through different materials, which helps us do amazing things, from creating clear sonar for submarines to designing earthquake warning systems.<br><br>Let’s solve a puzzle: Why does a shout sound different from a whisper? It’s all about the initial energy. A shout starts with more force, creating a sound wave with a large <strong>amplitude</strong> (the height of a wave from its resting position). A bigger amplitude carries much more energy, which our ears perceive as a loud sound. A whisper has a tiny amplitude, carrying very little energy.<br><br>But loudness isn't everything. A wave's pitch is determined by its <strong>frequency</strong> (the number of wave cycles per second). A high-pitched whistle has a high frequency, while a low bass note has a low frequency. Frequency has an inverse relationship with <strong>wavelength</strong> (the distance between two consecutive wave peaks). As frequency goes up, wavelength gets shorter.<br><br>Now, why does sound travel faster underwater? The key is the <strong>medium</strong> (the material a wave travels through). In a denser medium like water, particles are packed closer together than in air. This allows them to transfer the wave's vibrations more efficiently, dramatically increasing the <strong>wave speed</strong>. By mastering these relationships—amplitude, frequency, and speed—we can predict and control how wave energy moves through our world, keeping people safe and helping us explore the unknown.",
+    "think_abouts": [
+      "Dr. Reyes mentions that wave amplitude is related to energy. How might an engineer use this knowledge to design a speaker for a large concert?",
+      "If sound travels faster in water than in air, why do you think it feels like you can't hear as clearly underwater?"
+    ],
+    "go_deeper": "Noise-canceling headphones work by creating a new sound wave that has the opposite pattern of the incoming noise. What do you think happens when these two waves meet?",
+    "margin_defs": [
+      {
+        "term": "Acoustical",
+        "definition": "Relating to the science of sound."
+      },
+      {
+        "term": "Sonar",
+        "definition": "A system that uses sound waves to detect objects underwater."
+      }
+    ],
+    "check_prompts": [
+      "What property of a medium, like its density, primarily affects a wave's speed?"
+    ],
+    "word_bank": [
+      "Amplitude",
+      "Frequency",
+      "Wavelength",
+      "Medium",
+      "Wave Speed"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Frequency",
+        "spanish": "Frecuencia"
+      },
+      {
+        "english": "Amplitude",
+        "spanish": "Amplitud"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Amplitude",
+      "definition": "The height of a wave from its resting position—larger amplitude means more energy.",
+      "use_sentence": "The earthquake's large amplitude caused the ground to shake violently.",
+      "phonetic": "AM-pli-tood",
+      "cognate": "Amplitud"
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of wave cycles per second, measured in Hertz (Hz).",
+      "use_sentence": "A dog whistle has a very high frequency that humans can't hear.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "Frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance between two consecutive wave peaks or troughs.",
+      "use_sentence": "Red light has a longer wavelength than blue light.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a wave moves through a medium—determined by the medium's properties.",
+      "use_sentence": "The wave speed of sound is much faster in steel than it is in air.",
+      "phonetic": "WAYV speed",
+      "cognate": null
+    },
+    {
+      "term": "Medium",
+      "definition": "The material a wave travels through, such as air, water, or solid metal.",
+      "use_sentence": "Light can travel through the vacuum of space, but sound needs a medium to travel.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "Medio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Reyes explains that the properties of a medium change a wave's speed. Besides water and air, what other media can sound travel through? How might its speed and amplitude change in those different materials?",
+      "frame": "Sound can also travel through ___. I think its speed would ___ because ___."
+    },
+    {
+      "prompt": "Think about a musical instrument, like a guitar. How do you change the frequency (pitch) and amplitude (loudness) of the sound waves it produces?",
+      "frame": "To change the pitch on a guitar, you ___. To make it louder, you ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

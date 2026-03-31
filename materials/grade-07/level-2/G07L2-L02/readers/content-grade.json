@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Chang and the Gene Switches",
+    "text": "Hello! I’m Dr. William Chang, and I'm an epigenetics researcher. My job is to solve a fascinating puzzle: if you share 99.9% of your DNA with every other person, what makes you truly unique? The answer isn't just in the DNA sequence itself, but in how your genes are used.<br><br>Think of your DNA as a massive cookbook. Your genes are the recipes. You inherit this cookbook from your parents, creating <strong>genetic variation</strong> (the natural differences in DNA between people). This is thanks to having different <strong>alleles</strong>—which are like variations of the same recipe, such as one for brown eyes and another for blue. Occasionally, a permanent typo, called a <strong>mutation</strong>, can change a recipe in a significant way.<br><br>But here's where my work gets exciting. Not every recipe in the cookbook is used all the time. Epigenetics is the study of the factors that decide which recipes get read. We call this <strong>gene expression</strong> (the process of turning a gene 'on' to make something the body needs). Environmental factors—like your diet, the air you breathe, or stress—act like switches. They can attach tiny chemical tags called methyl groups to your DNA, silencing a gene or turning its volume up.<br><br>For instance, we know a mother's diet during pregnancy can switch on genes in her child that prevent birth defects. Amazingly, some of these epigenetic changes can even be passed to future generations. My team maps these tags across the genome to understand how your life experiences are written onto your DNA, shaping the unique person you are.",
+    "think_abouts": [
+      "Dr. Chang says your life experiences can be 'written onto your DNA.' What experiences in your life do you think might be affecting your gene expression?",
+      "If you could control the 'switches' for any of your genes, which trait would you want to turn 'on' or 'off'?"
+    ],
+    "go_deeper": "How could understanding epigenetics change the way doctors give health advice in the future?",
+    "margin_defs": [
+      {
+        "term": "Epigenetics",
+        "definition": "The study of how your behaviors and environment can cause changes that affect the way your genes work."
+      }
+    ],
+    "check_prompts": [
+      "What is one example of an environmental factor that can change gene expression?"
+    ],
+    "word_bank": [
+      "Gene Expression",
+      "Genetic Variation",
+      "Mutation",
+      "Allele"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "variation",
+        "spanish": "variación"
+      },
+      {
+        "english": "mutation",
+        "spanish": "mutación"
+      },
+      {
+        "english": "gene",
+        "spanish": "gen"
+      },
+      {
+        "english": "expression",
+        "spanish": "expresión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gene Expression",
+      "definition": "The process by which information from a gene is used to create a functional protein or trait in an organism.",
+      "use_sentence": "Good nutrition can influence the gene expression for height.",
+      "phonetic": null,
+      "cognate": "expresión"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "Differences in DNA sequences between individuals that lead to diversity in traits within a population.",
+      "use_sentence": "The wide range of dog breeds shows a lot of genetic variation.",
+      "phonetic": null,
+      "cognate": "variación genética"
+    },
+    {
+      "term": "Mutation",
+      "definition": "A permanent change in the DNA sequence that may alter the protein a gene produces, potentially changing a trait.",
+      "use_sentence": "A random mutation led to the trait of blue eyes in humans thousands of years ago.",
+      "phonetic": null,
+      "cognate": "mutación"
+    },
+    {
+      "term": "Allele",
+      "definition": "Different versions of the same gene that can produce different traits, like brown eyes vs. blue eyes.",
+      "use_sentence": "You get one allele for a gene from each parent, which determines traits like your hair type.",
+      "phonetic": "uh-LEEL",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chang compares DNA to a cookbook and genes to recipes. What other analogies can you think of to explain the relationship between DNA, genes, and gene expression?",
+      "frame": "I could compare DNA to a ___ because ___."
+    },
+    {
+      "prompt": "The story mentions that epigenetic changes can sometimes be passed down through generations. How does this idea change how you think about the connection between you, your parents, and your grandparents?",
+      "frame": null
+    },
+    {
+      "prompt": "If everyone understood that their lifestyle choices could affect their children's or grandchildren's gene expression, how might society change?",
+      "frame": "If people knew their choices had that impact, they might ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

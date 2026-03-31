@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Osei-Mensah and the Ecosystem Dominoes",
+    "text": "Hello, I'm Dr. Jasmine Osei-Mensah. I am a Trophic Cascade Ecologist in Yellowstone. I study how one species can change an entire landscape. It is like watching a line of dominoes fall. This powerful chain reaction is called a <strong>trophic cascade</strong>.<br><br>We start with the <strong>apex predator</strong>, the animal at the top. In Yellowstone, this was the wolf. For many years, wolves were gone. Without them, the elk population grew very large. The elk ate too many young trees and plants. This is called <strong>overgrazing</strong>. Soon, the riverbanks were bare and empty.<br><br>Without plant roots to hold the soil, the rivers started to erode. They changed their shape. The ecosystem lost its balance. This is a loss of <strong>ecosystem stability</strong>. Many other animals lost their homes.<br><br>When we brought wolves back, they created <strong>top-down control</strong>. They hunted elk, which changed elk behavior. The trees and shrubs grew back. The rivers stopped eroding. Beavers returned. My job is to use data to see these connections. This research helps us keep our ecosystems healthy and strong for everyone.",
+    "think_abouts": [
+      "How does removing one animal (the wolf) end up changing the shape of a river?",
+      "Why is Dr. Osei-Mensah's job important for national parks and other wild places?"
+    ],
+    "go_deeper": "Besides eating elk, how else might the presence of wolves change the ecosystem? (Hint: Think about the 'Landscape of Fear'.)",
+    "margin_defs": [
+      {
+        "term": "landscape",
+        "definition": "a large area of land"
+      },
+      {
+        "term": "chain reaction",
+        "definition": "a series of events where each one causes the next"
+      },
+      {
+        "term": "behavior",
+        "definition": "the way an animal acts"
+      }
+    ],
+    "check_prompts": [
+      "What is one negative effect of overgrazing mentioned in the text?"
+    ],
+    "word_bank": [
+      "Trophic Cascade",
+      "Apex Predator",
+      "Overgrazing",
+      "Ecosystem Stability",
+      "Top-Down Control"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "ecosystem",
+        "spanish": "ecosistema"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "erosion",
+        "spanish": "erosión"
+      },
+      {
+        "english": "stability",
+        "spanish": "estabilidad"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Cascade",
+      "definition": "When changing one species causes a chain reaction in an ecosystem.",
+      "use_sentence": "The return of wolves caused a trophic cascade that healed the rivers.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": "cascada"
+    },
+    {
+      "term": "Apex Predator",
+      "definition": "An animal at the top of the food web with no natural enemies.",
+      "use_sentence": "The great white shark is an apex predator in the ocean.",
+      "phonetic": "AY-peks PRED-uh-ter",
+      "cognate": "predador"
+    },
+    {
+      "term": "Overgrazing",
+      "definition": "When too many animals eat the plants in an area, damaging the land.",
+      "use_sentence": "Overgrazing by too many deer left the hillside bare and led to erosion.",
+      "phonetic": "o-ver-GRAY-zing",
+      "cognate": null
+    },
+    {
+      "term": "Ecosystem Stability",
+      "definition": "How well an ecosystem can stay balanced and healthy over time.",
+      "use_sentence": "Having many different types of species increases ecosystem stability.",
+      "phonetic": "EE-ko-sis-tem stuh-BIL-i-tee",
+      "cognate": "estabilidad"
+    },
+    {
+      "term": "Top-Down Control",
+      "definition": "When a predator controls the population of the animals it eats.",
+      "use_sentence": "Sea otters have top-down control over sea urchins, which protects kelp forests.",
+      "phonetic": "TOP-down kun-TROL",
+      "cognate": "control"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think of an ecosystem near you (a park, a forest, a pond). Who might be the apex predator? What could happen if it disappeared?",
+      "frame": "In the ecosystem near me, the apex predator is probably ___. If it disappeared, I think ___ would happen."
+    },
+    {
+      "prompt": "Dr. Osei-Mensah says her work helps us keep ecosystems healthy. What is another type of job that helps protect nature, and what do they do?",
+      "frame": "Another job that helps protect nature is a ___, because they ___."
+    },
+    {
+      "prompt": "The story shows how wolves, elk, plants, and rivers are all connected. Can you think of another example of a surprising connection in nature?",
+      "frame": "A surprising connection in nature is between ___ and ___. They are connected because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

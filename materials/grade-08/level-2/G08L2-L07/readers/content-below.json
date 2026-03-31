@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Reyes: Solving Sound Puzzles with Waves",
+    "text": "Hello, I'm Dr. Antonio Reyes. I'm an acoustical physicist, which means I study the physics of sound. My work helps us understand how sound travels through different materials, like air and water.<br><br>Let's solve a puzzle. Why is a shout louder than a whisper? <br>1. It starts with your energy. A shout uses a lot of <strong>Wave Source Energy</strong>.<br>2. This energy creates a sound wave with a big <strong>amplitude</strong>.<br>3. <strong>Amplitude</strong> is the height of the wave. A bigger amplitude carries more energy, which our ears hear as a louder sound. A whisper has very little energy and a small amplitude.<br><br>Now, why does sound travel faster underwater?<br>1. It's all about the <strong>medium</strong> the wave travels through.<br>2. In the air, molecules are far apart. It takes time for the sound vibration to travel between them.<br>3. In water, molecules are packed tightly together. Vibrations jump from one to the next very quickly. This means the <strong>wave speed</strong> is much faster in a denser <strong>medium</strong> like water.<br><br>We also look at <strong>frequency</strong>, which is how many waves pass by each second. High frequency makes a high pitch, and low frequency makes a low pitch. Understanding these properties helps us build everything from better headphones to systems that find submarines.",
+    "think_abouts": [
+      "How does the energy you use to speak change a sound wave's amplitude?",
+      "Why would an earthquake wave travel faster through solid rock than through the air?"
+    ],
+    "go_deeper": "Noise-canceling headphones listen to outside sounds and create an opposite wave to cancel them out. What do you think happens when two opposite waves meet?",
+    "margin_defs": [
+      {
+        "term": "Acoustical Physicist",
+        "definition": "A scientist who studies sound and how it moves."
+      },
+      {
+        "term": "Sonar",
+        "definition": "A system that uses sound waves to find objects underwater."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what is amplitude?",
+      "Which medium lets sound travel faster: air or water? Why?"
+    ],
+    "word_bank": [
+      "Amplitude",
+      "Medium",
+      "Frequency",
+      "Wave Speed",
+      "Energy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Frequency",
+        "spanish": "Frecuencia"
+      },
+      {
+        "english": "Physicist",
+        "spanish": "Físico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Amplitude",
+      "definition": "The height of a wave from its rest position; it relates to the wave's energy.",
+      "use_sentence": "A loud shout has a sound wave with a large amplitude.",
+      "phonetic": "AM-pli-tood",
+      "cognate": "Amplitud"
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of waves that pass a point in one second, measured in Hertz (Hz).",
+      "use_sentence": "A high-pitched whistle has a high frequency.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "Frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance from one peak of a wave to the next peak.",
+      "use_sentence": "Low-pitched sounds from a tuba have a long wavelength.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a wave's energy travels through a material.",
+      "use_sentence": "The wave speed of sound is faster in water than in air.",
+      "phonetic": "WAYV SPEED",
+      "cognate": "Velocidad"
+    },
+    {
+      "term": "Medium",
+      "definition": "The substance or material that a wave moves through.",
+      "use_sentence": "Air is the medium for the sound of our voices.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "Medio"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Reyes uses wave properties to design things. How could you use amplitude and frequency to design a new alarm sound for your school?",
+      "frame": "To make a new alarm sound, I would want a wave with a ___ amplitude to make it loud, and a ___ frequency to make it annoying."
+    },
+    {
+      "prompt": "Waves are all around us. Besides sound, what is another example of a wave you see or use every day? How is it similar to a sound wave?",
+      "frame": "A wave I see every day is ___. It is similar to a sound wave because it also carries ___."
+    },
+    {
+      "prompt": "If you drop a small pebble in a pond it makes a small wave. If you drop a big rock, it makes a big wave. How does this model the idea of Wave Source Energy and Amplitude?",
+      "frame": "The big rock is like a shout because it has more ___ and creates a wave with a bigger ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

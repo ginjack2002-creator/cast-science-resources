@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Nathan Kim: Choreographing Chemical Reactions",
+    "text": "At Argonne National Laboratory, my team and I don't just mix chemicals; we choreograph them down to the millisecond. I'm Dr. Nathan Kim, and as a Reaction Kinetics Chemist, my entire focus is on the speed of chemical reactions. You’ve definitely seen a simple version of my work if you've ever made a baking soda and vinegar volcano. That familiar, fizzing eruption is a fantastic model for exploring some of chemistry’s most fundamental principles, from energy transfer to the laws that govern matter.<br><br>My central question is always, 'How fast, and why?' The <strong>Reaction Rate</strong>—the precise speed at which a <strong>reactant</strong> like baking soda is converted into products—is the variable I seek to control. We manipulate several factors to dial this speed up or down. For instance, if we increase the concentration of vinegar, we provide a denser field of particles available to collide and react, which predictably accelerates the process. An even more powerful tool is <strong>Surface Area</strong>. A fine powder of baking soda reacts almost instantly because its vast exposed surface allows for maximum particle contact, whereas a compressed tablet of the same mass would react far more slowly. It’s all about engineering the conditions to maximize the frequency of effective collisions.<br><br>As the reaction speeds up, so does the <strong>Gas Production</strong>. Those vigorous bubbles are carbon dioxide (CO2), a new substance formed by rearranging the atoms of the original reactants. This directly addresses a common puzzle: where does the mass go? The foundational principle of <strong>Conservation of Mass</strong> dictates that in a closed system, the total mass before and after the reaction is identical. The mass of the CO2 gas, which might escape in an open container, perfectly accounts for the 'lost' mass from the solid and liquid. We're simply witnessing matter change form, not vanish.<br><br>Controlling these rates is not just an academic exercise; it has critical real-world applications. In a sealed system, that rapid gas production dramatically increases pressure. If the reaction rate is uncontrolled, the pressure can exceed the container's structural limits, causing a catastrophic failure—an explosion. My research informs the design of safer batteries that won't overheat, more efficient industrial catalysts, and even the controlled, split-second inflation of automotive airbags. It's all about precisely managing the speed and energy of chemical reactions to make technology work for us.",
+    "think_abouts": [
+      "Dr. Kim mentions that a fine powder of baking soda reacts faster than a solid chunk. Why is this the case?",
+      "According to Dr. Kim, if you mix baking soda and vinegar in a sealed bottle, the total mass of the bottle doesn't change. Where did the solid baking soda's mass go?"
+    ],
+    "go_deeper": "Dr. Kim's work helps design car airbags, which inflate in milliseconds. What factors (like temperature, concentration, or surface area of the reactants) do you think engineers would need to control to make an airbag inflate incredibly fast but not dangerously explode?",
+    "margin_defs": [
+      {
+        "term": "Kinetics",
+        "definition": "The study of motion and rates of change."
+      },
+      {
+        "term": "Variable",
+        "definition": "A factor that can be changed in an experiment."
+      },
+      {
+        "term": "Catalyst",
+        "definition": "A substance that speeds up a reaction without being used up."
+      }
+    ],
+    "check_prompts": [
+      "What are two factors Dr. Kim can change to control the reaction rate?"
+    ],
+    "word_bank": [
+      "Reaction Rate",
+      "Surface Area",
+      "Conservation of Mass",
+      "Gas Production",
+      "Reactant"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Reaction",
+        "spanish": "Reacción"
+      },
+      {
+        "english": "Variable",
+        "spanish": "Variable"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reaction Rate",
+      "definition": "How fast reactants are converted into products in a chemical reaction.",
+      "use_sentence": "Increasing the temperature usually increases the reaction rate.",
+      "phonetic": "ree-AK-shun RAYT",
+      "cognate": "Reacción"
+    },
+    {
+      "term": "Surface Area",
+      "definition": "The total amount of exposed surface of a substance where reactants can make contact.",
+      "use_sentence": "Grinding a solid into a powder increases its surface area, allowing it to react faster.",
+      "phonetic": "SUR-fis AIR-ee-uh",
+      "cognate": null
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The principle stating that mass in an isolated or closed system is neither created nor destroyed by chemical reactions.",
+      "use_sentence": "Because of the conservation of mass, the total mass of the sealed container stayed the same before and after the experiment.",
+      "phonetic": "kon-sur-VAY-shun uv MASS",
+      "cognate": "Conservación de Masa"
+    },
+    {
+      "term": "Gas Production",
+      "definition": "The formation of a substance in a gaseous state, like bubbles, during a chemical reaction.",
+      "use_sentence": "The rapid gas production from the baking soda and vinegar caused the mixture to fizz and overflow.",
+      "phonetic": "GASS pro-DUK-shun",
+      "cognate": "Producción de Gas"
+    },
+    {
+      "term": "Reactant",
+      "definition": "A starting substance that is consumed and changed during a chemical reaction.",
+      "use_sentence": "In the reaction, baking soda and vinegar are each a reactant.",
+      "phonetic": "ree-AK-tunt",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kim calls his work 'choreographing' chemical reactions. What do you think he means by this, and how does it relate to controlling variables like surface area and reactant amount?",
+      "frame": "I think Dr. Kim uses the word 'choreographing' to mean..."
+    },
+    {
+      "prompt": "Imagine you are designing a self-heating meal packet for campers, which uses a chemical reaction to produce heat. Would you want a fast or a slow reaction rate? Explain your reasoning.",
+      "frame": "For a self-heating meal, I would want a ___ reaction rate because..."
+    },
+    {
+      "prompt": "The story explains that mass is conserved in a sealed system. What challenges might a scientist at Argonne National Laboratory face when trying to measure the mass of a gas like carbon dioxide?",
+      "frame": "A challenge in measuring the mass of a gas is that..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

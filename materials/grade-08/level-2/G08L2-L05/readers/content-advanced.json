@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Brianna Jackson and the Energy Transformation Chain",
+    "text": "People often ask me what an Energy Systems Physicist does. I tell them I'm a detective who tracks one of the universe's most elusive quantities: energy. It never disappears, but it constantly changes form, and my job is to follow its trail.<br><br>Consider the elegant physics of a roller coaster. As a car is mechanically hoisted to the crest of the first massive hill, it accumulates a tremendous amount of <strong>potential energy</strong>. This stored energy is a direct function of its height and mass; the higher and heavier, the more potential it holds. At that breathless peak, it's an energy savings account, waiting to be spent.<br><br>Then, it plunges. In that exhilarating drop, a fundamental <strong>energy transformation</strong> occurs. The stored potential energy is rapidly converted into <strong>kinetic energy</strong>—the energy of motion. As the coaster's height decreases, its velocity increases, a perfect trade-off. But here's the critical question: where does that energy go when the coaster eventually slows and stops? It doesn't simply vanish.<br><br>The principle of <strong>Conservation of Energy</strong> is absolute; energy is never created or destroyed. Instead, the kinetic energy is transformed again, primarily through friction. The interaction between the wheels and the track, along with air resistance, generates <strong>thermal energy</strong>. Every bit of motion energy that seems to 'disappear' is actually dissipated as heat, warming the steel rails, the wheels, and the air molecules it collides with. This conversion is why systems are never perfectly efficient.<br><br>At Oak Ridge National Laboratory, I apply this same tracking principle to larger systems. We model how to recapture kinetic energy in electric cars through regenerative braking or how to maximize the conversion from potential to electrical energy in hydroelectric dams. Understanding and managing these transformations is the key to engineering a more efficient and sustainable future.",
+    "think_abouts": [
+      "How does the initial height of a roller coaster hill affect the maximum speed it can reach at the bottom?",
+      "Besides heat from friction, what other forms of energy might be produced as a roller coaster moves along its track?"
+    ],
+    "go_deeper": "Dr. Jackson notes that gas engines are only about 25% efficient, while electric motors are about 90% efficient. What does this mean in terms of energy transformation, and where does the 'lost' energy go in a gasoline-powered car?",
+    "margin_defs": [
+      {
+        "term": "Potential Energy",
+        "definition": "Energy stored due to an object's position or height."
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "The energy an object has because of its motion."
+      },
+      {
+        "term": "Conservation of Energy",
+        "definition": "A fundamental law stating that energy cannot be created or destroyed, only changed from one form to another."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Jackson, what form of energy is kinetic energy converted into by friction?"
+    ],
+    "word_bank": [
+      "Potential Energy",
+      "Kinetic Energy",
+      "Thermal Energy",
+      "Conservation of Energy",
+      "Energy Transformation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "transformation",
+        "spanish": "transformación"
+      },
+      {
+        "english": "principle",
+        "spanish": "principio"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Potential Energy",
+      "definition": "Energy that is stored in an object due to its position relative to others, stresses within itself, its electric charge, or other factors. In this context, it refers to gravitational potential energy.",
+      "use_sentence": "At the top of the hill, the roller coaster car has its maximum potential energy.",
+      "phonetic": "/pəˈtenʃəl ˈenərdʒi/",
+      "cognate": "energía potencial"
+    },
+    {
+      "term": "Kinetic Energy",
+      "definition": "The energy which a body possesses by virtue of being in motion. It is directly proportional to the object's mass and the square of its velocity.",
+      "use_sentence": "As the object falls, its potential energy is converted into kinetic energy, causing it to speed up.",
+      "phonetic": "/kəˈnetɪk ˈenərdʒi/",
+      "cognate": "energía cinética"
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "The internal energy of an object due to the kinetic energy of its atoms and/or molecules. It is often generated as a byproduct of friction.",
+      "use_sentence": "Friction between the tires and the road converted some of the car's kinetic energy into thermal energy, heating the pavement.",
+      "phonetic": "/ˈθɜːrməl ˈenərdʒi/",
+      "cognate": "energía térmica"
+    },
+    {
+      "term": "Conservation of Energy",
+      "definition": "The fundamental principle of physics that the total energy of an isolated system remains constant over time. Energy can only be transformed from one form to another.",
+      "use_sentence": "The law of conservation of energy explains why the coaster's total energy remains the same, even as it changes between potential, kinetic, and thermal forms.",
+      "phonetic": "/ˌkɑːnsərˈveɪʃn əv ˈenərdʒi/",
+      "cognate": "conservación de energía"
+    },
+    {
+      "term": "Energy Transformation",
+      "definition": "The process of changing energy from one of its forms into another, such as the conversion of chemical energy in fuel into thermal and kinetic energy in an engine.",
+      "use_sentence": "Photosynthesis is a biological energy transformation that converts light energy into chemical energy.",
+      "phonetic": "/ˈenərdʒi ˌtrænsfərˈmeɪʃn/",
+      "cognate": "transformación de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Jackson works on regenerative braking. How does this technology apply the principle of energy transformation to make electric cars more efficient?",
+      "frame": "Regenerative braking works by..."
+    },
+    {
+      "prompt": "Describe the complete energy transformation chain for a hydroelectric dam, starting from the water stored in the reservoir and ending with the electricity powering a lightbulb in a home.",
+      "frame": null
+    },
+    {
+      "prompt": "If you were to design a playground slide to be as fast as possible, what materials would you use and why? How does your choice relate to minimizing the conversion of kinetic energy to thermal energy?",
+      "frame": "To build the fastest slide, I would..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

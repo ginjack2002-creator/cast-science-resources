@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Nikolaou's Digital Islands: Watching Evolution Unfold",
+    "text": "Hello, I’m Dr. Sophia Nikolaou. At the American Museum of Natural History, I don't just study fossils of ancient life—I watch evolution happening right now. How? I build computer models, like digital islands, to see how populations change over many generations.<br><br>Imagine a population of lizards on one of my islands. A large population size usually means high <strong>Genetic Variation</strong>, which is the variety of traits like skin color or speed. This diversity is the raw material for evolution. Now, let's change the environment. A new, fast predator arrives. This creates a strong <strong>Selection Pressure</strong>, an environmental factor that makes it harder for some individuals to survive. Suddenly, being fast isn’t just a small difference; it’s the key to staying alive.<br><br>This is <strong>Natural Selection</strong> in action: the process where organisms with traits better suited to their environment survive and reproduce more. The slower lizards get eaten, while the faster ones escape, live longer, and have more baby lizards. Over time, the entire population becomes faster. This beneficial trait is now an <strong>Adaptation</strong>, a feature that has spread through the group to help it thrive in its new reality. My work shows that the rate of environmental change directly impacts how quickly populations must adapt or face extinction. It’s a constant, high-stakes race between a changing planet and life's ability to keep up.",
+    "think_abouts": [
+      "What might happen to the lizards if the island suddenly became very green and wet instead of brown and dry?",
+      "Why is having a lot of genetic variation like having more tools in a toolbox when a problem comes up?"
+    ],
+    "go_deeper": "Besides survival from predators, Dr. Nikolaou also studies how traits for attracting mates, like a bird's bright feathers, can drive evolution. How is this 'sexual selection' different from natural selection caused by predators?",
+    "margin_defs": [
+      {
+        "term": "Genetic Variation",
+        "definition": "The different traits within a group."
+      },
+      {
+        "term": "Selection Pressure",
+        "definition": "An environmental challenge that favors some traits."
+      },
+      {
+        "term": "Natural Selection",
+        "definition": "Survival of those best suited to reproduce."
+      },
+      {
+        "term": "Adaptation",
+        "definition": "A helpful trait that spreads in a population."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Nikolaou, what happens when a new predator creates a strong selection pressure?"
+    ],
+    "word_bank": [
+      "Population",
+      "Environment",
+      "Traits",
+      "Survival",
+      "Generation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Evolution",
+        "spanish": "Evolución"
+      },
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Selection",
+        "spanish": "Selección"
+      },
+      {
+        "english": "Variation",
+        "spanish": "Variación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Natural Selection",
+      "definition": "The process by which organisms with traits better suited to their environment survive and reproduce at higher rates, passing those traits to offspring.",
+      "use_sentence": "Through natural selection, the peppered moths in England became darker to match the soot-covered trees during the Industrial Revolution.",
+      "phonetic": "NACH-uh-rul suh-LEK-shun",
+      "cognate": "Selección Natural"
+    },
+    {
+      "term": "Selection Pressure",
+      "definition": "Any environmental factor that causes individuals with certain traits to survive and reproduce better than others.",
+      "use_sentence": "The lack of water in the desert creates a strong selection pressure for plants that can store moisture.",
+      "phonetic": "suh-LEK-shun PRESH-er",
+      "cognate": "Presión de Selección"
+    },
+    {
+      "term": "Adaptation",
+      "definition": "A trait that increases an organism's fitness in its specific environment, developed through natural selection over many generations.",
+      "use_sentence": "A polar bear's thick fur is an adaptation that helps it survive in the cold Arctic.",
+      "phonetic": "ad-ap-TAY-shun",
+      "cognate": "Adaptación"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "The range of different alleles and traits present within a population, providing the raw material for natural selection.",
+      "use_sentence": "The high genetic variation in the dog species allows for breeds as different as Chihuahuas and Great Danes.",
+      "phonetic": "juh-NET-ik vair-ee-AY-shun",
+      "cognate": "Variación Genética"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nikolaou studies how fast environments change. Think about a local environment you know. What changes are happening there, and what kinds of selection pressure might those changes be putting on local plants or animals?",
+      "frame": "In my local park, I've noticed that ___. This might create pressure for animals to ___."
+    },
+    {
+      "prompt": "If a population has very low genetic variation, why is it in more danger if a new disease appears?",
+      "frame": "Low genetic variation is risky because if a disease appears, ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

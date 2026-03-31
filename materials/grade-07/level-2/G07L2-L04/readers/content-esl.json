@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Williams: Calculating the Rocket's Push",
+    "text": "My name is Dr. Jerome Williams. I am an aerospace engineer at SpaceX. I use Newton's Laws to plan our rocket missions. These laws explain how forces make things move.<br><br>Our rockets have a lot of mass. Mass is how much stuff is in an object. This mass gives the rocket <strong>inertia</strong>. <strong>Inertia</strong> is the resistance to changing motion. To launch, our engines create a huge applied force. This push must be greater than the forces pushing back, like air <strong>friction</strong>.<br><br>The total force that moves the rocket is the <strong>net force</strong>. A large <strong>net force</strong> causes fast <strong>acceleration</strong>. This means the rocket's speed increases quickly. If we increase the rocket's mass with more cargo, we need more force to get the same <strong>acceleration</strong>.<br><br>This is just like pushing a shopping cart. An empty cart is easy to push. A full cart has more mass and more <strong>inertia</strong>. You need a bigger push to make it accelerate. My calculations ensure our rockets have the right push for their mass.",
+    "think_abouts": [
+      "Why does a rocket need such powerful engines to lift off?",
+      "How is a full shopping cart similar to a heavy rocket when you try to push it?"
+    ],
+    "go_deeper": "Dr. Williams mentions air friction. In space, there is almost no air. How does this lack of friction help a spacecraft travel long distances to other planets without using its engines the whole time?",
+    "margin_defs": [
+      {
+        "term": "mass",
+        "definition": "how much stuff is in an object"
+      },
+      {
+        "term": "force",
+        "definition": "a push or a pull"
+      }
+    ],
+    "check_prompts": [
+      "What happens to acceleration if you increase the net force on an object?"
+    ],
+    "word_bank": [
+      "Net Force",
+      "Acceleration",
+      "Friction",
+      "Inertia"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "force",
+        "spanish": "fuerza"
+      },
+      {
+        "english": "acceleration",
+        "spanish": "aceleración"
+      },
+      {
+        "english": "mass",
+        "spanish": "masa"
+      },
+      {
+        "english": "mission",
+        "spanish": "misión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Net Force",
+      "definition": "The total force on an object when you add all individual forces together, considering their directions.",
+      "use_sentence": "The net force was strong enough to make the box slide across the floor.",
+      "phonetic": "/nɛt fɔrs/",
+      "cognate": "Fuerza Neta"
+    },
+    {
+      "term": "Acceleration",
+      "definition": "The rate of change of an object's speed or direction over time.",
+      "use_sentence": "When the driver hit the gas pedal, the car's acceleration pushed us back in our seats.",
+      "phonetic": "/ækˌsɛləˈreɪʃən/",
+      "cognate": "Aceleración"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that slows down moving objects when they are in contact with a surface.",
+      "use_sentence": "The friction between the brake pads and the wheel stopped the bike.",
+      "phonetic": "/ˈfrɪkʃən/",
+      "cognate": "Fricción"
+    },
+    {
+      "term": "Inertia",
+      "definition": "The property of an object to resist changes in its state of motion. It is related to mass.",
+      "use_sentence": "Because of inertia, you feel your body move forward when a car suddenly stops.",
+      "phonetic": "/ɪˈnɜrʃə/",
+      "cognate": "Inercia"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about kicking a soccer ball and a bowling ball with the same force. Which one will have greater acceleration and why?",
+      "frame": "If I kick both balls with the same force, the ___ will accelerate more because it has less ___."
+    },
+    {
+      "prompt": "Describe a time you felt inertia. What was happening to make you feel it?",
+      "frame": "I felt inertia when I was in a ___ and it suddenly ___. My body wanted to keep ___."
+    },
+    {
+      "prompt": "How does friction help you in your daily life? How can it also make things more difficult?",
+      "frame": "Friction helps me when I ___, but it makes things harder when I try to ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

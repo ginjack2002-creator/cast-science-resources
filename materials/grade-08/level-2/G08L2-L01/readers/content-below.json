@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Brooks's Survival Model",
+    "text": "Hi, I'm Dr. Terrence Brooks. I use computers to play a serious game of survival. My goal is to predict if a group of animals can survive a big change. Will they adapt, or will they face extinction? It all depends on a few key factors.<br><br>1. First, I add an <strong>Environmental Pressure</strong> to my model. Imagine a sudden, long drought. This pressure makes it much harder for animals to find water and food.<br><br><strong>CHECK:</strong> What is one example of an environmental pressure?<br><br>2. Next, I look at the group’s <strong>Population Diversity</strong>. This is the mix of different traits the animals have. Do some have traits that help them store water? Are some better at digging for roots?<br><br>3. My model then calculates the <strong>Favorable Trait Frequency</strong>. This tells me what percentage of the group has the helpful trait. If many animals have it, their chance of survival is higher.<br><br>4. Finally, the simulation runs. Animals with higher <strong>Fitness</strong> survive and have babies. This is <strong>Natural Selection</strong>. Over generations, the helpful trait becomes more common. But if there isn't enough diversity, or the pressure is too strong, the population crashes. My work helps conservationists know when to step in.",
+    "think_abouts": [
+      "Why is it important for a group of animals to have many different traits?",
+      "What could happen if an environmental pressure is too strong or happens too fast?"
+    ],
+    "go_deeper": "How is a dog breeder choosing traits for puppies different from natural selection in the wild?",
+    "margin_defs": [
+      {
+        "term": "trait",
+        "definition": "a specific feature of an organism, like eye color"
+      },
+      {
+        "term": "frequency",
+        "definition": "how often something happens in a group"
+      },
+      {
+        "term": "conservationists",
+        "definition": "people who work to protect animals and nature"
+      }
+    ],
+    "check_prompts": [
+      "What is one example of an environmental pressure?"
+    ],
+    "word_bank": [
+      "Environmental Pressure",
+      "Population Diversity",
+      "Favorable Trait Frequency",
+      "Natural Selection",
+      "Fitness"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "selection",
+        "spanish": "selección"
+      },
+      {
+        "english": "predict",
+        "spanish": "predecir"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Environmental Pressure",
+      "definition": "A challenge in the environment that makes it hard to survive.",
+      "use_sentence": "A long, cold winter is a strong environmental pressure for many animals.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Population Diversity",
+      "definition": "The variety of different traits within a group of organisms.",
+      "use_sentence": "High population diversity gives the group a better chance to survive changes.",
+      "phonetic": null,
+      "cognate": "población, diversidad"
+    },
+    {
+      "term": "Favorable Trait Frequency",
+      "definition": "How common a helpful trait is in a population.",
+      "use_sentence": "As the forest got darker, the favorable trait frequency for dark wings in moths went up.",
+      "phonetic": null,
+      "cognate": "favorable, frecuencia"
+    },
+    {
+      "term": "Natural Selection",
+      "definition": "The process where organisms with the best traits for their environment survive and have babies.",
+      "use_sentence": "Through natural selection, giraffes developed long necks to reach high leaves.",
+      "phonetic": null,
+      "cognate": "natural, selección"
+    },
+    {
+      "term": "Fitness",
+      "definition": "How well an organism can survive and have babies in its environment.",
+      "use_sentence": "A cheetah's speed gives it high fitness as a predator on the savanna.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Brooks said his work helps 'conservationists know when to step in.' What is one way humans could help a population that is struggling to survive?",
+      "frame": "One way humans could help an animal population is by..."
+    },
+    {
+      "prompt": "Imagine a population of birds where every bird is exactly the same. What is the biggest risk this population faces if the environment changes?",
+      "frame": "The biggest risk for a population with no diversity is that..."
+    },
+    {
+      "prompt": "The story mentions drought as a pressure. What are two other environmental pressures an animal population might face?",
+      "frame": "Two other environmental pressures could be ___ and ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

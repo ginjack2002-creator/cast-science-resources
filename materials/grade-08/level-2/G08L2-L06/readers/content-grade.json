@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Liu's Hunt for Cancer's Code",
+    "text": "Hi, I’m Dr. Michelle Liu. At my lab, I hunt for typos in our body's most important instruction manual: DNA. Think of your DNA as a massive library of cookbooks. Each recipe, or gene, tells your cells how to build a specific protein. These proteins are the workers that do everything—from carrying oxygen to fighting off germs.<br><br>Every time a cell divides, it has to copy this entire library. It’s an enormous job, and sometimes, mistakes happen. This change in the DNA code is called a <strong>mutation</strong> (a permanent change in the DNA sequence). Luckily, our cells have amazing DNA repair systems that act like proofreaders, fixing about 99.9% of these typos!<br><br>My research focuses on that tiny fraction of mistakes that slip through and accumulate over a person's lifetime. Things in our environment, called <strong>mutagens</strong> (factors that damage DNA) like UV radiation from the sun or chemicals in smoke, can increase the rate of these errors. More exposure means a higher <strong>Mutation Frequency</strong>. More mutations increase the chance that a critical gene gets altered. This can change a protein’s shape, which alters its <strong>protein function</strong> (the specific job a protein does).<br><br>What if the typo hits a 'tumor suppressor gene,' which acts as the brakes for cell division? A mutation here can break the cell's brakes, leading to the uncontrolled growth we call cancer. This harms an organism’s overall health, or its <strong>organism fitness</strong> (its ability to survive and thrive). By understanding exactly how and why these specific typos happen, my team and I can develop smarter ways to find and treat cancer, essentially helping the body fix its most dangerous mistakes.",
+    "think_abouts": [
+      "Dr. Liu mentions that mutations accumulate over a lifetime. What does this suggest about the risk of cancer as people get older?",
+      "If a mutation happens in a gene that isn't being used by a cell (not undergoing gene expression), do you think it would have an effect? Why or why not?"
+    ],
+    "go_deeper": "Dr. Liu's lab studies DNA repair mechanisms. Why is it just as important to understand how cells *fix* DNA as it is to understand how DNA gets damaged in the first place?",
+    "margin_defs": [
+      {
+        "term": "mutation",
+        "definition": "a permanent change in DNA"
+      },
+      {
+        "term": "mutagen",
+        "definition": "something that causes DNA damage"
+      },
+      {
+        "term": "protein function",
+        "definition": "a protein's specific job"
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Liu, what is one example of a mutagen and how does it affect mutation frequency?"
+    ],
+    "word_bank": [
+      "Mutation",
+      "Mutagen",
+      "Protein Function",
+      "Organism Fitness",
+      "Gene Expression"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "mutation",
+        "spanish": "mutación"
+      },
+      {
+        "english": "protein",
+        "spanish": "proteína"
+      },
+      {
+        "english": "gene",
+        "spanish": "gen"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mutation",
+      "definition": "A change in the DNA sequence that alters the genetic instructions for building proteins.",
+      "use_sentence": "A single mutation in a gene can sometimes cause a significant change in an organism.",
+      "phonetic": "myoo-TAY-shun",
+      "cognate": "mutación"
+    },
+    {
+      "term": "Mutagen",
+      "definition": "Any environmental factor, such as UV radiation or chemicals, that increases mutation frequency.",
+      "use_sentence": "Because it can damage DNA, the UV light from the sun is a common mutagen.",
+      "phonetic": "MYOO-tuh-jen",
+      "cognate": "mutágeno"
+    },
+    {
+      "term": "Protein Function",
+      "definition": "The specific job a protein performs in the body, determined by its shape, which is determined by its gene.",
+      "use_sentence": "When a gene mutates, the protein function might change, preventing it from doing its job correctly.",
+      "phonetic": null,
+      "cognate": "función de la proteína"
+    },
+    {
+      "term": "Organism Fitness",
+      "definition": "An organism's overall ability to survive and reproduce in its environment.",
+      "use_sentence": "A harmful mutation can decrease an organism's fitness by making it more vulnerable to disease.",
+      "phonetic": null,
+      "cognate": "aptitud del organismo"
+    },
+    {
+      "term": "Gene Expression",
+      "definition": "The process by which the information in a gene is used to produce a functional protein.",
+      "use_sentence": "Gene expression is carefully controlled so that cells only make the proteins they need at the right time.",
+      "phonetic": null,
+      "cognate": "expresión genética"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Liu studies how mutations accumulate over a lifetime. How does this idea change the way you think about long-term health choices, like using sunscreen or avoiding smoking?",
+      "frame": "This idea makes me think about my future health by..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "story": {
+    "title": "Dr. Kim and the Speed of Chemistry",
+    "text": "Hi, I’m Dr. Nathan Kim, and I’m a reaction kinetics chemist at Argonne National Laboratory. That’s a fancy way of saying I study the speed of chemistry. Think about the classic baking soda and vinegar volcano. It’s not just *that* it fizzes, but *how fast* it fizzes. That speed is what we call the <strong>reaction rate</strong>.<br><br>My job is to figure out what controls that speed. We can change the amount of a <strong>reactant</strong> — a starting ingredient like baking soda. More reactants mean more particles available to collide, which speeds things up. We can also change the <strong>surface area</strong>, which is the amount of exposed surface on a substance. A spoonful of fine baking soda powder reacts much faster than a solid chunk of it because the powder has way more surface area for the vinegar to touch.<br><br>A faster <strong>reaction rate</strong> leads to faster <strong>gas production</strong>. Those bubbles are carbon dioxide (CO2), and when they form quickly, they create the 'explosion' you see. So, where does the mass go? It doesn't disappear! The principle of <strong>conservation of mass</strong> states that the total mass of the reactants equals the total mass of the products. The CO2 gas might escape into the air, making it seem like mass was lost, but if you do the reaction in a sealed container, the total weight stays exactly the same. The atoms just rearrange.<br><br>Understanding these factors is crucial. We use this knowledge to design everything from faster-charging batteries to more effective medicines. By controlling the speed of reactions, we can build a more efficient and safer world.",
+    "think_abouts": [
+      "Why would a company want to speed up a chemical reaction to make a product like plastic?",
+      "If you put a balloon over the bottle during the reaction, what would happen to the system's total mass? Why?"
+    ],
+    "go_deeper": "Dr. Kim also studies how energy changes. The baking soda and vinegar reaction gets cold (endothermic). How is this different from a fire, which gets hot (exothermic)?",
+    "margin_defs": [
+      {
+        "term": "Kinetics",
+        "definition": "The study of how fast reactions happen."
+      },
+      {
+        "term": "Products",
+        "definition": "The new substances formed in a reaction."
+      }
+    ],
+    "check_prompts": [
+      "What are two factors Dr. Kim studies to control the reaction rate?"
+    ],
+    "word_bank": [
+      "Reaction Rate",
+      "Surface Area",
+      "Conservation of Mass"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Reaction",
+        "spanish": "Reacción"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Mass",
+        "spanish": "Masa"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reaction Rate",
+      "definition": "How fast reactants convert into products in a chemical reaction.",
+      "use_sentence": "Increasing the temperature usually increases the reaction rate.",
+      "phonetic": "ree-AK-shun RAYT",
+      "cognate": "Reacción"
+    },
+    {
+      "term": "Surface Area",
+      "definition": "The amount of exposed surface where reactants can make contact.",
+      "use_sentence": "A sugar cube has less surface area than the same amount of granulated sugar.",
+      "phonetic": "SUR-fiss AIR-ee-uh",
+      "cognate": "Superficie"
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The principle that total mass in a closed system stays the same before and after a reaction.",
+      "use_sentence": "The law of conservation of mass proves that atoms are rearranged, not created or destroyed.",
+      "phonetic": "kon-sur-VAY-shun uv MASS",
+      "cognate": "Conservación de Masa"
+    },
+    {
+      "term": "Gas Production",
+      "definition": "The formation of gaseous products, such as carbon dioxide, during a chemical reaction.",
+      "use_sentence": "The bubbling in the experiment was clear evidence of gas production.",
+      "phonetic": "GASS pro-DUK-shun",
+      "cognate": "Producción de Gas"
+    },
+    {
+      "term": "Reactant",
+      "definition": "A starting substance that is consumed during a chemical reaction.",
+      "use_sentence": "In this reaction, vinegar and baking soda are the reactants.",
+      "phonetic": "ree-AK-tunt",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kim mentioned that understanding reaction rates helps design safer batteries. In what other situations might slowing down a chemical reaction be just as important as speeding one up?",
+      "frame": "Slowing down a reaction could be important for..."
+    },
+    {
+      "prompt": "Imagine you are designing a self-inflating life raft. How would you use the concepts of surface area and reactant amount to make it inflate as quickly as possible in an emergency?",
+      "frame": "To make the raft inflate quickly, I would use reactants with..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

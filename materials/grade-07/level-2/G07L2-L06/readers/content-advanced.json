@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Raj Patel and the Whispers from Deep Space",
+    "text": "My console at NASA’s Jet Propulsion Laboratory is quiet, but it’s a deceptive silence. I’m listening for signals from a spacecraft billions of miles from Earth, a message that has been traveling for hours at the speed of light. While your eyes are tuned to a tiny sliver of visible light, the universe communicates across the entire <strong>electromagnetic spectrum</strong>, and my job as a Radio Frequency Engineer is to translate the whispers carried on radio waves.<br><br>We choose radio waves for deep space communication for very specific reasons. Their extremely low <strong>frequency</strong> means they carry less energy per photon compared to something like ultraviolet light or X-rays. This low energy gives them incredible <strong>penetration depth</strong>, allowing them to pass through vast clouds of interstellar dust and, crucially, our own planet's atmosphere with minimal interference—a benefit we call low <strong>atmospheric absorption</strong>. If we tried using high-energy X-rays, the atmosphere would block them completely, which is great for protecting life on Earth but terrible for communication.<br><br>The trade-off for this low energy is an incredibly long <strong>wavelength</strong>. Some of the radio waves I track are meters long from peak to peak! This directly influences our technology; to capture such stretched-out waves, we need colossal antenna dishes, some as wide as a football field, to gather enough of the faint signal.<br><br>The signal itself is rich with data. Its amplitude, or strength, tells me how well the spacecraft's antenna is oriented toward Earth. More critically, I analyze its frequency for minute variations. As the spacecraft speeds away from us, its signal's <strong>wavelength</strong> gets stretched, causing its frequency to decrease. This is the <strong>Doppler shift</strong>—a redshift. By measuring it with extreme precision, I can determine the spacecraft's velocity and trajectory. It’s how we confirm a probe has successfully entered orbit around Jupiter or is on the correct path to the outer solar system. We're having a conversation with a robot across the void, using a language of invisible waves.",
+    "think_abouts": [
+      "Why are radio waves, with their low energy and long wavelengths, the superior choice for communicating with spacecraft across the solar system?",
+      "How does Dr. Patel use the Doppler shift as a tool to understand a spacecraft's movement and position millions of miles away?"
+    ],
+    "go_deeper": "If Earth's atmosphere blocks most high-energy radiation, what challenges does this create for astronomers who want to study celestial objects that emit X-rays or gamma rays, and how do they overcome this obstacle?",
+    "margin_defs": [
+      {
+        "term": "Atmospheric Absorption",
+        "definition": "The process where gases in Earth's atmosphere block certain types of electromagnetic radiation from reaching the ground."
+      },
+      {
+        "term": "Doppler Shift",
+        "definition": "A change in the observed frequency and wavelength of a wave when the source is moving relative to the observer."
+      }
+    ],
+    "check_prompts": [
+      "What two properties of radio waves make them ideal for communicating with distant spacecraft through Earth's atmosphere and interstellar space?"
+    ],
+    "word_bank": [
+      "Electromagnetic Spectrum",
+      "Frequency",
+      "Wavelength",
+      "Penetration Depth",
+      "Doppler Shift"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "frequency",
+        "spanish": "frecuencia"
+      },
+      {
+        "english": "spectrum",
+        "spanish": "espectro"
+      },
+      {
+        "english": "communication",
+        "spanish": "comunicación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Electromagnetic Spectrum",
+      "definition": "The complete range of electromagnetic waves organized by frequency and energy, from low-energy radio waves to high-energy gamma rays.",
+      "use_sentence": "Visible light is just a small part of the vast electromagnetic spectrum that includes microwaves, X-rays, and more.",
+      "phonetic": "eh-lek-tro-mag-NET-ik SPEK-trum",
+      "cognate": "espectro electromagnético"
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of wave cycles that pass a specific point per second, measured in Hertz (Hz). Higher frequency corresponds to higher energy.",
+      "use_sentence": "The frequency of the radio signal was carefully calibrated to transmit data clearly from Mars.",
+      "phonetic": "FREE-kwen-see",
+      "cognate": "frecuencia"
+    },
+    {
+      "term": "Wavelength",
+      "definition": "The distance between two consecutive peaks of a wave. Wavelength is inversely related to frequency; as frequency increases, wavelength decreases.",
+      "use_sentence": "Radio waves can have a wavelength of many meters, while the wavelength of X-rays is smaller than an atom.",
+      "phonetic": "WAYV-length",
+      "cognate": null
+    },
+    {
+      "term": "Penetration Depth",
+      "definition": "The measure of how far an electromagnetic wave can travel through a specific material before it is significantly weakened or absorbed.",
+      "use_sentence": "The high penetration depth of X-rays allows them to pass through soft tissue but not bone, creating medical images.",
+      "phonetic": "pen-eh-TRAY-shun depth",
+      "cognate": "penetración"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Patel's work relies on parts of the EM spectrum we can't see. What other invisible technologies (like Wi-Fi, microwaves, or infrared remotes) do you use every day, and how do their specific wave properties make them useful?",
+      "frame": "One invisible technology I use is ___, which works because its waves have properties like ___."
+    },
+    {
+      "prompt": "Considering the relationship between frequency, energy, and penetration, explain why high-frequency gamma rays are used for sterilizing medical equipment, while low-frequency radio waves are used for broadcasting music.",
+      "frame": null
+    },
+    {
+      "prompt": "Dr. Patel mentioned that the size of a radio telescope dish is related to the long wavelength of radio waves. How might the design of a telescope for detecting high-frequency gamma rays, which have incredibly short wavelengths, be different?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

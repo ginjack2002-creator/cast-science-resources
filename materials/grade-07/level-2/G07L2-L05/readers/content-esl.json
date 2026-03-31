@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Nikolaou's Lab: Watching Evolution Happen",
+    "text": "I am Dr. Sophia Nikolaou, an evolutionary biologist. In my lab, we watch evolution in action. We want to know how species change over time. I use powerful computers to model how populations respond to new challenges in their world.<br><br>It starts with <strong>Genetic Variation</strong>. Imagine a large population of fish in a river. A big population has many small differences, or traits. Some fish might be slightly faster. Some might see better in cloudy water. This variety is the key to survival.<br><br>Then, the environment changes. A factory pollutes the river, making the water dark. This creates strong <strong>Selection Pressure</strong>. Now, fish that can see well in dark water find food easily. They avoid predators better. This is <strong>Natural Selection</strong> at work. These fish survive and reproduce more.<br><br>Over many generations, this helpful trait spreads. The population develops an <strong>Adaptation</strong> to see in polluted water. Our models show how quickly this can happen. This helps us predict how real species might react to changes in their environment.",
+    "think_abouts": [
+      "What happens to the fish that cannot see well in the dark water?",
+      "Why is it helpful for a population to have a lot of genetic variation?"
+    ],
+    "go_deeper": "Sometimes, a trait is selected because it helps an animal attract a mate, not just survive. Can you think of an example?",
+    "margin_defs": [
+      {
+        "term": "model",
+        "definition": "a computer program that copies a real-world process"
+      },
+      {
+        "term": "traits",
+        "definition": "features or characteristics of an organism"
+      },
+      {
+        "term": "predators",
+        "definition": "animals that hunt other animals for food"
+      }
+    ],
+    "check_prompts": [
+      "According to the story, what does selection pressure do?"
+    ],
+    "word_bank": [
+      "Genetic Variation",
+      "Selection Pressure",
+      "Natural Selection",
+      "Adaptation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "variation",
+        "spanish": "variación"
+      },
+      {
+        "english": "selection",
+        "spanish": "selección"
+      },
+      {
+        "english": "adaptation",
+        "spanish": "adaptación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Natural Selection",
+      "definition": "The process where organisms with the best traits for their environment survive and have more babies.",
+      "use_sentence": "Through natural selection, the fastest cheetahs are more likely to catch food and have offspring.",
+      "phonetic": "NA-chur-ul suh-LEK-shun",
+      "cognate": "Selección Natural"
+    },
+    {
+      "term": "Selection Pressure",
+      "definition": "An environmental factor, like a predator or lack of food, that favors some traits over others.",
+      "use_sentence": "A long drought created a selection pressure for plants that could store more water.",
+      "phonetic": "suh-LEK-shun PREH-shur",
+      "cognate": "Presión de Selección"
+    },
+    {
+      "term": "Adaptation",
+      "definition": "A helpful trait that an organism has to survive and reproduce in its environment.",
+      "use_sentence": "A camel's hump, which stores fat for energy, is an adaptation for desert life.",
+      "phonetic": "a-dap-TAY-shun",
+      "cognate": "Adaptación"
+    },
+    {
+      "term": "Genetic Variation",
+      "definition": "The differences in genes and traits within a group of organisms.",
+      "use_sentence": "The many different colors of flowers in a field show genetic variation.",
+      "phonetic": "juh-NEH-tik vair-ee-AY-shun",
+      "cognate": "Variación Genética"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine a population of brown rabbits. Their forest environment slowly gets covered in snow. What changes might happen to the rabbit population over many generations?",
+      "frame": "Over time, I think the rabbit population might..."
+    },
+    {
+      "prompt": "Dr. Nikolaou says more genetic variation is better. Why is it risky for a population to have very little genetic variation if the environment changes?",
+      "frame": "It is risky to have little genetic variation because if the environment changes, then..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

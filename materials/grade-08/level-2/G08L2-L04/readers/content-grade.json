@@ -1,0 +1,100 @@
+{
+  "story": {
+    "title": "Dr. Nakamura and the Climate Snowball",
+    "text": "People often ask me, 'How can a small change in CO2 cause such a big problem?' My job as a climate modeler is to find the answer in the code. I build complex computer simulations of Earth’s climate system to see how small changes can grow into major shifts.<br><br>It starts with the <strong>Greenhouse Effect</strong>, where gases like CO2 trap heat. More CO2 means more warming. But that’s just the first step. The real story is in the <strong>Feedback Loop</strong>s. A <strong>Positive Feedback</strong> loop is like a snowball rolling downhill—it gets bigger and faster on its own, amplifying the original change. One of the most powerful loops involves ice and sunlight.<br><br>As the planet warms, ice melts. Ice is bright white, so it has a high <strong>Albedo</strong> (the amount of sunlight a surface reflects). But when it melts, it exposes darker ocean or land underneath. This darker surface has a low <strong>Albedo</strong>; it absorbs more sunlight and heats up, which then melts even more ice. See the loop? A small amount of warming gets amplified, causing more warming.<br><br>My models help us identify potential <strong>Tipping Point</strong>s. These are critical thresholds where a feedback loop could push the climate into a new state, one that would be very difficult to reverse. Understanding these complex interactions helps us predict future changes more accurately.",
+    "think_abouts": [
+      "Why is a dark t-shirt hotter in the sun than a white one? How does this relate to albedo?",
+      "Can you think of another example of a positive feedback loop, like a microphone squeal getting louder?"
+    ],
+    "go_deeper": "Dr. Nakamura also models how warming oceans absorb less CO2. How could this create another positive feedback loop?",
+    "margin_defs": [
+      {
+        "term": "Albedo",
+        "definition": "A measure of how much light that hits a surface is reflected without being absorbed."
+      },
+      {
+        "term": "Tipping Point",
+        "definition": "A threshold where a small change can trigger a large, often irreversible, response."
+      }
+    ],
+    "check_prompts": [
+      "According to the text, what happens to Earth's albedo when ice melts, and how does this affect temperature?"
+    ],
+    "word_bank": [
+      "Amplify",
+      "Simulations",
+      "Threshold",
+      "Reflectivity"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      },
+      {
+        "english": "Positive",
+        "spanish": "Positivo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Feedback Loop",
+      "definition": "A cycle in a system where the output becomes an input, either amplifying or reducing the original change.",
+      "use_sentence": "The melting ice created a feedback loop that accelerated the warming of the Arctic.",
+      "phonetic": "FEED-bak LOOP",
+      "cognate": "Retroalimentación"
+    },
+    {
+      "term": "Albedo",
+      "definition": "The measure of how much sunlight a surface reflects. Bright surfaces have high albedo; dark surfaces have low albedo.",
+      "use_sentence": "Fresh snow has a very high albedo, reflecting most of the sunlight that hits it.",
+      "phonetic": "al-BEE-doh",
+      "cognate": "Albedo"
+    },
+    {
+      "term": "Greenhouse Effect",
+      "definition": "The natural process where certain gases in the atmosphere trap heat, keeping the planet warm.",
+      "use_sentence": "Without the greenhouse effect, Earth would be too cold for most life to exist.",
+      "phonetic": "GREEN-hows uh-FEKT",
+      "cognate": "Efecto invernadero"
+    },
+    {
+      "term": "Tipping Point",
+      "definition": "A critical threshold where a system shifts rapidly and often irreversibly into a new state.",
+      "use_sentence": "Scientists worry that the Amazon rainforest could reach a tipping point and turn into a savanna.",
+      "phonetic": "TIP-ing poynt",
+      "cognate": "Punto de inflexión"
+    },
+    {
+      "term": "Positive Feedback",
+      "definition": "A type of feedback that amplifies or reinforces an initial change, often leading to exponential growth or instability.",
+      "use_sentence": "The ice-albedo cycle is a classic example of positive feedback in the climate system.",
+      "phonetic": "POZ-uh-tiv FEED-bak",
+      "cognate": "Retroalimentación positiva"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nakamura describes positive feedback as a 'snowball rolling downhill.' What other analogies could you use to explain this concept to a younger student?",
+      "frame": "To explain a positive feedback loop, I would compare it to..."
+    },
+    {
+      "prompt": "The story mentions that climate models help identify 'tipping points.' Why is it important for scientists and society to know where these thresholds might be?",
+      "frame": "It is important to identify tipping points because..."
+    },
+    {
+      "prompt": "Besides ice, what other parts of the Earth's surface might have a high or low albedo? How could changes to these surfaces affect local or global temperatures?",
+      "frame": "A surface with high albedo is ___, while a surface with low albedo is ___. Changing these could affect temperature by..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

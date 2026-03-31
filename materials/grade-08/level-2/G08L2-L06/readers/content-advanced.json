@@ -1,0 +1,96 @@
+{
+  "story": {
+    "title": "Dr. Liu's Lab: Decoding Cancer's DNA Typos",
+    "text": "In my lab at Memorial Sloan Kettering, we don't just treat cancer; we hunt for its origin story, which almost always begins with a single typo. I’m Dr. Michelle Liu, and I study the intricate system of how our own DNA can betray us. Think of your genome as a multi-billion-letter instruction manual. Every time a cell divides, that entire manual is copied. With such high <strong>Cell Division Rate</strong>, mistakes—or <strong>mutations</strong>—are inevitable.<br><br>My research investigates the relationship between our environment and our genes. External factors, which we call <strong>mutagens</strong>, can dramatically increase the <strong>Mutation Frequency</strong>. For instance, high <strong>UV Radiation Exposure</strong> from the sun doesn't just cause sunburn; it directly damages the DNA code in your skin cells. Our cells have sophisticated <strong>DNA Repair Mechanisms</strong> that act like a spell-checker, fixing over 99.99% of these errors. But what about the tiny fraction that gets missed? Over decades, these errors accumulate.<br><br>The critical moment comes when a mutation strikes a specific kind of gene, altering the process of <strong>Gene Expression</strong>. Imagine a mutation hitting a <strong>Tumor Suppressor Gene</strong>, like p53. Its job is to control cell division—it’s the brake pedal. When a mutation causes a <strong>Protein Function Change</strong> in the p53 protein, the brakes fail. The cell begins to divide uncontrollably, a hallmark of cancer. This cascade, from a mutagen to a faulty protein, severely impacts an organism's health, representing a sharp decline in <strong>Organism Fitness</strong>. By understanding this complex chain of events, we can design smarter therapies that target the specific broken proteins in a patient's tumor, turning their own biology back in their favor.",
+    "think_abouts": [
+      "How does an external factor like sunlight exposure lead to an internal change in a person's cells?",
+      "Dr. Liu mentions that mutations accumulate over a lifetime. Why might cancer be more common in older individuals?"
+    ],
+    "go_deeper": "If DNA repair mechanisms are so effective at correcting errors, why do mutations still accumulate and lead to diseases like cancer? What factors might make these repair systems less effective over time?",
+    "margin_defs": [
+      {
+        "term": "Accumulate",
+        "definition": "To gather or build up over time."
+      },
+      {
+        "term": "Tumor Suppressor Gene",
+        "definition": "A gene whose protein product inhibits cell division, thereby preventing the uncontrolled cell growth that contributes to cancer."
+      }
+    ],
+    "check_prompts": [
+      "What is the role of a tumor suppressor gene, and what happens when it mutates?"
+    ],
+    "word_bank": [
+      "Mutagen",
+      "Gene Expression",
+      "Tumor Suppressor Genes",
+      "DNA Repair Mechanisms"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Mutation",
+        "spanish": "Mutación"
+      },
+      {
+        "english": "Radiation",
+        "spanish": "Radiación"
+      },
+      {
+        "english": "Protein",
+        "spanish": "Proteína"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mutation",
+      "definition": "A permanent alteration in the nucleotide sequence of the genome of an organism.",
+      "use_sentence": "A single mutation in the hemoglobin gene can cause sickle cell anemia.",
+      "phonetic": "myoo-TAY-shun",
+      "cognate": "Mutación"
+    },
+    {
+      "term": "Mutagen",
+      "definition": "An agent, such as radiation or a chemical substance, that causes genetic mutation.",
+      "use_sentence": "Chemicals in cigarette smoke are a powerful mutagen, significantly increasing the risk of lung cancer.",
+      "phonetic": "MYOO-tuh-jen",
+      "cognate": "Mutágeno"
+    },
+    {
+      "term": "Protein Function",
+      "definition": "The specific biological role performed by a protein, which is dictated by its three-dimensional structure.",
+      "use_sentence": "When a mutation alters a protein's shape, its protein function can be impaired or completely lost.",
+      "phonetic": "PROH-teen FUNK-shun",
+      "cognate": "Función de la proteína"
+    },
+    {
+      "term": "Organism Fitness",
+      "definition": "The relative ability of an organism to survive, reproduce, and pass on its genes to the next generation.",
+      "use_sentence": "A harmful mutation can decrease an organism's fitness by making it more susceptible to disease.",
+      "phonetic": "OR-guh-niz-um FIT-ness",
+      "cognate": null
+    },
+    {
+      "term": "Gene Expression",
+      "definition": "The process by which information from a gene is used in the synthesis of a functional gene product, such as a protein.",
+      "use_sentence": "Gene expression is carefully regulated, allowing cells to produce specific proteins only when they are needed.",
+      "phonetic": "jeen ek-SPRESH-un",
+      "cognate": "Expresión génica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Liu's research focuses on mutations that cause harm (cancer). Can a mutation ever be neutral or even beneficial to an organism? Provide a reasoned example.",
+      "frame": "A mutation could be beneficial if..."
+    },
+    {
+      "prompt": "Considering the various environmental mutagens (UV light, chemicals), what personal or societal actions could reduce the overall mutation frequency in a population?",
+      "frame": "To reduce mutation rates, we could..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

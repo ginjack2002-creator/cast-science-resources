@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Nakamura and the Climate Snowball Effect",
+    "text": "My name is Dr. Kenji Nakamura. I am a climate feedback modeler.<br>My job is to see how small changes can become very big changes. I use powerful computers to understand Earth’s future.<br><br>Think of a snowball rolling downhill. This is like a <strong>positive feedback</strong> loop. It starts small and grows fast.<br><br>First, humans release CO2. This increases the <strong>greenhouse effect</strong>, trapping heat. The Earth’s temperature gets a little warmer. This small warming melts bright, white ice. The dark ocean shows underneath.<br><br>Ice is very reflective. It has a high <strong>albedo</strong>. Dark ocean water is not. It absorbs sunlight and heat. This absorbed heat makes the Earth even warmer. More warming melts more ice. The cycle repeats and gets stronger.<br><br>My models help us find a <strong>tipping point</strong>. This is a threshold where warming becomes very fast and hard to reverse. Understanding these loops is key to protecting our planet.",
+    "think_abouts": [
+      "How does melting ice make the Earth even warmer?",
+      "Why is a 'positive feedback' loop compared to a snowball rolling downhill?"
+    ],
+    "go_deeper": "Dr. Nakamura also models water vapor. A warmer planet evaporates more water into the air. Water vapor is a greenhouse gas, just like CO2. How does this create another positive feedback loop?",
+    "margin_defs": [
+      {
+        "term": "Albedo",
+        "definition": "How much light a surface reflects."
+      },
+      {
+        "term": "Tipping Point",
+        "definition": "A point when a system changes quickly."
+      }
+    ],
+    "check_prompts": [
+      "What is the first step that starts the ice-albedo feedback loop in the story?"
+    ],
+    "word_bank": [
+      "Albedo",
+      "Feedback Loop",
+      "Greenhouse Effect",
+      "Tipping Point",
+      "Positive Feedback"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Climate",
+        "spanish": "Clima"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Positive",
+        "spanish": "Positivo"
+      },
+      {
+        "english": "Modeler",
+        "spanish": "Modelador"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Feedback Loop",
+      "definition": "A cycle where the result of an action makes the original action bigger or smaller.",
+      "use_sentence": "The melting ice creates a feedback loop that warms the planet faster.",
+      "phonetic": "FEED-bak LOOP",
+      "cognate": null
+    },
+    {
+      "term": "Albedo",
+      "definition": "The power of a surface to reflect sunlight. White surfaces have high albedo.",
+      "use_sentence": "Fresh snow has a high albedo, so it reflects a lot of heat.",
+      "phonetic": "al-BEE-doh",
+      "cognate": "Albedo"
+    },
+    {
+      "term": "Greenhouse Effect",
+      "definition": "The process where certain gases in the atmosphere trap the sun's heat.",
+      "use_sentence": "Without the greenhouse effect, Earth would be too cold for us to live.",
+      "phonetic": "GREEN-hows uh-FEKT",
+      "cognate": "Efecto Invernadero"
+    },
+    {
+      "term": "Tipping Point",
+      "definition": "A critical moment when a small change causes a big, fast, and often irreversible change.",
+      "use_sentence": "Scientists worry we are getting close to a tipping point for arctic ice melt.",
+      "phonetic": "TIP-ing poynt",
+      "cognate": null
+    },
+    {
+      "term": "Positive Feedback",
+      "definition": "A process where a change is made bigger and bigger by its own results.",
+      "use_sentence": "The ice-albedo cycle is a powerful example of positive feedback in our climate.",
+      "phonetic": "POZ-uh-tiv FEED-bak",
+      "cognate": "Retroalimentación Positiva"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nakamura compares a feedback loop to a snowball. What is another comparison you can think of to explain this idea?",
+      "frame": "A feedback loop is like a ___ because ___."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Nakamura to predict tipping points?",
+      "frame": "It is important to predict tipping points so that we can ___."
+    },
+    {
+      "prompt": "The story describes one feedback loop. What is another change on Earth that might create a feedback loop?",
+      "frame": "I think that ___ could create a feedback loop because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}
