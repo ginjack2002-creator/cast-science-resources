@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Tanaka's Digital Volcano: Modeling Global Climate",
+    "text": "Aloha from the USGS Hawaiian Volcano Observatory. I'm Dr. Yuki Tanaka, and I use supercomputers to study one of the most powerful forces on Earth. My job is to be both a volcanologist and a climate modeler. I investigate how an eruption from the <strong>geosphere</strong> right here in Hawaii can ripple through the entire Earth system, changing the <strong>atmosphere</strong> and climate thousands of miles away.<br><br>Most people assume volcanoes only warm the planet. It's true they release <strong>greenhouse gases</strong> like carbon dioxide that trap heat. Over millions of years, this process is a major driver of Earth's climate. However, the most dramatic, short-term effect of a large eruption is actually cooling. It's a paradox I untangle with my digital models.<br><br>When a volcano erupts explosively, it doesn't just spew lava and ash. It blasts a huge cloud of sulfur dioxide gas high into the stratosphere. There, the gas transforms into tiny reflective particles called sulfate aerosols. Unlike heavy ash that falls quickly, these microscopic aerosols are so light they can float in the upper atmosphere for years, carried by global wind currents. They create a planetary sunshade, reflecting sunlight back into space before it can warm the surface. One powerful eruption can lower the <strong>global temperature</strong> by a fraction of a degree for several years. That’s how a volcano on one continent causes a cooler summer on another.<br><br>My models also simulate how oceans slowly absorb and release this heat, and how vegetation responds to changes in temperature and CO2. For example, as more plants grow, they absorb more CO2, creating a <strong>negative feedback</strong> that helps stabilize the system. Understanding these intricate connections is the key to forecasting how our planet will respond to future events, both natural and human-caused.",
+    "think_abouts": [
+      "Dr. Tanaka describes the cooling effect of volcanoes as a 'paradox.' What makes this idea surprising or contradictory?",
+      "How does Dr. Tanaka's computer model help her understand the whole Earth system, not just the volcano itself?"
+    ],
+    "go_deeper": "If a massive eruption created a global 'sunshade' of sulfate aerosols, how might that reduction in sunlight affect ocean ecosystems that depend on phytoplankton at the base of the food web?",
+    "margin_defs": [
+      {
+        "term": "paradox",
+        "definition": "A situation that seems contradictory but is actually true."
+      },
+      {
+        "term": "aerosols",
+        "definition": "Tiny particles suspended in the air or a gas."
+      },
+      {
+        "term": "intricate",
+        "definition": "Very complicated or detailed."
+      }
+    ],
+    "check_prompts": [
+      "What is the main reason a large volcanic eruption can cause global temperatures to drop for several years?"
+    ],
+    "word_bank": [
+      "Geosphere",
+      "Atmosphere",
+      "Negative Feedback",
+      "Greenhouse Gas",
+      "Aerosols"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "volcano",
+        "spanish": "volcán"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "climate",
+        "spanish": "clima"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "The solid parts of the Earth, including rocks, mountains, molten rock, and soil.",
+      "use_sentence": "A volcanic eruption is an event where the geosphere releases gases and magma to the surface.",
+      "phonetic": "/ˈjēōˌsfir/",
+      "cognate": "geosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The blanket of gases that surrounds a planet.",
+      "use_sentence": "Volcanic particles in the upper atmosphere can reflect sunlight back into space.",
+      "phonetic": "/ˈatməsˌfir/",
+      "cognate": "atmósfera"
+    },
+    {
+      "term": "Negative Feedback",
+      "definition": "A response within a system that counteracts a change, helping to stabilize the system.",
+      "use_sentence": "When increased plant growth removes CO2 from the air, it's an example of a negative feedback loop.",
+      "phonetic": "/ˈneɡədiv ˈfēdˌbak/",
+      "cognate": null
+    },
+    {
+      "term": "Greenhouse Gas",
+      "definition": "A gas, such as carbon dioxide, that absorbs and emits heat, warming a planet's atmosphere.",
+      "use_sentence": "Although volcanoes release the greenhouse gas CO2, their short-term cooling effect is often stronger.",
+      "phonetic": "/ˈɡrēnˌhous ɡas/",
+      "cognate": "gas de efecto invernadero"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Tanaka models how different parts of the Earth system interact. Describe the chain reaction that starts with a volcanic eruption and ends with a change in global temperature.",
+      "frame": "First, the volcano erupts from the geosphere, releasing... This affects the atmosphere by..."
+    },
+    {
+      "prompt": "Why is it essential for scientists like Dr. Tanaka to use complex computer models to study global events?",
+      "frame": "It's essential to use computer models because..."
+    },
+    {
+      "prompt": "Besides the atmosphere, what other Earth sphere (hydrosphere, biosphere) is most affected by a major volcanic eruption, and why?",
+      "frame": "I think the sphere most affected is the..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

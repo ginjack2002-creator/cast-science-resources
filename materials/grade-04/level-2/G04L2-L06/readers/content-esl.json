@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Yamamoto's Earthquake Shake Lab",
+    "text": "My name is Dr. Takeshi Yamamoto. I am an earthquake engineer at a big university lab. My team and I work to keep people safe during earthquakes. We ask a big question: Why do some buildings fall while others stand tall? <br><br> The answer is smart <strong>Engineering Design</strong>. A big <strong>Earthquake Magnitude</strong> creates a very strong <strong>Shaking Force</strong>. This force pushes and pulls on a building's frame. If the force is too strong, it causes major <strong>Structural Damage</strong>. Walls crack and floors can collapse. When a building has more damage, the people inside have less safety. <br><br> Our solution is to give buildings more <strong>Flexibility</strong>. A flexible building can bend and sway with the shaking. It moves with the earthquake's energy instead of breaking apart. More <strong>Flexibility</strong> leads to much less damage. One of my favorite tools is Base Isolation. We put special rubber and steel pads under the building. During a quake, the ground moves wildly, but the building slides gently on top. We test every idea on our giant shake tables. This helps us build safer cities for the future.",
+    "think_abouts": [
+      "How does a flexible building protect people inside?",
+      "What would happen to a stiff, brick building in a strong earthquake?"
+    ],
+    "go_deeper": "Besides flexibility and base isolation, what other ideas could make a building safer from earthquakes?",
+    "margin_defs": [
+      {
+        "term": "engineer",
+        "definition": "A person who designs and builds things to solve problems."
+      },
+      {
+        "term": "Base Isolation",
+        "definition": "Special pads under a building that let it slide to absorb shaking."
+      }
+    ],
+    "check_prompts": [
+      "What is one way engineers add flexibility to buildings to keep people safe?"
+    ],
+    "word_bank": [
+      "Earthquake",
+      "Flexibility",
+      "Damage",
+      "Engineer",
+      "Safety"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Structure",
+        "spanish": "Estructura"
+      },
+      {
+        "english": "Flexible",
+        "spanish": "Flexible"
+      },
+      {
+        "english": "Protect",
+        "spanish": "Proteger"
+      },
+      {
+        "english": "Solution",
+        "spanish": "Solución"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Earthquake Magnitude",
+      "definition": "A number that measures how strong an earthquake is.",
+      "use_sentence": "A high earthquake magnitude means the ground will shake very hard.",
+      "phonetic": "urth-kweyk mag-ni-tood",
+      "cognate": "Magnitud"
+    },
+    {
+      "term": "Flexibility",
+      "definition": "The power to bend or sway without breaking.",
+      "use_sentence": "The tall grass has a lot of flexibility, so it does not break in the wind.",
+      "phonetic": "flek-suh-bil-i-tee",
+      "cognate": "Flexibilidad"
+    },
+    {
+      "term": "Shaking Force",
+      "definition": "The push and pull from the ground that hits a building during an earthquake.",
+      "use_sentence": "The strong shaking force made the windows rattle.",
+      "phonetic": null,
+      "cognate": "Fuerza"
+    },
+    {
+      "term": "Structural Damage",
+      "definition": "When parts of a building crack, break, or fall down.",
+      "use_sentence": "After the earthquake, we saw structural damage like cracks in the walls.",
+      "phonetic": "struhk-cher-ul dam-ij",
+      "cognate": "Estructural"
+    },
+    {
+      "term": "Engineering Design",
+      "definition": "A plan that engineers make to solve a problem using science and math.",
+      "use_sentence": "The engineering design for the new bridge helps it stay safe in strong winds.",
+      "phonetic": null,
+      "cognate": "Diseño"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were an engineer like Dr. Yamamoto, what would you build to test your earthquake-safe building idea?",
+      "frame": "To test my idea, I would build a model of a ___ and put it on a ___."
+    },
+    {
+      "prompt": "Why is it more important for a building to be flexible than to be very stiff during an earthquake?",
+      "frame": "It is more important for a building to be flexible because it can ___ instead of ___."
+    },
+    {
+      "prompt": "Dr. Yamamoto mentioned 'Base Isolation.' How is this like putting a building on roller skates?",
+      "frame": "Base isolation is like roller skates because the building can ___ while the ground ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

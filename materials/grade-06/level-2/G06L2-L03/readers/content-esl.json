@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. David Kim: Modeling Earth's Stress Zones",
+    "text": "My name is Dr. David Kim. I am a seismologist at Caltech. I study where Earth’s crust might crack next. I build computer models to find the answer. My models show where <strong>tectonic stress</strong> builds up along plate boundaries. This stress is like a bent stick, full of stored energy.<br><br>What causes this stress? Deep below us, <strong>mantle convection</strong> pushes the plates. Hot rock rises and cool rock sinks. This slow, powerful movement puts pressure on the plates. Faster convection leads to higher stress at the boundaries. The <strong>plate boundary type</strong> also changes how stress builds.<br><br>My model looks at places like California's <strong>transform boundary</strong>. Here, plates slide past each other. When stress gets too high, the rocks break. This causes an earthquake, which increases the area's <strong>earthquake frequency</strong>. An earthquake releases stress, but then it slowly starts to build again. My job is to map where stress is highest. This helps us forecast where future earthquakes are most likely, but not exactly when.",
+    "think_abouts": [
+      "How does Dr. Kim’s model use the idea of a cycle (stress builds, earthquake releases, stress builds again)?",
+      "Why does Dr. Kim say he can forecast *where* an earthquake is likely, but not *when* it will happen?"
+    ],
+    "go_deeper": "Dr. Kim knows that shallow earthquakes cause more damage than deep ones. How might this information change a city’s plan for earthquake safety?",
+    "margin_defs": [
+      {
+        "term": "seismologist",
+        "definition": "a scientist who studies earthquakes"
+      },
+      {
+        "term": "models",
+        "definition": "computer programs that show how something works"
+      },
+      {
+        "term": "forecast",
+        "definition": "to predict what might happen in the future"
+      }
+    ],
+    "check_prompts": [
+      "What is the connection between mantle convection speed and tectonic stress?"
+    ],
+    "word_bank": [
+      "Tectonic Stress",
+      "Mantle Convection",
+      "Transform Boundary",
+      "Earthquake Frequency",
+      "Plate Boundary Type"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "computer",
+        "spanish": "computadora"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "tectonic",
+        "spanish": "tectónico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mantle Convection",
+      "definition": "Circular currents of hot rock rising and cool rock sinking in Earth's mantle that drag tectonic plates along",
+      "use_sentence": "The slow process of mantle convection moves the giant tectonic plates on Earth's surface.",
+      "phonetic": null,
+      "cognate": "convección"
+    },
+    {
+      "term": "Tectonic Stress",
+      "definition": "The pressure that builds at plate boundaries as plates push against, pull apart from, or slide past each other",
+      "use_sentence": "Tectonic stress builds up along a fault line before an earthquake.",
+      "phonetic": null,
+      "cognate": "tectónico"
+    },
+    {
+      "term": "Convergent Boundary",
+      "definition": "A plate boundary where two plates collide, creating mountains, deep trenches, and volcanoes",
+      "use_sentence": "The Himalayan mountains formed at a convergent boundary where two continents collided.",
+      "phonetic": null,
+      "cognate": "convergente"
+    },
+    {
+      "term": "Divergent Boundary",
+      "definition": "A plate boundary where two plates move apart, creating rifts, mid-ocean ridges, and new oceanic crust",
+      "use_sentence": "New ocean floor is created at a divergent boundary like the Mid-Atlantic Ridge.",
+      "phonetic": null,
+      "cognate": "divergente"
+    },
+    {
+      "term": "Transform Boundary",
+      "definition": "A plate boundary where two plates slide horizontally past each other, creating earthquake faults",
+      "use_sentence": "The San Andreas Fault in California is a famous transform boundary.",
+      "phonetic": null,
+      "cognate": "transformante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If a major earthquake has NOT happened along a known fault for a very long time, what might that mean about the tectonic stress there?",
+      "frame": "If a fault has been quiet for a long time, it could mean that..."
+    },
+    {
+      "prompt": "The story mentions transform boundaries. How might stress build up differently at a convergent boundary where plates are colliding head-on?",
+      "frame": "At a convergent boundary, I think stress would build up by..."
+    },
+    {
+      "prompt": "If you were a seismologist like Dr. Kim, what other data would you want to collect to improve your earthquake forecast model?",
+      "frame": "To improve my model, I would want to collect data on..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

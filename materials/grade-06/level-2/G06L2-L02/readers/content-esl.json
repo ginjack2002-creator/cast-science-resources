@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Vega's Space Mission: The Cold Coffee Connection",
+    "text": "My name is Dr. Isabel Vega. I am a thermal engineer at NASA. My job is to protect astronauts and spacecraft from the extreme temperatures in space. I study how heat moves. This is more common than you think. You can see it in your own kitchen.<br><br>Imagine a hot cup of coffee. The coffee is hot, and the room is cool. This creates a <strong>temperature difference</strong>. Heat always flows from a hot object to a cooler one. At first, the temperature gap is very large. This makes the <strong>transfer rate</strong> very fast. Your coffee cools down quickly.<br><br>As the coffee cools, the temperature gap gets smaller. The heat transfer slows down. This pattern is called <strong>exponential decay</strong>. It is fast at first and then gets slower and slower. This is <strong>Newton's Law of Cooling</strong>.<br><br>Finally, the coffee’s temperature matches the room’s temperature. It reaches <strong>thermal equilibrium</strong>. Now, the net heat transfer stops. The coffee will not get any colder than the room. We use these same rules to keep our spacecraft safe on every mission.",
+    "think_abouts": [
+      "Why does the coffee cool fast at the beginning?",
+      "What happens when the coffee and the room are the same temperature?"
+    ],
+    "go_deeper": "If Dr. Vega wanted to keep a satellite very cool, should she paint it a dark color or a shiny, light color? Why?",
+    "margin_defs": [
+      {
+        "term": "thermal",
+        "definition": "relating to heat"
+      },
+      {
+        "term": "net",
+        "definition": "the final or total amount"
+      }
+    ],
+    "check_prompts": [
+      "What makes the transfer rate of heat slow down over time?"
+    ],
+    "word_bank": [
+      "temperature difference",
+      "transfer rate",
+      "thermal equilibrium",
+      "exponential decay"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "engineer",
+        "spanish": "ingeniera"
+      },
+      {
+        "english": "mission",
+        "spanish": "misión"
+      },
+      {
+        "english": "protect",
+        "spanish": "proteger"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Thermal Equilibrium",
+      "definition": "The state when two objects reach the same temperature and heat stops flowing between them.",
+      "use_sentence": "My soup and the room reached thermal equilibrium, so the soup was no longer hot.",
+      "phonetic": "THUR-muhl ee-kwuh-LIB-ree-uhm",
+      "cognate": "equilibrio térmico"
+    },
+    {
+      "term": "Temperature Difference",
+      "definition": "The gap in temperature between a hot object and its cooler surroundings.",
+      "use_sentence": "The large temperature difference between the freezer and the kitchen made the ice melt fast.",
+      "phonetic": null,
+      "cognate": "diferencia de temperatura"
+    },
+    {
+      "term": "Transfer Rate",
+      "definition": "The speed at which heat moves from a warm place to a cool place.",
+      "use_sentence": "A metal cup has a high transfer rate, so it feels cold to touch very quickly.",
+      "phonetic": null,
+      "cognate": "tasa de transferencia"
+    },
+    {
+      "term": "Exponential Decay",
+      "definition": "A pattern of decrease that is fast at first and then slows down over time.",
+      "use_sentence": "The cooling of the pizza followed a curve of exponential decay.",
+      "phonetic": "ek-spo-NEN-shuhl dee-KAY",
+      "cognate": "decaimiento exponencial"
+    },
+    {
+      "term": "Newton's Law of Cooling",
+      "definition": "The scientific rule that says the rate of cooling depends on the temperature difference.",
+      "use_sentence": "Because of Newton's Law of Cooling, the very hot tea cooled faster than the warm tea.",
+      "phonetic": null,
+      "cognate": "Ley de Enfriamiento de Newton"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Vega's job is to stop heat from transferring to astronauts. What are some things you use in your life to stop heat transfer (like an oven mitt or a lunch box)?",
+      "frame": "To stop heat transfer, I use a ___ which works by ___."
+    },
+    {
+      "prompt": "If you pour hot coffee into a very warm room versus a very cold room, in which room will the coffee cool faster? Explain why using 'temperature difference'.",
+      "frame": "The coffee will cool faster in the ___ room because the temperature difference is ___."
+    },
+    {
+      "prompt": "The story describes cooling as 'fast at first and then slower'. What is another example of something that changes fast at first and then slows down?",
+      "frame": "Another example of something that slows down over time is ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

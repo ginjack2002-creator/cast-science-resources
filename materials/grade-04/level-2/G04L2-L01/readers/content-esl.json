@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Huang's Energy Coaster",
+    "text": "Hello! I am Dr. Mei-Ling Huang. I am a Roller Coaster Dynamics Engineer. I design amazing rides that are also very safe. To do my job, I must be an expert on energy.<br><br>Think about the first big hill on a coaster. A strong chain pulls the cars all the way to the top. As the coaster gets higher, it stores more and more energy. We call this stored energy <strong>potential energy</strong>. It is waiting to be used.<br><br>Then, whoosh! The coaster rolls down the hill. All that stored <strong>potential energy</strong> transforms into the energy of motion. This is called <strong>kinetic energy</strong>. The more potential energy we start with, the more kinetic energy we get. That means the coaster goes faster at the bottom.<br><br>But why does the coaster eventually stop? The wheels are always rubbing on the steel track. This rubbing creates a force called <strong>friction</strong>. <strong>Friction</strong> changes some of the useful kinetic energy into heat. We call this <strong>heat loss</strong>. The energy is not destroyed, it just warms up the track and wheels. This is the law of <strong>energy conservation</strong>. I make sure there is always enough energy to finish the ride safely.",
+    "think_abouts": [
+      "What happens to the stored energy when the coaster goes down the hill?",
+      "Why does friction make the coaster slow down?"
+    ],
+    "go_deeper": "If a coaster has to go through two big loops, would Dr. Huang need to make the first hill taller or shorter? Why?",
+    "margin_defs": [
+      {
+        "term": "Potential Energy",
+        "definition": "Stored energy from being high up."
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "The energy of moving things."
+      },
+      {
+        "term": "Friction",
+        "definition": "A force that slows things down."
+      }
+    ],
+    "check_prompts": [
+      "What is one thing Dr. Huang must think about to make a roller coaster safe?"
+    ],
+    "word_bank": [
+      "potential energy",
+      "kinetic energy",
+      "friction",
+      "heat loss",
+      "energy conservation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Potential",
+        "spanish": "Potencial"
+      },
+      {
+        "english": "Friction",
+        "spanish": "Fricción"
+      },
+      {
+        "english": "Conservation",
+        "spanish": "Conservación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Potential Energy",
+      "definition": "Stored energy an object has because of its position or height — like a roller coaster waiting at the top of a hill.",
+      "use_sentence": "The coaster at the top of the hill has a lot of potential energy.",
+      "phonetic": "poh-TEN-shul EN-er-jee",
+      "cognate": "Energía Potencial"
+    },
+    {
+      "term": "Kinetic Energy",
+      "definition": "The energy of motion — the faster something moves, the more kinetic energy it has.",
+      "use_sentence": "As the coaster speeds down the hill, it gains kinetic energy.",
+      "phonetic": "kih-NEH-tik EN-er-jee",
+      "cognate": "Energía Cinética"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that happens when two surfaces rub together, slowing things down and creating heat.",
+      "use_sentence": "Friction between the wheels and the track makes the ride slow down.",
+      "phonetic": "FRIK-shun",
+      "cognate": "Fricción"
+    },
+    {
+      "term": "Heat Loss",
+      "definition": "Energy that transforms into heat because of friction — this energy leaves the motion system.",
+      "use_sentence": "The coaster loses speed because of heat loss from friction.",
+      "phonetic": "HEET loss",
+      "cognate": null
+    },
+    {
+      "term": "Energy Conservation",
+      "definition": "The scientific law that energy is never created or destroyed — it only changes form.",
+      "use_sentence": "Energy conservation means the total energy in the system stays the same, even when it changes form.",
+      "phonetic": "EN-er-jee kon-ser-VAY-shun",
+      "cognate": "Conservación de Energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about a swing on a playground. Where does a swing have the most potential energy? Where does it have the most kinetic energy?",
+      "frame": "A swing has the most potential energy when ___ and the most kinetic energy when ___."
+    },
+    {
+      "prompt": "Dr. Huang wants to make a new coaster go faster at the bottom of the first hill. What is one thing she could change about her design?",
+      "frame": "To make the coaster faster, Dr. Huang could change the ___ because ___."
+    },
+    {
+      "prompt": "Besides the track, what else might cause friction or air resistance on a real roller coaster and slow it down?",
+      "frame": "Something else that could cause friction is ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

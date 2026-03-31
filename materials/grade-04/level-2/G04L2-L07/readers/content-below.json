@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Anika Washington and the Case of the Slow Domino",
+    "text": "Hello! I’m Dr. Anika Washington. I am a scientist at Sandia National Laboratories. My job is to study what happens when things crash into each other. We look at big crashes, like cars. We also look at small ones, like dominoes falling in a line.<br><br>Have you ever wondered about dominoes? You push the first one fast. But the last one falls much slower. Why is that? It’s all about energy. Let’s break it down.<br><br>1. You give the first domino a push. This starts a <strong>chain reaction</strong>.<br>2. The first domino hits the second one. This is a <strong>collision</strong>.<br>3. During the <strong>collision</strong>, moving energy is passed to the next domino. This is called <strong>kinetic energy transfer</strong>.<br>4. But listen closely! You can hear a “click” sound. That sound is a type of <strong>energy loss</strong>.<br>5. That sound energy can’t be used to push the next domino.<br>6. Each time a domino falls, a little more energy is lost as sound.<br><br>By the time the energy gets to the last domino, there is less of it. The object's <strong>mass</strong> also matters. Heavier objects are harder to move. Less energy and more <strong>mass</strong> means a slower fall. My job is to figure out exactly where all that energy goes!",
+    "think_abouts": [
+      "What happens to the energy you hear as a 'click'?",
+      "Why would heavier dominoes be even slower at the end of the chain?"
+    ],
+    "go_deeper": "What do you think would happen if the dominoes were made of soft rubber instead of hard plastic?",
+    "margin_defs": [
+      {
+        "term": "Collision",
+        "definition": "When two things hit each other."
+      },
+      {
+        "term": "Energy Loss",
+        "definition": "When moving energy changes into sound or heat."
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Washington's job?",
+      "Where does some of the energy go during a domino collision?"
+    ],
+    "word_bank": [
+      "collision",
+      "energy",
+      "mass",
+      "sound",
+      "chain reaction"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "mass",
+        "spanish": "masa"
+      },
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Collision",
+      "definition": "When two or more objects hit each other.",
+      "use_sentence": "The collision of the two cars made a loud noise.",
+      "phonetic": null,
+      "cognate": "colisión"
+    },
+    {
+      "term": "Kinetic Energy Transfer",
+      "definition": "When moving energy passes from one object to another.",
+      "use_sentence": "The kinetic energy transfer from the bat to the ball made the ball fly.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Energy Loss",
+      "definition": "When energy for movement changes into sound or heat.",
+      "use_sentence": "We knew there was energy loss because we could hear the dominoes click.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Mass",
+      "definition": "How much 'stuff' is in an object; how heavy it is.",
+      "use_sentence": "The bowling ball has more mass than the soccer ball.",
+      "phonetic": null,
+      "cognate": "masa"
+    },
+    {
+      "term": "Chain Reaction",
+      "definition": "A series of events where one thing causes the next thing to happen.",
+      "use_sentence": "When the first domino fell, it started a chain reaction.",
+      "phonetic": null,
+      "cognate": "reacción en cadena"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Washington studies car crashes. How does understanding energy loss help engineers build safer cars?",
+      "frame": "Understanding energy loss helps make safer cars because ___."
+    },
+    {
+      "prompt": "Think about a Newton's Cradle (the desk toy with swinging balls). How is it like a line of dominoes? How is it different?",
+      "frame": "A Newton's Cradle is like dominoes because ___, but it is different because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

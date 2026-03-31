@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Mitchell's Windy City Puzzle",
+    "text": "My name is Dr. Sarah Mitchell, and my job is like being a detective for the wind. Here at the National Renewable Energy Laboratory, I use complex computer models to predict where the wind will blow strongest and most consistently. Why? Because the single most important factor for a successful wind farm is powerful wind.<br><br>Imagine we’re designing a system to power a city. Our goal is to generate enough <strong>electricity</strong>. The amount of <strong>electricity</strong> we can produce depends directly on two things: the Wind Speed and the Number of Turbines. Faster winds spin the blades of a <strong>wind turbine</strong> more rapidly, generating significantly more power. Similarly, more turbines allow us to capture more of the wind's energy across a landscape. It seems simple: just find a windy spot and build lots of turbines!<br><br>But generating power is only half the challenge. The electricity produced must constantly meet the city’s energy demand—the power needed for every home, school, and hospital. This is the crucial concept of <strong>Grid Reliability</strong>. If a city’s demand for power is higher than what our wind farm is generating, the grid becomes unstable, risking blackouts. The biggest challenge with wind power is that it is <strong>intermittent</strong>; the wind doesn't always blow when we need it most.<br><br>So, if wind is free, why can't we use it to power everything? Because of this intermittency. My colleagues and I are tackling this puzzle from multiple angles. We’re investigating taller turbines that can reach stronger, more consistent winds high above the ground. We are developing large-scale battery systems to store excess energy for calm periods. We are also designing a smarter, more interconnected grid that can shuttle power from windy areas to cities that need it. Solving this puzzle is essential for building a future powered by clean, <strong>renewable energy</strong>.",
+    "think_abouts": [
+      "What are the two main factors that determine how much electricity a wind farm can generate?",
+      "Why is it a problem for a city if the wind suddenly stops blowing for several hours?"
+    ],
+    "go_deeper": "Dr. Mitchell mentioned energy storage (batteries) as one solution for intermittent wind. What other renewable energy source, which is more predictable than wind, could be combined with wind power to improve grid reliability?",
+    "margin_defs": [
+      {
+        "term": "Intermittent",
+        "definition": "Not constant or steady."
+      },
+      {
+        "term": "Grid",
+        "definition": "The network that delivers electricity from power plants to users."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Mitchell, what is the biggest challenge of using wind to power a city?"
+    ],
+    "word_bank": [
+      "Wind Turbine",
+      "Electricity",
+      "Grid Reliability",
+      "Renewable Energy",
+      "Intermittent"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "electricity",
+        "spanish": "electricidad"
+      },
+      {
+        "english": "turbine",
+        "spanish": "turbina"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Wind Turbine",
+      "definition": "A tall machine with spinning blades that converts the kinetic energy of wind into electrical energy.",
+      "use_sentence": "A single giant wind turbine can power hundreds of homes when the wind is blowing.",
+      "phonetic": null,
+      "cognate": "turbina"
+    },
+    {
+      "term": "Electricity",
+      "definition": "A form of energy that flows through wires and powers our homes, schools, and devices.",
+      "use_sentence": "We use electricity for everything from charging our phones to lighting our schools.",
+      "phonetic": null,
+      "cognate": "electricidad"
+    },
+    {
+      "term": "Grid Reliability",
+      "definition": "How consistently the electrical grid can deliver power to everyone who needs it—unreliable grids cause blackouts.",
+      "use_sentence": "Engineers work to ensure grid reliability so that we always have power when we flip a switch.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Renewable Energy",
+      "definition": "Energy from sources that never run out, like wind, solar, and water—unlike fossil fuels which are limited.",
+      "use_sentence": "Wind power is a form of renewable energy because the wind will never be used up.",
+      "phonetic": null,
+      "cognate": "energía renovable"
+    },
+    {
+      "term": "Intermittent",
+      "definition": "Not constant—wind energy is intermittent because the wind does not blow at the same speed all the time.",
+      "use_sentence": "Because the wind is intermittent, we need a way to store energy for times when it's not blowing.",
+      "phonetic": "in-ter-MIT-ent",
+      "cognate": "intermitente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Mitchell's job is to find the best places for wind farms. Besides wind speed, what other factors do you think she has to consider when choosing a location? (Think about people, animals, and the land.)",
+      "frame": "I think Dr. Mitchell also has to consider ___ because ___."
+    },
+    {
+      "prompt": "If you were an engineer, what new idea or invention would you create to solve the problem of wind being intermittent?",
+      "frame": "To solve the intermittent problem, I would invent a ___ that could ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Yuki Tanaka and the Volcano's Secret Message",
+    "text": "Hi, I’m Dr. Yuki Tanaka. I study how volcanoes change our world. It’s like being a detective for the planet.<br><br>A volcano is part of the <strong>geosphere</strong>, or the solid Earth. When it erupts, it connects the geosphere to the <strong>atmosphere</strong>, which is the air all around us. It sends a giant cloud of gas and ash into the sky. My job is to figure out what that cloud does to our climate.<br><br>The cloud has two important ingredients. First, it has a <strong>greenhouse gas</strong> called carbon dioxide. This gas can trap heat and make the world a little warmer over a very long time.<br><br>But there's a second, faster-acting ingredient: a gas called sulfur dioxide. This gas makes tiny particles that act like a sun-blocking shield. These particles float high in the atmosphere. They reflect sunlight back into space. This can make the whole planet cooler for one or two years!<br><br>So, a volcano on one continent can change the weather everywhere. My computer models help me predict these big changes. It shows how all of Earth’s systems are connected.",
+    "think_abouts": [
+      "Why is it important to study both the warming and cooling effects of a volcano?",
+      "What are the four 'spheres' of Earth mentioned in the background information?"
+    ],
+    "go_deeper": "If a huge volcano erupted and cooled the planet for two years, how might that affect the plants and animals near you?",
+    "margin_defs": [
+      {
+        "term": "geosphere",
+        "definition": "The solid parts of Earth, like rocks and mountains."
+      },
+      {
+        "term": "atmosphere",
+        "definition": "The air that surrounds Earth."
+      },
+      {
+        "term": "particles",
+        "definition": "Very tiny pieces of something."
+      }
+    ],
+    "check_prompts": [
+      "What are two ingredients in a volcanic cloud that can change the climate?"
+    ],
+    "word_bank": [
+      "geosphere",
+      "atmosphere",
+      "climate",
+      "particles",
+      "greenhouse gas"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "volcano",
+        "spanish": "volcán"
+      },
+      {
+        "english": "atmosphere",
+        "spanish": "atmósfera"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "All the rock, mountains, and land that make up the solid part of Earth.",
+      "use_sentence": "A volcano is a part of the geosphere that can blast rock high into the air.",
+      "phonetic": "JEE-oh-sfere",
+      "cognate": "geosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The layer of air and gases that surrounds our planet.",
+      "use_sentence": "When we breathe, we are taking in gases from the atmosphere.",
+      "phonetic": "AT-mo-sfere",
+      "cognate": "atmósfera"
+    },
+    {
+      "term": "Negative Feedback",
+      "definition": "When a change in a system causes another change that pushes the system back toward where it started.",
+      "use_sentence": "A thermostat in a house is like a negative feedback loop because it turns off the heat when it gets too warm.",
+      "phonetic": null,
+      "cognate": "retroalimentación negativa"
+    },
+    {
+      "term": "Greenhouse Gas",
+      "definition": "A gas in the air, like carbon dioxide, that traps heat and helps keep Earth warm.",
+      "use_sentence": "Volcanoes release the greenhouse gas carbon dioxide.",
+      "phonetic": null,
+      "cognate": "gas de efecto invernadero"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Tanaka uses computer models to predict climate changes. What are some other tools a scientist who studies volcanoes might use?",
+      "frame": "A scientist studying volcanoes might also use tools like..."
+    },
+    {
+      "prompt": "The story says volcano particles can cool the Earth. How is this an example of the geosphere changing the atmosphere and the climate?",
+      "frame": "The geosphere changes the atmosphere when..."
+    },
+    {
+      "prompt": "The story mentions two opposite effects: warming from CO2 and cooling from other particles. Why do you think it is important for scientists to study both effects?",
+      "frame": "It is important to study both effects because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

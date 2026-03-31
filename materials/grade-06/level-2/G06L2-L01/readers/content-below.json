@@ -1,0 +1,100 @@
+{
+  "story": {
+    "title": "Dr. Johnson's Energy Trail",
+    "text": "Hello! I’m Dr. Marcus Johnson. I build computer models of ecosystems. My job is to follow the energy to see where it comes from and where it goes. Let me show you how it works.<br><br>1. It all starts with the sun. The sun sends energy to Earth. Plants, or producers, soak up that energy. This is the first <strong>Trophic Level</strong>. They store the energy in their leaves and stems.<br><br>2. Next, an animal eats the plants. This primary consumer gets energy from the plants. But it only gets about 10% of the plant's energy. Where did the other 90% go? The plant used it to live and grow!<br><br>3. Then, a predator eats that animal. This secondary consumer gets only 10% of the primary consumer's energy. This creates an <strong>Energy Pyramid</strong>. There is less energy available at each step up.<br><br>4. This huge energy loss is why there is less <strong>Biomass</strong> at higher levels. There simply isn’t enough energy to support lots of top predators.<br><br>5. Finally, when organisms die, <strong>Decomposers</strong> go to work. They break down dead material. This returns nutrients to the soil for producers to use again. My models show how a change at one level can cause a <strong>Trophic Cascade</strong>, affecting the whole web.",
+    "think_abouts": [
+      "Why is most of the energy lost at each step?",
+      "What would happen to the producers if there were no decomposers?"
+    ],
+    "go_deeper": "Some ecosystems only transfer 1% of energy between levels, not 10%. How would that change the energy pyramid?",
+    "margin_defs": [
+      {
+        "term": "Biomass",
+        "definition": "The total weight of living things in one area."
+      },
+      {
+        "term": "Energy Pyramid",
+        "definition": "A model showing how energy gets lower at each level."
+      }
+    ],
+    "check_prompts": [
+      "Where does almost all energy in a food web come from?"
+    ],
+    "word_bank": [
+      "Producers",
+      "Consumers",
+      "Energy",
+      "Food Web"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Pyramid",
+        "spanish": "Pirámide"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Level",
+      "definition": "A step in a food chain that shows how an organism gets its energy.",
+      "use_sentence": "Producers like plants are on the first trophic level.",
+      "phonetic": "TROH-fik LEV-uhl",
+      "cognate": "Nivel trófico"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total mass (or weight) of all living things in a specific area or level.",
+      "use_sentence": "A forest has much more biomass than a small pond.",
+      "phonetic": "BY-oh-mass",
+      "cognate": "Biomasa"
+    },
+    {
+      "term": "Energy Pyramid",
+      "definition": "A diagram that shows how the amount of available energy decreases at each higher trophic level.",
+      "use_sentence": "The energy pyramid helps explain why there are fewer lions than zebras.",
+      "phonetic": "EN-er-jee PEER-uh-mid",
+      "cognate": "Pirámide de energía"
+    },
+    {
+      "term": "Decomposer",
+      "definition": "An organism, like a mushroom or bacterium, that breaks down dead plants and animals.",
+      "use_sentence": "A decomposer returns nutrients to the soil so plants can grow.",
+      "phonetic": "dee-kuhm-POH-zer",
+      "cognate": null
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction in a food web caused by a change at one level, which affects all other levels.",
+      "use_sentence": "Removing the top predator caused a trophic cascade that changed the whole ecosystem.",
+      "phonetic": "TROH-fik kas-KAYD",
+      "cognate": "Cascada trófica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If a disease wiped out most of the plants in an ecosystem, how would that affect the biomass of the primary and secondary consumers?",
+      "frame": "If the producer biomass decreases, then the primary consumer biomass would..."
+    },
+    {
+      "prompt": "Dr. Johnson uses computer models. Why is a model, like an energy pyramid, a useful tool for a scientist to understand a big system?",
+      "frame": "A model is useful because it helps scientists to..."
+    },
+    {
+      "prompt": "Use the idea of the '10% rule' to explain in your own words why there are so few top predators like tigers or sharks.",
+      "frame": "There are few top predators because at each trophic level..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

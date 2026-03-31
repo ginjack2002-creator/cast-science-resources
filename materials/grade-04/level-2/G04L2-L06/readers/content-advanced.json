@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Yamamoto: Outsmarting the Shaking Earth",
+    "text": "My name is Dr. Takeshi Yamamoto, and here at the Pacific Earthquake Engineering Research Center, my team and I spend our days thinking about how to outsmart the earth. It’s a fascinating puzzle: when an earthquake strikes, why does one skyscraper collapse into a pile of rubble while the one next door seems to just shrug it off? The answer lies in the invisible forces at play and the cleverness of our <strong>Engineering Design</strong>.<br><br>When the ground starts to move, the <strong>Earthquake Magnitude</strong> determines how much energy is released. This energy creates a powerful <strong>Shaking Force</strong> that gets transferred directly into a building's foundation. A rigid, inflexible building tries to fight this force, and like a dry twig, it snaps. This leads to catastrophic <strong>Structural Damage</strong>—cracked columns, collapsing floors—which poses an extreme danger to the people inside. The more damage, the lower the occupant safety.<br><br>Our goal is to prevent this catastrophic failure by embracing movement. We design buildings with <strong>Flexibility</strong>, allowing them to sway and bend to absorb the earthquake's energy. Instead of fighting the shaking, a flexible building dances with it. This is where my favorite technology, base isolation, comes in. We place giant rubber and steel pads under the building, essentially putting it on roller skates. When the ground lurches back and forth, the building glides, absorbing up to 90% of the violent shaking before it can even travel up into the structure. This dramatically reduces the shaking force that the building itself experiences.<br><br>Of course, it’s not that simple. We must also consider the soil type, since soft clay can amplify shaking much more than solid bedrock, and a building's height changes its natural vibration frequency. Each project is a unique challenge, requiring us to analyze every variable to create a structure that is not just strong, but resilient. Our work ensures that when the big one hits, our buildings protect the people inside, transforming a potential disaster into a story of survival.",
+    "think_abouts": [
+      "Why is a flexible building safer than a rigid one during an earthquake?",
+      "How does a base isolator work like roller skates for a building?"
+    ],
+    "go_deeper": "If base isolators are so effective, why do you think they aren't used on every single new building in an earthquake zone? What factors besides safety might an engineer need to consider?",
+    "margin_defs": [
+      {
+        "term": "Resilient",
+        "definition": "Able to withstand or recover quickly from difficult conditions."
+      },
+      {
+        "term": "Catastrophic",
+        "definition": "Involving sudden and great damage or suffering."
+      }
+    ],
+    "check_prompts": [
+      "What is the main goal of an Earthquake Resilience Engineer like Dr. Yamamoto?"
+    ],
+    "word_bank": [
+      "Engineering Design",
+      "Earthquake Magnitude",
+      "Shaking Force",
+      "Structural Damage",
+      "Flexibility"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "structure",
+        "spanish": "estructura"
+      },
+      {
+        "english": "flexible",
+        "spanish": "flexible"
+      },
+      {
+        "english": "vibration",
+        "spanish": "vibración"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Earthquake Magnitude",
+      "definition": "A measurement of how much energy an earthquake releases — higher magnitude means stronger shaking.",
+      "use_sentence": "The news reported that the earthquake magnitude was 7.2, which explained why the shaking was so intense.",
+      "phonetic": null,
+      "cognate": "magnitud del terremoto"
+    },
+    {
+      "term": "Flexibility",
+      "definition": "The ability of a structure to bend, sway, or absorb movement without breaking — like a tree bending in the wind.",
+      "use_sentence": "Engineers added flexibility to the skyscraper's design so it could sway safely during strong winds and earthquakes.",
+      "phonetic": null,
+      "cognate": "flexibilidad"
+    },
+    {
+      "term": "Shaking Force",
+      "definition": "The actual force that gets transferred from the ground into a building during an earthquake.",
+      "use_sentence": "The base isolators are designed to absorb most of the shaking force before it can damage the building.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Structural Damage",
+      "definition": "Cracks, breaks, and collapses in a building caused by the shaking force exceeding the building's strength.",
+      "use_sentence": "After the quake, inspectors checked every bridge for signs of structural damage.",
+      "phonetic": null,
+      "cognate": "daño estructural"
+    },
+    {
+      "term": "Engineering Design",
+      "definition": "The process of creating solutions to problems using science, math, and creativity — earthquake engineers design safer buildings.",
+      "use_sentence": "The engineering design for the new hospital included special features to keep it operating even after a major earthquake.",
+      "phonetic": null,
+      "cognate": "diseño de ingeniería"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Yamamoto says his goal is to help buildings 'dance with' an earthquake instead of fighting it. What do you think he means by this metaphor?",
+      "frame": null
+    },
+    {
+      "prompt": "Imagine you are an engineer designing a new school in a high-risk earthquake zone. What are the three most important features you would include to protect students?",
+      "frame": "To protect students, my engineering design would include..."
+    },
+    {
+      "prompt": "How does knowing the soil type (like soft clay or solid bedrock) change the engineering design for a building?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Washington and the Case of the Slow Domino",
+    "text": "My name is Dr. Anika Washington. I am a collision physics researcher. I study how energy moves when things crash. We can see this in a <strong>chain reaction</strong>, like falling dominoes. <br><br> I give the first domino a push. This gives it motion energy. It falls and hits the next domino. This is a <strong>collision</strong>. The first domino passes its energy to the second. This is <strong>kinetic energy transfer</strong>. The energy travels down the line from one domino to the next. <br><br> But does all the energy make it to the end? No. Listen when the dominoes fall. You hear a 'clack' sound at each impact. Sound is a form of energy. Each 'clack' is <strong>energy loss</strong>. Some motion energy turns into sound energy. <br><br> This is why the last domino falls slowly. A little energy is lost at every step. If the dominoes have more <strong>mass</strong>, they are harder to move. They use up more energy. My work helps people understand how energy moves. We can use this to build safer cars.",
+    "think_abouts": [
+      "What sounds do you hear when dominoes fall?",
+      "Why do you think heavier objects are harder to push?"
+    ],
+    "go_deeper": "What might happen if the dominoes were made of soft rubber instead of hard plastic?",
+    "margin_defs": [
+      {
+        "term": "collision",
+        "definition": "when two things hit each other"
+      },
+      {
+        "term": "energy",
+        "definition": "the power to do work or cause change"
+      }
+    ],
+    "check_prompts": [
+      "Where does some of the motion energy go when two dominoes hit each other?"
+    ],
+    "word_bank": [
+      "Collision",
+      "Kinetic Energy Transfer",
+      "Energy Loss",
+      "Mass",
+      "Chain Reaction"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "collision",
+        "spanish": "colisión"
+      },
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      },
+      {
+        "english": "mass",
+        "spanish": "masa"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Collision",
+      "definition": "When two objects hit each other, transferring energy from one to the other.",
+      "use_sentence": "The collision between the two balls made a clicking sound.",
+      "phonetic": "kuh-LIH-zhun",
+      "cognate": "colisión"
+    },
+    {
+      "term": "Kinetic Energy Transfer",
+      "definition": "When a moving object hits another object and passes its motion energy to it.",
+      "use_sentence": "We saw kinetic energy transfer when the first domino hit the second one.",
+      "phonetic": "kih-NEH-tik EN-er-jee TRANS-fer",
+      "cognate": "transferencia de energía"
+    },
+    {
+      "term": "Energy Loss",
+      "definition": "Energy that changes from motion into sound or heat during a collision.",
+      "use_sentence": "The sound of the dominoes hitting each other is a type of energy loss.",
+      "phonetic": "EN-er-jee loss",
+      "cognate": null
+    },
+    {
+      "term": "Mass",
+      "definition": "How much 'stuff' is in an object. Heavier objects have more mass.",
+      "use_sentence": "A bowling ball has more mass than a beach ball.",
+      "phonetic": "mass",
+      "cognate": "masa"
+    },
+    {
+      "term": "Chain Reaction",
+      "definition": "A series of events where each event triggers the next one, like falling dominoes.",
+      "use_sentence": "Pushing the first domino started a long chain reaction.",
+      "phonetic": "chayn ree-AK-shun",
+      "cognate": "reacción en cadena"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Washington studies dominoes to understand bigger things like car crashes. What other chain reactions can you think of in your daily life?",
+      "frame": "One example of a chain reaction I see is ___."
+    },
+    {
+      "prompt": "If you wanted the last domino to fall faster, what is one thing you could change about your setup? Why?",
+      "frame": "To make the last domino fall faster, I would change ___ because ___."
+    },
+    {
+      "prompt": "The story says energy is lost as sound. What are other ways energy might be 'lost' from the moving dominoes?",
+      "frame": "Besides sound, energy could also be lost as ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

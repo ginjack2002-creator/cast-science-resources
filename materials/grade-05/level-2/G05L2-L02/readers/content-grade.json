@@ -1,0 +1,95 @@
+{
+  "story": {
+    "title": "Dr. Okonkwo's Energy Puzzle",
+    "text": "Hello! I'm Dr. Patricia Okonkwo, and I'm a researcher at the Fraunhofer Institute. Think of me as a city planner, but for energy. My job is to figure out the best way to power our world. I use a computer model to see what happens when we use different energy sources. It’s like a big 'what if' game for an entire city!<br><br>On one side of my screen, I have <strong>fossil fuels</strong> (coal, oil, and natural gas formed from ancient organisms). When I increase the Fossil Fuel Burn Rate in my model, I see the city has plenty of power, day or night. But I also see another number go way up: <strong>CO2 emissions</strong> (carbon dioxide gas released into the air by burning fuels). As these emissions rise, the <strong>Air Quality Index</strong> (a measurement of how clean the air is) drops. That means the air is getting dirtier and less healthy to breathe.<br><br>On the other side, I have <strong>solar energy</strong> (electricity generated from sunlight using solar panels). I can add thousands of solar panels to my virtual city. When the Sunlight Hours are high, the Solar Energy Output is amazing! The city runs on clean power, and because we don't need to burn as many fossil fuels, the CO2 emissions go down. This makes the Air Quality Index go up, meaning cleaner air for everyone.<br><br>But what happens on a cloudy day, or at night? My model shows that solar output drops. This is the big challenge. Can we store enough solar energy in batteries to last through the night? Can we build a smart grid that uses both solar and other sources when needed? Answering these questions helps us plan a cleaner, healthier future for our planet. It’s a complex puzzle, but I love working to solve it.",
+    "think_abouts": [
+      "Why does Dr. Okonkwo call her computer model a 'what if' game?",
+      "What is the trade-off, or choice, between using fossil fuels and using solar energy?"
+    ],
+    "go_deeper": "Dr. Okonkwo mentions storing energy in batteries for nighttime. If batteries lose 15% of the energy stored, how would that affect a city trying to run 100% on solar power?",
+    "margin_defs": [
+      {
+        "term": "model",
+        "definition": "A computer program that copies a real-world system."
+      },
+      {
+        "term": "grid",
+        "definition": "The network of wires that carries electricity to homes and businesses."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Okonkwo, what happens to the Air Quality Index when a city burns more fossil fuels?"
+    ],
+    "word_bank": [
+      "solar energy",
+      "fossil fuels",
+      "emissions",
+      "air quality",
+      "model",
+      "grid"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Solar Energy",
+      "definition": "Electricity generated from sunlight using solar panels.",
+      "use_sentence": "Our school installed panels on the roof to generate clean solar energy.",
+      "phonetic": null,
+      "cognate": "energía solar"
+    },
+    {
+      "term": "Fossil Fuel",
+      "definition": "Coal, oil, or natural gas formed from the remains of ancient plants and animals.",
+      "use_sentence": "Many cars still run on gasoline, which is made from a fossil fuel.",
+      "phonetic": null,
+      "cognate": "combustible fósil"
+    },
+    {
+      "term": "CO2 Emissions",
+      "definition": "Carbon dioxide gas that is released into the air, often by burning fuels.",
+      "use_sentence": "Factories and cars produce CO2 emissions that can affect the environment.",
+      "phonetic": "see-oh-too uh-mish-uhns",
+      "cognate": "emisiones de CO2"
+    },
+    {
+      "term": "Air Quality Index",
+      "definition": "A number used to report how clean or polluted the air is each day.",
+      "use_sentence": "When the Air Quality Index was high, we knew the air was clean enough to play outside.",
+      "phonetic": null,
+      "cognate": "índice de calidad del aire"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Okonkwo's model shows that solar power works best on sunny days. What are some ideas for powering a city when it's cloudy or dark?",
+      "frame": "One idea for powering a city without sun is..."
+    },
+    {
+      "prompt": "If you were the mayor of a city, would you choose to invest in more solar panels or more fossil fuel power plants? Explain your choice.",
+      "frame": "If I were the mayor, I would choose to invest in ___ because..."
+    },
+    {
+      "prompt": "The story explains how energy choices affect air quality. What are some other ways our energy choices might affect the environment and our communities?",
+      "frame": "Besides air quality, our energy choices can affect..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

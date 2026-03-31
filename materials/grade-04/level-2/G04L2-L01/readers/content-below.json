@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Huang and the Energy Roller Coaster",
+    "text": "Hi, I’m Dr. Mei-Ling Huang. I’m an engineer who designs roller coasters. My job is to make sure every ride is thrilling but also super safe. To do this, I study how energy works.<br><br>Think about the biggest hill on a coaster. A motor pulls the car all the way to the top. Up there, the car is full of stored energy. We call this <strong>potential energy</strong>. It’s like a stretched rubber band, waiting to go! A taller hill gives the coaster more of this stored energy.<br><br>Then, the car tips over the edge. Whoosh! As it races down, the stored energy transforms into moving energy. This is called <strong>kinetic energy</strong>. The more potential energy you start with, the more kinetic energy you get. That means a faster, more exciting ride at the bottom of the hill.<br><br>So, why does the coaster eventually stop? The secret is a force called <strong>friction</strong>. The wheels rub against the track, and this rubbing creates heat. This <strong>heat loss</strong> means some kinetic energy is leaving the coaster. Energy isn't destroyed, it just changes into heat. This is <strong>energy conservation</strong>. My job is to plan for this energy change so the coaster always has enough speed to make it back to the station.",
+    "think_abouts": [
+      "What would happen to the coaster's speed if the first hill was much shorter?",
+      "Besides the track, where else might friction happen on a roller coaster?"
+    ],
+    "go_deeper": "How would a very windy day change the coaster's energy? (Hint: Think about air resistance.)",
+    "margin_defs": [
+      {
+        "term": "Potential Energy",
+        "definition": "Stored energy, like at the top of a hill."
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "Moving energy, like going down the hill fast."
+      }
+    ],
+    "check_prompts": [
+      "What kind of energy turns into kinetic energy as the coaster goes down a hill?"
+    ],
+    "word_bank": [
+      "potential",
+      "kinetic",
+      "friction",
+      "energy",
+      "engineer"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "potential",
+        "spanish": "potencial"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Potential Energy",
+      "definition": "Stored energy an object has because of its position or height — like a roller coaster waiting at the top of a hill.",
+      "use_sentence": "The car had a lot of potential energy before it started to roll down the big hill.",
+      "phonetic": "puh-ten-shuhl en-er-jee",
+      "cognate": "energía potencial"
+    },
+    {
+      "term": "Kinetic Energy",
+      "definition": "The energy of motion — the faster something moves, the more kinetic energy it has.",
+      "use_sentence": "As the coaster sped up, its kinetic energy increased.",
+      "phonetic": "ki-net-ik en-er-jee",
+      "cognate": "energía cinética"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that happens when two surfaces rub together, slowing things down and creating heat.",
+      "use_sentence": "Friction between the wheels and the track made the roller coaster slow down.",
+      "phonetic": "frik-shuhn",
+      "cognate": "fricción"
+    },
+    {
+      "term": "Heat Loss",
+      "definition": "Energy that transforms into heat because of friction — this energy leaves the motion system.",
+      "use_sentence": "The heat loss from the brakes made them feel warm after the ride stopped.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Energy Conservation",
+      "definition": "The scientific law that energy is never created or destroyed — it only changes form.",
+      "use_sentence": "Because of energy conservation, the potential energy that was lost became kinetic energy and heat.",
+      "phonetic": null,
+      "cognate": "conservación de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Huang says friction is why coasters stop. Can you think of a way to reduce friction on a roller coaster track?",
+      "frame": "To reduce friction, an engineer could try to ___."
+    },
+    {
+      "prompt": "If energy only changes form, describe the energy changes you see when you bounce a basketball.",
+      "frame": null
+    },
+    {
+      "prompt": "Why is it important for an engineer like Dr. Huang to understand both potential and kinetic energy to build a safe ride?",
+      "frame": "It is important because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

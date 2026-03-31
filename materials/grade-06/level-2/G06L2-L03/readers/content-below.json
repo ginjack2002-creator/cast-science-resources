@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Kim's Tectonic Pressure Map",
+    "text": "Hello, I’m Dr. David Kim, a seismologist at Caltech. My job is to find Earth’s pressure points. I make models to forecast where the crust might crack next.<br><br>1. It all starts deep inside the planet. Hot rock in the mantle moves in huge, slow circles. This process is called <strong>Mantle Convection</strong>. These currents drag the giant tectonic plates floating on top. Faster convection means more pushing and pulling on the plates. This builds up a powerful force we call <strong>Tectonic Stress</strong>.<br><br>2. Plates meet at different kinds of boundaries. At a <strong>Convergent Boundary</strong>, plates collide, and one can slide under the other to make volcanoes. At a <strong>Divergent Boundary</strong>, they pull apart. At a <strong>Transform Boundary</strong>, plates slide sideways past each other. This is where stress can build up for a very long time.<br><br>3. My computer models map this <strong>Tectonic Stress</strong>. Areas with high stress are more likely to have a big earthquake. But here is the challenge: we can’t say *when* it will happen. Think of it like bending a ruler. You can feel the pressure building, but you don't know the exact moment it will snap. Our goal is to improve these forecasts to help cities prepare.",
+    "think_abouts": [
+      "If faster mantle movement creates more stress, where would you expect to find more powerful earthquakes?",
+      "Why is it important for cities near transform boundaries, like Los Angeles, to have Dr. Kim's maps?"
+    ],
+    "go_deeper": "Dr. Kim also studies 'aftershocks.' After a big earthquake releases stress in one spot, how might the stress change on other nearby faults?",
+    "margin_defs": [
+      {
+        "term": "model",
+        "definition": "A simple version of something complex to help us understand it."
+      },
+      {
+        "term": "boundary",
+        "definition": "The line where two tectonic plates meet."
+      },
+      {
+        "term": "forecast",
+        "definition": "To predict what might happen in the future."
+      }
+    ],
+    "check_prompts": [
+      "What is the main force that builds up at plate boundaries?"
+    ],
+    "word_bank": [
+      "stress",
+      "boundary",
+      "model",
+      "convection",
+      "earthquake"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "tectonic",
+        "spanish": "tectónico"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "volcanic",
+        "spanish": "volcánico"
+      },
+      {
+        "english": "convection",
+        "spanish": "convección"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mantle Convection",
+      "definition": "The slow, circular movement of hot rock in Earth's mantle that moves the tectonic plates above it.",
+      "use_sentence": "The engine that drives plate tectonics is called mantle convection.",
+      "phonetic": "MAN-tuhl kuhn-VEK-shuhn",
+      "cognate": "convección del manto"
+    },
+    {
+      "term": "Tectonic Stress",
+      "definition": "The pressure that builds up at plate boundaries as plates push, pull, or slide past each other.",
+      "use_sentence": "When tectonic stress is released suddenly, it causes an earthquake.",
+      "phonetic": "tek-TAW-nik stress",
+      "cognate": "estrés tectónico"
+    },
+    {
+      "term": "Convergent Boundary",
+      "definition": "A place where two tectonic plates are colliding or crashing into each other.",
+      "use_sentence": "Mountains and volcanoes often form at a convergent boundary.",
+      "phonetic": "kuhn-VUR-juhnt BOWN-dree",
+      "cognate": "borde convergente"
+    },
+    {
+      "term": "Divergent Boundary",
+      "definition": "A place where two tectonic plates are moving away from each other.",
+      "use_sentence": "New crust is formed at a divergent boundary deep in the ocean.",
+      "phonetic": "dai-VUR-juhnt BOWN-dree",
+      "cognate": "borde divergente"
+    },
+    {
+      "term": "Transform Boundary",
+      "definition": "A place where two tectonic plates are sliding horizontally past one another.",
+      "use_sentence": "The San Andreas Fault in California is a famous transform boundary.",
+      "phonetic": "TRANS-form BOWN-dree",
+      "cognate": "borde transformante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine you are Dr. Kim. How would you explain to the mayor of a city why they need to prepare for an earthquake, even if you can't say exactly when it will happen?",
+      "frame": "I would tell the mayor that our models show..."
+    },
+    {
+      "prompt": "Dr. Kim's model shows stress building up like a bent ruler. What happens to that stress when an earthquake finally occurs?",
+      "frame": "When an earthquake happens, the built-up stress is..."
+    },
+    {
+      "prompt": "Different plate boundaries create different hazards. Which type of boundary would you be most concerned about if you were worried about volcanoes? Why?",
+      "frame": "The boundary type I'd be most concerned about for volcanoes is..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

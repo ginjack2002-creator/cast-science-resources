@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Rivera's Carbon Detective Work",
+    "text": "Hello, I am Dr. Carlos Rivera. I am a Carbon Flux Scientist. My job is to follow carbon atoms on their amazing journey. I track where they go and how fast they move.<br><br>Think about your breath. You breathe out a gas called <strong>carbon dioxide</strong>. It joins the air. A tall tree uses that gas and sunlight to make food. This process is called <strong>photosynthesis</strong>. The tree takes carbon from the air to grow strong roots and leaves.<br><br>When the tree dies, tiny microbes start to eat it. This is called <strong>decomposition</strong>. They break down the old wood. Some carbon goes into the soil, making it rich. Other carbon goes back into the air as a gas. Then, another plant can use it.<br><br>This whole journey is the <strong>carbon cycle</strong>. The carbon from your breath might be in a flower next year! I use computers to model this big system. My work helps us understand how oceans and forests keep our planet's carbon budget balanced.",
+    "think_abouts": [
+      "What are two places carbon can be found in the story?",
+      "How does a plant get the carbon it needs to grow?"
+    ],
+    "go_deeper": "Dr. Rivera also studies oceans. How might burning fossil fuels change the amount of carbon the ocean absorbs?",
+    "margin_defs": [
+      {
+        "term": "microbes",
+        "definition": "Tiny living things like bacteria."
+      },
+      {
+        "term": "model",
+        "definition": "To make a simple copy to understand something big."
+      },
+      {
+        "term": "budget",
+        "definition": "A plan for how much you have and how much you can use."
+      }
+    ],
+    "check_prompts": [
+      "What is one part of the carbon cycle you found interesting?"
+    ],
+    "word_bank": [
+      "photosynthesis",
+      "decomposition",
+      "carbon dioxide",
+      "carbon cycle"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "carbon",
+        "spanish": "carbono"
+      },
+      {
+        "english": "cycle",
+        "spanish": "ciclo"
+      },
+      {
+        "english": "process",
+        "spanish": "proceso"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Carbon Dioxide (CO2)",
+      "definition": "A gas in the air that plants use for food and animals breathe out.",
+      "use_sentence": "When we exhale, we release carbon dioxide into the atmosphere.",
+      "phonetic": "KAR-buhn dai-OK-said",
+      "cognate": "Dióxido de carbono"
+    },
+    {
+      "term": "Photosynthesis",
+      "definition": "The way plants use sunlight, water, and CO2 to create their own food.",
+      "use_sentence": "Through photosynthesis, the big oak tree turns sunlight into energy.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "Fotosíntesis"
+    },
+    {
+      "term": "Decomposition",
+      "definition": "The process of breaking down dead plants and animals into simpler parts.",
+      "use_sentence": "Fungi and bacteria help with the decomposition of fallen leaves in the forest.",
+      "phonetic": "dee-kom-puh-ZISH-uhn",
+      "cognate": "Descomposición"
+    },
+    {
+      "term": "Carbon Cycle",
+      "definition": "The path that carbon atoms take as they move between the air, land, ocean, and living things.",
+      "use_sentence": "The carbon cycle shows how carbon is used over and over again on Earth.",
+      "phonetic": "KAR-buhn SAI-kuhl",
+      "cognate": "Ciclo del carbono"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Rivera says the carbon from your breath could be in a flower next year. How is this possible? Describe the steps.",
+      "frame": "First, I breathe out carbon dioxide. Then, a plant..."
+    },
+    {
+      "prompt": "If there were fewer plants on Earth, how would that change the amount of CO2 in the atmosphere? Why?",
+      "frame": "If there were fewer plants, the CO2 in the atmosphere would likely increase because..."
+    },
+    {
+      "prompt": "Why is the work of a Carbon Flux Scientist like Dr. Rivera important for understanding our planet?",
+      "frame": "Tracking carbon is important because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

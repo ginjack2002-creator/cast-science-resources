@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Baptiste and the Great Food Web Mystery",
+    "text": "Hello, I’m Dr. Andre Baptiste, a Marine Food Web Ecologist. Here at the Monterey Bay Aquarium Research Institute, I don’t just look at one animal at a time. I see the entire ocean ecosystem as a giant, connected puzzle. My job is to figure out how all the pieces fit together and how energy flows through the system.<br><br>It all starts with the sun. In the ocean, tiny algae and giant kelp are <strong>producers</strong>. They are amazing organisms that make their own food using sunlight, forming the foundation of the food web. Next come the <strong>primary consumers</strong>, the herbivores that eat the producers. This could be a small krill eating algae or a sea urchin munching on kelp. They transfer the sun's energy to the next level.<br><br>Then you have the <strong>secondary consumers</strong>, the predators that eat the primary consumers. This might be a penguin that eats krill, or a sea otter that cracks open sea urchins. Each connection is a critical link. But what happens if one link breaks? If sea otters are removed, the sea urchin population can explode. With too many urchins, they can devour an entire kelp forest, turning a vibrant habitat into a barren wasteland. This powerful chain reaction is called a <strong>trophic cascade</strong>.<br><br>Even decomposers, like bacteria, play a role by breaking down dead organisms and returning nutrients to the water for producers to use again. By studying every link, from plankton to great white sharks, we can predict these cascades and find ways to protect the delicate balance of our amazing oceans.",
+    "think_abouts": [
+      "What might happen to the primary consumers if a disease wiped out most of the producers?",
+      "Besides the sea urchins and kelp, what other animals might be affected if sea otters disappear?"
+    ],
+    "go_deeper": "How might an invasive species, like a new type of crab that eats the same food as native crabs, cause a trophic cascade?",
+    "margin_defs": [
+      {
+        "term": "Producer",
+        "definition": "An organism that makes its own food."
+      },
+      {
+        "term": "Primary Consumer",
+        "definition": "An animal that eats producers."
+      },
+      {
+        "term": "Secondary Consumer",
+        "definition": "An animal that eats primary consumers."
+      },
+      {
+        "term": "Trophic Cascade",
+        "definition": "A chain reaction in a food web."
+      }
+    ],
+    "check_prompts": [
+      "What is the main job of a Marine Food Web Ecologist?"
+    ],
+    "word_bank": [
+      "ecosystem",
+      "plankton",
+      "predator",
+      "nutrients"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "organism",
+        "spanish": "organismo"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "ecologist",
+        "spanish": "ecologista"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Producer",
+      "definition": "An organism that makes its own food from sunlight, like plants and algae.",
+      "use_sentence": "Kelp is a producer that forms the base of the ocean food web.",
+      "phonetic": "pruh-DOO-ser",
+      "cognate": "productor"
+    },
+    {
+      "term": "Primary Consumer",
+      "definition": "An herbivore that eats producers directly.",
+      "use_sentence": "A sea urchin is a primary consumer because it eats kelp.",
+      "phonetic": "PRY-mair-ee kun-SOO-mer",
+      "cognate": "consumidor primario"
+    },
+    {
+      "term": "Secondary Consumer",
+      "definition": "A predator that eats primary consumers.",
+      "use_sentence": "The sea otter is a secondary consumer that preys on sea urchins.",
+      "phonetic": "SEK-un-dair-ee kun-SOO-mer",
+      "cognate": "consumidor secundario"
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction through a food web when one species is removed or changed.",
+      "use_sentence": "The loss of sea otters caused a trophic cascade that destroyed the kelp forest.",
+      "phonetic": "TRO-fik kas-KAYD",
+      "cognate": "cascada trófica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Baptiste studies the ocean. What might a food web puzzle look like in a forest? Describe the producers, primary consumers, and secondary consumers.",
+      "frame": "In a forest ecosystem, the producers might be..."
+    },
+    {
+      "prompt": "Imagine you are an ecologist like Dr. Baptiste. A new fishing law allows people to catch many more sharks. What chain reaction might you predict for the rest of the ocean food web?",
+      "frame": "If the shark population decreases, I predict that..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Johansson and the Unchanging Matter",
+    "text": "My name is Dr. Hannah Johansson. I am a physicist at MIT. I study how matter changes from solid, to liquid, to gas. This is called a <strong>phase change</strong>.<br><br>Imagine we have a sealed jar with an ice cube inside. We weigh it. Then, we add heat energy. The ice reaches its <strong>melting point</strong> and becomes liquid water. The amount of solid goes down. The amount of liquid goes up. Did we lose any matter? No. The weight is the same.<br><br>Now, we add more heat. The liquid water starts to bubble. This is <strong>evaporation</strong>. The water turns into a gas called steam. The amount of liquid goes down, and the amount of gas goes up. The jar looks empty, but the steam is still inside.<br><br>So, when we weigh the jar again, the weight is exactly the same! The matter did not disappear. It only changed its form. This important rule is called the <strong>conservation of matter</strong>. No matter is ever lost.",
+    "think_abouts": [
+      "What happens to the molecules in an ice cube when you add heat?",
+      "If the sealed jar weighs the same at the start and end, what does that prove?"
+    ],
+    "go_deeper": "Dr. Johansson knows that adding salt to water changes its freezing point. Why do people put salt on icy roads in the winter?",
+    "margin_defs": [
+      {
+        "term": "physicist",
+        "definition": "A scientist who studies energy and matter."
+      },
+      {
+        "term": "sealed",
+        "definition": "Closed tightly so nothing can get in or out."
+      },
+      {
+        "term": "molecules",
+        "definition": "The tiny particles that make up all matter."
+      }
+    ],
+    "check_prompts": [
+      "What is the rule that says matter cannot be created or destroyed?"
+    ],
+    "word_bank": [
+      "Phase Change",
+      "Conservation of Matter",
+      "Melting Point",
+      "Evaporation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "matter",
+        "spanish": "materia"
+      },
+      {
+        "english": "physicist",
+        "spanish": "físico/a"
+      },
+      {
+        "english": "liquid",
+        "spanish": "líquido"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Phase Change",
+      "definition": "When matter switches between its solid, liquid, or gas form.",
+      "use_sentence": "When water freezes into ice, it goes through a phase change.",
+      "phonetic": "feyz cheynj",
+      "cognate": null
+    },
+    {
+      "term": "Conservation of Matter",
+      "definition": "The scientific rule that matter is not created or lost during a change.",
+      "use_sentence": "Because of the conservation of matter, a melted ice cube has the same mass as it did when it was solid.",
+      "phonetic": "kon-ser-vey-shuhn uv mat-er",
+      "cognate": "conservación de la materia"
+    },
+    {
+      "term": "Melting Point",
+      "definition": "The specific temperature when a solid turns into a liquid.",
+      "use_sentence": "The melting point of water is 0 degrees Celsius.",
+      "phonetic": "mel-ting poynt",
+      "cognate": "punto de fusión"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process when a liquid heats up and turns into a gas.",
+      "use_sentence": "After it rains, evaporation makes the puddles on the street disappear.",
+      "phonetic": "ih-vap-uh-rey-shuhn",
+      "cognate": "evaporación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "A wet towel dries faster if you spread it out instead of leaving it in a ball. Why do you think this happens?",
+      "frame": "A towel dries faster when it is spread out because ___."
+    },
+    {
+      "prompt": "Food cooks much faster in a pressure cooker, which traps steam and increases the pressure inside. How does high pressure change the boiling point of water?",
+      "frame": "High pressure inside a cooker probably makes the water boil at a ___ temperature."
+    },
+    {
+      "prompt": "If you leave a cup of water on a table for a few days, the water level goes down. Did the matter disappear? Where did it go?",
+      "frame": "The matter did not disappear. The water ___ into the air."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

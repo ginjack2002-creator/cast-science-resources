@@ -1,0 +1,108 @@
+{
+  "story": {
+    "title": "Dr. Washington's Collision Course",
+    "text": "Hi, I’m Dr. Anika Washington, a collision physics researcher. At my lab, I study what happens when things crash into each other. It might sound messy, but understanding collisions helps us design everything from safer cars to stronger satellites.<br><br>Think about a long line of dominoes. When you push the first one, you start a <strong>chain reaction</strong>. That first push gives the domino kinetic energy—the energy of motion. When it hits the next domino, we see <strong>kinetic energy transfer</strong>. This continues all the way down the line.<br><br>But have you ever noticed the last domino falls slower than the first one was pushed? That’s because of <strong>energy loss</strong>. With each 'clack,' a little bit of motion energy turns into sound energy that you can hear. That sound energy can’t be used to push the next domino, so less energy gets passed on each time.<br><br>We also have to think about <strong>mass</strong>. If you mix heavy and light dominoes, the energy transfer will change. Heavier objects are harder to move, so they can slow the reaction down even more. By studying these tiny details, we can predict how energy will move in much bigger collisions, like an asteroid hitting a planet!",
+    "think_abouts": [
+      "What would happen if the dominoes were made of soft clay instead of hard plastic?",
+      "How could you change the setup to make the last domino fall even faster?"
+    ],
+    "go_deeper": "Besides sound, where else might the 'lost' energy go during a collision?",
+    "margin_defs": [
+      {
+        "term": "chain reaction",
+        "definition": "a series of events where each one causes the next"
+      },
+      {
+        "term": "kinetic energy transfer",
+        "definition": "passing motion energy from one object to another"
+      },
+      {
+        "term": "energy loss",
+        "definition": "when motion energy changes into sound or heat"
+      },
+      {
+        "term": "mass",
+        "definition": "the amount of stuff in an object"
+      }
+    ],
+    "check_prompts": [
+      "Why does a louder 'clack' between dominoes mean the last domino will move slower?"
+    ],
+    "word_bank": [
+      "collision",
+      "kinetic energy",
+      "mass",
+      "chain reaction"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      },
+      {
+        "english": "collision",
+        "spanish": "colisión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Collision",
+      "definition": "When two objects hit each other, transferring energy from one to the other.",
+      "use_sentence": "The collision of the two cars made a loud crashing sound.",
+      "phonetic": null,
+      "cognate": "colisión"
+    },
+    {
+      "term": "Kinetic Energy Transfer",
+      "definition": "When a moving object hits a stationary object and passes some of its motion energy to it.",
+      "use_sentence": "You can see kinetic energy transfer when a bowling ball hits the pins.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Energy Loss",
+      "definition": "Energy that changes from motion into sound, heat, or vibration during a collision; it does not disappear but is no longer useful for movement.",
+      "use_sentence": "Because of energy loss, a bouncing ball never bounces as high as where it started.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Mass",
+      "definition": "How much matter (stuff) is in an object; heavier objects have more mass and are harder to get moving.",
+      "use_sentence": "A bowling ball has more mass than a soccer ball.",
+      "phonetic": null,
+      "cognate": "masa"
+    },
+    {
+      "term": "Chain Reaction",
+      "definition": "A series of events where each event triggers the next one, like dominoes falling or billiard balls hitting each other.",
+      "use_sentence": "Tipping the first domino started a chain reaction that knocked them all down.",
+      "phonetic": null,
+      "cognate": "reacción en cadena"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Washington studies car crashes. How does understanding energy loss help engineers design safer cars?",
+      "frame": "Understanding energy loss helps make safer cars because ___."
+    },
+    {
+      "prompt": "Imagine you are building a Rube Goldberg machine. How would you use the idea of a chain reaction in your design?",
+      "frame": "In my Rube Goldberg machine, I would create a chain reaction by ___."
+    },
+    {
+      "prompt": "If you used objects with different masses in a chain reaction (like marbles), where would you place the heaviest object to get the fastest final speed?",
+      "frame": "To get the fastest final speed, I would place the heaviest object ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

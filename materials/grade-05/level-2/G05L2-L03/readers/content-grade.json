@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Tran's Water Puzzle",
+    "text": "My name is Dr. Kevin Tran, and I’m a groundwater hydrologist. That’s a scientist who studies water hidden beneath our feet. This water, called <strong>groundwater</strong> (water stored underground), is kept in huge underground layers of rock and sand called an <strong>aquifer</strong>. Think of it like a giant, natural, underground sponge. Many towns and cities get all their drinking water by pumping from these aquifers.<br><br>Here in California, I work with communities facing a big challenge. The population size is growing quickly. More people means a higher <strong>Water Usage Rate</strong> (how fast people use water) for things like drinking, washing, and growing food. The problem is, we are pumping water out of the aquifer much faster than rainfall can soak into the ground to refill it. This causes the groundwater level to drop lower and lower each year.<br><br>My job is to use computer models to see into the future. I input data like the amount of rainfall and the number of people in the community. My model then shows what will happen to the aquifer over the next 10, 20, or even 50 years. When the groundwater level gets too low, <strong>Water Availability</strong> (whether there's enough water for everyone) becomes a serious problem. Wells can run dry.<br><br>By showing city leaders these predictions, I help them understand the problem. Together, we can plan for the future. We can find new ways to conserve water and make sure there is enough for everyone for years to come. It’s a puzzle, and it’s my job to help find the solution.",
+    "think_abouts": [
+      "What do you think happens to farms and houses when the groundwater in an aquifer runs out?",
+      "Besides using less water at home, what is another way a community could increase its water availability?"
+    ],
+    "go_deeper": "Dr. Tran also studies how farms use water. What do you think would happen to the groundwater level if farmers switched from spraying water everywhere to using special hoses that drip water right onto the plant roots?",
+    "margin_defs": [
+      {
+        "term": "Hydrologist",
+        "definition": "A scientist who studies water."
+      },
+      {
+        "term": "Model",
+        "definition": "A computer program that makes predictions based on data."
+      }
+    ],
+    "check_prompts": [
+      "What two pieces of information does Dr. Tran put into his computer model to predict future water levels?"
+    ],
+    "word_bank": [
+      "aquifer",
+      "groundwater",
+      "hydrologist",
+      "community",
+      "population"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "community",
+        "spanish": "comunidad"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Groundwater",
+      "definition": "Water stored underground in soil and rock layers called aquifers.",
+      "use_sentence": "The town drilled a well to pump groundwater for drinking.",
+      "phonetic": "GROUND-wah-ter",
+      "cognate": "agua subterránea"
+    },
+    {
+      "term": "Aquifer",
+      "definition": "An underground layer of rock or sediment that holds water.",
+      "use_sentence": "The deep aquifer held enough water to supply the entire city.",
+      "phonetic": "AH-kwih-fer",
+      "cognate": "acuífero"
+    },
+    {
+      "term": "Water Usage Rate",
+      "definition": "How fast a community uses its available water supply.",
+      "use_sentence": "During the hot summer, the water usage rate was very high.",
+      "phonetic": null,
+      "cognate": "tasa de uso de agua"
+    },
+    {
+      "term": "Water Availability",
+      "definition": "Whether there is enough clean water for everyone in a community.",
+      "use_sentence": "After the long drought, water availability became a serious concern.",
+      "phonetic": null,
+      "cognate": "disponibilidad de agua"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "How does a growing population affect the amount of available water in a community?",
+      "frame": "When more people move to an area, the water usage rate _______, which causes the water availability to _______."
+    },
+    {
+      "prompt": "Dr. Tran uses models to predict the future. Why is it important for city leaders to see these predictions?",
+      "frame": "It is important for leaders to see predictions about water levels so they can plan to..."
+    },
+    {
+      "prompt": "If you were a hydrologist like Dr. Tran, what would be the first solution you would suggest to a town that is running out of water?",
+      "frame": "If I were a hydrologist, my first suggestion would be to..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "story": {
+    "title": "Dr. Baptiste and the Deep-Sea Puzzle",
+    "text": "Hello, I'm Dr. Andre Baptiste, and I solve some of the ocean's most complex puzzles. Here at the Monterey Bay Aquarium Research Institute, my puzzle pieces aren't cardboard; they're data points about the intricate connections in marine food webs. My job is to model how energy, which originates from the sun, flows through an entire ocean ecosystem, from a microscopic <strong>producer</strong> like algae all the way up to a great white shark.<br><br>Think of it this way: phytoplankton, the ocean's tiny plants, are the ultimate producers. They're consumed by legions of zooplankton, a type of <strong>primary consumer</strong>. Those zooplankton are then eaten by small fish, which are a <strong>secondary consumer</strong>. This isn't a simple, straight line. A single school of fish provides energy for seals, seabirds, and even larger fish, weaving a complex web of dependency. Every connection is a pathway for energy.<br><br>The critical question my team and I investigate is what happens when a piece of this puzzle is abruptly removed. For example, what if an invasive crab species arrives and outcompetes the native crabs for food? The native crab population might plummet, leaving their predators, like octopuses, with a suddenly scarce food source. This ripple effect is called a <strong>trophic cascade</strong>, a powerful chain reaction that can destabilize an entire ecosystem. The change at one level cascades through all the others, sometimes with unpredictable results.<br><br>To map these consequences, we use remotely operated vehicles to observe deep-sea life and run sophisticated computer simulations. We input data about population sizes and feeding habits to predict the impact of changes, like a decline in a key species or shifts in seasonal food availability. By understanding the profound interconnectedness of the food web, we can advise on conservation efforts and help protect the delicate, dynamic balance of life beneath the waves.",
+    "think_abouts": [
+      "Why does Dr. Baptiste describe the food web as a 'complex puzzle'?",
+      "What might be another example of a trophic cascade, perhaps in a forest or desert ecosystem?"
+    ],
+    "go_deeper": "Dr. Baptiste mentioned seasonal food availability. How might the food web around a polar bear change between the summer (when sea ice is scarce) and the winter (when sea ice is plentiful)?",
+    "margin_defs": [
+      {
+        "term": "simulations",
+        "definition": "computer models that imitate a real-world process"
+      },
+      {
+        "term": "interconnectedness",
+        "definition": "the state of having all parts linked or connected"
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Baptiste, what is a trophic cascade?"
+    ],
+    "word_bank": [
+      "Producer",
+      "Primary Consumer",
+      "Secondary Consumer",
+      "Trophic Cascade",
+      "Ecosystem"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "ecosystem",
+        "spanish": "ecosistema"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Producer",
+      "definition": "An organism, like a plant or alga, that creates its own food, usually from sunlight.",
+      "use_sentence": "In the ocean, tiny phytoplankton are a major producer, forming the base of the food web.",
+      "phonetic": "pro-DOO-ser",
+      "cognate": "productor"
+    },
+    {
+      "term": "Primary Consumer",
+      "definition": "An animal that eats producers; also known as an herbivore.",
+      "use_sentence": "A rabbit eating grass is a primary consumer in its ecosystem.",
+      "phonetic": "PRY-mair-ee con-SOO-mer",
+      "cognate": "consumidor primario"
+    },
+    {
+      "term": "Secondary Consumer",
+      "definition": "An animal that eats primary consumers; it can be a carnivore or an omnivore.",
+      "use_sentence": "A hawk that eats a rabbit is a secondary consumer.",
+      "phonetic": "SEK-un-dair-ee con-SOO-mer",
+      "cognate": "consumidor secundario"
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "An indirect effect caused by the removal or addition of a key species, resulting in dramatic changes through the lower levels of a food web.",
+      "use_sentence": "When wolves were reintroduced to Yellowstone, they caused a trophic cascade by changing elk behavior, which allowed willow trees to recover.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": "cascada trófica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Baptiste studies invasive species. If a new, highly effective predator was introduced to an ecosystem, what are three possible effects it could have on the food web?",
+      "frame": null
+    },
+    {
+      "prompt": "Humans are part of many food webs. How do our actions (like fishing, farming, or building cities) change the connections in an ecosystem?",
+      "frame": "One way human actions change ecosystems is by..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

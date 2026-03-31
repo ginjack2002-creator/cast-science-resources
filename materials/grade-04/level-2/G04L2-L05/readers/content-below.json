@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Mitchell's Windy Puzzle",
+    "text": "Hello! I’m Dr. Sarah Mitchell. I’m a wind engineer. My job is like being a detective for the wind. I use special computer maps and weather data to find the best places to build tall <strong>wind turbines</strong>.<br><br>These amazing machines turn wind into <strong>electricity</strong>. It’s a simple idea: 1. The wind blows. 2. The turbine blades spin. 3. A generator inside makes power for our homes. The faster the wind blows, the more power we get. This is a clean type of <strong>renewable energy</strong>.<br><br>But wind has a secret. It is <strong>intermittent</strong>, which means it comes and goes. A city needs power all day and all night for its lights, schools, and hospitals. If the wind suddenly stops, the turbines stop making electricity. This is a problem for our <strong>grid reliability</strong>.<br><br>So, how do we solve this puzzle? My team and I plan for calm days. We figure out how many turbines a city needs to meet its energy demand. We also study new ideas, like giant batteries that can store wind energy. We want to make sure everyone has clean, reliable power, no matter which way the wind is blowing.",
+    "think_abouts": [
+      "What happens to the electricity supply when the wind stops blowing?",
+      "Why is it important for a city to have reliable electricity?"
+    ],
+    "go_deeper": "How could giant batteries help a city that uses wind power?",
+    "margin_defs": [
+      {
+        "term": "Intermittent",
+        "definition": "Something that stops and starts."
+      },
+      {
+        "term": "Reliability",
+        "definition": "Being able to be trusted or counted on."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Mitchell do in her job?",
+      "What is the main problem with using wind for power?"
+    ],
+    "word_bank": [
+      "turbines",
+      "energy",
+      "power",
+      "city",
+      "windy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "electricity",
+        "spanish": "electricidad"
+      },
+      {
+        "english": "intermittent",
+        "spanish": "intermitente"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniera"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Wind Turbine",
+      "definition": "A tall machine with spinning blades that uses wind to make electricity.",
+      "use_sentence": "We saw a giant wind turbine spinning on the hill.",
+      "phonetic": "wind TUR-bine",
+      "cognate": "turbina"
+    },
+    {
+      "term": "Electricity",
+      "definition": "A type of energy that powers lights, computers, and TVs.",
+      "use_sentence": "You need to plug in the lamp to get electricity.",
+      "phonetic": "e-lek-TRIS-i-tee",
+      "cognate": "electricidad"
+    },
+    {
+      "term": "Grid Reliability",
+      "definition": "How much you can count on the power to stay on without going out.",
+      "use_sentence": "Good grid reliability means we do not have blackouts.",
+      "phonetic": "grid ree-lie-uh-BIL-i-tee",
+      "cognate": null
+    },
+    {
+      "term": "Renewable Energy",
+      "definition": "Energy from sources that don't run out, like the sun and wind.",
+      "use_sentence": "Wind power is a type of renewable energy.",
+      "phonetic": "re-NOO-uh-bull EN-er-jee",
+      "cognate": "energía renovable"
+    },
+    {
+      "term": "Intermittent",
+      "definition": "Something that is not steady, but stops and starts again.",
+      "use_sentence": "The rain was intermittent, so we could play outside between showers.",
+      "phonetic": "in-ter-MIT-tent",
+      "cognate": "intermitente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Besides batteries, what is another idea you have to make sure a city has power on a calm day?",
+      "frame": "One idea I have is to ___."
+    },
+    {
+      "prompt": "Dr. Mitchell finds the windiest places for turbines. What do you think makes a place windy?",
+      "frame": "I think a place is windy because ___."
+    },
+    {
+      "prompt": "If you were a wind engineer like Dr. Mitchell, what part of the job would you like the most? Why?",
+      "frame": "The part of the job I would like most is ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Gutierrez and the Winter Survival Puzzle",
+    "text": "Hi, I’m Dr. Rosa Gutierrez. I study how Arctic animals stay warm. It’s a big puzzle!<br><br>Imagine it is freezing outside. Your body must work hard to stay warm. This is your <strong>metabolic rate</strong>. A fast metabolic rate burns a lot of energy. Arctic animals face this problem every day.<br><br>How do they solve it? I look at three main clues.<br><br>1. First, I look at their <strong>insulation</strong>. This is their body's 'winter coat.' Polar bears have thick fur and fat. This insulation keeps their body heat in. Better insulation means their body doesn't work as hard. Their metabolic rate can stay lower.<br><br>2. Second, I check for food. Animals need food for energy. More food means they can fuel their bodies. It helps them survive the long, cold winter. Less food is a very big problem.<br><br>3. Third, I see their amazing <strong>adaptations</strong>. Some animals hibernate. They go into a deep sleep. This makes their metabolic rate super slow. They save tons of energy this way.<br><br>My job is to see how these parts fit together. It helps us protect these amazing animals in the coldest places on Earth.",
+    "think_abouts": [
+      "Why is a thick fur coat like good insulation?",
+      "What could happen if an animal with a fast metabolic rate cannot find food?"
+    ],
+    "go_deeper": "Penguins huddle together in big groups. How does this behavior help them with their metabolic rate and insulation?",
+    "margin_defs": [
+      {
+        "term": "Metabolic Rate",
+        "definition": "How fast a body burns energy to stay warm."
+      },
+      {
+        "term": "Insulation",
+        "definition": "A layer, like fur or fat, that keeps heat in."
+      },
+      {
+        "term": "Adaptations",
+        "definition": "Special features that help an animal survive."
+      }
+    ],
+    "check_prompts": [
+      "What happens to an animal's body when it gets very cold?"
+    ],
+    "word_bank": [
+      "energy",
+      "survive",
+      "temperature",
+      "insulation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "animal",
+        "spanish": "animal"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "hibernation",
+        "spanish": "hibernación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Insulation",
+      "definition": "A layer that keeps heat in, like a winter coat.",
+      "use_sentence": "A polar bear's thick fur is great insulation against the cold.",
+      "phonetic": "in-suh-LAY-shun",
+      "cognate": "aislamiento"
+    },
+    {
+      "term": "Metabolic Rate",
+      "definition": "How fast a body uses energy to stay alive and warm.",
+      "use_sentence": "When you run, your metabolic rate goes up to give you more energy.",
+      "phonetic": "meh-tuh-BALL-ick RAYT",
+      "cognate": null
+    },
+    {
+      "term": "Adaptation",
+      "definition": "A special body part or behavior that helps an animal survive.",
+      "use_sentence": "A camel's hump is an adaptation for living in the desert.",
+      "phonetic": "ad-ap-TAY-shun",
+      "cognate": "adaptación"
+    },
+    {
+      "term": "Hibernation",
+      "definition": "A long, deep sleep that helps animals save energy during winter.",
+      "use_sentence": "Bears go into hibernation so they don't need to find food in the snow.",
+      "phonetic": "hy-ber-NAY-shun",
+      "cognate": "hibernación"
+    },
+    {
+      "term": "Thermoregulation",
+      "definition": "How an animal's body controls its temperature to stay just right.",
+      "use_sentence": "Shivering is a type of thermoregulation that helps warm you up.",
+      "phonetic": "ther-mo-reg-yoo-LAY-shun",
+      "cognate": "termorregulación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were designing an animal to survive the Arctic, what is the most important adaptation you would give it: thick fur, the ability to hibernate, or something else? Why?",
+      "frame": "I think the most important adaptation would be ___ because ___."
+    },
+    {
+      "prompt": "Dr. Gutierrez said that less food is a very big problem for Arctic animals. What are two reasons why food might be hard to find in the winter?",
+      "frame": "In winter, food might be hard to find because ___ and also because ___."
+    },
+    {
+      "prompt": "How does good insulation help an animal save energy?",
+      "frame": "Good insulation helps an animal save energy by ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

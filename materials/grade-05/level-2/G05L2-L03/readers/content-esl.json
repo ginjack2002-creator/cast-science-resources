@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Tran and the Underground Water Puzzle",
+    "text": "My name is Dr. Kevin Tran. I am a groundwater hydrologist. I study water that is hidden underground.<br><br>This underground water is called <strong>groundwater</strong>. It is stored in a special layer of rock and sand. This layer is called an <strong>aquifer</strong>. I help communities in California understand their water supply.<br><br>I use a computer model to see the whole water system. My model shows how rain fills the <strong>aquifer</strong>. More rainfall means more water goes underground. This is a positive relationship.<br><br>My model also looks at the number of people. A bigger population uses more water for homes and farms. This increases the <strong>water usage rate</strong>. This is also a positive relationship.<br><br>But here is the challenge. A high <strong>water usage rate</strong> pumps water out of the <strong>aquifer</strong>. This makes the groundwater level go down. This is a negative relationship.<br><br>When groundwater levels are low, there is less water for everyone. This reduces <strong>water availability</strong>. My job is to help communities plan. We must work together to save water for our future.",
+    "think_abouts": [
+      "What is the connection between the number of people and the amount of water?",
+      "Why is it important for Dr. Tran to predict when a community might run out of water?"
+    ],
+    "go_deeper": "Dr. Tran also studies farming. Some farms waste 50% of their water. How could using better farming tools help a community's water availability?",
+    "margin_defs": [
+      {
+        "term": "hydrologist",
+        "definition": "a scientist who studies water"
+      },
+      {
+        "term": "model",
+        "definition": "a simple way to show something complex"
+      }
+    ],
+    "check_prompts": [
+      "What happens to the groundwater level when the water usage rate goes up?"
+    ],
+    "word_bank": [
+      "groundwater",
+      "aquifer",
+      "water usage rate",
+      "water availability"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "community",
+        "spanish": "comunidad"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "future",
+        "spanish": "futuro"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Groundwater",
+      "definition": "Water stored underground in soil and rock layers.",
+      "use_sentence": "We use a well to pump groundwater to our house.",
+      "phonetic": "GROUND-wah-ter",
+      "cognate": null
+    },
+    {
+      "term": "Aquifer",
+      "definition": "An underground layer of rock or sediment that holds water.",
+      "use_sentence": "The deep aquifer provides water for the whole city.",
+      "phonetic": "AH-kwih-fer",
+      "cognate": "acuífero"
+    },
+    {
+      "term": "Water Usage Rate",
+      "definition": "How fast a community uses its available water supply.",
+      "use_sentence": "In the summer, our water usage rate is very high.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Water Availability",
+      "definition": "Whether there is enough clean water for everyone in a community.",
+      "use_sentence": "A long drought can lower water availability.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "What are two reasons a community's groundwater level might go down?",
+      "frame": "A community's groundwater level might go down because of ___ and ___."
+    },
+    {
+      "prompt": "If you were the leader of a town with low water availability, what is one new rule you would make to save water? Why?",
+      "frame": "One new rule I would make is ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

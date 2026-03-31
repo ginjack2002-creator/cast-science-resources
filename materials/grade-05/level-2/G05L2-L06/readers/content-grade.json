@@ -1,0 +1,91 @@
+{
+  "story": {
+    "title": "Dr. Tanaka and the Volcano's Global Reach",
+    "text": "Hi, I’m Dr. Yuki Tanaka. At the USGS Hawaiian Volcano Observatory, I’m not just a volcanologist who studies eruptions; I'm also a climate modeler. My job is to use powerful computer models to see how an event in one place, like a volcanic eruption, can change the whole world.<br><br>Volcanoes are part of the <strong>geosphere</strong>, the solid Earth. When a big one erupts, it connects the geosphere directly to the <strong>atmosphere</strong>, the air all around us. For a long time, we knew that volcanoes release carbon dioxide, which is a <strong>greenhouse gas</strong>. This gas traps heat and can slowly raise the global temperature. But my models show a more complex story.<br><br>A huge eruption also blasts out sulfur dioxide gas. High in the atmosphere, this gas turns into tiny reflective particles. These particles act like a giant sunshade, blocking sunlight and causing the Earth to cool down for a few years! This is how a volcano on one continent can cause a cold winter on another.<br><br>The Earth system has ways of balancing itself. For example, if there’s more CO2 and warmth, plants might grow more, pulling that CO2 out of the air. This is called a <strong>negative feedback</strong> loop, and it helps stabilize our climate. Oceans also absorb a lot of CO2. My work is to understand all these connections so we can better predict how our planet will respond to future events.",
+    "think_abouts": [
+      "How is a negative feedback loop like a thermostat in a house?",
+      "Why might a giant sunshade in the sky cause problems for plants, even if it cools the Earth?"
+    ],
+    "go_deeper": "Dr. Tanaka mentioned that large ash falls quickly, but tiny particles can stay in the air for years. Why does particle size matter so much for global climate effects?",
+    "margin_defs": [
+      {
+        "term": "Volcanologist",
+        "definition": "A scientist who studies volcanoes."
+      },
+      {
+        "term": "Climate Modeler",
+        "definition": "A scientist who uses computers to understand and predict climate patterns."
+      }
+    ],
+    "check_prompts": [
+      "What are two different ways a volcano can change the global temperature?"
+    ],
+    "word_bank": [
+      "Volcano",
+      "Climate",
+      "Model",
+      "Atmosphere",
+      "Geosphere",
+      "Feedback"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Volcano",
+        "spanish": "Volcán"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Atmosphere",
+        "spanish": "Atmósfera"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "The solid parts of Earth, like rocks, mountains, and the ground under your feet.",
+      "use_sentence": "A volcano is a powerful part of the geosphere.",
+      "phonetic": "JEE-oh-sfeer",
+      "cognate": "Geosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The blanket of air and gases that surrounds our planet.",
+      "use_sentence": "The eruption sent ash and gases high into the atmosphere.",
+      "phonetic": "AT-moh-sfeer",
+      "cognate": "Atmósfera"
+    },
+    {
+      "term": "Negative Feedback",
+      "definition": "A process in a system that works to keep things in balance. If something gets too high, it brings it back down.",
+      "use_sentence": "When growing plants absorb CO2 from the air, it's a negative feedback that helps control the climate.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Greenhouse Gas",
+      "definition": "A gas in the atmosphere that traps heat from the sun, like the glass of a greenhouse.",
+      "use_sentence": "Carbon dioxide is a greenhouse gas that volcanoes release.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Tanaka studies how one part of the Earth system (geosphere) can affect other parts. Can you think of another example where the geosphere, atmosphere, hydrosphere (water), and biosphere (life) all interact?",
+      "frame": "One example of Earth's systems interacting is when..."
+    },
+    {
+      "prompt": "The story mentions both a warming effect (from CO2) and a cooling effect (from sulfur dioxide). Which effect do you think is more powerful in the short term (1-2 years) after a big eruption, and why?",
+      "frame": "In the short term, I think the ___ effect is more powerful because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

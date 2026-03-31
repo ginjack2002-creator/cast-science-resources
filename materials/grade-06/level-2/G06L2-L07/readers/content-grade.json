@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Nakamura's Blueprint for Better Design",
+    "text": "People often think a great invention springs from a single 'Aha!' moment. At the Stanford d.school, we know the truth is messier—and much more interesting. I’m Dr. Robert Nakamura, and I study how great ideas become real solutions through the engineering design process.<br><br>Imagine we’re designing a new school backpack. The <strong>Criteria</strong> (the requirements for success) are that it must protect a laptop, be comfortable, and look cool. But we also have <strong>Constraints</strong> (limitations on our design), like a budget of only $30 per backpack. This is a complex problem.<br><br>Our first step isn't to start sewing. It's research. We study materials and talk to students. This research improves our initial design quality. Then, we build a <strong>Prototype</strong> (a first model for testing). We give it to students, and guess what? It fails! The straps are uncomfortable, and a side pocket rips. This is not a disaster; it’s data.<br><br>This is where the magic happens: <strong>Iteration</strong> (the process of testing, improving, and re-testing). Each failure teaches us something that improves the next design. We might have to make a <strong>Trade-off</strong> (a compromise where you give up one thing for another), like using a slightly heavier but much stronger fabric. After several iterations, our backpack is finally ready. Failure didn't stop us; it guided us. The best solutions aren't born from a perfect first try. They are built, tested, broken, and rebuilt, getting stronger with every cycle.",
+    "think_abouts": [
+      "Why is it better for an engineer to discover a flaw in a prototype instead of in the final product sold in stores?",
+      "Think about a time you tried something new and it didn't work on the first try. How did you change your approach the second time?"
+    ],
+    "go_deeper": "How might an engineer use a computer simulation as a type of prototype before building anything physical?",
+    "margin_defs": [
+      {
+        "term": "Prototype",
+        "definition": "A first model used for testing."
+      },
+      {
+        "term": "Iteration",
+        "definition": "A cycle of testing and improving."
+      }
+    ],
+    "check_prompts": [
+      "What is the main reason Dr. Nakamura says that failure is a good thing in engineering?"
+    ],
+    "word_bank": [
+      "Criteria",
+      "Constraints",
+      "Prototype",
+      "Iteration",
+      "Trade-off"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      },
+      {
+        "english": "Solution",
+        "spanish": "Solución"
+      },
+      {
+        "english": "Material",
+        "spanish": "Material"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Criteria",
+      "definition": "The specific requirements that a successful engineering solution must meet to be considered successful.",
+      "use_sentence": "The criteria for our model bridge included holding 5 kilograms without breaking.",
+      "phonetic": "kry-TEER-ee-uh",
+      "cognate": "Criterio"
+    },
+    {
+      "term": "Constraints",
+      "definition": "The limits or restrictions on a project, such as budget, time, or available materials.",
+      "use_sentence": "A major constraint was that we could only use recycled cardboard and tape to build our tower.",
+      "phonetic": "kuhn-STRAYNTS",
+      "cognate": null
+    },
+    {
+      "term": "Prototype",
+      "definition": "An early model of a product that is built to test a concept or process.",
+      "use_sentence": "Our first prototype of the robot could move forward, but we needed to test its ability to turn.",
+      "phonetic": "PROH-toh-type",
+      "cognate": "Prototipo"
+    },
+    {
+      "term": "Iteration",
+      "definition": "The process of repeating a cycle of steps, such as testing a design, making changes, and testing it again.",
+      "use_sentence": "After three iterations, we finally fixed the leak in our water bottle design.",
+      "phonetic": "it-er-AY-shun",
+      "cognate": "Iteración"
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A design choice where you sacrifice one benefit to gain another, like making a phone thinner but with a smaller battery.",
+      "use_sentence": "The engineers made a trade-off, choosing a cheaper material to keep the price low, even though it was slightly heavier.",
+      "phonetic": "TRAYD-off",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nakamura says failure is 'data.' What does he mean by that? Describe a situation where a 'failure' could actually be a source of useful information.",
+      "frame": "When an engineer says 'failure is data,' they might mean that..."
+    },
+    {
+      "prompt": "Think about your phone or another piece of technology you use. What is one trade-off you think the designers had to make when creating it?",
+      "frame": "For my phone, I think the designers made a trade-off between..."
+    },
+    {
+      "prompt": "If you were on a team designing a new video game, what are two important criteria and two possible constraints you would need to consider?",
+      "frame": "If I were designing a new game, two criteria would be ___ and ___. Two constraints might be ___ and ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

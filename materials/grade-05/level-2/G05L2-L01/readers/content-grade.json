@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Dr. Rivera's Carbon Hunt: Tracking Your Breath",
+    "text": "Hello! I’m Dr. Carlos Rivera, and I’m a carbon detective. At my lab, I don't solve crimes, but I do solve mysteries about where carbon goes on our planet. It’s a job called a Carbon Flux Scientist, and it’s all about tracking the Earth’s carbon budget.<br><br>Have you ever wondered where your breath goes? When you exhale, you release a gas called <strong>Carbon Dioxide (CO2)</strong>. That CO2 doesn't just disappear. It joins the <strong>Carbon Cycle</strong>, the continuous movement of carbon atoms all around us. Your breath might travel on the wind until it reaches a forest.<br><br>There, a tree can pull your CO2 right out of the air! Plants use it for <strong>Photosynthesis</strong>, the amazing process where they use sunlight, water, and CO2 to make their own food. The more sunlight and CO2 available, the faster plants grow, locking up that carbon in their leaves and wood. That’s a huge part of my model: tracking how much CO2 leaves the atmosphere and becomes part of a plant.<br><br>But the journey doesn’t end there. When a plant or animal dies, tiny organisms like bacteria and fungi begin their work. This is called <strong>Decomposition</strong>, the process of breaking down dead material. As they work, they release much of the stored carbon back into the atmosphere as CO2. Some of it, however, gets stored in the soil for years. My models help predict how much carbon is released and how much is stored.<br><br>So, the carbon from a single breath you take today could become part of a giant redwood tree tomorrow, get stored deep in the soil, or be released back into the air, ready to start the cycle all over again. It’s all connected.",
+    "think_abouts": [
+      "If every person on Earth exhales carbon, how many plants do you think are needed to absorb it all?",
+      "What would happen to our planet if dead plants and animals never decomposed?"
+    ],
+    "go_deeper": "Dr. Rivera also studies how burning fossil fuels, like coal and oil, releases ancient carbon into the air. How might this affect the planet's carbon budget?",
+    "margin_defs": [
+      {
+        "term": "flux",
+        "definition": "a continuous flow or movement"
+      },
+      {
+        "term": "budget",
+        "definition": "a system of tracking what comes in and what goes out"
+      }
+    ],
+    "check_prompts": [
+      "What are two ways carbon gets into the atmosphere?"
+    ],
+    "word_bank": [
+      "Photosynthesis",
+      "Decomposition",
+      "Atmosphere",
+      "Cycle"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "carbon",
+        "spanish": "carbono"
+      },
+      {
+        "english": "cycle",
+        "spanish": "ciclo"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Carbon Dioxide (CO2)",
+      "definition": "A gas in the atmosphere that plants absorb and animals exhale.",
+      "use_sentence": "When you breathe out, you release carbon dioxide into the air.",
+      "phonetic": "KAR-buhn dai-OK-said",
+      "cognate": "Dióxido de Carbono"
+    },
+    {
+      "term": "Photosynthesis",
+      "definition": "The process plants use to convert CO2 and sunlight into food.",
+      "use_sentence": "A leaf uses photosynthesis to make sugar for the plant to grow.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "Fotosíntesis"
+    },
+    {
+      "term": "Decomposition",
+      "definition": "The breakdown of dead organisms by bacteria and fungi.",
+      "use_sentence": "Through decomposition, a fallen log slowly turns back into soil.",
+      "phonetic": "dee-kom-puh-ZISH-uhn",
+      "cognate": "Descomposición"
+    },
+    {
+      "term": "Carbon Cycle",
+      "definition": "The continuous movement of carbon through living and nonliving systems.",
+      "use_sentence": "The carbon cycle shows how carbon atoms travel from the air to plants and back again.",
+      "phonetic": "KAR-buhn SAI-kuhl",
+      "cognate": "Ciclo del Carbono"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Rivera models the 'carbon budget.' Why is it important for scientists to track where all the carbon on Earth is going?",
+      "frame": "I think it's important to track carbon because..."
+    },
+    {
+      "prompt": "Think about your schoolyard or a local park. Describe two parts of the carbon cycle you could see happening there.",
+      "frame": "In the park, I can see..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

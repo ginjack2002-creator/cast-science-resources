@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Washington and the Energy Leak",
+    "text": "Hello, I’m Dr. Anika Washington, a collision physics researcher at Sandia National Laboratories. My job is to investigate the complex physics of what happens when things crash into each other. It might sound destructive, but the science of collisions is crucial for designing everything from safer cars to protective gear for astronauts. We often explore these fundamental ideas with a simple model you’ve probably built yourself: a long line of dominoes.<br><br>Here’s a puzzle we study: If you set up a line of dominoes and give the first one a solid push, why does the last domino always fall over much slower? The answer is a story about energy’s incredible journey and how it inevitably gets lost along the way. Your initial push force gives the first domino a specific amount of kinetic energy—the energy of motion. When that domino strikes the next, it triggers a <strong>chain reaction</strong> through a process of <strong>kinetic energy transfer</strong>.<br><br>However, this transfer is never 100% efficient. Each time one domino hits another, a <strong>collision</strong> occurs, and it isn't silent. That 'click' you hear is kinetic energy transforming into sound energy. The table might vibrate slightly; that’s more energy escaping the system. Physicists call this phenomenon <strong>energy loss</strong>. The energy doesn’t vanish—it just changes into forms that can no longer contribute to the domino’s motion. Think of it like a leaky bucket: with each transfer, a little more water spills out.<br><br>The <strong>mass</strong> of the objects is another critical variable. Heavier objects possess more inertia and require more energy to topple. Consequently, in a chain of high-mass objects, a larger portion of energy is consumed at each step just to overcome that resistance. By the time the energy packet reaches the final domino, it has been diminished by every single collision down the line. The final object's speed is a direct result of this accumulated energy loss. My work involves precisely measuring these 'leaks' to engineer materials and structures that can either absorb damaging energy or transfer it with purpose.",
+    "think_abouts": [
+      "Where have you seen a chain reaction in real life, besides dominoes?",
+      "What do you think would happen to the final domino's speed if the dominoes were made of something soft, like rubber?"
+    ],
+    "go_deeper": "How might a collision physicist like Dr. Washington use the principles of energy loss to design a helmet that better protects an athlete's head during an impact?",
+    "margin_defs": [
+      {
+        "term": "Collision",
+        "definition": "When objects crash into each other."
+      },
+      {
+        "term": "Energy",
+        "definition": "The power to do work or cause change."
+      },
+      {
+        "term": "Mass",
+        "definition": "How much 'stuff' is in an object."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Washington, what is the main reason the last domino falls slower than the first?"
+    ],
+    "word_bank": [
+      "Collision",
+      "Kinetic Energy Transfer",
+      "Energy Loss",
+      "Mass",
+      "Chain Reaction"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Collision",
+        "spanish": "Colisión"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Collision",
+      "definition": "When two objects hit each other, transferring energy from one to the other.",
+      "use_sentence": "The collision between the two cars made a loud crashing sound.",
+      "phonetic": "kuh-LIH-zhun",
+      "cognate": "colisión"
+    },
+    {
+      "term": "Kinetic Energy Transfer",
+      "definition": "When a moving object hits a stationary object and passes some of its motion energy to it.",
+      "use_sentence": "The kinetic energy transfer from the bowling ball knocked over all ten pins.",
+      "phonetic": null,
+      "cognate": "transferencia de energía cinética"
+    },
+    {
+      "term": "Energy Loss",
+      "definition": "Energy that changes from motion into sound, heat, or vibration during a collision — it does not disappear but is no longer useful for movement.",
+      "use_sentence": "Because of energy loss, a bouncing ball never bounces as high as the height from which it was dropped.",
+      "phonetic": null,
+      "cognate": "pérdida de energía"
+    },
+    {
+      "term": "Mass",
+      "definition": "How much matter (stuff) is in an object — heavier objects have more mass and are harder to get moving.",
+      "use_sentence": "A bowling ball has much more mass than a tennis ball, so it hits with more force.",
+      "phonetic": "mass",
+      "cognate": "masa"
+    },
+    {
+      "term": "Chain Reaction",
+      "definition": "A series of events where each event triggers the next one — like dominoes falling or billiard balls hitting each other.",
+      "use_sentence": "Pushing the first domino started a chain reaction that toppled the entire line.",
+      "phonetic": "cheyn ree-AK-shun",
+      "cognate": "reacción en cadena"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you wanted to design the *fastest* possible domino chain reaction, what factors (like mass, spacing, or material) would you change and why?",
+      "frame": "To make the fastest chain reaction, I would change the ___ because ___."
+    },
+    {
+      "prompt": "Dr. Washington studies both car crashes and asteroid impacts. How are these two types of collisions similar, and how might they be different in terms of energy transfer?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

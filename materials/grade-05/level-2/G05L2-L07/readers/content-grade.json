@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Kowalski's Cosmic Detective Work",
+    "text": "Hi, I'm Dr. Lena Kowalski. Here at the Space Telescope Science Institute, my job is like being a cosmic detective. I can't travel to distant stars, but I can study their light to map the universe, one star at a time.<br><br>When you look at the night sky, some stars look bright and some look dim. We call this their <strong>apparent brightness</strong>. But this can be deceiving! A star that appears dim might actually be incredibly powerful, but just very, very far away. My main goal is to figure out a star’s <strong>actual brightness</strong>—the total amount of light it truly produces.<br><br>Think of it like comparing a tiny flashlight up close to a giant stadium light miles away. The flashlight might seem brighter because it's so close. To know which one is truly more powerful, you need to know the distance to both. It’s the same with stars. The farther a star is from Earth, the dimmer it appears, and the less <strong>observable detail</strong> we can gather. The light from that star has also traveled for an incredibly long time to reach our telescopes. We measure these huge cosmic distances in <strong>light-years</strong>.<br><br>That's why space telescopes are so important for my work. They orbit above Earth's atmosphere, which blurs and distorts starlight. By getting a clear view, I can more accurately measure a star’s apparent brightness. Then, by classifying the star based on its color and temperature, I can estimate its actual brightness. Once I have those two key pieces of the puzzle, I can calculate its true distance. Every star I map helps us understand the vast scale of our amazing universe.",
+    "think_abouts": [
+      "If two stars have the same actual brightness, what is the only thing that could make one appear dimmer than the other?",
+      "Why would a scientist like Dr. Kowalski prefer to use a space telescope instead of one on the ground?"
+    ],
+    "go_deeper": "How might scientists use a star's color to guess its actual brightness?",
+    "margin_defs": [
+      {
+        "term": "apparent brightness",
+        "definition": "How bright a star LOOKS from Earth."
+      },
+      {
+        "term": "actual brightness",
+        "definition": "How much light a star truly produces."
+      },
+      {
+        "term": "observable detail",
+        "definition": "How much information we can see about an object."
+      },
+      {
+        "term": "light-year",
+        "definition": "The distance light travels in one year."
+      }
+    ],
+    "check_prompts": [
+      "What two things determine how bright a star looks from Earth?"
+    ],
+    "word_bank": [
+      "Apparent Brightness",
+      "Actual Brightness",
+      "Light-Year",
+      "Distance"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      },
+      {
+        "english": "universe",
+        "spanish": "universo"
+      },
+      {
+        "english": "telescope",
+        "spanish": "telescopio"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star LOOKS from Earth, which depends on its real brightness and its distance.",
+      "use_sentence": "The Sun has the greatest apparent brightness of any star because it is so close to us.",
+      "phonetic": null,
+      "cognate": "aparente"
+    },
+    {
+      "term": "Actual Brightness",
+      "definition": "The total amount of light a star truly produces, also called luminosity.",
+      "use_sentence": "A giant blue star has a much greater actual brightness than a small red dwarf star.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Light-Year",
+      "definition": "The distance light travels in one year — about 6 trillion miles or 9.5 trillion kilometers.",
+      "use_sentence": "The nearest star system to us, Alpha Centauri, is a little over four light-years away.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Observable Detail",
+      "definition": "How much information and small features we can see about a distant object using telescopes.",
+      "use_sentence": "With a powerful telescope, we can see more observable detail on the moon's surface, like craters and mountains.",
+      "phonetic": null,
+      "cognate": "observable"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kowalski compared stars to streetlights. What is another analogy you could use to explain the difference between apparent brightness and actual brightness?",
+      "frame": "Another way to explain apparent and actual brightness is to think about..."
+    },
+    {
+      "prompt": "The light from some stars takes millions of years to reach us. What does this mean about the star we are seeing when we look at it through a telescope?",
+      "frame": "When we look at a star that is millions of light-years away, we are actually seeing..."
+    },
+    {
+      "prompt": "If you discovered a new star, what would be the first two things you would need to measure to find out how far away it is?",
+      "frame": "To find the distance to a new star, I would first need to measure its..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

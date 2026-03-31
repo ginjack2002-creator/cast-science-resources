@@ -1,0 +1,108 @@
+{
+  "story": {
+    "title": "Dr. Yamamoto's Shake-Proof Buildings",
+    "text": "Hello! I am Dr. Takeshi Yamamoto. I am an earthquake engineer.<br>My job is to help buildings stay strong during a quake.<br>I ask a big question every day. Why do some buildings fall down while others right next to them are okay?<br><br>First, we think about the earthquake's power. We call this its <strong>Earthquake Magnitude</strong>. A high magnitude means a very strong quake. This creates a powerful <strong>Shaking Force</strong> that pushes buildings. This force is what can knock a building down.<br><br>Next, we use smart <strong>Engineering Design</strong> to make buildings safer. One of the best tricks is <strong>Flexibility</strong>. A flexible building can bend and sway like a tree in the wind. Instead of being stiff and breaking, it moves with the ground. This helps it absorb the shaking.<br><br>When the <strong>Shaking Force</strong> hits, a stiff building gets lots of <strong>Structural Damage</strong>. You see cracks in the walls and broken parts. But a flexible building sways and sends the energy away. This means less damage. Less damage means people inside are much safer.<br><br>At my lab, we build small models of buildings. We put them on a special 'shake table' that copies an earthquake. We test our ideas to see what works best. Our goal is to design buildings that protect everyone inside, no matter how much the ground shakes.",
+    "think_abouts": [
+      "If you were an engineer, what material would you use to build a flexible house?",
+      "Why is it important for engineers like Dr. Yamamoto to test their ideas with models?"
+    ],
+    "go_deeper": "Some buildings are on soft, sandy ground and others are on hard rock. Which building do you think would be safer in an earthquake? Why?",
+    "margin_defs": [
+      {
+        "term": "engineer",
+        "definition": "A person who designs and builds things to solve problems."
+      },
+      {
+        "term": "absorb",
+        "definition": "To soak up or take in, like a sponge soaking up water."
+      },
+      {
+        "term": "models",
+        "definition": "Small copies of a real thing, used for testing."
+      }
+    ],
+    "check_prompts": [
+      "What does a high earthquake magnitude create?",
+      "How is a flexible building like a tree?",
+      "Why is less damage good for people inside?",
+      "How do engineers test their ideas for safer buildings?"
+    ],
+    "word_bank": [
+      "Earthquake Magnitude",
+      "Flexibility",
+      "Shaking Force",
+      "Structural Damage",
+      "Engineering Design"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "structure",
+        "spanish": "estructura"
+      },
+      {
+        "english": "flexible",
+        "spanish": "flexible"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniero"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Earthquake Magnitude",
+      "definition": "How we measure the strength of an earthquake.",
+      "use_sentence": "The news said the earthquake had a high magnitude.",
+      "phonetic": "MAG-ni-tood",
+      "cognate": "magnitud"
+    },
+    {
+      "term": "Flexibility",
+      "definition": "Being able to bend without breaking.",
+      "use_sentence": "The building's flexibility helped it survive the shaking.",
+      "phonetic": "flek-suh-BIL-uh-tee",
+      "cognate": "flexibilidad"
+    },
+    {
+      "term": "Shaking Force",
+      "definition": "The push and pull from the ground that hits a building.",
+      "use_sentence": "The shaking force was strong enough to break windows.",
+      "phonetic": null,
+      "cognate": "fuerza"
+    },
+    {
+      "term": "Structural Damage",
+      "definition": "When a building's parts crack or break.",
+      "use_sentence": "The earthquake caused structural damage to the old bridge.",
+      "phonetic": null,
+      "cognate": "daño estructural"
+    },
+    {
+      "term": "Engineering Design",
+      "definition": "A plan for building something to solve a problem.",
+      "use_sentence": "Good engineering design can help buildings stay safe.",
+      "phonetic": null,
+      "cognate": "diseño de ingeniería"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Yamamoto compared a flexible building to a tree in the wind. What are some other things in nature that are strong because they are flexible?",
+      "frame": "Something else in nature that is flexible is ___ because ___."
+    },
+    {
+      "prompt": "If you had to build a tower that could survive an earthquake, what materials would you use and why?",
+      "frame": "To build my earthquake-proof tower, I would use ___ because it is ___."
+    },
+    {
+      "prompt": "Why is it important to have engineers who study how to make buildings safer for everyone?",
+      "frame": "It is important to have engineers like Dr. Yamamoto because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

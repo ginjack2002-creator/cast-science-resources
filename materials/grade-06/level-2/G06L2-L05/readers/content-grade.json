@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Torres's Digital Lab: Where Atoms Rearrange",
+    "text": "Hi, I’m Dr. Michael Torres. I’m a computational chemist, which means I use powerful computers to build virtual laboratories. Instead of mixing chemicals in glass beakers, I mix them inside a simulation. My goal is to understand how atoms rearrange during chemical reactions.<br><br>Let’s say my company wants to make a new type of plastic. My job is to find the perfect recipe. I start by programming the <strong>reactants</strong>—the starting substances—into my model. Then, I can change the conditions. What happens if I increase the <strong>Temperature</strong>? My model shows the atoms zipping around faster, causing more collisions. This makes the <strong>Reaction Rate</strong>, or the speed of the reaction, go way up. What if I increase the <strong>Reactant Concentration</strong>, meaning I add more starting material? Again, more collisions happen, and the reaction speeds up.<br><br>A faster <strong>Reaction Rate</strong> is good for business because it means we get more <strong>Product Formation</strong> in less time. My computer screen shows a graph where the amount of product rises quickly. But what about the reactants? They seem to disappear as they get used up. This is the key: they don't vanish. The law of <strong>Conservation of Mass</strong> states that atoms are never created or destroyed. My model confirms this. As the mass of the reactants goes down, the mass of the products goes up by the exact same amount. The <strong>Total Mass</strong> in my virtual system never changes. A balanced <strong>Chemical Equation</strong> is the code that describes this perfect atomic trade. My digital experiments help us find the safest and most efficient way to make real-world products.",
+    "think_abouts": [
+      "Why would a company want to speed up a chemical reaction?",
+      "If you add more wood (reactant) to a fire, it burns faster. How does this relate to reactant concentration?"
+    ],
+    "go_deeper": "Dr. Torres sometimes adds a digital 'catalyst' to his models. A catalyst is a substance that speeds up a reaction but isn't used up. How might a catalyst help a company make products even more efficiently?",
+    "margin_defs": [
+      {
+        "term": "Reactants",
+        "definition": "The starting ingredients in a reaction."
+      },
+      {
+        "term": "Products",
+        "definition": "The new substances made in a reaction."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Torres's model, what happens to the total mass of the system during a chemical reaction?"
+    ],
+    "word_bank": [
+      "Reactant",
+      "Product",
+      "Conservation of Mass",
+      "Reaction Rate",
+      "Chemical Equation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Reaction",
+        "spanish": "Reacción"
+      },
+      {
+        "english": "Product",
+        "spanish": "Producto"
+      },
+      {
+        "english": "Concentration",
+        "spanish": "Concentración"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reactant",
+      "definition": "A starting substance that enters a chemical reaction and is transformed into products.",
+      "use_sentence": "In the reaction to make water, hydrogen and oxygen are the reactants.",
+      "phonetic": "ree-AK-tuhnt",
+      "cognate": "reactivo"
+    },
+    {
+      "term": "Product",
+      "definition": "A new substance formed by a chemical reaction when atoms from reactants rearrange.",
+      "use_sentence": "When you bake a cake, the finished cake is the product of a chemical reaction.",
+      "phonetic": "PROD-uhkt",
+      "cognate": "producto"
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The scientific law stating that the total mass of reactants must equal the total mass of products because atoms are not created or destroyed.",
+      "use_sentence": "Because of the conservation of mass, the weight of the ashes and smoke from a fire equals the weight of the original wood and oxygen.",
+      "phonetic": "kon-sur-VAY-shun of mass",
+      "cognate": "conservación de la masa"
+    },
+    {
+      "term": "Reaction Rate",
+      "definition": "The speed at which reactants are converted into products in a chemical reaction.",
+      "use_sentence": "Heating the mixture increased the reaction rate, and the color changed much faster.",
+      "phonetic": "ree-AK-shun rayt",
+      "cognate": null
+    },
+    {
+      "term": "Chemical Equation",
+      "definition": "A symbolic representation of a chemical reaction that shows the reactants and products.",
+      "use_sentence": "The chemical equation 2H₂ + O₂ → 2H₂O shows how hydrogen and oxygen combine to form water.",
+      "phonetic": "KEM-i-kuhl ee-KWAY-zhun",
+      "cognate": "ecuación química"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Torres uses computer models to predict what will happen in a reaction. What are some advantages of modeling a reaction on a computer before doing it in a real lab?",
+      "frame": "One advantage of using a computer model is..."
+    },
+    {
+      "prompt": "The story explains that increasing temperature makes reactions faster. Describe a time you've seen this happen in everyday life (like cooking).",
+      "frame": "I've seen temperature affect a reaction when..."
+    },
+    {
+      "prompt": "If atoms are only rearranged, why does it look like a log 'disappears' when it burns in a fire?",
+      "frame": "The log seems to disappear because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

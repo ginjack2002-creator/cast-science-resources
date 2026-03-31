@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Tanaka's Volcano Climate Puzzle",
+    "text": "My name is Dr. Yuki Tanaka. I am a volcanologist. I study how volcanoes change our world.<br><br>I use computers to build models. My models show how Earth's systems connect. A volcano erupts from the <strong>geosphere</strong>. It sends gas and ash into the <strong>atmosphere</strong>. This can change the climate everywhere.<br><br>A big eruption sends up sulfur dioxide gas. This gas makes a hazy cloud. The cloud blocks sunlight. This can cool the whole planet for a few years. Volcanoes also release <strong>greenhouse gas</strong> like CO2. More CO2 in the air traps heat. This usually warms the planet over a long time.<br><br>But Earth's systems respond. Plants grow and absorb CO2. The ocean also absorbs CO2. This is a <strong>negative feedback</strong>. It helps keep Earth's climate in balance. My job is to understand these connections. It helps us prepare for the future.",
+    "think_abouts": [
+      "How can a volcano make the planet cooler?",
+      "What is one example of negative feedback in the story?"
+    ],
+    "go_deeper": "Besides cooling, what other effects could a giant ash cloud have on plants and animals far away?",
+    "margin_defs": [
+      {
+        "term": "volcanologist",
+        "definition": "a scientist who studies volcanoes"
+      },
+      {
+        "term": "models",
+        "definition": "simple versions of real things to help us understand them"
+      },
+      {
+        "term": "balance",
+        "definition": "a state where things are stable or equal"
+      }
+    ],
+    "check_prompts": [
+      "What gas from a volcano can block sunlight and cool Earth?"
+    ],
+    "word_bank": [
+      "volcano",
+      "climate",
+      "model",
+      "atmosphere",
+      "geosphere"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "volcano",
+        "spanish": "volcán"
+      },
+      {
+        "english": "climate",
+        "spanish": "clima"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Geosphere",
+      "definition": "The solid parts of Earth, like rocks, mountains, and soil.",
+      "use_sentence": "A volcano is part of the geosphere.",
+      "phonetic": "JEE-oh-sfeer",
+      "cognate": "geosfera"
+    },
+    {
+      "term": "Atmosphere",
+      "definition": "The layer of air and gases that surrounds our planet.",
+      "use_sentence": "Volcanic ash can travel far in the atmosphere.",
+      "phonetic": "AT-moh-sfeer",
+      "cognate": "atmósfera"
+    },
+    {
+      "term": "Negative Feedback",
+      "definition": "A process that helps a system return to balance.",
+      "use_sentence": "When plants absorb CO2, it is a negative feedback on warming.",
+      "phonetic": "NEH-guh-tiv FEED-bak",
+      "cognate": null
+    },
+    {
+      "term": "Greenhouse Gas",
+      "definition": "A gas in the atmosphere that traps heat, like CO2.",
+      "use_sentence": "Carbon dioxide is a greenhouse gas that volcanoes release.",
+      "phonetic": "GREEN-hows gas",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Tanaka says her job is to understand connections. Why is it important for scientists to understand how Earth's systems are connected?",
+      "frame": "It is important to understand how Earth's systems connect because ___."
+    },
+    {
+      "prompt": "The story mentions two opposite effects of a volcano: cooling from sulfur gas and warming from CO2. How can one event have two different effects on climate?",
+      "frame": "One event can have two different effects by ___."
+    },
+    {
+      "prompt": "If you were a climate modeler like Dr. Tanaka, what question about volcanoes would you want to answer?",
+      "frame": "If I were a climate modeler, I would want to know ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

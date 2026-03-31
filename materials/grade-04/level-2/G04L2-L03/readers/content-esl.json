@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Gutierrez's Guide to Arctic Survival",
+    "text": "Hello, I am Dr. Rosa Gutierrez. I study how Arctic animals survive the freezing cold. It is a life-or-death challenge every winter. The outside <strong>temperature</strong> drops very low. Food becomes very hard to find. Animals must balance their energy perfectly to live.<br><br>I track animals like the arctic fox. It has an amazing <strong>adaptation</strong>. Its thick, white fur is wonderful <strong>insulation</strong>. This fur traps body heat, like a warm coat. The fox does not need to burn much energy to stay warm. Its <strong>metabolic rate</strong> can stay lower. This saves precious energy when food is scarce.<br><br>Polar bears use a thick layer of fat for their insulation. Penguins use a different strategy. They huddle together in huge groups to share warmth. My work helps us understand how these animals control their body temperature. This is called <strong>thermoregulation</strong>. We learn how they balance the energy they get from food with the energy they burn to stay warm. This knowledge helps us protect these incredible Arctic survivors.",
+    "think_abouts": [
+      "How does thick fur help an animal save energy?",
+      "Why is finding food so important for animals in the winter?"
+    ],
+    "go_deeper": "Penguins huddle to share heat. What are other ways animals might work together to survive the cold?",
+    "margin_defs": [
+      {
+        "term": "Insulation",
+        "definition": "A layer that keeps heat in."
+      },
+      {
+        "term": "Metabolic Rate",
+        "definition": "How fast the body burns energy."
+      }
+    ],
+    "check_prompts": [
+      "What is one adaptation that helps an arctic fox stay warm?"
+    ],
+    "word_bank": [
+      "temperature",
+      "insulation",
+      "metabolic rate",
+      "adaptation",
+      "thermoregulation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Temperature",
+        "spanish": "Temperatura"
+      },
+      {
+        "english": "Adaptation",
+        "spanish": "Adaptación"
+      },
+      {
+        "english": "Animal",
+        "spanish": "Animal"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Insulation",
+      "definition": "A layer that stops heat from escaping, like thick fur or fat.",
+      "use_sentence": "A polar bear's blubber provides excellent insulation against the cold water.",
+      "phonetic": "in-suh-LAY-shun",
+      "cognate": "Aislamiento"
+    },
+    {
+      "term": "Metabolic Rate",
+      "definition": "How fast an animal's body uses energy to stay alive and warm.",
+      "use_sentence": "When it gets colder, the animal's metabolic rate speeds up to make more heat.",
+      "phonetic": "meh-tuh-BALL-ick RAYT",
+      "cognate": "Tasa Metabólica"
+    },
+    {
+      "term": "Adaptation",
+      "definition": "A special body part or behavior that helps a living thing survive in its home.",
+      "use_sentence": "The arctic fox's white fur is an adaptation that helps it hide in the snow.",
+      "phonetic": "ad-ap-TAY-shun",
+      "cognate": "Adaptación"
+    },
+    {
+      "term": "Hibernation",
+      "definition": "A deep, sleep-like state that helps some animals save energy during winter.",
+      "use_sentence": "Bears go into hibernation so they don't need to eat for months.",
+      "phonetic": "hy-ber-NAY-shun",
+      "cognate": "Hibernación"
+    },
+    {
+      "term": "Thermoregulation",
+      "definition": "The way an animal controls its own body temperature to keep it just right.",
+      "use_sentence": "Panting is a form of thermoregulation that helps dogs cool down.",
+      "phonetic": "ther-mo-reg-yoo-LAY-shun",
+      "cognate": "Termorregulación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If an animal has very thick fur (good insulation), does it need to burn more energy or less energy to stay warm?",
+      "frame": "With good insulation, an animal needs to burn ___ energy because ___."
+    },
+    {
+      "prompt": "Imagine two arctic foxes. One finds a lot of food, but the other finds very little. Which fox has a better chance of surviving the winter? Why?",
+      "frame": "The fox that finds more food has a better chance to survive because ___."
+    },
+    {
+      "prompt": "What do you think is the biggest challenge for an animal in the Arctic: the cold temperature or the lack of food?",
+      "frame": "I think the biggest challenge is ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

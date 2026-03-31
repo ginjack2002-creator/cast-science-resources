@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Park's Invisible Factory",
+    "text": "Hi, I’m Dr. Christina Park. I’m a plant scientist. I study the amazing ways plants make their own food. My job is to figure out how to help them grow bigger and faster.<br><br>Think about a giant redwood tree. It can weigh more than a dozen cars! But every huge tree starts as a tiny seed. Where does all that extra weight, or mass, come from? It doesn't just come from the soil.<br><br>The answer is incredible. Most of a tree’s mass comes right out of the air!<br><br>Plants have a tiny, invisible factory inside every leaf. This factory runs a process called <strong>photosynthesis</strong>. It follows a few simple steps:<br>1. The plant breathes in a gas from the air called carbon dioxide (CO2).<br>2. It pulls up water from the soil through its roots.<br>3. Inside tiny green engines called <strong>chloroplasts</strong>, the plant uses sunlight for power.<br>4. The factory combines the CO2 and water to make a sugar called <strong>glucose</strong>.<br><br>This <strong>glucose</strong> is the plant’s food and its building blocks. The plant uses the carbon from the CO2 to build its trunk, branches, and leaves. So that giant tree is mostly built from thin air! My research helps us make this factory more efficient to grow more food for our world.",
+    "think_abouts": [
+      "What are the three main 'ingredients' a plant needs for its factory?",
+      "If a tree's mass comes from the air, what does that tell you about the air itself?"
+    ],
+    "go_deeper": "Dr. Park studies tiny pores on leaves called stomata. Why would a plant need to close these pores, even if it stops CO2 from getting in?",
+    "margin_defs": [
+      {
+        "term": "Mass",
+        "definition": "How much 'stuff' or matter is in an object."
+      },
+      {
+        "term": "Process",
+        "definition": "A series of steps taken to do something."
+      },
+      {
+        "term": "Efficient",
+        "definition": "Working well without wasting time or energy."
+      }
+    ],
+    "check_prompts": [
+      "Where does most of a tree's mass come from?"
+    ],
+    "word_bank": [
+      "Photosynthesis",
+      "Glucose",
+      "Chloroplast",
+      "Carbon Dioxide"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "process",
+        "spanish": "proceso"
+      },
+      {
+        "english": "carbon",
+        "spanish": "carbono"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The process plants use to turn sunlight, water, and air into their own food.",
+      "use_sentence": "Plants use photosynthesis to make the energy they need to grow.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "Glucose",
+      "definition": "A type of sugar that plants make for food and for building their bodies.",
+      "use_sentence": "The glucose made in the leaves travels to all parts of the plant.",
+      "phonetic": "GLOO-kose",
+      "cognate": "glucosa"
+    },
+    {
+      "term": "Chloroplast",
+      "definition": "The tiny green factory inside a plant cell where photosynthesis happens.",
+      "use_sentence": "A leaf looks green because its cells are full of chloroplasts.",
+      "phonetic": "KLOR-o-plast",
+      "cognate": "cloroplasto"
+    },
+    {
+      "term": "Carbon Fixation",
+      "definition": "The important step where a plant grabs carbon from the air to build sugar.",
+      "use_sentence": "Through carbon fixation, a gas from the air becomes part of the solid plant.",
+      "phonetic": "KAR-bon fik-SAY-shun",
+      "cognate": "fijación de carbono"
+    },
+    {
+      "term": "Limiting Factor",
+      "definition": "The one ingredient that is in short supply, which stops a process from going faster.",
+      "use_sentence": "In the desert, lack of water is a limiting factor for plant growth.",
+      "phonetic": "LIM-it-ing FAK-ter",
+      "cognate": "factor limitante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you wanted to design the perfect greenhouse to grow strawberries, what three things would you need to control? Why?",
+      "frame": "To grow strawberries super fast, I would control the ___, ___, and ___ because ___."
+    },
+    {
+      "prompt": "Dr. Park's job is to make crops more efficient. How could her work help solve a real-world problem like world hunger?",
+      "frame": "If plants can make more food with less water or sunlight, it could help people by ___."
+    },
+    {
+      "prompt": "The story says a tree's mass comes from the air. Does this idea surprise you? Why or why not?",
+      "frame": "The idea that a tree is built from air is surprising to me because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

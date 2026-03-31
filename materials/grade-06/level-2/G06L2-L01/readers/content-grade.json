@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Johnson's Energy Budget: Why Top Predators are Rare",
+    "text": "Hi, I’m Dr. Marcus Johnson, and I’m an ecosystem energy modeler. Think of me as an accountant for nature’s power grid. Instead of money, I track energy as it flows from the Sun to plants, and then to the animals that eat them. My computer models help answer big questions, like why there are so many plants but so few top predators like eagles or sharks.<br><br>It all starts with the Sun. Producers capture its energy, but when an herbivore eats a plant, a huge amount of that energy is lost. Organisms use about 90% of their energy just to live—moving, breathing, and staying warm. Only about 10% is stored in their bodies as <strong>biomass</strong>. This creates an <strong>Energy Pyramid</strong>, a diagram showing how available energy shrinks at each step up the food chain.<br><br>Each step is called a <strong>trophic level</strong>. Because so much energy is lost at each level, there isn't enough left to support large populations of predators at the top. A change at one level can also cause a <strong>trophic cascade</strong>, a ripple effect throughout the entire web. When organisms die, <strong>decomposers</strong> like fungi and bacteria are the clean-up crew. They break down dead material, returning nutrients to the soil so producers can grow. They are the ultimate recyclers!<br><br>My work helps us see how everything is connected. By understanding the flow of energy, we can better protect our planet’s amazing and complex ecosystems.",
+    "think_abouts": [
+      "If only 10% of energy moves up to the next trophic level, where does the other 90% go?",
+      "What might happen to the producer biomass if all the decomposers in an ecosystem suddenly disappeared?"
+    ],
+    "go_deeper": "Dr. Johnson mentioned that warm-blooded animals waste more energy as heat than cold-blooded ones. How might the energy pyramid of a savanna (lions, zebras) look different from a cold-blooded ecosystem (snakes, frogs)?",
+    "margin_defs": [
+      {
+        "term": "biomass",
+        "definition": "the total mass of living things in an area"
+      },
+      {
+        "term": "Energy Pyramid",
+        "definition": "a model showing energy loss at each level"
+      },
+      {
+        "term": "trophic level",
+        "definition": "an organism's position in a food chain"
+      },
+      {
+        "term": "trophic cascade",
+        "definition": "a chain reaction that affects the whole food web"
+      },
+      {
+        "term": "decomposers",
+        "definition": "organisms that break down dead material"
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Johnson's model, why can an ecosystem support thousands of grass plants but only a few hawks?"
+    ],
+    "word_bank": [
+      "Trophic Level",
+      "Biomass",
+      "Energy Pyramid",
+      "Decomposer",
+      "Trophic Cascade"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "pyramid",
+        "spanish": "pirámide"
+      },
+      {
+        "english": "organism",
+        "spanish": "organismo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Level",
+      "definition": "A position in a food chain or food web that describes how many energy transfers separate an organism from the Sun.",
+      "use_sentence": "A primary consumer, like a rabbit that eats grass, is on the second trophic level.",
+      "phonetic": "TRO-fik LEV-uhl",
+      "cognate": "nivel trófico"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total mass of living organisms in a given area or trophic level, representing stored chemical energy.",
+      "use_sentence": "The biomass of all the trees in a forest is much greater than the biomass of all the owls.",
+      "phonetic": "BAI-o-mass",
+      "cognate": "biomasa"
+    },
+    {
+      "term": "Energy Pyramid",
+      "definition": "A diagram showing the decrease in available energy at each trophic level, typically losing 90% at each step.",
+      "use_sentence": "The energy pyramid clearly shows why there are fewer predators than prey in an ecosystem.",
+      "phonetic": "EN-er-jee PEER-uh-mid",
+      "cognate": "pirámide de energía"
+    },
+    {
+      "term": "Decomposer",
+      "definition": "An organism that breaks down dead organic matter and returns nutrients to the soil for producers to use.",
+      "use_sentence": "A mushroom is a decomposer that helps recycle nutrients from a fallen log.",
+      "phonetic": "dee-kuhm-POH-zer",
+      "cognate": "descomponedor"
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction through a food web when a change at one level ripples up or down to affect other levels.",
+      "use_sentence": "Removing sea otters caused a trophic cascade, allowing sea urchins to destroy the kelp forests.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Johnson's model shows that removing a top predator can cause a trophic cascade. Describe what might happen to the populations of herbivores and producers if wolves were removed from a forest.",
+      "frame": "If wolves were removed, I predict that the herbivore population would..."
+    },
+    {
+      "prompt": "Humans are often at the top of their food webs. How does the 10% rule of energy transfer relate to the amount of land and resources it takes to produce meat versus vegetables?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

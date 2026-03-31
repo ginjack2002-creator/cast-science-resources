@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Carter and the Silent Boom",
+    "text": "Hi, I’m Dr. James Carter, an Acoustic Engineer. My job is to figure out how sound works, which helps me design things like noise-canceling headphones and amazing concert halls. People often ask me about space movies—you know, when a spaceship explodes with a giant BOOM! But is that what would really happen?<br><br>To find out, we have to know what sound is. Sound is a <strong>vibration</strong>, a super-fast, back-and-forth movement. When something vibrates, it pushes on the molecules around it. Those molecules push on the next ones, and so on, creating a wave. This wave needs something to travel through, which scientists call a <strong>medium</strong>. A medium can be a gas like air, a liquid like water, or a solid like a steel rail.<br><br>The type of medium changes everything. Think about how tightly packed the molecules are. In air, they're far apart. In water, they're much closer. This affects the <strong>wave speed</strong>, or how fast the sound moves. Sound travels about four times faster in water than in air! This also affects <strong>absorption</strong>, which is how much sound energy gets soaked up. Denser materials absorb less sound, which is why whale songs travel for hundreds of miles underwater.<br><br>So, what about space? Space is a <strong>vacuum</strong>—an empty area with almost no molecules at all. If there are no molecules to push on, there's nothing for the sound wave to travel through. The vibration has nowhere to go.<br><br>That means those big movie explosions would be completely silent. It’s my job to understand these rules of sound, whether I’m trying to make a room quieter or just explaining why, in space, no one can hear you BOOM!",
+    "think_abouts": [
+      "Why do you think your voice sounds different underwater than it does in the air?",
+      "If you put a ringing alarm clock in a sealed jar and pumped all the air out, what do you think would happen to the sound?"
+    ],
+    "go_deeper": "Dr. Carter also studies how low-pitched sounds (like a bass drum) travel farther than high-pitched sounds (like a whistle). Why might this be useful for animals that communicate over long distances, like elephants or whales?",
+    "margin_defs": [
+      {
+        "term": "Medium",
+        "definition": "The stuff sound travels through."
+      },
+      {
+        "term": "Vacuum",
+        "definition": "An empty space with no stuff in it."
+      }
+    ],
+    "check_prompts": [
+      "What does sound need in order to travel from one place to another?"
+    ],
+    "word_bank": [
+      "vibration",
+      "medium",
+      "wave speed",
+      "absorption",
+      "vacuum"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Vibration",
+        "spanish": "Vibración"
+      },
+      {
+        "english": "Absorption",
+        "spanish": "Absorción"
+      },
+      {
+        "english": "Engineer",
+        "spanish": "Ingeniero"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Medium",
+      "definition": "The material that sound travels through — it can be a gas (air), liquid (water), or solid (metal, wood).",
+      "use_sentence": "Air is the most common medium for the sounds we hear every day.",
+      "phonetic": null,
+      "cognate": "Medio"
+    },
+    {
+      "term": "Vibration",
+      "definition": "A rapid back-and-forth movement that creates sound waves when it pushes on nearby molecules.",
+      "use_sentence": "A guitar string makes a sound because of its fast vibration.",
+      "phonetic": null,
+      "cognate": "Vibración"
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a sound wave moves through a material — sound travels at different speeds in different media.",
+      "use_sentence": "The wave speed of sound is much faster in a solid steel track than it is in the air.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Absorption",
+      "definition": "When a material soaks up sound energy instead of passing it along, making the sound quieter.",
+      "use_sentence": "Thick curtains are good for sound absorption, making a room quieter.",
+      "phonetic": null,
+      "cognate": "Absorción"
+    },
+    {
+      "term": "Vacuum",
+      "definition": "A space with no matter in it at all — no air, no water, nothing for sound to travel through.",
+      "use_sentence": "Because outer space is a vacuum, you can't hear any sound there.",
+      "phonetic": null,
+      "cognate": "Vacío"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Carter uses his knowledge to make noise-canceling headphones. How do you think understanding sound absorption helps him design them?",
+      "frame": "I think understanding absorption helps him because..."
+    },
+    {
+      "prompt": "If you were an astronaut on a spacewalk, how would you have to communicate with another astronaut floating right next to you? Why?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

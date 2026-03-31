@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Nakamura: How Failure Builds Success",
+    "text": "Hello, I am Dr. Robert Nakamura. At the Stanford d.school, I study how to solve problems. We learn that great ideas rarely work on the first try. Failure is not the end. It is a very important step to a better solution.<br><br>First, we define a problem. We list all the <strong>criteria</strong> for success. We also identify our <strong>constraints</strong>, like a small budget or specific materials. A complex problem has many rules. This makes the first design very hard to get right.<br><br>Next, we build a quick <strong>prototype</strong>. We test it to see what works and what breaks. Testing shows us problems we did not see on paper. We also get feedback from real users. They tell us what they actually need.<br><br>This is where the real work begins. We call it <strong>iteration</strong>. We use the test results to improve our design. We make a change and test it again. Each cycle makes our solution stronger. More <strong>iteration</strong> always leads to better performance. The best designs come from learning through many small failures.",
+    "think_abouts": [
+      "Why is it important to test a prototype with real users, not just engineers?",
+      "How can a constraint like a small budget actually make a design more creative?"
+    ],
+    "go_deeper": "Think about a product you use every day (like a backpack or phone). What problems might the first prototype have had? How many iterations do you think it took to get it right?",
+    "margin_defs": [
+      {
+        "term": "Iteration",
+        "definition": "The process of testing and improving a design again and again."
+      },
+      {
+        "term": "Prototype",
+        "definition": "A first model of an idea used for testing."
+      }
+    ],
+    "check_prompts": [
+      "What is the name of the process where you test and improve a design in cycles?"
+    ],
+    "word_bank": [
+      "Criteria",
+      "Constraints",
+      "Prototype",
+      "Iteration",
+      "Trade-off"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      },
+      {
+        "english": "Prototype",
+        "spanish": "Prototipo"
+      },
+      {
+        "english": "Iteration",
+        "spanish": "Iteración"
+      },
+      {
+        "english": "Solution",
+        "spanish": "Solución"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Criteria",
+      "definition": "The goals or requirements a design must meet to be successful.",
+      "use_sentence": "The criteria for our new water bottle were that it had to hold 1 liter and not leak.",
+      "phonetic": "kry-TEER-ee-uh",
+      "cognate": "Criterio"
+    },
+    {
+      "term": "Constraints",
+      "definition": "The limits on a project, such as money, time, or available materials.",
+      "use_sentence": "We had to work within the constraints of a $20 budget to build our model bridge.",
+      "phonetic": "kun-STRAYNTS",
+      "cognate": null
+    },
+    {
+      "term": "Prototype",
+      "definition": "A first model of a product that is used for testing.",
+      "use_sentence": "The team built a simple cardboard prototype of the new phone to see how it felt in their hands.",
+      "phonetic": "PROH-toh-type",
+      "cognate": "Prototipo"
+    },
+    {
+      "term": "Iteration",
+      "definition": "A cycle of testing a design, finding problems, and making improvements.",
+      "use_sentence": "After the third iteration, the team finally fixed the problem with the leaky valve.",
+      "phonetic": "it-er-AY-shun",
+      "cognate": "Iteración"
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A choice where you give up one feature to get a better one.",
+      "use_sentence": "The engineer made a trade-off, using a lighter material that was strong but more expensive.",
+      "phonetic": "TRAYD-off",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nakamura says, 'Failure is not the end. It is a very important step.' What do you think he means?",
+      "frame": "I think he means that when something fails, you learn..."
+    },
+    {
+      "prompt": "Describe a time you tried something, it didn't work, and you tried again in a different way. Was your second try better?",
+      "frame": "One time, I tried to ___. It didn't work because ___. So, I tried ___ and it was better because..."
+    },
+    {
+      "prompt": "If you could invent something to solve a problem at your school, what would you make? What would be your first prototype?",
+      "frame": "To solve the problem of ___, I would invent ___. My first prototype would be made of ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Nakamura and the Power of Productive Failure",
+    "text": "At Stanford's d.school, we don't just teach students how to build things; we teach them a new way to think about problems. Many people believe engineering is a straight line: have a brilliant idea, design it, build it, and you're done. The reality is far more interesting and, frankly, a lot messier. The best solutions are almost never created on the first try because of <strong>Problem Complexity</strong>. The more difficult a challenge is, the more hidden variables there are.<br><br>Our process always begins with deep empathy and research. Before we even sketch a design, we must understand the user's needs. We define the <strong>criteria</strong> for success—what must this solution absolutely do?—and identify all the <strong>constraints</strong>, such as budget, time, and available materials. A high degree of <strong>Research Depth</strong> leads to better initial <strong>Design Quality</strong>, but even the best plan can't predict every outcome. That's why we build a <strong>prototype</strong>, a first attempt to make the idea real.<br><br>Then comes the most important part: testing. This is where we learn. We expect our first prototype to have flaws. When we test, we're not looking for praise; we're hunting for problems. Does it meet the criteria? Does a specific material choice create an unexpected weakness? Is it too heavy? This is where we confront <strong>trade-offs</strong>, like choosing between strength and cost. The feedback from testing directly informs the next design. This cycle of building, testing, and improving is called <strong>iteration</strong>. Each loop in the <strong>Iteration Count</strong> makes the solution stronger, smarter, and more effective. The feedback from <strong>Prototype Performance</strong> creates a positive loop, continuously improving the design. Failure isn't the end of the process; it's the engine that drives it.",
+    "think_abouts": [
+      "According to Dr. Nakamura, why is it a mistake to think of engineering as a straight line from idea to finished product?",
+      "How does testing a prototype help an engineer make better trade-offs in their next design?"
+    ],
+    "go_deeper": "If an engineering team has a very small budget and a short deadline (two major constraints), how might this affect their ability to perform multiple iterations, and what strategies could they use to learn as much as possible from each test?",
+    "margin_defs": [
+      {
+        "term": "Prototype",
+        "definition": "A first model of a design used for testing."
+      },
+      {
+        "term": "Iteration",
+        "definition": "The repeating cycle of testing a design and improving it."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Nakamura say is the 'engine' that drives the design process forward?"
+    ],
+    "word_bank": [
+      "Criteria",
+      "Constraints",
+      "Prototype",
+      "Iteration",
+      "Trade-off"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Criteria",
+        "spanish": "Criterio"
+      },
+      {
+        "english": "Prototype",
+        "spanish": "Prototipo"
+      },
+      {
+        "english": "Iteration",
+        "spanish": "Iteración"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Criteria",
+      "definition": "The specific requirements that a successful engineering solution must meet, defining what 'success' looks like.",
+      "use_sentence": "The criteria for the new phone case included being waterproof and surviving a ten-foot drop.",
+      "phonetic": "kry-TEER-ee-uh",
+      "cognate": "Criterio"
+    },
+    {
+      "term": "Constraints",
+      "definition": "The limitations on an engineering solution, such as budget, materials, time, safety, and environmental impact.",
+      "use_sentence": "Working under a tight budget constraint, the engineers had to find cheaper but still durable materials.",
+      "phonetic": "kuhn-STRAYNTS",
+      "cognate": null
+    },
+    {
+      "term": "Prototype",
+      "definition": "A preliminary model or version of a design used for testing and evaluation before final production.",
+      "use_sentence": "The team built a cardboard prototype of the chair to test its size and comfort before building the final version.",
+      "phonetic": "PROH-toh-type",
+      "cognate": "Prototipo"
+    },
+    {
+      "term": "Iteration",
+      "definition": "The process of testing a design, identifying problems, making improvements, and testing again in repeated cycles.",
+      "use_sentence": "After three iterations, the team finally perfected the robot's ability to navigate the maze.",
+      "phonetic": "it-er-AY-shun",
+      "cognate": "Iteración"
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A compromise where improving one aspect of a design requires sacrificing another, requiring engineering judgment.",
+      "use_sentence": "The engineers made a trade-off, using a lighter material to make the car faster, even though it was more expensive.",
+      "phonetic": "TRAYD-off",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Nakamura says failure is the 'engine' of the design process. What do you think he means by this, and do you agree?",
+      "frame": "When Dr. Nakamura calls failure an 'engine,' I think he means that..."
+    },
+    {
+      "prompt": "Think of a technology you use every day (like a backpack, a pencil, or a phone). What criteria do you think the designers had? What constraints might they have faced?",
+      "frame": "For a product like a ___, the design criteria might have been ___ and the constraints could have been ___."
+    },
+    {
+      "prompt": "Why is it important to test a prototype with the actual users of a product, instead of just with other engineers?",
+      "frame": "Testing with real users is crucial because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

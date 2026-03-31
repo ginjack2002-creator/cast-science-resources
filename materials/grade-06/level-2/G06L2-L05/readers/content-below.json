@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Torres and the Atomic Puzzle",
+    "text": "Hi, I’m Dr. Michael Torres. I am a computational chemist. I use powerful computers to study how atoms move during chemical reactions. My job is to help my company make useful new materials safely and quickly.<br><br>Think of it like a puzzle. I start with the puzzle pieces, which are the <strong>Reactants</strong>. I tell my computer how many pieces we have and how much energy, or temperature, is in the system. These things are my starting clues.<br><br>Next, my computer model predicts what will happen. It shows me how atoms from the <strong>Reactants</strong> break their bonds and rearrange. They form completely new materials called <strong>Products</strong>. The model also calculates the <strong>Reaction Rate</strong>, which is the speed of the change. A faster rate means we can make products more quickly.<br><br>So, why do things seem to disappear, like a fizzing tablet in water? The atoms aren't gone! They just rearranged to form a gas you can't easily see. But the total mass never changes. This is the law of <strong>Conservation of Mass</strong>. We write a <strong>Chemical Equation</strong> to track every single atom. The number of atoms at the start always equals the number of atoms at the end. My job is to solve this atomic puzzle every day.",
+    "think_abouts": [
+      "What two things does Dr. Torres tell his computer to start the model?",
+      "According to the text, what happens to atoms that seem to 'disappear'?"
+    ],
+    "go_deeper": "Dr. Torres sometimes adds a 'catalyst' to make reactions thousands of times faster. How might this help his company make products more efficiently?",
+    "margin_defs": [
+      {
+        "term": "computational chemist",
+        "definition": "A scientist who uses computers to study chemicals."
+      },
+      {
+        "term": "model",
+        "definition": "A computer program that copies a real-world process."
+      },
+      {
+        "term": "bonds",
+        "definition": "The forces that hold atoms together in a molecule."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what is the difference between a reactant and a product?"
+    ],
+    "word_bank": [
+      "Reactant",
+      "Product",
+      "Conservation of Mass",
+      "Reaction Rate",
+      "Chemical Equation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Reaction",
+        "spanish": "Reacción"
+      },
+      {
+        "english": "Product",
+        "spanish": "Producto"
+      },
+      {
+        "english": "Atom",
+        "spanish": "Átomo"
+      },
+      {
+        "english": "Equation",
+        "spanish": "Ecuación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reactant",
+      "definition": "A starting material in a chemical reaction. It gets changed.",
+      "use_sentence": "In the reaction to make water, hydrogen and oxygen are the reactants.",
+      "phonetic": "ree-AK-tint",
+      "cognate": "Reactivo"
+    },
+    {
+      "term": "Product",
+      "definition": "A new material that is formed in a chemical reaction.",
+      "use_sentence": "When you bake a cake, the cake is the product.",
+      "phonetic": "PROD-ukt",
+      "cognate": "Producto"
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "A science law that says matter is not created or destroyed in a reaction.",
+      "use_sentence": "Because of conservation of mass, the weight of the reactants equals the weight of the products.",
+      "phonetic": "kon-sir-VAY-shun of mass",
+      "cognate": "Conservación de Masa"
+    },
+    {
+      "term": "Reaction Rate",
+      "definition": "The speed of a chemical reaction. How fast reactants turn into products.",
+      "use_sentence": "Heating the water increased the reaction rate of the fizzing tablet.",
+      "phonetic": "ree-AK-shun RAYT",
+      "cognate": "Velocidad de Reacción"
+    },
+    {
+      "term": "Chemical Equation",
+      "definition": "A way to write a chemical reaction using symbols for atoms and molecules.",
+      "use_sentence": "The chemical equation showed that two hydrogen atoms and one oxygen atom make water.",
+      "phonetic": "KEM-ih-kull ee-KWAY-zhun",
+      "cognate": "Ecuación Química"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you burn a large log in a campfire, you are left with a small pile of ash. How does this show conservation of mass even though the ash weighs less than the log?",
+      "frame": "Even though the ash weighs less, the total mass is conserved because ___"
+    },
+    {
+      "prompt": "Dr. Torres uses computer models to predict reactions. Why would a company want to model a reaction on a computer before doing it in a real lab?",
+      "frame": "A company would want to use a computer model first because it might be ___"
+    },
+    {
+      "prompt": "How is a chemical reaction like solving a puzzle or following a recipe?",
+      "frame": "A chemical reaction is like a puzzle because ___"
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

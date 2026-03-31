@@ -1,0 +1,103 @@
+{
+  "story": {
+    "title": "Dr. Okonkwo's Solar Systems Puzzle",
+    "text": "My name is Dr. Patricia Okonkwo, and I'm a Solar Energy Systems Researcher. My work is like solving a giant, dynamic puzzle: can we power our cities entirely with <strong>solar energy</strong>, or will we always need some <strong>fossil fuels</strong>?<br><br>Every day, my computer models simulate a city's energy system. I input data like the expected <strong>Sunlight Hours</strong> for a region. When there are more hours of direct sun, the <strong>Solar Energy Output</strong> increases, which is fantastic because it allows us to decrease the <strong>Fossil Fuel Burn Rate</strong>. This action sets off a chain reaction that benefits our planet. Burning fewer fossil fuels leads to a significant drop in <strong>CO2 Emissions</strong>.<br><br>Why do we track these emissions so carefully? Because there's a negative correlation between <strong>CO2 Emissions</strong> and the <strong>Air Quality Index</strong>. The more pollutants we release, the lower the air quality score becomes, which can impact everyone's health. Therefore, when solar power generation goes up, our air gets cleaner.<br><br>However, the puzzle isn't that simple. My models must also account for complex, real-world variables. For instance, the **Cloud Cover Percentage** can reduce a panel's output to just 25% of its peak power. I also factor in the **Panel Degradation Rate**; even the best solar panels slowly lose efficiency over their 25-year lifespan. And to power a city at night, we need massive batteries, but **Battery Storage Efficiency** isn't perfect—we lose about 15% of the energy just moving it into and out of storage. By modeling all these interconnected factors, I can help engineers and city planners design the most effective and sustainable energy grids for the future.",
+    "think_abouts": [
+      "Why is it important for Dr. Okonkwo to consider variables like cloud cover and battery efficiency in her models?",
+      "How does increasing solar energy output create a chain reaction that improves the Air Quality Index?"
+    ],
+    "go_deeper": "If a city has many cloudy days but wants to use 100% solar power, what combination of technologies (like more efficient panels, better batteries, or larger solar farms) would they need to invest in most, and why?",
+    "margin_defs": [
+      {
+        "term": "simulate",
+        "definition": "to model or imitate something"
+      },
+      {
+        "term": "correlation",
+        "definition": "a connection between two things"
+      },
+      {
+        "term": "variables",
+        "definition": "factors that can change"
+      }
+    ],
+    "check_prompts": [
+      "What is one real-world challenge Dr. Okonkwo must include in her models besides the number of sunny hours?"
+    ],
+    "word_bank": [
+      "Solar Energy",
+      "Fossil Fuel",
+      "CO2 Emissions",
+      "Air Quality Index",
+      "simulate",
+      "efficiency"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "emissions",
+        "spanish": "emisiones"
+      },
+      {
+        "english": "researcher",
+        "spanish": "investigadora"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Solar Energy",
+      "definition": "Electricity generated from sunlight using special panels designed to capture the sun's rays.",
+      "use_sentence": "The new buildings were covered in solar panels to generate clean Solar Energy.",
+      "phonetic": "SOH-ler EN-er-jee",
+      "cognate": "energía solar"
+    },
+    {
+      "term": "Fossil Fuel",
+      "definition": "A natural fuel such as coal, oil, or natural gas, formed in the geological past from the remains of living organisms.",
+      "use_sentence": "Burning a Fossil Fuel like coal can power a factory, but it also creates pollution.",
+      "phonetic": "FOS-uhl FYOO-uhl",
+      "cognate": "combustible fósil"
+    },
+    {
+      "term": "CO2 Emissions",
+      "definition": "Carbon dioxide gas that is released into the atmosphere, often from burning fuels for energy.",
+      "use_sentence": "To protect the environment, the city created a plan to reduce its CO2 Emissions.",
+      "phonetic": "see-oh-too ee-MISH-uhns",
+      "cognate": "emisiones de CO2"
+    },
+    {
+      "term": "Air Quality Index",
+      "definition": "A measurement scale used to report how clean or polluted the air is on a given day.",
+      "use_sentence": "We checked the Air Quality Index before playing outside to make sure the air was healthy to breathe.",
+      "phonetic": "AIR KWAL-i-tee IN-deks",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Based on Dr. Okonkwo's research, what do you think is the biggest obstacle to replacing fossil fuels entirely with solar energy?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were designing a city's energy grid, how would you balance the need for constant power with the goal of reducing CO2 emissions?",
+      "frame": "To balance the need for power with clean air, I would..."
+    },
+    {
+      "prompt": "Dr. Okonkwo's models help people make decisions. What other complex problems could be better understood by creating a computer model?",
+      "frame": "A computer model could help us understand..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

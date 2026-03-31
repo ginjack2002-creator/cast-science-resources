@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Johansson's Constant Question: Where Does Matter Go?",
+    "text": "People often ask me what a Phase Transition Physicist does all day at a place like MIT. I tell them I study one of the universe's most fundamental dances: how matter transforms. You see this dance every day. An ice cube in your drink slowly disappears, and steam rises from a boiling pot. My job is to ask, 'Where does it go?' The answer is both simple and profound: it doesn't go anywhere.<br><br>The core principle of my work is the <strong>Conservation of Matter</strong>, which states that matter is never created or destroyed, only changed. When an ice cube melts, its molecules haven't vanished; they've just loosened their rigid structure to become a liquid. This is a <strong>Phase Change</strong>. If you keep adding heat energy, you'll reach the point of <strong>Evaporation</strong>, where those same molecules break free entirely and become a gas. The amount of matter—the number of H₂O molecules—remains constant throughout the entire process.<br><br>In my lab, I create complex computer models to predict these transitions. I manipulate external variables like Temperature and Pressure to see how they affect the amount of solid, liquid, or gas in a system. For water, we all know its <strong>Melting Point</strong> is 0°C, but what happens under immense pressure? My models show that if you increase pressure dramatically, the boiling point of water skyrockets well above 100°C. This isn't just a theoretical curiosity; it's the science behind a pressure cooker, which cooks food faster precisely because the water gets hotter without boiling away.<br><br>My research even explores the exotic states of matter, like plasmas or Bose-Einstein condensates, that exist at extreme temperatures. By understanding these fundamental rules, we can engineer new materials and technologies. The dance of matter is all around us, and my work is to understand its every step.",
+    "think_abouts": [
+      "Dr. Johansson says nothing disappears. Where does the water from a puddle go on a sunny day?",
+      "Why would a physicist who studies phase changes need to understand both temperature and pressure?"
+    ],
+    "go_deeper": "Dr. Johansson mentions that pressure can change a substance's boiling point. How might this principle be used in technologies other than a pressure cooker?",
+    "margin_defs": [
+      {
+        "term": "transforms",
+        "definition": "Changes from one state to another."
+      },
+      {
+        "term": "profound",
+        "definition": "Having deep meaning."
+      },
+      {
+        "term": "exotic",
+        "definition": "Unusual or from a faraway place."
+      }
+    ],
+    "check_prompts": [
+      "According to the principle of conservation of matter, what happens to the total amount of water when an ice cube melts and then the water evaporates?"
+    ],
+    "word_bank": [
+      "Phase Change",
+      "Conservation of Matter",
+      "Temperature",
+      "Pressure",
+      "Evaporation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "principle",
+        "spanish": "principio"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      },
+      {
+        "english": "pressure",
+        "spanish": "presión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Phase Change",
+      "definition": "A physical change where matter switches between solid, liquid, and gas.",
+      "use_sentence": "When water boils, it undergoes a phase change from a liquid to a gas.",
+      "phonetic": "/feɪz tʃeɪndʒ/",
+      "cognate": "cambio de fase"
+    },
+    {
+      "term": "Conservation of Matter",
+      "definition": "The principle that matter is neither created nor destroyed during a physical or chemical change.",
+      "use_sentence": "The law of conservation of matter explains why the mass of water in a sealed container stays the same even when it freezes or evaporates.",
+      "phonetic": "/ˌkɑːn.sɚˈveɪ.ʃən əv ˈmæt̬.ɚ/",
+      "cognate": "conservación de la materia"
+    },
+    {
+      "term": "Melting Point",
+      "definition": "The specific temperature at which a substance changes from a solid to a liquid.",
+      "use_sentence": "The melting point of ice is 0°C, but adding salt can lower it.",
+      "phonetic": "/ˈmel.tɪŋ ˌpɔɪnt/",
+      "cognate": "punto de fusión"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process where a liquid turns into a gas at the surface of the liquid.",
+      "use_sentence": "After the rainstorm, the sun caused the evaporation of all the puddles on the street.",
+      "phonetic": "/ɪˌvæp.əˈreɪ.ʃən/",
+      "cognate": "evaporación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Johansson models how matter changes state. If you could create a computer model of any scientific process, what would you choose to model and why?",
+      "frame": "I would create a model of ___ because ___."
+    },
+    {
+      "prompt": "The story explains that impurities like salt can change a substance's melting or freezing point. What are some other real-world examples where we intentionally add something to a substance to change its properties?",
+      "frame": "One real-world example is when people add ___ to ___ in order to ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

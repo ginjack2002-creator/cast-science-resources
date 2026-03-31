@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Kowalski's Guide to Star Brightness",
+    "text": "Hi, I’m Dr. Lena Kowalski. My job is to map the universe by studying starlight.<br><br>When you look up, some stars look bright and some look dim. A star’s brightness in our sky is its <strong>Apparent Brightness</strong>. But this can be tricky. A star might look dim because it's far away. Or, it might be close but not produce much light.<br><br>To solve this puzzle, we must find the star's <strong>Actual Brightness</strong>. This is how much light it truly makes. Think of it like a car's headlights. Far away, they look like tiny dots. Up close, they are very bright. The bulb's power is its actual brightness. How it looks from down the road is its apparent brightness.<br><br>Here is how my team solves this cosmic puzzle:<br>1. First, we use our powerful telescopes to measure a star's <strong>Apparent Brightness</strong>.<br>2. Next, we study the star's color and type. This helps us estimate its <strong>Actual Brightness</strong>.<br>3. Then, we compare the two. If a star has a high actual brightness but looks dim, we know it's incredibly far away! We measure these huge distances in a unit called a <strong>Light-Year</strong>.",
+    "think_abouts": [
+      "Why can a very bright star look dim in our sky?",
+      "What two types of brightness does Dr. Kowalski need to know to find a star's distance?"
+    ],
+    "go_deeper": "Dr. Kowalski uses telescopes in space. Why would a space telescope see stars more clearly than one on the ground?",
+    "margin_defs": [
+      {
+        "term": "Apparent Brightness",
+        "definition": "How bright a star LOOKS from Earth."
+      },
+      {
+        "term": "Actual Brightness",
+        "definition": "How much light a star REALLY makes."
+      },
+      {
+        "term": "Light-Year",
+        "definition": "A huge unit of distance for space."
+      }
+    ],
+    "check_prompts": [
+      "What is the difference between how bright a star looks and how bright it really is?"
+    ],
+    "word_bank": [
+      "Apparent Brightness",
+      "Actual Brightness",
+      "Light-Year",
+      "Distance"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      },
+      {
+        "english": "universe",
+        "spanish": "universo"
+      },
+      {
+        "english": "star",
+        "spanish": "estrella"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star LOOKS from Earth, which depends on distance.",
+      "use_sentence": "A dim star might have a low apparent brightness because it is very far away.",
+      "phonetic": null,
+      "cognate": "Brillo Aparente"
+    },
+    {
+      "term": "Actual Brightness",
+      "definition": "How much light a star truly produces, also called luminosity.",
+      "use_sentence": "Even though the Sun looks bright, some stars have a much higher actual brightness.",
+      "phonetic": null,
+      "cognate": "Brillo Real"
+    },
+    {
+      "term": "Light-Year",
+      "definition": "The distance light travels in one year — about 6 trillion miles.",
+      "use_sentence": "The closest star system is over four light-years away from us.",
+      "phonetic": null,
+      "cognate": "Año Luz"
+    },
+    {
+      "term": "Observable Detail",
+      "definition": "How much information we can see about a distant object.",
+      "use_sentence": "With a better telescope, we can see more observable detail on the moon's surface.",
+      "phonetic": null,
+      "cognate": "Detalle Observable"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If two stars have the same Actual Brightness, why might one appear much brighter to us on Earth?",
+      "frame": "One star might appear brighter because..."
+    },
+    {
+      "prompt": "Dr. Kowalski says we are 'looking into the past' when we see starlight. What does she mean by that?",
+      "frame": "I think she means that the light..."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Kowalski to map where stars are in the universe?",
+      "frame": "Mapping the stars is important because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

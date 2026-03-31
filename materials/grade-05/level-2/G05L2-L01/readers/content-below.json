@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Rivera's Carbon Detective Work",
+    "text": "Hello! I’m Dr. Carlos Rivera. I am a carbon flux scientist. Think of me as a detective for the planet. I track where carbon atoms go every single day. <br><br>Let’s start with your breath. When you exhale, you release a gas. It is called <strong>carbon dioxide</strong>. This gas doesn't just disappear. It goes on an amazing journey called the <strong>carbon cycle</strong>. <br><br>Here is how it works: <br>1. Plants pull <strong>carbon dioxide</strong> from the air. <br>2. They use sunlight to turn it into sugary food. This process is called <strong>photosynthesis</strong>. The carbon is now stored in the plant’s leaves, stem, and roots. <br>3. When plants and animals die, tiny helpers in the soil go to work. Bacteria and fungi break them down. This is called <strong>decomposition</strong>. <br>4. This breakdown releases carbon back into the soil and air. Then, the cycle can start all over again. <br><br>At my lab, we use powerful computers. We build models to see how much carbon moves between the air, forests, and oceans. We also study how things like burning fossil fuels add extra carbon to the air. Our job is to understand this balance. It helps us protect our planet for the future.",
+    "think_abouts": [
+      "What parts of the carbon cycle can you see around your school?",
+      "How is Dr. Rivera's job like being a detective?"
+    ],
+    "go_deeper": "Dr. Rivera mentioned oceans absorb carbon. How do you think the carbon cycle works in the water?",
+    "margin_defs": [
+      {
+        "term": "Carbon Flux",
+        "definition": "The movement of carbon from one place to another."
+      },
+      {
+        "term": "Models",
+        "definition": "Computer programs that show how something works."
+      }
+    ],
+    "check_prompts": [
+      "What gas do plants take in from the air during photosynthesis?"
+    ],
+    "word_bank": [
+      "carbon cycle",
+      "photosynthesis",
+      "decomposition",
+      "carbon dioxide"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "carbon",
+        "spanish": "carbono"
+      },
+      {
+        "english": "cycle",
+        "spanish": "ciclo"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      },
+      {
+        "english": "process",
+        "spanish": "proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Carbon Dioxide (CO2)",
+      "definition": "A gas in the air that plants use for food and animals breathe out.",
+      "use_sentence": "When you exhale, you release carbon dioxide into the air.",
+      "phonetic": "KAR-bun dy-OK-side",
+      "cognate": "Dióxido de carbono"
+    },
+    {
+      "term": "Photosynthesis",
+      "definition": "The way plants use sunlight, water, and CO2 to make their own food.",
+      "use_sentence": "A green leaf uses photosynthesis to make sugar for the plant.",
+      "phonetic": "fo-to-SIN-thuh-sis",
+      "cognate": "Fotosíntesis"
+    },
+    {
+      "term": "Decomposition",
+      "definition": "The process of dead plants or animals breaking down into soil.",
+      "use_sentence": "We saw the decomposition of old leaves on the forest floor.",
+      "phonetic": "dee-kom-po-ZISH-un",
+      "cognate": "Descomposición"
+    },
+    {
+      "term": "Carbon Cycle",
+      "definition": "The path that carbon takes as it moves through the air, ground, and living things.",
+      "use_sentence": "The carbon cycle shows how your breath can become part of a tree.",
+      "phonetic": "KAR-bun SY-kul",
+      "cognate": "Ciclo del carbono"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were a carbon atom, describe your journey through one part of the carbon cycle.",
+      "frame": "First, I was in the air as carbon dioxide. Then, a plant..."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Rivera to track carbon?",
+      "frame": "It is important to track carbon because..."
+    },
+    {
+      "prompt": "What are some things that add carbon to the air, and what are some things that take it out?",
+      "frame": "Things that add carbon are ______, and things that take it out are ______."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

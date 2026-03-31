@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Hassan and the Cell's Energy Factory",
+    "text": "Hi, I'm Dr. Amina Hassan. Here at the Broad Institute, I study the tiny factories that power your entire body. You might not realize it, but every one of your trillions of cells has its own power plants called <strong>Mitochondria</strong> (my-toh-KON-dree-uh), the organelles that turn food into fuel.<br><br>Think of a cell as a busy workshop. To build things, move, and repair itself, it needs energy. That energy comes from a special molecule called <strong>ATP</strong> (ay-tee-pee), the energy currency of the cell. My research focuses on how mitochondria make this ATP through a process called <strong>Cellular Respiration</strong> (SELL-yoo-ler res-pur-AY-shun), the chemical reaction that combines food and oxygen to create usable energy.<br><br>It works like an assembly line. The food you eat provides glucose (a type of sugar), which is the raw material. The oxygen you breathe is the spark that makes the whole process incredibly efficient. When both glucose and oxygen enter the mitochondria, the factory starts humming, producing huge amounts of ATP. This energy directly controls the <strong>Cell Growth Rate</strong>, allowing your body to build muscle and heal from injuries.<br><br>But like any factory, this one produces exhaust. We call this <strong>Metabolic Waste</strong>, which is mostly carbon dioxide. If this waste isn't removed quickly, it can become toxic and damage the cell, slowing everything down. By studying this delicate balance of inputs and outputs, I work to understand what happens in diseases where a cell's energy supply chain breaks down, so we can find new ways to help people stay healthy.",
+    "think_abouts": [
+      "Think about a time you were running hard. Why did you start breathing faster and deeper?",
+      "What do you think would happen to a cell if its mitochondria stopped working correctly?"
+    ],
+    "go_deeper": "During intense exercise, your muscles use ATP faster than you can supply oxygen. How does this 'oxygen debt' explain why your muscles feel tired and you keep breathing hard even after you stop?",
+    "margin_defs": [
+      {
+        "term": "Mitochondria",
+        "definition": "The cell's power plants."
+      },
+      {
+        "term": "ATP",
+        "definition": "The energy molecule for cells."
+      },
+      {
+        "term": "Cellular Respiration",
+        "definition": "The process of making cell energy from food and oxygen."
+      }
+    ],
+    "check_prompts": [
+      "What are the two main 'ingredients' mitochondria need for cellular respiration?"
+    ],
+    "word_bank": [
+      "Mitochondria",
+      "ATP",
+      "Cellular Respiration",
+      "Metabolic Waste",
+      "Cell Growth Rate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Cell",
+        "spanish": "Célula"
+      },
+      {
+        "english": "Respiration",
+        "spanish": "Respiración"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mitochondria",
+      "definition": "The organelles known as the cell's power plants that convert glucose and oxygen into ATP energy through cellular respiration.",
+      "use_sentence": "The mitochondria in your muscle cells work overtime when you exercise to provide enough energy.",
+      "phonetic": "my-toh-KON-dree-uh",
+      "cognate": "Mitocondria"
+    },
+    {
+      "term": "ATP",
+      "definition": "Adenosine triphosphate, the energy currency of the cell that powers all cellular activities from growth to movement.",
+      "use_sentence": "Every time you move a muscle or think a thought, your cells are spending ATP.",
+      "phonetic": "ay-tee-pee",
+      "cognate": null
+    },
+    {
+      "term": "Cellular Respiration",
+      "definition": "The chemical process in mitochondria that combines glucose and oxygen to produce ATP energy, carbon dioxide, and water.",
+      "use_sentence": "Through cellular respiration, the sandwich you ate for lunch becomes the energy you use to play soccer.",
+      "phonetic": "SELL-yoo-ler res-pur-AY-shun",
+      "cognate": "Respiración celular"
+    },
+    {
+      "term": "Metabolic Waste",
+      "definition": "Byproducts of cellular processes, including carbon dioxide and other compounds that must be removed to prevent toxic buildup.",
+      "use_sentence": "Your bloodstream is like a garbage truck, carrying away metabolic waste from your cells.",
+      "phonetic": "meh-tuh-BALL-ik wayst",
+      "cognate": null
+    },
+    {
+      "term": "Cell Growth Rate",
+      "definition": "How fast a cell divides and increases in size, directly dependent on available ATP energy from mitochondria.",
+      "use_sentence": "A healthy cell growth rate is essential for healing a cut or growing taller.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hassan compares a cell to a factory. What is another analogy you could use to describe how a cell gets and uses energy? Explain your idea.",
+      "frame": null
+    },
+    {
+      "prompt": "If a disease caused a person's mitochondria to work less efficiently, what symptoms do you think they might experience in their daily life? Why?",
+      "frame": "If mitochondria didn't work well, a person might feel ___ because ___."
+    },
+    {
+      "prompt": "The story explains that waste buildup can harm a cell. How does your body get rid of the main waste product, carbon dioxide, that is produced in every cell?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

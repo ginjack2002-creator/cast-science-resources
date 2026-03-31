@@ -1,0 +1,100 @@
+{
+  "story": {
+    "title": "Dr. Carter and the Silent Explosion",
+    "text": "Hello! I’m Dr. James Carter. I am an Acoustic Engineer. My job is to understand sound. Sound starts with a <strong>vibration</strong>, like hitting a drum. This strong push creates a sound wave. The wave needs something to travel through. We call this a <strong>medium</strong>.<br><br>On Earth, air is our most common medium. The sound wave pushes the air molecules. The molecules bump into each other. This passes the sound energy to your ears. Denser materials, like water, pass sound even faster!<br><br>But what about in space? Space is a <strong>vacuum</strong>. A vacuum is empty space. It has no air and no molecules. So, if a spaceship explodes, it creates a huge vibration. But there is no medium to carry the sound wave. The sound has nowhere to go. It is completely silent. In my lab, we study how different materials cause sound <strong>absorption</strong> or change wave speed. This helps us build better speakers and headphones.",
+    "think_abouts": [
+      "Why can you hear a friend shouting across a room but not across empty space?",
+      "If you clapped your hands underwater, would it make a sound? Why?"
+    ],
+    "go_deeper": "Whales can 'talk' to each other over hundreds of miles in the ocean. Why does their sound travel so much farther in water than your shout travels in air?",
+    "margin_defs": [
+      {
+        "term": "Medium",
+        "definition": "The stuff sound travels through."
+      },
+      {
+        "term": "Vacuum",
+        "definition": "An empty space with nothing in it."
+      }
+    ],
+    "check_prompts": [
+      "What does sound need in order to travel from one place to another?"
+    ],
+    "word_bank": [
+      "Vibration",
+      "Medium",
+      "Vacuum",
+      "Absorption"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Vibration",
+        "spanish": "Vibración"
+      },
+      {
+        "english": "Space",
+        "spanish": "Espacio"
+      },
+      {
+        "english": "Silent",
+        "spanish": "Silencio"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Medium",
+      "definition": "The material that sound travels through — it can be a gas (air), liquid (water), or solid (metal, wood).",
+      "use_sentence": "Sound travels through the medium of air to reach our ears.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "Medio"
+    },
+    {
+      "term": "Vibration",
+      "definition": "A rapid back-and-forth movement that creates sound waves when it pushes on nearby molecules.",
+      "use_sentence": "A guitar string makes a sound because of its fast vibration.",
+      "phonetic": "vy-BRAY-shun",
+      "cognate": "Vibración"
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a sound wave moves through a material — sound travels at different speeds in different media.",
+      "use_sentence": "The wave speed of sound is much faster in steel than it is in air.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Absorption",
+      "definition": "When a material soaks up sound energy instead of passing it along, making the sound quieter.",
+      "use_sentence": "Soft foam is good for sound absorption in a quiet room.",
+      "phonetic": "ab-SORP-shun",
+      "cognate": "Absorción"
+    },
+    {
+      "term": "Vacuum",
+      "definition": "A space with no matter in it at all — no air, no water, nothing for sound to travel through.",
+      "use_sentence": "Because space is a vacuum, you cannot hear any sound there.",
+      "phonetic": "VAK-yoom",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about the space movies you have seen. How would they be different if they had no sound for the explosions?",
+      "frame": "If space movies had no sound, they would be different because ___."
+    },
+    {
+      "prompt": "Dr. Carter studies how sound travels through different materials. What is a job, other than making headphones, that might need to understand this?",
+      "frame": "A person who builds ___ might need to understand sound because ___."
+    },
+    {
+      "prompt": "How could you design an experiment to test if sound travels better through a solid (like your desk) or a gas (like air)?",
+      "frame": "To test if sound travels better through a solid or a gas, I would first ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

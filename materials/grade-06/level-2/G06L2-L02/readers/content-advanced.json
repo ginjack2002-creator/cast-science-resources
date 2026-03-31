@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Vega's Universal Law of Cooling",
+    "text": "People ask me what a Thermal Systems Engineer at NASA does. I tell them to look at their morning coffee. That cooling cup holds the same universal secrets I use to protect billion-dollar spacecraft from the extremes of space.<br><br>My name is Dr. Isabel Vega. My job is to manage heat. In the vacuum of space, a satellite's sun-facing side can scorch, while its shadow side plummets to freezing. Without precise thermal control, the electronics would fail instantly. The principle that governs this massive heat exchange is the same one cooling your drink: <strong>Newton's Law of Cooling</strong>.<br><br>The law is elegant. The speed of cooling—what we call the <strong>Transfer Rate</strong>—is directly proportional to the <strong>Temperature Difference</strong> between the hot object and its cooler surroundings. When your coffee is piping hot, the temperature gap between it and the room is huge, so heat escapes rapidly. You can almost feel the waves of energy radiating away.<br><br>But as the coffee cools, that temperature difference shrinks. A smaller gap means a slower transfer rate. This creates a predictable mathematical curve called <strong>Exponential Decay</strong>: a steep drop at the beginning, followed by a gradual leveling-off as the temperature approaches that of the room. The cooling doesn't stop until the coffee and the room are in perfect balance, a state we call <strong>Thermal Equilibrium</strong>. At that point, the net heat transfer is zero. Your coffee can't get any colder than the room it's in, just as my spacecraft will eventually reach equilibrium with its environment unless I actively heat or cool it.<br><br>Understanding this system—the relationship between temperature, transfer rate, and equilibrium—is everything. Whether I'm designing reflective coatings for a Mars rover or you're just waiting for your cocoa to be cool enough to drink, we're both observing a fundamental law of the universe at work.",
+    "think_abouts": [
+      "Why does the cooling process seem to slow down as the coffee gets closer to room temperature?",
+      "How might Dr. Vega use the idea of thermal equilibrium to keep parts of a spacecraft from getting *too* cold in space?"
+    ],
+    "go_deeper": "Dr. Vega mentioned protecting spacecraft from heat and cold. How would changing a spacecraft's surface color (from black to shiny silver) or its insulating material affect its heat transfer rate?",
+    "margin_defs": [
+      {
+        "term": "proportional",
+        "definition": "when two quantities change at the same rate relative to each other"
+      },
+      {
+        "term": "ambient",
+        "definition": "relating to the immediate surroundings"
+      },
+      {
+        "term": "equilibrium",
+        "definition": "a state of physical balance"
+      }
+    ],
+    "check_prompts": [
+      "According to Newton's Law of Cooling, what is the main factor that determines how fast an object cools?"
+    ],
+    "word_bank": [
+      "Thermal Equilibrium",
+      "Temperature Difference",
+      "Transfer Rate",
+      "Exponential Decay",
+      "Newton's Law of Cooling"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "protect",
+        "spanish": "proteger"
+      },
+      {
+        "english": "universal",
+        "spanish": "universal"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Thermal Equilibrium",
+      "definition": "The state where two objects in contact have reached the same temperature, and there is no more net flow of heat between them.",
+      "use_sentence": "The coffee will stop cooling once it reaches thermal equilibrium with the ambient air in the room.",
+      "phonetic": "THUR-muhl ee-kwuh-LIB-ree-um",
+      "cognate": "equilibrio térmico"
+    },
+    {
+      "term": "Temperature Difference",
+      "definition": "The quantitative gap in temperature between an object and its surroundings, which is the primary driver of heat transfer.",
+      "use_sentence": "The large temperature difference between the boiling coffee and the cool room caused it to lose heat very rapidly at first.",
+      "phonetic": "TEM-per-uh-cher DIF-er-ense",
+      "cognate": "diferencia de temperatura"
+    },
+    {
+      "term": "Transfer Rate",
+      "definition": "The speed at which thermal energy moves from one place to another, often measured in energy per unit of time (like Joules per second).",
+      "use_sentence": "A high transfer rate means the spacecraft's surface is either absorbing or radiating heat very quickly.",
+      "phonetic": "TRANS-fer RAYT",
+      "cognate": "tasa de transferencia"
+    },
+    {
+      "term": "Exponential Decay",
+      "definition": "A pattern of decrease where the rate of change slows over time. The amount decreases quickly at the beginning and more slowly as it approaches a final value.",
+      "use_sentence": "The cooling curve of the coffee followed a pattern of exponential decay, dropping fast initially and then leveling off.",
+      "phonetic": "ex-po-NEN-shul dee-KAY",
+      "cognate": "decaimiento exponencial"
+    },
+    {
+      "term": "Newton's Law of Cooling",
+      "definition": "A scientific principle stating that the rate of heat loss from an object is directly proportional to the temperature difference between the object and its surroundings.",
+      "use_sentence": "According to Newton's Law of Cooling, my coffee cools fastest when it's hottest because the temperature difference is at its maximum.",
+      "phonetic": "NOO-tunz LAW uv KOOL-ing",
+      "cognate": "Ley de Enfriamiento de Newton"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Vega applies the same principles to spacecraft as to a cup of coffee. What other everyday situations can be explained by Newton's Law of Cooling?",
+      "frame": "One example of cooling I see every day is..."
+    },
+    {
+      "prompt": "Imagine you need to design a lunchbox to keep soup hot for as long as possible. Using concepts from the reading (like material, surface, and containing a large volume), what features would your lunchbox have?",
+      "frame": "To keep my soup hot, my lunchbox design would include..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

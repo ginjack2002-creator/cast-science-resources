@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Johnson's Energy Map",
+    "text": "I am Dr. Marcus Johnson. I am an Ecosystem Energy Modeler. I build maps that show where energy goes in a food web.<br><br>Everything starts with the sun. Plants capture sunlight to make food. This creates a lot of plant <strong>biomass</strong>. This is the first <strong>trophic level</strong>.<br><br>Next, herbivores eat the plants. But they only get about 10% of the plants' energy. The other 90% is used by the plant to live and grow. The herbivores are the second trophic level.<br><br>Then, predators eat the herbivores. They also only get 10% of that energy. This pattern continues up the food web. At each step, a lot of energy is lost as heat.<br><br>My models create an <strong>energy pyramid</strong>. It is wide at the bottom with producers. It is very narrow at the top with predators. This shows why there are so few top predators. There is not much energy left for them.<br><br>Finally, <strong>decomposers</strong> recycle everything. They break down dead organisms. This returns nutrients to the soil for plants.",
+    "think_abouts": [
+      "If only 10% of energy moves to the next level, where does the other 90% go?",
+      "What would a food web look like without the sun?"
+    ],
+    "go_deeper": "Dr. Johnson found that some warm-blooded predators only transfer 1% of energy, not 10%. How would this change the energy pyramid for those animals?",
+    "margin_defs": [
+      {
+        "term": "Biomass",
+        "definition": "The total weight of all living things in one area."
+      },
+      {
+        "term": "Energy Pyramid",
+        "definition": "A model showing how energy decreases at each level of a food web."
+      }
+    ],
+    "check_prompts": [
+      "Why is the energy pyramid smaller at the top?"
+    ],
+    "word_bank": [
+      "Trophic Level",
+      "Biomass",
+      "Energy Pyramid",
+      "Decomposer",
+      "Trophic Cascade"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Pyramid",
+        "spanish": "Pirámide"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      },
+      {
+        "english": "Organism",
+        "spanish": "Organismo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Level",
+      "definition": "A step in a food web that shows how far an organism is from the sun's energy.",
+      "use_sentence": "Producers are on the first trophic level, and herbivores are on the second.",
+      "phonetic": "TRO-fik LEV-uhl",
+      "cognate": "Nivel Trófico"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total weight of living things in an area, which holds stored energy.",
+      "use_sentence": "The biomass of all the trees in a forest is much larger than the biomass of all the wolves.",
+      "phonetic": "BAI-o-mass",
+      "cognate": "Biomasa"
+    },
+    {
+      "term": "Energy Pyramid",
+      "definition": "A diagram that shows how energy decreases at each trophic level.",
+      "use_sentence": "The energy pyramid has a wide base for producers and a narrow top for predators.",
+      "phonetic": "EN-er-jee PEER-a-mid",
+      "cognate": "Pirámide de Energía"
+    },
+    {
+      "term": "Decomposer",
+      "definition": "An organism, like a mushroom or bacteria, that breaks down dead things for food.",
+      "use_sentence": "A decomposer returns important nutrients from a dead log back to the soil.",
+      "phonetic": "dee-kuhm-PO-zer",
+      "cognate": "Descomponedor"
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "When a change at one trophic level causes big changes at other levels.",
+      "use_sentence": "Removing the top predator caused a trophic cascade that changed the whole ecosystem.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": "Cascada Trófica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Johnson says decomposers 'complete the circle of life'. What do you think he means by that?",
+      "frame": "I think he means that decomposers help by ___."
+    },
+    {
+      "prompt": "If a new disease killed most of the primary consumers (herbivores), what would happen to the producers and the secondary consumers?",
+      "frame": "If the herbivores disappeared, the producers would probably ___ and the secondary consumers would ___."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Johnson to model the flow of energy in ecosystems?",
+      "frame": "It is important to model energy flow because it helps us understand ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

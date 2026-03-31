@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Johnson's Energy Budget: Why Top Predators Are Rare",
+    "text": "My name is Dr. Marcus Johnson, and I’m an Ecosystem Energy Modeler. You can think of me as a detective who follows the most important currency in nature: energy. My lab doesn't just look at a food web; we build complex computer models to calculate exactly where every joule of energy goes, from the Sun to the top predator.<br><br>Everyone asks the big question: if the sun provides so much power, why are animals like hawks and wolves so rare? The answer lies in the universe's strictest budget, often called the '10% rule.' It all starts with producers—plants and algae—capturing solar energy. The total mass of those producers is called <strong>biomass</strong>, which is essentially stored solar power.<br><br>When a primary consumer, like a rabbit, eats a plant, it doesn't get 100% of that stored energy. In fact, my models show that about 90% is lost, mostly as body heat used for moving, breathing, and just staying alive. Only about 10% of the energy is converted into rabbit <strong>biomass</strong>. This massive energy drop happens at every <strong>trophic level</strong>. So, when a hawk eats the rabbit, it only gets 10% of the rabbit's energy, which was already only 10% of the plant's energy. This is why we visualize this system as an <strong>energy pyramid</strong>; the available energy shrinks dramatically at each step up.<br><br>My models also have to account for the crucial role of the <strong>decomposer</strong>. When organisms die, these bacteria and fungi break them down, returning vital nutrients to the soil so producers can thrive. Without them, the energy cycle would grind to a halt. Sometimes, a change at one level, like removing a predator, can cause a <strong>trophic cascade</strong> that destabilizes the entire system. By modeling this energy flow, we can predict these effects and understand why protecting every single link in the food web is critical for a healthy planet.",
+    "think_abouts": [
+      "Why is the diagram of energy flow called a pyramid and not a square?",
+      "What would happen to the energy flow in an ecosystem if all the decomposers disappeared?"
+    ],
+    "go_deeper": "Dr. Johnson mentioned the '10% rule,' but this efficiency changes. How might the energy pyramid of warm-blooded mammals (like wolves and caribou), which use a lot of energy to stay warm, look different from the pyramid of cold-blooded reptiles (like snakes and lizards)? Which pyramid could support more trophic levels?",
+    "margin_defs": [
+      {
+        "term": "Biomass",
+        "definition": "The total weight of living things in an area."
+      },
+      {
+        "term": "Trophic Level",
+        "definition": "An organism's step or position in a food chain."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Johnson, what happens to the 90% of energy that is NOT passed on to the next trophic level?"
+    ],
+    "word_bank": [
+      "Trophic Level",
+      "Biomass",
+      "Energy Pyramid",
+      "Decomposer",
+      "Trophic Cascade"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Pyramid",
+        "spanish": "Pirámide"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Trophic Level",
+      "definition": "A position in a food chain or food web that describes how many energy transfers separate an organism from the Sun.",
+      "use_sentence": "Producers are on the first trophic level, while the predators that eat them are on the second trophic level.",
+      "phonetic": null,
+      "cognate": "Nivel trófico"
+    },
+    {
+      "term": "Biomass",
+      "definition": "The total mass of living organisms in a given area or trophic level, representing stored chemical energy.",
+      "use_sentence": "The biomass of the forest's trees is far greater than the biomass of all the deer living there.",
+      "phonetic": null,
+      "cognate": "Biomasa"
+    },
+    {
+      "term": "Energy Pyramid",
+      "definition": "A diagram showing the decrease in available energy and biomass at each successive trophic level.",
+      "use_sentence": "An energy pyramid illustrates why there are many more plants than there are hawks in an ecosystem.",
+      "phonetic": null,
+      "cognate": "Pirámide de energía"
+    },
+    {
+      "term": "Decomposer",
+      "definition": "An organism, like bacteria or fungi, that breaks down dead organic matter and returns nutrients to the ecosystem.",
+      "use_sentence": "Without the decomposer community, nutrients would remain locked in dead organisms and unavailable to plants.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction through a food web that occurs when a change at one trophic level ripples up or down to affect other levels.",
+      "use_sentence": "Removing the top predator caused a trophic cascade, leading to an explosion in the herbivore population and the overgrazing of plants.",
+      "phonetic": null,
+      "cognate": "Cascada trófica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Johnson's models predict what might happen if a species is removed. Imagine a forest where the wolves (secondary consumers) are removed. What cascading effects might you predict for the deer (primary consumers) and the trees (producers)?",
+      "frame": "If the wolves were removed, I predict that the deer population would..."
+    },
+    {
+      "prompt": "Humans eat at multiple trophic levels (plants, herbivores like cows, and carnivores like tuna). How does our choice of diet impact the total amount of energy and land resources required to feed the human population?",
+      "frame": "Eating lower on the food chain might be more energy-efficient for the planet because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

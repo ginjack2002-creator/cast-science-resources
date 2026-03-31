@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Johansson and the Case of the Constant Weight",
+    "text": "Hello! I am Dr. Hannah Johansson. I study how matter changes. These changes are called phase transitions. Let's find out if matter disappears when it changes.<br><br>First, I put an ice cube in a sealed glass jar. An ice cube is solid water. I use a scale to weigh the jar with the ice inside. I write down the weight.<br><br>Next, I gently warm the jar. The ice melts into liquid water. This is a <strong>phase change</strong>. The solid becomes a liquid at its <strong>melting point</strong>. I weigh the jar again. The weight is exactly the same!<br><br>Now, I add more heat to the jar. The liquid water turns into a gas called steam. This is called <strong>evaporation</strong>. It is another <strong>phase change</strong>. The jar looks empty. But is it?<br><br>I weigh the jar one last time. The weight is still the same! No matter was lost. This shows the law of <strong>conservation of matter</strong>. The matter did not disappear. It just changed its form from solid, to liquid, to gas.",
+    "think_abouts": [
+      "What happens to the water particles when ice melts?",
+      "Why was it important for Dr. Johansson to use a sealed jar?"
+    ],
+    "go_deeper": "What do you think would happen to the melting point if we added salt to the ice cube?",
+    "margin_defs": [
+      {
+        "term": "sealed",
+        "definition": "Closed tightly so nothing can get in or out."
+      },
+      {
+        "term": "scale",
+        "definition": "A tool used to measure how heavy something is."
+      }
+    ],
+    "check_prompts": [
+      "When the ice melted, did the weight of the jar change?"
+    ],
+    "word_bank": [
+      "Phase Change",
+      "Conservation of Matter",
+      "Melting Point",
+      "Evaporation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "matter",
+        "spanish": "materia"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      },
+      {
+        "english": "liquid",
+        "spanish": "líquido"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Phase Change",
+      "definition": "When matter switches between its solid, liquid, or gas form.",
+      "use_sentence": "When an ice cube melts, it is going through a phase change.",
+      "phonetic": "fayz chaynj",
+      "cognate": "cambio de fase"
+    },
+    {
+      "term": "Conservation of Matter",
+      "definition": "The science rule that says matter cannot be created or destroyed, only changed.",
+      "use_sentence": "Because of the conservation of matter, the weight of the water stayed the same.",
+      "phonetic": "kon-sur-VAY-shun uv MAT-er",
+      "cognate": "conservación de la materia"
+    },
+    {
+      "term": "Melting Point",
+      "definition": "The special temperature where a solid turns into a liquid.",
+      "use_sentence": "The melting point of water is 0 degrees Celsius.",
+      "phonetic": "MEL-ting poynt",
+      "cognate": "punto de fusión"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process when a liquid turns into a gas.",
+      "use_sentence": "After the rain, evaporation made the puddles on the street dry up.",
+      "phonetic": "ee-vap-uh-RAY-shun",
+      "cognate": "evaporación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you leave an open cup of water on a windowsill, the water level goes down after a few days. Does this break the rule of conservation of matter? Why or why not?",
+      "frame": "This does not break the rule because the water..."
+    },
+    {
+      "prompt": "Dr. Johansson studies how matter changes. What is another example of a phase change you see in your everyday life?",
+      "frame": "One phase change I see is when..."
+    },
+    {
+      "prompt": "Why do you think a pressure cooker, which traps steam and increases pressure, helps food cook faster?",
+      "frame": "A pressure cooker might cook food faster because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

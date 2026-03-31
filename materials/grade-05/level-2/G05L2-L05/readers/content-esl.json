@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Baptiste and the Ocean's Food Web Puzzle",
+    "text": "Hello, I am Dr. Andre Baptiste. I study the ocean's food web. Think of it like a giant puzzle. Every piece is connected. My work helps us understand how energy moves in the ocean.<br><br>It all starts with tiny life called plankton. They are the <strong>Producer</strong> population. They make their own food from sunlight. Small animals eat the plankton. These animals are the <strong>Primary Consumer</strong> group. Then, bigger fish eat the small animals. They are the <strong>Secondary Consumer</strong> group. Finally, a great white shark might eat that bigger fish.<br><br>What happens if one piece is removed? Imagine all the small fish disappear. The bigger fish have no food. Their population might go down. This chain reaction is called a <strong>Trophic Cascade</strong>. I use computers to model these changes. We want to protect every link in the chain. This keeps our oceans healthy and full of life. It is important work for our planet's future.",
+    "think_abouts": [
+      "Who are the producers in Dr. Baptiste's ocean food web?",
+      "What could cause a trophic cascade in the ocean?"
+    ],
+    "go_deeper": "How might a new, invasive crab that eats the same food as other primary consumers change the food web?",
+    "margin_defs": [
+      {
+        "term": "Ecosystem",
+        "definition": "All living and nonliving things in an area."
+      },
+      {
+        "term": "Energy",
+        "definition": "The power that living things need to grow and move."
+      }
+    ],
+    "check_prompts": [
+      "What is the job of a producer in the food web?"
+    ],
+    "word_bank": [
+      "Producer",
+      "Primary Consumer",
+      "Secondary Consumer",
+      "Trophic Cascade",
+      "Ecosystem",
+      "Energy",
+      "Population",
+      "Plankton"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Ocean",
+        "spanish": "Océano"
+      },
+      {
+        "english": "Important",
+        "spanish": "Importante"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Producer",
+      "definition": "An organism that makes its own food, usually from sunlight.",
+      "use_sentence": "A tall oak tree is a producer in the forest.",
+      "phonetic": null,
+      "cognate": "Productor"
+    },
+    {
+      "term": "Primary Consumer",
+      "definition": "An animal that eats producers.",
+      "use_sentence": "A deer is a primary consumer because it eats plants.",
+      "phonetic": null,
+      "cognate": "Consumidor Primario"
+    },
+    {
+      "term": "Secondary Consumer",
+      "definition": "An animal that eats primary consumers.",
+      "use_sentence": "A wolf is a secondary consumer because it eats deer.",
+      "phonetic": null,
+      "cognate": "Consumidor Secundario"
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction in a food web when one animal population changes.",
+      "use_sentence": "Removing the sharks caused a trophic cascade in the reef ecosystem.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": "Cascada Trófica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "What would happen to the secondary consumer population if most of the producers in an ecosystem died?",
+      "frame": "If the producers died, the secondary consumers would probably ___ because ___."
+    },
+    {
+      "prompt": "Think about a food web near your home, like a park. What is one producer and one primary consumer you can name?",
+      "frame": "In a nearby park, a producer is ___ and a primary consumer that eats it is ___."
+    },
+    {
+      "prompt": "Dr. Baptiste studies what happens when a link in the food web breaks. Why is this work important for keeping oceans healthy?",
+      "frame": "Dr. Baptiste's work is important because it helps us ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

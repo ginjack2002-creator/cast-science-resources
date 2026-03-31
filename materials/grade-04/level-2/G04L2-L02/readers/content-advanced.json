@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Carter and the Silent Explosion",
+    "text": "Hi, I’m Dr. James Carter, and as an acoustic engineer at Bose, I get to solve sound puzzles every day. My team and I figure out how sound waves behave, which is critical for designing everything from crystal-clear concert hall speakers to the noise-canceling headphones that let you enjoy your music in a loud airport.<br><br>Every sound you’ve ever heard began as a <strong>vibration</strong>. When a guitar string is plucked, it vibrates, pushing on nearby air molecules. This starts a chain reaction, a wave of energy that travels through a <strong>medium</strong>—the substance the sound moves through. The initial Vibration Strength is key; a harder pluck creates a wave with higher amplitude, which our ears interpret as a louder sound.<br><br>The properties of the <strong>medium</strong> itself dramatically change the sound. A crucial factor is Medium Density. In a very dense material like steel, molecules are packed tightly together. This allows them to transfer vibrational energy very efficiently, leading to a much faster <strong>Wave Speed</strong>. In contrast, the molecules in air are spread out, so sound travels much more slowly. Denser materials can also have lower <strong>Wave Absorption</strong>. This means they soak up less of the sound wave’s energy as it passes through. This low absorption is why whale songs can travel for hundreds of miles through dense ocean water, while a shout in the air fades relatively quickly.<br><br>This brings me to one of my favorite topics: space movies! We all love seeing a massive spaceship explosion with a thunderous boom. But is that what would really happen? The answer lies in the medium. Outer space is essentially a <strong>vacuum</strong>, an enormous emptiness with virtually no molecules. An exploding ship would create a colossal vibration, but with no medium to carry the resulting sound waves, that energy has nowhere to go. There are no molecules to push against, no chain reaction to start. So, in the silent reality of space, that epic movie explosion would be completely unheard.",
+    "think_abouts": [
+      "Why does sound travel faster through a solid wall than through the air?",
+      "How do noise-canceling headphones use the idea of wave absorption?"
+    ],
+    "go_deeper": "A deep, low-pitched foghorn and a high-pitched siren go off at the same time across a bay. Based on what you know about sound frequency and absorption, which sound would you likely hear more clearly from far away? Why?",
+    "margin_defs": [
+      {
+        "term": "Acoustic Engineer",
+        "definition": "A scientist who studies the science of sound and vibration."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "The amount of energy in a sound wave, which determines its loudness."
+      }
+    ],
+    "check_prompts": [
+      "Based on the text, explain why there is no sound in the vacuum of space."
+    ],
+    "word_bank": [
+      "Vibration",
+      "Medium",
+      "Absorption",
+      "Vacuum",
+      "Wave Speed"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Vibration",
+        "spanish": "Vibración"
+      },
+      {
+        "english": "Absorption",
+        "spanish": "Absorción"
+      },
+      {
+        "english": "Medium",
+        "spanish": "Medio"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Medium",
+      "definition": "The material that sound travels through — it can be a gas (air), liquid (water), or solid (metal, wood).",
+      "use_sentence": "Sound needs a medium like air or water to move from one place to another.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "Medio"
+    },
+    {
+      "term": "Vibration",
+      "definition": "A rapid back-and-forth movement that creates sound waves when it pushes on nearby molecules.",
+      "use_sentence": "The guitar string's vibration is what creates the musical note.",
+      "phonetic": "vy-BRAY-shun",
+      "cognate": "Vibración"
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a sound wave moves through a material; sound travels at different speeds in different media.",
+      "use_sentence": "The wave speed of sound is much faster in steel than it is in air.",
+      "phonetic": "WAYV SPEED",
+      "cognate": null
+    },
+    {
+      "term": "Absorption",
+      "definition": "When a material soaks up sound energy instead of passing it along, making the sound quieter.",
+      "use_sentence": "Thick curtains are great for sound absorption because they stop echoes.",
+      "phonetic": "ab-SORP-shun",
+      "cognate": "Absorción"
+    },
+    {
+      "term": "Vacuum",
+      "definition": "A space with no matter in it at all — no air, no water, nothing for sound to travel through.",
+      "use_sentence": "Because space is a vacuum, astronauts must use radios to communicate.",
+      "phonetic": "VAK-yoom",
+      "cognate": "Vacío"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Carter designs noise-canceling headphones. How do you think understanding wave absorption helps him design a product that *stops* sound from reaching your ears?",
+      "frame": "I think understanding wave absorption helps him by..."
+    },
+    {
+      "prompt": "If you were designing a new concert hall, what materials would you use for the walls to make the music sound clear and not muffled? Explain your reasoning using ideas like medium density and absorption.",
+      "frame": "To build a concert hall, I would use materials like..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Huang and the Great Energy Trade-Off",
+    "text": "Hi, I'm Dr. Mei-Ling Huang, and I design roller coasters! My job at Walt Disney Imagineering is to make sure every twist, turn, and drop is super exciting but also perfectly safe. To do that, I have to think like a physicist and follow the flow of energy.<br><br>Everything starts at the top of the first big hill. As a chain pulls the coaster car up, it gains <strong>Potential Energy</strong>. That’s stored energy an object has because of its position. The higher we lift the car, the more potential energy it stores. When it finally tips over the edge, gravity takes over! That stored energy transforms into <strong>Kinetic Energy</strong>, which is the energy of motion. More stored energy at the top means more motion energy at the bottom, which means a faster, more thrilling ride.<br><br>But if energy is never destroyed, why does the coaster eventually stop? The answer is a force called <strong>Friction</strong>. As the wheels roll along the steel track, they rub together. This rubbing creates heat. This <strong>Heat Loss</strong> is actually the coaster’s kinetic energy changing form again! The energy of motion is transformed into heat energy that warms up the wheels and the track, and then escapes into the air.<br><br>This is the law of <strong>Energy Conservation</strong> in action: the total energy never disappears, it just changes from potential to kinetic to heat. My job is to calculate exactly how much energy will be lost to friction on every part of the track, so the coaster has just enough speed to get back to the station safely. It's a giant energy puzzle!",
+    "think_abouts": [
+      "What would happen to the coaster's speed if the first hill was much shorter?",
+      "Why do you think roller coaster tracks are made of smooth steel instead of a rough material like concrete?"
+    ],
+    "go_deeper": "How would a very windy day affect the coaster's speed? (Hint: Think about Air Resistance pushing against the car).",
+    "margin_defs": [
+      {
+        "term": "Friction",
+        "definition": "A force that slows things down when they rub together."
+      },
+      {
+        "term": "Kinetic Energy",
+        "definition": "The energy of a moving object."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Huang, where does the 'lost' energy from the coaster's motion go?"
+    ],
+    "word_bank": [
+      "Potential Energy",
+      "Kinetic Energy",
+      "Friction",
+      "Heat Loss",
+      "Energy Conservation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Potential",
+        "spanish": "Potencial"
+      },
+      {
+        "english": "Conservation",
+        "spanish": "Conservación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Potential Energy",
+      "definition": "Stored energy an object has because of its position or height — like a roller coaster waiting at the top of a hill.",
+      "use_sentence": "The archer pulled back the bowstring, filling it with potential energy.",
+      "phonetic": null,
+      "cognate": "Energía Potencial"
+    },
+    {
+      "term": "Kinetic Energy",
+      "definition": "The energy of motion — the faster something moves, the more kinetic energy it has.",
+      "use_sentence": "When the pitcher threw the ball, it had a lot of kinetic energy.",
+      "phonetic": null,
+      "cognate": "Energía Cinética"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that happens when two surfaces rub together, slowing things down and creating heat.",
+      "use_sentence": "The friction between the brake pads and the bike wheel helped it stop.",
+      "phonetic": null,
+      "cognate": "Fricción"
+    },
+    {
+      "term": "Heat Loss",
+      "definition": "Energy that transforms into heat because of friction — this energy leaves the motion system.",
+      "use_sentence": "You can feel the heat loss when you rub your hands together quickly.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Energy Conservation",
+      "definition": "The scientific law that energy is never created or destroyed — it only changes form.",
+      "use_sentence": "Because of energy conservation, the light bulb turns electrical energy into light and heat energy.",
+      "phonetic": null,
+      "cognate": "Conservación de Energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Huang designs coasters to be thrilling but safe. How does understanding friction and heat loss help her make sure a coaster doesn't go too fast or too slow?",
+      "frame": "Understanding friction helps keep riders safe because..."
+    },
+    {
+      "prompt": "If you were designing the final part of a roller coaster track to help it stop, would you want a lot of friction or a little? Explain your choice using ideas from the story.",
+      "frame": "For the final part of the track, I would want ___ friction because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

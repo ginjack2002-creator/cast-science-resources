@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. Vega's Guide to Keeping Cool",
+    "text": "Hi, I’m Dr. Isabel Vega. As a thermal systems engineer at NASA, my job is to figure out how heat moves. It might sound complex, but you see the basics every day with a hot drink.<br><br>Why does your coffee cool down? Heat always flows from a hotter object to a cooler environment. The key is the <strong>temperature difference</strong>, which is the gap between your hot coffee and the cooler room. The bigger this gap, the faster the heat wants to escape. This speed is called the <strong>transfer rate</strong>. When your coffee is piping hot, the temperature difference is large, so the transfer rate is high, and it cools down quickly.<br><br>But as the coffee cools, the temperature difference shrinks. A smaller gap means a slower <strong>transfer rate</strong>. This pattern, where something changes fast at first and then slows down as it approaches a limit, is called <strong>exponential decay</strong>. Eventually, your coffee’s temperature will match the room’s temperature. At that point, the temperature difference is zero, the net heat transfer stops, and they have reached <strong>thermal equilibrium</strong>—a state of balance. Your coffee will never get colder than the room it's in.<br><br>At NASA, I use this exact same principle, described by Newton's Law of Cooling, to protect our spacecraft. In space, the temperature difference can be extreme—from scorching hot in the sun to freezing cold in the shadows. We have to design systems that control the transfer rate to keep our astronauts and equipment safe. We might use special white paint to reflect heat or insulating blankets to slow it down, just like a thermos keeps your drink warm.",
+    "think_abouts": [
+      "Why does the steam from a hot drink seem to disappear as it cools?",
+      "What would happen if you put an ice cube in the room? How would its temperature change over time?"
+    ],
+    "go_deeper": "How would using a metal cup versus a ceramic mug change the coffee's cooling curve? Why?",
+    "margin_defs": [
+      {
+        "term": "Temperature Difference",
+        "definition": "The gap in heat between two objects."
+      },
+      {
+        "term": "Transfer Rate",
+        "definition": "The speed that heat moves."
+      },
+      {
+        "term": "Thermal Equilibrium",
+        "definition": "When objects reach the same temperature."
+      }
+    ],
+    "check_prompts": [
+      "What is the main reason a hot drink cools down faster at the beginning than at the end?"
+    ],
+    "word_bank": [
+      "temperature",
+      "transfer",
+      "equilibrium",
+      "environment",
+      "engineer",
+      "system"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniera"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Thermal Equilibrium",
+      "definition": "The state reached when two objects or a system and its surroundings are at the same temperature and net heat transfer stops.",
+      "use_sentence": "After an hour on the counter, the hot tea and the room reached thermal equilibrium.",
+      "phonetic": "THUR-muhl ee-kwuh-LIB-ree-uhm",
+      "cognate": "equilibrio térmico"
+    },
+    {
+      "term": "Temperature Difference",
+      "definition": "The gap in temperature between an object and its surrounding environment, which drives the flow of heat.",
+      "use_sentence": "The large temperature difference between the freezer and the kitchen made the ice melt quickly.",
+      "phonetic": null,
+      "cognate": "diferencia de temperatura"
+    },
+    {
+      "term": "Transfer Rate",
+      "definition": "The speed at which thermal energy moves from a hot object to its cooler surroundings, often measured in joules per second.",
+      "use_sentence": "A metal spoon has a high transfer rate, which is why it quickly feels hot in a bowl of soup.",
+      "phonetic": null,
+      "cognate": "tasa de transferencia"
+    },
+    {
+      "term": "Exponential Decay",
+      "definition": "A pattern of decrease where the rate of change slows over time, resulting in a curve that gets flatter as it approaches a limit.",
+      "use_sentence": "The cooling of the pizza followed a curve of exponential decay, losing heat fast at first and then more slowly.",
+      "phonetic": "ek-spoh-NEN-shuhl dee-KAY",
+      "cognate": "decaimiento exponencial"
+    },
+    {
+      "term": "Newton's Law of Cooling",
+      "definition": "The scientific principle stating that the rate of an object's heat loss is directly proportional to the temperature difference between the object and its surroundings.",
+      "use_sentence": "Newton's Law of Cooling explains why a slightly warm drink takes a long time to cool the last few degrees.",
+      "phonetic": null,
+      "cognate": "Ley de Enfriamiento de Newton"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Vega protects spacecraft from extreme heat and cold. What are some everyday things we use to control heat transfer (like coolers or winter coats), and how do you think they work?",
+      "frame": "One thing we use to control heat is a ___, and I think it works by ___."
+    },
+    {
+      "prompt": "The story says the cooling pattern follows an 'exponential decay' curve. Besides a cooling drink, where else might you see something change quickly at first and then slow down over time?",
+      "frame": "I think ___ might also change quickly at first and then slow down because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

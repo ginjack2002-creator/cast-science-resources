@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Hassan and the Cell's Energy Factory",
+    "text": "Hi, I’m Dr. Amina Hassan. I am a scientist who studies how your cells make energy. Think of each cell in your body as a tiny factory. I want to know exactly how these factories work, and what happens when they break down.<br><br>Here’s the simple plan for a cell factory:<br>1. The factory needs fuel. This is glucose from the food you eat.<br>2. The factory needs oxygen. This comes from the air you breathe.<br>3. These two things go into the cell’s power plants, the <strong>mitochondria</strong>.<br><br>Inside the <strong>mitochondria</strong>, a special process happens. It’s called <strong>cellular respiration</strong>. This process creates a type of energy money called <strong>ATP</strong>. The cell spends <strong>ATP</strong> on everything it does. A high <strong>cell growth rate</strong> means the cell has plenty of <strong>ATP</strong> to build and divide.<br><br>But every factory makes trash. The cell factory makes <strong>metabolic waste</strong>, like carbon dioxide. If the cell works too hard, waste can build up. This is bad for the cell. It’s like a factory floor covered in trash. Everything slows down.<br><br>My job is to study this whole system. I want to learn how to help our cell factories run better. This research could help us fight diseases where the cell’s energy system is broken.",
+    "think_abouts": [
+      "What are the two 'ingredients' a cell needs to make energy?",
+      "Why is making too much waste a problem for a cell?"
+    ],
+    "go_deeper": "When you run really fast, your muscles feel tired and you breathe hard. How might this relate to your cells not getting enough oxygen to run their 'factories' efficiently?",
+    "margin_defs": [
+      {
+        "term": "ATP",
+        "definition": "The energy money for the cell."
+      },
+      {
+        "term": "Mitochondria",
+        "definition": "The cell's power plants."
+      }
+    ],
+    "check_prompts": [
+      "What special energy money does the cell make?"
+    ],
+    "word_bank": [
+      "Mitochondria",
+      "ATP",
+      "Cellular Respiration",
+      "Metabolic Waste",
+      "Cell Growth Rate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Cell",
+        "spanish": "Célula"
+      },
+      {
+        "english": "Respiration",
+        "spanish": "Respiración"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mitochondria",
+      "definition": "The parts of a cell that act like tiny power plants. They turn food and oxygen into energy.",
+      "use_sentence": "The mitochondria in your muscle cells work hard when you exercise.",
+      "phonetic": "my-toh-KON-dree-uh",
+      "cognate": "Mitocondria"
+    },
+    {
+      "term": "ATP",
+      "definition": "The special molecule that stores and carries energy in cells. It's like the cell's battery.",
+      "use_sentence": "A cell needs a lot of ATP to grow and divide.",
+      "phonetic": "A-T-P",
+      "cognate": null
+    },
+    {
+      "term": "Cellular Respiration",
+      "definition": "The process cells use to turn food (glucose) and oxygen into ATP energy.",
+      "use_sentence": "You breathe in oxygen so your cells can perform cellular respiration.",
+      "phonetic": "SEL-yuh-ler res-puh-RAY-shun",
+      "cognate": "Respiración celular"
+    },
+    {
+      "term": "Metabolic Waste",
+      "definition": "The leftover trash, like carbon dioxide, that is made during cell processes.",
+      "use_sentence": "Your blood carries metabolic waste away from your cells to be removed.",
+      "phonetic": "meh-tuh-BALL-ik wayst",
+      "cognate": null
+    },
+    {
+      "term": "Cell Growth Rate",
+      "definition": "How quickly a cell can grow bigger and make copies of itself.",
+      "use_sentence": "A good supply of energy leads to a healthy cell growth rate.",
+      "phonetic": "sel groth rayt",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hassan compares a cell to a factory. What is another thing you could compare a cell to? Explain your idea.",
+      "frame": "I could compare a cell to a ___ because ___."
+    },
+    {
+      "prompt": "What do you think happens to your 'cell factories' when you are sick or very tired?",
+      "frame": "When I am sick, I think my cell factories ___."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Hassan to understand how our cells make energy?",
+      "frame": "It is important for scientists to study this because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

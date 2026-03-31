@@ -1,0 +1,113 @@
+{
+  "story": {
+    "title": "Dr. Gutierrez and the Arctic Energy Puzzle",
+    "text": "Hi, I'm Dr. Rosa Gutierrez. As a Wildlife Thermoregulation Biologist at the University of Alaska, I study how animals survive extreme cold. It's a fascinating puzzle of energy. Staying warm requires energy, and that energy comes from food. But in the Arctic winter, both warmth and food are hard to find.<br><br>Imagine an arctic fox as the temperature plummets. Its body must work harder to maintain its internal temperature. This is <strong>thermoregulation</strong> (how an animal controls its body temperature). To generate more heat, the fox's internal engine speeds up. We call this its <strong>metabolic rate</strong> (how fast its body burns energy). When the outside temperature drops, the metabolic rate must increase to keep the fox from freezing.<br><br>But a faster engine needs more fuel. If the fox can’t find enough food, its survival chance drops quickly. This is where amazing <strong>adaptations</strong> (special features that help an animal survive) come in. A polar bear has thick fur and a heavy layer of blubber. This is fantastic <strong>insulation</strong> (a layer that slows down heat loss), like wearing the world's best winter coat. Because so little heat escapes, the bear's body doesn't need to burn as much energy. Good insulation keeps its metabolic rate lower, saving precious energy.<br><br>Some animals use a different trick: <strong>hibernation</strong> (a deep, energy-saving sleep). A hibernating groundhog can slow its heart to just a few beats per minute! My work involves tracking these animals to see how their energy balance changes, helping us protect them in a changing world.",
+    "think_abouts": [
+      "Why is having good insulation so important when food is hard to find?",
+      "What would happen to an animal that didn't grow a thick winter coat before the temperature dropped?"
+    ],
+    "go_deeper": "Emperor penguins huddle in large groups to share warmth. How does this behavior change the 'Temperature' factor for the penguins on the inside of the huddle?",
+    "margin_defs": [
+      {
+        "term": "Thermoregulation",
+        "definition": "how an animal controls its body temperature"
+      },
+      {
+        "term": "Metabolic Rate",
+        "definition": "how fast an animal's body burns energy"
+      },
+      {
+        "term": "Adaptation",
+        "definition": "a feature that helps an animal survive"
+      },
+      {
+        "term": "Insulation",
+        "definition": "a layer that slows heat loss"
+      },
+      {
+        "term": "Hibernation",
+        "definition": "a deep, energy-saving sleep"
+      }
+    ],
+    "check_prompts": [
+      "What are two examples of adaptations that help animals survive the cold?"
+    ],
+    "word_bank": [
+      "thermoregulation",
+      "metabolic rate",
+      "adaptation",
+      "insulation",
+      "hibernation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "animal",
+        "spanish": "animal"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "adaptation",
+        "spanish": "adaptación"
+      },
+      {
+        "english": "hibernation",
+        "spanish": "hibernación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Insulation",
+      "definition": "A layer that slows down heat loss, like fur, fat, or feathers that keep body heat from escaping.",
+      "use_sentence": "A polar bear's thick layer of blubber provides excellent insulation against the arctic cold.",
+      "phonetic": "in-suh-LAY-shun",
+      "cognate": "aislamiento"
+    },
+    {
+      "term": "Metabolic Rate",
+      "definition": "How fast an animal's body burns energy to stay warm and alive. Cold temperatures make it speed up.",
+      "use_sentence": "When the weather got colder, the mouse's metabolic rate increased to keep its body warm.",
+      "phonetic": "meh-tuh-BALL-ick RAYT",
+      "cognate": null
+    },
+    {
+      "term": "Adaptation",
+      "definition": "A body feature or behavior that helps an animal survive in its environment over many generations.",
+      "use_sentence": "The arctic fox's white fur is an adaptation that helps it blend in with the snow.",
+      "phonetic": "ad-ap-TAY-shun",
+      "cognate": "adaptación"
+    },
+    {
+      "term": "Hibernation",
+      "definition": "A deep sleep-like state where an animal dramatically lowers its metabolic rate to save energy during winter.",
+      "use_sentence": "During hibernation, the bear's heart rate slowed down to save energy.",
+      "phonetic": "hy-ber-NAY-shun",
+      "cognate": "hibernación"
+    },
+    {
+      "term": "Thermoregulation",
+      "definition": "The process an animal uses to control its body temperature and keep it stable.",
+      "use_sentence": "Panting is a form of thermoregulation that helps a dog cool down on a hot day.",
+      "phonetic": "ther-mo-reg-yoo-LAY-shun",
+      "cognate": "termoregulación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "The story explains that a lower metabolic rate helps animals save energy. Why would a very high metabolic rate be dangerous for an animal in winter?",
+      "frame": "A high metabolic rate could be dangerous because ___."
+    },
+    {
+      "prompt": "Dr. Gutierrez studies animal adaptations for cold. What are some 'adaptations' humans use to survive winter? Think about clothing, housing, and behavior.",
+      "frame": "One way humans adapt to winter is by ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Torres Models the Dance of Atoms",
+    "text": "My name is Dr. Michael Torres. I am a computational chemist. I use powerful computers to model chemical reactions.<br><br>My models show how atoms rearrange. We start with ingredients called <strong>reactants</strong>. The reaction changes them into new substances called <strong>products</strong>. Sometimes it looks like things disappear. A log burns and becomes a small pile of ash. But the atoms did not disappear! They just rearranged to become invisible gases.<br><br>This is the law of <strong>conservation of mass</strong>. The total mass always stays the same. Atoms are not created or destroyed. My job is to predict the <strong>reaction rate</strong>. This is how fast reactants turn into products. I can change things in my computer model. Higher temperature makes atoms move faster. This speeds up the reaction. More <strong>reactants</strong> also make the reaction faster. As reactants get used up, the reaction slows down. We want to make useful <strong>products</strong> safely and quickly. My models help us do that.",
+    "think_abouts": [
+      "Why does Dr. Torres say a burning log doesn't really 'disappear'?",
+      "What are two things Dr. Torres can change in his model to make a reaction go faster?"
+    ],
+    "go_deeper": "Dr. Torres sometimes adds a 'catalyst' to his models. A catalyst makes a reaction 1,000 times faster but doesn't get used up. How might this be useful for making things like medicine?",
+    "margin_defs": [
+      {
+        "term": "model",
+        "definition": "A computer simulation or copy of a real process."
+      },
+      {
+        "term": "rearrange",
+        "definition": "To move into new positions or patterns."
+      }
+    ],
+    "check_prompts": [
+      "True or False: In a chemical reaction, the total mass goes down as reactants are used up."
+    ],
+    "word_bank": [
+      "Reactants",
+      "Products",
+      "Reaction Rate",
+      "Conservation of Mass"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      },
+      {
+        "english": "product",
+        "spanish": "producto"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reactant",
+      "definition": "A starting substance in a chemical reaction that gets changed.",
+      "use_sentence": "In the experiment, vinegar and baking soda were the reactants.",
+      "phonetic": "ree-AK-tint",
+      "cognate": "reactivo"
+    },
+    {
+      "term": "Product",
+      "definition": "A new substance that is formed by a chemical reaction.",
+      "use_sentence": "The bubbles of gas were a product of the reaction.",
+      "phonetic": "PROD-ukt",
+      "cognate": "producto"
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The scientific law that says mass is never created or destroyed in a reaction.",
+      "use_sentence": "Because of conservation of mass, the total weight was the same before and after mixing.",
+      "phonetic": "kon-ser-VAY-shun ov mass",
+      "cognate": "conservación de la masa"
+    },
+    {
+      "term": "Reaction Rate",
+      "definition": "The speed of a chemical reaction.",
+      "use_sentence": "We added heat to increase the reaction rate and make it go faster.",
+      "phonetic": "ree-AK-shun rayt",
+      "cognate": "tasa de reacción"
+    },
+    {
+      "term": "Chemical Equation",
+      "definition": "A way to write out a chemical reaction using symbols.",
+      "use_sentence": "The chemical equation showed how H₂ and O₂ combine to make H₂O.",
+      "phonetic": "KEM-ih-kul ee-KWAY-zhun",
+      "cognate": "ecuación química"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Torres models reactions to make useful products. What is a product you use every day that is made through a chemical reaction?",
+      "frame": "A product I use that is made from a chemical reaction is ___ because ___."
+    },
+    {
+      "prompt": "If you wanted to slow down a chemical reaction, like food spoiling in the kitchen, what is one thing you could change based on the reading?",
+      "frame": "To slow down a reaction, I could change the ___ by making it lower."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

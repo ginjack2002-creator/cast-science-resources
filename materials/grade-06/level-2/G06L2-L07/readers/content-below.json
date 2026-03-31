@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Nakamura: Why Failure is a Feature",
+    "text": "Hi, I’m Dr. Robert Nakamura. At Stanford, I study how engineers turn ideas into real things. The secret isn't being perfect. The secret is learning from mistakes. We call this the engineering design process.<br><br>It’s a cycle that makes ideas better over time.<br>1. First, we define the problem. What are the <strong>criteria</strong> for success? What are the <strong>constraints</strong>, like money or materials?<br>2. Next, we research and design a solution on paper. A harder problem often means the first design has hidden flaws.<br>3. Then, we build a <strong>prototype</strong>. This is a simple model to test our ideas.<br>4. We test the prototype. It almost always fails in some way. This is good! Failure gives us data.<br>5. Finally, we do another <strong>iteration</strong>. We use the data to improve our design and build a new prototype.<br><br>Each cycle makes the solution stronger. We also test with real users. Their feedback is a gift. It shows us problems we couldn't see. We might also make a <strong>trade-off</strong>, like using a cheaper material that is still strong enough. The goal is not to avoid failure. The goal is to fail, learn, and improve until the design works.",
+    "think_abouts": [
+      "Why is finding a problem during testing a good thing for an engineer?",
+      "How does doing more research help an engineer create a better first design?"
+    ],
+    "go_deeper": "Think of a product you use, like a phone or a water bottle. What is one trade-off its designers might have made (for example, making it lighter but less durable)?",
+    "margin_defs": [
+      {
+        "term": "data",
+        "definition": "information collected during tests"
+      },
+      {
+        "term": "feedback",
+        "definition": "opinions from users about what works and what doesn't"
+      }
+    ],
+    "check_prompts": [
+      "What is the name for the repeating test-and-improve cycle?"
+    ],
+    "word_bank": [
+      "criteria",
+      "constraints",
+      "prototype",
+      "iteration",
+      "trade-off"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "process",
+        "spanish": "proceso"
+      },
+      {
+        "english": "design",
+        "spanish": "diseño"
+      },
+      {
+        "english": "solution",
+        "spanish": "solución"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Criteria",
+      "definition": "The goals a project must achieve to be successful.",
+      "use_sentence": "The criteria for the new phone case were that it had to be waterproof and protect the screen.",
+      "phonetic": "kry-TEER-ee-uh",
+      "cognate": "criterios"
+    },
+    {
+      "term": "Constraints",
+      "definition": "The limits on a project, such as time, money, or materials.",
+      "use_sentence": "A major constraint was that the whole project had to be finished in three weeks.",
+      "phonetic": "kuhn-STRAYNTS",
+      "cognate": null
+    },
+    {
+      "term": "Prototype",
+      "definition": "A first model of a design that is used for testing.",
+      "use_sentence": "The team built a simple cardboard prototype of the chair to check its size and shape.",
+      "phonetic": "PROH-toh-type",
+      "cognate": "prototipo"
+    },
+    {
+      "term": "Iteration",
+      "definition": "A cycle of testing a design, finding problems, and making improvements.",
+      "use_sentence": "After the first iteration, the engineers made the robot's legs stronger.",
+      "phonetic": "it-er-AY-shun",
+      "cognate": "iteración"
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A choice where you give up one benefit to gain another.",
+      "use_sentence": "The engineer made a trade-off by using a lighter plastic that was not as strong.",
+      "phonetic": "TRAYD-off",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine you are designing a new school lunchbox. What are two important criteria (goals) and one constraint (limit) you would have?",
+      "frame": "For my lunchbox design, two criteria would be ___ and ___. A constraint would be ___."
+    },
+    {
+      "prompt": "Why is it important for engineers to get feedback from people who will actually use the product?",
+      "frame": "It's important to get feedback from users because ___."
+    },
+    {
+      "prompt": "Describe a time you had to try something more than once to get it right. How did your first attempt help you succeed later?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

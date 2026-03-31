@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Tran's Water Balance: Modeling an Underground System",
+    "text": "My name is Dr. Kevin Tran, and as a groundwater hydrologist for the U.S. Geological Survey, I essentially predict the future of water. You can't see the massive underground rivers and lakes I study, but your community depends on them every day. My team and I build intricate computer models that simulate how water moves beneath our feet, helping us understand one of our biggest challenges: ensuring there’s enough water for a growing world.<br><br>Consider a community where the <strong>Population Size</strong> is expanding, which naturally causes the <strong>Water Usage Rate</strong> to climb. Every new home, every farm, and every business places a greater demand on the water supply. Most of that supply is <strong>Groundwater</strong>, pumped from ancient underground layers of rock and sand called <strong>Aquifers</strong>. My fundamental task is to calculate the balance. On one side, I input data on the <strong>Rainfall Amount</strong>, which is the primary way aquifers get recharged. On the other side, I track how much water is being pumped out.<br><br>When withdrawals outpace deposits, the <strong>Groundwater Level</strong> drops, sometimes dramatically. This decline directly threatens <strong>Water Availability</strong>, creating intense competition for a shrinking resource. My models, however, must account for even more complexity. For example, Soil Permeability is a critical factor; sandy soils allow rain to percolate down efficiently, while dense clay soils can prevent recharge, causing precious water to run off. Furthermore, in arid regions, the Evapotranspiration Rate—water lost to the atmosphere from plants and soil—can be enormous. By modeling these interconnected systems, I can project when an aquifer might be critically depleted. This isn't about creating fear; it's about providing crucial data so that communities can make informed decisions, such as investing in high-efficiency Agricultural Irrigation or exploring water recycling programs, securing their water future.",
+    "think_abouts": [
+      "How does a scientist like Dr. Tran help a community prepare for the future?",
+      "What are the trade-offs a growing community must consider when it comes to water use?"
+    ],
+    "go_deeper": "Dr. Tran mentioned that Soil Permeability affects how much rainwater reaches an aquifer. How might a city's growth, with its construction of roads and buildings (which are impermeable), impact the groundwater level even if rainfall stays the same?",
+    "margin_defs": [
+      {
+        "term": "Hydrologist",
+        "definition": "A scientist who studies the movement, distribution, and quality of water."
+      },
+      {
+        "term": "Depleted",
+        "definition": "Used up; greatly reduced in amount."
+      },
+      {
+        "term": "Percolate",
+        "definition": "To filter or seep gradually through a porous surface or substance."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Tran, what is the main cause of dropping groundwater levels in a growing community?"
+    ],
+    "word_bank": [
+      "Groundwater",
+      "Aquifer",
+      "Water Usage Rate",
+      "Water Availability",
+      "Population"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Region",
+        "spanish": "Región"
+      },
+      {
+        "english": "Community",
+        "spanish": "Comunidad"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Groundwater",
+      "definition": "Water that exists underground in saturated zones beneath the land surface. It fills the pores and fractures in underground materials such as sand, gravel, and other rock.",
+      "use_sentence": "Farmers drilled a new well to access groundwater for their crops during the drought.",
+      "phonetic": null,
+      "cognate": "Agua subterránea"
+    },
+    {
+      "term": "Aquifer",
+      "definition": "A body of porous rock or sediment saturated with groundwater. Groundwater enters an aquifer as precipitation seeps through the soil.",
+      "use_sentence": "The city's entire water supply is pumped from a deep underground aquifer.",
+      "phonetic": "AK-wi-fer",
+      "cognate": "Acuífero"
+    },
+    {
+      "term": "Water Usage Rate",
+      "definition": "The volume of water consumed by a population over a specific period of time, often measured in gallons per day.",
+      "use_sentence": "As the summer got hotter, the community's water usage rate increased significantly.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Water Availability",
+      "definition": "The degree to which a sufficient quantity and quality of water is accessible for a community's needs.",
+      "use_sentence": "Low snowfall in the mountains reduced the water availability for the towns downstream.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were a city planner using Dr. Tran's model, what are two difficult choices you might have to make if the model predicts a water shortage in 10 years?",
+      "frame": null
+    },
+    {
+      "prompt": "Besides farming and household use, what other activities in a community require large amounts of water?",
+      "frame": "Besides farming and household use, I think ___ also requires a lot of water because ___."
+    },
+    {
+      "prompt": "Dr. Tran models systems to predict the future. Why is it important for scientists to share their predictions with the public and with leaders?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

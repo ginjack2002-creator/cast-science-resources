@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Park and the Invisible Factory",
+    "text": "People ask me a big question. Where does a giant tree get its mass? It does not come from the soil.<br><br>I am Dr. Christina Park. I study how plants build themselves. They use an amazing process. It is called <strong>photosynthesis</strong>. Plants are like tiny factories. They use sunlight for energy. They take in carbon dioxide from the air. They drink water from their roots.<br><br>Inside a leaf, special parts called <strong>chloroplasts</strong> do the work. They use light energy to change these ingredients. This change is a chemical reaction. The plant makes a sugar called <strong>glucose</strong>. This sugar is food for the plant.<br><br>The plant uses <strong>glucose</strong> to grow bigger. It builds new leaves, stems, and roots. This is how a tiny seed becomes a giant tree. The mass comes from the air! The process is called <strong>carbon fixation</strong>. The plant fixes carbon from the air into its body.<br><br>But sometimes one thing is missing. Maybe there is not enough water. This is a <strong>limiting factor</strong>. The factory slows down. My job is to understand these factors. We can help crops grow better.",
+    "think_abouts": [
+      "What are the three main 'ingredients' for photosynthesis?",
+      "If a plant is in the dark, what will happen to its glucose production?"
+    ],
+    "go_deeper": "Dr. Park mentioned that plants take in CO2 through tiny pores. What problem might a plant have if it keeps these pores open all day in a hot, dry desert?",
+    "margin_defs": [
+      {
+        "term": "mass",
+        "definition": "the amount of 'stuff' in an object"
+      },
+      {
+        "term": "process",
+        "definition": "a series of actions to get a result"
+      }
+    ],
+    "check_prompts": [
+      "The mass of a tree comes mostly from the ___."
+    ],
+    "word_bank": [
+      "Photosynthesis",
+      "Glucose",
+      "Chloroplast",
+      "Carbon Fixation",
+      "Limiting Factor"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "process",
+        "spanish": "proceso"
+      },
+      {
+        "english": "carbon",
+        "spanish": "carbono"
+      },
+      {
+        "english": "factor",
+        "spanish": "factor"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The process plants use to turn light, water, and air into food.",
+      "use_sentence": "Photosynthesis helps plants make their own energy from sunlight.",
+      "phonetic": "foh-toh-SIN-thuh-sis",
+      "cognate": "fotosíntesis"
+    },
+    {
+      "term": "Glucose",
+      "definition": "A type of sugar that plants make for energy and growth.",
+      "use_sentence": "The plant uses glucose to build strong stems and new leaves.",
+      "phonetic": "GLOO-kohs",
+      "cognate": "glucosa"
+    },
+    {
+      "term": "Chloroplast",
+      "definition": "The tiny green part inside a plant cell where photosynthesis happens.",
+      "use_sentence": "A leaf has millions of chloroplasts to catch sunlight.",
+      "phonetic": "KLOR-oh-plast",
+      "cognate": "cloroplasto"
+    },
+    {
+      "term": "Carbon Fixation",
+      "definition": "The process of taking carbon from the air and turning it into solid parts of the plant.",
+      "use_sentence": "Through carbon fixation, a plant adds mass using carbon from the air.",
+      "phonetic": "KAR-buhn fik-SAY-shun",
+      "cognate": "fijación de carbono"
+    },
+    {
+      "term": "Limiting Factor",
+      "definition": "The one resource that is in shortest supply and stops a process from going faster.",
+      "use_sentence": "Lack of water was the limiting factor for the plant's growth.",
+      "phonetic": "LIM-it-ing FAK-ter",
+      "cognate": "factor limitante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about the 'Big Question'. How does Dr. Park's research help explain where the 2 million pounds of a redwood tree comes from?",
+      "frame": "Dr. Park's research shows that most of the tree's mass comes from..."
+    },
+    {
+      "prompt": "If you wanted to help a plant grow as fast as possible, what three things would you need to provide? Which one might be the hardest to control?",
+      "frame": "To help a plant grow fast, I would provide ___, ___, and ___. The hardest one to control would be..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

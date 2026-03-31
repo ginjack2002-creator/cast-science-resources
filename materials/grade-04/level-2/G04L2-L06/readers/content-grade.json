@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Yamamoto's Shake-Proof Solutions",
+    "text": "Hello! I’m Dr. Takeshi Yamamoto, and I’m an Earthquake Resilience Engineer. My job is to solve a life-or-death puzzle: why does one building crumble during an earthquake while another right next to it survives?<br><br>It all starts with <strong>Earthquake Magnitude</strong>, which is a way to measure how much energy a quake releases. A higher magnitude creates a much stronger <strong>Shaking Force</strong> that gets transferred from the moving ground into the building itself. This force is what we have to design for. If a building is too stiff and rigid, that powerful shaking can cause terrible <strong>Structural Damage</strong>. This means cracks in the walls, collapsing floors, and broken foundations. When a building is badly damaged, the people inside are not safe.<br><br>So, what’s the secret to a safer building? The answer is <strong>Flexibility</strong>! A flexible building is designed to bend and sway with the earthquake’s motion, like a tree bending in a strong wind. This movement absorbs the shaking energy safely. In my lab, we use <strong>Engineering Design</strong>—a process of using science and creativity to solve problems—to test new ideas. We build model buildings and put them on giant ‘shake tables’ that copy the motion of a real earthquake. We watch to see if our designs bend safely or break apart. My favorite technology is base isolation, where we put rubber and steel pads under a building to absorb almost all the shaking. Our goal is to make sure that when the next big one hits, our buildings bend, but they don't break.",
+    "think_abouts": [
+      "Think about a cooked spaghetti noodle versus a dry one. Which one has more flexibility? How does this relate to building design?",
+      "Why is it important for engineers like Dr. Yamamoto to test their building designs on a shake table before they are built in a city?"
+    ],
+    "go_deeper": "How might building on soft, sandy soil change how a building shakes compared to building on solid rock?",
+    "margin_defs": [
+      {
+        "term": "Resilience",
+        "definition": "The ability to withstand or recover quickly from difficult conditions."
+      },
+      {
+        "term": "Base Isolation",
+        "definition": "Pads under a building that absorb shaking, separating it from the ground's movement."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Yamamoto, what is the secret to making a building safer during an earthquake?"
+    ],
+    "word_bank": [
+      "Earthquake Magnitude",
+      "Flexibility",
+      "Shaking Force",
+      "Structural Damage",
+      "Engineering Design"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "structure",
+        "spanish": "estructura"
+      },
+      {
+        "english": "flexible",
+        "spanish": "flexible"
+      },
+      {
+        "english": "design",
+        "spanish": "diseño"
+      },
+      {
+        "english": "absorb",
+        "spanish": "absorber"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Earthquake Magnitude",
+      "definition": "A measurement of how much energy an earthquake releases; higher magnitude means stronger shaking.",
+      "use_sentence": "The news reported that the earthquake's magnitude was 7.0, which is very strong.",
+      "phonetic": null,
+      "cognate": "magnitud"
+    },
+    {
+      "term": "Flexibility",
+      "definition": "The ability of a structure to bend, sway, or absorb movement without breaking, like a tree bending in the wind.",
+      "use_sentence": "The engineer increased the building's flexibility so it could survive the shaking forces.",
+      "phonetic": "/flɛksəˈbɪlɪti/",
+      "cognate": "flexibilidad"
+    },
+    {
+      "term": "Shaking Force",
+      "definition": "The actual force that gets transferred from the ground into a building during an earthquake.",
+      "use_sentence": "The strong shaking force made the windows rattle and the walls groan.",
+      "phonetic": null,
+      "cognate": "fuerza"
+    },
+    {
+      "term": "Structural Damage",
+      "definition": "Cracks, breaks, and collapses in a building caused by the shaking force being greater than the building's strength.",
+      "use_sentence": "After the quake, inspectors checked every building for signs of structural damage.",
+      "phonetic": null,
+      "cognate": "daño estructural"
+    },
+    {
+      "term": "Engineering Design",
+      "definition": "The process of creating solutions to problems using science, math, and creativity; earthquake engineers design safer buildings.",
+      "use_sentence": "The team used a creative engineering design to make the bridge both strong and beautiful.",
+      "phonetic": null,
+      "cognate": "diseño de ingeniería"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were an engineer designing a skyscraper in a city with many earthquakes, what is one flexible feature you would add and why?",
+      "frame": "To make my skyscraper safer, I would add ___ because it would help the building ___."
+    },
+    {
+      "prompt": "Dr. Yamamoto says his goal is to make sure buildings bend but don't break. What are some things in your classroom or home that are designed to be flexible?",
+      "frame": "One thing in my classroom that is flexible is ___, and it helps by ___."
+    },
+    {
+      "prompt": "Why is it important for engineers to test models of their buildings before building the real thing?",
+      "frame": "It is important to test models first so that engineers can ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Baptiste and the Ocean's Food Web Puzzle",
+    "text": "Hello! I’m Dr. Andre Baptiste. I am a marine food web ecologist. I study the ocean’s food web puzzle. A food web shows us who eats whom. It helps us see how energy moves from one living thing to another in the ocean.<br><br>Think about a simple food chain in the cold ocean. <br>1. It starts with tiny plants called phytoplankton. They are <strong>producers</strong>. They make their own food from sunlight.<br>2. Next are krill, which are like tiny shrimp. They eat the phytoplankton. Krill are <strong>primary consumers</strong>.<br>3. Then, animals like penguins eat the krill. Penguins are <strong>secondary consumers</strong>.<br><br>Now, let's ask our big question. What happens if the krill population disappears? <br>1. The penguins would lose their main food. Their population would go down.<br>2. The phytoplankton might grow too much. There would be fewer animals to eat them.<br><br>This huge chain reaction is called a <strong>trophic cascade</strong>. When one part of the food web is removed, the whole system changes. My job is to understand these connections. Understanding the puzzle helps us protect our amazing oceans.",
+    "think_abouts": [
+      "What is the first step in the ocean food chain Dr. Baptiste described?",
+      "What could happen to penguins if their food source, krill, disappeared?"
+    ],
+    "go_deeper": "How might a new, invasive type of crab that eats the same food as krill affect the food web?",
+    "margin_defs": [
+      {
+        "term": "ecologist",
+        "definition": "A scientist who studies how living things connect to each other and their world."
+      },
+      {
+        "term": "microscopic",
+        "definition": "So small you need a microscope to see it."
+      },
+      {
+        "term": "population",
+        "definition": "The total number of one kind of animal or plant in an area."
+      }
+    ],
+    "check_prompts": [
+      "Who is Dr. Baptiste and what does he study?",
+      "What is a producer in the ocean?",
+      "What is a trophic cascade?"
+    ],
+    "word_bank": [
+      "Producer",
+      "Primary Consumer",
+      "Secondary Consumer",
+      "Trophic Cascade",
+      "Food Web"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "ecologist",
+        "spanish": "ecólogo"
+      },
+      {
+        "english": "ocean",
+        "spanish": "océano"
+      },
+      {
+        "english": "animal",
+        "spanish": "animal"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Producer",
+      "definition": "A living thing, like a plant, that makes its own food from sunlight.",
+      "use_sentence": "The grass in a field is a producer because it uses the sun to make food.",
+      "phonetic": "pro-DOO-sur",
+      "cognate": "productor"
+    },
+    {
+      "term": "Primary Consumer",
+      "definition": "An animal that eats producers.",
+      "use_sentence": "A rabbit that eats grass is a primary consumer.",
+      "phonetic": "PRY-mair-ee con-SOO-mur",
+      "cognate": "consumidor primario"
+    },
+    {
+      "term": "Secondary Consumer",
+      "definition": "An animal that eats primary consumers.",
+      "use_sentence": "A hawk that eats a rabbit is a secondary consumer.",
+      "phonetic": "SEK-un-der-ee con-SOO-mur",
+      "cognate": "consumidor secundario"
+    },
+    {
+      "term": "Trophic Cascade",
+      "definition": "A chain reaction in a food web when one animal is removed.",
+      "use_sentence": "When the wolves were gone, a trophic cascade caused the deer population to grow too large.",
+      "phonetic": "TRO-fik kass-KAYD",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think of a food web near our school. What might happen if all the squirrels disappeared?",
+      "frame": "If all the squirrels disappeared, I think that ___ would happen because ___."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Baptiste to study food webs?",
+      "frame": "It is important to study food webs because ___."
+    },
+    {
+      "prompt": "How are a simple food chain and a complex food web different?",
+      "frame": "A food chain is different from a food web because a food chain shows ___ while a food web shows ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

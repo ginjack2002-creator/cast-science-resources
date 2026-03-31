@@ -1,0 +1,100 @@
+{
+  "story": {
+    "title": "Dr. Vega's Guide to Staying Cool (and Warm!)",
+    "text": "Hi, I'm Dr. Isabel Vega. At NASA, I'm a thermal engineer. My job is to protect astronauts from the super-hot sun and the super-cold of space. The science I use is the same science that explains your cooling coffee.<br><br>Let’s look at this system together.<br><br>1. Your coffee is very hot. The room is much cooler. This creates a big <strong>temperature difference</strong>. Think of this difference as a steep hill for heat to travel down.<br><br>2. Heat always flows from hot to cold. The speed it flows is called the <strong>transfer rate</strong>. Because the 'hill' is steep, the transfer rate is very high at first. Your coffee cools down fast.<br><br>3. As the coffee cools, the <strong>temperature difference</strong> gets smaller. The 'hill' becomes less steep. This makes the <strong>transfer rate</strong> slow down. The cooling gets slower and slower.<br><br>4. Finally, the coffee's temperature matches the room's temperature. The 'hill' is gone! Heat transfer stops. We call this state <strong>thermal equilibrium</strong>.<br><br>My job is to control that transfer rate for spacecraft. We want to keep the astronauts in a state of thermal equilibrium, too—just a comfortable one!",
+    "think_abouts": [
+      "Why does the coffee cool down fastest at the very beginning?",
+      "What would happen to the transfer rate if the room were much colder?"
+    ],
+    "go_deeper": "How would using a metal cup instead of a ceramic mug change the transfer rate, and why?",
+    "margin_defs": [
+      {
+        "term": "Thermal Equilibrium",
+        "definition": "When things reach the same temperature and heat flow stops."
+      },
+      {
+        "term": "Transfer Rate",
+        "definition": "The speed that heat energy moves."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what happens to the 'hill' as the coffee cools down?"
+    ],
+    "word_bank": [
+      "thermal equilibrium",
+      "temperature difference",
+      "transfer rate",
+      "system"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniero/a"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Thermal Equilibrium",
+      "definition": "The state when two things are at the same temperature and heat stops flowing between them.",
+      "use_sentence": "My hot soup eventually reached thermal equilibrium with the cool air in the room.",
+      "phonetic": "THER-muhl ee-kwuh-LIB-ree-uhm",
+      "cognate": "equilibrio térmico"
+    },
+    {
+      "term": "Temperature Difference",
+      "definition": "The gap in heat between a hot object and its cooler surroundings.",
+      "use_sentence": "The large temperature difference between the ice and the water made the ice melt fast.",
+      "phonetic": null,
+      "cognate": "diferencia de temperatura"
+    },
+    {
+      "term": "Transfer Rate",
+      "definition": "The speed at which heat energy moves from a hot place to a colder place.",
+      "use_sentence": "A metal spoon has a high transfer rate, which is why it gets hot so quickly in soup.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Exponential Decay",
+      "definition": "A pattern where something decreases fast at first and then slows down over time.",
+      "use_sentence": "The graph of the cooling coffee showed a curve of exponential decay.",
+      "phonetic": "ek-spo-NEN-shuhl dee-KAY",
+      "cognate": null
+    },
+    {
+      "term": "Newton's Law of Cooling",
+      "definition": "The science rule that says the speed of cooling depends on the temperature difference.",
+      "use_sentence": "Newton's Law of Cooling explains why my pizza cools off so much faster right out of the oven.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Vega protects astronauts in space. What are some other jobs where people need to control how things heat up or cool down?",
+      "frame": "A job that needs to control temperature is a ___ because they have to ___."
+    },
+    {
+      "prompt": "Describe a time you tried to keep something hot or make something cool down faster. What materials did you use?",
+      "frame": "To keep my ___ hot/cold, I used a ___ because I thought it would ___."
+    },
+    {
+      "prompt": "If a big cup of coffee and a small cup of coffee start at the same temperature, which one will reach thermal equilibrium with the room first? Why?",
+      "frame": "I think the ___ cup of coffee will cool down first because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

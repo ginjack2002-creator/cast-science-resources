@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Johansson and the Case of the Transforming Water",
+    "text": "Hello! I’m Dr. Hannah Johansson, a Phase Transition Physicist. That’s a fancy way of saying I study how matter, the 'stuff' that makes up everything, transforms. My team at MIT Lincoln Laboratory and I investigate a big question: when ice melts or water boils, does any of it actually disappear?<br><br>Let’s track an ice cube. It's solid water. When you add heat energy, its temperature rises. At a specific temperature, its <strong>melting point</strong>, the ice begins a <strong>phase change</strong> — a switch from solid to liquid. The amount of solid ice decreases while the amount of liquid water increases. But has any matter vanished? Not at all. If you could weigh the ice and then the puddle of water it became, the mass would be identical.<br><br>Now, let's keep adding heat. The liquid water gets hotter until it starts turning into a gas called water vapor. This process is called <strong>evaporation</strong>. The steam might seem to disappear into the air, but it’s all still there, just spread out. This demonstrates a fundamental rule: the law of <strong>conservation of matter</strong>. This principle states that matter is never created or destroyed, only changed in form.<br><br>In my lab, we also explore how pressure affects these changes. High pressure can squeeze gas molecules so close together that they condense back into a liquid. By understanding how temperature and pressure cause these transformations, we can create better models for weather prediction and even design new materials for spacecraft that have to survive extreme conditions.",
+    "think_abouts": [
+      "Why does a puddle on the sidewalk seem to disappear on a hot, sunny day?",
+      "If you boil water in a pot with a lid, you see water droplets form on the inside of the lid. What phase change is happening there?"
+    ],
+    "go_deeper": "Dr. Johansson knows that impurities like salt can change a substance's melting or boiling point. How do you think adding salt to icy roads helps cars drive more safely in the winter?",
+    "margin_defs": [
+      {
+        "term": "Phase Change",
+        "definition": "When matter switches its form, like solid to liquid."
+      },
+      {
+        "term": "Conservation of Matter",
+        "definition": "The scientific rule that matter can't be made or destroyed."
+      }
+    ],
+    "check_prompts": [
+      "According to the law of conservation of matter, what happens to the total amount of water when an ice cube melts and then boils away?"
+    ],
+    "word_bank": [
+      "temperature",
+      "pressure",
+      "solid",
+      "liquid",
+      "gas"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "matter",
+        "spanish": "materia"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "liquid",
+        "spanish": "líquido"
+      },
+      {
+        "english": "solid",
+        "spanish": "sólido"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Phase Change",
+      "definition": "A physical change where matter switches between states, such as solid, liquid, or gas.",
+      "use_sentence": "When an ice cube melts into water, it is undergoing a phase change.",
+      "phonetic": "/feɪz tʃeɪndʒ/",
+      "cognate": "fase"
+    },
+    {
+      "term": "Conservation of Matter",
+      "definition": "The scientific principle that matter is not created or destroyed during any physical or chemical change.",
+      "use_sentence": "Because of the conservation of matter, the mass of a log before burning equals the mass of the ash and smoke after burning.",
+      "phonetic": "/ˌkɒnsərˈveɪʃən əv ˈmætər/",
+      "cognate": "conservación de la materia"
+    },
+    {
+      "term": "Melting Point",
+      "definition": "The specific temperature at which a solid substance turns into a liquid.",
+      "use_sentence": "The melting point of water is 0° Celsius, so ice melts at that temperature.",
+      "phonetic": "/ˈmɛltɪŋ pɔɪnt/",
+      "cognate": "punto"
+    },
+    {
+      "term": "Evaporation",
+      "definition": "The process where a liquid turns into a gas, usually when heated.",
+      "use_sentence": "After the rain, evaporation caused the puddles on the street to dry up.",
+      "phonetic": "/ɪˌvæpəˈreɪʃən/",
+      "cognate": "evaporación"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Johansson mentioned that a thin layer of water evaporates faster than a deep pool. Why do you think this is true? How does this relate to surface area?",
+      "frame": "I think a thin layer of water evaporates faster because..."
+    },
+    {
+      "prompt": "Imagine you are designing a suit for an astronaut to explore a very hot planet. How would your understanding of phase changes help you choose the right materials?",
+      "frame": "To design the astronaut suit, I would need a material with a very high..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "story": {
+    "title": "Dr. Okonkwo's Clean Energy Puzzle",
+    "text": "Hi, I’m Dr. Patricia Okonkwo. I’m a solar energy researcher. I use data and computers to solve a big puzzle. My big question is: Can <strong>solar energy</strong> replace <strong>fossil fuels</strong>? Or do we need both to power our world?<br><br>First, I look at the problem. Many cities burn <strong>fossil fuels</strong> like coal and gas for electricity. When the fossil fuel burn rate goes up, it releases a lot of <strong>CO2 emissions</strong>. These are gases that get trapped in the air. When <strong>CO2 emissions</strong> increase, the <strong>Air Quality Index</strong> gets worse. This means our air is less healthy to breathe. It’s important we find a cleaner way.<br><br>Next, I study the solution: <strong>solar energy</strong>! Solar panels turn sunlight into electricity. My computer models show what happens when a city gets more sunlight hours. 1. More sunlight means more solar energy output. 2. When solar energy output is high, we don't need to burn as many <strong>fossil fuels</strong>. 3. This makes <strong>CO2 emissions</strong> go down. The air gets cleaner and healthier for everyone.<br><br>My job is to figure out the best plan for each city. Every place is different. Some places are sunny, and some are cloudy. My work helps leaders make smart choices for a clean energy future.",
+    "think_abouts": [
+      "What is one good thing about solar energy?",
+      "What is one bad thing about burning fossil fuels?"
+    ],
+    "go_deeper": "Dr. Okonkwo knows solar panels get a little weaker over time and that clouds can block the sun. How do these challenges make her job of planning for a city's energy needs harder?",
+    "margin_defs": [
+      {
+        "term": "Researcher",
+        "definition": "A person who studies something carefully to discover new facts."
+      },
+      {
+        "term": "Models",
+        "definition": "Computer programs that show or predict how something works."
+      }
+    ],
+    "check_prompts": [
+      "What happens to the air when we burn more fossil fuels?",
+      "How does more sunlight help make the air cleaner?"
+    ],
+    "word_bank": [
+      "solar energy",
+      "fossil fuels",
+      "CO2 emissions",
+      "air quality",
+      "researcher",
+      "electricity"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "solar",
+        "spanish": "solar"
+      },
+      {
+        "english": "emissions",
+        "spanish": "emisiones"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Solar Energy",
+      "definition": "Energy that comes from the sun's light and heat.",
+      "use_sentence": "We use solar panels to turn sunlight into solar energy.",
+      "phonetic": null,
+      "cognate": "energía solar"
+    },
+    {
+      "term": "Fossil Fuel",
+      "definition": "A fuel like coal, oil, or gas that is formed from the remains of ancient plants and animals.",
+      "use_sentence": "Many cars run on gasoline, which is a fossil fuel.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "CO2 Emissions",
+      "definition": "Carbon dioxide gas that goes into the air, often from burning fuels.",
+      "use_sentence": "The factory's CO2 emissions made the air feel heavy.",
+      "phonetic": null,
+      "cognate": "emisiones de CO2"
+    },
+    {
+      "term": "Air Quality Index",
+      "definition": "A number that tells us how clean or polluted the air is.",
+      "use_sentence": "On smoky days, the Air Quality Index is very high and unhealthy.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were helping Dr. Okonkwo, what idea would you test to help a city use more solar energy, especially at night?",
+      "frame": "One idea I would test is..."
+    },
+    {
+      "prompt": "Dr. Okonkwo said every place is different. Why might solar power be a great choice for a desert city, but a harder choice for a city that is often cloudy?",
+      "frame": "Solar power might work better in a desert because..."
+    },
+    {
+      "prompt": "What are some small ways you and your family could use less energy from fossil fuels at home?",
+      "frame": "At home, we could use less energy by..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

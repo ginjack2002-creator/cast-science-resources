@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Asante Solves the Mountaintop Mystery",
+    "text": "Hello, I am Dr. Kwame Asante. I am a paleontologist. I solve mysteries written in stone.<br><br>People ask, 'How can a seashell <strong>fossil</strong> be on a mountain?' The answer is a slow but powerful story. Earth's surface is made of giant <strong>Tectonic Plates</strong>. These plates are always moving, but very slowly. Imagine two plates under the ocean pushing toward each other. This creates an amazing squeezing force called <strong>compression</strong>. The compression folds the layers of rock on the ocean floor.<br><br>Over millions of years, this folding pushes the rock upward. We call this process <strong>uplift</strong>. The ocean floor slowly becomes a tall mountain. But what about the fossils? The ocean floor is covered in <strong>sediment</strong>. This is mud, sand, and shells. When sea creatures died, they were buried in the sediment. Their shells became fossils. The uplift process carries these fossil-filled rocks high into the air. So, when you find an ocean fossil on a mountain, you are standing on an ancient seabed. My job is to read these rock layers. They tell me the incredible story of how an ocean became a mountain.",
+    "think_abouts": [
+      "Why does compression make mountains?",
+      "How did a fossil that was at the bottom of the ocean get to the top of a mountain?"
+    ],
+    "go_deeper": "Dr. Asante says mountains are always growing from uplift. But rain and wind are always wearing them down (erosion). What do you think happens if erosion is faster than uplift?",
+    "margin_defs": [
+      {
+        "term": "compression",
+        "definition": "a squeezing force"
+      },
+      {
+        "term": "uplift",
+        "definition": "pushing rock upward"
+      }
+    ],
+    "check_prompts": [
+      "What is the name of the process that pushes rock layers upward?"
+    ],
+    "word_bank": [
+      "Tectonic Plates",
+      "Compression",
+      "Uplift",
+      "Sediment",
+      "Fossil"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Compression",
+        "spanish": "Compresión"
+      },
+      {
+        "english": "Fossil",
+        "spanish": "Fósil"
+      },
+      {
+        "english": "Sediment",
+        "spanish": "Sedimento"
+      },
+      {
+        "english": "Tectonic",
+        "spanish": "Tectónico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tectonic Plates",
+      "definition": "Giant slabs of rock that make up Earth's outer surface.",
+      "use_sentence": "The moving Tectonic Plates can create mountains and earthquakes.",
+      "phonetic": "tek-TAW-nik PLAYTS",
+      "cognate": "Placas Tectónicas"
+    },
+    {
+      "term": "Compression",
+      "definition": "The squeezing force that happens when two tectonic plates push into each other.",
+      "use_sentence": "Compression folded the flat rock layers into a mountain.",
+      "phonetic": "kum-PREH-shun",
+      "cognate": "Compresión"
+    },
+    {
+      "term": "Uplift",
+      "definition": "The process of rock being pushed upward by tectonic forces.",
+      "use_sentence": "The uplift of the land created the Himalayan mountains.",
+      "phonetic": "UP-lift",
+      "cognate": null
+    },
+    {
+      "term": "Sediment",
+      "definition": "Tiny particles of sand, mud, and dead organisms that build up in layers.",
+      "use_sentence": "Fossils are often found in layers of sediment.",
+      "phonetic": "SEH-dih-ment",
+      "cognate": "Sedimento"
+    },
+    {
+      "term": "Fossil",
+      "definition": "The preserved remains of ancient living things found in rock.",
+      "use_sentence": "Dr. Asante found a seashell fossil on the mountain.",
+      "phonetic": "FAW-sul",
+      "cognate": "Fósil"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Asante says the process takes millions of years. Why is it hard for us to see mountains getting taller?",
+      "frame": "It is hard to see mountains grow because ___."
+    },
+    {
+      "prompt": "If you found a fish fossil on land, what would that tell you about the land's past?",
+      "frame": "A fish fossil on land tells me that this place used to be ___."
+    },
+    {
+      "prompt": "Dr. Asante is a 'paleontologist.' What other kinds of clues do you think a paleontologist looks for?",
+      "frame": "A paleontologist might also look for clues like ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

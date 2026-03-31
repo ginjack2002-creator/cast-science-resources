@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Lena Kowalski: Decoding Starlight",
+    "text": "My name is Dr. Lena Kowalski. I am a scientist at the Space Telescope Science Institute. I study starlight to map the universe, like a space detective. <br><br> When you look up at night, you see a star's <strong>apparent brightness</strong>. This is how bright it appears from Earth. But this can be tricky. A star might look dim simply because it is very far away. Or it could be closer but have a low <strong>actual brightness</strong>. That is the true amount of light a star produces. <br><br> My job is to solve this puzzle. First, I study a star’s color to classify it. This gives me a good estimate of its <strong>actual brightness</strong>. Then, I use powerful space telescopes, like Hubble, to measure its <strong>apparent brightness</strong> very carefully. We use space telescopes because Earth's atmosphere distorts starlight. <br><br> Knowing both brightnesses helps me calculate the distance. We measure these huge distances in <strong>light-years</strong>. The farther a star is, the less <strong>observable detail</strong> we can see. Every star I measure becomes another point on our map of the universe.",
+    "think_abouts": [
+      "Why does Dr. Kowalski call herself a 'space detective'?",
+      "If two stars have the same actual brightness, what makes one look dimmer than the other?"
+    ],
+    "go_deeper": "How might knowing a star's distance help us learn about its age or the galaxy it is in?",
+    "margin_defs": [
+      {
+        "term": "classify",
+        "definition": "to group things"
+      },
+      {
+        "term": "distorts",
+        "definition": "changes or bends"
+      },
+      {
+        "term": "calculate",
+        "definition": "to find an answer using math"
+      }
+    ],
+    "check_prompts": [
+      "What are the two things that affect a star's apparent brightness?"
+    ],
+    "word_bank": [
+      "Apparent Brightness",
+      "Actual Brightness",
+      "Light-Years",
+      "Observable Detail"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      },
+      {
+        "english": "classify",
+        "spanish": "clasificar"
+      },
+      {
+        "english": "universe",
+        "spanish": "universo"
+      },
+      {
+        "english": "calculate",
+        "spanish": "calcular"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star LOOKS from Earth, which depends on distance.",
+      "use_sentence": "A nearby dim star can have a higher apparent brightness than a faraway bright star.",
+      "phonetic": "/əˈpɛrənt ˈbraɪtnəs/",
+      "cognate": null
+    },
+    {
+      "term": "Actual Brightness",
+      "definition": "How much light a star truly produces, also called luminosity.",
+      "use_sentence": "A giant blue star has a very high actual brightness.",
+      "phonetic": "/ˈækʧuəl ˈbraɪtnəs/",
+      "cognate": "actual"
+    },
+    {
+      "term": "Light-Year",
+      "definition": "The distance light travels in one year — about 6 trillion miles.",
+      "use_sentence": "The closest star system is over four light-years away from Earth.",
+      "phonetic": "/laɪt yɪr/",
+      "cognate": null
+    },
+    {
+      "term": "Observable Detail",
+      "definition": "How much information we can see about a distant object.",
+      "use_sentence": "With a better telescope, we can see more observable detail on distant planets.",
+      "phonetic": "/əbˈzɜrvəbəl ˈditeɪl/",
+      "cognate": "detalle observable"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine you discover two stars. Star A looks very bright. Star B looks very dim. What information do you need before you can say which star produces more light?",
+      "frame": "Before I can know which star has a higher actual brightness, I need to know ___."
+    },
+    {
+      "prompt": "Dr. Kowalski uses space telescopes to get a clearer view of stars. Why is a telescope in space better than one on the ground for her work?",
+      "frame": "A telescope in space is better because ___."
+    },
+    {
+      "prompt": "If we see the light from a star that is 100 light-years away, what are we actually seeing?",
+      "frame": "When we see a star 100 light-years away, we are seeing light that is ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

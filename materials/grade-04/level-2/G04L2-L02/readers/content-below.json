@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Carter and the Silent Explosions",
+    "text": "Hi, I’m Dr. James Carter. I’m an acoustic engineer. At my job, I study how sound travels through different things. I might help design quiet headphones or make a concert hall sound amazing. It’s like being a detective for sound waves.<br><br>Every sound starts with a movement. This quick back-and-forth movement is called a <strong>vibration</strong>. When you hit a drum, the drum skin vibrates. It pushes on the air molecules around it. Those molecules push on the next ones, and so on. This creates a sound wave.<br><br>A sound wave needs something to travel through. We call that something a <strong>medium</strong>. Air is a gas medium. Water is a liquid medium. Your school desk is a solid medium. Sound actually travels faster through solids and liquids than through air!<br><br>Now, what about outer space? Space is a <strong>vacuum</strong>. That’s a fancy word for an empty space with almost no molecules in it. There is no air. There is no medium for sound to push on.<br><br>So, think about our big question. In movies, spaceships make huge BOOMS when they explode. Is that real? No! Since space is a vacuum, the sound vibrations from an explosion have nowhere to go. It would be completely silent.",
+    "think_abouts": [
+      "Why can you hear someone talking in the next room, but not in the next building?",
+      "What would happen if you tried to ring a bell inside a jar with no air in it?"
+    ],
+    "go_deeper": "Low sounds, like a deep drum, are absorbed less and travel farther than high sounds, like a whistle. Why do you think you can sometimes hear the bass from a car stereo but not the singer's voice?",
+    "margin_defs": [
+      {
+        "term": "vibration",
+        "definition": "A fast, back-and-forth movement."
+      },
+      {
+        "term": "medium",
+        "definition": "The stuff sound travels through, like air or water."
+      },
+      {
+        "term": "vacuum",
+        "definition": "An empty space with nothing in it."
+      }
+    ],
+    "check_prompts": [
+      "After reading the third paragraph, explain what a medium is in your own words."
+    ],
+    "word_bank": [
+      "vibration",
+      "medium",
+      "vacuum",
+      "wave speed",
+      "absorption"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "vibration",
+        "spanish": "vibración"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniero"
+      },
+      {
+        "english": "vacuum",
+        "spanish": "vacío"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Medium",
+      "definition": "The stuff that sound needs to travel through, like a solid, a liquid, or a gas.",
+      "use_sentence": "Air is the most common medium for the sounds we hear every day.",
+      "phonetic": "MEE-dee-um",
+      "cognate": "medio"
+    },
+    {
+      "term": "Vibration",
+      "definition": "A quick, shaking movement back and forth that creates sound.",
+      "use_sentence": "When you pluck a guitar string, you can see its vibration.",
+      "phonetic": "vy-BRAY-shun",
+      "cognate": "vibración"
+    },
+    {
+      "term": "Wave Speed",
+      "definition": "How fast a sound wave moves. It is different in different materials.",
+      "use_sentence": "The wave speed of sound is much faster in water than in air.",
+      "phonetic": null,
+      "cognate": "velocidad de onda"
+    },
+    {
+      "term": "Absorption",
+      "definition": "When a material soaks up sound, making it quieter, like a sponge soaks up water.",
+      "use_sentence": "Soft curtains are good for sound absorption in a noisy room.",
+      "phonetic": "ab-SORP-shun",
+      "cognate": "absorción"
+    },
+    {
+      "term": "Vacuum",
+      "definition": "A space that is totally empty and has no air or other matter in it.",
+      "use_sentence": "Because outer space is a vacuum, sound cannot travel there.",
+      "phonetic": "VAK-yoom",
+      "cognate": "vacío"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were an astronaut, what would it be like to work in complete silence? How would you talk to other astronauts?",
+      "frame": "Working in silence would be ___ because ___. To talk, I would need to use ___."
+    },
+    {
+      "prompt": "Dr. Carter says sound travels through solids. What is one solid object in our classroom? How could you test if sound travels through it?",
+      "frame": "One solid object is ___. I could test it by ___."
+    },
+    {
+      "prompt": "Why do you think movie makers add sound to explosions in space, even though it's not realistic?",
+      "frame": "I think movie makers add sound because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

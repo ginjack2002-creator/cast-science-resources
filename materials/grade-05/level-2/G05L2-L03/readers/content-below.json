@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Tran and the Underground Water Puzzle",
+    "text": "Hi, I’m Dr. Kevin Tran. I’m a scientist who studies water hidden under our feet. This important water is called <strong>groundwater</strong>. It is stored in large underground layers of rock and sand called <strong>aquifers</strong>. Think of them like giant, natural, underground water tanks.<br><br>Many communities are growing. This means more people need water for drinking, washing, and growing food. But is there enough water for everyone? My job is to help answer that question. I use special computer models to predict the future of a town’s water supply.<br><br>My model is like a puzzle with a few key pieces.<br>1. First, I look at rainfall. Rain soaks into the ground to refill the aquifers.<br>2. Next, I count the population. More people means a higher demand for water.<br>3. Then, I measure the <strong>water usage rate</strong>. This tells me how fast people are pumping water out.<br><br>If people use water faster than rain can refill the <strong>aquifers</strong>, the <strong>groundwater</strong> level drops. This affects a town’s <strong>water availability</strong>. Soon, there might not be enough for everyone. My work helps leaders make smart plans to protect our water for the future.",
+    "think_abouts": [
+      "What happens to the groundwater level when a town's population grows bigger?",
+      "Why is it a problem if the water usage rate is faster than the rainfall rate?"
+    ],
+    "go_deeper": "How might the type of soil in an area (like sand vs. clay) change how quickly an aquifer refills after it rains?",
+    "margin_defs": [
+      {
+        "term": "Groundwater",
+        "definition": "Water found under the ground."
+      },
+      {
+        "term": "Aquifers",
+        "definition": "Underground layers of rock that hold water."
+      },
+      {
+        "term": "Water Usage Rate",
+        "definition": "How fast people use water."
+      },
+      {
+        "term": "Water Availability",
+        "definition": "Having enough water for everyone."
+      }
+    ],
+    "check_prompts": [
+      "What two things does Dr. Tran measure to see if a town has enough water?"
+    ],
+    "word_bank": [
+      "groundwater",
+      "aquifer",
+      "water usage rate",
+      "water availability"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "aquifer",
+        "spanish": "acuífero"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "community",
+        "spanish": "comunidad"
+      },
+      {
+        "english": "future",
+        "spanish": "futuro"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Groundwater",
+      "definition": "Water that is stored underground in layers of soil and rock.",
+      "use_sentence": "We use a well to pump groundwater to the surface for us to drink.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Aquifer",
+      "definition": "A large, underground layer of rock or sand that holds groundwater.",
+      "use_sentence": "The town gets all of its drinking water from a deep aquifer.",
+      "phonetic": "AK-wuh-fer",
+      "cognate": "acuífero"
+    },
+    {
+      "term": "Water Usage Rate",
+      "definition": "How fast a community uses its available supply of water.",
+      "use_sentence": "The water usage rate goes up in the summer when people water their lawns.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Water Availability",
+      "definition": "Whether there is enough safe, clean water for everyone in a community to use.",
+      "use_sentence": "A long time without rain can lower the water availability for a whole city.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Tran helps communities plan for the future. If you were a city planner, what is one rule you would make to help save water?",
+      "frame": "One rule I would make to save water is ___ because ___."
+    },
+    {
+      "prompt": "What do you think happens to plants and animals when the groundwater level in an aquifer gets too low?",
+      "frame": "If the groundwater level gets too low, I think plants and animals might ___."
+    },
+    {
+      "prompt": "Besides drinking, what are three other ways your family or community uses water every day?",
+      "frame": "My community uses water for ___, ___, and ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

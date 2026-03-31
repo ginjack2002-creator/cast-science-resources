@@ -1,0 +1,96 @@
+{
+  "story": {
+    "title": "Dr. Kim's Tectonic Forecast: Cracking Earth's Code",
+    "text": "Hi, I’m Dr. David Kim, a seismologist at Caltech. My job is to figure out where Earth’s crust might crack next. I can’t predict the exact minute an earthquake will hit, but my computer models help us see where the danger is growing.<br><br>Think of Earth’s crust as giant puzzle pieces called tectonic plates. They are constantly moving because of <strong>Mantle Convection</strong>, which are slow, powerful currents of hot rock rising and cool rock sinking deep inside the planet. The faster these currents move, the more <strong>Tectonic Stress</strong>—the pressure that builds up at plate boundaries—accumulates. This stress is like a tightly wound spring, storing energy.<br><br>The type of boundary makes a big difference. At a <strong>Convergent Boundary</strong>, where two plates collide, you get huge mountains and explosive volcanoes. At a <strong>Divergent Boundary</strong>, plates pull apart, creating new crust on the ocean floor. Here in California, we live on a <strong>Transform Boundary</strong>, where plates slide past each other. This motion builds up enormous stress along faults.<br><br>When tectonic stress gets too high, the rock breaks, releasing energy as an earthquake. This actually reduces the stress for a while. It’s a cycle: stress builds, an earthquake releases it, and then it slowly starts building all over again. This is the main reason we can’t predict the exact timing. My work involves mapping this stress to forecast which areas are most likely to have a major quake, giving communities a better chance to prepare.",
+    "think_abouts": [
+      "Why does the cycle of stress building up and then being released make it so difficult to predict the exact timing of an earthquake?",
+      "If you were a city planner using Dr. Kim's models, what would be the most important information for deciding where to build a new hospital?"
+    ],
+    "go_deeper": "Dr. Kim mentioned that shallow earthquakes often cause more damage than deep ones. Why might the depth of an earthquake be just as important as its magnitude?",
+    "margin_defs": [
+      {
+        "term": "Seismologist",
+        "definition": "A scientist who studies earthquakes and the movement of waves through the Earth."
+      },
+      {
+        "term": "Forecast",
+        "definition": "To predict what is likely to happen in the future based on data."
+      }
+    ],
+    "check_prompts": [
+      "What is the relationship between Tectonic Stress and Earthquake Frequency?"
+    ],
+    "word_bank": [
+      "Mantle Convection",
+      "Tectonic Stress",
+      "Convergent Boundary",
+      "Transform Boundary"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Tectonic",
+        "spanish": "Tectónico"
+      },
+      {
+        "english": "Convection",
+        "spanish": "Convección"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mantle Convection",
+      "definition": "The slow, circular movement of hot rock rising and cool rock sinking within Earth's mantle, which drives the movement of tectonic plates.",
+      "use_sentence": "The engine driving the continents apart is Mantle Convection.",
+      "phonetic": "MAN-tuhl kuhn-VEK-shuhn",
+      "cognate": "Convección del Manto"
+    },
+    {
+      "term": "Tectonic Stress",
+      "definition": "The force and pressure that builds up at the edges of tectonic plates as they interact with each other.",
+      "use_sentence": "When Tectonic Stress becomes too great, it can be released as an earthquake.",
+      "phonetic": "tek-TAW-nik stress",
+      "cognate": "Estrés Tectónico"
+    },
+    {
+      "term": "Convergent Boundary",
+      "definition": "A location where two tectonic plates are moving toward each other, often causing one plate to slide under the other.",
+      "use_sentence": "The collision at a Convergent Boundary can form massive mountain ranges like the Himalayas.",
+      "phonetic": "kuhn-VUR-juhnt BOWN-dree",
+      "cognate": "Borde Convergente"
+    },
+    {
+      "term": "Divergent Boundary",
+      "definition": "A location where two tectonic plates are moving away from each other, allowing magma to rise and form new crust.",
+      "use_sentence": "New ocean floor is created at a Divergent Boundary, like the Mid-Atlantic Ridge.",
+      "phonetic": "dai-VUR-juhnt BOWN-dree",
+      "cognate": "Borde Divergente"
+    },
+    {
+      "term": "Transform Boundary",
+      "definition": "A location where two tectonic plates slide horizontally past one another.",
+      "use_sentence": "The San Andreas Fault is a famous Transform Boundary known for causing many earthquakes in California.",
+      "phonetic": "TRANS-form BOWN-dree",
+      "cognate": "Borde Transformante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kim’s models forecast *where* stress is highest, but not exactly *when* an earthquake will happen. What other data or new technologies might help scientists improve their timing predictions in the future?",
+      "frame": null
+    },
+    {
+      "prompt": "The story describes three types of plate boundaries. If you had to build a new city near one of them, which type would you choose and why? Explain your choice based on the risks of both earthquakes and volcanoes.",
+      "frame": "I would choose to build near a ___ boundary because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

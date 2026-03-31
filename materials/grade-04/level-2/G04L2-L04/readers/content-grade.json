@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Asante and the Mountain-Top Ocean",
+    "text": "Hello! I’m Dr. Kwame Asante, a paleontologist and stratigrapher at the Smithsonian. My job is to solve Earth’s biggest puzzles. The most amazing one is how we find fossils of ancient sea creatures on top of the world's tallest mountains! The answer is a slow but powerful story that takes millions of years.<br><br>Imagine an ancient ocean floor. For ages, tiny particles of sand and mud, called <strong>sediment</strong>, settled there. When sea creatures died, their shells and bones became part of these layers, eventually turning into <strong>fossils</strong> (the preserved remains of ancient life). But Earth's surface isn't still. It's broken into giant puzzle pieces called <strong>Tectonic Plates</strong>, which are huge slabs of rock that are always moving, about as fast as your fingernails grow.<br><br>When two plates carrying continents collide, the force is incredible. This powerful squeezing is called <strong>compression</strong>. The faster the plates move, the stronger the compression becomes. Think about pushing the ends of a rug together—it wrinkles and bunches up. The same thing happens to the rock layers on the ocean floor. The intense pressure from the collision causes <strong>uplift</strong>, the process of pushing those crumpled rock layers higher and higher into the sky.<br><br>This slow-motion crash, happening over millions of years, can push the old ocean floor thousands of feet into the air, creating mountains like the Himalayas. And those layers of rock carry the <strong>fossils</strong> with them on their journey. That’s my job: to study the rock layers and trace the incredible journey of a fossil from the bottom of the sea to the top of a mountain, uncovering Earth's dynamic history.",
+    "think_abouts": [
+      "What do you think would happen to the mountains if the tectonic plates started moving even faster?",
+      "Imagine you are a fossil on the ocean floor. What would your journey to the top of a mountain feel like over millions of years?"
+    ],
+    "go_deeper": "The Himalayas are still growing about 1 cm per year from uplift, but they are also shrinking from erosion by wind and rain. What do you think would happen to the height of the mountains if the rate of erosion became faster than the rate of uplift?",
+    "margin_defs": [
+      {
+        "term": "Stratigrapher",
+        "definition": "A scientist who studies layers of rock."
+      },
+      {
+        "term": "Himalayas",
+        "definition": "The world's tallest mountain range, where Mount Everest is located."
+      }
+    ],
+    "check_prompts": [
+      "What is the name of the force that squeezes rock layers together when tectonic plates collide?"
+    ],
+    "word_bank": [
+      "Tectonic Plates",
+      "Compression",
+      "Uplift",
+      "Sediment",
+      "Fossil"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "plates",
+        "spanish": "placas"
+      },
+      {
+        "english": "compression",
+        "spanish": "compresión"
+      },
+      {
+        "english": "fossil",
+        "spanish": "fósil"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tectonic Plates",
+      "definition": "Giant slabs of rock that make up Earth's outer surface. They float on hot, slow-moving rock beneath and move very slowly over time.",
+      "use_sentence": "The movement of tectonic plates can cause earthquakes and create mountains.",
+      "phonetic": "tek-TAH-nik PLAYTS",
+      "cognate": "Placas Tectónicas"
+    },
+    {
+      "term": "Compression",
+      "definition": "The squeezing force that happens when two tectonic plates push into each other, crushing and folding rock layers.",
+      "use_sentence": "The compression from the two colliding plates was strong enough to form a mountain range.",
+      "phonetic": "kuhm-PREH-shun",
+      "cognate": "Compresión"
+    },
+    {
+      "term": "Uplift",
+      "definition": "The process of rock being pushed upward by tectonic forces. This is how flat ocean floors become towering mountains.",
+      "use_sentence": "Millions of years of uplift raised the ancient seabed high above the water.",
+      "phonetic": "UP-lift",
+      "cognate": null
+    },
+    {
+      "term": "Sediment",
+      "definition": "Tiny particles of sand, mud, and dead organisms that settle on the ocean floor and build up in layers over millions of years.",
+      "use_sentence": "The river carried sediment down to the ocean, where it settled on the bottom.",
+      "phonetic": "SEH-dih-ment",
+      "cognate": "Sedimento"
+    },
+    {
+      "term": "Fossil",
+      "definition": "The preserved remains or traces of ancient living things found in rock. They tell us what lived in a place millions of years ago.",
+      "use_sentence": "The paleontologist carefully brushed away the rock to reveal the dinosaur fossil.",
+      "phonetic": "FAH-suhl",
+      "cognate": "Fósil"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Asante compared plate compression to pushing the ends of a rug together. What other everyday examples can you think of to describe compression and uplift?",
+      "frame": "One example I can think of is when you..."
+    },
+    {
+      "prompt": "How does the speed of tectonic plates change the mountains that are formed?",
+      "frame": "If tectonic plates move faster, it causes more compression, which means..."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Asante to study fossils found on mountains?",
+      "frame": "Studying mountain fossils is important because it helps us understand..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Kowalski's Cosmic Detective Work: Decoding Starlight",
+    "text": "My name is Dr. Lena Kowalski, and from my desk at the Space Telescope Science Institute, I help map the cosmos. My job is like being a cosmic detective, and the primary clue I investigate is starlight. When you gaze at the night sky, you see a glittering field of stars with varying brightness. This is their <strong>apparent brightness</strong>, but it’s a trick of perspective.<br><br>A dim-looking star might be an incredibly powerful giant that's just extremely far away, while a bright-looking star could be a much weaker one that's simply our cosmic neighbor. My entire job revolves around solving this puzzle to find a star's <strong>actual brightness</strong>, also known as its luminosity. To untangle this, we need more data than just what our eyes see. One of our most powerful tools is <strong>stellar classification</strong>. By analyzing a star's light spectrum—its unique rainbow of colors—we can determine its temperature and type. A massive, hot blue star has a known range of actual brightness, which is vastly different from a cooler, smaller red dwarf.<br><br>Once I have a reliable estimate of a star's true luminosity, I can compare it to its apparent brightness as measured by our telescopes. The difference between the two allows me to calculate its distance in <strong>light-years</strong>. Working with data from space telescopes like Hubble is crucial because they operate above the <strong>atmospheric distortion</strong> that makes stars twinkle and blurs our view from the ground. In space, we get a crystal-clear image, which vastly increases the <strong>observable detail</strong> and allows for precise measurements. For the most distant galaxies, we even use a phenomenon called <strong>red shift</strong>. As the universe expands, light from objects moving away from us gets stretched, shifting it towards the red end of the spectrum. Every photon of light carries a story, and by carefully decoding it, we are slowly but surely drawing a complete map of our incredible universe.",
+    "think_abouts": [
+      "Why is a star’s apparent brightness not enough to know its true distance?",
+      "How do space telescopes help scientists like Dr. Kowalski see stars more clearly?"
+    ],
+    "go_deeper": "If 'red shift' indicates an object is moving away, what might a 'blue shift' (light waves being compressed) tell an astronomer about a star's motion relative to Earth?",
+    "margin_defs": [
+      {
+        "term": "Luminosity",
+        "definition": "A star's true, total brightness."
+      },
+      {
+        "term": "Stellar Classification",
+        "definition": "Sorting stars by type, color, and temperature."
+      },
+      {
+        "term": "Atmospheric Distortion",
+        "definition": "The blurring and twinkling of starlight caused by Earth's air."
+      }
+    ],
+    "check_prompts": [
+      "What are the two main factors that determine a star's apparent brightness from Earth?"
+    ],
+    "word_bank": [
+      "Luminosity",
+      "Apparent Brightness",
+      "Stellar Classification",
+      "Red Shift",
+      "Light-Year"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      },
+      {
+        "english": "universe",
+        "spanish": "universo"
+      },
+      {
+        "english": "telescope",
+        "spanish": "telescopio"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Apparent Brightness",
+      "definition": "How bright a star LOOKS from Earth, which depends on distance.",
+      "use_sentence": "Even though Rigel has a lower apparent brightness than Sirius, it is actually a much more powerful star.",
+      "phonetic": "uh-PAIR-ent BRIGHT-ness",
+      "cognate": "brillo aparente"
+    },
+    {
+      "term": "Actual Brightness",
+      "definition": "How much light a star truly produces, also called luminosity.",
+      "use_sentence": "To calculate the actual brightness of a star, scientists must first figure out how far away it is.",
+      "phonetic": "AK-choo-ull BRIGHT-ness",
+      "cognate": null
+    },
+    {
+      "term": "Light-Year",
+      "definition": "The distance light travels in one year — about 6 trillion miles.",
+      "use_sentence": "The nearest star system to us, Alpha Centauri, is over four light-years away.",
+      "phonetic": "LITE-yeer",
+      "cognate": "año luz"
+    },
+    {
+      "term": "Observable Detail",
+      "definition": "How much information we can see about a distant object.",
+      "use_sentence": "Using the James Webb Space Telescope, we can see far more observable detail in distant galaxies than ever before.",
+      "phonetic": "ob-ZER-vuh-bull DEE-tayl",
+      "cognate": "detalle observable"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you discovered a new star, what would be the first three things you'd want to measure to understand its distance and nature?",
+      "frame": "To understand my new star, first I would measure..."
+    },
+    {
+      "prompt": "Dr. Kowalski uses clues like a detective. Besides star color and brightness, what other 'clues' from space might help us map the universe?",
+      "frame": "Other clues from space that could help us map the universe include..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

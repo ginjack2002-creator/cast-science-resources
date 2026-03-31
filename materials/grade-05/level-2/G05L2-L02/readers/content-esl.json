@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Okonkwo's Solar Energy Puzzle",
+    "text": "My name is Dr. Patricia Okonkwo. I am a solar energy researcher. My job is to solve a big energy puzzle. Can we power our cities using only the sun? <br><br>I use computers to build a special model. This model shows how our energy system works. I look at how many hours of sunlight we get. More sunlight creates more <strong>Solar Energy</strong>. This is clean power from solar panels.<br><br>Today, we burn a lot of <strong>Fossil Fuel</strong>. Burning coal and gas makes electricity. But it also creates problems. It releases harmful <strong>CO2 Emissions</strong> into our air. This makes the <strong>Air Quality Index</strong> go down. That means our air is less healthy to breathe.<br><br>My model shows what happens when we use more solar power. When solar energy increases, we burn less fossil fuel. This reduces CO2 emissions and makes our air cleaner. But it is not a simple switch. Clouds can block the sun. Solar panels slowly get weaker over many years. We also need good batteries to store power for the nighttime. My research helps cities plan for a cleaner, sun-powered future.",
+    "think_abouts": [
+      "Why does using more solar energy improve the air quality?",
+      "What problems does Dr. Okonkwo have to solve for solar power to work at night?"
+    ],
+    "go_deeper": "Dr. Okonkwo mentioned that solar panels get weaker over time. How might this affect a city's plan to use 100% solar energy in 30 years?",
+    "margin_defs": [
+      {
+        "term": "model",
+        "definition": "a computer version of a real system"
+      },
+      {
+        "term": "researcher",
+        "definition": "a person who studies something carefully"
+      }
+    ],
+    "check_prompts": [
+      "What does it mean when the Air Quality Index goes down?"
+    ],
+    "word_bank": [
+      "Solar Energy",
+      "Fossil Fuel",
+      "CO2 Emissions",
+      "Air Quality Index"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "computer",
+        "spanish": "computadora"
+      },
+      {
+        "english": "emissions",
+        "spanish": "emisiones"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Solar Energy",
+      "definition": "Electricity that is made from the sun's light.",
+      "use_sentence": "We use solar panels on our roof to create solar energy.",
+      "phonetic": "SOH-ler EN-er-jee",
+      "cognate": "energía solar"
+    },
+    {
+      "term": "Fossil Fuel",
+      "definition": "Energy sources like coal and oil from ancient dead plants and animals.",
+      "use_sentence": "Cars burn the fossil fuel gasoline to run.",
+      "phonetic": "FOS-uhl FYOO-uhl",
+      "cognate": "combustible fósil"
+    },
+    {
+      "term": "CO2 Emissions",
+      "definition": "A gas that goes into the air when we burn things like fossil fuels.",
+      "use_sentence": "Factories can release a lot of CO2 emissions.",
+      "phonetic": "see-oh-TOO ee-MISH-uhns",
+      "cognate": "emisiones de CO2"
+    },
+    {
+      "term": "Air Quality Index",
+      "definition": "A number that tells us how clean or polluted the air is.",
+      "use_sentence": "When the Air Quality Index is high, it is not healthy to play outside.",
+      "phonetic": "AIR KWAL-i-tee IN-deks",
+      "cognate": "índice de calidad del aire"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "What are the biggest benefits of using more solar energy in our community?",
+      "frame": "One benefit of using more solar energy is ___ because ___."
+    },
+    {
+      "prompt": "Dr. Okonkwo studies the challenges of solar power, like cloudy days. What is another challenge our town might face if we used only solar power?",
+      "frame": "If our town used only solar power, a challenge might be ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

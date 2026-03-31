@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Torres and the Atomic Dance",
+    "text": "My name is Dr. Michael Torres, and I build worlds inside a computer. As a computational chemist at Dow, I don't mix chemicals in glass beakers; I write code that simulates how atoms dance and rearrange. My goal is to predict the outcome of a chemical reaction before it ever happens in the real world.<br><br>A central question we tackle is the mystery of 'disappearing' matter. When you burn a log, it seems to vanish, leaving only a pile of ash. But where did the rest of it go? The fundamental law of the universe, the <strong>Conservation of Mass</strong>, guarantees that nothing was lost. My simulations prove it. The atoms that made up the wood simply rearranged, bonding with oxygen from the air to form new products like carbon dioxide and water vapor—invisible gases that float away.<br><br>In my digital lab, I can control the conditions. I can increase the <strong>Reactant</strong> concentration, crowding more molecules together so they collide more often. I can turn up the virtual temperature, giving them more energy to react. Both of these changes increase the <strong>Reaction Rate</strong>, causing the <strong>Product</strong> to form much faster. However, as the reaction speeds up, it consumes reactants more quickly, which naturally slows things down over time—a perfect feedback loop. Through all these changes, one number in my simulation remains perfectly constant: the Total Mass. The mass of the reactants that are used up is perfectly balanced by the mass of the products being formed.<br><br>We even model advanced factors, like adding a virtual <strong>catalyst</strong>, a substance that can accelerate a reaction a thousand times over without being consumed. We calculate the precise activation energy needed to initiate the reaction. By understanding and modeling every variable, we can design safer, faster, and more efficient chemical processes that create the materials our world depends on.",
+    "think_abouts": [
+      "How do Dr. Torres's computer models demonstrate the law of Conservation of Mass?",
+      "What two external factors can Dr. Torres adjust in his simulations to increase the Reaction Rate?"
+    ],
+    "go_deeper": "Dr. Torres mentioned catalysts. How might a catalyst that works at a lower temperature be beneficial for saving energy and money in a large-scale industrial factory?",
+    "margin_defs": [
+      {
+        "term": "Computational",
+        "definition": "Using computers to solve complex scientific and mathematical problems."
+      },
+      {
+        "term": "Simulations",
+        "definition": "Computer models that imitate a real-world process or system."
+      },
+      {
+        "term": "Catalyst",
+        "definition": "A substance that speeds up a chemical reaction without being used up in the process."
+      }
+    ],
+    "check_prompts": [
+      "Explain why the total mass of a system stays the same during a chemical reaction, even when a gas is produced."
+    ],
+    "word_bank": [
+      "Computational",
+      "Simulations",
+      "Catalyst",
+      "Equilibrium",
+      "Activation Energy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Reaction",
+        "spanish": "Reacción"
+      },
+      {
+        "english": "Concentration",
+        "spanish": "Concentración"
+      },
+      {
+        "english": "Temperature",
+        "spanish": "Temperatura"
+      },
+      {
+        "english": "Constant",
+        "spanish": "Constante"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Reactant",
+      "definition": "A starting substance that enters a chemical reaction and is transformed into products through atomic rearrangement.",
+      "use_sentence": "In his simulation, Dr. Torres increased the concentration of the reactant molecules to see how it would affect the reaction.",
+      "phonetic": null,
+      "cognate": "Reactivo"
+    },
+    {
+      "term": "Product",
+      "definition": "A new substance formed by a chemical reaction when atoms from reactants rearrange into different molecular configurations.",
+      "use_sentence": "The goal of the reaction was to create a new, stronger plastic as the final product.",
+      "phonetic": null,
+      "cognate": "Producto"
+    },
+    {
+      "term": "Conservation of Mass",
+      "definition": "The law that states the total mass of reactants must equal the total mass of products because atoms are neither created nor destroyed.",
+      "use_sentence": "According to the law of Conservation of Mass, the atoms in the burning wood were not destroyed, but rearranged into ash and gases.",
+      "phonetic": null,
+      "cognate": "Conservación de la Masa"
+    },
+    {
+      "term": "Reaction Rate",
+      "definition": "The speed at which reactants are converted into products, affected by factors like temperature and concentration.",
+      "use_sentence": "Adding a catalyst dramatically increased the reaction rate, allowing the experiment to finish in minutes instead of hours.",
+      "phonetic": null,
+      "cognate": "Velocidad de Reacción"
+    },
+    {
+      "term": "Chemical Equation",
+      "definition": "A symbolic representation of a chemical reaction showing reactant and product formulas with balanced atom counts.",
+      "use_sentence": "The chemical equation showed that two hydrogen molecules and one oxygen molecule react to form two water molecules.",
+      "phonetic": null,
+      "cognate": "Ecuación Química"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Torres models reactions to make them more efficient. Besides making new materials, why is it important for companies and scientists to make chemical reactions as efficient as possible?",
+      "frame": "Making reactions efficient is important because..."
+    },
+    {
+      "prompt": "The story explains that when wood burns, it seems to disappear. Using the idea of Conservation of Mass, explain what really happens to the atoms of the wood.",
+      "frame": "The atoms from the wood don't disappear; they..."
+    },
+    {
+      "prompt": "Imagine you are a computational chemist like Dr. Torres. What real-world problem would you want to solve by modeling chemical reactions (e.g., creating new medicines, developing cleaner fuels)?",
+      "frame": "If I were a computational chemist, I would model reactions to solve the problem of..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

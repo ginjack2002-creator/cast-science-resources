@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Asante's Clues in the Clouds",
+    "text": "Hello! I'm Dr. Kwame Asante. I'm a scientist who studies ancient life and rock layers. People call me a paleontologist. My favorite puzzle is finding ocean <strong>fossils</strong> on top of the world's tallest mountains. How did a seashell get thousands of feet in the air? I follow the clues to solve the mystery.<br><br>1. The story begins millions of years ago at the bottom of an ocean. Tiny bits of sand and mud called <strong>sediment</strong> slowly piled up. When sea animals died, their shells got buried in the <strong>sediment</strong>. Over a very long time, these layers turned into rock, trapping the remains as <strong>fossils</strong>.<br><br>2. Next, we look at the Earth's floor. It is not one solid piece. It is made of giant, moving puzzle pieces called <strong>tectonic plates</strong>. These plates move very slowly. Sometimes, two plates start moving toward each other.<br><br>3. When these two giant <strong>tectonic plates</strong> crash, it creates a huge squeezing force. We call this powerful squeeze <strong>compression</strong>. Imagine pushing both ends of a towel together. It wrinkles and folds up in the middle. The same thing happens to the rock layers.<br><br>4. Finally, all that <strong>compression</strong> pushes the folded rock layers upward. This process is called <strong>uplift</strong>. Little by little, the flat ocean floor is lifted higher and higher. This <strong>uplift</strong> builds mountains, carrying the ocean <strong>fossils</strong> up with them. That is how I can find an ancient fish <strong>fossil</strong> on a mountain peak!",
+    "think_abouts": [
+      "What do you think Dr. Asante's tools look like when he is looking for fossils?",
+      "If the tectonic plates moved faster, what do you think would happen to the mountains?"
+    ],
+    "go_deeper": "The story says uplift builds mountains. What forces, like wind and rain, might wear mountains down over time?",
+    "margin_defs": [
+      {
+        "term": "paleontologist",
+        "definition": "A scientist who studies fossils."
+      },
+      {
+        "term": "layers",
+        "definition": "Flat sheets of rock stacked on top of each other."
+      }
+    ],
+    "check_prompts": [
+      "What is the squeezing force called when plates crash?"
+    ],
+    "word_bank": [
+      "Fossil",
+      "Sediment",
+      "Tectonic Plates",
+      "Compression",
+      "Uplift"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "fossil",
+        "spanish": "fósil"
+      },
+      {
+        "english": "sediment",
+        "spanish": "sedimento"
+      },
+      {
+        "english": "compression",
+        "spanish": "compresión"
+      },
+      {
+        "english": "plates",
+        "spanish": "placas"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tectonic Plates",
+      "definition": "Giant pieces of Earth's rocky surface that move very slowly.",
+      "use_sentence": "The Earth is covered in huge tectonic plates that are always moving.",
+      "phonetic": null,
+      "cognate": "placas tectónicas"
+    },
+    {
+      "term": "Compression",
+      "definition": "A squeezing force that happens when two things are pushed together.",
+      "use_sentence": "The compression from two plates crashing folded the rock.",
+      "phonetic": null,
+      "cognate": "compresión"
+    },
+    {
+      "term": "Uplift",
+      "definition": "The process that pushes land and rock up to a higher level.",
+      "use_sentence": "Mountain uplift can take millions of years to happen.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Sediment",
+      "definition": "Small pieces of rock, sand, and shells that settle at the bottom of a liquid.",
+      "use_sentence": "Layers of sediment built up on the ocean floor over time.",
+      "phonetic": null,
+      "cognate": "sedimento"
+    },
+    {
+      "term": "Fossil",
+      "definition": "The shape of an ancient plant or animal left behind in rock.",
+      "use_sentence": "The scientist found a seashell fossil in the mountain rock.",
+      "phonetic": null,
+      "cognate": "fósil"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Asante explained how mountains are built. What do you think would happen if the tectonic plates started moving apart instead of pushing together?",
+      "frame": "If the plates moved apart, I think that ___"
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Asante to study fossils found on mountains?",
+      "frame": "It is important to study mountain fossils because they tell us ___"
+    },
+    {
+      "prompt": "Imagine you are helping Dr. Asante on a mountain. What kind of ocean fossil would you be most surprised to find? Why?",
+      "frame": "I would be most surprised to find a fossil of a ___ because ___"
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

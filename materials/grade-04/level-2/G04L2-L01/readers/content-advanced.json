@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Huang's Energy Budget: The Secret of the Slowing Coaster",
+    "text": "Hi, I’m Dr. Mei-Ling Huang, a Roller Coaster Dynamics Engineer at Walt Disney Imagineering. My job is to ask a big question every day: where does the energy go? When you're sitting in a roller coaster car being pulled up that first enormous hill, you're building up a massive savings account of <strong>potential energy</strong>. This is stored energy, and the higher we lift you, the more energy we store. It's the 'what if' moment of the ride.<br><br>The instant you crest the peak and start to descend, we cash in that account. The force of gravity transforms all that stored <strong>potential energy</strong> into <strong>kinetic energy</strong>, which is the energy of motion. The more potential energy you started with, the more kinetic energy you'll have at the bottom, which translates to incredible speed! According to the law of <strong>energy conservation</strong>, energy can't be created or destroyed, only transformed. So, in a perfect world, that energy would just keep transforming back and forth between potential and kinetic, and the ride would never end.<br><br>But our world isn't perfect; it has <strong>friction</strong>. As the coaster's wheels blaze along the track, the rubbing creates a force that opposes motion. This friction transforms useful kinetic energy into something we can't use: heat. We call this <strong>heat loss</strong>. It radiates away from the track and wheels into the air. With every meter of track, this 'energy thief' steals a little bit of your speed. We also have to account for air resistance, which is like friction with the air itself, stealing even more energy. My job is to calculate these losses precisely, ensuring that even after friction and air resistance have taken their share, there's always enough kinetic energy left to safely complete every loop and hill, and bring you to a smooth stop at the end. We're not just designing a ride; we're managing a complex energy budget.",
+    "think_abouts": [
+      "Where on a roller coaster is potential energy the highest? Where is kinetic energy the highest?",
+      "Dr. Huang calls friction an 'energy thief.' What does she mean by that, and where does the 'stolen' energy go?"
+    ],
+    "go_deeper": "If you wanted to design a coaster with a very tall loop, what two things would you need to change about the *start* of the ride to make sure the car could complete the loop successfully? Explain your reasoning using the concepts of potential and kinetic energy.",
+    "margin_defs": [
+      {
+        "term": "dynamics",
+        "definition": "the study of forces and motion"
+      },
+      {
+        "term": "radiates",
+        "definition": "spreads out from a source"
+      },
+      {
+        "term": "budget",
+        "definition": "a plan for how to use a limited supply of something, like energy"
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Huang, what is the main reason a roller coaster cannot keep going forever?"
+    ],
+    "word_bank": [
+      "Potential Energy",
+      "Kinetic Energy",
+      "Friction",
+      "Heat Loss",
+      "Energy Conservation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "conservation",
+        "spanish": "conservación"
+      },
+      {
+        "english": "transform",
+        "spanish": "transformar"
+      },
+      {
+        "english": "potential",
+        "spanish": "potencial"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Potential Energy",
+      "definition": "Stored energy an object has because of its position or height — like a roller coaster waiting at the top of a hill.",
+      "use_sentence": "The archer pulled back the bowstring, storing potential energy before releasing the arrow.",
+      "phonetic": "puh-TEN-shuhl EN-er-jee",
+      "cognate": "energía potencial"
+    },
+    {
+      "term": "Kinetic Energy",
+      "definition": "The energy of motion — the faster something moves, and the more mass it has, the more kinetic energy it has.",
+      "use_sentence": "As the roller coaster sped down the hill, its kinetic energy increased dramatically.",
+      "phonetic": "ki-NET-ik EN-er-jee",
+      "cognate": "energía cinética"
+    },
+    {
+      "term": "Friction",
+      "definition": "A force that happens when two surfaces rub together, which opposes motion and often creates heat.",
+      "use_sentence": "The brakes on the car use friction to slow the wheels down and stop.",
+      "phonetic": "FRIK-shuhn",
+      "cognate": "fricción"
+    },
+    {
+      "term": "Heat Loss",
+      "definition": "Energy that is transformed into thermal energy (heat) because of friction and is no longer available to create motion.",
+      "use_sentence": "The engineer knew that heat loss from the engine was making the car less efficient.",
+      "phonetic": "HEET laws",
+      "cognate": null
+    },
+    {
+      "term": "Energy Conservation",
+      "definition": "The scientific law stating that energy is never created or destroyed; it only changes from one form to another.",
+      "use_sentence": "The principle of energy conservation explains how a power plant transforms chemical energy into electrical energy.",
+      "phonetic": "EN-er-jee kon-ser-VAY-shuhn",
+      "cognate": "conservación de energía"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Huang has to account for friction. What are some ways engineers could try to reduce friction on a real roller coaster to make it faster or more efficient?",
+      "frame": null
+    },
+    {
+      "prompt": "Imagine two roller coasters. One has a 100-foot first hill. The other has a 200-foot first hill. How would their maximum speeds compare, and why?",
+      "frame": "The coaster with the 200-foot hill would be faster because..."
+    },
+    {
+      "prompt": "Besides roller coasters, where else in your daily life do you see energy transforming from potential to kinetic?",
+      "frame": "I see energy transform from potential to kinetic when..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

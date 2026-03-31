@@ -1,0 +1,102 @@
+{
+  "story": {
+    "title": "Dr. David Kim: Mapping Earth's Stress Points",
+    "text": "My name is Dr. David Kim, and from my lab at Caltech, I watch the Earth breathe. As a seismologist, I don't just study earthquakes—I model the immense forces that cause them. People always ask me, 'If you know where the faults are, why can’t you tell us when the next big one will hit?' The answer lies in the complex, dynamic system of our planet.<br><br>Everything begins with <strong>Mantle Convection</strong>, the slow, powerful circulation of hot rock deep beneath our feet. My models show a direct positive relationship: when convection speeds up, it pushes the tectonic plates harder, which rapidly increases the <strong>Tectonic Stress</strong> along their boundaries. This stress is the potential energy that will eventually be released as an earthquake. Where that energy builds most depends on the <strong>Plate Boundary Type</strong>. A <strong>Convergent Boundary</strong> might release energy through both earthquakes and volcanic eruptions, whereas a <strong>Transform Boundary</strong>, like the San Andreas Fault, primarily builds stress that can only be released seismically.<br><br>This is where the uncertainty begins. While higher stress leads to more frequent earthquakes, each earthquake acts as a release valve, temporarily lowering the stress in a negative feedback loop. This cycle of buildup and release is chaotic and not perfectly predictable. My team uses data from seismic waves to map how their speed changes, revealing the types of rock underground and where stress might be concentrated. We also monitor <strong>Fault Depth</strong>, because a shallow quake can be far more destructive than a deep one of the same magnitude. Our models are becoming incredibly sophisticated, allowing us to forecast <strong>Aftershock Probability</strong> with growing accuracy. We may not have a crystal ball, but by understanding these interconnected systems, we can identify high-risk zones and help communities prepare for when the ground inevitably shakes.",
+    "think_abouts": [
+      "Why is it easier for Dr. Kim to predict *where* an earthquake might happen than *exactly when*?",
+      "How does an earthquake act as a 'release valve' for tectonic stress?"
+    ],
+    "go_deeper": "If a fault has not had a major earthquake in a very long time (a 'seismic gap'), does that make it more or less dangerous? Explain your reasoning using the concept of tectonic stress.",
+    "margin_defs": [
+      {
+        "term": "Seismologist",
+        "definition": "A scientist who studies earthquakes and the movement of waves through the Earth."
+      },
+      {
+        "term": "Feedback Loop",
+        "definition": "A cycle where the output of a system affects its input, either increasing it (positive) or decreasing it (negative)."
+      }
+    ],
+    "check_prompts": [
+      "What is the relationship between the speed of mantle convection and the amount of tectonic stress at a plate boundary?"
+    ],
+    "word_bank": [
+      "Mantle Convection",
+      "Tectonic Stress",
+      "Convergent Boundary",
+      "Transform Boundary",
+      "Fault Depth",
+      "Aftershock Probability"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "convection",
+        "spanish": "convección"
+      },
+      {
+        "english": "tectonic",
+        "spanish": "tectónico"
+      },
+      {
+        "english": "volcanic",
+        "spanish": "volcánico"
+      },
+      {
+        "english": "probability",
+        "spanish": "probabilidad"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mantle Convection",
+      "definition": "Circular currents of hot rock rising and cool rock sinking in Earth's mantle that drag tectonic plates along.",
+      "use_sentence": "Everything begins with Mantle Convection, the slow, powerful circulation of hot rock deep beneath our feet.",
+      "phonetic": "MAN-tl kun-VEK-shun",
+      "cognate": "convección"
+    },
+    {
+      "term": "Tectonic Stress",
+      "definition": "The pressure that builds at plate boundaries as plates push against, pull apart from, or slide past each other.",
+      "use_sentence": "When convection speeds up, it pushes the tectonic plates harder, which rapidly increases the Tectonic Stress along their boundaries.",
+      "phonetic": "tek-TAW-nik stress",
+      "cognate": "tectónico"
+    },
+    {
+      "term": "Convergent Boundary",
+      "definition": "A plate boundary where two plates collide, creating mountains, deep trenches, and subduction zones with volcanoes.",
+      "use_sentence": "A Convergent Boundary might release energy through both earthquakes and volcanic eruptions.",
+      "phonetic": "kun-VER-junt BOWN-dree",
+      "cognate": null
+    },
+    {
+      "term": "Divergent Boundary",
+      "definition": "A plate boundary where two plates move apart, creating rifts, mid-ocean ridges, and new oceanic crust.",
+      "use_sentence": "Unlike convergent boundaries that crash together, divergent boundaries create new crust as they separate.",
+      "phonetic": "dy-VER-junt BOWN-dree",
+      "cognate": null
+    },
+    {
+      "term": "Transform Boundary",
+      "definition": "A plate boundary where two plates slide horizontally past each other, creating earthquake faults like the San Andreas.",
+      "use_sentence": "A Transform Boundary, like the San Andreas Fault, primarily builds stress that can only be released seismically.",
+      "phonetic": "TRANS-form BOWN-dree",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Kim's models forecast probabilities, not certainties. How is this similar to or different from weather forecasting?",
+      "frame": "Forecasting earthquakes is similar to forecasting weather because..., but it is different because..."
+    },
+    {
+      "prompt": "If you were a city planner in a high-risk earthquake zone like Los Angeles, how would you use Dr. Kim's models to help keep people safe?",
+      "frame": "Using Dr. Kim's models, I would propose that our city should..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

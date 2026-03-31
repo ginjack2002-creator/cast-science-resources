@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Hassan's Guide to the Cell's Energy Factory",
+    "text": "Hello, I am Dr. Amina Hassan. I study the tiny factories inside your body’s cells. These factories are always busy. They keep you alive!<br><br>The main engine in each factory is the <strong>mitochondria</strong>. It needs two things to work. It needs nutrients from food and oxygen from air. The <strong>mitochondria</strong> combine these inputs to make energy. This process is called <strong>cellular respiration</strong>.<br><br>The energy it makes is a molecule called <strong>ATP</strong>. Your cells use <strong>ATP</strong> for everything. They use it to grow and make new parts. We call this the <strong>cell growth rate</strong>. More energy means a faster growth rate. But the factory also creates trash. This is called <strong>metabolic waste</strong>. If waste builds up, it slows the factory down. My research helps us understand how to keep these factories running well to fight disease.",
+    "think_abouts": [
+      "What are the two main 'ingredients' a cell's mitochondria need to make energy?",
+      "What happens to a cell's growth rate if its mitochondria make less ATP?"
+    ],
+    "go_deeper": "During hard exercise, your muscles 'burn'. How might 'oxygen debt' and a buildup of 'metabolic waste' cause this feeling?",
+    "margin_defs": [
+      {
+        "term": "Nutrients",
+        "definition": "food molecules used for energy"
+      },
+      {
+        "term": "Energy",
+        "definition": "the power to do work or grow"
+      }
+    ],
+    "check_prompts": [
+      "What is the name of the cell's 'engine' that makes energy?"
+    ],
+    "word_bank": [
+      "Mitochondria",
+      "ATP",
+      "Cellular Respiration",
+      "Metabolic Waste",
+      "Cell Growth Rate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Cellular",
+        "spanish": "Celular"
+      },
+      {
+        "english": "Respiration",
+        "spanish": "Respiración"
+      },
+      {
+        "english": "Mitochondria",
+        "spanish": "Mitocondria"
+      },
+      {
+        "english": "Oxygen",
+        "spanish": "Oxígeno"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mitochondria",
+      "definition": "The part of the cell, known as the 'power plant', that makes ATP energy.",
+      "use_sentence": "The mitochondria are the tiny engines inside our cells.",
+      "phonetic": "my-toh-KON-dree-uh",
+      "cognate": "Mitocondria"
+    },
+    {
+      "term": "ATP",
+      "definition": "The special molecule that carries energy for all of the cell's activities.",
+      "use_sentence": "A cell needs a lot of ATP to grow and divide.",
+      "phonetic": "A-T-P",
+      "cognate": null
+    },
+    {
+      "term": "Cellular Respiration",
+      "definition": "The process that uses oxygen to turn food into ATP energy inside mitochondria.",
+      "use_sentence": "Cellular respiration gives our bodies the power they need.",
+      "phonetic": "SELL-yoo-ler res-pih-RAY-shun",
+      "cognate": "Respiración Celular"
+    },
+    {
+      "term": "Metabolic Waste",
+      "definition": "The leftover materials from cell processes, like carbon dioxide, that must be removed.",
+      "use_sentence": "Our blood carries metabolic waste away from our cells.",
+      "phonetic": "meh-tuh-BALL-ik wayst",
+      "cognate": null
+    },
+    {
+      "term": "Cell Growth Rate",
+      "definition": "A measure of how fast a cell can make new parts and divide.",
+      "use_sentence": "The cell growth rate depends on how much ATP is available.",
+      "phonetic": "sell grohth rayt",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine you are running a race. What happens to the amount of nutrients and oxygen your muscle cells need? How does this change the mitochondria's activity?",
+      "frame": "When I run a race, my cells need more ___. This makes the mitochondria work ___ to produce more ___."
+    },
+    {
+      "prompt": "Dr. Hassan studies diseases where mitochondria do not work well. What do you predict happens to a cell's growth rate and the amount of waste if its mitochondria are broken?",
+      "frame": "If a cell's mitochondria are broken, I predict the cell growth rate will ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

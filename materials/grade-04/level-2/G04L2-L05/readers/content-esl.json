@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Mitchell's Windy City Plan",
+    "text": "My name is Dr. Sarah Mitchell. I am a wind engineer. My job is to find the best places for <strong>wind turbines</strong>. We want to power a whole city with clean wind energy.<br><br>To do this, I study the wind. Faster wind makes more <strong>electricity</strong>. Taller turbines also help because they catch stronger winds high up. More turbines in a wind farm also generate more power. Our goal is to make enough electricity to meet the city’s energy demand. When we make enough power, the <strong>grid reliability</strong> is high. This means no blackouts for homes and hospitals.<br><br>But there is a big challenge. Wind is <strong>intermittent</strong>. This means it does not blow all the time. So, what happens when the wind stops? The city still needs power! We are solving this puzzle. We use big batteries to store extra energy for calm days. We also connect many wind farms together. My work helps cities use more <strong>renewable energy</strong>. We are building a cleaner future, one turbine at a time.",
+    "think_abouts": [
+      "What two things can Dr. Mitchell change to generate more electricity from a wind farm?",
+      "Why is it a problem if the wind suddenly stops blowing?"
+    ],
+    "go_deeper": "Besides building taller turbines, what is one other idea Dr. Mitchell's team uses to make sure the city always has power, even on calm days?",
+    "margin_defs": [
+      {
+        "term": "engineer",
+        "definition": "a person who designs and builds things"
+      },
+      {
+        "term": "demand",
+        "definition": "the amount of something that is needed"
+      },
+      {
+        "term": "blackouts",
+        "definition": "times when the electricity goes out"
+      }
+    ],
+    "check_prompts": [
+      "What is the big problem with using only wind to power a city?"
+    ],
+    "word_bank": [
+      "Wind Turbine",
+      "Electricity",
+      "Grid Reliability",
+      "Renewable Energy",
+      "Intermittent"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "engineer",
+        "spanish": "ingeniera"
+      },
+      {
+        "english": "problem",
+        "spanish": "problema"
+      },
+      {
+        "english": "constant",
+        "spanish": "constante"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Wind Turbine",
+      "definition": "A tall machine with blades that spin in the wind to make electricity.",
+      "use_sentence": "We saw a tall wind turbine spinning on the hill.",
+      "phonetic": "wind TUR-bine",
+      "cognate": "turbina"
+    },
+    {
+      "term": "Electricity",
+      "definition": "A form of energy that flows through wires and powers our homes, schools, and devices.",
+      "use_sentence": "We need electricity to turn on the lights.",
+      "phonetic": "e-lek-TRIS-i-tee",
+      "cognate": "electricidad"
+    },
+    {
+      "term": "Grid Reliability",
+      "definition": "How consistently the electrical grid can deliver power to everyone who needs it — unreliable grids cause blackouts.",
+      "use_sentence": "Good grid reliability means the power stays on during a storm.",
+      "phonetic": "grid ree-lie-uh-BIL-i-tee",
+      "cognate": null
+    },
+    {
+      "term": "Renewable Energy",
+      "definition": "Energy from sources that never run out, like wind, solar, and water.",
+      "use_sentence": "Wind is a type of renewable energy because it will not run out.",
+      "phonetic": "re-NOO-uh-bull EN-er-jee",
+      "cognate": "energía renovable"
+    },
+    {
+      "term": "Intermittent",
+      "definition": "Not constant; something that starts and stops. Wind energy is intermittent because the wind does not always blow.",
+      "use_sentence": "The wind is intermittent, so we can't always count on it to make power.",
+      "phonetic": "in-ter-MIT-ent",
+      "cognate": "intermitente"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were an engineer like Dr. Mitchell, where would you build a new wind farm? What would you look for in that location?",
+      "frame": "I would build a wind farm near ___ because ___."
+    },
+    {
+      "prompt": "The story says wind is 'intermittent'. What other things in your life are intermittent (they start and stop)?",
+      "frame": "Something else that is intermittent is ___ because it ___."
+    },
+    {
+      "prompt": "Besides wind, what is another type of renewable energy? What is one good thing and one challenge with it?",
+      "frame": "Another renewable energy is ___. A good thing is ___ but a challenge is ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

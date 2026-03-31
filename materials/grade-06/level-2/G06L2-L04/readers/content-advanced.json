@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Amina Hassan and the Cell's Energy Economy",
+    "text": "Hello, I’m Dr. Amina Hassan. Here at the Broad Institute of MIT and Harvard, my team and I are essentially cellular economists. We study the intricate energy economy that powers every single one of your cells. Imagine each cell as a high-tech factory. To keep the lights on and all the complex machinery running, it needs a constant power supply. That power comes from a special molecule called <strong>ATP</strong> (Adenosine Triphosphate), and the power plants that generate it are the incredible <strong>Mitochondria</strong>.<br><br>Our core focus is understanding <strong>Cellular Respiration</strong>, the fundamental chemical process where your mitochondria convert food molecules and oxygen into that vital <strong>ATP</strong>. It’s a dynamic system with crucial inputs and outputs. For instance, when Nutrient Input (glucose from your food) and Oxygen Availability are high, we observe a direct increase in Mitochondria Activity. The power plants go into overdrive, producing vast amounts of <strong>ATP</strong>. This energy surge directly fuels a higher <strong>Cell Growth Rate</strong>, allowing your body to repair tissues, build muscle, and carry out millions of other essential tasks.<br><br>However, like any busy factory, this process generates byproducts. Increased mitochondrial activity inevitably leads to more <strong>Metabolic Waste</strong>, primarily carbon dioxide. This is where the system's balance is critical. If waste isn't removed efficiently, it can become toxic, lowering the cell's internal pH and damaging its delicate machinery. We've mapped this negative feedback loop: excessive Waste Production can cause the <strong>Cell Growth Rate</strong> to plummet, even when energy is theoretically abundant.<br><br>My research uses advanced imaging to watch this happen in real-time. We explore what happens during 'oxygen debt' in athletes, when muscle cells burn fuel faster than oxygen can arrive, and we investigate diseases where this entire energy system fails. By understanding the perfect balance in a healthy cell, we can design therapies to fix the broken factories in a sick one.",
+    "think_abouts": [
+      "What two essential 'inputs' does Dr. Hassan say a cell's 'factory' needs to operate?",
+      "According to the text, what is the negative consequence if a cell produces metabolic waste too quickly?"
+    ],
+    "go_deeper": "Dr. Hassan mentioned 'oxygen debt' in athletes. How might the cells of an elite marathon runner be adapted to manage oxygen and waste differently than the cells of a weightlifter?",
+    "margin_defs": [
+      {
+        "term": "Cellular Economists",
+        "definition": "A term Dr. Hassan uses to describe scientists who study how cells manage, produce, and use energy."
+      },
+      {
+        "term": "Feedback Loop",
+        "definition": "A biological process where the output of an action influences that same action. It can be positive (increasing it) or negative (decreasing it)."
+      }
+    ],
+    "check_prompts": [
+      "Explain the relationship between Mitochondria Activity and Cell Growth Rate using the factory analogy from the story."
+    ],
+    "word_bank": [
+      "Mitochondria",
+      "ATP",
+      "Cellular Respiration",
+      "Metabolic Waste",
+      "Cell Growth Rate"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Cellular",
+        "spanish": "Celular"
+      },
+      {
+        "english": "Respiration",
+        "spanish": "Respiración"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Mitochondria",
+      "definition": "The organelles known as the cell's power plants that convert glucose and oxygen into ATP energy through cellular respiration.",
+      "use_sentence": "The more active a cell is, like a muscle cell, the more mitochondria it needs to meet its energy demands.",
+      "phonetic": "my-toh-KON-dree-uh",
+      "cognate": "Mitocondria"
+    },
+    {
+      "term": "ATP",
+      "definition": "Adenosine triphosphate, the energy currency of the cell that powers all cellular activities from growth to movement.",
+      "use_sentence": "Without a constant supply of ATP, a cell would quickly run out of energy and be unable to function.",
+      "phonetic": "ay-tee-PEE",
+      "cognate": null
+    },
+    {
+      "term": "Cellular Respiration",
+      "definition": "The chemical process in mitochondria that combines glucose and oxygen to produce ATP energy, carbon dioxide, and water.",
+      "use_sentence": "Through cellular respiration, the sandwich you ate for lunch is converted into the energy you use to think and move.",
+      "phonetic": "SEL-yuh-ler res-puh-RAY-shun",
+      "cognate": "Respiración Celular"
+    },
+    {
+      "term": "Metabolic Waste",
+      "definition": "Byproducts of cellular processes, including carbon dioxide and other compounds that must be removed to prevent toxic buildup.",
+      "use_sentence": "Your circulatory and respiratory systems work together to remove metabolic waste like carbon dioxide from your cells.",
+      "phonetic": "met-uh-BALL-ik wayst",
+      "cognate": null
+    },
+    {
+      "term": "Cell Growth Rate",
+      "definition": "How fast a cell divides and increases in size, directly dependent on available ATP energy from mitochondria.",
+      "use_sentence": "During a growth spurt, the cell growth rate in your bones and muscles increases dramatically, requiring lots of energy.",
+      "phonetic": "sel grohth rayt",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Hassan studies diseases where the cell's 'energy factory' breaks down. What do you predict would happen to a person if their mitochondria were only 50% as efficient as they should be?",
+      "frame": "If a person's mitochondria were not working well, I think they might feel..."
+    },
+    {
+      "prompt": "The story describes a negative feedback loop where too much waste slows down cell growth. Can you think of a non-biological example of a negative feedback loop (e.g., a thermostat in a house)?",
+      "frame": "A real-world example of a negative feedback loop is..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

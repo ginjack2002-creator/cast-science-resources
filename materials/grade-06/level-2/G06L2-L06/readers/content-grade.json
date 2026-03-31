@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Park and the Invisible Plant Factory",
+    "text": "Hello! I’m Dr. Christina Park, and I’m a plant physiology researcher. My team and I solve puzzles, and one of the biggest is this: a giant redwood tree can weigh over two million pounds, but it starts as a tiny seed. Where does all that mass actually come from? The answer isn't the soil—it's mostly from the air!<br><br>I study the amazing process called <strong>photosynthesis</strong> (the chemical process where plants use light, water, and CO2 to make their own food). Think of it as a microscopic factory inside every leaf. My job is to understand these factories so we can make them more efficient, helping us grow more food for everyone.<br><br>Inside the leaf are millions of tiny green engines called <strong>chloroplasts</strong>. They capture energy from sunlight to power a complex reaction. The raw materials are simple: carbon dioxide from the air and water from the soil. The factory’s main product is <strong>glucose</strong> (a simple sugar that is the plant's energy and building material). The plant links these glucose molecules together to build everything: its leaves, stem, and roots.<br><br>The most incredible part is called <strong>carbon fixation</strong>. This is the step where the plant grabs carbon atoms from the invisible carbon dioxide gas and locks them into solid glucose molecules. That’s the secret! The massive weight of that redwood tree is built from carbon that was once floating in the air.<br><br>But the factory has a rule. It can only run as fast as its scarcest ingredient allows. If a plant has plenty of sunlight and water but not enough CO2, the whole process slows down. We call this the <strong>limiting factor</strong> (the resource in shortest supply). By figuring out what limits a plant’s growth, we can help them thrive.",
+    "think_abouts": [
+      "If a tree is mostly built from carbon atoms taken from the air, what does that tell you about the importance of clean air for healthy forests?",
+      "What might be the limiting factor for a plant growing in a desert? What about for a plant on a shady forest floor?"
+    ],
+    "go_deeper": "Dr. Park studies tiny pores on leaves called stomata. They open to let CO2 in but also let water out. How might a plant in a hot, dry place manage this trade-off?",
+    "margin_defs": [
+      {
+        "term": "Glucose",
+        "definition": "A sugar plants make for energy and growth."
+      },
+      {
+        "term": "Limiting Factor",
+        "definition": "The one ingredient that is in shortest supply."
+      }
+    ],
+    "check_prompts": [
+      "What three 'ingredients' does a plant need for photosynthesis?"
+    ],
+    "word_bank": [
+      "Photosynthesis",
+      "Glucose",
+      "Chloroplast",
+      "Carbon Fixation",
+      "Limiting Factor"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Photosynthesis",
+        "spanish": "Fotosíntesis"
+      },
+      {
+        "english": "Carbon",
+        "spanish": "Carbono"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Photosynthesis",
+      "definition": "The chemical process plants use to turn sunlight, water, and carbon dioxide into food (glucose) and oxygen.",
+      "use_sentence": "Through photosynthesis, a tiny seed can grow into a massive tree using only air, water, and light.",
+      "phonetic": "foh-toh-SIN-thuh-sis",
+      "cognate": "Fotosíntesis"
+    },
+    {
+      "term": "Glucose",
+      "definition": "A simple sugar (C6H12O6) that plants create during photosynthesis to use for energy and as a building block for growth.",
+      "use_sentence": "The plant uses the glucose it makes to build new leaves, stems, and roots.",
+      "phonetic": "GLOO-kohs",
+      "cognate": "Glucosa"
+    },
+    {
+      "term": "Chloroplast",
+      "definition": "The tiny, green organelle inside a plant cell where photosynthesis actually happens.",
+      "use_sentence": "The chloroplast is like a tiny solar-powered factory inside the leaf.",
+      "phonetic": "KLOR-oh-plast",
+      "cognate": "Cloroplasto"
+    },
+    {
+      "term": "Carbon Fixation",
+      "definition": "The process of taking carbon from the air (in carbon dioxide) and 'fixing' it into a solid organic molecule like glucose.",
+      "use_sentence": "Carbon fixation is the key step where a plant gains mass from an invisible gas.",
+      "phonetic": "KAR-bon fik-SAY-shun",
+      "cognate": "Fijación de carbono"
+    },
+    {
+      "term": "Limiting Factor",
+      "definition": "The one resource that is in the shortest supply and sets a limit on how fast a process, like photosynthesis, can happen.",
+      "use_sentence": "In the desert, a lack of water is often the limiting factor for plant growth.",
+      "phonetic": "LIM-it-ing FAK-ter",
+      "cognate": "Factor limitante"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "The story says a giant redwood gets its mass from the air. If you burn a log in a campfire, it turns mostly to ash and smoke (gases). How does this connect to where the tree's mass originally came from?",
+      "frame": "I think burning a log is like photosynthesis in reverse because..."
+    },
+    {
+      "prompt": "Dr. Park wants to make crops more efficient. If you could change one thing about a plant to help it grow faster (like giving it more chloroplasts or bigger leaves), what would you change and what might be a downside?",
+      "frame": "To make a plant grow faster, I would change its ___ but a possible problem could be ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}
