@@ -1,31 +1,10 @@
-#!/usr/bin/env python3
-"""
-ModelIt! Branded Materials Generator
-=====================================
-Generates print-ready HTML files using the official ModelIt! Design System.
-All printable materials (Student Activity Packs, Teacher's Guides, Coloring Sheets,
-Activity Pages, etc.) are generated as HTML with embedded CSS for pixel-perfect
-PDF export.
-
-Usage:
-    python create_branded_materials.py --grade 05 --lesson 01
-    python create_branded_materials.py --grade 05 --all
-    python create_branded_materials.py --grade 05 --lesson 01 --type student
-    python create_branded_materials.py --grade 05 --lesson 01 --type teacher
-
-Design System: design-prototypes/DESIGN-SYSTEM.md
-"""
-
-import argparse
-import os
-import sys
-import importlib.util
-
-# ============================================================
-# DESIGN SYSTEM CSS — The complete branded stylesheet
-# ============================================================
-
-DESIGN_SYSTEM_CSS = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelIt! Teacher&#39;s Guide &mdash; G04L2-L06</title>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap');
 
 :root {
@@ -450,593 +429,24 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
 .page-footer { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 0.5in; display: flex; justify-content: space-between; align-items: center; font-size: 7pt; color: var(--gray-text); border-top: 1px solid var(--purple-pale); background: white; }
 .page-footer .footer-logo { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--purple-brand); font-size: 8pt; }
 .page-footer .footer-bar { height: 3px; position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, var(--purple-brand), var(--teal-brand)); }
-"""
-
-# ============================================================
-# HELPER: Common HTML fragments
-# ============================================================
-
-def bubbles_html():
-    return '<div class="cover-bubbles"><div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div><div class="bubble b5"></div></div>'
-
-def header_bubbles_html():
-    return '<div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>'
-
-def page_footer_html(lesson_id, doc_type, page_num):
-    return f'''<div class="page-footer">
-    <span class="footer-logo">ModelIt!</span>
-    <span>{lesson_id} &bull; {doc_type}</span>
-    <span>Page {page_num}</span>
-    <div class="footer-bar"></div>
-  </div>'''
-
-def section_page_header(num, title, variant=""):
-    cls = f' {variant}' if variant else ''
-    return f'''<div class="page-header{cls}">
-    {header_bubbles_html()}
-    <div class="section-number">{num}</div>
-    <div class="section-title">{title}</div>
-    <div class="page-logo-mini">ModelIt!</div>
-  </div>'''
-
-def html_escape(text):
-    """Escape HTML special characters."""
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
-
-
-# ============================================================
-# MC QUESTION LOADER
-# ============================================================
-
-def load_mc_questions(lesson_id):
-    """Load multiple choice questions for a lesson from the question files."""
-    scripts_dir = os.path.dirname(os.path.abspath(__file__))
-
-    # Map lesson ID prefix to question file
-    # Examples: GK-L01, G01-L01, G05-L02, G09L1-L01, NE-L1-01
-    prefix = lesson_id.split("-")[0]  # GK, G01, G09L1, NE, etc.
-
-    file_map = {
-        "GK": "lesson_questions_GK.py",
-        "G01": "lesson_questions_G01.py",
-        "G02": "lesson_questions_G02.py",
-        "G03": "lesson_questions_G03.py",
-        "G04": "lesson_questions_G04.py",
-        "G04L2": "lesson_questions_G04_L2.py",
-        "G05": "lesson_questions_G05.py",
-        "G05L2": "lesson_questions_G05_L2.py",
-        "G06": "lesson_questions_G06.py",
-        "G06L2": "lesson_questions_G06_L2.py",
-        "G07": "lesson_questions_G07.py",
-        "G07L2": "lesson_questions_G07_L2.py",
-        "G08": "lesson_questions_G08.py",
-        "G08L2": "lesson_questions_G08_L2.py",
-        "G09L1": "lesson_questions_G09_L1.py",
-        "G09L2": "lesson_questions_G09_L2.py",
-        "G09L3": "lesson_questions_G09_L3.py",
-        "G10L1": "lesson_questions_G10_L1.py",
-        "G10L2": "lesson_questions_G10_L2.py",
-        "G10L3": "lesson_questions_G10_L3.py",
-        "G11L1": "lesson_questions_G11_L1.py",
-        "G11L2": "lesson_questions_G11_L2.py",
-        "G11L3": "lesson_questions_G11_L3.py",
-        "G12L1": "lesson_questions_G12_L1.py",
-        "G12L2": "lesson_questions_G12_L2.py",
-        "G12L3": "lesson_questions_G12_L3.py",
-    }
-
-    # Handle Nature's Engineers
-    if lesson_id.startswith("NE"):
-        filename = "lesson_questions_natures_engineers.py"
-    else:
-        filename = file_map.get(prefix)
-
-    if not filename:
-        return None
-
-    filepath = os.path.join(scripts_dir, filename)
-    if not os.path.exists(filepath):
-        return None
-
-    try:
-        spec = importlib.util.spec_from_file_location(f"questions_{prefix}", filepath)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-
-        if hasattr(mod, "ALL_QUESTIONS"):
-            return mod.ALL_QUESTIONS.get(lesson_id)
-    except Exception as e:
-        print(f"  Note: Could not load MC questions for {lesson_id}: {e}")
-
-    return None
-
-
-def render_mc_questions_html(questions, assessment_type="pre"):
-    """Render MC questions as HTML for the Student Activity Pack."""
-    if not questions:
-        return ""
-
-    key = f"mc_{assessment_type}_assessment"
-    mc_list = questions.get(key, [])
-    if not mc_list:
-        return ""
-
-    html = ""
-    for i, q in enumerate(mc_list, 1):
-        choices_html = ""
-        for letter in ["A", "B", "C", "D"]:
-            if letter in q.get("choices", {}):
-                choices_html += f'''<div class="mc-choice">
-            <span class="mc-choice-letter">{letter}.</span>
-            <span>{html_escape(q["choices"][letter])}</span>
-          </div>'''
-
-        html += f'''<div class="mc-question-block">
-      <div class="mc-question-text"><span class="mc-q-num">{i}</span><span>{html_escape(q["question"])}</span></div>
-      <div class="mc-choices">{choices_html}</div>
-    </div>'''
-
-    return html
-
-
-def render_mc_answer_key_html(questions):
-    """Render MC question answer keys for the Teacher's Guide."""
-    if not questions:
-        return ""
-
-    html = ""
-    for assessment_type, label in [("pre", "Pre-Assessment"), ("post", "Post-Assessment")]:
-        key = f"mc_{assessment_type}_assessment"
-        mc_list = questions.get(key, [])
-        if not mc_list:
-            continue
-
-        html += f'<h4 style="margin-top:12px;">Multiple Choice {label} Answer Key</h4>'
-        for i, q in enumerate(mc_list, 1):
-            correct = q.get("correct", "")
-            correct_text = q.get("choices", {}).get(correct, "")
-            feedback = q.get("feedback_correct", "")
-            html += f'''<div class="mc-answer-block">
-        <div class="mc-answer-q">{i}. {html_escape(q["question"])}</div>
-        <div class="mc-answer-correct">Correct: {correct}) {html_escape(correct_text)}</div>
-        <div class="mc-answer-feedback">{html_escape(feedback)}</div>
-      </div>'''
-
-    return html
-
-
-# ============================================================
-# STUDENT ACTIVITY PACK GENERATOR
-# ============================================================
-
-def generate_student_activity_pack(data, mc_questions=None):
-    """Generate the complete Student Activity Pack HTML from lesson data."""
-    lesson_id = data["id"]
-    title = html_escape(data["title"])
-    subtitle = html_escape(data["subtitle"])
-    ngss = data["ngss"]
-
-    # Determine grade display
-    grade_num = lesson_id.split("-")[0].replace("G", "").replace("K", "K")
-    if grade_num == "K":
-        grade_display = "Kindergarten"
-    else:
-        grade_display = f"Grade {int(grade_num)}" if grade_num.isdigit() else f"Grade {grade_num}"
-
-    # Get crosscutting concept from dimensions if available
-    cc = "Systems &amp; Models"
-    if "dimensions" in data:
-        for dim in data["dimensions"]:
-            if "Crosscutting" in dim[0]:
-                cc = html_escape(dim[1])
-                break
-
-    # Components
-    components = data.get("components", [])
-    external = [c for c in components if c[2]]  # is_external=True
-    internal = [c for c in components if not c[2]]
-
-    # Scenarios
-    scenarios = data.get("sim_scenarios", data.get("scenarios", []))
-
-    # Build component chips
-    chips_html = ""
-    for i, comp in enumerate(components):
-        cls = "teal" if comp[2] else "purple"
-        chips_html += f'<span class="chip {cls}">{html_escape(comp[0])}</span>'
-
-    # Build sort slots
-    ext_slots = ''.join(['<div class="sort-item-slot"></div>' for _ in external])
-    int_slots = ''.join(['<div class="sort-item-slot"></div>' for _ in internal])
-
-    # Pre-assessment questions
-    pre_qs = data.get("pre_assessment", [
-        f"What do you already know about {title.lower()}?",
-        "What do you think causes this phenomenon?",
-        "What is a model? How do scientists use models?",
-        'What does it mean when we say things work as a "system"?'
-    ])
-
-    pre_q_html = ""
-    for i, q in enumerate(pre_qs, 1):
-        pre_q_html += f'''<div class="question-block">
-      <div class="question-label"><span class="q-number">{i}</span><span>{html_escape(q)}</span></div>
-      <div class="response-lines"></div>
-    </div>'''
-
-    # MC pre-assessment questions
-    mc_pre_html = render_mc_questions_html(mc_questions, "pre") if mc_questions else ""
-    mc_post_html = render_mc_questions_html(mc_questions, "post") if mc_questions else ""
-
-    # Scenario cards
-    scenario_html = ""
-    scenario_names = ["1", "2", "3"]
-    for i, sc in enumerate(scenarios[:3]):
-        sc_title = html_escape(sc[0]) if isinstance(sc, (list, tuple)) else html_escape(str(sc))
-        sc_instruction = html_escape(sc[1]) if isinstance(sc, (list, tuple)) and len(sc) > 1 else ""
-        sc_predict = html_escape(sc[2]) if isinstance(sc, (list, tuple)) and len(sc) > 2 else "What do you predict will happen?"
-
-        scenario_html += f'''<div class="scenario-card">
-      <div class="scenario-header"><div class="scenario-icon">{i+1}</div>Scenario {i+1}: {sc_title}</div>
-      <div class="scenario-body">
-        <div class="scenario-instruction">{sc_instruction}</div>
-        <div class="predict-observe">
-          <div><div class="po-label predict">My Prediction</div><div class="po-box predict"></div></div>
-          <div><div class="po-label observe">What I Observed</div><div class="po-box observe"></div></div>
-        </div>
-      </div>
-    </div>'''
-
-    # Extension components
-    extend_html = ""
-    for ec in data.get("extend_components", []):
-        name = html_escape(ec[0])
-        desc = html_escape(ec[1])
-        extend_html += f'<li><strong>{name}</strong> &mdash; {desc}</li>'
-
-    # Reflection questions
-    reflection_html = ""
-    for i, q in enumerate(data.get("reflections", [])[:5], 1):
-        reflection_html += f'''<div class="question-block">
-      <div class="question-label"><span class="q-number">{i}</span><span>{html_escape(q)}</span></div>
-      <div class="response-lines"></div>
-    </div>'''
-
-    # STEM Challenge
-    stem_title = html_escape(data.get("stem_title", "STEM Challenge"))
-    stem_mission = html_escape(data.get("stem_mission", "Apply what you learned to solve a real-world engineering problem."))
-    stem_scenario = html_escape(data.get("stem_scenario", ""))
-    stem_design_qs = data.get("stem_design_qs", data.get("stem_questions", []))
-
-    design_boxes = ""
-    for i, q in enumerate(stem_design_qs[:4], 1):
-        design_boxes += f'<div class="design-box"><div class="design-box-label">{i}. {html_escape(q)}</div></div>'
-
-    # Career connection
-    career = html_escape(data.get("career", ""))
-
-    # Assemble full HTML
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ModelIt! Student Activity Pack &mdash; {lesson_id}</title>
-<style>{DESIGN_SYSTEM_CSS}</style>
-</head>
-<body>
-
-<!-- COVER PAGE -->
-<div class="page cover-page">
-  <div class="cover-header">
-    {bubbles_html()}
-    <div class="cover-logo"><div class="logo-text">ModelIt!</div></div>
-    <div class="cover-doc-type">Student Activity Pack</div>
-  </div>
-  <div class="cover-body">
-    <div class="cover-title">{title}</div>
-    <div class="cover-subtitle">{subtitle}</div>
-    <div class="cover-meta-row">
-      <div class="cover-badge">{grade_display}</div>
-      <div class="cover-badge teal">NGSS {ngss}</div>
-      <div class="cover-badge">{cc}</div>
-    </div>
-    <div class="cover-name-block">
-      <div class="cover-field"><label>Student Name</label><div class="line"></div></div>
-      <div class="cover-field"><label>Date</label><div class="line"></div></div>
-    </div>
-  </div>
-  <div class="cover-footer">
-    <div class="cover-footer-logo">ModelIt! &mdash; Discovery Collective</div>
-    <div>&copy; 2026 Discovery Collective. All rights reserved.</div>
-  </div>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<div class="page" style="position:relative;">
-  <div class="page-header">
-    {header_bubbles_html()}
-    <div style="display:flex;align-items:center;position:relative;z-index:2;">
-      <div class="section-title" style="margin-left:0;">Table of Contents</div>
-    </div>
-    <div class="page-logo-mini">ModelIt!</div>
-  </div>
-  <div class="page-content" style="padding-top: 0.5in;">
-    <ul class="toc-list">
-      <li><span>Pre-Assessment</span><span class="toc-dots"></span><span class="toc-page">3</span></li>
-      <li><span>Scoring Rubric</span><span class="toc-dots"></span><span class="toc-page">4</span></li>
-      <li><span>Component Analysis</span><span class="toc-dots"></span><span class="toc-page">5</span></li>
-      <li><span>Model Recording Page</span><span class="toc-dots"></span><span class="toc-page">6</span></li>
-      <li><span>Simulation Observations</span><span class="toc-dots"></span><span class="toc-page">7</span></li>
-      <li><span>Research &amp; Extend</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
-      <li><span>Reflection Questions</span><span class="toc-dots"></span><span class="toc-page">9</span></li>
-      <li><span>STEM Challenge</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
-      {"<li><span>Post-Assessment</span><span class='toc-dots'></span><span class='toc-page'>11</span></li>" if mc_post_html else ""}
-    </ul>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 2)}
-</div>
-
-<!-- SECTION 1: PRE-ASSESSMENT -->
-<div class="page" style="position:relative;">
-  {section_page_header("1", "Pre-Assessment")}
-  <div class="page-content">
-    <div class="section-intro"><strong>What Do You Know?</strong> Answer each question below to the best of your ability. There are no wrong answers &mdash; this helps your teacher understand what you already know!</div>
-    {"<div class='mc-section-intro'><strong>Multiple Choice:</strong> Circle the best answer for each question.</div>" + mc_pre_html if mc_pre_html else ""}
-    {pre_q_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 3)}
-</div>
-
-<!-- SECTION 2: SCORING RUBRIC -->
-<div class="page" style="position:relative;">
-  {section_page_header("2", "Scoring Rubric")}
-  <div class="page-content">
-    <div class="section-intro">Your teacher will use this rubric to assess your work. Read through each level to understand what is expected!</div>
-    <table class="rubric-table">
-      <thead><tr><th>Skill</th><th>Expert (4)</th><th>Proficient (3)</th><th>Developing (2)</th><th>Beginning (1)</th></tr></thead>
-      <tbody>
-        <tr><td>Identifying Components</td><td><span class="rubric-level">Expert</span>Correctly identifies and sorts ALL components as internal or external with detailed reasoning</td><td><span class="rubric-level">Proficient</span>Correctly identifies and sorts MOST components with some reasoning</td><td><span class="rubric-level">Developing</span>Identifies components but has difficulty sorting or explaining</td><td><span class="rubric-level">Beginning</span>Needs significant help identifying components</td></tr>
-        <tr><td>Establishing Relationships</td><td><span class="rubric-level">Expert</span>Accurately describes ALL positive and negative relationships with clear evidence</td><td><span class="rubric-level">Proficient</span>Accurately describes MOST relationships with some evidence</td><td><span class="rubric-level">Developing</span>Identifies some relationships but struggles with direction</td><td><span class="rubric-level">Beginning</span>Needs help understanding how components connect</td></tr>
-        <tr><td>Running Simulations</td><td><span class="rubric-level">Expert</span>Makes accurate predictions AND explains surprising results using evidence</td><td><span class="rubric-level">Proficient</span>Makes reasonable predictions and records clear observations</td><td><span class="rubric-level">Developing</span>Runs simulations but predictions or observations are incomplete</td><td><span class="rubric-level">Beginning</span>Needs help running simulations or recording data</td></tr>
-        <tr><td>Explaining Results</td><td><span class="rubric-level">Expert</span>Uses multiple pieces of evidence to explain HOW and WHY systems interact</td><td><span class="rubric-level">Proficient</span>Uses evidence to explain system interactions</td><td><span class="rubric-level">Developing</span>Gives partial explanations with limited evidence</td><td><span class="rubric-level">Beginning</span>Needs help connecting evidence to explanations</td></tr>
-      </tbody>
-    </table>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 4)}
-</div>
-
-<!-- SECTION 3: COMPONENT ANALYSIS -->
-<div class="page" style="position:relative;">
-  {section_page_header("3", "Component Analysis")}
-  <div class="page-content">
-    <div class="callout teal">
-      <div class="callout-title">What is a Component?</div>
-      A <strong>component</strong> is a part of a system that plays a specific role. Components can be <strong>EXTERNAL</strong> (come from outside the system) or <strong>INTERNAL</strong> (happen within the system).
-    </div>
-    <h3 class="sub-heading">Sort These Components</h3>
-    <div class="component-chips">{chips_html}</div>
-    <div class="sort-columns">
-      <div class="sort-col external"><div class="sort-col-header">EXTERNAL</div><div class="sort-col-body">{ext_slots}</div></div>
-      <div class="sort-col internal"><div class="sort-col-header">INTERNAL</div><div class="sort-col-body">{int_slots}</div></div>
-    </div>
-    <div class="question-block">
-      <div class="question-label"><span class="q-number">?</span><span>Explain your reasoning: Why did you sort each component the way you did?</span></div>
-      <div class="response-lines tall"></div>
-    </div>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 5)}
-</div>
-
-<!-- SECTION 4: MODEL RECORDING -->
-<div class="page" style="position:relative;">
-  {section_page_header("4", "Model Recording Page")}
-  <div class="page-content">
-    <div class="section-intro">Draw your model showing all components and their relationships. Use the relationship key below to label your arrows!</div>
-    <div class="rel-key">
-      <div class="rel-key-item"><div class="rel-symbol pos">+</div><span><strong>POSITIVE:</strong> When A increases, B also increases</span></div>
-      <div class="rel-key-item"><div class="rel-symbol neg">&minus;</div><span><strong>NEGATIVE:</strong> When A increases, B decreases</span></div>
-    </div>
-    <div class="sketch-area"></div>
-    <div class="question-block">
-      <div class="question-label"><span class="q-number">?</span><span>Explain ONE relationship in your model. What happens when one component changes?</span></div>
-      <div class="response-lines tall"></div>
-    </div>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 6)}
-</div>
-
-<!-- SECTION 5: SIMULATION OBSERVATIONS -->
-<div class="page" style="position:relative;">
-  {section_page_header("5", "Simulation Observations")}
-  <div class="page-content">
-    <div class="section-intro">Run each scenario in ModelIt! First, write your <strong>prediction</strong>. Then run the simulation and record what you <strong>observe</strong>.</div>
-    {scenario_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 7)}
-</div>
-
-<!-- SECTION 6: RESEARCH & EXTEND -->
-<div class="page" style="position:relative;">
-  {section_page_header("6", "Research &amp; Extend")}
-  <div class="page-content">
-    <div class="section-intro">Real systems are more complex than our model! Here are additional components scientists study. Choose one and explain how it could connect to our model.</div>
-    <h3 class="sub-heading">Possible New Components</h3>
-    <ul class="extension-list">{extend_html}</ul>
-    <h3 class="sub-heading">My Extension</h3>
-    <div class="question-block"><div class="question-label"><span class="q-number">A</span><span>Which new component would you add to the model?</span></div><div class="response-box short"></div></div>
-    <div class="question-block"><div class="question-label"><span class="q-number">B</span><span>How would it connect to the existing components? (Draw or describe)</span></div><div class="response-lines tall"></div></div>
-    <div class="question-block"><div class="question-label"><span class="q-number">C</span><span>What evidence or reasoning supports your connection?</span></div><div class="response-lines"></div></div>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 8)}
-</div>
-
-<!-- SECTION 7: REFLECTION -->
-<div class="page" style="position:relative;">
-  {section_page_header("7", "Reflection Questions")}
-  <div class="page-content">
-    <div class="callout purple">
-      <div class="callout-title">The Big Question</div>
-      <strong>{html_escape(data.get("big_question", ""))}</strong> Use evidence from your simulation to support your answers.
-    </div>
-    {reflection_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 9)}
-</div>
-
-<!-- SECTION 8: STEM CHALLENGE -->
-<div class="page" style="position:relative;">
-  {section_page_header("8", f"STEM Challenge: {stem_title}")}
-  <div class="page-content">
-    <div class="stem-mission">
-      <div class="stem-mission-title">YOUR ENGINEERING MISSION</div>
-      <p>{stem_mission}</p>
-    </div>
-    {"<div class='callout orange'><div class='callout-title'>THE SCENARIO</div>" + stem_scenario + "</div>" if stem_scenario else ""}
-    <h3 class="sub-heading">Engineering Design Thinking</h3>
-    <div class="design-grid">{design_boxes}</div>
-    <h3 class="sub-heading">My Design</h3>
-    <div class="map-area"><div class="map-label">Design Area &mdash; Draw Your Solution</div><div class="compass">N</div></div>
-    <div class="question-block">
-      <div class="question-label"><span class="q-number">!</span><span>Explain your design using scientific evidence from the simulation:</span></div>
-      <div class="response-lines tall"></div>
-    </div>
-    {"<div class='callout teal'><div class='callout-title'>Real Career Connection</div>" + career + "</div>" if career else ""}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 10)}
-</div>
-
-{"" if not mc_post_html else f"""<!-- SECTION 9: POST-ASSESSMENT -->
-<div class="page" style="position:relative;">
-  {section_page_header("9", "Post-Assessment")}
-  <div class="page-content">
-    <div class="mc-post-header">Show What You Learned!</div>
-    <div class="mc-section-intro"><strong>Multiple Choice:</strong> Now that you have completed the lesson, circle the best answer for each question. Compare your answers to your pre-assessment &mdash; did your thinking change?</div>
-    {mc_post_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 11)}
-</div>
-"""}
-</body>
-</html>'''
-
-    return html
-
-
-# ============================================================
-# TEACHER'S GUIDE GENERATOR
-# ============================================================
-
-def generate_teachers_guide(data, mc_questions=None):
-    """Generate the complete Teacher's Guide HTML from lesson data."""
-    lesson_id = data["id"]
-    title = html_escape(data["title"])
-    subtitle = html_escape(data["subtitle"])
-    ngss = data["ngss"]
-    ngss_desc = html_escape(data.get("ngss_desc", ""))
-
-    grade_num = lesson_id.split("-")[0].replace("G", "").replace("K", "K")
-    if grade_num == "K":
-        grade_display = "Kindergarten"
-    else:
-        grade_display = f"Grade {int(grade_num)}" if grade_num.isdigit() else f"Grade {grade_num}"
-
-    # NGSS dimensions
-    dimensions = data.get("dimensions", [])
-    ngss_rows = ""
-    for dim in dimensions:
-        ngss_rows += f'<tr><td>{html_escape(dim[0])}</td><td><strong>{html_escape(dim[1])}</strong> &mdash; {html_escape(dim[2])}</td></tr>'
-
-    # CAST questions
-    cast_html = ""
-    for cq in data.get("cast_questions", []):
-        cast_html += f'<div class="cast-question"><div class="cast-question-type">{html_escape(cq[0])}</div>{html_escape(cq[1])}</div>'
-
-    # Background sections
-    bg_intro = html_escape(data.get("background_intro", ""))
-    bg_sections = ""
-    for section in data.get("background_sections", []):
-        bg_sections += f'<h3 class="sub-heading">{html_escape(section[0])}</h3><p style="font-size:9.5pt; margin-bottom: 10px;">{html_escape(section[1])}</p>'
-
-    # LEVER framework
-    lever_html = ""
-    lever_data = [
-        ("L", data.get("lever_L", "Students identify the system components."), "Locate the System", ""),
-        ("E", data.get("lever_E", "Students determine relationships between components."), "Establish Relationships", "teal"),
-        ("V", data.get("lever_V", "Students build their model in ModelIt!"), "Visualize & Model", ""),
-        ("E", data.get("lever_Ev", "Students run simulations and evaluate outcomes."), "Evaluate Outcomes", "teal"),
-        ("R", data.get("lever_R", "Students revise and extend their models."), "Revise & Extend", ""),
-    ]
-    for letter, desc, label, cls in lever_data:
-        teal_cls = f' {cls}' if cls else ''
-        lever_html += f'''<div class="lever-step">
-      <div class="lever-letter{teal_cls}">{letter}</div>
-      <div class="lever-desc"><strong>{html_escape(label)}</strong>{html_escape(desc)}</div>
-    </div>'''
-
-    # Slide-by-slide facilitation
-    slides_html = ""
-    for slide in data.get("slides_guide", []):
-        slides_html += f'''<div class="slide-card">
-      <div class="slide-card-header"><span>{html_escape(slide.get("num", ""))}: {html_escape(slide.get("title", ""))}</span><span class="slide-time">{html_escape(slide.get("time", ""))}</span></div>
-      <div class="slide-card-body">
-        <div class="teacher-script"><strong>Say:</strong> &ldquo;{html_escape(slide.get("say", ""))}&rdquo;</div>
-        <div class="watch-for"><div class="watch-for-title">Watch For</div>{html_escape(slide.get("do", ""))}</div>
-      </div>
-    </div>'''
-
-    # Answer key - relationships
-    answer_rels = ""
-    for rel in data.get("relationships", []):
-        answer_rels += f'<li><strong>{html_escape(rel[0])}:</strong> {html_escape(rel[1])} &mdash; {html_escape(rel[2])}</li>'
-
-    # Answer key - discoveries
-    answer_disc = ""
-    for disc in data.get("discoveries", []):
-        answer_disc += f'<li>{html_escape(disc)}</li>'
-
-    # Misconceptions
-    misconceptions_html = ""
-    for mc in data.get("misconceptions", []):
-        mc_wrong = html_escape(mc[0])
-        mc_right = html_escape(mc[1])
-        misconceptions_html += f'''<div class="misconception-row">
-      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;{mc_wrong}&rdquo;</div>
-      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>{mc_right}</div>
-    </div>'''
-
-    # Components for answer key
-    components = data.get("components", [])
-    ext_names = ", ".join([c[0] for c in components if c[2]])
-    int_names = ", ".join([c[0] for c in components if not c[2]])
-
-    # MC answer key
-    mc_answer_key_html = render_mc_answer_key_html(mc_questions) if mc_questions else ""
-
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ModelIt! Teacher&#39;s Guide &mdash; {lesson_id}</title>
-<style>{DESIGN_SYSTEM_CSS}</style>
+</style>
 </head>
 <body>
 
 <!-- COVER PAGE -->
 <div class="page cover-page">
   <div class="cover-header teacher-variant">
-    {bubbles_html()}
+    <div class="cover-bubbles"><div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div><div class="bubble b5"></div></div>
     <div class="cover-logo"><div class="logo-text">ModelIt!</div></div>
     <div class="cover-doc-type teacher">Teacher&#39;s Guide</div>
   </div>
   <div class="cover-body">
-    <div class="cover-title">{title}</div>
-    <div class="cover-subtitle">{subtitle}</div>
+    <div class="cover-title">Building for the Big One: Earthquake Engineering Lab</div>
+    <div class="cover-subtitle">How Engineers Design Buildings That Bend Instead of Break</div>
     <div class="cover-quick-ref">
       <h3>Quick Reference</h3>
-      <div class="qr-row"><span class="qr-label">Grade Level</span><span class="qr-value">{grade_display}</span></div>
-      <div class="qr-row"><span class="qr-label">NGSS Standard</span><span class="qr-value">{ngss}</span></div>
+      <div class="qr-row"><span class="qr-label">Grade Level</span><span class="qr-value">Grade 04L2</span></div>
+      <div class="qr-row"><span class="qr-label">NGSS Standard</span><span class="qr-value">4-ESS3-2, 4-ETS1-2</span></div>
       <div class="qr-row"><span class="qr-label">Time</span><span class="qr-value">45&ndash;60 minutes (core lesson)</span></div>
       <div class="qr-row"><span class="qr-label">Materials</span><span class="qr-value">Student Activity Pack, devices with ModelIt! access</span></div>
       <div class="qr-row"><span class="qr-label">Prep</span><span class="qr-value">Print activity packs, test ModelIt! on student devices</span></div>
@@ -1052,7 +462,7 @@ def generate_teachers_guide(data, mc_questions=None):
 <!-- TABLE OF CONTENTS -->
 <div class="page" style="position:relative;">
   <div class="page-header teacher-variant">
-    {header_bubbles_html()}
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
     <div style="display:flex;align-items:center;position:relative;z-index:2;">
       <div class="section-title" style="margin-left:0;">Table of Contents</div>
     </div>
@@ -1071,25 +481,45 @@ def generate_teachers_guide(data, mc_questions=None):
       <li><span>Common Misconceptions</span><span class="toc-dots"></span><span class="toc-page">12</span></li>
     </ul>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 2)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 2</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 1: NGSS UNPACKING -->
 <div class="page" style="position:relative;">
-  {section_page_header("1", "NGSS Standards &amp; CAST Alignment", "teacher-variant")}
-  <div class="page-content">
-    <div class="teacher-tip"><div class="teacher-tip-title">Performance Expectation: {ngss}</div>{ngss_desc}</div>
-    <h2 class="interior-heading">Three-Dimensional Learning</h2>
-    <table class="ngss-table">{ngss_rows}</table>
-    <h2 class="interior-heading">CAST Testing Alignment</h2>
-    {cast_html}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">1</div>
+    <div class="section-title">NGSS Standards &amp; CAST Alignment</div>
+    <div class="page-logo-mini">ModelIt!</div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 3)}
+  <div class="page-content">
+    <div class="teacher-tip"><div class="teacher-tip-title">Performance Expectation: 4-ESS3-2, 4-ETS1-2</div>Generate and compare multiple solutions to reduce the impacts of natural Earth processes on humans. Generate and compare multiple solutions to a problem based on how well they meet the criteria and constraints of the design problem.</div>
+    <h2 class="interior-heading">Three-Dimensional Learning</h2>
+    <table class="ngss-table"><tr><td>Science Practice</td><td><strong>Developing and Using Models / Designing Solutions</strong> &mdash; Students develop a five-component model of earthquake impact on buildings and use model evidence to design structures that minimize damage and maximize occupant safety.</td></tr><tr><td>Disciplinary Core Idea</td><td><strong>ESS3.B Natural Hazards / ETS1.B Developing Possible Solutions</strong> &mdash; Natural hazards like earthquakes cannot be prevented, but their impacts can be reduced through engineering design. Testing and comparing multiple solutions helps identify the most effective approach.</td></tr><tr><td>Crosscutting Concept</td><td><strong>Cause and Effect</strong> &mdash; Students investigate the causal chain from earthquake magnitude to shaking force to structural damage to occupant safety, and how engineering interventions (flexibility) can interrupt this chain.</td></tr></table>
+    <h2 class="interior-heading">CAST Testing Alignment</h2>
+    <div class="cast-question"><div class="cast-question-type">Multiple Choice:</div>Two buildings are next to each other during a magnitude 7.0 earthquake. Building A is made of rigid unreinforced brick. Building B has a flexible steel frame with shock absorbers. Which building is most likely to survive? Why?</div><div class="cast-question"><div class="cast-question-type">Constructed Response:</div>Using what you know about earthquakes and engineering, explain why a building that can SWAY during an earthquake is actually SAFER than one that stays perfectly still. Use the words 'flexibility,' 'shaking force,' and 'structural damage' in your answer.</div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 3</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 2: SCORING RUBRIC (Teacher Reference) -->
 <div class="page" style="position:relative;">
-  {section_page_header("2", "Scoring Rubric", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">2</div>
+    <div class="section-title">Scoring Rubric</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">Assessment Reference</div>This is the same rubric students see in their Activity Pack. Use it during and after the lesson for formative and summative assessment. Circle or highlight the proficiency level for each skill.</div>
     <table class="rubric-table">
@@ -1109,26 +539,61 @@ def generate_teachers_guide(data, mc_questions=None):
       <strong>Beginning (1):</strong> Student needs significant support; consider using Differentiation strategies (Section 7).
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 4)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 4</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 3: BACKGROUND KNOWLEDGE -->
 <div class="page" style="position:relative;">
-  {section_page_header("3", "Background Content Knowledge", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">3</div>
+    <div class="section-title">Background Content Knowledge</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">For Your Confidence</div>This section provides the science background you need to facilitate this lesson with authority. You don&rsquo;t need to teach all of this &mdash; it&rsquo;s here so you can answer student questions accurately.</div>
-    <p style="font-size:9.5pt; margin-bottom: 10px;">{bg_intro}</p>
-    {bg_sections}
+    <p style="font-size:9.5pt; margin-bottom: 10px;">Earthquakes are one of nature's most destructive forces, but they do not have to be deadly. The difference between a disaster with thousands of casualties and one where everyone walks away is often the ENGINEERING of the buildings. Understanding how buildings interact with earthquake forces is the key to saving lives.</p>
+    <h3 class="sub-heading">How Earthquakes Work</h3><p style="font-size:9.5pt; margin-bottom: 10px;">Earthquakes happen when tectonic plates suddenly slip past each other along a fault line, releasing enormous amounts of stored energy as seismic waves. These waves travel through the ground and shake everything on the surface. Earthquake magnitude is measured on the Richter scale — each whole number increase represents about 32 times more energy. A magnitude 7 earthquake releases about 32 times more energy than a magnitude 6, and about 1,000 times more than a magnitude 5.</p><h3 class="sub-heading">Rigid vs. Flexible: Why Buildings Fail</h3><p style="font-size:9.5pt; margin-bottom: 10px;">When the ground shakes during an earthquake, the bottom of a building moves with the ground but the top tries to stay still (due to inertia). This creates enormous stress in the structure. Rigid buildings — made of unreinforced brick, concrete blocks, or adobe — cannot flex to absorb this stress. Like a dry twig, they snap. The connections between walls and floors fail, and the building pancakes. Flexible buildings — with steel frames, reinforced concrete, and engineered connections — bend and sway with the motion, distributing the stress throughout the structure instead of concentrating it at weak points.</p><h3 class="sub-heading">Engineering Solutions That Save Lives</h3><p style="font-size:9.5pt; margin-bottom: 10px;">Modern earthquake engineering uses several strategies. Base isolation places the building on rubber and steel pads that let the foundation slide horizontally while the building stays relatively still — like a book sliding on a table. Tuned mass dampers are heavy pendulums near the top of skyscrapers that swing in the opposite direction of the earthquake, counteracting the sway. Cross-bracing uses diagonal steel beams that resist lateral forces. Energy dissipation devices are essentially shock absorbers built into the building that convert shaking energy into heat.</p><h3 class="sub-heading">The Cost of Not Building Better</h3><p style="font-size:9.5pt; margin-bottom: 10px;">The difference between earthquake engineering and no engineering is measured in lives. The 2010 Haiti earthquake (magnitude 7.0) killed over 200,000 people because most buildings were unreinforced concrete. The 2011 Japan earthquake (magnitude 9.0 — over 900 times stronger) killed about 20,000 people, mostly from the tsunami, because Japanese buildings are engineered for earthquakes. Japan experienced a much stronger earthquake but far fewer building collapses because they invested in engineering.</p>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 4)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 4</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 4: LEVER FRAMEWORK -->
 <div class="page" style="position:relative;">
-  {section_page_header("4", "The LEVER Framework", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">4</div>
+    <div class="section-title">The LEVER Framework</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">About LEVER</div>LEVER is how every ModelIt! lesson works. Students move through five phases to build, test, and refine a computational model. Each lesson is self-contained &mdash; students complete all five phases in one session.</div>
-    {lever_html}
+    <div class="lever-step">
+      <div class="lever-letter">L</div>
+      <div class="lever-desc"><strong>Locate the System</strong>Students identify Earthquake Magnitude and Building Flexibility as external components (one natural, one engineered) and Shaking Force, Structural Damage, and Occupant Safety as internal components that result from the interaction.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter teal">E</div>
+      <div class="lever-desc"><strong>Establish Relationships</strong>Students determine that Earthquake Magnitude positively affects Shaking Force, Building Flexibility negatively affects Structural Damage (flexible buildings resist damage), Shaking Force positively affects Structural Damage, Structural Damage negatively affects Occupant Safety, and Building Flexibility positively affects Occupant Safety.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter">V</div>
+      <div class="lever-desc"><strong>Visualize &amp; Model</strong>Students build a five-component model showing how earthquake force travels through a building and how engineering flexibility interrupts the damage chain to protect occupants.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter teal">E</div>
+      <div class="lever-desc"><strong>Evaluate Outcomes</strong>Students run four scenarios comparing rigid vs. flexible buildings in small and large earthquakes, discovering that flexibility makes the biggest difference in large earthquakes.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter">R</div>
+      <div class="lever-desc"><strong>Revise &amp; Extend</strong>Students add foundation type or building height to explore base isolation and why taller buildings need special engineering to handle amplified swaying at the top.</div>
+    </div>
 
     <div style="background: linear-gradient(135deg, var(--navy), var(--purple-deep)); border-radius: 12px; padding: 16px 20px; margin-top: 14px; color: white;">
       <h3 style="font-family: Quicksand, sans-serif; font-weight: 800; font-size: 11pt; color: var(--teal-brand); margin-bottom: 8px;">Dropping ModelIt! Into Your Existing Unit</h3>
@@ -1161,42 +626,146 @@ def generate_teachers_guide(data, mc_questions=None):
       </table>
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 6)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 6</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 4: SLIDE FACILITATION -->
 <div class="page" style="position:relative;">
-  {section_page_header("5", "Slide-by-Slide Facilitation", "teacher-variant")}
-  <div class="page-content">
-    {slides_html}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">5</div>
+    <div class="section-title">Slide-by-Slide Facilitation</div>
+    <div class="page-logo-mini">ModelIt!</div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 6)}
+  <div class="page-content">
+    <div class="slide-card">
+      <div class="slide-card-header"><span>Slide 1: Cover</span><span class="slide-time">2 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Look at these two buildings. Same earthquake. Same street. One collapsed, the other is fine. What is the difference?&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Show before/after earthquake photos of collapsed vs. surviving buildings. Ask: What do you think the surviving building had that the other did not?</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 2: Learning Objectives</span><span class="slide-time">3 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Today you are going to become earthquake engineers. You will figure out WHY some buildings survive and design one that can handle the big one.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Have students read objectives aloud. Pre-teach 'flexibility' vs. 'rigidity' by bending a pipe cleaner vs. trying to bend a pencil.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 3: Big Question</span><span class="slide-time">3 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;If two buildings are right next to each other and feel the SAME earthquake, why would one collapse and the other survive?&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Have students turn and talk: What design choices could make one building survive and another fail?</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 4: LEVER Framework</span><span class="slide-time">2 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Our model has one thing from NATURE and one thing from ENGINEERING. The question is: can engineering beat nature?&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Preview components. Explain that this model is special because one external is a natural hazard and the other is a human solution.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 5: Activity 1: Components</span><span class="slide-time">8 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;We cannot control earthquakes — but we CAN control how we build. That is the key to this whole model.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Guide sorting. Earthquake Magnitude is external (nature). Building Flexibility is external (engineering choice). Three internals are results.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 6: Activity 2: Connections</span><span class="slide-time">10 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Building Flexibility has a NEGATIVE relationship with Structural Damage. What does that mean? More flexibility means LESS damage!&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Help students draw all five relationships. Emphasize the two negative arrows — these are where engineering saves lives.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 7: Activity 3: Simulation</span><span class="slide-time">12 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Now let us test it. Same earthquake, two different buildings. Watch what happens to Structural Damage and Occupant Safety.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Run the rigid vs. flexible comparison. Students record the dramatic difference in damage and safety outcomes.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 8: Discoveries</span><span class="slide-time">5 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Engineers cannot stop earthquakes, but they CAN stop buildings from killing people. The answer is designing buildings that MOVE instead of FIGHT.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Show examples of base isolation and tuned mass dampers. Connect each engineering solution back to the model's flexibility component.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 9: STEM Challenge</span><span class="slide-time">12 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Your mission: build the tallest tower that survives the earthquake test. But here is the twist — it also has to be tall enough to be useful!&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Distribute materials (straws, pipe cleaners, marshmallows, tape, clay). Groups build, test on shaking tables, iterate, and retest.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 6</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 5: ANSWER KEY -->
 <div class="page" style="position:relative;">
-  {section_page_header("6", "Answer Key &amp; Expected Responses", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">6</div>
+    <div class="section-title">Answer Key &amp; Expected Responses</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="answer-key-box">
       <h4>Component Sorting</h4>
-      <ul><li><strong>EXTERNAL:</strong> {html_escape(ext_names)}</li><li><strong>INTERNAL:</strong> {html_escape(int_names)}</li></ul>
+      <ul><li><strong>EXTERNAL:</strong> Earthquake Magnitude, Building Flexibility</li><li><strong>INTERNAL:</strong> Shaking Force, Structural Damage, Occupant Safety</li></ul>
     </div>
     <div class="answer-key-box">
       <h4>Relationships</h4>
-      <ul>{answer_rels}</ul>
+      <ul><li><strong>Earthquake Magnitude to Shaking Force:</strong> POSITIVE (+) &mdash; Stronger earthquakes release more energy, creating stronger seismic waves that produce more violent shaking forces on buildings. A magnitude 7 earthquake produces about 32 times more energy than a magnitude 6, creating proportionally more shaking force.</li><li><strong>Building Flexibility to Structural Damage:</strong> NEGATIVE (-) &mdash; More flexible buildings experience LESS structural damage because they absorb and distribute shaking energy by swaying, bending, and flexing instead of cracking and collapsing. Flexibility allows the building to move WITH the earthquake rather than fighting against it.</li><li><strong>Shaking Force to Structural Damage:</strong> POSITIVE (+) &mdash; Stronger shaking forces cause more structural damage — more cracks, more broken connections, more collapsed sections. When shaking force exceeds what the structure can handle, failure is catastrophic and rapid.</li><li><strong>Structural Damage to Occupant Safety:</strong> NEGATIVE (-) &mdash; More structural damage means LESS safety for the people inside. When walls crack, floors collapse, and debris falls, occupants are at extreme risk. The goal of earthquake engineering is to keep structural damage low enough that the building protects everyone inside.</li><li><strong>Building Flexibility to Occupant Safety:</strong> POSITIVE (+) &mdash; More flexible buildings directly improve occupant safety because they maintain structural integrity during shaking. A building that sways but does not break keeps its occupants safe even in strong earthquakes.</li></ul>
     </div>
     <div class="answer-key-box">
       <h4>Key Discoveries</h4>
-      <ul>{answer_disc}</ul>
+      <ul><li>Stronger earthquakes create stronger shaking forces that cause more damage to buildings and endanger more people</li><li>Flexible buildings survive earthquakes much better than rigid ones because they absorb and distribute shaking energy instead of fighting it</li><li>Building flexibility REDUCES structural damage (negative relationship) because the building moves WITH the earthquake instead of against it</li><li>Occupant safety depends directly on structural damage — the less damage, the safer the people inside, which is why engineering design saves lives</li></ul>
     </div>
-    {mc_answer_key_html}
+    <h4 style="margin-top:12px;">Multiple Choice Post-Assessment Answer Key</h4><div class="mc-answer-block">
+        <div class="mc-answer-q">1. During an earthquake, a flexible building sways back and forth but does not collapse, while a rigid building next to it cracks and crumbles. Why does the flexible building survive?</div>
+        <div class="mc-answer-correct">Correct: B) The flexible building moves WITH the earthquake, absorbing and distributing the shaking energy instead of fighting against it</div>
+        <div class="mc-answer-feedback">Correct! Flexible buildings survive because they sway, bend, and absorb shaking energy. Like a living tree bending in a storm instead of snapping, flexible buildings move with the earthquake rather than resisting it.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">2. In the model, Earthquake Magnitude and Building Flexibility are external components. Why?</div>
+        <div class="mc-answer-correct">Correct: B) Because they are the starting conditions, one natural and one engineered, that determine what happens to the internal components</div>
+        <div class="mc-answer-feedback">Right! Earthquake Magnitude is a natural condition we cannot control, and Building Flexibility is an engineering design choice. Together, these external inputs determine the Shaking Force, Structural Damage, and Occupant Safety inside the system.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">3. The model shows that Building Flexibility has a NEGATIVE relationship with Structural Damage. What does this mean for earthquake engineering?</div>
+        <div class="mc-answer-correct">Correct: C) When Building Flexibility increases, Structural Damage decreases because the building absorbs shaking energy instead of cracking</div>
+        <div class="mc-answer-feedback">Exactly! A negative relationship means when one goes up, the other goes down. More flexibility means less damage because the building can bend and sway to absorb the earthquake's energy without breaking apart.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">4. A student compares two scenarios: a magnitude 90% earthquake hitting a building with 20% flexibility versus the same earthquake hitting a building with 80% flexibility. What difference would the model show?</div>
+        <div class="mc-answer-correct">Correct: B) The rigid building (20% flexibility) would have much more Structural Damage and much lower Occupant Safety than the flexible building (80% flexibility)</div>
+        <div class="mc-answer-feedback">Right! Even though the earthquake is the same, the flexible building absorbs the shaking energy by bending and swaying. The rigid building fights the force, leading to cracks, collapses, and much greater danger to people inside.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">5. The model shows that Structural Damage has a NEGATIVE relationship with Occupant Safety. Why is this the most important relationship for earthquake engineers?</div>
+        <div class="mc-answer-correct">Correct: B) Because when Structural Damage increases, Occupant Safety decreases, meaning cracking walls and falling debris put people in danger</div>
+        <div class="mc-answer-feedback">That is right! This is the key relationship because it directly connects building performance to human lives. When walls crack, floors collapse, and debris falls, people inside are at extreme risk. Engineers design for flexibility to keep damage low and safety high.</div>
+      </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 8)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 8</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 7: COLLABORATIVE LEARNING PROTOCOLS -->
 <div class="page" style="position:relative;">
-  {section_page_header("7", "Collaborative Learning Protocols", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">7</div>
+    <div class="section-title">Collaborative Learning Protocols</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip">
       <div class="teacher-tip-title">Why This Matters</div>
@@ -1266,12 +835,22 @@ def generate_teachers_guide(data, mc_questions=None):
       </table>
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 10)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 10</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 8: DIFFERENTIATION -->
 <div class="page" style="position:relative;">
-  {section_page_header("8", "Differentiation &amp; Extensions", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">8</div>
+    <div class="section-title">Differentiation &amp; Extensions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
     <!-- NOTE: These suggestions become the basis for the Differentiation & Scaffolding Pack add-on -->
   <div class="page-content">
     <div class="diff-grid">
@@ -1281,228 +860,42 @@ def generate_teachers_guide(data, mc_questions=None):
       <div class="diff-card gifted"><div class="diff-card-title">Gifted &amp; Talented</div><ul style="margin-left:14px;font-size:9pt;line-height:1.6;"><li>Create feedback loop diagrams</li><li>Research prevention strategies</li><li>Write a policy brief</li><li>Connect to climate change</li></ul></div>
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 10)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 10</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 8: MISCONCEPTIONS -->
 <div class="page" style="position:relative;">
-  {section_page_header("9", "Common Misconceptions", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">9</div>
+    <div class="section-title">Common Misconceptions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">Why This Matters</div>Addressing misconceptions proactively helps students build accurate scientific understanding. Use these as formative assessment checkpoints during the lesson.</div>
-    {misconceptions_html}
+    <div class="misconception-row">
+      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;The strongest building is the safest during an earthquake&rdquo;</div>
+      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>STRENGTH alone does not make a building earthquake-safe — FLEXIBILITY does. A building can be extremely strong but also extremely rigid, meaning it resists shaking forces until those forces exceed its strength, at which point it fails catastrophically. A flexible building may appear weaker but absorbs shaking energy by moving, preventing the catastrophic failure that kills people.</div>
+    </div><div class="misconception-row">
+      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;Earthquakes directly kill people&rdquo;</div>
+      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>Earthquakes themselves almost never directly kill people — BUILDINGS do. Falling debris, collapsing walls, and pancaking floors are responsible for the vast majority of earthquake deaths. In an open field during an earthquake, you would feel the shaking but be completely safe. This is why earthquake engineering is so important — better buildings mean fewer deaths, even in strong earthquakes.</div>
+    </div><div class="misconception-row">
+      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;We should just avoid building in earthquake zones&rdquo;</div>
+      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>About 1.5 billion people live in earthquake zones worldwide. Major cities like Tokyo, Los Angeles, San Francisco, Mexico City, and Istanbul are all in high-risk zones. We cannot simply abandon these areas — instead, we use engineering to make buildings safe. Japan proves this is possible: they experience thousands of earthquakes per year but their buildings are so well-engineered that most earthquakes cause no damage at all.</div>
+    </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 11)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L06 &bull; Teacher's Guide</span>
+    <span>Page 11</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 </body>
-</html>'''
-
-    return html
-
-
-# ============================================================
-# MAIN: Load data and generate
-# ============================================================
-
-def load_lesson_data(grade, lesson_num):
-    """Load lesson data from the appropriate data file."""
-    scripts_dir = os.path.dirname(os.path.abspath(__file__))
-    grade_lower = grade.lower()
-
-    # Determine data file path
-    data_file = None
-
-    # Nature's Engineers
-    if grade_lower in ["ne", "natures-engineers"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_natures_engineers.py")
-    # K-8 standard grades
-    elif grade_lower in ["k", "0k", "00"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_GK.py")
-    elif grade_lower in ["01", "1"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G01.py")
-    elif grade_lower in ["02", "2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G02.py")
-    elif grade_lower in ["03", "3"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G03.py")
-    elif grade_lower in ["04", "4"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G04.py")
-    elif grade_lower in ["04_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G04_L2.py")
-    elif grade_lower in ["05", "5"]:
-        if lesson_num == 1:
-            data_file = os.path.join(scripts_dir, "create_reader.py")
-        else:
-            data_file = os.path.join(scripts_dir, "lesson_data_L02_L10.py")
-    elif grade_lower in ["05_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G05_L2.py")
-    elif grade_lower in ["06", "6"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G06.py")
-    elif grade_lower in ["06_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G06_L2.py")
-    elif grade_lower in ["07", "7"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G07.py")
-    elif grade_lower in ["07_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G07_L2.py")
-    elif grade_lower in ["08", "8"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G08.py")
-    elif grade_lower in ["08_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G08_L2.py")
-    else:
-        # High school levels: 09_L1, 09_L2, 09_L3, 10_L1, etc.
-        data_file = os.path.join(scripts_dir, f"lesson_data_G{grade_lower}.py")
-
-    if not data_file or not os.path.exists(data_file):
-        print(f"ERROR: Data file not found for grade '{grade}': {data_file}")
-        return None
-
-    # Load the module
-    spec = importlib.util.spec_from_file_location(f"lesson_data_{grade}", data_file)
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-
-    # Find the lesson data - try multiple key patterns
-    lesson_key = f"L{lesson_num:02d}"
-
-    # Pattern 1: Direct attribute L01, L02, etc.
-    if hasattr(mod, lesson_key):
-        return getattr(mod, lesson_key)
-
-    # Pattern 2: Nature's Engineers uses L1_01-L1_06, L2_01-L2_06
-    if grade_lower in ["ne", "natures-engineers"]:
-        if lesson_num <= 6:
-            ne_key = f"L1_{lesson_num:02d}"
-        else:
-            ne_key = f"L2_{lesson_num - 6:02d}"
-        if hasattr(mod, ne_key):
-            return getattr(mod, ne_key)
-
-    # Pattern 3: Function get_L01_data()
-    func_name = f"get_{lesson_key}_data"
-    if hasattr(mod, func_name):
-        return getattr(mod, func_name)()
-
-    # Pattern 4: lessons dict
-    if hasattr(mod, "lessons"):
-        lessons = mod.lessons
-        if lesson_key in lessons:
-            return lessons[lesson_key]
-
-    print(f"WARNING: Could not find lesson {lesson_key} in {data_file}")
-    attrs = [a for a in dir(mod) if not a.startswith('_') and not a.startswith('__')]
-    print(f"  Available: {attrs[:20]}")
-    return None
-
-
-def get_output_dir(grade, lesson_num):
-    """Get the materials output directory."""
-    base = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "materials")
-
-    grade_lower = grade.lower()
-
-    # Nature's Engineers: L1 = lessons 1-6, L2 = lessons 7-12
-    if grade_lower in ["ne", "natures-engineers"]:
-        grade_folder = "natures-engineers"
-        if lesson_num <= 6:
-            lesson_prefix = "NE-L1"
-            ne_num = lesson_num
-        else:
-            lesson_prefix = "NE-L2"
-            ne_num = lesson_num - 6
-        lesson_folder = f"{lesson_prefix}-{ne_num:02d}"
-        output_dir = os.path.join(base, grade_folder, lesson_folder)
-        os.makedirs(output_dir, exist_ok=True)
-        return output_dir, lesson_folder
-
-    if grade_lower in ["k", "0k", "00"]:
-        grade_folder = "grade-K"
-        lesson_prefix = "GK"
-    elif len(grade_lower) == 1:
-        grade_folder = f"grade-0{grade_lower}"
-        lesson_prefix = f"G0{grade_lower}"
-    elif "_" in grade_lower:
-        # High school levels: "09_L1", "10_L2", etc.
-        grade_num, level = grade_lower.split("_")
-        grade_folder = f"grade-{grade_num}"
-        level_num = level.replace("l", "").replace("L", "")
-        level_folder = f"level-{level_num}"
-        lesson_prefix = f"G{grade_num}L{level_num}"
-        lesson_folder = f"{lesson_prefix}-L{lesson_num:02d}"
-        output_dir = os.path.join(base, grade_folder, level_folder, lesson_folder)
-        os.makedirs(output_dir, exist_ok=True)
-        return output_dir, lesson_folder
-    else:
-        grade_folder = f"grade-{grade_lower}"
-        lesson_prefix = f"G{grade_lower}"
-
-    lesson_folder = f"{lesson_prefix}-L{lesson_num:02d}"
-    output_dir = os.path.join(base, grade_folder, lesson_folder)
-
-    os.makedirs(output_dir, exist_ok=True)
-    return output_dir, lesson_folder
-
-
-def main():
-    parser = argparse.ArgumentParser(description="ModelIt! Branded Materials Generator")
-    parser.add_argument("--grade", required=True, help="Grade level (K, 01-12)")
-    parser.add_argument("--lesson", type=int, help="Lesson number (1-10)")
-    parser.add_argument("--all", action="store_true", help="Generate all lessons for the grade")
-    parser.add_argument("--type", choices=["student", "teacher", "both"], default="both",
-                       help="Which document to generate")
-
-    args = parser.parse_args()
-
-    if args.all:
-        if args.grade.lower() in ["ne", "natures-engineers"]:
-            lessons = range(1, 13)  # 12 NE lessons: L1(1-6) + L2(7-12)
-        elif args.grade.lower().endswith("_l2") and args.grade[:2].isdigit() and int(args.grade[:2]) <= 8:
-            lessons = range(1, 8)  # 7 L2 lessons for grades 4-8
-        else:
-            lessons = range(1, 11)
-    elif args.lesson:
-        lessons = [args.lesson]
-    else:
-        print("ERROR: Specify --lesson N or --all")
-        sys.exit(1)
-
-    for lesson_num in lessons:
-        print(f"\n{'='*60}")
-        print(f"Generating materials for Grade {args.grade}, Lesson {lesson_num}")
-        print(f"{'='*60}")
-
-        try:
-            data = load_lesson_data(args.grade, lesson_num)
-        except Exception as e:
-            print(f"WARNING: Could not load lesson {lesson_num}: {e}")
-            continue
-
-        output_dir, lesson_folder = get_output_dir(args.grade, lesson_num)
-
-        # Load MC questions if available
-        lesson_id = data.get("id", "")
-        mc_questions = load_mc_questions(lesson_id)
-        if mc_questions:
-            pre_count = len(mc_questions.get("mc_pre_assessment", []))
-            post_count = len(mc_questions.get("mc_post_assessment", []))
-            print(f"  [MC] Loaded {pre_count} pre + {post_count} post assessment questions")
-        else:
-            print(f"  [MC] No MC questions found for {lesson_id}")
-
-        if args.type in ("student", "both"):
-            html = generate_student_activity_pack(data, mc_questions)
-            filepath = os.path.join(output_dir, f"{lesson_folder}-Student-Activity-Pack.html")
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  [OK] Student Activity Pack: {filepath}")
-
-        if args.type in ("teacher", "both"):
-            html = generate_teachers_guide(data, mc_questions)
-            filepath = os.path.join(output_dir, f"{lesson_folder}-Teachers-Guide.html")
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  [OK] Teacher's Guide: {filepath}")
-
-    print(f"\nDone! Generated materials in {os.path.dirname(output_dir)}/")
-
-
-if __name__ == "__main__":
-    main()
+</html>

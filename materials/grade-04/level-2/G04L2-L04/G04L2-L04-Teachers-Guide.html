@@ -1,31 +1,10 @@
-#!/usr/bin/env python3
-"""
-ModelIt! Branded Materials Generator
-=====================================
-Generates print-ready HTML files using the official ModelIt! Design System.
-All printable materials (Student Activity Packs, Teacher's Guides, Coloring Sheets,
-Activity Pages, etc.) are generated as HTML with embedded CSS for pixel-perfect
-PDF export.
-
-Usage:
-    python create_branded_materials.py --grade 05 --lesson 01
-    python create_branded_materials.py --grade 05 --all
-    python create_branded_materials.py --grade 05 --lesson 01 --type student
-    python create_branded_materials.py --grade 05 --lesson 01 --type teacher
-
-Design System: design-prototypes/DESIGN-SYSTEM.md
-"""
-
-import argparse
-import os
-import sys
-import importlib.util
-
-# ============================================================
-# DESIGN SYSTEM CSS — The complete branded stylesheet
-# ============================================================
-
-DESIGN_SYSTEM_CSS = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelIt! Teacher&#39;s Guide &mdash; G04L2-L04</title>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap');
 
 :root {
@@ -450,593 +429,24 @@ h3.sub-heading { font-family: 'Quicksand', sans-serif; font-size: 11pt; font-wei
 .page-footer { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 0.5in; display: flex; justify-content: space-between; align-items: center; font-size: 7pt; color: var(--gray-text); border-top: 1px solid var(--purple-pale); background: white; }
 .page-footer .footer-logo { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--purple-brand); font-size: 8pt; }
 .page-footer .footer-bar { height: 3px; position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, var(--purple-brand), var(--teal-brand)); }
-"""
-
-# ============================================================
-# HELPER: Common HTML fragments
-# ============================================================
-
-def bubbles_html():
-    return '<div class="cover-bubbles"><div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div><div class="bubble b5"></div></div>'
-
-def header_bubbles_html():
-    return '<div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>'
-
-def page_footer_html(lesson_id, doc_type, page_num):
-    return f'''<div class="page-footer">
-    <span class="footer-logo">ModelIt!</span>
-    <span>{lesson_id} &bull; {doc_type}</span>
-    <span>Page {page_num}</span>
-    <div class="footer-bar"></div>
-  </div>'''
-
-def section_page_header(num, title, variant=""):
-    cls = f' {variant}' if variant else ''
-    return f'''<div class="page-header{cls}">
-    {header_bubbles_html()}
-    <div class="section-number">{num}</div>
-    <div class="section-title">{title}</div>
-    <div class="page-logo-mini">ModelIt!</div>
-  </div>'''
-
-def html_escape(text):
-    """Escape HTML special characters."""
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
-
-
-# ============================================================
-# MC QUESTION LOADER
-# ============================================================
-
-def load_mc_questions(lesson_id):
-    """Load multiple choice questions for a lesson from the question files."""
-    scripts_dir = os.path.dirname(os.path.abspath(__file__))
-
-    # Map lesson ID prefix to question file
-    # Examples: GK-L01, G01-L01, G05-L02, G09L1-L01, NE-L1-01
-    prefix = lesson_id.split("-")[0]  # GK, G01, G09L1, NE, etc.
-
-    file_map = {
-        "GK": "lesson_questions_GK.py",
-        "G01": "lesson_questions_G01.py",
-        "G02": "lesson_questions_G02.py",
-        "G03": "lesson_questions_G03.py",
-        "G04": "lesson_questions_G04.py",
-        "G04L2": "lesson_questions_G04_L2.py",
-        "G05": "lesson_questions_G05.py",
-        "G05L2": "lesson_questions_G05_L2.py",
-        "G06": "lesson_questions_G06.py",
-        "G06L2": "lesson_questions_G06_L2.py",
-        "G07": "lesson_questions_G07.py",
-        "G07L2": "lesson_questions_G07_L2.py",
-        "G08": "lesson_questions_G08.py",
-        "G08L2": "lesson_questions_G08_L2.py",
-        "G09L1": "lesson_questions_G09_L1.py",
-        "G09L2": "lesson_questions_G09_L2.py",
-        "G09L3": "lesson_questions_G09_L3.py",
-        "G10L1": "lesson_questions_G10_L1.py",
-        "G10L2": "lesson_questions_G10_L2.py",
-        "G10L3": "lesson_questions_G10_L3.py",
-        "G11L1": "lesson_questions_G11_L1.py",
-        "G11L2": "lesson_questions_G11_L2.py",
-        "G11L3": "lesson_questions_G11_L3.py",
-        "G12L1": "lesson_questions_G12_L1.py",
-        "G12L2": "lesson_questions_G12_L2.py",
-        "G12L3": "lesson_questions_G12_L3.py",
-    }
-
-    # Handle Nature's Engineers
-    if lesson_id.startswith("NE"):
-        filename = "lesson_questions_natures_engineers.py"
-    else:
-        filename = file_map.get(prefix)
-
-    if not filename:
-        return None
-
-    filepath = os.path.join(scripts_dir, filename)
-    if not os.path.exists(filepath):
-        return None
-
-    try:
-        spec = importlib.util.spec_from_file_location(f"questions_{prefix}", filepath)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-
-        if hasattr(mod, "ALL_QUESTIONS"):
-            return mod.ALL_QUESTIONS.get(lesson_id)
-    except Exception as e:
-        print(f"  Note: Could not load MC questions for {lesson_id}: {e}")
-
-    return None
-
-
-def render_mc_questions_html(questions, assessment_type="pre"):
-    """Render MC questions as HTML for the Student Activity Pack."""
-    if not questions:
-        return ""
-
-    key = f"mc_{assessment_type}_assessment"
-    mc_list = questions.get(key, [])
-    if not mc_list:
-        return ""
-
-    html = ""
-    for i, q in enumerate(mc_list, 1):
-        choices_html = ""
-        for letter in ["A", "B", "C", "D"]:
-            if letter in q.get("choices", {}):
-                choices_html += f'''<div class="mc-choice">
-            <span class="mc-choice-letter">{letter}.</span>
-            <span>{html_escape(q["choices"][letter])}</span>
-          </div>'''
-
-        html += f'''<div class="mc-question-block">
-      <div class="mc-question-text"><span class="mc-q-num">{i}</span><span>{html_escape(q["question"])}</span></div>
-      <div class="mc-choices">{choices_html}</div>
-    </div>'''
-
-    return html
-
-
-def render_mc_answer_key_html(questions):
-    """Render MC question answer keys for the Teacher's Guide."""
-    if not questions:
-        return ""
-
-    html = ""
-    for assessment_type, label in [("pre", "Pre-Assessment"), ("post", "Post-Assessment")]:
-        key = f"mc_{assessment_type}_assessment"
-        mc_list = questions.get(key, [])
-        if not mc_list:
-            continue
-
-        html += f'<h4 style="margin-top:12px;">Multiple Choice {label} Answer Key</h4>'
-        for i, q in enumerate(mc_list, 1):
-            correct = q.get("correct", "")
-            correct_text = q.get("choices", {}).get(correct, "")
-            feedback = q.get("feedback_correct", "")
-            html += f'''<div class="mc-answer-block">
-        <div class="mc-answer-q">{i}. {html_escape(q["question"])}</div>
-        <div class="mc-answer-correct">Correct: {correct}) {html_escape(correct_text)}</div>
-        <div class="mc-answer-feedback">{html_escape(feedback)}</div>
-      </div>'''
-
-    return html
-
-
-# ============================================================
-# STUDENT ACTIVITY PACK GENERATOR
-# ============================================================
-
-def generate_student_activity_pack(data, mc_questions=None):
-    """Generate the complete Student Activity Pack HTML from lesson data."""
-    lesson_id = data["id"]
-    title = html_escape(data["title"])
-    subtitle = html_escape(data["subtitle"])
-    ngss = data["ngss"]
-
-    # Determine grade display
-    grade_num = lesson_id.split("-")[0].replace("G", "").replace("K", "K")
-    if grade_num == "K":
-        grade_display = "Kindergarten"
-    else:
-        grade_display = f"Grade {int(grade_num)}" if grade_num.isdigit() else f"Grade {grade_num}"
-
-    # Get crosscutting concept from dimensions if available
-    cc = "Systems &amp; Models"
-    if "dimensions" in data:
-        for dim in data["dimensions"]:
-            if "Crosscutting" in dim[0]:
-                cc = html_escape(dim[1])
-                break
-
-    # Components
-    components = data.get("components", [])
-    external = [c for c in components if c[2]]  # is_external=True
-    internal = [c for c in components if not c[2]]
-
-    # Scenarios
-    scenarios = data.get("sim_scenarios", data.get("scenarios", []))
-
-    # Build component chips
-    chips_html = ""
-    for i, comp in enumerate(components):
-        cls = "teal" if comp[2] else "purple"
-        chips_html += f'<span class="chip {cls}">{html_escape(comp[0])}</span>'
-
-    # Build sort slots
-    ext_slots = ''.join(['<div class="sort-item-slot"></div>' for _ in external])
-    int_slots = ''.join(['<div class="sort-item-slot"></div>' for _ in internal])
-
-    # Pre-assessment questions
-    pre_qs = data.get("pre_assessment", [
-        f"What do you already know about {title.lower()}?",
-        "What do you think causes this phenomenon?",
-        "What is a model? How do scientists use models?",
-        'What does it mean when we say things work as a "system"?'
-    ])
-
-    pre_q_html = ""
-    for i, q in enumerate(pre_qs, 1):
-        pre_q_html += f'''<div class="question-block">
-      <div class="question-label"><span class="q-number">{i}</span><span>{html_escape(q)}</span></div>
-      <div class="response-lines"></div>
-    </div>'''
-
-    # MC pre-assessment questions
-    mc_pre_html = render_mc_questions_html(mc_questions, "pre") if mc_questions else ""
-    mc_post_html = render_mc_questions_html(mc_questions, "post") if mc_questions else ""
-
-    # Scenario cards
-    scenario_html = ""
-    scenario_names = ["1", "2", "3"]
-    for i, sc in enumerate(scenarios[:3]):
-        sc_title = html_escape(sc[0]) if isinstance(sc, (list, tuple)) else html_escape(str(sc))
-        sc_instruction = html_escape(sc[1]) if isinstance(sc, (list, tuple)) and len(sc) > 1 else ""
-        sc_predict = html_escape(sc[2]) if isinstance(sc, (list, tuple)) and len(sc) > 2 else "What do you predict will happen?"
-
-        scenario_html += f'''<div class="scenario-card">
-      <div class="scenario-header"><div class="scenario-icon">{i+1}</div>Scenario {i+1}: {sc_title}</div>
-      <div class="scenario-body">
-        <div class="scenario-instruction">{sc_instruction}</div>
-        <div class="predict-observe">
-          <div><div class="po-label predict">My Prediction</div><div class="po-box predict"></div></div>
-          <div><div class="po-label observe">What I Observed</div><div class="po-box observe"></div></div>
-        </div>
-      </div>
-    </div>'''
-
-    # Extension components
-    extend_html = ""
-    for ec in data.get("extend_components", []):
-        name = html_escape(ec[0])
-        desc = html_escape(ec[1])
-        extend_html += f'<li><strong>{name}</strong> &mdash; {desc}</li>'
-
-    # Reflection questions
-    reflection_html = ""
-    for i, q in enumerate(data.get("reflections", [])[:5], 1):
-        reflection_html += f'''<div class="question-block">
-      <div class="question-label"><span class="q-number">{i}</span><span>{html_escape(q)}</span></div>
-      <div class="response-lines"></div>
-    </div>'''
-
-    # STEM Challenge
-    stem_title = html_escape(data.get("stem_title", "STEM Challenge"))
-    stem_mission = html_escape(data.get("stem_mission", "Apply what you learned to solve a real-world engineering problem."))
-    stem_scenario = html_escape(data.get("stem_scenario", ""))
-    stem_design_qs = data.get("stem_design_qs", data.get("stem_questions", []))
-
-    design_boxes = ""
-    for i, q in enumerate(stem_design_qs[:4], 1):
-        design_boxes += f'<div class="design-box"><div class="design-box-label">{i}. {html_escape(q)}</div></div>'
-
-    # Career connection
-    career = html_escape(data.get("career", ""))
-
-    # Assemble full HTML
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ModelIt! Student Activity Pack &mdash; {lesson_id}</title>
-<style>{DESIGN_SYSTEM_CSS}</style>
-</head>
-<body>
-
-<!-- COVER PAGE -->
-<div class="page cover-page">
-  <div class="cover-header">
-    {bubbles_html()}
-    <div class="cover-logo"><div class="logo-text">ModelIt!</div></div>
-    <div class="cover-doc-type">Student Activity Pack</div>
-  </div>
-  <div class="cover-body">
-    <div class="cover-title">{title}</div>
-    <div class="cover-subtitle">{subtitle}</div>
-    <div class="cover-meta-row">
-      <div class="cover-badge">{grade_display}</div>
-      <div class="cover-badge teal">NGSS {ngss}</div>
-      <div class="cover-badge">{cc}</div>
-    </div>
-    <div class="cover-name-block">
-      <div class="cover-field"><label>Student Name</label><div class="line"></div></div>
-      <div class="cover-field"><label>Date</label><div class="line"></div></div>
-    </div>
-  </div>
-  <div class="cover-footer">
-    <div class="cover-footer-logo">ModelIt! &mdash; Discovery Collective</div>
-    <div>&copy; 2026 Discovery Collective. All rights reserved.</div>
-  </div>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<div class="page" style="position:relative;">
-  <div class="page-header">
-    {header_bubbles_html()}
-    <div style="display:flex;align-items:center;position:relative;z-index:2;">
-      <div class="section-title" style="margin-left:0;">Table of Contents</div>
-    </div>
-    <div class="page-logo-mini">ModelIt!</div>
-  </div>
-  <div class="page-content" style="padding-top: 0.5in;">
-    <ul class="toc-list">
-      <li><span>Pre-Assessment</span><span class="toc-dots"></span><span class="toc-page">3</span></li>
-      <li><span>Scoring Rubric</span><span class="toc-dots"></span><span class="toc-page">4</span></li>
-      <li><span>Component Analysis</span><span class="toc-dots"></span><span class="toc-page">5</span></li>
-      <li><span>Model Recording Page</span><span class="toc-dots"></span><span class="toc-page">6</span></li>
-      <li><span>Simulation Observations</span><span class="toc-dots"></span><span class="toc-page">7</span></li>
-      <li><span>Research &amp; Extend</span><span class="toc-dots"></span><span class="toc-page">8</span></li>
-      <li><span>Reflection Questions</span><span class="toc-dots"></span><span class="toc-page">9</span></li>
-      <li><span>STEM Challenge</span><span class="toc-dots"></span><span class="toc-page">10</span></li>
-      {"<li><span>Post-Assessment</span><span class='toc-dots'></span><span class='toc-page'>11</span></li>" if mc_post_html else ""}
-    </ul>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 2)}
-</div>
-
-<!-- SECTION 1: PRE-ASSESSMENT -->
-<div class="page" style="position:relative;">
-  {section_page_header("1", "Pre-Assessment")}
-  <div class="page-content">
-    <div class="section-intro"><strong>What Do You Know?</strong> Answer each question below to the best of your ability. There are no wrong answers &mdash; this helps your teacher understand what you already know!</div>
-    {"<div class='mc-section-intro'><strong>Multiple Choice:</strong> Circle the best answer for each question.</div>" + mc_pre_html if mc_pre_html else ""}
-    {pre_q_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 3)}
-</div>
-
-<!-- SECTION 2: SCORING RUBRIC -->
-<div class="page" style="position:relative;">
-  {section_page_header("2", "Scoring Rubric")}
-  <div class="page-content">
-    <div class="section-intro">Your teacher will use this rubric to assess your work. Read through each level to understand what is expected!</div>
-    <table class="rubric-table">
-      <thead><tr><th>Skill</th><th>Expert (4)</th><th>Proficient (3)</th><th>Developing (2)</th><th>Beginning (1)</th></tr></thead>
-      <tbody>
-        <tr><td>Identifying Components</td><td><span class="rubric-level">Expert</span>Correctly identifies and sorts ALL components as internal or external with detailed reasoning</td><td><span class="rubric-level">Proficient</span>Correctly identifies and sorts MOST components with some reasoning</td><td><span class="rubric-level">Developing</span>Identifies components but has difficulty sorting or explaining</td><td><span class="rubric-level">Beginning</span>Needs significant help identifying components</td></tr>
-        <tr><td>Establishing Relationships</td><td><span class="rubric-level">Expert</span>Accurately describes ALL positive and negative relationships with clear evidence</td><td><span class="rubric-level">Proficient</span>Accurately describes MOST relationships with some evidence</td><td><span class="rubric-level">Developing</span>Identifies some relationships but struggles with direction</td><td><span class="rubric-level">Beginning</span>Needs help understanding how components connect</td></tr>
-        <tr><td>Running Simulations</td><td><span class="rubric-level">Expert</span>Makes accurate predictions AND explains surprising results using evidence</td><td><span class="rubric-level">Proficient</span>Makes reasonable predictions and records clear observations</td><td><span class="rubric-level">Developing</span>Runs simulations but predictions or observations are incomplete</td><td><span class="rubric-level">Beginning</span>Needs help running simulations or recording data</td></tr>
-        <tr><td>Explaining Results</td><td><span class="rubric-level">Expert</span>Uses multiple pieces of evidence to explain HOW and WHY systems interact</td><td><span class="rubric-level">Proficient</span>Uses evidence to explain system interactions</td><td><span class="rubric-level">Developing</span>Gives partial explanations with limited evidence</td><td><span class="rubric-level">Beginning</span>Needs help connecting evidence to explanations</td></tr>
-      </tbody>
-    </table>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 4)}
-</div>
-
-<!-- SECTION 3: COMPONENT ANALYSIS -->
-<div class="page" style="position:relative;">
-  {section_page_header("3", "Component Analysis")}
-  <div class="page-content">
-    <div class="callout teal">
-      <div class="callout-title">What is a Component?</div>
-      A <strong>component</strong> is a part of a system that plays a specific role. Components can be <strong>EXTERNAL</strong> (come from outside the system) or <strong>INTERNAL</strong> (happen within the system).
-    </div>
-    <h3 class="sub-heading">Sort These Components</h3>
-    <div class="component-chips">{chips_html}</div>
-    <div class="sort-columns">
-      <div class="sort-col external"><div class="sort-col-header">EXTERNAL</div><div class="sort-col-body">{ext_slots}</div></div>
-      <div class="sort-col internal"><div class="sort-col-header">INTERNAL</div><div class="sort-col-body">{int_slots}</div></div>
-    </div>
-    <div class="question-block">
-      <div class="question-label"><span class="q-number">?</span><span>Explain your reasoning: Why did you sort each component the way you did?</span></div>
-      <div class="response-lines tall"></div>
-    </div>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 5)}
-</div>
-
-<!-- SECTION 4: MODEL RECORDING -->
-<div class="page" style="position:relative;">
-  {section_page_header("4", "Model Recording Page")}
-  <div class="page-content">
-    <div class="section-intro">Draw your model showing all components and their relationships. Use the relationship key below to label your arrows!</div>
-    <div class="rel-key">
-      <div class="rel-key-item"><div class="rel-symbol pos">+</div><span><strong>POSITIVE:</strong> When A increases, B also increases</span></div>
-      <div class="rel-key-item"><div class="rel-symbol neg">&minus;</div><span><strong>NEGATIVE:</strong> When A increases, B decreases</span></div>
-    </div>
-    <div class="sketch-area"></div>
-    <div class="question-block">
-      <div class="question-label"><span class="q-number">?</span><span>Explain ONE relationship in your model. What happens when one component changes?</span></div>
-      <div class="response-lines tall"></div>
-    </div>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 6)}
-</div>
-
-<!-- SECTION 5: SIMULATION OBSERVATIONS -->
-<div class="page" style="position:relative;">
-  {section_page_header("5", "Simulation Observations")}
-  <div class="page-content">
-    <div class="section-intro">Run each scenario in ModelIt! First, write your <strong>prediction</strong>. Then run the simulation and record what you <strong>observe</strong>.</div>
-    {scenario_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 7)}
-</div>
-
-<!-- SECTION 6: RESEARCH & EXTEND -->
-<div class="page" style="position:relative;">
-  {section_page_header("6", "Research &amp; Extend")}
-  <div class="page-content">
-    <div class="section-intro">Real systems are more complex than our model! Here are additional components scientists study. Choose one and explain how it could connect to our model.</div>
-    <h3 class="sub-heading">Possible New Components</h3>
-    <ul class="extension-list">{extend_html}</ul>
-    <h3 class="sub-heading">My Extension</h3>
-    <div class="question-block"><div class="question-label"><span class="q-number">A</span><span>Which new component would you add to the model?</span></div><div class="response-box short"></div></div>
-    <div class="question-block"><div class="question-label"><span class="q-number">B</span><span>How would it connect to the existing components? (Draw or describe)</span></div><div class="response-lines tall"></div></div>
-    <div class="question-block"><div class="question-label"><span class="q-number">C</span><span>What evidence or reasoning supports your connection?</span></div><div class="response-lines"></div></div>
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 8)}
-</div>
-
-<!-- SECTION 7: REFLECTION -->
-<div class="page" style="position:relative;">
-  {section_page_header("7", "Reflection Questions")}
-  <div class="page-content">
-    <div class="callout purple">
-      <div class="callout-title">The Big Question</div>
-      <strong>{html_escape(data.get("big_question", ""))}</strong> Use evidence from your simulation to support your answers.
-    </div>
-    {reflection_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 9)}
-</div>
-
-<!-- SECTION 8: STEM CHALLENGE -->
-<div class="page" style="position:relative;">
-  {section_page_header("8", f"STEM Challenge: {stem_title}")}
-  <div class="page-content">
-    <div class="stem-mission">
-      <div class="stem-mission-title">YOUR ENGINEERING MISSION</div>
-      <p>{stem_mission}</p>
-    </div>
-    {"<div class='callout orange'><div class='callout-title'>THE SCENARIO</div>" + stem_scenario + "</div>" if stem_scenario else ""}
-    <h3 class="sub-heading">Engineering Design Thinking</h3>
-    <div class="design-grid">{design_boxes}</div>
-    <h3 class="sub-heading">My Design</h3>
-    <div class="map-area"><div class="map-label">Design Area &mdash; Draw Your Solution</div><div class="compass">N</div></div>
-    <div class="question-block">
-      <div class="question-label"><span class="q-number">!</span><span>Explain your design using scientific evidence from the simulation:</span></div>
-      <div class="response-lines tall"></div>
-    </div>
-    {"<div class='callout teal'><div class='callout-title'>Real Career Connection</div>" + career + "</div>" if career else ""}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 10)}
-</div>
-
-{"" if not mc_post_html else f"""<!-- SECTION 9: POST-ASSESSMENT -->
-<div class="page" style="position:relative;">
-  {section_page_header("9", "Post-Assessment")}
-  <div class="page-content">
-    <div class="mc-post-header">Show What You Learned!</div>
-    <div class="mc-section-intro"><strong>Multiple Choice:</strong> Now that you have completed the lesson, circle the best answer for each question. Compare your answers to your pre-assessment &mdash; did your thinking change?</div>
-    {mc_post_html}
-  </div>
-  {page_footer_html(lesson_id, "Student Activity Pack", 11)}
-</div>
-"""}
-</body>
-</html>'''
-
-    return html
-
-
-# ============================================================
-# TEACHER'S GUIDE GENERATOR
-# ============================================================
-
-def generate_teachers_guide(data, mc_questions=None):
-    """Generate the complete Teacher's Guide HTML from lesson data."""
-    lesson_id = data["id"]
-    title = html_escape(data["title"])
-    subtitle = html_escape(data["subtitle"])
-    ngss = data["ngss"]
-    ngss_desc = html_escape(data.get("ngss_desc", ""))
-
-    grade_num = lesson_id.split("-")[0].replace("G", "").replace("K", "K")
-    if grade_num == "K":
-        grade_display = "Kindergarten"
-    else:
-        grade_display = f"Grade {int(grade_num)}" if grade_num.isdigit() else f"Grade {grade_num}"
-
-    # NGSS dimensions
-    dimensions = data.get("dimensions", [])
-    ngss_rows = ""
-    for dim in dimensions:
-        ngss_rows += f'<tr><td>{html_escape(dim[0])}</td><td><strong>{html_escape(dim[1])}</strong> &mdash; {html_escape(dim[2])}</td></tr>'
-
-    # CAST questions
-    cast_html = ""
-    for cq in data.get("cast_questions", []):
-        cast_html += f'<div class="cast-question"><div class="cast-question-type">{html_escape(cq[0])}</div>{html_escape(cq[1])}</div>'
-
-    # Background sections
-    bg_intro = html_escape(data.get("background_intro", ""))
-    bg_sections = ""
-    for section in data.get("background_sections", []):
-        bg_sections += f'<h3 class="sub-heading">{html_escape(section[0])}</h3><p style="font-size:9.5pt; margin-bottom: 10px;">{html_escape(section[1])}</p>'
-
-    # LEVER framework
-    lever_html = ""
-    lever_data = [
-        ("L", data.get("lever_L", "Students identify the system components."), "Locate the System", ""),
-        ("E", data.get("lever_E", "Students determine relationships between components."), "Establish Relationships", "teal"),
-        ("V", data.get("lever_V", "Students build their model in ModelIt!"), "Visualize & Model", ""),
-        ("E", data.get("lever_Ev", "Students run simulations and evaluate outcomes."), "Evaluate Outcomes", "teal"),
-        ("R", data.get("lever_R", "Students revise and extend their models."), "Revise & Extend", ""),
-    ]
-    for letter, desc, label, cls in lever_data:
-        teal_cls = f' {cls}' if cls else ''
-        lever_html += f'''<div class="lever-step">
-      <div class="lever-letter{teal_cls}">{letter}</div>
-      <div class="lever-desc"><strong>{html_escape(label)}</strong>{html_escape(desc)}</div>
-    </div>'''
-
-    # Slide-by-slide facilitation
-    slides_html = ""
-    for slide in data.get("slides_guide", []):
-        slides_html += f'''<div class="slide-card">
-      <div class="slide-card-header"><span>{html_escape(slide.get("num", ""))}: {html_escape(slide.get("title", ""))}</span><span class="slide-time">{html_escape(slide.get("time", ""))}</span></div>
-      <div class="slide-card-body">
-        <div class="teacher-script"><strong>Say:</strong> &ldquo;{html_escape(slide.get("say", ""))}&rdquo;</div>
-        <div class="watch-for"><div class="watch-for-title">Watch For</div>{html_escape(slide.get("do", ""))}</div>
-      </div>
-    </div>'''
-
-    # Answer key - relationships
-    answer_rels = ""
-    for rel in data.get("relationships", []):
-        answer_rels += f'<li><strong>{html_escape(rel[0])}:</strong> {html_escape(rel[1])} &mdash; {html_escape(rel[2])}</li>'
-
-    # Answer key - discoveries
-    answer_disc = ""
-    for disc in data.get("discoveries", []):
-        answer_disc += f'<li>{html_escape(disc)}</li>'
-
-    # Misconceptions
-    misconceptions_html = ""
-    for mc in data.get("misconceptions", []):
-        mc_wrong = html_escape(mc[0])
-        mc_right = html_escape(mc[1])
-        misconceptions_html += f'''<div class="misconception-row">
-      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;{mc_wrong}&rdquo;</div>
-      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>{mc_right}</div>
-    </div>'''
-
-    # Components for answer key
-    components = data.get("components", [])
-    ext_names = ", ".join([c[0] for c in components if c[2]])
-    int_names = ", ".join([c[0] for c in components if not c[2]])
-
-    # MC answer key
-    mc_answer_key_html = render_mc_answer_key_html(mc_questions) if mc_questions else ""
-
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ModelIt! Teacher&#39;s Guide &mdash; {lesson_id}</title>
-<style>{DESIGN_SYSTEM_CSS}</style>
+</style>
 </head>
 <body>
 
 <!-- COVER PAGE -->
 <div class="page cover-page">
   <div class="cover-header teacher-variant">
-    {bubbles_html()}
+    <div class="cover-bubbles"><div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div><div class="bubble b5"></div></div>
     <div class="cover-logo"><div class="logo-text">ModelIt!</div></div>
     <div class="cover-doc-type teacher">Teacher&#39;s Guide</div>
   </div>
   <div class="cover-body">
-    <div class="cover-title">{title}</div>
-    <div class="cover-subtitle">{subtitle}</div>
+    <div class="cover-title">The Mountain That Used to Be an Ocean</div>
+    <div class="cover-subtitle">How Seashells End Up on Mountaintops Millions of Years Later</div>
     <div class="cover-quick-ref">
       <h3>Quick Reference</h3>
-      <div class="qr-row"><span class="qr-label">Grade Level</span><span class="qr-value">{grade_display}</span></div>
-      <div class="qr-row"><span class="qr-label">NGSS Standard</span><span class="qr-value">{ngss}</span></div>
+      <div class="qr-row"><span class="qr-label">Grade Level</span><span class="qr-value">Grade 04L2</span></div>
+      <div class="qr-row"><span class="qr-label">NGSS Standard</span><span class="qr-value">4-ESS1-1, 4-ESS2-1</span></div>
       <div class="qr-row"><span class="qr-label">Time</span><span class="qr-value">45&ndash;60 minutes (core lesson)</span></div>
       <div class="qr-row"><span class="qr-label">Materials</span><span class="qr-value">Student Activity Pack, devices with ModelIt! access</span></div>
       <div class="qr-row"><span class="qr-label">Prep</span><span class="qr-value">Print activity packs, test ModelIt! on student devices</span></div>
@@ -1052,7 +462,7 @@ def generate_teachers_guide(data, mc_questions=None):
 <!-- TABLE OF CONTENTS -->
 <div class="page" style="position:relative;">
   <div class="page-header teacher-variant">
-    {header_bubbles_html()}
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
     <div style="display:flex;align-items:center;position:relative;z-index:2;">
       <div class="section-title" style="margin-left:0;">Table of Contents</div>
     </div>
@@ -1071,25 +481,45 @@ def generate_teachers_guide(data, mc_questions=None):
       <li><span>Common Misconceptions</span><span class="toc-dots"></span><span class="toc-page">12</span></li>
     </ul>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 2)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 2</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 1: NGSS UNPACKING -->
 <div class="page" style="position:relative;">
-  {section_page_header("1", "NGSS Standards &amp; CAST Alignment", "teacher-variant")}
-  <div class="page-content">
-    <div class="teacher-tip"><div class="teacher-tip-title">Performance Expectation: {ngss}</div>{ngss_desc}</div>
-    <h2 class="interior-heading">Three-Dimensional Learning</h2>
-    <table class="ngss-table">{ngss_rows}</table>
-    <h2 class="interior-heading">CAST Testing Alignment</h2>
-    {cast_html}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">1</div>
+    <div class="section-title">NGSS Standards &amp; CAST Alignment</div>
+    <div class="page-logo-mini">ModelIt!</div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 3)}
+  <div class="page-content">
+    <div class="teacher-tip"><div class="teacher-tip-title">Performance Expectation: 4-ESS1-1, 4-ESS2-1</div>Identify evidence from patterns in rock formations and fossils in rock layers to support an explanation for changes in a landscape over time. Make observations and measurements to identify materials based on their properties.</div>
+    <h2 class="interior-heading">Three-Dimensional Learning</h2>
+    <table class="ngss-table"><tr><td>Science Practice</td><td><strong>Developing and Using Models</strong> &mdash; Students develop a five-component model showing how plate movement and sediment deposition interact through compression and uplift to determine fossil elevation over geological time.</td></tr><tr><td>Disciplinary Core Idea</td><td><strong>ESS1.C The History of Planet Earth / ESS2.A Earth Materials and Systems</strong> &mdash; Local, regional, and global patterns of rock formations reveal changes over time due to Earth forces such as tectonic plate movement. Fossils provide evidence of organisms that lived long ago.</td></tr><tr><td>Crosscutting Concept</td><td><strong>Cause and Effect</strong> &mdash; Students trace a chain of cause and effect from plate movement to compression to uplift to fossil elevation, demonstrating how slow, persistent forces create dramatic results over millions of years.</td></tr></table>
+    <h2 class="interior-heading">CAST Testing Alignment</h2>
+    <div class="cast-question"><div class="cast-question-type">Multiple Choice:</div>Scientists find fossils of ancient sea creatures in rock layers near the top of the Himalayan mountains. Which best explains how those fossils got there?</div><div class="cast-question"><div class="cast-question-type">Constructed Response:</div>Using what you know about tectonic plates, compression, and uplift, explain how a fossil of a sea creature could end up on a mountain that is 5 miles above the ocean. Use the words 'plate movement,' 'compression,' and 'uplift' in your answer.</div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 3</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 2: SCORING RUBRIC (Teacher Reference) -->
 <div class="page" style="position:relative;">
-  {section_page_header("2", "Scoring Rubric", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">2</div>
+    <div class="section-title">Scoring Rubric</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">Assessment Reference</div>This is the same rubric students see in their Activity Pack. Use it during and after the lesson for formative and summative assessment. Circle or highlight the proficiency level for each skill.</div>
     <table class="rubric-table">
@@ -1109,26 +539,61 @@ def generate_teachers_guide(data, mc_questions=None):
       <strong>Beginning (1):</strong> Student needs significant support; consider using Differentiation strategies (Section 7).
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 4)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 4</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 3: BACKGROUND KNOWLEDGE -->
 <div class="page" style="position:relative;">
-  {section_page_header("3", "Background Content Knowledge", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">3</div>
+    <div class="section-title">Background Content Knowledge</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">For Your Confidence</div>This section provides the science background you need to facilitate this lesson with authority. You don&rsquo;t need to teach all of this &mdash; it&rsquo;s here so you can answer student questions accurately.</div>
-    <p style="font-size:9.5pt; margin-bottom: 10px;">{bg_intro}</p>
-    {bg_sections}
+    <p style="font-size:9.5pt; margin-bottom: 10px;">One of the most astonishing facts in science is that the tallest mountains on Earth were once at the bottom of the ocean. The evidence is literally written in stone — marine fossils found at elevations of over 25,000 feet. Understanding how this happened requires thinking about Earth processes that operate over millions of years.</p>
+    <h3 class="sub-heading">Earth's Moving Puzzle</h3><p style="font-size:9.5pt; margin-bottom: 10px;">Earth's outer layer (lithosphere) is broken into about 15 major tectonic plates that float on the hot, partially molten rock beneath (asthenosphere). These plates move very slowly — typically 2-10 centimeters per year, about as fast as your fingernails grow. But over millions of years, this slow movement has rearranged entire continents, opened and closed oceans, and built the world's greatest mountain ranges.</p><h3 class="sub-heading">Ocean Floors Become Mountains</h3><p style="font-size:9.5pt; margin-bottom: 10px;">The Himalayan mountains are the best example of ocean floor becoming mountaintop. About 200 million years ago, the Indian Plate was a separate landmass far south of Asia. Between India and Asia lay the Tethys Sea, a vast ocean. For millions of years, sea creatures lived and died in this ocean, their shells settling to the bottom and becoming part of the sediment layers. Starting about 50 million years ago, the Indian Plate collided with the Asian Plate. The enormous compression force began folding and pushing up the ocean floor.</p><h3 class="sub-heading">Compression, Folding, and Uplift</h3><p style="font-size:9.5pt; margin-bottom: 10px;">When two continental plates collide, neither can sink beneath the other (unlike ocean plates, which are denser). Instead, the collision crumples and folds the rock layers like pushing two pieces of paper together on a desk — they buckle upward. This folding and uplift is what creates mountains. The Himalayas are STILL growing today — the Indian Plate continues to push into Asia at about 5 cm per year, and Mount Everest grows about 4 mm taller each year.</p><h3 class="sub-heading">Fossils as Evidence</h3><p style="font-size:9.5pt; margin-bottom: 10px;">The fossils found in Himalayan rock are the definitive proof that this rock was once ocean floor. Scientists have found fossils of ammonites (ancient shelled sea creatures), crinoids (sea lilies), and marine brachiopods at elevations above 25,000 feet on Mount Everest. The limestone summit of Everest is made of compressed ocean sediment. These fossils could not have formed at that elevation — they MUST have formed at sea level and been carried up by tectonic forces.</p>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 4)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 4</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 4: LEVER FRAMEWORK -->
 <div class="page" style="position:relative;">
-  {section_page_header("4", "The LEVER Framework", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">4</div>
+    <div class="section-title">The LEVER Framework</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">About LEVER</div>LEVER is how every ModelIt! lesson works. Students move through five phases to build, test, and refine a computational model. Each lesson is self-contained &mdash; students complete all five phases in one session.</div>
-    {lever_html}
+    <div class="lever-step">
+      <div class="lever-letter">L</div>
+      <div class="lever-desc"><strong>Locate the System</strong>Students identify Plate Movement Speed and Sediment Deposit Rate as external components (geological conditions) and Compression Force, Rock Uplift, and Fossil Elevation as internal components that respond to those conditions over geological time.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter teal">E</div>
+      <div class="lever-desc"><strong>Establish Relationships</strong>Students determine that Plate Movement Speed positively affects Compression Force, Compression Force positively affects Rock Uplift, Sediment Deposit Rate positively affects Fossil Elevation, and Rock Uplift positively affects Fossil Elevation — a system with converging inputs.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter">V</div>
+      <div class="lever-desc"><strong>Visualize &amp; Model</strong>Students build a five-component model showing how plate collision creates compression that drives uplift, while sediment deposits determine how many fossil-bearing layers are available to be lifted.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter teal">E</div>
+      <div class="lever-desc"><strong>Evaluate Outcomes</strong>Students run four scenarios (fast/thick, slow/thin, no movement, fast/thin) to observe how both inputs contribute to fossil elevation and what happens when one or both are absent.</div>
+    </div><div class="lever-step">
+      <div class="lever-letter">R</div>
+      <div class="lever-desc"><strong>Revise &amp; Extend</strong>Students add erosion rate to explore why some mountains with fossils are shorter than expected — erosion removes material from the top even as uplift pushes from below.</div>
+    </div>
 
     <div style="background: linear-gradient(135deg, var(--navy), var(--purple-deep)); border-radius: 12px; padding: 16px 20px; margin-top: 14px; color: white;">
       <h3 style="font-family: Quicksand, sans-serif; font-weight: 800; font-size: 11pt; color: var(--teal-brand); margin-bottom: 8px;">Dropping ModelIt! Into Your Existing Unit</h3>
@@ -1161,42 +626,146 @@ def generate_teachers_guide(data, mc_questions=None):
       </table>
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 6)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 6</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 4: SLIDE FACILITATION -->
 <div class="page" style="position:relative;">
-  {section_page_header("5", "Slide-by-Slide Facilitation", "teacher-variant")}
-  <div class="page-content">
-    {slides_html}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">5</div>
+    <div class="section-title">Slide-by-Slide Facilitation</div>
+    <div class="page-logo-mini">ModelIt!</div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 6)}
+  <div class="page-content">
+    <div class="slide-card">
+      <div class="slide-card-header"><span>Slide 1: Cover</span><span class="slide-time">2 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;I have a mystery for you. Scientists found SEASHELLS on top of Mount Everest — five miles above the ocean. How did ocean creatures get to the top of the tallest mountain on Earth?&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Show a real photo of marine fossils found on Himalayan peaks. Let students react and discuss initial ideas.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 2: Learning Objectives</span><span class="slide-time">3 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Today we are going to model something that took FIFTY MILLION YEARS to happen — but we will do it in one class period!&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Have students read objectives aloud. Pre-teach tectonic plates, compression, and uplift with hand gestures.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 3: Big Question</span><span class="slide-time">3 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;The fossils on Everest are NOT from a flood. They are from the actual ocean floor. The entire mountain used to be under the sea.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Have students turn and talk: What force could possibly push the ocean floor five miles into the sky?</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 4: LEVER Framework</span><span class="slide-time">2 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Our model has two things that EARTH controls and three responses that happen over millions of years.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Preview all five components. Emphasize the time scale — these processes are incredibly slow but incredibly powerful.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 5: Activity 1: Components</span><span class="slide-time">8 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Can we control how fast tectonic plates move? No — Earth controls that. Can we control how much sediment piles up on the ocean floor? No — nature controls that too.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Guide sorting. Both externals are geological processes humans cannot control. All three internals are results of those processes.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 6: Activity 2: Connections</span><span class="slide-time">10 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Notice something special about this model — ALL the relationships are POSITIVE. More plate movement leads to more compression leads to more uplift leads to higher fossils.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Help students draw the chain of positive relationships. Discuss why all positive creates a system where everything amplifies.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 7: Activity 3: Simulation</span><span class="slide-time">12 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Watch the Fossil Elevation line climb as we run the fast collision scenario. Remember — in real life, this took fifty million years!&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Run scenarios in order. The no-movement scenario shows nothing happening. The fast/thick scenario shows dramatic fossil elevation.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 8: Discoveries</span><span class="slide-time">5 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;The answer to our mystery: the mountain DID NOT rise up from the land — the OCEAN FLOOR was pushed up to become the mountain!&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Show the geological time sequence: ocean floor with creatures, sediment building, plates colliding, mountain rising with fossils.</div>
+      </div>
+    </div><div class="slide-card">
+      <div class="slide-card-header"><span>Slide 9: STEM Challenge</span><span class="slide-time">12 min</span></div>
+      <div class="slide-card-body">
+        <div class="teacher-script"><strong>Say:</strong> &ldquo;Build a model that shows a museum visitor exactly how this works — layers of ocean sediment with fossils getting pushed up by plate collision.&rdquo;</div>
+        <div class="watch-for"><div class="watch-for-title">Watch For</div>Distribute materials (colored clay/play dough, small shells/beads, cardboard plates). Groups build layered models and simulate collision.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 6</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 5: ANSWER KEY -->
 <div class="page" style="position:relative;">
-  {section_page_header("6", "Answer Key &amp; Expected Responses", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">6</div>
+    <div class="section-title">Answer Key &amp; Expected Responses</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="answer-key-box">
       <h4>Component Sorting</h4>
-      <ul><li><strong>EXTERNAL:</strong> {html_escape(ext_names)}</li><li><strong>INTERNAL:</strong> {html_escape(int_names)}</li></ul>
+      <ul><li><strong>EXTERNAL:</strong> Plate Movement Speed, Sediment Deposit Rate</li><li><strong>INTERNAL:</strong> Compression Force, Rock Uplift, Fossil Elevation</li></ul>
     </div>
     <div class="answer-key-box">
       <h4>Relationships</h4>
-      <ul>{answer_rels}</ul>
+      <ul><li><strong>Plate Movement Speed to Compression Force:</strong> POSITIVE (+) &mdash; Faster plate movement means more energy is transferred when plates collide, creating stronger compression forces. The Indian Plate crashing into Asia at 5 cm/year generates enormous compression that folds and crumples rock layers.</li><li><strong>Compression Force to Rock Uplift:</strong> POSITIVE (+) &mdash; Greater compression force pushes rock layers upward more powerfully. Stronger squeezing means more folding, more crumpling, and faster uplift. This is why rapidly colliding plates create the tallest mountains.</li><li><strong>Sediment Deposit Rate to Fossil Elevation:</strong> POSITIVE (+) &mdash; More sediment accumulation on the ocean floor means thicker layers of fossil-bearing rock. When uplift occurs, thicker layers result in fossils being found at a wider range of elevations. High sedimentation areas produce mountains rich with fossils at many levels.</li><li><strong>Rock Uplift to Fossil Elevation:</strong> POSITIVE (+) &mdash; More uplift pushes the entire rock column higher, carrying embedded fossils to greater elevations. This is the direct mechanism that moves ocean floor fossils from sea level to mountaintop heights.</li></ul>
     </div>
     <div class="answer-key-box">
       <h4>Key Discoveries</h4>
-      <ul>{answer_disc}</ul>
+      <ul><li>Tectonic plate collisions create compression forces that squeeze and fold rock, pushing it upward — this is how mountains form</li><li>Ocean sediment layers containing fossils of marine creatures get caught in this uplift and are carried to high elevations over millions of years</li><li>Faster plate movement creates stronger compression, which causes faster rock uplift and higher fossil elevation</li><li>Both plate movement and sediment deposits contribute to fossil elevation — you need thick sediment layers (with fossils in them) AND strong uplift to find ocean fossils on mountaintops</li></ul>
     </div>
-    {mc_answer_key_html}
+    <h4 style="margin-top:12px;">Multiple Choice Post-Assessment Answer Key</h4><div class="mc-answer-block">
+        <div class="mc-answer-q">1. Scientists find fossils of ocean creatures on top of a mountain that is thousands of feet above sea level. How did those fossils get there?</div>
+        <div class="mc-answer-correct">Correct: C) Tectonic plate collisions pushed ancient ocean floor rock upward over millions of years, carrying the fossils with it</div>
+        <div class="mc-answer-feedback">Correct! The rock at the top of mountains like the Himalayas was once ocean floor. Tectonic plates collided and the compression force pushed that ocean floor upward over millions of years, bringing the fossils along.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">2. In the model, Plate Movement Speed and Sediment Deposit Rate are external components. What does this mean?</div>
+        <div class="mc-answer-correct">Correct: B) They are the starting conditions that drive the system, and the internal components respond to them</div>
+        <div class="mc-answer-feedback">Right! External components are the inputs that drive the system. Plate Movement Speed determines how fast plates collide, and Sediment Deposit Rate determines how thick the fossil layers are. Everything else responds to these.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">3. The model shows that Plate Movement Speed has a POSITIVE relationship with Compression Force. What does this mean?</div>
+        <div class="mc-answer-correct">Correct: C) When Plate Movement Speed increases, Compression Force also increases because faster collisions push harder</div>
+        <div class="mc-answer-feedback">Exactly! A positive relationship means both go up together. Faster-moving plates crash into each other with more energy, creating stronger compression forces that squeeze and fold rock more powerfully.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">4. A student sets Plate Movement Speed to 0% in the model. What happens to all the internal components?</div>
+        <div class="mc-answer-correct">Correct: B) Compression Force drops to zero, Rock Uplift stops, and Fossil Elevation stays where it is</div>
+        <div class="mc-answer-feedback">That is right! Without plate movement, there is no collision and no compression force. Without compression, there is no uplift. The fossils stay at whatever elevation they have already reached. Mountains stop growing.</div>
+      </div><div class="mc-answer-block">
+        <div class="mc-answer-q">5. The model has two external components that both contribute to where fossils end up. Why do you need BOTH thick sediment layers AND strong plate movement to find many ocean fossils on mountaintops?</div>
+        <div class="mc-answer-correct">Correct: C) Thick sediment layers contain the fossils, and plate movement creates the compression and uplift that pushes those layers to high elevations</div>
+        <div class="mc-answer-feedback">Correct! Sediment layers are where the fossils are trapped (more sediment means more fossils). Plate movement creates the compression and uplift that pushes those layers skyward. Without both, you either have no fossils to lift or no force to lift them.</div>
+      </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 8)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 8</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 7: COLLABORATIVE LEARNING PROTOCOLS -->
 <div class="page" style="position:relative;">
-  {section_page_header("7", "Collaborative Learning Protocols", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">7</div>
+    <div class="section-title">Collaborative Learning Protocols</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip">
       <div class="teacher-tip-title">Why This Matters</div>
@@ -1266,12 +835,22 @@ def generate_teachers_guide(data, mc_questions=None):
       </table>
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 10)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 10</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 8: DIFFERENTIATION -->
 <div class="page" style="position:relative;">
-  {section_page_header("8", "Differentiation &amp; Extensions", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">8</div>
+    <div class="section-title">Differentiation &amp; Extensions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
     <!-- NOTE: These suggestions become the basis for the Differentiation & Scaffolding Pack add-on -->
   <div class="page-content">
     <div class="diff-grid">
@@ -1281,228 +860,42 @@ def generate_teachers_guide(data, mc_questions=None):
       <div class="diff-card gifted"><div class="diff-card-title">Gifted &amp; Talented</div><ul style="margin-left:14px;font-size:9pt;line-height:1.6;"><li>Create feedback loop diagrams</li><li>Research prevention strategies</li><li>Write a policy brief</li><li>Connect to climate change</li></ul></div>
     </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 10)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 10</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 <!-- SECTION 8: MISCONCEPTIONS -->
 <div class="page" style="position:relative;">
-  {section_page_header("9", "Common Misconceptions", "teacher-variant")}
+  <div class="page-header teacher-variant">
+    <div class="page-header-bubbles"><div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div></div>
+    <div class="section-number">9</div>
+    <div class="section-title">Common Misconceptions</div>
+    <div class="page-logo-mini">ModelIt!</div>
+  </div>
   <div class="page-content">
     <div class="teacher-tip"><div class="teacher-tip-title">Why This Matters</div>Addressing misconceptions proactively helps students build accurate scientific understanding. Use these as formative assessment checkpoints during the lesson.</div>
-    {misconceptions_html}
+    <div class="misconception-row">
+      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;Mountains grow up from the ground like plants&rdquo;</div>
+      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>Mountains do NOT grow from below. They are pushed UP by the horizontal collision of tectonic plates. When two plates crash into each other, the rock has nowhere to go but up. It is like pushing two pieces of paper together on a table — they buckle and rise upward. Mountains are made of rock that was originally at or below the surface and was forced upward by compression.</div>
+    </div><div class="misconception-row">
+      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;The ocean used to be much higher and covered the mountains&rdquo;</div>
+      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>The fossils on mountains are NOT from a time when the ocean was higher. The rock itself was UNDER the ocean and was pushed UP by plate movement. The ocean did not drain away — the ocean floor was lifted out of the water. This is proven by the fact that the fossils are embedded deep within the rock layers, not just sitting on the surface.</div>
+    </div><div class="misconception-row">
+      <div class="misconception-wrong"><div class="misconception-label">Students May Think</div>&ldquo;This all happened a long time ago and is done&rdquo;</div>
+      <div class="misconception-right"><div class="misconception-label">Scientific Understanding</div>Mountain building is NOT a thing of the past — it is happening RIGHT NOW. The Himalayas are still growing because the Indian Plate is still pushing into Asia. Mount Everest grows about 4 mm taller every year. Earthquakes in the Himalayan region are caused by the same plate collision that is still building the mountains.</div>
+    </div>
   </div>
-  {page_footer_html(lesson_id, "Teacher's Guide", 11)}
+  <div class="page-footer">
+    <span class="footer-logo">ModelIt!</span>
+    <span>G04L2-L04 &bull; Teacher's Guide</span>
+    <span>Page 11</span>
+    <div class="footer-bar"></div>
+  </div>
 </div>
 
 </body>
-</html>'''
-
-    return html
-
-
-# ============================================================
-# MAIN: Load data and generate
-# ============================================================
-
-def load_lesson_data(grade, lesson_num):
-    """Load lesson data from the appropriate data file."""
-    scripts_dir = os.path.dirname(os.path.abspath(__file__))
-    grade_lower = grade.lower()
-
-    # Determine data file path
-    data_file = None
-
-    # Nature's Engineers
-    if grade_lower in ["ne", "natures-engineers"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_natures_engineers.py")
-    # K-8 standard grades
-    elif grade_lower in ["k", "0k", "00"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_GK.py")
-    elif grade_lower in ["01", "1"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G01.py")
-    elif grade_lower in ["02", "2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G02.py")
-    elif grade_lower in ["03", "3"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G03.py")
-    elif grade_lower in ["04", "4"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G04.py")
-    elif grade_lower in ["04_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G04_L2.py")
-    elif grade_lower in ["05", "5"]:
-        if lesson_num == 1:
-            data_file = os.path.join(scripts_dir, "create_reader.py")
-        else:
-            data_file = os.path.join(scripts_dir, "lesson_data_L02_L10.py")
-    elif grade_lower in ["05_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G05_L2.py")
-    elif grade_lower in ["06", "6"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G06.py")
-    elif grade_lower in ["06_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G06_L2.py")
-    elif grade_lower in ["07", "7"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G07.py")
-    elif grade_lower in ["07_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G07_L2.py")
-    elif grade_lower in ["08", "8"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G08.py")
-    elif grade_lower in ["08_l2"]:
-        data_file = os.path.join(scripts_dir, "lesson_data_G08_L2.py")
-    else:
-        # High school levels: 09_L1, 09_L2, 09_L3, 10_L1, etc.
-        data_file = os.path.join(scripts_dir, f"lesson_data_G{grade_lower}.py")
-
-    if not data_file or not os.path.exists(data_file):
-        print(f"ERROR: Data file not found for grade '{grade}': {data_file}")
-        return None
-
-    # Load the module
-    spec = importlib.util.spec_from_file_location(f"lesson_data_{grade}", data_file)
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-
-    # Find the lesson data - try multiple key patterns
-    lesson_key = f"L{lesson_num:02d}"
-
-    # Pattern 1: Direct attribute L01, L02, etc.
-    if hasattr(mod, lesson_key):
-        return getattr(mod, lesson_key)
-
-    # Pattern 2: Nature's Engineers uses L1_01-L1_06, L2_01-L2_06
-    if grade_lower in ["ne", "natures-engineers"]:
-        if lesson_num <= 6:
-            ne_key = f"L1_{lesson_num:02d}"
-        else:
-            ne_key = f"L2_{lesson_num - 6:02d}"
-        if hasattr(mod, ne_key):
-            return getattr(mod, ne_key)
-
-    # Pattern 3: Function get_L01_data()
-    func_name = f"get_{lesson_key}_data"
-    if hasattr(mod, func_name):
-        return getattr(mod, func_name)()
-
-    # Pattern 4: lessons dict
-    if hasattr(mod, "lessons"):
-        lessons = mod.lessons
-        if lesson_key in lessons:
-            return lessons[lesson_key]
-
-    print(f"WARNING: Could not find lesson {lesson_key} in {data_file}")
-    attrs = [a for a in dir(mod) if not a.startswith('_') and not a.startswith('__')]
-    print(f"  Available: {attrs[:20]}")
-    return None
-
-
-def get_output_dir(grade, lesson_num):
-    """Get the materials output directory."""
-    base = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "materials")
-
-    grade_lower = grade.lower()
-
-    # Nature's Engineers: L1 = lessons 1-6, L2 = lessons 7-12
-    if grade_lower in ["ne", "natures-engineers"]:
-        grade_folder = "natures-engineers"
-        if lesson_num <= 6:
-            lesson_prefix = "NE-L1"
-            ne_num = lesson_num
-        else:
-            lesson_prefix = "NE-L2"
-            ne_num = lesson_num - 6
-        lesson_folder = f"{lesson_prefix}-{ne_num:02d}"
-        output_dir = os.path.join(base, grade_folder, lesson_folder)
-        os.makedirs(output_dir, exist_ok=True)
-        return output_dir, lesson_folder
-
-    if grade_lower in ["k", "0k", "00"]:
-        grade_folder = "grade-K"
-        lesson_prefix = "GK"
-    elif len(grade_lower) == 1:
-        grade_folder = f"grade-0{grade_lower}"
-        lesson_prefix = f"G0{grade_lower}"
-    elif "_" in grade_lower:
-        # High school levels: "09_L1", "10_L2", etc.
-        grade_num, level = grade_lower.split("_")
-        grade_folder = f"grade-{grade_num}"
-        level_num = level.replace("l", "").replace("L", "")
-        level_folder = f"level-{level_num}"
-        lesson_prefix = f"G{grade_num}L{level_num}"
-        lesson_folder = f"{lesson_prefix}-L{lesson_num:02d}"
-        output_dir = os.path.join(base, grade_folder, level_folder, lesson_folder)
-        os.makedirs(output_dir, exist_ok=True)
-        return output_dir, lesson_folder
-    else:
-        grade_folder = f"grade-{grade_lower}"
-        lesson_prefix = f"G{grade_lower}"
-
-    lesson_folder = f"{lesson_prefix}-L{lesson_num:02d}"
-    output_dir = os.path.join(base, grade_folder, lesson_folder)
-
-    os.makedirs(output_dir, exist_ok=True)
-    return output_dir, lesson_folder
-
-
-def main():
-    parser = argparse.ArgumentParser(description="ModelIt! Branded Materials Generator")
-    parser.add_argument("--grade", required=True, help="Grade level (K, 01-12)")
-    parser.add_argument("--lesson", type=int, help="Lesson number (1-10)")
-    parser.add_argument("--all", action="store_true", help="Generate all lessons for the grade")
-    parser.add_argument("--type", choices=["student", "teacher", "both"], default="both",
-                       help="Which document to generate")
-
-    args = parser.parse_args()
-
-    if args.all:
-        if args.grade.lower() in ["ne", "natures-engineers"]:
-            lessons = range(1, 13)  # 12 NE lessons: L1(1-6) + L2(7-12)
-        elif args.grade.lower().endswith("_l2") and args.grade[:2].isdigit() and int(args.grade[:2]) <= 8:
-            lessons = range(1, 8)  # 7 L2 lessons for grades 4-8
-        else:
-            lessons = range(1, 11)
-    elif args.lesson:
-        lessons = [args.lesson]
-    else:
-        print("ERROR: Specify --lesson N or --all")
-        sys.exit(1)
-
-    for lesson_num in lessons:
-        print(f"\n{'='*60}")
-        print(f"Generating materials for Grade {args.grade}, Lesson {lesson_num}")
-        print(f"{'='*60}")
-
-        try:
-            data = load_lesson_data(args.grade, lesson_num)
-        except Exception as e:
-            print(f"WARNING: Could not load lesson {lesson_num}: {e}")
-            continue
-
-        output_dir, lesson_folder = get_output_dir(args.grade, lesson_num)
-
-        # Load MC questions if available
-        lesson_id = data.get("id", "")
-        mc_questions = load_mc_questions(lesson_id)
-        if mc_questions:
-            pre_count = len(mc_questions.get("mc_pre_assessment", []))
-            post_count = len(mc_questions.get("mc_post_assessment", []))
-            print(f"  [MC] Loaded {pre_count} pre + {post_count} post assessment questions")
-        else:
-            print(f"  [MC] No MC questions found for {lesson_id}")
-
-        if args.type in ("student", "both"):
-            html = generate_student_activity_pack(data, mc_questions)
-            filepath = os.path.join(output_dir, f"{lesson_folder}-Student-Activity-Pack.html")
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  [OK] Student Activity Pack: {filepath}")
-
-        if args.type in ("teacher", "both"):
-            html = generate_teachers_guide(data, mc_questions)
-            filepath = os.path.join(output_dir, f"{lesson_folder}-Teachers-Guide.html")
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  [OK] Teacher's Guide: {filepath}")
-
-    print(f"\nDone! Generated materials in {os.path.dirname(output_dir)}/")
-
-
-if __name__ == "__main__":
-    main()
+</html>
