@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Chen Models Your Moon Weight",
+    "text": "Hello, I am Dr. Sarah Chen. I am a research scientist. I build computer models to understand complex systems. Today, we will model gravity to answer a big question. Why do you weigh less on the Moon?<br><br>First, know that your <strong>mass</strong> never changes. Your <strong>mass</strong> is all the matter that makes up your body. But your <strong>weight</strong> can change. <strong>Weight</strong> is the force from <strong>gravitational pull</strong> acting on your <strong>mass</strong>.<br><br>A planet’s mass affects its gravity. Earth has a large planet mass. This creates a strong <strong>gravitational pull</strong>. This strong pull gives you a higher object <strong>weight</strong>. This makes your jump height on Earth feel normal.<br><br>The Moon is much smaller than Earth. It has much less planet mass. This means its <strong>gravitational pull</strong> is weaker. On the Moon, the pull on your <strong>mass</strong> is small. So, your object <strong>weight</strong> is much less. With weaker gravity, your jump height is much greater. You could jump six times higher! My models help astronauts prepare for these different forces.",
+    "think_abouts": [
+      "Why does your mass stay the same everywhere, but your weight can change?",
+      "How does a planet's mass affect how high you can jump on it?"
+    ],
+    "go_deeper": "Jupiter is much more massive than Earth. What could you predict about your weight and jump height on Jupiter?",
+    "margin_defs": [
+      {
+        "term": "models",
+        "definition": "simple versions of real things to help us study them"
+      },
+      {
+        "term": "matter",
+        "definition": "the 'stuff' that everything is made of"
+      },
+      {
+        "term": "forces",
+        "definition": "pushes or pulls that can change an object's motion"
+      }
+    ],
+    "check_prompts": [
+      "The main reason you weigh less on the Moon is because the Moon has less ___."
+    ],
+    "word_bank": [
+      "mass",
+      "weight",
+      "gravitational pull",
+      "planet mass",
+      "jump height"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "gravity",
+        "spanish": "gravedad"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gravitational Pull",
+      "definition": "The force that pulls objects with mass toward each other.",
+      "use_sentence": "The Earth's strong gravitational pull keeps the Moon in orbit.",
+      "phonetic": "grav-i-tey-shuh-nl pul",
+      "cognate": "gravedad"
+    },
+    {
+      "term": "Mass",
+      "definition": "The total amount of matter, or 'stuff,' in an object.",
+      "use_sentence": "Your mass is the same whether you are on Earth or on the Moon.",
+      "phonetic": "mas",
+      "cognate": "masa"
+    },
+    {
+      "term": "Weight",
+      "definition": "The measure of the force of gravity pulling on an object's mass.",
+      "use_sentence": "Your weight is less on the Moon because its gravity is weaker.",
+      "phonetic": "weyt",
+      "cognate": null
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "A scientific rule that says gravity gets much weaker as you get farther away from an object.",
+      "use_sentence": "The inverse square law explains why planets far from the sun feel its gravity less.",
+      "phonetic": "in-vurs skwair law",
+      "cognate": "ley del inverso del cuadrado"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen uses models to understand systems like gravity. What is another complex system you could use a model to understand? (Examples: weather, traffic, an ecosystem)",
+      "frame": "A model could help me understand the system of ___ by showing how ___."
+    },
+    {
+      "prompt": "If you were designing a new sport to be played on the Moon, what would it be like? How would the Moon's weaker gravity and your lower weight change the game?",
+      "frame": "A sport on the Moon would be different because ___. I would design a game where players could ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

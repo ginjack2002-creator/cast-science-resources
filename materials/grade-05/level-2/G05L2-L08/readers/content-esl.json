@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Melting Ice Cream System",
+    "text": "Hello! I’m Dr. Sarah Chen, a research scientist. I study how different parts of a system work together. Let’s look at a delicious system: melting ice cream.<br><br>Why does it melt faster on a hot day? The answer is <strong>thermal energy</strong>. Warm air has a lot of this energy. This energy always moves from warm places to cool places. We call this movement <strong>heat transfer</strong>. When the air is very hot, the <strong>heat transfer</strong> to your cold ice cream is very fast.<br><br>This fast energy movement causes rapid <strong>melting</strong>. The solid ice cream quickly turns into a liquid. But what if you use a special cup? Good <strong>insulation</strong> in a container can help. <strong>Insulation</strong> is a barrier that slows down <strong>heat transfer</strong>. This keeps your ice cream frozen longer.<br><br>At my lab, I create models to see how these parts connect. Understanding this helps us design better coolers and even insulated homes.",
+    "think_abouts": [
+      "What happens to the heat transfer rate if you put the ice cream in the sun?",
+      "How does a foam cup (insulation) change the melting speed?"
+    ],
+    "go_deeper": "How is the system of melting ice cream similar to the system of a snowman melting?",
+    "margin_defs": [
+      {
+        "term": "system",
+        "definition": "parts that work together"
+      },
+      {
+        "term": "barrier",
+        "definition": "something that blocks"
+      },
+      {
+        "term": "models",
+        "definition": "simple ways to show something complex"
+      }
+    ],
+    "check_prompts": [
+      "What does insulation do to heat transfer?"
+    ],
+    "word_bank": [
+      "Heat Transfer",
+      "Insulation",
+      "Melting",
+      "Thermal Energy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "insulation",
+        "spanish": "insulación"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Heat Transfer",
+      "definition": "The movement of thermal energy from a warmer object to a cooler object.",
+      "use_sentence": "Heat transfer from the hot air made the ice cream melt.",
+      "phonetic": "heet TRANS-fer",
+      "cognate": "transferencia de calor"
+    },
+    {
+      "term": "Insulation",
+      "definition": "A material that slows down heat transfer.",
+      "use_sentence": "My lunch box has good insulation to keep my food cold.",
+      "phonetic": "in-suh-LAY-shun",
+      "cognate": "insulación"
+    },
+    {
+      "term": "Melting",
+      "definition": "The change from solid to liquid caused by absorbing heat energy.",
+      "use_sentence": "We watched the melting of the ice cube on the warm sidewalk.",
+      "phonetic": "MEL-ting",
+      "cognate": null
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "The total energy of moving particles in a substance; we feel it as heat.",
+      "use_sentence": "The sun gives off a lot of thermal energy.",
+      "phonetic": "THER-muhl EN-er-jee",
+      "cognate": "energía térmica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen designs better coolers. What other things could she help design by understanding heat transfer?",
+      "frame": "By understanding heat transfer, Dr. Chen could also help design a better ___ because ___."
+    },
+    {
+      "prompt": "Describe the 'ice cream system' using the words Air Temperature, Insulation, and Melting Speed.",
+      "frame": "When the Air Temperature is high, the Melting Speed is ___ unless there is good ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

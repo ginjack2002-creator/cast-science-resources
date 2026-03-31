@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen's Guide to Wind Chill",
+    "text": "Hello! I am Dr. Sarah Chen. I am a research scientist. At my lab, we study complex systems to see how things connect. <br><br>Let's solve a puzzle. Why does a windy day feel colder than a calm day? The air temperature is the same, but you feel much colder. Your body warms up a thin layer of air right next to your skin. This is your <strong>thermal boundary layer</strong>. It acts like a tiny, invisible blanket that keeps you warm. <br><br>But strong wind blows this warm layer away. This process is called <strong>convection</strong>. When the warm air leaves, your skin is exposed to the colder air again. This leads to <strong>convective heat loss</strong>. The faster the wind blows, the faster your body loses heat. Your skin temperature drops. This makes your brain feel a greater sense of cold. We call this feeling the <strong>wind chill</strong>. It is the <strong>perceived temperature</strong>. <br><br>So, the wind does not change the air temperature. Instead, it changes how quickly your body loses heat to the air.",
+    "think_abouts": [
+      "What does wind do to the warm layer of air around your body?",
+      "Is 'wind chill' the actual temperature of the air?"
+    ],
+    "go_deeper": "How might animals with thick fur or feathers be protected from convective heat loss?",
+    "margin_defs": [
+      {
+        "term": "convection",
+        "definition": "Heat moving with the flow of air or liquid."
+      },
+      {
+        "term": "thermal boundary layer",
+        "definition": "A thin layer of warm air right next to your skin."
+      },
+      {
+        "term": "wind chill",
+        "definition": "How cold your body feels because of the wind."
+      }
+    ],
+    "check_prompts": [
+      "True or False: Wind makes the air colder."
+    ],
+    "word_bank": [
+      "Convection",
+      "Wind Chill",
+      "Thermal Boundary Layer",
+      "Convective Heat Loss",
+      "Perceived Temperature"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      },
+      {
+        "english": "convection",
+        "spanish": "convección"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científica"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Convection",
+      "definition": "The transfer of heat by the movement of a fluid, like air or water.",
+      "use_sentence": "A fan uses convection to move cool air around a room.",
+      "phonetic": "con-VEK-shun",
+      "cognate": "convección"
+    },
+    {
+      "term": "Wind Chill",
+      "definition": "A measure of how cold it feels on the skin when wind is combined with air temperature.",
+      "use_sentence": "The wind chill made the 30-degree day feel like it was 15 degrees.",
+      "phonetic": "WIND chil",
+      "cognate": null
+    },
+    {
+      "term": "Thermal Boundary Layer",
+      "definition": "A very thin layer of still, warm air that forms on the surface of your skin.",
+      "use_sentence": "Your jacket helps protect your thermal boundary layer from the wind.",
+      "phonetic": "THER-mal BOWN-dree LAY-er",
+      "cognate": null
+    },
+    {
+      "term": "Convective Heat Loss",
+      "definition": "The process of losing heat when a fluid, like wind, moves across a surface.",
+      "use_sentence": "Getting out of a pool on a windy day causes rapid convective heat loss.",
+      "phonetic": "con-VEK-tiv HEET loss",
+      "cognate": null
+    },
+    {
+      "term": "Perceived Temperature",
+      "definition": "The temperature that your body feels, which can be different from the measured air temperature.",
+      "use_sentence": "Because of the high humidity, the perceived temperature was hotter than the thermometer showed.",
+      "phonetic": "per-SEEVD TEM-per-uh-cher",
+      "cognate": "temperatura percibida"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen describes the thermal boundary layer as an 'invisible blanket.' What are some other things that act like this layer to keep objects warm?",
+      "frame": "Something that acts like a thermal boundary layer is ___ because it ___."
+    },
+    {
+      "prompt": "How could Dr. Chen design an experiment to test which materials are best at stopping convective heat loss?",
+      "frame": "To test different materials, Dr. Chen could start by ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

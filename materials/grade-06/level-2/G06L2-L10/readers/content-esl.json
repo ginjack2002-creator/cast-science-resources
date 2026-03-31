@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Chen Models Our Water System",
+    "text": "Hello. I am Dr. Sarah Chen, a research scientist. My job is to study complex systems. I look at how many different parts work together to solve big problems. Today, our problem is water.<br><br>The Earth has the same amount of water it has always had. So why are some countries running out? To find the answer, we must see the whole system. We build computer models to see all the connections.<br><br>First, a key part is the <strong>Rainfall Pattern</strong>. This is the main source of fresh water. More rain increases the <strong>Aquifer Recharge</strong>. This process slowly refills the underground aquifers that store our water. Then, we study <strong>Population Density</strong>. More people living in one place creates a much higher <strong>Water Demand</strong>. People need water for homes, farms, and factories.<br><br>We use a special tool called the <strong>Water Stress Index</strong>. It measures the gap between the water we have and the water we use. When <strong>Water Demand</strong> grows, the index rises. This is a warning. But when <strong>Aquifer Recharge</strong> is strong, the index falls. My work helps leaders see these connections. This helps them make better plans to protect our water for everyone.",
+    "think_abouts": [
+      "How does a high Population Density lead to a higher Water Stress Index?",
+      "What is the connection between Rainfall Pattern and Aquifer Recharge?"
+    ],
+    "go_deeper": "Besides population, what is another factor that could increase a country's Water Demand?",
+    "margin_defs": [
+      {
+        "term": "systems",
+        "definition": "many parts that work together"
+      },
+      {
+        "term": "aquifers",
+        "definition": "underground water stores"
+      },
+      {
+        "term": "demand",
+        "definition": "the amount people use"
+      }
+    ],
+    "check_prompts": [
+      "What does the Water Stress Index measure?"
+    ],
+    "word_bank": [
+      "Rainfall Pattern",
+      "Aquifer Recharge",
+      "Water Demand",
+      "Water Stress Index"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "problem",
+        "spanish": "problema"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Aquifer",
+      "definition": "An underground layer of rock or soil that holds fresh water.",
+      "use_sentence": "Many farms use wells to pump water from an aquifer.",
+      "phonetic": "AH-kwuh-fer",
+      "cognate": "acuífero"
+    },
+    {
+      "term": "Water Stress",
+      "definition": "A situation where the demand for water is higher than the available supply.",
+      "use_sentence": "During the long drought, the city experienced high water stress.",
+      "phonetic": "WAH-ter stress",
+      "cognate": null
+    },
+    {
+      "term": "Recharge Rate",
+      "definition": "The speed at which rainfall refills an underground aquifer.",
+      "use_sentence": "The slow recharge rate means the aquifer cannot fill up quickly.",
+      "phonetic": "REE-charj rayt",
+      "cognate": "recarga"
+    },
+    {
+      "term": "Per-Capita Consumption",
+      "definition": "The average amount of water that one person uses in a day.",
+      "use_sentence": "The country wants to lower its per-capita consumption of water.",
+      "phonetic": "per-KA-pi-tuh kon-SUMP-shun",
+      "cognate": "consumo per cápita"
+    },
+    {
+      "term": "Water Stress Index",
+      "definition": "A number that measures a region's risk of running out of water.",
+      "use_sentence": "A high Water Stress Index is a warning sign for the government.",
+      "phonetic": "WAH-ter stress IN-deks",
+      "cognate": "índice"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If a country's population suddenly grows, what happens to its Water Demand and its Water Stress Index?",
+      "frame": "If the population grows, then the Water Demand will ___, which makes the Water Stress Index go ___."
+    },
+    {
+      "prompt": "Dr. Chen's model shows how rainfall helps lower water stress. What is one problem a city might face if it gets much less rain than usual for many years?",
+      "frame": "If a city gets less rain, one problem is that ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

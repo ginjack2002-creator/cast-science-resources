@@ -1,0 +1,103 @@
+{
+  "story": {
+    "title": "Dr. Chen's Shifting River Model",
+    "text": "Hello, I am Dr. Sarah Chen. I am a research scientist. I study how rivers change over time. It is a big question! Can a river change its direction? Yes, it can. I use computer models to see how this happens. A river is a complex system with many connected parts.<br><br>First, I measure the water flow speed. Fast water has a lot of energy. Then, I test the soil softness on the riverbanks. Softer soil is easier for water to wear away. When water is fast and soil is soft, the <strong>erosion</strong> rate goes up. <strong>Erosion</strong> is the process of wearing away the land.<br><br>More <strong>erosion</strong> creates more <strong>sediment</strong>. <strong>Sediment</strong> is the tiny bits of rock and soil the river carries. The river transports this loose material. When the water slows down, it drops the <strong>sediment</strong>. We call this <strong>deposition</strong>. This process builds up new land. It can block the old path. This changes the river’s <strong>channel</strong>. The <strong>channel</strong> is the path the water follows. My model shows how these forces make a river slowly change its direction.",
+    "think_abouts": [
+      "What two things make erosion happen faster?",
+      "How does dropping sediment change a river's channel?"
+    ],
+    "go_deeper": "What might happen to a town built near a river that is slowly changing its direction?",
+    "margin_defs": [
+      {
+        "term": "Complex system",
+        "definition": "Something with many connected parts that affect each other."
+      },
+      {
+        "term": "Model",
+        "definition": "A simple version of something complex to help us understand it."
+      }
+    ],
+    "check_prompts": [
+      "What is the name for the small pieces of rock and soil a river carries?"
+    ],
+    "word_bank": [
+      "erosion",
+      "sediment",
+      "deposition",
+      "channel",
+      "model",
+      "system"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Model",
+        "spanish": "Modelo"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      },
+      {
+        "english": "Direction",
+        "spanish": "Dirección"
+      },
+      {
+        "english": "Complex",
+        "spanish": "Complejo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Erosion",
+      "definition": "The process of wearing away rock and soil by water, wind, or ice.",
+      "use_sentence": "The fast-moving river causes erosion along its soft banks.",
+      "phonetic": "ih-ROH-zhun",
+      "cognate": "Erosión"
+    },
+    {
+      "term": "Sediment",
+      "definition": "Small pieces of rock and soil carried and dropped by water.",
+      "use_sentence": "The slow water dropped a lot of sediment near the river's mouth.",
+      "phonetic": "SED-uh-ment",
+      "cognate": "Sedimento"
+    },
+    {
+      "term": "Deposition",
+      "definition": "The process of dropping sediment in a new place.",
+      "use_sentence": "Deposition of sand created a new small island in the river.",
+      "phonetic": "dep-uh-ZISH-un",
+      "cognate": "Deposición"
+    },
+    {
+      "term": "Channel",
+      "definition": "The path that a river or stream follows.",
+      "use_sentence": "The flood forced the river to cut a new channel through the field.",
+      "phonetic": "CHAN-ul",
+      "cognate": "Canal"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen uses a computer model. Why is it helpful to use a model to study a big, slow system like a river?",
+      "frame": "Using a model is helpful because ___."
+    },
+    {
+      "prompt": "If you wanted to stop a river from changing its channel near a city, what is one thing you could try to change? (Think about soil softness or water speed).",
+      "frame": "To stop the river from changing, I could try to ___."
+    },
+    {
+      "prompt": "Describe the connection between erosion and deposition in your own words.",
+      "frame": "Erosion is when ___, and deposition is when ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen's Hot Car Experiment",
+    "text": "Hello, I am Dr. Sarah Chen. I am a scientist at the National Science Lab. I study how different parts of a system work together.<br><br>Today, we will solve a puzzle. Why does a black car get so hot in the sun? The sun sends powerful <strong>light energy</strong> to Earth. This energy hits everything, including cars. A car’s <strong>surface color</strong> decides what happens next.<br><br>A dark color has high <strong>heat absorption</strong>. It takes in most of the sun’s energy. This light energy changes into <strong>thermal energy</strong>, or heat. A light color does the opposite. It has high <strong>reflection</strong>. It bounces the light energy away.<br><br>Because the black car absorbs more energy, its surface temperature gets very high. The white car reflects more energy, so it stays cooler. At my lab, we use this knowledge to help people. We design cooler cities by using lighter colors for roads and buildings. This helps keep our neighborhoods from getting too hot on sunny days. It is a simple idea that makes a big difference.",
+    "think_abouts": [
+      "What does a dark surface color do with light energy?",
+      "How can we use this idea to make cities cooler?"
+    ],
+    "go_deeper": "If you wanted to design a shirt for playing sports on a hot, sunny day, what color would you choose and why?",
+    "margin_defs": [
+      {
+        "term": "system",
+        "definition": "things that work together"
+      },
+      {
+        "term": "absorbs",
+        "definition": "takes in"
+      },
+      {
+        "term": "reflects",
+        "definition": "bounces off"
+      }
+    ],
+    "check_prompts": [
+      "Which car gets hotter in the sun: black or white?"
+    ],
+    "word_bank": [
+      "light energy",
+      "surface color",
+      "heat absorption",
+      "thermal energy",
+      "reflection"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "color",
+        "spanish": "color"
+      },
+      {
+        "english": "absorb",
+        "spanish": "absorber"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Light Energy",
+      "definition": "Energy that travels from the sun as light waves and can be absorbed by surfaces, turning into heat.",
+      "use_sentence": "The sun sends light energy to warm the Earth.",
+      "phonetic": "lite EN-er-jee",
+      "cognate": "energía"
+    },
+    {
+      "term": "Heat Absorption",
+      "definition": "When a surface takes in light energy and converts it into thermal energy, making the surface warmer.",
+      "use_sentence": "A dark t-shirt has high heat absorption on a sunny day.",
+      "phonetic": "heet ab-SORP-shun",
+      "cognate": "absorción"
+    },
+    {
+      "term": "Surface Color",
+      "definition": "How dark or light a surface is, which determines how much light energy it absorbs versus reflects.",
+      "use_sentence": "The surface color of the roof can change how hot a house gets.",
+      "phonetic": "SUR-fiss CUL-er",
+      "cognate": "color"
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "Heat energy that moves from warmer objects to cooler objects, making things feel hot or cold.",
+      "use_sentence": "When you sit by a fire, you can feel the thermal energy.",
+      "phonetic": "THER-mul EN-er-jee",
+      "cognate": "energía térmica"
+    },
+    {
+      "term": "Reflection",
+      "definition": "When light bounces off a surface instead of being absorbed, carrying the energy away instead of heating the surface.",
+      "use_sentence": "A mirror has high reflection, so you can see yourself.",
+      "phonetic": "re-FLEK-shun",
+      "cognate": "reflexión"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about the clothes you wear. When would it be a good idea to wear a black shirt? When would a white shirt be better?",
+      "frame": "It would be good to wear a black shirt when ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen uses this idea to design cooler cities. What are some other places or things we could design with special colors to control their temperature?",
+      "frame": "We could design a ___ with a light color to keep it cool."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

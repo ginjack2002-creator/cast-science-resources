@@ -1,0 +1,103 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Secret of the Elements",
+    "text": "Hi, I'm Dr. Sarah Chen. I'm a research scientist. My job is to understand why materials act the way they do. Why is gold shiny and stable? Why does iron rust so easily? The answer is hidden inside their atoms. Let's look at the system that explains it.<br><br>First, we start with the <strong>Atomic Number</strong>. This number gives an element its identity. Gold's atomic number is 79. Iron's is 26. This number also tells us how many electrons each neutral atom has.<br><br>Second, the number of electrons decides the <strong>Electron Configuration</strong>. This is how the electrons are arranged in shells. Gold has a very stable outer shell. Iron does not. This arrangement is the most important clue to how an element will behave.<br><br>Third, this arrangement controls <strong>Reactivity</strong> and <strong>Conductivity</strong>. Because gold’s electrons are stable, it has low reactivity. It doesn't rust. Iron’s electrons are less stable, so it has high reactivity. It rusts easily. Both are metals, so their electrons can move. This gives them high conductivity.<br><br>Finally, all these tiny details create the <strong>Material Properties</strong> we see. They explain why gold is shiny and iron is strong but rusts. Understanding this system helps us design new materials for phones, ships, and even spaceships.",
+    "think_abouts": [
+      "What is the first thing Dr. Chen looks at to understand an element?",
+      "Why is the arrangement of electrons so important for an element's properties?"
+    ],
+    "go_deeper": "If you wanted to create a new material that doesn't rust but is also very strong, what kind of electron configuration would you look for?",
+    "margin_defs": [
+      {
+        "term": "stable",
+        "definition": "not likely to change or react"
+      },
+      {
+        "term": "identity",
+        "definition": "what something is"
+      },
+      {
+        "term": "design",
+        "definition": "to plan and create something new"
+      }
+    ],
+    "check_prompts": [
+      "What is Dr. Chen's main job?",
+      "What does the atomic number tell scientists about an atom?",
+      "Why is gold less reactive than iron?"
+    ],
+    "word_bank": [
+      "Atomic Number",
+      "Electron Configuration",
+      "Reactivity",
+      "Conductivity",
+      "Material Properties"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "element",
+        "spanish": "elemento"
+      },
+      {
+        "english": "material",
+        "spanish": "material"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Atomic Number",
+      "definition": "The number of protons in an atom. It gives an element its identity.",
+      "use_sentence": "The atomic number of oxygen is 8, so it has 8 protons.",
+      "phonetic": null,
+      "cognate": "Número atómico"
+    },
+    {
+      "term": "Electron Configuration",
+      "definition": "The way electrons are arranged in layers around an atom's center.",
+      "use_sentence": "The electron configuration helps us know if an element will be reactive.",
+      "phonetic": "uh-LEK-tron con-fig-yer-AY-shun",
+      "cognate": "Configuración electrónica"
+    },
+    {
+      "term": "Reactivity",
+      "definition": "How likely an element is to have a chemical reaction.",
+      "use_sentence": "Because of its high reactivity, sodium bursts into flame in water.",
+      "phonetic": "ree-ak-TIV-ih-tee",
+      "cognate": "Reactividad"
+    },
+    {
+      "term": "Conductivity",
+      "definition": "How well a material lets heat or electricity pass through it.",
+      "use_sentence": "Copper has high conductivity, so we use it for wires.",
+      "phonetic": "con-duk-TIV-ih-tee",
+      "cognate": "Conductividad"
+    },
+    {
+      "term": "Material Properties",
+      "definition": "The things we can see and measure about a material, like its color or hardness.",
+      "use_sentence": "The material properties of a diamond make it very hard and sparkly.",
+      "phonetic": null,
+      "cognate": "Propiedades materiales"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen says understanding atoms helps us design new materials. What is a new material you wish someone would invent, and what properties would it need to have?",
+      "frame": null
+    },
+    {
+      "prompt": "Gold and iron are both metals, but they are very different. What is another pair of elements you know about that are different, and what might explain those differences at the atomic level?",
+      "frame": "One pair of different elements is ___ and ___. Their differences might be because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

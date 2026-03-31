@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen's Water Balance Puzzle",
+    "text": "Hi, I'm Dr. Sarah Chen. At the National Science Lab, I don't look at water through a microscope. Instead, I build computer models to see the big picture. My team and I are trying to solve a huge puzzle: If Earth has the same amount of water it always has, why are some countries running out?<br><br>The answer lies in balance. We have to balance the water coming in with the water going out. To understand this, we model it as a system. Two big factors from the outside affect this balance: the local Rainfall Pattern and the <strong>Population Density</strong>. More people living in an area naturally leads to a higher <strong>Water Demand</strong> for drinking, farming, and factories.<br><br>Rainfall is supposed to refill our underground water storage, called an <strong>aquifer</strong>. The speed at which it refills is the <strong>Recharge Rate</strong>. But here’s the problem: in many places, we are pumping water out of aquifers much faster than the <strong>Recharge Rate</strong> can keep up. When demand is high and the natural supply is low, we get a condition called <strong>Water Stress</strong>.<br><br>My model calculates a <strong>Water Stress Index</strong> for different regions. This number tells us how close a place is to a crisis. A high index means the gap between water supply and demand is dangerously wide. By understanding how all these parts connect, from rainfall to the faucet, we can help communities manage their water better and plan for a more secure future.",
+    "think_abouts": [
+      "What are some ways you and your family contribute to your community's Water Demand?",
+      "What do you think happens to a region's Water Stress Index during a long period of drought?"
+    ],
+    "go_deeper": "Besides using less water, what are some other ways a city could lower its Water Stress Index?",
+    "margin_defs": [
+      {
+        "term": "Aquifer",
+        "definition": "A natural underground water storage area."
+      },
+      {
+        "term": "Recharge Rate",
+        "definition": "The speed at which an aquifer refills with water."
+      }
+    ],
+    "check_prompts": [
+      "What is one factor that increases a country's Water Stress Index?"
+    ],
+    "word_bank": [
+      "Aquifer",
+      "Water Stress",
+      "Recharge Rate",
+      "Water Demand",
+      "Population Density"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "industrial",
+        "spanish": "industrial"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Aquifer",
+      "definition": "An underground layer of rock or soil that holds water, like a natural, slow-filling tank.",
+      "use_sentence": "The city drilled a deep well to pull fresh water from the underground aquifer.",
+      "phonetic": null,
+      "cognate": "acuífero"
+    },
+    {
+      "term": "Water Stress",
+      "definition": "A condition where the demand for water is higher than the available supply, putting pressure on the resource.",
+      "use_sentence": "During the hot, dry summer, the region experienced high water stress and had to limit water use.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Recharge Rate",
+      "definition": "The speed at which an aquifer naturally refills with water from rain and snow seeping into the ground.",
+      "use_sentence": "The slow recharge rate of the desert aquifer meant it could not keep up with the city's water use.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Per-Capita Consumption",
+      "definition": "The average amount of water used by one person in a specific area over a period of time.",
+      "use_sentence": "The country's per-capita consumption of water was very high because of large farms and many swimming pools.",
+      "phonetic": null,
+      "cognate": "consumo"
+    },
+    {
+      "term": "Water Stress Index",
+      "definition": "A measurement used to score how close a region is to a water crisis, based on supply versus demand.",
+      "use_sentence": "The scientist checked the Water Stress Index to see if the country was at risk of a water shortage.",
+      "phonetic": null,
+      "cognate": "índice"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen explained that population density increases water demand. What are some specific reasons why a crowded city would use more water than a small town?",
+      "frame": "A crowded city might use more water because..."
+    },
+    {
+      "prompt": "The model shows that less rainfall leads to higher water stress. How might climate change, which can affect rainfall patterns, impact a country's future water supply?",
+      "frame": "Climate change could impact water supply by..."
+    },
+    {
+      "prompt": "If you were the leader of a country with a high Water Stress Index, what is one idea you would propose to solve the problem? Why?",
+      "frame": "To lower our water stress, I would propose..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

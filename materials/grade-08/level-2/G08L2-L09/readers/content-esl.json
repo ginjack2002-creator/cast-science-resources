@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Sarah Chen and the System of Healing",
+    "text": "I am Dr. Sarah Chen. I am a research scientist. I study how the body repairs itself. It is an amazing and complex system. Think about a simple paper cut. Your body knows what to do instantly.<br><br>The <strong>Wound Severity</strong> is the first factor. A deep cut sends a big signal for help. This signal increases the <strong>Cell Division Rate</strong>. Cells near the cut start dividing quickly. Good <strong>Blood Supply</strong> is also very important. Blood delivers oxygen and nutrients to these busy cells. This helps them divide even faster.<br><br>A high <strong>Cell Division Rate</strong> speeds up <strong>New Tissue Formation</strong>. Your body builds new skin and blood vessels. As this new tissue grows, we see <strong>Healing Progress</strong>. The cut gets smaller and closes. However, a high <strong>Wound Severity</strong> slows overall healing. A bigger wound needs more time to repair. My team and I create computer models of this system. We hope to find new ways to help people heal.",
+    "think_abouts": [
+      "What might happen to healing if a person has poor blood supply?",
+      "Why does a small paper cut heal faster than a deep scrape?"
+    ],
+    "go_deeper": "How could a scientist like Dr. Chen use a computer model to test a new medicine for healing?",
+    "margin_defs": [
+      {
+        "term": "system",
+        "definition": "parts that work together"
+      },
+      {
+        "term": "factor",
+        "definition": "something that causes a result"
+      },
+      {
+        "term": "models",
+        "definition": "simple copies to study something"
+      }
+    ],
+    "check_prompts": [
+      "What is one factor that increases the Cell Division Rate?"
+    ],
+    "word_bank": [
+      "Wound Severity",
+      "Blood Supply",
+      "Cell Division Rate",
+      "New Tissue Formation",
+      "Healing Progress"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "factor",
+        "spanish": "factor"
+      },
+      {
+        "english": "cells",
+        "spanish": "células"
+      },
+      {
+        "english": "process",
+        "spanish": "proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Wound Severity",
+      "definition": "How deep and large a cut is; a bigger wound has higher severity.",
+      "use_sentence": "The doctor checked the wound severity to see if it needed stitches.",
+      "phonetic": null,
+      "cognate": "severidad"
+    },
+    {
+      "term": "Blood Supply",
+      "definition": "The flow of blood that brings oxygen and nutrients to an area.",
+      "use_sentence": "Good blood supply is important for healthy skin.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Cell Division Rate",
+      "definition": "How fast cells make copies of themselves to create new tissue.",
+      "use_sentence": "The cell division rate increases when your body needs to repair an injury.",
+      "phonetic": null,
+      "cognate": "división celular"
+    },
+    {
+      "term": "New Tissue Formation",
+      "definition": "The process of growing new skin and other tissues to close a wound.",
+      "use_sentence": "A scab protects the area of new tissue formation.",
+      "phonetic": null,
+      "cognate": "formación de tejido"
+    },
+    {
+      "term": "Healing Progress",
+      "definition": "How well a wound is closing and repairing over time.",
+      "use_sentence": "The nurse checked the healing progress of the patient's cut each day.",
+      "phonetic": null,
+      "cognate": "progreso"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen calls healing a 'complex system.' What other systems in your daily life have many parts that work together?",
+      "frame": "One complex system I can think of is ___, because it has parts like ___ and ___ that work together to ___."
+    },
+    {
+      "prompt": "Based on the reading, what is one positive relationship and one negative relationship in the healing system? Explain why.",
+      "frame": "A positive relationship is between ___ and ___, because ___. A negative relationship is between ___ and ___, because ___."
+    },
+    {
+      "prompt": "Imagine you could control one part of the healing system to make a cut heal faster. Which part would you choose and why?",
+      "frame": "To make a cut heal faster, I would increase the ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

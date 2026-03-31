@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Dr. Chen's Guide to Universal Gravity",
+    "text": "Hello, I’m Dr. Sarah Chen. At the National Science Lab, my job is to model complex systems—everything from global climate patterns to the intricate dance of celestial bodies. One of the most fundamental systems I work with is gravity.<br><br>The big question we're tackling is why you’d weigh less on the Moon. The answer lies in understanding the crucial difference between <strong>mass</strong> and <strong>weight</strong>. Your <strong>mass</strong> is the constant amount of matter that makes you *you*; it never changes. Your <strong>weight</strong>, however, is a measure of the <strong>gravitational pull</strong> acting on that mass, and it’s entirely dependent on your location.<br><br>Think of it as a system with inputs and outputs. The primary input is a planet or moon's mass. The Moon has significantly less mass than Earth, which means it exerts a much weaker gravitational pull. This relationship is direct: as Planet Mass decreases, so does its Gravitational Pull. Consequently, because the force pulling you down is weaker, your Object Weight decreases. You haven't changed, but the force acting upon you has.<br><br>Another critical factor is the distance from the celestial body's center. Gravity's force diminishes rapidly with distance, a principle known as the <strong>Inverse Square Law</strong>. While the difference is minuscule, you technically weigh slightly less on a high mountain than at sea level because you're farther from Earth's center of mass. This concept is vital when we calculate trajectories for deep-space probes.<br><br>The tangible output of this system is something you could feel: your Jump Height. On the Moon, where the gravitational pull is only about one-sixth of Earth's, the same leg power would launch you six times higher. By modeling these interconnected components—Planet Mass, Distance, Gravitational Pull, and Object Weight—we can predict conditions anywhere in the universe and engineer the technology needed to explore it.",
+    "think_abouts": [
+      "How does understanding the difference between mass and weight help engineers design spacecraft for different missions?",
+      "If you stood on a very high mountain, would your weight be slightly less than it is at sea level? Explain your reasoning using the system components."
+    ],
+    "go_deeper": "Jupiter has over 300 times the mass of Earth but its radius is about 11 times larger. How would you use the concepts of Planet Mass and the Inverse Square Law to predict whether your weight on Jupiter's 'surface' (cloud tops) would be greater or less than on Earth?",
+    "margin_defs": [
+      {
+        "term": "Mass",
+        "definition": "The amount of 'stuff' or matter in an object; it is constant."
+      },
+      {
+        "term": "Weight",
+        "definition": "The force of gravity pulling on an object's mass; it can change."
+      }
+    ],
+    "check_prompts": [
+      "What are the two main factors that determine the strength of a celestial body's gravitational pull?"
+    ],
+    "word_bank": [
+      "Gravitational Pull",
+      "Mass",
+      "Weight",
+      "Inverse Square Law"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "gravity",
+        "spanish": "gravedad"
+      },
+      {
+        "english": "mass",
+        "spanish": "masa"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gravitational Pull",
+      "definition": "The attractive force between two objects that depends on their masses and the distance between them.",
+      "use_sentence": "The Sun's immense gravitational pull keeps all the planets in our solar system in orbit.",
+      "phonetic": null,
+      "cognate": "gravedad"
+    },
+    {
+      "term": "Mass",
+      "definition": "The amount of matter in an object, which stays the same regardless of location.",
+      "use_sentence": "An astronaut's mass is the same on Earth as it is in space, even when they are experiencing weightlessness.",
+      "phonetic": null,
+      "cognate": "masa"
+    },
+    {
+      "term": "Weight",
+      "definition": "The force of gravity acting on an object's mass, which changes depending on the gravitational pull of the planet or moon.",
+      "use_sentence": "Your weight would be significantly less on Mars because its gravitational pull is only about 38% of Earth's.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "The principle that a specified physical quantity is inversely proportional to the square of the distance from the source of that quantity.",
+      "use_sentence": "According to the inverse square law, if you triple your distance from a planet, its gravitational force on you drops to one-ninth of the original force.",
+      "phonetic": null,
+      "cognate": "ley del inverso del cuadrado"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Imagine you are designing a robotic explorer for a high-mass, high-gravity planet. What special features would it need to function effectively, considering the intense object weight it would experience?",
+      "frame": "To design a robot for a high-gravity planet, I would need to consider..."
+    },
+    {
+      "prompt": "Dr. Chen models complex systems. Besides gravity, what are other complex systems in science (like weather, ecosystems, or the human body) where changing one component affects many others?",
+      "frame": "Another complex system is ___, and if you change the ___ component, it affects ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

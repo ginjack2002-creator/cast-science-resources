@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Chen Investigates: The Melting Ice Cream System",
+    "text": "Hi, I’m Dr. Sarah Chen, and I’m a research scientist. My job is to study complex systems, which are things with many connected parts that work together. You might be surprised, but a scoop of ice cream on a summer day is a perfect example of a system!<br><br>Let’s investigate the big question: why does ice cream melt faster on a hot day? It’s all about something called <strong>thermal energy</strong>. Everything is made of tiny, moving particles. The faster they move, the more <strong>thermal energy</strong> they have. The hot air on a summer day has a lot more <strong>thermal energy</strong> than the cold ice cream. Science has a rule: energy always moves from warmer places to cooler places. This movement is called <strong>heat transfer</strong>.<br><br>On a very hot day, the difference in temperature between the air and the ice cream is huge. This causes <strong>heat transfer</strong> to happen very quickly. As your ice cream absorbs all that energy, its particles start to move faster and faster. This is the process of <strong>melting</strong>, where the solid ice cream turns into a liquid puddle. On a cooler day, there’s less energy in the air, so the heat moves into the ice cream much more slowly.<br><br>We can also change a part of this system. What if you put your ice cream in a special foam cup? That cup provides <strong>insulation</strong>, which is a barrier that slows down <strong>heat transfer</strong>. Good <strong>insulation</strong> helps your ice cream stay solid longer, even on a hot day! By understanding how all these parts connect, we can predict what will happen.",
+    "think_abouts": [
+      "What do you think would happen if you put your ice cream in a metal bowl instead of a foam one? Which is a better insulator?",
+      "Besides the air, what else could transfer heat to your ice cream and make it melt?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "thermal energy",
+        "definition": "The energy of moving particles that we feel as heat."
+      },
+      {
+        "term": "heat transfer",
+        "definition": "The movement of heat from a warm object to a cool object."
+      },
+      {
+        "term": "melting",
+        "definition": "The change from a solid to a liquid."
+      },
+      {
+        "term": "insulation",
+        "definition": "A material that slows down the movement of heat."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what is the main reason ice cream melts faster on a hot day?"
+    ],
+    "word_bank": [
+      "system",
+      "thermal energy",
+      "heat transfer",
+      "melting",
+      "insulation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "temperature",
+        "spanish": "temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Heat Transfer",
+      "definition": "The movement of thermal energy from a warmer object to a cooler object.",
+      "use_sentence": "The heat transfer from the hot stove top made the water in the pot boil.",
+      "phonetic": null,
+      "cognate": "transferencia de calor"
+    },
+    {
+      "term": "Insulation",
+      "definition": "A material that slows down or blocks the movement of heat.",
+      "use_sentence": "The insulation in the walls of our house helps keep it warm in the winter.",
+      "phonetic": null,
+      "cognate": "aislamiento"
+    },
+    {
+      "term": "Melting",
+      "definition": "The process where a solid turns into a liquid because it has absorbed heat energy.",
+      "use_sentence": "We watched the melting of the candle wax as it dripped down the side.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "The energy that comes from the movement of tiny particles within matter; we feel it as heat.",
+      "use_sentence": "A cup of hot tea has more thermal energy than a glass of iced tea.",
+      "phonetic": null,
+      "cognate": "energía térmica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen explained that a container's insulation affects how fast ice cream melts. What are some other everyday objects that use insulation, and what is their purpose?",
+      "frame": "An object that uses insulation is a ___ and its purpose is to ___."
+    },
+    {
+      "prompt": "If you wanted to design the perfect container to keep ice cream frozen for as long as possible on a hot day, what materials and colors would you use, and why?",
+      "frame": "To design the perfect container, I would use ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

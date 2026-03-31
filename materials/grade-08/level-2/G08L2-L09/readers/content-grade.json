@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen's Blueprint for Healing",
+    "text": "Hello, I’m Dr. Sarah Chen. In my work at the National Science Lab, I study complex systems—how different parts work together to create a larger result. One of the most incredible systems is your body's own ability to heal. Think about the last time you got a paper cut. How did your body fix it?<br><br>It all starts with the injury's <strong>Wound Severity</strong> (the depth and extent of tissue damage). A more severe wound sends out stronger chemical signals. These signals act like an emergency alarm, dramatically increasing the <strong>Cell Division Rate</strong> (how quickly cells near the wound are dividing to produce new cells for repair). This process of cell division is called mitosis.<br><br>But cells can't divide without fuel. That's where your <strong>Blood Supply</strong> (the flow of blood to the wound area, delivering oxygen, nutrients, and immune cells needed for repair) comes in. A stronger blood flow delivers more resources, which also helps speed up the <strong>Cell Division Rate</strong>. A higher rate of cell division directly leads to more <strong>New Tissue Formation</strong> (the growth of replacement skin, blood vessels, and connective tissue to close and repair the wound).<br><br>All of this drives your overall <strong>Healing Progress</strong> (the advancement of wound repair from initial injury to complete tissue restoration). As new tissue fills the gap, the wound closes. It's a perfect feedback loop! However, a greater <strong>Wound Severity</strong> also means there's much more tissue to rebuild, so deeper wounds naturally take longer to fully heal. My job is to map these connections to help find new ways to improve healing after injuries or surgery.",
+    "think_abouts": [
+      "Why might a cut on your finger heal faster than the same size cut on your toe?",
+      "What do you think happens to the cell division rate once a wound is fully healed?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Mitosis",
+        "definition": "The process of cell division that creates new body cells for growth and repair."
+      },
+      {
+        "term": "Complex System",
+        "definition": "A system where many interconnected parts influence each other to produce overall behaviors."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what two factors directly increase the Cell Division Rate?"
+    ],
+    "word_bank": [
+      "Wound Severity",
+      "Blood Supply",
+      "Cell Division Rate",
+      "New Tissue Formation",
+      "Healing Progress"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Cell",
+        "spanish": "Célula"
+      },
+      {
+        "english": "Division",
+        "spanish": "División"
+      },
+      {
+        "english": "Process",
+        "spanish": "Proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Wound Severity",
+      "definition": "The depth and extent of tissue damage — deeper wounds destroy more cells and take longer to heal.",
+      "use_sentence": "The doctor assessed the wound severity to decide if stitches were needed.",
+      "phonetic": null,
+      "cognate": "Severidad"
+    },
+    {
+      "term": "Blood Supply",
+      "definition": "The flow of blood to the wound area, delivering oxygen, nutrients, and immune cells needed for repair.",
+      "use_sentence": "Good blood supply is crucial for a wound to heal quickly and without infection.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Cell Division Rate",
+      "definition": "How quickly cells near the wound are dividing (mitosis) to produce new cells for repair.",
+      "use_sentence": "Growth factors released at the injury site increased the cell division rate.",
+      "phonetic": null,
+      "cognate": "División"
+    },
+    {
+      "term": "New Tissue Formation",
+      "definition": "The growth of replacement skin, blood vessels, and connective tissue to close and repair the wound.",
+      "use_sentence": "As the cut healed, you could see signs of new tissue formation around the edges.",
+      "phonetic": null,
+      "cognate": "Formación"
+    },
+    {
+      "term": "Healing Progress",
+      "definition": "The overall advancement of wound repair from initial injury to complete tissue restoration.",
+      "use_sentence": "The nurse checked the healing progress each day to make sure there were no complications.",
+      "phonetic": null,
+      "cognate": "Progreso"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen calls wound healing a 'complex system.' Besides healing, what other processes in the human body could be described as a complex system? Why?",
+      "frame": "Another complex system in the body could be ___ because it involves ___."
+    },
+    {
+      "prompt": "If scientists could create a medicine that safely doubles the Cell Division Rate at a wound site, what would be the potential benefits and risks?",
+      "frame": "A potential benefit would be ___, but a possible risk is ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

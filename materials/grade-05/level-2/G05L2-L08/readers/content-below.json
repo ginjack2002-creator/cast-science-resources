@@ -1,0 +1,107 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Melting Mystery",
+    "text": "Hello! I'm Dr. Sarah Chen. At the National Science Lab, I study how different parts of a system work together. It’s like being a detective for science! Let's investigate a yummy system: melting ice cream.<br><br>Why does ice cream melt faster on a hot day? We can follow the energy to find the answer.<br><br>1. First, think about the air. On a hot day, the air has lots of <strong>thermal energy</strong>. This is heat energy. The air is much warmer than your cold ice cream.<br><br>2. Second, energy likes to move. We call this <strong>heat transfer</strong>. Heat always moves from a warmer object to a cooler one. So, heat from the air moves right into your ice cream.<br><br>3. Third, this new energy makes the ice cream particles move faster. This causes <strong>melting</strong>. Your solid ice cream starts to turn into a liquid puddle. The more heat that transfers, the faster the melting happens.<br><br>4. Finally, we can slow this down with <strong>insulation</strong>. A thick foam cooler is great insulation. It creates a barrier that blocks heat from reaching the ice cream.<br><br>My job is to see how all these parts—air temperature, heat transfer, and insulation—connect to change the ice cream. It's a delicious puzzle!",
+    "think_abouts": [
+      "How does a hot day change the speed of melting?",
+      "What could you use to create good insulation for your ice cream?"
+    ],
+    "go_deeper": "How might the color of the ice cream container affect how fast the ice cream melts? Why?",
+    "margin_defs": [
+      {
+        "term": "thermal energy",
+        "definition": "heat energy"
+      },
+      {
+        "term": "heat transfer",
+        "definition": "how heat moves"
+      },
+      {
+        "term": "melting",
+        "definition": "changing from solid to liquid"
+      },
+      {
+        "term": "insulation",
+        "definition": "something that blocks heat"
+      }
+    ],
+    "check_prompts": [
+      "Can you explain in your own words why ice cream melts faster when it's hot outside?"
+    ],
+    "word_bank": [
+      "energy",
+      "temperature",
+      "transfer",
+      "insulation",
+      "melting",
+      "system"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "insulation",
+        "spanish": "insulación"
+      },
+      {
+        "english": "liquid",
+        "spanish": "líquido"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Heat Transfer",
+      "definition": "The movement of heat from a warm thing to a cool thing.",
+      "use_sentence": "Heat transfer from the sun made the sandy beach very hot.",
+      "phonetic": "heet TRANS-fer",
+      "cognate": "transferencia de calor"
+    },
+    {
+      "term": "Insulation",
+      "definition": "A material that slows down the movement of heat.",
+      "use_sentence": "My winter coat has good insulation to keep me warm.",
+      "phonetic": "in-suh-LAY-shun",
+      "cognate": "insulación"
+    },
+    {
+      "term": "Melting",
+      "definition": "The change of a solid into a liquid when it gets warm.",
+      "use_sentence": "We watched the melting of the snowman as the sun came out.",
+      "phonetic": "MEL-ting",
+      "cognate": null
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "The energy of moving particles in an object, which we feel as heat.",
+      "use_sentence": "A cup of hot chocolate has more thermal energy than a glass of cold milk.",
+      "phonetic": "THER-muhl EN-er-jee",
+      "cognate": "energía térmica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you wanted to keep your ice cream frozen for a long time at a picnic, what steps would you take? Explain why each step works.",
+      "frame": "To keep my ice cream frozen, I would first..."
+    },
+    {
+      "prompt": "Dr. Chen studies how parts of a system work together. Besides melting ice cream, what is another system you see in your everyday life?",
+      "frame": "Another system I see is..."
+    },
+    {
+      "prompt": "How does insulation help in the winter? How does it help in the summer?",
+      "frame": "In the winter, insulation helps by..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

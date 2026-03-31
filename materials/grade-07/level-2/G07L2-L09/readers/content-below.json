@@ -1,0 +1,90 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Cheetah's Secret",
+    "text": "My name is Dr. Sarah Chen. I work at the National Science Lab. My job is to solve puzzles about animals. The big puzzle right now is about cheetahs. They are famous for their speed, but the species is in trouble.<br><br>I look at the problem like a chain reaction. Here are the steps:<br><br>1. First, we see that cheetah homes are being broken apart. This is called <strong>habitat fragmentation</strong>. Roads and cities cut their land into small pieces. This makes it hard for cheetahs to find food and mates.<br><br>2. Second, these small, separate groups can't mix. This causes the cheetah population to have low <strong>genetic diversity</strong>. That means their genes are all very similar. It's like a whole family having the same hair and eye color.<br><br>3. Third, low genetic diversity leads to low <strong>trait variation</strong>. The cheetahs become too much alike. There are fewer differences in their speed, size, or ability to fight sickness.<br><br>4. Finally, this hurts the cheetah's <strong>species fitness</strong>. If a new disease appears, it could wipe out many cheetahs at once because they are all so similar. My team and I are using this data to find ways to connect their habitats. Helping cheetahs mix again can help them stay fast and strong for the future.",
+    "think_abouts": [
+      "What is the first step in the chain reaction that hurts cheetahs?",
+      "How could connecting two habitats help a cheetah population?"
+    ],
+    "go_deeper": "If you were a scientist like Dr. Chen, what solution would you suggest to help stop habitat fragmentation?",
+    "margin_defs": [
+      {
+        "term": "Genes",
+        "definition": "Instructions inside cells that determine traits."
+      },
+      {
+        "term": "Population",
+        "definition": "A group of the same kind of animal living in an area."
+      }
+    ],
+    "check_prompts": [
+      "Why does having very similar genes put the cheetahs in danger?"
+    ],
+    "word_bank": [
+      "population",
+      "habitat",
+      "genes",
+      "connect",
+      "variation"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "diversity",
+        "spanish": "diversidad"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Genetic Diversity",
+      "definition": "The mix of different genes in a group of animals. A bigger mix is healthier.",
+      "use_sentence": "The low genetic diversity made the cheetahs vulnerable to sickness.",
+      "phonetic": "juh-NEH-tik die-VUR-sih-tee",
+      "cognate": "diversidad genética"
+    },
+    {
+      "term": "Habitat Fragmentation",
+      "definition": "When a large home for animals is broken into smaller, separate pieces.",
+      "use_sentence": "Building a highway caused habitat fragmentation in the forest.",
+      "phonetic": "HAB-ih-tat frag-men-TAY-shun",
+      "cognate": "fragmentación del hábitat"
+    },
+    {
+      "term": "Trait Variation",
+      "definition": "The differences in features, like speed or size, within a group of animals.",
+      "use_sentence": "There is a lot of trait variation in dogs, which is why they look so different.",
+      "phonetic": "TRAYT vair-ee-AY-shun",
+      "cognate": "variación de rasgos"
+    },
+    {
+      "term": "Species Fitness",
+      "definition": "How well a whole group of animals can survive and have babies.",
+      "use_sentence": "A changing climate can lower a polar bear's species fitness.",
+      "phonetic": "SPEE-sheez FIT-ness",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen describes a 'chain reaction.' How does one problem (habitat fragmentation) lead to another problem (low genetic diversity)?",
+      "frame": "Habitat fragmentation leads to low genetic diversity because ___."
+    },
+    {
+      "prompt": "Besides cheetahs, what is another animal that might be affected by its habitat being broken into smaller pieces?",
+      "frame": "Another animal affected by this could be ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen's Water Stress Model",
+    "text": "Hi, I'm Dr. Sarah Chen. At my lab, I study a big question: why do some countries run out of water? Earth has a lot of water, but it’s not always in the right place at the right time. I build computer models to understand this complex system. <br><br> My model looks at several key parts. Let's walk through it. <br><br> 1. We start with <strong>Population Density</strong>. When more people live in one area, the total <strong>Water Demand</strong> goes up. Everyone needs water to drink, farm, and live. How much each person uses is their <strong>per-capita consumption</strong>. <br><br> 2. Next, we look at the <strong>Rainfall Pattern</strong>. Rain is what refills our fresh water. Some of it soaks deep into the ground to fill an <strong>Aquifer</strong>. The speed it refills is the <strong>Recharge Rate</strong>. <br><br> 3. <strong>Water Stress</strong> happens when demand is higher than the supply. If people use water faster than the <strong>Recharge Rate</strong>, the <strong>Aquifer</strong> can run dry. <br><br> 4. My model calculates a <strong>Water Stress Index</strong>. This number tells us if a country is in danger of a water shortage. A high number is a warning sign. <br><br> By understanding these connections, we can help leaders make better plans for the future. We can find ways to protect our water for everyone.",
+    "think_abouts": [
+      "What are two things that can cause a country's water demand to go up?",
+      "Why is it a problem if people use water faster than the aquifer can recharge?"
+    ],
+    "go_deeper": "What are some ways a city could try to lower its Water Demand?",
+    "margin_defs": [
+      {
+        "term": "Model",
+        "definition": "A simple way to show how something complex works."
+      },
+      {
+        "term": "System",
+        "definition": "A group of parts that work together."
+      }
+    ],
+    "check_prompts": [
+      "What two things does the Water Stress Index compare?"
+    ],
+    "word_bank": [
+      "Aquifer",
+      "Water Demand",
+      "Recharge Rate",
+      "Water Stress Index",
+      "Population Density"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Problem",
+        "spanish": "Problema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Aquifer",
+      "definition": "A big, underground layer of rock that holds fresh water.",
+      "use_sentence": "Farmers drilled a well to pump water from the deep aquifer.",
+      "phonetic": "AK-wih-fer",
+      "cognate": "Acuífero"
+    },
+    {
+      "term": "Water Stress",
+      "definition": "When there is not enough water for all the people who need it.",
+      "use_sentence": "The dry summer caused serious water stress for the whole region.",
+      "phonetic": "WAH-ter stress",
+      "cognate": null
+    },
+    {
+      "term": "Recharge Rate",
+      "definition": "How fast an aquifer gets refilled with new water from rain.",
+      "use_sentence": "The aquifer's recharge rate was too slow to keep up with the city's needs.",
+      "phonetic": "REE-charj rayt",
+      "cognate": "Tasa de Recarga"
+    },
+    {
+      "term": "Per-Capita Consumption",
+      "definition": "The average amount of water one person uses each day.",
+      "use_sentence": "The per-capita consumption of water is much higher in countries with many pools and lawns.",
+      "phonetic": "per-KAP-ih-tuh kon-SUMP-shun",
+      "cognate": "Consumo Per Cápita"
+    },
+    {
+      "term": "Water Stress Index",
+      "definition": "A number that shows if a place has a little or a lot of water stress.",
+      "use_sentence": "The map showed which countries had a high Water Stress Index.",
+      "phonetic": "WAH-ter stress IN-deks",
+      "cognate": "Índice de Estrés Hídrico"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen's model shows how population and rainfall affect water supply. What is another factor you think could affect a country's water stress?",
+      "frame": "Another factor that could cause water stress is ___ because ___."
+    },
+    {
+      "prompt": "If you were the leader of a city with a high Water Stress Index, what is one idea you would try to solve the problem?",
+      "frame": "To solve the water problem, my first idea would be to ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

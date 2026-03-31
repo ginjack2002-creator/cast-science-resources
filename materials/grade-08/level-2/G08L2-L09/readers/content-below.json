@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Healing System",
+    "text": "Hi, I'm Dr. Sarah Chen. At my lab, we study how the body heals itself. We see it as a complex system where everything is connected.<br><br>Imagine you get a small cut. Let's look at the steps your body takes to fix it.<br><br>1. First, the <strong>Wound Severity</strong> matters. A small cut sends a small signal. A bigger, deeper cut sends a much stronger signal for help. This signal tells your body to start the repair process.<br><br>2. Next, your <strong>Blood Supply</strong> is very important. Good blood flow brings oxygen and nutrients to the wound. These are the fuel your cells need to work hard and rebuild.<br><br>3. Then, your <strong>Cell Division Rate</strong> speeds up. The signal from the wound tells cells to divide. More blood supply helps them divide even faster to make new cells.<br><br>4. These new cells cause <strong>New Tissue Formation</strong>. They build new skin and blood vessels. This process slowly fills in the gap from the cut.<br><br>5. Finally, you see <strong>Healing Progress</strong>. The wound gets smaller and closes up. The more new tissue you make, the faster this happens. My job is to understand these steps to create better treatments for healing.",
+    "think_abouts": [
+      "What might happen to the healing process if a person has poor blood supply?",
+      "How is healing a small, clean cut different from healing a large, dirty scrape?"
+    ],
+    "go_deeper": "How do you think a scar forms, and how does it relate to New Tissue Formation?",
+    "margin_defs": [
+      {
+        "term": "complex system",
+        "definition": "A group of connected parts that work together to do a job."
+      },
+      {
+        "term": "nutrients",
+        "definition": "The 'food' parts in blood that cells use for energy and building."
+      }
+    ],
+    "check_prompts": [
+      "What two things in the story help increase the Cell Division Rate?"
+    ],
+    "word_bank": [
+      "Wound Severity",
+      "Blood Supply",
+      "Cell Division Rate",
+      "New Tissue Formation",
+      "Healing Progress"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "division",
+        "spanish": "división"
+      },
+      {
+        "english": "progress",
+        "spanish": "progreso"
+      },
+      {
+        "english": "formation",
+        "spanish": "formación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Wound Severity",
+      "definition": "The size and depth of a cut or scrape.",
+      "use_sentence": "The doctor checked the wound severity to see if stitches were needed.",
+      "phonetic": null,
+      "cognate": "severidad"
+    },
+    {
+      "term": "Blood Supply",
+      "definition": "The flow of blood to an area of the body, carrying oxygen and nutrients.",
+      "use_sentence": "Good blood supply is needed for muscles to get energy.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Cell Division Rate",
+      "definition": "How fast cells make copies of themselves.",
+      "use_sentence": "The cell division rate is very high when you are growing.",
+      "phonetic": null,
+      "cognate": "división celular"
+    },
+    {
+      "term": "New Tissue Formation",
+      "definition": "The process of growing new skin and other body parts to heal a wound.",
+      "use_sentence": "A scab protects the new tissue formation happening underneath it.",
+      "phonetic": null,
+      "cognate": "formación de tejido"
+    },
+    {
+      "term": "Healing Progress",
+      "definition": "How much a wound has closed and repaired over time.",
+      "use_sentence": "The nurse took a picture of the cut to track the healing progress.",
+      "phonetic": null,
+      "cognate": "progreso"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen calls healing a 'system.' What does it mean for all the parts of healing to be connected to each other?",
+      "frame": "For all the parts to be connected, it means that if one part changes, then ___."
+    },
+    {
+      "prompt": "Based on the story, what advice would you give a friend to help their scraped knee heal as well as possible?",
+      "frame": "To help a scrape heal better, you should probably ___ because the story said ___ is important."
+    },
+    {
+      "prompt": "The story explains how a bigger wound leads to a slower healing process. What could you do to change this relationship and speed up healing for a big wound?",
+      "frame": "To speed up healing for a big wound, a doctor might try to improve the ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

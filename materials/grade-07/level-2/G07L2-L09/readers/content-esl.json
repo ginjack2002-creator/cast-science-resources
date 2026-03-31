@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Cheetah System",
+    "text": "My name is Dr. Sarah Chen. I am a research scientist. I study how cheetahs are part of a complex system. A system has many connected parts. If one part changes, it affects all the other parts.<br><br>Cheetahs face a big problem called <strong>Habitat Fragmentation</strong>. This happens when people build roads and cities. These things break the cheetahs’ home into small, separate pieces. Smaller pieces of land can only support a smaller cheetah population. A small population loses its <strong>Genetic Diversity</strong> over time. This means there are fewer types of genes in the group.<br><br>Low genetic diversity leads to low <strong>Trait Variation</strong>. The cheetahs become too similar to each other. Some might not be as fast. Some might get sick more easily. This reduces the cheetahs' overall <strong>Species Fitness</strong>. Fitness is the ability to survive and have babies. My job is to understand this whole system. We must see all the connections to help save the cheetah.",
+    "think_abouts": [
+      "Why is it a problem if all cheetahs are very similar to each other?",
+      "What is one human action that starts the chain of problems for cheetahs?"
+    ],
+    "go_deeper": "What other animal species might be in danger because of habitat fragmentation?",
+    "margin_defs": [
+      {
+        "term": "complex system",
+        "definition": "A group of connected parts where changing one part affects others."
+      },
+      {
+        "term": "separate pieces",
+        "definition": "Small areas that are not connected to each other."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what is the first problem that leads to cheetahs losing their fitness?"
+    ],
+    "word_bank": [
+      "Habitat Fragmentation",
+      "Genetic Diversity",
+      "Trait Variation",
+      "Species Fitness"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "population",
+        "spanish": "población"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "fragmentation",
+        "spanish": "fragmentación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Genetic Diversity",
+      "definition": "The variety of different genes in a group of animals. More variety is healthier.",
+      "use_sentence": "A population with low genetic diversity is at risk of getting sick.",
+      "phonetic": "juh-NEH-tik dy-VER-si-tee",
+      "cognate": "Diversidad Genética"
+    },
+    {
+      "term": "Habitat Fragmentation",
+      "definition": "When an animal's home is broken into small, disconnected parts.",
+      "use_sentence": "Building a new highway can cause habitat fragmentation.",
+      "phonetic": "HA-bi-tat frag-men-TAY-shun",
+      "cognate": "Fragmentación del Hábitat"
+    },
+    {
+      "term": "Trait Variation",
+      "definition": "The differences in characteristics, like speed or size, among animals in a group.",
+      "use_sentence": "Good trait variation allows a species to adapt to changes.",
+      "phonetic": "TRAYT vair-ee-AY-shun",
+      "cognate": "Variación"
+    },
+    {
+      "term": "Species Fitness",
+      "definition": "The ability of a species to survive and have babies in its environment.",
+      "use_sentence": "The cheetah's species fitness is decreasing because of these problems.",
+      "phonetic": "SPEE-sheez FIT-ness",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen explains a chain reaction affecting cheetahs. Describe the steps in this chain, starting with habitat fragmentation.",
+      "frame": "First, habitat fragmentation causes ___. This leads to lower ___, which then causes less ___. Finally, this hurts the cheetah's ___."
+    },
+    {
+      "prompt": "How could building a 'wildlife bridge' or corridor over a highway help a species like the cheetah?",
+      "frame": "A wildlife bridge could help because it would connect ___, which might increase ___."
+    },
+    {
+      "prompt": "Dr. Chen studies complex systems. Besides cheetahs, what is another example of a system with many connected parts?",
+      "frame": "Another example of a system is ___ because it has parts like ___ and ___ that affect each other."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

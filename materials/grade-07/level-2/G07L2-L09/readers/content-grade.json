@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen's Notebook: The Cheetah Paradox",
+    "text": "My name is Dr. Sarah Chen, and at the National Science Lab, I study complex systems. Think of it like being a detective for nature. The mystery I’m working on is the cheetah paradox: how can the fastest land animal be losing its edge?<br><br>It’s not as simple as one single cause. My job is to see how different parts of their world connect. We started by looking at their environment. Human development, like new roads and farms, causes <strong>Habitat Fragmentation</strong>. This breaks their vast grasslands into small, isolated islands of wilderness. When cheetahs get trapped in these small patches, their population size shrinks, and they can’t mix with other groups. This isolation is a huge problem.<br><br>Why? Because it crushes their <strong>Genetic Diversity</strong>. That’s the variety of genes in a population, and it’s the toolbox for survival. When a population is small and isolated, it loses that variety. Less genetic diversity means less <strong>Trait Variation</strong>. Suddenly, all the cheetahs are very similar. They might all have the same weakness to a new disease or be slightly less powerful runners. <br><br>This is where the slowdown happens. Natural selection needs variation to work. If there are no faster or stronger cheetahs to pass on their genes, the average speed and health of the group can decline over generations. This lowers their overall <strong>Species Fitness</strong>, which is their ability to survive and adapt. My work is to model these connections, so we can find the best way to protect these incredible animals before they lose the very trait that makes them so amazing.",
+    "think_abouts": [
+      "How might a new highway or city affect the genetic diversity of animals living in that area?",
+      "Why is it risky for all the cheetahs in a population to be too similar to each other?"
+    ],
+    "go_deeper": "Conservation groups are creating 'wildlife corridors' to connect fragmented habitats. Based on the reading, how would these corridors help improve a cheetah's species fitness?",
+    "margin_defs": [
+      {
+        "term": "Habitat Fragmentation",
+        "definition": "When an animal's home is broken into small, disconnected pieces."
+      },
+      {
+        "term": "Genetic Diversity",
+        "definition": "The variety of genes within a group of animals."
+      },
+      {
+        "term": "Trait Variation",
+        "definition": "The natural differences in traits (like speed or size) between individuals."
+      },
+      {
+        "term": "Species Fitness",
+        "definition": "A species' overall ability to survive and have offspring."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what is the main reason that habitat fragmentation leads to lower genetic diversity?"
+    ],
+    "word_bank": [
+      "Genetic Diversity",
+      "Habitat Fragmentation",
+      "Trait Variation",
+      "Species Fitness"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Diversity",
+        "spanish": "Diversidad"
+      },
+      {
+        "english": "Population",
+        "spanish": "Población"
+      },
+      {
+        "english": "Variation",
+        "spanish": "Variación"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Genetic Diversity",
+      "definition": "The total variety of genes and alleles within a population, which determines how much variation exists in traits.",
+      "use_sentence": "A healthy wolf pack has high genetic diversity, which helps it fight off new diseases.",
+      "phonetic": "juh-NEH-tik die-VUR-si-tee",
+      "cognate": "Diversidad Genética"
+    },
+    {
+      "term": "Habitat Fragmentation",
+      "definition": "The breaking apart of large, continuous habitats into smaller, isolated patches, often caused by human development.",
+      "use_sentence": "Habitat fragmentation from building new roads can trap animals in small areas, limiting their access to food and mates.",
+      "phonetic": "HAB-i-tat frag-men-TAY-shun",
+      "cognate": "Fragmentación del Hábitat"
+    },
+    {
+      "term": "Trait Variation",
+      "definition": "The range of differences in a specific characteristic (like speed, size, or coloring) within a population.",
+      "use_sentence": "The trait variation in dog breeds is huge; a tiny chihuahua and a giant great dane are very different!",
+      "phonetic": "TRAYT vair-ee-AY-shun",
+      "cognate": "Variación de Rasgos"
+    },
+    {
+      "term": "Species Fitness",
+      "definition": "The overall ability of a population to survive, reproduce, and adapt to environmental changes.",
+      "use_sentence": "A changing climate can lower a polar bear's species fitness because it is adapted to a cold environment.",
+      "phonetic": "SPEE-sheez FIT-ness",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen describes a chain reaction affecting cheetahs. What is another example of a chain reaction you've seen in nature or in your own life?",
+      "frame": "A chain reaction I've observed is when..."
+    },
+    {
+      "prompt": "The big question is how an entire species can lose its most important trait. Based on the reading, explain the connection between a small, isolated population and the loss of a trait like speed.",
+      "frame": "A small population can lose a trait because..."
+    },
+    {
+      "prompt": "If you were a scientist like Dr. Chen, what would be your first step to help improve the cheetahs' species fitness? Explain your reasoning.",
+      "frame": "My first step would be to... because this would help..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen Models the Future of Metals",
+    "text": "My name is Dr. Sarah Chen. I work at the National Science Lab. I am a research scientist who studies complex systems.<br><br>My computer model looks at <strong>Rare Earth Metals</strong>. These special metals are in your phone and computer. They are also essential for electric cars and wind turbines. We get these metals from the Earth. The <strong>Mining Rate</strong> shows how fast we dig them up. A faster rate increases our supply today. We also get metals from old products. The <strong>Recycling Rate</strong> shows how much we reuse. More recycling also increases our available supply.<br><br>When the supply is high, the market price is low. When the supply is low, the price gets very high. A high price creates a <strong>Substitution Incentive</strong>. This pushes companies to find new materials. But here is the challenge. A high mining rate now depletes our future resources. My model helps us see these connections. We can test different choices. This helps us plan for a sustainable future.",
+    "think_abouts": [
+      "What are two ways we get rare earth metals?",
+      "What happens to the price of metals when the supply is low?"
+    ],
+    "go_deeper": "How could developing a new material to replace a rare earth metal change the whole system?",
+    "margin_defs": [
+      {
+        "term": "complex systems",
+        "definition": "Many connected parts that affect each other."
+      },
+      {
+        "term": "depletes",
+        "definition": "Uses up or reduces a supply of something."
+      },
+      {
+        "term": "sustainable",
+        "definition": "Able to be continued for a long time."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Chen use to study the rare earth metals system?"
+    ],
+    "word_bank": [
+      "Rare Earth Metals",
+      "Mining Rate",
+      "Recycling Rate",
+      "Substitution Incentive"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "essential",
+        "spanish": "esencial"
+      },
+      {
+        "english": "materials",
+        "spanish": "materiales"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Rare Earth Metals",
+      "definition": "A group of 17 metals needed for modern technology like phones and electric cars.",
+      "use_sentence": "Our phones use many different rare earth metals to work.",
+      "phonetic": null,
+      "cognate": "metales"
+    },
+    {
+      "term": "Mining Rate",
+      "definition": "The speed at which we take materials from the Earth, often measured in tons per year.",
+      "use_sentence": "The high mining rate gives us more metals for now.",
+      "phonetic": null,
+      "cognate": "minería"
+    },
+    {
+      "term": "Recycling Rate",
+      "definition": "The percentage of used materials that we collect and process to use again.",
+      "use_sentence": "A good recycling rate helps us save our planet's resources.",
+      "phonetic": null,
+      "cognate": "reciclar"
+    },
+    {
+      "term": "Substitution Incentive",
+      "definition": "The motivation to find a new material when one gets too expensive or hard to find.",
+      "use_sentence": "The high price created a substitution incentive for engineers to find a replacement.",
+      "phonetic": null,
+      "cognate": "substitución / incentivo"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were a leader, would you focus more on increasing the mining rate or the recycling rate? Why?",
+      "frame": "I would focus on the ___ rate because ___."
+    },
+    {
+      "prompt": "What is one product you use every day that might have rare earth metals inside? How would your life change if we ran out of them?",
+      "frame": "One product I use is my ___. My life would change because ___."
+    },
+    {
+      "prompt": "Dr. Chen's model shows that high prices lead companies to find new materials. Do you think this is a good thing or a bad thing? Explain.",
+      "frame": "I think this is a ___ thing because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

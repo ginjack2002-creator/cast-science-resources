@@ -1,0 +1,109 @@
+{
+  "story": {
+    "title": "Dr. Chen Models a Hidden Water Crisis",
+    "text": "My name is Dr. Sarah Chen. I am a research scientist. I study the complex systems that affect our planet. Today, I am looking at a hidden water crisis.<br><br>Under our feet, there is water in large underground areas called aquifers. We use this water for drinking and farming. <strong>Agricultural irrigation</strong> uses the most water. This pumping takes water from the aquifer. It causes the <strong>aquifer level</strong> to drop.<br><br>Nature has a way to refill these aquifers. Rain soaks into the ground. This is called <strong>rainfall recharge</strong>. It adds water back. But there is a problem. We are using water faster than rain can refill it.<br><br>When the aquifer level gets too low, the ground can sink. We call this <strong>land subsidence</strong>. The empty spaces underground collapse. This permanently damages the aquifer. It cannot hold as much water as before.<br><br>This problem affects our <strong>long-term water security</strong>. It threatens our future food and water supply. My computer models show these connections. They help us understand the problem. We can use this information to protect our water for the future.",
+    "think_abouts": [
+      "What happens to the ground when the aquifer level drops?",
+      "Why is it a problem if we use water faster than rain refills it?"
+    ],
+    "go_deeper": "How could a community use Dr. Chen's model to make better decisions about water use?",
+    "margin_defs": [
+      {
+        "term": "aquifers",
+        "definition": "underground areas that hold water"
+      },
+      {
+        "term": "complex systems",
+        "definition": "things with many connected parts"
+      },
+      {
+        "term": "permanently",
+        "definition": "forever; cannot be changed back"
+      }
+    ],
+    "check_prompts": [
+      "What is the biggest use of groundwater mentioned in the story?"
+    ],
+    "word_bank": [
+      "Agricultural Irrigation",
+      "Rainfall Recharge",
+      "Aquifer Level",
+      "Land Subsidence",
+      "Long-term Water Security"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Agricultural",
+        "spanish": "Agrícola"
+      },
+      {
+        "english": "Security",
+        "spanish": "Seguridad"
+      },
+      {
+        "english": "Region",
+        "spanish": "Región"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Agricultural Irrigation",
+      "definition": "The use of groundwater to water crops — the largest consumer of groundwater worldwide.",
+      "use_sentence": "The farm depends on agricultural irrigation to water its corn fields.",
+      "phonetic": null,
+      "cognate": "Irrigación agrícola"
+    },
+    {
+      "term": "Rainfall Recharge",
+      "definition": "The natural process by which rainwater seeps through soil and rock to replenish underground aquifers.",
+      "use_sentence": "After the storm, rainfall recharge helped raise the aquifer level slightly.",
+      "phonetic": null,
+      "cognate": "Recarga"
+    },
+    {
+      "term": "Aquifer Level",
+      "definition": "The height of the water table in an underground aquifer — drops when extraction exceeds recharge.",
+      "use_sentence": "Scientists monitor the aquifer level to see if it is going up or down.",
+      "phonetic": null,
+      "cognate": "Nivel del acuífero"
+    },
+    {
+      "term": "Land Subsidence",
+      "definition": "The sinking or settling of the ground surface caused by the removal of underground water.",
+      "use_sentence": "In some cities, land subsidence has caused buildings to sink and crack.",
+      "phonetic": null,
+      "cognate": "Subsidencia"
+    },
+    {
+      "term": "Long-term Water Security",
+      "definition": "The ability of a region to meet its water needs sustainably over decades and generations.",
+      "use_sentence": "Saving water now is important for our long-term water security.",
+      "phonetic": null,
+      "cognate": "Seguridad hídrica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were a city planner who saw Dr. Chen's model, what is one change you might suggest to help protect the aquifer?",
+      "frame": "Based on the model, I would suggest that our city..."
+    },
+    {
+      "prompt": "The story says land subsidence is permanent. Why does this make groundwater depletion a more serious problem than just running out of water for a short time?",
+      "frame": "Permanent land subsidence is more serious because..."
+    },
+    {
+      "prompt": "Dr. Chen studies complex systems. Besides water, what is another complex system in your community that has many connected parts?",
+      "frame": "Another complex system in my community is ___ because it connects to ___ and ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

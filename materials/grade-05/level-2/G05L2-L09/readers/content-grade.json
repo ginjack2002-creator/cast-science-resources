@@ -1,0 +1,89 @@
+{
+  "story": {
+    "title": "Dr. Chen's Shifting River System",
+    "text": "Hi, I’m Dr. Sarah Chen. Here at the National Science Lab, I study complex systems. That sounds fancy, but it just means I look at how different parts work together to create a bigger picture. The system I’m studying now is one of my favorites: a river.<br><br>My team and I ask a big question: Can a river actually change its own direction? The answer is a definite yes, and it happens through a fascinating process. We build computer models to see how it works. For instance, after a big storm, the <strong>Water Flow Speed</strong> in a river increases dramatically. This faster water has more energy, which leads to a higher <strong>Erosion Rate</strong>. <strong>Erosion</strong> is the wearing away of the riverbank. The effect is even stronger if the <strong>Soil Softness</strong> is high. A soft, sandy bank will erode much faster than a bank made of hard rock.<br><br>All that eroded material has to go somewhere. It becomes <strong>sediment</strong>, which are the tiny bits of sand, silt, and clay carried by the water. The faster flow increases <strong>Sediment Transport</strong>, meaning the river carries more material downstream. But what happens when the river turns a corner and slows down? It loses energy and has to drop its load of sediment. This process is called <strong>deposition</strong>.<br><br>Over time, this constant cycle of erosion on the outside of a bend and deposition on the inside causes the river's <strong>channel</strong>—its main path—to shift and meander across the land. It’s a powerful feedback loop! Understanding this <strong>Channel Shape Change</strong> helps us predict floods and protect communities that live near these amazing, ever-changing rivers.",
+    "think_abouts": [
+      "Have you ever seen a river look brown and muddy after a big rainstorm? What do you think was happening?",
+      "What do you think would happen to a river's channel if there was a long drought and the water flow slowed down?"
+    ],
+    "go_deeper": "How might building a dam on a river affect the processes of erosion and deposition downstream?",
+    "margin_defs": [
+      {
+        "term": "Erosion",
+        "definition": "The wearing away of land."
+      },
+      {
+        "term": "Sediment",
+        "definition": "Small bits of rock and soil."
+      }
+    ],
+    "check_prompts": [
+      "What two factors did Dr. Chen say can increase the rate of erosion?"
+    ],
+    "word_bank": [
+      "Erosion",
+      "Sediment",
+      "Deposition",
+      "Channel"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Erosion",
+        "spanish": "Erosión"
+      },
+      {
+        "english": "Sediment",
+        "spanish": "Sedimento"
+      },
+      {
+        "english": "Deposition",
+        "spanish": "Deposición"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Erosion",
+      "definition": "The wearing away of rock and soil by water, wind, or ice.",
+      "use_sentence": "The constant erosion from the waves changed the shape of the coastline.",
+      "phonetic": "ih-ROH-zhun",
+      "cognate": "erosión"
+    },
+    {
+      "term": "Sediment",
+      "definition": "Small pieces of rock and soil carried by flowing water.",
+      "use_sentence": "The river dropped its sediment at the delta, creating new land.",
+      "phonetic": "SED-uh-ment",
+      "cognate": "sedimento"
+    },
+    {
+      "term": "Deposition",
+      "definition": "When flowing water slows down and drops the sediment it was carrying.",
+      "use_sentence": "Deposition occurs at the mouth of a river where the water moves much slower.",
+      "phonetic": "dep-uh-ZISH-un",
+      "cognate": "deposición"
+    },
+    {
+      "term": "Channel",
+      "definition": "The path or bed through which a river flows.",
+      "use_sentence": "The floodwaters overflowed the river's main channel and covered the fields.",
+      "phonetic": "CHAN-nl",
+      "cognate": "canal"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen described a river as a 'complex system.' What do you think she means by that? What other systems can you think of (in nature or in your school)?",
+      "frame": "I think a complex system is..."
+    },
+    {
+      "prompt": "If you were planning to build a house near a river, what would you want to know about the river's erosion and deposition patterns? Why?",
+      "frame": "If I were building near a river, I would want to know..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

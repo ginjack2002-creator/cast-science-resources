@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Shifting River",
+    "text": "Hi, I’m Dr. Sarah Chen. I am a scientist at the National Science Lab. My team and I study how big systems work. Right now, we are studying a river that is changing its path. We want to know why it is moving.<br><br>We look at the system in five steps.<br><br>1. First, we measure the water's speed. Faster water has more power.<br><br>2. Second, we look at the soil on the riverbank. Softer soil breaks apart more easily.<br><br>3. When the water breaks down the soil, it's called <strong>erosion</strong>. Faster water and softer soil cause more <strong>erosion</strong>.<br><br>4. Third, the river carries the broken bits of soil. These bits are called <strong>sediment</strong>. More <strong>erosion</strong> means the river carries more <strong>sediment</strong>.<br><br>5. Fourth, the river moves the <strong>sediment</strong> to a new place. When the water slows down, it drops the <strong>sediment</strong>. This is called <strong>deposition</strong>.<br><br>Finally, all this moving and dropping of <strong>sediment</strong> changes the river's path. The river's <strong>channel</strong> can move over time. Understanding this helps us predict where the river will go next. This keeps people and homes safe.",
+    "think_abouts": [
+      "What could happen if a river's channel moves closer to a town?",
+      "Why is it important for scientists like Dr. Chen to predict where a river might move?"
+    ],
+    "go_deeper": "How might a big flood, with very fast water, change the river's channel quickly?",
+    "margin_defs": [
+      {
+        "term": "erosion",
+        "definition": "when water wears away soil"
+      },
+      {
+        "term": "sediment",
+        "definition": "small bits of soil and rock"
+      },
+      {
+        "term": "deposition",
+        "definition": "when water drops the sediment it carries"
+      },
+      {
+        "term": "channel",
+        "definition": "the path a river flows in"
+      }
+    ],
+    "check_prompts": [
+      "What two things make more erosion happen?"
+    ],
+    "word_bank": [
+      "Erosion",
+      "Sediment",
+      "Deposition",
+      "Channel"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico/a"
+      },
+      {
+        "english": "erosion",
+        "spanish": "erosión"
+      },
+      {
+        "english": "sediment",
+        "spanish": "sedimento"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Erosion",
+      "definition": "The process of wearing away rock and soil by water, wind, or ice.",
+      "use_sentence": "Erosion from the river carved a deep canyon over many years.",
+      "phonetic": null,
+      "cognate": "erosión"
+    },
+    {
+      "term": "Sediment",
+      "definition": "Small pieces of rock, soil, and other material carried by flowing water.",
+      "use_sentence": "After the flood, a thick layer of sediment was left on the fields.",
+      "phonetic": null,
+      "cognate": "sedimento"
+    },
+    {
+      "term": "Deposition",
+      "definition": "The process where water slows down and drops the sediment it was carrying.",
+      "use_sentence": "Deposition at the mouth of the river created a new piece of land.",
+      "phonetic": null,
+      "cognate": "deposición"
+    },
+    {
+      "term": "Channel",
+      "definition": "The path or bed that a river flows through.",
+      "use_sentence": "The boat moved slowly down the river's main channel.",
+      "phonetic": null,
+      "cognate": "canal"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen studies how a river changes. What are some other big systems on Earth that scientists might study?",
+      "frame": "Besides rivers, scientists might study systems like..."
+    },
+    {
+      "prompt": "If faster water causes more erosion, what do you think happens on the outside of a river bend where water moves fastest?",
+      "frame": "On the outside of a river bend, I think..."
+    },
+    {
+      "prompt": "How could building a dam on a river change the amount of sediment that gets moved downstream?",
+      "frame": "A dam could change the sediment by..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "story": {
+    "title": "Dr. Chen's Guide to Gravity and Weight",
+    "text": "Hi, I'm Dr. Sarah Chen. At the National Science Lab, I study complex systems. I figure out how different parts work together. Let's explore the system that connects you, the Earth, and the Moon.<br><br>Have you ever wondered why you weigh less on the Moon? It's a great puzzle! The answer is all about the difference between your <strong>mass</strong> and your <strong>weight</strong>. Let's break it down in a few simple steps.<br><br>1. First, your <strong>mass</strong> is all the stuff you are made of. Your <strong>mass</strong> is the same everywhere in the universe. It does not change whether you are on Earth or the Moon.<br><br>2. Second, a planet's own mass creates a force. We call this force <strong>Gravitational Pull</strong>. The Earth has a lot more <strong>Planet Mass</strong> than the Moon does.<br><br>3. Because Earth has more mass, it has a stronger <strong>Gravitational Pull</strong>. The Moon's pull is much weaker, only about one-sixth as strong as Earth's.<br><br>4. Finally, your <strong>Object Weight</strong> is just the measurement of that gravitational pull on your mass. On the Moon, the weaker pull means you have less weight. This also affects your <strong>Jump Height</strong>. With less gravity pulling you down, you could jump much higher!",
+    "think_abouts": [
+      "What is the one thing about you that never changes, even on the Moon?",
+      "If a planet has more mass than Earth, would its gravitational pull be stronger or weaker?"
+    ],
+    "go_deeper": "If an astronaut's weight changes on the Moon, why do they still need a powerful rocket to get back to Earth?",
+    "margin_defs": [
+      {
+        "term": "system",
+        "definition": "A set of connected things that work together."
+      },
+      {
+        "term": "mass",
+        "definition": "The amount of 'stuff' in an object."
+      },
+      {
+        "term": "weight",
+        "definition": "The force of gravity pulling on an object's mass."
+      }
+    ],
+    "check_prompts": [
+      "What is the main reason you weigh less on the Moon?"
+    ],
+    "word_bank": [
+      "Mass",
+      "Weight",
+      "Gravitational Pull",
+      "Planet Mass",
+      "Jump Height"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Mass",
+        "spanish": "Masa"
+      },
+      {
+        "english": "Gravity",
+        "spanish": "Gravedad"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gravitational Pull",
+      "definition": "The invisible force that pulls objects toward each other.",
+      "use_sentence": "The Sun's gravitational pull keeps Earth in orbit.",
+      "phonetic": "grav-i-tey-shuh-nl pul",
+      "cognate": "Gravedad"
+    },
+    {
+      "term": "Mass",
+      "definition": "The amount of matter, or 'stuff,' in an object. It does not change.",
+      "use_sentence": "A bowling ball has more mass than a soccer ball.",
+      "phonetic": null,
+      "cognate": "Masa"
+    },
+    {
+      "term": "Weight",
+      "definition": "The measure of how strongly gravity pulls on an object's mass.",
+      "use_sentence": "Your weight would be less on Mars because its gravity is weaker.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "A rule that says gravity gets much weaker as you get farther away from an object.",
+      "use_sentence": "Because of the inverse square law, a satellite far from Earth feels less gravity.",
+      "phonetic": "in-vurs skwair law",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen says the Moon's gravity is about one-sixth as strong as Earth's. If you weigh 120 pounds on Earth, what would you weigh on the Moon?",
+      "frame": null
+    },
+    {
+      "prompt": "Imagine you are designing a planet for a video game. How would you change its mass to make characters jump higher than they can on Earth?",
+      "frame": "To make characters jump higher, I would make the planet's mass ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen studies systems. How is the relationship between a planet's mass, its gravity, and your weight a type of system?",
+      "frame": "This is a system because when you change one part, like ___, it causes another part, like ___, to change too."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

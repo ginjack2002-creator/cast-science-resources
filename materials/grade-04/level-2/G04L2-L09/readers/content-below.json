@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen's Race Against the Wave",
+    "text": "Hello, I’m Dr. Sarah Chen. I’m a scientist at the National Science Lab. My job is to improve our <strong>Tsunami</strong> <strong>Warning System</strong>. A tsunami is a huge ocean wave. It travels silently across the sea. Our system is like a race against the wave to save lives.<br><br>Here’s how we do it:<br>1. It starts with an earthquake under the ocean. This event creates huge <strong>Wave Energy</strong>. More energy means the wave is stronger and more dangerous.<br>2. Our special sensors on the ocean floor feel the wave’s energy. This is called <strong>detection</strong>. We need this step to be very fast. A strong wave is easier for our sensors to detect right away.<br>3. After detection, we send a warning message. If a tsunami starts far from shore, it gives us more time to get the warning out.<br>4. The warning goes to people on their phones and TVs. Faster warnings give people more time for the next step: <strong>evacuation</strong>.<br>5. An <strong>evacuation</strong> is when people move to a safe, high place. The more time people have, the better their chance of getting to safety.<br><br>My team is always looking for ways to make the system faster. We want to give people as much warning time as possible. Our work helps protect people who live near the ocean.",
+    "think_abouts": [
+      "Why is a fast warning so important for evacuation success?",
+      "What makes a tsunami wave powerful?"
+    ],
+    "go_deeper": "How could scientists and engineers make tsunami warnings even faster in the future?",
+    "margin_defs": [
+      {
+        "term": "Tsunami",
+        "definition": "a giant ocean wave"
+      },
+      {
+        "term": "Detection",
+        "definition": "finding something"
+      },
+      {
+        "term": "Evacuation",
+        "definition": "moving to a safe place"
+      }
+    ],
+    "check_prompts": [
+      "What is the first step in the warning system after an earthquake happens?"
+    ],
+    "word_bank": [
+      "Tsunami",
+      "Warning System",
+      "Detection",
+      "Evacuation",
+      "Wave Energy"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Detection",
+        "spanish": "Detección"
+      },
+      {
+        "english": "Evacuation",
+        "spanish": "Evacuación"
+      },
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tsunami",
+      "definition": "A series of giant ocean waves caused by earthquakes or other events that can flood coastal areas.",
+      "use_sentence": "After the earthquake, a <strong>tsunami</strong> wave moved toward the shore.",
+      "phonetic": "soo-NAH-mee",
+      "cognate": null
+    },
+    {
+      "term": "Wave Energy",
+      "definition": "The power carried by ocean waves. Bigger earthquakes create waves with more energy.",
+      "use_sentence": "The storm created waves with a lot of <strong>wave energy</strong>.",
+      "phonetic": null,
+      "cognate": "Energía"
+    },
+    {
+      "term": "Detection",
+      "definition": "Sensing or discovering something. Tsunami detection uses special ocean sensors.",
+      "use_sentence": "The early <strong>detection</strong> of the wave helped the scientists send a warning.",
+      "phonetic": null,
+      "cognate": "Detección"
+    },
+    {
+      "term": "Evacuation",
+      "definition": "Moving people away from a dangerous area to a safe location.",
+      "use_sentence": "The town practiced an <strong>evacuation</strong> drill to prepare for a flood.",
+      "phonetic": null,
+      "cognate": "Evacuación"
+    },
+    {
+      "term": "Warning System",
+      "definition": "A network of tools that detects a tsunami and alerts people to evacuate.",
+      "use_sentence": "The city's <strong>warning system</strong> uses loud sirens to tell people about danger.",
+      "phonetic": null,
+      "cognate": "Sistema de Alerta"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen's warning system has many parts (sensors, computers, phones). If one part of the system breaks, what might happen?",
+      "frame": "If the ocean sensors stopped working, then..."
+    },
+    {
+      "prompt": "What are other kinds of warnings that help keep people in your community safe? (Think about weather, fire, or traffic.)",
+      "frame": "In my community, we have warnings for..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

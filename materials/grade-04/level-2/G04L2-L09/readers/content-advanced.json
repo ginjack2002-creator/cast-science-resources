@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Race Against Time",
+    "text": "My name is Dr. Sarah Chen, and at the National Science Lab, I don't study the ocean itself—I study the system that saves lives from it. My computer screen shows a map of the Pacific Ocean, but it's covered in data. I'm running a simulation of a massive underwater earthquake. My job is to see how every piece of our <strong>Tsunami</strong> <strong>Warning System</strong> interacts.<br><br>In my model, a huge amount of <strong>Wave Energy</strong> explodes from the earthquake's epicenter. This is a positive for one part of the system: the immense energy creates a pressure wave that our deep-ocean sensors pick up almost instantly. The higher the energy, the faster our <strong>Detection</strong>. That's a direct positive relationship. A faster detection time kicks off a faster warning speed, giving us precious minutes.<br><br>The next variable is distance from shore. If the tsunami starts a thousand miles from the coast, that distance buys us time. The warning message can be verified and sent out, giving coastal communities hours to prepare for <strong>Evacuation</strong>. But here's the complex part—the negative relationship. That same immense <strong>Wave Energy</strong> that helped with detection now works against us. It creates monstrous waves that are incredibly destructive, making a successful <strong>Evacuation</strong> much more challenging. People need to get farther away and to higher ground. It's a race where we gain an advantage at the start but face a much more powerful opponent at the finish line.<br><br>My work is to analyze these interconnected variables. If we can improve detection time by just one minute, how does that translate to warning speed? How many more lives could be saved? By understanding how all the pieces fit together—from the earthquake's power to the speed of a text message alert—we can fine-tune our systems to give people the one thing they need most: more time.",
+    "think_abouts": [
+      "Why is a tsunami warning system considered a 'complex system'?",
+      "How can one factor, like Wave Energy, have both a positive and a negative effect on saving lives?"
+    ],
+    "go_deeper": "Besides speed, what other factors might influence the success of a community's evacuation plan?",
+    "margin_defs": [
+      {
+        "term": "simulation",
+        "definition": "A computer model of a real-world situation."
+      },
+      {
+        "term": "variables",
+        "definition": "Factors or parts of a system that can change."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what is the most important thing a warning system gives to people?"
+    ],
+    "word_bank": [
+      "Tsunami",
+      "Wave Energy",
+      "Detection",
+      "Evacuation",
+      "Warning System"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Detection",
+        "spanish": "Detección"
+      },
+      {
+        "english": "Evacuation",
+        "spanish": "Evacuación"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tsunami",
+      "definition": "A series of giant ocean waves caused by earthquakes, volcanic eruptions, or underwater landslides that can flood coastal areas.",
+      "use_sentence": "The powerful earthquake triggered a tsunami that traveled across the entire ocean.",
+      "phonetic": "su-NAH-mee",
+      "cognate": null
+    },
+    {
+      "term": "Wave Energy",
+      "definition": "The power carried by ocean waves. Bigger earthquakes create waves with more energy that travel faster and hit harder.",
+      "use_sentence": "Scientists measured the incredible wave energy to predict how destructive the tsunami would be.",
+      "phonetic": null,
+      "cognate": "Energía"
+    },
+    {
+      "term": "Detection",
+      "definition": "Sensing or discovering something. Tsunami detection uses special ocean sensors that notice changes in water pressure caused by passing waves.",
+      "use_sentence": "The early detection of the tsunami by the ocean buoys was critical for the warning system.",
+      "phonetic": null,
+      "cognate": "Detección"
+    },
+    {
+      "term": "Evacuation",
+      "definition": "Moving people away from a dangerous area to a safe location before the danger arrives.",
+      "use_sentence": "When they heard the sirens, the townspeople began their evacuation to higher ground.",
+      "phonetic": null,
+      "cognate": "Evacuación"
+    },
+    {
+      "term": "Warning System",
+      "definition": "A network of sensors, computers, and communication tools that detects a tsunami and alerts people to evacuate.",
+      "use_sentence": "The island's new warning system sends text messages and sounds alarms to alert everyone of danger.",
+      "phonetic": null,
+      "cognate": "Sistema de alerta"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen describes her work as a 'race'. What are the different parts of the system that are racing against the tsunami wave?",
+      "frame": null
+    },
+    {
+      "prompt": "If you had to improve one part of the Tsunami Warning System, would you focus on faster detection sensors or faster communication to the public? Explain your reasoning.",
+      "frame": "I would focus on improving ___ because ___."
+    },
+    {
+      "prompt": "The story mentions that a greater distance from shore provides more warning time. How might this be a disadvantage for people living on an island very close to where an earthquake occurs?",
+      "frame": "For people living close to the earthquake's origin, a short distance is a disadvantage because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Hot Car Puzzle",
+    "text": "Hello! I’m Dr. Sarah Chen, a scientist at the National Science Lab. My job is to understand how different parts work together to make something happen. It’s like being a detective for science!<br><br>Today, let’s solve a sunny day puzzle. Have you ever touched a black car sitting in the sun? Ouch! It can be burning hot. But a white car right next to it feels much cooler. Why is that?<br><br>Let’s look at the system step-by-step.<br>1. First, think about the sun. It sends powerful <strong>light energy</strong> down to Earth.<br>2. Next, this energy hits the two cars. The car’s <strong>surface color</strong> decides what happens next.<br>3. The black car’s dark surface is great at <strong>heat absorption</strong>. This means it grabs and holds onto most of the light energy that hits it. It soaks it up like a sponge.<br><br>What does a dark surface do with sunlight?<br><br>4. That stored light energy changes into <strong>thermal energy</strong>, which we feel as heat. More absorption means the surface temperature gets much higher.<br>5. Now, look at the white car. Its light surface does the opposite. It is not good at absorbing heat. Instead, it is good at <strong>reflection</strong>. Most of the light energy bounces right off!<br><br>Because the black car absorbs more energy, it gets hotter. The white car reflects more energy, so it stays cooler. Understanding this helps us build cooler cities and homes!",
+    "think_abouts": [
+      "Why is it a good idea to wear a white t-shirt on a hot, sunny day?",
+      "What other dark-colored things have you noticed get very hot in the sun?"
+    ],
+    "go_deeper": "How could engineers use this idea about color to help keep buildings cooler in the summer?",
+    "margin_defs": [
+      {
+        "term": "absorb",
+        "definition": "to take in or soak up"
+      },
+      {
+        "term": "reflect",
+        "definition": "to bounce back"
+      }
+    ],
+    "check_prompts": [
+      "What does a dark surface do with sunlight?"
+    ],
+    "word_bank": [
+      "Light Energy",
+      "Heat Absorption",
+      "Surface Color",
+      "Thermal Energy",
+      "Reflection"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "energy",
+        "spanish": "energía"
+      },
+      {
+        "english": "color",
+        "spanish": "color"
+      },
+      {
+        "english": "absorption",
+        "spanish": "absorción"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Light Energy",
+      "definition": "Energy from the sun that travels as light and can turn into heat.",
+      "use_sentence": "The sun sends light energy to the Earth every day.",
+      "phonetic": null,
+      "cognate": "energía"
+    },
+    {
+      "term": "Heat Absorption",
+      "definition": "When an object takes in light energy and turns it into heat.",
+      "use_sentence": "The black pavement has high heat absorption on a sunny day.",
+      "phonetic": null,
+      "cognate": "absorción"
+    },
+    {
+      "term": "Surface Color",
+      "definition": "How light or dark the outside of an object is.",
+      "use_sentence": "The surface color of the snow was bright white.",
+      "phonetic": null,
+      "cognate": "color"
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "Energy that we feel as heat.",
+      "use_sentence": "A cup of hot chocolate has a lot of thermal energy.",
+      "phonetic": null,
+      "cognate": "térmico"
+    },
+    {
+      "term": "Reflection",
+      "definition": "When light bounces off an object instead of being taken in.",
+      "use_sentence": "I could see the reflection of the sun on the water.",
+      "phonetic": null,
+      "cognate": "reflexión"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were designing a new playground for a very sunny park, what colors would you choose for the slide? Why?",
+      "frame": "I would choose ___ colors for the slide because ___."
+    },
+    {
+      "prompt": "Dr. Chen studies how parts of a system work together. How do sunlight and surface color work together to change the temperature of a car?",
+      "frame": "Sunlight and surface color work together when the sun's energy hits the car, and then the color ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

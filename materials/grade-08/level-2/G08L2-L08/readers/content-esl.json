@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen: Solving the Atomic Puzzle",
+    "text": "Hello, I am Dr. Sarah Chen. I study why materials act the way they do. My job is like solving a puzzle at the atomic level. Let's look at gold and iron. They are made of the same basic particles. So why are they so different? The answer is in their <strong>Atomic Number</strong>. This number tells us how many protons are in an atom. <br><br>Gold has 79 protons. Iron has only 26. The number of protons decides the <strong>Electron Configuration</strong>. This is how electrons are arranged in shells. The arrangement of the outer electrons is very important. It controls the element's <strong>Reactivity</strong>. Iron has outer electrons that react easily with oxygen. This is why iron rusts. Gold's outer electrons are very stable. Gold does not react easily. <br><br>This electron arrangement also affects <strong>Conductivity</strong>. Both gold and iron are good conductors. Their electrons can move freely. Finally, all these tiny details create the big <strong>Material Properties</strong> we see. We see gold's shine and iron's rust. My work helps us choose the right element for every job.",
+    "think_abouts": [
+      "Why is gold a good material for jewelry?",
+      "What happens to an iron nail if you leave it outside in the rain?"
+    ],
+    "go_deeper": "If a new element was discovered with a very stable electron configuration, would you expect it to be more like gold or more like iron? Why?",
+    "margin_defs": [
+      {
+        "term": "stable",
+        "definition": "not likely to change or react"
+      },
+      {
+        "term": "shells",
+        "definition": "the energy levels where electrons are found"
+      }
+    ],
+    "check_prompts": [
+      "What part of an atom determines how it will react with other elements?"
+    ],
+    "word_bank": [
+      "Atomic Number",
+      "Electron Configuration",
+      "Reactivity",
+      "Conductivity",
+      "Material Properties"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Configuration",
+        "spanish": "Configuración"
+      },
+      {
+        "english": "Reactivity",
+        "spanish": "Reactividad"
+      },
+      {
+        "english": "Properties",
+        "spanish": "Propiedades"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Atomic Number",
+      "definition": "The number of protons in an atom's center. It identifies the element.",
+      "use_sentence": "The atomic number of carbon is 6 because it has 6 protons.",
+      "phonetic": "/əˈtɑːmɪk ˈnʌmbər/",
+      "cognate": "Número Atómico"
+    },
+    {
+      "term": "Electron Configuration",
+      "definition": "The way electrons are arranged in levels or shells around an atom's center.",
+      "use_sentence": "The electron configuration helps us predict how an element will behave.",
+      "phonetic": "/ɪˈlɛktrɑn kənˌfɪɡjəˈreɪʃən/",
+      "cognate": "Configuración Electrónica"
+    },
+    {
+      "term": "Reactivity",
+      "definition": "How likely an element is to have a chemical reaction with other things.",
+      "use_sentence": "Because of its high reactivity, sodium reacts strongly with water.",
+      "phonetic": "/ˌriːækˈtɪvɪti/",
+      "cognate": "Reactividad"
+    },
+    {
+      "term": "Conductivity",
+      "definition": "The ability of a material to let electricity or heat pass through it.",
+      "use_sentence": "Copper has high conductivity, so we use it for electrical wires.",
+      "phonetic": "/ˌkɑːndʌkˈtɪvɪti/",
+      "cognate": "Conductividad"
+    },
+    {
+      "term": "Material Properties",
+      "definition": "The features you can see or measure, like color, hardness, or shininess.",
+      "use_sentence": "The material properties of diamonds make them hard and sparkly.",
+      "phonetic": "/məˈtɪriəl ˈprɑːpərtiːz/",
+      "cognate": "Propiedades Materiales"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen says her work helps us choose the right element for a job. What is a job where you would choose gold? What is a job where you would choose iron?",
+      "frame": "For the job of ___, I would choose gold because ___. For the job of ___, I would choose iron because ___."
+    },
+    {
+      "prompt": "Why is it important for scientists like Dr. Chen to understand how even tiny particles like electrons affect the world we see?",
+      "frame": "It is important for scientists to understand tiny particles because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

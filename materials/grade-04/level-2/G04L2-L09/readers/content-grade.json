@@ -1,0 +1,108 @@
+{
+  "story": {
+    "title": "Dr. Chen's Race Against the Tsunami",
+    "text": "Hi, I’m Dr. Sarah Chen, and I work at the National Science Lab. My job is like being a coach for a very important race—a race against a tsunami. A <strong>tsunami</strong> is a series of giant ocean waves, usually caused by a huge earthquake far out at sea. When that earthquake happens, the race begins.<br><br>My team designs and improves the <strong>warning system</strong>, which is a network of tools that alerts people to danger. It's a complex system with many moving parts. First, we need fast <strong>detection</strong> (sensing or discovering something). Special sensors on the ocean floor feel the pressure change from the tsunami waves passing over them. The more <strong>wave energy</strong> (the power carried by the waves) the tsunami has, the easier it is for our sensors to detect it quickly.<br><br>Distance is also a key factor. If the tsunami starts far from shore, we have more time. That extra time helps our warning get out faster. Faster detection leads directly to faster warnings. And the faster the warning, the more time people have for <strong>evacuation</strong>, which means moving away from danger to a safe place. This is our goal: to give people as much time as possible to get to higher ground.<br><br>But it's a tough race. A tsunami with very high <strong>wave energy</strong> is more destructive. Even with a good warning, it can be harder for people to escape. That’s why my work is so important. We are always looking for ways to make our detection faster and our warnings clearer. Every second we can save might save a life.",
+    "think_abouts": [
+      "Why does a tsunami starting farther from shore give people more time to evacuate?",
+      "How could a faster warning system help save more lives during a powerful tsunami?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Tsunami",
+        "definition": "a series of giant ocean waves"
+      },
+      {
+        "term": "Warning System",
+        "definition": "a network of tools that alerts people to danger"
+      },
+      {
+        "term": "Detection",
+        "definition": "sensing or discovering something"
+      },
+      {
+        "term": "Wave Energy",
+        "definition": "the power carried by the waves"
+      },
+      {
+        "term": "Evacuation",
+        "definition": "moving away from danger to a safe place"
+      }
+    ],
+    "check_prompts": [
+      "What is the first step in a tsunami warning system after an earthquake happens?"
+    ],
+    "word_bank": [
+      "tsunami",
+      "detection",
+      "evacuation",
+      "sensors"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "detection",
+        "spanish": "detección"
+      },
+      {
+        "english": "evacuation",
+        "spanish": "evacuación"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tsunami",
+      "definition": "A series of giant ocean waves caused by earthquakes, volcanic eruptions, or underwater landslides that can flood coastal areas.",
+      "use_sentence": "The powerful earthquake created a dangerous tsunami that raced across the ocean.",
+      "phonetic": "soo-NAH-mee",
+      "cognate": null
+    },
+    {
+      "term": "Wave Energy",
+      "definition": "The power carried by ocean waves. Bigger earthquakes create waves with more energy that travel faster and hit harder.",
+      "use_sentence": "The high wave energy of the tsunami could be felt by sensors hundreds of miles away.",
+      "phonetic": null,
+      "cognate": "energía"
+    },
+    {
+      "term": "Detection",
+      "definition": "Sensing or discovering something. Tsunami detection uses special ocean sensors that notice changes in water pressure caused by passing waves.",
+      "use_sentence": "The early detection of the wave by the sensors gave us time to warn people.",
+      "phonetic": "dih-TEK-shun",
+      "cognate": "detección"
+    },
+    {
+      "term": "Evacuation",
+      "definition": "Moving people away from a dangerous area to a safe location before the danger arrives.",
+      "use_sentence": "When the sirens sounded, the city began the evacuation to move everyone to higher ground.",
+      "phonetic": "ee-vak-yoo-AY-shun",
+      "cognate": "evacuación"
+    },
+    {
+      "term": "Warning System",
+      "definition": "A network of sensors, computers, and communication tools that detects a tsunami and alerts people to evacuate.",
+      "use_sentence": "Our town's warning system uses loud sirens and phone alerts to tell people about a coming tsunami.",
+      "phonetic": null,
+      "cognate": "sistema"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen described the warning system as a race against the wave. What are two things that could make the 'warning team' win the race?",
+      "frame": "Two things that help the warning system win are ___ and ___."
+    },
+    {
+      "prompt": "If you were designing a new tsunami warning system for a coastal town, what would be the most important part to get right: the ocean sensors, the warning sirens, or the evacuation routes? Explain your choice.",
+      "frame": "I think the most important part would be ___ because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

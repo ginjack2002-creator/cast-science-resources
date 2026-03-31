@@ -1,0 +1,90 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Dynamic River System",
+    "text": "At the National Science Lab, my team and I don't just look at rivers on a map; we treat them as complex, ever-changing systems. I’m Dr. Sarah Chen, and I specialize in creating computational models that simulate how Earth's environments evolve over time. One of the most fascinating questions we explore is whether a river can fundamentally change its own direction. The answer is not only yes, but it happens constantly, driven by a powerful chain of interactions.<br><br>My models begin with key external variables. Two of the most critical are <strong>Water Flow Speed</strong> and <strong>Soil Softness</strong>. Imagine a river after a heavy storm; its flow speed increases dramatically. In my model, this immediately triggers a positive relationship with the <strong>Erosion Rate</strong>. The sheer force of the faster water scours the riverbed and banks, dislodging particles of soil and rock. If those banks are composed of soft, loose material, the erosion is amplified significantly, demonstrating how these external factors work together.<br><br>This accelerated erosion generates a higher volume of <strong>sediment</strong>—the sand, silt, and gravel that gives river water its murky appearance. The river then becomes a powerful conveyor belt in a process called <strong>Sediment Transport</strong>. A swift current can hold a large amount of sediment in suspension, carrying it far downstream. However, a river's energy is not constant. As it widens or reaches a flatter landscape, its velocity decreases, and it can no longer support its heavy load. This is when <strong>deposition</strong> occurs, as the sediment settles out of the water and builds up on the riverbed or banks.<br><br>This is the crucial step that leads to <strong>Channel Shape Change</strong>. Continuous deposition can create sandbars that redirect the flow, while relentless erosion on an outer bend can cause a meander to become more exaggerated. Over decades or centuries, these small, cumulative changes can lead to a dramatic shift in the river's entire course. By modeling these intricate relationships, we can better predict how rivers will respond to climate change and land use, helping us manage our world's most vital water resources.",
+    "think_abouts": [
+      "Why is it important for scientists to model systems with a computer instead of just observing them in nature?",
+      "How might a dam built on a river affect the processes of sediment transport and deposition downstream?"
+    ],
+    "go_deeper": "Human activities like farming and construction can increase soil erosion near rivers. How would this influx of extra sediment affect the entire river system, from its channel shape to the ecosystems that depend on it?",
+    "margin_defs": [
+      {
+        "term": "computational models",
+        "definition": "computer programs that copy real-world processes"
+      },
+      {
+        "term": "variables",
+        "definition": "factors that can be changed in an experiment or model"
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what happens to sediment when a river's flow speed decreases?"
+    ],
+    "word_bank": [
+      "Erosion",
+      "Sediment",
+      "Deposition",
+      "Channel",
+      "System"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "transport",
+        "spanish": "transporte"
+      },
+      {
+        "english": "process",
+        "spanish": "proceso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Erosion",
+      "definition": "The process of wearing away rock and soil by forces such as water, wind, or ice.",
+      "use_sentence": "The constant erosion by the powerful river carved a deep canyon over millions of years.",
+      "phonetic": "/ɪˈroʊʒən/",
+      "cognate": "erosión"
+    },
+    {
+      "term": "Sediment",
+      "definition": "Small, solid pieces of material from rocks or living things that are carried by water or wind.",
+      "use_sentence": "After the flood, a thick layer of fine sediment covered the fields next to the river.",
+      "phonetic": "/ˈsɛdəmənt/",
+      "cognate": "sedimento"
+    },
+    {
+      "term": "Deposition",
+      "definition": "The process in which sediment is laid down in new locations after being carried by water or wind.",
+      "use_sentence": "The deposition of sand at the river's mouth created a delta that extended into the sea.",
+      "phonetic": "/ˌdɛpəˈzɪʃən/",
+      "cognate": "deposición"
+    },
+    {
+      "term": "Channel",
+      "definition": "The path or bed that a river, stream, or other waterway follows.",
+      "use_sentence": "The engineers worked to clear the fallen trees from the main river channel to prevent flooding.",
+      "phonetic": "/ˈtʃænəl/",
+      "cognate": "canal"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen mentioned her work helps predict how rivers respond to climate change. What specific climate effects (like more intense storms or longer droughts) would have the biggest impact on a river's channel shape, and why?",
+      "frame": "I think that ___ would have the biggest impact because ___."
+    },
+    {
+      "prompt": "If you were a scientist like Dr. Chen, what is another complex Earth system you would want to model on a computer? What key variables would you need to include in your model?",
+      "frame": "I would want to model the system of ___ and my key variables would be ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

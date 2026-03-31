@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Elemental Code",
+    "text": "Hi, I’m Dr. Sarah Chen. At the National Science Lab, I model complex systems. That’s a fancy way of saying I figure out how tiny, invisible parts work together to create the world we see. A great example is the puzzle of gold and iron.<br><br>Why does a gold ring stay shiny forever, while an iron nail turns to rust? They’re both elements, made of the same protons, neutrons, and electrons. The secret isn't *what* they're made of, but *how their parts are arranged*. It all starts with the <strong>Atomic Number</strong>, which is the number of protons in an atom. Iron’s is 26, and gold’s is 79. This number sets an element’s identity.<br><br>Because atoms are neutral, the atomic number also tells us how many electrons an element has. This is where it gets interesting. These electrons fill energy levels, or shells, around the nucleus. The specific pattern they form is the <strong>Electron Configuration</strong>. With 79 electrons, gold has a very different, more complex arrangement than iron with its 26 electrons.<br><br>This configuration is the key to everything. Iron’s electron setup makes it easy to lose a few electrons, which causes high <strong>Reactivity</strong> (how readily it reacts with other things, like oxygen, to form rust). Gold’s configuration is incredibly stable; it holds onto its electrons tightly, making it one of the least reactive elements. This same structure, with its 'sea' of movable electrons, also explains its excellent <strong>Conductivity</strong> (its ability to transmit electricity).<br><br>Ultimately, these atomic-level rules create the <strong>Material Properties</strong> we can see and touch—like gold’s lasting luster and iron’s tendency to corrode. My job is to understand these rules so well that we can predict the properties of materials we haven't even made yet.",
+    "think_abouts": [
+      "Why would a scientist want to predict the properties of a new material before spending time and money to create it?",
+      "Both gold and copper are excellent conductors used in electronics. What might this suggest about their electron configurations?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "nucleus",
+        "definition": "The dense center of an atom containing protons and neutrons."
+      },
+      {
+        "term": "corrode",
+        "definition": "To break down or be destroyed gradually by a chemical reaction."
+      }
+    ],
+    "check_prompts": [
+      "What is the main factor that determines an element's reactivity and conductivity?"
+    ],
+    "word_bank": [
+      "Atomic Number",
+      "Electron Configuration",
+      "Reactivity",
+      "Conductivity",
+      "Material Properties"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "element",
+        "spanish": "elemento"
+      },
+      {
+        "english": "material",
+        "spanish": "material"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Atomic Number",
+      "definition": "The number of protons in an atom's nucleus, which defines the element and its place on the periodic table.",
+      "use_sentence": "Every element on the periodic table is defined by its unique atomic number.",
+      "phonetic": "/əˈtɑmɪk ˈnʌmbər/",
+      "cognate": "número atómico"
+    },
+    {
+      "term": "Electron Configuration",
+      "definition": "The arrangement of electrons in energy levels (shells) around the nucleus, which determines how an element bonds.",
+      "use_sentence": "The electron configuration of noble gases makes them very stable and unreactive.",
+      "phonetic": "/ɪˈlɛktrɑn kənˌfɪɡjəˈreɪʃən/",
+      "cognate": "configuración electrónica"
+    },
+    {
+      "term": "Reactivity",
+      "definition": "How readily an element undergoes chemical reactions—determined by how easily it gains, loses, or shares electrons.",
+      "use_sentence": "Because of its high reactivity, sodium must be stored in oil to keep it from reacting with air.",
+      "phonetic": "/ˌriækˈtɪvɪti/",
+      "cognate": "reactividad"
+    },
+    {
+      "term": "Conductivity",
+      "definition": "The ability of a material to transmit electrical current or heat, related to how freely electrons move.",
+      "use_sentence": "Copper is used for electrical wires because of its high conductivity.",
+      "phonetic": "/ˌkɑndəkˈtɪvɪti/",
+      "cognate": "conductividad"
+    },
+    {
+      "term": "Material Properties",
+      "definition": "Observable characteristics of a substance—such as color, hardness, melting point, and luster—that result from its atomic structure.",
+      "use_sentence": "When designing a new phone, engineers must consider the material properties of the glass, metal, and plastic used.",
+      "phonetic": "/məˈtɪriəl ˈprɑpərtiz/",
+      "cognate": "propiedades materiales"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen explains that electron configuration is the key that unlocks an element’s properties. If you could design a new element for a specific job (like a super-strong building material), what kind of electron configuration would you want it to have and why?",
+      "frame": "To create a new element for ___, I would want its electron configuration to be ___ because ___."
+    },
+    {
+      "prompt": "The story contrasts a reactive element (iron) with an unreactive one (gold). What are some everyday situations where you would want to use a highly reactive element? When would an unreactive element be better?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

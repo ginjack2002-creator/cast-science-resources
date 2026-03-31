@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen's Groundwater Puzzle",
+    "text": "Hi, I’m Dr. Sarah Chen. I’m a scientist, and I study big, complex systems. My job is like being a detective for the planet. Right now, I’m investigating a major mystery: Why is our groundwater disappearing? Groundwater is fresh water stored deep underground in places called aquifers. Let's look at the clues together.<br><br>1. First, we see huge amounts of water being pumped out. This is mostly for <strong>agricultural irrigation</strong> to grow our food. When more water is pumped out than flows in, the <strong>aquifer level</strong> drops.<br><br>2. Second, we measure the <strong>rainfall recharge</strong>. This is when rain soaks into the ground to refill the aquifer. But in many places, we are using water much faster than rain can replace it.<br><br>3. Third, a lower aquifer level leads to a dangerous problem: <strong>land subsidence</strong>. When the water is gone, the empty spaces underground collapse. The ground above it actually sinks down. This can damage buildings and roads.<br><br>4. Finally, this sinking permanently damages the aquifer. The ground gets compacted and can’t hold as much water anymore. This threatens our <strong>long-term water security</strong>.<br><br>My work is to connect all these pieces. Understanding this system helps us find better ways to manage our water for the future.",
+    "think_abouts": [
+      "Why is it a problem if the ground sinks?",
+      "What could happen if a town runs out of groundwater?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "aquifers",
+        "definition": "Underground layers of rock that hold water."
+      },
+      {
+        "term": "compacted",
+        "definition": "Pressed or squeezed together tightly."
+      }
+    ],
+    "check_prompts": [
+      "What is the main reason the aquifer level is dropping?"
+    ],
+    "word_bank": [
+      "Agricultural Irrigation",
+      "Rainfall Recharge",
+      "Aquifer Level",
+      "Land Subsidence",
+      "Long-term Water Security"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "problem",
+        "spanish": "problema"
+      },
+      {
+        "english": "future",
+        "spanish": "futuro"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Agricultural Irrigation",
+      "definition": "Using groundwater to water crops. This is the biggest use of groundwater in the world.",
+      "use_sentence": "Farmers use agricultural irrigation to make sure their crops get enough water to grow.",
+      "phonetic": null,
+      "cognate": "irrigación agrícola"
+    },
+    {
+      "term": "Rainfall Recharge",
+      "definition": "The natural process of rain soaking through the ground to refill an aquifer.",
+      "use_sentence": "After a week of storms, the rainfall recharge helped raise the water level in the aquifer.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Aquifer Level",
+      "definition": "The height of the water stored underground. It drops when water is used faster than it is replaced.",
+      "use_sentence": "Scientists checked the well and saw that the aquifer level was getting dangerously low.",
+      "phonetic": null,
+      "cognate": "nivel del acuífero"
+    },
+    {
+      "term": "Land Subsidence",
+      "definition": "The sinking of the ground surface when too much water has been removed from underneath.",
+      "use_sentence": "Because of land subsidence, cracks started to appear in the walls of the buildings.",
+      "phonetic": "land sub-SY-dense",
+      "cognate": null
+    },
+    {
+      "term": "Long-term Water Security",
+      "definition": "Having a safe and stable supply of water for a community for many years into the future.",
+      "use_sentence": "Saving water now is important for our long-term water security.",
+      "phonetic": null,
+      "cognate": "seguridad hídrica"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen says using groundwater is like a bank account. What does she mean by that?",
+      "frame": "She means that rainfall is like a deposit and pumping water is like a withdrawal. If you..."
+    },
+    {
+      "prompt": "If you were a city planner in an area with land subsidence, what would be your biggest concern? Why?",
+      "frame": "My biggest concern would be ___ because ___."
+    },
+    {
+      "prompt": "What is one small change your community could make to help protect its long-term water security?",
+      "frame": "One change our community could make is ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Sunlight Puzzle",
+    "text": "Hi, I'm Dr. Sarah Chen. I am a Research Scientist at the National Science Lab. My job is to understand complex systems. An ecosystem, like a forest, is a perfect example of a system where everything is connected.<br><br>I often think about a big question: If sunlight is everywhere, why can't all plants grow tall? Let's break down this puzzle. Imagine we have two young plants, Plant A and Plant B, growing close together.<br><br>1. To start, there is plenty of sunlight and soil nutrients. These are the main <strong>resources</strong> both plants need to grow. Both Plant A and Plant B begin to get bigger.<br><br>2. Let's say Plant A has a small advantage. Maybe it started growing one day earlier. It gets a little taller and its roots spread a little wider. It starts using more of the shared resources.<br><br>3. As Plant A grows, it creates a shadow. This shadow falls on Plant B, blocking its sunlight. This is a huge problem for Plant B. We call this fight for resources <strong>interspecific competition</strong>.<br><br>4. The sunlight has now become a <strong>limiting factor</strong>. It limits how much Plant B can grow. At the same time, both plants are using up the soil nutrients. Soon, there isn't enough for either plant to grow as fast as it could.<br><br>5. Because Plant A got a head start, it will likely continue to get more light and grow taller. The other plant may not survive. This competition explains why a forest has tall trees and smaller plants living in their shade. My research helps us predict which living things will succeed in a system.",
+    "think_abouts": [
+      "What would happen if both plants were the exact same type and grew at the same speed?",
+      "How is this competition like two people trying to share one small drink?"
+    ],
+    "go_deeper": "What are some ways smaller plants have adapted to survive in the shade of taller trees?",
+    "margin_defs": [
+      {
+        "term": "System",
+        "definition": "A set of connected things that work together."
+      },
+      {
+        "term": "Resources",
+        "definition": "Things needed for life, like light, water, and food."
+      }
+    ],
+    "check_prompts": [
+      "Why does Plant B get less sunlight as Plant A grows?"
+    ],
+    "word_bank": [
+      "system",
+      "resources",
+      "competition",
+      "sunlight",
+      "nutrients"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "competition",
+        "spanish": "competición"
+      },
+      {
+        "english": "resource",
+        "spanish": "recurso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Interspecific Competition",
+      "definition": "When two different kinds of plants or animals fight for the same thing, like food or light.",
+      "use_sentence": "The lion and the hyena were in interspecific competition for the same zebra.",
+      "phonetic": "in-ter-spuh-SI-fik kom-pi-TI-shun",
+      "cognate": "competición interespecífica"
+    },
+    {
+      "term": "Resource Partitioning",
+      "definition": "When different animals or plants share by using a resource in a different way or at a different time.",
+      "use_sentence": "By hunting at night, the owl used resource partitioning to avoid competing with hawks.",
+      "phonetic": "REE-sors par-TI-shuh-ning",
+      "cognate": "partición de recursos"
+    },
+    {
+      "term": "Competitive Exclusion",
+      "definition": "The idea that two species can't share the exact same resource forever; one will eventually win.",
+      "use_sentence": "Because of competitive exclusion, only one type of barnacle could survive on the top part of the rock.",
+      "phonetic": "kum-PEH-tuh-tiv ek-SKLOO-zhun",
+      "cognate": "exclusión competitiva"
+    },
+    {
+      "term": "Limiting Factor",
+      "definition": "The one resource that is most scarce and stops a population from growing bigger.",
+      "use_sentence": "Lack of water was the limiting factor for the plants in the desert.",
+      "phonetic": "LI-muh-ting FAK-ter",
+      "cognate": "factor limitante"
+    },
+    {
+      "term": "Carrying Capacity",
+      "definition": "The total number of a certain plant or animal that an environment can support.",
+      "use_sentence": "The island reached its carrying capacity for rabbits, and there wasn't enough food for more.",
+      "phonetic": "KARE-ee-ing kuh-PA-si-tee",
+      "cognate": "capacidad de carga"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about the school cafeteria. What is a 'limiting factor' that decides how many students can eat at one time?",
+      "frame": "A limiting factor in the cafeteria could be ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen explained how Plant A outcompetes Plant B for light. What is another resource that two animals might compete for in a forest?",
+      "frame": "Two animals in a forest might compete for ___."
+    },
+    {
+      "prompt": "If you were a scientist helping Plant B, what is one thing you could do to help it get more resources and survive?",
+      "frame": "To help Plant B survive, I would ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

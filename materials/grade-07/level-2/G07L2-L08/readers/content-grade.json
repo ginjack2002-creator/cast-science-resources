@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Gravity System",
+    "text": "Hi, I’m Dr. Sarah Chen. At the National Science Lab, I study complex systems. Think of a system like a puzzle where all the pieces affect each other. One of the biggest systems I model is gravity!<br><br>People often get confused about why astronauts can leap so high on the Moon. The answer is in the difference between <strong>mass</strong> (the amount of matter or 'stuff' you are made of) and <strong>weight</strong> (the force of gravity pulling on your mass). Your mass never changes, but your weight can!<br><br>The key factor is Planet Mass. Earth is much more massive than the Moon, so it has a much stronger <strong>gravitational pull</strong>—that’s the attractive force it exerts. This stronger pull results in a greater Object Weight for everything on its surface. Since the Moon has less mass, its gravitational pull is weaker. That’s why you would weigh only about one-sixth as much there.<br><br>This system has other effects, too. A weaker gravitational pull means a lower Object Weight, which allows for a much higher Jump Height. It’s all connected! We even see how distance matters. The farther you get from a planet’s center, the weaker its pull becomes. This is part of a principle called the <strong>inverse square law</strong>. Understanding this entire system is crucial for planning space missions and exploring our universe.",
+    "think_abouts": [
+      "Why does your mass stay the same on the Moon, but your weight changes?",
+      "If a new planet was discovered that was twice as massive as Earth, what would you predict about its gravitational pull and your weight there?"
+    ],
+    "go_deeper": "How do scientists use their understanding of gravitational pull to keep satellites in orbit around Earth?",
+    "margin_defs": [
+      {
+        "term": "mass",
+        "definition": "the 'stuff' an object is made of"
+      },
+      {
+        "term": "weight",
+        "definition": "the pull of gravity on an object's mass"
+      }
+    ],
+    "check_prompts": [
+      "What is the main factor that makes Earth's gravitational pull stronger than the Moon's?"
+    ],
+    "word_bank": [
+      "Gravitational Pull",
+      "Mass",
+      "Weight",
+      "Planet Mass"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "gravity",
+        "spanish": "gravedad"
+      },
+      {
+        "english": "planet",
+        "spanish": "planeta"
+      },
+      {
+        "english": "distance",
+        "spanish": "distancia"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Gravitational Pull",
+      "definition": "The attractive force between two objects that depends on their masses and the distance between them.",
+      "use_sentence": "The Moon's weaker gravitational pull allows astronauts to jump very high.",
+      "phonetic": "grav-i-tey-shuhn-l pul",
+      "cognate": "gravedad"
+    },
+    {
+      "term": "Mass",
+      "definition": "The amount of matter in an object, which stays the same regardless of location.",
+      "use_sentence": "Your body's mass does not change, whether you are on Earth or Mars.",
+      "phonetic": "mas",
+      "cognate": "masa"
+    },
+    {
+      "term": "Weight",
+      "definition": "The force of gravity acting on an object's mass, which changes depending on the gravitational pull of the planet or moon.",
+      "use_sentence": "An astronaut's weight is much less on the Moon than on Earth.",
+      "phonetic": "weyt",
+      "cognate": null
+    },
+    {
+      "term": "Inverse Square Law",
+      "definition": "The principle that gravitational force decreases rapidly as the distance between two objects increases.",
+      "use_sentence": "According to the inverse square law, a satellite twice as far from Earth feels only one-fourth the gravity.",
+      "phonetic": "in-vurs skwair law",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen described gravity as a system with interconnected parts. What are two parts of this system, and how does a change in one affect the other?",
+      "frame": "A change in a planet's ___ causes a change in ___ because..."
+    },
+    {
+      "prompt": "Imagine you are designing a mission to a new planet. Why would it be critical to know the planet's mass before sending astronauts?",
+      "frame": "It would be critical to know the planet's mass so that we could predict..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

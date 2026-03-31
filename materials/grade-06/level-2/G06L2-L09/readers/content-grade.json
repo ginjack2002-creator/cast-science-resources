@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen's Digital Forest: A Race for Sunlight",
+    "text": "Hi, I’m Dr. Sarah Chen, and at the National Science Lab, I build computer models of complex systems, like forests. Instead of waiting years to see trees grow, I can simulate it in hours! This helps us understand the big patterns of nature.<br><br>Let’s run a model. Imagine two young trees, Plant A and Plant B, in a sunny spot with rich soil. At first, both have plenty of sunlight and nutrients. We see positive relationships here: more resources lead to more growth for both plants. But resources are finite. As both plants grow taller, they start to compete. This is called <strong>interspecific competition</strong>, which is a struggle between different species for the same limited resource.<br><br>In our model, Plant A has a slight advantage—it grows just a little faster. As it gets taller, its leaves create shade, reducing the sunlight available to the shorter Plant B. Sunlight becomes a <strong>limiting factor</strong>, a resource that is in shortest supply and restricts growth. Plant A’s roots also spread, absorbing more water and soil nutrients. This resource depletion creates a negative feedback loop. The less sunlight and nutrients available, the slower both plants grow. But Plant B is affected more because it's in the shade.<br><br>Eventually, Plant A grows tall and healthy, while Plant B struggles to survive. This outcome, where one species outcompetes another for the same resources, is known as <strong>competitive exclusion</strong>. My model shows that even with plenty of sunlight hitting a forest, the competition for that light at ground level determines who wins the race to the top.",
+    "think_abouts": [
+      "What do you think would happen if Plant B was a species that needed much less sunlight to grow?",
+      "Besides sunlight and nutrients, what other limiting factors might plants compete for in a real forest?"
+    ],
+    "go_deeper": "How might the concept of carrying capacity apply to the total number of trees a small patch of forest can support?",
+    "margin_defs": [
+      {
+        "term": "interspecific competition",
+        "definition": "A struggle between different species for the same resource."
+      },
+      {
+        "term": "limiting factor",
+        "definition": "A resource in short supply that restricts growth."
+      },
+      {
+        "term": "competitive exclusion",
+        "definition": "When one species outcompetes another, causing it to die out."
+      }
+    ],
+    "check_prompts": [
+      "What is the main reason Plant B's growth slows down more than Plant A's in the model?"
+    ],
+    "word_bank": [
+      "Interspecific Competition",
+      "Resource Partitioning",
+      "Competitive Exclusion",
+      "Limiting Factor",
+      "Carrying Capacity"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Competition",
+        "spanish": "Competición"
+      },
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Resource",
+        "spanish": "Recurso"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Interspecific Competition",
+      "definition": "The struggle between organisms of two different species for the same limited resource, such as sunlight, water, or food.",
+      "use_sentence": "In the forest, interspecific competition between oak trees and maple trees for sunlight is intense.",
+      "phonetic": "in-ter-spuh-SI-fik kom-pi-TI-shun",
+      "cognate": "Competición interespecífica"
+    },
+    {
+      "term": "Resource Partitioning",
+      "definition": "The process where competing species use resources in slightly different ways or at different times to avoid direct competition.",
+      "use_sentence": "An example of resource partitioning is when one bird species feeds on insects on the high branches while another feeds on insects on the lower trunk.",
+      "phonetic": null,
+      "cognate": "Partición de recursos"
+    },
+    {
+      "term": "Competitive Exclusion",
+      "definition": "A principle stating that two species competing for the exact same limited resource cannot coexist permanently; one will eventually outcompete and eliminate the other.",
+      "use_sentence": "The invasive vine led to the competitive exclusion of the native flowers by blocking all their sunlight.",
+      "phonetic": null,
+      "cognate": "Exclusión competitiva"
+    },
+    {
+      "term": "Limiting Factor",
+      "definition": "An environmental factor, such as the availability of food or water, that is in the shortest supply and restricts a population's size.",
+      "use_sentence": "In the desert, the main limiting factor for most plants is the lack of water.",
+      "phonetic": null,
+      "cognate": "Factor limitante"
+    },
+    {
+      "term": "Carrying Capacity",
+      "definition": "The largest population size that an environment can sustainably support over a long period of time.",
+      "use_sentence": "The pond reached its carrying capacity for frogs, so the population stopped growing.",
+      "phonetic": null,
+      "cognate": "Capacidad de carga"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen uses a computer model. What are the advantages of studying competition in a model instead of a real forest? What might be some disadvantages?",
+      "frame": null
+    },
+    {
+      "prompt": "If you were designing a community garden, how could you use the idea of resource partitioning to help more plants grow successfully in a small space?",
+      "frame": "To help more plants grow, I would plan the garden so that..."
+    },
+    {
+      "prompt": "How does the 'race to the top' for sunlight in a forest connect to the idea of natural selection and evolution?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

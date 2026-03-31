@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen's Guide to Wind Chill",
+    "text": "Hello! I’m Dr. Sarah Chen. I'm a scientist who studies how different parts of a system work together. Let's solve a puzzle: why does wind make a cold day feel colder?<br><br>Your body is always making heat. This heat warms up a tiny layer of air right next to your skin. Think of it as a warm, invisible bubble. This is your <strong>thermal boundary layer</strong>. It helps keep you insulated and warm.<br><br>But what happens on a windy day?<br>1. Fast-moving air, or wind, blows your warm bubble away.<br>2. Colder air from the environment immediately touches your skin.<br>3. Your body loses heat very quickly as it tries to warm up this new cold air. This is called <strong>convective heat loss</strong>.<br><br>The stronger the wind, the faster this happens. Your <strong>skin temperature</strong> starts to drop. Your brain gets a signal that you are losing heat fast. This feeling is your <strong>perceived cold</strong>. We call this effect <strong>wind chill</strong>. The thermometer might say it's 40 degrees, but the wind makes it feel like it's 30!",
+    "think_abouts": [
+      "What is the 'warm bubble' of air around your skin called?",
+      "How does wind make you lose heat faster?"
+    ],
+    "go_deeper": "Why doesn't a fan make the air in a room colder, even though it makes you feel cooler?",
+    "margin_defs": [
+      {
+        "term": "System",
+        "definition": "A group of parts that work together."
+      },
+      {
+        "term": "Insulated",
+        "definition": "Protected from losing heat."
+      },
+      {
+        "term": "Perceived",
+        "definition": "How something feels or seems."
+      }
+    ],
+    "check_prompts": [
+      "In your own words, what does wind do to the warm air around your skin?"
+    ],
+    "word_bank": [
+      "Convection",
+      "Wind Chill",
+      "Thermal Boundary Layer",
+      "Skin Temperature",
+      "Perceived Cold"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Temperature",
+        "spanish": "Temperatura"
+      },
+      {
+        "english": "Convection",
+        "spanish": "Convección"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Convection",
+      "definition": "The way heat moves when a gas or liquid moves.",
+      "use_sentence": "A fan uses convection to move warm air away from you.",
+      "phonetic": "kuhn-VEK-shuhn",
+      "cognate": "Convección"
+    },
+    {
+      "term": "Wind Chill",
+      "definition": "A measure of how cold it feels when you combine air temperature and wind speed.",
+      "use_sentence": "The wind chill made it feel 10 degrees colder than the actual temperature.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Thermal Boundary Layer",
+      "definition": "The thin layer of warm air right next to your skin that helps keep you warm.",
+      "use_sentence": "Your jacket helps protect your thermal boundary layer from the wind.",
+      "phonetic": "THUR-muhl BOWN-dree LAY-ur",
+      "cognate": null
+    },
+    {
+      "term": "Convective Heat Loss",
+      "definition": "Losing body heat because moving air carries it away.",
+      "use_sentence": "You feel cold on a windy day because of convective heat loss.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Perceived Temperature",
+      "definition": "The temperature that your body feels, which can be different from the real temperature.",
+      "use_sentence": "Because of the wind, the perceived temperature was much lower.",
+      "phonetic": null,
+      "cognate": "Temperatura"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "How does wearing a winter coat help stop convective heat loss?",
+      "frame": "A winter coat helps stop heat loss because it..."
+    },
+    {
+      "prompt": "Dr. Chen studies systems. How do your body, the air, and the wind all work together as a system to make you feel cold?",
+      "frame": "These parts work together as a system because the wind affects..."
+    },
+    {
+      "prompt": "Besides wind, what is another factor that might change your perceived temperature on a cold day (Hint: think about a rainy day)?",
+      "frame": "Besides wind, I think being wet might make you feel colder because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "story": {
+    "title": "Dr. Chen's Race Against the Tsunami",
+    "text": "Hello, I am Dr. Sarah Chen. I work at the National Science Lab. My job is to make our Tsunami <strong>Warning System</strong> faster and smarter. We want to save lives.<br><br>A giant earthquake can happen far out at sea. This creates a powerful <strong>tsunami</strong>. The waves have huge amounts of <strong>Wave Energy</strong>. They race toward land. We have to race even faster.<br><br>Our system starts with sensors deep in the ocean. They feel the tsunami pass over them. This is the moment of <strong>detection</strong>. Faster <strong>detection</strong> gives us more time. The sensors send a signal to a buoy on the surface. The buoy sends the signal to a satellite.<br><br>The satellite sends the warning to my lab in seconds. We use computers to confirm the danger. Then, we send alerts to phones, TVs, and sirens. This tells people it is time for <strong>evacuation</strong>. They must move to higher ground immediately. Every second counts. A faster warning means more people can reach safety before the waves arrive. My work helps connect all these pieces to work perfectly together.",
+    "think_abouts": [
+      "Why is fast detection so important for the warning system?",
+      "What are the steps in the warning system after a tsunami is detected?"
+    ],
+    "go_deeper": "How would the warning system change if a tsunami started very close to shore instead of far away?",
+    "margin_defs": [
+      {
+        "term": "sensors",
+        "definition": "tools that feel or measure things"
+      },
+      {
+        "term": "alerts",
+        "definition": "warning messages"
+      }
+    ],
+    "check_prompts": [
+      "What is the final step for people on shore when they get a warning?"
+    ],
+    "word_bank": [
+      "Tsunami",
+      "Warning System",
+      "Wave Energy",
+      "Detection",
+      "Evacuation",
+      "Sensors"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "detection",
+        "spanish": "detección"
+      },
+      {
+        "english": "evacuation",
+        "spanish": "evacuación"
+      },
+      {
+        "english": "ocean",
+        "spanish": "océano"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Tsunami",
+      "definition": "A series of giant ocean waves caused by earthquakes or underwater landslides that can flood coastal areas.",
+      "use_sentence": "After the earthquake, people worried a tsunami would hit the coast.",
+      "phonetic": "tsoo-NAH-mee",
+      "cognate": "tsunami"
+    },
+    {
+      "term": "Wave Energy",
+      "definition": "The power carried by ocean waves. Bigger earthquakes create waves with more energy.",
+      "use_sentence": "The wave energy was so strong it knocked down buildings.",
+      "phonetic": "WAYV EN-er-jee",
+      "cognate": "energía"
+    },
+    {
+      "term": "Detection",
+      "definition": "Sensing or discovering something. Special sensors are used for tsunami detection.",
+      "use_sentence": "The early detection of the storm helped people prepare.",
+      "phonetic": "dee-TEK-shun",
+      "cognate": "detección"
+    },
+    {
+      "term": "Evacuation",
+      "definition": "Moving people away from a dangerous area to a safe location.",
+      "use_sentence": "The town practiced its tsunami evacuation plan.",
+      "phonetic": "ee-vak-yoo-AY-shun",
+      "cognate": "evacuación"
+    },
+    {
+      "term": "Warning System",
+      "definition": "A network of tools that detects a danger and alerts people to get to safety.",
+      "use_sentence": "The warning system used sirens to tell everyone to leave the beach.",
+      "phonetic": "WORN-ing SIS-tum",
+      "cognate": "sistema"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "The story says more Wave Energy makes a tsunami easier to detect. Why do you think that is?",
+      "frame": "I think more energy makes it easier to detect because ___."
+    },
+    {
+      "prompt": "What could cause the Warning Speed to be slow, even if the detection was fast?",
+      "frame": "The warning might be slow if ___."
+    },
+    {
+      "prompt": "How does the Distance from Shore help give people more time for a successful evacuation?",
+      "frame": "If a tsunami starts farther away, people have more time because ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

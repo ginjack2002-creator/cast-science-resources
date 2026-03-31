@@ -1,0 +1,93 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Rare Earth Metals System",
+    "text": "At the National Science Lab, my job is to see the world as a giant, interconnected system. I build computer models that reveal how one change can ripple through an entire network, and right now, my focus is on the global supply of <strong>Rare Earth Metals</strong>. These elements are the lifeblood of modern technology, but our access to them is a complex puzzle with many moving parts.<br><br>My model visualizes this puzzle. We start with two primary inputs that determine our 'Available Supply': the <strong>Mining Rate</strong> and the <strong>Recycling Rate</strong>. When either of these increases, the supply pool grows, which seems straightforward. However, the system immediately reacts. An abundant 'Available Supply' typically causes the 'Market Price' to drop, a classic example of supply and demand. But when that supply tightens, prices can skyrocket, creating economic shockwaves.<br><br>This is where a fascinating feedback loop emerges. A consistently high 'Market Price' creates a powerful <strong>Substitution Incentive</strong>. Suddenly, it becomes economically viable for companies to invest millions in developing alternative materials that can perform the same functions without relying on expensive rare earths. This incentive can, over time, reduce demand and stabilize the system.<br><br>The most critical insight from my model, however, involves time. While a high <strong>Mining Rate</strong> boosts our 'Available Supply' in the short term, it has a delayed negative consequence. Over decades, relentless extraction depletes the most accessible geological deposits. This forces us to mine lower-quality ore, which is more expensive and environmentally damaging, ultimately causing the long-term 'Available Supply' to shrink. My work isn't about predicting a doomsday date; it's about understanding these forces so we can make smarter, more sustainable choices for the future.",
+    "think_abouts": [
+      "What is the relationship between 'Available Supply' and 'Market Price'?",
+      "Why does a high mining rate have both a short-term positive effect and a long-term negative effect on the available supply?"
+    ],
+    "go_deeper": "Besides price, what other factors might create a 'Substitution Incentive' for companies to move away from using rare earth metals, such as environmental regulations or consumer pressure?",
+    "margin_defs": [
+      {
+        "term": "viable",
+        "definition": "capable of working successfully"
+      },
+      {
+        "term": "extraction",
+        "definition": "the action of taking something out"
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what are the two main actions that increase the 'Available Supply' of rare earth metals?"
+    ],
+    "word_bank": [
+      "Rare Earth Metals",
+      "Mining Rate",
+      "Recycling Rate",
+      "Substitution Incentive"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      },
+      {
+        "english": "economic",
+        "spanish": "económico"
+      },
+      {
+        "english": "alternative",
+        "spanish": "alternativa"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Rare Earth Metals",
+      "definition": "A group of 17 metallic elements essential for modern technology including smartphones, wind turbines, electric vehicles, and military equipment.",
+      "use_sentence": "The powerful magnets in electric car motors rely on several different Rare Earth Metals.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Mining Rate",
+      "definition": "The speed at which raw materials are extracted from the Earth, often measured in tons per year.",
+      "use_sentence": "To meet the growing demand for electronics, the global Mining Rate for rare earths has increased dramatically.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Recycling Rate",
+      "definition": "The percentage of used materials that are recovered and reprocessed for new use instead of being discarded.",
+      "use_sentence": "Even though millions of phones are discarded, the Recycling Rate for the rare earth metals inside them is unfortunately very low.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Substitution Incentive",
+      "definition": "The economic motivation to find alternative materials when the original material becomes too expensive or scarce.",
+      "use_sentence": "When the cost of cobalt soared, it created a strong Substitution Incentive for battery makers to develop new chemistries.",
+      "phonetic": null,
+      "cognate": "incentivo"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen's model shows that a high market price can be a good thing because it encourages finding alternatives. Do you agree or disagree? Explain your reasoning.",
+      "frame": "I believe a high market price can be a positive force because..."
+    },
+    {
+      "prompt": "If you were advising a government on how to manage its supply of rare earth metals for the next 50 years, which part of Dr. Chen's system would you focus on changing first: Mining Rate, Recycling Rate, or Substitution Incentive? Why?",
+      "frame": null
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

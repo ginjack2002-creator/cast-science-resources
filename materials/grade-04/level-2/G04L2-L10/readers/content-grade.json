@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Case of the Crumbly Bike",
+    "text": "Hi, I’m Dr. Sarah Chen. At the National Science Lab, I study how different parts of a system work together. You might not think of it this way, but your bike rusting is a perfect example of a system!<br><br>So, why does your strong metal bike get weak and crumbly if you leave it in the rain? It’s because of a <strong>chemical change</strong>, a process that creates a whole new substance. In this case, the new substance is <strong>rust</strong>. This specific type of change is called <strong>oxidation</strong>, which happens when oxygen combines with another substance. For your iron bike frame, this reaction starts when it gets wet. Water from rain and oxygen from the air work together to attack the metal.<br><br>Think of it like a chain reaction. More water exposure and higher oxygen levels speed up the oxidation rate. A faster rate means more <strong>rust</strong> forms more quickly. This whole process of metal being slowly destroyed is called <strong>corrosion</strong>. As layers of flaky, reddish-brown rust replace the strong iron, the metal’s strength goes down. Eventually, it can get so weak it breaks.<br><br>My job is to understand this system so we can stop it. That’s where a <strong>protective coating</strong> comes in! The paint on your bike isn’t just for looks; it’s a shield that blocks water and oxygen. By studying how rust forms on small things like bikes, we learn how to protect giant things like bridges and ships, keeping them safe for everyone for years to come.",
+    "think_abouts": [
+      "Where else have you seen rust? Think about objects inside and outside your home.",
+      "What do you think would happen if a small chip of paint came off your bike frame?"
+    ],
+    "go_deeper": "Some metals, like aluminum, don't rust in the same way iron does. Why do you think engineers use different metals to build different things, like airplanes versus bridges?",
+    "margin_defs": [
+      {
+        "term": "Oxidation",
+        "definition": "A reaction where oxygen combines with something else."
+      },
+      {
+        "term": "Chemical Change",
+        "definition": "A change that creates an entirely new substance."
+      }
+    ],
+    "check_prompts": [
+      "What two main things does iron need to react with in order to rust?"
+    ],
+    "word_bank": [
+      "Oxidation",
+      "Rust",
+      "Chemical Change",
+      "Corrosion",
+      "Protective Coating"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Oxidation",
+        "spanish": "Oxidación"
+      },
+      {
+        "english": "Corrosion",
+        "spanish": "Corrosión"
+      },
+      {
+        "english": "Protective",
+        "spanish": "Protector"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Oxidation",
+      "definition": "A chemical reaction where oxygen combines with another substance. When oxygen combines with iron, it creates iron oxide, which we call rust.",
+      "use_sentence": "The process of oxidation turned the shiny new nail into a dull, rusty one.",
+      "phonetic": "ok-si-DAY-shun",
+      "cognate": "Oxidación"
+    },
+    {
+      "term": "Rust",
+      "definition": "The reddish-brown, flaky substance that forms when iron or steel reacts with water and oxygen. Its scientific name is iron oxide.",
+      "use_sentence": "We had to clean the rust off the old garden tools before we could use them.",
+      "phonetic": null,
+      "cognate": "Óxido"
+    },
+    {
+      "term": "Chemical Change",
+      "definition": "A change that creates an entirely new substance with different properties. Rusting is a chemical change because you cannot easily turn rust back into metal.",
+      "use_sentence": "Baking a cake is a chemical change because you can't turn the cake back into flour, eggs, and sugar.",
+      "phonetic": "KEM-ih-kull chaynj",
+      "cognate": "Cambio Químico"
+    },
+    {
+      "term": "Corrosion",
+      "definition": "The gradual destruction of metal caused by chemical reactions with its environment, especially water and oxygen.",
+      "use_sentence": "Engineers work to prevent corrosion on giant metal ships that spend all their time in salty water.",
+      "phonetic": "kuh-ROH-zhun",
+      "cognate": "Corrosión"
+    },
+    {
+      "term": "Protective Coating",
+      "definition": "A layer applied to metal surfaces—like paint, oil, or plastic—that blocks water and oxygen from reaching the metal.",
+      "use_sentence": "The colorful paint on the playground slide is a protective coating that keeps it from rusting.",
+      "phonetic": null,
+      "cognate": "Capa Protectora"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "How could you design an experiment to test which type of protective coating works best to stop rust?",
+      "frame": "To test which coating is best, I would get several metal nails and then I would..."
+    },
+    {
+      "prompt": "Dr. Chen studies rust to protect big structures like bridges. Why is it so important to prevent a huge bridge from rusting?",
+      "frame": "It is important to prevent a bridge from rusting because..."
+    },
+    {
+      "prompt": "Besides paint, what other kinds of protective coatings have you seen on metal objects around your home or school?",
+      "frame": "Another protective coating I have seen is..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

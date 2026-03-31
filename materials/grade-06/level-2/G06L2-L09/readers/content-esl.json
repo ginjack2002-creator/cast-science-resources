@@ -1,0 +1,110 @@
+{
+  "story": {
+    "title": "Dr. Chen's Model of Competition",
+    "text": "Hello, I am Dr. Sarah Chen. I am a research scientist. I build computer models to study ecosystems. My models show how complex systems work.<br><br>Look at my forest model on the screen. We have two plants, Plant A and Plant B. They both need sunlight and soil nutrients to live. These are their shared <strong>resources</strong>. At first, there are plenty of resources for both.<br><br>More sunlight helps Plant A grow. More nutrients also help it grow. This is a positive relationship. The same is true for Plant B. Both plants grow well.<br><br>But soon, they are in <strong>competition</strong>. Plant A grows a little faster. It gets taller and its leaves make a shadow. This shadow covers Plant B. Now, Plant B gets less sunlight. Plant A's roots also take more nutrients from the soil. This leaves fewer nutrients for Plant B.<br><br>Sunlight is now a <strong>limiting factor</strong> for Plant B. My model predicts that Plant A will grow strong. Plant B will struggle to survive. This is called <strong>competitive exclusion</strong>. We use these models to understand why some species succeed and others do not.",
+    "think_abouts": [
+      "What resource does Plant A take from Plant B by growing taller?",
+      "Why is it called 'competition' if the plants don't physically fight?"
+    ],
+    "go_deeper": "How could two different plant species avoid competitive exclusion and share the same space?",
+    "margin_defs": [
+      {
+        "term": "model",
+        "definition": "a simple version of something complex"
+      },
+      {
+        "term": "resources",
+        "definition": "things needed to live, like light and food"
+      },
+      {
+        "term": "predicts",
+        "definition": "says what will happen in the future"
+      }
+    ],
+    "check_prompts": [
+      "What is one limiting factor for Plant B in the story?"
+    ],
+    "word_bank": [
+      "competition",
+      "resources",
+      "limiting factor",
+      "model",
+      "sunlight",
+      "nutrients"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "competition",
+        "spanish": "competición"
+      },
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "scientist",
+        "spanish": "científico"
+      },
+      {
+        "english": "model",
+        "spanish": "modelo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Interspecific Competition",
+      "definition": "When two different types of living things fight for the same limited resource.",
+      "use_sentence": "The lion and the hyena show interspecific competition when they hunt the same animal.",
+      "phonetic": "in-ter-spuh-SI-fik kom-puh-TI-shun",
+      "cognate": "competición interespecífica"
+    },
+    {
+      "term": "Resource Partitioning",
+      "definition": "When different species share resources by using them in different ways or at different times.",
+      "use_sentence": "Some birds eat insects from the top of a tree, while others eat from the bottom; this is resource partitioning.",
+      "phonetic": "REE-sors par-TI-shuh-ning",
+      "cognate": "partición de recursos"
+    },
+    {
+      "term": "Competitive Exclusion",
+      "definition": "A rule that says two species cannot use the exact same resource in the same place forever; one will win.",
+      "use_sentence": "Because of competitive exclusion, the gray squirrels replaced the red squirrels in the park.",
+      "phonetic": "kum-PEH-tuh-tiv ek-SKLOO-zhun",
+      "cognate": "exclusión competitiva"
+    },
+    {
+      "term": "Limiting Factor",
+      "definition": "The one resource that is most scarce and stops a population from growing bigger.",
+      "use_sentence": "In the desert, water is the main limiting factor for most plants.",
+      "phonetic": "LI-muh-ting FAK-ter",
+      "cognate": "factor limitante"
+    },
+    {
+      "term": "Carrying Capacity",
+      "definition": "The largest number of individuals that an environment can support for a long time.",
+      "use_sentence": "The pond's carrying capacity for fish is about 100 before they run out of food.",
+      "phonetic": "KARE-ee-ing kuh-PA-suh-tee",
+      "cognate": "capacidad de carga"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about a park or forest near you. What resources do you think the plants there compete for?",
+      "frame": "In a park near me, I think plants compete for ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen's model showed Plant A winning. What could happen to the ecosystem if Plant A takes over and Plant B disappears?",
+      "frame": "If Plant B disappears, the ecosystem might change because ___."
+    },
+    {
+      "prompt": "Besides plants, what other living things in an ecosystem compete for resources? Give an example.",
+      "frame": "In an ecosystem, ___ and ___ might compete for ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

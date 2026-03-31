@@ -1,0 +1,97 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Rare Earth Puzzle",
+    "text": "My name is Dr. Sarah Chen, and at the National Science Lab, I build complex computer models to understand big problems. I don't look through a microscope; I look at systems to see how one change can ripple through the entire network.<br><br>Right now, my team is focused on <strong>Rare Earth Metals</strong>—the group of 17 metallic elements that are the hidden ingredients in your phone, electric cars, and even giant wind turbines. To answer the question, 'Can we run out?', my model tracks several key factors.<br><br>First is the <strong>Mining Rate</strong>, which is the speed at which we dig these metals from the ground. A higher mining rate increases our available supply for now. We also track the <strong>Recycling Rate</strong>, which is the percentage of metals we recover from old electronics. Better recycling also adds to the available supply. When the supply is high, prices tend to be lower. But if supply shrinks, prices can skyrocket.<br><br>This is where it gets interesting. A very high price creates a strong <strong>Substitution Incentive</strong>. That’s the economic motivation for companies to invent new, cheaper materials to do the same job. But there’s a long-term catch: a high mining rate today could exhaust the easily accessible deposits, making future mining much harder and more expensive.<br><br>My job is to see how all these pieces—supply, price, recycling, and innovation—interact over time. It’s a puzzle of balancing what we need today with ensuring we have what we need for tomorrow. Understanding the whole system helps us make smarter choices.",
+    "think_abouts": [
+      "What are some everyday items you use that might contain rare earth metals?",
+      "Why would a company want to find a substitute for a rare earth metal?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "Rare Earth Metals",
+        "definition": "Special metals needed for modern electronics."
+      },
+      {
+        "term": "Mining Rate",
+        "definition": "How fast we dig materials out of the ground."
+      },
+      {
+        "term": "Recycling Rate",
+        "definition": "The percentage of used products we reuse."
+      },
+      {
+        "term": "Substitution Incentive",
+        "definition": "The motivation to find a replacement for something expensive."
+      }
+    ],
+    "check_prompts": [
+      "What two actions can increase the available supply of rare earth metals?"
+    ],
+    "word_bank": [
+      "supply",
+      "demand",
+      "incentive",
+      "system"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "system",
+        "spanish": "sistema"
+      },
+      {
+        "english": "material",
+        "spanish": "material"
+      },
+      {
+        "english": "incentive",
+        "spanish": "incentivo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Rare Earth Metals",
+      "definition": "A group of 17 metallic elements essential for modern technology including smartphones, wind turbines, electric vehicles, and military equipment.",
+      "use_sentence": "The powerful magnets in an electric car motor are made with rare earth metals.",
+      "phonetic": null,
+      "cognate": "metales de tierras raras"
+    },
+    {
+      "term": "Mining Rate",
+      "definition": "The speed at which raw materials are extracted from the Earth, measured in tons per year.",
+      "use_sentence": "The country increased its mining rate to meet the global demand for lithium.",
+      "phonetic": null,
+      "cognate": "tasa de minería"
+    },
+    {
+      "term": "Recycling Rate",
+      "definition": "The percentage of used materials that are recovered and reprocessed for new use instead of being discarded.",
+      "use_sentence": "Improving the recycling rate for old phones could recover tons of valuable metals.",
+      "phonetic": null,
+      "cognate": "tasa de reciclaje"
+    },
+    {
+      "term": "Substitution Incentive",
+      "definition": "The economic motivation to find alternative materials when the original material becomes too expensive or scarce.",
+      "use_sentence": "Because cobalt became so expensive, there was a strong substitution incentive for battery makers to find a new material.",
+      "phonetic": null,
+      "cognate": "incentivo de sustitución"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen's model shows that a high price can be a good thing because it creates a 'substitution incentive.' How could something negative (a high price) lead to a positive outcome (a new invention)?",
+      "frame": "I think a high price could lead to a new invention because..."
+    },
+    {
+      "prompt": "The story mentions a trade-off: mining more now might mean less is available later. What are some other trade-offs you have to make in your own life (e.g., doing homework now vs. playing a game)?",
+      "frame": "A trade-off I have to make is when I..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Case of the Connected Metals",
+    "text": "My name is Dr. Sarah Chen. I am a scientist, and I study complex systems. I look at how different parts work together, like pieces of a puzzle. Right now, I am studying <strong>Rare Earth Metals</strong>. These special metals are in your phone, computer, and electric cars.<br><br>Will we run out of them? To find the answer, I look at how the system works. Let's break it down.<br><br>1. First, we look at the supply. The <strong>Mining Rate</strong> adds new metals from the ground. The <strong>Recycling Rate</strong> also adds metals back from old electronics. Both of these things increase the available supply for everyone.<br><br>2. Next, we look at the price. When the supply of a metal is high, its price is low. But when the supply is low, the metal becomes rare and its price goes up.<br><br>3. Then, we see how companies react to high prices. A high price creates a <strong>Substitution Incentive</strong>. This is a reason for companies to find new, cheaper materials to use instead. This helps save the rare metals we have left.<br><br>My job is to understand how all these pieces connect. This helps us make smart choices for our technology and our planet's future.",
+    "think_abouts": [
+      "What happens to the price of a metal when there is a lot of it?",
+      "Why would a company want to use a different material if rare earth metals get too expensive?"
+    ],
+    "go_deeper": null,
+    "margin_defs": [
+      {
+        "term": "System",
+        "definition": "A set of connected parts that work together."
+      },
+      {
+        "term": "Supply",
+        "definition": "The amount of something that is available to use."
+      }
+    ],
+    "check_prompts": [
+      "What are two ways to increase the supply of rare earth metals?"
+    ],
+    "word_bank": [
+      "Rare Earth Metals",
+      "Supply",
+      "Price",
+      "Recycling Rate",
+      "System"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "System",
+        "spanish": "Sistema"
+      },
+      {
+        "english": "Metal",
+        "spanish": "Metal"
+      },
+      {
+        "english": "Material",
+        "spanish": "Material"
+      },
+      {
+        "english": "Future",
+        "spanish": "Futuro"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Rare Earth Metals",
+      "definition": "A special group of 17 metals needed for technology like phones and computers.",
+      "use_sentence": "My new phone works because it has tiny amounts of Rare Earth Metals inside.",
+      "phonetic": null,
+      "cognate": "Metales Raros"
+    },
+    {
+      "term": "Mining Rate",
+      "definition": "How fast we dig materials like metals out of the ground.",
+      "use_sentence": "The high Mining Rate for these metals could cause problems later.",
+      "phonetic": null,
+      "cognate": "Tasa de Minería"
+    },
+    {
+      "term": "Recycling Rate",
+      "definition": "The percentage of old products we collect to reuse their materials.",
+      "use_sentence": "Our city has a good Recycling Rate for plastic bottles.",
+      "phonetic": null,
+      "cognate": "Tasa de Reciclaje"
+    },
+    {
+      "term": "Substitution Incentive",
+      "definition": "A reason, usually related to cost, to find a replacement for a material.",
+      "use_sentence": "When the price went up, there was a Substitution Incentive to use a different material.",
+      "phonetic": null,
+      "cognate": "Incentivo de Sustitución"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were in charge of a big electronics company, would you spend more money on recycling old phones or on finding new places to mine? Explain your choice.",
+      "frame": "If I were in charge, I would choose to spend more money on ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen says high prices create a 'substitution incentive.' What is one new material you think scientists could invent to replace rare earth metals in phones?",
+      "frame": "I think scientists could invent a material that is ___ to replace rare earth metals."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

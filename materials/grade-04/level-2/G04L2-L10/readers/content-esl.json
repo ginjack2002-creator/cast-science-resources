@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen Protects Our World from Rust",
+    "text": "Hello, I am Dr. Sarah Chen. I am a research scientist. My job is to fight <strong>corrosion</strong>.<br><br>Think about your bike. It is made of strong metal. But what happens if you leave it in the rain? It gets a reddish-brown powder. We call this powder <strong>rust</strong>.<br><br>Rust is a <strong>chemical change</strong>. It happens when three things meet: iron, water, and oxygen. Water and oxygen are everywhere. When they touch the iron on your bike, a reaction starts. We call this reaction <strong>oxidation</strong>.<br><br>More water makes the reaction faster. More oxygen also makes it faster. A faster reaction makes more rust. The rust eats away at the strong metal. This makes the metal weak.<br><br>At my lab, we study this system. We want to stop rust from forming. We test new kinds of <strong>protective coating</strong>, like special paints. These coatings block water and oxygen. They keep our bridges and buildings safe and strong. Protecting metal helps everyone.",
+    "think_abouts": [
+      "What three things are needed for rust to form?",
+      "How does a protective coating stop rust?"
+    ],
+    "go_deeper": "Besides bikes, what other metal things have you seen with rust on them?",
+    "margin_defs": [
+      {
+        "term": "corrosion",
+        "definition": "when metal is slowly destroyed"
+      },
+      {
+        "term": "oxidation",
+        "definition": "a reaction with oxygen"
+      },
+      {
+        "term": "chemical change",
+        "definition": "making a new substance"
+      }
+    ],
+    "check_prompts": [
+      "What does rust do to the strength of metal?"
+    ],
+    "word_bank": [
+      "rust",
+      "oxidation",
+      "corrosion",
+      "chemical change",
+      "protective coating"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "oxidation",
+        "spanish": "oxidación"
+      },
+      {
+        "english": "corrosion",
+        "spanish": "corrosión"
+      },
+      {
+        "english": "reaction",
+        "spanish": "reacción"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Oxidation",
+      "definition": "A chemical reaction where oxygen combines with another substance. When oxygen combines with iron, it creates iron oxide, which we call rust.",
+      "use_sentence": "The process of oxidation turned the shiny nail into a rusty one.",
+      "phonetic": "ok-si-DAY-shun",
+      "cognate": "oxidación"
+    },
+    {
+      "term": "Rust",
+      "definition": "The reddish-brown, flaky substance that forms when iron or steel reacts with water and oxygen. Its scientific name is iron oxide.",
+      "use_sentence": "We had to scrape the rust off the old gate before we could paint it.",
+      "phonetic": "ruhst",
+      "cognate": null
+    },
+    {
+      "term": "Chemical Change",
+      "definition": "A change that creates an entirely new substance with different properties. Rusting turns strong, shiny metal into weak, crumbly rust — you cannot 'un-rust' it.",
+      "use_sentence": "Baking a cake is a chemical change because you can't turn it back into flour and eggs.",
+      "phonetic": "KEM-ih-kuhl chaynj",
+      "cognate": "cambio químico"
+    },
+    {
+      "term": "Corrosion",
+      "definition": "The gradual destruction of metal caused by chemical reactions with its environment, especially water and oxygen.",
+      "use_sentence": "Corrosion weakened the metal chain over many years.",
+      "phonetic": "kuh-ROH-zhun",
+      "cognate": "corrosión"
+    },
+    {
+      "term": "Protective Coating",
+      "definition": "A layer applied to metal surfaces — like paint, oil, or chrome plating — that blocks water and oxygen from reaching the metal.",
+      "use_sentence": "The paint on a car is a protective coating that prevents rust.",
+      "phonetic": "pro-TEK-tiv KOH-ting",
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen says her job is to fight corrosion. Why is this job important for our communities?",
+      "frame": "Fighting corrosion is important because ___."
+    },
+    {
+      "prompt": "Imagine you are an engineer designing a new metal playground. What steps would you take to make sure it does not rust?",
+      "frame": "To protect the playground from rust, I would ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

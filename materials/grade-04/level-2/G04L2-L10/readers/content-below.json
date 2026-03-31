@@ -1,0 +1,101 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Case of the Rusty Bike",
+    "text": "Hi, I'm Dr. Sarah Chen. I'm a scientist at the National Science Lab. My job is to study how different parts of a system work together. Let's look at the system that makes your bike rust.<br><br><strong>Rust</strong> is a type of <strong>corrosion</strong>. It happens because of a <strong>chemical change</strong>. Think of it like a recipe with three ingredients. You need: 1. Iron, which is in the metal of your bike. 2. Water, from rain or wet air. 3. Oxygen, which is all around us in the air.<br><br>When water and oxygen touch the iron, a reaction starts. We call this <strong>oxidation</strong>. More water means the reaction goes faster. The <strong>oxidation</strong> creates a new, weak material. We call this material <strong>rust</strong>.<br><br>As more <strong>rust</strong> forms, it replaces the strong metal. This makes the bike's frame weaker and weaker. It could even break! To stop this, we can block one of the ingredients. A <strong>protective coating</strong>, like paint, keeps water and oxygen away from the metal. No water, no rust! My job is to find the best ways to protect the metal things we use every day.",
+    "think_abouts": [
+      "What are the three things needed to make rust?",
+      "How does paint help stop a bike from rusting?"
+    ],
+    "go_deeper": "Besides bikes, what other metal things have you seen with rust on them?",
+    "margin_defs": [
+      {
+        "term": "Chemical Change",
+        "definition": "A change that makes a new substance, like when metal turns into rust."
+      },
+      {
+        "term": "Rust",
+        "definition": "The reddish-brown stuff that forms on metal when it gets wet."
+      }
+    ],
+    "check_prompts": [
+      "What two things mix with metal to start the process of rust?"
+    ],
+    "word_bank": [
+      "Oxidation",
+      "Rust",
+      "Chemical Change",
+      "Corrosion",
+      "Protective Coating"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Oxidation",
+        "spanish": "Oxidación"
+      },
+      {
+        "english": "Corrosion",
+        "spanish": "Corrosión"
+      },
+      {
+        "english": "Protective",
+        "spanish": "Protectivo"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Oxidation",
+      "definition": "A chemical reaction where oxygen joins with something else, like when oxygen and iron make rust.",
+      "use_sentence": "Oxidation is the reason a cut apple turns brown when left in the air.",
+      "phonetic": "ok-si-DAY-shun",
+      "cognate": "Oxidación"
+    },
+    {
+      "term": "Rust",
+      "definition": "The reddish-brown, flaky stuff that forms on iron when it reacts with water and oxygen.",
+      "use_sentence": "The old shovel left in the garden was covered in rust.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Chemical Change",
+      "definition": "A change that creates a completely new thing. You can't easily change it back.",
+      "use_sentence": "Burning wood is a chemical change because it turns the wood into ash.",
+      "phonetic": null,
+      "cognate": null
+    },
+    {
+      "term": "Corrosion",
+      "definition": "The process of metal being slowly destroyed by a chemical reaction with things like water and air.",
+      "use_sentence": "Over many years, corrosion weakened the old metal gate.",
+      "phonetic": "kuh-ROH-zhun",
+      "cognate": "Corrosión"
+    },
+    {
+      "term": "Protective Coating",
+      "definition": "A layer, like paint, that is put on metal to keep water and air from touching it.",
+      "use_sentence": "The paint on the bridge is a protective coating to stop it from rusting.",
+      "phonetic": null,
+      "cognate": null
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen helps protect big things like bridges and ships from rust. Why is it so important to stop a big bridge from getting rusty?",
+      "frame": "It is important to stop a bridge from rusting because ___."
+    },
+    {
+      "prompt": "Imagine you are an engineer. What is a new idea you have for a protective coating to stop rust?",
+      "frame": "My idea for a new protective coating is ___."
+    },
+    {
+      "prompt": "If you wanted to do an experiment to see what makes rust form fastest, what would you do?",
+      "frame": "To test how rust forms, I would get three metal nails. Then I would ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Speedy Solution",
+    "text": "Hello, I’m Dr. Sarah Chen. I’m a research scientist. My job is to solve puzzles about how things mix together. We call this process <strong>dissolving</strong>. I study how to make it happen faster or slower.<br><br>Think about making a sports drink from a powder. All the tiny pieces that make up the water and the powder are called <strong>particles</strong>. For the powder to dissolve, water <strong>particles</strong> must bump into the powder <strong>particles</strong>. We need to help them bump into each other more often.<br><br>Here’s how we can speed things up:<br>1. We can use warmer water. Warm water makes the water <strong>particles</strong> move much faster. They zip around and crash into the powder more often. This helps the powder break apart and dissolve quickly.<br><br>2. We can stir the water. Stirring moves everything around. It brings fresh water <strong>particles</strong> over to the powder. This also makes more bumps happen. More bumps mean faster <strong>dissolving</strong>.<br><br>When the powder dissolves, it creates a <strong>solution</strong>. The more powder that dissolves, the stronger the drink. We call this its <strong>concentration</strong>. My work helps create new medicines and foods by controlling how fast things mix.",
+    "think_abouts": [
+      "What are two things Dr. Chen says can make a powder dissolve faster?",
+      "Why is it important for a scientist to know how to control dissolving speed?"
+    ],
+    "go_deeper": "If you wanted to dissolve something very slowly, what are two things you could do?",
+    "margin_defs": [
+      {
+        "term": "dissolving",
+        "definition": "When a solid breaks apart and mixes into a liquid."
+      },
+      {
+        "term": "particles",
+        "definition": "The tiny bits that make up all things."
+      },
+      {
+        "term": "solution",
+        "definition": "A mixture where a solid is fully mixed in a liquid."
+      },
+      {
+        "term": "concentration",
+        "definition": "How much solid is mixed in the liquid."
+      }
+    ],
+    "check_prompts": [
+      "What does Dr. Chen study?",
+      "What must happen for a powder to dissolve?",
+      "How does stirring help things dissolve?",
+      "What does a higher concentration mean for a sports drink?"
+    ],
+    "word_bank": [
+      "dissolving",
+      "particles",
+      "solution",
+      "concentration"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "solution",
+        "spanish": "solución"
+      },
+      {
+        "english": "concentration",
+        "spanish": "concentración"
+      },
+      {
+        "english": "particles",
+        "spanish": "partículas"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Dissolving",
+      "definition": "The process of a solid breaking apart and mixing evenly into a liquid.",
+      "use_sentence": "I watched the sugar cube start dissolving in my hot tea.",
+      "phonetic": "dih-ZOLV-ing",
+      "cognate": null
+    },
+    {
+      "term": "Solution",
+      "definition": "A mixture where one substance is completely dissolved in another.",
+      "use_sentence": "Lemonade is a solution of sugar, lemon juice, and water.",
+      "phonetic": "suh-LOO-shun",
+      "cognate": "solución"
+    },
+    {
+      "term": "Concentration",
+      "definition": "How much dissolved substance is in a given amount of liquid.",
+      "use_sentence": "The concentration of salt in the ocean is very high.",
+      "phonetic": "kon-sen-TRAY-shun",
+      "cognate": "concentración"
+    },
+    {
+      "term": "Particles",
+      "definition": "The tiny pieces that make up all matter, too small to see.",
+      "use_sentence": "Everything is made of moving particles.",
+      "phonetic": "PAR-tih-kuls",
+      "cognate": "partículas"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Dr. Chen mentioned her work helps create new medicines. Why would dissolving speed be important for a medicine you swallow?",
+      "frame": "Dissolving speed could be important for medicine because..."
+    },
+    {
+      "prompt": "Describe the steps you would take to make salt dissolve in water as fast as possible, using what you learned from Dr. Chen.",
+      "frame": "To make salt dissolve fast, first I would use ___ water. Then, I would ___."
+    },
+    {
+      "prompt": "What do you think happens to the particles when a sugar cube dissolves in water? Where do they go?",
+      "frame": "I think the sugar particles..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

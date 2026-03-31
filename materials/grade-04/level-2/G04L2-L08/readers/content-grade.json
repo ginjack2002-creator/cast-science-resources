@@ -1,0 +1,105 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Secret of the Sunny Parking Lot",
+    "text": "Hi, I’m Dr. Sarah Chen, and I’m a research scientist. At the National Science Lab, my team and I study complex systems. We look at how different parts work together to create a bigger result. One mystery we can solve is something you see every day: why does a black car get so much hotter than a white car in a sunny parking lot?<br><br>It all starts with the sun, which sends out powerful <strong>Light Energy</strong>. This energy travels in waves and carries heat. When this light hits a car, two things can happen. It can bounce off, which is called <strong>reflection</strong>. Or, it can be soaked up by the surface. This soaking up is called <strong>Heat Absorption</strong>. Imagine the car’s surface is a sponge for energy.<br><br>The car's <strong>Surface Color</strong> is the most important clue. A white surface is highly reflective. It bounces most of the light energy away, so it doesn’t heat up as much. But a black surface is the opposite. It absorbs almost all of the light energy that strikes it. All that absorbed energy doesn’t just disappear—it changes into <strong>Thermal Energy</strong>, which is what we feel as heat. The more energy a surface absorbs, the higher its temperature climbs.<br><br>So, the black car feels burning hot because it has absorbed much more energy, while the white car stays cooler because it reflected it. My work involves using this simple idea to solve big problems. We help engineers design cooler cities by choosing lighter colors for roofs and roads, which helps everyone stay more comfortable on hot days.",
+    "think_abouts": [
+      "Why do you think road pavement (asphalt) is usually black? How does this affect how hot the road gets?",
+      "If you wanted to keep a pet's outdoor house cool in the summer, what color would you paint it? Why?"
+    ],
+    "go_deeper": "How could city planners use this knowledge about color to design buildings and parks that help reduce a city's overall temperature?",
+    "margin_defs": [
+      {
+        "term": "Absorb",
+        "definition": "To take in or soak up."
+      },
+      {
+        "term": "Reflect",
+        "definition": "To bounce back."
+      }
+    ],
+    "check_prompts": [
+      "A black surface gets hotter than a white surface because it ___ more light energy."
+    ],
+    "word_bank": [
+      "Light Energy",
+      "Heat Absorption",
+      "Surface Color",
+      "Thermal Energy",
+      "Reflection"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Energy",
+        "spanish": "Energía"
+      },
+      {
+        "english": "Color",
+        "spanish": "Color"
+      },
+      {
+        "english": "Temperature",
+        "spanish": "Temperatura"
+      },
+      {
+        "english": "Reflection",
+        "spanish": "Reflexión"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Light Energy",
+      "definition": "Energy from a source like the sun that travels as light waves and can be converted to heat.",
+      "use_sentence": "The solar panels on the roof collect light energy from the sun to make electricity.",
+      "phonetic": null,
+      "cognate": "Energía lumínica"
+    },
+    {
+      "term": "Heat Absorption",
+      "definition": "The process of a surface taking in light energy and changing it into heat.",
+      "use_sentence": "The black pavement's heat absorption made the street feel much hotter than the grass.",
+      "phonetic": null,
+      "cognate": "Absorción de calor"
+    },
+    {
+      "term": "Surface Color",
+      "definition": "How dark or light an object appears, which determines how much energy it absorbs or reflects.",
+      "use_sentence": "The surface color of your t-shirt can affect how warm you feel in the sun.",
+      "phonetic": null,
+      "cognate": "Color de la superficie"
+    },
+    {
+      "term": "Thermal Energy",
+      "definition": "The energy related to the temperature of an object, which we feel as heat.",
+      "use_sentence": "When you sit by a campfire, you can feel the thermal energy it releases.",
+      "phonetic": null,
+      "cognate": "Energía térmica"
+    },
+    {
+      "term": "Reflection",
+      "definition": "The bouncing of light off a surface instead of being absorbed.",
+      "use_sentence": "The reflection of the sun off the white snow was so bright I needed sunglasses.",
+      "phonetic": null,
+      "cognate": "Reflexión"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "If you were designing a playground for a very sunny city, what colors would you choose for the slide and swings? Explain your choices.",
+      "frame": "For the playground, I would choose colors like ___ because ___."
+    },
+    {
+      "prompt": "Dr. Chen uses her knowledge to help design cooler cities. What is another real-world problem that could be solved by understanding how different colors absorb or reflect heat?",
+      "frame": null
+    },
+    {
+      "prompt": "Some animals in the hot desert are light-colored, while many animals in the cold arctic are white. How does their surface color help them survive in their environments?",
+      "frame": "An animal's color can help it survive by ___."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}

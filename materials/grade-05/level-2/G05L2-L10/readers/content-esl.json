@@ -1,0 +1,99 @@
+{
+  "story": {
+    "title": "Dr. Chen and the Dissolving System",
+    "text": "Hello, I am Dr. Sarah Chen. I am a research scientist. My job is to study how complex systems work. Today, I will show you the system of <strong>dissolving</strong> sugar in water. It helps us understand how to make the perfect <strong>solution</strong>.<br><br>Everything is made of tiny <strong>particles</strong>. When sugar dissolves, its particles mix with water particles. We want this to happen quickly. Two things outside the water help us. We can change the Water Temperature. We can also change the Stirring Speed.<br><br>Warmer water makes water particles move faster. Stirring also makes them move around more. This faster movement increases the Particle Contact Rate. That means water particles bump into the sugar more often. This increases the <strong>Dissolving</strong> Speed. The sugar breaks apart and mixes in faster.<br><br>When the dissolving speed is high, the <strong>solution</strong> changes quickly. The <strong>concentration</strong> of sugar in the water goes up faster. Understanding this system helps us make medicines, foods, and even new materials.",
+    "think_abouts": [
+      "What two things did Dr. Chen say can speed up dissolving?",
+      "Why does stirring help particles mix together faster?"
+    ],
+    "go_deeper": "What do you think would happen to the dissolving speed if you used very large sugar crystals instead of small ones? Why?",
+    "margin_defs": [
+      {
+        "term": "system",
+        "definition": "A group of parts that work together."
+      },
+      {
+        "term": "rate",
+        "definition": "How fast something happens."
+      }
+    ],
+    "check_prompts": [
+      "According to Dr. Chen, what happens to dissolving speed when the water is warmer?"
+    ],
+    "word_bank": [
+      "Dissolving",
+      "Solution",
+      "Concentration",
+      "Particles",
+      "Temperature",
+      "Stirring"
+    ],
+    "cognate_sidebar": [
+      {
+        "english": "Solution",
+        "spanish": "Solución"
+      },
+      {
+        "english": "Concentration",
+        "spanish": "Concentración"
+      },
+      {
+        "english": "Particles",
+        "spanish": "Partículas"
+      },
+      {
+        "english": "Temperature",
+        "spanish": "Temperatura"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "term": "Dissolving",
+      "definition": "When a solid breaks into tiny pieces and mixes evenly into a liquid.",
+      "use_sentence": "I watched the sugar cube start dissolving in my hot tea.",
+      "phonetic": "di-ZOL-ving",
+      "cognate": "disolviendo"
+    },
+    {
+      "term": "Solution",
+      "definition": "A liquid mixture made when one substance dissolves completely in another.",
+      "use_sentence": "Lemonade is a solution of sugar, lemon juice, and water.",
+      "phonetic": "suh-LOO-shun",
+      "cognate": "solución"
+    },
+    {
+      "term": "Concentration",
+      "definition": "The amount of a substance that has dissolved in a liquid.",
+      "use_sentence": "The drink had a high concentration of sugar, so it was very sweet.",
+      "phonetic": "kon-sen-TRAY-shun",
+      "cognate": "concentración"
+    },
+    {
+      "term": "Particles",
+      "definition": "The extremely tiny bits that all matter is made of.",
+      "use_sentence": "Water is made of tiny water particles that are always moving.",
+      "phonetic": "PAR-ti-kuls",
+      "cognate": "partículas"
+    }
+  ],
+  "discussion_cards": [
+    {
+      "prompt": "Think about making a drink like hot chocolate or lemonade. How can you use Dr. Chen's ideas to make the powder dissolve faster?",
+      "frame": "To make my drink dissolve faster, I can..."
+    },
+    {
+      "prompt": "Dr. Chen studies systems. What is another system you see in your everyday life? (Hint: Think about things with parts that work together).",
+      "frame": "Another system I see in my life is..."
+    },
+    {
+      "prompt": "Why is it important for scientists and engineers to understand how things dissolve when they create new products like medicines or foods?",
+      "frame": "It is important to understand dissolving because..."
+    }
+  ],
+  "reflection_frames": {
+    "knew": "Before reading, I already knew that ___",
+    "learned": "From the story, I learned that ___",
+    "wonder": "Now I wonder ___"
+  }
+}
